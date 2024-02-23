@@ -18,59 +18,59 @@ You can see browser errors that have occurred over time.
 
 <ImgLang img='rum-tracking-error.png' desc='Error Tracking' />
 
-1.  In ![number1](/img/number-01.png), set a desired time. It can be set up to 1 day in advance.
+1. In ![number1](/img/number-01.png), set a desired time. It can be set up to 1 day in advance.
 
-2.  Select one of the ![number2](/img/number-02.png) bar graphs displayed on the chart. 
+2. Select one of the ![number2](/img/number-02.png) bar graphs displayed on the chart. 
 
-    From the ![number3](/img/number-03.png) time list, you can select the time detail when an error occurred among the data collected every 10 minutes.
+   From the ![number3](/img/number-03.png) time list, you can select the time detail when an error occurred among the data collected every 10 minutes.
 
-3.  Below the chart, you can see a list of browser errors that occurred at the selected time.
+3. Below the chart, you can see a list of browser errors that occurred at the selected time.
 
-    If you type specific keywords in the ![number5](/img/number-05.png) input field, the matching text is highlighted in the list.
+   If you type specific keywords in the ![number5](/img/number-05.png) input field, the matching text is highlighted in the list.
 
-4.  To check the details of the error, select ![number4](/img/number-04.png) ![See details icon](/img/ic-caret-right.svg) on the utmost left.
+4. To check the details of the error, select ![number4](/img/number-04.png) ![See details icon](/img/ic-caret-right.svg) on the utmost left.
 
 ## Checking the error information details
 
 The browser error has the following information:
 
--   **_errorType_**: Indicates the error type. There are source errors including AJAX errors, console errors, and syntax errors.
+- **_errorType_**: Indicates the error type. There are source errors including AJAX errors, console errors, and syntax errors.
 
--   **_pageLocation_**: URL of the page visited by the user.
+- **_pageLocation_**: URL of the page visited by the user.
 
--   **_title_**: Title of the page visited by the user.
+- **_title_**: Title of the page visited by the user.
 
--   **_browser_**: Browser type of the user.
+- **_browser_**: Browser type of the user.
 
--   **_borwserVer_**: Browser version of the user.
+- **_borwserVer_**: Browser version of the user.
 
--   **_os_**: OS type of the user device.
+- **_os_**: OS type of the user device.
 
--   **_osVer_**: OS version of the user device.
+- **_osVer_**: OS version of the user device.
 
--   **_device_**: Type of the user device.
+- **_device_**: Type of the user device.
 
--   **_host_**: Domain name of the visited server.
+- **_host_**: Domain name of the visited server.
 
--   **_userAgent_**: `User-Agent` string received from the user browser.
+- **_userAgent_**: `User-Agent` string received from the user browser.
 
--   **_message_**: Error message.
+- **_message_**: Error message.
 
--   **_stack_**: Error stack information. The error stack basically contains obfuscated file names, lines, and columns.
+- **_stack_**: Error stack information. The error stack basically contains obfuscated file names, lines, and columns.
 
 ## Source map uploading and error code provision{#check-errorcode}
 
 If the released frontend code is obfuscated or compressed, it is difficult to provide the collected browser error's stack information at an actual code level. You can access the file or code line that caused the browser error through the source-map built at the time of releasing the frontend code.
 
-1.  In the **_error stack_** column, select **_Analysis_**.
+1. In the **_error stack_** column, select **_Analysis_**.
 
-    <ImgLang img='browser-error-stack-btn-analysis.png' desc='Error Log' />
+   <ImgLang img='browser-error-stack-btn-analysis.png' desc='Error Log' />
 
-2.  If the window in which the error stack information for the selected error log is displayed appears, select **_Upload_**.
+2. If the window in which the error stack information for the selected error log is displayed appears, select **_Upload_**.
 
-    <ImgLang img='browser-error-stack-upload.png' desc='Error Stack' />
+   <ImgLang img='browser-error-stack-upload.png' desc='Error Stack' />
 
-3.  Load the source map for the code stack.
+3. Load the source map for the code stack.
 
 By comparing obfuscated stack information with JavaScript source map, you can see the code where the actual error occurred.
 
@@ -82,9 +82,9 @@ You can search the errors by filtering based on the data included in the browser
 
 <ImgLang img='rum-tracking-error-filtering.png' desc='' />
 
-1.  In the left panel of the screen, select a desired browser error item for filtering. 
+1. In the left panel of the screen, select a desired browser error item for filtering. 
 
-2.  If the sub list appears, select a desired item. You can also search if the list is too many. 
+2. If the sub list appears, select a desired item. You can also search if the list is too many. 
 
 It displays a list of browser errors corresponding to the selected item.
 

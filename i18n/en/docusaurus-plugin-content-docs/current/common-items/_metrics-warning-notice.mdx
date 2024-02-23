@@ -16,8 +16,8 @@ Home > Select Project > <Cmdname sid="event_statistic" className="uitext" /> > <
 
 Metrics events are used to set more specific and complex events than basic events (application events, server events, and such). You can set events based on the metrics data being collected in real time from your projects. Depending on the usage, you can set any event by selecting one of two methods.
 
--   Metrics Event
--   Composite metrics event
+- Metrics Event
+- Composite metrics event
 
 :::note
 
@@ -67,77 +67,77 @@ For more information about the event templates for metrics, see [the following](
 
 ### Entry of basic information{#basic-info}
 
--   <Cmdname sid="event_name" className="uitext" />: Enter the name of the event to add.
+- <Cmdname sid="event_name" className="uitext" />: Enter the name of the event to add.
 
--   <Cmdname sid="enable_events" className="uitext" />: Select whether or not to activate events.
+- <Cmdname sid="enable_events" className="uitext" />: Select whether or not to activate events.
 
--   <Cmdname sid="template" className="uitext" />: Events can be easily set after selecting a template. If the template is not to be used, select <Cmdname sid="metrics_option_disabled" className="uitext" />.
+- <Cmdname sid="template" className="uitext" />: Events can be easily set after selecting a template. If the template is not to be used, select <Cmdname sid="metrics_option_disabled" className="uitext" />.
 
-    <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
+  <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
 
-    :::note
+  :::note
 
-    For more information about the template list, see [the following](#template).
+  For more information about the template list, see [the following](#template).
 
-    :::
+  :::
 
-    </InDoc>
+  </InDoc>
 
--   <Cmdname sid="category" className="uitext" />: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
+- <Cmdname sid="category" className="uitext" />: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
 
-    <ImgLang img='set-event-select-category.png' desc='Metrics Event - Category' />
+  <ImgLang img='set-event-select-category.png' desc='Metrics Event - Category' />
 
-    -   The <Cmdname sid="category" className="uitext" /> selection options display <LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" /> and <LinkImage img="number-02.png" className="ico" /> data collection interval, and <LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />. When setting up an event, use the key value of the category.
+  - The <Cmdname sid="category" className="uitext" /> selection options display <LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" /> and <LinkImage img="number-02.png" className="ico" /> data collection interval, and <LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />. When setting up an event, use the key value of the category.
 
-    -   <Cmdname sid="category" className="uitext" /> retrieves metrics data being collected from projects within the last 3 hours and displays them in a list. If the collection interval is not displayed in the <Cmdname sid="category" className="uitext" /> selection options, you can select <Cmdname sid="enter_category_self" className="uitext" /> option to enter a category key.
+  - <Cmdname sid="category" className="uitext" /> retrieves metrics data being collected from projects within the last 3 hours and displays them in a list. If the collection interval is not displayed in the <Cmdname sid="category" className="uitext" /> selection options, you can select <Cmdname sid="enter_category_self" className="uitext" /> option to enter a category key.
 
--   <Cmdname sid="level" className="uitext" />
+- <Cmdname sid="level" className="uitext" />
 
-    -   It displays the alert level when an event occurs. The levels are <span class='vslow'>Critical</span>, <span class='slow'>Warning</span>, and <span style={{color:'#757575'}}>Info</span>. When setting the <span class='vslow'>Critical</span> and <span class='slow'>Warning</span> levels, the <Cmdname sid="resolved_event_notification" className="uitext" /> selection option is enabled.
+  - It displays the alert level when an event occurs. The levels are <span class='vslow'>Critical</span>, <span class='slow'>Warning</span>, and <span style={{color:'#757575'}}>Info</span>. When setting the <span class='vslow'>Critical</span> and <span class='slow'>Warning</span> levels, the <Cmdname sid="resolved_event_notification" className="uitext" /> selection option is enabled.
 
-    -   <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
+  - <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
 
--   <Cmdname sid="message" className="uitext" />
+- <Cmdname sid="message" className="uitext" />
 
-    -   Enter a notification message to be displayed when events occur. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />.
+  - Enter a notification message to be displayed when events occur. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />.
 
-    -   If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
+  - If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
 
--   <Cmdname sid="alert_test" className="uitext" />
+- <Cmdname sid="alert_test" className="uitext" />
 
-    By generating alerts based on the required items: <Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, and <Cmdname sid="message" className="uitext" />, this function checks the messages.
+  By generating alerts based on the required items: <Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, and <Cmdname sid="message" className="uitext" />, this function checks the messages.
 
-    :::note
+  :::note
 
-    To use a reception test, enter or select required items in <Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, and <Cmdname sid="message" className="uitext" />.
+  To use a reception test, enter or select required items in <Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, and <Cmdname sid="message" className="uitext" />.
 
-    :::
+  :::
 
--   <Cmdname sid="metrics_event_rules" className="uitext" />
+- <Cmdname sid="metrics_event_rules" className="uitext" />
 
-    <ImgLang img='set-event-condition.png' desc='Event Rule' />
+  <ImgLang img='set-event-condition.png' desc='Event Rule' />
 
-    By entering the ![Leader line 4](/img/number-04.png) field, ![Leader line 5](/img/number-05.png) operator selection, and ![Leader line 6](/img/number-06.png) threshold value, set the event rule.
+  By entering the ![Leader line 4](/img/number-04.png) field, ![Leader line 5](/img/number-05.png) operator selection, and ![Leader line 6](/img/number-06.png) threshold value, set the event rule.
 
--   <Cmdname sid="alert_object_filtering" className="uitext" />
+- <Cmdname sid="alert_object_filtering" className="uitext" />
 
-    <ImgLang img='set-event-filtering.png' desc='Filtering event targets' />
+  <ImgLang img='set-event-filtering.png' desc='Filtering event targets' />
 
-    It filters the targets by entering the ![Leader line 7](/img/number-07.png) tag, ![Leader line 8](/img/number-08.png) operator selection, and ![Leader line 9](/img/number-09.png) filtering value. If no input, alerts are sent to all agents.
+  It filters the targets by entering the ![Leader line 7](/img/number-07.png) tag, ![Leader line 8](/img/number-08.png) operator selection, and ![Leader line 9](/img/number-09.png) filtering value. If no input, alerts are sent to all agents.
 
 :::note
 
--   For available basic syntaxes and operators in <Cmdname sid="metrics_event_rules" className="uitext" /> and <Cmdname sid="alert_object_filtering" className="uitext" />, see <Link to="#condition-guide">the following</Link>.
+- For available basic syntaxes and operators in <Cmdname sid="metrics_event_rules" className="uitext" /> and <Cmdname sid="alert_object_filtering" className="uitext" />, see <Link to="#condition-guide">the following</Link>.
 
--   For the <Cmdname sid="metrics_event_rules" className="uitext" /> and <Cmdname sid="alert_object_filtering" className="uitext" /> options, you can select <Cmdname sid="metrics_rule_select" className="uitext" /> or <Cmdname sid="metrics_rule_direct" className="uitext" />.
+- For the <Cmdname sid="metrics_event_rules" className="uitext" /> and <Cmdname sid="alert_object_filtering" className="uitext" /> options, you can select <Cmdname sid="metrics_rule_select" className="uitext" /> or <Cmdname sid="metrics_rule_direct" className="uitext" />.
 
--   After the event setting is made, the option value is managed as the <Cmdname sid="metrics_rule_direct" className="uitext" /> option. Afterwards, if switched to the <Cmdname sid="metrics_rule_select" className="uitext" /> option, the option value can be initialized.
+- After the event setting is made, the option value is managed as the <Cmdname sid="metrics_rule_direct" className="uitext" /> option. Afterwards, if switched to the <Cmdname sid="metrics_rule_select" className="uitext" /> option, the option value can be initialized.
 
--   Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&*()_+=-[]`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>${}</code>) as shown in the following example:
+- Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&*()\_+=-[]`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>${}</code>) as shown in the following example:
 
-    ```text
-    ${4xxErrorType} == '401'
-    ```
+  ```text
+  ${4xxErrorType} == '401'
+  ```
 
 :::
 
@@ -145,27 +145,27 @@ For more information about the event templates for metrics, see [the following](
 
 <ImgLang img='set-event-receive.png' desc='Notification Setting' />
 
--   <Cmdname sid="number_of_event" className="uitext" />: For the selected period, if the events set in <Cmdname sid="metrics_event_rules" className="uitext" /> occur as many as the input, an alert is sent.
+- <Cmdname sid="number_of_event" className="uitext" />: For the selected period, if the events set in <Cmdname sid="metrics_event_rules" className="uitext" /> occur as many as the input, an alert is sent.
 
-    :::note
+  :::note
 
-    -   If the selected time is set to <Cmdname sid="metrics_option_disabled" className="uitext" />, an alert is sent only when the events occur consecutively as many as the input.
-    -   If the option, <Cmdname sid="resolved_event_notification" className="uitext" /> is activated, it is recommended to select <Cmdname sid="metrics_option_disabled" className="uitext" /> as the selected time.
-    -   In the <Cmdname sid="category" className="uitext" /> option, the collection cycle for the selected item is 5 seconds.
+  - If the selected time is set to <Cmdname sid="metrics_option_disabled" className="uitext" />, an alert is sent only when the events occur consecutively as many as the input.
+  - If the option, <Cmdname sid="resolved_event_notification" className="uitext" /> is activated, it is recommended to select <Cmdname sid="metrics_option_disabled" className="uitext" /> as the selected time.
+  - In the <Cmdname sid="category" className="uitext" /> option, the collection cycle for the selected item is 5 seconds.
 
-    :::
+  :::
 
--   <Cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />: This option can prevent excessive alert notifications from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in <Cmdname sid="event_history" className="uitext" />.
+- <Cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />: This option can prevent excessive alert notifications from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in <Cmdname sid="event_history" className="uitext" />.
 
--   <Cmdname sid="related_category" className="uitext" />: You can set the related categories up to 5 and see them when checking notifications.
+- <Cmdname sid="related_category" className="uitext" />: You can set the related categories up to 5 and see them when checking notifications.
 
--   <Cmdname sid="event_tag" className="uitext" />: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
+- <Cmdname sid="event_tag" className="uitext" />: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
 
-    :::note
+  :::note
 
-    In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins.
+  In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins.
 
-    :::
+  :::
 
 ### Testing event rules
 

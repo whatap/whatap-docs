@@ -28,13 +28,13 @@ First, assuming that the failure situation has been recognized through the **_Hi
 
 **_Application dashboard_** → **_HITMAP transaction_** → **_Trace information_** → **_Metrics chart_**
 
--   If you have recognized the problem, check the past records to see before and after the problem situation. After checking the transaction overload pattern in the **_Hitmap transaction_** chart, you can consider the cause of transaction delay as DB connection problem through the **_TX trace_** list.
+- If you have recognized the problem, check the past records to see before and after the problem situation. After checking the transaction overload pattern in the **_Hitmap transaction_** chart, you can consider the cause of transaction delay as DB connection problem through the **_TX trace_** list.
 
--   After searching for each section, let's look at the detailed execution history step by step through trace analysis. We can see that the DBC step took the most of the elapsed time.
+- After searching for each section, let's look at the detailed execution history step by step through trace analysis. We can see that the DBC step took the most of the elapsed time.
 
--   Let's look at various metrics together through the **_metrics chart_**. By comparing the **_DB pool count_** and **_DB active count_** charts, you can determine that the cause is the shortage of DB connection pool.
+- Let's look at various metrics together through the **_metrics chart_**. By comparing the **_DB pool count_** and **_DB active count_** charts, you can determine that the cause is the shortage of DB connection pool.
 
--   Depending on the operating environment, you can gradually adjust the connection pool size or configure the optimization settings to prevent water leak.
+- Depending on the operating environment, you can gradually adjust the connection pool size or configure the optimization settings to prevent water leak.
 
 :::
 
@@ -62,9 +62,9 @@ Through the **_TX trace_** list, you can see that the ratio of **_DB connect tim
 
 :::note 
 
--   The horizontal axis of the hitmap indicates the transaction end time, and the vertical axis the response time. You can view the response time delay section on the vertical axis up to 80 seconds by selecting the ![Up arrow icon](/img/ic-s-up.svg) arrow icon on the hitmap.
+- The horizontal axis of the hitmap indicates the transaction end time, and the vertical axis the response time. You can view the response time delay section on the vertical axis up to 80 seconds by selecting the ![Up arrow icon](/img/ic-s-up.svg) arrow icon on the hitmap.
 
--   For more information about the analysis on hitmap patterns other than overload patterns, see [the following](about-apm-hitmap-class#about-hitmap-pattern-analysis).
+- For more information about the analysis on hitmap patterns other than overload patterns, see [the following](about-apm-hitmap-class#about-hitmap-pattern-analysis).
 
 :::
 

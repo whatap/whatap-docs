@@ -1,41 +1,41 @@
--   **pg_object** <span class='type'>Boolean</span>
+- **pg_object** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to collect data from the Top object. To collect data, change it to `true`.
+  Set whether or not to collect data from the Top object. To collect data, change it to `true`.
 
--   **pg_object_hour** <span class='type'>Int</span>
+- **pg_object_hour** <span class='type'>Int</span>
 
-    Default `5`
+  Default `5`
 
-    Set the time to collect data from the Top object. The default value is `5` and collection starts at 5 AM.
+  Set the time to collect data from the Top object. The default value is `5` and collection starts at 5 AM.
 
--   **table_bloat_ratio** <span class='type'>Percentage</span>
+- **table_bloat_ratio** <span class='type'>Percentage</span>
 
-    Default `50`
+  Default `50`
 
-    Data is collected when the table's bloating ratio is greater than the set value. The default value is 50%.
+  Data is collected when the table's bloating ratio is greater than the set value. The default value is 50%.
 
--   **table_bloat_bytes** <span class='type'>Byte</span>
+- **table_bloat_bytes** <span class='type'>Byte</span>
 
-    Default `10485760`
+  Default `10485760`
 
-    Data is collected when the table's bloating bytes is greater than the set value. The default value is 10 MB.
+  Data is collected when the table's bloating bytes is greater than the set value. The default value is 10 MB.
 
--   **index_bloat_ratio** <span class='type'>Percentage</span>
+- **index_bloat_ratio** <span class='type'>Percentage</span>
 
-    Default `50`
+  Default `50`
 
-    Data is collected when the index's bloating ratio is greater than the set value. The default value is 50%.
+  Data is collected when the index's bloating ratio is greater than the set value. The default value is 50%.
 
--   **index_bloat_bytes** <span class='type'>Byte</span>
+- **index_bloat_bytes** <span class='type'>Byte</span>
 
-    Default `10485760`
+  Default `10485760`
 
-    Data is collected when the index's bloating bytes is greater than the set value. The default value is 10 MB.
+  Data is collected when the index's bloating bytes is greater than the set value. The default value is 10 MB.
 
--   **autovacuum_list_limit**  <span class='type'>Int</span>
+- **autovacuum_list_limit**  <span class='type'>Int</span>
 
-    Default `50`
+  Default `50`
 
-    Table data is collected according to the set value from the oldest age (`relfrozenxid`). The default value is 50.
+  Table data is collected according to the set value from the oldest age (`relfrozenxid`). The default value is 50.

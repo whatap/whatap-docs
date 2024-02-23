@@ -4,30 +4,30 @@ Home > Select Project > **_STAT/REPORT_** > **_Table Size Increase_**
 
 It collects the usage of table and index on a daily basis and provides overall and each table's usage increase over time. The collection criteria follow the values for `table_min_row` (default value is 1000 cases or more) and `tables_hour` (default value is 5 am) in the agent configuration parameters. To change the collection criteria, go to **_Management_** > **_Agent CONFIG._**.
 
-1.  Set the **_reference date_**. Today is set by default.
+1. Set the **_reference date_**. Today is set by default.
 
-2.  Set the **_comparison date_** for comparison.
+2. Set the **_comparison date_** for comparison.
 
-3.  In the **_instance_** list, select an instance to query database settings.
+3. In the **_instance_** list, select an instance to query database settings.
 
-4.  Select ![Search icon](/img/ico-btn-search.png).
+4. Select ![Search icon](/img/ico-btn-search.png).
 
 In the **_Table increment summary_** section, you can see the increase/decrease rate for each **_row_**, **_data_**, and **_index_**, and the increase/descrease rate for **_all_**. In the **_Capacity details for each table_** section, you can see the detailed rate for each **_table name_**. 
 
 :::note
 
--   For more information about the **_agent configuration_**, see [the following](agent-settings#agent-options).
+- For more information about the **_agent configuration_**, see [the following](agent-settings#agent-options).
 
--   It requires query role on the tables to collect. Execute the following command to obtain the role.
+- It requires query role on the tables to collect. Execute the following command to obtain the role.
 
-    ```sql
+  ```sql
 
-    grant select on [DB_NAME].[TABLE_NAME] to whatap;
-    /* or */
-    grant select on *.* to whatap;
+  grant select on [DB_NAME].[TABLE_NAME] to whatap;
+  /* or */
+  grant select on *.* to whatap;
 
-    ```
+  ```
 
--   To download the viewed data as a CSV file, select ![csv Download icon](/img/ic-csv-download-ms.svg).
+- To download the viewed data as a CSV file, select ![csv Download icon](/img/ic-csv-download-ms.svg).
 
 :::

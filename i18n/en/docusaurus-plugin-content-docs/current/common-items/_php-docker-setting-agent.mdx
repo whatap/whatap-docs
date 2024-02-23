@@ -1,14 +1,14 @@
 ## Agent CONFIG.
 
--   Use the following command to set the installation script. If you enter the WhaTap access key and server IP, the PHP environment data is automatically collected.
+- Use the following command to set the installation script. If you enter the WhaTap access key and server IP, the PHP environment data is automatically collected.
 
-    ```docker
-    RUN (echo "[access key]"; echo "[server IP]")|/usr/whatap/php/install.sh
-    ```
+  ```docker
+  RUN (echo "[access key]"; echo "[server IP]")|/usr/whatap/php/install.sh
+  ```
 
--   Using the following method, you can directly enter the PHP environment settings. 
+- Using the following method, you can directly enter the PHP environment settings. 
 
-    ```docker
-    # RUN /usr/whatap/php/install.sh -l [access key] -s [server IP] -v [PHP version x.x] -i [full path of php.ini] -p [process name] -z [thread safety]
-    RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
-    ```
+  ```docker
+  # RUN /usr/whatap/php/install.sh -l [access key] -s [server IP] -v [PHP version x.x] -i [full path of php.ini] -p [process name] -z [thread safety]
+  RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
+  ```

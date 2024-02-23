@@ -35,12 +35,12 @@ The WhaTap browser agent is provided in the form of an inline script. Add the sc
 
 Select one of the following two methods to apply the agent.
 
--   **_Async_** (Asynchronous Load): Loads the WhaTap browser agent asynchronously in your web application. 
-    -   It does not affect the load performance of your web application. 
-    -   There may be missing data such as AJAX or errors that occurred before loading the browser agent.
--   **_Sync_** (Synchronous Load): Loads the WhaTap browser agent synchronously in your web application.
-    -   It is recommended if you want to collect all data when loading your web application. 
-    -   It may affect the load performance of your web application.
+- **_Async_** (Asynchronous Load): Loads the WhaTap browser agent asynchronously in your web application. 
+  - It does not affect the load performance of your web application. 
+  - There may be missing data such as AJAX or errors that occurred before loading the browser agent.
+- **_Sync_** (Synchronous Load): Loads the WhaTap browser agent synchronously in your web application.
+  - It is recommended if you want to collect all data when loading your web application. 
+  - It may affect the load performance of your web application.
 
 ## Setting the WhaTap browser agent's options
 
@@ -55,10 +55,10 @@ config: {
 }
 ```
 
--   **_projectAccessKey_**: Project access key
--   **pcode**: Project code.
--   **sampleRate**: You can set the rate of user sessions that are collected.
--   **ignoreOrigins**: You can add specific resource domains to be excluded from statistics collection in the form of an array of strings. You can also apply regular expressions.
+- **_projectAccessKey_**: Project access key
+- **pcode**: Project code.
+- **sampleRate**: You can set the rate of user sessions that are collected.
+- **ignoreOrigins**: You can add specific resource domains to be excluded from statistics collection in the form of an array of strings. You can also apply regular expressions.
 
 :::note
 

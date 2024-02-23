@@ -8,147 +8,147 @@ You can see the application environment along with the performance-related setti
 
 At <Cmdname sid="application_agents" className="uitext" />, you can see the list of agents assigned to the project. If you select an individual agent, you can view information for environment variables, agent settings, and performances set on the right of the screen.
 
--   ![Column icon](/img/ico-column.svg): The columns in the table can be added or deleted.
+- ![Column icon](/img/ico-column.svg): The columns in the table can be added or deleted.
 
--   ![Refresh icon](/img/ico-refresh.svg): The list of agents is refreshed. Restart a disabled agent and then click the button to renew it if it does not appear automatically in the list.
+- ![Refresh icon](/img/ico-refresh.svg): The list of agents is refreshed. Restart a disabled agent and then click the button to renew it if it does not appear automatically in the list.
 
--   ![Expand icon](/img/ic-s-arrows-alt.svg): You can hide the screen on the right and then expand the agent list to see additional information about the agent.
+- ![Expand icon](/img/ic-s-arrows-alt.svg): You can hide the screen on the right and then expand the agent list to see additional information about the agent.
 
-    <ImgLang img='ipa-agent-list.png' desc='Agent List' />
+  <ImgLang img='ipa-agent-list.png' desc='Agent List' />
 
--   <Cmdname sid="inactive_agent_deletion_time" className="uitext" />: If the agent becomes inactive for the set time, it is deleted from the list.
+- <Cmdname sid="inactive_agent_deletion_time" className="uitext" />: If the agent becomes inactive for the set time, it is deleted from the list.
 
 ## Detailed information of the agents and applications
 
 On the right of the screen, you can see detailed information of agents and applications. 
 
--   You can filter the desired items through the text field on the upper right of the screen. 
+- You can filter the desired items through the text field on the upper right of the screen. 
 
--   If changes to agents and applications located on the monitored server are not automatically applied, select ![Refresh icon](/img/ico-refresh.png).
+- If changes to agents and applications located on the monitored server are not automatically applied, select ![Refresh icon](/img/ico-refresh.png).
 
 ### Agent-related items
 
--   <Cmdname sid="runtime_boot_env" className="uitext" />
+- <Cmdname sid="runtime_boot_env" className="uitext" />
 
-    You can view environment variables for agent execution. You can see the version, installation path, name, and IP address of the agent.
+  You can view environment variables for agent execution. You can see the version, installation path, name, and IP address of the agent.
 
 <InDoc product="dotnet,golang,php">
 
--   <Cmdname sid="agent_status" className="uitext" />
+- <Cmdname sid="agent_status" className="uitext" />
 
-    You can see the resource usages used by the agent over the past day.
+  You can see the resource usages used by the agent over the past day.
 
 </InDoc>
 
--   <Cmdname sid="agent_log" className="uitext" />
+- <Cmdname sid="agent_log" className="uitext" />
 
-    You can view the agent logs stored on the monitored server. The name of the log file is in the format of _whatap-`YYYYMMDD`.log_. You can select each log to access information about the errors and events captured in the logs.
+  You can view the agent logs stored on the monitored server. The name of the log file is in the format of _whatap-`YYYYMMDD`.log_. You can select each log to access information about the errors and events captured in the logs.
 
-    :::note
+  :::note
 
-    For the agent settings for the log, see [the following](agent-log).
+  For the agent settings for the log, see [the following](agent-log).
 
-    :::
+  :::
 
--   <Cmdname sid="agent_configuration" className="uitext" />
+- <Cmdname sid="agent_configuration" className="uitext" />
 
-    You can add, modify, or delete the agent configuration options without directly modifying the _whatap.conf_ file located on the monitored server.
+  You can add, modify, or delete the agent configuration options without directly modifying the _whatap.conf_ file located on the monitored server.
 
-    :::info
+  :::info
 
-    For the agent configuration, it is recommended to use the <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" /> menu that has improved the usability and functionality. On the upper right of the screen, select <Cmdname sid="new_agents_setting" className="uitext" />. For more information, see [the following](set-agent#set-agent-service).
+  For the agent configuration, it is recommended to use the <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" /> menu that has improved the usability and functionality. On the upper right of the screen, select <Cmdname sid="new_agents_setting" className="uitext" />. For more information, see [the following](set-agent#set-agent-service).
 
-    :::
+  :::
 
 ### Application-related items
 
--   <Cmdname sid="boot_env" className="uitext" />
+- <Cmdname sid="boot_env" className="uitext" />
 
-    You can view environment variables for application execution.
+  You can view environment variables for application execution.
 
 <InDoc product="java">
 
--   <Cmdname sid="heap_histogram" className="uitext" />
+- <Cmdname sid="heap_histogram" className="uitext" />
 
-    You can view the status of heap occupied objects (sizes for each object in heap memory) in the memory of the JVM (Java Virtual Machine).
+  You can view the status of heap occupied objects (sizes for each object in heap memory) in the memory of the JVM (Java Virtual Machine).
 
-    :::note
+  :::note
 
-    Java versions 6 to 8 support basic functions without the JVM options. However, for some Java versions, the JVM options must be applied as follows:
+  Java versions 6 to 8 support basic functions without the JVM options. However, for some Java versions, the JVM options must be applied as follows:
 
-    -   Java 9 to Java 15
+  - Java 9 to Java 15
 
-        ```bash
-        -Djdk.attach.allowAttachSelf=true
-        ```
+    ```bash
+    -Djdk.attach.allowAttachSelf=true
+    ```
 
-        ```bash title="example"
-        java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
-        ```
+    ```bash title="example"
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+    ```
 
-    -   Java 16 or later
+  - Java 16 or later
 
-        ```bash
-        -Djdk.attach.allowAttachSelf=true
-        --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
-        ```
+    ```bash
+    -Djdk.attach.allowAttachSelf=true
+    --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+    ```
 
-        ```bash title="example"
-        java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
-        ```
+    ```bash title="example"
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+    ```
 
-    -   It does not support Java 5 or earlier and IBM Java.
+  - It does not support Java 5 or earlier and IBM Java.
 
-    :::
+  :::
 
--   <Cmdname sid="loaded_classes" className="uitext" />
+- <Cmdname sid="loaded_classes" className="uitext" />
 
-    You can see class information loaded in Java applications.
+  You can see class information loaded in Java applications.
 
--   <Cmdname sid="components_version" className="uitext" />
+- <Cmdname sid="components_version" className="uitext" />
 
-    You can see the versions of the libraries that make up Java applications.
+  You can see the versions of the libraries that make up Java applications.
 
--   <Cmdname sid="thread_list" className="uitext" />
+- <Cmdname sid="thread_list" className="uitext" />
 
-    You can view snapshot information of all threads in the Java process. It can be used to diagnose the performance issues in Java applications. You can see the thread dump information by selecting ![Expand icon](/img/ico-expander.svg) of each thread in the thread list. For more information, see [the following](#thread-details).
+  You can view snapshot information of all threads in the Java process. It can be used to diagnose the performance issues in Java applications. You can see the thread dump information by selecting ![Expand icon](/img/ico-expander.svg) of each thread in the thread list. For more information, see [the following](#thread-details).
 
--   <Cmdname sid="open_socket_count" className="uitext" />
+- <Cmdname sid="open_socket_count" className="uitext" />
 
-    You can see the socket information opened by the Java application to perform TCP functions.
+  You can see the socket information opened by the Java application to perform TCP functions.
 
--   <Cmdname sid="method_stat" className="uitext" />
+- <Cmdname sid="method_stat" className="uitext" />
 
-    You can see detailed information about the method being executed in the Java application.
+  You can see detailed information about the method being executed in the Java application.
 
--   <Cmdname sid="datasource_status" className="uitext" />
+- <Cmdname sid="datasource_status" className="uitext" />
 
-    You can see the status of DataSource.
+  You can see the status of DataSource.
 
--   <Cmdname sid="system_gc_only" className="uitext" />
+- <Cmdname sid="system_gc_only" className="uitext" />
 
-    You can collect and remove memory objects (garbage) that are no longer needed for the dynamically allocated memory in the Heap area of the JVM (Java Virtual Machine). If you select <Cmdname sid="run" className="uitext" />, the GC process is performed and you can see the memory capacity before and after execution.
+  You can collect and remove memory objects (garbage) that are no longer needed for the dynamically allocated memory in the Heap area of the JVM (Java Virtual Machine). If you select <Cmdname sid="run" className="uitext" />, the GC process is performed and you can see the memory capacity before and after execution.
 
--   <Cmdname sid="heap_dump" className="uitext" />
+- <Cmdname sid="heap_dump" className="uitext" />
 
-    If any problem occurs such as a memory leak while running the Java application, you can generate its dump file for analysis of the problem. Select <Cmdname sid="dump_heap" className="uitext" />.
+  If any problem occurs such as a memory leak while running the Java application, you can generate its dump file for analysis of the problem. Select <Cmdname sid="dump_heap" className="uitext" />.
 
-    :::note
+  :::note
 
-    This function is supported in Java agent 1.5.2 or later. Set the `heapdump_enabled` option to `true` in the agent configuration.
+  This function is supported in Java agent 1.5.2 or later. Set the `heapdump_enabled` option to `true` in the agent configuration.
 
-    :::
+  :::
 
--   <Cmdname sid="configuration_throttling" className="uitext" />
+- <Cmdname sid="configuration_throttling" className="uitext" />
 
-    You can see the agent settings for load control of Java applications, and then set the related options. For more information about the agent settings for load control, see [the following](agent-load-amount).
+  You can see the agent settings for load control of Java applications, and then set the related options. For more information about the agent settings for load control, see [the following](agent-load-amount).
 
 </InDoc>
 
 <InDoc product="nodejs,php,python">
 
--   <Cmdname sid="module_dependency" className="uitext" />
+- <Cmdname sid="module_dependency" className="uitext" />
 
-    You can see information about the modules being used by the applications.
+  You can see information about the modules being used by the applications.
 
 </InDoc>

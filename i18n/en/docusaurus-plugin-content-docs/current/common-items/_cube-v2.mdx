@@ -12,25 +12,25 @@ We call the performance statistics generated every 5 minutes as **Cube**. Cube a
 
 Select a cube based on the specific time in the cube selection panel in the left ![number1](/img/number-01.png) area. Because the cubes are stored every 5 minutes, select a specific time. 
 
--   **Panel interest metric**
+- **Panel interest metric**
 
-    -   **_TPS_**
+  - **_TPS_**
 
-    -   **_Response Time_**
+  - **_Response Time_**
 
-    -   **_Tx error count_**
+  - **_Tx error count_**
 
-    -   **_Active TX count_**
+  - **_Active TX count_**
 
-    -   **_Concurrent User_**
+  - **_Concurrent User_**
 
--   **Cube color**
+- **Cube color**
 
-    The cubes are displayed in different colors depending on the number of the selected metrics.
+  The cubes are displayed in different colors depending on the number of the selected metrics.
 
-    -   <span class='highfg'>Dark blue</span>: <span class='highfg'>high figure</span>
+  - <span class='highfg'>Dark blue</span>: <span class='highfg'>high figure</span>
 
-    -   <span class='lowfg'>Light blue</span>: <span class='lowfg'>low figure</span>
+  - <span class='lowfg'>Light blue</span>: <span class='lowfg'>low figure</span>
 
 ## ![](/img/number-02.png) Application selection
 
@@ -38,71 +38,71 @@ You can select data for a specific application through the application selection
 
 <ImgLang img='cube-select-app.png' desc='Cube selection application' />
 
--   **_Select All_**: All applications are viewed. By default, **_Select All_** and **_Active Applications_** are selected. 
+- **_Select All_**: All applications are viewed. By default, **_Select All_** and **_Active Applications_** are selected. 
 
--   **_Active Application_**: Among the applications, the active applications are specified for inquiry. 
+- **_Active Application_**: Among the applications, the active applications are specified for inquiry. 
 
--   **_View Only Selected_**: Among the applications, only the specified applications are queried. 
+- **_View Only Selected_**: Among the applications, only the specified applications are queried. 
 
--   **_Search_**: If there are many applications, you can search for them through the input field.
+- **_Search_**: If there are many applications, you can search for them through the input field.
 
--   <font color='5B7DEC'>Number</font>/<font color='979797'>Number</font>: Displays the <font color='5B7DEC'>number of applications specified</font>/<font color='979797 '>number of all applications</font>.
+- <font color='5B7DEC'>Number</font>/<font color='979797'>Number</font>: Displays the <font color='5B7DEC'>number of applications specified</font>/<font color='979797 '>number of all applications</font>.
 
 ## ![](/img/number-03.png) Cube data
 
 !In the area of [number3](/img/number-03.png), the cube data can be checked through the charts for **_Hitmap_**, **_Country_**, **_TPS_**, **_Response Time_**, **_CPU_**, **_Concurrent User_**, **_Top TX_**, and **_Heap Memory_**.
 
--   **_HITMAP_**
+- **_HITMAP_**
 
-    It displays the distribution of transactions over the cube time. Detailed trace analysis is possible. 
+  It displays the distribution of transactions over the cube time. Detailed trace analysis is possible. 
 
-    If you select ![right-arrow](/img/right-arrow.svg), you can view the **_Top Stack_** and **_Unique Stack_** during the cube time.
+  If you select ![right-arrow](/img/right-arrow.svg), you can view the **_Top Stack_** and **_Unique Stack_** during the cube time.
 
-    :::note
+  :::note
 
-    The application that can use the stack analysis function is **Java** and **Python**. 
+  The application that can use the stack analysis function is **Java** and **Python**. 
 
-    :::
+  :::
 
--   **_Country/Region_**
+- **_Country/Region_**
 
-    By mapping countries based on the client IP, it displays from which country the transactions are coming. The colors on the map display the relative amount of transactions.
+  By mapping countries based on the client IP, it displays from which country the transactions are coming. The colors on the map display the relative amount of transactions.
 
-    :::note
+  :::note
 
-    WhaTap basically stores the client-related information. For more information about the agent settings for user data collection, see [the following](agent-number-of-user).
+  WhaTap basically stores the client-related information. For more information about the agent settings for user data collection, see [the following](agent-number-of-user).
 
-    :::
+  :::
 
--   **_TPS_**
+- **_TPS_**
 
-    Transaction Per Second (**_TPS_**) means the number of transactions processed per second.
+  Transaction Per Second (**_TPS_**) means the number of transactions processed per second.
 
--   **_Instance Response Time_**
+- **_Instance Response Time_**
 
-    Average response time for transactions
+  Average response time for transactions
 
--   **_CPU_**
+- **_CPU_**
 
-    After sorting the project applications (agents) by the IP, it displays CPUs of the busy server with a bar chart.
+  After sorting the project applications (agents) by the IP, it displays CPUs of the busy server with a bar chart.
 
--   **_Concurrent User_**
+- **_Concurrent User_**
 
-    It displays the number of real-time browser users. 
+  It displays the number of real-time browser users. 
 
--   **_Top TX_**
+- **_Top TX_**
 
-    It displays 5 transactions of high invocation. Transaction statistics provide more detailed data.
+  It displays 5 transactions of high invocation. Transaction statistics provide more detailed data.
 
--   **_Heap Memory_**
+- **_Heap Memory_**
 
-    Among the applications (instances), the instances are displayed in order of heap memory usage.
+  Among the applications (instances), the instances are displayed in order of heap memory usage.
 
 :::note
 
--   If you select the ![Individual icon](/img/ic-line.svg) icon on the upper right of the chart, merged line charts are provided.
--   If you select the ![Individual icon](/img/ic-multiline-chart.svg) icon on the upper right of the chart, individual line charts are provided.
--   If you select the ![Bar chart icon](/img/ic-dashboard-bar-chart.svg) icon on the upper right of the chart, the bar-type chart appears. 
+- If you select the ![Individual icon](/img/ic-line.svg) icon on the upper right of the chart, merged line charts are provided.
+- If you select the ![Individual icon](/img/ic-multiline-chart.svg) icon on the upper right of the chart, individual line charts are provided.
+- If you select the ![Bar chart icon](/img/ic-dashboard-bar-chart.svg) icon on the upper right of the chart, the bar-type chart appears. 
 
 :::
 

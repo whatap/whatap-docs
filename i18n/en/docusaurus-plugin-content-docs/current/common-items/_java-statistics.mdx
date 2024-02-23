@@ -1,103 +1,103 @@
--   **addin_monitor_num** <span class='type'>Int</span>
+- **addin_monitor_num** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    Set the number of classes to declare for expansion of the performance counter. Declare `addin_monitor_x` as many as the `addin_monitor_num` setting.
+  Set the number of classes to declare for expansion of the performance counter. Declare `addin_monitor_x` as many as the `addin_monitor_num` setting.
 
--   **addin_monitor_0** <span class='type'>Int</span>
+- **addin_monitor_0** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    ```ini title='whatap.conf'
+  ```ini title='whatap.conf'
 
-    addin_monitor_num=2
+  addin_monitor_num=2
 
-    addin_monitor_0=a.a.Class1
+  addin_monitor_0=a.a.Class1
 
-    addin_monitor_1=a.a.Class2
+  addin_monitor_1=a.a.Class2
 
-    ```
+  ```
 
--   **stat_domain_enabled** <span class='type'>Boolean</span>
+- **stat_domain_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It enables the function to collect transaction statistics for each domain that connects to clients.
+  It enables the function to collect transaction statistics for each domain that connects to clients.
 
--   **stat_domain_max_count** <span class='type'>Int</span>
+- **stat_domain_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    Maximum number of records of the transaction statistics for each domain to collect by a single JVM for 5 minutes.
+  Maximum number of records of the transaction statistics for each domain to collect by a single JVM for 5 minutes.
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+- **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects the version-dependent statistics between callers and callees among multiple server transactions.
+  It collects the version-dependent statistics between callers and callees among multiple server transactions.
 
--   **mtrace_spec** <span class='type'>String</span>
+- **mtrace_spec** <span class='type'>String</span>
 
-    Default: `v1`
+  Default: `v1`
 
-    Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics.
+  Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics.
 
--   **stat_mtrace_max_count** <span class='type'>Int</span>
+- **stat_mtrace_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    It collects the version-dependent statistics between callers and callees among multiple server transactions.
+  It collects the version-dependent statistics between callers and callees among multiple server transactions.
 
--   **stat_login_enabled** <span class='type'>Boolean</span>
+- **stat_login_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects transaction statistics for each log in.
+  It collects transaction statistics for each log in.
 
--   **stat_login_max_count** <span class='type'>Int</span>
+- **stat_login_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    Maximum number of records for log-in based transaction statistics to collect by a single JVM for 5 minutes.
+  Maximum number of records for log-in based transaction statistics to collect by a single JVM for 5 minutes.
 
--   **stat_referer_enabled** <span class='type'>Boolean</span>
+- **stat_referer_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects transaction statistics by referer.
+  It collects transaction statistics by referer.
 
--   **stat_referer_max_count** <span class='type'>Int</span>
+- **stat_referer_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    Maximum number of records for the referer based transaction statistics to collect by a single JVM for 5 minutes.
+  Maximum number of records for the referer based transaction statistics to collect by a single JVM for 5 minutes.
 
--   **stat_tx_max_count** <span class='type'>Int</span>
+- **stat_tx_max_count** <span class='type'>Int</span>
 
-    Default `5000`
+  Default `5000`
 
-    It limits the number of transaction statistics. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+  It limits the number of transaction statistics. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
 
--   **stat_sql_max_count** <span class='type'>Int</span>
+- **stat_sql_max_count** <span class='type'>Int</span>
 
-    Default `5000`
+  Default `5000`
 
-    The number of SQL statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+  The number of SQL statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
 
--   **stat_httpc_max_count** <span class='type'>Int</span>
+- **stat_httpc_max_count** <span class='type'>Int</span>
 
-    Default `5000`
+  Default `5000`
 
-    It limits the number of HTTP call statistics. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+  It limits the number of HTTP call statistics. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
 
--   **stat_error_max_count** <span class='type'>Int</span>
+- **stat_error_max_count** <span class='type'>Int</span>
 
-    Default `1000`
+  Default `1000`
 
-    The number of error statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+  The number of error statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
 
--   **stat_useragent_max_count** <span class='type'>Int</span>
+- **stat_useragent_max_count** <span class='type'>Int</span>
 
-    Default `500`
+  Default `500`
 
-    The number of user agent statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+  The number of user agent statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.

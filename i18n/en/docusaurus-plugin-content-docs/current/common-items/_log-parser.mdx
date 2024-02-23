@@ -1,16 +1,16 @@
 The log parser helps you transform the irregular logs into a structured form. WhaTap Log Monitoring provides two types of parsers.
 
--   **GROK parser**: The logs collected in arbitrary forms are parsed using regular expressions and GROK syntax.
+- **GROK parser**: The logs collected in arbitrary forms are parsed using regular expressions and GROK syntax.
 
--   **JSON parser**: The logs collected in the JSON form are parsed.
+- **JSON parser**: The logs collected in the JSON form are parsed.
 
 :::note
 
 **Common precautions**
 
--   If multiple parsers are registered in the same category, only the first matching parser is applied.
+- If multiple parsers are registered in the same category, only the first matching parser is applied.
 
--   **WhaTap has the role to disable the parsers that may affect the stability of the WhaTap service.**
+- **WhaTap has the role to disable the parsers that may affect the stability of the WhaTap service.**
 
 :::
 
@@ -26,49 +26,49 @@ See the following video guide for more information about the GROK parser pattern
 
 GROK provides two types of syntaxes.
 
-1.  `%{SYNTAX:SEMANTIC}`: Syntax provided in the GROK library. Using the **named regular expressions**, you can extract tags. For usage examples, see [the following](#syntax-semantic-usage).
+1. `%{SYNTAX:SEMANTIC}`: Syntax provided in the GROK library. Using the **named regular expressions**, you can extract tags. For usage examples, see [the following](#syntax-semantic-usage).
 
-    -   **SYNTAX**: Specify the named regular expressions provided by GROK.
+   - **SYNTAX**: Specify the named regular expressions provided by GROK.
 
-    -   **SEMANTIC**:  Specify the name for the matched value.
+   - **SEMANTIC**:  Specify the name for the matched value.
 
-    :::note
+   :::note
 
-    **named regular expressions**
+   **named regular expressions**
 
-    The syntax is provided by GROK. This function provided by GROK allows you to assign names to complex regular expressions.
+   The syntax is provided by GROK. This function provided by GROK allows you to assign names to complex regular expressions.
 
-    | name     | regular expression                                     |
-    | -------- | ------------------------------------------------------ |
-    | WORD     | `\b\w+\b`                                              |
-    | SPACE    | `\s*`                                                  |
-    | NOTSPACE | `\S+`                                                  |
-    | UUID     | `[A-Fa-f0-9]{8}-(?:[A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}` |
+   | name     | regular expression                                     |
+   | -------- | ------------------------------------------------------ |
+   | WORD     | `\b\w+\b`                                              |
+   | SPACE    | `\s*`                                                  |
+   | NOTSPACE | `\S+`                                                  |
+   | UUID     | `[A-Fa-f0-9]{8}-(?:[A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}` |
 
-    :::
+   :::
 
-2.  `(?<SEMANTIC>REGX)`: The **named capturing group** syntax for regular expressions. You can use regular expressions to extract tags according to the user's intent. For usage examples, see [the following](#semantic-regx).
+2. `(?<SEMANTIC>REGX)`: The **named capturing group** syntax for regular expressions. You can use regular expressions to extract tags according to the user's intent. For usage examples, see [the following](#semantic-regx).
 
-    -   **SEMANTIC**: Specify the name for matched values.
+   - **SEMANTIC**: Specify the name for matched values.
 
-    -   **REGX**: Enter regular expressions for matching.
+   - **REGX**: Enter regular expressions for matching.
 
-    :::note
+   :::note
 
-    **named capturing group**
+   **named capturing group**
 
-    It is the syntax provided by regular expressions. 
+   It is the syntax provided by regular expressions. 
 
-    -   capturing group: This indicates the function to bundle multiple tokens into one as a single matching unit.
+   - capturing group: This indicates the function to bundle multiple tokens into one as a single matching unit.
 
-    -   named capturing group: Name assigned to the capturing group.  
+   - named capturing group: Name assigned to the capturing group.  
 
-    -   Let's look at the string matching example. dev@whatap.io
+   - Let's look at the string matching example. dev@whatap.io
 
-        > -   Example 1 `(\w+)@(\w+\.\w+)`
-        > -   Example 2: When the entire email is matched and the username and domain are matched additionally, `(?<username>\w+)@(?<domain>\w+\.\w+)`
+     > - Example 1 `(\w+)@(\w+\.\w+)`
+     > - Example 2: When the entire email is matched and the username and domain are matched additionally, `(?<username>\w+)@(?<domain>\w+\.\w+)`
 
-    :::
+   :::
 
 #### `%{SYNTAX:SEMANTIC}` Usage example{#syntax-semantic-usage}
 
@@ -86,17 +86,17 @@ You can look at the sample log to infer what each word means. When replacing eac
 
 Any semantic word can be replaced with a regular expression. The GROK parser allows you to use the predefined named regular expressions. `TIMESTAMP_ISO8601`, `LOGLEVEL`, and `DATA` used here are named regular expressions provided by GROK. These values are matched after replacing each of them with the following regular expression. 
 
--   name: `TIMESTAMP_ISO8601` 
+- name: `TIMESTAMP_ISO8601` 
 
-    -   regular expression: `%{YEAR}-%{MONTHNUM}-%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}(?::?%{SECOND})?%{ISO8601_TIMEZONE}?`
+  - regular expression: `%{YEAR}-%{MONTHNUM}-%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}(?::?%{SECOND})?%{ISO8601_TIMEZONE}?`
 
--   name: `LOGLEVEL`
+- name: `LOGLEVEL`
 
-    -   regular expression: `LOGLEVEL ([Aa]lert|ALERT|[Tt]race|TRACE|[Dd]ebug|DEBUG|[Nn]otice|NOTICE|[Ii]nfo|INFO|[Ww]arn?(?:ing)?|WARN?(?:ING)?|[Ee]rr?(?:or)?|ERR?(?:OR)?|[Cc]rit?(?:ical)?|CRIT?(?:ICAL)?|[Ff]atal|FATAL|[Ss]evere|SEVERE|EMERG(?:ENCY)?|[Ee]merg(?:ency)?)`
+  - regular expression: `LOGLEVEL ([Aa]lert|ALERT|[Tt]race|TRACE|[Dd]ebug|DEBUG|[Nn]otice|NOTICE|[Ii]nfo|INFO|[Ww]arn?(?:ing)?|WARN?(?:ING)?|[Ee]rr?(?:or)?|ERR?(?:OR)?|[Cc]rit?(?:ical)?|CRIT?(?:ICAL)?|[Ff]atal|FATAL|[Ss]evere|SEVERE|EMERG(?:ENCY)?|[Ee]merg(?:ency)?)`
 
--   name: `DATA`
+- name: `DATA`
 
-    -   regular expression: `.*?`
+  - regular expression: `.*?`
 
 ```text title='GROK parsing pattern'
 \[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]
@@ -188,39 +188,39 @@ If you parse with the above syntax, you can extract tags as follows.
 
 **_Log setting_** > **_Log primary parser setting_**
 
-1.  To apply the GROK pattern parser, go to the **_Log primary parser setting_** tab in **_Log setting_**.
+1. To apply the GROK pattern parser, go to the **_Log primary parser setting_** tab in **_Log setting_**.
 
-    <ImgLang img='log-1st-parser-list.png' desc='Log parser lists'/>
+   <ImgLang img='log-1st-parser-list.png' desc='Log parser lists'/>
 
-2.  Select **_+ Add_** and then select the **_GROK_** parser in the **_Parser_** field.
+2. Select **_+ Add_** and then select the **_GROK_** parser in the **_Parser_** field.
 
-    <ImgLang img='log-1st-grok.png' desc='Registering the Grok pattern parser'/>
+   <ImgLang img='log-1st-grok.png' desc='Registering the Grok pattern parser'/>
 
-3.  Enter values for **_Category_**, **_Log detection condition_**, and **_Pattern_**. The components of the **_Add Parser_** window are as follows: 
+3. Enter values for **_Category_**, **_Log detection condition_**, and **_Pattern_**. The components of the **_Add Parser_** window are as follows: 
 
-    -   **_Category_** 
+   - **_Category_** 
 
-        Select a log category. **_Category_** is required.
+     Select a log category. **_Category_** is required.
 
-    -   **_Log detection condition_** 
+   - **_Log detection condition_** 
 
-        -   Only the logs that meet the conditions are applied to the parser.
+     - Only the logs that meet the conditions are applied to the parser.
 
-        -   Select or enter values for **_Search key_** and **_Search value_**.
+     - Select or enter values for **_Search key_** and **_Search value_**.
 
-        -   **_Log detection conditions_** are applied before all parsers are run. Accordingly, you cannot use the **_tags_** that have been added for the parser.
+     - **_Log detection conditions_** are applied before all parsers are run. Accordingly, you cannot use the **_tags_** that have been added for the parser.
 
-    -   **_Pattern_**
+   - **_Pattern_**
 
-        Specify the GROK pattern. It is required.
+     Specify the GROK pattern. It is required.
 
-4.  Select **_Add_** to register a parser. 
+4. Select **_Add_** to register a parser. 
 
 :::note
 
--   In the log parser list, you can change the **_priority_** or **_enable_**, **_edit_**, or **_delete_** the parser. 
+- In the log parser list, you can change the **_priority_** or **_enable_**, **_edit_**, or **_delete_** the parser. 
 
--   Before registering a parser, you can check whether the pattern to register is normal through **_simulation_**. 
+- Before registering a parser, you can check whether the pattern to register is normal through **_simulation_**. 
 
 :::
 
@@ -228,17 +228,17 @@ If you parse with the above syntax, you can extract tags as follows.
 
 **GROK parser precautions**
 
--   GROK parser supports two patterns: `%{SYNTAX:SEMANTIC}` and `%{SYNTAX:SEMANTIC}`.
+- GROK parser supports two patterns: `%{SYNTAX:SEMANTIC}` and `%{SYNTAX:SEMANTIC}`.
 
--   When using the `%{SYNTAX:SEMANTIC}` pattern, `SEMANTIC` must be entered.
+- When using the `%{SYNTAX:SEMANTIC}` pattern, `SEMANTIC` must be entered.
 
--   When using the `%{SYNTAX:SEMANTIC}` pattern, `SEMANTIC` must be unique in a parser.
+- When using the `%{SYNTAX:SEMANTIC}` pattern, `SEMANTIC` must be unique in a parser.
 
--   When using the `(?<SEMANTIC>REGX)` pattern, `SEMANTIC` can only contain characters (a-z, A-Z), numbers (0-9), and specified special characters (`.`, `_`, `-`).
+- When using the `(?<SEMANTIC>REGX)` pattern, `SEMANTIC` can only contain characters (a-z, A-Z), numbers (0-9), and specified special characters (`.`, `_`, `-`).
 
--   `SEMANTIC` must start with a character (a-z, A-Z).
+- `SEMANTIC` must start with a character (a-z, A-Z).
 
--   `SEMANTIC` must end with a character (a-z, A-Z) or number (0-9).
+- `SEMANTIC` must end with a character (a-z, A-Z) or number (0-9).
 
 :::
 
@@ -250,13 +250,13 @@ You can check the parsed result in advance by entering **_log_** and **_pattern_
 >
 > **_Pattern_** example: `\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
 
-1.  In the **_Parser addition_** window, select **_Simulation_**. 
+1. In the **_Parser addition_** window, select **_Simulation_**. 
 
-2.  In the **_Parser simulation_** window, enter values for **_Log_** and **_Pattern_**. 
+2. In the **_Parser simulation_** window, enter values for **_Log_** and **_Pattern_**. 
 
-3.  Select **_Simulation_**. You can check the **_simulation result_** as follows:
+3. Select **_Simulation_**. You can check the **_simulation result_** as follows:
 
-    <ImgLang img='log-grok-parser-simulation.png' desc='GROK parser simulation'/>
+   <ImgLang img='log-grok-parser-simulation.png' desc='GROK parser simulation'/>
 
 ## JSON parser{#json-parser-detail}
 
@@ -266,57 +266,57 @@ If logs are collected in JSON format, they can be easily parsed using the JSON p
 
 **_Log setting_** > **_Log primary parser setting_**
 
-1.  To apply the JSON pattern parser, go to the **_Log primary parser setting_** tab in **_Log setting_**.
+1. To apply the JSON pattern parser, go to the **_Log primary parser setting_** tab in **_Log setting_**.
 
-    <ImgLang img='log-1st-parser-list.png' desc='Log parser lists'/>
+   <ImgLang img='log-1st-parser-list.png' desc='Log parser lists'/>
 
-2.  Select **_+ Add_** and then select the **_JSON_** parser in the **_Parser_** field.
+2. Select **_+ Add_** and then select the **_JSON_** parser in the **_Parser_** field.
 
-    <ImgLang img='log-1st-json.png' desc='Register json parser pattern'/>
+   <ImgLang img='log-1st-json.png' desc='Register json parser pattern'/>
 
-3.  Enter values for **_Category_**, **_Log detection condition_**, and **_Pattern_**. The components of the **_Add Parser_** window are as follows: 
+3. Enter values for **_Category_**, **_Log detection condition_**, and **_Pattern_**. The components of the **_Add Parser_** window are as follows: 
 
-    -   **_Category_**
+   - **_Category_**
 
-        Select a log category. **_Category_** is required.
+     Select a log category. **_Category_** is required.
 
-    -   **_Log detection condition_**
+   - **_Log detection condition_**
 
-        -   Only the logs that meet the conditions are applied to the parser.
+     - Only the logs that meet the conditions are applied to the parser.
 
-        -   Select or enter values for **_Search key_** and **_Search value_**.
+     - Select or enter values for **_Search key_** and **_Search value_**.
 
-        -   **_Log detection conditions_** are applied before all parsers are run. Accordingly, you cannot use the **_tags_** that have been added for the parser.
+     - **_Log detection conditions_** are applied before all parsers are run. Accordingly, you cannot use the **_tags_** that have been added for the parser.
 
-    -   **_Pattern_**
+   - **_Pattern_**
 
-        -   **_Prefix_**
+     - **_Prefix_**
 
-            Specify the position where the JSON format begins in the log. If the entire log is in JSON format, set an empty value.
+       Specify the position where the JSON format begins in the log. If the entire log is in JSON format, set an empty value.
 
-        -   **_Postfix_**
+     - **_Postfix_**
 
-            Specify the position where the JSON format ends in the log. If the entire log is in JSON format, set an empty value.
+       Specify the position where the JSON format ends in the log. If the entire log is in JSON format, set an empty value.
 
-        -   **_Ignore_**
+     - **_Ignore_**
 
-            Specify the key for which tags are not created during JSON formatting.
+       Specify the key for which tags are not created during JSON formatting.
 
-        -   Example of JSON pattern
+     - Example of JSON pattern
 
-            ```javascript title='Example'
-            2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
-            ```
+       ```javascript title='Example'
+       2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
+       ```
 
-            In the example log, if **_Prefix_** and **_Postfix_** are specified as `--` and **_Ignore_** is specified as `--`, Only 3 **_tags_** (`host`, `method`, `status`) are created.
+       In the example log, if **_Prefix_** and **_Postfix_** are specified as `--` and **_Ignore_** is specified as `--`, Only 3 **_tags_** (`host`, `method`, `status`) are created.
 
-4.  Select **_Add_** to register a parser. 
+4. Select **_Add_** to register a parser. 
 
 :::note
 
--   In the log parser list, you can change the **_priority_** or **_enable_**, **_edit_**, or **_delete_** the parser. 
+- In the log parser list, you can change the **_priority_** or **_enable_**, **_edit_**, or **_delete_** the parser. 
 
--   Before registering a parser, you can check whether the pattern to register is normal through **_simulation_**. It is the same as the GROK parser registration simulation process. See [the following](#grok-simulation).
+- Before registering a parser, you can check whether the pattern to register is normal through **_simulation_**. It is the same as the GROK parser registration simulation process. See [the following](#grok-simulation).
 
 :::
 

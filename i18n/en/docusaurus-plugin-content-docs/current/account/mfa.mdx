@@ -22,15 +22,15 @@ The WhaTap monitoring service (multi-factor authentication is used) provides the
 
 You can configure the multi-factor authentication by going to <Cmdname sid="manage_account_info" className="uitext" /> in the following order.
 
-1.  Log in the WhaTap monitoring service (https://service.whatap.io).
+1. Log in the WhaTap monitoring service (https://service.whatap.io).
 
-2.  Select the profile icon on the upper right of the screen. A drop-down menu appears.
+2. Select the profile icon on the upper right of the screen. A drop-down menu appears.
 
-3.  Select <Cmdname sid="manage_account_info" className="uitext" />.
+3. Select <Cmdname sid="manage_account_info" className="uitext" />.
 
-4.  Scroll down the page to go to the <Cmdname sid="two_factor_auth" className="uitext" /> section.
+4. Scroll down the page to go to the <Cmdname sid="two_factor_auth" className="uitext" /> section.
 
-    <ImgLang img='account-mfa-section.png' desc='Multi-factor authentication' />
+   <ImgLang img='account-mfa-section.png' desc='Multi-factor authentication' />
 
 Select an authentication method of <Link to="#otp"><span class="uitext">OTP</span></Link> or <Link to="#email"><Cmdname sid="email" /></Link>.
 
@@ -38,8 +38,8 @@ Select an authentication method of <Link to="#otp"><span class="uitext">OTP</spa
 
 If OTP is selected as the multi-factor authentication method, be sure to install the OTP app on your mobile device.
 
--   Android: Google OTP (https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
--   iOS: Google Authenticator (https://apps.apple.com/app/google-authenticator/id388497605)
+- Android: Google OTP (https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
+- iOS: Google Authenticator (https://apps.apple.com/app/google-authenticator/id388497605)
 
 :::note
 
@@ -51,29 +51,29 @@ You can also perform OTP authentication through the WhaTap mobile app. For more 
 
 <ImgLang img='account-mfa-otp.png' desc='OTP authentication selection' />
 
-1.  Select <span class="uitext">OTP</span> as a multi-factor authentication method, and then select <Cmdname sid="create_otp_key" className="uitext" />.
+1. Select <span class="uitext">OTP</span> as a multi-factor authentication method, and then select <Cmdname sid="create_otp_key" className="uitext" />.
 
-2.  Select <Cmdname sid="qr_code_url" className="uitext" /> or <Cmdname sid="otp_key" className="uitext" /> and then register the key on the OTP app of your mobile device.
+2. Select <Cmdname sid="qr_code_url" className="uitext" /> or <Cmdname sid="otp_key" className="uitext" /> and then register the key on the OTP app of your mobile device.
 
-    -   To use the QR code, select **_Scan a QR code_** and then scan the QR code on your mobile device. (For convenience, it is recommended to use the QR code method.)
+   - To use the QR code, select **_Scan a QR code_** and then scan the QR code on your mobile device. (For convenience, it is recommended to use the QR code method.)
 
-    -   To use the OTP key, select **_Enter a setup key_** and then enter your account and OTP key on your mobile device.
+   - To use the OTP key, select **_Enter a setup key_** and then enter your account and OTP key on your mobile device.
 
-    <ImgLang img='account-mfa-google.png' desc='Google OTP app' />
+   <ImgLang img='account-mfa-google.png' desc='Google OTP app' />
 
-3.  On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the obtained OTP key in <Cmdname sid="authentication" className="uitext" />. 
+3. On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the obtained OTP key in <Cmdname sid="authentication" className="uitext" />. 
 
-4.  Select <Cmdname sid="validate_otp_token" className="uitext" />.
+4. Select <Cmdname sid="validate_otp_token" className="uitext" />.
 
 Now you have completed the OTP-based multi-factor configuration. Log out and then log in the service to check your multi-factor authentication settings.
 
 ### Using the OTP-based multi-factor authentication
 
-1.  On the Login (https://service.whatap.io/account/login) page, log in the service.
+1. On the Login (https://service.whatap.io/account/login) page, log in the service.
 
-2.  When the multi-factor authentication screen appears, check your OTP key on the OTP app of your mobile device.
+2. When the multi-factor authentication screen appears, check your OTP key on the OTP app of your mobile device.
 
-3.  Enter the granted OTP key and then select <Cmdname sid="validate_otp_token" className="b600" />.
+3. Enter the granted OTP key and then select <Cmdname sid="validate_otp_token" className="b600" />.
 
 If the OTP token validation is successful, you can enter the service screen.
 
@@ -83,23 +83,23 @@ If the OTP token validation is successful, you can enter the service screen.
 
 <ImgLang img='account-mfa-email.png' desc='Email authentication selection' />
 
-1.  For a multi-factor authentication method, select <Cmdname sid="email" className="uitext" /> and then select <Cmdname sid="send_auth_token_mail" className="uitext" />.
+1. For a multi-factor authentication method, select <Cmdname sid="email" className="uitext" /> and then select <Cmdname sid="send_auth_token_mail" className="uitext" />.
 
-2.  Check the verification token (code) received from no-reply@whatap.io. If you have not received any email, check your spam folder.
+2. Check the verification token (code) received from no-reply@whatap.io. If you have not received any email, check your spam folder.
 
-3.  On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the received OTP key in <Cmdname sid="authentication" className="uitext" />. 
+3. On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the received OTP key in <Cmdname sid="authentication" className="uitext" />. 
 
-4.  Select <Cmdname sid="validate_email_token" className="b600" />.
+4. Select <Cmdname sid="validate_email_token" className="b600" />.
 
 Now you have completed the email-based multi-factor configuration. Log out and then log in the service to check your multi-factor authentication settings.
 
 ### Using the email token-based multi-factor authentication
 
-1.  On the Login (https://service.whatap.io/account/login) page, log in the service.
+1. On the Login (https://service.whatap.io/account/login) page, log in the service.
 
-2.  If the multi-factor authentication screen appears, select <Cmdname sid="send_auth_token_mail" className="uitext" />.
+2. If the multi-factor authentication screen appears, select <Cmdname sid="send_auth_token_mail" className="uitext" />.
 
-3.  Enter the authentication token received via the email and then select <Cmdname sid="validate_email_token" className="uitext" />.
+3. Enter the authentication token received via the email and then select <Cmdname sid="validate_email_token" className="uitext" />.
 
 If the validation of the email authentication token is successful, you can enter the service screen.
 

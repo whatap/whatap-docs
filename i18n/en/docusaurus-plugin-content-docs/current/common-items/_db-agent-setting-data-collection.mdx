@@ -1,124 +1,124 @@
 <InDoc product ='mysql,mysql-v1'>
 
--   **deadlock_interval** <span class='type'>Int</span>
+- **deadlock_interval** <span class='type'>Int</span>
 
-    Default `60`
+  Default `60`
 
-    Set the interval (unit: minute) to fetch the deadlock data. For deadlock information, only the latest deadlock information that occurred during the set interval is retrieved.
+  Set the interval (unit: minute) to fetch the deadlock data. For deadlock information, only the latest deadlock information that occurred during the set interval is retrieved.
 
 </InDoc>
 
 <Xclude product ='redis'>
 
--   **long_run_session_sec** <span class='type'>Second</span>
+- **long_run_session_sec** <span class='type'>Second</span>
 
-    Default `10`
+  Default `10`
 
-    The session running longer than the set time is treated as the long run session (unit: second).
+  The session running longer than the set time is treated as the long run session (unit: second).
 
--   **tables_hour** <span class='type'>Int</span>
+- **tables_hour** <span class='type'>Int</span>
 
-    Default `5`
+  Default `5`
 
-    Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
+  Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
 
 </Xclude>
 
 <InDoc product='oracle,tibero'>
 
--   **tables_min_size** <span class='type'>Int</span>
+- **tables_min_size** <span class='type'>Int</span>
 
-    Default `10`
+  Default `10`
 
-    When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
+  When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
 
--   **tables_exclude_sys** <span class='type'>Boolean</span>
+- **tables_exclude_sys** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.
+  When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.
 
 </InDoc>
 
 <InDoc product="cubrid">
 
--   **tables_min_row** <span class='type'>Int</span>
+- **tables_min_row** <span class='type'>Int</span>
 
-    Default `10000`
+  Default `10000`
 
-    When collecting the table information, table data with the number of rows smaller than the set value is not collected.
+  When collecting the table information, table data with the number of rows smaller than the set value is not collected.
 
 </InDoc>
 
 <Xclude product='cubrid,redis'>
 
--   **replication_name** <span class='type'>String</span>
+- **replication_name** <span class='type'>String</span>
 
-    If you set the replication name, it is considered that there is a Master/Slave relationship between DBs with the same `replication_name`.
+  If you set the replication name, it is considered that there is a Master/Slave relationship between DBs with the same `replication_name`.
 
-    As an option to define the replication set, if you set the `replication_name` option that has the same value for both master and slave nodes, the **_Instance Monitoring_** displays a tree structure. It also provides a widget to monitor the replication status in **_Flex Board_** based on the option value.
+  As an option to define the replication set, if you set the `replication_name` option that has the same value for both master and slave nodes, the **_Instance Monitoring_** displays a tree structure. It also provides a widget to monitor the replication status in **_Flex Board_** based on the option value.
 
 </Xclude>
 
 <InDoc product='postgresql'>
 
--   **slave_ip** <span class='type'>string</span>
+- **slave_ip** <span class='type'>string</span>
 
-    Check the IP address with `select inet_server_addr();`. It must be one of the IP addresses found when searching `pg_stat_replication.client_addr` on the master node. If the `replication_name` option value is the same and it is a slave DB, specify `slave_ip`.
+  Check the IP address with `select inet_server_addr();`. It must be one of the IP addresses found when searching `pg_stat_replication.client_addr` on the master node. If the `replication_name` option value is the same and it is a slave DB, specify `slave_ip`.
 
-    :::note
+  :::note
 
-    In case of RDS, because the master/slave relationship is set with `pg_replication_slots.slot_name` instead of the IP address, the `slave_ip` option does not need to be set.
+  In case of RDS, because the master/slave relationship is set with `pg_replication_slots.slot_name` instead of the IP address, the `slave_ip` option does not need to be set.
 
-    :::
+  :::
 
 </InDoc>
 
 <Xclude product='cubrid,redis'>
 
--   **skip_whatap_session** <span class='type'>Int</span>
+- **skip_whatap_session** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    If you set `1`, the session in which the query to collect from WhaTap operates, does not appear in the active session list. (Default value: 0)
+  If you set `1`, the session in which the query to collect from WhaTap operates, does not appear in the active session list. (Default value: 0)
 
 </Xclude>
 
 <InDoc product='mysql,mysql-v1'>
 
--   **skip_sys_session** <span class='type'>Int</span>
+- **skip_sys_session** <span class='type'>Int</span>
 
-    Default `1`
+  Default `1`
 
-    If set to `2`, the sys sessions (root, system user, event_scheduler) are not visible in the active session. The set value, `1` makes sys sessions visible, but excludes them from the total runtime.
+  If set to `2`, the sys sessions (root, system user, event_scheduler) are not visible in the active session. The set value, `1` makes sys sessions visible, but excludes them from the total runtime.
 
 </InDoc>
 
 <InDoc product='redis'>
 
--   **idle_as_active** <span class='type'>Second</span>
+- **idle_as_active** <span class='type'>Second</span>
 
-    Default `1`
+  Default `1`
 
-    This option considers the sessions that have been idle for less than the set value as active sessions since the last active status. For example, if the setting is 1, the sessions that were active within 1 second appear in the Active Sessions window.
+  This option considers the sessions that have been idle for less than the set value as active sessions since the last active status. For example, if the setting is 1, the sessions that were active within 1 second appear in the Active Sessions window.
 
 </InDoc>
 
 <InDoc product='oracle'>
 
--   **ora_ratio** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.11 or later</code>
+- **ora_ratio** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.11 or later</code>
 
-    Default `false`
+  Default `false`
 
-    Various ratio metrics can be additionally collected. The collected metrics are:
+  Various ratio metrics can be additionally collected. The collected metrics are:
 
-    -   `buffer cache hit ratio`
-    -   `soft parse ratio`
-    -   `hard parse ratio`
-    -   `library cache hit ratio`
-    -   `library cache pin hit ratio`
-    -   `library cache get hit ratio`
-    -   `latch hit ratio`
-    -   `shared pool free mem ratio`
+  - `buffer cache hit ratio`
+  - `soft parse ratio`
+  - `hard parse ratio`
+  - `library cache hit ratio`
+  - `library cache pin hit ratio`
+  - `library cache get hit ratio`
+  - `latch hit ratio`
+  - `shared pool free mem ratio`
 
 </InDoc>

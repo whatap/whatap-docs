@@ -14,29 +14,29 @@ To analyze the transaction performance, WhaTap collects and displays the propert
 
 </InDoc>
 
--   In the ![Number 5](/img/number-05.png) area, the step data can be seen in various formats. Select a desired type of tab.
+- In the ![Number 5](/img/number-05.png) area, the step data can be seen in various formats. Select a desired type of tab.
 
--   In the ![number 6](/img/number-06.png) area, you can see the basic information for transactions. The information matches the columns in the list on the left.
+- In the ![number 6](/img/number-06.png) area, you can see the basic information for transactions. The information matches the columns in the list on the left.
 
--   ![Number 7](/img/number-07.png) ![Statistics icon](/img/ic-static.svg): The statistical data window for the corresponding URL or each execution section appears. If you select **_Detail >_** in the statistical data window, **_STAT/REPORT_** > **_Statistics_** appears. 
+- ![Number 7](/img/number-07.png) ![Statistics icon](/img/ic-static.svg): The statistical data window for the corresponding URL or each execution section appears. If you select **_Detail >_** in the statistical data window, **_STAT/REPORT_** > **_Statistics_** appears. 
 
--   By dragging ![Number 8](/img/number-08.png) <LinkImage img='hitmap-lr-drag.svg' alt='좌우 드래그 아이콘' className='_drag' /> to the left or right, you can adjust the screen size. This is useful when you want to see more information.
+- By dragging ![Number 8](/img/number-08.png) <LinkImage img='hitmap-lr-drag.svg' alt='좌우 드래그 아이콘' className='_drag' /> to the left or right, you can adjust the screen size. This is useful when you want to see more information.
 
 :::note
 
 <InDoc product='kubernetes'>
 
--   For more information about **_Statistics_**, see [the following](../java/analysis-apm-trs).
+- For more information about **_Statistics_**, see [the following](../java/analysis-apm-trs).
 
--   If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
+- If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
 
 </InDoc>
 
 <InDoc product='java,python,php,nodejs,golang'>
 
--   For more information about **_Statistics_**, see [the following](analysis-apm-trs).
+- For more information about **_Statistics_**, see [the following](analysis-apm-trs).
 
--   If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
+- If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
 
 </InDoc>
 
@@ -44,42 +44,42 @@ To analyze the transaction performance, WhaTap collects and displays the propert
 
 The collected types of **Step** are as follows. The diagrams and texts are color coded.
 
--   **_DB Connection_** step <span class='type'>START-END</span>
+- **_DB Connection_** step <span class='type'>START-END</span>
 
-    It includes the performance for connection to RDB. Step information includes the name, response time, and error.
+  It includes the performance for connection to RDB. Step information includes the name, response time, and error.
 
--   **_SQL_** step <span class='type'>START-END</span>
+- **_SQL_** step <span class='type'>START-END</span>
 
-    It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
+  It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
 
--   **_HTTP Call_** step <span class='type'>START-END</span>
+- **_HTTP Call_** step <span class='type'>START-END</span>
 
-    It includes the performance for the outbound HTTP service call. Step information includes URL, host, port, response time, and errors.
+  It includes the performance for the outbound HTTP service call. Step information includes URL, host, port, response time, and errors.
 
--   **_Message_** step <span class='type'>ADD</span>
+- **_Message_** step <span class='type'>ADD</span>
 
-    While collecting traces, the message steps are used to collect the records of all irregular sections.  
+  While collecting traces, the message steps are used to collect the records of all irregular sections.  
 
--   **_Socket_** step <span class='type'>ADD</span>
+- **_Socket_** step <span class='type'>ADD</span>
 
-    Step to represent the socket open.
+  Step to represent the socket open.
 
--   **_Method_** step <span class='type'>START-END</span>
+- **_Method_** step <span class='type'>START-END</span>
 
-    The method response time is traced.
+  The method response time is traced.
 
 <Xclude product='php,nodejs,golang'>
 
--   **_Active Stack_** step <span class='type'>START-END</span>
+- **_Active Stack_** step <span class='type'>START-END</span>
 
-    It includes the active step information. It is created and collected by a separate thread and it is added to the transaction trace.
+  It includes the active step information. It is created and collected by a separate thread and it is added to the transaction trace.
 
 </Xclude>
 
 :::note
 
--   In the WhaTap monitoring service, **Step** is used as the same meaning as **Span**.
+- In the WhaTap monitoring service, **Step** is used as the same meaning as **Span**.
 
--   To see the updates in the <UI>Trace analysis</UI> function released on July 25, 2023, see <Link to='../reference/changes-analysis-trace' target='_blank'>the following</Link>.
+- To see the updates in the <UI>Trace analysis</UI> function released on July 25, 2023, see <Link to='../reference/changes-analysis-trace' target='_blank'>the following</Link>.
 
 :::
