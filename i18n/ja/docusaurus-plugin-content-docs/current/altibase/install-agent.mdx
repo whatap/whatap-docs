@@ -26,19 +26,19 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-3.  解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-    ```ini title='whatap.conf'
-    license=プロジェクトアクセスキー
-    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapのサーバー情報
+   ```ini title='whatap.conf'
+   license=プロジェクトアクセスキー
+   whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapのサーバー情報
 
-    dbms=altibase
-    db =データベース名(sid)
-    db_ip=データベースIP
-    db_port=データベースポート
-    ```
+   dbms=altibase
+   db =データベース名(sid)
+   db_ip=データベースIP
+   db_port=データベースポート
+   ```
 
-4.  次のパスにJDBCドライバーをダウンロードしてください。_圧縮解除したフォルダ/jdbc_
+4. 次のパスにJDBCドライバーをダウンロードしてください。_圧縮解除したフォルダ/jdbc_
 
   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
 
@@ -58,4 +58,4 @@ create user whatapidentified by '[DB_PASSWORD]; ##必要なpasswordを入力し�
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-{@include: ../common-items/_db-create-db-user-file.mdx}
+{@include: ../common-items/_db-create-db-user-file.mdx} 

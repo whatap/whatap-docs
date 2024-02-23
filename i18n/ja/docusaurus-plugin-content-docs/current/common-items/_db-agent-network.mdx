@@ -1,49 +1,49 @@
 エージェントをインストールしているデータベースサーバーとWhaTap収集サーバー間のネットワーク通信の設定です。
 
--   **license** <span class='type'>String</span>
+- **license** <span class='type'>String</span>
 
-    エージェントのインストール時にサーバーから付与されたプロジェクトアクセスキーを設定します。プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。
+  エージェントのインストール時にサーバーから付与されたプロジェクトアクセスキーを設定します。プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。
 
--   **whatap.server.host** <span class='type'>String</span>
+- **whatap.server.host** <span class='type'>String</span>
 
-    デフォルト値`127.0.0.1,127.0.1`
+  デフォルト値`127.0.0.1,127.0.1`
 
-    エージェントが収集したデータを送信するWhaTap収集サーバーのIPアドレスを設定します。収集サーバーの冗長化で2つ以上のIPを所有する場合は、コンマ(,)を区切り文字として使用します。設定したIPアドレスには、収集サーバーproxyデーモンがリスニング状態でサービスされる必要があります。
+  エージェントが収集したデータを送信するWhaTap収集サーバーのIPアドレスを設定します。収集サーバーの冗長化で2つ以上のIPを所有する場合は、コンマ(,)を区切り文字として使用します。設定したIPアドレスには、収集サーバーproxyデーモンがリスニング状態でサービスされる必要があります。
 
--   **whatap.server.port** <span class='type'>String</span>
+- **whatap.server.port** <span class='type'>String</span>
 
-    デフォルト値`6600`
+  デフォルト値`6600`
 
-    収集サーバーのポート(port)を設定します。ポートは1つのみ設定ができるので、`whatap_server_host`に設定した収集サーバは同一ポートを使用する必要があります。
+  収集サーバーのポート(port)を設定します。ポートは1つのみ設定ができるので、`whatap_server_host`に設定した収集サーバは同一ポートを使用する必要があります。
 
--   **dbms** <span class='type'>String</span>
+- **dbms** <span class='type'>String</span>
 
-    モニタリングするデータベースの種類を設定します。DBの種類は次のいずれかを設定できます。 
+  モニタリングするデータベースの種類を設定します。DBの種類は次のいずれかを設定できます。 
 
-    -   `oracle`
-    -   `postgresql`
-    -   `mysql`
-    -   `mssql`
+  - `oracle`
+  - `postgresql`
+  - `mysql`
+  - `mssql`
 
--   **db_ip** <span class='type'>String</span>
+- **db_ip** <span class='type'>String</span>
 
-    モニタリングするデータベースサーバーのIPアドレスを設定します。
+  モニタリングするデータベースサーバーのIPアドレスを設定します。
 
--   **db_port** <span class='type'>Int</span>
+- **db_port** <span class='type'>Int</span>
 
-    データベースが通信に使用するポートを設定します。各データベースのデフォルトポートは、次のとおりです。
+  データベースが通信に使用するポートを設定します。各データベースのデフォルトポートは、次のとおりです。
 
-    -   Oracle: `1521`
-    -   PostgreSQL: `5432`
-    -   EDB: `5444`
-    -   MySQL: `3306`
-    -   MS SQL: `1433`
+  - Oracle: `1521`
+  - PostgreSQL: `5432`
+  - EDB: `5444`
+  - MySQL: `3306`
+  - MS SQL: `1433`
 
--   **db** <span class='type'>String</span>
+- **db** <span class='type'>String</span>
 
-    データベース接続に必要なdb名を設定します。 
+  データベース接続に必要なdb名を設定します。 
 
-    -   Oracleの場合、SIDを設定します。
-    -   PostgreSQLとEDBで設定しない場合は、デフォルトでPostgreSQLのDBが使用されます。
-    -   MS SQLの場合、設定しなければデフォルト値としてmasterのDBを使用します。
-    -   MySQLの場合、設定しなくてもいいです。
+  - Oracleの場合、SIDを設定します。
+  - PostgreSQLとEDBで設定しない場合は、デフォルトでPostgreSQLのDBが使用されます。
+  - MS SQLの場合、設定しなければデフォルト値としてmasterのDBを使用します。
+  - MySQLの場合、設定しなくてもいいです。

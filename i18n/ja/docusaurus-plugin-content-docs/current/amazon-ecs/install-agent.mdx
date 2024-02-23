@@ -15,22 +15,22 @@ WhaTap AmazonECSモニタリングは、META APIおよびCgroupディレクト�
 
 ## チェックリスト
 
--   **AWS CLI**
+- **AWS CLI**
 
-    インストール方法は [次の文書](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-configure.html)を参照してください。
+  インストール方法は [次の文書](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-configure.html)を参照してください。
 
--   **Amazon ECS CLI**
+- **Amazon ECS CLI**
 
-    インストール方法は [次の文書](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/Welcome.html)を参照してください。
+  インストール方法は [次の文書](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/Welcome.html)を参照してください。
 
--   **Python 2.x / 3.x**
+- **Python 2.x / 3.x**
 
-    スクリプトの jsonドキュメント分析には、インストールが必要です。
+  スクリプトの jsonドキュメント分析には、インストールが必要です。
 
 :::note
 
--   インストールに使用するWhaTapイメージ(_whatap/ecs_mon_)をダウンロードし、レジストリにユーザー登録をしてから使用することをお勧めします。
--   WhaTapサーバーにデータを送信するには、**6600**番ポートが開いている必要があります。
+- インストールに使用するWhaTapイメージ(_whatap/ecs_mon_)をダウンロードし、レジストリにユーザー登録をしてから使用することをお勧めします。
+- WhaTapサーバーにデータを送信するには、**6600**番ポートが開いている必要があります。
 
 :::
 
@@ -38,13 +38,13 @@ WhaTap AmazonECSモニタリングは、META APIおよびCgroupディレクト�
 
 Amazon ECS의 Launch Typeによって項目が区分されます。 モニタリング対象は、Task, Service, Deployment, Container Instanceです。
 
--   **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
+- **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
 
-    ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
+  ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
 
--   **_Fargate Launch Type_**: Task, Service, Deployment
+- **_Fargate Launch Type_**: Task, Service, Deployment
 
-    ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
+  ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
 
 次のモニタリング手順も**_EC2 Launch Type_**のモニタリングの手続きと**_Fargate Launch Type_**のモニタリングに区分されて行われます。
 
@@ -58,245 +58,245 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 
 <ImgLang img='amazon-ecs-install.png' desc='ecs install' />
 
--   インストールガイドセクション![number-s](/img/number-01.png)タブを使用して、WhaTap Amazon ECSエージェントを専用TaskまたはSidecarでデプロイしてください。
+- インストールガイドセクション![number-s](/img/number-01.png)タブを使用して、WhaTap Amazon ECSエージェントを専用TaskまたはSidecarでデプロイしてください。
 
--   インストールガイドセクション![number-s](/img/number-02.png)タブをクリックして、モニタリングサービスを開始してください。
+- インストールガイドセクション![number-s](/img/number-02.png)タブをクリックして、モニタリングサービスを開始してください。
 
 ### EC2 Launch Type
 
-1.  プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェントのインストール_**のインストール手順セクションに移動してください。 
+1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェントのインストール_**のインストール手順セクションに移動してください。 
 
-2.  ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2 Launch Type_**を選択してください。
+2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2 Launch Type_**を選択してください。
 
-3.  次のスクリプトを実行して、DAEMONタイプのTaskを作成してください。 `CLUSTER`、`REGION`を追加し、`ACCESSKEY`および`WHATAP_HOST`を設定して収集サーバーと通信できるようにします。
+3. 次のスクリプトを実行して、DAEMONタイプのTaskを作成してください。 `CLUSTER`、`REGION`を追加し、`ACCESSKEY`および`WHATAP_HOST`を設定して収集サーバーと通信できるようにします。
 
-    ```bash title='Linux'
-    #!/usr/bin/env bash
-    export ACCESSKEY=
-    export WHATAP_HOST=
-    export CLUSTER=
-    export REGION=
-    export LAUNCH_TYPE=EC2
-    cat >whatap_ecs.json <<EOL
-    { "containerDefinitions": [ {
-        "name": "whatap-node-agent",
-        "image": "whatap/ecs_mon",
-        "cpu": 100,
-        "memory": 50,
-        "essential": true,
-        "mountPoints": [{
-            "containerPath": "/var/run/docker.sock",
-            "sourceVolume": "docker_sock",
-            "readOnly": true},{
-            "containerPath": "/rootfs",
-            "sourceVolume": "rootfs",
-            "readOnly": true}],
-        "environment": [{
-            "name": "ACCESSKEY",
-            "value": "$ACCESSKEY"
-        },{
-            "name": "WHATAP_HOST",
-            "value": "$WHATAP_HOST"}
-        ],
-        "linuxParameters": {
-            "capabilities": {
-                "add": [
-                "SYS_ADMIN",
-                "SYS_RESOURCE",
-                "SYS_PTRACE",
-                "NET_ADMIN",
-                "NET_BROADCAST",
-                "NET_RAW",
-                "IPC_LOCK",
-                "CHOWN"]
-            }}}],
-    "requiresCompatibilities": ["EC2"],
-    "volumes": [{
-        "host": {"sourcePath": "/var/run/docker.sock"},
-        "name": "docker_sock"},{
-        "host": {"sourcePath": "/"},
-        "name": "rootfs"}],
-    "family": "whatap-agent-task"}
-    EOL
-    aws ecs register-task-definition \
-    --cli-input-json file://$(pwd)/whatap_ecs.json \
-    --region $REGION
-    aws ecs create-service --cluster $CLUSTER \
-    --service-name whatap-node-agent \
-    --task-definition whatap-agent-task \
-    --scheduling-strategy DAEMON \
-    --launch-type $LAUNCH_TYPE \
-    --region $REGION
-    ```
+   ```bash title='Linux'
+   #!/usr/bin/env bash
+   export ACCESSKEY=
+   export WHATAP_HOST=
+   export CLUSTER=
+   export REGION=
+   export LAUNCH_TYPE=EC2
+   cat >whatap_ecs.json <<EOL
+   { "containerDefinitions": [ {
+       "name": "whatap-node-agent",
+       "image": "whatap/ecs_mon",
+       "cpu": 100,
+       "memory": 50,
+       "essential": true,
+       "mountPoints": [{
+           "containerPath": "/var/run/docker.sock",
+           "sourceVolume": "docker_sock",
+           "readOnly": true},{
+           "containerPath": "/rootfs",
+           "sourceVolume": "rootfs",
+           "readOnly": true}],
+       "environment": [{
+           "name": "ACCESSKEY",
+           "value": "$ACCESSKEY"
+       },{
+           "name": "WHATAP_HOST",
+           "value": "$WHATAP_HOST"}
+       ],
+       "linuxParameters": {
+           "capabilities": {
+               "add": [
+               "SYS_ADMIN",
+               "SYS_RESOURCE",
+               "SYS_PTRACE",
+               "NET_ADMIN",
+               "NET_BROADCAST",
+               "NET_RAW",
+               "IPC_LOCK",
+               "CHOWN"]
+           }}}],
+   "requiresCompatibilities": ["EC2"],
+   "volumes": [{
+       "host": {"sourcePath": "/var/run/docker.sock"},
+       "name": "docker_sock"},{
+       "host": {"sourcePath": "/"},
+       "name": "rootfs"}],
+   "family": "whatap-agent-task"}
+   EOL
+   aws ecs register-task-definition \
+   --cli-input-json file://$(pwd)/whatap_ecs.json \
+   --region $REGION
+   aws ecs create-service --cluster $CLUSTER \
+   --service-name whatap-node-agent \
+   --task-definition whatap-agent-task \
+   --scheduling-strategy DAEMON \
+   --launch-type $LAUNCH_TYPE \
+   --region $REGION
+   ```
 
--   実行するために必要な項目は次のとおりです。
+- 実行するために必要な項目は次のとおりです。
 
-    -   `ACCESSKEY` (WhaTap プロジェクトAccess Key)
-    -   `WHATAP_HOST` (WhaTap収集リージョンのIP)
-    -   `REGION` (AWS Region)
-    -   `CLUSTER` (ECS Cluster)
+  - `ACCESSKEY` (WhaTap プロジェクトAccess Key)
+  - `WHATAP_HOST` (WhaTap収集リージョンのIP)
+  - `REGION` (AWS Region)
+  - `CLUSTER` (ECS Cluster)
 
 ### Fargate Launch Type
 
-1.  プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェントのインストール_**のインストール手順セクションに移動してください。 
+1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェントのインストール_**のインストール手順セクションに移動してください。 
 
-2.  ![number-s](/img/number-01.png) **_Task作成_**タブで**_Fargate Launch Type_**を選択してください。
+2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_Fargate Launch Type_**を選択してください。
 
-    -   スクリプトを実行して、AWS ECS API READONLY IAM ROLEを作成します。 
+   - スクリプトを実行して、AWS ECS API READONLY IAM ROLEを作成します。 
 
-        :::note
+     :::note
 
-        WhaTap Taskが、ECS Serviceを参照し、サービスの状態をリアルタイムで収集するために必要です。
+     WhaTap Taskが、ECS Serviceを参照し、サービスの状態をリアルタイムで収集するために必要です。
 
-        :::
+     :::
 
-    -   実行するために必要な項目は次のとおりです。
+   - 実行するために必要な項目は次のとおりです。
 
-        -   `ACCESSKEY` (WhaTap プロジェクトAccess Key)
-        -   `WHATAP_HOST` (WhaTap収集リージョンのIP、複数のIPは`/`で接続)
-        -   `REGION` (AWS Region)
-        -   `PROFILE`（ECS Profile）
-        -   `CLUSTER` (ECS Cluster)
-        -   `CLUSTER_CONFIG` (ECS Cluster Config)
-        -   `TASK_EXECUTION_ROLE` (WhaTapエージェントTask ECS Taskの実行ロール)
-        -   `SUBNET_1` (WhaTapエージェントTask SUBNET#1)
-        -   `SUBNET_2` (WhaTapエージェントTask SUBNET#2)
-        -   `SGGRP` (WhaTapエージェントTask Security Group)
+     - `ACCESSKEY` (WhaTap プロジェクトAccess Key)
+     - `WHATAP_HOST` (WhaTap収集リージョンのIP、複数のIPは`/`で接続)
+     - `REGION` (AWS Region)
+     - `PROFILE`（ECS Profile）
+     - `CLUSTER` (ECS Cluster)
+     - `CLUSTER_CONFIG` (ECS Cluster Config)
+     - `TASK_EXECUTION_ROLE` (WhaTapエージェントTask ECS Taskの実行ロール)
+     - `SUBNET_1` (WhaTapエージェントTask SUBNET#1)
+     - `SUBNET_2` (WhaTapエージェントTask SUBNET#2)
+     - `SGGRP` (WhaTapエージェントTask Security Group)
 
-    -   次の例を参照してください。
+   - 次の例を参照してください。
 
-        ```bash title='Linux'
-        #!/usr/bin/env bash
-        export REGION=xxxxx
-        export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
-        export WHATAP_ECS_POLICY_READONLY=WhatapEcsReadonly
-        cat >ecs_trust.json <<EOL
-        {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Sid": "",
-                    "Effect": "Allow",
-                    "Principal": {
-                        "Service": "ecs-tasks.amazonaws.com"
-                    },
-                    "Action": "sts:AssumeRole"
-                }
-            ]
-        }
-        EOL
-        aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
-        cat >ecs_readonly.json <<EOL
-        {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ecs:Describe*",
-                        "ecs:List*"
-                    ],
-                    "Resource": [
-                        "*"
-                    ]
-                }
-            ]
-        }
-        EOL
-        aws iam --region $REGION create-policy --policy-name $WHATAP_ECS_POLICY_READONLY \
-            --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
-        export POLICY_ARN=$(cat policy_arn.txt)
-        aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
-          --policy-arn $POLICY_ARN
-        ```
+     ```bash title='Linux'
+     #!/usr/bin/env bash
+     export REGION=xxxxx
+     export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
+     export WHATAP_ECS_POLICY_READONLY=WhatapEcsReadonly
+     cat >ecs_trust.json <<EOL
+     {
+         "Version": "2012-10-17",
+         "Statement": [
+             {
+                 "Sid": "",
+                 "Effect": "Allow",
+                 "Principal": {
+                     "Service": "ecs-tasks.amazonaws.com"
+                 },
+                 "Action": "sts:AssumeRole"
+             }
+         ]
+     }
+     EOL
+     aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
+     cat >ecs_readonly.json <<EOL
+     {
+         "Version": "2012-10-17",
+         "Statement": [
+             {
+                 "Effect": "Allow",
+                 "Action": [
+                     "ecs:Describe*",
+                     "ecs:List*"
+                 ],
+                 "Resource": [
+                     "*"
+                 ]
+             }
+         ]
+     }
+     EOL
+     aws iam --region $REGION create-policy --policy-name $WHATAP_ECS_POLICY_READONLY \
+         --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
+     export POLICY_ARN=$(cat policy_arn.txt)
+     aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
+       --policy-arn $POLICY_ARN
+     ```
 
-3.  作成したIAM ROLEを使用してWhatap-Singleエージェントを起動してください。 ECS APIを使用してサービス状態をリアルタイムで収集します。 
+3. 作成したIAM ROLEを使用してWhatap-Singleエージェントを起動してください。 ECS APIを使用してサービス状態をリアルタイムで収集します。 
 
-    ```bash title='Linux'
-    #!/usr/bin/env bash
-    export ACCESSKEY=
-    export WHATAP_HOST=
-    export PROFILE=
-    export REGION=
-    export CLUSTER=
-    export CLUSTER_CONFIG=
-    export TASK_EXECUTION_ROLE=
-    export SUBNET_1=
-    export SUBNET_2=
-    export SGGRP=
-    export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
-    export PROJNAME=whatap-monitoring
-    export LAUNCH_TYPE=FARGATE
-    export WHATAP_ROLE_ARN=$(cat role_arn.txt)
-    cat >docker-compose.yml <<EOL
-    version: '3'
-    services:
-    whatap-ecs-agent:
-        image: whatap/ecs_mon
-        environment:
-        - ACCESSKEY=$ACCESSKEY
-        - WHATAP_HOST=$WHATAP_HOST
-        - FARGATE_HELPER=true
-    EOL
-    cat >ecs-params.yml <<EOL
-    version: 1
-    task_definition:
-    task_execution_role: $TASK_EXECUTION_ROLE
-    task_role_arn: "$WHATAP_ROLE_ARN"
-    ecs_network_mode: awsvpc
-    task_size:
-        mem_limit: 0.5GB
-        cpu_limit: 256
-    run_params:
-    network_configuration:
-        awsvpc_configuration:
-        subnets:
-            - "$SUBNET_1"
-            - "$SUBNET_2"
-        security_groups:
-            - "$SGGRP"
-        assign_public_ip: ENABLED
-    EOL
-    ecs-cli compose --project-name $PROJNAME service up \
-        --cluster-config $CLUSTER_CONFIG \
-        --ecs-profile $PROFILE --region $REGION
-    ```
+   ```bash title='Linux'
+   #!/usr/bin/env bash
+   export ACCESSKEY=
+   export WHATAP_HOST=
+   export PROFILE=
+   export REGION=
+   export CLUSTER=
+   export CLUSTER_CONFIG=
+   export TASK_EXECUTION_ROLE=
+   export SUBNET_1=
+   export SUBNET_2=
+   export SGGRP=
+   export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
+   export PROJNAME=whatap-monitoring
+   export LAUNCH_TYPE=FARGATE
+   export WHATAP_ROLE_ARN=$(cat role_arn.txt)
+   cat >docker-compose.yml <<EOL
+   version: '3'
+   services:
+   whatap-ecs-agent:
+       image: whatap/ecs_mon
+       environment:
+       - ACCESSKEY=$ACCESSKEY
+       - WHATAP_HOST=$WHATAP_HOST
+       - FARGATE_HELPER=true
+   EOL
+   cat >ecs-params.yml <<EOL
+   version: 1
+   task_definition:
+   task_execution_role: $TASK_EXECUTION_ROLE
+   task_role_arn: "$WHATAP_ROLE_ARN"
+   ecs_network_mode: awsvpc
+   task_size:
+       mem_limit: 0.5GB
+       cpu_limit: 256
+   run_params:
+   network_configuration:
+       awsvpc_configuration:
+       subnets:
+           - "$SUBNET_1"
+           - "$SUBNET_2"
+       security_groups:
+           - "$SGGRP"
+       assign_public_ip: ENABLED
+   EOL
+   ecs-cli compose --project-name $PROJNAME service up \
+       --cluster-config $CLUSTER_CONFIG \
+       --ecs-profile $PROFILE --region $REGION
+   ```
 
-4.  次のようにエンドユーザーTaskにWhaTap Sidecarエージェントをデプロイしてください。 `ACCESSKEY`および`WHATAP_HOST`を環境変数として追加し、収集サーバーと通信を有効にします。
+4. 次のようにエンドユーザーTaskにWhaTap Sidecarエージェントをデプロイしてください。 `ACCESSKEY`および`WHATAP_HOST`を環境変数として追加し、収集サーバーと通信を有効にします。
 
-    ```bash title='Linux'
-    version: '3'
-    services:
-    xxxxx:
-        image: xxxx
-        ports:
-        - "xx:xx"
-        ...
-    whatap-ecs-agent:
-        image: whatap/ecs_mon
-        environment:
-        - ACCESSKEY=
-        - WHATAP_HOST=
-    ```
+   ```bash title='Linux'
+   version: '3'
+   services:
+   xxxxx:
+       image: xxxx
+       ports:
+       - "xx:xx"
+       ...
+   whatap-ecs-agent:
+       image: whatap/ecs_mon
+       environment:
+       - ACCESSKEY=
+       - WHATAP_HOST=
+   ```
 
 ### モニタリングサービスのアクティブ化
 
 ![number-s](/img/number-02.png) **_モニタリングの開始_**タブで、**_モニタリングサービスを有効にする_**ボタンを選択して、モニタリングサービスを開始してください。
 
--   モニタリングサービスを有効にします。
+- モニタリングサービスを有効にします。
 
-    <ImgLang img='amazon-ecs-monitoring-on.png' desc='モニタリングのアクティブ化' />
+  <ImgLang img='amazon-ecs-monitoring-on.png' desc='モニタリングのアクティブ化' />
 
--   モニタリングサービスの無効化
+- モニタリングサービスの無効化
 
-    <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの無効化' />
+  <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの無効化' />
 
 ## 除去時の注意事項
 
 完全なコスト発生を防ぐために、次の項目を削除してください。
 
--   ECS Service: `whatap-ecs-agent`
+- ECS Service: `whatap-ecs-agent`
 
--   Task Sidecar: `whatap-ecs-agent` 
+- Task Sidecar: `whatap-ecs-agent` 
 
--   Role: `WhatapEcsReadonly`
+- Role: `WhatapEcsReadonly`

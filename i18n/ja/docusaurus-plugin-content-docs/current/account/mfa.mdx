@@ -22,15 +22,15 @@ WhaTapモニタリングサービスは、マルチファクター認証方式�
 
 次の手順に従って<Cmdname sid="manage_account_info" className="uitext" />ページに移動し、マルチファクター認証を設定することができます
 
-1.  [WhaTapモニタリングサービス](https://service.whatap.io)にログインしてください。
+1. [WhaTapモニタリングサービス](https://service.whatap.io)にログインしてください。
 
-2.  画面右上のプロファイルアイコンを選択してください。ドロップダウンメニューが表示されます。
+2. 画面右上のプロファイルアイコンを選択してください。ドロップダウンメニューが表示されます。
 
-3.  <Cmdname sid="manage_account_info" className="uitext" />を選択してください。
+3. <Cmdname sid="manage_account_info" className="uitext" />を選択してください。
 
-4.  ページを下にスクロールして、<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動してください。
+4. ページを下にスクロールして、<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動してください。
 
-    <ImgLang img='account-mfa-section.png' desc='マルチファクター認証' />
+   <ImgLang img='account-mfa-section.png' desc='マルチファクター認証' />
 
 <Link to="#otp"><span class="uitext">OTP</span></Link>または<Link to="#email"><Cmdname sid="email" /></Link>のいずれかの認証方法を選択してください。
 
@@ -38,8 +38,8 @@ WhaTapモニタリングサービスは、マルチファクター認証方式�
 
 マルチファクター認証方式をOTPとして選択した場合は、モバイル端末にOTPアプリがインストールされている必要があります。
 
--   Android：[Google OTP](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
--   iOS：[Google Authenticator](https://apps.apple.com/app/google-authenticator/id388497605)
+- Android：[Google OTP](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
+- iOS：[Google Authenticator](https://apps.apple.com/app/google-authenticator/id388497605)
 
 :::note
 
@@ -51,29 +51,29 @@ WhaTapモバイルアプリを通じてOTP認証を進めることもできま�
 
 <ImgLang img='account-mfa-otp.png' desc='OTP 認証選択' />
 
-1.  マルチファクター認証方式で<span class="uitext">OTP</span>を選択し、<Cmdname sid="create_otp_key" className="uitext" />を選択してください。
+1. マルチファクター認証方式で<span class="uitext">OTP</span>を選択し、<Cmdname sid="create_otp_key" className="uitext" />を選択してください。
 
-2.  <Cmdname sid="qr_code_url" className="uitext" />または<Cmdname sid="otp_key" className="uitext" />を選択し、モバイル端末のOTPアプリにキーを登録してください。
+2. <Cmdname sid="qr_code_url" className="uitext" />または<Cmdname sid="otp_key" className="uitext" />を選択し、モバイル端末のOTPアプリにキーを登録してください。
 
-    -   QRコードを使用する場合は、**_Scan a QR code_**を選択し、モバイル端末でQRコードをスキャンしてください。 (便宜上、QRコード方式の使用をお勧めします。)
+   - QRコードを使用する場合は、**_Scan a QR code_**を選択し、モバイル端末でQRコードをスキャンしてください。 (便宜上、QRコード方式の使用をお勧めします。)
 
-    -   OTPキーを使用する場合は、**_Enter a setup key_**を選択し、モバイル端末でユーザーアカウントとOTP キーを入力してください。
+   - OTPキーを使用する場合は、**_Enter a setup key_**を選択し、モバイル端末でユーザーアカウントとOTP キーを入力してください。
 
-    <ImgLang img='account-mfa-google.png' desc='Google OTPアプリ' />
+   <ImgLang img='account-mfa-google.png' desc='Google OTPアプリ' />
 
-3.  発行されたOTPトークンを<Cmdname sid="manage_account_info" className="uitext" />ページの<Cmdname sid="authentication" className="uitext" />テキストボックスに入力してください。 
+3. 発行されたOTPトークンを<Cmdname sid="manage_account_info" className="uitext" />ページの<Cmdname sid="authentication" className="uitext" />テキストボックスに入力してください。 
 
-4.  <Cmdname sid="validate_otp_token" className="uitext" />を選択してください。
+4. <Cmdname sid="validate_otp_token" className="uitext" />を選択してください。
 
 OTPベースのマルチファクタ設定を完了しました。 マルチファクター認証設定を確認するには、サインアウトしてから再度サインインしてください。
 
 ### OTPベースのマルチファクター認証を使用する
 
-1.  [ログイン](https://service.whatap.io/account/login)ページからログインしてください。
+1. [ログイン](https://service.whatap.io/account/login)ページからログインしてください。
 
-2.  マルチファクター認証画面が表示されたら、モバイル端末のOTPアプリでOTPキーを確認してください。
+2. マルチファクター認証画面が表示されたら、モバイル端末のOTPアプリでOTPキーを確認してください。
 
-3.  発行されたOTPキーを入力し、<Cmdname sid="validate_otp_token" className="b600" />を選択してください。
+3. 発行されたOTPキーを入力し、<Cmdname sid="validate_otp_token" className="b600" />を選択してください。
 
 OTPトークン検証に成功した場合、サービス画面にアクセスできます。
 
@@ -83,23 +83,23 @@ OTPトークン検証に成功した場合、サービス画面にアクセス�
 
 <ImgLang img='account-mfa-email.png' desc='メールトークン認証選択' />
 
-1.  マルチファクター認証方式で<Cmdname sid="email" className="uitext" />を選択し、<Cmdname sid="send_auth_token_mail" className="uitext" />を選択してください。
+1. マルチファクター認証方式で<Cmdname sid="email" className="uitext" />を選択し、<Cmdname sid="send_auth_token_mail" className="uitext" />を選択してください。
 
-2.  メールでno-reply@whatap.ioから受信した認証トークン(Verification Code)を確認してください。 メールを受信できなかった場合は、迷惑メールフォルダを確認してください。
+2. メールでno-reply@whatap.ioから受信した認証トークン(Verification Code)を確認してください。 メールを受信できなかった場合は、迷惑メールフォルダを確認してください。
 
-3.  受信した認証トークンを<Cmdname sid="manage_account_info" className="uitext" />ページの<Cmdname sid="authentication" className="uitext" />テキストボックスに入力してください。 
+3. 受信した認証トークンを<Cmdname sid="manage_account_info" className="uitext" />ページの<Cmdname sid="authentication" className="uitext" />テキストボックスに入力してください。 
 
-4.  <Cmdname sid="validate_email_token" className="b600" />を選択してください。
+4. <Cmdname sid="validate_email_token" className="b600" />を選択してください。
 
 メールベースのマルチファクター設定を完了しました。マルチファクター認証の設定を確認するには、サインアウト後に再度サインインしてください。
 
 ### メールトークンベースのマルチファクター認証を使用
 
-1.  [ログイン](https://service.whatap.io/account/login)ページからログインしてください。
+1. [ログイン](https://service.whatap.io/account/login)ページからログインしてください。
 
-2.  マルチファクター認証画面が表示されたら、<Cmdname sid="send_auth_token_mail" className="uitext" />を選択してください。
+2. マルチファクター認証画面が表示されたら、<Cmdname sid="send_auth_token_mail" className="uitext" />を選択してください。
 
-3.  メールで受信した認証トークンを入力し、<Cmdname sid="validate_email_token" className="uitext" />を選択してください。
+3. メールで受信した認証トークンを入力し、<Cmdname sid="validate_email_token" className="uitext" />を選択してください。
 
 メール認証トークンの検証に成功すると、サービス画面にアクセスできます。
 

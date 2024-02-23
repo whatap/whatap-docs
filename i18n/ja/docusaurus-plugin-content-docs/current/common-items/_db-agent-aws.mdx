@@ -1,58 +1,58 @@
--   **aws_region** <span class='type'>String</span>
+- **aws_region** <span class='type'>String</span>
 
-    AWSリージョンを設定します。
+  AWSリージョンを設定します。
 
--   **aws_access_key** <span class='type'>String</span>
+- **aws_access_key** <span class='type'>String</span>
 
-    AWSアクセス キーを設定します。
+  AWSアクセス キーを設定します。
 
--   **aws_secret_key** <span class='type'>String</span>
+- **aws_secret_key** <span class='type'>String</span>
 
-    AWSシークレットキーを設定します。
+  AWSシークレットキーを設定します。
 
--   **cloud_watch** <span class='type'>String</span>
+- **cloud_watch** <span class='type'>String</span>
 
-    CloudWatchモニタリングの使用有無を設定します。 設定値は`on`または`off`です。
+  CloudWatchモニタリングの使用有無を設定します。 設定値は`on`または`off`です。
 
--   **cloud_watch_instance** <span class='type'>String</span>
+- **cloud_watch_instance** <span class='type'>String</span>
 
-    CloudWatchインスタンス名を設定します。
+  CloudWatchインスタンス名を設定します。
 
--   **cloud_watch_interval** <span class='type'>Second</span>
+- **cloud_watch_interval** <span class='type'>Second</span>
 
-    CloudWatchでモニタリング値を取得する間隔を設定します。(単位：秒)
+  CloudWatchでモニタリング値を取得する間隔を設定します。(単位：秒)
 
--   **cloud_watch_metrics** <span class='type'>String</span>
+- **cloud_watch_metrics** <span class='type'>String</span>
 
-    CloudWatchに読み込みするモニタリング指標名を設定します。次のように設定できます。
+  CloudWatchに読み込みするモニタリング指標名を設定します。次のように設定できます。
 
-    ```ini
-    cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
-    ```
+  ```ini
+  cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+  ```
 
--   **aws_arn** <span class='type'>String</span>
+- **aws_arn** <span class='type'>String</span>
 
-    `aws_access_key`、`aws_secret_key`の代わりに適切な権限を持つIAM ROLEのARNを使用することができます。
+  `aws_access_key`、`aws_secret_key`の代わりに適切な権限を持つIAM ROLEのARNを使用することができます。
 
-    <details>
-    <summary>必須権限</summary>
+  <details>
+  <summary>必須権限</summary>
 
-    ROLEには、次のアクセス権限(Policy)が必要です。
+  ROLEには、次のアクセス権限(Policy)が必要です。
 
-    | 権限                                | 権限内容                                |
-    | --------------------------------- | ----------------------------------- |
-    | rds:DescribeDBInstances           | インスタンスクラスの情報収集                      |
-    | rds:DescribeDBClusters            | autoscale使用時クラスターから情報収集             |
-    | rds:DescribeDBLogFiles            | CloudWatchログ収集                      |
-    | rds:DownloadDBLogFilePortion      | CloudWatchログ収集                      |
-    | ec2:DescribeInstanceTypes         | インスタンスクラスに対応するcpu数を収集               |
-    | elasticache:DescribeCacheClusters | elasticacheを利用する場合時、インスタンスクラスの情報を収集 |
-    | cloudwatch:ListMetrics            | CloudWatch指標一覧を収集                   |
-    | cloudwatch:GetMetricStatistics    | CloudWatch指標から値を収集                  |
-    | logs:DescribeLogStreams           | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
-    | logs:GetLogEvents                 | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
+  | 権限                                | 権限内容                                |
+  | --------------------------------- | ----------------------------------- |
+  | rds:DescribeDBInstances           | インスタンスクラスの情報収集                      |
+  | rds:DescribeDBClusters            | autoscale使用時クラスターから情報収集             |
+  | rds:DescribeDBLogFiles            | CloudWatchログ収集                      |
+  | rds:DownloadDBLogFilePortion      | CloudWatchログ収集                      |
+  | ec2:DescribeInstanceTypes         | インスタンスクラスに対応するcpu数を収集               |
+  | elasticache:DescribeCacheClusters | elasticacheを利用する場合時、インスタンスクラスの情報を収集 |
+  | cloudwatch:ListMetrics            | CloudWatch指標一覧を収集                   |
+  | cloudwatch:GetMetricStatistics    | CloudWatch指標から値を収集                  |
+  | logs:DescribeLogStreams           | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
+  | logs:GetLogEvents                 | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
 
-    </details>
+  </details>
 
 ### RDS CloudWatch収集の設定例
 
@@ -72,8 +72,8 @@ cloud_watch_instance=pg-rds
 
 :::note
 
--   **役割ARN**(**Role ARN**)の詳細については、[次のリンク](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)を参照してください。
+- **役割ARN**(**Role ARN**)の詳細については、[次のリンク](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)を参照してください。
 
--   IAM ROLEのARN値を利用せずに、EC2にRDS CloudWatch Metricの収集権限を付与して、データを収集する方法は[次の文書](../reference/cloudwatch-metric-guide)を参照してください。
+- IAM ROLEのARN値を利用せずに、EC2にRDS CloudWatch Metricの収集権限を付与して、データを収集する方法は[次の文書](../reference/cloudwatch-metric-guide)を参照してください。
 
 :::

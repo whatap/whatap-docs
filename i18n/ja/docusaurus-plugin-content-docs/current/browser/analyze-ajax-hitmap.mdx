@@ -13,19 +13,19 @@ tags:
 
 AJAX の利点には、ユーザー エクスペリエンスの向上とサーバーへの要求の削減が含まれます。 しかし、AJAXはブラウザで実行されるJavaScriptコードによって実装されるため、次のような理由からモニタリングが必要です。
 
--   Ajaxリクエストがきちんと処理されているかを確認する必要があります。
+- Ajaxリクエストがきちんと処理されているかを確認する必要があります。
 
--   Ajaxリクエストによる性能低下を把握する必要があります。
+- Ajaxリクエストによる性能低下を把握する必要があります。
 
--   ネットワークの遅延、ダウンロード時間などを含め、ユーザー体感の性能を把握する必要があります。
+- ネットワークの遅延、ダウンロード時間などを含め、ユーザー体感の性能を把握する必要があります。
 
 **ブラウザモニタリング**で提供する<Cmdname sid="ajaxAnalytics" className="uitext" />メニューでは、時間に応じたAjaxイベントの応答時間をヒットマップチャートとして確認できます。 また、各イベントに関する詳細情報を照会することもできます。 提供する情報は以下のとおりです。
 
--   Ajaxイベント区間別の詳細時間の情報
+- Ajaxイベント区間別の詳細時間の情報
 
--   AjaxリクエストURLや呼び出しページ情報など
+- AjaxリクエストURLや呼び出しページ情報など
 
--   エラーメッセージとステータスコード
+- エラーメッセージとステータスコード
 
 ## 基本画面ガイド
 
@@ -35,13 +35,13 @@ AJAX の利点には、ユーザー エクスペリエンスの向上とサー�
 
 時間に応じたAjaxイベントの応答時間を分布図チャートとして表示するウィジェットです。 
 
--   横軸はAjaxイベントの終了時間です。
+- 横軸はAjaxイベントの終了時間です。
 
--   縦軸はAjaxイベントの経過時間です。
+- 縦軸はAjaxイベントの経過時間です。
 
--   <span class='lowfg'>空色</span> → <span class='normal'>青色</span> → <span class='highfg'>藍色</span> 順に正常<b>Ajax</b>イベントを表示します。
+- <span class='lowfg'>空色</span> → <span class='normal'>青色</span> → <span class='highfg'>藍色</span> 順に正常<b>Ajax</b>イベントを表示します。
 
--   <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>Ajax</b>イベントを表示します。 エラー<b>Ajax</b>イベントはステータスコードが<code>0</code>か<code>400</code>以上の場合です。 ステータスコードが<code>0</code>なら、ブラウザからサーバー側にリクエストが届かなかった場合です。
+- <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>Ajax</b>イベントを表示します。 エラー<b>Ajax</b>イベントはステータスコードが<code>0</code>か<code>400</code>以上の場合です。 ステータスコードが<code>0</code>なら、ブラウザからサーバー側にリクエストが届かなかった場合です。
 
 ### <Cmdname sid="ajax" /> <Cmdname sid="list" />
 
@@ -51,25 +51,25 @@ AJAX の利点には、ユーザー エクスペリエンスの向上とサー�
 
 次は、テーブル内のカラム項目についての説明です。
 
--   <Cmdname sid="ajax_request_url" className="uitext" />: AjaxイベントURL
+- <Cmdname sid="ajax_request_url" className="uitext" />: AjaxイベントURL
 
--   <Cmdname sid="start_time" className="uitext" />: Ajaxリクエストを開始した時刻
+- <Cmdname sid="start_time" className="uitext" />: Ajaxリクエストを開始した時刻
 
--   <Cmdname sid="elapsed" className="uitext" />: Ajaxイベントを完了するまでの所要時間
+- <Cmdname sid="elapsed" className="uitext" />: Ajaxイベントを完了するまでの所要時間
 
--   <Cmdname sid="page_url" className="uitext" />: Ajaxイベントを呼び出したページのURL
+- <Cmdname sid="page_url" className="uitext" />: Ajaxイベントを呼び出したページのURL
 
--   <Cmdname sid="status_code" className="uitext" />: Ajaxイベントの応答ステータスコード
+- <Cmdname sid="status_code" className="uitext" />: Ajaxイベントの応答ステータスコード
 
--   <Cmdname sid="errMessage" className="uitext" />: ステータスコードが<code>0</code>または<code>400</code>以上の場合のAjaxの応答値(<code>statusText</code>)
+- <Cmdname sid="errMessage" className="uitext" />: ステータスコードが<code>0</code>または<code>400</code>以上の場合のAjaxの応答値(<code>statusText</code>)
 
-    :::note
+  :::note
 
-    ステータスコードが`0`または`400`以上のAjaxイベントは一覧から<span class='vslow'>赤色</span>として表示されます。
+  ステータスコードが`0`または`400`以上のAjaxイベントは一覧から<span class='vslow'>赤色</span>として表示されます。
 
-    :::
+  :::
 
--   <Cmdname sid="browser" className="uitext" />: エンドユーザーが使用するブラウザの種類
+- <Cmdname sid="browser" className="uitext" />: エンドユーザーが使用するブラウザの種類
 
 :::note
 
@@ -101,19 +101,19 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 Ajaxイベントをロードする過程を次のような段階に分け、区間別の所要時間を把握して 
 
--   <Cmdname sid="redirect_time" className="uitext" />: ブラウザがAJAXをリクエストした場合、リダイレクトに要した時間
+- <Cmdname sid="redirect_time" className="uitext" />: ブラウザがAJAXをリクエストした場合、リダイレクトに要した時間
 
--   <Cmdname sid="cache_time" className="uitext" />: ブラウザがキャッシュされたAjaxリソースを検索するまでの所要時間
+- <Cmdname sid="cache_time" className="uitext" />: ブラウザがキャッシュされたAjaxリソースを検索するまでの所要時間
 
--   <Cmdname sid="TTL06193" className="uitext" />: ブラウザがAjaxリクエストドメインを照会するまでの所要時間
+- <Cmdname sid="TTL06193" className="uitext" />: ブラウザがAjaxリクエストドメインを照会するまでの所要時間
 
--   <Cmdname sid="connect_time" className="uitext" />: Ajaxリクエスト対象サーバーとTCP接続を設定するまでの所要時間
+- <Cmdname sid="connect_time" className="uitext" />: Ajaxリクエスト対象サーバーとTCP接続を設定するまでの所要時間
 
--   <Cmdname sid="ssl_time" className="uitext" />: SSL/TLSハンドシェイクを完了するまでの所要時間
+- <Cmdname sid="ssl_time" className="uitext" />: SSL/TLSハンドシェイクを完了するまでの所要時間
 
--   <Cmdname sid="wait_time" className="uitext" />: ブラウザのHTTPリクエスト開始からサーバーがリクエストを受信して応答を開始するまでの所要時間です。サーバー領域のトランザクション処理時間がこの区間に含まれます。
+- <Cmdname sid="wait_time" className="uitext" />: ブラウザのHTTPリクエスト開始からサーバーがリクエストを受信して応答を開始するまでの所要時間です。サーバー領域のトランザクション処理時間がこの区間に含まれます。
 
--   <Cmdname sid="download_time" className="uitext" />: ブラウザがサーバーからAjax応答値をダウンロードするまでの所要時間
+- <Cmdname sid="download_time" className="uitext" />: ブラウザがサーバーからAjax応答値をダウンロードするまでの所要時間
 
 ## Ajax一覧のフィルタリング
 
@@ -123,13 +123,13 @@ Ajax一覧を対象に、検索語を入力して一致する対象をフィル�
 
 フィルタリングのために選択できる照会基準は次のとおりです。
 
--   <Cmdname sid="TTL07103" className="uitext" />
--   <Cmdname sid="page_url" className="uitext" />
--   <Cmdname sid="browser" className="uitext" />
--   <Cmdname sid="os" className="uitext" />
--   <Cmdname sid="device" className="uitext" />
--   <Cmdname sid="client_ip" className="uitext" />
--   <Cmdname sid="user_id" className="uitext" />
+- <Cmdname sid="TTL07103" className="uitext" />
+- <Cmdname sid="page_url" className="uitext" />
+- <Cmdname sid="browser" className="uitext" />
+- <Cmdname sid="os" className="uitext" />
+- <Cmdname sid="device" className="uitext" />
+- <Cmdname sid="client_ip" className="uitext" />
+- <Cmdname sid="user_id" className="uitext" />
 
 ## テーブルカラムの設定
 
@@ -139,9 +139,9 @@ Ajax一覧からテーブルヘッダーカラムを隠したり、希望する�
 
 :::note
 
--   設定を完了した後は、**_確認_**ボタンを選択すると、設定事項がテーブルに反映されます。
+- 設定を完了した後は、**_確認_**ボタンを選択すると、設定事項がテーブルに反映されます。
 
--   ![数字3](/img/number-03.png)検索欄にテキストを入力して、希望するカラム項目を検索することができます。 入力したテキストと一致するカラム項目が表示されます。
+- ![数字3](/img/number-03.png)検索欄にテキストを入力して、希望するカラム項目を検索することができます。 入力したテキストと一致するカラム項目が表示されます。
 
 :::
 

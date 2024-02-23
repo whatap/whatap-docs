@@ -20,8 +20,8 @@ MXQLについての詳細は [次の文書](../mxql/mxql-overview)を参照し�
 
 MXQLを使用する方法は次のとおりです。
 
--   直接MXQLクエリを作成してデータを表示する方法
--   [次の文書](../mxql/mxql-guide#custom-query-saas)を使用して、「**SaaSサービスで提供する事前に定義されたMXQLクエリの一覧**」でデータを参照する方法
+- 直接MXQLクエリを作成してデータを表示する方法
+- [次の文書](../mxql/mxql-guide#custom-query-saas)を使用して、「**SaaSサービスで提供する事前に定義されたMXQLクエリの一覧**」でデータを参照する方法
 
 したがって、それぞれの場合に使用されるAPIのパスが異なります。 
 
@@ -92,104 +92,104 @@ curl --location 'https://api.whatap.io/open/api/flush/mxql/text' \
 
 :::
 
--   参照されたデータがない場合
+- 参照されたデータがない場合
 
-    ```json title='ResponseBody Example 1'
-    []
-    ```
+  ```json title='ResponseBody Example 1'
+  []
+  ```
 
--   参照されたデータがある場合
+- 参照されたデータがある場合
 
-    ```json title='ResponseBody Example 2'
-    [
-      {
-        "time": 1639016640000,
-        "pcode": 101,
-        "pname": "Virtual",
-        "okind": -1085056726,
-        "onode": 334634079,
-        "oname": "22136-8075",
-        "okindName": "ote-virtual-1",
-        "onodeName": "node-1",
-        "host_ip": "192.168.1.57",
-        "container": "ote-8075.service",
-        "pid": 22206,
-        "type": "java",
-        "containerKey": 1876424218,
-        "tx_count": 58,
-        "tx_error": 0,
-        "tx_time": 1643.9138,
-        "apdex_satisfied": 41,
-        "apdex_tolerated": 16,
-        "apdex_total": 58,
-        "tx_dbc_time": 13.655172,
-        "tx_sql_time": 222.15517,
-        "tx_httpc_time": 717.4138,
-        "sql_count": 129,
-        "sql_error": 0,
-        "sql_time": 101.387596,
-        "sql_fetch_count": 37621,
-        "sql_fetch_time": 4.5187527E-4,
-        "httpc_count": 41,
-        "httpc_error": 0,
-        "httpc_time": 1073.4878,
-        "active_tx_count": 20,
-        "active_tx_0": 19,
-        "active_tx_3": 1,
-        "active_tx_8": 0,
-        "tps": 13.833333,
-        "resp_time": 1628,
-        "arrival_rate": 12.6,
-        "pack_dropped": 110,
-        "metering": 4,
-        "_clock_delta_": 180,
-        "oid": 1670734023
-      },
-      {
-        "time": 1639016640000,
-        "pcode": 101,
-        "pname": "Virtual",
-        "okind": -933992004,
-        "onode": 1693789385,
-        "oname": "22134-8074",
-        "okindName": "ote-virtual-0",
-        "onodeName": "node-0",
-        "host_ip": "192.168.1.57",
-        "container": "ote-8074.service",
-        "pid": 22202,
-        "type": "java",
-        "containerKey": 2024596057,
-        "tx_count": 56,
-        "tx_error": 0,
-        "tx_time": 1545.4464,
-        "apdex_satisfied": 37,
-        "apdex_tolerated": 18,
-        "apdex_total": 56,
-        "tx_dbc_time": 13.375,
-        "tx_sql_time": 209.01785,
-        "tx_httpc_time": 661.3214,
-        "sql_count": 125,
-        "sql_error": 0,
-        "sql_time": 77.808,
-        "sql_fetch_count": 41112,
-        "sql_fetch_time": 3.162094E-4,
-        "httpc_count": 39,
-        "httpc_error": 0,
-        "httpc_time": 1138.1538,
-        "active_tx_count": 18,
-        "active_tx_0": 14,
-        "active_tx_3": 4,
-        "active_tx_8": 0,
-        "tps": 10,
-        "resp_time": 2924,
-        "arrival_rate": 10.8,
-        "pack_dropped": 35,
-        "metering": 4,
-        "_clock_delta_": 128,
-        "oid": 1499132250
-      }
-    ]
-    ```
+  ```json title='ResponseBody Example 2'
+  [
+    {
+      "time": 1639016640000,
+      "pcode": 101,
+      "pname": "Virtual",
+      "okind": -1085056726,
+      "onode": 334634079,
+      "oname": "22136-8075",
+      "okindName": "ote-virtual-1",
+      "onodeName": "node-1",
+      "host_ip": "192.168.1.57",
+      "container": "ote-8075.service",
+      "pid": 22206,
+      "type": "java",
+      "containerKey": 1876424218,
+      "tx_count": 58,
+      "tx_error": 0,
+      "tx_time": 1643.9138,
+      "apdex_satisfied": 41,
+      "apdex_tolerated": 16,
+      "apdex_total": 58,
+      "tx_dbc_time": 13.655172,
+      "tx_sql_time": 222.15517,
+      "tx_httpc_time": 717.4138,
+      "sql_count": 129,
+      "sql_error": 0,
+      "sql_time": 101.387596,
+      "sql_fetch_count": 37621,
+      "sql_fetch_time": 4.5187527E-4,
+      "httpc_count": 41,
+      "httpc_error": 0,
+      "httpc_time": 1073.4878,
+      "active_tx_count": 20,
+      "active_tx_0": 19,
+      "active_tx_3": 1,
+      "active_tx_8": 0,
+      "tps": 13.833333,
+      "resp_time": 1628,
+      "arrival_rate": 12.6,
+      "pack_dropped": 110,
+      "metering": 4,
+      "_clock_delta_": 180,
+      "oid": 1670734023
+    },
+    {
+      "time": 1639016640000,
+      "pcode": 101,
+      "pname": "Virtual",
+      "okind": -933992004,
+      "onode": 1693789385,
+      "oname": "22134-8074",
+      "okindName": "ote-virtual-0",
+      "onodeName": "node-0",
+      "host_ip": "192.168.1.57",
+      "container": "ote-8074.service",
+      "pid": 22202,
+      "type": "java",
+      "containerKey": 2024596057,
+      "tx_count": 56,
+      "tx_error": 0,
+      "tx_time": 1545.4464,
+      "apdex_satisfied": 37,
+      "apdex_tolerated": 18,
+      "apdex_total": 56,
+      "tx_dbc_time": 13.375,
+      "tx_sql_time": 209.01785,
+      "tx_httpc_time": 661.3214,
+      "sql_count": 125,
+      "sql_error": 0,
+      "sql_time": 77.808,
+      "sql_fetch_count": 41112,
+      "sql_fetch_time": 3.162094E-4,
+      "httpc_count": 39,
+      "httpc_error": 0,
+      "httpc_time": 1138.1538,
+      "active_tx_count": 18,
+      "active_tx_0": 14,
+      "active_tx_3": 4,
+      "active_tx_8": 0,
+      "tps": 10,
+      "resp_time": 2924,
+      "arrival_rate": 10.8,
+      "pack_dropped": 35,
+      "metering": 4,
+      "_clock_delta_": 128,
+      "oid": 1499132250
+    }
+  ]
+  ```
 
 ### MXQL path API{#path-api}
 
@@ -230,63 +230,63 @@ curl --location 'https://api.whatap.io/open/api/flush/mxql/path' \
 
 :::
 
--   参照されたデータがない場合
+- 参照されたデータがない場合
 
-    ```json title='ResponseBody Example 1'
-    []
-    ```
+  ```json title='ResponseBody Example 1'
+  []
+  ```
 
--   参照されたデータがある場合
+- 参照されたデータがある場合
 
-    ```json title='ResponseBody Example 1'
-    [
-      {
-        "pcode": 101,
-        "pname": "Virtual",
-        "oid": -1348176005,
-        "oname": "22137-8071",
-        "otype": "ap",
-        "okind": -1085056726,
-        "okindName": "ote-virtual-1",
-        "onode": 334634079,
-        "onodeName": "node-1",
-        "type": "ap",
-        "subtype": "java",
-        "version": "2.1.0 20211207u",
-        "os_name": "Linux",
-        "ip": "192.168.1.57",
-        "container_id": 842770198,
-        "metering": 4,
-        "status": "ok",
-        "normal": 12,
-        "slow": 1,
-        "verySlow": 0,
-        "total": 13,
-        "_pk_": "okindName"
-      },
-      {
-        "pcode": 101,
-        "pname": "Virtual",
-        "oid": -883058050,
-        "oname": "22141-8070",
-        "otype": "ap",
-        "okind": -933992004,
-        "okindName": "ote-virtual-0",
-        "onode": 1693789385,
-        "onodeName": "node-0",
-        "type": "ap",
-        "subtype": "java",
-        "version": "2.1.0 20211207u",
-        "os_name": "Linux",
-        "ip": "192.168.1.57",
-        "container_id": 624997205,
-        "metering": 4,
-        "status": "ok",
-        "normal": 19,
-        "slow": 1,
-        "verySlow": 0,
-        "total": 20,
-        "_pk_": "okindName"
-      }
-    ]
-    ```
+  ```json title='ResponseBody Example 1'
+  [
+    {
+      "pcode": 101,
+      "pname": "Virtual",
+      "oid": -1348176005,
+      "oname": "22137-8071",
+      "otype": "ap",
+      "okind": -1085056726,
+      "okindName": "ote-virtual-1",
+      "onode": 334634079,
+      "onodeName": "node-1",
+      "type": "ap",
+      "subtype": "java",
+      "version": "2.1.0 20211207u",
+      "os_name": "Linux",
+      "ip": "192.168.1.57",
+      "container_id": 842770198,
+      "metering": 4,
+      "status": "ok",
+      "normal": 12,
+      "slow": 1,
+      "verySlow": 0,
+      "total": 13,
+      "_pk_": "okindName"
+    },
+    {
+      "pcode": 101,
+      "pname": "Virtual",
+      "oid": -883058050,
+      "oname": "22141-8070",
+      "otype": "ap",
+      "okind": -933992004,
+      "okindName": "ote-virtual-0",
+      "onode": 1693789385,
+      "onodeName": "node-0",
+      "type": "ap",
+      "subtype": "java",
+      "version": "2.1.0 20211207u",
+      "os_name": "Linux",
+      "ip": "192.168.1.57",
+      "container_id": 624997205,
+      "metering": 4,
+      "status": "ok",
+      "normal": 19,
+      "slow": 1,
+      "verySlow": 0,
+      "total": 20,
+      "_pk_": "okindName"
+    }
+  ]
+  ```
