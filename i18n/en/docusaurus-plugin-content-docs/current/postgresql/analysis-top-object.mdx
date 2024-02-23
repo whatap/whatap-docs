@@ -14,29 +14,29 @@ It provides objects with the bloating size, scan count, DML execution count, and
 
 <ImgLang img='db-top-object.png' desc='Top object' />
 
--   Set <Cmdname sid="date" className="uitext" />, <Cmdname sid="instance" className="uitext" />, <Cmdname sid="TTL06346" className="uitext" />, and <Cmdname sid="TTL06345" className="uitext" /> to view on the screen and then select ![Search icon](/img/ico-btn-search.png). The results for the selected conditions appear in the table.
+- Set <Cmdname sid="date" className="uitext" />, <Cmdname sid="instance" className="uitext" />, <Cmdname sid="TTL06346" className="uitext" />, and <Cmdname sid="TTL06345" className="uitext" /> to view on the screen and then select ![Search icon](/img/ico-btn-search.png). The results for the selected conditions appear in the table.
 
--   If you select the **_tablename_** or **_indexname_** column in the inquiry list, the **_Object detail_** window appears where you can see the configuration for **column** and **index**.
+- If you select the **_tablename_** or **_indexname_** column in the inquiry list, the **_Object detail_** window appears where you can see the configuration for **column** and **index**.
 
-    ![Object detail](/img/release/release-db-object-details-topobject.png)
+  ![Object detail](/img/release/release-db-object-details-topobject.png)
 
-    :::note
+  :::note
 
-    **_Object detail_** is provided in the DBX agent 1.6.15 or later. For more information about the database roles and related settings, see [the following](install-agent#uid).
+  **_Object detail_** is provided in the DBX agent 1.6.15 or later. For more information about the database roles and related settings, see [the following](install-agent#uid).
 
-    :::
+  :::
 
 :::note
 
--   The <Cmdname sid="dbObjectInfo" /> data is collected once a day. For more information about the related agent settings, see <Link to="#set-agent-topObject">the following</Link>.
+- The <Cmdname sid="dbObjectInfo" /> data is collected once a day. For more information about the related agent settings, see <Link to="#set-agent-topObject">the following</Link>.
 
--   To view data, the DB monitoring account requires the following roles:
+- To view data, the DB monitoring account requires the following roles:
 
-    ```sql
-    grant select on all tables in schema {schema_name} to whatap;
-    ```
+  ```sql
+  grant select on all tables in schema {schema_name} to whatap;
+  ```
 
--   This function is supported in DBX agent 1.6.13 or later.
+- This function is supported in DBX agent 1.6.13 or later.
 
 :::
 
@@ -170,9 +170,9 @@ In PostgreSQL, XID (transaction id) is used recursively so that the XID may wrap
 
 This list displays vacuum targets that meet the following criteria: If there is no target, data may not be viewed.
 
--   Table with dead tuples more than vacuum threshold (`autovacuum_threshold` + `autovacuum_scale_factor` \* `number-of-tuples`).
+- Table with dead tuples more than vacuum threshold (`autovacuum_threshold` + `autovacuum_scale_factor` \* `number-of-tuples`).
 
--   Table with the age (`relfrozenxid`) greater than `autovacuum_freeze_max_age`
+- Table with the age (`relfrozenxid`) greater than `autovacuum_freeze_max_age`
 
 :::tip
 

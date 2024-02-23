@@ -3387,14 +3387,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_5_5',
+                id: 'release-notes/k8s/k8s-1_5_6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_5_5',
+                  id: 'release-notes/k8s/k8s-1_5_6',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_5_5', 
                 'release-notes/k8s/k8s-1_5_4', 
                 'release-notes/k8s/k8s-1_5_3', 
                 'release-notes/k8s/k8s-1_5_2', 
@@ -3403,7 +3404,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_4_9',
                 'release-notes/k8s/k8s-1_4_8',
                 'release-notes/k8s/k8s-1_4_4',
-                'release-notes/k8s/k8s-1_4_3',
                 'release-notes/k8s/k8s-previous',
               ],
             },

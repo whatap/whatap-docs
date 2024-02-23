@@ -1,0 +1,85 @@
+---
+id: uninstall-agent
+title: Agent deletion
+description: It provides the method how to delete the Kubernetes agent.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Management
+  - Agent
+  - Agent deletion
+toc_max_heading_level: 3
+---
+
+## Deleting the Kubernetes agent
+
+In the agent installation procedure, check the _YAML_ file name that matches the downloaded Kubernetes version and Container Runtime, and then proceed with the procedure to delete the Kubernetes agent. 
+
+#### YAML file name of the Kubernetes agent
+
+| Docker                                 | YAML file name                 |
+| -------------------------------------- | ------------------------------ |
+| Kubernetes 1.16 or later               | _whatap_kube_1.16.yaml_        |
+| Kubernetes 1.16 or later (GPU version) | _whatap_kube_1.16_gpu.yaml_    |
+| Below Kubernetes 1.16                  | _whatap_kube.yaml_             |
+| Below Kubernetes 1.16 (GPU version)    | _whatap_kube_gpu.yaml_         |
+
+| Containerd                             | YAML file name                            |
+| -------------------------------------- | ----------------------------------------- |
+| Kubernetes 1.16 or later               | _whatap_kube_containerd_1.16.yaml_        |
+| Kubernetes 1.16 or later (GPU version) | _whatap_kube_containerd_1.16_gpu.yaml_    |
+| Below Kubernetes 1.16                  | _whatap_kube_containerd.yaml_             |
+| Below Kubernetes 1.16 (GPU version)    | _whatap_kube_containerd_gpu.yaml_         |
+
+| CRIO	YAML                              | File name                           |
+| -------------------------------------- | ----------------------------------- |
+| Kubernetes 1.16 or later               | _whatap_kube_crio_1.16.yaml_        |
+| Kubernetes 1.16 or later (GPU version) | _whatap_kube_crio_1.16_gpu.yaml_    |
+| Below Kubernetes 1.16                  | _whatap_kube_crio.yaml_             |
+| Below Kubernetes 1.16 (GPU version)    | _whatap_kube_crio_gpu.yaml_         |
+
+### In case the YAML file exists
+
+1. Delete the Kubernetes agent installed with the _YAML_ file name downloaded during the installation procedure. Modify the notation of the following command to your _YAML_ file name, and then run it. 
+
+   ```bash
+   kubectl delete -f < user's own YAML file name >
+   ```
+
+2. If the Kubernetes agent has been deleted successfully, you can see the following: 
+
+   ```bash
+   namespace "whatap-monitoring" deleted
+   serviceaccount "whatap" deleted
+   clusterrole.rbac.authorization.k8s.io "whatap" deleted
+   configmap "node-start-script" deleted
+   clusterrolebinding.rbac.authorization.k8s.io "whatap" deleted
+   daemonset.apps "whatap-node-agent" deleted
+   configmap "master-start-script" deleted
+   deployment.apps "whatap-master-agent" deleted
+   service "whatap-master-agent" deleted
+   ```
+
+### In case the YAML file does not exist
+
+:::caution 
+
+If you have created custom resources directly in the whatap-monitoring namespace, those resources are deleted also. 
+
+:::
+
+1. Execute the following command to delete the Kubernetes agent. 
+
+   ```bash
+   kubectl delete namespace whatap-monitoring
+   kubectl delete clusterrolebinding whatap
+   kubectl delete clusterrole whatap
+   ```
+
+2. If the Kubernetes agent has been deleted successfully, you can see the following:
+
+   ```bash
+   namespace "whatap-monitoring" deleted
+   clusterrolebinding.rbac.authorization.k8s.io "whatap" deleted
+   clusterrole.rbac.authorization.k8s.io "whatap" deleted
+   ```

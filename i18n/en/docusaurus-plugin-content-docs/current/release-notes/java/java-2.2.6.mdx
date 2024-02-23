@@ -9,33 +9,33 @@ June 1, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   Added the function to trace the spring-boot.
+- Added the function to trace the spring-boot.
 
-    -   Tracing the resttemplate
+  - Tracing the resttemplate
 
-        Added the function to trace HTTP calls regardless of HTTP client driver when using the RestTemplate in the spring-boot.
+    Added the function to trace HTTP calls regardless of HTTP client driver when using the RestTemplate in the spring-boot.
 
-    -   Tracing the spring-cloud-gateway
+  - Tracing the spring-cloud-gateway
 
-        Tracing is applied when the filters are used in spring-cloud-gateway.
+    Tracing is applied when the filters are used in spring-cloud-gateway.
 
-    -   Tracing the spring-kafka
+  - Tracing the spring-kafka
 
-        ```ini title='whatap.conf'
-        # In case of spring-boot-2.7 or later
-        weaving=tomcat9,spring-boot-2.7.x
+    ```ini title='whatap.conf'
+    # In case of spring-boot-2.7 or later
+    weaving=tomcat9,spring-boot-2.7.x
 
-        # In case of spring-boot-3.0 or later
-        weaving=tomcat10,spring-boot-3.x
-        springboot_tomcat10_enabled=true
-        ```
--   Tracing the open-feign
+    # In case of spring-boot-3.0 or later
+    weaving=tomcat10,spring-boot-3.x
+    springboot_tomcat10_enabled=true
+    ```
+- Tracing the open-feign
 
-    -   Tracing the feign-client-11
+  - Tracing the feign-client-11
 
-        Added the function to trace HTTP calls regardless of HTTP client driver when using the OpenFeign client.
+    Added the function to trace HTTP calls regardless of HTTP client driver when using the OpenFeign client.
 
-        ```ini title='whatap.conf'
-        # feign-client
-        weaving=feign-11
-        ```
+    ```ini title='whatap.conf'
+    # feign-client
+    weaving=feign-11
+    ```

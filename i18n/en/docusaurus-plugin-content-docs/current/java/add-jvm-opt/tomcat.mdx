@@ -31,42 +31,42 @@ The `ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1` entry is used to 
 
 ### Windows
 
--   In case of running the _setup.bat_ file
+- In case of running the _setup.bat_ file
 
-    At the top of the _catalina.bat_ file, add the `JAVA_OPT` environment variable.
+  At the top of the _catalina.bat_ file, add the `JAVA_OPT` environment variable.
 
-    ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
-    rem ########## WHATAP START ############
-    set WHATAP_HOME=C:\whatap
-    for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-*.jar"') do set last=%%f
-    set WHATAP_JAR=%last%
-    set WHATAP_OPTS=-javaagent:%WHATAP_HOME%\%WHATAP_JAR%
+  ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
+  rem ########## WHATAP START ############
+  set WHATAP_HOME=C:\whatap
+  for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-*.jar"') do set last=%%f
+  set WHATAP_JAR=%last%
+  set WHATAP_OPTS=-javaagent:%WHATAP_HOME%\%WHATAP_JAR%
 
-    if "x%JAVA_OPTS%"=="x" goto setWhatap
+  if "x%JAVA_OPTS%"=="x" goto setWhatap
 
-    set JAVA_OPTS_TMP=%JAVA_OPTS:"=%
-    if not "x%JAVA_OPTS_TMP:whatap=%"=="x%JAVA_OPTS_TMP%" goto endWhatap
+  set JAVA_OPTS_TMP=%JAVA_OPTS:"=%
+  if not "x%JAVA_OPTS_TMP:whatap=%"=="x%JAVA_OPTS_TMP%" goto endWhatap
 
-    :setWhatap
-    set JAVA_OPTS=%JAVA_OPTS% %WHATAP_OPTS%
+  :setWhatap
+  set JAVA_OPTS=%JAVA_OPTS% %WHATAP_OPTS%
 
-    :endWhatap
-    rem ########## WHATAP END ############
-    ```
+  :endWhatap
+  rem ########## WHATAP END ############
+  ```
 
--   In case tomcat has been installed with the Windows installer
+- In case tomcat has been installed with the Windows installer
 
-    1.  Select **_Start_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**.
+  1. Select **_Start_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**.
 
-    2.  Select the **_Java_** tab.
+  2. Select the **_Java_** tab.
 
-    3.  Add the `-javaagent` option to the **_Java Options_** field.
+  3. Add the `-javaagent` option to the **_Java Options_** field.
 
-    ```text
-    -javaagent:{WhaTap installation path}/whatap.agent-X.Y.Z.jar
-    ```
+  ```text
+  -javaagent:{WhaTap installation path}/whatap.agent-X.Y.Z.jar
+  ```
 
-    ![Apache Tomcat](https://img.whatap.io/media/images/tomcat-win.png)
+  ![Apache Tomcat](https://img.whatap.io/media/images/tomcat-win.png)
 
 ### Java 17 or later
 

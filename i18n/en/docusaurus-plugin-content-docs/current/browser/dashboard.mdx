@@ -25,25 +25,25 @@ It provides the overall page loading performances for the browser applications. 
 
 For detailed descriptions of each step, see the following.
 
--   **_Redirect_**: The average amount of redirection time spent by the browser when loading web pages.
+- **_Redirect_**: The average amount of redirection time spent by the browser when loading web pages.
 
--   **_Caching_**: The average time spent by a browser to search cached resources while loading web pages.
+- **_Caching_**: The average time spent by a browser to search cached resources while loading web pages.
 
--   **_DNS Lookup_**: The average time spent by a browser to look up website domains while loading web pages.
+- **_DNS Lookup_**: The average time spent by a browser to look up website domains while loading web pages.
 
--   **_TCP Connection_**: The average TCP handshake time spent by a browser when loading web pages.
+- **_TCP Connection_**: The average TCP handshake time spent by a browser when loading web pages.
 
--   **_Response Wait_**: The average time spent from the browser sending network requests while fetching web pages to the first byte receptions from the server.
+- **_Response Wait_**: The average time spent from the browser sending network requests while fetching web pages to the first byte receptions from the server.
 
--   **_Download_**: The average time spent for a browser to download resources from the server while loading web pages.
+- **_Download_**: The average time spent for a browser to download resources from the server while loading web pages.
 
--   **_Rendering_**: Average time spent rendering resources downloaded from the server to the screen and completing page load events.
+- **_Rendering_**: Average time spent rendering resources downloaded from the server to the screen and completing page load events.
 
--   **_Load Time_**: The average time spent for a browser to fully load web pages.
+- **_Load Time_**: The average time spent for a browser to fully load web pages.
 
--   **_Front-End_**: Average time taken to initially render web pages.
+- **_Front-End_**: Average time taken to initially render web pages.
 
--   **_Back-End_**: Average time taken to download resources by page load requests.
+- **_Back-End_**: Average time taken to download resources by page load requests.
 
 ## Page loading time and load count
 
@@ -59,13 +59,13 @@ To check the overall status, select **_Page Group_** in the upper right corner. 
 
 :::
 
--   **_Average Page Load Time TopN_**
+- **_Average Page Load Time TopN_**
 
-    It displays the average page load times by page group. The horizontal bar chart displays the average load times for each page group during the lookup period. Only the top 8 are displayed.
+  It displays the average page load times by page group. The horizontal bar chart displays the average load times for each page group during the lookup period. Only the top 8 are displayed.
 
--   **_Page Load Count TopN_**
+- **_Page Load Count TopN_**
 
-    Page load counts are displayed by the page group. The horizontal bar chart displays the sum of loads for each page group during the lookup period. Only the top 8 are displayed.
+  Page load counts are displayed by the page group. The horizontal bar chart displays the sum of loads for each page group during the lookup period. Only the top 8 are displayed.
 
 ## Page Load Hitmap
 
@@ -73,13 +73,13 @@ To check the overall status, select **_Page Group_** in the upper right corner. 
 
 **_Page Load Hitmap_** is a distribution chart of response times for page loads over time.
 
--   The horizontal axis is the end time of the page load event, and the vertical axis is the elapsed time of the page load event.
+- The horizontal axis is the end time of the page load event, and the vertical axis is the elapsed time of the page load event.
 
--   Normal page load events are displayed in light blue → blue → Indigo in order.
+- Normal page load events are displayed in light blue → blue → Indigo in order.
 
--   Erroneous page load events are displayed in yellow → orange → red in order. The erroneous page load event occurs when a browser error is encountered while loading pages.
+- Erroneous page load events are displayed in yellow → orange → red in order. The erroneous page load event occurs when a browser error is encountered while loading pages.
 
--   Drag a specific area of the chart to see the detailed information. The **_Page Load Detail_** window appears. You can see the detailed information of the load event in the dragged area. For more information, see [the following](analyze-pageload#pageload-details).
+- Drag a specific area of the chart to see the detailed information. The **_Page Load Detail_** window appears. You can see the detailed information of the load event in the dragged area. For more information, see [the following](analyze-pageload#pageload-details).
 
 ## Error counts per page and message
 
@@ -87,13 +87,13 @@ To check the overall status, select **_Page Group_** in the upper right corner. 
 
 It displays the browser errors encountered by end users while using the browser applications. The errors are displayed for each page and error message. Through this, you can quickly identify the pages where errors usually occur and the content of each error.
 
--   **_Page Error Count_**
+- **_Page Error Count_**
 
-    It displays the numbers of all errors on each page. If you hover your mouse over the chart, you can see the number of errors in the page group.
+  It displays the numbers of all errors on each page. If you hover your mouse over the chart, you can see the number of errors in the page group.
 
--   **_Error Counts per Error Message_**
+- **_Error Counts per Error Message_**
 
-    It displays the messages for source and AJAX errors, excluding console errors. The horizontal bar chart displays the sum of errors for each error message during the lookup period. Only the top 8 are displayed.
+  It displays the messages for source and AJAX errors, excluding console errors. The horizontal bar chart displays the sum of errors for each error message during the lookup period. Only the top 8 are displayed.
 
 ## User session count and user sessions
 
@@ -103,13 +103,13 @@ You can monitor the numbers of user sessions accessing the browser applications 
 
 If you use the wired session widget and other widgets together, you can see a comprehensive view of the application usage.
 
--   **_User Session Count_**
+- **_User Session Count_**
 
-    It displays the total number of non-overlapping user sessions based on the lookup time.
+  It displays the total number of non-overlapping user sessions based on the lookup time.
 
--   **_User Sessions_**
+- **_User Sessions_**
 
-    It displays the numbers of non-overlapping user sessions every 5 seconds, 5 minutes, and 1 hour. Select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Change Metric. You can select a desired time interval.
+  It displays the numbers of non-overlapping user sessions every 5 seconds, 5 minutes, and 1 hour. Select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Change Metric. You can select a desired time interval.
 
 ## Average AJAX Response Time TopN
 
@@ -117,9 +117,9 @@ If you use the wired session widget and other widgets together, you can see a co
 
 Browser applications frequently send and receive data for rendering via AJAX. On pages where AJAX events continue to occur after page loads, the load of AJAX can be used as an important metric for user experience to browser applications. The **_Average AJAX Response Time TopN_** widget displays the average AJAX response times when end users are using the browser applications.
 
--   It provides charts for each AJAX request path. You can select and check the charts by the request host, request page, and overall average. Select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Change Metric. You can change the chart data.
+- It provides charts for each AJAX request path. You can select and check the charts by the request host, request page, and overall average. Select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Change Metric. You can change the chart data.
 
--   By default, the top 10 data appears based on the lookup time. To change the data count, select ![More icon](/img/ico-more.svg) on the upper right of the widget and then select ![Display Detail icon](/img/ico-detail-mode.svg). If you select the Top N button on the upper right of the screen, the option to change the count appears.
+- By default, the top 10 data appears based on the lookup time. To change the data count, select ![More icon](/img/ico-more.svg) on the upper right of the widget and then select ![Display Detail icon](/img/ico-detail-mode.svg). If you select the Top N button on the upper right of the screen, the option to change the count appears.
 
 ## AJAX failure count
 
@@ -143,17 +143,17 @@ For more information about <Cmdname sid="ajaxAnalytics" className='uitext' />, s
 
 The AJAX hitmap chart displays a distribution of the response times of AJAX requests over time.
 
--   The horizontal axis is the AJAX end time, and the vertical axis is the AJAX load time.
+- The horizontal axis is the AJAX end time, and the vertical axis is the AJAX load time.
 
--   Normal AJAXs are displayed in light blue → blue → Indigo in order.
+- Normal AJAXs are displayed in light blue → blue → Indigo in order.
 
--   Erroneous AJAXs are displayed in yellow → orange → red in order. Their state code is 400. To see only the errors on the chart, select **_Error_** on the upper right of the widget.
+- Erroneous AJAXs are displayed in yellow → orange → red in order. Their state code is 400. To see only the errors on the chart, select **_Error_** on the upper right of the widget.
 
--   If **_Y Axis Auto_** is active, the maximum value of the Y axis automatically changed depending on the distribution. To fix the Y-axis, select **_Y-Axis Auto_** to disable it.
+- If **_Y Axis Auto_** is active, the maximum value of the Y axis automatically changed depending on the distribution. To fix the Y-axis, select **_Y-Axis Auto_** to disable it.
 
--   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to move the chart location up or down.
+- Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to move the chart location up or down.
 
--   Drag a specific area of the chart to see the detailed information. To display the AJAX event list and details of the dragged area, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window appears.
+- Drag a specific area of the chart to see the detailed information. To display the AJAX event list and details of the dragged area, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window appears.
 
 ### AJAX Event Detailed Information
 
@@ -165,17 +165,17 @@ To see only the AJAX list that has errors, on the upper left of the <Cmdname sid
 
 Each AJAX has the following information:
 
--   AJAX URL
+- AJAX URL
 
--   URL of the page that requested AJAX
+- URL of the page that requested AJAX
 
--   Browser, device, and OS information
+- Browser, device, and OS information
 
--   Error message
+- Error message
 
--   Regional information
+- Regional information
 
--   AJAX detailed timing
+- AJAX detailed timing
 
 ## Page load times and counts per region
 
@@ -185,19 +185,19 @@ It displays the page load times and counts by region for browser applications in
 
 The widget displays the countries with the highest page load based on the search time.
 
--   You can scroll the mouse wheel or use the slider to zoom in or out on the map.
+- You can scroll the mouse wheel or use the slider to zoom in or out on the map.
 
--   To view the world map, select ![Earth icon](/img/ic-network.svg). You can select a country to see its regional data.
+- To view the world map, select ![Earth icon](/img/ic-network.svg). You can select a country to see its regional data.
 
--   To see the data in a table format, select ![Table icon](/img/ic-table.svg). To return to the map format, select ![Map icon](/img/ic-map.svg).
+- To see the data in a table format, select ![Table icon](/img/ic-table.svg). To return to the map format, select ![Map icon](/img/ic-map.svg).
 
-    <ImgLang img='browser-pageload-map-table.png' desc='Pageload table' />
+  <ImgLang img='browser-pageload-map-table.png' desc='Pageload table' />
 
--   In case of regional maps, data appears based on the upper administrative district. (Korea: province or metropolitan city)
+- In case of regional maps, data appears based on the upper administrative district. (Korea: province or metropolitan city)
 
 :::info
 
-This site or product includes IP2Location LITE data available from [https://lite.ip2location.com](https://lite.ip2location.com).
+This site or product includes IP2Location LITE data available from <https://lite.ip2location.com>.
 
 :::
 
@@ -211,11 +211,11 @@ It provides the page load times and page load counts for browser applications. Y
 
 Core web vitals are three important metrics related to the website performance among various metrics that affect user experience as defined by Google. Metrics are displayed differently depending on the website loading and interaction with users.
 
--   **Largest Contentful Paint**: A metric that measures the time loaded for the largest content element on your website.
+- **Largest Contentful Paint**: A metric that measures the time loaded for the largest content element on your website.
 
--   **First Input Delay**: Time taken between the website loading and user's first input. 
+- **First Input Delay**: Time taken between the website loading and user's first input. 
 
--   **Cumulative Layout Shift**: A metric of how often the layout changes while the website is loaded.
+- **Cumulative Layout Shift**: A metric of how often the layout changes while the website is loaded.
 
 These measurements play an important role in evaluating and improving the website performance. Understanding and measuring the core web vitals metrics is very useful to improve user experiences and optimizing the website performance.
 

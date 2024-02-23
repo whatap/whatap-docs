@@ -12,315 +12,315 @@ Release date: 2022-11-01
 
 ## New features
 
--   Added the function to generate the logsink data in the virtual application.
+- Added the function to generate the logsink data in the virtual application.
 
--   Added the function to connect the stdout log of the logsink with txid information.
+- Added the function to connect the stdout log of the logsink with txid information.
 
--   Added the data collection function for 2 seconds. 
+- Added the data collection function for 2 seconds. 
 
-    ```ini title='whatap.conf'
-    fast_perf_enabled=false
-    fast_perf_interval=2000
-    fast_perf_gc_enabled=true
-    fast_perf_os_enabled=true
-    debug_fast_perf_enabled=false
+  ```ini title='whatap.conf'
+  fast_perf_enabled=false
+  fast_perf_interval=2000
+  fast_perf_gc_enabled=true
+  fast_perf_os_enabled=true
+  debug_fast_perf_enabled=false
+  ```
+
+  Collection data
+
+  - Elapsed time
+  - Active Transaction
+  - gc information: number of gc cases, gc elapsed time, number of old generation gc cases, old generation gc elapsed time
+  - OS info
+
+- Added the function to send notifications based on the number of active transactions.
+
+  ```ini title='whatap.conf'
+  # Whether the active transaction alerts have been set
+  too_many_actx_alert_enabled=false
+
+  # Ignorance time for active transaction alerts (ms)
+  too_many_actx_alert_silent_time=30000
+
+  # Number of active transaction alerts
+  too_many_actx_alert_count=50
+
+  # Number of displayed active transaction alert messages
+  too_many_actx_alert_msg_url_count=5
+
+  # Time for active transaction alerts
+  too_many_actx_alert_over_time=30000
+  ```
+
+  - The number of active transactions is determined by `too_many_actx_alert_count = (too_many_actx_alert_over_time / 5000)`.
+
+  - When the number of active transactions equals to or exceeds the threshold, notifications are sent by adding URL as many as `too_many_actx_alert_msg_url_count` to the alert message.    
+
+- Profile Debug option: Added the function to check the stack in the profile and agent log when a debug target pattern is registered.
+
+  ```ini title='whatap.conf'
+  hook_method_debug_enabled=true
+  hook_method_debug_patterns=
+  ```
+
+- Adding the plug-in using class
+
+  - Added the `HashTable` class to be used in the _`{AGENT_HOME}`/plugin/`{...}`.x_ file.
+  - If `whatap.agent.api.Ref.h` is used, `HashTable` can be used.
+
+    ```java title='Example'
+    Class hashTable = (Class) whatap.agent.api.Ref.h;
     ```
 
-    Collection data
+- Adding the dedicated classes for TTA BMT: Can be used to demonstrate the Java agent.
 
-    -   Elapsed time
-    -   Active Transaction
-    -   gc information: number of gc cases, gc elapsed time, number of old generation gc cases, old generation gc elapsed time
-    -   OS info
+  ```java title='Java Class'
+  # map
+  bmt.m.MyMap
 
--   Added the function to send notifications based on the number of active transactions.
+  # datasource
+  bmt.ds.MyDataSource
+  bmt.ds.MyConnection
 
-    ```ini title='whatap.conf'
-    # Whether the active transaction alerts have been set
-    too_many_actx_alert_enabled=false
+  # jdbc
+  bmt.jdbc.Config
+  bmt.jdbc.FakeBlob
+  bmt.jdbc.FakeClob
+  bmt.jdbc.FakeConnection
+  bmt.jdbc.FakeDatabaseMetaData
+  bmt.jdbc.FakeDriver
+  bmt.jdbc.FakeCallableStatement
+  bmt.jdbc.FakePreparedStatement
+  bmt.jdbc.FakeResultSet
+  bmt.jdbc.FakeStatement
+  bmt.jdbc.FakeSocket
+  bmt.jdbc.Lock
+  ```
 
-    # Ignorance time for active transaction alerts (ms)
-    too_many_actx_alert_silent_time=30000
+  ```java title='Tracing'
+  // Connection Pool tracing
+  // ConnectionPoolASM
+  target.put("bmt/ds/MyDataSource", MyDataSource.className);
 
-    # Number of active transaction alerts
-    too_many_actx_alert_count=50
+  // Connection Pool tracing
+  // DBConCountCollectorThread
+  add(new MyDataSource());
 
-    # Number of displayed active transaction alert messages
-    too_many_actx_alert_msg_url_count=5
+  // JDBC Connection tracing
+  // JDBCConnectionOpenASM
+  AsmUtil.add(reserved, "bmt/ds/MyDataSource", "getConnection()Ljava/sql/Connection;");
 
-    # Time for active transaction alerts
-    too_many_actx_alert_over_time=30000
-    ```
+  // JDBC Statement tracing
+  // JDBCStatementASM
+  target.add("bmt/jdbc/FakeStatement");
 
-    -   The number of active transactions is determined by `too_many_actx_alert_count = (too_many_actx_alert_over_time / 5000)`.
+  // JDBC PreparedStatement tracing
+  // JDBCPreparedStatementASM 
+  target.add("bmt/jdbc/FakePreparedStatement");
 
-    -   When the number of active transactions equals to or exceeds the threshold, notifications are sent by adding URL as many as `too_many_actx_alert_msg_url_count` to the alert message.    
+  // JDBC ResultSet tracing
+  // JDBCResultSetASM
+  target.add("bmt/jdbc/FakeResultSet");
+  ```
 
--   Profile Debug option: Added the function to check the stack in the profile and agent log when a debug target pattern is registered.
+- Error step
 
-    ```ini title='whatap.conf'
-    hook_method_debug_enabled=true
-    hook_method_debug_patterns=
-    ```
+  - Added the function to add the error step to the profile.
 
--   Adding the plug-in using class
+  - Added the step to display error-related data in the profile by adding settings.
 
-    -   Added the `HashTable` class to be used in the _`{AGENT_HOME}`/plugin/`{...}`.x_ file.
-    -   If `whatap.agent.api.Ref.h` is used, `HashTable` can be used.
+  ```ini title='whatap.conf'
+  profile_error_step_enabled=false
+  ```
 
-        ```java title='Example'
-        Class hashTable = (Class) whatap.agent.api.Ref.h;
-        ```
+- Adding the JMX setting: Added the function to additionally view the JMX data.
 
--   Adding the dedicated classes for TTA BMT: Can be used to demonstrate the Java agent.
+  ```ini title='whatap.conf'
+  perfx_tomcat_enabled=false
+  perfx_jmx_value_limit=100
+  perfx_jmx_tag_from_objectname_enabled=false
+  ```
 
-    ```java title='Java Class'
-    # map
-    bmt.m.MyMap
+  By collecting the JMX data of tomcat, the settings for checking with test1 and test2 in metrics lookup are as follows:
 
-    # datasource
-    bmt.ds.MyDataSource
-    bmt.ds.MyConnection
+  ```ini title='whatap.conf'
+  perfx_jmx_enabled=true
+  perfx_jmx@test1=Catalina:type=Connector,*
+  perfx_jmx@test2=java.lang:type=GarbageCollector,*
+  perfx_jmx_ignore@test2=LastGcInfo
+  # perfx_debug_enabled=true
+  # perfx_jmx_tag_from_objectname_enabled=false
+  ```
 
-    # jdbc
-    bmt.jdbc.Config
-    bmt.jdbc.FakeBlob
-    bmt.jdbc.FakeClob
-    bmt.jdbc.FakeConnection
-    bmt.jdbc.FakeDatabaseMetaData
-    bmt.jdbc.FakeDriver
-    bmt.jdbc.FakeCallableStatement
-    bmt.jdbc.FakePreparedStatement
-    bmt.jdbc.FakeResultSet
-    bmt.jdbc.FakeStatement
-    bmt.jdbc.FakeSocket
-    bmt.jdbc.Lock
-    ```
+- Using the OSHI library, added the function to trace the proc_mem_rss data of the process.
 
-    ```java title='Tracing'
-    // Connection Pool tracing
-    // ConnectionPoolASM
-    target.put("bmt/ds/MyDataSource", MyDataSource.className);
+  ```ini title='whatap.conf'
+  oshi_proc_mem_enabled=false
+  ```
 
-    // Connection Pool tracing
-    // DBConCountCollectorThread
-    add(new MyDataSource());
+- Added the JDBC statement tracing function in `org.edb.jdbc.PgCallableStatement`.
 
-    // JDBC Connection tracing
-    // JDBCConnectionOpenASM
-    AsmUtil.add(reserved, "bmt/ds/MyDataSource", "getConnection()Ljava/sql/Connection;");
+- Function to trace SQL parameters in the Oracle procedure
 
-    // JDBC Statement tracing
-    // JDBCStatementASM
-    target.add("bmt/jdbc/FakeStatement");
+  - Added the function to trace SQL parameters in Oracle procedures.
 
-    // JDBC PreparedStatement tracing
-    // JDBCPreparedStatementASM 
-    target.add("bmt/jdbc/FakePreparedStatement");
+  - Added the function to trace SQL parameters in CallableStatement.
 
-    // JDBC ResultSet tracing
-    // JDBCResultSetASM
-    target.add("bmt/jdbc/FakeResultSet");
-    ```
+- In case of calling HTTP from Weblogic to `HttpURLConnection`, added the function to trace `weblogic.net.http.HttpURLConnection`.
+  ```ini title='whatap.conf'
+  HttpURLConnection_weblogic=true
+  ```
 
--   Error step
+- Added the function to collect the native memory data (proc_mem_rss) of the process by using the sigar library.
 
-    -   Added the function to add the error step to the profile.
+- Added the function to collect TPS data collected with the 30-second average, in the 5-second average.
 
-    -   Added the step to display error-related data in the profile by adding settings.
+  ```ini title='whatap.conf'
+  service_metrics_spike_enabled=false
+  ```
 
-    ```ini title='whatap.conf'
-    profile_error_step_enabled=false
-    ```
+- Added the compressed transfer function for the profile data.
 
--   Adding the JMX setting: Added the function to additionally view the JMX data.
+  - Profile data is sent when the profile data exceeds the size of `profile_zip_max_buffer_size`.
 
-    ```ini title='whatap.conf'
-    perfx_tomcat_enabled=false
-    perfx_jmx_value_limit=100
-    perfx_jmx_tag_from_objectname_enabled=false
-    ```
+  - Profile data is sent when data is accumulated in the queue or the value of `profile_zip_max_wait_time` is exceeded.
 
-    By collecting the JMX data of tomcat, the settings for checking with test1 and test2 in metrics lookup are as follows:
+  - When the profile data is transmitted, the data is compressed except when the profile data in the queue is less than `profile_zip_min_size`.    
 
-    ```ini title='whatap.conf'
-    perfx_jmx_enabled=true
-    perfx_jmx@test1=Catalina:type=Connector,*
-    perfx_jmx@test2=java.lang:type=GarbageCollector,*
-    perfx_jmx_ignore@test2=LastGcInfo
-    # perfx_debug_enabled=true
-    # perfx_jmx_tag_from_objectname_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # Whether the profile data is compressed
+   profile_zip_enabled=true
 
--   Using the OSHI library, added the function to trace the proc_mem_rss data of the process.
+   # Queue size that has the profile data
+   # ZipProfileThread.java determines the request queue size
+   profile_zip_queue_size=1000
 
-    ```ini title='whatap.conf'
-    oshi_proc_mem_enabled=false
-    ```
+   # Waiting time for profile data transfer
+   # If 1000 ms is exceeded, the profile data is sent.
+   profile_zip_max_wait_time=1000
 
--   Added the JDBC statement tracing function in `org.edb.jdbc.PgCallableStatement`.
+   # Buffer size of the profile data
+   # If the profile data exceeds 1 MB, data is transferred.
+   profile_zip_max_buffer_size=1024*1024
 
--   Function to trace SQL parameters in the Oracle procedure
+   # Minimum size to determine whether or not to compress the profile data
+   # If the profile data is less than 100 bytes, compression is not followed.
+   profile_zip_min_size=100
 
-    -   Added the function to trace SQL parameters in Oracle procedures.
+   # Whether or not to debug the profile data compression
+   # Outputs the data related to profile data transmission (ZipPack status, recordCount, buffer size, profile data queue size) to the agent log
+   debug_profile_zip_enabled=false
 
-    -   Added the function to trace SQL parameters in CallableStatement.
-
--   In case of calling HTTP from Weblogic to `HttpURLConnection`, added the function to trace `weblogic.net.http.HttpURLConnection`.
-    ```ini title='whatap.conf'
-    HttpURLConnection_weblogic=true
-    ```
-
--   Added the function to collect the native memory data (proc_mem_rss) of the process by using the sigar library.
-
--   Added the function to collect TPS data collected with the 30-second average, in the 5-second average.
-
-    ```ini title='whatap.conf'
-    service_metrics_spike_enabled=false
-    ```
-
--   Added the compressed transfer function for the profile data.
-
-    -   Profile data is sent when the profile data exceeds the size of `profile_zip_max_buffer_size`.
-
-    -   Profile data is sent when data is accumulated in the queue or the value of `profile_zip_max_wait_time` is exceeded.
-
-    -   When the profile data is transmitted, the data is compressed except when the profile data in the queue is less than `profile_zip_min_size`.    
-
-    ```ini title='whatap.conf'
-    # Whether the profile data is compressed
-     profile_zip_enabled=true
-
-     # Queue size that has the profile data
-     # ZipProfileThread.java determines the request queue size
-     profile_zip_queue_size=1000
-
-     # Waiting time for profile data transfer
-     # If 1000 ms is exceeded, the profile data is sent.
-     profile_zip_max_wait_time=1000
-
-     # Buffer size of the profile data
-     # If the profile data exceeds 1 MB, data is transferred.
-     profile_zip_max_buffer_size=1024*1024
-
-     # Minimum size to determine whether or not to compress the profile data
-     # If the profile data is less than 100 bytes, compression is not followed.
-     profile_zip_min_size=100
-
-     # Whether or not to debug the profile data compression
-     # Outputs the data related to profile data transmission (ZipPack status, recordCount, buffer size, profile data queue size) to the agent log
-     debug_profile_zip_enabled=false
-
-     # Output interval for profile data compression debug log
-     # When the PROFIAL data compression debug option is turned on, the information about profile data transmission is output to the agent log at an interval of 5000 ms. 
-     debug_profile_zip_interval=5000
-    ```
+   # Output interval for profile data compression debug log
+   # When the PROFIAL data compression debug option is turned on, the information about profile data transmission is output to the agent log at an interval of 5000 ms. 
+   debug_profile_zip_interval=5000
+  ```
 
 ## Change (update)
 
--   Modified the option name from `max_wait_time` that is the logsink data transfer cycle, to `logsink_max_wait_time`.
+- Modified the option name from `max_wait_time` that is the logsink data transfer cycle, to `logsink_max_wait_time`.
 
--   Replaced the CustomCounter function collected by the plug-in with CustomTaskLoader instead of CustomCounterTask.
+- Replaced the CustomCounter function collected by the plug-in with CustomTaskLoader instead of CustomCounterTask.
 
-    ```ini title='whatap.conf'
-    custom_task_enabled=true
-    custom_task_jarfile={full_path}
-    ```
+  ```ini title='whatap.conf'
+  custom_task_enabled=true
+  custom_task_jarfile={full_path}
+  ```
 
--   Added the function to output logs when the server time difference between the agent and proxy is 10 seconds or more.
+- Added the function to output logs when the server time difference between the agent and proxy is 10 seconds or more.
 
--   Measuring the elapsed time
+- Measuring the elapsed time
 
-    -   Modified to use the JVM time rather than the system time when measuring the elapsed times for transactions and profiles.
+  - Modified to use the JVM time rather than the system time when measuring the elapsed times for transactions and profiles.
 
-    -   When measuring the elapsed time, modified to use `System.nanoTime()` in `System.currentTimeMillis()`.
+  - When measuring the elapsed time, modified to use `System.nanoTime()` in `System.currentTimeMillis()`.
 
--   Modified to display the time difference between servers seen in the agent log when there is a difference in the server time between the agent and proxy.
+- Modified to display the time difference between servers seen in the agent log when there is a difference in the server time between the agent and proxy.
 
-    ```bash title='Agent log'
-    # In case the time difference is 30 seconds or more 
-    "fatal warning time-reverse (time difference) ms"
+  ```bash title='Agent log'
+  # In case the time difference is 30 seconds or more 
+  "fatal warning time-reverse (time difference) ms"
 
-    # In case the time difference is less than 30 seconds
-    "warning time-reverse (time difference) ms"
-    ```
+  # In case the time difference is less than 30 seconds
+  "warning time-reverse (time difference) ms"
+  ```
 
--   Modified the options for user counting in the form of wclient_xxx. The previous option names can be used but new option names are recommended, starting from v2.2.0.
+- Modified the options for user counting in the form of wclient_xxx. The previous option names can be used but new option names are recommended, starting from v2.2.0.
 
-    ```ini title='whatap.conf'
-    # Replacement
-    trace_user_method=IP
-    wclient_trace_type=IP
+  ```ini title='whatap.conf'
+  # Replacement
+  trace_user_method=IP
+  wclient_trace_type=IP
 
-    # Replacement
-    trace_user_jsession_key=JSESSIONID
-    wclient_jsession_key=JSESSIONID
+  # Replacement
+  trace_user_jsession_key=JSESSIONID
+  wclient_jsession_key=JSESSIONID
 
-    # Replacement
-    trace_user_header_key=token
-    wclient_header_key=token
+  # Replacement
+  trace_user_header_key=token
+  wclient_header_key=token
 
-    # Replacement
-    trace_user_cookie_limit=4000
-    wclient_cookie_limit=4000
+  # Replacement
+  trace_user_cookie_limit=4000
+  wclient_cookie_limit=4000
 
-    # Replacement
-    trace_user_cookie_domain=
-    wclient_cookie_domain=
+  # Replacement
+  trace_user_cookie_domain=
+  wclient_cookie_domain=
 
-    # Replacement
-    realtime_user_thinktime_max=300000
-    wclient_thinktime_max=300000
+  # Replacement
+  realtime_user_thinktime_max=300000
+  wclient_thinktime_max=300000
 
-    # Replacement
-    trace_user_using_ip=true
-    wclient_using_ip=true
+  # Replacement
+  trace_user_using_ip=true
+  wclient_using_ip=true
 
-    # Replacement
-    user_header_ticket=
-    wclient_header_ticket=
+  # Replacement
+  user_header_ticket=
+  wclient_header_ticket=
 
-    # Replacement
-    wclient_max_count=70000
-    ```
+  # Replacement
+  wclient_max_count=70000
+  ```
 
--   Recompiled the embedded weaving component by applying the count settings related to the number of users.
+- Recompiled the embedded weaving component by applying the count settings related to the number of users.
 
--   Modified to use `System.nanoTime()` when calculating the CounterPack elapsed time.
+- Modified to use `System.nanoTime()` when calculating the CounterPack elapsed time.
 
--   Included the release version in the log output logo.
-    ```bash title='Logo'
-      _       ____  ______           
-    | |     / / /_/_  __/___ _____   ___  ___ 
-    | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
-    | |/ |/ / / / / / / /_/ / /_/ / |   / / /
-    |__/|__/_/ /_/_/  \__,_/ .___/  |_|_\/___|
-                          /_/                    
-    The Best Observability in Java
-    ```
+- Included the release version in the log output logo.
+  ```bash title='Logo'
+    _       ____  ______           
+  | |     / / /_/_  __/___ _____   ___  ___ 
+  | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
+  | |/ |/ / / / / / / /_/ / /_/ / |   / / /
+  |__/|__/_/ /_/_/  \__,_/ .___/  |_|_\/___|
+                        /_/                    
+  The Best Observability in Java
+  ```
 
--   Modified the default value for the Java agent’s statistics collection from 5000 to 10000, checking every 2 seconds when sending statistics data.
+- Modified the default value for the Java agent’s statistics collection from 5000 to 10000, checking every 2 seconds when sending statistics data.
 
-    ```ini title='whatap.conf'
-    stat_tx_max_count=10000
-    ```
+  ```ini title='whatap.conf'
+  stat_tx_max_count=10000
+  ```
 
--   Updated the version of the OSHI library that collects performance metrics from oshi-core-5.4.1 to oshi-core-6.1.6.
+- Updated the version of the OSHI library that collects performance metrics from oshi-core-5.4.1 to oshi-core-6.1.6.
 
--   Changed the library folder name of `{AGENT_HOME}` that collects performance metrics.
+- Changed the library folder name of `{AGENT_HOME}` that collects performance metrics.
 
-    -   Renamed the SIGAR library folder: lib -> lib3.
+  - Renamed the SIGAR library folder: lib -> lib3.
 
-    -   Renamed the OSHI library folder: lib2 -> lib4.    
+  - Renamed the OSHI library folder: lib2 -> lib4.    
 
 ## Fixed (bug fixing)
 
--   Fixed a bug that occurred when adding headers related to multi-transaction to the read-only HttpHeaders of the Webflux weaving plug-in, an embedded Java agent plug-in. 
+- Fixed a bug that occurred when adding headers related to multi-transaction to the read-only HttpHeaders of the Webflux weaving plug-in, an embedded Java agent plug-in. 
 
-    Applied to webflux-5.1, webflux-5.2, and webflux-5.3.
+  Applied to webflux-5.1, webflux-5.2, and webflux-5.3.
 
--   Fixed the bug that occurred when the elapsed time of transactions and steps was less than 0.
+- Fixed the bug that occurred when the elapsed time of transactions and steps was less than 0.
 
--   Fixed the bug where the elapsed time is displayed as 0, when the elapsed time of transactions and steps is less than 0.
+- Fixed the bug where the elapsed time is displayed as 0, when the elapsed time of transactions and steps is less than 0.
 
--   Fixed the `blocking_detect_count` handling bug.
+- Fixed the `blocking_detect_count` handling bug.

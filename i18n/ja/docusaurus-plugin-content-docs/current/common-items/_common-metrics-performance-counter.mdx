@@ -1,10 +1,10 @@
 WhaTapエージェントは、アプリケーションのパフォーマンスに関するさまざまな情報を収集します。情報は、大きく3つに分類できます。
 
--   **User**：リアルタイムユーザーまたは訪問ユーザー
+- **User**：リアルタイムユーザーまたは訪問ユーザー
 
--   **Service** ：トランザクション、SQL、外部呼び出し件数および応答、エラー率など
+- **Service** ：トランザクション、SQL、外部呼び出し件数および応答、エラー率など
 
--   **Resource**：システム、プロセスリソースの使用量
+- **Resource**：システム、プロセスリソースの使用量
 
 ## User Counter
 
@@ -16,37 +16,37 @@ WhaTapエージェントは、アプリケーションのパフォーマンス�
 
 WhaTapエージェントのユーザーを区別するためのさまざまなオプションを提供します。
 
--   **Remote IP**
+- **Remote IP**
 
-    デフォルト値は、remote ipを使用してユーザーを区別します。remote ipは、実際のユーザーを区別するには制限があります。
+  デフォルト値は、remote ipを使用してユーザーを区別します。remote ipは、実際のユーザーを区別するには制限があります。
 
--   **Cookie**
+- **Cookie**
 
-    クッキーを使用してユーザーを区別します。すべての接続クライアントを対象に**WHATAP**というクッキーに、UUIDは保存されています。
+  クッキーを使用してユーザーを区別します。すべての接続クライアントを対象に**WHATAP**というクッキーに、UUIDは保存されています。
 
-    ```ini title='whatap.conf'
-    whatap.trace_user_using_ip=false
-    ```
+  ```ini title='whatap.conf'
+  whatap.trace_user_using_ip=false
+  ```
 
--   **Header Key**
+- **Header Key**
 
-    HTTP headerに渡される値でユーザーを区別できます。
+  HTTP headerに渡される値でユーザーを区別できます。
 
-    ```ini title='whatap.conf'
-    whatap.trace_user_header_ticket=USER
-    ```
+  ```ini title='whatap.conf'
+  whatap.trace_user_header_ticket=USER
+  ```
 
 ### ユーザーカウント
 
 ユーザーのカウント方法によって異なります。リアルタイムユーザーは、現在のシステムを使用しているユーザーの数を知るために測定します。毎日の訪問ユーザーは、日中にサービスに関心を持っているユーザーの数をビジネス管理のために測定されます。
 
--   **リアルタイムユーザー**
+- **リアルタイムユーザー**
 
-    過去5分間のユーザー数をカウントします。 5秒ごとにshiftingすると、ユーザーをカウントします。 各サーバーでカウントされた数は、HyperLogLogアルゴリズムによってマージされます。
+  過去5分間のユーザー数をカウントします。 5秒ごとにshiftingすると、ユーザーをカウントします。 各サーバーでカウントされた数は、HyperLogLogアルゴリズムによってマージされます。
 
--   **毎日の訪問者**(**DAU**, Daily Active User)
+- **毎日の訪問者**(**DAU**, Daily Active User)
 
-    1日にシステムに接続したユーザーをカウントします。24時間接続したユーザーをHyperLogLogで計算します。
+  1日にシステムに接続したユーザーをカウントします。24時間接続したユーザーをHyperLogLogで計算します。
 
 :::tip
 
@@ -58,45 +58,45 @@ WhaTapは、長期間に渡って、ユーザーをカウントするために�
 
 トランザクションによって使用されたSQLまたは外部呼び出しの件数、応答時間、エラー件数などのパフォーマンス指標が含まれます。
 
--   **Transaction Counter**
+- **Transaction Counter**
 
-    トランザクションを実行すると、測定するのはカウンターです。
+  トランザクションを実行すると、測定するのはカウンターです。
 
-    -   **件数**
-    -   **応答時間**
-    -   **エラー件数**
+  - **件数**
+  - **応答時間**
+  - **エラー件数**
 
--   **Active Transaction Counter**
+- **Active Transaction Counter**
 
-    進行中のトランザクションの数をカウントします。
+  進行中のトランザクションの数をカウントします。
 
-    -   **件数**
-    -   **Active Status**
+  - **件数**
+  - **Active Status**
 
-    進行状況は、METHOD, SQL, HTTPC, DBC, SOCKETの5つの状態で固定されます。
+  進行状況は、METHOD, SQL, HTTPC, DBC, SOCKETの5つの状態で固定されます。
 
-    -   METHOD - 一般関数を呼び出す状態
-    -   SQL - DB SQLの実行中の状態
-    -   HTTPC - 外部HTTP API(サービス)を呼び出しの状態
-    -   DBC - DB接続を要求された状態、通常はPoolから取得
-    -   SOCKET - TCPセッションに接続を要求している状態
+  - METHOD - 一般関数を呼び出す状態
+  - SQL - DB SQLの実行中の状態
+  - HTTPC - 外部HTTP API(サービス)を呼び出しの状態
+  - DBC - DB接続を要求された状態、通常はPoolから取得
+  - SOCKET - TCPセッションに接続を要求している状態
 
--   **SQL**
+- **SQL**
 
-    SQLの実行状況をカウントします。
+  SQLの実行状況をカウントします。
 
-    -   **件数**
-    -   **応答時間**
-    -   **エラー件数**
-    -   **パッチ回数**
+  - **件数**
+  - **応答時間**
+  - **エラー件数**
+  - **パッチ回数**
 
--   **HTTP Call**
+- **HTTP Call**
 
-    外部HTTPリクエストの状況をカウントします。
+  外部HTTPリクエストの状況をカウントします。
 
-    -   **件数**
-    -   **応答時間**
-    -   **エラー件数**
+  - **件数**
+  - **応答時間**
+  - **エラー件数**
 
 ## Resource Counter
 
@@ -104,33 +104,33 @@ WhaTapは、長期間に渡って、ユーザーをカウントするために�
 
 * * *
 
--   **CPU** (sys, usr, wait, steal, irq, cores)
+- **CPU** (sys, usr, wait, steal, irq, cores)
 
-    CPU使用率%です。各種類別に収集されます。仮想環境のみ、Stealが意味を持ちます。Cpu Coreの数も収集されます。
+  CPU使用率%です。各種類別に収集されます。仮想環境のみ、Stealが意味を持ちます。Cpu Coreの数も収集されます。
 
--   **Process CPU**
+- **Process CPU**
 
-    プロセスが使用するCPU%です。
+  プロセスが使用するCPU%です。
 
--   **Memory**
+- **Memory**
 
-    システムメモリの使用率(%)です。
+  システムメモリの使用率(%)です。
 
--   **Swap**
+- **Swap**
 
-    Swapメモリの使用率(%)です。
+  Swapメモリの使用率(%)です。
 
--   **Disk**
+- **Disk**
 
-    Diskは、ProcessのCurrentディレクトリの使用率(%)です。
+  Diskは、ProcessのCurrentディレクトリの使用率(%)です。
 
--   **Heap** (Total, Used, Perm)
+- **Heap** (Total, Used, Perm)
 
-    HeapメモリのTotal、Used、Perm量です。データ単位はKBytesです。
+  HeapメモリのTotal、Used、Perm量です。データ単位はKBytesです。
 
--   **DB Connection Count**
+- **DB Connection Count**
 
-    Connection Poolのカウントを収集します。
+  Connection Poolのカウントを収集します。
 
 * * *
 
@@ -150,8 +150,8 @@ Apdexはユーザー満足度の指標として使用でき、0~1の値です。
 | 許容(Tolerating, **T**) | 使用者が遅延を感じるが業務処理は可能≤ 4.8秒(満足**S** \* 4) |
 | 不満(Frustrated, **F**) | 業務処理が不可能> 4.8秒(許容**T**超過及びエラー)         |
 
--   **whatap.apdex_time** <span class='type'>millisecond</span>
+- **whatap.apdex_time** <span class='type'>millisecond</span>
 
-    デフォルト値`1200`
+  デフォルト値`1200`
 
-    満足 **S** デフォルト値は、エージェント設定メニューから変更できます。
+  満足 **S** デフォルト値は、エージェント設定メニューから変更できます。

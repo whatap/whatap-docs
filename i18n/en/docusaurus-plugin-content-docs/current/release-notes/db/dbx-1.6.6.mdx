@@ -7,20 +7,20 @@ displayed_sidebar: releaseSidebar
 
 ## PostgreSQL
 
--   <Status>Feature</Status> <code>oldest_cur_xid</code>, <code>per_to_wraparound</code>, and <code>per_to_emergency_autovac</code> metrics were added. (2023-2-2)
+- <Status>Feature</Status> <code>oldest_cur_xid</code>, <code>per_to_wraparound</code>, and <code>per_to_emergency_autovac</code> metrics were added. (2023-2-2)
 
--   <Status>Feature</Status> The <code>replication_lag</code> metric was added. (2023-3-13)
+- <Status>Feature</Status> The <code>replication_lag</code> metric was added. (2023-3-13)
 
 ## Oracle
 
--   <Status>Feature</Status> In <UI>SQL Statistics</UI>, <code>sql_id</code> was added. (2023-2-3)
+- <Status>Feature</Status> In <UI>SQL Statistics</UI>, <code>sql_id</code> was added. (2023-2-3)
 
--   <Status>Feature</Status> Added the option whether or not to collect the lock sessions. (2023-3-21)
+- <Status>Feature</Status> Added the option whether or not to collect the lock sessions. (2023-3-21)
 
-    ```ini title=whatap.conf
-    lock=0 # off
-    lock=1 # on
-    ```
+  ```ini title=whatap.conf
+  lock=0 # off
+  lock=1 # on
+  ```
 
 ## MySQL
 
@@ -28,31 +28,31 @@ displayed_sidebar: releaseSidebar
 
 ## Redis
 
--   <Status>Fixed</Status> Fixed the error where the connection was not terminated. (2023-3-21)
+- <Status>Fixed</Status> Fixed the error where the connection was not terminated. (2023-3-21)
 
--   <Status>Fixed</Status> Fixed the error where the metrics were not output. (2023-4-13)
+- <Status>Fixed</Status> Fixed the error where the metrics were not output. (2023-4-13)
 
 ## Tibero
 
--   <Status>Feature</Status> When collecting session metrics (<code>sesstat</code>), added the method to use the tibero API to improve the speed and load. (2023-1-31)
+- <Status>Feature</Status> When collecting session metrics (<code>sesstat</code>), added the method to use the tibero API to improve the speed and load. (2023-1-31)
 
-    -   Usage: Installation of DBX on the DB server and configuration of _libTbmonXX.so_
+  - Usage: Installation of DBX on the DB server and configuration of _libTbmonXX.so_
 
-        ```ini title=whatap.conf
-        use_tbstat=1
-        ```
+    ```ini title=whatap.conf
+    use_tbstat=1
+    ```
 
-    -   The column items for the session metrics to be collected are as follows.
+  - The column items for the session metrics to be collected are as follows.
 
-        -   **_logical_reads_**
-        -   **_physical_reads_**
-        -   **_block_updates_**
-        -   **_parse_count_total_**
-        -   **_parse_count_hard_**
+    - **_logical_reads_**
+    - **_physical_reads_**
+    - **_block_updates_**
+    - **_parse_count_total_**
+    - **_parse_count_hard_**
 
-    -   You can check in the following menus.
+  - You can check in the following menus.
 
-        -   **_Active Sessions_** of **_Dashboard_**
-        -   **_STAT/REPORT_** > **_SQL Statistics_**
+    - **_Active Sessions_** of **_Dashboard_**
+    - **_STAT/REPORT_** > **_SQL Statistics_**
 
--   <Status>Feature</Status> Added `sql_id` in SQL Statistics. (2023-1-16)
+- <Status>Feature</Status> Added `sql_id` in SQL Statistics. (2023-1-16)

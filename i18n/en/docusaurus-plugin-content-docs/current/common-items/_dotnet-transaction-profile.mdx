@@ -1,75 +1,75 @@
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    To record HTTP headers in the trace details, set it to `true`.
+  To record HTTP headers in the trace details, set it to `true`.
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
-    Default `false`
+  Default `false`
 
-    To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
+  To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
 
-    :::note
+  :::note
 
-    Set the security key to 6 digits in _'%PROGRAMFILES%'\\WhaTap .NET\\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+  Set the security key to 6 digits in _'%PROGRAMFILES%'\\WhaTap .NET\\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
 
-    :::
+  :::
 
--   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-    It is used to define the prefix of URL to record HTTP parameters in the trace details.
+  It is used to define the prefix of URL to record HTTP parameters in the trace details.
 
--   **profile_http_host_enabled** <span class='type'>Boolean</span>
+- **profile_http_host_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    The host of a transaction is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, output has the format of /xxx.aaa.com/URL.
+  The host of a transaction is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, output has the format of /xxx.aaa.com/URL.
 
--   **profile_http_body_enabled** <span class='type'>Boolean</span>
+- **profile_http_body_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    The body of the HTTP request is recorded in the trace history.
+  The body of the HTTP request is recorded in the trace history.
 
--   **profile_http_body_url_prefix** <span class='type'>String</span>
+- **profile_http_body_url_prefix** <span class='type'>String</span>
 
-    It is used to define the prefix of the target URL to record the HTTP body information in the trace history.
+  It is used to define the prefix of the target URL to record the HTTP body information in the trace history.
 
--   **biz_exceptions** <span class='type'>String</span>
+- **biz_exceptions** <span class='type'>String</span>
 
-    Default `Empty`
+  Default `Empty`
 
-    Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+  Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
 
--   **ignore_exceptions** <span class='type'>String</span>
+- **ignore_exceptions** <span class='type'>String</span>
 
-    Default `NONE`
+  Default `NONE`
 
-    The errors of the registered exceptions are ignored.
+  The errors of the registered exceptions are ignored.
 
-    In case of an exception, if the custom exception class has not been defined, it is collected with `exception` by default. To exclude specific exceptions, define the custom exception class and then set the name of exception.
+  In case of an exception, if the custom exception class has not been defined, it is collected with `exception` by default. To exclude specific exceptions, define the custom exception class and then set the name of exception.
 
--   **trace_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to parse and normalize transaction URLs.
+  It enables the function to parse and normalize transaction URLs.
 
-    :::note
+  :::note
 
-    If the value is changed to `false`, it disables the path parameter parsing. In this case, it is recommended to temporarily use the setting only for debugging purposes because the statistical data is less meaningful.
+  If the value is changed to `false`, it disables the path parameter parsing. In this case, it is recommended to temporarily use the setting only for debugging purposes because the statistical data is less meaningful.
 
-    :::
+  :::
 
--   **trace_normalize_urls** <span class='type'>String</span>
+- **trace_normalize_urls** <span class='type'>String</span>
 
-    Default `NONE`
+  Default `NONE`
 
-    Set transaction URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
+  Set transaction URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
 
-    :::note
+  :::note
 
-    For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+  For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
 
-    :::
+  :::

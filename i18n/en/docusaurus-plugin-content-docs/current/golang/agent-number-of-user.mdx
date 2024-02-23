@@ -9,56 +9,56 @@ tags:
 
 It collects the numbers of users connected to the Go web application server.
 
--   **trace_user_enabled** <span class='type'>Boolean</span>
+- **trace_user_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to aggregate real-time users. If you set the value to `true`, it traces users based on the IP address or cookies. 
+  Set whether or not to aggregate real-time users. If you set the value to `true`, it traces users based on the IP address or cookies. 
 
--   **trace_user_using_ip** <span class='type'>Boolean</span>
+- **trace_user_using_ip** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set it when classifying real-time users by the IP address. This data can be found in Real Time User. If the value is `false`, users are identified based on the cookie name in the `trace_user_cookie_keys` option.
+  Set it when classifying real-time users by the IP address. This data can be found in Real Time User. If the value is `false`, users are identified based on the cookie name in the `trace_user_cookie_keys` option.
 
--   **trace_user_cookie_keys** <span class='type'>String</span>
+- **trace_user_cookie_keys** <span class='type'>String</span>
 
-    Default `empty`
+  Default `empty`
 
-    Use the value that corresponds to the cookie key as the user identification value. With comma (_,_) as the delimiter, multiple values can be set.
+  Use the value that corresponds to the cookie key as the user identification value. With comma (_,_) as the delimiter, multiple values can be set.
 
--   **trace_user_header_ticket** <span class='type'>Boolean</span>
+- **trace_user_header_ticket** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    To identify users based on a specific value in the HTTP header, set the HTTP key to use. If the HTTP key cannot be found, users are identified based on the cookie.
+  To identify users based on a specific value in the HTTP header, set the HTTP key to use. If the HTTP key cannot be found, users are identified based on the cookie.
 
-    :::note
+  :::note
 
-    This cannot be applied together with the `trace_user_using_ip` option. 
+  This cannot be applied together with the `trace_user_using_ip` option. 
 
-    :::
+  :::
 
--   **trace_user_set_cookie** <span class='type'>Boolean</span>
+- **trace_user_set_cookie** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    To identify users, the user identification values are set as `WHATAP` key names in cookies. Set it when the `trace_user_header_ticket` option has been set and the header key cannot be found. If the HTTP key cannot be found, users are identified based on the cookie. 
+  To identify users, the user identification values are set as `WHATAP` key names in cookies. Set it when the `trace_user_header_ticket` option has been set and the header key cannot be found. If the HTTP key cannot be found, users are identified based on the cookie. 
 
-    :::note
+  :::note
 
-    This cannot be applied together with the `trace_user_using_ip` option. 
+  This cannot be applied together with the `trace_user_using_ip` option. 
 
-    :::
+  :::
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span>
+- **trace_http_client_ip_header_key** <span class='type'>String</span>
 
-    Default `X-Forwarded-For`
+  Default `X-Forwarded-For`
 
-    This function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header can be set with the client IP.
+  This function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header can be set with the client IP.
 
--   **trace_http_client_ip_header_key_enabled** <span class='type'>Boolean</span>
+- **trace_http_client_ip_header_key_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, the HTTP Header is ignored and the client IP is set as the remote IP value.
+  If the value is `false`, the HTTP Header is ignored and the client IP is set as the remote IP value.

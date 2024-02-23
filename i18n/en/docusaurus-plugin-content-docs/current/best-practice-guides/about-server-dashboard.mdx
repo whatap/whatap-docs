@@ -17,31 +17,36 @@ keywords:
 displayed_sidebar: learningSidebar
 ---
 
+<!-- 
+>
+일본어 이미지 미작업
+-->
+
 This document introduces the analysis of chart-type widgets in **_Resource Board_** of Server Monitoring, one of the WhaTap monitoring services. Let's look at how to identify and analyze the server issues through **_Resource Board_**. For more information about the functions of **Resource Board**, see [the following](https://docs.whatap.io/server/resourceboard).
 
 The core of the server monitoring is the process. You have to quickly grasp the server status through monitoring and respond to various failure situations so that the process can operate without interruption within the normal operation range. Inferring the resource usage by inquiry is the start. WhaTap **_Resource Board_** provides a time-series chart widget that consists of the metrics for CPU, memory, disk, and network so that you can check the resource usage at a glance on the data-intensive screen.
 
--   Server Status Summary: **_Server_**, **_OS_**, **_Total Cores_**, **_Avg CPU_**, **_Avg Memory_**, **_Avg Disk_**, **_Server Status Map_**
+- Server Status Summary: **_Server_**, **_OS_**, **_Total Cores_**, **_Avg CPU_**, **_Avg Memory_**, **_Avg Disk_**, **_Server Status Map_**
 
--   System operation statistics: **_CPU Resource Map_**
+- System operation statistics: **_CPU Resource Map_**
 
--   Early warning and alert: **_CPU TOP5_**, **_Memory TOP5_**, **_Disk I/O TOP5_**, **_Process CPU TOP5_**, **_Process TOP5_**, **_Alert Status_**
+- Early warning and alert: **_CPU TOP5_**, **_Memory TOP5_**, **_Disk I/O TOP5_**, **_Process CPU TOP5_**, **_Process TOP5_**, **_Alert Status_**
 
 ## Server Monitoring Core Metrics
 
--   **CPU**: The CPU performance metric is used as the most important measure to determine the server performance. When the CPU utilization exceeds a specific level, the service starts to be affected. If a problem occurs, you can take actions to reach the target for CPU usage management, including purchasing additional hardware or tuning the performance of the CPU-consuming applications.
+- **CPU**: The CPU performance metric is used as the most important measure to determine the server performance. When the CPU utilization exceeds a specific level, the service starts to be affected. If a problem occurs, you can take actions to reach the target for CPU usage management, including purchasing additional hardware or tuning the performance of the CPU-consuming applications.
 
-    :::note
+  :::note
 
-    IT solutions often have the pricing scheme based on the server performance. It is the same reason that most CPU usages are priced per core. 
+  IT solutions often have the pricing scheme based on the server performance. It is the same reason that most CPU usages are priced per core. 
 
-    :::
+  :::
 
--   **Memory**: Check the memory usage including buffers and cache memory. If the memory usage is running out too quickly or continues to drop, you can take actions to reach the management target for memory usage.
+- **Memory**: Check the memory usage including buffers and cache memory. If the memory usage is running out too quickly or continues to drop, you can take actions to reach the management target for memory usage.
 
--   **Disk I/O**: Disk I/O is the factor that must be checked when using the network drives. Monitor the disk's read rate, write rate, queue, and latency rate.
+- **Disk I/O**: Disk I/O is the factor that must be checked when using the network drives. Monitor the disk's read rate, write rate, queue, and latency rate.
 
--   **Network**: Network metrics monitor the following: I/O traffic rates and error packets on network interfaces.
+- **Network**: Network metrics monitor the following: I/O traffic rates and error packets on network interfaces.
 
 ## Server Status Summary
 
@@ -111,8 +116,8 @@ WhaTap's default alert settings allow you to quickly start monitoring as soon as
 
 **Additional use of dashboards**
 
--   If ![right-arrow](/img/right-arrow.svg) is selected in the Top 5 widgets for each resource, the **_Resource Equalizer_** menu displays the real-time usage of all servers. 
--   The detailed server-level information can be checked in the **_Server Detail_** menu, which is moved by selecting the chart area in the widget. 
--   To view the server resource consumption patterns or compare them with the load design, use **_Analysis_** > **_Metrics Chart_**.
+- If ![right-arrow](/img/right-arrow.svg) is selected in the Top 5 widgets for each resource, the **_Resource Equalizer_** menu displays the real-time usage of all servers. 
+- The detailed server-level information can be checked in the **_Server Detail_** menu, which is moved by selecting the chart area in the widget. 
+- To view the server resource consumption patterns or compare them with the load design, use **_Analysis_** > **_Metrics Chart_**.
 
 :::

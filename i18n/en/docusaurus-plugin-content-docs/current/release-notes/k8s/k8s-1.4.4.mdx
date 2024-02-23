@@ -3,6 +3,7 @@ id: k8s-1_4_4
 title: Kubernetes Agent v1.4.4
 toc_max_heading_level: 2
 pagination_next: release-notes/k8s/k8s-1_4_3
+displayed_sidebar: releaseSidebar
 ---
 
 November 22, 2023
@@ -13,10 +14,10 @@ Agent download: https://repo.whatap.io/docker/kube_mon_1.4.4.tar
 
 :::
 
--   <Status>Changed</Status> Changed the client-api version (13.0.2 → 15.0.1).
+- <Status>Changed</Status> Changed the client-api version (13.0.2 → 15.0.1).
 
-    There happened poor compatibility with Kubernetes service platforms (eks, gke) due to a lower client-api version. We updated the client-api version to resolve this issue. In particular, deprecated methods have been replaced with updated versions.
+  There happened poor compatibility with Kubernetes service platforms (eks, gke) due to a lower client-api version. We updated the client-api version to resolve this issue. In particular, deprecated methods have been replaced with updated versions.
 
--   <Status>Changed</Status> Changed the name of the <code>kube_entities</code> field (<code>cronJobs</code> → <code>cronjobs</code>).
+- <Status>Changed</Status> Changed the name of the <code>kube_entities</code> field (<code>cronJobs</code> → <code>cronjobs</code>).
 
--   <Status>Fixed</Status> Resolved the CronJob data missing issue in master meta data.
+- <Status>Fixed</Status> Resolved the CronJob data missing issue in master meta data.

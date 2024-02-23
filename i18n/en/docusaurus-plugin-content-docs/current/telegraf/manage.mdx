@@ -17,61 +17,61 @@ Let's learn about additional options you can set through the _whatap.conf_ file 
 <Tabs>
 <TabItem value="rc" label="Red Hat/CentOS">
 
-1.  Delete cache data for updating package information.
+1. Delete cache data for updating package information.
 
-    ```bash title=SH
-    $ yum clean all
-    ```
+   ```bash title=SH
+   $ yum clean all
+   ```
 
-2.  Update the whatap-telegraf package.
+2. Update the whatap-telegraf package.
 
-    ```bash title=SH
-    $ yum update whatap-telegraf
-    ```
+   ```bash title=SH
+   $ yum update whatap-telegraf
+   ```
 
-3.  To install a version, specify the version data during installation.
+3. To install a version, specify the version data during installation.
 
-    ```bash title=SH
-    $ sudo yum install whatap-telegraf-{version}
-    ```
+   ```bash title=SH
+   $ sudo yum install whatap-telegraf-{version}
+   ```
 
 </TabItem>
 <TabItem value="du" label="Debian/Ubuntu">
 
-1.  Delete cache data for updating package information.
+1. Delete cache data for updating package information.
 
-    ```bash title=SH
-    $ sudo apt-get update
-    ```
+   ```bash title=SH
+   $ sudo apt-get update
+   ```
 
-2.  Update the whatap-telegraf package.
+2. Update the whatap-telegraf package.
 
-    ```bash title=SH
-    $ sudo apt-get install --only-upgrade whatap-telegraf
-    ```
+   ```bash title=SH
+   $ sudo apt-get install --only-upgrade whatap-telegraf
+   ```
 
-3.  To install a version, specify the version data during installation.
+3. To install a version, specify the version data during installation.
 
-    ```bash title=SH
-    $ sudo apt-get install whatap-telegraf={version}
-    ```
+   ```bash title=SH
+   $ sudo apt-get install whatap-telegraf={version}
+   ```
 
 </TabItem>
 <TabItem value="fb" label="FreeBSD">
 
-1.  Install the package again.
+1. Install the package again.
 
-    ```bash title='SH'
-    # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
-    # pkg install whatap-telegraf-0.0.4.txz
-    ```
+   ```bash title='SH'
+   # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
+   # pkg install whatap-telegraf-0.0.4.txz
+   ```
 
-2.  To install a version, `{version}`enter the version data before installation.
+2. To install a version, `{version}`enter the version data before installation.
 
-    ```bash title='SH'
-    # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-{version}.txz
-    # pkg install whatap-telegraf-{version}.txz
-    ```
+   ```bash title='SH'
+   # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-{version}.txz
+   # pkg install whatap-telegraf-{version}.txz
+   ```
 
 </TabItem>
 </Tabs>
@@ -104,30 +104,30 @@ $ service whatap_telegraf stop
 
 ## Delete
 
--   Delete the package (yum, apt-get). 
+- Delete the package (yum, apt-get). 
 
-    <Tabs>
-      <TabItem value="rc" label="Red Hat/CentOS">
+  <Tabs>
+    <TabItem value="rc" label="Red Hat/CentOS">
 
-    ```bash title='SH'
-    $ sudo yum remove whatap-telegraf
-    ```
+  ```bash title='SH'
+  $ sudo yum remove whatap-telegraf
+  ```
 
-    </TabItem>
-      <TabItem value="du" label="Debian/Ubuntu">
+  </TabItem>
+    <TabItem value="du" label="Debian/Ubuntu">
 
-    ```bash title='SH'
-    $ sudo apt-get purge whatap-telegraf
-    ```
+  ```bash title='SH'
+  $ sudo apt-get purge whatap-telegraf
+  ```
 
-    </TabItem>
-      <TabItem value="fb" label="FreeBSD">
+  </TabItem>
+    <TabItem value="fb" label="FreeBSD">
 
-    ```bash title='SH'
-    $ pkg delete whatap-telegraf
-    ```
+  ```bash title='SH'
+  $ pkg delete whatap-telegraf
+  ```
 
-    </TabItem>
-      </Tabs>
+  </TabItem>
+    </Tabs>
 
--   If necessary, delete the log files and others under _/usr/whatap/telegraf_.
+- If necessary, delete the log files and others under _/usr/whatap/telegraf_.

@@ -32,29 +32,29 @@ Telegraf agents must be installed and configured directly on the service.
 
 ## Installation order and file configuration
 
-1.  Install the WhaTap **repository**.
-2.  Install the whatap-telegraf **Linux package** (yum, apt-get).
-3.  Set the **project access key** and ** WhaTap server information** settings.
-4.  Set the Telegraf's `socket_writer output plugin` to link the data.
+1. Install the WhaTap **repository**.
+2. Install the whatap-telegraf **Linux package** (yum, apt-get).
+3. Set the **project access key** and ** WhaTap server information** settings.
+4. Set the Telegraf's `socket_writer output plugin` to link the data.
 
 <details>
 <summary>Configuring the Telegraf agent file</summary>
 
--   **whatap_telegraf**
+- **whatap_telegraf**
 
-    By using the service running file, this program sends the data from Telegraf to the collection server.
+  By using the service running file, this program sends the data from Telegraf to the collection server.
 
--   **/etc/init.d/whatap-telegraf** (FreeBSD /usr/local/etc/whatap_telegraf)
+- **/etc/init.d/whatap-telegraf** (FreeBSD /usr/local/etc/whatap_telegraf)
 
-    Service script file.
+  Service script file.
 
--   **whatap.conf**
+- **whatap.conf**
 
-    It is the configuration file. This is the file where the address of the collection server and the server's project access key are entered.
+  It is the configuration file. This is the file where the address of the collection server and the server's project access key are entered.
 
--   **whatap-telegraf-#.log**
+- **whatap-telegraf-#.log**
 
-    Agent log file. (_/usr/whatap/telegraf/logs_)
+  Agent log file. (_/usr/whatap/telegraf/logs_)
 
 </details>
 
@@ -63,95 +63,95 @@ Telegraf agents must be installed and configured directly on the service.
 <Tabs>
 <TabItem value="rc" label="Red Hat/CentOS">
 
-1.  Install the WhaTap **repository**.
+1. Install the WhaTap **repository**.
 
-    ```bash title=SH
-    $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-    ```
+   ```bash title=SH
+   $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   ```
 
-2.  Install the **package** with the following command.
+2. Install the **package** with the following command.
 
-    ```bash title=SH
-    $ sudo yum install whatap-telegraf
-    ```
+   ```bash title=SH
+   $ sudo yum install whatap-telegraf
+   ```
 
-3.  Run the **configuration script** to start the service.
+3. Run the **configuration script** to start the service.
 
-    ```bash title=SH
-    echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
-    sudo service whatap-telegraf restart
-    ```
+   ```bash title=SH
+   echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
+   echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+   sudo service whatap-telegraf restart
+   ```
 
 </TabItem>
 <TabItem value="du" label="Debian/Ubuntu">
 
-1.  Install the WhaTap **repository**.
+1. Install the WhaTap **repository**.
 
-    ```bash title=SH
-    $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-    $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-    $ sudo dpkg -i whatap-repo_1.0_all.deb
-    $ sudo apt-get update
-    ```
+   ```bash title=SH
+   $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+   $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+   $ sudo dpkg -i whatap-repo_1.0_all.deb
+   $ sudo apt-get update
+   ```
 
-2.  Install the **package** with the following command.
-    ```bash title=SH
-    $ sudo apt-get install whatap-telegraf
-    ```
+2. Install the **package** with the following command.
+   ```bash title=SH
+   $ sudo apt-get install whatap-telegraf
+   ```
 
-3.  Run the **configuration script** to start the service.
-    ```bash title=SH
-    echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
-    sudo service whatap-telegraf restart
-    ```
+3. Run the **configuration script** to start the service.
+   ```bash title=SH
+   echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
+   echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+   sudo service whatap-telegraf restart
+   ```
 
 </TabItem>
 <TabItem value="al" label="Amazon Linux">
 
-1.  Install the WhaTap **repository**.
+1. Install the WhaTap **repository**.
 
-    ```bash title=SH
-    $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    ```
+   ```bash title=SH
+   $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   ```
 
-2.  Install the **package** with the following command.
+2. Install the **package** with the following command.
 
-    ```bash title=SH
-    $ sudo yum install whatap-telegraf
-    ```
+   ```bash title=SH
+   $ sudo yum install whatap-telegraf
+   ```
 
-3.  Run the **configuration script** to start the service.
+3. Run the **configuration script** to start the service.
 
-    ```bash title=SH
-    echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
-    sudo service whatap-telegraf restart
-    ```
+   ```bash title=SH
+   echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
+   echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+   sudo service whatap-telegraf restart
+   ```
 
 </TabItem>
 <TabItem value="fb" label="FreeBSD">
 
-1.  Install the WhaTap **repository**.
+1. Install the WhaTap **repository**.
 
-    ```bash title=SH
-    $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
-    $ pkg install whatap-telegraf-0.0.4.txz
-    ```
+   ```bash title=SH
+   $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
+   $ pkg install whatap-telegraf-0.0.4.txz
+   ```
 
-2.  Run the **configuration script** to start the service.
+2. Run the **configuration script** to start the service.
 
-    ```bash title=SH
-    echo "license=[granted project access key]" | tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[WhaTap server address]" | tee -a /usr/whatap/telegraf/whatap.conf
-    sudo service whatap_telegraf restart
-    ```
+   ```bash title=SH
+   echo "license=[granted project access key]" | tee /usr/whatap/telegraf/whatap.conf
+   echo "whatap.server.host=[WhaTap server address]" | tee -a /usr/whatap/telegraf/whatap.conf
+   sudo service whatap_telegraf restart
+   ```
 
 </TabItem>
 </Tabs>
@@ -171,8 +171,8 @@ By setting `socket_writer output plugin` in _Telegraf.conf_, the data collected 
     data_format = "json"
 ```
 
--   `[[outputs.socket_writer]]` Uncomment the line
--   Enter the TCP connection setting in the address field.
--   Set the data type in json format.
+- `[[outputs.socket_writer]]` Uncomment the line
+- Enter the TCP connection setting in the address field.
+- Set the data type in json format.
 
 You have finished installation of the Telegraf agent. In [the following](agent-troubleshooting) check the installation troubleshooting.

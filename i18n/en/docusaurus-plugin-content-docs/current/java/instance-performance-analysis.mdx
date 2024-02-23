@@ -18,17 +18,17 @@ It guides you to the information that can be checked in the <Cmdname sid="thread
 
 The states of the thread are declared as enumerated types named `State` in the `java.lang.Thread` class.
 
--   `NEW`: The thread has been generated but not run.
+- `NEW`: The thread has been generated but not run.
 
--   `RUNNABLE`: The CPU has been occupied and the tasks are being performed. The resource allocation by the OS may result in `WAITING` state.
+- `RUNNABLE`: The CPU has been occupied and the tasks are being performed. The resource allocation by the OS may result in `WAITING` state.
 
--   `WAITING`: It is waiting using the `wait()`, `join()`, and `park()` methods.
+- `WAITING`: It is waiting using the `wait()`, `join()`, and `park()` methods.
 
--   `TIMED_WAITING`: It is waiting using the `sleep()`, `wait()`, `join()`, and `park()` methods. The difference from the `WAITING` state is that it is waiting for a given time. The waiting state can be released by the time as well as external environment change.
+- `TIMED_WAITING`: It is waiting using the `sleep()`, `wait()`, `join()`, and `park()` methods. The difference from the `WAITING` state is that it is waiting for a given time. The waiting state can be released by the time as well as external environment change.
 
--   `BLOCKED`: It is waiting for the locked object to be released.
+- `BLOCKED`: It is waiting for the locked object to be released.
 
--   `TERMINATED`: Execution has been completed.
+- `TERMINATED`: Execution has been completed.
 
 ### Thread dump information
 

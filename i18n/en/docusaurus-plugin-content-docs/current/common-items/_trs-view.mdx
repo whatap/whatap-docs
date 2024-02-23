@@ -44,29 +44,29 @@ The hitmap is a distribution chart whose X-axis is the transaction end time, and
 
 {@youtube: JHVYfJjtYQo}
 
--   **Vertical line (LOCK symptom) pattern**  
+- **Vertical line (LOCK symptom) pattern**  
 
-    If a temporary lock (not only DB lock) occurs during transaction processing, the processing is queued. If the lock is released, pending transactions are finished together at a similar time. This creates vertical lines as follows:
+  If a temporary lock (not only DB lock) occurs during transaction processing, the processing is queued. If the lock is released, pending transactions are finished together at a similar time. This creates vertical lines as follows:
 
-    ![hitmap-lock](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+  ![hitmap-lock](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
 
-    Detecting locks in vertical line patterns is a very powerful concept. Especially in the microservice architecture, locks from backend systems can be equally detected.
+  Detecting locks in vertical line patterns is a very powerful concept. Especially in the microservice architecture, locks from backend systems can be equally detected.
 
-    ![hitmap-front-api-db](https://img.whatap.io/media/user_guide_application/analysis/h8.png)
+  ![hitmap-front-api-db](https://img.whatap.io/media/user_guide_application/analysis/h8.png)
 
-    The vertical lines for response patterns in the front applications are also detected when any lock occurs in the DB used by the back-end system.
+  The vertical lines for response patterns in the front applications are also detected when any lock occurs in the DB used by the back-end system.
 
--   **Horizontal line (timeout) pattern**  
+- **Horizontal line (timeout) pattern**  
 
-    In the 10-second timeout condition, if the resources are insufficient, the transactions wait for 10 seconds until a timeout error occurs. At this time, horizontal lines appear near 10 seconds of the hitmap as follows:
+  In the 10-second timeout condition, if the resources are insufficient, the transactions wait for 10 seconds until a timeout error occurs. At this time, horizontal lines appear near 10 seconds of the hitmap as follows:
 
-    ![hitmap-timeout](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+  ![hitmap-timeout](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
 
-    If there is a logic to retry after timeout, the horizontal lines repeat every 10 seconds as shown in the figure. The following is the hitmap for **failures**.
+  If there is a logic to retry after timeout, the horizontal lines repeat every 10 seconds as shown in the figure. The following is the hitmap for **failures**.
 
-    ![hitmap-error](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+  ![hitmap-error](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
 
-    (1) The response time increased in the section and (2) the red lines in the section are **horizontal line patterns**. (1) ConnectionPool is exhausted due to section load, (2) the secondary **timeout** failure occurred due to insufficient ConnectionPool.
+  (1) The response time increased in the section and (2) the red lines in the section are **horizontal line patterns**. (1) ConnectionPool is exhausted due to section load, (2) the secondary **timeout** failure occurred due to insufficient ConnectionPool.
 
 ### Using the pattern analysis
 
@@ -86,21 +86,21 @@ This function automatically detects abnormalities after analyzing the hitmap pat
 
 It learns abnormal patterns from hundreds of TB of performance data every month and issues an alarm when a pattern similar to the learned abnormal one is detected.
 
--   **Vertical line pattern**  
+- **Vertical line pattern**  
 
-    ![hitmap-abnormal1](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+  ![hitmap-abnormal1](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
 
--   **Horizontal line pattern**  
+- **Horizontal line pattern**  
 
-    ![hitmap-abnormal2](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+  ![hitmap-abnormal2](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
 
--   **Composite pattern**  
+- **Composite pattern**  
 
-    ![hitmap-abnormal3](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+  ![hitmap-abnormal3](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
 
--   **Hitmap alarm**  
+- **Hitmap alarm**  
 
-    <ImgLang img='ai-alert.png' desc='hitmap ai alert' />
+  <ImgLang img='ai-alert.png' desc='hitmap ai alert' />
 
 :::note
 

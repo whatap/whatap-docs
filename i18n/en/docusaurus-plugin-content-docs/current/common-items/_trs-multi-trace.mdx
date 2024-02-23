@@ -26,17 +26,17 @@ If you select **_Multi-transaction ID_**, the **_Multi-Transaction_** tab appear
 
 The default screen for **_Multi-transaction trace_** is **_Chart_**. **_Chart_** clearly provides you with call relationships for each transaction. You can check individual execution times for transaction services with the same **_multi-transaction ID_**. You can see the call relationships between transactions through the step times (![number 1](/img/number-01.png) **_time bar_**) expressed in background colors for transaction nodes. In the **_chart_**, you can use the mouse to move to a desired position or zoom in or out by scrolling.
 
--   ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
+- ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
 
--   ![Configuration icon](/img/ico-setting.svg) **_Chart view settings_**: You can display or hide the elements on the chart.
+- ![Configuration icon](/img/ico-setting.svg) **_Chart view settings_**: You can display or hide the elements on the chart.
 
-    -   **_Time Bar_**: You can display or hide the step times (**_time bar_**) for each node.
+  - **_Time Bar_**: You can display or hide the step times (**_time bar_**) for each node.
 
-    -   **_Application Name_**: You can display or hide the agent names (oname) for each node.
+  - **_Application Name_**: You can display or hide the agent names (oname) for each node.
 
-    -   **_Project_**: You can display or hide the project names for each node.
+  - **_Project_**: You can display or hide the project names for each node.
 
-    -   **_Database_**/**_External_**/**_Internal_**: Connection requests for other databases or HTTP calls that occurred in the transaction can also be viewed through the nodes of the chart.
+  - **_Database_**/**_External_**/**_Internal_**: Connection requests for other databases or HTTP calls that occurred in the transaction can also be viewed through the nodes of the chart.
 
 If you select a transaction node, an additional **_Transaction information_** window appears as follows. The transaction trace allows you to see the transaction details. For more information about the detailed analysis of transaction trace through the **_Transation information_** window, see [the following](trs-profile#details).
 
@@ -48,9 +48,9 @@ If you click **_Table_**, in the form of table, you can see the data for each tr
 
 <ImgLang img='multi-tx-table-mode.png' desc='Multi-transaction table mode' />
 
--   ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
+- ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
 
--   ![Column icon](/img/ic-column.svg) **_Column settings_**: You can edit the columns in the table. 
+- ![Column icon](/img/ic-column.svg) **_Column settings_**: You can edit the columns in the table. 
 
 When you select each transaction, the **_Transaction information_** window for the selected transaction appears, as in selection of a **_chart_** node. The transaction trace allows you to see the transaction details. For more information about the detailed transaction trace analysis using the **_Transaction Information_** window, see [the following](trs-profile#transaction-info).
 
@@ -60,31 +60,31 @@ If you select **_Tree_**, you can see the detailed information for each transact
 
 <ImgLang img='multi-tx-tree-mode.png' desc='Multi-transaction tree mode' />
 
--   ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
+- ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
 
--   ![View one line icon](/img/ic-single-line.svg) **_View one line_**: You can arrange the tree format at intervals by displaying the texts displayed in the execution data for each section in a single line.
+- ![View one line icon](/img/ic-single-line.svg) **_View one line_**: You can arrange the tree format at intervals by displaying the texts displayed in the execution data for each section in a single line.
 
--   ![View multiple lines icon](/img/ic-multi-line.svg) **_View multiple lines_**: All the texts displayed in the execution data for each section, appear by wrapping words.
+- ![View multiple lines icon](/img/ic-multi-line.svg) **_View multiple lines_**: All the texts displayed in the execution data for each section, appear by wrapping words.
 
--   **_Longest Route_**: The longest route can appear.
+- **_Longest Route_**: The longest route can appear.
 
--   ![Chart icon](/img/ic-bar-chart.svg) **_Display Time Bar_**: The elapsed times are displayed in a bar chart.
+- ![Chart icon](/img/ic-bar-chart.svg) **_Display Time Bar_**: The elapsed times are displayed in a bar chart.
 
--   ![Time icon](/img/ic-custom-time.svg) **_Display Time_**: The timestamps, gaps, and elapsed times for each segment are displayed in text.
+- ![Time icon](/img/ic-custom-time.svg) **_Display Time_**: The timestamps, gaps, and elapsed times for each segment are displayed in text.
 
-    -   8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
+  - 8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
 
-    -   Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
+  - Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
 
-    -   Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
+  - Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
 
-    :::note
+  :::note
 
-    In case of start and step times, the time differences caused by the transaction call environment are corrected on the screen through traces and mappings in the parent transactions. Accordingly, there may be differences from the actual time data.
+  In case of start and step times, the time differences caused by the transaction call environment are corrected on the screen through traces and mappings in the parent transactions. Accordingly, there may be differences from the actual time data.
 
-    :::
+  :::
 
--   ![Hide icon](/img/ic-eye-invisible.svg) **_Hide Time_**: The time is hidden.
+- ![Hide icon](/img/ic-eye-invisible.svg) **_Hide Time_**: The time is hidden.
 
 :::note
 

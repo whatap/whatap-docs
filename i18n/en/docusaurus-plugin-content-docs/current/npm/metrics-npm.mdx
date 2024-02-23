@@ -1,0 +1,75 @@
+---
+id: metrics-npm
+title: Network performance metrics
+description: It guides you to the network performance metrics.
+tags:
+  - Network performance monitoring
+  - Metrics
+  - UI
+toc_max_heading_level: 2
+---
+
+It describes the metrics indicators that are collected by Network Performance Monitoring. You can search in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />. Network performance metrics provide all data folded into fields.
+
+## npm_process_tag_data
+
+It indicates the network communication metric for each session. The collection interval is 1 minute.
+
+| Field name             |  Unit | Description                                                                | Remarks                                                                                                                                                            |
+| ---------------------- | :---: | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `app_name`             |   -   | Custom identification tag for the communicating entity                     | Default<br/>- A single Linux server environment: Host name<br/>- Kubernetes container environment: Pod name                                                        |
+| `avg_jitter`           |   ms  | Average of packet round-trip latency fluctuations                          | Average jitter over the collection interval                                                                                                                        |
+| `avg_latency`          |   ms  | Average packet round-trip latency time                                     | Average latency over the collection interval                                                                                                                       |
+| `container_name`       |   -   | Name of the container collected in the Kubernetes environment              | Empty value if not in Kubernetes environment                                                                                                                       |
+| `direction`            |   -   | Session connection direction                                               | **IN**(Inbound), **OUT**(Outbound)                                                                                                                                 |
+| `foreign_container_id` |   -   | ID of the container for local communication in the Kubernetes container    | During local communication, the target cannot be identified using the IP address and port number. Therefore, additional data is provided to find the exact target. |
+| `foreign_ip`           |   -   | Target IP address                                                          | -                                                                                                                                                                  |
+| `foreign_pod_id`       |   -   | Pod ID in case of local communication within a Kubernetes Pod              | During local communication, the target cannot be identified using the IP address and port number. Therefore, additional data is provided to find the exact target. |
+| `foreign_port`         |   -   | Target port number                                                         | Client Port (Inbound - `foreign_port`) is displayed with data merged to 0.                                                                                         |
+| `host_tag`             |   -   | Source host name                                                           | -                                                                                                                                                                  |
+| `local_ip`             |   -   | Source IP address                                                          | -                                                                                                                                                                  |
+| `local_port`           |   -   | Source port number                                                         | Client Port (Outbound - `local_port`) is displayed with data merged to 0.                                                                                          |
+| `lost_count`           | count | Number of lost packets                                                     | -                                                                                                                                                                  |
+| `max_jitter`           |   ms  | Maximum for packet round-trip latency fluctuations                         | Maximum for jitters collected for a certain period                                                                                                                 |
+| `max_latency`          |   ms  | Maximum packet round-trip latency time                                     | Maximum for latencies collected for a certain period                                                                                                               |
+| `min_jitter`           |   ms  | Minimum for packet round-trip latency fluctuations                         | Minimum for jitters collected for a certain period                                                                                                                 |
+| `min_latency`          |   ms  | Minimum packet round-trip latency time                                     | Minimum for latencies collected for a certain period                                                                                                               |
+| `pod_name`             |   -   | Pod name in case the communication source is in the Kubernetes environment | Empty value if not in Kubernetes environment                                                                                                                       |
+| `process_type`         |   -   | Type of process for communication                                          | -                                                                                                                                                                  |
+| `protocol`             |   -   | Communication protocol type                                                | TCP / UDP                                                                                                                                                          |
+| `recv_packet_count`    | count | Number of received packets                                                 | -                                                                                                                                                                  |
+| `recv_packet_size`     |  byte | Data size of the received packet                                           | -                                                                                                                                                                  |
+| `retransmission_count` | count | Number of retransmitted packets                                            | -                                                                                                                                                                  |
+| `row_count`            | count | Session count including duplicates                                         | -                                                                                                                                                                  |
+| `send_packet_count`    | count | Number of transmitted packets                                              | -                                                                                                                                                                  |
+| `send_packet_size`     |  byte | Total size of the transmitted packets                                      | -                                                                                                                                                                  |
+| `session_count`        | count | Session count excluding duplicates                                         | The number of unique sessions is calculated as **HyperLogLog**<sup><Link to="#hyperloglog">(1)</Link></sup> rather than a simple sum.                              |
+| `session_count_lobits` |   -   | Bit data (**HyperLogLog**) for calculation of the unique session           | It is **HyperLogLog** related information for statistical processing.                                                                                              |
+| `tot_jitter`           |   ms  | Sum of packet round-trip latency fluctuations                              | -                                                                                                                                                                  |
+| `tot_latency`          |   ms  | Sum of packet round-trip latencies                                         | -                                                                                                                                                                  |
+
+:::note
+
+<a name="hyperloglog">(1)</a>: <b>HyperLogLog</b> is a probabilistic data structure that estimates the number of elements in a set with very little memory.
+
+:::
+
+## npm_process_tag_list
+
+This is internal data for processing foreign area tagging in the session.
+
+- Tag lists for each session
+- Collection interval: 1 minute
+
+| Field name               | Description                                                                | Remarks                                                                                                     |
+| ------------------------ | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `foreign_app_name`       | Custom identification value of the target                                  | Default<br/>- A single Linux server environment: Host name<br/>- Kubernetes container environment: Pod name |
+| `foreign_container_id`   | ID of the container for local communication in the Kubernetes container    | -                                                                                                           |
+| `foreign_container_name` | Container name in case the target is in the Kubernetes environment         | -                                                                                                           |
+| `foreign_host_tag`       | Target host name                                                           | -                                                                                                           |
+| `foreign_ip`             | Target IP address                                                          | -                                                                                                           |
+| `foreign_pod_id`         | Pod ID in case of local communication within a Kubernetes Pod              | -                                                                                                           |
+| `foreign_pod_name`       | Pod name in case the communication target is in the Kubernetes environment | -                                                                                                           |
+| `foreign_port`           | Target port number                                                         | -                                                                                                           |
+| `foreign_process_type`   | Target process name                                                        | `untagged` if not identified                                                                                |
+| `local_inbound_check`    | Checks whether the inbound communication works in the internal network.    | -                                                                                                           |

@@ -4,30 +4,30 @@
 
 <Xclude product='npm'>
 
--   [メトリクスとは](metrics-intro)
+- [メトリクスとは](metrics-intro)
 
 </Xclude>
 
 <InDoc product='npm'>
 
--   [メトリクスとは](../metrics/common-metrics-intro)
+- [メトリクスとは](../metrics/common-metrics-intro)
 
 </InDoc>
 
--   [MXQL](../mxql/mxql-overview)
+- [MXQL](../mxql/mxql-overview)
 
 <Cmdname sid="composite_metrics" className="uitext" />は、メトリクスデータより複雑なルールを使用してイベントを生成し、アラート通知を送信します。 複合メトリクスは、次のような状況で効果的に使用できます。
 
--   複数のエージェントから受信したデータに対して総合的にイベント判定を行う必要がある場合
--   過去のデータと現在のデータを比較して、イベント判定を行う必要がある場合
+- 複数のエージェントから受信したデータに対して総合的にイベント判定を行う必要がある場合
+- 過去のデータと現在のデータを比較して、イベント判定を行う必要がある場合
 
 メトリクスイベントは、エージェントからメトリクスを受信するたびにイベント判定を行います。 一方、複合メトリクスイベントは、各エージェントから収集したメトリクスをデータベースに保存します。 そして、もう一度照会してイベント判定を行います。 このような特性から、複数のエージェントのデータを総合的に活用したり、過去のデータを活用することができます。 ただし、**MXQL**と呼ばれるWhaTap独自のデータ言語を使用するという参入障壁があります。 そのため、ユーザーが基礎的なレベルの**MXQL**を理解するだけで効果的にイベントを設定できるようにイベントテンプレートを提供します。 MXQLのネイティブユーザーは、イベント対象のフィルタリングとイベント条件のクエリのみを修正することでイベントを適用することができます。
 
-1.  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。
+1. <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。
 
-2.  <Cmdname sid="composite_metrics" className="uitext" />セクションの右側にある<Cmdname sid="add_notification" className="uitext" />を選択してください。
+2. <Cmdname sid="composite_metrics" className="uitext" />セクションの右側にある<Cmdname sid="add_notification" className="uitext" />を選択してください。
 
-3.  <Cmdname sid="composite_metrics" className="uitext" />ウィンドウが表示されたら、<Cmdname sid="create_new_composite_mxql_event" className="uitext" />を選択してください。
+3. <Cmdname sid="composite_metrics" className="uitext" />ウィンドウが表示されたら、<Cmdname sid="create_new_composite_mxql_event" className="uitext" />を選択してください。
 
 イベント設定ウィンドウが表示されます。 
 
@@ -58,24 +58,24 @@
 <Cmdname sid="composite_metrics" className="uitext" />は、メトリクスデータのクエリ言語である<b>MXQL</b>に基づいてイベント条件を生成します。 <Cmdname sid="create_new_composite_mxql_event" className="uitext" />機能は、<b>MXQL</b>をオートコンプリートするためのコンボボックス機能を提供します。 イベントデータを照会してチャートを構成し、イベント発行条件を直接入力するためのテンプレートです <Cmdname sid="widget" className="uitext" />または<Cmdname sid="text" className="uitext" />オプションを選択してイベントを設定してください。
 
 <Tabs>
-<TabItem value='widget' label='위젯'>
+<TabItem value='widget' label='ウィジェット'>
 
 時系列チャートを設定するオプションからイベント設定時に使用する**MXQL**をオートコンプリートさせることができます。
 
 <ImgLang img='set-event-data-view.png' desc='イベントデータ参照' />
 
--   <Cmdname sid="filter" className="uitext" />：イベント条件の対象を選択します。 <LinkImage img="number-01.png" className="ico" />演算式、<LinkImage img="number-02.png" className="ico" />タグ、<LinkImage img="number-03.png" className="ico" />フィルタリング値を入力して、フィルタリング条件を作成します。
+- <Cmdname sid="filter" className="uitext" />：イベント条件の対象を選択します。 <LinkImage img="number-01.png" className="ico" />演算式、<LinkImage img="number-02.png" className="ico" />タグ、<LinkImage img="number-03.png" className="ico" />フィルタリング値を入力して、フィルタリング条件を作成します。
 
-    <ImgLang img='set-event-cmetric-filter.png' desc='フィルター' />
+  <ImgLang img='set-event-cmetric-filter.png' desc='フィルター' />
 
--   <Cmdname sid="groupby" className="uitext" />：グループ化されたメトリクスデータを選択します。 複数を選択できます。
+- <Cmdname sid="groupby" className="uitext" />：グループ化されたメトリクスデータを選択します。 複数を選択できます。
 
--   <Cmdname sid="timeunit" className="uitext" />：グループ化されたデータを分割する時間基準を設定します。 <Cmdname sid="second" className="uitext" />、<Cmdname sid="minute" className="uitext" />、<Cmdname sid="hour" className="uitext" />で選択して設定することができます。
+- <Cmdname sid="timeunit" className="uitext" />：グループ化されたデータを分割する時間基準を設定します。 <Cmdname sid="second" className="uitext" />、<Cmdname sid="minute" className="uitext" />、<Cmdname sid="hour" className="uitext" />で選択して設定することができます。
 
--   <Cmdname sid="field" className="uitext" />：イベント発行条件に使用するフィールドを選択します。 複数を選択できます。
+- <Cmdname sid="field" className="uitext" />：イベント発行条件に使用するフィールドを選択します。 複数を選択できます。
 
 </TabItem>
-<TabItem value='text' label='텍스트'>
+<TabItem value='text' label='テキスト'>
 
 **MXQL**を平文のまま修正できる編集ウィンドウが表示されます。
 
@@ -88,41 +88,41 @@
 
 アラート通知設定の基本情報を入力します。
 
--   <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、イベントをアクティブ化の有無を選択します。
+- <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、イベントをアクティブ化の有無を選択します。
 
--   <Cmdname sid="level" className="uitext" />: <span class='vslow'>危険(Critical)</span>, <span class='slow'>警告(Warning)</span>, <span style={{color: '#757575'}}>情報</span>の中で一つのレベルを選択してください。
+- <Cmdname sid="level" className="uitext" />: <span class='vslow'>危険(Critical)</span>, <span class='slow'>警告(Warning)</span>, <span style={{color: '#757575'}}>情報</span>の中で一つのレベルを選択してください。
 
-    <Cmdname sid="resolved_event_notification" className="uitext" />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。 トグルボタンを選択して、機能をオンまたは、オフにすることができます。
+  <Cmdname sid="resolved_event_notification" className="uitext" />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。 トグルボタンを選択して、機能をオンまたは、オフにすることができます。
 
--   <Cmdname sid="title" className="uitext" />：アラート通知のタイトルを入力します。
+- <Cmdname sid="title" className="uitext" />：アラート通知のタイトルを入力します。
 
--   <Cmdname sid="message" className="uitext" />：イベント発生時に出力する通知メッセージを入力します。 <code>&#36;&#123;タグまたはフィールドキー&#125;</code>を入力してメッセージに変数を適用できます。 変数に入力するキーは、選択した複合メトリクスデータ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。 <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
+- <Cmdname sid="message" className="uitext" />：イベント発生時に出力する通知メッセージを入力します。 <code>&#36;&#123;タグまたはフィールドキー&#125;</code>を入力してメッセージに変数を適用できます。 変数に入力するキーは、選択した複合メトリクスデータ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。 <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
 
 ### アラート通知ポリシー
 
 アラート通知を送信する条件を入力します。
 
--   <Cmdname sid="data_time_range" className="uitext" />：イベント条件に使用する<b>MXQL</b>のリアルタイムデータの参照範囲を設定します。 イベント データの参照に含まれるフィールドのみ使用できます。
+- <Cmdname sid="data_time_range" className="uitext" />：イベント条件に使用する<b>MXQL</b>のリアルタイムデータの参照範囲を設定します。 イベント データの参照に含まれるフィールドのみ使用できます。
 
-    複合メトリクスイベントは、DBに保存されているメトリクスを参照して使用します。 したがって、最初にデータを検索する時間範囲を指定する必要があります。 データ取得時間を5分で選択すると、過去5分間に収集されたデータが参照され、イベント発生条件を確認します。 最近のデータに対して、イベントを設定する場合は短く、統計的にアクセスしたい場合は長く設定できます。 実際の使用例については、[次の文書](#template)を参照してください。
+  複合メトリクスイベントは、DBに保存されているメトリクスを参照して使用します。 したがって、最初にデータを検索する時間範囲を指定する必要があります。 データ取得時間を5分で選択すると、過去5分間に収集されたデータが参照され、イベント発生条件を確認します。 最近のデータに対して、イベントを設定する場合は短く、統計的にアクセスしたい場合は長く設定できます。 実際の使用例については、[次の文書](#template)を参照してください。
 
--   <Cmdname sid="condition" className="uitext" />：MXQLに反映するフィールドと演算ルール、しきい値を入力します。
+- <Cmdname sid="condition" className="uitext" />：MXQLに反映するフィールドと演算ルール、しきい値を入力します。
 
 ### 付加情報
 
 アラート通知を受信するために追加オプションを設定します。
 
--   <Cmdname sid="interval" className="uitext" />：選択した時間間隔で通知条件を確認します。
+- <Cmdname sid="interval" className="uitext" />：選択した時間間隔で通知条件を確認します。
 
--   <Cmdname sid="silent" className="uitext" />：過剰な警告通知が発生しないようにするオプションです。 最初の警告通知以降、選択した時間帯に警告通知を送信しません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
+- <Cmdname sid="silent" className="uitext" />：過剰な警告通知が発生しないようにするオプションです。 最初の警告通知以降、選択した時間帯に警告通知を送信しません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
 
--   <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、該当タグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。 イベント受信タグを選択しない場合は、プロジェクトの全体メンバーに警告通知を送信します。
+- <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、該当タグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。 イベント受信タグを選択しない場合は、プロジェクトの全体メンバーに警告通知を送信します。
 
-    :::note
+  :::note
 
-    <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
+  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
 
-    :::
+  :::
 
 ### アラート通知テスト
 

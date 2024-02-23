@@ -7,66 +7,66 @@ pagination_next: release-notes/golang/golang-0_2_2
 
 September 13, 2023
 
--   <Status>Feature</Status> Added the large profile processing option.
+- <Status>Feature</Status> Added the large profile processing option.
 
-    -   For previous profiles, up to 1024 profiles have been collected. You can increase the maximum value with the setting but the increase in memory followed.
+  - For previous profiles, up to 1024 profiles have been collected. You can increase the maximum value with the setting but the increase in memory followed.
 
-    -   Improved the function to collect more profiles without increasing memory by sending the split zipped profiles.
+  - Improved the function to collect more profiles without increasing memory by sending the split zipped profiles.
 
-    -   **large_profile_enabled** <span class='type'>Boolean</span>
+  - **large_profile_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        We can collect up to 10,000 profiles (steps). For a larger collection, it is recommended to use the `split_profile_enabled` option.
+    We can collect up to 10,000 profiles (steps). For a larger collection, it is recommended to use the `split_profile_enabled` option.
 
-    -   **split_profile_enabled** <span class='type'>Boolean</span>
+  - **split_profile_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        It collects more profiles by separating certain amounts of profiles into virtual transactions. Multiple transaction lists are separated for display.
+    It collects more profiles by separating certain amounts of profiles into virtual transactions. Multiple transaction lists are separated for display.
 
-    :::note
+  :::note
 
-    -   If two options are all set, the `split_profile_enabled` option takes precedence.
+  - If two options are all set, the `split_profile_enabled` option takes precedence.
 
-    -   For more information about the agent configuration of the above options, see [the following](../../golang/agent-transaction#trs-trc).
+  - For more information about the agent configuration of the above options, see [the following](../../golang/agent-transaction#trs-trc).
 
-    :::
+  :::
 
--   <Status>Feature</Status> Added the compressed profile data transmission option.
+- <Status>Feature</Status> Added the compressed profile data transmission option.
 
-    **profile_zip_enabled** <span class='type'>boolean</span> : Default `true`
+  **profile_zip_enabled** <span class='type'>boolean</span> : Default `true`
 
 <!---->
 
--   <Status>Changed</Status> Modified the function to exclude collection of specific HTTP methods to target all transactions.
+- <Status>Changed</Status> Modified the function to exclude collection of specific HTTP methods to target all transactions.
 
-    -   The `ignore_http_method` option modified to target all transactions.
+  - The `ignore_http_method` option modified to target all transactions.
 
-    -   The existing function excluded the transactions set with the `http_method_urls` option. The `http_method_urls` option has been deleted and all transactions are targeted.
+  - The existing function excluded the transactions set with the `http_method_urls` option. The `http_method_urls` option has been deleted and all transactions are targeted.
 
-    :::note
+  :::note
 
-    -   For more information about the agent configuration for above options, see [the following](../../golang/agent-transaction#track-http-trs).
+  - For more information about the agent configuration for above options, see [the following](../../golang/agent-transaction#track-http-trs).
 
-    :::
+  :::
 
 :::info
 
 **Download**
 
--   go-api(import library)
+- go-api(import library)
 
-    ```bash
-    go get github.com/whatap/go-api@latest
-    ```
+  ```bash
+  go get github.com/whatap/go-api@latest
+  ```
 
--   Service agent
+- Service agent
 
-    | OS Name                         | Architecture | File format |                                     Download                                    |
-    | ------------------------------- | :----------: | :---------: | :-----------------------------------------------------------------------------: |
-    | Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
-    | Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
-    | Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
+  | OS Name                         | Architecture | File format |                                     Download                                    |
+  | ------------------------------- | :----------: | :---------: | :-----------------------------------------------------------------------------: |
+  | Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
+  | Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
+  | Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
 
 :::

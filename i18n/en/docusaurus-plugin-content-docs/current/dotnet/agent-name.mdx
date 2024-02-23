@@ -25,7 +25,7 @@ object_name={type}-{ip2}-{ip3}-{process}
 
 :::note
 
--   The agent name takes effect after the **Whatap .NET** service has been restarted. 
+- The agent name takes effect after the **Whatap .NET** service has been restarted. 
 
 :::
 
@@ -45,24 +45,24 @@ object_name={type}-{ip2}-{ip3}-{process}
 
 :::note
 
--   The agent name takes effect after the **Whatap .NET** service has been restarted.
+- The agent name takes effect after the **Whatap .NET** service has been restarted.
 
 :::
 
--   **object_name** <span class='type'>String</span>
+- **object_name** <span class='type'>String</span>
 
-    Default `{type}-{ip2}-{ip3}-{process}`
+  Default `{type}-{ip2}-{ip3}-{process}`
 
-    It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.
+  It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.
 
--   **app_name** <span class='type'>String</span>
+- **app_name** <span class='type'>String</span>
 
-    It is a component used in the agent naming (ONAME) scheme to identify applications. It corresponds to the `{type}` among the `object_name` options.
+  It is a component used in the agent naming (ONAME) scheme to identify applications. It corresponds to the `{type}` among the `object_name` options.
 
--   **app_process_name** <span class='type'>String</span>
+- **app_process_name** <span class='type'>String</span>
 
-    It is a component used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.
+  It is a component used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.
 
--   **whatap.okind** <span class='type'>String</span>
+- **whatap.okind** <span class='type'>String</span>
 
-    Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.
+  Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.

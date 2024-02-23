@@ -13,10 +13,10 @@ Release date: 2022-04-27
 
 ### Fixed the bug where the web transaction data cannot be collected in a panic situation.
 
--   net/http
--   github.com/labstack/echo
--   github.com/gorilla/mux
--   github.com/go-gonic/gin
+- net/http
+- github.com/labstack/echo
+- github.com/gorilla/mux
+- github.com/go-gonic/gin
 
 :::note
 
@@ -104,19 +104,19 @@ The logs for transactions, DB connections, SQL executions, and HTTP outbound cal
 
 It excludes the collection of transactions requested by specific HTTP methods for the set URIs. Multiple URIs and methods can be registered using comma (,) as the delimiter. The values are case-insensitive.
 
--   `ignore_http_method_urls`
+- `ignore_http_method_urls`
 
-    \#Default : ""#
+  \#Default : ""#
 
-    \#Type: string#
+  \#Type: string#
 
--   `ignore_http_method`
+- `ignore_http_method`
 
-    \#Default : ""#
+  \#Default : ""#
 
-    \#Type: string#
+  \#Type: string#
 
-    ```ini
-    ignore_http_method_urls=/index, /sql/select
-    ignore_http_method=options, connect
-    ```
+  ```ini
+  ignore_http_method_urls=/index, /sql/select
+  ignore_http_method=options, connect
+  ```

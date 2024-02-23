@@ -10,19 +10,19 @@ The <Cmdname sid="transaction_map" className="uitext" /> chart expresses the res
 
 The hitmap chart displays the total number of transactions during a specific period. Differences are expressed in color where the number of occurrences is high. In case of the hitmap, the sums for each section are stored separately. Accordingly, you can check the trend over a relatively long time. However, because transactions are aggregated and displayed, it is difficult to know individual transactions.
 
--   To analyze the distribution of the long-term, high-volume transactions, use the hit map analysis. (<Cmdname sid="project_menu" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)
+- To analyze the distribution of the long-term, high-volume transactions, use the hit map analysis. (<Cmdname sid="project_menu" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)
 
--   To do performance test, or analyze the transaction distribution within 1 to 5 minutes upon a failure, or check the transaction distribution without limiting the execution time, check the <Cmdname sid="transaction_map" className="uitext" />.
+- To do performance test, or analyze the transaction distribution within 1 to 5 minutes upon a failure, or check the transaction distribution without limiting the execution time, check the <Cmdname sid="transaction_map" className="uitext" />.
 
 :::
 
 :::note
 
--   For more information about <Cmdname sid="hitmap" className="uitext" />, see <Link to="trs-view">the following</Link>.
+- For more information about <Cmdname sid="hitmap" className="uitext" />, see <Link to="trs-view">the following</Link>.
 
--   For more information about the analysis method of the <Cmdname sid="hitmap_transaction" className="uitext" /> chart, see <Link to="../best-practice-guides/about-apm-hitmap-class">the following</Link>.
+- For more information about the analysis method of the <Cmdname sid="hitmap_transaction" className="uitext" /> chart, see <Link to="../best-practice-guides/about-apm-hitmap-class">the following</Link>.
 
--   If the user's PC time has been set to be older than the server time, the data may not appear on the chart if the server time and the user's PC time differ by more than 5 minutes.
+- If the user's PC time has been set to be older than the server time, the data may not appear on the chart if the server time and the user's PC time differ by more than 5 minutes.
 
 :::
 
@@ -50,11 +50,11 @@ If you select ![Number 1](/img/number-01.png) ![Down arrow icon](/img/down-arrow
 
 You can see the transaction map by selecting agents for the group classified by the agent setting from the drop-down menu.
 
--   <Cmdname sid="type_oid" className="uitext" />: You can select an individual agent or all agents.
+- <Cmdname sid="type_oid" className="uitext" />: You can select an individual agent or all agents.
 
--   <Cmdname sid="type_onode" className="uitext" />: The agent list classified as <code>whatap.onode</code> in the agent configuration can be selected.
+- <Cmdname sid="type_onode" className="uitext" />: The agent list classified as <code>whatap.onode</code> in the agent configuration can be selected.
 
--   <Cmdname sid="type_okind" className="uitext" />: The agent list classified as <code>whatap.okind</code> in the agent configuration can be selected.
+- <Cmdname sid="type_okind" className="uitext" />: The agent list classified as <code>whatap.okind</code> in the agent configuration can be selected.
 
 ### Selecting by agent search
 
@@ -86,17 +86,17 @@ If you select individual items from the list, they are added as the <Cmdname sid
 
 You can add filters by selecting individual items from the list in the **_Top 30_** section, but you can directly add filters by entering the desired items. It filters transactions that match the specified string.
 
-1.  In the <Cmdname sid="filter" className="uitext" /> option, select <Cmdname sid="add_filter" className="uitext" /> or <LinkImage img="ico-add.svg" className="ico" />.
+1. In the <Cmdname sid="filter" className="uitext" /> option, select <Cmdname sid="add_filter" className="uitext" /> or <LinkImage img="ico-add.svg" className="ico" />.
 
-2.  Select **_+ Add_**.
+2. Select **_+ Add_**.
 
-3.  Select one of <Cmdname sid="TTL06918" className="uitext" />, <Cmdname sid="TTL06101" className="uitext" />, and <Cmdname sid="ip" className="uitext" />, and then enter the following string:
+3. Select one of <Cmdname sid="TTL06918" className="uitext" />, <Cmdname sid="TTL06101" className="uitext" />, and <Cmdname sid="ip" className="uitext" />, and then enter the following string:
 
-    <ImgLang img='dashboard-txmap-filter.png' desc='Add Filter' />
+   <ImgLang img='dashboard-txmap-filter.png' desc='Add Filter' />
 
-    By selecting **_+ Add_**, you can add a filter.
+   By selecting **_+ Add_**, you can add a filter.
 
-4.  After all the desired filters are added, select **_Apply_**.
+4. After all the desired filters are added, select **_Apply_**.
 
 Check that the added filters have been applied in the <Cmdname sid="transaction_map" className="uitext" /> chart.
 
@@ -106,14 +106,14 @@ You can change to the settings with desired conditions for chart analysis. Use t
 
 <ImgLang img='transaction-map-setting.png' desc='Transaction map setting' />
 
--   Select [Configuration icon](/img/ico-setting.svg) to modify the chart settings. You can select a metric on the Y axis and set the maximum value. To apply the settings, select **_Apply_**.
+- Select [Configuration icon](/img/ico-setting.svg) to modify the chart settings. You can select a metric on the Y axis and set the maximum value. To apply the settings, select **_Apply_**.
 
-    :::tip
+  :::tip
 
-    For a metric on the Y-axis, select any of <Cmdname sid="TTL06361" className="uitext" />, <Cmdname sid="TTL06364" className="uitext" />, <Cmdname sid="TTL06972" className="uitext" />, and <Cmdname sid="TTL06362" className="uitext" />.
+  For a metric on the Y-axis, select any of <Cmdname sid="TTL06361" className="uitext" />, <Cmdname sid="TTL06364" className="uitext" />, <Cmdname sid="TTL06972" className="uitext" />, and <Cmdname sid="TTL06362" className="uitext" />.
 
-    :::
+  :::
 
--   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart on the Y axis.
+- Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart on the Y axis.
 
--   If <Cmdname sid="error_only" className="uitext" /> is selected, only erroneous transactions appear on the chart.
+- If <Cmdname sid="error_only" className="uitext" /> is selected, only erroneous transactions appear on the chart.

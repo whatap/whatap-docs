@@ -8,18 +8,18 @@ tags:
   - API Call
 ---
 
--   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to parse and normalize HTTPC URLs for transactions.
+  It enables the function to parse and normalize HTTPC URLs for transactions.
 
--   **trace_httpc_normalize_urls** <span class='type'>String</span>
+- **trace_httpc_normalize_urls** <span class='type'>String</span>
 
-    Define the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
+  Define the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
 
-    :::note
+  :::note
 
-    For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+  For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
 
-    :::
+  :::

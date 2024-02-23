@@ -25,15 +25,15 @@ If you use the **_POD initialization performance_** function of WhaTap Kubernete
 
 <ImgLang img='k8s-pod-init-perform.png' desc='POD Initialization Performance' />
 
--   On the upper left of the ![number 01](/img/number-01.png) area, you can see the Pod counts for each status.
+- On the upper left of the ![number 01](/img/number-01.png) area, you can see the Pod counts for each status.
 
--   You can refresh information by selecting the ![refresh icon](/img/ico-refresh.svg) **_Refresh_** icon on the upper right of the ![number 01](/img/number-01.png) area.
+- You can refresh information by selecting the ![refresh icon](/img/ico-refresh.svg) **_Refresh_** icon on the upper right of the ![number 01](/img/number-01.png) area.
 
--   You can select a column by selecting the ![select column icon](/img/ic-k8s-filter.svg) **_Select column_** icon on the left of the ![number 01](/img/number-01.png) area. 
+- You can select a column by selecting the ![select column icon](/img/ic-k8s-filter.svg) **_Select column_** icon on the left of the ![number 01](/img/number-01.png) area. 
 
--   In the input field on the right of ![number 01](/img/number-01.png) area, you can search for the Pod <Cmdname sid="name" className="uitext" /> or <Cmdname sid="qosClass" className="uitext" />.
+- In the input field on the right of ![number 01](/img/number-01.png) area, you can search for the Pod <Cmdname sid="name" className="uitext" /> or <Cmdname sid="qosClass" className="uitext" />.
 
--   When selecting a desired column in the ![number 02](/img/number-02.png) area, you can sort the list based on the corresponding column. 
+- When selecting a desired column in the ![number 02](/img/number-02.png) area, you can sort the list based on the corresponding column. 
 
 ## Column guide
 
@@ -45,67 +45,67 @@ The **_Pod initialization performance_** list can classify columns according to 
 
 You can see the information for <Cmdname sid="name" className="uitext" />, <Cmdname sid="phase" className="uitext" />, <Cmdname sid="qosClass" className="uitext" />, and <Cmdname sid="startTime" className="uitext" /> of the Pod.
 
--   <Cmdname sid="phase" className="uitext" />: Indicates the life cycle of the Pod.
+- <Cmdname sid="phase" className="uitext" />: Indicates the life cycle of the Pod.
 
-    -   ![Pause idon](/img/ico-pause.svg) Pending: Indicates that a Pod start has been approved inside the Kubernetes cluster, but no container has been created.
+  - ![Pause idon](/img/ico-pause.svg) Pending: Indicates that a Pod start has been approved inside the Kubernetes cluster, but no container has been created.
 
-    -   ![Normal icon](/img/ic-check-circle-filled.svg) Running: Indicates that the Pod is bound to the node, all containers are created, and at least one container is running or starting or restarting.
+  - ![Normal icon](/img/ic-check-circle-filled.svg) Running: Indicates that the Pod is bound to the node, all containers are created, and at least one container is running or starting or restarting.
 
-    -   ![Success icon](/img/ic-check-circle-filled-bl.svg) Succeeded: Indicates that all containers in the Pod have been successfully terminated and have not been restarted.
+  - ![Success icon](/img/ic-check-circle-filled-bl.svg) Succeeded: Indicates that all containers in the Pod have been successfully terminated and have not been restarted.
 
-    -   ![Critical icon](/img/ic-warning-critical.svg) Failed: Indicates that one or more containers in the Pod failed and were terminated.
+  - ![Critical icon](/img/ic-warning-critical.svg) Failed: Indicates that one or more containers in the Pod failed and were terminated.
 
-    -   [Unknown icon](/img/ic-question-circle.svg) Unknown: Indicates that communication with the Pod is not possible for some reasons.
+  - [Unknown icon](/img/ic-question-circle.svg) Unknown: Indicates that communication with the Pod is not possible for some reasons.
 
--   <Cmdname sid="qosClass" className="uitext" />: The quality of service of the Pod. The QoS class determines the priority of Pods when resources are insufficient. Higher priority Pods are terminated before lower priority Pods.
+- <Cmdname sid="qosClass" className="uitext" />: The quality of service of the Pod. The QoS class determines the priority of Pods when resources are insufficient. Higher priority Pods are terminated before lower priority Pods.
 
-    -   Guaranteed: Most available resources in the node are guaranteed and are assigned priority over other Pods. They are terminated last.
+  - Guaranteed: Most available resources in the node are guaranteed and are assigned priority over other Pods. They are terminated last.
 
-        -   This is the case when all containers in the Pod have CPU and memory requests.
+    - This is the case when all containers in the Pod have CPU and memory requests.
 
-        -   This is the case when all containers in the Pod have CPU and memory limits and their values are the same as the requests.
+    - This is the case when all containers in the Pod have CPU and memory limits and their values are the same as the requests.
 
-    -   Burstable: The Pod allocates some resources when the node runs out of resources.
+  - Burstable: The Pod allocates some resources when the node runs out of resources.
 
-        -   This is the case when the conditions of the Guaranteed class are not met.
+    - This is the case when the conditions of the Guaranteed class are not met.
 
-        -   This is applied when any of the Pod's containers have requests or limits set for CPU and memory.
+    - This is applied when any of the Pod's containers have requests or limits set for CPU and memory.
 
-    -   BestEffort: It has lower priority than other Pods because there is no resource request or limit. It is terminated first.
+  - BestEffort: It has lower priority than other Pods because there is no resource request or limit. It is terminated first.
 
-        -   This is the case when all containers in the Pod have no requests and limits for CPU and memory.
+    - This is the case when all containers in the Pod have no requests and limits for CPU and memory.
 
--   <Cmdname sid="startTime" className="uitext" />: Indicates the Pod's start time or created time.
+- <Cmdname sid="startTime" className="uitext" />: Indicates the Pod's start time or created time.
 
 ### <Cmdname sid="ITM07179" className="b600" />
 
 <Cmdname sid="ITM07179" className="uitext" /> indicates the time point when the first metric data has been collected.
 
--   <Cmdname sid="ITM07175" className="uitext" />: Indicates the data for the initialization started time. It is the time point of first data collection.
+- <Cmdname sid="ITM07175" className="uitext" />: Indicates the data for the initialization started time. It is the time point of first data collection.
 
--   <Cmdname sid="ITM07170" className="uitext" />: Indicates the CPU limit when initialization has started.
+- <Cmdname sid="ITM07170" className="uitext" />: Indicates the CPU limit when initialization has started.
 
--   <Cmdname sid="ITM07169" className="uitext" />: Indicates the CPU request when initialization has started.
+- <Cmdname sid="ITM07169" className="uitext" />: Indicates the CPU request when initialization has started.
 
--   <Cmdname sid="ITM07171" className="uitext" />: A value that is incremented when the container exceeds the CPU limit at the start of initialization.
+- <Cmdname sid="ITM07171" className="uitext" />: A value that is incremented when the container exceeds the CPU limit at the start of initialization.
 
--   <Cmdname sid="ITM07173" className="uitext" />: Indicates the memory limit set when initialization has started.
+- <Cmdname sid="ITM07173" className="uitext" />: Indicates the memory limit set when initialization has started.
 
--   <Cmdname sid="ITM07172" className="uitext" />: Indicates the memory request requested when initialization has started.
+- <Cmdname sid="ITM07172" className="uitext" />: Indicates the memory request requested when initialization has started.
 
--   <Cmdname sid="ITM07174" className="uitext" />: A value that is incremented when the container exceeds the memory limit at the start of initialization.
+- <Cmdname sid="ITM07174" className="uitext" />: A value that is incremented when the container exceeds the memory limit at the start of initialization.
 
 ### <Cmdname sid="ITM07178" className="b600" />
 
 <Cmdname sid="ITM07178" className="uitext" /> indicates the previous time point when data with a CpuByLimit value lower than the average value for 5 minutes is generated after initialization.
 
--   <Cmdname sid="ITM07164" className="uitext" />: Indicates the time taken to initialize the Pod.
+- <Cmdname sid="ITM07164" className="uitext" />: Indicates the time taken to initialize the Pod.
 
-    > Time when the CpuByLimit value lower than the average value has been collected among the data for 5 minutes at the start of initialization - first data collection time
+  > Time when the CpuByLimit value lower than the average value has been collected among the data for 5 minutes at the start of initialization - first data collection time
 
--   <Cmdname sid="ITM07162" className="uitext" />: Indicates the average value of CpuByLimit during initialization.
+- <Cmdname sid="ITM07162" className="uitext" />: Indicates the average value of CpuByLimit during initialization.
 
--   <Cmdname sid="ITM07163" className="uitext" />: Indicates the maximum amount of memory used by the container during initialization.
+- <Cmdname sid="ITM07163" className="uitext" />: Indicates the maximum amount of memory used by the container during initialization.
 
 :::note
 
@@ -117,10 +117,10 @@ CpuByLimit (`cpu_per_quota`) indicates the total CPU utilization based on the CP
 
 <Cmdname sid="ITM07177" className="uitext" /> indicates the time point when data with a CpuByLimit value lower than the average value for 5 minutes is generated after initialization.
 
--   <Cmdname sid="ITM07176" className="uitext" />: Indicates the time when initialization is completed.
+- <Cmdname sid="ITM07176" className="uitext" />: Indicates the time when initialization is completed.
 
--   <Cmdname sid="ITM07165" className="uitext" />: Indicates the average value of CpuByLimit after initialization.
+- <Cmdname sid="ITM07165" className="uitext" />: Indicates the average value of CpuByLimit after initialization.
 
--   <Cmdname sid="ITM07166" className="uitext" />: Indicates the maximum amount of memory used by the container after initialization.
+- <Cmdname sid="ITM07166" className="uitext" />: Indicates the maximum amount of memory used by the container after initialization.
 
--   <Cmdname sid="ITM07167" className="uitext" />: Indicates the time in milliseconds for 5 minutes after initialization.
+- <Cmdname sid="ITM07167" className="uitext" />: Indicates the time in milliseconds for 5 minutes after initialization.

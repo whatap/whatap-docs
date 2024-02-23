@@ -9,38 +9,38 @@ tags:
 
 It can control the Go agent function.
 
--   **enabled** <span class='type'>Boolean</span>
+- **enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables all the functions.
+  It enables all the functions.
 
--   **accesskey** / **license** <span class='type'>String</span>
+- **accesskey** / **license** <span class='type'>String</span>
 
-    Set the access key granted by the server when installing the agent. The access key includes the agent's project and the encryption key for secured communication.
+  Set the access key granted by the server when installing the agent. The access key includes the agent's project and the encryption key for secured communication.
 
--   **stat_enabled** <span class='type'>Boolean</span>
+- **stat_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to trace the statistics. Statistical data such as transactions, SQL, HTTPCALL, UserAgent, and client IP collected in every 5 minutes are applicable.
+  It enables the function to trace the statistics. Statistical data such as transactions, SQL, HTTPCALL, UserAgent, and client IP collected in every 5 minutes are applicable.
 
--   **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
+- **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the maximum call interval credited by the same user when measuring the number of real-time users.
+  Set the maximum call interval credited by the same user when measuring the number of real-time users.
 
--   **time_sync_interval_ms** <span class='type'>Milliseconds</span>
+- **time_sync_interval_ms** <span class='type'>Milliseconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the synchronization interval between the agents and the server. For no synchronization, set it to 0.
+  Set the synchronization interval between the agents and the server. For no synchronization, set it to 0.
 
--   **text_reset** <span class='type'>Int</span>
+- **text_reset** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If you set a value that is different from the previous setting, it will be sent again.
+  The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If you set a value that is different from the previous setting, it will be sent again.
 
-    Transaction URLs and SQL strings correspond to text data.
+  Transaction URLs and SQL strings correspond to text data.

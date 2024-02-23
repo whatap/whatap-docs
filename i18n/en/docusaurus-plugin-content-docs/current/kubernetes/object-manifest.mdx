@@ -24,31 +24,31 @@ Additionally, you can freely set the collection time zone by specifying the cont
 
 ## Container environment variables {#object-manifest-evn}
 
--   **store_k8s_object_manifest_enabled**
+- **store_k8s_object_manifest_enabled**
 
-    Default `true`
+  Default `true`
 
-    The object manifest collection feature is enabled. The default value is `true`, the collection feature is enabled without any further settings.
+  The object manifest collection feature is enabled. The default value is `true`, the collection feature is enabled without any further settings.
 
--   **store_k8s_object_manifest_timezone**
+- **store_k8s_object_manifest_timezone**
 
-    Default `UTC`
+  Default `UTC`
 
-    Set the time zone for collection of object manifests. If there is no separate setting, collection starts at midnight based on `UTC` by default. 
+  Set the time zone for collection of object manifests. If there is no separate setting, collection starts at midnight based on `UTC` by default. 
 
-    -   Can be set as a region-based time zone or in GMT offset format. 
+  - Can be set as a region-based time zone or in GMT offset format. 
 
-    -   Supports a precise time setting in minutes. 
+  - Supports a precise time setting in minutes. 
 
-        > For example, a non-standard time zone for a specific region can be specified by setting it to `GMT+0810`.
+    > For example, a non-standard time zone for a specific region can be specified by setting it to `GMT+0810`.
 
--   **store_k8s_object_manifest_max_fetch_limit**
+- **store_k8s_object_manifest_max_fetch_limit**
 
-    Default `50`
+  Default `50`
 
-    Set the number of objects to request to the cluster at a time. If there is no separate setting, 50 items are requested upon request based on the default value of `50`. 
+  Set the number of objects to request to the cluster at a time. If there is no separate setting, 50 items are requested upon request based on the default value of `50`. 
 
-    > For example, when setting the option `30` in a cluster with a total number of Pods of 90, pods are requested 3 times for 30 pods each.
+  > For example, when setting the option `30` in a cluster with a total number of Pods of 90, pods are requested 3 times for 30 pods each.
 
 ```yaml title='Example'
 containers:
@@ -101,11 +101,11 @@ When you select ![Icon](/img/ico-detail-view.svg) **_Display Detail_** in the ob
 
 #### List of Object Manifest saving times
 
--   You can see the list of the times saved for object manifests on the left. Object manifests are automatically saved at a specified time per day.
+- You can see the list of the times saved for object manifests on the left. Object manifests are automatically saved at a specified time per day.
 
--   The object manifest saving time can be changed by modifying the value of the master agent's container environment variable, `store_k8s_object_manifest_timezone`. 
+- The object manifest saving time can be changed by modifying the value of the master agent's container environment variable, `store_k8s_object_manifest_timezone`. 
 
--   Object manifests are saved at a scheduled time per day, but are also additionally saved when any warning events occur. 
+- Object manifests are saved at a scheduled time per day, but are also additionally saved when any warning events occur. 
 
 :::note 
 
@@ -127,10 +127,10 @@ You can see the **_object manifests_** in the **_container map_**.
 
 <ImgLang img='k8s-object-manifest-cm.png' desc='Viewing Object Manifest in Container map' />
 
--   Select a desired block. 
+- Select a desired block. 
 
--   In the summary window, select the **_Target Info_** tab to view the Pod or container data.  
+- In the summary window, select the **_Target Info_** tab to view the Pod or container data.  
 
--   On the right of the **_Pod_**, **_Deployment_**, **_ReplicaSet_**, and **_Node_** tags, click ![More icon](/img/ico-more.svg) **_More_** and then select **_Object Manifest_**.
+- On the right of the **_Pod_**, **_Deployment_**, **_ReplicaSet_**, and **_Node_** tags, click ![More icon](/img/ico-more.svg) **_More_** and then select **_Object Manifest_**.
 
 :::

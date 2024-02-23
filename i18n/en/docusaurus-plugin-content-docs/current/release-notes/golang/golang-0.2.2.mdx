@@ -7,76 +7,76 @@ pagination_next: release-notes/golang/golang-0_1_14
 
 June 21, 2023
 
--   <Status>Change</Status> Modified the agent configuration method.
+- <Status>Change</Status> Modified the agent configuration method.
 
-    -   The _whatap.conf_ files are now configured for each process.
+  - The _whatap.conf_ files are now configured for each process.
 
-    -   The _whatap.conf_ file must have been created before running the process.
+  - The _whatap.conf_ file must have been created before running the process.
 
-    -   The previous _/usr/whatap/agent/whatap.conf_ file uses only the whatap-agent service.
+  - The previous _/usr/whatap/agent/whatap.conf_ file uses only the whatap-agent service.
 
-    :::note
+  :::note
 
-    -   It is recognized as an agent for each process for data separation.
+  - It is recognized as an agent for each process for data separation.
 
-    -   In the past, multiple processes were all recognized as an agent, and their data was integrated.
+  - In the past, multiple processes were all recognized as an agent, and their data was integrated.
 
-    :::
+  :::
 
-    :::tip
+  :::tip
 
-    For more information about **agent configuration**, see [the following](../../golang/install-agent#set-agent).
+  For more information about **agent configuration**, see [the following](../../golang/install-agent#set-agent).
 
-    :::
+  :::
 
--   <Status>Change</Status> For agent IPC communication, UDP has been changed to TCP.
+- <Status>Change</Status> For agent IPC communication, UDP has been changed to TCP.
 
-    -   The `net_udp_host` and `net_udp_port` options remained without change.
+  - The `net_udp_host` and `net_udp_port` options remained without change.
 
-    -   The added `net_ipc_host` and `net_ipc_port` options are available.
+  - The added `net_ipc_host` and `net_ipc_port` options are available.
 
-    By default, the IP of 127.0.0.1 and the port number of 6600 are used. For update, change the user application and the whatap-agent service configuration file. The changes are applied after restarting.
+  By default, the IP of 127.0.0.1 and the port number of 6600 are used. For update, change the user application and the whatap-agent service configuration file. The changes are applied after restarting.
 
-    1.  The _whatap.conf_ file of the user application has been changed.
+  1. The _whatap.conf_ file of the user application has been changed.
 
-    ```ini title='whatap.conf'
-    # Change the host.
-    net_ipc_host=127.0.0.1
-    # Change the port.
-    net_ipc_port=6601
-    ```
+  ```ini title='whatap.conf'
+  # Change the host.
+  net_ipc_host=127.0.0.1
+  # Change the port.
+  net_ipc_port=6601
+  ```
 
-    1.  The _whatap.conf_ file of the whatap-agent service has been changed.
+  1. The _whatap.conf_ file of the whatap-agent service has been changed.
 
-    ```bash
-    vi /usr/whatap/agent/whatap.conf
+  ```bash
+  vi /usr/whatap/agent/whatap.conf
 
-    # Change the port. 
-    net_ipc_port=6601
-    ```
+  # Change the port. 
+  net_ipc_port=6601
+  ```
 
-    1.  Restart
+  1. Restart
 
-    ```bash
-    service whatap-agent restart
-    ```
+  ```bash
+  service whatap-agent restart
+  ```
 
--   <Status>Change</Status> The agent naming convention has been changed.
+- <Status>Change</Status> The agent naming convention has been changed.
 
-    -   Previous: `{type}`-`{ip2}`-`{ip3}`-`{process}`
+  - Previous: `{type}`-`{ip2}`-`{ip3}`-`{process}`
 
-    -   Now: `{type}`-`{ip2}`-`{ip3}`-`{cmd}`-`{cmd_full}`
+  - Now: `{type}`-`{ip2}`-`{ip3}`-`{cmd}`-`{cmd_full}`
 
-    :::note
+  :::note
 
-    -   `{cmd}`: Process name. The value of the executable args[0].
+  - `{cmd}`: Process name. The value of the executable args[0].
 
-    -   `{cmd_full}`: All the lines of the commands are hashed. All of the executable args.
+  - `{cmd_full}`: All the lines of the commands are hashed. All of the executable args.
 
-    -   When using the same process and arguments, the agent name can be duplicated. The `app_name` option can be arbitrarily set in _whatap.conf_. For more information, see [the following](../../golang/install-agent#duplicate_appname). After configuration, be sure to restart the application.
+  - When using the same process and arguments, the agent name can be duplicated. The `app_name` option can be arbitrarily set in _whatap.conf_. For more information, see [the following](../../golang/install-agent#duplicate_appname). After configuration, be sure to restart the application.
 
-    :::
+  :::
 
--   <Status>Change</Status> Modified the memory usage.
+- <Status>Change</Status> Modified the memory usage.
 
-    The memory usage appears with the sum of `HeapInUse` and `StackInUse` in `runtime.MemStats`. 
+  The memory usage appears with the sum of `HeapInUse` and `StackInUse` in `runtime.MemStats`. 

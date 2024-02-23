@@ -9,103 +9,103 @@ February 14, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   Added the **spring-webflux-6.x** tracing.
+- Added the **spring-webflux-6.x** tracing.
+
+  ```ini title='whatap.conf'
+  weaving=webflux-6.0
+  ```
+
+- Displayed the database connection close in the step.
+
+  - List of the close displaying class data
+
+    - org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - org.apache.tomcat.dbcp.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - org.apache.tomcat.dbcp.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - com.zaxxer.hikari.pool.ProxyConnection.close()V
+
+  - You can add a class to display the database connection close by setting patterns (Default `true`).
 
     ```ini title='whatap.conf'
-    weaving=webflux-6.0
+    hook_connection_close_default_enabled=true
+    hook_connection_close_patterns=a.b.c.D
     ```
 
--   Displayed the database connection close in the step.
+- Added the JDBC URL display setting.
 
-    -   List of the close displaying class data
-
-        -   org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   org.apache.tomcat.dbcp.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   org.apache.tomcat.dbcp.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   com.zaxxer.hikari.pool.ProxyConnection.close()V
-
-    -   You can add a class to display the database connection close by setting patterns (Default `true`).
-
-        ```ini title='whatap.conf'
-        hook_connection_close_default_enabled=true
-        hook_connection_close_patterns=a.b.c.D
-        ```
-
--   Added the JDBC URL display setting.
-
-    -   When set to `jdbc_url_enabled=false`, the database connection information traced by the Java agent appears as a class rather than a URL (Default `true`).
-
-        ```ini title='whatap.conf'
-        jdbc_url_enabled=true
-        ```
-
--   Added the setting to display the database connection pool class.
-
-    -   Added the setting to display the class name of the database connection pool behind the JDBC URL data to additionally check the information of the connection pool (Default `false`).
-
-        ```ini title='whatap.conf'
-        trace_dbc_append_classname_enabled=false
-        ```
-
-    -   Example for displaying the database connection information in detail
-
-        Display of `jdbc_url` + "@class info" and connection close info
-
-        ```ini title='whatap.conf'
-        trace_dbc_append_classname_enabled=true
-        trace_dbc_close_enabled=true
-        trace_dbc_wrap_enabled=true
-        ```
-
--   Added the setting whether or not to connect the Kubernetes master agent (Default `false`).
+  - When set to `jdbc_url_enabled=false`, the database connection information traced by the Java agent appears as a class rather than a URL (Default `true`).
 
     ```ini title='whatap.conf'
-    kube_agent_connect_enabled=false
+    jdbc_url_enabled=true
     ```
 
--   (batch) Added the setting whether or not to collect active stacks (Default `false`).
+- Added the setting to display the database connection pool class.
+
+  - Added the setting to display the class name of the database connection pool behind the JDBC URL data to additionally check the information of the connection pool (Default `false`).
 
     ```ini title='whatap.conf'
-    active_stack_enabled=false
+    trace_dbc_append_classname_enabled=false
     ```
 
--   (batch) Added the tracking function by separating transactions to a batch job (Default `false`).
+  - Example for displaying the database connection information in detail
+
+    Display of `jdbc_url` + "@class info" and connection close info
 
     ```ini title='whatap.conf'
-    split_trace_enabled=false
+    trace_dbc_append_classname_enabled=true
+    trace_dbc_close_enabled=true
+    trace_dbc_wrap_enabled=true
     ```
 
--   (batch) Added the maximum step setting for the batch job's start transaction (Default `2000`).
+- Added the setting whether or not to connect the Kubernetes master agent (Default `false`).
 
-    ```ini title='whatap.conf'
-    trace_batch_main_step_max_count=2000
-    ```
+  ```ini title='whatap.conf'
+  kube_agent_connect_enabled=false
+  ```
 
--   (batch) Real-time separated transaction tracing example
-    ```ini title='whatap.conf'
-    trace_batch_main_step_max_count=2000
-    split_trace_enabled=true
-    ```
+- (batch) Added the setting whether or not to collect active stacks (Default `false`).
+
+  ```ini title='whatap.conf'
+  active_stack_enabled=false
+  ```
+
+- (batch) Added the tracking function by separating transactions to a batch job (Default `false`).
+
+  ```ini title='whatap.conf'
+  split_trace_enabled=false
+  ```
+
+- (batch) Added the maximum step setting for the batch job's start transaction (Default `2000`).
+
+  ```ini title='whatap.conf'
+  trace_batch_main_step_max_count=2000
+  ```
+
+- (batch) Real-time separated transaction tracing example
+  ```ini title='whatap.conf'
+  trace_batch_main_step_max_count=2000
+  split_trace_enabled=true
+  ```
 
 ## Update <sup><Status>Change</Status></sup>
 
--   **webflux-5.x** update of the open source plug-in with the built-in Java agent
+- **webflux-5.x** update of the open source plug-in with the built-in Java agent
 
--   Changed the fetch time of ResultSet to the nanotime of JVM.
+- Changed the fetch time of ResultSet to the nanotime of JVM.
 
--   When registering transactions with `service_patterns`, the transaction name is displayed in the form of `class#method`.
+- When registering transactions with `service_patterns`, the transaction name is displayed in the form of `class#method`.
 
--   When null SQL is delivered during SQL monitoring, **sql is null** is displayed in the step.
+- When null SQL is delivered during SQL monitoring, **sql is null** is displayed in the step.
 
--   (batch) Deleted the DeadLock.
+- (batch) Deleted the DeadLock.
 
 ## Bug Fixing <sup><Status>Fixed</Status></sup>
 
--   Fixed the double counting bug in the ResultSet wrapper.
+- Fixed the double counting bug in the ResultSet wrapper.
 
--   Fixed the Big Decimal collection bug in the SQL parameters.
+- Fixed the Big Decimal collection bug in the SQL parameters.

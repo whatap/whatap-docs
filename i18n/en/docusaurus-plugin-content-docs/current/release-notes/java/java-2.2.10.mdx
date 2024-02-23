@@ -9,43 +9,43 @@ June 29, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   Apache HttpClient5 tracing
+- Apache HttpClient5 tracing
 
--   logback-1.2.8 tracing
+- logback-1.2.8 tracing
 
-    ```ini title='whatap.conf'
-    # Default value 
-    # Application method
-    weaving=logback-1.2.8
+  ```ini title='whatap.conf'
+  # Default value 
+  # Application method
+  weaving=logback-1.2.8
 
-    # error_stack length to collect by the logback
-    logback_stack_depth=50
+  # error_stack length to collect by the logback
+  logback_stack_depth=50
 
-    # Whether or not to collect the console logs
-    logback_save_console_enabled=true
+  # Whether or not to collect the console logs
+  logback_save_console_enabled=true
 
-    # Whether or not to collect the appender logs
-    logback_save_appender_enabled=false
+  # Whether or not to collect the appender logs
+  logback_save_appender_enabled=false
 
-    # To collect only specific appneder logs, the delimiter is comma (,)
-    logback_save_appender_set=fileLogback,errorLogback,consoleLogback
-    ```
+  # To collect only specific appneder logs, the delimiter is comma (,)
+  logback_save_appender_set=fileLogback,errorLogback,consoleLogback
+  ```
 
-    :::note
+  :::note
 
-    In case of setting all appenders, the `logback_save_appender_set` configuration is unnecessary.
+  In case of setting all appenders, the `logback_save_appender_set` configuration is unnecessary.
 
-    :::
+  :::
 
--   Ribbon tracing
+- Ribbon tracing
 
-    ```ini title='whatap.conf'
-    # Application
-    weaving=ribbon
-    ```
+  ```ini title='whatap.conf'
+  # Application
+  weaving=ribbon
+  ```
 
 ## Bug Fixing <sup><Status>Fixed</Status></sup>
 
--   When tracing the weblogic-10.3 and tomcat 6 transactions, modified not to generate errors.
+- When tracing the weblogic-10.3 and tomcat 6 transactions, modified not to generate errors.
 
--   If the TPS of the application exceeds 500, modified not to increase the link tracing ID issuance rate.
+- If the TPS of the application exceeds 500, modified not to increase the link tracing ID issuance rate.

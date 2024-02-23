@@ -14,11 +14,11 @@ import TR from '@site/src/components/TR';
 
 To use the Node.js monitoring service, the monitoring agent must be installed on the monitored application. For installation, use NPM (Node Package Manager).
 
--   Install the WhaTap agent module in the active Node.js application directory.
+- Install the WhaTap agent module in the active Node.js application directory.
 
--   Write the configuration of WhaTap agent (_whatap.conf_).
+- Write the configuration of WhaTap agent (_whatap.conf_).
 
--   Run the Node.js service again.
+- Run the Node.js service again.
 
 {@include: ../getting-started/_create-project-v2.mdx} 
 
@@ -26,24 +26,24 @@ To use the Node.js monitoring service, the monitoring agent must be installed on
 
 ## Download agent
 
-1.  Install the agent in the active Node.js application directory.
+1. Install the agent in the active Node.js application directory.
 
-    ```bash
-    $ npm install --save whatap
-    ```
+   ```bash
+   $ npm install --save whatap
+   ```
 
-2.  Copy the _whatap.conf_ file in the _node_modules/whatap_ path and then paste it into the root path of the source code.
+2. Copy the _whatap.conf_ file in the _node_modules/whatap_ path and then paste it into the root path of the source code.
 
-3.  Go to the [WhaTap Monitoring Service](https://service.whatap.io).
+3. Go to the [WhaTap Monitoring Service](https://service.whatap.io).
 
-4.  Select the created project and then copy the following among the **_downloaded items from the agent_** in the **_Install guide_** section.
+4. Select the created project and then copy the following among the **_downloaded items from the agent_** in the **_Install guide_** section.
 
-    ```ini title='Example'
-    license={access key}
-    whatap.server.host={collection server IP}
-    ```
+   ```ini title='Example'
+   license={access key}
+   whatap.server.host={collection server IP}
+   ```
 
-5.  Paste it into the _whatap.conf_ file.
+5. Paste it into the _whatap.conf_ file.
 
 The host (`whatap.server.host`) address is the server address in which the WhaTap proxy has been installed. You can use a forward slash (/) as the delimiter to enter all addresses of the servers where the proxy server is running among the WhaTap servers.
 
@@ -52,15 +52,15 @@ The host (`whatap.server.host`) address is the server address in which the WhaTa
 
 The roles of each file that makes up the Node.js monitoring service are as follows:
 
--   _whatap.conf_: Sample of the agent configuration file. Copy the file and enter the access key.
+- _whatap.conf_: Sample of the agent configuration file. Copy the file and enter the access key.
 
--   _lib_: Agent and tracer program
+- _lib_: Agent and tracer program
 
--   _README.md_: Guide to the agent installation
+- _README.md_: Guide to the agent installation
 
--   _package.json_: Configuration file for the NPM module environment
+- _package.json_: Configuration file for the NPM module environment
 
--   _index.js_: Main export declaration file
+- _index.js_: Main export declaration file
 
 </details>
 
@@ -101,11 +101,11 @@ After installation, see [the following](install-check) to make sure there is no 
 
 In the following cases, set the file names excluding .conf.
 
--   In case of separating the projects for each environment
+- In case of separating the projects for each environment
 
--   In case the agent options are set differently
+- In case the agent options are set differently
 
--   In case of starting by pm2 in Cluster mode
+- In case of starting by pm2 in Cluster mode
 
 ```javascript
 process.env.WHATAP_CONF = 'whatapdev';
@@ -117,13 +117,13 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 The arguments that can be set by the `WHATAP_NAME` option are as follows.
 
--   **ipN**: ip0, ip1, ip2, ip3
+- **ipN**: ip0, ip1, ip2, ip3
 
--   **cluster**: Cluster ID
+- **cluster**: Cluster ID
 
--   **pid**: Process ID
+- **pid**: Process ID
 
--   **hostname**: Host name
+- **hostname**: Host name
 
 :::
 

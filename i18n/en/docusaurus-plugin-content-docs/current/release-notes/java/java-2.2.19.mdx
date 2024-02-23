@@ -7,40 +7,40 @@ pagination_next: release-notes/java/java-2_2_18
 
 October 10, 2023
 
--   <Status>Feature</Status> Traces quarkus-reactive-1.13.
+- <Status>Feature</Status> Traces quarkus-reactive-1.13.
 
-    _quarkus-resteasy-reactive-1.13.6.FINAL.jar_ or later
+  _quarkus-resteasy-reactive-1.13.6.FINAL.jar_ or later
 
-    ```ini title='whatap.conf'
-    weaving=quarkus-reactive-1.13
-    ```
+  ```ini title='whatap.conf'
+  weaving=quarkus-reactive-1.13
+  ```
 
--   <Status>Feature</Status> Traces quarkus-reactive-2.10.
+- <Status>Feature</Status> Traces quarkus-reactive-2.10.
 
-    _quarkus-resteasy-reactive-2.10.0.FINAL.jar_ or later
+  _quarkus-resteasy-reactive-2.10.0.FINAL.jar_ or later
 
-    ```ini title='whatap.conf'
-    weaving=quarkus-reactive-2.10
-    ```
+  ```ini title='whatap.conf'
+  weaving=quarkus-reactive-2.10
+  ```
 
--   <Status>Feature</Status> Traces active stacks for the Webflux service in Spring Boot 2.5 or later.
+- <Status>Feature</Status> Traces active stacks for the Webflux service in Spring Boot 2.5 or later.
 
--   <Status>Feature</Status> Traces the thread IDs for transactions.
+- <Status>Feature</Status> Traces the thread IDs for transactions.
 
-    ```ini title='whatap.conf'
-    # default: false
-    trace_thread_id_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # default: false
+  trace_thread_id_enabled=false
+  ```
 
--   <Status>Changed</Status> Enabled collection of metrics for Java applications (<code>java_memory</code>, <code>java_gc</code>, and <code>java_os</code>).
+- <Status>Changed</Status> Enabled collection of metrics for Java applications (<code>java_memory</code>, <code>java_gc</code>, and <code>java_os</code>).
 
-    ```ini title='whatap.conf'
-    # default: true
-    perfx_java_enabled=true
-    ```
+  ```ini title='whatap.conf'
+  # default: true
+  perfx_java_enabled=true
+  ```
 
--   <Status>Changed</Status> Followed up the system property values in Java 20.
+- <Status>Changed</Status> Followed up the system property values in Java 20.
 
--   <Status>Changed</Status> Changed the ASM API version for Java 6, Java 7, and Java 8 from ASM5 to ASM6.
+- <Status>Changed</Status> Changed the ASM API version for Java 6, Java 7, and Java 8 from ASM5 to ASM6.
 
--   <Status>Fixed</Status> Fixed the bug where the log for a wrong version appears when tracing spring-boot-3.0.
+- <Status>Fixed</Status> Fixed the bug where the log for a wrong version appears when tracing spring-boot-3.0.

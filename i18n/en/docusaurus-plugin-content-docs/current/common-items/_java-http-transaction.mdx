@@ -2,45 +2,59 @@
 
 {@include: ../common-items/_transaction-profile-http.mdx}
 
--   **trace_transaction_name_key** <span class='type'>String</span>
+- **trace_transaction_name_key** <span class='type'>String</span>
 
-    If you set the HTTP request parameter value in the option, the parameter value is extracted and added to the end of the transaction name. 
+  If you set the HTTP request parameter value in the option, the parameter value is extracted and added to the end of the transaction name. 
 
-    For example, when calling the `/api/test` URL with `paramKey` as an HTTP parameter, if you set it as in the following example, the transaction name in the trace history appears as `/api/test$paramKey={value}`. However, multiple parameters cannot be registered.
+  For example, when calling the `/api/test` URL with `paramKey` as an HTTP parameter, if you set it as in the following example, the transaction name in the trace history appears as `/api/test$paramKey={value}`. However, multiple parameters cannot be registered.
 
-    ```ini title='whatap.conf'
-    # example
-    trace_transaction_name_key=paramKey
-    ```
+  ```ini title='whatap.conf'
+  # example
+  trace_transaction_name_key=paramKey
+  ```
 
 {@include: ../common-items/_transaction-trace-common.mdx}
 
--   **recursive_max** <span class='type'>Int</span>
+- **recursive_max** <span class='type'>Int</span>
 
-    Default `1000000`
+  Default `1000000`
 
-    This option is used to detect whether any transaction has been recursively called. Set the criteria for issuing event notifications by counting the number of recursive calls that are caused by a single transaction.
+  This option is used to detect whether any transaction has been recursively called. Set the criteria for issuing event notifications by counting the number of recursive calls that are caused by a single transaction.
 
-    :::note
+  :::note
 
-    It targets the HTTP URL recursive calls. It counts the recursive calls delivered through jsp:forward.
+  It targets the HTTP URL recursive calls. It counts the recursive calls delivered through jsp:forward.
 
-    :::
+  :::
 
--   **hook_httpservlet_classes** <span class='type'>String</span>
+- **hook_httpservlet_classes** <span class='type'>String</span>
 
-    It additionally sets END POINT for HTTP transactions. For the first 2 parameters of the method, only `HttpServletRequest` and `HttpServletResponse` can be set.
+  It additionally sets END POINT for HTTP transactions. For the first 2 parameters of the method, only `HttpServletRequest` and `HttpServletResponse` can be set.
 
--   **hook_jsp_patterns** <span class='type'>String</span>
+- **hook_jsp_patterns** <span class='type'>String</span>
 
-    Default `org.apache.jasper.servlet.JspServlet.serviceJspFile`
+  Default `org.apache.jasper.servlet.JspServlet.serviceJspFile`
 
-    Set the method to load the JSP files. It displays the JSP information returned as a result of the transaction call in a trace. Default values are automatically added to the settings added through this option.
+  Set the method to load the JSP files. It displays the JSP information returned as a result of the transaction call in a trace. Default values are automatically added to the settings added through this option.
 
--   **trace_ignore_url_set** <span class='type'>String</span>
+- **trace_ignore_url_set** <span class='type'>String</span>
 
-    It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+  It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
--   **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span>
 
-    It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+  It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+- **ignore_http_method** <span class='type'>String</span>
+
+  Default `PATCH,OPTIONS,HEAD,TRACE`
+
+  Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
+
+  ```ini title="whatap.conf"
+  # e.g. tracing the transactions whose http_method is OPTIONS or HEAD
+  ignore_http_method=PATCH,TRACE
+
+  # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
+  ignore_http_method=OPTIONS,HEAD
+  ```

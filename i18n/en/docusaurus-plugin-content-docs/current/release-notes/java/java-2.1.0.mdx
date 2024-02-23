@@ -20,9 +20,9 @@ The agent version scheme has been changed to 2.1.x.
 
 From whatap.agent-2.1.0, the configuration of the Java agent package has been changed.
 
--   _whatap.agent-2.1.0.jar_: jar for the agent core
--   _whatap.agent.proxy-2.1.0.jar_: Direct connection to the WhaTap server is difficult, so bypass connection is supported.
--   _whatap-logsink-lz4-1.7.0.jar_: Plug module to compress data in the log monitoring (LogSink) (GZip provided in JDK is the default)
+- _whatap.agent-2.1.0.jar_: jar for the agent core
+- _whatap.agent.proxy-2.1.0.jar_: Direct connection to the WhaTap server is difficult, so bypass connection is supported.
+- _whatap-logsink-lz4-1.7.0.jar_: Plug module to compress data in the log monitoring (LogSink) (GZip provided in JDK is the default)
 
 ### Expansion of Java support range
 
@@ -81,8 +81,8 @@ In WhaTap Labs, the patterns of the service or HttpClient URL have been changed 
 
 URL pattern configuration targets
 
--   Service URL
--   HttpClient URL
+- Service URL
+- HttpClient URL
 
 :::note
 
@@ -103,7 +103,7 @@ It changed the agent log's output from the (date)(PID)(message) format to the (d
 
 It changed to use the plug-in to trace the app extra counter. However, the agent requires implementation of the plug-in, ExtraCounter.x.
 
--   _`${WHATAP}`/plugin/ExtraCounter.x_
+- _`${WHATAP}`/plugin/ExtraCounter.x_
 
 ```
 $pack.put("mycount",100);
@@ -262,16 +262,16 @@ text_zip_enabled=false (default value)
 
 The OSHI (Operating System and Hardware Information) library collects the system infrastructure metrics and is frequently updated. Accordingly, it has been selected as a library for collecting the system performance metrics. However, it is available only in Java8 or later.
 
--   `oshi_enabled=false` (default value)
--   Available only in JDK8 or later
--   Can measure the usage and alert for disk="."
+- `oshi_enabled=false` (default value)
+- Available only in JDK8 or later
+- Can measure the usage and alert for disk="."
 
 #### Deprecation for the Sigar function
 
 It has not been updated for more than 5 years, so it was excluded from the initial settings.
 
--   sigar_enabled=false (default value)
--   Only aix included for lib1
+- sigar_enabled=false (default value)
+- Only aix included for lib1
 
 To use the Sigar function, explicitly set as `sigar_enabled=true`.
 

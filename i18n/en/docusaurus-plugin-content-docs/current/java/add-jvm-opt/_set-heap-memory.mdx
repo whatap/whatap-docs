@@ -4,26 +4,26 @@ WhaTap's Java Monitoring provides the function to view the status of heap occupa
 
 Java versions 6 to 8 support basic functions without the JVM options. However, for some Java versions, the JVM options must be applied as follows:
 
--   Java 9 to Java 15
+- Java 9 to Java 15
 
-    ```bash
-    -Djdk.attach.allowAttachSelf=true
-    ```
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  ```
 
-    ```bash title="example"
-    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
-    ```
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+  ```
 
--   Java 16 or later
+- Java 16 or later
 
-    ```bash
-    -Djdk.attach.allowAttachSelf=true
-    --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
-    ```
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+  ```
 
-    ```bash title="example"
-    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
-    ```
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+  ```
 
 :::note
 

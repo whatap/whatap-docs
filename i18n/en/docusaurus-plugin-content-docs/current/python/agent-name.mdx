@@ -14,27 +14,27 @@ tags:
 
 :::note
 
--   In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
+- In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
 
 :::
 
--   **object_name** <span class='type'>String</span>
+- **object_name** <span class='type'>String</span>
 
-    Default `{type}-{ip2}-{ip3}-{process}`
+  Default `{type}-{ip2}-{ip3}-{process}`
 
-    It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME. 
+  It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME. 
 
-    | Name         | Description                                   |
-    | ------------ | --------------------------------------------- |
-    | `{type}`     | Use the value set in whatap.app_name.         |
-    | `{ip#}`      | When IPs are divided, the #th digit is used.  |
-    | `{process}`  | Use the value set in whatap.app_process_name. |
-    | `{hostname}` | The server host name is used.                 |
+  | Name         | Description                                   |
+  | ------------ | --------------------------------------------- |
+  | `{type}`     | Use the value set in whatap.app_name.         |
+  | `{ip#}`      | When IPs are divided, the #th digit is used.  |
+  | `{process}`  | Use the value set in whatap.app_process_name. |
+  | `{hostname}` | The server host name is used.                 |
 
--   **app_name** <span class='type'>String</span>
+- **app_name** <span class='type'>String</span>
 
-    It is a component used in the agent naming (ONAME) scheme to identify applications. It corresponds to the `{type}` among the `object_name` options.
+  It is a component used in the agent naming (ONAME) scheme to identify applications. It corresponds to the `{type}` among the `object_name` options.
 
--   **app_process_name** <span class='type'>String</span>
+- **app_process_name** <span class='type'>String</span>
 
-    It is a component used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. The value corresponds to the `{process}` of the `object_name`.  
+  It is a component used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. The value corresponds to the `{process}` of the `object_name`.  

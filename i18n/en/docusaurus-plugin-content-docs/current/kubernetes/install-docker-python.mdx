@@ -18,9 +18,9 @@ This process applies the WhaTap monitoring agent to the Python application runni
 
 :::note 
 
--   EKS Fargate is to be supported later. 
+- EKS Fargate is to be supported later. 
 
--   To help you understand the Python application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
+- To help you understand the Python application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
 
 :::
 
@@ -89,23 +89,23 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
 
 </details>
 
-1.  Set the container's working directory with the `WHATAP_HOME` environment variable. Create the agent log and configuration files in the path. 
+1. Set the container's working directory with the `WHATAP_HOME` environment variable. Create the agent log and configuration files in the path. 
 
-    ```bash
-    export WHATAP_HOME=${PWD}
-    ```
+   ```bash
+   export WHATAP_HOME=${PWD}
+   ```
 
-2.  Execute the following command to create and configure the _whatap.conf_ file in the path set as `WHATAP_HOME`. Variables marked with `$` are required for agent configuration and are set through the _yaml_ file for releasing the application.
+2. Execute the following command to create and configure the _whatap.conf_ file in the path set as `WHATAP_HOME`. Variables marked with `$` are required for agent configuration and are set through the _yaml_ file for releasing the application.
 
-    ```bash
-    whatap-setting-config \
-    --host $whatap_server_host \
-    --license $license \
-    --app_name $app_name \
-    --app_process_name $app_process_name
-    ```
+   ```bash
+   whatap-setting-config \
+   --host $whatap_server_host \
+   --license $license \
+   --app_name $app_name \
+   --app_process_name $app_process_name
+   ```
 
-3.  Run the agent by adding `whatap-start-agent` before the application startup command as follows: 
+3. Run the agent by adding `whatap-start-agent` before the application startup command as follows: 
 
 ```bash
 whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
@@ -123,9 +123,9 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::note 
 
--   As an example of the _yaml_ file, see [Container environment variable settings](#k8s-env) as follows:
+- As an example of the _yaml_ file, see [Container environment variable settings](#k8s-env) as follows:
 
--   The `license` is the user authentication information of WhaTap. **Do not expose to outside**.
+- The `license` is the user authentication information of WhaTap. **Do not expose to outside**.
 
 :::
 
@@ -150,19 +150,19 @@ CMD ["./entrypoint.sh"]
 
 The following settings are optional and must be used if necessary. In addition to the following additional settings in the configuration file (_entrypoint.sh_), log and transaction-related settings are also configurable. For additional settings, see [the following](https://docs.whatap.io/python/set-agent). 
 
--   **Agent grouping** 
+- **Agent grouping** 
 
-    ```bash
-    echo "okind=$okind" >> whatap.conf
-    ```
+  ```bash
+  echo "okind=$okind" >> whatap.conf
+  ```
 
--   **Enabling the log collection** 
+- **Enabling the log collection** 
 
-    ```bash
-    echo "logsink_enabled=true" >> whatap.conf
-    echo "logsink_trace_enabled=true" >> whatap.conf
-    echo "trace_logging_enabled=true" >> whatap.conf
-    ```
+  ```bash
+  echo "logsink_enabled=true" >> whatap.conf
+  echo "logsink_trace_enabled=true" >> whatap.conf
+  echo "trace_logging_enabled=true" >> whatap.conf
+  ```
 
 ## Configuring the container environment variables {#k8s-env}
 
@@ -228,26 +228,26 @@ spec:
 
 **Roles of environment variables**
 
--   `license`: Key for agent authentication.
+- `license`: Key for agent authentication.
 
--   `whatap_server_host`: Host IP of the WhaTap collection server
+- `whatap_server_host`: Host IP of the WhaTap collection server
 
--   `app_name`: Name to identify the agent for the application. For more information about the agent identification, see [the following](https://docs.whatap.io/python/agent-name).
+- `app_name`: Name to identify the agent for the application. For more information about the agent identification, see [the following](https://docs.whatap.io/python/agent-name).
 
--   `app_process_name`: Set the target processes such as CPU and Heap Memory. For example, there are uwsgi and gunicorn.
+- `app_process_name`: Set the target processes such as CPU and Heap Memory. For example, there are uwsgi and gunicorn.
 
--   `okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
+- `okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
 
--   `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
+- `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
 
--   `NODE_NAME`: Collects the name of the node where the current Pod is running.
+- `NODE_NAME`: Collects the name of the node where the current Pod is running.
 
--   `POD_NAME`: Collects the name of the current Pod.
+- `POD_NAME`: Collects the name of the current Pod.
 
 :::
 
 ## Checking the agent installation
 
--   To check whether the agent has been installed, go to **_Dashboard_** > **_Application Service Dashboard_**.
+- To check whether the agent has been installed, go to **_Dashboard_** > **_Application Service Dashboard_**.
 
--   Run the `ps -ef | grep whatap_python` command in the container to check whether the Whatap Python service is running normally. 
+- Run the `ps -ef | grep whatap_python` command in the container to check whether the Whatap Python service is running normally. 

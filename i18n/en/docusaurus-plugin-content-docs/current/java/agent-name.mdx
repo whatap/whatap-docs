@@ -13,7 +13,7 @@ tags:
 
 :::note
 
--   In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
+- In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
 
 :::
 
@@ -21,10 +21,10 @@ tags:
 
 If there is no setting for `whatap.oname` as an JVM option, agent names are automatically assigned in the following priority.
 
-1.  `whatap.type` is identified.
-2.  When `whatap.type` is a servlet container, the port used by the application is identified.
-3.  If the port cannot be identified, the process ID (PID) is retrieved.
-4.  By adding the third and fourth IPv4 addresses to the identified information, the final name is determined.
+1. `whatap.type` is identified.
+2. When `whatap.type` is a servlet container, the port used by the application is identified.
+3. If the port cannot be identified, the process ID (PID) is retrieved.
+4. By adding the third and fourth IPv4 addresses to the identified information, the final name is determined.
 
 For example, if **Tomcat** is started with the port **8080** on a server whose IP address is 10.11.**12**.**13**, the agent name is automatically assigned with `TC-12-13-8080`.
 
@@ -54,8 +54,8 @@ Instead of the name that has been automatically assigned, you can enter the name
 
 :::note
 
--   In the scale out environment of the cloud, VM can be copied and used. Thus, it is important that object names are automatically assigned.
--   If two VPC environments have been created and the network has been set to use the same private IP, the two VPCs must not be duplicated. For example, it can be separated as another project or the `-Dwhatap.name` option can be set by combining the name variables in different ways.
+- In the scale out environment of the cloud, VM can be copied and used. Thus, it is important that object names are automatically assigned.
+- If two VPC environments have been created and the network has been set to use the same private IP, the two VPCs must not be duplicated. For example, it can be separated as another project or the `-Dwhatap.name` option can be set by combining the name variables in different ways.
 
 :::
 

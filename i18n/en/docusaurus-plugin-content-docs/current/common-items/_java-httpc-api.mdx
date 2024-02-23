@@ -1,49 +1,49 @@
--   **profile_error_httpc_time_max** <span class='type'>Int</span>
+- **profile_error_httpc_time_max** <span class='type'>Int</span>
 
-    Default `10000`
+  Default `10000`
 
-    If the HTTPC execution time exceeds the set value, it is treated as TOO SLOW error. If it is set to `0`, it is not treated as an error.
+  If the HTTPC execution time exceeds the set value, it is treated as TOO SLOW error. If it is set to `0`, it is not treated as an error.
 
--   **profile_httpc_resource_enabled** <span class='type'>Boolean</span>
+- **profile_httpc_resource_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When collecting HTTP call steps from the transaction trace, the CPU and memory usages in the step is traced.
+  When collecting HTTP call steps from the transaction trace, the CPU and memory usages in the step is traced.
 
--   **profile_position_httpc** <span class='type'>Boolean</span>
+- **profile_position_httpc** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It records the stack traces at the execution time of HTTPC.
+  It records the stack traces at the execution time of HTTPC.
 
--   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to parse and normalize HTTPC URLs for transactions.
+  It enables the function to parse and normalize HTTPC URLs for transactions.
 
--   **trace_httpc_normalize_urls** <span class='type'>String</span>
+- **trace_httpc_normalize_urls** <span class='type'>String</span>
 
-    Set the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
+  Set the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
 
-    :::note
+  :::note
 
-    For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+  For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
 
-    :::
+  :::
 
--   **hook_httpc_patterns** <span class='type'>String</span>
+- **hook_httpc_patterns** <span class='type'>String</span>
 
-    Set the `full package class name`.`method` for HTTP outbound calls. Register and use the full path of the method that performs HTTP calls. After registration, you need to redefine the class or restart the agent.
+  Set the `full package class name`.`method` for HTTP outbound calls. Register and use the full path of the method that performs HTTP calls. After registration, you need to redefine the class or restart the agent.
 
-    ```ini title='whatap.conf'
-    hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
-    ```
+  ```ini title='whatap.conf'
+  hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
+  ```
 
-    :::note
+  :::note
 
-    -   To register multiple classes, use comma (,) as the delimiter. 
+  - To register multiple classes, use comma (,) as the delimiter. 
 
-    -   Only asterisk (\*) can be used as the wildcard, regular expressions cannot be used.
+  - Only asterisk (\*) can be used as the wildcard, regular expressions cannot be used.
 
-    :::
+  :::

@@ -11,30 +11,30 @@ tags:
 
 Access the Admin Console to add JVM options in the WebSphere application server environment.
 
-1.  Log in the Admin Console in your web browser.
+1. Log in the Admin Console in your web browser.
 
-2.  Select **_Environment_** > **_Virtual Hosts_** > **_default host_** > **_Host Aliases_** and then check the port number of the server to install the agent to.
+2. Select **_Environment_** > **_Virtual Hosts_** > **_default host_** > **_Host Aliases_** and then check the port number of the server to install the agent to.
 
-    ![WebSphere port](https://img.whatap.io/media/agent_java/install/330.png)
+   ![WebSphere port](https://img.whatap.io/media/agent_java/install/330.png)
 
-3.  Go to **_Servers_** > **_Server Types_** > **_Websphere application servers_** and then select a server to install the agent to.
+3. Go to **_Servers_** > **_Server Types_** > **_Websphere application servers_** and then select a server to install the agent to.
 
-    ![WebSpherer application servers](https://img.whatap.io/media/agent_java/install/300.png)
+   ![WebSpherer application servers](https://img.whatap.io/media/agent_java/install/300.png)
 
-4.  Select the **_Configuration_** tab on the selected server screen and then select **_Java and Process Management_** > **_Process definition_** in the **_Server Infrastructure_** section.
+4. Select the **_Configuration_** tab on the selected server screen and then select **_Java and Process Management_** > **_Process definition_** in the **_Server Infrastructure_** section.
 
-    ![WebSphere Configuration](https://img.whatap.io/media/agent_java/install/310.png)
+   ![WebSphere Configuration](https://img.whatap.io/media/agent_java/install/310.png)
 
-5.  Among the menus on the right, select **_Additional Properties_** > **_Java Virtual Machine_**.
+5. Among the menus on the right, select **_Additional Properties_** > **_Java Virtual Machine_**.
 
-6.  In the **_Configuration_** tab, add `-javaagent` and `-Dwhatap.port` to the **_Generic JVM arguments_** field.
+6. In the **_Configuration_** tab, add `-javaagent` and `-Dwhatap.port` to the **_Generic JVM arguments_** field.
 
-    ```bash
-    -javaagent:/whatap/whatap.agent-X.Y.Z.jar 
-    -Dwhatap.port={port number} ## Port number of the item 2 ##
-    ```
+   ```bash
+   -javaagent:/whatap/whatap.agent-X.Y.Z.jar 
+   -Dwhatap.port={port number} ## Port number of the item 2 ##
+   ```
 
-    ![Add JVM arguments](https://img.whatap.io/media/agent_java/install/340.png)
+   ![Add JVM arguments](https://img.whatap.io/media/agent_java/install/340.png)
 
 :::note
 

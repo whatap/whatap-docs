@@ -1,0 +1,85 @@
+---
+id: changes-db-xos-metrics-guide
+title: XOS2 metric disposal notification
+description: In the database monitoring, two CPU metrics provided through the XOS agent are to be integrated and provided starting from DBX agent v1.7.0.
+tags:
+  - Database
+  - XOS agent
+displayed_sidebar: dbSidebar
+---
+
+By installing the XOS agent on your database server, you can monitor the status of the server's resources. For the collected key metrics, see the following documents:
+
+:::note
+
+- Check the <Link to="https://docs.whatap.io/postgresql/instance-monitoring#column-info" target="_blank"><Cmdname sid="instance_monitoring" /></Link> - <b>Process information</b> tab.
+
+- Metrics of the <Link to="https://docs.whatap.io/postgresql/metrics-data-list" target="_blank">Indicators</Link> - <b>XOS</b> category
+
+:::
+
+## Changes in the XOS metric
+
+Database monitoring provides two metrics for CPU usage: `CPU(xos)` and `CPU(xos2)`. In DBX agent 1.7.0 or later, both metrics are to be integrated into one.
+
+|         Metric name before change        | Metric name after change |       Unit      |
+| :--------------------------------------: | :----------------------: | :-------------: |
+|        `cpu(xos2)`<br/>`cpu(xos)`        |        `cpu(xos)`        | Utilization (%) |
+|   `cpu_idle(xos2)`<br/>`cpu_idle(xos)`   |      `cpu_idle(xos)`     |        %        |
+|    `cpu_sys(xos2)`<br/>`cpu_sys(xos)`    |      `cpu_sys(xos)`      |        %        |
+|   `cpu_user(xos2)`<br/>`cpu_user(xos)`   |      `cpu_user(xos)`     |        %        |
+| `cpu_iowait(xos2)`<br/>`cpu_iowait(xos)` |     `cpu_iowait(xos)`    |        %        |
+
+:::note
+
+In DBX agent 1.7.0 or earlier, if the value of the `cpu(xos)` metric is 9000, the value of the `cpu(xos2)` metric has been collected as 90.
+
+:::
+
+After updating the DBX agent to version 1.7.0, if you have configured alert notifications or configured a dashboard with existing metrics, change the metrics settings. The threshold values set in <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> are automatically converted. Among the alert notifications you have configured, check whether the notifications using the above five metrics have been converted properly. See the following:
+
+## Updating the DBX agent
+
+In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_update" className="uitext" />, update the agent 1.7.0 or earlier.
+
+<ImgLang img='changes/refer-db-agent-update-170.png' desc='Update agent' />
+
+:::note
+
+For more information about the agent update, see [the following](../postgresql/agent-manage).
+
+:::
+
+## Checking the changed metrics
+
+After updating the DBX agent, check whether the `cpu(xos2)` metric has been changed to `cpu(xos)` under the <Cmdname sid="database" className="uitext" /> tab in <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />.
+
+- **Before update of the DBX agent**
+
+  <ImgLang img='changes/refer-db-alert-xos2.png' desc='Event configuration' />
+
+- **After updating the DBX agent**
+
+  <ImgLang img='changes/refer-db-alert-xos.png' desc='Event configuration' />
+
+:::tip
+
+The user-configured metrics notifications and dashboard settings must be modified manually.
+
+- In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, under the <Cmdname sid="metrics" className="uitext" /> tab, change the event set to <code>cpu(xos2)</code> to <code>cpu(xos)</code>.
+
+- In the following menu path, check whether there are any settings that need to be changed from `cpu(xos2)` to `cpu(xos)`.
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="flexboard" className="uitext" />
+
+:::
+
+:::note
+
+- If the metric, `cpu(xos)` on the dashboard appears differently from the previous after the regular service release in March (2024.3.27 18:00), update the DBX agent to version 1.7.0 or later. For more information about the agent update, see [the following](../postgresql/agent-manage).
+
+- If you need any help, contact us through the ![Chat Contact icon](/img/ico-help.svg) **Chat Contact** at the upper right of the [Whatap Monitoring Service](https://service.whatap.io) screen.
+
+:::

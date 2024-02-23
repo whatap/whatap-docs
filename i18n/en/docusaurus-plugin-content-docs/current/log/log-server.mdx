@@ -27,63 +27,21 @@ The following configuration requires restart of the agent.
 
 ### Linux Shell
 
--   **_Basic installation_**
+- **_Basic installation_**
 
-    ```bash title='Linux Shell'
-    export LOGFILES=/some/path/file1,/some/other/file2
-    echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    ```
+  ```bash title='Linux Shell'
+  export LOGFILES=/some/path/file1,/some/other/file2
+  echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
 
--   **_Install with Category_**
+- **_Install with Category_**
 
-    ```bash title='Linux Shell' {7-12,14,15,25,26} showLineNumbers
-    cd /usr/whatap/infra
-    sudo mkdir extension
+  ```bash title='Linux Shell' {7-12,14,15,25,26} showLineNumbers
+  cd /usr/whatap/infra
+  sudo mkdir extension
 
-    cat >extension/logsink.conf<<EOL
-    [[inputs.logsink]]
-      category = "serverlog"
-      ## Whether or not to send the data with separate log generation statistics
-      stats_enabled = true 
-      ## Category for log generation statistics
-      stats_category = "logsink_stats"
-      ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
-      excludeNames = [ ".gz",".zip" ] 
-      [[inputs.logsink.file]]
-        ## When setting a log file, you can set the date pattern (strftime.org).
-        path = "/some/path/%Y-%m-%d/.log" 
-        disabled = false
-        encoding = "utf-8"
-
-      [[inputs.logsink.file]]
-        path = "/some/other/log"
-        disabled = false
-        encoding = "utf-8"
-
-      [[inputs.logsink.file]]
-        ## When searching for the keyword in the line-by-line log, merge it with the previous log.
-        nowrap_keywords = ["Caused by:", "Test"]EOL
-
-    sudo service whatap-infra restart
-    ```
-
-### Windows Powershell
-
--   **_Basic installation_**
-
-    ```bash title='Windows Powershell'
-    $LOGFILES="c:\\whatap\\logs\\%Y-%m-%d\\*.log,c:\\whatap\\logs\\*.log"
-    Add-Content "c:\Program Files\WhatapInfra\whatap.conf" -Value "logsink.files=$LOGFILES"
-    ```
-
--   **_Install with Category_**
-
-    ```bash title='Windows Powershell' {7-11,14,15,20,21} showLineNumbers
-    # Require an Administarotr role
-    New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
-
-    $contentToAdd = @"
-    [[inputs.logsink]]
+  cat >extension/logsink.conf<<EOL
+  [[inputs.logsink]]
     category = "serverlog"
     ## Whether or not to send the data with separate log generation statistics
     stats_enabled = true 
@@ -92,45 +50,87 @@ The following configuration requires restart of the agent.
     ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
     excludeNames = [ ".gz",".zip" ] 
     [[inputs.logsink.file]]
-    ## When setting a log file, you can set the date pattern (strftime.org).
-    path = "c:\\whatap\\logs%Y-%m-%d_.log"
-    disabled = false
-    encoding = "utf-8"
+      ## When setting a log file, you can set the date pattern (strftime.org).
+      path = "/some/path/%Y-%m-%d/.log" 
+      disabled = false
+      encoding = "utf-8"
 
     [[inputs.logsink.file]]
-    ## When searching for the keyword in the line-by-line log, merge it with the previous log. 
-    nowrap_keywords = ["Caused by:", "Test"]
-    "@
+      path = "/some/other/log"
+      disabled = false
+      encoding = "utf-8"
 
-    New-Item -path "C:\Program Files\WhatapInfra\extension" -name "logsink.conf" -type "file" -value $contentToAdd -Force
+    [[inputs.logsink.file]]
+      ## When searching for the keyword in the line-by-line log, merge it with the previous log.
+      nowrap_keywords = ["Caused by:", "Test"]EOL
 
-    Restart-Service "Whatap Infra"
-    ```
+  sudo service whatap-infra restart
+  ```
+
+### Windows Powershell
+
+- **_Basic installation_**
+
+  ```bash title='Windows Powershell'
+  $LOGFILES="c:\\whatap\\logs\\%Y-%m-%d\\*.log,c:\\whatap\\logs\\*.log"
+  Add-Content "c:\Program Files\WhatapInfra\whatap.conf" -Value "logsink.files=$LOGFILES"
+  ```
+
+- **_Install with Category_**
+
+  ```bash title='Windows Powershell' {7-11,14,15,20,21} showLineNumbers
+  # Require an Administarotr role
+  New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
+
+  $contentToAdd = @"
+  [[inputs.logsink]]
+  category = "serverlog"
+  ## Whether or not to send the data with separate log generation statistics
+  stats_enabled = true 
+  ## Category for log generation statistics
+  stats_category = "logsink_stats"
+  ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
+  excludeNames = [ ".gz",".zip" ] 
+  [[inputs.logsink.file]]
+  ## When setting a log file, you can set the date pattern (strftime.org).
+  path = "c:\\whatap\\logs%Y-%m-%d_.log"
+  disabled = false
+  encoding = "utf-8"
+
+  [[inputs.logsink.file]]
+  ## When searching for the keyword in the line-by-line log, merge it with the previous log. 
+  nowrap_keywords = ["Caused by:", "Test"]
+  "@
+
+  New-Item -path "C:\Program Files\WhatapInfra\extension" -name "logsink.conf" -type "file" -value $contentToAdd -Force
+
+  Restart-Service "Whatap Infra"
+  ```
 
 ### Configuring options
 
--   `stats_enabled`: Set whether or not to collect the collection status data. The default value is `false`. The value must be set to `true`. If set to `true`, statistical data is generated in the category (`logsink_stats`) set in the following `stats_category`.
+- `stats_enabled`: Set whether or not to collect the collection status data. The default value is `false`. The value must be set to `true`. If set to `true`, statistical data is generated in the category (`logsink_stats`) set in the following `stats_category`.
 
--   `stats_category`: Set the metrics category to store the collection status data in. The value must be set to `logsink_stats`. Statistical data fields are as follows:
+- `stats_category`: Set the metrics category to store the collection status data in. The value must be set to `logsink_stats`. Statistical data fields are as follows:
 
-    -   `file`
-    -   `checkInterval`
-    -   `encoding`
-    -   `filepos`
-    -   `checkedLocalTime`
-    -   `lastupdatedLocalTime`
-    -   `fileSize`
-    -   `error`
-    -   `firstCheck`
-    -   `transferBytes`
+  - `file`
+  - `checkInterval`
+  - `encoding`
+  - `filepos`
+  - `checkedLocalTime`
+  - `lastupdatedLocalTime`
+  - `fileSize`
+  - `error`
+  - `firstCheck`
+  - `transferBytes`
 
--   `excludeNames`: By including asterisks (\*) in the log file path, you can set the file name to exclude non log files. You can set multiple values using comma (,) as the delimiter.
+- `excludeNames`: By including asterisks (\*) in the log file path, you can set the file name to exclude non log files. You can set multiple values using comma (,) as the delimiter.
 
-    ```ini title='Example'
-    excludeNames = [ ".gz",".zip" ]
-    ```
+  ```ini title='Example'
+  excludeNames = [ ".gz",".zip" ]
+  ```
 
--   `nowrap_keywords`: While searching logs by line, if any keyword is detected by a specified option value, it is merged with the previous log.
+- `nowrap_keywords`: While searching logs by line, if any keyword is detected by a specified option value, it is merged with the previous log.
 
 ## Enabling the log monitoring
 

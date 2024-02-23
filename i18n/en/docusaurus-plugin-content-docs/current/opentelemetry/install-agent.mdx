@@ -148,21 +148,21 @@ service:
       level: debug #activate debug mode
 ```
 
--   End point (`endpoint`) setting: `127.0.0.1:6600`
+- End point (`endpoint`) setting: `127.0.0.1:6600`
 
-    The default port for local agents is 6600.
+  The default port for local agents is 6600.
 
--   `tls.secure` setting: `insecure: true`
+- `tls.secure` setting: `insecure: true`
 
--   The gzip compression settings are used by default. (gzip is used)
+- The gzip compression settings are used by default. (gzip is used)
 
 :::info
 
 For more information about the OpenTelemetry Collector installation, see the following link.
 
--   [Install the Collector](https://opentelemetry.io/docs/collector/installation/)
+- [Install the Collector](https://opentelemetry.io/docs/collector/installation/)
 
--   [Building a custom collector](https://opentelemetry.io/docs/collector/custom-collector/)
+- [Building a custom collector](https://opentelemetry.io/docs/collector/custom-collector/)
 
 :::
 
@@ -172,7 +172,7 @@ For more information about the OpenTelemetry Collector installation, see the fol
 
 Enable the OpenTelemetry function of [Tyk Gateway](https://tyk.io/) and then check the transaction information through the OpenTelemetry Collecotr. 
 
-1.  Connect the OpenTelemetry Collector to the Tyk Gateway. 
+1. Connect the OpenTelemetry Collector to the Tyk Gateway. 
 
 ```json title="tyk.conf"
 {
@@ -188,10 +188,10 @@ Enable the OpenTelemetry function of [Tyk Gateway](https://tyk.io/) and then che
 }
 ```
 
-1.  When the whatap-otel agent is connected to the OpenTelemetry Collector, trace data is collected.
+1. When the whatap-otel agent is connected to the OpenTelemetry Collector, trace data is collected.
 
 ## Starting the monitoring
 
--   If the application server is restarted after all settings are made, the agent collects data. Go to the <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" /> menu and then perform monitoring for the collected data in real time.
+- If the application server is restarted after all settings are made, the agent collects data. Go to the <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" /> menu and then perform monitoring for the collected data in real time.
 
--   For more information about the agent configuration, see [the following](set-agent).
+- For more information about the agent configuration, see [the following](set-agent).

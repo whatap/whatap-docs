@@ -7,32 +7,32 @@ pagination_next: release-notes/golang/golang-0_2_3
 
 November 22, 2023
 
--   <Status>Changed</Status> Changed the text cache storage interval from one day to one hour.
+- <Status>Changed</Status> Changed the text cache storage interval from one day to one hour.
 
--   <Status>Changed</Status> Changed not to collect CPU and memory metrics in the Kubernetes environment, replacing them with system metrics collected by the Kubernetes agent.
+- <Status>Changed</Status> Changed not to collect CPU and memory metrics in the Kubernetes environment, replacing them with system metrics collected by the Kubernetes agent.
 
--   <Status>Fixed</Status> Fix the whatap-agent service execution error in CentOS 9 or later.
+- <Status>Fixed</Status> Fix the whatap-agent service execution error in CentOS 9 or later.
 
--   <Status>Fixed</Status> Fixed the duplicate collection of vCpu information in the Docker container environment
+- <Status>Fixed</Status> Fixed the duplicate collection of vCpu information in the Docker container environment
 
--   <Status>Fixed</Status> Fixed the error where ports are collected together while collecting client IP addresses.
+- <Status>Fixed</Status> Fixed the error where ports are collected together while collecting client IP addresses.
 
 :::info
 
 **Download**
 
--   go-api(import library)
+- go-api(import library)
 
-    ```bash
-    go get github.com/whatap/go-api@latest
-    ```
+  ```bash
+  go get github.com/whatap/go-api@latest
+  ```
 
--   Service agent
+- Service agent
 
-    | OS Name                         | Architecture | File format |                                     Download                                    |
-    | ------------------------------- | :----------: | :---------: | :-----------------------------------------------------------------------------: |
-    | Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-4.x86_64.rpm) |
-    | Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.4_amd64.deb) |
-    | Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.4.tar.gz)    |
+  | OS Name                         | Architecture | File format |                                     Download                                    |
+  | ------------------------------- | :----------: | :---------: | :-----------------------------------------------------------------------------: |
+  | Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-4.x86_64.rpm) |
+  | Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.4_amd64.deb) |
+  | Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.4.tar.gz)    |
 
 :::

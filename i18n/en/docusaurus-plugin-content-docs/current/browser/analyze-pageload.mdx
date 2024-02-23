@@ -12,11 +12,11 @@ Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname
 
 The [Page Load](before-starting#load-page) event occurs when an end user visiting your web applications has finished loading. <b>Page Load</b> events are provided in a hitmap chart, and the detailed information about each event can be viewed in timelines. This allows you to determine what prevents your web pages from loading. The following information is included.
 
--   Time details for each **page load** event section
+- Time details for each **page load** event section
 
--   Details of the loaded resources
+- Details of the loaded resources
 
--   Browser error data
+- Browser error data
 
 ## Checking the page load event list {#pageload-events-list}
 
@@ -30,13 +30,13 @@ Drag the chart area of the ![Leader line 1](/img/number-01.png) <Cmdname sid="ru
 
 <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget is a distribution chart of response times for <b>page loads</b> over time.
 
--   The horizontal axis is the end time of the <b>page load</b> event.
+- The horizontal axis is the end time of the <b>page load</b> event.
 
--   The vertical axis is the elapsed time of the <b>page load</b> event.
+- The vertical axis is the elapsed time of the <b>page load</b> event.
 
--   The normal <b>page load</b> events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
+- The normal <b>page load</b> events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
 
--   The error occurrence <b>page load</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. The erroneous <b>page load</b> event occurs when a browser error is encountered while loading pages.
+- The error occurrence <b>page load</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. The erroneous <b>page load</b> event occurs when a browser error is encountered while loading pages.
 
 ### ![](/img/number-02.png) Page list {#page-list}
 
@@ -44,29 +44,29 @@ The <b>page load</b> events in the area dragged from the <Cmdname sid="rumPageLo
 
 The table of the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> widget includes the following data.
 
--   <Cmdname sid="start_time" className="uitext" />: Start time of the <b>page load</b> event.
+- <Cmdname sid="start_time" className="uitext" />: Start time of the <b>page load</b> event.
 
--   <Cmdname sid="elapsed" className="uitext" />: Elapsed time up to the <b>page load</b> event completion.
+- <Cmdname sid="elapsed" className="uitext" />: Elapsed time up to the <b>page load</b> event completion.
 
--   <Cmdname sid="page_url" className="uitext" />: Path of the page URL accessed by the end user.
+- <Cmdname sid="page_url" className="uitext" />: Path of the page URL accessed by the end user.
 
--   <Cmdname sid="browser" className="uitext" />: Type of the browser of the end user.
+- <Cmdname sid="browser" className="uitext" />: Type of the browser of the end user.
 
--   <Cmdname sid="device" className="uitext" />: Type of the device of the end user.
+- <Cmdname sid="device" className="uitext" />: Type of the device of the end user.
 
--   <Cmdname sid="os" className="uitext" />: OS type of the device used by the end user
+- <Cmdname sid="os" className="uitext" />: OS type of the device used by the end user
 
--   <Cmdname sid="client_ip" className="uitext" />: IP address of the device used by the end user
+- <Cmdname sid="client_ip" className="uitext" />: IP address of the device used by the end user
 
 You can add other data columns to the table, or you can hide the added columns. Select ![Column icon](/img/ico-column.svg) on the upper right of the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> widget.
 
 :::note
 
--   In the page list, the page load events that contain browser errors appear in red.
+- In the page list, the page load events that contain browser errors appear in red.
 
-    <ImgLang img='browser-pageload-error-list.png' desc='Browser error data' />
+  <ImgLang img='browser-pageload-error-list.png' desc='Browser error data' />
 
--   WhaTap basically stores the client-related information.
+- WhaTap basically stores the client-related information.
 
 :::
 
@@ -74,17 +74,17 @@ You can add other data columns to the table, or you can hide the added columns. 
 
 You can enter a search word for the page list and then filter for matches. The search criteria are as follows. Select a desired item, enter a search word and then press Enter, or select ![Search icon](/img/ico-search.svg).
 
--   <Cmdname sid="page_url" className="uitext" />
+- <Cmdname sid="page_url" className="uitext" />
 
--   <Cmdname sid="browser" className="uitext" />
+- <Cmdname sid="browser" className="uitext" />
 
--   <Cmdname sid="device" className="uitext" />
+- <Cmdname sid="device" className="uitext" />
 
--   <Cmdname sid="os" className="uitext" />
+- <Cmdname sid="os" className="uitext" />
 
--   <Cmdname sid="client_ip" className="uitext" />
+- <Cmdname sid="client_ip" className="uitext" />
 
--   <Cmdname sid="user_id" className="uitext" />
+- <Cmdname sid="user_id" className="uitext" />
 
 ### ![](/img/number-04.png) Page group list {#page-group-list}
 
@@ -102,28 +102,28 @@ If you select <LinkImage img="ico-detail-view.svg" className="ico" desc="detaile
 
 The items in the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> can be seen on the URL basis. <Cmdname sid="url_list" className="uitext" /> is sorted by the elapsed time. If you select a URL item, you can see the detailed information about the <b>page load</b> events on the right of <LinkImage img="number-02.png" className="ico" desc="number 2" />.
 
--   The blue bar graph of each item is the elapsed time of <b>page load</b>.
--   The time to the right of the bar graph for each item is the start time of <b>page load</b>.
+- The blue bar graph of each item is the elapsed time of <b>page load</b>.
+- The time to the right of the bar graph for each item is the start time of <b>page load</b>.
 
 ### ![](/img/number-02.png) Overview (Page Load Event Summary) {#pageload-events-summary}
 
 The <Cmdname sid="summary" className="uitext" /> tab provides the times spent for the <b>page load</b> step in a graph chart. This allows you to identify slow sections during the <b>page load</b>.
 
--   <Cmdname sid="page" className="uitext" /> <Cmdname sid="info" className="uitext" />: It provides the end users' access environment, access pages, <Cmdname sid="user_id" className="uitext" />, and <Cmdname sid="session_id" className="uitext" />.
+- <Cmdname sid="page" className="uitext" /> <Cmdname sid="info" className="uitext" />: It provides the end users' access environment, access pages, <Cmdname sid="user_id" className="uitext" />, and <Cmdname sid="session_id" className="uitext" />.
 
--   <Cmdname sid="page_load_timing" className="uitext" /> <Cmdname sid="info" className="uitext" />: You can check the times elapsed for each section upon <b>page load</b>.
+- <Cmdname sid="page_load_timing" className="uitext" /> <Cmdname sid="info" className="uitext" />: You can check the times elapsed for each section upon <b>page load</b>.
 
-    -   **_redirect_**: Elapsed time for browser's redirection.
+  - **_redirect_**: Elapsed time for browser's redirection.
 
-    -   **_cache_**: Time spent for the browser to search the cached resources.
+  - **_cache_**: Time spent for the browser to search the cached resources.
 
-    -   **_dns_**: Time spent for the browser to search domains.
+  - **_dns_**: Time spent for the browser to search domains.
 
-    -   **_wait_**: Time spent for the browser to respond to the data required for <b>page load</b>.
+  - **_wait_**: Time spent for the browser to respond to the data required for <b>page load</b>.
 
-    -   **_download_**: Time taken for the browser to download resources from the server.
+  - **_download_**: Time taken for the browser to download resources from the server.
 
-    -   **_render_**: Time spent to render the resources downloaded from the server on the screen and complete a <b>page load</b> event.
+  - **_render_**: Time spent to render the resources downloaded from the server on the screen and complete a <b>page load</b> event.
 
 ### Resource list {#resource-list}
 
@@ -141,12 +141,12 @@ The page load events that contain browser errors appear in red. You can see the 
 
 <ImgLang img='browser-pageload-details-resource-error.png' desc='Resource List - Error Data' />
 
-1.  If you select a step with any error in <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="exception_stack" className="uitext" /> window appears.
+1. If you select a step with any error in <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="exception_stack" className="uitext" /> window appears.
 
-    <ImgLang img='browser-pageload-details-resource-error-stack.png' desc='Exception Stack' />
+   <ImgLang img='browser-pageload-details-resource-error-stack.png' desc='Exception Stack' />
 
-2.  Select **_Upload_**.
+2. Select **_Upload_**.
 
-3.  Select a source map file for the code stack.
+3. Select a source map file for the code stack.
 
 By comparing obfuscated stack information with JavaScript source map, you can see the code where the actual error occurred.

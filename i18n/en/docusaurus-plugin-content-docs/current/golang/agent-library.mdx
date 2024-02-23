@@ -13,40 +13,40 @@ It guides you to the agent configuration for each Go library.
 
 [goolge.golang.org/grpc](https://pkg.go.dev/google.golang.org/grpc)
 
--   **grpc_profile_enabled** <span class='type'>Boolean</span>
+- **grpc_profile_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to collect the Google Remote Call (gRPC) data.
+  Set whether or not to collect the Google Remote Call (gRPC) data.
 
--   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
+- **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to collect the client stream methods.
+  Set whether or not to collect the client stream methods.
 
--   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
+- **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to collect the server stream methods.
+  Set whether or not to collect the server stream methods.
 
--   **grpc_profile_ignore_method** <span class='type'>String</span>
+- **grpc_profile_ignore_method** <span class='type'>String</span>
 
-    Default `agent`
+  Default `agent`
 
-    It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
+  It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
 
--   **grpc_profile_stream_method** <span class='type'>String</span>
+- **grpc_profile_stream_method** <span class='type'>String</span>
 
-    It organizes the set stream method as a separate transaction. For multiple values, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search.
+  It organizes the set stream method as a separate transaction. For multiple values, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search.
 
--   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
+- **grpc_profile_stream_identify** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added.
+  The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added.
 
-    ```ini title='whatap.conf'
-    grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
-    ```
+  ```ini title='whatap.conf'
+  grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
+  ```

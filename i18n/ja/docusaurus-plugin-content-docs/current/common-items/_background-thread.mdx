@@ -4,29 +4,29 @@
 
 基本的にアクティブスタックは、トランザクションが実行されているスレッドのスタックです。 ただし、一部のバックグラウンドスレッドについてもスタックを分析する必要がある場合があります。 この時点で、オプションを使用してバックグラウンドスレッドのアクティブスタックを取得します。バージョン 1.6.2以降でサポートします。
 
--   `async_stack_enabled`の値を`true`に設定するとアクティブになります。
+- `async_stack_enabled`の値を`true`に設定するとアクティブになります。
 
-    ```bash
-    async_stack_enabled=false
-    ```
+  ```bash
+  async_stack_enabled=false
+  ```
 
--   スタックダンプの間隔は、フォアグラウンドアクティブスタックの設定に準じます。
+- スタックダンプの間隔は、フォアグラウンドアクティブスタックの設定に準じます。
 
-    ```bash
-    active_stack_second=10
-    ```
+  ```bash
+  active_stack_second=10
+  ```
 
--   対象スレッド名を指定する場合は、`*`を使用して文字列パターンを指定します。 
+- 対象スレッド名を指定する場合は、`*`を使用して文字列パターンを指定します。 
 
-    ```bash
-    async_thread_match=http*,abc*
-    ```
+  ```bash
+  async_thread_match=http*,abc*
+  ```
 
-      スレッド名でスタックダンプ対象を識別します。`,`を使用して複数の一致を指定できます。
+    スレッド名でスタックダンプ対象を識別します。`,`を使用して複数の一致を指定できます。
 
--   スタックの上位メソッドが`async_thread_parking`に登録されたクラス/メソッドの場合、スレッドがパーキング状態にあると判断してダンプを生成しません。
+- スタックの上位メソッドが`async_thread_parking`に登録されたクラス/メソッドの場合、スレッドがパーキング状態にあると判断してダンプを生成しません。
 
-    ```bash
-    async_thread_parking_class=sun.misc.Unsafe
-    async_thread_parking_method=park
-    ```
+  ```bash
+  async_thread_parking_class=sun.misc.Unsafe
+  async_thread_parking_method=park
+  ```

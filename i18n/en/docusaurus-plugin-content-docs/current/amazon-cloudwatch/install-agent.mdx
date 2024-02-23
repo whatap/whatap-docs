@@ -31,14 +31,14 @@ Check the required permissions and recommended policies.
 | EFS              | Read |
 | RDS              | Read |
 
--   **Recommended policy**
-    -   arn:aws:iam::aws:policy/ReadOnlyAccess
+- **Recommended policy**
+  - arn:aws:iam::aws:policy/ReadOnlyAccess
 
 ## Monitoring procedure
 
-1.  Enter the Amazon authentication data.
-2.  Select values for Cloudwatch namespace and collection cycle.
-3.  Select values for region, metric, and stat.
+1. Enter the Amazon authentication data.
+2. Select values for Cloudwatch namespace and collection cycle.
+3. Select values for region, metric, and stat.
 
 :::note
 
@@ -60,14 +60,14 @@ Configuration using the role is recommended. The access key is available only to
 
 <ImgLang img='cloudwatch-auth-role.png' desc='Amazon Cloudwatch - role' />
 
-1.  Log in to the AWS management console and open the IAM console.
-2.  In the console navigation pane, select roles and then select Create Role.
-3.  In Select type of trusted entity, select Another AWS account.
-4.  Enter the WhaTap account ID, **911937781722** in Account ID. Select and apply ReadOnlyAccess.
-5.  Enter the role name and description and then click Create Role to switch to the Summary screen.
-6.  In Maximum session duration, click Edit to change to 12 hours and then save it. 
-7.  Copy the **Role ARN** item.
-8.  Return to the WhaTap **_Management_** > **_Agent Installation_** page. Paste the copied **Role ARN** into the **_Role_** **_ARN_** window, and then click **_OK_**.
+1. Log in to the AWS management console and open the IAM console.
+2. In the console navigation pane, select roles and then select Create Role.
+3. In Select type of trusted entity, select Another AWS account.
+4. Enter the WhaTap account ID, **911937781722** in Account ID. Select and apply ReadOnlyAccess.
+5. Enter the role name and description and then click Create Role to switch to the Summary screen.
+6. In Maximum session duration, click Edit to change to 12 hours and then save it. 
+7. Copy the **Role ARN** item.
+8. Return to the WhaTap **_Management_** > **_Agent Installation_** page. Paste the copied **Role ARN** into the **_Role_** **_ARN_** window, and then click **_OK_**.
 
 ### Selecting the namespace and collection cycle
 
@@ -79,108 +79,108 @@ Configuration using the role is recommended. The access key is available only to
 
 #### Namespace
 
--   AWS ACMPrivateCA
--   AWS AmazonMQ
--   AWS ApplicationELB Monitoring
--   AWS AppSync
--   AWS Athena
--   AWS AutoScaling
--   AWS Elastic Beanstalk Health
--   AWS Billing
--   AWS Cassandra
--   AWS Chatbot
--   AWS Cloud Front
--   AWS CloudHSM
--   AWS CloudSearch
--   AWS CodeBuild
--   AWS CodeGuruProfiler
--   AWS Cognito
--   AWS Connect
--   AWS ContainerInsights Monitoring
--   AWS DataSync
--   AWS DAX
--   AWS DDoSProtection
--   AWS DMS
--   AWS DocDB
--   AWS DX
--   AWS Dynamo DB
--   AWS Ebs Usage
--   AWS EC2 Monitoring
--   AWS EC2 Alert Config
--   AWS EC2Spot
--   AWS ECS
--   AWS EFS
--   AWS ElastiCache Usage
--   AWS ElasticGPUs
--   AWS ElasticInference
--   AWS ElasticMapReduce
--   AWS ElasticTranscoder
--   AWS Classic ELB Monitoring
--   AWS ES
--   AWS Events
--   AWS Firehose
--   AWS FSx
--   AWS GameLift
--   AWS GatewayELB
--   AWS Glue
--   AWS GroundStation
--   AWS Health
--   AWS Inspector
--   AWS IoT
--   AWS IoTAnalytics
--   AWS IoTSiteWise
--   AWS IVS
--   AWS Kafka
--   AWS Kinesis
--   AWS KinesisAnalytics
--   AWS KinesisVideo
--   AWS KMS
--   AWS Lambda
--   AWS Lex
--   AWS Location
--   AWS Logs
--   AWS LookoutMetrics
--   AWS MediaConnect
--   AWS MediaConvert
--   AWS MediaPackage
--   AWS MediaStore
--   AWS MediaTailor
--   AWS ML
--   AWS NATGateway
--   AWS Neptune
--   AWS NetworkELB
--   AWS NetworkFirewall
--   AWS OpsWorks
--   AWS Polly
--   AWS QLDB
--   AWS RDS Monitoring
--   AWS Redshift
--   AWS Robomaker
--   AWS Route53
--   AWS S3
--   AWS SageMaker
--   AWS SDKMetrics
--   AWS ServiceCatalog
--   AWS SES
--   AWS SNS
--   AWS SQS
--   AWS SQS Message
--   AWS SSM-RunCommand
--   AWS States
--   AWS StorageGateway
--   AWS SWF
--   AWS Textract
--   AWS ThingsGraph
--   AWS Timestream
--   AWS Transfer
--   AWS TransitGateway
--   AWS Translate
--   AWS TrustedAdvisor
--   AWS API Usage
--   AWS VPN Monitoring
--   AWS WAF
--   AWS WorkMail
--   AWS WorkSpaces
+- AWS ACMPrivateCA
+- AWS AmazonMQ
+- AWS ApplicationELB Monitoring
+- AWS AppSync
+- AWS Athena
+- AWS AutoScaling
+- AWS Elastic Beanstalk Health
+- AWS Billing
+- AWS Cassandra
+- AWS Chatbot
+- AWS Cloud Front
+- AWS CloudHSM
+- AWS CloudSearch
+- AWS CodeBuild
+- AWS CodeGuruProfiler
+- AWS Cognito
+- AWS Connect
+- AWS ContainerInsights Monitoring
+- AWS DataSync
+- AWS DAX
+- AWS DDoSProtection
+- AWS DMS
+- AWS DocDB
+- AWS DX
+- AWS Dynamo DB
+- AWS Ebs Usage
+- AWS EC2 Monitoring
+- AWS EC2 Alert Config
+- AWS EC2Spot
+- AWS ECS
+- AWS EFS
+- AWS ElastiCache Usage
+- AWS ElasticGPUs
+- AWS ElasticInference
+- AWS ElasticMapReduce
+- AWS ElasticTranscoder
+- AWS Classic ELB Monitoring
+- AWS ES
+- AWS Events
+- AWS Firehose
+- AWS FSx
+- AWS GameLift
+- AWS GatewayELB
+- AWS Glue
+- AWS GroundStation
+- AWS Health
+- AWS Inspector
+- AWS IoT
+- AWS IoTAnalytics
+- AWS IoTSiteWise
+- AWS IVS
+- AWS Kafka
+- AWS Kinesis
+- AWS KinesisAnalytics
+- AWS KinesisVideo
+- AWS KMS
+- AWS Lambda
+- AWS Lex
+- AWS Location
+- AWS Logs
+- AWS LookoutMetrics
+- AWS MediaConnect
+- AWS MediaConvert
+- AWS MediaPackage
+- AWS MediaStore
+- AWS MediaTailor
+- AWS ML
+- AWS NATGateway
+- AWS Neptune
+- AWS NetworkELB
+- AWS NetworkFirewall
+- AWS OpsWorks
+- AWS Polly
+- AWS QLDB
+- AWS RDS Monitoring
+- AWS Redshift
+- AWS Robomaker
+- AWS Route53
+- AWS S3
+- AWS SageMaker
+- AWS SDKMetrics
+- AWS ServiceCatalog
+- AWS SES
+- AWS SNS
+- AWS SQS
+- AWS SQS Message
+- AWS SSM-RunCommand
+- AWS States
+- AWS StorageGateway
+- AWS SWF
+- AWS Textract
+- AWS ThingsGraph
+- AWS Timestream
+- AWS Transfer
+- AWS TransitGateway
+- AWS Translate
+- AWS TrustedAdvisor
+- AWS API Usage
+- AWS VPN Monitoring
+- AWS WAF
+- AWS WorkMail
+- AWS WorkSpaces
 
 ### Selecting the region, metric, and stat
 
@@ -192,8 +192,8 @@ Configuration using the role is recommended. The access key is available only to
 
 <ImgLang img='amazon-cloudwatch-deact.png' desc='Disabling the data collection and initializing the service' />
 
--   ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
+- ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
 
--   ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
+- ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
 
--   To completely avoid incurring costs, you must remove the **Role** from the **AWS IAM** console.
+- To completely avoid incurring costs, you must remove the **Role** from the **AWS IAM** console.

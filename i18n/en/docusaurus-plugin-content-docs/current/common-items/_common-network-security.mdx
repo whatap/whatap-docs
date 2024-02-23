@@ -28,14 +28,14 @@ wo proxy servers cannot use different ports. When using multiple proxy servers, 
 
 WhaTap is designed on the premise of collecting monitoring data from public networks. Accordingly, all monitoring data is encrypted and transmitted to the server. When lots of encrypted data is sent, it may cause overhead. WhaTap selectively encrypts data. The communication procedure between agents and the server is as follows:
 
-1.  Generate and copy the **_Project access key_** from the project creation menu.
-2.  The **Project access key** includes the private key. Be careful not to be disclosed.
-3.  Restart the application server.
-4.  The WhaTap agent establishes the TCP session with the server.
-5.  Request a security key for a new session by encrypting data with the private key for communication included in the **Project access key**.
-6.  The server creates a new security key for the session requested by the agent and sends it down to the agent.
-7.  The security key of the session has two encryption keys. They are encryption keys for the ASC algorithm and the simple password.
-8.  Afterwards, the agent uses the ASC secret key for sensitive data such as text and control data. Relatively secure data such as numeric value undergoes simple encryption before transmission to the server.
+1. Generate and copy the **_Project access key_** from the project creation menu.
+2. The **Project access key** includes the private key. Be careful not to be disclosed.
+3. Restart the application server.
+4. The WhaTap agent establishes the TCP session with the server.
+5. Request a security key for a new session by encrypting data with the private key for communication included in the **Project access key**.
+6. The server creates a new security key for the session requested by the agent and sends it down to the agent.
+7. The security key of the session has two encryption keys. They are encryption keys for the ASC algorithm and the simple password.
+8. Afterwards, the agent uses the ASC secret key for sensitive data such as text and control data. Relatively secure data such as numeric value undergoes simple encryption before transmission to the server.
 
 :::note
 

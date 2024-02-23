@@ -1,31 +1,31 @@
 It is the network configuration option to communicate with the server for transferring the data collected by the agent.
 
--   **whatap_server_host** <span class='type'>ip_address</span>
+- **whatap_server_host** <span class='type'>ip_address</span>
 
-    Default `127.0.0.1,127.0.0.1`
+  Default `127.0.0.1,127.0.0.1`
 
-    Specify the server to transfer the data collected by the agent. If there are multiple IP addresses for collection server redundancy, use comma (,) as the delimiter. The proxy of the collection server must be in listening state for the set IP address.
+  Specify the server to transfer the data collected by the agent. If there are multiple IP addresses for collection server redundancy, use comma (,) as the delimiter. The proxy of the collection server must be in listening state for the set IP address.
 
--   **whatap_server_port** <span class='type'>tcp_port</span>
+- **whatap_server_port** <span class='type'>tcp_port</span>
 
-    Default `6600`
+  Default `6600`
 
-    Set the collection server port. Because only one port can be set, the collection servers set in the `whatap_server_host` option must use the same port.
+  Set the collection server port. Because only one port can be set, the collection servers set in the `whatap_server_host` option must use the same port.
 
--   **tcp_so_timeout** <span class='type'>MiliSecond</span>
+- **tcp_so_timeout** <span class='type'>MiliSecond</span>
 
-    Default `60000`
+  Default `60000`
 
-    Set the socket time out of the TCP session that communicates with the collection server.
+  Set the socket time out of the TCP session that communicates with the collection server.
 
--   **tcp_connection_timeout** <span class='type'>MiliSecond</span>
+- **tcp_connection_timeout** <span class='type'>MiliSecond</span>
 
-    Default `5000`
+  Default `5000`
 
-    Set the connection time out of the TCP session that communicates with the collection server.
+  Set the connection time out of the TCP session that communicates with the collection server.
 
--   **net_send_max_bytes** <span class='type'>Byte</span>
+- **net_send_max_bytes** <span class='type'>Byte</span>
 
-    Default `5242880`
+  Default `5242880`
 
-    Maximum data size in bytes the agent can collect and transfer over the network at a time.
+  Maximum data size in bytes the agent can collect and transfer over the network at a time.

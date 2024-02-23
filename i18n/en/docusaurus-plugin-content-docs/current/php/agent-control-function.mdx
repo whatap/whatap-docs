@@ -11,58 +11,58 @@ tags:
 
 The PHP application server's functions can be controlled.
 
--   **whatap.stat_enabled** <span class='type'>Boolean</span>
+- **whatap.stat_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The statistics tracing is enabled. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes.
+  The statistics tracing is enabled. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes.
 
--   **whatap.license** <span class='type'>String</span>
+- **whatap.license** <span class='type'>String</span>
 
-    To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
+  To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
 
--   **whatap.realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
+- **whatap.realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the maximum call interval credited by the same user when measuring the number of real-time users.
+  Set the maximum call interval credited by the same user when measuring the number of real-time users.
 
--   **whatap.time_sync_interval_ms** <span class='type'>Milliseconds</span>
+- **whatap.time_sync_interval_ms** <span class='type'>Milliseconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the synchronization interval between the agents and the server. For no synchronization, set it to `0`.
+  Set the synchronization interval between the agents and the server. For no synchronization, set it to `0`.
 
--   **whatap.text_reset** <span class='type'>Int</span>
+- **whatap.text_reset** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
+  The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
 
-    :::note
+  :::note
 
-    Transaction URLs and SQL strings correspond to text data.
+  Transaction URLs and SQL strings correspond to text data.
 
-    :::
+  :::
 
--   **whatap.ext.error_enabled** <span class='type'>Boolean</span>
+- **whatap.ext.error_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It activates the function to collect errors from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.ext.exception_enabled** <span class='type'>Boolean</span>
-
-    Default `true`
-
-    It activates the function to collect exceptions from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+  It activates the function to collect errors from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.debug_gc_percent** <span class='type'>Int</span>
+- **whatap.ext.exception_enabled** <span class='type'>Boolean</span>
 
-    Default `200`
+  Default `true`
 
-    It can reduce the CPU load by increasing the interval between GC calls by the whatap-php service daemon. The memory usage increases instead of reducing the CPU load. It applied up to 1000.
+  It activates the function to collect exceptions from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+- **whatap.debug_gc_percent** <span class='type'>Int</span>
+
+  Default `200`
+
+  It can reduce the CPU load by increasing the interval between GC calls by the whatap-php service daemon. The memory usage increases instead of reducing the CPU load. It applied up to 1000.

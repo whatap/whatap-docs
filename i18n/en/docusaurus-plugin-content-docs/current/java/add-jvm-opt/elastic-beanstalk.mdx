@@ -13,68 +13,68 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
 
 {@include: _pass-note.mdx}
 
-1.  To release the Spring Boot result as jar, the content of _.ebextensions_ cannot be applied. Compress the following files and deploy the zip file.
+1. To release the Spring Boot result as jar, the content of _.ebextensions_ cannot be applied. Compress the following files and deploy the zip file.
 
-    -   _.elasticbeanstalk/config.yml_: Automatically created under the directory where the eb command is executed
-    -   _.ebextensions/`{config_name}`.config_: eb configuration file
-    -   _Procfile_: File to configure the JVM command line options
-    -   _`{application}`.jar_: applicaion.jar file to execute
+   - _.elasticbeanstalk/config.yml_: Automatically created under the directory where the eb command is executed
+   - _.ebextensions/`{config_name}`.config_: eb configuration file
+   - _Procfile_: File to configure the JVM command line options
+   - _`{application}`.jar_: applicaion.jar file to execute
 
-2.  Compress the WhaTap agent file to be applied to the service and then upload it to S3 (or a public downloadable path).
+2. Compress the WhaTap agent file to be applied to the service and then upload it to S3 (or a public downloadable path).
 
-    -   _paramkey.txt_
-    -   _whatap.agent-2.0_25.jar_
-    -   _whatap.conf_
+   - _paramkey.txt_
+   - _whatap.agent-2.0_25.jar_
+   - _whatap.conf_
 
-    ```bash
-    # Compressing a directory
-    zip -r whatap-agent.zip agent
-    ```
+   ```bash
+   # Compressing a directory
+   zip -r whatap-agent.zip agent
+   ```
 
-3.  Enter the WhaTap agent path in the _.ebextension/`{config_name}`.config_ file.
+3. Enter the WhaTap agent path in the _.ebextension/`{config_name}`.config_ file.
 
-    When its zip file to download exists, execute the eb command to download the file and then unzip it.
+   When its zip file to download exists, execute the eb command to download the file and then unzip it.
 
-    ```yaml title=ebextension/{config_name}.config
-    sources:
-      target directory:
-        S3 path
-    ```
+   ```yaml title=ebextension/{config_name}.config
+   sources:
+     target directory:
+       S3 path
+   ```
 
-    ```yaml title='Example'
-    sources:
-      /home/webapp:
-        http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
-    ```
+   ```yaml title='Example'
+   sources:
+     /home/webapp:
+       http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
+   ```
 
-4.  Enter the JVM command with the WhaTap agent option added to create a _Procfile_.
+4. Enter the JVM command with the WhaTap agent option added to create a _Procfile_.
 
-    ```yaml title='Procfile'
-    web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
-    ```
+   ```yaml title='Procfile'
+   web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
+   ```
 
-    ```yaml title='Example'
-    web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
-    ```
+   ```yaml title='Example'
+   web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
+   ```
 
-5.  Compress the following files: _Procfile_, _.ebextensions_, and _`{application}`.jar_.
+5. Compress the following files: _Procfile_, _.ebextensions_, and _`{application}`.jar_.
 
-    ```bash
-    zip -r {application}.zip Procfile .ebextensions/{application}.jar
-    ```
+   ```bash
+   zip -r {application}.zip Procfile .ebextensions/{application}.jar
+   ```
 
-6.  Add the zip file path to deploy in the _.elasticbeanstalk/config.yml_ file.
+6. Add the zip file path to deploy in the _.elasticbeanstalk/config.yml_ file.
 
-    ```yaml
-    deploy:
-      artifact: /path/to/{application}.zip
-    ```
+   ```yaml
+   deploy:
+     artifact: /path/to/{application}.zip
+   ```
 
-7.  Execure the eb deployment command.
+7. Execure the eb deployment command.
 
-    ```bash
-    eb deploy
-    ```
+   ```bash
+   eb deploy
+   ```
 
 :::note
 

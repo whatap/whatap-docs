@@ -22,15 +22,15 @@ November 21, 2023
 
 ### `Common`
 
--   <Status>Feature</Status> Improved the <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="sms_maintenance" className="uitext" /> menu.
+- <Status>Feature</Status> Improved the <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="sms_maintenance" className="uitext" /> menu.
 
-    -   Added a new maintenance plan menu. Select <Cmdname sid="BTN07004" className="uitext" /> for the new maintenance plan function.
+  - Added a new maintenance plan menu. Select <Cmdname sid="BTN07004" className="uitext" /> for the new maintenance plan function.
 
-    -   Added the <Cmdname sid="TTL07037" className="uitext" /> option to add maintenance plans for each agent.
+  - Added the <Cmdname sid="TTL07037" className="uitext" /> option to add maintenance plans for each agent.
 
-    -   The <Cmdname sid="repeat" className="uitext" /> option is also available in server projects.
+  - The <Cmdname sid="repeat" className="uitext" /> option is also available in server projects.
 
--   <Status>Fixed</Status> Improved visibility of the table displayed when the <Cmdname sid="groupby" className="uitext" /> option is enabled in <Cmdname sid="real_time_alert_list" className="uitext" />.
+- <Status>Fixed</Status> Improved visibility of the table displayed when the <Cmdname sid="groupby" className="uitext" /> option is enabled in <Cmdname sid="real_time_alert_list" className="uitext" />.
 
 * * *
 
@@ -42,11 +42,11 @@ November 21, 2023
 
 ### `Server`
 
--   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, fixed the issue where the maximum value of the <Cmdname sid="sms_summary_process" className="uitext" /> table is intermittently displayed wrong.
+- <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, fixed the issue where the maximum value of the <Cmdname sid="sms_summary_process" className="uitext" /> table is intermittently displayed wrong.
 
--   <Status>Changed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, when viewing the <Cmdname sid="sms_summary_process" className="uitext" /> table details, modified the <Cmdname sid="diskIo" className="uitext" /> <span class="uitext">(Bps)</span> chart to display the sum chart lines together.
+- <Status>Changed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, when viewing the <Cmdname sid="sms_summary_process" className="uitext" /> table details, modified the <Cmdname sid="diskIo" className="uitext" /> <span class="uitext">(Bps)</span> chart to display the sum chart lines together.
 
--   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="server_list" className="uitext" />, fixed the issue where the scroll position is reset when enabling the <Cmdname sid="compare" className="uitext" /> option and then checking the checkbox of the server to be compared.
+- <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="server_list" className="uitext" />, fixed the issue where the scroll position is reset when enabling the <Cmdname sid="compare" className="uitext" /> option and then checking the checkbox of the server to be compared.
 
 * * *
 
@@ -60,17 +60,17 @@ November 21, 2023
 
 <p><Status> Feature </Status> Improved UIs for user convenience.</p>
 
--   Enhanced the query and plan lookup areas to be moved horizontally and vertically.
+- Enhanced the query and plan lookup areas to be moved horizontally and vertically.
 
--   Changed the parameter bind to be performed by default.
+- Changed the parameter bind to be performed by default.
 
 #### PostgreSQL
 
--   <Status>Feature</Status> Added the function to view the plan information in json format.
+- <Status>Feature</Status> Added the function to view the plan information in json format.
 
--   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added the template for metrics events.
+- <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added the template for metrics events.
 
--   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, changed the order of columns of the <Cmdname sid="active_sessions" className="uitext" /> table saved in the Default preset.
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, changed the order of columns of the <Cmdname sid="active_sessions" className="uitext" /> table saved in the Default preset.
 
 #### Oracle
 
@@ -80,15 +80,15 @@ November 21, 2023
 
 ### `Kubernetes`
 
--   <Status>Fixed</Status> Deleted the <Cmdname sid="active_trx" className="uitext" /> button on the <Cmdname sid="active_transaction" className="uitext" /> window that appears when a transaction from the list is selected in the following paths:
+- <Status>Fixed</Status> Deleted the <Cmdname sid="active_trx" className="uitext" /> button on the <Cmdname sid="active_transaction" className="uitext" /> window that appears when a transaction from the list is selected in the following paths:
 
-    -   Click the <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" /> &gt; container block &gt; click a chart in the <Cmdname sid="BTN06342" className="uitext" /> &gt; <span class='uitext'>Active Transaction</span> widget
+  - Click the <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" /> &gt; container block &gt; click a chart in the <Cmdname sid="BTN06342" className="uitext" /> &gt; <span class='uitext'>Active Transaction</span> widget
 
-    -   Click any item in the transaction list in <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="active_transaction" className="uitext" />
+  - Click any item in the transaction list in <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="active_transaction" className="uitext" />
 
--   <Status>Deprecated</Status> Deleted the Pod initialization performance menu for namespace projects.
+- <Status>Deprecated</Status> Deleted the Pod initialization performance menu for namespace projects.
 
--   <Status>Feature</Status> Added <Cmdname sid="pendingPod" className="uitext" /> as the lab menu of the namespace project.
+- <Status>Feature</Status> Added <Cmdname sid="pendingPod" className="uitext" /> as the lab menu of the namespace project.
 
 * * *
 
@@ -98,9 +98,9 @@ November 21, 2023
 
 If you drag the chart area of the <Cmdname sid="ajaxAnalytics" className="uitext" /> widget in the following menu paths, you can see the new <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window.
 
--   <Cmdname sid="rumDashboard" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" /> widget
+- <Cmdname sid="rumDashboard" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" /> widget
 
--   <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
+- <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
 
 </div>
 
@@ -120,53 +120,53 @@ November 16, 2023
 
 ### `Server`
 
--   <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified to reflect the actual event when adding or modifying the <Cmdname sid="server" className="uitext" /> and <Cmdname sid="process" className="uitext" /> events while the duration of the issuance condition has been set to 0 minute.
+- <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified to reflect the actual event when adding or modifying the <Cmdname sid="server" className="uitext" /> and <Cmdname sid="process" className="uitext" /> events while the duration of the issuance condition has been set to 0 minute.
 
--   <Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified to change the name of the default alert and to display the `default` tag separately.
+- <Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified to change the name of the default alert and to display the `default` tag separately.
 
--   <Status>Changed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, when viewing the <Cmdname sid="sms_summary_process" className="uitext" /> details, modified to always display the Limits table.
+- <Status>Changed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, when viewing the <Cmdname sid="sms_summary_process" className="uitext" /> details, modified to always display the Limits table.
 
 * * *
 
 ### `Kubernetes`
 
--   <Status>Feature</Status> Added the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" /> menu.
+- <Status>Feature</Status> Added the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" /> menu.
 
-    :::info
+  :::info
 
-    A summary of cluster information is provided. You can check not only cluster projects but also information separated by namespace projects by integrating them.
+  A summary of cluster information is provided. You can check not only cluster projects but also information separated by namespace projects by integrating them.
 
-    :::
+  :::
 
--   <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the function to display the blocks for containers and Pods that disappeared for 1 minute.
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the function to display the blocks for containers and Pods that disappeared for 1 minute.
 
-    ![](/img/release/release-k8s-container-block.png)
+  ![](/img/release/release-k8s-container-block.png)
 
--   <Status>Changed</Status> Reorganized the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" /> menu as follows:
+- <Status>Changed</Status> Reorganized the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" /> menu as follows:
 
-    -   Added the metric for node data (cluster project).
+  - Added the metric for node data (cluster project).
 
-    -   Added the <Cmdname sid="sms_summary_download_csv" className="uitext" /> option.
+  - Added the <Cmdname sid="sms_summary_download_csv" className="uitext" /> option.
 
-    -   Added the filter search function.
+  - Added the filter search function.
 
-    -   Removed the text search feature and replaced it with the filter search feature.
+  - Removed the text search feature and replaced it with the filter search feature.
 
-    -   Changed the time update interval from 1 minute to 10 seconds.
+  - Changed the time update interval from 1 minute to 10 seconds.
 
-    -   Changed the comparison column to default exposure and deleted the <Cmdname sid="compare" className="uitext" /> button.
+  - Changed the comparison column to default exposure and deleted the <Cmdname sid="compare" className="uitext" /> button.
 
-    -   Limited the display columns up to 20.
+  - Limited the display columns up to 20.
 
-    -   Improved UIs for user convenience.
+  - Improved UIs for user convenience.
 
--   <Status>Changed</Status> Reorganized the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" /> menu as follows:
+- <Status>Changed</Status> Reorganized the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" /> menu as follows:
 
-    -   Added the <Cmdname sid="sms_summary_download_csv" className="uitext" /> option.
+  - Added the <Cmdname sid="sms_summary_download_csv" className="uitext" /> option.
 
-    -   Changed the comparison column to default exposure and deleted the <Cmdname sid="compare" className="uitext" /> button.
+  - Changed the comparison column to default exposure and deleted the <Cmdname sid="compare" className="uitext" /> button.
 
-    -   Limited the display columns up to 20.
+  - Limited the display columns up to 20.
 
 </div>
 
@@ -178,9 +178,9 @@ November 13, 2023
 
 ### `Log`
 
--   <Status>Feature</Status> In <Cmdname sid="log_setting" className="uitext" />, added the function to export or import <Cmdname sid="log_parser_setting_primary" className="uitext" /> and <Cmdname sid="log_parser_setting_secondary" className="uitext" /> in JSON format.
+- <Status>Feature</Status> In <Cmdname sid="log_setting" className="uitext" />, added the function to export or import <Cmdname sid="log_parser_setting_primary" className="uitext" /> and <Cmdname sid="log_parser_setting_secondary" className="uitext" /> in JSON format.
 
--   <Status>Feature</Status> In <Cmdname sid="log_setting" className="uitext" />, added the function to export or import the <Cmdname sid="TTL06266" className="uitext" /> settings in JSON format.
+- <Status>Feature</Status> In <Cmdname sid="log_setting" className="uitext" />, added the function to export or import the <Cmdname sid="TTL06266" className="uitext" /> settings in JSON format.
 
 </div>
 
@@ -200,19 +200,19 @@ November 13, 2023
 
 #### Common
 
--   <Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />, added the function to display the detailed statistical data for 5 minutes when the bar graph is clicked.
+- <Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />, added the function to display the detailed statistical data for 5 minutes when the bar graph is clicked.
 
--   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added the event template that can be selected upon addition of a metric event.
+- <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added the event template that can be selected upon addition of a metric event.
 
--   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified to view the data when the table tab is clicked at the bottom of the screen.
+- <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified to view the data when the table tab is clicked at the bottom of the screen.
 
--   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified the order of instances displayed in the equalizer chart to match the instance tags in the option bar on the screen.
+- <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified the order of instances displayed in the equalizer chart to match the instance tags in the option bar on the screen.
 
 #### PostgreSQL V2
 
--   <Status>Feature</Status> Added a new menu, <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="dbObjectInfo" className="uitext" />.
+- <Status>Feature</Status> Added a new menu, <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="dbObjectInfo" className="uitext" />.
 
--   <Status>Fixed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="pg_stat" className="uitext" />, fixed the issue where the installation guide messages do not appear.
+- <Status>Fixed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="pg_stat" className="uitext" />, fixed the issue where the installation guide messages do not appear.
 
 #### MySQL V2
 
@@ -228,11 +228,11 @@ November 10, 2023
 
 ### `Common`
 
--   <Status>Fixed</Status> In <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />, deleted the contact input field when modifying the <Cmdname sid="billing_reception_info" className="uitext" /> item (the contact information of <Cmdname sid="payment_method" className="uitext" /> is duplicated).
+- <Status>Fixed</Status> In <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />, deleted the contact input field when modifying the <Cmdname sid="billing_reception_info" className="uitext" /> item (the contact information of <Cmdname sid="payment_method" className="uitext" /> is duplicated).
 
--   <Status>Feature</Status> In the Apdex widget of <Cmdname sid="flexboard" className="uitext" />, added the chart types that can be selected.
+- <Status>Feature</Status> In the Apdex widget of <Cmdname sid="flexboard" className="uitext" />, added the chart types that can be selected.
 
--   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, supported to search the message field other than the title.
+- <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, supported to search the message field other than the title.
 
 * * *
 
@@ -256,15 +256,15 @@ November 8, 2023
 
 ### `Kubernetes`
 
--   <Status>Changed</Status> In the summary panel of <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="containerMap" className="uitext" />, changed the design for elements under the <Cmdname sid="event" className="uitext" /> tab.
+- <Status>Changed</Status> In the summary panel of <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="containerMap" className="uitext" />, changed the design for elements under the <Cmdname sid="event" className="uitext" /> tab.
 
-    ![](/img/release/preview-k8s-containermap.png)
+  ![](/img/release/preview-k8s-containermap.png)
 
--   <Status>Changed</Status> Changed the name of the <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="pod_init_perform" className="uitext" /> menu (POD → Pod).
+- <Status>Changed</Status> Changed the name of the <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="pod_init_perform" className="uitext" /> menu (POD → Pod).
 
--   <Status>Changed</Status> In <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="pod_init_perform" className="uitext" />, added and modified the columns.
+- <Status>Changed</Status> In <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="pod_init_perform" className="uitext" />, added and modified the columns.
 
-    ![](/img/release/preview-k8s-pod-column-changes.png)
+  ![](/img/release/preview-k8s-pod-column-changes.png)
 
 </div>
 
@@ -306,9 +306,9 @@ November 6, 2023
 
 #### <Cmdname sid="flexboard" />
 
--   <Status>Fixed</Status> Fixed the issue where content does not appear when the widget operates full screen in the Safari browser.
+- <Status>Fixed</Status> Fixed the issue where content does not appear when the widget operates full screen in the Safari browser.
 
--   <Status>Changed</Status> Modified to display up to 2 decimal places, if the unit of number expressed in the secondary table is not set.
+- <Status>Changed</Status> Modified to display up to 2 decimal places, if the unit of number expressed in the secondary table is not set.
 
 * * *
 
@@ -332,9 +332,9 @@ November 3, 2023
 
 #### <Cmdname sid="flexboard" />
 
--   <Status>Changed</Status> If multiple projects are selected in the <Cmdname sid="hitmap" className="uitext" /> widget on the unified <Cmdname sid="flexboard" className="uitext" />, the function has been modified to expose the buttons for projects with any data in the <Cmdname sid="TTL06209" className="uitext" /> window that appears when a chart is dragged.
+- <Status>Changed</Status> If multiple projects are selected in the <Cmdname sid="hitmap" className="uitext" /> widget on the unified <Cmdname sid="flexboard" className="uitext" />, the function has been modified to expose the buttons for projects with any data in the <Cmdname sid="TTL06209" className="uitext" /> window that appears when a chart is dragged.
 
--   <Status>Feature</Status> Added a UI to change exposure of table columns when an auxiliary table is set to the series type widget.
+- <Status>Feature</Status> Added a UI to change exposure of table columns when an auxiliary table is set to the series type widget.
 
 * * *
 
@@ -342,17 +342,17 @@ November 3, 2023
 
 #### <Cmdname sid="application_dashboard" />
 
--   <Status>Changed</Status> Modified to sort the agent selection list by name.
+- <Status>Changed</Status> Modified to sort the agent selection list by name.
 
--   <Status>Changed</Status> Modified the colors of each item on the list displayed when <Cmdname sid="ITM06006" className="uitext" /> or <Cmdname sid="ITM06007" className="uitext" /> is selected from the agent selection options.
+- <Status>Changed</Status> Modified the colors of each item on the list displayed when <Cmdname sid="ITM06006" className="uitext" /> or <Cmdname sid="ITM06007" className="uitext" /> is selected from the agent selection options.
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status> In <Cmdname sid="sms_event_menu" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />, added the <Cmdname sid="event_tag" className="uitext" /> option in the server/process event.
+- <Status>Feature</Status> In <Cmdname sid="sms_event_menu" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />, added the <Cmdname sid="event_tag" className="uitext" /> option in the server/process event.
 
--   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="server_list" className="uitext" />, user cannot view the past data anymore. The search is now possible only in Realtime (<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />) or Pause (<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />) status.
+- <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="server_list" className="uitext" />, user cannot view the past data anymore. The search is now possible only in Realtime (<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />) or Pause (<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />) status.
 
 * * *
 
@@ -376,11 +376,11 @@ November 1, 2023
 
 ### `Common`
 
--   <Status>Fixed</Status> Fixed the issue where the <Cmdname sid="pcode" className="uitext" /> button on the left of the ChannelTalk is hidden behind the chatting window.
+- <Status>Fixed</Status> Fixed the issue where the <Cmdname sid="pcode" className="uitext" /> button on the left of the ChannelTalk is hidden behind the chatting window.
 
--   <Status>Fixed</Status> Fixed the issue where the banner area's style is broken depending on the web browser in <Cmdname sid="platform_catalog" className="uitext" />.
+- <Status>Fixed</Status> Fixed the issue where the banner area's style is broken depending on the web browser in <Cmdname sid="platform_catalog" className="uitext" />.
 
--   <Status>Fixed</Status> Fixed the issue where the style of the QR code area is broken when the browser size is smaller than a certain pixel during multi-factor authentication in <Cmdname sid="manage_account_info" className="uitext" />.
+- <Status>Fixed</Status> Fixed the issue where the style of the QR code area is broken when the browser size is smaller than a certain pixel during multi-factor authentication in <Cmdname sid="manage_account_info" className="uitext" />.
 
 * * *
 
@@ -394,37 +394,37 @@ November 1, 2023
 
 <p><Status>Fixed</Status> Modified the installation texts in the Java agent.</p>
 
--   Added the content for each version in the <Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" /> section.
+- Added the content for each version in the <Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" /> section.
 
--   Added SpringBoot and Java 17 related things regarding JVM options.
+- Added SpringBoot and Java 17 related things regarding JVM options.
 
--   Deleted duplicate phrases.
+- Deleted duplicate phrases.
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="sms_resource_board" className="uitext" />, fixed the issue where the layout of several charts are distorted when the <Cmdname sid="sms_alert_status" className="uitext" /> menu is displayed.
+- <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="sms_resource_board" className="uitext" />, fixed the issue where the layout of several charts are distorted when the <Cmdname sid="sms_alert_status" className="uitext" /> menu is displayed.
 
--   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="serverDetail" className="uitext" />, modified to display the time-series chart's unit from `day` to `MM/DD` instead of `HH:MM`.
+- <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="serverDetail" className="uitext" />, modified to display the time-series chart's unit from `day` to `MM/DD` instead of `HH:MM`.
 
 * * *
 
 ### `Kubernetes`
 
--   <Status>Feature</Status> In <Cmdname sid="ITM01408" className="uitext" /> > <Cmdname sid="node_detail" className="uitext" />, added the <Cmdname sid="state" className="uitext" /> column in the <Cmdname sid="product_type_cpm" className="uitext" /> table.
+- <Status>Feature</Status> In <Cmdname sid="ITM01408" className="uitext" /> > <Cmdname sid="node_detail" className="uitext" />, added the <Cmdname sid="state" className="uitext" /> column in the <Cmdname sid="product_type_cpm" className="uitext" /> table.
 
--   <Status>Fixed</Status> In <Cmdname sid="ITM01408" className="uitext" /> > <Cmdname sid="node_list" className="uitext" />, deleted the columns (<Cmdname sid="network_ip" />, <Cmdname sid="open_filedescriptors" />, and <Cmdname sid="TTL06822" />) that are not to be collected.
+- <Status>Fixed</Status> In <Cmdname sid="ITM01408" className="uitext" /> > <Cmdname sid="node_list" className="uitext" />, deleted the columns (<Cmdname sid="network_ip" />, <Cmdname sid="open_filedescriptors" />, and <Cmdname sid="TTL06822" />) that are not to be collected.
 
--   <Status>Changed</Status> Replaced the menu, <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" /> with the enhanced dashboard. For more information about changes, see <Link to='../service/service-1_110_x#application-5' target='_blank'>the following</Link>.
+- <Status>Changed</Status> Replaced the menu, <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" /> with the enhanced dashboard. For more information about changes, see <Link to='../service/service-1_110_x#application-5' target='_blank'>the following</Link>.
 
 * * *
 
 ### `Database`
 
--   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="instance_list" className="uitext" />, added the buttons to select all instances in the table header.
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="instance_list" className="uitext" />, added the buttons to select all instances in the table header.
 
--   <Status>Fixed</Status> Fixed the bug where when the <Cmdname sid="multi_view" className="uitext" /> button is selected in the <Cmdname sid="instance_list" className="uitext" /> menu of the MySQL V2 project, the <Cmdname sid="instance_monitoring" className="uitext" /> menu for V1 appears.
+- <Status>Fixed</Status> Fixed the bug where when the <Cmdname sid="multi_view" className="uitext" /> button is selected in the <Cmdname sid="instance_list" className="uitext" /> menu of the MySQL V2 project, the <Cmdname sid="instance_monitoring" className="uitext" /> menu for V1 appears.
 
 * * *
 
@@ -444,9 +444,9 @@ October 27, 2023
 
 #### <Cmdname sid="my_usage" />
 
--   <Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, fixed the issue where the error message appears when the <Cmdname sid="billing_reception_info" className="uitext" /> item is modified.
+- <Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, fixed the issue where the error message appears when the <Cmdname sid="billing_reception_info" className="uitext" /> item is modified.
 
--   <Status>Fixed</Status> In <Cmdname sid="projectSubscription" className="uitext" />, fixed the whiteout that occurs when the data is <code>null</code>.
+- <Status>Fixed</Status> In <Cmdname sid="projectSubscription" className="uitext" />, fixed the whiteout that occurs when the data is <code>null</code>.
 
 #### <Cmdname sid="project_list" />
 
@@ -468,8 +468,8 @@ October 26, 2023
 
 ### `Database`
 
--   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="multi_instance_monitoring" className="uitext" />, fixed the issue where the lock tree data does not appear.
+- <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="multi_instance_monitoring" className="uitext" />, fixed the issue where the lock tree data does not appear.
 
--   <Status>Changed</Status> The V2 transition period for the <b>MySQL</b> and <b>PostgreSQL</b> projects has been extended until December 31, 2023, and the dates have been modified in the related menus.
+- <Status>Changed</Status> The V2 transition period for the <b>MySQL</b> and <b>PostgreSQL</b> projects has been extended until December 31, 2023, and the dates have been modified in the related menus.
 
 </div>

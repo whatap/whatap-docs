@@ -25,27 +25,27 @@ Select which category to search the data from. This **command** and **operands**
 
 ### Operand
 
--   **String**: Searches data with a specific category. It always loads data with the `app_counter` category regardless of the lookup time.
+- **String**: Searches data with a specific category. It always loads data with the `app_counter` category regardless of the lookup time.
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  ```
 
--   **JSON**: You can set to select categories depending on the data query time.
+- **JSON**: You can set to select categories depending on the data query time.
 
-    Select `app_counter`, `app_counter{m5}`, and `app_counter{h1}` categories respectively for the cases where the lookup time is 6 hours, 3 days, or more.
+  Select `app_counter`, `app_counter{m5}`, and `app_counter{h1}` categories respectively for the cases where the lookup time is 6 hours, 3 days, or more.
 
-    ```sql
-    CATEGORY {"app_counter":6h, "app_counter{m5}":3d, "app_counter{h1}":unlimit } 
-    TAGLOAD 
-    ```
+  ```sql
+  CATEGORY {"app_counter":6h, "app_counter{m5}":3d, "app_counter{h1}":unlimit } 
+  TAGLOAD 
+  ```
 
 :::caution
 
--   Only one value can be specified as the operand of `CATEGORY`. To check the data of multiple `categories` at once, use [JOIN](mxql-calculate#join).
--   Depending on the loading method ([TAGLOAD](mxql-loading#tagload) or [FLEXLOAD](mxql-loading#flexload)), the categories that can be set differ. 
--   If `{m5}` or `{h1}` is attached to the name of `CATEGORY`, see [MetricValue](mxql-guide#metric-value).
+- Only one value can be specified as the operand of `CATEGORY`. To check the data of multiple `categories` at once, use [JOIN](mxql-calculate#join).
+- Depending on the loading method ([TAGLOAD](mxql-loading#tagload) or [FLEXLOAD](mxql-loading#flexload)), the categories that can be set differ. 
+- If `{m5}` or `{h1}` is attached to the name of `CATEGORY`, see [MetricValue](mxql-guide#metric-value).
 
 :::
 
@@ -77,11 +77,11 @@ TAGLOAD
 
 :::caution
 
--   It can select one value of `OID`, `OKIND`, and `ONODE`. 
--   Instructions that have not input operands (or have not passed parameter values) are ignored.
--   If `OID`, `OKIND`, and `ONODE` are used repeatedly, only the last entered command is applied.
--   Because `OIDSET` is deprecated, it is recommended to use a command of `OID`, `OKIND`, and `ONODE`.
--   It is different from applying [FILTER](mxql-calculate#filter) in the data processing step in that only the required data is searched from the data loading step.
+- It can select one value of `OID`, `OKIND`, and `ONODE`. 
+- Instructions that have not input operands (or have not passed parameter values) are ignored.
+- If `OID`, `OKIND`, and `ONODE` are used repeatedly, only the last entered command is applied.
+- Because `OIDSET` is deprecated, it is recommended to use a command of `OID`, `OKIND`, and `ONODE`.
+- It is different from applying [FILTER](mxql-calculate#filter) in the data processing step in that only the required data is searched from the data loading step.
 
 :::
 
@@ -118,29 +118,29 @@ You can set the data lookup time range. Basically, you can use DatePicker from [
 
 <ImgLang img='mxql-8.png' desc='테스트 환경의 DatePicker' />
 
--   Retrieving data only for the last 15 seconds
+- Retrieving data only for the last 15 seconds
 
-    ```sql
-    TIME-RANGE { recent : 15s }
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  TIME-RANGE { recent : 15s }
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```
 
--   Retrieving data only for the previous 15 seconds before `etime` (passes `etime` as a parameter)
+- Retrieving data only for the previous 15 seconds before `etime` (passes `etime` as a parameter)
 
-    ```sql
-    TIME-RANGE {duration:15s, etime:$etime}
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  TIME-RANGE {duration:15s, etime:$etime}
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```
 
--   Retrieving data only for 15 seconds from `stime` (passes `stime` as a parameter)
+- Retrieving data only for 15 seconds from `stime` (passes `stime` as a parameter)
 
-    ```sql
-    TIME-RANGE {duration:15s, stime:$stime}
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  TIME-RANGE {duration:15s, stime:$stime}
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```

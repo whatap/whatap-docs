@@ -18,22 +18,22 @@ If you drag the chart area that appears on the URL Monitoring screen, the result
 
 In this case, the access for URL call is blocked.
 
--   First check whether access has any problem by entering the URL in the web browser. Errors may occur during data input.
--   Check the firewall and IP blocking history against frequent calls and explicitly allow access to the IP of the monitoring agent. The external IP of the Seoul agent is 54.180.11.176.
+- First check whether access has any problem by entering the URL in the web browser. Errors may occur during data input.
+- Check the firewall and IP blocking history against frequent calls and explicitly allow access to the IP of the monitoring agent. The external IP of the Seoul agent is 54.180.11.176.
 
 ## no route to host
 
 The path to reach the destination does not exist. Check whether the following items are entered correctly.
 
--   Port assignment
+- Port assignment
 
--   Protocol of the input URL
+- Protocol of the input URL
 
-    :::note
+  :::note
 
-    Incorrect input of htts://, https://, etc.:::
+  Incorrect input of htts://, https://, etc.:::
 
-    :::
+  :::
 
 ## https
 
@@ -52,6 +52,6 @@ sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid
 
 It occurs when the agent cannot access the SSL certificate of the called site.
 
--   It's an agent problem. Contact [support@whatap.io](mailto:support@whatap.io). Until now, several cases that are not compatible with the SSL certificate's algorithm have been identified.
+- It's an agent problem. Contact [support@whatap.io](mailto:support@whatap.io). Until now, several cases that are not compatible with the SSL certificate's algorithm have been identified.
 
--   If it is possible to share a sample module that can call HTTPS protocol based on Java HttpClient, we will develop and deliver a similar agent.
+- If it is possible to share a sample module that can call HTTPS protocol based on Java HttpClient, we will develop and deliver a similar agent.

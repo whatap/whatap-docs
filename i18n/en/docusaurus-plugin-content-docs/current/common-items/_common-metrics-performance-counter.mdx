@@ -1,10 +1,10 @@
 The WhaTap agent collects various data related to the application performance. The data can be broadly classified into 3 categories:
 
--   **User**: Real-time user or visitor
+- **User**: Real-time user or visitor
 
--   **Service**: Transaction, SQL, outbound call count and response, error rate, etc.
+- **Service**: Transaction, SQL, outbound call count and response, error rate, etc.
 
--   **Resource**: System and process resource usage
+- **Resource**: System and process resource usage
 
 ## User Counter
 
@@ -16,37 +16,37 @@ In the web system performance, user is important because it is the start point t
 
 The WhaTap agent provides various options to identify users.
 
--   **Remote IP**
+- **Remote IP**
 
-    Remote IP is used by default to identify the user. Remote IP has limitations when distinguishing actual users.
+  Remote IP is used by default to identify the user. Remote IP has limitations when distinguishing actual users.
 
--   **Cookie**
+- **Cookie**
 
-    Users are identified using the cookie. UUID is saved in the cookie named **_WHATAP_** for all connected clients.
+  Users are identified using the cookie. UUID is saved in the cookie named **_WHATAP_** for all connected clients.
 
-    ```ini title='whatap.conf'
-    whatap.trace_user_using_ip=false
-    ```
+  ```ini title='whatap.conf'
+  whatap.trace_user_using_ip=false
+  ```
 
--   **Header Key**
+- **Header Key**
 
-    Users can be identified using the value passed to the HTTP header.
+  Users can be identified using the value passed to the HTTP header.
 
-    ```ini title='whatap.conf'
-    whatap.trace_user_header_ticket=USER
-    ```
+  ```ini title='whatap.conf'
+  whatap.trace_user_header_ticket=USER
+  ```
 
 ### User counting
 
 Depending on the counting method, it is used differently. Real-time users are measured to see how many users are using the system. Daily Active User is a measure for business management on how many users are interested in the service for a day.
 
--   **Real-time user**
+- **Real-time user**
 
-    The number of users is counted in the last 5 minutes. Users are counted by shifting every 5 seconds. The numbers counted on each server are merged through the HyperLogLog algorithm.
+  The number of users is counted in the last 5 minutes. Users are counted by shifting every 5 seconds. The numbers counted on each server are merged through the HyperLogLog algorithm.
 
--   **Daily Active User** (**DAU**)
+- **Daily Active User** (**DAU**)
 
-    The users who accessed the system for a day are counted. The number of users logged in for 24 hours is calculated through HyperLogLog.
+  The users who accessed the system for a day are counted. The number of users logged in for 24 hours is calculated through HyperLogLog.
 
 :::tip
 
@@ -58,45 +58,45 @@ WhaTap collects byte blocks for user data by the server to count long-term users
 
 Performance metrics for transactions include the number of SQLs or outbound calls used by transactions, the number of response time errors, etc.
 
--   **Transaction Counter**
+- **Transaction Counter**
 
-    A counter starts measuring when any transaction is performed.
+  A counter starts measuring when any transaction is performed.
 
-    -   **Count**
-    -   **Response Time**
-    -   **Error Count**
+  - **Count**
+  - **Response Time**
+  - **Error Count**
 
--   **Active Transaction Counter**
+- **Active Transaction Counter**
 
-    It counts the number of transactions in progress.
+  It counts the number of transactions in progress.
 
-    -   **Count**
-    -   **Active Status**
+  - **Count**
+  - **Active Status**
 
-    Progress status is fixed into five: METHOD, SQL, HTTPC, DBC, SOCKET.
+  Progress status is fixed into five: METHOD, SQL, HTTPC, DBC, SOCKET.
 
-    -   METHOD - Calling a general function
-    -   SQL - Running DB SQL
-    -   HTTPC - Calling an HTTP outbound API (service)
-    -   DBC - DB connection is requrested; it is usually taken from the pool
-    -   SOCKET - Connecting the TCP session
+  - METHOD - Calling a general function
+  - SQL - Running DB SQL
+  - HTTPC - Calling an HTTP outbound API (service)
+  - DBC - DB connection is requrested; it is usually taken from the pool
+  - SOCKET - Connecting the TCP session
 
--   **SQL**
+- **SQL**
 
-    It counts the status of SQL running.
+  It counts the status of SQL running.
 
-    -   **Count**
-    -   **Response Time**
-    -   **Error Count**
-    -   **Patch Count**
+  - **Count**
+  - **Response Time**
+  - **Error Count**
+  - **Patch Count**
 
--   **HTTP Call**
+- **HTTP Call**
 
-    It counts outbound HTTP calls.
+  It counts outbound HTTP calls.
 
-    -   **Count**
-    -   **Response Time**
-    -   **Error Count**
+  - **Count**
+  - **Response Time**
+  - **Error Count**
 
 ## Resource Counter
 
@@ -104,33 +104,33 @@ It counts the server resources or resource uses inside the node processes.
 
 * * *
 
--   **CPU** (sys, usr, wait, steal, irq, cores)
+- **CPU** (sys, usr, wait, steal, irq, cores)
 
-    CPU usage %. The data is collected for each type. Steal is meaningful only in the virtual environment. The number of CPU cores is also collected.
+  CPU usage %. The data is collected for each type. Steal is meaningful only in the virtual environment. The number of CPU cores is also collected.
 
--   **Process CPU**
+- **Process CPU**
 
-    CPU % used by the process.
+  CPU % used by the process.
 
--   **Memory**
+- **Memory**
 
-    System memory usage (%).
+  System memory usage (%).
 
--   **Swap**
+- **Swap**
 
-    Swap memory usage (%).
+  Swap memory usage (%).
 
--   **Disk**
+- **Disk**
 
-    Disk is the process utilization (%) of the current directory
+  Disk is the process utilization (%) of the current directory
 
--   **Heap** (Total, Used, Perm)
+- **Heap** (Total, Used, Perm)
 
-    Total, Used, and Perm amounts of the heap memory. The data unit is KBytes.
+  Total, Used, and Perm amounts of the heap memory. The data unit is KBytes.
 
--   **DB Connection Count**
+- **DB Connection Count**
 
-    It collects the connection pool counts.
+  It collects the connection pool counts.
 
 * * *
 
@@ -150,8 +150,8 @@ Apdex can be used as a metric for user satisfaction and have a value between 0 a
 | Tolerating (**T**) | Users feel delay but working is possible ≤ 4.8 secs (**S** \* 4) |
 | Frustrated (**F**) | Working is impossible > 4.8 secs (exceeds T and error)           |
 
--   **whatap.apdex_time** <span class='type'>millisecond</span>
+- **whatap.apdex_time** <span class='type'>millisecond</span>
 
-    Default `1200`
+  Default `1200`
 
-    The default value (**S**) can be modified in Agent CONFIG.
+  The default value (**S**) can be modified in Agent CONFIG.

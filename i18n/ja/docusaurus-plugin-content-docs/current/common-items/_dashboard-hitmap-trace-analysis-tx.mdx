@@ -14,29 +14,29 @@ WhaTapは、トランザクションの性能を分析するために、名前�
 
 </InDoc>
 
--   ![数字5](/img/number-05.png)領域では、ステップ情報をさまざまな形式で確認できます。 希望する形式のタブを選択してください。
+- ![数字5](/img/number-05.png)領域では、ステップ情報をさまざまな形式で確認できます。 希望する形式のタブを選択してください。
 
--   ![数字6](/img/number-06.png)領域では、トランザクションに関する基本情報を確認できます。 左一覧のカラム項目と一致する情報です。
+- ![数字6](/img/number-06.png)領域では、トランザクションに関する基本情報を確認できます。 左一覧のカラム項目と一致する情報です。
 
--   ![数字7](/img/number-07.png)![統計アイコン](/img/ic-static.svg):該当URLまたは各実行区間の統計データウィンドウが表示されます。 統計データウィンドウで**_詳細>_**ボタンを選択すると**_統計/レポート_**>**_統計_**メニューに移動します。 
+- ![数字7](/img/number-07.png)![統計アイコン](/img/ic-static.svg):該当URLまたは各実行区間の統計データウィンドウが表示されます。 統計データウィンドウで**_詳細>_**ボタンを選択すると**_統計/レポート_**>**_統計_**メニューに移動します。 
 
--   ![数字8](/img/number-08.png) <LinkImage img='hitmap-lr-drag.svg' alt='좌우 드래그 아이콘' className='_drag' />左または右にドラッグして、画面のサイズを調整できます。 より多くの情報を希望する時に利用すると便利です。
+- ![数字8](/img/number-08.png) <LinkImage img='hitmap-lr-drag.svg' alt='좌우 드래그 아이콘' className='_drag' />左または右にドラッグして、画面のサイズを調整できます。 より多くの情報を希望する時に利用すると便利です。
 
 :::note
 
 <InDoc product='kubernetes'>
 
--   **_統計_**メニューの詳細については、[次の文書](../java/analysis-apm-trs)を参照してください。
+- **_統計_**メニューの詳細については、[次の文書](../java/analysis-apm-trs)を参照してください。
 
--   <LinkImage img='ic-s-tx-left.svg' alt='左矢印アイコン' className='_txDrag' />または<LinkImage img='ic-s-tx-right.svg' alt='右矢印アイコン' className='_txDrag' />ボタンをクリックすると、トランザクション一覧または詳細な分析画面をフルサイズに変更できます。
+- <LinkImage img='ic-s-tx-left.svg' alt='左矢印アイコン' className='_txDrag' />または<LinkImage img='ic-s-tx-right.svg' alt='右矢印アイコン' className='_txDrag' />ボタンをクリックすると、トランザクション一覧または詳細な分析画面をフルサイズに変更できます。
 
 </InDoc>
 
 <InDoc product='java,python,php,nodejs,golang'>
 
--   **_統計_**メニューの詳細については、[次の文書](analysis-apm-trs)を参照してください。
+- **_統計_**メニューの詳細については、[次の文書](analysis-apm-trs)を参照してください。
 
--   <LinkImage img='ic-s-tx-left.svg' alt='左矢印アイコン' className='_txDrag' />または<LinkImage img='ic-s-tx-right.svg' alt='右矢印アイコン' className='_txDrag' />ボタンをクリックすると、トランザクション一覧または詳細な分析画面をフルサイズに変更できます。
+- <LinkImage img='ic-s-tx-left.svg' alt='左矢印アイコン' className='_txDrag' />または<LinkImage img='ic-s-tx-right.svg' alt='右矢印アイコン' className='_txDrag' />ボタンをクリックすると、トランザクション一覧または詳細な分析画面をフルサイズに変更できます。
 
 </InDoc>
 
@@ -44,42 +44,42 @@ WhaTapは、トランザクションの性能を分析するために、名前�
 
 収集する**ステップ**(**Step**)の種類は次のとおりです。 ダイアグラムとテキストの色を区分して表示します。
 
--   **_DB Connection_**ステップ<span class='type'>START-END</span>
+- **_DB Connection_**ステップ<span class='type'>START-END</span>
 
-    RDBへの接続のパフォーマンスが含まれます。 ステップ情報には、名前、レスポンス時間、エラーが含まれます。
+  RDBへの接続のパフォーマンスが含まれます。 ステップ情報には、名前、レスポンス時間、エラーが含まれます。
 
--   **_SQL_**ステップ<span class='type'>START-END</span>
+- **_SQL_**ステップ<span class='type'>START-END</span>
 
-    JDBC SQLのパフォーマンスが含まれます。 ステップ情報には、接続情報、SQL文、エラーが含まれています。
+  JDBC SQLのパフォーマンスが含まれます。 ステップ情報には、接続情報、SQL文、エラーが含まれています。
 
--   **_HTTP Call_**ステップ<span class='type'>START-END</span>
+- **_HTTP Call_**ステップ<span class='type'>START-END</span>
 
-    外部HTTPサービス呼び出しのパフォーマンスが含まれます。 ステップ情報には、url、host、port、レスポンス時間、エラーが含まれます。
+  外部HTTPサービス呼び出しのパフォーマンスが含まれます。 ステップ情報には、url、host、port、レスポンス時間、エラーが含まれます。
 
--   **_Message_**ステップ<span class='type'>ADD</span>
+- **_Message_**ステップ<span class='type'>ADD</span>
 
-    トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
+  トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
 
--   **_Socket_**ステップ<span class='type'>ADD</span>
+- **_Socket_**ステップ<span class='type'>ADD</span>
 
-    Socketオープンを表現するステップです。
+  Socketオープンを表現するステップです。
 
--   **_Method_**ステップ<span class='type'>START-END</span>
+- **_Method_**ステップ<span class='type'>START-END</span>
 
-    メソッド応答時間を追跡します。
+  メソッド応答時間を追跡します。
 
 <Xclude product='php,nodejs,golang'>
 
--   **_Active Stack_**ステップ<span class='type'>START-END</span>
+- **_Active Stack_**ステップ<span class='type'>START-END</span>
 
-    アクティブステップに関する情報が含まれます。 別のスレッドが作成し、トレースに追加する方法で収集します。
+  アクティブステップに関する情報が含まれます。 別のスレッドが作成し、トレースに追加する方法で収集します。
 
 </Xclude>
 
 :::note
 
--   WhaTapモニタリングサービスでは、**ステップ**(**Step**)は**スパン**(**Span**)と同じ意味で使用されます。
+- WhaTapモニタリングサービスでは、**ステップ**(**Step**)は**スパン**(**Span**)と同じ意味で使用されます。
 
--   2023年7月25日にリリースされた<UI>トレース分析</UI>機能の変更点を確認するには <Link to='../reference/changes-analysis-trace' target='_blank'>次の文書</Link>を参照してください。
+- 2023年7月25日にリリースされた<UI>トレース分析</UI>機能の変更点を確認するには <Link to='../reference/changes-analysis-trace' target='_blank'>次の文書</Link>を参照してください。
 
 :::

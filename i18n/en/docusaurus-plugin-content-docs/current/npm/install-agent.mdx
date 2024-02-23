@@ -91,23 +91,23 @@ In the **_Install guide_** section, select the **_Kubernetes_** tab and then fol
 
 ### Agent Creation
 
-1.  To create an agent, select <Cmdname sid="download" className="uitext" /> and then download the YAML file.
+1. To create an agent, select <Cmdname sid="download" className="uitext" /> and then download the YAML file.
 
-2.  Upload the downloaded YAML file to the master node.
+2. Upload the downloaded YAML file to the master node.
 
-3.  Execute the following command in the master node to create an agent.
+3. Execute the following command in the master node to create an agent.
 
-    ```bash
-    kubectl apply -f whatap_npmd.yaml
-    ```
+   ```bash
+   kubectl apply -f whatap_npmd.yaml
+   ```
 
-4.  Execute the following command and then check whether the agent's status (**STATUS**) is **RUNNING**.
+4. Execute the following command and then check whether the agent's status (**STATUS**) is **RUNNING**.
 
-    ```bash
-    kubectl get pod -n whatap-npm-ns
-    ```
+   ```bash
+   kubectl get pod -n whatap-npm-ns
+   ```
 
-    ![Installation NPM agent](/img/npm-k8s-check-running.png)
+   ![Installation NPM agent](/img/npm-k8s-check-running.png)
 
 ## Setting the TagRule option (optional)
 

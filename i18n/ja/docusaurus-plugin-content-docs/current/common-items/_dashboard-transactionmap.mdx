@@ -10,19 +10,19 @@
 
 ヒットマップチャートは、特定の期間のトランザクション発生件の合計を表示します。発生件数が多い箇所を色で違いを表現しています。ヒットマップの場合、セクションごとに合計されたデータが別々に保存されるため、比較的長い時間の傾向も確認できます。しかし、トランザクションを集計して表示するため、個々のトランザクション情報を知ることが困難です。
 
--   長期的に大量のトランザクションの分布図を分析するには、ヒットマップ分析を使用します。(<Cmdname sid="project_menu" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)
+- 長期的に大量のトランザクションの分布図を分析するには、ヒットマップ分析を使用します。(<Cmdname sid="project_menu" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)
 
--   パフォーマンステストのトラブル状況で1~5分以内にトランザクションの分布図の分析を行い、実行時間の制限なしでトランザクションの分布図を確認するには、<Cmdname sid="transaction_map" className="uitext" />を確認してください。
+- パフォーマンステストのトラブル状況で1~5分以内にトランザクションの分布図の分析を行い、実行時間の制限なしでトランザクションの分布図を確認するには、<Cmdname sid="transaction_map" className="uitext" />を確認してください。
 
 :::
 
 :::note
 
--   <Cmdname sid="hitmap" className="uitext" />メニューの詳細については、<Link to="trs-view">次の文書</Link>を参照してください。
+- <Cmdname sid="hitmap" className="uitext" />メニューの詳細については、<Link to="trs-view">次の文書</Link>を参照してください。
 
--   <Cmdname sid="hitmap_transaction" className="uitext" />チャートを分析する方法についての詳細は、<Link to="../best-practice-guides/about-apm-hitmap-class">次の文書</Link>を参照してください。
+- <Cmdname sid="hitmap_transaction" className="uitext" />チャートを分析する方法についての詳細は、<Link to="../best-practice-guides/about-apm-hitmap-class">次の文書</Link>を参照してください。
 
--   サーバー時間よりユーザーのPC時間が過去に設定された場合、サーバー時間とユーザーのPC時間に5分以上差がある場合、データがチャートに出力されないことがあります。
+- サーバー時間よりユーザーのPC時間が過去に設定された場合、サーバー時間とユーザーのPC時間に5分以上差がある場合、データがチャートに出力されないことがあります。
 
 :::
 
@@ -50,11 +50,11 @@
 
 ドロップダウンメニューのエージェント設定を通じて分類したグループ単位でエージェントを選択してトランザクションマップを確認することができます。
 
--   <Cmdname sid="type_oid" className="uitext" />：個別エージェントを選択またはすべて選択できます。
+- <Cmdname sid="type_oid" className="uitext" />：個別エージェントを選択またはすべて選択できます。
 
--   <Cmdname sid="type_onode" className="uitext" />：エージェント設定で<code>whatap.onode</code>で分類されたエージェントの一覧を選択できます。
+- <Cmdname sid="type_onode" className="uitext" />：エージェント設定で<code>whatap.onode</code>で分類されたエージェントの一覧を選択できます。
 
--   <Cmdname sid="type_okind" className="uitext" />：エージェント設定の<code>whatap.okind</code>で分類されたエージェントの一覧を選択できます。
+- <Cmdname sid="type_okind" className="uitext" />：エージェント設定の<code>whatap.okind</code>で分類されたエージェントの一覧を選択できます。
 
 ### エージェント検索で選択
 
@@ -86,17 +86,17 @@
 
 **_Top 30_**セクションの一覧で個別の項目を選択してフィルターを追加することもできますが、ユーザーが希望する項目を直接入力して追加することもできます。ユーザーが入力した文字列と一致するトランザクションをフィルタリングします。
 
-1.  <Cmdname sid="filter" className="uitext" />オプションで<Cmdname sid="add_filter" className="uitext" />または<LinkImage img="ico-add.svg" className="ico" />ボタンを選択してください。
+1. <Cmdname sid="filter" className="uitext" />オプションで<Cmdname sid="add_filter" className="uitext" />または<LinkImage img="ico-add.svg" className="ico" />ボタンを選択してください。
 
-2.  **_+ Add_**ボタンを選択してください。
+2. **_+ Add_**ボタンを選択してください。
 
-3.  <Cmdname sid="TTL06918" className="uitext" />、<Cmdname sid="TTL06101" className="uitext" />、<Cmdname sid="ip" className="uitext" />のいずれかを選択し、文字列を入力してください。
+3. <Cmdname sid="TTL06918" className="uitext" />、<Cmdname sid="TTL06101" className="uitext" />、<Cmdname sid="ip" className="uitext" />のいずれかを選択し、文字列を入力してください。
 
-    <ImgLang img='dashboard-txmap-filter.png' desc='フィルター追加' />
+   <ImgLang img='dashboard-txmap-filter.png' desc='フィルター追加' />
 
-    **_+ Add_**ボタンをタップしてフィルター項目を追加できます。
+   **_+ Add_**ボタンをタップしてフィルター項目を追加できます。
 
-4.  希望するフィルター項目を すべて追加したら**_Apply_**ボタンを選択してください。
+4. 希望するフィルター項目を すべて追加したら**_Apply_**ボタンを選択してください。
 
 追加したフィルター項目が<Cmdname sid="transaction_map" className="uitext" />チャートに反映されていることを確認してください。
 
@@ -106,14 +106,14 @@
 
 <ImgLang img='transaction-map-setting.png' desc='トランザクションマップの設定' />
 
--   ![設定アイコン](/img/ico-setting.svg)ボタンをタップすると、チャート関連の設定を修正できます。Y軸指標を選択することができ、最大値を設定することができます。設定を適用するには**_Apply_**ボタンを選択してください。
+- ![設定アイコン](/img/ico-setting.svg)ボタンをタップすると、チャート関連の設定を修正できます。Y軸指標を選択することができ、最大値を設定することができます。設定を適用するには**_Apply_**ボタンを選択してください。
 
-    :::tip
+  :::tip
 
-    Y軸指標としては<Cmdname sid="TTL06361" className="uitext" />、<Cmdname sid="TTL06364" className="uitext" />、<Cmdname sid="TTL06972" className="uitext" />、<Cmdname sid="TTL06362" className="uitext" />を選択することができます。
+  Y軸指標としては<Cmdname sid="TTL06361" className="uitext" />、<Cmdname sid="TTL06364" className="uitext" />、<Cmdname sid="TTL06972" className="uitext" />、<Cmdname sid="TTL06362" className="uitext" />を選択することができます。
 
-    :::
+  :::
 
--   ![上アイコン](/img/up-arrow.svg)または![下アイコン](/img/down-arrow.svg)ボタンを選択してY軸を拡大または縮小することができます。
+- ![上アイコン](/img/up-arrow.svg)または![下アイコン](/img/down-arrow.svg)ボタンを選択してY軸を拡大または縮小することができます。
 
--   <Cmdname sid="error_only" className="uitext" />を選択すると、チャートにエラー状態のトランザクションのみを表示します。
+- <Cmdname sid="error_only" className="uitext" />を選択すると、チャートにエラー状態のトランザクションのみを表示します。

@@ -1,0 +1,50 @@
+---
+id: java-2_2_27
+title: Java Agent v2.2.27
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_26
+displayed_sidebar: releaseSidebar
+---
+
+February 6, 2024
+
+- <Status>Feature</Status> Expanded the mule-3.9.5 tracing range.
+
+  ```ini title="whatap.conf"
+  # requires agent restart
+  weaving=mule-3.9.5
+  ```
+
+- <Status>Feature</Status> camel-cxf-3.15 tracing
+
+  ```ini title="whatap.conf"
+  # requires agent restart
+  weaving=camel-cxf-3.15
+  ```
+
+- <Status>Feature</Status> Added the <code>OracleCallableStatement</code> tracing.
+
+- <Status>Changed</Status> Added the key collection range of Redis when using the Lettuce driver.
+
+  ```ini title="whatap.conf"
+  # requires agent restart
+  weaving=Lettuce-6.2
+  ```
+
+- <Status>Changed</Status> Modified whether or not to collect the keys of Redis when using the Lettuce driver.
+
+  ```ini title="whatap.conf"
+  # default: false
+  trace_sql_param_enabled=true
+
+  # default: false
+  trace_redis_Lettuce_key_enabled=true
+  ```
+
+- <Status>Changed</Status> Limited the count to collect keys of Redis when using the Lettuce driver.
+
+- <Status>Fixed</Status> Separated querystring from the request URL when using netty in spring-boot.
+
+- <Status>Fixed</Status> Fixed the issue where the request HTTP parameters cannot be collected when using netty in spring-boot.
+
+- <Status>Deprecate</Status> Redis value collection is stopped when using the Lettuce driver.

@@ -23,49 +23,49 @@ Category is a name that identifies the metrics data collected from your project.
 
 ## Kubernetes Monitoring features
 
--   **Integrated monitoring based on Kubernetes**
+- **Integrated monitoring based on Kubernetes**
 
-    Kubernetes Integrated Monitoring supports both multi and hybrid cloud
+  Kubernetes Integrated Monitoring supports both multi and hybrid cloud
 
--   **Analysis of service-based call relationship in MSA**
+- **Analysis of service-based call relationship in MSA**
 
-    It traces API call relationships for transactions in a pod-level distributed application environment.
+  It traces API call relationships for transactions in a pod-level distributed application environment.
 
--   **Correlation can be identified at a glance**
+- **Correlation can be identified at a glance**
 
-    "Root Cause Analysis" can be solved by monitoring the host, containers, and applications together.
+  "Root Cause Analysis" can be solved by monitoring the host, containers, and applications together.
 
--   **Detailed analysis of containerized applications**
+- **Detailed analysis of containerized applications**
 
-    It provides the hitmap and profile functions required for analyzing Java, Node.js, and Python-based applications hidden in containers. In particular, the multi-service dashboard, MSA analysis, and multi-transaction tracing that are useful in modern application environments, can be completed with one WhaTap.
+  It provides the hitmap and profile functions required for analyzing Java, Node.js, and Python-based applications hidden in containers. In particular, the multi-service dashboard, MSA analysis, and multi-transaction tracing that are useful in modern application environments, can be completed with one WhaTap.
 
--   **Unified and flexible visibility through container maps**
+- **Unified and flexible visibility through container maps**
 
-    WhaTap provides information of integrated Kubernetes platform resources as well as the metrics, events, and logs of applications running in Kubernetes. A single view enables smooth communication between infrastructure and application owners, as well as visibility from various perspectives.
+  WhaTap provides information of integrated Kubernetes platform resources as well as the metrics, events, and logs of applications running in Kubernetes. A single view enables smooth communication between infrastructure and application owners, as well as visibility from various perspectives.
 
--   **Detailed resource monitoring and usage trend checking**
+- **Detailed resource monitoring and usage trend checking**
 
-    With the dashboard that has the resource usage and trend in containers and nodes, you can set to run containers on multiple nodes. User can take a closer look at containers and nodes, starting with the entire list of containers or nodes within the WhaTap project down to the details of individual objects.
+  With the dashboard that has the resource usage and trend in containers and nodes, you can set to run containers on multiple nodes. User can take a closer look at containers and nodes, starting with the entire list of containers or nodes within the WhaTap project down to the details of individual objects.
 
--   **Meta information can be searched without accessing the master**
+- **Meta information can be searched without accessing the master**
 
-    Basic meta information of key resources can be checked on the container map, and the entire meta information of various components can be checked at a glance through a separate master meta dashboard. You can save time because there is no need to check meta data one by one by the command.
+  Basic meta information of key resources can be checked on the container map, and the entire meta information of various components can be checked at a glance through a separate master meta dashboard. You can save time because there is no need to check meta data one by one by the command.
 
--   **Focusing on log analysis rather than managing logs**
+- **Focusing on log analysis rather than managing logs**
 
-    Log files and default outputs of containers can be saved in real time, allowing you to check logs in the container environment whose lifecycle is not constant. Without accessing containers individually, focus on log analysis by categorizing and indexing main content, including meaningful information generated from applications.
+  Log files and default outputs of containers can be saved in real time, allowing you to check logs in the container environment whose lifecycle is not constant. Without accessing containers individually, focus on log analysis by categorizing and indexing main content, including meaningful information generated from applications.
 
 ## Supported Platforms & Products
 
 Kubernetes monitoring targets are Kubernetes clusters and applications running on Kubernetes.
 
--   Kubernetes Cluster Monitoring
+- Kubernetes Cluster Monitoring
 
-    -   CPU, memory, disk (volume), and network for individual containers
-    -   Kubernetes components that make up services such as namespace, deployment, ReplicaSet, and pod
-    -   CPU, memory, disk, and network for individual nodes (host)
+  - CPU, memory, disk (volume), and network for individual containers
+  - Kubernetes components that make up services such as namespace, deployment, ReplicaSet, and pod
+  - CPU, memory, disk, and network for individual nodes (host)
 
--   Monitoring applications running on Kubernetes: Java, Node.js, Python, etc.
+- Monitoring applications running on Kubernetes: Java, Node.js, Python, etc.
 
 The monitoring procedure to be explained later is also divided into a procedure for cluster monitoring and a procedure for application monitoring.
 
@@ -73,15 +73,15 @@ The monitoring procedure to be explained later is also divided into a procedure 
 
 ### Kubernetes Cluster Monitoring procedure
 
-1.  Create a cluster project in [WhaTap Monitoring Service](https://service.whatap.io).
+1. Create a cluster project in [WhaTap Monitoring Service](https://service.whatap.io).
 
   If you create a new Kubernetes project on the WhaTap monitoring service, the created project is a **cluster project**. See [the following](install#create-project).
 
-1.  Install the master agent (whatap-master-agent) and node agent (whatap-node-agent) in the Kubernetes environment. See [the following](install-master-node-agent).
+1. Install the master agent (whatap-master-agent) and node agent (whatap-node-agent) in the Kubernetes environment. See [the following](install-master-node-agent).
 
   The master agent and node agent run in the form of pods within the user's cluster.
 
-1.  (Optional) When multiple namespaces exist in a cluster project, users can separate individual namespace projects from the WhaTap monitoring service. See [the following](create-name-space-project).
+1. (Optional) When multiple namespaces exist in a cluster project, users can separate individual namespace projects from the WhaTap monitoring service. See [the following](create-name-space-project).
 
 :::tip
 

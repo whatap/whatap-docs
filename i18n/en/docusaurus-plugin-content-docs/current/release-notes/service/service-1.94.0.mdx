@@ -22,20 +22,20 @@ import UI from '@site/src/components/UItext';
 
 ### `Common`
 
--   In **_Management_** > **_Project Member_**, the following functions have been added.
+- In **_Management_** > **_Project Member_**, the following functions have been added.
 
-    -   <Status>Feature</Status> Added the mark to display whether the affiliation type in the <UI>Belong to</UI> column from the member list is group or project.
+  - <Status>Feature</Status> Added the mark to display whether the affiliation type in the <UI>Belong to</UI> column from the member list is group or project.
 
-    -   <Status>Feature</Status> Added the tooltip (deletion is impossible) when the member deletion (<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) button is disabled.
+  - <Status>Feature</Status> Added the tooltip (deletion is impossible) when the member deletion (<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) button is disabled.
 
--   In **_My Usage_** and **_Billing Management_**, the following functions have been modified.
+- In **_My Usage_** and **_Billing Management_**, the following functions have been modified.
 
-    -   <Status>Change</Status> In <UI>Preview Invoice</UI> and <UI>Usage</UI>, changed the log display and expression units according to the change in log charging policy.
+  - <Status>Change</Status> In <UI>Preview Invoice</UI> and <UI>Usage</UI>, changed the log display and expression units according to the change in log charging policy.
 
-        -   Change of the log display unit: LOGs ⇒ LOG UNITs
-        -   Change of the log representation unit: Modified to display the daily average for the summed log line count.
-        -   In <UI>Preview Invoice</UI>, changed to display the log usage in the <UI>Metered Units</UI> column.
-        -   In <UI>Usage</UI>, changed the metering summary column for usage details.
+    - Change of the log display unit: LOGs ⇒ LOG UNITs
+    - Change of the log representation unit: Modified to display the daily average for the summed log line count.
+    - In <UI>Preview Invoice</UI>, changed to display the log usage in the <UI>Metered Units</UI> column.
+    - In <UI>Usage</UI>, changed the metering summary column for usage details.
 
 <!--
 ### `Database`
@@ -60,8 +60,8 @@ import UI from '@site/src/components/UItext';
 
 <Status>Fixed</Status> Modified the Java, Python, Node.js agent configuration option names.
 
--   `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
--   `trace_active_stack_red_time` → `trace_active_transaction_red_time`
+- `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
+- `trace_active_stack_red_time` → `trace_active_transaction_red_time`
 
 ## Official Release: 2023-01-11
 
@@ -69,128 +69,128 @@ import UI from '@site/src/components/UItext';
 
 #### Project Creation
 
--   <Status>Change</Status> Change the menu name from <UI>Project List</UI> to <UI>Product Catalog</UI>.
+- <Status>Change</Status> Change the menu name from <UI>Project List</UI> to <UI>Product Catalog</UI>.
 
--   <Status>Change</Status> Changed the project creation URL path (<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>).
+- <Status>Change</Status> Changed the project creation URL path (<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>).
 
--   <Status>Change</Status> Modified the project creation UI.
+- <Status>Change</Status> Modified the project creation UI.
 
-    ![](/img/create-project-new.png)
+  ![](/img/create-project-new.png)
 
 #### Project list
 
--   <Status>Fixed</Status> When going to the project list by selecting a group on the initial screen, modified to display a loading spinner when a delay occurs.
+- <Status>Fixed</Status> When going to the project list by selecting a group on the initial screen, modified to display a loading spinner when a delay occurs.
 
--   <Status>Fixed</Status> Fixed the agent count display error in the cluster project card view.
+- <Status>Fixed</Status> Fixed the agent count display error in the cluster project card view.
 
--   <Status>Fixed</Status> Fixed the problem where the favorites feature malfunctioned.
+- <Status>Fixed</Status> Fixed the problem where the favorites feature malfunctioned.
 
--   <Status>Change</Status> Modified to go to the page other than a new window when selecting a project item in the list view.
+- <Status>Change</Status> Modified to go to the page other than a new window when selecting a project item in the list view.
 
 #### Dashboard
 
 In <UI>Dashboard</UI> > <UI>Flex Board</UI> or Home > <UI>Flex Board</UI>, added or modified the following functions.
 
--   <Status>Feature</Status> Added the widget templates.
+- <Status>Feature</Status> Added the widget templates.
 
-    -   Maintenance Plan
-    -   Log long-term archive statistics
-    -   Log Count per second
-    -   Log 4XX, 5XX Count
-    -   Request Success Rate
-    -   Log Response Time
+  - Maintenance Plan
+  - Log long-term archive statistics
+  - Log Count per second
+  - Log 4XX, 5XX Count
+  - Request Success Rate
+  - Log Response Time
 
--   <Status>Feature</Status> Added the <UI>Align</UI> function on the upper right of the dashboard list screen.
+- <Status>Feature</Status> Added the <UI>Align</UI> function on the upper right of the dashboard list screen.
 
--   <Status>Feature</Status> Add the Log RPS Board template for the server suite products to Dashboard.
+- <Status>Feature</Status> Add the Log RPS Board template for the server suite products to Dashboard.
 
--   <Status>Feature</Status> Added all category options for the log count widget category selection.
+- <Status>Feature</Status> Added all category options for the log count widget category selection.
 
--   <Status>Change</Status> Added the guide tooltip on the dashboard favorite icon.
+- <Status>Change</Status> Added the guide tooltip on the dashboard favorite icon.
 
--   <Status>Change</Status> In the dashboard template list, modified to display icons for available product categories for each item.
+- <Status>Change</Status> In the dashboard template list, modified to display icons for available product categories for each item.
 
--   <Status>Change</Status> Adjusted the width of widgets in the dashboard template for ECS products.
+- <Status>Change</Status> Adjusted the width of widgets in the dashboard template for ECS products.
 
--   <Status>Change</Status> When entering into the project, modified the entry path depending on the installation status of items.
+- <Status>Change</Status> When entering into the project, modified the entry path depending on the installation status of items.
 
-    -   In case any item has been installed: Goes to the dashboard that matches the item type.
-        -   aws: Moved to <UI>Amazon CloudWatch</UI> > <UI>EC2</UI>.
-        -   ecs: Moved to <UI>Amazon ECS</UI> > <UI>Task</UI>.
-        -   Others: Moved to <UI>Flex Board</UI>.
-    -   In case the items have not been installed: Moves to <UI>Management</UI> > <UI>Agent Installation</UI>.
+  - In case any item has been installed: Goes to the dashboard that matches the item type.
+    - aws: Moved to <UI>Amazon CloudWatch</UI> > <UI>EC2</UI>.
+    - ecs: Moved to <UI>Amazon ECS</UI> > <UI>Task</UI>.
+    - Others: Moved to <UI>Flex Board</UI>.
+  - In case the items have not been installed: Moves to <UI>Management</UI> > <UI>Agent Installation</UI>.
 
--   <Status>Fixed</Status> Modified to enable deletion when the dashboard is copied as read-only.
+- <Status>Fixed</Status> Modified to enable deletion when the dashboard is copied as read-only.
 
--   <Status>Fixed</Status> Fixed the problem where the cluster cannot be viewed by the hitmap widget.
+- <Status>Fixed</Status> Fixed the problem where the cluster cannot be viewed by the hitmap widget.
 
--   <Status>Fixed</Status> When creating or editing a dashboard, the dashboard title has been limited to 100 characters.
+- <Status>Fixed</Status> When creating or editing a dashboard, the dashboard title has been limited to 100 characters.
 
--   <Status>Fixed</Status> When using the <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>Filter</UI> function after selecting a dashboard, deleted the <img src='/img/ico-close.svg' alt='닫기 아이콘'/> Close button that appears when modifying the <UI>saved filters</UI>.
+- <Status>Fixed</Status> When using the <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>Filter</UI> function after selecting a dashboard, deleted the <img src='/img/ico-close.svg' alt='닫기 아이콘'/> Close button that appears when modifying the <UI>saved filters</UI>.
 
--   <Status>Fixed</Status> Modified to open the detailed information window for only the products that support the active transaction function when the equalizer chart is clicked.
+- <Status>Fixed</Status> Modified to open the detailed information window for only the products that support the active transaction function when the equalizer chart is clicked.
 
--   <Status>Fixed</Status> Improved the loading layout of the detailed information window that appears when the active transaction widget is clicked.
+- <Status>Fixed</Status> Improved the loading layout of the detailed information window that appears when the active transaction widget is clicked.
 
--   <Status>Fixed</Status> Fixed the problem where the animation of the time selection UI option is not updated.
+- <Status>Fixed</Status> Fixed the problem where the animation of the time selection UI option is not updated.
 
 #### Application Dashboard
 
--   <Status>Feature</Status> Added a button to the heap memory widget to display the usage as percentage (USED/TOTAL * 100).
+- <Status>Feature</Status> Added a button to the heap memory widget to display the usage as percentage (USED/TOTAL * 100).
 
--   <Status>Fixed</Status> In the widget's "Display Detail," the chart data interval has been changed from 1 hour to 4 minutes.
+- <Status>Fixed</Status> In the widget's "Display Detail," the chart data interval has been changed from 1 hour to 4 minutes.
 
--   <Status>Fixed</Status> Fixed the bug where the screen does not appear when "Show Profile" is clicked for a closed active transaction.
+- <Status>Fixed</Status> Fixed the bug where the screen does not appear when "Show Profile" is clicked for a closed active transaction.
 
 #### Analytics
 
 In <UI>Metrics Chart</UI>, added and modified the following functions.
 
--   <Status>Feature</Status> Added the option to fix the maximum value on Y-axis of the widget chart.
+- <Status>Feature</Status> Added the option to fix the maximum value on Y-axis of the widget chart.
 
--   <Status>Change</Status> Modified the function to select multiple agents in the widget.
+- <Status>Change</Status> Modified the function to select multiple agents in the widget.
 
--   <Status>Fixed</Status> Modified to change the query period only when the chart dragging range in the widget's `Display Detail` is greater than 1 minute.
+- <Status>Fixed</Status> Modified to change the query period only when the chart dragging range in the widget's `Display Detail` is greater than 1 minute.
 
--   <Status>Fixed</Status> Disabled the view button not to change the query period of the widget while loading the data request in the widget's `Display Detail`.
+- <Status>Fixed</Status> Disabled the view button not to change the query period of the widget while loading the data request in the widget's `Display Detail`.
 
--   <Status>Fixed</Status> Fixed the bug where all agents are selected when changing the time in the widget.
+- <Status>Fixed</Status> Fixed the bug where all agents are selected when changing the time in the widget.
 
--   <Status>Fixed</Status> In <UI>Application Dashboard</UI>, fixed the bug where double selection of agents is made when going to <UI>Metrics Chart</UI>.
+- <Status>Fixed</Status> In <UI>Application Dashboard</UI>, fixed the bug where double selection of agents is made when going to <UI>Metrics Chart</UI>.
 
 #### Alert
 
--   <Status>Feature</Status> In <UI>Event Setting</UI> > <UI>Metrics</UI>, added the button to move the <UI>Notification message settings</UI> menu under Laboratory.
+- <Status>Feature</Status> In <UI>Event Setting</UI> > <UI>Metrics</UI>, added the button to move the <UI>Notification message settings</UI> menu under Laboratory.
 
--   <Status>Feature</Status> In <UI>Event Setting</UI> > <UI>Hitmap Pattern</UI>, added the function to add the <UI>Event Receiving Tag</UI> beneath each item.
+- <Status>Feature</Status> In <UI>Event Setting</UI> > <UI>Hitmap Pattern</UI>, added the function to add the <UI>Event Receiving Tag</UI> beneath each item.
 
--   <Status>Change</Status> In <UI>Event Setting</UI> > <UI>Metrics</UI> tab, modified to sort the alert list by the title.
+- <Status>Change</Status> In <UI>Event Setting</UI> > <UI>Metrics</UI> tab, modified to sort the alert list by the title.
 
--   <Status>Fixed</Status> In <UI>Event Setting</UI>, fixed the bug where the user with no project Edit role cannot modify the alert.
+- <Status>Fixed</Status> In <UI>Event Setting</UI>, fixed the bug where the user with no project Edit role cannot modify the alert.
 
--   <Status>Fixed</Status> In <UI>Event Setting</UI> > <UI>Composite Metrics</UI> > <UI>Add alert policy</UI>, modified not to be saved without entering the title and message.
+- <Status>Fixed</Status> In <UI>Event Setting</UI> > <UI>Composite Metrics</UI> > <UI>Add alert policy</UI>, modified not to be saved without entering the title and message.
 
--   <Status>Fixed</Status> In <UI>Event Setting</UI> > <UI>Composite Metrics</UI> > <UI>Add alert policy</UI> > <UI>Creating as a Chart</UI> > <UI>Show Event</UI> > <UI>Text</UI> mode, fixed the bug where loading continues when changing to the widget type or table.
+- <Status>Fixed</Status> In <UI>Event Setting</UI> > <UI>Composite Metrics</UI> > <UI>Add alert policy</UI> > <UI>Creating as a Chart</UI> > <UI>Show Event</UI> > <UI>Text</UI> mode, fixed the bug where loading continues when changing to the widget type or table.
 
--   <Status>Fixed</Status> In the <UI>Add alert policy</UI> window under <UI>Event Setting</UI>, fixed the bug where the URL path is changed to the application type (<code>apm</code>), if <UI>Project Notification Setting Menu</UI> or its shortcut is clicked.
+- <Status>Fixed</Status> In the <UI>Add alert policy</UI> window under <UI>Event Setting</UI>, fixed the bug where the URL path is changed to the application type (<code>apm</code>), if <UI>Project Notification Setting Menu</UI> or its shortcut is clicked.
 
--   <Status>Fixed</Status> In <UI>Notification Setting</UI> > <UI>Event Notification Settings Per-User</UI>, fixed the bug where invalid time is saved if <img src='/img/ico-close.svg' alt='닫기 아이콘'/> of the receiving time selector option is clicked and deleted the <img src='/img/ico-close.svg' alt='닫기 아이콘'/> button.
+- <Status>Fixed</Status> In <UI>Notification Setting</UI> > <UI>Event Notification Settings Per-User</UI>, fixed the bug where invalid time is saved if <img src='/img/ico-close.svg' alt='닫기 아이콘'/> of the receiving time selector option is clicked and deleted the <img src='/img/ico-close.svg' alt='닫기 아이콘'/> button.
 
--   <Status>Fixed</Status> If <UI>Event History</UI> is accessed for the first time, fixed the bug where the data is not applied to the table list according to the set filters.
+- <Status>Fixed</Status> If <UI>Event History</UI> is accessed for the first time, fixed the bug where the data is not applied to the table list according to the set filters.
 
 #### Log
 
--   <Status>Feature</Status> In <UI>Setting</UI>, added the <UI>Log long-term archive statistics</UI> panel.
+- <Status>Feature</Status> In <UI>Setting</UI>, added the <UI>Log long-term archive statistics</UI> panel.
 
--   <Status>Feature</Status> In <UI>Setting</UI>, under <UI>Log Parser Setting</UI>, added the <UI>4xx, 5xx Status Code Parser</UI> and <UI>Status Code Success Rate Parser</UI>.
+- <Status>Feature</Status> In <UI>Setting</UI>, under <UI>Log Parser Setting</UI>, added the <UI>4xx, 5xx Status Code Parser</UI> and <UI>Status Code Success Rate Parser</UI>.
 
--   <Status>Feature</Status> In <UI>Setting</UI>, added the <UI>Log Monitoring Data Setting</UI> > <UI>Log Data Retention</UI> for each category.
+- <Status>Feature</Status> In <UI>Setting</UI>, added the <UI>Log Monitoring Data Setting</UI> > <UI>Log Data Retention</UI> for each category.
 
--   <Status>Fixed</Status> In <UI>Live Tail</UI>, fixed the malfunction of the content lookup function.
+- <Status>Fixed</Status> In <UI>Live Tail</UI>, fixed the malfunction of the content lookup function.
 
--   <Status>Fixed</Status> In <UI>Live Tail</UI>, fixed the malfunction of the content filtering (highlighting) function.
+- <Status>Fixed</Status> In <UI>Live Tail</UI>, fixed the malfunction of the content filtering (highlighting) function.
 
--   <Status>Fixed</Status> Fixed the issue where in <UI>Live Tail</UI>, the Tail data calls at an interval of 3 seconds are not delayed.
+- <Status>Fixed</Status> Fixed the issue where in <UI>Live Tail</UI>, the Tail data calls at an interval of 3 seconds are not delayed.
 
 #### User Behavior
 
@@ -202,66 +202,66 @@ In <UI>Metrics Chart</UI>, added and modified the following functions.
 
 #### Management
 
--   In <UI>Maintenance Plan</UI>, added and modified the following functions.
+- In <UI>Maintenance Plan</UI>, added and modified the following functions.
 
-    -   <Status>Feature</Status> Added the function to display the maintenance plan notice at the top of the screen.
+  - <Status>Feature</Status> Added the function to display the maintenance plan notice at the top of the screen.
 
-    -   <Status>Change</Status> Improved UIs for maintenance plans.
+  - <Status>Change</Status> Improved UIs for maintenance plans.
 
-        -   Change of the repeat option UI text: <UI>Daily</UI>/<UI>Weekly</UI>/<UI>Monthly</UI>/<UI>Yearly</UI>
-        -   Changed the order of columns in the maintenance plan table.
-        -   Added maintenance plans; enhanced the modification modal UI.
-        -   Modified to select <UI>Once</UI> by default upon adding a maintenance plan.
-        -   Modified the maintenance plan guide text and its location.
+    - Change of the repeat option UI text: <UI>Daily</UI>/<UI>Weekly</UI>/<UI>Monthly</UI>/<UI>Yearly</UI>
+    - Changed the order of columns in the maintenance plan table.
+    - Added maintenance plans; enhanced the modification modal UI.
+    - Modified to select <UI>Once</UI> by default upon adding a maintenance plan.
+    - Modified the maintenance plan guide text and its location.
 
-    -   <Status>Fixed</Status> Modified not to delete any server maintenance plan.
+  - <Status>Fixed</Status> Modified not to delete any server maintenance plan.
 
--   <Status>Change</Status> Deleted the <b>Integration Items</b> menu; provided the function in <UI>Management</UI> > <UI>Agent Installation</UI>.
+- <Status>Change</Status> Deleted the <b>Integration Items</b> menu; provided the function in <UI>Management</UI> > <UI>Agent Installation</UI>.
 
--   <Status>Change</Status> If the item is ECS, in <UI>Management</UI> > <UI>Agent Installation</UI>, repositioned the <UI>Activate monitoring</UI> button into the installation procedure, which has been fixed at the bottom of the Install guide page.
+- <Status>Change</Status> If the item is ECS, in <UI>Management</UI> > <UI>Agent Installation</UI>, repositioned the <UI>Activate monitoring</UI> button into the installation procedure, which has been fixed at the bottom of the Install guide page.
 
--   <Status>Change</Status> Changed the style of the maintenance plan's guide text at the top of the screen and modified the locations of buttons.
+- <Status>Change</Status> Changed the style of the maintenance plan's guide text at the top of the screen and modified the locations of buttons.
 
 #### Agent/Server Setting
 
--   <Status>Feature</Status> Added an icon button to delete disabled agents from the agent list in the following menu paths.
+- <Status>Feature</Status> Added an icon button to delete disabled agents from the agent list in the following menu paths.
 
-    -   Application, Cluster Project: **_Management_** > **_Agent CONFIG._**
-    -   Server Project: **_Server Setting_** > **_Server Setting_**
+  - Application, Cluster Project: **_Management_** > **_Agent CONFIG._**
+  - Server Project: **_Server Setting_** > **_Server Setting_**
 
--   <Status>Feature</Status> In the following menu path, added the <UI>Delete All Disabled Agents</UI> button.
+- <Status>Feature</Status> In the following menu path, added the <UI>Delete All Disabled Agents</UI> button.
 
-    -   Application, Cluster Project: **_Management_** > **_Agent CONFIG._**
-    -   Server Project: **_Server Setting_** > **_Server Setting_**
+  - Application, Cluster Project: **_Management_** > **_Agent CONFIG._**
+  - Server Project: **_Server Setting_** > **_Server Setting_**
 
--   <Status>Feature</Status> Added the agent alias editing function.
+- <Status>Feature</Status> Added the agent alias editing function.
 
--   <Status>Change</Status> In a cluster project, the agent list is divided into master, node, and application units.
+- <Status>Change</Status> In a cluster project, the agent list is divided into master, node, and application units.
 
--   <Status>Fixed</Status> Fixed the bug where the search filter does not work in some projects.
+- <Status>Fixed</Status> Fixed the bug where the search filter does not work in some projects.
 
--   <Status>Fixed</Status> Fixed the problem where the agent list is collapsed because the selected agent cannot be clicked while the agent list is expanded.
+- <Status>Fixed</Status> Fixed the problem where the agent list is collapsed because the selected agent cannot be clicked while the agent list is expanded.
 
--   <Status>Deprecate</Status> Removed the <b>Applying Multiple</b> function from the server project or cluster project.
+- <Status>Deprecate</Status> Removed the <b>Applying Multiple</b> function from the server project or cluster project.
 
 #### My Usage, Site Management
 
--   In <UI>Project Subscription</UI>, the following functions have been added.
+- In <UI>Project Subscription</UI>, the following functions have been added.
 
-    -   <Status>Feature</Status> Added the <UI>Cancel Subscription</UI> function for the projects with the subscription time of less than 7 days.
-    -   <Status>Feature</Status> Added the <UI>Delete Project</UI> function for the projects that are after 7 days from the subscription time.
+  - <Status>Feature</Status> Added the <UI>Cancel Subscription</UI> function for the projects with the subscription time of less than 7 days.
+  - <Status>Feature</Status> Added the <UI>Delete Project</UI> function for the projects that are after 7 days from the subscription time.
 
--   In <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Subscription History</UI>, modified the following functions.
+- In <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Subscription History</UI>, modified the following functions.
 
-    -   <Status>Change</Status> In the <UI>Monthly Estimation</UI> column, modified to additionally display the `session usage details`.
-    -   <Status>Change</Status> Modified to display the MYSQL RDS product on the <UI>Product Type</UI> column.
+  - <Status>Change</Status> In the <UI>Monthly Estimation</UI> column, modified to additionally display the `session usage details`.
+  - <Status>Change</Status> Modified to display the MYSQL RDS product on the <UI>Product Type</UI> column.
 
--   <Status>Change</Status> In the following menu, added the function to display universal metering information (MtypeDetail) by adding it to <UI>Usage</UI> > <UI>Detail</UI>.
+- <Status>Change</Status> In the following menu, added the function to display universal metering information (MtypeDetail) by adding it to <UI>Usage</UI> > <UI>Detail</UI>.
 
-    -   <UI>My Usage</UI> > <UI>Usage</UI>
-    -   <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Usage</UI>
+  - <UI>My Usage</UI> > <UI>Usage</UI>
+  - <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Usage</UI>
 
--   <Status>Change</Status> In <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Invoice</UI>, added the <UI>Monthly Session Usage</UI> column.
+- <Status>Change</Status> In <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Invoice</UI>, added the <UI>Monthly Session Usage</UI> column.
 
 ### `Application`
 
@@ -277,15 +277,15 @@ In <UI>Metrics Chart</UI>, added and modified the following functions.
 
 #### Server List
 
--   <Status>Fixed</Status> While loading the data in <UI>Sever List</UI>, deleted the message, "No agent installed" and modified to display the loading spinner.
+- <Status>Fixed</Status> While loading the data in <UI>Sever List</UI>, deleted the message, "No agent installed" and modified to display the loading spinner.
 
--   <Status>Fixed</Status> In <UI>Server Detail</UI>, fixed the bug where the search time and the time for the detail view are not matched when clicking "See resource details" in the following menu paths.
+- <Status>Fixed</Status> In <UI>Server Detail</UI>, fixed the bug where the search time and the time for the detail view are not matched when clicking "See resource details" in the following menu paths.
 
--   <Status>Fixed</Status> Fixed the problem where charts are not drawn properly on the screen when the <UI>Server Detail</UI> menu appears by selecting several items from the real-time alert list.
+- <Status>Fixed</Status> Fixed the problem where charts are not drawn properly on the screen when the <UI>Server Detail</UI> menu appears by selecting several items from the real-time alert list.
 
--   <Status>Fixed</Status> Fixed the bug where any disabled agent can be selected in the <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>Agent Transfer</UI> window.
+- <Status>Fixed</Status> Fixed the bug where any disabled agent can be selected in the <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>Agent Transfer</UI> window.
 
--   <Status>Fixed</Status> Modified to display the `undefined` item in cells with empty data when downloading CSV, as blank.
+- <Status>Fixed</Status> Modified to display the `undefined` item in cells with empty data when downloading CSV, as blank.
 
 #### Analytics
 
@@ -299,59 +299,59 @@ In <UI>Metrics Chart</UI>, added and modified the following functions.
 
 #### Dashboard
 
--   <Status>Feature</Status> In <UI>Instance List</UI> for PostgreSQL and MySQL, added the marks <UI>M</UI>(Master), <UI>S</UI>(Slave), <UI>C</UI>(Cluster) in the <UI>Server Name</UI> column.
+- <Status>Feature</Status> In <UI>Instance List</UI> for PostgreSQL and MySQL, added the marks <UI>M</UI>(Master), <UI>S</UI>(Slave), <UI>C</UI>(Cluster) in the <UI>Server Name</UI> column.
 
 #### Analytics
 
--   <Status>Feature</Status> In <UI>Database Parameter</UI>, added the <UI>Reference Date</UI> and <UI>Comparison Date</UI> selection option.
+- <Status>Feature</Status> In <UI>Database Parameter</UI>, added the <UI>Reference Date</UI> and <UI>Comparison Date</UI> selection option.
 
--   <Status>Change</Status> In <UI>Lock Tree</UI>, repositioned the <UI>date</UI> selection option to the left.
+- <Status>Change</Status> In <UI>Lock Tree</UI>, repositioned the <UI>date</UI> selection option to the left.
 
--   <Status>Change</Status> In <UI>Dead Lock</UI>, changed the <UI>time</UI> selection option UI.
+- <Status>Change</Status> In <UI>Dead Lock</UI>, changed the <UI>time</UI> selection option UI.
 
 #### STAT/REPORT
 
--   <Status>Feature</Status> In <UI>Table Size Increase</UI>, added the <UI>Reference Date</UI> and <UI>Comparison Date</UI> selection option.
+- <Status>Feature</Status> In <UI>Table Size Increase</UI>, added the <UI>Reference Date</UI> and <UI>Comparison Date</UI> selection option.
 
--   <Status>Change</Status> In <UI>Tablespace Size</UI>, <UI>SGA Size</UI>, and <UI>Database Size</UI>, change the <UI>time</UI> selection option UI.
+- <Status>Change</Status> In <UI>Tablespace Size</UI>, <UI>SGA Size</UI>, and <UI>Database Size</UI>, change the <UI>time</UI> selection option UI.
 
--   <Status>Change</Status> In <UI>Table Size Increase</UI>, added the data unit (MiB) in the detailed information and the sorting function when the table header is clicked.
+- <Status>Change</Status> In <UI>Table Size Increase</UI>, added the data unit (MiB) in the detailed information and the sorting function when the table header is clicked.
 
 ### `Container`
 
 #### Container Map
 
--   <Status>New</Status> Added the <UI>Pending Pod</UI> function to the Laboratory menu for Kubernetes suite products.
+- <Status>New</Status> Added the <UI>Pending Pod</UI> function to the Laboratory menu for Kubernetes suite products.
 
--   <Status>Feature</Status> Added CronJob to the related events to provide additional log data to the job-type pods.
+- <Status>Feature</Status> Added CronJob to the related events to provide additional log data to the job-type pods.
 
--   <Status>Feature</Status> In Display Detail, added the container list link (<UI>Container Performance</UI>) in the <code>ContainerId</code> tag.
+- <Status>Feature</Status> In Display Detail, added the container list link (<UI>Container Performance</UI>) in the <code>ContainerId</code> tag.
 
--   <Status>Feature</Status> Added the function to display <UI>Event</UI> tab first when PodStatus is in Pending state.
+- <Status>Feature</Status> Added the function to display <UI>Event</UI> tab first when PodStatus is in Pending state.
 
--   <Status>Change</Status> Modified to display the container count to the tooltips for each pod when one or more containers exist in a pod.
+- <Status>Change</Status> Modified to display the container count to the tooltips for each pod when one or more containers exist in a pod.
 
--   <Status>Change</Status> Modified to display the container lists for each pod in the summary on the right when one or more containers exist in a pod.
+- <Status>Change</Status> Modified to display the container lists for each pod in the summary on the right when one or more containers exist in a pod.
 
--   <Status>Change</Status> Adjusted the TX profile window size.
+- <Status>Change</Status> Adjusted the TX profile window size.
 
--   <Status>Fixed</Status> Fixed the bug where the input fields increase when the same values are entered in <UI>Critical</UI> and <UI>Warning</UI>.
+- <Status>Fixed</Status> Fixed the bug where the input fields increase when the same values are entered in <UI>Critical</UI> and <UI>Warning</UI>.
 
--   <Status>Fixed</Status> Fixed the problem where the content blinks when going to the <UI>Log</UI> tab.
+- <Status>Fixed</Status> Fixed the problem where the content blinks when going to the <UI>Log</UI> tab.
 
--   <Status>Fixed</Status> Fixed the bug where some metrics appear as `undefined` in the chart metrics (<UI>ConState (state)</UI>) list.
+- <Status>Fixed</Status> Fixed the bug where some metrics appear as `undefined` in the chart metrics (<UI>ConState (state)</UI>) list.
 
--   <Status>Fixed</Status> Fixed the bug where tooltip text does not appear when you hover your mouse over the <img src='/img/ico-info.svg' alt='정보 아이콘'/> icon.
+- <Status>Fixed</Status> Fixed the bug where tooltip text does not appear when you hover your mouse over the <img src='/img/ico-info.svg' alt='정보 아이콘'/> icon.
 
--   <Status>Fixed</Status> Fixed the bug where the value in the input field is different from the selected value after the <UI>Exclude</UI> or <UI>Include</UI> option is selected while using the <UI>filter</UI> function.
+- <Status>Fixed</Status> Fixed the bug where the value in the input field is different from the selected value after the <UI>Exclude</UI> or <UI>Include</UI> option is selected while using the <UI>filter</UI> function.
 
 #### Resources
 
--   <Status>Feature</Status> In <UI>Container List</UI>, added the <UI>Container Memory Total RSS By Limit (%)</UI> metric into the <UI>Memory</UI> tab that appears upon selection of a container.
+- <Status>Feature</Status> In <UI>Container List</UI>, added the <UI>Container Memory Total RSS By Limit (%)</UI> metric into the <UI>Memory</UI> tab that appears upon selection of a container.
 
--   <Status>Fixed</Status> In <UI>Node Details</UI>, fixed the bug where the search time and the time for the detail view are not matched when clicking "See resource details" in the following menu paths.
+- <Status>Fixed</Status> In <UI>Node Details</UI>, fixed the bug where the search time and the time for the detail view are not matched when clicking "See resource details" in the following menu paths.
 
--   <Status>Fixed</Status> In <UI>Container List</UI>, fixed the screen freezing issue when the number of container lists reaches 1,200.
+- <Status>Fixed</Status> In <UI>Container List</UI>, fixed the screen freezing issue when the number of container lists reaches 1,200.
 
 #### Analytics
 
@@ -359,12 +359,12 @@ In <UI>Metrics Chart</UI>, added and modified the following functions.
 
 #### Application
 
--   <Status>Change</Status> In <UI>Hitmap</UI>, modified to add the <UI>container ID</UI> and <UI>pod name</UI> columns.
+- <Status>Change</Status> In <UI>Hitmap</UI>, modified to add the <UI>container ID</UI> and <UI>pod name</UI> columns.
 
--   <Status>Fixed</Status> Fixed the malfunction of the lookup button in the following menus for the Kubernetes product suite projects.
+- <Status>Fixed</Status> Fixed the malfunction of the lookup button in the following menus for the Kubernetes product suite projects.
 
-    -   <UI>Application</UI> > <UI>Daily Application Status</UI>
-    -   <UI>Application</UI> > <UI>Perf. Trend</UI>
+  - <UI>Application</UI> > <UI>Daily Application Status</UI>
+  - <UI>Application</UI> > <UI>Perf. Trend</UI>
 
 #### Management
 
@@ -374,17 +374,17 @@ In <UI>Metrics Chart</UI>, added and modified the following functions.
 
 #### Project Creation
 
--   <Status>Change</Status> Added the installation guide text upon creation of an Azure project.
+- <Status>Change</Status> Added the installation guide text upon creation of an Azure project.
 
--   <Status>Change</Status> Changed the <UI>Validity period(hours)</UI> to be entered as mandatory when creating an Amazon CloudWatch project.
+- <Status>Change</Status> Changed the <UI>Validity period(hours)</UI> to be entered as mandatory when creating an Amazon CloudWatch project.
 
 ### `URL`
 
--   <Status>Fixed</Status> Fixed the link error to the <UI>guide shortcut</UI> when the <UI>Add URL</UI> function is used.
+- <Status>Fixed</Status> Fixed the link error to the <UI>guide shortcut</UI> when the <UI>Add URL</UI> function is used.
 
--   <Status>Fixed</Status> Deleted the real-time query (<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>) button in the window that appears after clicking the chart in <UI>URL List</UI>.
+- <Status>Fixed</Status> Deleted the real-time query (<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>) button in the window that appears after clicking the chart in <UI>URL List</UI>.
 
--   <Status>Fixed</Status> Fixed the bug where the content does not appear on the chart upon query in the minute units in the window popping up after clicking the chart in <UI>URL List</UI>.
+- <Status>Fixed</Status> Fixed the bug where the content does not appear on the chart upon query in the minute units in the window popping up after clicking the chart in <UI>URL List</UI>.
 
 ### `Laboratory`
 

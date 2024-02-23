@@ -13,19 +13,19 @@ The **Asynchronous JavaScript and XML** (**AJAX**) technology exchanges data and
 
 AJAX has advantages such as user experience improvement and reduction of requests to the server. However, because AJAX is implemented with JavaScript code running in the browser, it requires monitoring for the following reasons:
 
--   You have to make sure that AJAX requests are handled properly.
+- You have to make sure that AJAX requests are handled properly.
 
--   You have to check the performance degradation caused by AJAX requests.
+- You have to check the performance degradation caused by AJAX requests.
 
--   You have to understand the user-perceived performance including the network latency, download time, and such.
+- You have to understand the user-perceived performance including the network latency, download time, and such.
 
 In the <Cmdname sid="ajaxAnalytics" className="uitext" /> menu provided from **Browser Monitoring**, you can see the response times of AJAX events over time on a hitmap chart. You can also see the detailed information for each event. The provided information is as follows:
 
--   Detailed time information for each AJAX event section
+- Detailed time information for each AJAX event section
 
--   AJAX request URL, calling page information, etc.
+- AJAX request URL, calling page information, etc.
 
--   Error message and status code
+- Error message and status code
 
 ## Basic screen guide
 
@@ -35,13 +35,13 @@ In the <Cmdname sid="ajaxAnalytics" className="uitext" /> menu provided from **B
 
 This widget displays the response times for AJAX events over time in a distribution chart. 
 
--   The horizontal axis is the AJAX event end time.
+- The horizontal axis is the AJAX event end time.
 
--   The vertical axis is the AJAX event's elapsed time.
+- The vertical axis is the AJAX event's elapsed time.
 
--   The normal <b>AJAX</b> events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
+- The normal <b>AJAX</b> events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
 
--   The error occurrence <b>AJAX</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. An error <b>AJAX</b> event occurs when the status code is <code>0</code> or more than <code>400</code>. If the status code is <code>0</code>, the request is not passed from the browser to the server.
+- The error occurrence <b>AJAX</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. An error <b>AJAX</b> event occurs when the status code is <code>0</code> or more than <code>400</code>. If the status code is <code>0</code>, the request is not passed from the browser to the server.
 
 ### <Cmdname sid="ajax" /> <Cmdname sid="list" />
 
@@ -51,25 +51,25 @@ If any part is dragged in the <Cmdname sid="ajaxAnalytics" className='uitext' />
 
 The following show the descriptions for columns in the table.
 
--   <Cmdname sid="ajax_request_url" className="uitext" />: AJAX event URL
+- <Cmdname sid="ajax_request_url" className="uitext" />: AJAX event URL
 
--   <Cmdname sid="start_time" className="uitext" />: AJAX request start time
+- <Cmdname sid="start_time" className="uitext" />: AJAX request start time
 
--   <Cmdname sid="elapsed" className="uitext" />: Elapsed time until the AJAX event completion
+- <Cmdname sid="elapsed" className="uitext" />: Elapsed time until the AJAX event completion
 
--   <Cmdname sid="page_url" className="uitext" />: URL of the AJAX event called page
+- <Cmdname sid="page_url" className="uitext" />: URL of the AJAX event called page
 
--   <Cmdname sid="status_code" className="uitext" />: Response status code of the AJAX event
+- <Cmdname sid="status_code" className="uitext" />: Response status code of the AJAX event
 
--   <Cmdname sid="errMessage" className="uitext" />: AJAX response value (<code>statusText</code>) when the status code is <code>0</code> or more than <code>400</code>
+- <Cmdname sid="errMessage" className="uitext" />: AJAX response value (<code>statusText</code>) when the status code is <code>0</code> or more than <code>400</code>
 
-    :::note
+  :::note
 
-    AJAX events whose status code is `0` or more than `400` appear in <span class='vslow'>red</span> in the list.
+  AJAX events whose status code is `0` or more than `400` appear in <span class='vslow'>red</span> in the list.
 
-    :::
+  :::
 
--   <Cmdname sid="browser" className="uitext" />: Type of the browser used by the end user
+- <Cmdname sid="browser" className="uitext" />: Type of the browser used by the end user
 
 :::note
 
@@ -101,19 +101,19 @@ WhaTap basically stores the client-related information.
 
 The AJAX event loading process is divided into the following steps and the times required for each section are displayed. 
 
--   <Cmdname sid="redirect_time" className="uitext" />: Time taken by the browser to redirect an AJAX request
+- <Cmdname sid="redirect_time" className="uitext" />: Time taken by the browser to redirect an AJAX request
 
--   <Cmdname sid="cache_time" className="uitext" />: Time taken by the browser to retrieve cached AJAX resources
+- <Cmdname sid="cache_time" className="uitext" />: Time taken by the browser to retrieve cached AJAX resources
 
--   <Cmdname sid="TTL06193" className="uitext" />: Time taken by the browser to retrieve the AJAX request domain
+- <Cmdname sid="TTL06193" className="uitext" />: Time taken by the browser to retrieve the AJAX request domain
 
--   <Cmdname sid="connect_time" className="uitext" />: Time taken to establish TCP connection with the AJAX request target server
+- <Cmdname sid="connect_time" className="uitext" />: Time taken to establish TCP connection with the AJAX request target server
 
--   <Cmdname sid="ssl_time" className="uitext" />: Time taken to complete the SSL/TLS handshake
+- <Cmdname sid="ssl_time" className="uitext" />: Time taken to complete the SSL/TLS handshake
 
--   <Cmdname sid="wait_time" className="uitext" />: Time taken from the start of the browser's HTTP request to the time when the server receives the request and begins responding. The transaction processing time in the server is included in this section.
+- <Cmdname sid="wait_time" className="uitext" />: Time taken from the start of the browser's HTTP request to the time when the server receives the request and begins responding. The transaction processing time in the server is included in this section.
 
--   <Cmdname sid="download_time" className="uitext" />: Time taken by the browser to download the AJAX response values from the server
+- <Cmdname sid="download_time" className="uitext" />: Time taken by the browser to download the AJAX response values from the server
 
 ## Filtering the AJAX list
 
@@ -123,13 +123,13 @@ You can enter a search term for an AJAX list and filter matches. Select desired 
 
 The query criteria that can be selected for filtering are as follows:
 
--   <Cmdname sid="TTL07103" className="uitext" />
--   <Cmdname sid="page_url" className="uitext" />
--   <Cmdname sid="browser" className="uitext" />
--   <Cmdname sid="os" className="uitext" />
--   <Cmdname sid="device" className="uitext" />
--   <Cmdname sid="client_ip" className="uitext" />
--   <Cmdname sid="user_id" className="uitext" />
+- <Cmdname sid="TTL07103" className="uitext" />
+- <Cmdname sid="page_url" className="uitext" />
+- <Cmdname sid="browser" className="uitext" />
+- <Cmdname sid="os" className="uitext" />
+- <Cmdname sid="device" className="uitext" />
+- <Cmdname sid="client_ip" className="uitext" />
+- <Cmdname sid="user_id" className="uitext" />
 
 ## Setting the table columns
 
@@ -139,9 +139,9 @@ You can hide table header columns in the AJAX list or add desired items. You can
 
 :::note
 
--   After configuration, select **_OK_** to apply the settings in the table.
+- After configuration, select **_OK_** to apply the settings in the table.
 
--   In the ![number 3](/img/number-03.png) search bar, enter text to search the desired columns. Only the columns that meet the entered text are displayed.
+- In the ![number 3](/img/number-03.png) search bar, enter text to search the desired columns. Only the columns that meet the entered text are displayed.
 
 :::
 
