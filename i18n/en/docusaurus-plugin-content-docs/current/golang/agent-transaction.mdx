@@ -17,283 +17,281 @@ For more information about transactions, see [the following](track-transactions-
 
 ## Transaction tracing{#trs-trc}
 
--   **profile_step_normal_count** <span class='type'>Int</span>
+- **profile_step_normal_count** <span class='type'>Int</span>
 
-    Default `1000`
+  Default `1000`
 
-    Set the maximum step count for tracing transactions.
+  Set the maximum step count for tracing transactions.
 
--   **profile_step_max_count** <span class='type'>Int</span>
+- **profile_step_max_count** <span class='type'>Int</span>
 
-    Default `1024`
+  Default `1024`
 
-    Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored.
+  Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored.
 
-    :::caution
+  :::caution
 
-    If you increase the setting too high, the memory usage increases. We recommend that you do not change the default values. 
+  If you increase the setting too high, the memory usage increases. We recommend that you do not change the default values. 
 
-    :::
+  :::
 
--   **profile_step_heavy_count** <span class='type'>Int</span>
+- **profile_step_heavy_count** <span class='type'>Int</span>
 
-    Default `1000`
+  Default `1000`
 
-    If the collection number of basic steps is exceeded, only the steps whose execution time exceeds profile_step_heavy_time are collected. Set the count of the step that can be collected. In case of default settings, if `profile_step_normal_count` is 800, up to 200 steps are collected.
+  If the collection number of basic steps is exceeded, only the steps whose execution time exceeds profile_step_heavy_time are collected. Set the count of the step that can be collected. In case of default settings, if `profile_step_normal_count` is 800, up to 200 steps are collected.
 
--   **profile_step_heavy_time** <span class='type'>Millisecond</span>
+- **profile_step_heavy_time** <span class='type'>Millisecond</span>
 
-    Default `100`
+  Default `100`
 
-    Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made within `profile_step_heavy_count`.
+  Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made within `profile_step_heavy_count`.
 
--   **profile_basetime** <span class='type'>Millisecond</span>
+- **profile_basetime** <span class='type'>Millisecond</span>
 
-    Default `500`
+  Default `500`
 
-    Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
+  Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
 
--   **query_string_enabled** <span class='type'>Boolean</span>
+- **query_string_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It enables the function to collect query strings of the transaction URL together. It is applied to only the URLs registered in `query_string_urls`.
+  It enables the function to collect query strings of the transaction URL together. It is applied to only the URLs registered in `query_string_urls`.
 
--   **query_string_urls** <span class='type'>String</span>
+- **query_string_urls** <span class='type'>String</span>
 
-    Register URLs to collect query strings from every transaction.
+  Register URLs to collect query strings from every transaction.
 
--   **split_profile_enabled** <span class='type'>Boolean</span>
+- **split_profile_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    More profiles are collected by separating a certain amount of profiles into virtual transactions. They are divided into multiple transaction lists.
+  More profiles are collected by separating a certain amount of profiles into virtual transactions. They are divided into multiple transaction lists.
 
-    :::note
+  :::note
 
-    If set at the same time, the priorities are as follows: 
+  If set at the same time, the priorities are as follows: 
 
-    1.  split
+  1. split
 
-    2.  large
+  2. large
 
-    3.  circular
+  3. circular
 
-    :::
+  :::
 
--   **large_profile_enabled** <span class='type'>Boolean</span>
+- **large_profile_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    By sending split and compressed profiles, you can collect more profiles without increasing memory usage.
+  By sending split and compressed profiles, you can collect more profiles without increasing memory usage.
 
-    :::note
+  :::note
 
-    -   We can collect up to 10,000 profiles (steps). For more data, it is recommended to use the `split_profile_enabled` option.
+  - We can collect up to 10,000 profiles (steps). For more data, it is recommended to use the `split_profile_enabled` option.
 
-    -   If set at the same time, the priorities are as follows: 
+  - If set at the same time, the priorities are as follows: 
 
-        1.  split
+    1. split
 
-        2.  large
+    2. large
 
-        3.  circular
+    3. circular
 
-    :::
+  :::
 
--   **circular_profile_enabled** <span class='type'>Boolean</span>
+- **circular_profile_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    The last 1024 profiling data is collected. 
+  The last 1024 profiling data is collected. 
 
-    :::note
+  :::note
 
-    If set at the same time, the priorities are as follows: 
+  If set at the same time, the priorities are as follows: 
 
-    1.  split
+  1. split
 
-    2.  large
+  2. large
 
-    3.  circular
+  3. circular
 
-    :::
+  :::
 
--   **profile_zip_enabled** <span class='type'>Boolean</span>
+- **profile_zip_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Compressed profiles are transmitted. The default value is `true`.
+  Compressed profiles are transmitted. The default value is `true`.
 
 ## HTTP transaction tracing{#track-http-trs}
 
--   **trace_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to convert and normalize transaction URLs.
+  It enables the function to convert and normalize transaction URLs.
 
--   **trace_normalize_urls** <span class='type'>String</span>
+- **trace_normalize_urls** <span class='type'>String</span>
 
-    Set the target URL to transform and normalize. It deletes the path parameter by transforming the call URL patterns.      
+  Set the target URL to transform and normalize. It deletes the path parameter by transforming the call URL patterns.      
 
-    :::note
+  :::note
 
-    For example, if it is set as `/a/{v}/b`, the called transaction URLs are transformed to the `/a/{v}/b` format. To register multiple items, comma (,) is used as the delimiter.
+  For example, if it is set as `/a/{v}/b`, the called transaction URLs are transformed to the `/a/{v}/b` format. To register multiple items, comma (,) is used as the delimiter.
 
-    :::
+  :::
 
--   **trace_ignore_url_set** <span class='type'>String</span>
+- **trace_ignore_url_set** <span class='type'>String</span>
 
-    Default `0`
+  Default `0`
 
-    If a specific URL is set, the corresponding transactions are excluded from tracing. The set URLs are not displayed in the transaction list because they do not collect transaction data. Set URLs to exclude from transaction tracing. To set multiple items, use comma (,) as the delimiter.
+  If a specific URL is set, the corresponding transactions are excluded from tracing. The set URLs are not displayed in the transaction list because they do not collect transaction data. Set URLs to exclude from transaction tracing. To set multiple items, use comma (,) as the delimiter.
 
--   **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span>
 
-    Default `0`
+  Default `0`
 
-    It sets URL prefixes to exclude from the transaction tracing.
+  It sets URL prefixes to exclude from the transaction tracing.
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It is used to record the HTTP headers in the trace history.
+  It is used to record the HTTP headers in the trace history.
 
--   **profile_http_header_ignore_keys** <span class='type'>String</span>
+- **profile_http_header_ignore_keys** <span class='type'>String</span>
 
-    Default `host,accept,user-agent,referer, accept-language, connection`
+  Default `host,accept,user-agent,referer, accept-language, connection`
 
-    It is used to record HTTP headers in the profile details. The set HTTP header names are excluded from collection, and they are marked with "#."
+  It is used to record HTTP headers in the profile details. The set HTTP header names are excluded from collection, and they are marked with "#."
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
-    Default `false`
+  Default `false`
 
-    It is used to record HTTP parameters in the trace history. The parameters can be viewed by entering a separate security key. The name and value of the text type are collected among Get and Post parameters. Up to 40 items (20 Gets, 20 Posts) are collected, and parameter names and values are collected up to 256 bytes.
+  It is used to record HTTP parameters in the trace history. The parameters can be viewed by entering a separate security key. The name and value of the text type are collected among Get and Post parameters. Up to 40 items (20 Gets, 20 Posts) are collected, and parameter names and values are collected up to 256 bytes.
 
-    :::note
+  :::note
 
-    The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
+  The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
 
-    :::
+  :::
 
--   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-    Default `/`
+  Default `/`
 
-    It is used to define the prefix of URL to record HTTP parameters in the trace details.
+  It is used to define the prefix of URL to record HTTP parameters in the trace details.
 
--   **profile_http_host_enabled** <span class='type'>Boolean</span>
+- **profile_http_host_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    The transation host is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, the output has the format of `/xxx.aaa.com/URL`.
+  The transation host is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, the output has the format of `/xxx.aaa.com/URL`.
 
--   **ignore_http_method** <span class='type'>String</span>
+- **ignore_http_method** <span class='type'>String</span>
 
-    Default `Empty`
+  Default `Empty`
 
-    Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
+  Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 
-    :::note 
+  ```ini title="whatap.conf"
+  # e.g. tracing the transactions whose http_method is OPTIONS or HEAD
+  ignore_http_method=PATCH,TRACE
 
-    When entering two values for `OPTIONS` and `HEAD`, separate them with comma (,).
+  # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
+  ignore_http_method=OPTIONS,HEAD
+  ```
 
-    ```ini title='whatap.conf'
-    ignore_http_method=OPTIONS, HEAD
-    ```
+- **biz_exceptions** <span class='type'>String</span>
 
-    :::
+  Default `Empty`
 
--   **biz_exceptions** <span class='type'>String</span>
+  Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
 
-    Default `Empty`
+- **ignore_exceptions** <span class='type'>String</span>
 
-    Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+  The error itself by the registered exception is ignored. The string to exclude is for the class related to the error type or error statistics in the profile.
 
--   **ignore_exceptions** <span class='type'>String</span>
+  The type of error that occurs in Go is displayed as a string.
 
-    The error itself by the registered exception is ignored. The string to exclude is for the class related to the error type or error statistics in the profile.
+  ```go
+  thr.ErrorClassName = fmt.Sprintf("%T", err)
+  thr.ErrorMessage = err.Error()
 
-    The type of error that occurs in Go is displayed as a string.
+  # Output the error type
 
-    ```go
-    thr.ErrorClassName = fmt.Sprintf("%T", err)
-    thr.ErrorMessage = err.Error()
-
-    # Output the error type
-
-    *errors.errorString
-    *echo.HTTPError
-    *url.Error
-    ```
+  *errors.errorString
+  *echo.HTTPError
+  *url.Error
+  ```
 
 ## Transaction tracing
 
--   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
-    Default `3000`
+  Default `3000`
 
-    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
 
--   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
-    Default `8000`
+  Default `8000`
 
--   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
 
-    Default `30000`
+  Default `30000`
 
-    If a transaction does not end within the timeout period (5 minutes), no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+  If a transaction does not end within the timeout period (5 minutes), no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
 
--   **trace_useragent_enabled** <span class='type'>Boolean</span>
+- **trace_useragent_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    If the value is `true`, the user agent data for transactions is collected. 
+  If the value is `true`, the user agent data for transactions is collected. 
 
--   **trace_referer_enabled** <span class='type'>Boolean</span>
+- **trace_referer_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    If the value is `true`, the referer data for transactions is collected.
+  If the value is `true`, the referer data for transactions is collected.
 
 ## Multiple transaction trace
 
--   **mtrace_enabled** <span class='type'>Boolean</span>
+- **mtrace_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It sets whether or not to use the multi-transaction tracing (MTID). By tracing the MTID, you can check the calls between all the registered applications.
+  It sets whether or not to use the multi-transaction tracing (MTID). By tracing the MTID, you can check the calls between all the registered applications.
 
--   **mtrace_rate** <span class='type'>Percentage</span>
+- **mtrace_rate** <span class='type'>Percentage</span>
 
-    Default `10`
+  Default `10`
 
-    This option sets the issuance rate of the MTID (Multi Transaction ID) issued when the first transaction occurs.
+  This option sets the issuance rate of the MTID (Multi Transaction ID) issued when the first transaction occurs.
 
--   **mtrace_poid_key** <span class='type'>String</span>
+- **mtrace_poid_key** <span class='type'>String</span>
 
-    Default `x-wtap-po`
+  Default `x-wtap-po`
 
-    Set the key name to deliver the caller project information to for MTID tracing.
+  Set the key name to deliver the caller project information to for MTID tracing.
 
--   **mtrace_caller_key** <span class='type'>String</span>
+- **mtrace_caller_key** <span class='type'>String</span>
 
-    Default `x-wtap-mst`
+  Default `x-wtap-mst`
 
-    Set the caller key name to be used for MTID tracing.
+  Set the caller key name to be used for MTID tracing.
 
--   **mtrace_callee_key** <span class='type'>String</span>
+- **mtrace_callee_key** <span class='type'>String</span>
 
-    Default `x-wtap-tx`
+  Default `x-wtap-tx`
 
-    Set the callee key name to be used for MTID tracing.
+  Set the callee key name to be used for MTID tracing.
 
--   **mtrace_send_url_length** <span class='type'>Int</span>
+- **mtrace_send_url_length** <span class='type'>Int</span>
 
-    Default `80`
+  Default `80`
 
-    The HTTP caller passes its URL to callees. At this time, the URL length is restricted. This sets the length value.
+  The HTTP caller passes its URL to callees. At this time, the URL length is restricted. This sets the length value.

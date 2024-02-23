@@ -19,17 +19,17 @@ EKS Fargate is to be supported later.
 
 If an agent update is required, execute the following command:
 
--   **Master Agent**
+- **Master Agent**
 
-    ```bash
-    kubectl set image -n whatap-monitoring deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:{agent_version}
-    ```
+  ```bash
+  kubectl set image -n whatap-monitoring deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:{agent_version}
+  ```
 
--   **Node Agent**
+- **Node Agent**
 
-    ```bash
-    kubectl set image -n whatap-monitoring daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent_version}
-    ```
+  ```bash
+  kubectl set image -n whatap-monitoring daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent_version}
+  ```
 
 :::note
 

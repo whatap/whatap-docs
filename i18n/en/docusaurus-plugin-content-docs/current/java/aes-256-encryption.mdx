@@ -19,26 +19,26 @@ Unsupported keysize or algorithm parameters.
 Illegal key size or default parameters.
 ```
 
-1.  Download the file for your version from the following links.
+1. Download the file for your version from the following links.
 
-    :::note
+   :::note
 
-    **Download versions for each Java version**
+   **Download versions for each Java version**
 
-    -   [JAVA 8](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
-    -   [JAVA 7](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
-    -   [JAVA 6](http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html)
-    -   [JAVA 5](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#jce_policy-1.5.0-oth-JPR)
-    -   [JAVA 1.42](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7503-jce-1.4.2-oth-JPR)
+   - [JAVA 8](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
+   - [JAVA 7](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
+   - [JAVA 6](http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html)
+   - [JAVA 5](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#jce_policy-1.5.0-oth-JPR)
+   - [JAVA 1.42](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7503-jce-1.4.2-oth-JPR)
 
-    :::
+   :::
 
-2.  Overwrite the file in the _`$JAVA_HOME`/jre/lib/security_ path.
+2. Overwrite the file in the _`$JAVA_HOME`/jre/lib/security_ path.
 
-3.  If JCE has been applied, add the following settings in _`${WHATAP_HOME}`/whatap.conf_.
+3. If JCE has been applied, add the following settings in _`${WHATAP_HOME}`/whatap.conf_.
 
-    ```ini title='whatap.conf'
-    cypher_level=256
-    ```
+   ```ini title='whatap.conf'
+   cypher_level=256
+   ```
 
-4.  Once the application server has been restarted, the ACE 256 encryption is applied.
+4. Once the application server has been restarted, the ACE 256 encryption is applied.

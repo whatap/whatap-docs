@@ -16,7 +16,7 @@ tags:
 
 {@include: ../common-items/_java-transaction-profiling.mdx}
 
-{@include: ../common-items/_java-http-transaction.mdx} 
+{@include: ../common-items/_java-http-transaction.mdx}
 
 {@include: ../common-items/_java-non-http-transaction.mdx}
 
@@ -26,29 +26,29 @@ tags:
 
 <code class="my">Java Agent v2.2.4 or later</code>
 
--   **trace_sampling_enabled** <span class='api'>Boolean</span>
+- **trace_sampling_enabled** <span class='api'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    You can set whether or not to collect trace data samples.
+  You can set whether or not to collect trace data samples.
 
--   **trace_sampling_tps** <span class='type'>Int</span>
+- **trace_sampling_tps** <span class='type'>Int</span>
 
-    Default `10000`
+  Default `10000`
 
-    You can set the trace data sampling count. The data exceeding the set count is not transmitted and is initialized every 5 seconds.
+  You can set the trace data sampling count. The data exceeding the set count is not transmitted and is initialized every 5 seconds.
 
--   **trace_send_enabled** <span class='api'>Boolean</span>
+- **trace_send_enabled** <span class='api'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    You can set whether or not to transmit the trace data.
+  You can set whether or not to transmit the trace data.
 
--   **debug_trace_samling** <span class='api'>Boolean</span>
+- **debug_trace_samling** <span class='api'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    You can turn on or off the trace data sampling debug option.
+  You can turn on or off the trace data sampling debug option.
 
 ## Modifying the trace URL name
 
@@ -79,26 +79,26 @@ ignore_exception_tx_pattern=exception:service_url
 
 ## Tracing HttpURLConnection
 
--   **HttpURLConnection** <span class='type'>Boolean</span>
+- **HttpURLConnection** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The option is used to trace methods in the `HttpURLConnection` class.
+  The option is used to trace methods in the `HttpURLConnection` class.
 
--   **hook_HttpURLConnection_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
+- **hook_HttpURLConnection_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-    Default `false`
+  Default `false`
 
-    You can set to trace methods in the `HttpURLConnection` class even when called for the first time.
+  You can set to trace methods in the `HttpURLConnection` class even when called for the first time.
 
--   **HttpURLConnection_weblogic** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
+- **HttpURLConnection_weblogic** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-    Default `true`
+  Default `true`
 
-    In case of calling HTTP from Weblogic with `HttpURLConnection`, the option traces methods in the `weblogic.net.http.HttpURLConnection` class.
+  In case of calling HTTP from Weblogic with `HttpURLConnection`, the option traces methods in the `weblogic.net.http.HttpURLConnection` class.
 
--   **hook_HttpURLConnection_weblogic_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
+- **hook_HttpURLConnection_weblogic_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-    Default `false`
+  Default `false`
 
-    You can set to trace methods in the `weblogic.net.http.HttpURLConnection` class even when called for the first time.
+  You can set to trace methods in the `weblogic.net.http.HttpURLConnection` class even when called for the first time.

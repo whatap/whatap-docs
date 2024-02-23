@@ -11,18 +11,18 @@ tags:
 
 Check the method how to add JVM options in the application server environment using Resin. Depending on the Java version, the JVM options to apply may differ. Apply the JVM options for your environment. Apply the options and then restart the application server.
 
--   Option 1: Add the `javaagent` parameter by busing the `jvm_args` property in the _resin.properties_ file.
+- Option 1: Add the `javaagent` parameter by busing the `jvm_args` property in the _resin.properties_ file.
 
--   Option 2: Set the `-javaagent` parameter by adding the `<jvm-args>` section to the `conf/resin.conf` or `conf/resin.xml` file.
+- Option 2: Set the `-javaagent` parameter by adding the `<jvm-args>` section to the `conf/resin.conf` or `conf/resin.xml` file.
 
 :::note
 
--   Through the application server log file and the agent log file, check whether the agent is operating normally or any error occurs. For the location of log files, check the following:
+- Through the application server log file and the agent log file, check whether the agent is operating normally or any error occurs. For the location of log files, check the following:
 
-    -   Agent: _`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
-    -   RESIN 4.x: _$RESIN_HOME/log/jvm-app-#.log_
+  - Agent: _`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
+  - RESIN 4.x: _$RESIN_HOME/log/jvm-app-#.log_
 
--   If the agent does not work normally or an error occurs, check [the following](../install-check).
+- If the agent does not work normally or an error occurs, check [the following](../install-check).
 
 :::
 

@@ -15,11 +15,11 @@ The agent works as the default **127.0.0.1:6600** TCP server. It receives data f
 
 :::
 
-1.  Install the WhaTap repository.
+1. Install the WhaTap repository.
 
-2.  Install the whatap-agent Linux package (yum, apt-get).
+2. Install the whatap-agent Linux package (yum, apt-get).
 
-3.  Run the whatap-agent service.
+3. Run the whatap-agent service.
 
 ![Go Monitoring](/img/golang_system.png)
 
@@ -107,15 +107,15 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 It consists of a tracer to collect the monitoring data, an agent to transmit the collected data to the server, and an installation script file to dynamically apply the tracer and agent to the server.
 
--   _whatap-agent_: This program transmits the data passed from the agent and tracer to UDP, to the collection server.
+- _whatap-agent_: This program transmits the data passed from the agent and tracer to UDP, to the collection server.
 
--   _/etc/init.d/whatap-agent_: Service script file.
+- _/etc/init.d/whatap-agent_: Service script file.
 
--   _whatap_agent_: Service execution file.
+- _whatap_agent_: Service execution file.
 
--   _whatap.conf_: Enter the configuration data, collection server IP, and access key in this file.
+- _whatap.conf_: Enter the configuration data, collection server IP, and access key in this file.
 
--   _whatap-boot-`yyyymmdd`.log_: Agent log file. (path: _/usr/whata/agent/log_)
+- _whatap-boot-`yyyymmdd`.log_: Agent log file. (path: _/usr/whata/agent/log_)
 
 </details>
 
@@ -125,9 +125,9 @@ It consists of a tracer to collect the monitoring data, an agent to transmit the
 
 Execute the following commands in order to set the **access key** and **collection server IP** in _whatap.conf_.
 
--   Create the _whatap.conf_ file in the path of the application startup script. 
+- Create the _whatap.conf_ file in the path of the application startup script. 
 
--   If the `WHATAP_HOME` environment variable has not been set, the path of the application startup script is recognized as the one of the _whatap.conf_ file.
+- If the `WHATAP_HOME` environment variable has not been set, the path of the application startup script is recognized as the one of the _whatap.conf_ file.
 
 ```bash title='SH'
 # Creation of whatap.conf in the script running path
@@ -139,17 +139,17 @@ $ echo "app_name={Application Name}" >> ./whatap.conf
 ./app
 ```
 
--   `license`: Enter the **access key**.
+- `license`: Enter the **access key**.
 
--   `whatap.server.host`: Enter the **collection server IP address**.
+- `whatap.server.host`: Enter the **collection server IP address**.
 
--   `app_name`: Enter the application name. Set the user as a string.
+- `app_name`: Enter the application name. Set the user as a string.
 
-    :::note
+  :::note
 
-    `app_name` is a component to determine the agent name. For more information, see [the following](agent-name).
+  `app_name` is a component to determine the agent name. For more information, see [the following](agent-name).
 
-    :::
+  :::
 
 ### Setting the `WHATAP_HOME` variable
 
@@ -214,17 +214,17 @@ Once the application server has been restarted, the agent starts collecting data
 </TabItem>
 <TabItem value="al" label="Amazon Linux">
 
-1.  Execute the following command to install the WhaTap agent daemon.
+1. Execute the following command to install the WhaTap agent daemon.
 
-    ```bash
-    /usr/whatap/php/whatap-agent start
-    ```
+   ```bash
+   /usr/whatap/php/whatap-agent start
+   ```
 
-2.  Execute the following command to check whether the WhaTap service has been run normally.
+2. Execute the following command to check whether the WhaTap service has been run normally.
 
-    ```bash
-    ps -elf | grep whatap_agent_static
-    ```
+   ```bash
+   ps -elf | grep whatap_agent_static
+   ```
 
 Once the application server has been restarted, the agent starts collecting data.
 

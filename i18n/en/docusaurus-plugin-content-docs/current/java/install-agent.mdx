@@ -25,33 +25,33 @@ import TR from '@site/src/components/TR';
 
 The agent file consists of a tracer that extracts data for application monitoring and passes to the WhaTap collection server, and the elements that help the tracer send the data.
 
--   _whatap.conf_
+- _whatap.conf_
 
-    This configuration file stores monitoring agent settings, access key, and WhaTap data collection server IP. For more information, see [the following](set-agent).
+  This configuration file stores monitoring agent settings, access key, and WhaTap data collection server IP. For more information, see [the following](set-agent).
 
--   _ping.sh(bat)_
+- _ping.sh(bat)_
 
-    This script (batch) file checks whether there are any settings or network issues by attempting communication with the access key and WhaTap data collection server.
+  This script (batch) file checks whether there are any settings or network issues by attempting communication with the access key and WhaTap data collection server.
 
--   _proxy.sh(bat)_
+- _proxy.sh(bat)_
 
-    Script (batch) file to start the _whatap.agent.proxy-`X.Y.Z`.jar_ file.
+  Script (batch) file to start the _whatap.agent.proxy-`X.Y.Z`.jar_ file.
 
--   _resmon.sh(bat)_
+- _resmon.sh(bat)_
 
-    Script (batch) file to check whether the CPU, memory, and disk data are collected normally.
+  Script (batch) file to check whether the CPU, memory, and disk data are collected normally.
 
--   _whatap-logsink-lz4-`X.Y.Z`.jar_
+- _whatap-logsink-lz4-`X.Y.Z`.jar_
 
-    This plug-in file collects the log data of the application server.
+  This plug-in file collects the log data of the application server.
 
--   _whatap.agent-`X.Y.Z`.jar_
+- _whatap.agent-`X.Y.Z`.jar_
 
-    This monitoring agent file collects and transfers various monitoring data of the application server to the collection server.
+  This monitoring agent file collects and transfers various monitoring data of the application server to the collection server.
 
--   _whatap.agent.proxy-`X.Y.Z`.jar_
+- _whatap.agent.proxy-`X.Y.Z`.jar_
 
-    This application acts as a transit in the proxy server (pass-through server), when the server where the application server operates cannot connect directly to the WhaTap collection server.
+  This application acts as a transit in the proxy server (pass-through server), when the server where the application server operates cannot connect directly to the WhaTap collection server.
 
 {@include: ../common-items/_whatap_conf.mdx}
 

@@ -11,60 +11,58 @@ tags:
 
 The following provides the method how to set the communication for the Go application server.
 
--   **whatap.server.host** <span class='type'>ip_address</span>
+- **whatap.server.host** <span class='type'>ip_address</span>
 
-    Default `127.0.0.1,127.0.0.1`
+  Default `127.0.0.1,127.0.0.1`
 
-    Set the server to deliver the agent's collected data to. If there are multiple IPs due to the collection server redundancy, they can be specified by separating with comma (,). The collection server's proxy daemon must be serviced in the listening state for the specified IP.
+  Set the server to deliver the agent's collected data to. If there are multiple IPs due to the collection server redundancy, they can be specified by separating with comma (,). The collection server's proxy daemon must be serviced in the listening state for the specified IP.
 
--   **whatap.server.port** <span class='type'>tcp_port</span>
+- **whatap.server.port** <span class='type'>tcp_port</span>
 
-    Default `6600`
+  Default `6600`
 
-    Set the port of the collection server. Because only one port can be specified, the collection servers specified in whatap_server_host must use the same port.
+  Set the port of the collection server. Because only one port can be specified, the collection servers specified in whatap_server_host must use the same port.
 
--   **tcp_so_timeout** <span class='type'>Millisecond</span>
+- **tcp_so_timeout** <span class='type'>Millisecond</span>
 
-    Default `60000`
+  Default `60000`
 
-    Set the socket timeout of the TCP session that communicates with the collection server.
+  Set the socket timeout of the TCP session that communicates with the collection server.
 
--   **tcp_connection_timeout** <span class='type'>Millisecond</span>
+- **tcp_connection_timeout** <span class='type'>Millisecond</span>
 
-    Default `5000`
+  Default `5000`
 
-    Set the connection time out of the TCP session that communicates with the collection server.
+  Set the connection time out of the TCP session that communicates with the collection server.
 
--   **net_send_max_bytes** <span class='type'>Byte</span>
+- **net_send_max_bytes** <span class='type'>Byte</span>
 
-    Default `5242880`
+  Default `5242880`
 
-    Set the maximum size of the data to send to the collection server at one time.
+  Set the maximum size of the data to send to the collection server at one time.
 
--   **net_ipc_host** <span class='type'>ip_address</span>
+- **net_ipc_host** <span class='type'>ip_address</span>
 
-    Default `127.0.0.1`
+  Default `127.0.0.1`
 
-    It is the agent's TCP address for sending the data collected by the application via IPC/TCP to the agent. It is not recommended, but use this option when the agent is running on an external server.
+  It is the agent's TCP address for sending the data collected by the application via IPC/TCP to the agent. It is not recommended, but use this option when the agent is running on an external server.
 
-    :::note
+  :::note
 
-    To apply the settings, restart the application.
+  To apply the settings, restart the application.
 
-    :::
+  :::
 
-<!---->
+- **net_ipc_port** <span class='type'>tcp_port</span>
 
--   **net_ipc_port** <span class='type'>tcp_port</span>
+  Default `6600`
 
-    Default `6600`
+  The WhaTap agent transfers the data collected by the tracer to the collection server via IPC/TCP. You can specify the port of the initial TCP server. If the provided port 6600 is in use, you can use this option. To change the TCP server port of the agent, modify in the /usr/whatap/agent/whatap.conf file path.
 
-    The WhaTap agent transfers the data collected by the tracer to the collection server via IPC/TCP. You can specify the port of the initial TCP server. If the provided port 6600 is in use, you can use this option. To change the TCP server port of the agent, modify in the /usr/whatap/agent/whatap.conf file path.
+  :::note
 
-    :::note
+  - If the server port has been changed, update it also in the whatap.conf file of the application to establish the communication.
 
-    -   If the server port has been changed, update it also in the whatap.conf file of the application to establish the communication.
+  - To apply the settings, restart the application.
 
-    -   To apply the settings, restart the application.
-
-    :::
+  :::

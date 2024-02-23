@@ -17,19 +17,19 @@ When installing WhaTap Kubernetes, configure resources for agents under the &lt;
 
 The master agent is for Deployment and the node agents are for DaemonSet. The following explains how to check the WhaTap agent installed in the Kubernetes environment.
 
--   **Master Agent**
+- **Master Agent**
 
-    ```bash
-    kubectl get deployments -n whatap-monitoring 
-    kubectl get pods -l=name=whatap-master-agent -n whatap-monitoring
-    ```
+  ```bash
+  kubectl get deployments -n whatap-monitoring 
+  kubectl get pods -l=name=whatap-master-agent -n whatap-monitoring
+  ```
 
--   **Node Agent**
+- **Node Agent**
 
-    ```bash
-    kubectl get daemonsets -n whatap-monitoring
-    kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
-    ```
+  ```bash
+  kubectl get daemonsets -n whatap-monitoring
+  kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
+  ```
 
 The following is an example for the master agent and node agents running in the &lt;whatap-monitoring&gt;namespace.
 

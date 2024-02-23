@@ -19,10 +19,10 @@ Home > Select Project > **_Resource_** > **_Node List_**
 
 You can check the node information of the current project in a list.
 
--   Real-time data is updated every 10 seconds.
+- Real-time data is updated every 10 seconds.
 
--   It provides the functions for node status summary, comparison, filtering, and CSV file download.
-    > CSV file name, _ kubernetes_node_list\_{pcode}\_{timestamp}.csv_
+- It provides the functions for node status summary, comparison, filtering, and CSV file download.
+  > CSV file name, _ kubernetes_node_list\_{pcode}\_{timestamp}.csv_
 
 ## Basic screen guide
 
@@ -30,39 +30,39 @@ You can check the node information of the current project in a list.
 
 By selecting desired options in the ![number 01](/img/number-01.png) area, you can view the data in ![number 02](/img/number-02.png). 
 
--   On the upper left of the ![number 01](/img/number-01.png) area, you can see the total node count and the node counts for each status.
+- On the upper left of the ![number 01](/img/number-01.png) area, you can see the total node count and the node counts for each status.
 
--   When you select **_→ View previous version_** on the right of the ![number 01](/img/number-01.png) area, you can check the node list before reorganization.
+- When you select **_→ View previous version_** on the right of the ![number 01](/img/number-01.png) area, you can check the node list before reorganization.
 
--   When selecting a desired column in the ![number 02](/img/number-02.png) area, you can sort the nodes based on the corresponding column. 
+- When selecting a desired column in the ![number 02](/img/number-02.png) area, you can sort the nodes based on the corresponding column. 
 
--   When selecting the ![detail icon](/img/ic-pageview.svg) **_Detail_** icon under the OnodeName column in the ![number 02](/img/number-02.png) area, the corresponding node details page appears.
+- When selecting the ![detail icon](/img/ic-pageview.svg) **_Detail_** icon under the OnodeName column in the ![number 02](/img/number-02.png) area, the corresponding node details page appears.
 
 ## Metric information
 
--   If you place your mouse cursor over the desired column, the metrics provided by the column are shown as follows: 
+- If you place your mouse cursor over the desired column, the metrics provided by the column are shown as follows: 
 
-    ![Metric information](/img/k8s-resource-node-list-metric-info.png)
+  ![Metric information](/img/k8s-resource-node-list-metric-info.png)
 
--   You can see the metrics for each column in the colum list on the **_Select column_** option. If you place your mouse cursor over the desired column, the ![Info icon](/img/ico-info.svg) **_Info icon_** appears to the right of the column name. If you place your mouse curson over ![Info icon](/img/ico-info.svg) **_info icon_**, the metric data appears as follows: 
+- You can see the metrics for each column in the colum list on the **_Select column_** option. If you place your mouse cursor over the desired column, the ![Info icon](/img/ico-info.svg) **_Info icon_** appears to the right of the column name. If you place your mouse curson over ![Info icon](/img/ico-info.svg) **_info icon_**, the metric data appears as follows: 
 
-    ![Metric data in the column list](/img/k8s-resource-node-list-metric-info-cl.png)
+  ![Metric data in the column list](/img/k8s-resource-node-list-metric-info-cl.png)
 
 ## Filtering
 
 By using the **_Filter_** option, you can select a desired node list for view. Through the `and` condition, multiple filters can be applied.
 
-1.  If you select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the ![Filter icon](/img/ico-filter.svg) **_Filter_** field of the ![number 01](/img/number-01.png) area, the **_Add filter_** window appears as follows:
+1. If you select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the ![Filter icon](/img/ico-filter.svg) **_Filter_** field of the ![number 01](/img/number-01.png) area, the **_Add filter_** window appears as follows:
 
-    <ImgLang img='k8s-resource-container-list-add-filter.png' desc='Add Filter' />
+   <ImgLang img='k8s-resource-container-list-add-filter.png' desc='Add Filter' />
 
-    -   Select **_Filter Key_** and **_Condition_**.
+   - Select **_Filter Key_** and **_Condition_**.
 
-    -   Select a value that meets the conditions.
+   - Select a value that meets the conditions.
 
-2.  Configure a filter and then select **_Apply_** to apply the filter.
+2. Configure a filter and then select **_Apply_** to apply the filter.
 
-3.  To add multiple filters, select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the **_Filter_** field or **_Add filter_** window.
+3. To add multiple filters, select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the **_Filter_** field or **_Add filter_** window.
 
 ## Comparing
 
@@ -70,21 +70,21 @@ Through the **_Compare_** column, you can see the comparison chart for key metri
 
 <ImgLang img='k8s-resource-node-list-compare.png' desc='Compare' />
 
-1.  Through the ![number a](/img/char-a.svg) comparison column on the left of the node list, select a node to compare. 
+1. Through the ![number a](/img/char-a.svg) comparison column on the left of the node list, select a node to compare. 
 
-    -   You can select up to 10 nodes. 
+   - You can select up to 10 nodes. 
 
-    -   The selected nodes are given different colors.
+   - The selected nodes are given different colors.
 
-2.  You can see the comparison chart for the selected nodes in the ![number b](/img/char-b.svg) area. 
+2. You can see the comparison chart for the selected nodes in the ![number b](/img/char-b.svg) area. 
 
-    -   You can see the nodes selected in the ![number a](/img/char-a.svg) comparison column at the top of the ![number b](/img/char-b.svg) area.
+   - You can see the nodes selected in the ![number a](/img/char-a.svg) comparison column at the top of the ![number b](/img/char-b.svg) area.
 
-    -   By dragging the top of ![number b](/img/char-b.svg), you can adjust the height of the comparison chart area.
+   - By dragging the top of ![number b](/img/char-b.svg), you can adjust the height of the comparison chart area.
 
-3.  If you select ![number c](/img/char-c.svg) **_Check period_**, the comparison chart appears withing the period to view as follows:
+3. If you select ![number c](/img/char-c.svg) **_Check period_**, the comparison chart appears withing the period to view as follows:
 
-    <ImgLang img='k8s-resource-node-list-compare-time.png' desc='Check period' />
+   <ImgLang img='k8s-resource-node-list-compare-time.png' desc='Check period' />
 
 ## Select Column
 
@@ -92,13 +92,13 @@ When using the **_Select column_** option, you can select the desired node data 
 
 <ImgLang img='k8s-resource-node-list-cl.png' desc='Add Filter' />
 
--   The selected column list is kept even if you re-enter the menu.
+- The selected column list is kept even if you re-enter the menu.
 
--   If you select **_Reset_**, the predefined default key metric columns are selected. In this case, the column selection history is deleted.
+- If you select **_Reset_**, the predefined default key metric columns are selected. In this case, the column selection history is deleted.
 
--   You can select up to 29 columns.
+- You can select up to 29 columns.
 
--   After selecting a column, you can click **_Apply_** at the lower right to apply the selected values.
+- After selecting a column, you can click **_Apply_** at the lower right to apply the selected values.
 
 ## Node Details
 
@@ -106,45 +106,45 @@ The Node Details screen consists of four charts at the top and container details
 
 <ImgLang img='k8s-resource-node-detail.png' desc='Node Details screen' />
 
--   Top charts
+- Top charts
 
-    -   **_CPU Usage_**: You can see the CPU usage of the node.
+  - **_CPU Usage_**: You can see the CPU usage of the node.
 
-    -   **_Memory Usage_**: You can see the memory usage of the node.
+  - **_Memory Usage_**: You can see the memory usage of the node.
 
-    -   **_Network_**: You can see the input/output traffic and error packets of the node's network interface.
+  - **_Network_**: You can see the input/output traffic and error packets of the node's network interface.
 
-    -   **_Disk Usage_**: You can see the disk usage of the node. 
+  - **_Disk Usage_**: You can see the disk usage of the node. 
 
--   Container Info
+- Container Info
 
-    | Item               | Description                                                                    |
-    | ------------------ | ------------------------------------------------------------------------------ |
-    | Status             | Container status                                                               |
-    | Container          | Container ID                                                                   |
-    | Image              | Container Image Info                                                           |
-    | Command            | Container execution command                                                    |
-    | Application        | Name of the WhaTap APM agent installed in the container                        |
-    | Pod                | Pod Name                                                                       |
-    | CpuByLimit         | Container CPU utilization by limit                                             |
-    | MemoryWsByLimit    | Container memory working set usage by limit                                    |
-    | CpuThrottledCnt    | Container CPU Throttled Count                                                  |
-    | CpuThrottledTime   | Container CPU Throttled Time                                                   |
-    | MemLimit           | Container Memory Limit Size                                                    |
-    | MemRequest         | Container Memory Request Size                                                  |
-    | MemWs              | Container memory working set                                                   |
-    | IoReadBytes        | Sum of bytes read per second across all block devices in the container         |
-    | IoReadIops         | Sum of counts read per second across all block devices in the container        |
-    | IoWriteBytes       | Sum of bytes written per second across all block devices in the container      |
-    | IoWriteIops        | Sum of counts written per second across all block devices in the container     |
-    | NetRxBytes         | Sum of bytes read per second across all block devices in the container         |
-    | NetRxDropped       | Container Network Receive Dropped Count                                        |
-    | NetRxError         | Container Network Receive Error Count                                          |
-    | NetRxIops          | Container Network Receive Error Count                                          |
-    | NetTxBytes         | Container Network Transmit Data Size                                           |
-    | NetTxDropped       | Container Network Transmit Dropped Count                                       |
-    | NetTxError         | Container Network Transmit Error Count                                         |
-    | NetTxIops          | Container Network Transmit Error Count                                         |
+  | Item               | Description                                                                    |
+  | ------------------ | ------------------------------------------------------------------------------ |
+  | Status             | Container status                                                               |
+  | Container          | Container ID                                                                   |
+  | Image              | Container Image Info                                                           |
+  | Command            | Container execution command                                                    |
+  | Application        | Name of the WhaTap APM agent installed in the container                        |
+  | Pod                | Pod Name                                                                       |
+  | CpuByLimit         | Container CPU utilization by limit                                             |
+  | MemoryWsByLimit    | Container memory working set usage by limit                                    |
+  | CpuThrottledCnt    | Container CPU Throttled Count                                                  |
+  | CpuThrottledTime   | Container CPU Throttled Time                                                   |
+  | MemLimit           | Container Memory Limit Size                                                    |
+  | MemRequest         | Container Memory Request Size                                                  |
+  | MemWs              | Container memory working set                                                   |
+  | IoReadBytes        | Sum of bytes read per second across all block devices in the container         |
+  | IoReadIops         | Sum of counts read per second across all block devices in the container        |
+  | IoWriteBytes       | Sum of bytes written per second across all block devices in the container      |
+  | IoWriteIops        | Sum of counts written per second across all block devices in the container     |
+  | NetRxBytes         | Sum of bytes read per second across all block devices in the container         |
+  | NetRxDropped       | Container Network Receive Dropped Count                                        |
+  | NetRxError         | Container Network Receive Error Count                                          |
+  | NetRxIops          | Container Network Receive Error Count                                          |
+  | NetTxBytes         | Container Network Transmit Data Size                                           |
+  | NetTxDropped       | Container Network Transmit Dropped Count                                       |
+  | NetTxError         | Container Network Transmit Error Count                                         |
+  | NetTxIops          | Container Network Transmit Error Count                                         |
 
 <!-- 
 

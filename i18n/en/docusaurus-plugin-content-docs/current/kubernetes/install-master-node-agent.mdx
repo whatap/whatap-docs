@@ -95,30 +95,30 @@ oc create -f whatap_openshift_scc.yaml
 
 Download the _YAML_ file that is suitable for your Kubernetes version and container runtime, and then create an agent.
 
-1.  Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command:
+1. Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command:
 
-    ```bash
-    kubectl get node -o wide
-    ```
+   ```bash
+   kubectl get node -o wide
+   ```
 
-    ![](/img/k8s-check-version.svg)
+   ![](/img/k8s-check-version.svg)
 
-2.  On the **_Agent Installation_** screen, select the _YAML_ file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click **_Download_**.
+2. On the **_Agent Installation_** screen, select the _YAML_ file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click **_Download_**.
 
-    <ImgLang img='k8s-download-yaml.png' desc='yaml download' />
+   <ImgLang img='k8s-download-yaml.png' desc='yaml download' />
 
-3.  Upload the downloaded _YAML_ file to the master node.
+3. Upload the downloaded _YAML_ file to the master node.
 
-4.  Execute the following command to create an agent. 
+4. Execute the following command to create an agent. 
 
-    ```bash
-    # Modify the {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
-    kubectl apply -f {whatap_kube_X.YZ.yaml}
-    ```
+   ```bash
+   # Modify the {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
+   kubectl apply -f {whatap_kube_X.YZ.yaml}
+   ```
 
-5.  Check that the agent has been created successfully as follows:
+5. Check that the agent has been created successfully as follows:
 
-    ![Agent creation check](/img/k8s-install-agent-check.svg)
+   ![Agent creation check](/img/k8s-install-agent-check.svg)
 
 :::note
 
@@ -146,15 +146,15 @@ If the **STATUS** is not **Running**, it indicates that the installation has not
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-1.  Execute the following command on the master node to determine the cause of the Pod creation failure. 
+1. Execute the following command on the master node to determine the cause of the Pod creation failure. 
 
-    ```bash
-    kubectl describe pod {POD_NAME} -n whatap-monitoring
-    ```
+   ```bash
+   kubectl describe pod {POD_NAME} -n whatap-monitoring
+   ```
 
-2.  Check the **Events:** item at the bottom of the execution result.
+2. Check the **Events:** item at the bottom of the execution result.
 
-    ![](/img/k8s-check-install-fail.svg)
+   ![](/img/k8s-check-install-fail.svg)
 
 :::tip
 
@@ -164,7 +164,7 @@ When using the `kubectl` command, the `-n {namespace}` option performs the task 
 
 :::note
 
--   To proceed with the application agent installation, select **_Application Agent Installation_** at the lower right of the screen. For more information, see [the following](install-application-agent).
--   To update the agent to the latest version, see [the following](agent-update).
+- To proceed with the application agent installation, select **_Application Agent Installation_** at the lower right of the screen. For more information, see [the following](install-application-agent).
+- To update the agent to the latest version, see [the following](agent-update).
 
 :::

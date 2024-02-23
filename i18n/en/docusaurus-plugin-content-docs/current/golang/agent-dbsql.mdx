@@ -8,20 +8,20 @@ tags:
   - SQL
 ---
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement. The literal part is denoted with "#."
+  It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement. The literal part is denoted with "#."
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+- **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
-    Default `false`
+  Default `false`
 
-    It is used to record SQL parameters in the transaction trace details. The parameters can be viewed by entering a separate security key.
+  It is used to record SQL parameters in the transaction trace details. The parameters can be viewed by entering a separate security key.
 
-    :::note
+  :::note
 
-    The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
+  The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
 
-    :::
+  :::

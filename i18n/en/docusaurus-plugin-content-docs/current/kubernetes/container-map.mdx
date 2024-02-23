@@ -12,11 +12,11 @@ Home > Select Project > **_Dashboard_** > **_Container Map_**
 
 The **_Container Map_** in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod. 
 
--   Using the container map, you can select targets to analyze and organize groups. 
+- Using the container map, you can select targets to analyze and organize groups. 
 
--   By setting the status metrics and thresholds, you can see the status of individual containers or pods at a glance.
+- By setting the status metrics and thresholds, you can see the status of individual containers or pods at a glance.
 
--   You can select individual containers or pods for detailed information. It provides key monitoring data such as **_Trace_**, **_Metrics_**, **_Logs_**, and **_Event_**.
+- You can select individual containers or pods for detailed information. It provides key monitoring data such as **_Trace_**, **_Metrics_**, **_Logs_**, and **_Event_**.
 
 The following video clip is the guide to the **_Container Map_** menu.
 
@@ -44,25 +44,25 @@ For more information about the namespace project creation and management, see [t
 
 A container map provides multiple user settings that allow you to create any desired screen view. The functions available in the screen are as follows in order.
 
--   Category: You can select the targets to analyze. You can also set the **_container_** or **_pod_**.
+- Category: You can select the targets to analyze. You can also set the **_container_** or **_pod_**.
 
--   **_Group by_**: Through the **_Group by_** (clustering) option, the hierarchical relationships between cluster components can be displayed in two levels. For more information, see [the following](container-group).
+- **_Group by_**: Through the **_Group by_** (clustering) option, the hierarchical relationships between cluster components can be displayed in two levels. For more information, see [the following](container-group).
 
--   **_ConState(state)_**: You can select any chart metric.
+- **_ConState(state)_**: You can select any chart metric.
 
--   If you click ![Configuration icon](/img/ico-setting.svg), you can select any option to display information of containers or pods on each object.
+- If you click ![Configuration icon](/img/ico-setting.svg), you can select any option to display information of containers or pods on each object.
 
-    <ImgLang img='k8s-container-map-setting.png' desc='option' />
+  <ImgLang img='k8s-container-map-setting.png' desc='option' />
 
-    -   **_Show WhaTap Agent_**: The container or pod data can be displayed. Select a desired **_label_** option. For more information about the label option, see [the following](#label).
+  - **_Show WhaTap Agent_**: The container or pod data can be displayed. Select a desired **_label_** option. For more information about the label option, see [the following](#label).
 
-    -   **_Show metrics at the bottom of the card_**: You can select whether or not to display the metrics information at the bottom.
+  - **_Show metrics at the bottom of the card_**: You can select whether or not to display the metrics information at the bottom.
 
-    -   **_Show containers created within 1 minute_**: This option displays containers created within 1 minute in bright colors.
+  - **_Show containers created within 1 minute_**: This option displays containers created within 1 minute in bright colors.
 
--   ![Filter icon](/img/ico-filter.svg) **_Filter_**: You can see the status of containers or pods by filtering them based on your selections.
+- ![Filter icon](/img/ico-filter.svg) **_Filter_**: You can see the status of containers or pods by filtering them based on your selections.
 
--   ![Reset icon](/img/ico-reset.svg) **_Reset_**: It initializes the screen view set by you.
+- ![Reset icon](/img/ico-reset.svg) **_Reset_**: It initializes the screen view set by you.
 
 #### Metric selection and threshold setting
 
@@ -70,29 +70,29 @@ A container map provides multiple user settings that allow you to create any des
 
 Chart metric selection and threshold setting determine the status on the container map. If the selected metric has numeric data, you can set thresholds. The set thresholds are displayed in color according to the following categories: 
 
--   More than 0 and Less than <span class='slow'>Warning</span>: <span class='normal'>Blue</span>
+- More than 0 and Less than <span class='slow'>Warning</span>: <span class='normal'>Blue</span>
 
--   More than <span class='slow'>Warning</span> and Less than <span class='vslow'>Critical</span>: <span class='slow'>Orange</span>
+- More than <span class='slow'>Warning</span> and Less than <span class='vslow'>Critical</span>: <span class='slow'>Orange</span>
 
--   More than <span class='vslow'>Critical</span>: <span class='vslow'>Red</span>
+- More than <span class='vslow'>Critical</span>: <span class='vslow'>Red</span>
 
 :::note
 
--   Numerical metric units include **_pct_** (percentage), **_bps_**, **_millicore_**, and such. The **_pct#_** metric unit can have a value greater than 100%. 
+- Numerical metric units include **_pct_** (percentage), **_bps_**, **_millicore_**, and such. The **_pct#_** metric unit can have a value greater than 100%. 
 
--   For more information about the chart metric selection and threshold setting, see [the following](container-status).
+- For more information about the chart metric selection and threshold setting, see [the following](container-status).
 
 :::
 
 #### Label options{#label}
 
--   **_None_**: Labels are not displayed in the block.
+- **_None_**: Labels are not displayed in the block.
 
--   **_Name_**: The container or pod name is displayed.
+- **_Name_**: The container or pod name is displayed.
 
--   **_Application_**: The application in the container or pod is displayed.
+- **_Application_**: The application in the container or pod is displayed.
 
--   **_Selected metrics_**: The chart metric selected in **_ConState(state)_** is displayed.
+- **_Selected metrics_**: The chart metric selected in **_ConState(state)_** is displayed.
 
 #### Real-time and past search{#time-seletor}
 
@@ -110,61 +110,61 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 
 <ImgLang img='k8s-container-map-chart.png' desc='Container map chart' />
 
--   ![number 1](/img/char-a.svg) The total number of grouped targets and the key resource count are displayed.
+- ![number 1](/img/char-a.svg) The total number of grouped targets and the key resource count are displayed.
 
--   ![number 2](/img/char-b.svg) The shapes and colors for each object display the characteristics and status for containers or pods.
+- ![number 2](/img/char-b.svg) The shapes and colors for each object display the characteristics and status for containers or pods.
 
-    -   Color: Indicates the container or pod status. For more information about the status other than <span class='normal'>Normal</span>, <span class='slow'>Warning</span>, and <span class='vslow'>Critical</span>, see [the following](container-status).
+  - Color: Indicates the container or pod status. For more information about the status other than <span class='normal'>Normal</span>, <span class='slow'>Warning</span>, and <span class='vslow'>Critical</span>, see [the following](container-status).
 
-    -   Border
+  - Border
 
-        -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
+    - Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
 
-        -   If there are 2 containers in a pod and the micro agents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have micro agents installed, the borders are displayed.
+    - If there are 2 containers in a pod and the micro agents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have micro agents installed, the borders are displayed.
 
-    :::note 
+  :::note 
 
-    **Block and micro block**
+  **Block and micro block**
 
-    ![Block and micro block sc](/img/k8s-block-container.png)
+  ![Block and micro block sc](/img/k8s-block-container.png)
 
-    In the **_Container map_**, the single polygon is called a **block**. At this time, the block with an agent (a block within a block) is called a **micro block**.
+  In the **_Container map_**, the single polygon is called a **block**. At this time, the block with an agent (a block within a block) is called a **micro block**.
 
-    :::
+  :::
 
-    :::note 
+  :::note 
 
-    **Group**
+  **Group**
 
-    ![Container block group sc](/img/k8s-container-map-group.png)
+  ![Container block group sc](/img/k8s-container-map-group.png)
 
-    When the entire block is selected on the **_Container Map_** screen, the multiple block is called a group. 
+  When the entire block is selected on the **_Container Map_** screen, the multiple block is called a group. 
 
-    :::
+  :::
 
--   ![number 3](/img/char-c.svg) It displays the metrics related to the CPU and memories for the grouped targets.
+- ![number 3](/img/char-c.svg) It displays the metrics related to the CPU and memories for the grouped targets.
 
--   ![number 4](/img/char-d.svg) It displays the transaction information for the applications in the grouped targets.
+- ![number 4](/img/char-d.svg) It displays the transaction information for the applications in the grouped targets.
 
 ## Summary view and Detailed view
 
 You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
 
--   **Trace**
+- **Trace**
 
-    It is the APM tool to trace applications on the container. 
+  It is the APM tool to trace applications on the container. 
 
--   **Metrics**
+- **Metrics**
 
-    They are various metrics data for nodes and Kubernetes. 
+  They are various metrics data for nodes and Kubernetes. 
 
--   **Log**
+- **Log**
 
-    Various logs for containers and applications.
+  Various logs for containers and applications.
 
--   **Event**
+- **Event**
 
-    It indicates recording the events that occur while running the containers and applications. 
+  It indicates recording the events that occur while running the containers and applications. 
 
 Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
 
@@ -174,21 +174,21 @@ Click a specific object or a set of objects. You can check the summary data of t
 
 <ImgLang img='k8s-container-map-sum-all.png' desc='Summary view' />
 
--   **_Trace_**
+- **_Trace_**
 
-    Under the **_Trace_** tab in the container map, you can trace each individual transactions of the applications running on the container.
+  Under the **_Trace_** tab in the container map, you can trace each individual transactions of the applications running on the container.
 
--   **_Metrics_**
+- **_Metrics_**
 
-    Under the **_Metrics_** tab in the container map, you can see various metrics data such as resource quotas and usages for each container in real time.
+  Under the **_Metrics_** tab in the container map, you can see various metrics data such as resource quotas and usages for each container in real time.
 
--   **_Log_** 
+- **_Log_** 
 
-    Under the **_Log_** tab in the container map, you can manage and view standard logs for each container and application logs on the container.
+  Under the **_Log_** tab in the container map, you can manage and view standard logs for each container and application logs on the container.
 
--   **_Event_** 
+- **_Event_** 
 
-    Under the **_Event_** tab in the container map, you can see integrated views for the events that occurred in the Kubernetes cluster and user threshold events based on the WhaTap's alert function. 
+  Under the **_Event_** tab in the container map, you can see integrated views for the events that occurred in the Kubernetes cluster and user threshold events based on the WhaTap's alert function. 
 
 ### Display Detail
 
