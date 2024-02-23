@@ -519,16 +519,16 @@ RUN tar -xvzf whatap-otel.tar.gz -C /
     }, `whatap.conf`), `) 파일에 액세스 키와 수집 서버 IP 주소를 설정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-bash"
-    }, `echo "accesskey={액세스 키}" >> /usr/whatap/otel/whatap.conf
-echo "whatap.server.host={수집 서버 IP 주소}" >> /usr/whatap/otel/whatap.conf
+    }, `echo "accesskey={액세스 키}" >> /usr/whatap/otel/whatap.conf 
+echo "whatap.server.host={수집 서버 IP 주소}" >> /usr/whatap/otel/whatap.conf 
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "환경-변수로-설정하기"
     }, `환경 변수로 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `환경 변수(Environment)로 액세스 키와 수집 서버 IP 주소를 설정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-ini"
-    }, `WHATAP_ACCESSKEY={액세스 키}
-WHATAP_SERVER_HOST={수집 서버 IP 주소}
-WHATAP_OTEL_GRPC_SERVER_PORT={Grpc 서버 리스닝 포트}
+    }, `WHATAP_ACCESSKEY={액세스 키} 
+WHATAP_SERVER_HOST={수집 서버 IP 주소} 
+WHATAP_OTEL_GRPC_SERVER_PORT={Grpc 서버 리스닝 포트} 
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
@@ -555,7 +555,7 @@ processors:
 
 exporters:
   logging:
-  # otlp exporter에 whatap-otel을 대상으로 설정합니다.  
+  # otlp exporter에 whatap-otel을 대상으로 설정합니다.
   otlp:
     endpoint: 127.0.0.1:6600
     tls:

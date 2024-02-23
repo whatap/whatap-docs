@@ -315,7 +315,8 @@ const frontMatter = {
         'SSO',
         '계정',
         '보안'
-    ]
+    ],
+    displayed_sidebar: 'manageSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -352,7 +353,8 @@ const metadata = {
             "SSO",
             "계정",
             "보안"
-        ]
+        ],
+        "displayed_sidebar": "manageSidebar"
     },
     "sidebar": "manageSidebar",
     "previous": {
