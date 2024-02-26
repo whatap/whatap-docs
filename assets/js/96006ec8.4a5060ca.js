@@ -381,8 +381,8 @@ const toc = [
         level: 2
     },
     {
-        value: '유저 세션 수, 유전 세션',
-        id: '유저-세션-수-유전-세션',
+        value: '유저 세션 수, 유저 세션',
+        id: '유저-세션-수-유저-세션',
         level: 2
     },
     {
@@ -693,8 +693,8 @@ function MDXContent(_param) {
     }, `에러 메시지별 에러 건수`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, `콘솔 에러가 아닌 소스 에러 및 AJAX 에러에 대한 메시지를 표시합니다. 수평 막대 차트는 조회 시간 동안 발생한 에러 메시지별 오류 수의 합계입니다. 상위 8개까지만 표시됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "유저-세션-수-유전-세션"
-    }, `유저 세션 수, 유전 세션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        "id": "유저-세션-수-유저-세션"
+    }, `유저 세션 수, 유저 세션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "browser-user-session.png",
         desc: "User sessions",
         mdxType: "ImgLang"
