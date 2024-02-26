@@ -626,7 +626,7 @@ function MDXContent(_param) {
         sid: "show_trace",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 버튼 클릭 시 발생하는 화이트 아웃 현상 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), " 버튼 클릭 시 응답 없는 현상 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"

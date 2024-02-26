@@ -1499,46 +1499,7 @@ var ThemeClassNames = __webpack_require__(23891);
 var Heading = __webpack_require__(61917);
 // EXTERNAL MODULE: ./src/theme/MDXContent/index.js
 var MDXContent = __webpack_require__(84978);
-// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(56347);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(15418);
-;// CONCATENATED MODULE: ./src/components/facebook/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"fbsharebutton":"fbsharebutton_dZBI","fb_xfbml_parse_ignore":"fb_xfbml_parse_ignore_BpHP"});
-;// CONCATENATED MODULE: ./src/components/facebook/index.js
-
-
-
-
-
-function FacebookSharing() {
-    const location = (0,react_router/* useLocation */.zy)();
-    const curLocation = "https://docs.whatap.io" + location.pathname;
-    const faceURL = "https://www.facebook.com/sharer/sharer.php?u=" + curLocation + "&src=sdkpreparse";
-    const onPopup = ()=>{
-        window.open(faceURL, '', 'width=430, height=500, location=no, status=no, scrollbars=yes');
-    };
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-        class: styles_module.fbsharebutton,
-        "data-href": curLocation,
-        "data-layout": "",
-        "data-size": "",
-        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("button", {
-            type: "button",
-            className: styles_module.fb_xfbml_parse_ignore,
-            onClick: onPopup,
-            children: (0,Translate/* translate */.T)({
-                id: "whatap_plugin.sharefacebook",
-                message: "공유",
-                description: "Sharing this page"
-            })
-        })
-    });
-}
-
 ;// CONCATENATED MODULE: ./src/theme/DocItem/Content/index.js
-
 
 
 
@@ -1574,7 +1535,6 @@ function DocItemContent({ children }) {
                     children: syntheticTitle
                 })
             }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)(FacebookSharing, {}),
             /*#__PURE__*/ (0,jsx_runtime.jsx)(MDXContent/* default */.A, {
                 children: children
             })
@@ -1590,11 +1550,15 @@ var routesUtils = __webpack_require__(93989);
 var Link = __webpack_require__(89546);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
 var useBaseUrl = __webpack_require__(92469);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(15418);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Icon/Home/index.js
 var Home = __webpack_require__(25003);
+// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(56347);
 ;// CONCATENATED MODULE: ./src/theme/DocBreadcrumbs/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const DocBreadcrumbs_styles_module = ({"breadcrumbsContainer":"breadcrumbsContainer_Alpn","breadcrumbHomeIcon":"breadcrumbHomeIcon_SLhD"});
+/* harmony default export */ const styles_module = ({"breadcrumbsContainer":"breadcrumbsContainer_Alpn","breadcrumbHomeIcon":"breadcrumbHomeIcon_SLhD"});
 ;// CONCATENATED MODULE: ./src/theme/DocBreadcrumbs/index.js
 function _define_property(obj, key, value) {
     if (key in obj) {
@@ -1741,10 +1705,10 @@ function HomeBreadcrumbItem() {
                 message: 'Home page',
                 description: 'The ARIA label for the home page in the breadcrumbs'
             }),
-            className: (0,clsx_m/* default */.A)('breadcrumbs__link', DocBreadcrumbs_styles_module.breadcrumbsItemLink),
+            className: (0,clsx_m/* default */.A)('breadcrumbs__link', styles_module.breadcrumbsItemLink),
             href: homeHref,
             children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Home/* default */.A, {
-                className: DocBreadcrumbs_styles_module.breadcrumbHomeIcon
+                className: styles_module.breadcrumbHomeIcon
             })
         })
     });
@@ -1759,7 +1723,7 @@ function DocBreadcrumbs() {
         if (location.pathname.indexOf("release-notes") !== -1) {
             const releaseurl = (0,useBaseUrl/* default */.A)('/') + 'release-notes';
             return /*#__PURE__*/ (0,jsx_runtime.jsx)("nav", {
-                className: (0,clsx_m/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docBreadcrumbs, DocBreadcrumbs_styles_module.breadcrumbsContainer),
+                className: (0,clsx_m/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docBreadcrumbs, styles_module.breadcrumbsContainer),
                 "aria-label": (0,Translate/* translate */.T)({
                     id: 'theme.docs.breadcrumbs.navAriaLabel',
                     message: 'Breadcrumbs',
@@ -1795,7 +1759,7 @@ function DocBreadcrumbs() {
     //   return null;
     // }
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)("nav", {
-        className: (0,clsx_m/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docBreadcrumbs, DocBreadcrumbs_styles_module.breadcrumbsContainer),
+        className: (0,clsx_m/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.docs.docBreadcrumbs, styles_module.breadcrumbsContainer),
         "aria-label": (0,Translate/* translate */.T)({
             id: 'theme.docs.breadcrumbs.navAriaLabel',
             message: 'Breadcrumbs',
@@ -1841,6 +1805,40 @@ function DocBreadcrumbs() {
 ;// CONCATENATED MODULE: ./src/theme/DocItem/Layout/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const Layout_styles_module = ({"docItemContainer":"docItemContainer_c0TR","docItemCol":"docItemCol_z5aJ"});
+;// CONCATENATED MODULE: ./src/components/facebook/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const facebook_styles_module = ({"fbsharebutton":"fbsharebutton_dZBI","fb_xfbml_parse_ignore":"fb_xfbml_parse_ignore_BpHP"});
+;// CONCATENATED MODULE: ./src/components/facebook/index.js
+
+
+
+
+
+function FacebookSharing() {
+    const location = (0,react_router/* useLocation */.zy)();
+    const curLocation = "https://docs.whatap.io" + location.pathname;
+    const faceURL = "https://www.facebook.com/sharer/sharer.php?u=" + curLocation + "&src=sdkpreparse";
+    const onPopup = ()=>{
+        window.open(faceURL, '', 'width=430, height=500, location=no, status=no, scrollbars=yes');
+    };
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+        class: facebook_styles_module.fbsharebutton,
+        "data-href": curLocation,
+        "data-layout": "",
+        "data-size": "",
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("button", {
+            type: "button",
+            className: facebook_styles_module.fb_xfbml_parse_ignore,
+            onClick: onPopup,
+            children: (0,Translate/* translate */.T)({
+                id: "whatap_plugin.sharefacebook",
+                message: "공유",
+                description: "Sharing this page"
+            })
+        })
+    });
+}
+
 ;// CONCATENATED MODULE: ./src/components/printpage/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const printpage_styles_module = ({"btnprint":"btnprint_EBmh"});
@@ -1926,6 +1924,7 @@ function DocItemLayout({ children }) {
                             /*#__PURE__*/ (0,jsx_runtime.jsxs)("article", {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(DocBreadcrumbs, {}),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)(FacebookSharing, {}),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(DocVersionBadge/* default */.A, {}),
                                     docTOC.mobile,
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(DocItemContent, {
