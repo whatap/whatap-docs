@@ -674,6 +674,9 @@ div[class*='announcementBar'] {
     }
   }
 }
+article div[class*='fbsharebutton'] {
+  display: none;
+}
 // UI
 
 // document
@@ -727,9 +730,6 @@ main {
     .docusaurus-mermaid-container {
       background-color: #fff;
       margin: 8px 0;
-    }
-    header + div[class*='fbsharebutton'] {
-      display: none;
     }
     h1 {
       padding-top: 8px;
@@ -1973,13 +1973,13 @@ main {
   }
 }
 @media (max-width: 996px) {
+  article div[class*='fbsharebutton'] {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 9px;
+    position: relative;
+  }
   main {
-    .markdown > header + div[class*='fbsharebutton'] {
-      display: block;
-      margin-top: -15px;
-      margin-bottom: 9px;
-      position: relative;
-    }
     .col--3 {
       display: none;
     }
