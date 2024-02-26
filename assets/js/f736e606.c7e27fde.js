@@ -683,7 +683,7 @@ function MDXContent(_param) {
         parentName: "p",
         "src": "https://www.whatap.io/img/platform/solution_06.jpg",
         "alt": null
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `추가 리전이 생길 때마다 수집 서버만 설치하고 하나의 모니터링 화면에서 여러 리전의 서버를 통합 모리터링합니다. 와탭 모니터링은 IDC 센터 추가 구축 / 클라우드 플랫폼 추가 구축 등을 리전 구축만으로 수집 서버를 확장할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `추가 리전이 생길 때마다 수집 서버만 설치하고 하나의 모니터링 화면에서 여러 리전의 서버를 통합 모니터링합니다. 와탭 모니터링은 IDC 센터 추가 구축 / 클라우드 플랫폼 추가 구축 등을 리전 구축만으로 수집 서버를 확장할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "수집서버의-안정성-및-확장성-보장"
     }, `수집서버의 안정성 및 확장성 보장`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         parentName: "p",
