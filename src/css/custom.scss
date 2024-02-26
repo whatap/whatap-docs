@@ -349,6 +349,19 @@ html[lang='ja-JP'] {
   transform: rotateZ(0deg);
   margin-left: 6px;
 }
+.menu__list-item.newfunc > a {
+  display: inline-block;
+}
+.menu__list-item.newfunc > a::after {
+  display: inline;
+  content: 'New';
+  border-radius: 1px solid none;
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  font-family: "Oleo Script";
+  margin-left: 10px;
+  font-weight: 400;
+}
 .menu__list-item-collapsible:hover {
   background: var(--ifm-active-menu-color);
 }
