@@ -311,7 +311,8 @@ const frontMatter = {
     id: 'java-2_2_18',
     title: 'Java Agent v2.2.18',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_17'
+    pagination_next: 'release-notes/java/java-2_2_17',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -331,13 +332,10 @@ const metadata = {
         "id": "java-2_2_18",
         "title": "Java Agent v2.2.18",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_17"
+        "pagination_next": "release-notes/java/java-2_2_17",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Java Agent v2.2.19",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_19"
-    },
     "next": {
         "title": "Java Agent v2.2.17",
         "permalink": "/whatap-docs/release-notes/java/java-2_2_17"

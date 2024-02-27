@@ -336,10 +336,6 @@ const metadata = {
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "DBX v1.6.15",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_15"
-    },
     "next": {
         "title": "DBX v1.6.13",
         "permalink": "/whatap-docs/release-notes/db/dbx-1_6_13"
