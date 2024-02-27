@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[76903],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[42177],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 21569:
+/***/ 69073:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '이벤트 설정',
     description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
     tags: [
-        'Altibase',
+        'PostgreSQL',
         '데이터베이스',
         '경고 알림',
         '이벤트 설정'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "altibase/warning-notice-v2",
-    "id": "altibase/warning-notice-v2",
+    "unversionedId": "postgresql/warning-notice-v2",
+    "id": "postgresql/warning-notice-v2",
     "title": "이벤트 설정",
     "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/altibase/warning-notice-v2.mdx",
-    "sourceDirName": "altibase",
-    "slug": "/altibase/warning-notice-v2",
-    "permalink": "/whatap-docs/altibase/warning-notice-v2",
+    "source": "@site/docs/postgresql/warning-notice-v2.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/warning-notice-v2",
+    "permalink": "/whatap-docs/postgresql/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/altibase/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/postgresql/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "Altibase",
-            "permalink": "/whatap-docs/tags/altibase"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "데이터베이스",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "이벤트 설정",
         "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "Altibase",
+            "PostgreSQL",
             "데이터베이스",
             "경고 알림",
             "이벤트 설정"
         ]
     },
-    "sidebar": "altibaseSidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
         "title": "데이터베이스 경고 알림",
-        "permalink": "/whatap-docs/altibase/warning-notice"
+        "permalink": "/whatap-docs/postgresql/warning-notice"
     },
     "next": {
         "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/altibase/metric-warning-notice"
+        "permalink": "/whatap-docs/postgresql/metric-warning-notice"
     }
 };
 const assets = {};
@@ -2483,11 +2483,10 @@ function MDXContent(_param) {
         sid: "TTL06883",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 기본 제공된 템플릿의 메시지가 입력되어 있습니다. 사용자가 원하는 메시지로 편집할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        parentName: "li",
-        "type": "tip"
+    }), ": 기본 제공된 템플릿의 메시지가 입력되어 있습니다. 사용자가 원하는 메시지로 편집할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `  :::tip`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "admonition"
+        parentName: "li"
     }, `메시지 입력 창에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `$`, `{`, `Tag`, `}`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `$`, `{`, `Field`, `}`), ` 변수를 입력해 메시지를 작성할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "analysis",
         className: "uitext",
@@ -2507,7 +2506,18 @@ function MDXContent(_param) {
     }), " 이름은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
         to: "#basic-template",
         mdxType: "Link"
-    }, "다음 문서"), "의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "카테고리"), " 항목을 참조하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "다음 문서"), "의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "카테고리"), " 항목을 참조하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "시간 아이콘",
+        src: (__webpack_require__(9504)/* ["default"] */ .A),
+        width: "24",
+        height: "24"
+    }), ` 버튼을 클릭하면 이전에 입력한 메시지 기록을 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `:::`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "alert_test",
@@ -3021,6 +3031,16 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtc2VhcmNoPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU0OC4wMDAwMDAsIC00MjYyLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgICA8ZyBpZD0iaWMtc2VhcmNoLWNvcHktMTAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0OC4wMDAwMDAsIDQyNjIuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtc2VhcmNoIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMi4zNDMxNDU3NSwyLjM0MzE0NTc1IEM1LjQ2NzM0MDA4LC0wLjc4MTA0ODU4MyAxMC41MzI2NTk5LC0wLjc4MTA0ODU4MyAxMy42NTY4NTQyLDIuMzQzMTQ1NzUgQzE2LjU0MTYyNTUsNS4yMjc5MTcgMTYuNzYyNzAwNCw5Ljc2NzY5Njk5IDE0LjMyMDA3ODgsMTIuOTA2MTMxOSBMMTkuMzYzNjAzOSwxNy45NDkzOTAzIEwxNy45NDkzOTAzLDE5LjM2MzYwMzkgTDEyLjkwNjEzMTksMTQuMzIwMDc4OCBDOS43Njc2OTY5OSwxNi43NjI3MDA0IDUuMjI3OTE3LDE2LjU0MTYyNTUgMi4zNDMxNDU3NSwxMy42NTY4NTQyIEMtMC43ODEwNDg1ODMsMTAuNTMyNjU5OSAtMC43ODEwNDg1ODMsNS40NjczNDAwOCAyLjM0MzE0NTc1LDIuMzQzMTQ1NzUgWiBNMTIuMjQyNjQwNywzLjc1NzM1OTMxIEM5Ljg5OTQ5NDk0LDEuNDE0MjEzNTYgNi4xMDA1MDUwNiwxLjQxNDIxMzU2IDMuNzU3MzU5MzEsMy43NTczNTkzMSBDMS40MTQyMTM1Niw2LjEwMDUwNTA2IDEuNDE0MjEzNTYsOS44OTk0OTQ5NCAzLjc1NzM1OTMxLDEyLjI0MjY0MDcgQzYuMTAwNTA1MDYsMTQuNTg1Nzg2NCA5Ljg5OTQ5NDk0LDE0LjU4NTc4NjQgMTIuMjQyNjQwNywxMi4yNDI2NDA3IEMxNC41ODU3ODY0LDkuODk5NDk0OTQgMTQuNTg1Nzg2NCw2LjEwMDUwNTA2IDEyLjI0MjY0MDcsMy43NTczNTkzMSBaIiBpZD0iQ29tYmluZWQtU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+");
+
+/***/ }),
+
+/***/ 9504:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogICAgPHBhdGggZmlsbD0iIzc1NzU3NSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTcuNTYzIDQuMjFMMjIgNS40M2wtMS43OCAxLjA1NkExMC4wMDIgMTAuMDAyIDAgMCAxIDIxLjg2MyAxMmMwIDUuNTIzLTQuNDQ2IDEwLTkuOTMyIDEwLS4xNzggMC0uMzU2LS4wMDUtLjUzMi0uMDE0bC4wNzctMS45OTljLjE1LjAwOS4zMDIuMDEzLjQ1NS4wMTMgNC4zODkgMCA3Ljk0Ni0zLjU4MiA3Ljk0Ni04YTguMDAxIDguMDAxIDAgMCAwLTEuMzc0LTQuNDk4bC0yLjEzIDEuMjYyIDEuMTktNC41NTR6TTcuNjI3IDE4LjczMmE4LjExIDguMTEgMCAwIDAgMi4xOTYgMS4wMDNsLS41NSAxLjkyMy0uMzkxLS4xMjFhMTAuMTM0IDEwLjEzNCAwIDAgMS0yLjM1LTEuMTN6TTQuOTQ2IDE1Ljc5Yy4zNzcuNzExLjg1OCAxLjM2MSAxLjQyOCAxLjkyOGwtMS40MSAxLjQxOS0uMjYzLS4yNzNhMTAgMTAgMCAwIDEtMS41MjItMi4xMzd6TTEyLjc4NSA3djUuMDczbDQuMTEzIDIuNDU5TDE1Ljk3NiAxNmwtNS4wMzctMy4wMzJWN2gxLjg0NnpNMi4wMSAxMS44NjlsMiAuMDMzYTcuOTk0IDcuOTk0IDAgMCAwIC4zMjEgMi4zNzhsLTEuOTIuNTYyLS4wOTgtLjM2MWE5Ljk4NiA5Ljk4NiAwIDAgMS0uMzAzLTIuNjEyek0zLjMyNyA3LjA4bDEuNzM4Ljk5YTguMjA3IDguMjA3IDAgMCAwLS44NyAyLjI1OUwyLjI0MiA5LjlsLjA4NS0uMzU3YTEwLjA4IDEwLjA4IDAgMCAxIDEtMi40NjJ6bTMuNDYtMy41N2wxLjA0NCAxLjcwN2MtLjY4Ni40MTktMS4zMDQuOTM5LTEuODM1IDEuNTQ0TDQuNDkyIDUuNDQzbC4yNTctLjI4QTkuOTc0IDkuOTc0IDAgMCAxIDYuNzg4IDMuNTF6bTQuNzcyLTEuNDY0bC4wOTIgMS45OThhOC4wMiA4LjAyIDAgMCAwLTIuMzU1LjQ2OWwtLjY4LTEuODgxLjM1Ni0uMTJhMTAuMDEyIDEwLjAxMiAwIDAgMSAyLjU4Ny0uNDY2eiI+PC9wYXRoPgo8L3N2Zz4=");
 
 /***/ })
 
