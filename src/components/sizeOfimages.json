@@ -4247,10 +4247,6 @@
     "width": 1200,
     "height": 648
   },
-  "db-locktress-basic-mysql copy.png": {
-    "width": 1200,
-    "height": 722
-  },
   "db-locktress-basic-mysql-en.png": {
     "width": 1200,
     "height": 709
@@ -5030,6 +5026,190 @@
   "event-config-message-example.png": {
     "width": 1200,
     "height": 207
+  },
+  "event-config-v2-apm-en.png": {
+    "width": 1200,
+    "height": 254
+  },
+  "event-config-v2-apm-ja.png": {
+    "width": 1200,
+    "height": 253
+  },
+  "event-config-v2-apm.png": {
+    "width": 1200,
+    "height": 252
+  },
+  "event-config-v2-browser-en.png": {
+    "width": 1200,
+    "height": 228
+  },
+  "event-config-v2-browser-ja.png": {
+    "width": 1200,
+    "height": 226
+  },
+  "event-config-v2-browser.png": {
+    "width": 1200,
+    "height": 223
+  },
+  "event-config-v2-condition-common-en.png": {
+    "width": 800,
+    "height": 437
+  },
+  "event-config-v2-condition-common-ja.png": {
+    "width": 800,
+    "height": 438
+  },
+  "event-config-v2-condition-common.png": {
+    "width": 800,
+    "height": 438
+  },
+  "event-config-v2-db01-en.png": {
+    "width": 1200,
+    "height": 200
+  },
+  "event-config-v2-db01-ja.png": {
+    "width": 1200,
+    "height": 197
+  },
+  "event-config-v2-db01.png": {
+    "width": 1200,
+    "height": 200
+  },
+  "event-config-v2-db02-en.png": {
+    "width": 1200,
+    "height": 174
+  },
+  "event-config-v2-db02-ja.png": {
+    "width": 1200,
+    "height": 173
+  },
+  "event-config-v2-db02.png": {
+    "width": 1200,
+    "height": 173
+  },
+  "event-config-v2-info-receive-common-en.png": {
+    "width": 800,
+    "height": 262
+  },
+  "event-config-v2-info-receive-common-ja.png": {
+    "width": 800,
+    "height": 259
+  },
+  "event-config-v2-info-receive-common.png": {
+    "width": 800,
+    "height": 253
+  },
+  "event-config-v2-json-error.png": {
+    "width": 800,
+    "height": 74
+  },
+  "event-config-v2-k8s-en.png": {
+    "width": 1200,
+    "height": 359
+  },
+  "event-config-v2-k8s-ja.png": {
+    "width": 1200,
+    "height": 359
+  },
+  "event-config-v2-k8s.png": {
+    "width": 1200,
+    "height": 359
+  },
+  "event-config-v2-npm-en.png": {
+    "width": 1200,
+    "height": 283
+  },
+  "event-config-v2-npm-ja.png": {
+    "width": 1200,
+    "height": 281
+  },
+  "event-config-v2-npm.png": {
+    "width": 1200,
+    "height": 279
+  },
+  "event-config-v2-server-en.png": {
+    "width": 1200,
+    "height": 416
+  },
+  "event-config-v2-server-ja.png": {
+    "width": 1200,
+    "height": 415
+  },
+  "event-config-v2-server.png": {
+    "width": 1200,
+    "height": 414
+  },
+  "event-config-v2-simulation-common-en.png": {
+    "width": 800,
+    "height": 267
+  },
+  "event-config-v2-simulation-common-ja.png": {
+    "width": 800,
+    "height": 267
+  },
+  "event-config-v2-simulation-common.png": {
+    "width": 800,
+    "height": 266
+  },
+  "event-config-v2-target-apm-en.png": {
+    "width": 800,
+    "height": 180
+  },
+  "event-config-v2-target-apm-ja.png": {
+    "width": 800,
+    "height": 181
+  },
+  "event-config-v2-target-apm.png": {
+    "width": 800,
+    "height": 177
+  },
+  "event-config-v2-target-browser-en.png": {
+    "width": 800,
+    "height": 160
+  },
+  "event-config-v2-target-browser-ja.png": {
+    "width": 800,
+    "height": 161
+  },
+  "event-config-v2-target-browser.png": {
+    "width": 800,
+    "height": 160
+  },
+  "event-config-v2-target-db-en.png": {
+    "width": 800,
+    "height": 194
+  },
+  "event-config-v2-target-db-ja.png": {
+    "width": 800,
+    "height": 195
+  },
+  "event-config-v2-target-db.png": {
+    "width": 800,
+    "height": 193
+  },
+  "event-config-v2-target-npm-en.png": {
+    "width": 800,
+    "height": 270
+  },
+  "event-config-v2-target-npm-ja.png": {
+    "width": 800,
+    "height": 270
+  },
+  "event-config-v2-target-npm.png": {
+    "width": 800,
+    "height": 268
+  },
+  "event-config-v2-target-server-en.png": {
+    "width": 800,
+    "height": 173
+  },
+  "event-config-v2-target-server-ja.png": {
+    "width": 800,
+    "height": 174
+  },
+  "event-config-v2-target-server.png": {
+    "width": 800,
+    "height": 171
   },
   "event-history-aws.png": {
     "width": 1586,
@@ -7407,6 +7587,14 @@
     "width": 753,
     "height": 418
   },
+  "log-timestamp-en.png": {
+    "width": 1219,
+    "height": 175
+  },
+  "log-timestamp-ja.png": {
+    "width": 1218,
+    "height": 180
+  },
   "log-timestamp.png": {
     "width": 1220,
     "height": 181
@@ -7444,12 +7632,12 @@
     "height": 622
   },
   "main-project-filter-en.png": {
-    "width": 600,
-    "height": 197
+    "width": 220,
+    "height": 369
   },
   "main-project-filter-ja.png": {
-    "width": 600,
-    "height": 228
+    "width": 220,
+    "height": 370
   },
   "main-project-filter.png": {
     "width": 221,
@@ -7686,10 +7874,6 @@
   "metrics-chart-all-mongodb.png": {
     "width": 1200,
     "height": 980
-  },
-  "metrics-chart-all-mssql-en copy.png": {
-    "width": 1200,
-    "height": 1004
   },
   "metrics-chart-all-mssql-en.png": {
     "width": 1200,
@@ -9575,6 +9759,22 @@
     "width": 1200,
     "height": 1564
   },
+  "okta-app-embed-link.png": {
+    "width": 600,
+    "height": 199
+  },
+  "okta-attribute-statements.png": {
+    "width": 600,
+    "height": 189
+  },
+  "okta-samil-settings-general.png": {
+    "width": 600,
+    "height": 442
+  },
+  "okta-sign-on.png": {
+    "width": 600,
+    "height": 582
+  },
   "organization-member-en.png": {
     "width": 1200,
     "height": 240
@@ -9593,15 +9793,15 @@
   },
   "overview-notification-en.png": {
     "width": 1200,
-    "height": 734
+    "height": 723
   },
   "overview-notification-ja.png": {
     "width": 1200,
-    "height": 734
+    "height": 723
   },
   "overview-notification.png": {
     "width": 1200,
-    "height": 734
+    "height": 723
   },
   "performance-summary-en.png": {
     "width": 1200,
@@ -11351,6 +11551,58 @@
     "width": 1200,
     "height": 485
   },
+  "sso-check-sso-info-en.png": {
+    "width": 800,
+    "height": 393
+  },
+  "sso-check-sso-info-ja.png": {
+    "width": 800,
+    "height": 398
+  },
+  "sso-check-sso-info.png": {
+    "width": 800,
+    "height": 397
+  },
+  "sso-delete-sso-key-en.png": {
+    "width": 600,
+    "height": 193
+  },
+  "sso-delete-sso-key-ja.png": {
+    "width": 600,
+    "height": 193
+  },
+  "sso-delete-sso-key.png": {
+    "width": 600,
+    "height": 191
+  },
+  "sso-externalidp-button-en.png": {
+    "width": 853,
+    "height": 205
+  },
+  "sso-externalidp-button-ja.png": {
+    "width": 622,
+    "height": 205
+  },
+  "sso-register-metadata-en.png": {
+    "width": 800,
+    "height": 558
+  },
+  "sso-register-metadata-ja.png": {
+    "width": 800,
+    "height": 556
+  },
+  "sso-service-key-en.png": {
+    "width": 699,
+    "height": 315
+  },
+  "sso-service-key-ja.png": {
+    "width": 600,
+    "height": 275
+  },
+  "sso-service-key.png": {
+    "width": 600,
+    "height": 387
+  },
   "whale-none-crisp-chat-icon.png": {
     "width": 600,
     "height": 370
@@ -11607,73 +11859,229 @@
     "width": 1759,
     "height": 1194
   },
+  "main-project-compact-card-view-en.png": {
+    "width": 1200,
+    "height": 412
+  },
+  "main-project-compact-card-view-ja.png": {
+    "width": 1200,
+    "height": 411
+  },
   "main-project-compact-card-view.png": {
     "width": 1200,
     "height": 413
   },
+  "main-project-extend-card-view-en.png": {
+    "width": 1200,
+    "height": 464
+  },
+  "main-project-extend-card-view-ja.png": {
+    "width": 1200,
+    "height": 464
+  },
   "main-project-extend-card-view.png": {
-    "width": 1208,
-    "height": 471
+    "width": 1200,
+    "height": 463
+  },
+  "main-project-favorite-list-en.png": {
+    "width": 960,
+    "height": 317
+  },
+  "main-project-favorite-list-ja.png": {
+    "width": 960,
+    "height": 317
   },
   "main-project-favorite-list.png": {
     "width": 960,
     "height": 315
   },
+  "main-project-free-trial-en.png": {
+    "width": 400,
+    "height": 60
+  },
+  "main-project-free-trial-ja.png": {
+    "width": 400,
+    "height": 62
+  },
   "main-project-free-trial.png": {
     "width": 400,
     "height": 60
+  },
+  "main-project-list-card-view-en.png": {
+    "width": 1200,
+    "height": 471
+  },
+  "main-project-list-card-view-ja.png": {
+    "width": 1200,
+    "height": 472
   },
   "main-project-list-card-view.png": {
     "width": 1200,
     "height": 471
   },
+  "main-project-select-view-en.png": {
+    "width": 600,
+    "height": 79
+  },
+  "main-project-select-view-ja.png": {
+    "width": 600,
+    "height": 79
+  },
   "main-project-select-view.png": {
     "width": 600,
     "height": 76
+  },
+  "main-project-set-favorite-en.png": {
+    "width": 400,
+    "height": 148
+  },
+  "main-project-set-favorite-ja.png": {
+    "width": 400,
+    "height": 150
   },
   "main-project-set-favorite.png": {
     "width": 400,
     "height": 145
   },
+  "main-ui-adjust-sidebar-en.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "main-ui-adjust-sidebar-ja.png": {
+    "width": 1200,
+    "height": 647
+  },
   "main-ui-adjust-sidebar.png": {
     "width": 1200,
     "height": 647
+  },
+  "main-ui-filter-project-en.png": {
+    "width": 600,
+    "height": 472
+  },
+  "main-ui-filter-project-ja.png": {
+    "width": 600,
+    "height": 471
+  },
+  "main-ui-filter-project.png": {
+    "width": 600,
+    "height": 468
+  },
+  "main-ui-fold-extend-sidemenu-en.png": {
+    "width": 1200,
+    "height": 462
+  },
+  "main-ui-fold-extend-sidemenu-ja.png": {
+    "width": 1200,
+    "height": 462
   },
   "main-ui-fold-extend-sidemenu.png": {
     "width": 1200,
     "height": 462
   },
+  "main-ui-home-to-project-move-01-en.png": {
+    "width": 600,
+    "height": 415
+  },
+  "main-ui-home-to-project-move-01-ja.png": {
+    "width": 600,
+    "height": 415
+  },
   "main-ui-home-to-project-move-01.png": {
     "width": 600,
     "height": 414
   },
+  "main-ui-home-to-project-move-02-en.png": {
+    "width": 694,
+    "height": 789
+  },
+  "main-ui-home-to-project-move-02-ja.png": {
+    "width": 694,
+    "height": 776
+  },
   "main-ui-home-to-project-move-02.png": {
     "width": 694,
-    "height": 837
+    "height": 787
+  },
+  "main-ui-profile-menu-en.png": {
+    "width": 200,
+    "height": 293
+  },
+  "main-ui-profile-menu-ja.png": {
+    "width": 200,
+    "height": 295
   },
   "main-ui-profile-menu.png": {
     "width": 200,
     "height": 295
   },
+  "main-ui-project-card-en.png": {
+    "width": 416,
+    "height": 381
+  },
+  "main-ui-project-card-ja.png": {
+    "width": 416,
+    "height": 381
+  },
   "main-ui-project-card.png": {
     "width": 416,
     "height": 381
+  },
+  "main-ui-search-by-group-en.png": {
+    "width": 1200,
+    "height": 646
+  },
+  "main-ui-search-by-group-ja.png": {
+    "width": 1200,
+    "height": 646
   },
   "main-ui-search-by-group.png": {
     "width": 1200,
     "height": 647
   },
+  "main-ui-set-favorite-menu-en.png": {
+    "width": 400,
+    "height": 340
+  },
+  "main-ui-set-favorite-menu-ja.png": {
+    "width": 400,
+    "height": 340
+  },
   "main-ui-set-favorite-menu.png": {
     "width": 400,
     "height": 361
+  },
+  "main-ui-setting-by-org-en.png": {
+    "width": 400,
+    "height": 105
+  },
+  "main-ui-setting-by-org-ja.png": {
+    "width": 400,
+    "height": 106
   },
   "main-ui-setting-by-org.png": {
     "width": 400,
     "height": 101
   },
+  "main-ui-ver2-en.png": {
+    "width": 1200,
+    "height": 646
+  },
+  "main-ui-ver2-ja.png": {
+    "width": 1200,
+    "height": 646
+  },
   "main-ui-ver2.png": {
     "width": 1200,
     "height": 647
+  },
+  "main-ui-view-only-favorite-en.png": {
+    "width": 400,
+    "height": 134
+  },
+  "main-ui-view-only-favorite-ja.png": {
+    "width": 400,
+    "height": 133
   },
   "main-ui-view-only-favorite.png": {
     "width": 400,
