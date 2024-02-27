@@ -42,3 +42,7 @@ html[data-theme='dark'] .docsearch-modal-search-hits-item--highlight:active,
 html[data-theme='dark'] .docsearch-modal-search-hits-item--highlight:focus {
   color: #1f1f1f !important;
 }
+
+.docsearch-modal-search-hits-item-title, .docsearch-modal-search-hits-item-text {
+  white-space: break-spaces !important;
+}
