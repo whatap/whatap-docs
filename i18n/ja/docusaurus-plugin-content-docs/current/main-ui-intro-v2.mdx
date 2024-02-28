@@ -1,0 +1,353 @@
+---
+id: main-ui-intro-v2
+title: ホーム画面(UI)
+displayed_sidebar: indexSidebar
+description: WhaTapモニタリングサービスの初期画面について説明します。
+tags:
+  - UI
+  - ユーザーインターフェース
+  - モニタリング
+---
+
+[와탭 모니터링 서비스](https://service.whatap.io)에 로그인하면 펼쳐지는 초기 화면의 요소들을 안내합니다. 
+
+<ImgLang img='ui-home/main-ui-ver2.png' desc='초기 화면' />
+
+* 초기 화면의 기본 메뉴는 <Cmdname sid="project_list" className="uitext" />입니다.
+
+* 화면 왼쪽에 위치한 패널은 사이드 메뉴입니다.
+
+* 화면 위에는 현재 메뉴의 이름과 지원 메뉴를 확인할 수 있습니다.
+
+## 프로젝트 목록 {#projectlist}
+
+사용자가 멤버로 포함되어 있거나 관리 중인 프로젝트를 확인할 수 있는 메뉴입니다. 목록에 펼쳐진 개별 프로젝트를 선택하면 해당 프로젝트의 <Cmdname sid="dashboard" className="uitext" /> 메뉴로 이동합니다.
+
+<ImgLang img='ui-home/main-ui-project-card.png' desc='프로젝트' />
+
+<Cmdname sid="project_list" className="uitext" />의 개별 프로젝트에서 제공하는 정보와 기능은 다음과 같습니다.
+
+* ![숫자 1](/img/number-01.png) 프로젝트 이름을 표시하며, 즐겨찾기 설정할 수 있습니다. ![즐겨찾기 아이콘](/img/ico-favorite.svg) 버튼을 선택한 다음 화면 위에 ![즐겨찾기 아이콘](/img/ico-favorite.svg) <Cmdname sid="project_favorite" className="uitext" /> 모드를 선택하면 즐겨찾기 설정된(![즐겨찾기 아이콘](/img/ico-favorite-set.svg)) 프로젝트만 목록에 표시됩니다.
+
+  :::note
+
+  즐겨찾기 설정에 대한 자세한 내용은 [다음 문서](#favoritedproject)를 참조하세요.
+
+  :::
+
+* ![숫자 2](/img/number-02.png) ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하면 다음 기능을 이용할 수 있습니다.
+
+  * <Cmdname sid="project_management" className="uitext" />: 프로젝트의 관리 메뉴로 이동합니다. 프로젝트의 이름 및 설명, 액세스 키 등의 정보를 확인하고 수정할 수 있습니다. 자세한 내용은 <Link to="project/project-manage#management">다음 문서</Link>를 참조하세요.
+
+  * <Cmdname sid="edit_project_name" className="uitext" />: 프로젝트의 이름을 수정할 수 있습니다.
+
+  * <Cmdname sid="delete_project" className="uitext" />: 프로젝트를 삭제할 수 있습니다.
+
+  * <Cmdname sid="add_to_group" className="uitext" /> / <Cmdname sid="delete_from_group" className="uitext" />: 프로젝트를 그룹에 추가하거나 그룹에서 삭제할 수 있습니다.
+
+  :::caution
+
+  프로젝트를 삭제하면 사용자 목록 정보 및 수집 데이터가 모두 삭제되며 복구할 수 없습니다.
+
+  :::
+
+  :::note
+
+  사용자에게 설정된 권한에 따라 제공되는 기능은 다를 수 있습니다. 멤버 권한 체계에 대한 자세한 내용은 [다음 문서](project/project-structure#project-auth)를 참조하세요.
+
+  :::
+
+* ![숫자 3](/img/number-03.png) 프로젝트의 주요 지표에 대한 차트 및 에이전트 상태, 현황 등을 확인할 수 있습니다. 상품에 따라 제공하는 차트의 종류와 정보는 다를 수 있습니다.
+
+* ![숫자 4](/img/number-04.png) 프로젝트의 상품 종류와 그룹 이름, 프로젝트 코드를 차례로 확인할 수 있습니다. 
+
+  :::note
+
+  무료 이용 또는 무료 체험, 사용 제한 상태의 프로젝트는 태그 형식으로 관련 정보를 표시합니다.
+
+  <ImgLang img='ui-home/main-project-free-trial.png' desc='무료 체험' />
+
+  :::
+
+### 프로젝트 뷰 {#projectview}
+
+다음의 세 가지 뷰 모드로 프로젝트 목록을 확인할 수 있습니다. 전체 프로젝트 현황을 목적에 맞는 방식의 모드를 선택해 확인하세요.
+
+<ImgLang img='ui-home/main-project-select-view.png' desc='뷰 선택하기' />
+
+#### <LinkImage img="ico-extend-card-view.svg" className="ico" /> <Cmdname sid="wide_card_view" />
+
+<ImgLang img='ui-home/main-project-extend-card-view.png' desc='확장 카드 뷰' />
+
+기본 설정된 뷰 모드입니다. 이때 개별 프로젝트가 표시되는 단위를 **프로젝트 카드**라고 지칭합니다. 프로젝트의 에이전트에서 수집 중인 주요 지표와 속성 등을 각 프로젝트 카드에 표시합니다. 이를 통해 프로젝트의 성능 현황을 빠르게 파악할 수 있습니다.
+
+#### <LinkImage img="ico-reduction-view.svg" className="ico" /> <Cmdname sid="compact_card_view" />
+
+<ImgLang img='ui-home/main-project-compact-card-view.png' desc='확장 카드 뷰' />
+
+<Cmdname sid="wide_card_view" className="uitext" /> 보다는 개별 프로젝트에서 적은 정보를 제공하지만 더 많은 프로젝트 목록을 확인할 수 있습니다. 
+
+#### <LinkImage img="ico-list-view.svg" className="ico" /> <Cmdname sid="project_list_view" />
+
+<ImgLang img='ui-home/main-project-list-card-view.png' desc='리스트 뷰' />
+
+상품의 종류에 따라 프로젝트를 분류하여 목록 형식으로 표시합니다. 상품의 종류에 따라 제공하는 정보는 다를 수 있습니다. 목록의 가장 오른쪽에는 프로젝트 관리(![설정 아이콘](/img/ico-setting.svg))와 삭제(![삭제 아이콘](/img/ico-trash.svg)) 기능을 제공합니다.
+
+
+### 즐겨찾는 프로젝트 목록 보기 {#favoritedproject}
+
+세 가지 뷰 모드에서 ![즐겨찾기 아이콘](/img/ico-favorite-set.svg)(즐겨찾기) 설정된 프로젝트만 목록에 표시할 수 있습니다.
+
+<ImgLang img='ui-home/main-project-set-favorite.png' desc='즐겨찾기 설정하기' />
+
+프로젝트 카드에서 ![즐겨찾기 아이콘](/img/ico-favorite.svg) 버튼을 선택해 즐겨찾기를 설정하세요. 여러 개의 프로젝트를 선택할 수 있습니다. 프로젝트 검색 입력 상자의 오른쪽에 ![즐겨찾기 아이콘](/img/ico-favorite.svg)(<Cmdname sid="favorite" className="uitext" />) 모드를 선택하세요.
+
+<ImgLang img='ui-home/main-project-favorite-list.png' desc='즐겨찾기' />
+
+
+### 프로젝트/프로젝트 코드로 검색하기 {#searchprojectwithcode}
+
+관리 중이거나 소속된 프로젝트가 많아 프로젝트를 찾기 어렵다면 검색 기능을 이용하세요. 찾길 원하는 프로젝트를 필터링할 수 있습니다. 화면 위에 프로젝트 검색 입력 상자에 프로젝트 이름 또는 프로젝트 코드를 입력하세요. 
+
+<ImgLang img='ui-home/main-project-filter.png' className="width-200" />
+
+입력 상자 아래에 입력한 문자열과 일치하는 프로젝트 목록이 표시됩니다. 찾으려는 프로젝트를 선택하세요. 문자열을 입력한 상태에서 엔터 키를 누르거나 ![검색 아이콘](/img/ico-search.svg) 버튼을 선택하세요. 입력한 문자열과 일치하는 프로젝트가 목록에 표시됩니다.
+
+
+## 사이드 메뉴 {#sidebar}
+
+와탭 모니터링 화면에서 왼쪽 패널 메뉴 영역을 **사이드 메뉴**라고 부릅니다. 사이드 메뉴에서는 프로젝트 간에 이동할 수 있는 기능과 그룹, 조직을 생성하거나 이동할 수 있는 기능, 프로젝트 생성 등의 주요 기능을 제공합니다.
+
+### 프로젝트 생성하기 {#createproject}
+
+프로젝트를 새로 생성하려면 다음의 두 가지 방식을 이용할 수 있습니다.
+
+* 사이드 메뉴에서 <Cmdname sid="BTN07332" className="uitext" />를 선택하세요. 프로젝트 목록 패널이 열리면 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="project" className="uitext" />를 선택하세요.
+
+* 사이드 메뉴의 가장 왼쪽에 상품 종류별 아이콘을 선택하세요. 상품 소개 페이지로 이동하면 원하는 상품의 <Cmdname sid="BTN06900" className="uitext" /> 버튼을 선택하세요. 다음 표를 참조하세요.
+
+  | 상품 아이콘 | 설명 |
+  | :--: | -- |
+  | <LinkImage img='shortcut-application.svg' className='shortcutIcon' /> | [Java](/java/introduction), [Node.js](/nodejs/introduction), [PHP](/php/introduction), [Python](/python/introduction), [.NET](/dotnet/introduction), [Go](/golang/introduction) 상품의 애플리케이션 모니터링을 위한 프로젝트를 생성할 수 있습니다. |
+  | <LinkImage img='shortcut-server.svg' className='shortcutIcon' /> | [Server 모니터링](/server/introduction)을 위한 프로젝트를 생성할 수 있습니다. |
+  | <LinkImage img='shortcut-kuber.svg' className='shortcutIcon' /> | [Kubernetes 모니터링](/kubernetes/introduction)을 위한 프로젝트를 생성할 수 있습니다. |
+  | <LinkImage img='shortcut-database.svg' className='shortcutIcon' /> | [MySQL](/mysql/monitoring-intro), [SQL Server](/mssql/monitoring-intro), [Oracle](/oracle/monitoring-intro), [PostgreSQL](/postgresql/monitoring-intro), [Redis](/redis/monitoring-intro), [MongoDB](/mongodb/monitoring-intro), [CUBRID](/cubrid/monitoring-intro), [Tibero](/tibero/monitoring-intro), [Altibase](/altibase/monitoring-intro) 상품의 데이터베이스 모니터링을 위한 프로젝트를 생성할 수 있습니다. |
+  | <LinkImage img='shortcut-url.svg' className='shortcutIcon' /> | [URL 모니터링](/url/url-intro)을 위한 프로젝트를 생성할 수 있습니다. |
+  | <LinkImage img='shortcut-cloud.svg' className='shortcutIcon' /> | [Amazon CloudWatch](/amazon-cloudwatch/install-agent), [Amazon ECS](/amazon-ecs/introduction), [Azure Monitor](/azure/install-agent), [Oracle Cloud Monitor](/oracle-cloud/install-agent), [Naver Cloud Monitoring](/ncloud/install-agent) 상품의 클라우드 모니터링을 위한 프로젝트를 생성할 수 있습니다. |
+  | <LinkImage img='shortcut-log.svg' className='shortcutIcon' /> | [Log 모니터링](/log/introduction)에 대한 소개와 설정 방법을 안내합니다. |
+  | <LinkImage img='shortcut-browser.svg' className='shortcutIcon' /> | [Browser 모니터링](/log/introduction)을 위한 프로젝트를 생성할 수 있습니다. |
+
+:::note
+
+프로젝트 생성에 대한 자세한 내용은 [다음 문서](project/project-manage#create-project)를 참조하세요.
+
+:::
+
+### 홈 화면 또는 프로젝트 간 이동하기 {#move2project}
+
+사용자가 속한 그룹의 프로젝트를 트리뷰 형식으로 전체 목록을 확인할 수 있습니다. 화면 로고 아래에 <Cmdname sid="BTN07332" className="uitext" /> 메뉴를 선택하세요. 프로젝트 목록 패널이 열리면 원하는 프로젝트를 선택하세요. 선택한 프로젝트로 이동할 수 있습니다.
+
+<ImgLang img='ui-home/main-ui-home-to-project-move-01.png' desc='' />
+
+그룹이나 프로젝트가 많아 원하는 항목을 찾기 어렵다면, 프로젝트 목록 패널에서 <Cmdname sid="TLT07471" className="uitext" /> 입력 상자에 문자열을 입력하세요. 문자열과 일치하는 그룹 또는 프로젝트를 필터링할 수 있습니다. 상품별로 프로젝트를 필터링하려면 ![필터 아이콘](/img/ico-filter.svg) 버튼을 선택한 다음 원하는 상품을 선택하세요.
+
+<ImgLang img='ui-home/main-ui-filter-project.png' desc='프로젝트 필터링' />
+
+프로젝트로 진입한 상태에서 사이드 메뉴의 프로젝트 이름을 선택하면 현재 프로젝트의 계층 구조를 파악할 수 있으며, 다른 프로젝트를 선택해 쉽게 이동할 수도 있습니다. 홈 화면으로 이동하려면 화면 왼쪽 위에 와탭 로고를 선택하거나 화면 아래에 ![홈 아이콘](/img/ic-home.svg) 버튼을 선택하세요.
+
+<ImgLang img='ui-home/main-ui-home-to-project-move-02.png' desc='' />
+
+### 그룹 생성 또는 이동, 관리하기 {#managegroup}
+
+사이드 메뉴에서 <Cmdname sid="BTN07332" className="uitext" />를 선택하세요.
+
+* 그룹을 새로 생성하려면 프로젝트 목록 패널에서 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="BTN06697" className="uitext" />을 선택하세요. <Cmdname sid="add_group" className="uitext" /> 메뉴로 이동합니다.
+
+* 다른 그룹으로 이동하려면 프로젝트 목록 패널에서 ![그룹 아이콘](/img/ico-group.svg) 항목을 선택하세요. 해당 그룹에 속한 프로젝트 목록을 확인할 수 있습니다.
+
+* 그룹 관리 메뉴로 이동하려면 프로젝트 목록 패널에서 ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하세요. <Cmdname sid="integrated_group_management" className="uitext" /> 메뉴로 이동합니다.
+
+:::note
+
+* 그룹 추가 및 이동, 관리에 대한 자세한 내용은 [다음 문서](project/group)를 참조하세요.
+
+* 프로젝트 구조에 대한 자세한 내용은 [다음 문서](project/project-structure)를 참조하세요.
+
+:::
+
+### 조직 생성 또는 이동, 관리하기 {#manageorganization}
+
+사이드 메뉴에서 <Cmdname sid="sidebar_org_selector_no_organization" className="uitext" />을 선택하세요.
+
+* 조직을 새로 생성하려면 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" />을 선택하세요. <Cmdname sid="create_organization" className="uitext" /> 메뉴로 이동합니다.
+
+* 조직에 속한 프로젝트 목록만 확인하려면 목록에서 이동하길 원하는 조직 항목을 선택하세요. 
+
+* 전체 조직을 관리하기 위한 <Cmdname sid="organization_management" className="uitext" /> 메뉴로 이동하려면 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" /> 오른쪽에 ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하세요.
+
+* 개별 조직을 관리하기 위한 <Cmdname sid="organization_management" className="uitext" /> 메뉴로 이동하려면 개별 조직 항목에 마우스를 오버하세요. ![설정 아이콘](/img/ico-setting.svg) 버튼이 나타나면 선택하세요.
+
+  <ImgLang img='ui-home/main-ui-setting-by-org.png' desc='개별 조직 설정' />
+
+
+:::note
+
+* 조직 추가 및 이동, 관리에 대한 자세한 내용은 [다음 문서](project/organization)를 참조하세요.
+
+* 프로젝트 구조에 대한 자세한 내용은 [다음 문서](project/project-structure)를 참조하세요.
+
+:::
+
+### 그룹별/에이전트별 프로젝트 검색하기 {#searchgroupagent}
+
+프로젝트가 속한 그룹 또는 프로젝트에 포함된 에이전트 이름을 기준으로 프로젝트를 검색할 수 있습니다. 화면 왼쪽 위에 위치한 로고 옆에 ![검색 아이콘](/img/ico-search.svg) 버튼을 선택하세요.
+
+<ImgLang img='ui-home/main-ui-search-by-group.png' desc='그룹별 검색' />
+
+* ***Group/Project***: 프로젝트가 속한 그룹별로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 그룹과 프로젝트를 확인할 수 있습니다.
+
+* ***Agent***: 프로젝트에 포함된 에이전트 이름을 기준으로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 프로젝트와 에이전트를 확인할 수 있습니다.
+
+### 홈 메뉴 이용하기 {#usinghomemenu}
+
+홈 화면에서 이용할 수 있는 통합 메뉴는 다음과 같습니다.
+
+* <Cmdname sid="project_list" className="uitext" />: 전체 프로젝트 목록을 확인할 수 있습니다.
+
+* <Cmdname sid="flexboard" className="uitext" />: 사용자 정의형 통합 대시보드입니다. 애플리케이션, 서버, 데이터베이스, 컨테이너 등 프로젝트에서 수집한 메트릭스로 실시간 대시보드를 만들 수 있습니다.
+
+  <details>
+  <summary>상품별 문서</summary>
+
+  * [애플리케이션 모니터링 > Flex 보드](java/flex-board)
+  * [서버 모니터링 > Flex 보드](server/flex-board)
+  * [데이터베이스 모니터링 > Flex 보드](mysql/flex-board)
+  * [쿠버네티스 모니터링 > Flex 보드](kubernetes/flex-board)
+  * [Amazon ECS > Flex 보드](amazon-ecs/flexboard)
+  * [Amazon CloudWatch > Flex 보드](amazon-cloudwatch/flexboard)
+  * [Azure Monitor > Flex 보드](azure/flexboard)
+  * [Naver Cloud Monitoring > Flex 보드](ncloud/flexboard)
+  * [Oracle Cloud Monitor > Flex 보드](oracle-cloud/flexboard)
+
+  </details>
+
+* <Cmdname sid="integrated_report" className="uitext" />: 여러 프로젝트에 대한 보고서를 간편하게 생성할 수 있습니다. 자세한 내용은 <Link to="report/integrated-report">다음 문서</Link>를 참조하세요.
+
+* <Cmdname sid="integrated_topology" className="uitext" />: <Cmdname sid="topology" className="uitext" /> 기능을 지원하는 여러 프로젝트들을 일괄 선택해 단일 토폴로지로 확인할 수 있습니다. 자세한 내용은 <Link to="java/topology-type#int-topology">다음 문서</Link>를 참조하세요.
+
+* <Cmdname sid="real_time_alert_list" className="uitext" />: 사용자가 권한을 보유한 모든 프로젝트들의 알림을 실시간으로 확인하고, 알림 현황을 한눈에 파악할 수 있습니다. 자세한 내용은 <Link to="notification/rt-notification">다음 문서</Link>를 참조하세요.
+
+* <Cmdname sid="management" className="uitext" />: 전체 그룹 및 멤버를 관리할 수 있습니다. 자세한 내용은 <Link to="project/integrated-manage">다음 문서</Link>를 참조하세요.
+
+### 프로젝트 메뉴를 즐겨찾기로 등록하기 {#usingprojectmenu}
+
+홈 화면에서 프로젝트를 선택해 이동하면 사이드 메뉴에는 프로젝트에서 이용할 수 있는 메뉴가 표시됩니다. 자주 이용하는 메뉴를 즐겨찾기로 등록해 이용할 수 있습니다.
+
+1. 사이드 메뉴에서 자주 이용하는 메뉴로 마우스 포인터를 놓으면 ![즐겨찾기 아이콘](/img/ico-favorite.svg) 버튼이 나타납니다. 
+
+    <ImgLang img='ui-home/main-ui-set-favorite-menu.png' desc='즐겨찾는 메뉴 설정하기' />
+
+1. 버튼을 선택하면 ![즐겨찾기 설정 아이콘](/img/ic-star-filled.svg)으로 변경됩니다.
+
+1. 다른 메뉴를 즐겨찾기로 추가하려면 위의 과정을 반복하세요.
+
+1. 사이드 메뉴 아래에 ![즐겨찾는 메뉴만 표시 아이콘](/img/ico-favorite.svg) 버튼을 선택하세요.
+
+    <ImgLang img='ui-home/main-ui-view-only-favorite.png' desc='즐겨찾는 메뉴만 표시' />
+
+사이드 메뉴에는 즐겨찾기로 설정된 메뉴만 표시됩니다.
+
+:::note
+
+프로젝트의 상품에 따라 표시되는 메뉴는 다를 수 있습니다.
+
+:::
+
+### 테마 변경하기 {#applytheme}
+
+사용자가 어둡거나 밝은 모드의 화면을 설정할 수 있습니다. 화면 왼쪽 아래에 ![테마 아이콘](/img/ico-theme.svg) 버튼을 선택하세요.
+
+* ***Light***: 기본 적용된 밝은 모드의 테마입니다.
+
+* ***Dark***: 검은색 또는 어두운 배경의 다크 테마입니다.
+
+* ***Presentation***: 빔 프로젝트를 이용할 경우 최적화된 색상을 적용합니다.
+
+* ***Add Custom Theme***: ***Light*** 모드와 ***Dark*** 모드에서 세부 요소를 사용자가 원하는 색상으로 설정할 수 있습니다.
+
+
+### 전체 화면으로 보기 {#fullscreen}
+
+와탭 모니터링 서비스 화면을 웹 브라우저에서 전체 화면 모드로 보려면 화면 왼쪽 아래에 ![전체 화면 아이콘](/img/ic-fullscreen.svg) 버튼을 선택하세요. 전체 화면 모드를 종료하려면 ESC 키를 누르세요.
+
+
+### 사이트맵 이용하기 {#sitemap}
+
+사용자가 진입한 경로에서 선택할 수 있는 모든 메뉴를 확인할 수 있습니다. 화면 왼쪽 아래에 ![사이트맵 아이콘](/img/ic-sitemap.svg) 버튼을 선택하세요.
+
+:::note
+
+진입한 메뉴 경로 또는 프로젝트에 따라 지원하는 메뉴는 다를 수 있습니다.
+
+:::
+
+
+### 튜토리얼 확인하기
+
+화면 상에서 사이드 메뉴 사용에 대한 자세한 안내를 확인하려면 <Cmdname sid="BTN07397" className="uitext" /> 버튼을 선택하세요.
+
+
+### 사이드 메뉴 크기 조절하기 {#adjustsizesidebar}
+
+다음의 두 가지 방식으로 사이드 메뉴의 크기를 조절해 화면을 폭 넓게 이용할 수 있습니다.
+
+* 사이드 메뉴를 접으려면 와탭 로고 오른쪽에 ![접기 아이콘](/img/ic-sidebar2left.svg) 버튼을 선택하세요. 다시 사이드 메뉴를 펼치려면 ![펼치기 아이콘](/img/ic-sidebar2right.svg) 버튼을 선택하세요.
+
+  <ImgLang img='ui-home/main-ui-fold-extend-sidemenu.png' desc='' />
+
+* 사이드 메뉴를 기존보다 넓게 펼치려면 사이드 메뉴 경계선에 마우스를 오버하고 드래그하세요. 원하는 크기로 조절할 수 있습니다.
+
+  <ImgLang img='ui-home/main-ui-adjust-sidebar.png' desc='사이드 메뉴' />
+
+
+## 지원 메뉴 {#supportmenu}
+
+다음은 화면 오른쪽 가장 위에서 이용할 수 있는 지원 메뉴입니다.
+
+### 공지사항 확인하기 {#checknotice}
+
+![공지사항 아이콘](/img/ic-notice.svg) 버튼을 선택하세요. 와탭 모니터링 서비스의 정기 배포 소식 및 긴급 점검 등 확인할 수 있는 <Cmdname sid="TTL06763" className="uitext" /> 메뉴로 이동합니다.
+
+### 기술 문서로 이동하기 {#movedocs}
+
+![와탭 Docs 아이콘](/img/ic-guide.svg) 버튼을 선택하면 와탭 Docs 기술 문서 페이지로 이동합니다. 와탭 Docs에 대한 자세한 내용은 [다음 문서](welcome-to-whatapdocs)를 참조하세요.
+
+### 온라인 채팅 문의하기 {#chatservice}
+
+![고객지원 아이콘](/img/ico-help.svg) 버튼을 선택하면 온라인 문의가 가능한 채팅 창이 나타납니다. 와탭 모니터링 서비스와 관련한 기술 및 비용/결제 등에 관한 문의를 할 수 있습니다.
+
+### 관리 메뉴 진입하기 {#managementmenu}
+
+화면 가장 오른쪽 위에 위치한 프로필 아이콘을 선택하세요. 다음의 기능을 제공합니다.
+
+<ImgLang img='ui-home/main-ui-profile-menu.png' desc='프로필 메뉴' />
+
+* <Cmdname sid="MNU07360" className="uitext" />: 사용자 계정 정보를 수정하거나 알림 수신, 멀티팩터 인증 등의 기능을 설정할 수 있습니다.
+
+  :::note
+
+  * 회원 가입 및 비밀번호 수정, 탈퇴에 대한 자세한 내용은 [다음 문서](account/account-manage)를 참조하세요.
+
+  * 멀티팩터 인증에 대한 자세한 내용은 [다음 문서](account/mfa)를 참조하세요.
+
+  :::
+
+* <Cmdname sid="MNU07361" className="uitext" />: 결제 정보를 등록하고 서비스 사용량을 조회할 수 있습니다. 자세한 내용은 <Link to="management/billing">다음 문서</Link>를 참조하세요.
+
+* <Cmdname sid="create_organization" className="uitext" /> / <Cmdname sid="organization_management" className="uitext" />: 조직을 생성하거나 관리할 수 있는 메뉴로 이동합니다. 조직에 대한 자세한 내용은 <Link to="project/organization">다음 문서</Link>를 참조하세요.
+
+* <Cmdname sid="language" className="uitext" />: 서비스 화면의 표시되는 언어를 사용자가 선호하는 언어로 변경할 수 있습니다.
+
+* <Cmdname sid="BTN06853" className="uitext" />: 와탭 모니터링 서비스에 대한 정보를 확인할 수 있습니다.
+
+* <Cmdname sid="log_out" className="uitext" />: 현재 서비스 화면에서 로그아웃할 수 있습니다.
