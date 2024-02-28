@@ -43,10 +43,6 @@
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar javaSidebar"
-  },
   "sidebar.javaSidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar javaSidebar"
@@ -103,10 +99,6 @@
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar phpSidebar"
   },
-  "sidebar.phpSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar phpSidebar"
-  },
   "sidebar.phpSidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar phpSidebar"
@@ -159,10 +151,6 @@
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar nodejsSidebar"
   },
-  "sidebar.nodejsSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar nodejsSidebar"
-  },
   "sidebar.nodejsSidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar nodejsSidebar"
@@ -214,10 +202,6 @@
   "sidebar.pySidebar.category.메트릭스": {
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar pySidebar"
-  },
-  "sidebar.pySidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar pySidebar"
   },
   "sidebar.pySidebar.category.보고서": {
     "message": "보고서",
@@ -275,10 +259,6 @@
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar dotNetSidebar"
-  },
   "sidebar.dotNetSidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar dotNetSidebar"
@@ -318,10 +298,6 @@
   "sidebar.goSidebar.category.메트릭스": {
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar goSidebar"
-  },
-  "sidebar.goSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar goSidebar"
   },
   "sidebar.goSidebar.category.보고서": {
     "message": "보고서",
@@ -1135,10 +1111,6 @@
     "message": "컨테이너 맵 상세 보기",
     "description": "The label for category 컨테이너 맵 상세 보기 in sidebar kubeSidebar"
   },
-  "sidebar.kubeSidebar.category.리소스": {
-    "message": "리소스",
-    "description": "The label for category 리소스 in sidebar kubeSidebar"
-  },
   "sidebar.kubeSidebar.category.애플리케이션": {
     "message": "애플리케이션",
     "description": "The label for category 애플리케이션 in sidebar kubeSidebar"
@@ -1630,5 +1602,45 @@
   "sidebar.releaseSidebar.doc.v1.0.7 (81)": {
     "message": "v1.0.7 (81)",
     "description": "The label for the doc item v1.0.7 (81) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_7"
+  },
+  "sidebar.javaSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar javaSidebar"
+  },
+  "sidebar.phpSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar phpSidebar"
+  },
+  "sidebar.nodejsSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar nodejsSidebar"
+  },
+  "sidebar.pySidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar pySidebar"
+  },
+  "sidebar.dotNetSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar dotNetSidebar"
+  },
+  "sidebar.goSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar goSidebar"
+  },
+  "sidebar.kubeSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.컨테이너": {
+    "message": "컨테이너",
+    "description": "The label for category 컨테이너 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.워크로드": {
+    "message": "워크로드",
+    "description": "The label for category 워크로드 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.클러스터": {
+    "message": "클러스터",
+    "description": "The label for category 클러스터 in sidebar kubeSidebar"
   }
 }
