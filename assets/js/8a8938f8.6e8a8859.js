@@ -310,7 +310,8 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'service-1_100_x',
     title: 'Service 1.100.X',
-    toc_max_heading_level: 2
+    toc_max_heading_level: 2,
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -329,17 +330,10 @@ const metadata = {
     "frontMatter": {
         "id": "service-1_100_x",
         "title": "Service 1.100.X",
-        "toc_max_heading_level": 2
+        "toc_max_heading_level": 2,
+        "displayed_sidebar": "releaseSidebar"
     },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Service 1.102.X",
-        "permalink": "/whatap-docs/release-notes/service/service-1_102_x"
-    },
-    "next": {
-        "title": "Service 지난 버전",
-        "permalink": "/whatap-docs/release-notes/service/service-previous"
-    }
+    "sidebar": "releaseSidebar"
 };
 const assets = {};
 const toc = [
