@@ -216,20 +216,20 @@ const sidebars = {
                 'java/analysis-apm',
                 'java/performance-trend',
                 'java/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'java/report-intro'
-                  },
-                  items: [
-                    'java/report-apm',
-                    'java/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'java/report-intro'
+              },
+              items: [
+                'java/report-apm',
+                'java/integrated-report',
               ]
             },
             'java/instance-performance-analysis',
@@ -453,21 +453,20 @@ const sidebars = {
                 'php/cube',
                 'php/performance-trend',
                 'php/analysis-apm-trs',
-                // 'php/analysis-apm',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'php/report-intro'
-                  },
-                  items: [
-                    'php/report-apm',
-                    'php/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'php/report-intro'
+              },
+              items: [
+                'php/report-apm',
+                'php/integrated-report',
               ]
             },
             'php/instance-performance-analysis',
@@ -675,20 +674,20 @@ const sidebars = {
                 'nodejs/performance-trend',
                 // 'nodejs/analysis-apm',
                 'nodejs/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'nodejs/report-intro'
-                  },
-                  items: [
-                    'nodejs/report-apm',
-                    'nodejs/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'nodejs/report-intro'
+              },
+              items: [
+                'nodejs/report-apm',
+                'nodejs/integrated-report',
               ]
             },
             'nodejs/instance-performance-analysis',
@@ -890,20 +889,20 @@ const sidebars = {
                 'python/analysis-apm',
                 'python/performance-trend',
                 'python/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'python/report-intro'
-                  },
-                  items: [
-                    'python/report-apm',
-                    'python/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'python/report-intro'
+              },
+              items: [
+                'python/report-apm',
+                'python/integrated-report',
               ]
             },
             'python/instance-performance-analysis',
@@ -1100,20 +1099,20 @@ const sidebars = {
                 'dotnet/analysis-apm',
                 'dotnet/performance-trend',
                 'dotnet/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'dotnet/report-intro'
-                  },
-                  items: [
-                    'dotnet/report-apm',
-                    'dotnet/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dotnet/report-intro'
+              },
+              items: [
+                'dotnet/report-apm',
+                'dotnet/integrated-report',
               ]
             },
             'dotnet/instance-performance-analysis',
@@ -1306,20 +1305,20 @@ const sidebars = {
                 'golang/performance-trend',
                 'golang/analysis-apm-trs',
                 // 'analysis/php-analysis-apm',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'golang/report-intro'
-                  },
-                  items: [
-                    'golang/report-apm',
-                    'golang/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'golang/report-intro'
+              },
+              items: [
+                'golang/report-apm',
+                'golang/integrated-report',
               ]
             },
             'golang/instance-performance-analysis',
@@ -5423,68 +5422,49 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '컨테이너 맵',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'kubernetes/container-map',
-              },
+              // link: {
+              //   type: 'doc',
+              //   id: 'kubernetes/container-map',
+              // },
               items: [
-                'kubernetes/container-view',
-                'kubernetes/container-group',
-                'kubernetes/container-status',
-              ]
-            },
-            {
-              type: 'category',
-              label: '컨테이너 맵 상세 보기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'kubernetes/container-map-detail-mode'
-              },
-              items: [
-                'kubernetes/container-map-trace',
-                'kubernetes/container-map-metrics',
-                'kubernetes/container-map-log',
-                'kubernetes/container-map-event',
-                'kubernetes/container-map-call-information',
-              ],
-            },
-            {
-              type: 'category',
-              label: '리소스',
-              collapsible: true,
-              collapsed: true,
-              items: [
+                {
+                  type: 'category',
+                  label: '컨테이너 맵',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'kubernetes/container-map',
+                  },
+                  items: [
+                    'kubernetes/container-view',
+                    'kubernetes/container-group',
+                    'kubernetes/container-status',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: '컨테이너 맵 상세 보기',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'kubernetes/container-map-detail-mode'
+                  },
+                  items: [
+                    'kubernetes/container-map-trace',
+                    'kubernetes/container-map-metrics',
+                    'kubernetes/container-map-log',
+                    'kubernetes/container-map-event',
+                    'kubernetes/container-map-call-information',
+                  ],
+                },
                 'kubernetes/performance-summary',
                 'kubernetes/cluster-summary',
-                'kubernetes/resource-node-list',
-                'kubernetes/resource-pod-list',
-                'kubernetes/resource-container-list',
-                'kubernetes/resource-container-volume',
-                'kubernetes/container-images',
-                'kubernetes/resource-application-list',
-                //'kubernetes/resource-master-meta',
-                'kubernetes/object-manifest',
-                'kubernetes/resource-namespace',
-              ],
-            },
-            {
-              type: 'category',
-              label: '애플리케이션',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'kubernetes/dashboard',
-                'kubernetes/dashboard-hitmap-trace',
-                'kubernetes/trs-view',
-                'kubernetes/multiservice-hitmap',
-                'kubernetes/tx-profile',
-                'kubernetes/application-daily-stat',
-              ],
+              ]
             },
             {
               type: 'category',
@@ -5507,6 +5487,55 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '컨테이너',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'kubernetes/resource-container-list',
+                'kubernetes/resource-container-volume',
+                'kubernetes/container-images',
+                'kubernetes/analysis-oom-container',
+              ],
+            },
+            {
+              type: 'category',
+              label: '워크로드',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'kubernetes/resource-pod-list',
+                'kubernetes/resource-application-list',
+              ],
+            },
+            {
+              type: 'category',
+              label: '클러스터',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'kubernetes/resource-node-list',
+                'kubernetes/object-manifest',
+                'kubernetes/resource-namespace',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                // 'kubernetes/metrics-intro',
+                // 'kubernetes/metrics-chart',
+                // 'kubernetes/metrics-detect-anormal',
+                'kubernetes/pod-init-perform',
+                'kubernetes/trs-view',
+                'kubernetes/multiservice-hitmap',
+                'kubernetes/analysis-msa',
+                'kubernetes/analysis-stack',
+              ],
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -5521,24 +5550,22 @@ const sidebars = {
                 'kubernetes/metrics-detect-anormal',
               ]
             },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                // 'kubernetes/metrics-intro',
-                // 'kubernetes/metrics-chart',
-                // 'kubernetes/metrics-detect-anormal',
-                'kubernetes/analysis-msa',
-                'kubernetes/analysis-stack',
-                'kubernetes/pod-init-perform',
-                'kubernetes/analysis-oom-container',
-              ],
-            },
             'kubernetes/log',
             'kubernetes/report-intro',
             'kubernetes/integrated-report',
+            {
+              type: 'category',
+              label: '애플리케이션',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'kubernetes/dashboard',
+                'kubernetes/dashboard-hitmap-trace',
+                'kubernetes/application-daily-stat',
+                'kubernetes/tx-profile',
+                
+              ],
+            },
             {
               type: 'category',
               label: '알림 설정하기',
