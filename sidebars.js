@@ -3196,17 +3196,18 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java-batch/java-batch-2_2_23',
+                id: 'release-notes/java-batch/java-batch-2_2_24',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_23',
-                  // className: 'new',
+                  id: 'release-notes/java-batch/java-batch-2_2_24',
+                  className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_23',
                 'release-notes/java-batch/java-batch-2_2_22',
                 'release-notes/java-batch/java-batch-2_2_21',
                 'release-notes/java-batch/java-batch-2_2_20',

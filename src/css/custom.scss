@@ -317,7 +317,7 @@ html[lang='ja-JP'] {
   padding-left: 0;
   font-weight: normal;
   li {
-    margin: 4px 8px 4px 0;
+    margin: 4px 4px 4px 0;
     border-radius: 4px;
     a {
       padding: 3px 8px;
@@ -1968,7 +1968,7 @@ main {
 @media (min-width: 997px) {
   @supports (scrollbar-gutter: stable) {
     nav.thin-scrollbar {
-      padding: 0px 8px !important;
+      padding: 0 0 0 8px !important;
     }
   }
 }
