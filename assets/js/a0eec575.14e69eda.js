@@ -451,9 +451,9 @@ function MDXContent(_param) {
         "id": "spring-exceptionhandler-통과-시-에러-처리"
     }, `Spring ExceptionHandler 통과 시 에러 처리`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Spring 프레임워크에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `org.springframework.web.servlet.DispatcherServlet.processHandlerException`), ` 메소드를 통과하는 경우 에러로 처리합니다. 다만 Try-Catch 문을 사용하는 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `org.springframework.web.servlet.DispatcherServlet.processHandlerException`), ` 메소드를 통과하는 경우 에러로 처리합니다. 다만 개발자가 Try-Catch 문을 사용하는 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `ExceptionHandler`), `로 에러 처리하지 않습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `ExceptionHandler`), `에 의해 처리되므로 와탭에서는 에러 처리하지 않습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "status-code-400-이상-에러-처리"
     }, `Status Code 400 이상 에러 처리`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `HTTP 응답 코드가 400 이상인 경우에는 예외 클래스(Exception Class)가 명시되지 않더라도 에러로 처리합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "jdbc-driver-호출-시-에러-처리"
