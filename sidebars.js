@@ -204,7 +204,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
@@ -215,9 +215,9 @@ const sidebars = {
                 'java/cube',
                 'java/analysis-apm',
                 'java/performance-trend',
-                'java/analysis-apm-trs',
               ]
             },
+            'java/analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
@@ -442,7 +442,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
@@ -452,9 +452,9 @@ const sidebars = {
               items: [
                 'php/cube',
                 'php/performance-trend',
-                'php/analysis-apm-trs',
               ]
             },
+            'php/analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
@@ -662,7 +662,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
@@ -673,9 +673,9 @@ const sidebars = {
                 'nodejs/cube',
                 'nodejs/performance-trend',
                 // 'nodejs/analysis-apm',
-                'nodejs/analysis-apm-trs',
               ]
             },
+            'nodejs/analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
@@ -877,7 +877,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
@@ -888,9 +888,9 @@ const sidebars = {
                 'python/cube',
                 'python/analysis-apm',
                 'python/performance-trend',
-                'python/analysis-apm-trs',
               ]
             },
+            'python/analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
@@ -1087,7 +1087,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
@@ -1098,9 +1098,9 @@ const sidebars = {
                 'dotnet/cube',
                 'dotnet/analysis-apm',
                 'dotnet/performance-trend',
-                'dotnet/analysis-apm-trs',
               ]
             },
+            'dotnet/analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
@@ -1293,7 +1293,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
@@ -1303,10 +1303,9 @@ const sidebars = {
               items: [
                 'golang/cube',
                 'golang/performance-trend',
-                'golang/analysis-apm-trs',
-                // 'analysis/php-analysis-apm',
               ]
             },
+            'golang/analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
