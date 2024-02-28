@@ -520,7 +520,7 @@ function MDXContent(_param) {
         "id": "쿠버네티스-네임스페이스-퍼포먼스"
     }, `쿠버네티스 네임스페이스 퍼포먼스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `네임스페이스 프로젝트(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         class: "my"
-    }, `Namspace`), `)의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }, `Namespace`), `)의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "지시선 1",
         src: (__webpack_require__(15856)/* ["default"] */ .A),
         width: "35",

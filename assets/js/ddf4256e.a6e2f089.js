@@ -309,8 +309,8 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'service-2_2_x',
-    title: 'Service 2.2.0',
-    toc_max_heading_level: 3,
+    title: 'Service 2.2.x',
+    toc_max_heading_level: 2,
     pagination_next: 'release-notes/service/service-2_1_x',
     displayed_sidebar: 'releaseSidebar'
 };
@@ -318,8 +318,8 @@ const contentTitle = undefined;
 const metadata = {
     "unversionedId": "release-notes/service/service-2_2_x",
     "id": "release-notes/service/service-2_2_x",
-    "title": "Service 2.2.0",
-    "description": "2024년 02월 28일",
+    "title": "Service 2.2.x",
+    "description": "<!--",
     "source": "@site/docs/release-notes/service/service-2.2.x.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-2_2_x",
@@ -330,8 +330,8 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "service-2_2_x",
-        "title": "Service 2.2.0",
-        "toc_max_heading_level": 3,
+        "title": "Service 2.2.x",
+        "toc_max_heading_level": 2,
         "pagination_next": "release-notes/service/service-2_1_x",
         "displayed_sidebar": "releaseSidebar"
     },
@@ -347,6 +347,21 @@ const metadata = {
 };
 const assets = {};
 const toc = [
+    {
+        value: 'Service 2.2.1',
+        id: 'service-221',
+        level: 2
+    },
+    {
+        value: '<code>Database</code>',
+        id: 'database',
+        level: 3
+    },
+    {
+        value: 'Service 2.2.0',
+        id: 'service-220',
+        level: 2
+    },
     {
         value: '신규 기능 출시',
         id: '신규-기능-출시',
@@ -414,7 +429,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database',
+        id: 'database-1',
         level: 3
     },
     {
@@ -488,7 +503,29 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 28일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "service-221"
+    }, `Service 2.2.1`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 28일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "database"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "instance_list",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 팝업되는 XOS 지표 통합 안내 모달이 나타나지 않는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "service-220"
+    }, `Service 2.2.0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 28일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "신규-기능-출시"
     }, `신규 기능 출시`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Service 2.2.0 릴리스에 포함된 신규 기능을 소개합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "공통"
@@ -1099,7 +1136,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에서 Network Traffic 관련 차트에 표시되는 byte 단위를 bit 단위로 표시되도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "database"
+        "id": "database-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
@@ -1451,7 +1488,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Change"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "cluster",
         className: "uitext",
         mdxType: "Cmdname"
@@ -1467,7 +1504,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Change"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "dashboard",
         className: "uitext",
         mdxType: "Cmdname"
@@ -1892,7 +1929,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 정비 계획 추가 시 에이전트 ip 주소 표시 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, "이 외 사용자들이 알아채지 못할 사소한 버그들을 수정하고 개선했습니다. 😉"));
+    }, "Fixed"), " 정비 계획 추가 시 에이전트 ip 주소 표시 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, "이 외 사용자들이 알아채지 못할 사소한 버그들을 수정하고 개선했습니다. 😉")));
 }
 MDXContent.isMDXComponent = true;
 

@@ -439,9 +439,9 @@ function MDXContent(_param) {
         class: "my"
     }, `Kubernetes`), ` 태그가 표시됩니다. 네임스페이스 프로젝트에는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         class: "my"
-    }, `Namspace`), ` 태그가 표시됩니다. 위젯 왼쪽 위에 타이틀은 프로젝트 이름이며, 네임스페이스 이름은 가장 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+    }, `Namespace`), ` 태그가 표시됩니다. 위젯 왼쪽 위에 타이틀은 프로젝트 이름이며, 네임스페이스 이름은 가장 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         class: "my"
-    }, `Namspace`), ` 태그 옆에 표시됩니다.`));
+    }, `Namespace`), ` 태그 옆에 표시됩니다.`));
 }
 MDXContent.isMDXComponent = true;
 
