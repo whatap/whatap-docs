@@ -318,7 +318,7 @@ const metadata = {
     "unversionedId": "release-notes/db/dbx-previous",
     "id": "release-notes/db/dbx-previous",
     "title": "DBX 지난 버전",
-    "description": "* DBX agent v1.6.15",
+    "description": "* DBX agent v1.6.17",
     "source": "@site/docs/release-notes/db/dbx-previous.mdx",
     "sourceDirName": "release-notes/db",
     "slug": "/release-notes/db/dbx-previous",
@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "DBX v1.6.16",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_16"
+        "title": "DBX v1.6.18",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_18"
     },
     "next": {
         "title": "xos v1.1.8a",
@@ -357,6 +357,20 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dbx-1_6_17"
+    }, `DBX agent v1.6.17`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dbx-1_6_16"
+    }, `DBX agent v1.6.16`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"

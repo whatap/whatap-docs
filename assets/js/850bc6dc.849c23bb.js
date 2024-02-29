@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[94539],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[17944],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 86328:
+/***/ 11403:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,48 +308,44 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_25',
-    title: 'DBX v1.6.25',
+    id: 'dbx-1_6_17',
+    title: 'DBX v1.6.17',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_24',
+    pagination_next: 'release-notes/db/dbx-1_6_16',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_25",
-    "id": "release-notes/db/dbx-1_6_25",
-    "title": "DBX v1.6.25",
-    "description": "2024년 02월 26일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.25.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_17",
+    "id": "release-notes/db/dbx-1_6_17",
+    "title": "DBX v1.6.17",
+    "description": "2024년 01월 16일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.17.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_25",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_25",
+    "slug": "/release-notes/db/dbx-1_6_17",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_17",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.25.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.17.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_25",
-        "title": "DBX v1.6.25",
+        "id": "dbx-1_6_17",
+        "title": "DBX v1.6.17",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_24",
+        "pagination_next": "release-notes/db/dbx-1_6_16",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Kubernetes Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
-    },
     "next": {
-        "title": "DBX v1.6.24",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_24"
+        "title": "DBX v1.6.16",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_16"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: 'PostgreSQL',
-        id: 'postgresql',
+        value: 'MySQL',
+        id: 'mysql',
         level: 2
     }
 ];
@@ -369,45 +365,13 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 26일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "postgresql"
-    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 16일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "mysql"
+    }, `MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "active_session"), " 지표 수집 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "state"), " 조건에 대한 옵션 처리 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `state`), ` 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `idle`), `이 아닌 경우: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `pg_opt=0`), `(default)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `state`), ` 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `active`), `인 경우: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `pg_opt=1`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `state`), ` 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `active`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `idle in transaction`), `인 경우: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "li"
-    }, `pg_opt=2`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " object, table 수집 옵션의 기본값을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "true"), "로 수정")));
+    }, "Fixed"), " MariaDB 10.2 버전 이하의 slave 정보 수집 버그 수정")));
 }
 MDXContent.isMDXComponent = true;
 

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[17944],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[59410],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 11403:
+/***/ 59263:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,48 +308,48 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_17',
-    title: 'DBX v1.6.17',
+    id: 'dbx-1_6_26',
+    title: 'DBX v1.6.26',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_16',
+    pagination_next: 'release-notes/db/dbx-1_6_25',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_17",
-    "id": "release-notes/db/dbx-1_6_17",
-    "title": "DBX v1.6.17",
-    "description": "2024년 01월 16일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.17.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_26",
+    "id": "release-notes/db/dbx-1_6_26",
+    "title": "DBX v1.6.26",
+    "description": "2024년 02월 28일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.26.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_17",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_17",
+    "slug": "/release-notes/db/dbx-1_6_26",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_26",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.17.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.26.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_17",
-        "title": "DBX v1.6.17",
+        "id": "dbx-1_6_26",
+        "title": "DBX v1.6.26",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_16",
+        "pagination_next": "release-notes/db/dbx-1_6_25",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "DBX v1.6.18",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_18"
+        "title": "DBX v1.6.30",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_30"
     },
     "next": {
-        "title": "DBX v1.6.16",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_16"
+        "title": "DBX v1.6.25",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_25"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: 'MySQL',
-        id: 'mysql',
+        value: 'Oracle',
+        id: 'oracle',
         level: 2
     }
 ];
@@ -369,13 +369,13 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 16일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "mysql"
-    }, `MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 28일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "oracle"
+    }, `Oracle`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " MariaDB 10.2 버전 이하의 slave 정보 수집 버그 수정")));
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        class: "my"
+    }, "V2"), " 업그레이드 관련해 wait event 수집 쿼리 버그 및 multi 구성 버그 수정");
 }
 MDXContent.isMDXComponent = true;
 
