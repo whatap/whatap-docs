@@ -281,7 +281,7 @@ function colsToJson(data){
   }
 
   rd["eventNoti"] = {
-    "en": "Configuration",
+    "en": "Notifications",
     "ja": "通知設定",
     "ko": "이벤트 수신 설정"
   }
