@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[82989],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[20761],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 6151:
+/***/ 26955:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -309,10 +309,10 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'analysis-report-intro',
-    title: '분석과 통계',
+    title: '분석',
     description: '애플리케이션 분석과 통계 메뉴를 안내합니다.',
     tags: [
-        'Python',
+        'Go',
         '애플리케이션',
         '통계',
         '분석하기',
@@ -321,20 +321,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "python/analysis-report-intro",
-    "id": "python/analysis-report-intro",
-    "title": "분석과 통계",
+    "unversionedId": "golang/analysis-report-intro",
+    "id": "golang/analysis-report-intro",
+    "title": "분석",
     "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
-    "source": "@site/docs/python/analysis-report-intro.mdx",
-    "sourceDirName": "python",
-    "slug": "/python/analysis-report-intro",
-    "permalink": "/whatap-docs/python/analysis-report-intro",
+    "source": "@site/docs/golang/analysis-report-intro.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/analysis-report-intro",
+    "permalink": "/whatap-docs/golang/analysis-report-intro",
     "draft": false,
-    "editUrl": "undefined/docs/python/analysis-report-intro.mdx",
+    "editUrl": "undefined/docs/golang/analysis-report-intro.mdx",
     "tags": [
         {
-            "label": "Python",
-            "permalink": "/whatap-docs/tags/python"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
             "label": "애플리케이션",
@@ -356,24 +356,24 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "analysis-report-intro",
-        "title": "분석과 통계",
+        "title": "분석",
         "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
         "tags": [
-            "Python",
+            "Go",
             "애플리케이션",
             "통계",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "pySidebar",
+    "sidebar": "goSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/python/metrics-detect-anormal"
+        "permalink": "/whatap-docs/golang/metrics-detect-anormal"
     },
     "next": {
         "title": "큐브",
-        "permalink": "/whatap-docs/python/cube"
+        "permalink": "/whatap-docs/golang/cube"
     }
 };
 const assets = {};

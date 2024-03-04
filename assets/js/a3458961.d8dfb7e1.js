@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12384],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[15792],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 48180:
+/***/ 66876:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '큐브',
     description: '큐브를 안내합니다.',
     tags: [
-        'Go',
+        '.NET',
         '큐브',
         '분석하기',
         'UI'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/cube",
-    "id": "golang/cube",
+    "unversionedId": "dotnet/cube",
+    "id": "dotnet/cube",
     "title": "큐브",
     "description": "큐브를 안내합니다.",
-    "source": "@site/docs/golang/cube.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/cube",
-    "permalink": "/whatap-docs/golang/cube",
+    "source": "@site/docs/dotnet/cube.mdx",
+    "sourceDirName": "dotnet",
+    "slug": "/dotnet/cube",
+    "permalink": "/whatap-docs/dotnet/cube",
     "draft": false,
-    "editUrl": "undefined/docs/golang/cube.mdx",
+    "editUrl": "undefined/docs/dotnet/cube.mdx",
     "tags": [
         {
-            "label": "Go",
-            "permalink": "/whatap-docs/tags/go"
+            "label": ".NET",
+            "permalink": "/whatap-docs/tags/net"
         },
         {
             "label": "큐브",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "큐브",
         "description": "큐브를 안내합니다.",
         "tags": [
-            "Go",
+            ".NET",
             "큐브",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "dotNetSidebar",
     "previous": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/golang/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/dotnet/analysis-report-intro"
     },
     "next": {
-        "title": "성능 추이",
-        "permalink": "/whatap-docs/golang/performance-trend"
+        "title": "스택",
+        "permalink": "/whatap-docs/dotnet/analysis-apm"
     }
 };
 const assets = {};

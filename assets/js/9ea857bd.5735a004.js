@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36386],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12384],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 44838:
+/***/ 48180:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '큐브',
     description: '큐브를 안내합니다.',
     tags: [
-        'Java',
+        'Go',
         '큐브',
         '분석하기',
         'UI'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "java/cube",
-    "id": "java/cube",
+    "unversionedId": "golang/cube",
+    "id": "golang/cube",
     "title": "큐브",
     "description": "큐브를 안내합니다.",
-    "source": "@site/docs/java/cube.mdx",
-    "sourceDirName": "java",
-    "slug": "/java/cube",
-    "permalink": "/whatap-docs/java/cube",
+    "source": "@site/docs/golang/cube.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/cube",
+    "permalink": "/whatap-docs/golang/cube",
     "draft": false,
-    "editUrl": "undefined/docs/java/cube.mdx",
+    "editUrl": "undefined/docs/golang/cube.mdx",
     "tags": [
         {
-            "label": "Java",
-            "permalink": "/whatap-docs/tags/java"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
             "label": "큐브",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "큐브",
         "description": "큐브를 안내합니다.",
         "tags": [
-            "Java",
+            "Go",
             "큐브",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "javaSidebar",
+    "sidebar": "goSidebar",
     "previous": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/java/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/golang/analysis-report-intro"
     },
     "next": {
-        "title": "스택",
-        "permalink": "/whatap-docs/java/analysis-apm"
+        "title": "성능 추이",
+        "permalink": "/whatap-docs/golang/performance-trend"
     }
 };
 const assets = {};

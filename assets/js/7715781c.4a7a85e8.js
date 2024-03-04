@@ -360,7 +360,7 @@ const metadata = {
         "permalink": "/whatap-docs/nodejs/metrics-chart"
     },
     "next": {
-        "title": "분석과 통계",
+        "title": "분석",
         "permalink": "/whatap-docs/nodejs/analysis-report-intro"
     }
 };

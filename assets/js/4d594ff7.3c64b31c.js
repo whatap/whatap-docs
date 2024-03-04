@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[84023],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36386],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 86368:
+/***/ 44838:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '큐브',
     description: '큐브를 안내합니다.',
     tags: [
-        'PHP',
+        'Java',
         '큐브',
         '분석하기',
         'UI'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "php/cube",
-    "id": "php/cube",
+    "unversionedId": "java/cube",
+    "id": "java/cube",
     "title": "큐브",
     "description": "큐브를 안내합니다.",
-    "source": "@site/docs/php/cube.mdx",
-    "sourceDirName": "php",
-    "slug": "/php/cube",
-    "permalink": "/whatap-docs/php/cube",
+    "source": "@site/docs/java/cube.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/cube",
+    "permalink": "/whatap-docs/java/cube",
     "draft": false,
-    "editUrl": "undefined/docs/php/cube.mdx",
+    "editUrl": "undefined/docs/java/cube.mdx",
     "tags": [
         {
-            "label": "PHP",
-            "permalink": "/whatap-docs/tags/php"
+            "label": "Java",
+            "permalink": "/whatap-docs/tags/java"
         },
         {
             "label": "큐브",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "큐브",
         "description": "큐브를 안내합니다.",
         "tags": [
-            "PHP",
+            "Java",
             "큐브",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "phpSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/php/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/java/analysis-report-intro"
     },
     "next": {
-        "title": "성능 추이",
-        "permalink": "/whatap-docs/php/performance-trend"
+        "title": "스택",
+        "permalink": "/whatap-docs/java/analysis-apm"
     }
 };
 const assets = {};

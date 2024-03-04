@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[27689],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[61642],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 36925:
+/***/ 32175:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,27 +312,27 @@ const frontMatter = {
     title: '메트릭스 이상 탐지',
     description: '다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.',
     tags: [
-        'PHP',
+        'Java',
         '메트릭스',
         '이상 탐지'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "php/metrics-detect-anormal",
-    "id": "php/metrics-detect-anormal",
+    "unversionedId": "java/metrics-detect-anormal",
+    "id": "java/metrics-detect-anormal",
     "title": "메트릭스 이상 탐지",
     "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
-    "source": "@site/docs/php/metrics-detect-anormal.mdx",
-    "sourceDirName": "php",
-    "slug": "/php/metrics-detect-anormal",
-    "permalink": "/whatap-docs/php/metrics-detect-anormal",
+    "source": "@site/docs/java/metrics-detect-anormal.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/metrics-detect-anormal",
+    "permalink": "/whatap-docs/java/metrics-detect-anormal",
     "draft": false,
-    "editUrl": "undefined/docs/php/metrics-detect-anormal.mdx",
+    "editUrl": "undefined/docs/java/metrics-detect-anormal.mdx",
     "tags": [
         {
-            "label": "PHP",
-            "permalink": "/whatap-docs/tags/php"
+            "label": "Java",
+            "permalink": "/whatap-docs/tags/java"
         },
         {
             "label": "메트릭스",
@@ -349,19 +349,19 @@ const metadata = {
         "title": "메트릭스 이상 탐지",
         "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
         "tags": [
-            "PHP",
+            "Java",
             "메트릭스",
             "이상 탐지"
         ]
     },
-    "sidebar": "phpSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
         "title": "메트릭스 차트",
-        "permalink": "/whatap-docs/php/metrics-chart"
+        "permalink": "/whatap-docs/java/metrics-chart"
     },
     "next": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/php/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/java/analysis-report-intro"
     }
 };
 const assets = {};

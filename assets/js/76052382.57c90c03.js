@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[15792],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[72942],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 66876:
+/***/ 34829:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '큐브',
     description: '큐브를 안내합니다.',
     tags: [
-        '.NET',
+        'Node.js',
         '큐브',
         '분석하기',
         'UI'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/cube",
-    "id": "dotnet/cube",
+    "unversionedId": "nodejs/cube",
+    "id": "nodejs/cube",
     "title": "큐브",
     "description": "큐브를 안내합니다.",
-    "source": "@site/docs/dotnet/cube.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/cube",
-    "permalink": "/whatap-docs/dotnet/cube",
+    "source": "@site/docs/nodejs/cube.mdx",
+    "sourceDirName": "nodejs",
+    "slug": "/nodejs/cube",
+    "permalink": "/whatap-docs/nodejs/cube",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/cube.mdx",
+    "editUrl": "undefined/docs/nodejs/cube.mdx",
     "tags": [
         {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
+            "label": "Node.js",
+            "permalink": "/whatap-docs/tags/node-js"
         },
         {
             "label": "큐브",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "큐브",
         "description": "큐브를 안내합니다.",
         "tags": [
-            ".NET",
+            "Node.js",
             "큐브",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "nodejsSidebar",
     "previous": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/dotnet/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/nodejs/analysis-report-intro"
     },
     "next": {
-        "title": "스택",
-        "permalink": "/whatap-docs/dotnet/analysis-apm"
+        "title": "성능 추이",
+        "permalink": "/whatap-docs/nodejs/performance-trend"
     }
 };
 const assets = {};

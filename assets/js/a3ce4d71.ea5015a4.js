@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[72942],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[84023],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 34829:
+/***/ 86368:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '큐브',
     description: '큐브를 안내합니다.',
     tags: [
-        'Node.js',
+        'PHP',
         '큐브',
         '분석하기',
         'UI'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "nodejs/cube",
-    "id": "nodejs/cube",
+    "unversionedId": "php/cube",
+    "id": "php/cube",
     "title": "큐브",
     "description": "큐브를 안내합니다.",
-    "source": "@site/docs/nodejs/cube.mdx",
-    "sourceDirName": "nodejs",
-    "slug": "/nodejs/cube",
-    "permalink": "/whatap-docs/nodejs/cube",
+    "source": "@site/docs/php/cube.mdx",
+    "sourceDirName": "php",
+    "slug": "/php/cube",
+    "permalink": "/whatap-docs/php/cube",
     "draft": false,
-    "editUrl": "undefined/docs/nodejs/cube.mdx",
+    "editUrl": "undefined/docs/php/cube.mdx",
     "tags": [
         {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
+            "label": "PHP",
+            "permalink": "/whatap-docs/tags/php"
         },
         {
             "label": "큐브",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "큐브",
         "description": "큐브를 안내합니다.",
         "tags": [
-            "Node.js",
+            "PHP",
             "큐브",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "nodejsSidebar",
+    "sidebar": "phpSidebar",
     "previous": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/nodejs/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/php/analysis-report-intro"
     },
     "next": {
         "title": "성능 추이",
-        "permalink": "/whatap-docs/nodejs/performance-trend"
+        "permalink": "/whatap-docs/php/performance-trend"
     }
 };
 const assets = {};

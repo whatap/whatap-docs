@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[29301],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[82989],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 46031:
+/***/ 6151:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -309,10 +309,10 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'analysis-report-intro',
-    title: '분석과 통계',
+    title: '분석',
     description: '애플리케이션 분석과 통계 메뉴를 안내합니다.',
     tags: [
-        'PHP',
+        'Python',
         '애플리케이션',
         '통계',
         '분석하기',
@@ -321,20 +321,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "php/analysis-report-intro",
-    "id": "php/analysis-report-intro",
-    "title": "분석과 통계",
+    "unversionedId": "python/analysis-report-intro",
+    "id": "python/analysis-report-intro",
+    "title": "분석",
     "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
-    "source": "@site/docs/php/analysis-report-intro.mdx",
-    "sourceDirName": "php",
-    "slug": "/php/analysis-report-intro",
-    "permalink": "/whatap-docs/php/analysis-report-intro",
+    "source": "@site/docs/python/analysis-report-intro.mdx",
+    "sourceDirName": "python",
+    "slug": "/python/analysis-report-intro",
+    "permalink": "/whatap-docs/python/analysis-report-intro",
     "draft": false,
-    "editUrl": "undefined/docs/php/analysis-report-intro.mdx",
+    "editUrl": "undefined/docs/python/analysis-report-intro.mdx",
     "tags": [
         {
-            "label": "PHP",
-            "permalink": "/whatap-docs/tags/php"
+            "label": "Python",
+            "permalink": "/whatap-docs/tags/python"
         },
         {
             "label": "애플리케이션",
@@ -356,24 +356,24 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "analysis-report-intro",
-        "title": "분석과 통계",
+        "title": "분석",
         "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
         "tags": [
-            "PHP",
+            "Python",
             "애플리케이션",
             "통계",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "phpSidebar",
+    "sidebar": "pySidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/php/metrics-detect-anormal"
+        "permalink": "/whatap-docs/python/metrics-detect-anormal"
     },
     "next": {
         "title": "큐브",
-        "permalink": "/whatap-docs/php/cube"
+        "permalink": "/whatap-docs/python/cube"
     }
 };
 const assets = {};

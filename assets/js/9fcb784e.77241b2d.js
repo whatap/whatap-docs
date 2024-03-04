@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[89398],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37622],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 80197:
+/***/ 59441:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,27 +312,27 @@ const frontMatter = {
     title: '메트릭스 이상 탐지',
     description: '다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.',
     tags: [
-        'Python',
+        'Go',
         '메트릭스',
         '이상 탐지'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "python/metrics-detect-anormal",
-    "id": "python/metrics-detect-anormal",
+    "unversionedId": "golang/metrics-detect-anormal",
+    "id": "golang/metrics-detect-anormal",
     "title": "메트릭스 이상 탐지",
     "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
-    "source": "@site/docs/python/metrics-detect-anormal.mdx",
-    "sourceDirName": "python",
-    "slug": "/python/metrics-detect-anormal",
-    "permalink": "/whatap-docs/python/metrics-detect-anormal",
+    "source": "@site/docs/golang/metrics-detect-anormal.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/metrics-detect-anormal",
+    "permalink": "/whatap-docs/golang/metrics-detect-anormal",
     "draft": false,
-    "editUrl": "undefined/docs/python/metrics-detect-anormal.mdx",
+    "editUrl": "undefined/docs/golang/metrics-detect-anormal.mdx",
     "tags": [
         {
-            "label": "Python",
-            "permalink": "/whatap-docs/tags/python"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
             "label": "메트릭스",
@@ -349,19 +349,19 @@ const metadata = {
         "title": "메트릭스 이상 탐지",
         "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
         "tags": [
-            "Python",
+            "Go",
             "메트릭스",
             "이상 탐지"
         ]
     },
-    "sidebar": "pySidebar",
+    "sidebar": "goSidebar",
     "previous": {
         "title": "메트릭스 차트",
-        "permalink": "/whatap-docs/python/metrics-chart"
+        "permalink": "/whatap-docs/golang/metrics-chart"
     },
     "next": {
-        "title": "분석과 통계",
-        "permalink": "/whatap-docs/python/analysis-report-intro"
+        "title": "분석",
+        "permalink": "/whatap-docs/golang/analysis-report-intro"
     }
 };
 const assets = {};

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[64393],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[81083],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 12325:
+/***/ 39427:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -309,10 +309,10 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'analysis-report-intro',
-    title: '분석과 통계',
+    title: '분석',
     description: '애플리케이션 분석과 통계 메뉴를 안내합니다.',
     tags: [
-        'Java',
+        '.NET',
         '애플리케이션',
         '통계',
         '분석하기',
@@ -321,20 +321,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "java/analysis-report-intro",
-    "id": "java/analysis-report-intro",
-    "title": "분석과 통계",
+    "unversionedId": "dotnet/analysis-report-intro",
+    "id": "dotnet/analysis-report-intro",
+    "title": "분석",
     "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
-    "source": "@site/docs/java/analysis-report-intro.mdx",
-    "sourceDirName": "java",
-    "slug": "/java/analysis-report-intro",
-    "permalink": "/whatap-docs/java/analysis-report-intro",
+    "source": "@site/docs/dotnet/analysis-report-intro.mdx",
+    "sourceDirName": "dotnet",
+    "slug": "/dotnet/analysis-report-intro",
+    "permalink": "/whatap-docs/dotnet/analysis-report-intro",
     "draft": false,
-    "editUrl": "undefined/docs/java/analysis-report-intro.mdx",
+    "editUrl": "undefined/docs/dotnet/analysis-report-intro.mdx",
     "tags": [
         {
-            "label": "Java",
-            "permalink": "/whatap-docs/tags/java"
+            "label": ".NET",
+            "permalink": "/whatap-docs/tags/net"
         },
         {
             "label": "애플리케이션",
@@ -356,24 +356,24 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "analysis-report-intro",
-        "title": "분석과 통계",
+        "title": "분석",
         "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
         "tags": [
-            "Java",
+            ".NET",
             "애플리케이션",
             "통계",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "javaSidebar",
+    "sidebar": "dotNetSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/java/metrics-detect-anormal"
+        "permalink": "/whatap-docs/dotnet/metrics-detect-anormal"
     },
     "next": {
         "title": "큐브",
-        "permalink": "/whatap-docs/java/cube"
+        "permalink": "/whatap-docs/dotnet/cube"
     }
 };
 const assets = {};

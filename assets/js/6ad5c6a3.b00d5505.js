@@ -362,7 +362,7 @@ const metadata = {
     },
     "sidebar": "pySidebar",
     "previous": {
-        "title": "분석과 통계",
+        "title": "분석",
         "permalink": "/whatap-docs/python/analysis-report-intro"
     },
     "next": {

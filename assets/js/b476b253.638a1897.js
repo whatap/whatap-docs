@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[81083],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[98262],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 39427:
+/***/ 61200:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -309,10 +309,10 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'analysis-report-intro',
-    title: '분석과 통계',
+    title: '분석',
     description: '애플리케이션 분석과 통계 메뉴를 안내합니다.',
     tags: [
-        '.NET',
+        'Node.js',
         '애플리케이션',
         '통계',
         '분석하기',
@@ -321,20 +321,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/analysis-report-intro",
-    "id": "dotnet/analysis-report-intro",
-    "title": "분석과 통계",
+    "unversionedId": "nodejs/analysis-report-intro",
+    "id": "nodejs/analysis-report-intro",
+    "title": "분석",
     "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
-    "source": "@site/docs/dotnet/analysis-report-intro.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/analysis-report-intro",
-    "permalink": "/whatap-docs/dotnet/analysis-report-intro",
+    "source": "@site/docs/nodejs/analysis-report-intro.mdx",
+    "sourceDirName": "nodejs",
+    "slug": "/nodejs/analysis-report-intro",
+    "permalink": "/whatap-docs/nodejs/analysis-report-intro",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/analysis-report-intro.mdx",
+    "editUrl": "undefined/docs/nodejs/analysis-report-intro.mdx",
     "tags": [
         {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
+            "label": "Node.js",
+            "permalink": "/whatap-docs/tags/node-js"
         },
         {
             "label": "애플리케이션",
@@ -356,24 +356,24 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "analysis-report-intro",
-        "title": "분석과 통계",
+        "title": "분석",
         "description": "애플리케이션 분석과 통계 메뉴를 안내합니다.",
         "tags": [
-            ".NET",
+            "Node.js",
             "애플리케이션",
             "통계",
             "분석하기",
             "UI"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "nodejsSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/dotnet/metrics-detect-anormal"
+        "permalink": "/whatap-docs/nodejs/metrics-detect-anormal"
     },
     "next": {
         "title": "큐브",
-        "permalink": "/whatap-docs/dotnet/cube"
+        "permalink": "/whatap-docs/nodejs/cube"
     }
 };
 const assets = {};
