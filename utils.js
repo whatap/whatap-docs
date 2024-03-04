@@ -304,6 +304,12 @@ function colsToJson(data){
     "ko": "워크로드"
   }
 
+  rd["integratedContainerMap"] = {
+    "en": "Integrated Container Map",
+    "ja": "統合コンテナマップ",
+    "ko": "통합 컨테이너 맵"
+  }
+
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
