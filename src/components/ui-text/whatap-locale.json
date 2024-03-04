@@ -49224,10 +49224,10 @@
     "service_id": "TTL07148"
   },
   "DSC07149": {
-    "en": "If the event type is server or process, you can use the event reception tag. <br>\nWhen setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag. <br>\n You can tag project members and 3rd-party plugins in the notification settings menu.",
-    "ja": "イベントタイプがサーバー、プロセスの場合は、イベント受信タグを使用できます。 <br>\nイベント設定時にイベント受信タグを選択して、そのタグを持つプロジェクトメンバーとサードパーティプラグインに通知を送信できます。<br>\nアラート通知設定メニューからプロジェクトメンバーとサードパーティプラグインにそれぞれのタグを指定することができます。",
-    "ko": "이벤트 타입이 서버, 프로세스일 경우 이벤트 수신 태그를 사용할 수 있습니다. <br>\n이벤트 설정 시 이벤트 수신 태그를 선택하여 해당 태그를 가진 프로젝트 멤버와 3rd-party 플러그인에 알림을 전송할 수 있습니다. <br>\n이벤트 수신 설정 메뉴에서 프로젝트 멤버와 3rd-party 플러그인에 각각 태그를 지정할 수 있습니다",
-    "zh": "If the event type is server or process, you can use the event reception tag. <br>\nWhen setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag. <br>\n You can tag project members and 3rd-party plugins in the notification settings menu.",
+    "en": "When setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag. <br>\n You can tag project members and 3rd-party plugins in the notification settings menu.",
+    "ja": "イベント設定時にイベント受信タグを選択して、そのタグを持つプロジェクトメンバーとサードパーティプラグインに通知を送信できます。<br>\nアラート通知設定メニューからプロジェクトメンバーとサードパーティプラグインにそれぞれのタグを指定することができます。",
+    "ko": "이벤트 설정 시 이벤트 수신 태그를 선택하여 해당 태그를 가진 프로젝트 멤버와 3rd-party 플러그인에 알림을 전송할 수 있습니다. <br>\n이벤트 수신 설정 메뉴에서 프로젝트 멤버와 3rd-party 플러그인에 각각 태그를 지정할 수 있습니다",
+    "zh": "When setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag. <br>\n You can tag project members and 3rd-party plugins in the notification settings menu.",
     "service_id": "DSC07149"
   },
   "CNT07150": {
@@ -53025,10 +53025,10 @@
     "service_id": "DSC07693"
   },
   "DSC07694": {
-    "en": "Say goodbye to having to click multiple buttons when you want to use the filter feature! We've improved user-friendliness so you can use filters quickly and easily.\nTry out the new filter functionality.",
+    "en": "Say goodbye to having to click multiple buttons when you want to use the filter feature!\nWe've improved user-friendliness so you can use filters quickly and easily.\nTry out the new filter functionality.",
     "ja": "フィルタ機能を使うためにボタンを何度もクリックする手間がなくなりました。\nより楽にフィルタを使用できるように、ユーザーの利便性を改善しました。\n新しくなったフィルタ機能を利用してみてください。",
     "ko": "필터 기능을 사용하고 싶은데 버튼을 여러 번 클릭해야 하는 번거로움은 NO!\n빠르고 쉽게 필터를 사용할 수 있도록 사용자 편의성을 개선했습니다.\n새로워진 필터 기능을 이용해 보세요.",
-    "zh": "If you want to use the filter function, no need to bother clicking the button multiple times!\nWe have improved user convenience so that you can use filters quickly and easily.\nTry the new filter function.",
+    "zh": "Say goodbye to having to click multiple buttons when you want to use the filter feature!\nWe've improved user-friendliness so you can use filters quickly and easily.\nTry out the new filter functionality.",
     "service_id": "DSC07694"
   },
   "DSC07695": {
@@ -53255,6 +53255,76 @@
     "zh": "Analyzing Pod startup performance...",
     "service_id": "DSC07726"
   },
+  "TTL07727": {
+    "en": "Notification language setting",
+    "ja": "通知言語の設定",
+    "ko": "알림 언어 설정",
+    "zh": "Notification language setting",
+    "service_id": "TTL07727"
+  },
+  "DSC07728": {
+    "en": "You can set the language of warning notification messages that occur in your project\n.",
+    "ja": "プロジェクトで発生するアラート通知の言語が指定できます。",
+    "ko": "프로젝트에서 발생하는 경고 알림 메시지의 언어를 설정할 수 있습니다.",
+    "zh": "You can set the language of warning notification messages that occur in your project\n.",
+    "service_id": "DSC07728"
+  },
+  "ITM07729": {
+    "en": "Korean",
+    "ja": "韓国語",
+    "ko": "한글",
+    "zh": "\bKorean",
+    "service_id": "ITM07729"
+  },
+  "ITM07730": {
+    "en": "English",
+    "ja": "英語",
+    "ko": "영어",
+    "zh": "English",
+    "service_id": "ITM07730"
+  },
+  "BTN07731": {
+    "en": "IP Class",
+    "ja": "IPクラス",
+    "ko": "IP 클래스",
+    "zh": "IP Class",
+    "service_id": "BTN07731"
+  },
+  "DSC07732": {
+    "en": "For log file/window events, the recipient tag feature is available starting from agent version 2.4.6 and higher.",
+    "ja": "ログファイルとWindowsイベントの場合、エージェントバージョン2.4.6以降から受信者タグ機能が使用できます。",
+    "ko": "로그 파일 / 윈도우 이벤트의 경우 수신자 태그 기능을 에이전트 버전 2.4.6 이상부터 사용할 수 있습니다.",
+    "zh": "For log file/window events, the recipient tag feature is available starting from agent version 2.4.6 and higher.",
+    "service_id": "DSC07732"
+  },
+  "LNK07733": {
+    "en": "Check agent version",
+    "ja": "エージェントバージョンの確認",
+    "ko": "에이전트 버전 확인",
+    "zh": "Check agent version",
+    "service_id": "LNK07733"
+  },
+  "DSC07734": {
+    "en": "When setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag.\n",
+    "ja": "イベント設定時、イベント受信タグを選択して、該当タグを持つプロジェクトメンバーとサードパーティーラグインに通知を送信することができます。",
+    "ko": "이벤트 설정 시 이벤트 수신 태그를 선택하여 해당 태그를 가진 프로젝트 멤버와 3rd-party 플러그인에 알림을 전송할 수 있습니다.",
+    "zh": "When setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag.",
+    "service_id": "DSC07734"
+  },
+  "DSC07735": {
+    "en": "You can specify tags for project members and 3rd-party plugins in the event reception settings menu.\n",
+    "ja": "イベント受信設定メニューでは、プロジェクトメンバーとサードパーティープラグインに、それぞれタグを付けることができます。",
+    "ko": "이벤트 수신 설정 메뉴에서 프로젝트 멤버와 3rd-party 플러그인에 각각 태그를 지정할 수 있습니다.",
+    "zh": "You can specify tags for project members and 3rd-party plugins in the event reception settings menu.\n",
+    "service_id": "DSC07735"
+  },
+  "TTL07736": {
+    "en": "Session analysis",
+    "ja": "セッション分析",
+    "ko": "세션 분석",
+    "zh": "Session analysis",
+    "service_id": "TTL07736"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -53470,5 +53540,10 @@
     "en": "Workload",
     "ja": "ワークロード",
     "ko": "워크로드"
+  },
+  "integratedContainerMap": {
+    "en": "Integrated Container Map",
+    "ja": "統合コンテナマップ",
+    "ko": "통합 컨테이너 맵"
   }
 }
