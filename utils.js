@@ -328,6 +328,12 @@ function colsToJson(data){
     "ko": "애플리케이션 스택"
   }
 
+  rd["containerizedAppList"] = {
+    "en": "Container Application List",
+    "ja": "コンテナアプリケーションリスト",
+    "ko": "컨테이너 애플리케이션 목록"
+  }
+
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
