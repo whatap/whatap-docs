@@ -53545,5 +53545,20 @@
     "en": "Integrated Container Map",
     "ja": "統合コンテナマップ",
     "ko": "통합 컨테이너 맵"
+  },
+  "kubeAppHitmap": {
+    "en": "Application Hitmap",
+    "ja": "アプリケーションヒットマップ",
+    "ko": "애플리케이션 히트맵"
+  },
+  "oomContainer": {
+    "en": "Out Of Memory Killed Container",
+    "ja": "OOM Killedコンテナ",
+    "ko": "Out Of Memory Killed 컨테이너"
+  },
+  "kubeAppStack": {
+    "en": "Application Stack",
+    "ja": "アプリケーションスタック",
+    "ko": "애플리케이션 스택"
   }
 }
