@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[96863],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[41228],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 16470:
+/***/ 79394:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '멀티 트랜잭션',
     description: '멀티 트랜잭션 추적을 안내합니다.',
     tags: [
-        'Go',
+        'PHP',
         '트랜잭션',
         '멀티 트랜잭션',
         'UI',
@@ -322,20 +322,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/trs-multi-trace",
-    "id": "golang/trs-multi-trace",
+    "unversionedId": "php/trs-multi-trace",
+    "id": "php/trs-multi-trace",
     "title": "멀티 트랜잭션",
     "description": "멀티 트랜잭션 추적을 안내합니다.",
-    "source": "@site/docs/golang/trs-multi-trace.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/trs-multi-trace",
-    "permalink": "/whatap-docs/golang/trs-multi-trace",
+    "source": "@site/docs/php/trs-multi-trace.mdx",
+    "sourceDirName": "php",
+    "slug": "/php/trs-multi-trace",
+    "permalink": "/whatap-docs/php/trs-multi-trace",
     "draft": false,
-    "editUrl": "undefined/docs/golang/trs-multi-trace.mdx",
+    "editUrl": "undefined/docs/php/trs-multi-trace.mdx",
     "tags": [
         {
-            "label": "Go",
-            "permalink": "/whatap-docs/tags/go"
+            "label": "PHP",
+            "permalink": "/whatap-docs/tags/php"
         },
         {
             "label": "트랜잭션",
@@ -364,7 +364,7 @@ const metadata = {
         "title": "멀티 트랜잭션",
         "description": "멀티 트랜잭션 추적을 안내합니다.",
         "tags": [
-            "Go",
+            "PHP",
             "트랜잭션",
             "멀티 트랜잭션",
             "UI",
@@ -372,14 +372,14 @@ const metadata = {
             "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "phpSidebar",
     "previous": {
-        "title": "액티브 트랜잭션",
-        "permalink": "/whatap-docs/golang/active-transactions"
+        "title": "트랜잭션 트레이싱",
+        "permalink": "/whatap-docs/php/trs-profile"
     },
     "next": {
         "title": "트랜잭션 스텝 수집 방식",
-        "permalink": "/whatap-docs/golang/collect-stacks"
+        "permalink": "/whatap-docs/php/collect-stacks"
     }
 };
 const assets = {};
@@ -409,6 +409,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
+const InDoc = makeShortcode("InDoc");
 const ImgLang = makeShortcode("ImgLang");
 const layoutProps = {
     toc
@@ -425,7 +426,20 @@ function MDXContent(_param) {
         parentName: "p"
     }, `멀티 트랜잭션`), `은 다른 에이전트나 프로젝트와 연관된 트랜잭션을 의미합니다. 와탭 프로젝트에 등록된 애플리케이션 서비스 간의 호출을 추적하는 것이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `멀티 트랜잭션 추적`), `입니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `멀티 트랜잭션 추적`), `입니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        product: "java",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "info"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `Java 에이전트는 세 개의 HTTP 헤더 키값(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `x-wtap-po`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `x-wtap-mst`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `x-wtap-sp1`), `)으로 멀티 트랜잭션을 추적합니다. 게이트웨이를 통과하는 HTTP 트랜잭션이 연계 추적이 안 된다면 HTTP 헤더 조건을 확인하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"

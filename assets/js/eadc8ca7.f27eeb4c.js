@@ -365,7 +365,7 @@ function MDXContent(_param) {
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " 데이터베이스 알림 원복 기능 추가");
+    }, "Feature"), " 이벤트 해소 알림 기능 추가");
 }
 MDXContent.isMDXComponent = true;
 
