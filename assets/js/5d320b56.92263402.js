@@ -652,7 +652,7 @@ function MDXContent(_param) {
         parentName: "strong"
     }, `노드 상세`)), `와 관련한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://docs.whatap.io/kubernetes/resource-node-list#%EB%85%B8%EB%93%9C-%EC%83%81%EC%84%B8"
+        "href": "https://docs.whatap.io/kubernetes/resource-node-list#nodedetails"
     }, `다음 문서`), `를 참조하세요.`)))));
 }
 MDXContent.isMDXComponent = true;

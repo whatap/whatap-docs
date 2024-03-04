@@ -440,7 +440,7 @@ const toc = [
     },
     {
         value: 'Java 에이전트의 예외 처리(<strong>WARNING</strong>) 기준',
-        id: 'java-에이전트의-예외-처리warning-기준',
+        id: 'java-agent-exception',
         level: 2
     },
     {
@@ -788,7 +788,7 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "../best-practice-guides/about-apm-hitmap-class"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "java-에이전트의-예외-처리warning-기준"
+        "id": "java-agent-exception"
     }, `Java 에이전트의 예외 처리(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "h2"
     }, `WARNING`), `) 기준`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Java 언어를 사용하는 애플리케이션 환경에서 발생하는 에러를 Java 에이전트가 예외 처리하는 기준에 대해서 안내합니다. 다음 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {

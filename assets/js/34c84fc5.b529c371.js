@@ -399,7 +399,7 @@ const toc = [
     },
     {
         value: '노드 상세',
-        id: '노드-상세',
+        id: 'nodedetails',
         level: 2
     }
 ];
@@ -762,7 +762,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
     }, `적용`)), ` 버튼을 클릭 해 선택 내역을 적용할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "노드-상세"
+        "id": "nodedetails"
     }, `노드 상세`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `노드 상세 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "k8s-resource-node-detail.png",
         desc: "노드 상세 화면",
