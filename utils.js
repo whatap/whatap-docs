@@ -310,6 +310,24 @@ function colsToJson(data){
     "ko": "통합 컨테이너 맵"
   }
 
+  rd["kubeAppHitmap"] = {
+    "en": "Application Hitmap",
+    "ja": "アプリケーションヒットマップ",
+    "ko": "애플리케이션 히트맵"
+  }
+
+  rd["oomContainer"] = {
+    "en": "Out Of Memory Killed Container",
+    "ja": "OOM Killedコンテナ",
+    "ko": "Out Of Memory Killed 컨테이너"
+  }
+
+  rd["kubeAppStack"] = {
+    "en": "Application Stack",
+    "ja": "アプリケーションスタック",
+    "ko": "애플리케이션 스택"
+  }
+
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
