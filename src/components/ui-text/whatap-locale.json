@@ -53221,10 +53221,10 @@
     "service_id": "TTL07721"
   },
   "DSC07722": {
-    "en": "The cumulative number of restarts based on the last view time ({viewTime}) is {restartCount} times.",
-    "ja": "最後の照会時刻（{viewTime}）を基準にした累積再起動回数は{restartCount}回です。",
-    "ko": "마지막 조회 시각({viewTime}) 기준 누적 재시작 횟수는 {restartCount}번 입니다.",
-    "zh": "The cumulative number of restarts based on the last view time ({viewTime}) is {restartCount} times.",
+    "en": "The number of restarts within 5 minutes after creation is {initRestartCount} times, and the cumulative number of restarts based on the last view time ({viewTime}) is {restartCount} times.",
+    "ja": "生成後 5 分間、再起動回数は {initRestartCount} 回、最後の照会時刻（{viewTime}）を基準にした累積再起動回数は{restartCount}回です。",
+    "ko": "생성 후 5분 동안 재시작 횟수는 {initRestartCount}번, 마지막 조회 시각({viewTime}) 기준 누적 재시작 횟수는 {restartCount}번 입니다.",
+    "zh": "The number of restarts within 5 minutes after creation is {initRestartCount} times, and the cumulative number of restarts based on the last view time ({viewTime}) is {restartCount} times.",
     "service_id": "DSC07722"
   },
   "DSC07723": {
@@ -53402,9 +53402,9 @@
     "ko": "Pod 목록"
   },
   "containerizedAppList": {
-    "en": "Application List",
-    "ja": "アプリケーションリスト",
-    "ko": "애플리케이션 목록"
+    "en": "Container Application List",
+    "ja": "コンテナアプリケーションリスト",
+    "ko": "컨테이너 애플리케이션 목록"
   },
   "containerImages": {
     "en": "Container Images",
