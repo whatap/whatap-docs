@@ -127,9 +127,9 @@ const sidebars = {
               },
               items: [
                 'java/dashboard',
-                'java/dashboard-hitmap-trace',
                 'java/dashboard-transactionmap',
                 'java/dashboard-active-transaction',
+                'java/dashboard-hitmap-trace',
               ],
             },
             {
@@ -153,36 +153,24 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '토폴로지',
+              label: '분석',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'java/topology',
+                id: 'java/analysis-report-intro'
               },
               items: [
-                'java/topology-basic',
-                'java/topology-type',
-                'java/topology-add-function',
-                'java/topology-settings'
-              ],
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/track-transactions-intro'
-              },
-              items: [
-                'java/trs-view',
-                'java/trs-profile',
-                'java/active-transactions',
-                'java/trs-multi-trace',
-                'java/trs-endpoint-setting',
-                'java/collect-stacks',
+                'java/application-daily-stat',
+                'java/performance-trend',
+                'java/analysis-apm',
+                'java/cube',
+                {
+                  type: 'ref',
+                  label: '히트맵',
+                  id: 'java/trs-profile'
+                },
+                'java/analysis-trace-mtx'
               ]
             },
             {
@@ -204,18 +192,37 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석',
+              label: '트랜잭션',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'java/analysis-report-intro'
+                id: 'java/track-transactions-intro'
               },
               items: [
-                'java/cube',
-                'java/analysis-apm',
-                'java/performance-trend',
+                'java/trs-view',
+                'java/trs-profile',
+                'java/active-transactions',
+                'java/trs-multi-trace',
+                'java/trs-endpoint-setting',
+                'java/collect-stacks',
               ]
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'java/topology',
+              },
+              items: [
+                'java/topology-basic',
+                'java/topology-type',
+                'java/topology-add-function',
+                'java/topology-settings'
+              ],
             },
             'java/analysis-apm-trs',
             {
@@ -232,7 +239,6 @@ const sidebars = {
                 'java/integrated-report',
               ]
             },
-            'java/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -259,6 +265,7 @@ const sidebars = {
                 'java/set-event-format',
               ],
             },
+            'java/instance-performance-analysis',
             {
               type: 'doc',
               label: 'Log 모니터링',
