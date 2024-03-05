@@ -53560,5 +53560,10 @@
     "en": "Application Stack",
     "ja": "アプリケーションスタック",
     "ko": "애플리케이션 스택"
+  },
+  "perfTrend": {
+    "en": "Performance Trend",
+    "ja": "性能推移",
+    "ko": "성능 추이"
   }
 }

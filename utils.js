@@ -334,6 +334,13 @@ function colsToJson(data){
     "ko": "컨테이너 애플리케이션 목록"
   }
 
+  rd["perfTrend"] = {
+    "en": "Performance Trend",
+    "ja": "性能推移",
+    "ko": "성능 추이"
+  }
+
+  rd["multi_server_transaction_trace"].en = "Multiple Transaction Trace";
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
