@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[11894],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[35894],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 66844:
+/***/ 98871:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,27 +312,27 @@ const frontMatter = {
     title: '인스턴스 성능 관리',
     description: '애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
     tags: [
-        '.NET',
+        'Node.js',
         '애플리케이션',
         '인스턴스 성능 분석'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/instance-performance-analysis",
-    "id": "dotnet/instance-performance-analysis",
+    "unversionedId": "nodejs/instance-performance-analysis",
+    "id": "nodejs/instance-performance-analysis",
     "title": "인스턴스 성능 관리",
     "description": "애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-    "source": "@site/docs/dotnet/instance-performance-analysis.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/instance-performance-analysis",
-    "permalink": "/whatap-docs/dotnet/instance-performance-analysis",
+    "source": "@site/docs/nodejs/instance-performance-analysis.mdx",
+    "sourceDirName": "nodejs",
+    "slug": "/nodejs/instance-performance-analysis",
+    "permalink": "/whatap-docs/nodejs/instance-performance-analysis",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/instance-performance-analysis.mdx",
+    "editUrl": "undefined/docs/nodejs/instance-performance-analysis.mdx",
     "tags": [
         {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
+            "label": "Node.js",
+            "permalink": "/whatap-docs/tags/node-js"
         },
         {
             "label": "애플리케이션",
@@ -349,19 +349,19 @@ const metadata = {
         "title": "인스턴스 성능 관리",
         "description": "애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
         "tags": [
-            ".NET",
+            "Node.js",
             "애플리케이션",
             "인스턴스 성능 분석"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "nodejsSidebar",
     "previous": {
         "title": "통합 보고서",
-        "permalink": "/whatap-docs/dotnet/integrated-report"
+        "permalink": "/whatap-docs/nodejs/integrated-report"
     },
     "next": {
         "title": "알림 설정하기",
-        "permalink": "/whatap-docs/dotnet/apm-set-notice"
+        "permalink": "/whatap-docs/nodejs/apm-set-notice"
     }
 };
 const assets = {};
@@ -701,7 +701,13 @@ function MDXContent(_param) {
         parentName: "p"
     }, `heapdump_enabled`), ` 옵션을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `true`), `로 설정하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `true`), `로 설정하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "dump_heap",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼을 선택해 힙 덤프 파일을 만드는 기능을 활성화합니다. 매번 힙 덤프를 자동 생성하지 않으며 해당 옵션이 성능에 영향을 주진 않습니다. 그러나 덤프 확보 작업은 성능에 영향을 미칠 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `힙 덤프 확보 작업은 부하가 큰 작업에 속합니다. 부하와 별개로 힙 덤프가 모두 추출될 때까지 애플리케이션의 코드는 실행이 중지(stop the world)되기 때문에 사용자가 느끼는 성능 차이는 더 심할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "configuration_throttling",
