@@ -3219,17 +3219,18 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_7_1',
+                id: 'release-notes/php/php-2_7_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_7_1',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_7_2',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_7_1',
                 'release-notes/php/php-2_7_0',
                 'release-notes/php/php-2_6_3',
                 'release-notes/php/php-2_6_2',
@@ -3238,7 +3239,6 @@ const sidebars = {
                 'release-notes/php/php-2_5_4',
                 'release-notes/php/php-2_5_3',
                 'release-notes/php/php-2_5_2',
-                'release-notes/php/php-2_5_1',
                 'release-notes/php/php-previous',
               ],
             },
@@ -3272,7 +3272,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1_5_8',
@@ -3281,7 +3281,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_5_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_5_7',
                 'release-notes/python/python-1_5_6',
@@ -3356,7 +3356,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_5_2',
@@ -3365,7 +3365,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_5_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_5_1',
                 'release-notes/server/server-2_5_0',
