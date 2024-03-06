@@ -17731,8 +17731,8 @@
     "service_id": "_02602"
   },
   "daily_app_stat": {
-    "en": "Daily application status",
-    "ja": "日別アプリケーション状態",
+    "en": "Daily APP. Status",
+    "ja": "日別APP現況",
     "ko": "일자별 애플리케이션 현황",
     "zh": "Daily Application Status",
     "service_id": "TTL02603"
@@ -19985,7 +19985,7 @@
     "service_id": "_02926"
   },
   "multi_server_transaction_trace": {
-    "en": "Multiple transaction trace",
+    "en": "Multiple Transaction Trace",
     "ja": "マルチTX追跡",
     "ko": "멀티 트랜잭션 추적",
     "zh": "Multiple Transaction Trace",

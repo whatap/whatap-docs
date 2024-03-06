@@ -340,7 +340,11 @@ function colsToJson(data){
     "ko": "성능 추이"
   }
 
+  rd["daily_app_stat"].en = "Daily APP. Status";
+  rd["daily_app_stat"].ja = "日別APP現況"
+
   rd["multi_server_transaction_trace"].en = "Multiple Transaction Trace";
+  
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
