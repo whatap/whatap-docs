@@ -163,8 +163,6 @@ const sidebars = {
               items: [
                 'java/application-daily-stat',
                 'java/performance-trend',
-                'java/metrics-chart',
-                'java/metrics-search',
                 'java/analysis-apm',
                 'java/cube',
                 {
@@ -188,6 +186,8 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
+                'java/metrics-chart',
+                'java/metrics-search',
                 'java/metrics-detect-anormal',
               ]
             },
@@ -409,8 +409,6 @@ const sidebars = {
               items: [
                 'php/application-daily-stat',
                 'php/performance-trend',
-                'php/metrics-chart',
-                'php/metrics-search',
                 'php/cube',
                 {
                   type: 'ref',
@@ -433,6 +431,8 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                'php/metrics-chart',
+                'php/metrics-search',
                 'php/metrics-detect-anormal',
               ]
             },
@@ -634,8 +634,6 @@ const sidebars = {
               items: [
                 'nodejs/application-daily-stat',
                 'nodejs/performance-trend',
-                'nodejs/metrics-chart',
-                'nodejs/metrics-search',
                 'nodejs/cube',
                 {
                   type: 'ref',
@@ -658,6 +656,8 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                'nodejs/metrics-chart',
+                'nodejs/metrics-search',
                 'nodejs/metrics-detect-anormal',
               ]
             },
@@ -856,8 +856,6 @@ const sidebars = {
               items: [
                 'python/application-daily-stat',
                 'python/performance-trend',
-                'python/metrics-chart',
-                'python/metrics-search',
                 'python/analysis-apm',
                 'python/cube',
                 {
@@ -881,6 +879,8 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                'python/metrics-chart',
+                'python/metrics-search',
                 'python/metrics-detect-anormal',
               ]
             },
@@ -1075,8 +1075,6 @@ const sidebars = {
               items: [
                 'dotnet/application-daily-stat',
                 'dotnet/performance-trend',
-                'dotnet/metrics-chart',
-                'dotnet/metrics-search',
                 'dotnet/analysis-apm',
                 'dotnet/cube',
                 {
@@ -1100,6 +1098,8 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                'dotnet/metrics-chart',
+                'dotnet/metrics-search',
                 'dotnet/metrics-detect-anormal',
               ]
             },
@@ -1287,8 +1287,6 @@ const sidebars = {
               items: [
                 'golang/application-daily-stat',
                 'golang/performance-trend',
-                'golang/metrics-chart',
-                'golang/metrics-search',
                 'golang/cube',
                 {
                   type: 'ref',
@@ -1311,6 +1309,8 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                'golang/metrics-chart',
+                'golang/metrics-search',
                 'golang/metrics-detect-anormal',
               ]
             },
