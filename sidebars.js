@@ -168,9 +168,9 @@ const sidebars = {
                 'java/analysis-apm',
                 'java/cube',
                 {
-                  type: 'link',
+                  type: 'ref',
                   label: '히트맵',
-                  href: '/java/trs-profile'
+                  id: 'java/trs-profile'
                 },
                 'java/analysis-trace-mtx',
                 'java/tx-profile'
@@ -413,9 +413,9 @@ const sidebars = {
                 'php/metrics-search',
                 'php/cube',
                 {
-                  type: 'link',
+                  type: 'ref',
                   label: '히트맵',
-                  href: '/php/trs-profile'
+                  id: 'php/trs-profile'
                 },
                 'php/analysis-trace-mtx',
                 'php/tx-profile'
@@ -638,9 +638,9 @@ const sidebars = {
                 'nodejs/metrics-search',
                 'nodejs/cube',
                 {
-                  type: 'link',
+                  type: 'ref',
                   label: '히트맵',
-                  href: '/nodejs/trs-profile'
+                  id: 'nodejs/trs-profile'
                 },
                 'nodejs/analysis-trace-mtx',
                 'nodejs/tx-profile'
@@ -861,9 +861,9 @@ const sidebars = {
                 'python/analysis-apm',
                 'python/cube',
                 {
-                  type: 'link',
+                  type: 'ref',
                   label: '히트맵',
-                  href: '/python/trs-profile'
+                  id: 'python/trs-profile'
                 },
                 'python/analysis-trace-mtx',
                 'python/tx-profile'
@@ -1080,9 +1080,9 @@ const sidebars = {
                 'dotnet/analysis-apm',
                 'dotnet/cube',
                 {
-                  type: 'link',
+                  type: 'ref',
                   label: '히트맵',
-                  href: '/dotnet/trs-profile'
+                  id: 'dotnet/trs-profile'
                 },
                 'dotnet/analysis-trace-mtx',
                 'dotnet/tx-profile'
@@ -1291,9 +1291,9 @@ const sidebars = {
                 'golang/metrics-search',
                 'golang/cube',
                 {
-                  type: 'link',
+                  type: 'ref',
                   label: '히트맵',
-                  href: '/golang/trs-profile'
+                  id: 'golang/trs-profile'
                 },
                 'golang/analysis-trace-mtx',
                 'golang/tx-profile'
