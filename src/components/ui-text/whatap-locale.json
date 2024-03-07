@@ -53165,49 +53165,49 @@
     "service_id": "DSC07713"
   },
   "DSC07714": {
-    "en": "와탭이 제안하는 Pod 시작 성능 분석 기능을 통해 <b>Pod에 할당된 리소스 크기를 최적화</b>하세요. 분석이 필요한 Pod를 선택하면 해당 Pod 시작 후 약 5분 동안의 변화를 추적합니다. <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span></b>의 3단계 구간별 자원 사용량 분석을 통해 리소스 할당량을 최적화함과 동시에 안정적으로 클러스터를 운영할 수 있습니다.",
+    "en": "<b>Set appropriate resource requests and limits</b> with analytics data from pod initiation performance suggested by WhaTap. Analysis of the selected pod will take place for 5 minutes after initiation. Understand resource usage that are diveded by <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span></b> segments so you can use resources efficiently and keep your cluster running stable.",
     "ja": "WhaTap Monitoringで提示されたPod起動時の性能データを参考にし、<b>適切なリソースリクエストと制限が設定</b>できます。起動時の性能を把握したいPodを選択すると、該当のPodが起動してから5分間の起動時の性能を分析します。<b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span> </b>に分けられた区間別リソース使用量を把握して効率的にリソースを使用し、安定的なクラスタ運用が実現できます。",
     "ko": "와탭이 제안하는 Pod 시작 성능 분석 데이터를 통해 <b>적절한 리소스 요청 및 제한을 설정</b>하세요. 시작 분석을 원하는 Pod를 선택하면 해당 Pod가 시작된 후 약 5분 동안의 시작 성능을 분석합니다. <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span></b>으로 나뉘어진 구간별 자원 사용량을 파악하여 효율적으로 자원을 사용하고, 안정적으로 클러스터를 운영할 수 있습니다.",
     "zh": "Use the pod start performance analysis data suggested by Watap to <b>set appropriate resource requests and limits</b>. When you select a Pod for which you want to analyze startup, we will analyze the startup performance <b>about 5 minutes</b> after that Pod starts. You can understand the resource usage for each section, which is divided into <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span> </b>, use resources efficiently, and operate the cluster stably.",
     "service_id": "DSC07714"
   },
   "DSC07715": {
-    "en": "Check the resource usage immediately after container execution in the Running section of the analysis results, and the stabilized container resource usage in the Stable Running section.",
+    "en": "appropriate resource requests and limits.",
     "ja": "分析結果のRunning区間ではコンテナ実行直後のリソース使用量を、Stable Running区間では安定化したコンテナリソース使用量が確認できます。",
     "ko": "분석 결과의 Running 구간에서 컨테이너 실행 직후 자원 사용량을, Stable Running 구간에서 안정화된 컨테이너 자원 사용량을 확인해보세요.",
     "zh": "When you select a Pod for which you want to analyze startup, we will analyze the startup performance <b>about 5 minutes</b> after that Pod starts. Check the resource usage immediately after container execution in the Running section of the analysis results, and the stabilized container resource usage in the Stable Running section.",
     "service_id": "DSC07715"
   },
   "DSC07716": {
-    "en": "*Because the Pod startup performance feature uses data from the most recent {days} days, the startup performance of Pods older than {days} days from creation date cannot be analyzed.",
+    "en": "* Pod initiation performance feature uses data from the last {days} days. Therefore, the initiation performance of pods older than {days} days from creation date cannot be analyzed.",
     "ja": "*Pod起動時のデータは、Pod生成日から{days}日間保存されます。 Pod生成日から{days}日が経過したPod起動時の性能を把握できません。",
     "ko": "*Pod 시작 성능 기능은 최근 {days}일 데이터를 이용하기 때문에 생성일로부터 {days}일이 지난 Pod의 시작 성능은 분석할 수 없습니다.",
     "zh": "*Because the Pod startup performance feature uses data from the most recent {days} days, the startup performance of Pods older than {days} days from creation date cannot be analyzed.",
     "service_id": "DSC07716"
   },
   "BTN07717": {
-    "en": "Show only pods created within {days} days",
+    "en": "Show Pods Created within {days} Days",
     "ja": "{days}日以内に生成されたPodのみを表示",
     "ko": "{days}일 이내 생성된 Pod만 표시",
     "zh": "Show only pods created within {days} days",
     "service_id": "BTN07717"
   },
   "BTN07718": {
-    "en": "fold it up",
+    "en": "Collapse",
     "ja": "折りたたむ",
     "ko": "접어두기",
     "zh": "fold it up",
     "service_id": "BTN07718"
   },
   "TTL07719": {
-    "en": "Segment start time",
+    "en": "Start time of segment",
     "ja": "区間開始時刻",
     "ko": "구간 시작 시각",
     "zh": "Segment start time",
     "service_id": "TTL07719"
   },
   "TTL07720": {
-    "en": "Average CPU Usage",
+    "en": "Average CPU usage",
     "ja": "平均CPU使用率",
     "ko": "평균 CPU 사용량",
     "zh": "Average CPU Usage",
@@ -53235,21 +53235,21 @@
     "service_id": "DSC07723"
   },
   "BTN07724": {
-    "en": "Pod Startup Analysis Guide",
+    "en": "Pod Initiation Analysis Guide",
     "ja": "Pod起動時の性能分析ガイド",
     "ko": "Pod 시작 분석 안내",
     "zh": "Pod Startup Analysis Guide",
     "service_id": "BTN07724"
   },
   "DSC07725": {
-    "en": "After Pod creation, the Pending state persists for more than 5 minutes, so there is no container information available for analysis.",
+    "en": "Pods have been in Pending status for more than 5 minutes after creation, so there is no analyzable container information.",
     "ja": "Podの生成からPending状態が5分以上続いたため、分析できるコンテナ情報がありません。",
     "ko": "Pod 생성 후 Pending 상태가 5분 이상 지속되어 분석 가능한 컨테이너 정보가 없습니다.",
     "zh": "After Pod creation, the Pending state persists for more than 5 minutes, so there is no container information available for analysis.",
     "service_id": "DSC07725"
   },
   "DSC07726": {
-    "en": "Analyzing Pod startup performance...",
+    "en": "Analyzing pod initiation performance...",
     "ja": "Podの起動時の性能を分析しています...",
     "ko": "Pod 시작 성능을 분석 중입니다...",
     "zh": "Analyzing Pod startup performance...",
@@ -53263,7 +53263,7 @@
     "service_id": "TTL07727"
   },
   "DSC07728": {
-    "en": "You can set the language of warning notification messages that occur in your project\n.",
+    "en": "You can set the language of warning messages that occur in your project\n.",
     "ja": "プロジェクトで発生するアラート通知の言語が指定できます。",
     "ko": "프로젝트에서 발생하는 경고 알림 메시지의 언어를 설정할 수 있습니다.",
     "zh": "You can set the language of warning notification messages that occur in your project\n.",
@@ -53298,7 +53298,7 @@
     "service_id": "DSC07732"
   },
   "LNK07733": {
-    "en": "Check agent version",
+    "en": "Agent version check",
     "ja": "エージェントバージョンの確認",
     "ko": "에이전트 버전 확인",
     "zh": "Check agent version",
@@ -53312,7 +53312,7 @@
     "service_id": "DSC07734"
   },
   "DSC07735": {
-    "en": "You can specify tags for project members and 3rd-party plugins in the event reception settings menu.\n",
+    "en": "You can tag project members and 3rd-party plugins separately in the event settings menu.",
     "ja": "イベント受信設定メニューでは、プロジェクトメンバーとサードパーティープラグインに、それぞれタグを付けることができます。",
     "ko": "이벤트 수신 설정 메뉴에서 프로젝트 멤버와 3rd-party 플러그인에 각각 태그를 지정할 수 있습니다.",
     "zh": "You can specify tags for project members and 3rd-party plugins in the event reception settings menu.\n",
@@ -53355,16 +53355,16 @@
   },
   "TTL07741": {
     "en": "Before running GC",
-    "ja": "GC実行前の使用法",
-    "ko": "GC 실행 전 사용량",
-    "zh": "Usage before running GC",
+    "ja": "GCを実行する前に",
+    "ko": "GC 실행 전",
+    "zh": "Before running GC",
     "service_id": "TTL07741"
   },
   "TTL07742": {
     "en": "After running GC",
-    "ja": "GC実行後の使用",
-    "ko": "GC 실행 후 사용량",
-    "zh": "Usage after running GC",
+    "ja": "GC実行後",
+    "ko": "GC 실행 후",
+    "zh": "After running GC",
     "service_id": "TTL07742"
   },
   "": {
