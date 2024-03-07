@@ -1408,7 +1408,7 @@
     "description": "The label for category 로그 in sidebar mysqlSidebar"
   },
   "sidebar.npmsidebar.category.Network 모니터링": {
-    "message": "Networkモニタリング",
+    "message": "Network性能モニタリング",
     "description": "The label for category Network 모니터링 in sidebar npmsidebar"
   },
   "sidebar.learningSidebar.category.성능 장애 유형": {
