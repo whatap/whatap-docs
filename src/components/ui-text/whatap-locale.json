@@ -53333,11 +53333,39 @@
     "service_id": "DSC07737"
   },
   "CNT07738": {
-    "en": "You cannot currently cancel your membership.\n",
+    "en": "You cannot unsbscribe now.\n",
     "ja": "現在会員退会できません。\n",
     "ko": "현재 회원 탈퇴할 수 없습니다.",
     "zh": "You cannot currently cancel your membership.",
     "service_id": "CNT07738"
+  },
+  "DSC07739": {
+    "en": "Click Run GC to clean up invalid memory (Garbage).",
+    "ja": "無効なメモリ（Garbage）をクリーンアップするには、[Run GC]ボタンをクリックします。",
+    "ko": "GC 실행 버튼을 클릭하면 유효하지 않은 메모리 (Garbage)를 정리합니다.",
+    "zh": "Click the Run GC button to clean up invalid memory (Garbage).",
+    "service_id": "DSC07739"
+  },
+  "BTN07740": {
+    "en": "Run GC",
+    "ja": "ランGC",
+    "ko": "GC 실행",
+    "zh": "Run GC",
+    "service_id": "BTN07740"
+  },
+  "TTL07741": {
+    "en": "Before running GC",
+    "ja": "GC実行前の使用法",
+    "ko": "GC 실행 전 사용량",
+    "zh": "Usage before running GC",
+    "service_id": "TTL07741"
+  },
+  "TTL07742": {
+    "en": "After running GC",
+    "ja": "GC実行後の使用",
+    "ko": "GC 실행 후 사용량",
+    "zh": "Usage after running GC",
+    "service_id": "TTL07742"
   },
   "": {
     "": "",
@@ -53579,5 +53607,10 @@
     "en": "Performance Trend",
     "ja": "性能推移",
     "ko": "성능 추이"
+  },
+  "podInitPerf": {
+    "en": "Pod Startup Analysis",
+    "ja": "Pod起動分析",
+    "ko": "Pod 시작 분석"
   }
 }
