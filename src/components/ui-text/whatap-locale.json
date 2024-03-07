@@ -32328,7 +32328,7 @@
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
     "ja": "15日間無料体験できます。{br}以降、自動的に有料転換されます。",
-    "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
+    "ko": "15일간 무료 체험이 가능합니다. {br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
   },
@@ -44135,7 +44135,7 @@
     "service_id": "DSC06400"
   },
   "TTL06401": {
-    "en": "CPU \busage time",
+    "en": "CPU usage time",
     "ja": "CPU使用時間",
     "ko": "CPU 사용 시간",
     "zh": "CPU \bUsage Time",
@@ -44653,14 +44653,14 @@
     "service_id": "TTL06474"
   },
   "TTL06477": {
-    "en": "CPU \baccumulation",
+    "en": "CPU accumulation",
     "ja": "CPU累積",
     "ko": "CPU 누적",
     "zh": "CPU \bAccumulation",
     "service_id": "TTL06477"
   },
   "TTL06478": {
-    "en": "Memory \baccumulation",
+    "en": "Memory accumulation",
     "ja": "メモリ蓄積",
     "ko": "메모리 누적",
     "zh": "Memory \bAccumulation",
@@ -48230,10 +48230,10 @@
     "service_id": "DSC07002"
   },
   "DSC07003": {
-    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
+    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。 <br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
-    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
+    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
   },
   "BTN07004": {
@@ -51417,7 +51417,7 @@
   "TTL07463": {
     "en": "Do you want to delete the project?",
     "ja": "プロジェクトを削除しますか？",
-    "ko": "프로젝트를삭제하시겠습니까?",
+    "ko": "프로젝트를 삭제하시겠습니까?",
     "zh": "Do you want to delete the project?\n",
     "service_id": "TTL07463"
   },
@@ -53165,21 +53165,21 @@
     "service_id": "DSC07713"
   },
   "DSC07714": {
-    "en": "와탭이 제안하는 Pod 시작 성능 분석 기능을 통해 <b>Pod에 할당된 리소스 크기를 최적화</b>하세요. 분석이 필요한 Pod를 선택하면 해당 Pod 시작 후 약 5분 동안의 변화를 추적합니다. <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span></b>의 3단계 구간별 자원 사용량 분석을 통해 리소스 할당량을 최적화함과 동시에 안정적으로 클러스터를 운영할 수 있습니다.",
+    "en": "<b>Set appropriate resource requests and limits</b> with analytics data from pod initiation performance suggested by WhaTap. Analysis of the selected pod will take place for 5 minutes after initiation. Understand resource usage that are diveded by <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span></b> segments so you can use resources efficiently and keep your cluster running stable.",
     "ja": "WhaTap Monitoringで提示されたPod起動時の性能データを参考にし、<b>適切なリソースリクエストと制限が設定</b>できます。起動時の性能を把握したいPodを選択すると、該当のPodが起動してから5分間の起動時の性能を分析します。<b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span> </b>に分けられた区間別リソース使用量を把握して効率的にリソースを使用し、安定的なクラスタ運用が実現できます。",
     "ko": "와탭이 제안하는 Pod 시작 성능 분석 데이터를 통해 <b>적절한 리소스 요청 및 제한을 설정</b>하세요. 시작 분석을 원하는 Pod를 선택하면 해당 Pod가 시작된 후 약 5분 동안의 시작 성능을 분석합니다. <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span></b>으로 나뉘어진 구간별 자원 사용량을 파악하여 효율적으로 자원을 사용하고, 안정적으로 클러스터를 운영할 수 있습니다.",
     "zh": "Use the pod start performance analysis data suggested by Watap to <b>set appropriate resource requests and limits</b>. When you select a Pod for which you want to analyze startup, we will analyze the startup performance <b>about 5 minutes</b> after that Pod starts. You can understand the resource usage for each section, which is divided into <b>Pending &gt; Running &gt; <span style=\"display:inline-block\">Stable Running</span> </b>, use resources efficiently, and operate the cluster stably.",
     "service_id": "DSC07714"
   },
   "DSC07715": {
-    "en": "Check the resource usage immediately after container execution in the Running section of the analysis results, and the stabilized container resource usage in the Stable Running section.",
+    "en": "appropriate resource requests and limits.",
     "ja": "分析結果のRunning区間ではコンテナ実行直後のリソース使用量を、Stable Running区間では安定化したコンテナリソース使用量が確認できます。",
     "ko": "분석 결과의 Running 구간에서 컨테이너 실행 직후 자원 사용량을, Stable Running 구간에서 안정화된 컨테이너 자원 사용량을 확인해보세요.",
     "zh": "When you select a Pod for which you want to analyze startup, we will analyze the startup performance <b>about 5 minutes</b> after that Pod starts. Check the resource usage immediately after container execution in the Running section of the analysis results, and the stabilized container resource usage in the Stable Running section.",
     "service_id": "DSC07715"
   },
   "DSC07716": {
-    "en": "* Pod initiation performance feature uses data from the last {days} days. Therefore, the initiation performance of Pods older than {days} days from creation date cannot be analyzed.",
+    "en": "* Pod initiation performance feature uses data from the last {days} days. Therefore, the initiation performance of pods older than {days} days from creation date cannot be analyzed.",
     "ja": "*Pod起動時のデータは、Pod生成日から{days}日間保存されます。 Pod生成日から{days}日が経過したPod起動時の性能を把握できません。",
     "ko": "*Pod 시작 성능 기능은 최근 {days}일 데이터를 이용하기 때문에 생성일로부터 {days}일이 지난 Pod의 시작 성능은 분석할 수 없습니다.",
     "zh": "*Because the Pod startup performance feature uses data from the most recent {days} days, the startup performance of Pods older than {days} days from creation date cannot be analyzed.",
@@ -53354,32 +53354,18 @@
     "service_id": "BTN07740"
   },
   "TTL07741": {
-    "en": "Usage before running GC",
-    "ja": "GC実行前の使用法",
-    "ko": "GC 실행 전 사용량",
-    "zh": "Usage before running GC",
+    "en": "Before running GC",
+    "ja": "GCを実行する前に",
+    "ko": "GC 실행 전",
+    "zh": "Before running GC",
     "service_id": "TTL07741"
   },
   "TTL07742": {
-    "en": "Usage after running GC",
-    "ja": "GC実行後の使用",
-    "ko": "GC 실행 후 사용량",
-    "zh": "Usage after running GC",
+    "en": "After running GC",
+    "ja": "GC実行後",
+    "ko": "GC 실행 후",
+    "zh": "After running GC",
     "service_id": "TTL07742"
-  },
-  "TTL07743": {
-    "en": "Total usage before running GC",
-    "ja": "GC実行前の総使用量",
-    "ko": "GC 실행 전 전체 사용량",
-    "zh": "Total usage before running GC",
-    "service_id": "TTL07743"
-  },
-  "TTL07744": {
-    "en": "Total usage after running GC",
-    "ja": "GC実行後の総使用量",
-    "ko": "GC 실행 후 전체 사용량",
-    "zh": "Total usage after running GC",
-    "service_id": "TTL07744"
   },
   "": {
     "": "",
