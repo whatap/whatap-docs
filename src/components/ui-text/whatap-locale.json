@@ -17724,7 +17724,7 @@
     "service_id": "_02601"
   },
   "tx_search": {
-    "en": "Transaction search",
+    "en": "Transaction Search",
     "ja": "TX検索",
     "ko": "트랜잭션 검색",
     "zh": "事务搜索",
@@ -44135,7 +44135,7 @@
     "service_id": "DSC06400"
   },
   "TTL06401": {
-    "en": "CPU \busage time",
+    "en": "CPU usage time",
     "ja": "CPU使用時間",
     "ko": "CPU 사용 시간",
     "zh": "CPU \bUsage Time",
@@ -44653,14 +44653,14 @@
     "service_id": "TTL06474"
   },
   "TTL06477": {
-    "en": "CPU \baccumulation",
+    "en": "CPU accumulation",
     "ja": "CPU累積",
     "ko": "CPU 누적",
     "zh": "CPU \bAccumulation",
     "service_id": "TTL06477"
   },
   "TTL06478": {
-    "en": "Memory \baccumulation",
+    "en": "Memory accumulation",
     "ja": "メモリ蓄積",
     "ko": "메모리 누적",
     "zh": "Memory \bAccumulation",
@@ -53319,10 +53319,10 @@
     "service_id": "DSC07735"
   },
   "TTL07736": {
-    "en": "Session analysis",
-    "ja": "セッション分析",
-    "ko": "세션 분석",
-    "zh": "Session analysis",
+    "en": "User session analysis",
+    "ja": "ユーザーセッション分析",
+    "ko": "사용자 세션 분석",
+    "zh": "User session analysis",
     "service_id": "TTL07736"
   },
   "DSC07737": {
@@ -53366,6 +53366,20 @@
     "ko": "GC 실행 후",
     "zh": "After running GC",
     "service_id": "TTL07742"
+  },
+  "TTL07745": {
+    "en": "User session information",
+    "ja": "ユーザーセッション情報",
+    "ko": "사용자 세션 정보",
+    "zh": "User session information",
+    "service_id": "TTL07745"
+  },
+  "TTL07746": {
+    "en": "User session flow",
+    "ja": "ユーザーセッションフロー",
+    "ko": "사용자 세션 플로우",
+    "zh": "User session flow",
+    "service_id": "TTL07746"
   },
   "": {
     "": "",
@@ -53612,5 +53626,10 @@
     "en": "Pod Startup Analysis",
     "ja": "Pod起動分析",
     "ko": "Pod 시작 분석"
+  },
+  "appDashboard": {
+    "en": "Application Dashboard",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션 대시보드"
   }
 }
