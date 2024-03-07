@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[61769],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[28031],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 85526:
+/***/ 29794:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -315,22 +315,22 @@ const frontMatter = {
         '로그 모니터링',
         '로그',
         '로그 검색',
-        'UI',
-        'MySQL'
-    ]
+        'UI'
+    ],
+    toc_max_heading_level: 3
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/log-search",
-    "id": "mysql/log-search",
+    "unversionedId": "log/log-search",
+    "id": "log/log-search",
     "title": "로그 검색",
     "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-    "source": "@site/docs/mysql/log-search.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/log-search",
-    "permalink": "/whatap-docs/mysql/log-search",
+    "source": "@site/docs/log/log-search.mdx",
+    "sourceDirName": "log",
+    "slug": "/log/log-search",
+    "permalink": "/whatap-docs/log/log-search",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/log-search.mdx",
+    "editUrl": "undefined/docs/log/log-search.mdx",
     "tags": [
         {
             "label": "로그 모니터링",
@@ -347,10 +347,6 @@ const metadata = {
         {
             "label": "UI",
             "permalink": "/whatap-docs/tags/ui"
-        },
-        {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
         }
     ],
     "version": "current",
@@ -362,18 +358,18 @@ const metadata = {
             "로그 모니터링",
             "로그",
             "로그 검색",
-            "UI",
-            "MySQL"
-        ]
+            "UI"
+        ],
+        "toc_max_heading_level": 3
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "logSidebar",
     "previous": {
         "title": "로그 트렌드",
-        "permalink": "/whatap-docs/mysql/log-exp"
+        "permalink": "/whatap-docs/log/log-exp"
     },
     "next": {
-        "title": "로그 설정",
-        "permalink": "/whatap-docs/mysql/log-setting"
+        "title": "알림 설정하기",
+        "permalink": "/whatap-docs/log/set-notice"
     }
 };
 const assets = {};
@@ -542,7 +538,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "li"
-    }, `Search Key`), `: 로그 Parser 설정을 통해 생성합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `Search Key`), `: 로그 파서 설정을 통해 생성합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "li"
@@ -1042,7 +1038,7 @@ weaving=logback-1.2.8
         parentName: "li"
     }, `파서 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "/whatap-docs/mysql/log-parser"
+        "href": "/whatap-docs/log/log-parser"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "필터-수정"
     }, `필터 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `필터에 값을 입력한 뒤 입력한 값을 클릭하면 해당 값을 수정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
@@ -1061,7 +1057,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `가이드 UI`), `를 통해 추천 값을 선택해 수정할 수 있습니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "검색-키search-key"
-    }, `검색 키(Search Key)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `왼쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }, `검색 키(Search Key)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `검색 키는 로그 데이터 내에서 원하는 특정 값에 접근하기 위한 식별자를 의미합니다. 검색 키에 해당하는 실제 데이터가 검색 값입니다. 왼쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "number-s",
         src: (__webpack_require__(29675)/* ["default"] */ .A),
         width: "35",
@@ -1096,7 +1092,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `로그 Parser 설정`)), `에서 파싱 로직을 등록해 설정할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+    }, `로그 파서 설정`)), ` 탭에서 파싱 로직을 등록해 설정할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
         product: "aws-log",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `예를 들어 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
@@ -1122,13 +1118,15 @@ weaving=logback-1.2.8
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `로그 Parser 설정`)), `에서 파싱 로직을 등록해 설정할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }, `로그 파서 설정`)), `에서 파싱 로직을 등록해 설정할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "filter-expressions"
-    }, `필터 입력 문법`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `태그는 검색 키와 검색 값으로 구성되어있습니다. 예시로 다음과 같은 경우 검색 키는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `필터 입력 문법`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `태그는 검색 키와 검색 값으로 구성되어있습니다. 다음의 예시에서 검색 키는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `exception`), `, 검색 값은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `UnknownHostException`), ` 입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }, `UnknownHostException`), ` 입니다. 해당 예시는 수집한 로그 데이터 중 IP 주소와 도메인 주소가 매칭되지 않아 서버를 호스트에 연결할 수 없을 경우 발생하는 예외(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `UnknowHostException`), `)가 포함된 로그 데이터를 조회합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "태그 구성",
         src: (__webpack_require__(26146)/* ["default"] */ .A),
         width: "348",
