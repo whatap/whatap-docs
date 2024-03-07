@@ -166,9 +166,15 @@ const sidebars = {
                 'java/analysis-apm',
                 'java/cube',
                 {
+<<<<<<< HEAD
                   type: 'ref',
                   label: '히트맵',
                   id: 'java/trs-profile'
+=======
+                  type: 'link',
+                  label: '히트맵',
+                  href: '/java/trs-profile'
+>>>>>>> main
                 },
                 'java/analysis-trace-mtx',
                 'java/tx-profile'
@@ -411,9 +417,15 @@ const sidebars = {
                 'php/performance-trend',
                 'php/cube',
                 {
+<<<<<<< HEAD
                   type: 'ref',
                   label: '히트맵',
                   id: 'php/trs-profile'
+=======
+                  type: 'link',
+                  label: '히트맵',
+                  href: '/php/trs-profile'
+>>>>>>> main
                 },
                 'php/analysis-trace-mtx',
                 'php/tx-profile'
@@ -636,9 +648,15 @@ const sidebars = {
                 'nodejs/performance-trend',
                 'nodejs/cube',
                 {
+<<<<<<< HEAD
                   type: 'ref',
                   label: '히트맵',
                   id: 'nodejs/trs-profile'
+=======
+                  type: 'link',
+                  label: '히트맵',
+                  href: '/nodejs/trs-profile'
+>>>>>>> main
                 },
                 'nodejs/analysis-trace-mtx',
                 'nodejs/tx-profile'
@@ -859,9 +877,15 @@ const sidebars = {
                 'python/analysis-apm',
                 'python/cube',
                 {
+<<<<<<< HEAD
                   type: 'ref',
                   label: '히트맵',
                   id: 'python/trs-profile'
+=======
+                  type: 'link',
+                  label: '히트맵',
+                  href: '/python/trs-profile'
+>>>>>>> main
                 },
                 'python/analysis-trace-mtx',
                 'python/tx-profile'
@@ -1078,9 +1102,15 @@ const sidebars = {
                 'dotnet/analysis-apm',
                 'dotnet/cube',
                 {
+<<<<<<< HEAD
                   type: 'ref',
                   label: '히트맵',
                   id: 'dotnet/trs-profile'
+=======
+                  type: 'link',
+                  label: '히트맵',
+                  href: '/dotnet/trs-profile'
+>>>>>>> main
                 },
                 'dotnet/analysis-trace-mtx',
                 'dotnet/tx-profile'
@@ -1289,9 +1319,15 @@ const sidebars = {
                 'golang/performance-trend',
                 'golang/cube',
                 {
+<<<<<<< HEAD
                   type: 'ref',
                   label: '히트맵',
                   id: 'golang/trs-profile'
+=======
+                  type: 'link',
+                  label: '히트맵',
+                  href: '/golang/trs-profile'
+>>>>>>> main
                 },
                 'golang/analysis-trace-mtx',
                 'golang/tx-profile'
@@ -3397,17 +3433,18 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_5_2',
+                id: 'release-notes/server/server-2_5_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_5_2',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2_5_3',
+                  className: 'new',
                 },
+                'release-notes/server/server-2_5_2',
                 'release-notes/server/server-2_5_1',
                 'release-notes/server/server-2_5_0',
                 'release-notes/server/server-2_4_9',
@@ -3417,7 +3454,6 @@ const sidebars = {
                 'release-notes/server/server-2_4_5',
                 'release-notes/server/server-2_4_4',
                 'release-notes/server/server-2_4_3',
-                'release-notes/server/server-2_4_2',
                 'release-notes/server/server-previous',
               ],
             },
