@@ -6,7 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "cross-env docusaurus start",
     "build": "cross-env docusaurus build",
-    "swizzle": "docusaurus swizzle",
+    "swizzle": "cross-env docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "cross-env docusaurus serve",

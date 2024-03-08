@@ -48,7 +48,7 @@ function colsToJson(data){
         if (!value || value.length < 1) {
           rd[headerName][row[j]] = row[defaultCol];
         } else {
-          rd[headerName][lang] = value;
+          rd[headerName][lang] = value.replace(/\u2028/gm, '');
         }
       }
     }

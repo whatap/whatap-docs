@@ -53631,5 +53631,1563 @@
     "en": "Pod Startup Analysis",
     "ja": "Pod起動分析",
     "ko": "Pod 시작 분석"
+  },
+  "side_common": {
+    "en": "Common",
+    "ja": "Common",
+    "ko": "Common"
+  },
+  "side_application": {
+    "en": "Application",
+    "ja": "Application",
+    "ko": "Application"
+  },
+  "side_server": {
+    "en": "Server",
+    "ja": "Server",
+    "ko": "Server"
+  },
+  "side_database": {
+    "en": "Database",
+    "ja": "Database",
+    "ko": "Database"
+  },
+  "side_projectList": {
+    "en": "Project List",
+    "ja": "プロジェクトリスト",
+    "ko": "프로젝트 목록"
+  },
+  "side_projectIntegration": {
+    "en": "Project Integration",
+    "ja": "プロジェクト統合",
+    "ko": "프로젝트 인티그레이션"
+  },
+  "side_groupMember": {
+    "en": "Group Member",
+    "ja": "グループメンバー",
+    "ko": "그룹 멤버"
+  },
+  "side_groupManagement": {
+    "en": "Group Management",
+    "ja": "グループ管理",
+    "ko": "그룹 관리"
+  },
+  "side_integration": {
+    "en": "Integration",
+    "ja": "統合",
+    "ko": "통합"
+  },
+  "side_dashboard": {
+    "en": "Dashboard",
+    "ja": "ダッシューボード",
+    "ko": "대시보드"
+  },
+  "side_flexboard": {
+    "en": "Flex Board",
+    "ja": "Flexボード",
+    "ko": "Flex 보드"
+  },
+  "side_integratedFlexboard": {
+    "en": "Integrated Flex Board",
+    "ja": "統合Flexボード",
+    "ko": "통합 Flex 보드"
+  },
+  "side_resource": {
+    "en": "Resource",
+    "ja": "リソース",
+    "ko": "리소스"
+  },
+  "side_serverDetail": {
+    "en": "Server Detail",
+    "ja": "サーバー 詳細",
+    "ko": "서버 상세"
+  },
+  "side_nodeDetail": {
+    "en": "Node Detail",
+    "ja": "ノード詳細",
+    "ko": "노드 상세"
+  },
+  "side_appDashboard": {
+    "en": "Application Dashboard",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션 대시보드"
+  },
+  "side_appDashboardV2": {
+    "en": "Application Dashboard",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션 대시보드"
+  },
+  "side_iisDashboard": {
+    "en": "IIS Perf. Count",
+    "ja": "IIS性能カウント",
+    "ko": "IIS 성능 카운트"
+  },
+  "side_metrics": {
+    "en": "Metrics",
+    "ja": "メトリックス",
+    "ko": "메트릭스"
+  },
+  "side_metricsList": {
+    "en": "Metrics List",
+    "ja": "メトリクスリスト",
+    "ko": "메트릭스 리스트"
+  },
+  "side_metricsCube": {
+    "en": "Metrics Cube",
+    "ja": "メトリックスキューブ",
+    "ko": "메트릭스 큐브"
+  },
+  "side_appCube": {
+    "en": "Cube",
+    "ja": "キューブ",
+    "ko": "큐브"
+  },
+  "side_containerAppCube": {
+    "en": "Application Cube",
+    "ja": "アプリケーションキューブ",
+    "ko": "애플리케이션 큐브"
+  },
+  "side_stack": {
+    "en": "Stack",
+    "ja": "スタック",
+    "ko": "스택"
+  },
+  "side_kubeAppStack": {
+    "en": "Application Stack",
+    "ja": "アプリケーションスタック",
+    "ko": "애플리케이션 스택"
+  },
+  "side_topStack": {
+    "en": "TopStack",
+    "ja": "トップスタック",
+    "ko": "탑스택"
+  },
+  "side_uniqueStack": {
+    "en": "UniqueStack",
+    "ja": "ユニークスタック",
+    "ko": "유니크스택"
+  },
+  "side_activeStack": {
+    "en": "ActiveStack",
+    "ja": "アクティブスタック",
+    "ko": "액티브스택"
+  },
+  "side_msa": {
+    "en": "MSA Analysis",
+    "ja": "MSA分析",
+    "ko": "MSA 분석"
+  },
+  "side_multi_active_tx": {
+    "en": "Active Transaction",
+    "ja": "アクティブTX",
+    "ko": "액티브 트랜잭션"
+  },
+  "side_multi_server_tx_trace": {
+    "en": "Multiple Transaction Trace",
+    "ja": "マルチTX",
+    "ko": "멀티 트랜잭션 추적"
+  },
+  "side_lab": {
+    "en": "Laboratory",
+    "ja": "実験室",
+    "ko": "실험실"
+  },
+  "side_statistics": {
+    "en": "Statistics",
+    "ja": "統計",
+    "ko": "통계"
+  },
+  "side_tx": {
+    "en": "Transaction",
+    "ja": "トランザクション",
+    "ko": "트랜잭션"
+  },
+  "side_txStat": {
+    "en": "Transaction Statistics",
+    "ja": "トランザクション統計",
+    "ko": "트랜잭션 통계"
+  },
+  "side_statDomain": {
+    "en": "Transaction Domain",
+    "ja": "トランザクションドメイン",
+    "ko": "트랜잭션 도메인"
+  },
+  "side_statCaller": {
+    "en": "Transaction Caller",
+    "ja": "トランザクションCaller",
+    "ko": "트랜잭션 Caller"
+  },
+  "side_statLogin": {
+    "en": "Login Transaction",
+    "ja": "ログイントランザクション",
+    "ko": "로그인 트랜잭션"
+  },
+  "side_statReferer": {
+    "en": "Transaction Referrer",
+    "ja": "トランザクションリファラー",
+    "ko": "트랜잭션 리퍼러"
+  },
+  "side_statError": {
+    "en": "Error",
+    "ja": "エラー",
+    "ko": "에러"
+  },
+  "side_statSql": {
+    "en": "SQL",
+    "ja": "SQL",
+    "ko": "SQL"
+  },
+  "side_statHttpc": {
+    "en": "Remote HTTP Call",
+    "ja": "リモートHTTP呼出",
+    "ko": "HTTP 호출"
+  },
+  "side_statRemote": {
+    "en": "Client IP",
+    "ja": "クライアントIP",
+    "ko": "클라이언트 IP"
+  },
+  "side_statUseragentDetail": {
+    "en": "User-Agent",
+    "ja": "ユーザーエージェント",
+    "ko": "유저 에이전트"
+  },
+  "side_statUseragent": {
+    "en": "Client Browser",
+    "ja": "クライアントブラウザー",
+    "ko": "클라이언트 브라우저"
+  },
+  "side_fullGC": {
+    "en": "Full GC Log",
+    "ja": "Full GCログ",
+    "ko": "Full GC 로그"
+  },
+  "side_topology": {
+    "en": "Topology",
+    "ja": "トポロジー",
+    "ko": "토폴로지"
+  },
+  "side_appTopology": {
+    "en": "APP. Topology",
+    "ja": "APPトポロジー",
+    "ko": "애플리케이션 토폴로지"
+  },
+  "side_groupTopology": {
+    "en": "Group Topology",
+    "ja": "グループトポロジー",
+    "ko": "그룹 토폴로지"
+  },
+  "side_netstatTopology": {
+    "en": "Netstat Topology",
+    "ja": "Netstatトポロジー",
+    "ko": "Netstat 토폴로지"
+  },
+  "side_instanceTopology": {
+    "en": "Instance Topology",
+    "ja": "インスタンストポロジー",
+    "ko": "인스턴스 토폴로지"
+  },
+  "side_appStatTopology": {
+    "en": "APP. Statistics Topology",
+    "ja": "アプリケーション統計トポロジー",
+    "ko": "애플리케이션 통계 토폴로지"
+  },
+  "side_groupStatTopology": {
+    "en": "Group Statistics Topology",
+    "ja": "グループ統計トポロジー",
+    "ko": "그룹 통계 토폴로지"
+  },
+  "side_instanceStatTopology": {
+    "en": "Instance Statistics Topology",
+    "ja": "インスタンス統計トポロジー",
+    "ko": "인스턴스 통계 토폴로지"
+  },
+  "side_appFixedTopology": {
+    "en": "APP. Fixed Topology",
+    "ja": "アプリケーション固定トポロジー",
+    "ko": "애플리케이션 고정 토폴로지"
+  },
+  "side_containerAppFixedTopology": {
+    "en": "APP. Fixed Topology",
+    "ja": "アプリケーション固定トポロジー",
+    "ko": "애플리케이션 고정 토폴로지"
+  },
+  "side_dbClusterTopology": {
+    "en": "Cluster Topology",
+    "ja": "クラスタートポロジー",
+    "ko": "클러스터 토폴로지"
+  },
+  "side_dbReplicationTopology": {
+    "en": "Replication Topology",
+    "ja": "Replication Topology",
+    "ko": "리플리케이션 토폴로지"
+  },
+  "side_dbClusterList": {
+    "en": "Cluster List",
+    "ja": "クラスターリスト",
+    "ko": "클러스터 목록"
+  },
+  "side_clusterTable": {
+    "en": "Server State Change Trend",
+    "ja": "サーバー状態変更履歴",
+    "ko": "서버 상태 변경 내역"
+  },
+  "side_clusterChart": {
+    "en": "Server State Change History",
+    "ja": "サーバー状態変更推移",
+    "ko": "서버 상태 변경 추이"
+  },
+  "side_podInitPerf": {
+    "en": "Pod Startup Analysis",
+    "ja": "Pod起動分析",
+    "ko": "Pod 시작 분석"
+  },
+  "side_perfTrend": {
+    "en": "Performance Trend",
+    "ja": "性能推移",
+    "ko": "성능 추이"
+  },
+  "side_hitmap": {
+    "en": "Hitmap",
+    "ja": "ヒットマップ",
+    "ko": "히트맵"
+  },
+  "side_kubeAppHitmap": {
+    "en": "Application Hitmap",
+    "ja": "アプリケーションヒットマップ",
+    "ko": "애플리케이션 히트맵"
+  },
+  "side_hitmapAnalysis": {
+    "en": "Hitmap V2",
+    "ja": "ヒットマップ V2",
+    "ko": "히트맵 V2"
+  },
+  "side_customHitmap": {
+    "en": "Custom Hitmap",
+    "ja": "カスタムヒットマップ",
+    "ko": "커스텀 히트맵"
+  },
+  "side_counter": {
+    "en": "Metrics Chart",
+    "ja": "メトリックスチャート",
+    "ko": "메트릭스 차트"
+  },
+  "side_appCounter": {
+    "en": "Application Count Chart",
+    "ja": "性能カウントチャート",
+    "ko": "성능카운트 차트"
+  },
+  "side_counter_anomaly_detection": {
+    "en": "Count Anomaly Detection",
+    "ja": "カウント異常探知",
+    "ko": "카운트 이상 탐지"
+  },
+  "side_oomContainer": {
+    "en": "Out Of Memory Killed Container",
+    "ja": "OOM Killedコンテナ",
+    "ko": "Out Of Memory Killed 컨테이너"
+  },
+  "side_containerCounter": {
+    "en": "Container Perf count Chart",
+    "ja": "コンテナー性能カウントチャート",
+    "ko": "컨테이너 성능카운트 차트"
+  },
+  "side_nodeCounter": {
+    "en": "Node Perf Count Chart",
+    "ja": "ノード性能カウントチャート",
+    "ko": "노드 성능카운트 차트"
+  },
+  "side_txSearch": {
+    "en": "Transaction Search",
+    "ja": "TX検索",
+    "ko": "트랜잭션 검색"
+  },
+  "side_dailyAppStat": {
+    "en": "Daily APP. Status",
+    "ja": "日別APP現況",
+    "ko": "일자별 애플리케이션 현황"
+  },
+  "side_agents": {
+    "en": "Agent List",
+    "ja": "エージェントリスト",
+    "ko": "에이전트 목록"
+  },
+  "side_agentSetting": {
+    "en": "Agent CONF.",
+    "ja": "エージェント設定",
+    "ko": "에이전트 설정"
+  },
+  "side_agentSettingOld": {
+    "en": "Agent CONF.",
+    "ja": "エージェント設定",
+    "ko": "에이전트 설정"
+  },
+  "side_agentsConfiguration": {
+    "en": "Instance Performance Management",
+    "ja": "インスタンス性能管理",
+    "ko": "인스턴스 성능 관리"
+  },
+  "side_kubeAgentsConfiguration": {
+    "en": "Instance Performance Analysis",
+    "ja": "インスタンス性能",
+    "ko": "인스턴스 성능 분석"
+  },
+  "side_serverSetting": {
+    "en": "Server CONF.",
+    "ja": "エージェント設定",
+    "ko": "서버 설정"
+  },
+  "side_serverConfiguration": {
+    "en": "Server ENV. Variable.",
+    "ja": "サーバー環境変数",
+    "ko": "서버 환경 변수"
+  },
+  "side_throttlingConfiguration": {
+    "en": "Throttling CONF.",
+    "ja": "スロットル設定",
+    "ko": "쓰로틀링 설정"
+  },
+  "side_environmentVariable": {
+    "en": "System ENV. Variable",
+    "ja": "環境変数",
+    "ko": "환경변수"
+  },
+  "side_serverEnvironmentVariable": {
+    "en": "EVN. Variable",
+    "ja": "環境変数",
+    "ko": "환경변수"
+  },
+  "side_bootEnvironmentVariable": {
+    "en": "Runtime ENV. Variable",
+    "ja": "実行環境変数",
+    "ko": "실행 환경 변수"
+  },
+  "side_serverBootEnvironmentVariable": {
+    "en": "Runtime ENV. Variable",
+    "ja": "実行環境変数",
+    "ko": "실행 환경 변수"
+  },
+  "side_heapHistogram": {
+    "en": "Heap Histogram",
+    "ja": "ヒープヒストグラム",
+    "ko": "힙 히스토그램"
+  },
+  "side_loadedClasses": {
+    "en": "Loaded Classes",
+    "ja": "ロード済クラス",
+    "ko": "로딩된 클래스"
+  },
+  "side_libraryVersion": {
+    "en": "Library Version",
+    "ja": "ライブラリバージョン",
+    "ko": "라이브러리 버전"
+  },
+  "side_threadList": {
+    "en": "Thread List/Dump",
+    "ja": "スレッドリスト/ダンプ",
+    "ko": "스레드 목록/덤프"
+  },
+  "side_openSocket": {
+    "en": "Opened Socket Count",
+    "ja": "ソケットオプーン数",
+    "ko": "소켓 오픈 개수"
+  },
+  "side_methodStat": {
+    "en": "Method Performance",
+    "ja": "メソッド性能状態",
+    "ko": "메소드 성능 상태"
+  },
+  "side_dataSourceStatus": {
+    "en": "DataSource Status",
+    "ja": "データソース状態",
+    "ko": "데이터소스 상태"
+  },
+  "side_agentLog": {
+    "en": "Agent Log",
+    "ja": "エージェントログ",
+    "ko": "에이전트 로그"
+  },
+  "side_systemGarbageCollection": {
+    "en": "System GC",
+    "ja": "システムGC",
+    "ko": "시스템 GC"
+  },
+  "side_heapDump": {
+    "en": "Heap Dump",
+    "ja": "ヒープダンプ",
+    "ko": "힙 덤프"
+  },
+  "side_moduleDependency": {
+    "en": "Module Dependency",
+    "ja": "モジュール依存性",
+    "ko": "모듈 의존성"
+  },
+  "side_agentStatus": {
+    "en": "Agent Status",
+    "ja": "エージェント状態",
+    "ko": "에이전트 상태"
+  },
+  "side_analysis": {
+    "en": "Analysis",
+    "ja": "分析",
+    "ko": "분석"
+  },
+  "side_reportStat": {
+    "en": "Stat/Report",
+    "ja": "統計/レポート",
+    "ko": "통계/보고서"
+  },
+  "side_report": {
+    "en": "Report",
+    "ja": "レポート",
+    "ko": "보고서"
+  },
+  "side_agentInstall": {
+    "en": "Agent Installation",
+    "ja": "エージェントインストール",
+    "ko": "에이전트 설치"
+  },
+  "side_agentUpdate": {
+    "en": "Agent Update",
+    "ja": "エージェントアップデート",
+    "ko": "에이전트 업데이트"
+  },
+  "side_dbAgentUpdate": {
+    "en": "Agent Update",
+    "ja": "エージェントアップデート",
+    "ko": "에이전트 업데이트"
+  },
+  "side_event": {
+    "en": "Alert",
+    "ja": "アラート通知",
+    "ko": "경고 알림"
+  },
+  "side_serverAlertPolicies": {
+    "en": "Server Alert CONF. List",
+    "ja": "サーバー通知設定リスト",
+    "ko": "서버 알림 설정 목록"
+  },
+  "side_eventSetting": {
+    "en": "Event Configuration",
+    "ja": "イベント設定",
+    "ko": "이벤트 설정"
+  },
+  "side_eventSettingV2": {
+    "en": "Event Configuration",
+    "ja": "イベント設定",
+    "ko": "이벤트 설정"
+  },
+  "side_eventNoti": {
+    "en": "Notifications",
+    "ja": "通知設定",
+    "ko": "이벤트 수신 설정"
+  },
+  "side_eventHistory": {
+    "en": "Event History",
+    "ja": "イベント履歴",
+    "ko": "이벤트 기록"
+  },
+  "side_serverMetricsAlertHistory": {
+    "en": "Metrics Alert History",
+    "ja": "Metrics Alert History",
+    "ko": "메트릭스 알림 기록"
+  },
+  "side_logAlert": {
+    "en": "Log Alert",
+    "ja": "ログ通知",
+    "ko": "로그 알림"
+  },
+  "side_fileLogAlert": {
+    "en": "File Log Alert",
+    "ja": "ファイルログ通知",
+    "ko": "파일 로그 알림"
+  },
+  "side_maintenancePlan": {
+    "en": "Maintenance Plan",
+    "ja": "メンテナンス計画",
+    "ko": "정비 계획"
+  },
+  "side_integratedMaintenancePlan": {
+    "en": "Maintenance Plan",
+    "ja": "メンテナンス計画",
+    "ko": "정비 계획"
+  },
+  "side_management": {
+    "en": "Management",
+    "ja": "管理",
+    "ko": "관리"
+  },
+  "side_accountManagement": {
+    "en": "Account Management",
+    "ja": "アカウント管理",
+    "ko": "계정 정보"
+  },
+  "side_projectManagement": {
+    "en": "Project Management",
+    "ja": "プロジェクト管理",
+    "ko": "프로젝트 관리"
+  },
+  "side_projectMember": {
+    "en": "Project Member",
+    "ja": "プロジェクトメンバー",
+    "ko": "프로젝트 멤버"
+  },
+  "side_userBehavior": {
+    "en": "User Behavior",
+    "ja": "ユーザー行為",
+    "ko": "사용자 행위"
+  },
+  "side_metering": {
+    "en": "Metering",
+    "ja": "メタリング",
+    "ko": "미터링"
+  },
+  "side_ssoIntegrations": {
+    "en": "SSO Integrations",
+    "ja": "SSO連動",
+    "ko": "SSO 연동"
+  },
+  "side_serverDashboard": {
+    "en": "Dashboard",
+    "ja": "ダッシューボード",
+    "ko": "대시보드"
+  },
+  "side_resourceBoard": {
+    "en": "Resource Board",
+    "ja": "リソースボード",
+    "ko": "리소스보드"
+  },
+  "side_compoundEye": {
+    "en": "Compound Eye",
+    "ja": "コンパウンドアイ",
+    "ko": "컴파운드아이"
+  },
+  "side_resourceEqualizer": {
+    "en": "Resource Equalizer",
+    "ja": "リソースイコライザ",
+    "ko": "리소스 이퀄라이저"
+  },
+  "side_serverList": {
+    "en": "Server List",
+    "ja": "サーバーリスト",
+    "ko": "서버 목록"
+  },
+  "side_serverCube": {
+    "en": "Cube",
+    "ja": "キューブ",
+    "ko": "큐브"
+  },
+  "side_availability_with_downcheck": {
+    "ko": "가용성 ( 다운체크 )"
+  },
+  "side_agentLogViewer": {
+    "en": "Agent Log Viewer",
+    "ja": "エージェントログビューア",
+    "ko": "에이전트 로그 뷰어"
+  },
+  "side_logsinkConf": {
+    "en": "logsink.conf Setting",
+    "ja": "logsink.conf設定",
+    "ko": "logsink.conf 설정"
+  },
+  "side_downCheck": {
+    "en": "Downcheck CONF.",
+    "ja": "ダウンチェック設定",
+    "ko": "다운체크 설정"
+  },
+  "side_metricsRebuild": {
+    "en": "Rebuilding Metrics",
+    "ja": "Rebuilding Metrics",
+    "ko": "메트릭스 리빌드"
+  },
+  "side_tagFlex": {
+    "en": "MXQL Data",
+    "ja": "MXQL Data",
+    "ko": "MXQL 데이터 조회"
+  },
+  "side_metricsCategory": {
+    "en": "Metrics",
+    "ja": "メトリックス",
+    "ko": "메트릭스"
+  },
+  "side_metricsBoard": {
+    "en": "Metrics Board",
+    "ja": "メトリックスボード",
+    "ko": "메트릭스 보드"
+  },
+  "side_metricsSearch": {
+    "en": "Metrics Search",
+    "ja": "メトリックス照会",
+    "ko": "메트릭스 조회"
+  },
+  "side_metricsChart": {
+    "en": "Metrics Chart",
+    "ja": "メトリックスチャート",
+    "ko": "메트릭스 차트"
+  },
+  "side_metricsQuery": {
+    "en": "Metrics Query",
+    "ja": "メトリックスクエリー",
+    "ko": "메트릭스 쿼리"
+  },
+  "side_metricsRealtime": {
+    "en": "Metrics Realtime Data",
+    "ja": "メトリックス実時間データ",
+    "ko": "메트릭스 실시간 데이터"
+  },
+  "side_metricsLog": {
+    "en": "Log Metrics Search",
+    "ja": "ログメトリックス照会",
+    "ko": "로그 메트릭스 조회"
+  },
+  "side_metricsML": {
+    "en": "Metrics Anomaly Detection",
+    "ja": "メトリックス異常検出",
+    "ko": "메트릭스 이상 탐지"
+  },
+  "side_metricsAlert": {
+    "en": "Metrics Event",
+    "ja": "メトリックイベント",
+    "ko": "메트릭스 이벤트"
+  },
+  "side_metricsPredefinedBoard": {
+    "en": "Predefined Metrics Board",
+    "ja": "事前定義メトリックスボード",
+    "ko": "사전정의 메트릭스 보드"
+  },
+  "side_metricsUrlMapping": {
+    "en": "URL BIZ. Mapping",
+    "ja": "URLビジネスマッピング",
+    "ko": "URL 비즈니스 매핑"
+  },
+  "side_extension": {
+    "en": "Extension Pack (Will be deprecated)",
+    "ja": "拡張パックモニタリング（廃棄予定）",
+    "ko": "확장팩 모니터링 (폐기 예정)"
+  },
+  "side_extensionLatest": {
+    "en": "Extension Recent Data",
+    "ja": "拡張パック最近データ",
+    "ko": "확장팩 최근데이터"
+  },
+  "side_extensionAlert": {
+    "en": "Extension Alert CONF.",
+    "ja": "拡張パック通知設定",
+    "ko": "확장팩 알림 설정"
+  },
+  "side_extensionWebUrlCheck": {
+    "en": "Extension Web URL Perf Check",
+    "ja": "拡張パックウェブURL性能チェック",
+    "ko": "확장팩 웹URL성능체크"
+  },
+  "side_extensionMySQL": {
+    "en": "Extension MySQL Server List",
+    "ja": "拡張パックMySQLサーバーリスト",
+    "ko": "확장팩 MySQL 서버목록"
+  },
+  "side_extensionRedis": {
+    "en": "Extension Redis Server List",
+    "ja": "拡張パックRedisサーバーリスト",
+    "ko": "확장팩 Redis 서버목록"
+  },
+  "side_extensionMemcached": {
+    "en": "Extension Memcached Server List",
+    "ja": "拡張パックMemcachedサーバーリスト",
+    "ko": "확장팩 Memcached 서버목록"
+  },
+  "side_instanceList": {
+    "en": "Instance List",
+    "ja": "インスタンスリスト",
+    "ko": "인스턴스 목록"
+  },
+  "side_dbMonitoring": {
+    "en": "Monitoring a Database Instance",
+    "ja": "インスタンスモニタリング",
+    "ko": "인스턴스 모니터링"
+  },
+  "side_multiInstance": {
+    "en": "Monitoring Multiple Instances",
+    "ja": "マルチインスタンス",
+    "ko": "멀티 인스턴스 모니터링"
+  },
+  "side_dbTrend": {
+    "en": "Counts Trend",
+    "ja": "カウント推移",
+    "ko": "카운트 추이"
+  },
+  "side_dbLongTrend": {
+    "en": "Counts Long Term Trend",
+    "ja": "カウント長期推移",
+    "ko": "카운트 장기 추이"
+  },
+  "side_dbTrendComparison": {
+    "en": "Counts Trend Comparison",
+    "ja": "カウント推移比較",
+    "ko": "카운트 추이 비교"
+  },
+  "side_dbSqlStat": {
+    "en": "SQL Statistics",
+    "ja": "SQL統計",
+    "ko": "SQL 통계"
+  },
+  "side_pgStat": {
+    "en": "PG SQL Statistics",
+    "ja": "PG SQL統計",
+    "ko": "PG SQL 통계"
+  },
+  "side_mysqlStat": {
+    "en": "MYSQL SQL Statistics",
+    "ja": "MYSQL SQL統計",
+    "ko": "MYSQL SQL 통계"
+  },
+  "side_sessionHistory": {
+    "en": "Session History",
+    "ja": "セッション履歴",
+    "ko": "세션 히스토리"
+  },
+  "side_dbLockTree": {
+    "en": "Lock Tree",
+    "ja": "ロックツリー",
+    "ko": "락 트리"
+  },
+  "side_dbWaitAnalysis": {
+    "en": "Wait analysis",
+    "ja": "Wait分析",
+    "ko": "Wait 분석"
+  },
+  "side_dbObjectInfo": {
+    "en": "Top Object",
+    "ja": "Topオブジェクト",
+    "ko": "Top 오브젝트"
+  },
+  "side_pqTree": {
+    "en": "Parallel Query Tree",
+    "ja": "並列クエリツリー",
+    "ko": "병렬 쿼리 트리"
+  },
+  "side_dbPqTree": {
+    "en": "Parallel Query Tree",
+    "ja": "並列クエリツリー",
+    "ko": "병렬 쿼리 트리"
+  },
+  "side_deadLock": {
+    "en": "Dead Lock",
+    "ja": "デッドロック",
+    "ko": "데드락"
+  },
+  "side_dbParameter": {
+    "en": "Database Parameter",
+    "ja": "パラメータ",
+    "ko": "데이터베이스 파라미터"
+  },
+  "side_logViewer": {
+    "en": "Log File Viewer",
+    "ja": "ログファイルビューア",
+    "ko": "로그 파일 뷰어"
+  },
+  "side_cloudLogViewer": {
+    "en": "Log File Viewer (cloud)",
+    "ja": "ログファイル(クラウド)",
+    "ko": "로그 파일 뷰어 (cloud)"
+  },
+  "side_tableInfo": {
+    "en": "Table Size Increase",
+    "ja": "テーブルサイズ増減",
+    "ko": "테이블 사이즈 증감"
+  },
+  "side_tableSpace": {
+    "en": "Tablespace Size",
+    "ja": "テーブルスペース容量増減",
+    "ko": "테이블스페이스 사이즈"
+  },
+  "side_sga": {
+    "en": "SGA Size",
+    "ja": "SGAサイズ",
+    "ko": "SGA 사이즈"
+  },
+  "side_dbWeeklyMonthlyCount": {
+    "en": "Weekly/Monthly Count",
+    "ja": "週間/月刊カウント",
+    "ko": "주간/월간 카운트"
+  },
+  "side_dbDailyReport": {
+    "en": "Daily Report",
+    "ja": "日間レポート",
+    "ko": "일일 보고서"
+  },
+  "side_dbAgents": {
+    "en": "Agent List",
+    "ja": "エージェントリスト",
+    "ko": "에이전트 목록"
+  },
+  "side_urlCheckRegions": {
+    "en": "URL Check Regions",
+    "ja": "URLチェック地域",
+    "ko": "URL 체크 지역"
+  },
+  "side_urlList": {
+    "en": "URL List",
+    "ja": "URLリスト",
+    "ko": "URL 목록"
+  },
+  "side_urlGridLayout": {
+    "en": "URL Grid Layout",
+    "ja": "URL Grid Layout",
+    "ko": "URL Grid Layout"
+  },
+  "side_containerMap": {
+    "en": "Container Map",
+    "ja": "コンテナマップ",
+    "ko": "컨테이너 맵"
+  },
+  "side_perfSummary": {
+    "en": "Performance Summary",
+    "ja": "性能サマリー",
+    "ko": "퍼포먼스 요약"
+  },
+  "side_clusterOverview": {
+    "en": "Cluster Summary",
+    "ja": "クラスターサマリー",
+    "ko": "클러스터 요약"
+  },
+  "side_nodeList": {
+    "en": "Node List",
+    "ja": "ノードリスト",
+    "ko": "노드 목록"
+  },
+  "side_containerList": {
+    "en": "Container List",
+    "ja": "コンテナリスト",
+    "ko": "컨테이너 목록"
+  },
+  "side_podList": {
+    "en": "Pod List",
+    "ja": "Podリスト",
+    "ko": "Pod 목록"
+  },
+  "side_containerizedAppList": {
+    "en": "Container Application List",
+    "ja": "コンテナアプリケーションリスト",
+    "ko": "컨테이너 애플리케이션 목록"
+  },
+  "side_cpuEqualizer": {
+    "en": "CPU Equalizer",
+    "ja": "CPUイコライザ",
+    "ko": "CPU 이퀄라이저"
+  },
+  "side_containerVolume": {
+    "en": "Container Volume",
+    "ja": "コンテナボリューム",
+    "ko": "컨테이너 볼륨"
+  },
+  "side_containerImages": {
+    "en": "Container Images",
+    "ja": "コンテナイメージ",
+    "ko": "컨테이너 이미지"
+  },
+  "side_namespaceManagement": {
+    "en": "Namespace Management",
+    "ja": "ネームスペース管理",
+    "ko": "네임스페이스 관리"
+  },
+  "side_namespaceStatus": {
+    "en": "Namespace Status",
+    "ja": "ネームスペース現況",
+    "ko": "네임스페이스 현황"
+  },
+  "side_serviceDashboardOld": {
+    "en": "APP. Service Dashboard",
+    "ja": "APPサービス",
+    "ko": "애플리케이션 서비스 대시보드"
+  },
+  "side_serviceDashboard": {
+    "en": "APP. Service Dashboard",
+    "ja": "APPサービス",
+    "ko": "애플리케이션 서비스 대시보드"
+  },
+  "side_multiServiceDashboard": {
+    "en": "APP. Multi Services Dashboard",
+    "ja": "アプリケーションマルチサービス ダッシューボード",
+    "ko": "애플리케이션 멀티서비스 대시보드"
+  },
+  "side_objectManifest": {
+    "en": "Object Manifest",
+    "ja": "Object Manifest",
+    "ko": "오브젝트 매니페스트"
+  },
+  "side_masterMetaInfo": {
+    "en": "Object Manifest",
+    "ja": "Object Manifest",
+    "ko": "오브젝트 매니페스트"
+  },
+  "side_masterMetaTopology": {
+    "en": "Object Topology",
+    "ja": "Objectトポロジー",
+    "ko": "오브젝트 토폴로지"
+  },
+  "side_kubeAgents": {
+    "en": "Agents List",
+    "ja": "エージェントリスト",
+    "ko": "에이전트 목록"
+  },
+  "side_multiServiceHitmap": {
+    "en": "Multiple Service Hitmap",
+    "ja": "マルチサービスヒットマップ",
+    "ko": "멀티서비스 히트맵"
+  },
+  "side_container": {
+    "en": "Container",
+    "ja": "コンテナー",
+    "ko": "컨테이너"
+  },
+  "side_workload": {
+    "en": "Workload",
+    "ja": "ワークロード",
+    "ko": "워크로드"
+  },
+  "side_cluster": {
+    "en": "Cluster",
+    "ja": "クラスター",
+    "ko": "클러스터"
+  },
+  "side_pendingPod": {
+    "en": "Pending Pods",
+    "ja": "Pending Pods",
+    "ko": "Pending Pods"
+  },
+  "side_appl": {
+    "en": "APP.",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션"
+  },
+  "side_metaStructure": {
+    "en": "Structure",
+    "ja": "構成",
+    "ko": "구성"
+  },
+  "side_group": {
+    "en": "Group",
+    "ja": "グループ",
+    "ko": "그룹"
+  },
+  "side_project": {
+    "en": "Project",
+    "ja": "プロジェクト",
+    "ko": "프로젝트"
+  },
+  "side_addGroup": {
+    "en": "Add a Group",
+    "ja": "グループ追加",
+    "ko": "그룹 추가"
+  },
+  "side_changeGroupName": {
+    "en": "Change Group Name",
+    "ja": "グループ名変更",
+    "ko": "그룹명 변경"
+  },
+  "side_deleteGroup": {
+    "en": "Delete Group",
+    "ja": "グループ削除",
+    "ko": "그룹삭제"
+  },
+  "side_editGroupMember": {
+    "en": "Edit Group Member",
+    "ja": "グループユーザー編集",
+    "ko": "그룹 사용자 수정"
+  },
+  "side_integratedDashboard": {
+    "en": "Integrated Dashboard",
+    "ja": "統合ダッシューボード",
+    "ko": "통합 대시보드"
+  },
+  "side_integratedTopology": {
+    "en": "Integrated APP. Topology",
+    "ja": "統合APPトポロジー",
+    "ko": "통합 APP.그룹 토폴로지"
+  },
+  "side_integratedMetricsBoard": {
+    "en": "Integrated Metrics Dashboard",
+    "ja": "統合メトリックスダッシューボード",
+    "ko": "통합 메트릭스 보드"
+  },
+  "side_integratedLogSearch": {
+    "en": "Integrated Log Search",
+    "ja": "統合ログ検索",
+    "ko": "통합 로그 검색기"
+  },
+  "side_integratedContainerMap": {
+    "en": "Integrated Container Map",
+    "ja": "統合コンテナマップ",
+    "ko": "통합 컨테이너 맵"
+  },
+  "side_integratedRealtimeAlert": {
+    "en": "Real-time Alert List",
+    "ja": "リアルタイムアラート",
+    "ko": "실시간 알림 목록"
+  },
+  "side_integratedAgentTransfer": {
+    "en": "Agent Transfer",
+    "ja": "エージェント移動",
+    "ko": "에이전트 이전"
+  },
+  "side_integratedReport": {
+    "en": "Integrated Report",
+    "ja": "統合レポート",
+    "ko": "통합 보고서"
+  },
+  "side_asyncReport": {
+    "en": "Integrated Report",
+    "ja": "統合レポート",
+    "ko": "통합 보고서"
+  },
+  "side_sectionDatabase": {
+    "en": "Database",
+    "ja": "データベース",
+    "ko": "데이터베이스"
+  },
+  "side_sectionServer": {
+    "en": "Server",
+    "ja": "サーバー",
+    "ko": "서버"
+  },
+  "side_integratedGroupManagement": {
+    "en": "Integrated Group Management",
+    "ja": "統合グループ",
+    "ko": "통합 그룹 관리"
+  },
+  "side_integratedMemberManagement": {
+    "en": "Integrated Member Management",
+    "ja": "統合メンバー",
+    "ko": "통합 멤버 관리"
+  },
+  "side_bizBoard": {
+    "en": "Business Board",
+    "ja": "ビジネスボード",
+    "ko": "비즈니스 보드"
+  },
+  "side_accounts": {
+    "en": "Account",
+    "ja": "アカウント",
+    "ko": "계정"
+  },
+  "side_ldapAccounts": {
+    "en": "LDAP Account List",
+    "ja": "LDAP Account List",
+    "ko": "LDAP 계정 목록"
+  },
+  "side_supportHistories": {
+    "en": "Support Board",
+    "ja": "掲示板",
+    "ko": "게시판"
+  },
+  "side_integrationMonitoringUsage": {
+    "en": "Integrated Monitoring",
+    "ja": "統合モニタリング",
+    "ko": "통합 모니터링 사용 현황"
+  },
+  "side_deleteReasons": {
+    "en": "Reason of Withdrawal",
+    "ja": "脱退事由",
+    "ko": "탈퇴 사유"
+  },
+  "side_regions": {
+    "en": "Region",
+    "ja": "リージョン",
+    "ko": "리전"
+  },
+  "side_servers": {
+    "en": "Server",
+    "ja": "サーバー",
+    "ko": "서버"
+  },
+  "side_projects": {
+    "en": "Project",
+    "ja": "プロジェクト",
+    "ko": "프로젝트"
+  },
+  "side_dashboard_management": {
+    "en": "Dashboard Management",
+    "ja": "ダッシュボード管理",
+    "ko": "대시보드 관리"
+  },
+  "side_integratedNoticeSetting": {
+    "en": "Service Notice",
+    "ja": "サービス通知",
+    "ko": "서비스 공지"
+  },
+  "side_noticeSetting": {
+    "en": "Project Notice CONF.",
+    "ja": "プロジェクト通知",
+    "ko": "프로젝트 공지"
+  },
+  "side_setting": {
+    "en": "CONF.",
+    "ja": "設定",
+    "ko": "설정"
+  },
+  "side_linkManagement": {
+    "en": "Link MGNT.",
+    "ja": "連携管理",
+    "ko": "연계 관리"
+  },
+  "side_billingManagement": {
+    "en": "Billing MGNT.",
+    "ja": "課金管理",
+    "ko": "결제 관리"
+  },
+  "side_alertTemplate": {
+    "en": "Alert Message",
+    "ja": "通知メッセージ",
+    "ko": "알림 메시지"
+  },
+  "side_alertPolicy": {
+    "en": "Alert Policy",
+    "ja": "警告ポリシー",
+    "ko": "알림 정책"
+  },
+  "side_alertLog": {
+    "en": "Alert Log",
+    "ja": "通知ログ",
+    "ko": "알림 로그"
+  },
+  "side_maintenanceServer": {
+    "en": "Maintenance Plan (Server)",
+    "ja": "メンテナンス計画 (サーバー)",
+    "ko": "유지보수 계획 (서버)"
+  },
+  "side_maintenanceProject": {
+    "en": "Maintenance Plan (Project)",
+    "ja": "メンテナンス計画 (プロジェクト)",
+    "ko": "유지보수 계획 (프로젝트)"
+  },
+  "side_emergency": {
+    "en": "Emergency Block",
+    "ja": "緊急遮断",
+    "ko": "긴급 차단"
+  },
+  "side_serverLicense": {
+    "en": "License",
+    "ja": "ライセンス",
+    "ko": "라이선스"
+  },
+  "side_logoSoundConfig": {
+    "en": "Logo and Sound",
+    "ja": "ロゴ・通知音",
+    "ko": "로고 및 알림음"
+  },
+  "side_mailConfig": {
+    "en": "SMTP CONF. (Single)",
+    "ja": "SMTP設定 (Single)",
+    "ko": "SMTP 설정 (Single)"
+  },
+  "side_yamlCustomization": {
+    "en": "Kubernetes YAML Setting",
+    "ja": "KubernetesYAML設定",
+    "ko": "Kubernetes YAML 설정"
+  },
+  "side_dataRetention": {
+    "en": "Data Retention",
+    "ja": "データ維持期間",
+    "ko": "데이터 유지기간"
+  },
+  "side_updateServer": {
+    "en": "Server Update",
+    "ja": "サーバーアップデート",
+    "ko": "서버 업데이트"
+  },
+  "side_serverControl": {
+    "en": "Server Control",
+    "ja": "サーバー制御",
+    "ko": "서버 제어"
+  },
+  "side_serviceLink": {
+    "en": "Service Link",
+    "ja": "サービス連携",
+    "ko": "서비스 연계"
+  },
+  "side_tokenManagement": {
+    "en": "Token MGNT.",
+    "ja": "トークン管理",
+    "ko": "토큰 관리"
+  },
+  "side_projectSubscription": {
+    "en": "Project Subscription Status",
+    "ja": "プロジェクト課金状況",
+    "ko": "프로젝트 유료 전환"
+  },
+  "side_projectSubscriptionHistory": {
+    "en": "Subscription History",
+    "ja": "Project Subscription History",
+    "ko": "유료 전환 내역"
+  },
+  "side_invoices": {
+    "en": "Invoice",
+    "ja": "請求書",
+    "ko": "청구서"
+  },
+  "side_adminMetering": {
+    "en": "Metering",
+    "ja": "使用量",
+    "ko": "사용량"
+  },
+  "side_customDashboard": {
+    "en": "Custom Dashboard",
+    "ja": "カスタムダッシュボード",
+    "ko": "커스텀 대시보드"
+  },
+  "side_aiAlert": {
+    "en": "AI Alert Policy",
+    "ja": "アプリケーションAI通知設定",
+    "ko": "AI 알림 설정"
+  },
+  "side_integrationItems": {
+    "en": "Integration Item",
+    "ja": "統合項目",
+    "ko": "인티그레이션 아이템"
+  },
+  "side_cloud": {
+    "en": "Cloud Monitoring",
+    "ja": "クラウドモニタリング",
+    "ko": "클라우드 모니터링"
+  },
+  "side_collectionMap": {
+    "en": "Collection Map",
+    "ja": "Collection Map",
+    "ko": "Collection Map"
+  },
+  "side_categories": {
+    "en": "Categories",
+    "ja": "Categories",
+    "ko": "Categories"
+  },
+  "side_containers": {
+    "en": "Containers",
+    "ja": "Containers",
+    "ko": "Containers"
+  },
+  "side_integrated": {
+    "en": "integrated",
+    "ja": "統合",
+    "ko": "통합"
+  },
+  "side_myProfile": {
+    "en": "My Profile",
+    "ja": "アカウント情報",
+    "ko": "계정 정보"
+  },
+  "side_myUsage": {
+    "en": "My Usage",
+    "ja": "利用状況",
+    "ko": "이용 내역"
+  },
+  "side_paymentInformation": {
+    "en": "Payment Information",
+    "ja": "決済情報",
+    "ko": "결제 정보"
+  },
+  "side_paymentStatus": {
+    "en": "Invoice and payment Status",
+    "ja": "請求及び支払状況",
+    "ko": "청구 및 지불 현황"
+  },
+  "side_paymentHistory": {
+    "en": "Billing History",
+    "ja": "請求及び支払履歴",
+    "ko": "청구 및 납부 내역"
+  },
+  "side_balance": {
+    "en": "Balance",
+    "ja": "前払金",
+    "ko": "선납금"
+  },
+  "side_billingPreview": {
+    "en": "Invoice Preview",
+    "ja": "請求書プレビュー",
+    "ko": "청구서 미리보기"
+  },
+  "side_usage": {
+    "en": "Usage",
+    "ja": "使用量",
+    "ko": "사용량"
+  },
+  "side_advanced": {
+    "en": "Advanced",
+    "ja": "Advanced",
+    "ko": "고급"
+  },
+  "side_mxqlList": {
+    "en": "MXQL List",
+    "ja": "MXQLリスト",
+    "ko": "MXQL 목록"
+  },
+  "side_transaction_map": {
+    "en": "Transaction Map",
+    "ja": "TXマップ",
+    "ko": "트랜잭션 맵"
+  },
+  "side_app_transaction_map": {
+    "en": "APP. Transaction Map",
+    "ja": "APP TXマップ",
+    "ko": "애플리케이션 트랜잭션 맵"
+  },
+  "side_slowQueryLog": {
+    "en": "Slow Query",
+    "ja": "スロークエリ",
+    "ko": "슬로우 쿼리"
+  },
+  "side_log": {
+    "en": "Log",
+    "ja": "ログ",
+    "ko": "로그"
+  },
+  "side_logTail": {
+    "en": "Live Tail",
+    "ja": "ログTail",
+    "ko": "라이브 테일"
+  },
+  "side_logExplorer": {
+    "en": "Log Trend",
+    "ja": "ログトレンド",
+    "ko": "로그 트렌드"
+  },
+  "side_logSearch": {
+    "en": "Log Search",
+    "ja": "ログ検索",
+    "ko": "로그 검색"
+  },
+  "side_logSetting": {
+    "en": "Log Configuration",
+    "ja": "ログ設定",
+    "ko": "로그 설정"
+  },
+  "side_kubeEventList": {
+    "en": "Kubernetes Event",
+    "ja": "Kubernetesイベント",
+    "ko": "쿠버네티스 이벤트"
+  },
+  "side_whatapEventList": {
+    "en": "WhaTap Event",
+    "ja": "WhaTapイベント",
+    "ko": "WhaTap 이벤트"
+  },
+  "side_createOrganization": {
+    "en": "Create",
+    "ja": "組織生成",
+    "ko": "조직 생성"
+  },
+  "side_organizationManagement": {
+    "en": "Management",
+    "ja": "管理",
+    "ko": "조직 관리"
+  },
+  "side_organizationMembers": {
+    "en": "Member List",
+    "ja": "メンバーリスト",
+    "ko": "멤버 목록"
+  },
+  "side_organizationAlertSetting": {
+    "en": "Alert Setting",
+    "ja": "アラート設定",
+    "ko": "알림 설정"
+  },
+  "side_dbSize": {
+    "en": "DB size",
+    "ja": "DBサイズ",
+    "ko": "데이터베이스 사이즈"
+  },
+  "side_rumDashboard": {
+    "en": "Browser Monitoring Dashboard",
+    "ja": "ブラウザモニタリング",
+    "ko": "브라우저 모니터링 대시보드"
+  },
+  "side_npmDashboard": {
+    "en": "Network Topology",
+    "ja": "ネットワークトポロジ",
+    "ko": "네트워크 토폴로지"
+  },
+  "side_npmProgressTCP": {
+    "en": "Network Trend (TCP)",
+    "ja": "ネットワーク推移(TCP)",
+    "ko": "네트워크 추이 (TCP)"
+  },
+  "side_tcpSessionState": {
+    "en": "TCP Session",
+    "ja": "TCPセッション",
+    "ko": "TCP 세션"
+  },
+  "side_udpSessionState": {
+    "en": "UDP Session",
+    "ja": "UDPセッション",
+    "ko": "UDP 세션"
+  },
+  "side_rumPageLoadDashboard": {
+    "en": "Page Load",
+    "ja": "ページロード",
+    "ko": "페이지 로드"
+  },
+  "side_rumResourceDashboard": {
+    "en": "Resource",
+    "ja": "リソース",
+    "ko": "리소스"
+  },
+  "side_rumAjaxDashboard": {
+    "en": "AJAX",
+    "ja": "Ajax",
+    "ko": "AJAX"
+  },
+  "side_rumErrorDashboard": {
+    "en": "Browser Error",
+    "ja": "ブラウザエラー",
+    "ko": "브라우저 에러"
+  },
+  "side_rumPageLoadHitmap": {
+    "en": "Page Load Hitmap",
+    "ja": "ページロードヒットマップ",
+    "ko": "페이지 로드 히트맵"
+  },
+  "side_browserErrorTracking": {
+    "en": "Error Tracking",
+    "ja": "エラートレース",
+    "ko": "에러 추적"
+  },
+  "side_ajaxAnalytics": {
+    "en": "AJAX Hitmap",
+    "ja": "Ajaxヒットマップ",
+    "ko": "AJAX 히트맵"
+  },
+  "side_logsinkCollectionStatus": {
+    "en": "Log Collection Status",
+    "ja": "ログ収集状況",
+    "ko": "로그 수집 현황"
+  },
+  "side_logsinkRpsBoard": {
+    "en": "Log RPS Board",
+    "ja": "Log RPS Board",
+    "ko": "Log RPS Board"
+  },
+  "side_integrationInstall": {
+    "en": "Agent Installation",
+    "ja": "エージェント設定",
+    "ko": "에이전트 설치"
+  },
+  "side_remoteAccessStatus": {
+    "en": "Remote Access Status",
+    "ja": "外部コールステータス",
+    "ko": "외부 호출 상태"
+  },
+  "side_correlatedProjectManagement": {
+    "en": "Correlated Project Management",
+    "ja": "相関プロジェクト管理",
+    "ko": "연계 프로젝트 관리"
+  },
+  "side_kubeApiserverDashboard": {
+    "en": "kube-apiserver Dashboard",
+    "ja": "kube-apiserver ダッシュボード",
+    "ko": "kube-apiserver 대시보드"
+  },
+  "side_kubernetesAgentList": {
+    "en": "Kubernetes Agent List",
+    "ja": "Kubernetesエージェントリスト",
+    "ko": "쿠버네티스 에이전트 목록"
   }
 }
