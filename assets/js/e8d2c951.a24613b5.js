@@ -317,7 +317,7 @@ const metadata = {
     "unversionedId": "release-notes/k8s/k8s-previous",
     "id": "release-notes/k8s/k8s-previous",
     "title": "Kubernetes Agent 지난 버전",
-    "description": "* Kubernetes Agent v1.4.3",
+    "description": "* Kubernetes Agent v1.4.4",
     "source": "@site/docs/release-notes/k8s/k8s-previous.mdx",
     "sourceDirName": "release-notes/k8s",
     "slug": "/release-notes/k8s/k8s-previous",
@@ -333,8 +333,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent v1.4.4",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_4"
+        "title": "Kubernetes Agent v1.4.8",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_8"
     },
     "next": {
         "title": "DBX v1.6.30",
@@ -355,6 +355,13 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "k8s-1_4_4"
+    }, `Kubernetes Agent v1.4.4`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
