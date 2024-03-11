@@ -2,13 +2,13 @@
 
 現在実行中のセッションのSQLクエリ情報を確認するには<Cmdname sid="active_sessions" className="uitext" />セクションの<span class="uitext">query</span>カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
 
-<InDoc product="postgresql,postgresql-v1">
+<InDoc product="postgresql,postgresql-v1,mysql,mysql-v1">
 
 <ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" />
 
 </InDoc>
 
-<Xclude product="postgresql,postgresql-v1">
+<Xclude product="postgresql,postgresql-v1,mysql,mysql-v1">
 
 <ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
 
@@ -24,11 +24,15 @@
 
 - **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-  <InDoc product='postgresql,postgresql-v1'>
+  <InDoc product='postgresql,postgresql-v1,mysql,mysql-v1'>
 
   - **_Text_**: テキスト形式でプラン情報を確認できます。
 
   - **_JSON_**: JSON形式でプラン情報を照会すると、ボトルネックが発生した箇所がすばやく確認できます。
+
+  </InDoc>
+
+  <InDoc product='postgresql,postgresql-v1'>
 
   :::note
 
@@ -38,11 +42,21 @@
 
   </InDoc>
 
+  <InDoc product='mysql,mysql-v1'>
+
+  :::note
+
+  **_JSON_**形式でプラン情報を照会する機能は、DBXエージェント1.6.15バージョン以降から対応しています。
+
+  :::
+
+  </InDoc>
+
 - 画面右上に![垂直分割アイコン](/img/ic-column.svg)ボタンを選択すると**_Query_**と**_Plan_**セクションを左右に配置します。
 
 - 画面右上に![垂直分割アイコン](/img/ic-layout-horizontal.svg)ボタンを選択すると**_Query_**と **_Plan_**セクションを上下に配置します。
 
-<InDoc product='postgresql,postgresql-v1'>
+<InDoc product='postgresql,postgresql-v1,mysql,mysql-v1'>
 
 :::tip
 

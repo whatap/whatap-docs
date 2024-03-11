@@ -1,0 +1,85 @@
+## Checking the agent
+
+### Checking the agent connection status
+
+<InDoc pages="dashboard">
+
+<ImgLang img='apm-dashboard-check-agent.png' desc='Agent connection status' />
+
+</InDoc>
+
+<InDoc pages="dashboard-transactionmap">
+
+<ImgLang img='txmap-check-agent.png' desc='Application connection status' />
+
+</InDoc>
+
+On the upper left of the screen, the right area of the time selector provides information that allows you to check the status of agents connected to the project. This allows you to immediately check whether the application server is running normally.
+
+- **_Total_**: Number of all agents connected to the project
+
+- **_Active_**: Number of active agents
+
+- **_Inactive_**: Number of inactive agents
+
+- ![Agent display icon](/img/ic-inactive.svg): Can display or hide inactive agents.
+
+### Agent-based monitoring
+
+<InDoc pages="dashboard">
+
+<ImgLang img='apm-dashboard-select-agent.png' desc='Selecting the agent' />
+
+</InDoc>
+
+<InDoc pages="dashboard-transactionmap">
+
+<ImgLang img='txmap-select-agent.png' desc='Select agent' />
+
+</InDoc>
+
+<InDoc pages="dashboard">
+
+By default, the dashboard displays the metrics collected from all agents in charts and you can also view the data by agent. Select one or more agents under the time selector. The data of the widgets on the dashboard is updated with the metrics of the selected agent(s).
+
+</InDoc>
+
+<InDoc pages="dashboard-transactionmap">
+
+By default, the chart displays the metrics collected from all agents in charts and you can also view the data by agent. Select one or more agents under the time selector. The chart is updated with the transactions of the selected agent.
+
+</InDoc>
+
+:::tip
+
+To select all agents again while one or more agents is selected, deselect them or select **_Total_**.
+
+:::
+
+:::note
+
+If there are numerous agents connected to the project, it is efficient to set the agent names to be short. For more information about the agent name setting, see [the following](agent-name).
+
+:::
+
+### Monitoring each classified agents
+
+<ImgLang img='apm-dashboard-select-agent-by-category.png' desc='Selecting the agent by kind' />
+
+You can select and monitor agents by each group classified through agent settings.
+
+- <Cmdname sid="ITM06005" className="uitext" />: You can select an individual agent or all agents.
+
+- <Cmdname sid="ITM06006" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.okind</code> in the agent configuration.
+
+- <Cmdname sid="ITM06007" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.onode</code> in the agent configuration.
+
+- <Cmdname sid="ITM06008" className="uitext" />: Only the agents classified as <code>whatap.okind</code> in the agent configuration can be monitored.
+
+- <Cmdname sid="ITM06009" className="uitext" />: Only the agents classified as <code>whatap.onode</code> in the agent configuration can be monitored.
+
+:::note
+
+For more information about the agent configuration, see [the following](agent-name).
+
+:::

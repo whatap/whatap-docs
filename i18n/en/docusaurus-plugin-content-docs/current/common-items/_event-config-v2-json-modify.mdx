@@ -1,0 +1,55 @@
+## Modifying to JSON format
+
+You can modify event settings in JSON format.
+
+1. On the upper right of the screen, select <span class="uitext">JSON</span> <LinkImage img="ico-export.svg" className="ico" />.
+
+2. When the editing window appears, modify the content in JSON format.
+
+3. After all changes are made, select <Cmdname sid="save" className="uitext" /> on the upper right of the screen.
+
+:::note
+
+If the modified content does not match the JSON format, an error message appears at the bottom of the screen and the changes cannot be saved. The displayed error message may differ depending on the format.
+
+<ImgLang img='event-config-v2-json-error.png' desc='JSON error' />
+
+:::
+
+The JSON data structure is as follows:
+
+```json
+{
+    "metaId": "infra001",
+    "displayName": "CPU",
+    "stateful": true,
+    "selectCondition": {},
+    "warningEnabled": true,
+    "criticalEnabled": true,
+    "receiver": [],
+    "warningThreshold": "cpu > 70",
+    "criticalThreshold": "cpu > 90",
+    "repeatCount": 1,
+    "silentPeriod": 60000,
+    "enabled": false,
+    "message": "CPU = ${cpu}"
+},
+```
+
+The fields in JSON data are associated with the following options in event settings.
+
+| JSON field          | Option                                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `metaId`            | Unique identifier for the selected template                                                                                    |
+| `displayName`       | <Cmdname sid="event_title" className="uitext" />                                                                               |
+| `stateful`          | <Cmdname sid="TTL07368" className="uitext" />                                                                                  |
+| `selectCondition`   | <Cmdname sid="ITM07588" className="uitext" />                                                                                  |
+| `warningEnabled`    | Whether the <span class="slow">Warning</span> event is active or not                                                           |
+| `criticalEnabled`   | Whether the <span class="vslow">Critical</span> event is active or not                                                         |
+| `receiver`          | List of key values in the <Cmdname sid="TTL07415" className="uitext" /> > <Cmdname sid="ITM07420" className="uitext" /> option |
+| `warningThreshold`  | Threshold setting of the <span class="slow">Warning</span> event                                                               |
+| `criticalThreshold` | Threshold setting of the <span class="vslow">Critical</span> event                                                             |
+| `repeatCount`       | <Cmdname sid="TTL07366" className="uitext" /> N <Cmdname sid="ITM07370" className="uitext" />                                  |
+| `silentPeriod`      | <Cmdname sid="TTL07367" className="uitext" />                                                                                  |
+| `enabled`           | <Cmdname sid="enable_events" className="uitext" />                                                                             |
+| `message`           | <Cmdname sid="TTL06883" className="uitext" />                                                                                  |

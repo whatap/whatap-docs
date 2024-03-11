@@ -9,7 +9,7 @@ tags:
 
 WhaTap NPMサービスを使用するためには、[会員登録](https://www.whatap.io/ja/signup/) 後、プロジェクトを作成し、運用中のサーバーにNPMエージェントをインストールする必要があります。
 
-{@include: ../getting-started/_create-project-v2.mdx}
+{@include: ../getting-started/_create-project-v2.mdx} 
 
 {@include: ../getting-started/_accesskey.mdx} 
 
@@ -60,7 +60,7 @@ sudo yum install whatap-npmd
 
 :::note
 
-AWS環境でリソース情報を収集するには、[次の文書](set-aws-resource-options)を参考にしてください。
+AWS EC2環境でリソース情報を収集するには、[次の文書](set-aws-resource-options#set-aws-resource-ec2)を参考にしてください。
 
 :::
 
@@ -88,6 +88,12 @@ Installation complete!
 ## Kubernetes環境に設置する
 
 **_インストール案内_**セクションで**_Kubernetes_**タブを選択し、画面の案内に従ってエージェントのインストールを進めてください。
+
+:::note
+
+AWS EKS環境でリソース情報を収集するには、[次の文書](set-aws-resource-options#set-aws-resource-eks)を参考にしてください。
+
+:::
 
 ### エージェント生成
 

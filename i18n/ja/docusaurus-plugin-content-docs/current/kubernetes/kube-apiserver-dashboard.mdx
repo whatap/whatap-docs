@@ -1,0 +1,262 @@
+---
+id: kube-apiserver-dashboard
+title: kube-apiserver ダッシュボード
+description: kube-apiserverダッシュボードを案内します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - kube-apiserver
+  - コントロールプレーン
+toc_max_heading_level: 2
+---
+
+ホーム画面 > クラスタープロジェクト選択 > **_クラスター_** > **_kube-apiserverダッシュボード_**
+
+:::note
+
+**要求事項**
+
+- **_kube-apiserverダッシュボード_**メニューを使用するためにKubernetesクラスタープロジェクトの**読み込み権限**が必要です。
+
+- WhaTap Kubernetesエージェント1.5.6バージョン以降が必要です。
+
+:::
+
+kube-apiserverは、**コントロールプレーン**(Control Plane) 内部と外部のリクエストを処理するコンポーネントです。 **_kube-apiserverダッシュボード_**メニューを通じてkube-apiserverの状態と性能メトリクスを収集した後、kube-apiserverのリスポンスタイム、処理量、リクエストの失敗などを追跡し、クラスターの可用性と性能を簡単にモニタリングできます。
+
+## 基本画面ガイド
+
+<ImgLang img='k8s-kube-apiserver.png' desc='kube-apiserver ダッシュボード'/>
+
+**_kube-apiserverダッシュボード_**メニューは、直近1時間のkube-apiserverの主要な指標を1分周期で反映します。 以下の指標を確認することができます。 指標詳細は、下段の[メトリクス案内](#kube-apiserever-metric)を参考にしてください。
+
+- クラスタの負荷と使用量をモニタリングするために、メソッド、リソース、リスポンスコードごとのリクエスト回数の現状と推移を提供します。 
+
+- クラスターの負荷状態を把握できるように、現在処理中のAPIリクエスト数を提供します。 
+
+- 生成されたOSスレッドと現在存在するゴルーチンの数を提供します。 
+
+## kube-apiserverモニタリング活性化
+
+WhaTap Kubernetesエージェントのインストール時にダウンロードした_yaml_ファイルを以下の案内に従って修正し、kube-apiserverモニタリングを活性化してください。 
+
+1. `whatap-master-agent` deploymentのspec下位にkube-apiserverモニタリングのためのエージェントコンテナspecを追加してください。
+
+```yaml
+containers:
+  - name: whatap-control-plane-helper
+    image: whatap/kube_mon
+    imagePullPolicy: Always
+    ports:
+      - containerPort: 9496
+    command: ["/data/agent/master/whatap_control_plane_helper"]
+    args: ["-collect_control_plane_monitoring_enabled=true"]
+```
+
+  次の例を参照してください。 
+
+```yaml {17-23}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatap-master-agent
+  namespace: whatap-monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: whatap-master-agent
+  template:
+    metadata:
+      labels:
+        name: whatap-master-agent
+    spec:
+      containers:
+        - name: whatap-control-plane-helper
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9496
+          command: ["/data/agent/master/whatap_control_plane_helper"]
+          args: ["-collect_control_plane_monitoring_enabled=true"]
+        - name: whatap-master-agent
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: 300Mi
+              cpu: 100m
+            limits:
+              memory: 350Mi
+              cpu: 200m
+          ports:
+            - containerPort: 6600
+          command: ['/bin/entrypoint.sh']
+          env:
+            - name: WHATAP_LICENSE
+              value: "xxxxxxxx-12345xxxxxx-x00e000000xxx8"
+            - name: WHATAP_HOST
+              value: "13.124.11.223/13.209.172.35"
+            - name: WHATAP_PORT
+              value: "6600"
+            - name: WHATP_MEM_LIMIT
+              valueFrom:
+                resourceFieldRef:
+                  containerName: whatap-master-agent
+                  resource: limits.memory
+          volumeMounts:
+            - name: start-script-volume
+              mountPath: /bin/entrypoint.sh
+              readOnly: true
+              subPath: entrypoint.sh
+            - mountPath: /whatap_conf
+              name: whatap-config-volume
+      volumes:
+        - name: start-script-volume
+          configMap:
+            defaultMode: 0700
+            name: master-start-script
+        - name: whatap-config-volume
+          emptyDir: {}
+      serviceAccount: whatap
+```
+
+1. `whatap-master-agent` deploymentの`whatap-master-agent`コンテナspecのenv設定に次の内容を追加してください。 
+
+```yaml
+env:
+  - name: collect_control_plane_monitoring_enabled
+    value: "true"
+```
+
+  次の例を参照してください。 
+
+```yaml {38-39}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatap-master-agent
+  namespace: whatap-monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: whatap-master-agent
+  template:
+    metadata:
+      labels:
+        name: whatap-master-agent
+    spec:
+      containers:
+        - name: whatap-control-plane-helper
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9496
+          command: ["/data/agent/master/whatap_control_plane_helper"]
+          args: ["-collect_control_plane_monitoring_enabled=true"]
+        - name: whatap-master-agent
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: 300Mi
+              cpu: 100m
+            limits:
+              memory: 350Mi
+              cpu: 200m
+          ports:
+            - containerPort: 6600
+          command: ['/bin/entrypoint.sh']
+          env:
+            - name: collect_control_plane_monitoring_enabled
+              value: "true"
+            - name: WHATAP_LICENSE
+              value: "xxxxxxxx-12345xxxxxx-x00e000000xxx8"
+            - name: WHATAP_HOST
+              value: "13.124.11.223/13.209.172.35"
+            - name: WHATAP_PORT
+              value: "6600"
+            - name: WHATP_MEM_LIMIT
+              valueFrom:
+                resourceFieldRef:
+                  containerName: whatap-master-agent
+                  resource: limits.memory
+          volumeMounts:
+            - name: start-script-volume
+              mountPath: /bin/entrypoint.sh
+              readOnly: true
+              subPath: entrypoint.sh
+            - mountPath: /whatap_conf
+              name: whatap-config-volume
+      volumes:
+        - name: start-script-volume
+          configMap:
+            defaultMode: 0700
+            name: master-start-script
+        - name: whatap-config-volume
+          emptyDir: {}
+      serviceAccount: whatap
+```
+
+1. コントロールプレーンモニタリング性能指標を収集するために`whatap` ClusterRoleに次の権限を追加してください。 
+
+```yaml
+rules:
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+```
+
+  次の例を参照してください。 
+
+```yaml {18-19}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "true"
+  name: whatap
+  namespace: whatap-monitoring
+rules:
+  - apiGroups: ["*"]
+    resources: ["namespaces", "pods", "pods/log", "configmaps","services", "endpoints","daemonsets","ingresses","deployments","nodes","persistentvolumes","persistentvolumeclaims", "events", "replicasets", "roles", "rolebindings", "clusterroles", "clusterrolebindings", "jobs", "cronjobs", "statefulsets", "serviceaccounts", "configmaps", "storageclasses", "horizontalpodautoscalers" ]
+    verbs: ["get","list","watch"]
+  - apiGroups: [""]
+    resources: ["pods/exec"]
+    verbs: ["create"]
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["*"]
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+---
+```
+
+:::note 
+
+`kubectl apply`または`kubectl edit`コマンドを通じてkube-apiserverモニタリングを活性化することもできます。 
+
+:::
+
+## kube-apiserverメトリクス{#kube-apiserever-metric}
+
+| 分類                           | メトリクス                                                | 説明                                                                                                                               |
+| ---------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| API GETリクエスト                 | 1分当たりのGETリクエスト状況                                     | kube-apiserverのGETリクエストに対する1分当たりのリクエスト数                                                                                          |
+| ^                            | 1秒当たりのGETリクエスト数の推移                                   | kube-apiserverのGETリクエストに対する1秒当たりのリクエスト数の推移                                                                                       |
+| ^                            | Resource & Subresource別の1分当たりのGETリクエスト数の推移           | kube-apiserverに入ってきたGETリクエストのResourceとSubresourceごとの1分当たりのリクエスト数の推移                                                              |
+| API POSTリクエスト                | 1分あたりのPOSTリクエストの状況                                   | kube-apiserverのPOSTリクエストに対する1分当たりのリクエスト数                                                                                         |
+| ^                            | 1秒当たりのPOSTリクエスト数の推移                                  | kube-apiserverのPOSTリクエストに対する1秒当たりのリクエスト数の推移                                                                                      |
+| ^                            | Resource & Subresource別のPOST1分当たりのリクエスト数の推移          | kube-apiserverに入ってきたPOSTリクエストに対してResourceとSubresourceごとにグループ化した1分当たりのリクエスト数の推移                                                   |
+| APIレスポンスコード別のリクエスト           | [ 2xx ] 1分あたりのレスポンスのリクエスト状況                          | kube-apiserverリクエストのうち、200以上300未満のレスポンスコードが出されたリクエスト数に対する1分当たりの現況                                                                |
+| ^                            | [ 2xx ] 1分当たりのレスポンスコードごとのリクエスト数の推移                   | kube-apiserverリクエストのうち、200以上300未満のレスポンスコードが出されたリクエスト数に対するレスポンスコードごとの1分当たりの現況                                                     |
+| ^                            | [ 2xx ] 1分当たりのResource & Subresourceごとのリクエスト数の推移     | kube-apiserverリクエストのうち、200以上300未満のレスポンスコードが出されたリクエストに対しResourceとSubresourceごとにグループ化した1分当たりのリクエスト数の推移                             |
+| ^                            | [ 3xx ] 1分あたりのレスポンスのリクエスト状況                          | kube-apiserverリクエストのうち、300以上400未満のレスポンスコードが出されたリクエスト数に対する1分当たりの現況                                                                |
+| ^                            | [ 3xx ] 1分当たりのレスポンスコードごとのリクエスト数の推移                   | kube-apiserverリクエストのうち、300以上400未満のレスポンスコードが出されたリクエスト数に対するレスポンスコードごとの1分当たりの現況                                                     |
+| ^                            | [ 3xx ] 1分当たりのResource & Subresourceごとのリクエスト数の推移     | kube-apiserverリクエストのうち、300以上400未満のレスポンスコードが出されたリクエストに対しResourceとSubresourceごとにグループ化した1分当たりのリクエスト数の推移                             |
+| ^                            | [ 400~ ] 1分あたりのレスポンスのリクエスト状況                         | kube-apiserverリクエストのうち、400以上のレスポンスコードが出されたリクエスト数に対する1分当たりの現況                                                                     |
+| ^                            | [ 400~ ] 1分当たりのレスポンスコードごとのリクエスト数の推移                  | kube-apiserverリクエストのうち、400以上のレスポンスコードが出されたリクエスト数に対するレスポンスコードごとの1分当たりの現況                                                          |
+| ^                            | [ 400~ ] 1分当たりのResource & Subresourceごとのリクエスト数の推移    | kube-apiserverリクエストのうち、400以上のレスポンスコードが出されたリクエストに対しResourceとSubresourceごとにグループ化した1分当たりのリクエスト数の推移                                  |
+| Go Metrics                   | ゴルーチン数                                               | 現在存在するゴルーチンの数                                                                                                                    |
+| ^                            | スレッド数                                                | 現在存在するOSスレッド数                                                                                                                    |
+| 現在実行中のリクエスト数(1秒)             | 直近1秒以内に実行中のリクエスト数                                    | データ収集時にkube-apiserverで1秒以内に行われていたリクエスト数                                                                                          |

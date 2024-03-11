@@ -1,0 +1,164 @@
+## イベントの修正{#modify-event}
+
+基本的にイベントテンプレートに適用される指標値を修正することで、警告通知の発生基準を変更できます。 その他にも、様々なオプション設定により通知の発生基準を変更できます。 修正したいイベント項目で![修正アイコン](/img/ico-edit.svg)ボタンを選択すると、イベント修正画面に移動します。 次の項目を順番に修正した上で<Cmdname sid="save" className="uitext" />ボタンを選択してください。
+
+### <Cmdname sid="TTL07362" />
+
+イベント発生の条件基準を設定できます。
+
+<ImgLang img='event-config-v2-condition-common.png' desc='イベント条件の定義' />
+
+- <Cmdname sid="run" className="uitext" />：イベント条件を設定してからボタンを選択すると、設定したイベントをシミュレートできます。
+
+  <ImgLang img='event-config-v2-simulation-common.png' desc='イベントシミュレーション' />
+
+- <Cmdname sid="TTL07365" className="uitext" replace="</br>" />: <span class="slow">Warning</span>または<span class="vslow">Critical</span>通知に対するしきい値を設定できます。 演算子を設定し、しきい値を入力してください。
+
+  - 演算子の種類：`>`(より大きい)、`>=`(より大きいか等しい)、`<`(より小さい)、`<=`(より小さいか等しい)、`==`(等しい)
+
+  - しきい値として正の数、負の数、0を入力できますが、選択したイベントテンプレートによって、負の数の入力可能有無は異なる場合があります。
+
+  :::note
+
+  - 提供されるイベントテンプレートによって、設定できる通知レベル(Level)は異なる場合があります。
+
+  - <span class="slow">Warning</span>または<span class="vslow">Critical</span>レベルの1つだけを選択できますが、両方の項目を非活性化することはできません。
+
+  :::
+
+- <Cmdname sid="TTL07366" className="uitext" />：設定したイベント条件を満たす回数に応じて通知を送信できます。
+
+  - <Cmdname sid="ITM07369" className="uitext" />：イベントが発生するたびに通知を送信します。
+
+  - <Cmdname sid="TTL07366" className="uitext" />：入力した回数だけイベントが発生すると、通知を送信します。
+
+- <Cmdname sid="TTL07367" className="uitext" />：アラート通知後、指定した時間の間は、イベントが発生しません。
+
+- <Cmdname sid="TTL07368" className="uitext" />：イベントが解決されたら、<b>RECOVERED</b>状態のアラートを通知します。
+
+:::tip
+
+通知を送信する基準は、次の条件によって異なります。
+
+| <Cmdname sid="TTL07366" className="uitext" />                                                 | <Cmdname sid="TTL07368" className="uitext" /> | 動作                                                       |
+| --------------------------------------------------------------------------------------------- | :-------------------------------------------: | -------------------------------------------------------- |
+| <Cmdname sid="ITM07369" className="uitext" />                                                 |                     **On**                    | 設定したイベント条件を満たすか、それが解決されたら通知を送信します。                       |
+| ^                                                                                             |                    **Off**                    | 設定した条件を満たすたびに通知を送信します。                                   |
+| <Cmdname sid="TTL07366" className="uitext" /> N <Cmdname sid="ITM07370" className="uitext" /> |                     **On**                    | N回以上の条件を満たすか、N回以上のイベントが解決されると通知を送信します。                   |
+| ^                                                                                             |                    **Off**                    | N回以上設定したイベント条件を満たすと通知を送信します。 通知を送信した後、回数を初期化して回数を再集計します。 |
+
+:::
+
+### <Cmdname sid="TTL07363" />
+
+<InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+特定のエージェントでのみ発生するイベントを通知で送信するように設定できます。 <Cmdname sid="TLT07556" className="uitext" />アイテムをクリックして、目的のエージェントを選択します。
+
+<ImgLang img='event-config-v2-target-apm.png' desc='イベント対象の選択' />
+
+</InDoc>
+
+<InDoc product="mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis">
+
+特定のエージェントでのみ発生するイベントを通知で送信するように設定できます。 <Cmdname sid="TLT07556" className="uitext" />アイテムをクリックして、目的のエージェントを選択します。 エージェントを選択し、接続されたDBサーバーのデータベース名(**_DbName_**)を追加で選択することもできます。
+
+<ImgLang img='event-config-v2-target-db.png' desc='イベント対象の選択' />
+
+</InDoc>
+
+<InDoc product="server">
+
+特定のエージェントでのみ発生するイベントを通知で送信するように設定できます。 <Cmdname sid="TLT07557" className="uitext" />アイテムをクリックして、目的のエージェントを選択します。
+
+<ImgLang img='event-config-v2-target-server.png' desc='イベント対象の選択' />
+
+</InDoc>
+
+<InDoc product="browser">
+
+特定のページグループでのみ発生するイベントを通知で送信するように設定できます。 <span class="uitext">Page_group</span>項目をクリックし、目的のページグループを選択してください。
+
+<ImgLang img='event-config-v2-target-browser.png' desc='イベント対象の選択' />
+
+</InDoc>
+
+<InDoc product="npm">
+
+特定のターゲットでのみ発生するイベントを通知で送信するように設定できます。 <Cmdname sid="ITM07588" className="uitext" />の各アイテムをクリックして、目的のターゲットを選択してください。
+
+<ImgLang img='event-config-v2-target-npm.png' desc='イベント対象の選択' />
+
+:::tip
+
+選択できるターゲットは、**tagRule**オプションで適用したグループ化されたモニタリング単位です。 **tagRule**オプションの詳細については、[次の文書](set-tagrule)を参考にしてください。
+
+:::
+
+</InDoc>
+
+:::note
+
+- 提供されるテンプレートによって、選択できるターゲットは異なる場合があります。
+
+- 選択したターゲットに対するイベント発生状況を確認するには、<Cmdname sid="TTL07362" className="uitext" />で<Cmdname sid="run" className="uitext" />ボタンを選択してください。
+
+<Xclude product="browser,npm">
+
+- ターゲットを選択しない場合は、プロジェクトに含まれるすべてのエージェントに通知を送信します。 すべてのエージェントに対してイベントが実行されると、多くの通知が発生する可能性があります。
+
+</Xclude>
+
+<InDoc product="browser">
+
+- ターゲットを選択しない場合は、ページグループ全体に通知を送信します。 すべてのページグループに対してイベントが実行されると、多くの通知が発生する可能性があります。
+
+</InDoc>
+
+<InDoc product="npm">
+
+- ターゲットを選択しない場合は、ネットワークグループ全体に通知を送信します。 ネットワークグループ全体に対してイベントが実行されると、多くの通知が発生する可能性があります。
+
+</InDoc>
+
+:::
+
+### <Cmdname sid="TTL07364" />
+
+通知で受信されるイベントのタイトルとメッセージを作成し、受信対象を選択できます。
+
+<ImgLang img='event-config-v2-info-receive-common.png' desc='基本情報と通知設定' />
+
+- <Cmdname sid="enable_events" className="uitext" />：現在のイベントを活性化することができます。
+
+- <Cmdname sid="event_title" className="uitext" />：基本的に提供されたテンプレートのイベント名が入力されています。 ユーザーが希望するイベント名で編集できます。
+
+- <Cmdname sid="TTL06883" className="uitext" />：基本的に提供されたテンプレートのメッセージが入力されています。 ユーザーが希望するメッセージに編集できます。 <LinkImage img="ico-timing.svg" className="ico" desc="時間アイコン" />ボタンをクリックすると、以前に入力したメッセージの履歴を確認できます。
+
+  :::tip
+
+  メッセージ入力ウィンドウに<code>${Tag}</code>または<code>${Field}</code>変数を入力してメッセージを作成できます。
+
+  <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで<Cmdname sid="category" className="uitext" />を選択した上で入力できる<code>&#36;&#123;Tag&#125;</code>または<code>&#36;&#123;Field&#125;</code>変数を確認してください。 現在のイベントテンプレートの<Cmdname sid="category" className="uitext" />名前は、<Link to="#basic-template">次の文書</Link>の<b>カテゴリ</b>項目を参考にしてください。
+
+  :::
+
+- <Cmdname sid="alert_test" className="uitext" />：現在のイベントで発生する通知受信時に入力したイベント名とメッセージを事前にチェックすることができます。 必須項目(<Cmdname sid="TTL07365" className="uitext" replace="</br>" />、<Cmdname sid="event_title" className="uitext" />、<Cmdname sid="TTL06883" className="uitext" />)をすべて入力しないとテストできません。
+
+  :::note
+
+  テスト中は、実際のメトリクス値や変数の置換機能が動作せず、受信者タグが設定されているユーザーにのみ通知を送信することはできません。
+
+  :::
+
+- <Cmdname sid="TTL07415" className="uitext" />：現在イベントで発生している通知を受信するメンバーを選択できます。
+
+  - <Cmdname sid="ITM07419" className="uitext" />：プロジェクトに所属するメンバー全員に通知を送信します。
+
+  - <Cmdname sid="ITM07420" className="uitext" />：選択したタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信します。 <Cmdname sid="add_tag" className="uitext" />または<LinkImage img="ico-add.svg" className="ico" />ボタンをクリックして、タグ一覧で目的のタグを選択してください。
+
+  :::note
+
+  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。 詳細については、<Link to="set-receive-event#set-notice-by-team-or-users">次の文書</Link>を参照してください。
+
+  :::

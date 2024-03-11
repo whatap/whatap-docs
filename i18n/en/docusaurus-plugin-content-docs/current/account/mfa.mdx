@@ -20,13 +20,13 @@ The WhaTap monitoring service (multi-factor authentication is used) provides the
 
 :::
 
-You can configure the multi-factor authentication by going to <Cmdname sid="manage_account_info" className="uitext" /> in the following order.
+You can configure the multi-factor authentication by going to <Cmdname sid="MNU07360" className="uitext" /> in the following order.
 
 1. Log in the WhaTap monitoring service (https://service.whatap.io).
 
 2. Select the profile icon on the upper right of the screen. A drop-down menu appears.
 
-3. Select <Cmdname sid="manage_account_info" className="uitext" />.
+3. Select <Cmdname sid="MNU07360" className="uitext" />.
 
 4. Scroll down the page to go to the <Cmdname sid="two_factor_auth" className="uitext" /> section.
 
@@ -61,21 +61,51 @@ You can also perform OTP authentication through the WhaTap mobile app. For more 
 
    <ImgLang img='account-mfa-google.png' desc='Google OTP app' />
 
-3. On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the obtained OTP key in <Cmdname sid="authentication" className="uitext" />. 
+3. Enter the issued OTP token in the <Cmdname sid="BTN06501" className="uitext" /> text box. 
 
 4. Select <Cmdname sid="validate_otp_token" className="uitext" />.
 
-Now you have completed the OTP-based multi-factor configuration. Log out and then log in the service to check your multi-factor authentication settings.
+5. When the <Cmdname sid="TTL07396" className="uitext" /> window appears, select <Cmdname sid="BTN07544" className="uitext" /> to download or copy the code for saving.
+
+   :::note
+
+   The recovery code is an alternative for your lost OTP key. Keep the downloaded recovery code file (_WhaTap-recovery-codes.txt_) in a safe place.
+
+   :::
+
+If you close the <Cmdname sid="TTL07396" className="uitext" /> window, the OTP-based multi-factor configuration is finished. Log out and then log in the service to check your multi-factor authentication settings.
+
+:::note
+
+For the method how to log in the service by using the recovery code, see [the following](#recoverycode).
+
+:::
 
 ### Using the OTP-based multi-factor authentication
 
-1. On the Login (https://service.whatap.io/account/login) page, log in the service.
+1. On the [Login] \(https://service.whatap.io/account/login) page, log in the service with an email address and password.
 
 2. When the multi-factor authentication screen appears, check your OTP key on the OTP app of your mobile device.
 
-3. Enter the granted OTP key and then select <Cmdname sid="validate_otp_token" className="b600" />.
+3. Enter the granted OTP key and then select <Cmdname sid="authentication" className="uitext" />.
 
 If the OTP token validation is successful, you can enter the service screen.
+
+### Authenticating with the recovery code {#recoverycode}
+
+If your OTP authentication has been lost, you can log in the service by using the recovery code.
+
+1. On the Login (https://service.whatap.io/account/login) page, log in the service.
+
+2. If the multi-factor authentication screen appears, select <Cmdname sid="BTN07393" className="uitext" />.
+
+   <ImgLang img='account-mfa-recovery.png' desc='Recovery code' />
+
+3. Copy a code from the downloaded recovery code file (_WhaTap-recovery-codes.txt_) and then paste it in the recovery code field.
+
+4. Select <Cmdname sid="authentication" className="uitext" />.
+
+In <Cmdname sid="MNU07360" className="uitext" />, go to the <Cmdname sid="two_factor_auth" className="uitext" /> section, and then attempt authentication with an email address or OTP key.
 
 ## Email token authentication{#email}
 
@@ -87,9 +117,9 @@ If the OTP token validation is successful, you can enter the service screen.
 
 2. Check the verification token (code) received from no-reply@whatap.io. If you have not received any email, check your spam folder.
 
-3. On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the received OTP key in <Cmdname sid="authentication" className="uitext" />. 
+3. Enter the received OTP token in the <Cmdname sid="BTN06501" className="uitext" /> text box. 
 
-4. Select <Cmdname sid="validate_email_token" className="b600" />.
+4. Select <Cmdname sid="validate_email_token" className="uitext" />.
 
 Now you have completed the email-based multi-factor configuration. Log out and then log in the service to check your multi-factor authentication settings.
 
@@ -97,9 +127,9 @@ Now you have completed the email-based multi-factor configuration. Log out and t
 
 1. On the Login (https://service.whatap.io/account/login) page, log in the service.
 
-2. If the multi-factor authentication screen appears, select <Cmdname sid="send_auth_token_mail" className="uitext" />.
+2. If the multi-factor authentication screen appears, check the authentication code received via the email address.
 
-3. Enter the authentication token received via the email and then select <Cmdname sid="validate_email_token" className="uitext" />.
+3. Enter the authentication token received via the email and then select <Cmdname sid="authentication" className="uitext" />.
 
 If the validation of the email authentication token is successful, you can enter the service screen.
 
@@ -107,4 +137,4 @@ If the validation of the email authentication token is successful, you can enter
 
 <ImgLang img='account-mfa-disable.png' desc='Clear Multi-Factor Authentication' />
 
-You can turn off the multi-factor authentication only when you have enabled the multi-factor authentication. On the <Link to="https://service.whatap.io/v2/account/management"><Cmdname sid="manage_account_info" /></Link> page, go to the <Cmdname sid="two_factor_auth" className="uitext" /> section and then select <Cmdname sid="clear_multi_factor" className="uitext" /> or <Cmdname sid="clear_otp_key" className="uitext" />.
+You can turn off the multi-factor authentication only when you have enabled the multi-factor authentication. On the <Link to="https://service.whatap.io/v2/account/management"><Cmdname sid="MNU07360" /></Link> page, go to the <Cmdname sid="two_factor_auth" className="uitext" /> section and then select <Cmdname sid="clear_otp_key" className="uitext" /> or <Cmdname sid="clear_multi_factor" className="uitext" />.

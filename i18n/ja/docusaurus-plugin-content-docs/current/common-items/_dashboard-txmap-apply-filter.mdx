@@ -1,0 +1,39 @@
+## フィルター適用
+
+過去のデータを照会すると、フィルターを適用して希望するデータを素早くフィルタリングすることができます。 
+
+1. タイムセレクターで![一時停止アイコン](/img/ico-pause.svg)ボタンを選択すると、フィルター入力ボックスが表示されます。
+
+   <ImgLang img='txmap-filter.png' desc='フィルター' />
+
+2. フィルター入力ボックスを選択すると、選択できるフィルター項目が表示されます。 選択できる項目は次のとおりです。
+
+   - <Cmdname sid="elapsed" className="uitext" />
+
+   - <Cmdname sid="transaction" className="uitext" />
+
+   - <Cmdname sid="domain" className="uitext" />
+
+   - <Cmdname sid="ip" className="uitext" />
+
+3. フィルタリングできる値がリストされている場合は、目的のアイテムを選択してください。
+
+   :::note
+
+   フィルター項目で<Cmdname sid="elapsed" className="uitext" />を選択すると、ユーザーが直接時間を入力する必要があります。 単位はミリ秒(ms)です。
+
+   :::
+
+4. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+**_Top 30_**一覧と<Cmdname sid="transaction_map" className="uitext" />チャートにフィルタリングしたデータを更新します。
+
+:::note
+
+- 複数の条件を設定してフィルタリングすることができます。 追加した条件は、`&&`を基準として適用されます。 例えば、トランザクションが`/account/save/employee/seoul`でありながら経過時間が3秒以上の場合は、次のように適用できます。
+
+  > `TX` `=` `/account/save/employee/seoul` `経過時間 (ms)` `>=` `3`
+
+- <Cmdname sid="elapsed" className="uitext" />は追加で適用できません。
+
+:::

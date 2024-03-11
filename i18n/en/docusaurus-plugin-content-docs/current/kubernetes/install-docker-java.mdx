@@ -219,22 +219,22 @@ For Java 17 or later, add the `--add-opens=java.base/java.lang=ALL-UNNAMED` opti
 
 Set a security key to query SQL variables and perform HTTP queries, or use the Thread stop function.
 
--   Java Agent 2.2.2 or later
+- Java Agent 2.2.2 or later
 
-    After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
-    ```ini title='security.conf'
-    paramkey=ABCDEF # SQL variable and HTTP query lookup
-    threadkill=ABCDEF # Thread stop function
-    ```
+  ```ini title='security.conf'
+  paramkey=ABCDEF # SQL variable and HTTP query lookup
+  threadkill=ABCDEF # Thread stop function
+  ```
 
--   Java agent 2.2.2 or earlier
+- Java agent 2.2.2 or earlier
 
-    After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
-    ```ini title='paramkey.txt'
-    ABCDEF # SQL variable and HTTP query lookup, thread stop function
-    ```
+  ```ini title='paramkey.txt'
+  ABCDEF # SQL variable and HTTP query lookup, thread stop function
+  ```
 
 :::tip
 
@@ -251,9 +251,9 @@ If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ 
 
 :::note
 
--   For agent settings related to recording SQL parameters, see [the following](../java/agent-dbsql#profile-sql-param).
+- For agent settings related to recording SQL parameters, see [the following](../java/agent-dbsql#profile-sql-param).
 
--   For agent settings related to recording the HTTP parameters, see [the following](../java/agent-transaction#profile_http_parameter).
+- For agent settings related to recording the HTTP parameters, see [the following](../java/agent-transaction#profile_http_parameter).
 
 :::
 
@@ -289,35 +289,35 @@ metadata:
   labels:
     app: #AppLabel
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: #AppLabel
-	replicas: 3
   template:
     metadata:
       labels:
         app: #AppLabel
-		spec:
-		  containers:
-			- name: #ContainerName
+    spec:
+      containers:
+      - name: #ContainerName
         image: nginx
         ports:
         - containerPort: 80
-			  env:
-		    - name: NODE_IP
-	        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-				- name: NODE_NAME
-		      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-		    - name: POD_NAME
-		      valueFrom: {fieldRef: {fieldPath: metadata.name}}
-				- name: OKIND
+        env:
+        - name: NODE_IP
+          valueFrom: {fieldRef: {fieldPath: "status.hostIP"}}
+        - name: NODE_NAME
+          valueFrom: {fieldRef: {fieldPath: "spec.nodeName"}}
+        - name: POD_NAME
+          valueFrom: {fieldRef: {fieldPath: "metadata.name "}}
+        - name: OKIND
           value: #DeploymentName
-				- name: license
-					value: {licenseKey}
-				- name: whatap_server_host
-					value: {proxyServer}
-				- name: whatap_micro_enabled
-					value: "true"
+        - name: license
+          value: #licenseKey
+        - name: whatap_server_host
+          value: #proxyServer
+        - name: whatap_micro_enabled
+          value: "true"
 ```
 
 :::note

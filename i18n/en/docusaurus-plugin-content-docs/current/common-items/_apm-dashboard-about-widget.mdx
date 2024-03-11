@@ -1,0 +1,243 @@
+## Learning about widgets
+
+:::info
+
+This document mainly describes the widgets placed on the <Cmdname sid="application_dashboard" className="uitext" />. For more information about how to analyze transactions and users, services, and resources through <Cmdname sid="application_dashboard" className="uitext" />, see the following documents:
+
+- [Exploring the Application Dashboard](../best-practice-guides/about-apm-dashboard)
+
+- [HITMAP transaction](../best-practice-guides/about-apm-hitmap-class)
+
+- [DB connection delay and connection pool](../best-practice-guides/about-apm-dbc)
+
+:::
+
+### Agent-related widgets
+
+You can see the application information through the agent installed on the application.
+
+#### <Cmdname sid="AA003" />
+
+<ImgLang img='agent-dashboard-summary.png' desc='Application summary' />
+
+It displays the execution status and number of applications registered in the project, CPU core count, and host count.
+
+### Transaction-related widget
+
+The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. <span class='normal'>Blue (Normal)</span> means transactions within the specified response time, <span class='slow'>Orange (Slow)</span> means slow transactions with the response time of around 8 seconds, and <span class='vslow'>Red (Very slow)</span> means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
+
+#### <Cmdname sid="AA001" />
+
+![Active transaction speed](/img/speedmeter.png)
+
+You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
+
+#### <Cmdname sid="AA002" /> {#active-trs}
+
+<ImgLang img='apm-dashboard-active-tx.png' desc='Active transaction' />
+
+In the <Cmdname sid="AA002" className="uitext" /> widget, the transactions in progress are displayed in the <b>arc equalizer</b> chart. You can see the status of delays by agent. The arc is divided by the number of agents. By representing the number of requests being processed by the server every 5 seconds, you can tell how long the request has been processed. Requests detected at an interval of 5 seconds are classified by color as follows to determine whether they are dangerous or not.
+
+- Red (<span class='vslow'>Very Slow</span>): 8 seconds or more 
+
+- Orange (<span class='slow'>Slow</span>): 3 to 8 seconds
+
+- Blue (<span class='normal'>Normal</span>): 0 to 3 seconds
+
+The situation where lots of blue colors are represented is not a problem. You must watch the trend to see whether some of them turn to orange or red. In case of a failure, the number of active transactions increases and the percentage of red color increases. On the other hand, a very responsive system with a high number of process transactions (TPS) might have a low number of active transactions.
+
+- On the upper left, the agent name with the most active transactions appears.
+
+- The middle number is a sum of active transactions of all agents.
+
+- Two bars around active transactions rotate around the chart at a three-step rate based on the throughput (TPS).
+
+- When you select a divided arc area, a pop-up window appears listing the transactions in progress on the agent. To check the transaction details, select an item in the transaction list. 
+
+  <ImgLang img='apm-dashboard-active-tx-popup.png' desc='Transaction List' />
+
+  :::note
+
+  - If the item selected in the transaction list is a transaction that has already ended, select <Cmdname sid="show_trace" className="uitext" />. The <Cmdname sid="TTL06527" className="uitext" /> window appears. For more information about the <Cmdname sid="TTL06527" className="uitext" /> window, see <Link to="trs-profile">the following</Link>.
+
+  - For more information about transactions, see [the following](track-transactions-intro).
+
+  :::
+
+#### <Cmdname sid="AA004" /> {#active-status}
+
+<ImgLang img='apm-dashboard-active-status.png' desc='Active status' />
+
+All agents in the project collect the active transaction count every 5 seconds, along with the progress status. The progress status is classified into <Cmdname sid="active_stat_method" className="uitext" />, <Cmdname sid="sql" className="uitext" />, <Cmdname sid="active_stat_httpc" className="uitext" />, <Cmdname sid="active_stat_dbc" className="uitext" />, and <Cmdname sid="active_stat_socket" className="uitext" />.
+
+- <Cmdname sid="active_stat_method" className="uitext" />: Status in which the method is executing. Normal situations are displayed in blue.
+
+- <Cmdname sid="sql" className="uitext" />: SQL is running. If the <Cmdname sid="sql" className="uitext" /> number increases, check for problems connecting to the database server.
+
+- <Cmdname sid="active_stat_httpc" className="uitext" />: It is calling any external API. If the <Cmdname sid="active_stat_httpc" className="uitext" /> number increases, it means that the server connected to outside is not responding normally.
+
+- <Cmdname sid="active_stat_dbc" className="uitext" />: The transaction is attempting to get a new connection from the connection pool. If DB connection pools are insufficient, a delay occurs whenever a new connection request occurs, causing the performance failure. In this case, the <Cmdname sid="active_stat_dbc" className="uitext" /> number increases.
+
+  :::note
+
+  For more information about the DB connection delay, see [the following](../best-practice-guides/about-apm-dbc).
+
+  :::
+
+- <Cmdname sid="active_stat_socket" className="uitext" />: Indicates the TCP connection attempt to an external system. If the <Cmdname sid="active_stat_socket" className="uitext" /> number continues to increase, there is a high possibility of failures due to disconnection of the external system.
+
+#### <Cmdname sid="AA005" />
+
+<ImgLang img='hitmap.png' desc='Hitmap' />
+
+The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution of response times of completed transactions. The horizontal axis is the transaction end time. The vertical axis is the execution time. Transactions with longer execution times are at the top of the distribution. If you drag the chart area in <Cmdname sid="AA005" className="uitext" />, the <Cmdname sid="TTL06209" className="uitext" /> window appears that you can see the transaction information details. For more information about <Cmdname sid="TTL06209" className="uitext" />, see <Link to="dashboard-hitmap-trace">the following</Link>.
+
+- Normal transactions are displayed in light blue → blue → Indigo in order.
+
+- Erroneous transactions are displayed in yellow → orange → red in order.
+
+- The number on the upper right indicates the <span class='normal'>transaction count</span>/<span class='slow'>error count</span> in the chart.
+
+- If <Cmdname sid="yaxis" className="uitext" /> is selected, the Y-axis (execution time) is automatically adjusted.
+
+- If <Cmdname sid="err" className="uitext" /> is selected, only the error transactions appear.
+
+- Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart from 5 seconds to 80 seconds.
+
+:::note
+
+- The detailed information for the transactions with no error whose execution time is less than 500 ms is collected once every 5 minutes for each URL.
+
+- It does not affect the statistics such as TPS and average response time.
+
+- You can set a policy through the agent configuration. For more information, see [the following](agent-transaction).
+
+- See the following document for the procedure to analyze transactions through the hitmap widget.
+
+:::
+
+### Service-related widget
+
+The service-related widget can be used as the metric for application performance tuning.
+
+#### <Cmdname sid="apdex" />
+
+![Apdex](/img/apm-dashboard-apdex.png)
+
+{@include: ../common-items/_java-apdex-desc.mdx} 
+
+:::note
+
+The default value (S) can be modified in <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />. The value of the setting key is `apdex_time`. It is available only in the agent 2.0 or later.
+
+:::
+
+#### <Cmdname sid="tps" />
+
+![TPS](/img/apm-dashboard-tps.png)
+
+**Transaction Per Second** (**TPS**) indicates the number of transactions processed per second and is the reference for service performance metric. The number of transactions processed every 5 seconds is converted to the number of transactions per second and is expressed with a chart. It displays TPS for the last 10 minutes.
+
+:::note
+
+For more information about analyses for TPS, response time, and CPU utilization, see [the following](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource).
+
+:::
+
+#### <Cmdname sid="avg_restime" />
+
+<ImgLang img='apm-dashboard-avg-response-time.png' desc='Average response time'/>
+
+It monitors the times needed for the application server to return the request result. <Cmdname sid="avg_restime" className="uitext" /> is meaningful as a tuning metric. The WhaTap's monitoring service calculates the average response time for transactions every 5 seconds.
+
+:::note
+
+For more information about analyses for TPS, response time, and CPU utilization, see [the following](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource).
+
+:::
+
+### Resource-related widget
+
+#### <Cmdname sid="system_cpu" />
+
+<ImgLang img='apm-dashboard-cpu.png' desc='System CPU' />
+
+It is the CPU usage of the application server. You can see the change trend in CPU usage in real time.
+
+:::note
+
+For more information about analyses for TPS, response time, and CPU utilization, see [the following](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource).
+
+:::
+
+#### <Cmdname sid="AA010" /> {#heap-memory}
+
+<ImgLang img='apm-dashboard-heap-memory.png' desc='Heap memory' />
+
+You can see which servers are at risk by displaying the maximum available memory and the current memory for each server. The changes in memory usage over time can be seen in real time.
+
+The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). <Cmdname sid="AA010" className="uitext" /> metric is displayed with average values.
+
+:::note
+
+- Java and Node.js display the total heap memory and usage.
+
+- PHP, Python, and .Net display the process memory usage.
+
+:::
+
+:::tip
+
+For more information about the heap memory chart analysis, see the following links.
+
+- [Monthly WhaTap: Metrics to pay attention to monitoring](https://www.whatap.io/ko/blog/94/)
+
+- [Analysis of Java heap memory chart: Observing the Ch.1 heap chart](https://youtu.be/FcWfVrETWh4)
+
+- [Analysis of JAVA heap memory chart: Analysis of Ch.2 memory leak and heap dump](https://youtu.be/t2q5z4HHNfs)
+
+:::
+
+### User-related widget
+
+#### <Cmdname sid="realtime_user" />
+
+<ImgLang img='apm-dashboard-realtime-user.png' desc='Concurrent User' />
+
+It displays the number of real-time browser users. Every 5 seconds, users who made transactions within the last 5 minutes are counted and displayed without duplicates. Users are counted based on their browser's IP.
+
+:::note
+
+<InDoc product='java'>
+
+- In the agent settings, the IP or cookies can be used to distinguish users. For more information, see [the following](agent-additional-option).
+
+</InDoc>
+
+- In general, the connected user means a connected user who has access to the current network. However, web systems are different because they use connectionless networks. It does not mean that you are connected, but rather the user who sent the recent request can be measured.
+
+- Real-time (concurrent access) users indicate the users who are using the system in the same time zone. There are various ways to count or measure real-time (concurrent access) users.
+
+- The number of users is calculated by ** HyperLogLog** rather than simply adding up. ** HyperLogLog** is a probabilistic data structure that estimates the number of elements in a set with very little memory.
+
+:::
+
+### Comparison widget on a daily basis
+
+:::note
+
+The widgets marked with the `All APPS.` tag display the data for all agents.
+
+:::
+
+#### <Cmdname sid="today_tps" />
+
+<ImgLang img="apm-dashboard-today-tps.png" desc="Today's TPS" />
+
+It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" /> appears.
+
+#### <Cmdname sid="daily_visit" />
+
+<ImgLang img="apm-dashboard-today-users.png" desc="Today's Visits" />
+
+This metric shows the number of <Cmdname sid="realtime_user" className="uitext" /> for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" /> appears.

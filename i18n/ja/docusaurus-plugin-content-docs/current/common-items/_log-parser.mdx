@@ -22,7 +22,7 @@ GROKパーサーパターンの登録については、次の動画ガイドを�
 
 {@youtube: skgg5KOFGpI}
 
-### GROKを開始する
+### GROKを開始する {#grok-starting}
 
 GROKは2種類の文法を提供します。
 
@@ -44,6 +44,8 @@ GROKは2種類の文法を提供します。
    | SPACE    | `\s*`                                                  |
    | NOTSPACE | `\S+`                                                  |
    | UUID     | `[A-Fa-f0-9]{8}-(?:[A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}` |
+
+   WhaTapで提供するすべてのnamed regular expressionsを確認したい場合は、次の[リンク](https://github.com/whatap/java-grok/blob/master/src/main/resources/patterns/patterns)を参考にしてください。
 
    :::
 
@@ -184,7 +186,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 - dexBuildElapsed : 56
 ```
 
-### GROKを適用する
+### GROKを適用する {#grok-applying}
 
 **_ログ設定_**>**_ログ一次パーサ設定_**
 
@@ -262,7 +264,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 ログがJSONフォーマットで収集される場合、JSONパーサを使用して簡単かつ便利にパーシングできます。
 
-### JSONを適用する
+### JSONを適用する {#json-applying}
 
 **_ログ設定_**>**_ログ一次パーサ設定_**
 

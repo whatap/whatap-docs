@@ -1,6 +1,6 @@
 Kubernetesから収集される指標の一部は、サーバーモニタリング、アプリケーションと同じです。
 
-### コンテナ(`container`) 指標
+### コンテナ(`container`) 指標 {#container}
 
 `container`カテゴリは、コンテナのPODに設定されているすべてのユーザー定義ラベルをタグとして収集します。
 
@@ -169,7 +169,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | Container Current Status                                                                                                              |
 | ^                       | ^     | コンテナステータス情報<br/>① runningステータス：uptime情報表示<br/>② waiting/terminatedステータス：ステータスに対するreason情報の表示                                          |
 
-### Kubernetesノード(`kube_node`) 指標
+### Kubernetesノード(`kube_node`) 指標 {#kube_node}
 
 `kube_node`カテゴリは、ノードに設定されているすべてのユーザー定義ラベルをタグとして収集します。
 
@@ -196,7 +196,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | request_cpu        | ミリコア    | ノードCPU Request合計        | -  |
 | request_memory     | バイト     | ノードメモリRequest合計         | -  |
 
-### Kubernetesイベント(`kube_event`) 指標
+### Kubernetesイベント(`kube_event`) 指標 {#kube_event}
 
 `kube_event`カテゴリは、クラスタープロジェクトの場合は、クラスター全体を対象としてデータを収集し、ネームスペースプロジェクトの場合は、ネームスペースで発生したイベントのみ収集します。
 
@@ -231,7 +231,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | reporting_instance        | 文字列  | 現在のイベントを報告するインスタンス              | -  |
 | series_last_observed_time | 整数   | series last observed time       | -  |
 
-### Kubernetesクラスター(`kube_stat`) 指標
+### Kubernetesクラスター(`kube_stat`) 指標 {#kube_stat}
 
 `kube_stat`カテゴリは、クラスタープロジェクトのクラスター全体を対象として収集し、ネームスペースプロジェクトは、そのネームスペースに関連するオブジェクトのみ対象に収集します。
 
@@ -272,7 +272,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | unavailable_pod              | 整数        | PhaseがRunning状態ではない(Pending, Failed, Succedded) Pod数                                                         | -                    |
 | waiting_containers           | 整数        | Waiting Container数                                                                                           | -                    |
 
-### Pod(`kube_pod`) 指標
+### Pod(`kube_pod`) 指標 {#kube_pod}
 
 `kube_pod`カテゴリは、Podに設定されているすべてのユーザー定義ラベルをタグとして収集します。
 
@@ -309,116 +309,113 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 #### Fields
 
-| フィールド名                  | 単位    | (Shortname, Name, Description)                                                         |
-| ----------------------- | ----- | -------------------------------------------------------------------------------------- |
-| blkio_rbps              | バイト   | IoReadBytes                                                                            |
-| ^                       | ^     | Pod Block I/O Read Byte                                                                |
-| ^                       | ^     | Pod全体ブロックデバイスの1秒あたり読み込みバイトの合計                                                          |
-| blkio_riops             | 件数    | IoReadIops                                                                             |
-| ^                       | ^     | Pod Block I/O Read IOPS                                                                |
-| ^                       | ^     | Pod全体ブロックデバイスの1秒当たり読み込み件数の合計                                                           |
-| blkio_wbps              | バイト   | IoWriteBytes                                                                           |
-| ^                       | ^     | Pod Block I/O Write Byte                                                               |
-| ^                       | ^     | Pod全体ブロックデバイスの1秒あたり書き込みバイトの合計                                                          |
-| blkio_wiops             | 件数    | IoWriteIops                                                                            |
-| ^                       | ^     | Pod Block I/O Write IOPS                                                               |
-| ^                       | ^     | Pod全体ブロックデバイスの1秒当たり書き込み件数の合計                                                           |
-| cpu_per_limit           | パーセント | CpuByLimit                                                                             |
-| ^                       | ^     | Pod CPU Usage by Limit (%)                                                             |
-| ^                       | ^     | CPU Limit基準CPUの全体使用率                                                                   |
-| cpu_per_request         | パーセント | CpuByRequest                                                                           |
-| ^                       | ^     | Pod CPU Usage by Limit (%)                                                             |
-| ^                       | ^     | CPU Limit基準CPUの全体使用率                                                                   |
-| cpu_quota_percent       | パーセント | CpuLimitByNode                                                                         |
-| ^                       | ^     | Pod CPU Limit by Node (%)                                                              |
-| ^                       | ^     | ノードCPUに対するPod CPU Limit割当量<br/>Limit未設定の場合、Podが実行中のノードのCPU全体コアがパーセントで表示される。            |
-| cpu_sys                 | パーセント | CpuSysByNode                                                                           |
-| ^                       | ^     | Pod CPU Sys Usage by Node (%)                                                          |
-| ^                       | ^     | ノードCPUに対するPod CPU System使用率                                                            |
-| cpu_throttledperiods    | 件数    | CpuThrottledCnt                                                                        |
-| ^                       | ^     | Pod CPU Throttling Count                                                               |
-| ^                       | ^     | Pod CPU Throttled件数                                                                    |
-| cpu_throttledtime       | ナノ秒   | CpuThrottledTime                                                                       |
-| ^                       | ^     | Pod CPU Throttling Time                                                                |
-| ^                       | ^     | Pod CPU Throttled時間                                                                    |
-| cpu_total               | パーセント | CpuByNode                                                                              |
-| ^                       | ^     | Pod CPU Usage by Node (%)                                                              |
-| ^                       | ^     | ノードCPUに対するPod CPU使用率                                                                   |
-| cpu_total_milli         | ミリコア  | CpuTotUsage                                                                            |
-| ^                       | ^     | Pod CPU Usage (millicore)                                                              |
-| ^                       | ^     | Pod CPU使用率                                                                             |
-| cpu_user                | パーセント | CpuUserByNode                                                                          |
-| ^                       | ^     | Pod CPU User Usage by Node (%)                                                         |
-| ^                       | ^     | ノードCPUに対するPod CPU User使用率                                                              |
-| cpu_request             | ミリコア  | CpuRequest                                                                             |
-| ^                       | ^     | Pod CPU Request (core)                                                                 |
-| ^                       | ^     | Pod CPUリクエスト                                                                           |
-| cpu_per_request         | パーセント | CpuByRequest                                                                           |
-| ^                       | ^     | Pod CPU Usage by Request (%)                                                           |
-| ^                       | ^     | Pod CPUリクエストに対する使用率<br/>= cpu_total_milli / cpu_request \* 100                         |
-| mem_totalcache          | バイト   | MemTotCache                                                                            |
-| ^                       | ^     | Pod Memory Total Cache (byte)                                                          |
-| ^                       | ^     | Pod全体のキャッシュサイズ                                                                         |
-| mem_totalpgfault        | 回数    | MemTotPageFaultCnt                                                                     |
-| ^                       | ^     | Pod Memory Total Page Fault Count                                                      |
-| ^                       | ^     | Pod PageFault回数                                                                        |
-| mem_totalrss            | バイト   | MemTotRss                                                                              |
-| ^                       | ^     | Pod Memory Total RSS (byte)                                                            |
-| ^                       | ^     | Pod RSSメモリ全体サイズ                                                                        |
-| mem_totalrss_percent    | パーセント | MemTotRssByLimit                                                                       |
-| ^                       | ^     | Pod Memory Total RSS by Limit (%)                                                      |
-| ^                       | ^     | Pod RSSメモリ全体使用率                                                                        |
-| mem_totalunevictable    | バイト   | MemTotUnevictable                                                                      |
-| ^                       | ^     | Pod Memory Total Unevictable (byte)                                                    |
-| ^                       | ^     | Pod Unevictable Memory全体サイズ                                                            |
-| mem_usage               | バイト   | MemUsage                                                                               |
-| ^                       | ^     | Pod Memory Usage (byte)                                                                |
-| ^                       | ^     | Podメモリ使用量                                                                              |
-| mem_working_set         | バイト   | MemWs                                                                                  |
-| ^                       | ^     | Pod Memory Working Set (byte)                                                          |
-| ^                       | ^     | Podメモリworking set<br/>= mem_usage - inactive file                                      |
-| mem_working_set_percent | パーセント | MemWsByLimit                                                                           |
-| ^                       | ^     | Pod Memory Working Set by Limit (%)                                                    |
-| ^                       | ^     | Podメモリ割当量基準working set使用量<br/>= mem_working_set / mem_limit \* 100                     |
-| memory_request          | バイト   | MemRequest                                                                             |
-| ^                       | ^     | Pod Memory Request (byte)                                                              |
-| ^                       | ^     | Podメモリー要求量                                                                             |
-| memory_limit            | バイト   | MemLimit                                                                               |
-| ^                       | ^     | Pod Memory Limit (byte)                                                                |
-| ^                       | ^     | PodメモリLimit割当量                                                                         |
-| memory_per_request      | パーセント | MemByRequest                                                                           |
-| ^                       | ^     | Pod Memory by Request (%)                                                              |
-| ^                       | ^     | Podメモリ要求量基準使用量                                                                         |
-| memory_per_limit        | パーセント | MemByLimit                                                                             |
-| ^                       | ^     | Pod Memory by Limit (%)                                                                |
-| ^                       | ^     | PodメモリLimit基準使用量                                                                       |
-| network_rbps            | バイト   | NetRxBytes                                                                             |
-| ^                       | ^     | Pod Network Receive Byte                                                               |
-| ^                       | ^     | Pod全体ブロックデバイスの1秒あたり読み込みバイトの合計                                                          |
-| network_rdropped        | バイト   | NetRxDropped                                                                           |
-| ^                       | ^     | Pod Network Receive Dropped                                                            |
-| ^                       | ^     | Podネットワーク受信のdropped件数                                                                  |
-| network_rerror          | バイト   | NetRxError                                                                             |
-| ^                       | ^     | Pod Network Receive Error                                                              |
-| ^                       | ^     | Podネットワーク受信エラー件数                                                                       |
-| network_riops           | バイト   | NetRxIops                                                                              |
-| ^                       | ^     | Pod Network Receive IOPS                                                               |
-| ^                       | ^     | Podネットワーク受信件数                                                                          |
-| network_wbps            | バイト   | NetTxByes                                                                              |
-| ^                       | ^     | Pod Network Transmit Byte                                                              |
-| ^                       | ^     | Podネットワーク送信データサイズ                                                                      |
-| network_wdropped        | 件数    | NetTxDropped                                                                           |
-| ^                       | ^     | Pod Network Transmit Dropped                                                           |
-| ^                       | ^     | Podネットワーク送信dropped件数                                                                   |
-| network_werror          | 件数    | NetTxError                                                                             |
-| ^                       | ^     | Pod Network Transmit Error                                                             |
-| ^                       | ^     | Podネットワーク送信エラー件数                                                                       |
-| network_wiops           | 件数    | NetTxIops                                                                              |
-| ^                       | ^     | Pod Network Transmit IOPS                                                              |
-| ^                       | ^     | Podネットワーク送信件数                                                                          |
-| phase                   | 文字列   | Phase                                                                                  |
-| ^                       | ^     | Pod Current Phase                                                                      |
-| ^                       | ^     | Podライフサイクル<br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN |
+| フィールド名               | 単位    | (Shortname, Name, Description)                                                         |
+| -------------------- | ----- | -------------------------------------------------------------------------------------- |
+| blkio_rbps           | バイト   | IoReadBytes                                                                            |
+| ^                    | ^     | Pod Block I/O Read Byte                                                                |
+| ^                    | ^     | Pod全体ブロックデバイスの1秒あたり読み込みバイトの合計                                                          |
+| blkio_riops          | 件数    | IoReadIops                                                                             |
+| ^                    | ^     | Pod Block I/O Read IOPS                                                                |
+| ^                    | ^     | Pod全体ブロックデバイスの1秒当たり読み込み件数の合計                                                           |
+| blkio_wbps           | バイト   | IoWriteBytes                                                                           |
+| ^                    | ^     | Pod Block I/O Write Byte                                                               |
+| ^                    | ^     | Pod全体ブロックデバイスの1秒あたり書き込みバイトの合計                                                          |
+| blkio_wiops          | 件数    | IoWriteIops                                                                            |
+| ^                    | ^     | Pod Block I/O Write IOPS                                                               |
+| ^                    | ^     | Pod全体ブロックデバイスの1秒当たり書き込み件数の合計                                                           |
+| cpu_per_limit        | パーセント | CpuByLimit                                                                             |
+| ^                    | ^     | Pod CPU Usage by Limit (%)                                                             |
+| ^                    | ^     | CPU Limit基準CPUの全体使用率                                                                   |
+| cpu_per_request      | パーセント | CpuByRequest                                                                           |
+| ^                    | ^     | Pod CPU Usage by Limit (%)                                                             |
+| ^                    | ^     | CPU Limit基準CPUの全体使用率                                                                   |
+| cpu_quota_percent    | パーセント | CpuLimitByNode                                                                         |
+| ^                    | ^     | Pod CPU Limit by Node (%)                                                              |
+| ^                    | ^     | ノードCPUに対するPod CPU Limit割当量<br/>Limit未設定の場合、Podが実行中のノードのCPU全体コアがパーセントで表示される。            |
+| cpu_sys              | パーセント | CpuSysByNode                                                                           |
+| ^                    | ^     | Pod CPU Sys Usage by Node (%)                                                          |
+| ^                    | ^     | ノードCPUに対するPod CPU System使用率                                                            |
+| cpu_throttledperiods | 件数    | CpuThrottledCnt                                                                        |
+| ^                    | ^     | Pod CPU Throttling Count                                                               |
+| ^                    | ^     | Pod CPU Throttled件数                                                                    |
+| cpu_throttledtime    | ナノ秒   | CpuThrottledTime                                                                       |
+| ^                    | ^     | Pod CPU Throttling Time                                                                |
+| ^                    | ^     | Pod CPU Throttled時間                                                                    |
+| cpu_total            | パーセント | CpuByNode                                                                              |
+| ^                    | ^     | Pod CPU Usage by Node (%)                                                              |
+| ^                    | ^     | ノードCPUに対するPod CPU使用率                                                                   |
+| cpu_total_milli      | ミリコア  | CpuTotUsage                                                                            |
+| ^                    | ^     | Pod CPU Usage (millicore)                                                              |
+| ^                    | ^     | Pod CPU使用率                                                                             |
+| cpu_user             | パーセント | CpuUserByNode                                                                          |
+| ^                    | ^     | Pod CPU User Usage by Node (%)                                                         |
+| ^                    | ^     | ノードCPUに対するPod CPU User使用率                                                              |
+| cpu_request          | ミリコア  | CpuRequest                                                                             |
+| ^                    | ^     | Pod CPU Request (core)                                                                 |
+| ^                    | ^     | Pod CPUリクエスト                                                                           |
+| cpu_per_request      | パーセント | CpuByRequest                                                                           |
+| ^                    | ^     | Pod CPU Usage by Request (%)                                                           |
+| ^                    | ^     | Pod CPUリクエストに対する使用率<br/>= cpu_total_milli / cpu_request \* 100                         |
+| mem_totalcache       | バイト   | MemTotCache                                                                            |
+| ^                    | ^     | Pod Memory Total Cache (byte)                                                          |
+| ^                    | ^     | Pod全体のキャッシュサイズ                                                                         |
+| mem_totalpgfault     | 回数    | MemTotPageFaultCnt                                                                     |
+| ^                    | ^     | Pod Memory Total Page Fault Count                                                      |
+| ^                    | ^     | Pod PageFault回数                                                                        |
+| mem_totalrss         | バイト   | MemTotRss                                                                              |
+| ^                    | ^     | Pod Memory Total RSS (byte)                                                            |
+| ^                    | ^     | Pod RSSメモリ全体サイズ                                                                        |
+| mem_totalrss_percent | パーセント | MemTotRssByLimit                                                                       |
+| ^                    | ^     | Pod Memory Total RSS by Limit (%)                                                      |
+| ^                    | ^     | Pod RSSメモリ全体使用率                                                                        |
+| mem_totalunevictable | バイト   | MemTotUnevictable                                                                      |
+| ^                    | ^     | Pod Memory Total Unevictable (byte)                                                    |
+| ^                    | ^     | Pod Unevictable Memory全体サイズ                                                            |
+| mem_usage            | バイト   | MemUsage                                                                               |
+| ^                    | ^     | Pod Memory Usage (byte)                                                                |
+| ^                    | ^     | Podメモリ使用量                                                                              |
+| mem_working_set      | バイト   | MemWs                                                                                  |
+| ^                    | ^     | Pod Memory Working Set (byte)                                                          |
+| ^                    | ^     | Podメモリworking set<br/>= mem_usage - inactive file                                      |
+| memory_request       | バイト   | MemRequest                                                                             |
+| ^                    | ^     | Pod Memory Request (byte)                                                              |
+| ^                    | ^     | Podメモリー要求量                                                                             |
+| memory_limit         | バイト   | MemLimit                                                                               |
+| ^                    | ^     | Pod Memory Limit (byte)                                                                |
+| ^                    | ^     | PodメモリLimit割当量                                                                         |
+| memory_per_request   | パーセント | MemByRequest                                                                           |
+| ^                    | ^     | Pod Memory by Request (%)                                                              |
+| ^                    | ^     | Podメモリ要求量基準使用量                                                                         |
+| memory_per_limit     | パーセント | MemByLimit                                                                             |
+| ^                    | ^     | Pod Memory by Limit (%)                                                                |
+| ^                    | ^     | PodメモリLimit基準使用量                                                                       |
+| network_rbps         | バイト   | NetRxBytes                                                                             |
+| ^                    | ^     | Pod Network Receive Byte                                                               |
+| ^                    | ^     | Pod全体ブロックデバイスの1秒あたり読み込みバイトの合計                                                          |
+| network_rdropped     | バイト   | NetRxDropped                                                                           |
+| ^                    | ^     | Pod Network Receive Dropped                                                            |
+| ^                    | ^     | Podネットワーク受信のdropped件数                                                                  |
+| network_rerror       | バイト   | NetRxError                                                                             |
+| ^                    | ^     | Pod Network Receive Error                                                              |
+| ^                    | ^     | Podネットワーク受信エラー件数                                                                       |
+| network_riops        | バイト   | NetRxIops                                                                              |
+| ^                    | ^     | Pod Network Receive IOPS                                                               |
+| ^                    | ^     | Podネットワーク受信件数                                                                          |
+| network_wbps         | バイト   | NetTxByes                                                                              |
+| ^                    | ^     | Pod Network Transmit Byte                                                              |
+| ^                    | ^     | Podネットワーク送信データサイズ                                                                      |
+| network_wdropped     | 件数    | NetTxDropped                                                                           |
+| ^                    | ^     | Pod Network Transmit Dropped                                                           |
+| ^                    | ^     | Podネットワーク送信dropped件数                                                                   |
+| network_werror       | 件数    | NetTxError                                                                             |
+| ^                    | ^     | Pod Network Transmit Error                                                             |
+| ^                    | ^     | Podネットワーク送信エラー件数                                                                       |
+| network_wiops        | 件数    | NetTxIops                                                                              |
+| ^                    | ^     | Pod Network Transmit IOPS                                                              |
+| ^                    | ^     | Podネットワーク送信件数                                                                          |
+| phase                | 文字列   | Phase                                                                                  |
+| ^                    | ^     | Pod Current Phase                                                                      |
+| ^                    | ^     | Podライフサイクル<br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN |
 
 次のフィールドは内部用に予約されています。
 
@@ -439,7 +436,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | sless_info           | メトリクス情報状態イベント発生件数                        | -  |
 | sless_warning        | メトリクス警告状態イベント発生件数                        | -  |
 
-### Kubernetes Pod統計(`kube_pod_stat`) 指標
+### Kubernetes Pod統計(`kube_pod_stat`) 指標 {#kube_pod_stat}
 
 `kube_pod_stat`カテゴリのクラスタープロジェクトは、クラスター全体のデータを収集し、ネームスペースプロジェクトは、ネームスペースに所属するPodのデータのみ収集します。
 
@@ -469,7 +466,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | stopped_container | 整数        | Stopped Container数                                                                                           | -  |
 | waiting_container | 整数        | Waiting Container数                                                                                           | -  |
 
-### Kubernetes Horizontal Pod Autoscaler(HPA)(`kube_hpa_stat`) 指標
+### Kubernetes Horizontal Pod Autoscaler(HPA)(`kube_hpa_stat`) 指標 {#kube_hpa_stat}
 
 WhaTapで使用するCluster RoleにHPAが追加されると、指標収集が開始されます。
 

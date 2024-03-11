@@ -1,6 +1,6 @@
 Some metrics collected by Kubernetes are the same as those of server and application monitoring.
 
-### Container(`container`) metric
+### Container(`container`) metric {#container}
 
 The `container` category collects all custom labels set on the container's pods as tags.
 
@@ -169,7 +169,7 @@ The `container` category collects all custom labels set on the container's pods 
 | ^                       | ^               | Container Current Status                                                                                                                                       |
 | ^                       | ^               | Container State Information<br/>① running: Displays the uptime information<br/>② waiting/terminated: Displays the reason of the state                          |
 
-### Kubernetes node (`kube_node`) metric
+### Kubernetes node (`kube_node`) metric {#kube_node}
 
 The `kube_node` category collects all custom labels set on the node as tags.
 
@@ -196,7 +196,7 @@ The `kube_node` category collects all custom labels set on the node as tags.
 | request_cpu            | Millicore            | Sum of node CPU requests                      | -       |
 | request_memory         | Byte                 | Sum of node memory requests                   | -       |
 
-### Kubernetes event (`kube_event`) metric
+### Kubernetes event (`kube_event`) metric {#kube_event}
 
 The `kube_event` category collects cluster-wide data for cluster projects, and collects data only for events that occurred in the namespace for namespace projects.
 
@@ -231,7 +231,7 @@ The `kube_event` category collects cluster-wide data for cluster projects, and c
 | reporting_instance            | String            | Instance that reports the current event  | -       |
 | series_last_observed_time     | Positive number   | Series last observed time                | -       |
 
-### Kubernetes Cluster (`kube_stat`) metric
+### Kubernetes Cluster (`kube_stat`) metric {#kube_stat}
 
 The `kube_stat` category collects all the clusters for the cluster project, and the namespace projects collects objects associated with the namespace.
 
@@ -272,7 +272,7 @@ The `kube_stat` category collects all the clusters for the cluster project, and 
 | unavailable_pod                  | Positive number      | Number of pods whose phase is not in Running state (Pending, Failed, Succedded)                                                                                         | -                         |
 | waiting_containers               | Positive number      | Waiting container count                                                                                                                                                 | -                         |
 
-### Pod (`kube_pod`) metric
+### Pod (`kube_pod`) metric {#kube_pod}
 
 The `kube_pod` category collects all custom labels set on the Pod as tags.
 
@@ -309,116 +309,113 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 
 #### Fields
 
-| Field name              | Unit       | (Shortname, Name, Description)                                                                                                                    |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blkio_rbps              | Byte       | IoReadBytes                                                                                                                                       |
-| ^                       | ^          | Pod Block I/O Read Byte                                                                                                                           |
-| ^                       | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
-| blkio_riops             | Count      | IoReadIops                                                                                                                                        |
-| ^                       | ^          | Pod Block I/O Read IOPS                                                                                                                           |
-| ^                       | ^          | Sum of cases read per second across all block devices in the Pod                                                                                  |
-| blkio_wbps              | Byte       | IoWriteBytes                                                                                                                                      |
-| ^                       | ^          | Pod Block I/O Write Byte                                                                                                                          |
-| ^                       | ^          | Sum of bytes written per second across all block devices in the Pod                                                                               |
-| blkio_wiops             | Count      | IoWriteIops                                                                                                                                       |
-| ^                       | ^          | Pod Block I/O Write IOPS                                                                                                                          |
-| ^                       | ^          | Sum of cases written per second across all block devices in the Pod                                                                               |
-| cpu_per_limit           | Percentage | CpuByLimit                                                                                                                                        |
-| ^                       | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
-| ^                       | ^          | Container CPU utilization by limit                                                                                                                |
-| cpu_per_request         | Percentage | CpuByRequest                                                                                                                                      |
-| ^                       | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
-| ^                       | ^          | Container CPU utilization by limit                                                                                                                |
-| cpu_quota_percent       | Percentage | CpuLimitByNode                                                                                                                                    |
-| ^                       | ^          | Pod CPU Limit by Node (%)                                                                                                                         |
-| ^                       | ^          | Pod CPU limit quota against node CPU<br/>If the limit is not set, the total CPU cores of the node where the Pod is running appears in percentage. |
-| cpu_sys                 | Percentage | CpuSysByNode                                                                                                                                      |
-| ^                       | ^          | Pod CPU Sys Usage by Node (%)                                                                                                                     |
-| ^                       | ^          | Pod CPU System Utilization against Node CPU                                                                                                       |
-| cpu_throttledperiods    | Count      | CpuThrottledCnt                                                                                                                                   |
-| ^                       | ^          | Pod CPU Throttling Count                                                                                                                          |
-| ^                       | ^          | Pod CPU Throttled Count                                                                                                                           |
-| cpu_throttledtime       | Nanosecond | CpuThrottledTime                                                                                                                                  |
-| ^                       | ^          | Pod CPU Throttling Time                                                                                                                           |
-| ^                       | ^          | Pod CPU Throttled Time                                                                                                                            |
-| cpu_total               | Percentage | CpuByNode                                                                                                                                         |
-| ^                       | ^          | Pod CPU Usage by Node (%)                                                                                                                         |
-| ^                       | ^          | Pod CPU Utilization against Node CPU                                                                                                              |
-| cpu_total_milli         | Millicore  | CpuTotUsage                                                                                                                                       |
-| ^                       | ^          | Pod CPU Usage (millicore)                                                                                                                         |
-| ^                       | ^          | Pod CPU Utilization                                                                                                                               |
-| cpu_user                | Percentage | CpuUserByNode                                                                                                                                     |
-| ^                       | ^          | Pod CPU User Usage by Node (%)                                                                                                                    |
-| ^                       | ^          | Pod CPU User Utilization against Node CPU                                                                                                         |
-| cpu_request             | Millicore  | CpuRequest                                                                                                                                        |
-| ^                       | ^          | Pod CPU Request (core)                                                                                                                            |
-| ^                       | ^          | Pod CPU Request                                                                                                                                   |
-| cpu_per_request         | Percentage | CpuByRequest                                                                                                                                      |
-| ^                       | ^          | Pod CPU Usage by Request (%)                                                                                                                      |
-| ^                       | ^          | Utilization against Pod CPU Request<br/>= cpu_total_milli/cpu_request \* 100                                                                      |
-| mem_totalcache          | Byte       | MemTotCache                                                                                                                                       |
-| ^                       | ^          | Pod Memory Total Cache (byte)                                                                                                                     |
-| ^                       | ^          | Total Pod Cache Size                                                                                                                              |
-| mem_totalpgfault        | Count      | MemTotPageFaultCnt                                                                                                                                |
-| ^                       | ^          | Pod Memory Total Page Fault Count                                                                                                                 |
-| ^                       | ^          | Pod's Page Fault Count                                                                                                                            |
-| mem_totalrss            | Byte       | MemTotRss                                                                                                                                         |
-| ^                       | ^          | Pod Memory Total RSS (byte)                                                                                                                       |
-| ^                       | ^          | Pod's Total RSS Memory Size                                                                                                                       |
-| mem_totalrss_percent    | Percentage | MemTotRssByLimit                                                                                                                                  |
-| ^                       | ^          | Pod Memory Total RSS by Limit (%)                                                                                                                 |
-| ^                       | ^          | Pod's Total RSS Memory Utilization                                                                                                                |
-| mem_totalunevictable    | Byte       | MemTotUnevictable                                                                                                                                 |
-| ^                       | ^          | Pod Memory Total Unevictable (byte)                                                                                                               |
-| ^                       | ^          | Pod's Total Unevictable Memory Size                                                                                                               |
-| mem_usage               | Byte       | MemUsage                                                                                                                                          |
-| ^                       | ^          | Pod Memory Usage (byte)                                                                                                                           |
-| ^                       | ^          | Pod Memory Usage                                                                                                                                  |
-| mem_working_set         | Byte       | MemWs                                                                                                                                             |
-| ^                       | ^          | Pod Memory Working Set (byte)                                                                                                                     |
-| ^                       | ^          | Pod Memory working set<br/>= mem_usage - inactive file                                                                                            |
-| mem_working_set_percent | Percentage | MemWsByLimit                                                                                                                                      |
-| ^                       | ^          | Pod Memory Working Set by Limit (%)                                                                                                               |
-| ^                       | ^          | Working set usage based on pod memory quota<br/>= mem_working_set/mem_limit \* 100                                                                |
-| memory_request          | Byte       | MemRequest                                                                                                                                        |
-| ^                       | ^          | Pod Memory Request (byte)                                                                                                                         |
-| ^                       | ^          | Pod memory requests                                                                                                                               |
-| memory_limit            | Byte       | MemLimit                                                                                                                                          |
-| ^                       | ^          | Pod Memory Limit (byte)                                                                                                                           |
-| ^                       | ^          | Pod memory limit quota                                                                                                                            |
-| memory_per_request      | Percentage | MemByRequest                                                                                                                                      |
-| ^                       | ^          | Pod Memory by Request (%)                                                                                                                         |
-| ^                       | ^          | Usage based on Pod memory requests                                                                                                                |
-| memory_per_limit        | Percentage | MemByLimit                                                                                                                                        |
-| ^                       | ^          | Pod Memory by Limit (%)                                                                                                                           |
-| ^                       | ^          | Usage based on Pod memory limit                                                                                                                   |
-| network_rbps            | Byte       | NetRxBytes                                                                                                                                        |
-| ^                       | ^          | Pod Network Receive Byte                                                                                                                          |
-| ^                       | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
-| network_rdropped        | Byte       | NetRxDropped                                                                                                                                      |
-| ^                       | ^          | Pod Network Receive Dropped                                                                                                                       |
-| ^                       | ^          | Pod Network Receive Dropped Count                                                                                                                 |
-| network_rerror          | Byte       | NetRxError                                                                                                                                        |
-| ^                       | ^          | Pod Network Receive Error                                                                                                                         |
-| ^                       | ^          | Pod Network Receive Error Count                                                                                                                   |
-| network_riops           | Byte       | NetRxIops                                                                                                                                         |
-| ^                       | ^          | Pod Network Receive IOPS                                                                                                                          |
-| ^                       | ^          | Pod Network Receive Count                                                                                                                         |
-| network_wbps            | Byte       | NetTxByes                                                                                                                                         |
-| ^                       | ^          | Pod Network Transmit Byte                                                                                                                         |
-| ^                       | ^          | Pod Network Transmit Data Size                                                                                                                    |
-| network_wdropped        | Count      | NetTxDropped                                                                                                                                      |
-| ^                       | ^          | Pod Network Transmit Dropped                                                                                                                      |
-| ^                       | ^          | Pod Network Transmit Dropped Count                                                                                                                |
-| network_werror          | Count      | NetTxError                                                                                                                                        |
-| ^                       | ^          | Pod Network Transmit Error                                                                                                                        |
-| ^                       | ^          | Pod Network Transmit Error Count                                                                                                                  |
-| network_wiops           | Count      | NetTxIops                                                                                                                                         |
-| ^                       | ^          | Pod Network Transmit IOPS                                                                                                                         |
-| ^                       | ^          | Pod Network Transmit Count                                                                                                                        |
-| phase                   | String     | Phase                                                                                                                                             |
-| ^                       | ^          | Pod Current Phase                                                                                                                                 |
-| ^                       | ^          | Pod lifecycle <br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                        |
+| Field name           | Unit       | (Shortname, Name, Description)                                                                                                                    |
+| -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| blkio_rbps           | Byte       | IoReadBytes                                                                                                                                       |
+| ^                    | ^          | Pod Block I/O Read Byte                                                                                                                           |
+| ^                    | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
+| blkio_riops          | Count      | IoReadIops                                                                                                                                        |
+| ^                    | ^          | Pod Block I/O Read IOPS                                                                                                                           |
+| ^                    | ^          | Sum of cases read per second across all block devices in the Pod                                                                                  |
+| blkio_wbps           | Byte       | IoWriteBytes                                                                                                                                      |
+| ^                    | ^          | Pod Block I/O Write Byte                                                                                                                          |
+| ^                    | ^          | Sum of bytes written per second across all block devices in the Pod                                                                               |
+| blkio_wiops          | Count      | IoWriteIops                                                                                                                                       |
+| ^                    | ^          | Pod Block I/O Write IOPS                                                                                                                          |
+| ^                    | ^          | Sum of cases written per second across all block devices in the Pod                                                                               |
+| cpu_per_limit        | Percentage | CpuByLimit                                                                                                                                        |
+| ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
+| ^                    | ^          | Container CPU utilization by limit                                                                                                                |
+| cpu_per_request      | Percentage | CpuByRequest                                                                                                                                      |
+| ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
+| ^                    | ^          | Container CPU utilization by limit                                                                                                                |
+| cpu_quota_percent    | Percentage | CpuLimitByNode                                                                                                                                    |
+| ^                    | ^          | Pod CPU Limit by Node (%)                                                                                                                         |
+| ^                    | ^          | Pod CPU limit quota against node CPU<br/>If the limit is not set, the total CPU cores of the node where the Pod is running appears in percentage. |
+| cpu_sys              | Percentage | CpuSysByNode                                                                                                                                      |
+| ^                    | ^          | Pod CPU Sys Usage by Node (%)                                                                                                                     |
+| ^                    | ^          | Pod CPU System Utilization against Node CPU                                                                                                       |
+| cpu_throttledperiods | Count      | CpuThrottledCnt                                                                                                                                   |
+| ^                    | ^          | Pod CPU Throttling Count                                                                                                                          |
+| ^                    | ^          | Pod CPU Throttled Count                                                                                                                           |
+| cpu_throttledtime    | Nanosecond | CpuThrottledTime                                                                                                                                  |
+| ^                    | ^          | Pod CPU Throttling Time                                                                                                                           |
+| ^                    | ^          | Pod CPU Throttled Time                                                                                                                            |
+| cpu_total            | Percentage | CpuByNode                                                                                                                                         |
+| ^                    | ^          | Pod CPU Usage by Node (%)                                                                                                                         |
+| ^                    | ^          | Pod CPU Utilization against Node CPU                                                                                                              |
+| cpu_total_milli      | Millicore  | CpuTotUsage                                                                                                                                       |
+| ^                    | ^          | Pod CPU Usage (millicore)                                                                                                                         |
+| ^                    | ^          | Pod CPU Utilization                                                                                                                               |
+| cpu_user             | Percentage | CpuUserByNode                                                                                                                                     |
+| ^                    | ^          | Pod CPU User Usage by Node (%)                                                                                                                    |
+| ^                    | ^          | Pod CPU User Utilization against Node CPU                                                                                                         |
+| cpu_request          | Millicore  | CpuRequest                                                                                                                                        |
+| ^                    | ^          | Pod CPU Request (core)                                                                                                                            |
+| ^                    | ^          | Pod CPU Request                                                                                                                                   |
+| cpu_per_request      | Percentage | CpuByRequest                                                                                                                                      |
+| ^                    | ^          | Pod CPU Usage by Request (%)                                                                                                                      |
+| ^                    | ^          | Utilization against Pod CPU Request<br/>= cpu_total_milli/cpu_request \* 100                                                                      |
+| mem_totalcache       | Byte       | MemTotCache                                                                                                                                       |
+| ^                    | ^          | Pod Memory Total Cache (byte)                                                                                                                     |
+| ^                    | ^          | Total Pod Cache Size                                                                                                                              |
+| mem_totalpgfault     | Count      | MemTotPageFaultCnt                                                                                                                                |
+| ^                    | ^          | Pod Memory Total Page Fault Count                                                                                                                 |
+| ^                    | ^          | Pod's Page Fault Count                                                                                                                            |
+| mem_totalrss         | Byte       | MemTotRss                                                                                                                                         |
+| ^                    | ^          | Pod Memory Total RSS (byte)                                                                                                                       |
+| ^                    | ^          | Pod's Total RSS Memory Size                                                                                                                       |
+| mem_totalrss_percent | Percentage | MemTotRssByLimit                                                                                                                                  |
+| ^                    | ^          | Pod Memory Total RSS by Limit (%)                                                                                                                 |
+| ^                    | ^          | Pod's Total RSS Memory Utilization                                                                                                                |
+| mem_totalunevictable | Byte       | MemTotUnevictable                                                                                                                                 |
+| ^                    | ^          | Pod Memory Total Unevictable (byte)                                                                                                               |
+| ^                    | ^          | Pod's Total Unevictable Memory Size                                                                                                               |
+| mem_usage            | Byte       | MemUsage                                                                                                                                          |
+| ^                    | ^          | Pod Memory Usage (byte)                                                                                                                           |
+| ^                    | ^          | Pod Memory Usage                                                                                                                                  |
+| mem_working_set      | Byte       | MemWs                                                                                                                                             |
+| ^                    | ^          | Pod Memory Working Set (byte)                                                                                                                     |
+| ^                    | ^          | Pod Memory working set<br/>= mem_usage - inactive file                                                                                            |
+| memory_request       | Byte       | MemRequest                                                                                                                                        |
+| ^                    | ^          | Pod Memory Request (byte)                                                                                                                         |
+| ^                    | ^          | Pod memory requests                                                                                                                               |
+| memory_limit         | Byte       | MemLimit                                                                                                                                          |
+| ^                    | ^          | Pod Memory Limit (byte)                                                                                                                           |
+| ^                    | ^          | Pod memory limit quota                                                                                                                            |
+| memory_per_request   | Percentage | MemByRequest                                                                                                                                      |
+| ^                    | ^          | Pod Memory by Request (%)                                                                                                                         |
+| ^                    | ^          | Usage based on Pod memory requests                                                                                                                |
+| memory_per_limit     | Percentage | MemByLimit                                                                                                                                        |
+| ^                    | ^          | Pod Memory by Limit (%)                                                                                                                           |
+| ^                    | ^          | Usage based on Pod memory limit                                                                                                                   |
+| network_rbps         | Byte       | NetRxBytes                                                                                                                                        |
+| ^                    | ^          | Pod Network Receive Byte                                                                                                                          |
+| ^                    | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
+| network_rdropped     | Byte       | NetRxDropped                                                                                                                                      |
+| ^                    | ^          | Pod Network Receive Dropped                                                                                                                       |
+| ^                    | ^          | Pod Network Receive Dropped Count                                                                                                                 |
+| network_rerror       | Byte       | NetRxError                                                                                                                                        |
+| ^                    | ^          | Pod Network Receive Error                                                                                                                         |
+| ^                    | ^          | Pod Network Receive Error Count                                                                                                                   |
+| network_riops        | Byte       | NetRxIops                                                                                                                                         |
+| ^                    | ^          | Pod Network Receive IOPS                                                                                                                          |
+| ^                    | ^          | Pod Network Receive Count                                                                                                                         |
+| network_wbps         | Byte       | NetTxByes                                                                                                                                         |
+| ^                    | ^          | Pod Network Transmit Byte                                                                                                                         |
+| ^                    | ^          | Pod Network Transmit Data Size                                                                                                                    |
+| network_wdropped     | Count      | NetTxDropped                                                                                                                                      |
+| ^                    | ^          | Pod Network Transmit Dropped                                                                                                                      |
+| ^                    | ^          | Pod Network Transmit Dropped Count                                                                                                                |
+| network_werror       | Count      | NetTxError                                                                                                                                        |
+| ^                    | ^          | Pod Network Transmit Error                                                                                                                        |
+| ^                    | ^          | Pod Network Transmit Error Count                                                                                                                  |
+| network_wiops        | Count      | NetTxIops                                                                                                                                         |
+| ^                    | ^          | Pod Network Transmit IOPS                                                                                                                         |
+| ^                    | ^          | Pod Network Transmit Count                                                                                                                        |
+| phase                | String     | Phase                                                                                                                                             |
+| ^                    | ^          | Pod Current Phase                                                                                                                                 |
+| ^                    | ^          | Pod lifecycle <br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                        |
 
 The following fields are reserved for internal use.
 
@@ -439,7 +436,7 @@ The following fields are reserved for internal use.
 | sless_info               | Number of events that are not informative in the metric      | -       |
 | sless_warning            | Number of events that are not for warning in the metric      | -       |
 
-### Kubernetes Pod Statistics (`kube_pod_stat`) metric
+### Kubernetes Pod Statistics (`kube_pod_stat`) metric {#kube_pod_stat}
 
 The `kube_pod_stat` category cluster project collects data for all clusters, and the namespace project collects data only for pods that belong to the namespace.
 
@@ -469,7 +466,7 @@ The `kube_pod_stat` category cluster project collects data for all clusters, and
 | stopped_container     | Positive number      | Stopped Container Count                                                                                                                                                 | -       |
 | waiting_container     | Positive number      | Waiting container count                                                                                                                                                 | -       |
 
-### Kubernetes Horizontal Pod Autoscaler (HPA) (`kube_hpa_stat`) metric
+### Kubernetes Horizontal Pod Autoscaler (HPA) (`kube_hpa_stat`) metric {#kube_hpa_stat}
 
 Metric collection starts only when HPA is added to the ClusterRole used by WhaTap.
 

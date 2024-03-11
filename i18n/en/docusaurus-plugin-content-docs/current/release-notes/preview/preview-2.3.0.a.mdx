@@ -1,0 +1,107 @@
+---
+id: preview-2_3_0x
+title: Preview 2.3.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance.
+
+:::
+
+## Preview 2.3.0.a1
+
+February 29, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Fixed</Status> Modified to remove the filtered content of the selected project when changing the selected project of the filter in <Cmdname sid="flexboard" className="uitext" /> (each filter is applied on a project basis).
+
+- <Status>Changed</Status> Changed the English name of the <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" /> menu (<b>Configuration</b> → <span class="uitext">Notifications</span>).
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the link to the list menu.
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the guide for the Pod phase and phases of the selected category.
+
+- <Status>Fixed</Status> Changed the <code>MemUsage</code> metric to the <code>MemWs</code> metric in the following menu paths:
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />
+  - <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />
+  - <Cmdname sid="workload" className="uitext" /> &gt; <Cmdname sid="podList" className="uitext" />
+  - <Cmdname sid="cluster" className="uitext" /> &gt; <Cmdname sid="kubeApiserverDashboard" className="uitext" />
+
+* * *
+
+### `Database`
+
+<p>In <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="flexboard" className="uitext" />, added the active session table filter.</p>
+
+#### Redis, Mongo <code class="my">V2</code>
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />, displayed the master-slave relationship.
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />, added the <UI>cluster name</UI> column.
+
+</div>
+
+## Preview 2.3.0.a0
+
+February 22, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Feature</Status> Added the <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> function that has strengthened user experience based on the metric field.
+
+  :::note
+
+  - For more information about the new <Cmdname sid="event_setting" className="uitext" /> menu, see [the following](https://docs.whatap.io/java/warning-notice-v2/).
+
+  - This function can be seen in the ![Icon](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> path.
+
+  :::
+
+- <Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="integrated_member_management" className="uitext" />, disabled the <Cmdname sid="delete" className="uitext" /> button to prevent the members in the subgroups under organization from being deleted.
+
+- <Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="integrated_member_management" className="uitext" />, modified to display an alert when a unique member who has the roles for <b>payment</b> and <b>member management</b> has been deleted.
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> window, improved the CRUD display format when checking the SQL details.</p>
+
+* * *
+
+### `Database`
+
+#### Database <code class="my">V2</code>
+
+- <Status>Feature</Status> Added the function to display the session details when a column is clicked in the <Cmdname sid="lock_tree" className="uitext" /> table in the following paths:
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />
+
+- <Status>Fixed</Status> Fixed the issue where the waiter ID does not appear in the <Cmdname sid="lock_tree" className="uitext" /> table in the following menu paths:
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> / <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified to enable the <Cmdname sid="lock_tree" className="uitext" /> in the table below if the chart of the <span class="uitext">Lock Wait Sessions</span> widget is clicked.
+
+</div>

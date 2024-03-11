@@ -1,0 +1,39 @@
+## Applying filters
+
+While viewing the past data, you can quickly filter out the data by applying filters. 
+
+1. If ![Pause icon](/img/ico-pause.svg) is selected in the time selector, the filter input box appears.
+
+   <ImgLang img='txmap-filter.png' desc='Filter' />
+
+2. If the filter field is selected, the filters that can be selected appear. You can select the following options.
+
+   - <Cmdname sid="elapsed" className="uitext" />
+
+   - <Cmdname sid="transaction" className="uitext" />
+
+   - <Cmdname sid="domain" className="uitext" />
+
+   - <Cmdname sid="ip" className="uitext" />
+
+3. If the list of filterable values appears, select desired items.
+
+   :::note
+
+   If <Cmdname sid="elapsed" className="uitext" /> is selected as a filter, enter the time. The unit is milliseconds (ms).
+
+   :::
+
+4. Select ![Search icon](/img/ico-btn-search.png).
+
+It updates the filtered data in the **_Top 30_** list and the <Cmdname sid="transaction_map" className="uitext" /> chart.
+
+:::note
+
+- You can perform filtering by setting multiple conditions. Added conditions are applied based on `&&`. For example, if the transaction is `/account/save/employee/seoul` and the elapsed time is more than 3 seconds, you can apply as follows:
+
+  > `Transaction` `=` `/account/save/employee/seoul` `Elapsed time (ms)` `>=` `3`
+
+- <Cmdname sid="elapsed" className="uitext" /> cannot be applied additionally.
+
+:::

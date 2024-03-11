@@ -1,0 +1,50 @@
+---
+id: server-aix
+title: AIX
+description: AIX環境でエージェントをインストールする方法を提供します。
+tags:
+  - Server
+  - インストール
+  - Unix
+  - AIX
+hide_table_of_contents: true
+draft: false
+---
+
+:::note 
+
+AIX 6.Xバージョン以降に対応します。
+
+:::
+
+新規作成したサーバーモニタリングプロジェクトを選択すると、**_エージェントのインストール_**画面が表示されます。 プロジェクト**_管理_** >**_エージェントのインストール_**メニューから行うことができます。
+
+<ImgLang img='server-install-unx-aix.png' desc='サーバーモニタリング AIX'/>
+
+1. **_管理_** > **_エージェントインストール_**画面上段の![number-s](/img/number-01.png) OSタブで**_AIX_**を選択してください。 
+
+2. ![number-s](/img/number-02.png) **_インストールファイルのダウンロード_**タブで_whatap-infra-latest.noarch.rpm_ボタンを選択し、エージェントのインストールファイルをダウンロードしてください。
+
+3. ![number-s](/img/number-03.png) **_インストールファイルの実行_**タブに移動し、次の実行コマンドを確認してからパッケージを実行してください。
+
+   ```bash
+   rpm -Uvh whatap-infra-latest.noarch.rpm
+   ```
+
+:::note 
+
+サーバーセキュリティのために**インストールファイル**はダウンロード形式でのみ提供します。
+
+:::
+
+### エージェント実行
+
+次のコマンドを実行して、サーバーモニタリングを開始してください。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集し始めます。 
+
+```bash
+echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
+echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
+echo "createdtime=date +%s%S" |tee -a /usr/whatap/infra/conf/whatap.conf
+stopsrc -s whatap-infra
+startsrc -s whatap-infra
+```

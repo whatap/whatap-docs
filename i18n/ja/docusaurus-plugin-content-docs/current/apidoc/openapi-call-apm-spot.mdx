@@ -40,33 +40,35 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
     "act_sql": "24",
     "act_httpc": "64",
     "act_dbc": "10",
-    "act_socket": "0"
+    "act_socket": "0",
+    "apdex": "0.9871"
 }
 ```
 
-| Response Field    |            Field Type           | 説明                                      |
-| ----------------- | :-----------------------------: | --------------------------------------- |
-| pcode             | <span class='api'>number</span> | 取得したプロジェクトコード                           |
-| act_agent         | <span class='api'>string</span> | [アクティベーション状態のエージェント数](#active-agent)    |
-| inact_agent       | <span class='api'>string</span> | [非アクティブ状態のエージェント数](#deactive-agent)     |
-| host              | <span class='api'>string</span> | [ホスト(HOST) 数](#host-count)              |
-| cpucore           | <span class='api'>string</span> | [ホストCPUコアの合計数](#sum-cpu)                |
-| txcount           | <span class='api'>string</span> | [トランザクション数](#count-transaction)         |
-| tps               | <span class='api'>string</span> | [TPS](#tps)                             |
-| ユーザー              | <span class='api'>string</span> | [アクティブユーザー(5分)](#active-user-5m)        |
-| actx              | <span class='api'>string</span> | [アクティブトランザクション](#active-transaction)    |
-| rtime             | <span class='api'>string</span> | [平均応答時間](#response-time)                |
-| cpu               | <span class='api'>string</span> | [平均CPU使用率](#usage-cpu)                  |
-| threadpool_active | <span class='api'>string</span> | [スレッドプールのアクティブスレッド数](#count-threadpool) |
-| threadpool_queue  | <span class='api'>string</span> | スレッドプールのキューイングスレッド数                     |
-| dbconn_total      | <span class='api'>string</span> | 全体DB Connection数                        |
-| dbconn_act        | <span class='api'>string</span> | アクティブ(Active) DB 接続の数                   |
-| dbconn_idle       | <span class='api'>string</span> | 非アクティブな (idle) DB 接続の数                  |
-| act_method        | <span class='api'>string</span> | アクティブMethod数                            |
-| act_sql           | <span class='api'>string</span> | アクティブSQL数                               |
-| act_httpc         | <span class='api'>string</span> | アクティブHTTP Call数                         |
-| act_dbc           | <span class='api'>string</span> | アクティブDB Connection数                     |
-| act_socket        | <span class='api'>string</span> | アクティブSocket数                            |
+| Response Field    |            Field Type           | 説明                                                                                         |
+| ----------------- | :-----------------------------: | ------------------------------------------------------------------------------------------ |
+| pcode             | <span class='api'>number</span> | 取得したプロジェクトコード                                                                              |
+| act_agent         | <span class='api'>string</span> | [アクティベーション状態のエージェント数](#active-agent)                                                       |
+| inact_agent       | <span class='api'>string</span> | [非アクティブ状態のエージェント数](#deactive-agent)                                                        |
+| host              | <span class='api'>string</span> | [ホスト(HOST) 数](#host-count)                                                                 |
+| cpucore           | <span class='api'>string</span> | [ホストCPUコアの合計数](#sum-cpu)                                                                   |
+| txcount           | <span class='api'>string</span> | [トランザクション数](#count-transaction)                                                            |
+| tps               | <span class='api'>string</span> | [TPS](#tps)                                                                                |
+| ユーザー              | <span class='api'>string</span> | [アクティブユーザー(5分)](#active-user-5m)                                                           |
+| actx              | <span class='api'>string</span> | [アクティブトランザクション](#active-transaction)                                                       |
+| rtime             | <span class='api'>string</span> | [平均応答時間](#response-time)                                                                   |
+| cpu               | <span class='api'>string</span> | [平均CPU使用率](#usage-cpu)                                                                     |
+| threadpool_active | <span class='api'>string</span> | [スレッドプールのアクティブスレッド数](#count-threadpool)                                                    |
+| threadpool_queue  | <span class='api'>string</span> | スレッドプールのキューイングスレッド数                                                                        |
+| dbconn_total      | <span class='api'>string</span> | 全体DB Connection数                                                                           |
+| dbconn_act        | <span class='api'>string</span> | アクティブ(Active) DB 接続の数                                                                      |
+| dbconn_idle       | <span class='api'>string</span> | 非アクティブな (idle) DB 接続の数                                                                     |
+| act_method        | <span class='api'>string</span> | アクティブMethod数                                                                               |
+| act_sql           | <span class='api'>string</span> | アクティブSQL数                                                                                  |
+| act_httpc         | <span class='api'>string</span> | アクティブHTTP Call数                                                                            |
+| act_dbc           | <span class='api'>string</span> | アクティブDB Connection数                                                                        |
+| act_socket        | <span class='api'>string</span> | アクティブSocket数                                                                               |
+| apdex             | <span class='api'>string</span> | [Apdex](#apdex)([Application Performance Index](https://www.apdex.org/), アプリケーションのユーザー満足度) |
 
 ## アクティブ状態のエージェント数{#active-agent}
 
@@ -192,6 +194,18 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ```json title='response'
 9.26//CPUの平均使用率
+```
+
+## Apdex {#apdex}
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/apdex
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/apdex"
+```
+
+```json title='response'
+0.9871
 ```
 
 ## アクティブ／非アクティブ状態のエージェント情報

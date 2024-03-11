@@ -1,0 +1,23 @@
+## Changing the lookup criteria
+
+Select the chart area of <Cmdname sid="transaction_map" /> and then the button at the upper left to change the data lookup criteria.
+
+- <Cmdname sid="elapsed" className="uitext" />: The data is searched based on the elapsed time of the executed transaction.
+
+- <Cmdname sid="httpcTime" className="uitext" />: The data is searched based on the response time for HTTP calls.
+
+- <Cmdname sid="sqlTime" className="uitext" />: The data is searched based on the SQL patch time.
+
+If you select **_Error_** on the upper right of the chart area, you can view only the transactions with errors. If you drag a transaction on the chart in this state, the <Cmdname sid="TTL06209" className="uitext" /> window that displays a list of erroneous transactions. To view all transactions, select **_Total_**.
+
+:::tip
+
+You can easily change the maximum value of the Y-axis by selecting ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) on the upper left of the chart. You can also access the same function by pressing the up or down button on the keyboard.
+
+:::
+
+:::note
+
+The maximum number of transactions (<span class="uitext">TX Max</span>) displayed on the chart in <Cmdname sid="transaction_map" /> is 2,000,000.
+
+:::

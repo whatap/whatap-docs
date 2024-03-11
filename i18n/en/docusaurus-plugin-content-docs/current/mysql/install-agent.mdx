@@ -19,7 +19,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 <Youtube ko='RhU3f3d7k1A' en='wQbXDKNdDfA' ja='wQbXDKNdDfA' />
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}
 
 {@include: ../getting-started/_accesskey.mdx} 
 
@@ -86,25 +86,101 @@ The following guides you to the basic installation method for using the WhaTap d
 
 <!-- MySQL-->
 
-```bash showLineNumbers
-create user whatap identified by 'DB_PASSWORD'; # Enter a desired password.
+<Tabs groupId="mysql-db">
+<TabItem value="mysql" label="MySQL">
+
+```bash
+create user whatap identified by 'DB_PASSWORD'; # Enter the desired password.
 grant process on *.* to whatap;
 grant select on performance_schema.* to whatap;
 grant show databases on *.* to whatap;
- 
-# In case of collecting the table data
-grant select on *.* to whatap;
-# In case of monitoring tables only in a specific DB
-# grant select on {DB_NAME}.* to whatap;
- 
-# In case of using replication
-grant replication client on *.* to whatap;
-grant replication slave on *.* to whatap;
- 
-# In case of using the kill session
-grant super on *.* to whatap;
-grant execute on procedure mysql.rds_kill to whatap;  # In case of using AWS RDS
 ```
+
+Assign additional roles depending on the features and operation environment.
+
+- In case of collecting all table data
+
+  ```bash
+  grant select on *.* to whatap;
+  ```
+
+- In case of monitoring tables only in a specific DB
+
+  ```bash
+  grant select on {DB_NAME}.* to whatap;
+  ```
+
+- In case of using replication
+
+  ```bash
+  grant replication client on *.* to whatap;
+  grant replication slave on *.* to whatap;
+  ```
+
+- In case of using the kill session
+
+  ```bash
+  grant super on *.* to whatap;
+  ```
+
+- In case of using the kill session in the AWS RDS environment
+
+  ```bash
+  grant execute on procedure mysql.rds_kill to whatap;
+  ```
+
+</TabItem>
+<TabItem value="mariadb" label="MariaDB">
+
+```bash
+create user whatap identified by 'DB_PASSWORD'; # Enter the desired password.
+grant process on *.* to whatap;
+grant select on performance_schema.* to whatap;
+grant show databases on *.* to whatap;
+```
+
+Assign additional roles depending on the features and operation environment.
+
+- In case of collecting all table data
+
+  ```bash
+  grant select on *.* to whatap;
+  ```
+
+- In case of monitoring tables only in a specific DB
+
+  ```bash
+  grant select on {DB_NAME}.* to whatap;
+  ```
+
+- In case of using replication
+
+  ```bash title="below MariaDB 10.5.1"
+  grant replication client, replication slave on *.* to whatap;
+  ```
+
+  ```bash title="MariaDB 10.5.2 ~ 10.5.8"
+  grant replication master admin, replication slave admin, binlog monitor on *.* to whatap;
+  ```
+
+  ```bash title="MariaDB 10.5.9 or later"
+  grant replication master admin, replica monitor, binlog monitor on *.* to whatap;
+  ```
+
+- In case of using the kill session
+
+  ```bash
+  grant super on *.* to whatap;
+  ```
+
+- In case of using the kill session in the AWS RDS environment
+
+  ```bash
+  grant execute on procedure mysql.rds_kill to whatap;
+  ```
+
+</TabItem>
+</Tabs>
 
 ## DB user file creation {#create-db-user}
 

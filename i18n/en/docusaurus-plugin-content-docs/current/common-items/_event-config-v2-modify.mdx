@@ -1,0 +1,164 @@
+## Modifying event {#modify-event}
+
+You can modify the metric values applied in basic event templates for changing the warning notification occurrence criteria. In addition, you can change the notification occurrence criteria through various option settings. Select ![Edit icon](/img/ico-edit.svg) on the event to modify. The event editing screen appears. Modify the following items and then select <Cmdname sid="save" className="uitext" />.
+
+### <Cmdname sid="TTL07362" />
+
+You can set the criteria for event occurrence conditions.
+
+<ImgLang img='event-config-v2-condition-common.png' desc='Define event condition' />
+
+- <Cmdname sid="run" className="uitext" />: After setting the event conditions, you can simulate the set event by selecting the button.
+
+  <ImgLang img='event-config-v2-simulation-common.png' desc='Event simulation' />
+
+- <Cmdname sid="TTL07365" className="uitext" replace="</br>" />: You can set the thresholds for the <span class="slow">Warning</span> or <span class="vslow">Critical</span> notifications. Set an operator and then enter thresholds.
+
+  - Operators: `>` (greater than), `>=` (greater than or equal to), `<` (less than), `<=` (less than or equal to), `==` (equal to)
+
+  - You can enter a positive number, negative number, or 0 as the threshold, but whether to enter a negative number may differ depending on the selected event template.
+
+  :::note
+
+  - Depending on the provided event template, the notification levels that can be set may differ.
+
+  - You can select one of <span class="slow">Warning</span> and <span class="vslow">Critical</span>. However, you cannot disable both two items.
+
+  :::
+
+- <Cmdname sid="TTL07366" className="uitext" />: You can send notifications based on the count that meets the specified event conditions.
+
+  - <Cmdname sid="ITM07369" className="uitext" />: Notifications are sent each time any event occurs.
+
+  - <Cmdname sid="TTL07366" className="uitext" />: Notifications are sent each time any event occurs as many as you specified.
+
+- <Cmdname sid="TTL07367" className="uitext" />: No event occurs for the selected time after receiving the notification.
+
+- <Cmdname sid="TTL07368" className="uitext" />: When the event is resolved, notify the status of <b>RECOVERED</b>.
+
+:::tip
+
+The criteria for sending notifications differ depending on the following conditions:
+
+| <Cmdname sid="TTL07366" className="uitext" />                                                 | <Cmdname sid="TTL07368" className="uitext" /> | Action                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------- | :-------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <Cmdname sid="ITM07369" className="uitext" />                                                 |                     **On**                    | Notifications are sent when the specified event conditions are met or resolved.                                                                         |
+| ^                                                                                             |                    **Off**                    | The notifications are sent whenever the specified conditions are met.                                                                                   |
+| <Cmdname sid="TTL07366" className="uitext" /> N <Cmdname sid="ITM07370" className="uitext" /> |                     **On**                    | Notifications are sent when a condition is met at least N times or an event is resolved at least N times.                                               |
+| ^                                                                                             |                    **Off**                    | A notification is sent if the event conditions you set are met more than N times. After sending a notification, the count is reset and it is recounted. |
+
+:::
+
+### <Cmdname sid="TTL07363" />
+
+<InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+You can set to send events that occur only on specific agents as notifications. Click the <Cmdname sid="TLT07556" className="uitext" /> item and then select a desired agent.
+
+<ImgLang img='event-config-v2-target-apm.png' desc='Select event target' />
+
+</InDoc>
+
+<InDoc product="mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis">
+
+You can set to send events that occur only on specific agents as notifications. Click the <Cmdname sid="TLT07556" className="uitext" /> item and then select a desired agent. After selecting the agent, you can additionally select the database name (**_DbName_**) of the connected DB server.
+
+<ImgLang img='event-config-v2-target-db.png' desc='Select event target' />
+
+</InDoc>
+
+<InDoc product="server">
+
+You can set to send events that occur only on specific agents as notifications. Click the <Cmdname sid="TLT07557" className="uitext" /> item and then select a desired agent.
+
+<ImgLang img='event-config-v2-target-server.png' desc='Select event target' />
+
+</InDoc>
+
+<InDoc product="browser">
+
+You can set to send events that occur only on a specific page group as notifications. Click the <span class="uitext">Page_group</span> item and then select a desired page group.
+
+<ImgLang img='event-config-v2-target-browser.png' desc='Select event target' />
+
+</InDoc>
+
+<InDoc product="npm">
+
+You can set to send events that occur only on specific targets as notifications. Click each item in <Cmdname sid="ITM07588" className="uitext" /> and then select a desired target.
+
+<ImgLang img='event-config-v2-target-npm.png' desc='Select event target' />
+
+:::tip
+
+The selectable targets are grouped monitoring units applied with the **tagRule** option. For more information about the **tagRule** options, see [the following](set-tagrule).
+
+:::
+
+</InDoc>
+
+:::note
+
+- Depending on the provided template, selectable targets may differ.
+
+- To check the event occurrence status for the selected targets, select <Cmdname sid="run" className="uitext" /> in <Cmdname sid="TTL07362" className="uitext" />.
+
+<Xclude product="browser,npm">
+
+- If you do not select a target, notifications are sent to all agents included in the project. When an event occurs across all agents, it can generate numerous notifications.
+
+</Xclude>
+
+<InDoc product="browser">
+
+- If you do not select a target, notifications are sent to all page groups. When an event occurs across all page groups, it can generate numerous notifications.
+
+</InDoc>
+
+<InDoc product="npm">
+
+- If you do not select a target, notifications are sent to all network groups. When an event occurs across all network groups, it can generate numerous notifications.
+
+</InDoc>
+
+:::
+
+### <Cmdname sid="TTL07364" />
+
+You can write a title and message for the event received as a notification, and then select the recipients.
+
+<ImgLang img='event-config-v2-info-receive-common.png' desc='Basic information and notification setting' />
+
+- <Cmdname sid="enable_events" className="uitext" />: You can enable the current events.
+
+- <Cmdname sid="event_title" className="uitext" />: The event name of the basic template has been specified. You can edit the event name as you want.
+
+- <Cmdname sid="TTL06883" className="uitext" />: The message of the basic template has been specified. You can edit the message as you want. If the <LinkImage img="ico-timing.svg" className="ico" desc="time icon" /> button is clicked, you can see the history of previously entered messages.
+
+  :::tip
+
+  You can write a message by entering the <code>${Tag}</code> or <code>${Field}</code> variable in the message field.
+
+  In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />, select <Cmdname sid="category" className="uitext" /> and then check the <code>&#36;&#123;Tag&#125;</code> or <code>&#36;&#123;Field&#125;</code> variable that can be entered. For the <Cmdname sid="category" className="uitext" /> name of the current event template, see the <b>Category</b> in <Link to="#basic-template">the following</Link>
+
+  :::
+
+- <Cmdname sid="alert_test" className="uitext" />: When receiving notifications as events, you can pre-check the specified event name and message. Testing is possible only when the required items (<Cmdname sid="TTL07365" className="uitext" replace="</br>" />, <Cmdname sid="event_title" className="uitext" />, and <Cmdname sid="TTL06883" className="uitext" />) are all entered.
+
+  :::note
+
+  During testing, substitution for actual metric values or variables does not work, and the notifications cannot be sent only to users with recipient tags.
+
+  :::
+
+- <Cmdname sid="TTL07415" className="uitext" />: You can select members to receive notifications from current events.
+
+  - <Cmdname sid="ITM07419" className="uitext" />: You can send notifications to all the members in the project.
+
+  - <Cmdname sid="ITM07420" className="uitext" />: It sends notifications to project members and 3rd-party plugins with the selected tags. Click <Cmdname sid="add_tag" className="uitext" /> or <LinkImage img="ico-add.svg" className="ico" /> to select a tag from the tag list.
+
+  :::note
+
+  In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
+
+  :::
