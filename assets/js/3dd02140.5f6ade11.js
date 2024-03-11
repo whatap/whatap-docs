@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[22081],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[50577],{
 
-/***/ 75760:
+/***/ 38789:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -103,27 +103,27 @@ const frontMatter = {
     title: '에이전트 설치',
     description: '와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.',
     tags: [
-        'MongoDB',
+        'Altibase',
         '데이터베이스 모니터링',
         '에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mongodb/install-agent",
-    "id": "mongodb/install-agent",
+    "unversionedId": "altibase/install-agent",
+    "id": "altibase/install-agent",
     "title": "에이전트 설치",
     "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
-    "source": "@site/docs/mongodb/install-agent.mdx",
-    "sourceDirName": "mongodb",
-    "slug": "/mongodb/install-agent",
-    "permalink": "/whatap-docs/mongodb/install-agent",
+    "source": "@site/docs/altibase/install-agent.mdx",
+    "sourceDirName": "altibase",
+    "slug": "/altibase/install-agent",
+    "permalink": "/whatap-docs/altibase/install-agent",
     "draft": false,
-    "editUrl": "undefined/docs/mongodb/install-agent.mdx",
+    "editUrl": "undefined/docs/altibase/install-agent.mdx",
     "tags": [
         {
-            "label": "MongoDB",
-            "permalink": "/whatap-docs/tags/mongo-db"
+            "label": "Altibase",
+            "permalink": "/whatap-docs/tags/altibase"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -140,19 +140,19 @@ const metadata = {
         "title": "에이전트 설치",
         "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
         "tags": [
-            "MongoDB",
+            "Altibase",
             "데이터베이스 모니터링",
             "에이전트"
         ]
     },
-    "sidebar": "mongodbSidebar",
+    "sidebar": "altibaseSidebar",
     "previous": {
         "title": "지원 환경",
-        "permalink": "/whatap-docs/mongodb/monitoring-support"
+        "permalink": "/whatap-docs/altibase/monitoring-support"
     },
     "next": {
         "title": "설치 점검 사항",
-        "permalink": "/whatap-docs/mongodb/after-install-agent"
+        "permalink": "/whatap-docs/altibase/after-install-agent"
     }
 };
 const assets = {};
@@ -740,24 +740,26 @@ function MDXContent(_param) {
     }, `license=프로젝트 액세스 키
 whatap.server.host=13.124.11.223/13.209.172.35 // 와탭 서버 정보
 
-dbms=mongodb
+dbms=altibase
 db=데이터베이스명(sid)
 db_ip=데이터베이스IP
-db_port=데이터베이스 포트 
+db_port=데이터베이스 포트
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `다음 디렉터리에 JDBC 드라이버를 다운로드하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `다음 경로에 JDBC 드라이버를 다운로드하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `/압축해제한 폴더/jdbc`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `데이터베이스 서버의 운영체제와 버전에 맞는 JDBC 드라이버를 다운로드하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+    }, `데이터베이스 서버의 운영체제와 버전에 맞는 JDBC 드라이버를 다운로드하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `MongoDB JDBC Drivers`), `: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+    }, `Altibase JDBC Drivers`), `: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://github.com/mongodb/mongo-jdbc-driver"
-    }, `https://github.com/mongodb/mongo-jdbc-driver`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "href": "http://support.altibase.com/kr/product"
+    }, `http://support.altibase.com/kr/product`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -765,15 +767,28 @@ db_port=데이터베이스 포트
         parentName: "p"
     }, `/압축해제한 폴더/jdbc/README.md`), ` 파일에서 각 데이터베이스별 JDBC 드라이버 설치 경로를 확인할 수도 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "uid"
-    }, `모니터링용 계정 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `모니터링용 계정 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `데이터베이스 모니터링을 하기 위해 필요한 권한을 가진 계정을 생성합니다. root(admin) 계정으로 로그인해 계정을 생성하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `MongoDB`), ` 플랫폼은 모니터링용 계정 생성 과정을 생략합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `이미 있는 계정을 사용하고 싶다면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "#create-db-user"
+    }, `DB 유저 파일 생성`), `으로 넘어가세요. 권한이 없을 경우 모니터링을 시작할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `예시 코드에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `whatap`), `은 DB 사용자 계정 이름입니다. 사용자가 이용하는 사용자 계정 이름으로 변경하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `create user whatap identified by '[DB_PASSWORD]'; ## 원하는 password를 입력하세요.
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "create-db-user"
     }, `DB 유저 파일 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `데이터베이스 접속을 위해 암호화된 UID를 생성합니다. username과 password를 입력하고 쉘 스크립트(또는 배치 파일)를 실행하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"

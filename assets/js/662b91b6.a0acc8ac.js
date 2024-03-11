@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[52653],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[22081],{
 
-/***/ 56947:
+/***/ 75760:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -103,27 +103,27 @@ const frontMatter = {
     title: '에이전트 설치',
     description: '와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.',
     tags: [
-        'Tibero',
+        'MongoDB',
         '데이터베이스 모니터링',
         '에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "tibero/install-agent",
-    "id": "tibero/install-agent",
+    "unversionedId": "mongodb/install-agent",
+    "id": "mongodb/install-agent",
     "title": "에이전트 설치",
     "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
-    "source": "@site/docs/tibero/install-agent.mdx",
-    "sourceDirName": "tibero",
-    "slug": "/tibero/install-agent",
-    "permalink": "/whatap-docs/tibero/install-agent",
+    "source": "@site/docs/mongodb/install-agent.mdx",
+    "sourceDirName": "mongodb",
+    "slug": "/mongodb/install-agent",
+    "permalink": "/whatap-docs/mongodb/install-agent",
     "draft": false,
-    "editUrl": "undefined/docs/tibero/install-agent.mdx",
+    "editUrl": "undefined/docs/mongodb/install-agent.mdx",
     "tags": [
         {
-            "label": "Tibero",
-            "permalink": "/whatap-docs/tags/tibero"
+            "label": "MongoDB",
+            "permalink": "/whatap-docs/tags/mongo-db"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -140,19 +140,19 @@ const metadata = {
         "title": "에이전트 설치",
         "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
         "tags": [
-            "Tibero",
+            "MongoDB",
             "데이터베이스 모니터링",
             "에이전트"
         ]
     },
-    "sidebar": "tiberoSidebar",
+    "sidebar": "mongodbSidebar",
     "previous": {
         "title": "지원 환경",
-        "permalink": "/whatap-docs/tibero/monitoring-support"
+        "permalink": "/whatap-docs/mongodb/monitoring-support"
     },
     "next": {
         "title": "설치 점검 사항",
-        "permalink": "/whatap-docs/tibero/after-install-agent"
+        "permalink": "/whatap-docs/mongodb/after-install-agent"
     }
 };
 const assets = {};
@@ -211,7 +211,7 @@ function MDXContent(_param) {
     }, `회원 가입`), ` 후 프로젝트를 생성하고 대상 서버에 에이전트를 설치해야 합니다. 회원 가입에 관한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../account/account-manage"
-    }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 동영상 가이드를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Youtube, {
+    }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 동영상 가이드를 참조하세요.   `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Youtube, {
         ko: "RhU3f3d7k1A",
         en: "wQbXDKNdDfA",
         ja: "wQbXDKNdDfA",
@@ -740,9 +740,9 @@ function MDXContent(_param) {
     }, `license=프로젝트 액세스 키
 whatap.server.host=13.124.11.223/13.209.172.35 // 와탭 서버 정보
 
-dbms=tibero
+dbms=mongodb
 db=데이터베이스명(sid)
-db_ip=데이터베이스 IP
+db_ip=데이터베이스IP
 db_port=데이터베이스 포트 
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
@@ -756,48 +756,26 @@ db_port=데이터베이스 포트
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `Tibero JDBC Drivers`), `: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `{$TB_HOME}`), `/client/lib/jar/tibero`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `{Version}`), `-jdbc.jar`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        parentName: "li",
+    }, `MongoDB JDBC Drivers`), `: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "https://github.com/mongodb/mongo-jdbc-driver"
+    }, `https://github.com/mongodb/mongo-jdbc-driver`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
-    }, `/압축해제한 폴더/jdbc/README.md`), ` 파일에서 각 데이터베이스별 JDBC 드라이버 설치 경로를 확인할 수도 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `/압축해제한 폴더/jdbc/README.md`), ` 파일에서 각 데이터베이스별 JDBC 드라이버 설치 경로를 확인할 수도 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "uid"
-    }, `모니터링용 계정 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `데이터베이스 모니터링을 하기 위해 필요한 권한을 가진 계정을 생성합니다. root(admin) 계정으로 로그인해 계정을 생성하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `모니터링용 계정 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "li"
-    }, `이미 있는 계정을 사용하고 싶다면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "#create-db-user"
-    }, `DB 유저 파일 생성`), `으로 넘어가세요. 권한이 없을 경우 모니터링을 시작할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `예시 코드에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `whatap`), `은 DB 사용자 계정 이름입니다. 사용자가 이용하는 사용자 계정 이름으로 변경하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-bash",
-        "metastring": "showLineNumbers",
-        "showLineNumbers": true
-    }, `create user whatap identified by 'DB_PASSWORD'; ## 원하는 password를 입력하세요.
-grant create session to whatap;
-grant select any dictionary to whatap;
- 
-## kill session 사용시
-grant alter system to whatap;
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `MongoDB`), ` 플랫폼은 모니터링용 계정 생성 과정을 생략합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "create-db-user"
     }, `DB 유저 파일 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `데이터베이스 접속을 위해 암호화된 UID를 생성합니다. username과 password를 입력하고 쉘 스크립트(또는 배치 파일)를 실행하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"

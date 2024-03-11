@@ -815,9 +815,8 @@ Add-Content -Path "C:\\Program Files\\WhatapInfra\\filesystem.conf" -Value "감�
         "title": "'Linux",
         "Shell'": true
     }, `#!/bin/bash
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre"
-    }, `urls=("https://www.whatap.io"  "https://blog.whatap.io"  "https://service.whatap.io")
+
+urls=("https://www.whatap.io"  "https://blog.whatap.io"  "https://service.whatap.io")
 
 for url in \${urls[*]}; do
 
@@ -833,12 +832,8 @@ H %{url_effective} time_starttransfer %{time_starttransfer}\\n
 H %{url_effective} time_total %{time_total}\\n
 EOF
 
-
 done
-\`\`\`
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", {
-        "start": 2
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -908,7 +903,7 @@ sudo service whatap-infra restart
         parentName: "strong"
     }, `카테고리`)), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `server_ext_폴더_실행스크립트`), `에서 찾을 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `server_ext_폴더_실행스크립트`), `에서 찾을 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "리눅스-시스템-로그-모니터링"
     }, `리눅스 시스템 로그 모니터링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `리눅스 시스템 로그를 실시간 업로드하여 장애 시 해당 시간에 발생한 로그를 확인할 수 있습니다. 수집 대상 로그 파일은 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"

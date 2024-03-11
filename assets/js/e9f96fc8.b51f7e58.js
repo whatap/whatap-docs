@@ -691,7 +691,7 @@ function MDXContent(_param) {
         width: "35",
         height: "35"
     }), ` 프로젝트 유료 전환`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `결제 정보 등록 완료 시 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "projectSubscription",
+        sid: "side_projectSubscription",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 메뉴로 이동합니다. 해당 계정이 보유한 전체 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
@@ -747,7 +747,7 @@ function MDXContent(_param) {
     }), " 버튼을 선택해 개별적으로 유료 전환할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "project_subscription",
+        sid: "side_projectSubscription",
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에 대한 자세한 내용은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
