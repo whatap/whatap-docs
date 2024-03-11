@@ -52,6 +52,19 @@ To update the installed agent to the latest version, execute the following comma
   pkg install whatap-infra.txz
   ```
 
+## AIX
+
+To update the installed agent to the latest version, execute the following command. 
+
+```bash
+stopsrc -s whatap-infra
+cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+rpm -e whatap-infra
+rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+startsrc -s whatap-infra
+```
+
 ## Windows
 
 To update the installed agent to the latest version, go to **_Management_** > **_Agent Installation_**. Download the installation file for your Windows Server OS by following the instructions in the **_Installation Guide_** section of **_Download Installation File_**, and then run the _whatap_infra.exe_ file. The service is restarted after updating the agent.

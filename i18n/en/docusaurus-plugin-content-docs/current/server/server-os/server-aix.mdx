@@ -1,0 +1,50 @@
+---
+id: server-aix
+title: AIX
+description: It explains how to install the agent in the AIX environment.
+tags:
+  - Server
+  - Installation
+  - Unix
+  - AIX
+hide_table_of_contents: true
+draft: false
+---
+
+:::note 
+
+It is available in the AIX 6.X or later.
+
+:::
+
+If you select a newly generated server monitoring project, the **_Agent installation_** screen appears. You can also perform this through **_Management_** > **_Agent installation_** of the project.
+
+<ImgLang img='server-install-unx-aix.png' desc='Server monitoring AIX'/>
+
+1. At the top of **_Management_** > **_Agent installation_**, select **_AIX_** under the ![Number-s](/img/number-01.png) OS tab. 
+
+2. In the ![number-s](/img/number-02.png) **_Download installation file_** tab, select _whatap-infra-latest.noarch.rpm_ to download the agent installation file.
+
+3. Go to the ![number-s](/img/number-03.png) **_Run installation file_** tab, check the following command, and then run the package.
+
+   ```bash
+   rpm -Uvh whatap-infra-latest.noarch.rpm
+   ```
+
+:::note 
+
+For server security purposes, the **installation files** are provided only in the download format.
+
+:::
+
+### Running the agent
+
+Execute the following command to start the server monitoring. When the application server runs, it begins collecting monitoring information. 
+
+```bash
+echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
+echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
+echo "createdtime=date +%s%S" |tee -a /usr/whatap/infra/conf/whatap.conf
+stopsrc -s whatap-infra
+startsrc -s whatap-infra
+```

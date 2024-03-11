@@ -47,10 +47,6 @@
     "message": "Report",
     "description": "The label for category 보고서 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar javaSidebar"
-  },
   "sidebar.javaSidebar.doc.지원 환경": {
     "message": "Support Environment",
     "description": "The label for the doc item 지원 환경 in sidebar javaSidebar, linking to the doc java/supported-spec"
@@ -103,10 +99,6 @@
     "message": "Report",
     "description": "The label for category 보고서 in sidebar phpSidebar"
   },
-  "sidebar.phpSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar phpSidebar"
-  },
   "sidebar.phpSidebar.doc.설치 점검": {
     "message": "Installation checking",
     "description": "The label for the doc item 설치 점검 in sidebar phpSidebar, linking to the doc php/install-check"
@@ -155,10 +147,6 @@
     "message": "Report",
     "description": "The label for category 보고서 in sidebar nodejsSidebar"
   },
-  "sidebar.nodejsSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar nodejsSidebar"
-  },
   "sidebar.nodejsSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar nodejsSidebar, linking to the doc nodejs/supported-spec"
@@ -206,10 +194,6 @@
   "sidebar.pySidebar.category.보고서": {
     "message": "Report",
     "description": "The label for category 보고서 in sidebar pySidebar"
-  },
-  "sidebar.pySidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar pySidebar"
   },
   "sidebar.pySidebar.doc.고급 기능": {
     "message": "Advanced functions",
@@ -263,10 +247,6 @@
     "message": "Report",
     "description": "The label for category 보고서 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar dotNetSidebar"
-  },
   "sidebar.dotNetSidebar.doc.관리하기": {
     "message": "Management",
     "description": "The label for the doc item 관리하기 in sidebar dotNetSidebar, linking to the doc dotnet/agent-manage"
@@ -302,10 +282,6 @@
   "sidebar.goSidebar.category.보고서": {
     "message": "Report",
     "description": "The label for category 보고서 in sidebar goSidebar"
-  },
-  "sidebar.goSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar goSidebar"
   },
   "sidebar.goSidebar.doc.Log 모니터링": {
     "message": "Log Monitoring",
@@ -1407,10 +1383,6 @@
     "message": "Log",
     "description": "The label for category 로그 in sidebar mysqlSidebar"
   },
-  "sidebar.npmsidebar.category.Network 모니터링": {
-    "message": "Network Performance Monitoring",
-    "description": "The label for category Network 모니터링 in sidebar npmsidebar"
-  },
   "sidebar.learningSidebar.category.성능 장애 유형": {
     "message": "Performance failure type",
     "description": "The label for category 성능 장애 유형 in sidebar learningSidebar"
@@ -1642,5 +1614,57 @@
   "sidebar.kubeSidebar.category.클러스터": {
     "message": "Cluster",
     "description": "The label for category 클러스터 in sidebar kubeSidebar"
+  },
+  "sidebar.javaSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.link.히트맵": {
+    "message": "Hitmap",
+    "description": "The label for link 히트맵 in sidebar javaSidebar, linking to /java/trs-profile"
+  },
+  "sidebar.phpSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.link.히트맵": {
+    "message": "Hitmap",
+    "description": "The label for link 히트맵 in sidebar phpSidebar, linking to /php/trs-profile"
+  },
+  "sidebar.nodejsSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.link.히트맵": {
+    "message": "Hitmap",
+    "description": "The label for link 히트맵 in sidebar nodejsSidebar, linking to /nodejs/trs-profile"
+  },
+  "sidebar.pySidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.link.히트맵": {
+    "message": "Hitmap",
+    "description": "The label for link 히트맵 in sidebar pySidebar, linking to /python/trs-profile"
+  },
+  "sidebar.dotNetSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.link.히트맵": {
+    "message": "Hitmap",
+    "description": "The label for link 히트맵 in sidebar dotNetSidebar, linking to /dotnet/trs-profile"
+  },
+  "sidebar.goSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.link.히트맵": {
+    "message": "Hitmap",
+    "description": "The label for link 히트맵 in sidebar goSidebar, linking to /golang/trs-profile"
+  },
+  "sidebar.npmsidebar.category.Network 성능 모니터링": {
+    "message": "Network Performance Monitoring",
+    "description": "The label for category Network 성능 모니터링 in sidebar npmsidebar"
   }
 }

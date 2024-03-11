@@ -1,0 +1,426 @@
+---
+id: service-2_2_x
+title: Service 2.2.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_1_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.2.3
+
+February 29, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Fixed the issue where clicking is intermittently impossible when using the side menu collapse mode.</p>
+
+* * *
+
+### `Kubernetes`
+
+<p><Status>Fixed</Status> Changed the <code>MemUsage</code> metric to the <code>MemWs</code> metric in the following menu paths:</p>
+
+- <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />
+- <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />
+- <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />
+- <Cmdname sid="workload" className="uitext" /> &gt; <Cmdname sid="podList" className="uitext" />
+- <Cmdname sid="cluster" className="uitext" /> &gt; <Cmdname sid="kubeApiserverDashboard" className="uitext" />
+
+</div>
+
+## Service 2.2.2
+
+February 28, 2024
+
+<div class='indentTab'>
+
+### `Application`, `Kubernetes`
+
+<p><Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, fixed the layout style error.</p>
+
+</div>
+
+## Service 2.2.1
+
+February 28, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />, fixed the problem where the pop-up XOS metric integration guide modal does not appear.</p>
+
+</div>
+
+## Service 2.2.0
+
+February 28, 2024
+
+<div class='indentTab'>
+
+### Release of new features
+
+It provides a guide to the new features released in Service 2.2.0.
+
+#### Common
+
+- <Status>New</Status> Reorganized the side menus.
+
+  The side menus have been reorganized. The previous UI structure where the projects and project menus were separated at the top and bottom, has been reorganized into the menu-centered structure. To check the changed items in the service screen, select <Cmdname sid="BTN07397" className="uitext" /> below the side menu.
+
+  <ImgLang img='release/release-main-ui.png' desc='' />
+
+  :::note
+
+  - For more information about the side menu reorganization, see the [following link](https://www.whatap.io/ko/blog/208/index.html/).
+
+  - For more information about the side menu, see [the following](../../main-ui-intro-v2).
+
+  :::
+
+- <Status>New</Status> Added the SSO account linking option.
+
+  :::note
+
+  Select the profile icon on the upper right of the screen, and then select <Cmdname sid="MNU07360" className="uitext" /> > <Cmdname sid="ssoIntegrations" className="uitext" />. For more information about the SSO account integration, see [the following](../../account/sso).
+
+  :::
+
+- <Status>New</Status> Added the <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> function that has strengthened user experience based on the metric field.
+
+  :::note
+
+  - For more information about the new <Cmdname sid="event_setting" className="uitext" /> menu, see [the following](../../java/warning-notice-v2).
+
+  - This function can be seen in the ![Icon](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> path.
+
+  :::
+
+#### Kubernetes
+
+- <Status>New</Status> Added the <Cmdname sid="kubernetesAgentList" className="uitext" /> menu to check the installation status of master and node agents.
+
+  :::note
+
+  This feature is only for cluster projects. In the <Cmdname sid="management" className="uitext" /> > <Cmdname sid="kubernetesAgentList" className="uitext" /> path, you can see this feature. For more information, see [the following](../../kubernetes/agent-list).
+
+  :::
+
+- <Status>New</Status> Added the <Cmdname sid="kubeApiserverDashboard" className="uitext" /> menu to monitor the availability and performance of the cluster by collecting health and performance metrics for kube-apiserver and tracing the response times, throughput, request failures, and such.
+
+  :::note
+
+  This feature is only for cluster projects. In the <Cmdname sid="cluster" className="uitext" /> > <Cmdname sid="kubeApiserverDashboard" className="uitext" /> path, you can see this feature. For more information, see [the following](../../kubernetes/kube-apiserver-dashboard).
+
+  :::
+
+* * *
+
+### `Common`
+
+- <Status>Feature</Status> In Select profile icon &gt; <Cmdname sid="MNU07360" className="uitext" />, added the <Cmdname sid="TTL07396" className="uitext" /> function in the <Cmdname sid="two_factor_auth" className="uitext" /> section in case the OTP authentication method has been lost.
+
+  :::note
+
+  For more information about the authentication using a recovery code, see [the following](../../account/mfa#recoverycode).
+
+  :::
+
+#### Project Creation
+
+- <Status>Changed</Status> Modified the guidance message display method to modal when the number of created projects is limited.
+
+- <Status>Changed</Status> When creating a project, added <b>Network Performance Monitoring</b> to the product recommendation banner, and then deleted the <b>Java</b> product.
+
+#### <Cmdname sid="flexboard" /> / <Cmdname sid="dashboard" />
+
+- <Status>Feature</Status> Added the group widget copying feature.
+
+- <Status>Feature</Status> Added the <Cmdname sid="ITM07648" className="uitext" /> metric in the Apdex*100 widget on the dashboard.
+
+- <Status>Feature</Status> Added a widget button to go to the product's dashboard.
+
+- <Status>Changed</Status> Modified the window mode button of the widget (<LinkImage img="ico-export.svg" className="ico" /> → <LinkImage img="ic-popup.svg" className="ico" />).
+
+- <Status>Changed</Status> Modified to use the 5-minute and 1-hour statistical categories for the cloud-related metrics: <code>aws_</code>, <code>azure_</code>, <code>ncloud_</code>, and <code>oci_</code>.
+
+- <Status>Fixed</Status> Fixed the issue where the number of events in the event timeline widget intermittently increases differently from the actual event count.
+
+- <Status>Fixed</Status> Modified to move to the dashboard list when loading the dashboard fails.
+
+- <Status>Fixed</Status> Fixed the issue where the label text of the highest value is cut off when displaying the maximum value in a chart on the dashboard.
+
+- <Status>Fixed</Status> Fixed the issue where the Y-axis threshold label text displayed on a chart is cut off.
+
+#### <Cmdname sid="event_statistic" />
+
+- <Status>Feature</Status> When adding or modifying the metrics events in <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, improved the visibility of the dark theme applied to the product logo for <Cmdname sid="category" className="uitext" />.
+
+- <Status>Fixed</Status> In <Cmdname sid="event_receive_configuration" className="uitext" />, modified the <Cmdname sid="terminate_now" className="uitext" /> button in the <Cmdname sid="aboids_large_number_alerts" className="uitext" /> panel to be disabled.
+
+- <Status>Fixed</Status> For all products except <code>URL</code>, in <Cmdname sid="event_setting" className="uitext" />, fixed the issue where the chart is not drawn when there is only one time point for data on the notification rule test chart when setting metrics events.
+
+- <Status>Fixed</Status> In <Cmdname sid="eventNoti" className="uitext" />, fixed the issue where the columns in the table are pushed to the right if the member name is too long in the <Cmdname sid="alert_receive_settings_by_member" className="uitext" /> section table.
+
+#### <Cmdname sid="MNU07361" />
+
+- <Status>Changed</Status> In <Cmdname sid="projectSubscription" className="uitext" />, changed from <Cmdname sid="include_project_has_not_billing" className="b500" /> to <Cmdname sid="DSC07606" className="uitext" /> and added the tooltip.
+
+- <Status>Changed</Status> In <Cmdname sid="payment_information" className="uitext" />, modified the text to consent to the terms and conditions when registering a card payment method.
+
+#### <Cmdname sid="management" />
+
+- <Status>Changed</Status> Change the title on the <Cmdname sid="add_group" className="uitext" /> page: <Cmdname sid="project_list" className="b500" /> → <Cmdname sid="add_group" className="uitext" />.
+
+- <Status>Changed</Status> In <Cmdname sid="integrated_member_management" className="uitext" />, modified to display an alert when a unique member who has the roles for <b>payment</b> and <b>member management</b> has been deleted.
+
+- <Status>Fixed</Status> In <Cmdname sid="integrated_member_management" className="uitext" />, disabled the <Cmdname sid="delete" className="uitext" /> button to prevent the members in the subgroups under organization from being deleted.
+
+- <Status>Fixed</Status> In <Cmdname sid="integrated_member_management" className="uitext" />, modified the width of the member list table.
+
+#### <Cmdname sid="MNU07360" />
+
+- <Status>Changed</Status> When the OTP key has not been generated at the <Cmdname sid="two_factor_auth" className="uitext" /> section, the <Cmdname sid="send_otp_key_mail" className="uitext" /> button has been disabled.
+
+- <Status>Fixed</Status> In <Cmdname sid="my_profile" className="uitext" />, fixed the issue where even tags are copied when copying a reason for not being able to withdraw from membership.
+
+#### User Interface
+
+<p><Status>Changed</Status> Applied the dark theme to WhaTap logo in the <Cmdname sid="BTN06853" className="uitext" /> window, and added <b>WhaTap Network</b> to the platform.</p>
+
+* * *
+
+### `Application`
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="transaction_map" className="uitext" />, applied a new UI with features reorganized.
+
+  - Expanded the data inquiry section up to 10 minutes in the past.
+  - Through the <Cmdname sid="TTL06209" className="uitext" /> window, the maximum number of searchable data has been increased (100 → 1000).
+  - Displays the counts for transactions and errors in real time.
+  - Keyboard events have been added in the Top 30 list.
+  - The keyboard events have been added in charts.
+  - When searching the previous data, the data received from the server can be filtered.
+
+  :::note
+
+  - For more information about the <Cmdname sid="transaction_map" className="uitext" /> menu reorganization, see the <Link to="https://www.whatap.io/ko/blog/210/index.html">following link</Link>.
+
+  - For more information about <Cmdname sid="transaction_map" className="uitext" />, see <Link to="../../java/dashboard-transactionmap">the following</Link>.
+
+  :::
+
+- <Status>Changed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> window, improved the CRUD display format when checking the SQL details.
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />, added the <code>All APPS.</code> tag in the <Cmdname sid="today_tps" className="uitext" /> and <Cmdname sid="today_user" className="uitext" /> widgets.
+
+  :::note
+
+  Widgets marked with the `All APPS.` tag are fixed to always display data for all agents.
+
+  :::
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />, modified the design elements in the chart area (modified the widget title size, widget spacing, and chart section text size).
+
+- <Status>Changed</Status> In <Cmdname sid="flexboard" className="uitext" />, changed the unit name of the agent group provided in the <Cmdname sid="filter" className="uitext" /> tab.
+
+  - <Cmdname sid="type_okind" className="b500" /> → <Cmdname sid="ITM06006" className="uitext" />
+
+  - <Cmdname sid="type_onode" className="b500" /> → <Cmdname sid="ITM06007" className="uitext" />
+
+  - <Cmdname sid="application" className="b500" /> → <Cmdname sid="ITM06005" className="uitext" />
+
+* * *
+
+### `Server`
+
+- <Status>Feature</Status> Provided the agent installation package and instructions for the AIX operating system.
+
+  :::note
+
+  For more information about the agent installation on the AIX operating system, see [the following](../../server/server-os/server-aix).
+
+  :::
+
+- <Status>Fixed</Status> In <Cmdname sid="server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, fixed the part where the chart area is hidden when there are too many legend items.
+
+  - If the number of legends increases, modified to expose the <Cmdname sid="more" className="uitext" /> button and display a drop-down menu when the button is selected.
+
+- <Status>Fixed</Status> In <Cmdname sid="tag_count_chart" className="uitext" />, modified to display the byte unit displayed in the network traffic related charts to the bit unit.
+
+* * *
+
+### `Database`
+
+#### Common
+
+- <Status>Feature</Status> Added a guidance for replacement of the XOS2 metric.
+
+  :::note
+
+  For more information about the replacement of XOS2 metrics, see [the following](../../reference/changes-db-xos-metrics-guide).
+
+  :::
+
+- <Status>Feature</Status> In the <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" /> tab, the agent restoration notification function (<Cmdname sid="resolved_event_notification" className="uitext" />) has been added.
+
+  :::note
+
+  This function is supported in DBX agent 1.6.30 or later.
+
+  :::
+
+- <Status>Feature</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_list" className="uitext" />, added the <Cmdname sid="db_ip" className="uitext" /> column that displays the IP address of the database server.
+
+- <Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, added considerations depending on the operating system when entering commands to create a DB user file.
+
+- <Status>Fixed</Status> In the <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" /> tab, modified the text, <Cmdname sid="database_inactive_alert" className="b500" /> to <Cmdname sid="inactive_agent_alert" className="uitext" />.
+
+- <Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_list" className="uitext" />, changed the color of the status icon and modified to check with the tooltip when you place the mouse over whether the text size for the <Cmdname sid="name" className="uitext" />(<Cmdname sid="initial" className="uitext" />) or <Cmdname sid="db_ip" className="uitext" /> column is greater than the column width.
+
+- <Status>Deprecated</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, deleted the <Cmdname sid="alert_log" className="uitext" /> button.
+
+#### Database <code class="my">V2</code>
+
+- <Status>Feature</Status> Added the function to display the session details when a column is clicked in the <Cmdname sid="lock_tree" className="uitext" /> table in the following paths:
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />
+
+- <Status>Fixed</Status> Fixed the issue where the waiter ID does not appear in the <Cmdname sid="lock_tree" className="uitext" /> table in the following menu paths:
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> / <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified to enable the <Cmdname sid="lock_tree" className="uitext" /> in the table below if the chart of the <span class="uitext">Lock Wait Sessions</span> widget is clicked.
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />, added the default presets (<span class="uitext">Default(rds)</span>, <span class="uitext">Default(xos)</span>).
+
+#### PostgreSQL <code class="my">V2</code>
+
+<p><Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="db_parameter" className="uitext" />, added unit notation to some values when displaying the <span class="uitext">Value</span> column.</p>
+
+#### MySQL <code class="my">V2</code>
+
+- <Status>Feature</Status> Added the plan search function in JSON format.
+
+- <Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />, added the function to check the <b>column</b> and <b>index</b> lists when the <span class="uitext">TABLENAME</span> column is clicked in the <Cmdname sid="TTL06572" className="uitext" /> table.
+
+#### Redis
+
+<p><Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, added descriptions for the <em>uid.sh</em> execution command that differ depending on the Redis version.</p>
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the ReplicationController grouping option.
+
+- <Status>Changed</Status> When using the comparison feature in <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />, added the <span class="uitext">Container CPU Usage</span> chart in the <Cmdname sid="kube_default" className="uitext" /> and <Cmdname sid="kube_cpu" className="uitext" /> tabs.
+
+- <Status>Changed</Status> In <Cmdname sid="cluster" className="uitext" /> &gt; <Cmdname sid="MNU07551" className="uitext" />, modified the UI design and added TOC for the <Cmdname sid="compare" className="uitext" /> function.
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, modified the UI display when the block size is small.
+
+- <Status>Changed</Status> In <Cmdname sid="Container" className="uitext" /> &gt; <Cmdname sid="containerImages" className="uitext" />, changed the columns.
+
+  - Add: <span class="uitext">Registry</span>, <span class="uitext">Name</span>, <span class="uitext">Tag</span>
+  - Remove: <b>Image Name</b>, <b>Image Tag</b>
+
+- <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, fixed the issue where data is not visible when no data is associated with a selected grouping option.
+
+- <Status>Fixed</Status> In <Cmdname sid="Container" className="uitext" /> &gt; <Cmdname sid="container_volume" className="uitext" />, modified the icon when UsedPercent is 100%.
+
+* * *
+
+### `Log`
+
+- <Status>Changed</Status> In <Cmdname sid="log" className="uitext" />, modified to share all the table settings of the project in <Cmdname sid="logTail" className="uitext" />, <Cmdname sid="log_search" className="uitext" />, and <Cmdname sid="logExplorer" className="uitext" />.
+
+- <Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified the style of the guide message that appears when the log monitoring is disabled.
+
+* * *
+
+### `AWS Log`
+
+<p><Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, modified to connect the guide for the user-selected language.</p>
+
+* * *
+
+### `Browser`
+
+- <Status>Feature</Status> Added the network status metrics in the page load hitmap data: <Cmdname sid="TTL07611" className="uitext" />, <Cmdname sid="TTL07612" className="uitext" />, and <Cmdname sid="TTL07610" className="uitext" />.
+
+  - <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget in <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />
+
+- <Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />, added metrics in the resource data of the <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" /> window: <Cmdname sid="status_code" className="uitext" />, <span class="uitext">Delivery Type</span>,
+
+- <Status>Feature</Status> Added the network status metrics for the AJAX hitmap data: <Cmdname sid="TTL07611" className="uitext" />, <Cmdname sid="TTL07612" className="uitext" />, <Cmdname sid="TTL07610" className="uitext" />, and <span class="uitext">Delivery Type</span>.
+
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
+
+  - <Cmdname sid="ajaxAnalytics" className="uitext" /> widget in <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />
+
+:::note
+
+For more information about the added metrics, see the following:
+
+- [<Cmdname sid="TTL07611" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType)
+- [<Cmdname sid="TTL07612" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt)
+- [<Cmdname sid="TTL07610" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink)
+- [<span class="uitext">Delivery Type</span>](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/deliveryType)
+- [<Cmdname sid="status_code" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStatus)
+
+:::
+
+* * *
+
+### `Network`
+
+- <Status>Feature</Status> Added the option to identify AWS resources when installing the agent.
+
+  :::note
+
+  For more information about addition of agent options for identifying AWS resources, see [the following](../../npm/set-aws-resource-options).
+
+  :::
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" /> and <Cmdname sid="MNU06849" className="uitext" />, modified to enable the real-time view for the last 5 minutes.
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, modified as follows:
+
+  - Among topology options, changed the name of the <Cmdname sid="MNU06813" className="uitext" /> option to <Cmdname sid="ITM07578" className="uitext" />.
+
+  - Among the topology options, deleted the node size weight option and changed the node size weight to be set according to the selected <Cmdname sid="ITM07578" className="uitext" /> option.
+
+- <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, fixed the issue where all tags appear as unselected when the page is refreshed with a preset selected.
+
+- <Status>Fixed</Status> Under <Cmdname sid="analysis" className="uitext" />, added missing searchable fields, and modified to expose only the fields that can be searched in each menu.
+
+  - Added the <code>session_count</code> field in the following two menus:
+
+  - <Cmdname sid="MNU06850" className="uitext" />: Added the <code>avg_jitter</code> and <code>avg_latency</code> fields.
+
+  - <Cmdname sid="MNU06851" className="uitext" />: Modified not to display the <code>avg_jitter</code>, <code>avg_latency</code>, <code>lost_count</code>, and <code>retransmission_count</code> fields.
+
+- <Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, fixed the issue where <b>AWS resource options</b> entered in the <span class="uitext">Kubernetes</span> tab are not reflected in the downloaded YAML file.
+
+- <Status>Fixed</Status> Modified the image for the language set in the agent installation menu.
+
+- <Status>Fixed</Status> Fixed the issue where the Docs (guide) link is not connected in some menu paths.
+
+- <Status>Fixed</Status> In some elements, fixed the issue where the dark theme is not applied.
+
+- <Status>Fixed</Status> In the sidebar and <Cmdname sid="sitemap" className="uitext" />, fixed the issue where some menus do not appear.
+
+- <Status>Fixed</Status> In <Cmdname sid="MNU06848" className="uitext" />, modified to perform line wrapping depending on the length of the title under the <Cmdname sid="filter" className="uitext" /> tab.
+
+- <Status>Fixed</Status> Fixed the agent IP address display issue when adding a maintenance plan.
+
+<p>Fixed and improved minor bugs that users might not notice. 😉</p>
+
+</div>

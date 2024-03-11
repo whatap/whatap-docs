@@ -50,32 +50,32 @@ Logs are collected through the following 3 steps: Different reference times may 
 
 1. **Log creation time**
 
-  Deviations may occur depending on the time or logging policy of the monitoring target. 
+   Deviations may occur depending on the time or logging policy of the monitoring target. 
 
-1. **Agent collection time** 
+2. **Agent collection time** 
 
-  Deviations may occur depending on how the product or agent in use collects logs and which logs are generated. 
+   Deviations may occur depending on how the product or agent in use collects logs and which logs are generated. 
 
-    * **Application**
+   - **Application**
 
-      Depending on your settings, logs are collected in near real-time from the log library or log files.
+     Depending on the settings, logs are collected in almost real time from the log library or log files.
 
-      :::note 
+     :::note 
 
-      The log library is only supported for Java products.
+     The log library is supported only for Java products. 
 
-      :::
+     :::
 
-    * **Server** 
+   - **Server** 
 
-      Collect near real-time logs from log files.
+     The log file collects logs in almost real time. 
 
-    * **AWS Log**
+   - **AWS Log**
 
-      Logs are collected in semi-real time or every few minutes depending on AWS Resource policies.
+     Logs are collected in almost real time or every few minutes depending on the AWS resource policy. 
 
-1. **WhaTap collection server time**
+3. **WhaTap collection server time**
 
-  Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
+   Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
 
 There is a big difference between **WhaTap agent collection time** and **WhaTap collection server time**. Check the server time of the monitoring target. If the monitored server time is set to a time earlier or later than the server time, this affects the agent collection time.
