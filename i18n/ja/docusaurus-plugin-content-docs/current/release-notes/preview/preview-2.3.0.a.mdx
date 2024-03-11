@@ -1,0 +1,107 @@
+---
+id: preview-2_3_0x
+title: Preview 2.3.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.3.0.a1
+
+2024年02月29日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Fixed</Status> <Cmdname sid="flexboard" className="uitext" />メニューでフィルターのプロジェクト選択を変更する時、以前選択されたプロジェクトのフィルター内容を削除するように修正(各フィルターはプロジェクト単位を適用)
+
+- <Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューの英語名を変更(<b>Configuration</b> → <span class="uitext">Notifications</span>)
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューからリストメニューに移動するリンクを追加
+
+- <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューで選択したカテゴリのPod Phase情報及びPhase案内を追加
+
+- <Status>Fixed</Status>次のメニュー経路で<code>MemUsage</code>指標を<code>MemWs</code>指標に修正
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />
+  - <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />
+  - <Cmdname sid="workload" className="uitext" /> &gt; <Cmdname sid="podList" className="uitext" />
+  - <Cmdname sid="cluster" className="uitext" /> &gt; <Cmdname sid="kubeApiserverDashboard" className="uitext" />
+
+* * *
+
+### `Database`
+
+<p><Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="flexboard" className="uitext" />メニューでアクティブセッションテーブルフィルターを追加</p>
+
+#### Redis, Mongo <code class="my">V2</code>
+
+- <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューでMaster-Slave関係を表示
+
+- <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューで<UI>cluster name</UI>カラムを追加
+
+</div>
+
+## Preview 2.3.0.a0
+
+2024年02月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status>メトリクスのフィールド(Field) 中心のユーザーエクスペリエンスを強化した<Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> 機能を追加
+
+  :::note
+
+  - 新しい<Cmdname sid="event_setting" className="uitext" />メニューの詳細については、[次の文書](https://docs.whatap.io/java/warning-notice-v2)を参考にしてください。
+
+  - この機能は、![アイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code>経路で確認できます。
+
+  :::
+
+- <Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="integrated_member_management" className="uitext" />メニューで組織の下位グループのメンバーを削除できないように<Cmdname sid="delete" className="uitext" />ボタンを非活性化
+
+- <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="integrated_member_management" className="uitext" />メニューで<b>決済</b>権限及び<b>メンバー管理</b>権限を持つ唯一のメンバーを削除する場合、警告メッセージを表示するように修正
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウでSQLの詳細を確認する時、CRUD表示形式を改善</p>
+
+* * *
+
+### `Database`
+
+#### Database <code class="my">V2</code>
+
+- <Status>Feature</Status>次のメニュー経路で<Cmdname sid="lock_tree" className="uitext" />テーブルのカラムをクリックすると、セッションの詳細ウィンドウを表示する機能を追加
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />
+
+- <Status>Fixed</Status>次のメニュー経路で<Cmdname sid="lock_tree" className="uitext" />テーブルにwaiter idが表示されない問題を修正
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />
+
+- <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> / <Cmdname sid="multi_instance_monitoring" className="uitext" />メニューで<span class="uitext">Lock Wait Sessions</span>ウィジェットのチャートをクリックすると、画面下のテーブルの<Cmdname sid="lock_tree" className="uitext" />タブが活性化されるように修正
+
+</div>

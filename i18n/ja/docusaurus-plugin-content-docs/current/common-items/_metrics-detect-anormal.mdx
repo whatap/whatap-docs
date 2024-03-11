@@ -1,4 +1,20 @@
-ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_分析_** > **_メトリック異常検知_**
+<InDoc product="java,php,python,nodejs,dotnet,golang">
+
+ホーム画面 > プロジェクト選択 > ![サイトマップアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count_anomaly_detection" className="uitext" />
+
+</InDoc>
+
+<InDoc product="postgresql,postgresql-v1,mysql,mysql-v1,oracle,mssql,tibero,cubrid,altibase,redis,mongodb,server,kubernetes">
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="tag_count_anomaly_detection" className="uitext" />
+
+</InDoc>
+
+<InDoc product='amazon-cloudwatch,amazon-ecs,azure,ncloud'>
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="metrics" className="uitext" /> > <Cmdname sid="tag_count_anomaly_detection" className="uitext" />
+
+</InDoc>
 
 さまざまなメトリクス指標のパターンをAIによって学習された予想パターンと比較することができます。予想パターンから外れた異常検知をグラフチャートで確認できます。過去の履歴データに基づいて繰り返されるパターンを確認し、それらを使用して今後の指標値を予測できます。
 
@@ -8,7 +24,7 @@
 
 - 画面に配置したウィジェットは、別のメニューに移動しても保存されずに初期化します。
 
-- パターン表示機能と異常値表示機能以外は、**_分析_** > **_メトリクスチャート_**メニューと類似しています。
+- パターン表示機能と異常値表示機能以外は、<Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="tag_count_chart" className="uitext" />メニューと類似しています。
 
 - **異常検知**(**Anomaly Detection**) アラート通知機能の技術的根拠は、**メトリックス異常検知**です。**異常検知**アラート通知設定の詳細については、[次の文書](set-event-detect-anomal)を参照してください。
 
@@ -22,7 +38,7 @@
 
 - 画面に配置したウィジェットは、別のメニューに移動しても保存されずに初期化します。
 
-- パターン表示機能と異常値表示機能以外は、**_分析_** > **_メトリクスチャート_**メニューと類似しています。
+- パターン表示機能と異常値表示機能以外は、<Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="tag_count_chart" className="uitext" />メニューと類似しています。
 
 - **異常検知**(**Anomaly Detection**) アラート通知機能の技術的な根拠は**メトリックス異常検知**です。 
 
@@ -44,9 +60,9 @@
 
 <ImgLang img='metrics-detect-abnormal-set-widget.png' desc='メトリック異常検知' />
 
-1. ![数字1](/img/number-01.png) **_時間_**で、目的の時間間隔を設定してください。最大1か月間隔まで設定できます。
+1. ![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />で、目的の時間間隔を設定してください。最大1か月間隔まで設定できます。
 
-2. ![数字2](/img/number-02.png) **_フィルター_**でメトリクス指標の範囲を選択します。
+2. ![数字2](/img/number-02.png) <Cmdname sid="filter" className="uitext" />でメトリクス指標の範囲を選択します。
 
 3. 以下の一覧でモニタリングするメトリクス指標を選択します。
 
@@ -54,8 +70,8 @@
 
 :::note
 
-- モニタリング対象を選択し、メトリクス指標を個々に確認する場合は、![数字2](/img/number-02.png) **_タグ_**を選択してください。画面の右側にタグ選択一覧が表示されます。項目を選択した後、ウィジェットを追加してください。
-- 画面に配置したウィジェットは、**_時間_**または**_タグ_**値を変更してもチャートに反映されません。
+- モニタリング対象を選択し、メトリクス指標を個々に確認する場合は、![数字2](/img/number-02.png) <Cmdname sid="tag" className="uitext" />を選択してください。画面の右側にタグ選択一覧が表示されます。項目を選択した後、ウィジェットを追加してください。
+- 画面に配置したウィジェットは、<Cmdname sid="time" className="uitext" />または<Cmdname sid="tag" className="uitext" />値を変更してもチャートに反映されません。
 - 画面に配置したウィジェットを削除するには、ウィジェット右上の![削除アイコン](/img/ico-remove.svg)ボタンを選択します。
 - ウィジェットの左上を選択した状態でドラッグすると、ウィジェットの位置を変更できます。
 - ウィジェットの右下を選択した状態でドラッグすると、ウィジェットのサイズを変更できます。

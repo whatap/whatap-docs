@@ -52,6 +52,19 @@ tags:
   pkg install whatap-infra.txz
   ```
 
+## AIX
+
+インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。 
+
+```bash
+stopsrc -s whatap-infra
+cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+rpm -e whatap-infra
+rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+startsrc -s whatap-infra
+```
+
 ## Windows
 
 インストールされているエージェントを最新バージョンにアップデートするには、 **_管理_** > **_エージェントのインストール_** メニューに移動してください。 **_インストール案内_** セクションの **_インストールファイルのダウンロード_** 案内の指示に従って、Windowsサーバーオペレーティングシステム用のインストールファイルをダウンロードした後 _whatap_infra.exe_ ファイルを実行してください。 エージェントのアップデートした後、サービスが再起動されます。

@@ -1,0 +1,19 @@
+---
+id: dbx-1_6_25
+title: DBX v1.6.25
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_24
+displayed_sidebar: releaseSidebar
+---
+
+2024年02月26日
+
+## PostgreSQL
+
+- <Status>Changed</Status> <code>active_session</code>指標の収集時<code>state</code>条件に対するオプション処理を追加
+
+  - `state`値が`idle`でない場合：`pg_opt=0`(default)
+  - `state`値が`active`の場合：`pg_opt=1`
+  - `state`値が`active`または`idle in transaction`の場合：`pg_opt=2`
+
+- <Status>Changed</Status> object、table収集オプションのデフォルト値を<code>true</code>に修正

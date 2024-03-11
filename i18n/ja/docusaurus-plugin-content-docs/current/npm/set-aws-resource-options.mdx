@@ -15,68 +15,89 @@ AWS環境でネットワーク性能モニタリングを使用するには、�
 
 AWSのELBを通じて内部にトラフィックが認可される場合、図のようにENIに表現された情報を通じてトポロジーに表現することができます。 AWS ENIの`Description`フィールドを基準に表現します。 もし`Description`フィールドに何の情報も残さない場合、`NetworkInterfaceId`属性を提供します。
 
-## エージェントオプション及び権限設定
+## EC2環境でのAWSリソース権限設定{#set-aws-resource-ec2}
 
-_/usr/whatap/whatap-npmd/whatap.conf_ファイルに対して次のようにオプションを設定してください。 大括弧([ ]) の部分にはAWSで発行された認証情報を入力してください。 その際に必要なユーザ権限は、`ec2:DescribeNetworkInterfaces`となります。
-
-```ini title='whatap.conf'
-awsInfoEnable=1
-# AWS access key
-awsAccessKey=[User Access Key]
-# AWS secret access key
-awsSecretKey=[User Secret Key]
-# Region
-awsRegions=[RegionCode1,RegionCode2,...]
-```
-
-次のコマンドを使用して、オプションを追加できます。
-
-```bash
-echo "awsInfoEnable=1" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsAccessKey=[User Access Key]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsSecretKey=[User Secret Key]"  |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-
-sudo service whatap-npmd restart
-```
-
-- **awsInfoEnable**
-
-  AWS情報照会の使用有無を設定します。 デフォルト値は`0`であり、AWS情報を照会するには`1`に設定してください。
-
-- **awsAccessKey**
-
-  ユーザーのAWS access key(アクセスキー)を入力してください。
-
-- **awsSecretKey**
-
-  ユーザーのAWS secret access Key(秘密アクセスキー)を入力してください。
-
-- **awsRegions**
-
-  ユーザーのリソースを含むリージョンを入力してください。 遠くのリージョンを使用する場合は、コンマ(,)を区切り文字として入力してください。
+AWS EC2に**NPM**エージェントをインストールする場合、IAM設定を通じてAWSのリソース情報を収集することができます。
 
 :::note
 
-- AWSのAccess Key生成についての詳細は、[次のリンク](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey)を参考にしてください。
-
-- `ec2:DescribeNetworkInterfaces`: EC2ネットワークインターフェース(ENI)に関する情報の照会を許可します。
+[AWS設定ガイド](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html)
 
 :::
 
-:::tip
+### AWS IAMの設定
 
-Kubernetes環境の場合、次の画像を参考にしてYAMLファイルに黄色いボックス領域の内容を追加してください。
+AWS IAMのポリシー設定プロセスで最小権限を指定するように求めています。 **NPM**でAWSリソース情報を収集するには、`ec2:DescribeNetworkInterfaces`権限が必要です。
 
-![K8s example](/img/npm-aws-resource-k8s-example.png)
-
-大括弧([ ]) の部分にはAWSで発行された認証情報を入力してください。
-
-```yaml
-echo "awsInfoEnable=1" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsAccessKey=[User Access Key]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsSecretKey=[User Secret Key]"  |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+              //...
+              "ec2:DescribeNetworkInterfaces"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
 ```
 
+:::note
+
+ポリシーと権限の詳細については、[次のリンク](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#policy-syntax)を参考にしてください。
+
 :::
+
+## EKS環境でのAWSリソース権限設定{#set-aws-resource-eks}
+
+AWS EKSで**NPM**エージェントをインストールする場合、SeviceAccountを通じてAWSのリソース情報を収集できます。
+
+:::note
+
+[AWS設定ガイド](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+
+:::
+
+### AWS IAMの設定
+
+AWS IAMのポリシー設定プロセスで最小権限を指定するように求めています。 **NPM**でAWSリソース情報を収集するには、`ec2:DescribeNetworkInterfaces`権限が必要です。
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+              //...
+              "ec2:DescribeNetworkInterfaces"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+:::note
+
+ポリシーと権限の詳細については、[次のリンク](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#policy-syntax)を参考にしてください。
+
+:::
+
+### Service Accountの設定
+
+AWS EKSの設定過程では、IAMとKubernetesのService Accountを接続する必要があり、**NPM**でAWSリソース情報を収集するには、IAMとNPMのService Accountを接続する必要があります。
+
+**NPM**では、次のService Accountを使用してください。
+
+```yaml
+namespace : whatap-npm-ns
+service_account : whatap-npm
+```
+
+```bash title='example'
+kubectl annotate serviceaccount -n whatap-npm-ns whatap-npm eks.amazonaws.com/role-arn=arn:aws:iam::$account_id:role/$role
+```

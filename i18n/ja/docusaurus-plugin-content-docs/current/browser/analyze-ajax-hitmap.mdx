@@ -99,7 +99,7 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 ### <Cmdname sid="TTL07106" className="uitext" /> <Cmdname sid="info" className="uitext" />
 
-Ajaxイベントをロードする過程を次のような段階に分け、区間別の所要時間を把握して 
+Ajaxイベントをロードする過程を次のような段階に分け、区間別の所要時間を把握することができます。
 
 - <Cmdname sid="redirect_time" className="uitext" />: ブラウザがAJAXをリクエストした場合、リダイレクトに要した時間
 
@@ -149,28 +149,32 @@ Ajax一覧からテーブルヘッダーカラムを隠したり、希望する�
 
 ![数字1](/img/number-01.png)一覧でテーブルヘッダーカラムに追加する項目を選択してください。 すべての項目を追加するには、**_全体選択_**を選択してください。 追加できるカラム項目は次のとおりです。
 
-| カラム名                                               | 説明                                                |
-| -------------------------------------------------- | ------------------------------------------------- |
-| <Cmdname sid="client_ip" className="uitext" />     | エンドユーザーが使用するデバイスのIPアドレス                           |
-| <Cmdname sid="TTL07104" className="uitext" />      | ブラウザでAjaxリクエストを中断した場合、'true'として表示                 |
-| <Cmdname sid="user_agent" className="uitext" />    | ブラウザエージェントが収集した、エンドユーザーのユーザーエージェントの文字列            |
-| <Cmdname sid="size" className="uitext" />          | Ajax応答値に対する容量。圧縮が解凍された実際の容量を意味します。                |
-| <Cmdname sid="country" className="uitext" />       | エンドユーザーが位置する国/地域コード                               |
-| <Cmdname sid="city" className="uitext" />          | エンドユーザーが位置する都市名                                   |
-| <Cmdname sid="download_time" className="uitext" /> | ブラウザがサーバーからAjax応答値をダウンロードするまでの所要時間                |
-| <Cmdname sid="device" className="uitext" />        | エンドユーザーの接続デバイスの種類                                 |
-| <Cmdname sid="redirect_time" className="uitext" /> | ブラウザがAjaxをリクエストした場合、リダイレクトにかかった所要時間               |
-| <Cmdname sid="user_id" className="uitext" />       | 任意に付与したエンドユーザーのID                                 |
-| <Cmdname sid="session_id" className="uitext" />    | エンドユーザーのセッションID                                   |
-| <Cmdname sid="connect_time" className="uitext" />  | Ajaxリクエスト対象サーバーとTCP接続を設定するまで要した時間                 |
-| <Cmdname sid="wait_time" className="uitext" />     | ブラウザのHTTPリクエスト開始時間からサーバーがリクエストを受信し、応答を開始するまでの所要時間 |
-| <Cmdname sid="browser" className="uitext" />       | エンドユーザーのブラウザの種類                                   |
-| <Cmdname sid="os" className="uitext" />            | エンドユーザーが使用するデバイスのOSの種類                            |
-| <Cmdname sid="end_time" className="uitext" />      | Ajaxイベントの終了時刻                                     |
-| <Cmdname sid="cache_time" className="uitext" />    | ブラウザがキャッシュされたAjaxリソースを検索するまでの所要時間                 |
-| <Cmdname sid="page_title" className="uitext" />    | ブラウザで接続したHTMLページのタイトル(title)                      |
-| <Cmdname sid="TTL06193" className="uitext" />      | ブラウザがAjaxリクエストドメインを照会するまでの所要時間                    |
-| <Cmdname sid="ssl_time" className="uitext" />      | SSL/TLSハンドシェイクを完了するまでの所要時間                        |
+| カラム名                                                                                                                                 | 説明                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| <Cmdname sid="client_ip" className="uitext" />                                                                                       | エンドユーザーが使用するデバイスのIPアドレス                              |
+| <Cmdname sid="TTL07104" className="uitext" />                                                                                        | ブラウザでAjaxリクエストを中断した場合、'true'として表示                    |
+| <Cmdname sid="user_agent" className="uitext" />                                                                                      | ブラウザエージェントが収集した、エンドユーザーのユーザーエージェントの文字列               |
+| <Cmdname sid="size" className="uitext" />                                                                                            | Ajax応答値に対する容量。圧縮が解凍された実際の容量を意味します。                   |
+| <Cmdname sid="country" className="uitext" />                                                                                         | エンドユーザーが位置する国/地域コード                                  |
+| <Cmdname sid="city" className="uitext" />                                                                                            | エンドユーザーが位置する都市名                                      |
+| <Cmdname sid="download_time" className="uitext" />                                                                                   | ブラウザがサーバーからAjax応答値をダウンロードするまでの所要時間                   |
+| <Cmdname sid="device" className="uitext" />                                                                                          | エンドユーザーの接続デバイスの種類                                    |
+| <Cmdname sid="redirect_time" className="uitext" />                                                                                   | ブラウザがAjaxをリクエストした場合、リダイレクトにかかった所要時間                  |
+| <Cmdname sid="user_id" className="uitext" />                                                                                         | 任意に付与したエンドユーザーのID                                    |
+| <Cmdname sid="session_id" className="uitext" />                                                                                      | エンドユーザーのセッションID                                      |
+| <Cmdname sid="connect_time" className="uitext" />                                                                                    | Ajaxリクエスト対象サーバーとTCP接続を設定するまで要した時間                    |
+| <Cmdname sid="wait_time" className="uitext" />                                                                                       | ブラウザのHTTPリクエスト開始時間からサーバーがリクエストを受信し、応答を開始するまでの所要時間    |
+| <Cmdname sid="browser" className="uitext" />                                                                                         | エンドユーザーのブラウザの種類                                      |
+| <Cmdname sid="os" className="uitext" />                                                                                              | エンドユーザーが使用するデバイスのOSの種類                               |
+| <Cmdname sid="end_time" className="uitext" />                                                                                        | Ajaxイベントの終了時刻                                        |
+| <Cmdname sid="cache_time" className="uitext" />                                                                                      | ブラウザがキャッシュされたAjaxリソースを検索するまでの所要時間                    |
+| <Cmdname sid="page_title" className="uitext" />                                                                                      | ブラウザで接続したHTMLページのタイトル(title)                         |
+| <Cmdname sid="TTL06193" className="uitext" />                                                                                        | ブラウザがAjaxリクエストドメインを照会するまでの所要時間                       |
+| <Cmdname sid="ssl_time" className="uitext" />                                                                                        | SSL/TLSハンドシェイクを完了するまでの所要時間                           |
+| [<Cmdname sid="TTL07611" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType)   | ブラウザがページにアクセスした後に測定したネットワーク性能                        |
+| [<Cmdname sid="TTL07610" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink)        | Mbps単位のダウンリンク(downlink) 速度で，毎秒25キロビット単位で四捨五入した値      |
+| [<span class="uitext">Delivery Type</span>](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/deliveryType) | リソースの伝達方法(例、`cache`または`navigational-prefetch`)       |
+| [<Cmdname sid="TTL07612" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt)             | 往復時間(RTT)でネットワークリクエストを開始した後、リスポンスを受け取るのにかかる時間(ミリ秒単位) |
 
 :::note
 
