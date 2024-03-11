@@ -3209,7 +3209,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_28',
@@ -3218,7 +3218,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_28',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_27',
                 'release-notes/java/java-2_2_26',
@@ -3237,7 +3237,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/java-batch-2_2_24',
@@ -3246,7 +3246,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java-batch/java-batch-2_2_24',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java-batch/java-batch-2_2_23',
                 'release-notes/java-batch/java-batch-2_2_22',
@@ -3401,14 +3401,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_5_3',
+                id: 'release-notes/server/server-2_5_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_5_3',
+                  id: 'release-notes/server/server-2_5_4',
                   className: 'new',
                 },
+                'release-notes/server/server-2_5_3',
                 'release-notes/server/server-2_5_2',
                 'release-notes/server/server-2_5_1',
                 'release-notes/server/server-2_5_0',
@@ -3418,7 +3419,6 @@ const sidebars = {
                 'release-notes/server/server-2_4_6',
                 'release-notes/server/server-2_4_5',
                 'release-notes/server/server-2_4_4',
-                'release-notes/server/server-2_4_3',
                 'release-notes/server/server-previous',
               ],
             },
