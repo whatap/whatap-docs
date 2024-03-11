@@ -584,7 +584,7 @@
     "description": "The label for category 메트릭스 in sidebar redisSidebar"
   },
   "sidebar.redisSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar redisSidebar"
   },
   "sidebar.redisSidebar.category.알림 설정하기": {
@@ -1028,7 +1028,7 @@
     "description": "The label for category Flex 보드 in sidebar rumsSidebar"
   },
   "sidebar.rumsSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar rumsSidebar"
   },
   "sidebar.rumsSidebar.category.알림 설정하기": {
@@ -1124,7 +1124,7 @@
     "description": "The label for category 메트릭스 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.알림 설정하기": {
@@ -1156,7 +1156,7 @@
     "description": "The label for category 대시보드 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.통계/보고서": {
@@ -1168,7 +1168,7 @@
     "description": "The label for category 릴리스 노트 - Preview in sidebar previewSidebar"
   },
   "sidebar.cubridSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar cubridSidebar"
   },
   "sidebar.cubridSidebar.category.통계/보고서": {
@@ -1184,7 +1184,7 @@
     "description": "The label for category 대시보드 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.통계/보고서": {
@@ -1196,7 +1196,7 @@
     "description": "The label for category 대시보드 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.통계/보고서": {
@@ -1260,7 +1260,7 @@
     "description": "The label for category Flex 보드 in sidebar postgrev1Sidebar"
   },
   "sidebar.postgrev1Sidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar postgrev1Sidebar"
   },
   "sidebar.postgrev1Sidebar.category.메트릭스": {
@@ -1336,7 +1336,7 @@
     "description": "The label for category Flex 보드 in sidebar mysqlv1Sidebar"
   },
   "sidebar.mysqlv1Sidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar mysqlv1Sidebar"
   },
   "sidebar.mysqlv1Sidebar.category.메트릭스": {
@@ -1372,7 +1372,7 @@
     "description": "The label for category 대시보드 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.분석": {
-    "message": "Analytics",
+    "message": "Analysis",
     "description": "The label for category 분석 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.알림 설정하기": {

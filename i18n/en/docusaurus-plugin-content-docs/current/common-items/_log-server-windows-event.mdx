@@ -1,0 +1,86 @@
+When collecting Windows event logs, you can set the options as follows:
+
+```bash
+# Require an Administarotr role
+New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
+
+$contentToAdd = @"
+[[inputs.win_eventlog]]
+    category = "win_event_log"
+    stats_category = "win_event_log_stats"
+    stats_enabled = true
+    enabled = true
+    [[inputs.win_eventlog.file]]
+        #true | false
+        enabled = true
+				# Application, Security, Setup, System, Forwarded
+				file = "Application"
+				#1: Information, 2: Warning 3: Critical 4: Audit Success 5 Audit Fail
+				#event_type = 
+				#event id
+				#event_id = 
+				#event source name
+				#source_name = ""
+
+"@
+
+New-Item -path "C:\Program Files\WhatapInfra\extension" -name "win_eventlog.conf" -type "file" -value $contentToAdd -Force
+
+Restart-Service "Whatap Infra"
+```
+
+:::note 
+
+- Support version 2.5.2
+
+- OS: Windows
+
+:::
+
+- It is required to specify the `category`.
+
+  > e.g. `win_event_log`
+
+- It is required to specify the statistics category (`stats_category`).
+
+  > e.g. `win_event_log_stats`
+
+- The statistics category On/Off (`stats_enabled`) is required.
+
+  > e.g. `true` or `false`
+
+- The collection On/Off (`enabled`) is required.
+
+  > e.g. `true` or `false`
+
+- The file-based collection On/Off (`enabled`) is required.
+
+  > e.g. `true` or `false`
+
+- The file (`file`) is required.
+
+  > e.g. `Application`, `Security`, `Setup`, `System`, `Forwarded`
+
+- The event type (`event_type`) is optional.
+
+  > e.g. `1`, `2`, `3`, `4`, `5`
+
+  :::note 
+
+  **Event type**
+
+  1. Information
+
+  2. Warning 
+
+  3. Critical 
+
+  4. Audit Success 
+
+  5. Audit Fail
+
+  :::
+
+- The event ID (`event_id`) is optional.
+
+- The event source name (`source_name`) is optional.

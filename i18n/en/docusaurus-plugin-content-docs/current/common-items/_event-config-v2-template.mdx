@@ -1,0 +1,545 @@
+## Basic event templates {#basic-template}
+
+Basic event templates are provided based on the product of the created project. You can activate a desired event by selecting <Cmdname sid="TTL06099" className="uitext" /> on the utmost left of the event list.
+
+<InDoc product="java,php,python,nodejs,dotnet,golang">
+
+<ImgLang img='event-config-v2-apm.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Transaction_**
+
+  Category: [`app_counter`](metrics-app#app_counter)
+
+  If the number of active transactions (`active_tx_count`) exceeds 100, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+- **_Server CPU_**
+
+  Category: [`app_host_resource`](metrics-app#app_host_resource)
+
+  If the host's CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Server Disk_**
+
+  Category: [`app_host_resource`](metrics-app#app_host_resource)
+
+  If the host's disk utilization (`disk`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Server Memory_**
+
+  Category: [`app_host_resource`](metrics-app#app_host_resource)
+
+  If the host's memory utilization (`mem`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Transaction Error Count_**
+
+  Category: [`app_counter`](metrics-app#app_counter)
+
+  If the number of transaction errors (`tx_error`) exceeds 10, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+- **_Transaction Response Time_**
+
+  Category: [`app_counter`](metrics-app#app_counter)
+
+  If the average response time (`resp_time`) for transactions continues to exceed 2,000 ms (2 seconds) for 10 consecutive times, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+:::note
+
+For more information about the fields applied to the basic event templates, see [the following](metrics-app).
+
+:::
+
+</InDoc>
+
+<InDoc product="server">
+
+<ImgLang img='event-config-v2-server.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_CPU_**
+
+  Category: [`server_base`](metrics-server#server_base)
+
+  If the CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_CPU Steal_**
+
+  Category: [`server_base`](metrics-server#server_base)
+
+  If the [CPU steal utilization](../glossary#cpusteal)(`cpu_steal`) exceeds 5, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 10, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Disk_**
+
+  Category: [`server_disk`](metrics-server#server_disk)
+
+  If the file system utilization (`usedPercent`) exceeds 90%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Disk I/O_**
+
+  Category: [`server_disk`](metrics-server#server_disk)
+
+  If the [Disk I/O utilization](../glossary#diskio)(`ioPercent`) exceeds 90%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Disk Inode_**
+
+  Category: [`server_disk`](metrics-server#server_disk)
+
+  If the disk Inode utilization (`usedInodePercent`) exceeds 90%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`server_base`](metrics-server#server_base)
+
+  If the memory utilization (`memory_pused`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Network BPS_**
+
+  Category: [`server_network`](metrics-server#server_network)
+
+  If the sum of network inbound traffic (`trafficIn`) and outbound traffic (`trafficOut`) exceeds 150,000,000 bytes (150 MB), a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 200,000,000 bytes (200 MB), a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Network IOPS_**
+
+  Category: [`server_network`](metrics-server#server_network)
+
+  If the sum of network inbound packet (`packetIn`) and outbound packet (`packetOut`) exceeds 45,000 bytes, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50,000 bytes, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Process CPU_**
+
+  Category: [`server_process`](metrics-server#server_process)
+
+  If the total CPU utilization (`cpu`) exceeds 90%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Process Count_**
+
+  Category: [`server_process`](metrics-server#server_process)
+
+  If the number of processes (`count`) is 2 or more, a warning (<span class="slow">Warning</span>) level notification is sent. If it is less than 1, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Process Memory_**
+
+  Category: [`server_process`](metrics-server#server_process)
+
+  If the process memory utilization (`memory`) exceeds 90%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Swap Memory_**
+
+  Category: [`server_base`](metrics-server#server_base)
+
+  If the swap memory utilization (`memory_swappused`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+:::note
+
+For more information about the fields applied to the basic event templates, see [the following](metrics-server).
+
+:::
+
+</InDoc>
+
+<InDoc product="kubernetes">
+
+<ImgLang img='event-config-v2-k8s.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Transaction_**
+
+  Category: <Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
+
+  If the number of active transactions (`active_tx_count`) exceeds 100, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+- **_Container CPU Utilization Relative to Container CPU Limit_**
+
+  Category: [`container`](metrics-kubernetes#container)
+
+  If the container's CPU utilization (`cpu_per_quota`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Container Memory Utilization Relative to Container Memory Limit_**
+
+  Category: [`container`](metrics-kubernetes#container)
+
+  If the container's memory usage (`mem_percent`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Deployment Replicas Pending Pods Count_**
+
+  Category: [`kube_pod_stat`](metrics-kubernetes#kube_pod_stat)
+
+  If the number of available Pods (`available_pod`) is less than the number of Pods required for release (`desired_pod`), a warning (<span class="slow">Warning</span>) level notification is sent. Enter the difference between the number of available Pods and the number of Pods required for release as the threshold.
+
+- **_Node CPU_**
+
+  Category: <Link to="../server/metrics-server#server_base" target="_blank"><code>server_base</code></Link>
+
+  If the node's CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Node Disk(/) Utilization_**
+
+  Category: <Link to="../server/metrics-server#server_disk" target="_blank"><code>server_disk</code></Link>
+
+  If the disk utilization (`usedPercent`) for the route path exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Node Memory_**
+
+  Category: <Link to="../server/metrics-server#server_base" target="_blank"><code>server_base</code></Link>
+
+  If the node's memory utilization (`memory_pused`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Restart Count Of Container In Pod_**
+
+  Category: [`kube_pod`](metrics-kubernetes#kube_pod)
+
+  If the number of Pod restarts (`RestartCount`) exceeds 5, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+- **_Transaction Error Count_**
+
+  Category: <Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
+
+  If the number of transaction errors (`tx_error`) exceeds 10, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+- **_Transaction Response Time_**
+
+  Category: <Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
+
+  If the average response time (`resp_time`) for transactions continues to exceed 2,000 ms (2 seconds) for 10 consecutive times, a warning (<span class="slow">Warning</span>) level notification is sent.
+
+:::note
+
+For more information about the fields applied to the basic event templates, see [the following](metrics-kubernetes).
+
+:::
+
+</InDoc>
+
+<InDoc product="mysql">
+
+<ImgLang img='event-config-v2-db01.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+- **_Replication Delay_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  In the case of a replication structure, if the delay time (`replication_delay`) reflected in the replication DB exceeds 50 seconds, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 100 seconds, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+<ImgLang img='event-config-v2-db01.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: [`db_postgresql_counter`](metrics-data-list)
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: [`db_postgresql_counter`](metrics-data-list)
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`db_postgresql_counter`](metrics-data-list)
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+- **_Replication Delay_**
+
+  Category: [`db_postgresql_counter`](metrics-data-list)
+
+  In the case of a replication structure, if the delay time (`replication_delay`) reflected in the replication DB exceeds 50 seconds, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 100 seconds, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+</InDoc>
+
+<InDoc product="oracle">
+
+<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: [`db_oracle_counter`](metrics-data-list)
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: [`db_oracle_counter`](metrics-data-list)
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`db_oracle_counter`](metrics-data-list)
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+</InDoc>
+
+<InDoc product="cubrid">
+
+<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: `db_cubrid_counter`
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: `db_cubrid_counter`
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: `db_cubrid_counter`
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+</InDoc>
+
+<InDoc product="tibero">
+
+<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: `db_tibero_counter`
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: `db_tibero_counter`
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: `db_tibero_counter`
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](after-install-agent#agent-architecture).
+
+  :::
+
+</InDoc>
+
+<InDoc product="altibase">
+
+<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: `db_altibase_counter`
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: `db_altibase_counter`
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: `db_altibase_counter`
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](after-install-agent#agent-architecture).
+
+  :::
+
+</InDoc>
+
+<InDoc product="mssql">
+
+<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: [`db_mssql_counter`](metrics-mssql)
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: [`db_mssql_counter`](metrics-mssql)
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`db_mssql_counter`](metrics-mssql)
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](after-install-agent#agent-architecture).
+
+  :::
+
+</InDoc>
+
+<InDoc product="npm">
+
+<ImgLang img='event-config-v2-npm.png' desc='Event list' />
+
+- **_Jitter_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  If the average number of packet round trip delay changes (`avg_jitter`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 60, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Latency_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  If the average time of packet round trip delays (`avg_latency`) exceeds 200 ms (0.2 seconds), a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 400 ms (0.4 seconds), a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Loss Packet_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  If the lost packet count (`lost_count`) exceeds 1, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 10, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Retransmission Packet_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  The retransmitted packet count (`retransmission_count`) exceeds 1, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 10, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Session Count_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  The number of sessions excluding duplicates (`session_count`) exceeds 100, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 1000, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Total Packet Count_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  If the sum of the transmitted packet count (`send_packet_count`) and the received packet count (`recv_packet_count`) exceeds 50,000, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 100,000, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Total Packet Size_**
+
+  Category: [`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
+
+  If the sum of the data size for transmitted packets (`send_packet_size`) and that for received packets (`recv_packet_size`) exceeds 7,680,000,000 bytes (7.68 GB), a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 15,360,000,000 bytes (15.36 GB), a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+:::note
+
+For more information about the fields applied to the basic event templates, see [the following](metrics-npm).
+
+:::
+
+</InDoc>
+
+<InDoc product="browser">
+
+<ImgLang img='event-config-v2-browser.png' desc='Event list' />
+
+- **_Abnormal ajax load count_**
+
+  Category: [`rum_ajax_each_page`](metrics-browser#rum_ajax_each_page)
+
+  If the AJAX load count (`ajax_count`) exceeds 50, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 100, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Abnormal ajax response time_**
+
+  Category: [`rum_ajax_each_page`](metrics-browser#rum_ajax_each_page)
+
+  If the average response time for AJAX requests (`ajax_duration`) exceeds 20,000 ms (20 seconds), a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50,000 ms (50 seconds), a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Abnormal error count_**
+
+  Category: [`rum_error_total_each_page`](metrics-browser#rum_error_total_each_page)
+
+  If the error occurrence count (`error_count`) exceeds 10, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Abnormal page load_**
+
+  Category: [`rum_page_load_each_page`](metrics-browser#rum_page_load_each_page)
+
+  If the page load count (`page_load_count`) exceeds 50, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 100, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Abnormal page load time_**
+
+  Category: [`rum_page_load_each_page`](metrics-browser#rum_page_load_each_page)
+
+  If the average time for the browser to load a web page (`page_load_duration`) exceeds 4 seconds, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 6 seconds, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+:::note
+
+For more information about the fields applied to the basic event templates, see [the following](metrics-browser).
+
+:::
+
+</InDoc>

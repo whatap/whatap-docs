@@ -1,0 +1,45 @@
+Home > Select Project > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="transaction_map" className="uitext" />
+
+The <Cmdname sid="transaction_map" className="uitext" /> chart displays the response times for each completed transaction in the distribution chart form. Same as the hitmap, you can find and analyze problems based on the distribution patterns. <Cmdname sid="hitmap" className="uitext" /> displays the grouped transactions every 5 seconds, but <Cmdname sid="transaction_map" className="uitext" /> displays transactions individually.
+
+<ImgLang img='dashboard-transaction-map.png' desc='Transaction map' />
+
+:::info
+
+The items changed through [Service 2.2.0 release](../release-notes/service/service-2_2_x) are as follows:
+
+- You can view the data up to 5 minutes in real time and up to 10 minutes for the past. (Before: limited up to 5 minutes in real time)
+
+- When searching for the previous data, the data received from the server can be filtered.
+
+- The number of data that can be searched through the <Cmdname sid="TTL06209" className="uitext" /> window has been changed from 100 to 1000.
+
+- The counts for transactions and errors are displayed in real time.
+
+- The keyboard events have been added to the <span class="uitext">TOP 30</span> list and chart area. By selecting the keyboard direction button, you can move to the desired position.
+
+For more information about the <Cmdname sid="transaction_map" className="uitext" /> menu reorganization, see the <Link to="https://www.whatap.io/ko/blog/210/index.html">following link</Link>.
+
+:::
+
+:::tip 
+
+**How is it different from the hitmap analysis?**
+
+A hitmap chart displays the sum of transactions in a specific section. Differences are expressed in color where the number of occurrences is high. In case of the hitmap, the sums for each section are stored separately. Accordingly, you can check the trend over a relatively long time. However, because transactions are aggregated and displayed, it is difficult to know individual transactions.
+
+- To analyze the distribution of the long-term, high-volume transactions, use the hitmap analysis (<Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />).
+
+- To do performance test, or analyze the transaction distribution within 1 to 5 minutes upon a failure, or check the transaction distribution without limiting the execution time, check the <Cmdname sid="transaction_map" className="uitext" />.
+
+:::
+
+:::note
+
+- For more information about <Cmdname sid="hitmap" className="uitext" />, see <Link to="trs-view">the following</Link>.
+
+- For more information about the analysis method of the <Cmdname sid="hitmap_transaction" className="uitext" /> chart, see <Link to="../best-practice-guides/about-apm-hitmap-class">the following</Link>.
+
+- If the user's PC time has been set to be older than the server time, the data may not appear on the chart if the server time and the user's PC time differ by more than 5 minutes.
+
+:::

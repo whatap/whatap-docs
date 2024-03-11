@@ -75,7 +75,7 @@ Through the option to configure the time series charts, you can autocomplete **M
 - <Cmdname sid="field" className="uitext" />: Select fields to use as event generation conditions. You can select multiple items.
 
 </TabItem>
-<TabItem value='text' label='Text'>
+<TabItem value='text' label='텍스트'>
 
 The editing window appears where you can modify **MXQL** in plain text.
 
@@ -96,7 +96,9 @@ Enter basic data for alert settings.
 
 - <Cmdname sid="title" className="uitext" />: Enter the title of the alert.
 
-- <Cmdname sid="message" className="uitext" />: Enter a notification message to be displayed when events occur. By entering <code>&#36;&#123;tag or field key}&#125;</code>, you can apply the variable to the message. The key in the variable must be the value contained in <Cmdname sid="category" className="uitext" /> for the selected composite metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />.
+- <Cmdname sid="message" className="uitext" />: Enter a notification message to be displayed when events occur. By entering <code>&#36;&#123;Tag&#125;</code> or <code>&#36;&#123;Field&#125;</code> key, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="tag_count" className="uitext" />.
+
+  <ImgLang img='event-config-message-example.png' desc='Message example' />
 
 ### Alert Policy
 

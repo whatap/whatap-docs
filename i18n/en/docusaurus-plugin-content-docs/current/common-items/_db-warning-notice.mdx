@@ -1,4 +1,4 @@
-Home > Select Project > **_Alert_** > **_Event Setting_** > **_Database_** tab
+Home > Select Project > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > Select <Cmdname sid="database" className="uitext" /> tab
 
 Alerts are sent through event condition settings per metric in the database. By entering thresholds for each metric, you can send alerts divided into <span class='vslow'>Fatal</span> and <span class='vslow'>Warning</span> levels.
 
@@ -12,45 +12,57 @@ Even without configuring an alert, if there are 15 or more consecutive failures 
 
 ## Setting the alert
 
-Depending on the user-selected **_metrics_** item, if the events that meet the condition of the entered **_Fatal_** and **_Warning_** item count occur as many as **_Number of detections_**, you can set to send the alert.
+Depending on the user-selected <Cmdname sid="metrics" className="uitext" /> item, if the events that meet the condition of the entered <Cmdname sid="fatal" className="uitext" /> and <Cmdname sid="warn" className="uitext" /> item count occur as many as <Cmdname sid="number_of_detections" className="uitext" />, you can set to send the alert.
 
-1. Select the agent for alert settings in **_Instance_**.
+<ImgLang img='set-event-item-db.png' desc='Event' />
 
-2. Select **_+ Add Alert settings_**. The **_metrics_** item is created at the bottom of the screen.
+1. In <Cmdname sid="instance" className="uitext" />, select an agent to set the alert.
 
-3. Select a desired metric in **_Metrics_**.
+2. If you select <Cmdname sid="add_notification" className="uitext" />, an event is created at the bottom of the screen.
 
-4. Enter numeric values for **_Fatal_** and **_Warning_**.
+3. Select a desired metric in <Cmdname sid="metrics" className="uitext" />.
 
-5. Enter a desired number in **_Number of detections_**.
+4. Enter numeric values for <Cmdname sid="fatal" className="uitext" /> and <Cmdname sid="warn" className="uitext" />.
+
+5. Enter a desired number in <Cmdname sid="number_of_detections" className="uitext" />.
 
 6. Select the toggle button on the utmost right to enable the alert.
+
+:::tip
+
+<Cmdname sid="resolved_event_notification" className="uitext" />
+
+- You can set whether or not to send a notification when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
+
+- This function is supported in DBX agent 1.6.30 or later.
+
+:::
 
 ## Copying the alert
 
 You can copy any alert events created on the selected instance to another instance.
 
-1. Select ![Copy icon](/img/ico-copy.svg) **_Copy alert policy_**. 
+1. Select ![copy icon](/img/ico-copy.svg) <Cmdname sid="copy_notification" className="uitext" />. 
 
-2. Select the target instance to copy. Select **_Select All_** to copy to all instances.
+2. Select the target instance to copy. Select <Cmdname sid="all_selected" className="uitext" /> to copy to all instances.
 
-3. Select **_Copy_**.
+3. Select <Cmdname sid="copy" className="uitext" />.
 
 :::caution
 
-If you use the **_Copy alert policy_** function in a state where there are alert events created in the target instance to copy, the existing alerts are deleted.
+If you use the <Cmdname sid="copy_notification" className="uitext" /> function in a state where there are alert events created in the target instance to copy, the existing alerts are deleted.
 
 :::
 
 ## Disabling the repeated alerts
 
-This can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert is generated. In addition, they are not recorded in **_Event History_**.
+This can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert is generated. In addition, they are not recorded in <Cmdname sid="event_history" className="uitext" />.
 
-In **_Disabled Database Alert_**, select a desired time and then select the toggle button on the right to turn on or off the function.
+In <Cmdname sid="BTN07592" className="uitext" />, select a desired time and then select the toggle button on the right to turn on or off the function.
 
 :::note
 
-When the **_Disabled Database Alert_** option is enabled, if the agent fails to receive data during the set time period, the **_INACTIVE MONITORING AGENT_** alert appears.
+When the <Cmdname sid="BTN07592" className="uitext" /> option is enabled, if the agent fails to receive data during the set time period, the <span class="uitext">INACTIVE MONITORING AGENT</span> alert appears.
 
 <ImgLang img='db-set-event-disable-alert.png' desc='INACTIVE MONITORING AGENT'/>
 

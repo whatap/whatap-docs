@@ -22,7 +22,7 @@ See the following video guide for more information about the GROK parser pattern
 
 {@youtube: skgg5KOFGpI}
 
-### Starting GROK
+### Starting GROK {#grok-starting}
 
 GROK provides two types of syntaxes.
 
@@ -44,6 +44,8 @@ GROK provides two types of syntaxes.
    | SPACE    | `\s*`                                                  |
    | NOTSPACE | `\S+`                                                  |
    | UUID     | `[A-Fa-f0-9]{8}-(?:[A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}` |
+
+   To see all named regular expressions provided by WhaTap, see the following [link](https://github.com/whatap/java-grok/blob/master/src/main/resources/patterns/patterns).
 
    :::
 
@@ -184,7 +186,7 @@ If you parse with the above syntax, you can extract tags as follows.
 - dexBuildElapsed : 56
 ```
 
-### Applying GROK
+### Applying GROK {#grok-applying}
 
 **_Log setting_** > **_Log primary parser setting_**
 
@@ -262,7 +264,7 @@ You can check the parsed result in advance by entering **_log_** and **_pattern_
 
 If logs are collected in JSON format, they can be easily parsed using the JSON parser.
 
-### Applying the JSON
+### Applying the JSON {#json-applying}
 
 **_Log setting_** > **_Log primary parser setting_**
 
