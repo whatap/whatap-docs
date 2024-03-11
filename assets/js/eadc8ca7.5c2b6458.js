@@ -337,8 +337,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
+        "title": "DBX v1.6.31",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_31"
     },
     "next": {
         "title": "DBX v1.6.26",
