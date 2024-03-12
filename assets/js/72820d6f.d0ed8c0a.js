@@ -372,8 +372,8 @@ const metadata = {
         "permalink": "/whatap-docs/dotnet/dashboard-transactionmap"
     },
     "next": {
-        "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/dotnet/dashboard-hitmap-trace"
+        "title": "IIS 성능 카운트",
+        "permalink": "/whatap-docs/dotnet/dashboard-iis-perf-count"
     }
 };
 const assets = {};

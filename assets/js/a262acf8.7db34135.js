@@ -362,8 +362,8 @@ const metadata = {
     },
     "sidebar": "dotNetSidebar",
     "previous": {
-        "title": "액티브 트랜잭션",
-        "permalink": "/whatap-docs/dotnet/dashboard-active-transaction"
+        "title": "IIS 성능 카운트",
+        "permalink": "/whatap-docs/dotnet/dashboard-iis-perf-count"
     },
     "next": {
         "title": "Flex 보드",
