@@ -478,8 +478,8 @@ const metadata = {
     },
     "sidebar": "postgreSidebar",
     "previous": {
-        "title": "에이전트 설치",
-        "permalink": "/whatap-docs/postgresql/install-agent"
+        "title": "빠른 에이전트 설정",
+        "permalink": "/whatap-docs/postgresql/install-agent-quick-setup"
     },
     "next": {
         "title": "설치 문제 해결",
