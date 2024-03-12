@@ -1041,6 +1041,7 @@ const sidebars = {
                 'dotnet/dashboard',
                 'dotnet/dashboard-transactionmap',
                 'dotnet/dashboard-active-transaction',
+                'dotnet/dashboard-iis-perf-count',
                 'dotnet/dashboard-hitmap-trace',
               ],
             },
