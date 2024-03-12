@@ -2,34 +2,6 @@
 
   AWSリージョンを設定します。
 
-- **aws_access_key** <span class='type'>String</span>
-
-  AWSアクセス キーを設定します。
-
-- **aws_secret_key** <span class='type'>String</span>
-
-  AWSシークレットキーを設定します。
-
-- **cloud_watch** <span class='type'>String</span>
-
-  CloudWatchモニタリングの使用有無を設定します。 設定値は`on`または`off`です。
-
-- **cloud_watch_instance** <span class='type'>String</span>
-
-  CloudWatchインスタンス名を設定します。
-
-- **cloud_watch_interval** <span class='type'>Second</span>
-
-  CloudWatchでモニタリング値を取得する間隔を設定します。(単位：秒)
-
-- **cloud_watch_metrics** <span class='type'>String</span>
-
-  CloudWatchに読み込みするモニタリング指標名を設定します。次のように設定できます。
-
-  ```ini
-  cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
-  ```
-
 - **aws_arn** <span class='type'>String</span>
 
   `aws_access_key`、`aws_secret_key`の代わりに適切な権限を持つIAM ROLEのARNを使用することができます。
@@ -53,6 +25,26 @@
   | logs:GetLogEvents                 | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
 
   </details>
+
+- **cloud_watch** <span class='type'>String</span>
+
+  CloudWatchモニタリングの使用有無を設定します。 設定値は`on`または`off`です。
+
+- **cloud_watch_instance** <span class='type'>String</span>
+
+  CloudWatchインスタンス名を設定します。
+
+- **cloud_watch_interval** <span class='type'>Second</span>
+
+  CloudWatchでモニタリング値を取得する間隔を設定します。(単位：秒)
+
+- **cloud_watch_metrics** <span class='type'>String</span>
+
+  CloudWatchに読み込みするモニタリング指標名を設定します。次のように設定できます。
+
+  ```ini
+  cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+  ```
 
 ### RDS CloudWatch収集の設定例
 

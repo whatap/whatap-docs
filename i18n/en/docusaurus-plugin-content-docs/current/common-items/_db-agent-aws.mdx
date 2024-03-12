@@ -2,34 +2,6 @@
 
   Set the AWS region.
 
-- **aws_access_key** <span class='type'>String</span>
-
-  Set the AWS access key.
-
-- **aws_secret_key** <span class='type'>String</span>
-
-  Set the AWS secret key.
-
-- **cloud_watch** <span class='type'>String</span>
-
-  Set whether or not to use the CloudWatch Monitoring. The value is `on` or `off`.
-
-- **cloud_watch_instance** <span class='type'>String</span>
-
-  Set the instance name of the CloudWatch.
-
-- **cloud_watch_interval** <span class='type'>Second</span>
-
-  Set the interval to get monitoring values by CloudWatch (unit: second).
-
-- **cloud_watch_metrics** <span class='type'>String</span>
-
-  Set the monitoring metric name to be imported into the CloudWatch. You can set it as follows:
-
-  ```ini
-  cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
-  ```
-
 - **aws_arn** <span class='type'>String</span>
 
   Instead of `aws_access_key` and `aws_secret_key`, you can use the ARN of the IAM ROLE with appropriate roles.
@@ -53,6 +25,26 @@
   | logs:GetLogEvents                 | Collection of CloudWatch logs (in case of using the posted logs) |
 
   </details>
+
+- **cloud_watch** <span class='type'>String</span>
+
+  Set whether or not to use the CloudWatch Monitoring. The value is `on` or `off`.
+
+- **cloud_watch_instance** <span class='type'>String</span>
+
+  Set the instance name of the CloudWatch.
+
+- **cloud_watch_interval** <span class='type'>Second</span>
+
+  Set the interval to get monitoring values by CloudWatch (unit: second).
+
+- **cloud_watch_metrics** <span class='type'>String</span>
+
+  Set the monitoring metric name to be imported into the CloudWatch. You can set it as follows:
+
+  ```ini
+  cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+  ```
 
 ### Example of configuration for RDS CloudWatch collection
 
