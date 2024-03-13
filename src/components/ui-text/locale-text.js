@@ -2,7 +2,7 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
 
-const ReplacementLocaleText = ({sid, className, anchor, replace}) => {
+const ReplacementLocaleText = ({sid, className, anchor, replace, days}) => {
     const { i18n: {currentLocale} } = useDocusaurusContext();
     
     let oText;
@@ -16,6 +16,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace}) => {
         }
     } else {
         oText = whatapLocale[sid][`${currentLocale}`];
+    }
+    if (sid == "BTN07717") {
+        oText = whatapLocale[sid][`${currentLocale}`].replace('{days}', days);
     }
     if (sid == "TTL06865") {
         oText = whatapLocale[sid][`${currentLocale}`].toUpperCase();
