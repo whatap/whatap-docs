@@ -317,7 +317,7 @@ const metadata = {
     "unversionedId": "release-notes/server/server-previous",
     "id": "release-notes/server/server-previous",
     "title": "Server Agent 지난 버전",
-    "description": "* Server Agent 2.4.3",
+    "description": "* Server Agent 2.4.4",
     "source": "@site/docs/release-notes/server/server-previous.mdx",
     "sourceDirName": "release-notes/server",
     "slug": "/release-notes/server/server-previous",
@@ -333,8 +333,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Server Agent v2.4.4",
-        "permalink": "/whatap-docs/release-notes/server/server-2_4_4"
+        "title": "Server Agent v2.4.5",
+        "permalink": "/whatap-docs/release-notes/server/server-2_4_5"
     },
     "next": {
         "title": "Kubernetes Agent v1.5.7",
@@ -355,6 +355,13 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "server-2_4_4"
+    }, `Server Agent 2.4.4`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"

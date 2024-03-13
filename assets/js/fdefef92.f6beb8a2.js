@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[29369],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[86116],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 86945:
+/***/ 85132:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'server-2_5_4',
-    title: 'Server Agent v2.5.4',
+    id: 'server-2_5_5',
+    title: 'Server Agent v2.5.5',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/server/server-2_5_3',
+    pagination_next: 'release-notes/server/server-2_5_4',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/server/server-2_5_4",
-    "id": "release-notes/server/server-2_5_4",
-    "title": "Server Agent v2.5.4",
-    "description": "2024년 03월 11일",
-    "source": "@site/docs/release-notes/server/server-2.5.4.mdx",
+    "unversionedId": "release-notes/server/server-2_5_5",
+    "id": "release-notes/server/server-2_5_5",
+    "title": "Server Agent v2.5.5",
+    "description": "2024년 03월 13일",
+    "source": "@site/docs/release-notes/server/server-2.5.5.mdx",
     "sourceDirName": "release-notes/server",
-    "slug": "/release-notes/server/server-2_5_4",
-    "permalink": "/whatap-docs/release-notes/server/server-2_5_4",
+    "slug": "/release-notes/server/server-2_5_5",
+    "permalink": "/whatap-docs/release-notes/server/server-2_5_5",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/server/server-2.5.4.mdx",
+    "editUrl": "undefined/docs/release-notes/server/server-2.5.5.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "server-2_5_4",
-        "title": "Server Agent v2.5.4",
+        "id": "server-2_5_5",
+        "title": "Server Agent v2.5.5",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/server/server-2_5_3",
+        "pagination_next": "release-notes/server/server-2_5_4",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
@@ -341,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/golang/golang-previous"
     },
     "next": {
-        "title": "Server Agent v2.5.3",
-        "permalink": "/whatap-docs/release-notes/server/server-2_5_3"
+        "title": "Server Agent v2.5.4",
+        "permalink": "/whatap-docs/release-notes/server/server-2_5_4"
     }
 };
 const assets = {};
@@ -363,9 +363,9 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 13일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "New"), " 서버 시간 동기화 명령인 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "ntpq -p"), " 결과를 통해 시계열로 모니터링하는 기능 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, "Changed"), " Windows 환경에서 와탭 서버 에이전트의 프로세스 간 통신 모드에 SOCKET 모드 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -416,7 +416,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-4.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-5.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -442,7 +442,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-4.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-5.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -453,7 +453,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-4.aarch64.rpm"
+        "href": "https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-5.aarch64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -468,7 +468,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-4.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-5.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -479,7 +479,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-4.aarch64.rpm"
+        "href": "https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-5.aarch64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -494,7 +494,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-4.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-5.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -505,7 +505,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-4.aarch64.rpm"
+        "href": "https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-5.aarch64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -520,7 +520,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-4.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-5.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -531,7 +531,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-4.aarch64.rpm"
+        "href": "https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-5.aarch64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -554,7 +554,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.4_amd64.deb"
+        "href": "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.5_amd64.deb"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -565,7 +565,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.4_arm64.deb"
+        "href": "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.5_arm64.deb"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {

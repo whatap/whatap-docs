@@ -336,10 +336,6 @@ const metadata = {
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Server Agent v2.4.5",
-        "permalink": "/whatap-docs/release-notes/server/server-2_4_5"
-    },
     "next": {
         "title": "Server Agent v2.4.3",
         "permalink": "/whatap-docs/release-notes/server/server-2_4_3"
