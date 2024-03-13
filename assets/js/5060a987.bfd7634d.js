@@ -309,8 +309,8 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'java-under-ver',
-    title: 'Java 1.6 버전 이하',
-    description: 'Java 1.6 버전 이하에서 JVM 옵션 추가 설정을 완료하세요.',
+    title: 'Java 1.6 버전 미만',
+    description: 'Java 1.6 버전 미만에서 JVM 옵션 추가 설정을 완료하세요.',
     tags: [
         'Java'
     ]
@@ -319,8 +319,8 @@ const contentTitle = undefined;
 const metadata = {
     "unversionedId": "java/add-jvm-opt/java-under-ver",
     "id": "java/add-jvm-opt/java-under-ver",
-    "title": "Java 1.6 버전 이하",
-    "description": "Java 1.6 버전 이하에서 JVM 옵션 추가 설정을 완료하세요.",
+    "title": "Java 1.6 버전 미만",
+    "description": "Java 1.6 버전 미만에서 JVM 옵션 추가 설정을 완료하세요.",
     "source": "@site/docs/java/add-jvm-opt/java-under-ver.mdx",
     "sourceDirName": "java/add-jvm-opt",
     "slug": "/java/add-jvm-opt/java-under-ver",
@@ -336,8 +336,8 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "java-under-ver",
-        "title": "Java 1.6 버전 이하",
-        "description": "Java 1.6 버전 이하에서 JVM 옵션 추가 설정을 완료하세요.",
+        "title": "Java 1.6 버전 미만",
+        "description": "Java 1.6 버전 미만에서 JVM 옵션 추가 설정을 완료하세요.",
         "tags": [
             "Java"
         ]
@@ -391,7 +391,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Java 1.6 버전 이하에서 와탭 에이전트를 적용할 수 있습니다. 하지만 일부 기능에 제약이 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Java 1.6 버전 미만에서 와탭 에이전트를 적용할 수 있습니다. 하지만 일부 기능에 제약이 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "java-15-버전"
     }, `Java 1.5 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Java 1.5 버전은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"

@@ -410,7 +410,7 @@ function MDXContent(_param) {
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "java-에이전트-지원-환경"
-    }, `Java 에이전트 지원 환경`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `에이전트를 설치하기 전에 JVM 애플리케이션 서버가 다음의 사양을 충족하는지 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Web Application Server (WAS) 뿐 아니라 데몬 및 배치 애플리케이션 등 JVM에서 동작하는 모든 애플리케이션에 적용할 수 있습니다. Java 1.5 이하는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+    }, `Java 에이전트 지원 환경`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `에이전트를 설치하기 전에 JVM 애플리케이션 서버가 다음의 사양을 충족하는지 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Web Application Server (WAS) 뿐 아니라 데몬 및 배치 애플리케이션 등 JVM에서 동작하는 모든 애플리케이션에 적용할 수 있습니다. Java 1.6 미만은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "mailto:support@whatap.io"
     }, `support@whatap.io`), `로 문의하거나 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
