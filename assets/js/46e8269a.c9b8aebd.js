@@ -336,10 +336,6 @@ const metadata = {
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Python Agent v1.5.0",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_0"
-    },
     "next": {
         "title": "Python Agent v1.4.8",
         "permalink": "/whatap-docs/release-notes/python/python-1_4_8"

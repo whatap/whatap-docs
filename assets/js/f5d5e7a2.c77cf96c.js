@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[77059],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[7964],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 87593:
+/***/ 43123:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_4_8',
-    title: 'Python Agent v1.4.8',
+    id: 'python-1_6_0',
+    title: 'Python Agent v1.6.0',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_4_6',
+    pagination_next: 'release-notes/python/python-1_5_9',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_4_8",
-    "id": "release-notes/python/python-1_4_8",
-    "title": "Python Agent v1.4.8",
-    "description": "2023년 10월 25일",
-    "source": "@site/docs/release-notes/python/python-1.4.8.mdx",
+    "unversionedId": "release-notes/python/python-1_6_0",
+    "id": "release-notes/python/python-1_6_0",
+    "title": "Python Agent v1.6.0",
+    "description": "2024년 03월 13일",
+    "source": "@site/docs/release-notes/python/python-1.6.0.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_4_8",
-    "permalink": "/whatap-docs/release-notes/python/python-1_4_8",
+    "slug": "/release-notes/python/python-1_6_0",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_0",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.4.8.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.6.0.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_4_8",
-        "title": "Python Agent v1.4.8",
+        "id": "python-1_6_0",
+        "title": "Python Agent v1.6.0",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_4_6",
+        "pagination_next": "release-notes/python/python-1_5_9",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Python Agent v1.4.9",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_9"
+        "title": "Node.js Agent v0.4.77",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
     },
     "next": {
-        "title": "Python Agent v1.4.6",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_6"
+        "title": "Python Agent v1.5.9",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_9"
     }
 };
 const assets = {};
@@ -363,16 +363,16 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 10월 25일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 13일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " FastAPI에서 remote host에 대한 정보를 찾지 못하면 에이전트가 동작하지 않는 현상 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.4.8/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 쿠버네티스의 클러스터 내부 에이전트 성능 수집과 관련해 메모리를 과다 측정하는 버그 수정"));
+        "href": "https://pypi.org/project/whatap-python/1.6.0/"
+    }, `whatap-python · PyPI`))));
 }
 MDXContent.isMDXComponent = true;
 
