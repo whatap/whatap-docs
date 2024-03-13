@@ -24262,7 +24262,7 @@
     "service_id": "TTL03536"
   },
   "hitmap_exc_time": {
-    "en": "Detection cxclusion time",
+    "en": "Detection exclusion time",
     "ja": "検知対象外時間",
     "ko": "탐지 제외 시간",
     "zh": "Detection Exclusion Time",
@@ -26614,70 +26614,70 @@
     "service_id": "_03874"
   },
   "time_action_fromstart": {
-    "en": "&nbsp;from start time",
+    "en": "from start time",
     "ja": "開始時刻から",
-    "ko": "시작시간 ~&nbsp;",
+    "ko": "시작시간 ~ ",
     "zh": "&nbsp;from start time",
     "service_id": "_03875"
   },
   "time_action_recent": {
-    "en": "Last&nbsp;",
+    "en": "Last",
     "ja": "最近",
-    "ko": "최근&nbsp;",
+    "ko": "최근",
     "zh": "Last&nbsp;",
     "service_id": "_03876"
   },
   "time_action_live": {
-    "en": "Real-time&nbsp;",
+    "en": "Real-time",
     "ja": "リアルタイム",
-    "ko": "실시간&nbsp;",
+    "ko": "실시간",
     "zh": "Real-time&nbsp;",
     "service_id": "_03877"
   },
   "time_action_before": {
-    "en": "&nbsp;ago",
+    "en": "ago",
     "ja": "前",
-    "ko": "&nbsp;전",
+    "ko": "전",
     "zh": "&nbsp;ago",
     "service_id": "ITM03878"
   },
   "time_action_sec": {
-    "en": "&nbsp;second",
+    "en": "second",
     "ja": "秒",
     "ko": "초",
     "zh": "&nbsp;second",
     "service_id": "_03879"
   },
   "time_action_min": {
-    "en": "&nbsp;minute",
+    "en": "minute",
     "ja": "分",
     "ko": "분",
     "zh": "&nbsp;minute",
     "service_id": "_03880"
   },
   "time_action_hour": {
-    "en": "&nbsp;hour",
+    "en": "hour",
     "ja": "時間",
     "ko": "시간",
     "zh": "&nbsp;hour",
     "service_id": "ITM03881"
   },
   "time_action_day": {
-    "en": "&nbsp;day",
+    "en": "day",
     "ja": "日",
     "ko": "일",
     "zh": "&nbsp;day",
     "service_id": "ITM03882"
   },
   "time_action_month": {
-    "en": "&nbsp;month",
+    "en": "month",
     "ja": "か月",
     "ko": "개월",
     "zh": "&nbsp;month",
     "service_id": "_03883"
   },
   "time_action_week": {
-    "en": "&nbsp;week",
+    "en": "week",
     "ja": "週",
     "ko": "주",
     "zh": "&nbsp;week",
@@ -37430,7 +37430,7 @@
   },
   "remake": {
     "en": "Regenerate",
-    "ja": "再生性",
+    "ja": "再生成",
     "ko": "재생성",
     "zh": "Regenerate",
     "service_id": "BTN05428"
@@ -44088,7 +44088,7 @@
   "TTL06394": {
     "en": "Pod info",
     "ja": "Pod情報",
-    "ko": "파드 정보",
+    "ko": "Pod 정보",
     "zh": "Pod Info",
     "service_id": "TTL06394"
   },
@@ -53381,6 +53381,132 @@
     "zh": "User session flow",
     "service_id": "TTL07746"
   },
+  "TTL07747": {
+    "en": "Classification",
+    "ja": "分類",
+    "ko": "분류",
+    "zh": "Classification",
+    "service_id": "TTL07747"
+  },
+  "BTN07748": {
+    "en": "Downloading CSV\n",
+    "ja": "CSVダウンロード中",
+    "ko": "CSV 다운로드 중",
+    "zh": "Downloading CSV",
+    "service_id": "BTN07748"
+  },
+  "BTN07749": {
+    "en": "Downloading image\n",
+    "ja": "画像ダウンロード中",
+    "ko": "이미지 다운로드 중",
+    "zh": "Downloading image",
+    "service_id": "BTN07749"
+  },
+  "BTN07750": {
+    "en": "image download",
+    "ja": "画像をダウンロード\n",
+    "ko": "이미지 다운로드",
+    "zh": "image download",
+    "service_id": "BTN07750"
+  },
+  "TTL07751": {
+    "en": "Browser Error",
+    "ja": "ブラウザエラー",
+    "ko": "브라우저 에러",
+    "zh": "Browser Error",
+    "service_id": "TTL07751"
+  },
+  "TTL07752": {
+    "en": "Router Change",
+    "ja": "ルーターの変更",
+    "ko": "라우터 변경",
+    "zh": "Router Change",
+    "service_id": "TTL07752"
+  },
+  "TTL07753": {
+    "en": "Click",
+    "ja": "クリック",
+    "ko": "클릭",
+    "zh": "Click",
+    "service_id": "TTL07753"
+  },
+  "TTL07754": {
+    "en": "Rapid Click",
+    "ja": "素早いクリック",
+    "ko": "연속 클릭",
+    "zh": "Rapid Click",
+    "service_id": "TTL07754"
+  },
+  "TTL07755": {
+    "en": "AJAX Load",
+    "ja": "AJAXロード",
+    "ko": "AJAX 로드",
+    "zh": "AJAX Load",
+    "service_id": "TTL07755"
+  },
+  "DSC07756": {
+    "en": "* Values captured in the DB (v$sql_bind_capture), not live executed BIND values. If there are a lot of them, they will be shown up to 100.",
+    "ja": "* リアルタイムで実行されたbind値ではなく、dbにキャプチャされた値です(v$sql_bind_capture)。件数が多い場合は100個まで表示されます。",
+    "ko": "* 실시간 실행된 bind 값이 아닌 db에 캡처된 값입니다(v$sql_bind_capture). 건수가 많은 경우 100개까지 보여집니다.",
+    "zh": "* Values captured in the DB (v$sql_bind_capture), not live executed BIND values. If there are a lot of them, they will be shown up to 100.",
+    "service_id": "DSC07756"
+  },
+  "TTL07757": {
+    "en": "User Event",
+    "ja": "ユーザーイベント",
+    "ko": "사용자 이벤트",
+    "zh": "User Event",
+    "service_id": "TTL07757"
+  },
+  "BTN07758": {
+    "en": "Collapse Pod Startup Analysis Guide",
+    "ja": "Podスタート分析ガイドの折りたたみ",
+    "ko": "Pod 시작 분석 안내 접기",
+    "zh": "Collapse Pod Startup Analysis Guide",
+    "service_id": "BTN07758"
+  },
+  "BTN07759": {
+    "en": "Expand Pod Startup Analysis Guide",
+    "ja": "Podスタート分析ガイドを開く",
+    "ko": "Pod 시작 분석 안내 펼치기",
+    "zh": "Expand Pod Startup Analysis Guide",
+    "service_id": "BTN07759"
+  },
+  "ITM07760": {
+    "en": "Agent by cluster",
+    "ja": "クラスタ別エージェント",
+    "ko": "클러스터별 에이전트",
+    "zh": "Agent by cluster",
+    "service_id": "ITM07760"
+  },
+  "BTN07761": {
+    "en": "JSON batch editing",
+    "ja": "JSON一括編集",
+    "ko": "JSON 일괄 수정",
+    "zh": "JSON batch editing",
+    "service_id": "BTN07761"
+  },
+  "BTN07762": {
+    "en": "JSON batch download",
+    "ja": "JSON 一括ダウンロード",
+    "ko": "JSON 일괄 다운로드",
+    "zh": "JSON batch download",
+    "service_id": "BTN07762"
+  },
+  "TTL07763": {
+    "en": "Members with whom the dashboard was shared",
+    "ja": "ダッシュボードを共有されたメンバー",
+    "ko": "대시보드를 공유받은 멤버",
+    "zh": "Members with whom the dashboard was shared",
+    "service_id": "TTL07763"
+  },
+  "NTC07764": {
+    "en": "Only numbers and special characters (.*) can be entered in the Client IP filter.",
+    "ja": "クライアントIPフィルタは、数字と特殊文字（.*）のみを入力できます。",
+    "ko": "클라이언트 IP 필터는 숫자와 특수문자(.*)만 입력 가능합니다.",
+    "zh": "Only numbers and special characters (.*) can be entered in the Client IP filter.",
+    "service_id": "NTC07764"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -53596,11 +53722,6 @@
     "en": "Workload",
     "ja": "ワークロード",
     "ko": "워크로드"
-  },
-  "integratedContainerMap": {
-    "en": "Integrated Container Map",
-    "ja": "統合コンテナマップ",
-    "ko": "통합 컨테이너 맵"
   },
   "kubeAppHitmap": {
     "en": "Application Hitmap",
@@ -55189,5 +55310,10 @@
     "en": "Kubernetes Agent List",
     "ja": "Kubernetesエージェントリスト",
     "ko": "쿠버네티스 에이전트 목록"
+  },
+  "side_deploymentList": {
+    "en": "Deployment List",
+    "ja": "Deployment リスト",
+    "ko": "Deployment 목록"
   }
 }
