@@ -3595,7 +3595,8 @@ const sidebars = {
         'report/integrated-report',
         'notification/rt-notification',
         'management/billing',
-        'management/maintenance'
+        'management/maintenance',
+        'management/userbehavior'
       ]
     }
   ],
