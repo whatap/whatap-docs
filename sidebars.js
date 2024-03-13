@@ -5580,9 +5580,7 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                // 'kubernetes/metrics-intro',
-                // 'kubernetes/metrics-chart',
-                // 'kubernetes/metrics-detect-anormal',
+                'kubernetes/pod-init-perform-v2',
                 'kubernetes/pod-init-perform',
                 'kubernetes/trs-view',
                 'kubernetes/multiservice-hitmap',
