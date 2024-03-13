@@ -352,6 +352,10 @@ const metadata = {
     "previous": {
         "title": "결제",
         "permalink": "/whatap-docs/management/billing"
+    },
+    "next": {
+        "title": "사용자 행위",
+        "permalink": "/whatap-docs/management/userbehavior"
     }
 };
 const assets = {};
