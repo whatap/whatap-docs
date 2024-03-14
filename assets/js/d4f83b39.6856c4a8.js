@@ -309,22 +309,22 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'pod-init-perform',
-    title: 'Pod 초기화 성능',
-    description: 'Pod 초기화 성능 기능을 활용하면 Pod 시작시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay 설정에 도움을 받을 수 있습니다.',
+    title: 'Pod 시작 분석',
+    description: 'Pod 시작 분석 기능을 활용하면 Pod 시작시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay 설정에 도움을 받을 수 있습니다.',
     tags: [
         '쿠버네티스',
         '쿠버네티스 모니터링',
         '분석',
-        'Pod',
-        '초기화'
+        'Pod 초기화',
+        'Pod 시작 분석'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
     "unversionedId": "kubernetes/pod-init-perform",
     "id": "kubernetes/pod-init-perform",
-    "title": "Pod 초기화 성능",
-    "description": "Pod 초기화 성능 기능을 활용하면 Pod 시작시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay 설정에 도움을 받을 수 있습니다.",
+    "title": "Pod 시작 분석",
+    "description": "Pod 시작 분석 기능을 활용하면 Pod 시작시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay 설정에 도움을 받을 수 있습니다.",
     "source": "@site/docs/kubernetes/pod-init-perform.mdx",
     "sourceDirName": "kubernetes",
     "slug": "/kubernetes/pod-init-perform",
@@ -345,25 +345,25 @@ const metadata = {
             "permalink": "/whatap-docs/tags/분석"
         },
         {
-            "label": "Pod",
-            "permalink": "/whatap-docs/tags/pod"
+            "label": "Pod 초기화",
+            "permalink": "/whatap-docs/tags/pod-초기화"
         },
         {
-            "label": "초기화",
-            "permalink": "/whatap-docs/tags/초기화"
+            "label": "Pod 시작 분석",
+            "permalink": "/whatap-docs/tags/pod-시작-분석"
         }
     ],
     "version": "current",
     "frontMatter": {
         "id": "pod-init-perform",
-        "title": "Pod 초기화 성능",
-        "description": "Pod 초기화 성능 기능을 활용하면 Pod 시작시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay 설정에 도움을 받을 수 있습니다.",
+        "title": "Pod 시작 분석",
+        "description": "Pod 시작 분석 기능을 활용하면 Pod 시작시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay 설정에 도움을 받을 수 있습니다.",
         "tags": [
             "쿠버네티스",
             "쿠버네티스 모니터링",
             "분석",
-            "Pod",
-            "초기화"
+            "Pod 초기화",
+            "Pod 시작 분석"
         ]
     },
     "sidebar": "kubeSidebar",
@@ -426,15 +426,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Pod 초기화 성능`)), ` 메뉴는 클러스터 프로젝트인 경우만 접근할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
@@ -442,15 +434,38 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Pod 초기화 성능`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Springboot를 포함한 JVM 기반 애플리케이션은 초기화 시점에 많은 자원을 사용해 Liveness 체크에 실패하는 경우가 있습니다. 만약 일정 횟수 이상 Liveness 체크에 실패하는 경우 해당 Pod가 삭제되고 무한 재시작 현상이 발생하여 배포 실패로 이어질 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `와탭 쿠버네티스의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+    }, `Pod 시작 분석`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `와탭 노드 에이전트 버전 1.4.2 미만`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `신규 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "pod-init-perform-v2"
+    }, `Pod 시작 분석`), ` 메뉴 대신 기존 메뉴(구 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `Pod 초기화 성능`), `) 화면을 제공합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `클러스터 프로젝트(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        class: "my"
+    }, `CP`), `)인 경우만 접근할 수 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Springboot를 포함한 JVM 기반 애플리케이션은 초기화 시점에 많은 자원을 사용해 Liveness 체크에 실패하는 경우가 있습니다. 만약 일정 횟수 이상 Liveness 체크에 실패하는 경우 해당 Pod가 삭제되고 무한 재시작 현상이 발생하여 배포 실패로 이어질 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `와탭 쿠버네티스의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Pod 초기화 성능`)), ` 기능을 활용하면 Pod 시작 시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay(Liveness 체크 면제 시간) 설정에 도움을 받을 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `Pod 시작 분석`)), ` 기능을 활용하면 Pod 시작 시 피크 사용량과 초기화 시간을 분석하여 최적의 Initial Delay(Liveness 체크 면제 시간) 설정에 도움을 받을 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "기본-화면-안내"
     }, `기본 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "k8s-pod-init-perform.png",
-        desc: "Pod 초기화 성능",
+        desc: "Pod 시작 분석",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -533,7 +548,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Pod 초기화 성능`)), ` 목록은 다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `Pod 시작 분석`)), ` 목록은 다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "pod_info",
         className: "uitext",
         mdxType: "Cmdname"

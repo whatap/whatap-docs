@@ -362,7 +362,7 @@ const metadata = {
     },
     "sidebar": "kubeSidebar",
     "previous": {
-        "title": "Pod 초기화 성능",
+        "title": "Pod 시작 분석",
         "permalink": "/whatap-docs/kubernetes/pod-init-perform"
     },
     "next": {
