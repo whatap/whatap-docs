@@ -5580,7 +5580,11 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'kubernetes/pod-init-perform-v2',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/pod-init-perform-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/pod-init-perform',
                 'kubernetes/trs-view',
                 'kubernetes/multiservice-hitmap',
