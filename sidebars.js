@@ -1402,7 +1402,7 @@ const sidebars = {
   postgreSidebar: [
     {
       type: 'category',
-      label: 'PostgreSQL 모니터링 V2',
+      label: 'PostgreSQL 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1724,7 +1724,7 @@ const sidebars = {
   mysqlSidebar: [
     {
       type: 'category',
-      label: 'MySQL 모니터링 V2',
+      label: 'MySQL 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
