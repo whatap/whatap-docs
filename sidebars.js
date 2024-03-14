@@ -3385,14 +3385,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/golang/golang-0_3_2',
+                id: 'release-notes/golang/golang-0_3_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_3_2',
+                  id: 'release-notes/golang/golang-0_3_3',
                   className: 'new'
                 },
+                'release-notes/golang/golang-0_3_2',
                 'release-notes/golang/golang-0_3_1',
                 'release-notes/golang/golang-0_3_0',
                 'release-notes/golang/golang-0_2_4',
@@ -3401,7 +3402,6 @@ const sidebars = {
                 'release-notes/golang/golang-0_1_14',
                 'release-notes/golang/golang-0_1_13',
                 'release-notes/golang/golang-0_1_12',
-                'release-notes/golang/golang-0_1_11',
                 'release-notes/golang/golang-previous',
               ],
             },
