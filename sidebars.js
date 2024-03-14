@@ -2751,7 +2751,7 @@ const sidebars = {
   redisSidebar: [
     {
       type: 'category',
-      label: 'Redis 모니터링',
+      label: 'Redis 모니터링 V2',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2871,6 +2871,136 @@ const sidebars = {
                 'redis/set-receive-event',
                 'redis/set-event-history',
                 'redis/set-event-format',
+              ],
+            },
+          ]
+        }
+      ],
+    }
+  ],
+  redisV1Sidebar: [
+    {
+      type: 'category',
+      label: 'Redis 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'redis-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'redis-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'redis-v1/install-agent',
+            'redis-v1/after-install-agent',
+            'redis-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis-v1/agent-settings'
+          },
+          items: [
+            'redis-v1/agent-dbx-settings',
+            'redis-v1/agent-xos-settings'
+          ],
+        },
+        'redis-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis-v1/dashboard-intro'
+              },
+              items: [
+                'redis-v1/instance-list',
+                'redis-v1/instance-monitoring',
+                'redis-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis-v1/flex-board',
+              },
+              items: [
+                'redis-v1/flexboard-template',
+                'redis-v1/flexboard-create',
+                'redis-v1/flexboard-manage',
+                'redis-v1/flexboard-metric-widget',
+                'redis-v1/flexboard-widget-manage',
+                'redis-v1/flexboard-mode',
+                'redis-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'redis-v1/analysis-count-trend',
+                'redis-v1/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis-v1/metrics-intro'
+              },
+              items: [
+                'redis-v1/metrics-data-list',
+                'redis-v1/metrics-chart',
+                'redis-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis-v1/set-notice',
+              },
+              items: [
+                'redis-v1/metric-warning-notice',
+                'redis-v1/set-notification-message',
+                'redis-v1/set-event-detect-anomal',
+                'redis-v1/set-receive-event',
+                'redis-v1/set-event-history',
+                'redis-v1/set-event-format',
               ],
             },
           ]
