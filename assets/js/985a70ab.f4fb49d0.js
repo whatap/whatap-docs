@@ -359,6 +359,21 @@ const toc = [
         level: 3
     },
     {
+        value: '<code>Database</code>',
+        id: 'database',
+        level: 3
+    },
+    {
+        value: 'PostgreSQL',
+        id: 'postgresql',
+        level: 3
+    },
+    {
+        value: 'PostgreSQL, MySQL',
+        id: 'postgresql-mysql',
+        level: 3
+    },
+    {
         value: '<code>Kubernetes</code>',
         id: 'kubernetes',
         level: 3
@@ -420,7 +435,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database',
+        id: 'database-1',
         level: 3
     },
     {
@@ -445,7 +460,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-1',
+        id: 'database-2',
         level: 3
     },
     {
@@ -470,7 +485,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-2',
+        id: 'database-3',
         level: 3
     },
     {
@@ -538,6 +553,46 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 차트의 y축 최댓값이 제대로 표시되지 않는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "database"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "postgresql"
+    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "side_management",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "side_agentInstall",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴의 디자인 개선 및 설치 안내 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "postgresql-mysql"
+    }, `PostgreSQL, MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "side_dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "side_multiInstance",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴의 기능 개편"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `위젯의 크기 및 위치를 변경할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `위젯 추가 및 삭제 기능을 추가하였습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `프리셋 저장 기능을 추가하였습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "kubernetes"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
@@ -550,7 +605,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " Deployment를 기준으로 ReplicaSet 수 및 컨테이너 개수, 주요 성능 정보 통계, Pod 개수 등의 정보 제공하는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, "New"), " Deployment를 기준으로 ReplicaSet 수 및 컨테이너 개수, 주요 성능 정보 통계, Pod 개수 등의 정보 제공하는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "side_workload",
         className: "uitext",
         mdxType: "Cmdname"
@@ -797,7 +852,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 목록에서 처리 내역 등록 시 처리 내역(건수)이 아닌 등록 완료 태그를 표시되도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "database"
+        "id": "database-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
@@ -991,7 +1046,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "database-1"
+        "id": "database-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
@@ -1130,7 +1185,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 창에서 SQL 상세 내용 확인 시 CRUD 표시 형식 개선"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "database-2"
+        "id": "database-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
