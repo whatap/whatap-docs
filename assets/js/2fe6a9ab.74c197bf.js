@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[97659],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[62357],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 47593:
+/***/ 88937:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,37 +308,37 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'golang-previous',
-    title: 'Go Agent 지난 버전',
+    id: 'dotnet-previous',
+    title: '.NET Agent 지난 버전',
     toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/golang/golang-previous",
-    "id": "release-notes/golang/golang-previous",
-    "title": "Go Agent 지난 버전",
-    "description": "* Go Agent 0.1.10",
-    "source": "@site/docs/release-notes/golang/golang-previous.mdx",
-    "sourceDirName": "release-notes/golang",
-    "slug": "/release-notes/golang/golang-previous",
-    "permalink": "/whatap-docs/release-notes/golang/golang-previous",
+    "unversionedId": "release-notes/dotnet/dotnet-previous",
+    "id": "release-notes/dotnet/dotnet-previous",
+    "title": ".NET Agent 지난 버전",
+    "description": "* .NET Agent v2.1.0",
+    "source": "@site/docs/release-notes/dotnet/dotnet-previous.mdx",
+    "sourceDirName": "release-notes/dotnet",
+    "slug": "/release-notes/dotnet/dotnet-previous",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-previous",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/golang/golang-previous.mdx",
+    "editUrl": "undefined/docs/release-notes/dotnet/dotnet-previous.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "golang-previous",
-        "title": "Go Agent 지난 버전",
+        "id": "dotnet-previous",
+        "title": ".NET Agent 지난 버전",
         "toc_max_heading_level": 2
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Go Agent v0.1.11",
-        "permalink": "/whatap-docs/release-notes/golang/golang-0_1_11"
+        "title": ".NET Agent v2.1.1",
+        "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_1"
     },
     "next": {
-        "title": "Server Agent v2.5.5",
-        "permalink": "/whatap-docs/release-notes/server/server-2_5_5"
+        "title": "Go Agent v0.3.3",
+        "permalink": "/whatap-docs/release-notes/golang/golang-0_3_3"
     }
 };
 const assets = {};
@@ -360,43 +360,78 @@ function MDXContent(_param) {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "golang-0_1_10"
-    }, `Go Agent 0.1.10`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "href": "dotnet-2_1_0"
+    }, `.NET Agent v2.1.0`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "golang-0_1_9"
-    }, `Go Agent 0.1.9`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "href": "dotnet-2_0_9"
+    }, `.NET Agent v2.0.9`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "golang-0_1_8"
-    }, `Go Agent 0.1.8`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "href": "dotnet-2_0_8"
+    }, `.NET Agent v2.0.8`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "golang-0_1_7"
-    }, `Go Agent 0.1.7`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "href": "dotnet-2_0_7"
+    }, `.NET Agent v2.0.7`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "golang-0_1_6"
-    }, `Go Agent 0.1.6`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "href": "dotnet-2_0_6"
+    }, `.NET Agent v2.0.6`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "golang-0_1_5"
-    }, `Go Agent 0.1.5`)))));
+        "href": "dotnet-2_0_5"
+    }, `.NET Agent v2.0.5`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dotnet-2_0_4"
+    }, `.NET Agent v2.0.4`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dotnet-2_0_3"
+    }, `.NET Agent v2.0.3`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dotnet-2_0_2"
+    }, `.NET Agent v2.0.2`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dotnet-2_0_1"
+    }, `.NET Agent v2.0.1`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "dotnet-2_0_0"
+    }, `.NET Agent v2.0.0`)))));
 }
 MDXContent.isMDXComponent = true;
 

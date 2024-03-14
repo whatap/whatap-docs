@@ -455,6 +455,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
+const Youtube = makeShortcode("Youtube");
 const Cmdname = makeShortcode("Cmdname");
 const Xclude = makeShortcode("Xclude");
 const ImgLang = makeShortcode("ImgLang");
@@ -486,7 +487,12 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `설치를 위해서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `프로젝트 수정`), ` 권한이 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `프로젝트 수정`), ` 권한이 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `설치 과정은 다음 동영상 가이드를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Youtube, {
+        ko: "q4mJdUIPRlM",
+        en: "-xfcaH3pQWw",
+        ja: "-xfcaH3pQWw",
+        mdxType: "Youtube"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "사전-확인"
     }, `사전 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `AWS Log를 수집하려면 부가적인 자원이 필요합니다. 사용자의 AWS 환경에서 출력되는 로그 정보를 입수 후 와탭 수집 서버로 전송할 수 있도록 와탭은 AWS Lambda Function을 통해 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"

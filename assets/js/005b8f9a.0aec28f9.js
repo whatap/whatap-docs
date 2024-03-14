@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[97872],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37630],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 82069:
+/***/ 19392:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'golang-0_3_2',
-    title: 'Go Agent v0.3.2',
+    id: 'golang-0_3_3',
+    title: 'Go Agent v0.3.3',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/golang/golang-0_3_1',
+    pagination_next: 'release-notes/golang/golang-0_3_2',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/golang/golang-0_3_2",
-    "id": "release-notes/golang/golang-0_3_2",
-    "title": "Go Agent v0.3.2",
-    "description": "2024년 03월 06일",
-    "source": "@site/docs/release-notes/golang/golang-0.3.2.mdx",
+    "unversionedId": "release-notes/golang/golang-0_3_3",
+    "id": "release-notes/golang/golang-0_3_3",
+    "title": "Go Agent v0.3.3",
+    "description": "2024년 03월 14일",
+    "source": "@site/docs/release-notes/golang/golang-0.3.3.mdx",
     "sourceDirName": "release-notes/golang",
-    "slug": "/release-notes/golang/golang-0_3_2",
-    "permalink": "/whatap-docs/release-notes/golang/golang-0_3_2",
+    "slug": "/release-notes/golang/golang-0_3_3",
+    "permalink": "/whatap-docs/release-notes/golang/golang-0_3_3",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/golang/golang-0.3.2.mdx",
+    "editUrl": "undefined/docs/release-notes/golang/golang-0.3.3.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "golang-0_3_2",
-        "title": "Go Agent v0.3.2",
+        "id": "golang-0_3_3",
+        "title": "Go Agent v0.3.3",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/golang/golang-0_3_1",
+        "pagination_next": "release-notes/golang/golang-0_3_2",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
@@ -341,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/dotnet/dotnet-previous"
     },
     "next": {
-        "title": "Go Agent v0.3.1",
-        "permalink": "/whatap-docs/release-notes/golang/golang-0_3_1"
+        "title": "Go Agent v0.3.2",
+        "permalink": "/whatap-docs/release-notes/golang/golang-0_3_2"
     }
 };
 const assets = {};
@@ -363,21 +363,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 06일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 14일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " 로그 모니터링 파일 이름에 날짜 형식의 변수를 사용하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "blockquote"
-    }, `Python `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `strftime()`), ` 사용 기준으로 수정합니다. 예, 20240101: %Y%m%d`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "go.mod"), "의 replace 구문 삭제(github.com/whatap/golib 모듈의 replace 구문을 삭제)"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " gRPC 헤더 수집 오류 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, "Fixed"), " 예제 소스 빌드 오류 수정(github.com/whatap/go-api-example)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -435,7 +429,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/6/x86_64/whatap-agent-0.3-2.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/6/x86_64/whatap-agent-0.3-3.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -452,7 +446,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/debian/unstable/whatap-agent_0.3.2_amd64.deb"
+        "href": "https://repo.whatap.io/debian/unstable/whatap-agent_0.3.3_amd64.deb"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
@@ -469,7 +463,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/alpine/x86_64/whatap-agent-0.3.2.tar.gz"
+        "href": "https://repo.whatap.io/alpine/x86_64/whatap-agent-0.3.3.tar.gz"
     }, `다운로드`)))))))));
 }
 MDXContent.isMDXComponent = true;

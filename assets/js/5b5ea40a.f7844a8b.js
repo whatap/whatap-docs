@@ -339,8 +339,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/golang/golang-0_1_13"
     },
     "next": {
-        "title": "Go Agent v0.1.11",
-        "permalink": "/whatap-docs/release-notes/golang/golang-0_1_11"
+        "title": "Go Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/golang/golang-previous"
     }
 };
 const assets = {};
