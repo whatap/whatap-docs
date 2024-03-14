@@ -721,9 +721,9 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "../account/account-manage"
     }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 동영상 가이드를 참조하세요.   `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Youtube, {
-        ko: "RhU3f3d7k1A",
-        en: "wQbXDKNdDfA",
-        ja: "wQbXDKNdDfA",
+        ko: "e_UpCgapfQY",
+        en: "MIo3HRIOt8M",
+        ja: "MIo3HRIOt8M",
         mdxType: "Youtube"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "create-project"

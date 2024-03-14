@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[50577],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[15437],{
 
-/***/ 38789:
+/***/ 78950:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -103,27 +103,27 @@ const frontMatter = {
     title: '에이전트 설치',
     description: '와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.',
     tags: [
-        'Altibase',
+        'SQL Server',
         '데이터베이스 모니터링',
         '에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "altibase/install-agent",
-    "id": "altibase/install-agent",
+    "unversionedId": "mssql/install-agent",
+    "id": "mssql/install-agent",
     "title": "에이전트 설치",
     "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
-    "source": "@site/docs/altibase/install-agent.mdx",
-    "sourceDirName": "altibase",
-    "slug": "/altibase/install-agent",
-    "permalink": "/whatap-docs/altibase/install-agent",
+    "source": "@site/docs/mssql/install-agent.mdx",
+    "sourceDirName": "mssql",
+    "slug": "/mssql/install-agent",
+    "permalink": "/whatap-docs/mssql/install-agent",
     "draft": false,
-    "editUrl": "undefined/docs/altibase/install-agent.mdx",
+    "editUrl": "undefined/docs/mssql/install-agent.mdx",
     "tags": [
         {
-            "label": "Altibase",
-            "permalink": "/whatap-docs/tags/altibase"
+            "label": "SQL Server",
+            "permalink": "/whatap-docs/tags/sql-server"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -140,19 +140,19 @@ const metadata = {
         "title": "에이전트 설치",
         "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
         "tags": [
-            "Altibase",
+            "SQL Server",
             "데이터베이스 모니터링",
             "에이전트"
         ]
     },
-    "sidebar": "altibaseSidebar",
+    "sidebar": "mssqlSidebar",
     "previous": {
         "title": "지원 환경",
-        "permalink": "/whatap-docs/altibase/monitoring-support"
+        "permalink": "/whatap-docs/mssql/monitoring-support"
     },
     "next": {
         "title": "설치 점검 사항",
-        "permalink": "/whatap-docs/altibase/after-install-agent"
+        "permalink": "/whatap-docs/mssql/after-install-agent"
     }
 };
 const assets = {};
@@ -212,9 +212,9 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "../account/account-manage"
     }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 동영상 가이드를 참조하세요.   `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Youtube, {
-        ko: "RhU3f3d7k1A",
-        en: "wQbXDKNdDfA",
-        ja: "wQbXDKNdDfA",
+        ko: "e_UpCgapfQY",
+        en: "MIo3HRIOt8M",
+        ja: "MIo3HRIOt8M",
         mdxType: "Youtube"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "create-project"
@@ -740,15 +740,35 @@ function MDXContent(_param) {
     }, `license=프로젝트 액세스 키
 whatap.server.host=13.124.11.223/13.209.172.35 // 와탭 서버 정보
 
-dbms=altibase
-db=데이터베이스명(sid)
-db_ip=데이터베이스IP
-db_port=데이터베이스 포트
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+dbms=mssql
+db=master
+db_ip=데이터베이스 IP
+db_port=데이터베이스 포트 
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        parentName: "li",
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `MS SQL 서버와 에이전트가 localhost에 설치되는 경우`), ` (`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `default 1433 port`), `)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `dbms=mssql
+db=master
+db_ip=127.0.0.1
+db_port=1433
+`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `다음 경로에 JDBC 드라이버를 다운로드하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `다음 디렉터리에 JDBC 드라이버를 다운로드하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `/압축해제한 폴더/jdbc`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -756,10 +776,19 @@ db_port=데이터베이스 포트
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `Altibase JDBC Drivers`), `: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "http://support.altibase.com/kr/product"
-    }, `http://support.altibase.com/kr/product`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `MS SQL 2005 버전 이상`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://www.microsoft.com/en-us/download/details.aspx?id=56615"
+    }, `Microsoft JDBC Driver 6.4 for SQL Server`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://www.microsoft.com/en-us/download/details.aspx?id=55539"
+    }, `Microsoft JDBC Driver 6.2 for SQL Server`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -792,8 +821,23 @@ db_port=데이터베이스 포트
         parentName: "p"
     }, `DB Password`), `에는 사용자 비밀번호를 입력하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
-        "className": "language-bash"
-    }, `create user whatap identified by '[DB_PASSWORD]'; ## 원하는 password를 입력하세요.
+        "className": "language-bash",
+        "metastring": "showLineNumbers",
+        "showLineNumbers": true
+    }, `create login whatap with password='DB_PASSWORD'; ## 원하는 password를 입력하세요.
+grant view server state to whatap;
+create user whatap for login whatap;
+grant execute to whatap;
+EXEC sp_configure 'show advanced options', 1;
+RECONFIGURE;
+EXEC sp_configure 'Ole Automation Procedures', 1;
+RECONFIGURE;
+ 
+## kill session 사용시 - SQL Server
+grant alter any connection to whatap;
+
+## kill session 사용시 - Azure SQL Database
+grant kill database connection to whatap;
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "create-db-user"
     }, `DB 유저 파일 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `데이터베이스 접속을 위해 암호화된 UID를 생성합니다. username과 password를 입력하고 쉘 스크립트(또는 배치 파일)를 실행하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
