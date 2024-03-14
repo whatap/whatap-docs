@@ -429,13 +429,6 @@ module.exports = Promise.resolve({
             type: 'doc',
             docId: 'postgresql/monitoring-intro',
             position: "left",
-            label: 'PostgreSQL V2 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'postgresql-v1/monitoring-intro',
-            position: "left",
             label: 'PostgreSQL 모니터링',
             className: 'hidden',
           },
@@ -448,16 +441,9 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'mysql-v1/monitoring-intro',
-            position: "left",
-            label: 'MySQL 모니터링 V1',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
             docId: 'mysql/monitoring-intro',
             position: "left",
-            label: 'MySQL 모니터링 V2',
+            label: 'MySQL 모니터링',
             className: 'hidden',
           },
           {

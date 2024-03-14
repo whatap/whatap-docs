@@ -16508,21 +16508,21 @@
   "daily_report_cpm_pod_detail": {
     "en": "Daily report (Containers by pod)",
     "ja": "日次レポート(ポッド単位コンテナ)",
-    "ko": "일일 보고서 (파드 별 컨테이너)",
+    "ko": "일일 보고서 (Pod별 컨테이너)",
     "zh": "Daily Report (Containers by pod)",
     "service_id": "_02427"
   },
   "containers_by_node": {
     "en": "Containers by node",
     "ja": "ノード単位コンテナ",
-    "ko": "노드 별 컨테이너",
+    "ko": "노드별 컨테이너",
     "zh": "Containers by node",
     "service_id": "_02428"
   },
   "containers_by_pod": {
     "en": "Containers by pod",
     "ja": "ポッド単位コンテナ",
-    "ko": "파드 그룹 컨테이너",
+    "ko": "Pod 그룹 컨테이너",
     "zh": "Containers by pod",
     "service_id": "_02429"
   },
@@ -16738,8 +16738,8 @@
   },
   "cpm_pod": {
     "en": "Pod",
-    "ja": "ポッド",
-    "ko": "파드",
+    "ja": "Pod",
+    "ko": "Pod",
     "zh": "Pod",
     "service_id": "TTL02460"
   },
@@ -24262,7 +24262,7 @@
     "service_id": "TTL03536"
   },
   "hitmap_exc_time": {
-    "en": "Detection exclusion time",
+    "en": "Detection\bexclusion time",
     "ja": "検知対象外時間",
     "ko": "탐지 제외 시간",
     "zh": "Detection Exclusion Time",
@@ -40782,10 +40782,10 @@
     "service_id": "_05906"
   },
   "member_list_sharing_dashboard": {
-    "en": "List of member sharing dashboards",
-    "ja": "ダッシュボード共有メンバーリスト",
-    "ko": "대시보드를 공유하는 멤버 목록",
-    "zh": "List of member sharing dashboards",
+    "en": "Member sharing dashboards",
+    "ja": "ダッシュボードを共有するメンバー",
+    "ko": "대시보드를 공유하는 멤버",
+    "zh": "Member sharing dashboards",
     "service_id": "TLT05907"
   },
   "delete_confirm_dashboard_owner": {
@@ -44025,14 +44025,14 @@
   "TTL06385": {
     "en": "Total pod count",
     "ja": "合計Pod数",
-    "ko": "전체 파드 수",
+    "ko": "전체 Pod 수",
     "zh": "Total Pod Count",
     "service_id": "TTL06385"
   },
   "TTL06386": {
     "en": "Hourly pod count",
     "ja": "時間毎のPod数",
-    "ko": "시간당 파드 수",
+    "ko": "시간당 Pod 수",
     "zh": "Hourly Pod Count",
     "service_id": "TTL06386"
   },
@@ -44060,14 +44060,14 @@
   "TTL06390": {
     "en": "Total pod core count",
     "ja": "合計Podコア数",
-    "ko": "전체 파드 코어 수",
+    "ko": "전체 Pod 코어 수",
     "zh": "Total Pod Core Count",
     "service_id": "TTL06390"
   },
   "TTL06391": {
     "en": "Hourly pod core count",
     "ja": "時間毎のPodコア数",
-    "ko": "시간당 파드 코어 수",
+    "ko": "시간당 Pod 코어 수",
     "zh": "Hourly Pod Core Count",
     "service_id": "TTL06391"
   },
@@ -49905,7 +49905,7 @@
   "TLT07246": {
     "en": "View pods in detail",
     "ja": "Podの詳細を表示します。",
-    "ko": "파드 상세 보기",
+    "ko": "Pod 상세 보기",
     "zh": "Pod details View",
     "service_id": "TLT07246"
   },
@@ -49994,10 +49994,10 @@
     "service_id": "_07258"
   },
   "DSC07259": {
-    "en": "A new Pod initialization performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
-    "ja": "新規Pod性能機能は、WhaTapノードエージェントのバージョン <strong>{minVersion}</strong> 以降から提供します。 追加された機能を使用するには、エージェントをアップデートしてください。 (現行のバージョン: {currVersion})",
-    "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 초기화 성능을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
-    "zh": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
+    "en": "New Pod startup analysis (old Pod initialization performance) is provided for WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
+    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降で、新しいPod起動分析（旧Pod初期化パフォーマンス）を提供しています。 新しいメニューを使用するには、エージェントを更新してください（現在のバージョン：{currVersion}）",
+    "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 시작 분석(구 Pod 초기화 성능)을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
+    "zh": "New Pod startup analysis (old Pod initialization performance) is provided for WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "service_id": "DSC07259"
   },
   "DSC07260": {
@@ -52605,10 +52605,10 @@
     "service_id": "CNT07633"
   },
   "ITM07634": {
-    "en": "Read only",
-    "ja": "全てを読み取り専用にする",
-    "ko": "읽기 전용 전체",
-    "zh": "Read Only All",
+    "en": "Read only(All)",
+    "ja": "読み取り専用(全体)",
+    "ko": "읽기 전용(전체)",
+    "zh": "Read only(All)",
     "service_id": "ITM07634"
   },
   "TLT07635": {
@@ -53493,19 +53493,54 @@
     "zh": "JSON batch download",
     "service_id": "BTN07762"
   },
-  "TTL07763": {
-    "en": "Members with whom the dashboard was shared",
-    "ja": "ダッシュボードを共有されたメンバー",
-    "ko": "대시보드를 공유받은 멤버",
-    "zh": "Members with whom the dashboard was shared",
-    "service_id": "TTL07763"
-  },
   "NTC07764": {
-    "en": "Only numbers and special characters (.*) can be entered in the Client IP filter.",
-    "ja": "クライアントIPフィルタは、数字と特殊文字（.*）のみを入力できます。",
-    "ko": "클라이언트 IP 필터는 숫자와 특수문자(.*)만 입력 가능합니다.",
-    "zh": "Only numbers and special characters (.*) can be entered in the Client IP filter.",
+    "en": "Only numbers and numeric characters (.*) can be entered.",
+    "ja": "数字と数字（.*）のみを入力できます。",
+    "ko": "숫자와 특수문자(.*)만 입력 가능합니다.",
+    "zh": "Only numbers and numeric characters (.*) can be entered.",
     "service_id": "NTC07764"
+  },
+  "TTL07765": {
+    "en": "{n} percentile",
+    "ja": "{n}パーセンタイル",
+    "ko": "{n}분위",
+    "zh": "{n} percentile",
+    "service_id": "TTL07765"
+  },
+  "NTC07766": {
+    "en": "There was a problem getting the JSON file.",
+    "ja": "JSONファイルの取得中に問題が発生しました。",
+    "ko": "JSON 파일을 가져오는 중에 문제가 발생했습니다.",
+    "zh": "There was a problem getting the JSON file.",
+    "service_id": "NTC07766"
+  },
+  "DSC07767": {
+    "en": "Select a project.",
+    "ja": "プロジェクトを選択してください。",
+    "ko": "프로젝트를 선택하세요.",
+    "zh": "Select a project.",
+    "service_id": "DSC07767"
+  },
+  "BTN07768": {
+    "en": "Select All",
+    "ja": "全体の選択",
+    "ko": "전체 선택",
+    "zh": "Select All",
+    "service_id": "BTN07768"
+  },
+  "TTL07769": {
+    "en": "Selected projects ({count})",
+    "ja": "選択されたプロジェクト ({count})",
+    "ko": "선택된 프로젝트 ({count})",
+    "zh": "Selected projects ({count})",
+    "service_id": "TTL07769"
+  },
+  "BTN07770": {
+    "en": "Delete all",
+    "ja": "完全削除",
+    "ko": "전체 삭제",
+    "zh": "Delete all",
+    "service_id": "BTN07770"
   },
   "": {
     "": "",
@@ -53627,6 +53662,11 @@
     "en": "Heap Memory",
     "ja": "ヒープメモリ",
     "ko": "힙 메모리"
+  },
+  "AA017": {
+    "en": "Process Memory",
+    "ja": "プロセスメモリ",
+    "ko": "프로세스 메모리"
   },
   "AA016": {
     "en": "Active Transaction Equalizer",

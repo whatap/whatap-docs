@@ -190,6 +190,12 @@ function colsToJson(data){
     "ko": "힙 메모리"
   }
 
+  rd["AA017"] = {
+    "en": "Process Memory",
+    "ja": "プロセスメモリ",
+    "ko": "프로세스 메모리"
+  }
+
   rd["AA016"] = {
     "en": "Active Transaction Equalizer",
     "ja": "アクティブTXイコライザー",
