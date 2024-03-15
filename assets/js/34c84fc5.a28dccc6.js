@@ -362,8 +362,8 @@ const metadata = {
     },
     "sidebar": "kubeSidebar",
     "previous": {
-        "title": "컨테이너 애플리케이션 목록",
-        "permalink": "/whatap-docs/kubernetes/resource-application-list"
+        "title": "Deployment 목록",
+        "permalink": "/whatap-docs/kubernetes/deployment-list"
     },
     "next": {
         "title": "오브젝트 매니페스트",
