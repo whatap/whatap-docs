@@ -1524,7 +1524,7 @@ ignore_http_method=OPTIONS,HEAD
         parentName: "li"
     }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, `true`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, `멀티 트랜잭션 추적 기능(Multi Transaction ID, 이하 MTID) 사용 여부를 설정합니다. MTID를 추적하면 등록한 모든 애플리케이션 간의 호출을 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1656,7 +1656,7 @@ ignore_http_method=OPTIONS,HEAD
         parentName: "p"
     }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `Caller와 Callee의 상관관계 통계를 수집합니다. Caller에 적용하면 Caller의 상세 정보를 보내주고 Callee에 적용하면 url 단위 Caller-Callee 호출 통계를 수집 서버로 전송합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `Caller와 Callee의 상관관계 통계를 수집합니다. Caller에 적용하면 Caller의 상세 정보를 보내주고 Callee에 적용하면 url 단위 Caller-Callee 호출 통계를 수집 서버로 전송합니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "트레이스-데이터-샘플링"
     }, `트레이스 데이터 샘플링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         class: "my"
