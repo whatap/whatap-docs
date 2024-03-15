@@ -5271,6 +5271,7 @@ const sidebars = {
               items: [
                 'kubernetes/resource-pod-list',
                 'kubernetes/resource-application-list',
+                'kubernetes/deployment-list',
               ],
             },
             {
