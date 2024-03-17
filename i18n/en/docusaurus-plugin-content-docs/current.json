@@ -1207,54 +1207,6 @@
     "message": "Agent Installation",
     "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
   },
-  "sidebar.postgreSidebar.category.PostgreSQL 모니터링 V2": {
-    "message": "PostgreSQL Monitoring V2",
-    "description": "The label for category PostgreSQL 모니터링 V2 in sidebar postgreSidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.PostgreSQL 모니터링": {
-    "message": "PostgreSQL Monitoring",
-    "description": "The label for category PostgreSQL 모니터링 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.설치하기": {
-    "message": "Installation",
-    "description": "The label for category 설치하기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.설정하기": {
-    "message": "Configuration",
-    "description": "The label for category 설정하기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.주요 메뉴 알아보기": {
-    "message": "Learn about the main features",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.대시보드": {
-    "message": "Dashboard",
-    "description": "The label for category 대시보드 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.Flex 보드": {
-    "message": "Flex Board",
-    "description": "The label for category Flex 보드 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.분석": {
-    "message": "Analysis",
-    "description": "The label for category 분석 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.메트릭스": {
-    "message": "Metrics",
-    "description": "The label for category 메트릭스 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
-    "description": "The label for category 통계/보고서 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.doc.지원 환경": {
-    "message": "Support Environment",
-    "description": "The label for the doc item 지원 환경 in sidebar postgrev1Sidebar, linking to the doc postgresql-v1/monitoring-support"
-  },
   "sidebar.releaseSidebar.category.DBX": {
     "message": "DBX",
     "description": "The label for category DBX in sidebar releaseSidebar"
@@ -1286,54 +1238,6 @@
   "sidebar.goSidebar.category.Go 모니터링": {
     "message": "Go Monitoring",
     "description": "The label for category Go 모니터링 in sidebar goSidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.MySQL 모니터링 V1": {
-    "message": "MySQL Monitoring V1",
-    "description": "The label for category MySQL 모니터링 V1 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.설치하기": {
-    "message": "Installation",
-    "description": "The label for category 설치하기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.설정하기": {
-    "message": "Configuration",
-    "description": "The label for category 설정하기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.주요 메뉴 알아보기": {
-    "message": "Learn about the main features",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.대시보드": {
-    "message": "Dashboard",
-    "description": "The label for category 대시보드 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.Flex 보드": {
-    "message": "Flex Board",
-    "description": "The label for category Flex 보드 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.분석": {
-    "message": "Analysis",
-    "description": "The label for category 분석 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.메트릭스": {
-    "message": "Metrics",
-    "description": "The label for category 메트릭스 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
-    "description": "The label for category 통계/보고서 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.doc.지원 환경": {
-    "message": "Support Environment",
-    "description": "The label for the doc item 지원 환경 in sidebar mysqlv1Sidebar, linking to the doc mysql-v1/monitoring-support"
-  },
-  "sidebar.mysqlSidebar.category.MySQL 모니터링 V2": {
-    "message": "MySQL Monitoring V2",
-    "description": "The label for category MySQL 모니터링 V2 in sidebar mysqlSidebar"
   },
   "sidebar.releaseSidebar.category.Go": {
     "message": "Go",
@@ -1666,5 +1570,13 @@
   "sidebar.npmsidebar.category.Network 성능 모니터링": {
     "message": "Network Performance Monitoring",
     "description": "The label for category Network 성능 모니터링 in sidebar npmsidebar"
+  },
+  "sidebar.postgreSidebar.category.PostgreSQL 모니터링": {
+    "message": "PostgreSQL Monitoring",
+    "description": "The label for category PostgreSQL 모니터링 in sidebar postgreSidebar"
+  },
+  "sidebar.mysqlSidebar.category.MySQL 모니터링": {
+    "message": "MySQL Monitoring",
+    "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
   }
 }
