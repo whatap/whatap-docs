@@ -1555,8 +1555,6 @@ var isRadioOrCheckbox = (ref) => isRadioInput(ref) || isCheckBoxInput(ref);
 
 var live = (ref) => isHTMLElement(ref) && ref.isConnected;
 
-var objectHasTruthyValue = (value) => isObject(value) && Object.values(value).some((val) => val);
-
 var objectHasFunction = (data) => {
     for (const key in data) {
         if (isFunction(data[key])) {
@@ -1799,18 +1797,15 @@ function createFormControl(props = {}) {
             }
         }
     };
-    const _updateIsValidating = (isValidating, names) => {
-        if (!(_proxyFormState.isValidating || _proxyFormState.validatingFields)) {
-            return;
+    const _updateIsValidating = (names, isValidating) => {
+        if (_proxyFormState.isValidating || _proxyFormState.validatingFields) {
+            (names || Array.from(_names.mount)).forEach((name) => name && set(_formState.validatingFields, name, !!isValidating));
+            _formState.isValidating = Object.values(_formState.validatingFields).some((val) => val);
+            _subjects.state.next({
+                validatingFields: _formState.validatingFields,
+                isValidating: _formState.isValidating,
+            });
         }
-        names.forEach((name) => {
-            set(_formState.validatingFields, name, isValidating);
-        });
-        _formState.isValidating = objectHasTruthyValue(_formState.validatingFields);
-        _subjects.state.next({
-            validatingFields: _formState.validatingFields,
-            isValidating: _formState.isValidating,
-        });
     };
     const _updateFieldArray = (name, values = [], method, args, shouldSetValues = true, shouldUpdateFieldsAndState = true) => {
         if (args && method) {
@@ -1940,9 +1935,13 @@ function createFormControl(props = {}) {
             };
             _subjects.state.next(updatedFormState);
         }
-        _updateIsValidating(false, Object.keys(_formState.validatingFields).filter((key) => key === name));
     };
-    const _executeSchema = async (name) => _options.resolver(_formValues, _options.context, getResolverOptions(name || _names.mount, _fields, _options.criteriaMode, _options.shouldUseNativeValidation));
+    const _executeSchema = async (name) => {
+        _updateIsValidating(name, true);
+        const result = await _options.resolver(_formValues, _options.context, getResolverOptions(name || _names.mount, _fields, _options.criteriaMode, _options.shouldUseNativeValidation));
+        _updateIsValidating(name);
+        return result;
+    };
     const executeSchemaAndUpdateState = async (names) => {
         const { errors } = await _executeSchema(names);
         if (names) {
@@ -1967,7 +1966,9 @@ function createFormControl(props = {}) {
                 const { _f, ...fieldValue } = field;
                 if (_f) {
                     const isFieldArrayRoot = _names.array.has(_f.name);
+                    _updateIsValidating([name], true);
                     const fieldError = await validateField(field, _formValues, shouldDisplayAllAssociatedErrors, _options.shouldUseNativeValidation && !shouldOnlyCheckValid, isFieldArrayRoot);
+                    _updateIsValidating([name]);
                     if (fieldError[_f.name]) {
                         context.valid = false;
                         if (shouldOnlyCheckValid) {
@@ -2144,7 +2145,6 @@ function createFormControl(props = {}) {
                     _subjects.state.next({ name, ...(watched ? {} : fieldState) }));
             }
             !isBlurEvent && watched && _subjects.state.next({ ..._formState });
-            _updateIsValidating(true, [name]);
             if (_options.resolver) {
                 const { errors } = await _executeSchema([name]);
                 _updateIsFieldValueUpdated(fieldValue);
@@ -2157,7 +2157,9 @@ function createFormControl(props = {}) {
                 }
             }
             else {
+                _updateIsValidating([name], true);
                 error = (await validateField(field, _formValues, shouldDisplayAllAssociatedErrors, _options.shouldUseNativeValidation))[name];
+                _updateIsValidating([name]);
                 _updateIsFieldValueUpdated(fieldValue);
                 if (isFieldValueUpdated) {
                     if (error) {
@@ -2186,7 +2188,6 @@ function createFormControl(props = {}) {
         let isValid;
         let validationResult;
         const fieldNames = convertToArrayPayload(name);
-        _updateIsValidating(true, fieldNames);
         if (_options.resolver) {
             const errors = await executeSchemaAndUpdateState(isUndefined(name) ? name : fieldNames);
             isValid = isEmptyObject(errors);
@@ -2211,7 +2212,6 @@ function createFormControl(props = {}) {
                 : { name }),
             ...(_options.resolver || !name ? { isValid } : {}),
             errors: _formState.errors,
-            isValidating: false,
         });
         options.shouldFocus &&
             !validationResult &&
