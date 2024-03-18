@@ -1541,12 +1541,12 @@ function MDXContent(_param) {
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "액티브-세션-섹션-활용하기"
-    }, `액티브 세션 섹션 활용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 아래에 위치한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `액티브 세션`)), ` 섹션을 통해 실시간 수행 중인 세션 정보를 확인할 수 있습니다. 다음은 테이블 오른쪽 위에 버튼에 대한 기능 안내입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_XcludeDoc_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        product: "postgresql,mysql",
+    }, `액티브 세션 섹션 활용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 아래에 위치한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "active_sessions",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 섹션을 통해 실시간 수행 중인 세션 정보를 확인할 수 있습니다. 다음은 테이블 오른쪽 위에 버튼에 대한 기능 안내입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_XcludeDoc_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
+        product: "postgresql,mysql,redis",
         mdxType: "Xclude"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1561,7 +1561,7 @@ function MDXContent(_param) {
         width: "24",
         height: "24"
     }), ` 버튼을 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_InDoc_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
-        product: "postgresql,mysql",
+        product: "postgresql,mysql,redis",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1610,7 +1610,10 @@ function MDXContent(_param) {
     }, `수정`), ` 권한이 있는 멤버만 이용할 수 있습니다. 멤버 권한에 대한 자세한 설명은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../project/project-structure#project-auth"
-    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `다음 문서`), `를 참조하세요.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_InDoc_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
+        product: "postgresql,mysql,redis",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -1628,19 +1631,7 @@ function MDXContent(_param) {
         src: (__webpack_require__(49535)/* ["default"] */ .A),
         width: "24",
         height: "24"
-    }), `: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `액티브 세션`)), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `락 트리`)), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `프로세스 정보`)), `를 새창으로 열어 확인할 수 있습니다. 목록이 많아 더 큰 화면으로 목록을 확인할 때 유용합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_XcludeDoc_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
+    }), `: 새창으로 열어 더 큰 화면으로 목록을 확인할 수 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_XcludeDoc_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
         product: "postgresql,mysql,redis",
         mdxType: "Xclude"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
