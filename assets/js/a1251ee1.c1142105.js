@@ -1420,7 +1420,17 @@ ignore_http_method=OPTIONS,HEAD
         class: "type"
     }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `NON-Http 트랜잭션 추적을 위한 시작점의 공통 분모가 특정 클래스의 메소드를 상속 받은 경우라면 이를 설정합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `NON-HTTP 트랜잭션 추적을 위한 시작점의 공통 분모가 특정 클래스의 메소드를 상속 받은 경우라면 공통 분모의 메소드를 설정합니다. 메소드 전체 경로를 입력하세요. 와일드 카드(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `*`), `)를 사용할 수 있으며, 쉼표(,)를 구분자로 이용해 여러 개의 메소드를 등록할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `hook_service_supers=a.b.C.method,a.b.C.*
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -1510,7 +1520,7 @@ ignore_http_method=OPTIONS,HEAD
         parentName: "li"
     }, `arg`), `: 파라미터 중에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "li"
-    }, `service_name_index`), ` 옵션에 설정한 인덱스에 파라미터를 서비스 명칭으로 사용`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `service_name_index`), ` 옵션에 설정한 인덱스에 파라미터를 서비스 명칭으로 사용 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "멀티-트랜잭션-추적"
     }, `멀티 트랜잭션 추적`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
