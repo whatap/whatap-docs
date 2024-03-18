@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[47733],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[23564],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 72487:
+/***/ 31510:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,28 +308,28 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'resource-node-list',
-    title: '노드 목록',
-    description: '현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.',
+    id: 'resource-container-list',
+    title: '컨테이너 목록',
+    description: '현재 프로젝트의 컨테이너 현황 정보 및 상세 정보를 확인할 수 있습니다.',
     tags: [
         '쿠버네티스',
         '쿠버네티스 모니터링',
-        '클러스터',
-        '노드 목록'
+        '컨테이너',
+        '컨테이너 목록'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/resource-node-list",
-    "id": "kubernetes/resource-node-list",
-    "title": "노드 목록",
-    "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
-    "source": "@site/docs/kubernetes/resource-node-list.mdx",
+    "unversionedId": "kubernetes/resource-container-list",
+    "id": "kubernetes/resource-container-list",
+    "title": "컨테이너 목록",
+    "description": "현재 프로젝트의 컨테이너 현황 정보 및 상세 정보를 확인할 수 있습니다.",
+    "source": "@site/docs/kubernetes/resource-container-list.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/resource-node-list",
-    "permalink": "/whatap-docs/kubernetes/resource-node-list",
+    "slug": "/kubernetes/resource-container-list",
+    "permalink": "/whatap-docs/kubernetes/resource-container-list",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/resource-node-list.mdx",
+    "editUrl": "undefined/docs/kubernetes/resource-container-list.mdx",
     "tags": [
         {
             "label": "쿠버네티스",
@@ -340,34 +340,34 @@ const metadata = {
             "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
         },
         {
-            "label": "클러스터",
-            "permalink": "/whatap-docs/tags/클러스터"
+            "label": "컨테이너",
+            "permalink": "/whatap-docs/tags/컨테이너"
         },
         {
-            "label": "노드 목록",
-            "permalink": "/whatap-docs/tags/노드-목록"
+            "label": "컨테이너 목록",
+            "permalink": "/whatap-docs/tags/컨테이너-목록"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "resource-node-list",
-        "title": "노드 목록",
-        "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
+        "id": "resource-container-list",
+        "title": "컨테이너 목록",
+        "description": "현재 프로젝트의 컨테이너 현황 정보 및 상세 정보를 확인할 수 있습니다.",
         "tags": [
             "쿠버네티스",
             "쿠버네티스 모니터링",
-            "클러스터",
-            "노드 목록"
+            "컨테이너",
+            "컨테이너 목록"
         ]
     },
     "sidebar": "kubeSidebar",
     "previous": {
-        "title": "Deployment 목록",
-        "permalink": "/whatap-docs/kubernetes/deployment-list"
+        "title": "Flex 보드 공유하기",
+        "permalink": "/whatap-docs/kubernetes/flexboard-share"
     },
     "next": {
-        "title": "오브젝트 매니페스트",
-        "permalink": "/whatap-docs/kubernetes/object-manifest"
+        "title": "컨테이너 볼륨",
+        "permalink": "/whatap-docs/kubernetes/resource-container-volume"
     }
 };
 const assets = {};
@@ -396,20 +396,15 @@ const toc = [
         value: '컬럼 선택',
         id: '컬럼-선택',
         level: 2
-    },
-    {
-        value: '노드 상세',
-        id: 'nodedetails',
-        level: 2
     }
 ];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
-const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
 const InDoc = makeShortcode("InDoc");
+const LinkImage = makeShortcode("LinkImage");
 const Xclude = makeShortcode("Xclude");
 const layoutProps = {
     toc
@@ -422,27 +417,31 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "cluster",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "node_list",
-        className: "uitext",
-        mdxType: "Cmdname"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `컨테이너`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `컨테이너 목록`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
-    }, `특정 컬럼의 데이터가 표시되지 않는 것은 쿠버네티스 노드 에이전트가 구 버전이기 때문일 수 있습니다. 이런 경우 충분한 데이터가 수집될 수 있도록 쿠버네티스 노드 에이전트 버전을 1.3.7 이상으로 업데이트하세요. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `현재 프로젝트의 노드의 정보를 목록 형태로 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `특정 컬럼의 데이터가 표시되지 않는 것은 쿠버네티스 노드 에이전트가 구 버전이기 때문일 수 있습니다. 이런 경우 충분한 데이터가 수집될 수 있도록 쿠버네티스 에이전트 버전을 업데이트하세요. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `컨테이너 목록`)), ` 메뉴를 통해 현재 프로젝트의 컨테이너의 상세 정보를 목록 형식으로 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `10초 주기로 실시간 데이터를 업데이트합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `10초 주기로 실시간 데이터를 업데이트합니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `노드 상태 요약, 비교, 필터 및 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `컨테이너 상태 요약, 비교, 필터 및 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `CSV`), ` 파일 다운로드 기능을 제공합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", {
         parentName: "li"
@@ -450,11 +449,15 @@ function MDXContent(_param) {
         parentName: "blockquote"
     }, `CSV 파일명, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
-    }, `kubernetes`, `_`, `node`, `_`, `list`, `_`, `{pcode}_{timestamp}.csv`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `kubernetes`, `_`, `contianer`, `_`, `list`, `_`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "em"
+    }, `{pcode}`), `_`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "em"
+    }, `{timestamp}`), `.csv`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "기본-화면-안내"
     }, `기본 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-resource-node-list-m.png",
-        desc: "노드 목록 기본 화면",
+        img: "k8s-resource-container-list-m.png",
+        desc: "컨테이너 목록 기본 화면",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "number 01",
@@ -475,39 +478,30 @@ function MDXContent(_param) {
         src: (__webpack_require__(15856)/* ["default"] */ .A),
         width: "35",
         height: "35"
-    }), ` 영역 좌측 상단에서 전체 노드 개수 및 상태별 노드 개수를 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), ` 영역 좌측 상단에서 전체 컨테이너 개수와 상태별 컨테이너 개수를 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number 01",
-        src: (__webpack_require__(15856)/* ["default"] */ .A),
+        alt: "number 02",
+        src: (__webpack_require__(29675)/* ["default"] */ .A),
         width: "35",
         height: "35"
-    }), ` 영역 우측에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+    }), ` 영역에서 원하는 컬럼을 선택 시 해당 컬럼 기준으로 컨테이너 목록을 정렬해 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "number 02",
+        src: (__webpack_require__(29675)/* ["default"] */ .A),
+        width: "35",
+        height: "35"
+    }), ` 영역 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `→ 이전 버전으로 보기`)), ` 버튼 선택 시 개편 전 노드 목록 화면을 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number 02",
-        src: (__webpack_require__(29675)/* ["default"] */ .A),
-        width: "35",
-        height: "35"
-    }), ` 영역에서 원하는 컬럼 선택 시 해당 컬럼 기준으로 노드 목록을 정렬해 조회할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number 02",
-        src: (__webpack_require__(29675)/* ["default"] */ .A),
-        width: "35",
-        height: "35"
-    }), ` 영역에서 OnodeName 컬럼 하위의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "상세 아이콘",
+    }, `Node`)), ` 컬럼에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "상세 보기 아이콘",
         src: (__webpack_require__(83533)/* ["default"] */ .A),
         width: "24",
         height: "24"
@@ -515,7 +509,11 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `상세`)), ` 아이콘 선택 시 해당 노드 상세 페이지로 이동합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `노드 정보 보기`)), ` 아이콘 선택 시 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `노드 목록`)), ` 메뉴로 이동합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "메트릭-정보"
     }, `메트릭 정보`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -678,42 +676,28 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `비교하기`)), ` 컬럼을 통해 여러 노드의 주요 지표에 대한 비교 차트를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+    }, `비교하기`)), ` 옵션 활용 시 여러 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드`), `의 주요 지표에 대한 비교 차트를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-container-list-compare.png",
+        desc: "비교하기 sc",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "k8s-resource-node-list-compare.png",
         desc: "비교하기 sc",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `노드 목록 좌측 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number a",
-        src: (__webpack_require__(89332)/* ["default"] */ .A),
-        width: "35",
-        height: "35"
-    }), ` 비교 컬럼을 통해 비교를 원하는 노드를 선택하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `노드는 최대 10개까지 선택할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `선택한 노드별로 다른 색상이 부여됩니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number b",
-        src: (__webpack_require__(77191)/* ["default"] */ .A),
-        width: "35",
-        height: "35"
-    }), ` 영역에서 선택한 노드의 비교 차트를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
@@ -721,21 +705,55 @@ function MDXContent(_param) {
         src: (__webpack_require__(89332)/* ["default"] */ .A),
         width: "35",
         height: "35"
-    }), ` 비교 컬럼에서 선택한 노드를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number b",
-        src: (__webpack_require__(77191)/* ["default"] */ .A),
-        width: "35",
-        height: "35"
-    }), ` 영역 상단에서 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `비교하기`)), ` 옵션 선택 시 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드`), ` 목록에 비교 컬럼이 추가됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, "컨테이너"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, "노드"), " 목록 좌측 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(LinkImage, {
+        img: "char-b.svg",
+        className: "ico",
+        mdxType: "LinkImage"
+    }), " 비교 컬럼을 통해 비교를 원하는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, "컨테이너"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, "노드"), "를 선택하세요.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, "컨테이너"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, "노드"), "는 최대 10개까지 선택할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "number b",
-        src: (__webpack_require__(77191)/* ["default"] */ .A),
-        width: "35",
-        height: "35"
-    }), ` 상단을 드래그해 비교 차트 영역 높이를 조절할 수 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `선택한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드`), `별로 다른 색상이 부여됩니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -744,15 +762,71 @@ function MDXContent(_param) {
         src: (__webpack_require__(90070)/* ["default"] */ .A),
         width: "35",
         height: "35"
+    }), ` 영역에서 선택한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드`), `의 비교 차트를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "number b",
+        src: (__webpack_require__(77191)/* ["default"] */ .A),
+        width: "35",
+        height: "35"
+    }), ` 비교 컬럼에서 선택한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드`), `를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "number c",
+        src: (__webpack_require__(90070)/* ["default"] */ .A),
+        width: "35",
+        height: "35"
+    }), ` 영역 상단에서 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "number c",
+        src: (__webpack_require__(90070)/* ["default"] */ .A),
+        width: "35",
+        height: "35"
+    }), ` 상단을 드래그해 비교 차트 영역 높이를 조절할 수 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "number d",
+        src: (__webpack_require__(65305)/* ["default"] */ .A),
+        width: "35",
+        height: "35"
     }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `기간 조회`)), ` 버튼 선택 시 다음과 같이 조회를 원하는 기간 내 비교 차트를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+    }, `기간 조회`)), ` 버튼 선택 시 다음과 같이 조회를 원하는 기간 내 비교 차트를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-container-list-compare-time.png",
+        desc: "기간 조회",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "k8s-resource-node-list-compare-time.png",
         desc: "기간 조회",
         mdxType: "ImgLang"
-    }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "컬럼-선택"
     }, `컬럼 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
@@ -818,269 +892,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `적용`)), ` 버튼을 클릭 해 선택 내역을 적용할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "nodedetails"
-    }, `노드 상세`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `노드 상세 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-resource-node-detail.png",
-        desc: "노드 상세 화면",
-        mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `상단 차트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `CPU Usage`)), `: 노드의 CPU 사용량을 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Memory Usage`)), `: 노드의 메모리 사용량을 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Network`)), `: 노드의 네트워크 인터페이스의 입출력 트래픽과 오류 패킷을 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Disk Usage`)), `: 노드의 Disk 사용량을 확인할 수 있습니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `컨테이너 정보`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
-        parentName: "table"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "thead"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
-        parentName: "tr",
-        "align": null
-    }, `항목`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
-        parentName: "tr",
-        "align": null
-    }, `설명`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tbody", {
-        parentName: "table"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `상태`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 상태`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Container ID`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `이미지`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 이미지 정보`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `커맨드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 실행 명령`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `애플리케이션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너에 설치된 와탭 APM 에이전트의 이름`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Pod`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Pod 이름`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `CpuByLimit`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `CPU Limit 기준 CPU 전체 사용률`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `MemoryWsByLimit`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 메모리 Limit 기준 working set 사용량`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `CpuThrottledCnt`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 CPU Throttled 건수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `CpuThrottledTime`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 CPU Throttled 시간`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `MemLimit`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 메모리 Limit 크기`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `MemRequest`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 메모리 Request 크기`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `MemWs`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 메모리 working set`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `IoReadBytes`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 전체 블럭 디바이스의 초당 읽은 바이트 합`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `IoReadIops`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 전체 블럭 디바이스의 초당 읽은 건수 합`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `IoWriteBytes`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 전체 블럭 디바이스의 초당 쓴 바이트 합`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `IoWriteIops`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 전체 블럭 디바이스의 초당 쓴 건수 합`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetRxBytes`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetRxDropped`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 수신 dropped 건수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetRxError`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 수신 에러 건수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetRxIops`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 수신 건수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetTxBytes`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 송신 데이터 크기`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetTxDropped`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 송신 dropped 건수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetTxError`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 송신 에러 건수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NetTxIops`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `컨테이너 네트워크 송신 건수`)))))));
+    }, `적용`)), ` 버튼을 클릭 해 선택 내역을 적용할 수 있습니다.`))));
 }
 MDXContent.isMDXComponent = true;
 
@@ -1114,6 +926,16 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTcuNSIgY3k9IjE3LjUiIHI9IjE3LjUiIGZpbGw9IiNGOUMxMkEiLz4KPHBhdGggZD0iTTE3LjgyODEgMjMuMjY1NkMxOC4yOTY5IDIzLjI2NTYgMTguNzEzNSAyMy4xNjY3IDE5LjA3ODEgMjIuOTY4OEMxOS40NTMxIDIyLjc3MDggMTkuNzUgMjIuNDYzNSAxOS45Njg4IDIyLjA0NjlDMjAuMTg3NSAyMS42MTk4IDIwLjMwNzMgMjEuMDY3NyAyMC4zMjgxIDIwLjM5MDZIMjMuNzVDMjMuNzI5MiAyMS41ODg1IDIzLjQ1MzEgMjIuNjM1NCAyMi45MjE5IDIzLjUzMTJDMjIuMzkwNiAyNC40MTY3IDIxLjY4MjMgMjUuMTA0MiAyMC43OTY5IDI1LjU5MzhDMTkuOTIxOSAyNi4wNzI5IDE4Ljk0NzkgMjYuMzEyNSAxNy44NzUgMjYuMzEyNUMxNi43NjA0IDI2LjMxMjUgMTUuNzg2NSAyNi4xMzU0IDE0Ljk1MzEgMjUuNzgxMkMxNC4xMzAyIDI1LjQxNjcgMTMuNDQ3OSAyNC44OTA2IDEyLjkwNjIgMjQuMjAzMUMxMi4zNjQ2IDIzLjUxNTYgMTEuOTU4MyAyMi42ODIzIDExLjY4NzUgMjEuNzAzMUMxMS40MjcxIDIwLjcxMzUgMTEuMjk2OSAxOS41ODMzIDExLjI5NjkgMTguMzEyNVYxNi43ODEyQzExLjI5NjkgMTUuNTIwOCAxMS40MjcxIDE0LjM5NTggMTEuNjg3NSAxMy40MDYyQzExLjk1ODMgMTIuNDE2NyAxMi4zNjQ2IDExLjU3ODEgMTIuOTA2MiAxMC44OTA2QzEzLjQ0NzkgMTAuMjAzMSAxNC4xMzAyIDkuNjgyMjkgMTQuOTUzMSA5LjMyODEyQzE1Ljc3NiA4Ljk2MzU0IDE2Ljc0NDggOC43ODEyNSAxNy44NTk0IDguNzgxMjVDMTkuMDQ2OSA4Ljc4MTI1IDIwLjA3MjkgOS4wMzEyNSAyMC45Mzc1IDkuNTMxMjVDMjEuODEyNSAxMC4wMjA4IDIyLjQ5NDggMTAuNzM5NiAyMi45ODQ0IDExLjY4NzVDMjMuNDc0IDEyLjYzNTQgMjMuNzI5MiAxMy43OTY5IDIzLjc1IDE1LjE3MTlIMjAuMzI4MUMyMC4zMDczIDE0LjQ0MjcgMjAuMTk3OSAxMy44MzMzIDIwIDEzLjM0MzhDMTkuODAyMSAxMi44NDM4IDE5LjUyMDggMTIuNDY4OCAxOS4xNTYyIDEyLjIxODhDMTguODAyMSAxMS45Njg4IDE4LjM1NDIgMTEuODQzOCAxNy44MTI1IDExLjg0MzhDMTcuMjE4OCAxMS44NDM4IDE2LjcyOTIgMTEuOTU4MyAxNi4zNDM4IDEyLjE4NzVDMTUuOTY4OCAxMi40MDYyIDE1LjY3NzEgMTIuNzI5MiAxNS40Njg4IDEzLjE1NjJDMTUuMjcwOCAxMy41ODMzIDE1LjEzMDIgMTQuMTA0MiAxNS4wNDY5IDE0LjcxODhDMTQuOTc0IDE1LjMyMjkgMTQuOTM3NSAxNi4wMTA0IDE0LjkzNzUgMTYuNzgxMlYxOC4zMTI1QzE0LjkzNzUgMTkuMTA0MiAxNC45NzQgMTkuODA3MyAxNS4wNDY5IDIwLjQyMTlDMTUuMTE5OCAyMS4wMjYgMTUuMjU1MiAyMS41NDE3IDE1LjQ1MzEgMjEuOTY4OEMxNS42NjE1IDIyLjM5NTggMTUuOTU4MyAyMi43MTg4IDE2LjM0MzggMjIuOTM3NUMxNi43MjkyIDIzLjE1NjIgMTcuMjI0IDIzLjI2NTYgMTcuODI4MSAyMy4yNjU2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K");
+
+/***/ }),
+
+/***/ 65305:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTcuNSIgY3k9IjE3LjUiIHI9IjE3LjUiIGZpbGw9IiNGOUMxMkEiLz4KPHBhdGggZD0iTTE5LjMyODEgMjUuNDY4OFY1SDIyLjk2ODhWMjlMMTkuNjcxOSAyOS4wMTU2TDE5LjMyODEgMjUuNDY4OFpNMTAuMjUgMjEuMjM0NFYxOS45MDYyQzEwLjI1IDE4LjUyMDggMTAuMzc1IDE3LjMyMjkgMTAuNjI1IDE2LjMxMjVDMTAuODc1IDE1LjI5MTcgMTEuMjM5NiAxNC40NDI3IDExLjcxODggMTMuNzY1NkMxMi4yMDgzIDEzLjA4ODUgMTIuNzk2OSAxMi41ODg1IDEzLjQ4NDQgMTIuMjY1NkMxNC4xNzE5IDExLjk0MjcgMTQuOTQ3OSAxMS43ODEyIDE1LjgxMjUgMTEuNzgxMkMxNi42NTYyIDExLjc4MTIgMTcuMzg1NCAxMS45NzQgMTggMTIuMzU5NEMxOC42MTQ2IDEyLjczNDQgMTkuMTM1NCAxMy4yNzA4IDE5LjU2MjUgMTMuOTY4OEMxOS45ODk2IDE0LjY2NjcgMjAuMzI4MSAxNS41IDIwLjU3ODEgMTYuNDY4OEMyMC44Mzg1IDE3LjQyNzEgMjEuMDE1NiAxOC41IDIxLjEwOTQgMTkuNjg3NVYyMS41MzEyQzIwLjk5NDggMjIuNjc3MSAyMC44MTI1IDIzLjcyOTIgMjAuNTYyNSAyNC42ODc1QzIwLjMxMjUgMjUuNjM1NCAxOS45NzQgMjYuNDUzMSAxOS41NDY5IDI3LjE0MDZDMTkuMTE5OCAyNy44MjgxIDE4LjU5MzggMjguMzY0NiAxNy45Njg4IDI4Ljc1QzE3LjM1NDIgMjkuMTI1IDE2LjYzMDIgMjkuMzEyNSAxNS43OTY5IDI5LjMxMjVDMTQuOTMyMyAyOS4zMTI1IDE0LjE1NjIgMjkuMTQwNiAxMy40Njg4IDI4Ljc5NjlDMTIuNzkxNyAyOC40NTMxIDEyLjIwODMgMjcuOTQyNyAxMS43MTg4IDI3LjI2NTZDMTEuMjM5NiAyNi41ODg1IDEwLjg3NSAyNS43NSAxMC42MjUgMjQuNzVDMTAuMzc1IDIzLjczOTYgMTAuMjUgMjIuNTY3NyAxMC4yNSAyMS4yMzQ0Wk0xMy44OTA2IDE5LjkwNjJWMjEuMjM0NEMxMy44OTA2IDIyLjA5OSAxMy45NDI3IDIyLjg0MzggMTQuMDQ2OSAyMy40Njg4QzE0LjE1MSAyNC4wOTM4IDE0LjMxNzcgMjQuNjA5NCAxNC41NDY5IDI1LjAxNTZDMTQuNzc2IDI1LjQxMTUgMTUuMDc4MSAyNS43MDgzIDE1LjQ1MzEgMjUuOTA2MkMxNS44MjgxIDI2LjA5MzggMTYuMjgxMiAyNi4xODc1IDE2LjgxMjUgMjYuMTg3NUMxNy40NzkyIDI2LjE4NzUgMTguMDIwOCAyNi4wMjA4IDE4LjQzNzUgMjUuNjg3NUMxOC44NjQ2IDI1LjM1NDIgMTkuMTkyNyAyNC45MDYyIDE5LjQyMTkgMjQuMzQzOEMxOS42NjE1IDIzLjc3MDggMTkuODI4MSAyMy4xMzU0IDE5LjkyMTkgMjIuNDM3NVYxOC43OTY5QzE5Ljg2OTggMTguMjQ0OCAxOS43NjU2IDE3LjczNDQgMTkuNjA5NCAxNy4yNjU2QzE5LjQ1MzEgMTYuNzg2NSAxOS4yNSAxNi4zNjk4IDE5IDE2LjAxNTZDMTguNzUgMTUuNjYxNSAxOC40NDI3IDE1LjM4NTQgMTguMDc4MSAxNS4xODc1QzE3LjcyNCAxNC45NzkyIDE3LjMwNzMgMTQuODc1IDE2LjgyODEgMTQuODc1QzE2LjI5NjkgMTQuODc1IDE1Ljg0MzggMTQuOTc5MiAxNS40Njg4IDE1LjE4NzVDMTUuMDkzOCAxNS4zODU0IDE0Ljc5MTcgMTUuNjkyNyAxNC41NjI1IDE2LjEwOTRDMTQuMzMzMyAxNi41MTU2IDE0LjE2MTUgMTcuMDM2NSAxNC4wNDY5IDE3LjY3MTlDMTMuOTQyNyAxOC4yOTY5IDEzLjg5MDYgMTkuMDQxNyAxMy44OTA2IDE5LjkwNjJaIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=");
 
 /***/ }),
 
