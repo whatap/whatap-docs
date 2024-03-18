@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37536],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[71842],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 36231:
+/***/ 27314:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,30 +308,29 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'resource-application-list',
-    title: '컨테이너 애플리케이션 목록',
-    description: '컨테이너화 된 애플리케이션의 목록을 확인합니다.',
+    id: 'resource-pod-list',
+    title: 'Pod 목록',
+    description: 'Pod 목록을 확인합니다.',
     tags: [
         '쿠버네티스',
         '쿠버네티스 모니터링',
         '워크로드',
-        '애플리케이션',
-        '애플리케이션 목록'
+        'Pod 목록'
     ],
     toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/resource-application-list",
-    "id": "kubernetes/resource-application-list",
-    "title": "컨테이너 애플리케이션 목록",
-    "description": "컨테이너화 된 애플리케이션의 목록을 확인합니다.",
-    "source": "@site/docs/kubernetes/resource-application-list.mdx",
+    "unversionedId": "kubernetes/resource-pod-list",
+    "id": "kubernetes/resource-pod-list",
+    "title": "Pod 목록",
+    "description": "Pod 목록을 확인합니다.",
+    "source": "@site/docs/kubernetes/resource-pod-list.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/resource-application-list",
-    "permalink": "/whatap-docs/kubernetes/resource-application-list",
+    "slug": "/kubernetes/resource-pod-list",
+    "permalink": "/whatap-docs/kubernetes/resource-pod-list",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/resource-application-list.mdx",
+    "editUrl": "undefined/docs/kubernetes/resource-pod-list.mdx",
     "tags": [
         {
             "label": "쿠버네티스",
@@ -346,36 +345,31 @@ const metadata = {
             "permalink": "/whatap-docs/tags/워크로드"
         },
         {
-            "label": "애플리케이션",
-            "permalink": "/whatap-docs/tags/애플리케이션"
-        },
-        {
-            "label": "애플리케이션 목록",
-            "permalink": "/whatap-docs/tags/애플리케이션-목록"
+            "label": "Pod 목록",
+            "permalink": "/whatap-docs/tags/pod-목록"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "resource-application-list",
-        "title": "컨테이너 애플리케이션 목록",
-        "description": "컨테이너화 된 애플리케이션의 목록을 확인합니다.",
+        "id": "resource-pod-list",
+        "title": "Pod 목록",
+        "description": "Pod 목록을 확인합니다.",
         "tags": [
             "쿠버네티스",
             "쿠버네티스 모니터링",
             "워크로드",
-            "애플리케이션",
-            "애플리케이션 목록"
+            "Pod 목록"
         ],
         "toc_max_heading_level": 2
     },
     "sidebar": "kubeSidebar",
     "previous": {
-        "title": "Pod 목록",
-        "permalink": "/whatap-docs/kubernetes/resource-pod-list"
+        "title": "Out Of Memory Killed 컨테이너",
+        "permalink": "/whatap-docs/kubernetes/analysis-oom-container"
     },
     "next": {
-        "title": "Deployment 목록",
-        "permalink": "/whatap-docs/kubernetes/deployment-list"
+        "title": "컨테이너 애플리케이션 목록",
+        "permalink": "/whatap-docs/kubernetes/resource-application-list"
     }
 };
 const assets = {};
@@ -420,10 +414,10 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
+const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
 const InDoc = makeShortcode("InDoc");
 const Xclude = makeShortcode("Xclude");
-const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
 };
@@ -439,15 +433,39 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `워크로드`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `컨테이너 애플리케이션 목록`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `컨테이너화된 애플리케이션의 목록을 조회합니다. 원하는 컬럼 선택 시 해당 컬럼 기준으로 애플리케이션 목록을 정렬해 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-app-list.png",
-        desc: "애플리케이션 목록",
+    }, `워크로드`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "podList",
+        className: "uitext",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Pod 목록을 조회합니다. 원하는 컬럼 선택 시 해당 컬럼 기준으로 Pod 목록을 정렬해 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-pod-list.png",
+        desc: "Pod 목록",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `10초 주기로 실시간 데이터를 업데이트합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `좌측 상단에서 전체 Pod 개수와 상태별 Pod 개수를 확인할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `검색, 컬럼 정렬, 상세 보기, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `CSV`), ` 파일 다운로드를 제공합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "blockquote"
+    }, `CSV 파일명, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `kubernetes`, `_`, `pod`, `_`, `list`, `_`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "em"
+    }, `{pcode}`), `_`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "em"
+    }, `{timestamp}`), `.csv`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -646,24 +664,11 @@ function MDXContent(_param) {
         parentName: "strong"
     }, `적용`)), ` 버튼을 클릭 해 선택 내역을 적용할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "상세-보기"
-    }, `상세 보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `컨테이너 애플리케이션 목록`)), `에서 조회를 원하는 애플리케이션의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Oname`)), ` 컬럼 오른쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "돋보기 아이콘",
-        src: (__webpack_require__(6971)/* ["default"] */ .A),
-        width: "24",
-        height: "24"
-    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `상세 보기`)), ` 아이콘 선택 시 해당 애플리케이션에 대한 상세 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `상세 보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "containerizedAppList",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "에서 조회를 원하는 애플리케이션 선택 시 해당 애플리케이션에 대한 상세 정보를 확인할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -679,18 +684,15 @@ function MDXContent(_param) {
     }, `로그`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "container-map-event"
-    }, `이벤트`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "container-map-call-information"
-    }, `호출 정보`), ` 탭의 경우 컨테이너 맵 컨테이너 뷰 상세와 동일합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }, `이벤트`), ` 탭의 경우 컨테이너 맵 컨테이너 뷰 상세와 동일합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "리소스"
     }, `리소스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대상 선택 후 상세 보기의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "resource",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 탭에서 선택한 리소스와 관련된 리소스 목록 및 관계도를 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-app-list-detail.png",
-        desc: "애플리케이션 목록",
+        img: "k8s-pod-list-detail.png",
+        desc: "Pod 목록 상세 ",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "요약-정보"
@@ -726,20 +728,10 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), "로 이동합니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "리소스-관계도"
-    }, `리소스 관계도`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `리소스간 연결 관계와 상태를 시각적으로 확인할 수 있습니다. 리소스간 연결 관계와 상태를 시각적으로 확인할 수 있습니다. 목록과 동일하게 Pod, 컨테이너, 애플리케이션에 마우스 오버 시 상세 지표를 확인할 수 있습니다. 리소스 선택 시 해당 리소스 목록 페이지로 이동합니다.`));
+    }, `리소스 관계도`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `리소스간 연결 관계와 상태를 시각적으로 확인할 수 있습니다. 목록과 동일하게 Pod, 컨테이너, 애플리케이션에 마우스 오버 시 상세 지표를 확인할 수 있습니다. 리소스 선택 시 해당 리소스 목록 페이지로 이동합니다.`));
 }
 MDXContent.isMDXComponent = true;
 
-
-/***/ }),
-
-/***/ 6971:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi4wNTEzIDE0LjY2MzZDMTguNDQ3OSAxMS41ODQxIDE4LjIzMSA3LjEyOTcgMTUuNDAwNCA0LjI5OTE1QzEyLjMzNDkgMS4yMzM2MiA3LjM2NDY4IDEuMjMzNjIgNC4yOTkxNSA0LjI5OTE1QzEuMjMzNjIgNy4zNjQ2OCAxLjIzMzYyIDEyLjMzNDkgNC4yOTkxNSAxNS40MDA0QzcuMTI5NyAxOC4yMzEgMTEuNTg0MSAxOC40NDc5IDE0LjY2MzYgMTYuMDUxM0wxOS42MTIzIDIxTDIxIDE5LjYxMjNMMTYuMDUxMyAxNC42NjM2Wk0xNC4wMTI4IDE0LjAxMjhDMTEuNzEzNiAxNi4zMTE5IDcuOTg1OTUgMTYuMzExOSA1LjY4NjggMTQuMDEyOEMzLjM4NzY2IDExLjcxMzYgMy4zODc2NiA3Ljk4NTk1IDUuNjg2OCA1LjY4NjhDNy45ODU5NSAzLjM4NzY2IDExLjcxMzYgMy4zODc2NiAxNC4wMTI4IDUuNjg2ODFDMTYuMzExOSA3Ljk4NTk1IDE2LjMxMTkgMTEuNzEzNiAxNC4wMTI4IDE0LjAxMjhaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=");
 
 /***/ }),
 
