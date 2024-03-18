@@ -495,13 +495,20 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `원하는 컬럼 위에 마우스 커서를 위치시키면 다음과 같이 해당 컬럼이 제공하는 메트릭 정보를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "메트릭 정보",
-        src: (__webpack_require__(58804)/* ["default"] */ .A),
-        width: "645",
-        height: "254"
+    }, `원하는 컬럼 위에 마우스 커서를 위치시키면 다음과 같이 해당 컬럼이 제공하는 메트릭 정보를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list,resource-pod-list,resource-application-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-node-list-metric-info.png",
+        desc: "메트릭 정보",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-container-list-metric-info.png",
+        desc: "메트릭 정보",
+        mdxType: "ImgLang"
     }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
@@ -528,20 +535,39 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `인포 아이콘`)), ` 위에 마우스 커서를 위치시키면 다음과 같이 메트릭 정보를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "컬럼 목록 내 메트릭 정보",
-        src: (__webpack_require__(9318)/* ["default"] */ .A),
-        width: "731",
-        height: "230"
-    }), ` `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `인포 아이콘`)), ` 위에 마우스 커서를 위치시키면 다음과 같이 메트릭 정보를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list,resource-pod-list,resource-application-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-node-list-metric-info-cl.png",
+        desc: "컬럼 목록 내 메트릭 정보",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-container-list-metric-info-cl.png",
+        desc: "컬럼 목록 내 메트릭 정보",
+        mdxType: "ImgLang"
+    })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "필터"
     }, `필터`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `필터`)), ` 옵션 활용 시 원하는 리소스 목록을 선택해 조회할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `필터`)), ` 옵션 활용 시 원하는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드 목록`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-pod-list",
+        mdxType: "InDoc"
+    }, `Pod 목록`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-application-list",
+        mdxType: "InDoc"
+    }, `애플리케이션 목록`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너 목록`), `을 선택해 조회할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `and`), ` 조건을 통해 여러 개의 필터를 적용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
@@ -626,15 +652,37 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `컬럼 선택`)), ` 옵션 활용 시 원하는 리소스 정보를 선택해 리소스 목록을 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+    }, `컬럼 선택`)), ` 옵션 활용 시 원하는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-node-list",
+        mdxType: "InDoc"
+    }, `노드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-pod-list",
+        mdxType: "InDoc"
+    }, `Pod`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-application-list",
+        mdxType: "InDoc"
+    }, `애플리케이션 목록`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, `컨테이너`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "deployment-list",
+        mdxType: "InDoc"
+    }, `Deployment`), ` 정보를 선택해 목록을 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
         pages: "deployment-list",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "k8s-deployment-list-cl.png",
         desc: "컬럼 선택",
         mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-container-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-resource-container-list-cl.png",
+        desc: "컬럼 선택",
+        mdxType: "ImgLang"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Xclude, {
-        pages: "deployment-list",
+        pages: "deployment-list,resource-container-list",
         mdxType: "Xclude"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
@@ -666,15 +714,16 @@ function MDXContent(_param) {
         parentName: "strong"
     }, `적용`)), ` 버튼을 클릭 해 선택 내역을 적용할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "상세-보기"
-    }, `상세 보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `컨테이너 애플리케이션 목록`)), `에서 조회를 원하는 애플리케이션의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Oname`)), ` 컬럼 오른쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }, `상세 보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `목록에서 조회를 원하는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-pod-list",
+        mdxType: "InDoc"
+    }, `Pod`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-application-list",
+        mdxType: "InDoc"
+    }, `애플리케이션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "deployment-list",
+        mdxType: "InDoc"
+    }, `Deployment`), `의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "돋보기 아이콘",
         src: (__webpack_require__(6971)/* ["default"] */ .A),
         width: "24",
@@ -683,7 +732,38 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `상세 보기`)), ` 아이콘 선택 시 해당 애플리케이션에 대한 상세 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `상세 보기`)), ` 아이콘 선택 시 해당 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-pod-list",
+        mdxType: "InDoc"
+    }, `Pod`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-application-list",
+        mdxType: "InDoc"
+    }, `애플리케이션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "deployment-list",
+        mdxType: "InDoc"
+    }, `Deployment`), `에 대한 상세 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Xclude, {
+        pages: "resource-application-list",
+        mdxType: "Xclude"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `상세 보기 창의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "container-map-trace"
+    }, `트레이스`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "container-map-metrics"
+    }, `메트릭스`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "container-map-log"
+    }, `로그`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "container-map-event"
+    }, `이벤트`), ` 탭의 경우 컨테이너 맵 상세 보기와 동일합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-application-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -702,17 +782,34 @@ function MDXContent(_param) {
     }, `이벤트`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "container-map-call-information"
-    }, `호출 정보`), ` 탭의 경우 컨테이너 맵 컨테이너 뷰 상세와 동일합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }, `호출 정보`), ` 탭의 경우 컨테이너 맵 상세 보기와 동일합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "리소스"
     }, `리소스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대상 선택 후 상세 보기의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "resource",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 탭에서 선택한 리소스와 관련된 리소스 목록 및 관계도를 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-app-list-detail.png",
-        desc: "애플리케이션 목록",
+    }), ` 탭에서 선택한 리소스와 관련된 리소스 목록 및 관계도를 조회할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-pod-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-pod-list-detail.png",
+        desc: "Pod 목록 상세 ",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "resource-application-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-app-list-detail.png",
+        desc: "Pod 목록 상세 ",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "deployment-list",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "k8s-deployment-list-detail.png",
+        desc: "deployment 목록 상세 ",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "요약-정보"
     }, `요약 정보`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `선택한 리소스와 관련된 리소스 목록의 요약 정보를 제공합니다. 리소스 명 옆에 상세보기 아이콘을 선택 시 해당 리소스 목록 화면으로 이동합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -746,7 +843,7 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), "로 이동합니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "리소스-관계도"
-    }, `리소스 관계도`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `리소스간 연결 관계와 상태를 시각적으로 확인할 수 있습니다. 리소스간 연결 관계와 상태를 시각적으로 확인할 수 있습니다. 목록과 동일하게 Pod, 컨테이너, 애플리케이션에 마우스 오버 시 상세 지표를 확인할 수 있습니다. 리소스 선택 시 해당 리소스 목록 페이지로 이동합니다.`));
+    }, `리소스 관계도`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `리소스간 연결 관계와 상태를 시각적으로 확인할 수 있습니다. 목록과 동일하게 Pod, 컨테이너, 애플리케이션에 마우스 오버 시 상세 지표를 확인할 수 있습니다. 리소스 선택 시 해당 리소스 목록 페이지로 이동합니다.`));
 }
 MDXContent.isMDXComponent = true;
 
@@ -790,26 +887,6 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU5LjEgKDg2MTQ0KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICA8IS0tIDx0aXRsZT5pYy1zLWluZm8tY2lyY2xlPC90aXRsZT4gLS0+CiAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY0Ni4wMDAwMDAsIC0xMDEzLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgPGcgaWQ9InN1Z2dlc3RlZC1pY29ucy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDk2Ni4wMDAwMDApIj4KICAgICAgICAgICAgICA8ZyBpZD0iaWMtaW5mby1jaXJjbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwNi4wMDAwMDAsIDQ3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgMS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05LDAgQzEzLjk3MDU2MjcsMCAxOCw0LjAyOTQzNzI1IDE4LDkgQzE4LDEzLjk3MDU2MjcgMTMuOTcwNTYyNywxOCA5LDE4IEM0LjAyOTQzNzI1LDE4IDAsMTMuOTcwNTYyNyAwLDkgQzAsNC4wMjk0MzcyNSA0LjAyOTQzNzI1LDAgOSwwIFogTTksMS44IEM1LjAyMzU0OTgsMS44IDEuOCw1LjAyMzU0OTggMS44LDkgQzEuOCwxMi45NzY0NTAyIDUuMDIzNTQ5OCwxNi4yIDksMTYuMiBDMTIuOTc2NDUwMiwxNi4yIDE2LjIsMTIuOTc2NDUwMiAxNi4yLDkgQzE2LjIsNS4wMjM1NDk4IDEyLjk3NjQ1MDIsMS44IDksMS44IFogTTkuOSw4LjEgTDkuOSwxMy41IEw4LjEsMTMuNSBMOC4xLDguMSBMOS45LDguMSBaIE05LjksNC41IEw5LjksNi4zIEw4LjEsNi4zIEw4LjEsNC41IEw5LjksNC41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgIDwvZz4KICAgICAgICAgIDwvZz4KICAgICAgPC9nPgogIDwvZz4KPC9zdmc+");
-
-/***/ }),
-
-/***/ 9318:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-resource-node-list-metric-info-cl-401493ae7feff569a79ef2eb6ee6600c.png");
-
-/***/ }),
-
-/***/ 58804:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-resource-node-list-metric-info-4b7f19d76c6a5d575fe7c83c74d7ab0d.png");
 
 /***/ })
 
