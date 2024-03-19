@@ -9,14 +9,14 @@ export default function InDoc ({children, product, pages}) {
     
     if (product) {
         const prods = Array.isArray(product) ? product : product.split(',');
-        const cProd = currentLocale === "ko" ? location.pathname.split("/")[1] : location.pathname.split("/")[2]
+        const cProd = currentLocale === "ko" ? location.pathname.split("/")[2] : location.pathname.split("/")[3]
         const isProduct = prods.includes(cProd);
     
         return isProduct ? <MDXContents>{children}</MDXContents> : null;
     } else if (pages) {
         const Pages = Array.isArray(pages) ? pages : pages.split(',');
         const cPage = location.pathname.split("/");
-        const lastPath = cPage.length - 1;
+        const lastPath = cPage[cPage.length - 1] !== "" ? cPage.length - 1 : cPage.length - 2;
         const isPage = Pages.includes(cPage[lastPath]);
 
         return isPage ? <MDXContents>{children}</MDXContents> : null;

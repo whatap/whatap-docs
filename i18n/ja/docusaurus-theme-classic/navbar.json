@@ -199,10 +199,6 @@
     "message": "ライセンス",
     "description": "Navbar item with label 라이선스"
   },
-  "item.label.PostgreSQL V2 모니터링": {
-    "message": "PostgreSQL V2 モニタリング",
-    "description": "Navbar item with label PostgreSQL V2 모니터링"
-  },
   "item.label.AWS Log": {
     "message": "AWS Log",
     "description": "Navbar item with label AWS Log"
@@ -210,14 +206,6 @@
   "item.label.Go 모니터링": {
     "message": "Goモニタリング",
     "description": "Navbar item with label Go 모니터링"
-  },
-  "item.label.MySQL 모니터링 V1": {
-    "message": "MySQLモニタリングV1",
-    "description": "Navbar item with label MySQL 모니터링 V1"
-  },
-  "item.label.MySQL 모니터링 V2": {
-    "message": "MySQLモニタリングV2",
-    "description": "Navbar item with label MySQL 모니터링 V2"
   },
   "item.label.Go": {
     "message": "Go",
@@ -242,5 +230,9 @@
   "item.label.OpenTelemetry": {
     "message": "OpenTelemetry",
     "description": "Navbar item with label OpenTelemetry"
+  },
+  "item.label.MySQL 모니터링": {
+    "message": "MySQLモニタリング",
+    "description": "Navbar item with label MySQL 모니터링"
   }
 }

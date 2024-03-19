@@ -827,6 +827,18 @@
     "width": 600,
     "height": 234
   },
+  "apm-dashboard-process-memory-en.png": {
+    "width": 600,
+    "height": 347
+  },
+  "apm-dashboard-process-memory-ja.png": {
+    "width": 600,
+    "height": 348
+  },
+  "apm-dashboard-process-memory.png": {
+    "width": 600,
+    "height": 347
+  },
   "apm-dashboard-realtime-user-en.png": {
     "width": 600,
     "height": 345
@@ -940,6 +952,18 @@
     "height": 523
   },
   "apm-dashboard.png": {
+    "width": 1500,
+    "height": 835
+  },
+  "apm-dashboard02-en.png": {
+    "width": 1500,
+    "height": 835
+  },
+  "apm-dashboard02-ja.png": {
+    "width": 1500,
+    "height": 835
+  },
+  "apm-dashboard02.png": {
     "width": 1500,
     "height": 835
   },
