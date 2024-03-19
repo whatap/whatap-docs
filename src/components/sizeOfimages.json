@@ -813,19 +813,31 @@
   },
   "apm-dashboard-preset-default.png": {
     "width": 400,
-    "height": 223
+    "height": 214
   },
   "apm-dashboard-preset-save-en.png": {
     "width": 600,
-    "height": 206
+    "height": 203
   },
   "apm-dashboard-preset-save-ja.png": {
     "width": 600,
-    "height": 197
+    "height": 196
   },
   "apm-dashboard-preset-save.png": {
     "width": 600,
-    "height": 234
+    "height": 230
+  },
+  "apm-dashboard-process-memory-en.png": {
+    "width": 600,
+    "height": 347
+  },
+  "apm-dashboard-process-memory-ja.png": {
+    "width": 600,
+    "height": 348
+  },
+  "apm-dashboard-process-memory.png": {
+    "width": 600,
+    "height": 347
   },
   "apm-dashboard-realtime-user-en.png": {
     "width": 600,
@@ -940,6 +952,18 @@
     "height": 523
   },
   "apm-dashboard.png": {
+    "width": 1500,
+    "height": 835
+  },
+  "apm-dashboard02-en.png": {
+    "width": 1500,
+    "height": 835
+  },
+  "apm-dashboard02-ja.png": {
+    "width": 1500,
+    "height": 835
+  },
+  "apm-dashboard02.png": {
     "width": 1500,
     "height": 835
   },
@@ -3455,6 +3479,18 @@
     "width": 600,
     "height": 239
   },
+  "db-bottom-table-filter-redis-en.png": {
+    "width": 600,
+    "height": 239
+  },
+  "db-bottom-table-filter-redis-ja.png": {
+    "width": 600,
+    "height": 242
+  },
+  "db-bottom-table-filter-redis.png": {
+    "width": 600,
+    "height": 239
+  },
   "db-bottom-table-filter.png": {
     "width": 600,
     "height": 238
@@ -3569,21 +3605,33 @@
   },
   "db-compare-count-trend-redis-en.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1055
   },
   "db-compare-count-trend-redis-ja.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1055
   },
   "db-compare-count-trend-redis.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1055
   },
   "db-compare-count-trend-tootip-en.png": {
     "width": 800,
     "height": 206
   },
   "db-compare-count-trend-tootip-ja.png": {
+    "width": 800,
+    "height": 206
+  },
+  "db-compare-count-trend-tootip-redis-en.png": {
+    "width": 800,
+    "height": 206
+  },
+  "db-compare-count-trend-tootip-redis-ja.png": {
+    "width": 800,
+    "height": 206
+  },
+  "db-compare-count-trend-tootip-redis.png": {
     "width": 800,
     "height": 206
   },
@@ -3656,6 +3704,18 @@
     "height": 306
   },
   "db-count-trend-extend-time-ja.png": {
+    "width": 1200,
+    "height": 306
+  },
+  "db-count-trend-extend-time-redis-en.png": {
+    "width": 1200,
+    "height": 306
+  },
+  "db-count-trend-extend-time-redis-ja.png": {
+    "width": 1200,
+    "height": 306
+  },
+  "db-count-trend-extend-time-redis.png": {
     "width": 1200,
     "height": 306
   },
@@ -3754,6 +3814,54 @@
   "db-dashboard-instance-list.png": {
     "width": 1200,
     "height": 247
+  },
+  "db-dashboard-instaneous-widget.png": {
+    "width": 374,
+    "height": 402
+  },
+  "db-dashboard-move-widget.png": {
+    "width": 1200,
+    "height": 341
+  },
+  "db-dashboard-preset-en.png": {
+    "width": 400,
+    "height": 117
+  },
+  "db-dashboard-preset-ja.png": {
+    "width": 400,
+    "height": 115
+  },
+  "db-dashboard-preset.png": {
+    "width": 400,
+    "height": 119
+  },
+  "db-dashboard-status-widget.png": {
+    "width": 400,
+    "height": 403
+  },
+  "db-dashboard-widget-add.png": {
+    "width": 600,
+    "height": 607
+  },
+  "db-dashboard-widget-move.png": {
+    "width": 1200,
+    "height": 524
+  },
+  "db-dashboard-widget-remove-en.png": {
+    "width": 600,
+    "height": 344
+  },
+  "db-dashboard-widget-remove-ja.png": {
+    "width": 600,
+    "height": 344
+  },
+  "db-dashboard-widget-remove.png": {
+    "width": 600,
+    "height": 344
+  },
+  "db-dashboard-widget-resize.png": {
+    "width": 1200,
+    "height": 525
   },
   "db-database-parameter-basic.png": {
     "width": 1200,
@@ -4183,6 +4291,14 @@
     "width": 1072,
     "height": 549
   },
+  "db-install-agent-run-setup-complete.png": {
+    "width": 1187,
+    "height": 1015
+  },
+  "db-install-agent-run-setup.png": {
+    "width": 1280,
+    "height": 343
+  },
   "db-instance-list-cubrid-en.png": {
     "width": 1200,
     "height": 288
@@ -4241,15 +4357,15 @@
   },
   "db-instance-list-redis-en.png": {
     "width": 1200,
-    "height": 189
+    "height": 342
   },
   "db-instance-list-redis-ja.png": {
     "width": 1200,
-    "height": 189
+    "height": 342
   },
   "db-instance-list-redis.png": {
     "width": 1200,
-    "height": 190
+    "height": 342
   },
   "db-instance-list-replication-warning-en.png": {
     "width": 800,
@@ -4364,16 +4480,16 @@
     "height": 1035
   },
   "db-instance-monitoring-redis-en.png": {
-    "width": 1201,
-    "height": 908
+    "width": 1200,
+    "height": 853
   },
   "db-instance-monitoring-redis-ja.png": {
     "width": 1200,
-    "height": 908
+    "height": 853
   },
   "db-instance-monitoring-redis.png": {
     "width": 1200,
-    "height": 908
+    "height": 853
   },
   "db-instance-monitoring-seltime-mysql-en.png": {
     "width": 1200,
@@ -4398,6 +4514,18 @@
   "db-instance-monitoring-seltime-postgresql.png": {
     "width": 1200,
     "height": 1035
+  },
+  "db-instance-monitoring-seltime-redis-en.png": {
+    "width": 1200,
+    "height": 870
+  },
+  "db-instance-monitoring-seltime-redis-ja.png": {
+    "width": 1200,
+    "height": 870
+  },
+  "db-instance-monitoring-seltime-redis.png": {
+    "width": 1200,
+    "height": 870
   },
   "db-instance-monitoring-tibero-en.png": {
     "width": 1200,
@@ -4587,6 +4715,18 @@
     "width": 1200,
     "height": 1035
   },
+  "db-metrics-select-redis-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-metrics-select-redis-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-metrics-select-redis.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "db-multi-instance-cubrid-en.png": {
     "width": 1200,
     "height": 1058
@@ -4653,11 +4793,11 @@
   },
   "db-multi-instance-mysql-en.png": {
     "width": 1200,
-    "height": 1035
+    "height": 668
   },
   "db-multi-instance-mysql-ja.png": {
     "width": 1200,
-    "height": 1035
+    "height": 668
   },
   "db-multi-instance-mysql-rds.png": {
     "width": 1229,
@@ -4669,7 +4809,7 @@
   },
   "db-multi-instance-mysql.png": {
     "width": 1200,
-    "height": 1035
+    "height": 668
   },
   "db-multi-instance-oracle-en.png": {
     "width": 1200,
@@ -4685,11 +4825,11 @@
   },
   "db-multi-instance-postgresql-en.png": {
     "width": 1200,
-    "height": 1030
+    "height": 668
   },
   "db-multi-instance-postgresql-ja.png": {
     "width": 1200,
-    "height": 1030
+    "height": 668
   },
   "db-multi-instance-postgresql-v1.png": {
     "width": 1231,
@@ -4697,19 +4837,19 @@
   },
   "db-multi-instance-postgresql.png": {
     "width": 1200,
-    "height": 1030
+    "height": 668
   },
   "db-multi-instance-redis-en.png": {
     "width": 1200,
-    "height": 915
+    "height": 668
   },
   "db-multi-instance-redis-ja.png": {
     "width": 1200,
-    "height": 915
+    "height": 668
   },
   "db-multi-instance-redis.png": {
     "width": 1200,
-    "height": 915
+    "height": 668
   },
   "db-multi-instance.png": {
     "width": 1230,
@@ -4810,6 +4950,18 @@
   "db-select-count.png": {
     "width": 1200,
     "height": 1042
+  },
+  "db-session-details-info-en.png": {
+    "width": 1201,
+    "height": 840
+  },
+  "db-session-details-info-ja.png": {
+    "width": 1201,
+    "height": 841
+  },
+  "db-session-details-info.png": {
+    "width": 1200,
+    "height": 841
   },
   "db-session-history-01-en.png": {
     "width": 1200,
@@ -5503,6 +5655,34 @@
     "width": 886,
     "height": 349
   },
+  "flexboard-check-projects-en.png": {
+    "width": 1200,
+    "height": 48
+  },
+  "flexboard-check-projects-ja.png": {
+    "width": 1200,
+    "height": 51
+  },
+  "flexboard-check-projects.png": {
+    "width": 1200,
+    "height": 50
+  },
+  "flexboard-compare-sharing-copy.png": {
+    "width": 1699,
+    "height": 811
+  },
+  "flexboard-copy2others-en.png": {
+    "width": 600,
+    "height": 426
+  },
+  "flexboard-copy2others-ja.png": {
+    "width": 600,
+    "height": 429
+  },
+  "flexboard-copy2others.png": {
+    "width": 600,
+    "height": 427
+  },
   "flexboard-datamerge-en.png": {
     "width": 800,
     "height": 350
@@ -5589,15 +5769,15 @@
   },
   "flexboard-share-03-en.png": {
     "width": 600,
-    "height": 229
+    "height": 240
   },
   "flexboard-share-03-ja.png": {
     "width": 600,
-    "height": 231
+    "height": 240
   },
   "flexboard-share-03.png": {
     "width": 600,
-    "height": 231
+    "height": 240
   },
   "flexboard-share-04-en.png": {
     "width": 400,
@@ -5633,7 +5813,7 @@
   },
   "flexboard-share-06.png": {
     "width": 600,
-    "height": 427
+    "height": 429
   },
   "flexboard-template-en.png": {
     "width": 1200,
@@ -6373,27 +6553,27 @@
   },
   "k8s-app-list-detail-en.png": {
     "width": 1200,
-    "height": 678
+    "height": 656
   },
   "k8s-app-list-detail-ja.png": {
     "width": 1200,
-    "height": 676
+    "height": 656
   },
   "k8s-app-list-detail.png": {
     "width": 1200,
-    "height": 686
+    "height": 663
   },
   "k8s-app-list-en.png": {
     "width": 1200,
-    "height": 437
+    "height": 515
   },
   "k8s-app-list-ja.png": {
     "width": 1200,
-    "height": 437
+    "height": 515
   },
   "k8s-app-list.png": {
     "width": 1200,
-    "height": 438
+    "height": 515
   },
   "k8s-application-accesskey-en.png": {
     "width": 1200,
@@ -6615,6 +6795,22 @@
     "width": 870,
     "height": 576
   },
+  "k8s-container-map-unified-en.png": {
+    "width": 1200,
+    "height": 713
+  },
+  "k8s-container-map-unified-ja.png": {
+    "width": 1200,
+    "height": 712
+  },
+  "k8s-container-map-unified-whatapproject.png": {
+    "width": 1301,
+    "height": 585
+  },
+  "k8s-container-map-unified.png": {
+    "width": 1200,
+    "height": 711
+  },
   "k8s-container-map.png": {
     "width": 1205,
     "height": 1195
@@ -6686,6 +6882,42 @@
   "k8s-cor-tbv.png": {
     "width": 1221,
     "height": 906
+  },
+  "k8s-deployment-list-cl-en.png": {
+    "width": 421,
+    "height": 477
+  },
+  "k8s-deployment-list-cl-ja.png": {
+    "width": 446,
+    "height": 473
+  },
+  "k8s-deployment-list-cl.png": {
+    "width": 390,
+    "height": 472
+  },
+  "k8s-deployment-list-detail-en.png": {
+    "width": 1200,
+    "height": 662
+  },
+  "k8s-deployment-list-detail-ja.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "k8s-deployment-list-detail.png": {
+    "width": 1200,
+    "height": 661
+  },
+  "k8s-deployment-list-en.png": {
+    "width": 1200,
+    "height": 480
+  },
+  "k8s-deployment-list-ja.png": {
+    "width": 1200,
+    "height": 480
+  },
+  "k8s-deployment-list.png": {
+    "width": 1200,
+    "height": 485
   },
   "k8s-download-yaml-en.png": {
     "width": 465,
@@ -6938,6 +7170,54 @@
   "k8s-pod-list.png": {
     "width": 1200,
     "height": 611
+  },
+  "k8s-pod-startup-analysis-30days-en.png": {
+    "width": 633,
+    "height": 41
+  },
+  "k8s-pod-startup-analysis-30days-ja.png": {
+    "width": 641,
+    "height": 40
+  },
+  "k8s-pod-startup-analysis-30days.png": {
+    "width": 600,
+    "height": 46
+  },
+  "k8s-pod-startup-analysis-details-en.png": {
+    "width": 800,
+    "height": 496
+  },
+  "k8s-pod-startup-analysis-details-ja.png": {
+    "width": 800,
+    "height": 468
+  },
+  "k8s-pod-startup-analysis-details-restart-count-en.png": {
+    "width": 800,
+    "height": 146
+  },
+  "k8s-pod-startup-analysis-details-restart-count-ja.png": {
+    "width": 800,
+    "height": 130
+  },
+  "k8s-pod-startup-analysis-details-restart-count.png": {
+    "width": 800,
+    "height": 131
+  },
+  "k8s-pod-startup-analysis-details.png": {
+    "width": 800,
+    "height": 468
+  },
+  "k8s-pod-startup-analysis-en.png": {
+    "width": 1201,
+    "height": 751
+  },
+  "k8s-pod-startup-analysis-ja.png": {
+    "width": 1201,
+    "height": 751
+  },
+  "k8s-pod-startup-analysis.png": {
+    "width": 1201,
+    "height": 689
   },
   "k8s-resource-cl-sum-ci-en.png": {
     "width": 1200,
@@ -9607,6 +9887,18 @@
     "width": 1200,
     "height": 397
   },
+  "new-feature-01-redis-en.png": {
+    "width": 1200,
+    "height": 636
+  },
+  "new-feature-01-redis-ja.png": {
+    "width": 1200,
+    "height": 636
+  },
+  "new-feature-01-redis.png": {
+    "width": 1200,
+    "height": 636
+  },
   "new-feature-01.png": {
     "width": 1200,
     "height": 423
@@ -9632,6 +9924,18 @@
     "height": 1034
   },
   "new-feature-02-postgresql.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-redis-en.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-redis-ja.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-redis.png": {
     "width": 2309,
     "height": 1034
   },
@@ -9662,6 +9966,18 @@
   "new-feature-03-postgresql.png": {
     "width": 1200,
     "height": 438
+  },
+  "new-feature-03-redis-en.png": {
+    "width": 1200,
+    "height": 420
+  },
+  "new-feature-03-redis-ja.png": {
+    "width": 1200,
+    "height": 420
+  },
+  "new-feature-03-redis.png": {
+    "width": 1200,
+    "height": 420
   },
   "new-feature-03.png": {
     "width": 1672,
@@ -10417,7 +10733,7 @@
   },
   "project-organize-manage.png": {
     "width": 609,
-    "height": 620
+    "height": 365
   },
   "project-select-group-en.png": {
     "width": 594,
@@ -12053,7 +12369,7 @@
   },
   "sso-check-sso-info.png": {
     "width": 800,
-    "height": 397
+    "height": 377
   },
   "sso-delete-sso-key-en.png": {
     "width": 600,
@@ -12086,6 +12402,10 @@
   "sso-register-metadata-ja.png": {
     "width": 800,
     "height": 556
+  },
+  "sso-register-metadata.png": {
+    "width": 800,
+    "height": 513
   },
   "sso-service-key-en.png": {
     "width": 699,
