@@ -53829,6 +53829,20 @@
     "zh": "Overwriting does not allow the replacement event to be recovered.",
     "service_id": "CNT07811"
   },
+  "TTL07812": {
+    "en": "Announcement of new multi-instance dashboard features",
+    "ja": "マルチインスタンスダッシュボードの新機能ガイド",
+    "ko": "멀티 인스턴스 대시보드 신규 기능 안내",
+    "zh": "Announcement of new multi-instance dashboard features",
+    "service_id": "TTL07812"
+  },
+  "CNT07813": {
+    "en": "New features have been added to the Multi-Instance Dashboard.",
+    "ja": "マルチインスタンスダッシュボードに新機能が追加されました。",
+    "ko": "멀티 인스턴스 대시보드에 새로운 기능이 추가되었습니다.",
+    "zh": "New features have been added to the Multi-Instance Dashboard.",
+    "service_id": "CNT07813"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -55612,6 +55626,11 @@
     "en": "AJAX Hitmap",
     "ja": "Ajaxヒットマップ",
     "ko": "AJAX 히트맵"
+  },
+  "side_userSessionEventSearch": {
+    "en": "User Session Log Search",
+    "ja": "ユーザーセッションログ検索",
+    "ko": "사용자 세션 로그 검색"
   },
   "side_logsinkCollectionStatus": {
     "en": "Log Collection Status",
