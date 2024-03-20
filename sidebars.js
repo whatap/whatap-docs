@@ -2638,10 +2638,8 @@ const sidebars = {
             id: 'mongodb/agent-settings'
           },
           items: [
-            'mongodb/agent-network',
-            'mongodb/agent-naming',
-            'mongodb/agent-aws',
-            'mongodb/agent-data',
+            'mongodb/agent-dbx-settings',
+            'mongodb/agent-xos-settings',
           ],
         },
         'mongodb/agent-manage',
@@ -2653,7 +2651,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2687,6 +2685,16 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mongodb/analysis-count-trend',
+                'mongodb/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2702,13 +2710,13 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'mongodb/analysis-function',
-                'mongodb/stat',
-              ]
+                'mongodb/database-size',
+                'mongodb/report-intro'
+              ],
             },
             {
               type: 'category',
