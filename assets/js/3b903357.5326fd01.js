@@ -1134,7 +1134,7 @@ disk_usage_interval=60
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Read requests(/s)`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, `Read requests`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, `초당 읽기 요청 수를 측정한 위젯입니다. 읽기 요청은 데이터베이스에서 데이터를 조회하거나 검색하는 쿼리, 집계 작업, 인덱스 스캔 등과 관련한 작업입니다. 데이터베이스의 사용 패턴의 변화를 감지하는데 유용합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", {
         parentName: "li"
@@ -1152,7 +1152,7 @@ disk_usage_interval=60
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Write requests(/s)`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, `Write requests`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, `초당 쓰기 요청 수를 측정한 위젯입니다. 쓰기 요청은 데이터베이스에 새로운 데이터를 추가하거나 업데이트, 삭제와 관련한 작업입니다. 데이터베이스의 사용 패턴의 변화를 감지하는데 유용합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", {
         parentName: "li"
