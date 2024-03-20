@@ -4795,7 +4795,19 @@ const sidebars = {
             'browser/browser-preset',
           ],
         },
-        'browser/apply-agent',
+        {
+          type: 'category',
+          label: '브라우저 에이전트 적용',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'browser/apply-agent'
+          },
+          items: [
+            'browser/collect-custom-events'
+          ],
+        },
         'browser/before-starting',
         {
           type: 'category',
