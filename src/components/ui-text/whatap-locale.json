@@ -33411,9 +33411,9 @@
     "service_id": "DSC04852"
   },
   "alert_config_jandi_step2": {
-    "en": "{key}is added.",
-    "ja": "{key}を追加しました。",
-    "ko": "{key}is added.",
+    "en": "Press the Add Incoming Webhook button.",
+    "ja": "Webhook受信追加ボタンを押してください。",
+    "ko": "Webhook 수신 추가 버튼을 눌러주세요.",
     "zh": "Press the Add Incoming Webhook button.",
     "service_id": "DSC04853"
   },
@@ -53599,59 +53599,59 @@
     "service_id": "DSC07778"
   },
   "DSC07779": {
-    "en": "Search for\bevents that match a regular expression.",
+    "en": "Search for events that match a regular expression.",
     "ja": "正規表現と一致するイベントを検索します。",
     "ko": "정규표현식에 매칭되는 이벤트를 검색합니다.",
-    "zh": "Search for \bevents that match a regular expression.",
+    "zh": "Search for events that match a regular expression.",
     "service_id": "DSC07779"
   },
   "DSC07780": {
     "en": "Search all events matching the search key.",
-    "ja": "検索キーに一致するすべてのイベントを検索します。",
+    "ja": "検索キーに該当するすべてのイベントを検索します。",
     "ko": "검색 키에 해당하는 모든 이벤트를 검색합니다.",
     "zh": "Search all events matching the search key.",
     "service_id": "DSC07780"
   },
   "DSC07781": {
     "en": "Search for events that are included in the middle with search values.",
-    "ja": "検索値で、中間に含まれるイベントを検索します。",
+    "ja": "検索値を間に含むイベントを検索します。",
     "ko": "검색 값으로 중간에 포함된 이벤트를 검색합니다.",
     "zh": "Search for events that are included in the middle with search values.",
     "service_id": "DSC07781"
   },
   "DSC07782": {
-    "en": "Search for\bevents containing values ​​greater than the search value.",
-    "ja": "検索値よりも大きい値を含むイベントを検索します。",
+    "en": "Search for events containing values ​​greater than the search value.",
+    "ja": "検索値より大きい値を含むイベントを検索します。",
     "ko": "검색 값보다 큰 값이 포함된 이벤트를 조회합니다.",
-    "zh": "Search for \bevents containing values ​​greater than the search value.",
+    "zh": "Search for events containing values ​​greater than the search value.",
     "service_id": "DSC07782"
   },
   "DSC07783": {
-    "en": "Search for\bevents containing values ​​greater than or equal to the search value.",
+    "en": "Search for events containing values ​​greater than or equal to the search value.",
     "ja": "検索値以上の値を含むイベントを検索します。",
     "ko": "검색 값보다 크거나 같은 값이 포함된 이벤트를 조회합니다.",
-    "zh": "Search for \bevents containing values ​​greater than or equal to the search value.",
+    "zh": "Search for events containing values ​​greater than or equal to the search value.",
     "service_id": "DSC07783"
   },
   "DSC07784": {
-    "en": "Search for\bevents with the same value as the search value.",
+    "en": "Search for events with the same value as the search value.",
     "ja": "検索値と同じ値を持つイベントを検索します。",
     "ko": "검색 값과 같은 값을 가진 이벤트를 조회합니다.",
-    "zh": "Search for \bevents with the same value as the search value.",
+    "zh": "Search for events with the same value as the search value.",
     "service_id": "DSC07784"
   },
   "DSC07785": {
-    "en": "Search for\bevents containing values ​​different from the searched value.",
-    "ja": "検索された値と異なる値を含むイベントを検索します。",
+    "en": "Search for events containing values ​​different from the searched value.",
+    "ja": "検索値と異なる値を含むイベントを検索します。",
     "ko": "검색 값과 다른 값이 포함된 이벤트를 조회합니다.",
-    "zh": "Search for\bevents containing values ​​different from the searched value.",
+    "zh": "Search for events containing values ​​different from the searched value.",
     "service_id": "DSC07785"
   },
   "DSC07786": {
-    "en": "Search for\bevents that contain values ​​less than the search value.",
-    "ja": "検索値よりも小さい値を含むイベントを検索します。",
+    "en": "Search for events that contain values ​​less than the search value.",
+    "ja": "検索値より小さい値を含むイベントを検索します。",
     "ko": "검색 값보다 작은 값이 포함된 이벤트를 조회합니다.",
-    "zh": "Search for\bevents that contain values ​​less than the search value.",
+    "zh": "Search for events that contain values ​​less than the search value.",
     "service_id": "DSC07786"
   },
   "DSC07787": {
@@ -53669,11 +53669,221 @@
     "service_id": "NTC07788"
   },
   "NTC07789": {
-    "en": "Property ${eventTabKey} does not exist.",
-    "ja": "${event TabKey}プロパティがありません。",
-    "ko": "${eventTabKey} 속성이 없습니다.",
-    "zh": "Property ${eventTabKey} does not exist.",
+    "en": "Property {propertyKey} does not exist.",
+    "ja": "{propertyKey}プロパティがありません。",
+    "ko": "{propertyKey} 속성이 없습니다.",
+    "zh": "Property {propertyKey} does not exist.",
     "service_id": "NTC07789"
+  },
+  "DSC07790": {
+    "en": "The CPU utilization of ${oname} is ${cpu(xos)}.",
+    "ja": "${oname}のCPU使用率が${cpu(xos)}です。",
+    "ko": "${oname}의 CPU 사용률이 ${cpu(xos)}입니다.",
+    "zh": "The CPU utilization of ${oname} is ${cpu(xos)}.",
+    "service_id": "DSC07790"
+  },
+  "BTN07791": {
+    "en": "View only selected {target}",
+    "ja": "選択した{target}のみを表示",
+    "ko": "선택된 {target}만 표시",
+    "zh": "View only selected {target}",
+    "service_id": "BTN07791"
+  },
+  "ITM07792": {
+    "en": "Show {object} created in less than 1 minute",
+    "ja": "1分以内に生成された{object}を表示する",
+    "ko": "1분 내 생성된 {object} 표시하기",
+    "zh": "Show {object} created in less than 1 minute",
+    "service_id": "ITM07792"
+  },
+  "NTC07793": {
+    "en": "\"{ruleKey}\" requires \"{expectedValueType}\" type value, not \"{eventValueType}\" type.",
+    "ja": "「{ruleKey}」には、「{eventValueType}」タイプではなく、「{expectedValueType}」タイプの値が必要です。",
+    "ko": "\"{ruleKey}\"에는 \"{eventValueType}\" 유형이 아닌 \"{expectedValueType}\" 유형 값이 필요합니다.",
+    "zh": "\"{ruleKey}\" requires \"{expectedValueType}\" type value, not \"{eventValueType}\" type.",
+    "service_id": "NTC07793"
+  },
+  "NTC07794": {
+    "en": "{eventType} event requires a {dataType} type value.",
+    "ja": "{eventType}イベントには、{dataType}タイプの値が必要です。",
+    "ko": "{eventType}이벤트는 {dataType}유형 값이 필요합니다.",
+    "zh": "{eventType} event requires a {dataType} type value.",
+    "service_id": "NTC07794"
+  },
+  "BTN07795": {
+    "en": "Keeping child widgets",
+    "ja": "サブウィジェット維持",
+    "ko": "하위 위젯 유지",
+    "zh": "Keeping child widgets",
+    "service_id": "BTN07795"
+  },
+  "NTC07796": {
+    "en": "File download failed.",
+    "ja": "ファイルのダウンロードに失敗しました。\n",
+    "ko": "파일 다운로드에 실패했습니다.",
+    "zh": "File download failed.",
+    "service_id": "NTC07796"
+  },
+  "TTL07797": {
+    "en": "Application Featured Widget Group",
+    "ja": "アプリケーション推奨ウィジェットグループ",
+    "ko": "애플리케이션 추천 위젯 그룹",
+    "zh": "Application Featured Widget Group",
+    "service_id": "TTL07797"
+  },
+  "TTL07798": {
+    "en": "Server Featured Widget Group",
+    "ja": "サーバー推奨ウィジェットグループ",
+    "ko": "서버 추천 위젯 그룹",
+    "zh": "Server Featured Widget Group",
+    "service_id": "TTL07798"
+  },
+  "TTL07799": {
+    "en": "MySQL Featured Widget Groups (RDS)",
+    "ja": "MySQL推薦ウィジェットグループ（RDS）",
+    "ko": "MySQL 추천 위젯 그룹 (RDS)",
+    "zh": "MySQL Featured Widget Groups (RDS)",
+    "service_id": "TTL07799"
+  },
+  "TTL07800": {
+    "en": "MySQL Featured Widget Group (XOS)",
+    "ja": "MySQL推薦ウィジェットグループ（XOS）",
+    "ko": "MySQL 추천 위젯 그룹 (XOS)",
+    "zh": "MySQL Featured Widget Group (XOS)",
+    "service_id": "TTL07800"
+  },
+  "NTC07801": {
+    "en": "Overwrite failed.",
+    "ja": "上書きに失敗しました。",
+    "ko": "덮어쓰기가 실패했습니다.",
+    "zh": "Overwrite failed.",
+    "service_id": "NTC07801"
+  },
+  "DSC07802": {
+    "en": "If the data is not available, please check the agent version (version {version} or higher).",
+    "ja": "データが表示されない場合は、エージェントのバージョン（{version}以降）を確認してください。",
+    "ko": "데이터가 나오지 않은 경우, 에이전트 버전({version} 버전 이상)을 확인해주세요.",
+    "zh": "If the data is not available, please check the agent version (version {version} or higher).",
+    "service_id": "DSC07802"
+  },
+  "TTL07803": {
+    "en": "PostgreSQL Featured Widget Groups (RDS)",
+    "ja": "PostgreSQL推薦ウィジェットグループ（RDS）",
+    "ko": "PostgreSQL 추천 위젯 그룹 (RDS)",
+    "zh": "PostgreSQL Featured Widget Groups (RDS)",
+    "service_id": "TTL07803"
+  },
+  "TTL07804": {
+    "en": "PostgreSQL Featured Widget Group (XOS)",
+    "ja": "PostgreSQL推薦ウィジェットグループ（XOS）",
+    "ko": "PostgreSQL 추천 위젯 그룹 (XOS)",
+    "zh": "PostgreSQL Featured Widget Group (XOS)",
+    "service_id": "TTL07804"
+  },
+  "TLT07805": {
+    "en": "Projects selected in the Group Widget",
+    "ja": "グループウィジェットに選択されたプロジェクト",
+    "ko": "그룹 위젯에 선택된 프로젝트",
+    "zh": "Projects selected in the Group Widget",
+    "service_id": "TLT07805"
+  },
+  "DSC07806": {
+    "en": "Overage",
+    "ja": "オーバーエイジ",
+    "ko": "사용량 초과",
+    "zh": "Overage",
+    "service_id": "DSC07806"
+  },
+  "DSC07807": {
+    "en": "Log usage overages",
+    "ja": "使用量超過のログ",
+    "ko": "로그 사용량 초과",
+    "zh": "Log usage overages",
+    "service_id": "DSC07807"
+  },
+  "DSC07808": {
+    "en": "No usage information",
+    "ja": "利用情報なし",
+    "ko": "사용량 정보 없음",
+    "zh": "No usage information",
+    "service_id": "DSC07808"
+  },
+  "DSC07809": {
+    "en": "Never check license",
+    "ja": "免許証を確認しない",
+    "ko": "라이선스 확인 안 함",
+    "zh": "Never check license",
+    "service_id": "DSC07809"
+  },
+  "TTL07810": {
+    "en": "Do you want to overwrite?",
+    "ja": "上書きしますか？",
+    "ko": "덮어쓰기 하시겠습니까?",
+    "zh": "Do you want to overwrite?",
+    "service_id": "TTL07810"
+  },
+  "CNT07811": {
+    "en": "Overwriting does not allow the replacement event to be recovered.",
+    "ja": "上書きすると、置き換えられたイベントは修復できません。",
+    "ko": "덮어쓰기하면 대체된 이벤트는 복구 할 수 없습니다. ",
+    "zh": "Overwriting does not allow the replacement event to be recovered.",
+    "service_id": "CNT07811"
+  },
+  "TTL07812": {
+    "en": "Announcement of new multi-instance dashboard features",
+    "ja": "マルチインスタンスダッシュボードの新機能ガイド",
+    "ko": "멀티 인스턴스 대시보드 신규 기능 안내",
+    "zh": "Announcement of new multi-instance dashboard features",
+    "service_id": "TTL07812"
+  },
+  "CNT07813": {
+    "en": "New features have been added to the Multi-Instance Dashboard.",
+    "ja": "マルチインスタンスダッシュボードに新機能が追加されました。",
+    "ko": "멀티 인스턴스 대시보드에 새로운 기능이 추가되었습니다.",
+    "zh": "New features have been added to the Multi-Instance Dashboard.",
+    "service_id": "CNT07813"
+  },
+  "NTC07814": {
+    "en": "The productType value ({JsonProductType}) is different from the productType ({productType}) of the project.",
+    "ja": "product Type値({JsonProductType})がプロジェクトのproduct Type({productType})と異なります。\n",
+    "ko": "productType값({JsonProductType})이 프로젝트의 productType({productType})과 다릅니다.",
+    "zh": "The productType value ({JsonProductType}) is different from the productType ({productType}) of the project.",
+    "service_id": "NTC07814"
+  },
+  "NTC07815": {
+    "en": "The platform value ({JsonPlatformType}) is different from the platform ({platform}) of the current project.",
+    "ja": "platform値({JsonPlatformType})が現在のプロジェクトのplatform({platform})と異なります。",
+    "ko": "platform값({JsonPlatformType})이 현재 프로젝트의 platform({platform})과 다릅니다.",
+    "zh": "The platform value ({JsonPlatformType}) is different from the platform ({platform}) of the current project.",
+    "service_id": "NTC07815"
+  },
+  "CNT07816": {
+    "en": "<span style='font-weight: bold'>Past viewpoint inquiry</span>: Dashboard data can be viewed by switching between real-time and past viewpoints",
+    "ja": "<span style='font-weight: bold'>過去の視点を表示</span>：リアルタイムと過去の視点を切り替え、ダッシュボードのデータを閲覧可能",
+    "ko": "<span style='font-weight: bold'>과거 시점 조회</span> : 실시간과 과거 시점을 전환하며 대시보드 데이터 조회 가능",
+    "zh": "<span style='font-weight: bold'>Past viewpoint inquiry</span>: Dashboard data can be viewed by switching between real-time and past viewpoints",
+    "service_id": "CNT07816"
+  },
+  "CNT07817": {
+    "en": "<span style='font-weight: bold'>Edit widget</span>: Add, delete, and change position of chart widget (right-click)",
+    "ja": "<span style='font-weight: bold'>ウィジェットを編集</span>：チャートウィジェットを追加、削除、位置変更可能（マウス右クリック）",
+    "ko": "<span style='font-weight: bold'>위젯 편집</span> : 차트 위젯을 추가, 삭제, 위치 변경 가능 (마우스 우클릭)",
+    "zh": "<span style='font-weight: bold'>Edit widget</span>: Add, delete, and change position of chart widget (right-click)",
+    "service_id": "CNT07817"
+  },
+  "CNT07818": {
+    "en": "<span style='font-weight: bold'>Save preset</span>: Save the dashboard changed through the widget editing function through the preset function.",
+    "ja": "<span style='font-weight: bold'>プリセットを保存</span>：ウィジェット編集機能で変更したダッシュボードをプリセット機能で保存",
+    "ko": "<span style='font-weight: bold'>프리셋 저장</span> : 위젯 편집기능을 통해 변경한 대시보드를 프리셋 기능을 통해 저장",
+    "zh": "<span style='font-weight: bold'>Save preset</span>: Save the dashboard changed through the widget editing function through the preset function.",
+    "service_id": "CNT07818"
+  },
+  "DSC07819": {
+    "en": "The new feature will <b>be applied to the service</b> and be available starting March 27.\nFor more details, check out the WhaTap Docs below!",
+    "ja": "新機能は<b> 3月27日からサービスに適用</b>されて利用可能です。\n詳細については、以下のWhaTap Docsで確認してください！",
+    "ko": "신규 기능은 <b>3월 27일부터 서비스에 적용</b>되어 이용이 가능합니다.\n보다 자세한 내용은 아래 WhaTap Docs를 통해 확인해보세요!",
+    "zh": "The new feature will <b>be applied to the service</b> and be available starting March 27.\nFor more details, check out the WhaTap Docs below!",
+    "service_id": "DSC07819"
   },
   "": {
     "": "",
@@ -54100,6 +54310,11 @@
     "en": "Transaction",
     "ja": "トランザクション",
     "ko": "트랜잭션"
+  },
+  "side_statServicePercentile": {
+    "en": "Transaction Percentile",
+    "ja": "Transaction Percentile",
+    "ko": "트랜잭션 백분위"
   },
   "side_txStat": {
     "en": "Transaction Statistics",
@@ -54891,7 +55106,7 @@
   },
   "side_namespaceStatus": {
     "en": "Namespace Status",
-    "ja": "ネームスペース現況",
+    "ja": "ネームスペース状況",
     "ko": "네임스페이스 현황"
   },
   "side_serviceDashboardOld": {
@@ -55454,6 +55669,11 @@
     "ja": "Ajaxヒットマップ",
     "ko": "AJAX 히트맵"
   },
+  "side_userSessionEventSearch": {
+    "en": "User Session Log Search",
+    "ja": "ユーザーセッションログ検索",
+    "ko": "사용자 세션 로그 검색"
+  },
   "side_logsinkCollectionStatus": {
     "en": "Log Collection Status",
     "ja": "ログ収集状況",
@@ -55488,6 +55708,11 @@
     "en": "Kubernetes Agent List",
     "ja": "Kubernetesエージェントリスト",
     "ko": "쿠버네티스 에이전트 목록"
+  },
+  "side_kubeApiserverMetricsSearch": {
+    "en": "kube-apiserver Metrics Search",
+    "ja": "kube-apiserver メトリクス照会",
+    "ko": "kube-apiserver 메트릭스 조회"
   },
   "side_deploymentList": {
     "en": "Deployment List",
