@@ -2577,6 +2577,11 @@ const sidebars = {
               },
               items: [
                 'redis/metric-warning-notice',
+                {
+                  type: 'doc',
+                  id: 'redis/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
@@ -2717,6 +2722,11 @@ const sidebars = {
               },
               items: [
                 'mongodb/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mongodb/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'mongodb/metric-warning-notice',
                 'mongodb/set-notification-message',
                 'mongodb/set-event-detect-anomal',
