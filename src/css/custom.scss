@@ -1782,6 +1782,29 @@ main {
         }
       }
     }
+    .k8s-values-yaml-table {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 55%;
+            }
+            &:nth-of-type(2) {
+              width: 5%;
+            }
+            &:nth-of-type(3) {
+              width: 25%;
+            }
+            &:last-of-type {
+              width: 25%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
     .weaving-table {
       table {
         th {
