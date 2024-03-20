@@ -5150,6 +5150,7 @@ const sidebars = {
             'kubernetes/create-name-space-project'
           ]
         },
+        'kubernetes/agent-troubleshooting',
         'kubernetes/set-agent',
         {
           type: 'category',
