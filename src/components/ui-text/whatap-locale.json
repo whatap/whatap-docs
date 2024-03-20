@@ -53669,10 +53669,10 @@
     "service_id": "NTC07788"
   },
   "NTC07789": {
-    "en": "Property {eventTabKey} does not exist.",
-    "ja": "{event TabKey}プロパティがありません。",
-    "ko": "{eventTabKey} 속성이 없습니다.",
-    "zh": "Property {eventTabKey} does not exist.",
+    "en": "Property {propertyKey} does not exist.",
+    "ja": "{propertyKey}プロパティがありません。",
+    "ko": "{propertyKey} 속성이 없습니다.",
+    "zh": "Property {propertyKey} does not exist.",
     "service_id": "NTC07789"
   },
   "DSC07790": {
@@ -53697,10 +53697,10 @@
     "service_id": "ITM07792"
   },
   "NTC07793": {
-    "en": "\"{ruleKey}\" requires \"{expectedValueType}\" type value, not \"{eventValueType}\" type.",
-    "ja": "「{ruleKey}」には、「{eventValueType}」タイプではなく、「{expectedValueType}」タイプの値が必要です。",
-    "ko": "\"{ruleKey}\"에는 \"{eventValueType}\" 유형이 아닌 \"{expectedValueType}\" 유형 값이 필요합니다.",
-    "zh": "\"{ruleKey}\" requires \"{expectedValueType}\" type value, not \"{eventValueType}\" type.",
+    "en": "\"{ruleKey}\" requires \"{expectedValueType}\" type value, not \"{valueType}\" type.",
+    "ja": "「{ruleKey}」には、「{valueType}」タイプではなく、「{expectedValueType}」タイプの値が必要です。",
+    "ko": "\"{ruleKey}\"에는 \"{valueType}\" 유형이 아닌 \"{expectedValueType}\" 유형 값이 필요합니다.",
+    "zh": "\"{ruleKey}\" requires \"{expectedValueType}\" type value, not \"{valueType}\" type.",
     "service_id": "NTC07793"
   },
   "NTC07794": {
@@ -53842,6 +53842,48 @@
     "ko": "멀티 인스턴스 대시보드에 새로운 기능이 추가되었습니다.",
     "zh": "New features have been added to the Multi-Instance Dashboard.",
     "service_id": "CNT07813"
+  },
+  "NTC07814": {
+    "en": "The productType value ({JsonProductType}) is different from the productType ({productType}) of the project.",
+    "ja": "product Type値({JsonProductType})がプロジェクトのproduct Type({productType})と異なります。\n",
+    "ko": "productType값({JsonProductType})이 프로젝트의 productType({productType})과 다릅니다.",
+    "zh": "The productType value ({JsonProductType}) is different from the productType ({productType}) of the project.",
+    "service_id": "NTC07814"
+  },
+  "NTC07815": {
+    "en": "The platform value ({JsonPlatformType}) is different from the platform ({platform}) of the current project.",
+    "ja": "platform値({JsonPlatformType})が現在のプロジェクトのplatform({platform})と異なります。",
+    "ko": "platform값({JsonPlatformType})이 현재 프로젝트의 platform({platform})과 다릅니다.",
+    "zh": "The platform value ({JsonPlatformType}) is different from the platform ({platform}) of the current project.",
+    "service_id": "NTC07815"
+  },
+  "CNT07816": {
+    "en": "<span style='font-weight: bold'>Past viewpoint inquiry</span>: Dashboard data can be viewed by switching between real-time and past viewpoints",
+    "ja": "<span style='font-weight: bold'>過去の視点を表示</span>：リアルタイムと過去の視点を切り替え、ダッシュボードのデータを閲覧可能",
+    "ko": "<span style='font-weight: bold'>과거 시점 조회</span> : 실시간과 과거 시점을 전환하며 대시보드 데이터 조회 가능",
+    "zh": "<span style='font-weight: bold'>Past viewpoint inquiry</span>: Dashboard data can be viewed by switching between real-time and past viewpoints",
+    "service_id": "CNT07816"
+  },
+  "CNT07817": {
+    "en": "<span style='font-weight: bold'>Edit widget</span>: Add, delete, and change position of chart widget (right-click)",
+    "ja": "<span style='font-weight: bold'>ウィジェットを編集</span>：チャートウィジェットを追加、削除、位置変更可能（マウス右クリック）",
+    "ko": "<span style='font-weight: bold'>위젯 편집</span> : 차트 위젯을 추가, 삭제, 위치 변경 가능 (마우스 우클릭)",
+    "zh": "<span style='font-weight: bold'>Edit widget</span>: Add, delete, and change position of chart widget (right-click)",
+    "service_id": "CNT07817"
+  },
+  "CNT07818": {
+    "en": "<span style='font-weight: bold'>Save preset</span>: Save the dashboard changed through the widget editing function through the preset function.",
+    "ja": "<span style='font-weight: bold'>プリセットを保存</span>：ウィジェット編集機能で変更したダッシュボードをプリセット機能で保存",
+    "ko": "<span style='font-weight: bold'>프리셋 저장</span> : 위젯 편집기능을 통해 변경한 대시보드를 프리셋 기능을 통해 저장",
+    "zh": "<span style='font-weight: bold'>Save preset</span>: Save the dashboard changed through the widget editing function through the preset function.",
+    "service_id": "CNT07818"
+  },
+  "DSC07819": {
+    "en": "The new feature will <b>be applied to the service</b> and be available starting March 27.\nFor more details, check out the WhaTap Docs below!",
+    "ja": "新機能は<b> 3月27日からサービスに適用</b>されて利用可能です。\n詳細については、以下のWhaTap Docsで確認してください！",
+    "ko": "신규 기능은 <b>3월 27일부터 서비스에 적용</b>되어 이용이 가능합니다.\n보다 자세한 내용은 아래 WhaTap Docs를 통해 확인해보세요!",
+    "zh": "The new feature will <b>be applied to the service</b> and be available starting March 27.\nFor more details, check out the WhaTap Docs below!",
+    "service_id": "DSC07819"
   },
   "": {
     "": "",
