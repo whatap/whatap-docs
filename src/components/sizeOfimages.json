@@ -6851,6 +6851,18 @@
     "width": 1200,
     "height": 660
   },
+  "k8s-container-detail-list-selected-en.png": {
+    "width": 572,
+    "height": 97
+  },
+  "k8s-container-detail-list-selected-ja.png": {
+    "width": 576,
+    "height": 101
+  },
+  "k8s-container-detail-list-selected.png": {
+    "width": 573,
+    "height": 99
+  },
   "k8s-container-detail.png": {
     "width": 1200,
     "height": 660
