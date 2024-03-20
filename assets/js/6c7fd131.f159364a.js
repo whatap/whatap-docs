@@ -399,6 +399,11 @@ const toc = [
         value: 'YAML 파일이 없을 경우',
         id: 'yaml-파일이-없을-경우',
         level: 3
+    },
+    {
+        value: 'Helm 차트 기준 설치 시 에이전트 삭제',
+        id: 'helm-차트-기준-설치-시-에이전트-삭제',
+        level: 2
     }
 ];
 const layoutProps = {
@@ -638,7 +643,14 @@ kubectl delete clusterrole whatap
     }, `namespace "whatap-monitoring" deleted
 clusterrolebinding.rbac.authorization.k8s.io "whatap" deleted
 clusterrole.rbac.authorization.k8s.io "whatap" deleted
-`)))));
+`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "helm-차트-기준-설치-시-에이전트-삭제"
+    }, `Helm 차트 기준 설치 시 에이전트 삭제`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 명령어를 실행해 와탭 쿠버네티스 에이전트 애플리케이션을 삭제하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `# release 삭제
+helm uninstall whatap-kube-agent
+`)));
 }
 MDXContent.isMDXComponent = true;
 

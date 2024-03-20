@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[21719],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[52002],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 94225:
+/***/ 55911:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,74 +308,66 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'set-agent',
-    title: '설정하기',
-    description: '컨테이너 내 애플리케이션의 모니터링을 위해 필요 설정을 whatap.conf 파일에 작성합니다. 설정할 수 있는 옵션에 대해 알아봅니다.',
+    id: 'agent-troubleshooting',
+    title: '설치 문제 해결',
+    description: 'Java 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.',
+    hide_table_of_contents: true,
+    toc_max_heading_level: 2,
     tags: [
-        '쿠베네티스',
-        '쿠베네티스 모니터링',
-        '애플리케이션',
-        'Java',
-        'Python',
-        'Node.js',
-        'whatap.conf'
+        '쿠버네티스',
+        '쿠버네티스 모니터링',
+        'Troubleshooting',
+        '문제 해결',
+        'Helm 차트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/set-agent",
-    "id": "kubernetes/set-agent",
-    "title": "설정하기",
-    "description": "컨테이너 내 애플리케이션의 모니터링을 위해 필요 설정을 whatap.conf 파일에 작성합니다. 설정할 수 있는 옵션에 대해 알아봅니다.",
-    "source": "@site/docs/kubernetes/settings.mdx",
+    "unversionedId": "kubernetes/agent-troubleshooting",
+    "id": "kubernetes/agent-troubleshooting",
+    "title": "설치 문제 해결",
+    "description": "Java 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
+    "source": "@site/docs/kubernetes/agent-troubleshooting.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/set-agent",
-    "permalink": "/whatap-docs/kubernetes/set-agent",
+    "slug": "/kubernetes/agent-troubleshooting",
+    "permalink": "/whatap-docs/kubernetes/agent-troubleshooting",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/settings.mdx",
+    "editUrl": "undefined/docs/kubernetes/agent-troubleshooting.mdx",
     "tags": [
         {
-            "label": "쿠베네티스",
-            "permalink": "/whatap-docs/tags/쿠베네티스"
+            "label": "쿠버네티스",
+            "permalink": "/whatap-docs/tags/쿠버네티스"
         },
         {
-            "label": "쿠베네티스 모니터링",
-            "permalink": "/whatap-docs/tags/쿠베네티스-모니터링"
+            "label": "쿠버네티스 모니터링",
+            "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
         },
         {
-            "label": "애플리케이션",
-            "permalink": "/whatap-docs/tags/애플리케이션"
+            "label": "Troubleshooting",
+            "permalink": "/whatap-docs/tags/troubleshooting"
         },
         {
-            "label": "Java",
-            "permalink": "/whatap-docs/tags/java"
+            "label": "문제 해결",
+            "permalink": "/whatap-docs/tags/문제-해결"
         },
         {
-            "label": "Python",
-            "permalink": "/whatap-docs/tags/python"
-        },
-        {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
-        },
-        {
-            "label": "whatap.conf",
-            "permalink": "/whatap-docs/tags/whatap-conf"
+            "label": "Helm 차트",
+            "permalink": "/whatap-docs/tags/helm-차트"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "set-agent",
-        "title": "설정하기",
-        "description": "컨테이너 내 애플리케이션의 모니터링을 위해 필요 설정을 whatap.conf 파일에 작성합니다. 설정할 수 있는 옵션에 대해 알아봅니다.",
+        "id": "agent-troubleshooting",
+        "title": "설치 문제 해결",
+        "description": "Java 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
+        "hide_table_of_contents": true,
+        "toc_max_heading_level": 2,
         "tags": [
-            "쿠베네티스",
-            "쿠베네티스 모니터링",
-            "애플리케이션",
-            "Java",
-            "Python",
-            "Node.js",
-            "whatap.conf"
+            "쿠버네티스",
+            "쿠버네티스 모니터링",
+            "Troubleshooting",
+            "문제 해결",
+            "Helm 차트"
         ]
     },
     "sidebar": "kubeSidebar",
@@ -384,12 +376,33 @@ const metadata = {
         "permalink": "/whatap-docs/kubernetes/create-name-space-project"
     },
     "next": {
-        "title": "네임스페이스 관리",
-        "permalink": "/whatap-docs/kubernetes/namespace"
+        "title": "설정하기",
+        "permalink": "/whatap-docs/kubernetes/set-agent"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: 'Helm 차트 기준 설치 문제 해결',
+        id: 'troubleshooting-helm-chart',
+        level: 2
+    },
+    {
+        value: '이름이 <code>whatap</code> 다른 Helm 리포지토리가 있을 경우',
+        id: '이름이-whatap-다른-helm-리포지토리가-있을-경우',
+        level: 3
+    },
+    {
+        value: '이름이 <code>whatap-monitoring</code>인 다른 네임스페이스가 클러스터에 있을 경우',
+        id: '이름이-whatap-monitoring인-다른-네임스페이스가-클러스터에-있을-경우',
+        level: 3
+    },
+    {
+        value: '<code>clusterrole</code>, <code>clusterrolebinding</code> 리소스가 이미 클러스터에 있을 경우',
+        id: 'clusterrole-clusterrolebinding-리소스가-이미-클러스터에-있을-경우',
+        level: 3
+    }
+];
 const layoutProps = {
     toc
 };
@@ -401,32 +414,75 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `컨테이너 내 Java, Python, Node.js 등 애플리케이션의 모니터링을 위해 필요 설정을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "troubleshooting-helm-chart"
+    }, `Helm 차트 기준 설치 문제 해결`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", {
+        class: "faq"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "이름이-whatap-다른-helm-리포지토리가-있을-경우"
+    }, `이름이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `whatap`), ` 다른 Helm 리포지토리가 있을 경우`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+        parentName: "table"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
+        parentName: "thead"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
+        parentName: "tr",
+        "align": null
+    }, `"whatap" already exists with the same configuration, skipping`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `이미 동일한 이름의 다른 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `whatap.conf`), ` 파일에 작성합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `whatap`), ` 리포지토리가 존재할 경우 다음 명령어를 통해 기존 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `whatap.conf`), ` 파일을 통해 설정할 수 있는 옵션에 대한 자세한 내용은 다음 링크를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../java/set-agent"
-    }, `Java - whatap.conf 설정하기`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../nodejs/set-agent"
-    }, `Node.js - whatap.conf 설정하기`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../python/set-agent"
-    }, `Python - whatap.conf 설정하기`)))));
+    }, `whatap`), ` 리포지토리 삭제 후 설치를 진행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-shell"
+    }, `helm repo remove whatap
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "이름이-whatap-monitoring인-다른-네임스페이스가-클러스터에-있을-경우"
+    }, `이름이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `whatap-monitoring`), `인 다른 네임스페이스가 클러스터에 있을 경우`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+        parentName: "table"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
+        parentName: "thead"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
+        parentName: "tr",
+        "align": null
+    }, `Error: INSTALLATION FAILED: Unable to continue with install: Namespace "whatap-monitoring" in namespace "" exists and cannot be imported into the current release`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `클러스터에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `whatap-monitoring`), ` 네임스페이스가 존재한다면 사용자가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `yaml`), ` 파일 기준으로 이미 와탭 쿠버네티스 에이전트를 설치했기 때문입니다. 이 경우 다음 명령어를 통해 기존 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `whatap-monitoring`), ` 네임스페이스 및 관련 리소스를 삭제하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-shell"
+    }, `kubectl delete namespace whatap-monitoring
+kubectl delete clusterrolebinding whatap
+kubectl delete clusterrole whatap
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "clusterrole-clusterrolebinding-리소스가-이미-클러스터에-있을-경우"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `clusterrole`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `clusterrolebinding`), ` 리소스가 이미 클러스터에 있을 경우`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+        parentName: "table"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
+        parentName: "thead"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
+        parentName: "tr",
+        "align": null
+    }, `Error: INSTALLATION FAILED: Unable to continue with install: ClusterRole "whatap" in namespace "" exists and cannot be imported into the current release`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `클러스터에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `clusterrole`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `clusterrolebinding`), ` 리소스가 이미 존재할 경우 다음 명령어를 통해 해당 리소스를 삭제하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-shell"
+    }, `kubectl delete clusterrolebinding whatap
+kubectl delete clusterrole whatap
+`))));
 }
 MDXContent.isMDXComponent = true;
 
