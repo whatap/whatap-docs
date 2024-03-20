@@ -744,7 +744,7 @@ function MDXContent(_param) {
     }, "SERIAL"), " 필드 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "SERIAL filed",
+        alt: "SERIAL field",
         src: (__webpack_require__(12727)/* ["default"] */ .A),
         width: "1200",
         height: "227"
