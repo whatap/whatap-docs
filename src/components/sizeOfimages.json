@@ -839,18 +839,6 @@
     "width": 600,
     "height": 347
   },
-  "apm-dashboard-process-memory-en.png": {
-    "width": 600,
-    "height": 347
-  },
-  "apm-dashboard-process-memory-ja.png": {
-    "width": 600,
-    "height": 348
-  },
-  "apm-dashboard-process-memory.png": {
-    "width": 600,
-    "height": 347
-  },
   "apm-dashboard-realtime-user-en.png": {
     "width": 600,
     "height": 345
@@ -3467,6 +3455,18 @@
     "width": 1200,
     "height": 714
   },
+  "db-bottom-table-filter-mongodb-en.png": {
+    "width": 600,
+    "height": 246
+  },
+  "db-bottom-table-filter-mongodb-ja.png": {
+    "width": 600,
+    "height": 247
+  },
+  "db-bottom-table-filter-mongodb.png": {
+    "width": 600,
+    "height": 245
+  },
   "db-bottom-table-filter-mysql-en.png": {
     "width": 600,
     "height": 242
@@ -3531,6 +3531,18 @@
     "width": 600,
     "height": 211
   },
+  "db-compare-count-trend-activesession-mongodb-en.png": {
+    "width": 1200,
+    "height": 326
+  },
+  "db-compare-count-trend-activesession-mongodb-ja.png": {
+    "width": 1200,
+    "height": 326
+  },
+  "db-compare-count-trend-activesession-mongodb.png": {
+    "width": 1200,
+    "height": 326
+  },
   "db-compare-count-trend-activesession-mysql-en.png": {
     "width": 1200,
     "height": 326
@@ -3555,6 +3567,18 @@
     "width": 1200,
     "height": 326
   },
+  "db-compare-count-trend-activesession-redis-en.png": {
+    "width": 1200,
+    "height": 164
+  },
+  "db-compare-count-trend-activesession-redis-ja.png": {
+    "width": 1200,
+    "height": 164
+  },
+  "db-compare-count-trend-activesession-redis.png": {
+    "width": 1200,
+    "height": 163
+  },
   "db-compare-count-trend-activesession.png": {
     "width": 1200,
     "height": 326
@@ -3570,6 +3594,18 @@
   "db-compare-count-trend-cubrid.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-compare-count-trend-mongodb-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-compare-count-trend-mongodb-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-compare-count-trend-mongodb.png": {
+    "width": 1200,
+    "height": 1055
   },
   "db-compare-count-trend-mysql-en.png": {
     "width": 1200,
@@ -3632,6 +3668,10 @@
     "height": 206
   },
   "db-compare-count-trend-tootip-ja.png": {
+    "width": 800,
+    "height": 206
+  },
+  "db-compare-count-trend-tootip-mongodb.png": {
     "width": 800,
     "height": 206
   },
@@ -3719,6 +3759,10 @@
     "width": 1200,
     "height": 306
   },
+  "db-count-trend-extend-time-mongodb.png": {
+    "width": 1200,
+    "height": 306
+  },
   "db-count-trend-extend-time-redis-en.png": {
     "width": 1200,
     "height": 306
@@ -3787,18 +3831,6 @@
     "width": 1200,
     "height": 187
   },
-  "db-dashboard-instance-list-mongodb-en.png": {
-    "width": 1200,
-    "height": 352
-  },
-  "db-dashboard-instance-list-mongodb-ja.png": {
-    "width": 1200,
-    "height": 352
-  },
-  "db-dashboard-instance-list-mongodb.png": {
-    "width": 1200,
-    "height": 352
-  },
   "db-dashboard-instance-list-mssql-en.png": {
     "width": 1200,
     "height": 187
@@ -3847,6 +3879,18 @@
     "width": 400,
     "height": 119
   },
+  "db-dashboard-select-agent-by-category-en.png": {
+    "width": 200,
+    "height": 174
+  },
+  "db-dashboard-select-agent-by-category-ja.png": {
+    "width": 250,
+    "height": 165
+  },
+  "db-dashboard-select-agent-by-category.png": {
+    "width": 200,
+    "height": 157
+  },
   "db-dashboard-status-widget.png": {
     "width": 400,
     "height": 403
@@ -3878,6 +3922,18 @@
   "db-database-parameter-basic.png": {
     "width": 1200,
     "height": 738
+  },
+  "db-database-size-mongodb-en.png": {
+    "width": 1200,
+    "height": 619
+  },
+  "db-database-size-mongodb-ja.png": {
+    "width": 1200,
+    "height": 619
+  },
+  "db-database-size-mongodb.png": {
+    "width": 1200,
+    "height": 619
   },
   "db-database-size-mysql-en.png": {
     "width": 1200,
@@ -3923,6 +3979,18 @@
     "width": 1200,
     "height": 565
   },
+  "db-database-size-select-db-mongodb-en.png": {
+    "width": 1200,
+    "height": 619
+  },
+  "db-database-size-select-db-mongodb-ja.png": {
+    "width": 1200,
+    "height": 619
+  },
+  "db-database-size-select-db-mongodb.png": {
+    "width": 1200,
+    "height": 619
+  },
   "db-database-size-select-db-mysql-en.png": {
     "width": 1200,
     "height": 545
@@ -3954,6 +4022,18 @@
   "db-database-size-select-db-postgresql.png": {
     "width": 1200,
     "height": 570
+  },
+  "db-database-size-top50-mongodb-en.png": {
+    "width": 1200,
+    "height": 992
+  },
+  "db-database-size-top50-mongodb-ja.png": {
+    "width": 1200,
+    "height": 992
+  },
+  "db-database-size-top50-mongodb.png": {
+    "width": 1200,
+    "height": 992
   },
   "db-database-size-top50-mysql-en.png": {
     "width": 1200,
@@ -4115,6 +4195,18 @@
     "width": 1200,
     "height": 340
   },
+  "db-databaseparameter-changed-mongodb-en.png": {
+    "width": 1200,
+    "height": 573
+  },
+  "db-databaseparameter-changed-mongodb-ja.png": {
+    "width": 1200,
+    "height": 573
+  },
+  "db-databaseparameter-changed-mongodb.png": {
+    "width": 1200,
+    "height": 573
+  },
   "db-databaseparameter-changed-mysql-en.png": {
     "width": 1200,
     "height": 340
@@ -4186,6 +4278,18 @@
   "db-databaseparameter-ja.png": {
     "width": 1200,
     "height": 1030
+  },
+  "db-databaseparameter-mongodb-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-databaseparameter-mongodb-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-databaseparameter-mongodb.png": {
+    "width": 1200,
+    "height": 1055
   },
   "db-databaseparameter-mysql-en.png": {
     "width": 1200,
@@ -4323,6 +4427,18 @@
     "width": 1200,
     "height": 291
   },
+  "db-instance-list-mongodb-en.png": {
+    "width": 1200,
+    "height": 293
+  },
+  "db-instance-list-mongodb-ja.png": {
+    "width": 1200,
+    "height": 293
+  },
+  "db-instance-list-mongodb.png": {
+    "width": 1200,
+    "height": 293
+  },
   "db-instance-list-mysql-en.png": {
     "width": 1200,
     "height": 757
@@ -4421,15 +4537,15 @@
   },
   "db-instance-monitoring-mongodb-en.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1054
   },
   "db-instance-monitoring-mongodb-ja.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1054
   },
   "db-instance-monitoring-mongodb.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1054
   },
   "db-instance-monitoring-mssql-en.png": {
     "width": 1200,
@@ -4502,6 +4618,18 @@
   "db-instance-monitoring-redis.png": {
     "width": 1200,
     "height": 853
+  },
+  "db-instance-monitoring-seltime-mongodb-en.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-instance-monitoring-seltime-mongodb-ja.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-instance-monitoring-seltime-mongodb.png": {
+    "width": 1200,
+    "height": 1054
   },
   "db-instance-monitoring-seltime-mysql-en.png": {
     "width": 1200,
@@ -4703,6 +4831,18 @@
     "width": 800,
     "height": 414
   },
+  "db-metrics-select-mongodb-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-metrics-select-mongodb-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-metrics-select-mongodb.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "db-metrics-select-mysql-en.png": {
     "width": 1200,
     "height": 1040
@@ -4750,6 +4890,18 @@
   "db-multi-instance-cubrid.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-multi-instance-mongodb-en.png": {
+    "width": 1200,
+    "height": 665
+  },
+  "db-multi-instance-mongodb-ja.png": {
+    "width": 1200,
+    "height": 665
+  },
+  "db-multi-instance-mongodb.png": {
+    "width": 1200,
+    "height": 665
   },
   "db-multi-instance-monitoring-altibase-en.png": {
     "width": 1200,
@@ -5391,6 +5543,30 @@
     "width": 200,
     "height": 200
   },
+  "dotnet-apm-troubleshooting-connection-fail-en.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "dotnet-apm-troubleshooting-connection-fail-ja.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "dotnet-apm-troubleshooting-connection-fail.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "dotnet-apm-troubleshooting-none-hitmap-en.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "dotnet-apm-troubleshooting-none-hitmap-ja.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "dotnet-apm-troubleshooting-none-hitmap.png": {
+    "width": 1200,
+    "height": 668
+  },
   "dotnet-dashboard-iis-perf-count-en.png": {
     "width": 1200,
     "height": 727
@@ -5458,6 +5634,30 @@
   "event-config-v2-condition-common.png": {
     "width": 800,
     "height": 438
+  },
+  "event-config-v2-db-mongodb-en.png": {
+    "width": 1200,
+    "height": 163
+  },
+  "event-config-v2-db-mongodb-ja.png": {
+    "width": 1200,
+    "height": 163
+  },
+  "event-config-v2-db-mongodb.png": {
+    "width": 1200,
+    "height": 162
+  },
+  "event-config-v2-db-redis-en.png": {
+    "width": 1200,
+    "height": 163
+  },
+  "event-config-v2-db-redis-ja.png": {
+    "width": 1200,
+    "height": 163
+  },
+  "event-config-v2-db-redis.png": {
+    "width": 1200,
+    "height": 161
   },
   "event-config-v2-db01-en.png": {
     "width": 1200,
@@ -6626,6 +6826,10 @@
   "k8s-blocks.png": {
     "width": 572,
     "height": 139
+  },
+  "k8s-check-containerRuntime.png": {
+    "width": 4000,
+    "height": 374
   },
   "k8s-container-card-block-en.png": {
     "width": 472,
@@ -9883,6 +10087,18 @@
     "width": 1200,
     "height": 1018
   },
+  "new-feature-01-mongodb-en.png": {
+    "width": 1200,
+    "height": 632
+  },
+  "new-feature-01-mongodb-ja.png": {
+    "width": 1200,
+    "height": 632
+  },
+  "new-feature-01-mongodb.png": {
+    "width": 1200,
+    "height": 632
+  },
   "new-feature-01-mysql-en.png": {
     "width": 600,
     "height": 318
@@ -9914,6 +10130,14 @@
   "new-feature-01.png": {
     "width": 1200,
     "height": 423
+  },
+  "new-feature-02-mongodb-en.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-mongodb.png": {
+    "width": 2309,
+    "height": 1034
   },
   "new-feature-02-mysql-en.png": {
     "width": 2309,
@@ -9954,6 +10178,18 @@
   "new-feature-02.png": {
     "width": 2236,
     "height": 757
+  },
+  "new-feature-03-mongodb-en.png": {
+    "width": 1200,
+    "height": 420
+  },
+  "new-feature-03-mongodb-ja.png": {
+    "width": 1200,
+    "height": 420
+  },
+  "new-feature-03-mongodb.png": {
+    "width": 1200,
+    "height": 420
   },
   "new-feature-03-mysql-en.png": {
     "width": 1200,
@@ -10906,6 +11142,10 @@
   "realtime-mode.png": {
     "width": 1200,
     "height": 384
+  },
+  "release-apm-trace-add-serial-field.png": {
+    "width": 1200,
+    "height": 227
   },
   "release-db-object-details-db-size.png": {
     "width": 1200,
