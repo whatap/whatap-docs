@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[7964],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[18739],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 43123:
+/***/ 38038:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_6_0',
-    title: 'Python Agent v1.6.0',
+    id: 'python-1_6_1',
+    title: 'Python Agent v1.6.1',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_5_9',
+    pagination_next: 'release-notes/python/python-1_6_0',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_6_0",
-    "id": "release-notes/python/python-1_6_0",
-    "title": "Python Agent v1.6.0",
-    "description": "2024년 03월 13일",
-    "source": "@site/docs/release-notes/python/python-1.6.0.mdx",
+    "unversionedId": "release-notes/python/python-1_6_1",
+    "id": "release-notes/python/python-1_6_1",
+    "title": "Python Agent v1.6.1",
+    "description": "2024년 03월 20일",
+    "source": "@site/docs/release-notes/python/python-1.6.1.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_6_0",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_0",
+    "slug": "/release-notes/python/python-1_6_1",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_1",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.6.0.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.6.1.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_6_0",
-        "title": "Python Agent v1.6.0",
+        "id": "python-1_6_1",
+        "title": "Python Agent v1.6.1",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_5_9",
+        "pagination_next": "release-notes/python/python-1_6_0",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
@@ -341,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
     },
     "next": {
-        "title": "Python Agent v1.5.9",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_9"
+        "title": "Python Agent v1.6.0",
+        "permalink": "/whatap-docs/release-notes/python/python-1_6_0"
     }
 };
 const assets = {};
@@ -363,15 +363,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 13일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 20일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " FastAPI에서 remote host에 대한 정보를 찾지 못하면 에이전트가 동작하지 않는 현상 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, "Fixed"), " *whatap-hook.log* 반복적인 로그 호출 문제 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.6.0/"
+        "href": "https://pypi.org/project/whatap-python/1.6.1/"
     }, `whatap-python · PyPI`))));
 }
 MDXContent.isMDXComponent = true;
