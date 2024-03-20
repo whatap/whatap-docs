@@ -3001,7 +3001,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/php-2_7_2',
@@ -3010,7 +3010,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_7_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_7_1',
                 'release-notes/php/php-2_7_0',
@@ -3196,7 +3196,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_6_31',
@@ -3205,7 +3205,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_6_31',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_30',
                 'release-notes/db/dbx-1_6_26',
