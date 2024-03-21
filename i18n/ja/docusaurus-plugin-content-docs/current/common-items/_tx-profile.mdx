@@ -1,0 +1,195 @@
+ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="tx_search" className="uitext" />
+
+特定の期間中の各トランザクションの性能属性に関する統計と実行状態を検索できます。 すべてのトランザクションを確認し、正常やエラー状態をすばやく確認できます。 提供される情報を通じて、どのようなトランザクションの使用量が多く、リソースを多く消費しているかがわかります。 トランザクションの属性に応じて様々なフィルタリングが可能で、特定の条件のトランザクションを見つけるのに役立ちます。
+
+<ImgLang img='apm-tx-search.png' desc='TX検索' />
+
+照会時間を設定した上で<Cmdname sid="application" className="uitext" />オプションで照会対象を選択してください。 ![検索アイコン](/img/ico-btn-search.png)ボタンを選択すると、検索結果がテーブルに表示されます。 結果リストから希望する項目を選択すると<Cmdname sid="TTL06527" className="uitext" />ウィンドウが表示されます。 <Cmdname sid="TTL06527" className="uitext" />ウィンドウを使用したトランザクショントレースの詳細な分析に関する詳細は、[次の文書](trs-profile#details)を参照してください。
+
+:::note
+
+- エラー状態のトランザクションのみを検索するには、<Cmdname sid="show_only_error" className="uitext" />をクリックし![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+- 検索条件によってレスポンス遅延が発生する可能性があるため、検索時間をできるだけ短く設定することをお勧めします。
+
+:::
+
+## カラムを編集する
+
+<ImgLang img='whatap_application_analysis_tx_profile_column.png' desc='カラム選択' />
+
+結果照会時、![カラム選択アイコン](/img/ico-column-set.svg) <Cmdname sid="column_select" className="uitext" />ボタンをクリックすると、確認が必要なカラムを適切に選択することができます。
+
+## フィルター適用
+
+詳細検索のためにフィルターを利用してください。 複数の検索条件によるデータの探索方法に対応します。 フィルターを設定して![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+:::note
+
+一部のフィルター項目は、製品によっては対応できない場合があります。
+
+:::
+
+### <Cmdname sid="TTL06361" />
+
+<ImgLang img='apm-tx-search-elapsed-time.png' desc='経過時間' />
+
+トランザクションのレスポンス時間を基準に検索します。 基準以上と未満の2つの値を入力して検索します。
+
+### <Cmdname sid="TTL06088" />
+
+<ImgLang img='apm-tx-search-error-message.png' desc='エラーメッセージ' />
+
+トランザクションのエラーメッセージに基づいて検索します。 デフォルト状態ではエラー関連のカラムが表示されない場合があります。 カラムを選択して確認してください。
+
+:::note
+
+エラー状態のトランザクションは赤で表示されます。
+
+:::
+
+### <Cmdname sid="TTL06089" />
+
+<ImgLang img='apm-tx-search-http-call.png' desc='HTTPコール件数' />
+
+トランザクションのうち、外部HTTPサービスの呼び出し件数に基づいて入力した自然数以上に該当するトランザクションを検索します。
+
+### <Cmdname sid="TTL06097" />
+
+<ImgLang img='apm-tx-search-sql-count.png' desc='SQL件数' />
+
+トランザクションごとのSQL実行件数が基準で入力した自然数以上に該当するトランザクションを検索します。 例外的に過度な数のSQLを呼び出すトランザクションを検索するときに利用します。
+
+### <Cmdname sid="TTL06094" />
+
+<ImgLang img='apm-tx-search-sql-fetch-count.png' desc='SQLフェッチ数' />
+
+SQL実行後、DBパッチ件数を基準に入力した自然数以上に該当するトランザクションを検索します。 過度なデータパッチを実行するトランザクションを検索するときに利用します。
+
+### <Cmdname sid="TTL06918" />
+
+<ImgLang img='apm-tx-search-transaction.png' desc='トランザクション' />
+
+トランザクションに基づいて検索します。 入力した検索文字列は、含めるかどうか(部分一致)で比較検索します。
+
+### <Cmdname sid="TTL06081" />
+
+<ImgLang img='apm-tx-search-client-ip.png' desc='IP' />
+
+クライアントIPに基づいてトランザクションを検索します。 ただし、IP文字列は、PREFIX比較(前方一致)で検索します。
+
+### <Cmdname sid="TTL06101" />
+
+<ImgLang img='apm-tx-search-domain.png' desc='ドメイン' />
+
+HTTPサービスドメイン(host:port)ベースでトランザクションを検索します。 検索条件は、ドメインが完全に一致(完全一致)する必要があります。
+
+### <Cmdname sid="TTL06359" />
+
+<ImgLang img='apm-tx-search-user-agent.png' desc='ユーザーエージェント' />
+
+ユーザーエージェントベースでトランザクションを検索(部分一致)します。
+
+<InDoc product="java,python,nodejs">
+
+### <Cmdname sid="TTL06108" />
+
+Referer文字列ベースでトランザクションを検索します。
+
+:::note
+
+デフォルト設定状態のエージェントは、Refer情報を収集しません。 Referer設定が必要な場合は、[次の文書](analysis-apm-trs#stat-referer)を参照して関連する設定を追加してください。
+
+:::
+
+</InDoc>
+
+### <Cmdname sid="TTL06111" />
+
+<ImgLang img='apm-tx-search-tx-id.png' desc='TXID' />
+
+トランザクションIDベースでトランザクションを検索（完全一致）します。 トランザクションIDの場合、検索インデックスが作成されているため、高速で検索できます。
+
+:::note
+
+- トランザクションIDは、<Cmdname sid="TTL06527" className="uitext" />ウィンドウの<Cmdname sid="TTL06125" className="uitext" />タブで確認できます。 詳細については、[次の文書](trs-profile#anlaysis-trace-record-summary)を参照してください。
+
+- 最新バージョンのエージェントを使用していない場合、インデックスを使用しないフルスキャンが発生する可能性があります。
+
+:::
+
+### <Cmdname sid="TTL06107" />
+
+<ImgLang img='apm-tx-search-mtx-id.png' desc='マルチTX ID' />
+
+マルチTXIDベースでトランザクションを検索(完全一致)します。
+
+:::note
+
+<Xclude product="dotnet">
+
+- マルチトランザクションIDは、<Cmdname sid="TTL06527" className="uitext" />ウィンドウの<Cmdname sid="TTL06125" className="uitext" />タブで確認できます。 詳細については、[次の文書](trs-multi-trace#trace-multi-tx)を参照してください。
+
+</Xclude>
+
+- 最新バージョンのエージェントを使用していない場合、インデックスを使用しないフルスキャンが発生する可能性があります。
+
+- <Cmdname sid="TTL06107" className="uitext" />フィルターを適用して検索する場合、<Cmdname sid="TTL06111" className="uitext" />フィルターのみ追加できます。
+
+:::
+
+### <Cmdname sid="TTL06420" />
+
+<ImgLang img='apm-tx-search-wclientid.png' desc='クライアントID' />
+
+クライアントID(`wClientId`)は、WhaTapエージェントがユーザーを区分するために付与するIDです。 このID値に基づいてトランザクションを検索(完全一致)します。 検索のための個別のインデックスはありません。
+
+:::note
+
+WhaTapは、クライアントに関する情報をデフォルトで保存します。
+
+:::
+
+<InDoc product="java">
+
+### <Cmdname sid="TTL06082" />
+
+ログインIDに基づいてトランザクションを検索します。
+
+:::note
+
+基本設定状態のエージェントでは、ログインID情報を収集しません。 ログインIDの設定が必要な場合は、[次の文書](../java/script-plugin#common-plugin)を参照して設定を追加してください。
+
+:::
+
+</InDoc>
+
+## 複数フィルター適用
+
+複数のフィルター項目を適用して、目的のトランザクション一覧を確認できます。 次の事例は、経過時間が5~8秒の間であり、HTTP呼び出し件数が5件以上、トランザクション経路に'account'が含まれている場合です。
+
+<ImgLang img='apm-tx-search-multiple-filtering.png' desc='マルチフィルタの適用' />
+
+:::note
+
+<Cmdname sid="TTL06107" className="uitext" />フィルターを適用して検索する場合、<Cmdname sid="TTL06111" className="uitext" />フィルターのみ追加できます。
+
+:::
+
+## 検索結果をダウンロードする
+
+ユーザーが設定したフィルター条件に従って検索された結果をCSVファイルにダウンロードすることができます。 
+
+1. ![検索アイコン](/img/ico-btn-search.png)ボタンをクリックして検索結果を照会してください。
+
+2. ![ダウンロードアイコン](/img/ic-csv-download-ms.svg)ボタンをクリックします。
+
+3. 最大CSV行数を入力してください。 入力した行数だけ、照会された結果を保存することができます。
+
+4. <Cmdname sid="download" className="uitext" />ボタンを選択するとCSVファイルにダウンロードします。
+
+:::note
+
+CSVファイル名は、_profile\_`{pcode}`\_`YYMMDD`.csv_形式です。
+
+:::

@@ -88,23 +88,23 @@
 
 ### 検索キー(Search Key)
 
-左側の![number-s](/img/number-02.png)領域のタグはカテゴリ別にパーシング(parsing) された検索キーです。タグを選択してフィルターを入力します。<span class='logwr'>オレンジ色</span> タグはカテゴリーで、<span class='lowfg'>青色</span>タグは検索キーです。
+検索キーは、ログデータ内で目的の特定の値にアクセスするための識別子を意味します。検索キーに該当する実際のデータが検索値です。左側の![number-s](/img/number-02.png)領域のタグはカテゴリ別にパーシング(parsing) された検索キーです。タグを選択してフィルターを入力します。<span class='logwr'>オレンジ色</span> タグはカテゴリーで、<span class='lowfg'>青色</span>タグは検索キーです。
 
 <InDoc product='log,postgresql,mysql'>
 
-例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグ(parsing) は、パーシングされた検索キーです。検索キーは**_ログ_** > **_ログ設定_**の**_ログParser 設定_**からパーシングロジックを登録することで設定できます。 
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。検索キーは**_ログ_** > **_ログ設定_**の**_ログパーサの設定_**タブでパーシングロジックを登録することで設定できます。 
 
 </InDoc>
 
 <InDoc product='aws-log'>
 
-例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。検索キーは**_管理_** > **_ログ設定_**の**_ログParser 設定_**からパーシングロジックを登録することで設定できます。
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。検索キーは**_管理_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。
 
 </InDoc>
 
 ### フィルター入力文法{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx}
+{@include: ../common-items/_log-filter-expressions-search-key.mdx} 
 
 {@include: ../common-items/_log-filter-expressions-commons.mdx}
 

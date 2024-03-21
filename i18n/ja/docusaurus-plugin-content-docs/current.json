@@ -308,7 +308,7 @@
     "description": "The label for category 메트릭스 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.알림 설정하기": {
-    "message": "アラートの設定",
+    "message": "アラート通知",
     "description": "The label for category 알림 설정하기 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.doc.지원 환경": {
@@ -1256,7 +1256,7 @@
     "description": "The label for category 분석 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.알림 설정하기": {
-    "message": "アラートの設定",
+    "message": "アラート通知",
     "description": "The label for category 알림 설정하기 in sidebar npmsidebar"
   },
   "sidebar.rumsSidebar.category.메트릭스": {
