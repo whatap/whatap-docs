@@ -1,0 +1,47 @@
+---
+id: k8s-1_5_7
+title: Kubernetes Agent v1.5.7
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_5_6
+displayed_sidebar: releaseSidebar
+---
+
+2024年03月07日
+
+- <Status>Feature</Status> whatap-node-helperは、ノードディスクおよびコンテナのイメージ、性能データを収集します。 当該コンテナのロギング及び設定機能を追加してデバッグを行い、問題が発生した場合、当該機能に対するオプション処理が可能です。
+
+  次のオプションを追加しました。
+
+  - **collect_volume_detail_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    ノードエージェントですべてのコンテナに対する`exec df`コマンドを使用して、コンテナのボリューム情報の照会を活性化します。 ノードに実行中のすべてのコンテナのストレージ使用量およびボリューム情報を収集する機能を活性化することができます。
+
+  - **inject_container_id_to_apm_agent_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    WhaTap APMコンテナに`exec`を利用したcontainer IDの注入を活性化します。 WhaTap APMと識別されるコンテナのIDを自動的に抽出し、これをAPMツールに注入して性能モニタリングデータとコンテナを連結するのに使用できます。 
+
+    :::note
+
+    このオプションは、Javaエージェント2.2.28バージョン以降から使用できます。
+
+    :::
+
+- <Status>Changed</Status>マスターエージェントからKubernetesイベントを収集する場合、エージェントが再起動されると、イベントの重複収集を中止するロジックを削除しました。 サーバーサイドで重複イベントのドロップロジックを実行するように変更しました。
+
+  :::note
+
+  **重複収集の原因**：マスターエージェントを再起動すると、Kubernetesクラスターでまだ保存しているイベントの場合、すでに収集していても、エージェントの立場ではわからないため、再び読み込むことになるからです。
+
+  :::
+
+- <Status>Fixed</Status> watchLog機能を利用するとノードシステムの特定のログファイル(例、<em>/var/log/message</em>)をWhaTapダッシュボードで監視できます。 システムのログ ローテーションロジックによってファイルが変更された場合、ログの追加収集に失敗するバグを修正しました。
+
+:::info
+
+Agentダウンロード：[kube_mon_1.5.6.tar](https://repo.whatap.io/docker/kube_mon_1.5.7.tar)
+
+:::

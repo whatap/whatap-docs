@@ -9,9 +9,6 @@ tags:
 ---
 
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
-import Note from '../common-items/_import_v2-note.mdx';
-
-<Note product='PostgreSQL' link='../postgresql-v1/install-agent' />
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
@@ -27,7 +24,7 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -92,3 +89,7 @@ grant select on all tables in schema {schema_name} to whatap;
 <!--## 에이전트 실행-->
 
 {@include: ../common-items/_db-run-agent.mdx} 
+
+<!--## XOS 에이전트 설치-->
+
+{@include: ../common-items/_db-install-xos-agent.mdx}

@@ -1,0 +1,21 @@
+---
+id: java-2_2_29
+title: Java Agent v2.2.29
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_28
+displayed_sidebar: releaseSidebar
+---
+
+2024年03月15日
+
+- <Status>New</Status>  jboss-logging-3.3ログ収集を追加
+
+  ```ini title='whatap.conf'
+  weaving=jboss-logging-3.3
+  ```
+
+- <Status>Feature</Status> <code>com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal</code>メソッド使用時にSQLデータ収集を追加
+
+- <Status>Fixed</Status> Jboss環境でHTTPパラメータ収集時にバグが発生するとトランザクションを終了できない現象を防止
+
+- <Status>Deprecated</Status> <code>env</code>の<b>HOSTNAME</b>データ収集を中断
