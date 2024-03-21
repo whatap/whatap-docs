@@ -11,7 +11,7 @@ tags:
 
 The agent traces the transaction performance and provides the following configurable options.
 
-### Transaction Tracing
+## Transaction Tracing
 
 {@include: ../common-items/_transaction-profiling-common.mdx}
 
@@ -93,7 +93,7 @@ The agent traces the transaction performance and provides the following configur
 
   :::
 
-### HTTP transaction tracing
+## HTTP transaction tracing
 
 {@include: ../common-items/_transaction-trace-common.mdx} 
 
@@ -103,7 +103,7 @@ The agent traces the transaction performance and provides the following configur
 
   It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
-- **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span> <ScrollToLink anchor="trace_ignore_url_prefix" />
 
   It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
@@ -120,6 +120,16 @@ The agent traces the transaction performance and provides the following configur
   # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
   ignore_http_method=OPTIONS,HEAD
   ```
+
+- **profile_http_header_ignore_keys** <span class='type'>String</span>
+
+  Default `Cookie,cookie,accept,user-agent,referer`
+
+  You can specify HTTP header names to exclude from collection. The set HTTP header names are excluded from collection, and they are marked with "#."
+
+- **profile_http_parameter_keys** <span class='type'>String</span>
+
+  Only the parameter corresponding to the set key is recorded. To register multiple items, use comma (,) as the delimiter. If not specified, all parameters are recorded.
 
 - **status_ignore** <span class='type'>String</span>
 
@@ -149,7 +159,7 @@ The agent traces the transaction performance and provides the following configur
 
   If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
-### Non-HTTP transaction tracing
+## Non-HTTP transaction tracing
 
 - **hook_service_patterns** <span class='type'>String</span>
 
@@ -161,7 +171,7 @@ The agent traces the transaction performance and provides the following configur
 
   When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
 
-### Multiple transaction trace
+## Multiple transaction trace
 
 - **mtrace_rate** <span class='type'>Int</span>
 
@@ -210,3 +220,25 @@ The agent traces the transaction performance and provides the following configur
   Default `false`
 
   It collects correlation statistics between callers and callees. When applied to a caller, the caller details are sent. When applied to a callee, the caller-callee call statistics are sent to the collection server in URL units.
+
+## Trace data sampling
+
+<code class="my">Node.js Agent v0.4.94 or later</code>
+
+:::note
+
+Added the [Socket.io](http://socket.io) monitoring module in [Node.js agent version v0.4.94](../release-notes/nodejs/nodejs-0_4_94). You can see the sampled data with the `trace_sampling_enabled` and `trace_sampling_tps` options. Disable tracing by adding the `/socket.io` path to the [`trace_ignore_url_prefix`](#trace_ignore_url_prefix) option.
+
+:::
+
+- **trace_sampling_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  You can set whether or not to collect trace data samples.
+
+- **trace_sampling_tps** <span class='type'>Number</span>
+
+  Default `1000`
+
+  You can set the trace data sampling count. The data exceeding the set count is not transmitted and is initialized every 1 seconds.
