@@ -39,38 +39,38 @@ It is the metric for server resources.
 | Field name           | Unit            | Description                                  | Remarks |
 | -------------------- | --------------- | -------------------------------------------- | ------- |
 | cpu                  | Percentage      | All CPU utilization                          | Common  |
-| cpu_c1               | Percentage      | CPU c1 state utilization                     | Windows |
-| cpu_c2               | Percentage      | CPU c2 state utilization                     | Windows |
-| cpu_c3               | Percentage      | CPU c3 state utilization                     | Windows |
+| cpu_c1               | Percent         | CPU c1 state utilization                     | Windows |
+| cpu_c2               | Percent         | CPU c2 state utilization                     | Windows |
+| cpu_c3               | Percent         | CPU c3 state utilization                     | Windows |
 | cpu_ctxt             | Prime number    | Context switching utilization                | Linux   |
-| cpu_dpc              | Percentage      | CPU DPC time percentage                      | Windows |
-| cpu_idle             | Percentage      | CPU idle rate                                | Common  |
-| cpu_interrupt        | Percentage      | cpu interrupt                                | Linux   |
-| cpu_iowait           | Percentage      | CPU iowait rate                              | Linux   |
-| cpu_irq              | Percentage      | CPU IRQ utilization                          | Linux   |
+| cpu_dpc              | Percent         | CPU DPC time percentage                      | Windows |
+| cpu_idle             | Percent         | CPU idle rate                                | Common  |
+| cpu_interrupt        | Percent         | cpu interrupt                                | Linux   |
+| cpu_iowait           | Percent         | CPU iowait rate                              | Linux   |
+| cpu_irq              | Percent         | CPU IRQ utilization                          | Linux   |
 | cpu_load1            | Prime number    | Load average for 1 minute                    | Linux   |
 | cpu_load5            | Prime number    | Load average for 5 minutes                   | Linux   |
 | cpu_load15           | Prime number    | Load average for 15 minutes                  | Linux   |
 | cpu_new_procs_forked | Positive number | OS process fork call                         | Linux   |
 | cpu_procs_blocked    | Positive number | Process blocked state count                  | Linux   |
 | cpu_procs_running    | Positive number | Process running state count                  | Linux   |
-| cpu_softirq          | Percentage      | CPU softirq utilization                      | Linux   |
-| cpu_steal            | Percentage      | CPU steal utilization                        | Linux   |
-| cpu_sys              | Percentage      | CPU system utilization                       | Common  |
-| cpu_usr              | Percentage      | CPU user utilization                         | Common  |
+| cpu_softirq          | Percent         | CPU softirq utilization                      | Linux   |
+| cpu_steal            | Percent         | CPU steal utilization                        | Linux   |
+| cpu_sys              | Percent         | CPU system utilization                       | Common  |
+| cpu_usr              | Percent         | CPU user utilization                         | Common  |
 | epochtime            | Positive number | Epoch time in which the metric was collected | Common  |
 | memory_available     | Byte            | Available memory size                        | Common  |
 | memory_buffers       | Byte            | Memory buffer size                           | Linux   |
 | memory_cached        | Byte            | Memory cache size                            | Common  |
 | memory_free          | Byte            | Free memory size                             | Common  |
 | memory_pageFaults    | Positive number | Memory page fault count                      | Common  |
-| memory_pavailble     | Percentage      | Available memory utilization                 | Common  |
-| memory_pused         | Percentage      | Memory utilization                           | Common  |
+| memory_pavailble     | Percent         | Available memory utilization                 | Common  |
+| memory_pused         | Percent         | Memory utilization                           | Common  |
 | memory_shared        | Byte            | Shared memory size                           | Linux   |
 | memory_slab          | Byte            | Slab memory size                             | Linux   |
 | memory_sreclaimable  | Byte            | Slab reclaimable memory size                 | Linux   |
 | memory_sunreclaim    | Byte            | Slab claimable memory size                   | Linux   |
-| memory_swappused     | Percentage      | Swap utilization                             | Common  |
+| memory_swappused     | Percent         | Swap utilization                             | Common  |
 | memory_swaptotal     | Byte            | Total swap size                              | Common  |
 | memory_swapused      | Byte            | Swap usage                                   | Common  |
 | memory_total         | Byte            | Total memory size                            | Common  |
@@ -100,18 +100,18 @@ Metrics for each server CPU core
 
 | Field name           | Unit            | Description                      | Remarks |
 | -------------------- | --------------- | -------------------------------- | ------- |
-| idle                 | Percentage      | Core idle rate                   | Common  |
-| iowait               | Percentage      | Core iowait rate                 | Windows |
-| irq                  | Percentage      | Core IRQ utilization             | Linux   |
+| idle                 | Percent         | Core idle rate                   | Common  |
+| iowait               | Percent         | Core iowait rate                 | Windows |
+| irq                  | Percent         | Core IRQ utilization             | Linux   |
 | load1                | Prime number    | Core load average for 1 minute   | Linux   |
 | load5                | Prime number    | Core load average for 5 minutes  | Linux   |
 | load15               | Prime number    | Core load average for 15 minutes | Linux   |
-| nice                 | Percentage      | Core nice utilization            | Common  |
+| nice                 | Percent         | Core nice utilization            | Common  |
 | processorQueueLength | Positive number | Core process queue length        | Windows |
-| softirq              | Percentage      | Core softirq utilization         | Linux   |
-| steal                | Percentage      | Core steal utilization           | Linux   |
-| sys                  | Percentage      | Core sys utilization             | Linux   |
-| usr                  | Percentage      | Core usr utilization             | Linux   |
+| softirq              | Percent         | Core softirq utilization         | Linux   |
+| steal                | Percent         | Core steal utilization           | Linux   |
+| sys                  | Percent         | Core sys utilization             | Linux   |
+| usr                  | Percent         | Core usr utilization             | Linux   |
 
 ## server_disk
 
@@ -140,16 +140,16 @@ It has metrics for each file system mounted on each server.
 | ---------------- | --------------- | ----------------------------------------------------------------------- | ------- |
 | blksize          | Byte            | Block size                                                              | Linux   |
 | count            | Positive number | WhaTap only                                                             | Common  |
-| freePercent      | Percentage      | File system's free space rate                                           | Linux   |
+| freePercent      | Percent         | File system's free space rate                                           | Linux   |
 | freeSpace        | Byte            | File system's free space amount                                         | Linux   |
-| ioPercent        | Percentage      | IO utilization `In some disk types, inaccurate values can be measured.` | Linux   |
+| ioPercent        | Percent         | IO utilization `In some disk types, inaccurate values can be measured.` | Linux   |
 | ioutilOrder      | Positive number | WhaTap only                                                             | Linux   |
 | queueLength      | Mistake         | Queue length                                                            | Common  |
 | totalInode       | Positive number | Total number of Inodes                                                  | Linux   |
 | totalSpace       | Byte            | Total size of the file system                                           | Linux   |
-| usedPercent      | Percentage      | File system utilization                                                 | Linux   |
+| usedPercent      | Percent         | File system utilization                                                 | Linux   |
 | usedInode        | Positive number | Number of used inodes                                                   | Linux   |
-| usedInodePercent | Percentage      | Inode utilization                                                       | Linux   |
+| usedInodePercent | Percent         | Inode utilization                                                       | Linux   |
 | userSpaceOrder   | Positive number | WhaTap only                                                             | Common  |
 | readBps          | Byte            | Bytes read per second                                                   | Common  |
 | writeBps         | Byte            | Bytes written per second                                                | Common  |
@@ -264,12 +264,12 @@ It has the server process information.
 | Field name          | Unit            | Description                          | Remarks |
 | ------------------- | --------------- | ------------------------------------ | ------- |
 | count               | Positive number | Number of processes                  | Common  |
-| cpu                 | Percentage      | CPU Utilization                      | Common  |
-| cpuAccumulated      | Percentage      | WhaTap only                          | Common  |
+| cpu                 | Percent         | CPU Utilization                      | Common  |
+| cpuAccumulated      | Percent         | WhaTap only                          | Common  |
 | cpuOrder            | Order           | WhaTap only                          | Common  |
 | memOrder            | Order           | WhaTap only                          | Common  |
-| memory              | Percentage      | Memory utilization                   | Common  |
-| memoryAccumulated   | Percentage      | WhaTap only                          | Common  |
+| memory              | Percent         | Memory utilization                   | Common  |
+| memoryAccumulated   | Percent         | WhaTap only                          | Common  |
 | openFileDescriptors | Positive number | Number of open file descriptors      | Common  |
 | rbps                | Byte            | Bytes of the disk read per second    | Common  |
 | rbpsAccmulated      | Byte            | WhaTap only                          | Common  |

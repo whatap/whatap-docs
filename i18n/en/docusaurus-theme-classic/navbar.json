@@ -232,7 +232,7 @@
     "description": "Navbar item with label OpenTelemetry"
   },
   "item.label.MySQL 모니터링": {
-    "message": "MySQL 모니터링",
+    "message": "MySQL Monitoring",
     "description": "Navbar item with label MySQL 모니터링"
   }
 }
