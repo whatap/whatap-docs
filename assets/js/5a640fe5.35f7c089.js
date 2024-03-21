@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56517],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[73315],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 94132:
+/***/ 30897:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-2_2_20',
-    title: 'Java Agent v2.2.20',
+    id: 'java-2_2_29',
+    title: 'Java Agent v2.2.29',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_19'
+    pagination_next: 'release-notes/java/java-2_2_28',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_20",
-    "id": "release-notes/java/java-2_2_20",
-    "title": "Java Agent v2.2.20",
-    "description": "2023년 10월 19일",
-    "source": "@site/docs/release-notes/java/java-2.2.20.mdx",
+    "unversionedId": "release-notes/java/java-2_2_29",
+    "id": "release-notes/java/java-2_2_29",
+    "title": "Java Agent v2.2.29",
+    "description": "2024년 03월 15일",
+    "source": "@site/docs/release-notes/java/java-2.2.29.mdx",
     "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_20",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_20",
+    "slug": "/release-notes/java/java-2_2_29",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_29",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.20.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.29.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-2_2_20",
-        "title": "Java Agent v2.2.20",
+        "id": "java-2_2_29",
+        "title": "Java Agent v2.2.29",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_19"
+        "pagination_next": "release-notes/java/java-2_2_28",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Java Agent v2.2.21",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_21"
+        "title": "Java Agent v2.2.30",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_30"
     },
     "next": {
-        "title": "Java Agent v2.2.19",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_19"
+        "title": "Java Agent v2.2.28",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_28"
     }
 };
 const assets = {};
@@ -361,99 +363,31 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 10월 19일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " apache-camel-seda-2.22 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+    }, "New"), " jboss-logging-3.3 로그 수집 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-ini",
         "metastring": "title='whatap.conf'",
         "title": "'whatap.conf'"
-    }, `weaving=camel-seda-2.22
-
-# default: false
-trace_camel_header_enabled=false
+    }, `weaving=jboss-logging-3.3
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " apache-camel-seda-3.2 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `weaving=camel-seda-3.2
-
-# default: false
-trace_camel_header_enabled=false
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal"), " 메소드 사용 시 SQL 데이터 수집 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " `biz_exceptions_status` 옵션 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `이 옵션을 적용하면 히트맵 info(파란색)로 표시하고 에러 통계를 추가합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Fixed"), " Jboss 환경에서 HTTP 파라미터 수집 시 버그가 발생하면 트랜잭션을 종료하지 못하는 현상 방지"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " MongoDB 동기 방식 추적(mongodb-3.8.2, mongodb-4.0.3, mongodb-4.4, mongodb-4.8)", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# example
-weaving=mongodb-4.0.3
-
-# spring-boot-3.x user
-# spring-boot-3.x: mongodb-4.8
-weaving=spring-boot-3.0
-
-# spring-boot-2.7.x user
-# spring-boot-2.7.x: mongodb-4.4
-weaving=spring-boot-2.7
-
-# spring-boot-2.5.x user
-# spring-boot-2.5.x: mongodb-4.0.3
-weaving=spring-boot-2.5
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "biz_exceptions"), " 처리한 에러를 에러 통계로 수집"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " SQL 파싱 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Deprecated"), " Jedis, Tomcat, JMX metric 지표(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "java_jedis"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "perfx_jmx_interval"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "perfx_tomcat_enabled"), ") 수집 중단", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# deprecated
-perfx_jedis_enabled=false
-perfx_jmx_enabled=false
-perfx_tomcat_enabled=false
-`)))));
+    }, "Deprecated"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "env"), "의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "HOSTNAME"), " 데이터 수집 중단")));
 }
 MDXContent.isMDXComponent = true;
 

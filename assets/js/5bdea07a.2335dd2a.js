@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[73315],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[64748],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 30897:
+/***/ 67755:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-2_2_29',
-    title: 'Java Agent v2.2.29',
+    id: 'java-2_2_30',
+    title: 'Java Agent v2.2.30',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_28',
+    pagination_next: 'release-notes/java/java-2_2_29',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_29",
-    "id": "release-notes/java/java-2_2_29",
-    "title": "Java Agent v2.2.29",
-    "description": "2024년 03월 15일",
-    "source": "@site/docs/release-notes/java/java-2.2.29.mdx",
+    "unversionedId": "release-notes/java/java-2_2_30",
+    "id": "release-notes/java/java-2_2_30",
+    "title": "Java Agent v2.2.30",
+    "description": "2024년 03월 21일",
+    "source": "@site/docs/release-notes/java/java-2.2.30.mdx",
     "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_29",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_29",
+    "slug": "/release-notes/java/java-2_2_30",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_30",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.29.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.30.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-2_2_29",
-        "title": "Java Agent v2.2.29",
+        "id": "java-2_2_30",
+        "title": "Java Agent v2.2.30",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_28",
+        "pagination_next": "release-notes/java/java-2_2_29",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
@@ -341,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
     },
     "next": {
-        "title": "Java Agent v2.2.28",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_28"
+        "title": "Java Agent v2.2.29",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_29"
     }
 };
 const assets = {};
@@ -363,31 +363,9 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 21일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "New"), "  jboss-logging-3.3 로그 수집 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `weaving=jboss-logging-3.3
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal"), " 메소드 사용 시 SQL 데이터 수집 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " Jboss 환경에서 HTTP 파라미터 수집 시 버그가 발생하면 트랜잭션을 종료하지 못하는 현상 방지"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Deprecated"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "env"), "의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "HOSTNAME"), " 데이터 수집 중단")));
+    }, "Fixed"), " Java 1.5 ~ 1.7 환경에서 Java 에이전트 2.2.28, 2.2.29 버전이 동작하지 않는 문제 수정");
 }
 MDXContent.isMDXComponent = true;
 
