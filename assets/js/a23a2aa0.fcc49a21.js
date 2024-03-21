@@ -337,8 +337,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/browser/browser-v1_2_0"
     },
     "next": {
-        "title": "Browser Agent v1.1.3",
-        "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_3"
+        "title": "Browser Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/browser/browser-previous"
     }
 };
 const assets = {};

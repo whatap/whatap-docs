@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[7221],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[75173],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 91281:
+/***/ 26323:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,37 +308,39 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'browser-v1_1_3',
-    title: 'Browser Agent v1.1.3',
-    toc_max_heading_level: 3
+    id: 'browser-v1_3_3',
+    title: 'Browser Agent v1.3.3',
+    toc_max_heading_level: 3,
+    pagination_next: 'release-notes/browser/browser-v1_3_2'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/browser/browser-v1_1_3",
-    "id": "release-notes/browser/browser-v1_1_3",
-    "title": "Browser Agent v1.1.3",
-    "description": "2023년 5월 23일",
-    "source": "@site/docs/release-notes/browser/browser-v1.1.3.mdx",
+    "unversionedId": "release-notes/browser/browser-v1_3_3",
+    "id": "release-notes/browser/browser-v1_3_3",
+    "title": "Browser Agent v1.3.3",
+    "description": "2023년 12월 27일",
+    "source": "@site/docs/release-notes/browser/browser-v1.3.3.mdx",
     "sourceDirName": "release-notes/browser",
-    "slug": "/release-notes/browser/browser-v1_1_3",
-    "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_3",
+    "slug": "/release-notes/browser/browser-v1_3_3",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_3",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/browser/browser-v1.1.3.mdx",
+    "editUrl": "undefined/docs/release-notes/browser/browser-v1.3.3.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "browser-v1_1_3",
-        "title": "Browser Agent v1.1.3",
-        "toc_max_heading_level": 3
+        "id": "browser-v1_3_3",
+        "title": "Browser Agent v1.3.3",
+        "toc_max_heading_level": 3,
+        "pagination_next": "release-notes/browser/browser-v1_3_2"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Browser Agent v1.1.4",
-        "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_4"
+        "title": "Browser Agent v1.3.4",
+        "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_4"
     },
     "next": {
-        "title": "Browser Agent v1.1.2",
-        "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_2"
+        "title": "Browser Agent v1.3.2",
+        "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_2"
     }
 };
 const assets = {};
@@ -359,15 +361,35 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 5월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 12월 27일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 에러가 발생하던 url 정규화 로직 삭제"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Feature"), " AJAX MTID 헤더 옵션 추가(APM 연계 기능)"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 에이전트 방어 코드 추가")));
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "ignoreErrors"), " 에러 필터링 옵션 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 유저 ID 설정 인터페이스 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 필수 수집 유저 ID 설정 인터페이스 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "Iframe"), "으로 로드된 페이지의 경우 수집 대상에서 제외"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " AJAX 응답 값 중 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "opaque"), " 타입의 상태 코드를 기존 0번에서 10번으로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "MutaionObserver"), " 인터페이스의 attribute 옵션 제외(요소의 속성이 무한에 가깝게 변경하는 것을 감지함에 있어서 오버헤드가 발생함을 수정)")));
 }
 MDXContent.isMDXComponent = true;
 

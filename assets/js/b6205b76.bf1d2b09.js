@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[75173],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[94955],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 26323:
+/***/ 73673:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,48 +308,72 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'browser-v1_3_3',
-    title: 'Browser Agent v1.3.3',
-    toc_max_heading_level: 3,
-    pagination_next: 'release-notes/browser/browser-v1_3_2'
+    id: 'url-release-notes',
+    title: 'URL Monitoring Agent release notes',
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/browser/browser-v1_3_3",
-    "id": "release-notes/browser/browser-v1_3_3",
-    "title": "Browser Agent v1.3.3",
-    "description": "2023년 12월 27일",
-    "source": "@site/docs/release-notes/browser/browser-v1.3.3.mdx",
-    "sourceDirName": "release-notes/browser",
-    "slug": "/release-notes/browser/browser-v1_3_3",
-    "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_3",
+    "unversionedId": "release-notes/url/url-release-notes",
+    "id": "release-notes/url/url-release-notes",
+    "title": "URL Monitoring Agent release notes",
+    "description": "URL Monitoring Agent v2.0.2",
+    "source": "@site/docs/release-notes/url/url-release-notes.mdx",
+    "sourceDirName": "release-notes/url",
+    "slug": "/release-notes/url/url-release-notes",
+    "permalink": "/whatap-docs/release-notes/url/url-release-notes",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/browser/browser-v1.3.3.mdx",
+    "editUrl": "undefined/docs/release-notes/url/url-release-notes.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "browser-v1_3_3",
-        "title": "Browser Agent v1.3.3",
-        "toc_max_heading_level": 3,
-        "pagination_next": "release-notes/browser/browser-v1_3_2"
+        "id": "url-release-notes",
+        "title": "URL Monitoring Agent release notes",
+        "toc_max_heading_level": 2
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "URL Monitoring Agent release notes",
-        "permalink": "/whatap-docs/release-notes/url/url-release-notes"
+        "title": "xos 지난 버전",
+        "permalink": "/whatap-docs/release-notes/db/xos-previous"
     },
     "next": {
-        "title": "Browser Agent v1.3.2",
-        "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_2"
+        "title": "Browser Agent v1.3.5",
+        "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_5"
     }
 };
 const assets = {};
-const toc = [];
-const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
-    };
-const Status = makeShortcode("Status");
+const toc = [
+    {
+        value: 'URL Monitoring Agent v2.0.2',
+        id: 'url-monitoring-agent-v202',
+        level: 2
+    },
+    {
+        value: 'Minor Change',
+        id: 'minor-change',
+        level: 3
+    },
+    {
+        value: 'URL Monitoring Agent v2.0.1',
+        id: 'url-monitoring-agent-v201',
+        level: 2
+    },
+    {
+        value: '버그 픽스',
+        id: '버그-픽스',
+        level: 3
+    },
+    {
+        value: 'URL Monitoring Agent v0.0.3',
+        id: 'url-monitoring-agent-v003',
+        level: 2
+    },
+    {
+        value: '버그 픽스',
+        id: '버그-픽스-1',
+        level: 3
+    }
+];
 const layoutProps = {
     toc
 };
@@ -361,35 +385,35 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 12월 27일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "url-monitoring-agent-v202"
+    }, `URL Monitoring Agent v2.0.2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2022-01-05 `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "minor-change"
+    }, `Minor Change`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `URL 모니터링 User-Agent 이름을 Java/1.8 에서 WhaTap URL Monitoring Agent 로 수정했습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "url-monitoring-agent-v201"
+    }, `URL Monitoring Agent v2.0.1`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2021-10-07`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "버그-픽스"
+    }, `버그 픽스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " AJAX MTID 헤더 옵션 추가(APM 연계 기능)"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `FullChain 인증서를 사용하지 않는 일부 URL에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `sun.security.validator.ValidatorException `), ` 발생하는 현상을 개선했습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "ignoreErrors"), " 에러 필터링 옵션 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 유저 ID 설정 인터페이스 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 필수 수집 유저 ID 설정 인터페이스 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "Iframe"), "으로 로드된 페이지의 경우 수집 대상에서 제외"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " AJAX 응답 값 중 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "opaque"), " 타입의 상태 코드를 기존 0번에서 10번으로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "MutaionObserver"), " 인터페이스의 attribute 옵션 제외(요소의 속성이 무한에 가깝게 변경하는 것을 감지함에 있어서 오버헤드가 발생함을 수정)")));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `구 버전에서 지원하지 않던 SHA-256 ECDSA 알고리즘 인증서에 대한 URL 체크가 가능 하도록 수정했습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "url-monitoring-agent-v003"
+    }, `URL Monitoring Agent v0.0.3`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2019-04-25`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "버그-픽스-1"
+    }, `버그 픽스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `https 프로토콜의 URL 모니터링이 불가하여 하기 에러가 발생하던 건을 개선하였습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-java",
+        "metastring": "title='Java'",
+        "title": "'Java'"
+    }, `sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `SSL 기반으로 통신할 경우 인증서를 받아들여 정상 통신이 가능하도록 하는 매커니즘이 필요함에 따라, 클라이언트 모듈이 등록된 URL로 접근시에 받아들이게 되는 인증서를 허용하도록 개선하였습니다.`));
 }
 MDXContent.isMDXComponent = true;
 

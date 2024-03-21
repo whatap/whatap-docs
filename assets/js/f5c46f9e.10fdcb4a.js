@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[94955],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[19291],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 73673:
+/***/ 18232:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,33 +308,35 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'url-release-notes',
-    title: 'URL Monitoring Agent release notes',
-    toc_max_heading_level: 2
+    id: 'browser-v1_3_4',
+    title: 'Browser Agent v1.3.4',
+    toc_max_heading_level: 3,
+    pagination_next: 'release-notes/browser/browser-v1_3_3'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/url/url-release-notes",
-    "id": "release-notes/url/url-release-notes",
-    "title": "URL Monitoring Agent release notes",
-    "description": "URL Monitoring Agent v2.0.2",
-    "source": "@site/docs/release-notes/url/url-release-notes.mdx",
-    "sourceDirName": "release-notes/url",
-    "slug": "/release-notes/url/url-release-notes",
-    "permalink": "/whatap-docs/release-notes/url/url-release-notes",
+    "unversionedId": "release-notes/browser/browser-v1_3_4",
+    "id": "release-notes/browser/browser-v1_3_4",
+    "title": "Browser Agent v1.3.4",
+    "description": "2024년 02월 19일",
+    "source": "@site/docs/release-notes/browser/browser-v1.3.4.mdx",
+    "sourceDirName": "release-notes/browser",
+    "slug": "/release-notes/browser/browser-v1_3_4",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_4",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/url/url-release-notes.mdx",
+    "editUrl": "undefined/docs/release-notes/browser/browser-v1.3.4.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "url-release-notes",
-        "title": "URL Monitoring Agent release notes",
-        "toc_max_heading_level": 2
+        "id": "browser-v1_3_4",
+        "title": "Browser Agent v1.3.4",
+        "toc_max_heading_level": 3,
+        "pagination_next": "release-notes/browser/browser-v1_3_3"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "xos 지난 버전",
-        "permalink": "/whatap-docs/release-notes/db/xos-previous"
+        "title": "Browser Agent v1.3.5",
+        "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_5"
     },
     "next": {
         "title": "Browser Agent v1.3.3",
@@ -342,38 +344,13 @@ const metadata = {
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: 'URL Monitoring Agent v2.0.2',
-        id: 'url-monitoring-agent-v202',
-        level: 2
-    },
-    {
-        value: 'Minor Change',
-        id: 'minor-change',
-        level: 3
-    },
-    {
-        value: 'URL Monitoring Agent v2.0.1',
-        id: 'url-monitoring-agent-v201',
-        level: 2
-    },
-    {
-        value: '버그 픽스',
-        id: '버그-픽스',
-        level: 3
-    },
-    {
-        value: 'URL Monitoring Agent v0.0.3',
-        id: 'url-monitoring-agent-v003',
-        level: 2
-    },
-    {
-        value: '버그 픽스',
-        id: '버그-픽스-1',
-        level: 3
-    }
-];
+const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
+    };
+const Status = makeShortcode("Status");
+const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
 };
@@ -385,35 +362,82 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "url-monitoring-agent-v202"
-    }, `URL Monitoring Agent v2.0.2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2022-01-05 `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "minor-change"
-    }, `Minor Change`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `URL 모니터링 User-Agent 이름을 Java/1.8 에서 WhaTap URL Monitoring Agent 로 수정했습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "url-monitoring-agent-v201"
-    }, `URL Monitoring Agent v2.0.1`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2021-10-07`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "버그-픽스"
-    }, `버그 픽스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 19일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 페이지 로드, AJAX 이벤트 발생 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "Network Information API"), "의 다음 지표를 추가 수집", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
-    }, `FullChain 인증서를 사용하지 않는 일부 URL에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `sun.security.validator.ValidatorException `), ` 발생하는 현상을 개선했습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, `downlink`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, `effectiveType`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, `rtt`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 리소스 이벤트 발생 시 다음 지표를 추가 수집", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
-    }, `구 버전에서 지원하지 않던 SHA-256 ECDSA 알고리즘 인증서에 대한 URL 체크가 가능 하도록 수정했습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "url-monitoring-agent-v003"
-    }, `URL Monitoring Agent v0.0.3`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2019-04-25`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "버그-픽스-1"
-    }, `버그 픽스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `https 프로토콜의 URL 모니터링이 불가하여 하기 에러가 발생하던 건을 개선하였습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-java",
-        "metastring": "title='Java'",
-        "title": "'Java'"
-    }, `sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `SSL 기반으로 통신할 경우 인증서를 받아들여 정상 통신이 가능하도록 하는 매커니즘이 필요함에 따라, 클라이언트 모듈이 등록된 URL로 접근시에 받아들이게 되는 인증서를 허용하도록 개선하였습니다.`));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, `deliveryType`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, `responseStatus`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " Content Security Policy(CSP) 에러 수집 기능 추가")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `추가한 지표에 대한 자세한 내용은 다음 링크를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "TTL07611",
+        className: "uitext",
+        mdxType: "Cmdname"
+    })), ` (effectiveType)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "TTL07612",
+        className: "uitext",
+        mdxType: "Cmdname"
+    })), ` (rtt)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "TTL07610",
+        className: "uitext",
+        mdxType: "Cmdname"
+    })), ` (downlink)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/deliveryType"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+        class: "uitext"
+    }, `Delivery Type`)), ` (deliveryType)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "li",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStatus"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "status_code",
+        className: "uitext",
+        mdxType: "Cmdname"
+    })), ` (responseStatus)`))));
 }
 MDXContent.isMDXComponent = true;
 

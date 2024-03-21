@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[60716],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[7221],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 71260:
+/***/ 91281:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,38 +308,32 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'browser-v1_1_2',
-    title: 'Browser Agent v1.1.2',
-    toc_max_heading_level: 3
+    id: 'browser-v1_1_3',
+    title: 'Browser Agent v1.1.3',
+    toc_max_heading_level: 3,
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/browser/browser-v1_1_2",
-    "id": "release-notes/browser/browser-v1_1_2",
-    "title": "Browser Agent v1.1.2",
-    "description": "2023년 5월 15일",
-    "source": "@site/docs/release-notes/browser/browser-v1.1.2.mdx",
+    "unversionedId": "release-notes/browser/browser-v1_1_3",
+    "id": "release-notes/browser/browser-v1_1_3",
+    "title": "Browser Agent v1.1.3",
+    "description": "2023년 5월 23일",
+    "source": "@site/docs/release-notes/browser/browser-v1.1.3.mdx",
     "sourceDirName": "release-notes/browser",
-    "slug": "/release-notes/browser/browser-v1_1_2",
-    "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_2",
+    "slug": "/release-notes/browser/browser-v1_1_3",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_3",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/browser/browser-v1.1.2.mdx",
+    "editUrl": "undefined/docs/release-notes/browser/browser-v1.1.3.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "browser-v1_1_2",
-        "title": "Browser Agent v1.1.2",
-        "toc_max_heading_level": 3
-    },
-    "sidebar": "releaseSidebar",
-    "previous": {
+        "id": "browser-v1_1_3",
         "title": "Browser Agent v1.1.3",
-        "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_3"
+        "toc_max_heading_level": 3,
+        "displayed_sidebar": "releaseSidebar"
     },
-    "next": {
-        "title": "Browser Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/browser/browser-previous"
-    }
+    "sidebar": "releaseSidebar"
 };
 const assets = {};
 const toc = [];
@@ -359,17 +353,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 5월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 5월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " 수집 제한 옵션 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Fixed"), " 에러가 발생하던 url 정규화 로직 삭제"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `특정 리소스 수집 제한: 리소스 URL의 호스트, 패스, 정규표현식 기준 수집 제한 옵션`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `특정 페이지에서 발생하는 모든 데이터 수집 제한: 페이지 URL의 호스트, 패스, 정규표현식 기준 수집 제한 옵션`))));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 에이전트 방어 코드 추가")));
 }
 MDXContent.isMDXComponent = true;
 
