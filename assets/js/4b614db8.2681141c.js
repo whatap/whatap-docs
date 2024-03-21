@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44419],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[60992],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 65894:
+/***/ 7642:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,36 +308,32 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'aws-log-lt',
+    id: 'log-lt',
     title: '라이브 테일',
-    description: 'AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.',
+    description: '로그 모니터링 라이브 테일을 안내합니다.',
     tags: [
-        'AWS Log',
-        '로그',
+        '로그 모니터링',
         '라이브 테일',
         'UI'
-    ]
+    ],
+    toc_max_heading_level: 3
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "aws-log/aws-log-lt",
-    "id": "aws-log/aws-log-lt",
+    "unversionedId": "log/log-lt",
+    "id": "log/log-lt",
     "title": "라이브 테일",
-    "description": "AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.",
-    "source": "@site/docs/aws-log/aws-log-lt.mdx",
-    "sourceDirName": "aws-log",
-    "slug": "/aws-log/aws-log-lt",
-    "permalink": "/whatap-docs/aws-log/aws-log-lt",
+    "description": "로그 모니터링 라이브 테일을 안내합니다.",
+    "source": "@site/docs/log/log-lt.mdx",
+    "sourceDirName": "log",
+    "slug": "/log/log-lt",
+    "permalink": "/whatap-docs/log/log-lt",
     "draft": false,
-    "editUrl": "undefined/docs/aws-log/aws-log-lt.mdx",
+    "editUrl": "undefined/docs/log/log-lt.mdx",
     "tags": [
         {
-            "label": "AWS Log",
-            "permalink": "/whatap-docs/tags/aws-log"
-        },
-        {
-            "label": "로그",
-            "permalink": "/whatap-docs/tags/로그"
+            "label": "로그 모니터링",
+            "permalink": "/whatap-docs/tags/로그-모니터링"
         },
         {
             "label": "라이브 테일",
@@ -350,24 +346,24 @@ const metadata = {
     ],
     "version": "current",
     "frontMatter": {
-        "id": "aws-log-lt",
+        "id": "log-lt",
         "title": "라이브 테일",
-        "description": "AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.",
+        "description": "로그 모니터링 라이브 테일을 안내합니다.",
         "tags": [
-            "AWS Log",
-            "로그",
+            "로그 모니터링",
             "라이브 테일",
             "UI"
-        ]
+        ],
+        "toc_max_heading_level": 3
     },
-    "sidebar": "awslogSidebar",
+    "sidebar": "logSidebar",
     "previous": {
-        "title": "로그 파싱하기",
-        "permalink": "/whatap-docs/aws-log/log-parser"
+        "title": "주요 메뉴 알아보기",
+        "permalink": "/whatap-docs/log/learn-main-menu"
     },
     "next": {
         "title": "로그 트렌드",
-        "permalink": "/whatap-docs/aws-log/aws-log-exp"
+        "permalink": "/whatap-docs/log/log-exp"
     }
 };
 const assets = {};
@@ -632,7 +628,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `연산자`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `검색 값`), `의 순서로 입력합니다. 입력창에 값을 입력할 때 띄어쓰기로 키워드를 구분합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `검색 값`), `의 순서로 입력합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `''`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
@@ -952,7 +948,7 @@ weaving=logback-1.2.8
         parentName: "li"
     }, `파서 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "/whatap-docs/aws-log/log-parser"
+        "href": "/whatap-docs/log/log-parser"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "필터-수정"
     }, `필터 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `필터에 값을 입력한 뒤 입력한 값을 클릭하면 해당 값을 수정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[79876],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44419],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 66004:
+/***/ 65894:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,32 +308,36 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'log-lt',
+    id: 'aws-log-lt',
     title: '라이브 테일',
-    description: '로그 모니터링 라이브 테일을 안내합니다.',
+    description: 'AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.',
     tags: [
-        '로그 모니터링',
+        'AWS Log',
+        '로그',
         '라이브 테일',
-        'UI',
-        'PostgreSQL'
+        'UI'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "postgresql/log-lt",
-    "id": "postgresql/log-lt",
+    "unversionedId": "aws-log/aws-log-lt",
+    "id": "aws-log/aws-log-lt",
     "title": "라이브 테일",
-    "description": "로그 모니터링 라이브 테일을 안내합니다.",
-    "source": "@site/docs/postgresql/log-lt.mdx",
-    "sourceDirName": "postgresql",
-    "slug": "/postgresql/log-lt",
-    "permalink": "/whatap-docs/postgresql/log-lt",
+    "description": "AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.",
+    "source": "@site/docs/aws-log/aws-log-lt.mdx",
+    "sourceDirName": "aws-log",
+    "slug": "/aws-log/aws-log-lt",
+    "permalink": "/whatap-docs/aws-log/aws-log-lt",
     "draft": false,
-    "editUrl": "undefined/docs/postgresql/log-lt.mdx",
+    "editUrl": "undefined/docs/aws-log/aws-log-lt.mdx",
     "tags": [
         {
-            "label": "로그 모니터링",
-            "permalink": "/whatap-docs/tags/로그-모니터링"
+            "label": "AWS Log",
+            "permalink": "/whatap-docs/tags/aws-log"
+        },
+        {
+            "label": "로그",
+            "permalink": "/whatap-docs/tags/로그"
         },
         {
             "label": "라이브 테일",
@@ -342,32 +346,28 @@ const metadata = {
         {
             "label": "UI",
             "permalink": "/whatap-docs/tags/ui"
-        },
-        {
-            "label": "PostgreSQL",
-            "permalink": "/whatap-docs/tags/postgre-sql"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "log-lt",
+        "id": "aws-log-lt",
         "title": "라이브 테일",
-        "description": "로그 모니터링 라이브 테일을 안내합니다.",
+        "description": "AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.",
         "tags": [
-            "로그 모니터링",
+            "AWS Log",
+            "로그",
             "라이브 테일",
-            "UI",
-            "PostgreSQL"
+            "UI"
         ]
     },
-    "sidebar": "postgreSidebar",
+    "sidebar": "awslogSidebar",
     "previous": {
-        "title": "적용하기",
-        "permalink": "/whatap-docs/postgresql/log-db"
+        "title": "로그 파싱하기",
+        "permalink": "/whatap-docs/aws-log/log-parser"
     },
     "next": {
         "title": "로그 트렌드",
-        "permalink": "/whatap-docs/postgresql/log-exp"
+        "permalink": "/whatap-docs/aws-log/aws-log-exp"
     }
 };
 const assets = {};
@@ -632,7 +632,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `연산자`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `검색 값`), `의 순서로 입력합니다. 입력창에 값을 입력할 때 띄어쓰기로 키워드를 구분합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `검색 값`), `의 순서로 입력합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `''`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
@@ -952,7 +952,7 @@ weaving=logback-1.2.8
         parentName: "li"
     }, `파서 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "/whatap-docs/postgresql/log-parser"
+        "href": "/whatap-docs/aws-log/log-parser"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "필터-수정"
     }, `필터 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `필터에 값을 입력한 뒤 입력한 값을 클릭하면 해당 값을 수정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {

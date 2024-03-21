@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[42714],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[61769],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 46552:
+/***/ 85526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -316,21 +316,21 @@ const frontMatter = {
         '로그',
         '로그 검색',
         'UI',
-        'PostgreSQL'
+        'MySQL'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "postgresql/log-search",
-    "id": "postgresql/log-search",
+    "unversionedId": "mysql/log-search",
+    "id": "mysql/log-search",
     "title": "로그 검색",
     "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-    "source": "@site/docs/postgresql/log-search.mdx",
-    "sourceDirName": "postgresql",
-    "slug": "/postgresql/log-search",
-    "permalink": "/whatap-docs/postgresql/log-search",
+    "source": "@site/docs/mysql/log-search.mdx",
+    "sourceDirName": "mysql",
+    "slug": "/mysql/log-search",
+    "permalink": "/whatap-docs/mysql/log-search",
     "draft": false,
-    "editUrl": "undefined/docs/postgresql/log-search.mdx",
+    "editUrl": "undefined/docs/mysql/log-search.mdx",
     "tags": [
         {
             "label": "로그 모니터링",
@@ -349,8 +349,8 @@ const metadata = {
             "permalink": "/whatap-docs/tags/ui"
         },
         {
-            "label": "PostgreSQL",
-            "permalink": "/whatap-docs/tags/postgre-sql"
+            "label": "MySQL",
+            "permalink": "/whatap-docs/tags/my-sql"
         }
     ],
     "version": "current",
@@ -363,17 +363,17 @@ const metadata = {
             "로그",
             "로그 검색",
             "UI",
-            "PostgreSQL"
+            "MySQL"
         ]
     },
-    "sidebar": "postgreSidebar",
+    "sidebar": "mysqlSidebar",
     "previous": {
         "title": "로그 트렌드",
-        "permalink": "/whatap-docs/postgresql/log-exp"
+        "permalink": "/whatap-docs/mysql/log-exp"
     },
     "next": {
         "title": "로그 설정",
-        "permalink": "/whatap-docs/postgresql/log-setting"
+        "permalink": "/whatap-docs/mysql/log-setting"
     }
 };
 const assets = {};
@@ -824,7 +824,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `연산자`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `검색 값`), `의 순서로 입력합니다. 입력창에 값을 입력할 때 띄어쓰기로 키워드를 구분합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `검색 값`), `의 순서로 입력합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `''`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
@@ -1144,7 +1144,7 @@ weaving=logback-1.2.8
         parentName: "li"
     }, `파서 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "/whatap-docs/postgresql/log-parser"
+        "href": "/whatap-docs/mysql/log-parser"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "필터-수정"
     }, `필터 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `필터에 값을 입력한 뒤 입력한 값을 클릭하면 해당 값을 수정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[61769],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[59496],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 85526:
+/***/ 17334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,33 +308,32 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'log-search',
+    id: 'aws-log-search',
     title: '로그 검색',
-    description: '로그 모니터링의 로그 검색 메뉴를 안내합니다.',
+    description: 'AWS Log 모니터링의 로그 검색 메뉴를 안내합니다.',
     tags: [
-        '로그 모니터링',
+        'AWS Log',
         '로그',
         '로그 검색',
-        'UI',
-        'MySQL'
+        'UI'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/log-search",
-    "id": "mysql/log-search",
+    "unversionedId": "aws-log/aws-log-search",
+    "id": "aws-log/aws-log-search",
     "title": "로그 검색",
-    "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-    "source": "@site/docs/mysql/log-search.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/log-search",
-    "permalink": "/whatap-docs/mysql/log-search",
+    "description": "AWS Log 모니터링의 로그 검색 메뉴를 안내합니다.",
+    "source": "@site/docs/aws-log/aws-log-search.mdx",
+    "sourceDirName": "aws-log",
+    "slug": "/aws-log/aws-log-search",
+    "permalink": "/whatap-docs/aws-log/aws-log-search",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/log-search.mdx",
+    "editUrl": "undefined/docs/aws-log/aws-log-search.mdx",
     "tags": [
         {
-            "label": "로그 모니터링",
-            "permalink": "/whatap-docs/tags/로그-모니터링"
+            "label": "AWS Log",
+            "permalink": "/whatap-docs/tags/aws-log"
         },
         {
             "label": "로그",
@@ -347,33 +346,28 @@ const metadata = {
         {
             "label": "UI",
             "permalink": "/whatap-docs/tags/ui"
-        },
-        {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "log-search",
+        "id": "aws-log-search",
         "title": "로그 검색",
-        "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
+        "description": "AWS Log 모니터링의 로그 검색 메뉴를 안내합니다.",
         "tags": [
-            "로그 모니터링",
+            "AWS Log",
             "로그",
             "로그 검색",
-            "UI",
-            "MySQL"
+            "UI"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "awslogSidebar",
     "previous": {
         "title": "로그 트렌드",
-        "permalink": "/whatap-docs/mysql/log-exp"
+        "permalink": "/whatap-docs/aws-log/aws-log-exp"
     },
     "next": {
-        "title": "로그 설정",
-        "permalink": "/whatap-docs/mysql/log-setting"
+        "title": "Flex 보드",
+        "permalink": "/whatap-docs/aws-log/flexboard"
     }
 };
 const assets = {};
@@ -824,7 +818,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `연산자`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `검색 값`), `의 순서로 입력합니다. 입력창에 값을 입력할 때 띄어쓰기로 키워드를 구분합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `검색 값`), `의 순서로 입력합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `''`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
@@ -1144,7 +1138,7 @@ weaving=logback-1.2.8
         parentName: "li"
     }, `파서 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "/whatap-docs/mysql/log-parser"
+        "href": "/whatap-docs/aws-log/log-parser"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "필터-수정"
     }, `필터 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `필터에 값을 입력한 뒤 입력한 값을 클릭하면 해당 값을 수정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
