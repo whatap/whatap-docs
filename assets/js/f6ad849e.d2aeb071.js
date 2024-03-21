@@ -376,7 +376,7 @@ const metadata = {
         "permalink": "/whatap-docs/kubernetes/create-name-space-project"
     },
     "next": {
-        "title": "설정하기",
+        "title": "쿠버네티스 에이전트 옵션 설정",
         "permalink": "/whatap-docs/kubernetes/set-agent"
     }
 };
