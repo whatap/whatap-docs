@@ -11,3 +11,89 @@ tags:
 ---
 
 {@include: ../common-items/_trs-view.mdx}
+
+## Criteria for exceptional handling (**WARNING**) of the Java agent {#java-agent-exception}
+
+This guide provides the criteria for the Java agent's exceptional handling for errors that occur in the application environment using the Java language. The following content has been written based on [Java Agent v2.2.27](../release-notes/java/java-2_2_27).
+
+### Error display on the service screen
+
+![hitmap, Trace analysis](/img/faq/apm-faq-hitmap-error.png)
+
+Most <Cmdname sid="TTL06087" className="uitext" /> that can be seen throuth the <Cmdname sid="AA005" className="uitext" /> widget and <Cmdname sid="TTL06209" className="uitext" /> window are for the <span class="slow">WARNING</span> level.
+
+### Error handling when passing the Spring ExceptionHandler
+
+In the Spring framework, passing the `org.springframework.web.servlet.DispatcherServlet.processHandlerException` method is treated as an error. However, if a developer uses the Try-Catch statement, WhaTap does not handle it as an error because it does not pass `ExceptionHandler`.
+
+### Status Code 400 or higher error handling
+
+If the HTTP response code is 400 or higher, it is treated as an error even if no exception class occurs.
+
+### Error handling when calling the JDBC driver
+
+The errors that occur when making a JDBC connection call or SQL execution call, are treated as errors.
+
+### Error handling for HTTP calls
+
+The errors that occur during HTTP calls appear in the `SLOW_HTTPC` or `httpc error` format.
+
+### WhaTap error handling
+
+The WhaTap monitoring service handles errors depending on specific conditions.
+
+- **TOO_MANY_RECORDS**: 1000 or more fetches
+
+- **SLOW_SQL**: SQL time of 30000 ms or more
+
+- **SLOW_HTTPC**: HTTP call elapsed time of 10000 ms or more
+
+- **httpc error**: HTTP call status code of 400 or more
+
+- **status error**: Transaction status code of 400 or more
+
+### Transaction error step INFO processing
+
+Some errors can be displayed as normal or ignored through the agent settings. The level displayed in the <Cmdname sid="AA005" className="uitext" /> widget is <span class="normal">INFO</span> (blue).
+
+:::note
+
+Agent settings can be configured by editing the _whatap.conf_ file or using <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />. For more information, see [the following](../java/set-agent).
+
+:::
+
+- `biz_exceptions`: Displays the record error.
+
+  ```ini title="whatap.conf"
+  biz_exceptions=io.home.test.baseapp.base.exception.custom.CustomParameterizedException
+  ```
+
+- `ignore_exceptions`: Does not display the record error.
+
+  ```ini title="whatap.conf"
+  ignore_exceptions=org.springframework.web.util.NestedServletException
+  ```
+
+- `status_ignore`
+
+  ```ini title="whatap.conf"
+  status_ignore=408,500,200
+  ```
+
+- `httpc_status_ignore`
+
+  ```ini title="whatap.conf"
+  httpc_status_ignore=403,401
+  ```
+
+- `status_ignore_set`
+
+  ```ini title="whatap.conf"
+  status_ignore_set=/api/posts/test/timeout:200,/error:500
+  ```
+
+- `httpc_status_url_ignore_set`
+
+  ```ini title="whatap.conf"
+  httpc_status_url_ignore_set=/api/posts/test/timeout:408,/api/apache/httpclient/posts/timeout:500
+  ```

@@ -1,0 +1,41 @@
+Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />
+
+You can check the daily trends of the application's key performance metrics through the hourly chart.
+
+<ImgLang img='application_daily_app_stat.png' desc='Daily APP. Status' />
+
+You can check the application status for the day. Set the search conditions (<Cmdname sid="select_date2" className="uitext" />, <Cmdname sid="option_type" className="uitext" />, <Cmdname sid="application" className="uitext" />) and then select ![Search icon](/img/ico-btn-search.png). The conditions of the <Cmdname sid="option_type" className="uitext" /> option are as follows:
+
+| Classification                                  | Description                                                           |
+| ----------------------------------------------- | --------------------------------------------------------------------- |
+| <Cmdname sid="type_oid" className="uitext" />   | Application agent name included in the project                        |
+| <Cmdname sid="type_okind" className="uitext" /> | Group unit categorized as the `whatap.okind` option in agent settings |
+| <Cmdname sid="type_onode" className="uitext" /> | Group unit categorized as the `whatap.onode` option in agent settings |
+
+The provided charts are as follows: The numbers on the right of the chart display the accumulated value or average, and maximum value for the day.
+
+- <Cmdname sid="h24_tx" className="uitext" />
+
+- <Cmdname sid="h24_user" className="uitext" />
+
+  :::note
+
+  <Cmdname sid="daily_visit" className="uitext" /> is the sum of users accumulated for the day without duplication. Instead of simply adding up, it is calculated using <b>HyperLogLog</b>. <b>HyperLogLog</b> is a probabilistic data structure that estimates the number of elements in a set with very little memory.
+
+  :::
+
+- <Cmdname sid="h24_httpc" className="uitext" />
+
+- <Cmdname sid="h24_sql" className="uitext" />
+
+- <Cmdname sid="h24_sql_fetch" className="uitext" />
+
+- <Cmdname sid="5m288_rtime" className="uitext" />
+
+- <Cmdname sid="5m288_tps" className="uitext" />
+
+- <Cmdname sid="5m288_actx" className="uitext" />
+
+- <Cmdname sid="5m288_err_count" className="uitext" />
+
+- <Cmdname sid="5m288_err_rate" className="uitext" />

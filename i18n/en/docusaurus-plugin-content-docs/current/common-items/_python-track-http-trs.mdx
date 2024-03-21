@@ -44,6 +44,10 @@
 
   Specify the extension to determine the static content. Transactions with extensions set here are excluded from transaction tracing and counting.
 
+- **trace_ignore_url_set** <span class='type'>String</span>
+
+  It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
   Set the URL prefix for excluding transactions during collection. Any URLs whose prefix matches the set value do not collect the transaction performance.
