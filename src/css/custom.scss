@@ -1793,6 +1793,32 @@ main {
         }
       }
     }
+    .k8s-table-set-agent {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 35%;
+            }
+            &:nth-of-type(2) {
+              width: 10%;word-break: break-all;
+            }
+            &:nth-of-type(3) {
+              width: 5%;
+            }
+            &:nth-of-type(4) {
+              width: 25%;
+            }
+            &:last-of-type {
+              width: 25%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
     .browser-metric {
       table {
         tr {
