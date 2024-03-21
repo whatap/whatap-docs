@@ -4805,7 +4805,8 @@ const sidebars = {
             id: 'browser/apply-agent'
           },
           items: [
-            'browser/collect-custom-events'
+            'browser/collect-custom-events',
+            'browser/set-real-user-id'
           ],
         },
         'browser/before-starting',
@@ -4852,6 +4853,7 @@ const sidebars = {
             'browser/analyze-pageload',
             'browser/analyze-ajax-hitmap',
             'browser/tracking-error',
+            'browser/user-session-log-search'
           ],
         },
         {
