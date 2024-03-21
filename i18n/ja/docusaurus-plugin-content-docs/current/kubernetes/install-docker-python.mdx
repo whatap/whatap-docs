@@ -54,7 +54,7 @@ RUN pip3 install --upgrade whatap-python
 アプリケーションを実行する前に、Pythonエージェントの作業ディレクトリを設定し、デフォルトの設定ファイルを作成します。設定ファイル(_entrypoint.sh_)を通じてエージェントに認証情報やログの追跡有無などを設定します。
 
 <details>
-<summary>設定ファイル(entrypoint.sh)完成例</summary>
+<summary>設定ファイル(entrypoint.sh)の例</summary>
 
 ```bash title='entrypoint.sh'
 #!/bin/bash
@@ -95,7 +95,7 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
    export WHATAP_HOME=${PWD}
    ```
 
-2. 「WHATAP_HOME」に設定したパスに_whatap.conf_ファイルを作成するため、次のコマンドを実行してください。「$」で表記された変数は、エージェント構成に必要な設定値です。アプリケーション配布の_yaml_ファイルを通じて設定します。
+2. `WHATAP_HOME`に設定したパスに_whatap.conf_ファイルを作成するため、次のコマンドを実行してください。`$`で表記された変数は、エージェント構成に必要な設定値です。アプリケーション配布の_yaml_ファイルを通じて設定します。
 
    ```bash
    whatap-setting-config \
@@ -232,11 +232,11 @@ spec:
 
 - `whatap_server_host`：WhaTap収集サーバーのホストIPです。
 
-- `app_name`：アプリケーションを識別するためのエージェント名の構成要素です。エージェント識別の詳細については、[次の文書]](https://docs.whatap.io/python/agent-name)を参考にしてください。
+- `app_name`：アプリケーションのエージェントを特定するための名前です。エージェント特定に対する詳細は、[次の文書]](https://docs.whatap.io/python/agent-name)を参考にしてください。
 
 - `app_process_name`：CPU、Heap Memoryなど収集する対象プロセスを設定します。例としてuwsgi、gunicornなどがあります。
 
-- `okind`(オプション)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名に設定すると、該当するPodを一つにグループ化します。
+- `okind`(オプション)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名で設定すると、該当するPodを一つにグループ化します。
 
 - `NODE_IP`: 現在のPodがホストされているノード(Node)のIPアドレスを収集します。
 

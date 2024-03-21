@@ -11,7 +11,7 @@ tags:
 
 エージェントでトランザクションのパフォーマンスを追跡および設定するため、次のオプションを提供します。
 
-### トランザクショントレーシング
+## トランザクショントレーシング
 
 {@include: ../common-items/_transaction-profiling-common.mdx}
 
@@ -75,7 +75,7 @@ tags:
 
   デフォルト値`Empty`
 
-  HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
 
   ```ini title='whatap.conf'
   httpc_status_ignore=404,500
@@ -93,7 +93,7 @@ tags:
 
   :::
 
-### HTTPトランザクションの追跡
+## HTTPトランザクションの追跡
 
 {@include: ../common-items/_transaction-trace-common.mdx} 
 
@@ -103,7 +103,7 @@ tags:
 
   トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
-- **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span> <ScrollToLink anchor="trace_ignore_url_prefix" />
 
   トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
@@ -120,6 +120,16 @@ tags:
   # e.g. http_methodがOPTIONS、HEADであるトランザクションを「無視」
   ignore_http_method=OPTIONS,HEAD
   ```
+
+- **profile_http_header_ignore_keys** <span class='type'>String</span>
+
+  デフォルト値 `Cookie,cookie,accept,user-agent,referer`
+
+  HTTPヘッダー名を指定して収集情報から除外できます。指定したHTTPヘッダー名の値は収集から除外され、'#'と表示されます。
+
+- **profile_http_parameter_keys** <span class='type'>String</span>
+
+  設定されたキーに該当するパラメータ情報のみを記録します。複数を登録するときは、コンマ(,)を区切り文字として利用してください。設定しない場合、すべてのパラメータ情報が記録されます。
 
 - **status_ignore** <span class='type'>String</span>
 
@@ -149,7 +159,7 @@ tags:
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
-### 非HTTPトランザクションのトレース
+## 非HTTPトランザクションのトレース
 
 - **hook_service_patterns** <span class='type'>String</span>
 
@@ -161,7 +171,7 @@ tags:
 
   ソケット (TCP) がトランザクションではなくバックグラウンドスレッドによってオープンされた場合に接続がオープンされ、トランザクションが開始された場合にのみ、オープントレースします。
 
-### マルチトランザクショントレース
+## マルチトランザクショントレース
 
 - **mtrace_rate** <span class='type'>Int</span>
 
@@ -210,3 +220,25 @@ tags:
   デフォルト値`false`
 
   CallerとCalleeの相関統計を収集します。Callerに適用するとCallerの詳細情報が送信され、Calleeを適用するとurl単位のCaller-Calleeの呼び出し統計情報が収集サーバーに送信されます。
+
+## トレースデータサンプリング
+
+<code class="my">Node.js Agent v0.4.94 or later</code>
+
+:::note
+
+[Node.jsエージェントv0.4.94バージョン](../release-notes/nodejs/nodejs-0_4_94)に[socket.io](http://socket.io)モニタリングモジュールを追加しました。`trace_sampling_enabled`、`trace_sampling_tps` オプションを使用して、サンプリングされたデータを確認できます。[`trace_ignore_url_prefix`](#trace_ignore_url_prefix)オプションに`/socket.io`パスを追加して、トレースしないように設定してください。
+
+:::
+
+- **trace_sampling_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値 `false`
+
+  トレースデータサンプリングの収集有無を設定できます。
+
+- **trace_sampling_tps** <span class='type'>Number</span>
+
+  デフォルト値 `1000`
+
+  トレースデータサンプリングの数を設定できます。設定したサンプリング数を超えるデータは送信せず、1秒ごとに初期化します。

@@ -11,3 +11,89 @@ tags:
 ---
 
 {@include: ../common-items/_trs-view.mdx}
+
+## Javaエージェントの例外処理(**WARNING**) 基準{#java-agent-exception}
+
+Java言語を使用するアプリケーション環境で発生するエラーをJavaエージェントが例外処理する基準について案内します。次の内容は、[Javaエージェントv2.2.27](../release-notes/java/java-2_2_27) 基準で作成されました。
+
+### サービス画面でのエラー表示
+
+![hitmap, Trace analysis](/img/faq/apm-faq-hitmap-error.png)
+
+<Cmdname sid="AA005" className="uitext" />ウィジェット、<Cmdname sid="TTL06209" className="uitext" />ウィンドウから確認できる<Cmdname sid="TTL06087" className="uitext" />は、大体<span class="slow">WARNING</span>レベルに該当します。
+
+### Spring ExceptionHandler通過時のエラー処理
+
+Springフレームワークでは、`org.springframework.web.servlet.DispatcherServlet.processHandlerException` メソッドを通過する場合、エラーとして処理します。ただ、開発者がTry-Catch文を使用する場合は、`ExceptionHandler`を通過しませんので、WhaTapではエラー処理を行いません。
+
+### Status Code 400以上のエラー処理
+
+HTTPレスポンスコードが400以上の場合は、例外クラス(Exception Class)が発生しなくてもエラーとして処理します。
+
+### JDBC driver呼び出し時のエラー処理
+
+JDBC接続呼び出しやSQL実行呼び出し時に発生するエラーはエラーとして処理されます。
+
+### HTTP callエラー処理
+
+HTTP呼び出し中に発生するエラーは、`SLOW_HTTPC`、`httpc error`などの形で表示されます。
+
+### WhaTapエラー処理
+
+WhaTapモニタリングサービスでは、特定の条件に従ってエラーとして処理します。
+
+- **TOO_MANY_RECORDS**：fetch件数10000件以上
+
+- **SLOW_SQL**：SQL時間30000ms以上
+
+- **SLOW_HTTPC**：HTTP call経過時間が10000ms以上
+
+- **httpc error**：HTTP call status code 400以上の場合
+
+- **status error**：トランザクションstatus code 400以上の場合
+
+### トランザクションエラー段階のINFO処理
+
+エージェント設定により、一部のエラーを正常な状態で表示または無視できます。<Cmdname sid="AA005" className="uitext" />ウィジェットで表示されるレベルは、<span class="normal">INFO</span>(青)です。
+
+:::note
+
+エージェント設定は、_whatap.conf_ファイルを編集するか<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで確認できます。詳しい内容は、[次の文書](../java/set-agent)を参考にしてください。
+
+:::
+
+- `biz_exceptions`：レコードエラー表示
+
+  ```ini title="whatap.conf"
+  biz_exceptions=io.home.test.baseapp.base.exception.custom.CustomParameterizedException
+  ```
+
+- `ignore_exceptions`：レコードエラー未表示
+
+  ```ini title="whatap.conf"
+  ignore_exceptions=org.springframework.web.util.NestedServletException
+  ```
+
+- `status_ignore`
+
+  ```ini title="whatap.conf"
+  status_ignore=408,500,200
+  ```
+
+- `httpc_status_ignore`
+
+  ```ini title="whatap.conf"
+  httpc_status_ignore=403,401
+  ```
+
+- `status_ignore_set`
+
+  ```ini title="whatap.conf"
+  status_ignore_set=/api/posts/test/timeout:200,/error:500
+  ```
+
+- `httpc_status_url_ignore_set`
+
+  ```ini title="whatap.conf"
+  httpc_status_url_ignore_set=/api/posts/test/timeout:408,/api/apache/httpclient/posts/timeout:500
+  ```
