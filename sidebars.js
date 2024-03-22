@@ -4795,20 +4795,7 @@ const sidebars = {
             'browser/browser-preset',
           ],
         },
-        {
-          type: 'category',
-          label: '브라우저 에이전트 적용',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'browser/apply-agent'
-          },
-          items: [
-            'browser/collect-custom-events',
-            'browser/set-real-user-id'
-          ],
-        },
+        'browser/apply-agent',
         'browser/before-starting',
         {
           type: 'category',
@@ -4853,7 +4840,6 @@ const sidebars = {
             'browser/analyze-pageload',
             'browser/analyze-ajax-hitmap',
             'browser/tracking-error',
-            'browser/user-session-log-search'
           ],
         },
         {
