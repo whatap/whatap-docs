@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44258],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[3524],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 38027:
+/***/ 21873:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '애플리케이션 대시보드',
     description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
     tags: [
-        '.NET',
+        'Java',
         '대시보드',
         '애플리케이션',
         '애플리케이션 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/dashboard",
-    "id": "dotnet/dashboard",
+    "unversionedId": "java/dashboard",
+    "id": "java/dashboard",
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-    "source": "@site/docs/dotnet/dashboard.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/dashboard",
-    "permalink": "/whatap-docs/dotnet/dashboard",
+    "source": "@site/docs/java/dashboard.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/dashboard",
+    "permalink": "/whatap-docs/java/dashboard",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/dashboard.mdx",
+    "editUrl": "undefined/docs/java/dashboard.mdx",
     "tags": [
         {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
+            "label": "Java",
+            "permalink": "/whatap-docs/tags/java"
         },
         {
             "label": "대시보드",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "애플리케이션 대시보드",
         "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
         "tags": [
-            ".NET",
+            "Java",
             "대시보드",
             "애플리케이션",
             "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
         "title": "대시보드",
-        "permalink": "/whatap-docs/dotnet/dashboard-intro"
+        "permalink": "/whatap-docs/java/dashboard-intro"
     },
     "next": {
         "title": "트랜잭션 맵",
-        "permalink": "/whatap-docs/dotnet/dashboard-transactionmap"
+        "permalink": "/whatap-docs/java/dashboard-transactionmap"
     }
 };
 const assets = {};
@@ -470,6 +470,11 @@ const toc = [
     {
         value: '<Cmdname sid="AA002" />',
         id: 'active-trs',
+        level: 4
+    },
+    {
+        value: '<Cmdname sid="AA018" />',
+        id: 'active-trs-agent',
         level: 4
     },
     {
@@ -1256,6 +1261,27 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "track-transactions-intro"
     }, `다음 문서`), `를 참조하세요.`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+        "id": "active-trs-agent"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "AA018",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "apm-dashboard-active-tx-agent.png",
+        desc: "에이전트 액티브 트랜잭션",
+        mdxType: "ImgLang"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "AA002",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 위젯은 에이전트 선택 옵션에서 선택한 기준에 따라 병합된 데이터를 차트에 표시합니다. 반면 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "AA018",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 위젯은 선택한 에이전트 분류 기준에 포함된 에이전트의 현황을 개별로 확인할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드에서 마우스 오른쪽 버튼을 클릭한 다음 위젯 목록에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "AA018",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 위젯을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "active-status"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "AA004",
@@ -1702,7 +1728,7 @@ function MDXContent(_param) {
         sid: "daily_app_stat",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), ` 메뉴로 이동합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "실시간-알림-확인하기"
     }, `실시간 알림 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 오른쪽 위에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "실시간 알림 icon",

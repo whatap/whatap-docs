@@ -818,15 +818,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `연산자`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `검색 값`), `의 순서로 입력합니다. 키워드 내 띄어쓰기를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "p"
-    }, `''`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "p"
-    }, `""`), ` 부호로 감싸서 입력하세요. 부호로 감싼 키워드에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "p"
-    }, `\\`), `를 포함할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "p"
-    }, `\\`, `\\`), `로 입력하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }, `검색 값`), `의 순서로 입력합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "검색 아이콘",
         src: (__webpack_require__(71973)/* ["default"] */ .A),
         width: "28",
