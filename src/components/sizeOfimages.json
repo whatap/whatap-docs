@@ -7631,6 +7631,50 @@
     "width": 645,
     "height": 254
   },
+  "k8s-set-agent-container-container-map-en.png": {
+    "width": 1200,
+    "height": 767
+  },
+  "k8s-set-agent-container-container-map-ja.png": {
+    "width": 1200,
+    "height": 765
+  },
+  "k8s-set-agent-container-container-map.png": {
+    "width": 1200,
+    "height": 770
+  },
+  "k8s-set-agent-container-image.png": {
+    "width": 1200,
+    "height": 150
+  },
+  "k8s-set-agent-kube-pod-container-map-en.png": {
+    "width": 1200,
+    "height": 773
+  },
+  "k8s-set-agent-kube-pod-container-map-ja.png": {
+    "width": 1200,
+    "height": 772
+  },
+  "k8s-set-agent-kube-pod-container-map.png": {
+    "width": 1200,
+    "height": 770
+  },
+  "k8s-set-agent-kube-pod-pod-list.png": {
+    "width": 1200,
+    "height": 130
+  },
+  "k8s-set-agent-node-detail-en.png": {
+    "width": 1200,
+    "height": 852
+  },
+  "k8s-set-agent-node-detail-ja.png": {
+    "width": 1200,
+    "height": 853
+  },
+  "k8s-set-agent-node-detail.png": {
+    "width": 1200,
+    "height": 851
+  },
   "k8s-tx-list-en.png": {
     "width": 1200,
     "height": 915
@@ -10123,9 +10167,17 @@
     "width": 600,
     "height": 313
   },
+  "new-feature-01-postgresql-en.png": {
+    "width": 1200,
+    "height": 633
+  },
+  "new-feature-01-postgresql-ja.png": {
+    "width": 1200,
+    "height": 633
+  },
   "new-feature-01-postgresql.png": {
     "width": 1200,
-    "height": 397
+    "height": 633
   },
   "new-feature-01-redis-en.png": {
     "width": 1200,
@@ -11175,9 +11227,17 @@
     "width": 1200,
     "height": 30
   },
+  "release-k8s-container-add-option.png": {
+    "width": 600,
+    "height": 253
+  },
   "release-k8s-container-block.png": {
     "width": 1200,
     "height": 1302
+  },
+  "release-k8s-container-group-application-count.png": {
+    "width": 600,
+    "height": 545
   },
   "release-log-level-color.png": {
     "width": 1206,
