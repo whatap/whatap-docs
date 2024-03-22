@@ -8,24 +8,24 @@ tags:
   - PHP
 ---
 
-1.  WhaTap **リポジトリ**を登録します。
+1. WhaTap **リポジトリ**を登録します。
 
-    ```bash title=SH
-    $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    ```
+   ```bash title=SH
+   $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   ```
 
-2.  次のコマンドを使用して**パッケージ**をインストールしてください。
+2. 次のコマンドを使用して**パッケージ**をインストールしてください。
 
-    ```bash title=SH
-    $ sudo yum install whatap-php
-    ```
+   ```bash title=SH
+   $ sudo yum install whatap-php
+   ```
 
-3.  {@include: ../../common-items/_php-install-script.mdx}
+3. {@include: ../../common-items/_php-install-script.mdx}
 
 {@include: ../../common-items/_php-extension-whatap.mdx} 
 

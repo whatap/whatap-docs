@@ -112,18 +112,18 @@ For example, to monitor **_Java applications_**, you need to install the WhaTap 
 
 WhaTap's **metric** consists of the following components:
 
--   **_Category_**: It means a key to identify units that bind the related metrics.
--   **_Tags_**: Data containing unique identifiers to find the targets to collect. It stores items such as IP, Oname, and host that rarely change. Multiple tags exist in the form of map.
--   **_Fields_**: It stores all metrics collected from the agent. Multiple fields exist in the form of map.
--   **_Time_**: Time when the metric has been collected.
--   **_Oid_**: Unique number of the agent that has collected metrics.
--   **_Oname_**: Unique name of the agent that has collected metrics.
+- **_Category_**: It means a key to identify units that bind the related metrics.
+- **_Tags_**: Data containing unique identifiers to find the targets to collect. It stores items such as IP, Oname, and host that rarely change. Multiple tags exist in the form of map.
+- **_Fields_**: It stores all metrics collected from the agent. Multiple fields exist in the form of map.
+- **_Time_**: Time when the metric has been collected.
+- **_Oid_**: Unique number of the agent that has collected metrics.
+- **_Oname_**: Unique name of the agent that has collected metrics.
 
 ## Viewing and visualizing the metrics data
 
-<Xclude product='browser'>
+<Xclude product='browser,npm'>
 
-WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as **_Metrics Search_** that can look up the original data of metrics, **_Metrics Chart_** that can look up metrics data through visualized charts, and **_Metrics Anomaly Detection_** that can detect out-of-pattern anomalies by comparing with the patterns of metrics learned by AI.
+WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as <Cmdname sid="tag_count" className="uitext" /> that can look up the original data of metrics, <Cmdname sid="tag_count_chart" className="uitext" /> that can look up metrics data through visualized charts, and <Cmdname sid="tag_count_anomaly_detection" className="uitext" /> that can detect out-of-pattern anomalies by comparing with the patterns of metrics learned by AI.
 
 <ImgLang img='metrics-views.png' desc='Metrics view' className='noneborder' />
 
@@ -131,6 +131,12 @@ WhaTap provides a list of original data collected according to the conditions sp
 
 <InDoc product='browser'>
 
-WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as **_Metrics Search_** that can look up the original data of metrics and **_Metrics Chart_** that can look up metrics data through visualized charts.
+WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as <Cmdname sid="tag_count" className="uitext" /> that can look up the original data of metrics and <Cmdname sid="tag_count_chart" className="uitext" /> that can look up metrics data through visualized charts.
+
+</InDoc>
+
+<InDoc product='npm'>
+
+WhaTap provides the <Cmdname sid="tag_count" className="uitext" /> menu where you can search the original data collected based on the user-defined conditions.
 
 </InDoc>

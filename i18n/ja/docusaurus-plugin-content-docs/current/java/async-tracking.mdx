@@ -19,9 +19,9 @@ Javaエージェント設定を通じてCompletableFutureメソッドを収集�
 
 ユーザーのJavaアプリケーションプロジェクトにエージェントとしてhookingするCompletableFutureメソッドを追加してください。
 
--   メソッド名:'trace'で統一
+- メソッド名:'trace'で統一
 
--   ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
+- ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
 
 ```java
 package io.home.test.util;
@@ -56,33 +56,33 @@ hook_completablefuture_patterns=io.home.test.util.W.*
 
 :::note
 
--   Contextがある場合は、`trace`メソッドを追加してトランザクションを接続してください。
+- Contextがある場合は、`trace`メソッドを追加してトランザクションを接続してください。
 
--   Contextがない場合は、`hook_service_patterns`オプションでサービスを開始する必要があります。
+- Contextがない場合は、`hook_service_patterns`オプションでサービスを開始する必要があります。
 
 :::
 
 ### 使用例
 
--   **イベントソース**
+- **イベントソース**
 
-    ```java showLineNumbers
-    public CompletableFuture<String> serviceATimeout() {
-        return CompletableFuture.supplyAsync(() -> {
-            RestTemplate restTemplate = new RestTemplate();
-            return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
-        });
-    }
-    ```
+  ```java showLineNumbers
+  public CompletableFuture<String> serviceATimeout() {
+      return CompletableFuture.supplyAsync(() -> {
+          RestTemplate restTemplate = new RestTemplate();
+          return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
+      });
+  }
+  ```
 
--   `io.home.test.util.W.trace()`適用
+- `io.home.test.util.W.trace()`適用
 
-    ```java showLineNumbers {3}
-    // io.home.test.util.W.trace()適用
-    public CompletableFuture<String> serviceATimeout() {
-        return CompletableFuture.supplyAsync(W.trace(() -> {
-            RestTemplate restTemplate = new RestTemplate();
-            return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
-        }));
-    }
-    ```
+  ```java showLineNumbers {3}
+  // io.home.test.util.W.trace()適用
+  public CompletableFuture<String> serviceATimeout() {
+      return CompletableFuture.supplyAsync(W.trace(() -> {
+          RestTemplate restTemplate = new RestTemplate();
+          return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
+      }));
+  }
+  ```

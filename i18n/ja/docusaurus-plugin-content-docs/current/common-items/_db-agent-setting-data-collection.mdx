@@ -1,124 +1,124 @@
 <InDoc product ='mysql,mysql-v1'>
 
--   **deadlock_interval** <span class='type'>Int</span>
+- **deadlock_interval** <span class='type'>Int</span>
 
-    デフォルト値 `60`
+  デフォルト値 `60`
 
-    deadlock情報を読み込む間隔(単位: 分)を設定します。deadlock情報は、設定した間隔で発生した最後のdeadlock情報のみを読み込みます。
+  deadlock情報を読み込む間隔(単位: 分)を設定します。deadlock情報は、設定した間隔で発生した最後のdeadlock情報のみを読み込みます。
 
 </InDoc>
 
 <Xclude product ='redis'>
 
--   **long_run_session_sec** <span class='type'>Second</span>
+- **long_run_session_sec** <span class='type'>Second</span>
 
-    デフォルト値`10`
+  デフォルト値`10`
 
-    設定した時間より長く実行されているセッションをlong runセッションとして処理します。(単位：秒)
+  設定した時間より長く実行されているセッションをlong runセッションとして処理します。(単位：秒)
 
--   **tables_hour** <span class='type'>Int</span>
+- **tables_hour** <span class='type'>Int</span>
 
-    デフォルト値`5`
+  デフォルト値`5`
 
-    テーブル情報を保存するために情報を収集する時間を設定します。デフォルトは`5`で、午前5時に収集を開始します。
+  テーブル情報を保存するために情報を収集する時間を設定します。デフォルトは`5`で、午前5時に収集を開始します。
 
 </Xclude>
 
 <InDoc product='oracle,tibero'>
 
--   **tables_min_size** <span class='type'>Int</span>
+- **tables_min_size** <span class='type'>Int</span>
 
-    デフォルト値`10`
+  デフォルト値`10`
 
-    テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位は、デフォルト値では10MBです。
+  テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位は、デフォルト値では10MBです。
 
--   **tables_exclude_sys** <span class='type'>Boolean</span>
+- **tables_exclude_sys** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    テーブル情報を収集する際に、sys所有のテーブル情報の収集有無を設定します。 `true`に設定すると、sys所有のテーブル情報は収集されません。
+  テーブル情報を収集する際に、sys所有のテーブル情報の収集有無を設定します。 `true`に設定すると、sys所有のテーブル情報は収集されません。
 
 </InDoc>
 
 <InDoc product="cubrid">
 
--   **tables_min_row** <span class='type'>Int</span>
+- **tables_min_row** <span class='type'>Int</span>
 
-    デフォルト値`10000`
+  デフォルト値`10000`
 
-    テーブル情報を収集する場合、設定した値より小さいrow番号のテーブル情報は収集しません。
+  テーブル情報を収集する場合、設定した値より小さいrow番号のテーブル情報は収集しません。
 
 </InDoc>
 
 <Xclude product='cubrid,redis'>
 
--   **replication_name** <span class='type'>String</span>
+- **replication_name** <span class='type'>String</span>
 
-    レプリケーション名を設定すると、同じ`replication_name`を持つDBの間にMaster/Slave関係があるものとみなします。
+  レプリケーション名を設定すると、同じ`replication_name`を持つDBの間にMaster/Slave関係があるものとみなします。
 
-    レプリケーションセットを定義するオプションとしてマスターノードとスレーブノードの両方に同じ値の`replication_name`オプションを設定すると**_インスタンスモニタリング_**でツリー構造で表示されます。また、このオプション値を基準に**_Flexボード_**でレプリケーション状態をモニタリングするウィジェットを提供します。
+  レプリケーションセットを定義するオプションとしてマスターノードとスレーブノードの両方に同じ値の`replication_name`オプションを設定すると**_インスタンスモニタリング_**でツリー構造で表示されます。また、このオプション値を基準に**_Flexボード_**でレプリケーション状態をモニタリングするウィジェットを提供します。
 
 </Xclude>
 
 <InDoc product='postgresql'>
 
--   **slave_ip** <span class='type'>string</span>
+- **slave_ip** <span class='type'>string</span>
 
-    IPアドレスの確認は、`select inet_server_addr();`とします。マスターノードから`pg_stat_replication.client_addr`を検索したときに表示されるIPアドレスのいずれか1つでなければなりません。`replication_name`オプション値が同じでもSlave DBである場合は、`slave_ip`を指定する必要があります。
+  IPアドレスの確認は、`select inet_server_addr();`とします。マスターノードから`pg_stat_replication.client_addr`を検索したときに表示されるIPアドレスのいずれか1つでなければなりません。`replication_name`オプション値が同じでもSlave DBである場合は、`slave_ip`を指定する必要があります。
 
-    :::note
+  :::note
 
-    RDSの場合、IPアドレスの代わりに`pg_replication_slots.slot_name`でMaster/Slave関係が設定されるため、`slave_ip`オプションを設定する必要はありません。
+  RDSの場合、IPアドレスの代わりに`pg_replication_slots.slot_name`でMaster/Slave関係が設定されるため、`slave_ip`オプションを設定する必要はありません。
 
-    :::
+  :::
 
 </InDoc>
 
 <Xclude product='cubrid,redis'>
 
--   **skip_whatap_session** <span class='type'>Int</span>
+- **skip_whatap_session** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    `1`が設定されている場合、WhaTapから収集するためのqueryが実行するセッションをactive session listに表示しません。(デフォルト値：0)
+  `1`が設定されている場合、WhaTapから収集するためのqueryが実行するセッションをactive session listに表示しません。(デフォルト値：0)
 
 </Xclude>
 
 <InDoc product='mysql,mysql-v1'>
 
--   **skip_sys_session** <span class='type'>Int</span>
+- **skip_sys_session** <span class='type'>Int</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    `2`が設定されている場合、sysセッション(root、system user、event_scheduler)はactive sessionで表示されません。`1`を設定すると、sysセッションは表示されますが、total runtimeから除外されます。
+  `2`が設定されている場合、sysセッション(root、system user、event_scheduler)はactive sessionで表示されません。`1`を設定すると、sysセッションは表示されますが、total runtimeから除外されます。
 
 </InDoc>
 
 <InDoc product='redis'>
 
--   **idle_as_active** <span class='type'>Second</span>
+- **idle_as_active** <span class='type'>Second</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    セッションが最後のactive状態になってからidle状態を維持した時間(秒)が設定値より小さいセッションをactive sessionとしてみなすオプションです。たとえば、設定値が1の場合、1秒以内にactiveだったセッションがアクティブセッションウィンドウに表示されます。
+  セッションが最後のactive状態になってからidle状態を維持した時間(秒)が設定値より小さいセッションをactive sessionとしてみなすオプションです。たとえば、設定値が1の場合、1秒以内にactiveだったセッションがアクティブセッションウィンドウに表示されます。
 
 </InDoc>
 
 <InDoc product='oracle'>
 
--   **ora_ratio** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.11 or later</code>
+- **ora_ratio** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.11 or later</code>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    各種ratio指標を追加で収集することができます。収集する指標は次のとおりです。
+  各種ratio指標を追加で収集することができます。収集する指標は次のとおりです。
 
-    -   `buffer cache hit ratio`
-    -   `soft parse ratio`
-    -   `hard parse ratio`
-    -   `library cache hit ratio`
-    -   `library cache pin hit ratio`
-    -   `library cache get hit ratio`
-    -   `latch hit ratio`
-    -   `shared pool free mem ratio`
+  - `buffer cache hit ratio`
+  - `soft parse ratio`
+  - `hard parse ratio`
+  - `library cache hit ratio`
+  - `library cache pin hit ratio`
+  - `library cache get hit ratio`
+  - `latch hit ratio`
+  - `shared pool free mem ratio`
 
 </InDoc>

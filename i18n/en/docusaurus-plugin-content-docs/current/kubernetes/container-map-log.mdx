@@ -22,15 +22,15 @@ The WhaTap Kubernetes monitoring service collects and stores the logs that occur
 
 Kubernetes has two types of logs:
 
--   Standard out logs for each container
+- Standard out logs for each container
 
--   Logs output by applications running inside each container
+- Logs output by applications running inside each container
 
 These logs serve to compensate for monitoring blind spots that are difficult to check with the container status or metrics data. You can check these logs as follows:
 
--   Standard Out logs of each container can be checked through the `kubectl logs` command provided by Kubernetes without entering into the container.
+- Standard Out logs of each container can be checked through the `kubectl logs` command provided by Kubernetes without entering into the container.
 
--   Application logs in each container must be checked in the container or for that purpose, a separate log collection method must be devised.
+- Application logs in each container must be checked in the container or for that purpose, a separate log collection method must be devised.
 
 ## Recent log messages (Container Stdout/Stderr)
 
@@ -62,27 +62,27 @@ All the related logs disappear when the container is shut down, but you can chec
 
 <ImgLang img='k8s-log-search.png' desc='Log Search' />
 
--   Through the ![number 1](/img/number-01.png) time selector, you can select a desired time for searching data. 
+- Through the ![number 1](/img/number-01.png) time selector, you can select a desired time for searching data. 
 
--   By specifying the ![number 2](/img/number-02.png) category through the options on the left, you can search data. For more information about the categories to view, see the following guide to [Bock](#block) and [Group](#group).
+- By specifying the ![number 2](/img/number-02.png) category through the options on the left, you can search data. For more information about the categories to view, see the following guide to [Bock](#block) and [Group](#group).
 
--   If you select ![number 2](/img/number-02.png) **_Hide tag_** on the right, the **_timestamp_** and **_message_** can be seen excluding tags during log recording.
+- If you select ![number 2](/img/number-02.png) **_Hide tag_** on the right, the **_timestamp_** and **_message_** can be seen excluding tags during log recording.
 
--   Click ![number 2](/img/number-02.png) **_Log search_** on the right. Then **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
+- Click ![number 2](/img/number-02.png) **_Log search_** on the right. Then **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
 
--   If you select ![number 3](/img/number-03.png) ![More icon](/img/ic-caret-right.svg) **_More_**, the parsed key values and log messages can be displayed. For more information, see [the following](../log/log-search).
+- If you select ![number 3](/img/number-03.png) ![More icon](/img/ic-caret-right.svg) **_More_**, the parsed key values and log messages can be displayed. For more information, see [the following](../log/log-search).
 
 #### General blocks and micro blocks{#block}
 
 ![Container block sc](/img/k8s-block.png)
 
--   ![a icon](/img/char-a.svg) **General block**
+- ![a icon](/img/char-a.svg) **General block**
 
-    A single polygon in the container map is called a block. In the `containerStdout` category of the log, you can see the information whose `containerid` matches.
+  A single polygon in the container map is called a block. In the `containerStdout` category of the log, you can see the information whose `containerid` matches.
 
--   ![b icon](/img/char-b.svg) **Micro block**
+- ![b icon](/img/char-b.svg) **Micro block**
 
-    Blocks with agents installed are called microblocks. In addition to the `containerStdout` category, you can also see `App*` related categories such as `AppLog`, `AppStdOut`, and `AppStdErr`. If you select the category, you can see the logs that match `microOid` (agent ID in the block).
+  Blocks with agents installed are called microblocks. In addition to the `containerStdout` category, you can also see `App*` related categories such as `AppLog`, `AppStdOut`, and `AppStdErr`. If you select the category, you can see the logs that match `microOid` (agent ID in the block).
 
 #### Group{#group}
 

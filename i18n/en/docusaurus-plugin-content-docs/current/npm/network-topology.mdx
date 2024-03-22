@@ -19,23 +19,23 @@ Topology shapes the network with **nodes** and **edges**. In parallel with the t
 
 <ImgLang img="npm-dashboad-network-topology.png" desc="Network topology" />
 
--   **Node** is a criterion for expressing the data collected from the monitored servers in group units. This element is expressed as a circle in the chart.
+- **Node** is a criterion for expressing the data collected from the monitored servers in group units. This element is expressed as a circle in the chart.
 
--   **Edge\*** means the node-to-node communication. For more information, see [the following](#edge).
+- **Edge\*** means the node-to-node communication. For more information, see [the following](#edge).
 
--   You can move the screen to a desired position by clicking and dragging an empty area of the topology chart.
+- You can move the screen to a desired position by clicking and dragging an empty area of the topology chart.
 
--   You can zoom in or out the topology chart by scrolling the mouse wheel. You can also use the slide tools at the lower right corner.
+- You can zoom in or out the topology chart by scrolling the mouse wheel. You can also use the slide tools at the lower right corner.
 
--   You can move each node by clicking and dragging it to a desired position.
+- You can move each node by clicking and dragging it to a desired position.
 
--   Select the ![Zoom Out icon](/img/ic-fit-content.svg) button on the upper right of the screen to sort the canvas positions so that all nodes are visible on the screen. It is useful for quickly seeing all nodes after filtering tags and repositioning nodes.
+- Select the ![Zoom Out icon](/img/ic-fit-content.svg) button on the upper right of the screen to sort the canvas positions so that all nodes are visible on the screen. It is useful for quickly seeing all nodes after filtering tags and repositioning nodes.
 
--   Just above the topology chart, you can see the summary information such as the total node count, number of tag-filtered nodes, and threshold settings. 
+- Just above the topology chart, you can see the summary information such as the total node count, number of tag-filtered nodes, and threshold settings. 
 
-    ![Summary information](/img/npm-dashboad-network-topology-status-summary.png)
+  ![Summary information](/img/npm-dashboad-network-topology-status-summary.png)
 
--   To hide the filter panel on the right and zoom in the topology screen, select ![Fold icon](/img/ic-menu-fold.svg) on the right of the chart.
+- To hide the filter panel on the right and zoom in the topology screen, select ![Fold icon](/img/ic-menu-fold.svg) on the right of the chart.
 
 ## The topology chart options
 
@@ -57,9 +57,9 @@ Among the data displayed on the chart, only the required data can be visually ex
 
 #### Default options
 
--   <Cmdname sid="ITM06842" className="uitext" />: Set whether or not to display the animation when the threshold is exceeded.
+- <Cmdname sid="ITM06842" className="uitext" />: Set whether or not to display the animation when the threshold is exceeded.
 
--   <Cmdname sid="ITM06843" className="uitext" />: Set whether or not to display the edge labels.
+- <Cmdname sid="ITM06843" className="uitext" />: Set whether or not to display the edge labels.
 
 #### Setting the edge label {#edge}
 
@@ -69,23 +69,23 @@ Edge means the node-to-node communication and the labels for each edge display t
 
 You can select a type of the value to display on the edge of the topology chart. In <Cmdname sid="ITM07578" className="uitext" />, you can select a desired metric. The types of performance metrics that can be displayed on the edge are as follows.
 
--   **_jitter_**
+- **_jitter_**
 
--   **_latency_**
+- **_latency_**
 
--   **_bps_**(bit per second)
+- **_bps_**(bit per second)
 
--   **_pps_**(packet per second)
+- **_pps_**(packet per second)
 
--   **_sessions_**
+- **_sessions_**
 
 :::note
 
--   In <Cmdname sid="MNU06813" className="uitext" />, the second item is also changed according to the selected metric type. In the second item, you can set the thresholds for the selected metric.
+- In <Cmdname sid="MNU06813" className="uitext" />, the second item is also changed according to the selected metric type. In the second item, you can set the thresholds for the selected metric.
 
-    <ImgLang img='npm-dashboard-settings-threshold.png' desc='Threshold setting' />
+  <ImgLang img='npm-dashboard-settings-threshold.png' desc='Threshold setting' />
 
--   The weight of the node size is automatically set depending on the value selected in the <Cmdname sid="ITM07578" className="uitext" /> item.
+- The weight of the node size is automatically set depending on the value selected in the <Cmdname sid="ITM07578" className="uitext" /> item.
 
 :::
 
@@ -95,15 +95,15 @@ In the second item and <Cmdname sid="TTL06840" className="uitext" />, you can se
 
 The thresholds and units are set as follows, unless there is a separate setting procedure. 
 
--   latency > 200 (ms)
+- latency > 200 (ms)
 
--   jitter > 30 (ms)
+- jitter > 30 (ms)
 
--   bps > 128 (Mib/s)
+- bps > 128 (Mib/s)
 
--   pps > 50 (K/s)
+- pps > 50 (K/s)
 
--   sessions > 100
+- sessions > 100
 
 The settings can be checked in the summary on the upper left of the chart.
 
@@ -121,11 +121,11 @@ The information configured in this way can be saved through the **preset** funct
 
 :::note
 
--   Only the tags collected during the data lookup period are displayed in the list.
+- Only the tags collected during the data lookup period are displayed in the list.
 
--   To automatically select new added nodes, select the <Cmdname sid="DSC06824" className="uitext" /> option.
+- To automatically select new added nodes, select the <Cmdname sid="DSC06824" className="uitext" /> option.
 
--   For more information about the **preset** menu, see [the following](#preset).
+- For more information about the **preset** menu, see [the following](#preset).
 
 :::
 
@@ -134,13 +134,13 @@ The information configured in this way can be saved through the **preset** funct
 
 **To display only some nodes out of all nodes, follow the steps below.**
 
-1.  In the panel on the right of the screen, select the <Cmdname sid="filter" className="uitext" /> tab.
+1. In the panel on the right of the screen, select the <Cmdname sid="filter" className="uitext" /> tab.
 
-2.  Release the <Cmdname sid="ITM06846" className="uitext" /> option and then disable the <Cmdname sid="DSC06824" className="uitext" /> option.
+2. Release the <Cmdname sid="ITM06846" className="uitext" /> option and then disable the <Cmdname sid="DSC06824" className="uitext" /> option.
 
-3.  Select or deselect nodes in the topology chart. You can easily find the desired node by searching for the tag name or using the sorting function (![Sort icon](/img/ic-sort-up.svg)).
+3. Select or deselect nodes in the topology chart. You can easily find the desired node by searching for the tag name or using the sorting function (![Sort icon](/img/ic-sort-up.svg)).
 
-4.  At the bottom of the screen, select <Cmdname sid="apply" className="uitext" />.
+4. At the bottom of the screen, select <Cmdname sid="apply" className="uitext" />.
 
 <ImgLang img="npm-dashboard-topology-tag-filtering-01.png" desc="Usage example 1" />
 
@@ -158,9 +158,9 @@ You can quickly check the performance of the network section by integrating with
 
 <ImgLang img='npm-dashboad-network-topology-chart.png' desc='Chart' />
 
--   The items displayed in the <Cmdname sid="chart" className="uitext" /> tab are the tags selected in the <Cmdname sid="filter" className="uitext" /> tab.
+- The items displayed in the <Cmdname sid="chart" className="uitext" /> tab are the tags selected in the <Cmdname sid="filter" className="uitext" /> tab.
 
--   Hover your mouse over the chart to see the network performance over time.
+- Hover your mouse over the chart to see the network performance over time.
 
 ## Preset {#preset}
 
@@ -170,27 +170,27 @@ Through the **preset** function, you can save the sub network topology view by r
 
 The data saved in the preset is as follows.
 
--   Node display type
+- Node display type
 
--   Edge display type
+- Edge display type
 
--   Threshold value
+- Threshold value
 
--   Tag filter
+- Tag filter
 
--   Positions for each tag on the topology
+- Positions for each tag on the topology
 
 ### Creating a preset
 
-1.  Set the topology chart options as you want.
+1. Set the topology chart options as you want.
 
-2.  On the upper right of the screen, select ![Save icon](/img/ic-save.svg).
+2. On the upper right of the screen, select ![Save icon](/img/ic-save.svg).
 
-3.  When the <Cmdname sid="save_preset" className="uitext" /> window appears, enter the name of the preset to save.
+3. When the <Cmdname sid="save_preset" className="uitext" /> window appears, enter the name of the preset to save.
 
-    <ImgLang img='npm-dashboard-topology-save-preset.png' desc='Save Preset' />
+   <ImgLang img='npm-dashboard-topology-save-preset.png' desc='Save Preset' />
 
-4.  After entering the preset name, select <Cmdname sid="save" className="uitext" />.
+4. After entering the preset name, select <Cmdname sid="save" className="uitext" />.
 
 ### Modifying a preset
 

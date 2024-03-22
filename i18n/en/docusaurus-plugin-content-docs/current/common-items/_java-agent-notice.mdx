@@ -1,165 +1,165 @@
--   **recursive_event_interval** <span class='type'>MiliSeconds</span>
+- **recursive_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the interval between event notifications for recursive calls of transactions.
+  Set the interval between event notifications for recursive calls of transactions.
 
--   **reject_event_enabled** <span class='type'>Boolean</span>
+- **reject_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue an event notification when any service is rejected (call load restriction/decline).
+  Set whether or not to issue an event notification when any service is rejected (call load restriction/decline).
 
--   **reject_event_interval** <span class='type'>MiliSeconds</span>
+- **reject_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the event notification interval when any service is rejected (call load restriction/decline).
+  Set the event notification interval when any service is rejected (call load restriction/decline).
 
--   **httpc_event_enabled** <span class='type'>Boolean</span>
+- **httpc_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue event notification when an HTTPC connection error occurs.
+  Set whether or not to issue event notification when an HTTPC connection error occurs.
 
--   **httpc_event_interval** <span class='type'>MiliSeconds</span>
+- **httpc_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the event notification interval when an HTTPC connection error occurs.
+  Set the event notification interval when an HTTPC connection error occurs.
 
--   **heap_event_enabled** <span class='type'>Boolean</span>
+- **heap_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue an event notification when the heap usage threshold is reached.
+  Set whether or not to issue an event notification when the heap usage threshold is reached.
 
--   **heap_event_percent** <span class='type'>Percentage</span>
+- **heap_event_percent** <span class='type'>Percentage</span>
 
-    Default `90`
+  Default `90`
 
-    Set the threshold for issuing heap usage event notifications.
+  Set the threshold for issuing heap usage event notifications.
 
--   **heap_event_duration** <span class='type'>MiliSeconds</span>
+- **heap_event_duration** <span class='type'>MiliSeconds</span>
 
-    Default `30000`
+  Default `30000`
 
-    Set the duration for issuing heap usage event notifications.
+  Set the duration for issuing heap usage event notifications.
 
--   **heap_event_interval** <span class='type'>MiliSeconds</span>
+- **heap_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the interval for issuing heap usage event notifications.
+  Set the interval for issuing heap usage event notifications.
 
--   **heap_event_action** <span class='type'>String</span>
+- **heap_event_action** <span class='type'>String</span>
 
-    Default `NONE`
+  Default `NONE`
 
-    Set the dynamic loading code to run when a heap usage event occurs.
+  Set the dynamic loading code to run when a heap usage event occurs.
 
-    :::note
+  :::note
 
-    ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
+  ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
 
-    :::
+  :::
 
--   **disk_event_enabled** <span class='type'>Boolean</span>
+- **disk_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue an event notification when the disk usage threshold is reached.
+  Set whether or not to issue an event notification when the disk usage threshold is reached.
 
--   **disk_event_percent** <span class='type'>Percentage</span>
+- **disk_event_percent** <span class='type'>Percentage</span>
 
-    Default `90`
+  Default `90`
 
-    Set the threshold for issuing disk usage event notifications.
+  Set the threshold for issuing disk usage event notifications.
 
--   **disk_event_interval** <span class='type'>MiliSeconds</span>
+- **disk_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the interval for issuing disk usage event notifications.
+  Set the interval for issuing disk usage event notifications.
 
--   **disk_event_action** <span class='type'>String</span>
+- **disk_event_action** <span class='type'>String</span>
 
-    Set the dynamic loading code to run when a disk usage event occurs.
+  Set the dynamic loading code to run when a disk usage event occurs.
 
-    :::note
+  :::note
 
-    ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
+  ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
 
-    :::
+  :::
 
--   **cpu_event_enabled** <span class='type'>Boolean</span>
+- **cpu_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue an event notification when the CPU usage threshold is reached.
+  Set whether or not to issue an event notification when the CPU usage threshold is reached.
 
--   **cpu_event_percent** <span class='type'>Percentage</span>
+- **cpu_event_percent** <span class='type'>Percentage</span>
 
-    Default `90`
+  Default `90`
 
-    Set the threshold for issuing CPU usage envent notificaiton.
+  Set the threshold for issuing CPU usage envent notificaiton.
 
--   **cpu_event_duration** <span class='type'>MiliSeconds</span>
+- **cpu_event_duration** <span class='type'>MiliSeconds</span>
 
-    Default `30000`
+  Default `30000`
 
-    Set the duration for issuing CPU usage event notifications.
+  Set the duration for issuing CPU usage event notifications.
 
--   **cpu_event_interval** <span class='type'>MiliSeconds</span>
+- **cpu_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the interval for issuing CPU usage event notifications.
+  Set the interval for issuing CPU usage event notifications.
 
--   **cpu_event_action** <span class='type'>String</span>
+- **cpu_event_action** <span class='type'>String</span>
 
-    Set the ID to passed to the dynamic loading code to run when a CPU usage event occurs.
+  Set the ID to passed to the dynamic loading code to run when a CPU usage event occurs.
 
-    :::note
+  :::note
 
-    ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
+  ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
 
-    :::
+  :::
 
--   **dbc_dup_event_enabled** <span class='type'>Boolean</span>
+- **dbc_dup_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue an event notification when the DB connection is duplicated.
+  Set whether or not to issue an event notification when the DB connection is duplicated.
 
--   **dbc_dup_event_fullstack_enabled** <span class='type'>Boolean</span>
+- **dbc_dup_event_fullstack_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to secure a stack when the allocated DB connection is duplicated.
+  Set whether or not to secure a stack when the allocated DB connection is duplicated.
 
--   **exception_event_enabled** <span class='type'>Boolean</span>
+- **exception_event_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to issue an event notification when an exception occurs.
+  Set whether or not to issue an event notification when an exception occurs.
 
--   **exception_event_interval** <span class='type'>MiliSeconds</span>
+- **exception_event_interval** <span class='type'>MiliSeconds</span>
 
-    Default `60000`
+  Default `60000`
 
-    Set the duration for issuing event notifications when an exception occurs.
+  Set the duration for issuing event notifications when an exception occurs.
 
--   **exception_event_set** <span class='type'>String</span>
+- **exception_event_set** <span class='type'>String</span>
 
-    Set the target exception. Use comma (,) as the delimiter in case of multiple items.
+  Set the target exception. Use comma (,) as the delimiter in case of multiple items.
 
--   **exception_event_action** <span class='type'>String</span>
+- **exception_event_action** <span class='type'>String</span>
 
-    Set the dynamic loading code to run when an event occurs.
+  Set the dynamic loading code to run when an event occurs.
 
-    :::note
+  :::note
 
-    ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
+  ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)
 
-    :::
+  :::

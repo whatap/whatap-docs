@@ -46,54 +46,54 @@ func main() {
 
 #### Configuration
 
--   `grpc_profile_enabled`
+- `grpc_profile_enabled`
 
-    \#Default: true#
+  \#Default: true#
 
-    \#Type: boolean# 
+  \#Type: boolean# 
 
-    It sets whether or not to collect the GRPC data. 
+  It sets whether or not to collect the GRPC data. 
 
--   `grpc_profile_stream_client_enabled`
+- `grpc_profile_stream_client_enabled`
 
-    \#Default: true#
+  \#Default: true#
 
-    \#Type: boolean#
+  \#Type: boolean#
 
-    It sets whether or not to collect the client stream method data.
+  It sets whether or not to collect the client stream method data.
 
-    `false`: The stream method data is not collected. 
+  `false`: The stream method data is not collected. 
 
--   `grpc_profile_stream_server_enabled`
+- `grpc_profile_stream_server_enabled`
 
-    \#Default: true#
+  \#Default: true#
 
-    \#Type: boolean#
+  \#Type: boolean#
 
-    Set whether or not to collect the server stream methods.
+  Set whether or not to collect the server stream methods.
 
-    `false`: The stream method data is not collected. 
+  `false`: The stream method data is not collected. 
 
--   `grpc_profile_ignore_method`
+- `grpc_profile_ignore_method`
 
-    \#Default: agent#
+  \#Default: agent#
 
-    \#Type: string# 
+  \#Type: string# 
 
-    The specified methods are not collected. To set multiple items, use comma (,) as the delimiter.
+  The specified methods are not collected. To set multiple items, use comma (,) as the delimiter.
 
--   `grpc_profile_stream_method`
+- `grpc_profile_stream_method`
 
-    \#Default : "" #
+  \#Default : "" #
 
-    \#Type: string# 
+  \#Type: string# 
 
-    It organizes the specified stream method as a separate transaction. To set multiple items, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search. 
+  It organizes the specified stream method as a separate transaction. To set multiple items, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search. 
 
--   `grpc_profile_stream_identify`
+- `grpc_profile_stream_identify`
 
-    \#Default: false#
+  \#Default: false#
 
-    \#Type: boolean#
+  \#Type: boolean#
 
-    The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added. (_/StreamClient/[full method]"_, _/StreamServer/[full method]_)
+  The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added. (_/StreamClient/[full method]"_, _/StreamServer/[full method]_)

@@ -19,23 +19,23 @@ tags:
 
 <ImgLang img="npm-dashboad-network-topology.png" desc="ネットワークトポロジー" />
 
--   **ノード**は、モニタリング対象サーバーから収集したデータをグループ単位で表現する基準です。 チャートで円形に表現された要素です。
+- **ノード**は、モニタリング対象サーバーから収集したデータをグループ単位で表現する基準です。 チャートで円形に表現された要素です。
 
--   **エッジ**は、ノードとノード間の通信を意味します。 詳細については、[次の文書](#edge)を参照してください。
+- **エッジ**は、ノードとノード間の通信を意味します。 詳細については、[次の文書](#edge)を参照してください。
 
--   トポロジ ーチャートの空欄をマウスでクリックし、ドラッグして希望する位置に画面を移動できます。
+- トポロジ ーチャートの空欄をマウスでクリックし、ドラッグして希望する位置に画面を移動できます。
 
--   マウスホイールをスクロールして、トポロジーチャートを拡大または縮小できます。 右下のスライドツールを活用することもできます。
+- マウスホイールをスクロールして、トポロジーチャートを拡大または縮小できます。 右下のスライドツールを活用することもできます。
 
--   それぞれのノードをマウスでクリックし、希望する位置にドラッグして移動させることができます。
+- それぞれのノードをマウスでクリックし、希望する位置にドラッグして移動させることができます。
 
--   すべてのノードが画面に表示されるようにキャンバス位置をソートするには、画面右上の![縮小アイコン](/img/ic-fit-content.svg)ボタンを選択してください。 タグフィルタリングとノードの位置変更を実行した後、ノード全体をすばやく確認するのに役立ちます。
+- すべてのノードが画面に表示されるようにキャンバス位置をソートするには、画面右上の![縮小アイコン](/img/ic-fit-content.svg)ボタンを選択してください。 タグフィルタリングとノードの位置変更を実行した後、ノード全体をすばやく確認するのに役立ちます。
 
--   トポロジーチャートの上には、全体ノードの個数とタグフィルタリングされたノードの個数、しきい値設定などの要約情報を確認することができます。 
+- トポロジーチャートの上には、全体ノードの個数とタグフィルタリングされたノードの個数、しきい値設定などの要約情報を確認することができます。 
 
-    ![要約情報](/img/npm-dashboad-network-topology-status-summary.png)
+  ![要約情報](/img/npm-dashboad-network-topology-status-summary.png)
 
--   右フィルターパネルを非表示にしてトポロジー画面を大きく見るには、チャート右上の![折りたたみアイコン](/img/ic-menu-fold.svg)ボタンを選択してください。
+- 右フィルターパネルを非表示にしてトポロジー画面を大きく見るには、チャート右上の![折りたたみアイコン](/img/ic-menu-fold.svg)ボタンを選択してください。
 
 ## トポロジーチャートオプション
 
@@ -57,9 +57,9 @@ tags:
 
 #### 基本オプション
 
--   <Cmdname sid="ITM06842" className="uitext" />：しきい値を超えた場合に表示されるアニメーションの表示有無を設定します。
+- <Cmdname sid="ITM06842" className="uitext" />：しきい値を超えた場合に表示されるアニメーションの表示有無を設定します。
 
--   <Cmdname sid="ITM06843" className="uitext" />：エッジのラベル情報の表示有無を設定します。
+- <Cmdname sid="ITM06843" className="uitext" />：エッジのラベル情報の表示有無を設定します。
 
 #### エッジラベルの設定 {#edge}
 
@@ -69,23 +69,23 @@ tags:
 
 トポロジーチャートのエッジに表示する値の種類を選択できます。 <Cmdname sid="ITM07578" className="uitext" />項目で希望する指標を選択することができます。 エッジに表示可能な性能指標の種類は次のとおりです。
 
--   **_jitter_**
+- **_jitter_**
 
--   **_latency_**
+- **_latency_**
 
--   **_bps_**(bit per second)
+- **_bps_**(bit per second)
 
--   **_pps_**(packet per second)
+- **_pps_**(packet per second)
 
--   **_sessions_**
+- **_sessions_**
 
 :::note
 
--   <Cmdname sid="MNU06813" className="uitext" />項目で選択した指標の種類によって、2番目の項目も同様に変更されます。 2番目の項目では、選択した指標のしきい値を設定できます。
+- <Cmdname sid="MNU06813" className="uitext" />項目で選択した指標の種類によって、2番目の項目も同様に変更されます。 2番目の項目では、選択した指標のしきい値を設定できます。
 
-    <ImgLang img='npm-dashboard-settings-threshold.png' desc='しきい値の設定' />
+  <ImgLang img='npm-dashboard-settings-threshold.png' desc='しきい値の設定' />
 
--   <Cmdname sid="ITM07578" className="uitext" />項目で選択した値に応じて、ノードサイズのウエイトが自動的に設定されます。
+- <Cmdname sid="ITM07578" className="uitext" />項目で選択した値に応じて、ノードサイズのウエイトが自動的に設定されます。
 
 :::
 
@@ -95,15 +95,15 @@ tags:
 
 別途の設定プロセスがない場合、しきい値と単位は次のようにデフォルト設定されます。 
 
--   latency > 200(ms)
+- latency > 200(ms)
 
--   jitter > 30(ms)
+- jitter > 30(ms)
 
--   bps > 128(Mib/s)
+- bps > 128(Mib/s)
 
--   pps > 50(K/s)
+- pps > 50(K/s)
 
--   sessions > 100
+- sessions > 100
 
 設定された値は、チャートの左上にある要約情報から確認できます。
 
@@ -121,11 +121,11 @@ tags:
 
 :::note
 
--   データ照会期間中に実際に収集されたタグのみが一覧に表示されます。
+- データ照会期間中に実際に収集されたタグのみが一覧に表示されます。
 
--   新しいノードが追加された場合、自動的に選択するには、<Cmdname sid="DSC06824" className="uitext" />オプションを選択してください。
+- 新しいノードが追加された場合、自動的に選択するには、<Cmdname sid="DSC06824" className="uitext" />オプションを選択してください。
 
--   **プリセット**機能の詳細については、[次の文書](#preset)を参考にしてください。
+- **プリセット**機能の詳細については、[次の文書](#preset)を参考にしてください。
 
 :::
 
@@ -134,13 +134,13 @@ tags:
 
 **全体ノードの中で一部のノードのみを表示または除外するには、次の手順を実行してください。**
 
-1.  画面右側のパネルで<Cmdname sid="filter" className="uitext" />タブを選択してください。
+1. 画面右側のパネルで<Cmdname sid="filter" className="uitext" />タブを選択してください。
 
-2.  <Cmdname sid="ITM06846" className="uitext" /> オプションを解除して <Cmdname sid="DSC06824" className="uitext" /> オプションを非活性化してください。
+2. <Cmdname sid="ITM06846" className="uitext" /> オプションを解除して <Cmdname sid="DSC06824" className="uitext" /> オプションを非活性化してください。
 
-3.  トポロジチャートにノードを選択または除外してください。 タグ名を検索またはソート機能(![ソートアイコン](/img/ic-sort-up.svg))を利用すると、ご希望のノードを簡単に見つけることができます。
+3. トポロジチャートにノードを選択または除外してください。 タグ名を検索またはソート機能(![ソートアイコン](/img/ic-sort-up.svg))を利用すると、ご希望のノードを簡単に見つけることができます。
 
-4.  画面の下の<Cmdname sid="apply" className="uitext" />ボタンを選択してください。
+4. 画面の下の<Cmdname sid="apply" className="uitext" />ボタンを選択してください。
 
 <ImgLang img="npm-dashboard-topology-tag-filtering-01.png" desc="活用例1" />
 
@@ -158,9 +158,9 @@ tags:
 
 <ImgLang img='npm-dashboad-network-topology-chart.png' desc='チャート' />
 
--   <Cmdname sid="chart" className="uitext" /> タブに表示される項目は、<Cmdname sid="filter" className="uitext" /> タブで選択したタグです。
+- <Cmdname sid="chart" className="uitext" /> タブに表示される項目は、<Cmdname sid="filter" className="uitext" /> タブで選択したタグです。
 
--   チャートの上にマウスオーバーすると、タイムゾーンごとのネットワークの性能を確認できます。
+- チャートの上にマウスオーバーすると、タイムゾーンごとのネットワークの性能を確認できます。
 
 ## プリセット {#preset}
 
@@ -170,27 +170,27 @@ tags:
 
 プリセットに保存される情報は次のとおりです。
 
--   ノード表示の種類
+- ノード表示の種類
 
--   エッジ表示の種類
+- エッジ表示の種類
 
--   しきい値
+- しきい値
 
--   タグフィルター
+- タグフィルター
 
--   トポロジー上の各タグの位置
+- トポロジー上の各タグの位置
 
 ### プリセット作成
 
-1.  トポロジーチャートオプションを自由に設定してください。
+1. トポロジーチャートオプションを自由に設定してください。
 
-2.  画面の右上に![保存アイコン](/img/ic-save.svg)ボタンを選択してください。
+2. 画面の右上に![保存アイコン](/img/ic-save.svg)ボタンを選択してください。
 
-3.  <Cmdname sid="save_preset" className="uitext" />ウィンドウが表示されたら、保存したいプリセットの名前を入力してください。
+3. <Cmdname sid="save_preset" className="uitext" />ウィンドウが表示されたら、保存したいプリセットの名前を入力してください。
 
-    <ImgLang img='npm-dashboard-topology-save-preset.png' desc='プリセット保存' />
+   <ImgLang img='npm-dashboard-topology-save-preset.png' desc='プリセット保存' />
 
-4.  プリセット名の入力を完了すると<Cmdname sid="save" className="uitext" /> ボタンを選択してください。
+4. プリセット名の入力を完了すると<Cmdname sid="save" className="uitext" /> ボタンを選択してください。
 
 ### プリセット修正
 

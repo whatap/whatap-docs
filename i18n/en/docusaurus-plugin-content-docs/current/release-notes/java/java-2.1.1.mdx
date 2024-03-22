@@ -228,11 +228,11 @@ The linked service status tracing function has been added so that the target IP 
 
 You can enable the function by setting `logsink_rt_enabled` to `true`, which collects logs with the #RemoteTrace category.
 
--   In case of a normal response, the level is ok. In case of error, the level is error.
+- In case of a normal response, the level is ok. In case of error, the level is error.
 
--   In case of a normal response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 30 seconds.
+- In case of a normal response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 30 seconds.
 
--   In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
+- In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
 
 ```ini title='whatap.conf'
 # Default

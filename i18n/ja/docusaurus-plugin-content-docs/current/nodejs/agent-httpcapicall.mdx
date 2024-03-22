@@ -10,6 +10,18 @@ tags:
 
 Node.jsエージェントのHTTPC、API Callのオプションを提供します。
 
-**hook_httpc_patterns** <span class='type'>String</span>
+- **hook_httpc_patterns** <span class='type'>String</span>
 
   HTTP Callを実行するクラスを設定します。
+
+- **httpc_not_found_ignore** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  Not Foundエラーが特定の時間(`httpc_not_found_ignore_time`)に50件以上発生すると、モニタリング検出を無視します。
+
+- **httpc_not_found_ignore_time** <span class='type'>Milisecond</span>
+
+  デフォルト値`300000`
+
+  `httpc_not_found_ignore`値が`true`である場合、Not Foundエラーを無視する時間を設定します。

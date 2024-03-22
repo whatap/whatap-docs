@@ -38,33 +38,33 @@ tasks.named("bootBuildImage") {
 }
 ```
 
--   `BP_WHATAP_ENABLED`
+- `BP_WHATAP_ENABLED`
 
-    Set whether or not to enable the WhaTap agent. If the value is `false`, installation is performed but started with monitoring stopped. You can change it to `true` in **_Management_**> **_Agent CONF._** in [Whatap Monitoring Service](https://service.whatap.io) later.
+  Set whether or not to enable the WhaTap agent. If the value is `false`, installation is performed but started with monitoring stopped. You can change it to `true` in **_Management_**> **_Agent CONF._** in [Whatap Monitoring Service](https://service.whatap.io) later.
 
--   `BPE_APPEND_JAVA_TOOL_OPTIONS`
+- `BPE_APPEND_JAVA_TOOL_OPTIONS`
 
-    If you are using Java 17 or later, add the JVM option.
+  If you are using Java 17 or later, add the JVM option.
 
-    ```java
-    environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
-    environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = "--add-opens=java.base/java.lang=ALL-UNNAMED"
-    ```
+  ```java
+  environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
+  environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = "--add-opens=java.base/java.lang=ALL-UNNAMED"
+  ```
 
-    Add spaces before and after if you are not using the delimiter environment variable.
+  Add spaces before and after if you are not using the delimiter environment variable.
 
-    ```java
-    environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "
-    ```
+  ```java
+  environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "
+  ```
 
--   `BP_WHATAP_OPTIONS`
+- `BP_WHATAP_OPTIONS`
 
-    You can add the WhaTap agent settings. Set options with linefeed "\\n" as the delimiter. The option is `key=value`. The set option values are saved in the `whatap.conf` file during the Docker Image creation step. 
+  You can add the WhaTap agent settings. Set options with linefeed "\\n" as the delimiter. The option is `key=value`. The set option values are saved in the `whatap.conf` file during the Docker Image creation step. 
 
-    ```java
-    environment["BP_WHATAP_OPTIONS"] = "accesskey={access key}\nwhatap.server.host={collection server address}"
-    // Example: environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
-    ```
+  ```java
+  environment["BP_WHATAP_OPTIONS"] = "accesskey={access key}\nwhatap.server.host={collection server address}"
+  // Example: environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
+  ```
 
 ## Tomcat 10 environment
 

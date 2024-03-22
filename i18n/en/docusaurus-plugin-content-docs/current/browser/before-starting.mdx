@@ -12,8 +12,8 @@ Before using the browser monitoring dashboard, be familiar with the terms define
 
 This process loads the content and resources of the page when accessing the web application. The browser monitoring service defines the page load time as follows.
 
--   When there is no DOM interaction, AJAX request, or resource response within 100 ms
--   When the `window onload` event occurs
+- When there is no DOM interaction, AJAX request, or resource response within 100 ms
+- When the `window onload` event occurs
 
 The combination of the above conditions determines the final load time.
 
@@ -41,10 +41,10 @@ For example, the URL path such as _/v2/project/sms**/`12`/**dashboard/resource_b
 
 The browser monitoring service classifies errors that occur in the browser as follows:
 
--   `console`: This developer-defined error appears on the browser console.
+- `console`: This developer-defined error appears on the browser console.
 
--   `onError`: This error occurs when a specific resource cannot be loaded or there is a problem in the script.
+- `onError`: This error occurs when a specific resource cannot be loaded or there is a problem in the script.
 
--   `fetch error`: This error occurs when there is an HTTP request through a fetch.
+- `fetch error`: This error occurs when there is an HTTP request through a fetch.
 
--   `xhr error`: This error occurs when there is an HTTP request through XHR.
+- `xhr error`: This error occurs when there is an HTTP request through XHR.

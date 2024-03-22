@@ -16,121 +16,121 @@ If you select a newly generated server monitoring project, the **_agent installa
 
 <ImgLang img='server-install-lx-unx.png' desc='Server Monitoring Linux Unix'/>
 
-1.  Register the WhaTap **repository**.  
+1. Register the WhaTap **repository**.  
 
-    ![number-s](/img/number-01.png) At the top of **_Management_** > **_Agent Installation_**, select the OS tab and then select the server OS. ![number-s](/img/number-02.png) In the **_Add WhaTap Repository_** tab, copy the command and enter it.
+   ![number-s](/img/number-01.png) At the top of **_Management_** > **_Agent Installation_**, select the OS tab and then select the server OS. ![number-s](/img/number-02.png) In the **_Add WhaTap Repository_** tab, copy the command and enter it.
 
-    <Tabs>
-    <TabItem value="du" label="Debian / Ubuntu" default>
+   <Tabs>
+   <TabItem value="du" label="Debian / Ubuntu" default>
 
-    ```bash title=SH
-    wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-    wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-    sudo dpkg -i whatap-repo_1.0_all.deb
-    sudo apt-get update
-    ```
+   ```bash title=SH
+   wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+   wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+   sudo dpkg -i whatap-repo_1.0_all.deb
+   sudo apt-get update
+   ```
 
-    </TabItem>
-    <TabItem value="co" label="CentOS">
+   </TabItem>
+   <TabItem value="co" label="CentOS">
 
-    ```bash title=SH
-    sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-    ```
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   ```
 
-    </TabItem>
-    <TabItem value="al" label="Amazon Linux">
+   </TabItem>
+   <TabItem value="al" label="Amazon Linux">
 
-    ```bash title=SH
-    sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    ```
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
-    <Tabs>
-    <TabItem value="suse" label="SUSE">
+   <Tabs>
+   <TabItem value="suse" label="SUSE">
 
-    ```bash title=SH
-    sudo rpm --import http://repo.whatap.io/suse/release.gpg
-    echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    sudo zypper refresh
-    ```
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/suse/release.gpg
+   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   sudo zypper refresh
+   ```
 
-    </TabItem>
-    <TabItem value="fb" label="FreeBSD">
+   </TabItem>
+   <TabItem value="fb" label="FreeBSD">
 
-    ```bash title=SH
-    wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
-    ```
+   ```bash title=SH
+   wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+   ```
 
-    </TabItem>
-    <TabItem value="xs" label="XenServer">
+   </TabItem>
+   <TabItem value="xs" label="XenServer">
 
-    ```bash title=SH
-    sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
-    ```
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
-2.  Install the **package** with the following command.
+2. Install the **package** with the following command.
 
-    ![number-s](/img/number-03.png) In the **_Install WhaTap Server Monitoring Patch_** tab, copy the command and enter it.
+   ![number-s](/img/number-03.png) In the **_Install WhaTap Server Monitoring Patch_** tab, copy the command and enter it.
 
-    <Tabs>
-    <TabItem value="du" label="Debian / Ubuntu" default>
+   <Tabs>
+   <TabItem value="du" label="Debian / Ubuntu" default>
 
-    ```bash title=SH
-    sudo apt-get install whatap-infra
-    ```
+   ```bash title=SH
+   sudo apt-get install whatap-infra
+   ```
 
-    </TabItem>
-    <TabItem value="suse" label="SUSE">
+   </TabItem>
+   <TabItem value="suse" label="SUSE">
 
-    ```bash title=SH
-    sudo zypper install whatap-infra
-    ```
+   ```bash title=SH
+   sudo zypper install whatap-infra
+   ```
 
-    </TabItem>
-    <TabItem value="fb" label="FreeBSD">
+   </TabItem>
+   <TabItem value="fb" label="FreeBSD">
 
-    ```bash title=SH
-    pkg install whatap-infra.txz
-    ```
+   ```bash title=SH
+   pkg install whatap-infra.txz
+   ```
 
-    </TabItem>
+   </TabItem>
 
-    <TabItem value="cax" label="CentOS / Amazon Linux / XenServer">
+   <TabItem value="cax" label="CentOS / Amazon Linux / XenServer">
 
-    ```bash title=SH
-    sudo yum install whatap-infra
-    ```
+   ```bash title=SH
+   sudo yum install whatap-infra
+   ```
 
-    </TabItem>
+   </TabItem>
 
-    </Tabs>
+   </Tabs>
 
-3.  Run the **configuration script**.
+3. Run the **configuration script**.
 
-    ![number-s](/img/number-04.png) Go to the **_Start Server Monitoring_** tab, get the command or execute the command below after adding the project access key and server IP.
+   ![number-s](/img/number-04.png) Go to the **_Start Server Monitoring_** tab, get the command or execute the command below after adding the project access key and server IP.
 
-    ```bash
-    echo "license=[Granted Project Access Key]" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host=[Granted WhaTap Server IP]" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    sudo service whatap-infra restart
-    ```
+   ```bash
+   echo "license=[Granted Project Access Key]" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host=[Granted WhaTap Server IP]" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo service whatap-infra restart
+   ```
 
 {@include: ../../common-items/_sv-tcp6600.mdx}  
 

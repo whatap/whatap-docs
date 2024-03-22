@@ -3,81 +3,82 @@ id: nodejs-0_4_83
 title: Node.js Agent v0.4.83
 toc_max_heading_level: 2
 pagination_next: release-notes/nodejs/nodejs-0_4_81
+displayed_sidebar: releaseSidebar
 ---
 
 December 11, 2023
 
--   <Status>Feature</Status> Added the agent options
+- <Status>Feature</Status> Added the agent options
 
-    -   **trace_sql_error_stack** <span class='type'>Boolean</span>
+  - **trace_sql_error_stack** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        SQL errors are stored as stacks (MySQL, MariaDB, PostgreSQL, SQL Server).
+    SQL errors are stored as stacks (MySQL, MariaDB, PostgreSQL, SQL Server).
 
-    -   **trace_sql_error_depth** <span class='type'>Int</span>
+  - **trace_sql_error_depth** <span class='type'>Int</span>
 
-        Default `50`
+    Default `50`
 
-        Set the number of lines of errors to be stored when applying the `trace_sql_error_stack` option.
+    Set the number of lines of errors to be stored when applying the `trace_sql_error_stack` option.
 
-    -   **profile_error_step_enabled** <span class='type'>Boolean</span>
+  - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
-        Default `true`
+    Default `true`
 
-        You can add a step to display error information in the profile.
+    You can add a step to display error information in the profile.
 
-    -   **ignore_http_method** <span class='type'>String</span>
+  - **ignore_http_method** <span class='type'>String</span>
 
-        Default `PATCH,OPTIONS,HEAD,TRACE`
+    Default `PATCH,OPTIONS,HEAD,TRACE`
 
-        Transactions requested through the set HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
+    Transactions requested through the set HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 
-        ```ini title="whatap.conf"
-        # example
-        ignore_http_method=OPTIONS,HEAD
-        ```
+    ```ini title="whatap.conf"
+    # example
+    ignore_http_method=OPTIONS,HEAD
+    ```
 
-    -   **status_ignore** <span class='type'>String</span>
+  - **status_ignore** <span class='type'>String</span>
 
-        Default `Empty`
+    Default `Empty`
 
-        You can set the HTTP status codes to ignore.
+    You can set the HTTP status codes to ignore.
 
-        ```ini title="whatap.conf"
-        # example
-        status_ignore=404,500
-        ```
+    ```ini title="whatap.conf"
+    # example
+    status_ignore=404,500
+    ```
 
-    -   **status_ignore_set** <span class='type'>String</span>
+  - **status_ignore_set** <span class='type'>String</span>
 
-        Default `Empty`
+    Default `Empty`
 
-        Among HTTP status return codes, you can set the codes to ignore on a URL basis.
+    Among HTTP status return codes, you can set the codes to ignore on a URL basis.
 
-        ```ini title="whatap.conf"
-        # example
-        status_ignore_set=/a/b/c:400,/a/ab/c:404
-        ```
+    ```ini title="whatap.conf"
+    # example
+    status_ignore_set=/a/b/c:400,/a/ab/c:404
+    ```
 
-    -   **transaction_status_error_enable** <span class='type'>Boolean</span>
+  - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-        Default `true`
+    Default `true`
 
-        If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
+    If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
 
--   <Status>Fixed</Status> Fixed the issue where the MongoDB monitoring does not work.
+- <Status>Fixed</Status> Fixed the issue where the MongoDB monitoring does not work.
 
--   <Status>Fixed</Status> Modified to store the MongoDB connection data.
+- <Status>Fixed</Status> Modified to store the MongoDB connection data.
 
 :::info
 
--   Package information: https://www.npmjs.com/package/whatap
+- Package information: https://www.npmjs.com/package/whatap
 
--   Installation and application methods
+- Installation and application methods
 
-    ```bash
-    npm i whatap
-    ```
+  ```bash
+  npm i whatap
+  ```
 
 :::

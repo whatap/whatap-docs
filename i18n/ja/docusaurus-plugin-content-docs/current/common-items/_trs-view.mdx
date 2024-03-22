@@ -44,29 +44,29 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 {@youtube: JHVYfJjtYQo}
 
--   **縦線(LOCK現象) パターン**  
+- **縦線(LOCK現象) パターン**  
 
-    トランザクション処理中に一時的なロック(Notonly DB Lock)が発生すると処理が待機されます。ロックが解除されると、処理待機中のトランザクションは同じ時間帯で同時に終了します。これにより、次のように垂直線が作成されます。
+  トランザクション処理中に一時的なロック(Notonly DB Lock)が発生すると処理が待機されます。ロックが解除されると、処理待機中のトランザクションは同じ時間帯で同時に終了します。これにより、次のように垂直線が作成されます。
 
-    ![hitmap-lock](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+  ![hitmap-lock](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
 
-    垂直パターンでロックを検知することは非常に強力な概念です。特にマイクロサービスアーキテクチャでは、バックエンドシステムで発生するロックについても同様に検知できます。
+  垂直パターンでロックを検知することは非常に強力な概念です。特にマイクロサービスアーキテクチャでは、バックエンドシステムで発生するロックについても同様に検知できます。
 
-    ![hitmap-front-api-db](https://img.whatap.io/media/user_guide_application/analysis/h8.png)
+  ![hitmap-front-api-db](https://img.whatap.io/media/user_guide_application/analysis/h8.png)
 
-    Frontアプリケーションのレスポンスパターンの縦線は、バックエンドシステムが使用するDBでロックが発生した場合も検知されます。
+  Frontアプリケーションのレスポンスパターンの縦線は、バックエンドシステムが使用するDBでロックが発生した場合も検知されます。
 
--   **横線(タイムアウト) パターン**  
+- **横線(タイムアウト) パターン**  
 
-    10秒のタイムアウト条件でリソースが不十分な場合、トランザクションは10秒間待機後にタイムアウトエラーが発生します。この時点で、ヒットマップの約10秒後に、次のような横線が作成されます。
+  10秒のタイムアウト条件でリソースが不十分な場合、トランザクションは10秒間待機後にタイムアウトエラーが発生します。この時点で、ヒットマップの約10秒後に、次のような横線が作成されます。
 
-    ![hitmap-timeout](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+  ![hitmap-timeout](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
 
-    タイムアウト後に再実行するロジックがある場合は、図のような横線が10秒単位で繰り返されます。以下は、実際の**トラブル状況**のヒットマップです。
+  タイムアウト後に再実行するロジックがある場合は、図のような横線が10秒単位で繰り返されます。以下は、実際の**トラブル状況**のヒットマップです。
 
-    ![hitmap-error](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+  ![hitmap-error](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
 
-    (1) セクションでレスポンス時間が増加し、(2) セクションの赤い線は典型的な**横線パターン**です。(1) セクションの負荷によりConnectionPoolが使い果たされ、(2) セクションはConnectionPoolの不足で2回目の**タイムアウト**トラブルが発生した状態です。
+  (1) セクションでレスポンス時間が増加し、(2) セクションの赤い線は典型的な**横線パターン**です。(1) セクションの負荷によりConnectionPoolが使い果たされ、(2) セクションはConnectionPoolの不足で2回目の**タイムアウト**トラブルが発生した状態です。
 
 ### パターン分析活用
 
@@ -86,21 +86,21 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 毎月数百TBのパフォーマンスデータから異常パターンを学習し、学習した異常パターンと同様のパターンが発生するとアラートを発報します。
 
--   **縦線パターン**  
+- **縦線パターン**  
 
-    ![hitmap-abnormal1](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+  ![hitmap-abnormal1](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
 
--   **横線パターン**  
+- **横線パターン**  
 
-    ![hitmap-abnormal2](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+  ![hitmap-abnormal2](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
 
--   **複合パターン**  
+- **複合パターン**  
 
-    ![hitmap-abnormal3](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+  ![hitmap-abnormal3](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
 
--   **ヒットマップ通知**  
+- **ヒットマップ通知**  
 
-    <ImgLang img='ai-alert.png' desc='hitmap ai alert' />
+  <ImgLang img='ai-alert.png' desc='hitmap ai alert' />
 
 :::note
 

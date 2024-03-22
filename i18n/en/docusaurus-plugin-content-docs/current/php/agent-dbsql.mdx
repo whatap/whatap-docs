@@ -10,124 +10,124 @@ tags:
   - Application
 ---
 
--   **whatap.trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+- **whatap.trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement. The literal part is denoted with "#."
+  It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement. The literal part is denoted with "#."
 
--   **whatap.profile_sql_resource_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_sql_resource_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It traces the CPU and memory usages during collection of SQLs in the transaction trace.
+  It traces the CPU and memory usages during collection of SQLs in the transaction trace.
 
--   **whatap.profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+- **whatap.profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
-    Default `false`
+  Default `false`
 
-    It is used to record SQL parameters in the transaction trace details. The parameters can be viewed by entering a separate security key.
+  It is used to record SQL parameters in the transaction trace details. The parameters can be viewed by entering a separate security key.
 
-    :::note
+  :::note
 
-    Set the security key to 6 digits in _/usr/whatap/php/paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+  Set the security key to 6 digits in _/usr/whatap/php/paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
 
-    :::
+  :::
 
--   **whatap.profile_sql_comment_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_sql_comment_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It deletes the comments from the collected SQL statements. If the value is `false`, SQL statements are collected without comments. Comments can be included or deleted through the setting.
+  It deletes the comments from the collected SQL statements. If the value is `false`, SQL statements are collected without comments. Comments can be included or deleted through the setting.
 
--   **whatap.profile_db_connection_map_size** <span class='type'>Int</span>
+- **whatap.profile_db_connection_map_size** <span class='type'>Int</span>
 
-    Default `20`
+  Default `20`
 
-    It is the maximum size to store DB connection data that keeps connection at the same time. Upon connection of exceeded DB, the oldest data is deleted first.
+  It is the maximum size to store DB connection data that keeps connection at the same time. Upon connection of exceeded DB, the oldest data is deleted first.
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_mysql_return_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_mysql_return_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_mysql_return_enabled` setting is `false`, this is not applied.
+  If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_mysql_return_enabled` setting is `false`, this is not applied.
 
--   **whatap.profile_mysql_error_ignore_empty** <span class='type'>Boolean</span>
+- **whatap.profile_mysql_error_ignore_empty** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_mysql_return_enabled` setting is `false`, it is not applied.
+  If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_mysql_return_enabled` setting is `false`, it is not applied.
 
--   **whatap.profile_mysqli_return_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_mysqli_return_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, when the result of the Mysqli library function is `false`, the function to display it as an error is enabled.
+  If the value is `true`, when the result of the Mysqli library function is `false`, the function to display it as an error is enabled.
 
--   **whatap.profile_mysqli_error_info_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_mysqli_error_info_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_mysqli_return_enabled` setting is `false`, this is not applied.
+  If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_mysqli_return_enabled` setting is `false`, this is not applied.
 
--   **whatap.profile_mysqli_error_ignore_empty** <span class='type'>Boolean</span>
+- **whatap.profile_mysqli_error_ignore_empty** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_mysqli_return_enabled` setting is `false`, it is not applied.
+  If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_mysqli_return_enabled` setting is `false`, it is not applied.
 
--   **whatap.profile_pdo_return_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_pdo_return_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, when the result of the pdo library function is `false`, the function to display it as an error is enabled.
+  If the value is `true`, when the result of the pdo library function is `false`, the function to display it as an error is enabled.
 
--   **whatap.profile_pdo_error_info_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_pdo_error_info_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_pdo_return_enabled` setting is `false`, this is not applied.
+  If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_pdo_return_enabled` setting is `false`, this is not applied.
 
--   **whatap.profile_pdo_error_ignore_empty** <span class='type'>Boolean</span>
+- **whatap.profile_pdo_error_ignore_empty** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_pdo_return_enabled` setting is `false`, it is not applied.
+  If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_pdo_return_enabled` setting is `false`, it is not applied.
 
--   **whatap.profile_pdo_return_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_pdo_return_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, when the result of the pdo library function is `false`, the function to display it as an error is enabled.
+  If the value is `true`, when the result of the pdo library function is `false`, the function to display it as an error is enabled.
 
--   **whatap.profile_pgsql_error_info_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_pgsql_error_info_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the function to mark as an error when the result of the pgsql (Posgressql) library function is `false`. If the `whatap.profile_pgsql_return_enabled` setting is `false`, this is not applied.
+  If the value is `true`, the function to mark as an error when the result of the pgsql (Posgressql) library function is `false`. If the `whatap.profile_pgsql_return_enabled` setting is `false`, this is not applied.
 
--   **whatap.profile_pgsql_error_ignore_empty** <span class='type'>Boolean</span>
+- **whatap.profile_pgsql_error_ignore_empty** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_pgsql_return_enabled` setting is `false`, it is not applied.
+  If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_pgsql_return_enabled` setting is `false`, it is not applied.
 
--   **wwhatap.profile_oci8_return_enabled** <span class='type'>Boolean</span>
+- **wwhatap.profile_oci8_return_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, when the result of the oci8 (Oracle) library function is `false`, the function to display it as an error is enabled.
+  If the value is `true`, when the result of the oci8 (Oracle) library function is `false`, the function to display it as an error is enabled.
 
--   **whatap.profile_oci8_error_info_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_oci8_error_info_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_pdo_return_enabled` setting is `false`, this is not applied.
+  If the value is `true`, the function to mark as an error when the result of the Mysql library function is `false`. If the `whatap.profile_pdo_return_enabled` setting is `false`, this is not applied.
 
--   **whatap.profile_pdo_error_ignore_empty** <span class='type'>Boolean</span>
+- **whatap.profile_pdo_error_ignore_empty** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_pdo_return_enabled` setting is `false`, it is not applied.
+  If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_pdo_return_enabled` setting is `false`, it is not applied.

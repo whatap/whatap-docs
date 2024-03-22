@@ -9,38 +9,38 @@ tags:
 
 Goエージェントの機能を制御できます。
 
--   **enabled** <span class='type'>Boolean</span>
+- **enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    すべての機能を活性化します。
+  すべての機能を活性化します。
 
--   **accesskey** / **license** <span class='type'>String</span>
+- **accesskey** / **license** <span class='type'>String</span>
 
-    エージェントを設置する時、付与されたアクセスキーを設定します。 アクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
+  エージェントを設置する時、付与されたアクセスキーを設定します。 アクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
 
--   **stat_enabled** <span class='type'>Boolean</span>
+- **stat_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    統計情報追跡機能を活性化します。 5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。
+  統計情報追跡機能を活性化します。 5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。
 
--   **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
+- **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
 
-    デフォルト値`300000`
+  デフォルト値`300000`
 
-    リアルタイムユーザーを測定する場合は、同一ユーザーとして認識される最大の呼び出し間隔を指定します。
+  リアルタイムユーザーを測定する場合は、同一ユーザーとして認識される最大の呼び出し間隔を指定します。
 
--   **time_sync_interval_ms** <span class='type'>Milliseconds</span>
+- **time_sync_interval_ms** <span class='type'>Milliseconds</span>
 
-    デフォルト値`300000`
+  デフォルト値`300000`
 
-    エージェントとサーバー間の時間同期化の周期を指定します。 同期しない場合は、0として設定します。
+  エージェントとサーバー間の時間同期化の周期を指定します。 同期しない場合は、0として設定します。
 
--   **text_reset** <span class='type'>Int</span>
+- **text_reset** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    WhaTapエージェントは一度送ったテキスト類のデータはhash処理されるため、次の日まで再度転送を致しません。 以前の設定値と異なる値を設定する場合は、再送信します。
+  WhaTapエージェントは一度送ったテキスト類のデータはhash処理されるため、次の日まで再度転送を致しません。 以前の設定値と異なる値を設定する場合は、再送信します。
 
-    トランザクションURL、SQL Stringなどがテキストタイプデータに対応します。
+  トランザクションURL、SQL Stringなどがテキストタイプデータに対応します。

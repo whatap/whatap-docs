@@ -188,11 +188,11 @@ The linked service status tracing function has been added so that the target IP 
 
 You can enable the function by setting `logsink_rt_enabled` to `true`, which collects logs with the `#RemoteTrace` category.
 
--   In case of a normal response, the level is ok. In case of error, the level is error.
+- In case of a normal response, the level is ok. In case of error, the level is error.
 
--   In case of a normal response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 30 seconds.
+- In case of a normal response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 30 seconds.
 
--   In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
+- In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
 
 ```ini title='whatap.conf'
 logsink_rt_enabled=false
@@ -205,13 +205,13 @@ logsink_rt_ok_interval=30000
 
 The function has been added to receive a notification when an error occurs when calling HTTP or database or the response is slower than the specified time.
 
--   The function can be enabled by setting `exception_alert_enabled` to `true`.
+- The function can be enabled by setting `exception_alert_enabled` to `true`.
 
--   Using the `exception_alert_stack_size` option, you can specify the error stack length to receive alert messages.
+- Using the `exception_alert_stack_size` option, you can specify the error stack length to receive alert messages.
 
--   You can disable error notifications for the specified period by the `exception_alert_silent_time` option.
+- You can disable error notifications for the specified period by the `exception_alert_silent_time` option.
 
--   The notification messages include URL, `status_code`, `error_message`, and `error_stack`.
+- The notification messages include URL, `status_code`, `error_message`, and `error_stack`.
 
 ```ini title='whatap.conf'
 # Default

@@ -17,63 +17,63 @@ As the usability of Kubernetes becomes diverse, the monitoring needs differ depe
 
 ## Real-time Monitoring
 
--   Kubernetes integrated monitoring on the multi-cloud and hybrid cloud
--   Container Map - A dynamic dashboard that provides data for nodes (host), containers, applications, logs, and events.
-    -   Individual or grouped display for the Kubernetes components such as namespace, deployment, replica set, and pod
-    -   Real-time checking of individual target/group data
-        -   Real-time status by container status and core resource metrics is divided into 3 levels of color (Normal, Warning, Critical).
-        -   CPU limit, request, and actual usage (core) assigned to the container
-        -   Memory limit, request, and actual usage (MiB, GiB) assigned to the container
-        -   Disk I/O and network I/O being used by the container
-        -   Hitmap-based application monitoring
-        -   Stdout/Stderr occurred in the pod or container
-        -   Container/application logs searched by the period
-        -   Warnings specified in containers/applications
-        -   Event data in the Kubernetes cluster
--   Resource monitoring - container and node detailed monitoring
-    -   Container
-        -   Entire container list and utilization status
-        -   CPU, memory, disk (volume), and network utilization for individual containers
-        -   Volume data attached to containers
-    -   Node
-        -   Entire node list and utilization status
-        -   CPU, memory, disk, and network utilization for individual nodes (host)
--   Application monitoring - containerized application monitoring on Kubernetes
-    -   Supported applications: Java. Node.js, Python
-    -   Monitoring the specific applications using the filtering
-    -   Monitoring of active transactions and completed transactions
-    -   TPS and response time trends for application groups and individual applications
-    -   User count trend aggregated for 5 minutes
--   Checking the Kubernetes master meta data
-    -   Master meta data stored in ETCD can be checked on the WhaTap console.
-    -   A list of major Kubernetes components, individual components, and some detailed specifications (YAML) for each component.
+- Kubernetes integrated monitoring on the multi-cloud and hybrid cloud
+- Container Map - A dynamic dashboard that provides data for nodes (host), containers, applications, logs, and events.
+  - Individual or grouped display for the Kubernetes components such as namespace, deployment, replica set, and pod
+  - Real-time checking of individual target/group data
+    - Real-time status by container status and core resource metrics is divided into 3 levels of color (Normal, Warning, Critical).
+    - CPU limit, request, and actual usage (core) assigned to the container
+    - Memory limit, request, and actual usage (MiB, GiB) assigned to the container
+    - Disk I/O and network I/O being used by the container
+    - Hitmap-based application monitoring
+    - Stdout/Stderr occurred in the pod or container
+    - Container/application logs searched by the period
+    - Warnings specified in containers/applications
+    - Event data in the Kubernetes cluster
+- Resource monitoring - container and node detailed monitoring
+  - Container
+    - Entire container list and utilization status
+    - CPU, memory, disk (volume), and network utilization for individual containers
+    - Volume data attached to containers
+  - Node
+    - Entire node list and utilization status
+    - CPU, memory, disk, and network utilization for individual nodes (host)
+- Application monitoring - containerized application monitoring on Kubernetes
+  - Supported applications: Java. Node.js, Python
+  - Monitoring the specific applications using the filtering
+  - Monitoring of active transactions and completed transactions
+  - TPS and response time trends for application groups and individual applications
+  - User count trend aggregated for 5 minutes
+- Checking the Kubernetes master meta data
+  - Master meta data stored in ETCD can be checked on the WhaTap console.
+  - A list of major Kubernetes components, individual components, and some detailed specifications (YAML) for each component.
 
 ## Performance analysis
 
--   Kubernetes pod's peak usage and initialization time
--   Out of Memory container data and memory chart by period
--   Same function as application (APM)
-    -   Metrics Chart
-    -   MSA Analysis
-    -   Stack
+- Kubernetes pod's peak usage and initialization time
+- Out of Memory container data and memory chart by period
+- Same function as application (APM)
+  - Metrics Chart
+  - MSA Analysis
+  - Stack
 
 ## Event notification
 
--   Email, SMS, and SNS (Telegram, Slack) transmission
--   Event occurrence by event duration and threshold setting
--   Same event notification suppression function by registration of the silence setting time
--   CPU, memory, and disk notifications
--   Notification by the real-time transaction count threshold setting
--   Notification by the transaction error count threshold setting
--   Notification by the number of transactions exceeding the response time threshold
--   Notification by horizontal and vertical distribution patterns of response times
+- Email, SMS, and SNS (Telegram, Slack) transmission
+- Event occurrence by event duration and threshold setting
+- Same event notification suppression function by registration of the silence setting time
+- CPU, memory, and disk notifications
+- Notification by the real-time transaction count threshold setting
+- Notification by the transaction error count threshold setting
+- Notification by the number of transactions exceeding the response time threshold
+- Notification by horizontal and vertical distribution patterns of response times
 
 ## Statistics and reports
 
--   Daily/Weekly Report: Real-time users, TPS, response times, CPU trend, etc.
--   Monthly Report
-    -   Real-time users, TPS, response times, CPU trend, etc.
-    -   Daily visitor count trend, Monthly visitor count, and customer loyalty metrics
--   Daily Report per Application
--   Application Peak Performance Comparison Report: Comparison with peak times of the previous day and the previous week
--   Weekly CPU and Memory Report by Pod
+- Daily/Weekly Report: Real-time users, TPS, response times, CPU trend, etc.
+- Monthly Report
+  - Real-time users, TPS, response times, CPU trend, etc.
+  - Daily visitor count trend, Monthly visitor count, and customer loyalty metrics
+- Daily Report per Application
+- Application Peak Performance Comparison Report: Comparison with peak times of the previous day and the previous week
+- Weekly CPU and Memory Report by Pod

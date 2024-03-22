@@ -1,75 +1,75 @@
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース履歴にHTTPヘッダー情報を記録するには、`true`に設定します。
+  トレース履歴にHTTPヘッダー情報を記録するには、`true`に設定します。
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
+  トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
 
-    :::note
+  :::note
 
-    セキュリティキーは、WASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイル内に6桁に設定します。 _paramkey.txt_ ファイルが存在しない場合、ランダムな値で自動的に生成されます。
+  セキュリティキーは、WASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイル内に6桁に設定します。 _paramkey.txt_ ファイルが存在しない場合、ランダムな値で自動的に生成されます。
 
-    :::
+  :::
 
--   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-    トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+  トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
 
--   **profile_http_host_enabled** <span class='type'>Boolean</span>
+- **profile_http_host_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トランザクションのホスト情報を出力します。値が`false`の場合、トランザクションのURLにURIのみが表示され、`true`の場合/xxx.aaa.com/URLの形式で出力します。
+  トランザクションのホスト情報を出力します。値が`false`の場合、トランザクションのURLにURIのみが表示され、`true`の場合/xxx.aaa.com/URLの形式で出力します。
 
--   **profile_http_body_enabled** <span class='type'>Boolean</span>
+- **profile_http_body_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    HTTP requestのbodyをトレース履歴に記録します。
+  HTTP requestのbodyをトレース履歴に記録します。
 
--   **profile_http_body_url_prefix** <span class='type'>String</span>
+- **profile_http_body_url_prefix** <span class='type'>String</span>
 
-    トレース履歴にhttp body情報を記録する対象URLのprefixを定義するときに使用します。
+  トレース履歴にhttp body情報を記録する対象URLのprefixを定義するときに使用します。
 
--   **biz_exceptions** <span class='type'>String</span>
+- **biz_exceptions** <span class='type'>String</span>
 
-    デフォルト値`Empty`
+  デフォルト値`Empty`
 
-    特定のErrorrまたはExceptionをBusiness Exceptionに設定します。 ヒットマップでは、エラーと表示されず、統計情報として収集します。 収集したError Class名と同じ名前を適用します。コンマ(,)を区切り文字として使用して、複数登録できます。
+  特定のErrorrまたはExceptionをBusiness Exceptionに設定します。 ヒットマップでは、エラーと表示されず、統計情報として収集します。 収集したError Class名と同じ名前を適用します。コンマ(,)を区切り文字として使用して、複数登録できます。
 
--   **ignore_exceptions** <span class='type'>String</span>
+- **ignore_exceptions** <span class='type'>String</span>
 
-    デフォルト値`NONE`
+  デフォルト値`NONE`
 
-    登録したExceptionのエラー自体を無視します。
+  登録したExceptionのエラー自体を無視します。
 
-    Exceptionの場合、Custom Exception Classを定義しない場合は、既定の`Exception`として収集します。 特定のExceptionを区別するには、Custom Exception Classを定義し、その名前を設定することで、例外を除外します。
+  Exceptionの場合、Custom Exception Classを定義しない場合は、既定の`Exception`として収集します。 特定のExceptionを区別するには、Custom Exception Classを定義し、その名前を設定することで、例外を除外します。
 
--   **trace_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクションURLを解析および正規化する機能を有効にします。
+  トランザクションURLを解析および正規化する機能を有効にします。
 
-    :::note
+  :::note
 
-    `false`に値を変更すると、パスパラメータの構文解析が無効になります。この場合、統計データの意味が弱くなるため、デバッグ目的のみで使用することをお勧めします。
+  `false`に値を変更すると、パスパラメータの構文解析が無効になります。この場合、統計データの意味が弱くなるため、デバッグ目的のみで使用することをお勧めします。
 
-    :::
+  :::
 
--   **trace_normalize_urls** <span class='type'>String</span>
+- **trace_normalize_urls** <span class='type'>String</span>
 
-    デフォルト値`NONE`
+  デフォルト値`NONE`
 
-    正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
+  正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
 
-    :::note
+  :::note
 
-    例）`/a/{v}/b`と宣言する場合は、`a/123/b` → `a/{v}/b`に置き換えます。複数登録する場合は、コンマ(,)を区切り文字として使用します。置換パターンをクリーンアップした後は、補足する必要があります。
+  例）`/a/{v}/b`と宣言する場合は、`a/123/b` → `a/{v}/b`に置き換えます。複数登録する場合は、コンマ(,)を区切り文字として使用します。置換パターンをクリーンアップした後は、補足する必要があります。
 
-    :::
+  :::

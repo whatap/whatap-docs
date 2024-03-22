@@ -1,0 +1,344 @@
+---
+id: main-ui-intro-v2
+title: Guide to Home screen (UI)
+displayed_sidebar: indexSidebar
+description: The following introduces the initial screen of WhaTap Monitoring.
+tags:
+  - UI
+  - User Interface
+  - Monitoring
+---
+
+It guides you to the elements displayed on the initial screen, after you log in [WhaTap Monitoring Service](https://service.whatap.io). 
+
+<ImgLang img='ui-home/main-ui-ver2.png' desc='Initial screen' />
+
+- The default menu of the initial screen is <Cmdname sid="project_list" className="uitext" />.
+
+- The panel on the left of the screen is the side menu.
+
+- At the top of the screen, you can see the name of the current menu and support menus.
+
+## Project list {#projectlist}
+
+This menu allows you to check the projects where you are a member or administrator. When you select an individual project in the expanded list, the <Cmdname sid="dashboard" className="uitext" /> menu for the project appears.
+
+<ImgLang img='ui-home/main-ui-project-card.png' desc='Project' />
+
+The information and features for each project of <Cmdname sid="project_list" className="uitext" /> are as follows:
+
+- ![Number 1](/img/number-01.png) displays the project name and you can set any favorite. Select ![Favorite icon](/img/ico-favorite.svg) and then select the ![Favorite icon](/img/ico-favorite.svg) <Cmdname sid="project_favorite" className="uitext" /> mode. The projects set for favorites (![Favorite icon](/img/ico-favorite-set.svg)) appear in the list.
+
+  :::note
+
+  For more information about the favorite settings, see [the following](#favoritedproject).
+
+  :::
+
+- If you select ![Number 2](/img/number-02.png) ![Configuration icon](/img/ico-setting.svg), you can use the following features:
+
+  - <Cmdname sid="project_management" className="uitext" />: Goes to the project management menu. You can check and modify information such as project name and description, access keys, etc. For more information, see <Link to="project/project-manage#management">the following</Link>.
+
+  - <Cmdname sid="edit_project_name" className="uitext" />: You can modify the project name.
+
+  - <Cmdname sid="delete_project" className="uitext" />: You can delete the project.
+
+  - <Cmdname sid="add_to_group" className="uitext" /> / <Cmdname sid="delete_from_group" className="uitext" />: You can add projects into the group or delete them from the group.
+
+  :::caution
+
+  If a project is deleted, all user list and collected data are deleted and cannot be recovered.
+
+  :::
+
+  :::note
+
+  Available functions may differ depending on the roles set for the user. For more information about the member role scheme, see [the following](project/project-structure#project-auth).
+
+  :::
+
+- ![Number 3](/img/number-03.png) You can see the chart for key metrics of the project, agent status, and others. The chart types and data provided may differ depending on the product.
+
+- ![Number 4](/img/number-04.png) You can check the product type, group name, and project code of the project in order. 
+
+  :::note
+
+  The projects that are free to use or experience or are restricted for use display the related information in the tag form.
+
+  <ImgLang img='ui-home/main-project-free-trial.png' desc='Free trial' />
+
+  :::
+
+### Project view {#projectview}
+
+You can see the project list in three view modes as follows: Check the overall project status by selecting the mode for your purpose.
+
+<ImgLang img='ui-home/main-project-select-view.png' desc='Select view' />
+
+#### <LinkImage img="ico-extend-card-view.svg" className="ico" /> <Cmdname sid="wide_card_view" />
+
+<ImgLang img='ui-home/main-project-extend-card-view.png' desc='Wide card view' />
+
+The default view mode. At this time, the unit in which individual projects are displayed is referred to as **project card**. Key metrics and properties being collected by the project's agents appear on each project card. This allows you to quickly see the performance status of the project.
+
+#### <LinkImage img="ico-reduction-view.svg" className="ico" /> <Cmdname sid="compact_card_view" />
+
+<ImgLang img='ui-home/main-project-compact-card-view.png' desc='Wide card view' />
+
+Individual projects provide information less than <Cmdname sid="wide_card_view" className="uitext" />, which provides a larger list of projects.
+
+#### <LinkImage img="ico-list-view.svg" className="ico" /> <Cmdname sid="project_list_view" />
+
+<ImgLang img='ui-home/main-project-list-card-view.png' desc='List view' />
+
+Projects are classified depending on the product type and displayed in the list format. The displayed information may differ depending on the product type. The rightmost part in the list provides the project management (![Configuration icon](/img/ico-setting.svg)) and deletion (![Delete icon](/img/ico-trash.svg)) functions.
+
+### Viewing the favorite project list {#favoritedproject}
+
+In three view modes, only the projects set as ![Favorite icon](/img/ico-favorite-set.svg) (Favorite) can appear in the list.
+
+<ImgLang img='ui-home/main-project-set-favorite.png' desc='Setting favorite' />
+
+Select ![Favorite icon](/img/ico-favorite.svg) in the project card to set a favorite. You can select multiple projects. On the right of the project search field, select the ![favorite icon](/img/ico-favorite.svg)(<Cmdname sid="favorite" className="uitext" />) mode.
+
+<ImgLang img='ui-home/main-project-favorite-list.png' desc='Favorite' />
+
+### Searching by the project/project code {#searchprojectwithcode}
+
+If you have trouble finding a project because there are many managed or owned projects, use the search function. You can filter the projects to search. Enter the project name or project code in the project search field at the top of the screen. 
+
+<ImgLang img='ui-home/main-project-filter.png' className="width-200" />
+
+Below the input field, a list of projects that match the specified string appears. Select a desired project. With the string entered, press the Enter key or select ![Search icon](/img/ico-search.svg). The projects that match the entered string appear in the list.
+
+## Side menu {#sidebar}
+
+On the WhaTap monitoring screen, the panel menu on the left is called **side menu**. The side menu provides key functions such as moving between projects, creating or moving groups and organizations, and creation of projects.
+
+### Creating a project {#createproject}
+
+There are two ways to create a new project.
+
+- In the side menu, select <Cmdname sid="BTN07332" className="uitext" />. If the project list panel appears, select ![Add icon](/img/ico-add.svg) <Cmdname sid="project" className="uitext" />.
+
+- Select the icons for each product type on the utmost left of the side menu. If the product introduction menu appears, select <Cmdname sid="BTN06900" className="uitext" /> of the desired product. See the following table.
+
+  |                              Product icon                             | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
+  | :-------------------------------------------------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | <LinkImage img='shortcut-application.svg' className='shortcutIcon' /> | [Java](/java/introduction), [Node.js](/nodejs/introduction), [PHP](/php/introduction), [Python](/python/introduction), [.NET](/dotnet/introduction), [Go](/golang/introduction) A project can be created to monitor the application of the product.                                                                                                                                                              |
+  |    <LinkImage img='shortcut-server.svg' className='shortcutIcon' />   | A project can be created for [Server monitoring](/server/introduction).                                                                                                                                                                                                                                                                                                                                          |
+  |    <LinkImage img='shortcut-kuber.svg' className='shortcutIcon' />    | A project can be created for [Kubernetes monitoring](/kubernetes/introduction).                                                                                                                                                                                                                                                                                                                                  |
+  |   <LinkImage img='shortcut-database.svg' className='shortcutIcon' />  | [MySQL](/mysql/monitoring-intro), [SQL Server](/mssql/monitoring-intro), [Oracle](/oracle/monitoring-intro), [PostgreSQL](/postgresql/monitoring-intro), [Redis](/redis/monitoring-intro), [MongoDB](/mongodb/monitoring-intro), [CUBRID](/cubrid/monitoring-intro), [Tibero](/tibero/monitoring-intro), [Altibase](/altibase/monitoring-intro) A project can be created to monitor the database of the product. |
+  |     <LinkImage img='shortcut-url.svg' className='shortcutIcon' />     | A project can be created for [URL monitoring](/url/url-intro).                                                                                                                                                                                                                                                                                                                                                   |
+  |    <LinkImage img='shortcut-cloud.svg' className='shortcutIcon' />    | [Amazon CloudWatch](/amazon-cloudwatch/install-agent), [Amazon ECS](/amazon-ecs/introduction), [Azure Monitor](/azure/install-agent), [Oracle Cloud Monitor](/oracle-cloud/install-agent), [Naver Cloud Monitoring](/ncloud/install-agent) A project can be created for product cloud monitoring.                                                                                                                |
+  |     <LinkImage img='shortcut-log.svg' className='shortcutIcon' />     | The introduction and configuration method to [Log monitoring](/log/introduction) are provided.                                                                                                                                                                                                                                                                                                                   |
+  |   <LinkImage img='shortcut-browser.svg' className='shortcutIcon' />   | A project can be created for [Browser monitoring](/log/introduction).                                                                                                                                                                                                                                                                                                                                            |
+
+:::note
+
+For more information about project creation, see [the following](project/project-manage#create-project).
+
+:::
+
+### Switching between Home screen and project {#move2project}
+
+You can see the full list of projects in the group where you belong in tree view format. Below the screen logo, select <Cmdname sid="BTN07332" className="uitext" />. If the project list panel appears, select a desired project. You can go to the selected project.
+
+<ImgLang img='ui-home/main-ui-home-to-project-move-01.png' desc='' />
+
+If there are too many groups or projects so it is difficult to find a desired item, enter a string in the <Cmdname sid="TLT07471" className="uitext" /> field of the project list panel. You can filter groups or projects that match a specified string. To filter projects by product, select ![Filter icon](/img/ico-filter.svg) and then select a desired product.
+
+<ImgLang img='ui-home/main-ui-filter-project.png' desc='Filtering projects' />
+
+If a project name is selected in the side menu with the project open, you can see the hierarchy of the current project and easily move to another selected project. To go to the Home screen, select the WhaTap logo at the upper left of the screen or select ![Home icon](/img/ic-home.svg) at the bottom of the screen.
+
+<ImgLang img='ui-home/main-ui-home-to-project-move-02.png' desc='' />
+
+### Creating, moving or managing group {#managegroup}
+
+In the side menu, select <Cmdname sid="BTN07332" className="uitext" />.
+
+- To create a new group, select ![Add icon](/img/ico-add.svg) <Cmdname sid="BTN06697" className="uitext" /> in the project list panel. The <Cmdname sid="add_group" className="uitext" /> menu appears.
+
+- To go to another group, select ![Group icon](/img/ico-group.svg) in the project list panel. You can see the list of projects that belong to the group.
+
+- To go to the group management menu, select ![Configuration icon](/img/ico-setting.svg) in the project list panel. The <Cmdname sid="integrated_group_management" className="uitext" /> menu appears.
+
+:::note
+
+- For more information about group addition, movement, and management, see [the following](project/group).
+
+- For more information about the project hierarchical structure, see [the following](../project/project-structure).
+
+:::
+
+### Creating, moving or managing organization {#manageorganization}
+
+In the side menu, select <Cmdname sid="sidebar_org_selector_no_organization" className="uitext" />.
+
+- To create a new organization, select ![Add icon](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" />. The <Cmdname sid="create_organization" className="uitext" /> menu appears.
+
+- To see a list of projects belonging to an organization, select an organization to move from the list. 
+
+- To go to the <Cmdname sid="organization_management" className="uitext" /> menu for management of all organizations, select ![Configuration icon](/img/ico-setting.svg) on the right of ![Add icon](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" />.
+
+- Hover over an individual organization to go to the <Cmdname sid="organization_management" className="uitext" /> menu for management of individual organizations. Select ![Configuration icon](/img/ico-setting.svg) if displayed.
+
+  <ImgLang img='ui-home/main-ui-setting-by-org.png' desc='개별 조직 설정' />
+
+:::note
+
+- For more information about organization addition, movement, and management, see [the following](project/organization).
+
+- For more information about the project hierarchical structure, see [the following](../project/project-structure).
+
+:::
+
+### Searching projects for each group/agent {#searchgroupagent}
+
+You can search for projects based on the group they belong to or the name of the agent included in them. Select ![Search icon](/img/ico-search.svg) next to the logo on the upper left of the screen.
+
+<ImgLang img='ui-home/main-ui-search-by-group.png' desc='Search by group' />
+
+- **_Group/Project_**: You can search for projects by the group they belong to. In the searched results, you can see groups and projects that match the entered string.
+
+- **_Agent_**: You can search for projects based on the name of the agent that belongs to them. In the searched results, you can see projects and agents that match the entered string.
+
+### Using the Home menu {#usinghomemenu}
+
+The menus available on the home screen are as follows:
+
+- <Cmdname sid="project_list" className="uitext" />: You can see the list of all projects.
+
+- <Cmdname sid="flexboard" className="uitext" />: User-defined integrated dashboard. You can create a real-time dashboard with metrics collected from projects such as applications, servers, databases, and containers.
+
+  <details>
+  <summary>Documents by product</summary>
+
+  - [Application Monitoring > Flex Board](java/flex-board)
+  - [Server Monitoring > Flex Board](server/flex-board)
+  - [Database Monitoring > Flex Board](mysql/flex-board)
+  - [Kubernetes Monitoring > Flex Board](kubernetes/flex-board)
+  - [Amazon ECS > Flex Board](amazon-ecs/flexboard)
+  - [Amazon CloudWatch > Flex Board](amazon-cloudwatch/flexboard)
+  - [Azure Monitor > Flex Board](azure/flexboard)
+  - [Naver Cloud Monitoring > Flex Board](ncloud/flexboard)
+  - [Oracle Cloud Monitor > Flex Board](oracle-cloud/flexboard)
+
+  </details>
+
+- <Cmdname sid="integrated_report" className="uitext" />: You can easily create reports for multiple projects. For more information, see <Link to="report/integrated-report">the following</Link>.
+
+- <Cmdname sid="integrated_topology" className="uitext" />: You can collectively select the projects that support the <Cmdname sid="topology" className="uitext" /> to see in a single topology. For more information, see <Link to="java/topology-type#int-topology">the following</Link>.
+
+- <Cmdname sid="real_time_alert_list" className="uitext" />: You can see notifications from all projects with permission at a glance in real time. For more information, see <Link to="notification/rt-notification">the following</Link>.
+
+- <Cmdname sid="management" className="uitext" />: You can manage all groups and members. For more information, see <Link to="project/integrated-manage">the following</Link>.
+
+### Registering the project menus as favorites {#usingprojectmenu}
+
+When you select and move a project on the Home screen, the side menu displays the menus available in the project. You can register frequently used menus as favorites.
+
+1. When you place the mouse pointer over a frequently used menu in the side menu, the ![Favorite Icon](/img/ico-favorite.svg) button appears. 
+
+   <ImgLang img='ui-home/main-ui-set-favorite-menu.png' desc='Registering the project menus as favorites' />
+
+2. If the button is selected, it is changed to ![Favorite setting icon](/img/ic-star-filled.svg).
+
+3. Repeat the above process to add other menus to favorites.
+
+4. Select ![Show only favorite menu icon](/img/ico-favorite.svg) below the side menu.
+
+   <ImgLang img='ui-home/main-ui-view-only-favorite.png' desc='Show only favorite menu' />
+
+The side menu displays only the menus set as favorites.
+
+:::note
+
+The displayed menus may differ depending on the project's product.
+
+:::
+
+### Changing the theme {#applytheme}
+
+You can set the screen to dark or light. On the lower left of the screen, select ![Theme icon](/img/ico-theme.svg).
+
+- **_Light_**: Light theme that is applied by default.
+
+- **_Dark_**: Dark theme whose background is black or dark.
+
+- **_Presentation_**: The optimized color is applied when using a beam projector.
+
+- **_Add Custom Theme_**: You can set detailed elements to a desired color in **_Light_** and **_Dark_** modes.
+
+### Viewing the full screen {#fullscreen}
+
+To view the WhaTap monitoring service screen in a web browser in full screen, select ![Full screen icon](/img/ic-fullscreen.svg) at the lower left of the screen. To end the full screen, press the ESC key.
+
+### Using the sitemap {#sitemap}
+
+You can see all the menus that can be selected from the entry path. On the lower left of the screen, select ![Sitemap icon](/img/ic-sitemap.svg).
+
+:::note
+
+Available menus may differ depending on the entry menu path or project.
+
+:::
+
+### Checking the tutorial
+
+Select <Cmdname sid="BTN07397" className="uitext" /> for the detailed guide to the operation of the side menu.
+
+### Resizing the side menu {#adjustsizesidebar}
+
+You can use the wide screen by adjusting the size of the side menu in the following two ways.
+
+- To collapse the side menu tree, select ![Collapse icon](/img/ic-sidebar2left.svg) on the right of the WhaTap logo. To expand the side menu, select ![Expand icon](/img/ic-sidebar2right.svg).
+
+  <ImgLang img='ui-home/main-ui-fold-extend-sidemenu.png' desc='' />
+
+- To expand the side menu wider than before, hover your mouse over the border of the side menu and then drag it. You can resize it.
+
+  <ImgLang img='ui-home/main-ui-adjust-sidebar.png' desc='Side menu' />
+
+## Support menus {#supportmenu}
+
+Below are the support menus available on the top right of the screen.
+
+### Checking the notices {#checknotice}
+
+Select ![Notice icon](/img/ic-notice.svg). Go to <Cmdname sid="TTL06763" className="uitext" /> where you can see the regular release news and emergency maintenances for the WhaTap monitoring service.
+
+### Going to technical documentation {#movedocs}
+
+Select ![WhaTap Docs icon](/img/ic-guide.svg) to go to the WhaTap Docs technical documentation page. For more information about Whatap Docs, see [the following](welcome-to-whatapdocs).
+
+### Online chat {#chatservice}
+
+If you select ![Customer Support icon](/img/ico-help.svg), a chat window appears where you can make online inquiries. You may inquire about the technologies, costs, and payments related to the WhaTap monitoring service.
+
+### Entering the management menu {#managementmenu}
+
+Select the profile icon on the top right of the screen. It provides the following functions:
+
+<ImgLang img='ui-home/main-ui-profile-menu.png' desc='Profile menu' />
+
+- <Cmdname sid="MNU07360" className="uitext" />: You can modify the user account or configure the functions such as notification reception and multi-factor authentication.
+
+  :::note
+
+  - For more information about membership registration, password modification, and withdrawal, see [the following](account/account-manage).
+
+  - For more information about the multi-factor authentication, see [the following](account/mfa).
+
+  :::
+
+- <Cmdname sid="MNU07361" className="uitext" />: You can register the payment information and view the service usage. For more information, see <Link to="management/billing">the following</Link>.
+
+- <Cmdname sid="create_organization" className="uitext" /> / <Cmdname sid="organization_management" className="uitext" />: You can go to the menu to create or manage organizations. For more information about the organization, see <Link to="project/organization">the following</Link>.
+
+- <Cmdname sid="language" className="uitext" />: You can change the language on the service screen to your preferred one.
+
+- <Cmdname sid="BTN06853" className="uitext" />: You can see the information about the WhaTap monitoring service.
+
+- <Cmdname sid="log_out" className="uitext" />: You can log out from the current service screen.

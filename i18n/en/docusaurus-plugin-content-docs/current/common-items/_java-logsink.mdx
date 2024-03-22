@@ -6,48 +6,48 @@ The LogSink option is available in whatap.agent-2.1.0 or later.
 
 ### Enabling the log monitoring function
 
--   **logsink_enabled** <span class='type'>Boolean</span>
+- **logsink_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It enables the log monitoring function.
+  It enables the log monitoring function.
 
--   **logsink_trace_enabled** <span class='type'>Boolean</span>
+- **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to expose the log tab of the transaction trace by inserting the transaction ID into the logs.  
+  Set whether or not to expose the log tab of the transaction trace by inserting the transaction ID into the logs.  
 
 ### Collecting framework logs
 
 To monitor logs collected from the framework, add the setting and plugin to intercept logs from the module. Set the default category name for logs collected in the framework to `AppLog`. The default value is the same as in the `hooklog_enabled` option.
 
--   **hooklog_enabled** <span class='type'>Boolean</span>
+- **hooklog_enabled** <span class='type'>Boolean</span>
 
-    Default `logsink_enabled`
+  Default `logsink_enabled`
 
-    Set whether or not to enable the log tracing.
+  Set whether or not to enable the log tracing.
 
-    :::note
+  :::note
 
-    -   In Java Agent 2.2.4 or later, the changed options can be applied without restarting the application. 
+  - In Java Agent 2.2.4 or later, the changed options can be applied without restarting the application. 
 
-    -   If the `hooklog_enabled` value has been changed, restarting is required for Java agent versions less than 2.2.4. The default value of `hooklog_enabled` is `logsink_enabled`. Accordingly, if `logsink_enabled=true` is set and the Java application is restarted, `hooklog_enabled` is set to `true`.
+  - If the `hooklog_enabled` value has been changed, restarting is required for Java agent versions less than 2.2.4. The default value of `hooklog_enabled` is `logsink_enabled`. Accordingly, if `logsink_enabled=true` is set and the Java application is restarted, `hooklog_enabled` is set to `true`.
 
-    :::
+  :::
 
--   **hooklog_custom_methods**
+- **hooklog_custom_methods**
 
-    Register a user-defined log. An arbitrary log framework content is delivered. Use this to trace logs of the log module created on the website.
+  Register a user-defined log. An arbitrary log framework content is delivered. Use this to trace logs of the log module created on the website.
 
-    ```java title='Java'
-    package io.home.test;
+  ```java title='Java'
+  package io.home.test;
 
-    public class MyLog {  
-      public void customLog(String log) { ... }
-    }
-    ```
+  public class MyLog {  
+    public void customLog(String log) { ... }
+  }
+  ```
 
-    ```ini title='whatap.conf'
-    hooklog_custom_methods=io.home.test.MyLog.customLog
-    ```
+  ```ini title='whatap.conf'
+  hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```

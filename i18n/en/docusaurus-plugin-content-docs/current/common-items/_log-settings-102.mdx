@@ -14,9 +14,9 @@ You can configure the log monitoring related settings in **_Log Setting_**. Usin
 
 :::note
 
--   To use the **_Activate log monitoring_** function, the **Edit Project** role is required. 
+- To use the **_Activate log monitoring_** function, the **Edit Project** role is required. 
 
--   The **Log Edit** role allows you to modify the **_Log Setting_** menu other than **_Activate log monitoring_**.
+- The **Log Edit** role allows you to modify the **_Log Setting_** menu other than **_Activate log monitoring_**.
 
 :::
 
@@ -60,8 +60,8 @@ In the ![number 1](/img/number-01.png) area, click the **_Activate log monitorin
 
 <ImgLang img='log-start-aws.png' desc='Starting the log monitoring'/>
 
--   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
--   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
+- If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
+- If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
 
 </InDoc>
 
@@ -75,17 +75,17 @@ In the ![number 1](/img/number-01.png) area, check the agent settings, and then 
 
 Check the agent version and settings to start the log monitoring. Select **_Check Agent Configuration_** to follow the onscreen instructions.
 
--   **Server Monitoring**
+- **Server Monitoring**
 
-    Under **_Apply_**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
+  Under **_Apply_**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
 
--   **DB Monitoring**
+- **DB Monitoring**
 
-    Under **_Apply_**, check each individual application guide. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in _whatap.conf_.
+  Under **_Apply_**, check each individual application guide. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in _whatap.conf_.
 
--   **Kubernetes Monitoring**
+- **Kubernetes Monitoring**
 
-    Under **_Apply_**, check each individual application guide. See [the following](log-k8s). 
+  Under **_Apply_**, check each individual application guide. See [the following](log-k8s). 
 
 </Xclude>
 
@@ -111,8 +111,8 @@ Select **_Activate log monitoring_** to set whether or not to enable the log mon
 
 </InDoc>
 
--   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date. 
--   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
+- If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date. 
+- If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
 
 </InDoc>
 
@@ -130,19 +130,19 @@ You can specify the log data retention periods for each category. **Log Count** 
 
 You can specify the log data retention period as follows. You can free the space by deleting old data according to the specified period.
 
--   **Trial Project**  
+- **Trial Project**  
 
-    You can select 1, 2, or 3 days for the data retention period.
+  You can select 1, 2, or 3 days for the data retention period.
 
--   **Paid Project**  
+- **Paid Project**  
 
-    For the data retention period, you can select one of 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 10 days, 30 days, and 40 days.
+  For the data retention period, you can select one of 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 10 days, 30 days, and 40 days.
 
--   **Data size-based billing**   
+- **Data size-based billing**   
 
-    The price differs depending on the data retention period.
+  The price differs depending on the data retention period.
 
-    > For example, if an average of 2 million log lines per day accumulates and the data retention period is set to 3 days, an average of 6 million log lines is kept on the collection server and subject to billing.
+  > For example, if an average of 2 million log lines per day accumulates and the data retention period is set to 3 days, an average of 6 million log lines is kept on the collection server and subject to billing.
 
 #### Log lookup password{#log-lookup-pw}
 
@@ -160,9 +160,9 @@ If you have the **Edit Log** role, you can modify it with a new password in **_L
 
 At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The log primary parser provides the parsers for **_GROK_** and **_JSON_**. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
 
--   **_GROK_**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
+- **_GROK_**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
 
--   **_JSON_**: Batch parsing is provided for the JSON output parts of the logs.
+- **_JSON_**: Batch parsing is provided for the JSON output parts of the logs.
 
 :::note 
 
@@ -202,13 +202,13 @@ For more information about the log parser, see [the following](log-parser).
 
 If you select the **_Log primary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
 
--   If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
+- If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
 
--   You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
+- You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
 
--   Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
+- Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
 
--   Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
+- Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
 
 ### Parser registration order{#log-add-parser-1st}
 
@@ -216,27 +216,27 @@ At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab
 
 <ImgLang img='log-1st-parser-add.png' desc='Add Log parser'/>
 
-1.  Select **_+ Add_**. The **_Add Parser_** window appears.
+1. Select **_+ Add_**. The **_Add Parser_** window appears.
 
-2.  In the **_Parser_** selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
+2. In the **_Parser_** selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
 
-    -   **_GROK_** [Parser and Pattern Registration](#log-pattern-grok)
+   - **_GROK_** [Parser and Pattern Registration](#log-pattern-grok)
 
-    -   **_JSON_** [Parser and Pattern Registration](#log-pattern-json)
+   - **_JSON_** [Parser and Pattern Registration](#log-pattern-json)
 
-3.  In the **_Category_** selection window, select a category or enter it. 
+3. In the **_Category_** selection window, select a category or enter it. 
 
-4.  Select a **_search key_** and **_search value_** for the **_log detection condition_** or directly enter them.
+4. Select a **_search key_** and **_search value_** for the **_log detection condition_** or directly enter them.
 
   The pattern is applied only to the log data that meets the filter conditions. \*\*\*If you do not enter any log detection condition, the pattern is applied to all logs.
 
-1.  Enter the **_pattern_**. 
+1. Enter the **_pattern_**. 
 
-2.  To check whether the pattern is normal, click **_Simulation_** and then measure the performance of simulation and pattern.
+2. To check whether the pattern is normal, click **_Simulation_** and then measure the performance of simulation and pattern.
 
   For more information about the simulation and performance measurement, see [the following](#parser-simulation).
 
-1.  If the simulation result is normal, select **_Add_** and then register the parser.
+1. If the simulation result is normal, select **_Add_** and then register the parser.
 
 :::note
 
@@ -250,19 +250,19 @@ When registering the log parser, parsers cannot be registered repeatedly in the 
 
 The default syntax is `%{SYNTAX:SEMANTIC}`. For more information about the GROK parser, see [the following](log-parser#grok-parser-detail).
 
--   **SYNTAX**
+- **SYNTAX**
 
-    GROK definition pattern.
+  GROK definition pattern.
 
--   **SEMANTIC**
+- **SEMANTIC**
 
-    It is the key allocated to the parsed data.
+  It is the key allocated to the parsed data.
 
-    :::note 
+  :::note 
 
-    It is recommended to use combination words in SEMANTIC so that reserved words are not used.
+  It is recommended to use combination words in SEMANTIC so that reserved words are not used.
 
-    :::
+  :::
 
 ### Registering the JSON Format Parser Pattern{#log-pattern-json}
 
@@ -276,7 +276,36 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 | Postfix   | Specify the string after the end of JSON string. If not specified, it is identified as a JSON string up to the end of the log output.                |
 | Ignore    | Specify fields in the JSON output to exclude from key extraction.                                                                                    |
 
--   **Registration example**
+- **Registration example**
+
+  ```bash title='Log'
+  [2022-10-25 10:15:34:145]...(line feed)
+  Request : {"key1":"value1","key2":"value2",...}(line feed)
+  Response : {"key3":"value3","key4":"value4",...}
+  ```
+
+  As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
+
+  - Pattern for request parsing  
+
+    > Strings between "Request : " and "Response" `{"key1":"value1","key2":"value2",...}`
+
+  - Pattern for response parsing
+
+    > Strings from "Response : " to the end of a log `{"key3":"value3","key4":"value4",...}`
+- **JSON custom pattern registration**
+
+  If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
+
+  ```java
+  io.whatap.logsink.parser.JsonFormatParser{}
+  ```
+
+  To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
+
+  Specify an option in `{}` of `JsonFormatParser{}`.
+
+  - **Registration example**
 
     ```bash title='Log'
     [2022-10-25 10:15:34:145]...(line feed)
@@ -286,70 +315,41 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
     As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
 
-    -   Pattern for request parsing  
-
-        > Strings between "Request : " and "Response" `{"key1":"value1","key2":"value2",...}`
-
-    -   Pattern for response parsing
-
-        > Strings from "Response : " to the end of a log `{"key3":"value3","key4":"value4",...}`
--   **JSON custom pattern registration**
-
-    If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
+    - Pattern for request parsing  
+      > Strings between "Request : " and "Response" `{"key1":"value1","key2":"value2",...}`
 
     ```java
-    io.whatap.logsink.parser.JsonFormatParser{}
+    io.whatap.logsink.parser.JsonFormatParser {prefix:"Request : ",postfix:"Response"}
     ```
 
-    To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
+    - Pattern for response parsing
+      > Strings from "Response : " to the end of a log `{"key3":"value3","key4":"value4",...}`
 
-    Specify an option in `{}` of `JsonFormatParser{}`.
-
-    -   **Registration example**
-
-        ```bash title='Log'
-        [2022-10-25 10:15:34:145]...(line feed)
-        Request : {"key1":"value1","key2":"value2",...}(line feed)
-        Response : {"key3":"value3","key4":"value4",...}
-        ```
-
-        As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
-
-        -   Pattern for request parsing  
-            > Strings between "Request : " and "Response" `{"key1":"value1","key2":"value2",...}`
-
-        ```java
-        io.whatap.logsink.parser.JsonFormatParser {prefix:"Request : ",postfix:"Response"}
-        ```
-
-        -   Pattern for response parsing
-            > Strings from "Response : " to the end of a log `{"key3":"value3","key4":"value4",...}`
-
-        ```java
-        io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
-        ```
+    ```java
+    io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
+    ```
 
 ### Parser Simulation{#parser-simulation}
 
-1.  Enter a pattern in the parser addition screen, and then select **_Simulation_**. The **_Parser Simulation_** window appears. 
+1. Enter a pattern in the parser addition screen, and then select **_Simulation_**. The **_Parser Simulation_** window appears. 
 
-2.  Enter the **_log_** in the **_Parser Simulation_** window. 
+2. Enter the **_log_** in the **_Parser Simulation_** window. 
 
-3.  Check the entered **_log_** and **_pattern_**.
+3. Check the entered **_log_** and **_pattern_**.
 
 <ImgLang img='log-parser-simulation.png' desc='Parser Simulation'/>
 
-1.  Select **_Simulation_** and then check whether parsing is successful with the pattern to register. 
+1. Select **_Simulation_** and then check whether parsing is successful with the pattern to register. 
 
-    -   **Simulation Success Screen**
+   - **Simulation Success Screen**
 
-        <ImgLang img='log-simulation-success.png' desc='Simulation Success'/>
+     <ImgLang img='log-simulation-success.png' desc='Simulation Success'/>
 
-    -   **Simulation Failure Screen**
+   - **Simulation Failure Screen**
 
-        <ImgLang img='log-simulation-fail.png' desc='Simulation Failure'/>
+     <ImgLang img='log-simulation-fail.png' desc='Simulation Failure'/>
 
-2.  When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. 
+2. When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. 
 
 ### Performance measurement{#log-performance}
 
@@ -369,9 +369,9 @@ The parsed key can be checked in **_Live Tail_**, **_Log Search_**, and **_Log T
 
 At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The **_4xx, 5xx Status Code Parser_** and **_Status Code Success Rate Parser_** are provided. The log secondary parser can be used if a primary parser such as GROK or JSON has been parsed. By processing the values extracted by the primary parser, the statistics data is generated. Secondary statistics are extracted based on HTTP status codes for the web or API response logs.
 
--   **_4xx, 5xx Status Code Parser_**: The counts are aggregated for abnormal responses.
+- **_4xx, 5xx Status Code Parser_**: The counts are aggregated for abnormal responses.
 
--   **_Status Code Success Rate Parser_**: The percentage of abnormal responses to the total number of cases is extracted.
+- **_Status Code Success Rate Parser_**: The percentage of abnormal responses to the total number of cases is extracted.
 
 :::note
 
@@ -385,13 +385,13 @@ The log secondary parser provides the special purpose secondary parsing function
 
 If you select the **_Log secondary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
 
--   If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
+- If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
 
--   You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
+- You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
 
--   Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
+- Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
 
--   Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
+- Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
 
 ### Parser registration order{#log-add-parser-2nd}
 
@@ -399,21 +399,21 @@ At the top of **_Log Setting_**, select the **_Log secondary parser setting_** t
 
 <ImgLang img='log-2nd-parser-add.png' desc='Log secondary parser registration order'/>
 
-1.  Select **_+ Add_**. The **_Add Parser_** window appears.
+1. Select **_+ Add_**. The **_Add Parser_** window appears.
 
-2.  In the **_Parser_** selection window, select a parser. For more information about the registration of each parser settings and status codes to exclude, see the following.
+2. In the **_Parser_** selection window, select a parser. For more information about the registration of each parser settings and status codes to exclude, see the following.
 
-    -   **_4xx, 5xx Status Code Parser_** [Registration of settings and status codes to exclude](#4xx-5xx-status-parser)
+   - **_4xx, 5xx Status Code Parser_** [Registration of settings and status codes to exclude](#4xx-5xx-status-parser)
 
-    -   **_Status Code Success Rate Parser_** [Registration of settings and status codes to exclude](#log-pattern-status)
+   - **_Status Code Success Rate Parser_** [Registration of settings and status codes to exclude](#log-pattern-status)
 
-3.  In the **_Category_** selection window, select a category or enter it. 
+3. In the **_Category_** selection window, select a category or enter it. 
 
-4.  Select **_Log detection condition_** or enter it.
+4. Select **_Log detection condition_** or enter it.
 
-5.  Enter the **_status codes to exclude_**. 
+5. Enter the **_status codes to exclude_**. 
 
-6.  Select **_Add_** to register a parser.
+6. Select **_Add_** to register a parser.
 
 ### Registration of status codes to exclude for the 4xx, 5xx status code parser{#4xx-5xx-status-parser}
 
@@ -445,11 +445,11 @@ If the widget is created, you can see the following data.
 
 <ImgLang img='log-flexboard-widget-chart-4xx5xx.png' desc='Log flex board widget chart - 4xx5xx'/>
 
--   **_avg_**: Average value of the data during the query period
+- **_avg_**: Average value of the data during the query period
 
--   **_max_**: Maximum value of the data during the query period
+- **_max_**: Maximum value of the data during the query period
 
--   **_recently_**: Final value of the data during the query period
+- **_recently_**: Final value of the data during the query period
 
 ### Registration of status codes to exclude by the status code success rate parser{#log-pattern-status}
 
@@ -493,23 +493,23 @@ Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collect
 
 You can save common parser settings and <Cmdname sid="fast_index_setting" /> content in JSON file format, and apply them by importing a JSON file from other projects. You can reduce the hassle of creating the settings repeatedly for each project.
 
-1.  Add the parser settings and <Cmdname sid="fast_index_setting" /> to a project.
+1. Add the parser settings and <Cmdname sid="fast_index_setting" /> to a project.
 
-2.  Select **_JSON_** ![Export icon](/img/ico-export.svg) on the upper right of each configuration tab.
+2. Select **_JSON_** ![Export icon](/img/ico-export.svg) on the upper right of each configuration tab.
 
-3.  On the upper right of the <Cmdname sid="export_json" className="uitext" /> window, select <Cmdname sid="export" className="uitext" />.
+3. On the upper right of the <Cmdname sid="export_json" className="uitext" /> window, select <Cmdname sid="export" className="uitext" />.
 
-4.  The JSON configuration file is saved on your PC.
+4. The JSON configuration file is saved on your PC.
 
-5.  Move to another project and then go to the <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" /> menu.
+5. Move to another project and then go to the <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" /> menu.
 
-6.  Select the configuration tab where you have exported the JSON configuration file before, and then select ![Import icon](/img/ico-import.svg).
+6. Select the configuration tab where you have exported the JSON configuration file before, and then select ![Import icon](/img/ico-import.svg).
 
-7.  If the file selection window appears, select the JSON configuration file saved on your PC.
+7. If the file selection window appears, select the JSON configuration file saved on your PC.
 
-8.  If the <Cmdname sid="import_json" className="uitext" /> window appears, check the configuration file and then select <Cmdname sid="add_to_list" className="uitext" /> or <Cmdname sid="overwrite" className="uitext" />.
+8. If the <Cmdname sid="import_json" className="uitext" /> window appears, check the configuration file and then select <Cmdname sid="add_to_list" className="uitext" /> or <Cmdname sid="overwrite" className="uitext" />.
 
-9.  Select <Cmdname sid="save" className="uitext" /> on the upper right of the screen.
+9. Select <Cmdname sid="save" className="uitext" /> on the upper right of the screen.
 
 :::caution
 
@@ -572,14 +572,14 @@ If a setting is added as follows, statistical data is generated with a key value
 
 ### Data Search{#log-widget-statistics}
 
-1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
+1. Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
 
-    <ImgLang img='log-flexboard-widget-long-term.png' desc='Log long-term archive statistics widget template'/>
+   <ImgLang img='log-flexboard-widget-long-term.png' desc='Log long-term archive statistics widget template'/>
 
-2.  Enter the **_category_** and **_key_** to view and then select **_Apply_**.
+2. Enter the **_category_** and **_key_** to view and then select **_Apply_**.
 
-    <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='Log long-term archive statistics widget category and key selection'/>
+   <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='Log long-term archive statistics widget category and key selection'/>
 
-3.  With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.
+3. With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.
 
-    <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='Log long-term archive statistics chart widget'/>
+   <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='Log long-term archive statistics chart widget'/>

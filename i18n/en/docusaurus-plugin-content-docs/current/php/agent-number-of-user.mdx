@@ -9,56 +9,56 @@ tags:
   - Application
 ---
 
--   **whatap.trace_user_enabled** <span class='type'>Boolean</span>
+- **whatap.trace_user_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to collect real-time users. If this value is activated, the users are traced based on the IP or PHP default cookie (PHPSESSID) and framework cookies (ci_session, Laravel_session). If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not _whatap.ini_. 
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.trace_user_using_ip** <span class='type'>Boolean</span>
-
-    Default `false`
-
-    Set it to identify the real-time user by IP. The data can be checked in Real Time User. If the value is `false`, the users are classified based on the PHP default cookies and framework cookies (PHPSESSID, ci_session, Laravel_session). If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+  Set whether or not to collect real-time users. If this value is activated, the users are traced based on the IP or PHP default cookie (PHPSESSID) and framework cookies (ci_session, Laravel_session). If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not _whatap.ini_. 
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.trace_user_cookie_keys** <span class='type'>String</span>
+- **whatap.trace_user_using_ip** <span class='type'>Boolean</span>
 
-    Default `PHPSESSID,ci_session, laravel_session`
+  Default `false`
 
-    Users can be identified by assigning the `session.name` value inside PHP. It is set when using a different name instead of `PHPSESSID` as the cookie key name. With comma (_,_) as the delimiter, multiple values can be set.
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.trace_user_header_ticket** <span class='type'>Boolean</span>
-
-    Default `false`
-
-    Set the HTTP key to differentiate users by a specific value in the HTTP header. Note that the `trace_user_using_ip` setting cannot be applied simultaneously. If the HTTP key cannot be found, users can be identified based on the cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not _whatap.ini_.
+  Set it to identify the real-time user by IP. The data can be checked in Real Time User. If the value is `false`, the users are classified based on the PHP default cookies and framework cookies (PHPSESSID, ci_session, Laravel_session). If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.trace_user_set_cookie** <span class='type'>Boolean</span>
+- **whatap.trace_user_cookie_keys** <span class='type'>String</span>
 
-    Default `false`
+  Default `PHPSESSID,ci_session, laravel_session`
 
-    To identify users, the user identification values are set as `WHATAP` key names in cookies. If `trace_user_using_ip` is set, this value is not applied. If `trace_user_header_ticket` is set, this is set when the header key cannot be found. If the HTTP key cannot be found, users can be identified based on cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _whatap.ini_, not _php.ini_.
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.trace_http_client_ip_header_key** <span class='type'>String</span>
-
-    Default `X-Forwarded-For`
-
-    This added function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header value can be set with the client IP.
+  Users can be identified by assigning the `session.name` value inside PHP. It is set when using a different name instead of `PHPSESSID` as the cookie key name. With comma (_,_) as the delimiter, multiple values can be set.
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.trace_http_client_ip_header_key_enabled** <span class='type'>Boolean</span>
+- **whatap.trace_user_header_ticket** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `false`
 
-    If the value is `false`, the HTTP Header is ignored and the client IP is set as the remote IP value.
+  Set the HTTP key to differentiate users by a specific value in the HTTP header. Note that the `trace_user_using_ip` setting cannot be applied simultaneously. If the HTTP key cannot be found, users can be identified based on the cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not _whatap.ini_.
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+- **whatap.trace_user_set_cookie** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  To identify users, the user identification values are set as `WHATAP` key names in cookies. If `trace_user_using_ip` is set, this value is not applied. If `trace_user_header_ticket` is set, this is set when the header key cannot be found. If the HTTP key cannot be found, users can be identified based on cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _whatap.ini_, not _php.ini_.
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+- **whatap.trace_http_client_ip_header_key** <span class='type'>String</span>
+
+  Default `X-Forwarded-For`
+
+  This added function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header value can be set with the client IP.
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+- **whatap.trace_http_client_ip_header_key_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  If the value is `false`, the HTTP Header is ignored and the client IP is set as the remote IP value.

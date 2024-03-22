@@ -1,67 +1,67 @@
--   ![number1](/img/number-01.png) Selecting a lookup target
+- ![number1](/img/number-01.png) Selecting a lookup target
 
-    <InDoc product='mysql,mysql-v1,redis,cubrid'>
+  <InDoc product='mysql,mysql-v1,redis,cubrid'>
 
-    You can select an instance for inquiry. The collected data of the selected instance is automatically applied to the ![number2](/img/number-02.png) graph chart and the ![number3](/img/number-03.png) **_Active Sessions_** table.
+  You can select an instance for inquiry. The collected data of the selected instance is automatically applied to the ![number2](/img/number-02.png) graph chart and the ![number3](/img/number-03.png) **_Active Sessions_** table.
 
-    </InDoc>
+  </InDoc>
 
-    <InDoc product='postgresql,postgresql-v1,oracle'>
+  <InDoc product='postgresql,postgresql-v1,oracle'>
 
-    You can select an instance and a database included in the instance for data inquiry. The collected data of the selected instance and its database are automatically applied to the ![number2](/img/number-02.png) graph chart and the ![number3](/img/number-03.png) **_Active Sessions_** table.
+  You can select an instance and a database included in the instance for data inquiry. The collected data of the selected instance and its database are automatically applied to the ![number2](/img/number-02.png) graph chart and the ![number3](/img/number-03.png) **_Active Sessions_** table.
 
-    :::note
+  :::note
 
-    Colors in the database correspond to the ones in the graph chart.
+  Colors in the database correspond to the ones in the graph chart.
 
-    :::
+  :::
 
-    </InDoc>
+  </InDoc>
 
--   ![Number 2](/img/number-02.png) Graph chart section
+- ![Number 2](/img/number-02.png) Graph chart section
 
-    The horizontal axis of each widget is time, and the vertical axis is the metric number. If you select a specific time period in each widget, **_Analysis_** > **_Count Trend_** appears.
+  The horizontal axis of each widget is time, and the vertical axis is the metric number. If you select a specific time period in each widget, **_Analysis_** > **_Count Trend_** appears.
 
-    :::note
+  :::note
 
-    For more information about **_Counts Trend_**, see [the following](analysis-count-trend).
+  For more information about **_Counts Trend_**, see [the following](analysis-count-trend).
 
-    :::
+  :::
 
 <Xclude product='redis'>
 
--   ![number3](/img/number-03.png) **_Active Sessions_** | **_Lock Tree_** | **_Process Info_**
+- ![number3](/img/number-03.png) **_Active Sessions_** | **_Lock Tree_** | **_Process Info_**
 
-    You can view the active session, lock tree, and process information.
+  You can view the active session, lock tree, and process information.
 
-    -   **_Active Sessions_**
+  - **_Active Sessions_**
 
-        You can view active sessions and queries. If you select an item in the rightmost **_query_** column in the table, the <Cmdname sid="TTL06224" className="uitext" /> window appears. You can see the full text and plan information for the selected query. For more information, see [the following](#query-details).
+    You can view active sessions and queries. If you select an item in the rightmost **_query_** column in the table, the <Cmdname sid="TTL06224" className="uitext" /> window appears. You can see the full text and plan information for the selected query. For more information, see [the following](#query-details).
 
-    -   **_Lock Tree_**
+  - **_Lock Tree_**
 
-        You can see the lock session information, and holder and waiter information in real time. For more information about the table columns, see [the following](#column-info).
+    You can see the lock session information, and holder and waiter information in real time. For more information about the table columns, see [the following](#column-info).
 
-    -   **_Process Info_**
+  - **_Process Info_**
 
-        You can query the resource usage of the database server in real time.
+    You can query the resource usage of the database server in real time.
 
 </Xclude>
 
 <InDoc product='redis'>
 
--   ![number3](/img/number-03.png) **_Active Sessions_**
+- ![number3](/img/number-03.png) **_Active Sessions_**
 
-    Active session information can be viewed.
+  Active session information can be viewed.
 
 </InDoc>
 
 :::note
 
--   For more information about each metric, see [the following](metrics-data-list). 
+- For more information about each metric, see [the following](metrics-data-list). 
 
--   For more information about the columns, see [the following](#column-info).
+- For more information about the columns, see [the following](#column-info).
 
--   The **_process information_** can be viewed by additionally configuring the XOS agent. For more information, see [the following](agent-xos-settings).
+- The **_process information_** can be viewed by additionally configuring the XOS agent. For more information, see [the following](agent-xos-settings).
 
 :::

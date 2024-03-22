@@ -2,13 +2,13 @@
 
 ログファイル(_$WHATAP_HOME/logs/_)を確認し、それぞれの問題について次のように解決してください。
 
--   _whatap-hook.log_
-    -   CONF FILE ERROR：設定ファイルを作成する権限がありません。ファイルを作成してください。
-    -   CONF READ ERROR：設定ファイルは存在しますが、読み取り権限がありません。権限を付与してください。
-    -   LOG FILE ERROR：ログディレクトリを作成する権限がありません。ディレクトリを作成してください。
-    -   LOGGING ERROR：ログディレクトリは存在しますが、書き込み権限がありません。権限を付与してください。
--   _whatap-boot-`yyyymmdd`.log_
-    -   license or whatp.server.host error：アクセスキーまたは収集サーバーのアドレスが無効です。
+- _whatap-hook.log_
+  - CONF FILE ERROR：設定ファイルを作成する権限がありません。ファイルを作成してください。
+  - CONF READ ERROR：設定ファイルは存在しますが、読み取り権限がありません。権限を付与してください。
+  - LOG FILE ERROR：ログディレクトリを作成する権限がありません。ディレクトリを作成してください。
+  - LOGGING ERROR：ログディレクトリは存在しますが、書き込み権限がありません。権限を付与してください。
+- _whatap-boot-`yyyymmdd`.log_
+  - license or whatp.server.host error：アクセスキーまたは収集サーバーのアドレスが無効です。
 
 ### ポートの競合発生
 
@@ -16,25 +16,25 @@
 
 ### $WHATAP_HOME 環境変数の設定不可
 
--   **Apache HTTPD**\
-      Apacheでウェブサーバーを実行する場合は、次のように環境変数を設定してください。
+- **Apache HTTPD**\
+    Apacheでウェブサーバーを実行する場合は、次のように環境変数を設定してください。
 
-    ```bash title=SH
-    <VirtualHost *:80>
-        #ServerName
-        #DocumentRoot
+  ```bash title=SH
+  <VirtualHost *:80>
+      #ServerName
+      #DocumentRoot
 
-            SetEnv WHATAP_HOME "application path"
-        # Directory
-    </VirtualHost>
-    ```
--   **環境変数の手動設定**\
-      必要に応じて、次のように手動で環境変数を設定してください。
+          SetEnv WHATAP_HOME "application path"
+      # Directory
+  </VirtualHost>
+  ```
+- **環境変数の手動設定**\
+    必要に応じて、次のように手動で環境変数を設定してください。
 
-    ```python title=Python
-    ---
-    import os
-    os.environ.setdefault("WHATAP_HOME", [application path]")
-    import whatap
-    ---
-    ```
+  ```python title=Python
+  ---
+  import os
+  os.environ.setdefault("WHATAP_HOME", [application path]")
+  import whatap
+  ---
+  ```

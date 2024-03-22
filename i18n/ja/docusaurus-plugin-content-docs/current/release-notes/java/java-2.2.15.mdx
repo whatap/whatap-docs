@@ -8,39 +8,39 @@ displayed_sidebar: releaseSidebar
 
 2023年8月31日
 
--   <Status>Feature</Status>kafka-clients-2.4.0追跡
+- <Status>Feature</Status>kafka-clients-2.4.0追跡
 
-    ```ini title='whatap.conf'
-    weaving=kafka-clients-2.4.0
-    ```
+  ```ini title='whatap.conf'
+  weaving=kafka-clients-2.4.0
+  ```
 
--   <Status>Feature</Status>特定のエラーコードを持つ<code>java.sql.SQLException</code>無視する機能の追加
+- <Status>Feature</Status>特定のエラーコードを持つ<code>java.sql.SQLException</code>無視する機能の追加
 
-    ```ini title='whatap.conf'
-    # example
-    ignore_sql_error_code_set=22001,2009
-    ```
+  ```ini title='whatap.conf'
+  # example
+  ignore_sql_error_code_set=22001,2009
+  ```
 
--   <Status>Feature</Status>トランザクションでエラースタック表示機能を追加:トランザクションで複数のエラーが発生した場合、最初のエラーのスタックを表示
+- <Status>Feature</Status>トランザクションでエラースタック表示機能を追加:トランザクションで複数のエラーが発生した場合、最初のエラーのスタックを表示
 
-    トランザクションエラースタックの詳細については、次の文書を参照してください。
+  トランザクションエラースタックの詳細については、次の文書を参照してください。
 
-    <Link to='../../java/agent-transaction-error-stack' target='_blank' className='ext-link'>トランザクションエラースタック</Link>
+  <Link to='../../java/agent-transaction-error-stack' target='_blank' className='ext-link'>トランザクションエラースタック</Link>
 
--   <Status>Changed</Status> <code>java.sql.SQLException</code>発生時のエラーコード表示のデフォルト値を<code>true</code>に修正
+- <Status>Changed</Status> <code>java.sql.SQLException</code>発生時のエラーコード表示のデフォルト値を<code>true</code>に修正
 
-    ```ini title='whatap.conf'
-    # default
-    trace_sql_errorcode_enabled=true
-    ```
+  ```ini title='whatap.conf'
+  # default
+  trace_sql_errorcode_enabled=true
+  ```
 
--   <Status>Changed</Status>ユーザー定義exceptionを優先するように<code>trace_exception_overwrite_enabled</code>デフォルト値を<code>true</code>に修正
+- <Status>Changed</Status>ユーザー定義exceptionを優先するように<code>trace_exception_overwrite_enabled</code>デフォルト値を<code>true</code>に修正
 
-    ```ini title='whatap.conf'
-    # default
-    trace_exception_overwrite_enabled=true
-    ```
+  ```ini title='whatap.conf'
+  # default
+  trace_exception_overwrite_enabled=true
+  ```
 
--   <Status>Changed</Status><code>java.util.Date</code>タイプのSQLパラメータデータ収集
+- <Status>Changed</Status><code>java.util.Date</code>タイプのSQLパラメータデータ収集
 
--   <Status>Fixed</Status>Javaエージェントのlogsink機能使用時のログが<code>null</code>の場合に対する処理を追加
+- <Status>Fixed</Status>Javaエージェントのlogsink機能使用時のログが<code>null</code>の場合に対する処理を追加

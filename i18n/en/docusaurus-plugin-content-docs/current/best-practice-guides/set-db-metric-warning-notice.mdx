@@ -27,46 +27,46 @@ process=top,lock.sh
 
 This example shows how to set to send an alert when any process monitoring target set in the XOS agent (_xos.conf_) is terminated.
 
-1.  Under the user database project, go to **_Alert_** > **_Event setting_**.
+1. Under the user database project, go to **_Alert_** > **_Event setting_**.
 
-2.  Select the **_Metrics_** tab.
+2. Select the **_Metrics_** tab.
 
-3.  Select **_+ Add Alert Policy_**.
+3. Select **_+ Add Alert Policy_**.
 
-4.  If the **_Metrics event_** window appears, enter the **_event name_**.
+4. If the **_Metrics event_** window appears, enter the **_event name_**.
 
-5.  In **_Category_**, select the **_db_process_check_** item.
+5. In **_Category_**, select the **_db_process_check_** item.
 
-    <ImgLang img='best-p/db-add-metrics-event-category-process.png' />
+   <ImgLang img='best-p/db-add-metrics-event-category-process.png' />
 
-6.  In **_Level_**, select an alert level.
+6. In **_Level_**, select an alert level.
 
-7.  In **_Message_**, enter the alert message. You can apply any variables to messages by entering the tags or field keys. 
+7. In **_Message_**, enter the alert message. You can apply any variables to messages by entering the tags or field keys. 
 
-    (e.g. `${oname}`, `${count}`, `${process_name}`)
+   (e.g. `${oname}`, `${count}`, `${process_name}`)
 
-8.  Enter desired values from the following cases into **_Event rule_**.
+8. Enter desired values from the following cases into **_Event rule_**.
 
-    -   In case any of **top** and **lock.sh**processes is terminated: `process_name == 'top' || process_name == 'lock.sh'`
+   - In case any of **top** and **lock.sh**processes is terminated: `process_name == 'top' || process_name == 'lock.sh'`
 
-        <ImgLang img='best-p/db-add-metrics-event-category-process-sample-00.png' />
+     <ImgLang img='best-p/db-add-metrics-event-category-process-sample-00.png' />
 
-    -   In case multiple processes are terminated among monitoring targets in the xos.conf file: `count >= 2`
+   - In case multiple processes are terminated among monitoring targets in the xos.conf file: `count >= 2`
 
-        <ImgLang img='best-p/db-add-metrics-event-category-process-sample-01.png' />
+     <ImgLang img='best-p/db-add-metrics-event-category-process-sample-01.png' />
 
-    -   In case multiple processes among the monitoring targets set in the xos.conf file are terminated or the lock.sh process is terminated: `process_name == 'lock.sh' || count >= 2`
+   - In case multiple processes among the monitoring targets set in the xos.conf file are terminated or the lock.sh process is terminated: `process_name == 'lock.sh' || count >= 2`
 
-        <ImgLang img='best-p/db-add-metrics-event-category-process-sample-02.png' />
+     <ImgLang img='best-p/db-add-metrics-event-category-process-sample-02.png' />
 
-9.  After all entries are made, select **_Save_**.
+9. After all entries are made, select **_Save_**.
 
 :::note
 
--   To send an alert when the event condition has been resolved, select the **_Notify when event status is resolved_** option.
+- To send an alert when the event condition has been resolved, select the **_Notify when event status is resolved_** option.
 
--   Tags or field keys can be seen in **_Sitemap_** > **_Metrics search_**.
+- Tags or field keys can be seen in **_Sitemap_** > **_Metrics search_**.
 
--   For more information about the **Metrics alert** for database projects, see [the following](../postgresql/metric-warning-notice).
+- For more information about the **Metrics alert** for database projects, see [the following](../postgresql/metric-warning-notice).
 
 :::

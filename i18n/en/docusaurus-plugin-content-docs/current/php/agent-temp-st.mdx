@@ -14,49 +14,49 @@ import TabItem from '@theme/TabItem';
 
 To pause the PHP monitoring service, you must stop the PHP extension module and whatap-php service. See the following.
 
-1.  Stop the PHP extension module. 
+1. Stop the PHP extension module. 
 
-    Comment out the `extension=` syntax in _whatap.ini_. Set the comment by using a semicolon (_;_).
+   Comment out the `extension=` syntax in _whatap.ini_. Set the comment by using a semicolon (_;_).
 
-    ```bash
-    $ sudo vi whatap.ini
+   ```bash
+   $ sudo vi whatap.ini
 
-    extension=whatap.so
+   extension=whatap.so
 
-    ;Comment
-    ;extension=whatap.so
-    ```
+   ;Comment
+   ;extension=whatap.so
+   ```
 
-    Even if manual configuration is made in _php.ini_, comment out the `extension=` syntax. 
+   Even if manual configuration is made in _php.ini_, comment out the `extension=` syntax. 
 
-    :::note
+   :::note
 
-    Apache or PHP-FPM service is started.
+   Apache or PHP-FPM service is started.
 
-    :::
+   :::
 
-2.  Stop the whatap-php service.
+2. Stop the whatap-php service.
 
-    <Tabs>
-    <TabItem value="rdct" label="Red Hat/CentOS" default>
+   <Tabs>
+   <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-    ```bash
-    $ sudo service whatap-php stop
-    ```
+   ```bash
+   $ sudo service whatap-php stop
+   ```
 
-    </TabItem>
-    <TabItem value="dbub" label="Debian/Ubuntu">
+   </TabItem>
+   <TabItem value="dbub" label="Debian/Ubuntu">
 
-    ```bash
-    $ sudo service whatap-php stop
-    ```
+   ```bash
+   $ sudo service whatap-php stop
+   ```
 
-    </TabItem>
-    <TabItem value="frbsd" label="FreeBSD">
+   </TabItem>
+   <TabItem value="frbsd" label="FreeBSD">
 
-    ```bash
-    $ service whatap_php stop
-    ```
+   ```bash
+   $ service whatap_php stop
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>

@@ -7,30 +7,30 @@ displayed_sidebar: releaseSidebar
 
 #### July 6, 2023
 
--   <Status>New</Status> Adding the web service setting options
+- <Status>New</Status> Adding the web service setting options
 
-    -   **webservice_method_enabled** <span class='type'>Boolean</span>
+  - **webservice_method_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        If the value has been set to `true`, web services can be traced. To apply the set values, restart IIS.
+    If the value has been set to `true`, web services can be traced. To apply the set values, restart IIS.
 
-    -   **webservice_method_prefix** <span class='type'>String</span>
+  - **webservice_method_prefix** <span class='type'>String</span>
 
-        Enter the name of the method to be traced along with the namespace. Because web services cannot be directly traced, directly enter the method that has used the web services as a trace target. To apply the set values, restart IIS.
+    Enter the name of the method to be traced along with the namespace. Because web services cannot be directly traced, directly enter the method that has used the web services as a trace target. To apply the set values, restart IIS.
 
-        See the following example:
+    See the following example:
 
-        ```ini title='whatap.conf'
-        webservice_method_prefix=Test.Demo, WebServiceDemo.WebService.
-        ```
+    ```ini title='whatap.conf'
+    webservice_method_prefix=Test.Demo, WebServiceDemo.WebService.
+    ```
 
-        :::caution
+    :::caution
 
-        -   The methods that meet the conditions are traced even if they do not use web services. However, if any methods do not use web services, when an error occurs, the error may not be detected and the transaction can remain unfinished.
+    - The methods that meet the conditions are traced even if they do not use web services. However, if any methods do not use web services, when an error occurs, the error may not be detected and the transaction can remain unfinished.
 
-        -   If you enter just the class to which the method belongs, all methods within that class are to be traced.
+    - If you enter just the class to which the method belongs, all methods within that class are to be traced.
 
-        :::
+    :::
 
--   <Status>Change</Status> Improved the agent performance for processing packets.
+- <Status>Change</Status> Improved the agent performance for processing packets.

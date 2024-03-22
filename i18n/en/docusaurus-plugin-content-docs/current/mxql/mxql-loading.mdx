@@ -27,63 +27,63 @@ It is used to search the data of the category that stores the collected data in 
 | `{filter : {key:fieldName, like :fieldValue}}`    | Extracts data where the value of the fieldName field has fieldValue as a substring.             |
 | `{filter : {key:fieldName, notlike :fieldValue}}` | Data is extracted while excluding the data whose fieldName value has fieldValue as a substring. |
 
--   In case no options are set
+- In case no options are set
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  ```
 
--   In case the backward option is set
+- In case the backward option is set
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {backward : true}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {backward : true}
+  ```
 
--   In case the value filter is set
+- In case the value filter is set
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:pid, value:905}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:pid, value:905}}
+  ```
 
--   In case the exclude filter is set
+- In case the exclude filter is set
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:pid, exclude:905}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:pid, exclude:905}}
+  ```
 
--   In case of setting the like filter
+- In case of setting the like filter
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:okindName, like:keeper}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:okindName, like:keeper}}
+  ```
 
--   In case of setting the notlike filter
+- In case of setting the notlike filter
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:okindName, notlike:keeper}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:okindName, notlike:keeper}}
+  ```
 
--   In case of setting multiple filters
+- In case of setting multiple filters
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'}, {key:'container', like:'gateway'}] }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'}, {key:'container', like:'gateway'}] }
+  ```
 
 :::caution
 
--   `TAGLOAD` and `FLEXLOAD` have set values for `CATEGORY` that can be set respectively.
--   When using the `filter-like` or `filter-notlike` option, if a number comes as a value, it must be enclosed in single quotation marks ('') or double quotation marks ("") for operation.
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
-    ```
+- `TAGLOAD` and `FLEXLOAD` have set values for `CATEGORY` that can be set respectively.
+- When using the `filter-like` or `filter-notlike` option, if a number comes as a value, it must be enclosed in single quotation marks ('') or double quotation marks ("") for operation.
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
+  ```
 
 :::
 
@@ -110,34 +110,34 @@ Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of 
 
 ## List of categories that need to use FLEXLOAD{#flexload-items}
 
--   `agent_list` category
+- `agent_list` category
 
-    ```sql
-    CATEGORY agent_list
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY agent_list
+  FLEXLOAD
+  SELECT
+  ```
 
--   `db_agent_list` category
+- `db_agent_list` category
 
-    ```sql
-    CATEGORY db_agent_list
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY db_agent_list
+  FLEXLOAD
+  SELECT
+  ```
 
--   `agent_count` category
+- `agent_count` category
 
-    ```sql
-    CATEGORY agent_count
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY agent_count
+  FLEXLOAD
+  SELECT
+  ```
 
--   `event_cache` category 
+- `event_cache` category 
 
-    ```sql
-    CATEGORY event_cache
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY event_cache
+  FLEXLOAD
+  SELECT
+  ```

@@ -27,63 +27,63 @@ MXQL構文を使用してメトリクスを取得する方法を学びます。
 | `{filter : {key:fieldName, like :fieldValue}}`    | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを抽出します。    |
 | `{filter : {key:fieldName, notlike :fieldValue}}` | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを除いて抽出します。 |
 
--   オプションを設定していない場合
+- オプションを設定していない場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  ```
 
--   backwardオプションを設定した場合
+- backwardオプションを設定した場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {backward : true}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {backward : true}
+  ```
 
--   value filterを設定する場合
+- value filterを設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:pid, value:905}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:pid, value:905}}
+  ```
 
--   exclude filterを設定する場合
+- exclude filterを設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:pid, exclude:905}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:pid, exclude:905}}
+  ```
 
--   like filterを設定する場合
+- like filterを設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:okindName, like:keeper}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:okindName, like:keeper}}
+  ```
 
--   notlike filterを設定する場合
+- notlike filterを設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD {filter : {key:okindName, notlike:keeper}}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD {filter : {key:okindName, notlike:keeper}}
+  ```
 
--   複数のfilterを設定する場合
+- 複数のfilterを設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'}, {key:'container', like:'gateway'}] }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'}, {key:'container', like:'gateway'}] }
+  ```
 
 :::caution
 
--   `TAGLOAD`と`FLEXLOAD`は、それぞれ設定可能な`CATEGORY`の値が決まっています。
--   `fileter-like`または`filter-notlike`オプションを使用する場合、値に番号が付けられている場合、バッククォート(' ')またはダブルクォート(" ")で囲まないと動作しません。
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
-    ```
+- `TAGLOAD`と`FLEXLOAD`は、それぞれ設定可能な`CATEGORY`の値が決まっています。
+- `fileter-like`または`filter-notlike`オプションを使用する場合、値に番号が付けられている場合、バッククォート(' ')またはダブルクォート(" ")で囲まないと動作しません。
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
+  ```
 
 :::
 
@@ -110,34 +110,34 @@ FLEXLOAD {backward : true}
 
 ## FLEXLOADを使用するカテゴリ一覧{#flexload-items}
 
--   `agent_list`カテゴリ
+- `agent_list`カテゴリ
 
-    ```sql
-    CATEGORY agent_list
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY agent_list
+  FLEXLOAD
+  SELECT
+  ```
 
--   `db_agent_list`カテゴリ
+- `db_agent_list`カテゴリ
 
-    ```sql
-    CATEGORY db_agent_list
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY db_agent_list
+  FLEXLOAD
+  SELECT
+  ```
 
--   `agent_count`カテゴリ
+- `agent_count`カテゴリ
 
-    ```sql
-    CATEGORY agent_count
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY agent_count
+  FLEXLOAD
+  SELECT
+  ```
 
--   `event_cache`カテゴリ 
+- `event_cache`カテゴリ 
 
-    ```sql
-    CATEGORY event_cache
-    FLEXLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY event_cache
+  FLEXLOAD
+  SELECT
+  ```

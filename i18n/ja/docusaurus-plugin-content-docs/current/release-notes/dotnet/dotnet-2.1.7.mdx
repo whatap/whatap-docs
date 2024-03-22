@@ -7,18 +7,18 @@ pagination_next: release-notes/dotnet/dotnet-2_1_6
 
 2023年10月16日
 
--   <Status>Changed</Status>1つのトランザクションに、過度なステップが発生して負荷を発生させないように、1000件を超えたステップは無視するように修正
+- <Status>Changed</Status>1つのトランザクションに、過度なステップが発生して負荷を発生させないように、1000件を超えたステップは無視するように修正
 
--   <Status>Fixed</Status>非同期式の呼び出しで、HTTP request bodyが表示されない現象を修正
+- <Status>Fixed</Status>非同期式の呼び出しで、HTTP request bodyが表示されない現象を修正
 
--   <Status>Fixed</Status>一定時点以降にHTTP headerが正しく表示されないバグを修正
+- <Status>Fixed</Status>一定時点以降にHTTP headerが正しく表示されないバグを修正
 
--   <Status>Fixed</Status>同じネームスペースにあるWindows Communication Foundation(WCF、Webサービス)と関係ないパブリックメソッドがトランザクションを誘発し、トランザクション追跡が異常終了されるエラーを修正
+- <Status>Fixed</Status>同じネームスペースにあるWindows Communication Foundation(WCF、Webサービス)と関係ないパブリックメソッドがトランザクションを誘発し、トランザクション追跡が異常終了されるエラーを修正
 
--   <Status>Fixed</Status>エージェントを削除すると、IISメモリにロードされた一部のファイルが削除した後も残るエラーを修正
+- <Status>Fixed</Status>エージェントを削除すると、IISメモリにロードされた一部のファイルが削除した後も残るエラーを修正
 
--   <Status>Deprecate</Status>WCF(WEBサービス)タイムアウト時間設定オプション(<code>webservice_method_timeout</code>)の削除
+- <Status>Deprecate</Status>WCF(WEBサービス)タイムアウト時間設定オプション(<code>webservice_method_timeout</code>)の削除
 
-    -   WCF終了時点がキャプチャできず、タイムアウトが発生するエラーを修正
+  - WCF終了時点がキャプチャできず、タイムアウトが発生するエラーを修正
 
-    -   ただし、ユーザーがWCFメソッド内でのException処理を正しく行わなかった場合、トランザクション漏れが発生することがあります。 <Link to='../../dotnet/agent-transaction'>次の文書</Link>から、`trace_active_transaction_lost_time`オプションを参照してください。
+  - ただし、ユーザーがWCFメソッド内でのException処理を正しく行わなかった場合、トランザクション漏れが発生することがあります。 <Link to='../../dotnet/agent-transaction'>次の文書</Link>から、`trace_active_transaction_lost_time`オプションを参照してください。

@@ -9,20 +9,20 @@ tags:
 
 When the application server runs, it starts collecting the monitoring data. The collected data is stored in the log file.
 
--   **log_rotation_enabled** <span class='type'>Boolean</span>
+- **log_rotation_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The function to store agent log files by date is activated. The log file name is stored in the format of _whatap-'yyyymmdd'.log_. If the value is `false`, the log file name is stored in the format of _whatap.log_.
+  The function to store agent log files by date is activated. The log file name is stored in the format of _whatap-'yyyymmdd'.log_. If the value is `false`, the log file name is stored in the format of _whatap.log_.
 
--   **log_keep_days** <span class='type'>Int</span>
+- **log_keep_days** <span class='type'>Int</span>
 
-    Default `7`
+  Default `7`
 
-    It sets the log file retention period. It works only when `log_rotation_enabled` is `true`.
+  It sets the log file retention period. It works only when `log_rotation_enabled` is `true`.
 
--   **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
+- **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The function to record the log is activated in case of DataSource upon InitialContext Lookup.
+  The function to record the log is activated in case of DataSource upon InitialContext Lookup.

@@ -1,65 +1,65 @@
--   **watchlog_enabled** <span class='type'>Boolean</span>
+- **watchlog_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    If the value is `true`, the log monitoring is enabled.
+  If the value is `true`, the log monitoring is enabled.
 
--   **watchlog_check_interval** <span class='type'>Int</span>
+- **watchlog_check_interval** <span class='type'>Int</span>
 
-    Default `2000`
+  Default `2000`
 
-    It is the interval for monitoring the logs. At every interval, it checks whether any record has been added to the log file.
+  It is the interval for monitoring the logs. At every interval, it checks whether any record has been added to the log file.
 
--   **watchlog_read_count** <span class='type'>Int</span>
+- **watchlog_read_count** <span class='type'>Int</span>
 
-    Default `8`
+  Default `8`
 
-    It is the maximum count to read logs. It reads as many as `watchlog_buffer_size` at a time.
+  It is the maximum count to read logs. It reads as many as `watchlog_buffer_size` at a time.
 
--   **watchlog_buffer_size** <span class='type'>Int</span>
+- **watchlog_buffer_size** <span class='type'>Int</span>
 
-    Default `131072(128k)`
+  Default `131072(128k)`
 
-    Size for reading logs at a time.
+  Size for reading logs at a time.
 
--   **watchlog.LOGKEY**
+- **watchlog.LOGKEY**
 
-    This is the setting to monitor a log file. Enter the `file` name and set multiple `words` with the delimiter, comma (,). It watches the logs at `check_interval` and alerts you when any keywords are found. Once an alert has occurred, the occurrence of alert stops for the `silent` period.
+  This is the setting to monitor a log file. Enter the `file` name and set multiple `words` with the delimiter, comma (,). It watches the logs at `check_interval` and alerts you when any keywords are found. Once an alert has occurred, the occurrence of alert stops for the `silent` period.
 
-    -   **watchlog.LOGKEY.enabled** <span class='type'>Boolean</span> Default `true`
-    -   **watchlog.LOGKEY.file** <span class='type'>String</span>
-    -   **watchlog.LOGKEY.words** <span class='type'>String</span>
-    -   **watchlog.LOGKEY.silent** <span class='type'>Int</span> Default `10000`
-    -   **watchlog.LOGKEY.check_interval** <span class='type'>Int</span> Default `1000`
+  - **watchlog.LOGKEY.enabled** <span class='type'>Boolean</span> Default `true`
+  - **watchlog.LOGKEY.file** <span class='type'>String</span>
+  - **watchlog.LOGKEY.words** <span class='type'>String</span>
+  - **watchlog.LOGKEY.silent** <span class='type'>Int</span> Default `10000`
+  - **watchlog.LOGKEY.check_interval** <span class='type'>Int</span> Default `1000`
 
--   **log_root** <span class='type'>String</span>
+- **log_root** <span class='type'>String</span>
 
-    Default `${WHATAP_HOME}`/logs
+  Default `${WHATAP_HOME}`/logs
 
-    Set the agent's log path.
+  Set the agent's log path.
 
--   **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
+- **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The function to record the log is activated in case of DataSource upon InitialContext Lookup.
+  The function to record the log is activated in case of DataSource upon InitialContext Lookup.
 
--   **log_rotation_enabled** <span class='type'>Boolean</span>
+- **log_rotation_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The function to store agent log files by date is activated. The log file name is stored in the format of _whatap-'yyyymmdd'.log_. If the value is `false`, the log file name is stored in the format of _whatap.log_.
+  The function to store agent log files by date is activated. The log file name is stored in the format of _whatap-'yyyymmdd'.log_. If the value is `false`, the log file name is stored in the format of _whatap.log_.
 
--   **log_keep_days** <span class='type'>Int</span>
+- **log_keep_days** <span class='type'>Int</span>
 
-    Default `7`
+  Default `7`
 
-    It sets the log file retention period. It works only when the `log_rotation_enabled` value is `true`.
+  It sets the log file retention period. It works only when the `log_rotation_enabled` value is `true`.
 
--   **log_oname_enabled** <span class='type'>Boolean</span>
+- **log_oname_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    If the value is `true`, add agent names for each log.
+  If the value is `true`, add agent names for each log.
 
-    ![](/img/java-agent-log-oname.png)
+  ![](/img/java-agent-log-oname.png)

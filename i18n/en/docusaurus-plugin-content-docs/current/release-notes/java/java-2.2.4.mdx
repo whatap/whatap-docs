@@ -9,84 +9,84 @@ May 25, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   Added the function to modify the trace URL name.
+- Added the function to modify the trace URL name.
 
-    ```ini title='whatap.conf'
-    # The full path of the call method and wildcard (*) can be used.
-    hook_tx_name_patterns=ab.cd.ef.GH.ij
+  ```ini title='whatap.conf'
+  # The full path of the call method and wildcard (*) can be used.
+  hook_tx_name_patterns=ab.cd.ef.GH.ij
 
-    # Select one of class, method, string, and return.
-    hook_tx_name_mode=method
-    ```
+  # Select one of class, method, string, and return.
+  hook_tx_name_mode=method
+  ```
 
-    As an example, the method how to call a specific URL and a specific method
+  As an example, the method how to call a specific URL and a specific method
 
-    -   In case of calling the `test100000()` method upon calling the URL registered in `io.home.test.TestController.test1`: `/api/100000+test1+test100000`
+  - In case of calling the `test100000()` method upon calling the URL registered in `io.home.test.TestController.test1`: `/api/100000+test1+test100000`
 
--   Addition of the trace data sampling function
+- Addition of the trace data sampling function
 
-    ```ini title='whatap.conf'
-    # Default value
-    # Whether or not to collect the trace sampling data
-    trace_sampling_enabled=false
+  ```ini title='whatap.conf'
+  # Default value
+  # Whether or not to collect the trace sampling data
+  trace_sampling_enabled=false
 
-    # Trace data sampling count
-    # Data exceeding the set sampling count is not transmitted.
-    # Resets every 5 seconds
-    trace_sampling_tps=10000
+  # Trace data sampling count
+  # Data exceeding the set sampling count is not transmitted.
+  # Resets every 5 seconds
+  trace_sampling_tps=10000
 
-    # Whether or not to transmit the trace data
-    trace_send_enabled=true
+  # Whether or not to transmit the trace data
+  trace_send_enabled=true
 
-    # Trace data sampling debugging option
-    debug_trace_samling=false
-    ```
+  # Trace data sampling debugging option
+  debug_trace_samling=false
+  ```
 
--   Added the function to ignore the collected SQL data.
+- Added the function to ignore the collected SQL data.
 
-    ```ini title='whatap.conf'
-    # The SQL statement that matches the registered SQL hash value is ignored.
-    ignore_sql_hash_set=
-    ```
+  ```ini title='whatap.conf'
+  # The SQL statement that matches the registered SQL hash value is ignored.
+  ignore_sql_hash_set=
+  ```
 
--   Added the function to ignore specific exceptional cases in a specific service.
+- Added the function to ignore specific exceptional cases in a specific service.
 
-    ```ini title='whatap.conf'
-    # Register exception:service_url.
-    # Use comma (,) as the delimiter.
-    # For example, java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
-    ignore_exception_tx_pattern=
-    ```
+  ```ini title='whatap.conf'
+  # Register exception:service_url.
+  # Use comma (,) as the delimiter.
+  # For example, java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+  ignore_exception_tx_pattern=
+  ```
 
 ## Update <sup><Status>Change</Status></sup>
 
--   Updated **webflux-5.x** and **webflux-6.x** of the open source plugins with the embedded Java agent.
+- Updated **webflux-5.x** and **webflux-6.x** of the open source plugins with the embedded Java agent.
 
-    Modified the **spring-webflux** plugin to trace the **spring-r2dbc**.
+  Modified the **spring-webflux** plugin to trace the **spring-r2dbc**.
 
--   Added the driver information in the remote call. e.g. RabbitMQ, AMQP, Kafka, …
+- Added the driver information in the remote call. e.g. RabbitMQ, AMQP, Kafka, …
 
--   Added the driver information in the HTTP call. e.g. ApacheClient, UrlCon, Webflux, …
+- Added the driver information in the HTTP call. e.g. ApacheClient, UrlCon, Webflux, …
 
--   Modified the `#RemoteTrace` category name of LogSink to `#RemoteAccessStatus`.
+- Modified the `#RemoteTrace` category name of LogSink to `#RemoteAccessStatus`.
 
--   Modified to use the logsink on/off without restarting.
-    ```ini title='whatap.conf'
-    # Default value
-    hooklog_enabled=true
-    ```
+- Modified to use the logsink on/off without restarting.
+  ```ini title='whatap.conf'
+  # Default value
+  hooklog_enabled=true
+  ```
 
--   Added the function to trace upon initial call of HttpURLConnection and WebLogic URLConnection.
-    ```ini title='whatap.conf'
-    # Default value
-    hook_HttpURLConnection_startup_enabled=false
-    hook_HttpURLConnection_weblogic_startup_enabled=false
-    ```
+- Added the function to trace upon initial call of HttpURLConnection and WebLogic URLConnection.
+  ```ini title='whatap.conf'
+  # Default value
+  hook_HttpURLConnection_startup_enabled=false
+  hook_HttpURLConnection_weblogic_startup_enabled=false
+  ```
 
 ## Bug Fixing <sup><Status>Fixed</Status></sup>
 
--   Fixed the **BigDecimal** (SQL parameter) collection issue.
+- Fixed the **BigDecimal** (SQL parameter) collection issue.
 
--   Fixed the error occurred when calling non-existent key value in the **ECS** environment.
+- Fixed the error occurred when calling non-existent key value in the **ECS** environment.
 
--   Fixed the **RemoteIP** based user counting bug upon using **Webflux**.
+- Fixed the **RemoteIP** based user counting bug upon using **Webflux**.

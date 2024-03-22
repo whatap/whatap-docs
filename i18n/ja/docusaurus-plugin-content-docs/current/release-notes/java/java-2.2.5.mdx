@@ -11,35 +11,35 @@ displayed_sidebar: releaseSidebar
 
 **Javaエージェント2.2.5バージョン以降、以前の_instrument_フォルダは使用不可**
 
--   _instrument_フォルダは、2.2.4バージョンまで使用可能です。
+- _instrument_フォルダは、2.2.4バージョンまで使用可能です。
 
--   _instrument_フォルダは、以後 _weaving_フォルダに置き換えられる予定です。
+- _instrument_フォルダは、以後 _weaving_フォルダに置き換えられる予定です。
 
--   _instrument_で使用されるオープンソースの追跡プラグインは、新しい_weaving_フォルダでは正常な動作を保証しません。
+- _instrument_で使用されるオープンソースの追跡プラグインは、新しい_weaving_フォルダでは正常な動作を保証しません。
 
 :::
 
 ## 新機能 <sup><Status>New</Status></sup>
 
--   最新のspring-boot非同期追跡機能を追加
+- 最新のspring-boot非同期追跡機能を追加
 
-    -   webflux + "tomcat9, tomcat10, undertow, netty"追跡機能の追加
+  - webflux + "tomcat9, tomcat10, undertow, netty"追跡機能の追加
 
-    -   r2dbc-mysql + "jasync, dev.miku"ドライバー追跡機能の追加
+  - r2dbc-mysql + "jasync, dev.miku"ドライバー追跡機能の追加
 
-    ```ini title='whatap.conf'
-    # spring-boot-2.7以降の場合
-    weaving=tomcat9,spring-boot-2.7.x
+  ```ini title='whatap.conf'
+  # spring-boot-2.7以降の場合
+  weaving=tomcat9,spring-boot-2.7.x
 
-    # spring-boot-3.0以降の場合
-    weaving=tomcat10,spring-boot-3.x
-    springboot_tomcat10_enabled=true
-    ```
+  # spring-boot-3.0以降の場合
+  weaving=tomcat10,spring-boot-3.x
+  springboot_tomcat10_enabled=true
+  ```
 
 ## アップデート <sup><Status>Change</Status></sup>
 
--   **webflux**、**r2dbc**オープンソースプラグインを内部(embedded) プラグインに切り替え
+- **webflux**、**r2dbc**オープンソースプラグインを内部(embedded) プラグインに切り替え
 
 ## バグ修正 <sup><Status>Fixed</Status></sup>
 
--   非同期tomcat(例、**webflux** + **tomcat**) 使用時に同じサービスが2回呼び出されるバグを修正
+- 非同期tomcat(例、**webflux** + **tomcat**) 使用時に同じサービスが2回呼び出されるバグを修正

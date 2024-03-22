@@ -19,68 +19,68 @@ Home > Select Project > **_Log_** > **_Log Setting_**
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. Proceed with the process according to the instructions in the **_Check Agent Settings_** tab of the **_Start Log Monitoring_** section.
 
-1.  Under Project Menu, select **_Management_** > **_Agent CONFIG._**.
+1. Under Project Menu, select **_Management_** > **_Agent CONFIG._**.
 
-2.  In the **_Write Options_** tab, select **_Direct Input_**. Add the `logsink_enabled=true` option in the field. 
+2. In the **_Write Options_** tab, select **_Direct Input_**. Add the `logsink_enabled=true` option in the field. 
 
-    <ImgLang img='log-agent-conf.png' desc='Agent log configuration'/>
+   <ImgLang img='log-agent-conf.png' desc='Agent log configuration'/>
 
-3.  Restart the application to apply the log monitoring.
+3. Restart the application to apply the log monitoring.
 
 ### Key options
 
--   **hooklog_enabled** <span class='type'>Boolean</span>
+- **hooklog_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It enables the log monitoring by hooking the log library.  
+  It enables the log monitoring by hooking the log library.  
 
-    :::caution
+  :::caution
 
-    Before running the application, this option must have been enabled in _whatap.conf_ to dynamically turn on or off the monitoring through the `logsink_enabled` setting.
-    If the `logsink_enabled` option is set to `true` before running the application, log monitoring is possible without a separate setting.
+  Before running the application, this option must have been enabled in _whatap.conf_ to dynamically turn on or off the monitoring through the `logsink_enabled` setting.
+  If the `logsink_enabled` option is set to `true` before running the application, log monitoring is possible without a separate setting.
 
-    :::
+  :::
 
-    :::note
+  :::note
 
-    If there is a possibility to use the log monitoring, it is recommended to set this option in advance.
+  If there is a possibility to use the log monitoring, it is recommended to set this option in advance.
 
-    :::
+  :::
 
--   **hooklog_custom_methods**
+- **hooklog_custom_methods**
 
-    Register a user-defined log. An arbitrary log framework content is delivered. Use this to trace logs of the log module created on the website.
+  Register a user-defined log. An arbitrary log framework content is delivered. Use this to trace logs of the log module created on the website.
 
-    ```java title='Java'
-    package io.home.test;
+  ```java title='Java'
+  package io.home.test;
 
-    public class MyLog {  
-      public void customLog(String log) { ... }
-    }
-    ```
+  public class MyLog {  
+    public void customLog(String log) { ... }
+  }
+  ```
 
-    ```ini title='whatap.conf'
-    hooklog_custom_methods=io.home.test.MyLog.customLog
-    ```
+  ```ini title='whatap.conf'
+  hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```
 
--   **logsink_enabled** <span class='type'>Boolean</span>
+- **logsink_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It turns on or off Log Monitoring.
+  It turns on or off Log Monitoring.
 
-    :::caution
+  :::caution
 
-    Before running the application, if in _whatap.conf_, the `hooklog_enabled` option is set, this option can dynamically turn on or off the log monitoring.
+  Before running the application, if in _whatap.conf_, the `hooklog_enabled` option is set, this option can dynamically turn on or off the log monitoring.
 
-    :::
+  :::
 
--   **logsink_trace_enabled** <span class='type'>Boolean</span>
+- **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Set whether or not to expose the log tab of the transaction trace by inserting the transaction ID into the logs.  
+  Set whether or not to expose the log tab of the transaction trace by inserting the transaction ID into the logs.  
 
 ## Enabling the log monitoring
 

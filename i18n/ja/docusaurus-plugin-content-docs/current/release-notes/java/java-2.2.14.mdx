@@ -8,48 +8,48 @@ displayed_sidebar: releaseSidebar
 
 2023年8月17日
 
--   <Status>Feature</Status> resilience4j追跡
+- <Status>Feature</Status> resilience4j追跡
 
-    ```ini title='whatap.conf'
-    weaving=resilience4j
-    ```
+  ```ini title='whatap.conf'
+  weaving=resilience4j
+  ```
 
-    :::note
+  :::note
 
-    **CompletableFuture**追跡が必要です。 詳細については、[次の文書](../../java/async-tracking)を参考にしてください。
+  **CompletableFuture**追跡が必要です。 詳細については、[次の文書](../../java/async-tracking)を参考にしてください。
 
-    :::
+  :::
 
--   <Status>Feature</Status>undertow追跡
+- <Status>Feature</Status>undertow追跡
 
-    spring-boot-3.0バージョンに対応してundertow-2.3.0追跡
+  spring-boot-3.0バージョンに対応してundertow-2.3.0追跡
 
-    ```ini title='whatap.conf'
-    # spring-boot-3.0設定に含む
-    weaving=spring-boot-3.0
+  ```ini title='whatap.conf'
+  # spring-boot-3.0設定に含む
+  weaving=spring-boot-3.0
 
-    # undertow追跡を別途に設定可能
-    weaving=undertow-2.3.0
-    ```
+  # undertow追跡を別途に設定可能
+  weaving=undertow-2.3.0
+  ```
 
--   <Status>Feature</Status>SQL Exception、HTTP Call Exception発生時のユーザー定義Exceptionで処理できるオプションの追加
+- <Status>Feature</Status>SQL Exception、HTTP Call Exception発生時のユーザー定義Exceptionで処理できるオプションの追加
 
-    ```ini title='whatap.conf'
-    # デフォルト値
-    trace_exception_overrite_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # デフォルト値
+  trace_exception_overrite_enabled=false
+  ```
 
--   <Status>Feature</Status><code>java.sql.SQLException</code>発生時にエラーコードを含めて表示できるオプションの追加
+- <Status>Feature</Status><code>java.sql.SQLException</code>発生時にエラーコードを含めて表示できるオプションの追加
 
-    ```ini title='whatap.conf'
-    # デフォルト値
-    trace_sql_errorcode_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # デフォルト値
+  trace_sql_errorcode_enabled=false
+  ```
 
--   <Status>Change</Status>SQL ExceptionまたはHTTP Call Exception発生時のトランザクション レベルをinfoに調節できるように<code>biz_exception</code>オプション範囲の拡張
+- <Status>Change</Status>SQL ExceptionまたはHTTP Call Exception発生時のトランザクション レベルをinfoに調節できるように<code>biz_exception</code>オプション範囲の拡張
 
-    ```ini title='whatap.conf'
-    biz_exception=java.sql.SQLException,org.h2.jdbc.JdbcSQLDataException
-    ```
+  ```ini title='whatap.conf'
+  biz_exception=java.sql.SQLException,org.h2.jdbc.JdbcSQLDataException
+  ```
 
--   <Status>Change</Status><code>NEW_OVERFLOW</code>通知内容にデータ情報を追加
+- <Status>Change</Status><code>NEW_OVERFLOW</code>通知内容にデータ情報を追加

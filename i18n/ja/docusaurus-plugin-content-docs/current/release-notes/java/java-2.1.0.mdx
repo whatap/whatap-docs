@@ -20,9 +20,9 @@ import UI from '@site/src/components/UItext';
 
 whatap.agent-2.1.0以降からWhaTap LabsのJavaエージェントのパッケージ構成を変更しました。
 
--   _whatap.agent-2.1.0.jar_：エージェントのコアjar
--   _whatap.agent.proxy-2.1.0.jar_：WhaTapサーバーに接続が困難ため、迂回接続がサポートされています。
--   _whatap-logsink-lz4-1.7.0.jar_：ログモニタリング(LogSink) でデータを圧縮するためのプラグモジュール (デフォルトでは、JDKが提供するGZIPを使用)
+- _whatap.agent-2.1.0.jar_：エージェントのコアjar
+- _whatap.agent.proxy-2.1.0.jar_：WhaTapサーバーに接続が困難ため、迂回接続がサポートされています。
+- _whatap-logsink-lz4-1.7.0.jar_：ログモニタリング(LogSink) でデータを圧縮するためのプラグモジュール (デフォルトでは、JDKが提供するGZIPを使用)
 
 ### JAVA対応範囲の拡大
 
@@ -81,8 +81,8 @@ WhaTap Labsでは、Serviceまたは HttpClient URLのパターンを、WhaTap�
 
 URL パターン設定対象
 
--   Service URL
--   HttpClient URL
+- Service URL
+- HttpClient URL
 
 :::note
 
@@ -103,7 +103,7 @@ URL パターン設定対象
 
 App Extra Counterのプラグインを使用できるように修正しました。 ただし、エージェントには、プラグインExtraCounter.xの実装が必要です。
 
--   _`${WHATAP}`/plugin/ExtraCounter.x_
+- _`${WHATAP}`/plugin/ExtraCounter.x_
 
 ```
 $pack.put("mycount",100);
@@ -262,16 +262,16 @@ text_zip_enabled=false (デフォルト値)
 
 OSHI(Operating System and Hardware Information)は、システムインフラストラクチャメトリクスを収集するためのライブラリであり、頻繁にアップデートされるため、システム性能指標を収集するためのライブラリとして選択しました。 ただし、Java8以降の環境で使用できます。
 
--   `oshi_enabled=false` (デフォルト値)
--   jdk8以降で使用可能
--   disk="."使用状況の測定及びアラート機能が可能
+- `oshi_enabled=false` (デフォルト値)
+- jdk8以降で使用可能
+- disk="."使用状況の測定及びアラート機能が可能
 
 #### Sigar機能をdeprecated処理
 
 5年以上更新されていないため、初期設定から除外しました。
 
--   sigar_enabled=false (デフォルト値)
--   lib1に対して、aixのみを含む
+- sigar_enabled=false (デフォルト値)
+- lib1に対して、aixのみを含む
 
 Sigar機能を使用するためには、明示的に`sigar_enabled=true`設定後に使用できます。
 

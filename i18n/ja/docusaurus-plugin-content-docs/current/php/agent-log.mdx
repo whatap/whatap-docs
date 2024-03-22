@@ -13,11 +13,11 @@ tags:
 
 ## ログの設定
 
--   **whatap.log_keep_days** <span class='type'>Day</span>
+- **whatap.log_keep_days** <span class='type'>Day</span>
 
-    デフォルト値`7`
+  デフォルト値`7`
 
-    ログファイルの保存期間を設定します。
+  ログファイルの保存期間を設定します。
 
 ## ログシンク(LogSink) の設定
 
@@ -25,37 +25,37 @@ tags:
 
 ### 基本設定
 
--   **whatap.logsink_enabled** <span class='type'>Boolean</span>
+- **whatap.logsink_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    値が`true`の場合、ログデータを収集します。
+  値が`true`の場合、ログデータを収集します。
 
--   **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
+- **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    値が`true`の場合、ログデータを圧縮して送信します。デフォルト値は、GZIPです。
+  値が`true`の場合、ログデータを圧縮して送信します。デフォルト値は、GZIPです。
 
 ### ログファイル設定
 
--   **whatap.logsink.files** <span class='type'>String</span>
+- **whatap.logsink.files** <span class='type'>String</span>
 
-    すべてのファイルパスとファイル名を設定します。コンマ(,)で多数のファイルを指定できます。 
+  すべてのファイルパスとファイル名を設定します。コンマ(,)で多数のファイルを指定できます。 
 
 ### 例
 
--   **基本設定**
+- **基本設定**
 
-    ```ini title='whatap.ini'
-    whatap.logsink_enabled=true
-    whatap.logsink_zip_enabled=true
-    ```
+  ```ini title='whatap.ini'
+  whatap.logsink_enabled=true
+  whatap.logsink_zip_enabled=true
+  ```
 
--   **Apache error logおよびaccess log設定**
+- **Apache error logおよびaccess log設定**
 
-    ```ini title='whatap.ini'
-    whatap.logsink_enabled=true
-    whatap.logsink_zip_enabled=true
-    whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
-    ```
+  ```ini title='whatap.ini'
+  whatap.logsink_enabled=true
+  whatap.logsink_zip_enabled=true
+  whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
+  ```

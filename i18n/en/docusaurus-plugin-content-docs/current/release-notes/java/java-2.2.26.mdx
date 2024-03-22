@@ -8,54 +8,54 @@ displayed_sidebar: releaseSidebar
 
 January 11, 2024
 
--   <Status>Feature</Status> Traces the reactor-kafka-1.3 in spring-boot-2.5 or later.
+- <Status>Feature</Status> Traces the reactor-kafka-1.3 in spring-boot-2.5 or later.
 
-    ```ini title='whatap.conf'
-    # using spring-boot-2.5 ~
-    weaving=spring-boot-2.5
+  ```ini title='whatap.conf'
+  # using spring-boot-2.5 ~
+  weaving=spring-boot-2.5
 
-    # using spring-boot-2.7 ~
-    weaving=spring-boot-2.7
+  # using spring-boot-2.7 ~
+  weaving=spring-boot-2.7
 
-    # using spring-boot-3.0 ~
-    weaving=spring-boot-3.0
-    ```
+  # using spring-boot-3.0 ~
+  weaving=spring-boot-3.0
+  ```
 
--   <Status>Feature</Status> Traces the RxJava schedules when using RxJava in spring-boot-2.5 or later.
+- <Status>Feature</Status> Traces the RxJava schedules when using RxJava in spring-boot-2.5 or later.
 
-    ```ini title='whatap.conf'
-    # using spring-boot-2.5 ~
-    weaving=spring-boot-2.5
+  ```ini title='whatap.conf'
+  # using spring-boot-2.5 ~
+  weaving=spring-boot-2.5
 
-    # using spring-boot-2.7 ~
-    weaving=spring-boot-2.7
-    ```
+  # using spring-boot-2.7 ~
+  weaving=spring-boot-2.7
+  ```
 
--   <Status>Feature</Status> Traces RxJava3 schedules when using RxJava3 in spring-boot-3.0 or later.
+- <Status>Feature</Status> Traces RxJava3 schedules when using RxJava3 in spring-boot-3.0 or later.
 
-    ```ini title='whatap.conf'
-    # using spring-boot-3.0 ~
-    weaving=spring-boot-3.0
-    ```
+  ```ini title='whatap.conf'
+  # using spring-boot-3.0 ~
+  weaving=spring-boot-3.0
+  ```
 
--   <Status>Feature</Status> Collects and displays <code>threadName</code>, <code>className</code>, <code>methodName</code>, and <code>lineNumber</code> in the agent log.
+- <Status>Feature</Status> Collects and displays <code>threadName</code>, <code>className</code>, <code>methodName</code>, and <code>lineNumber</code> in the agent log.
 
-    ```log title='whatap.log'
-    [{threadName}][{className}.{methodName}({lineNumber})] 
-    ```
+  ```log title='whatap.log'
+  [{threadName}][{className}.{methodName}({lineNumber})] 
+  ```
 
--   <Status>Feature</Status> Modified the agent log format.
+- <Status>Feature</Status> Modified the agent log format.
 
-    ```log title='whatap.log'
-    {date} {time} [{threadName}][{className}.{methodName}({lineNumber})] ({work}) {log}
-    ```
+  ```log title='whatap.log'
+  {date} {time} [{threadName}][{className}.{methodName}({lineNumber})] ({work}) {log}
+  ```
 
-    ![whatap log](/img/release/release-java-log.png)
+  ![whatap log](/img/release/release-java-log.png)
 
--   <Status>Feature</Status> Traces <code>CallableStatement</code> of Tibero.
+- <Status>Feature</Status> Traces <code>CallableStatement</code> of Tibero.
 
--   <Status>Changed</Status> Modified the text color of the agent log.
+- <Status>Changed</Status> Modified the text color of the agent log.
 
--   <Status>Changed</Status> Modified the agent logfile name when starting the agent from <em>whatap-<code>date</code>.log</em> to <em>whatap.log</em>.
+- <Status>Changed</Status> Modified the agent logfile name when starting the agent from <em>whatap-<code>date</code>.log</em> to <em>whatap.log</em>.
 
--   <Status>Changed</Status> When the UTC reference date is changed, modified to save the <em>whatap.log</em> file name to <em>whatap-<code>date</code>.log</em>.
+- <Status>Changed</Status> When the UTC reference date is changed, modified to save the <em>whatap.log</em> file name to <em>whatap-<code>date</code>.log</em>.

@@ -35,21 +35,21 @@ echo "logsink.files=$LOGFILES" | sudo tee -a {設定ファイルパス}/whatap.c
 
 1.3.6バージョンから次の方法でトランザクションとログの連動を設定できます。現在、WhaTapはPythonのlogging、loguruライブラリを対応しています。使用するPython Logライブラリに従って_whatap.conf_を構成してください。
 
--   loggingモジュール
+- loggingモジュール
 
-    ```shell title='logging'
+  ```shell title='logging'
 
-    echo "trace_logging_enabled=true" | sudo tee -a{設定ファイルパス}/whatap.conf
+  echo "trace_logging_enabled=true" | sudo tee -a{設定ファイルパス}/whatap.conf
 
-    ```
+  ```
 
--   loguruモジュール
+- loguruモジュール
 
-    ```shell title='loguru'
+  ```shell title='loguru'
 
-    echo "trace_loguru_enabled=true" | sudo tee -a{設定ファイルパス}/whatap.conf
+  echo "trace_loguru_enabled=true" | sudo tee -a{設定ファイルパス}/whatap.conf
 
-    ```
+  ```
 
 #### 1.3.6以前バージョン
 

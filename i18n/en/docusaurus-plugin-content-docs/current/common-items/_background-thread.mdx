@@ -4,29 +4,29 @@
 
 Basically, the active stack means the stack of the thread in which transactions are being processed. You may need to analyze the stack for some background threads as well. At this time, the active stack for the background thread can be obtained using the option. It is available since the version 1.6.2.
 
--   If the value of `async_stack_enabled` is set to `true`, the function is enabled.
+- If the value of `async_stack_enabled` is set to `true`, the function is enabled.
 
-    ```bash
-    async_stack_enabled=false
-    ```
+  ```bash
+  async_stack_enabled=false
+  ```
 
--   The stack dump interval depends on the foreground active stack setting.
+- The stack dump interval depends on the foreground active stack setting.
 
-    ```bash
-    active_stack_second=10
-    ```
+  ```bash
+  active_stack_second=10
+  ```
 
--   When setting the target thread name, use `*` to specify the string pattern. 
+- When setting the target thread name, use `*` to specify the string pattern. 
 
-    ```bash
-    async_thread_match=http*,abc*
-    ```
+  ```bash
+  async_thread_match=http*,abc*
+  ```
 
-      The stack dump target is determined by the thread name. Using comma (`,`), you can specify multiple matches.
+    The stack dump target is determined by the thread name. Using comma (`,`), you can specify multiple matches.
 
--   If the top method of the stack is a class or method registered in `async_thread_parking`, the system considers that the thread is parked and does not generate any dump.
+- If the top method of the stack is a class or method registered in `async_thread_parking`, the system considers that the thread is parked and does not generate any dump.
 
-    ```bash
-    async_thread_parking_class=sun.misc.Unsafe
-    async_thread_parking_method=park
-    ```
+  ```bash
+  async_thread_parking_class=sun.misc.Unsafe
+  async_thread_parking_method=park
+  ```

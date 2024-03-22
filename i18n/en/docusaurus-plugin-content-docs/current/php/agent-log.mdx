@@ -13,11 +13,11 @@ When the application server runs, it starts collecting the monitoring data. The 
 
 ## Log setting
 
--   **whatap.log_keep_days** <span class='type'>Day</span>
+- **whatap.log_keep_days** <span class='type'>Day</span>
 
-    Default `7`
+  Default `7`
 
-    Set the retention period of log files.
+  Set the retention period of log files.
 
 ## Setting the log sink
 
@@ -25,37 +25,37 @@ It is used to log data.
 
 ### Default settings
 
--   **whatap.logsink_enabled** <span class='type'>Boolean</span>
+- **whatap.logsink_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    If the value is `true`, the log data is collected.
+  If the value is `true`, the log data is collected.
 
--   **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
+- **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the zipped log data is transmitted. The default value is GZIP.
+  If the value is `true`, the zipped log data is transmitted. The default value is GZIP.
 
 ### Setting the log file
 
--   **whatap.logsink.files** <span class='type'>String</span>
+- **whatap.logsink.files** <span class='type'>String</span>
 
-    Set the full file path and file name. You can specify multiple files with comma (,). 
+  Set the full file path and file name. You can specify multiple files with comma (,). 
 
 ### Example
 
--   **Default Settings**
+- **Default Settings**
 
-    ```ini title='whatap.ini'
-    whatap.logsink_enabled=true
-    whatap.logsink_zip_enabled=true
-    ```
+  ```ini title='whatap.ini'
+  whatap.logsink_enabled=true
+  whatap.logsink_zip_enabled=true
+  ```
 
--   **Configuration for Apache error log and access log**
+- **Configuration for Apache error log and access log**
 
-    ```ini title='whatap.ini'
-    whatap.logsink_enabled=true
-    whatap.logsink_zip_enabled=true
-    whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
-    ```
+  ```ini title='whatap.ini'
+  whatap.logsink_enabled=true
+  whatap.logsink_zip_enabled=true
+  whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
+  ```

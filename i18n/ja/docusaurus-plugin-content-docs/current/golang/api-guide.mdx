@@ -89,29 +89,29 @@ http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
--   `trace.Func()`, `trace.HandlerFunc()`
+- `trace.Func()`, `trace.HandlerFunc()`
 
-    -   `net/http`のHandle、HandFuncをラッピングしたメソッド
+  - `net/http`のHandle、HandFuncをラッピングしたメソッド
 
-    -   `trace.StartWithRequest`、`trace.End`を同一に進行します。
+  - `trace.StartWithRequest`、`trace.End`を同一に進行します。
 
-    -   ウェブトランザクションの名前は、RequestURIで設定できます。
+  - ウェブトランザクションの名前は、RequestURIで設定できます。
 
--   `trace.Step()`
+- `trace.Step()`
 
-    ユーザーが送る文字列をプロファイル情報に出力する機能を提供します。
+  ユーザーが送る文字列をプロファイル情報に出力する機能を提供します。
 
-    ```go title='Go'
-    http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
-        ...
-    }))
-    ```
+  ```go title='Go'
+  http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
+      ...
+  }))
+  ```
 
-    ```go title='Go'
-    http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-        ...
-    }))
-    ```
+  ```go title='Go'
+  http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+      ...
+  }))
+  ```
 
 ### ノーマルトランザクション追跡
 

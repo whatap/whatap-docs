@@ -9,103 +9,103 @@ displayed_sidebar: releaseSidebar
 
 ## 新機能 <sup><Status>New</Status></sup>
 
--   **spring-webflux-6.x**追跡追加
+- **spring-webflux-6.x**追跡追加
+
+  ```ini title='whatap.conf'
+  weaving=webflux-6.0
+  ```
+
+- database connection closeをstepに表示
+
+  - close表示クラス情報一覧
+
+    - org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - org.apache.tomcat.dbcp.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - org.apache.tomcat.dbcp.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
+
+    - com.zaxxer.hikari.pool.ProxyConnection.close()V
+
+  - patterns設定では、database connection closeを表示するクラスを追加可能(デフォルト値 `true`)
 
     ```ini title='whatap.conf'
-    weaving=webflux-6.0
+    hook_connection_close_default_enabled=true
+    hook_connection_close_patterns=a.b.c.D
     ```
 
--   database connection closeをstepに表示
+- jdbc url表示設定の追加
 
-    -   close表示クラス情報一覧
-
-        -   org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   org.apache.tomcat.dbcp.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   org.apache.tomcat.dbcp.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close()V
-
-        -   com.zaxxer.hikari.pool.ProxyConnection.close()V
-
-    -   patterns設定では、database connection closeを表示するクラスを追加可能(デフォルト値 `true`)
-
-        ```ini title='whatap.conf'
-        hook_connection_close_default_enabled=true
-        hook_connection_close_patterns=a.b.c.D
-        ```
-
--   jdbc url表示設定の追加
-
-    -   `jdbc_url_enabled=false`に設定すると、Javaエージェントが追跡しているdatabase connection情報をurlではなくクラスで表示(デフォルト値 `true`)
-
-        ```ini title='whatap.conf'
-        jdbc_url_enabled=true
-        ```
-
--   database connection poolクラス表示設定の追加
-
-    -   database connection poolのクラス名をjdbc urlデータの後に表示してconnection poolの情報を追加で確認できるよう設定を追加 (デフォルト値 `false`)
-
-        ```ini title='whatap.conf'
-        trace_dbc_append_classname_enabled=false
-        ```
-
-    -   database connection情報を詳細に表示するための例
-
-        `jdbc_url` + "@クラス情報"; connection close情報; 表示
-
-        ```ini title='whatap.conf'
-        trace_dbc_append_classname_enabled=true
-        trace_dbc_close_enabled=true
-        trace_dbc_wrap_enabled=true
-        ```
-
--   kubernetesマスターエージェント接続可否の設定を追加(デフォルト値 `false`)
+  - `jdbc_url_enabled=false`に設定すると、Javaエージェントが追跡しているdatabase connection情報をurlではなくクラスで表示(デフォルト値 `true`)
 
     ```ini title='whatap.conf'
-    kube_agent_connect_enabled=false
+    jdbc_url_enabled=true
     ```
 
--   (batch) アクティブスタック収集可否の設定を追加(デフォルト値 `false`)
+- database connection poolクラス表示設定の追加
+
+  - database connection poolのクラス名をjdbc urlデータの後に表示してconnection poolの情報を追加で確認できるよう設定を追加 (デフォルト値 `false`)
 
     ```ini title='whatap.conf'
-    active_stack_enabled=false
+    trace_dbc_append_classname_enabled=false
     ```
 
--   (batch) batch jobにトランザクションを分離して追跡機能を追加(デフォルト値 `false`)
+  - database connection情報を詳細に表示するための例
+
+    `jdbc_url` + "@クラス情報"; connection close情報; 表示
 
     ```ini title='whatap.conf'
-    split_trace_enabled=false
+    trace_dbc_append_classname_enabled=true
+    trace_dbc_close_enabled=true
+    trace_dbc_wrap_enabled=true
     ```
 
--   (batch) batch jobの開始トランザクションの最大step設定を追加(デフォルト値 `2000`)
+- kubernetesマスターエージェント接続可否の設定を追加(デフォルト値 `false`)
 
-    ```ini title='whatap.conf'
-    trace_batch_main_step_max_count=2000
-    ```
+  ```ini title='whatap.conf'
+  kube_agent_connect_enabled=false
+  ```
 
--   (batch) リアルタイムで分離されたトランザクション追跡例
-    ```ini title='whatap.conf'
-    trace_batch_main_step_max_count=2000
-    split_trace_enabled=true
-    ```
+- (batch) アクティブスタック収集可否の設定を追加(デフォルト値 `false`)
+
+  ```ini title='whatap.conf'
+  active_stack_enabled=false
+  ```
+
+- (batch) batch jobにトランザクションを分離して追跡機能を追加(デフォルト値 `false`)
+
+  ```ini title='whatap.conf'
+  split_trace_enabled=false
+  ```
+
+- (batch) batch jobの開始トランザクションの最大step設定を追加(デフォルト値 `2000`)
+
+  ```ini title='whatap.conf'
+  trace_batch_main_step_max_count=2000
+  ```
+
+- (batch) リアルタイムで分離されたトランザクション追跡例
+  ```ini title='whatap.conf'
+  trace_batch_main_step_max_count=2000
+  split_trace_enabled=true
+  ```
 
 ## アップデート <sup><Status>Change</Status></sup>
 
--   Javaエージェント組み込みオープンソースプラグインの**webflux-5.x**アップデート
+- Javaエージェント組み込みオープンソースプラグインの**webflux-5.x**アップデート
 
--   ResultSetのfetch timeをsystem timeからjvmのnanotimeに修正
+- ResultSetのfetch timeをsystem timeからjvmのnanotimeに修正
 
--   `service_patterns`でトランザクションを登録する場合、トランザクション名を"クラス#メソッド"方式で表示
+- `service_patterns`でトランザクションを登録する場合、トランザクション名を"クラス#メソッド"方式で表示
 
--   SQLモニタリング時にnull sqlが伝達された場合、stepに**sql is null**を表示
+- SQLモニタリング時にnull sqlが伝達された場合、stepに**sql is null**を表示
 
--   (batch) DeadLock削除
+- (batch) DeadLock削除
 
 ## バグ修正 <sup><Status>Fixed</Status></sup>
 
--   ResultSet wrapperのダブルカウンティングバグを修正
+- ResultSet wrapperのダブルカウンティングバグを修正
 
--   SQL parameterのBig Decimal収集バグを修正
+- SQL parameterのBig Decimal収集バグを修正

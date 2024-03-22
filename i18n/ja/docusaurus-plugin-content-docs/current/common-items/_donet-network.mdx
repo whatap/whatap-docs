@@ -1,53 +1,53 @@
--   **whatap.server.host** <span class='type'>ip_address</span>
+- **whatap.server.host** <span class='type'>ip_address</span>
 
-    デフォルト値`127.0.0.1,127.0.1`
+  デフォルト値`127.0.0.1,127.0.1`
 
-    エージェントが収集したデータを送信するサーバーを設定します。収集サーバーの二重化により2つ以上のIPアドレスを持つ場合は、コンマ(,)を区切り文字として使用します。設定するIPアドレスには収集サーバーであるproxyサーバーがリスニング(Listening)状態でサービスする必要があります。
+  エージェントが収集したデータを送信するサーバーを設定します。収集サーバーの二重化により2つ以上のIPアドレスを持つ場合は、コンマ(,)を区切り文字として使用します。設定するIPアドレスには収集サーバーであるproxyサーバーがリスニング(Listening)状態でサービスする必要があります。
 
--   **whatap.server.port** <span class='type'>tcp_port</span>
+- **whatap.server.port** <span class='type'>tcp_port</span>
 
-    デフォルト値`6600`
+  デフォルト値`6600`
 
-    収集サーバーのポートを設定します。ポートは1つだけ設定できるので、`whatap.server.host`オプションに設定した収集サーバーは同一のポートを使用する必要があります。
+  収集サーバーのポートを設定します。ポートは1つだけ設定できるので、`whatap.server.host`オプションに設定した収集サーバーは同一のポートを使用する必要があります。
 
--   **tcp_so_timeout** <span class='type'>MiliSecond</span>
+- **tcp_so_timeout** <span class='type'>MiliSecond</span>
 
-    デフォルト値`60000`
+  デフォルト値`60000`
 
-    収集サーバーと通信するTCPセッションのSocket Timeout値を設定します。
+  収集サーバーと通信するTCPセッションのSocket Timeout値を設定します。
 
--   **tcp_connection_timeout** <span class='type'>MiliSecond</span>
+- **tcp_connection_timeout** <span class='type'>MiliSecond</span>
 
-    デフォルト値`5000`
+  デフォルト値`5000`
 
-    収集サーバーと通信するTCPセッションのConnection Timeout値を設定します。
+  収集サーバーと通信するTCPセッションのConnection Timeout値を設定します。
 
--   **net_send_max_bytes** <span class='type'>Byte</span>
+- **net_send_max_bytes** <span class='type'>Byte</span>
 
-    デフォルト値`5242880`
+  デフォルト値`5242880`
 
-    エージェントがデータを収集して、ネットワークに一度に送信できる最大byteサイズです。
+  エージェントがデータを収集して、ネットワークに一度に送信できる最大byteサイズです。
 
--   **net_udp_port** <span class='type'>tcp_port</span>
+- **net_udp_port** <span class='type'>tcp_port</span>
 
-    デフォルト値`6600`
+  デフォルト値`6600`
 
-    WhaTapエージェントは、トレーサーからUDPを使用して収集したデータを収集サーバーに送信します。最初のUDPサーバーのポートを指定できます。デフォルトの6600番ポートが使用されている場合に、このオプションを使用します。
+  WhaTapエージェントは、トレーサーからUDPを使用して収集したデータを収集サーバーに送信します。最初のUDPサーバーのポートを指定できます。デフォルトの6600番ポートが使用されている場合に、このオプションを使用します。
 
-    :::note
+  :::note
 
-    設定した値を有効にするには、IISを再起動してください。
+  設定した値を有効にするには、IISを再起動してください。
 
-    :::
+  :::
 
--   **net_send_queue1_size** <span class='type'>Int</span>
+- **net_send_queue1_size** <span class='type'>Int</span>
 
-    デフォルト値`256`
+  デフォルト値`256`
 
-    TCPデータ処理のQueueバッファを設定します。優先度の高いデータのQueueです。
+  TCPデータ処理のQueueバッファを設定します。優先度の高いデータのQueueです。
 
--   **net_send_queue2_size** <span class='type'>Int</span>
+- **net_send_queue2_size** <span class='type'>Int</span>
 
-    デフォルト値`5000`
+  デフォルト値`5000`
 
-    TCPデータ処理のQueueバッファを設定します。トレースデータのQueueです。
+  TCPデータ処理のQueueバッファを設定します。トレースデータのQueueです。

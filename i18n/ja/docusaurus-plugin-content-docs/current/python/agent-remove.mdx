@@ -10,22 +10,22 @@ tags:
 
 Pythonモニタリングエージェントを削除するために、次の手続きに進んでください。
 
-1.  アプリケーションサーバーを再起動に追加した`WHATAP_AGENT`の開始コマンドを削除します。
+1. アプリケーションサーバーを再起動に追加した`WHATAP_AGENT`の開始コマンドを削除します。
 
-2.  `whatap-stop-agent`コマンドを使用して、WhaTap Pythonエージェントプロセスを終了します。
+2. `whatap-stop-agent`コマンドを使用して、WhaTap Pythonエージェントプロセスを終了します。
 
-    ```javascript title=SH
-    $ whatap-stop-agent
-    ```
+   ```javascript title=SH
+   $ whatap-stop-agent
+   ```
 
-3.  プロセスが終了しない場合は、次のコマンドを使用してプロセスを終了させてください。
+3. プロセスが終了しない場合は、次のコマンドを使用してプロセスを終了させてください。
 
-    ```javascript title=SH
-    $ killall whatap-python
-    ```
+   ```javascript title=SH
+   $ killall whatap-python
+   ```
 
-4.  プロセスが正常に終了したかどうかを、次のコマンドで確認できます。
+4. プロセスが正常に終了したかどうかを、次のコマンドで確認できます。
 
-    ```javascript title=SH
-    $ ps -ef|grep whatap_python
-    ```
+   ```javascript title=SH
+   $ ps -ef|grep whatap_python
+   ```

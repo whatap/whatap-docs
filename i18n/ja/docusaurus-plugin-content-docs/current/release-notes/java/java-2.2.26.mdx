@@ -8,54 +8,54 @@ displayed_sidebar: releaseSidebar
 
 2024年01月11日
 
--   <Status>Feature</Status> spring-boot-2.5以降でreactor-kafka-1.3を追跡
+- <Status>Feature</Status> spring-boot-2.5以降でreactor-kafka-1.3を追跡
 
-    ```ini title='whatap.conf'
-    # using spring-boot-2.5 ~
-    weaving=spring-boot-2.5
+  ```ini title='whatap.conf'
+  # using spring-boot-2.5 ~
+  weaving=spring-boot-2.5
 
-    # using spring-boot-2.7 ~
-    weaving=spring-boot-2.7
+  # using spring-boot-2.7 ~
+  weaving=spring-boot-2.7
 
-    # using spring-boot-3.0 ~
-    weaving=spring-boot-3.0
-    ```
+  # using spring-boot-3.0 ~
+  weaving=spring-boot-3.0
+  ```
 
--   <Status>Feature</Status> spring-boot-2.5以降でRxJava使用時、RxJavaのscheduleを追跡
+- <Status>Feature</Status> spring-boot-2.5以降でRxJava使用時、RxJavaのscheduleを追跡
 
-    ```ini title='whatap.conf'
-    # using spring-boot-2.5 ~
-    weaving=spring-boot-2.5
+  ```ini title='whatap.conf'
+  # using spring-boot-2.5 ~
+  weaving=spring-boot-2.5
 
-    # using spring-boot-2.7 ~
-    weaving=spring-boot-2.7
-    ```
+  # using spring-boot-2.7 ~
+  weaving=spring-boot-2.7
+  ```
 
--   <Status>Feature</Status> spring-boot-3.0以降でRxJava3使用時、RxJava3のscheduleを追跡
+- <Status>Feature</Status> spring-boot-3.0以降でRxJava3使用時、RxJava3のscheduleを追跡
 
-    ```ini title='whatap.conf'
-    # using spring-boot-3.0 ~
-    weaving=spring-boot-3.0
-    ```
+  ```ini title='whatap.conf'
+  # using spring-boot-3.0 ~
+  weaving=spring-boot-3.0
+  ```
 
--   <Status>Feature</Status>エージェントログに<code>threadName</code>、<code>className</code>, <code>methodName</code>、<code>lineNumber</code>を収集して表示
+- <Status>Feature</Status>エージェントログに<code>threadName</code>、<code>className</code>, <code>methodName</code>、<code>lineNumber</code>を収集して表示
 
-    ```log title='whatap.log'
-    [{threadName}][{className}.{methodName}({lineNumber})] 
-    ```
+  ```log title='whatap.log'
+  [{threadName}][{className}.{methodName}({lineNumber})] 
+  ```
 
--   <Status>Feature</Status>エージェントログの形態を修正
+- <Status>Feature</Status>エージェントログの形態を修正
 
-    ```log title='whatap.log'
-    {date} {time} [{threadName}][{className}.{methodName}({lineNumber})] ({work}) {log}
-    ```
+  ```log title='whatap.log'
+  {date} {time} [{threadName}][{className}.{methodName}({lineNumber})] ({work}) {log}
+  ```
 
-    ![whatap log](/img/release/release-java-log.png)
+  ![whatap log](/img/release/release-java-log.png)
 
--   <Status>Feature</Status> Tiberoの<code>CallableStatement</code>を追跡
+- <Status>Feature</Status> Tiberoの<code>CallableStatement</code>を追跡
 
--   <Status>Changed</Status>エージェントログのテキストの色を変更
+- <Status>Changed</Status>エージェントログのテキストの色を変更
 
--   <Status>Changed</Status>エージェント起動時にエージェントログのファイル名を<em>whatap-<code>date</code>.log</em>から<em>whatap.log</em>に変更
+- <Status>Changed</Status>エージェント起動時にエージェントログのファイル名を<em>whatap-<code>date</code>.log</em>から<em>whatap.log</em>に変更
 
--   <Status>Changed</Status> UTC基準日付が変更されると<em>whatap.log</em>ファイル名を<em>whatap-<code>date</code>.log</em>に保存
+- <Status>Changed</Status> UTC基準日付が変更されると<em>whatap.log</em>ファイル名を<em>whatap-<code>date</code>.log</em>に保存

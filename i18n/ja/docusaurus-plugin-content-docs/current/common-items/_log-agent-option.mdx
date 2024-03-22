@@ -6,16 +6,16 @@
 
 **エージェントのオプション設定**
 
--   エージェントオプションは次のとおりです。 
+- エージェントオプションは次のとおりです。 
 
-    ```ini
-    # whatap.conf
-    weaving=log4j-2.17
-    weaving=logback-1.2.8
-    ```
+  ```ini
+  # whatap.conf
+  weaving=log4j-2.17
+  weaving=logback-1.2.8
+  ```
 
--   Javaエージェント2.2.22バージョン以降からウィービング設定にlog4j-2.17またはlogback-1.2.8設定時に使用できます。 エージェントの再起動が必要です。
+- Javaエージェント2.2.22バージョン以降からウィービング設定にlog4j-2.17またはlogback-1.2.8設定時に使用できます。 エージェントの再起動が必要です。
 
--   ログレベルは、構文解析されたキーワードの中で`level`、`type`基準で判別します。 `level`、`type`に構文解析された鍵が存在し、構文解析の値が<span class='vslow'>FATAL</span>, <span class='vslow'>CRITICAL</span>、<span class='vslow'>ERROR</span>、<span class='slow'>WARN</span>、<span class='slow'>WARNING</span>、<span class='mstop'>INFO</span>を含む場合は、ログレベルの色を表示します。 
+- ログレベルは、構文解析されたキーワードの中で`level`、`type`基準で判別します。 `level`、`type`に構文解析された鍵が存在し、構文解析の値が<span class='vslow'>FATAL</span>, <span class='vslow'>CRITICAL</span>、<span class='vslow'>ERROR</span>、<span class='slow'>WARN</span>、<span class='slow'>WARNING</span>、<span class='mstop'>INFO</span>を含む場合は、ログレベルの色を表示します。 
 
 :::

@@ -1,225 +1,225 @@
--   **whatap.profile_step_normal_count** <span class='type'>Int</span>
+- **whatap.profile_step_normal_count** <span class='type'>Int</span>
 
-    デフォルト値 `1000`
+  デフォルト値 `1000`
 
-    トランザクショントレースの最大ステップ数を指定します。
+  トランザクショントレースの最大ステップ数を指定します。
 
--   **whatap.profile_step_max_count** <span class='type'>Int</span>
+- **whatap.profile_step_max_count** <span class='type'>Int</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    収集可能なトレースステップの最大数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
+  収集可能なトレースステップの最大数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
 
--   **whatap.profile_step_heavy_count** <span class='type'>Int</span>
+- **whatap.profile_step_heavy_count** <span class='type'>Int</span>
 
-    デフォルト値 `1000`
+  デフォルト値 `1000`
 
-    基本ステップの収集数を超えるた場合は、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の`profile_step_normal_count`が800の場合、最大200個のステップが収集されます。
+  基本ステップの収集数を超えるた場合は、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の`profile_step_normal_count`が800の場合、最大200個のステップが収集されます。
 
--   **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
+- **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
 
-    デフォルト値`100`
+  デフォルト値`100`
 
-    Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
+  Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
 
--   **whatap.profile_basetime** <span class='type'>Millisecond</span>
+- **whatap.profile_basetime** <span class='type'>Millisecond</span>
 
-    デフォルト値`500`
+  デフォルト値`500`
 
-    トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただし、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
+  トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただし、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
 
--   **whatap.query_string_enabled** <span class='type'>Boolean</span>
+- **whatap.query_string_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トランザクションURLのクエリストリングをまとめて収集する機能を有効にします。`whatap.query_string_urls`に登録されたURLのみ適用されます。
+  トランザクションURLのクエリストリングをまとめて収集する機能を有効にします。`whatap.query_string_urls`に登録されたURLのみ適用されます。
 
--   **whatap.query_string_urls** <span class='type'>String</span>
+- **whatap.query_string_urls** <span class='type'>String</span>
 
-    トランザクションからクエリストリングを収集するURLを登録します。
+  トランザクションからクエリストリングを収集するURLを登録します。
 
--   **whatap.whatap.profile_compile_file_enabled** <span class='type'>Boolean</span>
+- **whatap.whatap.profile_compile_file_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    `compile_file`、`compile_string` 関数が追跡されるかどうかを設定します。PHPの内部関数である`compile_file`、`compile_string` 関数はスクリプトを実行する前にコンパイルする関数で、Main、include、requireおよびautoloadスクリプトのコンパイル時間およびスクリプトファイルのパスと実行時間を確認できます。
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
-
-    デフォルト値`200`
-
-    実行時間の基準を設定します。設定した時間を超えて発生した場合のみ、情報を収集します。
-
-    :::caution
-
-    `whatap.profile_compile_file_basetime`を小さく設定しすぎると、過剰な収集でサーバーに負荷をかける可能性があります。
-
-    :::
+  `compile_file`、`compile_string` 関数が追跡されるかどうかを設定します。PHPの内部関数である`compile_file`、`compile_string` 関数はスクリプトを実行する前にコンパイルする関数で、Main、include、requireおよびautoloadスクリプトのコンパイル時間およびスクリプトファイルのパスと実行時間を確認できます。
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_method_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
-    デフォルト値 `true`
+  デフォルト値`200`
 
-    実行時間が`whatap.profile_method_time`の設定値(デフォルト値`1秒`)を超えるユーザ関数の情報をトランザクション詳細情報を確認できます。
+  実行時間の基準を設定します。設定した時間を超えて発生した場合のみ、情報を収集します。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+  :::caution
 
--   **whatap.profile_method_time** <span class='type'>Milliseconds</span>
+  `whatap.profile_compile_file_basetime`を小さく設定しすぎると、過剰な収集でサーバーに負荷をかける可能性があります。
 
-    デフォルト値 `1000`
-
-    `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
+  :::
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値 `true`
 
-    ユーザー関数のスタック情報をトランザクションの詳細から確認できます。
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
-
-    デフォルト値 `true`
-
-    PHP内部関数を追跡するかどうかを設定します。`whatap.profile_internal_method_time`の設定値(デフォルト値`1秒`)より長くかかる場合のみ追跡します。 
+  実行時間が`whatap.profile_method_time`の設定値(デフォルト値`1秒`)を超えるユーザ関数の情報をトランザクション詳細情報を確認できます。
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
+- **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
-    デフォルト値 `1000`
+  デフォルト値 `1000`
 
-    PHP内部関数を追跡する場合、(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
-
-{@include: ../common-items/_php-restart-apply.mdx}
-
--   **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
-
-    デフォルト値 `1000`
-
-    PHPの内部関数を追跡する場合、(`whatap.profile_internal_method_enabled`)追加で関数のパラメータ情報を収集します。
+  `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
+- **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値`false`
 
-    値が`false`の場合、トランザクションの開始ポイントは収集しません。
+  ユーザー関数のスタック情報をトランザクションの詳細から確認できます。
 
-    :::note
+{@include: ../common-items/_php-restart-apply.mdx}
 
-    開始時点で収集されていないため、進行中のトランザクション数を計算するアクティブトランザクション情報が少し遅れて反映される可能性があります。アクティブステータスは通常通り表示されます。
+- **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
-    :::
+  デフォルト値 `true`
 
--   **whatap.net_udp_profile_basetime_enabled** <span class='type'>Boolean</span>
+  PHP内部関数を追跡するかどうかを設定します。`whatap.profile_internal_method_time`の設定値(デフォルト値`1秒`)より長くかかる場合のみ追跡します。 
 
-    デフォルト値`false`
+{@include: ../common-items/_php-restart-apply.mdx}
 
-    値が`true`の場合、設定された応答時間より速いトランザクションのトレース情報は収集しません。
+- **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
 
--   **whatap.net_udp_profile_basetime** <span class='type'>Miliseconds</span>
+  デフォルト値 `1000`
 
-    デフォルト値`false`
+  PHP内部関数を追跡する場合、(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
 
-    トレース情報の収集を除外するトランザクションの応答時間を設定します。
+{@include: ../common-items/_php-restart-apply.mdx}
 
-    :::note
+- **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
 
-    トレース情報を収集しないため、SQL、HTTPCなどの統計には反映されません。
+  デフォルト値 `1000`
 
-    :::
+  PHPの内部関数を追跡する場合、(`whatap.profile_internal_method_enabled`)追加で関数のパラメータ情報を収集します。
 
--   **whatap.net_udp_trace_ignoretime_enabled** <span class='type'>Boolean</span>
+{@include: ../common-items/_php-restart-apply.mdx}
 
-    デフォルト値`false`
+- **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
 
-    値が`true`の場合、設定された応答時間を要するトランザクションおよびトレース情報を収集しません。
+  デフォルト値 `true`
 
--   **whatap.net_udp_trace_ignoretime** <span class='type'>Miliseconds</span>
+  値が`false`の場合、トランザクションの開始ポイントは収集しません。
 
-    デフォルト値`30`
+  :::note
 
-    トランザクションおよびトレース情報の収集を除くトランザクションの応答時間を設定します。
+  開始時点で収集されていないため、進行中のトランザクション数を計算するアクティブトランザクション情報が少し遅れて反映される可能性があります。アクティブステータスは通常通り表示されます。
 
--   **whatap.shm_tx_counter_enable** <span class='type'>Boolean</span>
+  :::
 
-    デフォルト値`false`
+- **whatap.net_udp_profile_basetime_enabled** <span class='type'>Boolean</span>
 
-    値が`true`であれば、`whatap.net_udp_trace_ignoretime_enabled`設定でトランザクションの情報収集が除外される場合、TPS、平均応答時間、Apdex指標を共有メモリから収集すると、除外されたトランザクションの情報が統計に反映されます。
+  デフォルト値`false`
 
-    :::note
+  値が`true`の場合、設定された応答時間より速いトランザクションのトレース情報は収集しません。
 
-    収集されていないトランザクションの場合、TPS、平均応答時間、Apdex指標に反映されますが、その他の統計データには反映されません。
+- **whatap.net_udp_profile_basetime** <span class='type'>Miliseconds</span>
 
-    :::
+  デフォルト値`false`
 
--   **whatap.split_profile_enabled** <span class='type'>Boolean</span>
+  トレース情報の収集を除外するトランザクションの応答時間を設定します。
 
-    デフォルト値`false`
+  :::note
 
-    一定量のプロファイルを仮想トランザクションに分割して、より多くのプロファイル情報を収集します。複数のトランザクション一覧に分割されます。
+  トレース情報を収集しないため、SQL、HTTPCなどの統計には反映されません。
 
-    :::note
+  :::
 
-    同時に設定された場合、優先順位は次の通りです。 
+- **whatap.net_udp_trace_ignoretime_enabled** <span class='type'>Boolean</span>
 
-    1.  split
+  デフォルト値`false`
 
-    2.  large
+  値が`true`の場合、設定された応答時間を要するトランザクションおよびトレース情報を収集しません。
 
-    3.  circular
+- **whatap.net_udp_trace_ignoretime** <span class='type'>Miliseconds</span>
 
-    :::
+  デフォルト値`30`
 
--   **whatap.large_profile_enabled** <span class='type'>Boolean</span>
+  トランザクションおよびトレース情報の収集を除くトランザクションの応答時間を設定します。
 
-    デフォルト値`false`
+- **whatap.shm_tx_counter_enable** <span class='type'>Boolean</span>
 
-    一定量のプロファイルを圧縮および分割して、メモリを増やことなく多くのプロファイル情報を収集できます。
+  デフォルト値`false`
 
-    :::note
+  値が`true`であれば、`whatap.net_udp_trace_ignoretime_enabled`設定でトランザクションの情報収集が除外される場合、TPS、平均応答時間、Apdex指標を共有メモリから収集すると、除外されたトランザクションの情報が統計に反映されます。
 
-    -   約1万件のプロファイル(ステップ) 情報を収集できます。大量の場合は、`whatap.split_profile_enabled`オプションの使用をお勧めします。
+  :::note
 
-    -   同時に設定された場合、優先順位は次の通りです。 
+  収集されていないトランザクションの場合、TPS、平均応答時間、Apdex指標に反映されますが、その他の統計データには反映されません。
 
-        1.  split
+  :::
 
-        2.  large
+- **whatap.split_profile_enabled** <span class='type'>Boolean</span>
 
-        3.  circular
+  デフォルト値`false`
 
-    :::
+  一定量のプロファイルを仮想トランザクションに分割して、より多くのプロファイル情報を収集します。複数のトランザクション一覧に分割されます。
 
--   **whatap.circular_profile_enabled** <span class='type'>Boolean</span>
+  :::note
 
-    デフォルト値`false`
+  同時に設定された場合、優先順位は次の通りです。 
 
-    最新の1024個のプロファイリング情報を収集します。 
+  1. split
 
-    :::note
+  2. large
 
-    同時に設定された場合、優先順位は次の通りです。 
+  3. circular
 
-    1.  split
+  :::
 
-    2.  large
+- **whatap.large_profile_enabled** <span class='type'>Boolean</span>
 
-    3.  circular
+  デフォルト値`false`
 
-    :::
+  一定量のプロファイルを圧縮および分割して、メモリを増やことなく多くのプロファイル情報を収集できます。
 
--   **whatap.profile_zip_enabled** <span class='type'>Boolean</span>
+  :::note
 
-    デフォルト値 `true`
+  - 約1万件のプロファイル(ステップ) 情報を収集できます。大量の場合は、`whatap.split_profile_enabled`オプションの使用をお勧めします。
 
-    プロファイル情報を圧縮して送信します。デフォルト値は、`true`に設定されています。 
+  - 同時に設定された場合、優先順位は次の通りです。 
+
+    1. split
+
+    2. large
+
+    3. circular
+
+  :::
+
+- **whatap.circular_profile_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  最新の1024個のプロファイリング情報を収集します。 
+
+  :::note
+
+  同時に設定された場合、優先順位は次の通りです。 
+
+  1. split
+
+  2. large
+
+  3. circular
+
+  :::
+
+- **whatap.profile_zip_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値 `true`
+
+  プロファイル情報を圧縮して送信します。デフォルト値は、`true`に設定されています。 

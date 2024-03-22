@@ -4,41 +4,41 @@ For the event generation conditions and selection of event targets on metrics al
 
 ### Basic syntax rules
 
--   If you just enter a string, it is recognized as a variable. If you enclose it in single quotation marks ('') or double quotation marks (""), it is recognized as text.
+- If you just enter a string, it is recognized as a variable. If you enclose it in single quotation marks ('') or double quotation marks (""), it is recognized as text.
 
-    ```java title='oid == "oid"'
-    1. oid: variable
-    2. ==: function
-    3. "oid": text
-    ```
+  ```java title='oid == "oid"'
+  1. oid: variable
+  2. ==: function
+  3. "oid": text
+  ```
 
-    ```java
-    // In case oname is ott-1235
+  ```java
+  // In case oname is ott-1235
 
-    // Normal cases
-    onname = 'ott-1235' or onname = "ott-1235"
+  // Normal cases
+  onname = 'ott-1235' or onname = "ott-1235"
 
-    // In abnormal cases, notification does not work.
-    onname = ott-1235
-    ```
+  // In abnormal cases, notification does not work.
+  onname = ott-1235
+  ```
 
--   If you just enter a number, it is recognized as number, and if you enclose it in single quotation marks ('') or double quotation marks (""), it is recognized as text.
+- If you just enter a number, it is recognized as number, and if you enclose it in single quotation marks ('') or double quotation marks (""), it is recognized as text.
 
-    ```java title='oid == 123'
-    1. oid: variable
-    2. ==: function
-    3. 123: number
-    ```
+  ```java title='oid == 123'
+  1. oid: variable
+  2. ==: function
+  3. 123: number
+  ```
 
-    ```java
-    // In case oid is 123
+  ```java
+  // In case oid is 123
 
-    // Normal cases
-    oid = 123
+  // Normal cases
+  oid = 123
 
-    // In abnormal cases, notification does not work.
-    id == '123' or oid == "123"
-    ```
+  // In abnormal cases, notification does not work.
+  id == '123' or oid == "123"
+  ```
 
 ### Available operators
 
@@ -48,8 +48,8 @@ For the event generation conditions and selection of event targets on metrics al
 |    !=          | operand1 != operand2          | It checks whether operand1 and operand2 have different values.                                                        |
 | <span>></span> | operand1 > operand2           | Check whether the operand1 value is greater than the operand2 value.                                                  |
 |    > =         | operand1 >= operand2          | Checks whether the operand1 value is greater than or equal to the operand2 value.                                     |
-|    <          | operand1 < operand2          | Check whether the operand1 value is less than the operand2 value.                                                     |
-|    <=         | operand1 <= operand2         | Check whether the operand1 value is less than or equal to the operand2 value.                                         |
+|    \<          | operand1 \< operand2          | Check whether the operand1 value is less than the operand2 value.                                                     |
+|    \<=         | operand1 \<= operand2         | Check whether the operand1 value is less than or equal to the operand2 value.                                         |
 |    like        | operand1 like operand2        | Search with patterns whether operand1 includes operand2.                                                              |
 |    &&          | expression1 && expression2    | Check whether expression1 and expression2 are all `true.`                                                             |
 |    and         | expression1 and expression2   | Check whether expression1 and expression2 are all `true.`<br/>The operator plays the same role as **&&**.             |
@@ -60,48 +60,48 @@ For the event generation conditions and selection of event targets on metrics al
 
 You can conveniently search for embedded strings via the wildcard (`*`).
 
--   Searching for strings that start with a specific keyword
+- Searching for strings that start with a specific keyword
 
-    ```java
+  ```java
 
-    Key like "Value*"
+  Key like "Value*"
 
-    ```
+  ```
 
--   Searching for strings that end with a specific keyword
+- Searching for strings that end with a specific keyword
 
-    ```java
+  ```java
 
-    Key like "*Value"
+  Key like "*Value"
 
-    ```
+  ```
 
--   Searching for strings that include a specific keyword
+- Searching for strings that include a specific keyword
 
-    ```java
+  ```java
 
-    Key like "*Value*"
+  Key like "*Value*"
 
-    ```
+  ```
 
--   The wildcard (`*`) cannot be used in the middle of keywords.
+- The wildcard (`*`) cannot be used in the middle of keywords.
 
-    ```java
+  ```java
 
-    // Unsupported syntax
-    Key like "Va*lue"
+  // Unsupported syntax
+  Key like "Va*lue"
 
-    ```
+  ```
 
--   If you omit the wildcard (`*`) in the `like` operator, it operates as equals (`==`).
+- If you omit the wildcard (`*`) in the `like` operator, it operates as equals (`==`).
 
-    ```java
+  ```java
 
-    // The following two statements have the same result.
-    Key like "Value"
-    Key == "Value"
+  // The following two statements have the same result.
+  Key like "Value"
+  Key == "Value"
 
-    ```
+  ```
 
 ### Available functions
 

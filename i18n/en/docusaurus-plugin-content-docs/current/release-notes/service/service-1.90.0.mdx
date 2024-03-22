@@ -22,9 +22,9 @@ import UI from '@site/src/components/UItext';
 
 ### Log
 
--   <Status>Fixed</Status> Fixed the issue that the free trial period appears as NaN on the screen (NaN → 0).
--   <Status>Fixed</Status> Fixed the issue that there is no content in the log monitoring activation guide modal when entering the disabled log monitoring project.
--   <Status>Fixed</Status> Fixed the issue where the <UI>Live Tail</UI> menu does not call the API to retrieve the parsed key.
+- <Status>Fixed</Status> Fixed the issue that the free trial period appears as NaN on the screen (NaN → 0).
+- <Status>Fixed</Status> Fixed the issue that there is no content in the log monitoring activation guide modal when entering the disabled log monitoring project.
+- <Status>Fixed</Status> Fixed the issue where the <UI>Live Tail</UI> menu does not call the API to retrieve the parsed key.
 
 ### URL
 
@@ -34,53 +34,53 @@ import UI from '@site/src/components/UItext';
 
 ### Chart
 
--   <Status>Feature</Status> Addition of the logic to go to the Out of Memory metrics chart - Modified to go to the metrics chart when clicking a row for creating the analysis flow.
--   <Status>Fixed</Status> Modified to enhance the screen handling when applying the hitmap's dark theme.
+- <Status>Feature</Status> Addition of the logic to go to the Out of Memory metrics chart - Modified to go to the metrics chart when clicking a row for creating the analysis flow.
+- <Status>Fixed</Status> Modified to enhance the screen handling when applying the hitmap's dark theme.
 
 ### Resources
 
--   <Status>Change</Status> Changed the <UI>Resource</UI> > <UI>Master Meta Information</UI> > `No Data` message to <UI>No Master Meta Data</UI>.
+- <Status>Change</Status> Changed the <UI>Resource</UI> > <UI>Master Meta Information</UI> > `No Data` message to <UI>No Master Meta Data</UI>.
 
 ### Container Map
 
--   <Status>Change</Status> Fixed the issue where the counts by state were cut off while the summary view window is open.
--   <Status>Change</Status> Modified the log category under the log search tab (if any log category).
--   <Status>Fixed</Status> Fixed the bug that displays only some container data when the category is Pod and there are multiple containers.
+- <Status>Change</Status> Fixed the issue where the counts by state were cut off while the summary view window is open.
+- <Status>Change</Status> Modified the log category under the log search tab (if any log category).
+- <Status>Fixed</Status> Fixed the bug that displays only some container data when the category is Pod and there are multiple containers.
 
 ### Application status/performance trend
 
--   <Status>Fixed</Status> Fixed the error that displays wrong agent data.
+- <Status>Fixed</Status> Fixed the error that displays wrong agent data.
 
 ### Log
 
--   <Status>Feature</Status> In <UI>Live Tail</UI>, <UI>Search</UI>, and <UI>Explorer</UI>, added the function to change the order of table columns.
--   <Status>Change</Status> Modified the data retention period option in Log Setting.
+- <Status>Feature</Status> In <UI>Live Tail</UI>, <UI>Search</UI>, and <UI>Explorer</UI>, added the function to change the order of table columns.
+- <Status>Change</Status> Modified the data retention period option in Log Setting.
 
-    -   Trial Project: Can keep data up to 3 days
-    -   Subscribed project: Can keep data up to 40 days
-    -   Modified to keep data up to the value, if the `ui_log_retention_limit` option is added in _front.conf_.
+  - Trial Project: Can keep data up to 3 days
+  - Subscribed project: Can keep data up to 40 days
+  - Modified to keep data up to the value, if the `ui_log_retention_limit` option is added in _front.conf_.
 
 ### Kubernetes
 
--   <Status>Change</Status> Modified to move the namespace through the header menu in a cluster project, while keeping the existing menu.
--   <Status>Change</Status> Modified the widget data on the performance summary page.
+- <Status>Change</Status> Modified to move the namespace through the header menu in a cluster project, while keeping the existing menu.
+- <Status>Change</Status> Modified the widget data on the performance summary page.
 
 ### `Common`
 
--   <Status>Change</Status> Modified the inactivation handling not to turn off the view and analyze roles.
--   <Status>Fixed</Status> Alert Notification Setting - Fixed the bug where the 3rd party Slack redirection URL is not connected.
--   <Status>Fixed</Status> Fixed the bug where the selected time is not initialized when entering the <UI>Integrated Report</UI> menu for the first time.
+- <Status>Change</Status> Modified the inactivation handling not to turn off the view and analyze roles.
+- <Status>Fixed</Status> Alert Notification Setting - Fixed the bug where the 3rd party Slack redirection URL is not connected.
+- <Status>Fixed</Status> Fixed the bug where the selected time is not initialized when entering the <UI>Integrated Report</UI> menu for the first time.
 
 ### User Interface (UI)
 
 <Status>Change</Status> `<UI>Time Selector</UI>` UI component has been changed to a new version.
 
--   **_Integrated Report_**
--   **_Flex Board_** - widget
--   **_Event Setting_** > **_Metrics Event_** - Event simulation
--   **_Composite Metrics Alert_** - Data Search
--   **_Alert_** > **_File Log Alert_**
--   **_Alert_** > **_Event History_**
--   **_Management_** > **_User Behavior_**
--   **_Laboratory_** > **_Metric Anomaly Detection_**
--   **_Laboratory_** > **_MXQL Data_**
+- **_Integrated Report_**
+- **_Flex Board_** - widget
+- **_Event Setting_** > **_Metrics Event_** - Event simulation
+- **_Composite Metrics Alert_** - Data Search
+- **_Alert_** > **_File Log Alert_**
+- **_Alert_** > **_Event History_**
+- **_Management_** > **_User Behavior_**
+- **_Laboratory_** > **_Metric Anomaly Detection_**
+- **_Laboratory_** > **_MXQL Data_**

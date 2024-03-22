@@ -12,49 +12,49 @@ Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection
 
 It provides records for all events that occur during the resource lifecycle. The events provided in WhaTap Kubernetes Monitoring are as follows.
 
--   Kubernetes Event (**_Kubernetes_**)
+- Kubernetes Event (**_Kubernetes_**)
 
--   WhaTap event (**_WhaTap_**)
+- WhaTap event (**_WhaTap_**)
 
 ## Basic screen guide
 
 <ImgLang img='k8s-event-default3.png' desc='Kubernetes Display Detail Event tab' />
 
--   You can select a ![number 1](/img/number-01.png) Kubernetes event (**_Kubernetes_**) or WhaTap event (**_WhatTap_**) for query. 
+- You can select a ![number 1](/img/number-01.png) Kubernetes event (**_Kubernetes_**) or WhaTap event (**_WhatTap_**) for query. 
 
-    -   Selecting all or multiple blocks
+  - Selecting all or multiple blocks
 
-        You can search **_All Kubernetes events_** or **_All WhatTap events_** when all or multiple blocks are selected from **_Container Map_** and the card on the left.
+    You can search **_All Kubernetes events_** or **_All WhatTap events_** when all or multiple blocks are selected from **_Container Map_** and the card on the left.
 
-    -   Selecting clustering or individual block
+  - Selecting clustering or individual block
 
-        When selecting **_Step 2_** grouping or individual block at the top of **_Container Map_**, you can view the event. For more information about **grouping** (clustering), see [the following](container-group).
+    When selecting **_Step 2_** grouping or individual block at the top of **_Container Map_**, you can view the event. For more information about **grouping** (clustering), see [the following](container-group).
 
-        :::note
+    :::note
 
-        Before entering the **Display Detail** screen, depending on the view or grouping selected at the top of **_Container Map_**, the events that can be viewed may differ.
+    Before entering the **Display Detail** screen, depending on the view or grouping selected at the top of **_Container Map_**, the events that can be viewed may differ.
 
-        :::
+    :::
 
--   Using the ![number 2](/img/number-02.png) time selector, you can set the time zone to view event records in. The default value is **_1 day_**.
+- Using the ![number 2](/img/number-02.png) time selector, you can set the time zone to view event records in. The default value is **_1 day_**.
 
--   The **_event number trend_** in the ![number 3](/img/number-03.png) selected time zone can be viewed with a bar chart. 
+- The **_event number trend_** in the ![number 3](/img/number-03.png) selected time zone can be viewed with a bar chart. 
 
--   In the ![number 4](/img/number-04.png) list format, you can see the event records. 
+- In the ![number 4](/img/number-04.png) list format, you can see the event records. 
 
-    -   If you select **_Hide Tag_** on the upper right of the event record list, you can see the **_timestamp_** and **_message_** excluding the tags while recording events.
+  - If you select **_Hide Tag_** on the upper right of the event record list, you can see the **_timestamp_** and **_message_** excluding the tags while recording events.
 
-    -   **_Kubernetes_** events
+  - **_Kubernetes_** events
 
-        -   You can see the data by selecting a desired event type: <span class='k8s-normal'>Normal</span> or <span class='slow'>Warning</span>. These event types are identical to the event types provided by Kubernetes.
+    - You can see the data by selecting a desired event type: <span class='k8s-normal'>Normal</span> or <span class='slow'>Warning</span>. These event types are identical to the event types provided by Kubernetes.
 
-        -   The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>.
+    - The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>.
 
-    -   **_WhaTap_** events
+  - **_WhaTap_** events
 
-        -   Select a desired event level to search among <span class='vslow'>Critical</span>, <span class='k8s-normal'>Info</span>, and <span class='slow'>Warning</span>.
+    - Select a desired event level to search among <span class='vslow'>Critical</span>, <span class='k8s-normal'>Info</span>, and <span class='slow'>Warning</span>.
 
-        -   The bars on the left of each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>.
+    - The bars on the left of each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>.
 
 ## Kubernetes event
 
@@ -126,20 +126,20 @@ WhaTap events consist of the items such as `message`, `status`, `title`, and `le
 
 <ImgLang img="k8s-container-event-wt.png" desc="Kubernetes WhaTap Event" />
 
--   From the summary information card on the left of ![number 1](/img/number-01.png) **Display Detail**, select a target to view.
+- From the summary information card on the left of ![number 1](/img/number-01.png) **Display Detail**, select a target to view.
 
--   From the ![number 2](/img/number-02.png) summary information list, check the information of the selected one.
+- From the ![number 2](/img/number-02.png) summary information list, check the information of the selected one.
 
--   In the ![number 3](/img/number-03.png) **_Event_** tab, select a **_WhaTap_** event. 
+- In the ![number 3](/img/number-03.png) **_Event_** tab, select a **_WhaTap_** event. 
 
-    > Before entering the **Display Detail** screen, you can view **_container events_** by setting the option at the top of **_Container map_** to Container view.
+  > Before entering the **Display Detail** screen, you can view **_container events_** by setting the option at the top of **_Container map_** to Container view.
 
--   Through the ![number 4](/img/number-04.png) time selector, select a time to view. The default value is **_1 day_**.
+- Through the ![number 4](/img/number-04.png) time selector, select a time to view. The default value is **_1 day_**.
 
--   Through the ![number 5](/img/number-05.png) bar chart, see the **_Trend of number of events_** in the specified time zone.
+- Through the ![number 5](/img/number-05.png) bar chart, see the **_Trend of number of events_** in the specified time zone.
 
-    > If you look at the trend for event counts for the specified time ranges, you can see that two events have been counted. 
+  > If you look at the trend for event counts for the specified time ranges, you can see that two events have been counted. 
 
--   From the ![number 6](/img/number-06.png) event history, check the information of event records. You can see the levels for each event through the bars on the left of the list. To check all event messages and tags, select the ![Down arrow icon](/img/ic-caret-down.svg) icon.
+- From the ![number 6](/img/number-06.png) event history, check the information of event records. You can see the levels for each event through the bars on the left of the list. To check all event messages and tags, select the ![Down arrow icon](/img/ic-caret-down.svg) icon.
 
-    > In the event record list, you can view for two <span class='slow'>Warning</span> level events: `CPU utilization of 85% or more by the container limit` and `GC count or more`. 
+  > In the event record list, you can view for two <span class='slow'>Warning</span> level events: `CPU utilization of 85% or more by the container limit` and `GC count or more`. 

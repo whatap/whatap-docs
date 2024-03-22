@@ -9,7 +9,7 @@ tags:
 
 **タグ**(Tag)は、モニタリング対象サーバーから収集したデータをグループ単位で表現する基準です。 **NPM**で最も重要な要素は可視性です。 グループ化は、ネットワークという不規則で多様な情報があふれる環境で、可視性を確保するための必須要素です。
 
-エージェントは、RawDataにIPアドレスおよびPort(Source,Target)、HostName、ProcessName情報をキーとして収集します。 収集した情報に基づいて、トポロジーまたはチャートに表現するノードのグループ単位を設定できます。
+エージェントは、Raw DataにIPアドレスおよびPort(Source、Target)、Host Name、Process Name情報をキーとして収集します。 収集した情報に基づいて、トポロジーまたはチャートに表現するノードのグループ単位を設定できます。
 
 エージェントから収集するデフォルトタグに加えて、ユーザーが簡単に変更して適用できるルールを作成しました。 エージェントインストールパス(_/usr/whatap/whtap-npmd_)の_tagRule.yaml_ファイルを修正して、オプションを適応できます。
 
@@ -19,11 +19,11 @@ tags:
 
 ![Topology Chart](/img/npm-tagrule-sample.png)
 
--   **tagRule**オプションが適応された![数字１](/img/number-01.png)ノードです。 長くて複雑なプロセス名を簡素化してノードに表示します。
+- **tagRule**オプションが適応された![数字１](/img/number-01.png)ノードです。 長くて複雑なプロセス名を簡素化してノードに表示します。
 
--   **tagRule**オプションが適応されていない![数字２](/img/number-02.png)ノードです。 どのようなプロセスなのか把握しにくいので![数字１](/img/number-01.png)ノードのように**tagRule**オプションを適用して、プロセス名を簡素化する必要があります。
+- **tagRule**オプションが適応されていない![数字２](/img/number-02.png)ノードです。 どのようなプロセスなのか把握しにくいので![数字１](/img/number-01.png)ノードのように**tagRule**オプションを適用して、プロセス名を簡素化する必要があります。
 
--   ![数字３](/img/number-03.png)ノードは、そのホストおよびプロセス情報を取得できない場合です。 詳細については、[次の文書](#untagged)を参照してください。
+- ![数字３](/img/number-03.png)ノードは、そのホストおよびプロセス情報を取得できない場合です。 詳細については、[次の文書](#untagged)を参照してください。
 
 ### プロセス名の簡素化
 
@@ -45,9 +45,9 @@ processRegEx:
 
 `processRegex`オプションは、次のルールで名前を抽出します。
 
--   **Java**は実行jarファイル名またはメソッド名
+- **Java**は実行jarファイル名またはメソッド名
 
--   **Python**は実行スクリプト名
+- **Python**は実行スクリプト名
 
 ただし、抽出後もプロセス名が長い場合は、オプションで減らすことができます。 正規的な表現式の形で入力でき、ルールが複数ある場合、最も長くマッチングされた文字列が選択されます。
 
@@ -130,65 +130,65 @@ processType:
 
 proxy→msa_process→msa_process2→dbにつながるネットワーク構成が**オペレーション機**/**開発機**/**試験機**の3つの目的に分かれている場合を可視化するケースを想定してみます。 
 
--   `processType`オプションで可視化する場合
+- `processType`オプションで可視化する場合
 
-    ```mermaid
-    flowchart LR
-      A[Proxy] --> B(msa_process1);
-      B --> C(msa_process2);
-      C --> D(DB);
-    ```
+  ```mermaid
+  flowchart LR
+    A[Proxy] --> B(msa_process1);
+    B --> C(msa_process2);
+    C --> D(DB);
+  ```
 
--   `appName`オプションで同じ名称のプロセスらを**オペレーション機**/**開発機**/**試験機**に分離する場合
+- `appName`オプションで同じ名称のプロセスらを**オペレーション機**/**開発機**/**試験機**に分離する場合
 
-    ```yaml title='tagRule.yaml'
-    appName:
-        prod_proxy: # オペレーション機
-            - host_tag: prod_proxy
-              process_type: proxy
-        prod_msa1: # オペレーション機
-            - host_tag: prod_msa
-              process_type: msa_process1
-        prod_msa2: # オペレーション機
-            - host_tag: prod_msa
-              process_type: msa_process2
-        dev_proxy: # 開発機
-            - host_tag: dev_proxy
-              process_type: proxy
-        dev_msa: # 開発機
-            - host_tag: dev_msa
-              process_type: msa_process1
-            - host_tag: dev_msa
-              process_type: msa_process2
-        test: # 試験機
-            - host_tag: test
-        db:
-            - process_type: mysql
-    ```
+  ```yaml title='tagRule.yaml'
+  appName:
+      prod_proxy: # オペレーション機
+          - host_tag: prod_proxy
+            process_type: proxy
+      prod_msa1: # オペレーション機
+          - host_tag: prod_msa
+            process_type: msa_process1
+      prod_msa2: # オペレーション機
+          - host_tag: prod_msa
+            process_type: msa_process2
+      dev_proxy: # 開発機
+          - host_tag: dev_proxy
+            process_type: proxy
+      dev_msa: # 開発機
+          - host_tag: dev_msa
+            process_type: msa_process1
+          - host_tag: dev_msa
+            process_type: msa_process2
+      test: # 試験機
+          - host_tag: test
+      db:
+          - process_type: mysql
+  ```
 
-    ```mermaid
-    flowchart LR
-      A(prod_proxy) --> B(prod_msa1);
-      B[prod_msa1] --> C(prod_msa2);
-      C[prod_msa2] --> D(DB);
-      E[dev_proxy] --> F(dev_msa);
-      F[dev_msa] --> D(DB);
-      G[test] --> D(DB);
-    ```
+  ```mermaid
+  flowchart LR
+    A(prod_proxy) --> B(prod_msa1);
+    B[prod_msa1] --> C(prod_msa2);
+    C[prod_msa2] --> D(DB);
+    E[dev_proxy] --> F(dev_msa);
+    F[dev_msa] --> D(DB);
+    G[test] --> D(DB);
+  ```
 
 :::note
 
--   `appName`区分で使用可能なkeyは`host_tag`、`process_type`、`ip`、`port`です。
+- `appName`区分で使用可能なkeyは`host_tag`、`process_type`、`ip`、`port`です。
 
--   入力されていないKeyはワイルドカードとして適用されます。
+- 入力されていないKeyはワイルドカードとして適用されます。
 
 :::
 
 `appName`オプションでマッチングされていない場合、`appNameDefault`オプションで定義されたフィールドまたは値が適用されます。
 
--   `appNameDefault`にはデフォルトで使用するkeyを入力してください。
+- `appNameDefault`にはデフォルトで使用するkeyを入力してください。
 
--   `host_tag`、`process_type`のいずれかを入力すると、そのフィールド情報が`appName`に自動付与され、もしその他のString値を入力すると、その値に固定されます。
+- `host_tag`、`process_type`のいずれかを入力すると、そのフィールド情報が`appName`に自動付与され、もしその他のString値を入力すると、その値に固定されます。
 
 ```yaml title='tagRule.yaml'
 appNameDefault: host_tag # host_tag, process_type, custom string

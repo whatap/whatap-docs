@@ -42,6 +42,7 @@ export default function DocItemLayout({children}) {
         <div className={styles.docItemContainer}>
           <article>
             <DocBreadcrumbs />
+            <FacebookShare />
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>

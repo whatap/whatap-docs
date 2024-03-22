@@ -7,42 +7,42 @@ displayed_sidebar: releaseSidebar
 
 #### 2023年5月2日
 
--   <Status>New</Status> StackExchcange Redisの最新ライブラリを追加適用(2.x)
+- <Status>New</Status> StackExchcange Redisの最新ライブラリを追加適用(2.x)
 
--   <Status>New</Status> Oracle.ManagedDataAccessの最新ライブラリを追加適用(19.19.0バージョンまで)
+- <Status>New</Status> Oracle.ManagedDataAccessの最新ライブラリを追加適用(19.19.0バージョンまで)
 
--   <Status>New</Status>特定のアプリケーションプールのみを選別して追跡する
+- <Status>New</Status>特定のアプリケーションプールのみを選別して追跡する
 
-    -   **application_pool_filter_enabled** <span class='type'>Boolean</span>
+  - **application_pool_filter_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-        `application_pool_filter`オプションに登録したアプリケーションのみを追跡する場合は、`true`に設定してください。
+    `application_pool_filter`オプションに登録したアプリケーションのみを追跡する場合は、`true`に設定してください。
 
-    -   **application_pool_filter** <span class='type'>String</span>
+  - **application_pool_filter** <span class='type'>String</span>
 
-        追跡したいアプリケーションの名前を入力してください。 コンマ(,)区切り文字として複数設定することができます。
+    追跡したいアプリケーションの名前を入力してください。 コンマ(,)区切り文字として複数設定することができます。
 
-        ```ini title='whatap.conf'
-        application_pool_filter="DefaultAppPool, userSiteAppName"
-        ```
+    ```ini title='whatap.conf'
+    application_pool_filter="DefaultAppPool, userSiteAppName"
+    ```
 
--   <Status>Fixed</Status> <b>ASP.NET Web API</b>を追跡できないバグを修正
+- <Status>Fixed</Status> <b>ASP.NET Web API</b>を追跡できないバグを修正
 
--   <Status>Fixed</Status>アクティブトランザクションを追跡できないバグを修正
+- <Status>Fixed</Status>アクティブトランザクションを追跡できないバグを修正
 
--   <Status>Fixed</Status>トランザクションIDが重複するバグを修正
+- <Status>Fixed</Status>トランザクションIDが重複するバグを修正
 
--   <Status>Fixed</Status>複数のスレッドが同じログファイルに同時にアクセスしているため、ログが無視される現象を修正
+- <Status>Fixed</Status>複数のスレッドが同じログファイルに同時にアクセスしているため、ログが無視される現象を修正
 
--   <Status>Fixed</Status>ユーザー数が測定されないバグ修正
+- <Status>Fixed</Status>ユーザー数が測定されないバグ修正
 
-    [.NET 設定 - ユーザー数](../../dotnet/agent-number-of-user)参照
+  [.NET 設定 - ユーザー数](../../dotnet/agent-number-of-user)参照
 
--   <Status>Fixed</Status> <code>trace_httpc_normalize_urls</code> オプションが動作しないバグ修正
+- <Status>Fixed</Status> <code>trace_httpc_normalize_urls</code> オプションが動作しないバグ修正
 
-    [.NET 設定- HTTPC, API Call](../../dotnet/agent-httpcapicall) 参照
+  [.NET 設定- HTTPC, API Call](../../dotnet/agent-httpcapicall) 参照
 
--   <Status>Fixed</Status> <code>profile_http_header_enabled</code>オプションが動作しないバグ修正
+- <Status>Fixed</Status> <code>profile_http_header_enabled</code>オプションが動作しないバグ修正
 
-    [.NET 設定 - トランザクション](../../dotnet/agent-transaction) 参照
+  [.NET 設定 - トランザクション](../../dotnet/agent-transaction) 参照

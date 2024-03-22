@@ -1,0 +1,86 @@
+Windowsイベントログ収集時、次のようにオプションを設定することができます。
+
+```bash
+# 管理者権限が必要
+New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
+
+$contentToAdd = @"
+[[inputs.win_eventlog]]
+    category = "win_event_log"
+    stats_category = "win_event_log_stats"
+    stats_enabled = true
+    enabled = true
+    [[inputs.win_eventlog.file]]
+        #true | false
+        enabled = true
+				# Application, Security, Setup, System, Forwarded
+				file = "Application"
+				#1: Information, 2: Warning 3: Critical 4: Audit Success 5 Audit Fail
+				#event_type = 
+				#event id
+				#event_id = 
+				#event source name
+				#source_name = ""
+
+"@
+
+New-Item -path "C:\Program Files\WhatapInfra\extension" -name "win_eventlog.conf" -type "file" -value $contentToAdd -Force
+
+Restart-Service "Whatap Infra"
+```
+
+:::note 
+
+- 対応バージョン2.5.2
+
+- オペレーティングシステム：Windows
+
+:::
+
+- カテゴリー指定(`category`) 必須
+
+  > 例）`win_event_log`
+
+- 統計カテゴリ指定(`stats_category`) 必須
+
+  > 例）`win_event_log_stats`
+
+- 統計カテゴリOn/Off(`stats_enabled`) 必須
+
+  > 例）`true`または`false`
+
+- 収集機能On/Off(`enabled`) 必須
+
+  > 例）`true`または`false`
+
+- ファイル別収集機能On/Off(`enabled`) 必須
+
+  > 例）`true`または`false`
+
+- ファイル(`file`) 必須
+
+  > 例）`Application`、`Security`、`Setup`、`System`、`Forwarded`
+
+- イベントタイプ(`event_type`) 非必須
+
+  > 例）`1`、`2`、`3`、`4`、`5`
+
+  :::note 
+
+  **イベントタイプ**
+
+  1. Information
+
+  2. Warning 
+
+  3. Critical 
+
+  4. Audit Success 
+
+  5. Audit Fail
+
+  :::
+
+- イベントID(`event_id`) 非必須
+
+- イベントソース名(`source_name`) 非必須

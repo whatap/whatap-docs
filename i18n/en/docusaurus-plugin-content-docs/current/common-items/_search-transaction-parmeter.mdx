@@ -6,33 +6,33 @@ Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-
 
 <Xclude product='java'>
 
--   **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/paramkey.txt_ file. You can change it to another string.
+- **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/paramkey.txt_ file. You can change it to another string.
 
-    :::note
+  :::note
 
-    The key in _paramkey.txt_ is required to view the SQL variables and HTTP queries, and stop the threads.
+  The key in _paramkey.txt_ is required to view the SQL variables and HTTP queries, and stop the threads.
 
-    :::
+  :::
 
 </Xclude>
 
 <InDoc product='java'>
 
--   **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/security.conf_(_paramkey.txt_) file. You can change it to another string.
+- **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/security.conf_(_paramkey.txt_) file. You can change it to another string.
 
-    :::note
+  :::note
 
-    **_Password_** is required to view the SQL variables and HTTP queries, and stop the threads. For more information, see [the following](install-agent#security).
+  **_Password_** is required to view the SQL variables and HTTP queries, and stop the threads. For more information, see [the following](install-agent#security).
 
-    :::
+  :::
 
 </InDoc>
 
--   **_SQL formatting_**: You can indent and format your SQL statements for better readability.
+- **_SQL formatting_**: You can indent and format your SQL statements for better readability.
 
--   ![Copy icon](/img/ico-copy.svg): A SQL statement can be copied to the clipboard.
+- ![Copy icon](/img/ico-copy.svg): A SQL statement can be copied to the clipboard.
 
--   **_Statistics_**: The **_SQL_** tab appears in **_STAT/REPORT_** > **_Statistics_**.
+- **_Statistics_**: The **_SQL_** tab appears in **_STAT/REPORT_** > **_Statistics_**.
 
 <Xclude product='kubernetes'>
 
@@ -40,9 +40,9 @@ Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-
 
 To search SQL variables and HTTP queries, add the following options to the agent settings.
 
--   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+- For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
 
--   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
+- For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
 ```ini title='whatap.conf'
 # SQL parameter lookup option: If the option is applied, SQL parameters are collected after being encrypted.

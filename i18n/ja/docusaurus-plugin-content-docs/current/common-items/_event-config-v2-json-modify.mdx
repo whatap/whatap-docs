@@ -1,0 +1,55 @@
+## JSON形式に修正
+
+イベント設定をJSON形式に修正することができます。
+
+1. 画面右上の<span class="uitext">JSON</span> <LinkImage img="ico-export.svg" className="ico" />ボタンを選択してください。
+
+2. 編集ウィンドウが表示されたら、JSON形式に合わせて内容を修正してください。
+
+3. 修正を完了すると、画面右上の<Cmdname sid="save" className="uitext" />ボタンを選択してください。
+
+:::note
+
+修正した内容がJSON形式に合わない場合、画面下にエラーメッセージが表示され、保存することができません。 表示されるエラー メッセージは、形式によって異なる場合があります。
+
+<ImgLang img='event-config-v2-json-error.png' desc='JSON error' />
+
+:::
+
+JSONデータの構造は次のとおりです。
+
+```json
+{
+    "metaId": "infra001",
+    "displayName": "CPU",
+    "stateful": true,
+    "selectCondition": {},
+    "warningEnabled": true,
+    "criticalEnabled": true,
+    "receiver": [],
+    "warningThreshold": "cpu > 70",
+    "criticalThreshold": "cpu > 90",
+    "repeatCount": 1,
+    "silentPeriod": 60000,
+    "enabled": false,
+    "message": "CPU = ${cpu}"
+},
+```
+
+JSONデータのフィールドは、イベント設定で次のオプション項目にリンクされます。
+
+| JSONフィールド           | オプション                                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `metaId`            | ユーザーが選択したテンプレートの固有の識別子値                                                                                          |
+| `displayName`       | <Cmdname sid="event_title" className="uitext" />                                                                 |
+| `状態ベースのアラート通知`      | <Cmdname sid="TTL07368" className="uitext" />                                                                    |
+| `selectCondition`   | <Cmdname sid="ITM07588" className="uitext" />                                                                    |
+| `warningEnabled`    | <span class="slow">Warning</span>イベントの活性有無                                                                       |
+| `criticalEnabled`   | <span class="vslow">Critical</span>イベントの活性有無                                                                     |
+| `receiver`          | <Cmdname sid="TTL07415" className="uitext" /> &gt; <Cmdname sid="ITM07420" className="uitext" />オプションの受信タグキー値の一覧 |
+| `warningThreshold`  | <span class="slow">Warning</span>イベントのしきい値の設定                                                                    |
+| `criticalThreshold` | <span class="vslow">Critical</span>イベントのしきい値の設定                                                                  |
+| `repeatCount`       | <Cmdname sid="TTL07366" className="uitext" /> N <Cmdname sid="ITM07370" className="uitext" />                    |
+| `silentPeriod`      | <Cmdname sid="TTL07367" className="uitext" />                                                                    |
+| `enabled`           | <Cmdname sid="enable_events" className="uitext" />                                                               |
+| `message`           | <Cmdname sid="TTL06883" className="uitext" />                                                                    |

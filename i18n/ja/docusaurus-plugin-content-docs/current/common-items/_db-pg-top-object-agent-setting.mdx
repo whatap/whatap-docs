@@ -1,41 +1,41 @@
--   **pg_object** <span class='type'>Boolean</span>
+- **pg_object** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Topオブジェクト情報の収集有無を設定します。 情報を収集するには`true`に変更してください。
+  Topオブジェクト情報の収集有無を設定します。 情報を収集するには`true`に変更してください。
 
--   **pg_object_hour** <span class='type'>Int</span>
+- **pg_object_hour** <span class='type'>Int</span>
 
-    デフォルト値`5`
+  デフォルト値`5`
 
-    Topオブジェクト情報の収集時間を設定します。 デフォルト値は`5`で、午前5時に収集を始めます。
+  Topオブジェクト情報の収集時間を設定します。 デフォルト値は`5`で、午前5時に収集を始めます。
 
--   **table_bloat_ratio** <span class='type'>Percentage</span>
+- **table_bloat_ratio** <span class='type'>Percentage</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    テーブルbloating ratio値が設定値以上の場合は、情報を収集します。 デフォルト値は50%です。
+  テーブルbloating ratio値が設定値以上の場合は、情報を収集します。 デフォルト値は50%です。
 
--   **table_bloat_bytes** <span class='type'>Byte</span>
+- **table_bloat_bytes** <span class='type'>Byte</span>
 
-    デフォルト値`10485760`
+  デフォルト値`10485760`
 
-    テーブルbloatingbytes値が設定値以上の場合、情報を収集します。 デフォルト値は10MBです。
+  テーブルbloatingbytes値が設定値以上の場合、情報を収集します。 デフォルト値は10MBです。
 
--   **index_bloat_ratio** <span class='type'>Percentage</span>
+- **index_bloat_ratio** <span class='type'>Percentage</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    インデックスbloatingratio値が設定値以上の場合、情報を収集します。 デフォルト値は50%です。
+  インデックスbloatingratio値が設定値以上の場合、情報を収集します。 デフォルト値は50%です。
 
--   **index_bloat_bytes** <span class='type'>Byte</span>
+- **index_bloat_bytes** <span class='type'>Byte</span>
 
-    デフォルト値`10485760`
+  デフォルト値`10485760`
 
-    インデックスbloating bytes値が設定値以上の場合、情報を収集します。 デフォルト値は10MBです。
+  インデックスbloating bytes値が設定値以上の場合、情報を収集します。 デフォルト値は10MBです。
 
--   **autovacuum_list_limit**  <span class='type'>Int</span>
+- **autovacuum_list_limit**  <span class='type'>Int</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    日付の古いage(`relfrozenxid`)順に設定値程のテーブル情報を収集します。 デフォルト値は50件です。
+  日付の古いage(`relfrozenxid`)順に設定値程のテーブル情報を収集します。 デフォルト値は50件です。

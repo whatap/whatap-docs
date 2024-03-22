@@ -10,45 +10,45 @@ tags:
   - Application
 ---
 
--   **whatap.profile_httpc_resource_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_httpc_resource_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When collecting HTTP call steps from the transaction trace, the CPU and memory usages in the step is traced.
+  When collecting HTTP call steps from the transaction trace, the CPU and memory usages in the step is traced.
 
--   **whatap.trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
+- **whatap.trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to parse and normalize HTTPC URLs for transactions.
+  It enables the function to parse and normalize HTTPC URLs for transactions.
 
--   **whatap.trace_httpc_normalize_urls** <span class='type'>String</span>
+- **whatap.trace_httpc_normalize_urls** <span class='type'>String</span>
 
-    Define the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
+  Define the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
 
-    :::note
+  :::note
 
-    For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+  For example, if declared as `/a/{v}/b`, `a/123/b` is replaced by `a/{v}/b`. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
 
-    :::
+  :::
 
--   **whatap.profile_curl_return_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_curl_return_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, when the result of the curl library function is 'false', the function to display it as an error is enabled.
+  If the value is `true`, when the result of the curl library function is 'false', the function to display it as an error is enabled.
 
--   **whatap.profile_curl_error_info_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_curl_error_info_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `true`, the function to mark as an error when the result of the curl library function is `false`. If the `whatap.profile_curl_return_enabled` setting is `false`, this is not applied.
+  If the value is `true`, the function to mark as an error when the result of the curl library function is `false`. If the `whatap.profile_curl_return_enabled` setting is `false`, this is not applied.
 
-    -   The error type of the cURL library has the format of error number added after `HttpConnectionReturnFalse`.
-    -   Additional error type has been added when the HTTP result code of the calling URL is 400 or greater. An example of `HttpConnectionServerError (result code)` is as follows: `HttpConnectionReturnFalse(6)`, `HttpConnectionServerError(500)`
+  - The error type of the cURL library has the format of error number added after `HttpConnectionReturnFalse`.
+  - Additional error type has been added when the HTTP result code of the calling URL is 400 or greater. An example of `HttpConnectionServerError (result code)` is as follows: `HttpConnectionReturnFalse(6)`, `HttpConnectionServerError(500)`
 
--   **whatap.profile_curl_error_ignore_empty** <span class='type'>Boolean</span>
+- **whatap.profile_curl_error_ignore_empty** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_curl_return_enabled` setting is `false`, it is not applied. 
+  If the value is `false`, when there is no error code or message, it appears as normal. If the `whatap.profile_curl_return_enabled` setting is `false`, it is not applied. 

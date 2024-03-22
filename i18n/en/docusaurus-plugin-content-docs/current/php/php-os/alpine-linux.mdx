@@ -10,13 +10,13 @@ tags:
 
 ### Standard installation procedure
 
-1.  Download _whatap-php.tar.gz_ and then unzip it based on the _/_ directory. The monitoring installation file is created in the _/usr/whatap/php_ directory.
+1. Download _whatap-php.tar.gz_ and then unzip it based on the _/_ directory. The monitoring installation file is created in the _/usr/whatap/php_ directory.
 
-    ```bash title=SH
-    wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
-    tar -xvzf whatap-php.tar.gz -C /
-    ```
-2.  {@include: ../../common-items/_php-install-script.mdx}
+   ```bash title=SH
+   wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
+   tar -xvzf whatap-php.tar.gz -C /
+   ```
+2. {@include: ../../common-items/_php-install-script.mdx}
 
 {@include: ../../common-items/_php-extension-whatap.mdx}  
 
@@ -42,9 +42,9 @@ If the Apache or PHP-FPM service is restarted after installation, the set PHP ex
 
 ### Docker installation procedure
 
-1.  Unzip _whatap-php.targ.gz_ in the _/usr/whatap/php_ directory. 
+1. Unzip _whatap-php.targ.gz_ in the _/usr/whatap/php_ directory. 
 
-2.  Install Docker by using the `install.sh` script.
+2. Install Docker by using the `install.sh` script.
 
 ```docker title=SH
 FROM alpine

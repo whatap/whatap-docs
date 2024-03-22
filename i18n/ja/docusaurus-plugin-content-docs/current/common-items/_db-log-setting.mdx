@@ -104,51 +104,51 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ### インストールと設定
 
-1.  WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールすることができます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力してください。
+1. WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールすることができます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力してください。
 
-    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
+   <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-    -   **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの**_管理_**>**_エージェントインストール_**メニューで確認できます。 例）13.124.11.223/13.209.172.35
+   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの**_管理_**>**_エージェントインストール_**メニューで確認できます。 例）13.124.11.223/13.209.172.35
 
-    -   **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB ~ 10,240MB間の値を入力してください。
+   - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB ~ 10,240MB間の値を入力してください。
 
-    -   **Pcode**: WhaTapプロジェクトのプロジェクトコード。**管理**>**プロジェクト管理\***メニューで**_プロジェクトコード_**項目を確認してください。
+   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。**管理**>**プロジェクト管理\***メニューで**_プロジェクトコード_**項目を確認してください。
 
-    -   **ProjectAccessKey**: WhaTapプロジェクトのアクセスキー。**_管理_**>**_プロジェクト管理_**メニューで**_プロジェクトアクセスキー_**項目を確認してください。
+   - **ProjectAccessKey**: WhaTapプロジェクトのアクセスキー。**_管理_**>**_プロジェクト管理_**メニューで**_プロジェクトアクセスキー_**項目を確認してください。
 
-    -   **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
+   - **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
 
-    -   **UseReservedConcurrency**: WhaTap RDSの予約された同時性の使用有無です。
+   - **UseReservedConcurrency**: WhaTap RDSの予約された同時性の使用有無です。
 
-    -   **ReservedConcurrency**: WhaTap RDSが予約された同時性を使用したときに、同時に実行できる最大インスタンスの数です。
+   - **ReservedConcurrency**: WhaTap RDSが予約された同時性を使用したときに、同時に実行できる最大インスタンスの数です。
 
-2.  ログモニタリングの詳細設定のために、次のリンクへ移動してください。
+2. ログモニタリングの詳細設定のために、次のリンクへ移動してください。
 
-    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=whataprdseventforwarder&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogSetting.template' target='_blank' className='ext-link'>AWS CloudFormation Setting</Link>
+   <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=whataprdseventforwarder&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogSetting.template' target='_blank' className='ext-link'>AWS CloudFormation Setting</Link>
 
-3.  **パラメータ**セクションで以下の項目を順番に入力してください。
+3. **パラメータ**セクションで以下の項目を順番に入力してください。
 
-    -   **AwsRdsNames**: イベントを受信したいRDS Cluster、Instanceの名前一覧
+   - **AwsRdsNames**: イベントを受信したいRDS Cluster、Instanceの名前一覧
 
-        -   例）database-1、seoul-pro-db-01、seoul-pro-db-01-writer …
+     - 例）database-1、seoul-pro-db-01、seoul-pro-db-01-writer …
 
-        -   EventRuleを生成しないためには、`none`を入力してください。
+     - EventRuleを生成しないためには、`none`を入力してください。
 
-    -   **RdsLogGroupName**(**1~9**): ログを受信したいRDS CloudWatchLogGroup Name
+   - **RdsLogGroupName**(**1~9**): ログを受信したいRDS CloudWatchLogGroup Name
 
-        -   例）/aws/rds/seoul-pro-db-01
+     - 例）/aws/rds/seoul-pro-db-01
 
-        -   サブスクリプションフィルターを生成しない場合は、 `none `を入力してください。
+     - サブスクリプションフィルターを生成しない場合は、 `none `を入力してください。
 
-        :::note
+     :::note
 
-        CloudWatchLogGroupは一度に最大9つまで接続できます。
+     CloudWatchLogGroupは一度に最大9つまで接続できます。
 
-        :::
+     :::
 
-    -   **WhaTapRDSLogArn**: 前の段階で生成されたWhaTapRDSLogArn
+   - **WhaTapRDSLogArn**: 前の段階で生成されたWhaTapRDSLogArn
 
-        ![AWS CloudFormation output](/img/aws-rds-log-setting-output.png)
+     ![AWS CloudFormation output](/img/aws-rds-log-setting-output.png)
 
 ### 生成リソースを確認する
 
@@ -156,41 +156,41 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ![AWS RDS Log](/img/aws-rds-log-resource.png)
 
--   **S3** 
+- **S3** 
 
-    -   Bucket:WhaTap**AWS RDS Log**の実行ファイルを保存するAWS S3 Bucket (CopyZips)
+  - Bucket:WhaTap**AWS RDS Log**の実行ファイルを保存するAWS S3 Bucket (CopyZips)
 
--   **Lambda**
+- **Lambda**
 
-    -   Function 
+  - Function 
 
-        -   CopyZipsFunction:WhaTap AWS S3 Bucketからユーザーの環境に実行ファイルを移すAWS Lambda Function
+    - CopyZipsFunction:WhaTap AWS S3 Bucketからユーザーの環境に実行ファイルを移すAWS Lambda Function
 
-        -   WhaTapRDSLog: AWS RDSのモニタリングのためのAWS Lambda Function
+    - WhaTapRDSLog: AWS RDSのモニタリングのためのAWS Lambda Function
 
-    -   Permission
+  - Permission
 
-        -   CWPermission: RDS CloudWatchLogGroupにLogが生成される時、WhaTapRDSLogを実行できるようにするPermission
+    - CWPermission: RDS CloudWatchLogGroupにLogが生成される時、WhaTapRDSLogを実行できるようにするPermission
 
-        -   EventBridgePermission: RDS Eventが発生した場合、EventBridgeでWhaTapRDSLogを実行できるようにするPermission
+    - EventBridgePermission: RDS Eventが発生した場合、EventBridgeでWhaTapRDSLogを実行できるようにするPermission
 
-    -   Role
+  - Role
 
-        -   CopyZipsFuntionがWhaTapのS3からファイルをインポートし、CopyZipsに入れるために必要なRole
+    - CopyZipsFuntionがWhaTapのS3からファイルをインポートし、CopyZipsに入れるために必要なRole
 
-        -   WhaTapRDSLogがCloudWatchLogGroupにLogを残すために必要なRole
+    - WhaTapRDSLogがCloudWatchLogGroupにLogを残すために必要なRole
 
 ### フィルターとルールを確認する
 
 ![AWS CloudFormation](/img/aws-rds-log-check-resources.png)
 
--   **WS CloudWatchLogGroup**
+- **WS CloudWatchLogGroup**
 
-    SubscriptionFilter(1~9): RDSの CloudWatch LogGroupに Logが入ってくるとWhatapRDSLogを実行させるフィルター
+  SubscriptionFilter(1~9): RDSの CloudWatch LogGroupに Logが入ってくるとWhatapRDSLogを実行させるフィルター
 
--   **AWS EventBridge**
+- **AWS EventBridge**
 
-    Rule: AWSイベントで、RDSと関連したイベントが発生するとWhatapRDSLogを実行させるルール
+  Rule: AWSイベントで、RDSと関連したイベントが発生するとWhatapRDSLogを実行させるルール
 
 ## ログモニタリングを開始する
 

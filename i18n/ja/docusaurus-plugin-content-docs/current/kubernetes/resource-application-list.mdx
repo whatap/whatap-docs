@@ -1,16 +1,17 @@
 ---
 id: resource-application-list
-title: アプリケーション一覧
+title: コンテナアプリケーション一覧
 description: コンテナ化されたアプリケーションの一覧を確認します。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
+  - ワークロード
   - アプリケーション
   - アプリケーション一覧
 toc_max_heading_level: 2
 ---
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="resource" className="uitext" /> > <Cmdname sid="containerizedAppList" className="uitext" />
+ホーム画面 > プロジェクト選択 > **_ワークロード_** > **_コンテナアプリケーション一覧_**
 
 コンテナ化されたアプリケーションの一覧を照会します。 希望するカラムを選択すると、そのカラムを基準にアプリケーション一覧をソートして照会することができます。 
 
@@ -18,7 +19,7 @@ toc_max_heading_level: 2
 
 :::note 
 
-**メトリック情報**、**フィルター**、**カラム選択**案内は、<Cmdname sid="resource" className="uitext" />メニュー下位のリスト型の機能案内と同じです。
+{@include: _k8s-com-list.mdx} 
 
 :::
 
@@ -54,11 +55,11 @@ toc_max_heading_level: 2
 
 選択したリソースに関連付けられているリソース一覧の要約情報を提供します。 リソース名の横にある詳細ビュー アイコンを選択すると、そのリソース一覧の画面に移動します。 
 
--   <Cmdname sid="container" className="uitext" />：当該コンテナのみフィルタリングされた状態の<Cmdname sid="container_list" className="uitext" />に移動します。
+- <Cmdname sid="container" className="uitext" />：当該コンテナのみフィルタリングされた状態の<Cmdname sid="container_list" className="uitext" />に移動します。
 
--   <Cmdname sid="podName" className="uitext" />：該当するパッドのみフィルタリングされた<Cmdname sid="podList" className="uitext" />に移動します。
+- <Cmdname sid="podName" className="uitext" />：該当するパッドのみフィルタリングされた<Cmdname sid="podList" className="uitext" />に移動します。
 
--   <Cmdname sid="node" className="uitext" />：該当ノード名が選択された状態の<Cmdname sid="node_detail" className="uitext" />に移動します。
+- <Cmdname sid="node" className="uitext" />：該当ノード名が選択された状態の<Cmdname sid="node_detail" className="uitext" />に移動します。
 
 #### リソース関係図
 

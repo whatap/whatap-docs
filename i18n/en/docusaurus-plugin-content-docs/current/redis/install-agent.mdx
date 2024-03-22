@@ -17,9 +17,9 @@ The following guides you to the basic installation method for using the WhaTap d
 
 {@include: ../common-items/_agent-signup-guide.mdx}   
 
-<Youtube ko='RhU3f3d7k1A' en='wQbXDKNdDfA' ja='wQbXDKNdDfA' />
+<Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}
 
 {@include: ../getting-started/_accesskey.mdx} 
 
@@ -27,16 +27,16 @@ The following guides you to the basic installation method for using the WhaTap d
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-3.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
-    ```ini title='whatap.conf'
-    license=Project access key
-    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap server Info
+   ```ini title='whatap.conf'
+   license=Project access key
+   whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap server Info
 
-    dbms=redis
-    db_ip={DB server IP}
-    db_port={DB server port number}
-    ```
+   dbms=redis
+   db_ip={DB server IP}
+   db_port={DB server port number}
+   ```
 
 <!-- 공통 Notes -->
 
@@ -52,8 +52,12 @@ If you do not use the user and password (you can access Redis without authentica
 
 <DBuserDesc />
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx} 
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
 
 <!--## 에이전트 실행-->
 
 {@include: ../common-items/_db-run-agent.mdx} 
+
+<!--## XOS 에이전트 설치-->
+
+{@include: ../common-items/_db-install-xos-agent.mdx}

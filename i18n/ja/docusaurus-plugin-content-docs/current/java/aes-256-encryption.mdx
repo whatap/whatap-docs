@@ -19,26 +19,26 @@ Unsupported keysize or algorithm parameters.
 Illegal key size or default parameters.
 ```
 
-1.  次のリンクから、バージョンに適合するファイルをダウンロードしてください。
+1. 次のリンクから、バージョンに適合するファイルをダウンロードしてください。
 
-    :::note
+   :::note
 
-    **JavaバージョンのJCEダウンロードリンク**
+   **JavaバージョンのJCEダウンロードリンク**
 
-    -   [JAVA 8](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
-    -   [JAVA 7](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
-    -   [JAVA 6](http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html)
-    -   [JAVA 5](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#jce_policy-1.5.0-oth-JPR)
-    -   [JAVA 1.42](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7503-jce-1.4.2-oth-JPR)
+   - [JAVA 8](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
+   - [JAVA 7](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
+   - [JAVA 6](http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html)
+   - [JAVA 5](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#jce_policy-1.5.0-oth-JPR)
+   - [JAVA 1.42](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7503-jce-1.4.2-oth-JPR)
 
-    :::
+   :::
 
-2.  _`$JAVA_HOME`/jre/lib/security_パスにファイルを上書きしてください。
+2. _`$JAVA_HOME`/jre/lib/security_パスにファイルを上書きしてください。
 
-3.  JCEを適用した場合は、_`${WHATAP_HOME}`/whatap.conf_ファイルに次の設定を追加してください。
+3. JCEを適用した場合は、_`${WHATAP_HOME}`/whatap.conf_ファイルに次の設定を追加してください。
 
-    ```ini title='whatap.conf'
-    cypher_level=256
-    ```
+   ```ini title='whatap.conf'
+   cypher_level=256
+   ```
 
-4.  アプリケーションサーバーを再起動すると、ASE256の暗号化が適用されます。
+4. アプリケーションサーバーを再起動すると、ASE256の暗号化が適用されます。

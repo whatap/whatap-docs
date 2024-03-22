@@ -82,12 +82,12 @@ extension_dir => /usr/lib64/php/modules => /usr/lib64/php/modules
 
 PHP APIバージョン、PHP ZTSのサポートを確認して、環境に適したライブラリを選択してください。PHP拡張モジュール(PHP Extension module) パスに_whatap.so_ファイル名をコピーします。
 
--   PHP ZTSにサポートされている場合 - _whatap_zts\_[PHP APIバージョン].so_
--   PHP ZTSにサポートされていない場合 - _whatap\_[PHP APIバージョン].so_
-    ```bash
-    # PHP ZTSをサポートしていない場合の例
-    $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
-    ```
+- PHP ZTSにサポートされている場合 - _whatap_zts\_[PHP APIバージョン].so_
+- PHP ZTSにサポートされていない場合 - _whatap\_[PHP APIバージョン].so_
+  ```bash
+  # PHP ZTSをサポートしていない場合の例
+  $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
+  ```
 
 #### whatap-phpのサービス環境変数の設定
 
@@ -99,21 +99,21 @@ export WHATAP_PHP_EXT_SRC=    # WhaTapライブラリパスおよびファイル
                               # (/usr/whatap/php/modules/x64/whatap_20100412.so)]
 ```
 
-1.  `$WHATAP_PHP_EXT_HOME`環境変数にPHP拡張モジュールパスを設定します。
-2.  `$WHATAP_PHP_EXT_SRC`環境変数にWhaTapライブラリ全体のファイルパスを設定します。
+1. `$WHATAP_PHP_EXT_HOME`環境変数にPHP拡張モジュールパスを設定します。
+2. `$WHATAP_PHP_EXT_SRC`環境変数にWhaTapライブラリ全体のファイルパスを設定します。
 
 ### whatap.ini設定{#php-ini-path}
 
-1.  PHP追加のini設定パスを確認します。
+1. PHP追加のini設定パスを確認します。
 
-    ```bash
-    $ sudo php -i | grep '.ini files'
+   ```bash
+   $ sudo php -i | grep '.ini files'
 
-    Scan this dir for additional .ini files => /etc/php.d
-    ```
+   Scan this dir for additional .ini files => /etc/php.d
+   ```
 
-2.  _whatap.ini_をそのパスにコピーします。
+2. _whatap.ini_をそのパスにコピーします。
 
-    ```bash
-    $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini
-    ```
+   ```bash
+   $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini
+   ```

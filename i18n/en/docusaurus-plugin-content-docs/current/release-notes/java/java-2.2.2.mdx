@@ -9,36 +9,36 @@ December 21, 2022
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   **aws-mysql-jdbc-1.1.1** tracing
+- **aws-mysql-jdbc-1.1.1** tracing
 
--   **mariadb-java-client-3.0.3** tracing
+- **mariadb-java-client-3.0.3** tracing
 
--   Generated the resp90 and resp95 response time metrics using the normal distribution.
+- Generated the resp90 and resp95 response time metrics using the normal distribution.
 
--   Addition of the `hook_method_ignore_class_patterns` option key: Added a class to ignore among the methods to hook.
-    ```ini title='whatap.conf'
-    hook_method_ignore_class_patterns=a.b.c.D
-    ```
+- Addition of the `hook_method_ignore_class_patterns` option key: Added a class to ignore among the methods to hook.
+  ```ini title='whatap.conf'
+  hook_method_ignore_class_patterns=a.b.c.D
+  ```
 
 ## Update <sup><Status>Change</Status></sup>
 
--   Added the ASM API version mark to the Java agent logo.
+- Added the ASM API version mark to the Java agent logo.
 
--   Tracing ResultSet of m**ariadb-java-client-3.0.9**
+- Tracing ResultSet of m**ariadb-java-client-3.0.9**
 
--   Deleted R2 from the Java agent logo.
+- Deleted R2 from the Java agent logo.
 
--   Modified the process CPU time measurement from the system time basis to the JVM's nano time basis.
+- Modified the process CPU time measurement from the system time basis to the JVM's nano time basis.
 
--   Excluded the access$ method from the default hooking in the `hook_method_ignore` item.
+- Excluded the access$ method from the default hooking in the `hook_method_ignore` item.
 
-    ```ini title='whatap.conf'
-    hook_method_ignore=get,set,access$
-    ```
+  ```ini title='whatap.conf'
+  hook_method_ignore=get,set,access$
+  ```
 
--   Modified the default value of `text_zip_enabled` to `true` to perform the text reset per hour.
-    ```ini title='whatap.conf'
-    text_zip_enabled=true
-    ```
+- Modified the default value of `text_zip_enabled` to `true` to perform the text reset per hour.
+  ```ini title='whatap.conf'
+  text_zip_enabled=true
+  ```
 
--   Modified TPS, the response time to calculate from the 30 seconds' average to 5 seconds' average.
+- Modified TPS, the response time to calculate from the 30 seconds' average to 5 seconds' average.

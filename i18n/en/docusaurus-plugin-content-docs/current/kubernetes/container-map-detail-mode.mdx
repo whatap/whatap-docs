@@ -10,13 +10,13 @@ tags:
 
 You can check detailed information about the target selected in the **_container map_** menu on the **_Display Detail_** screen.
 
-1.  In the **_Container map_** menu, select a block (container or pod) to view. 
+1. In the **_Container map_** menu, select a block (container or pod) to view. 
 
-2.  On the right of the screen, the **View summarized** panel appears as follows. 
+2. On the right of the screen, the **View summarized** panel appears as follows. 
 
-    <ImgLang img='k8s-container-sum.png' desc='Container map summary view' />
+   <ImgLang img='k8s-container-sum.png' desc='Container map summary view' />
 
-3.  If you select the ![View detailed icon](/img/ico-detail-mode.svg) **_View Detailed_** at the upper right of the **View Summarized** panel, the furthermore detailed information appears.
+3. If you select the ![View detailed icon](/img/ico-detail-mode.svg) **_View Detailed_** at the upper right of the **View Summarized** panel, the furthermore detailed information appears.
 
 ## Basic screen guide
 
@@ -24,54 +24,54 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
 <ImgLang img='k8s-container-detail.png' desc='Detailed view screen' />
 
--   ![number 1](/img/number-01.png) **Summary info card** (container or pod)
+- ![number 1](/img/number-01.png) **Summary info card** (container or pod)
 
-    You can see the group of the selected target. When selecting a target additionally, you can check the metrics for the selected target in the ![number 4](/img/number-04.png) area. It has the same view as the card selected in the container map. For more information, see [the following](container-map).
+  You can see the group of the selected target. When selecting a target additionally, you can check the metrics for the selected target in the ![number 4](/img/number-04.png) area. It has the same view as the card selected in the container map. For more information, see [the following](container-map).
 
-    :::note
+  :::note
 
-    In case of a large number of blocks when searching the summary cards, the notation method changes as follows. You can compare all blocks, <span class='normal'>normal</span> blocks, <span class='slow'>warning</span> blocks, and <span class='vslow'>fatal</span> blocks.
+  In case of a large number of blocks when searching the summary cards, the notation method changes as follows. You can compare all blocks, <span class='normal'>normal</span> blocks, <span class='slow'>warning</span> blocks, and <span class='vslow'>fatal</span> blocks.
 
-    <ImgLang img='k8s-container-card-block.png' desc='블록 개수가 많을 경우 요약 정보 카드' />
+  <ImgLang img='k8s-container-card-block.png' desc='블록 개수가 많을 경우 요약 정보 카드' />
 
-    :::
+  :::
 
--   ![Leader line 2](/img/number-02.png) **\*Summary Info List**
+- ![Leader line 2](/img/number-02.png) **\*Summary Info List**
 
-    You can see the group information of the selected target in a list format. When selecting a target additionally, you can see the metrics for the selected target in the ![number 4](/img/number-04.png) area. 
+  You can see the group information of the selected target in a list format. When selecting a target additionally, you can see the metrics for the selected target in the ![number 4](/img/number-04.png) area. 
 
-    -   If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the ![Leader line 3](/img/number-03.png) target selected from the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear.
+  - If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the ![Leader line 3](/img/number-03.png) target selected from the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear.
 
-        -   **_Node_**: Node details and master meta data
+    - **_Node_**: Node details and master meta data
 
-        -   **_Deployment_**: Master meta data
+    - **_Deployment_**: Master meta data
 
-        -   **_ReplicaSet_**: Master meta data
+    - **_ReplicaSet_**: Master meta data
 
-        -   **_Pod_**: Master meta data
+    - **_Pod_**: Master meta data
 
-        -   **_ContainerId_**: Container data
+    - **_ContainerId_**: Container data
 
-    -   ![More icon](/img/ico-more.svg) **_Cube detail_**: You can search the detailed or master meta data by selecting the Cube detail icon on the right of each metric guide.
+  - ![More icon](/img/ico-more.svg) **_Cube detail_**: You can search the detailed or master meta data by selecting the Cube detail icon on the right of each metric guide.
 
--   ![Leader line 4](/img/number-04.png) **Trace**, **Metrics**, **Log**, **Event**, **Call Information**
+- ![Leader line 4](/img/number-04.png) **Trace**, **Metrics**, **Log**, **Event**, **Call Information**
 
-    -   **_Trace_** 
+  - **_Trace_** 
 
-        In the **_Trace_** tab, you can monitor the transaction data for active applications on the Kubernetes container. It provides the views for **_Dashboard_** and **_Transaction List_**. For more information, see [the following](container-map-trace).
+    In the **_Trace_** tab, you can monitor the transaction data for active applications on the Kubernetes container. It provides the views for **_Dashboard_** and **_Transaction List_**. For more information, see [the following](container-map-trace).
 
-    -   **_Metrics_**
+  - **_Metrics_**
 
-        In the **_Metrics_** tab, you can check key metrics and resource usage patterns for the selected containers or pods. Through this, you can quickly identify resource issues and find optimization points. For more information, see [the following](container-map-metrics).
+    In the **_Metrics_** tab, you can check key metrics and resource usage patterns for the selected containers or pods. Through this, you can quickly identify resource issues and find optimization points. For more information, see [the following](container-map-metrics).
 
-    -   **_Log_** 
+  - **_Log_** 
 
-        In the **_Log_** tab, you can see the logs generated from the Kubernetes containers and container applications. The logging functions are divided into the real-time container log searching and the past log searching. For more information, see [the following](container-map-log).
+    In the **_Log_** tab, you can see the logs generated from the Kubernetes containers and container applications. The logging functions are divided into the real-time container log searching and the past log searching. For more information, see [the following](container-map-log).
 
-    -   **_Event_** 
+  - **_Event_** 
 
-        In the **_Event_** tab, you can see **_Kubernetes_** events that occur in a Kubernetes cluster and **_WhaTap_** events by the set conditions. For more information, see [the following](container-map-event).
+    In the **_Event_** tab, you can see **_Kubernetes_** events that occur in a Kubernetes cluster and **_WhaTap_** events by the set conditions. For more information, see [the following](container-map-event).
 
-    -   **_Call Infomation_**
+  - **_Call Infomation_**
 
-        In the **_Call information_** tab, you can see the call flow of the applications running on Kubernetes containers and the status of outbound call targets. For more information, see [the following](container-map-call-information).
+    In the **_Call information_** tab, you can see the call flow of the applications running on Kubernetes containers and the status of outbound call targets. For more information, see [the following](container-map-call-information).

@@ -13,57 +13,57 @@ You can do various activities such as adding additional information to the trans
 
 The Java agent plug-in is executed by inserting in the method start and end. The locations (class, method) to apply the plug-in can be set as agent options.
 
--   `hook_trace_helper_start_patterns`
+- `hook_trace_helper_start_patterns`
 
-    At the beginning of the method, set the point (class, method) where the trace plug-in is to be inserted. Write the plug-in code in the _`$WHATAP_HOME`/plugin/TraceHelperStart.x_ file.
+  At the beginning of the method, set the point (class, method) where the trace plug-in is to be inserted. Write the plug-in code in the _`$WHATAP_HOME`/plugin/TraceHelperStart.x_ file.
 
--   `hook_trace_helper_end_patterns`
+- `hook_trace_helper_end_patterns`
 
-    At the end of the method, set the point (class, method) where the trace plug-in is to be inserted. Write the plug-in code in the _`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ file.
+  At the end of the method, set the point (class, method) where the trace plug-in is to be inserted. Write the plug-in code in the _`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ file.
 
--   `hook_trace_helper_patterns`
+- `hook_trace_helper_patterns`
 
-    At the beginning and end of the method, set the point (class, method) where the trace plug-in is to be inserted. Write the plug-in codes in the _`$WHATAP_HOME`/plugin/TraceHelperStart.x_ and _`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ files.
+  At the beginning and end of the method, set the point (class, method) where the trace plug-in is to be inserted. Write the plug-in codes in the _`$WHATAP_HOME`/plugin/TraceHelperStart.x_ and _`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ files.
 
--   `custom_pool_classes`
+- `custom_pool_classes`
 
-    To monitor the user-defined pool, set the class with the pool usage. Write the plug-in code in _`$WHATAP_HOME`/plugin/CustomPool.x_.
+  To monitor the user-defined pool, set the class with the pool usage. Write the plug-in code in _`$WHATAP_HOME`/plugin/CustomPool.x_.
 
 ## Plug-in setting example
 
 In case of setting multiple classes, use the comma (,) as the delimiter. Part or all of the string of the package name can be replaced with "\*."
 
--   **In case of setting the package and method name**
+- **In case of setting the package and method name**
 
-    ```java
-    whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
-    ```
+  ```java
+  whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
+  ```
 
--   **In case of replacing the package and method name with "\*"**
+- **In case of replacing the package and method name with "\*"**
 
-    ```java
-    *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
-    ```
+  ```java
+  *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
+  ```
 
-    ```java
-    *.testA, *PluginTestB.testB
-    ```
+  ```java
+  *.testA, *PluginTestB.testB
+  ```
 
--   **In case of targeting the whole**
+- **In case of targeting the whole**
 
-    ```java
-    *.*
-    ```
+  ```java
+  *.*
+  ```
 
--   **In case of setting the custom pool**
+- **In case of setting the custom pool**
 
-    The custom pool is set in the form of identifier@package name.
+  The custom pool is set in the form of identifier@package name.
 
-    For example, before the class name, set the identifier, `whatap_plugin_guide`. Identifiers and classes are separated by @.
+  For example, before the class name, set the identifier, `whatap_plugin_guide`. Identifiers and classes are separated by @.
 
-    ```java
-    whatap_plugin_guide@com.ibm.ws.connectionpool.monitor.ConnectionPoolStats 
-    ```
+  ```java
+  whatap_plugin_guide@com.ibm.ws.connectionpool.monitor.ConnectionPoolStats 
+  ```
 
 ## Plug-in code writing example
 
@@ -71,13 +71,13 @@ In most cases, the explicit type casting is required because objects are returne
 
 ### Writing the start time of the set method in the transaction trace
 
-1.  Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
+1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
 ```
 
-2.  Write the plug-in code in _TraceHelperStart.x_.
+2. Write the plug-in code in _TraceHelperStart.x_.
 
 ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
 // Substitute the class name and method name in the string prefix.
@@ -94,13 +94,13 @@ Display the method start time in the transaction trace as follows.
 
 ### Recording the set method's end time and execution time in the transaction trace
 
-1.  Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
+1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
 ```
 
-1.  Write the plug-in code in _TraceHelperEnd.x_.
+1. Write the plug-in code in _TraceHelperEnd.x_.
 
 ```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
 String prefix = $point.class1 + "." + $point.method;
@@ -186,8 +186,8 @@ It is prohibited to store personally identifiable information by using plug-in A
 
 This API is applied to the methods set as starting points when monitoring the application servers such as daemons and batches. Write code in the following file.
 
--   Application of the service start area: _`$WHATAP_HOME`/plugin/AppServiceStart.x_
--   Application of the service end area: _`$WHATAP_HOME`/plugin/AppServiceEnd.x_
+- Application of the service start area: _`$WHATAP_HOME`/plugin/AppServiceStart.x_
+- Application of the service end area: _`$WHATAP_HOME`/plugin/AppServiceEnd.x_
 
 | Plug-in file      | Parameter | Method/variable | Description                |
 | ----------------- | :-------: | --------------- | -------------------------- |
@@ -199,8 +199,8 @@ This API is applied to the methods set as starting points when monitoring the ap
 
 This API is applied to the common web applications that use the `javax.servlet.http.HTTPServlet` class. Write code in the following file.
 
--   Application of the service start area: _`$WHATAP_HOME`/plugin/HttpServiceStart.x_
--   Application of the service end area: _`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
+- Application of the service start area: _`$WHATAP_HOME`/plugin/HttpServiceStart.x_
+- Application of the service end area: _`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
 
 | Plug-in file                             | Parameter | Method/variable                            | Description                            |
 | ---------------------------------------- | :-------: | ------------------------------------------ | -------------------------------------- |
@@ -229,8 +229,8 @@ This API is applied to the common web applications that use the `javax.servlet.h
 
 This API can be applied for HTTP outbound call by using the library such as `HttpClient`. Write code in the following file.
 
--   Application of the service start area: _`$WHATAP_HOME`/plugin/HttpCallStart.x_
--   Application of the service end area: _`$WHATAP_HOME`/plugin/HttpCallEnd.x_
+- Application of the service start area: _`$WHATAP_HOME`/plugin/HttpCallStart.x_
+- Application of the service end area: _`$WHATAP_HOME`/plugin/HttpCallEnd.x_
 
 | Plug-in file    | Parameter | Method/variable                   | Description                          |
 | --------------- | :-------: | --------------------------------- | ------------------------------------ |

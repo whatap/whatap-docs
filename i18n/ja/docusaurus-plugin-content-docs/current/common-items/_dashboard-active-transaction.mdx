@@ -1,4 +1,14 @@
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_アクティブトランザクション_**
+<InDoc product="java">
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="AA002" className="uitext" />
+
+</InDoc>
+
+<Xclude product="java">
+
+ホーム画面>プロジェクト選択> <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="appDashboard" className="uitext" /> > <Cmdname sid="AA002" className="uitext" />ウィジェットの![ショートカットアイコン](/img/right-arrow.svg)ボタンを選択
+
+</Xclude>
 
 現在のトランザクションのURL、SQL、HTTP呼び出し情報で異常トランザクションをすばやく特定し、詳細なトレースを通じて遅延間隔を詳細に分析できます。
 
@@ -18,15 +28,31 @@
 
 進行中のトランザクションのURL、SQL、HTTP呼び出し情報の詳細を表示します。Top 10項目タブを選択すると、各項目別の経過時間が高い順にソートされている表を確認できます。同様に、トランザクションステータスの速度は<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>に分類します。
 
+<InDoc product='java'>
+
+トランザクション一覧で項目を選択すると、選択したトランザクションに関する詳細情報が確認できる<Cmdname sid="active_transaction" className="uitext" />ウィンドウが表示されます。
+
+<ImgLang img='dashboard-active-transaction-details.png' desc='アクティブTX' />
+
+- 実行中のトランザクションに関する詳細情報や外部呼び出し、クエリ、コールスタックなどを確認できます。
+
+  - <Cmdname sid="refresh_all" className="uitext" />：進行中のトランザクションの情報を更新できます。
+
+  - <Cmdname sid="stop_thread" className="uitext" />：進行中のトランザクションを停止できます。スレッド中止のためには、<Cmdname sid="secret_key" className="uitext" />が必要です。<Cmdname sid="secret_key" className="uitext" />についての詳細は、<Link to="install-agent#security">次の文書</Link>を参考にしてください。
+
+- すでに終了したトランザクションであれば<Cmdname sid="show_trace" className="uitext" />ボタンが表示されます。ボタンをタップすると<Cmdname sid="TTL06527" className="uitext" />ウィンドウが表示されます。<Cmdname sid="TTL06527" className="uitext" />詳細については、[次の文書](dashboard-hitmap-trace#basic-usage)を参考にしてください。
+
+</InDoc>
+
 ## エージェント一覧のフィルタリング
 
 ![指示線2](/img/number-02.png) **エージェント一覧**でフィルタリング対象を選択または検索して、トランザクション一覧で個々の対象を確認できます。 
 
--   現在、アクティブなエージェントを確認するには、**_アクティブなエージェントのみ表示_**チェックボックスを選択してください。
+- 現在、アクティブなエージェントを確認するには、**_アクティブなエージェントのみ表示_**チェックボックスを選択してください。
 
--   **_すべてのエージェント_**一覧ボックスをクリックしてください。エージェントをカテゴリ別に分類して確認できます。
+- **_すべてのエージェント_**一覧ボックスをクリックしてください。エージェントをカテゴリ別に分類して確認できます。
 
--   稼働中のトランザクション情報をエージェント別に確認するには、エージェントを選択して、下部の**_適用_**ボタンをクリックしてください。選択を取り消すには、![リセットアイコン](/img/ico-reset.svg)ボタンをクリックしてください。
+- 稼働中のトランザクション情報をエージェント別に確認するには、エージェントを選択して、下部の**_適用_**ボタンをクリックしてください。選択を取り消すには、![リセットアイコン](/img/ico-reset.svg)ボタンをクリックしてください。
 
 ## 自動更新設定
 
@@ -36,8 +62,8 @@
 
 :::note
 
--   時間は秒単位で更新します。
--   自動更新設定を無効した状態でトランザクション一覧を更新するには、![自動更新アイコン](/img/ico-refresh.png)ボタンを選択してください。
+- 時間は秒単位で更新します。
+- 自動更新設定を無効した状態でトランザクション一覧を更新するには、![自動更新アイコン](/img/ico-refresh.png)ボタンを選択してください。
 
 :::
 

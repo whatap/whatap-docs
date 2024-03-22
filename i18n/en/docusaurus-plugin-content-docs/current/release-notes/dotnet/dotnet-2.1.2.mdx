@@ -7,22 +7,22 @@ pagination_next: release-notes/dotnet/dotnet-2_1_1
 
 #### July 20, 2023
 
--   <Status>New</Status> WCF is supported.
+- <Status>New</Status> WCF is supported.
 
-    -   WCF traces through custom methods just like the web services. Therefore, the value of the set option is shared.
+  - WCF traces through custom methods just like the web services. Therefore, the value of the set option is shared.
 
-        -   When the value of the `webservice_method_enabled` option becomes `true`, WCF is also traced.
+    - When the value of the `webservice_method_enabled` option becomes `true`, WCF is also traced.
 
-        -   Enter the name of the method to be traced along with the namespace in `webservice_method_prefix`.
+    - Enter the name of the method to be traced along with the namespace in `webservice_method_prefix`.
 
--   <Status>Change</Status> The Active Stack execution environment is automatically detected.
+- <Status>Change</Status> The Active Stack execution environment is automatically detected.
 
-    -   Active Stack operates only when the .NET framework version of the OS is 4.6.1 or later.
+  - Active Stack operates only when the .NET framework version of the OS is 4.6.1 or later.
 
-    -   Even if the value of the `active_stack_enabled` option is set to `true`, Active Stack collection is stopped when the .NET framework version of the OS is earlier than 4.6.1.
+  - Even if the value of the `active_stack_enabled` option is set to `true`, Active Stack collection is stopped when the .NET framework version of the OS is earlier than 4.6.1.
 
-    :::note
+  :::note
 
-    The web application supports Active Stack in the version 4.5 or later. For checking the .NET framework version of the OS, see Number 4 of [the following](https://docs.whatap.io/dotnet/supported-spec#use-tools).
+  The web application supports Active Stack in the version 4.5 or later. For checking the .NET framework version of the OS, see Number 4 of [the following](https://docs.whatap.io/dotnet/supported-spec#use-tools).
 
-    :::
+  :::

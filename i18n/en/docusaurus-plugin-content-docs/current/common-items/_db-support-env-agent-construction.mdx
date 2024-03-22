@@ -1,23 +1,23 @@
 The WhaTap database monitoring service consists of an agent and a collection server, and the data is encrypted for security between the agent and the collection server. It is made without an external library so there is no need to restart the system for installation and update.
 
--   WhaTap database monitoring service can perform monitoring on a separate agent server without installing an agent on the database server. Monitoring can be applied flexibly according to the user environment.
+- WhaTap database monitoring service can perform monitoring on a separate agent server without installing an agent on the database server. Monitoring can be applied flexibly according to the user environment.
 
-    <div class='db-agent'>
+  <div class='db-agent'>
 
-    |           Possible to install a separate agent server           |             Possible to install on the DB server             | Possible to perform DB resource monitoring (XOS) |
-    | :-------------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------: |
-    | <ImgLang img='dbx-install-agent-on-agent-server.png' desc='' /> | <ImgLang img='dbx-install-agent-on-db-server.png' desc='' /> |      <ImgLang img='xos-agent.png' desc='' />     |
+  |           Possible to install a separate agent server           |             Possible to install on the DB server             | Possible to perform DB resource monitoring (XOS) |
+  | :-------------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------: |
+  | <ImgLang img='dbx-install-agent-on-agent-server.png' desc='' /> | <ImgLang img='dbx-install-agent-on-db-server.png' desc='' /> |      <ImgLang img='xos-agent.png' desc='' />     |
 
-    </div>
+  </div>
 
--   The XOS agent is an optional add-on agent that can monitor the process usage of the database server. To monitor the process usage of the database server, run a separate agent on the database server to collect data.
+- The XOS agent is an optional add-on agent that can monitor the process usage of the database server. To monitor the process usage of the database server, run a separate agent on the database server to collect data.
 
--   The agent and server use the binary communication protocol. In addition, data is selectively encrypted to ensure data security while reducing the burden of encryption.
+- The agent and server use the binary communication protocol. In addition, data is selectively encrypted to ensure data security while reducing the burden of encryption.
 
 :::note
 
--   The WhaTap agent must be installed on a server that can communicate over the network with the database server to be monitored.
+- The WhaTap agent must be installed on a server that can communicate over the network with the database server to be monitored.
 
--   **JDK** of **Java 8** or later must be installed on the WhaTap DBX agent server.
+- **JDK** of **Java 8** or later must be installed on the WhaTap DBX agent server.
 
 :::

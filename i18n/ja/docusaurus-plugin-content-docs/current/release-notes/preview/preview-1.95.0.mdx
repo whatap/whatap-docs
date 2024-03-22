@@ -11,7 +11,7 @@ toc_max_heading_level: 3
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
--   [https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+- [https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
 
 * * *
 
@@ -23,8 +23,8 @@ import UI from '@site/src/components/UItext';
 
 <Status>Fixed</Status> Java、Python、Node.jsエージェントの設定オプション名を修正
 
--   `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
--   `trace_active_stack_red_time` → `trace_active_transaction_red_time`
+- `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
+- `trace_active_stack_red_time` → `trace_active_transaction_red_time`
 
 ## Official Release: 2023-01-16
 
@@ -32,28 +32,28 @@ import UI from '@site/src/components/UItext';
 
 #### 用語変更
 
--   <Status>Change</Status> <b>プロファイル</b> 用語を <b>トレース</b>に変更します。
+- <Status>Change</Status> <b>プロファイル</b> 用語を <b>トレース</b>に変更します。
 
 #### ログの設定
 
--   <Status>Change</Status> <UI>カテゴリ別のデータ保持期間</UI> テーブルの保存量カラムを削除
+- <Status>Change</Status> <UI>カテゴリ別のデータ保持期間</UI> テーブルの保存量カラムを削除
 
--   <Status>Feature</Status> <UI>カテゴリ別データ保持期間</UI> テーブルで <UI>本日のログ数</UI> カラムの追加およびカラム別ヘルプの追加
+- <Status>Feature</Status> <UI>カテゴリ別データ保持期間</UI> テーブルで <UI>本日のログ数</UI> カラムの追加およびカラム別ヘルプの追加
 
--   <Status>Feature</Status> <UI>ログ構文解析の設定</UI> セクションでステータス成功率の構文解析、4xx、5xx構文解析の登録時に同じカテゴリの構文解析を重複登録を防ぐ有効性検査を追加
+- <Status>Feature</Status> <UI>ログ構文解析の設定</UI> セクションでステータス成功率の構文解析、4xx、5xx構文解析の登録時に同じカテゴリの構文解析を重複登録を防ぐ有効性検査を追加
 
 #### アカウント情報管理
 
--   <Status>Feature</Status> <UI>アカウント情報</UI> メニューで多要素認証を有効にする場合、最終確認のメッセージウィンドウを追加
+- <Status>Feature</Status> <UI>アカウント情報</UI> メニューで多要素認証を有効にする場合、最終確認のメッセージウィンドウを追加
 
 #### Flexボード
 
 <Status>Change</Status> <UI>Log RPS Board</UI> ダッシュボードテンプレートの修正
 
--   データ参照期間のデフォルト値変更：リアルタイム30分→リアルタイム12時間
--   **_Log RPS trend_**、**_サーバステータス_** ウィジェットのレイアウトの高さを修正
--   **_4XX、5XX Count_** ウィジェットの補助テーブルのデータ単位設定
--   一部のウィジェットデータの呼び出し間隔を5 秒から1分に変更
+- データ参照期間のデフォルト値変更：リアルタイム30分→リアルタイム12時間
+- **_Log RPS trend_**、**_サーバステータス_** ウィジェットのレイアウトの高さを修正
+- **_4XX、5XX Count_** ウィジェットの補助テーブルのデータ単位設定
+- 一部のウィジェットデータの呼び出し間隔を5 秒から1分に変更
 
 ### `Application`
 
@@ -63,11 +63,11 @@ import UI from '@site/src/components/UItext';
 
 :::note
 
--   **_ダッシュボード_** > **_アプリケーションダッシュボード_** > **_アクティブトランザクション_** ウィジェットの右側の「![詳細を見るアイコン](/img/right-arrow.svg)」ボタンをクリック > 終了したトランザクション項目を選択> **_トランザクションの表示_** ボタンをクリックします。
--   **_ダッシュボード_** > **_アプリケーションダッシュボード_** > **_ヒットマップ_** ウィジェットの右側の「![詳細を見るアイコン](/img/right-arrow.svg)」ボタンクをリック > **_ヒットマップトランザクション_** チャートをドラッグ > **_TXトレース_** 一覧で項目をクリックします。
--   **_ダッシュボード_** > **_トランザクションマップ_** > **_トランザクション_** チャートをドラッグ > **_TXトレース_** 一覧で左端の ![詳細を見るアイコン](/img/ico-detail-view.svg)ボタンをクリックします。
--   **_ダッシュボード_** > **_アクティブトランザクション_** > **_トランザクション_** タブで終了したトランザクションカラムを選択 > **_トランザクションの表示_** ボタンをクリックします。
--   **_分析_** > **_ヒットマップ_** > **_ヒットマップトランザクション_** チャートドラッグ > **_TXトレース_** 一覧で項目をクリック
+- **_ダッシュボード_** > **_アプリケーションダッシュボード_** > **_アクティブトランザクション_** ウィジェットの右側の「![詳細を見るアイコン](/img/right-arrow.svg)」ボタンをクリック > 終了したトランザクション項目を選択> **_トランザクションの表示_** ボタンをクリックします。
+- **_ダッシュボード_** > **_アプリケーションダッシュボード_** > **_ヒットマップ_** ウィジェットの右側の「![詳細を見るアイコン](/img/right-arrow.svg)」ボタンクをリック > **_ヒットマップトランザクション_** チャートをドラッグ > **_TXトレース_** 一覧で項目をクリックします。
+- **_ダッシュボード_** > **_トランザクションマップ_** > **_トランザクション_** チャートをドラッグ > **_TXトレース_** 一覧で左端の ![詳細を見るアイコン](/img/ico-detail-view.svg)ボタンをクリックします。
+- **_ダッシュボード_** > **_アクティブトランザクション_** > **_トランザクション_** タブで終了したトランザクションカラムを選択 > **_トランザクションの表示_** ボタンをクリックします。
+- **_分析_** > **_ヒットマップ_** > **_ヒットマップトランザクション_** チャートドラッグ > **_TXトレース_** 一覧で項目をクリック
 
 :::
 
@@ -77,32 +77,32 @@ import UI from '@site/src/components/UItext';
 修正後<br/>
 ![](/img/release/apm-transaction-list-after.png)
 
--   <Status>Feature</Status> <UI>メソッド分析</UI>：トレースステップ情報で重複実行されたメソッドに対する分析情報を提供します。
+- <Status>Feature</Status> <UI>メソッド分析</UI>：トレースステップ情報で重複実行されたメソッドに対する分析情報を提供します。
 
--   <Status>Feature</Status> <UI>SQL分析</UI>：トレースステップ情報で重複実行されたSQL文に対する分析情報を提供します。
+- <Status>Feature</Status> <UI>SQL分析</UI>：トレースステップ情報で重複実行されたSQL文に対する分析情報を提供します。
 
--   <Status>Change</Status> タブメニューの名称を修正
+- <Status>Change</Status> タブメニューの名称を修正
 
-    -   **_プロファイル_** → **_テーブルビュー_**
-    -   **_プロファイル·ツリー_** → **_ツリービュー_**
-    -   **_ログ_** → **_トランザクションログ_**
+  - **_プロファイル_** → **_テーブルビュー_**
+  - **_プロファイル·ツリー_** → **_ツリービュー_**
+  - **_ログ_** → **_トランザクションログ_**
 
--   <Status>Change</Status> <UI>テーブルビュー</UI> タブのデザイン修正
+- <Status>Change</Status> <UI>テーブルビュー</UI> タブのデザイン修正
 
-    -   メソッド情報ステップ(**_ステップ内容_** カラム)のテキスト色を表示
-    -   メソッド情報ステップ(**_ステップ内容_** カラム)のdepth情報をインデントで表示
-    -   カラム名変更：**_累積時間_** → **_間隔時間_**
+  - メソッド情報ステップ(**_ステップ内容_** カラム)のテキスト色を表示
+  - メソッド情報ステップ(**_ステップ内容_** カラム)のdepth情報をインデントで表示
+  - カラム名変更：**_累積時間_** → **_間隔時間_**
 
--   <Status>Change</Status> <UI>ツリービュー</UI> タブのデザイン変更
+- <Status>Change</Status> <UI>ツリービュー</UI> タブのデザイン変更
 
-    修正前<br/>
-    ![](/img/release/transaction-profile-trace-before.png)
+  修正前<br/>
+  ![](/img/release/transaction-profile-trace-before.png)
 
-    修正後<br/>
-    ![](/img/release/transaction-profile-trace-after.png)
+  修正後<br/>
+  ![](/img/release/transaction-profile-trace-after.png)
 
-    -   トレースタイプによるテキスト色を表示
-    -   データ区分カラムの追加(**_詳細情報_**、**_タイプ_**、**_経過時間_**)
-    -   アクティブスタック項目をクリックすると **詳細情報** 確認ビューを追加
+  - トレースタイプによるテキスト色を表示
+  - データ区分カラムの追加(**_詳細情報_**、**_タイプ_**、**_経過時間_**)
+  - アクティブスタック項目をクリックすると **詳細情報** 確認ビューを追加
 
--   <Status>Change</Status> トランザクションチャートでボタンの名称を修正：<UI>プロファイルダイアグラム</UI> → <UI>ダイアグラム</UI>
+- <Status>Change</Status> トランザクションチャートでボタンの名称を修正：<UI>プロファイルダイアグラム</UI> → <UI>ダイアグラム</UI>

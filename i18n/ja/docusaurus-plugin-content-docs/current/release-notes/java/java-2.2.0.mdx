@@ -12,315 +12,315 @@ import UI from '@site/src/components/UItext';
 
 ## New Feature(新機能)
 
--   virtualアプリケーションでlogsinkデータを生成する機能を追加
+- virtualアプリケーションでlogsinkデータを生成する機能を追加
 
--   logsinkのstdoutログもtxid情報に接続できるように機能を追加
+- logsinkのstdoutログもtxid情報に接続できるように機能を追加
 
--   2秒のデータ収集の機能を追加 
+- 2秒のデータ収集の機能を追加 
 
-    ```ini title='whatap.conf'
-    fast_perf_enabled=false
-    fast_perf_interval=2000
-    fast_perf_gc_enabled=true
-    fast_perf_os_enabled=true
-    debug_fast_perf_enabled=false
+  ```ini title='whatap.conf'
+  fast_perf_enabled=false
+  fast_perf_interval=2000
+  fast_perf_gc_enabled=true
+  fast_perf_os_enabled=true
+  debug_fast_perf_enabled=false
+  ```
+
+  収集データ
+
+  - 経過時間
+  - アクティブトランザクション
+  - gc情報：gc件数、gc経過時間、old generation gc件数、old generation gc経過時間
+  - OS情報
+
+- アクティブトランザクション件数によって通知を送信する機能を追加
+
+  ```ini title='whatap.conf'
+  # アクティブトランザクション通知の設定有無
+  too_many_actx_alert_enabled=false
+
+  # アクティブトランザクション通知の無視時間(ms)
+  too_many_actx_alert_silent_time=30000
+
+  # アクティブトランザクション通知の基準件数
+  too_many_actx_alert_count=50
+
+  # アクティブトランザクション通知メッセージの表示件数
+  too_many_actx_alert_msg_url_count=5
+
+  # アクティブトランザクション通知の基準時間
+  too_many_actx_alert_over_time=30000
+  ```
+
+  - アクティブトランザクション基準件数は、`too_many_actx_alert_count >= (too_many_actx_alert_over_time / 5000)`として決定されます
+
+  - アクティブトランザクションの基準件数がそれ以上の場合は、`too_many_actx_alert_msg_url_count`のurl情報を通知メッセージに追加して通知を送信します。    
+
+- プロファイルデバッグオプション：デバッグ対象パターンを登録した場合、プロファイルとエージェントログでスタックを確認できる機能を追加
+
+  ```ini title='whatap.conf'
+  hook_method_debug_enabled=true
+  hook_method_debug_patterns=
+  ```
+
+- プラグイン利用クラスの追加
+
+  - _`{AGENT_HOME}`/plugin/`{...}`.x_ファイルで使用する`HashTable`クラスを追加しました。
+  - `whatap.agent.api.Ref.h`を使用すると`HashTable`を使用できます。
+
+    ```java title='Example'
+    Class hashTable = (Class) whatap.agent.api.Ref.h;
     ```
 
-    収集データ
+- TTA BMT専用のクラスを追加：Javaエージェントのデモンストレーションに使用可能
 
-    -   経過時間
-    -   アクティブトランザクション
-    -   gc情報：gc件数、gc経過時間、old generation gc件数、old generation gc経過時間
-    -   OS情報
+  ```java title='Java Class'
+  # map
+  bmt.m.MyMap
 
--   アクティブトランザクション件数によって通知を送信する機能を追加
+  # datasource
+  bmt.ds.MyDataSource
+  bmt.ds.MyConnection
 
-    ```ini title='whatap.conf'
-    # アクティブトランザクション通知の設定有無
-    too_many_actx_alert_enabled=false
+  # jdbc
+  bmt.jdbc.Config
+  bmt.jdbc.FakeBlob
+  bmt.jdbc.FakeClob
+  bmt.jdbc.FakeConnection
+  bmt.jdbc.FakeDatabaseMetaData
+  bmt.jdbc.FakeDriver
+  bmt.jdbc.FakeCallableStatement
+  bmt.jdbc.FakePreparedStatement
+  bmt.jdbc.FakeResultSet
+  bmt.jdbc.FakeStatement
+  bmt.jdbc.FakeSocket
+  bmt.jdbc.Lock
+  ```
 
-    # アクティブトランザクション通知の無視時間(ms)
-    too_many_actx_alert_silent_time=30000
+  ```java title='Tracing'
+  // Connection Poolの追跡
+  // ConnectionPoolASM
+  target.put("bmt/ds/MyDataSource", MyDataSource.className);
 
-    # アクティブトランザクション通知の基準件数
-    too_many_actx_alert_count=50
+  // Connection Poolの追跡
+  // DBConCountCollectorThread
+  add(new MyDataSource());
 
-    # アクティブトランザクション通知メッセージの表示件数
-    too_many_actx_alert_msg_url_count=5
+  // JDBC Connectionの追跡
+  // JDBCConnectionOpenASM
+  AsmUtil.add(reserved, "bmt/ds/MyDataSource", "getConnection()Ljava/sql/Connection;");
 
-    # アクティブトランザクション通知の基準時間
-    too_many_actx_alert_over_time=30000
-    ```
+  // JDBC Statementの追跡
+  // JDBCStatementASM
+  target.add("bmt/jdbc/FakeStatement");
 
-    -   アクティブトランザクション基準件数は、`too_many_actx_alert_count >= (too_many_actx_alert_over_time / 5000)`として決定されます
+  // JDBC PreparedStatementの追跡
+  // JDBCPreparedStatementASM 
+  target.add("bmt/jdbc/FakePreparedStatement");
 
-    -   アクティブトランザクションの基準件数がそれ以上の場合は、`too_many_actx_alert_msg_url_count`のurl情報を通知メッセージに追加して通知を送信します。    
+  // JDBC ResultSetの追跡
+  // JDBCResultSetASM
+  target.add("bmt/jdbc/FakeResultSet");
+  ```
 
--   プロファイルデバッグオプション：デバッグ対象パターンを登録した場合、プロファイルとエージェントログでスタックを確認できる機能を追加
+- エラーステップ
 
-    ```ini title='whatap.conf'
-    hook_method_debug_enabled=true
-    hook_method_debug_patterns=
-    ```
+  - プロファイルにエラーステップを追加する機能を追加
 
--   プラグイン利用クラスの追加
+  - 設定を追加してプロファイルにエラー関連情報を表示するステップを追加
 
-    -   _`{AGENT_HOME}`/plugin/`{...}`.x_ファイルで使用する`HashTable`クラスを追加しました。
-    -   `whatap.agent.api.Ref.h`を使用すると`HashTable`を使用できます。
+  ```ini title='whatap.conf'
+  profile_error_step_enabled=false
+  ```
 
-        ```java title='Example'
-        Class hashTable = (Class) whatap.agent.api.Ref.h;
-        ```
+- jmx設定を追加：任意のjmx情報を追加で表示する機能を追加
 
--   TTA BMT専用のクラスを追加：Javaエージェントのデモンストレーションに使用可能
+  ```ini title='whatap.conf'
+  perfx_tomcat_enabled=false
+  perfx_jmx_value_limit=100
+  perfx_jmx_tag_from_objectname_enabled=false
+  ```
 
-    ```java title='Java Class'
-    # map
-    bmt.m.MyMap
+  tomcat から jmx情報を収集し、メトリクス参照で test1、test2を確認するための設定は次のとおりです。
 
-    # datasource
-    bmt.ds.MyDataSource
-    bmt.ds.MyConnection
+  ```ini title='whatap.conf'
+  perfx_jmx_enabled=true
+  perfx_jmx@test1=Catalina:type=Connector,*
+  perfx_jmx@test2=java.lang:type=GarbageCollector,*
+  perfx_jmx_ignore@test2=LastGcInfo
+  # perfx_debug_enabled=true
+  # perfx_jmx_tag_from_objectname_enabled=false
+  ```
 
-    # jdbc
-    bmt.jdbc.Config
-    bmt.jdbc.FakeBlob
-    bmt.jdbc.FakeClob
-    bmt.jdbc.FakeConnection
-    bmt.jdbc.FakeDatabaseMetaData
-    bmt.jdbc.FakeDriver
-    bmt.jdbc.FakeCallableStatement
-    bmt.jdbc.FakePreparedStatement
-    bmt.jdbc.FakeResultSet
-    bmt.jdbc.FakeStatement
-    bmt.jdbc.FakeSocket
-    bmt.jdbc.Lock
-    ```
+- oshiライブラリを使用して、プロセスのproc_mem_rssデータを追跡する機能を追加
 
-    ```java title='Tracing'
-    // Connection Poolの追跡
-    // ConnectionPoolASM
-    target.put("bmt/ds/MyDataSource", MyDataSource.className);
+  ```ini title='whatap.conf'
+  oshi_proc_mem_enabled=false
+  ```
 
-    // Connection Poolの追跡
-    // DBConCountCollectorThread
-    add(new MyDataSource());
+- `org.edb.jdbc.PgCallableStatement`をjdbc statement追跡する機能を追加
 
-    // JDBC Connectionの追跡
-    // JDBCConnectionOpenASM
-    AsmUtil.add(reserved, "bmt/ds/MyDataSource", "getConnection()Ljava/sql/Connection;");
+- OracleプロシージャにSQLパラメータの追跡機能
 
-    // JDBC Statementの追跡
-    // JDBCStatementASM
-    target.add("bmt/jdbc/FakeStatement");
+  - オラクルプロシージャにSQLパラメータを追跡できる機能を追加しました。
 
-    // JDBC PreparedStatementの追跡
-    // JDBCPreparedStatementASM 
-    target.add("bmt/jdbc/FakePreparedStatement");
+  - CallableStatementでSQLパラメータを追跡できるように機能を追加しました。
 
-    // JDBC ResultSetの追跡
-    // JDBCResultSetASM
-    target.add("bmt/jdbc/FakeResultSet");
-    ```
+- Weblogicで`HttpURLConnection`のhttp呼び出しを行う場合、`weblogic.net.http.HttpURLConnection`の使用を追跡する機能を追加しました。
+  ```ini title='whatap.conf'
+  HttpURLConnection_weblogic=true
+  ```
 
--   エラーステップ
+- sigarライブラリを利用して、プロセスのネイティブメモリデータ(proc_mem_rss)を収集する機能を追加
 
-    -   プロファイルにエラーステップを追加する機能を追加
+- 既存の30秒平均で収集したtpsデータを5秒平均で収集する機能を追加
 
-    -   設定を追加してプロファイルにエラー関連情報を表示するステップを追加
+  ```ini title='whatap.conf'
+  service_metrics_spike_enabled=false
+  ```
 
-    ```ini title='whatap.conf'
-    profile_error_step_enabled=false
-    ```
+- プロファイルデータの圧縮送信機能を追加
 
--   jmx設定を追加：任意のjmx情報を追加で表示する機能を追加
+  - プロファイルデータが`profile_zip_max_buffer_size`サイズを超える場合、プロファイルデータを送信
 
-    ```ini title='whatap.conf'
-    perfx_tomcat_enabled=false
-    perfx_jmx_value_limit=100
-    perfx_jmx_tag_from_objectname_enabled=false
-    ```
+  - キューにデータが蓄積されているか、または、`profile_zip_max_wait_time`の値を超えた場合は、プロファイルデータが送信されます
 
-    tomcat から jmx情報を収集し、メトリクス参照で test1、test2を確認するための設定は次のとおりです。
+  - プロファイルデータを送信する場合、キューのプロファイルデータが`profile_zip_min_size`サイズ未満の場合を除いて、プロファイルデータを圧縮送信    
 
-    ```ini title='whatap.conf'
-    perfx_jmx_enabled=true
-    perfx_jmx@test1=Catalina:type=Connector,*
-    perfx_jmx@test2=java.lang:type=GarbageCollector,*
-    perfx_jmx_ignore@test2=LastGcInfo
-    # perfx_debug_enabled=true
-    # perfx_jmx_tag_from_objectname_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # プロファイルデータの圧縮有無
+  profile_zip_enabled=true
 
--   oshiライブラリを使用して、プロセスのproc_mem_rssデータを追跡する機能を追加
+  # プロファイルデータを持つキューのサイズ
+  # ZipProfileThread.javaが使用するRequestQueueサイズを決定
+  profile_zip_queue_size=1000
 
-    ```ini title='whatap.conf'
-    oshi_proc_mem_enabled=false
-    ```
+  # プロファイルデータを送信する待ち時間
+  # 1000msが経つとプロファイルデータを転送
+  profile_zip_max_wait_time=1000
 
--   `org.edb.jdbc.PgCallableStatement`をjdbc statement追跡する機能を追加
+  # プロファイルデータのバッファサイズ
+  # プロファイルデータが1MBを超える場合は、データを転送
+  profile_zip_max_buffer_size=1024*1024
 
--   OracleプロシージャにSQLパラメータの追跡機能
+  # プロファイルデータの圧縮有無を決定する最小サイズ
+  # プロファイルデータが100byte未満の場合は圧縮しない
+  profile_zip_min_size=100
 
-    -   オラクルプロシージャにSQLパラメータを追跡できる機能を追加しました。
+  # プロファイルデータの圧縮デバッグ有無
+  # プロファイルデータ送信に関する情報(ZipPackのstatus、recordCount、bufferサイズ、プロファイルデータキューのサイズ)をエージェントログに出力
+  debug_profile_zip_enabled=false
 
-    -   CallableStatementでSQLパラメータを追跡できるように機能を追加しました。
-
--   Weblogicで`HttpURLConnection`のhttp呼び出しを行う場合、`weblogic.net.http.HttpURLConnection`の使用を追跡する機能を追加しました。
-    ```ini title='whatap.conf'
-    HttpURLConnection_weblogic=true
-    ```
-
--   sigarライブラリを利用して、プロセスのネイティブメモリデータ(proc_mem_rss)を収集する機能を追加
-
--   既存の30秒平均で収集したtpsデータを5秒平均で収集する機能を追加
-
-    ```ini title='whatap.conf'
-    service_metrics_spike_enabled=false
-    ```
-
--   プロファイルデータの圧縮送信機能を追加
-
-    -   プロファイルデータが`profile_zip_max_buffer_size`サイズを超える場合、プロファイルデータを送信
-
-    -   キューにデータが蓄積されているか、または、`profile_zip_max_wait_time`の値を超えた場合は、プロファイルデータが送信されます
-
-    -   プロファイルデータを送信する場合、キューのプロファイルデータが`profile_zip_min_size`サイズ未満の場合を除いて、プロファイルデータを圧縮送信    
-
-    ```ini title='whatap.conf'
-    # プロファイルデータの圧縮有無
-    profile_zip_enabled=true
-
-    # プロファイルデータを持つキューのサイズ
-    # ZipProfileThread.javaが使用するRequestQueueサイズを決定
-    profile_zip_queue_size=1000
-
-    # プロファイルデータを送信する待ち時間
-    # 1000msが経つとプロファイルデータを転送
-    profile_zip_max_wait_time=1000
-
-    # プロファイルデータのバッファサイズ
-    # プロファイルデータが1MBを超える場合は、データを転送
-    profile_zip_max_buffer_size=1024*1024
-
-    # プロファイルデータの圧縮有無を決定する最小サイズ
-    # プロファイルデータが100byte未満の場合は圧縮しない
-    profile_zip_min_size=100
-
-    # プロファイルデータの圧縮デバッグ有無
-    # プロファイルデータ送信に関する情報(ZipPackのstatus、recordCount、bufferサイズ、プロファイルデータキューのサイズ)をエージェントログに出力
-    debug_profile_zip_enabled=false
-
-    # プロファイルデータの圧縮デバッグログの出力間隔
-    # プロファイルデータの圧縮デバッグオプションがオンになっている場合、5000ms間隔でプロファイルデータの転送関連情報をエージェントログに出力 
-    debug_profile_zip_interval=5000
-    ```
+  # プロファイルデータの圧縮デバッグログの出力間隔
+  # プロファイルデータの圧縮デバッグオプションがオンになっている場合、5000ms間隔でプロファイルデータの転送関連情報をエージェントログに出力 
+  debug_profile_zip_interval=5000
+  ```
 
 ## Change（アップデート）
 
--   logsinkデータ転送サイクルの`max_wait_time`のオプション名から`logsink_max_wait_time`に修正
+- logsinkデータ転送サイクルの`max_wait_time`のオプション名から`logsink_max_wait_time`に修正
 
--   プラグインで収集するCustomCounter機能を既存のCustomCounterTaskの代わりにCustomTaskLoaderに置き換えます。
+- プラグインで収集するCustomCounter機能を既存のCustomCounterTaskの代わりにCustomTaskLoaderに置き換えます。
 
-    ```ini title='whatap.conf'
-    custom_task_enabled=true
-    custom_task_jarfile={full_path}
-    ```
+  ```ini title='whatap.conf'
+  custom_task_enabled=true
+  custom_task_jarfile={full_path}
+  ```
 
--   エージェント-proxyサーバーの時間差が10秒以上の場合、ログを出力するように機能を追加
+- エージェント-proxyサーバーの時間差が10秒以上の場合、ログを出力するように機能を追加
 
--   経過時間の測定
+- 経過時間の測定
 
-    -   トランザクションとプロファイル経過時間の測定時、システム時間の代わりにJVM時間を使用するように修正
+  - トランザクションとプロファイル経過時間の測定時、システム時間の代わりにJVM時間を使用するように修正
 
-    -   経過時間を測定する場合、既存の`System.currentTimeMillis()`から`System.nanoTime()`を使用するように修正
+  - 経過時間を測定する場合、既存の`System.currentTimeMillis()`から`System.nanoTime()`を使用するように修正
 
--   エージェント-proxyサーバーに時間差がある場合、エージェントログにサーバー間の時間差を表示するように修正
+- エージェント-proxyサーバーに時間差がある場合、エージェントログにサーバー間の時間差を表示するように修正
 
-    ```bash title='Agent log'
-    # 30秒以上差がある場合 
-    "fatal warning time-reverse (時間差) ms"
+  ```bash title='Agent log'
+  # 30秒以上差がある場合 
+  "fatal warning time-reverse (時間差) ms"
 
-    # 30秒未満の差がある場合
-    "warning time-reverse (時間差) ms"
-    ```
+  # 30秒未満の差がある場合
+  "warning time-reverse (時間差) ms"
+  ```
 
--   ユーザーカウントのオプションをwclient_xx形式に修正し、古いオプション名を使用できますが、v2.2.0以降は新しいオプション名を使用することをお勧めします。
+- ユーザーカウントのオプションをwclient_xx形式に修正し、古いオプション名を使用できますが、v2.2.0以降は新しいオプション名を使用することをお勧めします。
 
-    ```ini title='whatap.conf'
-    # 交替
-    trace_user_method=IP
-    wclient_trace_type=IP
+  ```ini title='whatap.conf'
+  # 交替
+  trace_user_method=IP
+  wclient_trace_type=IP
 
-    # 交替
-    trace_user_jsession_key=JSESSIONID
-    wclient_jsession_key=JSESSIONID
+  # 交替
+  trace_user_jsession_key=JSESSIONID
+  wclient_jsession_key=JSESSIONID
 
-    # 交替
-    trace_user_header_key=token
-    wclient_header_key=token
+  # 交替
+  trace_user_header_key=token
+  wclient_header_key=token
 
-    # 交替
-    trace_user_cookie_limit=4000
-    wclient_cookie_limit=4000
+  # 交替
+  trace_user_cookie_limit=4000
+  wclient_cookie_limit=4000
 
-    # 交替
-    trace_user_cookie_domain=
-    wclient_cookie_domain=
+  # 交替
+  trace_user_cookie_domain=
+  wclient_cookie_domain=
 
-    # 交替
-    realtime_user_thinktime_max=300000
-    wclient_thinktime_max=300000
+  # 交替
+  realtime_user_thinktime_max=300000
+  wclient_thinktime_max=300000
 
-    # 交替
-    trace_user_using_ip=true
-    wclient_using_ip=true
+  # 交替
+  trace_user_using_ip=true
+  wclient_using_ip=true
 
-    # 交替
-    user_header_ticket=
-    wclient_header_ticket=
+  # 交替
+  user_header_ticket=
+  wclient_header_ticket=
 
-    # 追加
-    wclient_max_count=70000
-    ```
+  # 追加
+  wclient_max_count=70000
+  ```
 
--   ユーザー数に関するカウント設定を反映と組み込みweavingコンポーネントの再コンパイル
+- ユーザー数に関するカウント設定を反映と組み込みweavingコンポーネントの再コンパイル
 
--   CounterPackの経過時間の計算に`System.nanoTime()`を使用するよう修正
+- CounterPackの経過時間の計算に`System.nanoTime()`を使用するよう修正
 
--   ログ出力ロゴにリリースバージョンを含む
-    ```bash title='Logo'
-      _       ____  ______           
-    | |     / / /_/_  __/___ _____   ___  ___ 
-    | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
-    | |/ |/ / / / / / / /_/ / /_/ / |   / / /
-    |__/|__/_/ /_/_/  \__,_/ .___/  |_|_\/___|
-                          /_/                    
-    The Best Observability in Java
-    ```
+- ログ出力ロゴにリリースバージョンを含む
+  ```bash title='Logo'
+    _       ____  ______           
+  | |     / / /_/_  __/___ _____   ___  ___ 
+  | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
+  | |/ |/ / / / / / / /_/ / /_/ / |   / / /
+  |__/|__/_/ /_/_/  \__,_/ .___/  |_|_\/___|
+                        /_/                    
+  The Best Observability in Java
+  ```
 
--   Javaエージェントの統計収集のデフォルト値を従来の5000から10000に修正、統計データの送信時に2秒ごとにチェック
+- Javaエージェントの統計収集のデフォルト値を従来の5000から10000に修正、統計データの送信時に2秒ごとにチェック
 
-    ```ini title='whatap.conf'
-    stat_tx_max_count=10000
-    ```
+  ```ini title='whatap.conf'
+  stat_tx_max_count=10000
+  ```
 
--   性能メトリクスを収集するoshiライブラリバージョンを既存のoshi-core-5.4.1からoshi-core-6.1.6にアップデート
+- 性能メトリクスを収集するoshiライブラリバージョンを既存のoshi-core-5.4.1からoshi-core-6.1.6にアップデート
 
--   性能メトリクスを収集する`{AGENT_HOME}`のライブラリフォルダ名を変更
+- 性能メトリクスを収集する`{AGENT_HOME}`のライブラリフォルダ名を変更
 
-    -   sigarライブラリフォルダ名を変更：lib->lib3
+  - sigarライブラリフォルダ名を変更：lib->lib3
 
-    -   oshiライブラリフォルダ名を変更：lib2 -> lib4    
+  - oshiライブラリフォルダ名を変更：lib2 -> lib4    
 
 ## Fixed(バグ修正)
 
--   ジャバエージェントの組み込みプラグインのWebfluxウィービングプラグインのread-onlyであるHttpHeaders項目にマルチトランザクション関連ヘッダー(header)を追加する場合に発生するエラーを修正 
+- ジャバエージェントの組み込みプラグインのWebfluxウィービングプラグインのread-onlyであるHttpHeaders項目にマルチトランザクション関連ヘッダー(header)を追加する場合に発生するエラーを修正 
 
-    webflux-5.1、webflux-5.2、webflux-5.3バージョンにすべて適用しました。
+  webflux-5.1、webflux-5.2、webflux-5.3バージョンにすべて適用しました。
 
--   トランザクションとステップの経過時間が0未満の場合に発生するバグを修正
+- トランザクションとステップの経過時間が0未満の場合に発生するバグを修正
 
--   トランザクションとステップの経過時間が0未満の場合、経過時間が0と表示するバグを修正。
+- トランザクションとステップの経過時間が0未満の場合、経過時間が0と表示するバグを修正。
 
--   `blocking_detect_count`件数処理のバグを修正
+- `blocking_detect_count`件数処理のバグを修正

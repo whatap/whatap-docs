@@ -15,7 +15,7 @@ tags:
 
 :::note
 
--   WhaTapモニタリンサービスでは、モニタリング対象をオブジェクトまたはエージェントとして混在して使用できます。
+- WhaTapモニタリンサービスでは、モニタリング対象をオブジェクトまたはエージェントとして混在して使用できます。
 
 :::
 
@@ -36,22 +36,22 @@ WhaTapエージェントがアプリケーションサーバーを識別する�
 | dockerid | DockerコンテナID                  |
 | ips      | 全体IPの情報 (ip4、ip6)             |
 
--   **whatap.object_name** <span class='type'>String</span>
+- **whatap.object_name** <span class='type'>String</span>
 
-    デフォルト値`{type}-{ip2}-{ip3}-{process}`
+  デフォルト値`{type}-{ip2}-{ip3}-{process}`
 
-    アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。  
-
-{@include: ../common-items/_php-restart-whatap-service.mdx}
-
--   **whatap.app_name** <span class='type'>String</span>
-
-    アプリケーションを識別するためのエージェント名(ONAME)の構成要素として、`object_name`の`{type}`に対応する値です。  
+  アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}
 
--   **whatap.app_process_name** <span class='type'>String</span>
+- **whatap.app_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名 (ONAME) の構成要素です。アプリケーションプロセス名でアプリケーションサーバーのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に対応対応する値です。  
+  アプリケーションを識別するためのエージェント名(ONAME)の構成要素として、`object_name`の`{type}`に対応する値です。  
+
+{@include: ../common-items/_php-restart-whatap-service.mdx}
+
+- **whatap.app_process_name** <span class='type'>String</span>
+
+  アプリケーションを識別するためのエージェント名 (ONAME) の構成要素です。アプリケーションプロセス名でアプリケーションサーバーのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に対応対応する値です。  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}

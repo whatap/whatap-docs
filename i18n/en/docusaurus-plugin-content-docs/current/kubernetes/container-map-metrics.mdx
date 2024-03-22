@@ -61,13 +61,13 @@ With the above configuration, there are 2 containers in the pod. The resource se
 
 It is not easy to understand the resource configuration data and the current usage of various containers. Therefore, the WhaTap Kubernetes monitoring service provides the function to easily check the resource settings and current usage for a single container, selected multiple containers, or the overall deployment.
 
--   **Detailed View** screen > <Cmdname sid="metrics" className="uitext" /> - Resource usage monitoring and analysis
+- **Detailed View** screen > <Cmdname sid="metrics" className="uitext" /> - Resource usage monitoring and analysis
 
-    <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='Resource usage monitoring and analysis' />
+  <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='Resource usage monitoring and analysis' />
 
--   You can select a specific container to check its status.
+- You can select a specific container to check its status.
 
-    ![Resource usage monitoring and analysis](/img/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
+  ![Resource usage monitoring and analysis](/img/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
 
 According to the above data, the CPU is set to Request 0.2 cores (200 m) and Limit 0.4 cores (400 m). The current CPU usage is 0.02 cores (20 m) (average for 5 seconds). If you check the CPU-related trend graph on the right, you can see that the CPU usage increases intermittently, although there is enough space.
 
@@ -96,12 +96,12 @@ For example, let's assume that the container's memory request has been set to 12
 
 WhaTap provides various metrics other than CPU and memory.
 
--   <span class="uitext">Container Block I/O Read Byte</span> (IoReadBytes)
+- <span class="uitext">Container Block I/O Read Byte</span> (IoReadBytes)
 
--   <span class="uitext">Container Block I/O Write Byte</span> (IoWriteBytes)
+- <span class="uitext">Container Block I/O Write Byte</span> (IoWriteBytes)
 
--   <span class="uitext">Container Network Receive Byte</span> (NetRxBytes)
+- <span class="uitext">Container Network Receive Byte</span> (NetRxBytes)
 
--   <span class="uitext">Container Network Transmit Byte</span> (NetTxByes)
+- <span class="uitext">Container Network Transmit Byte</span> (NetTxByes)
 
 For more information about the WhaTap Kubernetes metrics, see [the following](metrics-intro).

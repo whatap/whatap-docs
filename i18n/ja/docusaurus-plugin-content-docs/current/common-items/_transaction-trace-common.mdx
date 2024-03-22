@@ -1,37 +1,37 @@
--   **trace_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクションURLを解析および正規化する機能を有効にします。
+  トランザクションURLを解析および正規化する機能を有効にします。
 
-    :::note
+  :::note
 
-    `false`に値を変更すると、パスパラメータの構文解析が無効になります。この場合、統計データの意味が弱くなるため、デバッグ目的のみで使用することをお勧めします。
+  `false`に値を変更すると、パスパラメータの構文解析が無効になります。この場合、統計データの意味が弱くなるため、デバッグ目的のみで使用することをお勧めします。
 
-    :::
+  :::
 
--   **trace_auto_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_auto_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクションURLを正規化すると、パターン値をアノテーションから抽出して自動的にパーシングする機能がアクティブになります。
+  トランザクションURLを正規化すると、パターン値をアノテーションから抽出して自動的にパーシングする機能がアクティブになります。
 
--   **trace_normalize_urls** <span class='type'>String</span>
+- **trace_normalize_urls** <span class='type'>String</span>
 
-    正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
+  正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
 
-    :::note
+  :::note
 
-    例）`/a/{v}/b`を宣言する場合は、`a/123/b` → `a/{v}/b`に置き換えます。複数登録する場合は、コンマ(,)を区切り文字として使用します。置換パターンをクリーンアップした後、補足する必要があります。
+  例）`/a/{v}/b`を宣言する場合は、`a/123/b` → `a/{v}/b`に置き換えます。複数登録する場合は、コンマ(,)を区切り文字として使用します。置換パターンをクリーンアップした後、補足する必要があります。
 
-    :::
+  :::
 
--   **web_static_content_extensions** <span class='type'>String</span>
+- **web_static_content_extensions** <span class='type'>String</span>
 
-    デフォルト値`js, htm, html, gif, png, jpg, css, swf, ico`
+  デフォルト値`js, htm, html, gif, png, jpg, css, swf, ico`
 
-    静的コンテンツであると判断する拡張子を設定します。このオプションで設定した拡張子を持つトランザクションは、トレース追跡とカウントから除外されます。
+  静的コンテンツであると判断する拡張子を設定します。このオプションで設定した拡張子を持つトランザクションは、トレース追跡とカウントから除外されます。
 
--   **trace_transaction_name_header_key** <span class='type'>String</span>
+- **trace_transaction_name_header_key** <span class='type'>String</span>
 
-    設定したHTTP header keyから抽出した値をトランザクションの名前の末尾に追加します。
+  設定したHTTP header keyから抽出した値をトランザクションの名前の末尾に追加します。

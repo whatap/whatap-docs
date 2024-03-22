@@ -7,55 +7,55 @@ displayed_sidebar: releaseSidebar
 
 ## Common
 
--   Addition of agent update: Added the `node_state` metric of MySQL and PostgreSQL.
+- Addition of agent update: Added the `node_state` metric of MySQL and PostgreSQL.
 
--   Modified the `slow_query_log` option value in _whatap.conf_ file to be case insensitive.
+- Modified the `slow_query_log` option value in _whatap.conf_ file to be case insensitive.
 
--   Added the TCP communication function of the XOS agent.
+- Added the TCP communication function of the XOS agent.
 
-    ```ini title=whatap.conf
-    use_tcp=1
-    ```
+  ```ini title=whatap.conf
+  use_tcp=1
+  ```
 
--   Added the `cpu_cores` metric and fixed the RDS CPU core error.
+- Added the `cpu_cores` metric and fixed the RDS CPU core error.
 
--   Fixed the CPU core count error.
+- Fixed the CPU core count error.
 
--   Modified to process the SQL text literal variable's `$` character, etc.
+- Modified to process the SQL text literal variable's `$` character, etc.
 
--   Added the CloudWatch `assume-role`.
+- Added the CloudWatch `assume-role`.
 
-    ```ini title=whatap.conf
-    aws_arn=''
-    ```
+  ```ini title=whatap.conf
+  aws_arn=''
+  ```
 
--   Added the autoscale assume-role function.
+- Added the autoscale assume-role function.
 
--   Added the function to collect the data for DocumentDB and CloudWatch.
+- Added the function to collect the data for DocumentDB and CloudWatch.
 
 ## PostgreSQL
 
--   Added the `slowoquery` collection function.
+- Added the `slowoquery` collection function.
 
--   Added the `replay_lag`, `replication_broken`, and `replication_count` metrics.
+- Added the `replay_lag`, `replication_broken`, and `replication_count` metrics.
 
--   Modified the version handling init to collect `session count`.
+- Modified the version handling init to collect `session count`.
 
--   Added the `max_connection` metric.
+- Added the `max_connection` metric.
 
--   Improved the lock query (available in the version 9.6 or later).
+- Improved the lock query (available in the version 9.6 or later).
 
-    ```ini title=whatap.conf
-    lock_update=true
-    ```
+  ```ini title=whatap.conf
+  lock_update=true
+  ```
 
--   Added the `uptime` metric.
+- Added the `uptime` metric.
 
--   **Aurora PostgreSQL**: Changed the `rds_instance={instance_name}` option in _whatap.conf_ to get the `instance_name` metric to `cloud_watch_instance`.
+- **Aurora PostgreSQL**: Changed the `rds_instance={instance_name}` option in _whatap.conf_ to get the `instance_name` metric to `cloud_watch_instance`.
 
-    ```ini title=whatap.conf
-    cloud_watch_instance={instance_name}
-    ```
+  ```ini title=whatap.conf
+  cloud_watch_instance={instance_name}
+  ```
 
 ## Oracle
 
@@ -63,54 +63,54 @@ Added the temp file size inquiry function to the **_Tablespace Size_**menu.
 
 ## MySQL
 
--   Aurora MySQL: Added the replication data.
+- Aurora MySQL: Added the replication data.
 
--   When collecting `active session`, added the filtering functions for each `command` and `user`.
+- When collecting `active session`, added the filtering functions for each `command` and `user`.
 
-    ```ini title=whatap.conf
-    skip_command='{command name}'
-    skip_user='{user name}'
-    ```
+  ```ini title=whatap.conf
+  skip_command='{command name}'
+  skip_user='{user name}'
+  ```
 
--   Added the `max_connection` metric.
+- Added the `max_connection` metric.
 
--   Added the option to use the RDS MySQL driver.
+- Added the option to use the RDS MySQL driver.
 
-    ```ini title=whatap.conf
-    rds_driver=true
-    ```
+  ```ini title=whatap.conf
+  rds_driver=true
+  ```
 
 ## Tibero
 
--   Added the temp file size inquiry function to the **_Tablespace Size_**menu.
+- Added the temp file size inquiry function to the **_Tablespace Size_**menu.
 
--   Added the function to use the API when collecting `session stat`.
+- Added the function to use the API when collecting `session stat`.
 
 ## CUBRID
 
--   Added the table size increase function (Xcub agent 0.9.6 or later is required).
+- Added the table size increase function (Xcub agent 0.9.6 or later is required).
 
-    ```ini title=whatap.conf
-    tables=1
-    ```
+  ```ini title=whatap.conf
+  tables=1
+  ```
 
--   Added the kill session function.
+- Added the kill session function.
 
--   Modified the table size increase functions by version.
+- Modified the table size increase functions by version.
 
--   Added the `pageSize` database parameter; added the CUBRID `tps`, `qps`, `psize`, and `executions` metrics; if the CUBRID `broker` is not broker1 or query_editor, put it in `broker=` of _whatap.conf_.
+- Added the `pageSize` database parameter; added the CUBRID `tps`, `qps`, `psize`, and `executions` metrics; if the CUBRID `broker` is not broker1 or query_editor, put it in `broker=` of _whatap.conf_.
 
-    ```ini title=whatap.conf
-    broker=broker1,broker2,query_editor
-    ```
+  ```ini title=whatap.conf
+  broker=broker1,broker2,query_editor
+  ```
 
--   Fixed the `pagesize` database parameter error.
+- Fixed the `pagesize` database parameter error.
 
--   Modified the table size increase log.
+- Modified the table size increase log.
 
--   Fixed the `tps` and `qps` metrics reversed.
+- Fixed the `tps` and `qps` metrics reversed.
 
--   Added the `broker_count` metric.
+- Added the `broker_count` metric.
 
 ## Redis
 

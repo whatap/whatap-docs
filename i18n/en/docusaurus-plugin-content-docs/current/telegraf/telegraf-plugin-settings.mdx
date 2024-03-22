@@ -25,11 +25,11 @@ A config file containing the WhaTap plugin can be created as follows:
 
 In [Home screen](https://service.whatap.io/), select a project and then set the project data. You can check it in the agent installation guide of the project to connect.
 
--   **Project Access Key**: Project access key to identify the project
+- **Project Access Key**: Project access key to identify the project
 
--   **Project Code**: Numeric code to identify the project
+- **Project Code**: Numeric code to identify the project
 
--   **Collection Server Info** (IP, Port): IP and port of the WhaTap collection server that delivers the collected data
+- **Collection Server Info** (IP, Port): IP and port of the WhaTap collection server that delivers the collected data
 
 ### config setting (toml)
 
@@ -54,13 +54,13 @@ servers = ["tcp://1.2.3.4:6600", "tcp://5.6.7.8:6600"]
 #   # timeout = "60s"
 ```
 
--   `[[outputs.whatap]]` Delete the comment (#).
+- `[[outputs.whatap]]` Delete the comment (#).
 
--   Delete the comment (#) of `license`. Enter the access key of the project. It is a character type.
+- Delete the comment (#) of `license`. Enter the access key of the project. It is a character type.
 
--   Delete the comment (#) of `pcode`. Enter the project code. It is numeric.
+- Delete the comment (#) of `pcode`. Enter the project code. It is numeric.
 
--   Delete the comment (#) of `servers`. Set the collection server data (IP, port). The protocol supports only TCP. Register as "tcp://ip:port" in text format. Register in array format. Separate with comma (,) and then register values in array format.
+- Delete the comment (#) of `servers`. Set the collection server data (IP, port). The protocol supports only TCP. Register as "tcp://ip:port" in text format. Register in array format. Separate with comma (,) and then register values in array format.
 
 :::caution
 

@@ -7,52 +7,52 @@ displayed_sidebar: releaseSidebar
 
 #### May 31, 2023
 
--   <Status>New</Status> Added the following agent setting options.
+- <Status>New</Status> Added the following agent setting options.
 
-    -   **transaction_status_error_enable** <span class='type'>Boolean</span>
+  - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-        Default `true`
+    Default `true`
 
-        If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
+    If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
 
-    -   **status_ignore** <span class='type'>String</span>
+  - **status_ignore** <span class='type'>String</span>
 
-        Set the `STATUS_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+    Set the `STATUS_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
 
-    -   **status_ignore_set** <span class='type'>String</span>
+  - **status_ignore_set** <span class='type'>String</span>
 
-        `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+    `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-    -   **httpc_status_error_enable** <span class='type'>Boolean</span>
+  - **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-        Default `true`
+    Default `true`
 
-        Determine whether or not to return `HTTPC_ERROR`.
+    Determine whether or not to return `HTTPC_ERROR`.
 
-    -   **httpc_status_ignore** <span class='type'>String</span>
+  - **httpc_status_ignore** <span class='type'>String</span>
 
-        Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+    Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
 
-    -   **httpc_status_ignore_set** <span class='type'>String</span>
+  - **httpc_status_ignore_set** <span class='type'>String</span>
 
-        `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+    `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-        Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+    Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
 
-    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+  - **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.   
+    To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.   
 
-        Set the security key to 6 digits in the WAS server's _`${WHATAP_AGENT_HOME}`/paramkey.txt_ file. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+    Set the security key to 6 digits in the WAS server's _`${WHATAP_AGENT_HOME}`/paramkey.txt_ file. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
 
-    -   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+  - **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-        It is used to define the prefix of URL to record HTTP parameters in the trace details.
+    It is used to define the prefix of URL to record HTTP parameters in the trace details.
 
-    -   **profile_http_parameter_keys** <span class='type'>String</span>
+  - **profile_http_parameter_keys** <span class='type'>String</span>
 
-        Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
+    Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
 
--   <Status>Fixed</Status> Modified the error display missing parts.
+- <Status>Fixed</Status> Modified the error display missing parts.

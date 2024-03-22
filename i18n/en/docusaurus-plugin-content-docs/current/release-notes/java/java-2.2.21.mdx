@@ -7,10 +7,10 @@ pagination_next: release-notes/java/java-2_2_20
 
 November 2, 2023
 
--   <Status>Changed</Status> When tracing kafka in the spring-boot, modified the transaction display from <code>kafka:</code> to <code>[kafka]</code>.
+- <Status>Changed</Status> When tracing kafka in the spring-boot, modified the transaction display from <code>kafka:</code> to <code>[kafka]</code>.
 
--   <Status>Fixed</Status> When using the reactor in spring-boot-2.5 and using <code>Mono.just().block()</code>, prevented the <code>block()</code> error from occurring due to the tracing code.
+- <Status>Fixed</Status> When using the reactor in spring-boot-2.5 and using <code>Mono.just().block()</code>, prevented the <code>block()</code> error from occurring due to the tracing code.
 
-    ```ini title='whatap.conf'
-    weaving=spring-boot-2.5
-    ```
+  ```ini title='whatap.conf'
+  weaving=spring-boot-2.5
+  ```

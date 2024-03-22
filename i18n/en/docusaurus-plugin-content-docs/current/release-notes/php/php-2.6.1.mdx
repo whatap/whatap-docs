@@ -10,20 +10,20 @@ import UI from '@site/src/components/UItext';
 
 #### 2023-02-15
 
--   <Status>Change</Status> Modified to collect TPS data from <b>30 seconds' average</b> to <b>5 seconds' average</b>.
+- <Status>Change</Status> Modified to collect TPS data from <b>30 seconds' average</b> to <b>5 seconds' average</b>.
 
-    ```ini title='whatap.conf'
+  ```ini title='whatap.conf'
 
-    service_metrics_spike_enabled=false // If false, the data is collected every 5 seconds average.
+  service_metrics_spike_enabled=false // If false, the data is collected every 5 seconds average.
 
-    ```
+  ```
 
--   <Status>Fixed</Status> Fixed the error where sometimes normal transactions are collected as the transactions delayed by more than 5 minutes.
+- <Status>Fixed</Status> Fixed the error where sometimes normal transactions are collected as the transactions delayed by more than 5 minutes.
 
-    If the order of the start and end events of a transaction has been reversed via UDP communication, and the transaction end event has been processed first, `Lost connection` appears in the internal profile information after 5 minutes. Once the end event has been delivered first, it is supplemented to wait for the start event for 30 seconds.
+  If the order of the start and end events of a transaction has been reversed via UDP communication, and the transaction end event has been processed first, `Lost connection` appears in the internal profile information after 5 minutes. Once the end event has been delivered first, it is supplemented to wait for the start event for 30 seconds.
 
-    The cause of the`Lost connection` in the internal profile information is as follows. It stops collection if it failed to collect the end event for 5 minutes after a transaction start event.
+  The cause of the`Lost connection` in the internal profile information is as follows. It stops collection if it failed to collect the end event for 5 minutes after a transaction start event.
 
-    -   In case the actual execution time of a transaction is more than 5 minutes.
-    -   In case the collection of transaction end event failed because Apache or php-fpm restarted or the shutdown killed the process immediately.
-    -   In case Apache or php-fpm has been forcibly terminated due to an unexpected error (segmentaion or sigbus can be confirmed by the error log content).
+  - In case the actual execution time of a transaction is more than 5 minutes.
+  - In case the collection of transaction end event failed because Apache or php-fpm restarted or the shutdown killed the process immediately.
+  - In case Apache or php-fpm has been forcibly terminated due to an unexpected error (segmentaion or sigbus can be confirmed by the error log content).

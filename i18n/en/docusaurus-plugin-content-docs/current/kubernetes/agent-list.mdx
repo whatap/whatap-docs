@@ -1,0 +1,75 @@
+---
+id: agent-list
+title: Kubernetes Agent List
+description: It provides the list of Kubernetes agents.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Management
+  - Agent List
+toc_max_heading_level: 2
+---
+
+Home > Select Cluster Project > **_Management_** > **_Kubernetes Agent List_** 
+
+You can go to **_Kubernetes Agent List_** under **_Management_** for the cluster project (<code class='my'>CP</code>). 
+
+<ImgLang img='k8s-agent-list.png' desc='Kubernetes agent list' />
+
+- You can see the installation progress of the Kubernetes agent. If some agents are not installed (**_UNINSTALLED_**) or inactive (**_INACTIVE_**), data collection may be distorted.
+
+  > e.g. **_UNINSTALLED_**, **_ACITVE_**, **_INACTIVE_** in the **_State_** column
+
+- You can check the **_CPU Limit_** assigned to the master agent and the installed **_node agent count_**. 
+
+  > For example, if the **_node agent count_** is 50 or more, it is recommended to set the master agent's **_CPU Limit_** to 500 millicores or more.
+
+- You can see the CPU and memory allocated to the node where the agent has been installed. 
+
+  > e.g. **_CapacityCpu_**, **_CapacityMemory_** under the **_Node Info_** column 
+
+- You can see the nodes on which the agents are not installed. 
+
+- You can see the key data of the agent. 
+
+- You can find the guide to the node agent version.
+
+  > e.g. Mismatch notification upon version discrepancy between nodes
+
+:::note 
+
+**Master agent's resource allocation**
+
+Because the amount of data collected and processed by the WhaTap agent differs depending on the size of the user's Kubernetes environment (or node count), sufficient resource allocation to the master agent is required. For example, if **_node agent count_** is so great, it is recommended to increase the master agent's **_CPU limit_**.
+
+:::
+
+#### Refresh
+
+If the ![Refresh icon](/img/ic-refresh2.svg) **_Refresh_** icon is selected at the top, you can update the data based on the current time.
+
+#### Select Column
+
+When using the **_Select column_** option, you can select a desired agent to view the agent list. 
+
+- The selected column list is kept even if you re-enter the menu.
+
+- If you select **_Reset_**, the predefined default key metric columns are selected. In this case, the column selection history is deleted.
+
+- After selecting a column, you can click **_Apply_** at the lower right to apply the selected values.
+
+#### Download
+
+If the ![CSV download icon](/img/ico-csv.svg) **_Download_** icon is selected, you can download the data in the CSV format by setting the **_range_** and **_display option_**. 
+
+#### Display Detail
+
+- If the ![Magnifying glass icon](/img/ic-search.svg) **_Display Detail_** icon is selected under the **_Name_** column of **_Agent Info_**, the **_Agent Log_** of the agent appears.
+
+- If the ![Detail icon](/img/ic-pageview.svg) **_Node Details_** icon is selected under the **_OnodeName_** column, the detail page of the node appears. 
+
+  :::note 
+
+  For more information about **_Node details_**, see [the following](https://docs.whatap.io/kubernetes/resource-node-list#nodedetails).
+
+  ::: 

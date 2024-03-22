@@ -89,29 +89,29 @@ http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
--   `trace.Func()`, `trace.HandlerFunc()`
+- `trace.Func()`, `trace.HandlerFunc()`
 
-    -   Function that wraps Handle and HandFunc of the `net/http`
+  - Function that wraps Handle and HandFunc of the `net/http`
 
-    -   Proceed with `trace.StartWithRequest` and `trace.End` in the same way.
+  - Proceed with `trace.StartWithRequest` and `trace.End` in the same way.
 
-    -   The name of the web transaction is set to RequestURI.
+  - The name of the web transaction is set to RequestURI.
 
--   `trace.Step()`
+- `trace.Step()`
 
-    It provides the function to output the strings delivered by the user to the profile data.
+  It provides the function to output the strings delivered by the user to the profile data.
 
-    ```go title='Go'
-    http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
-    ...
-    }))
-    ```
+  ```go title='Go'
+  http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
+      ...
+  }))
+  ```
 
-    ```go title='Go'
-    http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    ...
-    }))
-    ```
+  ```go title='Go'
+  http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+      ...
+  }))
+  ```
 
 ### General transaction trace
 

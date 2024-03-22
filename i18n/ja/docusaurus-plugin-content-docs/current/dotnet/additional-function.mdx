@@ -14,30 +14,30 @@ tags:
 
 トレース履歴にユーザーが直接ログメッセージを残すことができる機能です。 ログを残すには、次のステップを進めてください。
 
--   ログを残そうとするプロジェクトにCSファイルを追加し、コードを作成してください。
+- ログを残そうとするプロジェクトにCSファイルを追加し、コードを作成してください。
 
-    ```csharp
-    using System;
+  ```csharp
+  using System;
 
-    namespace Whatap.UserLog
-    {
-        public static class Tracer
-        {
-            public static void Trace(string message)
-            {
-                // コードを作成しなくても大丈夫です。
-                // このメソッド内のコードはWhatapエージェントによって無視されるため、実行されません。
-            }
-        }
-    }
-    ```
+  namespace Whatap.UserLog
+  {
+      public static class Tracer
+      {
+          public static void Trace(string message)
+          {
+              // コードを作成しなくても大丈夫です。
+              // このメソッド内のコードはWhatapエージェントによって無視されるため、実行されません。
+          }
+      }
+  }
+  ```
 
--   ログを残したい位置から、`Tracer.Trace("ログ文字列")`の形でコードを追加してください。
+- ログを残したい位置から、`Tracer.Trace("ログ文字列")`の形でコードを追加してください。
 
-    ```csharp
-    public string UserFunction(int value)
-    {
-        Tracer.Trace($"started... {value}");
-        ...
-    }
-    ```
+  ```csharp
+  public string UserFunction(int value)
+  {
+      Tracer.Trace($"started... {value}");
+      ...
+  }
+  ```

@@ -48,7 +48,7 @@ function colsToJson(data){
         if (!value || value.length < 1) {
           rd[headerName][row[j]] = row[defaultCol];
         } else {
-          rd[headerName][lang] = value;
+          rd[headerName][lang] = value.replace(/\u2028/gm, '');
         }
       }
     }
@@ -196,6 +196,18 @@ function colsToJson(data){
     "ko": "액티브 트랜잭션 이퀄라이저"
   }
 
+  rd["AA017"] = {
+    "en": "Process Memory",
+    "ja": "プロセスメモリ",
+    "ko": "프로세스 메모리"
+  }
+
+  rd["AA018"] = {
+    "en": "Agent Active Transaction",
+    "ja": "エージェントアクティブTX",
+    "ko": "에이전트 액티브 트랜잭션"
+  }
+
   rd["yaxis"] = {
     "en": "Y Auto",
     "ja": "Y軸自動",
@@ -221,9 +233,9 @@ function colsToJson(data){
   }
 
   rd["agentsConfiguration"] = {
-    "en": "Instance Performance Analysis",
-    "ja": "インスタンス性能",
-    "ko": "인스턴스 성능 분석"
+    "en": "Instance Performance Management",
+    "ja": "インスタンス性能管理",
+    "ko": "인스턴스 성능 관리"
   }
 
   rd["whatapEventList"] = {
@@ -298,6 +310,61 @@ function colsToJson(data){
     "ko": "통합 Flex 보드"
   }
 
+  rd["workload"] = {
+    "en": "Workload",
+    "ja": "ワークロード",
+    "ko": "워크로드"
+  }
+
+  rd["kubeAppHitmap"] = {
+    "en": "Application Hitmap",
+    "ja": "アプリケーションヒットマップ",
+    "ko": "애플리케이션 히트맵"
+  }
+
+  rd["oomContainer"] = {
+    "en": "Out Of Memory Killed Container",
+    "ja": "OOM Killedコンテナ",
+    "ko": "Out Of Memory Killed 컨테이너"
+  }
+
+  rd["kubeAppStack"] = {
+    "en": "Application Stack",
+    "ja": "アプリケーションスタック",
+    "ko": "애플리케이션 스택"
+  }
+
+  rd["containerizedAppList"] = {
+    "en": "Container Application List",
+    "ja": "コンテナアプリケーションリスト",
+    "ko": "컨테이너 애플리케이션 목록"
+  }
+
+  rd["perfTrend"] = {
+    "en": "Performance Trend",
+    "ja": "性能推移",
+    "ko": "성능 추이"
+  }
+
+  rd["podInitPerf"] = {
+    "en": "Pod Startup Analysis",
+    "ja": "Pod起動分析",
+    "ko": "Pod 시작 분석"
+  }
+  
+  rd["appDashboard"] = {
+    "en": "Application Dashboard",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션 대시보드"
+  }
+
+  rd["daily_app_stat"].en = "Daily APP. Status";
+  rd["daily_app_stat"].ja = "日別APP現況"
+
+  rd["multi_server_transaction_trace"].en = "Multiple Transaction Trace";
+
+  rd["tx_search"].en = "Transaction Search"
+  
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
@@ -306,6 +373,9 @@ function colsToJson(data){
 
   rd["tag_count_anomaly_detection"].ja = "メトリックス異常検出";
   rd["tag_count_anomaly_detection"].en = "Metrics Anomaly Detection";
+
+  rd["Container"].ja = "コンテナー";
+  rd["metrics"].ja = "メトリックス";
 
   return rd;
 }

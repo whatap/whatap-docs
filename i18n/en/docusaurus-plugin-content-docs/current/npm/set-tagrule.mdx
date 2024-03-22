@@ -19,11 +19,11 @@ The result of the **tagRule** option appears in **_Dashboard_** > **_Network Top
 
 ![Topology Chart](/img/npm-tagrule-sample.png)
 
--   It is the ![number 1](/img/number-01.png) node with the **tagRule** option applied. It simplifies long and complex process names to display on nodes.
+- It is the ![number 1](/img/number-01.png) node with the **tagRule** option applied. It simplifies long and complex process names to display on nodes.
 
--   It is the ![number 2](/img/number-02.png) node to which the **tagRule** option is not applied. Because it is hard to identify the process, be sure to apply the **tagRule** option to simplify the process name, such as ![number 1](/img/number-01.png) node.
+- It is the ![number 2](/img/number-02.png) node to which the **tagRule** option is not applied. Because it is hard to identify the process, be sure to apply the **tagRule** option to simplify the process name, such as ![number 1](/img/number-01.png) node.
 
--   The ![number 3](/img/number-03.png) node cannot acquire its host and process data. For more information, see [the following](#untagged).
+- The ![number 3](/img/number-03.png) node cannot acquire its host and process data. For more information, see [the following](#untagged).
 
 ### Simplifying the process name
 
@@ -45,9 +45,9 @@ processRegEx:
 
 The `processRegex` option extracts names via the following rules.
 
--   **Java** is the executable JAR file name or method name.
+- **Java** is the executable JAR file name or method name.
 
--   **Python** is the name of the executable script.
+- **Python** is the name of the executable script.
 
 However, if the process name is long enough even after extraction, it can be shortened through the option. It can be input in the form of regular expression. If there are multiple rules, the longest matched string is selected.
 
@@ -130,65 +130,65 @@ The `appName` option expresses the topology or chart in a form that is easy to u
 
 Let's assume the case in which the network configuration of proxy → msa_process → msa_process2 → db is divided into three purposes: **operation stage**, **development stage**, and **testing stage**. 
 
--   In case of visualization with the `processType` option
+- In case of visualization with the `processType` option
 
-    ```mermaid
-    flowchart LR
-      A[Proxy] --> B(msa_process1);
-      B --> C(msa_process2);
-      C --> D(DB);
-    ```
+  ```mermaid
+  flowchart LR
+    A[Proxy] --> B(msa_process1);
+    B --> C(msa_process2);
+    C --> D(DB);
+  ```
 
--   In case the processes with the same name are divided into **operation stage**, **development stage**, and **testing stage** with the `appName` option
+- In case the processes with the same name are divided into **operation stage**, **development stage**, and **testing stage** with the `appName` option
 
-    ```yaml title='tagRule.yaml'
-    appName:
-        prod_proxy: # Operation stage
-            - host_tag: prod_proxy
-              process_type: proxy
-        prod_msa1: # Operation stage
-            - host_tag: prod_msa
-              process_type: msa_process1
-        prod_msa2: # Operation stage
-            - host_tag: prod_msa
-              process_type: msa_process2
-        dev_proxy: # Development stage
-            - host_tag: dev_proxy
-              process_type: proxy
-        dev_msa: # Development stage
-            - host_tag: dev_msa
-              process_type: msa_process1
-            - host_tag: dev_msa
-              process_type: msa_process2
-        test: # Testing stage
-            - host_tag: test
-        db:
-            - process_type: mysql
-    ```
+  ```yaml title='tagRule.yaml'
+  appName:
+      prod_proxy: # Operation stage
+          - host_tag: prod_proxy
+            process_type: proxy
+      prod_msa1: # Operation stage
+          - host_tag: prod_msa
+            process_type: msa_process1
+      prod_msa2: # Operation stage
+          - host_tag: prod_msa
+            process_type: msa_process2
+      dev_proxy: # Development stage
+          - host_tag: dev_proxy
+            process_type: proxy
+      dev_msa: # Development stage
+          - host_tag: dev_msa
+            process_type: msa_process1
+          - host_tag: dev_msa
+            process_type: msa_process2
+      test: # Testing stage
+          - host_tag: test
+      db:
+          - process_type: mysql
+  ```
 
-    ```mermaid
-    flowchart LR
-      A(prod_proxy) --> B(prod_msa1);
-      B[prod_msa1] --> C(prod_msa2);
-      C[prod_msa2] --> D(DB);
-      E[dev_proxy] --> F(dev_msa);
-      F[dev_msa] --> D(DB);
-      G[test] --> D(DB);
-    ```
+  ```mermaid
+  flowchart LR
+    A(prod_proxy) --> B(prod_msa1);
+    B[prod_msa1] --> C(prod_msa2);
+    C[prod_msa2] --> D(DB);
+    E[dev_proxy] --> F(dev_msa);
+    F[dev_msa] --> D(DB);
+    G[test] --> D(DB);
+  ```
 
 :::note
 
--   The keys available by `appName` are `host_tag`, `process_type`, `ip`, and `port`.
+- The keys available by `appName` are `host_tag`, `process_type`, `ip`, and `port`.
 
--   The keys that have not been entered are applied as wild cards.
+- The keys that have not been entered are applied as wild cards.
 
 :::
 
 If the `appName` option is not met, the field or value specified in the `appNameDefault` option is applied.
 
--   In `appNameDefault`, enter the key to be used by default.
+- In `appNameDefault`, enter the key to be used by default.
 
--   If you enter any of `host_tag` and `process_type`, the field data is automatically assigned to `appName`. If you enter a string other than that, it is fixed to the value.
+- If you enter any of `host_tag` and `process_type`, the field data is automatically assigned to `appName`. If you enter a string other than that, it is fixed to the value.
 
 ```yaml title='tagRule.yaml'
 appNameDefault: host_tag # host_tag, process_type, custom string

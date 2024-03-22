@@ -1,45 +1,45 @@
--   **license** <span class='type'>String</span>
+- **license** <span class='type'>String</span>
 
-    エージェントのインストール時にサーバーから付与されたプロジェクトアクセスキーを設定します。プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。
+  エージェントのインストール時にサーバーから付与されたプロジェクトアクセスキーを設定します。プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。
 
--   **whatap.server.host** <span class='type'>String</span>
+- **whatap.server.host** <span class='type'>String</span>
 
-    デフォルト値`127.0.0.1,127.0.1`
+  デフォルト値`127.0.0.1,127.0.1`
 
-    エージェントが収集したデータを送信するWhaTap収集サーバーのIPアドレスを設定します。収集サーバーの冗長化で2つ以上のIPを所有する場合は、コンマ(,)を区切り文字として使用します。設定したIPアドレスには、収集サーバーproxyデーモンがリスニング状態でサービスされる必要があります。
+  エージェントが収集したデータを送信するWhaTap収集サーバーのIPアドレスを設定します。収集サーバーの冗長化で2つ以上のIPを所有する場合は、コンマ(,)を区切り文字として使用します。設定したIPアドレスには、収集サーバーproxyデーモンがリスニング状態でサービスされる必要があります。
 
--   **whatap.server.port** <span class='type'>String</span>
+- **whatap.server.port** <span class='type'>String</span>
 
-    デフォルト値`6600`
+  デフォルト値`6600`
 
-    収集サーバーのポート(port)を設定します。ポートは1つのみ設定ができるので、`whatap_server_host`に設定した収集サーバは同一ポートを使用する必要があります。
+  収集サーバーのポート(port)を設定します。ポートは1つのみ設定ができるので、`whatap_server_host`に設定した収集サーバは同一ポートを使用する必要があります。
 
--   **dbms** <span class='type'>String</span>
+- **dbms** <span class='type'>String</span>
 
-    <p><CurProd/></p>
+  <p><CurProd/></p>
 
-    :::caution
+  :::caution
 
-    別のオプション値を入力すると、モニティリングのデータ収集が正常に動作しない場合があります。
+  別のオプション値を入力すると、モニティリングのデータ収集が正常に動作しない場合があります。
 
-    :::
+  :::
 
 <InDoc product='cubrid'>
 
--   **db** <span class='type'>String</span>
+- **db** <span class='type'>String</span>
 
-    モニタリングするDB名を設定してください。
+  モニタリングするDB名を設定してください。
 
 </InDoc>
 
--   **db_ip** <span class='type'>String</span>
+- **db_ip** <span class='type'>String</span>
 
-    モニタリングするデータベースサーバーのIPアドレスを設定します。
+  モニタリングするデータベースサーバーのIPアドレスを設定します。
 
 <Xclude product='cubrid'>
 
--   **db_port** <span class='type'>String</span>
+- **db_port** <span class='type'>String</span>
 
-    データベースが通信に使用するポート番号を設定します。
+  データベースが通信に使用するポート番号を設定します。
 
 </Xclude>

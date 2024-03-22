@@ -1,0 +1,262 @@
+---
+id: kube-apiserver-dashboard
+title: kube-apiserver Dashboard
+description: It provides the guide to the kube-apiserver dashboard.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - kube-apiserver
+  - Control Plane
+toc_max_heading_level: 2
+---
+
+Home > Select Cluster Project > **_Cluster_** > **_kube-apiserver Dashboard_**
+
+:::note
+
+**Requirements**
+
+- To use the **_kube-apiserver dashboard_** menu, the **read role** for the Kubernetes cluster project is required.
+
+- The WhaTap Kubernetes agent 1.5.6 or later is required.
+
+:::
+
+The kube-apiserver is a component that handles the requests inside and outside the **Control Plane**. After collecting the status and performance metric of kube-apiserver through the **_kube-apiserver dashboard_** menu, you can easily monitor the availability and performance of the cluster by tracing the kube-apiserver's response time, throughput, request failure, and such.
+
+## Basic screen guide
+
+<ImgLang img='k8s-kube-apiserver.png' desc='kube-apiserver dashboard'/>
+
+The **_kube-apiserver dashboard_** menu reflects kube-apiserver's key metrics for the last one hour at an interval of 1 minute. You can see the following metrics. For more information about metrics, see the [Metric guide](#kube-apiserever-metric) below.
+
+- To monitor the cluster's load and usage, the status and trends for request counts by method, resource, and response code. 
+
+- The number of API requests being processed is provided to help you understand the cluster load. 
+
+- It provides the number of created OS threads and current goroutines. 
+
+## Enabling the kube-apiserver monitoring
+
+When installing the WhaTap Kubernetes agent, modify the _yaml_ file downloaded according to the following instructions to enable the kube-apiserver monitoring. 
+
+1. Add the agent container specifications for kube-apiserver monitoring under the spec of the `whatap-master-agent` deployment.
+
+```yaml
+containers:
+  - name: whatap-control-plane-helper
+    image: whatap/kube_mon
+    imagePullPolicy: Always
+    ports:
+      - containerPort: 9496
+    command: ["/data/agent/master/whatap_control_plane_helper"]
+    args: ["-collect_control_plane_monitoring_enabled=true"]
+```
+
+  See the following example: 
+
+```yaml {17-23}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatap-master-agent
+  namespace: whatap-monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: whatap-master-agent
+  template:
+    metadata:
+      labels:
+        name: whatap-master-agent
+    spec:
+      containers:
+        - name: whatap-control-plane-helper
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9496
+          command: ["/data/agent/master/whatap_control_plane_helper"]
+          args: ["-collect_control_plane_monitoring_enabled=true"]
+        - name: whatap-master-agent
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: 300Mi
+              cpu: 100m
+            limits:
+              memory: 350Mi
+              cpu: 200m
+          ports:
+            - containerPort: 6600
+          command: ['/bin/entrypoint.sh']
+          env:
+            - name: WHATAP_LICENSE
+              value: "xxxxxxxx-12345xxxxxx-x00e000000xxx8"
+            - name: WHATAP_HOST
+              value: "13.124.11.223/13.209.172.35"
+            - name: WHATAP_PORT
+              value: "6600"
+            - name: WHATP_MEM_LIMIT
+              valueFrom:
+                resourceFieldRef:
+                  containerName: whatap-master-agent
+                  resource: limits.memory
+          volumeMounts:
+            - name: start-script-volume
+              mountPath: /bin/entrypoint.sh
+              readOnly: true
+              subPath: entrypoint.sh
+            - mountPath: /whatap_conf
+              name: whatap-config-volume
+      volumes:
+        - name: start-script-volume
+          configMap:
+            defaultMode: 0700
+            name: master-start-script
+        - name: whatap-config-volume
+          emptyDir: {}
+      serviceAccount: whatap
+```
+
+1. Add the following to the env settings in the `whatap-master-agent` container specifications of the `whatap-master-agent` deployment. 
+
+```yaml
+env:
+  - name: collect_control_plane_monitoring_enabled
+    value: "true"
+```
+
+  See the following example: 
+
+```yaml {38-39}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatap-master-agent
+  namespace: whatap-monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: whatap-master-agent
+  template:
+    metadata:
+      labels:
+        name: whatap-master-agent
+    spec:
+      containers:
+        - name: whatap-control-plane-helper
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9496
+          command: ["/data/agent/master/whatap_control_plane_helper"]
+          args: ["-collect_control_plane_monitoring_enabled=true"]
+        - name: whatap-master-agent
+          image: whatap/kube_mon
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: 300Mi
+              cpu: 100m
+            limits:
+              memory: 350Mi
+              cpu: 200m
+          ports:
+            - containerPort: 6600
+          command: ['/bin/entrypoint.sh']
+          env:
+            - name: collect_control_plane_monitoring_enabled
+              value: "true"
+            - name: WHATAP_LICENSE
+              value: "xxxxxxxx-12345xxxxxx-x00e000000xxx8"
+            - name: WHATAP_HOST
+              value: "13.124.11.223/13.209.172.35"
+            - name: WHATAP_PORT
+              value: "6600"
+            - name: WHATP_MEM_LIMIT
+              valueFrom:
+                resourceFieldRef:
+                  containerName: whatap-master-agent
+                  resource: limits.memory
+          volumeMounts:
+            - name: start-script-volume
+              mountPath: /bin/entrypoint.sh
+              readOnly: true
+              subPath: entrypoint.sh
+            - mountPath: /whatap_conf
+              name: whatap-config-volume
+      volumes:
+        - name: start-script-volume
+          configMap:
+            defaultMode: 0700
+            name: master-start-script
+        - name: whatap-config-volume
+          emptyDir: {}
+      serviceAccount: whatap
+```
+
+1. Add the following roles to the `whatap` ClusterRole to collect the control plane monitoring performance metrics. 
+
+```yaml
+rules:
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+```
+
+  See the following example: 
+
+```yaml {18-19}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "true"
+  name: whatap
+  namespace: whatap-monitoring
+rules:
+  - apiGroups: ["*"]
+    resources: ["namespaces", "pods", "pods/log", "configmaps","services", "endpoints","daemonsets","ingresses","deployments","nodes","persistentvolumes","persistentvolumeclaims", "events", "replicasets", "roles", "rolebindings", "clusterroles", "clusterrolebindings", "jobs", "cronjobs", "statefulsets", "serviceaccounts", "configmaps", "storageclasses", "horizontalpodautoscalers" ]
+    verbs: ["get","list","watch"]
+  - apiGroups: [""]
+    resources: ["pods/exec"]
+    verbs: ["create"]
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["*"]
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+---
+```
+
+:::note 
+
+You can also enable the kube-apiserver monitoring via the `kubectl apply` or `kubectl edit` command. 
+
+:::
+
+## kube-apiserver metric {#kube-apiserever-metric}
+
+| Classification                         | Metric                                                                           | Description                                                                                                                                              |
+| -------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| API GET request                        | GET requests per minute                                                          | Number of GET requests per minute of kube-apiserver                                                                                                      |
+| ^                                      | Trend of GET request counts per second                                           | Trend of GET request counts per second of kube-apiserver                                                                                                 |
+| ^                                      | Trend of GET request counts per minute for each resource and subresource         | Trend of the GET request counts per minute by resource and subresource incoming to kube-apiserver                                                        |
+| API POST request                       | POST requests per minute                                                         | Number of POST requests per minute of kube-apiserver                                                                                                     |
+| ^                                      | Trend of POST request counts per second                                          | Trend of POST request counts per second of kube-apiserver                                                                                                |
+| ^                                      | Trend of POST request counts per minute for each resource and subresource        | Trend of the POST request counts per minute by resource and subresource incoming to kube-apiserver                                                       |
+| Requests by API response code          | [ 2xx ] Request count per minute                                                 | The number of requests per minute with the response codes between 200 and 300 among kube-apiserver requests.                                             |
+| ^                                      | [ 2xx ] Trend of request counts per minute for each response code                | Response code-based request counts per minute with the response codes between 200 and 300 among kube-apiserver requests.                                 |
+| ^                                      | [ 2xx ] Trend of request counts per minute for each resource and subresource     | Trend of request counts per minute grouped by resource and subresource with the response codes between 200 and 300 among kube-apiserver requests.        |
+| ^                                      | [ 3xx ] Request count per minute                                                 | The number of requests per minute with the response codes between 300 and 400 among kube-apiserver requests.                                             |
+| ^                                      | [ 3xx ] Trend of request counts per minute for each response code                | Response code-based request counts per minute with the response codes between 300 and 400 among kube-apiserver requests.                                 |
+| ^                                      | [ 3xx ] Trend of request counts per minute for each resource and subresource     | Trend of request counts per minute grouped by resource and subresource with the response codes between 300 and 400 among kube-apiserver requests.        |
+| ^                                      | [ 400~ ] Request count per minute                                                | The number of requests per minute with the response codes above 400 among kube-apiserver requests.                                                       |
+| ^                                      | [ 400~ ] Trend of request counts per minute for each response code               | Response code-based request counts per minute with the response codes below 400 among kube-apiserver requests.                                           |
+| ^                                      | [ 400~ ] Trend of request counts per minute for each resource and subresource    | Trend of request counts per minute grouped by resource and subresource with the response codes above 400 among kube-apiserver requests.                  |
+| Go Metrics                             | Number of goroutines                                                             | Number of current goroutines                                                                                                                             |
+| ^                                      | Number of threads                                                                | Current OS thread count                                                                                                                                  |
+| Number of active requests (1 second)   | Number of requests run in the last 1 second                                      | Number of requests run within 1 second in kube-apiserver during data collection                                                                          |

@@ -17,54 +17,54 @@ The following handles only installation of the Java agent. See the separate proc
 
 :::
 
-1.  Create a Docker build directory.
+1. Create a Docker build directory.
 
-    ```bash
-    mkdir -p {Docker build dir}
-    ```
+   ```bash
+   mkdir -p {Docker build dir}
+   ```
 
-2.  Create the _whatap.conf_ file.
+2. Create the _whatap.conf_ file.
 
-    ```docker {3,5} showLineNumbers
-    cat >{Docker build Dir}/whatap.conf <<EOL
-    #Enter the access key.
-    license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX 
-    #Enter the collection server IP.
-    whatap.server.host=xx.xx.xx.xx/yy.yy.yy.yy 
-    EOL
-    ```
+   ```docker {3,5} showLineNumbers
+   cat >{Docker build Dir}/whatap.conf <<EOL
+   #Enter the access key.
+   license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX 
+   #Enter the collection server IP.
+   whatap.server.host=xx.xx.xx.xx/yy.yy.yy.yy 
+   EOL
+   ```
 
-3.  Create a Dockerfile.
+3. Create a Dockerfile.
 
-    In case of building an image, you can copy the jar file to apply in the `-javaagent` option from the WhaTap image.
+   In case of building an image, you can copy the jar file to apply in the `-javaagent` option from the WhaTap image.
 
-    ```docker
-    cat >/home/silver/whatap/docker/Dockerfile <<EOL
-    FROM whatap/kube_mon as build
-    ## Create an actual image (Add the WhaTap image)
-    ## $Image_Name (image name)
-    FROM $Image_Name
-    RUN mkdir -p /whatap
-    COPY --from=build /data/agent/micro/whatap.agent-*.jar /whatap
-    COPY ./whatap.conf /whatap/
-    #...
-    EOL
-    ```
+   ```docker
+   cat >/home/silver/whatap/docker/Dockerfile <<EOL
+   FROM whatap/kube_mon as build
+   ## Create an actual image (Add the WhaTap image)
+   ## $Image_Name (image name)
+   FROM $Image_Name
+   RUN mkdir -p /whatap
+   COPY --from=build /data/agent/micro/whatap.agent-*.jar /whatap
+   COPY ./whatap.conf /whatap/
+   #...
+   EOL
+   ```
 
-4.  In `JAVA_OPT`, add the following content.
+4. In `JAVA_OPT`, add the following content.
 
-    ```bash
-    WHATAP_HOME=/whatap
-    WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1
-    export JAVA_OPTS="-javaagent:${WHATAP_JAR} "
-    ```
+   ```bash
+   WHATAP_HOME=/whatap
+   WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1
+   export JAVA_OPTS="-javaagent:${WHATAP_JAR} "
+   ```
 
-5.  Build the Docker.
+5. Build the Docker.
 
-    ```bash
-    cd docker
-    docker build -t $Image_Name
-    ```
+   ```bash
+   cd docker
+   docker build -t $Image_Name
+   ```
 
 :::note
 

@@ -1,77 +1,77 @@
 <InDoc product="java">
 
--   **trace_user_cookie_limit** / **wclient_cookie_limit** <span class='type'>Int</span>
+- **trace_user_cookie_limit** / **wclient_cookie_limit** <span class='type'>Int</span>
 
-    デフォルト値`2048`
+  デフォルト値`2048`
 
-    ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多い場合、クッキーオーバーフローが発生する可能性があります。これを防止するため、limitを設定します。
+  ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多い場合、クッキーオーバーフローが発生する可能性があります。これを防止するため、limitを設定します。
 
-    :::note
+  :::note
 
-    Javaエージェント 2.2.0バージョン以降の場合は、`wclient_cookie_limit`オプションを使用して下さい。
+  Javaエージェント 2.2.0バージョン以降の場合は、`wclient_cookie_limit`オプションを使用して下さい。
 
-    :::
+  :::
 
--   **trace_user_using_ip** / **wclient_using_ip** <span class='type'>Boolean</span>
+- **trace_user_using_ip** / **wclient_using_ip** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    リアルタイムユーザーをIPアドレスで集約します。IPアドレスでなく、クッキーでユーザーを区分したい場合は、値を`false`に変更してください。
+  リアルタイムユーザーをIPアドレスで集約します。IPアドレスでなく、クッキーでユーザーを区分したい場合は、値を`false`に変更してください。
 
-    :::note
+  :::note
 
-    Javaエージェント 2.2.0バージョン以降の場合は、`wclient_using_ip`オプションを使用して下さい。
+  Javaエージェント 2.2.0バージョン以降の場合は、`wclient_using_ip`オプションを使用して下さい。
 
-    :::
+  :::
 
--   **user_header_ticket** / **wclient_header_ticket** <span class='type'>String</span>
+- **user_header_ticket** / **wclient_header_ticket** <span class='type'>String</span>
 
-    HTTP Headerの特定の値でユーザー数を集計する場合は、その対応するKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションが利用できます。
+  HTTP Headerの特定の値でユーザー数を集計する場合は、その対応するKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションが利用できます。
 
-    ```ini title='whatap.conf'
-    user_header_ticket=login
-    ```
+  ```ini title='whatap.conf'
+  user_header_ticket=login
+  ```
 
-    :::note
+  :::note
 
-    Javaエージェント 2.2.0バージョン以降の場合は、`wclient_header_ticket`オプションを使用して下さい。
+  Javaエージェント 2.2.0バージョン以降の場合は、`wclient_header_ticket`オプションを使用して下さい。
 
-    :::
+  :::
 
 </InDoc>
 
 <InDoc product="nodejs">
 
--   **trace_user_cookie_limit** <span class='type'>Int</span>
+- **trace_user_cookie_limit** <span class='type'>Int</span>
 
-    デフォルト値`2048`
+  デフォルト値`2048`
 
-    ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多い場合、クッキーオーバーフローが発生する可能性があります。これを防止するため、limitを設定します。
+  ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多い場合、クッキーオーバーフローが発生する可能性があります。これを防止するため、limitを設定します。
 
--   **trace_user_using_ip** <span class='type'>Boolean</span>
+- **trace_user_using_ip** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    リアルタイムユーザーをIPアドレスで集約します。IPアドレスでなく、クッキーでユーザーを区分したい場合は、値を`false`に変更してください。
+  リアルタイムユーザーをIPアドレスで集約します。IPアドレスでなく、クッキーでユーザーを区分したい場合は、値を`false`に変更してください。
 
--   **user_header_ticket** <span class='type'>String</span>
+- **user_header_ticket** <span class='type'>String</span>
 
-    HTTP Headerの特定の値でユーザー数を集計する場合は、その対応するKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションが利用できます。
+  HTTP Headerの特定の値でユーザー数を集計する場合は、その対応するKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションが利用できます。
 
-    ```ini title='whatap.conf'
-    user_header_ticket=login
-    ```
+  ```ini title='whatap.conf'
+  user_header_ticket=login
+  ```
 
 </InDoc>
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span> <ScrollToLink anchor='trace_http_client_ip_header_key' />
+- **trace_http_client_ip_header_key** <span class='type'>String</span> <ScrollToLink anchor='trace_http_client_ip_header_key' />
 
-    クライアントIP(Remote IP)情報を特定HTTPヘッダーの値に変更して設定する機能です。プロキシ(Proxy) 環境では、`X-Forwarded-For`ヘッダーの値をクライアントIPとして設定できます。
+  クライアントIP(Remote IP)情報を特定HTTPヘッダーの値に変更して設定する機能です。プロキシ(Proxy) 環境では、`X-Forwarded-For`ヘッダーの値をクライアントIPとして設定できます。
 
-    WEB/WAS の前にL4 などのロードバランサーが設置されている場合、クライアントのIPアドレスではなく、L4 のIPアドレスがRemote Adressである場合があります。この状況でクライアントのIP情報がHTTPヘッダーに特定キーの値として記録される場合は、そのキー値に置き換えることができます。
+  WEB/WAS の前にL4 などのロードバランサーが設置されている場合、クライアントのIPアドレスではなく、L4 のIPアドレスがRemote Adressである場合があります。この状況でクライアントのIP情報がHTTPヘッダーに特定キーの値として記録される場合は、そのキー値に置き換えることができます。
 
--   **trace_user_using_jsession** <span class='type'>Boolean</span>
+- **trace_user_using_jsession** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    リアルタイムユーザーをSESSIONIDベースで集計します。
+  リアルタイムユーザーをSESSIONIDベースで集計します。

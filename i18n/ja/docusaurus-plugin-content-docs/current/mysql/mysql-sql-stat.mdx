@@ -15,9 +15,9 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 :::note
 
--   この機能は、DBXエージェント1.6.10バージョン以降に対応しています。
+- この機能は、DBXエージェント1.6.10バージョン以降に対応しています。
 
--   `events_statements_summary_by_digest`ビューの詳細については、[次のリンク](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html)を参照してください。
+- `events_statements_summary_by_digest`ビューの詳細については、[次のリンク](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html)を参照してください。
 
 :::
 
@@ -25,23 +25,23 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 **_MYSQL SQL統計_**メニューを使用するためには、モニタリング対象DBで次のような設定が必要です。
 
-1.  データベース設定(_my.cnf_)で**Performance Schema**を活性化してください。
+1. データベース設定(_my.cnf_)で**Performance Schema**を活性化してください。
 
-    ```ini title='my.cnf'
-    performance_schema = on
-    ```
+   ```ini title='my.cnf'
+   performance_schema = on
+   ```
 
-2.  モニタリングアカウントから、該当のデータを読み取りできるように照会権限を設定します。
+2. モニタリングアカウントから、該当のデータを読み取りできるように照会権限を設定します。
 
-    ```bash
-    grant select on performance_schema.* to whatap;
-    ```
+   ```bash
+   grant select on performance_schema.* to whatap;
+   ```
 
-3.  DBXエージェントでオプションを設定します。
+3. DBXエージェントでオプションを設定します。
 
-    ```ini title='whatap.conf'
-    statements=true
-    ```
+   ```ini title='whatap.conf'
+   statements=true
+   ```
 
 :::note
 

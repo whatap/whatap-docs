@@ -15,7 +15,7 @@ tags:
 
 :::note
 
--   In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
+- In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
 
 :::
 
@@ -36,22 +36,22 @@ The default pattern can be modified in _whatap.ini_.
 | dockerid      | Docker container ID                                                 |
 | ips           | Full IP (IPv4, IPv6)                                                |
 
--   **whatap.object_name** <span class='type'>String</span>
+- **whatap.object_name** <span class='type'>String</span>
 
-    Default `{type}-{ip2}-{ip3}-{process}`
+  Default `{type}-{ip2}-{ip3}-{process}`
 
-    It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.  
-
-{@include: ../common-items/_php-restart-whatap-service.mdx}
-
--   **whatap.app_name** <span class='type'>String</span>
-
-    It is a component of the agent name (ONAME) to identify applications. The value corresponds to `{type}` of `object_name`.  
+  It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}
 
--   **whatap.app_process_name** <span class='type'>String</span>
+- **whatap.app_name** <span class='type'>String</span>
 
-    It is a component used in the agent naming (ONAME) scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.  
+  It is a component of the agent name (ONAME) to identify applications. The value corresponds to `{type}` of `object_name`.  
+
+{@include: ../common-items/_php-restart-whatap-service.mdx}
+
+- **whatap.app_process_name** <span class='type'>String</span>
+
+  It is a component used in the agent naming (ONAME) scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}

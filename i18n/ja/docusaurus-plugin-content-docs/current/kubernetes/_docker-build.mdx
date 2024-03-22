@@ -1,98 +1,98 @@
-1.  ドッカー(Docker) ビルドディレクトリを作成します。
+1. ドッカー(Docker) ビルドディレクトリを作成します。
 
-    ```bash
-    mkdir -p {Docker build Dir}
-    ```
+   ```bash
+   mkdir -p {Docker build Dir}
+   ```
 
-2.  _whatap.conf_ファイルを作成します。
+2. _whatap.conf_ファイルを作成します。
 
-    ```bash
-    cat >{Docker build Dir}/whatap.conf <<EOL
-    whatap.server.host={収集サーバーのIP}
-    EOL
-    ```
+   ```bash
+   cat >{Docker build Dir}/whatap.conf <<EOL
+   whatap.server.host={収集サーバーのIP}
+   EOL
+   ```
 
-    :::note
+   :::note
 
-    _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
+   _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
 
-    :::
+   :::
 
-3.  Dockerfileにエージェントをインストールするためのイメージをダウンロードするには、直接そのファイルをダウンロードするか、エージェントファイルをイメージにコピーしてください。
+3. Dockerfileにエージェントをインストールするためのイメージをダウンロードするには、直接そのファイルをダウンロードするか、エージェントファイルをイメージにコピーしてください。
 
-    ```docker
-    # WhaTapエージェント用ディレクトリをユーザーコンテナーに作成
-    RUN mkdir -p /whatap
+   ```docker
+   # WhaTapエージェント用ディレクトリをユーザーコンテナーに作成
+   RUN mkdir -p /whatap
 
-    # WhaTap Javaエージェントをユーザーコンテナにコピー
-    # エージェントのファイル名がwhatap.agent-1.2.3.jarの場合、X.Y.Z部分を1.2.3に変更してください。
-    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
+   # WhaTap Javaエージェントをユーザーコンテナにコピー
+   # エージェントのファイル名がwhatap.agent-1.2.3.jarの場合、X.Y.Z部分を1.2.3に変更してください。
+   COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
 
-    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピーします。
-    COPY ./whatap.conf /whatap/    
-    ```
+   # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピーします。
+   COPY ./whatap.conf /whatap/    
+   ```
 
-    :::note
+   :::note
 
-    _whatap.conf_ファイルは事前に作成する必要があります。
+   _whatap.conf_ファイルは事前に作成する必要があります。
 
-    :::
+   :::
 
-4.  Dockerfileコマンドを使用して、アプリケーションを起動する前に、エージェントのバージョンを確認してください。
+4. Dockerfileコマンドを使用して、アプリケーションを起動する前に、エージェントのバージョンを確認してください。
 
-    ```docker
-    docker run whatap/kube_mon ls /data/agent/micro/
+   ```docker
+   docker run whatap/kube_mon ls /data/agent/micro/
 
-    # 출력
-    whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
-    ```
+   # 출력
+   whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
+   ```
 
-5.  Dockerfileアプリケーションの起動コマンドに、以下を追加してください。その前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
+5. Dockerfileアプリケーションの起動コマンドに、以下を追加してください。その前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
 
-    エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+   エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
-    ```bash
-    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
-    ```
+   ```bash
+   -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
+   ```
 
-    ```docker title='Dockerfile' showLineNumbers {4,7}
-    FROM openjdk:8-jdk-slim
-    RUN mkdir -p /app && mkdir /whatap
-    WORKDIR /app
-    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
-    COPY whatap.conf /whatap
-    COPY myApp.jar /app/
-    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
-    EXPOSE 8080
-    ```
+   ```docker title='Dockerfile' showLineNumbers {4,7}
+   FROM openjdk:8-jdk-slim
+   RUN mkdir -p /app && mkdir /whatap
+   WORKDIR /app
+   COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
+   COPY whatap.conf /whatap
+   COPY myApp.jar /app/
+   CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+   EXPOSE 8080
+   ```
 
-    :::tip
+   :::tip
 
-    Java 17バージョン以降の場合、reflection用の`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加する必要があります。
+   Java 17バージョン以降の場合、reflection用の`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加する必要があります。
 
-    :::
+   :::
 
-6.  Dockerをビルドします。
+6. Dockerをビルドします。
 
-    ```docker
-    cd docker
-    docker build -t $Image_Name.
-    ```
+   ```docker
+   cd docker
+   docker build -t $Image_Name.
+   ```
 
-7.  ユーザーのKubernetes環境のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
+7. ユーザーのKubernetes環境のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-    `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割です。デプロイメント(Deployment) を設定すると、対応するPod(Pod)がグループ化されます。
+   `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割です。デプロイメント(Deployment) を設定すると、対応するPod(Pod)がグループ化されます。
 
-    ```bash showLineNumbers {8-9}
-    env:
-      - name: NODE_IP
-        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-      - name: NODE_NAME
-        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-      - name: POD_NAME
-        valueFrom: {fieldRef: {fieldPath: metadata.name}}
-      - name: OKIND
-        value: {業務種類名またはDeployment名}
-      - name: license
-        value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
-    ```
+   ```bash showLineNumbers {8-9}
+   env:
+     - name: NODE_IP
+       valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+     - name: NODE_NAME
+       valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+     - name: POD_NAME
+       valueFrom: {fieldRef: {fieldPath: metadata.name}}
+     - name: OKIND
+       value: {業務種類名またはDeployment名}
+     - name: license
+       value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
+   ```

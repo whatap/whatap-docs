@@ -15,9 +15,9 @@ SQL statistical data (execution count, execution time, number of rows, etc.) pro
 
 :::note
 
--   This function is supported in DBX agent 1.6.10 or later.
+- This function is supported in DBX agent 1.6.10 or later.
 
--   For more information about the `events_statements_summary_by_digest` view, see [the following link](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html).
+- For more information about the `events_statements_summary_by_digest` view, see [the following link](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html).
 
 :::
 
@@ -25,23 +25,23 @@ SQL statistical data (execution count, execution time, number of rows, etc.) pro
 
 The following settings are required in the monitoring target DB to use the **_Mysql SQL Statistics_** menu.
 
-1.  Enable **Performance Schema** in the database configuration (_my.cnf_).
+1. Enable **Performance Schema** in the database configuration (_my.cnf_).
 
-    ```ini title='my.cnf'
-    performance_schema = on
-    ```
+   ```ini title='my.cnf'
+   performance_schema = on
+   ```
 
-2.  Set the view role to allow the monitoring account to read the data.
+2. Set the view role to allow the monitoring account to read the data.
 
-    ```bash
-    grant select on performance_schema.* to whatap;
-    ```
+   ```bash
+   grant select on performance_schema.* to whatap;
+   ```
 
-3.  Set the options in the DBX agent.
+3. Set the options in the DBX agent.
 
-    ```ini title='whatap.conf'
-    statements=true
-    ```
+   ```ini title='whatap.conf'
+   statements=true
+   ```
 
 :::note
 

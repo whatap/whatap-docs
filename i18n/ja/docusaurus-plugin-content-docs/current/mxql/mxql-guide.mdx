@@ -17,29 +17,29 @@ MXQLは、各行ごとに**コマンド**と**オペランド**で構成され�
 
 `コマンド`は、１つの単語からなる予約語です。`コマンド`は大文字で入力し、`オペランド`は小文字で入力します。コマンドごとに入力可能な`オペランド`の形式は決まっています。`オペランド`には4種類のタイプの値があります。
 
-1.  オペランドがない場合
+1. オペランドがない場合
 
-    ```sql
-    TAGLOAD
-    ```
+   ```sql
+   TAGLOAD
+   ```
 
-2.  文字列(数字または単語)
+2. 文字列(数字または単語)
 
-    ```sql
-    CATEGORY app_counter
-    ```
+   ```sql
+   CATEGORY app_counter
+   ```
 
-3.  文字列配列
+3. 文字列配列
 
-    ```sql
-    SELECT [ time, pcode ]
-    ```
+   ```sql
+   SELECT [ time, pcode ]
+   ```
 
-4.  JSON文字列型
+4. JSON文字列型
 
-    ```sql
-    FILTER { key : tx_count, value : 5}
-    ```
+   ```sql
+   FILTER { key : tx_count, value : 5}
+   ```
 
 ```sql title='Sample MXQL query'
 CATEGORY app_counter
@@ -64,11 +64,11 @@ FILTER { key : tx_count, value : 5}
 
 MXQLは、段階的な設定があります。各ステップで使用できる**コマンド**には特定の種類があり、各ステップの名前と特性はは次のとおりです。 
 
-1.  **メトリクスの選択**：使用するエージェントによって収集されるメトリクスを選択します。
+1. **メトリクスの選択**：使用するエージェントによって収集されるメトリクスを選択します。
 
-2.  **メトリクス読み込み**：前の段階で設定した値を使用してメトリクスを読み込みます。ほとんどの場合は`TAGLOAD`を使用し、特別な場合は、`FLEXLOAD`を使用します。`FLEXLOAD`を使用する必要がある場合は、[次の文書](mxql-loading#flexload-items)を参照してください。
+2. **メトリクス読み込み**：前の段階で設定した値を使用してメトリクスを読み込みます。ほとんどの場合は`TAGLOAD`を使用し、特別な場合は、`FLEXLOAD`を使用します。`FLEXLOAD`を使用する必要がある場合は、[次の文書](mxql-loading#flexload-items)を参照してください。
 
-3.  **メトリック加工**：前の段階でインポートされたメトリクスに対して、段階的に処理を実行します。
+3. **メトリック加工**：前の段階でインポートされたメトリクスに対して、段階的に処理を実行します。
 
 ```sql title='Example'
 # メトリクスの選択する手順
@@ -151,54 +151,54 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
 ## MetricValueタイプのデータ使用方法
 
--   `GROUP`コマンドのmergeオプションにフィールドを設定します。
+- `GROUP`コマンドのmergeオプションにフィールドを設定します。
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
-    -- GROUPコマンドのmergeオプションを使用してMetric Valueに変換するfieldを設定
-    GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
-    -- UPDATEコマンドでsumオプションを適用
-    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
+  -- GROUPコマンドのmergeオプションを使用してMetric Valueに変換するfieldを設定
+  GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
+  -- UPDATEコマンドでsumオプションを適用
+  UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+  ```
 
--   収集サーバーにデータを保存された時点からすべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス表示_** > **_カテゴリ_**オプションを使用すると、**_デフォルト_**、**_5分_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
+- 収集サーバーにデータを保存された時点からすべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス表示_** > **_カテゴリ_**オプションを使用すると、**_デフォルト_**、**_5分_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
 
-    <ImgLang img='mxql-3.png' desc='MetricValue形式で設定できるカテゴリ一覧' />
+  <ImgLang img='mxql-3.png' desc='MetricValue形式で設定できるカテゴリ一覧' />
 
-    **_5分_**または**_1時間_**を選択できるカテゴリの名前と`{m5}`または`{h1}`を組み合わせると`GROUP`コマンドのmergeオプションを適用せず、`UPDATE`コマンドの`sum`オプションを適用できます。 
+  **_5分_**または**_1時間_**を選択できるカテゴリの名前と`{m5}`または`{h1}`を組み合わせると`GROUP`コマンドのmergeオプションを適用せず、`UPDATE`コマンドの`sum`オプションを適用できます。 
 
-    ```sql
-    CATEGORY app_counter{m5}
-    TAGLOAD
-    SELECT [time, pname, host_ip, pid, httpc_count]
-    -- GROUPコマンドを適用しない場合でも、すでにデータがMetricValue型のため、UPDATEコマンドを適用できます。
-    UPDATE { key : httpc_count, value : avg }
-    ```
+  ```sql
+  CATEGORY app_counter{m5}
+  TAGLOAD
+  SELECT [time, pname, host_ip, pid, httpc_count]
+  -- GROUPコマンドを適用しない場合でも、すでにデータがMetricValue型のため、UPDATEコマンドを適用できます。
+  UPDATE { key : httpc_count, value : avg }
+  ```
 
 ## MetricValue型の基本演算`avg`
 
 MetricValue型フィールドの基本の出力フォームは`avg`です。MetricValue型のフィールドは、別のオプションが設定されていないと`avg`が適用します。次の2つのクエリの結果は同じです。
 
--   **avgが指定されていない場合**
+- **avgが指定されていない場合**
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode,pname, tps]
-    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode,pname, tps]
+  GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+  ```
 
--   **avgが指定されている場合**
+- **avgが指定されている場合**
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode,pname, tps]
-    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-    UPDATE {key:tps, value:avg}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode,pname, tps]
+  GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+  UPDATE {key:tps, value:avg}
+  ```
 
 ## 定義済みのMXQLクエリ文{#custom-mxql}
 
@@ -270,8 +270,8 @@ SKIP {$option:10}
 
 MXQLで照会できるデータは、[メトリクス](../metrics/common-metrics-intro)の形式に応じて、2つのタイプに分けることができます。
 
--   メトリクスのデータをタグとフィールドに分けて保存されたデータ([TAGLOAD](mxql-loading#tagload)を使って読み込みできるデータ)
--   メトリクスにすべてのデータがフィールドに保存されているデータ([FLEXLOAD](mxql-loading#flexload)を使って読み込みできるデータ)
+- メトリクスのデータをタグとフィールドに分けて保存されたデータ([TAGLOAD](mxql-loading#tagload)を使って読み込みできるデータ)
+- メトリクスにすべてのデータがフィールドに保存されているデータ([FLEXLOAD](mxql-loading#flexload)を使って読み込みできるデータ)
 
 ほとんどのカテゴリで`TAGLOAD`を使います。[次の文書](mxql-loading#flexload-items)に含まれるカテゴリのデータを使用する場合のみ`FLEXLOAD`を使用してください。
 
@@ -287,51 +287,51 @@ _yard.conf_ファイルの`mxql_root`に設定したパスに登録したいク�
 
 ### エージェント別アクティブTX数、件数、直前15秒間
 
--   パス：_/app/act_tx/act_tx_oid_
--   クエリ： 
+- パス：_/app/act_tx/act_tx_oid_
+- クエリ： 
 
-    ```sql
-    HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
+  ```sql
+  HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 
-    TIME-RANGE {duration:15s, etime:$etime}
+  TIME-RANGE {duration:15s, etime:$etime}
 
-    OIDSET {oid:$oid, okind:$okind, onode:$onode}
+  OIDSET {oid:$oid, okind:$okind, onode:$onode}
 
-    CATEGORY app_counter
+  CATEGORY app_counter
 
-    TAGLOAD {backward:true}
+  TAGLOAD {backward:true}
 
-    SELECT [oid, oname, active_tx_0, active_tx_3, active_tx_8, active_tx_count]
-    FIRST-ONLY {key:oid}
-    RENAME {src:active_tx_0,  dst:act0}
-    RENAME {src:active_tx_3,  dst:act3}
-    RENAME {src:active_tx_8,  dst:act8}
-    RENAME {src:active_tx_count,  dst:act}
+  SELECT [oid, oname, active_tx_0, active_tx_3, active_tx_8, active_tx_count]
+  FIRST-ONLY {key:oid}
+  RENAME {src:active_tx_0,  dst:act0}
+  RENAME {src:active_tx_3,  dst:act3}
+  RENAME {src:active_tx_8,  dst:act8}
+  RENAME {src:active_tx_count,  dst:act}
 
-    CREATE {key:_id_, from:oid}
-    CREATE {key:_name_, from:oname}
-    ```
+  CREATE {key:_id_, from:oid}
+  CREATE {key:_name_, from:oname}
+  ```
 
 ### エージェント別の詳細情報 & エージェント別アクティブTX数、件数、直前15秒間
 
--   パス：_/app/act_tx/agent_with_tx_
--   クエリ： 
+- パス：_/app/act_tx/agent_with_tx_
+- クエリ： 
 
-    ```sql
-    CATEGORY agent_list
+  ```sql
+  CATEGORY agent_list
 
-    OIDSET {oid:$oid, okind:$okind, onode:$onode}
+  OIDSET {oid:$oid, okind:$okind, onode:$onode}
 
-    FLEXLOAD
+  FLEXLOAD
 
-    JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8, act] }
+  JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8, act] }
 
-    UPDATE {key:act0, notnull:0}
-    UPDATE {key:act3, notnull:0}
-    UPDATE {key:act8, notnull:0}
-    UPDATE {key:act, notnull:0}
+  UPDATE {key:act0, notnull:0}
+  UPDATE {key:act3, notnull:0}
+  UPDATE {key:act8, notnull:0}
+  UPDATE {key:act, notnull:0}
 
-    RENAME {src:[act0, act3, act8, act],  dst:[normal, slow, verySlow, total]}
+  RENAME {src:[act0, act3, act8, act],  dst:[normal, slow, verySlow, total]}
 
-    INJECT default
-    ```
+  INJECT default
+  ```

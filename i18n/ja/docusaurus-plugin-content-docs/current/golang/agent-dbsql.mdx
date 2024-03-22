@@ -8,20 +8,20 @@ tags:
   - SQL
 ---
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    SQL文からリテラル部分を抽出し、SQL文を正規化する機能を有効にします。リテラル部分は"#"として表記されます。
+  SQL文からリテラル部分を抽出し、SQL文を正規化する機能を有効にします。リテラル部分は"#"として表記されます。
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+- **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース履歴にSQLパラメータ情報を参照する場合に使用します。パラメータは、別のセキュリティ キーを入力しないと参照できません。
+  トレース履歴にSQLパラメータ情報を参照する場合に使用します。パラメータは、別のセキュリティ キーを入力しないと参照できません。
 
-    :::note
+  :::note
 
-    セキュリティキーは、_whatap.conf_ファイルがある`WHATAP_HOME`_/paramkey.txt_ファイルに６ケタで設定します。_paramkey.txt_ファイルがない場合は、ランダムに値が自動生成されます。
+  セキュリティキーは、_whatap.conf_ファイルがある`WHATAP_HOME`_/paramkey.txt_ファイルに６ケタで設定します。_paramkey.txt_ファイルがない場合は、ランダムに値が自動生成されます。
 
-    :::
+  :::

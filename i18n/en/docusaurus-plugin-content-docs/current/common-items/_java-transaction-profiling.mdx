@@ -1,234 +1,234 @@
--   **profile_step_normal_count** <span class='type'>Int</span>
+- **profile_step_normal_count** <span class='type'>Int</span>
 
-    Default `1000`
+  Default `1000`
 
-    Set the maximum step count for tracing transactions.
+  Set the maximum step count for tracing transactions.
 
--   **profile_step_heavy_count** <span class='type'>Int</span>
+- **profile_step_heavy_count** <span class='type'>Int</span>
 
-    Default `1020`
+  Default `1020`
 
-    In case of heavy steps, even if they exceed the default step count in the trace, the set value is recorded.
+  In case of heavy steps, even if they exceed the default step count in the trace, the set value is recorded.
 
--   **profile_step_max_count** <span class='type'>Int</span>
+- **profile_step_max_count** <span class='type'>Int</span>
 
-    Default `1024`
+  Default `1024`
 
-    Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored. If `profile_step_heavy_count` is set up to 1000, active stacks are collected as many as `profile_step_max_count`.
+  Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored. If `profile_step_heavy_count` is set up to 1000, active stacks are collected as many as `profile_step_max_count`.
 
--   **profile_step_heavy_time** <span class='type'>MiliSecond</span>
+- **profile_step_heavy_time** <span class='type'>MiliSecond</span>
 
-    Default `100`
+  Default `100`
 
-    Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made as many as `profile_step_heavy_count`.
+  Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made as many as `profile_step_heavy_count`.
 
--   **active_stack_count** <span class='type'>Int</span>
+- **active_stack_count** <span class='type'>Int</span>
 
-    Default `100`
+  Default `100`
 
-    Set the maximum number of active stacks to collect in transactions.
+  Set the maximum number of active stacks to collect in transactions.
 
--   **profile_method_resource_enabled** <span class='type'>Boolean</span>
+- **profile_method_resource_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When collecting method steps from the transaction trace, the CPU and memory usages in the step is traced.
+  When collecting method steps from the transaction trace, the CPU and memory usages in the step is traced.
 
--   **profile_position_method** <span class='type'>String</span>
+- **profile_position_method** <span class='type'>String</span>
 
-    It records the stack traces that run the set methods.
+  It records the stack traces that run the set methods.
 
--   **profile_position_depth** <span class='type'>Int</span>
+- **profile_position_depth** <span class='type'>Int</span>
 
-    Default `50`
+  Default `50`
 
-    Set the maximum number of lines when recording stack traces for position tracing.
+  Set the maximum number of lines when recording stack traces for position tracing.
 
--   **trace_error_callstack_depth** <span class='type'>Int</span>
+- **trace_error_callstack_depth** <span class='type'>Int</span>
 
-    Default `50`
+  Default `50`
 
-    Set the maximum number of stack trace lines collected when errors occur.
+  Set the maximum number of stack trace lines collected when errors occur.
 
--   **trace_active_callstack_depth** <span class='type'>Int</span>
+- **trace_active_callstack_depth** <span class='type'>Int</span>
 
-    Default `50`
+  Default `50`
 
-    Set the maximum number of stack trace lines collected by active stacks.
+  Set the maximum number of stack trace lines collected by active stacks.
 
 {@include: ../common-items/_transaction-profile-active-color.mdx}
 
--   **hook_method_patterns** <span class='type'>String</span>
+- **hook_method_patterns** <span class='type'>String</span>
 
-    It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
+  It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
 
-    ```ini title='whatap.conf'
-    hook_method_patterns=a.b.C1.*
-    ```
+  ```ini title='whatap.conf'
+  hook_method_patterns=a.b.C1.*
+  ```
 
--   **hook_method_supers** <span class='type'>String</span>
+- **hook_method_supers** <span class='type'>String</span>
 
-    Set the super class when measuring the response time of the method inherited from a specific class. It sets the full name of the class. Multiple items are separated with comma (,).
+  Set the super class when measuring the response time of the method inherited from a specific class. It sets the full name of the class. Multiple items are separated with comma (,).
 
-    ```ini title='whatap.conf'
-    hook_method_supers=a.b.C1
-    ```
+  ```ini title='whatap.conf'
+  hook_method_supers=a.b.C1
+  ```
 
--   **hook_method_interfaces** <span class='type'>String</span>
+- **hook_method_interfaces** <span class='type'>String</span>
 
-    When measuring the response time of the method that implements a specific interface, it sets the interface. It sets the full name of the interface. Multiple items are separated with comma (,).
+  When measuring the response time of the method that implements a specific interface, it sets the interface. It sets the full name of the interface. Multiple items are separated with comma (,).
 
--   **hook_method_ignore_classes** <span class='type'>String</span>
+- **hook_method_ignore_classes** <span class='type'>String</span>
 
-    When setting a method trace, it sets the classes to exclude from the trace.
+  When setting a method trace, it sets the classes to exclude from the trace.
 
--   **hook_method_access_public_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
 
--   **hook_method_access_private_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
 
--   **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
 
--   **hook_method_access_none_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
 
--   **stacklog_socket_port** <span class='type'>TCP_PortNumber</span>
+- **stacklog_socket_port** <span class='type'>TCP_PortNumber</span>
 
-    Default `0`
+  Default `0`
 
-    If the destination TCP port has been set, the stack trace is recorded as an agent log at the time of Socket.connect(). It can be used when tracing DB connections, HTTPC connections, and such that are not checked by default settings.
+  If the destination TCP port has been set, the stack trace is recorded as an agent log at the time of Socket.connect(). It can be used when tracing DB connections, HTTPC connections, and such that are not checked by default settings.
 
-    :::caution
+  :::caution
 
-    Stack traces are recorded whenever the set destination is connected. It may cause performance degradation. It must be used temporarily only in the agents selected for debugging purposes.
+  Stack traces are recorded whenever the set destination is connected. It may cause performance degradation. It must be used temporarily only in the agents selected for debugging purposes.
 
-    Example of DB connection tracing: `stacklog_socket_port=1521`
+  Example of DB connection tracing: `stacklog_socket_port=1521`
 
-    :::
+  :::
 
 ## Exceptional handling {#exception}
 
--   **biz_exceptions** <span class='type'>String</span>
+- **biz_exceptions** <span class='type'>String</span>
 
-    It registers the business exception.
+  It registers the business exception.
 
-    :::tip
+  :::tip
 
-    Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
+  Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
 
-    :::
+  :::
 
-    :::note
+  :::note
 
-    In the Java agent [v2.2.20](../release-notes/java/java-2_2_20) or higher, the registered business exceptions are collected as error statistics. In the versions below v2.2.20, the registered business exceptions are excluded from error statistics. However, they appear in the trace details.
+  In the Java agent [v2.2.20](../release-notes/java/java-2_2_20) or higher, the registered business exceptions are collected as error statistics. In the versions below v2.2.20, the registered business exceptions are excluded from error statistics. However, they appear in the trace details.
 
-    :::
+  :::
 
--   **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
+- **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
 
-    Set the business exceptiona and status to restrict event notifications when any business exception occurs. For **Business Exception:Status** set by this option, the event level is changed to <span class="normal">INFO</span>. Business exceptions and status are separated by colon (:). If multiple statuses are used for a business exception, they are separated by ampersand (&). You can set multiple values using comma(,) as the delimiter.
+  Set the business exceptiona and status to restrict event notifications when any business exception occurs. For **Business Exception:Status** set by this option, the event level is changed to <span class="normal">INFO</span>. Business exceptions and status are separated by colon (:). If multiple statuses are used for a business exception, they are separated by ampersand (&). You can set multiple values using comma(,) as the delimiter.
 
-    ```ini title='whatap.conf'
-    # example
-    biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
-    ```
+  ```ini title='whatap.conf'
+  # example
+  biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
+  ```
 
-    :::tip
+  :::tip
 
-    Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
+  Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
 
-    :::
+  :::
 
--   **ignore_exceptions** <span class='type'>String</span>
+- **ignore_exceptions** <span class='type'>String</span>
 
-    The errors of the registered exceptions are ignored.
+  The errors of the registered exceptions are ignored.
 
-    :::tip
+  :::tip
 
-    Ignore error class/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+  Ignore error class/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
 
-    :::
+  :::
 
--   **transaction_status_error_enable** <span class='type'>Boolean</span>
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
+  If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
--   **status_ignore** <span class='type'>String</span>
+- **status_ignore** <span class='type'>String</span>
 
-    You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
+  You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore=408,500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
 
-    :::tip
+  :::tip
 
-    Ignore status error/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+  Ignore status error/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
 
-    :::
+  :::
 
--   **status_ignore_set** <span class='type'>String</span>
+- **status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+  `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
 
-    :::tip
+  :::tip
 
-    Ignore status error set/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+  Ignore status error set/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
 
-    :::
+  :::
 
--   **httpc_status_error_enable** <span class='type'>Boolean</span>
+- **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
+  Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
 
-    :::note
+  :::note
 
-    For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
+  For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
 
-    :::
+  :::
 
--   **httpc_status_ignore** <span class='type'>String</span>
+- **httpc_status_ignore** <span class='type'>String</span>
 
-    If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
+  If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
 
-    :::tip
+  :::tip
 
-    Ignore HTTP status error code/Exclude error statistics
+  Ignore HTTP status error code/Exclude error statistics
 
-    :::
+  :::
 
--   **httpc_status_url_ignore_set** <span class='type'>String</span>
+- **httpc_status_url_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+  `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-    Set it as `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+  Set it as `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
 
-    :::tip
+  :::tip
 
-    Ignore HTTP status error code/Exclude error statistics
+  Ignore HTTP status error code/Exclude error statistics
 
-    :::
+  :::

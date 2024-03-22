@@ -10,25 +10,25 @@ tags:
 
 Before installing the agent, check the support environment for .NET framework applications.
 
--   **Supported version**: .NET Framework 4.5 (version 4.61 or later recommended)
+- **Supported version**: .NET Framework 4.5 (version 4.61 or later recommended)
 
--   **OS**: Windows Server 2012 or later
+- **OS**: Windows Server 2012 or later
 
--   **Application Server**: IIS 8.0 or later
+- **Application Server**: IIS 8.0 or later
 
--   **Library**
+- **Library**
 
-    -   WebClient/WebRequest
+  - WebClient/WebRequest
 
-    -   HttpClient/HttpClientHandler
+  - HttpClient/HttpClientHandler
 
-    -   ASP.NET MVC 5 (IIS)
+  - ASP.NET MVC 5 (IIS)
 
-    -   ASP.NET Web API 2 (IIS)
+  - ASP.NET Web API 2 (IIS)
 
-    -   ADO.NET (Database)
+  - ADO.NET (Database)
 
--   **Database**: All databases and Radis that support ADO.NET such as MS SQL, Oracle, MySQL, etc.
+- **Database**: All databases and Radis that support ADO.NET such as MS SQL, Oracle, MySQL, etc.
 
 ## How to analyze the server support environment
 
@@ -36,35 +36,35 @@ Before installing the agent, check the support environment for .NET framework ap
 
 If you are not familiar with the supported environment of the server to install the agent on, download the analysis tools through the following links.
 
--   [https://repo.whatap.io/windows/WhaTapDotnetScan.exe](https://repo.whatap.io/windows/WhaTapDotnetScan.exe)
+- [https://repo.whatap.io/windows/WhaTapDotnetScan.exe](https://repo.whatap.io/windows/WhaTapDotnetScan.exe)
 
--   [https://repo.whatap.io/windows/WhaTapDotnetScan.zip](https://repo.whatap.io/windows/WhaTapDotnetScan.zip)
+- [https://repo.whatap.io/windows/WhaTapDotnetScan.zip](https://repo.whatap.io/windows/WhaTapDotnetScan.zip)
 
 ### Using the analysis tools{#use-tools}
 
-1.  Run the downloaded analysis tools.
+1. Run the downloaded analysis tools.
 
-    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
+   ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
 
-2.  Click ![number 1](/img/number-01.png) **Analysis** (**Scan**).
+2. Click ![number 1](/img/number-01.png) **Analysis** (**Scan**).
 
-3.  In the ![number 2](/img/number-02.png) area, check whether the Windows server version is 2012 or later.
+3. In the ![number 2](/img/number-02.png) area, check whether the Windows server version is 2012 or later.
 
-4.  In the ![number 3](/img/number-03.png) area, check whether the versions are **IIS 8.0** or later, and **.NET Framework 4.5** or later.
+4. In the ![number 3](/img/number-03.png) area, check whether the versions are **IIS 8.0** or later, and **.NET Framework 4.5** or later.
 
-    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
+   ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
-5.  Check that the **.NET Framework** version appears as v4.0 for each site installed in IIS.
+5. Check that the **.NET Framework** version appears as v4.0 for each site installed in IIS.
 
-    ![](/img/apm-dotnet-analystic-env-03.png)
+   ![](/img/apm-dotnet-analystic-env-03.png)
 
-    ![Number 5](/img/number-05.png) is the supported range, but there is no _web.config_ file. In this case, the agent does not work because they are the sites for ASP, PHP, and such that do not use **.NET**.
+   ![Number 5](/img/number-05.png) is the supported range, but there is no _web.config_ file. In this case, the agent does not work because they are the sites for ASP, PHP, and such that do not use **.NET**.
 
 :::note
 
--   **.NET Framework** supports up to the version 4.8.1.
+- **.NET Framework** supports up to the version 4.8.1.
 
--   **Core**, **.NET 5**, or later is not supported. The **.NET Core** versions are under development.
+- **Core**, **.NET 5**, or later is not supported. The **.NET Core** versions are under development.
 
 :::
 

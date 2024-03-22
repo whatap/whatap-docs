@@ -10,46 +10,46 @@ tags:
 
 The following provides the options related to the Node.js agent DB and SQL.
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+- **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
-    Default `false`
+  Default `false`
 
-    Collecting SQL parameters is enabled. However, the parameters can be retrieved only by entering a separate security key. Set the security key to 6 digits in _paramkey.txt_ of the agent installation path. If _paramkey.txt_ does not exist, it is automatically generated and a random key is set.
+  Collecting SQL parameters is enabled. However, the parameters can be retrieved only by entering a separate security key. Set the security key to 6 digits in _paramkey.txt_ of the agent installation path. If _paramkey.txt_ does not exist, it is automatically generated and a random key is set.
 
--   **profile_connection_open_enabled** <span class='type'>Boolean</span>
+- **profile_connection_open_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It records DB connection open data in the trace details.
+  It records DB connection open data in the trace details.
 
--   **profile_error_sql_time_max** <span class='type'>Int</span>
+- **profile_error_sql_time_max** <span class='type'>Int</span>
 
-    Default `30000`
+  Default `30000`
 
-    If the SQL execution time exceeds the set value, it is treated as TOO SLOW error. If it is set to `0`, it is not treated as an error.
+  If the SQL execution time exceeds the set value, it is treated as TOO SLOW error. If it is set to `0`, it is not treated as an error.
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement.
+  It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement.
 
--   **hook_connection_open_patterns** <span class='type'>String</span>
+- **hook_connection_open_patterns** <span class='type'>String</span>
 
-    It registers the method to call upon DB connection open. It is common to register getConnection of any connection pool that has not been set.
+  It registers the method to call upon DB connection open. It is common to register getConnection of any connection pool that has not been set.
 
-    ```ini title='Example'
-    hook_connection_open_patterns=mypool.ConPool.getConnection
-    ```
+  ```ini title='Example'
+  hook_connection_open_patterns=mypool.ConPool.getConnection
+  ```
 
--   **trace_sql_error_stack** <span class='type'>Boolean</span>
+- **trace_sql_error_stack** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    SQL errors are stored as stacks (MySQL, MariaDB, PostgreSQL, SQL Server).
+  SQL errors are stored as stacks (MySQL, MariaDB, PostgreSQL, SQL Server).
 
--   **trace_sql_error_depth** <span class='type'>Int</span>
+- **trace_sql_error_depth** <span class='type'>Int</span>
 
-    Default `50`
+  Default `50`
 
-    Set the number of lines of errors to be stored when applying the `trace_sql_error_stack` option.
+  Set the number of lines of errors to be stored when applying the `trace_sql_error_stack` option.

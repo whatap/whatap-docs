@@ -9,22 +9,22 @@ tags:
   - PHP
 ---
 
-1.  Register the WhaTap **repository**. 
+1. Register the WhaTap **repository**. 
 
-    ```bash title=SH
-    $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-    $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-    $ sudo dpkg -i whatap-repo_1.0_all.deb
-    $ sudo apt-get update
-    ```
+   ```bash title=SH
+   $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+   $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+   $ sudo dpkg -i whatap-repo_1.0_all.deb
+   $ sudo apt-get update
+   ```
 
-2.  Install the **package** with the following command. 
+2. Install the **package** with the following command. 
 
-    ```bash title=SH
-    $ sudo apt-get install whatap-php
-    ```
+   ```bash title=SH
+   $ sudo apt-get install whatap-php
+   ```
 
-3.  {@include: ../../common-items/_php-install-script.mdx}
+3. {@include: ../../common-items/_php-install-script.mdx}
 
 {@include: ../../common-items/_php-extension-whatap.mdx} 
 

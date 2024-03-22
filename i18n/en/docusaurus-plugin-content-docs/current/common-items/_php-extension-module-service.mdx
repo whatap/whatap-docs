@@ -82,12 +82,12 @@ extension_dir => /usr/lib64/php/modules => /usr/lib64/php/modules
 
 After checking the PHP API version and PHP ZTS's availability, select a library that meets the environment. In the PHP extension module's path, copy the _whatap.so_ file name.
 
--   In case PHP ZTS is available - _whatap_zts\_[PHP API version].so_
--   In case PHP ZTS is unavailable - _whatap\_[PHP API version].so_
-    ```bash
-    # Example in case the PHP ZTS is not supported
-    $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
-    ```
+- In case PHP ZTS is available - _whatap_zts\_[PHP API version].so_
+- In case PHP ZTS is unavailable - _whatap\_[PHP API version].so_
+  ```bash
+  # Example in case the PHP ZTS is not supported
+  $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
+  ```
 
 #### Configuring the environment variables for the whatap-php service
 
@@ -99,21 +99,21 @@ export WHATAP_PHP_EXT_SRC=    # whatap library path and file name
                               # (/usr/whatap/php/modules/x64/whatap_20100412.so)]
 ```
 
-1.  In the `$WHATAP_PHP_EXT_HOME` environment variable, set the PHP extension module's path.
-2.  In the `$WHATAP_PHP_EXT_SRC` environment variable, set the whatap library's full file path.
+1. In the `$WHATAP_PHP_EXT_HOME` environment variable, set the PHP extension module's path.
+2. In the `$WHATAP_PHP_EXT_SRC` environment variable, set the whatap library's full file path.
 
 ### whatap.ini configuration{#php-ini-path}
 
-1.  Check the PHP ini file's path that has been added.
+1. Check the PHP ini file's path that has been added.
 
-    ```bash
-    $ sudo php -i | grep '.ini files'
+   ```bash
+   $ sudo php -i | grep '.ini files'
 
-    Scan this dir for additional .ini files => /etc/php.d
-    ```
+   Scan this dir for additional .ini files => /etc/php.d
+   ```
 
-2.  Copy _whatap.ini_ and paste it to the path.
+2. Copy _whatap.ini_ and paste it to the path.
 
-    ```bash
-    $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini
-    ```
+   ```bash
+   $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini
+   ```

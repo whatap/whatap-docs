@@ -7,10 +7,10 @@ pagination_next: release-notes/dotnet/dotnet-2_1_4
 
 September 13, 2023
 
--   <Status>Fixed</Status> Fixed the bug where the transaction end point of the Windows Communication Foundation (WCF) and web services cannot be found intermittently.
+- <Status>Fixed</Status> Fixed the bug where the transaction end point of the Windows Communication Foundation (WCF) and web services cannot be found intermittently.
 
--   <Status>New</Status> Added the <code>webservice_method_timeout</code> option.
+- <Status>New</Status> Added the <code>webservice_method_timeout</code> option.
 
-    If exception handling is not performed in WCF and web services, it is impossible to see when a transaction ends. For such cases, the timeout of WCF and web services occurs by default after 30 seconds.
+  If exception handling is not performed in WCF and web services, it is impossible to see when a transaction ends. For such cases, the timeout of WCF and web services occurs by default after 30 seconds.
 
-    If the value of the <code>webservice_method_timeout</code> option is changed, you can adjust the timeout value. The unit is millisecond (ms). For more information, see <Link to='../../dotnet/agent-webservice'>the following</Link>.
+  If the value of the <code>webservice_method_timeout</code> option is changed, you can adjust the timeout value. The unit is millisecond (ms). For more information, see <Link to='../../dotnet/agent-webservice'>the following</Link>.

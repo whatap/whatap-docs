@@ -14,61 +14,61 @@ Check the method how to add JVM options in the application server environment us
 
 ## Adding JVM options
 
-1.  Refer to the path of the configuration file for startup options depending on the JEUS version, and then add the `-javaagent` option.
+1. Refer to the path of the configuration file for startup options depending on the JEUS version, and then add the `-javaagent` option.
 
-    <Tabs>
-    <TabItem value='jeus7' label='JEUS 7' default>
+   <Tabs>
+   <TabItem value='jeus7' label='JEUS 7' default>
 
-    ```xml title="$JEUS_HOME/domains/jeus_domain/config.xml" {6-9} showLineNumbers
-    <domain>
-        <servers>
-            <server>
-                <name>server1</name>
-                <jvm-config>
-                    <jvm-option>
-                        -Xmx1024m -XX:MaxPermSize=128m
-                        -javaagent:/whatap/whatap.agent-X.Y.Z.jar
-                    </jvm-option>
-                </jvm-config>
-            </server>
-        </servers>
-        ...
-    </domain>
-    ```
+   ```xml title="$JEUS_HOME/domains/jeus_domain/config.xml" {6-9} showLineNumbers
+   <domain>
+       <servers>
+           <server>
+               <name>server1</name>
+               <jvm-config>
+                   <jvm-option>
+                       -Xmx1024m -XX:MaxPermSize=128m
+                       -javaagent:/whatap/whatap.agent-X.Y.Z.jar
+                   </jvm-option>
+               </jvm-config>
+           </server>
+       </servers>
+       ...
+   </domain>
+   ```
 
-    </TabItem>
-    <TabItem value='jeus6' label='JEUS 6'>
+   </TabItem>
+   <TabItem value='jeus6' label='JEUS 6'>
 
-    ```xml title="$JEUS_HOME/config/$hostname/JEUSMain.xml" {6-9} showLineNumbers
-    <node>
-        <name>node01</name>
-        <engine-container1>
-            <name>container1</name>
-            ...
-            <command-option>-Xmx1024m -XX:MaxPermSize=128m
-                -javaagent:/whatap/whatap.agent-#.#.#.jar
-            </command-option>
-            ...
-        </engine-container1>
-    </node>
-    ```
+   ```xml title="$JEUS_HOME/config/$hostname/JEUSMain.xml" {6-9} showLineNumbers
+   <node>
+       <name>node01</name>
+       <engine-container1>
+           <name>container1</name>
+           ...
+           <command-option>-Xmx1024m -XX:MaxPermSize=128m
+               -javaagent:/whatap/whatap.agent-#.#.#.jar
+           </command-option>
+           ...
+       </engine-container1>
+   </node>
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
-2.  Restart the application server.
+2. Restart the application server.
 
-    ```bash
-    jdown && jboot
-    ```
+   ```bash
+   jdown && jboot
+   ```
 
-3.  Through the application server log file and the agent log file, check whether the agent is operating normally or any error occurs. For the location of log files, see the following:
+3. Through the application server log file and the agent log file, check whether the agent is operating normally or any error occurs. For the location of log files, see the following:
 
-    -   Agent: _`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
-    -   JEUS 7: _$JEUS_HOME/domains/$HOST_NAME/servers/$NODE_NAME/logs/JeusServer.log_
-    -   JEUS 6: _$JEUS_HOME/logs/$NODE_NAME/JeusServer.log_
+   - Agent: _`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
+   - JEUS 7: _$JEUS_HOME/domains/$HOST_NAME/servers/$NODE_NAME/logs/JeusServer.log_
+   - JEUS 6: _$JEUS_HOME/logs/$NODE_NAME/JeusServer.log_
 
-4.  Check whether the agent has recognized the application server type and service container name.
+4. Check whether the agent has recognized the application server type and service container name.
 
 :::note
 

@@ -7,22 +7,22 @@ pagination_next: release-notes/dotnet/dotnet-2_1_1
 
 #### 2023年7月20日
 
--   <Status>New</Status>WCFサポート
+- <Status>New</Status>WCFサポート
 
-    -   WCFは、ウェブサービスと同様にユーザー指定メソッドを介して追跡します。 したがって、設定したオプションの値を共有します。
+  - WCFは、ウェブサービスと同様にユーザー指定メソッドを介して追跡します。 したがって、設定したオプションの値を共有します。
 
-        -   'webservice_method_enabled'オプションの値が'true'になると、WCFも一緒に追跡対象となります。
+    - 'webservice_method_enabled'オプションの値が'true'になると、WCFも一緒に追跡対象となります。
 
-        -   追跡対象となるメソッドの名前をネームスペースとともに、'webservice_method_prefix'設定に入力してください。
+    - 追跡対象となるメソッドの名前をネームスペースとともに、'webservice_method_prefix'設定に入力してください。
 
--   <Status>Change</Status>Active Stack実行環境を自動感知
+- <Status>Change</Status>Active Stack実行環境を自動感知
 
-    -   OSの.NET frameworkバージョンが4.6.1以降でのみActive Stackが動作します。
+  - OSの.NET frameworkバージョンが4.6.1以降でのみActive Stackが動作します。
 
-    -   `active_stack_enabled`オプションの値が `true`に設定されていてもOSの.NET frameworkバージョンが4.6.1以前ならば、Active Stack収集を中断します。
+  - `active_stack_enabled`オプションの値が `true`に設定されていてもOSの.NET frameworkバージョンが4.6.1以前ならば、Active Stack収集を中断します。
 
-    :::note
+  :::note
 
-    ユーザーのウェブアプリケーションは、4.5バージョン以降でActiveStackをサポートします。 OSの.NET frameworkバージョン確認は[次の文書](https://docs.whatap.io/dotnet/supported-spec#use-tools)の4番項目を参考にしてください。
+  ユーザーのウェブアプリケーションは、4.5バージョン以降でActiveStackをサポートします。 OSの.NET frameworkバージョン確認は[次の文書](https://docs.whatap.io/dotnet/supported-spec#use-tools)の4番項目を参考にしてください。
 
-    :::
+  :::

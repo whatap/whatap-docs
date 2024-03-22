@@ -44,42 +44,42 @@ If the Apache or PHP-FPM service is restarted after installation, the set PHP ex
 
 PHP 확장 모듈이 잘 설치됐는지 다음의 방법으로 확인할 수 있습니다. -->
 
-1.  Check whether _whatap.ini_ has been created in the PHP's additional INI path.
+1. Check whether _whatap.ini_ has been created in the PHP's additional INI path.
 
-    ```bash title=SH
-    $ find / | grep whatap.ini
-    ```
+   ```bash title=SH
+   $ find / | grep whatap.ini
+   ```
 
-2.  Check whether _whatap.so_ has been created in the PHP extension module path.
+2. Check whether _whatap.so_ has been created in the PHP extension module path.
 
-    ```bash title=SH
-    $ find / | grep whatap.so
-    ```
+   ```bash title=SH
+   $ find / | grep whatap.so
+   ```
 
-3.  Check whether the PHP extension module is running.
+3. Check whether the PHP extension module is running.
 
-    ```bash title=SH
-    $ sudo php -m
+   ```bash title=SH
+   $ sudo php -m
 
-    [PHP Modules]
-    bz2
-    calendar
-    Core
-    ctype
-    curl
-    date
-    …
-    whatap   # Check the execution of the whatap module.
-    …
-    [Zend Modules]
-    ```
+   [PHP Modules]
+   bz2
+   calendar
+   Core
+   ctype
+   curl
+   date
+   …
+   whatap   # Check the execution of the whatap module.
+   …
+   [Zend Modules]
+   ```
 
-4.  Check the whatap-php service status.
+4. Check the whatap-php service status.
 
-    ```bash title=SH
-    $ service whatap-php status
-    ```
+   ```bash title=SH
+   $ service whatap-php status
+   ```
 
-5.  In **_Management_** > **_Agent CONFIG._**, check whether the configured servers have been added or not. 
+5. In **_Management_** > **_Agent CONFIG._**, check whether the configured servers have been added or not. 
 
-    <ImgLang img='php-agent-list.png' />
+   <ImgLang img='php-agent-list.png' />

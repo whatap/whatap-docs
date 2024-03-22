@@ -12,45 +12,45 @@ tags:
 
 ## whatap.confファイルの設定
 
--   **xcub** <span class='type'>Int</span>
+- **xcub** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    XCUBエージェントを使用するかどうかを設定します。値が`0`の場合、データは収集されません。値を`1`またはXCUBエージェントのIPアドレスを入力してください。IPアドレスを設定すると、XCUBエージェントのみデータを収集します。
+  XCUBエージェントを使用するかどうかを設定します。値が`0`の場合、データは収集されません。値を`1`またはXCUBエージェントのIPアドレスを入力してください。IPアドレスを設定すると、XCUBエージェントのみデータを収集します。
 
 ## xcub.confファイルの設定
 
 データベースサーバーに、_xcub.conf_ファイルを作成した後、エージェントサーバー情報を入力して追加オプションを設定できます。
 
--   **db** <span class='type'>String</span>
+- **db** <span class='type'>String</span>
 
-    `dbname@dbサーバーIP`形式に設定してください。
+  `dbname@dbサーバーIP`形式に設定してください。
 
--   **dba_pwd** <span class='type'>String</span>
+- **dba_pwd** <span class='type'>String</span>
 
-    パスワードを設定すると、初回実行時に_xcub.pwd_ファイルが作成されます。次に、_xcub.conf_ファイルから `dba_pwd`項目を削除してください。  
+  パスワードを設定すると、初回実行時に_xcub.pwd_ファイルが作成されます。次に、_xcub.conf_ファイルから `dba_pwd`項目を削除してください。  
 
--   **dbx_ip** <span class='type'>String</span>
+- **dbx_ip** <span class='type'>String</span>
 
-    DBXエージェントをインストールしたサーバーのIPアドレスを入力してください。  
+  DBXエージェントをインストールしたサーバーのIPアドレスを入力してください。  
 
--   **dbx_port** <span class='type'>String</span>
+- **dbx_port** <span class='type'>String</span>
 
-    デフォルト値`3002`
+  デフォルト値`3002`
 
-    DBXエージェントと通信するポートを設定します。DBXエージェントは、UDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためにファイアウォールを解除してください。
+  DBXエージェントと通信するポートを設定します。DBXエージェントは、UDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためにファイアウォールを解除してください。
 
-    :::note
+  :::note
 
-    XOSエージェントをインストールした場合、XOSポートと同じように使用するため、設定する必要はありません。
+  XOSエージェントをインストールした場合、XOSポートと同じように使用するため、設定する必要はありません。
 
-    :::  
+  :::  
 
--   **sql_limit** <span class='type'>Int</span>
+- **sql_limit** <span class='type'>Int</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    `sql_text`の**byte size limit**です。長いクエリを確認するには、値を増やして使用してください。
+  `sql_text`の**byte size limit**です。長いクエリを確認するには、値を増やして使用してください。
 
 ## XCUBエージェント実行
 

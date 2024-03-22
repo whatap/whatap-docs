@@ -2,13 +2,13 @@
 
 Check the log file (_$WHATAP_HOME/logs/_) and then resolve each problem as follows:
 
--   _whatap-hook.log_
-    -   CONF FILE ERROR: There is no permission to create the configuration file. Create the file.
-    -   CONF READ ERROR: The configuration file exists but does not have the read role. Give the role to the file.
-    -   LOG FILE ERROR: There is no create permission for the log directory. Create the directory.
-    -   LOGGING ERROR: The log directory exists but does not have the write role.
--   _whatap-boot-`yyyymmdd`.log_
-    -   license or whatap.server.host error: Wrong access key or collection server address
+- _whatap-hook.log_
+  - CONF FILE ERROR: There is no permission to create the configuration file. Create the file.
+  - CONF READ ERROR: The configuration file exists but does not have the read role. Give the role to the file.
+  - LOG FILE ERROR: There is no create permission for the log directory. Create the directory.
+  - LOGGING ERROR: The log directory exists but does not have the write role.
+- _whatap-boot-`yyyymmdd`.log_
+  - license or whatap.server.host error: Wrong access key or collection server address
 
 ### Port conflict
 
@@ -16,25 +16,25 @@ Agents communicating internally use the UDP 6600 port by default. In case of int
 
 ### Unable to set the $WHATAP_HOME environment variable
 
--   **Apache HTTPD**
-      To run the web server with Apache, set the environment variable as follows:
+- **Apache HTTPD**
+    To run the web server with Apache, set the environment variable as follows:
 
-    ```bash title=SH
-    <VirtualHost *:80>
-        #ServerName
-        #DocumentRoot
+  ```bash title=SH
+  <VirtualHost *:80>
+      #ServerName
+      #DocumentRoot
 
-            SetEnv WHATAP_HOME "application path"
-        # Directory
-    </VirtualHost>
-    ```
--   **Manual configuration of an environment variable**
-      If necessary, set an environment variable as follows:
+          SetEnv WHATAP_HOME "application path"
+      # Directory
+  </VirtualHost>
+  ```
+- **Manual configuration of an environment variable**
+    If necessary, set an environment variable as follows:
 
-    ```python title=Python
-    ---
-    import os
-    os.environ.setdefault("WHATAP_HOME", [application path]")
-    import whatap
-    ---
-    ```
+  ```python title=Python
+  ---
+  import os
+  os.environ.setdefault("WHATAP_HOME", [application path]")
+  import whatap
+  ---
+  ```

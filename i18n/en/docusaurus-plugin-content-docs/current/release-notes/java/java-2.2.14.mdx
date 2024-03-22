@@ -8,48 +8,48 @@ displayed_sidebar: releaseSidebar
 
 August 17, 2023
 
--   <Status>Feature</Status> Tracing resilience4j has been added.
+- <Status>Feature</Status> Tracing resilience4j has been added.
 
-    ```ini title='whatap.conf'
-    weaving=resilience4j
-    ```
+  ```ini title='whatap.conf'
+  weaving=resilience4j
+  ```
 
-    :::note
+  :::note
 
-    **CompletableFuture** tracing is required. For more information, see [the following](../../java/async-tracking).
+  **CompletableFuture** tracing is required. For more information, see [the following](../../java/async-tracking).
 
-    :::
+  :::
 
--   <Status>Feature</Status> Tracing undertow has been added.
+- <Status>Feature</Status> Tracing undertow has been added.
 
-    Tracing the undertow-2.3.0 has been added in response to spring-boot-3.0.
+  Tracing the undertow-2.3.0 has been added in response to spring-boot-3.0.
 
-    ```ini title='whatap.conf'
-    # Include in the spring-boot-3.0 configuration.
-    weaving=spring-boot-3.0
+  ```ini title='whatap.conf'
+  # Include in the spring-boot-3.0 configuration.
+  weaving=spring-boot-3.0
 
-    # The undertow tracing can be set separately.
-    weaving=undertow-2.3.0
-    ```
+  # The undertow tracing can be set separately.
+  weaving=undertow-2.3.0
+  ```
 
--   <Status>Feature</Status> Added the option to handle SQL exceptions and HTTP call exceptions as user-defined exceptions.
+- <Status>Feature</Status> Added the option to handle SQL exceptions and HTTP call exceptions as user-defined exceptions.
 
-    ```ini title='whatap.conf'
-    # Default
-    trace_exception_overrite_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # Default
+  trace_exception_overrite_enabled=false
+  ```
 
--   <Status>Feature</Status> Upon occurrence of <code>java.sql.SQLException</code>, added the option to display together with error code.
+- <Status>Feature</Status> Upon occurrence of <code>java.sql.SQLException</code>, added the option to display together with error code.
 
-    ```ini title='whatap.conf'
-    # Default
-    trace_sql_errorcode_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # Default
+  trace_sql_errorcode_enabled=false
+  ```
 
--   <Status>Change</Status> Expanded the <code>biz_exception</code> option range so that transaction level can be adjusted to Info when SQL Exception or HTTP Call Exception occurs.
+- <Status>Change</Status> Expanded the <code>biz_exception</code> option range so that transaction level can be adjusted to Info when SQL Exception or HTTP Call Exception occurs.
 
-    ```ini title='whatap.conf'
-    biz_exception=java.sql.SQLException,org.h2.jdbc.JdbcSQLDataException
-    ```
+  ```ini title='whatap.conf'
+  biz_exception=java.sql.SQLException,org.h2.jdbc.JdbcSQLDataException
+  ```
 
--   <Status>Change</Status> Added some data to the <code>NEW_OVERFLOW</code> alert.
+- <Status>Change</Status> Added some data to the <code>NEW_OVERFLOW</code> alert.

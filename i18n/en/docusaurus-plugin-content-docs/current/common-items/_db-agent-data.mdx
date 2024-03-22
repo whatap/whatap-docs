@@ -1,35 +1,35 @@
 The description of the settings to collect data from the database server
 
--   **multi_db_stat** <span class='type'>Int</span>
+- **multi_db_stat** <span class='type'>Int</span>
 
-    Default `1`
+  Default `1`
 
-    Set whether or not to collect the stat of the multiple database. It is valid only for Oracle (in case of pluggable DB) and postgresql. Set whether or not to collect stats for each DB within the DB instance. To reduce the collection load, you can set it to `0`.
+  Set whether or not to collect the stat of the multiple database. It is valid only for Oracle (in case of pluggable DB) and postgresql. Set whether or not to collect stats for each DB within the DB instance. To reduce the collection load, you can set it to `0`.
 
--   **long_run_session_sec** <span class='type'>Second</span>
+- **long_run_session_sec** <span class='type'>Second</span>
 
-    Default `10`
+  Default `10`
 
-    The session running longer than the set time is treated as the long run session (unit: second).
+  The session running longer than the set time is treated as the long run session (unit: second).
 
--   **tables_hour** <span class='type'>Int</span>
+- **tables_hour** <span class='type'>Int</span>
 
-    Default `5`
+  Default `5`
 
-    Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
+  Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
 
--   **tables_exclude_sys** <span class='type'>Boolean</span>
+- **tables_exclude_sys** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.
+  When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.
 
 <InDoc product="oracle,tibero">
 
--   **tables_min_size** <span class='type'>Int</span>
+- **tables_min_size** <span class='type'>Int</span>
 
-    Default `10`
+  Default `10`
 
-    When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
+  When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
 
 </InDoc>

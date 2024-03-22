@@ -18,39 +18,52 @@ tags:
 
 インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。
 
--   **Debian / Ubuntu**
+- **Debian / Ubuntu**
 
-    ```bash title=SH
-    sudo apt-get update
-    sudo apt-get install whatap-infra
-    sudo service whatap-infra restart
-    ```
+  ```bash title=SH
+  sudo apt-get update
+  sudo apt-get install whatap-infra
+  sudo service whatap-infra restart
+  ```
 
-    特定のバージョンをインストールする場合は、インストール時にバージョン情報を指定します。
+  特定のバージョンをインストールする場合は、インストール時にバージョン情報を指定します。
 
-    ```bash
-    sudo apt-get install whatap-infra={version}
-    ```
+  ```bash
+  sudo apt-get install whatap-infra={version}
+  ```
 
--   **CentOS / Amazon Linux / SUSE / XenServer**
+- **CentOS / Amazon Linux / SUSE / XenServer**
 
-    ```bash title=SH
-    sudo yum update whatap-infra
-    sudo service whatap-infra restart
-    ```
+  ```bash title=SH
+  sudo yum update whatap-infra
+  sudo service whatap-infra restart
+  ```
 
-    特定のバージョンをインストールする場合は、インストール時にバージョン情報を指定します。
+  特定のバージョンをインストールする場合は、インストール時にバージョン情報を指定します。
 
-    ```bash
-    sudo yum install whatap-infra-{version}
-    ```
+  ```bash
+  sudo yum install whatap-infra-{version}
+  ```
 
--   **FreeBSD**
+- **FreeBSD**
 
-    ```bash title=SH
-    wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
-    pkg install whatap-infra.txz
-    ```
+  ```bash title=SH
+  wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+  pkg install whatap-infra.txz
+  ```
+
+## AIX
+
+インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。 
+
+```bash
+stopsrc -s whatap-infra
+cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+rpm -e whatap-infra
+rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+startsrc -s whatap-infra
+```
 
 ## Windows
 

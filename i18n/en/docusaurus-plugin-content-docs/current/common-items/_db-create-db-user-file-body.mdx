@@ -8,17 +8,17 @@
 
 :::note
 
--   After setting it once, it collects data from the database server to be monitored through the encrypted UID.
--   To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
--   In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
--   If special characters are included in `DB_USER` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
+- After setting it once, it collects data from the database server to be monitored through the encrypted UID.
+- To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
+- In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
+- If special characters are included in `DB_USER` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
 
-    ```bash title='Example'
-    ./uid.sh whatap whatap\!pwd
+  ```bash title='Example'
+  ./uid.sh whatap whatap\!pwd
 
-    # If there are multiple special characters, add the escape character(\) for each.
-    ./uid.sh whatap whatap\!\@pwd
-    ```
+  # If there are multiple special characters, add the escape character(\) for each.
+  ./uid.sh whatap whatap\!\@pwd
+  ```
 
 :::
 
@@ -31,13 +31,17 @@ uid.bat "DB_USER" "DB_PASSWORD"
 
 :::note
 
--   After setting it once, it collects data from the database server to be monitored through the encrypted UID.
--   To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
--   In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
+- After setting it once, it collects data from the database server to be monitored through the encrypted UID.
+- To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
+- In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
+- If special characters are included in `DB_USER` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
 
-```bash title='Example'
-uid.bat whatap whatap!pwd
-```
+  ```bash title='Example'
+  ./uid.sh whatap whatap\!pwd
+
+  # If there are multiple special characters, add the escape character(\) for each.
+  ./uid.sh whatap whatap\!\@pwd
+  ```
 
 :::
 

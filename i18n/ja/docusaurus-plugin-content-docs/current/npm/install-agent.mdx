@@ -9,7 +9,7 @@ tags:
 
 WhaTap NPMサービスを使用するためには、[会員登録](https://www.whatap.io/ja/signup/) 後、プロジェクトを作成し、運用中のサーバーにNPMエージェントをインストールする必要があります。
 
-{@include: ../getting-started/_create-project-v2.mdx}
+{@include: ../getting-started/_create-project-v2.mdx} 
 
 {@include: ../getting-started/_accesskey.mdx} 
 
@@ -60,7 +60,7 @@ sudo yum install whatap-npmd
 
 :::note
 
-AWS環境でリソース情報を収集するには、[次の文書](set-aws-resource-options)を参考にしてください。
+AWS EC2環境でリソース情報を収集するには、[次の文書](set-aws-resource-options#set-aws-resource-ec2)を参考にしてください。
 
 :::
 
@@ -89,25 +89,31 @@ Installation complete!
 
 **_インストール案内_**セクションで**_Kubernetes_**タブを選択し、画面の案内に従ってエージェントのインストールを進めてください。
 
+:::note
+
+AWS EKS環境でリソース情報を収集するには、[次の文書](set-aws-resource-options#set-aws-resource-eks)を参考にしてください。
+
+:::
+
 ### エージェント生成
 
-1.  エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードしてください。
+1. エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードしてください。
 
-2.  ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
+2. ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
 
-3.  マスターノードで次のコマンドを実行し、エージェントを作成してください。
+3. マスターノードで次のコマンドを実行し、エージェントを作成してください。
 
-    ```bash
-    kubectl apply -f whatap_npmd.yaml
-    ```
+   ```bash
+   kubectl apply -f whatap_npmd.yaml
+   ```
 
-4.  次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認してください。
+4. 次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認してください。
 
-    ```bash
-    kubectl get pod -n whatap-npm-ns
-    ```
+   ```bash
+   kubectl get pod -n whatap-npm-ns
+   ```
 
-    ![NPMエージェントのインストール](/img/npm-k8s-check-running.png)
+   ![NPMエージェントのインストール](/img/npm-k8s-check-running.png)
 
 ## TagRuleオプション設定(選択事項)
 

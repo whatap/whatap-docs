@@ -8,23 +8,23 @@ displayed_sidebar: releaseSidebar
 
 January 30, 2024
 
--   <Status>Fixed</Status> The collection interval has been set to 5 seconds for <code>server_disk</code>, <code>server network</code>, and <code>server_base</code> categories when collecting metrics.
+- <Status>Fixed</Status> The collection interval has been set to 5 seconds for <code>server_disk</code>, <code>server network</code>, and <code>server_base</code> categories when collecting metrics.
 
--   <Status>Changed</Status> When collecting metrics, added <b>external-ip</b> and <b>internal-ip</b> of the node in the <code>kube_node</code> category.
+- <Status>Changed</Status> When collecting metrics, added <b>external-ip</b> and <b>internal-ip</b> of the node in the <code>kube_node</code> category.
 
-    :::tip
+  :::tip
 
-    You can see it in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" /> of the Kubernetes project.
+  You can see it in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" /> of the Kubernetes project.
 
-    -   **InternalIP**
+  - **InternalIP**
 
-        This IP address can be accessed only inside the cluster. This address is used by other nodes or pods inside the cluster to communicate with each other. This internal IP address is not accessible from outside and is typically assigned within the private network address range.
+    This IP address can be accessed only inside the cluster. This address is used by other nodes or pods inside the cluster to communicate with each other. This internal IP address is not accessible from outside and is typically assigned within the private network address range.
 
-    -   **ExternalIP**
+  - **ExternalIP**
 
-        The IP address of the node is accessible from external networks. This address allows the systems outside the cluster to access the node. Not all nodes have external IP addresses. The assigned external IP address may differ depending on the environment that constitutes the cluster (e.g. Cloud provider, bare metal environment).
+    The IP address of the node is accessible from external networks. This address allows the systems outside the cluster to access the node. Not all nodes have external IP addresses. The assigned external IP address may differ depending on the environment that constitutes the cluster (e.g. Cloud provider, bare metal environment).
 
-    :::
+  :::
 
 :::info
 

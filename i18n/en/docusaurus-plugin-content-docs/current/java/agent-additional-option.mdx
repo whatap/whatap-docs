@@ -8,44 +8,44 @@ tags:
 
 Depending on your application environment, the agent defaults alone may not provide the desired level of information. The following are the options excluded from the agent default settings. If necessary, you can add the following options for application.
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+- **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It collects the SQL parameters.
+  It collects the SQL parameters.
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    It collects the HTTP parameters.
+  It collects the HTTP parameters.
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects HTTP headers.
+  It collects HTTP headers.
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span>
+- **trace_http_client_ip_header_key** <span class='type'>String</span>
 
-    Default `X-Forwarded-For`
+  Default `X-Forwarded-For`
 
-    It extracts the user IPs from the HTTP header keys.
+  It extracts the user IPs from the HTTP header keys.
 
--   **trace_user_method** / **wclient_cookie_limit** <span class='type'>Boolean</span>
+- **trace_user_method** / **wclient_cookie_limit** <span class='type'>Boolean</span>
 
-    Default `cookie`
+  Default `cookie`
 
-    It traces user counts based on the cookie.
+  It traces user counts based on the cookie.
 
-    :::note
+  :::note
 
-    In case of Java Agent 2.2.0 or later, use the `wclient_trace_type` option.
+  In case of Java Agent 2.2.0 or later, use the `wclient_trace_type` option.
 
-    :::
+  :::
 
--   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
+- **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If SAP JCO is used, it traces the SAP functions.
+  If SAP JCO is used, it traces the SAP functions.

@@ -9,7 +9,7 @@ const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 
 // const config = {
 module.exports = Promise.resolve({
-  title: 'WhaTap',
+  title: 'WhaTap Docs',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   baseUrl: '/',
@@ -187,6 +187,10 @@ module.exports = Promise.resolve({
         {
           name: 'naver-site-verification',
           content: '0c21fc5664a467108fb762ade47a3f81ee9b88ed',
+        },
+        {
+          name: 'google-site-verification',
+          content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
       docs: {
@@ -433,13 +437,6 @@ module.exports = Promise.resolve({
             type: 'doc',
             docId: 'postgresql/monitoring-intro',
             position: "left",
-            label: 'PostgreSQL V2 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'postgresql-v1/monitoring-intro',
-            position: "left",
             label: 'PostgreSQL 모니터링',
             className: 'hidden',
           },
@@ -452,16 +449,9 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'mysql-v1/monitoring-intro',
-            position: "left",
-            label: 'MySQL 모니터링 V1',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
             docId: 'mysql/monitoring-intro',
             position: "left",
-            label: 'MySQL 모니터링 V2',
+            label: 'MySQL 모니터링',
             className: 'hidden',
           },
           {

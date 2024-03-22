@@ -8,39 +8,39 @@ displayed_sidebar: releaseSidebar
 
 August 31, 2023
 
--   <Status>Feature</Status> kafka-clients-2.4.0 tracing
+- <Status>Feature</Status> kafka-clients-2.4.0 tracing
 
-    ```ini title='whatap.conf'
-    weaving=kafka-clients-2.4.0
-    ```
+  ```ini title='whatap.conf'
+  weaving=kafka-clients-2.4.0
+  ```
 
--   <Status>Feature</Status> Added the function to ignore <code>java.sql.SQLException</code> with specific error codes.
+- <Status>Feature</Status> Added the function to ignore <code>java.sql.SQLException</code> with specific error codes.
 
-    ```ini title='whatap.conf'
-    # example
-    ignore_sql_error_code_set=22001,2009
-    ```
+  ```ini title='whatap.conf'
+  # example
+  ignore_sql_error_code_set=22001,2009
+  ```
 
--   <Status>Feature</Status> Added the error stack display function in transactions: The first error stack is displayed when multiple errors occur in transactions.
+- <Status>Feature</Status> Added the error stack display function in transactions: The first error stack is displayed when multiple errors occur in transactions.
 
-    For more information about transaction error stacks, see the following.
+  For more information about transaction error stacks, see the following.
 
-    <Link to='../../java/agent-transaction-error-stack' target='_blank' className='ext-link'>Transaction error stack</Link>
+  <Link to='../../java/agent-transaction-error-stack' target='_blank' className='ext-link'>Transaction error stack</Link>
 
--   <Status>Changed</Status> Upon occurrence of <code>java.sql.SQLException</code>, modified the default value for display of error codes to <code>true</code>.
+- <Status>Changed</Status> Upon occurrence of <code>java.sql.SQLException</code>, modified the default value for display of error codes to <code>true</code>.
 
-    ```ini title='whatap.conf'
-    # default
-    trace_sql_errorcode_enabled=true
-    ```
+  ```ini title='whatap.conf'
+  # default
+  trace_sql_errorcode_enabled=true
+  ```
 
--   <Status>Changed</Status> To prioritize the custom exception, modified the default value of <code>trace_exception_overwrite_enabled</code> to <code>true</code>.
+- <Status>Changed</Status> To prioritize the custom exception, modified the default value of <code>trace_exception_overwrite_enabled</code> to <code>true</code>.
 
-    ```ini title='whatap.conf'
-    # default
-    trace_exception_overwrite_enabled=true
-    ```
+  ```ini title='whatap.conf'
+  # default
+  trace_exception_overwrite_enabled=true
+  ```
 
--   <Status>Changed</Status> Collected SQL parameters for the <code>java.util.Date</code> type.
+- <Status>Changed</Status> Collected SQL parameters for the <code>java.util.Date</code> type.
 
--   <Status>Fixed</Status> Added handling for the cases where the log is <code>null</code> when using the Java agent's logsink function.
+- <Status>Fixed</Status> Added handling for the cases where the log is <code>null</code> when using the Java agent's logsink function.

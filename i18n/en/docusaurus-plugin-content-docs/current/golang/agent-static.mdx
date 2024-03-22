@@ -9,48 +9,48 @@ tags:
   - Application
 ---
 
--   **stat_domain_enabled** <span class='type'>Boolean</span>
+- **stat_domain_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects transaction statistics for each domain.
+  It collects transaction statistics for each domain.
 
--   **stat_domain_max_count** <span class='type'>Int</span>
+- **stat_domain_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    Maximum number of records of transaction statistics for each domain that collects for 5 minutes.
+  Maximum number of records of transaction statistics for each domain that collects for 5 minutes.
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+- **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects the version-dependent statistics between callers and callees among multiple server transactions.
+  It collects the version-dependent statistics between callers and callees among multiple server transactions.
 
--   **mtrace_spec** <span class='type'>String</span>
+- **mtrace_spec** <span class='type'>String</span>
 
-    Default: `v1`
+  Default: `v1`
 
-    Set the application version of the current instance. Any string can be specified. The data is used for call statistics. 
+  Set the application version of the current instance. Any string can be specified. The data is used for call statistics. 
 
--   **stat_mtrace_max_count** <span class='type'>Int</span>
+- **stat_mtrace_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    It collects the version-dependent statistics between callers and callees among multiple server transactions.
+  It collects the version-dependent statistics between callers and callees among multiple server transactions.
 
--   **stat_referer_enabled** <span class='type'>Boolean</span>
+- **stat_referer_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects transaction statistics by referer.
+  It collects transaction statistics by referer.
 
--   **stat_referer_max_count** <span class='type'>Int</span>
+- **stat_referer_max_count** <span class='type'>Int</span>
 
-    Default `7000`
+  Default `7000`
 
-    Maximum number of records of transaction statistics for each referer that collects by JVM for 5 minutes.
+  Maximum number of records of transaction statistics for each referer that collects by JVM for 5 minutes.
 
--   **whatap.okind** <span class='type'>String</span>
+- **whatap.okind** <span class='type'>String</span>
 
-    Arbitrarily assign it for the group topology. By setting multiple agents together, the topology can be checked by the group name.
+  Arbitrarily assign it for the group topology. By setting multiple agents together, the topology can be checked by the group name.

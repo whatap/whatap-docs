@@ -188,11 +188,11 @@ target IPやサービスの接続状態をログモニタリングのliveTailで
 
 `logsink_rt_enabled`オプションを`true`に設定し、`#RemoteTrace`をカテゴリ別にログを収集することで、この機能を有効にします。
 
--   正常なレスポンスの場合のレベルはOK、エラーの場合のレベルはエラーです。
+- 正常なレスポンスの場合のレベルはOK、エラーの場合のレベルはエラーです。
 
--   通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログは記録されます。デフォルト値は30秒です。
+- 通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログは記録されます。デフォルト値は30秒です。
 
--   エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログは記録されます。デフォルト値は5秒です。
+- エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログは記録されます。デフォルト値は5秒です。
 
 ```ini title='whatap.conf'
 logsink_rt_enabled=false
@@ -205,13 +205,13 @@ logsink_rt_ok_interval=30000
 
 HttpやDatabaseの呼び出し時にエラーが発生したときに、レスポンスが指定した時間より遅い場合、通知を受け取る機能を追加しました。
 
--   `exception_alert_enabled`オプションをtrueに設定して、この機能を有効にします。
+- `exception_alert_enabled`オプションをtrueに設定して、この機能を有効にします。
 
--   `exception_alert_stack_size`オプションを使用すると、エラースタックの長さを指定して通知メッセージを受信することができます。
+- `exception_alert_stack_size`オプションを使用すると、エラースタックの長さを指定して通知メッセージを受信することができます。
 
--   `exception_alert_silent_time`オプションで指定した期間は、エラー通知を無効にできます。
+- `exception_alert_silent_time`オプションで指定した期間は、エラー通知を無効にできます。
 
--   通知メッセージは、url、`status_code`、`error_message`、`error_stack`などが表示されます。
+- 通知メッセージは、url、`status_code`、`error_message`、`error_stack`などが表示されます。
 
 ```ini title='whatap.conf'
 # デフォルト値

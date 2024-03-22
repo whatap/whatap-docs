@@ -37,8 +37,8 @@ Let's look at how to determine which type of failure has occurred depending on t
 
 The horizontal axis is the transaction end time, and the vertical axis is the response time. The response times to the user requests appear as rectangles on the chart for each time the transactions end. This allows you to determine whether the user request has been properly responded to. The colors of the square boxes on the hitmap transaction chart have the following meanings.
 
--   <span class='normal'>Blue</span>: Normal transaction
--   <span class='slow'>Orange</span>, <span class='vslow'>Red</span>: An error occurred or the request was denied. The displayed color gets closer to red, depending on the frequency of errors.
+- <span class='normal'>Blue</span>: Normal transaction
+- <span class='slow'>Orange</span>, <span class='vslow'>Red</span>: An error occurred or the request was denied. The displayed color gets closer to red, depending on the frequency of errors.
 
 The most important part to look at in this chart is where the transaction boxes are lined up horizontally or vertically. See the following hitmap pattern.
 
@@ -143,9 +143,9 @@ You can find the slowed section in the **_Table view_** tab. In the same way, ch
 
 :::note
 
--   **Active stack** saves snapshots every 10 seconds, so you can check them at any section. Because the probability increases when identifying the section where the response time can be long, you can find the point where the section has been widened through the **active stack**.
+- **Active stack** saves snapshots every 10 seconds, so you can check them at any section. Because the probability increases when identifying the section where the response time can be long, you can find the point where the section has been widened through the **active stack**.
 
--   In the **_TX trace_** list, the transactions that include the **active stack** displays the <span class='mark active'>A</span> icon.
+- In the **_TX trace_** list, the transactions that include the **active stack** displays the <span class='mark active'>A</span> icon.
 
 :::
 
@@ -155,53 +155,53 @@ WhaTap monitoring service repeatedly snapshots the **active stack** to find recu
 
 :::note
 
--   Select **_Record summary_** in the **_Transaction information_** window, the basic information of the transaction appears. It displays the client IP, used device, OS, country, and such. You can also see how many calls are being used by looking at the number and times of patches, the number and times of SQLs, and more.
+- Select **_Record summary_** in the **_Transaction information_** window, the basic information of the transaction appears. It displays the client IP, used device, OS, country, and such. You can also see how many calls are being used by looking at the number and times of patches, the number and times of SQLs, and more.
 
-    <ImgLang img='best-p/hitmap-transaction-sample-08.png' />
+  <ImgLang img='best-p/hitmap-transaction-sample-08.png' />
 
--   For more information about **_Transaction information_**, see [the following](https://docs.whatap.io/java/trs-profile#transaction-info).
+- For more information about **_Transaction information_**, see [the following](https://docs.whatap.io/java/trs-profile#transaction-info).
 
 :::
 
 ## Analysis of call relationship
 
--   **_Methods_**
+- **_Methods_**
 
-    Select **_Methods_** tab. Like SQL, you can also see how many times a method was called within a single transaction. 
+  Select **_Methods_** tab. Like SQL, you can also see how many times a method was called within a single transaction. 
 
-    <ImgLang img='analysis-tx-method-summary.png' />
+  <ImgLang img='analysis-tx-method-summary.png' />
 
-    Based on this information, you can check whether there are methods that have been repeatedly executed and the same method has been called repeatedly to find improvements.
+  Based on this information, you can check whether there are methods that have been repeatedly executed and the same method has been called repeatedly to find improvements.
 
--   **_SQLs_**
+- **_SQLs_**
 
-    Let's look at the case where the cause of failure is SQL, not internal logic. To see the SQL executions statistically within a single transaction, select the **_SQLs_** tab.
+  Let's look at the case where the cause of failure is SQL, not internal logic. To see the SQL executions statistically within a single transaction, select the **_SQLs_** tab.
 
-    <ImgLang img='analysis-tx-sql-summary.png' />
+  <ImgLang img='analysis-tx-sql-summary.png' />
 
-    Check how many times the same SQL has been called. Find the way to reduce the burden on the DB by decreasing the number of calls in the logic or find another workaround. Reducing the burden on the database is very important for server operation. The application server can be scale out. You can continuously increase the resources. On the other hand, splitting a database entails a huge amount of application redevelopment. The basis of performance tuning should be in the direction of reducing the burden on the database in the application as much as possible. 
+  Check how many times the same SQL has been called. Find the way to reduce the burden on the DB by decreasing the number of calls in the logic or find another workaround. Reducing the burden on the database is very important for server operation. The application server can be scale out. You can continuously increase the resources. On the other hand, splitting a database entails a huge amount of application redevelopment. The basis of performance tuning should be in the direction of reducing the burden on the database in the application as much as possible. 
 
--   **_HTTP Calls_**
+- **_HTTP Calls_**
 
-    <ImgLang img='analysis-tx-http-call.png' />
+  <ImgLang img='analysis-tx-http-call.png' />
 
-    Select the **_HTTP Calls_** tab. It provides the number of calls, total time, and average time for HTTP calls.
+  Select the **_HTTP Calls_** tab. It provides the number of calls, total time, and average time for HTTP calls.
 
--   **_Multi-transaction_**
+- **_Multi-transaction_**
 
-    The monolithic environment has a single APM configuration. In this case, check only the transactions for the APM. Recently, the technology like microservice architecture has become mainstream. Because a single APM is broken down into smaller chunks, the transactions that must be collected also increase. In this case, collecting all the splitted transactions takes much load, so the transactions related to a targeet transaction are also collected together. The transactions linked to other APMs are defined by WhaTap as **multi-transaction**. In the **_TX trace_** list, the transactions that include **multi-transactions** display the <span class='mark multi'>M</span> icon.
+  The monolithic environment has a single APM configuration. In this case, check only the transactions for the APM. Recently, the technology like microservice architecture has become mainstream. Because a single APM is broken down into smaller chunks, the transactions that must be collected also increase. In this case, collecting all the splitted transactions takes much load, so the transactions related to a targeet transaction are also collected together. The transactions linked to other APMs are defined by WhaTap as **multi-transaction**. In the **_TX trace_** list, the transactions that include **multi-transactions** display the <span class='mark multi'>M</span> icon.
 
-    <ImgLang img='analysis-tx-multi.png' />
+  <ImgLang img='analysis-tx-multi.png' />
 
-    Select the **_Multi-transaction_** tab. The data for each transaction can be seen on the chart. You can select **_Table_** and **_Tree_** to see the call relationships between transactions in a table or tree structure format.
+  Select the **_Multi-transaction_** tab. The data for each transaction can be seen on the chart. You can select **_Table_** and **_Tree_** to see the call relationships between transactions in a table or tree structure format.
 
-    :::note
+  :::note
 
-    -   For more information about the multi-transaction trace, see [the following](https://docs.whatap.io/java/trs-multi-trace).
+  - For more information about the multi-transaction trace, see [the following](https://docs.whatap.io/java/trs-multi-trace).
 
-    -   Depending on the transaction, the **_Multi transaction_** tab may not be available.
+  - Depending on the transaction, the **_Multi transaction_** tab may not be available.
 
-    :::
+  :::
 
 ## Analysis of transaction logs
 
@@ -223,9 +223,9 @@ Check the patterns and common factors in **_Hitmap Transaction_**. Analyze the m
 
 **Things to read together**
 
--   [Monthly WhaTap: Using the application monitoring profile](https://www.whatap.io/ko/blog/71/)
--   [Monthly WhaTap: Want to see individual transaction distribution?](https://www.whatap.io/ko/blog/79/)
--   [Monthly WhaTap: WhaTap machine learning to protect your precious holiday](https://www.whatap.io/ko/blog/113/)
--   [WhaTap 5-minute seminar: Analyzing the hitmap horizontal and vertical lines](https://youtu.be/JHVYfJjtYQo)
+- [Monthly WhaTap: Using the application monitoring profile](https://www.whatap.io/ko/blog/71/)
+- [Monthly WhaTap: Want to see individual transaction distribution?](https://www.whatap.io/ko/blog/79/)
+- [Monthly WhaTap: WhaTap machine learning to protect your precious holiday](https://www.whatap.io/ko/blog/113/)
+- [WhaTap 5-minute seminar: Analyzing the hitmap horizontal and vertical lines](https://youtu.be/JHVYfJjtYQo)
 
 :::

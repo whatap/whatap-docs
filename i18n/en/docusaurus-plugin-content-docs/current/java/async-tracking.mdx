@@ -19,9 +19,9 @@ It guides you how to collect CompletableFuture methods through the Java agent se
 
 Add the CompletableFuture method to hook into your Java application project as an agent.
 
--   Method name: Fixed to `trace`.
+- Method name: Fixed to `trace`.
 
--   ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
+- ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
 
 ```java
 package io.home.test.util;
@@ -56,33 +56,33 @@ hook_completablefuture_patterns=io.home.test.util.W.*
 
 :::note
 
--   If you have a context, add the `trace` method to connect the transaction.
+- If you have a context, add the `trace` method to connect the transaction.
 
--   If you have no context, start the service with the `hook_service_patterns` option.
+- If you have no context, start the service with the `hook_service_patterns` option.
 
 :::
 
 ### Usage examples
 
--   **Original**
+- **Original**
 
-    ```java showLineNumbers
-    public CompletableFuture<String> serviceATimeout() {
-        return CompletableFuture.supplyAsync(() -> {
-            RestTemplate restTemplate = new RestTemplate();
-            return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
-        });
-    }
-    ```
+  ```java showLineNumbers
+  public CompletableFuture<String> serviceATimeout() {
+      return CompletableFuture.supplyAsync(() -> {
+          RestTemplate restTemplate = new RestTemplate();
+          return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
+      });
+  }
+  ```
 
--   Application of `io.home.test.util.W.trace()`
+- Application of `io.home.test.util.W.trace()`
 
-    ```java showLineNumbers {3}
-    // Application of io.home.test.util.W.trace()
-    public CompletableFuture<String> serviceATimeout() {
-        return CompletableFuture.supplyAsync(W.trace(() -> {
-            RestTemplate restTemplate = new RestTemplate();
-            return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
-        }));
-    }
-    ```
+  ```java showLineNumbers {3}
+  // Application of io.home.test.util.W.trace()
+  public CompletableFuture<String> serviceATimeout() {
+      return CompletableFuture.supplyAsync(W.trace(() -> {
+          RestTemplate restTemplate = new RestTemplate();
+          return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
+      }));
+  }
+  ```

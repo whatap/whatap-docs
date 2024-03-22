@@ -50,57 +50,57 @@ Select a field. Fields that are not selected are not passed to the next step.
 | like        | Retrieves only the fields that have the set value as a substring.           |
 | notlike     | Retrieves only the fields that have no set value as a substring.            |
 
--   1 when all fields are selected (`SELECT` command, when all operands are not entered)
+- 1 when all fields are selected (`SELECT` command, when all operands are not entered)
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  ```
 
--   2 when all fields are selected (`SELECT` command, when all operands are not entered)
+- 2 when all fields are selected (`SELECT` command, when all operands are not entered)
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```
 
--   When setting the field name to search, use the string array operands.
+- When setting the field name to search, use the string array operands.
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode]
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode]
+  ```
 
--   In case the value of the field to be set by `default` is single and the `like` option is used
+- In case the value of the field to be set by `default` is single and the `like` option is used
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT {default:time, like:_m}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT {default:time, like:_m}
+  ```
 
--   If the fields to be set by `default` are multiple and the `like` option is used
+- If the fields to be set by `default` are multiple and the `like` option is used
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT {default:[time,name], like:_m}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT {default:[time,name], like:_m}
+  ```
 
--   If both `like` and `notlike` need to be used, enter the `SELECT` command in two separate steps.
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT {default:[time,name], like:name}
-    SELECT {notlike:pname}
-    ```
+- If both `like` and `notlike` need to be used, enter the `SELECT` command in two separate steps.
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT {default:[time,name], like:name}
+  SELECT {notlike:pname}
+  ```
 
 :::caution
 
--   To select all fields, do not enter any operand. 
--   `like` and `notlike` cannot be set at a time. It needs to be divided in `SELECT` for setting. 
+- To select all fields, do not enter any operand. 
+- `like` and `notlike` cannot be set at a time. It needs to be divided in `SELECT` for setting. 
 
 :::
 
@@ -123,37 +123,37 @@ Adds a field.
 | okind       | By setting the name of the `okind` column, it creates a column with the value of `okind name` that corresponds to the value of `okind`. |
 | onode       | By setting the name of the `onode` column, it creates a column with the value of `onode name` that corresponds to the value of `onode`. |
 
--   In case of setting the `value` property
+- In case of setting the `value` property
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    CREATE {key:active$, value:'#'}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  CREATE {key:active$, value:'#'}
+  ```
 
--   In case of setting the `from` property
+- In case of setting the `from` property
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    CREATE {key:_id_, from:okind }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  CREATE {key:_id_, from:okind }
+  ```
 
--   In case of setting the `expr` property
+- In case of setting the `expr` property
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated*0.5))/apdex_total " }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated*0.5))/apdex_total " }
+  ```
 
--   In case of setting the `okind` property
-    ```sql
-    CATEGORY agent_list
-    FLEXLOAD
-    CREATE { key : my_okind_name, okind : okind}
-    SELECT [ time, okind, okindName, my_okind_name]
-    ```
+- In case of setting the `okind` property
+  ```sql
+  CATEGORY agent_list
+  FLEXLOAD
+  CREATE { key : my_okind_name, okind : okind}
+  SELECT [ time, okind, okindName, my_okind_name]
+  ```
 
 ## DELETE{#delete}
 
@@ -175,13 +175,13 @@ Be sure to enter it as a string array. `DELETE` `pcode` does not work. (as of 20
 
 Changes the field name.
 
--   Change the name of the `pcode` field to `my_pcode`.
+- Change the name of the `pcode` field to `my_pcode`.
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    RENAME { src : pcode, dst : my_pcode }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  RENAME { src : pcode, dst : my_pcode }
+  ```
 
 :::caution
 
@@ -203,15 +203,15 @@ The data is grouped.
 | merge            | Set to save all data of the set column in MetricValue (composite value). Internally, values are continuously added to the MetricValue that has the set value as the key.                               |
 | rows             | Set the maximum number of data that can be stored in a group. The default value is `1000`.                                                                                                             |
 
--   For the set field, it sets it with `merge` to MetricValue and then performs the sum operation.
+- For the set field, it sets it with `merge` to MetricValue and then performs the sum operation.
 
-    ```
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
-    GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
-    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
-    ```
+  ```
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
+  GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
+  UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+  ```
 
 :::note
 
@@ -223,9 +223,9 @@ The `merge` field must be set separately. However, if the `last`, `merge`, and `
 
 If the `time` field does not exist in the record, all data is grouped. 
 
--   Before executing the `GROUP` command, the `time` field has not been set with the `SELECT` command.
--   The name of the `time` field has been changed with the `RENAME` command.
--   The `time` field has been deleted with the `DELETE` command.
+- Before executing the `GROUP` command, the `time` field has not been set with the `SELECT` command.
+- The name of the `time` field has been changed with the `RENAME` command.
+- The `time` field has been deleted with the `DELETE` command.
 
 :::
 
@@ -249,61 +249,61 @@ It changes the data of the field. You can select an operation for the fields tha
 
 You can modify data values by setting the following options.
 
--   In case of setting the `value` option
+- In case of setting the `value` option
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode,pname, tps]
-    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-    UPDATE {key:tps, value:sum}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode,pname, tps]
+  GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+  UPDATE {key:tps, value:sum}
+  ```
 
--   If the `datetime` and `timezone` options are set, `CREATE {key:localtime, from:time}` copies the value in the `time` field as a value of `long` type.
+- If the `datetime` and `timezone` options are set, `CREATE {key:localtime, from:time}` copies the value in the `time` field as a value of `long` type.
 
-    ```sql
-    CATEGORY app_user
-    TAGLOAD
-    SELECT [time, pcode, pname, logbits]
-    CREATE {key:localtime, from:time}
-    UPDATE {key:localtime, datetime:'yyyyMMdd HH:mm:ss', timezone: GMT9}
-    ```
+  ```sql
+  CATEGORY app_user
+  TAGLOAD
+  SELECT [time, pcode, pname, logbits]
+  CREATE {key:localtime, from:time}
+  UPDATE {key:localtime, datetime:'yyyyMMdd HH:mm:ss', timezone: GMT9}
+  ```
 
--   In case of setting the `notnull` option
+- In case of setting the `notnull` option
 
-    ```sql
-    UPDATE {key:tps, notnull:0}
-    ```
+  ```sql
+  UPDATE {key:tps, notnull:0}
+  ```
 
--   In case of setting `pct`
+- In case of setting `pct`
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [ time, pcode, tx_count ]
-    GROUP { key : pcode, listup : tx_count}
-    UPDATE { key : tx_count, pct : 90}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [ time, pcode, tx_count ]
+  GROUP { key : pcode, listup : tx_count}
+  UPDATE { key : tx_count, pct : 90}
+  ```
 
--   In case of setting the `decimal` option
+- In case of setting the `decimal` option
 
-    ```sql
-    CATEGORY app_counter 
-    TAGLOAD 
-    SELECT [ time, oname, apdex_satisfied, apdex_tolerated, apdex_total]  
-    GROUP  { timeunit:5m, pk:oname}
-    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
-    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated/2.0))/apdex_total " } 
-    UPDATE { key:time, datetime:'yyyyMMdd HH:mm:ss', timezone:'GMT9'}
-    UPDATE { key:apdex, decimal:'0.000'} 
-    ROWNUM
-    ```
+  ```sql
+  CATEGORY app_counter 
+  TAGLOAD 
+  SELECT [ time, oname, apdex_satisfied, apdex_tolerated, apdex_total]  
+  GROUP  { timeunit:5m, pk:oname}
+  UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+  CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated/2.0))/apdex_total " } 
+  UPDATE { key:time, datetime:'yyyyMMdd HH:mm:ss', timezone:'GMT9'}
+  UPDATE { key:apdex, decimal:'0.000'} 
+  ROWNUM
+  ```
 
 :::caution
 
--   `{datetime:'yyyyMMdd HH:mm:ss'}` contains colon (:), so it must be enclosed in single quotation marks ('') or double quotation marks ("").
--   `pct: 90` indicates that the 90%th value is selected. However, the field must have been set as the `listup` field when executing the `GROUP` command. 
--   Its format is [Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html).
+- `{datetime:'yyyyMMdd HH:mm:ss'}` contains colon (:), so it must be enclosed in single quotation marks ('') or double quotation marks ("").
+- `pct: 90` indicates that the 90%th value is selected. However, the field must have been set as the `listup` field when executing the `GROUP` command. 
+- Its format is [Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html).
 
 :::
 
@@ -317,24 +317,24 @@ The data is aligned.
 | sort   | Set the sorting direction. (asc or desc)                                   |
 | rows   | Set the maximum number of data with the same time to keep. Default `10000` |
 
--   In case of setting `key`, `sort`, and `rows`
+- In case of setting `key`, `sort`, and `rows`
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pname, host_ip, pid, httpc_count]
-    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:2}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pname, host_ip, pid, httpc_count]
+  ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:2}
+  ```
 
--   In case of sorting by dividing into two
+- In case of sorting by dividing into two
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pname, host_ip, pid, httpc_count]
-    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:1000}
-    ORDER  {key:tps, sort:desc}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pname, host_ip, pid, httpc_count]
+  ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:1000}
+  ORDER  {key:tps, sort:desc}
+  ```
 
 :::caution
 
@@ -375,8 +375,8 @@ Before introducing the `JOIN` command, let's understand the concept of the comma
 
 Data retrieved from both MXQLs can be merged for a view. `RENAME` and `INJECT` commands are interim steps to process the `JOIN` command, and they do not affect the join operation. 
 
--   First query: CATEGORY agent_list FLEXLOAD 
--   Second query: /app/act_tx/act_tx_oid
+- First query: CATEGORY agent_list FLEXLOAD 
+- Second query: /app/act_tx/act_tx_oid
 
 ```sql
 CATEGORY agent_list
@@ -413,8 +413,8 @@ All data to be saved in Yard has the values for `time` and `oid`. This indicates
 
 :::caution
 
--   The first query used in the `JOIN` command is a custom MXQL query, and the second query allows only the [query that can be set as path](mxql-guide#custom-mxql). 
--   You can `JOIN` three or more categories by registering all MXQL queries using the `JOIN` command as a file in Yard. 
+- The first query used in the `JOIN` command is a custom MXQL query, and the second query allows only the [query that can be set as path](mxql-guide#custom-mxql). 
+- You can `JOIN` three or more categories by registering all MXQL queries using the `JOIN` command as a file in Yard. 
 
 :::
 
@@ -550,33 +550,33 @@ It is used to change the value of a numeric field. (`time` value cannot be chang
 | over        | Sets the minimum value for all numeric data. |
 | under       | Sets the maximum value for all numeric data. |
 
--   In case of setting `mul`
+- In case of setting `mul`
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ADJUST {mul : 100}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ADJUST {mul : 100}
+  ```
 
--   In case of setting `over`
+- In case of setting `over`
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ADJUST { key:[rate], over:30}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ADJUST { key:[rate], over:30}
+  ```
 
-    ![](https://img.whatap.io/media/images/mxql-9.png)
+  ![](https://img.whatap.io/media/images/mxql-9.png)
 
--   In case of setting `under`
+- In case of setting `under`
 
-    ```sql
-    ADJUST { key:[rate], under:30}
-    ```
+  ```sql
+  ADJUST { key:[rate], under:30}
+  ```
 
-    ![](https://img.whatap.io/media/images/mxql-10.png)
+  ![](https://img.whatap.io/media/images/mxql-10.png)
 
 ## FILTER{#filter}
 
@@ -591,54 +591,54 @@ Only the data with specific conditions is passed to the next step.
 | over        | Searches data equal to or greater than a specific value. (greater or equal to) |
 | under       | Searches data less than or equal to a specific value (less or equal to).       |
 
--   In case of applying the `expr` option
+- In case of applying the `expr` option
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER {expr : "tx_count != 0"}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER {expr : "tx_count != 0"}
+  ```
 
--   In case of applying the `value` option
+- In case of applying the `value` option
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, value : 5}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, value : 5}
+  ```
 
--   In case of applying the `exist` option
+- In case of applying the `exist` option
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, exist : true}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, exist : true}
+  ```
 
--   In case of applying the `notexist` option
+- In case of applying the `notexist` option
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, notexist : true}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, notexist : true}
+  ```
 
--   In case of applying the `under` option
+- In case of applying the `under` option
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, under : 6}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, under : 6}
+  ```
 
 :::caution
 
--   A case where the data is 0 is also a case where the data exists. It is applied to `{exist: true}`.
--   `{exist : false}` and `{notexist : false}` are impossible. Be sure to use `{notexist : true}` and `{exist : true}`.
+- A case where the data is 0 is also a case where the data exists. It is applied to `{exist: true}`.
+- `{exist : false}` and `{notexist : false}` are impossible. Be sure to use `{notexist : true}` and `{exist : true}`.
 
 :::

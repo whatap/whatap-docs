@@ -6,48 +6,48 @@ LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
 
 ### ログモニタリング機能の有効化
 
--   **logsink_enabled** <span class='type'>Boolean</span>
+- **logsink_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    ログモニタリング機能を有効にします。
+  ログモニタリング機能を有効にします。
 
--   **logsink_trace_enabled** <span class='type'>Boolean</span>
+- **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
+  LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
 
 ### フレームワークログ内容の収集
 
 フレームワークで収集するログをモニタリングするには、モジュールからログをインターセプトするための設定とプラグインを追加する必要があります。フレームワークで収集するログの基本カテゴリ名を`AppLog`に設定します。デフォルト値は、`hooklog_enabled`オプションの設定と同じです。
 
--   **hooklog_enabled** <span class='type'>Boolean</span>
+- **hooklog_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`logsink_enabled`
+  デフォルト値`logsink_enabled`
 
-    ログ追跡を有効にするかどうかを設定します。
+  ログ追跡を有効にするかどうかを設定します。
 
-    :::note
+  :::note
 
-    -   Javaエージェント 2.2.4バージョン以降では、アプリケーションの再起動なしにオプションの変更を適用できます。 
+  - Javaエージェント 2.2.4バージョン以降では、アプリケーションの再起動なしにオプションの変更を適用できます。 
 
-    -   Javaエージェント2.2.4バージョン以前では`hooklog_enabled`値を変更した場合、再起動をする必要があります。`hooklog_enabled` のデフォルト値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`に設定されます。
+  - Javaエージェント2.2.4バージョン以前では`hooklog_enabled`値を変更した場合、再起動をする必要があります。`hooklog_enabled` のデフォルト値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`に設定されます。
 
-    :::
+  :::
 
--   **hooklog_custom_methods**
+- **hooklog_custom_methods**
 
-    ユーザーのカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用します。
+  ユーザーのカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用します。
 
-    ```java title='Java'
-    package io.home.test;
+  ```java title='Java'
+  package io.home.test;
 
-    public class MyLog {  
-      public void customLog(String log) { ... }
-    }
-    ```
+  public class MyLog {  
+    public void customLog(String log) { ... }
+  }
+  ```
 
-    ```ini title='whatap.conf'
-    hooklog_custom_methods=io.home.test.MyLog.customLog
-    ```
+  ```ini title='whatap.conf'
+  hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```

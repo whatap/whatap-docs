@@ -2,8 +2,8 @@
 
 JBoss ASバージョン7.0以降、JBoss EAPバージョン6.0以降でLog Manager関連エラーが発生した場合、JVM オプションを追加します。
 
--   `-Djava.util.logging.manager`項目にLog Manager package名を設定してください。
--   `-Xbootclassloader`項目にJoboss Log Manager JAR fileを設定してください。
+- `-Djava.util.logging.manager`項目にLog Manager package名を設定してください。
+- `-Xbootclassloader`項目にJoboss Log Manager JAR fileを設定してください。
 
 ```apacheconf title='(JBoss_Path)/bin/standalone.conf(domain.conf)' {4,12,13} showLineNumbers
 # Specify the exact Java VM executable to use.

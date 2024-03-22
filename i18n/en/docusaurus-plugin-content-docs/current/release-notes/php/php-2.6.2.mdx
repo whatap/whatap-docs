@@ -20,52 +20,52 @@ September 13, 2023
 
 :::
 
--   <Status>Feature</Status> Added the large profile processing option.
+- <Status>Feature</Status> Added the large profile processing option.
 
-    -   For previous profiles, up to 1024 profiles have been collected. You can increase the maximum value with the setting but the increase in memory followed.
+  - For previous profiles, up to 1024 profiles have been collected. You can increase the maximum value with the setting but the increase in memory followed.
 
-    -   Improved the function to collect more profiles without increasing memory by sending the split zipped profiles.
+  - Improved the function to collect more profiles without increasing memory by sending the split zipped profiles.
 
-    -   **whatap.large_profile_enabled** <span class='type'>Boolean</span>
+  - **whatap.large_profile_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        We can collect up to 10,000 profiles (steps). For a larger collection, it is recommended to use the `split_profile_enabled` option.
+    We can collect up to 10,000 profiles (steps). For a larger collection, it is recommended to use the `split_profile_enabled` option.
 
-    -   **whatap.split_profile_enabled** <span class='type'>Boolean</span>
+  - **whatap.split_profile_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        It collects more profiles by separating certain amounts of profiles into virtual transactions. Multiple transaction lists are separated for display.
+    It collects more profiles by separating certain amounts of profiles into virtual transactions. Multiple transaction lists are separated for display.
 
-    :::note
+  :::note
 
-    -   If two options are all set, the `whatap.split_profile_enabled` option takes precedence.
+  - If two options are all set, the `whatap.split_profile_enabled` option takes precedence.
 
-    -   For more information about the agent configuration of the above options, see [the following](../../php/agent-transaction#php-trs-trc).
+  - For more information about the agent configuration of the above options, see [the following](../../php/agent-transaction#php-trs-trc).
 
-    :::
+  :::
 
--   <Status>Feature</Status> Added the compressed profile data transmission option.
+- <Status>Feature</Status> Added the compressed profile data transmission option.
 
-    -   **whatap.profile_zip_enabled** <span class='type'>Boolean</span>  Defalut `true`
+  - **whatap.profile_zip_enabled** <span class='type'>Boolean</span>  Defalut `true`
 
-    :::note 
+  :::note 
 
-    -   For more information about the agent configuration of the above options, see [the following](../../php/agent-transaction#php-trs-trc).
+  - For more information about the agent configuration of the above options, see [the following](../../php/agent-transaction#php-trs-trc).
 
-    :::
+  :::
 
 <!---->
 
--   <Status>Changed</Status> Modified the function to exclude collection of specific HTTP methods to target all transactions.
+- <Status>Changed</Status> Modified the function to exclude collection of specific HTTP methods to target all transactions.
 
-    -   The `whatap.ignore_http_method` option targets all transactions.
+  - The `whatap.ignore_http_method` option targets all transactions.
 
-    -   The existing function excluded the transactions set with the `whatap.http_method_urls` option. The `whatap.http_method_urls` option has been deleted and all transactions are targeted.
+  - The existing function excluded the transactions set with the `whatap.http_method_urls` option. The `whatap.http_method_urls` option has been deleted and all transactions are targeted.
 
-    :::note
+  :::note
 
-    -   For more information about the agent configuration of the above options, see [the following](../../php/agent-transaction#php-track-http-trs).
+  - For more information about the agent configuration of the above options, see [the following](../../php/agent-transaction#php-track-http-trs).
 
-    :::
+  :::

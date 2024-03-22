@@ -61,13 +61,13 @@ spec:
 
 様々なコンテナのリソース設定情報や現在の使用量を簡単に把握することは容易ではありません。そのため、WhaTap Kubernetesモニタリングサービスは、特定の単一コンテナ、ユーザーが選択した複数のコンテナ、またはDeployment全体を対象にリソース設定および現在の使用量を簡単に確認できる機能を提供します。
 
--   **詳細を表示** 画面 > <Cmdname sid="metrics" className="uitext" /> - リソース使用量のモニタリングと分析
+- **詳細を表示** 画面 > <Cmdname sid="metrics" className="uitext" /> - リソース使用量のモニタリングと分析
 
-    <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='リソース使用量のモニタリングと分析' />
+  <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='リソース使用量のモニタリングと分析' />
 
--   特定のコンテナを選択して状態を確認できます。
+- 特定のコンテナを選択して状態を確認できます。
 
-    ![リソース使用量のモニタリングと分析](/img/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
+  ![リソース使用量のモニタリングと分析](/img/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
 
 上記のデータを見ると、CPUはRequest 0.2colores(200m)、Limit 0.4colores(400m)に設定されています。現在のCPU使用量は0.02cores(20m)(5秒平均)です。右側のCPU関連の推移グラフを確認すると、全体的には余裕があるものの、断続的にCPU使用量が増加する現象が確認できます。
 
@@ -96,12 +96,12 @@ Podが実行中のノードに使用可能なリソースが十分である場�
 
 WhaTapはCPU、Memoryおよび、その他のメトリクスを提供します。
 
--   <span class="uitext">Container Block I/O Read Byte</span> (IoReadBytes)
+- <span class="uitext">Container Block I/O Read Byte</span> (IoReadBytes)
 
--   <span class="uitext">Container Block I/O Write Byte</span> (IoWriteBytes)
+- <span class="uitext">Container Block I/O Write Byte</span> (IoWriteBytes)
 
--   <span class="uitext">Container Network Receive Byte</span> (NetRxBytes)
+- <span class="uitext">Container Network Receive Byte</span> (NetRxBytes)
 
--   <span class="uitext">Container Network Transmit Byte</span> (NetTxByes)
+- <span class="uitext">Container Network Transmit Byte</span> (NetTxByes)
 
 WhaTap Kubernetesメトリクスの詳細については、[次の文書](metrics-intro)を参照してください。

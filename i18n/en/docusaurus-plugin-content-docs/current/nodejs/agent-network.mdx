@@ -38,21 +38,21 @@ wo proxy servers cannot use different ports. When using multiple proxy servers, 
 
 WhaTap is designed on the premise of collecting monitoring data from public networks. Accordingly, all monitoring data is encrypted and transmitted to the server. When lots of encrypted data is sent, it may cause overhead. WhaTap selectively encrypts data. The communication procedure between agents and the server is as follows:
 
-1.  Generate and copy the **access key** from the project creation menu.
+1. Generate and copy the **access key** from the project creation menu.
 
-2.  The **access key** includes the private key. Be careful not to be disclosed.
+2. The **access key** includes the private key. Be careful not to be disclosed.
 
-3.  Restart the Node.js application server.
+3. Restart the Node.js application server.
 
-4.  The WhaTap agent establishes the TCP session with the server.
+4. The WhaTap agent establishes the TCP session with the server.
 
-5.  Request a security key for a new session by encrypting data with the private key for communication included in the **access key**.
+5. Request a security key for a new session by encrypting data with the private key for communication included in the **access key**.
 
-6.  The server creates a new security key for the session requested by the agent and sends it down to the agent.
+6. The server creates a new security key for the session requested by the agent and sends it down to the agent.
 
-7.  The security key of the session has two encryption keys. They are encryption keys for the ASC algorithm and the simple password.
+7. The security key of the session has two encryption keys. They are encryption keys for the ASC algorithm and the simple password.
 
-8.  Afterwards, the agent uses the ASC secret key for sensitive data such as text and control data. Relatively secure data such as numeric value undergoes simple encryption before transmission to the server.
+8. Afterwards, the agent uses the ASC secret key for sensitive data such as text and control data. Relatively secure data such as numeric value undergoes simple encryption before transmission to the server.
 
 ### Agent communication buffer
 
@@ -77,14 +77,14 @@ If the agent is disconnected from the server, it attempts to reconnect 3 times e
 
 {@include: ../common-items/_common-network.mdx}
 
--   **net_send_queue1_size** <span class='type'>Int</span>
+- **net_send_queue1_size** <span class='type'>Int</span>
 
-    Default `512`
+  Default `512`
 
-    It sets the size of the queue to be used for data transmission except for trace data.
+  It sets the size of the queue to be used for data transmission except for trace data.
 
--   **net_send_queue2_size** <span class='type'>Int</span>
+- **net_send_queue2_size** <span class='type'>Int</span>
 
-    Default `1024`
+  Default `1024`
 
-    It sets the size of the queue to be used for trace data transmission.
+  It sets the size of the queue to be used for trace data transmission.

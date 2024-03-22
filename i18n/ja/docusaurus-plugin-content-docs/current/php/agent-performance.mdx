@@ -13,109 +13,109 @@ PHPアプリケーションサーバーのパフォーマンスの設定方法�
 
 :::caution
 
--   エージェント性能オプションは、設定後にwhatap-phpサービスを必ず再起動する必要があります。
--   エージェントのパフォーマンスを拡大すると、CPU、メモリ使用率が増加する可能性があります。
+- エージェント性能オプションは、設定後にwhatap-phpサービスを必ず再起動する必要があります。
+- エージェントのパフォーマンスを拡大すると、CPU、メモリ使用率が増加する可能性があります。
 
 :::
 
--   **whatap.tx_max_count** <span class='type'>Int</span>
+- **whatap.tx_max_count** <span class='type'>Int</span>
 
-    デフォルト値`5000`
+  デフォルト値`5000`
 
-    トランザクションを最大で保存できる数です。同時に処理されるトランザクションが多い場合は、そのサイズをさらに大きくします。
+  トランザクションを最大で保存できる数です。同時に処理されるトランザクションが多い場合は、そのサイズをさらに大きくします。
 
--   **whatap.tx_default_capacity** <span class='type'>Int</span>
+- **whatap.tx_default_capacity** <span class='type'>Int</span>
 
-    デフォルト値`101`
+  デフォルト値`101`
 
-    トランザクションを保存するバッファのデフォルトサイズです。
+  トランザクションを保存するバッファのデフォルトサイズです。
 
--   **whatap.tx_load_factor** <span class='type'>String(Float)</span>
+- **whatap.tx_load_factor** <span class='type'>String(Float)</span>
 
-    デフォルト値`0.75`
+  デフォルト値`0.75`
 
-    トランザクションを保存するバッファのサイズを徐々に増やすための基準です。101個の75%以上保存されると、バッファサイズが2倍になります。
+  トランザクションを保存するバッファのサイズを徐々に増やすための基準です。101個の75%以上保存されると、バッファサイズが2倍になります。
 
--   **whatap.queue_log_enabled** <span class='type'>Boolean</span>
+- **whatap.queue_log_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    queue関連ログを出力します。
+  queue関連ログを出力します。
 
--   **whatap.queue_tcp_enabled** <span class='type'>Boolean</span>
+- **whatap.queue_tcp_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    Tcpデータ送信処理に使用するChannelの代わりに別なQueueを使用します。データ優先度Queueを使用します。
+  Tcpデータ送信処理に使用するChannelの代わりに別なQueueを使用します。データ優先度Queueを使用します。
 
--   **whatap.queue_tcp_sender_thread_count** <span class='type'>Int</span>
+- **whatap.queue_tcp_sender_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`2`
+  デフォルト値`2`
 
-    Tcpデータ送信を処理するスレッドの数を指定します。数を増やすと、データ送信が高速にできます。
+  Tcpデータ送信を処理するスレッドの数を指定します。数を増やすと、データ送信が高速にできます。
 
--   **whatap.net_send_buffer_size** <span class='type'>Int</span>
+- **whatap.net_send_buffer_size** <span class='type'>Int</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    Tcpデータ処理のChannelバッファを設定します。
+  Tcpデータ処理のChannelバッファを設定します。
 
--   **whatap.queue_udp_enabled** <span class='type'>Boolean</span>
+- **whatap.queue_udp_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Udpデータ受信処理のChannelに代わりに別のQueueを使用します。
+  Udpデータ受信処理のChannelに代わりに別のQueueを使用します。
 
--   **whatap.queue_udp_size** <span class='type'>Int</span>
+- **whatap.queue_udp_size** <span class='type'>Int</span>
 
-    デフォルト値`2048`
+  デフォルト値`2048`
 
-    Udpデータの受信バッファを設定します。Channel、Queueバッファを設定します。
+  Udpデータの受信バッファを設定します。Channel、Queueバッファを設定します。
 
--   **wwhatap.queue_udp_read_thread_count** <span class='type'>Int</span>
+- **wwhatap.queue_udp_read_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`3`
+  デフォルト値`3`
 
-    Udpデータの受信を処理するスレッドの数を指定します。数を増やすことで、UDPバッファから高速にデータを読みこむことができます。
+  Udpデータの受信を処理するスレッドの数を指定します。数を増やすことで、UDPバッファから高速にデータを読みこむことができます。
 
--   **whatap.queue_udp_overflowed_size** <span class='type'>Int</span>
+- **whatap.queue_udp_overflowed_size** <span class='type'>Int</span>
 
-    デフォルト値`4096`
+  デフォルト値`4096`
 
-    Udpデータの受信にQueueを使用する場合は、overflowed Queueのバッファサイズを設定します。
+  Udpデータの受信にQueueを使用する場合は、overflowed Queueのバッファサイズを設定します。
 
--   **whatap.queue_udp_process_thread_count** <span class='type'>Int</span>
+- **whatap.queue_udp_process_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    Udpデータを処理するスレッドの数を指定します。数を増やすと、UDPから読み取ったデータをより高速に処理できます。
+  Udpデータを処理するスレッドの数を指定します。数を増やすと、UDPから読み取ったデータをより高速に処理できます。
 
--   **whatap.queue_profile_enabled** <span class='type'>Boolean</span>
+- **whatap.queue_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Profile情報は、処理をChannelの代わりに別のQueueを使用します。
+  Profile情報は、処理をChannelの代わりに別のQueueを使用します。
 
--   **whatap.queue_profile_size** <span class='type'>Int</span>
+- **whatap.queue_profile_size** <span class='type'>Int</span>
 
-    デフォルト値 `512`
+  デフォルト値 `512`
 
-    Profile情報を処理するためのバッファを設定します。
+  Profile情報を処理するためのバッファを設定します。
 
--   **whatap.queue_profile_process_thread_count** <span class='type'>Int</span>
+- **whatap.queue_profile_process_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    Profile情報を処理するスレッドの数を指定します。スレッド数を増やすことで高速に処理ができます。
+  Profile情報を処理するスレッドの数を指定します。スレッド数を増やすことで高速に処理ができます。
 
--   **whatap.queue_text_enabled** <span class='type'>Boolean</span>
+- **whatap.queue_text_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Textデータ処理をするChannelの変わりにQueueを使用します。
+  Textデータ処理をするChannelの変わりにQueueを使用します。
 
--   **whatap.queue_text_size** <span class='type'>Int</span>
+- **whatap.queue_text_size** <span class='type'>Int</span>
 
-    デフォルト値 `512`
+  デフォルト値 `512`
 
-    Textデータを処理するバッファを設定します。
+  Textデータを処理するバッファを設定します。

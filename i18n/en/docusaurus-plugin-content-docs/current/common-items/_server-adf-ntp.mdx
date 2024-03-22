@@ -1,0 +1,47 @@
+:::note 
+
+**Preliminary checking**
+
+- Operating system: Linux 
+
+- WhaTap Server Monitoring Agent version: 2.5.4 or later
+
+:::
+
+You can enable the server time synchronization (NTP) monitoring through the following option: 
+
+```bash
+echo "ntpq.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+### Guide to additional key metrics
+
+The metrics to be added when activating the server time synchronization monitoring are as follows: 
+
+#### `server_ntpq`
+
+##### Tags
+
+| Tag name | Description                                                         | Remarks |
+| -------- | ------------------------------------------------------------------- | ------- |
+| `refid`  | Time synchronization source of the corresponding remote (`remote`). | -       |
+| `remote` | Server to which the host performs time synchronization.             | -       |
+
+##### Fields
+
+| Field name    | Unit   | Description                                                                                                                                                                               | Remarks |
+| ------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `delay`       | ms     | Time taken for the server to return a reply packet in response to a query.                                                                                                                | -       |
+| `jitter`      | -      | Error threshold estimated as the difference in offset measurements between two samples.                                                                                                   | -       |
+| `offset`      | ms     | Difference between the server setting time and client setting time.                                                                                                                       | -       |
+| `poll`        | second | Polling interval to the remote host defined by the `minpoll` value in the _ntp.conf_ file.                                                                                                | -       |
+| `reach`       | -      | You can see how successful the attempts to reach the server were. It records the success or failure of the most recent query at the position 2^0 and operates as an 8-bit shift register. | -       |
+| `st`          | -      | Stratum level of the remote host.                                                                                                                                                         | -       |
+| `sync_client` | -      | 1: The synchronization server exists.                                                                                                                                                     | -       |
+| ^             | ^      | 0: The synchronization server does not exist.                                                                                                                                             | ^       |
+| `t`           | -      | Available types are as follows.                                                                                                                                                           | -       |
+| ^             | ^      | l: Local (e.g. GPS clock)                                                                                                                                                                 | ^       |
+| ^             | ^      | u: Unicast (general type)                                                                                                                                                                 | ^       |
+| ^             | ^      | m: Multicast                                                                                                                                                                              | ^       |
+| ^             | ^      | b: Broadcast                                                                                                                                                                              | ^       |
+| `when`        | second | Seconds elapsed after the remote host responded.                                                                                                                                          | -       |

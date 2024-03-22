@@ -1,11 +1,11 @@
--   **profile_basetime** <span class='type'>MiliSecond</span>
+- **profile_basetime** <span class='type'>MiliSecond</span>
 
-    Default `500`
+  Default `500`
 
-    Set the minimum response time to collect trace details. The trace data is not collected, if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
+  Set the minimum response time to collect trace details. The trace data is not collected, if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
 
-    :::note
+  :::note
 
-    To collect errors regardless of the `profile_basetime` option, set the `profile_concern_error_enabled` option to `true`. If set to the default value of `false`, errors are sampled.
+  To collect errors regardless of the `profile_basetime` option, set the `profile_concern_error_enabled` option to `true`. If set to the default value of `false`, errors are sampled.
 
-    :::
+  :::

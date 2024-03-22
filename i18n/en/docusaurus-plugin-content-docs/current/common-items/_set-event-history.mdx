@@ -44,82 +44,82 @@ The screen images may differ depending on the selected project.
 
 :::
 
--   <Cmdname sid="time_selector" className="uitext" />
+- <Cmdname sid="time_selector" className="uitext" />
 
-    -   You can select the lookup time by selecting the green button on the right.
+  - You can select the lookup time by selecting the green button on the right.
 
-    -   By selecting ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can move by the selected inquiry time range.
+  - By selecting ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can move by the selected inquiry time range.
 
-    -   To select a detailed time, select a date or time zone. Set the detailed time and then select <Cmdname sid="apply" className="uitext" />.
+  - To select a detailed time, select a date or time zone. Set the detailed time and then select <Cmdname sid="apply" className="uitext" />.
 
--   Based on <Cmdname sid="filter" className="uitext" />: <Cmdname sid="title" className="uitext" /> or <Cmdname sid="message" className="uitext" />, you can filter event records.
+- Based on <Cmdname sid="filter" className="uitext" />: <Cmdname sid="title" className="uitext" /> or <Cmdname sid="message" className="uitext" />, you can filter event records.
 
 <InDoc product='java,php,nodejs,python,dotnet,golang,log'>
 
--   <Cmdname sid="application" className="uitext" />: You can select an agent included in the project.
+- <Cmdname sid="application" className="uitext" />: You can select an agent included in the project.
 
 </InDoc>
 
 <InDoc product='postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb'>
 
--   <Cmdname sid="database" className="uitext" />: You can select an agent included in the project.
+- <Cmdname sid="database" className="uitext" />: You can select an agent included in the project.
 
 </InDoc>
 
 <InDoc product='kubernetes'>
 
--   <Cmdname sid="container" className="uitext" />: You can select an agent included in the project.
+- <Cmdname sid="container" className="uitext" />: You can select an agent included in the project.
 
 </InDoc>
 
 <InDoc product='browser,npm,amazon-cloudwatch,amazon-ecs,aws-log,azure,ncloud,oracle-cloud'>
 
--   <Cmdname sid="agent" className="uitext" />: You can select an agent included in the project.
+- <Cmdname sid="agent" className="uitext" />: You can select an agent included in the project.
 
 </InDoc>
 
--   **_CSV_**: You can save the viewed event records as a CSV file. Enter the <Cmdname sid="maximum_csv_lines" className="uitext" /> and then select <Cmdname sid="download" className="uitext" />.
+- **_CSV_**: You can save the viewed event records as a CSV file. Enter the <Cmdname sid="maximum_csv_lines" className="uitext" /> and then select <Cmdname sid="download" className="uitext" />.
 
--   <Cmdname sid="column_select" className="uitext" />: You can add columns to the viewed event records.
+- <Cmdname sid="column_select" className="uitext" />: You can add columns to the viewed event records.
 
--   <Cmdname sid="event_setting" className="uitext" />: Goes to <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />.
+- <Cmdname sid="event_setting" className="uitext" />: Goes to <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />.
 
--   They are <Cmdname sid="event_name" className="uitext" /> and <Cmdname sid="message" className="uitext" /> for the event added in <Cmdname sid="title" className="uitext" /> / <Cmdname sid="message" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />.
+- They are <Cmdname sid="event_name" className="uitext" /> and <Cmdname sid="message" className="uitext" /> for the event added in <Cmdname sid="title" className="uitext" /> / <Cmdname sid="message" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />.
 
-    <Xclude product="amazon-cloudwatch,amazon-ecs,aws-log,azure,browser,log,ncloud,npm,oracle-cloud">
+  <Xclude product="amazon-cloudwatch,amazon-ecs,aws-log,azure,browser,log,ncloud,npm,oracle-cloud">
 
-    :::note
+  :::note
 
-    -   For more information about addition of events, see [the following](metric-warning-notice).
+  - For more information about addition of events, see [the following](metric-warning-notice).
 
-    -   For more information about the notification message customization, see [the follwing](set-notification-message).
+  - For more information about the notification message customization, see [the follwing](set-notification-message).
 
-    :::
+  :::
 
-    </Xclude>
+  </Xclude>
 
--   <Cmdname sid="event_time" className="uitext" />: Event occurred time.
+- <Cmdname sid="event_time" className="uitext" />: Event occurred time.
 
-    -   If an event is in progress and not resolved, the <Cmdname sid="in_progress" className="uitext" /> tag appears.
+  - If an event is in progress and not resolved, the <Cmdname sid="in_progress" className="uitext" /> tag appears.
 
-    -   If an event occurs during maintenance, the <Cmdname sid="ITM07315" className="uitext" /> tag appears.
+  - If an event occurs during maintenance, the <Cmdname sid="ITM07315" className="uitext" /> tag appears.
 
-    :::note
+  :::note
 
-    For more information about <Cmdname sid="sms_maintenance" className="uitext" />, see <Link to="../management/maintenance">the following</Link>.
+  For more information about <Cmdname sid="sms_maintenance" className="uitext" />, see <Link to="../management/maintenance">the following</Link>.
 
-    :::
+  :::
 
--   <Cmdname sid="TTL06583" className="uitext" />: Resolved time of the set event. If the column does not appear, click <Cmdname sid="column_select" className="uitext" /> and then select <Cmdname sid="TTL06583" className="uitext" />.
+- <Cmdname sid="TTL06583" className="uitext" />: Resolved time of the set event. If the column does not appear, click <Cmdname sid="column_select" className="uitext" /> and then select <Cmdname sid="TTL06583" className="uitext" />.
 
 <Xclude product="postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb">
 
--   <Cmdname sid="application" className="uitext" />: When adding an event in <Cmdname sid="event_setting" className="uitext" />, it appears if the <Cmdname sid="alert_object_filtering" className="uitext" /> item is set.
+- <Cmdname sid="application" className="uitext" />: When adding an event in <Cmdname sid="event_setting" className="uitext" />, it appears if the <Cmdname sid="alert_object_filtering" className="uitext" /> item is set.
 
 </Xclude>
 
 <InDoc product='postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb'>
 
--   <Cmdname sid="instance" className="uitext" />: When adding an event in <Cmdname sid="event_setting" className="uitext" />, it appears if the <Cmdname sid="alert_object_filtering" className="uitext" /> item is set.
+- <Cmdname sid="instance" className="uitext" />: When adding an event in <Cmdname sid="event_setting" className="uitext" />, it appears if the <Cmdname sid="alert_object_filtering" className="uitext" /> item is set.
 
 </InDoc>

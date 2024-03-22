@@ -2,7 +2,8 @@
 /backup
 /.vscode
 /.credentials
-# /node_modules
+/pdf
+/node_modules
 sheets.googleapis.com-whatap-locale.json
 
 # Generated files

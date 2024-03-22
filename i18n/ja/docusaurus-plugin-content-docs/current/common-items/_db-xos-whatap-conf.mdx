@@ -2,26 +2,26 @@
 
 XOSエージェントを実行する前に、_whatap.conf_ファイルで、以下のオプションを設定します。
 
--   **xos** <span class='type'>Int</span>
+- **xos** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    XOSエージェントを使用可否の設定をします。値が`0`の場合、データは収集されません。値を`1`またはXOSエージェントのIPアドレスを入力します。IPアドレスを設定すると、そのXOSエージェントからのみデータが収集されます。
+  XOSエージェントを使用可否の設定をします。値が`0`の場合、データは収集されません。値を`1`またはXOSエージェントのIPアドレスを入力します。IPアドレスを設定すると、そのXOSエージェントからのみデータが収集されます。
 
--   **xos_port** <span class='type'>String</span>
+- **xos_port** <span class='type'>String</span>
 
-    デフォルト値`3002`
+  デフォルト値`3002`
 
-    XOSエージェントと通信するポートを設定します。XOSエージェントはUDPで通信します。そのポートにファイアウォールが設定されている場合は、UDPで通信するためには、ファイアウォールを解除してください。
+  XOSエージェントと通信するポートを設定します。XOSエージェントはUDPで通信します。そのポートにファイアウォールが設定されている場合は、UDPで通信するためには、ファイアウォールを解除してください。
 
--   **xos_cpu_iowait** <span class='type'>Int</span>
+- **xos_cpu_iowait** <span class='type'>Int</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    XOSエージェントから収集したCPU使用率にiowaitの値を含めることができます。値を`1`に設定するとiowaitを含まれ、`1`に設定するとiowaitを含まれません。
+  XOSエージェントから収集したCPU使用率にiowaitの値を含めることができます。値を`1`に設定するとiowaitを含まれ、`1`に設定するとiowaitを含まれません。
 
--   **xos_mem_buffcache** <span class='type'>Int</span>
+- **xos_mem_buffcache** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    XOSエージェントから収集したメモリ使用率にbuffcacheの値を含めることができます。値を`1`に設定するとbuffcacheを含み、`0`に設定するとbuffcacheを含まれません。
+  XOSエージェントから収集したメモリ使用率にbuffcacheの値を含めることができます。値を`1`に設定するとbuffcacheを含み、`0`に設定するとbuffcacheを含まれません。
