@@ -10,10 +10,10 @@
     "@algolia/autocomplete-plugin-algolia-insights" "1.17.0"
     "@algolia/autocomplete-shared" "1.17.0"
 
-"@algolia/autocomplete-plugin-algolia-insights@1.17.0":
+"@algolia/autocomplete-plugin-algolia-insights@^1.17.0", "@algolia/autocomplete-plugin-algolia-insights@1.17.0":
   version "1.17.0"
   resolved "https://registry.npmjs.org/@algolia/autocomplete-plugin-algolia-insights/-/autocomplete-plugin-algolia-insights-1.17.0.tgz"
-  integrity sha512-a/yTUkcO/Vyy+JffmAnTWbr4/90cLzw+CC3bRbhnULr/EM0fGNvM13oQQ14f2moLMcVDyAx/leczLlAOovhSZg==
+  integrity sha512-zbWImu+VxBDzUQONEhQXq3OzlipHLEtWbL4Nf/VOb1p1qHG/f96jCegOzzEZVPiQvZpRJnmhCUmsYNHlIBxKWw==
   dependencies:
     "@algolia/autocomplete-shared" "1.17.0"
 
