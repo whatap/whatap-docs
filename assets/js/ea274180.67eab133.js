@@ -487,7 +487,9 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `정비 계획을 추가하고 수정, 삭제하려면 프로젝트에 대한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `수정`), ` 권한이 필요합니다. 멤버 권한에 대한 자세한 설명은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+    }, `수정`), ` 권한 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `알림 설정`), ` 권한이 필요합니다. 멤버 권한에 대한 자세한 설명은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../project/project-structure#project-auth"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
