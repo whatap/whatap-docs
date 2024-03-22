@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44167],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[41986],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 92152:
+/***/ 91306:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,30 +312,30 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        'Flex 보드',
-        '쿠버네티스'
+        'PostgreSQL',
+        'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/flexboard-share",
-    "id": "kubernetes/flexboard-share",
+    "unversionedId": "postgresql/flexboard-share",
+    "id": "postgresql/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/kubernetes/flexboard-share.mdx",
-    "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/flexboard-share",
-    "permalink": "/whatap-docs/kubernetes/flexboard-share",
+    "source": "@site/docs/postgresql/flexboard-share.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/flexboard-share",
+    "permalink": "/whatap-docs/postgresql/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/flexboard-share.mdx",
+    "editUrl": "undefined/docs/postgresql/flexboard-share.mdx",
     "tags": [
+        {
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
+        },
         {
             "label": "Flex 보드",
             "permalink": "/whatap-docs/tags/flex-보드"
-        },
-        {
-            "label": "쿠버네티스",
-            "permalink": "/whatap-docs/tags/쿠버네티스"
         }
     ],
     "version": "current",
@@ -344,18 +344,18 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            "Flex 보드",
-            "쿠버네티스"
+            "PostgreSQL",
+            "Flex 보드"
         ]
     },
-    "sidebar": "kubeSidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/kubernetes/flexboard-mode"
+        "permalink": "/whatap-docs/postgresql/flexboard-mode"
     },
     "next": {
-        "title": "컨테이너 목록",
-        "permalink": "/whatap-docs/kubernetes/resource-container-list"
+        "title": "카운트 추이 비교하기",
+        "permalink": "/whatap-docs/postgresql/analysis-count-trend"
     }
 };
 const assets = {};
@@ -398,6 +398,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
 const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
 const LinkImage = makeShortcode("LinkImage");
+const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -440,7 +441,7 @@ function MDXContent(_param) {
         sid: "read_only",
         className: "uitext",
         mdxType: "Cmdname"
-    }), "으로 대시보드를 공유받은 멤버는 복사만 할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), "으로 대시보드를 공유받은 멤버는 읽기 전용으로 대시보드를 공유할 수 있으며 복사할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -458,7 +459,12 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `이전에는 공유 또는 복사 받을 멤버에게 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `수정`), ` 권한이 있어야 했지만, 업데이트 이후 권한에 상관없이 프로젝트에 소속되어 있기만 한다면 복사 또는 공유할 수 있습니다. 멤버 권한에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+    }, `수정`), ` 권한이 있어야 했지만, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "../release-notes/service/service-2_3_x"
+    }, `Service 2.3.0 릴리스`), ` 이후 권한에 상관없이 프로젝트에 소속되어 있기만 한다면 복사 또는 공유할 수 있습니다. 단, 공유 받은 대시보드의 프로젝트 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `조회 분석`), ` 권한이 없는 프로젝트는 데이터를 조회할 수 없습니다. 멤버 권한에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../project/project-structure#member-auth"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
@@ -563,7 +569,15 @@ function MDXContent(_param) {
         sid: "ITM07634",
         className: "uitext",
         mdxType: "Cmdname"
-    }), `를 선택하세요.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드를 공유한 항목은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }), `를 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `존재하지 않는 이메일을 입력하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "share_dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼이 비활성화됩니다.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드를 공유한 항목은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "dashboard_list",
         className: "uitext",
         mdxType: "Cmdname"
@@ -639,15 +653,10 @@ function MDXContent(_param) {
         sid: "read_only",
         className: "uitext",
         mdxType: "Cmdname"
-    }), "으로 대시보드를 공유받은 멤버는 복사만 할 수 있습니다. 대시보드 복사 기능은 [다음 문서](#copyflexboard)를 참조하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `공유 조건에 해당하는 경우에만 대시보드 공유 버튼이 노출됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "flexboard-sharable-list.png",
-        desc: "Flex 보드 공유",
-        mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), "으로 대시보드를 공유받은 멤버는 복사만 할 수 있습니다. 대시보드 복사 기능은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
+        to: "#copyflexboard",
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -659,7 +668,13 @@ function MDXContent(_param) {
         sid: "dashboard_list",
         className: "uitext",
         mdxType: "Cmdname"
-    }), `에서만 삭제됩니다. 원본 대시보드는 그대로 유지합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), `에서만 삭제됩니다. 원본 대시보드는 그대로 유지합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `공유 받은 대시보드의 프로젝트 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `조회 분석`), ` 권한이 없는 프로젝트는 데이터를 조회할 수 없습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "copyflexboard"
     }, `Flex 보드 복사하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용자가 생성한 Flex 보드를 복사해 다른 멤버에게 전달할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "integratedFlexboard",
@@ -720,11 +735,15 @@ function MDXContent(_param) {
         sid: "dashboard_list",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 목록에 '_copied' 접미어가 붙은 항목이 추가됩니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "read_only",
+    }), ` 목록에 '_copied' 접미어가 붙은 항목이 추가됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `존재하지 않는 이메일을 입력하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "copy_dashboard",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 옵션을 선택하면 복사 받은 사용자는 대시보드를 수정할 수 없습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), ` 버튼이 비활성화됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "json-파일로-공유하기"
     }, `JSON 파일로 공유하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Flex 보드 설정을 JSON 파일로 저장하고 다른 멤버에서 전달하거나 다른 멤버의 설정을 가져올 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "내보내기"
