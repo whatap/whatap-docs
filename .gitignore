@@ -42,4 +42,5 @@ node_modules/.cache/webpack/client-development-ko/15.pack
 node_modules/.cache/webpack/client-development-ko/index.pack
 node_modules/.cache/webpack/client-development-ko/index.pack.old
 /.vscode/*.json
+/.yarn
 yarn.lock
