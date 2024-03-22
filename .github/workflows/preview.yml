@@ -24,9 +24,9 @@ jobs:
       - name: update docs
         run: git submodule update --init
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
       - name: Build website
-        run: DOCUSAURUS_SSR_CONCURRENCY=5 npm build --locale ko --no-minify
+        run: DOCUSAURUS_SSR_CONCURRENCY=5 yarn build --locale ko --no-minify
         
 
       # Popular action to deploy to GitHub Pages:
