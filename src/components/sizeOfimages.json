@@ -2409,15 +2409,15 @@
   },
   "browser-analysis-ajax-hitmap-details-en.png": {
     "width": 1200,
-    "height": 459
+    "height": 525
   },
   "browser-analysis-ajax-hitmap-details-ja.png": {
     "width": 1200,
-    "height": 461
+    "height": 525
   },
   "browser-analysis-ajax-hitmap-details.png": {
     "width": 1200,
-    "height": 460
+    "height": 525
   },
   "browser-analysis-ajax-hitmap-en.png": {
     "width": 1200,
@@ -2451,6 +2451,18 @@
     "width": 1200,
     "height": 1118
   },
+  "browser-analysis-ajax-hitmap-user-session-en.png": {
+    "width": 1200,
+    "height": 497
+  },
+  "browser-analysis-ajax-hitmap-user-session-ja.png": {
+    "width": 1200,
+    "height": 497
+  },
+  "browser-analysis-ajax-hitmap-user-session.png": {
+    "width": 1200,
+    "height": 497
+  },
   "browser-analysis-ajax-hitmap.png": {
     "width": 1200,
     "height": 475
@@ -2478,6 +2490,90 @@
   "browser-analysis-pageload-hitmap.png": {
     "width": 1200,
     "height": 956
+  },
+  "browser-analysis-user-session-log-details-ajax-en.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "browser-analysis-user-session-log-details-ajax-ja.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "browser-analysis-user-session-log-details-ajax.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "browser-analysis-user-session-log-details-click-en.png": {
+    "width": 1200,
+    "height": 574
+  },
+  "browser-analysis-user-session-log-details-click-ja.png": {
+    "width": 1200,
+    "height": 574
+  },
+  "browser-analysis-user-session-log-details-click.png": {
+    "width": 1200,
+    "height": 574
+  },
+  "browser-analysis-user-session-log-details-custom-en.png": {
+    "width": 1200,
+    "height": 461
+  },
+  "browser-analysis-user-session-log-details-custom-ja.png": {
+    "width": 1200,
+    "height": 461
+  },
+  "browser-analysis-user-session-log-details-custom.png": {
+    "width": 1200,
+    "height": 461
+  },
+  "browser-analysis-user-session-log-details-error-en.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "browser-analysis-user-session-log-details-error-ja.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "browser-analysis-user-session-log-details-error.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "browser-analysis-user-session-log-details-pageload-en.png": {
+    "width": 1200,
+    "height": 751
+  },
+  "browser-analysis-user-session-log-details-pageload-ja.png": {
+    "width": 1200,
+    "height": 750
+  },
+  "browser-analysis-user-session-log-details-pageload.png": {
+    "width": 1200,
+    "height": 750
+  },
+  "browser-analysis-user-session-log-details-router-en.png": {
+    "width": 1200,
+    "height": 445
+  },
+  "browser-analysis-user-session-log-details-router-ja.png": {
+    "width": 1200,
+    "height": 445
+  },
+  "browser-analysis-user-session-log-details-router.png": {
+    "width": 1200,
+    "height": 410
+  },
+  "browser-analysis-user-session-log-filter-en.png": {
+    "width": 1200,
+    "height": 727
+  },
+  "browser-analysis-user-session-log-filter-ja.png": {
+    "width": 1200,
+    "height": 727
+  },
+  "browser-analysis-user-session-log-filter.png": {
+    "width": 1200,
+    "height": 727
   },
   "browser-cls-widget-en.png": {
     "width": 1200,
@@ -2743,6 +2839,18 @@
     "width": 1200,
     "height": 342
   },
+  "browser-flexboard-custom-event-widget-en.png": {
+    "width": 1200,
+    "height": 527
+  },
+  "browser-flexboard-custom-event-widget-ja.png": {
+    "width": 1200,
+    "height": 527
+  },
+  "browser-flexboard-custom-event-widget.png": {
+    "width": 1200,
+    "height": 527
+  },
   "browser-lcp-widget-en.png": {
     "width": 1200,
     "height": 534
@@ -2789,11 +2897,11 @@
   },
   "browser-pageload-details-resource-error-en.png": {
     "width": 1200,
-    "height": 612
+    "height": 645
   },
   "browser-pageload-details-resource-error-ja.png": {
     "width": 1200,
-    "height": 612
+    "height": 646
   },
   "browser-pageload-details-resource-error-stack-en.png": {
     "width": 1200,
@@ -2809,7 +2917,19 @@
   },
   "browser-pageload-details-resource-error.png": {
     "width": 1200,
-    "height": 612
+    "height": 645
+  },
+  "browser-pageload-details-user-session-en.png": {
+    "width": 1200,
+    "height": 644
+  },
+  "browser-pageload-details-user-session-ja.png": {
+    "width": 1200,
+    "height": 645
+  },
+  "browser-pageload-details-user-session.png": {
+    "width": 1200,
+    "height": 647
   },
   "browser-pageload-details.png": {
     "width": 1200,
@@ -2898,6 +3018,78 @@
   "browser-report-summary.png": {
     "width": 1200,
     "height": 985
+  },
+  "browser-search-user-session-category.png": {
+    "width": 988,
+    "height": 310
+  },
+  "browser-search-user-session-filter-guide-en.png": {
+    "width": 600,
+    "height": 340
+  },
+  "browser-search-user-session-filter-guide-ja.png": {
+    "width": 600,
+    "height": 340
+  },
+  "browser-search-user-session-filter-guide.png": {
+    "width": 600,
+    "height": 340
+  },
+  "browser-search-user-session-flow-en.png": {
+    "width": 800,
+    "height": 310
+  },
+  "browser-search-user-session-flow-ja.png": {
+    "width": 800,
+    "height": 382
+  },
+  "browser-search-user-session-flow.png": {
+    "width": 800,
+    "height": 311
+  },
+  "browser-search-user-session-infomation-en.png": {
+    "width": 800,
+    "height": 76
+  },
+  "browser-search-user-session-infomation-ja.png": {
+    "width": 800,
+    "height": 77
+  },
+  "browser-search-user-session-infomation.png": {
+    "width": 800,
+    "height": 72
+  },
+  "browser-search-user-session-log-analysis-en.png": {
+    "width": 1200,
+    "height": 776
+  },
+  "browser-search-user-session-log-analysis-ja.png": {
+    "width": 1200,
+    "height": 779
+  },
+  "browser-search-user-session-log-analysis.png": {
+    "width": 1200,
+    "height": 739
+  },
+  "browser-search-user-session-log-content.png": {
+    "width": 1200,
+    "height": 193
+  },
+  "browser-search-user-session-log-en.png": {
+    "width": 1200,
+    "height": 706
+  },
+  "browser-search-user-session-log-ja.png": {
+    "width": 1200,
+    "height": 706
+  },
+  "browser-search-user-session-log.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "browser-search-user-session-tag.png": {
+    "width": 1200,
+    "height": 168
   },
   "browser-start-en.png": {
     "width": 1090,
@@ -3106,6 +3298,42 @@
   "cloudwatch-auth-role.png": {
     "width": 1200,
     "height": 731
+  },
+  "collect-custom-events-example01-en.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "collect-custom-events-example01-ja.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "collect-custom-events-example01.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "collect-custom-events-example02-en.png": {
+    "width": 1200,
+    "height": 302
+  },
+  "collect-custom-events-example02-ja.png": {
+    "width": 1200,
+    "height": 302
+  },
+  "collect-custom-events-example02.png": {
+    "width": 1200,
+    "height": 302
+  },
+  "collect-custom-events-example03-en.png": {
+    "width": 1200,
+    "height": 506
+  },
+  "collect-custom-events-example03-ja.png": {
+    "width": 1200,
+    "height": 506
+  },
+  "collect-custom-events-example03.png": {
+    "width": 1200,
+    "height": 506
   },
   "compound-eye.png": {
     "width": 451,
@@ -10178,7 +10406,6 @@
   "new-feature-01-postgresql.png": {
     "width": 1200,
     "height": 633
-<<<<<<< HEAD
   },
   "new-feature-01-redis-en.png": {
     "width": 1200,
@@ -10191,8 +10418,6 @@
   "new-feature-01-redis.png": {
     "width": 1200,
     "height": 636
-=======
->>>>>>> 9070ec5022c45a558e292f39759db1fe63f6dcb8
   },
   "new-feature-01.png": {
     "width": 1200,
@@ -11604,39 +11829,39 @@
   },
   "rum-pageload-event-02-en.png": {
     "width": 1199,
-    "height": 610
+    "height": 557
   },
   "rum-pageload-event-02-ja.png": {
     "width": 1200,
-    "height": 612
+    "height": 557
   },
   "rum-pageload-event-02.png": {
-    "width": 1197,
-    "height": 574
+    "width": 1200,
+    "height": 557
   },
   "rum-pageload-event-03-en.png": {
     "width": 1200,
-    "height": 615
+    "height": 646
   },
   "rum-pageload-event-03-ja.png": {
     "width": 1200,
-    "height": 612
+    "height": 646
   },
   "rum-pageload-event-03.png": {
     "width": 1199,
-    "height": 576
+    "height": 647
   },
   "rum-pageload-event-04-en.png": {
     "width": 1200,
-    "height": 612
+    "height": 646
   },
   "rum-pageload-event-04-ja.png": {
     "width": 1200,
-    "height": 546
+    "height": 645
   },
   "rum-pageload-event-04.png": {
     "width": 1200,
-    "height": 575
+    "height": 646
   },
   "rum-pageload-fid-en.png": {
     "width": 1200,
