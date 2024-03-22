@@ -4,9 +4,9 @@
 
 - **trace_transaction_name_key** <span class='type'>String</span>
 
-  HTTP request parameter値をそのオプションに設定すると、パラメータ値を抽出してトランザクション名の最後に追加します。 
+  HTTPリクエストパラメータの変数名を設定すると、その変数の値を取得してトランザクション名の最後に追加します。 
 
-  例えば、HTTPパラメータで`paramKey`を持つ`/api/test` URLを呼び出す場合、次の例のように設定すると、トレース履歴に`/api/test$paramKey={value}`でトランザクション名を表示します。ただし、複数のパラメータを登録することはできません。
+  例えば、HTTPパラメータで変数名`paramKey`を持った`/api/test`というURLを呼び出す場合、次の例のように設定すると、トレース履歴に`/api/test$paramKey={value}`の形式で表示されます。ただし、複数のパラメータを登録できません。
 
   ```ini title='whatap.conf'
   # example

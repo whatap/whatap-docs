@@ -53,16 +53,16 @@ The `container` category collects all custom labels set on the container's pods 
 | blkio_wiops             | Count           | IoWriteIops                                                                                                                                                    |
 | ^                       | ^               | Container Block I/O Write IOPS                                                                                                                                 |
 | ^                       | ^               | Sum of counts written per second across all block devices in the container                                                                                     |
-| cpu_per_quota           | Percentage      | CpuByLimit                                                                                                                                                     |
+| cpu_per_quota           | Percent         | CpuByLimit                                                                                                                                                     |
 | ^                       | ^               | Container CPU Usage by Limit (%)                                                                                                                               |
 | ^                       | ^               | Container CPU utilization by limit                                                                                                                             |
 | cpu_quota               | Millicore       | CpuLimit                                                                                                                                                       |
 | ^                       | ^               | Container CPU Limit (core)                                                                                                                                     |
 | ^                       | ^               | Container CPU Limit Quota <br/> If the limit is not set, the total CPU cores of the node where the container is running appears in millicores.                 |
-| cpu_quota_percent       | Percentage      | CpuLimitByNode                                                                                                                                                 |
+| cpu_quota_percent       | Percent         | CpuLimitByNode                                                                                                                                                 |
 | ^                       | ^               | Container CPU Limit by Node (%)                                                                                                                                |
 | ^                       | ^               | Container CPU Limit Quota against Node CPU<br/> If the limit is not set, the total CPU cores of the node where the container is running appears in percentage. |
-| cpu_sys                 | Percentage      | CpuSysByNode                                                                                                                                                   |
+| cpu_sys                 | Percent         | CpuSysByNode                                                                                                                                                   |
 | ^                       | ^               | Container CPU Sys Usage by Node (%)                                                                                                                            |
 | ^                       | ^               | Container CPU System Utilization against Node CPU                                                                                                              |
 | cpu_throttledperiods    | Count           | CpuThrottledCnt                                                                                                                                                |
@@ -71,19 +71,19 @@ The `container` category collects all custom labels set on the container's pods 
 | cpu_throttledtime       | Nanosecond      | CpuThrottledTime                                                                                                                                               |
 | ^                       | ^               | Container CPU Throttling Time                                                                                                                                  |
 | ^                       | ^               | Container CPU Throttled Time                                                                                                                                   |
-| cpu_total               | Percentage      | CpuByNode                                                                                                                                                      |
+| cpu_total               | Percent         | CpuByNode                                                                                                                                                      |
 | ^                       | ^               | Container CPU Usage by Node (%)                                                                                                                                |
 | ^                       | ^               | Container CPU Utilization against Node CPU                                                                                                                     |
 | cpu_total_milli         | Millicore       | CpuTotUsage                                                                                                                                                    |
 | ^                       | ^               | Container CPU Usage (millicore)                                                                                                                                |
 | ^                       | ^               | Container CPU Usage                                                                                                                                            |
-| cpu_user                | Percentage      | CpuUserByNode                                                                                                                                                  |
+| cpu_user                | Percent         | CpuUserByNode                                                                                                                                                  |
 | ^                       | ^               | Container CPU User Usage by Node (%)                                                                                                                           |
 | ^                       | ^               | Container CPU User Utilization against Node CPU                                                                                                                |
 | cpu_request             | Millicore       | CpuRequest                                                                                                                                                     |
 | ^                       | ^               | Container CPU Request (core)                                                                                                                                   |
 | ^                       | ^               | Container CPU Request                                                                                                                                          |
-| cpu_per_request         | Percentage      | CpuByRequest                                                                                                                                                   |
+| cpu_per_request         | Percent         | CpuByRequest                                                                                                                                                   |
 | ^                       | ^               | Container CPU Usage by Request (%)                                                                                                                             |
 | ^                       | ^               | Utilization against Container CPU Request<br/>= cpu_total_milli/cpu_request \* 100                                                                             |
 | mem_failcnt             | Count           | MemFailCnt                                                                                                                                                     |
@@ -95,7 +95,7 @@ The `container` category collects all custom labels set on the container's pods 
 | mem_maxusage            | Byte            | MemMaxUsage                                                                                                                                                    |
 | ^                       | ^               | Container Memory Max Usage (byte)                                                                                                                              |
 | ^                       | ^               | Recorded Value for Container Memory Maximum Usage                                                                                                              |
-| mem_percent             | Percentage      | MemWsByLimit                                                                                                                                                   |
+| mem_percent             | Percent         | MemWsByLimit                                                                                                                                                   |
 | ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                                      |
 | ^                       | ^               | Working Set Usage based on Container Memory Limit<br/>= mem_usage/mem_limit \* 100                                                                             |
 | mem_totalcache          | Byte            | MemTotCache                                                                                                                                                    |
@@ -107,7 +107,7 @@ The `container` category collects all custom labels set on the container's pods 
 | mem_totalrss            | Byte            | MemTotRss                                                                                                                                                      |
 | ^                       | ^               | Container Memory Total RSS (byte)                                                                                                                              |
 | ^                       | ^               | Container's Total RSS Memory Size                                                                                                                              |
-| mem_totalrss_percent    | Percentage      | MemTotRssByLimit                                                                                                                                               |
+| mem_totalrss_percent    | Percent         | MemTotRssByLimit                                                                                                                                               |
 | ^                       | ^               | Container Memory Total RSS By Limit (%)                                                                                                                        |
 | ^                       | ^               | Container's Total RSS Memory Utilization                                                                                                                       |
 | mem_totalunevictable    | Byte            | MemTotUnevictable                                                                                                                                              |
@@ -119,13 +119,13 @@ The `container` category collects all custom labels set on the container's pods 
 | mem_working_set         | Byte            | MemWs                                                                                                                                                          |
 | ^                       | ^               | Container Memory Working Set (byte)                                                                                                                            |
 | ^                       | ^               | Container memory working set<br/>= mem_usage - inactive file                                                                                                   |
-| mem_working_set_percent | Percentage      | MemWsByLimit                                                                                                                                                   |
+| mem_working_set_percent | Percent         | MemWsByLimit                                                                                                                                                   |
 | ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                                      |
 | ^                       | ^               | Working Set Usage based on Container Memory Limit<br/>= mem_usage/mem_limit \* 100                                                                             |
 | mem_request             | Byte            | MemRequest                                                                                                                                                     |
 | ^                       | ^               | Container Memory Request (byte)                                                                                                                                |
 | ^                       | ^               | Container Memory Request Size                                                                                                                                  |
-| mem_per_request         | Percentage      | MemWsByRequest                                                                                                                                                 |
+| mem_per_request         | Percent         | MemWsByRequest                                                                                                                                                 |
 | ^                       | ^               | Container Memory Working Set by Request (%)                                                                                                                    |
 | ^                       | ^               | Working Set Usage based on Container Memory Request<br/>= mem_working_set / mem_request \* 100                                                                 |
 | network_rbps            | Byte            | NetRxBytes                                                                                                                                                     |
@@ -152,10 +152,10 @@ The `container` category collects all custom labels set on the container's pods 
 | network_wiops           | Count           | NetTxIops                                                                                                                                                      |
 | ^                       | ^               | Container Network Transmit IOPS                                                                                                                                |
 | ^                       | ^               | Container Network Transmit Error Count                                                                                                                         |
-| node_cpu                | Percentage      | ConNodeCpu                                                                                                                                                     |
+| node_cpu                | Percent         | ConNodeCpu                                                                                                                                                     |
 | ^                       | ^               | Container Work Node CPU Usage (%)                                                                                                                              |
 | ^                       | ^               | CPU Usage of the Node where the container is running                                                                                                           |
-| node_mem                | Percentage      | ConNodeMem                                                                                                                                                     |
+| node_mem                | Percent         | ConNodeMem                                                                                                                                                     |
 | ^                       | ^               | Container Work Node Memory Usage (%)                                                                                                                           |
 | ^                       | ^               | Memory Usage of the Node where the container is running                                                                                                        |
 | phase                   | String          | Pod lifecycle <br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                                     |
@@ -323,16 +323,16 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | blkio_wiops          | Count      | IoWriteIops                                                                                                                                       |
 | ^                    | ^          | Pod Block I/O Write IOPS                                                                                                                          |
 | ^                    | ^          | Sum of cases written per second across all block devices in the Pod                                                                               |
-| cpu_per_limit        | Percentage | CpuByLimit                                                                                                                                        |
+| cpu_per_limit        | Percent    | CpuByLimit                                                                                                                                        |
 | ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
 | ^                    | ^          | Container CPU utilization by limit                                                                                                                |
-| cpu_per_request      | Percentage | CpuByRequest                                                                                                                                      |
+| cpu_per_request      | Percent    | CpuByRequest                                                                                                                                      |
 | ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
 | ^                    | ^          | Container CPU utilization by limit                                                                                                                |
-| cpu_quota_percent    | Percentage | CpuLimitByNode                                                                                                                                    |
+| cpu_quota_percent    | Percent    | CpuLimitByNode                                                                                                                                    |
 | ^                    | ^          | Pod CPU Limit by Node (%)                                                                                                                         |
 | ^                    | ^          | Pod CPU limit quota against node CPU<br/>If the limit is not set, the total CPU cores of the node where the Pod is running appears in percentage. |
-| cpu_sys              | Percentage | CpuSysByNode                                                                                                                                      |
+| cpu_sys              | Percent    | CpuSysByNode                                                                                                                                      |
 | ^                    | ^          | Pod CPU Sys Usage by Node (%)                                                                                                                     |
 | ^                    | ^          | Pod CPU System Utilization against Node CPU                                                                                                       |
 | cpu_throttledperiods | Count      | CpuThrottledCnt                                                                                                                                   |
@@ -341,19 +341,19 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | cpu_throttledtime    | Nanosecond | CpuThrottledTime                                                                                                                                  |
 | ^                    | ^          | Pod CPU Throttling Time                                                                                                                           |
 | ^                    | ^          | Pod CPU Throttled Time                                                                                                                            |
-| cpu_total            | Percentage | CpuByNode                                                                                                                                         |
+| cpu_total            | Percent    | CpuByNode                                                                                                                                         |
 | ^                    | ^          | Pod CPU Usage by Node (%)                                                                                                                         |
 | ^                    | ^          | Pod CPU Utilization against Node CPU                                                                                                              |
 | cpu_total_milli      | Millicore  | CpuTotUsage                                                                                                                                       |
 | ^                    | ^          | Pod CPU Usage (millicore)                                                                                                                         |
 | ^                    | ^          | Pod CPU Utilization                                                                                                                               |
-| cpu_user             | Percentage | CpuUserByNode                                                                                                                                     |
+| cpu_user             | Percent    | CpuUserByNode                                                                                                                                     |
 | ^                    | ^          | Pod CPU User Usage by Node (%)                                                                                                                    |
 | ^                    | ^          | Pod CPU User Utilization against Node CPU                                                                                                         |
 | cpu_request          | Millicore  | CpuRequest                                                                                                                                        |
 | ^                    | ^          | Pod CPU Request (core)                                                                                                                            |
 | ^                    | ^          | Pod CPU Request                                                                                                                                   |
-| cpu_per_request      | Percentage | CpuByRequest                                                                                                                                      |
+| cpu_per_request      | Percent    | CpuByRequest                                                                                                                                      |
 | ^                    | ^          | Pod CPU Usage by Request (%)                                                                                                                      |
 | ^                    | ^          | Utilization against Pod CPU Request<br/>= cpu_total_milli/cpu_request \* 100                                                                      |
 | mem_totalcache       | Byte       | MemTotCache                                                                                                                                       |
@@ -365,7 +365,7 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | mem_totalrss         | Byte       | MemTotRss                                                                                                                                         |
 | ^                    | ^          | Pod Memory Total RSS (byte)                                                                                                                       |
 | ^                    | ^          | Pod's Total RSS Memory Size                                                                                                                       |
-| mem_totalrss_percent | Percentage | MemTotRssByLimit                                                                                                                                  |
+| mem_totalrss_percent | Percent    | MemTotRssByLimit                                                                                                                                  |
 | ^                    | ^          | Pod Memory Total RSS by Limit (%)                                                                                                                 |
 | ^                    | ^          | Pod's Total RSS Memory Utilization                                                                                                                |
 | mem_totalunevictable | Byte       | MemTotUnevictable                                                                                                                                 |
@@ -383,10 +383,10 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | memory_limit         | Byte       | MemLimit                                                                                                                                          |
 | ^                    | ^          | Pod Memory Limit (byte)                                                                                                                           |
 | ^                    | ^          | Pod memory limit quota                                                                                                                            |
-| memory_per_request   | Percentage | MemByRequest                                                                                                                                      |
+| memory_per_request   | Percent    | MemByRequest                                                                                                                                      |
 | ^                    | ^          | Pod Memory by Request (%)                                                                                                                         |
 | ^                    | ^          | Usage based on Pod memory requests                                                                                                                |
-| memory_per_limit     | Percentage | MemByLimit                                                                                                                                        |
+| memory_per_limit     | Percent    | MemByLimit                                                                                                                                        |
 | ^                    | ^          | Pod Memory by Limit (%)                                                                                                                           |
 | ^                    | ^          | Usage based on Pod memory limit                                                                                                                   |
 | network_rbps         | Byte       | NetRxBytes                                                                                                                                        |

@@ -1,0 +1,195 @@
+Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="tx_search" className="uitext" />
+
+You can view the statistics on the performance properties and execution status for each transaction for a specific period of time. You can view all transactions and quickly check their status (normal or error). Through the provided information, you can find which transactions are busy and resource-consuming. Various filters can be enabled depending on the transaction properties, making it useful in finding transactions with specific conditions.
+
+<ImgLang img='apm-tx-search.png' desc='Transaction Search' />
+
+Set the query time and then select the target from the <Cmdname sid="application" className="uitext" /> option. Select ![Search icon](/img/ico-btn-search.png). Then the searched results appear in the table. If you select desired items from the result list, the <Cmdname sid="TTL06527" className="uitext" /> window appears. For more information about the detailed analysis of transaction trace through the <Cmdname sid="TTL06527" className="uitext" /> window, see [the following](trs-profile#details).
+
+:::note
+
+- To search for transactions in error, click <Cmdname sid="show_only_error" className="uitext" /> and then select ![Search icon](/img/ico-btn-search.png).
+
+- It is recommended to set the search time as short as possible because a response delay may occur depending on the search conditions.
+
+:::
+
+## Editing columns
+
+<ImgLang img='whatap_application_analysis_tx_profile_column.png' desc='Select Column' />
+
+When viewing results, click ![Column selection icon](/img/ico-column-set.svg) <Cmdname sid="column_select" className="uitext" /> and then select the columns to be checked.
+
+## Applying filters
+
+Use filters for more details. Data exploration is supported using multiple search conditions. After setting a filter(s), select ![Search icon](/img/ico-btn-search.png).
+
+:::note
+
+Some filters may not be supported depending on the product.
+
+:::
+
+### <Cmdname sid="TTL06361" />
+
+<ImgLang img='apm-tx-search-elapsed-time.png' desc='Elapsed time' />
+
+Search based on the transaction response time. Search by entering two values above and below the reference.
+
+### <Cmdname sid="TTL06088" />
+
+<ImgLang img='apm-tx-search-error-message.png' desc='Error message' />
+
+Search based on the transaction error message. In the default state, error-related columns may not be seen. Select a column.
+
+:::note
+
+Transactions in error are displayed in red.
+
+:::
+
+### <Cmdname sid="TTL06089" />
+
+<ImgLang img='apm-tx-search-http-call.png' desc='HTTP call count' />
+
+It searches for the transactions that exceed the specified number based on the number of calls for external HTTP services.
+
+### <Cmdname sid="TTL06097" />
+
+<ImgLang img='apm-tx-search-sql-count.png' desc='SQL count' />
+
+It searches for the transactions where the number of SQL executions per transaction is greater than or equal to the specified number. Exceptionally, this is used to search transactions that call SQLs excessively.
+
+### <Cmdname sid="TTL06094" />
+
+<ImgLang img='apm-tx-search-sql-fetch-count.png' desc='SQL fetch count' />
+
+After executing an SQL, it searches for the transactions exceeding the specified number based on the number of DB patches. Use this to search transactions that perform excessive data fetches.
+
+### <Cmdname sid="TTL06918" />
+
+<ImgLang img='apm-tx-search-transaction.png' desc='Transaction' />
+
+It searches based on the transaction. The entered search string is compared and searched by inclusion (partial matching).
+
+### <Cmdname sid="TTL06081" />
+
+<ImgLang img='apm-tx-search-client-ip.png' desc='IP' />
+
+It searches transactions based on the client IP. However, IP strings are searched by prefix comparison (forward matching).
+
+### <Cmdname sid="TTL06101" />
+
+<ImgLang img='apm-tx-search-domain.png' desc='Domain' />
+
+Retrieve transactions based on the HTTP service domain (host:port). The search conditions must match the domain completely (full match).
+
+### <Cmdname sid="TTL06359" />
+
+<ImgLang img='apm-tx-search-user-agent.png' desc='User agent' />
+
+Search transactions based on the user agent (partial match).
+
+<InDoc product="java,python,nodejs">
+
+### <Cmdname sid="TTL06108" />
+
+Search transactions based on the referer string.
+
+:::note
+
+Agents in their default settings do not collect referer data. If the referer settings are required, see [the following](analysis-apm-trs#stat-referer) to add the related settings.
+
+:::
+
+</InDoc>
+
+### <Cmdname sid="TTL06111" />
+
+<ImgLang img='apm-tx-search-tx-id.png' desc='Transaction ID' />
+
+Search transactions based on their transaction ID (full match). For transaction IDs, the search indexes are created for searching at a high speed.
+
+:::note
+
+- The transaction ID can be found in the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06527" className="uitext" /> window. For more information, see [the following](trs-profile#anlaysis-trace-record-summary).
+
+- If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+
+:::
+
+### <Cmdname sid="TTL06107" />
+
+<ImgLang img='apm-tx-search-mtx-id.png' desc='Multi-transaction ID' />
+
+Search transactions based on the multi-transaction ID (full match).
+
+:::note
+
+<Xclude product="dotnet">
+
+- The multi-transaction ID can be found in the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06527" className="uitext" /> window. For more information, see [the following](trs-multi-trace#trace-multi-tx).
+
+</Xclude>
+
+- If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+
+- When searching with the <Cmdname sid="TTL06107" className="uitext" /> filter applied, only the <Cmdname sid="TTL06111" className="uitext" /> filter can be additionally applied.
+
+:::
+
+### <Cmdname sid="TTL06420" />
+
+<ImgLang img='apm-tx-search-wclientid.png' desc='Client ID' />
+
+The client ID (`wClientId`) is an ID given by the WhaTap agent to identify users. Search transactions based on this ID (full match). There is no separate index for searching.
+
+:::note
+
+WhaTap basically stores the client-related information.
+
+:::
+
+<InDoc product="java">
+
+### <Cmdname sid="TTL06082" />
+
+Search transactions based on the login ID.
+
+:::note
+
+Agents in their default settings do not collect login IDs. For more information about the login ID setting, see [the following](../java/script-plugin#common-plugin) to add settings.
+
+:::
+
+</InDoc>
+
+## Applying multiple filters
+
+You can apply multiple filters to see the list of desired transactions. The following case is for the elapsed time between 5 and 8 seconds, 5 or more HTTP calls, and the transaction path including "account."
+
+<ImgLang img='apm-tx-search-multiple-filtering.png' desc='Apply multiple filters' />
+
+:::note
+
+When searching with the <Cmdname sid="TTL06107" className="uitext" /> filter applied, only the <Cmdname sid="TTL06111" className="uitext" /> filter can be additionally applied.
+
+:::
+
+## Downloading the searched results
+
+The searched results can be downloaded as a CSV file according to the filter conditions set by the user. 
+
+1. Click ![Search icon](/img/ico-btn-search.png) to view the searched results.
+
+2. Select ![Download icon](/img/ic-csv-download-ms.svg).
+
+3. Enter the maximum number of CSV lines. You can save the searched results as many lines as you enter.
+
+4. Select <Cmdname sid="download" className="uitext" /> to download the CSV file.
+
+:::note
+
+The CSV file name's format is _profile\_`{pcode}`\_`YYMMDD`.csv_.
+
+:::

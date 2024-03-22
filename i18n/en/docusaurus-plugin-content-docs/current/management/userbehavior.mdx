@@ -1,0 +1,138 @@
+---
+id: userbehavior
+title: User Behavior
+description: The WhaTap monitoring service automatically detects the interactions conducted by users in the project, providing insight into user behaviors.
+tags:
+  - Management
+  - User Behavior
+---
+
+Home > Select Project > ![Icon](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_userBehavior" className="uitext" />
+
+The WhaTap monitoring service automatically detects the interactions conducted by users in the project, providing insight into user behaviors. You can see the menus and functions commonly used by project members. If a problem occurs due to incorrect project settings, you can quickly detect and respond to it by tracing user behaviors. Through this, you can detect and prevent security issues.
+
+<ImgLang img='management-userbehavior.png' desc='User Behavior' />
+
+1. Set the search period in <Cmdname sid="time_selector" className="uitext" />.
+
+2. Select the targets for viewing user behaviors in <Cmdname sid="account_email" className="uitext" />. The users that can be selected are identified by email address.
+
+3. Select ![Search icon](/img/ico-btn-search.png).
+
+:::note
+
+- You can view your own activities without any special roles. To view the activities of others, the **Member Management** role is required. For more information about the member role scheme, see [the following](../project/project-structure#project-auth).
+
+- The maximum search time for user behaviors is 62 days.
+
+- The retention period for user behavior data is 1 year.
+
+:::
+
+## Message format
+
+A user behavior message consists of email address, IP address, and a specific behavior description.
+
+```text title='Example'
+userId=user@whatap.io, ip=13.125.196.206, msg=Successfully logged in.
+```
+
+<!-- en:Successfully logged in. / ja:成功的にログインしました。 번역참조-->
+
+- `userId`: Email address of the user
+
+- `ip`: IP address of the device connected by the user
+
+- `msg`: Specific behavior of the user
+
+## Search Scope of Metrics
+
+You can view the following user behaviors:
+
+### User
+
+- Membership registration history
+
+- Log in, log in failure, and log out
+
+- Switching to a dormant account and recovery
+
+- Modification of personal information, membership withdrawal, API token issuance, and project list inquiry
+
+- Multi-factor authentication registration, modification, deletion, and update
+
+- Mobile phone authentication
+
+### Billing
+
+- Downloading invoices, adding promotion keys, and saving payment information
+
+- Project manager inquiry
+
+- Project subscription and history inquiry
+
+### Project
+
+- Project creation, modification, and deletion
+
+- Project token issuance history, access key generation, metering data inquiry
+
+- Maintenance plan addition, modification, and deletion
+
+- Addition and deletion of projects to a group
+
+- Viewing the project member list
+
+- Server status update history for the project
+
+- Inviting members to the project, setting roles, and deleting members
+
+- User custom data (Preset) creation, modification, and deletion
+
+- <Cmdname sid="flexboard" className="uitext" /> creation, modification, deletion, and sharing
+
+- In <Cmdname sid="side_integratedRealtimeAlert" className="uitext" />, event batch process history
+
+- In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, user activities
+
+  - Event creation, modification, and deletion
+
+  - Editing, saving, and loading event settings as JSON
+
+- In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, the event notification settings per user can be viewed.
+
+- SQL built and formatted SQL request history
+
+- Report settings update and download and email sending reservation history
+
+- Opt-out history for email notifications
+
+- Using another member's <Cmdname sid="side_userBehavior" className="uitext" /> menu
+
+- Merged data request
+
+- URL check setting
+
+- Settings for data extraction and parameter decoding
+
+- Session kill request for database projects
+
+### Group
+
+- Group creation, modification, and deletion
+
+- Viewing the group member list 
+
+- Inviting members to the group, setting roles, and deleting members
+
+- Viewing the group list
+
+- Adding and deleting groups in the organization
+
+### Organization
+
+- Organization creation, modification, and deletion
+
+- Viewing the organization member list 
+
+- Inviting members to the organization, setting roles, and deleting members

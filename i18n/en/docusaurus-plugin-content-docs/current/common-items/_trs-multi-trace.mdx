@@ -1,5 +1,15 @@
 **Multi-transaction** means the transaction involving a different agent or project. **Multiple Transaction Trace** is to trace calls between the application services registered in the WhaTap project. 
 
+<InDoc product="java">
+
+:::info
+
+The Java agent traces multi-transactions with three HTTP header keys (`x-wtap-po`, `x-wtap-mst`, and `x-wtap-sp1`). If HTTP transactions passing through the gateway cannot be traced, check the HTTP header conditions.
+
+:::
+
+</InDoc>
+
 :::note
 
 **Enabling the multi-transaction**

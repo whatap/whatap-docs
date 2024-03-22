@@ -14,6 +14,156 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.3.0.a3
+
+2024年03月14日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Changed</Status>会員退会時に未払い額がある場合、発行済み請求書に対する未払い額、発行済み請求書に対する未払い額を全て表示するように変更</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューで<Cmdname sid="AA010" className="uitext" />ウィジェットに関して修正</p>
+
+- PHP、Python、.Net製品の場合<Cmdname sid="AA010" className="uitext" />ウィジェット名を<Cmdname sid="AA017" className="uitext" />に変更
+
+- PHP、Python、.Net、Go製品の場合は、ヒープメモリ、プロセスメモリの詳細情報ウィンドウで<Cmdname sid="system_gc_only" className="uitext" />カラムを除去 
+
+* * *
+
+### `Server`
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_resourceEqualizer" className="uitext" />メニューで<Cmdname sid="disk_iops" className="uitext" />チャートのy軸の最大値が正しく表示されない問題を修正
+
+* * *
+
+### `Database`
+
+### PostgreSQL
+
+<p><Status>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューのデザイン改善及びインストール案内を追加</p>
+
+### PostgreSQL、MySQL
+
+<p><Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニュー機能の改編</p>
+
+- ウィジェットのサイズと位置を変更できます。
+
+- ウィジェットの追加と削除機能を追加しました。
+
+- プリセット保存機能を追加しました。
+
+* * *
+
+### `Kubernetes`
+
+#### <Cmdname sid="side_dashboard" />
+
+- <Status>New</Status> Deploymentを基準にReplicaSet数やコンテナ数、主な性能情報統計、Pod数などの情報を提供する<Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_deploymentList" className="uitext" />メニューを追加
+
+- <Status>Feature</Status> <Cmdname sid="side_containerMap" className="uitext" />メニューの<Cmdname sid="BTN06342" className="uitext" />から対象(コンテイナ/ファド) の一覧から選択したものだけが確認できる<Cmdname sid="checked_only" className="uitext" />オプションを追加
+
+- <Status>Feature</Status> <Cmdname sid="side_integratedContainerMap" className="uitext" />メニューの<Cmdname sid="groupby" className="uitext" />オプション項目として<UI>WhatapProject</UI>追加：WhaTapプロジェクト別グループ化機能
+
+- <Status>Feature</Status>Kubernetesクラスタープロジェクトの<Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />メニューでノード情報カラムを追加
+
+  > <UI>ExternalIP</UI>、<UI>InternalIP</UI>、<UI>InternalDNS</UI>、<UI>ExternalDNS</UI>、<UI>Hostname</UI>
+
+- <Status>Fixed</Status> <Cmdname sid="side_integratedContainerMap" className="uitext" />メニューで<Cmdname sid="groupby" className="uitext" />オプション使用時にオブジェクト数が断続的に隠れる現象を修正
+
+</div>
+
+## Preview 2.3.0.a2
+
+2024年03月07日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューで3rdパーティプラグインでOpsgenieプラットフォーム登録機能を追加
+
+- <Status>Changed</Status>サイドメニュー上の段ロゴツールチップを除去
+
+- <Status>Changed</Status>サイドメニューの<Cmdname sid="BTN07359" className="uitext" />追加ボタンスタイルを変更
+
+- <Status>Changed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューでテーブルリストをスクロールする場合、ヘッダーは固定されたままになるように変更
+
+- <Status>Changed</Status>プロジェクト作成でグループを追加する時、プロジェクト作成画面に移動するように変更
+
+- <Status>Changed</Status>サイドメニューでグループ内のプロジェクトリストを名前順に並べ替えるように修正
+
+- <Status>Changed</Status>プロジェクト作成時に警告通知メッセージの基本言語を設定できる<Cmdname sid="sms_noti_alert_language" className="uitext" />オプションを追加
+
+- <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />メニューでイベント発生時刻とイベント解消時刻が同じ時刻で表示される問題を修正
+
+- <Status>Fixed</Status>プロジェクトの通知受信言語が「日本語」の場合、<Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="project_management" className="uitext" />メニューで<Cmdname sid="sms_noti_alert_language" className="uitext" />のオプションが空になっている問題を修正
+
+* * *
+
+### `Application`
+
+#### 共通
+
+<p><Status>Fixed</Status> <Cmdname sid="AA005" className="uitext" />ウィジェットの<Cmdname sid="dashboard_hitmap_error" className="uitext" />オプションを活性化した状態でチャートをドラッグして<Cmdname sid="TTL06209" className="uitext" />ウィンドウを開いた時、エラー数が0のプロジェクトは表示しないように修正</p>
+
+#### Java
+
+<p><Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューの<b>エージェントのインストール案内</b>セッションで<b>JVMオプション追加</b>項目に表記された「選択事項」フレーズを削除</p>
+
+#### PHP
+
+<p><Status>Fixed</Status> PHP製品のプロジェクトインストール画面でバージョン情報を修正：8.0 → 8.3</p>
+
+#### Node.js
+
+<p><Status>Fixed</Status> Node.js製品のプロジェクトインストール画面でインストール案内フレーズ(日本語)を修正</p>
+
+* * *
+
+### `Server`
+
+#### <Cmdname sid="event_statistic" />
+
+- <Status>Feature</Status> <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="sm_log_event_tab" className="uitext" />タブで受信者タグの設定機能を追加
+
+- <Status>Fixed</Status> <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="sm_log_event_tab" className="uitext" />タブでリストのテキストがレイアウトから外れる問題を修正
+
+#### <Cmdname sid="sms_alert_status" />
+
+<p><Status>Fixed</Status> <Cmdname sid="sms_alert_status" className="uitext" />リストで処理履歴を登録する時、処理履歴(件数)ではなく登録完了タグが表示されるように修正</p>
+
+* * *
+
+### `Database`
+
+- <Status>Feature</Status> <Cmdname sid="session_detail" className="uitext" />ウィンドウにリアルタイム/停止照会及び更新ボタンを追加
+
+- <Status>Changed</Status> <Cmdname sid="session_detail" className="uitext" />ウィンドウをモーダル形式からポップアウト形式に変更
+
+- <Status>Fixed</Status> <Cmdname sid="flexboard" className="uitext" />メニューでアクティブセッションリスト照会の性能を改善
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Feature</Status> <Cmdname sid="workload" className="uitext" /> &gt; <Cmdname sid="containerizedAppList" className="uitext" />メニューのアプリケーション詳細情報に<Cmdname sid="TTL06891" className="uitext" />タブを追加
+
+- <Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="pod_init_perform" className="uitext" />メニューの改編とメニュー名を<Cmdname sid="podInitPerf" className="uitext" />に変更
+
+  > <Cmdname sid="podInitPerf" className="uitext" />メニューは、Pod生成後の開始性能を分析し、効率的なコンテナリソース管理をサポートします。
+
+  - 単一一覧提供でPodを選択する時に分析を開始するように動線を変更しました。
+
+  - 性能分析区間を視覚化しました。
+
+</div>
+
 ## Preview 2.3.0.a1
 
 2024年02月29日
@@ -48,7 +198,7 @@ toc_max_heading_level: 2
 
 <p><Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="flexboard" className="uitext" />メニューでアクティブセッションテーブルフィルターを追加</p>
 
-#### Redis, Mongo <code class="my">V2</code>
+#### Redis, MongoDB <code class="my">V2</code>
 
 - <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューでMaster-Slave関係を表示
 

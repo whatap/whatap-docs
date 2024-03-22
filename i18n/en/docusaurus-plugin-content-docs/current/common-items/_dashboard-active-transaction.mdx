@@ -1,4 +1,14 @@
-Home > Select Project > **_Dashboard_** > **_Active Transaction_**
+<InDoc product="java">
+
+Home > Select Project > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="AA002" className="uitext" />
+
+</InDoc>
+
+<Xclude product="java">
+
+In Home screen > Select Project > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="appDashboard" className="uitext" /> > <Cmdname sid="AA002" className="uitext" /> widget, select ![Shortcut icon](/img/right-arrow.svg).
+
+</Xclude>
 
 You can quickly recognize abnormal transactions by using URLs, SQLs, and HTTP calls of the active transactions, and can analyze the delayed sections in detail through the transaction trace details.
 
@@ -17,6 +27,22 @@ It displays the application server list and the total number of active transacti
 ![Leader line 3](/img/number-03.png) **Transaction List**
 
 It displays the detailed information of active transactions including URLs, SQLs, and HTTP calls. If you select the Top 10 Items tab, you can see a table of items sorted by the elapsed time in the ascending order. Likewise, the speeds of the transaction state are classified into <span class='normal'>Normal</span>, <span class='slow'>Slow</span>, and <span class='vslow'>Very Slow</span>.
+
+<InDoc product='java'>
+
+When you select an item in the transaction list, the <Cmdname sid="active_transaction" className="uitext" /> window appears where you can see the details on the selected transaction.
+
+<ImgLang img='dashboard-active-transaction-details.png' desc='Active Transaction' />
+
+- You can see detailed information of the running transactions, external calls, queries, call stacks, and the like.
+
+  - <Cmdname sid="refresh_all" className="uitext" />: You can update information of the running transactions.
+
+  - <Cmdname sid="stop_thread" className="uitext" />: You can stop a transaction in progress. To stop threading, <Cmdname sid="secret_key" className="uitext" /> is required. For more information about <Cmdname sid="secret_key" className="uitext" />, see <Link to="install-agent#security">the following</Link>.
+
+- If a transaction has already ended, the <Cmdname sid="show_trace" className="uitext" /> button appears. When you select the button, the <Cmdname sid="TTL06527" className="uitext" /> window appears. For more information about <Cmdname sid="TTL06527" className="uitext" />, see [the following](dashboard-hitmap-trace#basic-usage).
+
+</InDoc>
 
 ## Agent list filtering
 
