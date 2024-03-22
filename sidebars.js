@@ -5150,7 +5150,11 @@ const sidebars = {
             'kubernetes/create-name-space-project'
           ]
         },
-        'kubernetes/set-agent',
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'kubernetes/set-agent',
+        },
         {
           type: 'category',
           label: '관리하기',
