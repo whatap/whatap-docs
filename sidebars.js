@@ -5327,6 +5327,7 @@ const sidebars = {
                 'kubernetes/resource-node-list',
                 'kubernetes/object-manifest',
                 'kubernetes/kube-apiserver-dashboard',
+                'kubernetes/kube-apiserver-metrics-search',
                 'kubernetes/resource-namespace',
               ],
             },

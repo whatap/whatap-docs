@@ -7231,6 +7231,18 @@
     "width": 1681,
     "height": 943
   },
+  "k8s-apiserver-metrics-search-en.png": {
+    "width": 1200,
+    "height": 479
+  },
+  "k8s-apiserver-metrics-search-ja.png": {
+    "width": 1200,
+    "height": 478
+  },
+  "k8s-apiserver-metrics-search.png": {
+    "width": 1200,
+    "height": 482
+  },
   "k8s-app-agent-install-check-en.png": {
     "width": 386,
     "height": 139
