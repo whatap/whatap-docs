@@ -1155,11 +1155,15 @@ main {
       border: none;
       padding: 0 5px 0 5px;
     }
-    code.newfunc {
+    code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
       color: rgb(139, 82, 255);
       font-family: "Oleo Script";
       font-weight: 400;
+    }
+    code.oldfunc {
+      background-color: rgb(230, 230, 230);
+      color: #333;
     }
     sup > code {
       font-size: .6em;
