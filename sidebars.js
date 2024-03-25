@@ -2885,27 +2885,32 @@ const sidebars = {
           label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
-          // className: 'new',
+          className: 'new',
           items: [
             {
               type: 'doc',
-              label: 'v1.0.7 (81)',
-              id: 'release-notes/mobile/mobile-app-v1_0_7',
-              // className: 'new',
+              label: 'v1.0.8',
+              id: 'release-notes/mobile/mobile-app-v1_0_8',
+              className: 'new',
             },
             {
               type: 'doc',
-              label: 'v1.0.6 (74)',
+              label: 'v1.0.7',
+              id: 'release-notes/mobile/mobile-app-v1_0_7',
+            },
+            {
+              type: 'doc',
+              label: 'v1.0.6',
               id: 'release-notes/mobile/mobile-app-v1_0_6',
             },
             {
               type: 'doc',
-              label: 'v1.0.4 (53)',
+              label: 'v1.0.4',
               id: 'release-notes/mobile/mobile-app-v1_0_4',
             },
             {
               type: 'doc',
-              label: 'v1.0.3 (52)',
+              label: 'v1.0.3',
               id: 'release-notes/mobile/mobile-app-v1_0_3',
             },
           ],
@@ -3000,7 +3005,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_94',
@@ -3009,7 +3014,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_94',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_90',
                 'release-notes/nodejs/nodejs-0_4_89',
@@ -3139,7 +3144,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_5_7',
@@ -3148,7 +3153,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_5_7',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_5_6',
                 'release-notes/k8s/k8s-1_5_5', 
