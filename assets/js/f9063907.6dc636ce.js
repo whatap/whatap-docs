@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[21698],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[30677],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 23180:
+/***/ 37798:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,26 +312,31 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        'MongoDB',
+        'PHP',
+        '애플리케이션',
         'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mongodb/flexboard-share",
-    "id": "mongodb/flexboard-share",
+    "unversionedId": "php/flexboard-share",
+    "id": "php/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/mongodb/flexboard-share.mdx",
-    "sourceDirName": "mongodb",
-    "slug": "/mongodb/flexboard-share",
-    "permalink": "/whatap-docs/mongodb/flexboard-share",
+    "source": "@site/docs/php/flexboard-share.mdx",
+    "sourceDirName": "php",
+    "slug": "/php/flexboard-share",
+    "permalink": "/whatap-docs/php/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/mongodb/flexboard-share.mdx",
+    "editUrl": "undefined/docs/php/flexboard-share.mdx",
     "tags": [
         {
-            "label": "MongoDB",
-            "permalink": "/whatap-docs/tags/mongo-db"
+            "label": "PHP",
+            "permalink": "/whatap-docs/tags/php"
+        },
+        {
+            "label": "애플리케이션",
+            "permalink": "/whatap-docs/tags/애플리케이션"
         },
         {
             "label": "Flex 보드",
@@ -344,18 +349,19 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            "MongoDB",
+            "PHP",
+            "애플리케이션",
             "Flex 보드"
         ]
     },
-    "sidebar": "mongodbSidebar",
+    "sidebar": "phpSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/mongodb/flexboard-mode"
+        "permalink": "/whatap-docs/php/flexboard-mode"
     },
     "next": {
-        "title": "카운트 추이 활용하기",
-        "permalink": "/whatap-docs/mongodb/analysis-count-trend"
+        "title": "분석",
+        "permalink": "/whatap-docs/php/analysis-report-intro"
     }
 };
 const assets = {};
@@ -398,7 +404,6 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
 const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
 const LinkImage = makeShortcode("LinkImage");
-const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -569,15 +574,7 @@ function MDXContent(_param) {
         sid: "ITM07634",
         className: "uitext",
         mdxType: "Cmdname"
-    }), `를 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `존재하지 않는 이메일을 입력하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "share_dashboard",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 버튼이 비활성화됩니다.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드를 공유한 항목은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }), `를 선택하세요.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드를 공유한 항목은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "dashboard_list",
         className: "uitext",
         mdxType: "Cmdname"
@@ -648,15 +645,6 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), "으로 대시보드를 공유받은 멤버는 대시보드를 수정할 수 없지만 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "수정 모드"), "로 공유받은 대시보드는 수정할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "read_only",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), "으로 대시보드를 공유받은 멤버는 복사만 할 수 있습니다. 대시보드 복사 기능은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
-        to: "#copyflexboard",
-        mdxType: "Link"
-    }, "다음 문서"), "를 참조하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -735,15 +723,7 @@ function MDXContent(_param) {
         sid: "dashboard_list",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 목록에 '_copied' 접미어가 붙은 항목이 추가됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "admonition"
-    }, `존재하지 않는 이메일을 입력하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "copy_dashboard",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 버튼이 비활성화됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), ` 목록에 '_copied' 접미어가 붙은 항목이 추가됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "json-파일로-공유하기"
     }, `JSON 파일로 공유하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Flex 보드 설정을 JSON 파일로 저장하고 다른 멤버에서 전달하거나 다른 멤버의 설정을 가져올 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "내보내기"
