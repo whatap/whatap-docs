@@ -457,11 +457,15 @@ function MDXContent(_param) {
         sid: "sms_summary_download_csv",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 버튼 선택 시 원본 데이터를 CSV 형식의 파일로 다운로드할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "blockquote"
-    }, `파일명 예시, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }), ` 버튼 선택 시 원본 데이터를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
-    }, `kubernetes_container_images_{pcode}_{timestamp}.csv`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }, `CSV`), ` 형식의 파일로 다운로드할 수 있습니다. 파일명은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `kubernetes_container_images_`), ` 뒤에 프로젝트 코드와 데이터 조회 시점의 타임스탬프를 덧붙여 생성합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "blockquote"
+    }, `예, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `kubernetes_container_images`, `_`, `{pcode}`, `_`, `{timestamp}.csv`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "-컨테이너-상세-보기"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         src: (__webpack_require__(90070)/* ["default"] */ .A),
@@ -537,7 +541,7 @@ MDXContent.isMDXComponent = true;
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-container-img-0430401a63aee79190585b621c0b51b2.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-container-img-61fa9df57e941c76fd78511b482254c3.png");
 
 /***/ })
 
