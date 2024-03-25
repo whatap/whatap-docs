@@ -337,8 +337,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/service/service-1_102_x"
     },
     "next": {
-        "title": "WhaTap Mobile App v1.0.7 (81)",
-        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_7"
+        "title": "WhaTap Mobile App v1.0.8",
+        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_8"
     }
 };
 const assets = {};
