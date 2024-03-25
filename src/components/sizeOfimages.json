@@ -727,6 +727,18 @@
     "width": 400,
     "height": 345
   },
+  "apm-dashboard-active-tx-agent-en.png": {
+    "width": 800,
+    "height": 449
+  },
+  "apm-dashboard-active-tx-agent-ja.png": {
+    "width": 800,
+    "height": 448
+  },
+  "apm-dashboard-active-tx-agent.png": {
+    "width": 800,
+    "height": 449
+  },
   "apm-dashboard-active-tx-en.png": {
     "width": 600,
     "height": 347
@@ -905,15 +917,15 @@
   },
   "apm-dashboard-widget-add-en.png": {
     "width": 800,
-    "height": 500
+    "height": 454
   },
   "apm-dashboard-widget-add-ja.png": {
     "width": 800,
-    "height": 508
+    "height": 454
   },
   "apm-dashboard-widget-add.png": {
     "width": 800,
-    "height": 528
+    "height": 454
   },
   "apm-dashboard-widget-move-en.png": {
     "width": 1200,
@@ -6171,18 +6183,6 @@
     "width": 1200,
     "height": 1035
   },
-  "flexboard-sharable-list-en.png": {
-    "width": 800,
-    "height": 144
-  },
-  "flexboard-sharable-list-ja.png": {
-    "width": 800,
-    "height": 144
-  },
-  "flexboard-sharable-list.png": {
-    "width": 800,
-    "height": 146
-  },
   "flexboard-share-01-en.png": {
     "width": 800,
     "height": 73
@@ -6636,16 +6636,196 @@
     "height": 718
   },
   "ipa-agent-list-en.png": {
-    "width": 1200,
-    "height": 211
+    "width": 400,
+    "height": 364
   },
   "ipa-agent-list-ja.png": {
-    "width": 1200,
-    "height": 217
+    "width": 400,
+    "height": 372
   },
   "ipa-agent-list.png": {
+    "width": 400,
+    "height": 363
+  },
+  "ipa-agent-log-dotnet-en.png": {
     "width": 1200,
-    "height": 207
+    "height": 316
+  },
+  "ipa-agent-log-dotnet-ja.png": {
+    "width": 1200,
+    "height": 318
+  },
+  "ipa-agent-log-dotnet.png": {
+    "width": 1200,
+    "height": 315
+  },
+  "ipa-agent-log-golang-en.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "ipa-agent-log-golang-ja.png": {
+    "width": 1200,
+    "height": 630
+  },
+  "ipa-agent-log-golang.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "ipa-agent-log-java-en.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "ipa-agent-log-java-ja.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "ipa-agent-log-java.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "ipa-agent-log-nodejs-en.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-nodejs-ja.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-nodejs.png": {
+    "width": 1200,
+    "height": 653
+  },
+  "ipa-agent-log-php-en.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-php-ja.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-php.png": {
+    "width": 1200,
+    "height": 653
+  },
+  "ipa-agent-log-python-en.png": {
+    "width": 1200,
+    "height": 628
+  },
+  "ipa-agent-log-python-ja.png": {
+    "width": 1200,
+    "height": 624
+  },
+  "ipa-agent-log-python.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "ipa-datasource-java-en.png": {
+    "width": 1200,
+    "height": 271
+  },
+  "ipa-datasource-java-ja.png": {
+    "width": 1200,
+    "height": 266
+  },
+  "ipa-datasource-java.png": {
+    "width": 1200,
+    "height": 264
+  },
+  "ipa-env-var-dotnet-en.png": {
+    "width": 1200,
+    "height": 572
+  },
+  "ipa-env-var-dotnet-ja.png": {
+    "width": 1200,
+    "height": 572
+  },
+  "ipa-env-var-dotnet.png": {
+    "width": 1200,
+    "height": 572
+  },
+  "ipa-env-var-golang-en.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "ipa-env-var-golang-ja.png": {
+    "width": 1200,
+    "height": 739
+  },
+  "ipa-env-var-golang.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "ipa-env-var-java-en.png": {
+    "width": 1200,
+    "height": 575
+  },
+  "ipa-env-var-java-ja.png": {
+    "width": 1473,
+    "height": 575
+  },
+  "ipa-env-var-java.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "ipa-env-var-nodejs-en.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "ipa-env-var-nodejs-ja.png": {
+    "width": 1200,
+    "height": 568
+  },
+  "ipa-env-var-nodejs.png": {
+    "width": 1200,
+    "height": 568
+  },
+  "ipa-env-var-php-en.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "ipa-env-var-php-ja.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "ipa-env-var-php.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "ipa-env-var-python-en.png": {
+    "width": 1200,
+    "height": 697
+  },
+  "ipa-env-var-python-ja.png": {
+    "width": 1200,
+    "height": 697
+  },
+  "ipa-env-var-python.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "ipa-heap-dump-java-en.png": {
+    "width": 1200,
+    "height": 541
+  },
+  "ipa-heap-dump-java-ja.png": {
+    "width": 1200,
+    "height": 543
+  },
+  "ipa-heap-dump-java.png": {
+    "width": 1200,
+    "height": 538
+  },
+  "ipa-heap-histogram-java-en.png": {
+    "width": 1200,
+    "height": 600
+  },
+  "ipa-heap-histogram-java-ja.png": {
+    "width": 1200,
+    "height": 600
+  },
+  "ipa-heap-histogram-java.png": {
+    "width": 1200,
+    "height": 600
   },
   "ipa-java-thread-list-en.png": {
     "width": 1200,
@@ -6659,77 +6839,149 @@
     "width": 1200,
     "height": 230
   },
-  "ipa-main-dotnet-en.png": {
+  "ipa-library-version-java-en.png": {
     "width": 1200,
-    "height": 744
+    "height": 269
   },
-  "ipa-main-dotnet-ja.png": {
+  "ipa-library-version-java-ja.png": {
     "width": 1200,
-    "height": 745
+    "height": 268
   },
-  "ipa-main-dotnet.png": {
+  "ipa-library-version-java.png": {
     "width": 1200,
-    "height": 745
+    "height": 269
   },
-  "ipa-main-golang-en.png": {
+  "ipa-loaded-class-java-en.png": {
     "width": 1200,
-    "height": 646
+    "height": 620
   },
-  "ipa-main-golang-ja.png": {
+  "ipa-loaded-class-java-ja.png": {
     "width": 1200,
-    "height": 647
+    "height": 620
   },
-  "ipa-main-golang.png": {
+  "ipa-loaded-class-java.png": {
     "width": 1200,
-    "height": 645
+    "height": 620
   },
-  "ipa-main-java-en.png": {
+  "ipa-open-socket-java-en.png": {
     "width": 1200,
-    "height": 703
+    "height": 265
   },
-  "ipa-main-java-ja.png": {
+  "ipa-open-socket-java-ja.png": {
     "width": 1200,
-    "height": 703
+    "height": 269
   },
-  "ipa-main-java.png": {
+  "ipa-open-socket-java.png": {
     "width": 1200,
-    "height": 702
+    "height": 265
   },
-  "ipa-main-nodejs-en.png": {
-    "width": 1200,
-    "height": 674
-  },
-  "ipa-main-nodejs-ja.png": {
-    "width": 1200,
-    "height": 675
-  },
-  "ipa-main-nodejs.png": {
-    "width": 1200,
-    "height": 675
-  },
-  "ipa-main-php-en.png": {
-    "width": 1200,
-    "height": 706
-  },
-  "ipa-main-php-ja.png": {
-    "width": 1200,
-    "height": 706
-  },
-  "ipa-main-php.png": {
-    "width": 1200,
-    "height": 706
-  },
-  "ipa-main-python-en.png": {
+  "ipa-run-env-var-dotnet-en.png": {
     "width": 1200,
     "height": 665
   },
-  "ipa-main-python-ja.png": {
+  "ipa-run-env-var-dotnet-ja.png": {
+    "width": 1200,
+    "height": 667
+  },
+  "ipa-run-env-var-dotnet.png": {
+    "width": 1200,
+    "height": 666
+  },
+  "ipa-run-env-var-golang-en.png": {
+    "width": 1200,
+    "height": 618
+  },
+  "ipa-run-env-var-golang-ja.png": {
+    "width": 1200,
+    "height": 622
+  },
+  "ipa-run-env-var-golang.png": {
+    "width": 1200,
+    "height": 620
+  },
+  "ipa-run-env-var-java-en.png": {
+    "width": 1200,
+    "height": 698
+  },
+  "ipa-run-env-var-java-ja.png": {
+    "width": 1200,
+    "height": 698
+  },
+  "ipa-run-env-var-java.png": {
+    "width": 1200,
+    "height": 702
+  },
+  "ipa-run-env-var-nodejs-en.png": {
+    "width": 1200,
+    "height": 423
+  },
+  "ipa-run-env-var-nodejs-ja.png": {
+    "width": 1200,
+    "height": 421
+  },
+  "ipa-run-env-var-nodejs.png": {
+    "width": 1200,
+    "height": 422
+  },
+  "ipa-run-env-var-php-en.png": {
+    "width": 1200,
+    "height": 663
+  },
+  "ipa-run-env-var-php-ja.png": {
+    "width": 1200,
+    "height": 666
+  },
+  "ipa-run-env-var-php.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "ipa-run-env-var-python-en.png": {
     "width": 1200,
     "height": 664
   },
-  "ipa-main-python.png": {
+  "ipa-run-env-var-python-ja.png": {
     "width": 1200,
     "height": 664
+  },
+  "ipa-run-env-var-python.png": {
+    "width": 1200,
+    "height": 662
+  },
+  "ipa-set-throttling-java-en.png": {
+    "width": 1200,
+    "height": 455
+  },
+  "ipa-set-throttling-java-ja.png": {
+    "width": 1200,
+    "height": 523
+  },
+  "ipa-set-throttling-java.png": {
+    "width": 1200,
+    "height": 484
+  },
+  "ipa-system-gc-java-en.png": {
+    "width": 1200,
+    "height": 267
+  },
+  "ipa-system-gc-java-ja.png": {
+    "width": 1200,
+    "height": 267
+  },
+  "ipa-system-gc-java.png": {
+    "width": 1200,
+    "height": 267
+  },
+  "ipa-thread-list-java-en.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "ipa-thread-list-java-ja.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "ipa-thread-list-java.png": {
+    "width": 1200,
+    "height": 648
   },
   "java-agent-log-oname.png": {
     "width": 1500,
@@ -7224,16 +7476,16 @@
     "height": 995
   },
   "k8s-container-map-setting-en.png": {
-    "width": 1000,
-    "height": 507
+    "width": 769,
+    "height": 269
   },
   "k8s-container-map-setting-ja.png": {
-    "width": 1000,
-    "height": 442
+    "width": 703,
+    "height": 268
   },
   "k8s-container-map-setting.png": {
-    "width": 461,
-    "height": 183
+    "width": 569,
+    "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
     "width": 1255,
