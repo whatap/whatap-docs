@@ -5155,6 +5155,7 @@ const sidebars = {
             'kubernetes/create-name-space-project'
           ]
         },
+        'kubernetes/agent-troubleshooting',
         {
           type: 'doc',
           label: '설정하기',
