@@ -1421,7 +1421,19 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'postgresql/install-agent',
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/install-agent'
+              },
+              items: [
+                'postgresql/install-agent-quick-setup',
+              ],
+            },
             'postgresql/after-install-agent',
             'postgresql/troubleshooting',
           ],
