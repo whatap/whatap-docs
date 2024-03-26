@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[63951],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[39352],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 67105:
+/***/ 75080:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '통계 데이터 확인',
     description: '데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'SQL Server',
+        'Altibase',
         '데이터베이스',
         '데이터베이스 모니터링',
         '통계'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mssql/stat",
-    "id": "mssql/stat",
+    "unversionedId": "altibase/stat",
+    "id": "altibase/stat",
     "title": "통계 데이터 확인",
     "description": "데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/mssql/stat.mdx",
-    "sourceDirName": "mssql",
-    "slug": "/mssql/stat",
-    "permalink": "/whatap-docs/mssql/stat",
+    "source": "@site/docs/altibase/stat.mdx",
+    "sourceDirName": "altibase",
+    "slug": "/altibase/stat",
+    "permalink": "/whatap-docs/altibase/stat",
     "draft": false,
-    "editUrl": "undefined/docs/mssql/stat.mdx",
+    "editUrl": "undefined/docs/altibase/stat.mdx",
     "tags": [
         {
-            "label": "SQL Server",
-            "permalink": "/whatap-docs/tags/sql-server"
+            "label": "Altibase",
+            "permalink": "/whatap-docs/tags/altibase"
         },
         {
             "label": "데이터베이스",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "통계 데이터 확인",
         "description": "데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "SQL Server",
+            "Altibase",
             "데이터베이스",
             "데이터베이스 모니터링",
             "통계"
         ]
     },
-    "sidebar": "mssqlSidebar",
+    "sidebar": "altibaseSidebar",
     "previous": {
         "title": "데이터베이스 분석하기",
-        "permalink": "/whatap-docs/mssql/analysis-function"
+        "permalink": "/whatap-docs/altibase/analysis-function"
     },
     "next": {
         "title": "보고서",
-        "permalink": "/whatap-docs/mssql/report-intro"
+        "permalink": "/whatap-docs/altibase/report-intro"
     }
 };
 const assets = {};
@@ -390,11 +390,6 @@ const toc = [
     {
         value: '쿼리 자세히 보기',
         id: '쿼리-자세히-보기',
-        level: 3
-    },
-    {
-        value: '상세 정보 확인하기',
-        id: '상세-정보-확인하기',
         level: 3
     }
 ];
@@ -588,25 +583,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "상세-정보-확인하기"
-    }, `상세 정보 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "db-sql-stat-details.png",
-        desc: "세션 상세 정보",
-        mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `차트의 막대 그래프를 선택하면 5분 동안의 통계 정보를 확인할 수 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "session_detail",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 창이 나타납니다. 선택한 시간 동안의 SQL 실행 목록을 표시하며, 항목을 선택하면 새창과 함께 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "instance_monitoring",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "instance_monitoring",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " 메뉴에서는 선택한 시간대의 액티브 세션 테이블과 다양한 지표들의 추이를 확인할 수 있습니다.");
+    }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `))));
 }
 MDXContent.isMDXComponent = true;
 

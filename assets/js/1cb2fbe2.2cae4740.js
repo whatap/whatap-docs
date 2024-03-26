@@ -372,7 +372,7 @@ const metadata = {
         "permalink": "/whatap-docs/mssql/metrics-detect-anormal"
     },
     "next": {
-        "title": "통계 데이터 확인",
+        "title": "SQL 통계",
         "permalink": "/whatap-docs/mssql/stat"
     }
 };

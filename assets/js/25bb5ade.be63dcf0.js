@@ -537,11 +537,6 @@ const toc = [
         level: 3
     },
     {
-        value: '상세 정보 확인하기',
-        id: '상세-정보-확인하기',
-        level: 3
-    },
-    {
         value: '테이블스페이스 사이즈',
         id: '테이블스페이스-사이즈',
         level: 2
@@ -742,25 +737,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "상세-정보-확인하기"
-    }, `상세 정보 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "db-sql-stat-details.png",
-        desc: "세션 상세 정보",
-        mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `차트의 막대 그래프를 선택하면 5분 동안의 통계 정보를 확인할 수 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "session_detail",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 창이 나타납니다. 선택한 시간 동안의 SQL 실행 목록을 표시하며, 항목을 선택하면 새창과 함께 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "instance_monitoring",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "instance_monitoring",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " 메뉴에서는 선택한 시간대의 액티브 세션 테이블과 다양한 지표들의 추이를 확인할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "테이블스페이스-사이즈"
     }, `테이블스페이스 사이즈`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
