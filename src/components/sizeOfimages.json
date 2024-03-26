@@ -4135,9 +4135,21 @@
     "width": 400,
     "height": 403
   },
-  "db-dashboard-widget-add.png": {
+  "db-dashboard-widget-add-mongodb.png": {
     "width": 600,
-    "height": 607
+    "height": 472
+  },
+  "db-dashboard-widget-add-mysql.png": {
+    "width": 600,
+    "height": 452
+  },
+  "db-dashboard-widget-add-postgresql.png": {
+    "width": 600,
+    "height": 429
+  },
+  "db-dashboard-widget-add-redis.png": {
+    "width": 600,
+    "height": 447
   },
   "db-dashboard-widget-move.png": {
     "width": 1200,
@@ -4321,19 +4333,19 @@
   },
   "db-database-sql-stat-en.png": {
     "width": 1200,
-    "height": 401
+    "height": 383
   },
   "db-database-sql-stat-ja.png": {
     "width": 1200,
-    "height": 401
+    "height": 383
   },
   "db-database-sql-stat-mysql-en.png": {
     "width": 1200,
-    "height": 401
+    "height": 383
   },
   "db-database-sql-stat-mysql-ja.png": {
     "width": 1200,
-    "height": 401
+    "height": 383
   },
   "db-database-sql-stat-mysql-v1.png": {
     "width": 1200,
@@ -4341,35 +4353,35 @@
   },
   "db-database-sql-stat-mysql.png": {
     "width": 1200,
-    "height": 401
+    "height": 383
   },
   "db-database-sql-stat-oracle-en.png": {
     "width": 1200,
-    "height": 472
+    "height": 383
   },
   "db-database-sql-stat-oracle-ja.png": {
     "width": 1200,
-    "height": 472
+    "height": 383
   },
   "db-database-sql-stat-oracle.png": {
     "width": 1200,
-    "height": 472
+    "height": 383
   },
   "db-database-sql-stat-postgresql-en.png": {
     "width": 1200,
-    "height": 399
+    "height": 384
   },
   "db-database-sql-stat-postgresql-ja.png": {
     "width": 1200,
-    "height": 399
+    "height": 384
   },
   "db-database-sql-stat-postgresql.png": {
     "width": 1200,
-    "height": 399
+    "height": 383
   },
   "db-database-sql-stat.png": {
     "width": 1200,
-    "height": 401
+    "height": 383
   },
   "db-database-tablesize-cubrid-en.png": {
     "width": 1200,
@@ -5277,15 +5289,15 @@
   },
   "db-mysql-sql-stat-en.png": {
     "width": 1200,
-    "height": 1030
+    "height": 342
   },
   "db-mysql-sql-stat-ja.png": {
     "width": 1200,
-    "height": 1030
+    "height": 342
   },
   "db-mysql-sql-stat.png": {
     "width": 1200,
-    "height": 1030
+    "height": 342
   },
   "db-pg-sql-stat-en.png": {
     "width": 1200,
@@ -5478,6 +5490,46 @@
   "db-sql-elapse-map-example.png": {
     "width": 1810,
     "height": 413
+  },
+  "db-sql-filter-adding-en.png": {
+    "width": 600,
+    "height": 286
+  },
+  "db-sql-filter-adding-ja.png": {
+    "width": 600,
+    "height": 285
+  },
+  "db-sql-filter-adding.png": {
+    "width": 600,
+    "height": 285
+  },
+  "db-sql-filter-condition-color.png": {
+    "width": 400,
+    "height": 46
+  },
+  "db-sql-filter-default-en.png": {
+    "width": 210,
+    "height": 61
+  },
+  "db-sql-filter-default-ja.png": {
+    "width": 210,
+    "height": 60
+  },
+  "db-sql-filter-default.png": {
+    "width": 212,
+    "height": 61
+  },
+  "db-sql-filter-modify-en.png": {
+    "width": 400,
+    "height": 214
+  },
+  "db-sql-filter-modify-ja.png": {
+    "width": 401,
+    "height": 215
+  },
+  "db-sql-filter-modify.png": {
+    "width": 400,
+    "height": 215
   },
   "db-sql-objectdetail-pg-en.png": {
     "width": 1200,
@@ -13558,6 +13610,30 @@
   "txmap-filter-en.png": {
     "width": 1200,
     "height": 135
+  },
+  "txmap-filter-ip-added-en.png": {
+    "width": 400,
+    "height": 222
+  },
+  "txmap-filter-ip-added-ja.png": {
+    "width": 400,
+    "height": 223
+  },
+  "txmap-filter-ip-added.png": {
+    "width": 400,
+    "height": 224
+  },
+  "txmap-filter-ip-en.png": {
+    "width": 400,
+    "height": 191
+  },
+  "txmap-filter-ip-ja.png": {
+    "width": 400,
+    "height": 192
+  },
+  "txmap-filter-ip.png": {
+    "width": 400,
+    "height": 188
   },
   "txmap-filter-ja.png": {
     "width": 1200,
