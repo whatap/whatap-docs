@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import sizeOfimages from './sizeOfimages.json';
 import MDXContents from '@theme-original/MDXContent';
 
-export default function ImageChecker({ img, desc, className}) {
+export default function ImageChecker({ img, desc, className, multi}) {
     const { i18n: {currentLocale} } = useDocusaurusContext();
 
     const product = checkProduct();
@@ -14,12 +14,17 @@ export default function ImageChecker({ img, desc, className}) {
     let imgFilePath, getName;
 
     // product, locale에 따라 파일명 변경
-    if (currentLocale != 'ko') {
-        imgFilePath = useBaseUrl(`/img/${fileName}${product}-${currentLocale}.${fext}`);
-        getName = `${fileName}${product}-${currentLocale}.${fext}`;
-    } else {
+    if (multi == 'true') {
         imgFilePath = useBaseUrl(`/img/${fileName}${product}.${fext}`);
         getName = `${fileName}${product}.${fext}`;
+    } else {
+        if (currentLocale != 'ko') {
+            imgFilePath = useBaseUrl(`/img/${fileName}${product}-${currentLocale}.${fext}`);
+            getName = `${fileName}${product}-${currentLocale}.${fext}`;
+        } else {
+            imgFilePath = useBaseUrl(`/img/${fileName}${product}.${fext}`);
+            getName = `${fileName}${product}.${fext}`;
+        }
     }
     // 이미지 파일의 가로 세로 구하기
     let curWidth = sizeOfimages[`${getName}`] && sizeOfimages[`${getName}`]["width"] ? sizeOfimages[`${getName}`]["width"] : 'auto';
