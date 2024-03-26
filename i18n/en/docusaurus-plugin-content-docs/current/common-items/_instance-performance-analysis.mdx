@@ -1,4 +1,4 @@
-Home > Select Project > <Cmdname sid="app_upper" className="uitext" /> > <Cmdname sid="agentsConfiguration" className="uitext" />
+Home > Select Project > <Cmdname sid="agentsConfiguration" className="uitext" />
 
 You can see the application environment along with the performance-related settings.
 
@@ -135,7 +135,9 @@ On the right of the screen, you can see detailed information of agents and appli
 
   :::note
 
-  This function is supported in Java agent 1.5.2 or later. Set the `heapdump_enabled` option to `true` in the agent configuration.
+  This function is supported in Java agent 1.5.2 or later. Set the `heapdump_enabled` option to `true` in the agent configuration. Select <Cmdname sid="dump_heap" className="uitext" /> to enable the function to create a heap dump file. It does not automatically generate a heap dump each time, and this option does not affect the performance. However, dump acquisition may affect the performance.
+
+  Obtaining a heap dump requires a significant burden. Separate from the burden, because the execution of the application code is stopped (stop the world) until all heap dumps are extracted, the perceived performance difference by the user may be more severe.
 
   :::
 

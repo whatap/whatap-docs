@@ -1,6 +1,6 @@
-Home > Select Project > **_STAT/REPORT_** > **_Statistics_**
+Home > Select Project > <Cmdname sid="statistic" className="uitext" />
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_STAT/REPORT_** > **_Statistics_** under **_Project Menu_**. The WhaTap agent collects statistical data for the key trace information such as transaction information and SQL. A list is created every 5 minutes and is sent to the server.
+Select a project in the initial screen of the WhaTap monitoring service, and then select a sub menu under <Cmdname sid="statistic" className="uitext" />. The WhaTap agent collects statistical data for the key traces such as transaction information and SQL. A list is created every 5 minutes and it is sent to the server.
 
 ## Basic screen guide
 
@@ -152,18 +152,18 @@ The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL
 
 They collect the statistics of calls outside the applications for 5 minutes via the HTTP and HTTPS protocols. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single application process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
 
-| Columns            | Description                                                              |
-| ------------------ | ------------------------------------------------------------------------ |
-| Transactions       | Transaction URL hash                                                     |
-| Service            | Data randomly collected from one of the URLs that requested the HTTP API |
-| host               | Host or IP address                                                       |
-| Port               | TCP port                                                                 |
-| All                | Total execution count                                                    |
-| Error              | Error Count                                                              |
-| Time Avg (ms)      | Average of the total response time                                       |
-| Time Sum (ms)      | Sum of response times                                                    |
-| Time Min (ms)      | Minimum response time                                                    |
-| Time Max (ms)      | Maximum response time                                                    |
+| Columns                       | Description                                                              |
+| ----------------------------- | ------------------------------------------------------------------------ |
+| <Cmdname sid="ITM07683" />    | HTTP call URL hash                                                       |
+| <Cmdname sid="TTL06918" />    | Data randomly collected from one of the URLs that requested the HTTP API |
+| host                          | Host or IP address                                                       |
+| Port                          | TCP port                                                                 |
+| All                           | Total execution count                                                    |
+| Error                         | Error Count                                                              |
+| Time Avg (ms)                 | Average of the total response time                                       |
+| Time Sum (ms)                 | Sum of response times                                                    |
+| Time Min (ms)                 | Minimum response time                                                    |
+| Time Max (ms)                 | Maximum response time                                                    |
 
 ## Number of calls for each client IP region
 

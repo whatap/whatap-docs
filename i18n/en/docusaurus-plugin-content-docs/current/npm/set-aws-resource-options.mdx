@@ -15,68 +15,89 @@ To use the network performance monitoring in the AWS environment, you can collec
 
 When traffic is applied internally through AWS's ELB, it can appear in the topology through the data displayed in ENI, as shown in the figure. It appears based on the `Description` field in AWS's ENI. If you do not leave any data in the `Description` field, the `NetworkInterfaceId` property is provided.
 
-## Setting the agent options and roles
+## Configuring the AWS resource roles in the EC2 environment {#set-aws-resource-ec2}
 
-Set the options in the _/usr/whatap/whatap-npmd/whatap.conf_ file as follows: Enter the authentication information issued by AWS in the brackets ([ ]). The user role required in this case is `ec2:DescribeNetworkInterfaces`.
-
-```ini title='whatap.conf'
-awsInfoEnable=1
-# AWS access key
-awsAccessKey=[User Access Key]
-# AWS secret access key
-awsSecretKey=[User Secret Key]
-# Region
-awsRegions=[RegionCode1,RegionCode2,...]
-```
-
-Using the following commands, you can add options.
-
-```bash
-echo "awsInfoEnable=1" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsAccessKey=[User Access Key]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsSecretKey=[User Secret Key]"  |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-
-sudo service whatap-npmd restart
-```
-
-- **awsInfoEnable**
-
-  Set whether or not to use the AWS information inquiry. The default value is `0`. To view the AWS information, set it to `1`.
-
-- **awsAccessKey**
-
-  Enter your AWS access key.
-
-- **awsSecretKey**
-
-  Enter your AWS secret access key.
-
-- **awsRegions**
-
-  Enter the region that contains your resources. You can enter multiple regions using comma (,) as the delimiter.
+When you install the **NPM** agent on AWS EC2, you can collect resource data from AWS based on the IAM settings.
 
 :::note
 
-- For more information about the generation of the AWS AccessKey, see [the following link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey).
-
-- `ec2:DescribeNetworkInterfaces`: Allows to view the information on the EC2 network interface (ENI).
+[AWS configuration guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html)
 
 :::
 
-:::tip
+### Configuring the AWS IAM
 
-For the Kubernetes environment, see the following image and then add the items in the yellow box to the YAML file.
+AWS IAM requires you to specify minimum roles during policy configuration. To collect the AWS resource data from **NPM**, the `ec2:DescribeNetworkInterfaces` role is required.
 
-![K8s example](/img/npm-aws-resource-k8s-example.png)
-
-Enter the authentication information issued by AWS in the brackets ([ ]).
-
-```yaml
-echo "awsInfoEnable=1" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsAccessKey=[User Access Key]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsSecretKey=[User Secret Key]"  |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
-echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+              //...
+              "ec2:DescribeNetworkInterfaces"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
 ```
 
+:::note
+
+For more information about the policy and authorization, see [the following link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#policy-syntax/).
+
 :::
+
+## Configuring the AWS resource roles in the EKS environment {#set-aws-resource-eks}
+
+While installing the **NPM** agent on AWS EKS, you can collect resource data from AWS through SeviceAccount.
+
+:::note
+
+[AWS configuration guide](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+
+:::
+
+### Configuring the AWS IAM
+
+AWS IAM requires you to specify minimum roles during policy configuration. To collect the AWS resource data from **NPM**, the `ec2:DescribeNetworkInterfaces` role is required.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+              //...
+              "ec2:DescribeNetworkInterfaces"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+:::note
+
+For more information about the policy and authorization, see [the following link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#policy-syntax/).
+
+:::
+
+### Configuring the service account
+
+During the AWS EKS configuration, connect IAM to the Kubernetes service account. To collect AWS resource data from **NPM**, connect IAM to the NPM service account.
+
+For **NPM**, use the following service account.
+
+```yaml
+namespace : whatap-npm-ns
+service_account : whatap-npm
+```
+
+```bash title='example'
+kubectl annotate serviceaccount -n whatap-npm-ns whatap-npm eks.amazonaws.com/role-arn=arn:aws:iam::$account_id:role/$role
+```

@@ -1161,6 +1161,9 @@ main {
       font-family: "Oleo Script";
       font-weight: 400;
     }
+    code.btn {
+      background-color: #fff;
+    }
     sup > code {
       font-size: .6em;
     }
@@ -1314,6 +1317,11 @@ main {
     }
     img[src*='db-sql-stat-add-filter'] {
       width: 450px;
+    }
+    img[src*='db-xos-architecture.png'] {
+      width: 1200px;
+      height: auto;
+      border: none;
     }
     ol {
       margin: 0;
@@ -1785,6 +1793,32 @@ main {
           &:nth-of-type(3) { width: 35%; }
           &:nth-of-type(4) { width: 5%; }
           &:nth-of-type(5) { width: 15%; }
+        }
+      }
+    }
+    .k8s-table-set-agent {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 35%;
+            }
+            &:nth-of-type(2) {
+              width: 10%;word-break: break-all;font-size: .9em;
+            }
+            &:nth-of-type(3) {
+              width: 5%;font-size: .9em;
+            }
+            &:nth-of-type(4) {
+              width: 25%;
+            }
+            &:last-of-type {
+              width: 25%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
         }
       }
     }

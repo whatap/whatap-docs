@@ -1,0 +1,47 @@
+---
+id: java-2_2_28
+title: Java Agent v2.2.28
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_27
+displayed_sidebar: releaseSidebar
+---
+
+2024年02月27日
+
+- <Status>Feature</Status> logback-1.2.8の追跡時にappenderを除外するオプションを追加
+
+  ```ini title="whatap.conf"
+  # example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender
+  ignore_logback_appender_set=CONSOLE,ACCESS_APPENDER
+  ```
+
+- <Status>Deprecated</Status> logback-1.2.8の追跡時に、指定したappenderのみ収集するオプションの使用を中止
+
+  ```ini title="whatap.conf"
+  # deprecated
+  trace_logback_appender_set=
+  ```
+
+- <Status>Feature</Status> log4j-2.17追跡時にappenderを除外するオプションを追加
+
+  ```ini title="whatap.conf"
+  # example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender
+  ignore_log4j_appender_set=CONSOLE,ACCESS_APPENDER
+  ```
+
+- <Status>Deprecated</Status> log4j-2.17追跡時に、指定したappenderのみ収集するオプションの使用を中止
+
+  ```ini title="whatap.conf"
+  # deprecated
+  trace_log4j_appender_set=
+  ```
+
+- <Status>Changed</Status>コンテナ環境でPod名を設定していない場合、環境変数(<code>env</code>)の<code>HOSTNAME</code>から抽出するように変更
+
+- <Status>Changed</Status> JBoss Connection Poolの接続時にログ数を制限するように修正
+
+- <Status>Changed</Status>統計データの転送時のログを修正
+
+- <Status>Fixed</Status> <code>trace_sampling_enabled</code>オプションを使用する場合、TPSを過剰に収集する問題を修正
+
+- <Status>Fixed</Status> spring-boot-3.xのspring-security exception収集時に発生するエラーを修正

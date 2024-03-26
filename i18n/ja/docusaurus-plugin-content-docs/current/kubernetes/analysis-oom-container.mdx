@@ -1,22 +1,50 @@
 ---
 id: analysis-oom-container
-title: OOM Killedコンテナ
+title: Out Of Memory Killedコンテナ
 description: Out Of Memory(OOM)が発生したコンテナをすばやく検索し、その時点のメモリ使用量の変化を確認できます。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
+  - コンテナ
   - OOM Killedコンテナ
   - Out Of Memory
 ---
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_Out Of Memory Killedコンテナ_**
+ホーム画面 > プロジェクト選択 > **_コンテナー_** > **_OOM Killedコンテナ_**
+
+**_Out Of Memory Killedコンテナ_**メニューを通じて**Out Of Memory**(**OOM**)が発生したコンテナを素早く検索し、その時点でのメモリ使用量の変化の推移を確認することができます。変化の推移は、急激または漸進的である可能性があります。これを確認することで、適切なPOD数とメモリ臨界点に対する客観的な判断が可能です。
+
+:::note 
+
+**OOM発生例**
+
+コンテナのメモリ使用量がメモリ制限を超えたり、コンテナが実行中のノードのメモリが不足している場合、Out Of Memoryが発生します。もしコンテナがコード`137`で終了したらOut Of Memoryによって`SIGKILL`を受信したものです。
+
+:::
+
+### 基本画面ガイド
 
 <ImgLang img='whatap_kubernetes_analysis_oom_container_1.png' desc='Out of Memory Killedコンテナ' />
 
-**Out Of Memory**(**OOM**)が発生したコンテナをすばやく検索し、その時点でメモリ使用量の推移(突然または緩やか)を確認できます。これにより、適切なPOD数とメモリのしきい値を客観的に判断できます。
+- 左上のタイムセレクターをクリックして照会したい時間帯を選択することができます。最大2日まで照会できます。
 
-:::note
+- OOM Killedコンテナ情報をリスト形式で提供します。詳細については、以下の案内を参考にしてください。
 
-コンテナのメモリ使用量がメモリ制限を超えた場合、または、コンテナが実行されているノードがメモリ不足になった場合に、Out Of Memoryが発生します。コンテナがコード137で終了した場合、Out Of MemoryによってSIGKILLを受信します。
+### OOM Killedコンテナ情報
 
-:::
+**_Out Of Memory Killedコンテナ_**メニューで提供するカラム情報を次のように案内します。
+
+| カラム                     | 意味                                 |
+| ----------------------- | ---------------------------------- |
+| **_OomKilledAt_**       | Out Of Memory Killedが発生したTimeStamp |
+| **_name_**              | コンテナ名                              |
+| **_podName_**           | コンテナが属するPod名                       |
+| **_containerId_**       | コンテナのID                            |
+| **_created_**           | コンテナが生成されたTimeStamp                |
+| **_command_**           | コンテナの実行コマンド                        |
+| **_imageName_**         | コンテナのイメージ名                         |
+| **_onodeName_**         | コンテナが動作しているノード名                    |
+| **_state_**             | コンテナ状態                             |
+| **_memLimit_**          | コンテナのメモリLimitサイズ                   |
+| **_namespace_**         | コンテナのPodが属するnamespace名             |
+| **_memory_workingset_** | コンテナで非活性化されているメモリを除いて実際に使用中のメモリ    |

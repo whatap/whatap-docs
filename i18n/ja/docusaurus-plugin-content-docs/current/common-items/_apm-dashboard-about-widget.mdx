@@ -1,0 +1,243 @@
+## ウィジェットの詳細
+
+:::info
+
+この文書では、<Cmdname sid="application_dashboard" className="uitext" />に配置されたウィジェットについて説明します。 <Cmdname sid="application_dashboard" className="uitext" />を使用したトランザクション、ユーザー、サービス及びリソース分析の方法についての詳細は、次の文書を参照してください。
+
+- [アプリケーションダッシュボードを確認する](../best-practice-guides/about-apm-dashboard)
+
+- [ヒットマップTX](../best-practice-guides/about-apm-hitmap-class)
+
+- [DB接続遅延とコネクションプール](../best-practice-guides/about-apm-dbc)
+
+:::
+
+### エージェント関連ウィジェット
+
+アプリケーションにインストールしたエージェントを使用して、アプリケーションの情報を確認できます。
+
+#### <Cmdname sid="AA003" />
+
+<ImgLang img='agent-dashboard-summary.png' desc='アプリケーション概要' />
+
+プロジェクトに登録したアプリケーションの実行状況および個数、CPUコア数、Hosts数を表示します。
+
+### トランザクション関連ウィジェット
+
+トランザクションを通じて確認できるトラブルの事象は、まず応答時間で把握できます。 また、進行中のトランザクションが終了しない場合は、これもトラブルとして認識すべきです。 WhaTap Monitoringでは、進行中のトランザクションの遂行時間に基づいて状態を表示します。 <span class='normal'>青色(Normal)</span>は応答時間が正常なトランザクション、<span class='slow'>橙色(Slow)</span>は応答時間が8秒までの遅いトランザクション、<span class='vslow'>赤色(Very slow)</span>は、応答時間が8秒を超えた非常に遅いトランザクションを意味します。 これにより、ユーザーはトラブル状況が直感的にすぐ認識できるようになります。
+
+#### <Cmdname sid="AA001" />
+
+![アクティブトランザクションスピード](/img/speedmeter.png)
+
+現在進行中のトランザクション(中央領域)と、終了したトランザクション(右領域)の状態を確認できます。 左から右に流れる水玉模様のアイコンは、トランザクションを意味します。 アクティブトランザクションの状態を速度(<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>)で色分けし、右上に数値として表示します。 
+
+#### <Cmdname sid="AA002" /> {#active-trs}
+
+<ImgLang img='apm-dashboard-active-tx.png' desc='アクティブトランザクション' />
+
+<Cmdname sid="AA002" className="uitext" />ウィジェットでは、進行中のトランザクションを<b>アークイコライザー</b>チャートとして表示します。 遅延の発生状況をエージェントごとに確認できます。 エージェントの数程にアークが分割されます。 5秒ごとに現在サーバーで処理中のリクエストの数を表示するため、そのリクエストがそれぞれどのくらいの時間で処理されているのかが把握できます。 5秒間隔で検知されたリクエストは、遅延状況が直感的に把握できるよう、次のように色で分けられます。
+
+- 赤色(<span class='vslow'>Very Slow</span>)：8秒以上 
+
+- オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+
+- 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+
+青色が多い状況は問題ありません。 これらの一部が橙色や赤色に変わっていくかを監視する必要があります。 トラブルが発生すると、進行中のトランザクション数が増加し、赤色の割合が高くなります。 一方で、レスポンスが非常に速いシステムの場合、処理されるトランザクション数(TPS)が多くても、進行中のトランザクション数は少ないことがあります。
+
+- 左上には、進行中のトランザクションが最も多いエージェント名を表示します。
+
+- 真ん中の数字は、エージェント全体のアクティブトランザクションの合計数です。
+
+- アクティブトランザクションを囲む2本のバーは、処理量(TPS)に基づいて3段階の速度でグラフの周りを回転します。
+
+- 分割されたアーク領域を選択すると、該当エージェントが監視するアプリケーションから進行中のトランザクション一覧がポップアップ画面に表示されます。 詳細なトランザクション情報を確認するには、トランザクション一覧から任意の項目を1つ選択してください。 
+
+  <ImgLang img='apm-dashboard-active-tx-popup.png' desc='トランザクション一覧' />
+
+  :::note
+
+  - トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、<Cmdname sid="show_trace" className="uitext" />ボタンを選択してください。 <Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06527" className="uitext" />ウィンドウについての詳細は、<Link to="trs-profile">次の文書</Link>を参考にしてください。
+
+  - トランザクションの詳細については、[次の文書](track-transactions-intro)を参照してください。
+
+  :::
+
+#### <Cmdname sid="AA004" /> {#active-status}
+
+<ImgLang img='apm-dashboard-active-status.png' desc='アクティブステータス' />
+
+プロジェクト内のすべてのエージェントは、5 秒ごとにアクティブトランザクション数を収集すると同時に、トランザクションのステータスを収集します。 トランザクションのステータスは<Cmdname sid="active_stat_method" className="uitext" />、<Cmdname sid="sql" className="uitext" />、<Cmdname sid="active_stat_httpc" className="uitext" />、<Cmdname sid="active_stat_dbc" className="uitext" />、<Cmdname sid="active_stat_socket" className="uitext" />に分けられます。
+
+- <Cmdname sid="active_stat_method" className="uitext" />：メソッドを実行している状態です。 一般的な状況として青色で表示されます。
+
+- <Cmdname sid="sql" className="uitext" />：SQLを実行している状態です。 <Cmdname sid="sql" className="uitext" />数の増加が見られた場合は、データベースサーバーとの接続を確認してください。
+
+- <Cmdname sid="active_stat_httpc" className="uitext" />：外部APIを呼び出し中の状態です。 <Cmdname sid="active_stat_httpc" className="uitext" /> 数が増加した場合は、外部と接続されたサーバーの応答が正常ではない状況として解釈できます。
+
+- <Cmdname sid="active_stat_dbc" className="uitext" />：トランザクションがConnection Poolから新しいConnectionを獲得(get)しようと待機している状態です。 DB Connection Poolの数が不足すると、新しい接続リクエストが発生するたびに遅延が発生し、性能トラブルの原因となります。 この場合、<Cmdname sid="active_stat_dbc" className="uitext" />の数値が増加します。
+
+  :::note
+
+  DB接続遅延に関する詳細については[次の文書](../best-practice-guides/about-apm-dbc)を参照してください。
+
+  :::
+
+- <Cmdname sid="active_stat_socket" className="uitext" />：外部システムとのTCP接続の試行を意味します。 <Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続がないために、障害が発生している可能性があります。
+
+#### <Cmdname sid="AA005" />
+
+<ImgLang img='hitmap.png' desc='ヒットマップ' />
+
+<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 レスポンスタイムが伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />内のチャート領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />ウィンドウが表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>を参照してください。
+
+- 通常のトランザクションは水色→青色→紺色の順に表現されます。
+
+- エラートランザクションは黄色→橙色→赤色の順に表現されます。
+
+- 画面の右上の数字はチャート内の<span class='normal'>トランザクション数と</span>/<span class='slow'>エラー数</span>を意味します。
+
+- <Cmdname sid="yaxis" className="uitext" />ボタンをタップすると、実行時間を示すY軸を自動調整します。
+
+- <Cmdname sid="err" className="uitext" />ボタンを選択すると、エラートランザクションのみ表示します。
+
+- ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択すると、5秒~80秒でチャートを拡大／縮小することができます。
+
+:::note
+
+- エラーが発生せず、実行時間が500ms以下のトランザクションの詳細は、URLあたり5分に1回のみ収集されます。
+
+- TPSや平均応答時間などの統計情報には影響しません。
+
+- エージェント設定により、ポリシーを設定できます。 詳細については、[次の文書](agent-transaction)を参考してください。
+
+- ヒットマップウィジェットを使用してトランザクションを分析するプロセスについては、次の文書を参照してください。
+
+:::
+
+### サービス関連ウィジェット
+
+サービス関連ウィジェットは、アプリケーションのパフォーマンスチューニングの指標として使用できます。
+
+#### <Cmdname sid="apdex" />
+
+![Apdex](/img/apm-dashboard-apdex.png)
+
+{@include: ../common-items/_java-apdex-desc.mdx} 
+
+:::note
+
+満足Sのデフォルト値は<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで変更できます。 設定キーの値は`apdex_time`です。 エージェントバージョン2.0以降に対応しています。
+
+:::
+
+#### <Cmdname sid="tps" />
+
+![TPS](/img/apm-dashboard-tps.png)
+
+**Tansaction Per Second**(**TPS**)は毎秒処理されるトランザクション数を意味し、サービスパフォーマンス指標の基準となります。 5秒間に処理されたトランザクション数を1秒あたりの数として換算してチャートで表現します。 直近10分間のTPSを表示します。
+
+:::note
+
+TPS、応答時間、CPU 使用率分析の詳細については[次の文書](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource)を参照してください。
+
+:::
+
+#### <Cmdname sid="avg_restime" />
+
+<ImgLang img='apm-dashboard-avg-response-time.png' desc='平均応答時間'/>
+
+アプリケーションサーバーがユーザーにリクエスト結果を返すのに掛かる時間をリアルタイムでモニタリングします。 <Cmdname sid="avg_restime" className="uitext" />は、チューニング指標として意味があります。 WhaTapのモニタリングサービスは、5秒間隔でトランザクションの平均応答時間を計算します。
+
+:::note
+
+TPS、応答時間、CPU 使用率分析の詳細については[次の文書](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource)を参照してください。
+
+:::
+
+### リソース関連ウィジェット
+
+#### <Cmdname sid="system_cpu" />
+
+<ImgLang img='apm-dashboard-cpu.png' desc='システムCPU' />
+
+アプリケーションサーバーのCPU使用量です。 リアルタイムでCPU使用量の変化の推移を認することができます。
+
+:::note
+
+TPS、応答時間、CPU 使用率分析の詳細については[次の文書](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource)を参照してください。
+
+:::
+
+#### <Cmdname sid="AA010" /> {#heap-memory}
+
+<ImgLang img='apm-dashboard-heap-memory.png' desc='ヒープメモリ' />
+
+サーバー毎に使用できる最大メモリと現在のメモリを表示して、負荷がかっかているサーバーが容易に把握できます。 時間の経過に伴うメモリ使用量の変化をリアルタイムで確認できます。
+
+メモリ折れ線チャートは通常、波線を続けます。 アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。 GC(Garbage Collection)によってメモリをクリーンアップすると減少します。 <Cmdname sid="AA010" className="uitext" />指標は平均値を使って表記します。
+
+:::note
+
+- JavaとNode.jsは、ヒープメモリの合計量と使用量を意味します。
+
+- PHPおよびPython, .Netはプロセスのメモリの使用量を意味します。
+
+:::
+
+:::tip
+
+ヒープメモリチャート分析に関しての詳細については、次のリンクを参照してください。
+
+- [月間WhaTap：モニタリングで注目すべき指標](https://www.whatap.io/ko/blog/94/)
+
+- [Javaヒープメモリーチャートの分析：Ch.1ヒープチャート観察](https://youtu.be/FcWfVrETWh4)
+
+- [JAVAヒープメモリーチャートの分析：Ch.2 メモリリークとヒープダンプ分析](https://youtu.be/t2q5z4HHNfs)
+
+:::
+
+### ユーザー関連ウィジェット
+
+#### <Cmdname sid="realtime_user" />
+
+<ImgLang img='apm-dashboard-realtime-user.png' desc='同時接続ユーザー' />
+
+リアルタイムブラウザのユーザー数を表示します。 5秒ごとに、過去5分以内にトランザクションを行ったユーザーを重複なくカウントされ、表示します。 ユーザーのブラウザのIPに基づいてカウントします。
+
+:::note
+
+<InDoc product='java'>
+
+- エージェント設定では、ユーザー識別のためにIPを使用または、クッキーを使用します。 詳しい内容は[次の文書](agent-additional-option)を参照してください。
+
+</InDoc>
+
+- 通常、接続ユーザーはネットワークに接続しているユーザーを意味します。 ただし、ウェブシステムは未接続のネットワークを使用するため異なります。 接続されているという意味ではなく、最近のリクエストを送信したユーザーが測定の対象になる可能性があります。
+
+- リアルタイム(同時接続) ユーザーとは、同じ時間帯にシステムを使用しているユーザーを意味します。 リアルタイム(同時接続) ユーザーを計算または測定する方式は多数あります。
+
+- ユーザー数は、単に合計されるのではなく、** HyperLogLog**によって計算されます。 **HyperLogLog**は、非常に少ないメモリ内の要素の数を推定する確率的なデータ構造を意味します。
+
+:::
+
+### 1日基準比較ウィジェット
+
+:::note
+
+`All APPS.`タグ付きウィジェットは、常にすべてのエージェントのデータを表示します。
+
+:::
+
+#### <Cmdname sid="today_tps" />
+
+<ImgLang img='apm-dashboard-today-tps.png' desc='本日TPS' />
+
+1日のTPSを時間帯別に表示します。 昨日の同時間帯のTPS(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
+
+#### <Cmdname sid="daily_visit" />
+
+<ImgLang img='apm-dashboard-today-users.png' desc='本日ユーザー' />
+
+一日あたりの<Cmdname sid="realtime_user" className="uitext" />の数を時間帯別に表した指標です。 昨日の同時ユーザー数(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。

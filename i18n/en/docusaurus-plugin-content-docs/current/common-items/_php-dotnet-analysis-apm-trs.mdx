@@ -1,11 +1,6 @@
-Home > Select Project > **_STAT/REPORT_** > **_Statistics_**
+Home > Select Project > <Cmdname sid="statistic" className="uitext" />
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_STAT/REPORT_** > **_Statistics_** under **_Project Menu_**. The WhaTap agent collects statistical data for the key trace information such as transaction information and SQL. A list is created every 5 minutes and is sent to the server.
-
-<!-- 홈 화면 > 프로젝트 선택 > ***분석*** > ***트랜잭션 검색***
-
-와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 ***프로젝트 메뉴*** 하위에 ***분석*** > ***트랜잭션 검색***을 선택하세요. 와탭 에이전트는 트랜잭션 정보, SQL과 같은 주요 트레이스 정보에 대해 통계 정보를 수집합니다. 5분마다 목록을 만들고 서버로 전송합니다.
- -->
+Select a project in the initial screen of the WhaTap monitoring service, and then select a sub menu under <Cmdname sid="statistic" className="uitext" />. The WhaTap agent collects statistical data for the key traces such as transaction information and SQL. A list is created every 5 minutes and it is sent to the server.
 
 ## Transaction statistics
 
@@ -148,16 +143,18 @@ The `service (URL)` hash collects one (the last URL called) of URLs that called 
 
 The HTTP call execution statistics for 5 minutes are collected. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single node.js process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
 
-| Columns     | Description               | Type |
-| ----------- | ------------------------- | ---- |
-| url         | Target URL hash           | u4   |
-| host        | Host or IP                | u4   |
-| port        | TCP port                  | u4   |
-| count_total | Number of execution cases | u4   |
-| count_error | Error Count               | u4   |
-| time_sum    | Sum of response times     | u8   |
-| time_max    | Maximum response time     | u4   |
-| service     | One of HTTP call services | u4   |
+| Columns                       | Description                                                              | Type |
+| ----------------------------- | ------------------------------------------------------------------------ | ---- |
+| <Cmdname sid="ITM07683" />    | HTTP call URL hash                                                       | u4   |
+| <Cmdname sid="TTL06918" />    | Data randomly collected from one of the URLs that requested the HTTP API | u4   |
+| host                          | Host or IP address                                                       | u4   |
+| Port                          | TCP port                                                                 | u4   |
+| All                           | Total execution count                                                    | u4   |
+| Error                         | Error Count                                                              | u4   |
+| Time Avg (ms)                 | Average of the total response time                                       | u8   |
+| Time Sum (ms)                 | Sum of response times                                                    | u8   |
+| Time Min (ms)                 | Minimum response time                                                    | u4   |
+| Time Max (ms)                 | Maximum response time                                                    | u4   |
 
 ## Number of calls for each client IP region
 

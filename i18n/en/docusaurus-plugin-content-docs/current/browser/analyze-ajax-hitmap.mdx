@@ -99,7 +99,7 @@ WhaTap basically stores the client-related information.
 
 ### <Cmdname sid="TTL07106" className="uitext" /> <Cmdname sid="info" className="uitext" />
 
-The AJAX event loading process is divided into the following steps and the times required for each section are displayed. 
+The AJAX event loading process is divided into the following steps and the times required for each section are displayed.
 
 - <Cmdname sid="redirect_time" className="uitext" />: Time taken by the browser to redirect an AJAX request
 
@@ -149,28 +149,32 @@ You can hide table header columns in the AJAX list or add desired items. You can
 
 From the ![Number 1](/img/number-01.png) list, select the items to add as table header columns. To select all items, select **_Select All_**. The column items that can be added are as follows:
 
-| Column name                                        | Description                                                                                                                 |
-| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <Cmdname sid="client_ip" className="uitext" />     | IP address of the device used by the end user                                                                               |
-| <Cmdname sid="TTL07104" className="uitext" />      | If the AJAX request is stopped in the browser level, `true` appears.                                                        |
-| <Cmdname sid="user_agent" className="uitext" />    | End user's agent string collected by the browser agent                                                                      |
-| <Cmdname sid="size" className="uitext" />          | Capacity for AJAX response values indicating the actual uncompressed capacity                                               |
-| <Cmdname sid="country" className="uitext" />       | End user's country code                                                                                                     |
-| <Cmdname sid="city" className="uitext" />          | End user's city name                                                                                                        |
-| <Cmdname sid="download_time" className="uitext" /> | Time taken by the browser to download the AJAX response values from the server                                              |
-| <Cmdname sid="device" className="uitext" />        | End user's device type                                                                                                      |
-| <Cmdname sid="redirect_time" className="uitext" /> | Time taken by the browser to redirect AJAX requests                                                                         |
-| <Cmdname sid="user_id" className="uitext" />       | End user ID assigned randomly                                                                                               |
-| <Cmdname sid="session_id" className="uitext" />    | End user's session ID                                                                                                       |
-| <Cmdname sid="connect_time" className="uitext" />  | Time taken to establish TCP connection with the target server of the AJAX request                                           |
-| <Cmdname sid="wait_time" className="uitext" />     | Time elapsed from the start of the browser's HTTP request to the time the server receives the request and starts responding |
-| <Cmdname sid="browser" className="uitext" />       | Type of the browser used by the end user                                                                                    |
-| <Cmdname sid="os" className="uitext" />            | OS type of the device used by the end user                                                                                  |
-| <Cmdname sid="end_time" className="uitext" />      | AJAX event end time                                                                                                         |
-| <Cmdname sid="cache_time" className="uitext" />    | Time taken by the browser to search the cached AJAX resources                                                               |
-| <Cmdname sid="page_title" className="uitext" />    | Title of the HTML page accessed through the browser                                                                         |
-| <Cmdname sid="TTL06193" className="uitext" />      | Time taken by the browser to search the AJAX request domain                                                                 |
-| <Cmdname sid="ssl_time" className="uitext" />      | Time taken to complete the SSL/TLS handshake                                                                                |
+| Column name                                                                                                                          | Description                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| <Cmdname sid="client_ip" className="uitext" />                                                                                       | IP address of the device used by the end user                                                                               |
+| <Cmdname sid="TTL07104" className="uitext" />                                                                                        | If the AJAX request is stopped in the browser level, `true` appears.                                                        |
+| <Cmdname sid="user_agent" className="uitext" />                                                                                      | End user's agent string collected by the browser agent                                                                      |
+| <Cmdname sid="size" className="uitext" />                                                                                            | Capacity for AJAX response values indicating the actual uncompressed capacity                                               |
+| <Cmdname sid="country" className="uitext" />                                                                                         | End user's country code                                                                                                     |
+| <Cmdname sid="city" className="uitext" />                                                                                            | End user's city name                                                                                                        |
+| <Cmdname sid="download_time" className="uitext" />                                                                                   | Time taken by the browser to download the AJAX response values from the server                                              |
+| <Cmdname sid="device" className="uitext" />                                                                                          | End user's device type                                                                                                      |
+| <Cmdname sid="redirect_time" className="uitext" />                                                                                   | Time taken by the browser to redirect AJAX requests                                                                         |
+| <Cmdname sid="user_id" className="uitext" />                                                                                         | End user ID assigned randomly                                                                                               |
+| <Cmdname sid="session_id" className="uitext" />                                                                                      | End user's session ID                                                                                                       |
+| <Cmdname sid="connect_time" className="uitext" />                                                                                    | Time taken to establish TCP connection with the target server of the AJAX request                                           |
+| <Cmdname sid="wait_time" className="uitext" />                                                                                       | Time elapsed from the start of the browser's HTTP request to the time the server receives the request and starts responding |
+| <Cmdname sid="browser" className="uitext" />                                                                                         | Type of the browser used by the end user                                                                                    |
+| <Cmdname sid="os" className="uitext" />                                                                                              | OS type of the device used by the end user                                                                                  |
+| <Cmdname sid="end_time" className="uitext" />                                                                                        | AJAX event end time                                                                                                         |
+| <Cmdname sid="cache_time" className="uitext" />                                                                                      | Time taken by the browser to search the cached AJAX resources                                                               |
+| <Cmdname sid="page_title" className="uitext" />                                                                                      | Title of the HTML page accessed through the browser                                                                         |
+| <Cmdname sid="TTL06193" className="uitext" />                                                                                        | Time taken by the browser to search the AJAX request domain                                                                 |
+| <Cmdname sid="ssl_time" className="uitext" />                                                                                        | Time taken to complete the SSL/TLS handshake                                                                                |
+| [<Cmdname sid="TTL07611" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType)   | Network performance measured after the browser accesses the page                                                            |
+| [<Cmdname sid="TTL07610" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink)        | Value rounded to the 25 kilobits per second whose downlink speed is in Mbps.                                                |
+| [<span class="uitext">Delivery Type</span>](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/deliveryType) | How to send resources (e.g. `cache` or `navigational-prefetch`)                                                             |
+| [<Cmdname sid="TTL07612" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt)             | The round-trip time (RTT) is the time (in milliseconds) taken to initiate a network request and then receive the response.  |
 
 :::note
 

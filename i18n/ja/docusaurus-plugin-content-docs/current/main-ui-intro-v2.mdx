@@ -9,345 +9,336 @@ tags:
   - モニタリング
 ---
 
-[와탭 모니터링 서비스](https://service.whatap.io)에 로그인하면 펼쳐지는 초기 화면의 요소들을 안내합니다. 
+[WhaTapモニタリングサービス](https://service.whatap.io)にログインすると表示される初期画面の要素が表示されます。 
 
-<ImgLang img='ui-home/main-ui-ver2.png' desc='초기 화면' />
+<ImgLang img='ui-home/main-ui-ver2.png' desc='初期画面' />
 
-* 초기 화면의 기본 메뉴는 <Cmdname sid="project_list" className="uitext" />입니다.
+- 初期画面の基本メニューは<Cmdname sid="project_list" className="uitext" />です。
 
-* 화면 왼쪽에 위치한 패널은 사이드 메뉴입니다.
+- 画面の左側に位置するパネルは、サイドメニューです。
 
-* 화면 위에는 현재 메뉴의 이름과 지원 메뉴를 확인할 수 있습니다.
+- 画面上には、現在のメニュー名とサポートメニューを確認することができます。
 
-## 프로젝트 목록 {#projectlist}
+## プロジェクトリスト {#projectlist}
 
-사용자가 멤버로 포함되어 있거나 관리 중인 프로젝트를 확인할 수 있는 메뉴입니다. 목록에 펼쳐진 개별 프로젝트를 선택하면 해당 프로젝트의 <Cmdname sid="dashboard" className="uitext" /> 메뉴로 이동합니다.
+ユーザーがメンバーとして含まれているか、管理中のプロジェクトを確認できるメニューです。 リストにある個別プロジェクトを選択すると、そのプロジェクトの<Cmdname sid="dashboard" className="uitext" />メニューに移動します。
 
-<ImgLang img='ui-home/main-ui-project-card.png' desc='프로젝트' />
+<ImgLang img='ui-home/main-ui-project-card.png' desc='プロジェクト' />
 
-<Cmdname sid="project_list" className="uitext" />의 개별 프로젝트에서 제공하는 정보와 기능은 다음과 같습니다.
+<Cmdname sid="project_list" className="uitext" />の個別プロジェクトで提供する情報と機能は次のとおりです。
 
-* ![숫자 1](/img/number-01.png) 프로젝트 이름을 표시하며, 즐겨찾기 설정할 수 있습니다. ![즐겨찾기 아이콘](/img/ico-favorite.svg) 버튼을 선택한 다음 화면 위에 ![즐겨찾기 아이콘](/img/ico-favorite.svg) <Cmdname sid="project_favorite" className="uitext" /> 모드를 선택하면 즐겨찾기 설정된(![즐겨찾기 아이콘](/img/ico-favorite-set.svg)) 프로젝트만 목록에 표시됩니다.
+- ![数字1](/img/number-01.png)プロジェクト名を表示し、お気に入りの設定を行うことができます。 ![お気に入りアイコン](/img/ico-favorite.svg)ボタンを選択して画面の上の![お気に入りアイコン](/img/ico-favorite.svg) <Cmdname sid="project_favorite" className="uitext" />モードを選択すると、お気に入り設定された(![お気に入りアイコン](/img/ico-favorite-set.svg))プロジェクトのみがリストに表示されます。
 
   :::note
 
-  즐겨찾기 설정에 대한 자세한 내용은 [다음 문서](#favoritedproject)를 참조하세요.
+  お気に入り設定の詳細は、[次の文書](#favoritedproject)を参考にしてください。
 
   :::
 
-* ![숫자 2](/img/number-02.png) ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하면 다음 기능을 이용할 수 있습니다.
+- ![数字2](/img/number-02.png) ![設定アイコン](/img/ico-setting.svg)ボタンを選択すると、次の機能が利用できます。
 
-  * <Cmdname sid="project_management" className="uitext" />: 프로젝트의 관리 메뉴로 이동합니다. 프로젝트의 이름 및 설명, 액세스 키 등의 정보를 확인하고 수정할 수 있습니다. 자세한 내용은 <Link to="project/project-manage#management">다음 문서</Link>를 참조하세요.
+  - <Cmdname sid="project_management" className="uitext" />：プロジェクトの管理メニューに移動します。 プロジェクト名と説明、アクセスキーなどの情報を確認して修正できます。 詳細については、<Link to="project/project-manage#management">次の文書</Link>を参照してください。
 
-  * <Cmdname sid="edit_project_name" className="uitext" />: 프로젝트의 이름을 수정할 수 있습니다.
+  - <Cmdname sid="edit_project_name" className="uitext" />：プロジェクト名を変更できます。
 
-  * <Cmdname sid="delete_project" className="uitext" />: 프로젝트를 삭제할 수 있습니다.
+  - <Cmdname sid="delete_project" className="uitext" />：プロジェクトを削除できます。
 
-  * <Cmdname sid="add_to_group" className="uitext" /> / <Cmdname sid="delete_from_group" className="uitext" />: 프로젝트를 그룹에 추가하거나 그룹에서 삭제할 수 있습니다.
+  - <Cmdname sid="add_to_group" className="uitext" /> / <Cmdname sid="delete_from_group" className="uitext" />：プロジェクトをグループに追加するか、グループから削除することができます。
 
   :::caution
 
-  프로젝트를 삭제하면 사용자 목록 정보 및 수집 데이터가 모두 삭제되며 복구할 수 없습니다.
+  プロジェクトを削除すると、ユーザー一覧情報と収集データがすべて削除され、復元できません。
 
   :::
 
   :::note
 
-  사용자에게 설정된 권한에 따라 제공되는 기능은 다를 수 있습니다. 멤버 권한 체계에 대한 자세한 내용은 [다음 문서](project/project-structure#project-auth)를 참조하세요.
+  ユーザーに設定された権限によって提供される機能は異なる場合があります。 メンバー権限体系の詳細については、[次の文書](project/project-structure#project-auth)を参照してください。
 
   :::
 
-* ![숫자 3](/img/number-03.png) 프로젝트의 주요 지표에 대한 차트 및 에이전트 상태, 현황 등을 확인할 수 있습니다. 상품에 따라 제공하는 차트의 종류와 정보는 다를 수 있습니다.
+- ![数字3](/img/number-03.png)プロジェクトの主要指標に対するチャート及びエージェントの状態、現況などを確認することができます。 製品によって提供するチャートの種類と情報は異なる場合があります。
 
-* ![숫자 4](/img/number-04.png) 프로젝트의 상품 종류와 그룹 이름, 프로젝트 코드를 차례로 확인할 수 있습니다. 
+- ![数字4](/img/number-04.png)プロジェクトの製品の種類とグループ名、プロジェクトコードを順番に確認することができます。 
 
   :::note
 
-  무료 이용 또는 무료 체험, 사용 제한 상태의 프로젝트는 태그 형식으로 관련 정보를 표시합니다.
+  無料利用または無料体験、使用制限状態のプロジェクトは、タグ形式で関連情報を表示します。
 
-  <ImgLang img='ui-home/main-project-free-trial.png' desc='무료 체험' />
+  <ImgLang img='ui-home/main-project-free-trial.png' desc='無料体験' />
 
   :::
 
-### 프로젝트 뷰 {#projectview}
+### プロジェクトビュー{#projectview}
 
-다음의 세 가지 뷰 모드로 프로젝트 목록을 확인할 수 있습니다. 전체 프로젝트 현황을 목적에 맞는 방식의 모드를 선택해 확인하세요.
+次の3つのビューモードでプロジェクトリストを確認できます。 目的に合ったモードを選択し、全体プロジェクトの現況を確認してください。
 
 <ImgLang img='ui-home/main-project-select-view.png' desc='뷰 선택하기' />
 
 #### <LinkImage img="ico-extend-card-view.svg" className="ico" /> <Cmdname sid="wide_card_view" />
 
-<ImgLang img='ui-home/main-project-extend-card-view.png' desc='확장 카드 뷰' />
+<ImgLang img='ui-home/main-project-extend-card-view.png' desc='ワイドカード' />
 
-기본 설정된 뷰 모드입니다. 이때 개별 프로젝트가 표시되는 단위를 **프로젝트 카드**라고 지칭합니다. 프로젝트의 에이전트에서 수집 중인 주요 지표와 속성 등을 각 프로젝트 카드에 표시합니다. 이를 통해 프로젝트의 성능 현황을 빠르게 파악할 수 있습니다.
+基本設定されたビューモードです。 この際、個別プロジェクトが表示される単位を**プロジェクトカード**と言います。 プロジェクトのエージェントで収集中の主要な指標や属性などを各プロジェクトカードに表示します。 これにより、プロジェクトの性能状況を迅速に把握できます。
 
 #### <LinkImage img="ico-reduction-view.svg" className="ico" /> <Cmdname sid="compact_card_view" />
 
-<ImgLang img='ui-home/main-project-compact-card-view.png' desc='확장 카드 뷰' />
+<ImgLang img='ui-home/main-project-compact-card-view.png' desc='ワイドカード' />
 
-<Cmdname sid="wide_card_view" className="uitext" /> 보다는 개별 프로젝트에서 적은 정보를 제공하지만 더 많은 프로젝트 목록을 확인할 수 있습니다. 
+<Cmdname sid="wide_card_view" className="uitext" />より個別のプロジェクトで少ない情報を提供しますが、より多くのプロジェクトリストを確認することができます。
 
 #### <LinkImage img="ico-list-view.svg" className="ico" /> <Cmdname sid="project_list_view" />
 
-<ImgLang img='ui-home/main-project-list-card-view.png' desc='리스트 뷰' />
+<ImgLang img='ui-home/main-project-list-card-view.png' desc='リスト' />
 
-상품의 종류에 따라 프로젝트를 분류하여 목록 형식으로 표시합니다. 상품의 종류에 따라 제공하는 정보는 다를 수 있습니다. 목록의 가장 오른쪽에는 프로젝트 관리(![설정 아이콘](/img/ico-setting.svg))와 삭제(![삭제 아이콘](/img/ico-trash.svg)) 기능을 제공합니다.
+製品の種類に応じてプロジェクトを分類し、一覧形式で表示します。 製品の種類によって提供する情報は異なる場合があります。 リストの一番右にはプロジェクト管理(![設定アイコン](/img/ico-setting.svg))と削除(![削除アイコン](/img/ico-trash.svg))機能を提供します。
 
+### お気に入りのプロジェクトリストを見る{#favoritedproject}
 
-### 즐겨찾는 프로젝트 목록 보기 {#favoritedproject}
-
-세 가지 뷰 모드에서 ![즐겨찾기 아이콘](/img/ico-favorite-set.svg)(즐겨찾기) 설정된 프로젝트만 목록에 표시할 수 있습니다.
+3つのビューモードで![お気に入りアイコン](/img/ico-favorite-set.svg)(お気に入り)設定されたプロジェクトのみリストに表示できます。
 
 <ImgLang img='ui-home/main-project-set-favorite.png' desc='즐겨찾기 설정하기' />
 
-프로젝트 카드에서 ![즐겨찾기 아이콘](/img/ico-favorite.svg) 버튼을 선택해 즐겨찾기를 설정하세요. 여러 개의 프로젝트를 선택할 수 있습니다. 프로젝트 검색 입력 상자의 오른쪽에 ![즐겨찾기 아이콘](/img/ico-favorite.svg)(<Cmdname sid="favorite" className="uitext" />) 모드를 선택하세요.
+プロジェクトカードで![お気に入りアイコン](/img/ico-favorite.svg)ボタンを選択してお気に入りを設定してください。 複数のプロジェクトを選択できます。 プロジェクトの検索入力ボックスの右側の![お気に入りアイコン](/img/ico-favorite.svg)(<Cmdname sid="favorite" className="uitext" />)モードを選択してください。
 
-<ImgLang img='ui-home/main-project-favorite-list.png' desc='즐겨찾기' />
+<ImgLang img='ui-home/main-project-favorite-list.png' desc='お気に入り' />
 
+### プロジェクト/プロジェクトコードで検索する{#searchprojectwithcode}
 
-### 프로젝트/프로젝트 코드로 검색하기 {#searchprojectwithcode}
-
-관리 중이거나 소속된 프로젝트가 많아 프로젝트를 찾기 어렵다면 검색 기능을 이용하세요. 찾길 원하는 프로젝트를 필터링할 수 있습니다. 화면 위에 프로젝트 검색 입력 상자에 프로젝트 이름 또는 프로젝트 코드를 입력하세요. 
+管理中または所属するプロジェクトが多くてプロジェクトを見つけるのが難しい場合は、検索機能を利用してください。 見つけたいプロジェクトをフィルタリングできます。 画面上のプロジェクト検索入力ボックスにプロジェクト名またはプロジェクトコードを入力してください。 
 
 <ImgLang img='ui-home/main-project-filter.png' className="width-200" />
 
-입력 상자 아래에 입력한 문자열과 일치하는 프로젝트 목록이 표시됩니다. 찾으려는 프로젝트를 선택하세요. 문자열을 입력한 상태에서 엔터 키를 누르거나 ![검색 아이콘](/img/ico-search.svg) 버튼을 선택하세요. 입력한 문자열과 일치하는 프로젝트가 목록에 표시됩니다.
+入力ボックスの下に、入力した文字列と一致するプロジェクトの一覧が表示されます。 見つけようとするプロジェクトを選択してください。 文字列を入力した状態でエンターキーを押すか、![検索アイコン](/img/ico-search.svg)ボタンを選択してください。 入力した文字列と一致するプロジェクトがリストに表示されます。
 
+## サイドメニュー{#sidebar}
 
-## 사이드 메뉴 {#sidebar}
+WhaTapモニタリング画面で左パネルメニュー領域を**サイドメニュー**と呼びます。 サイドメニューでは、プロジェクト間で移動できる機能、グループ、組織を作成または移動できる機能、プロジェクト作成などの主要機能を提供します。
 
-와탭 모니터링 화면에서 왼쪽 패널 메뉴 영역을 **사이드 메뉴**라고 부릅니다. 사이드 메뉴에서는 프로젝트 간에 이동할 수 있는 기능과 그룹, 조직을 생성하거나 이동할 수 있는 기능, 프로젝트 생성 등의 주요 기능을 제공합니다.
+### プロジェクト作成{#createproject}
 
-### 프로젝트 생성하기 {#createproject}
+プロジェクトを新規作成するには、次の2つの方法を利用できます。
 
-프로젝트를 새로 생성하려면 다음의 두 가지 방식을 이용할 수 있습니다.
+- サイドメニューで<Cmdname sid="BTN07332" className="uitext" />を選択してください。 プロジェクトリストパネルが開いたら![追加アイコン](/img/ico-add.svg) <Cmdname sid="project" className="uitext" />を選択してください。
 
-* 사이드 메뉴에서 <Cmdname sid="BTN07332" className="uitext" />를 선택하세요. 프로젝트 목록 패널이 열리면 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="project" className="uitext" />를 선택하세요.
+- サイドメニューの一番左にある製品の種類別アイコンを選択してください。 製品紹介ページに移動して、希望する製品の<Cmdname sid="BTN06900" className="uitext" />ボタンを選択してください。 次の表を参考にしてください。
 
-* 사이드 메뉴의 가장 왼쪽에 상품 종류별 아이콘을 선택하세요. 상품 소개 페이지로 이동하면 원하는 상품의 <Cmdname sid="BTN06900" className="uitext" /> 버튼을 선택하세요. 다음 표를 참조하세요.
-
-  | 상품 아이콘 | 설명 |
-  | :--: | -- |
-  | <LinkImage img='shortcut-application.svg' className='shortcutIcon' /> | [Java](/java/introduction), [Node.js](/nodejs/introduction), [PHP](/php/introduction), [Python](/python/introduction), [.NET](/dotnet/introduction), [Go](/golang/introduction) 상품의 애플리케이션 모니터링을 위한 프로젝트를 생성할 수 있습니다. |
-  | <LinkImage img='shortcut-server.svg' className='shortcutIcon' /> | [Server 모니터링](/server/introduction)을 위한 프로젝트를 생성할 수 있습니다. |
-  | <LinkImage img='shortcut-kuber.svg' className='shortcutIcon' /> | [Kubernetes 모니터링](/kubernetes/introduction)을 위한 프로젝트를 생성할 수 있습니다. |
-  | <LinkImage img='shortcut-database.svg' className='shortcutIcon' /> | [MySQL](/mysql/monitoring-intro), [SQL Server](/mssql/monitoring-intro), [Oracle](/oracle/monitoring-intro), [PostgreSQL](/postgresql/monitoring-intro), [Redis](/redis/monitoring-intro), [MongoDB](/mongodb/monitoring-intro), [CUBRID](/cubrid/monitoring-intro), [Tibero](/tibero/monitoring-intro), [Altibase](/altibase/monitoring-intro) 상품의 데이터베이스 모니터링을 위한 프로젝트를 생성할 수 있습니다. |
-  | <LinkImage img='shortcut-url.svg' className='shortcutIcon' /> | [URL 모니터링](/url/url-intro)을 위한 프로젝트를 생성할 수 있습니다. |
-  | <LinkImage img='shortcut-cloud.svg' className='shortcutIcon' /> | [Amazon CloudWatch](/amazon-cloudwatch/install-agent), [Amazon ECS](/amazon-ecs/introduction), [Azure Monitor](/azure/install-agent), [Oracle Cloud Monitor](/oracle-cloud/install-agent), [Naver Cloud Monitoring](/ncloud/install-agent) 상품의 클라우드 모니터링을 위한 프로젝트를 생성할 수 있습니다. |
-  | <LinkImage img='shortcut-log.svg' className='shortcutIcon' /> | [Log 모니터링](/log/introduction)에 대한 소개와 설정 방법을 안내합니다. |
-  | <LinkImage img='shortcut-browser.svg' className='shortcutIcon' /> | [Browser 모니터링](/log/introduction)을 위한 프로젝트를 생성할 수 있습니다. |
+  |                                 製品アイコン                                | 説明                                                                                                                                                                                                                                                                                                                                                                               |
+  | :-------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | <LinkImage img='shortcut-application.svg' className='shortcutIcon' /> | [Java](/java/introduction), [Node.js](/nodejs/introduction), [PHP](/php/introduction), [Python](/python/introduction), [.NET](/dotnet/introduction), [Go](/golang/introduction)サービスのアプリケーションモニタリングのためのプロジェクトを作成できます。                                                                                                                                                             |
+  |    <LinkImage img='shortcut-server.svg' className='shortcutIcon' />   | [Serverモニタリング](/server/introduction)のプロジェクトを作成できます。                                                                                                                                                                                                                                                                                                                              |
+  |    <LinkImage img='shortcut-kuber.svg' className='shortcutIcon' />    | [Kubernetesモニタリング](/kubernetes/introduction)のプロジェクトが作成できます。                                                                                                                                                                                                                                                                                                                      |
+  |   <LinkImage img='shortcut-database.svg' className='shortcutIcon' />  | [MySQL](/mysql/monitoring-intro), [SQL Server](/mssql/monitoring-intro), [Oracle](/oracle/monitoring-intro), [PostgreSQL](/postgresql/monitoring-intro), [Redis](/redis/monitoring-intro), [MongoDB](/mongodb/monitoring-intro), [CUBRID](/cubrid/monitoring-intro), [Tibero](/tibero/monitoring-intro), [Altibase](/altibase/monitoring-intro) サービスのデータベースモニタリングのプロジェクトが作成できます。 |
+  |     <LinkImage img='shortcut-url.svg' className='shortcutIcon' />     | [URLモニタリング](/url/url-intro)のプロジェクトが作成できます。                                                                                                                                                                                                                                                                                                                                       |
+  |    <LinkImage img='shortcut-cloud.svg' className='shortcutIcon' />    | [Amazon CloudWatch](/amazon-cloudwatch/install-agent), [Amazon ECS](/amazon-ecs/introduction), [Azure Monitor](/azure/install-agent), [Oracle Cloud Monitor](/oracle-cloud/install-agent), [Naver Cloud Monitoring](/ncloud/install-agent) サービスのクラウドモニタリングのプロジェクトが作成できます。                                                                                                        |
+  |     <LinkImage img='shortcut-log.svg' className='shortcutIcon' />     | [Logモニタリング](/log/introduction)についての紹介と設定方法を案内します。                                                                                                                                                                                                                                                                                                                                |
+  |   <LinkImage img='shortcut-browser.svg' className='shortcutIcon' />   | [Browserモニタリング](/log/introduction)のプロジェクトが作成できます。                                                                                                                                                                                                                                                                                                                                |
 
 :::note
 
-프로젝트 생성에 대한 자세한 내용은 [다음 문서](project/project-manage#create-project)를 참조하세요.
+プロジェクト作成の詳細については、[次の文書](project/project-manage#create-project)を参照してください。
 
 :::
 
-### 홈 화면 또는 프로젝트 간 이동하기 {#move2project}
+### ホーム画面またはプロジェクト間の移動{#move2project}
 
-사용자가 속한 그룹의 프로젝트를 트리뷰 형식으로 전체 목록을 확인할 수 있습니다. 화면 로고 아래에 <Cmdname sid="BTN07332" className="uitext" /> 메뉴를 선택하세요. 프로젝트 목록 패널이 열리면 원하는 프로젝트를 선택하세요. 선택한 프로젝트로 이동할 수 있습니다.
+ユーザーが属しているグループのプロジェクトの全体リストをツリービュー形式で確認することができます。 画面ロゴの下の<Cmdname sid="BTN07332" className="uitext" />メニューを選択してください。 プロジェクト一覧パネルが開いたら、希望するプロジェクトを選択してください。 選択したプロジェクトに移動できます。
 
 <ImgLang img='ui-home/main-ui-home-to-project-move-01.png' desc='' />
 
-그룹이나 프로젝트가 많아 원하는 항목을 찾기 어렵다면, 프로젝트 목록 패널에서 <Cmdname sid="TLT07471" className="uitext" /> 입력 상자에 문자열을 입력하세요. 문자열과 일치하는 그룹 또는 프로젝트를 필터링할 수 있습니다. 상품별로 프로젝트를 필터링하려면 ![필터 아이콘](/img/ico-filter.svg) 버튼을 선택한 다음 원하는 상품을 선택하세요.
+グループやプロジェクトが多くて希望する項目を探すのが難しい場合は、プロジェクトリストパネルで<Cmdname sid="TLT07471" className="uitext" /> 入力ボックスに文字列を入力してください。 文字列に一致するグループまたはプロジェクトをフィルタリングできます。 製品別にプロジェクトをフィルタリングするには、![フィルターアイコン](/img/ico-filter.svg)ボタンを選択してから、希望するの製品を選択してください。
 
-<ImgLang img='ui-home/main-ui-filter-project.png' desc='프로젝트 필터링' />
+<ImgLang img='ui-home/main-ui-filter-project.png' desc='プロジェクト一覧フィルタリング' />
 
-프로젝트로 진입한 상태에서 사이드 메뉴의 프로젝트 이름을 선택하면 현재 프로젝트의 계층 구조를 파악할 수 있으며, 다른 프로젝트를 선택해 쉽게 이동할 수도 있습니다. 홈 화면으로 이동하려면 화면 왼쪽 위에 와탭 로고를 선택하거나 화면 아래에 ![홈 아이콘](/img/ic-home.svg) 버튼을 선택하세요.
+プロジェクトに進入した状態でサイドメニューのプロジェクト名を選択すると、現在のプロジェクトの階層構造を把握することができ、他のプロジェクトを選択して簡単に移動することもできます。 ホーム画面に移動するには、画面左上のWhaTapロゴを選択するか、画面下の![ホームアイコン](/img/ic-home.svg)ボタンを選択してください。
 
 <ImgLang img='ui-home/main-ui-home-to-project-move-02.png' desc='' />
 
-### 그룹 생성 또는 이동, 관리하기 {#managegroup}
+### グループの作成・移動・管理{#managegroup}
 
-사이드 메뉴에서 <Cmdname sid="BTN07332" className="uitext" />를 선택하세요.
+サイドメニューで<Cmdname sid="BTN07332" className="uitext" />を選択してください。
 
-* 그룹을 새로 생성하려면 프로젝트 목록 패널에서 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="BTN06697" className="uitext" />을 선택하세요. <Cmdname sid="add_group" className="uitext" /> 메뉴로 이동합니다.
+- グループを新規作成するには、プロジェクトリストパネルで![追加アイコン](/img/ico-add.svg) <Cmdname sid="BTN06697" className="uitext" />を選択してください。 <Cmdname sid="add_group" className="uitext" />メニューに移動します。
 
-* 다른 그룹으로 이동하려면 프로젝트 목록 패널에서 ![그룹 아이콘](/img/ico-group.svg) 항목을 선택하세요. 해당 그룹에 속한 프로젝트 목록을 확인할 수 있습니다.
+- 他のグループに移動するには、プロジェクトリストパネルで![グループアイコン](/img/ico-group.svg)項目を選択してください。 該当グループに属するプロジェクトのリストを確認することができます。
 
-* 그룹 관리 메뉴로 이동하려면 프로젝트 목록 패널에서 ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하세요. <Cmdname sid="integrated_group_management" className="uitext" /> 메뉴로 이동합니다.
+- グループ管理メニューに移動するには、プロジェクトリストパネルで![設定アイコン](/img/ico-setting.svg)ボタンを選択してください。 <Cmdname sid="integrated_group_management" className="uitext" />メニューに移動します。
 
 :::note
 
-* 그룹 추가 및 이동, 관리에 대한 자세한 내용은 [다음 문서](project/group)를 참조하세요.
+- グループ追加・移動・管理の詳細については、[次の文書](project/group)を参考にしてください。
 
-* 프로젝트 구조에 대한 자세한 내용은 [다음 문서](project/project-structure)를 참조하세요.
+- プロジェクト構造の詳細については、[次の文書](project/project-structure)を参考にしてください。
 
 :::
 
-### 조직 생성 또는 이동, 관리하기 {#manageorganization}
+### 組織の作成・移動・管理{#manageorganization}
 
-사이드 메뉴에서 <Cmdname sid="sidebar_org_selector_no_organization" className="uitext" />을 선택하세요.
+サイドメニューで<Cmdname sid="sidebar_org_selector_no_organization" className="uitext" />を選択してください。
 
-* 조직을 새로 생성하려면 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" />을 선택하세요. <Cmdname sid="create_organization" className="uitext" /> 메뉴로 이동합니다.
+- 組織を新規作成するには、![追加アイコン](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" />を選択してください。 <Cmdname sid="create_organization" className="uitext" />メニューに移動します。
 
-* 조직에 속한 프로젝트 목록만 확인하려면 목록에서 이동하길 원하는 조직 항목을 선택하세요. 
+- 組織に属するプロジェクト一覧のみを確認するには、一覧から移動したい組織項目を選択してください。 
 
-* 전체 조직을 관리하기 위한 <Cmdname sid="organization_management" className="uitext" /> 메뉴로 이동하려면 ![추가 아이콘](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" /> 오른쪽에 ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하세요.
+- 全体組織を管理するための<Cmdname sid="organization_management" className="uitext" />メニューに移動するには、![追加アイコン](/img/ico-add.svg) <Cmdname sid="BTN07359" className="uitext" />右の![設定アイコン](/img/ico-setting.svg)ボタンを選択してください。
 
-* 개별 조직을 관리하기 위한 <Cmdname sid="organization_management" className="uitext" /> 메뉴로 이동하려면 개별 조직 항목에 마우스를 오버하세요. ![설정 아이콘](/img/ico-setting.svg) 버튼이 나타나면 선택하세요.
+- 個別組織を管理するための<Cmdname sid="organization_management" className="uitext" />メニューに移動するには、個別の組織項目にマウスをオーバーしてください。 ![設定アイコン](/img/ico-setting.svg)ボタンが表示されたら選択してください。
 
   <ImgLang img='ui-home/main-ui-setting-by-org.png' desc='개별 조직 설정' />
 
-
 :::note
 
-* 조직 추가 및 이동, 관리에 대한 자세한 내용은 [다음 문서](project/organization)를 참조하세요.
+- 組織の追加・移動・管理の詳細については、[次の文書](project/organization)を参考にしてください。
 
-* 프로젝트 구조에 대한 자세한 내용은 [다음 문서](project/project-structure)를 참조하세요.
+- プロジェクト構造の詳細については、[次の文書](project/project-structure)を参考にしてください。
 
 :::
 
-### 그룹별/에이전트별 프로젝트 검색하기 {#searchgroupagent}
+### グループ別/エージェント別のプロジェクト検索{#searchgroupagent}
 
-프로젝트가 속한 그룹 또는 프로젝트에 포함된 에이전트 이름을 기준으로 프로젝트를 검색할 수 있습니다. 화면 왼쪽 위에 위치한 로고 옆에 ![검색 아이콘](/img/ico-search.svg) 버튼을 선택하세요.
+プロジェクトが属するグループまたはプロジェクトに含まれるエージェント名に基づいてプロジェクトを検索できます。 画面左上に位置するロゴの横の![検索アイコン](/img/ico-search.svg)ボタンを選択してください。
 
-<ImgLang img='ui-home/main-ui-search-by-group.png' desc='그룹별 검색' />
+<ImgLang img='ui-home/main-ui-search-by-group.png' desc='グループ別検索' />
 
-* ***Group/Project***: 프로젝트가 속한 그룹별로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 그룹과 프로젝트를 확인할 수 있습니다.
+- **_Group/Project_**：プロジェクトが属するグループごとにプロジェクトを検索できます。 検索した結果には、入力した文字列に一致するグループとプロジェクトを確認できます。
 
-* ***Agent***: 프로젝트에 포함된 에이전트 이름을 기준으로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 프로젝트와 에이전트를 확인할 수 있습니다.
+- **_Agent_**：プロジェクトに含まれるエージェント名に基づいてプロジェクトを検索できます。 検索した結果では、入力した文字列に一致するプロジェクトとエージェントを確認できます。
 
-### 홈 메뉴 이용하기 {#usinghomemenu}
+### ホームメニューの利用{#usinghomemenu}
 
-홈 화면에서 이용할 수 있는 통합 메뉴는 다음과 같습니다.
+ホーム画面で利用できる統合メニューは次のとおりです。
 
-* <Cmdname sid="project_list" className="uitext" />: 전체 프로젝트 목록을 확인할 수 있습니다.
+- <Cmdname sid="project_list" className="uitext" />：全体プロジェクトの一覧を確認できます。
 
-* <Cmdname sid="flexboard" className="uitext" />: 사용자 정의형 통합 대시보드입니다. 애플리케이션, 서버, 데이터베이스, 컨테이너 등 프로젝트에서 수집한 메트릭스로 실시간 대시보드를 만들 수 있습니다.
+- <Cmdname sid="flexboard" className="uitext" />：カスタマイズ可能な統合ダッシュボード。 アプリケーション、サーバー、データベース、コンテナなどのプロジェクトから収集したメトリクスでリアルタイムのダッシュボードを作成できます。
 
   <details>
-  <summary>상품별 문서</summary>
+  <summary>製品別文書</summary>
 
-  * [애플리케이션 모니터링 > Flex 보드](java/flex-board)
-  * [서버 모니터링 > Flex 보드](server/flex-board)
-  * [데이터베이스 모니터링 > Flex 보드](mysql/flex-board)
-  * [쿠버네티스 모니터링 > Flex 보드](kubernetes/flex-board)
-  * [Amazon ECS > Flex 보드](amazon-ecs/flexboard)
-  * [Amazon CloudWatch > Flex 보드](amazon-cloudwatch/flexboard)
-  * [Azure Monitor > Flex 보드](azure/flexboard)
-  * [Naver Cloud Monitoring > Flex 보드](ncloud/flexboard)
-  * [Oracle Cloud Monitor > Flex 보드](oracle-cloud/flexboard)
+  - [アプリケーションモニタリング > Flexボード](java/flex-board)
+  - [サーバーモニタリング > Flexボード](server/flex-board)
+  - [データベースモニタリング > Flexボード](mysql/flex-board)
+  - [Kubernetesモニタリング > Flexボード](kubernetes/flex-board)
+  - [Amazon ECS > Flexボード](amazon-ecs/flexboard)
+  - [Amazon CloudWatch > Flexボード](amazon-cloudwatch/flexboard)
+  - [Azure Monitor > Flexボード](azure/flexboard)
+  - [Naver Cloud Monitoring > Flexボード](ncloud/flexboard)
+  - [Oracle Cloud Monitor > Flexボード](oracle-cloud/flexboard)
 
   </details>
 
-* <Cmdname sid="integrated_report" className="uitext" />: 여러 프로젝트에 대한 보고서를 간편하게 생성할 수 있습니다. 자세한 내용은 <Link to="report/integrated-report">다음 문서</Link>를 참조하세요.
+- <Cmdname sid="integrated_report" className="uitext" />：複数のプロジェクトのレポートを簡単に作成できます。 詳細については、<Link to="report/integrated-report">次の文書</Link>を参照してください。
 
-* <Cmdname sid="integrated_topology" className="uitext" />: <Cmdname sid="topology" className="uitext" /> 기능을 지원하는 여러 프로젝트들을 일괄 선택해 단일 토폴로지로 확인할 수 있습니다. 자세한 내용은 <Link to="java/topology-type#int-topology">다음 문서</Link>를 참조하세요.
+- <Cmdname sid="integrated_topology" className="uitext" />：<Cmdname sid="topology" className="uitext" />機能に対応する複数のプロジェクトを一括選択し、単一トポロジーとして確認することができます。 詳細については、<Link to="java/topology-type#int-topology">次の文書</Link>を参照してください。
 
-* <Cmdname sid="real_time_alert_list" className="uitext" />: 사용자가 권한을 보유한 모든 프로젝트들의 알림을 실시간으로 확인하고, 알림 현황을 한눈에 파악할 수 있습니다. 자세한 내용은 <Link to="notification/rt-notification">다음 문서</Link>를 참조하세요.
+- <Cmdname sid="real_time_alert_list" className="uitext" />：ユーザー権限のあるすべてのプロジェクトの通知をリアルタイムで確認し、通知状況を一目で確認することができます。 詳細については、<Link to="notification/rt-notification">次の文書</Link>を参照してください。
 
-* <Cmdname sid="management" className="uitext" />: 전체 그룹 및 멤버를 관리할 수 있습니다. 자세한 내용은 <Link to="project/integrated-manage">다음 문서</Link>를 참조하세요.
+- <Cmdname sid="management" className="uitext" />：全体グループとメンバーを管理できます。 詳細については、<Link to="project/integrated-manage">次の文書</Link>を参照してください。
 
-### 프로젝트 메뉴를 즐겨찾기로 등록하기 {#usingprojectmenu}
+### プロジェクトメニューをお気に入りに登録{#usingprojectmenu}
 
-홈 화면에서 프로젝트를 선택해 이동하면 사이드 메뉴에는 프로젝트에서 이용할 수 있는 메뉴가 표시됩니다. 자주 이용하는 메뉴를 즐겨찾기로 등록해 이용할 수 있습니다.
+ホーム画面でプロジェクトを選択して移動すると、サイドメニューにはプロジェクトで利用できるメニューが表示されます。 よく利用するメニューをお気に入りに登録して利用することができます。
 
-1. 사이드 메뉴에서 자주 이용하는 메뉴로 마우스 포인터를 놓으면 ![즐겨찾기 아이콘](/img/ico-favorite.svg) 버튼이 나타납니다. 
+1. サイドメニューでよく利用するメニューにマウスポインタを置くと![お気に入りアイコン](/img/ico-favorite.svg)ボタンが表示されます。 
 
-    <ImgLang img='ui-home/main-ui-set-favorite-menu.png' desc='즐겨찾는 메뉴 설정하기' />
+   <ImgLang img='ui-home/main-ui-set-favorite-menu.png' desc='プロジェクトメニューをお気に入りに登録' />
 
-1. 버튼을 선택하면 ![즐겨찾기 설정 아이콘](/img/ic-star-filled.svg)으로 변경됩니다.
+2. ボタンを選択すると![お気に入り設定アイコン](/img/ic-star-filled.svg)に変更されます。
 
-1. 다른 메뉴를 즐겨찾기로 추가하려면 위의 과정을 반복하세요.
+3. 他のメニューをお気に入りに追加するには、上記の手順を繰り返してください。
 
-1. 사이드 메뉴 아래에 ![즐겨찾는 메뉴만 표시 아이콘](/img/ico-favorite.svg) 버튼을 선택하세요.
+4. サイドメニューの下の![お気に入りメニューのみ表示アイコン](/img/ico-favorite.svg)ボタンを選択してください。
 
-    <ImgLang img='ui-home/main-ui-view-only-favorite.png' desc='즐겨찾는 메뉴만 표시' />
+   <ImgLang img='ui-home/main-ui-view-only-favorite.png' desc='お気に入りメニューのみ表示アイコン' />
 
-사이드 메뉴에는 즐겨찾기로 설정된 메뉴만 표시됩니다.
-
-:::note
-
-프로젝트의 상품에 따라 표시되는 메뉴는 다를 수 있습니다.
-
-:::
-
-### 테마 변경하기 {#applytheme}
-
-사용자가 어둡거나 밝은 모드의 화면을 설정할 수 있습니다. 화면 왼쪽 아래에 ![테마 아이콘](/img/ico-theme.svg) 버튼을 선택하세요.
-
-* ***Light***: 기본 적용된 밝은 모드의 테마입니다.
-
-* ***Dark***: 검은색 또는 어두운 배경의 다크 테마입니다.
-
-* ***Presentation***: 빔 프로젝트를 이용할 경우 최적화된 색상을 적용합니다.
-
-* ***Add Custom Theme***: ***Light*** 모드와 ***Dark*** 모드에서 세부 요소를 사용자가 원하는 색상으로 설정할 수 있습니다.
-
-
-### 전체 화면으로 보기 {#fullscreen}
-
-와탭 모니터링 서비스 화면을 웹 브라우저에서 전체 화면 모드로 보려면 화면 왼쪽 아래에 ![전체 화면 아이콘](/img/ic-fullscreen.svg) 버튼을 선택하세요. 전체 화면 모드를 종료하려면 ESC 키를 누르세요.
-
-
-### 사이트맵 이용하기 {#sitemap}
-
-사용자가 진입한 경로에서 선택할 수 있는 모든 메뉴를 확인할 수 있습니다. 화면 왼쪽 아래에 ![사이트맵 아이콘](/img/ic-sitemap.svg) 버튼을 선택하세요.
+サイドメニューには、お気に入りに設定されたメニューのみが表示されます。
 
 :::note
 
-진입한 메뉴 경로 또는 프로젝트에 따라 지원하는 메뉴는 다를 수 있습니다.
+プロジェクトの製品によって表示されるメニューは異なる場合があります。
 
 :::
 
+### テーマの変更{#applytheme}
 
-### 튜토리얼 확인하기
+ユーザーは、ダークモードまたはライトモードに画面を設定できます。 画面左下の![テーマアイコン](/img/ico-theme.svg)ボタンを選択してください。
 
-화면 상에서 사이드 메뉴 사용에 대한 자세한 안내를 확인하려면 <Cmdname sid="BTN07397" className="uitext" /> 버튼을 선택하세요.
+- **_Light_**：基本的に適用されたライトモードのテーマです。
 
+- **_Dark_**：黒または暗い背景のダークテーマです。
 
-### 사이드 메뉴 크기 조절하기 {#adjustsizesidebar}
+- **_Presentation_**：ビームプロジェクトの使用時に最適化された色を適用します。
 
-다음의 두 가지 방식으로 사이드 메뉴의 크기를 조절해 화면을 폭 넓게 이용할 수 있습니다.
+- **_Add Custom Theme_**：**_Light_**モードと**_Dark_**モードでは、詳細要素をユーザーが希望する色に設定できます。
 
-* 사이드 메뉴를 접으려면 와탭 로고 오른쪽에 ![접기 아이콘](/img/ic-sidebar2left.svg) 버튼을 선택하세요. 다시 사이드 메뉴를 펼치려면 ![펼치기 아이콘](/img/ic-sidebar2right.svg) 버튼을 선택하세요.
+### 全画面表示{#fullscreen}
+
+WhaTapモニタリングサービス画面をウェブブラウザーで全画面モードで表示するには、画面左下の![全画面アイコン](/img/ic-fullscreen.svg)ボタンを選択してください。 全画面モードを終了するには、ESCキーを押してください。
+
+### サイトマップの利用{#sitemap}
+
+ユーザーが進入した経路で選択できるすべてのメニューを確認することができます。 画面左下の![サイトマップアイコン](/img/ic-sitemap.svg)ボタンを選択してください。
+
+:::note
+
+進入したメニュー経路またはプロジェクトによって、対応するメニューは異なる場合があります。
+
+:::
+
+### チュートリアルの確認
+
+画面上でサイドメニューの使用に関する詳細な案内を確認するには、<Cmdname sid="BTN07397" className="uitext" />ボタンを選択してください。
+
+### サイドメニューサイズの調整{#adjustsizesidebar}
+
+次の2つの方法でサイドメニューのサイズを調整し、画面を広く利用することができます。
+
+- サイドメニューを折りたたむには、WhaTapロゴの右側の![折りたたみアイコン](/img/ic-sidebar2left.svg)ボタンを選択してください。 またサイドメニューを展開するには、![展開アイコン](/img/ic-sidebar2right.svg)ボタンを選択してください。
 
   <ImgLang img='ui-home/main-ui-fold-extend-sidemenu.png' desc='' />
 
-* 사이드 메뉴를 기존보다 넓게 펼치려면 사이드 메뉴 경계선에 마우스를 오버하고 드래그하세요. 원하는 크기로 조절할 수 있습니다.
+- サイドメニューを従来よりも広く展開するには、サイドメニューの境界線にマウスをオーバーしてドラッグしてください。 希望するサイズに調整できます。
 
-  <ImgLang img='ui-home/main-ui-adjust-sidebar.png' desc='사이드 메뉴' />
+  <ImgLang img='ui-home/main-ui-adjust-sidebar.png' desc='サイドメニュー' />
 
+## サポートメニュー{#supportmenu}
 
-## 지원 메뉴 {#supportmenu}
+次は画面右側の一番上で利用できるサポートメニューです。
 
-다음은 화면 오른쪽 가장 위에서 이용할 수 있는 지원 메뉴입니다.
+### お知らせの確認{#checknotice}
 
-### 공지사항 확인하기 {#checknotice}
+![お知らせアイコン](/img/ic-notice.svg)ボタンを選択してください。 WhaTapモニタリングサービスの定期配布のニュースや緊急点検など確認できる<Cmdname sid="TTL06763" className="uitext" />メニューに移動します。
 
-![공지사항 아이콘](/img/ic-notice.svg) 버튼을 선택하세요. 와탭 모니터링 서비스의 정기 배포 소식 및 긴급 점검 등 확인할 수 있는 <Cmdname sid="TTL06763" className="uitext" /> 메뉴로 이동합니다.
+### 記述文書に移動{#movedocs}
 
-### 기술 문서로 이동하기 {#movedocs}
+![WhaTap Docsアイコン](/img/ic-guide.svg)ボタンを選択すると、WhaTap Docs記述文書ページに移動します。 WhaTap Docsの詳細については、[次の文書](welcome-to-whatapdocs)を参照してください。
 
-![와탭 Docs 아이콘](/img/ic-guide.svg) 버튼을 선택하면 와탭 Docs 기술 문서 페이지로 이동합니다. 와탭 Docs에 대한 자세한 내용은 [다음 문서](welcome-to-whatapdocs)를 참조하세요.
+### オンラインチャットによるお問い合わせ{#chatservice}
 
-### 온라인 채팅 문의하기 {#chatservice}
+![カスタマーサポートアイコン](/img/ico-help.svg)ボタンを選択すると、オンラインで問い合わせが可能なチャットウィンドウが表示されます。 WhaTapモニタリングサービスに関する技術、費用や決済などに関するお問い合わせができます。
 
-![고객지원 아이콘](/img/ico-help.svg) 버튼을 선택하면 온라인 문의가 가능한 채팅 창이 나타납니다. 와탭 모니터링 서비스와 관련한 기술 및 비용/결제 등에 관한 문의를 할 수 있습니다.
+### 管理メニューへの進入{#managementmenu}
 
-### 관리 메뉴 진입하기 {#managementmenu}
+画面の右上にあるプロファイルアイコンを選択してください。 次の機能を提供します。
 
-화면 가장 오른쪽 위에 위치한 프로필 아이콘을 선택하세요. 다음의 기능을 제공합니다.
+<ImgLang img='ui-home/main-ui-profile-menu.png' desc='プロフィールメニュー' />
 
-<ImgLang img='ui-home/main-ui-profile-menu.png' desc='프로필 메뉴' />
-
-* <Cmdname sid="MNU07360" className="uitext" />: 사용자 계정 정보를 수정하거나 알림 수신, 멀티팩터 인증 등의 기능을 설정할 수 있습니다.
+- <Cmdname sid="MNU07360" className="uitext" />：ユーザーアカウント情報の修正や通知の受信、マルチファクターの認証などの機能を設定できます。
 
   :::note
 
-  * 회원 가입 및 비밀번호 수정, 탈퇴에 대한 자세한 내용은 [다음 문서](account/account-manage)를 참조하세요.
+  - 会員登録及びパスワードの修正、退会の詳細については、[次の文書](account/account-manage)を参考にしてください。
 
-  * 멀티팩터 인증에 대한 자세한 내용은 [다음 문서](account/mfa)를 참조하세요.
+  - マルチファクター認証の詳細については、[次の文書](account/mfa)を参考にしてください。
 
   :::
 
-* <Cmdname sid="MNU07361" className="uitext" />: 결제 정보를 등록하고 서비스 사용량을 조회할 수 있습니다. 자세한 내용은 <Link to="management/billing">다음 문서</Link>를 참조하세요.
+- <Cmdname sid="MNU07361" className="uitext" />：決済情報を登録し、サービス使用量を照会することができます。 詳細については、<Link to="management/billing">次の文書</Link>を参照してください。
 
-* <Cmdname sid="create_organization" className="uitext" /> / <Cmdname sid="organization_management" className="uitext" />: 조직을 생성하거나 관리할 수 있는 메뉴로 이동합니다. 조직에 대한 자세한 내용은 <Link to="project/organization">다음 문서</Link>를 참조하세요.
+- <Cmdname sid="create_organization" className="uitext" /> / <Cmdname sid="organization_management" className="uitext" />：組織を作成または管理できるメニューに移動します。 組織についての詳細は、<Link to="project/organization">次の文書</Link>を参考にしてください。
 
-* <Cmdname sid="language" className="uitext" />: 서비스 화면의 표시되는 언어를 사용자가 선호하는 언어로 변경할 수 있습니다.
+- <Cmdname sid="language" className="uitext" />：サービス画面に表示される言語をユーザーが好む言語に変更できます。
 
-* <Cmdname sid="BTN06853" className="uitext" />: 와탭 모니터링 서비스에 대한 정보를 확인할 수 있습니다.
+- <Cmdname sid="BTN06853" className="uitext" />：WhaTapモニタリングサービスに関する情報を確認することができます。
 
-* <Cmdname sid="log_out" className="uitext" />: 현재 서비스 화면에서 로그아웃할 수 있습니다.
+- <Cmdname sid="log_out" className="uitext" />：現在のサービス画面からログアウトできます。

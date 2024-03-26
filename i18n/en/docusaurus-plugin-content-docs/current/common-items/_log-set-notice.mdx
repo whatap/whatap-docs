@@ -58,9 +58,13 @@ The following are common options that can be set when adding an event.
 
 <ImgLang img='log-alert-rt.png' desc='실시간 로그 이벤트 추가 sc' />
 
-- **_Search key_** : Its default value is `All`. "All" means the content of the log.
+- **_Search key_**: Indicates an identifier for accessing a specific value within the log data. You can select any in the list and directly enter it.
 
-- **_Search value_**: An alert is sent if the log includes the specified word. You can select any in the list and directly enter it.
+  > e.g. In case of accessing a value representing the HTTP response status code, **_Search key_** `status`
+
+- **_Search key_**: Indicates actual data that corresponds to the **_search key_**. An alert is sent if the log includes the specified word. You can select any in the list and directly enter it.
+
+  > For example, in case of setting the **_search key_** `status` **_search value_** `200`, a warning notification is generated when collecting the log data with the HTTP response status code 200.
 
 - **_Filtering event targets_**: Select **_Search key_**, **_Operator_**, and **_Search value_** through the **_Selector_** option to filter the targets. Otherwise, select the **_Direct Input_** option. If there is no input, it determines whether or not to generate notifications for all data collected in real time.
 

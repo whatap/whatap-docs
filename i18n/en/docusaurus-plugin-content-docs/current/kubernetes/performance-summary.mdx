@@ -5,52 +5,80 @@ description: You can see what changes have been made to key Kubernetes metrics t
 tags:
   - Kubernetes
   - Kubernetes Monitoring
-  - Resources
+  - Dashboard
   - Performance
 ---
 
-Home > Select Project > **_Resource_** > **_Performance Summary_**
+Home > Select Project > **_Dashboard_** > **_Performance Summary_**
 
-Through the recent time-based chart, you can see what changes have been made in key metrics of Kubernetes, such as numbers of containers/pods and nodes.
+Through recent hourly charts, you can check the changes in key Kubernetes metrics such as container/Pod count and node count. The following image is an example of cluster project (<code class='my'>Kubernetes</code>).
 
 <ImgLang img='k8s-performance-summary.png' desc='Performance Summary' />
 
+- **Shortcut option**
+
+  If you select ![More icon](/img/ico-more.svg) **_More_** icon at the upper right of each widget, you can see the ![Shortcut icon](/img/ico-shortcut.svg) **_Shortcut_** option as follows:
+
+  ![Shortcut](/img/k8s-performance-summary-shortcut.png)
+
+- **Line chart configuration option**
+
+  If you select the ![More icon](/img/ico-more.svg) **_More_** icon at the upper right of each line chart widget, you can see the ![Configuration icon](/img/ic-setting.svg) configuration option. For line charts, you can change the ID through the configuration option. The setting is not saved.  
+
+  > For the **_Node CPU (%)_** widget, you can view the data by **_Node_** for example. You can change the metric to view by **_ContainerName_**.
+
+## Kubernetes cluster integration performance
+
+For a cluster project (<code class='my'>Kubernetes</code>), the ![Leader line 1](/img/number-01.png) <UI>Kubernetes cluster integration performance</UI> area displays the cluster-wide information regardless of installation of the WhaTap node agent. Information separated by the namespace project is also displayed together.
+
+## Kubernetes namespace performance
+
+For a namespace project (<code class='my'>Namespace</code>), the ![Leader line 1](/img/number-01.png) <UI>Kubernetes namespace performance</UI> area displays the namespace information regardless of installation of the WhaTap node agent. It displays the information about the containers, pods, and nodes for the namespace. 
+
+## Project performance
+
+The ![Leader line 2](/img/number-02.png) **_Project performance_** area displays information of the target where the WhaTap node agent and application agent within the project have been installed. Information separated by the namespace project can be found in the namespace project. 
+
 :::note 
 
-If you select ![More icon](/img/ico-more.svg) **_More_** icon at the upper right of each widget, you can see the ![Shortcut icon](/img/ico-shortcut.svg) **_Shortcut_** option as follows:
-
-![Shortcut](/img/k8s-performance-summary-shortcut.png)
+If the agent installation is not completed, data may not appear. 
 
 :::
 
-On the upper right of the node count widget, if you select ![More icon](/img/ico-more.svg) **_More_** > ![Shortcut icon](/img/ico-shortcut.svg) **_Shortcut_**, **_Resource_** > **_Node List_** appears. 
+### Node info
 
 The widgets for node data are as follows:
 
 - Recent 30 minutes chart
-- **_Node CPU (%)_**, **_Node Memory (%)_**, etc.
 
-If you select ![More icon](/img/ico-more.svg) **_More_** > ![Shortcut icon](/img/ico-shortcut.svg) **_Shortcut_** on the upper right of the node CPU widget or memory widget, **_Analysis_** > **_Metrics Chart_** appears. Using this menu, you can see the chart with detailed conditions.
+  - **_Node CPU (%)_**, **_Node Memory (%)_**, etc.
+
+:::note 
+
+- On the upper right of the node count widget, if you select ![More icon](/img/ico-more.svg) **_More_** > ![Shortcut icon](/img/ico-shortcut.svg) **_Shortcut_**, **_Cluster_** > **_Node List_** appears. 
+
+- If you select ![More icon](/img/ico-more.svg) **_More_** > ![Shortcut icon](/img/ico-shortcut.svg) **_Shortcut_** on the upper right of the **_Node CPU (%)_** widget or **_Node Memory (%)_** widget, **_Analysis_** > **_Metrics Chart_** appears. Using this menu, you can see the chart with detailed conditions.
+
+:::
+
+### Container Info
 
 The widgets for container data are as follows:
 
 - Recent 10 minutes chart
-- **_Container Status_**, **_Container CPU (%)_**, **_Container Memory (%)_**, etc.
+
+  - **_Container Status_**, **_Container CPU (%)_**, **_Container Memory (%)_**, etc.
+
+### Application information
 
 The widgets for application data are as follows:
 
 - Recent 10 minutes chart
-- **_Active TX_**, **_TPS_**, **_Response Time_**, etc.
+
+  - **_Active TX_**, **_TPS_**, **_Response Time_**, etc.
 
 :::note
 
 The application data is displayed when the target application agent to be installed exists.
 
 :::
-
-<!-- 
-
-106 대비 차트 이미지 교체 
-추가 기술 및 현행화 필요
-
--->

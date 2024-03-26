@@ -3,7 +3,7 @@
 /.vscode
 /.credentials
 /pdf
-# /node_modules
+/node_modules
 sheets.googleapis.com-whatap-locale.json
 
 # Generated files
@@ -43,3 +43,4 @@ node_modules/.cache/webpack/client-development-ko/index.pack
 node_modules/.cache/webpack/client-development-ko/index.pack.old
 /.vscode/*.json
 /.yarn
+yarn.lock

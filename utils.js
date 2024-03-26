@@ -196,6 +196,18 @@ function colsToJson(data){
     "ko": "액티브 트랜잭션 이퀄라이저"
   }
 
+  rd["AA017"] = {
+    "en": "Process Memory",
+    "ja": "プロセスメモリ",
+    "ko": "프로세스 메모리"
+  }
+
+  rd["AA018"] = {
+    "en": "Agent Active Transaction",
+    "ja": "エージェントアクティブTX",
+    "ko": "에이전트 액티브 트랜잭션"
+  }
+
   rd["yaxis"] = {
     "en": "Y Auto",
     "ja": "Y軸自動",
@@ -302,12 +314,6 @@ function colsToJson(data){
     "en": "Workload",
     "ja": "ワークロード",
     "ko": "워크로드"
-  }
-
-  rd["integratedContainerMap"] = {
-    "en": "Integrated Container Map",
-    "ja": "統合コンテナマップ",
-    "ko": "통합 컨테이너 맵"
   }
 
   rd["kubeAppHitmap"] = {

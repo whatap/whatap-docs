@@ -10,13 +10,15 @@ tags:
   - Kubernetesモニタリング
 ---
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" /> 
+ホーム画面 > プロジェクト選択 > **_アプリケーション_** > <Cmdname sid="dashboard" className="uitext" />> <Cmdname sid="serviceDashboard" className="uitext" /> 
 
 コンテナ化されて実行中のアプリケーションの状態をリアルタイムで確認できるダッシュボードです。 各ウィジェットの正常のデータ出力のためにはKubernetes環境にノードエージェントをインストールする必要があります。また、コンテナ化されたアプリケーションにもWhaTapエージェントをインストールする必要があります。
 
 :::note
 
-[Java](../java/dashboard-intro), [Node.js](../nodejs/dashboard-intro), [Python](../python/dashboard-intro), [PHP](../php/dashboard-intro)で開発したアプリケーション向けのWhaTapエージェントのインストールをサポートします。 
+- [Java](../java/dashboard-intro), [Node.js](../nodejs/dashboard-intro), [Python](../python/dashboard-intro), [PHP](../php/dashboard-intro)で開発したアプリケーション向けのWhaTapエージェントのインストールをサポートします。 
+
+- **_ダッシュボード_**メニューまたは**_アプリケーション_**メニュー下位の**_ダッシュボード_**メニューからアクセスできます。
 
 :::
 
@@ -24,7 +26,7 @@ tags:
 
 <Cmdname sid="application_dashboard" className="uitext" />では、アプリケーションの主な指標をエージェントを通じて収集します。また、チャートを構成してリアルタイムでモニタリングし、過去のデータを表示することができます。 ダッシュボードに配置されたウィジェットを通じて、アプリケーションの問題を素早く特定して調査することができます。
 
-CPU、Memoryを除く一般的なチャートの場合、安定したデータは青色の系列で表現され、問題として識別される要素は赤色の系列で表示されるため、現状を簡単に認識できます。
+CPU、Memoryを除く一般的なチャートの場合、安定したデータは青色の系列で表現され、問題として識別される要素は赤色の系列で表示されるため、利用状況を簡単に認識できます。
 
 ## アプリケーションダッシュボード
 
@@ -391,6 +393,12 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 :::
 
 #### 1日基準比較ウィジェット
+
+:::note
+
+`All APPS.`タグ付きウィジェットは、常にすべてのエージェントのデータを表示します。
+
+:::
 
 ##### <Cmdname sid="today_tps" />
 

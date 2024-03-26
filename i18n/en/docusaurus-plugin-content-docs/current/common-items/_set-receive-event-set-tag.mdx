@@ -1,6 +1,6 @@
 ## Setting notifications by team and user {#set-notice-by-team-or-users}
 
-Set whether or not to receive notifications for specific members or teams among project members. For event settings of **_Metrics_**, **_Anomaly Detection_**, and **_Log_**, add tags in **_Event Receiving Tag_**. You can select members or teams to receive alerts for each event.
+Set whether or not to receive notifications for specific members or teams among project members. For event settings of <Cmdname sid="metrics" className="uitext" />, <Cmdname sid="anomaly_detection" className="uitext" />, and <Cmdname sid="log" className="uitext" />, add tags in <Cmdname sid="event_tag" className="uitext" />. You can select members or teams to receive alerts for each event.
 
 On the contrary, if you do not set any event reception tag, you can send alerts to all members.
 
@@ -15,23 +15,23 @@ Let's learn how to send the alerts for each team or user through the event recep
 | Anomaly detection alert        |        <span class='emoji-ok'>✅</span>       |        <span class='emoji-ok'>✅</span>       |
 | Log real-time alert            |        <span class='emoji-no'>❌</span>       |        <span class='emoji-ok'>✅</span>       |
 
-1. **Setting up receiving events** (**_Alert_** > **_Notification Setting_**)
+1. **Setting up receiving events** (<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="eventNoti" className="uitext" />)
 
    <ImgLang img='set-event-tag-01.png' desc='Event Notification Settings Per-User' />
 
    Among project members, for the members in the server team, set the event reception tag to `Sever Team`. For the members in the DevOps team, set to `DevOps Team`.
 
-2. **Metrics Alert Settings** (**_Alert_** > **_Event Setting_** > **_Metrics_** > **_+ Add alert policy_** > **_Notification Setting_**)
+2. **Metrics Alert Settings** (<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="metrics" className="uitext" /> > <Cmdname sid="add_notification" className="uitext" /> > <Cmdname sid="eventNoti" className="uitext" />)
 
    <ImgLang img='set-event-tag-02.png' desc='Event Notification Settings Per-User' />
 
-   Click **_+ Add Tag_** or **_+_**. Select a tag from the tag list or create a new tag. This is the case that the notification of metrics events has been set to `Server Team`.
+   Click <Cmdname sid="add_tag" className="uitext" /> or <LinkImage img="ico-add.svg" desc="Add icon" />. Select a tag from the tag list or create a new tag. This is the case that the notification of metrics events has been set to `Server Team`.
 
-3. **_Realtime Log Alert Settings_** (**_Alert_** > **_Event Setting_** > **_Log_** > **_+ Add alert policy_** > **_Event Receiving Tag_**)
+3. **Setting the log real-time alert** (<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="log" className="uitext" /> > <Cmdname sid="add_notification" className="uitext" /> > <Cmdname sid="event_tag" className="uitext" />)
 
    <ImgLang img='set-event-tag-03.png' desc='Event Notification Settings Per-User' />
 
-   Click **_+ Add Tag_** or **_+_**. Select a tag from the tag list or create a new tag. This is the case that the notification of log events has been set to `DevOps Team`.
+   Click <Cmdname sid="add_tag" className="uitext" /> or <LinkImage img="ico-add.svg" desc="Add icon" />. Select a tag from the tag list or create a new tag. This is the case that the notification of log events has been set to `DevOps Team`.
 
 4. Because the anomaly detection event sends alerts to all members, no tag is set to receive the event.
 

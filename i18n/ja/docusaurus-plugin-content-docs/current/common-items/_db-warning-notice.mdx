@@ -1,4 +1,4 @@
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** > **_データベース_**タブの選択
+ホーム画面 > プロジェクト選択 > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="database" className="uitext" />タブ選択
 
 データベースの指標別のイベント条件設定を使用してアラート通知を送信します。指標別のしきい値を入力して<span class='vslow'>危険</span>、<span class='vslow'>警告</span>レベルに分けて通知を送ることができます。
 
@@ -12,45 +12,57 @@
 
 ## アラート通知の設定
 
-ユーザーが選択した**_メトリクス_**指標項目によって入力した**_危険_**と**_警告_**項目の条件を満たすイベントが**_検知回数_**を発生した場合、アラート通知を送信するように設定することができます。
+ユーザーが選択した<Cmdname sid="metrics" className="uitext" />指標項目によって入力した<Cmdname sid="fatal" className="uitext" />と<Cmdname sid="warn" className="uitext" />項目値の条件を満たすイベントが<Cmdname sid="number_of_detections" className="uitext" />だけ発生した場合は、警告通知を送信するように設定できます。
 
-1. **_インスタンス_**でアラート通知を設定するエージェントを選択してください。
+<ImgLang img='set-event-item-db.png' desc='イベント' />
 
-2. **_+イベントの追加_**ボタンを選択してください。画面の下に**_メトリクス_**項目を作成します。
+1. <Cmdname sid="instance" className="uitext" />でアラート通知を設定するエージェントを選択してください。
 
-3. **_メトリクス_**項目から目的の指標を選択してください。
+2. <Cmdname sid="add_notification" className="uitext" />ボタンを選択すると、画面の下にイベント項目を作成します。
 
-4. **_危険_**と**_アラート_**項目に目的の数値を入力してください。
+3. <Cmdname sid="metrics" className="uitext" />項目から目的の指標を選択してください。
 
-5. **_検出回数_**項目に必要な数値を入力してください。
+4. <Cmdname sid="fatal" className="uitext" />と<Cmdname sid="warn" className="uitext" />項目に目的の数値を入力してください。
+
+5. <Cmdname sid="number_of_detections" className="uitext" />項目に目的の数値を入力してください。
 
 6. 右端のトグルボタンを選択して、アラート通知をアクティブにしてください。
+
+:::tip
+
+<Cmdname sid="resolved_event_notification" className="uitext" />
+
+- 発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
+
+- この機能は、DBXエージェント1.6.30バージョン以降に対応しています。
+
+:::
 
 ## 通知のコピー
 
 現在選択しているインスタンスで作成されたアラート通知イベントを別のインスタンスにコピーできます。
 
-1. ![コピーアイコン](/img/ico-copy.svg)**_通知のコピー_**ボタンをクリックしてください。 
+1. ![複製アイコン](/img/ico-copy.svg) <Cmdname sid="copy_notification" className="uitext" />ボタンを選択してください。 
 
-2. コピー対象のインスタンスを選択してください。すべてのインスタンスにコピーするには、 **_全体選択_**を選択してください。
+2. コピー対象のインスタンスを選択してください。すべてのインスタンスにコピーするには、<Cmdname sid="all_selected" className="uitext" />を選択してください。
 
-3. **_コピー_**ボタンを選択してください。
+3. <Cmdname sid="copy" className="uitext" />ボタンを選択してください。
 
 :::caution
 
-コピー対象インスタンスに既に作成済みのアラート通知イベントがある状態で、**_通知コピー_**機能を使用すると、既存のアラート通知イベントは削除されます。
+コピー対象インスタンスに既に作成済みのアラート通知イベントがある状態で、<Cmdname sid="copy_notification" className="uitext" />機能を使用すると、既存のアラート通知イベントは削除されます。
 
 :::
 
 ## 繰り返される警告通知を解除する
 
-過剰なアラート通知の発生を防止できるオプションです。 最初のアラート通知から選択した時間にアラート通知を送信しません。 また、**_イベント記録_**メニューに記録しません。
+過剰なアラート通知の発生を防止できるオプションです。 最初のアラート通知から選択した時間にアラート通知を送信しません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録しません。
 
-**_データベースの非アクティブ化のアラート_**で目的の時間を選択し、右側のトグルボタンをクリックして機能をオンまたはオフにすることができます。
+<Cmdname sid="BTN07592" className="uitext" />で目的の時間を選択し、右側のトグルボタンをクリックして機能をオンまたはオフにすることができます。
 
 :::note
 
-**_データベース非活性化のアラート_**オプションを有効にした場合、設定した時間にエージェントからデータを受信できない場合は、**_INACTIVE MONITORING AGENT_**アラート通知が発生します。
+<Cmdname sid="BTN07592" className="uitext" />オプションを有効にした場合、設定した時間にエージェントからデータを受信できない場合は、<span class="uitext">INACTIVE MONITORING AGENT</span>アラート通知が発生します。
 
 <ImgLang img='db-set-event-disable-alert.png' desc='INACTIVE MONITORING AGENT'/>
 

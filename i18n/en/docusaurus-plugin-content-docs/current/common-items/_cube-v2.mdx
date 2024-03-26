@@ -1,6 +1,12 @@
-Home > Select Project > **_Analysis_** > **_CUBE_**
+Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="cube_navigator"  className="uitext" />
 
-Select a project on the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_Cube_** under the **_Project menu_**. It provides information for connections, hitmap, transactions, TOP transactions, TPS, response times, and resource usage for each country.
+It provides information for connections, hitmap, transactions, TOP transactions, TPS, response times, and resource usage for each country.
+
+- See the application performance trends over time. You can quickly identify the changes in application performance by using statistical data at an interval of 5 minutes.
+
+- You can see the geographic distribution of the traffic. Through the traffic data for applications, you can see the geographic distribution of traffic data and compare the performances across regions.
+
+- You can see the usage of resources. You can see the usage of resources used by applications and analyze the causes of poor performance.
 
 ## What is Cube?
 
@@ -14,15 +20,15 @@ Select a cube based on the specific time in the cube selection panel in the left
 
 - **Panel interest metric**
 
-  - **_TPS_**
+  - <Cmdname sid="tps" className="uitext" />
 
-  - **_Response Time_**
+  - <Cmdname sid="res_time" className="uitext" />
 
-  - **_Tx error count_**
+  - <Cmdname sid="service_error" className="uitext" />
 
-  - **_Active TX count_**
+  - <Cmdname sid="active_tx_count" className="uitext" />
 
-  - **_Concurrent User_**
+  - <Cmdname sid="rt_user" className="uitext" />
 
 - **Cube color**
 
@@ -38,25 +44,25 @@ You can select data for a specific application through the application selection
 
 <ImgLang img='cube-select-app.png' desc='Cube selection application' />
 
-- **_Select All_**: All applications are viewed. By default, **_Select All_** and **_Active Applications_** are selected. 
+- <Cmdname sid="select_all" className="uitext" />: All applications are viewed. By default, <Cmdname sid="select_all" className="uitext" /> and <Cmdname sid="oid_active" className="uitext" /> are selected.
 
-- **_Active Application_**: Among the applications, the active applications are specified for inquiry. 
+- <Cmdname sid="oid_active" className="uitext" />: Among the applications, the active applications are specified for inquiry.
 
-- **_View Only Selected_**: Among the applications, only the specified applications are queried. 
+- <Cmdname sid="checked_only" className="uitext" />: Among the applications, only the specified applications are queried.
 
-- **_Search_**: If there are many applications, you can search for them through the input field.
+- <Cmdname sid="search" className="uitext" />: If there are many applications, you can search for them through the input field.
 
 - <font color='5B7DEC'>Number</font>/<font color='979797'>Number</font>: Displays the <font color='5B7DEC'>number of applications specified</font>/<font color='979797 '>number of all applications</font>.
 
 ## ![](/img/number-03.png) Cube data
 
-!In the area of [number3](/img/number-03.png), the cube data can be checked through the charts for **_Hitmap_**, **_Country_**, **_TPS_**, **_Response Time_**, **_CPU_**, **_Concurrent User_**, **_Top TX_**, and **_Heap Memory_**.
+In the area of ![number3](/img/number-03.png), the cube data can be checked through the charts for <Cmdname sid="hitmap" className="uitext" />, <Cmdname sid="country" className="uitext" />, <Cmdname sid="tps" className="uitext" />, <Cmdname sid="instance_resp_time" className="uitext" />, <Cmdname sid="cpu" className="uitext" />, <Cmdname sid="realtime_user" className="uitext" />, <Cmdname sid="top_tx" className="uitext" />, and <Cmdname sid="heap_use" className="uitext" />.
 
-- **_HITMAP_**
+- <Cmdname sid="hitmap" className="uitext" />
 
   It displays the distribution of transactions over the cube time. Detailed trace analysis is possible. 
 
-  If you select ![right-arrow](/img/right-arrow.svg), you can view the **_Top Stack_** and **_Unique Stack_** during the cube time.
+  If you select ![right-arrow](/img/right-arrow.svg), you can view the <Cmdname sid="topstack" className="uitext" /> and <Cmdname sid="uniquestack" className="uitext" /> during the cube time.
 
   :::note
 
@@ -64,7 +70,7 @@ You can select data for a specific application through the application selection
 
   :::
 
-- **_Country/Region_**
+- <Cmdname sid="country" className="uitext" />
 
   By mapping countries based on the client IP, it displays from which country the transactions are coming. The colors on the map display the relative amount of transactions.
 
@@ -74,27 +80,27 @@ You can select data for a specific application through the application selection
 
   :::
 
-- **_TPS_**
+- <Cmdname sid="tps" className="uitext" />
 
   Transaction Per Second (**_TPS_**) means the number of transactions processed per second.
 
-- **_Instance Response Time_**
+- <Cmdname sid="instance_resp_time" className="uitext" />
 
   Average response time for transactions
 
-- **_CPU_**
+- <Cmdname sid="cpu" className="uitext" />
 
   After sorting the project applications (agents) by the IP, it displays CPUs of the busy server with a bar chart.
 
-- **_Concurrent User_**
+- <Cmdname sid="realtime_user" className="uitext" />
 
   It displays the number of real-time browser users. 
 
-- **_Top TX_**
+- <Cmdname sid="top_tx" className="uitext" />
 
   It displays 5 transactions of high invocation. Transaction statistics provide more detailed data.
 
-- **_Heap Memory_**
+- <Cmdname sid="heap_use" className="uitext" />
 
   Among the applications (instances), the instances are displayed in order of heap memory usage.
 

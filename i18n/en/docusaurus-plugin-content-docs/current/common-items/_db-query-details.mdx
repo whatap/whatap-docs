@@ -2,13 +2,13 @@
 
 To check the SQL query information of the current running session, select the <span class="uitext">query</span> column in the <Cmdname sid="active_sessions" className="uitext" /> section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
-<InDoc product="postgresql,postgresql-v1">
+<InDoc product="postgresql,postgresql-v1,mysql,mysql-v1">
 
 <ImgLang img="db-sql-details-postgresql.png" desc="SQL details" />
 
 </InDoc>
 
-<Xclude product="postgresql,postgresql-v1">
+<Xclude product="postgresql,postgresql-v1,mysql,mysql-v1">
 
 <ImgLang img="db-sql-details-common.png" desc="SQL details" />
 
@@ -24,11 +24,15 @@ To check the SQL query information of the current running session, select the <s
 
 - **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
-  <InDoc product='postgresql,postgresql-v1'>
+  <InDoc product='postgresql,postgresql-v1,mysql,mysql-v1'>
 
   - **_Text_**: You can check plan information in text format.
 
   - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+
+  </InDoc>
+
+  <InDoc product='postgresql,postgresql-v1'>
 
   :::note
 
@@ -38,11 +42,21 @@ To check the SQL query information of the current running session, select the <s
 
   </InDoc>
 
+  <InDoc product='mysql,mysql-v1'>
+
+  :::note
+
+  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.15 or later.
+
+  :::
+
+  </InDoc>
+
 - If you select ![Vertical split icon](/img/ic-column.svg) on the upper right of the screen, the **_Query_** and **_Plan_** sections are placed left to right.
 
 - If you select ![Vertical split icon](/img/ic-layout-horizontal.svg) on the upper right of the screen, the **_Query_** and **_Plan_** sections are placed up to down.
 
-<InDoc product='postgresql,postgresql-v1'>
+<InDoc product='postgresql,postgresql-v1,mysql,mysql-v1'>
 
 :::tip
 

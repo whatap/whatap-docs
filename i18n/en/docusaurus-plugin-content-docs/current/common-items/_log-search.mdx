@@ -88,23 +88,23 @@ You can search the logs containing keywords that have not been parsed, or for wh
 
 ### Search Key
 
-The tags on the left ![number-s](/img/number-02.png) area are the search keys parsed for each category. You can enter filters by selecting tags. The <span class='logwr'>orange</span> tag is the category, and the <span class='lowfg'>blue</span> tag is the search key.
+The search key is an identifier for accessing a desired value within the log data. The actual data corresponding to the search key is the search value. The tags on the left ![number-s](/img/number-02.png) area are the search keys parsed for each category. You can enter filters by selecting tags. The <span class='logwr'>orange</span> tag is the category, and the <span class='lowfg'>blue</span> tag is the search key.
 
 <InDoc product='log,postgresql,mysql'>
 
-For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log_** > **_Log Configuration_**. 
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log parser setting_** tab under **_Log_** > **_Log Configuration_**. 
 
 </InDoc>
 
 <InDoc product='aws-log'>
 
-For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Management_** > **_Log Configuration_**.
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log parser setting_** under **_Management_** > **_Log Configuration_**.
 
 </InDoc>
 
 ### Filter input syntax{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx}
+{@include: ../common-items/_log-filter-expressions-search-key.mdx} 
 
 {@include: ../common-items/_log-filter-expressions-commons.mdx}
 
@@ -170,4 +170,4 @@ By selecting ![Icon](/img/ic-highlight.svg) **_Highlight_**, you can set the key
 
 ## Setting the table
 
-- Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx}
+- Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx} 

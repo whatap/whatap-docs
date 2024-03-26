@@ -1,0 +1,45 @@
+ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="transaction_map" className="uitext" />
+
+<Cmdname sid="transaction_map" className="uitext" />チャートは、終了した個別トランザクションのリスポンス時間を分布図の形で表現したチャートです。 ヒットマップと同様に分布パターンによる問題点を発見し、分析することができます。 <Cmdname sid="hitmap" className="uitext" />は5秒単位でトランザクションをグループ化して表示しますが、<Cmdname sid="transaction_map" className="uitext" />は、トランザクションを個別に表示します。
+
+<ImgLang img='dashboard-transaction-map.png' desc='トランザクションマップ' />
+
+:::info
+
+[Service 2.2.0リリーズ](../release-notes/service/service-2_2_x)を通じて変更された事項は次のとおりです。
+
+- リアルタイムで最大5分、過去時点で最大10分までデータを照会することができます。 (既存：リアルタイムで最大5分限定)
+
+- 過去時点のデータを照会する場合、サーバーから受信したデータをフィルタリングできます。
+
+- <Cmdname sid="TTL06209" className="uitext" />ウィンドウを通じて照会できるデータ数が100件から1000件に増えました。
+
+- トランザクションとエラー数をリアルタイムで表示します。
+
+- <span class="uitext">TOP 30</span>一覧とチャート領域にキーボードイベントを追加しました。 キーボード方向のボタンを選択すると、目的の位置に移動できます。
+
+<Cmdname sid="transaction_map" className="uitext" />メニューの改編に関する詳細は、<Link to="https://www.whatap.io/ko/blog/210/index.html">次のリンク</Link>を参考にしてください。
+
+:::
+
+:::tip 
+
+**ヒットマップ分析と違う点は？**
+
+ヒートマップ チャートは、特定の区間におけるトランザクションの発生数を合計して表示します。 発生数の多い場所を色の違いで表現しています。 ヒートマップの場合は、区間ごとの合算データを別々に保存しており、比較的長い時間の推移も確認できます。 しかし、トランザクションを合計して表示するため、個別のトランザクション情報を知ることは困難です。
+
+- 長期間・大容量のトランザクション分布図を分析するには、ヒートマップ分析(<Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)を利用してください。
+
+- パフォーマンステストのトラブル状況で1~5分以内にトランザクションの分布図の分析を行い、実行時間の制限なしでトランザクションの分布図を確認するには、<Cmdname sid="transaction_map" className="uitext" />を確認してください。
+
+:::
+
+:::note
+
+- <Cmdname sid="hitmap" className="uitext" />メニューの詳細については、<Link to="trs-view">次の文書</Link>を参照してください。
+
+- <Cmdname sid="hitmap_transaction" className="uitext" />チャートの分析方法の詳細については、<Link to="../best-practice-guides/about-apm-hitmap-class">次の文書</Link>を参考にしてください。
+
+- サーバー時間よりユーザーのPC時間が過去に設定された場合、サーバー時間とユーザーのPC時間に5分以上差がある場合、データがチャートに出力されないことがあります。
+
+:::

@@ -2,70 +2,68 @@ It periodically runs the executable user script on the Linux server and uploads 
 
 1. Write the script as follows and then run it.
 
-    ```bash title='Linux Shell'
-    #!/bin/bash
+   ```bash title='Linux Shell'
+   #!/bin/bash
 
+   urls=("https://www.whatap.io"  "https://blog.whatap.io"  "https://service.whatap.io")
 
-    urls=("https://www.whatap.io"  "https://blog.whatap.io"  "https://service.whatap.io")
+   for url in ${urls[*]}; do
 
-    for url in ${urls[*]}; do
+   echo "M $url url $url"
+   curl -w @- -o /dev/null -s "$url" <<'EOF'
+   M %{url_effective} url %{url_effective}\n
+   H %{url_effective} time_namelookup %{time_namelookup}\n
+   H %{url_effective} time_connect %{time_connect}\n
+   H %{url_effective} time_appconnect %{time_appconnect}\n
+   H %{url_effective} time_pretransfer %{time_pretransfer}\n
+   H %{url_effective} time_redirect %{time_redirect}\n
+   H %{url_effective} time_starttransfer %{time_starttransfer}\n
+   H %{url_effective} time_total %{time_total}\n
+   EOF
 
-    echo "M $url url $url"
-    curl -w @- -o /dev/null -s "$url" <<'EOF'
-    M %{url_effective} url %{url_effective}\n
-    H %{url_effective} time_namelookup %{time_namelookup}\n
-    H %{url_effective} time_connect %{time_connect}\n
-    H %{url_effective} time_appconnect %{time_appconnect}\n
-    H %{url_effective} time_pretransfer %{time_pretransfer}\n
-    H %{url_effective} time_redirect %{time_redirect}\n
-    H %{url_effective} time_starttransfer %{time_starttransfer}\n
-    H %{url_effective} time_total %{time_total}\n
-    EOF
-
-
-    done
-    ```
+   done
+   ```
 
 2. Check whether the out is as follows:
 
-    ```bash title='Linux Shell'
-    $ ./curl.sh
-    M https://www.whatap.io/ url https://www.whatap.io/
-    H https://www.whatap.io/ time_namelookup 0.007289
-    H https://www.whatap.io/ time_connect 0.010702
-    H https://www.whatap.io/ time_appconnect 0.033637
-    H https://www.whatap.io/ time_pretransfer 0.033831
-    H https://www.whatap.io/ time_redirect 0.000000
-    H https://www.whatap.io/ time_starttransfer 0.043230
-    H https://www.whatap.io/ time_total 0.043312
-    M https://blog.whatap.io/ url https://blog.whatap.io/
-    H https://blog.whatap.io/ time_namelookup 0.000000
-    H https://blog.whatap.io/ time_connect 0.000000
-    H https://blog.whatap.io/ time_appconnect 0.000000
-    H https://blog.whatap.io/ time_pretransfer 0.000000
-    H https://blog.whatap.io/ time_redirect 0.000000
-    H https://blog.whatap.io/ time_starttransfer 0.000000
-    H https://blog.whatap.io/ time_total 0.005654
-    M https://service.whatap.io/ url https://service.whatap.io/
-    H https://service.whatap.io/ time_namelookup 0.004296
-    H https://service.whatap.io/ time_connect 0.007282
-    H https://service.whatap.io/ time_appconnect 0.038404
-    H https://service.whatap.io/ time_pretransfer 0.038607
-    H https://service.whatap.io/ time_redirect 0.000000
-    H https://service.whatap.io/ time_starttransfer 0.055226
-    H https://service.whatap.io/ time_total 0.055307
-    ```
+   ```bash title='Linux Shell'
+   $ ./curl.sh
+   M https://www.whatap.io/ url https://www.whatap.io/
+   H https://www.whatap.io/ time_namelookup 0.007289
+   H https://www.whatap.io/ time_connect 0.010702
+   H https://www.whatap.io/ time_appconnect 0.033637
+   H https://www.whatap.io/ time_pretransfer 0.033831
+   H https://www.whatap.io/ time_redirect 0.000000
+   H https://www.whatap.io/ time_starttransfer 0.043230
+   H https://www.whatap.io/ time_total 0.043312
+   M https://blog.whatap.io/ url https://blog.whatap.io/
+   H https://blog.whatap.io/ time_namelookup 0.000000
+   H https://blog.whatap.io/ time_connect 0.000000
+   H https://blog.whatap.io/ time_appconnect 0.000000
+   H https://blog.whatap.io/ time_pretransfer 0.000000
+   H https://blog.whatap.io/ time_redirect 0.000000
+   H https://blog.whatap.io/ time_starttransfer 0.000000
+   H https://blog.whatap.io/ time_total 0.005654
+   M https://service.whatap.io/ url https://service.whatap.io/
+   H https://service.whatap.io/ time_namelookup 0.004296
+   H https://service.whatap.io/ time_connect 0.007282
+   H https://service.whatap.io/ time_appconnect 0.038404
+   H https://service.whatap.io/ time_pretransfer 0.038607
+   H https://service.whatap.io/ time_redirect 0.000000
+   H https://service.whatap.io/ time_starttransfer 0.055226
+   H https://service.whatap.io/ time_total 0.055307
+   ```
 
 3. Check whether the collection is normal and register the script to the WhaTap server monitoring agent as follows:
 
-    ```bash title='Linux Shell'
-    export USER_SCRIPT=Absolute path to the script to run
-    suco chmod +x $USER_SCRIPT
-    sudo mkdir /usr/whatap/infra/ext/
-    sudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/
-    export RUNAS_USER=Account to run the script. Root account is excluded.
-    sudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script
-    sudo service whatap-infra restart
-    ```
+   ```bash title='Linux Shell'
+   export USER_SCRIPT=Absolute path to the script to run
+   suco chmod +x $USER_SCRIPT
+   sudo mkdir /usr/whatap/infra/ext/
+   sudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/
+   export RUNAS_USER=Account to run the script. Root account is excluded.
+   sudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script
+   sudo service whatap-infra restart
+   ```
 
 The collected data can be viewed in **_Category_** 'server_ext_folder_runscript' under **_Analysis_** > **_Metrics Chart_**.

@@ -9,17 +9,14 @@ tags:
 ---
 
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
-import Note from '../common-items/_import_v2-note.mdx';
-
-<Note product='PostgreSQL' link='../postgresql-v1/install-agent' />
 
 The following guides you to the basic installation method for using the WhaTap database monitoring service.
 
 {@include: ../common-items/_agent-signup-guide.mdx}   
 
-<Youtube ko='RhU3f3d7k1A' en='wQbXDKNdDfA' ja='wQbXDKNdDfA' />
+<Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}
 
 {@include: ../getting-started/_accesskey.mdx} 
 
@@ -92,3 +89,7 @@ grant select on all tables in schema {schema_name} to whatap;
 <!--## 에이전트 실행-->
 
 {@include: ../common-items/_db-run-agent.mdx} 
+
+<!--## XOS 에이전트 설치-->
+
+{@include: ../common-items/_db-install-xos-agent.mdx}

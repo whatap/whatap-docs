@@ -47,10 +47,6 @@
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar javaSidebar"
-  },
   "sidebar.javaSidebar.doc.지원 환경": {
     "message": "지원 환경",
     "description": "The label for the doc item 지원 환경 in sidebar javaSidebar, linking to the doc java/supported-spec"
@@ -103,10 +99,6 @@
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar phpSidebar"
   },
-  "sidebar.phpSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar phpSidebar"
-  },
   "sidebar.phpSidebar.doc.설치 점검": {
     "message": "설치 점검",
     "description": "The label for the doc item 설치 점검 in sidebar phpSidebar, linking to the doc php/install-check"
@@ -155,10 +147,6 @@
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar nodejsSidebar"
   },
-  "sidebar.nodejsSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar nodejsSidebar"
-  },
   "sidebar.nodejsSidebar.doc.지원 환경": {
     "message": "지원 환경",
     "description": "The label for the doc item 지원 환경 in sidebar nodejsSidebar, linking to the doc nodejs/supported-spec"
@@ -206,10 +194,6 @@
   "sidebar.pySidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar pySidebar"
-  },
-  "sidebar.pySidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar pySidebar"
   },
   "sidebar.pySidebar.doc.고급 기능": {
     "message": "고급 기능",
@@ -263,10 +247,6 @@
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar dotNetSidebar"
-  },
   "sidebar.dotNetSidebar.doc.관리하기": {
     "message": "관리하기",
     "description": "The label for the doc item 관리하기 in sidebar dotNetSidebar, linking to the doc dotnet/agent-manage"
@@ -302,10 +282,6 @@
   "sidebar.goSidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar goSidebar"
-  },
-  "sidebar.goSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar goSidebar"
   },
   "sidebar.goSidebar.doc.Log 모니터링": {
     "message": "Log 모니터링",
@@ -1231,54 +1207,6 @@
     "message": "에이전트 설치",
     "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
   },
-  "sidebar.postgreSidebar.category.PostgreSQL 모니터링 V2": {
-    "message": "PostgreSQL 모니터링 V2",
-    "description": "The label for category PostgreSQL 모니터링 V2 in sidebar postgreSidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.PostgreSQL 모니터링": {
-    "message": "PostgreSQL 모니터링",
-    "description": "The label for category PostgreSQL 모니터링 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.설치하기": {
-    "message": "설치하기",
-    "description": "The label for category 설치하기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.설정하기": {
-    "message": "설정하기",
-    "description": "The label for category 설정하기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.주요 메뉴 알아보기": {
-    "message": "주요 메뉴 알아보기",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.대시보드": {
-    "message": "대시보드",
-    "description": "The label for category 대시보드 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.Flex 보드": {
-    "message": "Flex 보드",
-    "description": "The label for category Flex 보드 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.분석": {
-    "message": "분석",
-    "description": "The label for category 분석 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.메트릭스": {
-    "message": "메트릭스",
-    "description": "The label for category 메트릭스 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.통계/보고서": {
-    "message": "통계/보고서",
-    "description": "The label for category 통계/보고서 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar postgrev1Sidebar"
-  },
-  "sidebar.postgrev1Sidebar.doc.지원 환경": {
-    "message": "지원 환경",
-    "description": "The label for the doc item 지원 환경 in sidebar postgrev1Sidebar, linking to the doc postgresql-v1/monitoring-support"
-  },
   "sidebar.releaseSidebar.category.DBX": {
     "message": "DBX",
     "description": "The label for category DBX in sidebar releaseSidebar"
@@ -1310,54 +1238,6 @@
   "sidebar.goSidebar.category.Go 모니터링": {
     "message": "Go 모니터링",
     "description": "The label for category Go 모니터링 in sidebar goSidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.MySQL 모니터링 V1": {
-    "message": "MySQL 모니터링 V1",
-    "description": "The label for category MySQL 모니터링 V1 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.설치하기": {
-    "message": "설치하기",
-    "description": "The label for category 설치하기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.설정하기": {
-    "message": "설정하기",
-    "description": "The label for category 설정하기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.주요 메뉴 알아보기": {
-    "message": "주요 메뉴 알아보기",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.대시보드": {
-    "message": "대시보드",
-    "description": "The label for category 대시보드 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.Flex 보드": {
-    "message": "Flex 보드",
-    "description": "The label for category Flex 보드 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.분석": {
-    "message": "분석",
-    "description": "The label for category 분석 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.메트릭스": {
-    "message": "메트릭스",
-    "description": "The label for category 메트릭스 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.통계/보고서": {
-    "message": "통계/보고서",
-    "description": "The label for category 통계/보고서 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar mysqlv1Sidebar"
-  },
-  "sidebar.mysqlv1Sidebar.doc.지원 환경": {
-    "message": "지원 환경",
-    "description": "The label for the doc item 지원 환경 in sidebar mysqlv1Sidebar, linking to the doc mysql-v1/monitoring-support"
-  },
-  "sidebar.mysqlSidebar.category.MySQL 모니터링 V2": {
-    "message": "MySQL 모니터링 V2",
-    "description": "The label for category MySQL 모니터링 V2 in sidebar mysqlSidebar"
   },
   "sidebar.releaseSidebar.category.Go": {
     "message": "Go",
@@ -1406,10 +1286,6 @@
   "sidebar.mysqlSidebar.category.로그": {
     "message": "로그",
     "description": "The label for category 로그 in sidebar mysqlSidebar"
-  },
-  "sidebar.npmsidebar.category.Network 모니터링": {
-    "message": "Network 모니터링",
-    "description": "The label for category Network 모니터링 in sidebar npmsidebar"
   },
   "sidebar.learningSidebar.category.성능 장애 유형": {
     "message": "성능 장애 유형",
@@ -1642,5 +1518,65 @@
   "sidebar.kubeSidebar.category.클러스터": {
     "message": "클러스터",
     "description": "The label for category 클러스터 in sidebar kubeSidebar"
+  },
+  "sidebar.javaSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.link.히트맵": {
+    "message": "히트맵",
+    "description": "The label for link 히트맵 in sidebar javaSidebar, linking to /java/trs-profile"
+  },
+  "sidebar.phpSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.link.히트맵": {
+    "message": "히트맵",
+    "description": "The label for link 히트맵 in sidebar phpSidebar, linking to /php/trs-profile"
+  },
+  "sidebar.nodejsSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.link.히트맵": {
+    "message": "히트맵",
+    "description": "The label for link 히트맵 in sidebar nodejsSidebar, linking to /nodejs/trs-profile"
+  },
+  "sidebar.pySidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.link.히트맵": {
+    "message": "히트맵",
+    "description": "The label for link 히트맵 in sidebar pySidebar, linking to /python/trs-profile"
+  },
+  "sidebar.dotNetSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.link.히트맵": {
+    "message": "히트맵",
+    "description": "The label for link 히트맵 in sidebar dotNetSidebar, linking to /dotnet/trs-profile"
+  },
+  "sidebar.goSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.link.히트맵": {
+    "message": "히트맵",
+    "description": "The label for link 히트맵 in sidebar goSidebar, linking to /golang/trs-profile"
+  },
+  "sidebar.npmsidebar.category.Network 성능 모니터링": {
+    "message": "Network 성능 모니터링",
+    "description": "The label for category Network 성능 모니터링 in sidebar npmsidebar"
+  },
+  "sidebar.postgreSidebar.category.PostgreSQL 모니터링": {
+    "message": "PostgreSQL 모니터링",
+    "description": "The label for category PostgreSQL 모니터링 in sidebar postgreSidebar"
+  },
+  "sidebar.mysqlSidebar.category.MySQL 모니터링": {
+    "message": "MySQL 모니터링",
+    "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
   }
 }

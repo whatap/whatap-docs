@@ -45,7 +45,7 @@ draft: true
 
 - 下部までスクロールすると、次のデータを表示します。 一度に10,000件のログを照会します。
 
-- ![number-s](/img/number-03.png)ログテーブルの左上に検索されたログの総数を確認することができます。 
+- ![number-s](/img/number-03.png)ログテーブルの左上に表示されたログの総数を確認することができます。 
 
 - ログデータを時系列順と逆の順順で表示できます。 ![number-s](/img/number-03.png)ログテーブルの右上で、**_Timestamp_** **_過去順_**と**_現在順_**で目的の検索方法を選択してください。
 
@@ -125,19 +125,19 @@ draft: true
 
 <InDoc product='log,postgresql,mysql'>
 
-例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_管理_** > **_ログ設定_**の**_ログParser 設定_**からパーシングロジックを登録することで設定できます。 
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_管理_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。 
 
 </InDoc>
 
 <InDoc product='aws-log'>
 
-例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_管理_** > **_ログ設定_**の**_ログParser 設定_**からパーシングロジックを登録することで設定できます。
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_管理_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。
 
 </InDoc>
 
 ### フィルター入力文法{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx}
+{@include: ../common-items/_log-filter-expressions-search-key.mdx} 
 
 {@include: ../common-items/_log-filter-expressions-commons.mdx} 
 

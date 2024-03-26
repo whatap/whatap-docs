@@ -9,79 +9,101 @@ tags:
   - Transactions
 ---
 
-Home > Select Project > **_Application_** > **_Transaction Search_**
+Home > Select Project > **_Application_** > **_Analysis_** > **_Transaction Search_**
 
-<ImgLang img='whatap_application_analysis_tx_profile.png' desc='Transaction Search' />
+In **_Transaction Search_**, you can view the statistics on the performance and execution status for each transaction for a specific period of time. You can view all transactions and their errors. The provided information allows you to see which transactions are busy and resource-consuming. The transactions are filtered in various ways depending on the transaction properties, making it useful for finding transactions with specific conditions.
 
-You can search for the desired transaction based on the individual transaction's performance properties.
+<ImgLang img='k8s-analysis-tx-profile.png' desc='Transaction Search' />
 
-<ImgLang img='whatap_application_analysis_tx_profile_column.png' desc='Select Column' />
-
-To query the result, click ![Column selection icon](/img/ico-column-set.svg) **_Select Column_** to check.
+Set the search time in the ![Leader line 1](/img/number-01.png) area, and then select search targets from the **_Container_** options. If you select ![Search icon](/img/ico-btn-search.png), the search results appear in the table. If you select desired items from the result list in the ![Leader line 2](/img/number-02.png) area, the **_Transaction Info_** window appears. For the detailed information on the transaction trace analysis using the **_Transaction Info_** window, see [the following](../java/trs-profile#transaction-info).
 
 :::note
 
-It is recommended to set the search time as short as possible because a response delay may occur depending on the search conditions.
+- To search for transactions in error, click <Cmdname sid="show_only_error" className="uitext" /> and then select ![Search icon](/img/ico-btn-search.png).
+
+- It is recommended to set the search time as short as possible because a response delay may occur depending on the search conditions.
 
 :::
 
-## Elapsed Time
+## Select Column
 
-<ImgLang img='whatap_application_analysis_tx_profile_time.png' desc='Elapsed Time' />
+If you click ![Column selection icon](/img/ico-column-set.svg) **_Select column_** in the ![Leader line 2](/img/number-02.png) area, the column selection window appears as follows. Select desired columns.
+
+<ImgLang img='k8s-tx-profile-clm.png' desc='Select column' />
+
+## Apply Filter
+
+You can perform detailed search using filters in the [Leader line 1](/img/number-01.png) area. It supports data exploration using various search conditions. Multiple filters can also be applied. Specify desired filters and then select ![Search icon](/img/ico-btn-search.png).
+
+:::note
+
+- Some filters may not be supported depending on the product.
+
+- When applying multiple filters, to search by the <Cmdname sid="TTL06107" className="uitext" /> filter, only the <Cmdname sid="TTL06111" className="uitext" /> filter can be added.
+
+:::
+
+### Elapsed Time
+
+<ImgLang img='k8s-analysis-tx-profile-el.png' desc='Elapsed time' />
 
 Search is performed based on the transaction response time. Search by entering two values above and below the reference.
 
-## Error Message
+### Error Message
 
-<ImgLang img='whatap_application_analysis_tx_profile_error.png' desc='Error Message' />
+<ImgLang img='k8s-analysis-tx-profile-err.png' desc='Error message' />
 
-Search is performed based on the transaction error message. In the default state, error-related columns may not be seen. Select a column to check.
+Search is performed based on the transaction error message. In the default state, error-related columns may not be seen. Select a column to check. 
 
-## HTTP Call Count
+:::note 
 
-<ImgLang img='whatap_application_analysis_tx_profile_http.png' desc='HTTP Call Count' />
+Transactions in error are displayed in red.
 
-Search based on the number of outbound HTTP service calls made for transactions.
+:::
 
-## SQL Count
+### HTTP Call Count
 
-<ImgLang img='whatap_application_analysis_tx_profile_sql.png' desc='SQL Count' />
+<ImgLang img='k8s-analysis-tx-profile-httpc.png' desc='HTTP call count' />
 
-Search for transactions where the number of SQL executions per transaction exceeds the set number. Exceptionally, this is used to search transactions that call SQLs excessively.
+It searches the transactions in which the number of calls for external HTTP services is greater than or equal to the input value. For example images, **_5_** or more cases are viewed.
 
-## SQL Fetch Count
+### SQL Count
 
-<ImgLang img='whatap_application_analysis_tx_profile_sqlfetch.png' desc='SQL Fetch Count' />
+<ImgLang img='k8s-analysis-tx-profile-sqlcount.png' desc='SQL count' />
 
-After executing an SQL, search based on the number of DB patches. The count is based on the transaction. Use this to search transactions that perform excessive data fetches.
+It searches the transactions in which the number of SQL executions per transaction is greater than or equal to the set input value. It is used to search for transactions that exceptionally call an excessive number of SQLs.
 
-## URL
+### SQL Fetch Count
 
-<ImgLang img='whatap_application_analysis_tx_profile_url.png' desc='URL' />
+<ImgLang img='k8s-analysis-tx-profile-sqlfetchcount.png' desc='SQL fetch count' />
 
-Transactions are searched based on the URL. The entered search string is compared and searched by inclusion (partial matching).
+After execution of SQL, the transactions whose count is the input value or more based on the number of DB patches. It is used to search transactions that perform excessive data patching.
 
-## IP
+### Transactions
 
-<ImgLang img='whatap_application_analysis_tx_profile_ip.png' desc='IP' />
+<ImgLang img='k8s-analysis-tx-profile-tx.png' desc='URL' />
 
-Transactions are searched based on the IP. However, IP strings are searched by prefix comparison (forward matching).
+Search is performed based on the transaction. The entered search string is compared for a search based on whether it is included or not (partial match).
 
-## Domain
+### Client IP
 
-<ImgLang img='whatap_application_analysis_tx_profile_domain.png' desc='Domain' />
+<ImgLang img='k8s-analysis-tx-profile-cl-ip.png' desc='IP' />
+
+The transactions are searched based on the client IP. However, IP strings are searched using PREFIX comparison (forward match).
+
+### Domain
+
+<ImgLang img='k8s-analysis-tx-profile-dm.png' desc='Domain' />
 
 Transactions are retrieved based on the HTTP service domain (host:port). The search conditions must match the domain completely (full match).
 
-## UserAgent
+### UserAgent
 
-<ImgLang img='whatap_application_analysis_tx_profile_useragent.png' desc='User Agent' />
+<ImgLang img='k8s-analysis-tx-profile-user-agent.png' desc='User agent' />
 
 Search transactions based on the user agent (partial match). 
 
-## Referer
-
-<ImgLang img='whatap_application_analysis_tx_profile_referer.png' desc='Referer' />
+### Referer
 
 Search transactions based on the referer string.
 
@@ -97,25 +119,29 @@ Agents in their default settings do not collect referer data. If the referer con
 
 :::
 
-## Transaction ID
+### Transaction ID
 
-<ImgLang img='whatap_application_analysis_tx_profile_tid.png' desc='Transaction ID' />
+<ImgLang img='k8s-analysis-tx-profile-tx-id.png' desc='Transaction ID' />
 
 Search transactions based on their transaction ID (full match). For transaction IDs, the search indexes are created for searching at a high speed.
 
 :::note
 
-If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+- The transaction ID can be found in the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06527" className="uitext" /> window. For more information, see [the following](../java/trs-profile#anlaysis-trace-record-summary).
+
+- If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
 
 :::
 
-## Multi Transaction ID
+### Multi Transaction ID
 
-<ImgLang img='whatap_application_analysis_tx_profile_mtid.png' desc='Multi Transaction ID' />
+<ImgLang img='k8s-analysis-tx-profile-mtxid.png' desc='Multi transaction ID' />
 
 Search transactions based on the multi-transaction ID (full match).
 
 :::note
+
+- The multi-transaction ID can be found in the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06527" className="uitext" /> window. For more information, see [the following](../java/trs-multi-trace#trace-multi-tx).
 
 - If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
 
@@ -123,9 +149,9 @@ Search transactions based on the multi-transaction ID (full match).
 
 :::
 
-## Client ID
+### WClientID
 
-<ImgLang img='whatap_application_analysis_tx_profile_clientid.png' desc='Client ID' />
+<ImgLang img='k8s-analysis-tx-profile-wcl.png' desc='Client ID' />
 
 The client ID (`wClientId`) is an ID given by the WhaTap agent to identify users. Transactions are searched based on this ID (full match). There is no separate index for searching.
 
@@ -135,14 +161,30 @@ WhaTap basically stores the client-related information.
 
 :::
 
-## Login ID
-
-<ImgLang img='whatap_application_analysis_tx_profile_loginid.png' desc='Login ID' />
+### Login ID
 
 Search transactions based on the login ID.
 
 :::note
 
 Agents in their default settings do not collect login IDs. For more information about the login ID setting, see [the following](../java/script-plugin#common-plugin) to add settings.
+
+:::
+
+## Downloading the searched results
+
+The searched results can be downloaded as a CSV file according to the filter conditions set by the user. 
+
+1. Click ![Search icon](/img/ico-btn-search.png) to view the searched results.
+
+2. Select ![Download icon](/img/ic-csv-download-ms.svg).
+
+3. Enter the maximum number of CSV lines. You can save the searched results as many lines as you enter.
+
+4. Select <Cmdname sid="download" className="uitext" /> to download the CSV file.
+
+:::note
+
+The CSV file name's format is _profile\_`{pcode}`\_`YYMMDD`.csv_.
 
 :::

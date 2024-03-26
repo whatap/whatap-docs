@@ -99,7 +99,9 @@ For more information about the event templates for metrics, see [the following](
 
 - <Cmdname sid="message" className="uitext" />
 
-  - Enter a notification message to be displayed when events occur. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />.
+  - Enter a notification message to be displayed when events occur. By entering <code>${Tag}</code> or <code>${Field}</code>, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="tag_count" className="uitext" />.
+
+    <ImgLang img='event-config-message-example.png' desc='Message example' />
 
   - If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
 
@@ -133,7 +135,7 @@ For more information about the event templates for metrics, see [the following](
 
 - After the event setting is made, the option value is managed as the <Cmdname sid="metrics_rule_direct" className="uitext" /> option. Afterwards, if switched to the <Cmdname sid="metrics_rule_select" className="uitext" /> option, the option value can be initialized.
 
-- Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&*()\_+=-[]`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>${}</code>) as shown in the following example:
+- Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&*()_+=-[]`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>${}</code>) as shown in the following example:
 
   ```text
   ${4xxErrorType} == '401'
