@@ -1875,7 +1875,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2580,7 +2580,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2589,6 +2589,11 @@ const sidebars = {
               },
               items: [
                 'redis/metric-warning-notice',
+                {
+                  type: 'doc',
+                  id: 'redis/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
@@ -2638,10 +2643,8 @@ const sidebars = {
             id: 'mongodb/agent-settings'
           },
           items: [
-            'mongodb/agent-network',
-            'mongodb/agent-naming',
-            'mongodb/agent-aws',
-            'mongodb/agent-data',
+            'mongodb/agent-dbx-settings',
+            'mongodb/agent-xos-settings',
           ],
         },
         'mongodb/agent-manage',
@@ -2653,7 +2656,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2687,6 +2690,16 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mongodb/analysis-count-trend',
+                'mongodb/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2702,13 +2715,13 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'mongodb/analysis-function',
-                'mongodb/stat',
-              ]
+                'mongodb/database-size',
+                'mongodb/report-intro'
+              ],
             },
             {
               type: 'category',
@@ -2721,6 +2734,11 @@ const sidebars = {
               },
               items: [
                 'mongodb/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mongodb/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'mongodb/metric-warning-notice',
                 'mongodb/set-notification-message',
                 'mongodb/set-event-detect-anomal',
