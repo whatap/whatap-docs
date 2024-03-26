@@ -727,6 +727,18 @@
     "width": 400,
     "height": 345
   },
+  "apm-dashboard-active-tx-agent-en.png": {
+    "width": 800,
+    "height": 449
+  },
+  "apm-dashboard-active-tx-agent-ja.png": {
+    "width": 800,
+    "height": 448
+  },
+  "apm-dashboard-active-tx-agent.png": {
+    "width": 800,
+    "height": 449
+  },
   "apm-dashboard-active-tx-en.png": {
     "width": 600,
     "height": 347
@@ -813,19 +825,19 @@
   },
   "apm-dashboard-preset-default.png": {
     "width": 400,
-    "height": 223
+    "height": 214
   },
   "apm-dashboard-preset-save-en.png": {
     "width": 600,
-    "height": 206
+    "height": 203
   },
   "apm-dashboard-preset-save-ja.png": {
     "width": 600,
-    "height": 197
+    "height": 196
   },
   "apm-dashboard-preset-save.png": {
     "width": 600,
-    "height": 234
+    "height": 230
   },
   "apm-dashboard-process-memory-en.png": {
     "width": 600,
@@ -905,15 +917,15 @@
   },
   "apm-dashboard-widget-add-en.png": {
     "width": 800,
-    "height": 500
+    "height": 454
   },
   "apm-dashboard-widget-add-ja.png": {
     "width": 800,
-    "height": 508
+    "height": 454
   },
   "apm-dashboard-widget-add.png": {
     "width": 800,
-    "height": 528
+    "height": 454
   },
   "apm-dashboard-widget-move-en.png": {
     "width": 1200,
@@ -2409,15 +2421,15 @@
   },
   "browser-analysis-ajax-hitmap-details-en.png": {
     "width": 1200,
-    "height": 459
+    "height": 525
   },
   "browser-analysis-ajax-hitmap-details-ja.png": {
     "width": 1200,
-    "height": 461
+    "height": 525
   },
   "browser-analysis-ajax-hitmap-details.png": {
     "width": 1200,
-    "height": 460
+    "height": 525
   },
   "browser-analysis-ajax-hitmap-en.png": {
     "width": 1200,
@@ -2451,6 +2463,18 @@
     "width": 1200,
     "height": 1118
   },
+  "browser-analysis-ajax-hitmap-user-session-en.png": {
+    "width": 1200,
+    "height": 497
+  },
+  "browser-analysis-ajax-hitmap-user-session-ja.png": {
+    "width": 1200,
+    "height": 497
+  },
+  "browser-analysis-ajax-hitmap-user-session.png": {
+    "width": 1200,
+    "height": 497
+  },
   "browser-analysis-ajax-hitmap.png": {
     "width": 1200,
     "height": 475
@@ -2478,6 +2502,90 @@
   "browser-analysis-pageload-hitmap.png": {
     "width": 1200,
     "height": 956
+  },
+  "browser-analysis-user-session-log-details-ajax-en.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "browser-analysis-user-session-log-details-ajax-ja.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "browser-analysis-user-session-log-details-ajax.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "browser-analysis-user-session-log-details-click-en.png": {
+    "width": 1200,
+    "height": 574
+  },
+  "browser-analysis-user-session-log-details-click-ja.png": {
+    "width": 1200,
+    "height": 574
+  },
+  "browser-analysis-user-session-log-details-click.png": {
+    "width": 1200,
+    "height": 574
+  },
+  "browser-analysis-user-session-log-details-custom-en.png": {
+    "width": 1200,
+    "height": 461
+  },
+  "browser-analysis-user-session-log-details-custom-ja.png": {
+    "width": 1200,
+    "height": 461
+  },
+  "browser-analysis-user-session-log-details-custom.png": {
+    "width": 1200,
+    "height": 461
+  },
+  "browser-analysis-user-session-log-details-error-en.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "browser-analysis-user-session-log-details-error-ja.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "browser-analysis-user-session-log-details-error.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "browser-analysis-user-session-log-details-pageload-en.png": {
+    "width": 1200,
+    "height": 751
+  },
+  "browser-analysis-user-session-log-details-pageload-ja.png": {
+    "width": 1200,
+    "height": 750
+  },
+  "browser-analysis-user-session-log-details-pageload.png": {
+    "width": 1200,
+    "height": 750
+  },
+  "browser-analysis-user-session-log-details-router-en.png": {
+    "width": 1200,
+    "height": 445
+  },
+  "browser-analysis-user-session-log-details-router-ja.png": {
+    "width": 1200,
+    "height": 445
+  },
+  "browser-analysis-user-session-log-details-router.png": {
+    "width": 1200,
+    "height": 410
+  },
+  "browser-analysis-user-session-log-filter-en.png": {
+    "width": 1200,
+    "height": 727
+  },
+  "browser-analysis-user-session-log-filter-ja.png": {
+    "width": 1200,
+    "height": 727
+  },
+  "browser-analysis-user-session-log-filter.png": {
+    "width": 1200,
+    "height": 727
   },
   "browser-cls-widget-en.png": {
     "width": 1200,
@@ -2743,6 +2851,18 @@
     "width": 1200,
     "height": 342
   },
+  "browser-flexboard-custom-event-widget-en.png": {
+    "width": 1200,
+    "height": 527
+  },
+  "browser-flexboard-custom-event-widget-ja.png": {
+    "width": 1200,
+    "height": 527
+  },
+  "browser-flexboard-custom-event-widget.png": {
+    "width": 1200,
+    "height": 527
+  },
   "browser-lcp-widget-en.png": {
     "width": 1200,
     "height": 534
@@ -2789,11 +2909,11 @@
   },
   "browser-pageload-details-resource-error-en.png": {
     "width": 1200,
-    "height": 612
+    "height": 645
   },
   "browser-pageload-details-resource-error-ja.png": {
     "width": 1200,
-    "height": 612
+    "height": 646
   },
   "browser-pageload-details-resource-error-stack-en.png": {
     "width": 1200,
@@ -2809,7 +2929,19 @@
   },
   "browser-pageload-details-resource-error.png": {
     "width": 1200,
-    "height": 612
+    "height": 645
+  },
+  "browser-pageload-details-user-session-en.png": {
+    "width": 1200,
+    "height": 644
+  },
+  "browser-pageload-details-user-session-ja.png": {
+    "width": 1200,
+    "height": 645
+  },
+  "browser-pageload-details-user-session.png": {
+    "width": 1200,
+    "height": 647
   },
   "browser-pageload-details.png": {
     "width": 1200,
@@ -2898,6 +3030,78 @@
   "browser-report-summary.png": {
     "width": 1200,
     "height": 985
+  },
+  "browser-search-user-session-category.png": {
+    "width": 988,
+    "height": 310
+  },
+  "browser-search-user-session-filter-guide-en.png": {
+    "width": 600,
+    "height": 340
+  },
+  "browser-search-user-session-filter-guide-ja.png": {
+    "width": 600,
+    "height": 340
+  },
+  "browser-search-user-session-filter-guide.png": {
+    "width": 600,
+    "height": 340
+  },
+  "browser-search-user-session-flow-en.png": {
+    "width": 800,
+    "height": 310
+  },
+  "browser-search-user-session-flow-ja.png": {
+    "width": 800,
+    "height": 382
+  },
+  "browser-search-user-session-flow.png": {
+    "width": 800,
+    "height": 311
+  },
+  "browser-search-user-session-infomation-en.png": {
+    "width": 800,
+    "height": 76
+  },
+  "browser-search-user-session-infomation-ja.png": {
+    "width": 800,
+    "height": 77
+  },
+  "browser-search-user-session-infomation.png": {
+    "width": 800,
+    "height": 72
+  },
+  "browser-search-user-session-log-analysis-en.png": {
+    "width": 1200,
+    "height": 776
+  },
+  "browser-search-user-session-log-analysis-ja.png": {
+    "width": 1200,
+    "height": 779
+  },
+  "browser-search-user-session-log-analysis.png": {
+    "width": 1200,
+    "height": 739
+  },
+  "browser-search-user-session-log-content.png": {
+    "width": 1200,
+    "height": 193
+  },
+  "browser-search-user-session-log-en.png": {
+    "width": 1200,
+    "height": 706
+  },
+  "browser-search-user-session-log-ja.png": {
+    "width": 1200,
+    "height": 706
+  },
+  "browser-search-user-session-log.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "browser-search-user-session-tag.png": {
+    "width": 1200,
+    "height": 168
   },
   "browser-start-en.png": {
     "width": 1090,
@@ -3106,6 +3310,42 @@
   "cloudwatch-auth-role.png": {
     "width": 1200,
     "height": 731
+  },
+  "collect-custom-events-example01-en.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "collect-custom-events-example01-ja.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "collect-custom-events-example01.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "collect-custom-events-example02-en.png": {
+    "width": 1200,
+    "height": 302
+  },
+  "collect-custom-events-example02-ja.png": {
+    "width": 1200,
+    "height": 302
+  },
+  "collect-custom-events-example02.png": {
+    "width": 1200,
+    "height": 302
+  },
+  "collect-custom-events-example03-en.png": {
+    "width": 1200,
+    "height": 506
+  },
+  "collect-custom-events-example03-ja.png": {
+    "width": 1200,
+    "height": 506
+  },
+  "collect-custom-events-example03.png": {
+    "width": 1200,
+    "height": 506
   },
   "compound-eye.png": {
     "width": 451,
@@ -3779,6 +4019,30 @@
     "width": 1200,
     "height": 247
   },
+  "db-dashboard-widget-add.png": {
+    "width": 600,
+    "height": 607
+  },
+  "db-dashboard-widget-move.png": {
+    "width": 1200,
+    "height": 524
+  },
+  "db-dashboard-widget-remove-en.png": {
+    "width": 600,
+    "height": 344
+  },
+  "db-dashboard-widget-remove-ja.png": {
+    "width": 600,
+    "height": 344
+  },
+  "db-dashboard-widget-remove.png": {
+    "width": 600,
+    "height": 344
+  },
+  "db-dashboard-widget-resize.png": {
+    "width": 1200,
+    "height": 525
+  },
   "db-database-parameter-basic.png": {
     "width": 1200,
     "height": 738
@@ -4206,6 +4470,14 @@
   "db-file-log-notice.png": {
     "width": 1072,
     "height": 549
+  },
+  "db-install-agent-run-setup-complete.png": {
+    "width": 1187,
+    "height": 1015
+  },
+  "db-install-agent-run-setup.png": {
+    "width": 1280,
+    "height": 343
   },
   "db-instance-list-cubrid-en.png": {
     "width": 1200,
@@ -4677,11 +4949,11 @@
   },
   "db-multi-instance-mysql-en.png": {
     "width": 1200,
-    "height": 1035
+    "height": 668
   },
   "db-multi-instance-mysql-ja.png": {
     "width": 1200,
-    "height": 1035
+    "height": 668
   },
   "db-multi-instance-mysql-rds.png": {
     "width": 1229,
@@ -4693,7 +4965,7 @@
   },
   "db-multi-instance-mysql.png": {
     "width": 1200,
-    "height": 1035
+    "height": 668
   },
   "db-multi-instance-oracle-en.png": {
     "width": 1200,
@@ -4709,11 +4981,11 @@
   },
   "db-multi-instance-postgresql-en.png": {
     "width": 1200,
-    "height": 1030
+    "height": 668
   },
   "db-multi-instance-postgresql-ja.png": {
     "width": 1200,
-    "height": 1030
+    "height": 668
   },
   "db-multi-instance-postgresql-v1.png": {
     "width": 1231,
@@ -4721,7 +4993,7 @@
   },
   "db-multi-instance-postgresql.png": {
     "width": 1200,
-    "height": 1030
+    "height": 668
   },
   "db-multi-instance-redis-en.png": {
     "width": 1200,
@@ -4834,6 +5106,18 @@
   "db-select-count.png": {
     "width": 1200,
     "height": 1042
+  },
+  "db-session-details-info-en.png": {
+    "width": 1201,
+    "height": 840
+  },
+  "db-session-details-info-ja.png": {
+    "width": 1201,
+    "height": 841
+  },
+  "db-session-details-info.png": {
+    "width": 1200,
+    "height": 841
   },
   "db-session-history-01-en.png": {
     "width": 1200,
@@ -5551,6 +5835,34 @@
     "width": 886,
     "height": 349
   },
+  "flexboard-check-projects-en.png": {
+    "width": 1200,
+    "height": 48
+  },
+  "flexboard-check-projects-ja.png": {
+    "width": 1200,
+    "height": 51
+  },
+  "flexboard-check-projects.png": {
+    "width": 1200,
+    "height": 50
+  },
+  "flexboard-compare-sharing-copy.png": {
+    "width": 1699,
+    "height": 811
+  },
+  "flexboard-copy2others-en.png": {
+    "width": 600,
+    "height": 426
+  },
+  "flexboard-copy2others-ja.png": {
+    "width": 600,
+    "height": 429
+  },
+  "flexboard-copy2others.png": {
+    "width": 600,
+    "height": 427
+  },
   "flexboard-datamerge-en.png": {
     "width": 800,
     "height": 350
@@ -5599,18 +5911,6 @@
     "width": 1200,
     "height": 1035
   },
-  "flexboard-sharable-list-en.png": {
-    "width": 800,
-    "height": 144
-  },
-  "flexboard-sharable-list-ja.png": {
-    "width": 800,
-    "height": 144
-  },
-  "flexboard-sharable-list.png": {
-    "width": 800,
-    "height": 146
-  },
   "flexboard-share-01-en.png": {
     "width": 800,
     "height": 73
@@ -5637,15 +5937,15 @@
   },
   "flexboard-share-03-en.png": {
     "width": 600,
-    "height": 229
+    "height": 240
   },
   "flexboard-share-03-ja.png": {
     "width": 600,
-    "height": 231
+    "height": 240
   },
   "flexboard-share-03.png": {
     "width": 600,
-    "height": 231
+    "height": 240
   },
   "flexboard-share-04-en.png": {
     "width": 400,
@@ -5681,7 +5981,7 @@
   },
   "flexboard-share-06.png": {
     "width": 600,
-    "height": 427
+    "height": 429
   },
   "flexboard-template-en.png": {
     "width": 1200,
@@ -6064,16 +6364,196 @@
     "height": 718
   },
   "ipa-agent-list-en.png": {
-    "width": 1200,
-    "height": 211
+    "width": 400,
+    "height": 364
   },
   "ipa-agent-list-ja.png": {
-    "width": 1200,
-    "height": 217
+    "width": 400,
+    "height": 372
   },
   "ipa-agent-list.png": {
+    "width": 400,
+    "height": 363
+  },
+  "ipa-agent-log-dotnet-en.png": {
     "width": 1200,
-    "height": 207
+    "height": 316
+  },
+  "ipa-agent-log-dotnet-ja.png": {
+    "width": 1200,
+    "height": 318
+  },
+  "ipa-agent-log-dotnet.png": {
+    "width": 1200,
+    "height": 315
+  },
+  "ipa-agent-log-golang-en.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "ipa-agent-log-golang-ja.png": {
+    "width": 1200,
+    "height": 630
+  },
+  "ipa-agent-log-golang.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "ipa-agent-log-java-en.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "ipa-agent-log-java-ja.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "ipa-agent-log-java.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "ipa-agent-log-nodejs-en.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-nodejs-ja.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-nodejs.png": {
+    "width": 1200,
+    "height": 653
+  },
+  "ipa-agent-log-php-en.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-php-ja.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "ipa-agent-log-php.png": {
+    "width": 1200,
+    "height": 653
+  },
+  "ipa-agent-log-python-en.png": {
+    "width": 1200,
+    "height": 628
+  },
+  "ipa-agent-log-python-ja.png": {
+    "width": 1200,
+    "height": 624
+  },
+  "ipa-agent-log-python.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "ipa-datasource-java-en.png": {
+    "width": 1200,
+    "height": 271
+  },
+  "ipa-datasource-java-ja.png": {
+    "width": 1200,
+    "height": 266
+  },
+  "ipa-datasource-java.png": {
+    "width": 1200,
+    "height": 264
+  },
+  "ipa-env-var-dotnet-en.png": {
+    "width": 1200,
+    "height": 572
+  },
+  "ipa-env-var-dotnet-ja.png": {
+    "width": 1200,
+    "height": 572
+  },
+  "ipa-env-var-dotnet.png": {
+    "width": 1200,
+    "height": 572
+  },
+  "ipa-env-var-golang-en.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "ipa-env-var-golang-ja.png": {
+    "width": 1200,
+    "height": 739
+  },
+  "ipa-env-var-golang.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "ipa-env-var-java-en.png": {
+    "width": 1200,
+    "height": 575
+  },
+  "ipa-env-var-java-ja.png": {
+    "width": 1473,
+    "height": 575
+  },
+  "ipa-env-var-java.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "ipa-env-var-nodejs-en.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "ipa-env-var-nodejs-ja.png": {
+    "width": 1200,
+    "height": 568
+  },
+  "ipa-env-var-nodejs.png": {
+    "width": 1200,
+    "height": 568
+  },
+  "ipa-env-var-php-en.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "ipa-env-var-php-ja.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "ipa-env-var-php.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "ipa-env-var-python-en.png": {
+    "width": 1200,
+    "height": 697
+  },
+  "ipa-env-var-python-ja.png": {
+    "width": 1200,
+    "height": 697
+  },
+  "ipa-env-var-python.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "ipa-heap-dump-java-en.png": {
+    "width": 1200,
+    "height": 541
+  },
+  "ipa-heap-dump-java-ja.png": {
+    "width": 1200,
+    "height": 543
+  },
+  "ipa-heap-dump-java.png": {
+    "width": 1200,
+    "height": 538
+  },
+  "ipa-heap-histogram-java-en.png": {
+    "width": 1200,
+    "height": 600
+  },
+  "ipa-heap-histogram-java-ja.png": {
+    "width": 1200,
+    "height": 600
+  },
+  "ipa-heap-histogram-java.png": {
+    "width": 1200,
+    "height": 600
   },
   "ipa-java-thread-list-en.png": {
     "width": 1200,
@@ -6087,77 +6567,149 @@
     "width": 1200,
     "height": 230
   },
-  "ipa-main-dotnet-en.png": {
+  "ipa-library-version-java-en.png": {
     "width": 1200,
-    "height": 744
+    "height": 269
   },
-  "ipa-main-dotnet-ja.png": {
+  "ipa-library-version-java-ja.png": {
     "width": 1200,
-    "height": 745
+    "height": 268
   },
-  "ipa-main-dotnet.png": {
+  "ipa-library-version-java.png": {
     "width": 1200,
-    "height": 745
+    "height": 269
   },
-  "ipa-main-golang-en.png": {
+  "ipa-loaded-class-java-en.png": {
     "width": 1200,
-    "height": 646
+    "height": 620
   },
-  "ipa-main-golang-ja.png": {
+  "ipa-loaded-class-java-ja.png": {
     "width": 1200,
-    "height": 647
+    "height": 620
   },
-  "ipa-main-golang.png": {
+  "ipa-loaded-class-java.png": {
     "width": 1200,
-    "height": 645
+    "height": 620
   },
-  "ipa-main-java-en.png": {
+  "ipa-open-socket-java-en.png": {
     "width": 1200,
-    "height": 703
+    "height": 265
   },
-  "ipa-main-java-ja.png": {
+  "ipa-open-socket-java-ja.png": {
     "width": 1200,
-    "height": 703
+    "height": 269
   },
-  "ipa-main-java.png": {
+  "ipa-open-socket-java.png": {
     "width": 1200,
-    "height": 702
+    "height": 265
   },
-  "ipa-main-nodejs-en.png": {
-    "width": 1200,
-    "height": 674
-  },
-  "ipa-main-nodejs-ja.png": {
-    "width": 1200,
-    "height": 675
-  },
-  "ipa-main-nodejs.png": {
-    "width": 1200,
-    "height": 675
-  },
-  "ipa-main-php-en.png": {
-    "width": 1200,
-    "height": 706
-  },
-  "ipa-main-php-ja.png": {
-    "width": 1200,
-    "height": 706
-  },
-  "ipa-main-php.png": {
-    "width": 1200,
-    "height": 706
-  },
-  "ipa-main-python-en.png": {
+  "ipa-run-env-var-dotnet-en.png": {
     "width": 1200,
     "height": 665
   },
-  "ipa-main-python-ja.png": {
+  "ipa-run-env-var-dotnet-ja.png": {
+    "width": 1200,
+    "height": 667
+  },
+  "ipa-run-env-var-dotnet.png": {
+    "width": 1200,
+    "height": 666
+  },
+  "ipa-run-env-var-golang-en.png": {
+    "width": 1200,
+    "height": 618
+  },
+  "ipa-run-env-var-golang-ja.png": {
+    "width": 1200,
+    "height": 622
+  },
+  "ipa-run-env-var-golang.png": {
+    "width": 1200,
+    "height": 620
+  },
+  "ipa-run-env-var-java-en.png": {
+    "width": 1200,
+    "height": 698
+  },
+  "ipa-run-env-var-java-ja.png": {
+    "width": 1200,
+    "height": 698
+  },
+  "ipa-run-env-var-java.png": {
+    "width": 1200,
+    "height": 702
+  },
+  "ipa-run-env-var-nodejs-en.png": {
+    "width": 1200,
+    "height": 423
+  },
+  "ipa-run-env-var-nodejs-ja.png": {
+    "width": 1200,
+    "height": 421
+  },
+  "ipa-run-env-var-nodejs.png": {
+    "width": 1200,
+    "height": 422
+  },
+  "ipa-run-env-var-php-en.png": {
+    "width": 1200,
+    "height": 663
+  },
+  "ipa-run-env-var-php-ja.png": {
+    "width": 1200,
+    "height": 666
+  },
+  "ipa-run-env-var-php.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "ipa-run-env-var-python-en.png": {
     "width": 1200,
     "height": 664
   },
-  "ipa-main-python.png": {
+  "ipa-run-env-var-python-ja.png": {
     "width": 1200,
     "height": 664
+  },
+  "ipa-run-env-var-python.png": {
+    "width": 1200,
+    "height": 662
+  },
+  "ipa-set-throttling-java-en.png": {
+    "width": 1200,
+    "height": 455
+  },
+  "ipa-set-throttling-java-ja.png": {
+    "width": 1200,
+    "height": 523
+  },
+  "ipa-set-throttling-java.png": {
+    "width": 1200,
+    "height": 484
+  },
+  "ipa-system-gc-java-en.png": {
+    "width": 1200,
+    "height": 267
+  },
+  "ipa-system-gc-java-ja.png": {
+    "width": 1200,
+    "height": 267
+  },
+  "ipa-system-gc-java.png": {
+    "width": 1200,
+    "height": 267
+  },
+  "ipa-thread-list-java-en.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "ipa-thread-list-java-ja.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "ipa-thread-list-java.png": {
+    "width": 1200,
+    "height": 648
   },
   "java-agent-log-oname.png": {
     "width": 1500,
@@ -11073,39 +11625,39 @@
   },
   "rum-pageload-event-02-en.png": {
     "width": 1199,
-    "height": 610
+    "height": 557
   },
   "rum-pageload-event-02-ja.png": {
     "width": 1200,
-    "height": 612
+    "height": 557
   },
   "rum-pageload-event-02.png": {
-    "width": 1197,
-    "height": 574
+    "width": 1200,
+    "height": 557
   },
   "rum-pageload-event-03-en.png": {
     "width": 1200,
-    "height": 615
+    "height": 646
   },
   "rum-pageload-event-03-ja.png": {
     "width": 1200,
-    "height": 612
+    "height": 646
   },
   "rum-pageload-event-03.png": {
     "width": 1199,
-    "height": 576
+    "height": 647
   },
   "rum-pageload-event-04-en.png": {
     "width": 1200,
-    "height": 612
+    "height": 646
   },
   "rum-pageload-event-04-ja.png": {
     "width": 1200,
-    "height": 546
+    "height": 645
   },
   "rum-pageload-event-04.png": {
     "width": 1200,
-    "height": 575
+    "height": 646
   },
   "rum-pageload-fid-en.png": {
     "width": 1200,
