@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[15665],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37661],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 58146:
+/***/ 35771:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,27 +312,27 @@ const frontMatter = {
     title: '트랜잭션 검색',
     description: '개별 트랜잭션의 성능 속성을 기반으로 원하는 트랜잭션을 검색할 수 있습니다.',
     tags: [
-        'Node.js',
+        'Go',
         '애플리케이션',
         '트랜잭션'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "nodejs/tx-profile",
-    "id": "nodejs/tx-profile",
+    "unversionedId": "golang/tx-profile",
+    "id": "golang/tx-profile",
     "title": "트랜잭션 검색",
     "description": "개별 트랜잭션의 성능 속성을 기반으로 원하는 트랜잭션을 검색할 수 있습니다.",
-    "source": "@site/docs/nodejs/tx-profile.mdx",
-    "sourceDirName": "nodejs",
-    "slug": "/nodejs/tx-profile",
-    "permalink": "/whatap-docs/nodejs/tx-profile",
+    "source": "@site/docs/golang/tx-profile.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/tx-profile",
+    "permalink": "/whatap-docs/golang/tx-profile",
     "draft": false,
-    "editUrl": "undefined/docs/nodejs/tx-profile.mdx",
+    "editUrl": "undefined/docs/golang/tx-profile.mdx",
     "tags": [
         {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
             "label": "애플리케이션",
@@ -349,19 +349,19 @@ const metadata = {
         "title": "트랜잭션 검색",
         "description": "개별 트랜잭션의 성능 속성을 기반으로 원하는 트랜잭션을 검색할 수 있습니다.",
         "tags": [
-            "Node.js",
+            "Go",
             "애플리케이션",
             "트랜잭션"
         ]
     },
-    "sidebar": "nodejsSidebar",
+    "sidebar": "goSidebar",
     "previous": {
         "title": "멀티 트랜잭션 추적",
-        "permalink": "/whatap-docs/nodejs/analysis-trace-mtx"
+        "permalink": "/whatap-docs/golang/analysis-trace-mtx"
     },
     "next": {
         "title": "메트릭스",
-        "permalink": "/whatap-docs/nodejs/metrics-intro"
+        "permalink": "/whatap-docs/golang/metrics-intro"
     }
 };
 const assets = {};
@@ -761,7 +761,7 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `기본 설정 상태의 에이전트는 로그인 ID 정보를 수집하지 않습니다. 로그인 ID 설정이 필요한 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "../java/script-plugin#common-plugin"
+        "href": "java/script-plugin#common-plugin"
     }, `다음 문서`), `를 참조해 설정을 추가하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "다중-필터-적용하기"
     }, `다중 필터 적용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `여러 개의 필터 항목을 적용해 원하는 트랜잭션 목록을 확인할 수 있습니다. 다음 사례는 경과 시간이 5 ~ 8초 사이이면서, HTTP 호출 건수가 5건 이상, 트랜잭션 경로에 'account'가 포함된 경우입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {

@@ -761,7 +761,7 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `기본 설정 상태의 에이전트는 로그인 ID 정보를 수집하지 않습니다. 로그인 ID 설정이 필요한 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "../java/script-plugin#common-plugin"
+        "href": "java/script-plugin#common-plugin"
     }, `다음 문서`), `를 참조해 설정을 추가하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "다중-필터-적용하기"
     }, `다중 필터 적용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `여러 개의 필터 항목을 적용해 원하는 트랜잭션 목록을 확인할 수 있습니다. 다음 사례는 경과 시간이 5 ~ 8초 사이이면서, HTTP 호출 건수가 5건 이상, 트랜잭션 경로에 'account'가 포함된 경우입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
