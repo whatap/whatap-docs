@@ -337,8 +337,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Server Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/server/server-previous"
+        "title": "Kubernetes Agent v1.5.8",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_8"
     },
     "next": {
         "title": "Kubernetes Agent v1.5.6",
@@ -430,7 +430,7 @@ function MDXContent(_param) {
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "https://repo.whatap.io/docker/kube_mon_1.5.7.tar"
-    }, `kube_mon_1.5.6.tar`))));
+    }, `kube_mon_1.5.7.tar`))));
 }
 MDXContent.isMDXComponent = true;
 
