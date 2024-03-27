@@ -212,191 +212,6 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 33322:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ DocCardList)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20053);
-/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(51538);
-/* harmony import */ var _theme_DocCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(46647);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function _define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-
-
-
-
-
-function DocCardListForCurrentSidebarCategory({ className }) {
-    const category = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__/* .useCurrentSidebarCategory */ .$S)();
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardList, {
-        items: category.items,
-        className: className
-    });
-}
-function DocCardList(props) {
-    const { items, className } = props;
-    if (!items) {
-        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardListForCurrentSidebarCategory, _object_spread({}, props));
-    }
-    const filteredItems = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__/* .filterDocCardListItems */ .d1)(items);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", {
-        className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)('row', className),
-        children: filteredItems.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("article", {
-                className: "col col--6 margin-bottom--lg",
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_DocCard__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-                    item: item
-                })
-            }, index))
-    });
-}
-
-
-/***/ }),
-
-/***/ 46647:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ DocCard)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
-var clsx_m = __webpack_require__(20053);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js + 1 modules
-var Link = __webpack_require__(89546);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/docsUtils.js
-var docsUtils = __webpack_require__(51538);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(11410);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(15418);
-;// CONCATENATED MODULE: ./src/theme/DocCard/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"cardContainer":"cardContainer_S8oU","cardTitle":"cardTitle_HoSo","cardDescription":"cardDescription_c27F"});
-;// CONCATENATED MODULE: ./src/theme/DocCard/index.js
-
-
-
-
-
-
-
-
-function CardContainer({ href, children }) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-        href: href,
-        className: (0,clsx_m/* default */.A)('card padding--lg', styles_module.cardContainer),
-        children: children
-    });
-}
-function CardLayout({ href, title, description }) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(CardContainer, {
-        href: href,
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("h2", {
-                className: (0,clsx_m/* default */.A)('text--truncate', styles_module.cardTitle),
-                title: title,
-                children: title
-            }),
-            description && /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
-                className: (0,clsx_m/* default */.A)('text--truncate', styles_module.cardDescription),
-                title: description,
-                children: description
-            })
-        ]
-    });
-}
-function CardCategory({ item }) {
-    const href = (0,docsUtils/* findFirstCategoryLink */._o)(item);
-    // Unexpected: categories that don't have a link have been filtered upfront
-    if (!href) {
-        return null;
-    }
-    var _item_description;
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLayout, {
-        href: href,
-        // icon="🗃️"
-        title: item.label,
-        description: (_item_description = item.description) !== null && _item_description !== void 0 ? _item_description : (0,Translate/* translate */.T)({
-            message: '{count} items',
-            id: 'theme.docs.DocCard.categoryDescription',
-            description: 'The default description for a category card in the generated index about how many items this category includes'
-        }, {
-            count: item.items.length
-        })
-    });
-}
-function CardLink({ item }) {
-    const icon = (0,isInternalUrl/* default */.A)(item.href) ? '📄️' : '🔗';
-    var _item_docId;
-    const doc = (0,docsUtils/* useDocById */.cC)((_item_docId = item.docId) !== null && _item_docId !== void 0 ? _item_docId : undefined);
-    var _item_description;
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLayout, {
-        href: item.href,
-        // icon={icon}
-        title: item.label,
-        description: (_item_description = item.description) !== null && _item_description !== void 0 ? _item_description : doc === null || doc === void 0 ? void 0 : doc.description
-    });
-}
-function DocCard({ item }) {
-    switch(item.type){
-        case 'link':
-            return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLink, {
-                item: item
-            });
-        case 'category':
-            return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardCategory, {
-                item: item
-            });
-        default:
-            throw new Error(`unknown item type ${JSON.stringify(item)}`);
-    }
-}
-
-
-/***/ }),
-
 /***/ 60420:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -411,7 +226,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
-/* harmony import */ var _theme_DocCardList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33322);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -496,7 +310,7 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'install-agent',
     title: '에이전트 설치',
-    description: '와탭(WhaTap)의 자바(Java) 애플리케이션 모니터링 에이전트를 설치하는 데 필요한 모든 단계를 자세하게 설명합니다. 이 문서에서는 에이전트 다운로드 및 설치, 구성 파일, 에이전트 기본 설정 방법을 안내합니다.',
+    description: '와탭의 자바(Java) 애플리케이션 모니터링 에이전트를 설치하는 데 필요한 모든 단계를 자세하게 설명합니다. 이 문서에서는 에이전트 다운로드 및 설치, 구성 파일, 에이전트 기본 설정 방법을 안내합니다.',
     tags: [
         'Java',
         '에이전트',
@@ -508,7 +322,7 @@ const metadata = {
     "unversionedId": "java/install-agent",
     "id": "java/install-agent",
     "title": "에이전트 설치",
-    "description": "와탭(WhaTap)의 자바(Java) 애플리케이션 모니터링 에이전트를 설치하는 데 필요한 모든 단계를 자세하게 설명합니다. 이 문서에서는 에이전트 다운로드 및 설치, 구성 파일, 에이전트 기본 설정 방법을 안내합니다.",
+    "description": "와탭의 자바(Java) 애플리케이션 모니터링 에이전트를 설치하는 데 필요한 모든 단계를 자세하게 설명합니다. 이 문서에서는 에이전트 다운로드 및 설치, 구성 파일, 에이전트 기본 설정 방법을 안내합니다.",
     "source": "@site/docs/java/install-agent.mdx",
     "sourceDirName": "java",
     "slug": "/java/install-agent",
@@ -533,7 +347,7 @@ const metadata = {
     "frontMatter": {
         "id": "install-agent",
         "title": "에이전트 설치",
-        "description": "와탭(WhaTap)의 자바(Java) 애플리케이션 모니터링 에이전트를 설치하는 데 필요한 모든 단계를 자세하게 설명합니다. 이 문서에서는 에이전트 다운로드 및 설치, 구성 파일, 에이전트 기본 설정 방법을 안내합니다.",
+        "description": "와탭의 자바(Java) 애플리케이션 모니터링 에이전트를 설치하는 데 필요한 모든 단계를 자세하게 설명합니다. 이 문서에서는 에이전트 다운로드 및 설치, 구성 파일, 에이전트 기본 설정 방법을 안내합니다.",
         "tags": [
             "Java",
             "에이전트",
@@ -551,7 +365,6 @@ const metadata = {
     }
 };
 const assets = {};
-
 const toc = [
     {
         value: '프로젝트 생성하기',
@@ -603,6 +416,7 @@ const Cmdname = makeShortcode("Cmdname");
 const Xclude = makeShortcode("Xclude");
 const ImgLang = makeShortcode("ImgLang");
 const InDoc = makeShortcode("InDoc");
+const DocCardList = makeShortcode("DocCardList");
 const layoutProps = {
     toc
 };
@@ -1016,7 +830,7 @@ threadkill=FEDCBA
     }, `JVM 옵션 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용하는 애플리케이션 서버 환경에 따른 설정 방법을 다음과 같이 제공합니다. 에이전트를 설치하고 적용하기 전에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "supported-spec"
-    }, `지원 환경`), `을 먼저 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_theme_DocCardList__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+    }, `지원 환경`), `을 먼저 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(DocCardList, {
         mdxType: "DocCardList"
     }));
 }
