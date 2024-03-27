@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87057],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87201],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 52634:
+/***/ 67671:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,29 +310,29 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'stat',
     title: 'SQL 통계',
-    description: 'CUBRID의 데이터베이스별 통계 데이터를 제공합니다.',
+    description: 'MySQL의 데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'CUBRID',
+        'MySQL',
         '데이터베이스',
         '통계'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "cubrid/stat",
-    "id": "cubrid/stat",
+    "unversionedId": "mysql/stat",
+    "id": "mysql/stat",
     "title": "SQL 통계",
-    "description": "CUBRID의 데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/cubrid/stat.mdx",
-    "sourceDirName": "cubrid",
-    "slug": "/cubrid/stat",
-    "permalink": "/whatap-docs/cubrid/stat",
+    "description": "MySQL의 데이터베이스별 통계 데이터를 제공합니다.",
+    "source": "@site/docs/mysql/stat.mdx",
+    "sourceDirName": "mysql",
+    "slug": "/mysql/stat",
+    "permalink": "/whatap-docs/mysql/stat",
     "draft": false,
-    "editUrl": "undefined/docs/cubrid/stat.mdx",
+    "editUrl": "undefined/docs/mysql/stat.mdx",
     "tags": [
         {
-            "label": "CUBRID",
-            "permalink": "/whatap-docs/tags/cubrid"
+            "label": "MySQL",
+            "permalink": "/whatap-docs/tags/my-sql"
         },
         {
             "label": "데이터베이스",
@@ -347,21 +347,21 @@ const metadata = {
     "frontMatter": {
         "id": "stat",
         "title": "SQL 통계",
-        "description": "CUBRID의 데이터베이스별 통계 데이터를 제공합니다.",
+        "description": "MySQL의 데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "CUBRID",
+            "MySQL",
             "데이터베이스",
             "통계"
         ]
     },
-    "sidebar": "cubridSidebar",
+    "sidebar": "mysqlSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/cubrid/metrics-detect-anormal"
+        "permalink": "/whatap-docs/mysql/metrics-detect-anormal"
     },
     "next": {
-        "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/cubrid/table-size"
+        "title": "MYSQL SQL 통계",
+        "permalink": "/whatap-docs/mysql/mysql-sql-stat"
     }
 };
 const assets = {};
@@ -384,6 +384,11 @@ const toc = [
     {
         value: '쿼리 자세히 보기',
         id: '쿼리-자세히-보기',
+        level: 2
+    },
+    {
+        value: '상세 정보 확인하기',
+        id: 'session-details-info',
         level: 2
     },
     {
@@ -692,7 +697,7 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "instance-monitoring"
     }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "oracle,cubrid,mssql",
+        product: "oracle,cubrid",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
@@ -852,6 +857,24 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
     }, `JSON`)), ` 형식으로 플랜 정보를 조회하는 기능은 DBX 에이전트 1.6.12 버전 이상에서만 지원합니다.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "session-details-info"
+    }, `상세 정보 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "db-sql-stat-details.png",
+        desc: "세션 상세 정보",
+        mdxType: "ImgLang"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `차트의 막대 그래프를 선택하면 5분 동안의 통계 정보를 확인할 수 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "session_detail",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 창이 나타납니다. 선택한 시간 동안의 SQL 실행 목록을 표시하며, 항목을 선택하면 새창과 함께 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "instance_monitoring",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "instance_monitoring",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서는 선택한 시간대의 액티브 세션 테이블과 다양한 지표들의 추이를 확인할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "조회-결과-필터링하기"
     }, `조회 결과 필터링하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "필터-조건-추가하기"
