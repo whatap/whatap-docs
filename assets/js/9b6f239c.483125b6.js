@@ -310,7 +310,7 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'agent-troubleshooting',
     title: '설치 문제 해결',
-    description: 'Java 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.',
+    description: '자바(Java) 에이전트 설치 시 발생할 수 있는 다양한 문제들과 이를 해결하기 위한 구체적인 지침을 제공합니다. 방화벽 설정, SpringBoot 및 Tomcat JMX 설정, OSGI 프레임워크 사용 서버 설정, Log Manager 및 MBeanServerBuilder 에러, Permission 오류, Sigar 라이브러리 문제 등 다양한 상황에 대한 해결책을 안내합니다.',
     toc_max_heading_level: 2,
     tags: [
         'Java',
@@ -323,7 +323,7 @@ const metadata = {
     "unversionedId": "java/agent-troubleshooting",
     "id": "java/agent-troubleshooting",
     "title": "설치 문제 해결",
-    "description": "Java 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
+    "description": "자바(Java) 에이전트 설치 시 발생할 수 있는 다양한 문제들과 이를 해결하기 위한 구체적인 지침을 제공합니다. 방화벽 설정, SpringBoot 및 Tomcat JMX 설정, OSGI 프레임워크 사용 서버 설정, Log Manager 및 MBeanServerBuilder 에러, Permission 오류, Sigar 라이브러리 문제 등 다양한 상황에 대한 해결책을 안내합니다.",
     "source": "@site/docs/java/agent-troubleshooting.mdx",
     "sourceDirName": "java",
     "slug": "/java/agent-troubleshooting",
@@ -348,7 +348,7 @@ const metadata = {
     "frontMatter": {
         "id": "agent-troubleshooting",
         "title": "설치 문제 해결",
-        "description": "Java 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
+        "description": "자바(Java) 에이전트 설치 시 발생할 수 있는 다양한 문제들과 이를 해결하기 위한 구체적인 지침을 제공합니다. 방화벽 설정, SpringBoot 및 Tomcat JMX 설정, OSGI 프레임워크 사용 서버 설정, Log Manager 및 MBeanServerBuilder 에러, Permission 오류, Sigar 라이브러리 문제 등 다양한 상황에 대한 해결책을 안내합니다.",
         "toc_max_heading_level": 2,
         "tags": [
             "Java",

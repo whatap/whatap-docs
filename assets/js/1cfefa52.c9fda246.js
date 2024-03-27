@@ -581,6 +581,7 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), " 메뉴에 대한 자세한 내용은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
         to: "../../kubernetes/kube-apiserver-metrics-search",
+        target: "_blank",
         mdxType: "Link"
     }, "다음 문서"), "를 참조하세요.")))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"

@@ -891,9 +891,12 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'set-agent',
     title: '에이전트 설정',
-    description: 'Java 에이전트의 기본 설정 방법을 제공합니다.',
+    description: '자바(Java) 에이전트의 설정 방법을 안내합니다. whatap.conf 파일을 통해 에이전트의 기본 설정, 서버 연결 및 데이터 전송 설정, 여러 애플리케이션 서버의 설정 파일 관리 방법 등을 포함합니다. 또한, WhaTap 모니터링 서비스 화면에서 직접 에이전트 옵션을 관리하는 방법도 제공합니다.',
     tags: [
-        'Java'
+        'Java',
+        '에이전트',
+        '에이전트 설정',
+        'whatap.conf'
     ]
 };
 const contentTitle = undefined;
@@ -901,7 +904,7 @@ const metadata = {
     "unversionedId": "java/set-agent",
     "id": "java/set-agent",
     "title": "에이전트 설정",
-    "description": "Java 에이전트의 기본 설정 방법을 제공합니다.",
+    "description": "자바(Java) 에이전트의 설정 방법을 안내합니다. whatap.conf 파일을 통해 에이전트의 기본 설정, 서버 연결 및 데이터 전송 설정, 여러 애플리케이션 서버의 설정 파일 관리 방법 등을 포함합니다. 또한, WhaTap 모니터링 서비스 화면에서 직접 에이전트 옵션을 관리하는 방법도 제공합니다.",
     "source": "@site/docs/java/set-agent.mdx",
     "sourceDirName": "java",
     "slug": "/java/set-agent",
@@ -912,15 +915,30 @@ const metadata = {
         {
             "label": "Java",
             "permalink": "/whatap-docs/tags/java"
+        },
+        {
+            "label": "에이전트",
+            "permalink": "/whatap-docs/tags/에이전트"
+        },
+        {
+            "label": "에이전트 설정",
+            "permalink": "/whatap-docs/tags/에이전트-설정"
+        },
+        {
+            "label": "whatap.conf",
+            "permalink": "/whatap-docs/tags/whatap-conf"
         }
     ],
     "version": "current",
     "frontMatter": {
         "id": "set-agent",
         "title": "에이전트 설정",
-        "description": "Java 에이전트의 기본 설정 방법을 제공합니다.",
+        "description": "자바(Java) 에이전트의 설정 방법을 안내합니다. whatap.conf 파일을 통해 에이전트의 기본 설정, 서버 연결 및 데이터 전송 설정, 여러 애플리케이션 서버의 설정 파일 관리 방법 등을 포함합니다. 또한, WhaTap 모니터링 서비스 화면에서 직접 에이전트 옵션을 관리하는 방법도 제공합니다.",
         "tags": [
-            "Java"
+            "Java",
+            "에이전트",
+            "에이전트 설정",
+            "whatap.conf"
         ]
     },
     "sidebar": "javaSidebar",
