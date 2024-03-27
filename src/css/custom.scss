@@ -1161,12 +1161,12 @@ main {
       font-family: "Oleo Script";
       font-weight: 400;
     }
+    code.btn {
+      background-color: #fff;
+    }
     code.oldfunc {
       background-color: rgb(230, 230, 230);
       color: #333;
-    }
-    code.btn {
-      background-color: #fff;
     }
     sup > code {
       font-size: .6em;
