@@ -83,3 +83,12 @@ whatap-monitoringネームスペースに直接ユーザー定義リソースを
    clusterrolebinding.rbac.authorization.k8s.io "whatap" deleted
    clusterrole.rbac.authorization.k8s.io "whatap" deleted
    ```
+
+### Helmチャート基準インストール時のエージェントの削除{#uninstall-agent-helm-chart}
+
+次のコマンドを実行して、WhaTap Kubernetesエージェントアプリケーションを削除してください。 
+
+```bash
+# release削除
+helm uninstall whatap-kube-agent
+```

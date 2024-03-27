@@ -93,6 +93,123 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成 {#create-kubernetes-agent}
 
+WhaTap Kubernetesエージェントのインストール時、_yaml_ファイル基準の案内と_helm_チャート基準の案内を次のように提供します。
+
+<Tabs>
+
+<TabItem value='helm' label='Helm Chart' default>
+
+### Helmバージョン確認とWhaTapリポジトリのネットワーク接続状態確認{#k8s-helm-prechek}
+
+1. 次のコマンドを通じて_helm_バージョンを確認してください。3.xバージョン以降に対応します。 
+
+   ```bash
+   helm version
+   # version.BuildInfo{Version:"v3.x", GitCommit:"xxx", GitTreeState:"clean", GoVersion:"go1.20.8"}
+   ```
+
+2. WhaTap Helmリポジトリに対するネットワーク接続状態を確認してください。 
+
+   ```bash
+   curl https://whatap.github.io/helm/ping 
+   # pong
+   ```
+
+### Helm Chart基準インストール{#k8s-helm-chart-install}
+
+ワタブHelmリポジトリを追加した後、ユーザーのContainer Runtimeに合った適切なデフォルト設定ファイルを作成して、エージェントをインストールしてください。
+
+1. 次のコマンドを実行して、WhaTap Helmリポジトリを追加してください。
+
+   ```bash
+   helm repo add whatap https://whatap.github.io/helm/
+   helm repo update
+   ```
+
+2. 次のコマンドを実行して、ユーザーの**CONTAINER-RUNTIME**を確認してください。 
+
+   ```bash
+   kubectl get nodes -o wide
+   ```
+
+   ![](/img/k8s-check-containerRuntime.png)
+
+3. **CONTAINER-RUNTIME**を確認し、インストールに必要なデフォルト設定ファイル(_values.yaml_)を次のように作成してください。 
+
+   ```yaml
+   containerRuntime: #CONTAINER-RUNTIME
+   whatap:
+       license: #WHATAP-LICENESE-KEY
+       host: "13.124.11.223/13.209.172.35"
+       port: "6600"
+   ```
+
+4. 次のコマンドを実行して、エージェントアプリケーションをインストールしてください。 
+
+   ```bash
+   kubectl delete ns whatap-monitoring
+   kubectl delete clusterrole whatap
+   kubectl delete clusterrolebinding whatap
+   helm install whatap-kube-agent whatap/kube -f values.yaml
+   ```
+
+### _values.yaml_主要設定項目
+
+WhaTap Kubernetesエージェントの設定を修正するには、デフォルト設定ファイル(_values.yaml_)を修正する必要があります。_values.yaml_ファイル内の主な設定項目を次のように案内します。 
+
+<div class='k8s-values-yaml-table'>
+
+| キー                                                                   | タイプ     | デフォルト値                   | 説明                                                         |
+| -------------------------------------------------------------------- | ------- | ------------------------ | ---------------------------------------------------------- |
+| `whatap.license`                                                     | String  | `# <license-key>`        | Whatapライセンスキー                                              |
+| `whatap.host`                                                        | String  | `# <whatap-server-host>` | Whatapサーバーのホストアドレス                                         |
+| `whatap.port`                                                        | Int     | `# <whatap-server-port>` | Whatapポート番号                                                |
+| `containerRuntime`                                                   | String  | `"docker"`               | 使用中のコンテナランタイム。`"docker"`、`"containerd"`、`"crio"`のいずれかを選択   |
+| `daemonSet.name`                                                     | String  | `whatap-node-agent`      | DaemonSetの名前                                               |
+| `daemonSet.label`                                                    | String  | `whatap-node-agent`      | DaemonSetに指定するラベル                                          |
+| `daemonSet.initContainers.nodeDebugger.enabled`                      | Bool    | `true`                   | Whatapノードデバッガコンテナの活性化有無                                    |
+| `daemonSet.containers.nodeHelper.image`                              | String  | `whatap/kube_mon`        | nodeHelperコンテナのイメージ                                        |
+| `daemonSet.containers.nodeHelper.requests.memory`                    | String  | `100Mi`                  | nodeHelper MEMORY request                                  |
+| `daemonSet.containers.nodeHelper.requests.cpu`                       | String  | `100m`                   | nodeHelper CPU request                                     |
+| `daemonSet.containers.nodeHelper.limits.memory`                      | String  | `350Mi`                  | nodeHelper MEMORY limit                                    |
+| `daemonSet.containers.nodeHelper.limits.cpu`                         | String  | `200m`                   | nodeHelper CPU limit                                       |
+| `daemonSet.containers.nodeAgent.image`                               | String  | `whatap/kube_mon`        | nodeAgentコンテナのイメージ                                         |
+| `daemonSet.containers.nodeAgent.requests.memory`                     | String  | `300Mi`                  | nodeAgent MEMORY request                                   |
+| `daemonSet.containers.nodeAgent.requests.cpu`                        | String  | `100m`                   | nodeAgent CPU request                                      |
+| `daemonSet.containers.nodeAgent.limits.memory`                       | String  | `350Mi`                  | nodeAgent MEMORY limit                                     |
+| `daemonSet.containers.nodeAgent.limits.cpu`                          | String  | `200m`                   | nodeAgent CPU limit                                        |
+| `deployment.name`                                                    | String  | `whatap-master-agent`    | Deploymentの名前                                              |
+| `deployment.label`                                                   | String  | `whatap-master-agent`    | Deploymentに指定するラベル                                         |
+| `deployment.replicas`                                                | Int     | `1`                      | Deploymentのreplica数                                        |
+| `deployment.containers.controlPlaneHelper.enabled`                   | Boolean | `true`                   | whatap-control-plane-helperコンテナの活性化有無                      |
+| `deployment.containers.controlPlaneHelper.image`                     | String  | `"whatap/kube_mon"`      | controlPlaneHelperコンテナのイメージ                                |
+| `deployment.containers.controlPlaneHelper.port`                      | String  | `9496`                   | controlPlaneHelperコンテナのポート番号です                             |
+| `deployment.containers.controlPlaneHelper.resources.requests.memory` | String  | `"300Mi"`                | controlPlaneHelperコンテナMEMORY request                       |
+| `deployment.containers.controlPlaneHelper.resources.requests.cpu`    | String  | `"100m"`                 | controlPlaneHelperコンテナCPU request                          |
+| `deployment.containers.controlPlaneHelper.resources.limits.memory`   | String  | `"350Mi"`                | controlPlaneHelperコンテナMEMORY limit                         |
+| `deployment.containers.controlPlaneHelper.resources.limits.cpu`      | String  | `"200m"`                 | controlPlaneHelperコンテナCPU limit                            |
+| `deployment.containers.masterAgent.name`                             | String  | `whatap-master-agent`    | masterAgentコンテナ名                                           |
+| `deployment.containers.masterAgent.image`                            | String  | `"whatap/kube_mon"`      | masterAgentコンテナイメージ                                        |
+| `deployment.containers.masterAgent.port`                             | Int     | `6600`                   | masterAgentコンテナポート番号                                       |
+| `deployment.containers.masterAgent.resources.requests.memory`        | String  | `"300Mi"`                | masterAgentコンテナMEMORY request                              |
+| `deployment.containers.masterAgent.resources.requests.cpu`           | String  | `"100m"`                 | masterAgentコンテナCPU request                                 |
+| `deployment.containers.masterAgent.resources.limits.memory`          | String  | `"350Mi"`                | masterAgentコンテナMEMORY limit                                |
+| `deployment.containers.masterAgent.resources.limits.cpu`             | String  | `"200m"`                 | masterAgentコンテナCPU request                                 |
+
+</div>
+
+:::note 
+
+Helmチャート基準**インストール問題の解決**についての案内は、[次の文書](agent-troubleshooting#troubleshooting-helm-chart)を参考にしてください。
+
+:::
+
+</TabItem>
+
+<TabItem value='yaml' label='YAML' default>
+
+### YAMLファイル基準インストール
+
 ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントを生成してください。
 
 1. 次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
@@ -122,9 +239,13 @@ oc create -f whatap_openshift_scc.yaml
 
 :::note
 
-**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります**。デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
+**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります**。デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Memory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
 
 :::
+
+</TabItem>
+
+</Tabs>
 
 ## Kubernetesエージェントのインストールを確認 {#check-kubernetes-agent}
 
