@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[42012],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[27512],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 72563:
+/***/ 1780:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,61 +308,43 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_22',
-    title: 'DBX v1.6.22',
+    id: 'xos-1_1_1a',
+    title: 'xos v1.1.1a',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_21',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_22",
-    "id": "release-notes/db/dbx-1_6_22",
-    "title": "DBX v1.6.22",
-    "description": "2024년 02월 15일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.22.mdx",
+    "unversionedId": "release-notes/db/xos-1_1_1a",
+    "id": "release-notes/db/xos-1_1_1a",
+    "title": "xos v1.1.1a",
+    "description": "배포일: 2021-12-20",
+    "source": "@site/docs/release-notes/db/xos-1.1.1a.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_22",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_22",
+    "slug": "/release-notes/db/xos-1_1_1a",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.22.mdx",
+    "editUrl": "undefined/docs/release-notes/db/xos-1.1.1a.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_22",
-        "title": "DBX v1.6.22",
+        "id": "xos-1_1_1a",
+        "title": "xos v1.1.1a",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_21",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "DBX v1.6.23",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_23"
+        "title": "xos v1.1.1b",
+        "permalink": "/whatap-docs/release-notes/db/xos-1_1_1b"
     },
     "next": {
-        "title": "DBX v1.6.21",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_21"
+        "title": "xos 지난 버전",
+        "permalink": "/whatap-docs/release-notes/db/xos-previous"
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: '공통',
-        id: '공통',
-        level: 2
-    },
-    {
-        value: 'Oracle',
-        id: 'oracle',
-        level: 2
-    }
-];
-const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
-    };
-const Status = makeShortcode("Status");
+const toc = [];
 const layoutProps = {
     toc
 };
@@ -374,15 +356,9 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "공통"
-    }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " 에이전트 설정값의 형식이 boolean이면 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "true"), " / ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "false"), " 값으로 통일", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "oracle"
-    }, `Oracle`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "redo entries"), " 지표 추가");
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2021-12-20`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `io_user`), ` 를 지정하지 않을 경우 죽는 현상 막음`));
 }
 MDXContent.isMDXComponent = true;
 

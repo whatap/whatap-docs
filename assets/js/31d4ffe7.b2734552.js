@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[31509],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[43507],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 1237:
+/***/ 29032:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,43 +308,50 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'xos-1_1_1',
-    title: 'xos v1.1.1',
+    id: 'xos-1_1_8b',
+    title: 'xos v1.1.8b',
     toc_max_heading_level: 2,
+    pagination_next: 'release-notes/db/xos-1_1_8a',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/xos-1_1_1",
-    "id": "release-notes/db/xos-1_1_1",
-    "title": "xos v1.1.1",
-    "description": "배포일: 2021-11-10",
-    "source": "@site/docs/release-notes/db/xos-1.1.1.mdx",
+    "unversionedId": "release-notes/db/xos-1_1_8b",
+    "id": "release-notes/db/xos-1_1_8b",
+    "title": "xos v1.1.8b",
+    "description": "2024년 03월 15일",
+    "source": "@site/docs/release-notes/db/xos-1.1.8b.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/xos-1_1_1",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1",
+    "slug": "/release-notes/db/xos-1_1_8b",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_8b",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/xos-1.1.1.mdx",
+    "editUrl": "undefined/docs/release-notes/db/xos-1.1.8b.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "xos-1_1_1",
-        "title": "xos v1.1.1",
+        "id": "xos-1_1_8b",
+        "title": "xos v1.1.8b",
         "toc_max_heading_level": 2,
+        "pagination_next": "release-notes/db/xos-1_1_8a",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "xos v1.1.1a",
-        "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a"
+        "title": "DBX 지난 버전",
+        "permalink": "/whatap-docs/release-notes/db/dbx-previous"
     },
     "next": {
-        "title": "xos 지난 버전",
-        "permalink": "/whatap-docs/release-notes/db/xos-previous"
+        "title": "xos v1.1.8a",
+        "permalink": "/whatap-docs/release-notes/db/xos-1_1_8a"
     }
 };
 const assets = {};
 const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
+    };
+const Status = makeShortcode("Status");
 const layoutProps = {
     toc
 };
@@ -356,7 +363,9 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2021-11-10`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `pg slow_query 기능 추가`));
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 프로세스 값이 음수로 출력될 경우 로그 수정");
 }
 MDXContent.isMDXComponent = true;
 

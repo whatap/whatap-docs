@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[11457],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[69600],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 81935:
+/***/ 50691:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,43 +308,54 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_31',
-    title: 'DBX v1.6.31',
-    pagination_next: 'release-notes/db/dbx-1_6_30',
+    id: 'dbx-1_6_35',
+    title: 'DBX v1.6.35',
+    pagination_next: 'release-notes/db/dbx-1_6_33',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_31",
-    "id": "release-notes/db/dbx-1_6_31",
-    "title": "DBX v1.6.31",
-    "description": "2024년 03월 04일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.31.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_35",
+    "id": "release-notes/db/dbx-1_6_35",
+    "title": "DBX v1.6.35",
+    "description": "2024년 03월 15일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.35.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_31",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_31",
+    "slug": "/release-notes/db/dbx-1_6_35",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_35",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.31.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.35.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_31",
-        "title": "DBX v1.6.31",
-        "pagination_next": "release-notes/db/dbx-1_6_30",
+        "id": "dbx-1_6_35",
+        "title": "DBX v1.6.35",
+        "pagination_next": "release-notes/db/dbx-1_6_33",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
+        "title": "DBX v1.7.0",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_7_0"
     },
     "next": {
-        "title": "DBX v1.6.30",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_30"
+        "title": "DBX v1.6.33",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_33"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: 'Postgresql/Oracle/MySQL',
+        id: 'postgresqloraclemysql',
+        level: 2
+    },
+    {
+        value: 'PostgreSQL',
+        id: 'postgresql',
+        level: 2
+    }
+];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
@@ -361,9 +372,24 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 04일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "postgresqloraclemysql"
+    }, `Postgresql/Oracle/MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 에이전트가 종료된 후 재기동 시 기본값으로 해소 알림을 받을 수 있도록 처리");
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "db_agentinfo"), " 수정: ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "dbInstNo"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "db_inst no"), " 지표를 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "db_inst_id"), " 지표로 통일", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "postgresql"
+    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 에이전트 설치 파일에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "setup.bat"), " 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `setup.bat`), ` 파일을 이용한 빠른 에이전트 설정 방법에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "../../postgresql/install-agent-quick-setup"
+    }, `다음 문서`), `를 참조하세요.`)));
 }
 MDXContent.isMDXComponent = true;
 

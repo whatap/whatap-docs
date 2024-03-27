@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[27512],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[45607],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 1780:
+/***/ 88492:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,43 +308,57 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'xos-1_1_1a',
-    title: 'xos v1.1.1a',
+    id: 'dbx-1_6_21',
+    title: 'DBX v1.6.21',
     toc_max_heading_level: 2,
+    pagination_next: 'release-notes/db/dbx-1_6_20',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/xos-1_1_1a",
-    "id": "release-notes/db/xos-1_1_1a",
-    "title": "xos v1.1.1a",
-    "description": "배포일: 2021-12-20",
-    "source": "@site/docs/release-notes/db/xos-1.1.1a.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_21",
+    "id": "release-notes/db/dbx-1_6_21",
+    "title": "DBX v1.6.21",
+    "description": "2024년 02월 07일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.21.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/xos-1_1_1a",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a",
+    "slug": "/release-notes/db/dbx-1_6_21",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_21",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/xos-1.1.1a.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.21.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "xos-1_1_1a",
-        "title": "xos v1.1.1a",
+        "id": "dbx-1_6_21",
+        "title": "DBX v1.6.21",
         "toc_max_heading_level": 2,
+        "pagination_next": "release-notes/db/dbx-1_6_20",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "xos v1.1.1b",
-        "permalink": "/whatap-docs/release-notes/db/xos-1_1_1b"
-    },
     "next": {
-        "title": "xos v1.1.1",
-        "permalink": "/whatap-docs/release-notes/db/xos-1_1_1"
+        "title": "DBX v1.6.20",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_20"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: 'PostgreSQL',
+        id: 'postgresql',
+        level: 2
+    },
+    {
+        value: 'Altibase',
+        id: 'altibase',
+        level: 2
+    }
+];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
+    };
+const Status = makeShortcode("Status");
 const layoutProps = {
     toc
 };
@@ -356,9 +370,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `배포일: 2021-12-20`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `io_user`), ` 를 지정하지 않을 경우 죽는 현상 막음`));
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 07일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "postgresql"
+    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " PG SQL 통계 데이터가 수집되지 않는 버그 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "altibase"
+    }, `Altibase`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "rep_gap_max"), " 지표 추가");
 }
 MDXContent.isMDXComponent = true;
 

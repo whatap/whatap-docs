@@ -411,6 +411,20 @@ function MDXContent(_param) {
     }, `JVM 옵션 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `WebLogic 애플리케이션 서버 환경에서 Java 모니터링 에이전트를 효과적으로 사용하기 위해 필요한 JVM 옵션을 추가하는 방법을 안내합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용하는 운영체제를 확인 후 설정을 완료하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Tabs, {
         mdxType: "Tabs"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
+        value: "linux",
+        label: "Linux",
+        mdxType: "TabItem"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-bash",
+        "metastring": "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh\"",
+        "title": "\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh\""
+    }, `########## WHATAP START ############
+WHATAP_HOME=/path/to/whatap
+WHATAP_JAR=\`ls \${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1\`
+JAVA_OPTIONS="\${JAVA_OPTIONS} -javaagent:\${WHATAP_JAR} "
+########## WHATAP END ############
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
         value: "windows",
         label: "Windows",
         default: true,
@@ -421,35 +435,17 @@ function MDXContent(_param) {
         "metastring": "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.bat\"",
         "title": "\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.bat\""
     }, `rem ########## WHATAP START ############
-set WHATAP_HOME=C:\\whatap
-for /f %%f in ('dir /b /on "%WHATAP_HOME%\\whatap.agent-X.Y.Z.jar"') do set last=%%f
+set WHATAP_HOME=\\path\\to\\whatap
+for /f %%f in ('dir /b /on "%WHATAP_HOME%\\whatap.agent-*.jar"') do set last=%%f
 set WHATAP_JAR=%last%
 set WHATAP_OPTS=-javaagent:%WHATAP_HOME%\\%WHATAP_JAR%
-
-if "x%JAVA_OPTS%"=="x" goto setWhatap
-
-set JAVA_OPTS_TMP=%JAVA_OPTS:"=%
-if not "x%JAVA_OPTS_TMP:whatap=%"=="x%JAVA_OPTS_TMP%" goto endWhatap
-
+if "x%JAVA_OPTIONS%"=="x" goto setWhatap
+set JAVA_OPTIONS_TMP=%JAVA_OPTIONS:"=%
+if not "x%JAVA_OPTIONS_TMP:whatap=%"=="x%JAVA_OPTIONS_TMP%" goto endWhatap
 :setWhatap
-set JAVA_OPTS=%JAVA_OPTS% %WHATAP_OPTS%
-
+set JAVA_OPTIONS=%JAVA_OPTIONS% %WHATAP_OPTS%
 :endWhatap
 rem ########## WHATAP END ############
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
-        value: "mac",
-        label: "MAC",
-        mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-bash",
-        "metastring": "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh\"",
-        "title": "\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh\""
-    }, `########## WHATAP START ############
-WHATAP_HOME=/whatap
-WHATAP_JAR=\`ls \${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1\`
-JAVA_OPTS="\${JAVA_OPTS} -javaagent:\${WHATAP_JAR} "
-########## WHATAP END ############
 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
