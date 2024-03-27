@@ -367,10 +367,6 @@
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar mysqlSidebar"
   },
-  "sidebar.mysqlSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar mysqlSidebar"
-  },
   "sidebar.mysqlSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar mysqlSidebar, linking to the doc mysql/monitoring-support"
@@ -563,10 +559,6 @@
     "message": "Analysis",
     "description": "The label for category 분석 in sidebar redisSidebar"
   },
-  "sidebar.redisSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar redisSidebar"
-  },
   "sidebar.redisSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar redisSidebar, linking to the doc redis/monitoring-support"
@@ -587,10 +579,6 @@
     "message": "Learn about the main features",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar mongodbSidebar"
   },
-  "sidebar.mongodbSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "Checking the real-time DB performance metrics",
-    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar mongodbSidebar"
-  },
   "sidebar.mongodbSidebar.category.Flex 보드": {
     "message": "Flex Board",
     "description": "The label for category Flex 보드 in sidebar mongodbSidebar"
@@ -598,10 +586,6 @@
   "sidebar.mongodbSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar mongodbSidebar"
-  },
-  "sidebar.mongodbSidebar.category.분석과 통계": {
-    "message": "Analysis and statistics",
-    "description": "The label for category 분석과 통계 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
@@ -1439,14 +1423,6 @@
     "message": "Handling logs",
     "description": "The label for the doc item 로그 처리하기 in sidebar logSidebar, linking to the doc log/log-process"
   },
-  "sidebar.releaseSidebar.doc.v1.0.4 (53)": {
-    "message": "v1.0.4 (53)",
-    "description": "The label for the doc item v1.0.4 (53) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_4"
-  },
-  "sidebar.releaseSidebar.doc.v1.0.3 (52)": {
-    "message": "v1.0.3 (52)",
-    "description": "The label for the doc item v1.0.3 (52) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_3"
-  },
   "sidebar.indexSidebar.doc.모바일 앱": {
     "message": "Mobile App",
     "description": "The label for the doc item 모바일 앱 in sidebar indexSidebar, linking to the doc mobile-app"
@@ -1467,17 +1443,9 @@
     "message": "OpenTelemetry",
     "description": "The label for category OpenTelemetry in sidebar otelSidebar"
   },
-  "sidebar.releaseSidebar.doc.v1.0.6 (74)": {
-    "message": "v1.0.6 (74)",
-    "description": "The label for the doc item v1.0.6 (74) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_6"
-  },
   "sidebar.npmsidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar npmsidebar"
-  },
-  "sidebar.releaseSidebar.doc.v1.0.7 (81)": {
-    "message": "v1.0.7 (81)",
-    "description": "The label for the doc item v1.0.7 (81) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_7"
   },
   "sidebar.javaSidebar.category.분석": {
     "message": "Analysis",
@@ -1578,5 +1546,65 @@
   "sidebar.mysqlSidebar.category.MySQL 모니터링": {
     "message": "MySQL Monitoring",
     "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
+  },
+  "sidebar.postgreSidebar.category.에이전트 설치": {
+    "message": "Agent Installation",
+    "description": "The label for category 에이전트 설치 in sidebar postgreSidebar"
+  },
+  "sidebar.mysqlSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar mysqlSidebar"
+  },
+  "sidebar.redisSidebar.category.로그": {
+    "message": "Log",
+    "description": "The label for category 로그 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar redisSidebar"
+  },
+  "sidebar.mongodbSidebar.category.대시보드": {
+    "message": "Dashboard",
+    "description": "The label for category 대시보드 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.분석": {
+    "message": "Analysis",
+    "description": "The label for category 분석 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.통계/보고서": {
+    "message": "Stat/Report",
+    "description": "The label for category 통계/보고서 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.로그": {
+    "message": "Log",
+    "description": "The label for category 로그 in sidebar mongodbSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.8": {
+    "message": "v1.0.8",
+    "description": "The label for the doc item v1.0.8 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_8"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.7": {
+    "message": "v1.0.7",
+    "description": "The label for the doc item v1.0.7 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_7"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.6": {
+    "message": "v1.0.6",
+    "description": "The label for the doc item v1.0.6 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_6"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.4": {
+    "message": "v1.0.4",
+    "description": "The label for the doc item v1.0.4 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_4"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.3": {
+    "message": "v1.0.3",
+    "description": "The label for the doc item v1.0.3 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_3"
+  },
+  "sidebar.rumsSidebar.category.브라우저 에이전트 적용": {
+    "message": "Application of the browser agent",
+    "description": "The label for category 브라우저 에이전트 적용 in sidebar rumsSidebar"
+  },
+  "sidebar.kubeSidebar.doc.설정하기": {
+    "message": "Configuration",
+    "description": "The label for the doc item 설정하기 in sidebar kubeSidebar, linking to the doc kubernetes/set-agent"
   }
 }
