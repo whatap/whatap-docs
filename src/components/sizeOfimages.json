@@ -6771,6 +6771,30 @@
     "width": 1200,
     "height": 629
   },
+  "ipa-agent-status-golang-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-golang-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-golang.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-php-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-php-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-php.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "ipa-datasource-java-en.png": {
     "width": 1200,
     "height": 271
@@ -6782,6 +6806,30 @@
   "ipa-datasource-java.png": {
     "width": 1200,
     "height": 264
+  },
+  "ipa-dependency-module-golang-en.png": {
+    "width": 1200,
+    "height": 513
+  },
+  "ipa-dependency-module-golang-ja.png": {
+    "width": 1200,
+    "height": 513
+  },
+  "ipa-dependency-module-golang.png": {
+    "width": 1200,
+    "height": 513
+  },
+  "ipa-dependency-module-php-en.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "ipa-dependency-module-php-ja.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "ipa-dependency-module-php.png": {
+    "width": 1200,
+    "height": 631
   },
   "ipa-env-var-dotnet-en.png": {
     "width": 1200,
