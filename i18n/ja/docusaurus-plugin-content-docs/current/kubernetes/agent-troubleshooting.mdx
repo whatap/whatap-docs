@@ -1,0 +1,55 @@
+---
+id: agent-troubleshooting
+title: インストール問題の解決
+description: Javaエージェントのインストール時に発生する可能性のある問題を確認することができます。
+hide_table_of_contents: true
+toc_max_heading_level: 2
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - Troubleshooting
+  - 問題解決
+  - Helmチャート
+---
+
+## Helmチャート基準のインストール問題の解決{#troubleshooting-helm-chart}
+
+<div class ='faq'>
+
+### 名前が`whatap`である他のHelmリポジトリがある場合
+
+| "whatap" already exists with the same configuration, skipping |
+| ------------------------------------------------------------- |
+
+すでに同じ名前の他の`whatap`リポジトリが存在する場合は、次のコマンドを使用して既存の`whatap`リポジトリを削除してからインストールを進めてください。
+
+```shell
+helm repo remove whatap
+```
+
+### 名前が`whatap-monitoring`である他のネームスペースがクラスターにある場合
+
+| Error: INSTALLATION FAILED: Unable to continue with install: Namespace "whatap-monitoring" in namespace "" exists and cannot be imported into the current release |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+クラスターに`whatap-monitoring`ネームスペースが存在する場合、ユーザーが_yaml_ファイルベースですでにWhaTap Kubernetesエージェントをインストールしているためです。 この場合、次のコマンドにより、既存の`whatap-monitoring`ネームスペースと関連リソースを削除してください。
+
+```shell
+kubectl delete namespace whatap-monitoring
+kubectl delete clusterrolebinding whatap
+kubectl delete clusterrole whatap
+```
+
+### `clusterrole`、`clusterrolebinding`リソースがすでにクラスターにある場合
+
+| Error: INSTALLATION FAILED: Unable to continue with install: ClusterRole "whatap" in namespace "" exists and cannot be imported into the current release |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+クラスターへ`clusterrole`、`clusterrolebinding`リソースがすでに存在する場合は、次のコマンドでそのリソースを削除してください。
+
+```shell
+kubectl delete clusterrolebinding whatap
+kubectl delete clusterrole whatap
+```
+
+</div>

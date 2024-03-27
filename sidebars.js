@@ -5235,6 +5235,7 @@ const sidebars = {
             'kubernetes/create-name-space-project'
           ]
         },
+        'kubernetes/agent-troubleshooting',
         {
           type: 'doc',
           label: '설정하기',
@@ -5349,6 +5350,7 @@ const sidebars = {
               items: [
                 'kubernetes/resource-pod-list',
                 'kubernetes/resource-application-list',
+                'kubernetes/deployment-list',
               ],
             },
             {
@@ -5360,6 +5362,7 @@ const sidebars = {
                 'kubernetes/resource-node-list',
                 'kubernetes/object-manifest',
                 'kubernetes/kube-apiserver-dashboard',
+                'kubernetes/kube-apiserver-metrics-search',
                 'kubernetes/resource-namespace',
               ],
             },
@@ -5369,9 +5372,11 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                // 'kubernetes/metrics-intro',
-                // 'kubernetes/metrics-chart',
-                // 'kubernetes/metrics-detect-anormal',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/pod-init-perform-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/pod-init-perform',
                 'kubernetes/trs-view',
                 'kubernetes/multiservice-hitmap',

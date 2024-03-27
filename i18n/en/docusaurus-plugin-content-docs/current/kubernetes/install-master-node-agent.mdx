@@ -93,6 +93,123 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Creating the Kubernetes agent {#create-kubernetes-agent}
 
+When installing the WhaTap Kubernetes agent, the guides based on _yaml_ files and _helm_ charts are provided as follows.
+
+<Tabs>
+
+<TabItem value='helm' label='Helm Chart' default>
+
+### Checking the Helm version and WhaTap repository network connection status {#k8s-helm-prechek}
+
+1. Check the _helm_ version by using the following command. It is available in the version 3.x or later. 
+
+   ```bash
+   helm version
+   # version.BuildInfo{Version:"v3.x", GitCommit:"xxx", GitTreeState:"clean", GoVersion:"go1.20.8"}
+   ```
+
+2. Check the network connectivity to the WhaTap Helm repository. 
+
+   ```bash
+   curl https://whatap.github.io/helm/ping 
+   # pong
+   ```
+
+### Helm chart-based installation {#k8s-helm-chart-install}
+
+After adding the WhaTap Helm repository, create a default configuration file appropriate for Container Runtime and then install the agent.
+
+1. Execute the following command to add the WhaTap Helm repository.
+
+   ```bash
+   helm repo add whatap https://whatap.github.io/helm/
+   helm repo update
+   ```
+
+2. Check the user **CONTAINER-RUNTIME** by executing the following command: 
+
+   ```bash
+   kubectl get nodes -o wide
+   ```
+
+   ![](/img/k8s-check-containerRuntime.png)
+
+3. After checking the **CONTAINER-RUNTIME**, create a default configuration file (_values.yaml_) required for installation as follows. 
+
+   ```yaml
+   containerRuntime: #CONTAINER-RUNTIME
+   whatap:
+       license: #WHATAP-LICENESE-KEY
+       host: "13.124.11.223/13.209.172.35"
+       port: "6600"
+   ```
+
+4. Execute the following command to install the agent application. 
+
+   ```bash
+   kubectl delete ns whatap-monitoring
+   kubectl delete clusterrole whatap
+   kubectl delete clusterrolebinding whatap
+   helm install whatap-kube-agent whatap/kube -f values.yaml
+   ```
+
+### Major configuration items for _values.yaml_
+
+To modify the WhaTap Kubernetes agent settings, modify the default configuration file (_values.yaml_). The major settings in the _values.yaml_ file are as follows: 
+
+<div class='k8s-values-yaml-table'>
+
+| Key                                                                  | Type    | Default                  | Description                                                                          |
+| -------------------------------------------------------------------- | ------- | ------------------------ | ------------------------------------------------------------------------------------ |
+| `whatap.license`                                                     | String  | `# <license-key>`        | Whatap license key                                                                   |
+| `whatap.host`                                                        | String  | `# <whatap-server-host>` | Host address of the Whatap server                                                    |
+| `whatap.port`                                                        | Int     | `# <whatap-server-port>` | Whatap port number                                                                   |
+| `containerRuntime`                                                   | String  | `"docker"`               | Container runtime in use. Select any of `"docker"`, `"containerd"`, and `"crio"`.    |
+| `daemonSet.name`                                                     | String  | `whatap-node-agent`      | Name of DaemonSet                                                                    |
+| `daemonSet.label`                                                    | String  | `whatap-node-agent`      | Label to assign to DaemonSet                                                         |
+| `daemonSet.initContainers.nodeDebugger.enabled`                      | Bool    | `true`                   | Whether to enable the Whatap node debugger container                                 |
+| `daemonSet.containers.nodeHelper.image`                              | String  | `whatap/kube_mon`        | Image of the nodeHelper container                                                    |
+| `daemonSet.containers.nodeHelper.requests.memory`                    | String  | `100Mi`                  | nodeHelper MEMORY request                                                            |
+| `daemonSet.containers.nodeHelper.requests.cpu`                       | String  | `100m`                   | nodeHelper CPU request                                                               |
+| `daemonSet.containers.nodeHelper.limits.memory`                      | String  | `350Mi`                  | nodeHelper MEMORY limit                                                              |
+| `daemonSet.containers.nodeHelper.limits.cpu`                         | String  | `200m`                   | nodeHelper CPU limit                                                                 |
+| `daemonSet.containers.nodeAgent.image`                               | String  | `whatap/kube_mon`        | Image of the nodeAgent container                                                     |
+| `daemonSet.containers.nodeAgent.requests.memory`                     | String  | `300Mi`                  | nodeAgent MEMORY request                                                             |
+| `daemonSet.containers.nodeAgent.requests.cpu`                        | String  | `100m`                   | nodeAgent CPU request                                                                |
+| `daemonSet.containers.nodeAgent.limits.memory`                       | String  | `350Mi`                  | nodeAgent MEMORY limit                                                               |
+| `daemonSet.containers.nodeAgent.limits.cpu`                          | String  | `200m`                   | nodeAgent CPU limit                                                                  |
+| `deployment.name`                                                    | String  | `whatap-master-agent`    | Name of Deployment                                                                   |
+| `deployment.label`                                                   | String  | `whatap-master-agent`    | Label to assign to Deployment                                                        |
+| `deployment.replicas`                                                | Int     | `1`                      | Number of replicas in Deployment                                                     |
+| `deployment.containers.controlPlaneHelper.enabled`                   | Boolean | `true`                   | Whether to enable the whatap-control-plane-helper container                          |
+| `deployment.containers.controlPlaneHelper.image`                     | String  | `"whatap/kube_mon"`      | Image of the controlPlaneHelper container                                            |
+| `deployment.containers.controlPlaneHelper.port`                      | String  | `9496`                   | Port number of the controlPlaneHelper container.                                     |
+| `deployment.containers.controlPlaneHelper.resources.requests.memory` | String  | `"300Mi"`                | MEMORY request of the controlPlaneHelper container.                                  |
+| `deployment.containers.controlPlaneHelper.resources.requests.cpu`    | String  | `"100m"`                 | CPU request of the controlPlaneHelper container                                      |
+| `deployment.containers.controlPlaneHelper.resources.limits.memory`   | String  | `"350Mi"`                | MEMORY limit of the controlPlaneHelper container.                                    |
+| `deployment.containers.controlPlaneHelper.resources.limits.cpu`      | String  | `"200m"`                 | CPU limit of the controlPlaneHelper container.                                       |
+| `deployment.containers.masterAgent.name`                             | String  | `whatap-master-agent`    | Name of the masterAgent container.                                                   |
+| `deployment.containers.masterAgent.image`                            | String  | `"whatap/kube_mon"`      | Image of the masterAgent container                                                   |
+| `deployment.containers.masterAgent.port`                             | Int     | `6600`                   | Port number of the masterAgent container.                                            |
+| `deployment.containers.masterAgent.resources.requests.memory`        | String  | `"300Mi"`                | MEMORY request of the masterAgent container                                          |
+| `deployment.containers.masterAgent.resources.requests.cpu`           | String  | `"100m"`                 | CPU request of the masterAgent container                                             |
+| `deployment.containers.masterAgent.resources.limits.memory`          | String  | `"350Mi"`                | MEMORY limit of the masterAgent container                                            |
+| `deployment.containers.masterAgent.resources.limits.cpu`             | String  | `"200m"`                 | CPU request of the masterAgent container                                             |
+
+</div>
+
+:::note 
+
+For the guide to **Installation troubleshooting** based on the Helm chart, see [the following](agent-troubleshooting#troubleshooting-helm-chart).
+
+:::
+
+</TabItem>
+
+<TabItem value='yaml' label='YAML' default>
+
+### YAML file-based installation
+
 Download the _YAML_ file that is suitable for your Kubernetes version and container runtime, and then create an agent.
 
 1. Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command:
@@ -125,6 +242,10 @@ Download the _YAML_ file that is suitable for your Kubernetes version and contai
 **Using the master agent resources can be affected by the increase in the container count**. Out of memory (OOM) may occur if the resources are used beyond the default memory limit (350 MB). You can change the settings through the _YAML_ file.
 
 :::
+
+</TabItem>
+
+</Tabs>
 
 ## Checking the Kubernetes agent installation {#check-kubernetes-agent}
 
