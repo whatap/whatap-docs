@@ -2580,6 +2580,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis/log-main'
+              },
+              items: [
+                'redis/log-db',
+                'redis/log-lt',
+                'redis/log-exp',
+                'redis/log-search',
+                'redis/log-setting',
+                'redis/log-parser',
+              ]
+            },
+            {
+              type: 'category',
               label: '경고 알림',
               collapsible: true,
               collapsed: true,
@@ -2722,6 +2740,24 @@ const sidebars = {
                 'mongodb/database-size',
                 'mongodb/report-intro'
               ],
+            },
+            {
+              type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mongodb/log-main'
+              },
+              items: [
+                'mongodb/log-db',
+                'mongodb/log-lt',
+                'mongodb/log-exp',
+                'mongodb/log-search',
+                'mongodb/log-setting',
+                'mongodb/log-parser',
+              ]
             },
             {
               type: 'category',
