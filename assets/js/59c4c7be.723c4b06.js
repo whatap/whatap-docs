@@ -310,10 +310,11 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'agent-name',
     title: '에이전트 이름 식별',
-    description: '모니터링 대상을 식별하기 위해 에이전트 이름 설정 방법을 제공합니다.',
+    description: '모니터링 대상을 구별하기 위한 애플리케이션 서버의 고유 식별자 설정에 대해 안내합니다. 모니터링 대상 시스템 내에서 애플리케이션 서버를 정확히 구분하는 데 필수적입니다. 서버 유형, IP 등의 정보를 기반으로 한 자동 이름 지정 방식과 사용자가 직접 whatap.conf 파일이나 JVM 옵션을 통해 에이전트 이름을 설정하는 방법을 확인할 수 있습니다.',
     tags: [
         'Java',
-        '에이전트 이름'
+        '에이전트 설정',
+        'whatap.conf'
     ]
 };
 const contentTitle = undefined;
@@ -321,7 +322,7 @@ const metadata = {
     "unversionedId": "java/agent-name",
     "id": "java/agent-name",
     "title": "에이전트 이름 식별",
-    "description": "모니터링 대상을 식별하기 위해 에이전트 이름 설정 방법을 제공합니다.",
+    "description": "모니터링 대상을 구별하기 위한 애플리케이션 서버의 고유 식별자 설정에 대해 안내합니다. 모니터링 대상 시스템 내에서 애플리케이션 서버를 정확히 구분하는 데 필수적입니다. 서버 유형, IP 등의 정보를 기반으로 한 자동 이름 지정 방식과 사용자가 직접 whatap.conf 파일이나 JVM 옵션을 통해 에이전트 이름을 설정하는 방법을 확인할 수 있습니다.",
     "source": "@site/docs/java/agent-name.mdx",
     "sourceDirName": "java",
     "slug": "/java/agent-name",
@@ -334,18 +335,23 @@ const metadata = {
             "permalink": "/whatap-docs/tags/java"
         },
         {
-            "label": "에이전트 이름",
-            "permalink": "/whatap-docs/tags/에이전트-이름"
+            "label": "에이전트 설정",
+            "permalink": "/whatap-docs/tags/에이전트-설정"
+        },
+        {
+            "label": "whatap.conf",
+            "permalink": "/whatap-docs/tags/whatap-conf"
         }
     ],
     "version": "current",
     "frontMatter": {
         "id": "agent-name",
         "title": "에이전트 이름 식별",
-        "description": "모니터링 대상을 식별하기 위해 에이전트 이름 설정 방법을 제공합니다.",
+        "description": "모니터링 대상을 구별하기 위한 애플리케이션 서버의 고유 식별자 설정에 대해 안내합니다. 모니터링 대상 시스템 내에서 애플리케이션 서버를 정확히 구분하는 데 필수적입니다. 서버 유형, IP 등의 정보를 기반으로 한 자동 이름 지정 방식과 사용자가 직접 whatap.conf 파일이나 JVM 옵션을 통해 에이전트 이름을 설정하는 방법을 확인할 수 있습니다.",
         "tags": [
             "Java",
-            "에이전트 이름"
+            "에이전트 설정",
+            "whatap.conf"
         ]
     },
     "sidebar": "javaSidebar",
