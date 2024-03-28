@@ -749,7 +749,7 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), `(pageLoad)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "browser-analysis-user-session-log-details-pageload.png",
-        desc: "페이지 로드 이베니트",
+        desc: "페이지 로드 이벤트",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `웹 페이지를 로드할 때 발생하는 이벤트입니다. 이벤트 구간별 세부 시간 정보 및 로드한 리소스 세부 정보를 확인할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "TTL07736",
