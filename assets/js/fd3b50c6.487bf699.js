@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[18739],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[70570],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 38038:
+/***/ 55361:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_6_1',
-    title: 'Python Agent v1.6.1',
+    id: 'python-1_6_2',
+    title: 'Python Agent v1.6.2',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_6_0',
+    pagination_next: 'release-notes/python/python-1_6_1',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_6_1",
-    "id": "release-notes/python/python-1_6_1",
-    "title": "Python Agent v1.6.1",
-    "description": "2024년 03월 20일",
-    "source": "@site/docs/release-notes/python/python-1.6.1.mdx",
+    "unversionedId": "release-notes/python/python-1_6_2",
+    "id": "release-notes/python/python-1_6_2",
+    "title": "Python Agent v1.6.2",
+    "description": "2024년 03월 29일",
+    "source": "@site/docs/release-notes/python/python-1.6.2.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_6_1",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_1",
+    "slug": "/release-notes/python/python-1_6_2",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_2",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.6.1.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.6.2.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_6_1",
-        "title": "Python Agent v1.6.1",
+        "id": "python-1_6_2",
+        "title": "Python Agent v1.6.2",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_6_0",
+        "pagination_next": "release-notes/python/python-1_6_1",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
@@ -341,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
     },
     "next": {
-        "title": "Python Agent v1.6.0",
-        "permalink": "/whatap-docs/release-notes/python/python-1_6_0"
+        "title": "Python Agent v1.6.1",
+        "permalink": "/whatap-docs/release-notes/python/python-1_6_1"
     }
 };
 const assets = {};
@@ -363,15 +363,21 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 20일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 03월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap-hook.log"), " 반복적인 로그 호출 문제 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "exit_with_parent_process_enabled"), " 옵션 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "exit_with_parent_process_enabled"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "bool"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("br", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `Python 에이전트 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `WHATAP_HOME`), ` 경로에 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, `whatap.conf`), ` 파일을 통해 해당 옵션의 값을 설정하세요. 모니터링 대상 Python 프로세스 종료 시 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `whatap_python`), ` 프로세스의 종료 여부를 설정할 수 있습니다. 옵션의 값을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `true`), `로 설졍할 경우 모니터링 대상 애플리케이션 종료 시 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `whatap_python`), ` 프로세스가 함께 종료됩니다. 최대 1분이 소요됩니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.6.1/"
+        "href": "https://pypi.org/project/whatap-python/1.6.2/"
     }, `whatap-python · PyPI`))));
 }
 MDXContent.isMDXComponent = true;
