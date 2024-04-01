@@ -2318,11 +2318,14 @@ main {
   }
   .markdown .tabs-container {
     display: block;
+    visibility: visible;
   }
   .markdown .tabs-container div.margin-top--md {
     display: block;
+    visibility: visible;
   }
   .markdown .tabs-container div.margin-top--md div[role='tabpanel'] {
     display: block;
+    visibility: visible;
   }
 }
