@@ -897,7 +897,7 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "agent-load-amount"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "golang,php",
+        product: "php,nodejs,python",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidside_moduledependency-"
@@ -913,7 +913,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ProdImg, {
-        img: "ipa-dependency-module-php.png",
+        img: "ipa-dependency-module.png",
         desc: "모듈 의존성",
         mdxType: "ProdImg"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션에서 사용 중인 모듈 관련 정보를 조회할 수 있습니다.`)));

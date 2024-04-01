@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[70393],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36890],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 89480:
+/***/ 63776:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,29 +310,29 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'instance-performance-analysis',
     title: '인스턴스 성능 관리',
-    description: 'PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
+    description: 'Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
     tags: [
-        'PHP',
+        'Python',
         '애플리케이션',
         '인스턴스 성능 관리'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "php/instance-performance-analysis",
-    "id": "php/instance-performance-analysis",
+    "unversionedId": "python/instance-performance-analysis",
+    "id": "python/instance-performance-analysis",
     "title": "인스턴스 성능 관리",
-    "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-    "source": "@site/docs/php/instance-performance-analysis.mdx",
-    "sourceDirName": "php",
-    "slug": "/php/instance-performance-analysis",
-    "permalink": "/whatap-docs/php/instance-performance-analysis",
+    "description": "Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+    "source": "@site/docs/python/instance-performance-analysis.mdx",
+    "sourceDirName": "python",
+    "slug": "/python/instance-performance-analysis",
+    "permalink": "/whatap-docs/python/instance-performance-analysis",
     "draft": false,
-    "editUrl": "undefined/docs/php/instance-performance-analysis.mdx",
+    "editUrl": "undefined/docs/python/instance-performance-analysis.mdx",
     "tags": [
         {
-            "label": "PHP",
-            "permalink": "/whatap-docs/tags/php"
+            "label": "Python",
+            "permalink": "/whatap-docs/tags/python"
         },
         {
             "label": "애플리케이션",
@@ -347,17 +347,17 @@ const metadata = {
     "frontMatter": {
         "id": "instance-performance-analysis",
         "title": "인스턴스 성능 관리",
-        "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+        "description": "Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
         "tags": [
-            "PHP",
+            "Python",
             "애플리케이션",
             "인스턴스 성능 관리"
         ]
     },
-    "sidebar": "phpSidebar",
+    "sidebar": "pySidebar",
     "previous": {
         "title": "이벤트 수신 포맷",
-        "permalink": "/whatap-docs/php/set-event-format"
+        "permalink": "/whatap-docs/python/set-event-format"
     },
     "next": {
         "title": "Log 모니터링",
@@ -897,7 +897,7 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "agent-load-amount"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "golang,php",
+        product: "php,nodejs,python",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidside_moduledependency-"
@@ -913,7 +913,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ProdImg, {
-        img: "ipa-dependency-module-php.png",
+        img: "ipa-dependency-module.png",
         desc: "모듈 의존성",
         mdxType: "ProdImg"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션에서 사용 중인 모듈 관련 정보를 조회할 수 있습니다.`)));

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36890],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[11894],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 63776:
+/***/ 66844:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,29 +310,29 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'instance-performance-analysis',
     title: '인스턴스 성능 관리',
-    description: 'Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
+    description: '.NET 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
     tags: [
-        'Python',
+        '.NET',
         '애플리케이션',
         '인스턴스 성능 관리'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "python/instance-performance-analysis",
-    "id": "python/instance-performance-analysis",
+    "unversionedId": "dotnet/instance-performance-analysis",
+    "id": "dotnet/instance-performance-analysis",
     "title": "인스턴스 성능 관리",
-    "description": "Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-    "source": "@site/docs/python/instance-performance-analysis.mdx",
-    "sourceDirName": "python",
-    "slug": "/python/instance-performance-analysis",
-    "permalink": "/whatap-docs/python/instance-performance-analysis",
+    "description": ".NET 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+    "source": "@site/docs/dotnet/instance-performance-analysis.mdx",
+    "sourceDirName": "dotnet",
+    "slug": "/dotnet/instance-performance-analysis",
+    "permalink": "/whatap-docs/dotnet/instance-performance-analysis",
     "draft": false,
-    "editUrl": "undefined/docs/python/instance-performance-analysis.mdx",
+    "editUrl": "undefined/docs/dotnet/instance-performance-analysis.mdx",
     "tags": [
         {
-            "label": "Python",
-            "permalink": "/whatap-docs/tags/python"
+            "label": ".NET",
+            "permalink": "/whatap-docs/tags/net"
         },
         {
             "label": "애플리케이션",
@@ -347,21 +347,17 @@ const metadata = {
     "frontMatter": {
         "id": "instance-performance-analysis",
         "title": "인스턴스 성능 관리",
-        "description": "Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+        "description": ".NET 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
         "tags": [
-            "Python",
+            ".NET",
             "애플리케이션",
             "인스턴스 성능 관리"
         ]
     },
-    "sidebar": "pySidebar",
+    "sidebar": "dotNetSidebar",
     "previous": {
         "title": "이벤트 수신 포맷",
-        "permalink": "/whatap-docs/python/set-event-format"
-    },
-    "next": {
-        "title": "Log 모니터링",
-        "permalink": "/whatap-docs/log/introduction"
+        "permalink": "/whatap-docs/dotnet/set-event-format"
     }
 };
 const assets = {};
@@ -897,7 +893,7 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "agent-load-amount"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "golang,php",
+        product: "php,nodejs,python",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidside_moduledependency-"
@@ -913,7 +909,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ProdImg, {
-        img: "ipa-dependency-module-php.png",
+        img: "ipa-dependency-module.png",
         desc: "모듈 의존성",
         mdxType: "ProdImg"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션에서 사용 중인 모듈 관련 정보를 조회할 수 있습니다.`)));
