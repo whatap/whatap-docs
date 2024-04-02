@@ -10,7 +10,7 @@ npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/java/java-2_2_
 
 # npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/java-batch/java-batch-2_2_24 --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/java-batch-agent-v2.2.24.pdf --dest ./pdf --include-index --selector 'none'
 
-# npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/php/php-2_7_1 --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/php-agent-v2.7.1.pdf --dest ./pdf --include-index --selector 'none'
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/php/php-2_7_2 --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/php-agent-v2.7.2.pdf --dest ./pdf --include-index --selector 'none'
 
 npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_94 --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/nodejs-agent-v0.4.94.pdf --dsest ./pdf --include-index --selector 'none'
 
