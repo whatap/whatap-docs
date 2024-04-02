@@ -647,7 +647,7 @@ button.DocSearch-Button:hover {
   padding-bottom: 0;
 }
 div[class*='announcementBar'] {
-  background: linear-gradient(155.02deg, #3868F6 1.78%, #5F88FF 84.11%);
+  background: linear-gradient(155.02deg, #db582c 1.78%, #ff7a5f 84.11%);
   div[class*='announcementBarContent'] {
     background: none;
     #moniday-banner {
@@ -2209,7 +2209,11 @@ main {
   .row {
     display: block !important;
   }
-  
+
+  div.cover-page > a.pagination-nav__link--next {
+    display: none;
+  }
+
   .markdown header h1 { string-set: doctitle content() }
   ul.theme-doc-sidebar-menu > li.theme-doc-sidebar-item-category-level-1 > div.menu__list-item-collapsible > a { string-set: prtitle content() }
 

@@ -67,6 +67,16 @@
   /* --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg'); */
 }
 
+@page {
+  prince-shrink-to-fit: none;
+  @top-right { content: string(doctitle);font-size: .75rem; }
+  @bottom-center { content: counter(page);font-size: .75rem; }
+}
+
+@page:first {
+  @bottom-center { content: normal;}
+}
+
 @media print {
   /* Fix pages cut off bug by Prince */
   /* Ref https://www.princexml.com/forum/topic/4608 */
@@ -103,15 +113,13 @@
   .row {
     display: block !important;
   }
-  
+
+  div.cover-page > a.pagination-nav__link--next {
+    display: none;
+  }
+
   .markdown header h1 { string-set: doctitle content() }
   ul.theme-doc-sidebar-menu > li.theme-doc-sidebar-item-category-level-1 > div.menu__list-item-collapsible > a { string-set: prtitle content() }
-
-  @page {
-    prince-shrink-to-fit: none;
-    @top-right { content: string(doctitle);font-size: .75rem; }
-    @bottom-center { content: counter(page);font-size: .75rem; }
-  }
 
   /* Elements should be removed in PDF */
   .navbar,
