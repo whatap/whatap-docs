@@ -1,292 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[78912],{
-
-/***/ 15680:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   xA: () => (/* binding */ MDXProvider),
-/* harmony export */   yg: () => (/* binding */ createElement)
-/* harmony export */ });
-/* unused harmony exports MDXContext, useMDXComponents, withMDXComponents */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
-
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    if (enumerableOnly) symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    });
-    keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function _objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    if (i % 2) {
-      ownKeys(Object(source), true).forEach(function (key) {
-        _defineProperty(target, key, source[key]);
-      });
-    } else if (Object.getOwnPropertyDescriptors) {
-      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-      ownKeys(Object(source)).forEach(function (key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
-    }
-  }
-
-  return target;
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-var isFunction = function isFunction(obj) {
-  return typeof obj === 'function';
-};
-
-var MDXContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
-var withMDXComponents = function withMDXComponents(Component) {
-  return function (props) {
-    var allComponents = useMDXComponents(props.components);
-    return /*#__PURE__*/React.createElement(Component, _extends({}, props, {
-      components: allComponents
-    }));
-  };
-};
-var useMDXComponents = function useMDXComponents(components) {
-  var contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext);
-  var allComponents = contextComponents;
-
-  if (components) {
-    allComponents = isFunction(components) ? components(contextComponents) : _objectSpread2(_objectSpread2({}, contextComponents), components);
-  }
-
-  return allComponents;
-};
-var MDXProvider = function MDXProvider(props) {
-  var allComponents = useMDXComponents(props.components);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(MDXContext.Provider, {
-    value: allComponents
-  }, props.children);
-};
-
-var TYPE_PROP_NAME = 'mdxType';
-var DEFAULTS = {
-  inlineCode: 'code',
-  wrapper: function wrapper(_ref) {
-    var children = _ref.children;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}, children);
-  }
-};
-var MDXCreateElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function (props, ref) {
-  var propComponents = props.components,
-      mdxType = props.mdxType,
-      originalType = props.originalType,
-      parentName = props.parentName,
-      etc = _objectWithoutProperties(props, ["components", "mdxType", "originalType", "parentName"]);
-
-  var components = useMDXComponents(propComponents);
-  var type = mdxType;
-  var Component = components["".concat(parentName, ".").concat(type)] || components[type] || DEFAULTS[type] || originalType;
-
-  if (propComponents) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, _objectSpread2(_objectSpread2({
-      ref: ref
-    }, etc), {}, {
-      components: propComponents
-    }));
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, _objectSpread2({
-    ref: ref
-  }, etc));
-});
-MDXCreateElement.displayName = 'MDXCreateElement';
-function createElement (type, props) {
-  var args = arguments;
-  var mdxType = props && props.mdxType;
-
-  if (typeof type === 'string' || mdxType) {
-    var argsLength = args.length;
-    var createElementArgArray = new Array(argsLength);
-    createElementArgArray[0] = MDXCreateElement;
-    var newProps = {};
-
-    for (var key in props) {
-      if (hasOwnProperty.call(props, key)) {
-        newProps[key] = props[key];
-      }
-    }
-
-    newProps.originalType = type;
-    newProps[TYPE_PROP_NAME] = typeof type === 'string' ? type : mdxType;
-    createElementArgArray[1] = newProps;
-
-    for (var i = 2; i < argsLength; i++) {
-      createElementArgArray[i] = args[i];
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement.apply(null, createElementArgArray);
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0__.createElement.apply(null, args);
-}
-
-
-
-
-/***/ }),
-
-/***/ 33322:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ DocCardList)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20053);
-/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(51538);
-/* harmony import */ var _theme_DocCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(46647);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function _define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-
-
-
-
-
-function DocCardListForCurrentSidebarCategory({ className }) {
-    const category = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__/* .useCurrentSidebarCategory */ .$S)();
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardList, {
-        items: category.items,
-        className: className
-    });
-}
-function DocCardList(props) {
-    const { items, className } = props;
-    if (!items) {
-        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardListForCurrentSidebarCategory, _object_spread({}, props));
-    }
-    const filteredItems = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__/* .filterDocCardListItems */ .d1)(items);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", {
-        className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)('row', className),
-        children: filteredItems.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("article", {
-                className: "col col--6 margin-bottom--lg",
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_DocCard__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-                    item: item
-                })
-            }, index))
-    });
-}
-
-
-/***/ }),
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[34495],{
 
 /***/ 51738:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -529,7 +242,7 @@ const svList = [
     {
         "name": 'Service-2.2.x',
         "date": '2024-03-22',
-        "url": 'https://img.whatap.io/24/04/02/011012service-22x.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011012service-22x.pdf',
         "docs": '/release-notes/service/service-2_2_x'
     },
     {
@@ -735,13 +448,13 @@ const javaList = [
     {
         "name": 'Java-agent-v2.2.30',
         "date": '2024-03-21',
-        "url": 'https://img.whatap.io/24/04/02/011011java-agent-v2230.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011011java-agent-v2230.pdf',
         "docs": '/release-notes/java/java-2_2_30'
     },
     {
         "name": 'Java-agent-v2.2.29',
         "date": '2024-03-15',
-        "url": 'https://img.whatap.io/24/04/02/011011java-agent-v2229.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011011java-agent-v2229.pdf',
         "docs": '/release-notes/java/java-2_2_29'
     },
     {
@@ -979,7 +692,7 @@ const phpList = [
     {
         "name": 'php-agent-v2.7.2',
         "date": '2024-03-06',
-        "url": 'https://img.whatap.io/24/04/02/012058php-agent-v272.pdf',
+        "url": 'https://content.whatap.io/24/04/02/012058php-agent-v272.pdf',
         "docs": '/release-notes/php/php-2_7_2'
     },
     {
@@ -1071,7 +784,7 @@ const nodejsList = [
     {
         "name": 'Node.js-agent-v0.4.94',
         "date": '2024-03-07',
-        "url": 'https://img.whatap.io/24/04/02/011011nodejs-agent-v0494.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011011nodejs-agent-v0494.pdf',
         "docs": '/release-notes/nodejs/nodejs-0_4_94'
     },
     {
@@ -1127,25 +840,25 @@ const pyList = [
     {
         "name": 'Python-agent-v1.6.2',
         "date": '2024-03-29',
-        "url": 'https://img.whatap.io/24/04/02/011012python-agent-v162.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011012python-agent-v162.pdf',
         "docs": '/release-notes/python/python-1_6_2'
     },
     {
         "name": 'Python-agent-v1.6.1',
         "date": '2024-03-20',
-        "url": 'https://img.whatap.io/24/04/02/011012python-agent-v161.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011012python-agent-v161.pdf',
         "docs": '/release-notes/python/python-1_6_1'
     },
     {
         "name": 'Python-agent-v1.6.0',
         "date": '2024-03-13',
-        "url": 'https://img.whatap.io/24/04/02/011012python-agent-v160.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011012python-agent-v160.pdf',
         "docs": '/release-notes/python/python-1_6_0'
     },
     {
         "name": 'Python-agent-v1.5.9',
         "date": '2024-03-11',
-        "url": 'https://img.whatap.io/24/04/02/011012python-agent-v159.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011012python-agent-v159.pdf',
         "docs": '/release-notes/python/python-1_5_9'
     },
     {
@@ -1443,13 +1156,13 @@ const goList = [
     {
         "name": 'Go-agent-v0.3.3',
         "date": '2024-03-14',
-        "url": 'https://img.whatap.io/24/04/02/011011Go-agent-v033.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011011Go-agent-v033.pdf',
         "docs": '/release-notes/golang/golang-0_3_3'
     },
     {
         "name": 'Go-agent-v0.3.2',
         "date": '2024-03-06',
-        "url": 'https://img.whatap.io/24/04/02/011011Go-agent-v032.pdf',
+        "url": 'https://content.whatap.io/24/04/02/011011Go-agent-v032.pdf',
         "docs": '/release-notes/golang/golang-0_3_2'
     },
     {
@@ -1547,19 +1260,19 @@ const serverList = [
     {
         "name": "Server-agent-v2.5.5",
         "date": "2024-03-13",
-        "url": "https://img.whatap.io/24/04/02/011012server-agent-v255.pdf",
+        "url": "https://content.whatap.io/24/04/02/011012server-agent-v255.pdf",
         "docs": "/release-notes/server/server-2_5_5"
     },
     {
         "name": "Server-agent-v2.5.4",
         "date": "2024-03-11",
-        "url": "https://img.whatap.io/24/04/02/011012server-agent-v254.pdf",
+        "url": "https://content.whatap.io/24/04/02/011012server-agent-v254.pdf",
         "docs": "/release-notes/server/server-2_5_4"
     },
     {
         "name": "Server-agent-v2.5.3",
         "date": "2024-03-07",
-        "url": "https://img.whatap.io/24/04/02/011012server-agent-v253.pdf",
+        "url": "https://content.whatap.io/24/04/02/011012server-agent-v253.pdf",
         "docs": "/release-notes/server/server-2_5_3"
     },
     {
@@ -1777,13 +1490,13 @@ const k8sList = [
     {
         "name": "Kubernetes-agent-v1.5.8",
         "date": "2024-03-26",
-        "url": "https://img.whatap.io/24/04/02/011011k8s-agent-v158.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011k8s-agent-v158.pdf",
         "docs": "/release-notes/k8s/k8s-1_5_8"
     },
     {
         "name": "Kubernetes-agent-v1.5.7",
         "date": "2024-03-07",
-        "url": "https://img.whatap.io/24/04/02/011011k8s-agent-v157.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011k8s-agent-v157.pdf",
         "docs": "/release-notes/k8s/k8s-1_5_7"
     },
     {
@@ -2055,31 +1768,31 @@ const dbxList = [
     {
         "name": "DBX-agent-v1.7.0",
         "date": "2024-03-25",
-        "url": "https://img.whatap.io/24/04/02/011011dbx-agent-v170.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011dbx-agent-v170.pdf",
         "docs": "release-notes/db/dbx-1_7_0"
     },
     {
         "name": "DBX-agent-v1.6.35",
         "date": "2024-03-15",
-        "url": "https://img.whatap.io/24/04/02/011011dbx-agent-v1635.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011dbx-agent-v1635.pdf",
         "docs": "release-notes/db/dbx-1_6_35"
     },
     {
         "name": "DBX-agent-v1.6.33",
         "date": "2024-03-13",
-        "url": "https://img.whatap.io/24/04/02/011011dbx-agent-v1633.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011dbx-agent-v1633.pdf",
         "docs": "release-notes/db/dbx-1_6_33"
     },
     {
         "name": "DBX-agent-v1.6.32",
         "date": "2024-03-11",
-        "url": "https://img.whatap.io/24/04/02/011011dbx-agent-v1632.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011dbx-agent-v1632.pdf",
         "docs": "release-notes/db/dbx-1_6_32"
     },
     {
         "name": "DBX-agent-v1.6.31",
         "date": "2024-03-04",
-        "url": "https://img.whatap.io/24/04/02/011011dbx-agent-v1631.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011dbx-agent-v1631.pdf",
         "docs": "release-notes/db/dbx-1_6_31"
     },
     {
@@ -2225,7 +1938,7 @@ const xosList = [
     {
         "name": "XOS-agent-v1.1.8b",
         "date": "2024-03-15",
-        "url": "https://img.whatap.io/24/04/02/011012xos-agent-v118b.pdf",
+        "url": "https://content.whatap.io/24/04/02/011012xos-agent-v118b.pdf",
         "docs": "release-notes/db/xos-1_1_8b"
     },
     {
@@ -2317,13 +2030,13 @@ const browserList = [
     {
         "name": "Browser-agent-v1.3.5",
         "date": "2024-03-21",
-        "url": "https://img.whatap.io/24/04/02/011011browser-agent-v135.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011browser-agent-v135.pdf",
         "docs": "release-notes/browser/browser-v1_3_5"
     },
     {
         "name": "Browser-agent-v1.3.4",
         "date": "2024-02-19",
-        "url": "https://img.whatap.io/24/04/02/011011browser-agent-v134.pdf",
+        "url": "https://content.whatap.io/24/04/02/011011browser-agent-v134.pdf",
         "docs": "release-notes/browser/browser-v1_3_4"
     },
     {
@@ -2430,728 +2143,255 @@ const etcList = [
 
 /***/ }),
 
-/***/ 46647:
+/***/ 98918:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ DocCard)
+  "default": () => (/* binding */ Dlreleasenotes)
 });
 
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(96540);
-// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
-var clsx_m = __webpack_require__(20053);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js + 1 modules
-var Link = __webpack_require__(89546);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/docsUtils.js
-var docsUtils = __webpack_require__(51538);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(11410);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(15418);
-;// CONCATENATED MODULE: ./src/theme/DocCard/styles.module.css
+// EXTERNAL MODULE: ./src/components/dl-release-notes/PdfDownload.js + 1 modules
+var PdfDownload = __webpack_require__(51738);
+// EXTERNAL MODULE: ./src/components/dl-release-notes/pdfList.js
+var pdfList = __webpack_require__(72995);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 67 modules
+var Layout = __webpack_require__(98636);
+;// CONCATENATED MODULE: ./src/pages/dl-release-notes/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"cardContainer":"cardContainer_S8oU","cardTitle":"cardTitle_HoSo","cardDescription":"cardDescription_c27F"});
-;// CONCATENATED MODULE: ./src/theme/DocCard/index.js
+/* harmony default export */ const styles_module = ({"dlmain":"dlmain_qja4","contents":"contents_TFPp","dltocs":"dltocs_PM2E","dltocItem":"dltocItem_V7vU","tocList":"tocList_Iwqw","dlHeading1":"dlHeading1_bNyW","lastdiv":"lastdiv_xnS5"});
+;// CONCATENATED MODULE: ./src/pages/dl-release-notes/index.js
 
 
 
 
 
 
-
-
-function CardContainer({ href, children }) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-        href: href,
-        className: (0,clsx_m/* default */.A)('card padding--lg', styles_module.cardContainer),
-        children: children
-    });
-}
-function CardLayout({ href, title, description }) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(CardContainer, {
-        href: href,
+function Dlreleasenotes() {
+    const onClickMenu = (e)=>{
+        e.preventDefault();
+        console.log(e.target.hash);
+        const headerOffset = 97;
+        const targetHash = e.target.hash;
+        const targetSection = document.querySelector(targetHash);
+        const targetPostion = targetSection.getBoundingClientRect().top;
+        const offsetPosition = targetPostion + window.pageYOffset - headerOffset;
+        console.log(offsetPosition);
+        if (targetSection) {
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(Layout/* default */.A, {
         children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("h2", {
-                className: (0,clsx_m/* default */.A)('text--truncate', styles_module.cardTitle),
-                title: title,
-                children: title
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                className: styles_module.dlmain,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        className: styles_module.contents,
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("h1", {
+                                className: styles_module.dlHeading1,
+                                children: "Download Release Notes"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Service",
+                                typeName: "service",
+                                pdfList: pdfList/* svList */.a6
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Java Agent",
+                                typeName: "java",
+                                pdfList: pdfList/* javaList */.rR
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "PHP Agent",
+                                typeName: "php",
+                                pdfList: pdfList/* phpList */.vy
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Node.js Agent",
+                                typeName: "nodejs",
+                                pdfList: pdfList/* nodejsList */.wo
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Python Agent",
+                                typeName: "python",
+                                pdfList: pdfList/* pyList */._r
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: ".NET Agent",
+                                typeName: "dotnet",
+                                pdfList: pdfList/* dotnetList */.vM
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Go Agent",
+                                typeName: "go",
+                                pdfList: pdfList/* goList */.b0
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Server Agent",
+                                typeName: "server",
+                                pdfList: pdfList/* serverList */.IK
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "Kubernetes Agent",
+                                typeName: "k8s",
+                                pdfList: pdfList/* k8sList */.Tm
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "DBX Agent",
+                                typeName: "dbx",
+                                pdfList: pdfList/* dbxList */.N
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "XOS Agent",
+                                typeName: "xos",
+                                pdfList: pdfList/* xosList */.vZ
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
+                                h2title: "ETC",
+                                typeName: "etc",
+                                pdfList: pdfList/* etcList */.Bq
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        className: styles_module.dltocs,
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            className: styles_module.dltocItem,
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
+                                className: styles_module.tocList,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#service",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Service"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#java",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Java Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#php",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "PHP Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#nodejs",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Node.js Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#python",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Python Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#dotnet",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: ".NET Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#go",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Go Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#server",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Server Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#k8s",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "Kubernetes Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#dbx",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "DBX Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#xos",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "XOS Agent"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                                            href: "#etc",
+                                            onClick: onClickMenu,
+                                            class: "table-of-contents__link",
+                                            children: "ETC"
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    })
+                ]
             }),
-            description && /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
-                className: (0,clsx_m/* default */.A)('text--truncate', styles_module.cardDescription),
-                title: description,
-                children: description
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                class: styles_module.lastdiv
             })
         ]
     });
 }
-function CardCategory({ item }) {
-    const href = (0,docsUtils/* findFirstCategoryLink */._o)(item);
-    // Unexpected: categories that don't have a link have been filtered upfront
-    if (!href) {
-        return null;
-    }
-    var _item_description;
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLayout, {
-        href: href,
-        // icon="🗃️"
-        title: item.label,
-        description: (_item_description = item.description) !== null && _item_description !== void 0 ? _item_description : (0,Translate/* translate */.T)({
-            message: '{count} items',
-            id: 'theme.docs.DocCard.categoryDescription',
-            description: 'The default description for a category card in the generated index about how many items this category includes'
-        }, {
-            count: item.items.length
-        })
-    });
-}
-function CardLink({ item }) {
-    const icon = (0,isInternalUrl/* default */.A)(item.href) ? '📄️' : '🔗';
-    var _item_docId;
-    const doc = (0,docsUtils/* useDocById */.cC)((_item_docId = item.docId) !== null && _item_docId !== void 0 ? _item_docId : undefined);
-    var _item_description;
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLayout, {
-        href: item.href,
-        // icon={icon}
-        title: item.label,
-        description: (_item_description = item.description) !== null && _item_description !== void 0 ? _item_description : doc === null || doc === void 0 ? void 0 : doc.description
-    });
-}
-function DocCard({ item }) {
-    switch(item.type){
-        case 'link':
-            return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLink, {
-                item: item
-            });
-        case 'category':
-            return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardCategory, {
-                item: item
-            });
-        default:
-            throw new Error(`unknown item type ${JSON.stringify(item)}`);
-    }
-}
 
-
-/***/ }),
-
-/***/ 40621:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
-/* harmony import */ var _theme_DocCardList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33322);
-/* harmony import */ var _site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(51738);
-/* harmony import */ var _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(72995);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) {
-            symbols = symbols.filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-            });
-        }
-        keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _object_spread_props(target, source) {
-    source = source != null ? source : {};
-    if (Object.getOwnPropertyDescriptors) {
-        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-        ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-function _object_without_properties(source, excluded) {
-    if (source == null) return {};
-    var target = _object_without_properties_loose(source, excluded);
-    var key, i;
-    if (Object.getOwnPropertySymbols) {
-        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-        for(i = 0; i < sourceSymbolKeys.length; i++){
-            key = sourceSymbolKeys[i];
-            if (excluded.indexOf(key) >= 0) continue;
-            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-            target[key] = source[key];
-        }
-    }
-    return target;
-}
-function _object_without_properties_loose(source, excluded) {
-    if (source == null) return {};
-    var target = {};
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-
-
-const frontMatter = {
-    id: 'reference',
-    title: '참조 문서',
-    description: '와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다.',
-    tags: [
-        '참조 문서',
-        '자료집',
-        '와탭',
-        'Docs'
-    ],
-    toc_max_heading_level: 4
-};
-const contentTitle = undefined;
-const metadata = {
-    "unversionedId": "reference",
-    "id": "reference",
-    "title": "참조 문서",
-    "description": "와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다.",
-    "source": "@site/docs/reference.mdx",
-    "sourceDirName": ".",
-    "slug": "/reference",
-    "permalink": "/whatap-docs/reference",
-    "draft": false,
-    "editUrl": "undefined/docs/reference.mdx",
-    "tags": [
-        {
-            "label": "참조 문서",
-            "permalink": "/whatap-docs/tags/참조-문서"
-        },
-        {
-            "label": "자료집",
-            "permalink": "/whatap-docs/tags/자료집"
-        },
-        {
-            "label": "와탭",
-            "permalink": "/whatap-docs/tags/와탭"
-        },
-        {
-            "label": "Docs",
-            "permalink": "/whatap-docs/tags/docs"
-        }
-    ],
-    "version": "current",
-    "frontMatter": {
-        "id": "reference",
-        "title": "참조 문서",
-        "description": "와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다.",
-        "tags": [
-            "참조 문서",
-            "자료집",
-            "와탭",
-            "Docs"
-        ],
-        "toc_max_heading_level": 4
-    },
-    "sidebar": "referSidebar",
-    "next": {
-        "title": "메트릭스",
-        "permalink": "/whatap-docs/metrics/common-metrics-intro"
-    }
-};
-const assets = {};
-
-
-
-const toc = [
-    {
-        value: ' Docs 다운로드',
-        id: 'pdf-download',
-        level: 2
-    },
-    {
-        value: '상품별, 종류별 문서 다운로드',
-        id: '상품별-종류별-문서-다운로드',
-        level: 3
-    },
-    {
-        value: '릴리스 노트 다운로드',
-        id: '릴리스-노트-다운로드',
-        level: 3
-    },
-    {
-        value: 'Service',
-        id: 'service',
-        level: 4
-    },
-    {
-        value: 'Java agent',
-        id: 'java-agent',
-        level: 4
-    },
-    {
-        value: 'Java batch agent',
-        id: 'java-batch-agent',
-        level: 4
-    },
-    {
-        value: 'PHP agent',
-        id: 'php-agent',
-        level: 4
-    },
-    {
-        value: 'Node.js agent',
-        id: 'nodejs-agent',
-        level: 4
-    },
-    {
-        value: 'Python agent',
-        id: 'python-agent',
-        level: 4
-    },
-    {
-        value: '.NET agent',
-        id: 'net-agent',
-        level: 4
-    },
-    {
-        value: 'Go agent',
-        id: 'go-agent',
-        level: 4
-    },
-    {
-        value: 'Server agent',
-        id: 'server-agent',
-        level: 4
-    },
-    {
-        value: 'Kubernetes agent',
-        id: 'kubernetes-agent',
-        level: 4
-    },
-    {
-        value: 'DBX agent',
-        id: 'dbx-agent',
-        level: 4
-    },
-    {
-        value: 'XOS agent',
-        id: 'xos-agent',
-        level: 4
-    },
-    {
-        value: 'Browser agent',
-        id: 'browser-agent',
-        level: 4
-    },
-    {
-        value: 'ETC',
-        id: 'etc',
-        level: 4
-    }
-];
-const layoutProps = {
-    toc
-};
-const MDXLayout = "wrapper";
-function MDXContent(_param) {
-    var { components } = _param, props = _object_without_properties(_param, [
-        "components"
-    ]);
-    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
-        components: components,
-        mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다. 다음 자료 외에 기술 문서와 관련한 궁금한 사항이나 추가 내용 요청 등의 피드백은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "mailto:docs@whatap.io"
-    }, `docs@whatap.io`), `로 보내주세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_theme_DocCardList__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-        mdxType: "DocCardList"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "pdf-download"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        src: (__webpack_require__(20528)/* ["default"] */ .A),
-        width: "28",
-        height: "28"
-    }), ` Docs 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "상품별-종류별-문서-다운로드"
-    }, `상품별, 종류별 문서 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `주요 상품군 및 기타 문서를 PDF 파일로 다음과 같이 제공합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", {
-        class: "download-pdf"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
-        parentName: "table"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "thead"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
-        parentName: "tr",
-        "align": null
-    }, `상품 분류`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
-        parentName: "tr",
-        "align": null
-    }, `다운로드 링크`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tbody", {
-        parentName: "table"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Application`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235153whatap-apm-java-monitoring.pdf"
-    }, `Java`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235153whatap-apm-php-monitoring.pdf"
-    }, `PHP`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235153whatap-apm-nodejs-monitoring.pdf"
-    }, `Node.js`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235153whatap-apm-python-monitoring.pdf"
-    }, `Python`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235152whatap-apm-dotnet-monitoring.pdf"
-    }, `.NET`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235153whatap-apm-go-monitoring.pdf"
-    }, `Go`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Server`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235156whatap-server-monitoring.pdf"
-    }, `Server`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Container`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-kubernetes-monitoring.pdf"
-    }, `Kubernetes`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Database`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-db-postgresql-monitoring.pdf"
-    }, `PostgreSQL`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-db-oracle-monitoring.pdf"
-    }, `Oracle`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-db-mysql-monitoring.pdf"
-    }, `MySQL`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-db-mssql-monitoring.pdf"
-    }, `SQL Server`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-db-tibero-monitoring.pdf"
-    }, `Tibero`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-db-cubrid-monitoring.pdf"
-    }, `CUBRID`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-db-altibase-monitoring.pdf"
-    }, `Altibase`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-db-redis-monitoring.pdf"
-    }, `Redis`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-db-mongodb-monitoring.pdf"
-    }, `MongoDB`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `AWS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235152whatap-amazon-cloudwatch.pdf"
-    }, `Amazon CloudWatch`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235152whatap-amazon-ecs.pdf"
-    }, `Amazon ECS`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-aws-log-monitoring.pdf"
-    }, `AWS Log`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Azure`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-azure.pdf"
-    }, `Azure Monitor`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NCP`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-ncloud.pdf"
-    }, `Naver Cloud Monitoring`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `OCI`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235156whatap-oracle-cloud.pdf"
-    }, `Oracle Cloud Monitor`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `NPM`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235156whatap-network-performance-monitoring.pdf"
-    }, `Network Performance Monitoring`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `URL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235156whatap-url-monitoring.pdf"
-    }, `URL`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Log`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/02/01/052912whatap-log-monitoring.pdf"
-    }, `Log`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Browser`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235154whatap-browser-monitoring.pdf"
-    }, `Browser`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `기타`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-extensions.pdf"
-    }, `확장 도구(Extensions)`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235155whatap-manage.pdf"
-    }, `관리 기능`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235156whatap-open-api.pdf"
-    }, `Open API`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/03/04/235156whatap-reference.pdf"
-    }, `참조 문서`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, `교육 자료`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
-        parentName: "tr",
-        "align": null
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/02/01/052908whatap-best-practice-guides-about-apm-dashboard.pdf"
-    }, `애플리케이션 대시보드`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/02/01/052909whatap-best-practice-guides-about-apm-hitmap-class.pdf"
-    }, `애플리케이션 히트맵 트랜잭션`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/02/01/052909whatap-best-practice-guides-about-server-dashboard.pdf"
-    }, `서버 리소스 보드`), ` `, `|`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "td",
-        "href": "https://content.whatap.io/24/02/01/052909whatap-best-practice-guides-about-apm-dbc.pdf"
-    }, `DB 연결 지연과 커넥션 풀`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", {
-        class: "download-release-notes"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
-        "id": "릴리스-노트-다운로드"
-    }, `릴리스 노트 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `릴리스 노트를 PDF 문서로 다운로드할 수 있습니다. 각 버전별 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Download`)), ` 링크를 선택하면 다운로드할 수 있습니다. 여러 개의 릴리스 노트를 병합해 다운로드하려면 체크 박스를 선택한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, `Download`), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "service"
-    }, `Service`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "service",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .svList */ .a6,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "java-agent"
-    }, `Java agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "java",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .javaList */ .rR,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "java-batch-agent"
-    }, `Java batch agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "javabatch",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .javaBatchList */ .xl,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "php-agent"
-    }, `PHP agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "php",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .phpList */ .vy,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "nodejs-agent"
-    }, `Node.js agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "nodejs",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .nodejsList */ .wo,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "python-agent"
-    }, `Python agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "python",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .pyList */ ._r,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "net-agent"
-    }, `.NET agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "dotnet",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .dotnetList */ .vM,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "go-agent"
-    }, `Go agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "go",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .goList */ .b0,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "server-agent"
-    }, `Server agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "server",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .serverList */ .IK,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "kubernetes-agent"
-    }, `Kubernetes agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "k8s",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .k8sList */ .Tm,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "dbx-agent"
-    }, `DBX agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "dbx",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .dbxList */ .N,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "xos-agent"
-    }, `XOS agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "xos",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .xosList */ .vZ,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "browser-agent"
-    }, `Browser agent`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "browser",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .browserList */ .rU,
-        mdxType: "PdfDownload"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "etc"
-    }, `ETC`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-        typeName: "etc",
-        pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_4__/* .etcList */ .Bq,
-        mdxType: "PdfDownload"
-    })));
-}
-MDXContent.isMDXComponent = true;
-
-
-/***/ }),
-
-/***/ 20528:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01LjM0MjM4IDMuOTgzNjlDNS40OTA1OSAzLjY4NzI1IDUuNzkzNTcgMy41IDYuMTI1IDMuNUgyMS44NzVDMjIuMjA2NCAzLjUgMjIuNTA5NCAzLjY4NzI1IDIyLjY1NzYgMy45ODM2OUwyNC40MDc2IDcuNDgzNjlDMjQuNDY4NCA3LjYwNTE5IDI0LjUgNy43MzkxNiAyNC41IDcuODc1VjIyLjc1QzI0LjUgMjMuMjE0MSAyNC4zMTU2IDIzLjY1OTIgMjMuOTg3NCAyMy45ODc0QzIzLjY1OTIgMjQuMzE1NiAyMy4yMTQxIDI0LjUgMjIuNzUgMjQuNUg1LjI1QzQuNzg1ODcgMjQuNSA0LjM0MDc1IDI0LjMxNTYgNC4wMTI1NiAyMy45ODc0QzMuNjg0MzcgMjMuNjU5MiAzLjUgMjMuMjE0MSAzLjUgMjIuNzVWNy44NzVDMy41IDcuNzM5MTYgMy41MzE2MyA3LjYwNTE5IDMuNTkyMzggNy40ODM2OUw1LjM0MjM4IDMuOTgzNjlaTTYuNjY1NzggNS4yNUw1LjI1IDguMDgxNTZWMjIuNzVIMjIuNzVWOC4wODE1NkwyMS4zMzQyIDUuMjVINi42NjU3OFoiIGZpbGw9IiMwNjFDM0QiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjY2ODg4IDE1Ljc5NEMxMC4wMTA2IDE1LjQ1MjMgMTAuNTY0NiAxNS40NTIzIDEwLjkwNjMgMTUuNzk0TDEzLjk5OTkgMTguODg3NkwxNy4wOTM1IDE1Ljc5NEMxNy40MzUyIDE1LjQ1MjMgMTcuOTg5MiAxNS40NTIzIDE4LjMzMDkgMTUuNzk0QzE4LjY3MjYgMTYuMTM1NyAxOC42NzI2IDE2LjY4OTcgMTguMzMwOSAxNy4wMzE0TDE0LjYxODYgMjAuNzQzN0MxNC40NTQ1IDIwLjkwNzggMTQuMjMyIDIxIDEzLjk5OTkgMjFDMTMuNzY3OCAyMSAxMy41NDUzIDIwLjkwNzggMTMuMzgxMiAyMC43NDM3TDkuNjY4ODggMTcuMDMxNEM5LjMyNzE3IDE2LjY4OTcgOS4zMjcxNyAxNi4xMzU3IDkuNjY4ODggMTUuNzk0WiIgZmlsbD0iIzA2MUMzRCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0IDEwLjVDMTQuNDgzMiAxMC41IDE0Ljg3NSAxMC44OTE4IDE0Ljg3NSAxMS4zNzVWMjAuMTI1QzE0Ljg3NSAyMC42MDgyIDE0LjQ4MzIgMjEgMTQgMjFDMTMuNTE2OCAyMSAxMy4xMjUgMjAuNjA4MiAxMy4xMjUgMjAuMTI1VjExLjM3NUMxMy4xMjUgMTAuODkxOCAxMy41MTY4IDEwLjUgMTQgMTAuNVoiIGZpbGw9IiMwNjFDM0QiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zLjUgNy44NzVDMy41IDcuMzkxNzUgMy44OTE3NSA3IDQuMzc1IDdIMjMuNjI1QzI0LjEwODIgNyAyNC41IDcuMzkxNzUgMjQuNSA3Ljg3NUMyNC41IDguMzU4MjUgMjQuMTA4MiA4Ljc1IDIzLjYyNSA4Ljc1SDQuMzc1QzMuODkxNzUgOC43NSAzLjUgOC4zNTgyNSAzLjUgNy44NzVaIiBmaWxsPSIjMDYxQzNEIi8+Cjwvc3ZnPgo=");
 
 /***/ })
 
