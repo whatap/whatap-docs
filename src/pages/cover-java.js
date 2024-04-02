@@ -24,6 +24,7 @@ export default function Cover() {
             WhaTap Docs 2024.04.02
         </p>
       </div>
+      <a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/best-practice-guides/about-apm-hitmap-class"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">히트맵 트랜잭션 살펴보기</div></a>
       <div class="page-break"></div>
     </div>
   );
