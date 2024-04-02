@@ -10,6 +10,7 @@
     left: 0px;
     margin-left: 0;
     text-align: left;
+    z-index: 199;
   }
   .cover .date {
     position: absolute;
@@ -18,5 +19,12 @@
     font-size: 0.9rem;
     font-weight: 200;
     color: #222;
+    z-index: 199;
+  }
+  .cover .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 }
