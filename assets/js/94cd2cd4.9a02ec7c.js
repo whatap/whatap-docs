@@ -485,7 +485,7 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), ` 섹션으로 이동해 전화번호를 입력하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "비밀-번호-설정"
-    }, `비밀 번호 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `비밀번호는 최소 10자리의 영어소문자, 영어대문자, 숫자 및 특수문자 중 3종류 이상을 조합하여 안전하게 생성해야 합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `비밀 번호 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `비밀번호는 최소 9자리의 영어소문자, 영어대문자, 숫자 및 특수문자 중 3종류 이상을 조합하여 안전하게 생성해야 합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "비밀-번호-변경"
     }, `비밀 번호 변경`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
