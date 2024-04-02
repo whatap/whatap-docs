@@ -14,7 +14,6 @@ export default function Cover() {
           height: '770px',
           width: '524px',
           fontSize: '20px',
-          backgroundImage: `url("/img/cover-background.png")`
           // border: '1px solid #000',
         }}>
         <h1>
@@ -23,7 +22,9 @@ export default function Cover() {
         <p className={styles.date}>
             WhaTap Docs 2024.04.02
         </p>
+        <img className={styles.background} src="/img/cover-background.png" />
       </div>
+      <a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/best-practice-guides/about-apm-hitmap-class"><div class="pagination-nav__sublabel">다음</div></a>
       <div class="page-break"></div>
     </div>
   );
