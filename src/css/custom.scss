@@ -727,6 +727,9 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
+    .cover-page {
+      display: none;
+    }
     .docusaurus-mermaid-container {
       background-color: #fff;
       margin: 8px 0;
@@ -2213,10 +2216,22 @@ main {
   .markdown header h1 { string-set: doctitle content() }
   ul.theme-doc-sidebar-menu > li.theme-doc-sidebar-item-category-level-1 > div.menu__list-item-collapsible > a { string-set: prtitle content() }
 
+  .cover-page {
+    display: block;
+    visibility: visible;
+    page-break-after: always; /* 커버 페이지 다음에 페이지 브레이크 */
+  }
+
   @page {
     prince-shrink-to-fit: none;
     @top-right { content: string(doctitle);font-size: .75rem; }
     @bottom-center { content: counter(page);font-size: .75rem; }
+  }
+  @page:first {
+    /* 여기에 커버 페이지를 위한 특별한 마진이나 기타 스타일 지정 */
+    .markdown header h1 {
+      display: none;
+    }
   }
 
   /* Elements should be removed in PDF */
