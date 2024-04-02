@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87555,41912],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87555],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,63 +212,6 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 59041:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Cover)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-;// CONCATENATED MODULE: ./src/pages/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"cover":"cover_YHbb","date":"date_i2YJ"});
-;// CONCATENATED MODULE: ./src/pages/cover-java.js
-
-
-
-function Cover() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-        className: "cover-page",
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: styles_module.cover,
-                style: {
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: '770px',
-                    width: '524px',
-                    fontSize: '20px',
-                    backgroundImage: `url("/img/cover-background.png")`
-                },
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)("h1", {
-                        children: "Java 모니터링"
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
-                        className: styles_module.date,
-                        children: "WhaTap Docs 2024.04.02"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                class: "page-break"
-            })
-        ]
-    });
-}
-
-
-/***/ }),
-
 /***/ 93885:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -283,7 +226,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
-/* harmony import */ var _site_src_pages_cover_java__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(59041);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -417,7 +359,6 @@ const metadata = {
     }
 };
 const assets = {};
-
 const toc = [
     {
         value: '주요 특장점',
@@ -442,8 +383,6 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_pages_cover_java__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        mdxType: "Cover"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Web Application Server(WAS), 배치 애플리케이션 등 JVM 환경에서 동작하는 모든 애플리케이션에 적용할 수 있습니다. 애플리케이션 장애분석을 위해 Thread Dump(스레드 덤프)를 확보하던 번거로움에서 벗어나, 이미 확보된 스택을 통해 장애 상황의 재현 없이도 문제의 원인을 정확하게 특정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `와탭의 애플리케이션 모니터링은 장애 재현 없이 실시간으로 모니터링이 가능합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", {
         class: "video-container"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("video", {

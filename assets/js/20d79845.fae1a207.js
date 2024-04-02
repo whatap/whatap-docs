@@ -18,7 +18,7 @@ var jsx_runtime = __webpack_require__(74848);
 var react = __webpack_require__(96540);
 ;// CONCATENATED MODULE: ./src/pages/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"cover":"cover_YHbb","date":"date_i2YJ"});
+/* harmony default export */ const styles_module = ({"cover":"cover_YHbb","date":"date_i2YJ","background":"background_kXXr"});
 ;// CONCATENATED MODULE: ./src/pages/cover-java.js
 
 
@@ -35,8 +35,7 @@ function Cover() {
                     alignItems: 'center',
                     height: '770px',
                     width: '524px',
-                    fontSize: '20px',
-                    backgroundImage: `url("/img/cover-background.png")`
+                    fontSize: '20px'
                 },
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("h1", {
@@ -45,8 +44,20 @@ function Cover() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
                         className: styles_module.date,
                         children: "WhaTap Docs 2024.04.02"
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("img", {
+                        className: styles_module.background,
+                        src: "/img/cover-background.png"
                     })
                 ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
+                class: "pagination-nav__link pagination-nav__link--next",
+                href: "/whatap-docs/best-practice-guides/about-apm-hitmap-class",
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                    class: "pagination-nav__sublabel",
+                    children: "다음"
+                })
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                 class: "page-break"
