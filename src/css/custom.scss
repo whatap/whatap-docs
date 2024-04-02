@@ -727,9 +727,6 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
-    .cover-page {
-      display: none;
-    }
     .docusaurus-mermaid-container {
       background-color: #fff;
       margin: 8px 0;
@@ -2211,6 +2208,10 @@ main {
   }
   .row {
     display: block !important;
+  }
+
+  div.cover-page > a.pagination-nav__link--next {
+    display: none;
   }
   
   .markdown header h1 { string-set: doctitle content() }
