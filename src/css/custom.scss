@@ -2214,7 +2214,7 @@ main {
   ul.theme-doc-sidebar-menu > li.theme-doc-sidebar-item-category-level-1 > div.menu__list-item-collapsible > a { string-set: prtitle content() }
 
   @page {
-    prince-shrink-to-fit: auto;
+    prince-shrink-to-fit: none;
     @top-right { content: string(doctitle);font-size: .75rem; }
     @bottom-center { content: counter(page);font-size: .75rem; }
   }
