@@ -2184,6 +2184,11 @@ main {
       font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo' !important;
     }
   }
+  body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%; /* 스케일 다운을 보정 */
+  }
   
   html[lang='en-US'] {
     word-wrap: keep-all;
@@ -2209,7 +2214,7 @@ main {
   ul.theme-doc-sidebar-menu > li.theme-doc-sidebar-item-category-level-1 > div.menu__list-item-collapsible > a { string-set: prtitle content() }
 
   @page {
-    prince-shrink-to-fit: none;
+    prince-shrink-to-fit: auto;
     @top-right { content: string(doctitle);font-size: .75rem; }
     @bottom-center { content: counter(page);font-size: .75rem; }
   }
@@ -2280,6 +2285,11 @@ main {
   main .markdown .download-release-notes {
     display: none;
   }
+
+  main .markdown iframe[src*='custom-report-template.html'] {
+    display: none !important;
+    visibility: hidden;
+  }
   
   .emoji-no, .emoji-ok {
     visibility: hidden;
@@ -2318,11 +2328,14 @@ main {
   }
   .markdown .tabs-container {
     display: block;
+    visibility: visible;
   }
   .markdown .tabs-container div.margin-top--md {
     display: block;
+    visibility: visible;
   }
-  .markdown .tabs-container div.margin-top--md div[role='tabpanel'] {
+  .markdown .tabs-container div.margin-top--md div[role='tabpanel'], .markdown > ol > li > div.tabs-container > div.margin-top--md > div[role='tabpanel'] {
     display: block;
+    visibility: visible;
   }
 }
