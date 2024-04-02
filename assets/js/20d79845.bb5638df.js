@@ -16,6 +16,8 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(96540);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(92469);
 ;// CONCATENATED MODULE: ./src/pages/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const styles_module = ({"cover":"cover_YHbb","date":"date_i2YJ","background":"background_kXXr"});
@@ -23,7 +25,9 @@ var react = __webpack_require__(96540);
 
 
 
+
 function Cover() {
+    const bgPath = (0,useBaseUrl/* default */.A)('/img/cover-background.png');
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
         className: "cover-page",
         children: [
@@ -47,7 +51,7 @@ function Cover() {
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("img", {
                         className: styles_module.background,
-                        src: "/img/cover-background.png"
+                        src: bgPath
                     })
                 ]
             }),
