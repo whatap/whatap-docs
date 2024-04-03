@@ -358,8 +358,8 @@ const toc = [
         level: 3
     },
     {
-        value: '<Cmdname sid="side_flexboard" />',
-        id: 'cmdname-sidside_flexboard-',
+        value: '<Cmdname sid="side_dashboard" />',
+        id: 'cmdname-sidside_dashboard-',
         level: 4
     },
     {
@@ -489,7 +489,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="side_flexboard" />',
-        id: 'cmdname-sidside_flexboard--1',
+        id: 'cmdname-sidside_flexboard-',
         level: 4
     },
     {
@@ -606,9 +606,9 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
     }, `Browser`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "cmdname-sidside_flexboard-"
+        "id": "cmdname-sidside_dashboard-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "side_flexboard",
+        sid: "side_dashboard",
         mdxType: "Cmdname"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1113,7 +1113,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "cmdname-sidside_flexboard--1"
+        "id": "cmdname-sidside_flexboard-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "side_flexboard",
         mdxType: "Cmdname"
