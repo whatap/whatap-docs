@@ -2996,14 +2996,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_30',
+                id: 'release-notes/java/java-2_2_31',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_30',
+                  id: 'release-notes/java/java-2_2_31',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_30',
                 'release-notes/java/java-2_2_29',
                 'release-notes/java/java-2_2_28',
                 'release-notes/java/java-2_2_27',
@@ -3012,7 +3013,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_24',
                 'release-notes/java/java-2_2_23',
                 'release-notes/java/java-2_2_22',
-                'release-notes/java/java-2_2_21',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3155,7 +3155,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_3_3',
@@ -3164,7 +3164,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_3_3',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_3_2',
                 'release-notes/golang/golang-0_3_1',
@@ -3268,7 +3268,7 @@ const sidebars = {
               label: 'XOS',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/xos-1_1_8b',
@@ -3277,7 +3277,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/xos-1_1_8b',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/xos-1_1_8a',
                 'release-notes/db/xos-1_1_6j',
