@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[98897],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[10472],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 34081:
+/***/ 28204:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,72 +308,66 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-agent-docker',
-    title: 'Docker 환경 설치',
-    description: 'Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
+    id: 'install-docker-go',
+    title: 'Docker Go 설치',
+    description: '컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
     tags: [
-        'Go',
-        '에이전트 설치',
-        'Docker',
-        '컨테이너',
-        '애플리케이션'
+        '쿠버네티스',
+        '쿠버네티스 모니터링',
+        '애플리케이션 설치',
+        'Go'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/install-agent-docker",
-    "id": "golang/install-agent-docker",
-    "title": "Docker 환경 설치",
-    "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
-    "source": "@site/docs/golang/install-agent-docker.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/install-agent-docker",
-    "permalink": "/whatap-docs/golang/install-agent-docker",
+    "unversionedId": "kubernetes/install-docker-go",
+    "id": "kubernetes/install-docker-go",
+    "title": "Docker Go 설치",
+    "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+    "source": "@site/docs/kubernetes/install-docker-go.mdx",
+    "sourceDirName": "kubernetes",
+    "slug": "/kubernetes/install-docker-go",
+    "permalink": "/whatap-docs/kubernetes/install-docker-go",
     "draft": false,
-    "editUrl": "undefined/docs/golang/install-agent-docker.mdx",
+    "editUrl": "undefined/docs/kubernetes/install-docker-go.mdx",
     "tags": [
+        {
+            "label": "쿠버네티스",
+            "permalink": "/whatap-docs/tags/쿠버네티스"
+        },
+        {
+            "label": "쿠버네티스 모니터링",
+            "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
+        },
+        {
+            "label": "애플리케이션 설치",
+            "permalink": "/whatap-docs/tags/애플리케이션-설치"
+        },
         {
             "label": "Go",
             "permalink": "/whatap-docs/tags/go"
-        },
-        {
-            "label": "에이전트 설치",
-            "permalink": "/whatap-docs/tags/에이전트-설치"
-        },
-        {
-            "label": "Docker",
-            "permalink": "/whatap-docs/tags/docker"
-        },
-        {
-            "label": "컨테이너",
-            "permalink": "/whatap-docs/tags/컨테이너"
-        },
-        {
-            "label": "애플리케이션",
-            "permalink": "/whatap-docs/tags/애플리케이션"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-agent-docker",
-        "title": "Docker 환경 설치",
-        "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+        "id": "install-docker-go",
+        "title": "Docker Go 설치",
+        "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
         "tags": [
-            "Go",
-            "에이전트 설치",
-            "Docker",
-            "컨테이너",
-            "애플리케이션"
+            "쿠버네티스",
+            "쿠버네티스 모니터링",
+            "애플리케이션 설치",
+            "Go"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "kubeSidebar",
     "previous": {
-        "title": "에이전트 설치",
-        "permalink": "/whatap-docs/golang/install-agent"
+        "title": "Docker PHP 설치",
+        "permalink": "/whatap-docs/kubernetes/install-docker-php"
     },
     "next": {
-        "title": "API 가이드",
-        "permalink": "/whatap-docs/golang/api-guide"
+        "title": "네임스페이스 프로젝트 만들기",
+        "permalink": "/whatap-docs/kubernetes/create-name-space-project"
     }
 };
 const assets = {};
@@ -433,7 +427,23 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 컨테이너 기반으로 실행하는 Go 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `관리`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `에이전트 설치`)), ` > 하단의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `애플리케이션 설치`)), ` 클릭 > 설치 안내 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `Docker Go`)), ` 탭 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 컨테이너 기반으로 실행하는 Go 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -569,7 +579,7 @@ func main(){
     //It must be executed before closing the app.    
     defer trace.Shutdown()    
 
-    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+    ctx, _ := trace.Start(context.Background(), "Start Tx")
 
     ...
 
