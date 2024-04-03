@@ -103,7 +103,7 @@ func main(){
     //It must be executed before closing the app.    
     defer trace.Shutdown()    
 
-    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+    ctx, _ := trace.Start(context.Background(), "Start Tx")
 
     ...
 
