@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[52266],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56416],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 20261:
+/***/ 19406:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,34 +310,34 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'warning-notice-v2',
     title: '이벤트 설정',
-    description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+    description: '서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
     tags: [
-        'Oracle',
-        '데이터베이스',
+        '서버',
+        'Server',
         '경고 알림',
         '이벤트 설정'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "oracle/warning-notice-v2",
-    "id": "oracle/warning-notice-v2",
+    "unversionedId": "server/warning-notice-v2",
+    "id": "server/warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/oracle/warning-notice-v2.mdx",
-    "sourceDirName": "oracle",
-    "slug": "/oracle/warning-notice-v2",
-    "permalink": "/whatap-docs/oracle/warning-notice-v2",
+    "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "source": "@site/docs/server/warning-notice-v2.mdx",
+    "sourceDirName": "server",
+    "slug": "/server/warning-notice-v2",
+    "permalink": "/whatap-docs/server/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/oracle/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/server/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "Oracle",
-            "permalink": "/whatap-docs/tags/oracle"
+            "label": "서버",
+            "permalink": "/whatap-docs/tags/서버"
         },
         {
-            "label": "데이터베이스",
-            "permalink": "/whatap-docs/tags/데이터베이스"
+            "label": "Server",
+            "permalink": "/whatap-docs/tags/server"
         },
         {
             "label": "경고 알림",
@@ -352,22 +352,22 @@ const metadata = {
     "frontMatter": {
         "id": "warning-notice-v2",
         "title": "이벤트 설정",
-        "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+        "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "Oracle",
-            "데이터베이스",
+            "서버",
+            "Server",
             "경고 알림",
             "이벤트 설정"
         ]
     },
-    "sidebar": "dboracleSidebar",
+    "sidebar": "serverSidebar",
     "previous": {
-        "title": "데이터베이스 경고 알림",
-        "permalink": "/whatap-docs/oracle/warning-notice"
+        "title": "서버 경고 알림",
+        "permalink": "/whatap-docs/server/warning-notice"
     },
     "next": {
         "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/oracle/metric-warning-notice"
+        "permalink": "/whatap-docs/server/metric-warning-notice"
     }
 };
 const assets = {};
@@ -3419,7 +3419,14 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `JSON 편집창은 JSON 검증(Validation) 기능이 내장되어 있습니다. 형식이나 값이 올바르지 않은 경우 편집창 아래에 오류 메시지가 표시됩니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `JSON 편집창은 JSON 검증(Validation) 기능이 내장되어 있습니다. 형식이나 값이 올바르지 않은 경우 편집창 아래에 오류 메시지가 표시되며, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "overwrite",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼은 비활성화됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "event-config-v2-all-events-json-validate.png",
+        mdxType: "ImgLang"
+    })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "이벤트-검색하기"
     }, `이벤트 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 문자열을 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "검색 아이콘",

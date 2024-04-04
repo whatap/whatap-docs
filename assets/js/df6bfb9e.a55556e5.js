@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[69512],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[90047],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 29005:
+/***/ 20269:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,29 +310,30 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'warning-notice-v2',
     title: '이벤트 설정',
-    description: 'Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+    description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
     tags: [
-        'Browser',
+        'PHP',
         '경고 알림',
-        '이벤트 설정'
+        '이벤트 설정',
+        '애플리케이션'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "browser/warning-notice-v2",
-    "id": "browser/warning-notice-v2",
+    "unversionedId": "php/warning-notice-v2",
+    "id": "php/warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/browser/warning-notice-v2.mdx",
-    "sourceDirName": "browser",
-    "slug": "/browser/warning-notice-v2",
-    "permalink": "/whatap-docs/browser/warning-notice-v2",
+    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+    "source": "@site/docs/php/warning-notice-v2.mdx",
+    "sourceDirName": "php",
+    "slug": "/php/warning-notice-v2",
+    "permalink": "/whatap-docs/php/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/browser/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/php/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "Browser",
-            "permalink": "/whatap-docs/tags/browser"
+            "label": "PHP",
+            "permalink": "/whatap-docs/tags/php"
         },
         {
             "label": "경고 알림",
@@ -341,27 +342,32 @@ const metadata = {
         {
             "label": "이벤트 설정",
             "permalink": "/whatap-docs/tags/이벤트-설정"
+        },
+        {
+            "label": "애플리케이션",
+            "permalink": "/whatap-docs/tags/애플리케이션"
         }
     ],
     "version": "current",
     "frontMatter": {
         "id": "warning-notice-v2",
         "title": "이벤트 설정",
-        "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+        "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "Browser",
+            "PHP",
             "경고 알림",
-            "이벤트 설정"
+            "이벤트 설정",
+            "애플리케이션"
         ]
     },
-    "sidebar": "rumsSidebar",
+    "sidebar": "phpSidebar",
     "previous": {
-        "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/browser/metric-warning-notice"
+        "title": "애플리케이션 경고 알림",
+        "permalink": "/whatap-docs/php/warning-notice"
     },
     "next": {
-        "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/browser/set-receive-event"
+        "title": "메트릭스 경고 알림",
+        "permalink": "/whatap-docs/php/metric-warning-notice"
     }
 };
 const assets = {};
@@ -3413,7 +3419,14 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `JSON 편집창은 JSON 검증(Validation) 기능이 내장되어 있습니다. 형식이나 값이 올바르지 않은 경우 편집창 아래에 오류 메시지가 표시됩니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `JSON 편집창은 JSON 검증(Validation) 기능이 내장되어 있습니다. 형식이나 값이 올바르지 않은 경우 편집창 아래에 오류 메시지가 표시되며, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "overwrite",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼은 비활성화됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "event-config-v2-all-events-json-validate.png",
+        mdxType: "ImgLang"
+    })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "이벤트-검색하기"
     }, `이벤트 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 문자열을 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "검색 아이콘",

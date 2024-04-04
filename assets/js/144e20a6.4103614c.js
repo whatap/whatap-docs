@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[53753],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[13534],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 41753:
+/***/ 36828:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,9 +310,9 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'warning-notice-v2',
     title: '이벤트 설정',
-    description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+    description: 'Redis 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
     tags: [
-        'SQL Server',
+        'Redis',
         '데이터베이스',
         '경고 알림',
         '이벤트 설정'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mssql/warning-notice-v2",
-    "id": "mssql/warning-notice-v2",
+    "unversionedId": "redis/warning-notice-v2",
+    "id": "redis/warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/mssql/warning-notice-v2.mdx",
-    "sourceDirName": "mssql",
-    "slug": "/mssql/warning-notice-v2",
-    "permalink": "/whatap-docs/mssql/warning-notice-v2",
+    "description": "Redis 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "source": "@site/docs/redis/warning-notice-v2.mdx",
+    "sourceDirName": "redis",
+    "slug": "/redis/warning-notice-v2",
+    "permalink": "/whatap-docs/redis/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/mssql/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/redis/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "SQL Server",
-            "permalink": "/whatap-docs/tags/sql-server"
+            "label": "Redis",
+            "permalink": "/whatap-docs/tags/redis"
         },
         {
             "label": "데이터베이스",
@@ -352,22 +352,22 @@ const metadata = {
     "frontMatter": {
         "id": "warning-notice-v2",
         "title": "이벤트 설정",
-        "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+        "description": "Redis 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "SQL Server",
+            "Redis",
             "데이터베이스",
             "경고 알림",
             "이벤트 설정"
         ]
     },
-    "sidebar": "mssqlSidebar",
+    "sidebar": "redisSidebar",
     "previous": {
-        "title": "데이터베이스 경고 알림",
-        "permalink": "/whatap-docs/mssql/warning-notice"
+        "title": "메트릭스 경고 알림",
+        "permalink": "/whatap-docs/redis/metric-warning-notice"
     },
     "next": {
-        "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/mssql/metric-warning-notice"
+        "title": "알림 메시지 사용자 정의",
+        "permalink": "/whatap-docs/redis/set-notification-message"
     }
 };
 const assets = {};
@@ -3419,7 +3419,14 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `JSON 편집창은 JSON 검증(Validation) 기능이 내장되어 있습니다. 형식이나 값이 올바르지 않은 경우 편집창 아래에 오류 메시지가 표시됩니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `JSON 편집창은 JSON 검증(Validation) 기능이 내장되어 있습니다. 형식이나 값이 올바르지 않은 경우 편집창 아래에 오류 메시지가 표시되며, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "overwrite",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼은 비활성화됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "event-config-v2-all-events-json-validate.png",
+        mdxType: "ImgLang"
+    })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "이벤트-검색하기"
     }, `이벤트 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 문자열을 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "검색 아이콘",
