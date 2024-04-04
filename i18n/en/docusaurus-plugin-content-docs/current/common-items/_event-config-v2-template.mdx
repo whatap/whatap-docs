@@ -448,6 +448,70 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 </InDoc>
 
+<InDoc product="redis">
+
+<ImgLang img='event-config-v2-db-redis.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Memory Utilization_**
+
+  Category: [`db_redis_counter`](metrics-data-list)
+
+  If the memory usage (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+- **_Redis Cache Hit Ratio_**
+
+  Category: [`db_redis_counter`](metrics-data-list)
+
+  If the total read jobs' success ratio is less than 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it is less than 30%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Used Memory Size_**
+
+  Category: [`db_redis_counter`](metrics-data-list)
+
+  If the memory size exceeds 30,000,000 bytes (30 MB), a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50,000,000 bytes (50 MB), a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+<ImgLang img='event-config-v2-db-mongodb.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active connections_**
+
+  Category: [`db_mongodb_counter`](metrics-data-list)
+
+  If the number of client connections (`active$connections`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Global Lock Queue count_**
+
+  Category: [`db_mongodb_counter`](metrics-data-list)
+
+  If the number of pending client connections (`total$currentQueue$globalLock`) exceeds 10, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 20, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory Utilization_**
+
+  Category: [`db_mongodb_counter`](metrics-data-list)
+
+  If the memory usage (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+</InDoc>
+
 <InDoc product="npm">
 
 <ImgLang img='event-config-v2-npm.png' desc='Event list' />

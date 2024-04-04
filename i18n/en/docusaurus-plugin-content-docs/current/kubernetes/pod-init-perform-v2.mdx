@@ -1,0 +1,119 @@
+---
+id: pod-init-perform-v2
+title: Pod Startup Analysis
+description: The Pod start analysis menu allows you to optimize the size of resources allocated to Pods and operate the cluster stably.
+tags:
+  - Kubernetes
+  - Analysis
+  - Pod
+  - Pod Startup Analysis
+toc_max_heading_level: 2
+---
+
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_podInitPerf" className="uitext" /> 
+
+:::note
+
+It is supported by WhaTap Node Agent **1.4.2 or later**. If the version is lower, the [Previous menu](pod-init-perform) (formerly **Pod initialization performance**) screen is provided. 
+
+:::
+
+For smooth cluster operation, it is required to analyze the performance of Pods until they operate stably and optimize the size of resources allocated to Pods. The <Cmdname sid="side_podInitPerf" className="uitext" /> menu traces the change for 5 minutes after the Pod starts. You can optimize resource allocation by analyzing the resource usage in the three-level sections from **Pending** state to **Running** state and **Stable Running** state. 
+
+Through this, operators can have benefits such as improved resource efficiency, cost savings, improved scalability, and ease of scaling. 
+
+## Basic screen guide
+
+<ImgLang img='k8s-pod-startup-analysis.png' desc='Pod Startup Analysis' />
+
+### Option area at the top
+
+You can use the following options in the top ![Leader line 1](/img/number-01.png) area. 
+
+- By selecting the ![Refresh icon](/img/ico-refresh.svg) **_Refresh_** icon, you can reload the Pod list in the ![Leader line 2](/img/number-02.png) area. 
+
+- By enabling the **_Show only Pods created within 30 days_** ![Icon](/img/ic-toggle-off.svg) toggle, you can view the Pods within 30 days after creation in the Pod list in the ![Leader line 2](/img/number-02.png) area.
+
+  :::note 
+
+  The **_Pod Startup Analysis_** menu analyzes the Pod startup data for 5 minutes within the last 30 days starting from Pod creation. This means that the startup performance cannot be analyzed for Pods that are older than 30 days after creation. 
+
+  :::
+
+- You can search for the desired Pods by entering characters in the Pod search field.
+
+### Pod list area
+
+In the ![Leader line 2](/img/number-02.png) area, you can see the Pod list. The header columns of the table where the Pod list is expanded contains the following data.
+
+- **_QoS Class_**: Quality of Service of the Pod. QoS classes determine the priority of Pods when resources are insufficient. Pods with higher priorities are terminated first.
+
+  - Guaranteed: Most available resources in the node are guaranteed and are assigned priority over other Pods. It is terminated last.
+
+    - This is the case when all containers in the Pod have CPU and memory requests.
+
+    - This is the case when all containers in the Pod have CPU and memory limits and their values are the same as the requests.
+
+  - Burstable: The Pod allocates some resources when the node runs out of resources.
+
+    - This is the case when the conditions of the Guaranteed class are not met.
+
+    - This is applied when any of the Pod's containers have requests or limits set for CPU and memory.
+
+  - BestEffort: It has lower priority than other Pods because there is no resource request or limit. It is terminated first.
+
+    - This is the case when all containers in the Pod have no requests and limits for CPU and memory.
+
+- **_Restart Count_**: Total number of restarts of containers within the Pod.
+
+- **_CPU/Memory Limits_**: Sum of CPU/memory limits (`resources.limits`) set to the container within the Pod.
+
+- **_CPU/Memory Requests_**: Sum of CPU/memory requests (`resources.requests`) set to the container within Pod.
+
+- **_Start Time_**: Pod generation time (`metadata.startTime`).
+
+:::note
+
+- For more information about the QoS Class, see [the following link](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/).
+
+- For more information about the Pod and container resource management, see [the following link](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
+
+:::
+
+## Detailed view guide
+
+From the Pod list of the ![Leader line 2](/img/number-02.png) area, select ![Detailed view icon](/img/ico-detail-view.svg) **_Display Detail_** at the utmost left of the item to analyze. You can see the analysis of the startup performance by container in the selected Pod for each zone as follows.
+
+<ImgLang img='k8s-pod-startup-analysis-details.png' desc='Pod Startup Analysis' />
+
+- **_Pending_**: Section that enters the **_Running_** state after creation of a Pod.
+
+- **_Running_**: Section before the Pod passes the **_Pending_** state and becomes stable.
+
+- **_Stable Running_**: Section where the Pod has passed the **_Running_** state and has stabilized.
+
+:::note
+
+**Stable state (Stable Running)**
+
+WhaTap calculates the average usage compared to the container's CPU limit for about 5 minutes immediately after Pod creation. The point at which CPU usage becomes less than this average is defined as the stabilization start state.
+
+:::
+
+### Analyzing in detail
+
+- If a container is restarted multiple times within 5 minutes, only the information of the container that started first appears. Check the number of restarts for each container. If there are numerous restarts, check whether the container is running normally.
+
+  <ImgLang img='k8s-pod-startup-analysis-details-restart-count.png' desc='Container restart count' />
+
+- If the **_Pending_** section becomes longer, it means that it took a long time for the Pod to enter the **_Running_** state. Check if there are any factors that may cause the Pod's **_Pending_** state. 
+
+  :::note
+
+  For more information about the Pod's pending state, see [the following link](https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/).
+
+  :::
+
+- If the **_Running_** section becomes longer, it means that there is a section with high resource usage when the container in the Pod first runs. Check if there is any problem with the container execution process.
+
+- If the overall initial resource usage is high, consider increasing container resource requests and limits.

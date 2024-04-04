@@ -17,7 +17,7 @@ See the following video guide.
 
 {@include: ../getting-started/_create-project-v2.mdx}
 
-{@include: ../getting-started/_accesskey.mdx} 
+{@include: ../getting-started/_accesskey.mdx}
 
 ## Installing the WhaTap browser agent
 
@@ -42,7 +42,7 @@ Select one of the following two methods to apply the agent.
   - It is recommended if you want to collect all data when loading your web application. 
   - It may affect the load performance of your web application.
 
-## Setting the WhaTap browser agent's options
+## Setting the WhaTap browser agent's options {#setting-agent}
 
 It sets the options to apply to the WhaTap browser agent. The options can be set in the Config object of the installation script. You can set the project access keys, percentage of all user sessions, resource domains to exclude from collection, and such.
 
@@ -52,6 +52,7 @@ config: {
   pcode: {pcode},
   sampleRate: 100,
   ignoreOrigins: [ 'https://ignore-site.com/' , '/^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i' ],
+  collectUserClick: false
 }
 ```
 
@@ -59,6 +60,7 @@ config: {
 - **pcode**: Project code.
 - **sampleRate**: You can set the rate of user sessions that are collected.
 - **ignoreOrigins**: You can add specific resource domains to be excluded from statistics collection in the form of an array of strings. You can also apply regular expressions.
+- **collectUserClick**: Click events can be collected. The default value is `false`.
 
 :::note
 
@@ -66,6 +68,16 @@ The `projectAccessKey` and `pcode` values are recommended to import the script c
 
 :::
 
-## Starting the browser monitoring
+## Next steps
 
-You have completed all settings. Go to [WhaTap Monitoring Service](https://service.whatap.io) and then start the browser monitoring. Select the created project and then go to **_Dashboard_** > **_Browser Monitoring Dashboard_**. You can see the monitoring status.
+- **Collecting custom events**
+
+  To identify the web service issues and improve user experience through browser monitoring, it provides an interface that allows developers and operators to additionally collect desired events that occur on web pages. For more information about custom events, see [the following](collect-custom-events).
+
+- **Setting the actual user ID**
+
+  In the browser monitoring, you can collect data by setting the user ID via the actual user's login ID or email address. You can check the user session performance and event information based on the actual login ID, and then check the browser's errors to identify problems. For more details, see [the following](set-real-user-id).
+
+- **Starting the monitoring**
+
+  Go to [WhaTap Monitoring Service](https://service.whatap.io) and then start the browser monitoring. Select a created project and then go to <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_rumDashboard" className="uitext" />. You can see the monitoring status. For more information about <Cmdname sid="side_rumDashboard" className="uitext" />, see [the following](dashboard).

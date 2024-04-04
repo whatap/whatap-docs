@@ -1,34 +1,33 @@
 ---
 id: stat
-title: Checking the statistical data
-description: It provides the statistical data for each DB.
+title: SQL statistics
+description: It provides the statistical data for each SQL Server database.
 tags:
   - SQL Server
   - Database
-  - Database Monitoring
   - Statistics
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+<!-- SQL 통계-->
 
-{@include: ../common-items/_db-sql-static.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
-{@include: ../common-items/_db-trend-by-query.mdx}  
+<!-- SQL 통계 기본 사용 안내 -->
 
-{@include: ../common-items/_db-detail-view-query.mdx} 
+{@include: ../common-items/_db-stat-sql-basic.mdx} 
 
-### Checking the information details
+<!-- 쿼리별 수행 추이, 자세히 보기-->
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+{@include: ../common-items/_db-stat-sql-view-query.mdx} 
 
-<!-- mysql, mariadb 지원 -->
+{@include: ../common-items/_db-stat-sql-view-query-details-summary.mdx}
 
-<!-- {@include: ../common-items/_db-database-size.mdx} -->
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
 
-<!-- oracle, tibero -->
+<!-- 필터 조건추가하기-->
 
-<!-- {@include: ../common-items/_db-tablespace-size.mdx}-->
+{@include: ../common-items/_db-sql-filter.mdx}
 
-<!-- oracle, tibero -->
+## Configuring the table columns{#change-column}
 
-<!-- {@include: ../common-items/_db-sga-size.mdx} -->
+{@include: ../common-items/_db-v2-data-edit-column.mdx}

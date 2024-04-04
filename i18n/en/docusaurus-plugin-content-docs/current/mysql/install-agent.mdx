@@ -18,7 +18,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 {@include: ../getting-started/_create-project-v2.mdx}
 
-{@include: ../getting-started/_accesskey.mdx} 
+{@include: ../getting-started/_accesskey.mdx}
 
 ## Downloading the WhaTap database agent
 
@@ -27,12 +27,12 @@ The following guides you to the basic installation method for using the WhaTap d
 3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
    ```ini title='whatap.conf'
-   license=Project access key
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server Info
+   license={Access_Key}
+   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
 
    dbms=mysql
-   db_ip={DB server IP}
-   db_port={DB server port number}
+   db_ip={DB_server_IP_address}
+   db_port={DB_server_port}
    ```
 
    :::info
@@ -79,7 +79,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 <!-- 모니터링용 계정 생성-->
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+{@include: ../common-items/_db-create-monitoring-account.mdx}
 
 <!-- MySQL-->
 
@@ -183,7 +183,7 @@ Assign additional roles depending on the features and operation environment.
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+{@include: ../common-items/_db-create-db-user-file-body.mdx} 
 
 <!--## 에이전트 실행-->
 
@@ -191,4 +191,4 @@ Assign additional roles depending on the features and operation environment.
 
 <!--## XOS 에이전트 설치-->
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+{@include: ../common-items/_db-install-xos-agent.mdx} 

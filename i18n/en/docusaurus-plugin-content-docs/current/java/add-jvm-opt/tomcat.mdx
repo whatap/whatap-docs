@@ -1,15 +1,17 @@
 ---
 id: tomcat
 title: Tomcat
-description: Complete the additional settings for JVM options in the Tomcat application server environment.
+description: The following provides the detailed guide on how to add Java Virtual Machine (JVM) options to integrate the WhaTap monitoring solution into Tomcat applications. Through this document, users can learn step by step how to apply the required JVM settings to monitor the performance and availability of Tomcat applications after installing the Java agent. It includes the configuration of essential JVM options during agent installation, optimal configuration for smooth integration with Tomcat, and histogram query.
 tags:
-  - Tomcat
   - Java
+  - Tomcat
+  - Application
+  - Agent
 ---
 
-Check the method how to add JVM options in the application server environment using Tomcat. Set according to the OS.
-
 ## Adding the boot environment
+
+This guide explains how to add required Tomcat options to effectively use the Java monitoring agent in the WebLogic application server environment. Set it according to the operating system.
 
 ### Linux
 
@@ -77,37 +79,3 @@ The `ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1` entry is used to 
 ## Starting the monitoring
 
 {@include: ../../common-items/_start-apm.mdx} 
-
-## Tomcat compatibility
-
-| WAS Ver. |       Java SE 6 (jdk1.6.0)      |     Java SE 7 (jdk1.7.0_80)     |     Java SE 8 (jdk1.8.0_91)     |
-| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-
-| WAS Ver. |       OpenJDK 6 (1.6.0_45)      |       OpenJDK 7 (1.7.0_80)      |       OpenJDK 8 (1.8.0_91)      |
-| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-
-| WAS Ver. |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
-| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-
-## Tomcat DataSource
-
-| DB            | JDBC Driver file name               | JDBC Ver.  | JDK Ver.     |          Compatibility          |
-| ------------- | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
-| MySQL         | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| MariaDB       | mariadb-java-client-1.4.6.jar       | 1.4.6      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| PostgreSQL    | postgresql-9.4.1209.jre7.jar        | 9.4.1209   | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| Amazon Aurora | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| Oracle        | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| DB2           | db2jcc.jar, db2jcc_license_cu.jar   | 1.4.2      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |

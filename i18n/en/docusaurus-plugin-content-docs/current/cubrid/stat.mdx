@@ -1,27 +1,33 @@
 ---
 id: stat
 title: SQL statistics
-description: It provides the statistical data for each DB.
+description: It provides the statistical data for each CUBRID DB.
 tags:
   - CUBRID
   - Database
   - Statistics
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-
 <!-- SQL 통계-->
 
-{@include: ../common-items/_db-stat-sql-desc.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
-<!-- SQL 통계 기본 사용 안내-->
+<!-- SQL 통계 기본 사용 안내 -->
 
 {@include: ../common-items/_db-stat-sql-basic.mdx} 
 
 <!-- 쿼리별 수행 추이, 자세히 보기-->
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
+{@include: ../common-items/_db-stat-sql-view-query.mdx} 
 
-## Checking the information details
+{@include: ../common-items/_db-stat-sql-view-query-details-summary.mdx}
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
+
+<!-- 필터 조건추가하기-->
+
+{@include: ../common-items/_db-sql-filter.mdx}
+
+## Configuring the table columns{#change-column}
+
+{@include: ../common-items/_db-v2-data-edit-column.mdx}

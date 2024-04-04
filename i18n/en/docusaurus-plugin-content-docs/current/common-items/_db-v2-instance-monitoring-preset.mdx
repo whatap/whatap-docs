@@ -1,5 +1,7 @@
 ## Preset{#preset}
 
+<InDoc product="postgresql,mysql">
+
 You can save and recall user-defined widget settings and active session table arrangements as presets. The following presets are provided by default, and the **_Default_** presets cannot be changed.
 
 <ImgLang img='db-preset-list.png' desc='Preset' />
@@ -9,6 +11,16 @@ You can save and recall user-defined widget settings and active session table ar
 - **_Default(xos)_**: It consists of key DB metrics and XOS metrics (CPU and memory utilization, memory SWAP usage, disk I/O, etc.).
 
 - **_Default(rds)_**: It consists of key DB metrics and RDS CloudWatch metrics (CPU utilization, free memory space, free storage space, network, etc.).
+
+</InDoc>
+
+<InDoc product="redis,mongodb">
+
+You can save and recall user-defined widget settings and active session table arrangements as presets. The **_Default_** preset cannot be modified.
+
+<ImgLang img='db-dashboard-preset.png' desc='Preset' />
+
+</InDoc>
 
 ### Save Preset
 
@@ -22,9 +34,9 @@ In the <Cmdname sid="preset" className="uitext" /> list, select a saved item to 
 
 :::note
 
-- The **_default_** preset cannot be modified. 
+- The **_Default_** preset cannot be modified. 
 
-- You can create user-defined presets up to 5. Including the modified metric graph, the column order, column width, and filter application content of the active sessions are also applied.
+- You can create custom presets up to 5. Including the modified metric graph, the column order, column width, and filter application content of the active sessions are also applied.
 
 :::
 

@@ -1,15 +1,60 @@
 ---
 id: monitoring-intro
 title: MongoDB Monitoring
-description: The WhaTap database monitoring service (DBX) provides the performance monitoring service by collecting data based on queries.
+description: The WhaTap MongoDB database monitoring service (DBX) provides the performance monitoring service by collecting data based on queries.
 displayed_sidebar: mongodbSidebar
 hide_table_of_contents: false
 tags:
   - MongoDB
-  - Database Monitoring
   - Database
   - Monitoring
   - DBX
 ---
 
-{@include: ../common-items/_db-monitoring-intro.mdx} 
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+import NewFeature from '../common-items/_import_db-v2-new-feature.mdx';
+
+{@include: ../common-items/_db-introduction-desc.mdx} 
+
+{@video: https://img.whatap.io/23/11/06/031831DB_prd.mp4}
+
+## MongoDB monitoring features
+
+<CommonCont />
+
+{@include: ../common-items/_db-specification.mdx}
+
+* * *
+
+## New features in Database Monitoring V2 {#new-feature}
+
+<NewFeature product='MongoDB' ver='1.7.0'/>
+
+## Supported functions
+
+The following are available features. To compare with other products and supported features, see [the following](../support-env#compare-db).
+
+| Category   | Function type               |              Redis              |
+| ---------- | --------------------------- | :-----------------------------: |
+| Monitoring | Instance List               | <span class='emoji-ok'>✅</span> |
+| ^          | Instance Monitoring         | <span class='emoji-ok'>✅</span> |
+| ^          | Multi DataBase (tenant)     | <span class='emoji-no'>❌</span> |
+| ^          | Slow Query                  | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                      | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare              | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                   | <span class='emoji-no'>❌</span> |
+| ^          | Parallel Query Tree         | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                   | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameters               | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                    | <span class='emoji-no'>❌</span> |
+| ^          | Table Size                  | <span class='emoji-no'>❌</span> |
+| ^          | Database (TableSpace) Size  | <span class='emoji-ok'>✅</span> |
+| ^          | SGA Size                    | <span class='emoji-no'>❌</span> |
+| Report     | Daily/Weekly/Monthly Report | <span class='emoji-no'>❌</span> |
+| Event      | Event List                  | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                  | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting               | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                 | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                  | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management          | <span class='emoji-ok'>✅</span> |

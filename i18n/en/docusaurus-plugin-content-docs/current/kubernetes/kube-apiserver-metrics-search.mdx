@@ -1,0 +1,44 @@
+---
+id: kube-apiserver-metrics-search
+title: kube-apiserver Metrics Search
+description: The following describes the View kube-apiserver metrics menu.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - kube-apiserver
+  - Control Plane
+  - Metrics Search
+toc_max_heading_level: 2
+---
+
+Home > Select Cluster Project > <Cmdname sid="cluster" className="uitext" /> > **_kube-apiserver Metrics Search_**
+
+{@include: ../common-items/_k8s-kube-apiserver-common.mdx}
+
+The kube-apiserver is a component that handles the requests inside and outside the **Control Plane**. You can see the original data consistency of the metrics collected from kube-apiserver through the **_View kube-apiserver metrics_** menu. 
+
+## Basic screen guide
+
+<ImgLang img='k8s-apiserver-metrics-search.png' desc='kube-apiserver Metrics Search' />
+
+The **_View kube-apiserver metrics_** menu provides the feature to query the original monitoring data collected from kube-apiserver for each <Cmdname sid="category" className="uitext" />. Data collected for the last 5 minutes is reflected at an interval of 1 minute.
+
+- You can view the data from a specific point in the past by using the **_Time selector_** on the upper left. To view the past data, select desired options and then click the ![Magnifying glass icon](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" /> icon.
+
+- You can set <Cmdname sid="max_count" className="uitext" /> for view. 
+
+- You can filter metrics to process the original data as needed. 
+
+- Select the <Cmdname sid="download" className="uitext" /> icon at the upper right corner and then download desired data as a _CSV_ format file.
+
+### Filtering
+
+{@include: ../common-items/_k8s-list-filter.mdx}
+
+## Enabling the kube-apiserver monitoring
+
+{@include: ../common-items/_k8s-kube-apiserver-monitoring.mdx}
+
+## kube-apiserver metrics
+
+{@include: ../common-items/_k8s-kube-apiserver-metric.mdx}

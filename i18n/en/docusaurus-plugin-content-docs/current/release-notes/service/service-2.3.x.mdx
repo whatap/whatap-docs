@@ -1,0 +1,334 @@
+---
+id: service-2_3_x
+title: Service 2.3.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_2_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.3.1
+
+March 27, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> In the MongoDB <code class="my">V2</code> project, fixed the issue where the <Cmdname sid="side_log" className="uitext" /> menu is not exposed.</p>
+
+### `Kubernetes`
+
+- <Status>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_podInitPerf" className="uitext" />, added the user guide link on the banner.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, modified to go from the summary view to the list menu without filtering when a group or all is selected.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" />, fixed the issue where filtering is not applied when viewing the past data.
+
+</div>
+
+## Service 2.3.0
+
+March 27, 2024
+
+<div class='indentTab'>
+
+### Release of new features
+
+It provides a guide to the new features released in Service 2.3.0.
+
+#### `Database`
+
+<p><Status>New</Status> Redis and MongoDB <code class="my">V2</code> services now launched!</p>
+
+- The UIs and features of <Cmdname sid="side_dashboard" className="uitext" /> have been greatly improved.
+
+- You can see the database performance metrics in <Cmdname sid="side_dashboard" className="uitext" />.
+
+- Added the agent selection feature for each cluster in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />.
+
+- Added the <Cmdname sid="side_log" className="uitext" /> menu that can search for database logs and their trend and configure the log notifications.
+
+:::note
+
+- For more information about new features in **Redis Monitoring V2**, see [the following](../../redis/monitoring-intro#new-feature).
+
+- For more information about new features in **MongoDB Monitoring V2**, see [the following](../../mongodb/monitoring-intro#new-feature).
+
+:::
+
+#### `Kubernetes`
+
+- <Status>New</Status> Added the <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" /> menu that can view the kube-apiserver collection metrics.
+
+  :::note
+
+  - This feature is only for cluster projects. In the <Cmdname sid="side_cluster" className="uitext" /> > <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" /> path, you can see this feature.
+
+  - For more information about <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" />, see <Link to="../../kubernetes/kube-apiserver-metrics-search" target="_blank">the following</Link>.
+
+  :::
+
+- <Status>New</Status> Added the <Cmdname sid="side_deploymentList" className="uitext" /> menu that provides information such as ReplicaSet count, container count, key performance data statistics, and Pod count based on the deployment.
+
+  :::note
+
+  - This feature can be seen in the <Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_deploymentList" className="uitext" /> path.
+
+  - For more information about <Cmdname sid="side_deploymentList" className="uitext" />, see <Link to="../../kubernetes/deployment-list" target="_blank">the following</Link>.
+
+  :::
+
+#### `Browser`
+
+<p><Status>New</Status> Added the <Cmdname sid="side_userSessionEventSearch" className="uitext" /> menu that can search for user session logs.</p>
+
+:::note
+
+- This feature can be seen in the <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_userSessionEventSearch" className="uitext" /> path.
+
+- For more information about <Cmdname sid="side_userSessionEventSearch" className="uitext" />, see <Link to="../../browser/user-session-log-search" target="_blank">the following</Link>.
+
+:::
+
+* * *
+
+### `Common`
+
+#### <Cmdname sid="side_flexboard" />
+
+- <Status>Changed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" />, improved the dashboard copying and sharing features.
+
+  - Modified not to view the data for <b>uninvited projects</b> when sharing the dashboard.
+
+  - Modified to share a dashboard depending on the sharing mode regardless of the project roles.
+
+  - Improved to set the sharing modes for each account when sharing a dashboard with multiple audiences.
+
+  - Unified the UI for dashboard copying and sharing.
+
+  - Modified to allow copying only for the dashboards shared in read mode.
+
+- <Status>Fixed</Status> Modified to remove the filtered content of the selected project when changing the selected project of the filter in <Cmdname sid="flexboard" className="uitext" /> (each filter is applied on a project basis).
+
+#### <Cmdname sid="side_event" />
+
+- <Status>Feature</Status> In <Cmdname sid="side_eventNoti" className="uitext" />, added the Opsgenie platform registration function as a 3rd party plug-in.
+
+- <Status>Changed</Status> Changed the English name of the <Cmdname sid="side_eventNoti" className="uitext" /> menu (<b>Configuration</b> → <span class="uitext">Notifications</span>).
+
+- <Status>Changed</Status> In the <Cmdname sid="TTL06656" className="uitext" /> function of <Cmdname sid="side_eventNoti" className="uitext" />, applied the multilingual image.
+
+- <Status>Changed</Status> Added the <Cmdname sid="sms_noti_alert_language" className="uitext" /> option to set the default language for alert notification messages when creating projects.
+
+- <Status>Fixed</Status> In<Cmdname sid="side_eventHistory" className="uitext" />, fixed the issue where the event occurrence time and event resolution time are displayed with the same time.
+
+- <Status>Fixed</Status> Modified the problem where the <Cmdname sid="sms_noti_alert_language" className="uitext" /> option is emptied in <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="project_management" className="uitext" />, if the project's notification language is "Japanese."
+
+#### Side menu
+
+- <Status>Changed</Status> Modified the side menu to stop the tutorial's initial operation.
+
+- <Status>Changed</Status> Deleted the logo tooltip from the top of the side menu.
+
+- <Status>Changed</Status> Changed the <Cmdname sid="BTN07359" className="uitext" /> addition button style of the side menu.
+
+- <Status>Changed</Status> Modified the side menu to sort the projects in a group by name.
+
+#### ETC
+
+- <Status>Changed</Status> Modified to move to the project creation screen when adding a group upon project creation.
+
+- <Status>Changed</Status> Adjusted roles so that members with the <b>Modify</b> or <b>Alert settings</b> role can use the <Cmdname sid="side_maintenancePlan" className="uitext" /> menu.
+
+- <Status>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />, changed the header to remain fixed when scrolling the table list.
+
+- <Status>Fixed</Status> Modified the issue where a value other than the menu name appears in the header when entering the menu.
+
+- <Status>Fixed</Status> Deleted the error message that appears when a user whose payment method is registered as Stripe modifies the <Cmdname sid="bill_recipient_setting" className="uitext" /> item.
+
+* * *
+
+### `Application`
+
+#### Common
+
+- In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" /> the following functions have been added.
+
+  - <Status>Feature</Status> Added the features to adjust the agent list spacing, add the search feature, and sort by name in order.
+
+  - <Status>Feature</Status> Added the <Cmdname sid="AA018" className="uitext" /> widget to display active transactions for each agent.
+
+- <Status>Feature</Status> In the <UI>Top 30</UI> section of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, added the features to add, delete, and filter for IP addresses in IP Filter.
+
+- <Status>Changed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />, added <Cmdname sid="sql_fetch_count" className="uitext" /> as <Cmdname sid="sort" className="uitext" />.
+
+- <Status>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />, modified the agent list to be expanded by default.
+
+- <Status>Changed</Status> Applied a design system that configures the tab menu of the <Cmdname sid="side_agentsConfiguration" className="uitext" /> menu into individual submenus.
+
+- <Status>Changed</Status> Applied a design system that configures the tab menu of the <Cmdname sid="side_statistics" className="uitext" /> menu into individual submenus.
+
+- <Status>Fixed</Status> Modified not to display the projects whose error count is 0 when the <Cmdname sid="TTL06209" className="uitext" /> window is opened by dragging a chart with the <Cmdname sid="dashboard_hitmap_error" className="uitext" /> option of the <Cmdname sid="AA005" className="uitext" /> widget enabled.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, modified the <Cmdname sid="AA010" className="uitext" /> widget-related things.
+
+  - In case of PHP, Python, and .Net products, the <Cmdname sid="AA010" className="uitext" /> widget name has been changed to <Cmdname sid="AA017" className="uitext" />.
+
+  - In case of PHP, Python, .Net, and Go products, deleted the <Cmdname sid="system_gc_only" className="uitext" /> column from the detailed information window for heap memory and process memory.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the issue where the IP filters are not applied in <Cmdname sid="filter" className="uitext" /> during search of the past data.
+
+#### Java
+
+<p><Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, deleted the "Optional" displayed on <b>Add JVM option</b> at the <b>Agent installatin guide</b> section.</p>
+
+#### PHP
+
+- <Status>Fixed</Status> Modified the version on the project installation screen for the PHP products: 8.0 → 8.3
+
+- <Status>Fixed</Status> Modified the data type passed to the <code>whatap.active_stat_enabled</code> option in the PHP agent settings from <code>long</code> to <code>boolean</code>.
+
+#### Node.js
+
+<p><Status>Fixed</Status> Modified the instructions (Japanese) on the project installation screen of the Node.js product.</p>
+
+* * *
+
+### `Server`
+
+- <Status>Feature</Status> Added recipient tag setting function in the <Cmdname sid="sm_log_event_tab" className="uitext" /> tab of the <Cmdname sid="event_setting" className="uitext" /> menu.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_resourceEqualizer" className="uitext" />, fixed the issue where the maximum value on the y-axis is not displayed on the <Cmdname sid="disk_iops" className="uitext" /> chart.
+
+- <Status>Fixed</Status> Fixed the issue where any text in the list goes out of the layout in the <Cmdname sid="sm_log_event_tab" className="uitext" /> tab of the <Cmdname sid="event_setting" className="uitext" /> menu.
+
+- <Status>Fixed</Status> When registering the history in the <Cmdname sid="sms_alert_status" className="uitext" /> list, modified to display the registration completion tag instead of the history (number of cases).
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Feature</Status> Reorganized the <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="pod_init_perform" className="uitext" /> menu and changed the menu name to <Cmdname sid="podInitPerf" className="uitext" />.
+
+  > The <Cmdname sid="podInitPerf" className="uitext" /> menu helps manage container resources efficiently by analyzing the startup performance after Pod creation.
+
+  - Changed the flow to start analysis when a Pod is selected instead of provision of a single list.
+
+  - Visualized the performance analysis section.
+
+  :::note
+
+  For more information about <Cmdname sid="podInitPerf" className="uitext" />, see <Link to="../../kubernetes/pod-init-perform-v2" target="_blank">the following</Link>.
+
+  :::
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the link to the list menu.
+
+- <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the guide for the Pod phase and phases of the selected category.
+
+- <Status>Feature</Status> In <Cmdname sid="workload" className="uitext" /> &gt; <Cmdname sid="containerizedAppList" className="uitext" />, added the <Cmdname sid="TTL06891" className="uitext" /> tab in the application details.
+
+- <Status>Feature</Status> In <Cmdname sid="side_containerMap" className="uitext" /> 메뉴의 <Cmdname sid="BTN06342" className="uitext" />, added the <Cmdname sid="checked_only" className="uitext" /> option that can display only the items selected from the target (container/Pod) list.
+
+- <Status>Feature</Status> In <Cmdname sid="side_integratedContainerMap" className="uitext" />, added <UI>WhatapProject</UI> as the <Cmdname sid="groupby" className="uitext" /> option: grouping by project is possible.
+
+- <Status>Feature</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" /> for the Kubernetes cluster project, added the node information column.
+
+  > <UI>ExternalIP</UI>, <UI>InternalIP</UI>, <UI>InternalDNS</UI>, <UI>ExternalDNS</UI>, <UI>Hostname</UI>
+
+- <Status>Feature</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerImages" className="uitext" />, displayed the total number of images.
+
+- In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, the following features have been added and modified.
+
+  - <Status>Feature</Status> Added the <Cmdname sid="ITM06172" className="uitext" /> option in the Pod category.
+
+    ![](/img/release/release-k8s-container-add-option.png)
+
+  - <Status>Fixed</Status> Added the function to display the number of objects at the top of the widget when the grouping option is applied.
+
+    ![](/img/release/release-k8s-container-group-application-count.png)
+
+  - <Status>Fixed</Status> In <Cmdname sid="BTN06342" className="uitext" />, changed the sorting order of metrics based on the classification.
+
+- <Status>Fixed</Status> Under <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_analysis" className="uitext" />, added <Cmdname sid="side_counter" className="uitext" /> and <Cmdname sid="side_metricsSearch" className="uitext" />.
+
+- <Status>Fixed</Status> Fixed the issue where the theme is not applied to the guide text that appears if the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_podInitPerf" className="uitext" />(<Cmdname sid="pod_init_perform" className="uitext" />) menu has no data to load.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_integratedContainerMap" className="uitext" />, when using the <Cmdname sid="groupby" className="uitext" /> option, fixed the issue where the number of objects is intermittently hidden.
+
+* * *
+
+### `Database`
+
+#### Common
+
+- In <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="flexboard" className="uitext" />, added the active session table filter.
+
+- <Status>Feature</Status> Added the real-time/suspension inquiry and the refresh button to the <Cmdname sid="session_detail" className="uitext" /> window.
+
+- <Status>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, added the selection feature for multiple filters.
+
+- <Status>Changed</Status> Changed the <Cmdname sid="session_detail" className="uitext" /> window style from modal to pop-out.
+
+- <Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, changed the option names as follows:
+
+  - <Cmdname sid="TTL06346" className="b500" /> → <Cmdname sid="sort" className="uitext" />
+  - <Cmdname sid="TTL06345" className="b500" /> → <Cmdname sid="TTL07773" className="uitext" />
+
+- <Status>Changed</Status> Applied changes to the database product service for changing the xos metric (xos2 → xos).
+
+  - In the CPU utilization widget of <Cmdname sid="side_flexboard" className="uitext" />, changed the metric from <span class="b500">cpu(xos2)</span> to <UI>cpu(xos)</UI>.
+
+  - From the metric list of custom reports in the MySQL project, changed the metric from <span class="b500">cpu(xos2)</span> to <UI>cpu(xos)</UI>.
+
+  - In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, changed the metric of the CPU utilization template among metrics event templates from <span class="b500">cpu(xos2)</span> to <UI>cpu(xos)</UI>.
+
+- <Status>Changed</Status> On the dashboard in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the style of the widget selection list that appears by right-clicking your mouse.
+
+- <Status>Fixed</Status> In <Cmdname sid="flexboard" className="uitext" />, improved the performance of the active session list inquiry.
+
+#### PostgreSQL, MySQL
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, reorganized the functions.
+
+  - You can change the size and position of a widget.
+
+  - Added several widgets and a deletion feature.
+
+  - Added the preset saving feature.
+
+- In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, the following features have been added and modified.
+
+  - <Status>Feature</Status> Added the <UI>Default(xos)</UI>, <UI>Default(rds)</UI> preset.
+
+  - <Status>Feature</Status> Added the function to save the Y-axis values changed in the <UI>SQL Elapse Map</UI> and <UI>Slow Query</UI> widgets on the dashboard.
+
+  - <Status>Fixed</Status> Fixed the issue where the browser temporarily freezes due to the large amount of data being viewed when querying by dragging a chart in the <UI>SQL Elapse Map</UI> widget on the dashboard.
+
+#### PostgreSQL
+
+- <Status>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, improved its design and added the installation guide.
+
+- <Status>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_pgStat" className="uitext" />, added the selection feature for multiple filters.
+
+#### MySQL
+
+- <Status>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_mysqlStat" className="uitext" />, added the selection feature for multiple filters.
+
+#### MongoDB
+
+<p><Status>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, reorganized the UI design.</p>
+
+* * *
+
+### `Browser`
+
+- <Status>Feature</Status> Added the user session analyzing feature in the following menu paths:
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_ajaxAnalytics" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+</div>

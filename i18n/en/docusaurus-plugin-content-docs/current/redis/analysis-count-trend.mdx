@@ -1,7 +1,7 @@
 ---
 id: analysis-count-trend
 title: Using the count trend
-description: You can check and compare the database operation trends.
+description: You can check and compare the Redis database operation trends.
 tags:
   - Redis
   - Database
@@ -9,20 +9,30 @@ tags:
   - Count trend
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+<!-- description-->
 
-<!-- 카운트 추이 -->
+{@include: ../common-items/_db-v2-count-trend-desc.mdx}
 
-{@include: ../common-items/_db-count-trend-desc.mdx}  
+<!-- ## 기본 화면 안내-->
 
-<!-- 카운트 추이 비교 -->
+{@include: ../common-items/_db-v2-count-trend-basic-usage.mdx} 
 
-{@include: ../common-items/_db-compare-count-trend-v2.mdx}  
+<!-- ### 비교 대상 선택하기-->
 
-<!-- 차트 및 액티브 세션 영역 활용하기 -->
+{@include: ../common-items/_db-v2-count-trend-select-instance.mdx} 
 
-{@include: ../common-items/_db-using-chart-activesession-area.mdx}  
+<!-- ### 액티브 세션 정보 비교하기-->
 
-<!-- 컬럼 정보 안내 -->
+{@include: ../common-items/_db-v2-count-trend-compare.mdx} 
 
-{@include: ../common-items/_db-redis-info-of-column.mdx} 
+<!-- ### 특정 시간 비교하기-->
+
+{@include: ../common-items/_db-v2-count-trend-compare-time.mdx} 
+
+<!--## 프리셋-->
+
+{@include: ../common-items/_db-v2-count-trends-preset.mdx} 
+
+## Column information guide {#column-info}
+
+{@include: ../common-items/_db-redis-info-of-column.mdx}  

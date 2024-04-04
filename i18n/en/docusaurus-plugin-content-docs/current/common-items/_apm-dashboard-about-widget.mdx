@@ -1,4 +1,4 @@
-## Learning about widgets
+## Learning about the widgets {#about-widget}
 
 :::info
 
@@ -63,6 +63,14 @@ The situation where lots of blue colors are represented is not a problem. You mu
   - For more information about transactions, see [the following](track-transactions-intro).
 
   :::
+
+#### <Cmdname sid="AA018" /> {#active-trs-agent}
+
+<ImgLang img='apm-dashboard-active-tx-agent.png' desc='Agent Active Transaction' />
+
+The <Cmdname sid="AA002" className="uitext" /> widget displays on a chart the data merged based on the criteria selected in the agent selection options. On the other hand, the <Cmdname sid="AA018" className="uitext" /> widget allows you to individually check the agents included in the selected agent classification criteria.
+
+Right-click the dashboard and then select the <Cmdname sid="AA018" className="uitext" /> widget from the widget list.
 
 #### <Cmdname sid="AA004" /> {#active-status}
 
@@ -170,6 +178,8 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
+<InDoc product="java,nodejs,golang">
+
 #### <Cmdname sid="AA010" /> {#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='Heap memory' />
@@ -178,13 +188,9 @@ You can see which servers are at risk by displaying the maximum available memory
 
 The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). <Cmdname sid="AA010" className="uitext" /> metric is displayed with average values.
 
-:::note
+</InDoc>
 
-- Java and Node.js display the total heap memory and usage.
-
-- PHP, Python, and .Net display the process memory usage.
-
-:::
+<InDoc product="java">
 
 :::tip
 
@@ -197,6 +203,30 @@ For more information about the heap memory chart analysis, see the following lin
 - [Analysis of JAVA heap memory chart: Analysis of Ch.2 memory leak and heap dump](https://youtu.be/t2q5z4HHNfs)
 
 :::
+
+</InDoc>
+
+<InDoc product="php,dotnet,python">
+
+#### <Cmdname sid="AA017" /> {#process-memory}
+
+<ImgLang img='apm-dashboard-process-memory.png' desc='Process Memory' />
+
+It displays the sum of the maximum system memory available for each server and the memory used by a specified process.
+
+The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). <Cmdname sid="AA017" className="uitext" /> metric is displayed with average values.
+
+</InDoc>
+
+<Xclude product="java">
+
+:::tip
+
+For more information about chart analysis, see the following link. [Monthly WhaTap: Metrics to pay attention to monitoring](https://www.whatap.io/ko/blog/94/)
+
+:::
+
+</Xclude>
 
 ### User-related widget
 

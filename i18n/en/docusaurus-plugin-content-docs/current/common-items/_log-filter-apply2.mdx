@@ -1,6 +1,6 @@
-When a filter is applied, the logs that match the specified conditions are filtered. You can enter multiple filters. If the filter has the same tag, it is applied as OR (||). Otherwise, it is applied as AND (&&).
+<InDoc pages="log-search,aws-log-search">In <UI>Time selector</UI> on the left of <LinkImage img="number-01.png" className="ico" />, you can specify the time range. On the right, </InDoc>When a filter is applied, the logs that match the specified conditions are filtered. You can enter multiple filters. OR (<code>||</code>) if the filters have the same tags, otherwise AND (<code>&&</code>).
 
-You can specify a filter by directly entering a value in the input field or clicking the **_Filter_** field. Filter tags are entered in the following order: `Search key`, `Operator`, and `Search value`. When entering values in the input field, separate keywords with spaces. If spaces are included for keywords, enclose them with the _''_ or _""_ symbol. If the symbol-enclosed keyword includes _\\_, enter it as _\\\\_. If you select ![Search icon](/img/ic-search-on-press.svg) **_Search_**, the data with the filter applied can be viewed in the ![number-s3](/img/number-03.png) area.
+You can specify a filter by directly entering a value in the input field or clicking the **_Filter_** field. Filter tags are entered in the following order: `Search key`, `Operator`, and `Search value`. If you select ![Search icon](/img/ic-search-on-press.svg) **_Search_**, the data with the filter applied can be viewed in the ![number-s3](/img/number-03.png) area.
 
 :::note 
 
@@ -51,3 +51,15 @@ If the filter tags exceed 2 lines, you can fold it by selecting the ![Icon](/img
 - Duplicate ‘search key’ and ‘search value’ cannot be entered.
 
 - Searching is not possible if there is a tag whose `search key` or `search value` is missing. Invalid tags appear in <span class='mstop'>gray</span>.
+
+<InDoc pages="log-lt,aws-log-lt">
+
+:::note
+
+- You cannot enter a `category` with the **_Live Tail_** `search key`.
+
+- The expression under the entered filter value is a preview of the filter expression for querying the log data. 
+
+:::
+
+</InDoc>

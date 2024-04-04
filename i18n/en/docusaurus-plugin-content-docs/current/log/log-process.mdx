@@ -8,6 +8,12 @@ tags:
   - Log time stamp
 ---
 
+<!-- >
+
+와탭의 로그 모니터링은 대량의 로그 생성부터 수집, 저장, 처리 및 폐기까지 로그 생명 주기 전 과정을 통합 모니터링합니다.
+
+-->
+
 This document provides information on the reference time of the log **_time stamp_** in the **processing** stage of the log monitoring process.
 
 ## Timestamp reference time
@@ -46,6 +52,11 @@ The `agenttime` index has been added that indicates the log creation time in the
 
 Logs are collected through the following 3 steps: Different reference times may be used for each step. 
 
+<!-- > 
+모니터링 대상에서 로그 발생 -> 에이전트 수집 -> 와탭 수집 서버 수집
+이미지 만들기*
+-->
+
 1. **Log creation time**
 
    Deviations may occur depending on the time or logging policy of the monitoring target. 
@@ -77,3 +88,9 @@ Logs are collected through the following 3 steps: Different reference times may 
    Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
 
 There is a big difference between **WhaTap agent collection time** and **WhaTap collection server time**. Check the server time of the monitoring target. If the monitored server time is set to a time earlier or later than the server time, this affects the agent collection time.
+
+<!-- 
+
+The log monitoring process consists of **collect**, **process**, **save**, and **view** steps. 
+
+-->
