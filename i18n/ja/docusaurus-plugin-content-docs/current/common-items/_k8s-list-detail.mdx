@@ -1,0 +1,57 @@
+一覧で照会を希望する<InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">アプリケーション</InDoc><InDoc pages="deployment-list">Deployment</InDoc>の![虫眼鏡アイコン](/img/ic-search.svg) **_詳細を見る_**アイコンを選択する時に、該当<InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">アプリケーション</InDoc><InDoc pages="deployment-list">Deployment</InDoc>に関する詳細情報を確認することができます。
+
+<Xclude pages="resource-application-list">
+
+:::note 
+
+詳細を見るウィンドウの[トレース](container-map-trace)、[メトリクス](container-map-metrics)、[ログ](container-map-log)、[イベント](container-map-event) タブの場合、コンテナマップの詳細と同じです。
+
+:::
+
+</Xclude>
+
+<InDoc pages="resource-application-list">
+
+:::note 
+
+詳細を見るウィンドウの[トレース](container-map-trace)、[メトリクス](container-map-metrics)、[ログ](container-map-log)、[イベント](container-map-event)、[呼び出し情報](container-map-call-information) タブの場合、コンテナマップの詳細ビューと同じです。
+
+:::
+
+</InDoc>
+
+### リソース
+
+対象を選択した後、詳細表示の<Cmdname sid="resource" className="uitext" />タブで選択したリソースに関連するリソースの一覧と関係図を照会できます。 
+
+<InDoc pages="resource-pod-list">
+
+<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
+
+</InDoc>
+
+<InDoc pages="resource-application-list">
+
+<ImgLang img='k8s-app-list-detail.png' desc='Podリスト詳細' />
+
+</InDoc>
+
+<InDoc pages="deployment-list">
+
+<ImgLang img='k8s-deployment-list-detail.png' desc='Deployment リスト詳細' />
+
+</InDoc>
+
+#### 要約情報
+
+選択したリソースに関連付けられているリソース一覧の要約情報を提供します。 リソース名の横にある詳細ビュー アイコンを選択すると、そのリソース一覧の画面に移動します。 
+
+- <Cmdname sid="container" className="uitext" />：当該コンテナのみフィルタリングされた状態の<Cmdname sid="container_list" className="uitext" />に移動します。
+
+- <Cmdname sid="podName" className="uitext" />：該当するパッドのみフィルタリングされた<Cmdname sid="podList" className="uitext" />に移動します。
+
+- <Cmdname sid="node" className="uitext" />：該当ノード名が選択された状態の<Cmdname sid="node_detail" className="uitext" />に移動します。
+
+#### リソース関係図
+
+リソース間の接続関係と状態を視覚的に確認できます。 一覧と同様に、Pod、コンテナ、アプリケーションにマウスオーバーすると、詳細指標を確認することができます。 リソースを選択すると、そのリソース一覧ページに移動します。

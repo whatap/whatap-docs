@@ -1,15 +1,17 @@
 ---
 id: jetty
 title: Jetty
-description: Jettyアプリケーションサーバ環境で、JVMオプションの追加設定を完了してください。
+description: WhaTapモニタリングソリューションをJettyアプリケーションに統合するためのJVM(Java Virtual Machine) オプションの追加方法についての詳細な案内を提供します。ユーザーは本文書を通じて、Javaエージェントのインストール後、Jettyアプリケーションの性能および可用性モニタリングのために必要なJVM設定を適用する方法を段階別に確認することができます。エージェントのインストール過程の中で必須JVMオプションの構成とJettyとの円滑な統合のための最適な設定方法、ヒストグラムの照会方法が含まれています。
 tags:
   - Java
   - Jetty
+  - アプリケーション
+  - エージェント
 ---
 
-Jettyを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認してください。 
-
 ## JVMオプションの追加
+
+Jettyアプリケーションサーバー環境でJavaモニタリングエージェントを効果的に使用するために必要なJVMオプションを追加する方法を案内します。
 
 - _jetty.sh_ファイルにJVMオプションを追加
 
@@ -42,24 +44,3 @@ Jettyを使用するアプリケーションサーバ環境でJVMオプション
 ## モニタリングの開始
 
 {@include: ../../common-items/_start-apm.mdx} 
-
-## Jetty互換性
-
-| WAS Ver.    |       Java SE 6 (jdk1.6.0)      |     Java SE 7 (jdk1.7.0_80)     |     Java SE 8 (jdk1.8.0_91)     |
-| ----------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Jetty8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Jetty9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Jetty9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-
-| WAS Ver.    |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
-| ----------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Jetty8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Jetty9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Jetty9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-
-## Jetty DataSource
-
-| DB     | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
-| ------ | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
-| MySQL  | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| Oracle | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |

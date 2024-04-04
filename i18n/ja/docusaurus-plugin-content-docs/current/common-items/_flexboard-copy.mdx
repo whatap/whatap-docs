@@ -1,33 +1,39 @@
-## Flexボードコピー
+## Flexボードコピー {#copyflexboard}
 
-ユーザーが作成したFlexボードをコピーして、他のユーザーに渡すことができます。
+ユーザーが作成したFlexボードをコピーして、他のメンバーに渡すことができます。
 
-**_Flexボード_**メニューの**_ボード_**一覧から![コピーアイコン](/img/ico-copy.svg)ボタンを選択してください。 **_自分に_**または**_他のユーザー_**オプションを選択します。
+<Cmdname sid="integratedFlexboard" className="uitext" />メニューの<Cmdname sid="dashboard_list" className="uitext" />リストから<LinkImage img="ico-copy.svg" className="ico" desc="コピーアイコン" />ボタンをクリックします。<Cmdname sid="copy_to_me" className="uitext" />または<Cmdname sid="copy_to_others" className="uitext" />オプションを選択します。
 
-- **_自分にコピー_**オプションを選択すると、**_ダッシュボード_**一覧に'\_copied'サフィックスが付いた項目が追加されます。
+- <Cmdname sid="copy_to_me" className="uitext" />オプションを選択すると、<Cmdname sid="dashboard_list" className="uitext" />に'_copied'サフィックスが付いた項目が追加されます。
 
-- **_他のユーザーにコピー_**オプションを選択した場合、**_+アカウント_**をクリックします。他のユーザーアカウントのメールアドレスを入力し、**_ダッシュボードのコピー_**ボタンをクリックします。**_ダッシュボード_**一覧で'\_copied'サフィックスが付いた項目が追加されます。**_読み取り専用_**オプションを選択した場合、共有ユーザーはダッシュボードを変更できません。
+- <Cmdname sid="copy_to_others" className="uitext" />オプションを選択した場合は、<LinkImage img="ico-add.svg" className="ico" /> <Cmdname sid="account" className="uitext" />をクリックします。
+
+  <ImgLang img='flexboard-copy2others.png' desc='他人にコピー' />
+
+  他のメンバーのメールを選択してから<Cmdname sid="copy_dashboard" className="uitext" />ボタンをクリックしてください。コピーをもらったメンバーの<Cmdname sid="dashboard_list" className="uitext" />リストに'\_copied'の接尾語が付いた項目が追加されます。
+
+## JSONファイルで共有する
+
+Flexボード設定をJSONファイルとして保存し、他のメンバーから渡すか、他のメンバーの設定を読み込みできます。
+
+### 抽出
+
+1. <Cmdname sid="integratedFlexboard" className="uitext" />またはプロジェクトの<Cmdname sid="flexboard" className="uitext" />メニューに移動してください。
+
+2. <Cmdname sid="dashboard_list" className="uitext" />で<LinkImage img="ico-export.svg" desc="내보내기 아이콘" className="ico" />ボタンを選択してください。
+
+3. JSONファイルがダウンロードされたら、共有する他のメンバーに転送してください。
+
+### インポート
+
+1. <Cmdname sid="integratedFlexboard" className="uitext" />またはプロジェクトの<Cmdname sid="flexboard" className="uitext" />メニューに移動してください。
+
+2. 画面右上の![読み込みアイコン](/img/ico-import.svg)<Cmdname sid="import" className="uitext" />ボタンを選択してください。
+
+3. ダウンロードしたJSONファイルを選択してください。
 
 :::note
 
-**_プロジェクトメニュー_** > **_Flexボード_**メニューからコピーすると、プロジェクトメンバーとダッシュボードが共有されます。
-
-:::
-
-## Flexボードのエクスポート、インポート
-
-jsonファイルとして保存されたFlexボードの設定を他のユーザーアカウントからインポートおよびコピーができます。ダッシュボード管理者権限の機能です。
-
-1. **_Flexボード_**メニューの**_ボード_**リストから![書き出しアイコン](/img/ico-export.svg)ボタンをクリックします。 
-
-2. ウェブブラウザからFlexボードの設定をJSONファイルとしてダウンロードします。
-
-3. 画面の右上の![読み込みアイコン](/img/ico-import.svg)**_読み込み_**ボタンを選択します。
-
-4. JSONファイルを選択します。
-
-:::note
-
-この機能は、**プロジェクトを変更する権限**を所有するユーザーのみ使用できます。
+この機能は、プロジェクトの**修整**権限を所有するメンバーのみが利用できます。
 
 :::

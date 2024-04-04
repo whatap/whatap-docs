@@ -1,6 +1,6 @@
 ## クエリ別の実行推移を確認
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,oracle,cubrid,mssql'>
 
 テーブルの各項目別の左の![数字1](/img/number-01.png)►ボタンを選択してください。クエリ文の5分当たりの実行回数と平均実行時間が表示されます。各棒グラフにカーソルを合わせると、その時間の数値が表示されます。
 
@@ -8,17 +8,31 @@
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle,cubrid'>
+
+使用カテゴリ別にデータを分類して表示するには![数字2](/img/number-02.png)で目的のタブを選択してください。
 
 テーブルの各項目別の左の![数字3](/img/number-03.png)►ボタンを選択してください。クエリ文の5分当たりの実行回数と平均実行時間が表示されます。各棒グラフにカーソルを合わせると、その時間の数値が表示されます。
 
+</InDoc>
+
+<InDoc product="postgresql,mysql">
+
 :::note
 
-グラフチャートで目的の時間の棒グラフを選択すると、**_インスタンスモニタリング_**メニューに移動します。選択した時間の指標を確認できます。インスタンスモニタリングの詳細については、[次の文書](instance-monitoring)を参照してください。
+グラフチャートで目的の時間の棒グラフを選択すると、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動します。選択した時間の指標を確認できます。<Cmdname sid="side_dbMonitoring" className="uitext" />の詳細については、[次の文書](instance-monitoring)を参照してください。
 
 :::
 
-使用カテゴリ別にデータを分類して表示するには![数字2](/img/number-02.png)で目的のタブを選択してください。
+</InDoc>
+
+<InDoc product="oracle,cubrid">
+
+:::note
+
+グラフチャートで目的の時間の棒グラフを選択すると、<Cmdname sid="side_dbTrend" className="uitext" />メニューに移動します。選択した時間の指標を確認できます。<Cmdname sid="side_dbTrend" className="uitext" />の詳細については、[次の文書](analysis-count-trend)を参照してください。
+
+:::
 
 </InDoc>
 
@@ -27,35 +41,3 @@
 ![クエリ文プレビュー](/img/db-sql-preview.png)
 
 照会された結果リストからマウスポインタを**_sql_**カラム項目に移動すると、クエリ文をプレビューすることができます。
-
-## クエリの詳細
-
-<Xclude product='postgresql,postgresql-v1,mysql'>
-
-![数字3](/img/number-03.png)クエリ文を選択してください。クエリ文とSQL Planを詳細を確認できる<Cmdname sid="TTL06224" className="uitext" />ウィンドウが表示されます。
-
-<ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
-
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
-
-</Xclude>
-
-<InDoc product='postgresql,postgresql-v1'>
-
-参照された結果一覧で**_sql_**項目を選択すると<Cmdname sid="TTL06224" className="uitext" />ウィンドウが表示されます。
-
-<ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" />
-
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
-
-</InDoc>
-
-<InDoc product='mysql'>
-
-参照された結果一覧で**_sql_**項目を選択すると<Cmdname sid="TTL06224" className="uitext" />ウィンドウが表示されます。
-
-<ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
-
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
-
-</InDoc>

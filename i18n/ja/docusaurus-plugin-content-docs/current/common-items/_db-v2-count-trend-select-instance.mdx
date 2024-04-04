@@ -1,17 +1,25 @@
 ### 比較対象の選択
 
-![数字1](/img/number-01.png) **_基準日_**、**_インスタンス_**を選択し、![数字2](/img/number-02.png) **_比較日_**、**_インスタンス_**を選択してください。 グラフにカーソルを合わせると、表示されるツールチップでデータを比較できます。
+![数字1](/img/number-01.png) <Cmdname sid="TTL06202" className="uitext" />、<Cmdname sid="instance" className="uitext" />を選択し、![数字2](/img/number-02.png) <Cmdname sid="TTL06203" className="uitext" />、<Cmdname sid="instance" className="uitext" />を選択してください。 グラフにカーソルを合わせると、表示されるツールチップでデータを比較できます。
 
-<ImgLang img='db-compare-count-trend-tootip.png' dsec='Tooltip' />
+<InDoc product="postgresql,mysql"><ImgLang img='db-compare-count-trend-tootip.png' dsec='Tooltip' /></InDoc>
 
-- グラフチャートの実線は**_基準日_**のデータ、点線は**_比較日_**のデータを表示します。
+<InDoc product="redis"><ImgLang img='db-compare-count-trend-tootip-redis.png' dsec='Tooltip' /></InDoc>
 
-- ツールチップに**_(Comparison)_**が表示されている項目は、**_比較日_**のデータです。
+<InDoc product="mongodb">
+
+![Tooltip](/img/db-compare-count-trend-tootip-mongodb.png)
+
+</InDoc>
+
+- グラフチャートの実線は<Cmdname sid="TTL06202" className="uitext" />のデータ、点線は<Cmdname sid="TTL06203" className="uitext" />のデータを表示します。
+
+- ツールチップに**_(Comparison)_**が表示されている項目は、<Cmdname sid="TTL06203" className="uitext" />のデータです。
 
 :::note
 
-- **_データベース_**項目で比較したいデータベースを選択することもできます。
+- <Cmdname sid="database" className="uitext" />項目で比較したいデータベースを選択することもできます。
 
-- **_データベース_**項目の各色は、グラフチャートで同じ色で表現されます。
+- <Cmdname sid="database" className="uitext" />項目の各色は、グラフチャートで同じ色で表現されます。
 
 :::

@@ -18,7 +18,7 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../getting-started/_create-project-v2.mdx}
 
-{@include: ../getting-started/_accesskey.mdx} 
+{@include: ../getting-started/_accesskey.mdx}
 
 ## WhaTapデータベースエージェントのダウンロード
 
@@ -27,12 +27,12 @@ WhaTapデータベースモニタリングサービスを使用するための�
 3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
    ```ini title='whatap.conf'
-   license=プロジェクトアクセスキー
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+   license={Access_Key}
+   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
 
    dbms=mysql
-   db_ip={DBサーバーのIPアドレス}
-   db_port={DBサーバーのポート番号}
+   db_ip={DB_server_IP_address}
+   db_port={DB_server_port}
    ```
 
    :::info
@@ -79,7 +79,7 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 <!-- 모니터링용 계정 생성-->
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+{@include: ../common-items/_db-create-monitoring-account.mdx}
 
 <!-- MySQL-->
 
@@ -183,7 +183,7 @@ grant show databases on *.* to whatap;
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+{@include: ../common-items/_db-create-db-user-file-body.mdx} 
 
 <!--## 에이전트 실행-->
 
@@ -191,4 +191,4 @@ grant show databases on *.* to whatap;
 
 <!--## XOS 에이전트 설치-->
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+{@include: ../common-items/_db-install-xos-agent.mdx} 

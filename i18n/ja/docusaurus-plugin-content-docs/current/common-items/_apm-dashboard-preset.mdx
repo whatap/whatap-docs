@@ -1,8 +1,26 @@
 ## プリセット
 
+<InDoc product="java,php,python,nodejs,dotnet,golang,redis,mongodb">
+
 ![プリセット](/img/apm-dashboard-preset-default.png)
 
 ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。 基本プリセット(<Cmdname sid="kube_default" className="uitext" />)は変更できず、希望する形でウィジェットのサイズを変更、配置して新しいプリセットが作成できます。
+
+</InDoc>
+
+<InDoc product="postgresql,mysql">
+
+ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。 基本プリセット(<Cmdname sid="kube_default" className="uitext" />)は変更できず、希望する形でウィジェットのサイズを変更、配置して新しいプリセットが作成できます。
+
+<ImgLang img='db-preset-list.png' desc='プリセット' />
+
+- **_Default_**：XOS指標とAWS RDS CloudWatch指標、主要DB指標で構成されたプリセットです。
+
+- **_Default(xos)_**：XOS指標と主要DB指標で構成されたプリセットです。 
+
+- **_Default(rds)_**：AWS RDS CloudWatch指標と主要DB指標で構成されたプリセットです。
+
+</InDoc>
 
 ### 新しいプリセットを作成する
 

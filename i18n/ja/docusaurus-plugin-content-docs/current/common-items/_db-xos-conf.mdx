@@ -54,11 +54,11 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
 
   データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
 
-<InDoc product='postgresql'>
-
 - **file** <span class='type'>String</span>
 
   **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+
+  <InDoc product='postgresql'>
 
   ```ini title='xos.conf'
   file=/opt/postgresql/logs/postgresql.log
@@ -67,13 +67,8 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
   file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
   ```
 
-</InDoc>
-
-<InDoc product='mysql'>
-
-- **file** <span class='type'>String</span>
-
-  **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+  </InDoc>
+  <InDoc product='mysql'>
 
   ```ini title='xos.conf'
   file=/var/log/mysqld.log
@@ -81,4 +76,18 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
   file2=/var/lib/mysql/dbx-database-slow.log
   ```
 
-</InDoc>
+  </InDoc>
+  <InDoc product='redis'>
+
+  ```ini title='xos.conf'
+  file=/var/log/redis.log
+  ```
+
+  </InDoc>
+  <InDoc product='mongodb'>
+
+  ```ini title='xos.conf'
+  file=/var/log/mongodb/mongodb.log
+  ```
+
+  </InDoc>

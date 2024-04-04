@@ -1,4 +1,4 @@
-## ウィジェットの詳細
+## ウィジェットを調べる{#about-widget}
 
 :::info
 
@@ -63,6 +63,14 @@
   - トランザクションの詳細については、[次の文書](track-transactions-intro)を参照してください。
 
   :::
+
+#### <Cmdname sid="AA018" /> {#active-trs-agent}
+
+<ImgLang img='apm-dashboard-active-tx-agent.png' desc='エージェントアクティブTX' />
+
+<Cmdname sid="AA002" className="uitext" />ウィジェットは、エージェント選択オプションで選択した基準に従って、マージされたデータをチャートに表示します。 一方、<Cmdname sid="AA018" className="uitext" />ウィジェットは選択したエージェント分類の基準に含まれたエージェントの現況を個別に確認することができます。
+
+ダッシュボードでマウスの右ボタンをクリックし、ウィジェット一覧で<Cmdname sid="AA018" className="uitext" />ウィジェットを選択してください。
 
 #### <Cmdname sid="AA004" /> {#active-status}
 
@@ -170,6 +178,8 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 :::
 
+<InDoc product="java,nodejs,golang">
+
 #### <Cmdname sid="AA010" /> {#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='ヒープメモリ' />
@@ -178,13 +188,9 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 メモリ折れ線チャートは通常、波線を続けます。 アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。 GC(Garbage Collection)によってメモリをクリーンアップすると減少します。 <Cmdname sid="AA010" className="uitext" />指標は平均値を使って表記します。
 
-:::note
+</InDoc>
 
-- JavaとNode.jsは、ヒープメモリの合計量と使用量を意味します。
-
-- PHPおよびPython, .Netはプロセスのメモリの使用量を意味します。
-
-:::
+<InDoc product="java">
 
 :::tip
 
@@ -197,6 +203,30 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 - [JAVAヒープメモリーチャートの分析：Ch.2 メモリリークとヒープダンプ分析](https://youtu.be/t2q5z4HHNfs)
 
 :::
+
+</InDoc>
+
+<InDoc product="php,dotnet,python">
+
+#### <Cmdname sid="AA017" /> {#process-memory}
+
+<ImgLang img='apm-dashboard-process-memory.png' desc='プロセスメモリ' />
+
+サーバーごとに使用できるシステムの最大メモリと指定されたプロセスの使用メモリを合計して表示します。
+
+メモリ折れ線チャートは通常、波線を続けます。 アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。 GC(Garbage Collection)によってメモリをクリーンアップすると減少します。 <Cmdname sid="AA017" className="uitext" />指標は平均値を使用して表示します。
+
+</InDoc>
+
+<Xclude product="java">
+
+:::tip
+
+チャート分析の詳細については、次のリンクを参考にしてください。 [月間WhaTap：モニタリングで注目すべき指標](https://www.whatap.io/ko/blog/94/)
+
+:::
+
+</Xclude>
 
 ### ユーザー関連ウィジェット
 
