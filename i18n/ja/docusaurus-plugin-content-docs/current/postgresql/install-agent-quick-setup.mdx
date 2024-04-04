@@ -1,0 +1,112 @@
+---
+id: install-agent-quick-setup
+title: 迅速なエージェント設定
+description: DBXエージェントの構成ファイルの中でsetup.shファイルを実行すると、エージェントの設定を迅速かつ簡単に進めることができます。
+tags:
+  - データベース
+  - エージェント
+---
+
+DBXエージェントの構成ファイルの中で_setup.sh_ファイルを実行して、エージェントの設定を迅速かつ簡単に進めることができます。
+
+## ファイルの圧縮を解凍する
+
+ダウンロードしたDBXエージェントファイルの解凍をしてください。
+
+```bash title="BASH"
+tar -zxvf whatap.agent.database.tar.gz
+```
+
+## setup.shを実行する
+
+_setup.sh_ファイルを実行し、画面の案内に従ってエージェント設定及びDBサーバー情報入力、JDBCダウンロード、モニタリングのためのアカウント作成及び権限設定を進めてください。 必要な情報を入力すると、すべての設定を自動的に完了できます。
+
+```bash title="BASH"
+./setup.sh
+```
+
+![setup.sh](/img/db-install-agent-run-setup.png)
+
+:::note
+
+エージェント設定プロセスをキャンセルするには、「q」または 「quit」を入力し、Enterキーを入力してください。
+
+:::
+
+### STEP1 Register WhaTap server information
+
+```text title="BASH"
+WhaTap Server Ip?
+WhaTap Server Port (default 6600)?
+```
+
+WhaTapのサーバー情報を入力してください。 <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>DBXエージェント設定</UI>セクションで、WhaTapのサーバーIPアドレスとポート番号を確認できます。
+
+WhaTapサーバーポートのデフォルト値は6600です。 何も入力せずにEnterキーを入力すると、デフォルト値に設定されます。
+
+### STEP2 Register WhaTap server access key
+
+```text title="BASH"
+WhaTap Project Access Key?
+```
+
+プロジェクトアクセスキーを入力してください。  <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>アクセスキー確認</UI>セクションで<Cmdname sid="copy" className="uitext" />ボタンを選択して貼り付けてください。
+
+正確なアクセスキーを入力すると、そのプロジェクトのコードが出力されます。
+
+### STEP3 Register DB server information (ip/port check)
+
+```text title="BASH"
+Monitoring DBMS type?
+Monitoring DBMS Server Ip?
+Monitoring DBMS Server Port?
+```
+
+モニタリングするデータベースサーバーの情報を入力してください。
+
+- **Monitoring DBMS type**：画面に表示されているデータベースの種類を選択してください。
+
+- **Monitoring DBMS Server Ip**：データベースサーバーのIPアドレスを入力してください。
+
+- **Monitoring DBMS Server Port**：データベースサーバーのポート番号を入力してください。
+
+:::note
+
+データベースサーバーのIPアドレスとポート番号を入力してから、接続状態を検証します。 誤った情報を入力する場合は、IPアドレスとポート番号を再入力する必要があります。
+
+:::
+
+### STEP4 Download jdbc driver
+
+DBXエージェント経路にデータベースサーバーのOSとバージョンに合うJDBCドライバーを自動的にダウンロードします。
+
+### STEP5 Register a monitoring account
+
+```text title="BASH"
+Monitoring Database Name?
+Monitoring User ID?
+Monitoring User {user_id}'s Password?
+Connecting DBMS Server with SSL (default false)?
+```
+
+データベース接続のために暗号化されたUIDを生成する過程です。 [アカウント作成](install-agent#uid) セクションで作成したアカウント情報を入力してください。
+
+- **Monitoring Database Name**：モニタリングするデータベースの名前を入力してください。
+
+- **Monitoring User ID** / **Monitoring User {user_id}'s Password**：アカウントIDとパスワードを入力してください。 パスワードは暗号化されて保存されます。
+
+- **Connecting DBMS Server with SSL**：SSLプロトコルを利用してデータベースサーバーに接続する場合、`true`を入力してください。 デフォルト値は`false`です。
+
+## エージェントを実行する
+
+_setup.sh_ファイルを利用してエージェントのインストールプロセスを完了したら、データベース情報と_whatap.conf_ファイルに設定した内容が出力されます。
+
+![setup.sh](/img/db-install-agent-run-setup-complete.png)
+
+エージェントをデーモンのように使用したい場合は、最後の項目で「y」を入力してください。
+
+## 次の段階
+
+- エージェント設定が完了したら、[次の文書]](after-install-agent)を参考にしてインストールした後、点検事項を確認してください。
+
+- 付加エージェント(XOS)を追加でインストールしてデータベースサーバーのリソースをモニタリングするには、[次の文書](install-agent#apply-xos-agent)を参考にしてください。

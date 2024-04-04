@@ -14,6 +14,181 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.3.0.a4
+
+2024年03月21日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code>メニューで既存のイベント設定メニューのイベントタブを表示し、<Cmdname sid="BTN07761" className="uitext" />、<Cmdname sid="BTN07762" className="uitext" />機能を追加
+
+  :::note
+
+  この機能は、`Cloud`と`URL`製品を除くすべての製品に適用されます。
+
+  :::
+
+- <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューのダッシュボードコピーと共有機能の改善
+
+  - ダッシュボードの共有時、<b>招待されていないプロジェクト</b>の場合、データを照会できないように修正
+
+  - ダッシュボード共有時、共有対象者のプロジェクトに対する権限に関係なく、共有モードによってダッシュボードを共有できるように修正
+
+  - 複数の対象にダッシュボードを共有する時、アカウント別に共有モードを設定できるように改善
+
+  - ダッシュボードのコピーと共有機能に対するUI統一
+
+  - 読み込みモードで共有されたダッシュボードは、コピーに限ってできるように修正
+
+- <Status>Changed</Status> <b>修整</b>または<b>通知設定</b>権限を持つメンバーが<Cmdname sid="side_maintenancePlan" className="uitext" />メニューを利用できるように権限を調整
+
+- <Status>Changed</Status>サイドメニューでチュートリアルの最初の動作を停止するように変更
+
+- <Status>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューの<Cmdname sid="TTL06656" className="uitext" />機能から多言語イメージを適用
+
+- <Status>Fixed</Status>決済手段をStripeで登録したユーザーが<Cmdname sid="bill_recipient_setting" className="uitext" />項目を修正した時に表示されるエラーメッセージを削除
+
+- <Status>Fixed</Status>メニューに入る時、ヘッダー要素にメニュー名ではなく、他の値が表示される問題を修正
+
+* * *
+
+### `Application`
+
+#### 共通
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューで次の機能を追加します。
+
+  - <Status>Feature</Status>エージェント選択オプションのエージェントリスト間隔の調整とソート機能、検索機能を追加
+
+  - <Status>Feature</Status>エージェントごとのアクティブトランザクションを表示する<Cmdname sid="AA018" className="uitext" />ウィジェットを追加
+
+- <Status>Feature</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06126" className="uitext" />で<b>DB Connection</b>、<b>SQL</b>ステップをクリックすると活性化されるモーダルに<UI>SERIAL</UI>フィールドを追加
+
+  ![SERIAL field](/img/release/release-apm-trace-add-serial-field.png)
+
+- <Status>Changed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />メニューで<Cmdname sid="sort" className="uitext" />項目として<Cmdname sid="sql_count" className="uitext" />を追加
+
+- <Status>Changed</Status> <Cmdname sid="side_management" /> &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューで基本的にエージェント一覧をすべて展開するように修正
+
+- <Status>Changed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" />メニューのタブメニューの構成を個別の下位メニューで構成するデザインシステムを適用
+
+- <Status>Changed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューのタブメニューの構成を個別の下位メニューで構成するデザインシステムを適用
+
+#### PHP
+
+<p><Status>Fixed</Status> PHPエージェント設定で<code>whatap.active_stat_enabled</code>オプションとして渡されるデータ形式を<code>long</code>から<code>boolean</code>に修正</p>
+
+* * *
+
+### `Database`
+
+#### <Status>New</Status> Redis、MongoDB <code class="my">V2</code>サービスを開始！
+
+- <Cmdname sid="side_dashboard" className="uitext" />メニューのUIと機能を大幅に改善しました。
+
+- <Cmdname sid="side_dashboard" className="uitext" />メニューでデータベースの性能の指標情報を確認できます。
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューでクラスター別のエージェント選択機能を追加しました。
+
+- データベースログを検索し、推移を確認できる<Cmdname sid="side_log" className="uitext" />メニューを追加し、ログ関連の通知を設定できます。
+
+:::note
+
+- **RedisモニタリングV2**の新機能についての詳細は、[次の文書](https://whatap.github.io/whatap-docs/redis/monitoring-intro#new-feature)を参考にしてください。
+
+- **MongoDBモニタリングV2**の新機能についての詳細は、[次の文書](https://whatap.github.io/whatap-docs/mongodb/monitoring-intro#new-feature)を参考にしてください。
+
+:::
+
+#### 共通
+
+- <Status>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでマルチフィルタ選択機能を追加
+
+- <Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューで次のようにオプション名を変更
+
+  - <Cmdname sid="TTL06346" className="b500" /> → <Cmdname sid="sort" className="uitext" />
+  - <Cmdname sid="TTL06345" className="b500" /> → <Cmdname sid="TTL07773" className="uitext" />
+
+- <Status>Changed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" />メニューでカテゴリ別にフィールドを選択できるように修正
+
+- <Status>Changed</Status> xos指標の変更(xos2 → xos)のためのデータベース製品サービスの変更点を適用
+
+  - <Cmdname sid="side_flexboard" className="uitext" />メニューのCPU使用率ウィジェットで<span class="b500">cpu(xos2)</span>指標を<UI>cpu(xos)</UI>指標に変更
+
+  - MySQLプロジェクトでユーザー定義レポートの指標リストのうち<span class="b500">cpu(xos2)</span>指標を<UI>cpu(xos)</UI>指標に変更
+
+  - <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでメトリクスイベントテンプレートのうち、CPU使用率テンプレートの<span class="b500">cpu(xos2)</span>指標を<UI>cpu(xos)</UI>指標に変更
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューのダッシュボードでマウスの右クリックで表示されるウィジェット選択リストのスタイルを変更
+
+#### PostgreSQL、MySQL
+
+<p><Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで次の機能を追加・修正します。</p>
+
+- <Status>Feature</Status> <UI>Default(xos)</UI>、<UI>Default(rds)</UI>プリセットを追加
+
+- <Status>Feature</Status>ダッシュボードの<UI>SQL Elapse Map</UI>と<UI>Slow Query</UI>ウィジェットで変更したY軸値を保存する機能を追加
+
+- <Status>Fixed</Status>ダッシュボードの<UI>SQL Elapse Map</UI>ウィジェットでチャートをドラッグしてクエリを照会する場合、照会されるデータの量が多ければブラウザが一時的に止まる問題を修正
+
+#### MongoDB
+
+<p><Status>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューのUI変更</p>
+
+* * *
+
+### `Kubernetes`
+
+- <Status>New</Status> kube-apiserver収集指標リストを照会できる<Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" />メニューを追加
+
+  :::note
+
+  この機能はクラスタープロジェクト専用であり、<Cmdname sid="side_cluster" className="uitext" /> > <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" />メニューパスで確認できます。
+
+  :::
+
+- <Status>Feature</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerImages" className="uitext" />メニューの画面上に画像の総数を表示
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューから次の機能を追加・修正します。
+
+  - <Status>Feature</Status> Podカテゴリに<Cmdname sid="ITM06172" className="uitext" />オプションを追加
+
+    ![](/img/release/release-k8s-container-add-option.png)
+
+  - <Status>Fixed</Status>グループ化オプションを適用する時、ウィジェット上部にオブジェクト数の表示を追加
+
+    ![](/img/release/release-k8s-container-group-application-count.png)
+
+  - <Status>Fixed</Status> <Cmdname sid="BTN06342" className="uitext" />から分類によってメトリクスの並び順を変更
+
+- <Status>Fixed</Status> <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_analysis" className="uitext" />下位に<Cmdname sid="side_counter" className="uitext" />、<Cmdname sid="side_metricsSearch" className="uitext" />メニューを追加
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_podInitPerf" className="uitext" />(<Cmdname sid="pod_init_perform" className="uitext" />) メニューで読み込みデータがない場合、表示する案内文にテーマが適用されない問題を修正
+
+* * *
+
+### `Browser`
+
+- <Status>New</Status>ユーザーセッション ログを検索できる<Cmdname sid="side_userSessionEventSearch" className="uitext" />メニュー追加
+
+  :::note
+
+  この機能は、<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_userSessionEventSearch" className="uitext" />メニューパスで確認できます。
+
+  :::
+
+- <Status>Feature</Status>次のメニューパスにユーザーセッション分析機能を追加
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_ajaxAnalytics" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+</div>
+
 ## Preview 2.3.0.a3
 
 2024年03月14日

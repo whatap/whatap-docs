@@ -1,0 +1,33 @@
+---
+id: browser-v1_3_4
+title: Browser Agent v1.3.4
+toc_max_heading_level: 3
+pagination_next: release-notes/browser/browser-v1_3_3
+---
+
+2024年02月19日
+
+- <Status>Feature</Status>ページロード、AJAXイベント発生時<b>Network Information API</b>の次の指標を追加収集
+
+  - downlink
+  - effectiveType
+  - rtt
+
+- <Status>Feature</Status>リソースイベント発生時に次の指標を追加収集
+
+  - deliveryType
+  - responseStatus
+
+- <Status>Feature</Status>Content Security Policy(CSP) エラー収集機能追加
+
+:::note
+
+追加された指標の詳細については、次のリンクを参考にしてください。
+
+- [<Cmdname sid="TTL07611" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType) (effectiveType)
+- [<Cmdname sid="TTL07612" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt) (rtt)
+- [<Cmdname sid="TTL07610" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink) (downlink)
+- [<span class="uitext">Delivery Type</span>](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/deliveryType) (deliveryType)
+- [<Cmdname sid="status_code" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStatus) (responseStatus)
+
+:::

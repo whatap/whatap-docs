@@ -1,14 +1,14 @@
-## クエリの詳細を見る {#query-details}
+### クエリの詳細を見る {#query-details}
 
 現在実行中のセッションのSQLクエリ情報を確認するには<Cmdname sid="active_sessions" className="uitext" />セクションの<span class="uitext">query</span>カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
 
-<InDoc product="postgresql,postgresql-v1,mysql,mysql-v1">
+<InDoc product="postgresql,mysql">
 
 <ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" />
 
 </InDoc>
 
-<Xclude product="postgresql,postgresql-v1,mysql,mysql-v1">
+<Xclude product="postgresql,mysql">
 
 <ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
 
@@ -24,7 +24,7 @@
 
 - **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-  <InDoc product='postgresql,postgresql-v1,mysql,mysql-v1'>
+  <InDoc product='postgresql,mysql'>
 
   - **_Text_**: テキスト形式でプラン情報を確認できます。
 
@@ -32,7 +32,7 @@
 
   </InDoc>
 
-  <InDoc product='postgresql,postgresql-v1'>
+  <InDoc product='postgresql'>
 
   :::note
 
@@ -42,7 +42,7 @@
 
   </InDoc>
 
-  <InDoc product='mysql,mysql-v1'>
+  <InDoc product='mysql'>
 
   :::note
 
@@ -52,11 +52,7 @@
 
   </InDoc>
 
-- 画面右上に![垂直分割アイコン](/img/ic-column.svg)ボタンを選択すると**_Query_**と**_Plan_**セクションを左右に配置します。
-
-- 画面右上に![垂直分割アイコン](/img/ic-layout-horizontal.svg)ボタンを選択すると**_Query_**と **_Plan_**セクションを上下に配置します。
-
-<InDoc product='postgresql,postgresql-v1,mysql,mysql-v1'>
+<InDoc product='postgresql,mysql'>
 
 :::tip
 

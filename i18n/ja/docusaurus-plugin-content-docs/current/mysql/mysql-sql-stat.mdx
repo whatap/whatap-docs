@@ -9,7 +9,7 @@ tags:
   - 統計
 ---
 
-ホーム画面>プロジェクト選択>**_統計/レポート_**>**_MYSQL統計_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_mysqlStat" className="uitext" />
 
 MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実行時間、Rowの数など)で、`performance_schema.events_statements_summary_by_digest`ビューを介して収集します。 
 
@@ -21,9 +21,9 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 :::
 
-## 設定
+## 使用する前に
 
-**_MYSQL SQL統計_**メニューを使用するためには、モニタリング対象DBで次のような設定が必要です。
+<Cmdname sid="side_mysqlStat" className="uitext" />メニューを使用するには、モニタリング対象DBで次の設定が必要です。
 
 1. データベース設定(_my.cnf_)で**Performance Schema**を活性化してください。
 
@@ -53,7 +53,7 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 <ImgLang img='db-mysql-sql-stat.png' desc='MYSQL SQL 통계' />
 
-{@include: ../common-items/_db-product-sql-stat-basic-usage.mdx}
+{@include: ../common-items/_db-product-sql-stat-basic-usage.mdx} 
 
 ## カラム情報ガイド
 
@@ -82,26 +82,22 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 | `no_index_used`           | クエリでどのインデックスも使用していない回数。インデックス作成を考慮する必要があります。                           |
 | `no_good_index_used`      | サーバーに存在する既存のインデックスのうち、使用するインデックスが見つからない回数。回数が増えるとインデックスメンテナンスが必要になります。 |
 
-## 統計メニューオプションの利用
-
-### クエリプレビュー
+## クエリプレビュー
 
 ![クエリ文プレビュー](/img/db-sql-preview.png)
 
 照会された結果リストからマウスポインタを**_sql_**カラム項目に移動すると、クエリ文をプレビューすることができます。
 
-### クエリの詳細を見る{#query-details}
+## クエリの詳細を見る{#query-details}
 
-<ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
+<ImgLang img='db-sql-details-postgresql.png' desc='SQL詳細' />
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
 
-### 参照結果フィルタリング
+<!-- 필터 조건추가하기-->
 
-<ImgLang img='db-sql-stat-add-filter-mysql.png' desc='Filtering' />
+{@include: ../common-items/_db-sql-filter.mdx}
 
-{@include: ../common-items/_db-product-sql-stat-filtering-result.mdx}
-
-### テーブルカラムの設定{#change-column}
+## テーブルカラムの設定{#change-column}
 
 {@include: ../common-items/_db-v2-data-edit-column.mdx} 

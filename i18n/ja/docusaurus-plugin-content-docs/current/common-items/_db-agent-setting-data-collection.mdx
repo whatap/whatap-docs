@@ -1,4 +1,4 @@
-<InDoc product ='mysql,mysql-v1'>
+<InDoc product ='mysql'>
 
 - **deadlock_interval** <span class='type'>Int</span>
 
@@ -84,7 +84,7 @@
 
 </Xclude>
 
-<InDoc product='mysql,mysql-v1'>
+<InDoc product='mysql'>
 
 - **skip_sys_session** <span class='type'>Int</span>
 
@@ -120,5 +120,33 @@
   - `library cache get hit ratio`
   - `latch hit ratio`
   - `shared pool free mem ratio`
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+- **collections** <span class='type'>Boolean</span>
+
+  デフォルト値 `true`
+
+  コレクションサイズ情報の保存有無を設定します。保存しないためには、`false`に変更してください。
+
+  :::note
+
+  このオプションに関する<Cmdname sid="side_dbSize" className="uitext" />メニューの詳細については、[次の文書](database-size)を参考にしてください。
+
+  :::
+
+- **collections_hour** <span class='type'>Int</span>
+
+  デフォルト値`5`
+
+  コレクション情報を保存するために情報を収集する時刻を設定します。デフォルト値は`5`で、午前5時に収集を始めます。
+
+  :::note
+
+  このオプションに関する<Cmdname sid="side_dbSize" className="uitext" />メニューの詳細については、[次の文書](database-size)を参考にしてください。
+
+  :::
 
 </InDoc>

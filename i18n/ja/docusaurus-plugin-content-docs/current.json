@@ -1548,7 +1548,7 @@
     "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
   },
   "sidebar.postgreSidebar.category.에이전트 설치": {
-    "message": "エージェントインストール",
+    "message": "エージェントのインストール",
     "description": "The label for category 에이전트 설치 in sidebar postgreSidebar"
   },
   "sidebar.mysqlSidebar.category.경고 알림": {
@@ -1564,7 +1564,7 @@
     "description": "The label for category 경고 알림 in sidebar redisSidebar"
   },
   "sidebar.mongodbSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.분석": {
