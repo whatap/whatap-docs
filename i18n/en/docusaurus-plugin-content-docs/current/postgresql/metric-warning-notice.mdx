@@ -34,49 +34,49 @@ in the <Cmdname sid="metrics" className="uitext" /> section. From the <Cmdname s
 
 - <p><Cmdname sid="cpu_usage" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `cpu(xos2)` > 70
+  Condition: `cpu(xos2)` \> 70
 
   If the CPU utilization exceeds 70% in an individual instance, a <span class='slow'>Warning</span> level notification is sent.
 
 - <p><Cmdname sid="memory_usage" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `mem(xos)` > 70
+  Condition: `mem(xos)` \> 70
 
   If the memory usage exceeds 70% in an individual instance, a <span class='slow'>Warning</span> level notification is sent.
 
 - **_Active Session_Warning_**
 
-  Condition: `active_sessions` > 30
+  Condition: `active_sessions` \> 30
 
   If the number of active sessions in an individual instance exceeds 30, a <span class='slow'>Warning</span> level notification is sent.
 
 - **_Lock Wait_Warning_**
 
-  Condition: `lock_wait_sessions` > 3
+  Condition: `lock_wait_sessions` \> 3
 
   If the number of waiting sessions in an individual instance exceeds 3, a <span class='slow'>Warning</span> level notification is sent.
 
 - **_Long Query_Warning_**
 
-  Condition: `long_running_sessions` > 3
+  Condition: `long_running_sessions` \> 3
 
   If the number of long-running sessions in an individual instance exceeds 30, a <span class='slow'>Warning</span> level notification is sent.
 
 - <p><Cmdname sid="TTL07136" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: (`total_sessions` / `max_connections` \* 100) > 90
+  Condition: (`total_sessions` / `max_connections` \* 100) \> 90
 
   If the number of long-running sessions in an individual instance exceeds 80%, a <span class='slow'>Warning</span> level notification is sent.
 
 - <p><Cmdname sid="TTL07137" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `blks_hit_ratio` \<= 80
+  Condition: `blks_hit_ratio` \<\= 80
 
   If the memory block hit ratio in an individual instance is 80% or less, a <span class='slow'>Warning</span> level notification is sent.
 
 - <p><Cmdname sid="TTL07138" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `replication_delay` >= 10
+  Condition: `replication_delay` \>\= 10
 
   If the delay in an individual instance being reflected to the replication database is greater than 10 seconds, a <span class='slow'>Warning</span> level notification is sent.
 
