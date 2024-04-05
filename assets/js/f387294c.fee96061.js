@@ -413,7 +413,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `NPM`), `에서 가장 중요한 요소는 가시성입니다. 그룹화는 네트워크라는 불규칙하고 다양한 정보가 쏟아지는 환경에서 가시성을 확보하기 위한 필수 요소입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `에이전트는 Raw Data에 IP 주소 및 Port(Source, Target), Host Name, Process Name 정보를 키로 수집합니다. 수집한 정보를 기반으로 토폴로지 또는 차트에 표현할 노드의 그룹 단위를 설정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `에이전트에서 수집하는 기본 태그와 더불어 사용자가 쉽게 변경하고 적용할 수 있는 룰을 만들었습니다. 에이전트 설치 경로(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
-    }, `/usr/whatap/whtap-npmd`), `)에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, `/usr/whatap/whatap-npmd`), `)에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `tagRule.yaml`), ` 파일을 수정해 옵션을 적용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "tagrule-옵션"
