@@ -4,7 +4,7 @@
 const {themes} = require('prism-react-renderer');
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
-const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
+const {rehypeExtendedTable} = require("rehype-extended-table");
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -131,7 +131,7 @@ module.exports = Promise.resolve({
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          rehypePlugins: [rehypeTableMerge],
+          rehypePlugins: [ rehypeExtendedTable ],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
