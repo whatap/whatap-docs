@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[79257],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56963],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,18 +212,13 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 45646:
+/***/ 81739:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */   Ay: () => (/* binding */ MDXContent)
 /* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle, toc */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
@@ -307,52 +302,14 @@ function _object_without_properties_loose(source, excluded) {
 }
 
 
-const frontMatter = {
-    id: 'java-2_2_31',
-    title: 'Java Agent v2.2.31',
-    toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_30',
-    displayed_sidebar: 'releaseSidebar'
-};
-const contentTitle = undefined;
-const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_31",
-    "id": "release-notes/java/java-2_2_31",
-    "title": "Java Agent v2.2.31",
-    "description": "2024년 04월 03일",
-    "source": "@site/docs/release-notes/java/java-2.2.31.mdx",
-    "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_31",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_31",
-    "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.31.mdx",
-    "tags": [],
-    "version": "current",
-    "frontMatter": {
-        "id": "java-2_2_31",
-        "title": "Java Agent v2.2.31",
-        "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_30",
-        "displayed_sidebar": "releaseSidebar"
-    },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "WhaTap Mobile App v1.0.3",
-        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
-    },
-    "next": {
-        "title": "Java Agent v2.2.30",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_30"
-    }
-};
-const assets = {};
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
 const toc = [];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
-const Status = makeShortcode("Status");
-const Cmdname = makeShortcode("Cmdname");
+const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -364,58 +321,230 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 04월 03일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "다운로드"), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
+        to: `https://repo.whatap.io/maven/io/whatap/whatap.agent/${props.ver}/whatap.agent-${props.ver}.jar`,
+        mdxType: "Link"
+    }, "Java Agent v", props.ver)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `Java 에이전트를 처음 설치하는 경우 다음 명령어를 이용해 패키지를 먼저 설치하세요. 에이전트 설치에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "../../java/install-agent"
+    }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `wget https://service.whatap.io/agent/whatap.agent.java.tar.gz
+`))));
+}
+MDXContent.isMDXComponent = true;
+
+
+/***/ }),
+
+/***/ 16071:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
+/* harmony import */ var _import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81739);
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+
+
+const frontMatter = {
+    id: 'java-2_2_27',
+    title: 'Java Agent v2.2.27',
+    toc_max_heading_level: 2,
+    pagination_next: 'release-notes/java/java-2_2_26',
+    displayed_sidebar: 'releaseSidebar'
+};
+const contentTitle = undefined;
+const metadata = {
+    "unversionedId": "release-notes/java/java-2_2_27",
+    "id": "release-notes/java/java-2_2_27",
+    "title": "Java Agent v2.2.27",
+    "description": "2024년 02월 06일",
+    "source": "@site/docs/release-notes/java/java-2.2.27.mdx",
+    "sourceDirName": "release-notes/java",
+    "slug": "/release-notes/java/java-2_2_27",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_27",
+    "draft": false,
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.27.mdx",
+    "tags": [],
+    "version": "current",
+    "frontMatter": {
+        "id": "java-2_2_27",
+        "title": "Java Agent v2.2.27",
+        "toc_max_heading_level": 2,
+        "pagination_next": "release-notes/java/java-2_2_26",
+        "displayed_sidebar": "releaseSidebar"
+    },
+    "sidebar": "releaseSidebar",
+    "previous": {
+        "title": "Java Agent v2.2.28",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_28"
+    },
+    "next": {
+        "title": "Java Agent v2.2.26",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_26"
+    }
+};
+const assets = {};
+
+const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
+    };
+const Status = makeShortcode("Status");
+const layoutProps = {
+    toc
+};
+const MDXLayout = "wrapper";
+function MDXContent(_param) {
+    var { components } = _param, props = _object_without_properties(_param, [
+        "components"
+    ]);
+    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
+        components: components,
+        mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 06일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " spring-boot-2.7.x에서 kafka-batch 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+    }, "Feature"), " mule-3.9.5 추적 범위 확대", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-ini",
         "metastring": "title=\"whatap.conf\"",
         "title": "\"whatap.conf\""
-    }, `weaving=spring-boot-2.7
+    }, `# requires agent restart
+weaving=mule-3.9.5
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " JDBC 드라이버에서 SqlException 발생 시 추적 여부 설정 옵션 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `옵션 값을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `false`), `로 설정하면 사용자 정의 예외 처리로 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `biz_exceptions`), ` 처리할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+    }, "Feature"), " camel-cxf-3.15 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-ini",
         "metastring": "title=\"whatap.conf\"",
         "title": "\"whatap.conf\""
-    }, `# default: true
-trace_sql_exception_enabled=true
+    }, `# requires agent restart
+weaving=camel-cxf-3.15
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " URL + HTTP method 설정 옵션 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "OracleCallableStatement"), " 추적 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " Lettuce 드라이버 사용 시 Redis의 key 수집 범위 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# requires agent restart
+weaving=Lettuce-6.2
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, `예시, /api/user+GET, /api/user+POST`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "side_statistics",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " 또는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "side_txSearch",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " 메뉴에서 URL+method로 확인 가능"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, `통계 데이터에서 URL을 변경한 URL+method로 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " Lettuce 드라이버 사용 시 Redis의 key 수집 여부 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
@@ -423,49 +552,34 @@ trace_sql_exception_enabled=true
         "metastring": "title=\"whatap.conf\"",
         "title": "\"whatap.conf\""
     }, `# default: false
-trace_tx_name_with_method_enabled=false
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " oshi-core-6.1.6으로 업데이트"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 자바 에이전트에서 netstat 지표 수집, Maximum Transmission Unit(MTU) 지표 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `# default: false
-oshi_enabled=false
+trace_sql_param_enabled=true
 
 # default: false
-oshi_netstat_enabled=false
+trace_redis_Lettuce_key_enabled=true
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "trace_basetime"), " 또는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "profile_basetime"), " 옵션과 무관하게 에러가 있는 상세 트레이스를 기본 수집하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `# default: false -> true
-trace_concern_error_enabled=true
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Changed"), " Lettuce 드라이버 사용 시 Redis의 key 수집 숫자를 제한"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " oshi 배포 디렉토리를 lib4에서 lib5로 업데이트"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Fixed"), " spring-boot에서 netty 사용 시 request의 URL에서 querystring 분리"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " oshi, sigar 라이브러리 적용 시 에이전트 로그 오타 수정")));
+    }, "Fixed"), " spring-boot에서 netty 사용 시 request의 HTTP 파라미터를 수집하지 못하는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 히트맵의 트랜잭션 건수, 에러 건수 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Deprecate"), " Lettuce 드라이버 사용 시 Redis의 value 수집 중단")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
+        ver: "2.2.27",
+        mdxType: "DownloadJava"
+    }));
 }
 MDXContent.isMDXComponent = true;
 
