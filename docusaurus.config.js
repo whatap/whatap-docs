@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 
 /** @type {import('@docusaurus/types').Config} */
@@ -114,6 +115,11 @@ module.exports = Promise.resolve({
   ],
   markdown: {
     mermaid: true,
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
   },
   themes: ['@docusaurus/theme-mermaid'],
   presets: [
@@ -630,9 +636,6 @@ module.exports = Promise.resolve({
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        theme: darkCodeTheme,
-        darkTheme: darkCodeTheme,
-        // reference: https://prismjs.com/#supported-languages
         additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
         // 
       },
