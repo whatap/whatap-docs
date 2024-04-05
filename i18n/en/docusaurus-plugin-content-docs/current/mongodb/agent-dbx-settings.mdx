@@ -1,0 +1,38 @@
+---
+id: agent-dbx-settings
+title: DBX Agent Setting
+description: The following provides the options you can set through the whatap.conf file on the MongoDB database.
+tags:
+  - MongoDB
+  - Database
+  - Agent
+---
+
+import CurProd from '@site/src/components/GetProductName.js';
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
+
+Write the settings for the DBX agent in the _whatap.conf_ file. For the options that can be set, see the following.
+
+## Default options
+
+{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+
+## Data collection
+
+{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+
+## Application of AWS RDS CloudWatch{#using-aws-rds}
+
+<AWSRDSdesc name='db_redis_counter' />
+
+{@include: ../common-items/_db-agent-aws.mdx}
+
+<!-- AES 256 암호화 적용 -->
+
+{@include: ../common-items/_db-aes-256-encrypt.mdx} 
+
+## Identifying the agent name{#naming}
+
+{@include: ../common-items/_db-setting-agent-name-details.mdx}
+
+{@include: ../common-items/_db-agent-dbx-naming.mdx} 

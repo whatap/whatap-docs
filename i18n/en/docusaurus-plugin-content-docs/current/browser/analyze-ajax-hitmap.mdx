@@ -87,7 +87,7 @@ The times required for each section is provided in a graph chart while loading t
 
 To see only the AJAX list that has errors, on the upper left of the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" /> window, select from the <Cmdname sid="error" className="uitext" /> <Cmdname sid="all" className="uitext" /> choose list.
 
-### <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />
+### AJAX information
 
 You can see the properties of the AJAX event. You can see the information such as AJAX request URL, end user access environment, access page information, <Cmdname sid="user_id" className="uitext" />, <Cmdname sid="session_id" className="uitext" />, and <Cmdname sid="TTL06081" className="uitext" />.
 
@@ -97,7 +97,7 @@ WhaTap basically stores the client-related information.
 
 :::
 
-### <Cmdname sid="TTL07106" className="uitext" /> <Cmdname sid="info" className="uitext" />
+### AJAX timing information
 
 The AJAX event loading process is divided into the following steps and the times required for each section are displayed.
 
@@ -114,6 +114,12 @@ The AJAX event loading process is divided into the following steps and the times
 - <Cmdname sid="wait_time" className="uitext" />: Time taken from the start of the browser's HTTP request to the time when the server receives the request and begins responding. The transaction processing time in the server is included in this section.
 
 - <Cmdname sid="download_time" className="uitext" />: Time taken by the browser to download the AJAX response values from the server
+
+### User session analysis
+
+<ImgLang img='browser-analysis-ajax-hitmap-user-session.png' desc='User session analysis' />
+
+Based on the user session, you can see the events and errors that occur while interacting with the website in chronological order. For more information about <Cmdname sid="TTL07736" className="uitext" />, see [the following](user-session-log-search#analysisusersession).
 
 ## Filtering the AJAX list
 

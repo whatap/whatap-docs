@@ -3,8 +3,8 @@
 Create the _whatap.conf_ file in which WhaTap's access key and server IP address have been set in the user application execution path. 
 
 ```docker title='whatap.conf'
-RUN echo "accesskey={액세스 키}" >> whatap.conf
-RUN echo "whatap.server.host={수집 서버 IP 주소}" >> whatap.conf
+RUN echo "accesskey={Access Key}" >> whatap.conf
+RUN echo "whatap.server.host={Collection Server IP Address}" >> whatap.conf
 ```
 
 If you use a specific path, you can set it with the `WATAP_HOME` environment variable.
@@ -15,8 +15,8 @@ You can set the _whatap.conf_ path as the `WHATAP_HOME` variable. Create the `WH
 
 ```bash
 mkdir ./whatap_home
-echo "license={액세스 키}" >> ./whatap_home/whatap.conf
-echo "whatap.server.host={수집 서버 IP 주소}" >> ./whatap_home/whatap.conf
+echo "license={Access Key}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={Collection Server IP Address}" >> ./whatap_home/whatap.conf
 
 # run application
 WHATAP_HOME=./whatap_home ./app

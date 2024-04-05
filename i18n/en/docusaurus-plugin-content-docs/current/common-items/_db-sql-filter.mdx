@@ -1,0 +1,43 @@
+## Filtering the searched results
+
+### Adding the filter conditions
+
+You can perform a search by filtering by SQL text, agent name, DB user name, and the like.
+
+<ImgLang img='db-sql-filter-adding.png' desc='Adding conditions' />
+
+1. In the <Cmdname sid="filter" className="uitext" /> option, select <LinkImage img="ico-add.svg" className="ico" />.
+
+2. In <Cmdname sid="TTL06740" className="uitext" />, select a desired filtering criteria.
+
+   - If the value of the selected item is text, you can select any of <Cmdname sid="includes" className="uitext" /> (blue) and <Cmdname sid="excludes" className="uitext" /> (red).
+
+     ![Condition color](/img/db-sql-filter-condition-color.png)
+
+   - If the value of the selected item is number, you can select any condition of `==` (equal to), `>=` (greater than or equal to), and `<=` (less than or equal to).
+
+3. In <Cmdname sid="condition" className="uitext" />, select a condition.
+
+4. Enter a string or number to match the condition.
+
+5. Select <Cmdname sid="apply" className="uitext" />.
+
+:::note
+
+- To add filtering conditions, select <Cmdname sid="bsm_button_add" className="uitext" /> and then repeat Step 1 to 5. Added conditions are applied based on AND (`&&`).
+
+- To delete some items while adding conditions, select ![Delete icon](/img/ico-trash.svg) on the right of the filter conditions. To delete all conditions, select ![Delete icon](/img/ico-trash.svg) <Cmdname sid="BTN06616" className="uitext" />.
+
+- To quickly delete the conditions applied to the <Cmdname sid="filter" className="uitext" /> option, select <LinkImage img="ico-remove.svg" className="ico" />.
+
+- The default setting is to exclude if `sqlText` contains 'WhaTap'.
+
+  <ImgLang img='db-sql-filter-default.png' desc='WhaTap' />
+
+:::
+
+### Modifying the filter conditions
+
+<ImgLang img='db-sql-filter-modify.png' desc='Edit filter' />
+
+Click any applied to the <Cmdname sid="filter" className="uitext" /> option. If the <Cmdname sid="TTL06737" className="uitext" /> window appears, modify any desired items and then select <Cmdname sid="apply" className="uitext" />.

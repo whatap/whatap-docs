@@ -1572,7 +1572,7 @@
     "description": "The label for category 분석 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.통계/보고서": {
-    "message": "Stat/Report",
+    "message": "STAT/REPORT",
     "description": "The label for category 통계/보고서 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.로그": {

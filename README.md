@@ -37,7 +37,7 @@ crowdin download
 npm run crowdin download
 ```
 
-언어별 다운로드 `crowdin download -l en`
+언어별 다운로드 `crowdin download -l en-US`
 
 ### 다국어 문서 수정 사항
 

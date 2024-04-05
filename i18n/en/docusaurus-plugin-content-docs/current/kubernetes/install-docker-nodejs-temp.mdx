@@ -1,0 +1,133 @@
+---
+id: install-docker-nodejs-temp
+title: Installing Docker Node.js
+description: This step allows you to install the agent to monitor Node.js applications in the container.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Application Installation
+  - Node.js
+draft: true
+---
+
+<!-- 에이전트 설정, 컨테이너 환경 변수, 에이전트 설치 확인 추가 수정0119 -->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+At the bottom of **_Management_** > **_Agent installation_**, click **_Install Application_** > Select the **_Docker Node.js_** tab in Install guide.
+
+This process applies the WhaTap monitoring agent to the Node.js application running on the Docker container and packages the container image as follows. 
+
+:::note 
+
+- EKS Fargate is to be supported later. 
+
+- Git example code is provided to help you understand the Node.js application integration process. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express).
+
+:::
+
+## Download agent
+
+Execute the following command to install WhaTap.
+
+```bash
+npm install --save whatap
+```
+
+To update the agent, execute the following command.
+
+```bash
+npm update whatap
+```
+
+## Agent CONFIG.
+
+Add the following code to the first line of your application's main module.
+
+```javascript title='Example' showLineNumbers {1}
+const WhatapAgent = require('whatap').NodeAgent;
+WhatapAgent.NodeAgent;
+```
+
+When using ECMAScript (ES), add the following code:
+
+```javascript
+import WhatapAgentfrom 'whatap';
+WhatapAgent.NodeAgent;
+```
+
+## Container environment variables
+
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
+
+```yaml
+env:
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: OKIND
+	value: {YOUR_OKIND_NAME}
+- name: license
+	value: {licenseKey}
+- name: whatap_server_host
+	value: {proxyServer}
+- name: whatap_micro_enabled
+	value: "true"
+```
+
+See the following example:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #DeploymentName
+  labels:
+    app: #AppLabel
+spec:
+  selector:
+    matchLabels:
+      app: #AppLabel
+	replicas: 3
+  template:
+    metadata:
+      labels:
+        app: #AppLabel
+		spec:
+		  containers:
+			- name: #ContainerName
+        image: nginx
+        ports:
+        - containerPort: 80
+			  env:
+		    - name: NODE_IP
+	        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+				- name: NODE_NAME
+		      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+		    - name: POD_NAME
+		      valueFrom: {fieldRef: {fieldPath: metadata.name}}
+				- name: OKIND
+          value: #DeploymentName
+				- name: license
+					value: {licenseKey}
+				- name: whatap_server_host
+					value: {proxyServer}
+				- name: whatap_micro_enabled
+					value: "true"
+```
+
+{@include: _k8s-env-role.mdx} 
+
+## Checking the agent installation
+
+- To check whether the agent has been installed, go to **_Dashboard_** > **_Application Service Dashboard_**.
+
+- If you have manually installed the downloaded file but cannot see the agent in **_Dashboard_**, check the following.
+
+  - Execute the command, `ps -ef | grep whatap` in the container, and then check whether the agent options have been applied properly.
+
+  - Check the content in the _/whatap/logs_ path of the container. 

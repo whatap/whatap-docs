@@ -2,29 +2,41 @@
 
 <ProdImg img='db-instance-list.png' desc='instance list' />
 
-- The ![number1](/img/number-01.png) area displays the status of instances set in the project. The displayed status data matches the total number of instances and matches the **_Status_** column data in the table.
+- The ![number1](/img/number-01.png) area displays the status of instances set in the project. The displayed status data matches the total number of instances and matches the <Cmdname sid="status" className="uitext" /> column data in the table.
 
-- If you click the abnormal status icon in the **_Status_** column, the **_Event_** window appears. You can see the history of events in the instance.
+  <InDoc product="postgresql,mysql">
 
-- If you select each instance, **_Instance Monitoring_** appears. You can monitor the detailed information about the selected instances in real time. 
+  - <span class='snormal'><Cmdname sid="sms_alert_normal" /></span>: Number of normal agents.
+
+  - <span class='slow'><Cmdname sid="sms_alert_warn" /></span>: Number of agents where the threshold of the event set in <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" /> exceeds the <span class='slow'>Warning</span> level.
+
+  - <span class='vslow'><Cmdname sid="sms_alert_fatal" /></span>: Number of agents where the threshold of the event set in <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" /> exceeds the <span class='vslow'>Fatal</span> level.
 
   :::note
 
-  For more information about the **_instance monitoring_**, see [the following](instance-monitoring).
+  For more information about <Cmdname sid="side_event" className="uitext" />, see <Link to="set-notice">the following</Link>.
+
+  :::
+
+  </InDoc>
+
+- If you click an abnormal icon in the <Cmdname sid="status" className="uitext" /> column, the <Cmdname sid="event" className="uitext" /> window appears. You can see the history of events in the instance.
+
+- If you select each instance, <Cmdname sid="side_dbMonitoring" className="uitext" /> appears. You can monitor the detailed information about the selected instances in real time. 
+
+  :::note
+
+  For more information about <Cmdname sid="side_dbMonitoring" className="uitext" />, see <Link to="instance-monitoring">the following</Link>.
 
   :::
 
 - It provides the key performance metrics in graph charts. The highest number appears on the chart. Hover your mouse over the chart to see the number at that location. For more information about the performance metrics, see [the following](metrics-data-list).
 
-<Xclude product='redis'>
-
-- In the **_Instance List_**, <span class='mark master'>M</span>, <span class='mark instance'>S</span>, and <span class='mark master'>C</span> displayed in the **_Server Name_** column mean Master, Slave, and Cluster respectively. It is displayed in case of the DB composed as replication.
+- In the <Cmdname sid="instance_list" className="uitext" />, <span class='mark master'>M</span>, <span class='mark instance'>S</span>, and <span class='mark master'>C</span> displayed in the <Cmdname sid="server_name" className="uitext" /> column mean Master, Slave, and Cluster respectively. It is displayed in case of the DB composed as replication.
 
   If the replication instance is abnormal, the <LinkImage img='ic-warinig-db.svg' desc='경고' className='ico' /> icon appears.
 
   <ImgLang img='db-instance-list-replication-warning.png' />
-
-</Xclude>
 
 - You can see real-time alerts by selecting ![Notification icon](/img/ico-noti.svg) at the upper right of the screen. For more information about the alert settings, see [the following](set-notice).
 

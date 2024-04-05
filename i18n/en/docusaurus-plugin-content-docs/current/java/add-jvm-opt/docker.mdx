@@ -1,10 +1,12 @@
 ---
 id: docker
 title: Docker
-description: Complete application of the WhaTap agent in the Docker environment.
+description: The step-by-step instructions on how to apply the WhaTap Java monitoring agent to Java applications in the Docker environment are provided. Users can add more Whatap Java agent settings to the existing Docker image to see the processes for building a new image, creating the whatap.conf file, writing a Dockerfile, and modifying JAVA_OPT. Additional JVM options for Java 17 or later and the method how to configure the heap histogram lookup for various Java versions are also provided.
 tags:
   - Java
   - Docker
+  - Application
+  - Agent
 ---
 
 ## Applying the agent
@@ -13,7 +15,7 @@ Based on an existing Docker image, build an image with the WhaTap agent settings
 
 :::note
 
-The following handles only installation of the Java agent. See the separate procedure when applying with WhaTap Kubernetes Monitoring.
+This document covers only the installation of the Java agent. To apply with WhaTap Kubernetes monitoring, see [the following](../../kubernetes/install-docker-java).
 
 :::
 

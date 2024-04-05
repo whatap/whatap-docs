@@ -1,6 +1,10 @@
-Home > Select Project > **_STAT/REPORT_** > **_Database Size_**
+Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSize" className="uitext" />
 
-It aggregates the sizes of tables for each database and provides trend data in a chart. 
+It aggregates the sizes of tables for each database and provides trend data in a chart. You can identify and manage the trend in database capacity growth. You can prepare for rapid capacity increases by identifying them in advance.
+
+Database size can affect the performance. You can prepare to troubleshoot performance issues because the increase in size can delay the query execution. It is also required to identify and prevent problems in advance that may increase the size due to incorrect queries or database structure issues.
+
+The trend in database size helps you understand usage patterns and data growth. You can predict future capacity requirements and take possible actions. Monitoring these changes helps you optimize the resources and costs.
 
 <InDoc product='mysql'>
 
@@ -45,9 +49,9 @@ grant usage on schema {schema_name} to whatap;
 
 <ProdImg img='db-database-size.png' desc='Database size'/>
 
-1. Set the time to search in **_Time_**. You can also select a lookup time by clicking the green button.
+1. Set the time to search in <Cmdname sid="time" className="uitext" />. You can also select a lookup time by clicking the green button.
 
-2. Select a target to view in **_Instance_**.
+2. Select a target to view in <Cmdname sid="instance" className="uitext" />.
 
 3. Select ![Search icon](/img/ico-btn-search.png).
 
@@ -61,13 +65,13 @@ grant usage on schema {schema_name} to whatap;
 
 ## Checking the changes over time
 
-If you select the graph bar at a specific time in **_Size trend_**, you can see the database size trend and change amounts from the start time to the selected time in a list.
+If you select the graph bar at a specific time in <Cmdname sid="TTL06025" className="uitext" />, you can see the database size trend and change amounts from the start time to the selected time in a list.
 
 <ProdImg img='db-database-size-select-db.png' desc='데이터베이스 사이즈'/>
 
 ## Checking the sizes for each table
 
-If you select a database in **_Size details_**, you can see the list of sizes for each table in the top 50.
+If you select a database in <Cmdname sid="TTL06026" className="uitext" />, you can see the list of sizes for each table in the top 50.
 
 <ProdImg img='db-database-size-top50.png' desc='데이터베이스 사이즈'/>
 

@@ -1,0 +1,40 @@
+---
+id: set-real-user-id
+title: Setting the actual user ID
+description: In the browser monitoring, you can collect data by setting the user ID via the actual user's login ID or email address.
+tags:
+  - Browser Monitoring
+  - Agent
+  - Setting the actual user ID
+---
+
+Browser monitoring is basically managed by issuing user IDs with random numbers. However, it provides an additional function to collect data by setting the user ID via the actual user's login ID or email address. By setting the actual user ID, you can see the user session performance and event information and additionally see the browser errors based on the actual login ID or email address.
+
+By identifying users through the browser monitoring, it can be used for custom analysis, accurate user experience analysis, marketing strategy planning, and security enhancement.
+
+## Setting the actual user ID
+
+### Interfaces
+
+The interface provided by the browser agent is contained in the `WhatapBrowserAgent` object of `window`. See the interface of `setUserID` provided by `WhatapBrowserAgent`.
+
+```tsx title='Typescript'
+setUserID: (userID: string) => void;
+```
+
+### Application example
+
+You can apply the interface provided by the browser agent as an example code.
+
+```tsx title='Typescript'
+const loginComplete = (data) => {
+	if (data) {
+		/*
+		* @description Setting the user ID of the WhaTap browser agent
+		*/
+		window?.WhatapBrowserAgent?.setUserID?.(data?.email);
+	}
+};
+```
+
+When the `loginComplete` function runs, the actual user's email address is set as the user ID to be used for browser monitoring.

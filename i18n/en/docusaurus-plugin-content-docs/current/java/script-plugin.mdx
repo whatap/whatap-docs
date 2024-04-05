@@ -27,7 +27,7 @@ The Java agent plug-in is executed by inserting in the method start and end. The
 
 - `custom_pool_classes`
 
-  To monitor the user-defined pool, set the class with the pool usage. Write the plug-in code in _`$WHATAP_HOME`/plugin/CustomPool.x_.
+  To monitor the custom pool, set the class with the pool usage. Write the plug-in code in _`$WHATAP_HOME`/plugin/CustomPool.x_.
 
 ## Plug-in setting example
 
@@ -257,9 +257,9 @@ This API is applied to the method that has been set through the Java agent optio
 | TraceHelperEnd.x   |   $ctx    | \>              | See the common attributes. |
 | ^                  |  $point   | \>              | See the common attributes. |
 
-### User-defined pool
+### Custom pool
 
-This API is used to monitor the user-defined pool. If the method with the pool usage is set, you can observe it and check statistical information through the WhaTap monitoring service.
+This API is used to monitor the custom pool. If the method with the pool usage is set, you can observe it and check statistical information through the WhaTap monitoring service.
 
 | Plug-in file  | Parameter | Method/variable        | Description                                |
 | ------------- | :-------: | ---------------------- | ------------------------------------------ |
