@@ -391,11 +391,9 @@ html[lang='ja-JP'] {
   }
 }
 .table-of-contents__link {
-  strong {
-    em {
-      font-style: normal;
-      font-weight: normal;
-    }
+  strong em, em strong{
+    font-style: normal;
+    font-weight: normal;
   }
 }
 .theme-doc-sidebar-item-link-level-1 {
@@ -1012,14 +1010,15 @@ main {
       text-decoration: underline;
       color: var(--main-osd-color);
     }
-    a:hover, strong em, span.uitext {
+    a:hover, strong em, em strong, span.uitext {
       color: var(--main-osd-color);
     }
     strong, span.b600 {
       font-weight: 600;
     }
-    strong em, span.uitext {
-      font-style: normal;
+    strong em, em > strong, span.uitext {
+      font-style: normal !important;
+      font-weight: normal;
     }
     span.type {
       color: var(--ifm-safe-color);
