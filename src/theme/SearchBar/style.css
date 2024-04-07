@@ -29,6 +29,8 @@ button.docsearch-btn {
   padding: 0 8px;
   color: initial;
   background: none;
+  position: relative;
+  top: 4px;
 }
 html[data-theme='dark'] .docsearch-btn-key, html[data-theme='dark'] button.docsearch-btn {
   color: #b4b4b4 !important;

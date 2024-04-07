@@ -4,11 +4,10 @@ import {useThemeConfig} from '@docusaurus/theme-common';
 import Logo from '@theme/Logo';
 import CollapseButton from '@theme/DocSidebar/Desktop/CollapseButton';
 import Content from '@theme/DocSidebar/Desktop/Content';
-import NavbarSearch from '@theme/Navbar/Search';
-import SearchBar from '@theme/SearchBar';
 import styles from './styles.module.css';
-import Translate, { translate } from "@docusaurus/Translate";
+import { translate } from "@docusaurus/Translate";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Link from '@docusaurus/Link';
 function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
   const {
     navbar: {hideOnScroll},
@@ -44,14 +43,14 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
               })
             }
           </a></li>
-          <li><a href={whataphome} target='_blank' className='ext' rel="noopener noreferrer">
+          <li><Link to={whataphome} target='_blank' className='ext' rel="noopener noreferrer">
             {
               translate({
                 id: "whatap_link_go",
                 message: "와탭 홈페이지 바로가기",
               })
             }
-          </a></li>
+          </Link></li>
         </ul>
       </div>
       {hideOnScroll && <Logo tabIndex={-1} className={styles.sidebarLogo} />}
