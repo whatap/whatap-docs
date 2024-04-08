@@ -13,7 +13,9 @@ toc_max_heading_level: 2
 
 ホーム画面 > クラスタープロジェクト選択 > <Cmdname sid="cluster" className="uitext" /> > **_apiserver メトリクス照会_**
 
-{@include: ../common-items/_k8s-kube-apiserver-common.mdx}
+import K8skubeapiservercommon from "../common-items/_k8s-kube-apiserver-common.mdx";
+
+<K8skubeapiservercommon />
 
 kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 **_kube-apiserverメトリクス照会_**メニューを通じてkube-apiserverから収集される指標の原本データ整合性(Data Consistency)を確認することができます。 
 
@@ -33,12 +35,18 @@ kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部�
 
 ### フィルター
 
-{@include: ../common-items/_k8s-list-filter.mdx}
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
+
+<K8slistfilter />
 
 ## kube-apiserverモニタリング活性化
 
-{@include: ../common-items/_k8s-kube-apiserver-monitoring.mdx}
+import K8skubeapiservermonitoring from "../common-items/_k8s-kube-apiserver-monitoring.mdx";
+
+<K8skubeapiservermonitoring />
 
 ## kube-apiserverメトリクス
 
-{@include: ../common-items/_k8s-kube-apiserver-metric.mdx}
+import K8skubeapiservermetric from "../common-items/_k8s-kube-apiserver-metric.mdx";
+
+<K8skubeapiservermetric />

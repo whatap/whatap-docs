@@ -14,6 +14,7 @@ import ImgLang from '@site/src/components/ChangeImgNamebyLocale.js'
 import Link from '@docusaurus/Link';
 import LinkImage from '@site/src/components/LinkImage.js';
 import Youtube from '@site/src/components/OutputbyLang.js';
+import Videos from '@site/src/components/Videos.js';
 import Cmdname from '@site/src/components/ui-text/locale-text.js';
 import Appname from '@site/src/components/ui-text/mobile-locale.js';
 import ScrollToLink from '@site/src/components/OnClickeventOffset.js';
@@ -34,6 +35,7 @@ export default {
   Link,
   LinkImage,
   Youtube,
+  Videos,
   Cmdname,
   Appname,
   ScrollToLink

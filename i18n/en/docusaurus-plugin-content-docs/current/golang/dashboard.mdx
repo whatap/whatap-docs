@@ -9,38 +9,56 @@ tags:
   - Application Monitoring
 ---
 
-<!-- 애플리케이션 대시보드 소개-->
+{/* 애플리케이션 대시보드 소개*/}
 
-{@include: ../common-items/_apm-dashboard-desc.mdx} 
+import Apmdashboarddesc from "../common-items/_apm-dashboard-desc.mdx";
 
-<!-- 과거 데이터 조회하기-->
+<Apmdashboarddesc /> 
 
-{@include: ../common-items/_apm-dashboard-set-past-time.mdx} 
+{/* 과거 데이터 조회하기*/}
 
-<!-- 에이전트 확인하기-->
+import Apmdashboardsetpasttime from "../common-items/_apm-dashboard-set-past-time.mdx";
 
-{@include: ../common-items/_apm-dashboard-check-agent.mdx} 
+<Apmdashboardsetpasttime /> 
 
-<!-- 분류별 에이전트 모니터링-->
+{/* 에이전트 확인하기*/}
 
-{@include: ../common-items/_dashboard-select-agent-category.mdx}
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
 
-<!-- 위젯 편집하기-->
+<Apmdashboardcheckagent /> 
 
-{@include: ../common-items/_apm-dashborad-edit-widget.mdx}
+{/* 분류별 에이전트 모니터링*/}
 
-<!-- 프리셋-->
+import Dashboardselectagentcategory from "../common-items/_dashboard-select-agent-category.mdx";
 
-{@include: ../common-items/_apm-dashboard-preset.mdx}
+<Dashboardselectagentcategory />
 
-<!-- 위젯 옵션 이용하기-->
+{/* 위젯 편집하기*/}
 
-{@include: ../common-items/_apm-dashboard-widget-options.mdx}
+import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.mdx";
 
-<!-- 위젯 알아보기-->
+<Apmdashboradeditwidget />
 
-{@include: ../common-items/_apm-dashboard-about-widget.mdx}
+{/* 프리셋*/}
 
-<!-- 실시간 알림 확인하기-->
+import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 
-{@include: ../common-items/_apm-dashboard-realtime-notice.mdx}
+<Apmdashboardpreset />
+
+{/* 위젯 옵션 이용하기*/}
+
+import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
+
+<Apmdashboardwidgetoptions />
+
+{/* 위젯 알아보기*/}
+
+import Apmdashboardaboutwidget from "../common-items/_apm-dashboard-about-widget.mdx";
+
+<Apmdashboardaboutwidget />
+
+{/* 실시간 알림 확인하기*/}
+
+import Apmdashboardrealtimenotice from "../common-items/_apm-dashboard-realtime-notice.mdx";
+
+<Apmdashboardrealtimenotice />

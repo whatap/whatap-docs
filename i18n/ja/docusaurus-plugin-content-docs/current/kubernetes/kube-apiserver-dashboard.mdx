@@ -12,7 +12,9 @@ toc_max_heading_level: 2
 
 ホーム画面 > クラスタープロジェクト選択 > **_クラスター_** > **_kube-apiserverダッシュボード_**
 
-{@include: ../common-items/_k8s-kube-apiserver-common.mdx}
+import K8skubeapiservercommon from "../common-items/_k8s-kube-apiserver-common.mdx";
+
+<K8skubeapiservercommon />
 
 kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 **_kube-apiserverダッシュボード_**メニューを通じてkube-apiserverの状態と性能メトリクスを収集した後、kube-apiserverのリスポンスタイム、処理量、リクエストの失敗などを追跡し、クラスターの可用性と性能を簡単にモニタリングできます。
 
@@ -30,8 +32,12 @@ kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部�
 
 ## kube-apiserverモニタリング活性化
 
-{@include: ../common-items/_k8s-kube-apiserver-monitoring.mdx}
+import K8skubeapiservermonitoring from "../common-items/_k8s-kube-apiserver-monitoring.mdx";
+
+<K8skubeapiservermonitoring />
 
 ## kube-apiserverメトリクス
 
-{@include: ../common-items/_k8s-kube-apiserver-metric.mdx} 
+import K8skubeapiservermetric from "../common-items/_k8s-kube-apiserver-metric.mdx";
+
+<K8skubeapiservermetric /> 

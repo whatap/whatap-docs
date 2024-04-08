@@ -11,22 +11,32 @@ tags:
   - デッドロック
 ---
 
-<!-- 개요 -->
+{/* 개요 */}
 
-{@include: ../common-items/_analysis-lock-desc.mdx}
+import Analysislockdesc from "../common-items/_analysis-lock-desc.mdx";
+
+<Analysislockdesc />
 
 ## ロックツリー
 
-{@include: ../common-items/_db-locktree-desc.mdx} 
+import Dblocktreedesc from "../common-items/_db-locktree-desc.mdx";
+
+<Dblocktreedesc /> 
 
 ### 基本画面ガイド
 
-{@include: ../common-items/_db-locktree-using-basic.mdx}  
+import Dblocktreeusingbasic from "../common-items/_db-locktree-using-basic.mdx";
 
-<!-- ロックツリーカラム情報 -->
+<Dblocktreeusingbasic />  
 
-{@include: ../common-items/_db_mysql-column.mdx}
+{/* ロックツリーカラム情報 */}
 
-<!-- デッドロック -->
+import Mysqlcolumn from "../common-items/_db_mysql-column.mdx";
 
-{@include: ../common-items/_db-deadlock-desc.mdx}  
+<Mysqlcolumn />
+
+{/* デッドロック */}
+
+import Dbdeadlockdesc from "../common-items/_db-deadlock-desc.mdx";
+
+<Dbdeadlockdesc />  

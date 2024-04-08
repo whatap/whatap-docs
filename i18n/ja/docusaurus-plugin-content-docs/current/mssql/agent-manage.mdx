@@ -8,22 +8,30 @@ tags:
   - データベースモニタリング
 ---
 
-<!-- Postgresql, Oracle 지원 프로세스 모니터링 -->
+{/* Postgresql, Oracle 지원 프로세스 모니터링 */}
 
-<!-- {@include: ../common-items/_db-agent-xos-process-monitoring.mdx}-->
+{/* {@include: ../common-items/_db-agent-xos-process-monitoring.mdx}*/}
 
-<!-- 서버 이름을 임의로 부여해 관리하기 -->
+{/* 서버 이름을 임의로 부여해 관리하기 */}
 
-{@include: ../common-items/_db-server-naming.mdx}  
+import Dbservernaming from "../common-items/_db-server-naming.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbservernaming />  
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx}
+{/* AES 256 암호화 적용 */}
 
-<!-- 에이전트 업데이트-->
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
 
-{@include: ../common-items/_db-update-agent.mdx}
+<Dbaes256encrypt />
 
-<!-- 에이전트 삭제 -->
+{/* 에이전트 업데이트*/}
 
-{@include: ../common-items/_db-uninstall-agent.mdx}  
+import Dbupdateagent from "../common-items/_db-update-agent.mdx";
+
+<Dbupdateagent />
+
+{/* 에이전트 삭제 */}
+
+import Dbuninstallagent from "../common-items/_db-uninstall-agent.mdx";
+
+<Dbuninstallagent />  

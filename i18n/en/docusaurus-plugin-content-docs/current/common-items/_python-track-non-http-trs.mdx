@@ -1,25 +1,36 @@
+import Edpdef from "../common-items/_edp-def.mdx";
+import Edptracknonhttp from "../common-items/_edp-track-non-http.mdx";
+
 - **Transaction end point**  
 
-    {@include: ../common-items/_edp-def.mdx} 
+    <Edpdef />
 
 - **Non-HTTP tracing**  
 
-    {@include: ../common-items/_edp-track-non-http.mdx} 
+    <Edptracknonhttp />
 
 ### Selecting the target
 
-{@include: ../common-items/_edp-select.mdx} 
+import Edpselect from "../common-items/_edp-select.mdx";
+
+<Edpselect /> 
 
 ### Setting the end point of transaction
 
-{@include: ../common-items/_edp-trs-setting.mdx} 
+import Edptrssetting from "../common-items/_edp-trs-setting.mdx";
+
+<Edptrssetting /> 
 
 ### Defining the transaction name
 
-{@include: ../common-items/_edp-name-setting.mdx}
+import Edpnamesetting from "../common-items/_edp-name-setting.mdx";
 
-<!--
+<Edpnamesetting />
+
+{/*
 ### 플러그인 사용
 
-{@include: ../common-items/_edp-plugin.mdx}
--->
+import Edpplugin from "../common-items/_edp-plugin.mdx";
+
+<Edpplugin />
+*/}

@@ -12,11 +12,15 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />   
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
 
 ## 構成図の確認
 
@@ -30,9 +34,11 @@ DBXエージェントは、別途サーバーにインストールするか、DB
 
 </div>
 
-<!-- 모니터링용 계정 생성-->
+{/* 모니터링용 계정 생성*/}
 
-{@include: ../common-items/_db-create-monitoring-account.mdx}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
 
 機能と使用環境に応じて追加権限を付与してください。
 
@@ -90,7 +96,9 @@ DBXエージェントは、別途サーバーにインストールするか、DB
   grant select on all tables in schema {schema_name} to whatap;
   ```
 
-{@include: ../getting-started/_accesskey-v2.mdx}
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
 
 ## DBXエージェントダウンロード
 
@@ -143,20 +151,28 @@ db_port={DB_Server_Port}
 
 :::
 
-<!-- 공통 Notes-->
+{/* 공통 Notes*/}
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
+
+<Dbinstallagentcommonnotes />
 
 ### DBユーザーファイルの作成{#create-db-user}
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx} 
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
 
-<!--모니터링 시작하기-->
+<Dbcreatedbuserfilebody /> 
 
-{@include: ../common-items/_db-run-agent.mdx}
+{/*모니터링 시작하기*/}
 
-<!--XOS 에이전트 설치-->
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx} 
+<Dbrunagent />
+
+{/*XOS 에이전트 설치*/}
+
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent /> 

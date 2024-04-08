@@ -1,4 +1,8 @@
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+import Logagentoption from "../common-items/_log-agent-option.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -14,7 +18,7 @@
 
 **_ログ検索_**メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータを抽出します。 
 
-動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。{@include: ../common-items/_log-ui-main-term.mdx}
+動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。<Loguimainterm />
 
 <Xclude product='postgresql,mysql'>
 
@@ -40,35 +44,49 @@
 
 - ![number-s](/img/number-03.png)ログテーブル上段の右の <LinkImage img='ic-fullscreen.svg' desc='全画面表示アイコン'/>**_全画面_**アイコンを選択すると、**_ログ_**と**_タイムスタンプ_**を全画面で確認することができます。
 
-- {@include: ../common-items/_log-agent-option.mdx}
+- <Logagentoption />
 
 ## ログContentの確認
 
-{@include: ../common-items/_log-contents-check.mdx}
+import Logcontentscheck from "../common-items/_log-contents-check.mdx";
+
+<Logcontentscheck />
 
 ## フィルター{#log-search-filter}
 
 ### フィルター適用
 
-{@include: ../common-items/_log-filter-apply2.mdx} 
+import Logfilterapply2 from "../common-items/_log-filter-apply2.mdx";
+
+<Logfilterapply2 /> 
 
 ### 構文解析されていないキーワードのフィルター適用
 
-{@include: ../common-items/_log-filter-apply-non-parsing.mdx}
+import Logfilterapplynonparsing from "../common-items/_log-filter-apply-non-parsing.mdx";
+
+<Logfilterapplynonparsing />
 
 ### フィルター修正
 
-{@include: ../common-items/_log-filter-modify.mdx}
+import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
+
+<Logfiltermodify />
 
 ### 検索キー(Search Key)
 
-{@include: ../common-items/_log-filter-search-key.mdx}
+import Logfiltersearchkey from "../common-items/_log-filter-search-key.mdx";
+
+<Logfiltersearchkey />
 
 ### フィルター入力文法{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx}  
+import Logfilterexpressionssearchkey from "../common-items/_log-filter-expressions-search-key.mdx";
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx}
+<Logfilterexpressionssearchkey />  
+
+import Logfilterexpressionscommons from "../common-items/_log-filter-expressions-commons.mdx";
+
+<Logfilterexpressionscommons />
 
 ## ログのタグオプション {#log-tag-options}
 
@@ -92,8 +110,12 @@
 
 ## コンテンツハイライト {#content-highlight}
 
-{@include: ../common-items/_log-contents-highlight.mdx}
+import Logcontentshighlight from "../common-items/_log-contents-highlight.mdx";
+
+<Logcontentshighlight />
 
 ## テーブル設定 {#set-table}
 
-{@include: ../common-items/_log-ui-table-setting.mdx} 
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
+
+<Loguitablesetting /> 

@@ -9,86 +9,128 @@ tags:
   - Trace
 ---
 
-<!-- Overview-->
+{/* Overview*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-desc.mdx}
+import Dashboardhitmaptracedesc from "../common-items/_dashboard-hitmap-trace-desc.mdx";
+
+<Dashboardhitmaptracedesc />
 
 ## Basic screen guide{#basic-usage}
 
-{@include: ../common-items/_dashboard-hitmap-trace-basic-usage.mdx}
+import Dashboardhitmaptracebasicusage from "../common-items/_dashboard-hitmap-trace-basic-usage.mdx";
+
+<Dashboardhitmaptracebasicusage />
 
 ## Analyzing a trace{#anlaysis-trace}
 
-{@include: ../common-items/_dashboard-hitmap-trace-analysis-tx.mdx}
+import Dashboardhitmaptraceanalysistx from "../common-items/_dashboard-hitmap-trace-analysis-tx.mdx";
 
-<!--### 테이블 뷰-->
+<Dashboardhitmaptraceanalysistx />
 
-{@include: ../common-items/_dashboard-hitmap-trace-table-view.mdx} 
+{/*### 테이블 뷰*/}
 
-<!--### 레코드 요약-->
+import Dashboardhitmaptracetableview from "../common-items/_dashboard-hitmap-trace-table-view.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-trace-record-summary.mdx}  
+<Dashboardhitmaptracetableview /> 
 
-{@include: ../common-items/_dashboard-hitmap-trace-record-summary-attribute.mdx} 
+{/*### 레코드 요약*/}
 
-<!--### 트리뷰-->
+import Dashboardhitmaptracerecordsummary from "../common-items/_dashboard-hitmap-trace-record-summary.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-trace-treeview.mdx}
+<Dashboardhitmaptracerecordsummary />  
 
-<!--### 액티브 스택-->
+import Dashboardhitmaptracerecordsummaryattribute from "../common-items/_dashboard-hitmap-trace-record-summary-attribute.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-active-stack.mdx}
+<Dashboardhitmaptracerecordsummaryattribute /> 
 
-<!--### 멀티 트랜잭션-->
+{/*### 트리뷰*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-multi-tx.mdx}
+import Dashboardhitmaptracetreeview from "../common-items/_dashboard-hitmap-trace-treeview.mdx";
 
-<!--### 메소드 요약-->
+<Dashboardhitmaptracetreeview />
 
-{@include: ../common-items/_dashboard-hitmap-trace-method.mdx}
+{/*### 액티브 스택*/}
 
-<!--### SQL 요약-->
+import Dashboardhitmapactivestack from "../common-items/_dashboard-hitmap-active-stack.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-trace-sql.mdx}
+<Dashboardhitmapactivestack />
 
-<!--### HTTP Call 요약-->
+{/*### 멀티 트랜잭션*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-http-call.mdx}
+import Dashboardhitmaptracemultitx from "../common-items/_dashboard-hitmap-trace-multi-tx.mdx";
 
-<!--### 트랜잭션 로그-->
+<Dashboardhitmaptracemultitx />
 
-{@include: ../common-items/_dashboard-hitmap-trace-tracsaction-log.mdx}  
+{/*### 메소드 요약*/}
 
-<!--#### 키워드 하이라이트 설정하기, 삭제-->
+import Dashboardhitmaptracemethod from "../common-items/_dashboard-hitmap-trace-method.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-trace-tx-log-keyword.mdx}
+<Dashboardhitmaptracemethod />
+
+{/*### SQL 요약*/}
+
+import Dashboardhitmaptracesql from "../common-items/_dashboard-hitmap-trace-sql.mdx";
+
+<Dashboardhitmaptracesql />
+
+{/*### HTTP Call 요약*/}
+
+import Dashboardhitmaptracehttpcall from "../common-items/_dashboard-hitmap-trace-http-call.mdx";
+
+<Dashboardhitmaptracehttpcall />
+
+{/*### 트랜잭션 로그*/}
+
+import Dashboardhitmaptracetracsactionlog from "../common-items/_dashboard-hitmap-trace-tracsaction-log.mdx";
+
+<Dashboardhitmaptracetracsactionlog />  
+
+{/*#### 키워드 하이라이트 설정하기, 삭제*/}
+
+import Dashboardhitmaptracetxlogkeyword from "../common-items/_dashboard-hitmap-trace-tx-log-keyword.mdx";
+
+<Dashboardhitmaptracetxlogkeyword />
 
 #### Displaying or hiding the table columns{#display-or-hide-column}
 
-{@include: ../common-items/_display-or-hide-table-column.mdx} 
+import Displayorhidetablecolumn from "../common-items/_display-or-hide-table-column.mdx";
+
+<Displayorhidetablecolumn /> 
 
 #### Reordering the table columns{#change-order-column}
 
-{@include: ../common-items/_change-order-table-column.mdx} 
+import Changeordertablecolumn from "../common-items/_change-order-table-column.mdx";
+
+<Changeordertablecolumn /> 
 
 #### Setting to display the table content{#setting-table-contents}
 
-{@include: ../common-items/_set-display-table-contents.mdx} 
+import Setdisplaytablecontents from "../common-items/_set-display-table-contents.mdx";
+
+<Setdisplaytablecontents /> 
 
 ## Additional options {#additional-options}
 
-<!--### http 파라미터 조회-->
+{/*### http 파라미터 조회*/}
 
-{@include: ../common-items/_search-http-parameter.mdx}  
+import Searchhttpparameter from "../common-items/_search-http-parameter.mdx";
 
-<!--### 트랜잭션 파라미터 조회-->
+<Searchhttpparameter />  
 
-{@include: ../common-items/_search-transaction-parmeter.mdx} 
+{/*### 트랜잭션 파라미터 조회*/}
 
-<!--### 테이블 컬럼 설정하기 set-table-column-->
+import Searchtransactionparmeter from "../common-items/_search-transaction-parmeter.mdx";
 
-{@include: ../common-items/_add-func-set-table-column.mdx} 
+<Searchtransactionparmeter /> 
 
-<!--### 조회 데이터 다운로드-->
+{/*### 테이블 컬럼 설정하기 set-table-column*/}
 
-{@include: ../common-items/_add-func-download-date.mdx} 
+import Addfuncsettablecolumn from "../common-items/_add-func-set-table-column.mdx";
+
+<Addfuncsettablecolumn /> 
+
+{/*### 조회 데이터 다운로드*/}
+
+import Addfuncdownloaddate from "../common-items/_add-func-download-date.mdx";
+
+<Addfuncdownloaddate /> 

@@ -8,62 +8,92 @@ tags:
   - .NET
 ---
 
-<!--## 트랜잭션 트레이싱이란?-->
+{/*## 트랜잭션 트레이싱이란?*/}
 
-{@include: ../common-items/_transaction-profile-desc.mdx}
+import Transactionprofiledesc from "../common-items/_transaction-profile-desc.mdx";
 
-<!--## 상세 분석-->
+<Transactionprofiledesc />
 
-{@include: ../common-items/_transaction-profile-details.mdx}
+{/*## 상세 분석*/}
 
-<!--### 트랜잭션 정보 창 안내-->
+import Transactionprofiledetails from "../common-items/_transaction-profile-details.mdx";
 
-{@include: ../common-items/_transaction-profile-info-window.mdx}
+<Transactionprofiledetails />
 
-<!--### 테이블 뷰-->
+{/*### 트랜잭션 정보 창 안내*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-table-view.mdx} 
+import Transactionprofileinfowindow from "../common-items/_transaction-profile-info-window.mdx";
 
-<!--### 레코드 요약-->
+<Transactionprofileinfowindow />
 
-{@include: ../common-items/_dashboard-hitmap-trace-record-summary.mdx} 
+{/*### 테이블 뷰*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-record-summary-attribute.mdx} 
+import Dashboardhitmaptracetableview from "../common-items/_dashboard-hitmap-trace-table-view.mdx";
 
-<!--### 트리뷰-->
+<Dashboardhitmaptracetableview /> 
 
-{@include: ../common-items/_dashboard-hitmap-trace-treeview.mdx}
+{/*### 레코드 요약*/}
 
-<!--### 액티브 스택-->
+import Dashboardhitmaptracerecordsummary from "../common-items/_dashboard-hitmap-trace-record-summary.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-active-stack.mdx}
+<Dashboardhitmaptracerecordsummary /> 
 
-<!--### 메소드 요약-->
+import Dashboardhitmaptracerecordsummaryattribute from "../common-items/_dashboard-hitmap-trace-record-summary-attribute.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-trace-method.mdx}
+<Dashboardhitmaptracerecordsummaryattribute /> 
 
-<!--### SQL 요약-->
+{/*### 트리뷰*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-sql.mdx}
+import Dashboardhitmaptracetreeview from "../common-items/_dashboard-hitmap-trace-treeview.mdx";
 
-<!--### HTTP Call 요약-->
+<Dashboardhitmaptracetreeview />
 
-{@include: ../common-items/_dashboard-hitmap-trace-http-call.mdx}
+{/*### 액티브 스택*/}
 
-<!--### 트랜잭션 로그-->
+import Dashboardhitmapactivestack from "../common-items/_dashboard-hitmap-active-stack.mdx";
 
-{@include: ../common-items/_dashboard-hitmap-trace-tracsaction-log.mdx}  
+<Dashboardhitmapactivestack />
 
-<!--#### 키워드 하이라이트 설정하기, 삭제-->
+{/*### 메소드 요약*/}
 
-{@include: ../common-items/_dashboard-hitmap-trace-tx-log-keyword.mdx}
+import Dashboardhitmaptracemethod from "../common-items/_dashboard-hitmap-trace-method.mdx";
+
+<Dashboardhitmaptracemethod />
+
+{/*### SQL 요약*/}
+
+import Dashboardhitmaptracesql from "../common-items/_dashboard-hitmap-trace-sql.mdx";
+
+<Dashboardhitmaptracesql />
+
+{/*### HTTP Call 요약*/}
+
+import Dashboardhitmaptracehttpcall from "../common-items/_dashboard-hitmap-trace-http-call.mdx";
+
+<Dashboardhitmaptracehttpcall />
+
+{/*### 트랜잭션 로그*/}
+
+import Dashboardhitmaptracetracsactionlog from "../common-items/_dashboard-hitmap-trace-tracsaction-log.mdx";
+
+<Dashboardhitmaptracetracsactionlog />  
+
+{/*#### 키워드 하이라이트 설정하기, 삭제*/}
+
+import Dashboardhitmaptracetxlogkeyword from "../common-items/_dashboard-hitmap-trace-tx-log-keyword.mdx";
+
+<Dashboardhitmaptracetxlogkeyword />
 
 ## Additional options
 
-<!--### http 파라미터 조회-->
+{/*### http 파라미터 조회*/}
 
-{@include: ../common-items/_search-http-parameter.mdx}  
+import Searchhttpparameter from "../common-items/_search-http-parameter.mdx";
 
-<!--### 트랜잭션 파라미터 조회-->
+<Searchhttpparameter />  
 
-{@include: ../common-items/_search-transaction-parmeter.mdx} 
+{/*### 트랜잭션 파라미터 조회*/}
+
+import Searchtransactionparmeter from "../common-items/_search-transaction-parmeter.mdx";
+
+<Searchtransactionparmeter /> 

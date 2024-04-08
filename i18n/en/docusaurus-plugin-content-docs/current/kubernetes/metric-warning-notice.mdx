@@ -8,13 +8,21 @@ tags:
   - Kubernetes Monitoring
 ---
 
-{@include: ../common-items/_metrics-warning-notice.mdx}  
+import Metricswarningnotice from "../common-items/_metrics-warning-notice.mdx";
 
-{@include: ../common-items/_composite-metrics-warning-notice.mdx} 
+<Metricswarningnotice /> 
 
-{@include: ../common-items/_metrics-event-modify-delete.mdx}
+import Compositemetricswarningnotice from "../common-items/_composite-metrics-warning-notice.mdx";
 
-{@include: ../common-items/_metrics-event-condition-select-target-guide.mdx}
+<Compositemetricswarningnotice /> 
+
+import Metricseventmodifydelete from "../common-items/_metrics-event-modify-delete.mdx";
+
+<Metricseventmodifydelete />
+
+import Metricseventconditionselecttargetguide from "../common-items/_metrics-event-condition-select-target-guide.mdx";
+
+<Metricseventconditionselecttargetguide />
 
 ## Metrics event templates{#k8s-metrics-event-template}
 
@@ -150,7 +158,7 @@ The alert occurs when the number of Pods that can be allocated to the node is 0.
 
 > APDEX is lower than 0.7 (`${oname}`)
 
-<!-- 
+{/* 
 
 #### ***HPA CPU 사용률 알림***
 
@@ -164,4 +172,4 @@ The alert occurs when the number of Pods that can be allocated to the node is 0.
 
 > HPA POD 생성 최대치에 도달하였고 메모리 사용률이 >= 90% 상태 입니다.
 
--->
+*/}

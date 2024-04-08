@@ -1,3 +1,5 @@
+import Phprestartapply from "../common-items/_php-restart-apply.mdx";
+
 - **whatap.profile_step_normal_count** <span class='type'>Int</span>
 
   Default `1000`
@@ -16,7 +18,7 @@
 
   If the collection number of basic steps is exceeded, only the steps whose execution time exceeds profile_step_heavy_time are collected. Set the count of the step that can be collected. In case of default settings, if `profile_step_normal_count` is 800, up to 200 steps are collected.
 
-- **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
+- **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> {/* 문장 부자연스러움 */}
 
   Default `100`
 
@@ -44,7 +46,7 @@
 
   It sets whether or not to trace the `compile_file` and `compile_string` functions. The `compile_file` and `compile_string` functions (PHP internal functions) are compiled before executing the scripts. You can check the compile times for main, include, require, and autoload scripts, the script file paths, and the execution times.
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
@@ -58,7 +60,7 @@
 
   :::
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
@@ -66,7 +68,7 @@
 
   The user functions whose execution time exceeds the set value (default is `1 second`) of the `profile_method_time` can be found in the transaction details.
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
@@ -74,7 +76,7 @@
 
   Set the execution time for collected functions with the `whatap.profile_method_enabled` setting. 
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
@@ -82,7 +84,7 @@
 
   You can check the stack information of the user functions in transaction details.
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
@@ -90,15 +92,15 @@
 
   Set whether or not to trace the PHP internal function. Tracing is performed only when the function takes more than the `whatap.profile_internal_method_time` setting (Default: `1 second`). 
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
-- **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
+- **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> {/* 두 개가 어떻게 다른지? 0309 수정완*/}
 
   Default `1000`
 
   Set the execution time of the function when tracing PHP internal functions (`whatap.profile_internal_method_enabled`). 
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
 
@@ -106,7 +108,7 @@
 
   Functional parameters are additionally collected when tracing PHP internal functions (`whatap.profile_internal_method_enabled`).
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
 

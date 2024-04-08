@@ -7,13 +7,17 @@ tags:
   - Transactions
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 The agent traces the transaction performance and provides the following configurable options.
 
 ## Transaction Tracing
 
-{@include: ../common-items/_transaction-profiling-common.mdx}
+import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
+
+<Transactionprofilingcommon />
 
 - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
@@ -21,7 +25,9 @@ The agent traces the transaction performance and provides the following configur
 
   You can add a step to display error information in the profile.
 
-{@include: ../common-items/_transaction-profile-active-color.mdx}
+import Transactionprofileactivecolor from "../common-items/_transaction-profile-active-color.mdx";
+
+<Transactionprofileactivecolor />
 
 - **hook_method_patterns** <span class='type'>String</span>
 
@@ -95,9 +101,13 @@ The agent traces the transaction performance and provides the following configur
 
 ## HTTP transaction tracing
 
-{@include: ../common-items/_transaction-trace-common.mdx} 
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
 
-{@include: ../common-items/_transaction-profile-http.mdx} 
+<Transactiontracecommon /> 
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp /> 
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 

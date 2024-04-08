@@ -17,7 +17,9 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
 ## Default options
 
-{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
 
 ## CUBRID-dedicated options{#cubrid}
 
@@ -59,14 +61,22 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
 ## Data collection
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbagentsettingdatacollection /> 
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx}  
+{/* AES 256 암호화 적용 */}
+
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt />  
 
 ## Identifying the agent name{#naming}
 
-{@include: ../common-items/_db-setting-agent-name-details.mdx}
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
 
-{@include: ../common-items/_db-agent-dbx-naming.mdx} 
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming /> 
