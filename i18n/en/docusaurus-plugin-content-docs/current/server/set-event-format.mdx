@@ -95,34 +95,34 @@ The server alert provides only the event message with no event title.
 | --------------------------- | ------------------- | -------------------------------------------- | ----------------------------- |
 | Restart                     | Critical            | System Rebooted"                             | Not supported                 |
 | Not received                | Warning             | Agent No Data"                               | Not supported                 |
-| Port                        | Warning             | Port ${port} is down"                        | "Port ${port} is up"          |
-| Port (IP can be identified) | Warning             | IP ${ip} Port ${port} is down"               | "IP ${ip} Port ${port} is up" |
-| Network IOPS                | Warning or Critical | NETWORK ${deviceId} pps > ${value} pps"      | -                             |
-| Network BPS                 | Warning or Critical | NETWORK ${deviceId} bps > ${value} ps"       | -                             |
-| Disk I/O                    | Warning or Critical | Disk ${mountPoint} IO Usage > ${value} %"    | -                             |
-| Disk Used                   | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
-| inode                       | Warning or Critical | Disk ${mountPoint} inode usage > ${value} %" | -                             |
-| CPU                         | Warning or Critical | CPU Used > ${value} %"                       | -                             |
-| Memory                      | Warning or Critical | Memory Used > ${value} %"                    | -                             |
-| steal                       | Warning or Critical | CPU Steal > ${value} %"                      | -                             |
-| Swap                        | Warning or Critical | Swap Used > ${value} %"                      | -                             |
+| Port                        | Warning             | Port $\{port\} is down"                        | "Port $\{port\} is up"          |
+| Port (IP can be identified) | Warning             | IP $\{ip\} Port $\{port\} is down"               | "IP $\{ip\} Port $\{port\} is up" |
+| Network IOPS                | Warning or Critical | NETWORK $\{deviceId\} pps > $\{value\} pps"      | -                             |
+| Network BPS                 | Warning or Critical | NETWORK $\{deviceId\} bps > $\{value\} ps"       | -                             |
+| Disk I/O                    | Warning or Critical | Disk $\{mountPoint\} IO Usage > $\{value\} %"    | -                             |
+| Disk Used                   | Warning or Critical | Disk $\{mountPoint\} Used > $\{value\} %"        | -                             |
+| inode                       | Warning or Critical | Disk $\{mountPoint\} inode usage > $\{value\} %" | -                             |
+| CPU                         | Warning or Critical | CPU Used > $\{value\} %"                       | -                             |
+| Memory                      | Warning or Critical | Memory Used > $\{value\} %"                    | -                             |
+| steal                       | Warning or Critical | CPU Steal > $\{value\} %"                      | -                             |
+| Swap                        | Warning or Critical | Swap Used > $\{value\} %"                      | -                             |
 
 ### Process alert
 
 | Event Type              | Event Level         | Event Message                             | Event Off Message                        |
 | ----------------------- | ------------------- | ----------------------------------------- | ---------------------------------------- |
-| Process count alert     | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count \< ${value}" |
-| Process count critical  | Warning or Critical | Process ${processName} Count \< ${value}" | "Process ${groupName} Count >= ${value}" |
-| Process CPU             | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
-| Process Memory          | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
+| Process count alert     | Warning or Critical | Process $\{processName\} Count >= $\{value\}" | "Process $\{groupName\} Count \< $\{value\}" |
+| Process count critical  | Warning or Critical | Process $\{processName\} Count \< $\{value\}" | "Process $\{groupName\} Count \>\= $\{value\}" |
+| Process CPU             | Warning or Critical | Process $\{processName\} CPU > $\{value\}"    | -                                        |
+| Process Memory          | Warning or Critical | Process $\{processName\} Memory > $\{value\}" | -                                        |
 
 ### Log file and Windows events
 
 | Event Type        | Event Level         | Event Message                                                       | Event Off Message |
 | ----------------- | ------------------- | ------------------------------------------------------------------- | ----------------- |
 | Event Type        | Event Level         | Event Message                                                       | Event Off Message |
-| LOG_DEFAULT       | Warning or Critical | LOG ${logContent}"                                                  | -                 |
-| LOG_FILE          | Warning or Critical | LOG File: ${filePath}, Keyword : ${keyword}, [Event] ${logContent}" | -                 |
-| LOG_WINDOW_EVENT  | Warning or Critical | LOG ${logContent}"                                                  | -                 |
-| LOG_AUDIT         | Warning or Critical | AUDIT ${logContent}"                                                | -                 |
-| LOG_SCRIPT        | Warning or Critical | SCRIPT ${logContent}"                                               | -                 |
+| LOG_DEFAULT       | Warning or Critical | LOG $\{logContent\}"                                                  | -                 |
+| LOG_FILE          | Warning or Critical | LOG File: $\{filePath\}, Keyword : $\{keyword\}, [Event] $\{logContent\}" | -                 |
+| LOG_WINDOW_EVENT  | Warning or Critical | LOG $\{logContent\}"                                                  | -                 |
+| LOG_AUDIT         | Warning or Critical | AUDIT $\{logContent\}"                                                | -                 |
+| LOG_SCRIPT        | Warning or Critical | SCRIPT $\{logContent\}"                                               | -                 |
