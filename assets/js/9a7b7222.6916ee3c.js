@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[7111],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15665],{
 
-/***/ 97219:
+/***/ 29650:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -22,27 +22,27 @@ const frontMatter = {
 	title: '트랜잭션 검색',
 	description: '개별 트랜잭션의 성능 속성을 기반으로 원하는 트랜잭션을 검색할 수 있습니다.',
 	tags: [
-		'.NET',
+		'Node.js',
 		'애플리케이션',
 		'트랜잭션'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/tx-profile",
+  "id": "nodejs/tx-profile",
   "title": "트랜잭션 검색",
   "description": "개별 트랜잭션의 성능 속성을 기반으로 원하는 트랜잭션을 검색할 수 있습니다.",
-  "source": "@site/docs/dotnet/tx-profile.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/tx-profile",
-  "permalink": "/whatap-docs/dotnet/tx-profile",
+  "source": "@site/docs/nodejs/tx-profile.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/tx-profile",
+  "permalink": "/whatap-docs/nodejs/tx-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/tx-profile.mdx",
+  "editUrl": "undefined/docs/nodejs/tx-profile.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "애플리케이션",
@@ -59,19 +59,19 @@ const metadata = {
     "title": "트랜잭션 검색",
     "description": "개별 트랜잭션의 성능 속성을 기반으로 원하는 트랜잭션을 검색할 수 있습니다.",
     "tags": [
-      ".NET",
+      "Node.js",
       "애플리케이션",
       "트랜잭션"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "멀티 트랜잭션 추적",
-    "permalink": "/whatap-docs/dotnet/analysis-trace-mtx"
+    "permalink": "/whatap-docs/nodejs/analysis-trace-mtx"
   },
   "next": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/dotnet/metrics-intro"
+    "permalink": "/whatap-docs/nodejs/metrics-intro"
   }
 };
 const assets = {
@@ -422,7 +422,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["기본 설정 상태의 에이전트는 로그인 ID 정보를 수집하지 않습니다. 로그인 ID 설정이 필요한 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "java/script-plugin#common-plugin",
+            href: "script-plugin#common-plugin",
             children: "다음 문서"
           }), "를 참조해 설정을 추가하세요."]
         })

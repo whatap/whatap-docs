@@ -422,7 +422,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["기본 설정 상태의 에이전트는 로그인 ID 정보를 수집하지 않습니다. 로그인 ID 설정이 필요한 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "java/script-plugin#common-plugin",
+            href: "script-plugin#common-plugin",
             children: "다음 문서"
           }), "를 참조해 설정을 추가하세요."]
         })
