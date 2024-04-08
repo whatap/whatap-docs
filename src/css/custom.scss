@@ -355,7 +355,9 @@ html[lang='ja-JP'] {
 .menu__list-item.newfunc > a::after {
   display: inline;
   content: 'New';
-  border-radius: 1px solid none;
+  border-radius: 4px;
+  padding: 0 3px;
+  border: 1px solid none;
   background-color: rgb(232, 225, 255);
   color: rgb(139, 82, 255);
   font-family: "Oleo Script";
