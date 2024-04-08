@@ -1114,6 +1114,22 @@ main {
       border: 1px solid #296cf2;
       color: #fff;
     }
+    .changelog2 {
+      --timeline-width: 4px;
+      --ring-size: 1rem;
+      --ring-border-width: var(--timeline-width);
+      --timeline-color: var(--border-color);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-column-gap: 2rem;
+    }
+    .changelog {
+      grid-area: content;
+      grid-row-start: content;
+      grid-column-start: content;
+      grid-row-end: content;
+      grid-column-end: content;
+    }
     code {
       vertical-align: baseline;
     }
@@ -1126,6 +1142,13 @@ main {
       background-color: #296cf2;
       color: #fff;
       border: none;
+    }
+    code.changelog-service {
+      background-color: rgb(177, 177, 177);
+      color: #fff;
+      // font-family: "Oleo Script";
+      border: 0.5px;
+      padding: 2px 5px 2px 5px;
     }
     code.history {
       background-color: rgb(177, 177, 177);

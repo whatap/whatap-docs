@@ -136,7 +136,15 @@ module.exports = Promise.resolve({
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
         },
-        blog: false,
+        // blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl: 
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          include: [ '**/*.mdx' ],
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
@@ -616,6 +624,9 @@ module.exports = Promise.resolve({
             docId: 'release-notes',
             position: 'left',
             label: '릴리스 노트',
+          },
+          {
+            to: 'blog', label: '신규 기능', position: 'left'
           },
           {
             type: 'localeDropdown',
