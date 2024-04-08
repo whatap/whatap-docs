@@ -91,25 +91,6 @@ module.exports = Promise.resolve({
       },
     ],
     [
-      '@whatap-docs/docusaurus-plugin-includes',
-      {
-        embeds: [
-          {
-            key: 'youtube',
-            embedFunction: function(code) {
-              return '<div class="video-container"><iframe width="800" height="500" type="text/html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/' + code + '"></iframe></div>'
-            }      
-          },
-          {
-            key: 'video',
-            embedFunction: function(code) {
-              return '<div class="video-container"><video type="video/mp4" autoplay="true" loop="true" muted="true" width="100%" height="auto" class="p-video"><source src="'+ code + '"/></video></div>'
-            }
-          }
-        ]
-      }
-    ],
-    [
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],

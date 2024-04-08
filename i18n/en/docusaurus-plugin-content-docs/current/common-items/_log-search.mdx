@@ -1,4 +1,8 @@
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+import Logagentoption from "../common-items/_log-agent-option.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -14,7 +18,7 @@ Home > Select Project > **_Dashboard_** > **_Log Search_**
 
 In **_Log Search_**, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted. 
 
-The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. {@include: ../common-items/_log-ui-main-term.mdx}
+The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. <Loguimainterm />
 
 <Xclude product='postgresql,mysql'>
 
@@ -40,35 +44,49 @@ The searched log data is imported to the dynamic page line by line. If the scrol
 
 - On the upper right of the ![number-s](/img/number-03.png) log table, select the <LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/> **_full screen_** icon, you can see the **_log_** and **_timestamp_** in the full screen.
 
-- {@include: ../common-items/_log-agent-option.mdx}
+- <Logagentoption />
 
 ## Checking the log content
 
-{@include: ../common-items/_log-contents-check.mdx}
+import Logcontentscheck from "../common-items/_log-contents-check.mdx";
+
+<Logcontentscheck />
 
 ## Filter{#log-search-filter}
 
 ### Apply Filter
 
-{@include: ../common-items/_log-filter-apply2.mdx} 
+import Logfilterapply2 from "../common-items/_log-filter-apply2.mdx";
+
+<Logfilterapply2 /> 
 
 ### Applying non-parsing keyword filters
 
-{@include: ../common-items/_log-filter-apply-non-parsing.mdx}
+import Logfilterapplynonparsing from "../common-items/_log-filter-apply-non-parsing.mdx";
+
+<Logfilterapplynonparsing />
 
 ### Modifying the filter
 
-{@include: ../common-items/_log-filter-modify.mdx}
+import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
+
+<Logfiltermodify />
 
 ### Search Key
 
-{@include: ../common-items/_log-filter-search-key.mdx}
+import Logfiltersearchkey from "../common-items/_log-filter-search-key.mdx";
+
+<Logfiltersearchkey />
 
 ### Filter input syntax{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx}  
+import Logfilterexpressionssearchkey from "../common-items/_log-filter-expressions-search-key.mdx";
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx}
+<Logfilterexpressionssearchkey />  
+
+import Logfilterexpressionscommons from "../common-items/_log-filter-expressions-commons.mdx";
+
+<Logfilterexpressionscommons />
 
 ## Log tagging options {#log-tag-options}
 
@@ -92,8 +110,12 @@ When you select a log tag, the following drop-down menu appears. You can find th
 
 ## Content highlighting {#content-highlight}
 
-{@include: ../common-items/_log-contents-highlight.mdx}
+import Logcontentshighlight from "../common-items/_log-contents-highlight.mdx";
+
+<Logcontentshighlight />
 
 ## Setting the table {#set-table}
 
-{@include: ../common-items/_log-ui-table-setting.mdx} 
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
+
+<Loguitablesetting /> 

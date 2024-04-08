@@ -11,19 +11,25 @@ tags:
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-{@include: ../common-items/_db-sql-static.mdx}
+import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
 
-{@include: ../common-items/_db-trend-by-query.mdx}  
+<Dbsqlstatic />
 
-{@include: ../common-items/_db-detail-view-query.mdx} 
+import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
 
-<!-- mysql, mariadb 지원 -->
+<Dbtrendbyquery />  
 
-<!-- {@include: ../common-items/_db-database-size.mdx} -->
+import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
 
-<!-- oracle, tibero -->
+<Dbdetailviewquery /> 
 
-<!-- {@include: ../common-items/_db-tablespace-size.mdx}-->
+{/* mysql, mariadb 지원 */}
+
+{/* {@include: ../common-items/_db-database-size.mdx} */}
+
+{/* oracle, tibero */}
+
+{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
 
 ## テーブルスペースサイズ
 
@@ -53,4 +59,6 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 ## SGAサイズ
 
-{@include: ../common-items/_db-sga-size.mdx}
+import Dbsgasize from "../common-items/_db-sga-size.mdx";
+
+<Dbsgasize />

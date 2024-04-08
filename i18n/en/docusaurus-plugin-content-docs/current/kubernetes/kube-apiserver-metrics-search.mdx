@@ -13,7 +13,9 @@ toc_max_heading_level: 2
 
 Home > Select Cluster Project > <Cmdname sid="cluster" className="uitext" /> > **_kube-apiserver Metrics Search_**
 
-{@include: ../common-items/_k8s-kube-apiserver-common.mdx}
+import K8skubeapiservercommon from "../common-items/_k8s-kube-apiserver-common.mdx";
+
+<K8skubeapiservercommon />
 
 The kube-apiserver is a component that handles the requests inside and outside the **Control Plane**. You can see the original data consistency of the metrics collected from kube-apiserver through the **_View kube-apiserver metrics_** menu. 
 
@@ -33,12 +35,18 @@ The **_View kube-apiserver metrics_** menu provides the feature to query the ori
 
 ### Filtering
 
-{@include: ../common-items/_k8s-list-filter.mdx}
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
+
+<K8slistfilter />
 
 ## Enabling the kube-apiserver monitoring
 
-{@include: ../common-items/_k8s-kube-apiserver-monitoring.mdx}
+import K8skubeapiservermonitoring from "../common-items/_k8s-kube-apiserver-monitoring.mdx";
+
+<K8skubeapiservermonitoring />
 
 ## kube-apiserver metrics
 
-{@include: ../common-items/_k8s-kube-apiserver-metric.mdx}
+import K8skubeapiservermetric from "../common-items/_k8s-kube-apiserver-metric.mdx";
+
+<K8skubeapiservermetric />

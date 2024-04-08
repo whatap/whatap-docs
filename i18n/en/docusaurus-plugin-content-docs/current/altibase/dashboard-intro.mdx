@@ -9,12 +9,20 @@ tags:
   - Database Monitoring
 ---
 
-{@include: ../common-items/_db-dashboard-intro.mdx}
+import Dbdashboardintro from "../common-items/_db-dashboard-intro.mdx";
 
-{@include: ../common-items/_db-dashboard-instance-list.mdx}
+<Dbdashboardintro />
 
-{@include: ../common-items/_db-dashboard-instance-monitoring.mdx}  
+import Dbdashboardinstancelist from "../common-items/_db-dashboard-instance-list.mdx";
 
-<!-- {@include: ../common-items/_db-dashboard-multi-instance-monitoring.mdx}   -->
+<Dbdashboardinstancelist />
 
-{@include: ../common-items/_db-dashboard-cloud-watch.mdx}  
+import Dbdashboardinstancemonitoring from "../common-items/_db-dashboard-instance-monitoring.mdx";
+
+<Dbdashboardinstancemonitoring />  
+
+{/* {@include: ../common-items/_db-dashboard-multi-instance-monitoring.mdx}   */}
+
+import Dbdashboardcloudwatch from "../common-items/_db-dashboard-cloud-watch.mdx";
+
+<Dbdashboardcloudwatch />  

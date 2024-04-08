@@ -11,7 +11,12 @@ toc_max_heading_level: 3
 draft: true
 ---
 
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+import Logfilterapply2 from "../common-items/_log-filter-apply2.mdx";
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -27,7 +32,7 @@ draft: true
 
 **_ログ検索_**メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。 複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータを抽出します。 
 
-動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。 {@include: ../common-items/_log-ui-main-term.mdx}
+動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。 <Loguimainterm />
 
 <Xclude product='postgresql,mysql'>
 
@@ -77,7 +82,9 @@ draft: true
 
 ## ログContentの確認
 
-{@include: ../common-items/_log-ui-log-content.mdx}
+import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
+
+<Loguilogcontent />
 
 - ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。 ![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体Contentを確認することができます。
 
@@ -87,7 +94,7 @@ draft: true
 
 ### フィルター適用
 
-![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。 右側から、{@include: ../common-items/_log-filter-apply2.mdx} 
+![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。 右側から、<Logfilterapply2 /> 
 
 ### 構文解析されていないキーワードのフィルター適用
 
@@ -117,7 +124,9 @@ draft: true
 
 ### フィルター修正
 
-{@include: ../common-items/_log-filter-modify.mdx} 
+import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
+
+<Logfiltermodify /> 
 
 ### 検索キー(Search Key)
 
@@ -137,9 +146,13 @@ draft: true
 
 ### フィルター入力文法{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx} 
+import Logfilterexpressionssearchkey from "../common-items/_log-filter-expressions-search-key.mdx";
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx} 
+<Logfilterexpressionssearchkey /> 
+
+import Logfilterexpressionscommons from "../common-items/_log-filter-expressions-commons.mdx";
+
+<Logfilterexpressionscommons /> 
 
 ## ログのタグオプション
 
@@ -203,4 +216,4 @@ draft: true
 
 ## テーブル設定
 
-- ![number-s](/img/number-03.png)領域の右側{@include: ../common-items/_log-ui-table-setting.mdx}
+- ![number-s](/img/number-03.png)領域の右側<Loguitablesetting />

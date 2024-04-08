@@ -72,10 +72,16 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 ### Java 17バージョン以降
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
 
-{@include: _set-heap-memory.mdx} 
+<Java17 />
+
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

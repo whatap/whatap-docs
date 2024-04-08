@@ -70,7 +70,9 @@ tags:
 
 :::note
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
@@ -86,8 +88,12 @@ java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.Rename -from whatap.agent-X.Y
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

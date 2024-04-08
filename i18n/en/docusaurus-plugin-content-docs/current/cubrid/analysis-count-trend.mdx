@@ -11,18 +11,26 @@ tags:
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-<!-- 카운트 추이 -->
+{/* 카운트 추이 */}
 
-{@include: ../common-items/_db-count-trend-desc.mdx}  
+import Dbcounttrenddesc from "../common-items/_db-count-trend-desc.mdx";
 
-<!-- 카운트 추이 비교 -->
+<Dbcounttrenddesc />  
 
-{@include: ../common-items/_db-compare-count-trend-v2.mdx}  
+{/* 카운트 추이 비교 */}
 
-<!-- 차트 및 액티브 세션 영역 활용하기 -->
+import Dbcomparecounttrendv2 from "../common-items/_db-compare-count-trend-v2.mdx";
 
-{@include: ../common-items/_db-using-chart-activesession-area.mdx}  
+<Dbcomparecounttrendv2 />  
 
-<!-- 컬럼 정보 안내 -->
+{/* 차트 및 액티브 세션 영역 활용하기 */}
 
-{@include: ../common-items/_db-cubrid-info-of-column.mdx} 
+import Dbusingchartactivesessionarea from "../common-items/_db-using-chart-activesession-area.mdx";
+
+<Dbusingchartactivesessionarea />  
+
+{/* 컬럼 정보 안내 */}
+
+import Dbcubridinfoofcolumn from "../common-items/_db-cubrid-info-of-column.mdx";
+
+<Dbcubridinfoofcolumn /> 

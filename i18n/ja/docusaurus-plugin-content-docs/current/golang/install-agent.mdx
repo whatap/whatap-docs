@@ -25,9 +25,13 @@ tags:
 
 WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ja/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+<Createprojectv2 />
+
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 /> 
 
 ## エージェントダウンロード
 
@@ -195,9 +199,11 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-<!--Go 라이브러리 설정하기-->
+{/*Go 라이브러리 설정하기*/}
 
-{@include: ../common-items/_go-docker-setting-library.mdx}
+import Godockersettinglibrary from "../common-items/_go-docker-setting-library.mdx";
+
+<Godockersettinglibrary />
 
 ## モニタリングの開始
 

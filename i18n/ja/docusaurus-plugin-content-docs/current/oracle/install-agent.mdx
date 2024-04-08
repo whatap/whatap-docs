@@ -15,17 +15,25 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />   
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx}
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## WhaTapデータベースエージェントのダウンロード
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
+
+<Dbinstallagentsteps /> 
 
 3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
@@ -45,15 +53,19 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
    **Oracle 10g R2バージョン以降**：https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
 
-<!-- 공통 Notes -->
+{/* 공통 Notes */}
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
-<!-- 모니터링용 계정 생성 -->
+<Dbinstallagentcommonnotes />
 
-{@include: ../common-items/_db-create-monitoring-account.mdx}
+{/* 모니터링용 계정 생성 */}
 
-<!-- Oracle -->
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
+
+{/* Oracle */}
 
 ```bash showLineNumbers
 # 一般的な場合
@@ -75,12 +87,18 @@ grant alter system to whatap
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx} 
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
 
-<!--## 에이전트 실행-->
+<Dbcreatedbuserfilebody /> 
 
-{@include: ../common-items/_db-run-agent.mdx} 
+{/*## 에이전트 실행*/}
 
-<!--## XOS 에이전트 설치-->
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx} 
+<Dbrunagent /> 
+
+{/*## XOS 에이전트 설치*/}
+
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent /> 

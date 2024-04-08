@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に収集します。収集するサービスに該当するOracle Cloud Monitorネームスペースを5分間ごとの目的の統計を選択して収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Oracle Cloud APIの登録時に必要なssh公開キーを自動生成し、安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## モニタリング手順
 
@@ -67,11 +69,15 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 ### ネームスペースおよび収集サイクルの選択
 
-{@include: ../common-items/_namespace-collect.mdx}  
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />  
 
 #### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### ネームスペース
 
@@ -124,7 +130,9 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 ### リージョン、メトリクス、統計を選択
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+![number 2](/img/number-02.png) <Regionmetricstats />
 
 <ImgLang img='oci_region.png' desc='Oracle Cloud Monitor - Region, Metric, Stats' />
 

@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Naver Cloud Monitoring は、API連携によるメトリックを周期的に収集します。 収集するサービスに対応するNaver Cloud Monitoringネームスペースを5分周期の目的で統計を選択して収集します。 モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリンを開始できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## モニタリング手順
 
@@ -35,11 +37,15 @@ AccessKeyとSecretをWhaTapに入力します。
 
 ### ネームスペースおよび収集サイクルの選択
 
-{@include: ../common-items/_namespace-collect.mdx} 
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect /> 
 
 #### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### ネームスペース
 
@@ -56,7 +62,9 @@ AccessKeyとSecretをWhaTapに入力します。
 
 ### リージョン、メトリクス、統計を選択
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+![number 2](/img/number-02.png) <Regionmetricstats />
 
 <ImgLang img='ncloud_region_dialog.png' desc='Ncloud Monitoring - ResourceGroup, Metric, Stats' />
 

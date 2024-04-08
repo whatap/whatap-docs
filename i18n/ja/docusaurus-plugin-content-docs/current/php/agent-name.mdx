@@ -9,9 +9,13 @@ tags:
   - アプリケーション
 ---
 
-{@include: ../common-items/_apm-name-description.mdx}
+import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
-{@include: ../common-items/_agent-name-warning.mdx}
+<Apmnamedescription />
+
+import Agentnamewarning from "../common-items/_agent-name-warning.mdx";
+
+<Agentnamewarning />
 
 :::note
 
@@ -42,16 +46,18 @@ WhaTapエージェントがアプリケーションサーバーを識別する�
 
   アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。  
 
-{@include: ../common-items/_php-restart-whatap-service.mdx}
+import Phprestartwhatapservice from "../common-items/_php-restart-whatap-service.mdx";
+
+<Phprestartwhatapservice />
 
 - **whatap.app_name** <span class='type'>String</span>
 
   アプリケーションを識別するためのエージェント名(ONAME)の構成要素として、`object_name`の`{type}`に対応する値です。  
 
-{@include: ../common-items/_php-restart-whatap-service.mdx}
+<Phprestartwhatapservice />
 
 - **whatap.app_process_name** <span class='type'>String</span>
 
   アプリケーションを識別するためのエージェント名 (ONAME) の構成要素です。アプリケーションプロセス名でアプリケーションサーバーのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に対応対応する値です。  
 
-{@include: ../common-items/_php-restart-whatap-service.mdx}
+<Phprestartwhatapservice />

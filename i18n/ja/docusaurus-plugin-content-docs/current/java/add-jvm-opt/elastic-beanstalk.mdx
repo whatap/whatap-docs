@@ -13,7 +13,9 @@ tags:
 
 **Elastic Beanstalk**を使用してデプロイする場合、WhaTapエージェントを適用します。 
 
-{@include: _pass-note.mdx}
+import Passnote from "./_pass-note.mdx";
+
+<Passnote />
 
 1. Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
@@ -80,7 +82,9 @@ tags:
 
 :::note
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
@@ -90,8 +94,12 @@ tags:
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 
