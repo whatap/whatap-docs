@@ -143,6 +143,8 @@ module.exports = Promise.resolve({
           // Remove this to remove the "edit this page" links.
           editUrl: 
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: '새로운 기능',
+          blogSidebarCount: 'ALL',
           include: [ '**/*.mdx' ],
         },
         theme: {
@@ -626,7 +628,7 @@ module.exports = Promise.resolve({
             label: '릴리스 노트',
           },
           {
-            to: 'blog', label: '신규 기능', position: 'left'
+            to: 'blog', label: '새로운 기능', position: 'left'
           },
           {
             type: 'localeDropdown',
