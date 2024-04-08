@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Azure Monitor collects metrics periodically through API integration. It collects the target stats every 5 minutes from the Azure Monitor namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently with Azure registerd app.
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## Monitoring procedure
 
@@ -44,11 +46,15 @@ Enter the **_application ID_**, **_tenant ID_**, and **_Azure secret key_** into
 
 ### Selecting the namespace and collection cycle
 
-{@include: ../common-items/_namespace-collect.mdx}  
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />  
 
 #### Whatap Data Interval
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### Namespace
 

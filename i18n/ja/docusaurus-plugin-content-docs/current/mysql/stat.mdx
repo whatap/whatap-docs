@@ -8,30 +8,46 @@ tags:
   - 統計
 ---
 
-<!-- SQL 통계-->
+{/* SQL 통계*/}
 
-{@include: ../common-items/_db-stat-sql-desc.mdx} 
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-<!-- SQL 통계 기본 사용 안내 -->
+<Dbstatsqldesc /> 
 
-{@include: ../common-items/_db-stat-sql-basic.mdx} 
+{/* SQL 통계 기본 사용 안내 */}
 
-<!-- 쿼리별 수행 추이, 자세히 보기-->
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx} 
+<Dbstatsqlbasic /> 
 
-{@include: ../common-items/_db-stat-sql-view-query-details-summary.mdx}
+{/* 쿼리별 수행 추이, 자세히 보기*/}
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
+
+<Dbstatsqlviewquery /> 
+
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
+
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
 
 ## 詳細情報を確認する{#session-details-info}
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+import Dbstatsqldetails from "../common-items/_db-stat-sql-details.mdx";
 
-<!-- 필터 조건추가하기-->
+<Dbstatsqldetails />
 
-{@include: ../common-items/_db-sql-filter.mdx}
+{/* 필터 조건추가하기*/}
+
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter />
 
 ## テーブルカラムの設定{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

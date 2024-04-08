@@ -72,10 +72,16 @@ The `ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1` entry is used to 
 
 ### Java 17 or later
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
 
-{@include: _set-heap-memory.mdx} 
+<Java17 />
+
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## Starting the monitoring
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

@@ -7,13 +7,17 @@ tags:
   - トランザクション
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 エージェントでトランザクションのパフォーマンスを追跡および設定するため、次のオプションを提供します。
 
 ## トランザクショントレーシング
 
-{@include: ../common-items/_transaction-profiling-common.mdx}
+import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
+
+<Transactionprofilingcommon />
 
 - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
@@ -21,7 +25,9 @@ tags:
 
   プロファイルにエラー関連情報を表示するステップを追加できます。
 
-{@include: ../common-items/_transaction-profile-active-color.mdx}
+import Transactionprofileactivecolor from "../common-items/_transaction-profile-active-color.mdx";
+
+<Transactionprofileactivecolor />
 
 - **hook_method_patterns** <span class='type'>String</span>
 
@@ -95,9 +101,13 @@ tags:
 
 ## HTTPトランザクションの追跡
 
-{@include: ../common-items/_transaction-trace-common.mdx} 
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
 
-{@include: ../common-items/_transaction-profile-http.mdx} 
+<Transactiontracecommon /> 
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp /> 
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 

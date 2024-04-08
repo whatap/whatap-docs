@@ -1,3 +1,5 @@
+import Phprestartapply from "../common-items/_php-restart-apply.mdx";
+
 - **whatap.profile_step_normal_count** <span class='type'>Int</span>
 
   デフォルト値 `1000`
@@ -16,7 +18,7 @@
 
   基本ステップの収集数を超えるた場合は、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の`profile_step_normal_count`が800の場合、最大200個のステップが収集されます。
 
-- **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
+- **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> {/* 문장 부자연스러움 */}
 
   デフォルト値`100`
 
@@ -44,7 +46,7 @@
 
   `compile_file`、`compile_string` 関数が追跡されるかどうかを設定します。PHPの内部関数である`compile_file`、`compile_string` 関数はスクリプトを実行する前にコンパイルする関数で、Main、include、requireおよびautoloadスクリプトのコンパイル時間およびスクリプトファイルのパスと実行時間を確認できます。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
@@ -58,7 +60,7 @@
 
   :::
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
@@ -66,7 +68,7 @@
 
   実行時間が`whatap.profile_method_time`の設定値(デフォルト値`1秒`)を超えるユーザ関数の情報をトランザクション詳細情報を確認できます。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
@@ -74,7 +76,7 @@
 
   `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
@@ -82,7 +84,7 @@
 
   ユーザー関数のスタック情報をトランザクションの詳細から確認できます。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
@@ -90,15 +92,15 @@
 
   PHP内部関数を追跡するかどうかを設定します。`whatap.profile_internal_method_time`の設定値(デフォルト値`1秒`)より長くかかる場合のみ追跡します。 
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
-- **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
+- **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> {/* 두 개가 어떻게 다른지? 0309 수정완*/}
 
   デフォルト値 `1000`
 
   PHP内部関数を追跡する場合、(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
 
@@ -106,7 +108,7 @@
 
   PHPの内部関数を追跡する場合、(`whatap.profile_internal_method_enabled`)追加で関数のパラメータ情報を収集します。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+<Phprestartapply />
 
 - **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
 

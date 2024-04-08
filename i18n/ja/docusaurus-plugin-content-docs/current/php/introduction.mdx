@@ -14,10 +14,12 @@ tags:
 import InDoc from '@site/src/components/InDoc.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 
-<!-- PHP 개요 들어갈 자리 -->
+{/* PHP 개요 들어갈 자리 */}
 
 WhaTapのモニタリングサービスを使用して、PHPウェブアプリケーションの性能遅延の原因を分析できます。PHPの最新バージョン、Alpine Linuxなど様々なオペレーティングシステムに適用できます。また、トレースでSQL、HTTP呼び出し、Redis呼び出し情報を確認することができます。 
 
-<!-- <Videos url="https://www.whatap.io/video/product/ko/app_php.mp4" /> -->
+{/* <Videos url="https://www.whatap.io/video/product/ko/app_php.mp4" /> */}
 
-{@include: ../common-items/_apm-common-intro.mdx}  
+import Apmcommonintro from "../common-items/_apm-common-intro.mdx";
+
+<Apmcommonintro />  
