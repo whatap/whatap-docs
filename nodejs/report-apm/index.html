@@ -15,8 +15,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.00479e06.css">
-<script src="/whatap-docs/assets/js/runtime~main.1cb49d57.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.a68cdb0a.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.c9444ae6.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.e46c336e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -72,9 +72,10 @@
 <p><img loading="lazy" src="/whatap-docs/img/app_daily_report_dau-process.png" alt="" width="1200" height="919"></p>
 <p><strong>성능 추이 차트</strong>를 통해 주요 지표들을 시각화하여 볼 수 있습니다.</p>
 <p><strong>성능 추이 차트</strong>에서 볼 수 있는 지표로는 <strong>동시접속 사용자</strong>, <strong>시간당 방문자 수</strong>, <strong>처리량</strong>(TPS), <strong>평균 응답시간</strong>, <strong>CPU 사용률</strong>, <strong>힙 사용량</strong>, <strong>에러 건수</strong>, <strong>일간 트랜잭션 분포도</strong>가 있습니다. 각 그래프에서는 해당 지표가 가장 높았던 시간과 수치를 함께 확인할 수 있습니다.</p>
+<!-- -->
 <p>차트 우측 상단의 <em><strong>CSV</strong></em> 버튼을 이용하여 데이터를 엑셀 파일로 다운로드 할 수 있습니다.</p>
 <p><img loading="lazy" src="/whatap-docs/img/app_daily_report_03.png" alt="" width="1200" height="479"></p>
-<p>일간 트랜잭션 분포도에서는 시간대별 트랜잭션 분포를 한눈에 확인할 수 있습니다. 그래프의 x축은 각 트랜잭션의 종료 시간, y축은 응답시간(초)을 의미합니다. 정  상 트랜잭션의 경우 <span class="ntrs">파란색</span>으로 표시되고, 에러가 발생한 경우 <span class="etrs">빨간색</span>으로 표시됩니다.</p>
+<p>일간 트랜잭션 분포도에서는 시간대별 트랜잭션 분포를 한눈에 확인할 수 있습니다. 그래프의 x축은 각 트랜잭션의 종료 시간, y축은 응답시간(초)을 의미합니 다. 정상 트랜잭션의 경우 <span class="ntrs">파란색</span>으로 표시되고, 에러가 발생한 경우 <span class="etrs">빨간색</span>으로 표시됩니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션별-현황">애플리케이션별 현황<a href="#애플리케이션별-현황" class="hash-link" aria-label="애플리케이션별 현황에 대한 직접 링크" title="애플리케이션별 현황에 대한 직접 링크">​</a></h3>
 <p><img loading="lazy" src="/whatap-docs/img/app_daily_report_04.png" alt="" width="1200" height="297"></p>
 <p>모니터링 대상별로 <strong>피크타임 성능</strong>과 <strong>일일 평균 성능</strong>을 확인할 수 있습니다. <strong>액티브 건수</strong>는 진행 중인 트랜잭션 건수를 말합니다.</p>
@@ -91,7 +92,7 @@
 <li>
 <p>예시</p>
 <p><code>4월 25일 00시 00분</code> ~ <code>23시 59분</code> 데이터 조회 → <code>4월 22일 00시 00분</code> ~ <code>4월 24일 23시 59분</code> 데이터와 비교</p>
-<p>해당 수치가 10% 이상인 경우 <span class="ov10">붉은색</span>으로, 5%~10% 사이인 경우 <span class="ov5ud10"> 주황색</span>으로 표시됩니다. 5% 미만의 증가율은 표시하지 않습니다.</p>
+<p>해당 수치가 10% 이상인 경우 <span class="ov10">붉은색</span>으로, 5%~10% 사이인 경우 <span class="ov5ud10">주황색</span>으로 표시됩니다. 5% 미만의 증가율은 표시하지 않습니다.</p>
 </li>
 </ul></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="주간-애플리케이션-보고서"><em><strong>주간 애플리케이션 보고서</strong></em><a href="#주간-애플리케이션-보고서" class="hash-link" aria-label="주간-애플리케이션-보고서에 대한 직접 링크" title="주간-애플리케이션-보고서에 대한 직접 링크">​</a></h2>
@@ -114,7 +115,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="가동률">가동률<a href="#가동률" class="hash-link" aria-label="가동률에 대한 직접 링크" title="가동률에 대한 직접 링크">​</a></h3>
 <p><img loading="lazy" src="/whatap-docs/img/app_weekly_report_02.png" alt="" width="1200" height="318"></p>
-<p>모니터링 대상별 가동률을 일자별로 확인할 수 있으며, 주간 평균을 확인할 수 있습니다. 데이터가 없으면 <strong>-</strong> 로 표시되며, 데이터는 있으나 그 값이 작은 경우 <strong>0</strong> 으로 표시될 수 있습니다.</p>
+<p>모니터링 대상별 가동률을 일자별로 확인할 수 있으며, 주간 평균을 확인할 수 있습니다. 데이터가 없으면 <strong>-</strong> 로 표시되며, 데이터는   있으나 그 값이 작은 경우 <strong>0</strong> 으로 표시될 수 있습니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="성능-추이-차트-1">성능 추이 차트<a href="#성능-추이-차트-1" class="hash-link" aria-label="성능 추이 차트에 대한 직접 링크" title="성능 추이 차트에 대한 직접 링크">​</a></h3>
 <p><img loading="lazy" src="/whatap-docs/img/app_weekly_report_03.png" alt="" width="1200" height="1562"></p>
 <p>주간 애플리케이션 보고서의 차트에는 <strong>방문자 수</strong>, <strong>APDEX*100</strong>, <strong>실시간 사용자</strong>, <strong>트랜잭션 수</strong>, <strong>응답시간</strong>, <strong>처리량</strong>, <strong>액티브 트랜잭션</strong>, <strong>CPU 사용률</strong>, <strong>Heap 사용량</strong>이 있습니다.</p>
@@ -141,7 +142,7 @@
 <p>조회 주와 조회 전주의 트랜잭션 수를 비교한 수치이며, 증감률은 이를 백분율로 계산한 수치입니다.</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="에러-건수">에러 건수<a href="#에러-건수" class="hash-link" aria-label="에러 건수에 대한 직접 링크" title="에러 건수에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="에러-건수">에러 건수<a href="#에러-건 수" class="hash-link" aria-label="에러 건수에 대한 직접 링크" title="에러 건수에 대한 직접 링크">​</a></h4>
 <p><img loading="lazy" src="/whatap-docs/img/app_weekly_report_05.png" alt="" width="1200" height="668"></p>
 <p>일주일 간 들어온 트랜잭션을 에러 건수를 기준으로 내림차순 정렬한 결과입니다.</p>
 <ul>
@@ -157,11 +158,14 @@
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="평균-응답-시간">평균 응답 시간<a href="#평균-응답-시간" class="hash-link" aria-label="평균 응답 시간에 대한 직접 링크" title="평균 응답 시간에 대한 직접 링크">​</a></h4>
 <p><img loading="lazy" src="/whatap-docs/img/app_weekly_report_06.png" alt="" width="1200" height="662"></p>
 <p>일주일 간 들어온 트랜잭션을 평균 응답시간을 기준으로 내림차순 정렬한 결과입니다.</p>
+<!-- -->
 <ul>
 <li>
 <p><strong>평균 시간</strong></p>
 <p>애플리케이션 서버가 사용자에게 요청 결과를 반환하는데 걸린 시간을 의미하며, 단위는 밀리 세컨드(ms)로 표시됩니다.</p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>증감 시간</strong></p>
 <p>조회 주와 조회 전주의 응답 시간을 비교한 수치이며, 증감률은 이를 백분율로 계산한 수치입니다.</p>
@@ -196,16 +200,17 @@
 </li>
 <li>
 <p><strong>증감건</strong></p>
-<p>조회 주와 조회 전 주의 에러  발생 건수를 비교한 수치이며, 증감률은 이를 백분율로 계산한 수치입니다.</p>
+<p>조회 주와 조회 전 주의 에러 발생 건수를 비교한 수치이며, 증감률은 이를 백분율로 계산한 수치입니다.</p>
 </li>
 </ul>
+<!-- -->
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><strong>증감률 색상별 의미</strong></p><ul>
 <li><span class="ntrs">파란색</span>: 증감율이 음수인 경우로 전 주에 비해 감소했음을 의미합니다.</li>
 <li><span class="ov5ud10">주황색</span>: 증감율이 0% 이상 10% 미만인 경우를 의미합니다.</li>
 <li><span class="etrs">빨간색</span>: 증감율이 10% 이상이거나, 전 주에는 없었던 새로운 데이터인 경우를 의미합니다.</li>
 </ul></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="월간-애플리케이션-보고서"><em><strong>월간 애플리케이션 보고서</strong></em><a href="#월간-애플리케이션-보고서" class="hash-link" aria-label="월간-애플리케이션-보고서에 대한 직접 링크" title="월간-애플리케이션-보고서에 대한 직접 링크">​</a></h2>
-<p><em><strong>월간 애플리케이션 보고서</strong></em>는 한 달 동안의 애플리케이션 성능을 수치와 차트로 확인할 수 있는 보고서입니다. 시작일을 직접 설정할 수 있으며, 조회 당일 기준 30일 전부터 조회 가능합니다.</p>
+<p><em><strong>월간 애플리케이션 보고서</strong></em>는 한 달 동안의 애플리케이션 성능을 수치와 차트로 확인할 수 있는 보고서입니다. 시작일을 직접 설정할 수 있으며, 조회 당일 기준 30일 전부터  조회 가능합니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="개요-2">개요<a href="#개요-2" class="hash-link" aria-label="개요에 대한 직접 링크" title="개요에 대한 직접 링크">​</a></h3>
 <p><img loading="lazy" src="/whatap-docs/img/app_monthly_report_01.png" alt="" width="1200" height="95"></p>
 <p><strong>개요</strong>에서 한 달간의 전체 <strong>트랜잭션 건수</strong>, <strong>사용자 수</strong>, <strong>가동률</strong>, <strong>애플리케이션 수</strong>, <strong>코어 수</strong>, <strong>Apdex*100</strong> 수치를 한 번에 확인할 수 있습니다.</p>
@@ -280,7 +285,7 @@
 </li>
 <li>
 <p><strong>CPU SYS 사용률</strong></p>
-<p>하루 동안의 CPU SYS 사용량 %를 일  자별로 나타낸 그래프입니다.</p>
+<p>하루 동안의 CPU SYS 사용량 %를 일자별로 나타낸 그래프입니다.</p>
 </li>
 <li>
 <p><strong>프로세스 CPU 사용률</strong></p>
@@ -296,7 +301,7 @@
 </blockquote></div></div>
 <p>차트 우측 상단의 <em><strong>CSV</strong></em> 버튼을 이용하여 데이터를 엑셀 파일로 다운로드 할 수 있습니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="트랜잭션-top-10-2">트랜잭션 TOP 10<a href="#트랜잭션-top-10-2" class="hash-link" aria-label="트랜잭션 TOP 10에 대한 직접 링크" title="트랜잭션 TOP 10에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="트랜잭션-수-1">트랜잭션 수<a href="#트랜잭션-수-1" class="hash-link" aria-label="트랜잭션 수에 대한 직접 링크" title="트랜잭션 수에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="트랜 잭션-수-1">트랜잭션 수<a href="#트랜잭션-수-1" class="hash-link" aria-label="트랜잭션 수에 대한 직접 링크" title="트랜잭션 수에 대한 직접 링크">​</a></h4>
 <p><img loading="lazy" src="/whatap-docs/img/app_monthly_report_04.png" alt="" width="1200" height="668"></p>
 <p>한 달 동안 들어온 트랜잭션을 트랜잭션 수를 기준으로 내림차순 정렬한 결과입니다.</p>
 <ul>
@@ -330,6 +335,8 @@
 <p><strong>평균 시간</strong></p>
 <p>애플리케이션 서버가 사용자에게 요청 결과를 반환하는데 걸린 시간을 의미하며, 단위는 밀리 세컨드(ms)로 표시됩니다.</p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>증감 시간</strong></p>
 <p>조회 당월과 조회 전월의 응답 시간을 비교한 수치이며, 증감률은 이를 백분율로 계산한 수치입니다.</p>

@@ -15,8 +15,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.00479e06.css">
-<script src="/whatap-docs/assets/js/runtime~main.1cb49d57.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.a68cdb0a.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.c9444ae6.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.e46c336e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -74,6 +74,7 @@
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 </ol>
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="php-추가-ini-설정-경로-확인-불가">PHP 추가 ini 설정 경로 확인 불가<a href="#php-추가-ini-설정-경로-확인-불가" class="hash-link" aria-label="PHP 추가 ini 설정 경로 확인 불가에 대한 직접 링크" title="PHP 추가 ini 설정 경로 확인 불가에 대한 직접 링크">​</a></h2>
 <p>PHP 컴파일(Compile) 설치 옵션 <code>--with-config-file-scan-dir=PATH</code>이 설정 안된 경우에 발생합니다.</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ sudo php -i | grep &#x27;.ini files&#x27;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">Scan this dir for additional .ini files =&gt; (none)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -90,17 +91,27 @@
 <li>whatap-php 서비스를 재시작하세요.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="error-not-found-php-api">Error: Not found PHP API<a href="#error-not-found-php-api" class="hash-link" aria-label="Error: Not found PHP API에 대한 직접 링크" title="Error: Not found PHP API에 대한 직접 링크">​</a></h3>
+<!-- -->
+<!-- -->
 <p>PHP 명령어(CLI)를 찾지 못하는 경우 발생합니다.</p>
 <p><a href="#check-php-cli-path">PHP 명령어(CLI)의 위치</a>를 정확히 확인하고 <a href="#extension-modul-manual-setting">PHP 확장 모듈 및 whatap-php 서비스 선택 설치</a> 항목을 진행하세요.</p>
+<!-- -->
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">Check PHP API version</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ sudo php -i | grep &#x27;PHP API&#x27;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">PHP API =&gt; 20100412</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="error-not-found-php-ini-directory">Error: Not found PHP ini directory<a href="#error-not-found-php-ini-directory" class="hash-link" aria-label="Error: Not found PHP ini directory에 대한 직접 링크" title="Error: Not found PHP ini directory에 대한 직접 링크">​</a></h2>
+<!-- -->
+<!-- -->
+<!-- -->
 <p>PHP 환경 중 <code>Scan this dir for additional .ini files</code> 항목의 값을 확인하지 못 한 경우 발생합니다. PHP 컴파일 설치 옵션 <code>--with-config-file-scan-dir=PATH</code>이 설정되지 않은 경우 해당 환경정보가 없습니다.</p>
 <p>다음 설명서를 참조하여 <a href="#check-php-cli-path">PHP 명령어(CLI)의 위치</a>를 정확히 확인하고 <a href="#extension-modul-manual-setting">PHP 확장 모듈 및 whatap-php 서비스 선택 설치</a> 항목을 진행하세요.</p>
+<!-- -->
+<!-- -->
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ sudo php -i | grep &#x27;.ini files&#x27;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">Scan this dir for additional .ini files =&gt; (none)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="응답-시간-분포도에-트랜잭션이-표시되지-않는-경우">응답 시간 분포도에 트랜잭션이 표시되지 않는 경우<a href="#응답-시간-분포도에-트랜잭션이-표시되지-않는-경우" class="hash-link" aria-label="응답 시간 분포도에 트랜잭션이 표시되지 않는 경우에 대한 직접 링크" title="응답 시간 분포도에 트랜잭션이 표시되지 않는 경우에 대한 직접 링크">​</a></h2>
 <p>CPU와 Memory 그래프를 볼 수 있지만 응답 시간 분포도 즉 히트맵을 볼 수 없는 현상은 다음과 같은 경우에 발생합니다.</p>
 <ul>
-<li>에이전트가 수집 서버와 정상적으로 연결되었으나 트레이서가 정상적으로 PHP 확장 모듈에 적용되지 않은 경우</li>
+<li>에이전트가 수집 서버와 정상적으로 연결되었으나   트레이서가 정상적으로 PHP 확장 모듈에 적용되지 않은 경우</li>
 <li>설정 후 Apache 및 PHP-FPM 서비스를 재시작하지 않은 경우</li>
 </ul>
 <ol>
@@ -116,11 +127,14 @@
 <p>다음 설명서를 참조하여 <a href="#check-php-cli-path">PHP 명령어(CLI) 경로</a>, <a href="#check-php-extension-module">PHP 확장 모듈 경로</a>, <a href="#php-ini-path">PHP 추가 ini 설정 경로</a> 항목들을 확인하세요.</p>
 </li>
 </ol>
+<!-- -->
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="segmentation-fault-sig-bus-error">Segmentation fault, Sig bus error<a href="#segmentation-fault-sig-bus-error" class="hash-link" aria-label="Segmentation fault, Sig bus error에 대한 직접 링크" title="Segmentation fault, Sig bus error에 대한 직접 링크">​</a></h2>
+<!-- -->
 <p>PHP 모니터링을 적용한 후 서비스에 오류가 발생할 경우 Apache 또는 PHP-FPM의 error log를 확인하세요.</p>
 <p>error log 내용 중 <code>segmentation fault</code>, <code>sig bus</code> 등의 오류 문구가 있는지 확인하세요. <code>kill child process</code>, <code>exit child</code>, <code>exit process</code> 등의 문구와 같이 발생합니다.</p>
 <p>해당 오류가 발생하는 경우는 PHP Extension 모듈인 <em>whatap.so</em> 모듈에서 충돌이 발생하는 것으로 볼 수 있습니다. PHP Extension 모듈인 <em>whatap.so</em> 를 중지한 후에 Apache 또는 PHP-FPM을 재시작하세요.</p>
-<p>서비스에 영향을 주지 않는 환경에서 Apache 및 PHP-FPM에 <code>Core dump</code> 설정을 추가  한 후 <em>whatap.so</em>를 다시 로딩하세요. 이후 오류가 발생하면 <em>dump</em> 파일이 생성됩니다. <em>dump</em> 파일을 gdb로 분석하여 원인을 해결하세요.</p>
+<p>서비스에 영향을 주지 않는 환경에서 Apache 및 PHP-FPM에 <code>Core dump</code> 설정을 추가한 후 <em>whatap.so</em>를 다시 로딩하세요. 이후 오류가 발생하면 <em>dump</em> 파일이 생성됩니다. <em>dump</em> 파일을 gdb로 분석하여 원인을 해결하세요.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-dump-설정">Core Dump 설정<a href="#core-dump-설정" class="hash-link" aria-label="Core Dump 설정에 대한 직접 링크" title="Core Dump 설정에 대한 직접 링크">​</a></h3>
 <ol>
 <li>

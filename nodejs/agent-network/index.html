@@ -15,8 +15,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.00479e06.css">
-<script src="/whatap-docs/assets/js/runtime~main.1cb49d57.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.a68cdb0a.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.c9444ae6.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.e46c336e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -74,6 +74,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="에이전트-다시-접속">에이전트 다시 접속<a href="#에이전트-다시-접속" class="hash-link" aria-label="에이전트 다시 접속에 대한 직접 링크" title="에이전트 다시 접속에 대한 직접 링크">​</a></h3>
 <p>에이전트는 서버와 연결이 끊어질 경우 5~10초마다 3번의 재연결을 시도합니다. 그 후에는 재연결을 시도하지 않습니다.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-설정-옵션">네트워크 설정 옵션<a href="#네트워크-설정-옵션" class="hash-link" aria-label="네트워크 설정 옵션에 대한 직접 링크" title="네트워크 설정 옵션에 대한 직접 링크">​</a></h2>
+<!-- -->
 <p>에이전트가 애플리케이션 서버로부터 수집한 데이터를 서버로 전송하기 위한 네트워크 설정 방법을 안내합니다. 주요 설정 옵션으로는 수집 서버 호스트, 포트, 타임아웃 값, 네트워크 전송 크기, 데이터 전송 큐 크기 등이 있으며, 에이전트의 효율적인 데이터 관리 및 안정적인 서버 통신을 보장하는 데 중요합니다.</p>
 <ul>
 <li>
@@ -101,6 +102,8 @@
 <p>기본값 <code>5242880</code></p>
 <p>에이전트가 데이터를 수집하고 네트워크로 한 번에 전송할 수 있는 최대 byte 크기입니다.</p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>net_send_queue1_size</strong> <span class="type">Int</span></p>
 <p>기본값 <code>512</code></p>
