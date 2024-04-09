@@ -125,6 +125,7 @@ module.exports = Promise.resolve({
           customCss: require.resolve('./src/css/custom.scss'),
         },
         sitemap: {
+          lastmod: 'date',
           changefreq: 'always',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
