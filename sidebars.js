@@ -3127,17 +3127,18 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_0',
+                id: 'release-notes/dotnet/dotnet-2_2_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_0',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_2_1',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-2_1_9',
                 'release-notes/dotnet/dotnet-2_1_8',
                 'release-notes/dotnet/dotnet-2_1_7',
@@ -3146,7 +3147,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_4',
                 'release-notes/dotnet/dotnet-2_1_3',
                 'release-notes/dotnet/dotnet-2_1_2',
-                'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3319,7 +3319,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_5',
@@ -3328,7 +3328,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_5',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_3_4',
                 'release-notes/browser/browser-v1_3_3',
