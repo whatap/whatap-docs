@@ -45,7 +45,7 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 }
 ```
 
-| Response Field    |            Field Type           | Description                                                                                                      |
+| Response Field    |           Field Type            | Description                                                                                                      |
 | ----------------- | :-----------------------------: | ---------------------------------------------------------------------------------------------------------------- |
 | pcode             | <span class='api'>number</span> | Queried projected code                                                                                           |
 | act_agent         | <span class='api'>string</span> | [Active agent count](#active-agent)                                                                              |
@@ -58,7 +58,7 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 | actx              | <span class='api'>string</span> | [Active transactions](#active-transaction)                                                                       |
 | rtime             | <span class='api'>string</span> | [Average response time](#response-time)                                                                          |
 | cpu               | <span class='api'>string</span> | [Average CPU utilization](#usage-cpu)                                                                            |
-| threadpool_active | <span class='api'>string</span> | [Active thread count of the thread pool](#count-threadpool)                                                      |
+| threadpool_active | <span class='api'>string</span> | Active thread count of the thread pool                                                                           |
 | threadpool_queue  | <span class='api'>string</span> | Queuing thread count of the thread pool                                                                          |
 | dbconn_total      | <span class='api'>string</span> | Total DB connection count                                                                                        |
 | dbconn_act        | <span class='api'>string</span> | Active DB connection count                                                                                       |
