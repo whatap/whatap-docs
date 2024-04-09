@@ -3209,6 +3209,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'Server AIX',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server/server-aix-1_2_7'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server/server-aix-1_2_7',
+                  className: 'new'
+                }
+              ],
+            },
+            {
+              type: 'category',
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
