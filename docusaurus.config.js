@@ -102,7 +102,10 @@ module.exports = Promise.resolve({
       headingIds: true,
     },
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    '@saucelabs/theme-github-codeblock'
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
