@@ -14,17 +14,25 @@ import TR from '@site/src/components/TR';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx} 
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide /> 
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx}
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## WhaTapデータベースエージェントのダウンロード
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
+
+<Dbinstallagentsteps /> 
 
 3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
@@ -50,7 +58,9 @@ _/解凍されたフォルダ/jdbc/README.md_ファイルで各データベー�
 
 :::
 
-{@include: ../common-items/_db-create-monitoring-account.mdx}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
 
 ```bash showLineNumbers
 create user whatap identified by 'DB_PASSWORD'; ## パスワードを入力してください。
@@ -63,12 +73,18 @@ grant alter system to whatap;
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-{@include: ../common-items/_db-create-db-user-file.mdx} 
+import Dbcreatedbuserfile from "../common-items/_db-create-db-user-file.mdx";
 
-<!--## 에이전트 실행-->
+<Dbcreatedbuserfile /> 
 
-{@include: ../common-items/_db-run-agent.mdx} 
+{/*## 에이전트 실행*/}
 
-<!--## XOS 에이전트 설치-->
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx} 
+<Dbrunagent /> 
+
+{/*## XOS 에이전트 설치*/}
+
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent /> 

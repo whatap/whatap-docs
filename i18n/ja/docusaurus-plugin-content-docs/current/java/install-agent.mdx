@@ -8,15 +8,23 @@ tags:
   - アプリケーション
 ---
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />   
 
 <Youtube ko='2ypjaWhN_VY' en='MnWbsoXw4VE' ja='MnWbsoXw4VE' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+<Createprojectv2 />
 
-{@include: ../common-items/_download-java-agent.mdx}
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 /> 
+
+import Downloadjavaagent from "../common-items/_download-java-agent.mdx";
+
+<Downloadjavaagent />
 
 ### エージェントのインストールファイルを構成{#agent-files}
 
@@ -50,7 +58,9 @@ tags:
 
   アプリケーションサーバーが稼働しているサーバーからWhaTap収集サーバーに直接接続ができない場合、その間のProxyサーバー(経由サーバー)で経由する役割を果たすアプリケーションです。
 
-{@include: ../common-items/_whatap_conf.mdx}
+import Conf from "../common-items/_whatap_conf.mdx";
+
+<Conf />
 
 ## JVMオプション追加{#addjvmopt}
 

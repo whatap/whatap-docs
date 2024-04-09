@@ -14,20 +14,26 @@ import Variable from '@site/src/components/Variable.js';
 import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
 import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
 
-<!-- 개요 -->
+{/* 개요 */}
 
-{@include: ../common-items/_metrics-intro.desc.mdx}
+import Metricsintrodesc from "../common-items/_metrics-intro.desc.mdx";
+
+<Metricsintrodesc />
 
 <IntroExam category='db_cubrid_counter'/>
 
 <ProdImg img='metrics-example-00.png' desc=''/>
 
-<!-- View Metrics Chart -->
+{/* View Metrics Chart */}
 
-{@include: ../common-items/_metrics-intro-look-up-chart.mdx}  
+import Metricsintrolookupchart from "../common-items/_metrics-intro-look-up-chart.mdx";
+
+<Metricsintrolookupchart />  
 
 <LookupchartDesc metric='num_data_page_fetches' category='db_cubrid_counter' />
 
-<!-- View Metrics Raw Data -->
+{/* View Metrics Raw Data */}
 
-{@include: ../common-items/_metrics-intro-look-up-raw-data.mdx}
+import Metricsintrolookuprawdata from "../common-items/_metrics-intro-look-up-raw-data.mdx";
+
+<Metricsintrolookuprawdata />

@@ -8,31 +8,42 @@ tags:
   - DBXエージェント
 ---
 
-import CurProd from '@site/src/components/GetProductName.js';
 import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 
 DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
 
-{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
 
 ## データ収集
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
+
+<Dbagentsettingdatacollection /> 
 
 ## AWS RDS CloudWatch適用{#using-aws-rds}
 
 <AWSRDSdesc name='db_redis_counter' />
 
-{@include: ../common-items/_db-agent-aws.mdx}
+import Dbagentaws from "../common-items/_db-agent-aws.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbagentaws />
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx} 
+{/* AES 256 암호화 적용 */}
+
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt /> 
 
 ## エージェント名の識別{#naming}
 
-{@include: ../common-items/_db-setting-agent-name-details.mdx}
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
 
-{@include: ../common-items/_db-agent-dbx-naming.mdx} 
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming /> 

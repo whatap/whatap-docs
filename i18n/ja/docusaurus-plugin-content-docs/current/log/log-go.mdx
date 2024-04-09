@@ -10,7 +10,7 @@ tags:
 
 Goアプリケーションからログを収集するには、次の点を確認してください。
 
-<!-- 
+{/* 
 
 ## 에이전트 업데이트
 
@@ -18,7 +18,7 @@ Goアプリケーションからログを収集するには、次の点を確認
 
 Go Agent [기입 필요] 버전부터 가능합니다. 업데이트 방법은 [다음 문서](/)를 참조하세요. 
 
--->
+*/}
 
 ## エージェント設定の確認
 
@@ -42,6 +42,10 @@ echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/agent/whatap.conf
 
 **_ログモニタリングを開始する_**セクションの**_ログモニタリングを有効にする_**タブのトグルボタンで、WhaTapログモニタリングの有効または無効にできます。
 
-{@include: ../common-items/_log-java-start.mdx}
+import Logjavastart from "../common-items/_log-java-start.mdx";
 
-{@include: ../common-items/_log-active-note.mdx}
+<Logjavastart />
+
+import Logactivenote from "../common-items/_log-active-note.mdx";
+
+<Logactivenote />

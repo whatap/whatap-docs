@@ -11,7 +11,12 @@ toc_max_heading_level: 3
 draft: true
 ---
 
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+import Logfilterapply2 from "../common-items/_log-filter-apply2.mdx";
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -27,7 +32,7 @@ Home > Select Project > **_Dashboard_** > **_Log Search_**
 
 In **_Log Search_**, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted. 
 
-The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. {@include: ../common-items/_log-ui-main-term.mdx}
+The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. <Loguimainterm />
 
 <Xclude product='postgresql,mysql'>
 
@@ -77,7 +82,9 @@ The searched log data is imported to the dynamic page line by line. If the scrol
 
 ## Checking the log content
 
-{@include: ../common-items/_log-ui-log-content.mdx}
+import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
+
+<Loguilogcontent />
 
 - ![number-s](/img/number-03.png) For each row (log) of the log table, the ![Icon](/img/ic-caret-right.svg) **_More_** button exists. If you select the ![Icon](/img/ic-caret-right.svg) **_More_** button, you can check the entire content of the log like ![number-s](/img/number-04.png).
 
@@ -87,7 +94,7 @@ The searched log data is imported to the dynamic page line by line. If the scrol
 
 ### Apply Filter
 
-In **_Time Selector_** on the left of ![number-s](/img/number-01.png), you can specify the time range. On the right: {@include: ../common-items/_log-filter-apply2.mdx} 
+In **_Time Selector_** on the left of ![number-s](/img/number-01.png), you can specify the time range. On the right: <Logfilterapply2 />
 
 ### Applying non-parsing keyword filters
 
@@ -117,7 +124,9 @@ You can search the logs containing keywords that have not been parsed, or for wh
 
 ### Modifying the filter
 
-{@include: ../common-items/_log-filter-modify.mdx} 
+import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
+
+<Logfiltermodify /> 
 
 ### Search Key
 
@@ -137,9 +146,13 @@ For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut
 
 ### Filter input syntax{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx} 
+import Logfilterexpressionssearchkey from "../common-items/_log-filter-expressions-search-key.mdx";
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx} 
+<Logfilterexpressionssearchkey /> 
+
+import Logfilterexpressionscommons from "../common-items/_log-filter-expressions-commons.mdx";
+
+<Logfilterexpressionscommons /> 
 
 ## Log tagging options
 
@@ -203,4 +216,4 @@ By selecting ![Icon](/img/ic-highlight.svg) **_Highlight_**, you can set the key
 
 ## Setting the table
 
-- Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx}
+- Right of the ![number-s](/img/number-03.png) area: <Loguitablesetting />

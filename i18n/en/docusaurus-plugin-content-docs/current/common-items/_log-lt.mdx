@@ -1,4 +1,7 @@
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -16,42 +19,60 @@ In **_Live Tail_**, you can easily check the log data stream on the monitoring s
 
 <ImgLang img='log-live-tail.png' desc='Live tail'/>
 
-In **_Live Tail_**, complex logs can be easily accessed. You can search the logs in real time by using the functions such as **_Filter_** or **_Highlight_**, if necessary. The log data search cycle is 2 seconds. {@include: ../common-items/_log-ui-main-term.mdx}
+In **_Live Tail_**, complex logs can be easily accessed. You can search the logs in real time by using the functions such as **_Filter_** or **_Highlight_**, if necessary. The log data search cycle is 2 seconds. <Loguimainterm />
 
 ## Agent option
 
-{@include: ../common-items/_log-agent-option.mdx}
+import Logagentoption from "../common-items/_log-agent-option.mdx";
+
+<Logagentoption />
 
 ## ![](/img/number-01.png) Filter area{#log-filter}
 
 ### Apply Filter
 
-{@include: ../common-items/_log-filter-apply2.mdx}
+import Logfilterapply2 from "../common-items/_log-filter-apply2.mdx";
+
+<Logfilterapply2 />
 
 ### Applying non-parsing keyword filters
 
-{@include: ../common-items/_log-filter-apply-non-parsing.mdx}
+import Logfilterapplynonparsing from "../common-items/_log-filter-apply-non-parsing.mdx";
+
+<Logfilterapplynonparsing />
 
 ### Modifying the filter
 
-{@include: ../common-items/_log-filter-modify.mdx} 
+import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
+
+<Logfiltermodify /> 
 
 ### Search Key
 
-{@include: ../common-items/_log-filter-search-key.mdx}
+import Logfiltersearchkey from "../common-items/_log-filter-search-key.mdx";
+
+<Logfiltersearchkey />
 
 ### Filter input syntax{#filter-expressions}
 
-{@include: ../common-items/_log-filter-expressions-search-key.mdx} 
+import Logfilterexpressionssearchkey from "../common-items/_log-filter-expressions-search-key.mdx";
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx}
+<Logfilterexpressionssearchkey /> 
+
+import Logfilterexpressionscommons from "../common-items/_log-filter-expressions-commons.mdx";
+
+<Logfilterexpressionscommons />
 
 ## ![](/img/number-02.png) Content highlight area
 
-{@include: ../common-items/_log-contents-highlight.mdx}
+import Logcontentshighlight from "../common-items/_log-contents-highlight.mdx";
+
+<Logcontentshighlight />
 
 ### Table settings
 
-{@include: ../common-items/_log-ui-table-setting.mdx} 
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
 
-<!-- whatap is good~whatap is the best -->
+<Loguitablesetting /> 
+
+{/* whatap is good~whatap is the best */}

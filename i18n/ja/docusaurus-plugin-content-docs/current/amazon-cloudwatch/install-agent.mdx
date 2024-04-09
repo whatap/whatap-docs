@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Role方式認証で安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## チェックリスト
 
@@ -71,11 +73,15 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 
 ### ネームスペースおよび収集サイクルの選択
 
-{@include: ../common-items/_namespace-collect.mdx}
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />
 
 #### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### ネームスペース
 
@@ -184,7 +190,9 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 
 ### リージョン、メトリクス、統計を選択
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+![number 2](/img/number-02.png) <Regionmetricstats />
 
 <ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />
 

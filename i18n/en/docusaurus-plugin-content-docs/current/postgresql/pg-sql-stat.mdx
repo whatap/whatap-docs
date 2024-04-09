@@ -53,7 +53,9 @@ To use <Cmdname sid="side_pgStat" className="uitext" />, the following settings 
 
 <ImgLang img='db-pg-sql-stat.png' desc='PG SQL Statistics' />
 
-{@include: ../common-items/_db-product-sql-stat-basic-usage.mdx}
+import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-basic-usage.mdx";
+
+<Dbproductsqlstatbasicusage />
 
 ## Column information guide
 
@@ -89,12 +91,18 @@ You can preview the query statement by moving the mouse pointer to the **_query_
 
 <ImgLang img='db-sql-details-postgresql.png' desc='SQL details' />
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
 
-<!-- 필터 조건추가하기-->
+<Dbproductsqlstatquerydetails />
 
-{@include: ../common-items/_db-sql-filter.mdx}
+{/* 필터 조건추가하기*/}
+
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter />
 
 ## Configuring the table columns{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx} 
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn /> 

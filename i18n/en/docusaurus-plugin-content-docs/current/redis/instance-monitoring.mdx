@@ -9,64 +9,98 @@ tags:
   - Database
 ---
 
-{@include: ../common-items/_db-instance-monitoring-desc.mdx}
+import Dbinstancemonitoringdesc from "../common-items/_db-instance-monitoring-desc.mdx";
+
+<Dbinstancemonitoringdesc />
 
 ## Basic screen guide
 
 <ProdImg img='db-instance-monitoring.png' desc='Instance Monitoring' />
 
-<!--###조회시간 및 대상 선택하기-->
+{/*###조회시간 및 대상 선택하기*/}
 
-{@include: ../common-items/_db-v2-instance-monitoring-select.mdx}
+import Dbv2instancemonitoringselect from "../common-items/_db-v2-instance-monitoring-select.mdx";
 
-<!--###그래프 차트 위젯 영역-->
+<Dbv2instancemonitoringselect />
 
-{@include: ../common-items/_db-v2-instance-monitoring-widget.mdx}
+{/*###그래프 차트 위젯 영역*/}
 
-<!--###액티브 세션 락트리 프로세스정보-->
+import Dbv2instancemonitoringwidget from "../common-items/_db-v2-instance-monitoring-widget.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-activesession-desc-redis.mdx} 
+<Dbv2instancemonitoringwidget />
 
-{@include: ../common-items/_db-dashboard-activesession-desc.mdx} 
+{/*###액티브 세션 락트리 프로세스정보*/}
 
-{@include: ../common-items/_db-dashborad-process-info-desc.mdx}
+import Dbv2instancemonitoringactivesessiondescredis from "../common-items/_db-v2-instance-monitoring-activesession-desc-redis.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-activesession-note.mdx}
+<Dbv2instancemonitoringactivesessiondescredis /> 
 
-<!--##지표 선택하기-->
+import Dbdashboardactivesessiondesc from "../common-items/_db-dashboard-activesession-desc.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-select-metrics.mdx}
+<Dbdashboardactivesessiondesc /> 
 
-<!--###지표 추가하기-->
+import Dbdashboradprocessinfodesc from "../common-items/_db-dashborad-process-info-desc.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-add-metrics.mdx} 
+<Dbdashboradprocessinfodesc />
 
-<!--###지표 변경하기-->
+import Dbv2instancemonitoringactivesessionnote from "../common-items/_db-v2-instance-monitoring-activesession-note.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-change-merics.mdx}
+<Dbv2instancemonitoringactivesessionnote />
 
-<!--###지표 삭제하기-->
+{/*##지표 선택하기*/}
 
-{@include: ../common-items/_db-v2-instance-monitoring-delete-metrics.mdx}
+import Dbv2instancemonitoringselectmetrics from "../common-items/_db-v2-instance-monitoring-select-metrics.mdx";
 
-<!--## 프리셋-->
+<Dbv2instancemonitoringselectmetrics />
 
-{@include: ../common-items/_db-v2-instance-monitoring-preset.mdx} 
+{/*###지표 추가하기*/}
 
-<!-- 액티브 세션 영역 활용-->
+import Dbv2instancemonitoringaddmetrics from "../common-items/_db-v2-instance-monitoring-add-metrics.mdx";
 
-{@include: ../common-items/_db-using-area-active-session.mdx} 
+<Dbv2instancemonitoringaddmetrics /> 
 
-{@include: ../common-items/_db-folding-activesession-table.mdx}
+{/*###지표 변경하기*/}
+
+import Dbv2instancemonitoringchangemerics from "../common-items/_db-v2-instance-monitoring-change-merics.mdx";
+
+<Dbv2instancemonitoringchangemerics />
+
+{/*###지표 삭제하기*/}
+
+import Dbv2instancemonitoringdeletemetrics from "../common-items/_db-v2-instance-monitoring-delete-metrics.mdx";
+
+<Dbv2instancemonitoringdeletemetrics />
+
+{/*## 프리셋*/}
+
+import Dbv2instancemonitoringpreset from "../common-items/_db-v2-instance-monitoring-preset.mdx";
+
+<Dbv2instancemonitoringpreset /> 
+
+{/* 액티브 세션 영역 활용*/}
+
+import Dbusingareaactivesession from "../common-items/_db-using-area-active-session.mdx";
+
+<Dbusingareaactivesession /> 
+
+import Dbfoldingactivesessiontable from "../common-items/_db-folding-activesession-table.mdx";
+
+<Dbfoldingactivesessiontable />
 
 ### Configuring the table columns {#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />
 
 ### Filtering the table data
 
-{@include: ../common-items/_db-table-data-filtering.mdx} 
+import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
+
+<Dbtabledatafiltering /> 
 
 ### Column information guide {#column-info}
 
-{@include: ../common-items/_db-redis-info-of-column.mdx} 
+import Dbredisinfoofcolumn from "../common-items/_db-redis-info-of-column.mdx";
+
+<Dbredisinfoofcolumn /> 

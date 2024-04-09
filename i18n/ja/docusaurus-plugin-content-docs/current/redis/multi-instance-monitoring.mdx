@@ -10,39 +10,55 @@ tags:
   - マルチインスタンスモニタリング
 ---
 
-<!-- 概要-->
+{/* 概要*/}
 
-{@include: ../common-items/_db-v2-mulit-instance-monitoring-desc.mdx} 
+import Dbv2mulitinstancemonitoringdesc from "../common-items/_db-v2-mulit-instance-monitoring-desc.mdx";
+
+<Dbv2mulitinstancemonitoringdesc /> 
 
 <ProdImg img='db-multi-instance.png' desc='マルチインスタンス' />
 
-<!-- Notes-->
+{/* Notes*/}
 
-{@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx} 
+import Dbmultiinstancemonitoringdescnotes from "../common-items/_db-multi-instance-monitoring-desc-notes.mdx";
 
-<!-- 과거 데이터 조회하기-->
+<Dbmultiinstancemonitoringdescnotes /> 
 
-{@include: ../common-items/_apm-dashboard-set-past-time.mdx} 
+{/* 과거 데이터 조회하기*/}
 
-<!-- 에이전트 확인하기-->
+import Apmdashboardsetpasttime from "../common-items/_apm-dashboard-set-past-time.mdx";
 
-{@include: ../common-items/_apm-dashboard-check-agent.mdx}
+<Apmdashboardsetpasttime /> 
 
-<!-- 클러스터별 에이전트-->
+{/* 에이전트 확인하기*/}
 
-{@include: ../common-items/_db-dashboard-select-agent-category.mdx}
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
 
-<!-- 위젯 편집하기-->
+<Apmdashboardcheckagent />
 
-{@include: ../common-items/_apm-dashborad-edit-widget.mdx}
+{/* 클러스터별 에이전트*/}
 
-<!-- 위젯 옵션 이용하기-->
+import Dbdashboardselectagentcategory from "../common-items/_db-dashboard-select-agent-category.mdx";
 
-{@include: ../common-items/_apm-dashboard-widget-options.mdx}
+<Dbdashboardselectagentcategory />
 
-<!-- 프리셋-->
+{/* 위젯 편집하기*/}
 
-{@include: ../common-items/_apm-dashboard-preset.mdx} 
+import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.mdx";
+
+<Apmdashboradeditwidget />
+
+{/* 위젯 옵션 이용하기*/}
+
+import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
+
+<Apmdashboardwidgetoptions />
+
+{/* 프리셋*/}
+
+import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
+
+<Apmdashboardpreset /> 
 
 ## 主要なウィジェットを調べる{#about-widget}
 
@@ -148,31 +164,45 @@ tags:
 
   データベースサーバーがクライアントに送信したすべてのネットワークトラフィックの量を表示したウィジェットです。 サーバーがクライアントにデータを送信する活動を追跡できます。これにより、サーバーのレスポンス速度とクライアントリクエストの処理性能を評価できます。
 
-<!-- Session Table-->
+{/* Session Table*/}
 
-{@include: ../common-items/_db-v2-mim-activesession-desc.mdx} 
+import Dbv2mimactivesessiondesc from "../common-items/_db-v2-mim-activesession-desc.mdx";
 
-{@include: ../common-items/_db-v2-mim-activesession-note.mdx}
+<Dbv2mimactivesessiondesc /> 
+
+import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-note.mdx";
+
+<Dbv2mimactivesessionnote />
 
 ### テーブルデータのフィルタリング
 
-{@include: ../common-items/_db-table-data-filtering.mdx} 
+import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
+
+<Dbtabledatafiltering /> 
 
 ### テーブルカラムの設定{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />
 
 ### カラム情報ガイド {#column-info}
 
-{@include: ../common-items/_db-redis-info-of-column.mdx} 
+import Dbredisinfoofcolumn from "../common-items/_db-redis-info-of-column.mdx";
 
-<!-- 조회 목록 다운로드하기-->
+<Dbredisinfoofcolumn /> 
 
-{@include: ../common-items/_db-dashboard-session-table-download.mdx}
+{/* 조회 목록 다운로드하기*/}
 
-<!-- 새창으로 보기-->
+import Dbdashboardsessiontabledownload from "../common-items/_db-dashboard-session-table-download.mdx";
 
-{@include: ../common-items/_db-dashboard-session-table-new.mdx}
+<Dbdashboardsessiontabledownload />
+
+{/* 새창으로 보기*/}
+
+import Dbdashboardsessiontablenew from "../common-items/_db-dashboard-session-table-new.mdx";
+
+<Dbdashboardsessiontablenew />
 
 ## Cluster Infoウィジェット
 

@@ -52,7 +52,9 @@
 
 **性能推移チャート**に表示されるで指標は、**同時接続ユーザー**、**時間あたりの訪問者数**、**処理量**(TPS)、**平均レスポンス時間**、**CPU使用率**、**ヒープ使用量**、**エラー件数**、**日次トランザクション分布図**があります。各グラフでは、指標が最も高かった時間と数値を確認することができます。
 
-{@include: ../common-items/_csv-download.mdx} 
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+<Csvdownload /> 
 
 <ImgLang img='app_daily_report_03.png' desc='' />
 
@@ -125,7 +127,7 @@
 チャートのx軸は日付で、y軸は指標の数値を表します。また、週間データの中で指標値が最も高かった日付とその値をグラフ上のテキストから確認することができます。
 グラフの表から、日付別の平均値、最大値、週間平均値などが確認できます。 
 
-{@include: ../common-items/_csv-download.mdx} 
+<Csvdownload /> 
 
 ### トランザクションのTOP10
 
@@ -176,7 +178,9 @@
 
 1週間分のトランザクションの平均応答時間を降順に並べ替えた結果です。
 
-{@include: ../common-items/_average-response-time.mdx} 
+import Averageresponsetime from "../common-items/_average-response-time.mdx";
+
+<Averageresponsetime /> 
 
 - **増減時間**
 
@@ -206,7 +210,9 @@ SQLクエリ文の平均レスポンス時間をソートした結果です。�
 
   問い合わせの週と問い合わせの前週のエラー発生件数を比較した数値で、増減率はパーセンテージで計算した数値です。
 
-{@include: ../common-items/_rate-of-change.mdx}  
+import Rateofchange from "../common-items/_rate-of-change.mdx";
+
+<Rateofchange />  
 
 ## **_月間アプリケーションレポート_**
 
@@ -312,7 +318,7 @@ SQLクエリ文の平均レスポンス時間をソートした結果です。�
 
 :::
 
-{@include: ../common-items/_csv-download.mdx} 
+<Csvdownload /> 
 
 ### トランザクションのTOP10
 
@@ -350,7 +356,7 @@ SQLクエリ文の平均レスポンス時間をソートした結果です。�
 
 これは、受信トランザクションをその月の平均応答時間に降順に並べ替えた結果です。 
 
-{@include: ../common-items/_average-response-time.mdx} 
+<Averageresponsetime /> 
 
 - **増減時間**
 
@@ -366,4 +372,4 @@ SQLクエリ文の平均レスポンス時間をソートした結果です。�
 
   問い合わせ当月と問い合わせ前月のSQL処理の平均時間を比較した数値で、増減率は、パーセンテージで計算した数値です。
 
-{@include: ../common-items/_rate-of-change.mdx}  
+<Rateofchange />  

@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Azure Monitorは、API連携を使用してメトリックを定期的に収集します。収集するサービスに対応するAzure Monitorネームスペースを5分ごとに収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングが開始できます。WhaTapは、安全で便利な使用のためにAzure Registard Appをサポートします。
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## モニタリング手順
 
@@ -44,11 +46,15 @@ Azureの認証情報の**_アプリケーションID_**(ApplicationID), **_テ�
 
 ### ネームスペースおよび収集サイクルの選択
 
-{@include: ../common-items/_namespace-collect.mdx}  
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />  
 
 #### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### ネームスペース
 

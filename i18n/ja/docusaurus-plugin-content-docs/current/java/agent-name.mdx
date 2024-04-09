@@ -8,9 +8,13 @@ tags:
   - whatap.conf
 ---
 
-{@include: ../common-items/_apm-name-description.mdx}
+import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
-{@include: ../common-items/_agent-name-warning.mdx}
+<Apmnamedescription />
+
+import Agentnamewarning from "../common-items/_agent-name-warning.mdx";
+
+<Agentnamewarning />
 
 :::note
 
@@ -62,4 +66,6 @@ JVMオプションで`whatap.oname`設定がない場合、エージェント名
 
 次は、_whatap.conf_ファイルにエージェント名で適用できるオプションです。
 
-{@include: ../common-items/_java-agent-name.mdx} 
+import Javaagentname from "../common-items/_java-agent-name.mdx";
+
+<Javaagentname /> 
