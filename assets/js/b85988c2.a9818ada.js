@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[22221],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[25392],{
 
-/***/ 44257:
+/***/ 91571:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_6_0',
-	title: 'Kubernetes Agent v1.6.0',
+	id: 'server-aix-1_2_7',
+	title: 'Server Agent AIX v1.2.7',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_5_9',
+	pagination_next: null,
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_6_0",
-  "title": "Kubernetes Agent v1.6.0",
-  "description": "2024년 04월 05일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.6.0.mdx",
-  "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_6_0",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_6_0",
+  "id": "release-notes/server/server-aix-1_2_7",
+  "title": "Server Agent AIX v1.2.7",
+  "description": "2024년 04월 09일",
+  "source": "@site/docs/release-notes/server/server-aix-1.2.7.mdx",
+  "sourceDirName": "release-notes/server",
+  "slug": "/release-notes/server/server-aix-1_2_7",
+  "permalink": "/whatap-docs/release-notes/server/server-aix-1_2_7",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.6.0.mdx",
+  "editUrl": "undefined/docs/release-notes/server/server-aix-1.2.7.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_6_0",
-    "title": "Kubernetes Agent v1.6.0",
+    "id": "server-aix-1_2_7",
+    "title": "Server Agent AIX v1.2.7",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_5_9",
+    "pagination_next": null,
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
     "title": "Server Agent 지난 버전",
     "permalink": "/whatap-docs/release-notes/server/server-previous"
-  },
-  "next": {
-    "title": "Kubernetes Agent v1.5.9",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_9"
   }
 };
 const assets = {
@@ -66,33 +62,30 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
+    strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Status} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 05일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+      children: "2024년 04월 09일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         children: "Fixed"
-      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_cluster",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_objectManifest",
-        className: "uitext"
-      }), " 메뉴의 warning 이벤트를 연계 로직 버그 수정"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      }), " AIX 서버 CPU Logical Core 분석 오류 수정: 프로세스 CPU 관련해 과다하게 측정되는 오류 수정"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "info",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.6.0.tar",
-          children: "kube_mon_1.6.0.tar"
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "다운로드"
+        }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://repo.whatap.io/aix/noarch/whatap-infra-1.2-7.aix6.1.noarch.rpm",
+          children: "Server Agent AIX v1.2.7"
         })]
-      })
+      })]
     })]
   });
 }
