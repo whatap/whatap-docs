@@ -183,6 +183,12 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Changed"
+            }), " 프로젝트 생성 페이지에서 리전 선택 동선 변경(지역 → CSP 선택 순으로 동선 변경)"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
               children: "Fixed"
             }), " 사이드 메뉴의 프로젝트 목록에서 그룹/프로젝트 이름이 긴 경우 정렬이 흐트러지는 문제 수정"]
           }), "\n"]

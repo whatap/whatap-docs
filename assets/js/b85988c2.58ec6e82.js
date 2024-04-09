@@ -21,7 +21,6 @@ const frontMatter = {
 	id: 'server-aix-1_2_7',
 	title: 'Server Agent AIX v1.2.7',
 	toc_max_heading_level: 2,
-	pagination_next: null,
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
@@ -42,13 +41,16 @@ const metadata = {
     "id": "server-aix-1_2_7",
     "title": "Server Agent AIX v1.2.7",
     "toc_max_heading_level": 2,
-    "pagination_next": null,
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
     "title": "Server Agent 지난 버전",
     "permalink": "/whatap-docs/release-notes/server/server-previous"
+  },
+  "next": {
+    "title": "Server Agent AIX v1.2.7",
+    "permalink": "/whatap-docs/release-notes/server/server-aix-1_2_7"
   }
 };
 const assets = {
