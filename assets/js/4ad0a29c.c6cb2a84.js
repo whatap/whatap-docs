@@ -171,7 +171,7 @@ function _createMdxContent(props) {
       id: "preview-240a2",
       children: "Preview 2.4.0.a2"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 5일"
+      children: "2024년 04월 11일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       class: "indentTab",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -244,7 +244,7 @@ function _createMdxContent(props) {
       id: "preview-240a1",
       children: "Preview 2.4.0.a1"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 4일"
+      children: "2024년 04월 04일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       class: "indentTab",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
