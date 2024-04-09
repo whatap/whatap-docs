@@ -3439,6 +3439,10 @@
     "width": 1200,
     "height": 873
   },
+  "cover-background.png": {
+    "width": 524,
+    "height": 770
+  },
   "cpu-resource-map-temp.png": {
     "width": 995,
     "height": 801
@@ -5891,6 +5895,78 @@
     "width": 1200,
     "height": 207
   },
+  "event-config-v2-all-events-apm-k8s-en.png": {
+    "width": 985,
+    "height": 87
+  },
+  "event-config-v2-all-events-apm-k8s-ja.png": {
+    "width": 972,
+    "height": 87
+  },
+  "event-config-v2-all-events-apm-k8s.png": {
+    "width": 800,
+    "height": 88
+  },
+  "event-config-v2-all-events-browser-en.png": {
+    "width": 457,
+    "height": 87
+  },
+  "event-config-v2-all-events-browser-ja.png": {
+    "width": 491,
+    "height": 87
+  },
+  "event-config-v2-all-events-browser.png": {
+    "width": 417,
+    "height": 87
+  },
+  "event-config-v2-all-events-db-en.png": {
+    "width": 756,
+    "height": 87
+  },
+  "event-config-v2-all-events-db-ja.png": {
+    "width": 647,
+    "height": 87
+  },
+  "event-config-v2-all-events-db.png": {
+    "width": 625,
+    "height": 87
+  },
+  "event-config-v2-all-events-json-validate-en.png": {
+    "width": 800,
+    "height": 204
+  },
+  "event-config-v2-all-events-json-validate-ja.png": {
+    "width": 800,
+    "height": 205
+  },
+  "event-config-v2-all-events-json-validate.png": {
+    "width": 800,
+    "height": 201
+  },
+  "event-config-v2-all-events-npm-en.png": {
+    "width": 269,
+    "height": 87
+  },
+  "event-config-v2-all-events-npm-ja.png": {
+    "width": 343,
+    "height": 87
+  },
+  "event-config-v2-all-events-npm.png": {
+    "width": 230,
+    "height": 87
+  },
+  "event-config-v2-all-events-server-en.png": {
+    "width": 1036,
+    "height": 87
+  },
+  "event-config-v2-all-events-server-ja.png": {
+    "width": 1086,
+    "height": 87
+  },
+  "event-config-v2-all-events-server.png": {
+    "width": 917,
+    "height": 87
+  },
   "event-config-v2-apm-en.png": {
     "width": 1200,
     "height": 254
@@ -5986,6 +6062,18 @@
   "event-config-v2-info-receive-common.png": {
     "width": 800,
     "height": 253
+  },
+  "event-config-v2-json-batch-edit-en.png": {
+    "width": 1200,
+    "height": 749
+  },
+  "event-config-v2-json-batch-edit-ja.png": {
+    "width": 1200,
+    "height": 749
+  },
+  "event-config-v2-json-batch-edit.png": {
+    "width": 1200,
+    "height": 749
   },
   "event-config-v2-json-error.png": {
     "width": 800,
@@ -6807,17 +6895,17 @@
     "width": 1200,
     "height": 264
   },
-  "ipa-dependency-module-golang-en.png": {
+  "ipa-dependency-module-nodejs-en.png": {
     "width": 1200,
-    "height": 513
+    "height": 565
   },
-  "ipa-dependency-module-golang-ja.png": {
+  "ipa-dependency-module-nodejs-ja.png": {
     "width": 1200,
-    "height": 513
+    "height": 567
   },
-  "ipa-dependency-module-golang.png": {
+  "ipa-dependency-module-nodejs.png": {
     "width": 1200,
-    "height": 513
+    "height": 567
   },
   "ipa-dependency-module-php-en.png": {
     "width": 1200,
@@ -6830,6 +6918,18 @@
   "ipa-dependency-module-php.png": {
     "width": 1200,
     "height": 631
+  },
+  "ipa-dependency-module-python-en.png": {
+    "width": 1200,
+    "height": 599
+  },
+  "ipa-dependency-module-python-ja.png": {
+    "width": 1200,
+    "height": 599
+  },
+  "ipa-dependency-module-python.png": {
+    "width": 1200,
+    "height": 599
   },
   "ipa-env-var-dotnet-en.png": {
     "width": 1200,
