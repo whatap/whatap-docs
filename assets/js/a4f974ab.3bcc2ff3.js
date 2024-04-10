@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16376],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[91],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -331,9 +331,11 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
       id: "요일-및-시간별-알람-설정하기",
@@ -348,9 +350,18 @@ function _createMdxContent(props) {
         width: "24",
         height: "24"
       }), " 버튼을 선택하세요. 경고 알림 수신을 원하는 요일을 선택하거나 시간을 입력하세요. 알림 수신 수단별로 설정할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "set-event-day-time.png",
-      desc: "요일별, 시간별 알림 수신"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "set-event-day-time.png",
+        desc: "요일별, 시간별 알림 수신"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "set-event-day-time-url.png",
+        desc: "요일별, 시간별 알림 수신"
+      })
     })]
   });
 }
@@ -1790,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 21920:
+/***/ 20135:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1827,7 +1838,7 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'Python',
+		'Node.js',
 		'경고 알림',
 		'이벤트 수신 태그',
 		'애플리케이션 모니터링'
@@ -1835,20 +1846,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/set-receive-event",
+  "id": "nodejs/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/python/set-receive-event.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/set-receive-event",
-  "permalink": "/whatap-docs/python/set-receive-event",
+  "source": "@site/docs/nodejs/set-receive-event.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/set-receive-event",
+  "permalink": "/whatap-docs/nodejs/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/set-receive-event.mdx",
+  "editUrl": "undefined/docs/nodejs/set-receive-event.mdx",
   "tags": [
     {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "경고 알림",
@@ -1869,20 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "Python",
+      "Node.js",
       "경고 알림",
       "이벤트 수신 태그",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/python/set-event-log"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/nodejs/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/python/set-event-history"
+    "permalink": "/whatap-docs/nodejs/set-event-history"
   }
 };
 const assets = {

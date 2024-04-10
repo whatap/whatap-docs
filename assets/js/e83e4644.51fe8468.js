@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6211],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78686],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -331,9 +331,11 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
       id: "요일-및-시간별-알람-설정하기",
@@ -348,9 +350,18 @@ function _createMdxContent(props) {
         width: "24",
         height: "24"
       }), " 버튼을 선택하세요. 경고 알림 수신을 원하는 요일을 선택하거나 시간을 입력하세요. 알림 수신 수단별로 설정할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "set-event-day-time.png",
-      desc: "요일별, 시간별 알림 수신"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "set-event-day-time.png",
+        desc: "요일별, 시간별 알림 수신"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "set-event-day-time-url.png",
+        desc: "요일별, 시간별 알림 수신"
+      })
     })]
   });
 }
@@ -1790,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 59004:
+/***/ 81783:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1827,28 +1838,27 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'PostgreSQL',
+		'네트워크 성능 모니터링',
 		'경고 알림',
-		'이벤트 수신 태그',
-		'데이터베이스 모니터링'
+		'이벤트 수신 태그'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/set-receive-event",
+  "id": "npm/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/postgresql/set-receive-event.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/set-receive-event",
-  "permalink": "/whatap-docs/postgresql/set-receive-event",
+  "source": "@site/docs/npm/set-receive-event.mdx",
+  "sourceDirName": "npm",
+  "slug": "/npm/set-receive-event",
+  "permalink": "/whatap-docs/npm/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/set-receive-event.mdx",
+  "editUrl": "undefined/docs/npm/set-receive-event.mdx",
   "tags": [
     {
-      "label": "PostgreSQL",
-      "permalink": "/whatap-docs/tags/postgre-sql"
+      "label": "네트워크 성능 모니터링",
+      "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
     },
     {
       "label": "경고 알림",
@@ -1857,10 +1867,6 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
-    },
-    {
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -1869,20 +1875,19 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "PostgreSQL",
+      "네트워크 성능 모니터링",
       "경고 알림",
-      "이벤트 수신 태그",
-      "데이터베이스 모니터링"
+      "이벤트 수신 태그"
     ]
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "npmsidebar",
   "previous": {
-    "title": "로그 알림 설정하기",
-    "permalink": "/whatap-docs/postgresql/set-event-log"
+    "title": "이벤트 설정",
+    "permalink": "/whatap-docs/npm/warning-notice-v2"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/postgresql/set-event-history"
+    "permalink": "/whatap-docs/npm/set-event-history"
   }
 };
 const assets = {
