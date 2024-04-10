@@ -87,7 +87,7 @@ Ajaxイベントをロードする過程での区間別所要時間をグラフ�
 
 エラーが発生したAJAX一覧のみを確認するには、<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />ウィンドウの左上にある <Cmdname sid="all" className="uitext" />選択ボックスから<Cmdname sid="error" className="uitext" />を選択してください。
 
-### <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />
+### AJAX情報
 
 Ajaxイベントの属性情報が確認できます。 AjaxリクエストURL、エンドユーザーのアクセス環境、アクセスページ情報、<Cmdname sid="user_id" className="uitext" />、<Cmdname sid="session_id" className="uitext" />、<Cmdname sid="TTL06081" className="uitext" />などの情報を照会できます。
 
@@ -97,7 +97,7 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 :::
 
-### <Cmdname sid="TTL07106" className="uitext" /> <Cmdname sid="info" className="uitext" />
+### AJAXタイミング情報
 
 Ajaxイベントをロードする過程を次のような段階に分け、区間別の所要時間を把握することができます。
 
@@ -114,6 +114,12 @@ Ajaxイベントをロードする過程を次のような段階に分け、区�
 - <Cmdname sid="wait_time" className="uitext" />: ブラウザのHTTPリクエスト開始からサーバーがリクエストを受信して応答を開始するまでの所要時間です。サーバー領域のトランザクション処理時間がこの区間に含まれます。
 
 - <Cmdname sid="download_time" className="uitext" />: ブラウザがサーバーからAjax応答値をダウンロードするまでの所要時間
+
+### ユーザーセッション分析
+
+<ImgLang img='browser-analysis-ajax-hitmap-user-session.png' desc='ユーザーセッション分析' />
+
+ユーザーセッションを基準にウェブページと相互作用しながら発生させたイベントやエラーなどを時間順に確認することができます。 <Cmdname sid="TTL07736" className="uitext" />についての詳細は、[次の文書](user-session-log-search#analysisusersession)を参照してください。
 
 ## Ajax一覧のフィルタリング
 

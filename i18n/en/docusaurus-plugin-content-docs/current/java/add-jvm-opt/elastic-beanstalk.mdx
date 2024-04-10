@@ -1,17 +1,21 @@
 ---
 id: elastic-beanstalk
 title: Elastic Beanstalk
-description: Complete application of the WhaTap agent in the Elastic Beanstalk environment.
+description: The following explains users who run Java applications on the AWS Elastic Beanstalk environment on how to set JVM options to effectively apply WhaTap's Java monitoring agent. You can check the processes of installing and configuring WhaTap's Java agent in the Elastic Beanstalk and adding and configuring the required JVM options. Additionally, it includes the histogram query method.
 tags:
   - Java
   - Elastic Beanstalk
+  - Application
+  - Agent
 ---
 
 ## Applying the agent
 
 The following explains how to apply the WhaTap agent when deploying with **Elastic Beanstalk**. 
 
-{@include: _pass-note.mdx}
+import Passnote from "./_pass-note.mdx";
+
+<Passnote />
 
 1. To release the Spring Boot result as jar, the content of _.ebextensions_ cannot be applied. Compress the following files and deploy the zip file.
 
@@ -78,7 +82,9 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
 
 :::note
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
@@ -88,8 +94,12 @@ For more information, see [AWS Guide](https://docs.aws.amazon.com/ko_kr/elasticb
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## Starting the monitoring
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

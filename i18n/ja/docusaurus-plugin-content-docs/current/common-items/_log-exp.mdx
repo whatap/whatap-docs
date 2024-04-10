@@ -1,4 +1,8 @@
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Logagentoption from "../common-items/_log-agent-option.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -12,7 +16,7 @@
 
 </InDoc>
 
-**_ログトレンド_**メニューでタイプ別に分類されたログの発生件数の推移から特定のエラータイプの発生パターンを確認したり、時間別に詳細なログデータを確認することができます。 ハイライト機能を使用すると、必要なログをすばやく識別できます。カテゴリ別に収集されたログの推移を表示することができます。 {@include: ../common-items/_log-ui-main-term.mdx}
+**_ログトレンド_**メニューでタイプ別に分類されたログの発生件数の推移から特定のエラータイプの発生パターンを確認したり、時間別に詳細なログデータを確認することができます。 ハイライト機能を使用すると、必要なログをすばやく識別できます。カテゴリ別に収集されたログの推移を表示することができます。 <Loguimainterm />
 
 <ImgLang img='log-trend.png' desc='ログトレンド'/>
 
@@ -32,13 +36,13 @@
 
 - ![number-s](/img/number-04.png) サイドメニューからタグでフィルタリングすることでログを確認できます。 検索キーは最大2つまで選択でき、検索値は複数選択できます。
 
-- {@include: ../common-items/_log-agent-option.mdx}
+- <Logagentoption />
 
 ## ログContentの確認
 
-{@include: ../common-items/_log-ui-log-content.mdx} 
+import Logcontentscheck from "../common-items/_log-contents-check.mdx";
 
-- ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをクリックします。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをクリックして、![number-s](/img/number-05.png)のように対象ログの全体contentを確認することができます。
+<Logcontentscheck />
 
 ## ログをチャートで検索
 
@@ -54,8 +58,12 @@
 
 ## ハイライト
 
-{@include: ../common-items/_log-highlight.mdx} 
+import Loghighlight from "../common-items/_log-highlight.mdx";
+
+<Loghighlight /> 
 
 ## テーブル設定
 
-- ![number-s](/img/number-03.png)領域の右側{@include: ../common-items/_log-ui-table-setting.mdx}
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
+
+<Loguitablesetting />

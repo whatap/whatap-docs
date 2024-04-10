@@ -1,66 +1,94 @@
-Home > Select Project > <Cmdname sid="statistic" className="uitext" />
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" />
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select a sub menu under <Cmdname sid="statistic" className="uitext" />. The WhaTap agent collects statistical data for the key traces such as transaction information and SQL. A list is created every 5 minutes and it is sent to the server.
+Select a project in the initial screen of the WhaTap monitoring service, and then select a sub menu under <Cmdname sid="side_statistics" className="uitext" />. The WhaTap agent collects statistical data for the key traces such as transaction information and SQL. A list is created every 5 minutes and it is sent to the server.
 
-## Basic screen guide
+- Each **Statistics** tab provides sorting options by **Sum**, **Max**, **Time avg**, and **Count** for viewing the list from your desired perspective. 
 
-<ImgLang img='analysis-apm-trs.png' desc='Statistics' />
+- You can add or exclude columns to view from the list as well as the default values by using the <Cmdname sid="BTN06441" className="uitext" /> button.
 
-- Each **_Statistics_** tab provides sorting options by **_Sum_**, **_Max_**, **_Time avg_**, and **_Count_** for viewing the list from your desired perspective. 
+- If you select the ![Detail view icon](/img/ico-detail-view.svg) <Cmdname sid="display_detail" className="uitext" /> icon in the statistics list, you can check the number of cases and average time chart, and additional charts are provided to compare the case count, error count, and response time. If you select the time to search in the chart, the <Cmdname sid="side_txSearch" className="uitext" /> menu appears.
 
-- You can add or exclude columns to view from the list as well as the default values by using the **_Select Column_** button. 
+- If you select <code class="btn">T</code> in the statistics list, the <Cmdname sid="top_stack_of_url" className="uitext" /> menu appears.
 
-- Select the ![Right Arrow icon](/img/ic-caret-right.svg) **_Arrow_** icon in the **_Statistics_** list to view the counts and average time charts. If you select a desired time point to search from the chart, the **_transaction_** search menu appears.
-
-- When you select **_Application comparison_**, you can see the balancing by comparing the **_call count_**, **_response time_**, and **_error count_** between applications.
+- If you select <code class="btn">U</code> in the statistics list, the <Cmdname sid="unique_stack_url" className="uitext" /> menu appears.
 
 ## Transaction statistics
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_tx" className="uitext" />
+
 It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specific performance statistics are collected and sent to the server. If the number of URLs for 5 minutes exceeds 5,000, this is ignored.
 
-| Columns                       | Description                                          |
-| ----------------------------- | ---------------------------------------------------- |
-| Transactions                  | Transaction address                                  |
-| Count                         | Number of execution cases                            |
-| Error                         | Error occurrence count for the executed transactions |
-| Time Avg (ms)                 | Average of the total response time                   |
-| Time Sum (ms)                 | Sum of response times                                |
-| Time Max (ms)                 | Maximum response time                                |
-| CPU usage time avg            | Average of the CPU usage time                        |
-| HTTPC count                   | HTTP call count                                      |
-| HTTP call time avg (ms)       | Average of the total HTTP call time                  |
-| SQL Count                     | SQL execution count                                  |
-| SQL time avg (ms)             | Average SQL execution time                           |
-| SQL Fetch                     | SQL Fetch Count                                      |
-| SQL fetch time avg (ms)       | Average of the total SQL patch time                  |
+| Columns                            | Description                                          |
+| ---------------------------------- | ---------------------------------------------------- |
+| <Cmdname sid="TTL06918" />         | Transaction address                                  |
+| <Cmdname sid="count" />            | Number of execution cases                            |
+| <Cmdname sid="error" />            | Error occurrence count for the executed transactions |
+| <Cmdname sid="TTL06960" /> (ms)    | Average of the total response time                   |
+| <Cmdname sid="TTL06963" /> (ms)    | Sum of response times                                |
+| <Cmdname sid="TTL06961" /> (ms)    | Maximum response time                                |
+| <Cmdname sid="TTL06965" />         | Average of the CPU usage time                        |
+| <Cmdname sid="httpc_count" />      | HTTP call count                                      |
+| <Cmdname sid="TTL06959" /> (ms)    | Average of the total HTTP call time                  |
+| <Cmdname sid="TTL06097" />         | SQL execution count                                  |
+| <Cmdname sid="TTL06956" /> (ms)    | Average SQL execution time                           |
+| <Cmdname sid="sqlFetch" />         | SQL Fetch Count                                      |
+| <Cmdname sid="TTL06953" /> (ms)    | Average of the total SQL patch time                  |
 
 :::note
 
-**_Average memory allocation_** is collected only when `trace_malloc_enabled=true` is set. The default value is `false`.
+<Xclude product="php">
+
+<Cmdname sid="TTL06975" className="uitext" /> requires to set the <code>trace_malloc_enabled=true</code> option in the agent configuration (*whatap.conf*) for collection. The default value is <code>false</code>.
+
+</Xclude>
+
+<InDoc product="php">
+
+<Cmdname sid="TTL06975" className="uitext" /> requires to set the <code>trace_malloc_enabled=true</code> option in the agent configuration (*whatap.ini*) for collection. The default value is <code>false</code>.
+
+</InDoc>
 
 :::
 
 ## Transaction domain statistics
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statDomain" className="uitext" />
+
 The WhaTap agent can collect transaction statistics for each domain. In the systems where multiple domains are separated and serviced on a server, domain-specific analysis may be required. Set the following option:
+
+<Xclude product="php">
 
 ```ini title='whatap.conf'
 stat_domain_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini'
+whatap.stat_domain_enabled=true
+```
+
+</InDoc>
+
 Through the collected data, you can identify the processing status of URLs for each domain.
 
-| Columns            | Description                                          |
-| ------------------ | ---------------------------------------------------- |
-| Domain             | Service domain                                       |
-| Transactions       | Transaction address                                  |
-| Count              | Number of execution cases                            |
-| Error              | Error occurrence count for the executed transactions |
-| Time Avg (ms)      | Average of the total response time                   |
+| Columns                         | Description                                          |
+| ------------------------------- | ---------------------------------------------------- |
+| <Cmdname sid="TTL06101" />      | Service domain                                       |
+| <Cmdname sid="TTL06918" />      | Transaction address                                  |
+| <Cmdname sid="count" />         | Number of execution cases                            |
+| <Cmdname sid="error" />         | Error occurrence count for the executed transactions |
+| <Cmdname sid="timeAvg_ms" />    | Average of the total response time                   |
 
 ## Transaction caller statistics
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statCaller" className="uitext" />
+
 If the multi server is connected by a rest call, the relationship statistics between **callers** and **callees** can be collected. To collect this data, set the following options:
+
+<Xclude product="php">
 
 ```ini title='whatap.conf'
 mtrace_rate=100
@@ -68,11 +96,26 @@ mtrace_spec=v1
 stat_mtrace_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini'
+whatap.mtrace_enabled=true 
+whatap.mtrace_rate=100
+whatap.mtrace_spec=v1
+whatap.stat_mtrace_enabled=true
+```
+
+</InDoc>
+
 ![msa-system](https://img.whatap.io/media/agent_java/data/msa.png)
 
 In the above architecture, the **Caller & Callee** statistics can be viewed only in api1 and api2. The system called by the user browser cannot see the **Caller** statistics.
 
 However, because the server on the **caller** side must transfer data, the relevant settings must be entered for all servers.
+
+<Xclude product="php">
 
 ```ini title='whatap.conf of [front]'
 mtrace_rate=100
@@ -85,96 +128,135 @@ mtrace_spec=v1
 stat_mtrace_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini of [front]'
+whatap.mtrace_rate=100
+whatap.mtrace_spec=v1
+whatap.stat_mtrace_enabled=true
+```
+
+```ini title='whatap.ini of [api1] & [api2]'
+whatap.mtrace_spec=v1
+whatap.stat_mtrace_enabled=true
+```
+
+</InDoc>
+
 The statistical data collected is as follows. The data must be viewed from the **callee** side.
 
-| Columns            | Description                                                       |
-| ------------------ | ----------------------------------------------------------------- |
-| CallerPcode        | Project code corresponding to the caller                          |
-| CallerOkind        | Group unit to which the agent corresponding to the caller belongs |
-| CallerUrl          | Address of the caller transaction                                 |
-| Transactions       | Callee transaction address                                        |
-| Count              | Number of execution cases                                         |
-| Error              | Error occurrence count for the executed transactions              |
-| Time Avg (ms)      | Average of the total response time                                |
+| Columns                          | Description                                                       |
+| -------------------------------- | ----------------------------------------------------------------- |
+| <Cmdname sid="callerPcode" />    | Project code corresponding to the caller                          |
+| <Cmdname sid="callerOkind" />    | Group unit to which the agent corresponding to the caller belongs |
+| <Cmdname sid="callerUrl" />      | Address of the caller transaction                                 |
+| <Cmdname sid="transaction" />    | Callee transaction address                                        |
+| <Cmdname sid="count" />          | Number of execution cases                                         |
+| <Cmdname sid="error" />          | Error occurrence count for the executed transactions              |
+| <Cmdname sid="timeAvg_ms" />     | Average of the total response time                                |
 
 ## Transaction referer statistics{#stat-referer}
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statReferer" className="uitext" />
+
 The WhaTap agent can collect transaction statistics for each referer. Set the following option:
+
+<Xclude product="php">
 
 ```ini title='whatap.conf'
 stat_referer_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini'
+whatap.stat_referer_enabled=true
+```
+
+</InDoc>
+
 Through the collected data, you can see the referer data on the statistics.
 
-| Columns            | Description                                          |
-| ------------------ | ---------------------------------------------------- |
-| Referer            | Referer address                                      |
-| Transactions       | Transaction address                                  |
-| Count              | Number of execution cases                            |
-| Error              | Error occurrence count for the executed transactions |
-| Time Avg (ms)      | Average of the total response time                   |
+| Columns                         | Description                                          |
+| ------------------------------- | ---------------------------------------------------- |
+| <Cmdname sid="TTL06108" />      | Referer address                                      |
+| <Cmdname sid="TTL06918" />      | Transaction address                                  |
+| <Cmdname sid="count" />         | Number of execution cases                            |
+| <Cmdname sid="error" />         | Error occurrence count for the executed transactions |
+| <Cmdname sid="timeAvg_ms" />    | Average of the total response time                   |
 
 ## Error Statistics
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statError" className="uitext" />
+
 They are statistics on the service errors that occurred for 5 minutes. They collect different errors and transaction names with the keys. They provide the stacks upon error occurrence. The statistics appear for up to 1,000 errors every 5 minutes.
 
-| Columns      | Description           |
-| ------------ | --------------------- |
-| Class        | Error Class           |
-| Transactions | Transaction address   |
-| Message      | Error Message         |
-| Count        | Error Count           |
+| Columns                       | Description           |
+| ----------------------------- | --------------------- |
+| <Cmdname sid="class" />       | Error Class           |
+| <Cmdname sid="TTL06918" />    | Transaction address   |
+| <Cmdname sid="msg" />         | Error Message         |
+| <Cmdname sid="count" />       | Error Count           |
 
 ## SQL execution statistics
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statSql" className="uitext" />
+
 The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL statements are allowed in 5 minutes. If a single Java process generates SQL statements that exceed the limit, they are discarded from statistical data.
 
-| Columns                 | Description                                                        |
-| ----------------------- | ------------------------------------------------------------------ |
-| Database                | Database Type                                                      |
-| SQL                     | SQL query statement                                                |
-| Transactions            | Data randomly collected from one of the URLs that called the SQL   |
-| Crud Metrics (crud)     | Create, Read, Update, Delete                                       |
-| Count                   | Query execution count                                              |
-| Error Count             | Number of errors among executed queries                            |
-| Time Avg (ms)           | Average of the total query execution time                          |
-| Time Sum (ms)           | Sum of query execution times                                       |
-| Std dev                 | Standard deviation for the query execution time                    |
+| Columns                            | Description                                                        |
+| ---------------------------------- | ------------------------------------------------------------------ |
+| <Cmdname sid="db" />               | Database Type                                                      |
+| <Cmdname sid="sql" />              | SQL query statement                                                |
+| <Cmdname sid="TTL06918" />         | Data randomly collected from one of the URLs that called the SQL   |
+| CRUD                               | Create, Read, Update, Delete                                       |
+| <Cmdname sid="countTotal" />       | Query execution count                                              |
+| <Cmdname sid="countError" />       | Number of errors among executed queries                            |
+| <Cmdname sid="TTL06960" /> (ms)    | Average of the total query execution time                          |
+| <Cmdname sid="TTL06963" /> (ms)    | Sum of query execution times                                       |
+| <Cmdname sid="TTL06964" />         | Standard deviation for the query execution time                    |
 
 :::info
 
-**_Transaction_** collects one of the URLs (last call URL) that called the SQL for 5 minutes for analysis.
+<Cmdname sid="TTL06918" /> collects one of the URLs (last call URL) that called the SQL for 5 minutes for analysis.
 
 :::
 
 ## HTTP call execution statistics
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statHttpc" className="uitext" />
+
 They collect the statistics of calls outside the applications for 5 minutes via the HTTP and HTTPS protocols. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single application process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
 
-| Columns                       | Description                                                              |
-| ----------------------------- | ------------------------------------------------------------------------ |
-| <Cmdname sid="ITM07683" />    | HTTP call URL hash                                                       |
-| <Cmdname sid="TTL06918" />    | Data randomly collected from one of the URLs that requested the HTTP API |
-| host                          | Host or IP address                                                       |
-| Port                          | TCP port                                                                 |
-| All                           | Total execution count                                                    |
-| Error                         | Error Count                                                              |
-| Time Avg (ms)                 | Average of the total response time                                       |
-| Time Sum (ms)                 | Sum of response times                                                    |
-| Time Min (ms)                 | Minimum response time                                                    |
-| Time Max (ms)                 | Maximum response time                                                    |
+| Columns                         | Description                                                              |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| <Cmdname sid="ITM07683" />      | HTTP call URL hash                                                       |
+| <Cmdname sid="TTL06918" />      | Data randomly collected from one of the URLs that requested the HTTP API |
+| <Cmdname sid="host" />          | Host or IP address                                                       |
+| <Cmdname sid="port" />          | TCP port                                                                 |
+| <Cmdname sid="total" />         | Total execution count                                                    |
+| <Cmdname sid="error" />         | Error Count                                                              |
+| <Cmdname sid="timeAvg_ms" />    | Average of the total response time                                       |
+| <Cmdname sid="timeSum_ms" />    | Sum of response times                                                    |
+| <Cmdname sid="timeMin_ms" />    | Minimum response time                                                    |
+| <Cmdname sid="timeMax_ms" />    | Maximum response time                                                    |
 
 ## Number of calls for each client IP region
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statRemote" className="uitext" />
+
 The physical distance between the server and the client is proportional to the data transfer time. It statistically collects call counts for each region of the client IP. The number of different IPs that can be collected per 5 minutes is up to 70,000 per instance.
 
-| Columns        | Description                 |
-| -------------- | --------------------------- |
-| IP             | Client IP address           |
-| Country/Region | User access country         |
-| City           | User access city            |
-| Count          | Total call count            |
+| Columns                       | Description                 |
+| ----------------------------- | --------------------------- |
+| <Cmdname sid="TTL06081" />    | Client IP address           |
+| <Cmdname sid="country" />     | User access country         |
+| <Cmdname sid="city" />        | User access city            |
+| <Cmdname sid="count" />       | Total call count            |
 
 :::info
 
@@ -191,11 +273,26 @@ The share chart collects user access locations and presents them for each countr
 
 ## Call counts for each user agent
 
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragentDetail" className="uitext" />
+
 The numbers of calls for each hash of the user agent string are collected. There is a maximum of 500 different user agent hashes for each instance that can be collected every 5 minutes.
 
-| Columns              | Description                               |
-| -------------------- | ----------------------------------------- |
-| UserAgent            | User agent of the browser                 |
-| Operating system     | OS environment in which the browser runs  |
-| Browser              | Browser type                              |
-| Count                | Total collection count                    |
+| Columns                        | Description                               |
+| ------------------------------ | ----------------------------------------- |
+| <Cmdname sid="useragent" />    | User agent of the browser                 |
+| <Cmdname sid="os" />           | OS environment in which the browser runs  |
+| <Cmdname sid="browser" />      | Browser type                              |
+| <Cmdname sid="count" />        | Total collection count                    |
+
+## Client Browser Statistics
+
+Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragent" className="uitext" />
+
+By analyzing the user agent strings, it provides the statistical information based on the browser type and OS used by the end users. You can check the market share through a pie chart created based on the collected statistical information.
+
+| Columns                        | Description                               |
+| ------------------------------ | ----------------------------------------- |
+| <Cmdname sid="useragent" />    | User agent of the browser                 |
+| <Cmdname sid="os" />           | OS environment in which the browser runs  |
+| <Cmdname sid="browser" />      | Browser type                              |
+| <Cmdname sid="count" />        | Total collection count                    |

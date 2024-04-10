@@ -50,7 +50,11 @@
 
 - **hook_service_supers** <span class='type'>String</span>
 
-  Set this if the common denominator of the start points for non-HTTP transaction tracing inherits a method from a specific class.
+  If the common denominator of the starting points for NON-HTTP transaction tracing inherits the method of a specific class, set the method of the common denominator. Enter the full path to the method. You can use wildcards ("\*") and register multiple methods by using comma (,) as the delimiter.
+
+  ```ini title="whatap.conf"
+  hook_service_supers=a.b.C.method,a.b.C.*
+  ```
 
 - **hook_service_interfaces** <span class='type'>String</span>
 

@@ -1,9 +1,12 @@
 ---
 id: set-agent
 title: Agent CONFIG.
-description: It provides the default method how to install the Java agent.
+description: The following explains how to configure the Java agent. The whatap.conf file includes the agent's default settings, server connection and data transfer settings, and how to manage the configuration files for multiple application servers. It also provides the way to manage the agent options directly on the WhaTap monitoring service screen.
 tags:
   - Java
+  - Agent
+  - Agent CONFIG.
+  - whatap.conf
 ---
 
 The Whatap agent writes the necessary settings for each agent in _whatap.conf_. The agent locates and loads the configuration file through the environment variables.
@@ -67,7 +70,7 @@ The _whatap.conf_ configuration file must be located in the `${WHATAP_HOME}` pat
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-<!--서비스 화면에서 에이전트 설정하기 start-->
+{/*서비스 화면에서 에이전트 설정하기 start*/}
 
 ## Configuring the agent on the service screen{#set-agent-service}
 
@@ -77,39 +80,53 @@ import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
 
 <Desc name='whatap.conf'/>
 
-<!--Notes-->
+{/*Notes*/}
 
-{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+import Setagentinservicedescnotes from "../common-items/_set-agent-in-service-desc-notes.mdx";
 
-<!--옵션추가하기-->
+<Setagentinservicedescnotes />
 
-{@include: ../common-items/_set-agent-in-service-add-options.mdx}
+{/*옵션추가하기*/}
 
-<!--옵션 수정 또는 삭제 -->
+import Setagentinserviceaddoptions from "../common-items/_set-agent-in-service-add-options.mdx";
 
-{@include: ../common-items/_set-agent-in-service-modify-options.mdx} 
+<Setagentinserviceaddoptions />
 
-<!-- 여러에이전트 동시 적용 -->
+{/*옵션 수정 또는 삭제 */}
 
-{@include: ../common-items/_set-agent-in-service-muli-agent.mdx} 
+import Setagentinservicemodifyoptions from "../common-items/_set-agent-in-service-modify-options.mdx";
 
-<!-- 에이전트 기본값 적용 -->
+<Setagentinservicemodifyoptions /> 
 
-{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx} 
+{/* 여러에이전트 동시 적용 */}
+
+import Setagentinservicemuliagent from "../common-items/_set-agent-in-service-muli-agent.mdx";
+
+<Setagentinservicemuliagent /> 
+
+{/* 에이전트 기본값 적용 */}
+
+import Setagentinserviceapplydafaultdesc from "../common-items/_set-agent-in-service-apply-dafault-desc.mdx";
+
+<Setagentinserviceapplydafaultdesc /> 
 
 import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
 
 <DefaultItems name='whatap.conf'/>
 
-<!--Notes-->
+{/*Notes*/}
 
-{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+import Setagentinservicedefaultnotes from "../common-items/_set-agent-in-service-default-notes.mdx";
 
-<!--설정 공유하기-->
+<Setagentinservicedefaultnotes />
 
-{@include: ../common-items/_set-agent-sharing.mdx}  
+{/*설정 공유하기*/}
 
-<!--서비스 화면에서 에이전트 설정하기 end-->
+import Setagentsharing from "../common-items/_set-agent-sharing.mdx";
+
+<Setagentsharing />  
+
+{/*서비스 화면에서 에이전트 설정하기 end*/}
 
 ## Guide to the agent configuration options
 

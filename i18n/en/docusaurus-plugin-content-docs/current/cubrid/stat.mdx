@@ -1,27 +1,47 @@
 ---
 id: stat
 title: SQL statistics
-description: It provides the statistical data for each DB.
+description: It provides the statistical data for each CUBRID DB.
 tags:
   - CUBRID
   - Database
   - Statistics
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+{/* SQL 통계*/}
 
-<!-- SQL 통계-->
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-{@include: ../common-items/_db-stat-sql-desc.mdx}
+<Dbstatsqldesc /> 
 
-<!-- SQL 통계 기본 사용 안내-->
+{/* SQL 통계 기본 사용 안내 */}
 
-{@include: ../common-items/_db-stat-sql-basic.mdx} 
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-<!-- 쿼리별 수행 추이, 자세히 보기-->
+<Dbstatsqlbasic />
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
+{/* 쿼리별 수행 추이, 자세히 보기*/}
 
-## Checking the information details
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+<Dbstatsqlviewquery /> 
+
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
+
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
+
+{/* 필터 조건추가하기*/}
+
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter />
+
+## Configuring the table columns{#change-column}
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

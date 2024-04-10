@@ -8,19 +8,31 @@ tags:
   - Transactions
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 ## Transaction Tracing
 
-{@include: ../common-items/_transaction-profiling-common.mdx} 
+import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
-{@include: ../common-items/_java-transaction-profiling.mdx}
+<Transactionprofilingcommon /> 
 
-{@include: ../common-items/_java-http-transaction.mdx}
+import Javatransactionprofiling from "../common-items/_java-transaction-profiling.mdx";
 
-{@include: ../common-items/_java-non-http-transaction.mdx}
+<Javatransactionprofiling />
 
-{@include: ../common-items/_java-trace-transaction.mdx} 
+import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
+
+<Javahttptransaction />
+
+import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
+
+<Javanonhttptransaction /> 
+
+import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
+
+<Javatracetransaction /> 
 
 ## Trace data sampling
 

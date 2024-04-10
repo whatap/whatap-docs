@@ -9,7 +9,7 @@ tags:
   - PG SQL統計
 ---
 
-ホーム画面 > プロジェクト選択 > **_統計/レポート_** > **_PG SQL統計_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_pgStat" className="uitext" />
 
 PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) で、`pg_state_statements`ビューを使用して収集します。
 
@@ -21,9 +21,9 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 
 :::
 
-### 設定
+## 使用する前に
 
-**_PG SQL統計_**メニューを使用するには、モニタリング対象DBで次の設定が必要です。
+<Cmdname sid="side_pgStat" className="uitext" />メニューを使用するには、モニタリング対象DBで次の設定が必要です。
 
 1. PostgreSQL拡張パックをインストールしてください。
 
@@ -49,13 +49,15 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
    select * from public.pg_stat_statements
    ```
 
-### 基本画面ガイド
+## 基本画面ガイド
 
 <ImgLang img='db-pg-sql-stat.png' desc='PG SQL統計' />
 
-{@include: ../common-items/_db-product-sql-stat-basic-usage.mdx}
+import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-basic-usage.mdx";
 
-### カラム情報ガイド
+<Dbproductsqlstatbasicusage />
+
+## カラム情報ガイド
 
 | 項目                    | 説明                                                      |
 | --------------------- | ------------------------------------------------------- |
@@ -79,26 +81,28 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 | `temp_blks_read`      | ディスクから読み取った一時ブロックの総数                                    |
 | `temp_blks_written`   | ディスクに書き込みした一時ブロックの総数                                    |
 
-## 統計メニューオプションの利用
-
-### クエリプレビュー
+## クエリプレビュー
 
 ![クエリ文プレビュー](/img/db-sql-preview.png)
 
-照会された結果リストからマウスポインタを**_sql_**カラム項目に移動すると、クエリ文をプレビューすることができます。
+照会された結果リストからマウスポインタを**_query_**カラム項目に移動すると、クエリ文をプレビューすることができます。
 
-### クエリの詳細を見る{#query-details}
+## クエリの詳細を見る{#query-details}
 
 <ImgLang img='db-sql-details-postgresql.png' desc='SQL詳細' />
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
 
-### 参照結果フィルタリング
+<Dbproductsqlstatquerydetails />
 
-<ImgLang img='db-sql-stat-add-filter-postgresql.png' desc='Filtering' />
+{/* 필터 조건추가하기*/}
 
-{@include: ../common-items/_db-product-sql-stat-filtering-result.mdx}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
-### テーブルカラムの設定{#change-column}
+<Dbsqlfilter />
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx} 
+## テーブルカラムの設定{#change-column}
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn /> 

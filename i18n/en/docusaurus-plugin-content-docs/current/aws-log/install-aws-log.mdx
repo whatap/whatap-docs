@@ -9,7 +9,9 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../getting-started/_how-to-start-intro.mdx}
+import Howtostartintro from "../getting-started/_how-to-start-intro.mdx";
+
+<Howtostartintro />
 
 See the following video guide for the installation procedure. 
 
@@ -47,11 +49,15 @@ To collect AWS logs, additional resources are required. WhaTap provides **WhatTa
 
 </details>
 
-<!--  Create Project -->
+{/*  Create Project */}
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 :::note 
 
@@ -103,7 +109,7 @@ Install the **WhatTap Forwarder** for log transmission by using the AWS Lambda f
 
   If the value of `UseReservedConcurrency` is `true`, specify the number of functions to be assigned to the WhaTap Forwarder. The number of assignable functions per AWS account is 1,000. The total number of functions that a user can use is limited to the value obtained by subtracting the `ReservedConcurrency` value from the total number of assignable functions per account (1,000000).
 
-  <!-- You can use the function as many as (number of functions that can be allocated for each AWS account - `ReservedConcurrency` setting). -->
+  {/* You can use the function as many as (number of functions that can be allocated for each AWS account - `ReservedConcurrency` setting). */}
 
 - **cloudfrontPrefix** <span class='type'>String</span>
 
@@ -281,7 +287,7 @@ The IAM policy specifies the following roles:
 
 ### Creating the IAM role{#create-iam-role}
 
-<!-- Specify the roles for the resources created with a specific AWS account ID and map them to the IAM policy created immediately before. -->
+{/* Specify the roles for the resources created with a specific AWS account ID and map them to the IAM policy created immediately before. */}
 
 Specify which AWS accounts are granted roles for the created resources and map the IAM policy you just created. See the **_Create AWS IAM Role_** tab in the WhaTap **_Agent Installation_** > **_Install guide_** section to proceed on. 
 

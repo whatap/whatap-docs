@@ -1,25 +1,30 @@
 ---
 id: install-agent
 title: Agent Installation
-description: Check the agent installation method that can be applied to all application servers running in the JVM environment.
+description: All the steps to install WhaTap's Java application monitoring agent are explained in detail. This section explains how to download and install the agent and how to set the configuration files including the agent's default settings.
 tags:
   - Java
   - Agent
-  - Project
+  - Application
 ---
 
-import DocCardList from '@theme/DocCardList';
-import TR from '@site/src/components/TR';
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+<Agentsignupguide />   
 
 <Youtube ko='2ypjaWhN_VY' en='MnWbsoXw4VE' ja='MnWbsoXw4VE' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+<Createprojectv2 />
 
-{@include: ../common-items/_download-java-agent.mdx}
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 /> 
+
+import Downloadjavaagent from "../common-items/_download-java-agent.mdx";
+
+<Downloadjavaagent />
 
 ### Agent installation file configuration{#agent-files}
 
@@ -53,7 +58,9 @@ The agent file consists of a tracer that extracts data for application monitorin
 
   This application acts as a transit in the proxy server (pass-through server), when the server where the application server operates cannot connect directly to the WhaTap collection server.
 
-{@include: ../common-items/_whatap_conf.mdx}
+import Conf from "../common-items/_whatap_conf.mdx";
+
+<Conf />
 
 ## Adding the JVM options{#addjvmopt}
 

@@ -20,7 +20,7 @@ WhaTap Kubernetesの**_コンテナマップ_**は、Kubernetesモニタリン�
 
 次の動画は、**_コンテナマップ_**メニューに関する基本ガイドです。
 
-{@youtube: GHOJW3Rk3jc}
+<Youtube ko="GHOJW3Rk3jc" en="GHOJW3Rk3jc" ja="GHOJW3Rk3jc" />
 
 ## 基本画面ガイド
 
@@ -198,17 +198,23 @@ WhaTap Kubernetesの**_コンテナマップ_**は、Kubernetesモニタリン�
 
 :::note 
 
-**統合コンテナマップ**
+**統合コンテナマップ**<ScrollToLink anchor='k8s-unified-container-map' />
 
 ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_統合コンテナマップ_**
 
-クラスタープロジェクトとネームスペースプロジェクトを含むコンテナマップを表示するには、リソースメニューの下の統合コンテナマップを確認してください。
+クラスタープロジェクト(<code class='my'>CP</code>)とネームスペースプロジェクト(<code class='my'>Namespace</code>)を含むコンテナマップを照会するには、**_統合コンテナマップ_**を確認してください。
+
+<ImgLang img='k8s-container-map-unified.png' desc='統合コンテナマップ' />
+
+**_統合コンテナマップ_**は、プロジェクト別**_グループ化_**オプションを追加で提供します。**_グループ化_**オプションの中の**_WhaTapProject_**グループ化により、一つの画面でクラスタープロジェクト及びネームスペース個別プロジェクト内のコンテナマップを次のように照会することができます。
+
+![WhaTapProject sc](/img/k8s-container-map-unified-whatapproject.png)
 
 :::
 
-<!-- 
+{/* 
 
 그룹화 옵션
 그룹화할 수 있는 조건을 선택할 수 있습니다. 컨테이너 또는 Pod를 선택한 조건에 따라 카드로 구분해 표시합니다.
 
--->
+*/}

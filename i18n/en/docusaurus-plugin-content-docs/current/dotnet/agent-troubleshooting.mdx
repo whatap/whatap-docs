@@ -8,6 +8,37 @@ tags:
   - Troubleshooting
 ---
 
+If any unexpected problem occurs after installing the .NET agent, check the following and quickly resolve the issue. If the same problem persists, contact [support@whatap.io](mailto:support@whatap.io). Alternatively, you can receive additional supports through the chatting window that appears by selecting the ![Customer Support icon](/img/ico-help.svg) button on the upper right of the service screen.
+
+:::note
+
+When using the email system or chatting window, the agent's log files may be required. The agent's log files are located in the following path:
+
+- `C:\Program Files\WhaTap .NET\logs`
+- `C:\ProgramData\WhaTap` (This path may not exist. In this case, you can ignore it.)
+
+:::
+
+## In case all data is not collected
+
+<ImgLang img='dotnet-apm-troubleshooting-connection-fail.png' desc='' />
+
+If data is not collected from all widgets, check the following:
+
+- Make sure that the project **access key** and **collection server information** have been entered in the _whatap.conf_ file for agent configuration.
+
+- Check the firewall settings for the server. The port 6600 must have been open for outbound connections.
+
+## In case the hitmap data is not collected
+
+<ImgLang img='dotnet-apm-troubleshooting-none-hitmap.png' desc='' />
+
+Check the support environment for your applications. For more information about the support environment for monitoring .NET applications, see [the following](supported-spec). Even if the .NET version of the server corresponds to the support environment, when the application version is not .NET Framework 4.5 or later, data collection for monitoring may not be smooth.
+
+## In case it is difficult to check the scope of support or the application is found eligible for support
+
+Contact us by sending the _web.config_ file of the target application to [support@whatap.io](mailto:support@whatap.io). If possible, it is recommended to send the project file (_.csproj_) of the target application.
+
 ## Checking the system environment variables
 
 Execute the `sysdm.cpl` command to open the **_System Properties_** window. Click **_Advanced_** > **_Boot Environment_** and check if the system environment variables have been registered properly.
@@ -20,7 +51,7 @@ System environment variables are automatically registered during agent installat
 
   The CLR profiler is enabled.
 
-- **COR_PROFILER = {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}**
+- **COR_PROFILER = \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}**
 
   This GUID is used when registering the WhaTap CLR profiler to the API. It is the fixed value.
 

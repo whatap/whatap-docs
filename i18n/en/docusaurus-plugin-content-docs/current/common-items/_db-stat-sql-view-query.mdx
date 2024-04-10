@@ -1,6 +1,6 @@
 ## Checking the query-based execution trend
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,oracle,cubrid,mssql'>
 
 On the utmost left for each item of the table, select ![number1](/img/number-01.png) ►. A chart appears that displays the number of executions every 5 minutes and the average execution time of the query statement. If you hover your mouse over each bar graph, you can see the number of that time.
 
@@ -8,17 +8,31 @@ To classify and view data by usage category, select the desired tab from ![numbe
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle,cubrid'>
+
+To classify and view data by usage category, select the desired tab from ![number2](/img/number-02.png).
 
 On the utmost left for each item of the table, select ![number3](/img/number-03.png) ►. A chart appears that displays the number of executions every 5 minutes and the average execution time of the query statement. If you hover your mouse over each bar graph, you can see the number of that time.
 
+</InDoc>
+
+<InDoc product="postgresql,mysql">
+
 :::note
 
-If you select a bar graph for the desired time in the graph chart, the **_Instance Monitoring_** menu appears. You can see the metrics for the selected time. For more information about instance monitoring, see [the following](instance-monitoring).
+If you select a bar graph for the desired time in the graph chart, the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu appears. You can see the metrics for the selected time. For more information about <Cmdname sid="side_dbMonitoring" className="uitext" />, see [the following](instance-monitoring).
 
 :::
 
-To classify and view data by usage category, select the desired tab from ![number2](/img/number-02.png).
+</InDoc>
+
+<InDoc product="oracle,cubrid">
+
+:::note
+
+If you select a bar graph for the desired time in the graph chart, the <Cmdname sid="side_dbTrend" className="uitext" /> menu appears. You can see the metrics for the selected time. For more information about <Cmdname sid="side_dbTrend" className="uitext" />, see [the following](analysis-count-trend).
+
+:::
 
 </InDoc>
 
@@ -27,35 +41,3 @@ To classify and view data by usage category, select the desired tab from ![numbe
 ![Query preview](/img/db-sql-preview.png)
 
 You can preview the query statement by moving the mouse pointer to the **_sql_** column in the search results list.
-
-## See details
-
-<Xclude product='postgresql,postgresql-v1,mysql'>
-
-Select the ![number3](/img/number-03.png) query statement. The <Cmdname sid="TTL06224" className="uitext" /> window appears, where you can check the query statement and SQL plan in detail.
-
-<ImgLang img="db-sql-details-common.png" desc="SQL details" />
-
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
-
-</Xclude>
-
-<InDoc product='postgresql,postgresql-v1'>
-
-If you select **_sql_** from the searched result list, the <Cmdname sid="TTL06224" className="uitext" /> window appears.
-
-<ImgLang img="db-sql-details-postgresql.png" desc="SQL details" />
-
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
-
-</InDoc>
-
-<InDoc product='mysql'>
-
-If you select **_sql_** from the searched result list, the <Cmdname sid="TTL06224" className="uitext" /> window appears.
-
-<ImgLang img="db-sql-details-common.png" desc="SQL details" />
-
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
-
-</InDoc>

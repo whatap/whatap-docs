@@ -1,10 +1,12 @@
 ---
 id: spring-boot
 title: Spring Boot
-description: Spring Bootアプリケーションサーバ環境で、JVMオプションの追加設定を完了してください。
+description: WhaTapモニタリングソリューションをSpring Bootアプリケーションに統合するためのJVM(Java Virtual Machine) オプションの追加方法についての詳細な案内を提供します。ユーザーは本文書を通じて、Javaエージェントのインストール後、Spring Bootアプリケーションの性能および可用性モニタリングのために必要なJVM設定を適用する方法を段階別に確認することができます。エージェントのインストール過程の中で必須JVMオプションの構成とSpring Bootとの円滑な統合のための最適な設定方法、ヒストグラムの照会方法が含まれています。
 tags:
   - Java
   - Spring Boot
+  - アプリケーション
+  - エージェント
 ---
 
 Spring Bootを使用するアプリケーションサーバー環境でJVMオプションを追加する方法を確認してください。
@@ -102,8 +104,12 @@ JVMオプションを追加した後、使用するSpring Bootのバージョン
   weaving=webflux-5.3
   ```
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

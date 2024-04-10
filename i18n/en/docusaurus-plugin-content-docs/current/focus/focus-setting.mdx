@@ -14,7 +14,9 @@ You can upload any collected data from the WhaTap project. Focus can be used eve
 
 ## Checking the project access key and collection server IP
 
-{@include: ../common-items/_check-pak-ip.mdx}
+import Checkpakip from "../common-items/_check-pak-ip.mdx";
+
+<Checkpakip />
 
 ## Sending alerts
 
@@ -55,7 +57,7 @@ $message=Desired alert body
 
 ## Collecting the SQL query result
 
-It collects the execution results of user-defined SQL queries in time series indefinitely.
+It collects the execution results of custom SQL queries in time series indefinitely.
 
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
@@ -231,4 +233,6 @@ Reprocessing in the json format | \
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST
 ```
 
-{@include: ../common-items/_top-collect-cpu-memory.mdx}
+import Topcollectcpumemory from "../common-items/_top-collect-cpu-memory.mdx";
+
+<Topcollectcpumemory />

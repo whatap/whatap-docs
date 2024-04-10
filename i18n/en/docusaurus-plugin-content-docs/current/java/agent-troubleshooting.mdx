@@ -1,7 +1,7 @@
 ---
 id: agent-troubleshooting
 title: Troubleshooting
-description: It allows checking problems that may occur when installing the Java agent.
+description: The following provides various problems that may occur during installation of a Java agent and detailed instructions for resolving them. It provides solutions to various issues such as firewall settings, SpringBoot and Tomcat JMX settings, server settings for use of the OSGI framework, Log Manager and MBeanServerBuilder errors, Permission errors, and Sigar library problems.
 toc_max_heading_level: 2
 tags:
   - Java
@@ -9,16 +9,30 @@ tags:
   - Troubleshooting
 ---
 
-{@include: ../common-items/_check-firewall.mdx}
+import Checkfirewall from "../common-items/_check-firewall.mdx";
 
-{@include: ../common-items/_springboot-jmx-off.mdx}
+<Checkfirewall />
 
-{@include: ../common-items/_osgi-framework.mdx}
+import Springbootjmxoff from "../common-items/_springboot-jmx-off.mdx";
 
-{@include: ../common-items/_log-manager-error.mdx}
+<Springbootjmxoff />
 
-{@include: ../common-items/_mbeanserverbuilder-error.mdx}
+import Osgiframework from "../common-items/_osgi-framework.mdx";
 
-{@include: ../common-items/_permission-error.mdx}
+<Osgiframework />
 
-{@include: ../common-items/_sigar-library-error.mdx}
+import Logmanagererror from "../common-items/_log-manager-error.mdx";
+
+<Logmanagererror />
+
+import Mbeanserverbuildererror from "../common-items/_mbeanserverbuilder-error.mdx";
+
+<Mbeanserverbuildererror />
+
+import Permissionerror from "../common-items/_permission-error.mdx";
+
+<Permissionerror />
+
+import Sigarlibraryerror from "../common-items/_sigar-library-error.mdx";
+
+<Sigarlibraryerror />

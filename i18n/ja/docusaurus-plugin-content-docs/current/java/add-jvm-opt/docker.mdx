@@ -1,10 +1,12 @@
 ---
 id: docker
 title: Docker
-description: Docker環境でWhaTapエージェントの適用を完了します。
+description: ドッカー(Docker)環境でJavaアプリケーションにWhaTap Javaモニタリングエージェントを適用する方法を段階別に案内します。ユーザーは、既存のDockerのイメージにWhaTap Javaエージェント設定を追加して新しいイメージをビルドする過程、whatap.confファイルの作成、Dockerfileの作成、JAVA_OPTの修正方法などを確認することができます。また、Java 17以降のバージョンで必要な追加JVMオプションと様々なJavaバージョンによるヒストグラムの照会設定方法も提供します。
 tags:
   - Java
   - Docker
+  - アプリケーション
+  - エージェント
 ---
 
 ## エージェントの適用
@@ -13,7 +15,7 @@ tags:
 
 :::note
 
-本文では、Javaエージェントをインストールする方法を説明します。WhaTap Kubernetesモニタリングを適用する場合は、別の手順を参照してください。
+この文書では、Javaエージェントをインストールする場合のみを扱います。WhaTap Kubernetesモニタリングと一緒に適用する場合、[次の文書](../../kubernetes/install-docker-java)を参考にしてください。
 
 :::
 
@@ -68,7 +70,9 @@ tags:
 
 :::note
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
@@ -84,8 +88,12 @@ java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.Rename -from whatap.agent-X.Y
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

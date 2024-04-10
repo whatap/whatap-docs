@@ -11,23 +11,25 @@ tags:
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-{@include: ../common-items/_db-sql-static.mdx}
+import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
 
-{@include: ../common-items/_db-trend-by-query.mdx}  
+<Dbsqlstatic />
 
-{@include: ../common-items/_db-detail-view-query.mdx} 
+import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
 
-### Checking the information details
+<Dbtrendbyquery />  
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
 
-<!-- mysql, mariadb 지원 -->
+<Dbdetailviewquery /> 
 
-<!-- {@include: ../common-items/_db-database-size.mdx} -->
+{/* mysql, mariadb 지원 */}
 
-<!-- oracle, tibero -->
+{/* {@include: ../common-items/_db-database-size.mdx} */}
 
-<!-- {@include: ../common-items/_db-tablespace-size.mdx}-->
+{/* oracle, tibero */}
+
+{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
 
 ## Tablespace Size
 
@@ -57,4 +59,6 @@ Set the **_time_** and **_instance_** and then select ![Search icon](/img/ico-bt
 
 ## SGA size
 
-{@include: ../common-items/_db-sga-size.mdx}
+import Dbsgasize from "../common-items/_db-sga-size.mdx";
+
+<Dbsgasize />

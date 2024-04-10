@@ -1,18 +1,26 @@
 ---
 id: dashboard-intro
 title: Dashboard
-description: The WhaTap monitoring dashboard provides functions to understand the overall status of a project at a glance.
+description: The WhaTap monitoring dashboard provides functions to understand the overall status of the Redis DB project at a glance.
 tags:
   - Redis
   - Dashboard
   - Instance
-  - Database Monitoring
+  - Database
 ---
 
-{@include: ../common-items/_db-dashboard-intro.mdx}  
+import Dbdashboardintro from "../common-items/_db-dashboard-intro.mdx";
 
-{@include: ../common-items/_db-dashboard-instance-list.mdx}
+<Dbdashboardintro />  
 
-{@include: ../common-items/_db-dashboard-instance-monitoring.mdx}  
+import Dbdashboardinstancelist from "../common-items/_db-dashboard-instance-list.mdx";
 
-{@include: ../common-items/_db-dashboard-multi-instance-monitoring.mdx}
+<Dbdashboardinstancelist />
+
+import Dbdashboardinstancemonitoring from "../common-items/_db-dashboard-instance-monitoring.mdx";
+
+<Dbdashboardinstancemonitoring />  
+
+import Dbdashboardmultiinstancemonitoring from "../common-items/_db-dashboard-multi-instance-monitoring.mdx";
+
+<Dbdashboardmultiinstancemonitoring />

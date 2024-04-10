@@ -1,15 +1,17 @@
 ---
 id: play2
 title: Play2
-description: Complete the additional settings for JVM options in the Play2 application server environment.
+description: The following explains how to add the Java Virtual Machine (JVM) option to integrate the WhaTap monitoring solution into the Play2 applications. Through this document, you can learn step by step how to apply the required JVM settings to monitor the performance and availability of Play2 applications after installing the Java agent. It includes the configuration of required JVM options during agent installation, optimal configuration for smooth integration with Play2, and how to view the histogram.
 tags:
   - Java
   - Play2
+  - Application
+  - Agent
 ---
 
 ## Adding JVM options
 
-Check the method how to add JVM options in the application server environment using Play2. 
+This explains how to add required JVM options to effectively use the Java monitoring agent in the Play2 application server environment.
 
 Set the agent options in the _$PLAY_HOME/framework/build_ file. If you have a separate startup or stop script, apply it to that file.
 
@@ -35,12 +37,18 @@ For Play, add the `-Dwhatap.play2=2.2.6` option other than the default settings.
 
 :::note
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory /> 
 
 ## Starting the monitoring
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

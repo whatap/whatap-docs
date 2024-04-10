@@ -1,9 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
+const {rehypeExtendedTable} = require("rehype-extended-table");
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -90,32 +91,21 @@ module.exports = Promise.resolve({
       },
     ],
     [
-      '@whatap-docs/docusaurus-plugin-includes',
-      {
-        embeds: [
-          {
-            key: 'youtube',
-            embedFunction: function(code) {
-              return '<div class="video-container"><iframe width="800" height="500" type="text/html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/' + code + '"></iframe></div>'
-            }      
-          },
-          {
-            key: 'video',
-            embedFunction: function(code) {
-              return '<div class="video-container"><video type="video/mp4" autoplay="true" loop="true" muted="true" width="100%" height="auto" class="p-video"><source src="'+ code + '"/></video></div>'
-            }
-          }
-        ]
-      }
-    ],
-    [
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
   markdown: {
     mermaid: true,
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    '@saucelabs/theme-github-codeblock'
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -125,7 +115,7 @@ module.exports = Promise.resolve({
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          rehypePlugins: [rehypeTableMerge],
+          rehypePlugins: [ rehypeExtendedTable ],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
@@ -135,6 +125,7 @@ module.exports = Promise.resolve({
           customCss: require.resolve('./src/css/custom.scss'),
         },
         sitemap: {
+          lastmod: 'date',
           changefreq: 'always',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
@@ -630,9 +621,6 @@ module.exports = Promise.resolve({
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        theme: darkCodeTheme,
-        darkTheme: darkCodeTheme,
-        // reference: https://prismjs.com/#supported-languages
         additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
         // 
       },

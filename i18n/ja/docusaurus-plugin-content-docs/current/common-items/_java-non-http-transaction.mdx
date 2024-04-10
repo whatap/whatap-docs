@@ -50,7 +50,11 @@
 
 - **hook_service_supers** <span class='type'>String</span>
 
-  NON-HTTPトランザクション追跡のための開始点の共通分母が特定クラスのメソッドを継承した場合、これを設定します。
+  NON-HTTPトランザクション追跡のための始点の共通分母が特定のクラスのメソッドを継承した場合、共通分母のメソッドを設定します。メソッド全体のパスを入力してください。ワイルドカード(`*`)が使用でき、コンマ(,)を区切り文字として利用して複数のメソッドを登録することができます。
+
+  ```ini title="whatap.conf"
+  hook_service_supers=a.b.C.method,a.b.C.*
+  ```
 
 - **hook_service_interfaces** <span class='type'>String</span>
 

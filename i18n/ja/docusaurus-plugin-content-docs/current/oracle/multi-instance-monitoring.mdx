@@ -10,40 +10,54 @@ tags:
   - マルチインスタンスモニタリング
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import InDoc from '@site/src/components/InDoc.js';
+{/* 개요 */}
 
-<!-- 개요 -->
+import Dbmulitinstancemonitoringdesc from "../common-items/_db-mulit-instance-monitoring-desc.mdx";
 
-{@include: ../common-items/_db-mulit-instance-monitoring-desc.mdx}
+<Dbmulitinstancemonitoringdesc />
 
-<!-- Notes -->
+{/* Notes */}
 
-{@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
+import Dbmultiinstancemonitoringdescnotes from "../common-items/_db-multi-instance-monitoring-desc-notes.mdx";
 
-<!-- 기본 화면 안내 -->
+<Dbmultiinstancemonitoringdescnotes /> 
 
-{@include: ../common-items/_db-multi-instance-monitoring-basic.mdx} 
+{/* 기본 화면 안내 */}
 
-<!-- 지표 선택하기 -->
+import Dbmultiinstancemonitoringbasic from "../common-items/_db-multi-instance-monitoring-basic.mdx";
 
-{@include: ../common-items/_db-select-metric-data-widget.mdx}   
+<Dbmultiinstancemonitoringbasic /> 
 
-<!-- 레이아웃 설정하기 -->
+{/* 지표 선택하기 */}
 
-{@include: ../common-items/_db-set-layout.mdx}   
+import Dbselectmetricdatawidget from "../common-items/_db-select-metric-data-widget.mdx";
 
-<!-- 액티브 세션 영역 활용하기 -->
+<Dbselectmetricdatawidget />   
 
-{@include: ../common-items/_db-using-area-active-session.mdx}
+{/* 레이아웃 설정하기 */}
+
+import Dbsetlayout from "../common-items/_db-set-layout.mdx";
+
+<Dbsetlayout />   
+
+{/* 액티브 세션 영역 활용하기 */}
+
+import Dbusingareaactivesession from "../common-items/_db-using-area-active-session.mdx";
+
+<Dbusingareaactivesession /> 
+
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
 
 ## テーブルカラムの変更{#change-column}
 
-{@include: ../common-items/_db-data-edit-column.mdx}
+import Dbdataeditcolumn from "../common-items/_db-data-edit-column.mdx";
 
-{@include: ../common-items/_db-query-details.mdx} 
+<Dbdataeditcolumn />
 
-<!-- 컬럼 정보 안내 -->
+{/* 컬럼 정보 안내 */}
 
-{@include: ../common-items/_db_oracle-column.mdx} 
+import Oraclecolumn from "../common-items/_db_oracle-column.mdx";
+
+<Oraclecolumn /> 

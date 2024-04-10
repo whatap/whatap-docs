@@ -9,28 +9,48 @@ tags:
   - Application
 ---
 
-{@include: ../common-items/_dashboard-txmap-desc.mdx} 
+import Dashboardtxmapdesc from "../common-items/_dashboard-txmap-desc.mdx";
 
-<!-- 트레이스 분석하기-->
+<Dashboardtxmapdesc /> 
 
-{@include: ../common-items/_dashboard-txmap-analysis.mdx}
+{/* 트레이스 분석하기*/}
 
-<!-- 조회 기준 변경하기-->
+import Dashboardtxmapanalysis from "../common-items/_dashboard-txmap-analysis.mdx";
 
-{@include: ../common-items/_dashboard-txmap-set-view.mdx}
+<Dashboardtxmapanalysis />
 
-<!-- 과거 데이터 조회하기-->
+{/* 조회 기준 변경하기*/}
 
-{@include: ../common-items/_dashboard-txmap-view-past-time.mdx} 
+import Dashboardtxmapsetview from "../common-items/_dashboard-txmap-set-view.mdx";
 
-<!-- 필터 적용하기-->
+<Dashboardtxmapsetview />
 
-{@include: ../common-items/_dashboard-txmap-apply-filter.mdx}
+{/* 과거 데이터 조회하기*/}
 
-<!-- 에이전트 확인하기-->
+import Dashboardtxmapviewpasttime from "../common-items/_dashboard-txmap-view-past-time.mdx";
 
-{@include: ../common-items/_apm-dashboard-check-agent.mdx}
+<Dashboardtxmapviewpasttime /> 
 
-<!-- 상위 목록 확인하기-->
+{/* 필터 적용하기*/}
 
-{@include: ../common-items/_dashboard-txmap-top-list.mdx} 
+import Dashboardtxmapapplyfilter from "../common-items/_dashboard-txmap-apply-filter.mdx";
+
+<Dashboardtxmapapplyfilter />
+
+{/* 에이전트 확인하기*/}
+
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
+
+<Apmdashboardcheckagent />
+
+{/* 상위 목록 확인하기*/}
+
+import Dashboardtxmaptoplist from "../common-items/_dashboard-txmap-top-list.mdx";
+
+<Dashboardtxmaptoplist /> 
+
+{/* 사용자 IP 주소 추가*/}
+
+import Dashboardtxmapcustomip from "../common-items/_dashboard-txmap-custom-ip.mdx";
+
+<Dashboardtxmapcustomip />

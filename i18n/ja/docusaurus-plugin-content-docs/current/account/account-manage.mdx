@@ -6,7 +6,9 @@ description: WhaTapモニタリングサービスを利用するには、会員�
 
 ## 会員登録
 
-{@include: _create-account.mdx} 
+import Createaccount from "./_create-account.mdx";
+
+<Createaccount /> 
 
 ## パスワード設定
 
@@ -42,13 +44,17 @@ description: WhaTapモニタリングサービスを利用するには、会員�
 
 電子メール通知、SMS、モバイルなどの通知受信の媒体を設定することができます。 
 
-<!-- SMS 알림 수신 추가하기 -->
+{/* SMS 알림 수신 추가하기 */}
 
-{@include: ../common-items/_set-receive-event-sms.mdx} 
+import Setreceiveeventsms from "../common-items/_set-receive-event-sms.mdx";
 
-<!-- WhatsApp 알림 수신-->
+<Setreceiveeventsms /> 
 
-{@include: ../common-items/_set-receive-event-whatsapp.mdx} 
+{/* WhatsApp 알림 수신*/}
+
+import Setreceiveeventwhatsapp from "../common-items/_set-receive-event-whatsapp.mdx";
+
+<Setreceiveeventwhatsapp /> 
 
 ### 受信レベル及び通知時間の設定
 
@@ -74,7 +80,7 @@ APIトークンは、OpenAPIを通じて収集中のモニタリング情報を�
 
 :::note
 
-Open APIの詳細については、[次の文書](openapi)を参考にしてください。
+Open APIの詳細については、[次の文書](../openapi)を参考にしてください。
 
 :::
 

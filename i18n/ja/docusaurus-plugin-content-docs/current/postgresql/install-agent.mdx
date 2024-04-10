@@ -12,84 +12,167 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />   
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
 
-## WhaTapデータベースエージェントのダウンロード
+## 構成図の確認
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+DBXエージェントは、別途サーバーにインストールするか、DBサーバーにインストールすることができます。インストールする方法を選択し、構成とファイアウォールを確認してください。
 
-3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+<div class='db-agent'>
 
-   ```ini title='whatap.conf'
-   license=プロジェクトアクセスキー
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+|                          別途サーバーにインストール                          |                       DBサーバーに一緒にインストール                       |
+| :-------------------------------------------------------------: | :----------------------------------------------------------: |
+| <ImgLang img='dbx-install-agent-on-agent-server.png' desc='' /> | <ImgLang img='dbx-install-agent-on-db-server.png' desc='' /> |
 
-   dbms=postgresql
-   db=postgres
-   db_ip={DBサーバーのIPアドレス}
-   db_port={DBサーバーのポート番号} 
-   ```
+</div>
 
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+{/* 모니터링용 계정 생성*/}
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
-   **PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
+<Dbcreatemonitoringaccount />
 
-<!-- 공통 Notes-->
+機能と使用環境に応じて追加権限を付与してください。
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+- PostgreSQL 10バージョン以降
 
-<!-- 모니터링용 계정 생성-->
+  ```sql title="SQL"
+  create user whatap with password 'DB Password'; 
+  grant pg_read_all_stats to whatap;
+  ```
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+- PostgreSQL 10バージョン未満
 
-<!-- PostgreSQL-->
+  ```sql title="SQL"
+  create user whatap with password 'DB Password';
+  alter user whatap with superuser;
+  ```
 
-```bash showLineNumbers
-# 10バージョン以降
-create user whatap with password 'DB Password'; # 希望するpasswordを入力してください。
-grant pg_read_all_stats to whatap;
- 
-# 10バージョン未満
-create user whatap with password 'DB Password'; # 希望するpasswordを入力してください。
-alter user whatap with superuser;
- 
-# kill session使用時
-alter user whatap with superuser;
-grant rds_superuser to whatap; # AWS RDS使用時
+- Kill sessionを使用する場合
 
-# wal_count 収集時
-grant execute on function pg_ls_dir(text) to whatap;  #EDB使用時
-alter user whatap with superuser;
+  データベースモニタリングでは、進行中のセッションを終了できる<UI>Kill Session</UI>機能を提供します。この機能を使用するには、次のように権限を設定してください。
 
-# cache収集時
-grant select on pg_backend_memory_contexts to whatap;
-grant execute on function pg_get_backend_memory_contexts to whatap;
+  ```sql title="SQL"
+  alter user whatap with superuser;
+  ```
 
-# テーブルサイズ収集時
-grant usage on schema {schema_name} to whatap;
+- AWS RDS環境でKill session機能を使用する場合
 
-# オブジェクト情報照会時
-grant select on all tables in schema {schema_name} to whatap;
+  ```sql title="SQL"
+  grant rds_superuser to whatap;
+  ```
+
+- wal_countを収集する場合
+
+  ```sql title="SQL"
+  grant execute on function pg_ls_dir(text) to whatap;  # EDB使用時
+  alter user whatap with superuser;
+  ```
+
+- cacheを収集する場合
+
+  ```sql title="SQL"
+  grant select on pg_backend_memory_contexts to whatap;
+  grant execute on function pg_get_backend_memory_contexts to whatap;
+  ```
+
+- テーブルサイズを収集する場合
+
+  ```sql title="SQL"
+  grant usage on schema {schema_name} to whatap;
+  ```
+
+- オブジェクト情報を照会する場合(<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbObjectInfo" className="uitext" />)
+
+  ```sql title="SQL"
+  grant select on all tables in schema {schema_name} to whatap;
+  ```
+
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
+
+## DBXエージェントダウンロード
+
+DBXエージェントファイルをダウンロードしてください。次の2つの方法を利用してください。
+
+- `wget`コマンドを使用してダウンロードできます。
+
+  ```bash title="BASH"
+  wget -O whatap.agent.database.tar.gz https://dev.whatap.io/download/agent/whata.agent.database.tar.gz
+  ```
+
+- コマンドでダウンロードできない場合は、WhaTapモニタリングサービス画面で**_Download_**ボタンを選択してください。
+
+DBXエージェントファイルをダウンロードして圧縮を解凍してください。
+
+```bash title="BASH"
+tar -zxvf whatap.agent.database.tar.gz
 ```
 
-## DBユーザーファイルの作成{#create-db-user}
+## DBXエージェントの設定
+
+エージェントのインストール画面のガイドに従って、エージェントの設定を進めてください。画面に各項目ごとに必要な情報を入力すると、設定内容とコマンドを自動的に完成させることができます。
+
+:::tip
+
+DBXエージェントの構成ファイルの中で_setup.sh_ファイルを実行して、エージェントの設定を迅速かつ簡単に進めることができます。詳しい内容は<Link to="install-agent-quick-setup" target="_blank">次の文書</Link>を参考にしてください。
+
+:::
+
+### whatap.conf設定
+
+解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+dbms=postgresql
+db=postgres
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
+```
+
+### JDBCダウンロード
+
+圧縮ファイルを解凍したDBXエージェント経路にデータベースサーバーのOSとバージョンに合うJDBCドライバーをダウンロードしてください。`/圧縮を解凍したフォルダ/jdbc`
+
+:::info
+
+**PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
+
+:::
+
+{/* 공통 Notes*/}
+
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
+
+<Dbinstallagentcommonnotes />
+
+### DBユーザーファイルの作成{#create-db-user}
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
 
-<!--## 에이전트 실행-->
+<Dbcreatedbuserfilebody /> 
 
-{@include: ../common-items/_db-run-agent.mdx} 
+{/*모니터링 시작하기*/}
 
-<!--## XOS 에이전트 설치-->
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+<Dbrunagent />
+
+{/*XOS 에이전트 설치*/}
+
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent /> 

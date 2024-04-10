@@ -1,10 +1,12 @@
 ---
 id: resin
 title: Resin
-description: Resinアプリケーションサーバ環境でJVMオプションの追加設定を完了してください。
+description: WhaTapモニタリングソリューションをResinアプリケーションに統合するためのJVM(Java Virtual Machine) オプションの追加方法についての詳細な案内を提供します。ユーザーは本文書を通じて、Javaエージェントのインストール後、Resinアプリケーションの性能および可用性モニタリングのために必要なJVM設定を適用する方法を段階別に確認することができます。エージェントのインストール過程の中で必須JVMオプションの構成とResinとの円滑な統合のための最適な設定方法、ヒストグラムの照会方法が含まれています。
 tags:
   - Java
   - Resin
+  - アプリケーション
+  - エージェント
 ---
 
 ## JVMオプションの追加
@@ -33,7 +35,7 @@ jvm_args : -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar
 ```
 
 ```xml title="resin.conf | resin.xml"
-<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
+<jvmarg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
 ```
 
 ### Java 9 ~ Java 15バージョン
@@ -43,8 +45,8 @@ jvm_args : -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAtt
 ```
 
 ```xml title="resin.conf | resin.xml"
-<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
-<jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
+<jvmarg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
+<jvmarg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
 ```
 
 ### Java 16バージョン以降
@@ -54,14 +56,18 @@ jvm_args : -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAtt
 ```
 
 ```xml title="resin.conf | resin.xml"
-<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
-<jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
-<jvm-arg>--add-opens=java.base/java.lang=ALL-UNNAMED</jvm-arg> <!-- Java 17 or later -->
-<jvm-arg>--add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED</jvm-arg>
+<jvmarg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
+<jvmarg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
+<jvmarg>--add-opens=java.base/java.lang=ALL-UNNAMED</jvm-arg> {/* Java 17 or later */}
+<jvmarg>--add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED</jvm-arg>
 ```
 
-{@include: _set-heap-memory.mdx}
+import Setheapmemory from "./_set-heap-memory.mdx";
+
+<Setheapmemory />
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx} 
+import Startapm from "../../common-items/_start-apm.mdx";
+
+<Startapm /> 

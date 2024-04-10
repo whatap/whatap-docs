@@ -1,7 +1,7 @@
 ---
 id: troubleshooting
 title: Troubleshooting
-description: You can check the problems that may occur during database agent installation.
+description: You can check the problems that may occur during Redis database agent installation.
 tags:
   - Redis
   - Database
@@ -11,12 +11,20 @@ tags:
 
 Check for possible problems upon database agent installation.
 
-{@include: ../common-items/_db-check-firewall-setting.mdx}
+import Dbcheckfirewallsetting from "../common-items/_db-check-firewall-setting.mdx";
 
-{@include: ../common-items/_db-how-to-check-firewal.mdx}
+<Dbcheckfirewallsetting />
+
+import Dbhowtocheckfirewal from "../common-items/_db-how-to-check-firewal.mdx";
+
+<Dbhowtocheckfirewal />
 
 ## Constraints
 
-{@include: ../common-items/_db-multi-region-cant-select-one-pr.mdx}
+import Dbmultiregioncantselectonepr from "../common-items/_db-multi-region-cant-select-one-pr.mdx";
 
-{@include: ../common-items/_db-cant-use-duplicated-name.mdx}
+<Dbmultiregioncantselectonepr />
+
+import Dbcantuseduplicatedname from "../common-items/_db-cant-use-duplicated-name.mdx";
+
+<Dbcantuseduplicatedname />

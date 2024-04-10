@@ -1,15 +1,20 @@
 ---
 id: agent-name
 title: エージェント名の識別
-description: モニタリング対象を識別するエージェント名を設定する方法を提供します。
+description: モニタリング対象を区別するためのアプリケーションサーバーの固有の識別子設定について案内します。モニタリング対象システム内でアプリケーションサーバーを正確に区切るために不可欠です。サーバータイプ、IPなどの情報に基づいた自動名前指定方式と、ユーザーが直接whatap.confファイルやJVMオプションでエージェント名を設定する方法を確認することができます。
 tags:
   - Java
-  - エージェント名
+  - エージェント設定
+  - whatap.conf
 ---
 
-{@include: ../common-items/_apm-name-description.mdx}
+import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
-{@include: ../common-items/_agent-name-warning.mdx}
+<Apmnamedescription />
+
+import Agentnamewarning from "../common-items/_agent-name-warning.mdx";
+
+<Agentnamewarning />
 
 :::note
 
@@ -61,4 +66,6 @@ JVMオプションで`whatap.oname`設定がない場合、エージェント名
 
 次は、_whatap.conf_ファイルにエージェント名で適用できるオプションです。
 
-{@include: ../common-items/_java-agent-name.mdx} 
+import Javaagentname from "../common-items/_java-agent-name.mdx";
+
+<Javaagentname /> 

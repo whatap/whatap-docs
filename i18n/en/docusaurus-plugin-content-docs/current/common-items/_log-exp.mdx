@@ -1,4 +1,8 @@
-{@include: ../common-items/_log-role-view.mdx}
+import Logroleview from "../common-items/_log-role-view.mdx";
+import Logagentoption from "../common-items/_log-agent-option.mdx";
+import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+
+<Logroleview />
 
 <Xclude product='aws-log'>
 
@@ -12,7 +16,7 @@ Home > Select Project > **_Dashboard_** > **_Log Trend_**
 
 </InDoc>
 
-In **_Log Trend_**, you can check the occurrence pattern of a specific error type through the number of logs classified by type, and check detailed log data by hour. A highlight feature allows you to quickly identify the desired logs. You can search the trend of logs collected by category. {@include: ../common-items/_log-ui-main-term.mdx}
+In **_Log Trend_**, you can check the occurrence pattern of a specific error type through the number of logs classified by type, and check detailed log data by hour. A highlight feature allows you to quickly identify the desired logs. You can search the trend of logs collected by category. <Loguimainterm />
 
 <ImgLang img='log-trend.png' desc='로그 트렌드'/>
 
@@ -32,13 +36,13 @@ In **_Log Trend_**, you can check the occurrence pattern of a specific error typ
 
 - ![number-s](/img/number-04.png) In Side menu, you can see the logs filtered by tags. Up to two search keys can be selected, and multiple search values can be selected.
 
-- {@include: ../common-items/_log-agent-option.mdx}
+- <Logagentoption />
 
 ## Checking the log content
 
-{@include: ../common-items/_log-ui-log-content.mdx} 
+import Logcontentscheck from "../common-items/_log-contents-check.mdx";
 
-- ![number-s](/img/number-03.png) For each row (log) of the log table, the ![Icon](/img/ic-caret-right.svg) **_More_** button exists. If you select the ![Icon](/img/ic-caret-right.svg) **_More_** button, you can check the entire content of the log like ![number-s](/img/number-05.png).
+<Logcontentscheck />
 
 ## Viewing the logs with a chart
 
@@ -54,8 +58,36 @@ In **_Log Trend_**, you can check the occurrence pattern of a specific error typ
 
 ## Highlight
 
-{@include: ../common-items/_log-highlight.mdx} 
+import Loghighlight from "../common-items/_log-highlight.mdx";
+
+<Loghighlight /> 
 
 ## Setting the table
 
-- Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx}
+import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
+
+<Loguitablesetting />
+
+{/* The ***Table settings*** menu can be used in ***Live Tail***, ***Log Search***, and ***Log Trend***. 
+
+### Add the column 
+
+### Set the table content 
+
+Highlight
+![](https://img.whatap.io/media/images/logexplorer_009_highlight.png)
+
+*/}
+
+{/* Screen restructuring with the function after holding
+## ![](/img/number-01.png) Time and Category
+
+It specifies a specific time period and collection unit for the log data to be explored. When the scroll reaches the bottom, the data is viewed.
+
+## ![](/img/number-02.png) View Bar Chart
+
+## ![](/img/number-03.png) View Table
+
+## ![](/img/number-04.png) Search key navigation
+
+*/}

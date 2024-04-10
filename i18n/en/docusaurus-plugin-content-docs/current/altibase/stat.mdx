@@ -11,24 +11,26 @@ tags:
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-{@include: ../common-items/_db-sql-static.mdx}
+import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
 
-{@include: ../common-items/_db-trend-by-query.mdx}  
+<Dbsqlstatic />
 
-{@include: ../common-items/_db-detail-view-query.mdx} 
+import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
 
-### Checking the information details
+<Dbtrendbyquery />  
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
 
-<!-- mysql, mariadb, CUBRID support -->
+<Dbdetailviewquery /> 
 
-<!-- {@include: ../common-items/_db-database-size.mdx} -->
+{/* mysql, mariadb, CUBRID support */}
 
-<!-- oracle, tibero, CUBRID -->
+{/* {@include: ../common-items/_db-database-size.mdx} */}
 
-<!-- {@include: ../common-items/_db-tablespace-size.mdx}-->
+{/* oracle, tibero, CUBRID */}
 
-<!-- oracle, tibero -->
+{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
 
-<!-- {@include: ../common-items/_db-sga-size.mdx} -->
+{/* oracle, tibero */}
+
+{/* {@include: ../common-items/_db-sga-size.mdx} */}

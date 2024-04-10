@@ -43,7 +43,7 @@
 
 </Xclude>
 
-<InDoc product='server,postgresql,postgresql-v1,java,python,php,nodejs,golang,dotnet,browser'>
+<InDoc product='server,postgresql,java,python,php,nodejs,golang,dotnet,browser'>
 
 :::note
 
@@ -106,7 +106,17 @@
 
 - <Cmdname sid="data_time_range" className="uitext" />：イベント条件に使用する<b>MXQL</b>のリアルタイムデータの参照範囲を設定します。 イベント データの参照に含まれるフィールドのみ使用できます。
 
-  複合メトリクスイベントは、DBに保存されているメトリクスを参照して使用します。 したがって、最初にデータを検索する時間範囲を指定する必要があります。 データ取得時間を5分で選択すると、過去5分間に収集されたデータが参照され、イベント発生条件を確認します。 最近のデータに対して、イベントを設定する場合は短く、統計的にアクセスしたい場合は長く設定できます。 実際の使用例については、[次の文書](#template)を参照してください。
+  複合メトリクスイベントは、DBに保存されているメトリクスを参照して使用します。 したがって、最初にデータを検索する時間範囲を指定する必要があります。 データ取得時間を5分で選択すると、過去5分間に収集されたデータが参照され、イベント発生条件を確認します。 最近のデータに対して、イベントを設定する場合は短く、統計的にアクセスしたい場合は長く設定できます。
+
+  <Xclude product="altibase,amazon-cloudwatch,amazon-ecs,azure,cubrid,mongodb,mssql,mysql,ncloud,oracle-cloud,oracle,redis,server,tibero,browser">
+
+  :::note
+
+  実際の使用例については、[次の文書](#template)を参照してください。
+
+  :::
+
+  </Xclude>
 
 - <Cmdname sid="condition" className="uitext" />：MXQLに反映するフィールドと演算ルール、しきい値を入力します。
 

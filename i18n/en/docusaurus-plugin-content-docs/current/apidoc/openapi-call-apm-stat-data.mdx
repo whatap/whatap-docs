@@ -22,7 +22,7 @@ tags:
 
 ## Exception
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/exception/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/exception/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/exception/1535554800000/1535641200000"
@@ -50,7 +50,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ## HTTP outbound call
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/httpc/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/httpc/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/httpc/1535554800000/1535641200000"
@@ -129,7 +129,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ## SQL
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/sql/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/sql/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/sql/1535554800000/1535641200000"
@@ -162,7 +162,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ### client IP
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/remote/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/remote/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/remote/1535554800000/1535641200000"
@@ -191,7 +191,7 @@ WhaTap basically stores the client-related information.
 
 ## Transactions
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/transaction/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/transaction/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/transaction/1535554800000/1535641200000"
@@ -238,7 +238,7 @@ Search time (`stime`, `etime`) is limited to one hour, and its unit is in ms (mi
 
 ### Request for the statistical average
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/heap_use/<code>stitme</code>/<code>etime</code>/avg
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/heap_use/<code>stime</code>/<code>etime</code>/avg
 
 ```bash title='command'
 curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/heap_use/{sitme}/{etime}/avg"
@@ -246,7 +246,7 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 
 ### Request for the statistical maximum
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/heap_use/<code>stitme</code>/<code>etime</code>/max
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/heap_use/<code>stime</code>/<code>etime</code>/max
 
 ```bash title='command'
 curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/heap_use/{sitme}/{etime}/max"
@@ -291,38 +291,45 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 
 - **Thread Count**
 
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>/avg
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stime</code>/<code>etime</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stime</code>/<code>etime</code>/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stime</code>/<code>etime</code>/avg
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stime</code>/<code>etime</code>/avg/<code>oids</code>
 
 - **Thread Daemon Count**
 
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>/avg
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stime</code>/<code>etime</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stime</code>/<code>etime</code>/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stime</code>/<code>etime</code>/avg
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stime</code>/<code>etime</code>/avg/<code>oids</code>
 
 - **Thread Peak Count**
 
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>/avg
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stime</code>/<code>etime</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stime</code>/<code>etime</code>/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stime</code>/<code>etime</code>/avg
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stime</code>/<code>etime</code>/avg/<code>oids</code>
 
 - **Thread Pool Count**
 
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>/avg
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stime</code>/<code>etime</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stime</code>/<code>etime</code>/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stime</code>/<code>etime</code>/avg
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stime</code>/<code>etime</code>/avg/<code>oids</code>
 
 - **Thread Pool Queue Count**
 
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>/avg
-  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stime</code>/<code>etime</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stime</code>/<code>etime</code>/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stime</code>/<code>etime</code>/avg
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stime</code>/<code>etime</code>/avg/<code>oids</code>
+
+- **Apdex**
+
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/apdex/<code>stime</code>/<code>etime</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/apdex/<code>stime</code>/<code>etime</code>/<code>oids</code>
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/apdex/<code>stime</code>/<code>etime</code>/avg
+  - <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/apdex/<code>stime</code>/<code>etime</code>/avg/<code>oids</code>
 
 ### Example of viewing the individual agent data
 
@@ -337,11 +344,12 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   "stime": 1536050100000,
   "etime": 1536050700000,
   "interval": 300, // data point interval
-  "data": [
+  "timeMerge": "sum",
+  "objects": [
     {
       "oname": "8080",
       "oid": -1234257485,
-      "data": [
+      "series": [
         [
           1536050100000, // time-series timestamp
           95.2
@@ -360,7 +368,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
     {
       "oname": "TC-29-96-8082",
       "oid": 1482741919,
-      "data": [
+      "series": [
         [
           1536050100000,
           98.11
@@ -392,32 +400,29 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   "stime": 1536050100000,
   "etime": 1536050700000,
   "interval": 300, // data point interval
-  "data": [
-    {
-      "oname": "8080",
-      "oid": -1234257485,
-      "data": [
-        [
-          1536050100000, // time-series timestamp
-          95.2
-        ],
-        [
-          1536050400000,
-          85.3
-        ],
-        [
-          1536050700000,
-          91.43
-        ]
-      ]
-    },
+  "timeMerge": "sum",
+  "objectMerge": "avg",
+  "series": [
+    [
+      1536050100000, // time-series timestamp
+      122.86 // average data of all agents
+    ],
+    [
+      1536050400000,
+      99.26
+    ],
+    [
+      1536050700000,
+      109.68
+    ]
+  ]
 }
 ```
 
 ### Example of viewing the agent-specific data
 
 ```bash title='command'
-$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/thread_count/1536050100000/1536050700000/-1050048219,- 1459620666"
+$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/thread_count/1536050100000/1536050700000/-1050048219,-1459620666"
 ```
 
 ```json title='response' {10,24} showLineNumbers
@@ -427,11 +432,12 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   "stime": 1536050100000,
   "etime": 1536050700000,
   "interval": 300,
-  "data": [
+  "timeMerge": "sum",
+  "objects": [
     {
       "oname": "8081",
-      "oid": -1050048219, // 지정한 에이전트 정보 조회
-      "data": [
+      "oid": -1050048219, // Viewing the specified agent information
+      "series": [
         [
           1536050100000,
           97.75
@@ -444,8 +450,8 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
     },
     {
       "oname": "8073",
-      "oid": -1459620666, // 지정한 에이전트 정보 조회
-      "data": [
+      "oid": -1459620666, // Viewing the specified agent information
+      "series": [
         [
           1536050100000,
           137.23
@@ -467,7 +473,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 ### Example of viewing the agent-specific average data
 
 ```bash title='command'
-$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/thread_count/1536050100000/1536050700000/avg/-1050048219,- 1459620666"
+$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/thread_count/1536050100000/1536050700000/avg/-1050048219,-1459620666"
 ```
 
 ```json title='response' {11} showLineNumbers
@@ -477,8 +483,9 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   "stime": 1536050100000,
   "etime": 1536050700000,
   "interval": 300,
-  "op": "avg",
-  "data": [
+  "timeMerge": "sum",
+  "objectMerge": "avg",
+  "series": [
     [
       1536050100000,
       117.49 // Viewing the average metrics of the set agents
@@ -497,7 +504,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ## Active users (5-minute increment)
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/visitor_5m/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/visitor_5m/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/visitor_5m/1554444000000/1554076800000"
@@ -531,7 +538,7 @@ WhaTap measures **concurrent users** by counting them who issued transactions wi
 
 ## Active users (1-hour increment)
 
-<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/visitor_h/<code>stitme</code>/<code>etime</code>
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/visitor_h/<code>stime</code>/<code>etime</code>
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/visitor_h/1554444000000/1554454800000"
@@ -559,10 +566,10 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ## Transaction call statistics between projects
 
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stitme</code>/<code>etime</code>
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stitme</code>/<code>etime</code>/filter/<code>filterkey</code>/<code>filterval</code>
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stitme</code>/<code>etime</code>/<code>oids</code>/filter/<code>filterkey</code>/<code>filterval</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stime</code>/<code>etime</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stime</code>/<code>etime</code>/<code>oids</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stime</code>/<code>etime</code>/filter/<code>filterkey</code>/<code>filterval</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_caller/<code>stime</code>/<code>etime</code>/<code>oids</code>/filter/<code>filterkey</code>/<code>filterval</code>
 
 :::note
 
@@ -573,10 +580,10 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 ## Domain call statistics
 
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stitme</code>/<code>etime</code>
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stitme</code>/<code>etime</code>/<code>oids</code>
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stitme</code>/<code>etime</code>/filter/<code>filterkey</code>/<code>filterval</code>
-- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stitme</code>/<code>etime</code>/<code>oids</code>/filter/<code>filterkey</code>/<code>filterval</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stime</code>/<code>etime</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stime</code>/<code>etime</code>/<code>oids</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stime</code>/<code>etime</code>/filter/<code>filterkey</code>/<code>filterval</code>
+- <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/tx_domain/<code>stime</code>/<code>etime</code>/<code>oids</code>/filter/<code>filterkey</code>/<code>filterval</code>
 
 :::note
 
