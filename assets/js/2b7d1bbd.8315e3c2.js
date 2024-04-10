@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[33620],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57801],{
 
-/***/ 20240:
+/***/ 22498:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -38,24 +38,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
+		'Amazon ECS',
 		'경고 알림',
-		'이벤트 수신 태그',
-		'브라우저 모니터링'
+		'이벤트 수신 태그'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "browser/set-receive-event",
+  "id": "amazon-ecs/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/browser/set-receive-event.mdx",
-  "sourceDirName": "browser",
-  "slug": "/browser/set-receive-event",
-  "permalink": "/whatap-docs/browser/set-receive-event",
+  "source": "@site/docs/amazon-ecs/set-receive-event.mdx",
+  "sourceDirName": "amazon-ecs",
+  "slug": "/amazon-ecs/set-receive-event",
+  "permalink": "/whatap-docs/amazon-ecs/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/browser/set-receive-event.mdx",
+  "editUrl": "undefined/docs/amazon-ecs/set-receive-event.mdx",
   "tags": [
+    {
+      "label": "Amazon ECS",
+      "permalink": "/whatap-docs/tags/amazon-ecs"
+    },
     {
       "label": "경고 알림",
       "permalink": "/whatap-docs/tags/경고-알림"
@@ -63,10 +67,6 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
-    },
-    {
-      "label": "브라우저 모니터링",
-      "permalink": "/whatap-docs/tags/브라우저-모니터링"
     }
   ],
   "version": "current",
@@ -75,19 +75,19 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
+      "Amazon ECS",
       "경고 알림",
-      "이벤트 수신 태그",
-      "브라우저 모니터링"
+      "이벤트 수신 태그"
     ]
   },
-  "sidebar": "rumsSidebar",
+  "sidebar": "awsecsSidebar",
   "previous": {
-    "title": "이벤트 설정",
-    "permalink": "/whatap-docs/browser/warning-notice-v2"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/amazon-ecs/metric-warning-notice"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/browser/set-event-history"
+    "permalink": "/whatap-docs/amazon-ecs/set-event-history"
   }
 };
 const assets = {
@@ -550,9 +550,11 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -564,9 +566,18 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "프로젝트 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "alert_receving_setting.png",
-      desc: "경고 알림 수신 설정"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting.png",
+        desc: "경고 알림 수신 설정"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting-url.png",
+        desc: "경고 알림 수신 설정"
+      })
     })]
   });
 }

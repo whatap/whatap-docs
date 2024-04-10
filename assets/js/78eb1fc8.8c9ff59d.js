@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43601],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37279],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -399,9 +399,11 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -413,9 +415,18 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "프로젝트 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "alert_receving_setting.png",
-      desc: "경고 알림 수신 설정"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting.png",
+        desc: "경고 알림 수신 설정"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting-url.png",
+        desc: "경고 알림 수신 설정"
+      })
     })]
   });
 }
@@ -1779,7 +1790,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 33132:
+/***/ 69904:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1816,28 +1827,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'Go',
+		'Oracle',
 		'경고 알림',
 		'이벤트 수신 태그',
-		'애플리케이션 모니터링'
+		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/set-receive-event",
+  "id": "oracle/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/golang/set-receive-event.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/set-receive-event",
-  "permalink": "/whatap-docs/golang/set-receive-event",
+  "source": "@site/docs/oracle/set-receive-event.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/set-receive-event",
+  "permalink": "/whatap-docs/oracle/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/set-receive-event.mdx",
+  "editUrl": "undefined/docs/oracle/set-receive-event.mdx",
   "tags": [
     {
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "Oracle",
+      "permalink": "/whatap-docs/tags/oracle"
     },
     {
       "label": "경고 알림",
@@ -1848,8 +1859,8 @@ const metadata = {
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
     },
     {
-      "label": "애플리케이션 모니터링",
-      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -1858,20 +1869,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "Go",
+      "Oracle",
       "경고 알림",
       "이벤트 수신 태그",
-      "애플리케이션 모니터링"
+      "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
-    "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/golang/set-event-log"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/oracle/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/golang/set-event-history"
+    "permalink": "/whatap-docs/oracle/set-event-history"
   }
 };
 const assets = {

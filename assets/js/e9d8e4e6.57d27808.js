@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78686],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[65471],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -399,9 +399,11 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -413,9 +415,18 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "프로젝트 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "alert_receving_setting.png",
-      desc: "경고 알림 수신 설정"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting.png",
+        desc: "경고 알림 수신 설정"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting-url.png",
+        desc: "경고 알림 수신 설정"
+      })
     })]
   });
 }
@@ -1779,7 +1790,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 81783:
+/***/ 25565:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1816,27 +1827,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'네트워크 성능 모니터링',
+		'Redis',
 		'경고 알림',
-		'이벤트 수신 태그'
+		'이벤트 수신 태그',
+		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "npm/set-receive-event",
+  "id": "redis/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/npm/set-receive-event.mdx",
-  "sourceDirName": "npm",
-  "slug": "/npm/set-receive-event",
-  "permalink": "/whatap-docs/npm/set-receive-event",
+  "source": "@site/docs/redis/set-receive-event.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/set-receive-event",
+  "permalink": "/whatap-docs/redis/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/npm/set-receive-event.mdx",
+  "editUrl": "undefined/docs/redis/set-receive-event.mdx",
   "tags": [
     {
-      "label": "네트워크 성능 모니터링",
-      "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
+      "label": "Redis",
+      "permalink": "/whatap-docs/tags/redis"
     },
     {
       "label": "경고 알림",
@@ -1845,6 +1857,10 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
+    },
+    {
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -1853,19 +1869,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "네트워크 성능 모니터링",
+      "Redis",
       "경고 알림",
-      "이벤트 수신 태그"
+      "이벤트 수신 태그",
+      "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "npmsidebar",
+  "sidebar": "redisSidebar",
   "previous": {
-    "title": "이벤트 설정",
-    "permalink": "/whatap-docs/npm/warning-notice-v2"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/redis/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/npm/set-event-history"
+    "permalink": "/whatap-docs/redis/set-event-history"
   }
 };
 const assets = {

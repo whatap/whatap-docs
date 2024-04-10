@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58241],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16376],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -399,9 +399,11 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -413,9 +415,18 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "프로젝트 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "alert_receving_setting.png",
-      desc: "경고 알림 수신 설정"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting.png",
+        desc: "경고 알림 수신 설정"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "url",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "alert_receving_setting-url.png",
+        desc: "경고 알림 수신 설정"
+      })
     })]
   });
 }
@@ -1779,7 +1790,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 62328:
+/***/ 21920:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1816,7 +1827,7 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'PHP',
+		'Python',
 		'경고 알림',
 		'이벤트 수신 태그',
 		'애플리케이션 모니터링'
@@ -1824,20 +1835,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/set-receive-event",
+  "id": "python/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/php/set-receive-event.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/set-receive-event",
-  "permalink": "/whatap-docs/php/set-receive-event",
+  "source": "@site/docs/python/set-receive-event.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/set-receive-event",
+  "permalink": "/whatap-docs/python/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/set-receive-event.mdx",
+  "editUrl": "undefined/docs/python/set-receive-event.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "label": "경고 알림",
@@ -1858,20 +1869,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "PHP",
+      "Python",
       "경고 알림",
       "이벤트 수신 태그",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/php/set-event-log"
+    "permalink": "/whatap-docs/python/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/php/set-event-history"
+    "permalink": "/whatap-docs/python/set-event-history"
   }
 };
 const assets = {

@@ -146,7 +146,7 @@ function _createMdxContent(props) {
       children: "지원 환경"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["다음 목록에 있는 운영체제는 다운로드 설치가 가능합니다. 다른 운영체제는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-        href: "#%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%84%A4%EC%B9%98",
+        href: "#installcompile",
         children: "컴파일 설치"
       }), "로 진행해 주세요."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
