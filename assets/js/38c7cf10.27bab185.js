@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57801],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[33620],{
 
-/***/ 22498:
+/***/ 20240:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -38,28 +38,24 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'Amazon ECS',
 		'경고 알림',
-		'이벤트 수신 태그'
+		'이벤트 수신 태그',
+		'브라우저 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "amazon-ecs/set-receive-event",
+  "id": "browser/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/amazon-ecs/set-receive-event.mdx",
-  "sourceDirName": "amazon-ecs",
-  "slug": "/amazon-ecs/set-receive-event",
-  "permalink": "/whatap-docs/amazon-ecs/set-receive-event",
+  "source": "@site/docs/browser/set-receive-event.mdx",
+  "sourceDirName": "browser",
+  "slug": "/browser/set-receive-event",
+  "permalink": "/whatap-docs/browser/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/amazon-ecs/set-receive-event.mdx",
+  "editUrl": "undefined/docs/browser/set-receive-event.mdx",
   "tags": [
-    {
-      "label": "Amazon ECS",
-      "permalink": "/whatap-docs/tags/amazon-ecs"
-    },
     {
       "label": "경고 알림",
       "permalink": "/whatap-docs/tags/경고-알림"
@@ -67,6 +63,10 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
+    },
+    {
+      "label": "브라우저 모니터링",
+      "permalink": "/whatap-docs/tags/브라우저-모니터링"
     }
   ],
   "version": "current",
@@ -75,19 +75,19 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "Amazon ECS",
       "경고 알림",
-      "이벤트 수신 태그"
+      "이벤트 수신 태그",
+      "브라우저 모니터링"
     ]
   },
-  "sidebar": "awsecsSidebar",
+  "sidebar": "rumsSidebar",
   "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/amazon-ecs/metric-warning-notice"
+    "title": "이벤트 설정",
+    "permalink": "/whatap-docs/browser/warning-notice-v2"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/amazon-ecs/set-event-history"
+    "permalink": "/whatap-docs/browser/set-event-history"
   }
 };
 const assets = {
@@ -1689,7 +1689,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]

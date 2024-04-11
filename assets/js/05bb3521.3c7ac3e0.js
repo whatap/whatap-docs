@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78686],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5225],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 81783:
+/***/ 50564:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,27 +1838,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'네트워크 성능 모니터링',
+		'SQL Server',
 		'경고 알림',
-		'이벤트 수신 태그'
+		'이벤트 수신 태그',
+		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "npm/set-receive-event",
+  "id": "mssql/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/npm/set-receive-event.mdx",
-  "sourceDirName": "npm",
-  "slug": "/npm/set-receive-event",
-  "permalink": "/whatap-docs/npm/set-receive-event",
+  "source": "@site/docs/mssql/set-receive-event.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/set-receive-event",
+  "permalink": "/whatap-docs/mssql/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/npm/set-receive-event.mdx",
+  "editUrl": "undefined/docs/mssql/set-receive-event.mdx",
   "tags": [
     {
-      "label": "네트워크 성능 모니터링",
-      "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
+      "label": "SQL Server",
+      "permalink": "/whatap-docs/tags/sql-server"
     },
     {
       "label": "경고 알림",
@@ -1867,6 +1868,10 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
+    },
+    {
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -1875,19 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "네트워크 성능 모니터링",
+      "SQL Server",
       "경고 알림",
-      "이벤트 수신 태그"
+      "이벤트 수신 태그",
+      "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "npmsidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
-    "title": "이벤트 설정",
-    "permalink": "/whatap-docs/npm/warning-notice-v2"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/mssql/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/npm/set-event-history"
+    "permalink": "/whatap-docs/mssql/set-event-history"
   }
 };
 const assets = {

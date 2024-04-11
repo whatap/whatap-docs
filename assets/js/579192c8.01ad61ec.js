@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63736],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67225],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 75455:
+/***/ 19757:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,25 +1838,29 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
+		'Tibero',
 		'경고 알림',
 		'이벤트 수신 태그',
-		'Naver Cloud Monitoring',
-		'클라우드'
+		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "ncloud/set-receive-event",
+  "id": "tibero/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/ncloud/set-receive-event.mdx",
-  "sourceDirName": "ncloud",
-  "slug": "/ncloud/set-receive-event",
-  "permalink": "/whatap-docs/ncloud/set-receive-event",
+  "source": "@site/docs/tibero/set-receive-event.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/set-receive-event",
+  "permalink": "/whatap-docs/tibero/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/ncloud/set-receive-event.mdx",
+  "editUrl": "undefined/docs/tibero/set-receive-event.mdx",
   "tags": [
+    {
+      "label": "Tibero",
+      "permalink": "/whatap-docs/tags/tibero"
+    },
     {
       "label": "경고 알림",
       "permalink": "/whatap-docs/tags/경고-알림"
@@ -1866,12 +1870,8 @@ const metadata = {
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
     },
     {
-      "label": "Naver Cloud Monitoring",
-      "permalink": "/whatap-docs/tags/naver-cloud-monitoring"
-    },
-    {
-      "label": "클라우드",
-      "permalink": "/whatap-docs/tags/클라우드"
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -1880,20 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
+      "Tibero",
       "경고 알림",
       "이벤트 수신 태그",
-      "Naver Cloud Monitoring",
-      "클라우드"
+      "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "ncloudSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/ncloud/metric-warning-notice"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/tibero/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/ncloud/set-event-history"
+    "permalink": "/whatap-docs/tibero/set-event-history"
   }
 };
 const assets = {

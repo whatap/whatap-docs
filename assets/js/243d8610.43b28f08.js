@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[54821],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17413],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 82882:
+/***/ 54879:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1840,21 +1840,21 @@ const frontMatter = {
 	tags: [
 		'경고 알림',
 		'이벤트 수신 태그',
-		'쿠버네티스 모니터링'
+		'서버'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/set-receive-event",
+  "id": "server/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/kubernetes/set-receive-event.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/set-receive-event",
-  "permalink": "/whatap-docs/kubernetes/set-receive-event",
+  "source": "@site/docs/server/set-receive-event.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/set-receive-event",
+  "permalink": "/whatap-docs/server/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/set-receive-event.mdx",
+  "editUrl": "undefined/docs/server/set-receive-event.mdx",
   "tags": [
     {
       "label": "경고 알림",
@@ -1865,8 +1865,8 @@ const metadata = {
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
     },
     {
-      "label": "쿠버네티스 모니터링",
-      "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
+      "label": "서버",
+      "permalink": "/whatap-docs/tags/서버"
     }
   ],
   "version": "current",
@@ -1877,17 +1877,17 @@ const metadata = {
     "tags": [
       "경고 알림",
       "이벤트 수신 태그",
-      "쿠버네티스 모니터링"
+      "서버"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "serverSidebar",
   "previous": {
     "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/kubernetes/set-event-log"
+    "permalink": "/whatap-docs/server/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/kubernetes/set-event-history"
+    "permalink": "/whatap-docs/server/set-event-history"
   }
 };
 const assets = {

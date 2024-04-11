@@ -1,162 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[40583],{
-
-/***/ 35845:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12350);
-/* harmony import */ var _common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87814);
-/* harmony import */ var _common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24403);
-/* harmony import */ var _common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(73900);
-/* harmony import */ var _common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(72090);
-/* harmony import */ var _common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(40798);
-/* harmony import */ var _common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(39665);
-/* harmony import */ var _common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8147);
-/* harmony import */ var _common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(6174);
-/* harmony import */ var _common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(73831);
-/* harmony import */ var _common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(64099);
-/* harmony import */ var _common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(67555);
-/* harmony import */ var _common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(89153);
-/* harmony import */ var _common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(3174);
-/* harmony import */ var _common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(43464);
-/* harmony import */ var _common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(6043);
-
-
-const frontMatter = {
-	id: 'set-receive-event',
-	title: '경고 알림 수신 설정',
-	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
-	tags: [
-		'클라우드',
-		'Amazon CloudWatch',
-		'경고 알림',
-		'이벤트 수신 태그'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "amazon-cloudwatch/set-receive-event",
-  "title": "경고 알림 수신 설정",
-  "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/amazon-cloudwatch/set-receive-event.mdx",
-  "sourceDirName": "amazon-cloudwatch",
-  "slug": "/amazon-cloudwatch/set-receive-event",
-  "permalink": "/whatap-docs/amazon-cloudwatch/set-receive-event",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/amazon-cloudwatch/set-receive-event.mdx",
-  "tags": [
-    {
-      "label": "클라우드",
-      "permalink": "/whatap-docs/tags/클라우드"
-    },
-    {
-      "label": "Amazon CloudWatch",
-      "permalink": "/whatap-docs/tags/amazon-cloud-watch"
-    },
-    {
-      "label": "경고 알림",
-      "permalink": "/whatap-docs/tags/경고-알림"
-    },
-    {
-      "label": "이벤트 수신 태그",
-      "permalink": "/whatap-docs/tags/이벤트-수신-태그"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "set-receive-event",
-    "title": "경고 알림 수신 설정",
-    "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-    "tags": [
-      "클라우드",
-      "Amazon CloudWatch",
-      "경고 알림",
-      "이벤트 수신 태그"
-    ]
-  },
-  "sidebar": "amazoncloudwatchSidebar",
-  "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/amazon-cloudwatch/metric-warning-notice"
-  },
-  "next": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/amazon-cloudwatch/set-event-history"
-  }
-};
-const assets = {
-
-};
-
-/*수신 수단 선택하기*/
-/*SMS 알림 수신 추가하기*/
-/*WhatsApp 알림 수신*/
-/*모바일 알림 수신 추가하기*/
-/*{@include: ../common-items/_set-receive-event-mobile.mdx}*/
-/*수신 레벨 선택하기*/
-/*요일 및 시간별 알람 설정하기*/
-/*경고 알림 반복 설정하기*/
-/*팀별, 사용자별 알림 설정하기*/
-/*이벤트 수신 태그 추가하기*/
-/*이벤트 수신 태그 해제하기*/
-/*이벤트 수신 태그 수정 및 삭제하기*/
-/*수신 태그 미설정 알림*/
-/*3rd 파티 플러그인 알림 추가하기*/
-/*대량 알림 발생 방지*/
-/*경고 알림 사용자 설정하기*/
-/*경고 알림 언어 설정*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const toc = [..._common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_17__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58241],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1695,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1952,6 +1795,163 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 62328:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12350);
+/* harmony import */ var _common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87814);
+/* harmony import */ var _common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24403);
+/* harmony import */ var _common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(73900);
+/* harmony import */ var _common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(72090);
+/* harmony import */ var _common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(40798);
+/* harmony import */ var _common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(39665);
+/* harmony import */ var _common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8147);
+/* harmony import */ var _common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(6174);
+/* harmony import */ var _common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(73831);
+/* harmony import */ var _common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(64099);
+/* harmony import */ var _common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(67555);
+/* harmony import */ var _common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(89153);
+/* harmony import */ var _common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(3174);
+/* harmony import */ var _common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(43464);
+/* harmony import */ var _common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(6043);
+
+
+const frontMatter = {
+	id: 'set-receive-event',
+	title: '경고 알림 수신 설정',
+	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
+	tags: [
+		'PHP',
+		'경고 알림',
+		'이벤트 수신 태그',
+		'애플리케이션 모니터링'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "php/set-receive-event",
+  "title": "경고 알림 수신 설정",
+  "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
+  "source": "@site/docs/php/set-receive-event.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/set-receive-event",
+  "permalink": "/whatap-docs/php/set-receive-event",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/php/set-receive-event.mdx",
+  "tags": [
+    {
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
+    },
+    {
+      "label": "경고 알림",
+      "permalink": "/whatap-docs/tags/경고-알림"
+    },
+    {
+      "label": "이벤트 수신 태그",
+      "permalink": "/whatap-docs/tags/이벤트-수신-태그"
+    },
+    {
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-receive-event",
+    "title": "경고 알림 수신 설정",
+    "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
+    "tags": [
+      "PHP",
+      "경고 알림",
+      "이벤트 수신 태그",
+      "애플리케이션 모니터링"
+    ]
+  },
+  "sidebar": "phpSidebar",
+  "previous": {
+    "title": "로그 경고 알림",
+    "permalink": "/whatap-docs/php/set-event-log"
+  },
+  "next": {
+    "title": "이벤트 기록",
+    "permalink": "/whatap-docs/php/set-event-history"
+  }
+};
+const assets = {
+
+};
+
+/*수신 수단 선택하기*/
+/*SMS 알림 수신 추가하기*/
+/*WhatsApp 알림 수신*/
+/*모바일 알림 수신 추가하기*/
+/*{@include: ../common-items/_set-receive-event-mobile.mdx}*/
+/*수신 레벨 선택하기*/
+/*요일 및 시간별 알람 설정하기*/
+/*경고 알림 반복 설정하기*/
+/*팀별, 사용자별 알림 설정하기*/
+/*이벤트 수신 태그 추가하기*/
+/*이벤트 수신 태그 해제하기*/
+/*이벤트 수신 태그 수정 및 삭제하기*/
+/*수신 태그 미설정 알림*/
+/*3rd 파티 플러그인 알림 추가하기*/
+/*대량 알림 발생 방지*/
+/*경고 알림 사용자 설정하기*/
+/*경고 알림 언어 설정*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const toc = [..._common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_17__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

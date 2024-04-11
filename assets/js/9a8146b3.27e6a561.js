@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[34505],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56675],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 54812:
+/***/ 10050:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,7 +1838,7 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'.NET',
+		'Java',
 		'경고 알림',
 		'이벤트 수신 태그',
 		'애플리케이션 모니터링'
@@ -1846,20 +1846,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/set-receive-event",
+  "id": "java/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/dotnet/set-receive-event.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/set-receive-event",
-  "permalink": "/whatap-docs/dotnet/set-receive-event",
+  "source": "@site/docs/java/set-receive-event.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/set-receive-event",
+  "permalink": "/whatap-docs/java/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/set-receive-event.mdx",
+  "editUrl": "undefined/docs/java/set-receive-event.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "label": "경고 알림",
@@ -1880,20 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      ".NET",
+      "Java",
       "경고 알림",
       "이벤트 수신 태그",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
-    "title": "이상치 탐지 경고 알림",
-    "permalink": "/whatap-docs/dotnet/set-event-detect-anomal"
+    "title": "로그 경고 알림",
+    "permalink": "/whatap-docs/java/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/dotnet/set-event-history"
+    "permalink": "/whatap-docs/java/set-event-history"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6211],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[34305],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 59004:
+/***/ 80449:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,7 +1838,7 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'PostgreSQL',
+		'CUBRID',
 		'경고 알림',
 		'이벤트 수신 태그',
 		'데이터베이스 모니터링'
@@ -1846,20 +1846,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/set-receive-event",
+  "id": "cubrid/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/postgresql/set-receive-event.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/set-receive-event",
-  "permalink": "/whatap-docs/postgresql/set-receive-event",
+  "source": "@site/docs/cubrid/set-receive-event.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/set-receive-event",
+  "permalink": "/whatap-docs/cubrid/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/set-receive-event.mdx",
+  "editUrl": "undefined/docs/cubrid/set-receive-event.mdx",
   "tags": [
     {
-      "label": "PostgreSQL",
-      "permalink": "/whatap-docs/tags/postgre-sql"
+      "label": "CUBRID",
+      "permalink": "/whatap-docs/tags/cubrid"
     },
     {
       "label": "경고 알림",
@@ -1880,20 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "PostgreSQL",
+      "CUBRID",
       "경고 알림",
       "이벤트 수신 태그",
       "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "cubridSidebar",
   "previous": {
-    "title": "로그 알림 설정하기",
-    "permalink": "/whatap-docs/postgresql/set-event-log"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/cubrid/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/postgresql/set-event-history"
+    "permalink": "/whatap-docs/cubrid/set-event-history"
   }
 };
 const assets = {

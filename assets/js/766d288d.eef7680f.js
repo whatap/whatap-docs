@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18067],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50148],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 72486:
+/***/ 5258:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,27 +1838,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'로그 모니터링',
+		'MySQL',
 		'경고 알림',
-		'이벤트 수신 태그'
+		'이벤트 수신 태그',
+		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "log/set-receive-event",
+  "id": "mysql/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/log/set-receive-event.mdx",
-  "sourceDirName": "log",
-  "slug": "/log/set-receive-event",
-  "permalink": "/whatap-docs/log/set-receive-event",
+  "source": "@site/docs/mysql/set-receive-event.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/set-receive-event",
+  "permalink": "/whatap-docs/mysql/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/log/set-receive-event.mdx",
+  "editUrl": "undefined/docs/mysql/set-receive-event.mdx",
   "tags": [
     {
-      "label": "로그 모니터링",
-      "permalink": "/whatap-docs/tags/로그-모니터링"
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
     },
     {
       "label": "경고 알림",
@@ -1867,6 +1868,10 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
+    },
+    {
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -1875,19 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "로그 모니터링",
+      "MySQL",
       "경고 알림",
-      "이벤트 수신 태그"
+      "이벤트 수신 태그",
+      "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "logSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/log/set-notice"
+    "title": "로그 알림 설정하기",
+    "permalink": "/whatap-docs/mysql/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/log/set-event-history"
+    "permalink": "/whatap-docs/mysql/set-event-history"
   }
 };
 const assets = {

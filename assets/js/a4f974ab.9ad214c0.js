@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37279],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[91],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 69904:
+/***/ 20135:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,28 +1838,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'Oracle',
+		'Node.js',
 		'경고 알림',
 		'이벤트 수신 태그',
-		'데이터베이스 모니터링'
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle/set-receive-event",
+  "id": "nodejs/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/oracle/set-receive-event.mdx",
-  "sourceDirName": "oracle",
-  "slug": "/oracle/set-receive-event",
-  "permalink": "/whatap-docs/oracle/set-receive-event",
+  "source": "@site/docs/nodejs/set-receive-event.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/set-receive-event",
+  "permalink": "/whatap-docs/nodejs/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle/set-receive-event.mdx",
+  "editUrl": "undefined/docs/nodejs/set-receive-event.mdx",
   "tags": [
     {
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "경고 알림",
@@ -1870,8 +1870,8 @@ const metadata = {
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
     },
     {
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
@@ -1880,20 +1880,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "Oracle",
+      "Node.js",
       "경고 알림",
       "이벤트 수신 태그",
-      "데이터베이스 모니터링"
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "이상치 탐지 경고 알림",
-    "permalink": "/whatap-docs/oracle/set-event-detect-anomal"
+    "permalink": "/whatap-docs/nodejs/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/oracle/set-event-history"
+    "permalink": "/whatap-docs/nodejs/set-event-history"
   }
 };
 const assets = {

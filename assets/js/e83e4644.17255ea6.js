@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17413],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78686],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1538,7 +1538,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국 휴대전화 번호"
+              children: "한국 및 일본의 휴대전화 번호"
             }), "만 등록할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -1801,7 +1801,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 54879:
+/***/ 81783:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1838,24 +1838,28 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
+		'네트워크 성능 모니터링',
 		'경고 알림',
-		'이벤트 수신 태그',
-		'서버'
+		'이벤트 수신 태그'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "server/set-receive-event",
+  "id": "npm/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/server/set-receive-event.mdx",
-  "sourceDirName": "server",
-  "slug": "/server/set-receive-event",
-  "permalink": "/whatap-docs/server/set-receive-event",
+  "source": "@site/docs/npm/set-receive-event.mdx",
+  "sourceDirName": "npm",
+  "slug": "/npm/set-receive-event",
+  "permalink": "/whatap-docs/npm/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/server/set-receive-event.mdx",
+  "editUrl": "undefined/docs/npm/set-receive-event.mdx",
   "tags": [
+    {
+      "label": "네트워크 성능 모니터링",
+      "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
+    },
     {
       "label": "경고 알림",
       "permalink": "/whatap-docs/tags/경고-알림"
@@ -1863,10 +1867,6 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
-    },
-    {
-      "label": "서버",
-      "permalink": "/whatap-docs/tags/서버"
     }
   ],
   "version": "current",
@@ -1875,19 +1875,19 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
+      "네트워크 성능 모니터링",
       "경고 알림",
-      "이벤트 수신 태그",
-      "서버"
+      "이벤트 수신 태그"
     ]
   },
-  "sidebar": "serverSidebar",
+  "sidebar": "npmsidebar",
   "previous": {
-    "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/server/set-event-log"
+    "title": "이벤트 설정",
+    "permalink": "/whatap-docs/npm/warning-notice-v2"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/server/set-event-history"
+    "permalink": "/whatap-docs/npm/set-event-history"
   }
 };
 const assets = {
