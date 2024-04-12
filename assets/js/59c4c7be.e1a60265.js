@@ -525,45 +525,77 @@ function agent_name_createMdxContent(props) {
       children: "에이전트 이름 설정"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "시작 스크립트에 JVM 옵션을 추가해 자동으로 부여한 이름 대신 직접 이름을 설정할 수 있습니다."
-    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
-      children: [(0,jsx_runtime.jsx)(_components.thead, {
-        children: (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "우선순위"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "옵션"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "설정 위치"
-          }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "설명"
-          })]
-        })
-      }), (0,jsx_runtime.jsxs)(_components.tbody, {
-        children: [(0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "1"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "-Dwhatap.name"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "JVM Options"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["에이전트 이름을 패턴으로 설정하세요.", (0,jsx_runtime.jsx)("br", {}), "default: ", (0,jsx_runtime.jsx)(_components.code, {
-              children: "{type}-{ip2}-{ip3}-{port}"
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      class: "c4-name",
+      children: (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "옵션"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설정 위치"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설명"
             })]
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "2"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "-Dwhatap.oname"
-          }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "JVM Options"
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["에이전트 이름을 고정값으로 설정합니다.", (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)(_components.code, {
-              children: "-Dwhatap.oname=front-{ip3}-{port}"
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "-Dwhatap.name"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "JVM Options"
+            }), (0,jsx_runtime.jsxs)(_components.td, {
+              children: ["에이전트 이름을 패턴으로 설정합니다.", (0,jsx_runtime.jsx)("br", {}), "기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "{type}-{ip2}-{ip3}-{port}"
+              })]
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "-Dwhatap.oname"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "JVM Options"
+            }), (0,jsx_runtime.jsxs)(_components.td, {
+              children: ["에이전트 이름을 고정값으로 설정합니다.", (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)(_components.code, {
+                children: "-Dwhatap.oname=java-sales-01"
+              }), " ", (0,jsx_runtime.jsx)("br", {}), "옵션을 설정하지 않으면 ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "-Dwhatap.name"
+              }), " 옵션에 설정된 패턴으로 적용됩니다.", (0,jsx_runtime.jsx)("br", {})]
             })]
           })]
         })]
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+      type: "tip",
+      children: [(0,jsx_runtime.jsx)(_components.p, {
+        children: "IP 주소가 10.11.12.13이고, 포트 번호가 8000인 환경에서"
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "-Dwhatap.oname 옵션을 적용하지 않은 경우"
+            }), ": ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "whatap.oname"
+            }), "은 ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "-Dwhatap.name"
+            }), "에 설정된 패턴에 따라 ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "JAVA-12-13-8000"
+            }), "으로 기본 설정됩니다."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "-Dwhatap.oname 옵션을 적용한 경우"
+            }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "-Dwhatap.name"
+            }), " 옵션을 무시하고 ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "-Dwhatap.oname"
+            }), " 옵션에 설정한 값으로 에이전트 이름이 적용됩니다."]
+          }), "\n"]
+        }), "\n"]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
       type: "note",
