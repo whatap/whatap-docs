@@ -1430,7 +1430,7 @@ main {
         font-family: monospace;
         background: none;
         border: none;
-        font-size: 120%;
+        font-size: 98%;
         padding: 0;
         color: var(--ifm-font-code-color);
       }
@@ -1941,6 +1941,15 @@ main {
             &:first-of-type {
               width: 20%;
             }
+          }
+        }
+      }
+    }
+    .c4-name {
+      table {
+        tr {
+          td {
+            &:nth-of-type(1) {width: 20%;}
           }
         }
       }
