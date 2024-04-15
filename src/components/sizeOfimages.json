@@ -243,6 +243,18 @@
     "width": 1200,
     "height": 1257
   },
+  "alert_receving_setting-url-en.png": {
+    "width": 1200,
+    "height": 915
+  },
+  "alert_receving_setting-url-ja.png": {
+    "width": 1200,
+    "height": 924
+  },
+  "alert_receving_setting-url.png": {
+    "width": 1200,
+    "height": 903
+  },
   "alert_receving_setting.png": {
     "width": 1200,
     "height": 1192
@@ -273,11 +285,11 @@
   },
   "amazon-ecs-install-en.png": {
     "width": 1200,
-    "height": 1009
+    "height": 705
   },
   "amazon-ecs-install-ja.png": {
     "width": 1200,
-    "height": 1009
+    "height": 713
   },
   "amazon-ecs-install.png": {
     "width": 1200,
@@ -13123,6 +13135,18 @@
     "width": 1200,
     "height": 446
   },
+  "set-event-day-time-url-en.png": {
+    "width": 1200,
+    "height": 392
+  },
+  "set-event-day-time-url-ja.png": {
+    "width": 1200,
+    "height": 428
+  },
+  "set-event-day-time-url.png": {
+    "width": 1200,
+    "height": 393
+  },
   "set-event-day-time.png": {
     "width": 1200,
     "height": 415
@@ -13237,15 +13261,15 @@
   },
   "set-event-sms-notification-en.png": {
     "width": 600,
-    "height": 144
+    "height": 201
   },
   "set-event-sms-notification-ja.png": {
     "width": 600,
-    "height": 145
+    "height": 210
   },
   "set-event-sms-notification.png": {
     "width": 600,
-    "height": 169
+    "height": 213
   },
   "set-event-tag-01-en.png": {
     "width": 1200,

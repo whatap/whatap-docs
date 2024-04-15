@@ -50115,7 +50115,7 @@
   "DSC07276": {
     "en": "If you need to install an application agent, please click the button below.",
     "ja": "Applicatonエージェントをインストールするなら、下のボタンをクリックしてください。",
-    "ko": "애플리케이션 에이전트를 설치가 필요하다면 아래 버튼을 눌러주세요.",
+    "ko": "애플리케이션 에이전트 설치가 필요하다면 아래 버튼을 눌러주세요.",
     "zh": "If you need to install an application agent, please click the button below.",
     "service_id": "DSC07276"
   },
@@ -54215,10 +54215,10 @@
     "service_id": "DSC07866"
   },
   "DSC07867": {
-    "en": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do. <br />\nIf there is no corresponding object, data may not be retrieved.",
-    "ja": "エージェント設定 (whatap.conf) の <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示するします。 <br />\n対応するオブジェクトがないと、データが照会されない可能性があります。",
-    "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다. <br />\n해당하는 오브젝트가 없으면 데이터가 조회되지 않을 수 있습니다.",
-    "zh": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do. <br />\nIf there is no corresponding object, data may not be retrieved.",
+    "en": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
+    "ja": "エージェント設定 (whatap.conf) の <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示するします。",
+    "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다.",
+    "zh": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
     "service_id": "DSC07867"
   },
   "DSC07868": {
@@ -54234,6 +54234,34 @@
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
     "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "service_id": "DSC07869"
+  },
+  "DSC07870": {
+    "en": "If there is no corresponding object, data may not be retrieved.",
+    "ja": "対応するオブジェクトがないと、データが照会されない可能性があります。",
+    "ko": "해당하는 오브젝트가 없으면 데이터가 조회되지 않을 수 있습니다.",
+    "zh": "If there is no corresponding object, data may not be retrieved.",
+    "service_id": "DSC07870"
+  },
+  "TLT07871": {
+    "en": "10120 between registered agents within a project",
+    "ja": "プロジェクト内に登録されたエージェント間で10120",
+    "ko": "프로젝트 내에 등록된 에이전트들 간에 10120",
+    "zh": "10120 between registered agents within a project",
+    "service_id": "TLT07871"
+  },
+  "DSC07872": {
+    "en": "You can receive a notification when a network daemon's reception port is disabled.",
+    "ja": "ネットワークデーモンのリスニングポートを無効にすると通知を受け取ることができます。",
+    "ko": "네트워크 데몬의 수신 포트 비활성화 시 알림을 받을 수 있습니다.",
+    "zh": "You can receive a notification when a network daemon's reception port is disabled.",
+    "service_id": "DSC07872"
+  },
+  "DSC07873": {
+    "en": "Automatically select the same target",
+    "ja": "同一ターゲット自動選択",
+    "ko": "동일 대상 자동 선택",
+    "zh": "Automatically select the same target",
+    "service_id": "DSC07873"
   },
   "": {
     "en": "#VALUE!",
