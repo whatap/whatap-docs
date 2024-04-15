@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4778],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67676],{
 
 /***/ 83521:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -162,7 +162,7 @@ function _createMdxContent(props) {
             }), " 형식의 예시 파일을 확인하세요. 파일 내 주석에 커스터마이징을 위한 CSS 영역과 HTML 영역 안내가 기술되어있습니다."]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
-          src: "/exp/custom-report-template.html",
+          src: "../exp/custom-report-template.html",
           height: "1050px",
           width: "100%",
           scrolling: "no"
@@ -204,7 +204,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 76328:
+/***/ 74765:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -226,29 +226,28 @@ const frontMatter = {
 	title: '보고서',
 	description: '보고서를 안내합니다.',
 	tags: [
-		'Python',
+		'Node.js',
 		'보고서',
 		'분석하기',
 		'UI'
-	],
-	toc_max_heading_level: 2
+	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/report-intro",
+  "id": "nodejs/report-intro",
   "title": "보고서",
   "description": "보고서를 안내합니다.",
-  "source": "@site/docs/python/report-intro.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/report-intro",
-  "permalink": "/whatap-docs/python/report-intro",
+  "source": "@site/docs/nodejs/report-intro.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/report-intro",
+  "permalink": "/whatap-docs/nodejs/report-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/report-intro.mdx",
+  "editUrl": "undefined/docs/nodejs/report-intro.mdx",
   "tags": [
     {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "보고서",
@@ -269,21 +268,20 @@ const metadata = {
     "title": "보고서",
     "description": "보고서를 안내합니다.",
     "tags": [
-      "Python",
+      "Node.js",
       "보고서",
       "분석하기",
       "UI"
-    ],
-    "toc_max_heading_level": 2
+    ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "통계",
-    "permalink": "/whatap-docs/python/analysis-apm-trs"
+    "permalink": "/whatap-docs/nodejs/analysis-apm-trs"
   },
   "next": {
     "title": "애플리케이션 보고서",
-    "permalink": "/whatap-docs/python/report-apm"
+    "permalink": "/whatap-docs/nodejs/report-apm"
   }
 };
 const assets = {

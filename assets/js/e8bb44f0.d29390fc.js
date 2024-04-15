@@ -1,5 +1,117 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[85213],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[26334],{
+
+/***/ 33189:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83521);
+/* harmony import */ var _common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72697);
+
+
+const frontMatter = {
+	id: 'report-intro',
+	title: '보고서',
+	description: '개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.',
+	tags: [
+		'Altibase',
+		'데이터베이스',
+		'데이터베이스 모니터링',
+		'보고서'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/report-intro",
+  "title": "보고서",
+  "description": "개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.",
+  "source": "@site/docs/altibase/report-intro.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/report-intro",
+  "permalink": "/whatap-docs/altibase/report-intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/report-intro.mdx",
+  "tags": [
+    {
+      "label": "Altibase",
+      "permalink": "/whatap-docs/tags/altibase"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
+    },
+    {
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+    },
+    {
+      "label": "보고서",
+      "permalink": "/whatap-docs/tags/보고서"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "report-intro",
+    "title": "보고서",
+    "description": "개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.",
+    "tags": [
+      "Altibase",
+      "데이터베이스",
+      "데이터베이스 모니터링",
+      "보고서"
+    ]
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "통계 데이터 확인",
+    "permalink": "/whatap-docs/altibase/stat"
+  },
+  "next": {
+    "title": "통합 보고서",
+    "permalink": "/whatap-docs/altibase/integrated-report"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+const toc = [..._common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 72697:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -328,7 +440,7 @@ function _createMdxContent(props) {
             }), " 형식의 예시 파일을 확인하세요. 파일 내 주석에 커스터마이징을 위한 CSS 영역과 HTML 영역 안내가 기술되어있습니다."]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
-          src: "/exp/custom-report-template.html",
+          src: "../exp/custom-report-template.html",
           height: "1050px",
           width: "100%",
           scrolling: "no"
@@ -364,118 +476,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 97599:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83521);
-/* harmony import */ var _common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72697);
-
-
-const frontMatter = {
-	id: 'report-intro',
-	title: '보고서',
-	description: '개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.',
-	tags: [
-		'Tibero',
-		'데이터베이스',
-		'데이터베이스 모니터링',
-		'보고서'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "tibero/report-intro",
-  "title": "보고서",
-  "description": "개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.",
-  "source": "@site/docs/tibero/report-intro.mdx",
-  "sourceDirName": "tibero",
-  "slug": "/tibero/report-intro",
-  "permalink": "/whatap-docs/tibero/report-intro",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/tibero/report-intro.mdx",
-  "tags": [
-    {
-      "label": "Tibero",
-      "permalink": "/whatap-docs/tags/tibero"
-    },
-    {
-      "label": "데이터베이스",
-      "permalink": "/whatap-docs/tags/데이터베이스"
-    },
-    {
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
-    },
-    {
-      "label": "보고서",
-      "permalink": "/whatap-docs/tags/보고서"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "report-intro",
-    "title": "보고서",
-    "description": "개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.",
-    "tags": [
-      "Tibero",
-      "데이터베이스",
-      "데이터베이스 모니터링",
-      "보고서"
-    ]
-  },
-  "sidebar": "tiberoSidebar",
-  "previous": {
-    "title": "통계 데이터 확인",
-    "permalink": "/whatap-docs/tibero/stat"
-  },
-  "next": {
-    "title": "통합 보고서",
-    "permalink": "/whatap-docs/tibero/integrated-report"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-
-const toc = [..._common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 

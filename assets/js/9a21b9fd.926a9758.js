@@ -162,7 +162,7 @@ function _createMdxContent(props) {
             }), " 형식의 예시 파일을 확인하세요. 파일 내 주석에 커스터마이징을 위한 CSS 영역과 HTML 영역 안내가 기술되어있습니다."]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
-          src: "/exp/custom-report-template.html",
+          src: "../exp/custom-report-template.html",
           height: "1050px",
           width: "100%",
           scrolling: "no"

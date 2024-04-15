@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21760],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[96626],{
 
 /***/ 83521:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -162,7 +162,7 @@ function _createMdxContent(props) {
             }), " 형식의 예시 파일을 확인하세요. 파일 내 주석에 커스터마이징을 위한 CSS 영역과 HTML 영역 안내가 기술되어있습니다."]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
-          src: "/exp/custom-report-template.html",
+          src: "../exp/custom-report-template.html",
           height: "1050px",
           width: "100%",
           scrolling: "no"
@@ -204,7 +204,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 58092:
+/***/ 17984:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -226,29 +226,28 @@ const frontMatter = {
 	title: '보고서',
 	description: '보고서를 안내합니다.',
 	tags: [
-		'.NET',
+		'PHP',
 		'보고서',
 		'분석하기',
 		'UI'
-	],
-	toc_max_heading_level: 2
+	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/report-intro",
+  "id": "php/report-intro",
   "title": "보고서",
   "description": "보고서를 안내합니다.",
-  "source": "@site/docs/dotnet/report-intro.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/report-intro",
-  "permalink": "/whatap-docs/dotnet/report-intro",
+  "source": "@site/docs/php/report-intro.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/report-intro",
+  "permalink": "/whatap-docs/php/report-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/report-intro.mdx",
+  "editUrl": "undefined/docs/php/report-intro.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "label": "보고서",
@@ -269,21 +268,20 @@ const metadata = {
     "title": "보고서",
     "description": "보고서를 안내합니다.",
     "tags": [
-      ".NET",
+      "PHP",
       "보고서",
       "분석하기",
       "UI"
-    ],
-    "toc_max_heading_level": 2
+    ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "통계",
-    "permalink": "/whatap-docs/dotnet/analysis-apm-trs"
+    "permalink": "/whatap-docs/php/analysis-apm-trs"
   },
   "next": {
     "title": "애플리케이션 보고서",
-    "permalink": "/whatap-docs/dotnet/report-apm"
+    "permalink": "/whatap-docs/php/report-apm"
   }
 };
 const assets = {

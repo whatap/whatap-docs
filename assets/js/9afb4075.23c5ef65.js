@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[96626],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[34749],{
 
 /***/ 83521:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -162,7 +162,7 @@ function _createMdxContent(props) {
             }), " 형식의 예시 파일을 확인하세요. 파일 내 주석에 커스터마이징을 위한 CSS 영역과 HTML 영역 안내가 기술되어있습니다."]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
-          src: "/exp/custom-report-template.html",
+          src: "../exp/custom-report-template.html",
           height: "1050px",
           width: "100%",
           scrolling: "no"
@@ -204,7 +204,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 17984:
+/***/ 29084:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -226,28 +226,29 @@ const frontMatter = {
 	title: '보고서',
 	description: '보고서를 안내합니다.',
 	tags: [
-		'PHP',
+		'Go',
 		'보고서',
 		'분석하기',
 		'UI'
-	]
+	],
+	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/report-intro",
+  "id": "golang/report-intro",
   "title": "보고서",
   "description": "보고서를 안내합니다.",
-  "source": "@site/docs/php/report-intro.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/report-intro",
-  "permalink": "/whatap-docs/php/report-intro",
+  "source": "@site/docs/golang/report-intro.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/report-intro",
+  "permalink": "/whatap-docs/golang/report-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/report-intro.mdx",
+  "editUrl": "undefined/docs/golang/report-intro.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     },
     {
       "label": "보고서",
@@ -268,20 +269,21 @@ const metadata = {
     "title": "보고서",
     "description": "보고서를 안내합니다.",
     "tags": [
-      "PHP",
+      "Go",
       "보고서",
       "분석하기",
       "UI"
-    ]
+    ],
+    "toc_max_heading_level": 2
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "goSidebar",
   "previous": {
     "title": "통계",
-    "permalink": "/whatap-docs/php/analysis-apm-trs"
+    "permalink": "/whatap-docs/golang/analysis-apm-trs"
   },
   "next": {
     "title": "애플리케이션 보고서",
-    "permalink": "/whatap-docs/php/report-apm"
+    "permalink": "/whatap-docs/golang/report-apm"
   }
 };
 const assets = {
