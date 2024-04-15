@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[2852],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39230],{
 
-/***/ 47903:
+/***/ 63854:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,32 +14,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67068);
+/* harmony import */ var _site_src_components_UItext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5379);
 
 
 const frontMatter = {
-	id: 'python-1_3_9',
-	title: 'Python Agent v1.3.9',
+	id: 'python-1_3_4',
+	title: 'Python Agent v1.3.4',
 	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_3_9",
-  "title": "Python Agent v1.3.9",
-  "description": "2023년 6월 28일",
-  "source": "@site/docs/release-notes/python/python-1.3.9.mdx",
+  "id": "release-notes/python/python-1_3_4",
+  "title": "Python Agent v1.3.4",
+  "description": "2023년 4월 26일",
+  "source": "@site/docs/release-notes/python/python-1.3.4.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_3_9",
-  "permalink": "/whatap-docs/release-notes/python/python-1_3_9",
+  "slug": "/release-notes/python/python-1_3_4",
+  "permalink": "/whatap-docs/release-notes/python/python-1_3_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.3.9.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.3.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_3_9",
-    "title": "Python Agent v1.3.9",
+    "id": "python-1_3_4",
+    "title": "Python Agent v1.3.4",
     "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar"
   },
@@ -51,76 +53,45 @@ const assets = {
 
 
 
+
+
 const toc = [{
-  "value": "2023년 6월 28일",
-  "id": "2023년-6월-28일",
+  "value": "2023년 4월 26일",
+  "id": "2023년-4월-26일",
   "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    code: "code",
-    em: "em",
     h4: "h4",
-    li: "li",
     p: "p",
-    pre: "pre",
     section: "section",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status, UI} = _components;
-  if (!Status) _missingMdxReference("Status", true);
-  if (!UI) _missingMdxReference("UI", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-6월-28일",
-      children: "2023년 6월 28일"
+      id: "2023년-4월-26일",
+      children: "2023년 4월 26일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.3.9/",
-          children: "whatap-python v1.3.9"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.3.4/",
+          children: "whatap-python v1.3.4"
+        })]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
-            children: "로그 검색기"
-          }), "에만 로그가 나오고 트랜잭션에서는 로그가 나오지 않는 현상 수정"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "whatap.conf"
-          }), " 파일에 다음 옵션을 추가하면 로그 트레이싱이 가능합니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whtap.conf'",
-            children: "trace_logging_enabled=true\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "method_profiling"
-          }), " 버그 수정"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "비동기 메소드에서 프로파일링이 되지 않는 현상을 수정했습니다."
-        }), "\n"]
-      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
+        children: "New"
+      }), " loguru 라이브러리 Injection 추가"]
     }), "\n"]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -130,10 +101,47 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+
+
+
+/***/ }),
+
+/***/ 67068:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ Status)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function Status({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        className: children,
+        children: children
+    });
 }
 
+
+/***/ }),
+
+/***/ 5379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ UItext)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function UItext({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        className: "uitext",
+        children: children
+    });
+}
 
 
 /***/ }),

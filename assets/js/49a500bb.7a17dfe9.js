@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15506],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71228],{
 
-/***/ 63708:
+/***/ 71530:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,84 +14,104 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67068);
+/* harmony import */ var _site_src_components_UItext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5379);
 
 
 const frontMatter = {
-	id: 'python-1_5_8',
-	title: 'Python Agent v1.5.8',
+	id: 'python-1_3_0',
+	title: 'Python Agent v1.3.0',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_5_7',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_5_8",
-  "title": "Python Agent v1.5.8",
-  "description": "2024년 02월 18일",
-  "source": "@site/docs/release-notes/python/python-1.5.8.mdx",
+  "id": "release-notes/python/python-1_3_0",
+  "title": "Python Agent v1.3.0",
+  "description": "* 배포일: 2023-01-19",
+  "source": "@site/docs/release-notes/python/python-1.3.0.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_5_8",
-  "permalink": "/whatap-docs/release-notes/python/python-1_5_8",
+  "slug": "/release-notes/python/python-1_3_0",
+  "permalink": "/whatap-docs/release-notes/python/python-1_3_0",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.5.8.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.3.0.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_5_8",
-    "title": "Python Agent v1.5.8",
+    "id": "python-1_3_0",
+    "title": "Python Agent v1.3.0",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_5_7",
     "displayed_sidebar": "releaseSidebar"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent v1.5.9",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_9"
-  },
-  "next": {
-    "title": "Python Agent v1.5.7",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_7"
-  }
+  "sidebar": "releaseSidebar"
 };
 const assets = {
 
 };
 
+/*
+## 배포 내역
+
+배포일: 2023-01-19
+
+* <Status>New</Status> FastAPI 0.89.1 버전 지원을 추가 했습니다.
 
 
-const toc = [];
+## 다운로드
+
+* Agent download: [whatap-python v1.3.0](https://pypi.org/project/whatap-python/1.3.0/)
+
+*/
+
+
+
+
+const toc = [{
+  "value": "FastAPI 지원 추가",
+  "id": "fastapi-지원-추가",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
-    admonition: "admonition",
-    p: "p",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    h2: "h2",
+    li: "li",
+    section: "section",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
-  if (!Status) _missingMdxReference("Status", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 02월 18일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " Frappe Application의 user(접속자 수 관련) 중복 집계 오류 수정"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.5.8/",
-          children: "whatap-python v1.5.8"
-        }), ")"]
-      })
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "배포일: 2023-01-19"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.3.0/",
+          children: "whatap-python v1.3.0"
+        })]
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "fastapi-지원-추가",
+        children: "FastAPI 지원 추가"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
+            children: "New"
+          }), " FastAPI ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "0.89.1 버전"
+          }), " 지원을 추가 했습니다."]
+        }), "\n"]
+      }), "\n", "\n"]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -101,10 +121,47 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+
+
+
+/***/ }),
+
+/***/ 67068:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ Status)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function Status({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        className: children,
+        children: children
+    });
 }
 
+
+/***/ }),
+
+/***/ 5379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ UItext)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function UItext({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        className: "uitext",
+        children: children
+    });
+}
 
 
 /***/ }),

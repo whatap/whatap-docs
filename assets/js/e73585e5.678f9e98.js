@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11380],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60812],{
 
-/***/ 79482:
+/***/ 73225:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_4_3',
-	title: 'Python Agent v1.4.3',
+	id: 'python-1_4_4',
+	title: 'Python Agent v1.4.4',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_4_2',
+	pagination_next: 'release-notes/python/python-1_4_3',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_4_3",
-  "title": "Python Agent v1.4.3",
-  "description": "2023년 8월 2일",
-  "source": "@site/docs/release-notes/python/python-1.4.3.mdx",
+  "id": "release-notes/python/python-1_4_4",
+  "title": "Python Agent v1.4.4",
+  "description": "2023년 8월 17일",
+  "source": "@site/docs/release-notes/python/python-1.4.4.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_4_3",
-  "permalink": "/whatap-docs/release-notes/python/python-1_4_3",
+  "slug": "/release-notes/python/python-1_4_4",
+  "permalink": "/whatap-docs/release-notes/python/python-1_4_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.4.3.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.4.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_4_3",
-    "title": "Python Agent v1.4.3",
+    "id": "python-1_4_4",
+    "title": "Python Agent v1.4.4",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_4_2",
+    "pagination_next": "release-notes/python/python-1_4_3",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "next": {
-    "title": "Python Agent v1.4.2",
-    "permalink": "/whatap-docs/release-notes/python/python-1_4_2"
+    "title": "Python Agent v1.4.3",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_3"
   }
 };
 const assets = {
@@ -58,8 +58,8 @@ const assets = {
 
 
 const toc = [{
-  "value": "2023년 8월 2일",
-  "id": "2023년-8월-2일",
+  "value": "2023년 8월 17일",
+  "id": "2023년-8월-17일",
   "level": 4
 }];
 function _createMdxContent(props) {
@@ -75,20 +75,20 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-8월-2일",
-      children: "2023년 8월 2일"
+      id: "2023년-8월-17일",
+      children: "2023년 8월 17일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.4.3/",
-          children: "whatap-python v1.4.3"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.4.4/",
+          children: "whatap-python v1.4.4"
+        })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         children: "Fixed"
-      }), " ActiveStack 지속 시간(Elapsed)이 와탭 수집 서버 시간과 사용자 서버 시간에 차이가 있을 경우 코드 오류로 오차가 발생하는 현상 수정"]
+      }), " wsgi 애플리케이션에서 active status 카운팅 버그 수정"]
     }), "\n"]
   });
 }

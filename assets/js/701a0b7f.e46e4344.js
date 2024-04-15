@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58084],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67365],{
 
-/***/ 37504:
+/***/ 11399:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_5_4',
-	title: 'Python Agent v1.5.4',
+	id: 'python-1_4_2',
+	title: 'Python Agent v1.4.2',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_5_3',
+	pagination_next: 'release-notes/python/python-1_4_1',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_5_4",
-  "title": "Python Agent v1.5.4",
-  "description": "2024년 01월 09일",
-  "source": "@site/docs/release-notes/python/python-1.5.4.mdx",
+  "id": "release-notes/python/python-1_4_2",
+  "title": "Python Agent v1.4.2",
+  "description": "2023년 7월 12일",
+  "source": "@site/docs/release-notes/python/python-1.4.2.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_5_4",
-  "permalink": "/whatap-docs/release-notes/python/python-1_5_4",
+  "slug": "/release-notes/python/python-1_4_2",
+  "permalink": "/whatap-docs/release-notes/python/python-1_4_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.5.4.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.4.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_5_4",
-    "title": "Python Agent v1.5.4",
+    "id": "python-1_4_2",
+    "title": "Python Agent v1.4.2",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_5_3",
+    "pagination_next": "release-notes/python/python-1_4_1",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent v1.5.5",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_5"
-  },
   "next": {
-    "title": "Python Agent v1.5.3",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_3"
+    "title": "Python Agent v1.4.1",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_1"
   }
 };
 const assets = {
@@ -61,40 +57,39 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "2023년 7월 12일",
+  "id": "2023년-7월-12일",
+  "level": 4
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    li: "li",
+    h4: "h4",
     p: "p",
-    ul: "ul",
+    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 01월 09일"
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+      id: "2023년-7월-12일",
+      children: "2023년 7월 12일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.5.4/",
-          children: "whatap-python v1.5.4"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.4.2/",
+          children: "whatap-python v1.4.2"
+        })]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         children: "Fixed"
-      }), " Python 에이전트 v1.4.9 버전 이상에서 일부 파이썬 버전의 모듈 의존성 수집 오류 수정"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "Python 3.6"
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "Python 3.7"
-      }), "\n"]
-    })]
+      }), " fastapi에서 active status가 비정상적으로 집계되는 현상 수정"]
+    }), "\n"]
   });
 }
 function MDXContent(props = {}) {

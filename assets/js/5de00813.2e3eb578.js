@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50864],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37083],{
 
-/***/ 93256:
+/***/ 27771:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_4_9',
-	title: 'Python Agent v1.4.9',
+	id: 'python-1_5_3',
+	title: 'Python Agent v1.5.3',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_4_8',
+	pagination_next: 'release-notes/python/python-1_5_2',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_4_9",
-  "title": "Python Agent v1.4.9",
-  "description": "2023년 12월 28일",
-  "source": "@site/docs/release-notes/python/python-1.4.9.mdx",
+  "id": "release-notes/python/python-1_5_3",
+  "title": "Python Agent v1.5.3",
+  "description": "2024년 01월 05일",
+  "source": "@site/docs/release-notes/python/python-1.5.3.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_4_9",
-  "permalink": "/whatap-docs/release-notes/python/python-1_4_9",
+  "slug": "/release-notes/python/python-1_5_3",
+  "permalink": "/whatap-docs/release-notes/python/python-1_5_3",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.4.9.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.5.3.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_4_9",
-    "title": "Python Agent v1.4.9",
+    "id": "python-1_5_3",
+    "title": "Python Agent v1.5.3",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_4_8",
+    "pagination_next": "release-notes/python/python-1_5_2",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
+  "previous": {
+    "title": "Python Agent v1.5.4",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_4"
+  },
   "next": {
-    "title": "Python Agent v1.4.8",
-    "permalink": "/whatap-docs/release-notes/python/python-1_4_8"
+    "title": "Python Agent v1.5.2",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_2"
   }
 };
 const assets = {
@@ -69,23 +73,19 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 12월 28일"
+      children: "2024년 01월 05일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.4.9/",
-          children: "whatap-python v1.4.9"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.5.3/",
+          children: "whatap-python v1.5.3"
+        })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         children: "Fixed"
-      }), " 모듈 의존성 기능에 조회 기능이 없어진 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: "pip"
-      }), " 대신 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: "importlib"
-      }), "로 변경"]
+      }), " Python 에이전트 v1.4.9 버전 이상에서 gunicorn 트랜잭션 수집 오류 수정"]
     })]
   });
 }

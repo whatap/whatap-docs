@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58705],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55131],{
 
-/***/ 9915:
+/***/ 72672:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_4_6',
-	title: 'Python Agent v1.4.6',
+	id: 'python-1_4_1',
+	title: 'Python Agent v1.4.1',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_4_4',
+	pagination_next: 'release-notes/python/python-1_4_0',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_4_6",
-  "title": "Python Agent v1.4.6",
-  "description": "2023년 10월 12일",
-  "source": "@site/docs/release-notes/python/python-1.4.6.mdx",
+  "id": "release-notes/python/python-1_4_1",
+  "title": "Python Agent v1.4.1",
+  "description": "2023년 7월 10일",
+  "source": "@site/docs/release-notes/python/python-1.4.1.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_4_6",
-  "permalink": "/whatap-docs/release-notes/python/python-1_4_6",
+  "slug": "/release-notes/python/python-1_4_1",
+  "permalink": "/whatap-docs/release-notes/python/python-1_4_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.4.6.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.4.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_4_6",
-    "title": "Python Agent v1.4.6",
+    "id": "python-1_4_1",
+    "title": "Python Agent v1.4.1",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_4_4",
+    "pagination_next": "release-notes/python/python-1_4_0",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "next": {
-    "title": "Python Agent v1.4.4",
-    "permalink": "/whatap-docs/release-notes/python/python-1_4_4"
+    "title": "Python Agent v1.4.0",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_0"
   }
 };
 const assets = {
@@ -58,19 +58,17 @@ const assets = {
 
 
 const toc = [{
-  "value": "2023년 10월 12일",
-  "id": "2023년-10월-12일",
+  "value": "2023년 7월 10일",
+  "id": "2023년-7월-10일",
   "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    code: "code",
     h4: "h4",
     li: "li",
     p: "p",
-    pre: "pre",
     section: "section",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
@@ -79,35 +77,21 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-10월-12일",
-      children: "2023년 10월 12일"
+      id: "2023년-7월-10일",
+      children: "2023년 7월 10일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.4.6/",
-          children: "whatap-python v1.4.6"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.4.1/",
+          children: "whatap-python v1.4.1"
+        })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 이전 배포에서 리눅스 관련 파일 누락으로 인한 재배포"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " Oracle 데이터베이스 - sqlalchemy 연동 시 바인딩 변수 프로파일 지원, 다음 옵션을 통해 설정할 수 있습니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "profile_sql_param_enabled=true\n"
-          })
-        }), "\n"]
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          children: "Fixed"
+        }), " Redis injection 시 파라미터 누락으로 인한 타입 에러 현상 수정"]
       }), "\n"]
     }), "\n"]
   });

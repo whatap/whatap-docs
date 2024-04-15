@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[91143],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[96915],{
 
-/***/ 58645:
+/***/ 83729:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,32 +18,42 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_4_0',
-	title: 'Python Agent v1.4.0',
+	id: 'python-1_5_9',
+	title: 'Python Agent v1.5.9',
 	toc_max_heading_level: 2,
+	pagination_next: 'release-notes/python/python-1_5_8',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_4_0",
-  "title": "Python Agent v1.4.0",
-  "description": "2023년 7월 4일",
-  "source": "@site/docs/release-notes/python/python-1.4.0.mdx",
+  "id": "release-notes/python/python-1_5_9",
+  "title": "Python Agent v1.5.9",
+  "description": "2024년 03월 11일",
+  "source": "@site/docs/release-notes/python/python-1.5.9.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_4_0",
-  "permalink": "/whatap-docs/release-notes/python/python-1_4_0",
+  "slug": "/release-notes/python/python-1_5_9",
+  "permalink": "/whatap-docs/release-notes/python/python-1_5_9",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.4.0.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.5.9.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_4_0",
-    "title": "Python Agent v1.4.0",
+    "id": "python-1_5_9",
+    "title": "Python Agent v1.5.9",
     "toc_max_heading_level": 2,
+    "pagination_next": "release-notes/python/python-1_5_8",
     "displayed_sidebar": "releaseSidebar"
   },
-  "sidebar": "releaseSidebar"
+  "sidebar": "releaseSidebar",
+  "previous": {
+    "title": "Python Agent v1.6.0",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_0"
+  },
+  "next": {
+    "title": "Python Agent v1.5.8",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_8"
+  }
 };
 const assets = {
 
@@ -51,43 +61,32 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "2023년 7월 4일",
-  "id": "2023년-7월-4일",
-  "level": 4
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    h4: "h4",
-    li: "li",
     p: "p",
-    section: "section",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-7월-4일",
-      children: "2023년 7월 4일"
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "2024년 03월 11일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " 에이전트 옵션 설정 시 개행 없이 입력되는 현상 수정"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.4.0/",
-          children: "whatap-python v1.4.0"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.5.9/",
+          children: "whatap-python v1.5.9"
+        })]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Fixed"
-        }), " mongoDB 4.0 이상 버전 연결 시 트랜잭션 분석에서 mongoDB 데이터 누락 현상 수정"]
-      }), "\n"]
-    }), "\n"]
+    })]
   });
 }
 function MDXContent(props = {}) {

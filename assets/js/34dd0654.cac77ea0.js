@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[7964],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77059],{
 
-/***/ 65559:
+/***/ 59389:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_6_0',
-	title: 'Python Agent v1.6.0',
+	id: 'python-1_4_8',
+	title: 'Python Agent v1.4.8',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_5_9',
+	pagination_next: 'release-notes/python/python-1_4_6',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_6_0",
-  "title": "Python Agent v1.6.0",
-  "description": "2024년 03월 13일",
-  "source": "@site/docs/release-notes/python/python-1.6.0.mdx",
+  "id": "release-notes/python/python-1_4_8",
+  "title": "Python Agent v1.4.8",
+  "description": "2023년 10월 25일",
+  "source": "@site/docs/release-notes/python/python-1.4.8.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_6_0",
-  "permalink": "/whatap-docs/release-notes/python/python-1_6_0",
+  "slug": "/release-notes/python/python-1_4_8",
+  "permalink": "/whatap-docs/release-notes/python/python-1_4_8",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.6.0.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.4.8.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_6_0",
-    "title": "Python Agent v1.6.0",
+    "id": "python-1_4_8",
+    "title": "Python Agent v1.4.8",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_5_9",
+    "pagination_next": "release-notes/python/python-1_4_6",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent v1.6.1",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_1"
-  },
   "next": {
-    "title": "Python Agent v1.5.9",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_9"
+    "title": "Python Agent v1.4.6",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_6"
   }
 };
 const assets = {
@@ -73,19 +69,19 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 13일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " FastAPI에서 remote host에 대한 정보를 찾지 못하면 에이전트가 동작하지 않는 현상 수정"]
+      children: "2023년 10월 25일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.6.0/",
-          children: "whatap-python v1.6.0"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.4.8/",
+          children: "whatap-python v1.4.8"
+        })]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " 쿠버네티스의 클러스터 내부 에이전트 성능 수집과 관련해 메모리를 과다 측정하는 버그 수정"]
     })]
   });
 }

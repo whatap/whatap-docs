@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18739],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[30853],{
 
-/***/ 33226:
+/***/ 23668:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_6_1',
-	title: 'Python Agent v1.6.1',
+	id: 'python-1_5_0',
+	title: 'Python Agent v1.5.0',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_6_0',
+	pagination_next: 'release-notes/python/python-1_4_9',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_6_1",
-  "title": "Python Agent v1.6.1",
-  "description": "2024년 03월 20일",
-  "source": "@site/docs/release-notes/python/python-1.6.1.mdx",
+  "id": "release-notes/python/python-1_5_0",
+  "title": "Python Agent v1.5.0",
+  "description": "2023년 12월 29일",
+  "source": "@site/docs/release-notes/python/python-1.5.0.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_6_1",
-  "permalink": "/whatap-docs/release-notes/python/python-1_6_1",
+  "slug": "/release-notes/python/python-1_5_0",
+  "permalink": "/whatap-docs/release-notes/python/python-1_5_0",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.6.1.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.5.0.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_6_1",
-    "title": "Python Agent v1.6.1",
+    "id": "python-1_5_0",
+    "title": "Python Agent v1.5.0",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_6_0",
+    "pagination_next": "release-notes/python/python-1_4_9",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent v1.6.2",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_2"
-  },
   "next": {
-    "title": "Python Agent v1.6.0",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_0"
+    "title": "Python Agent v1.4.9",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_9"
   }
 };
 const assets = {
@@ -69,25 +65,27 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
+  }, {Link, Status} = _components;
+  if (!Link) _missingMdxReference("Link", true);
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 20일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-        children: "whatap-hook.log"
-      }), " 반복적인 로그 호출 문제 수정"]
+      children: "2023년 12월 29일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.6.1/",
-          children: "whatap-python v1.6.1"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.5.0/",
+          children: "whatap-python v1.5.0"
+        })]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Feature"
+      }), " Frappe 프레임워크(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
+        to: "https://github.com/frappe/frappe",
+        children: "frappe/frappe: Low code web framework for real world applications, in Python and Javascript (github.com)"
+      }), ") 성능 수집 기능 추가"]
     })]
   });
 }

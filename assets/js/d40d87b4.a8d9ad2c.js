@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70570],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51222],{
 
-/***/ 86341:
+/***/ 3863:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,46 +14,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67068);
+/* harmony import */ var _site_src_components_UItext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5379);
 
 
 const frontMatter = {
-	id: 'python-1_6_2',
-	title: 'Python Agent v1.6.2',
+	id: 'python-1_3_1',
+	title: 'Python Agent v1.3.1',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_6_1',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_6_2",
-  "title": "Python Agent v1.6.2",
-  "description": "2024년 03월 29일",
-  "source": "@site/docs/release-notes/python/python-1.6.2.mdx",
+  "id": "release-notes/python/python-1_3_1",
+  "title": "Python Agent v1.3.1",
+  "description": "* 배포일: 2023-03-15",
+  "source": "@site/docs/release-notes/python/python-1.3.1.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_6_2",
-  "permalink": "/whatap-docs/release-notes/python/python-1_6_2",
+  "slug": "/release-notes/python/python-1_3_1",
+  "permalink": "/whatap-docs/release-notes/python/python-1_3_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.6.2.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.3.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_6_2",
-    "title": "Python Agent v1.6.2",
+    "id": "python-1_3_1",
+    "title": "Python Agent v1.3.1",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_6_1",
     "displayed_sidebar": "releaseSidebar"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Node.js Agent v0.4.77",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
-  },
-  "next": {
-    "title": "Python Agent v1.6.1",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_1"
-  }
+  "sidebar": "releaseSidebar"
 };
 const assets = {
 
@@ -61,65 +53,52 @@ const assets = {
 
 
 
-const toc = [];
+
+
+const toc = [{
+  "value": "쿠키 기반 사용자 집계오류를 수정",
+  "id": "쿠키-기반-사용자-집계오류를-수정",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    h2: "h2",
     li: "li",
-    p: "p",
+    section: "section",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
-  if (!Status) _missingMdxReference("Status", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 29일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Feature"
-      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: "exit_with_parent_process_enabled"
-      }), " 옵션 추가"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
-          children: "exit_with_parent_process_enabled"
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "bool"
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "false"
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["Python 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "WHATAP_HOME"
-          }), " 경로에 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-            children: "whatap.conf"
-          }), " 파일을 통해 해당 옵션의 값을 설정하세요. 모니터링 대상 Python 프로세스 종료 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "whatap_python"
-          }), " 프로세스의 종료 여부를 설정할 수 있습니다. 옵션의 값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "true"
-          }), "로 설졍할 경우 모니터링 대상 애플리케이션 종료 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "whatap_python"
-          }), " 프로세스가 함께 종료됩니다. 최대 1분이 소요됩니다."]
-        }), "\n"]
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.6.2/",
-          children: "whatap-python v1.6.2"
-        }), ")"]
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+          children: "배포일: 2023-03-15"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "https://pypi.org/project/whatap-python/1.3.1/",
+            children: "whatap-python v1.3.1"
+          })]
+        }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "쿠키-기반-사용자-집계오류를-수정",
+        children: "쿠키 기반 사용자 집계오류를 수정"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
+          children: "Fixed"
+        }), " 쿠키 기반 사용자 집계시 코드 오류로 트랜잭션마다 사용자가 증가하는 오류 수정"]
+      }), "\n"]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -129,10 +108,47 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+
+
+
+/***/ }),
+
+/***/ 67068:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ Status)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function Status({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        className: children,
+        children: children
+    });
 }
 
+
+/***/ }),
+
+/***/ 5379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ UItext)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function UItext({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        className: "uitext",
+        children: children
+    });
+}
 
 
 /***/ }),

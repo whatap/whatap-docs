@@ -210,11 +210,11 @@ function _createMdxContent(props) {
           })
         }), "\n"]
       }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["[Python Agent 지난 버전](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-        href: "https://pypi.org/project/whatap-python/1.4.8/",
-        children: "whatap-python v1.4.8"
-      }), "#history)"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+        href: "https://pypi.org/project/whatap-python/1.4.8/#history",
+        children: "Python Agent 지난 버전"
+      })
     })]
   });
 }

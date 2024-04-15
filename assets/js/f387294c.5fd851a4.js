@@ -369,7 +369,7 @@ function _createMdxContent(props) {
               children: "processType"
             }), " 옵션으로 가시화하는 경우"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mermaid, {
-            value: "flowchart LR\n  A[Proxy] */} B(msa_process1);\n  B */} C(msa_process2);\n  C */} D(DB);"
+            value: "flowchart LR\n  A[Proxy] --> B(msa_process1);\n  B --> C(msa_process2);\n  C --> D(DB);"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -389,7 +389,7 @@ function _createMdxContent(props) {
               children: "appName:\n    prod_proxy: # 운영기\n        - host_tag: prod_proxy\n          process_type: proxy\n    prod_msa1: # 운영기\n        - host_tag: prod_msa\n          process_type: msa_process1\n    prod_msa2: # 운영기\n        - host_tag: prod_msa\n          process_type: msa_process2\n    dev_proxy: # 개발기\n        - host_tag: dev_proxy\n          process_type: proxy\n    dev_msa: # 개발기\n        - host_tag: dev_msa\n          process_type: msa_process1\n        - host_tag: dev_msa\n          process_type: msa_process2\n    test: # 시험기\n        - host_tag: test\n    db:\n        - process_type: mysql\n"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mermaid, {
-            value: "flowchart LR\n  A(prod_proxy) */} B(prod_msa1);\n  B[prod_msa1] */} C(prod_msa2);\n  C[prod_msa2] */} D(DB);\n  E[dev_proxy] */} F(dev_msa);\n  F[dev_msa] */} D(DB);\n  G[test] */} D(DB);"
+            value: "flowchart LR\n  A(prod_proxy) --> B(prod_msa1);\n  B[prod_msa1] --> C(prod_msa2);\n  C[prod_msa2] --> D(DB);\n  E[dev_proxy] --> F(dev_msa);\n  F[dev_msa] --> D(DB);\n  G[test] --> D(DB);"
           }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37083],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[2852],{
 
-/***/ 27771:
+/***/ 47903:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,42 +18,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_5_3',
-	title: 'Python Agent v1.5.3',
+	id: 'python-1_3_9',
+	title: 'Python Agent v1.3.9',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_5_2',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_5_3",
-  "title": "Python Agent v1.5.3",
-  "description": "2024년 01월 05일",
-  "source": "@site/docs/release-notes/python/python-1.5.3.mdx",
+  "id": "release-notes/python/python-1_3_9",
+  "title": "Python Agent v1.3.9",
+  "description": "2023년 6월 28일",
+  "source": "@site/docs/release-notes/python/python-1.3.9.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_5_3",
-  "permalink": "/whatap-docs/release-notes/python/python-1_5_3",
+  "slug": "/release-notes/python/python-1_3_9",
+  "permalink": "/whatap-docs/release-notes/python/python-1_3_9",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.5.3.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.3.9.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_5_3",
-    "title": "Python Agent v1.5.3",
+    "id": "python-1_3_9",
+    "title": "Python Agent v1.3.9",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_5_2",
     "displayed_sidebar": "releaseSidebar"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent v1.5.4",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_4"
-  },
-  "next": {
-    "title": "Python Agent v1.5.2",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_2"
-  }
+  "sidebar": "releaseSidebar"
 };
 const assets = {
 
@@ -61,32 +51,71 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "2023년 6월 28일",
+  "id": "2023년-6월-28일",
+  "level": 4
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
+    em: "em",
+    h4: "h4",
+    li: "li",
     p: "p",
+    pre: "pre",
+    section: "section",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
+  }, {Status, UI} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 01월 05일"
+  if (!UI) _missingMdxReference("UI", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+      id: "2023년-6월-28일",
+      children: "2023년 6월 28일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.5.3/",
-          children: "whatap-python v1.5.3"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.3.9/",
+          children: "whatap-python v1.3.9"
+        })]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " Python 에이전트 v1.4.9 버전 이상에서 gunicorn 트랜잭션 수집 오류 수정"]
-    })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "로그 검색기"
+          }), "에만 로그가 나오고 트랜잭션에서는 로그가 나오지 않는 현상 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일에 다음 옵션을 추가하면 로그 트레이싱이 가능합니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title='whtap.conf'",
+            children: "trace_logging_enabled=true\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "method_profiling"
+          }), " 버그 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "비동기 메소드에서 프로파일링이 되지 않는 현상을 수정했습니다."
+        }), "\n"]
+      }), "\n"]
+    }), "\n"]
   });
 }
 function MDXContent(props = {}) {

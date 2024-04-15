@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18496],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50864],{
 
-/***/ 44676:
+/***/ 93256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,38 +14,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67068);
-/* harmony import */ var _site_src_components_UItext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5379);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
 
 
 const frontMatter = {
-	id: 'python-1_3_6',
-	title: 'Python Agent v1.3.6',
+	id: 'python-1_4_9',
+	title: 'Python Agent v1.4.9',
 	toc_max_heading_level: 2,
+	pagination_next: 'release-notes/python/python-1_4_8',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_3_6",
-  "title": "Python Agent v1.3.6",
-  "description": "2023년 5월 18일",
-  "source": "@site/docs/release-notes/python/python-1.3.6.mdx",
+  "id": "release-notes/python/python-1_4_9",
+  "title": "Python Agent v1.4.9",
+  "description": "2023년 12월 28일",
+  "source": "@site/docs/release-notes/python/python-1.4.9.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_3_6",
-  "permalink": "/whatap-docs/release-notes/python/python-1_3_6",
+  "slug": "/release-notes/python/python-1_4_9",
+  "permalink": "/whatap-docs/release-notes/python/python-1_4_9",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.3.6.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.4.9.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_3_6",
-    "title": "Python Agent v1.3.6",
+    "id": "python-1_4_9",
+    "title": "Python Agent v1.4.9",
     "toc_max_heading_level": 2,
+    "pagination_next": "release-notes/python/python-1_4_8",
     "displayed_sidebar": "releaseSidebar"
   },
-  "sidebar": "releaseSidebar"
+  "sidebar": "releaseSidebar",
+  "next": {
+    "title": "Python Agent v1.4.8",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_8"
+  }
 };
 const assets = {
 
@@ -53,45 +57,41 @@ const assets = {
 
 
 
-
-
-const toc = [{
-  "value": "2023년 5월 18일",
-  "id": "2023년-5월-18일",
-  "level": 4
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    h4: "h4",
     p: "p",
-    section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-5월-18일",
-      children: "2023년 5월 18일"
+  }, {Status} = _components;
+  if (!Status) _missingMdxReference("Status", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "2023년 12월 28일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: [whatap-python · PyPI](", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.3.6/",
-          children: "whatap-python v1.3.6"
-        }), ")"]
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.4.9/",
+          children: "whatap-python v1.4.9"
+        })]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
-        children: "Change"
-      }), " 로그 수집 활성화 방법 변경"]
-    }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " 모듈 의존성 기능에 조회 기능이 없어진 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        children: "pip"
+      }), " 대신 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        children: "importlib"
+      }), "로 변경"]
+    })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -101,47 +101,10 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
-
-
-
-/***/ }),
-
-/***/ 67068:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ Status)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-
-
-function Status({ children }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        className: children,
-        children: children
-    });
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
-
-/***/ }),
-
-/***/ 5379:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ UItext)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-
-
-function UItext({ children }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-        className: "uitext",
-        children: children
-    });
-}
 
 
 /***/ }),
