@@ -15,8 +15,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.2eb7deb7.css">
-<script src="/whatap-docs/assets/js/runtime~main.33e268f6.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.92f772bb.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.a6221d38.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.ea973dde.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -31,25 +31,20 @@
 <p>애플리케이션의 성능은 이 트랜잭션들의 성능으로 요약할 수 있습니다. 트랜잭션 성능은 트랜잭션 시작에서부터 종료 시점, 응답시간 및 자원 사용량 혹은 트랜잭션 호출자 속성 등의 정보를 포함합니다.</p>
 <p>기본적으로 트랜잭션 응답 분포와 트랜잭션 통계를 통해서 트랜잭션 성능을 분석할 수 있습니다.</p>
 <p>에이전트에서 트랜잭션 성능을 추적해 설정할 수 있는 옵션을 다음과 같이 제공합니다.</p>
-<section><h2 class="anchor anchorWithStickyNavbar_LWe7" id="트랜잭션-트레이싱">트랜잭션 트레이싱<a href="#트랜잭션-트레이싱" class="hash-link" aria-label="트랜잭션 트레이싱에 대한 직접 링크" title="트랜잭션 트레이싱에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="트랜잭션-트레이싱">트랜잭션 트레이싱<a href="#트랜잭션-트레이싱" class="hash-link" aria-label="트랜잭션 트레이싱에 대한 직접 링크" title="트랜잭션 트레이싱에 대한 직접 링크">​</a></h2><ul>
 <li>
 <p><strong>profile_basetime</strong> <span class="type">MiliSecond</span></p>
 <p>기본값 <code>500</code></p>
 <p>트레이스의 상세 정보를 수집할 최소 응답 시간을 설정합니다. 설정한 값 이하의 시간 내에 트랜잭션이 종료된 경우 트레이스 정보를 수집하지 않습니다. 단, 5분 단위로 최초 호출된 URL과 에러가 발생한 트랜잭션에 대한 트레이스 정보는 수집합니다.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><code>profile_basetime</code> 옵션에 상관없이 에러를 수집하려면 <code>profile_concern_error_enabled</code> 옵션을 <code>true</code>로 설정하세요. 기본값 <code>false</code>로 설정하면 에러를 샘플링하게 됩니다</p></div></div>
 </li>
-</ul>
-<ul>
+</ul><ul>
 <li>
 <p><strong>profile_error_step_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
 <p>프로파일에 에러 관련 정보를 표시하는 스텝을 추가할 수 있습니다.</p>
 </li>
-</ul>
-<!-- -->
-<ul>
+</ul><ul>
 <li>
 <p><strong>trace_active_transaction_yellow_time</strong> <span class="type">MiliSecond</span></p>
 <p>기본값 <code>3000</code></p>
@@ -60,8 +55,7 @@
 <p>기본값 <code>8000</code></p>
 <p>액티브 트랜잭션의 아크이퀄라이저에서 빨간색으로 표현할 기준을 설정합니다.</p>
 </li>
-</ul>
-<ul>
+</ul><ul>
 <li>
 <p><strong>hook_method_patterns</strong> <span class="type">String</span></p>
 <p>응답시간을 측정할 메소드를 설정합니다. 마지막 마침표(.)를 구분자로 클래스 FullName과 메소드로 구분되며 별표(*)를 와일드 카드로 사용할 수 있습니다. 대상이 여러 개인 경우 쉼표(,)로 구분합니다.</p>
@@ -104,7 +98,7 @@
 <li>
 <p><strong>httpc_status_ignore</strong> <span class="type">String</span></p>
 <p>기본값 <code>Empty</code></p>
-<p>HTTP 상태 코드가 에러(<code>HTTPC_ERROR</code>)인 경우 무시할 수 있습니다. 여러 값을 대상으로 할 경우 쉼표(,)를 구분 자로 사용하세요.</p>
+<p>HTTP 상태 코드가 에러(<code>HTTPC_ERROR</code>)인 경우 무시할 수 있습니다. 여러 값을 대상으로 할 경우 쉼표(,)를 구분자로 사용하세요.</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">whatap.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key attr-name" style="color:rgb(255, 203, 107)">httpc_status_ignore</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">404,500</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>
@@ -113,15 +107,13 @@
 <p><code>whatap.error.HTTPC_ERROR</code>를 무시합니다. 여러 값을 대상으로 할 경우 쉼표(,)를 구분자로 이용하세요.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><code>httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404</code>와 같이 설정하세요. 이때 url은 통계/에러 분석에서 <code>HTTPC_URL</code> 값을 입력합니다.</p></div></div>
 </li>
-</ul>
-</section><section><h2 class="anchor anchorWithStickyNavbar_LWe7" id="http-트랜잭션-추적">HTTP 트랜잭션 추적<a href="#http-트랜잭션-추적" class="hash-link" aria-label="HTTP 트랜잭션 추적에 대한 직접 링크" title="HTTP 트랜잭션 추적에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
+</ul></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="http-트랜잭션-추적">HTTP 트랜잭션 추적<a href="#http-트랜잭션-추적" class="hash-link" aria-label="HTTP 트랜잭션 추적에 대한 직접 링크" title="HTTP 트랜잭션 추적에 대한 직접 링크">​</a></h2><ul>
 <li>
 <p><strong>trace_normalize_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
 <p>트랜잭션 URL을 파싱해 정규화하는 기능을 활성화합니다.</p>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><code>false</code>로 값을 변경하면 패스 파라미터 파싱을 비활성화합니다. 이 경우 통계 데이터의 의미가 약화됨으로 디버그 용도로만 잠시 사용하는 것을 권장합니다.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><code>false</code>로 값을 변경하면 패스 파라미터 파싱을 비활성화합니다. 이 경우 통계 데이터의 의미가 약화됨으로 디버그 용도로만 잠시  사용하는 것을 권장합니다.</p></div></div>
 </li>
 <li>
 <p><strong>trace_auto_normalize_enabled</strong> <span class="type">Boolean</span></p>
@@ -142,9 +134,7 @@
 <p><strong>trace_transaction_name_header_key</strong> <span class="type">String</span></p>
 <p>설정한 HTTP 헤더 키에서 추출한 값을 트랜잭션의 이름 마지막에 추가합니다.</p>
 </li>
-</ul>
-<!-- -->
-<ul>
+</ul><ul>
 <li>
 <p><strong>profile_http_header_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>false</code></p>
@@ -159,14 +149,13 @@
 </li>
 <li>
 <p><strong>profile_http_header_url_prefix</strong> <span class="type">String</span></p>
-<p>트레이스 내역에 http 헤더 정보를 기록할 대상 URL의 prefix를 정의할 때 사용합니다.</p>
+<p>트레이스 내역에 http 헤더 정보를 기 록할 대상 URL의 prefix를 정의할 때 사용합니다.</p>
 </li>
 <li>
 <p><strong>profile_http_parameter_url_prefix</strong> <span class="type">String</span></p>
 <p>트레이스 내역에 http 파라미터 정보를 기록할 대상 URL의 prefix를 정의할 때 사용합니다.</p>
 </li>
-</ul>
-<ul>
+</ul><ul>
 <li>
 <p><strong>trace_ignore_url_set</strong> <span class="type">String</span></p>
 <p>트랜잭션 추적에서 제외할 URL을 설정합니다. 2개 이상의 값을 설정하려면 쉼표(,)를 구분자로 이용하세요.</p>
@@ -199,7 +188,7 @@
 <li>
 <p><strong>status_ignore_set</strong> <span class="type">String</span></p>
 <p>기본값 <code>Empty</code></p>
-<p>HTTP 상태 리턴 코드 중에서 무시하고 싶은 코드를 URL   단위로 설정할 수 있습니다.</p>
+<p>HTTP 상태 리턴 코드 중에서 무시하고 싶은 코드를 URL 단위로 설정할 수 있습니다.</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">whatap.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># example</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token key attr-name" style="color:rgb(255, 203, 107)">status_ignore_set</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>
@@ -207,9 +196,8 @@
 <p>기본값 <code>true</code></p>
 <p>HTTP 401, 403과 같이 정상 응답이 아닌 HTTP 상태 코드를 반환하는 경우 에러로 처리할지 여부를 설정합니다.</p>
 </li>
-</ul>
-</section><section><h2 class="anchor anchorWithStickyNavbar_LWe7" id="non-http-트랜잭션-추적">NON HTTP 트랜잭션 추적<a href="#non-http-트랜잭션-추적" class="hash-link" aria-label="NON HTTP 트랜잭션 추적에 대한 직접 링크" title="NON HTTP 트랜잭션 추적에 대한 직접 링크">​</a></h2>
-<ul>
+</ul></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="non-http-트랜잭션-추적">NON HTTP 트랜잭션 추적<a href="#non-http-트랜잭션-추적" class="hash-link" aria-label="NON HTTP 트랜잭션 추적에 대한 직접 링크" title="NON HTTP 트랜잭션 추적에 대한 직접 링크">​</a></h2><ul>
 <li>
 <p><strong>hook_service_patterns</strong> <span class="type">String</span></p>
 <p>NON-Http 트랜잭션 추적을 위한 시작점 패턴을 설정합니다. 와일드카드 문자를 사용할 수 없으며, 2개 이상의 값을 설정하려면 쉼표(,)를 구분자로 이용하세요.</p>
@@ -219,9 +207,8 @@
 <p>기본값 <code>true</code></p>
 <p>소켓(TCP) 연결이 오픈될 때 트랜잭션을 시작한 상황에서만 오픈을 추적하는데 트랜잭션이 아닌 백그라운드 스레드에 의해 소켓이 오픈될 때도 추적합니다.</p>
 </li>
-</ul>
-</section><section><h2 class="anchor anchorWithStickyNavbar_LWe7" id="멀티-트랜잭션-추적">멀티 트랜잭션 추적<a href="#멀티-트랜잭션-추적" class="hash-link" aria-label="멀티 트랜잭션 추적에 대한 직접 링크" title="멀티 트랜잭션 추적에 대한 직접 링크">​</a></h2>
-<ul>
+</ul></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="멀티-트랜잭션-추적">멀티 트랜잭션 추적<a href="#멀티-트랜잭션-추적" class="hash-link" aria-label="멀티 트랜잭션 추적에 대한 직접 링크" title="멀티 트랜잭션 추적에 대한 직접 링크">​</a></h2><ul>
 <li>
 <p><strong>mtrace_rate</strong> <span class="type">Int</span></p>
 <p>기본값 <code>0</code></p>
@@ -230,7 +217,7 @@
 <li>
 <p><strong>mtrace_spec</strong> <span class="type">String</span></p>
 <p>기본값: <code>v1</code></p>
-<p>현재 인스턴스의 애플리케이션 버전을 설정합니다. 임의의 문자열을 입력할 수 있습니다. 이 데이터는 호출 통계를 위해 이용합니다.</p>
+<p>현재 인스턴스의 애플리케이션 버전을 설정합니다. 임의의 문자열을 입력할 수 있습니  다. 이 데이터는 호출 통계를 위해 이용합니다.</p>
 </li>
 <li>
 <p><strong>mtrace_caller_key</strong> <span class="type">String</span></p>
@@ -262,11 +249,8 @@
 <p>기본값 <code>false</code></p>
 <p>Caller와 Callee의 상관관계 통계를 수집합니다. Caller에 적용하면 Caller의 상세 정보를 보내주고 Callee에 적용하면 url 단위 Caller-Callee 호출 통계를 수집 서버로 전송합니다.</p>
 </li>
-</ul>
-</section><section><h2 class="anchor anchorWithStickyNavbar_LWe7" id="트레이스-데이터-샘플링">트레이스 데이터 샘플링<a href="#트레이스-데이터-샘플링" class="hash-link" aria-label="트레이스 데이터 샘플링에 대한 직접 링크" title="트레이스 데이터 샘플링에 대한 직접 링크">​</a></h2>
-<code class="my">Node.js Agent v0.4.94 or later</code>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><a href="/whatap-docs/release-notes/nodejs/nodejs-0_4_94">Node.js 에이전트 v0.4.94 버전</a>에서 <a href="http://socket.io" target="_blank" rel="noopener noreferrer">socket.io</a> 모니터링 모듈을 추가했습니다. <code>trace_sampling_enabled</code> ,<code>trace_sampling_tps</code> 옵션을 사용하여 샘플링된 데이터를 확인할 수 있습니다. <a href="#trace_ignore_url_prefix"><code>trace_ignore_url_prefix</code></a> 옵션에 <code>/socket.io</code> 경로를 추가하여 트레이스하지 않도록 설정하세요.</p></div></div>
-<ul>
+</ul></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="트레이스-데이터-샘플링">트레이스 데이터 샘플링<a href="#트레이스-데이터-샘플링" class="hash-link" aria-label="트레이스 데이터 샘플링에 대한 직접 링크" title="트레이스 데이터 샘플링에 대한 직접 링크">​</a></h2><code class="my">Node.js Agent v0.4.94 or later</code><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><a href="/whatap-docs/release-notes/nodejs/nodejs-0_4_94">Node.js 에이전트 v0.4.94 버전</a>에서 <a href="http://socket.io" target="_blank" rel="noopener noreferrer">socket.io</a> 모니터링 모듈을 추가했습니다. <code>trace_sampling_enabled</code> ,<code>trace_sampling_tps</code> 옵션을 사용하여 샘플링된 데이터를 확인할 수 있습니다. <a href="#trace_ignore_url_prefix"><code>trace_ignore_url_prefix</code></a> 옵션에 <code>/socket.io</code> 경로를 추가하여 트레이스하지 않도록 설정하세요.</p></div></div><ul>
 <li>
 <p><strong>trace_sampling_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>false</code></p>
@@ -277,7 +261,6 @@
 <p>기본값 <code>1000</code></p>
 <p>트레이스 데이터 샘플링 수를 설정할 수 있습니다. 설정한 샘플링 수를 초과하는 데이터는 전송하지 않으며, 1초마다 초기화합니다.</p>
 </li>
-</ul>
-</section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/node-js">Node.js</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/트랜잭션">트랜잭션</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/nodejs/agent-log"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">에이전트 로그 설정</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/nodejs/agent-dbsql"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">DB, SQL</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#트랜잭션-트레이싱" class="table-of-contents__link toc-highlight">트랜잭션 트레이싱</a></li><li><a href="#http-트랜잭션-추적" class="table-of-contents__link toc-highlight">HTTP 트랜잭션 추적</a></li><li><a href="#non-http-트랜잭션-추적" class="table-of-contents__link toc-highlight">NON HTTP 트랜잭션 추적</a></li><li><a href="#멀티-트랜잭션-추적" class="table-of-contents__link toc-highlight">멀티 트랜잭션 추적</a></li><li><a href="#트레이스-데이터-샘플링" class="table-of-contents__link toc-highlight">트레이스 데이터 샘플링</a></li></ul></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/nodejs/agent-transaction" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
+</ul></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/node-js">Node.js</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/트랜잭션">트랜잭션</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/nodejs/agent-log"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">에이전트 로그 설정</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/nodejs/agent-dbsql"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">DB, SQL</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#트랜잭션-트레이싱" class="table-of-contents__link toc-highlight">트랜잭션 트레이싱</a></li><li><a href="#http-트랜잭션-추적" class="table-of-contents__link toc-highlight">HTTP 트랜잭션 추적</a></li><li><a href="#non-http-트랜잭션-추적" class="table-of-contents__link toc-highlight">NON HTTP 트랜잭션 추적</a></li><li><a href="#멀티-트랜잭션-추적" class="table-of-contents__link toc-highlight">멀티 트랜잭션 추적</a></li><li><a href="#트레이스-데이터-샘플링" class="table-of-contents__link toc-highlight">트레이스 데이터 샘플링</a></li></ul></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/nodejs/agent-transaction" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
