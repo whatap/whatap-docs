@@ -134,9 +134,9 @@ Let's assume the case in which the network configuration of proxy → msa_proces
 
   ```mermaid
   flowchart LR
-    A[Proxy] */} B(msa_process1);
-    B */} C(msa_process2);
-    C */} D(DB);
+    A[Proxy] --> B(msa_process1);
+    B --> C(msa_process2);
+    C --> D(DB);
   ```
 
 - In case the processes with the same name are divided into **operation stage**, **development stage**, and **testing stage** with the `appName` option
@@ -168,12 +168,12 @@ Let's assume the case in which the network configuration of proxy → msa_proces
 
   ```mermaid
   flowchart LR
-    A(prod_proxy) */} B(prod_msa1);
-    B[prod_msa1] */} C(prod_msa2);
-    C[prod_msa2] */} D(DB);
-    E[dev_proxy] */} F(dev_msa);
-    F[dev_msa] */} D(DB);
-    G[test] */} D(DB);
+    A(prod_proxy) --> B(prod_msa1);
+    B[prod_msa1] --> C(prod_msa2);
+    C[prod_msa2] --> D(DB);
+    E[dev_proxy] --> F(dev_msa);
+    F[dev_msa] --> D(DB);
+    G[test] --> D(DB);
   ```
 
 :::note
