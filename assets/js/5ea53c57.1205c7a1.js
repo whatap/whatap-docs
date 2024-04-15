@@ -239,6 +239,10 @@ const toc = [{
   "id": "프로젝트-액세스-키-및-수집-서버-ip-확인",
   "level": 2
 }, ..._common_items_check_pak_ip_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+  "value": "필터를 위한 특정 태그 추가",
+  "id": "addtagfilter",
+  "level": 2
+}, {
   "value": "알림 보내기",
   "id": "알림-보내기",
   "level": 2
@@ -286,6 +290,36 @@ function _createMdxContent(props) {
       }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_check_pak_ip_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "addtagfilter",
+        children: "필터를 위한 특정 태그 추가"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "사용자가 필터를 위한 특정 문자열을 태그로 설정할 수 있습니다. 설정을 통해 와탭 모니터링 서비스 화면에서 수집된 데이터를 해당 태그의 이름 및 값으로 필터링할 수 있습니다."
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
+        groupId: "operating-systems",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          value: "lx",
+          label: "Linux Shell",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title=\"SH\" showLineNumbers {5,6}",
+              children: "# -tag.[사용자 태그 키 이름][공백][사용자태그 값]\n\n./focus -license $WHATAP_LICENSE \\\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \\\n    -tag.CustomTagName CustomTagValue \\\n    -tag.MyServer1 server_01 \\\n    ...\n"
+            })
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          value: "wd",
+          label: "Windows Powershell",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-powershell",
+              metastring: "title=\"Powersehll\" showLineNumbers {5,6}",
+              children: "# -tag.[사용자 태그 키 이름][공백][사용자태그 값]\n\n.\\focus.exe -license $WHATAP_LICENSE `\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `\n    -tag.CustomTagName CustomTagValue `\n    -tag.MyServer1 server_01 `\n    ...\n"
+            })
+          })
+        })]
+      }), "\n"]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "알림-보내기",
         children: "알림 보내기"
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -298,7 +332,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              metastring: "title=SH",
+              metastring: "title=\"SH\"",
               children: "#알림의 심각도를 선택합니다.\nlevel={info|warn|fatal}\n#알림의 제목\ntitle=원하는 알림의 제목\n#알림의 본문\nmessage=원하는 알림의 본문\n./focus -license $WHATAP_LICENSE \\\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \\\n    -alert -level $level -title $title -message $message\n"
             })
           })
@@ -307,8 +341,8 @@ function _createMdxContent(props) {
           label: "Windows Powershell",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title='SH'",
+              className: "language-powershell",
+              metastring: "title=\"Powersehll\"",
               children: "#알림의 심각도를 선택합니다.\n$level=\"{info|warn|fatal}\"\n#알림의 제목\n$title=\"원하는 알림의 제목\"\n#알림의 본문\n$message=\"원하는 알림의 본문\"\n.\\focus.exe -license $WHATAP_LICENSE `\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `\n    -alert -level $level -title $title -message $message\n"
             })
           })
@@ -328,7 +362,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              metastring: "title=SH",
+              metastring: "title=\"SH\"",
               children: "#매트릭 카테고리\ncategory=my_category\n#데이터 베이스 드라이버\ndriver={mysql|postgres}\n#데이터베이스 접속 정보\ndburl=\"아이디:패스워드@tcp(아이피:포트)/데이터베이스\"\n#Sql Query\nsqlquery=\"select some, columns from sometable\"\n./focus -license $WHATAP_LICENSE \\\n    -category $category \\\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \\\n    -rdb $driver -rdb.connect $dburl \\\n    -rdb.sql $sqlquery\n"
             })
           })
@@ -337,8 +371,8 @@ function _createMdxContent(props) {
           label: "Windows Powershell",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title='SH'",
+              className: "language-powershell",
+              metastring: "title=\"Powersehll\"",
               children: "#매트릭 카테고리\n$CATEGORY=\"my_category\"\n#데이터 베이스 드라이버\n$driver=\"{mysql|postgres}\"\n#데이터베이스 접속 정보\n$dburl=\"아이디:패스워드@tcp(아이피:포트)/데이터베이스\"\n#Sql Query\n$sqlquery=\"select some, columns from sometable\"\n\n.\\focus.exe -license $WHATAP_LICENSE `\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `\n    -category $CATEGORY `\n    -rdb $driver -rdb.connect $dburl `\n    -rdb.sql $sqlquery\n"
             })
           })
@@ -358,7 +392,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              metastring: "title=SH",
+              metastring: "title=\"SH\"",
               children: "#매트릭 카테고리\ncategory=my_category\n#로그 파일\nLOG_FILE=로그 파일 경로\n#2개 이상의 로그 키워드를 입력할때 키워드 사이에 사용할 구분자\nLOG_KEYWORDS_SEPERATOR=,\n#로그 키워드를 ,로 연결하여 입력\nLOG_KEYWORDS=keyword1,keyword2\n./focus -license $WHATAP_LICENSE \\\n    -category $category \\\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \\\n    -tail $LOG_FILE \\\n    -tail.keys $LOG_KEYWORDS \\\n    -tail.seperator $LOG_KEYWORDS_SEPERATOR\n"
             })
           })
@@ -367,8 +401,8 @@ function _createMdxContent(props) {
           label: "Windows Powershell",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title='SH'",
+              className: "language-powershell",
+              metastring: "title=\"Powersehll\"",
               children: "#매트릭 카테고리\n$CATEGORY=\"my_category\"\n#로그 파일\nLOG_FILE=로그 파일 경로\n#2개 이상의 로그 키워드를 입력할때 키워드 사이에 사용할 구분자\nLOG_KEYWORDS_SEPERATOR=,\n#로그 키워드를 구분자로 연결하여 입력\nLOG_KEYWORDS=keyword1,keyword2\n\n.\\focus.exe -license $WHATAP_LICENSE `\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `\n    -category $CATEGORY `\n    -tail $LOG_FILE `\n    -tail.keys $LOG_KEYWORDS `\n    -tail.seperator $LOG_KEYWORDS_SEPERATOR\n"
             })
           })
@@ -388,7 +422,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              metastring: "title=SH",
+              metastring: "title=\"SH\"",
               children: "#카테고리\ncategory=my_category\n#로그 파일 wildcard(*), 날짜패턴(http://strftime.org) 포함 가능\nLOG_FILE=로그 파일 경로\n./focus -license $WHATAP_LICENSE \\\n    -category $category \\\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \\\n    -logsink $LOG_FILE\n"
             })
           })
@@ -397,8 +431,8 @@ function _createMdxContent(props) {
           label: "Windows Powershell",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title='SH'",
+              className: "language-powershell",
+              metastring: "title=\"Powersehll\"",
               children: "#카테고리\n$CATEGORY=\"my_category\"\n#로그 파일 wildcard(*), 날짜패턴(http://strftime.org) 포함 가능\n$LOG_FILE=로그 파일 경로\n.\\focus.exe -license $WHATAP_LICENSE `\n    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `\n    -category $CATEGORY `\n    -logsink $LOG_FILE\n"
             })
           })
