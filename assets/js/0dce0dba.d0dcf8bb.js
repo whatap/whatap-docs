@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[47733],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[23564],{
 
 /***/ 70123:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -533,8 +533,7 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang, InDoc} = _components;
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  }, {InDoc} = _components;
   if (!InDoc) _missingMdxReference("InDoc", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -542,15 +541,23 @@ function _createMdxContent(props) {
         children: "원하는 컬럼 위에 마우스 커서를 위치시키면 다음과 같이 해당 컬럼이 제공하는 메트릭 정보를 확인할 수 있습니다."
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         pages: "resource-node-list,resource-pod-list,resource-application-list",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "k8s-resource-node-list-metric-info.png",
-          desc: "메트릭 정보"
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "메트릭 정보",
+            src: (__webpack_require__(58804)/* ["default"] */ .A) + "",
+            width: "645",
+            height: "254"
+          })
         })
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         pages: "resource-container-list",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "k8s-resource-container-list-metric-info.png",
-          desc: "메트릭 정보"
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "메트릭 정보",
+            src: (__webpack_require__(38599)/* ["default"] */ .A) + "",
+            width: "1200",
+            height: "383"
+          })
         })
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -580,15 +587,23 @@ function _createMdxContent(props) {
         }), " 위에 마우스 커서를 위치시키면 다음과 같이 메트릭 정보를 확인할 수 있습니다."]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         pages: "resource-node-list,resource-pod-list,resource-application-list",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "k8s-resource-node-list-metric-info-cl.png",
-          desc: "컬럼 목록 내 메트릭 정보"
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "컬럼 목록 내 메트릭 정보",
+            src: (__webpack_require__(9318)/* ["default"] */ .A) + "",
+            width: "731",
+            height: "230"
+          })
         })
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         pages: "resource-container-list",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "k8s-resource-container-list-metric-info-cl.png",
-          desc: "컬럼 목록 내 메트릭 정보"
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "컬럼 목록 내 메트릭 정보",
+            src: (__webpack_require__(3975)/* ["default"] */ .A) + "",
+            width: "1200",
+            height: "471"
+          })
         })
       }), "\n"]
     }), "\n"]
@@ -614,7 +629,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 81131:
+/***/ 25978:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -635,28 +650,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'resource-node-list',
-	title: '노드 목록',
-	description: '현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.',
+	id: 'resource-container-list',
+	title: '컨테이너 목록',
+	description: '현재 프로젝트의 컨테이너 현황 정보 및 상세 정보를 확인할 수 있습니다.',
 	tags: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
-		'클러스터',
-		'노드 목록'
+		'컨테이너',
+		'컨테이너 목록'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/resource-node-list",
-  "title": "노드 목록",
-  "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
-  "source": "@site/docs/kubernetes/resource-node-list.mdx",
+  "id": "kubernetes/resource-container-list",
+  "title": "컨테이너 목록",
+  "description": "현재 프로젝트의 컨테이너 현황 정보 및 상세 정보를 확인할 수 있습니다.",
+  "source": "@site/docs/kubernetes/resource-container-list.mdx",
   "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/resource-node-list",
-  "permalink": "/whatap-docs/kubernetes/resource-node-list",
+  "slug": "/kubernetes/resource-container-list",
+  "permalink": "/whatap-docs/kubernetes/resource-container-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/resource-node-list.mdx",
+  "editUrl": "undefined/docs/kubernetes/resource-container-list.mdx",
   "tags": [
     {
       "label": "쿠버네티스",
@@ -667,49 +682,40 @@ const metadata = {
       "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
     },
     {
-      "label": "클러스터",
-      "permalink": "/whatap-docs/tags/클러스터"
+      "label": "컨테이너",
+      "permalink": "/whatap-docs/tags/컨테이너"
     },
     {
-      "label": "노드 목록",
-      "permalink": "/whatap-docs/tags/노드-목록"
+      "label": "컨테이너 목록",
+      "permalink": "/whatap-docs/tags/컨테이너-목록"
     }
   ],
   "version": "current",
   "frontMatter": {
-    "id": "resource-node-list",
-    "title": "노드 목록",
-    "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
+    "id": "resource-container-list",
+    "title": "컨테이너 목록",
+    "description": "현재 프로젝트의 컨테이너 현황 정보 및 상세 정보를 확인할 수 있습니다.",
     "tags": [
       "쿠버네티스",
       "쿠버네티스 모니터링",
-      "클러스터",
-      "노드 목록"
+      "컨테이너",
+      "컨테이너 목록"
     ]
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "Deployment 목록",
-    "permalink": "/whatap-docs/kubernetes/deployment-list"
+    "title": "Flex 보드 공유하기",
+    "permalink": "/whatap-docs/kubernetes/flexboard-share"
   },
   "next": {
-    "title": "오브젝트 매니페스트",
-    "permalink": "/whatap-docs/kubernetes/object-manifest"
+    "title": "컨테이너 볼륨",
+    "permalink": "/whatap-docs/kubernetes/resource-container-volume"
   }
 };
 const assets = {
 
 };
 
-/*ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
-
-다음 기능을 추가로 제공합니다.
-
-* ![비교하기 아이콘](/img/ico-compare.svg) ***비교하기***: 복수의 노드를 선택해 차트 기반으로 사용량을 비교할 수 있습니다.
-
-* ![CSV 다운로드 아이콘](/img/ico-csv.svg) ***CSV 다운로드***: 화면에 표시된 목록 데이터를 CSV 파일로 다운로드할 수 있습니다.
-
-서버 목록 페이지의 데이터는 60초 마다 자동 갱신됩니다. 사용자는 ![일시정지 아이콘](/img/ico-pause.svg) 버튼을 클릭해 데이터의 자동 갱신을 중지하거나 ![재생 아이콘](/img/ico-play-time.svg) 버튼을 클릭해 자동 갱신을 재시작할 수 있습니다.*/
 
 
 
@@ -736,52 +742,46 @@ const toc = [{
   "value": "컬럼 선택",
   "id": "컬럼-선택",
   "level": 2
-}, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
-  "value": "노드 상세",
-  "id": "nodedetails",
-  "level": 2
-}];
+}, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
     admonition: "admonition",
     blockquote: "blockquote",
+    code: "code",
     em: "em",
     h2: "h2",
     img: "img",
     li: "li",
-    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     section: "section",
     strong: "strong",
-    table: "table",
-    tbody: "tbody",
-    td: "td",
-    th: "th",
-    thead: "thead",
-    tr: "tr",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  }, {ImgLang} = _components;
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "cluster",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "node_list",
-        className: "uitext"
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "컨테이너"
+        })
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "컨테이너 목록"
+        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "특정 컬럼의 데이터가 표시되지 않는 것은 쿠버네티스 노드 에이전트가 구 버전이기 때문일 수 있습니다. 이런 경우 충분한 데이터가 수집될 수 있도록 쿠버네티스 노드 에이전트 버전을 1.3.7 이상으로 업데이트하세요."
+        children: "특정 컬럼의 데이터가 표시되지 않는 것은 쿠버네티스 노드 에이전트가 구 버전이기 때문일 수 있습니다. 이런 경우 충분한 데이터가 수집될 수 있도록 쿠버네티스 에이전트 버전을 업데이트하세요."
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "현재 프로젝트의 노드의 정보를 목록 형태로 확인할 수 있습니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "컨테이너 목록"
+        })
+      }), " 메뉴를 통해 현재 프로젝트의 컨테이너의 상세 정보를 목록 형식으로 확인할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -789,13 +789,17 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["노드 상태 요약, 비교, 필터 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: ["컨테이너 상태 요약, 비교, 필터 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: "CSV"
           }), " 파일 다운로드 기능을 제공합니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["CSV 파일명, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "kubernetes_node_list_{pcode}_{timestamp}.csv"
+            children: ["CSV 파일명, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
+              children: ["kubernetes_contianer_list_", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "{pcode}"
+              }), "_", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "{timestamp}"
+              }), ".csv"]
             })]
           }), "\n"]
         }), "\n"]
@@ -805,8 +809,8 @@ function _createMdxContent(props) {
         id: "기본-화면-안내",
         children: "기본 화면 안내"
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-resource-node-list-m.png",
-        desc: "노드 목록 기본 화면"
+        img: "k8s-resource-container-list-m.png",
+        desc: "컨테이너 목록 기본 화면"
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "number 01",
@@ -827,24 +831,7 @@ function _createMdxContent(props) {
               src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 영역 좌측 상단에서 전체 노드 개수 및 상태별 노드 개수를 확인할 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "number 01",
-              src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " 영역 우측에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "→ 이전 버전으로 보기"
-              })
-            }), " 버튼 선택 시 개편 전 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "노드 목록"
-              })
-            }), " 화면을 확인할 수 있습니다."]
+            }), " 영역 좌측 상단에서 전체 컨테이너 개수와 상태별 컨테이너 개수를 확인할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -853,7 +840,7 @@ function _createMdxContent(props) {
               src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 영역에서 원하는 컬럼 선택 시 해당 컬럼 기준으로 노드 목록을 정렬해 조회할 수 있습니다."]
+            }), " 영역에서 원하는 컬럼을 선택 시 해당 컬럼 기준으로 컨테이너 목록을 정렬해 조회할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -862,28 +849,24 @@ function _createMdxContent(props) {
               src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 영역에서 OnodeName 컬럼 하위의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "상세 아이콘",
+            }), " 영역 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Node"
+              })
+            }), " 컬럼에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "상세 보기 아이콘",
               src: (__webpack_require__(83533)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "상세"
+                children: "노드 정보 보기"
               })
-            }), " 아이콘 선택 시 해당 노드의 상세 페이지로 이동합니다."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-            type: "note",
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "노드 상세"
-                })
-              }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "#nodedetails",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            })]
+            }), " 아이콘 선택 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "노드 목록"
+              })
+            }), " 메뉴로 이동합니다."]
           }), "\n"]
         }), "\n"]
       }), "\n"]
@@ -907,226 +890,6 @@ function _createMdxContent(props) {
         id: "컬럼-선택",
         children: "컬럼 선택"
       }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "nodedetails",
-        children: "노드 상세"
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "노드 상세"
-          })
-        }), " 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다."]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-resource-node-detail.png",
-        desc: "노드 상세 화면"
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "상단 차트"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "CPU Usage"
-                  })
-                }), ": 노드의 CPU 사용량을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "Memory Usage"
-                  })
-                }), ": 노드의 메모리 사용량을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "Network"
-                  })
-                }), ": 노드의 네트워크 인터페이스의 입출력 트래픽과 오류 패킷을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "Disk Usage"
-                  })
-                }), ": 노드의 Disk 사용량을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "컨테이너 정보"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                  children: "항목"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                  children: "설명"
-                })]
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "상태"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 상태"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "Container ID"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "이미지"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 이미지 정보"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "커맨드"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 실행 명령"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "애플리케이션"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너에 설치된 와탭 APM 에이전트의 이름"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "Pod"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "Pod 이름"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "CpuByLimit"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "CPU Limit 기준 CPU 전체 사용률"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "MemoryWsByLimit"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 메모리 Limit 기준 working set 사용량"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "CpuThrottledCnt"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 CPU Throttled 건수"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "CpuThrottledTime"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 CPU Throttled 시간"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "MemLimit"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 메모리 Limit 크기"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "MemRequest"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 메모리 Request 크기"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "MemWs"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 메모리 working set"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "IoReadBytes"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 전체 블럭 디바이스의 초당 읽은 바이트 합"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "IoReadIops"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 전체 블럭 디바이스의 초당 읽은 건수 합"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "IoWriteBytes"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 전체 블럭 디바이스의 초당 쓴 바이트 합"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "IoWriteIops"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 전체 블럭 디바이스의 초당 쓴 건수 합"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetRxBytes"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetRxDropped"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 수신 dropped 건수"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetRxError"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 수신 에러 건수"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetRxIops"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 수신 건수"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetTxBytes"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 송신 데이터 크기"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetTxDropped"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 송신 dropped 건수"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetTxError"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 송신 에러 건수"
-                })]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "NetTxIops"
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "컨테이너 네트워크 송신 건수"
-                })]
-              })]
-            })]
-          }), "\n"]
-        }), "\n"]
-      }), "\n", "\n"]
     })]
   });
 }
@@ -1227,6 +990,46 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU5LjEgKDg2MTQ0KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICA8IS0tIDx0aXRsZT5pYy1zLWluZm8tY2lyY2xlPC90aXRsZT4gLS0+CiAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY0Ni4wMDAwMDAsIC0xMDEzLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgPGcgaWQ9InN1Z2dlc3RlZC1pY29ucy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDk2Ni4wMDAwMDApIj4KICAgICAgICAgICAgICA8ZyBpZD0iaWMtaW5mby1jaXJjbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwNi4wMDAwMDAsIDQ3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgMS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05LDAgQzEzLjk3MDU2MjcsMCAxOCw0LjAyOTQzNzI1IDE4LDkgQzE4LDEzLjk3MDU2MjcgMTMuOTcwNTYyNywxOCA5LDE4IEM0LjAyOTQzNzI1LDE4IDAsMTMuOTcwNTYyNyAwLDkgQzAsNC4wMjk0MzcyNSA0LjAyOTQzNzI1LDAgOSwwIFogTTksMS44IEM1LjAyMzU0OTgsMS44IDEuOCw1LjAyMzU0OTggMS44LDkgQzEuOCwxMi45NzY0NTAyIDUuMDIzNTQ5OCwxNi4yIDksMTYuMiBDMTIuOTc2NDUwMiwxNi4yIDE2LjIsMTIuOTc2NDUwMiAxNi4yLDkgQzE2LjIsNS4wMjM1NDk4IDEyLjk3NjQ1MDIsMS44IDksMS44IFogTTkuOSw4LjEgTDkuOSwxMy41IEw4LjEsMTMuNSBMOC4xLDguMSBMOS45LDguMSBaIE05LjksNC41IEw5LjksNi4zIEw4LjEsNi4zIEw4LjEsNC41IEw5LjksNC41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgIDwvZz4KICAgICAgICAgIDwvZz4KICAgICAgPC9nPgogIDwvZz4KPC9zdmc+");
+
+/***/ }),
+
+/***/ 3975:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-resource-container-list-metric-info-cl-027b1dfba1ebeb38efe9e1ef5ad3c8b4.png");
+
+/***/ }),
+
+/***/ 38599:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-resource-container-list-metric-info-4091b7192402d02bf2cefcdbd56c5a4f.png");
+
+/***/ }),
+
+/***/ 9318:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-resource-node-list-metric-info-cl-401493ae7feff569a79ef2eb6ee6600c.png");
+
+/***/ }),
+
+/***/ 58804:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-resource-node-list-metric-info-4b7f19d76c6a5d575fe7c83c74d7ab0d.png");
 
 /***/ }),
 
