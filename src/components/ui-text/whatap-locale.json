@@ -1239,9 +1239,9 @@
     "service_id": "_00192"
   },
   "sms_register_whatap_port_must_open": {
-    "en": "The <strong>6600</strong> port must be opened to transfer data to WhaTap Server (<strong>[PROXY_ADDRESS]</strong>). (Tcp Outbound)",
-    "ja": "WhaTapサーバー <strong>[PROXY_ADDRESS]</strong>へデータ転送のため <strong>6600</strong> 番のポートの開放が必要です。(Tcp Outbound)",
-    "ko": "WhaTap Server <strong>[PROXY_ADDRESS]</strong>로 데이터 전송을 위해 <strong>6600</strong> 포트가 열려 있어야 합니다. (Tcp Outbound)",
+    "en": "The <span class=\"required\">6600</span> port must be opened to transfer data to <span class=\"required\">WhaTap Server {PROXY_ADDRESS}</span>. (TCP Outbound)",
+    "ja": "<span class=\"required\">WhaTapサーバー{PROXY_ADDRESS}</span>へデータ転送のため <span class=\"required\">6600</span> 番のポートの開放が必要です。(TCP Outbound)",
+    "ko": "<span class=\"required\">WhaTap Server {PROXY_ADDRESS}</span>로 데이터 전송을 위해 <span class=\"required\">6600</span> 포트가 열려 있어야 합니다. (TCP Outbound)",
     "zh": "必须打开<strong>6600</strong>端口才能将数据传输到 WhaTap Server（<strong>[PROXY_ADDRESS]</strong>）。 (Tcp Outbound)",
     "service_id": "_00193"
   },
@@ -1796,7 +1796,7 @@
     "ja": "サーバーを選択してください。",
     "ko": "서버를 선택하세요.",
     "zh": "选择服务器。",
-    "service_id": "_00273"
+    "service_id": "NTC00273"
   },
   "apm_no_event_list": {
     "en": "No notifications",
@@ -24262,7 +24262,7 @@
     "service_id": "TTL03536"
   },
   "hitmap_exc_time": {
-    "en": "Detection\bexclusion time",
+    "en": "Detection exclusion time",
     "ja": "検知対象外時間",
     "ko": "탐지 제외 시간",
     "zh": "Detection Exclusion Time",
@@ -37200,7 +37200,7 @@
   "log_search": {
     "en": "Log search",
     "ja": "ログ検索",
-    "ko": "로그 검색",
+    "ko": "로그 검색기",
     "zh": "Log Search",
     "service_id": "TTL05395"
   },
@@ -42469,7 +42469,7 @@
     "service_id": "NTC06156"
   },
   "NTC06158": {
-    "en": "Please refer to <ahref=\"{url}\" target=\"_blank\">Next document</a> for the unpaild billls details.",
+    "en": "Please refer to <a href=\"{url}\" target=\"_blank\">Next document</a> for the unpaild billls details.",
     "ja": "未払い額の内容は<a href=\"{url}\" target=\"_blank\">次の文書</a>を参照してください。",
     "ko": "미납금 납부 내용은 <a href=\"{url}\" target=\"_blank\">다음 문서</a>를 참조하세요.",
     "zh": "Please refer to <ahref=\"{url}\" target=\"_blank\">Next document</a> for payment details.",
@@ -46006,7 +46006,7 @@
   "DSC06682": {
     "en": "Navigate to the container map for the selected project.",
     "ja": "選択したプロジェクトのコンテナマップに移動します。",
-    "ko": "선택한 프로젝트의 컨테이너 맵으로 이동합니다.",
+    "ko": "선택한 프로젝트의 컨테이너 맵으로 이동",
     "zh": "Navigate to the container map for the selected project.",
     "service_id": "DSC06682"
   },
@@ -49995,7 +49995,7 @@
   },
   "DSC07259": {
     "en": "New Pod startup analysis (old Pod initialization performance) is provided for WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
-    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降で、新しいPod起動分析（旧Pod初期化パフォーマンス）を提供しています。 新しいメニューを使用するには、エージェントを更新してください（現在のバージョン：{currVersion}）",
+    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降から、新しいPod開始時の性能分析機能を提供しています。 新しいメニューを使用するには、エージェントをアップデートしてください（現在のバージョン：{currVersion}）",
     "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 시작 분석(구 Pod 초기화 성능)을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "New Pod startup analysis (old Pod initialization performance) is provided for WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "service_id": "DSC07259"
@@ -50029,10 +50029,10 @@
     "service_id": "CNT07263"
   },
   "DSC07264": {
-    "en": "The <strong style={htmlStyle}>{proxyPort} port</strong> must be open to transfer data to <strong style={htmlStyle}>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
-    "ja": "<strong style={htmlStyle}> WhaTap Server {proxyServer}</strong>へデータを転送するには、<strong style={htmlStyle}> {proxyPort}番のポート</strong>を開く必要があります。 (TCP Outbound)",
-    "ko": "<strong style={htmlStyle}>WhaTap Server {proxyServer}</strong>로 데이터를 전송하기 위해 <strong style={htmlStyle}>{proxyPort}포트</strong>가 열려 있어야 합니다. (TCP Outbound)",
-    "zh": "The <strong style={htmlStyle}>{proxyPort} port</strong> must be open to transfer data to <strong style={htmlStyle}>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
+    "en": "The <strong>{proxyPort} port</strong> must be open to transfer data to <strong>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
+    "ja": "<strong> WhaTap Server {proxyServer}</strong>へデータを転送するには、<strong> {proxyPort}番のポート</strong>を開く必要があります。 (TCP Outbound)",
+    "ko": "<strong>WhaTap Server {proxyServer}</strong>로 데이터를 전송하기 위해 <strong>{proxyPort}포트</strong>가 열려 있어야 합니다. (TCP Outbound)",
+    "zh": "The <strong>{proxyPort} port</strong> must be open to transfer data to <strong>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
     "service_id": "DSC07264"
   },
   "TTL07265": {
@@ -50115,7 +50115,7 @@
   "DSC07276": {
     "en": "If you need to install an application agent, please click the button below.",
     "ja": "Applicatonエージェントをインストールするなら、下のボタンをクリックしてください。",
-    "ko": "애플리케이션 에이전트를 설치가 필요하다면 아래 버튼을 눌러주세요.",
+    "ko": "애플리케이션 에이전트 설치가 필요하다면 아래 버튼을 눌러주세요.",
     "zh": "If you need to install an application agent, please click the button below.",
     "service_id": "DSC07276"
   },
@@ -53767,14 +53767,14 @@
     "service_id": "DSC07802"
   },
   "TTL07803": {
-    "en": "PostgreSQL Featured Widget Groups (RDS)",
+    "en": "PostgreSQL featured widget group (RDS)",
     "ja": "PostgreSQL推薦ウィジェットグループ（RDS）",
     "ko": "PostgreSQL 추천 위젯 그룹 (RDS)",
     "zh": "PostgreSQL Featured Widget Groups (RDS)",
     "service_id": "TTL07803"
   },
   "TTL07804": {
-    "en": "PostgreSQL Featured Widget Group (XOS)",
+    "en": "PostgreSQL featured widget group (XOS)",
     "ja": "PostgreSQL推薦ウィジェットグループ（XOS）",
     "ko": "PostgreSQL 추천 위젯 그룹 (XOS)",
     "zh": "PostgreSQL Featured Widget Group (XOS)",
@@ -53788,14 +53788,14 @@
     "service_id": "TLT07805"
   },
   "DSC07806": {
-    "en": "Overage",
+    "en": "Usage overage",
     "ja": "使用量を超えました。",
     "ko": "사용량 초과",
     "zh": "Overage",
     "service_id": "DSC07806"
   },
   "DSC07807": {
-    "en": "Log usage overages",
+    "en": "Log usage overage",
     "ja": "ログ使用量を超えました。",
     "ko": "로그 사용량 초과",
     "zh": "Log usage overages",
@@ -53809,7 +53809,7 @@
     "service_id": "DSC07808"
   },
   "DSC07809": {
-    "en": "Never check license",
+    "en": "License has not been checked",
     "ja": "ライセンスキーを確認しません。",
     "ko": "라이선스 확인 안 함",
     "zh": "Never check license",
@@ -53823,7 +53823,7 @@
     "service_id": "TTL07810"
   },
   "CNT07811": {
-    "en": "Overwriting does not allow the replacement event to be recovered.",
+    "en": "If overwritten, the replaced event cannot be recovered. ",
     "ja": "上書きされたイベントは修復できません。",
     "ko": "덮어쓰기하면 대체된 이벤트는 복구 할 수 없습니다. ",
     "zh": "Overwriting does not allow the replacement event to be recovered.",
@@ -53837,7 +53837,7 @@
     "service_id": "TTL07812"
   },
   "CNT07813": {
-    "en": "New features have been added to the Multi-Instance Dashboard.",
+    "en": "New features have been added to the multi-instance dashboard.",
     "ja": "マルチインスタンスダッシュボードに、新しい機能が追加されました。",
     "ko": "멀티 인스턴스 대시보드에 새로운 기능이 추가되었습니다.",
     "zh": "New features have been added to the Multi-Instance Dashboard.",
@@ -53872,14 +53872,14 @@
     "service_id": "CNT07817"
   },
   "CNT07818": {
-    "en": "<span style='font-weight: bold'>Save preset</span>: Save the dashboard changed through the widget editing function through the preset function.",
+    "en": "<span style='font-weight: bold'>Save preset</span>: Save the changed dashboard using the widget editing function.",
     "ja": "<span style='font-weight: bold'>プリセット保存</span>：ウィジェット編集機能で変更したダッシュボードをプリセット機能で保存します。",
     "ko": "<span style='font-weight: bold'>프리셋 저장</span> : 위젯 편집기능을 통해 변경한 대시보드를 프리셋 기능을 통해 저장",
     "zh": "<span style='font-weight: bold'>Save preset</span>: Save the dashboard changed through the widget editing function through the preset function.",
     "service_id": "CNT07818"
   },
   "DSC07819": {
-    "en": "The new feature <b>will be applied to the service and be available starting March 27.</b>\nFor more details, check out the WhaTap Docs below!",
+    "en": "\"The new feature will be available in the service starting <b>March 27</b>.\nFor more details, check out the WhaTap Docs below!\"",
     "ja": "新機能は<b> 2024年3月27日からサービスに適用</b>されて利用できます。\n詳細については、以下のWhaTap Docsで確認してください。",
     "ko": "신규 기능은 <b>3월 27일부터 서비스에 적용</b>되어 이용이 가능합니다.\n보다 자세한 내용은 아래 WhaTap Docs를 통해 확인해보세요!",
     "zh": "The new feature <b>will be applied to the service and be available starting March 27.</b>\nFor more details, check out the WhaTap Docs below!",
@@ -53900,7 +53900,7 @@
     "service_id": "TTL07821"
   },
   "CNT07822": {
-    "en": "You cannot directly cancel an account linked to AWS Marketplace.{br}Please contact the WhaTap management support team ({tel}).",
+    "en": "If your account is associated with AWS Marketplace, you cannot unsubscribe directly.{br}Please contact the WhaTap support team ({tel}).",
     "ja": "AWS Marketplaceに関連付けられたアカウントは、直接退会できません。{br}ワタップのカスタマーサポートへ（{tel}）にお問い合わせください。",
     "ko": "AWS Marketplace와 연동되어 있는 계정은 직접 탈퇴하실 수 없습니다.{br}와탭 경영지원팀({tel})으로 연락 부탁드립니다.",
     "zh": "You cannot directly cancel an account linked to AWS Marketplace.{br}Please contact the WhaTap management support team ({tel}).",
@@ -53926,6 +53926,342 @@
     "ko": "확인한 <b>CONTAINER-RUNTIME</b>을 선택하여 설치에 필요한 기본 설정 파일(values.yaml)을 다음과 같이 생성하세요.",
     "zh": "Select the confirmed <b>CONTAINER-RUNTIME</b> and create the default settings file (values.yaml) required for installation as follows.",
     "service_id": "DSC07825"
+  },
+  "ITM07826": {
+    "en": "Cloud service provider",
+    "ja": "クラウドサービスプロバイダー",
+    "ko": "클라우드 서비스 제공업체",
+    "zh": "Cloud service provider",
+    "service_id": "ITM07826"
+  },
+  "BTN07827": {
+    "en": "Search Log",
+    "ja": "ログ検索",
+    "ko": "로그 검색",
+    "zh": "Search Log",
+    "service_id": "BTN07827"
+  },
+  "DSC07828": {
+    "en": "Select a node.",
+    "ja": "ノードを選択してください。",
+    "ko": "노드를 선택하세요.",
+    "zh": "Select a node.",
+    "service_id": "DSC07828"
+  },
+  "NTC07829": {
+    "en": "Please select a node",
+    "ja": "ノードを選択してください。",
+    "ko": "노드를 선택해주세요",
+    "zh": "Please select a node",
+    "service_id": "NTC07829"
+  },
+  "TLT07830": {
+    "en": "View linked DB session information",
+    "ja": "連携DBセッション情報の表示",
+    "ko": "연계 DB 세션 정보 보기",
+    "zh": "View linked DB session information",
+    "service_id": "TLT07830"
+  },
+  "ITM07831": {
+    "en": "Ungrouped",
+    "ja": "グループ未指定",
+    "ko": "그룹 미지정",
+    "zh": "Ungrouped",
+    "service_id": "ITM07831"
+  },
+  "DSC07832": {
+    "en": "You can check details through the Pod's related events and logs.",
+    "ja": "Podの関連イベント、ログを通じて詳細が確認できます。",
+    "ko": "Pod의 연관 이벤트, 로그를 통해 더 자세한 내용을 확인할 수 있습니다.",
+    "zh": "You can check details through the Pod's related events and logs.",
+    "service_id": "DSC07832"
+  },
+  "LNK07833": {
+    "en": "Pod details",
+    "ja": "Podの詳細",
+    "ko": "Pod 상세 정보",
+    "zh": "Pod details",
+    "service_id": "LNK07833"
+  },
+  "DSC07834": {
+    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
+    "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "service_id": "DSC07834"
+  },
+  "LNK07835": {
+    "en": "Node manifest lookup",
+    "ja": "ノードマニフェストの照会",
+    "ko": "노드 매니페스트 조회",
+    "zh": "Node manifest lookup",
+    "service_id": "LNK07835"
+  },
+  "DSC07836": {
+    "en": "There seems to be a problem with node resources. Check node resource usage and what resources your pods require.",
+    "ja": "ノードリソースの確認が必要です。ノードのリソース使用量と、Podが必要とするリソースを確認してください。",
+    "ko": "노드 리소스에 문제가 있는 것 같습니다. 노드 리소스 사용량과 Pod가 필요로 하는 리소스를 확인하세요.",
+    "zh": "There seems to be a problem with node resources. Check node resource usage and what resources your pods require.",
+    "service_id": "DSC07836"
+  },
+  "DSC07837": {
+    "en": "The initial container failed. Check the initial container status and spec.",
+    "ja": "初期コンテナが失敗しました。初期コンテナの状態とspecを確認してください。",
+    "ko": "초기 컨테이너가 실패했습니다. 초기 컨테이너 상태와 spec을 확인하세요.",
+    "zh": "The initial container failed. Check the initial container status and spec.",
+    "service_id": "DSC07837"
+  },
+  "DSC07838": {
+    "en": "There seems to be a problem with the container execution process. Check problem spots through container status and spec.",
+    "ja": "コンテナの実行中に問題が発生しました。コンテナの状態とspecを確認してください。",
+    "ko": "컨테이너 실행 과정에 문제가 있는 것 같습니다. 컨테이너 상태와 spec을 통해 문제 지점을 확인하세요.",
+    "zh": "There seems to be a problem with the container execution process. Check problem spots through container status and spec.",
+    "service_id": "DSC07838"
+  },
+  "DSC07839": {
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
+    "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "service_id": "DSC07839"
+  },
+  "DSC07840": {
+    "en": "There seems to be a problem with the volume mounting process. Check volumeMounts and volume settings.",
+    "ja": "ボリュームマウントで問題が発生しました。 volumeMounts、volumeの設定を確認してください。",
+    "ko": "볼륨 마운트 과정에 문제가 있는 것 같습니다. volumeMounts, volume 설정을 확인하세요.",
+    "zh": "There seems to be a problem with the volume mounting process. Check volumeMounts and volume settings.",
+    "service_id": "DSC07840"
+  },
+  "DSC07841": {
+    "en": "This widget is for real-time viewing only.",
+    "ja": "リアルタイム照会のみ可能なウィジェットです。",
+    "ko": "실시간 조회만 가능한 위젯입니다.",
+    "zh": "This widget is for real-time viewing only.",
+    "service_id": "DSC07841"
+  },
+  "DSC07842": {
+    "en": "The cluster appears to be running low on storage capacity. Free up space by increasing the storage capacity of your cluster or deleting other Pods.",
+    "ja": "クラスタのストレージ容量が不足しています。クラスタのストレージ容量を増やすか、他のPodを削除してストレージ容量を確保してください。",
+    "ko": "클러스터의 스토리지 용량이 부족한 것 같습니다. 클러스터의 스토리지 용량을 늘리거나 다른 Pod를 삭제하여 공간을 확보하세요.",
+    "zh": "The cluster appears to be running low on storage capacity. Free up space by increasing the storage capacity of your cluster or deleting other Pods.",
+    "service_id": "DSC07842"
+  },
+  "DSC07843": {
+    "en": "Mobile device management for bulk reception and access settings for event notifications is available in the account information menu.",
+    "ja": "イベント通知の一括受信設定と、WhaTapモバイルアプリからの受信設定の管理は、アカウント情報メニューから行います。",
+    "ko": "이벤트 알림의 일괄 수신설정 및 접근 설정을 위한 모바일 기기 관리는 계정 정보 메뉴에서 가능합니다.",
+    "zh": "Mobile device management for bulk reception and access settings for event notifications is available in the account information menu.",
+    "service_id": "DSC07843"
+  },
+  "DSC07844": {
+    "en": "Only mobile phone numbers in Korea and Japan can be registered</span>.",
+    "ja": "携帯電話番号は、<span style=\"color: #F34747;\">日本と韓国内での携帯電話番号のみ登録</span>できます。",
+    "ko": "전화번호는 <span style=\"color: #F34747;\">한국 및 일본의 휴대 전화 번호만 등록</span>할 수 있습니다",
+    "zh": "Only mobile phone numbers in Korea and Japan can be registered</span>.",
+    "service_id": "DSC07844"
+  },
+  "DSC07845": {
+    "en": "The pod is no longer in the pending state.",
+    "ja": "PodがもうPending状態ではありません。",
+    "ko": "Pod가 더이상 Pending 상태가 아닙니다.",
+    "zh": "The pod is no longer in the pending state.",
+    "service_id": "DSC07845"
+  },
+  "DSC07846": {
+    "en": "Last viewed time",
+    "ja": "最終照会時刻",
+    "ko": "마지막 조회 시간",
+    "zh": "Last viewed time",
+    "service_id": "DSC07846"
+  },
+  "LNK07847": {
+    "en": "Go to Container Map",
+    "ja": "コンテナマップへ移動",
+    "ko": "컨테이너 맵으로 이동",
+    "zh": "Go to Container Map",
+    "service_id": "LNK07847"
+  },
+  "DSC07848": {
+    "en": "There is no data viewed for that session.{br}Please select another project.",
+    "ja": "該当のセッションで照会されるデータはありません。{br}他のプロジェクトを選択してください。",
+    "ko": "해당 세션으로 조회되는 데이터가 없습니다.{br}다른 프로젝트를 선택해주세요.",
+    "zh": "There is no data viewed for that session.{br}Please select another project.",
+    "service_id": "DSC07848"
+  },
+  "DSC07849": {
+    "en": "The access key is a unique ID for activating the WhaTap service.<br /> If the access key is no longer valid, service will be limited. The key can be renewed or extended through the channel inquiry in the upper right corner.",
+    "ja": "アクセスキーはWhaTapサービスを有効にするための一意のIDです。<br />アクセスキーが無効になった場合は、通常のサービス利用が制限されます。右上の「チャットでのお問合せ」を押してからお問合せできます。",
+    "ko": "액세스 키는 와탭 서비스 활성화를 위한 고유 ID 입니다.<br /> 액세스 키가 더 이상 유효하지 않은 경우 정상적인 서비스 이용이 제한되며, 오른쪽 상단의 채널 문의를 통해 갱신하거나 연장할 수 있습니다.",
+    "zh": "The access key is a unique ID for activating the WhaTap service.<br /> If the access key is no longer valid, service will be limited. The key can be renewed or extended through the channel inquiry in the upper right corner.",
+    "service_id": "DSC07849"
+  },
+  "TTL07850": {
+    "en": "Check access key",
+    "ja": "アクセスキーの確認",
+    "ko": "액세스 키 확인",
+    "zh": "Check access key",
+    "service_id": "TTL07850"
+  },
+  "TTL07851": {
+    "en": "Choose installation method",
+    "ja": "インストール方式の選択",
+    "ko": "설치 방식 선택",
+    "zh": "Choose installation method",
+    "service_id": "TTL07851"
+  },
+  "TTL07852": {
+    "en": "Apply additional features",
+    "ja": "追加機能の適用",
+    "ko": "추가 기능 적용",
+    "zh": "Apply additional features",
+    "service_id": "TTL07852"
+  },
+  "TTL07853": {
+    "en": "Download installation file",
+    "ja": "インストールファイルのダウンロード",
+    "ko": "설치 파일 다운로드",
+    "zh": "Download installation file",
+    "service_id": "TTL07853"
+  },
+  "TTL07854": {
+    "en": "Enter execution command",
+    "ja": "実行コマンドの入力",
+    "ko": "실행 명령어 입력",
+    "zh": "Enter execution command",
+    "service_id": "TTL07854"
+  },
+  "DSC07855": {
+    "en": "The Kubernetes agent is installed in the <strong>whatap-monitoring namespace</strong>. The namespace in which the agent is installed cannot be changed.",
+    "ja": "Kubernetesエージェントは<strong>whatap-monitoringネームスペース</strong>にインストールされます。エージェントがインストールされるネームスペースは変更できません。",
+    "ko": "쿠버네티스 에이전트는 <strong>whatap-monitoring 네임스페이스</strong>에 설치됩니다. 에이전트가 설치되는 네임스페이스는 변경할 수 없습니다.",
+    "zh": "The Kubernetes agent is installed in the <strong>whatap-monitoring namespace</strong>. The namespace in which the agent is installed cannot be changed.",
+    "service_id": "DSC07855"
+  },
+  "TTL07856": {
+    "en": "Disk usage details",
+    "ja": "ディスク使用量の詳細",
+    "ko": "디스크 사용량 상세",
+    "zh": "Disk usage details",
+    "service_id": "TTL07856"
+  },
+  "TTL07857": {
+    "en": "Data type",
+    "ja": "データタイプ",
+    "ko": "데이터 유형",
+    "zh": "Data type",
+    "service_id": "TTL07857"
+  },
+  "CNT07858": {
+    "en": "second(s)",
+    "ja": "秒",
+    "ko": "초",
+    "zh": "second(s)",
+    "service_id": "CNT07858"
+  },
+  "NTC07859": {
+    "en": "In progress. This may take a moment.",
+    "ja": "適用中です。しばらく時間がかかることがあります。",
+    "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
+    "zh": "In progress. This may take a moment.",
+    "service_id": "NTC07859"
+  },
+  "TTL07860": {
+    "en": "Correlated DB information",
+    "ja": "連携データベース情報",
+    "ko": "연계 데이터베이스 정보",
+    "zh": "Correlated database information",
+    "service_id": "TTL07860"
+  },
+  "TTL07861": {
+    "en": "Detailed session metrics",
+    "ja": "セッション詳細指標",
+    "ko": "세션 상세 지표",
+    "zh": "Detailed session metrics",
+    "service_id": "TTL07861"
+  },
+  "TTL07862": {
+    "en": "Instance metrics",
+    "ja": "インスタンス指標",
+    "ko": "인스턴스 지표",
+    "zh": "Instance metrics",
+    "service_id": "TTL07862"
+  },
+  "DSC07863": {
+    "en": "You can't select an event target with this template",
+    "ja": "イベントターゲットを選択できないテンプレートです。",
+    "ko": "이벤트 대상을 선택할 수 없는 템플릿입니다.",
+    "zh": "You can't select an event target with this template",
+    "service_id": "DSC07863"
+  },
+  "DSC07864": {
+    "en": "If there is no Vacuum target, it will not be queried.",
+    "ja": "Vacuum ターゲットがない場合は照会されません。",
+    "ko": "Vacuum 대상이 없는 경우 조회되지 않습니다.",
+    "zh": "If there is no Vacuum target, it will not be queried.",
+    "service_id": "DSC07864"
+  },
+  "DSC07865": {
+    "en": "Table with greater number of dead tuples(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= More tables than \"background-color: #eee;\">number-of-tuples</code>) than vacuum threshold",
+    "ja": "dead tuple 数が vacuum threshold(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= \"background-color: #eee;\">number-of-tuples</code>) より多くのテーブル",
+    "ko": "dead tuple 수가 vacuum threshold(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style=\"background-color: #eee;\">number-of-tuples</code>)보다 많은 테이블",
+    "zh": "Table with greater number of dead tuples(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= More tables than \"background-color: #eee;\">number-of-tuples</code>) than vacuum threshold",
+    "service_id": "DSC07865"
+  },
+  "DSC07866": {
+    "en": "Tables with age(relfrozenxid) greater than <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code>",
+    "ja": "age(relfrozenxid) が <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code> より大きいテーブル",
+    "ko": "age(relfrozenxid)가 <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code> 보다 큰 테이블",
+    "zh": "Tables with age(relfrozenxid) greater than <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code>",
+    "service_id": "DSC07866"
+  },
+  "DSC07867": {
+    "en": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
+    "ja": "エージェント設定 (whatap.conf) の <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示するします。",
+    "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다.",
+    "zh": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
+    "service_id": "DSC07867"
+  },
+  "DSC07868": {
+    "en": "Lock has occurred.",
+    "ja": "ロックが発生しました。",
+    "ko": "Lock이 발생하였습니다.",
+    "zh": "Lock has occurred.",
+    "service_id": "DSC07868"
+  },
+  "DSC07869": {
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ラクトリ</a>をご覧ください。",
+    "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "service_id": "DSC07869"
+  },
+  "DSC07870": {
+    "en": "If there is no corresponding object, data may not be retrieved.",
+    "ja": "対応するオブジェクトがないと、データが照会されない可能性があります。",
+    "ko": "해당하는 오브젝트가 없으면 데이터가 조회되지 않을 수 있습니다.",
+    "zh": "If there is no corresponding object, data may not be retrieved.",
+    "service_id": "DSC07870"
+  },
+  "TLT07871": {
+    "en": "10120 between registered agents within a project",
+    "ja": "プロジェクト内に登録されたエージェント間で10120",
+    "ko": "프로젝트 내에 등록된 에이전트들 간에 10120",
+    "zh": "10120 between registered agents within a project",
+    "service_id": "TLT07871"
+  },
+  "DSC07872": {
+    "en": "You can receive a notification when a network daemon's reception port is disabled.",
+    "ja": "ネットワークデーモンのリスニングポートを無効にすると通知を受け取ることができます。",
+    "ko": "네트워크 데몬의 수신 포트 비활성화 시 알림을 받을 수 있습니다.",
+    "zh": "You can receive a notification when a network daemon's reception port is disabled.",
+    "service_id": "DSC07872"
+  },
+  "DSC07873": {
+    "en": "Automatically select the same target",
+    "ja": "同一ターゲット自動選択",
+    "ko": "동일 대상 자동 선택",
+    "zh": "Automatically select the same target",
+    "service_id": "DSC07873"
   },
   "": {
     "en": "#VALUE!",
