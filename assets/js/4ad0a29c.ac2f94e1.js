@@ -90,6 +90,14 @@ const toc = [{
   "id": "postgresql",
   "level": 4
 }, {
+  "value": "<code>Cloud</code>",
+  "id": "cloud",
+  "level": 3
+}, {
+  "value": "Amazon ECS",
+  "id": "amazon-ecs",
+  "level": 4
+}, {
   "value": "Preview 2.4.0.a1",
   "id": "preview-240a1",
   "level": 2
@@ -346,6 +354,18 @@ function _createMdxContent(props) {
             sid: "side_dbObjectInfo",
             className: "uitext"
           }), " 메뉴에서 데이터가 없을 경우 표시되는 안내 문구 변경"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "cloud",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Cloud"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "amazon-ecs",
+          children: "Amazon ECS"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " 설치 안내에서 언어별로 다른 사항 수정"]
         })]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
