@@ -371,7 +371,7 @@ function _createMdxContent(props) {
                   children: ["기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: "yaml"
                   }), " 파일 방식으로 와탭 쿠버네티스 에이전트를 설치한 경우 Clean Install이 필요합니다. 기존 쿠버네티스 에이전트 삭제 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: "heml"
+                    children: "helm"
                   }), " 차트를 통한 설치가 가능합니다."]
                 })]
               }), "\n"]
