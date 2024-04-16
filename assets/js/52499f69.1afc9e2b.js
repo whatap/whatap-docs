@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53780],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[54361],{
 
 /***/ 58960:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -83,9 +83,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang, InDoc} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
@@ -187,34 +189,39 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["차트 영역에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "동시 접속 사용자"
-              })
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "응답 시간"
-              })
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "CPU"
-              })
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "힙 메모리"
-              })
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "액티브 트랜잭션"
-              })
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "트랜잭션 Top 10"
-              })
-            }), ",*** HTTP 호출 Top 10***, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "SQL Top 10"
-              })
+            children: ["차트 영역에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "rt_user",
+              className: "uitext"
+            }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "tps",
+              className: "uitext"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "resp_time",
+              className: "uitext"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "cpu",
+              className: "uitext"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "heap_memory",
+              className: "uitext"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "active_transaction",
+              className: "uitext"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "transaction",
+              className: "uitext"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Top 10"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "httpc",
+              className: "uitext"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Top 10"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "sql",
+              className: "uitext"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Top 10"
             }), " 등의 정보를 확인할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -360,7 +367,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 26511:
+/***/ 11283:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -384,7 +391,7 @@ const frontMatter = {
 	title: '성능 추이',
 	description: '성능 추이를 안내합니다.',
 	tags: [
-		'Go',
+		'Python',
 		'성능 추이',
 		'애플리케이션',
 		'분석하기',
@@ -394,20 +401,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/performance-trend",
+  "id": "python/performance-trend",
   "title": "성능 추이",
   "description": "성능 추이를 안내합니다.",
-  "source": "@site/docs/golang/performance-trend.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/performance-trend",
-  "permalink": "/whatap-docs/golang/performance-trend",
+  "source": "@site/docs/python/performance-trend.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/performance-trend",
+  "permalink": "/whatap-docs/python/performance-trend",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/performance-trend.mdx",
+  "editUrl": "undefined/docs/python/performance-trend.mdx",
   "tags": [
     {
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "label": "성능 추이",
@@ -432,7 +439,7 @@ const metadata = {
     "title": "성능 추이",
     "description": "성능 추이를 안내합니다.",
     "tags": [
-      "Go",
+      "Python",
       "성능 추이",
       "애플리케이션",
       "분석하기",
@@ -440,14 +447,14 @@ const metadata = {
     ],
     "toc_max_heading_level": 2
   },
-  "sidebar": "goSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "일자별 애플리케이션 현황",
-    "permalink": "/whatap-docs/golang/application-daily-stat"
+    "permalink": "/whatap-docs/python/application-daily-stat"
   },
   "next": {
-    "title": "큐브",
-    "permalink": "/whatap-docs/golang/cube"
+    "title": "스택",
+    "permalink": "/whatap-docs/python/analysis-apm"
   }
 };
 const assets = {
