@@ -26,7 +26,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/java/java-previous",
   "title": "Java Agent 지난 버전",
-  "description": "* Java Agent v2.2.21",
+  "description": "* Java Agent v2.2.22",
   "source": "@site/docs/release-notes/java/java-previous.mdx",
   "sourceDirName": "release-notes/java",
   "slug": "/release-notes/java/java-previous",
@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Agent v2.2.22",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_22"
+    "title": "Java Agent v2.2.23",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_23"
   },
   "next": {
     "title": "Java Batch Agent v2.2.24",
@@ -69,6 +69,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "java-2_2_22",
+          children: "Java Agent v2.2.22"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "java-2_2_21",

@@ -15,8 +15,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.2eb7deb7.css">
-<script src="/whatap-docs/assets/js/runtime~main.426aab54.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.ea973dde.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.73264a4e.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.ecfa8550.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -47,6 +47,13 @@
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="기타">기타<a href="#기타" class="hash-link" aria-label="기타에 대한 직접 링크" title="기타에 대한 직접 링크">​</a></h4><ul>
 <li>
+<p><code class="Changed">Changed</code> 다음 메뉴에서 목록 테이블에서 활성화 토글과 수정 버튼 컬럼 순서를 가장 왼쪽으로 변경</p>
+<ul>
+<li><span class="uitext">관리</span> &gt; <span class="uitext">정비 계획</span></li>
+<li><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> &gt; <span class="uitext">메트릭스</span> &gt; <span class="uitext">알림 메시지 설정</span></li>
+</ul>
+</li>
+<li>
 <p><code class="Changed">Changed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 실시간 로그 이벤트 또는 복합 로그 이벤트를 JSON 형식으로 불러올 경우 id 속성을 제외하고 추가 또는 덮어쓰기 하도록 수정</p>
 </li>
 <li>
@@ -70,7 +77,7 @@
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java">Java<a href="#java" class="hash-link" aria-label="Java에 대한 직접 링크" title="Java에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Fixed">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <strong>JVM 옵션 추가 항목</strong>에서 WebLogic 설치 가이드 내용 수정: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code></li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴의 서버 이벤트 추가/수정 창에서 포트 알림 안내 툴팁의 문구 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">Deployment 목록</span> 메뉴의 <span class="uitext">상세 보기</span> 화면에서 <span class="uitext">리소스</span> 탭에 ReplicaSet 목록 추가</p>
 </li>
@@ -96,12 +103,22 @@
 </li>
 </ul>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql--mongodb">PostgreSQL / MySQL / MongoDB<a href="#postgresql--mysql--mongodb" class="hash-link" aria-label="PostgreSQL / MySQL / MongoDB에 대한 직접 링크" title="PostgreSQL / MySQL / MongoDB에 대한 직접 링크">​</a></h4><p><code class="Changed">Changed</code> cpu(xos) 지표를 <code>cpu_sys(xos)</code>, <code>cpu_user(xos)</code>, <code>cpu_iowait(xos)</code>으로 세분화하여 표시하도록 변경</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="#cloud" class="hash-link" aria-label="cloud에 대한 직접 링크" title="cloud에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-ecs">Amazon ECS<a href="#amazon-ecs" class="hash-link" aria-label="Amazon ECS에 대한 직접 링크" title="Amazon ECS에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <span class="uitext">설치 안내</span> 섹션에서 언어별로 다른 사항을 동일한 기준으로 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-cloudwatch">Amazon CloudWatch<a href="#amazon-cloudwatch" class="hash-link" aria-label="Amazon CloudWatch에 대한 직접 링크" title="Amazon CloudWatch에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql--mongodb">PostgreSQL / MySQL / MongoDB<a href="#postgresql--mysql--mongodb" class="hash-link" aria-label="PostgreSQL / MySQL / MongoDB에 대한 직접 링크" title="PostgreSQL / MySQL / MongoDB에 대한 직접 링크">​</a></h4><p><code class="Changed">Changed</code> cpu(xos) 지표를 <code>cpu_sys(xos)</code>, <code>cpu_user(xos)</code>, <code>cpu_iowait(xos)</code>으로 세분화하여 표시하도록 변경</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="#cloud" class="hash-link" aria-label="cloud에 대한 직접 링크" title="cloud에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-ecs">Amazon ECS<a href="#amazon-ecs" class="hash-link" aria-label="Amazon ECS에 대한 직접 링크" title="Amazon ECS에 대한 직접 링크">​</a></h4><ul>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <span class="uitext">설치 안내</span> 섹션에서 언어별로 다른 사항을 동일한 기준으로 수정</p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> 다국어가 적용이 되지 않은 지표 이름을 언어 환경에 맞게 표시하도록 수정</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-cloudwatch">Amazon CloudWatch<a href="#amazon-cloudwatch" class="hash-link" aria-label="Amazon CloudWatch에 대한 직접 링크" title="Amazon CloudWatch에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Role ARN 입력 필드에 대한 라벨을 버튼 형식에서 텍스트 형식으로 변경</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> 언어 설정을 일본어로 설정한 상태에서, <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <span class="uitext">요금</span> 탭에서 <span class="uitext">가격 정책</span> 링크를 선택하면 한국어 페이지가 아닌 일본어 페이지로 이동하도록 수정</p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> 다국어가 적용이 되지 않은 지표 이름을 언어 환경에 맞게 표시하도록 수정</p>
 </li>
 </ul></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-240a1">Preview 2.4.0.a1<a href="#preview-240a1" class="hash-link" aria-label="Preview 2.4.0.a1에 대한 직접 링크" title="Preview 2.4.0.a1에 대한 직접 링크">​</a></h2><p>2024년 04월 04일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-2"><code>공통</code><a href="#공통-2" class="hash-link" aria-label="공통-2에 대한 직접 링크" title="공통-2에 대한 직접 링크">​</a></h3><ul>
@@ -119,7 +136,7 @@
 <p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 메트릭스 이벤트를 JSON 에디터로 편집할 경우 <code>select</code> 속성을 필수값으로 검증하는 로직 제거</p>
 </li>
 <li>
-<p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴 의 복합 메트릭스 이벤트 설정에서, 최초 시뮬레이션을 실행한 다음 날짜를 변경하여 재실행하면 데이터가 정상 표기되지 않는 문제 수정</p>
+<p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴의 복합 메트릭스 이벤트 설정에서, 최초 시뮬레이션을 실행한 다음 날짜를 변경하여 재실행하면 데이터가 정상 표기되지 않는 문제 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">Flex 보드</span> 메뉴에서 그룹 위젯에 메트릭스 타입 필터를 적용하고, 하위 위젯에서 <span class="uitext">그룹 위젯 필터 적용</span> 옵션을 선택하면 필터가 적용되지 않는 문제 수정</p>
@@ -138,12 +155,12 @@
 <p><code class="Fixed">Fixed</code> <span class="uitext">통계</span> &gt; <span class="uitext">에러</span> 메뉴에서 <span class="uitext">상세 분석</span> 기능 이용 시 에러 건수가 일치하지 않는 문제 수정</p>
 </li>
 <li>
-<p><code class="Fixed">Fixed</code> <span class="uitext">통계</span> &gt; <span class="uitext">SQL</span> 메뉴에 서 <span class="uitext">상세 분석</span> 컬럼 항목을 선택하면 발생하는 414 에러 문제 수정</p>
+<p><code class="Fixed">Fixed</code> <span class="uitext">통계</span> &gt; <span class="uitext">SQL</span> 메뉴에서 <span class="uitext">상세 분석</span> 컬럼 항목을 선택하면 발생하는 414 에러 문제 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">애플리케이션 대시보드</span>에서 프리셋 저장 후 덮어쓰기가 되지 않는 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-1"><code>Server</code><a href="#server-1" class="hash-link" aria-label="server-1에 대한 직접 링크" title="server-1에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 이벤트 상세 정보 화면으로 이동하면, <span class="uitext">알림 전후</span> 항목의 시간 설정에 따라 프로세스 차트의 시간 범위가 변경되도록 개선</p>
 </li>
@@ -187,7 +204,7 @@
 </ul>
 </li>
 <li>
-<p><code class="Fixed">Fixed</code> 프로젝트 생성 후 에이전트를 설치  하지 않는 상태에서 액세스 키만 발급한 경우, <span class="uitext">관리</span> &gt; <span class="uitext">쿠버네티스 에이전트 목록</span> 메뉴에서 발생하는 화이트 아웃 현상 수정</p>
+<p><code class="Fixed">Fixed</code> 프로젝트 생성 후 에이전트를 설치하지 않는 상태에서 액세스 키만 발급한 경우, <span class="uitext">관리</span> &gt; <span class="uitext">쿠버네티스 에이전트 목록</span> 메뉴에서 발생하는 화이트 아웃 현상 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴의 <span class="uitext">CPU 코어</span>, <span class="uitext">Memory Total</span> 지푯값을 <code>kube_node</code> 메트릭스 데이터의 <code>CapacityCpu</code>, <code>CapacityMemory</code> field 값으로 변경</p>
@@ -200,7 +217,7 @@
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에서 <span class="uitext">JSON 일괄 수정</span> 기능이 동작하지 않는 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-2"><code>Application</code><a href="#application-2" class="hash-link" aria-label="application-2에 대한 직접 링크" title="application-2에 대한 직접 링크">​</a></h3><p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 목록</span> 메뉴에서 <span class="b500">비활성 에이전트 삭제 시간</span>을 <span class="uitext">비활성 에이전트 유지 기간</span>으로 변경</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-1"><code>Server</code><a href="#server-1" class="hash-link" aria-label="server-1에 대한 직접 링크" title="server-1에 대한 직접 링크">​</a></h3><p><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 설정 추가</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-2"><code>Kubernetes</code><a href="#kubernetes-2" class="hash-link" aria-label="kubernetes-2에 대한 직접 링크" title="kubernetes-2에 대한 직접 링크">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-2"><code>Application</code><a href="#application-2" class="hash-link" aria-label="application-2에 대한 직접 링크" title="application-2에 대한 직접 링크">​</a></h3><p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 목록</span> 메뉴에서 <span class="b500">비활성 에이전트 삭제 시간</span>을 <span class="uitext">비활성 에이전트 유지 기간</span>으로 변경</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-2"><code>Server</code><a href="#server-2" class="hash-link" aria-label="server-2에 대한 직접 링크" title="server-2에 대한 직접 링크">​</a></h3><p><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 설정 추가</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-2"><code>Kubernetes</code><a href="#kubernetes-2" class="hash-link" aria-label="kubernetes-2에 대한 직접 링크" title="kubernetes-2에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 블록 위에 마우스 오버 시 나타나는 UI 수정</p>
 </li>

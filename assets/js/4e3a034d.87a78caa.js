@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[25962],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79257],{
 
 /***/ 25627:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -74,7 +74,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 96754:
+/***/ 73826:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -92,39 +92,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'java-2_2_22',
-	title: 'Java Agent v2.2.22',
+	id: 'java-2_2_31',
+	title: 'Java Agent v2.2.31',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/java/java-2_2_21'
+	pagination_next: 'release-notes/java/java-2_2_30',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/java/java-2_2_22",
-  "title": "Java Agent v2.2.22",
-  "description": "2023년 11월 16일",
-  "source": "@site/docs/release-notes/java/java-2.2.22.mdx",
+  "id": "release-notes/java/java-2_2_31",
+  "title": "Java Agent v2.2.31",
+  "description": "2024년 04월 03일",
+  "source": "@site/docs/release-notes/java/java-2.2.31.mdx",
   "sourceDirName": "release-notes/java",
-  "slug": "/release-notes/java/java-2_2_22",
-  "permalink": "/whatap-docs/release-notes/java/java-2_2_22",
+  "slug": "/release-notes/java/java-2_2_31",
+  "permalink": "/whatap-docs/release-notes/java/java-2_2_31",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/java/java-2.2.22.mdx",
+  "editUrl": "undefined/docs/release-notes/java/java-2.2.31.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "java-2_2_22",
-    "title": "Java Agent v2.2.22",
+    "id": "java-2_2_31",
+    "title": "Java Agent v2.2.31",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/java/java-2_2_21"
+    "pagination_next": "release-notes/java/java-2_2_30",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Agent v2.2.23",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_23"
+    "title": "Java Agent v2.2.32",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_32"
   },
   "next": {
-    "title": "Java Agent v2.2.21",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_21"
+    "title": "Java Agent v2.2.30",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_30"
   }
 };
 const assets = {
@@ -144,61 +146,118 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
+  }, {Cmdname, Status} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 16일"
+      children: "2024년 04월 03일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Feature"
-          }), " log4j-2.17 appender 로그 추적(log4j-2.17 버전 이상)"]
+          }), " spring-boot-2.7.x에서 kafka-batch 추적"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "# requires agent restart\nweaving=log4j-2.17\n\n# default\ntrace_log4j_stack_depth=50\ntrace_log4j_appender_enabled=false\ntrace_log4j_appender_set=\n\n# example\ntrace_log4j_appender_enabled=true\ntrace_log4j_appender_set=Console,AccessLog,ErrorLog\n"
+            metastring: "title=\"whatap.conf\"",
+            children: "weaving=spring-boot-2.7\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " JDBC 드라이버에서 SqlException 발생 시 추적 여부 설정 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["옵션 값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "false"
+          }), "로 설정하면 사용자 정의 예외 처리로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "biz_exceptions"
+          }), " 처리할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "# default: true\ntrace_sql_exception_enabled=true\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " URL + HTTP method 설정 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "예시, /api/user+GET, /api/user+POST"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_statistics",
+              className: "uitext"
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_txSearch",
+              className: "uitext"
+            }), " 메뉴에서 URL+method로 확인 가능"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "통계 데이터에서 URL을 변경한 URL+method로 수집"
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "# default: false\ntrace_tx_name_with_method_enabled=false\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " oshi-core-6.1.6으로 업데이트"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 자바 에이전트에서 netstat 지표 수집, Maximum Transmission Unit(MTU) 지표 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "# default: false\noshi_enabled=false\n\n# default: false\noshi_netstat_enabled=false\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Changed"
-          }), " logback-1.2.8 appender 로그 설정 변경"]
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "trace_basetime"
+          }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "profile_basetime"
+          }), " 옵션과 무관하게 에러가 있는 상세 트레이스를 기본 수집하도록 수정"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "# requires agent restart\nweaving=logback-1.2.8\n\n# default\ntrace_logback_stack_depth=50\ntrace_logback_appender_enabled=false\ntrace_logback_appender_set=\n"
+            metastring: "title=\"whatap.conf\"",
+            children: "# default: false -> true\ntrace_concern_error_enabled=true\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 에이전트 기동 시 에러 방지 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "hook_db_native_enabled"
-          }), " 옵션의 기본값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "false"
-          }), "로 수정"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "# default\nhook_db_native_enabled=false\n"
-          })
+            children: "Changed"
+          }), " oshi 배포 디렉토리를 lib4에서 lib5로 업데이트"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Fixed"
-          }), " r2dbc 호출 시 일부 파라미터 수집이 되지 않는 현상 수정"]
+          }), " oshi, sigar 라이브러리 적용 시 에이전트 로그 오타 수정"]
         }), "\n"]
       }), "\n"]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "2.2.22"
+      ver: "2.2.31"
     })]
   });
 }
