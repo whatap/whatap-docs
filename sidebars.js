@@ -3343,6 +3343,24 @@ const sidebars = {
               ],
             },
             {
+              type: 'category',
+              label: 'NPM',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/npm/npm-v0_4_5'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/npm/npm-v0_4_5',
+                  className: 'new',
+                }
+              ],
+            },
+            {
               type: 'doc',
               label: 'Amazon ECS',
               // className: 'new',
