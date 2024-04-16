@@ -66,6 +66,10 @@ const toc = [{
   "id": "공통",
   "level": 3
 }, {
+  "value": "사이드 메뉴",
+  "id": "사이드-메뉴",
+  "level": 4
+}, {
   "value": "기타",
   "id": "기타",
   "level": 4
@@ -117,6 +121,10 @@ const toc = [{
   "value": "Amazon CloudWatch",
   "id": "amazon-cloudwatch",
   "level": 4
+}, {
+  "value": "<code>URL</code>",
+  "id": "url",
+  "level": 3
 }, {
   "value": "Preview 2.4.0.a1",
   "id": "preview-240a1",
@@ -187,6 +195,7 @@ function _createMdxContent(props) {
     h3: "h3",
     h4: "h4",
     hr: "hr",
+    img: "img",
     li: "li",
     p: "p",
     section: "section",
@@ -270,6 +279,29 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "사이드-메뉴",
+          children: "사이드 메뉴"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " 사이드 메뉴에서 프로젝트 목록의 너비를 조절할 수 있는 기능 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " 사이드 메뉴의 프로젝트 목록에서 그룹/프로젝트 이름이 긴 경우 정렬이 흐트러지는 문제 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Deprecated"
+              }), " 사이드 메뉴의 튜토리얼 버튼 제거"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
           id: "기타",
           children: "기타"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -326,18 +358,6 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Changed"
               }), " AWS Marketplace 계정 사용자의 경우 구독 취소 기능 제거 후 안내 메시지 추가"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                children: "Fixed"
-              }), " 사이드 메뉴의 프로젝트 목록에서 그룹/프로젝트 이름이 긴 경우 정렬이 흐트러지는 문제 수정"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                children: "Deprecated"
-              }), " 사이드 메뉴의 튜토리얼 버튼 제거"]
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -619,6 +639,35 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Fixed"
               }), " 다국어가 적용이 되지 않은 지표 이름을 언어 환경에 맞게 표시하도록 수정"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "url",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "URL"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_integratedFlexboard",
+                className: "uitext"
+              }), " 메뉴에서 URL 목록 위젯의 UI 개편"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "URL list",
+                src: (__webpack_require__(35136)/* ["default"] */ .A) + "",
+                width: "963",
+                height: "304"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " URL 상세 창을 팝아웃으로 표시하도록 변경"]
             }), "\n"]
           }), "\n"]
         })]
@@ -1239,6 +1288,16 @@ function _missingMdxReference(id, component) {
 }
 
 
+
+/***/ }),
+
+/***/ 35136:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/url-widget-changed-9be9f2c6c28568a96c807f0df4af4002.png");
 
 /***/ }),
 

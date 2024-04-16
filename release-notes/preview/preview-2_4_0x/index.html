@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.2eb7deb7.css">
-<script src="/whatap-docs/assets/js/runtime~main.ee88364c.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.2e511ef0.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.ecfa8550.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -45,6 +45,16 @@
 <li>
 <p><code class="Changed">Changed</code> 데이터베이스 상태 위젯에서 인스턴스를 클릭하면 해당 프로젝트 대시보드로 이동하도록 동작 변경</p>
 </li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="사이드-메뉴">사이드 메뉴<a href="#사이드-메뉴" class="hash-link" aria-label="사이드 메뉴에 대한 직접 링크" title="사이드 메뉴에 대한 직접 링크">​</a></h4><ul>
+<li>
+<p><code class="Feature">Feature</code> 사이드 메뉴에서 프로젝트 목록의 너비를 조절할 수 있는 기능 추가</p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> 사이드 메뉴의 프로젝트 목록에서 그룹/프로젝트 이름이 긴 경우 정렬이 흐트러지는 문제 수정</p>
+</li>
+<li>
+<p><code class="Deprecated">Deprecated</code> 사이드 메뉴의 튜토리얼 버튼 제거</p>
+</li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="기타">기타<a href="#기타" class="hash-link" aria-label="기타에 대한 직접 링크" title="기타에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Changed">Changed</code> 다음 메뉴에서 목록 테이블에서 활성화 토글과 수정 버튼 컬럼 순서를 가장 왼쪽으로 변경</p>
@@ -61,12 +71,6 @@
 </li>
 <li>
 <p><code class="Changed">Changed</code> AWS Marketplace 계정 사용자의 경우 구독 취소 기능 제거 후 안내 메시지 추가</p>
-</li>
-<li>
-<p><code class="Fixed">Fixed</code> 사이드 메뉴의 프로젝트 목록에서 그룹/프로젝트 이름이 긴 경우 정렬이 흐트러지는 문제 수정</p>
-</li>
-<li>
-<p><code class="Deprecated">Deprecated</code> 사이드 메뉴의 튜토리얼 버튼 제거</p>
 </li>
 </ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통<a href="#공통-1" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h4><ul>
 <li>
@@ -115,13 +119,21 @@
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-cloudwatch">Amazon CloudWatch<a href="#amazon-cloudwatch" class="hash-link" aria-label="Amazon CloudWatch에 대한 직접 링크" title="Amazon CloudWatch에 대한 직접 링크">​</a></h4><ul>
 <li>
-<p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Role ARN 입력 필드에   대한 라벨을 버튼 형식에서 텍스트 형식으로 변경</p>
+<p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Role ARN 입력 필드에 대한 라벨을 버튼 형식에서 텍스트 형식으로 변경</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> 언어 설정을 일본어로 설정한 상태에서, <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <span class="uitext">요금</span> 탭에서 <span class="uitext">가격 정책</span> 링크를 선택하면 한국어 페이지가 아닌 일본어 페이지로 이동하도록 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> 다국어가 적용이 되지 않은 지표 이름을 언어 환경에 맞게 표시하도록 수정</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="url"><code>URL</code><a href="#url" class="hash-link" aria-label="url에 대한 직접 링크" title="url에 대한 직접 링크">​</a></h3><ul>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">통합 Flex 보드</span> 메뉴에서 URL 목록 위젯의 UI 개편</p>
+<p><img decoding="async" loading="lazy" alt="URL list" src="/whatap-docs/assets/images/url-widget-changed-9be9f2c6c28568a96c807f0df4af4002.png" width="963" height="304" class="img_ev3q"></p>
+</li>
+<li>
+<p><code class="Changed">Changed</code> URL 상세 창을 팝아웃으로 표시하도록 변경</p>
 </li>
 </ul></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-240a1">Preview 2.4.0.a1<a href="#preview-240a1" class="hash-link" aria-label="Preview 2.4.0.a1에 대한 직접 링크" title="Preview 2.4.0.a1에 대한 직접 링크">​</a></h2><p>2024년 04월 04일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-2"><code>공통</code><a href="#공통-2" class="hash-link" aria-label="공통-2에 대한 직접 링크" title="공통-2에 대한 직접 링크">​</a></h3><ul>
@@ -152,7 +164,7 @@
 <p><code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">성능 추이</span> 메뉴에서 다운로드한 CSV 파일의 헤더 컬럼에 단위 추가</p>
 </li>
 <li>
-<p><code class="Fixed">Fixed</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">테이블 뷰</span> 탭에서 <span class="uitext">TXT</span> 또는 <span class="uitext">SQL</span> 버튼을 선택해 다운로드한 파일에 기입된 시간이 UTC+9가 적용되는 않는 문제 수정</p>
+<p><code class="Fixed">Fixed</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">테이블 뷰</span> 탭에서 <span class="uitext">TXT</span> 또는 <span class="uitext">SQL</span> 버튼 을 선택해 다운로드한 파일에 기입된 시간이 UTC+9가 적용되는 않는 문제 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">통계</span> &gt; <span class="uitext">에러</span> 메뉴에서 <span class="uitext">상세 분석</span> 기능 이용 시 에러 건수가 일치하지 않는 문제 수정</p>
@@ -212,7 +224,7 @@
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴의 <span class="uitext">CPU 코어</span>, <span class="uitext">Memory Total</span> 지푯값을 <code>kube_node</code> 메트릭스 데이터의 <code>CapacityCpu</code>, <code>CapacityMemory</code> field 값으로 변경</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-1"><code>Database</code><a href="#database-1" class="hash-link" aria-label="database-1에 대한 직접 링크" title="database-1에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="database-v1">Database <code class="my">V1</code><a href="#database-v1" class="hash-link" aria-label="database-v1에 대한 직접 링크" title="database-v1에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">SQL 상세</span> 팝업창을 열면 query 텍스트가 보이지 않는 문제 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="database-v2">Database <code class="my">V2</code><a href="#database-v2" class="hash-link" aria-label="database-v2에 대한 직접 링크" title="database-v2에 대한 직접 링크">​</a></h4><p><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">액티브 세션</span> 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">네트워크 토폴로지</span> 메뉴에서 노드의 테두리 색상이 의도와 다르게 적용되는 문제 수정</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>Outbound 트래픽을 발생시키는 노드는 녹색으로, Inbound 트래픽을 발생시키는 노드는 회색으로 테두리를 표시합니다.</p></div></div><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">로그</span> 탭에서 실시간 로그 이벤트의 <span class="uitext">검색 값</span> 필드에 공백을 포함할 수 있도록 수정</p></div></section>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-1"><code>Database</code><a href="#database-1" class="hash-link" aria-label="database-1에 대한 직접 링크" title="database-1에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="database-v1">Database <code class="my">V1</code><a href="#database-v1" class="hash-link" aria-label="database-v1에 대한 직접 링크" title="database-v1에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">SQL 상세</span> 팝업창을 열면 query 텍스트가 보이지 않는 문제 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="database-v2">Database <code class="my">V2</code><a href="#database-v2" class="hash-link" aria-label="database-v2에 대한 직접 링크" title="database-v2에  대한 직접 링크">​</a></h4><p><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">액티브 세션</span> 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">네트워크 토폴로지</span> 메뉴에서 노드의 테두리 색상이 의도와 다르게 적용되는 문제 수정</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>Outbound 트래픽을 발생시키는 노드는 녹색으로, Inbound 트래픽을 발생시키는 노드는 회색으로 테두리를 표시합니다.</p></div></div><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">로그</span> 탭에서 실시간 로그 이벤트의 <span class="uitext">검색 값</span> 필드에 공백을 포함할 수 있도록 수정</p></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-240a0">Preview 2.4.0.a0<a href="#preview-240a0" class="hash-link" aria-label="Preview 2.4.0.a0에 대한 직접 링크" title="Preview 2.4.0.a0에 대한 직접 링크">​</a></h2><p>2024년 03월 28일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-3"><code>공통</code><a href="#공통-3" class="hash-link" aria-label="공통-3에 대한 직접 링크" title="공통-3에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">Flex 보드</span> 메뉴에서 그룹 위젯에 하위 위젯을 추가할 경우 위젯 템플릿 목록이 닫히지 않도록 변경</p>
