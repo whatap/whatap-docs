@@ -47,8 +47,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_4"
   },
   "next": {
-    "title": "Amazon ECS Agent release notes",
-    "permalink": "/whatap-docs/release-notes/amazon-ecs/amazon-ecs-release-notes"
+    "title": "NPM Agent v0.4.5",
+    "permalink": "/whatap-docs/release-notes/npm/npm-v0_4_5"
   }
 };
 const assets = {

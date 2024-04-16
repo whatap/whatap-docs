@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Browser Agent 지난 버전",
-    "permalink": "/whatap-docs/release-notes/browser/browser-previous"
+    "title": "NPM Agent v0.4.5",
+    "permalink": "/whatap-docs/release-notes/npm/npm-v0_4_5"
   },
   "next": {
     "title": "Telegraf release notes",
