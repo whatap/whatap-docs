@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50170],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71421],{
 
 /***/ 20250:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -206,7 +206,7 @@ function _createMdxContent(props) {
                 sid: "TTL06527",
                 className: "uitext"
               }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "dashboard-hitmap-trace#basic-usage",
+                href: "trs-profile#transaction-info",
                 children: "다음 문서"
               }), "를 참조하세요."]
             }), "\n"]
@@ -349,7 +349,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 23285:
+/***/ 82887:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -369,30 +369,31 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-active-transaction',
 	title: '액티브 트랜잭션',
-	description: '자바(Java) 모니터링에서 현재 진행 중인 트랜잭션을 실시간으로 모니터링하고 분석하는 액티브 트랜잭션 기능을 안내합니다. 애플리케이션의 트랜잭션 URL, SQL, HTTP 호출 정보를 조회하고, 트랜잭션의 상태를 구분하여 파악할 수 있습니다. 이를 통해 지연 구간을 식별하고 문제 해결에 필요한 상세 정보를 얻을 수 있습니다.',
+	description: '현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.',
 	tags: [
-		'Java',
+		'Python',
 		'액티브 트랜잭션',
 		'대시보드',
-		'애플리케이션'
+		'애플리케이션',
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard-active-transaction",
+  "id": "python/dashboard-active-transaction",
   "title": "액티브 트랜잭션",
-  "description": "자바(Java) 모니터링에서 현재 진행 중인 트랜잭션을 실시간으로 모니터링하고 분석하는 액티브 트랜잭션 기능을 안내합니다. 애플리케이션의 트랜잭션 URL, SQL, HTTP 호출 정보를 조회하고, 트랜잭션의 상태를 구분하여 파악할 수 있습니다. 이를 통해 지연 구간을 식별하고 문제 해결에 필요한 상세 정보를 얻을 수 있습니다.",
-  "source": "@site/docs/java/dashboard-active-transaction.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard-active-transaction",
-  "permalink": "/whatap-docs/java/dashboard-active-transaction",
+  "description": "현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.",
+  "source": "@site/docs/python/dashboard-active-transaction.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/dashboard-active-transaction",
+  "permalink": "/whatap-docs/python/dashboard-active-transaction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard-active-transaction.mdx",
+  "editUrl": "undefined/docs/python/dashboard-active-transaction.mdx",
   "tags": [
     {
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "label": "액티브 트랜잭션",
@@ -405,28 +406,33 @@ const metadata = {
     {
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
+    },
+    {
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard-active-transaction",
     "title": "액티브 트랜잭션",
-    "description": "자바(Java) 모니터링에서 현재 진행 중인 트랜잭션을 실시간으로 모니터링하고 분석하는 액티브 트랜잭션 기능을 안내합니다. 애플리케이션의 트랜잭션 URL, SQL, HTTP 호출 정보를 조회하고, 트랜잭션의 상태를 구분하여 파악할 수 있습니다. 이를 통해 지연 구간을 식별하고 문제 해결에 필요한 상세 정보를 얻을 수 있습니다.",
+    "description": "현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.",
     "tags": [
-      "Java",
+      "Python",
       "액티브 트랜잭션",
       "대시보드",
-      "애플리케이션"
+      "애플리케이션",
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/java/dashboard-transactionmap"
+    "permalink": "/whatap-docs/python/dashboard-transactionmap"
   },
   "next": {
     "title": "히트맵 - 트레이스 분석",
-    "permalink": "/whatap-docs/java/dashboard-hitmap-trace"
+    "permalink": "/whatap-docs/python/dashboard-hitmap-trace"
   }
 };
 const assets = {
