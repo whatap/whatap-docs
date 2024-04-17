@@ -10,7 +10,7 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 ### Crowdin CLI 설치
 
-클라우딘 CLI 다운로드: `brew install crowdin@3`
+클라우딘 CLI 다운로드: `brew install crowdin`
 
 참조: <https://crowdin.github.io/crowdin-cli/>
 
@@ -34,9 +34,7 @@ npm run crowdin upload
 ### 번역 다운로드
 
 ```
-crowdin download
-# or
-npm run crowdin download
+crowdin download -b main -l en-US
 ```
 
 언어별 다운로드 `crowdin download -l en-US`
