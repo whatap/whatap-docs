@@ -37,7 +37,7 @@ npm run crowdin upload
 crowdin download -b main -l en-US
 ```
 
-언어별 다운로드 `crowdin download -l en-US`
+언어별 다운로드 `crowdin download -l en-US -b main`
 
 ### 다국어 문서 수정 사항
 
