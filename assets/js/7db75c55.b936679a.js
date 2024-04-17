@@ -131,8 +131,8 @@ const metadata = {
   },
   "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "Docker 환경 설치",
-    "permalink": "/whatap-docs/nodejs/install-agent-docker"
+    "title": "Nuxt.js 환경 설치",
+    "permalink": "/whatap-docs/nodejs/install-agent-nuxtjs"
   },
   "next": {
     "title": "Node.js 환경 설정",

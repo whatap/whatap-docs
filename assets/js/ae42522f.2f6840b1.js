@@ -70,8 +70,8 @@ const metadata = {
     "permalink": "/whatap-docs/nodejs/install-agent"
   },
   "next": {
-    "title": "설치 점검 사항",
-    "permalink": "/whatap-docs/nodejs/install-check"
+    "title": "Next.js 환경 설치",
+    "permalink": "/whatap-docs/nodejs/install-agent-nextjs"
   }
 };
 const assets = {
