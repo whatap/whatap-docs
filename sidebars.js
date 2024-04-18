@@ -546,7 +546,9 @@ const sidebars = {
             id: 'nodejs/install-agent',
           },
           items: [
-            'nodejs/install-agent-docker'
+            'nodejs/install-agent-docker',
+            'nodejs/install-agent-nextjs',
+            'nodejs/install-agent-nuxtjs'
           ]
         },
         {
