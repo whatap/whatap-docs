@@ -17,7 +17,7 @@ The agent traces the transaction performance and provides the following configur
 
 import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profile.mdx";
 
-<Dotnettransactionprofile /> 
+<Dotnettransactionprofile />
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
@@ -90,3 +90,9 @@ import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profil
   Default `30000`
 
   Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+
+- **prepend_app_pool_name** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  If the option value is set to `true`, the full name of the application appears before the URL of the transaction.

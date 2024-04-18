@@ -1,11 +1,13 @@
 ---
 id: agent-transaction
 title: Transactions
-description: The agent traces the transaction performance and provides the following configurable options.
+description: The following explains how to set an agent to trace and analyze performance data for each transaction within Java applications. It evaluates the application performance by tracing transaction requests, response time, and resource usage.
 tags:
   - Java
+  - Application
   - Transaction
   - Transactions
+  - Agent
 ---
 
 import Transaction from "../common-items/_transaction.mdx";
@@ -16,7 +18,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
-<Transactionprofilingcommon /> 
+<Transactionprofilingcommon />
 
 import Javatransactionprofiling from "../common-items/_java-transaction-profiling.mdx";
 
@@ -28,11 +30,11 @@ import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
 
 import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
 
-<Javanonhttptransaction /> 
+<Javanonhttptransaction />
 
 import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
-<Javatracetransaction /> 
+<Javatracetransaction />
 
 ## Trace data sampling
 
@@ -64,30 +66,30 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
 ## Modifying the trace URL name
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>string</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-You can modify the name of the trace URL when calling a specific URL or method. For example, if the `test100000()` method is called while calling a URL registered in `io.home.test.TestController.test1`, you can see it as `/api/100000+test1+test100000` on the service screen.
+  You can modify the name of the trace URL when calling a specific URL or method. For example, if the `test100000()` method is called while calling a URL registered in `io.home.test.TestController.test1`, you can see it as `/api/100000+test1+test100000` on the service screen.
 
-The `hook_tx_name_mode` option allows you to select one of **class**, **method**, **string**, and **return**.
+  The `hook_tx_name_mode` option allows you to select one of **class**, **method**, **string**, and **return**.
 
-```ini title="whatap.conf"
-# The full path of the call method and wildcard (*) can be used.
-hook_tx_name_patterns=ab.cd.ef.GH.ij
+  ```ini title="whatap.conf"
+  # The full path of the call method and wildcard (*) can be used.
+  hook_tx_name_patterns=ab.cd.ef.GH.ij
 
-# Select one of class, method, string, and return.
-hook_tx_name_mode=method
-```
+  # Select one of class, method, string, and return.
+  hook_tx_name_mode=method
+  ```
 
 ## Ignoring a specific exception
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **ignore_exception_tx_pattern** <span class='type'>String</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-You can configure a service to ignore specific exceptions. When registering multiple items, use a comma (,) as the delimiter.
+  You can configure a service to ignore specific exceptions. When registering multiple items, use a comma (,) as the delimiter.
 
-```ini title="whatap.conf"
-ignore_exception_tx_pattern=exception:service_url
-# e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
-```
+  ```ini title="whatap.conf"
+  ignore_exception_tx_pattern=exception:service_url
+  # e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+  ```
 
 ## Tracing HttpURLConnection
 
