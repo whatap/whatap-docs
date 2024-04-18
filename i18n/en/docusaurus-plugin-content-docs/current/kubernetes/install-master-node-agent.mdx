@@ -144,14 +144,28 @@ After adding the WhaTap Helm repository, create a default configuration file app
        port: "6600"
    ```
 
-4. Execute the following command to install the agent application. 
+4. Install the agent application as follows. 
 
-   ```bash
-   kubectl delete ns whatap-monitoring
-   kubectl delete clusterrole whatap
-   kubectl delete clusterrolebinding whatap
-   helm install whatap-kube-agent whatap/kube -f values.yaml
-   ```
+   - For users who install the agent for the **first time**, run the following command to install the agent application. 
+
+     ```bash
+     helm install whatap-kube-agent whatap/kube -f values.yaml
+     ```
+
+   - In case of **existing** WhaTap Kubernetes agent users, run the following command to install the agent application. 
+
+     ```bash
+     kubectl delete ns whatap-monitoring
+     kubectl delete clusterrole whatap
+     kubectl delete clusterrolebinding whatap
+     helm install whatap-kube-agent whatap/kube -f values.yaml
+     ```
+
+   :::note 
+
+   If you have installed the WhaTap Kubernetes agent by using the existing _yaml_ file, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible using the _heml_ chart. 
+
+   :::
 
 ### Major configuration items for _values.yaml_
 

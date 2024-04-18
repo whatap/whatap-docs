@@ -55,7 +55,7 @@ Delta values are calculated and collected from `events_statements_summary_by_dig
 
 import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-basic-usage.mdx";
 
-<Dbproductsqlstatbasicusage /> 
+<Dbproductsqlstatbasicusage />
 
 ## Column information guide
 
@@ -65,9 +65,9 @@ import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-bas
 | `digest`                  | Hash value of `digest_text`                                                                                                               |
 | `schema_name`             | Schema name                                                                                                                               |
 | `count_star`              | Execution count                                                                                                                           |
-| `timer_wait`              | Total execution time (sec)                                                                                                                |
-| `lock_time`               | Waited time caused by table lock (sec)                                                                                                    |
-| `rows_affected`           | Number of affected rows (insert, update, replace)                                                                                         |
+| `timer_wait`              | Total execution time (sec)                                                                                             |
+| `lock_time`               | Waited time caused by table lock (sec)                                                                                 |
+| `rows_affected`           | Number of affected rows (insert, update, replace)                                                                      |
 | `rows_sent`               | Number of returned rows                                                                                                                   |
 | `rows_examined`           | Number of rows reviewed in the server layer                                                                                               |
 | `created_tmp_disk_tables` | If the sum of disk temporary tables created by the server while executing commands is too high, consider increasing the sort memory size. |
@@ -99,7 +99,6 @@ import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-q
 <Dbproductsqlstatquerydetails />
 
 {/* 필터 조건추가하기*/}
-
 import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 <Dbsqlfilter />
@@ -108,4 +107,4 @@ import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn /> 
+<Dbv2dataeditcolumn />
