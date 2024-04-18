@@ -1,119 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49282],{
-
-/***/ 40804:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_set_notification_message_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39232);
-
-
-const frontMatter = {
-	id: 'set-notification-message',
-	title: '알림 메시지 사용자 정의',
-	description: '프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.',
-	tags: [
-		'Altibase',
-		'데이터베이스',
-		'경고 알림',
-		'메트릭스 이벤트',
-		'알림 메시지'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase/set-notification-message",
-  "title": "알림 메시지 사용자 정의",
-  "description": "프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.",
-  "source": "@site/docs/altibase/set-notification-message.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/set-notification-message",
-  "permalink": "/whatap-docs/altibase/set-notification-message",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase/set-notification-message.mdx",
-  "tags": [
-    {
-      "label": "Altibase",
-      "permalink": "/whatap-docs/tags/altibase"
-    },
-    {
-      "label": "데이터베이스",
-      "permalink": "/whatap-docs/tags/데이터베이스"
-    },
-    {
-      "label": "경고 알림",
-      "permalink": "/whatap-docs/tags/경고-알림"
-    },
-    {
-      "label": "메트릭스 이벤트",
-      "permalink": "/whatap-docs/tags/메트릭스-이벤트"
-    },
-    {
-      "label": "알림 메시지",
-      "permalink": "/whatap-docs/tags/알림-메시지"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "set-notification-message",
-    "title": "알림 메시지 사용자 정의",
-    "description": "프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.",
-    "tags": [
-      "Altibase",
-      "데이터베이스",
-      "경고 알림",
-      "메트릭스 이벤트",
-      "알림 메시지"
-    ]
-  },
-  "sidebar": "altibaseSidebar",
-  "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/altibase/metric-warning-notice"
-  },
-  "next": {
-    "title": "이상치 탐지 경고 알림",
-    "permalink": "/whatap-docs/altibase/set-event-detect-anomal"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_set_notification_message_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_notification_message_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50281],{
 
 /***/ 39232:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -170,7 +56,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang} = _components;
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -257,37 +144,18 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            children: ["수신한 메시지의 상세 항목을 감추려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "숫자 1",
               src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 영역은 수신할 메시지의 상세 항목입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 2",
-              src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " 영역은 수신할 메시지의 상세 항목에 대한 내용입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 3",
-              src: (__webpack_require__(55522)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "미리보기 아이콘",
-              src: (__webpack_require__(4754)/* ["default"] */ .A) + "",
-              width: "24",
-              height: "24"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "미리보기"
-              })
-            }), " 버튼을 선택하면 수신할 메시지의 내용을 미리 확인할 수 있습니다."]
+            }), " 토글 버튼을 선택해 비활성화하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["수신한 메시지의 내용을 수정하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 4",
-              src: (__webpack_require__(893)/* ["default"] */ .A) + "",
+              alt: "숫자 2",
+              src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -295,20 +163,37 @@ function _createMdxContent(props) {
               src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "수정"
-              })
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "edit",
+              className: "uitext"
             }), " 버튼을 선택하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["수신한 메시지의 상세 항목을 감추려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "숫자 3",
+              src: (__webpack_require__(55522)/* ["default"] */ .A) + "",
+              width: "35",
+              height: "35"
+            }), " 영역은 수신할 메시지의 상세 항목입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "숫자 4",
+              src: (__webpack_require__(893)/* ["default"] */ .A) + "",
+              width: "35",
+              height: "35"
+            }), " 영역은 수신할 메시지의 상세 항목에 대한 내용입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "숫자 5",
               src: (__webpack_require__(79764)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 토글 버튼을 선택해 비활성화하세요."]
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "미리보기 아이콘",
+              src: (__webpack_require__(4754)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "preview",
+              className: "uitext"
+            }), " 버튼을 선택하면 수신할 메시지의 내용을 미리 확인할 수 있습니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -562,6 +447,120 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 36539:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_set_notification_message_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39232);
+
+
+const frontMatter = {
+	id: 'set-notification-message',
+	title: '알림 메시지 사용자 정의',
+	description: '프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.',
+	tags: [
+		'MySQL',
+		'데이터베이스',
+		'경고 알림',
+		'메트릭스 이벤트',
+		'알림 메시지'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "mysql/set-notification-message",
+  "title": "알림 메시지 사용자 정의",
+  "description": "프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.",
+  "source": "@site/docs/mysql/set-notification-message.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/set-notification-message",
+  "permalink": "/whatap-docs/mysql/set-notification-message",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/mysql/set-notification-message.mdx",
+  "tags": [
+    {
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
+    },
+    {
+      "label": "경고 알림",
+      "permalink": "/whatap-docs/tags/경고-알림"
+    },
+    {
+      "label": "메트릭스 이벤트",
+      "permalink": "/whatap-docs/tags/메트릭스-이벤트"
+    },
+    {
+      "label": "알림 메시지",
+      "permalink": "/whatap-docs/tags/알림-메시지"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-notification-message",
+    "title": "알림 메시지 사용자 정의",
+    "description": "프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.",
+    "tags": [
+      "MySQL",
+      "데이터베이스",
+      "경고 알림",
+      "메트릭스 이벤트",
+      "알림 메시지"
+    ]
+  },
+  "sidebar": "mysqlSidebar",
+  "previous": {
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/mysql/metric-warning-notice"
+  },
+  "next": {
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/mysql/set-event-detect-anomal"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_set_notification_message_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_notification_message_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

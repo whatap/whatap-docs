@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[75228],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51011],{
 
 /***/ 39232:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -56,7 +56,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang} = _components;
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -143,37 +144,18 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            children: ["수신한 메시지의 상세 항목을 감추려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "숫자 1",
               src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 영역은 수신할 메시지의 상세 항목입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 2",
-              src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " 영역은 수신할 메시지의 상세 항목에 대한 내용입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 3",
-              src: (__webpack_require__(55522)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "미리보기 아이콘",
-              src: (__webpack_require__(4754)/* ["default"] */ .A) + "",
-              width: "24",
-              height: "24"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "미리보기"
-              })
-            }), " 버튼을 선택하면 수신할 메시지의 내용을 미리 확인할 수 있습니다."]
+            }), " 토글 버튼을 선택해 비활성화하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["수신한 메시지의 내용을 수정하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 4",
-              src: (__webpack_require__(893)/* ["default"] */ .A) + "",
+              alt: "숫자 2",
+              src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -181,20 +163,37 @@ function _createMdxContent(props) {
               src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "수정"
-              })
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "edit",
+              className: "uitext"
             }), " 버튼을 선택하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["수신한 메시지의 상세 항목을 감추려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "숫자 3",
+              src: (__webpack_require__(55522)/* ["default"] */ .A) + "",
+              width: "35",
+              height: "35"
+            }), " 영역은 수신할 메시지의 상세 항목입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "숫자 4",
+              src: (__webpack_require__(893)/* ["default"] */ .A) + "",
+              width: "35",
+              height: "35"
+            }), " 영역은 수신할 메시지의 상세 항목에 대한 내용입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "숫자 5",
               src: (__webpack_require__(79764)/* ["default"] */ .A) + "",
               width: "35",
               height: "35"
-            }), " 토글 버튼을 선택해 비활성화하세요."]
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "미리보기 아이콘",
+              src: (__webpack_require__(4754)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "preview",
+              className: "uitext"
+            }), " 버튼을 선택하면 수신할 메시지의 내용을 미리 확인할 수 있습니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -454,7 +453,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 77059:
+/***/ 59393:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -476,7 +475,8 @@ const frontMatter = {
 	title: '알림 메시지 사용자 정의',
 	description: '프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.',
 	tags: [
-		'쿠버네티스',
+		'Golang',
+		'애플리케이션',
 		'경고 알림',
 		'메트릭스 이벤트',
 		'알림 메시지'
@@ -484,20 +484,24 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/set-notification-message",
+  "id": "golang/set-notification-message",
   "title": "알림 메시지 사용자 정의",
   "description": "프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.",
-  "source": "@site/docs/kubernetes/set-notification-message.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/set-notification-message",
-  "permalink": "/whatap-docs/kubernetes/set-notification-message",
+  "source": "@site/docs/golang/set-notification-message.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/set-notification-message",
+  "permalink": "/whatap-docs/golang/set-notification-message",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/set-notification-message.mdx",
+  "editUrl": "undefined/docs/golang/set-notification-message.mdx",
   "tags": [
     {
-      "label": "쿠버네티스",
-      "permalink": "/whatap-docs/tags/쿠버네티스"
+      "label": "Golang",
+      "permalink": "/whatap-docs/tags/golang"
+    },
+    {
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     },
     {
       "label": "경고 알림",
@@ -518,20 +522,21 @@ const metadata = {
     "title": "알림 메시지 사용자 정의",
     "description": "프로젝트 멤버에게 전달되는 경고 알림 메시지를 수정할 수 있는 사용자 정의 기능을 제공합니다.",
     "tags": [
-      "쿠버네티스",
+      "Golang",
+      "애플리케이션",
       "경고 알림",
       "메트릭스 이벤트",
       "알림 메시지"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "goSidebar",
   "previous": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/kubernetes/metric-warning-notice"
+    "permalink": "/whatap-docs/golang/metric-warning-notice"
   },
   "next": {
     "title": "AI 기반의 히트맵 패턴 경고 알림",
-    "permalink": "/whatap-docs/kubernetes/hitmap-notice"
+    "permalink": "/whatap-docs/golang/hitmap-notice"
   }
 };
 const assets = {
