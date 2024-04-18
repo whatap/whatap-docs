@@ -172,7 +172,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'set-notice',
-	title: '알림 설정하기',
+	title: '경고 알림',
 	description: '이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.',
 	tags: [
 		'쿠버네티스',
@@ -183,7 +183,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "kubernetes/set-notice",
-  "title": "알림 설정하기",
+  "title": "경고 알림",
   "description": "이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.",
   "source": "@site/docs/kubernetes/set-notice.mdx",
   "sourceDirName": "kubernetes",
@@ -209,7 +209,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "set-notice",
-    "title": "알림 설정하기",
+    "title": "경고 알림",
     "description": "이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.",
     "tags": [
       "쿠버네티스",

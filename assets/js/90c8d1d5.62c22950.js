@@ -399,7 +399,7 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "알림 설정하기",
+    "title": "경고 알림",
     "permalink": "/whatap-docs/kubernetes/set-notice"
   },
   "next": {

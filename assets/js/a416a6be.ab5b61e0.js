@@ -76,7 +76,7 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/application-daily-stat"
   },
   "next": {
-    "title": "알림 설정하기",
+    "title": "경고 알림",
     "permalink": "/whatap-docs/kubernetes/set-notice"
   }
 };
