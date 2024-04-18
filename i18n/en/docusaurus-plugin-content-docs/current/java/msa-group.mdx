@@ -1,9 +1,10 @@
 ---
 id: msa-group
 title: MSA business group type
-description: You can set the business unit information to be easily recognized by giving the okind attribute to the Java agent.
+description: You can use the okind JVM option to easily identify automatically registered Java agents for each business unit in the Auto Scale Out environment. This setting that is useful for agent management in the Docker environment, is useful to distinguish the agent's role or the service group.
 tags:
   - Java
+  - Agent
   - MSA
 ---
 
@@ -11,7 +12,7 @@ In an Auto Scale Out environment, it may be difficult to recognize business unit
 
 The following describes the typical Docker environment.
 
-* * *
+---
 
 - Each agent is a very small component of the Micro Service Architecture (MSA).
 
@@ -19,7 +20,7 @@ The following describes the typical Docker environment.
 
 - You cannot predict which PID your application will start on which IP server.
 
-* * *
+---
 
 As the JVM option to identify the business along with the agent name in the Docker environment, the `okind` attribute can be added by adding `whatap.okind`.
 

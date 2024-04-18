@@ -106,7 +106,17 @@ Enter the conditions to send alerts.
 
 - <Cmdname sid="data_time_range" className="uitext" />: Set the time range to view the <b>MXQL</b> real-time data for event conditions. You can use only the fields included for viewing the event data.
 
-  Composite metrics events retrieve metrics in DB for later use. Therefore, first specify the time range to query data. If you select 5 minutes for the data lookup time, the event generation conditions are checked by searching for the data collected for the last 5 minutes. You can set it short when you set any event for recent data, or long when you want to approach statistically for a wide period. For actual usage examples, see [the following](#template).
+  Composite metrics events retrieve metrics in DB for later use. Therefore, first specify the time range to query data. If you select 5 minutes for the data lookup time, the event generation conditions are checked by searching for the data collected for the last 5 minutes. You can set it short when you set any event for recent data, or long when you want to approach statistically for a wide period. 
+
+  <Xclude product="altibase,amazon-cloudwatch,amazon-ecs,azure,cubrid,mongodb,mssql,mysql,ncloud,oracle-cloud,oracle,redis,server,tibero,browser">
+
+  :::note
+
+  For actual usage examples, see [the following](#template).
+
+  :::
+
+  </Xclude>
 
 - <Cmdname sid="condition" className="uitext" />: Enter the fields, calculation rules, and thresholds reflected in MXQL.
 

@@ -273,11 +273,11 @@
   },
   "amazon-ecs-install-en.png": {
     "width": 1200,
-    "height": 1009
+    "height": 705
   },
   "amazon-ecs-install-ja.png": {
     "width": 1200,
-    "height": 1009
+    "height": 713
   },
   "amazon-ecs-install.png": {
     "width": 1200,
@@ -3438,6 +3438,10 @@
   "count-window.png": {
     "width": 1200,
     "height": 873
+  },
+  "cover-background.png": {
+    "width": 524,
+    "height": 770
   },
   "cpu-resource-map-temp.png": {
     "width": 995,
@@ -6771,6 +6775,30 @@
     "width": 1200,
     "height": 629
   },
+  "ipa-agent-status-golang-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-golang-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-golang.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-php-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-php-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "ipa-agent-status-php.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "ipa-datasource-java-en.png": {
     "width": 1200,
     "height": 271
@@ -6782,6 +6810,42 @@
   "ipa-datasource-java.png": {
     "width": 1200,
     "height": 264
+  },
+  "ipa-dependency-module-nodejs-en.png": {
+    "width": 1200,
+    "height": 565
+  },
+  "ipa-dependency-module-nodejs-ja.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "ipa-dependency-module-nodejs.png": {
+    "width": 1200,
+    "height": 567
+  },
+  "ipa-dependency-module-php-en.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "ipa-dependency-module-php-ja.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "ipa-dependency-module-php.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "ipa-dependency-module-python-en.png": {
+    "width": 1200,
+    "height": 599
+  },
+  "ipa-dependency-module-python-ja.png": {
+    "width": 1200,
+    "height": 599
+  },
+  "ipa-dependency-module-python.png": {
+    "width": 1200,
+    "height": 599
   },
   "ipa-env-var-dotnet-en.png": {
     "width": 1200,
@@ -7283,6 +7347,18 @@
     "width": 1681,
     "height": 943
   },
+  "k8s-apiserver-metrics-search-en.png": {
+    "width": 1200,
+    "height": 479
+  },
+  "k8s-apiserver-metrics-search-ja.png": {
+    "width": 1200,
+    "height": 478
+  },
+  "k8s-apiserver-metrics-search.png": {
+    "width": 1200,
+    "height": 482
+  },
   "k8s-app-agent-install-check-en.png": {
     "width": 386,
     "height": 139
@@ -7297,27 +7373,27 @@
   },
   "k8s-app-list-detail-en.png": {
     "width": 1200,
-    "height": 678
+    "height": 656
   },
   "k8s-app-list-detail-ja.png": {
     "width": 1200,
-    "height": 676
+    "height": 656
   },
   "k8s-app-list-detail.png": {
     "width": 1200,
-    "height": 686
+    "height": 663
   },
   "k8s-app-list-en.png": {
     "width": 1200,
-    "height": 437
+    "height": 515
   },
   "k8s-app-list-ja.png": {
     "width": 1200,
-    "height": 437
+    "height": 515
   },
   "k8s-app-list.png": {
     "width": 1200,
-    "height": 438
+    "height": 515
   },
   "k8s-application-accesskey-en.png": {
     "width": 1200,
@@ -7359,6 +7435,10 @@
     "width": 572,
     "height": 139
   },
+  "k8s-check-containerRuntime.png": {
+    "width": 4000,
+    "height": 374
+  },
   "k8s-container-card-block-en.png": {
     "width": 472,
     "height": 360
@@ -7378,6 +7458,18 @@
   "k8s-container-detail-ja.png": {
     "width": 1200,
     "height": 660
+  },
+  "k8s-container-detail-list-selected-en.png": {
+    "width": 572,
+    "height": 97
+  },
+  "k8s-container-detail-list-selected-ja.png": {
+    "width": 576,
+    "height": 101
+  },
+  "k8s-container-detail-list-selected.png": {
+    "width": 573,
+    "height": 99
   },
   "k8s-container-detail.png": {
     "width": 1200,
@@ -7512,16 +7604,16 @@
     "height": 995
   },
   "k8s-container-map-setting-en.png": {
-    "width": 1000,
-    "height": 507
+    "width": 769,
+    "height": 269
   },
   "k8s-container-map-setting-ja.png": {
-    "width": 1000,
-    "height": 442
+    "width": 703,
+    "height": 268
   },
   "k8s-container-map-setting.png": {
-    "width": 461,
-    "height": 183
+    "width": 569,
+    "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
     "width": 1255,
@@ -7538,6 +7630,22 @@
   "k8s-container-map-thresholds.png": {
     "width": 870,
     "height": 576
+  },
+  "k8s-container-map-unified-en.png": {
+    "width": 1200,
+    "height": 713
+  },
+  "k8s-container-map-unified-ja.png": {
+    "width": 1200,
+    "height": 712
+  },
+  "k8s-container-map-unified-whatapproject.png": {
+    "width": 1301,
+    "height": 585
+  },
+  "k8s-container-map-unified.png": {
+    "width": 1200,
+    "height": 711
   },
   "k8s-container-map.png": {
     "width": 1205,
@@ -7610,6 +7718,42 @@
   "k8s-cor-tbv.png": {
     "width": 1221,
     "height": 906
+  },
+  "k8s-deployment-list-cl-en.png": {
+    "width": 421,
+    "height": 477
+  },
+  "k8s-deployment-list-cl-ja.png": {
+    "width": 446,
+    "height": 473
+  },
+  "k8s-deployment-list-cl.png": {
+    "width": 390,
+    "height": 472
+  },
+  "k8s-deployment-list-detail-en.png": {
+    "width": 1200,
+    "height": 662
+  },
+  "k8s-deployment-list-detail-ja.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "k8s-deployment-list-detail.png": {
+    "width": 1200,
+    "height": 661
+  },
+  "k8s-deployment-list-en.png": {
+    "width": 1200,
+    "height": 480
+  },
+  "k8s-deployment-list-ja.png": {
+    "width": 1200,
+    "height": 480
+  },
+  "k8s-deployment-list.png": {
+    "width": 1200,
+    "height": 485
   },
   "k8s-download-yaml-en.png": {
     "width": 465,
@@ -7862,6 +8006,54 @@
   "k8s-pod-list.png": {
     "width": 1200,
     "height": 611
+  },
+  "k8s-pod-startup-analysis-30days-en.png": {
+    "width": 633,
+    "height": 41
+  },
+  "k8s-pod-startup-analysis-30days-ja.png": {
+    "width": 641,
+    "height": 40
+  },
+  "k8s-pod-startup-analysis-30days.png": {
+    "width": 600,
+    "height": 46
+  },
+  "k8s-pod-startup-analysis-details-en.png": {
+    "width": 800,
+    "height": 496
+  },
+  "k8s-pod-startup-analysis-details-ja.png": {
+    "width": 800,
+    "height": 468
+  },
+  "k8s-pod-startup-analysis-details-restart-count-en.png": {
+    "width": 800,
+    "height": 146
+  },
+  "k8s-pod-startup-analysis-details-restart-count-ja.png": {
+    "width": 800,
+    "height": 130
+  },
+  "k8s-pod-startup-analysis-details-restart-count.png": {
+    "width": 800,
+    "height": 131
+  },
+  "k8s-pod-startup-analysis-details.png": {
+    "width": 800,
+    "height": 468
+  },
+  "k8s-pod-startup-analysis-en.png": {
+    "width": 1201,
+    "height": 751
+  },
+  "k8s-pod-startup-analysis-ja.png": {
+    "width": 1201,
+    "height": 751
+  },
+  "k8s-pod-startup-analysis.png": {
+    "width": 1201,
+    "height": 689
   },
   "k8s-resource-cl-sum-ci-en.png": {
     "width": 1200,

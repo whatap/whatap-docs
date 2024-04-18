@@ -546,7 +546,9 @@ const sidebars = {
             id: 'nodejs/install-agent',
           },
           items: [
-            'nodejs/install-agent-docker'
+            'nodejs/install-agent-docker',
+            'nodejs/install-agent-nextjs',
+            'nodejs/install-agent-nuxtjs'
           ]
         },
         {
@@ -2952,13 +2954,13 @@ const sidebars = {
           label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
-          className: 'new',
+          // className: 'new',
           items: [
             {
               type: 'doc',
               label: 'v1.0.8',
               id: 'release-notes/mobile/mobile-app-v1_0_8',
-              className: 'new',
+              // className: 'new',
             },
             {
               type: 'doc',
@@ -2996,14 +2998,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_31',
+                id: 'release-notes/java/java-2_2_32',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_31',
+                  id: 'release-notes/java/java-2_2_32',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_31',
                 'release-notes/java/java-2_2_30',
                 'release-notes/java/java-2_2_29',
                 'release-notes/java/java-2_2_28',
@@ -3012,7 +3015,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_25',
                 'release-notes/java/java-2_2_24',
                 'release-notes/java/java-2_2_23',
-                'release-notes/java/java-2_2_22',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3101,14 +3103,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_6_2',
+                id: 'release-notes/python/python-1_6_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_2',
+                  id: 'release-notes/python/python-1_6_3',
                   className: 'new',
                 },
+                'release-notes/python/python-1_6_2',
                 'release-notes/python/python-1_6_1',
                 'release-notes/python/python-1_6_0',
                 'release-notes/python/python-1_5_9',
@@ -3118,7 +3121,6 @@ const sidebars = {
                 'release-notes/python/python-1_5_5',
                 'release-notes/python/python-1_5_4',
                 'release-notes/python/python-1_5_3',
-                'release-notes/python/python-1_5_2',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3127,17 +3129,19 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_0',
+                id: 'release-notes/dotnet/dotnet-2_2_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_0',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_2_2',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_1',
+                'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-2_1_9',
                 'release-notes/dotnet/dotnet-2_1_8',
                 'release-notes/dotnet/dotnet-2_1_7',
@@ -3145,8 +3149,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_5',
                 'release-notes/dotnet/dotnet-2_1_4',
                 'release-notes/dotnet/dotnet-2_1_3',
-                'release-notes/dotnet/dotnet-2_1_2',
-                'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3209,20 +3211,39 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'Server AIX',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server/server-aix-1_2_7'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server/server-aix-1_2_7',
+                  className: 'new'
+                }
+              ],
+            },
+            {
+              type: 'category',
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_6_0',
+                id: 'release-notes/k8s/k8s-1_6_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_6_0',
+                  id: 'release-notes/k8s/k8s-1_6_1',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_6_0',
                 'release-notes/k8s/k8s-1_5_9',
                 'release-notes/k8s/k8s-1_5_8',
                 'release-notes/k8s/k8s-1_5_7',
@@ -3231,7 +3252,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_5_4', 
                 'release-notes/k8s/k8s-1_5_3', 
                 'release-notes/k8s/k8s-1_5_2', 
-                'release-notes/k8s/k8s-1_5_1',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3240,7 +3260,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_7_0',
@@ -3249,7 +3269,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_7_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_35',
                 'release-notes/db/dbx-1_6_33',
@@ -3301,7 +3321,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_5',
@@ -3310,7 +3330,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_5',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_3_4',
                 'release-notes/browser/browser-v1_3_3',
@@ -3322,6 +3342,24 @@ const sidebars = {
                 'release-notes/browser/browser-v1_2_0',
                 'release-notes/browser/browser-v1_1_4',
                 'release-notes/browser/browser-previous',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'NPM',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/npm/npm-v0_4_5'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/npm/npm-v0_4_5',
+                  className: 'new',
+                }
               ],
             },
             {
@@ -4120,8 +4158,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Open API',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
       link: {
         type: 'doc',
@@ -5420,7 +5458,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {

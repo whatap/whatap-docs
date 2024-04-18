@@ -10,11 +10,11 @@ tags:
 
 import Metricswarningnotice from "../common-items/_metrics-warning-notice.mdx";
 
-<Metricswarningnotice /> 
+<Metricswarningnotice />
 
 import Compositemetricswarningnotice from "../common-items/_composite-metrics-warning-notice.mdx";
 
-<Compositemetricswarningnotice /> 
+<Compositemetricswarningnotice />
 
 import Metricseventmodifydelete from "../common-items/_metrics-event-modify-delete.mdx";
 
@@ -24,7 +24,7 @@ import Metricseventconditionselecttargetguide from "../common-items/_metrics-eve
 
 <Metricseventconditionselecttargetguide />
 
-## Metrics event templates{#k8s-metrics-event-template}
+## Metrics event templates {#template}
 
 :::note 
 
@@ -160,16 +160,16 @@ The alert occurs when the number of Pods that can be allocated to the node is 0.
 
 {/* 
 
-#### ***HPA CPU 사용률 알림***
+#### **_HPA CPU utilization notification_**
 
-현재 실행 중인 Pod의 수가 리소스 내 최대 Pod 수와 같고 CPU 사용률이 70% 이상일 경우 해당 알림이 발생합니다. <Cmdname sid="message" className="uitext" /> 예시는 다음과 같습니다.
+The alert occurs when the number of running Pods is equal to the maximum number of Pods in the resource and the CPU utilization is above 70%. The <Cmdname sid="message" className="uitext" /> example is as follows:
 
-> HPA POD 생성 최대치에 도달하였고 CPU 사용률이 >= 70% 상태 입니다.
+> The maximum HPA POD generation has been reached and the CPU usage is >= 70%.
 
-#### ***HPA 메모리 사용률 알림***
+#### **_HPA memory utilization notification_**
 
-현재 실행 중인 Pod의 수가 리소스의 허용 가능한 최대 Pod 수와 같고 메모리 사용률이 90% 이상일 경우 해당 알림이 발생합니다. 
+This alert occurs when the number of running Pods is equal to the maximum allowable number of Pods for resources and the memory utilization is greater than 90%. 
 
-> HPA POD 생성 최대치에 도달하였고 메모리 사용률이 >= 90% 상태 입니다.
+> The maximum HPA POD creation has been reached and the memory usage is >= 90%.
 
 */}

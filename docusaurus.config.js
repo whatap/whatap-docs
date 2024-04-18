@@ -5,6 +5,7 @@ const {themes} = require('prism-react-renderer');
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 const {rehypeExtendedTable} = require("rehype-extended-table");
+// const rehypeSectionHeadings = require("rehype-section-headings");
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -116,6 +117,7 @@ module.exports = Promise.resolve({
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [ rehypeExtendedTable ],
+          remarkPlugins: [ require("@whatap-docs/remark-sectionize") ],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
@@ -135,6 +137,7 @@ module.exports = Promise.resolve({
           customCss: require.resolve('./src/css/custom.scss'),
         },
         sitemap: {
+          lastmod: 'date',
           changefreq: 'always',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
@@ -633,7 +636,7 @@ module.exports = Promise.resolve({
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
+        additionalLanguages: [ 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
         // 
       },
       zoom: {

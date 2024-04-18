@@ -22,7 +22,8 @@
   --main-osd-color: #296cf2;
   word-break: keep-all;
   --ifm-h1-font-size: 2.5rem;
-  --ifm-h2-font-size: 1.1rem;
+  --ifm-h2-font-size: 2.0rem;
+  --ifm-h3-font-size: 1.5rem;
   --ifm-h4-font-size: 1.25rem;
   --ifm-h5-font-size: 1.0rem;
   --ifm-body-small-size: 0.875rem;
@@ -76,7 +77,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --shortcut-background-color: #36424b;
   --main-osd-color: #3ea6ff;
-  --ifm-h2-font-size: 1.1rem;
+  --ifm-h2-font-size: 2.0rem;
   --ifm-font-color-base: #f0f0f0;
   --ifm-font-color-doc-card: #f0f0f0;
   --shortcut-list-color: #f0f0f0;
@@ -740,13 +741,28 @@ main {
         font-size: inherit;
       }
     }
-    .tabs-container h2 {
+    section > h2 {
+        font-size: var(--ifm-h2-font-size);
+    }
+    section h3 {
+        font-size: var(--ifm-h3-font-size);
+    }
+    section h4 {
+        font-size: var(--ifm-h4-font-size);
+    }
+    section h5 {
+        font-size: var(--ifm-h5-font-size);
+    }
+    section h6 {
+        font-size: var(--ifm-h6-font-size);
+    }
+    .tabs-container h2, .tabs-container section h2 {
       --ifm-h2-font-size: 2rem;
     }
-    .tabs-container h3 {
+    .tabs-container h3, .tabs-container section h3 {
       --ifm-h3-font-size: 1.5rem;
     }
-    .tabs-container h4 {
+    .tabs-container h4, .tabs-container section h4 {
       --ifm-h4-font-size: 1.25rem;
     }
     .tabs-container {
@@ -1453,7 +1469,7 @@ main {
         font-family: monospace;
         background: none;
         border: none;
-        font-size: 120%;
+        font-size: 98%;
         padding: 0;
         color: var(--ifm-font-code-color);
       }
@@ -1964,6 +1980,15 @@ main {
             &:first-of-type {
               width: 20%;
             }
+          }
+        }
+      }
+    }
+    .c4-name {
+      table {
+        tr {
+          td {
+            &:nth-of-type(1) {width: 20%;}
           }
         }
       }
