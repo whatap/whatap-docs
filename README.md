@@ -48,12 +48,29 @@ crowdin download -b main -l en-US
 정규표현식 찾아 바꾸기
 
 - /\\_([a-z]) -> /_$1
+- ^\{/_ -> {/*
+- \{/_ -> {/*
+- _\/\}$ -> */}
+- ^\{\/\\\* -> {/*
+- \\\*\/\} -> */}
+- \{(duration: .+)\} -> \{$1\}
+- <!---->\n\n -> 
+- i18n/en/docusaurus-plugin-content-docs/current/server/set-event-format.mdx
+  - (\$)\{([^>]+?)\} -> $1\{$2\}
+
 
 일반 찾아바꾸기
 
 - : \_ -> : _
 - \[ -> [
 - \: -> :
+- ~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&*()_+=-[]`
+- <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
+- ${Tag} -> &#36;&#123;Tag&#125;
+- ${Field} -> &#36;&#123;Field&#125;
+- {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}
+- e.g. _kubernetes_container_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes_container_images\_\{pcode\}\_\{timestamp\}.csv_
+- CSV file name, _kubernetes_node_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes_node_list\_\{pcode\}\_\{timestamp\}.csv_
 
 < > -> 부호 앞에 &lt;, &gt; 적용할 것
 
