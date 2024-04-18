@@ -155,12 +155,12 @@ const toc = [{
   "id": "sitemap",
   "level": 3
 }, {
-  "value": "튜토리얼 확인하기",
-  "id": "튜토리얼-확인하기",
-  "level": 3
-}, {
   "value": "사이드 메뉴 크기 조절하기",
   "id": "adjustsizesidebar",
+  "level": 3
+}, {
+  "value": "프로젝트 목록 크기 조절하기",
+  "id": "adjustsizetablelist",
   "level": 3
 }, {
   "value": "지원 메뉴",
@@ -1231,17 +1231,6 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "튜토리얼-확인하기",
-        children: "튜토리얼 확인하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["화면 상에서 사이드 메뉴 사용에 대한 자세한 안내를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "BTN07397",
-          className: "uitext"
-        }), " 버튼을 선택하세요."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "adjustsizesidebar",
         children: "사이드 메뉴 크기 조절하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -1262,7 +1251,7 @@ function _createMdxContent(props) {
             }), " 버튼을 선택하세요."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
             img: "ui-home/main-ui-fold-extend-sidemenu.png",
-            desc: ""
+            desc: "사이드 메뉴"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -1272,6 +1261,17 @@ function _createMdxContent(props) {
             desc: "사이드 메뉴"
           }), "\n"]
         }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "adjustsizetablelist",
+        children: "프로젝트 목록 크기 조절하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "ui-home/main-ui-adjust-size-project-list.png",
+        desc: "프로젝트 목록"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "프로젝트 목록에서 프로젝트의 이름이 너무 길어 구분되지 않을 때 프로젝트 목록의 너비를 조절해 기존보다 넓게 펼쳐볼 수 있습니다. 프로젝트 목록의 가장 오른쪽에 마우스를 오버하고 드래그하세요. 원하는 크기로 조절할 수 있습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
