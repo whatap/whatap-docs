@@ -96,7 +96,7 @@ Restart-Service "Whatap Infra"
 stats_enabled = false ## 로그 발생량 통계 별도 데이터로 전송 여부
 stats_category = "serverlog_stats" ## 로그 발생량 통계 카테고리
 
-* `stats_enabled`: 별도의 로그 수집 통계 데이터 발생 여부를 설정합니다. 기본값은 `false`입니다. 값을 `true`로 설정하면 `stats_category`에서 설정한 카테고리로 통계 데이터가 발생합니다.
-* `stats_category`: 별도의 로그 수집 통계 데이터를 저장할 메트릭스 카테고리를 설정합니다. 통계 데이터 필드는 다음과 같습니다.
+- `stats_enabled`: Set whether or not to generate statistical data while collecting extra logs. The default value is `false`. If set to `true`, statistical data is generated to the category set in `stats_category`.
+- `stats_category`: Set the metrics category to store extra log collection statistical data. Statistical data fields are as follows:
 
 */}
