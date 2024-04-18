@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15241],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84363],{
 
 /***/ 6526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1642,7 +1642,7 @@ function _createMdxContent(props) {
               src: (__webpack_require__(3277)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
-            }), " : 해당 위젯 항목의 데이터를 에이전트별로 구분해 조회할 수 있는 모달 창이 나타납니다."]
+            }), " : 해당 위젯 항목의 데이터를 에이전트별로 구분해 조회할 수 있는 상세 창이 나타납니다."]
           }), "\n"]
         }), "\n"]
       })
@@ -2080,7 +2080,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 62576:
+/***/ 99151:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2110,7 +2110,7 @@ const frontMatter = {
 	title: '애플리케이션 대시보드',
 	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	tags: [
-		'Node.js',
+		'Go',
 		'대시보드',
 		'애플리케이션',
 		'애플리케이션 모니터링'
@@ -2118,20 +2118,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/dashboard",
+  "id": "golang/dashboard",
   "title": "애플리케이션 대시보드",
   "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/nodejs/dashboard.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/dashboard",
-  "permalink": "/whatap-docs/nodejs/dashboard",
+  "source": "@site/docs/golang/dashboard.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/dashboard",
+  "permalink": "/whatap-docs/golang/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/dashboard.mdx",
+  "editUrl": "undefined/docs/golang/dashboard.mdx",
   "tags": [
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     },
     {
       "label": "대시보드",
@@ -2152,20 +2152,20 @@ const metadata = {
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "tags": [
-      "Node.js",
+      "Go",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "goSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/nodejs/dashboard-intro"
+    "permalink": "/whatap-docs/golang/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/nodejs/dashboard-transactionmap"
+    "permalink": "/whatap-docs/golang/dashboard-transactionmap"
   }
 };
 const assets = {
