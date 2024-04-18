@@ -261,14 +261,16 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "security.conf(또는 paramkey.txt)"
-            }), ": SQL 변수, HTTP 쿼리를 조회하거나 Thread 중지 기능을 이용할 때 입력하는 보안키를 저장합니다."]
+              children: "security.conf"
+            }), " (또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "paramkey.txt"
+            }), "): SQL 변수, HTTP 쿼리를 조회하거나 Thread 중지 기능을 이용할 때 입력하는 보안키를 저장합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: "server.js"
-            }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            }), " (파일명 예시): ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "Next.js"
             }), " 앱 인스턴스를 위한 서버 설정 파일입니다."]
           }), "\n"]
@@ -307,7 +309,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
           metastring: "title=\"server.js\"",
-          children: "const {createServer} = require('http')\nconst {parse} = require('url')\nconst next = require('next')\nconst axios = require('axios')\n"
+          children: "const {createServer} = require('http')\nconst {parse} = require('url')\nconst next = require('next')\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -353,7 +355,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
           metastring: "title=\"server.js\"",
-          children: "var WhatapAgent = require('whatap').NodeAgent;\n\nconst {createServer} = require('http')\nconst {parse} = require('url')\nconst next = require('next')\nconst axios = require('axios')\n\nconst dev = process.env.NODE_ENV !== 'production'\nconst hostname = 'localhost'\nconst port = 3000\n\nconst app = next({dev, hostname, port})\nconst handle = app.getRequestHandler()\n\napp.prepare().then(() => {\n    createServer(async (req, res) => {\n        try {\n            const parsedUrl = parse(req.url, true)\n            const {pathname, query} = parsedUrl\n\n            /**\n            * Render the page.\n            */\n            await handle(req, res, parsedUrl);\n        } catch (err) {\n            console.error('Error occurred handling', req.url, err)\n            res.statusCode = 500\n            res.end('internal server error')\n        }\n    })\n    .once('error', (err) => {\n        console.error(err)\n        process.exit(1)\n    })\n    .listen(port, () => {\n        console.log(`> Ready on http://${hostname}:${port}`)\n    })\n})\n"
+          children: "var WhatapAgent = require('whatap').NodeAgent;\n\nconst {createServer} = require('http')\nconst {parse} = require('url')\nconst next = require('next')\n\nconst dev = process.env.NODE_ENV !== 'production'\nconst hostname = 'localhost'\nconst port = 3000\n\nconst app = next({dev, hostname, port})\nconst handle = app.getRequestHandler()\n\napp.prepare().then(() => {\n    createServer(async (req, res) => {\n        try {\n            const parsedUrl = parse(req.url, true)\n            const {pathname, query} = parsedUrl\n\n            /**\n            * Render the page.\n            */\n            await handle(req, res, parsedUrl);\n        } catch (err) {\n            console.error('Error occurred handling', req.url, err)\n            res.statusCode = 500\n            res.end('internal server error')\n        }\n    })\n    .once('error', (err) => {\n        console.error(err)\n        process.exit(1)\n    })\n    .listen(port, () => {\n        console.log(`> Ready on http://${hostname}:${port}`)\n    })\n})\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
