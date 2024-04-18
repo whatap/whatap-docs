@@ -6,6 +6,226 @@ pagination_next: release-notes/service/service-2_2_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.3.14
+
+April 9, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Feature</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code>, displayed the Event tab of the existing Event Settings menu, and added the <Cmdname sid="BTN07761" className="uitext" /> and <Cmdname sid="BTN07762" className="uitext" /> functions.
+
+  :::note
+
+  This feature applies to all products except `Cloud` and `URL` products.
+
+  :::
+
+- <Status>Feature</Status> Added the function to adjust the width of the project list.
+
+- <Status>Fixed</Status> Fixed the issue where sorting is misaligned when the group/project name is too long in the project list of the side menu.
+
+</div>
+
+## Service 2.3.13
+
+April 8, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Fixed</Status> Fixed the issue where the scroll bar does not appear if the number of agents selected in <Cmdname sid="side_agentsConfiguration" className="uitext" /> is relatively high.
+
+</div>
+
+## Service 2.3.12
+
+April 5, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dailyAppStat" className="uitext" />, fixed the issue where data can be searched again by selecting the search button before search is not completed.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where data is maintained even if the query period is changed in the <Cmdname sid="today_tps" className="uitext" /> and <Cmdname sid="today_user" className="uitext" /> widgets.
+
+</div>
+
+## Service 2.3.11
+
+April 4, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, modified to view all the data for the data in the <Cmdname sid="today_tps" className="uitext" /> and <Cmdname sid="today_user" className="uitext" /> widgets regardless of agent filtering.</p>
+
+</div>
+
+## Service 2.3.10
+
+April 3, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, fixed the issue where the query text does not appear when the <Cmdname sid="TTL06224" className="uitext" /> pop-up window is opened.</p>
+
+</div>
+
+## Service 2.3.9
+
+April 3, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Fixed the issue where the dashboard can be modified when the page is refreshed with the read-only dashboard selected in <Cmdname sid="side_integratedFlexboard" className="uitext" />.</p>
+
+---
+
+### `Appication`
+
+<p><Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />, fixed the issue where the error count is not matched when using the <Cmdname sid="TTL07712" className="uitext" /> feature.</p>
+
+</div>
+
+## Service 2.3.8
+
+April 3, 2024
+
+<div class='indentTab'>
+
+### `Browser`
+
+#### <Cmdname sid="side_dashboard" />
+
+- <Status>Fixed</Status> Modified the query ranges of data for units of 5 seconds, 5 minutes, and 1 hour on the dashboard.
+
+- <Status>Fixed</Status> Improved the TopN chart query method.
+
+- <Status>Fixed</Status> Limited the table widgets to a maximum of 100 views.
+
+</div>
+
+## Service 2.3.7
+
+April 1, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />, fixed the 414 error that occurs when the <Cmdname sid="TTL07712" className="uitext" /> column is selected.</p>
+
+### `Server`
+
+<p><Status>Changed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />, modified to use the <Cmdname sid="groupby" className="uitext" /> button on the upper right of the screen by the members with the <b>Alert settings</b> role.</p>
+
+:::note
+
+The members with the project <b>Edit</b> or <b>Alert settings</b> role can use the process grouping feature in <Cmdname sid="side_serverDetail" className="uitext" />.
+
+:::
+
+---
+
+### `Kubernetes`
+
+<p><Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="node_detail" className="uitext" />, changed the values for <Cmdname sid="cpu_cores" className="uitext" /> and <Cmdname sid="memory_total" className="uitext" /> metrics to the values for <code>CapacityCpu</code> and <code>CapacityMemory</code> fields among the <code>kube_node</code> metrics data.</p>
+
+</div>
+
+## Service 2.3.6
+
+March 29, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> Fixed the issue where presets are not overwritten after saving in <Cmdname sid="side_appDashboard" className="uitext" />.</p>
+
+</div>
+
+## Service 2.3.5
+
+March 29, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> If a SQL step is selected in the <Cmdname sid="TTL06126" className="uitext" /> tab after clicking a node in the <Cmdname sid="TTL06377" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the <Cmdname sid="parameter_binding" className="uitext" /> feature is not exposed intermittently.
+
+- <Status>Fixed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_moduleDependency" className="uitext" />
+
+  - With the Node.js and Python projects, added the <Cmdname sid="side_moduleDependency" className="uitext" /> menu.
+
+  - With the Go project, deleted the <Cmdname sid="side_moduleDependency" className="uitext" /> menu. 
+
+- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" />, fixed the bug where whiteout occurs when the detailed view pop-up window for the <Cmdname sid="TTL07712" className="uitext" /> column appears by selecting an agent.
+
+---
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, added the composite metrics event templates as follows:</p>
+
+- <UI>The kube-apiserver latency over 10 second</UI>
+
+- <UI>The kube-apiserver response increase/decrease rate for error codes</UI>
+
+</div>
+
+## Service 2.3.4
+
+March 28, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<p><Status>Fixed</Status> If only the access key is issued without installing the agent after creatintg a project, fixed the whiteout phenomenon that occurs in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="kubernetesAgentList" className="uitext" />.</p>
+
+</div>
+
+## Service 2.3.3
+
+March 28, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where filtering is not applied when the metrics type filter has been applied to the group widget and the <Cmdname sid="apply_group_widget_filter" className="uitext" /> option has been selected in a sub widget.</p>
+
+</div>
+
+## Service 2.3.2
+
+March 28, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> In the <Cmdname sid="TTL06224" className="uitext" /> window that appears by selecting the <UI>query</UI> item in the <Cmdname sid="active_sessions" className="uitext" /> table, fixed the bug where the parameter value is not entered correctly when the <Cmdname sid="side_dbSqlStat" className="uitext" /> menu appears by selecting <Cmdname sid="BTN06225" className="uitext" />.</p>
+
+---
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, added the guide for agent installation using the Helm.</p>
+
+</div>
+
 ## Service 2.3.1
 
 March 27, 2024
@@ -90,7 +310,7 @@ It provides a guide to the new features released in Service 2.3.0.
 
 :::
 
-* * *
+---
 
 ### `Common`
 
@@ -146,7 +366,7 @@ It provides a guide to the new features released in Service 2.3.0.
 
 - <Status>Fixed</Status> Deleted the error message that appears when a user whose payment method is registered as Stripe modifies the <Cmdname sid="bill_recipient_setting" className="uitext" /> item.
 
-* * *
+---
 
 ### `Application`
 
@@ -192,7 +412,7 @@ It provides a guide to the new features released in Service 2.3.0.
 
 <p><Status>Fixed</Status> Modified the instructions (Japanese) on the project installation screen of the Node.js product.</p>
 
-* * *
+---
 
 ### `Server`
 
@@ -204,7 +424,7 @@ It provides a guide to the new features released in Service 2.3.0.
 
 - <Status>Fixed</Status> When registering the history in the <Cmdname sid="sms_alert_status" className="uitext" /> list, modified to display the registration completion tag instead of the history (number of cases).
 
-* * *
+---
 
 ### `Kubernetes`
 
@@ -256,7 +476,7 @@ It provides a guide to the new features released in Service 2.3.0.
 
 - <Status>Fixed</Status> In <Cmdname sid="side_integratedContainerMap" className="uitext" />, when using the <Cmdname sid="groupby" className="uitext" /> option, fixed the issue where the number of objects is intermittently hidden.
 
-* * *
+---
 
 ### `Database`
 
@@ -319,7 +539,7 @@ It provides a guide to the new features released in Service 2.3.0.
 
 <p><Status>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, reorganized the UI design.</p>
 
-* * *
+---
 
 ### `Browser`
 

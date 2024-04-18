@@ -1606,5 +1606,9 @@
   "sidebar.kubeSidebar.doc.설정하기": {
     "message": "Configuration",
     "description": "The label for the doc item 설정하기 in sidebar kubeSidebar, linking to the doc kubernetes/set-agent"
+  },
+  "sidebar.releaseSidebar.category.Server AIX": {
+    "message": "Server AIX",
+    "description": "The label for category Server AIX in sidebar releaseSidebar"
   }
 }

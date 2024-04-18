@@ -16,7 +16,7 @@ The WhaTap Kubernetes monitoring service collects and stores the logs that occur
 
 {/* 
 
-실시간으로 발생하는 로그는 컨테이너 ***Stdout/Stderr*** 탭의 최근 로그 메시지와 ***로그 검색*** 탭을 통해 조회할 수 있습니다. >
+실시간으로 발생하는 로그는 컨테이너 **_Stdout/Stderr_** 탭의 최근 로그 메시지와 **_로그 검색_** 탭을 통해 조회할 수 있습니다. >
 
 */}
 
@@ -118,30 +118,29 @@ The latest version of the WhaTap Kubernetes agent can be checked in [the followi
 
 {/* >
 
-* 와탭 모니터링 서비스 페이지에서 ***관리*** > ***에이전트 설정***을 통해 `logsink_enabled=true` 설정 추가
-* 클러스터 프로젝트 전체 노드를 대상으로 설정을 추가하려면 ***프로젝트 디폴트*** > ***노드*** 대상으로 설정 추가
-* 일부 노드를 대상으로 설정을 추가하려면 단일 또는 복수 노드 선택 후 설정 추가
+- Add the `logsink_enabled=true` setting in **_Management_** > **_Agent CONFIG._** on the WhaTap monitoring service page.
+- To add the settings for all nodes in the cluster project, go to **_Project Default_** > **_Nodes_**.
+- To add settings for some nodes, first select one or more nodes.
 
-***관리*** > ***에이전트 설정*** > 노드 에이전트 선택 > ***+ 옵션 추가*** > 모든 에이전트에 적용할 옵션 선택 > 적용 대상 노드 선택 
+**_Management_** > **_Agent CONFIG._** > Select Node Agent > **_+ Add Option_** > Select options for all agents > Select node to apply 
 
-![에이전트 설정](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
+![Agent configuration](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
 
 :::note
 
-와탭 로그 모니터링 서비스에 대한 자세한 내용은 [다음 문서](../log/introduction)를 참조하세요. 
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
 
 :::
 
-### 로그 검색 이동
+### Go to Log Search
 
-![로그 검색 이동 sc](/img/k8s-log-search-to-log-search.png)
+![Log search moving sc](/img/k8s-log-search-to-log-search.png)
 
-***로그*** 탭 오른쪽에 ***로그 검색*** 버튼을 클릭하면 필터 기능 등을 통해 상세 조회할 수 있는 ***로그*** > ***로그 검색*** 메뉴로 이동합니다. 
-
+Click **_Log search_** on the right of the **_Log_** tab. **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
 
 :::note
 
-와탭 로그 모니터링 서비스에 대한 자세한 내용은 [다음 문서](../log/introduction)를 참조하세요. 
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
 
 :::
 

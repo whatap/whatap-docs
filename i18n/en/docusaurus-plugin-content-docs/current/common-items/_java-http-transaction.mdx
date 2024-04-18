@@ -62,3 +62,11 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
   # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
   ignore_http_method=OPTIONS,HEAD
   ```
+
+- **trace_tx_name_with_method_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Statistical data can be collected using URL+method where the URL has been changed. You can check with URL+method in <Cmdname sid="side_statistics" className="uitext" /> or <Cmdname sid="side_txSearch" className="uitext" />.
+
+  > e.g. /api/user+GET, /api/user+POST

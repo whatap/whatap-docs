@@ -122,6 +122,12 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
   :::
 
+- **trace_concern_error_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It sets whether or not to collect detailed traces with errors, regardless of the `trace_basetime` or `profile_basetime` option.
+
 ## Exceptional handling {#exception}
 
 - **biz_exceptions** <span class='type'>String</span>
@@ -234,3 +240,9 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   Ignore HTTP status error code/Exclude error statistics
 
   :::
+
+- **trace_sql_exception_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It sets whether or not to trace SqlException when it occurs in the JDBC driver. By setting the option value to `false`, you can handle `biz_exceptions` as custom exceptional handling.

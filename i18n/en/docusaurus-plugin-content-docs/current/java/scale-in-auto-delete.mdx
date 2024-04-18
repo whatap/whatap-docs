@@ -1,9 +1,10 @@
 ---
 id: scale-in-auto-delete
 title: Automatic deletion of the agent in Scale In
-description: It provides the method how to automatically delete an agent when a scale in occurs in the Auto Scale environment.
+description: The following explains how to automatically delete the Java agent when an automatically scaled system performs Scale In in the Auto Scale environment. The agent sends a SILENT_SHUTDOWN event to the server by creating a specific file, which automatically removes the agent from the list. This process facilitates agent management when the system automatically scales down, and manages resources efficiently without additional intervention.
 tags:
   - Java
+  - Agent
 ---
 
 If an agent name is automatically assigned in the Auto Scale environment, administrator's intervention is not required when a scale out occurs. The system scales up automatically. If a scale in occurs, the system must recognize it as a graceful shutdown.

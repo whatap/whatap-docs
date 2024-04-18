@@ -1,0 +1,62 @@
+---
+id: java-2_2_31
+title: Java Agent v2.2.31
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_30
+displayed_sidebar: releaseSidebar
+---
+
+April 3, 2024
+
+- <Status>Feature</Status> Traced kafka-batch in spring-boot-2.7.x.
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-2.7
+  ```
+
+- <Status>Feature</Status> Added the option to set whether or not to trace when SqlException occurs in the JDBC driver.
+
+  By setting the option value to `false`, you can perform `biz_exceptions` as custom exception handling.
+
+  ```ini title="whatap.conf"
+  # default: true
+  trace_sql_exception_enabled=true
+  ```
+
+- <Status>Feature</Status> Added the URL + HTTP method setting option.
+
+  - e.g. /api/user+GET, /api/user+POST
+  - In <Cmdname sid="side_statistics" className="uitext" /> or <Cmdname sid="side_txSearch" className="uitext" />, you can check with URL+method.
+  - It collects data with URL+method with URL changed in the statistical data.
+
+  ```ini title="whatap.conf"
+  # default: false
+  trace_tx_name_with_method_enabled=false
+  ```
+
+- <Status>Feature</Status> Update is performed with oshi-core-6.1.6.
+
+- <Status>Feature</Status> Added the feature to collect the netstat metric in the Java agent and added the Maximum Transmission Unit (MTU) metric.
+
+  ```ini title="whatap.conf"
+  # default: false
+  oshi_enabled=false
+
+  # default: false
+  oshi_netstat_enabled=false
+  ```
+
+- <Status>Changed</Status> Modified to collect detailed traces with errors by default regardless of the <code>trace_basetime</code> or <code>profile_basetime</code> option.
+
+  ```ini title="whatap.conf"
+  # default: false -> true
+  trace_concern_error_enabled=true
+  ```
+
+- <Status>Changed</Status> Updated the oshi release directory from lib4 to lib5.
+
+- <Status>Fixed</Status> Fixed the agent log typo when applying the oshi and sigar libraries.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.31" />

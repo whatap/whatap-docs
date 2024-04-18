@@ -4,7 +4,8 @@ title: Agent name identification
 description: To identify monitoring targets, the method how to set a unique identifier for the application server is provided. It is required to identify application servers among the monitoring target systems. You can see automatic naming based on the data such as server type and IP. Otherwise, you can manually set the agent name through the whatap.conf file or JVM options.
 tags:
   - Java
-  - Agent CONFIG.
+  - Application
+  - Agent
   - whatap.conf
 ---
 
@@ -41,21 +42,35 @@ Available name variables are as follows:
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | String   | The entered string is used.                                                                                                                                                                         |
 | `{type}` | The container type is automatically identified and assigned. <br/> Targets to be identified automatically: JAVA, TOMCAT, JBOSS, RESIN, SPRINGBOOT, JETTY, JEUS, WEBLOGIC, WEBSPHERE, UNDERTOW, PLAY |
-| `{ip0}`  | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)                                                                                                                        |
-| `{ip1}`  | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13)                                                                                                                       |
-| `{ip2}`  | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)                                                                                                                        |
-| `{ip3}`  | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**)                                                                                                                       |
-| `{pid}`  | The process ID (PID) of Java is used.                                                                                                                                                               |
+| `{ip0}`  | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)                                                                                                     |
+| `{ip1}`  | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13)                                                                                                    |
+| `{ip2}`  | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)                                                                                                     |
+| `{ip3}`  | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**)                                                                                                    |
+| `{pid}`  | The process ID (PID) of Java is used.                                                                                                                                            |
 | `{port}` | The port that the application listens to is used.                                                                                                                                                   |
 
 ## Setting the agent name
 
 Instead of the name that has been automatically assigned, you can enter the name by adding the JVM option into the startup script.
 
-| Priority | Option           | Setting location   | Description                                                                         |
-| -------- | ---------------- | ------------------ | ----------------------------------------------------------------------------------- |
-| 1        | \-Dwhatap.name   | JVM Options        | Set the agent name as a pattern. <br/>default: `{type}-{ip2}-{ip3}-{port}`          |
-| 2        | \-Dwhatap.oname  | JVM Options        | Set the agent name to a fixed value. <br/>`-Dwhatap.oname=front-{ip3}-{port}`       |
+<div class="c4-name">
+
+| Option           | Setting location   | Description                                                                                                                                                             |
+| ---------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-Dwhatap.name`  | JVM Options        | Set the agent name as a pattern. <br/>default: `{type}-{ip2}-{ip3}-{port}`                                                                                              |
+| `-Dwhatap.oname` | JVM Options        | Set the agent name to a fixed value. If the <br/>`-Dwhatap.oname=java-sales-01` <br/> option is not set, the pattern set in the `-Dwhatap.name` option is applied.<br/> |
+
+</div>
+
+:::tip
+
+In the environment where the IP address is 10.11.12.13 and the port number is 8000,
+
+- **In case the -Dwhatap.oname option** is not applied: **whatap.oname** defaults to `JAVA-12-13-8000` according to the pattern set in `-Dwhatap.name`.
+
+- **In case the -Dwhatap.oname option is applied**: The `-Dwhatap.name` option is ignored and the agent name is applied as the value set in the `-Dwhatap.oname` option.
+
+:::
 
 :::note
 
@@ -68,4 +83,4 @@ The following options can be applied as an agent name to _whatap.conf_.
 
 import Javaagentname from "../common-items/_java-agent-name.mdx";
 
-<Javaagentname /> 
+<Javaagentname />
