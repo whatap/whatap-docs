@@ -144,14 +144,28 @@ WhaTap Kubernetesエージェントのインストール時、_helm_チャート
        port: "6600"
    ```
 
-4. 次のコマンドを実行して、エージェントアプリケーションをインストールしてください。 
+4. 次のようにエージェントアプリケーションをインストールしてください。 
 
-   ```bash
-   kubectl delete ns whatap-monitoring
-   kubectl delete clusterrole whatap
-   kubectl delete clusterrolebinding whatap
-   helm install whatap-kube-agent whatap/kube -f values.yaml
-   ```
+   - エージェントを**初めて**インストールするユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールしてください。 
+
+     ```bash
+     helm install whatap-kube-agent whatap/kube -f values.yaml
+     ```
+
+   - **既存**WhaTap Kubernetesエージェントのユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールしてください。 
+
+     ```bash
+     kubectl delete ns whatap-monitoring
+     kubectl delete clusterrole whatap
+     kubectl delete clusterrolebinding whatap
+     helm install whatap-kube-agent whatap/kube -f values.yaml
+     ```
+
+   :::note 
+
+   既存_yaml_ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。既存のKubernetesエージェントを削除した後、_heml_チャートによるインストールが可能です。 
+
+   :::
 
 ### _values.yaml_主要設定項目
 
@@ -159,7 +173,7 @@ WhaTap Kubernetesエージェントの設定を修正するには、デフォル
 
 <div class='k8s-values-yaml-table'>
 
-| キー                                                                   | タイプ     | デフォルト値                   | 説明                                                         |
+| キー                                                                   | タイプ     | 既定値                   | 説明                                                         |
 | -------------------------------------------------------------------- | ------- | ------------------------ | ---------------------------------------------------------- |
 | `whatap.license`                                                     | String  | `# <license-key>`        | Whatapライセンスキー                                              |
 | `whatap.host`                                                        | String  | `# <whatap-server-host>` | Whatapサーバーのホストアドレス                                         |
@@ -239,7 +253,7 @@ Helmチャート基準**インストール問題の解決**についての案内
 
 :::note
 
-**マスターエージェントが使用するリソース量**は、**ユーザー環境のノード数**にある程度**比例**します。つまり、クラスタ内にノード数が多い場合、デフォルト値に設定されたメモリLimit(350MB)以上の資源を使ってOOM(Out Of Memory)が発生することがあります。マスターエージェントに割り当てられたメモリLimit数値は、エージェントのインストール_YAML_ファイルから変更できます。
+**マスターエージェントが使用するリソース量**は、**ユーザー環境のノード数**にある程度**比例**します。つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上の資源を使ってOOM(Out Of Memory)が発生することがあります。マスターエージェントに割り当てられたメモリLimit数値は、エージェントのインストール_YAML_ファイルから変更できます。
 
 :::
 
