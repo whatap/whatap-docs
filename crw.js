@@ -34,6 +34,12 @@ axios.get(url)
                 const prevH3 = $(h3Element).prevAll('h3').first(); // <h3>의 이전 형제 <h3>
                 const prevUl = $(h3Element).prevAll('ul').first(); // <h3> 이전의 <ul>
                 const prevP = $(h3Element).prevAll('p').first(); // <h3> 이전의 <p>
+                
+                const nextUl = $(h3Element).next('ul').first(); // <h3> 다음 <ul>
+                const nextP = $(h3Element).next('p').first(); // <h3> 다음 <p>
+
+                const featureInP2 = nextP.find('code.Feature');
+                const featureInUl2 = nextUl.find('code.Feature');
 
                 // <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
                 const featureInP = prevP.find('code.Feature');
@@ -63,8 +69,31 @@ axios.get(url)
                         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
                     }
-                } else {
-                    // <code class="Feature">가 없거나 <h3>가 하나일 경우 pass
+                }
+                else if ((prevH3.length === 0)&&(featureInP2.length > 0 || featureInUl2.length > 0)) {
+                  // <h3>가 하나인 경우 처리
+                  const version = $(element).find('h2').text().trim();
+                  const date = $(element).find('h2 + p').text().trim();
+                  const productName = $(h3Element).text().trim();
+
+                  // 중복을 제거한 <code class="Feature"> 내용 가져오기
+                  const features = new Set();
+                  featureInP2.each((idx, code) => {
+                      features.add($(code).parent().html().trim());
+                  });
+                  featureInUl2.each((idx, code) => {
+                      features.add($(code).parent().html().trim());
+                  });
+
+                  // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                  if (features.size > 0) {
+                    mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                    mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+                    mdxContent += '\n\n';
+                }
+              }                 
+                else {
+                    // <code class="Feature">가 없을 경우 pass
                     return;
                 }
             });
