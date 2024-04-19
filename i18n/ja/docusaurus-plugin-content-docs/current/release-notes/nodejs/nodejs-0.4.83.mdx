@@ -12,25 +12,25 @@ displayed_sidebar: releaseSidebar
 
   - **trace_sql_error_stack** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+    既定値`false`
 
     SQLエラー内容をスタックとして保存(MySQL、MariaDB、PostgreSQL、SQL Server)します。
 
   - **trace_sql_error_depth** <span class='type'>Int</span>
 
-    デフォルト値`50`
+    既定値`50`
 
     `trace_sql_error_stack`オプションを適用する場合に保存されるエラーのライン数を設定します。
 
   - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+    既定値 `true`
 
     プロファイルにエラー関連情報を表示するステップを追加できます。
 
   - **ignore_http_method** <span class='type'>String</span>
 
-    デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+    既定値 `PATCH,OPTIONS,HEAD,TRACE`
 
     設定されたHTTPメソッド(Method)でリクエストされたトランザクション情報は収集しません。 複数を設定するにはコンマ (,)で区切ります。
 
@@ -41,7 +41,7 @@ displayed_sidebar: releaseSidebar
 
   - **status_ignore** <span class='type'>String</span>
 
-    デフォルト値`Empty`
+    既定値`Empty`
 
     無視しようとするHTTPステータスコードを設定できます。
 
@@ -52,7 +52,7 @@ displayed_sidebar: releaseSidebar
 
   - **status_ignore_set** <span class='type'>String</span>
 
-    デフォルト値`Empty`
+    既定値`Empty`
 
     HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
 
@@ -63,7 +63,7 @@ displayed_sidebar: releaseSidebar
 
   - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+    既定値 `true`
 
     HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
 

@@ -24,19 +24,19 @@ toc_max_heading_level: 3
 
 <p><Status>Change</Status>サービス全体の削除アイコン(<img src='/img/ico-trash-new.svg' alt='icon'/>)変更、チャンネル問い合わせアイコン(<img src='/img/ic-message-filled.svg' alt='icon'/>)変更</p>
 
-* * *
+---
 
 ### `Container`
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューでグループを選択した後<UI>ログ</UI> > <UI>ログ検索</UI>機能の使用時にApp関連カテゴリのログが表示されないバグを追加で修正<a href='#1.101.22'>関連：Preview 1.101.22</a></p>
 
-* * *
+---
 
 ### `Browser`
 
 <p><Status>Feature</Status> <UI>アラート通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューからメトリクス、複合メトリクス通知テンプレートを追加</p>
 
-* * *
+---
 
 ### `CloudWatch`, `AZURE`, `OCI`, `NCP`
 
@@ -44,7 +44,7 @@ toc_max_heading_level: 3
 
 #### CloudWatch
 
-<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント設定</UI>メニューの認証有効期間のデフォルト値を<b>1時間</b>に修正</p>
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント設定</UI>メニューの認証有効期間の既定値を<b>1時間</b>に修正</p>
 
 </div>
 
@@ -58,15 +58,15 @@ toc_max_heading_level: 3
 
 - <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで割引額がない場合、利用金額が表示されないバグを修正
 
-- <Status>Fixed</Status>プロファイルアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(戻るボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されているため、前のページに移動しない問題を修正
+- <Status>Fixed</Status>プロフィールアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(戻るボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されているため、前のページに移動しない不具合を修正
 
-* * *
+---
 
 ### `Application`
 
 <p><Status>Change</Status> <UI>ダッシュボード</UI> > <UI>トランザクションマップ</UI>メニューで<UI>TXトレース</UI>テーブルのカラムとして<UI>SQL Count</UI>、<UI>Login ID</UI>、<UI>SQL Fetch Count</UI>項目を追加</p>
 
-* * *
+---
 
 ### `Log`
 
@@ -88,7 +88,7 @@ toc_max_heading_level: 3
 
 <p><Status>Change</Status> <UI>ログ</UI> > <UI>ログ設定</UI>メニューで同じ意味で使用される用語を統一</p>
 
-* * *
+---
 
 ### `Browser`
 
@@ -146,7 +146,7 @@ toc_max_heading_level: 3
 
 - <Status>Change</Status> <b>Log RPS Board</b>ダッシュボードテンプレートから<UI>Log RPS Trend</UI>ウィジェットメトリクスの追加と名前の整理
 
-* * *
+---
 
 ### `Database`
 
@@ -190,7 +190,7 @@ toc_max_heading_level: 3
 
 <p><Status>Change</Status> <UI>利用履歴</UI> > <UI>使用量</UI>メニューから利用時間に応じて平均使用量の情報を提供するよう修正</p>
 
-* * *
+---
 
 ### `Container`
 
@@ -210,7 +210,7 @@ toc_max_heading_level: 3
 
 - <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> メニューからタブ移動時に選択した組織のパラメータが維持されない問題を修正
 
-* * *
+---
 
 ### `Database`
 
@@ -222,7 +222,7 @@ toc_max_heading_level: 3
 
 - **_分析_** > **_カウント推移の比較_**
 
-* * *
+---
 
 ### `Container`
 
@@ -418,13 +418,13 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューから<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
-* * *
+---
 
 ### `ECS`
 
 <p><Status>Fixed</Status> <UI>Flexボード</UI>、<UI>Amazon ECS</UI> > <UI>Service</UI>メニューから<UI>ecs_service</UI>ウィジェットに全体サービスの1つだけが表示される問題を修正</p>
 
-* * *
+---
 
 ### `Application`
 
@@ -454,7 +454,7 @@ toc_max_heading_level: 3
 
 - <Status>Fixed</Status>リッチテキストウィジェットの場合、修正後に保存した内容が反映されないバグを修正
 
-* * *
+---
 
 ### `AWS Log`
 
@@ -462,7 +462,7 @@ toc_max_heading_level: 3
 
 - <Status>Change</Status>ログを参照する権限のないユーザーは、<UI>アラート通知</UI> > <UI>イベント設定</UI>メニューに入れるように修正(ただし、機能の追加や修正はできません)
 
-* * *
+---
 
 ### `Database`
 
@@ -480,13 +480,13 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューからガイドメッセージのリンクをクリックすると空のページに移動する問題を修正</p>
 
-* * *
+---
 
 ### `Container`
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューから<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
-* * *
+---
 
 ### `ECS`
 
@@ -504,7 +504,7 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで初めてログデータの確認時にデータが出力されない問題を修正</p>
 
-* * *
+---
 
 ### `Browser`
 
