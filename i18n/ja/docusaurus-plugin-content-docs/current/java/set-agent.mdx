@@ -22,7 +22,7 @@ whatap.home=.
 whatap.config=whatap.conf
 ```
 
-- `whatap.home`：デフォルト値は_whatap.agent.jar_ファイルへのパスを入力してください。
+- `whatap.home`：既定値は_whatap.agent.jar_ファイルへのパスを入力してください。
 
 - `whatap.config`: ファイル名のみを入力することをお勧めします。相手パスを一緒に入力することができます。
 
@@ -43,7 +43,7 @@ WhaTapエージェントは、_whatap.conf_ファイルに設定したサーバ�
 
 ```ini title='whatap.conf'
 whatap.server.host=10.10.1.1
-whatap.server.port=6600 # デフォルト値
+whatap.server.port=6600 # 既定値
 ```
 
 - TCPセッションを接続すると`license`を利用してサーバーから通信キーを受け取ります。誤った`license`を設定すると、サーバーはセッションを終了します。
@@ -81,50 +81,43 @@ import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
 <Desc name='whatap.conf'/>
 
 {/*Notes*/}
-
 import Setagentinservicedescnotes from "../common-items/_set-agent-in-service-desc-notes.mdx";
 
 <Setagentinservicedescnotes />
 
 {/*옵션추가하기*/}
-
 import Setagentinserviceaddoptions from "../common-items/_set-agent-in-service-add-options.mdx";
 
 <Setagentinserviceaddoptions />
 
 {/*옵션 수정 또는 삭제 */}
-
 import Setagentinservicemodifyoptions from "../common-items/_set-agent-in-service-modify-options.mdx";
 
-<Setagentinservicemodifyoptions /> 
+<Setagentinservicemodifyoptions />
 
 {/* 여러에이전트 동시 적용 */}
-
 import Setagentinservicemuliagent from "../common-items/_set-agent-in-service-muli-agent.mdx";
 
-<Setagentinservicemuliagent /> 
+<Setagentinservicemuliagent />
 
 {/* 에이전트 기본값 적용 */}
-
 import Setagentinserviceapplydafaultdesc from "../common-items/_set-agent-in-service-apply-dafault-desc.mdx";
 
-<Setagentinserviceapplydafaultdesc /> 
+<Setagentinserviceapplydafaultdesc />
 
 import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
 
 <DefaultItems name='whatap.conf'/>
 
 {/*Notes*/}
-
 import Setagentinservicedefaultnotes from "../common-items/_set-agent-in-service-default-notes.mdx";
 
 <Setagentinservicedefaultnotes />
 
 {/*설정 공유하기*/}
-
 import Setagentsharing from "../common-items/_set-agent-sharing.mdx";
 
-<Setagentsharing />  
+<Setagentsharing />
 
 {/*서비스 화면에서 에이전트 설정하기 end*/}
 

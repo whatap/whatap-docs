@@ -1,16 +1,16 @@
 ---
 id: dashboard-hitmap-trace
 title: ヒットマップ-トレース分析
-description: ヒットマップウィジェットを通じてトレース分析ウィンドウを開き、トランザクション一覧と各トランザクション下位のステップ情報を一度に確認できます。
+description: Javaモニタリングでアプリケーションダッシュボードのヒートマップウィジェットを通じてトランザクションとその下位ステップの情報を一目で分析する方法を案内します。 ユーザーは、希望する領域をドラッグして、選択した領域のトランザクション一覧と詳細ステップ情報を含む分析ウィンドウを確認できます。 これにより、エラーが発生したトランザクション情報を分類し、トランザクションの性能を詳細に分析できます。
 tags:
   - Java
   - アプリケーション
   - ヒットマップ
-  - トレース
+  - トランザクション
+  - ステップ
 ---
 
-{/* 概要*/}
-
+{/* 개요*/}
 import Dashboardhitmaptracedesc from "../common-items/_dashboard-hitmap-trace-desc.mdx";
 
 <Dashboardhitmaptracedesc />
@@ -28,65 +28,55 @@ import Dashboardhitmaptraceanalysistx from "../common-items/_dashboard-hitmap-tr
 <Dashboardhitmaptraceanalysistx />
 
 {/*### 테이블 뷰*/}
-
 import Dashboardhitmaptracetableview from "../common-items/_dashboard-hitmap-trace-table-view.mdx";
 
-<Dashboardhitmaptracetableview /> 
+<Dashboardhitmaptracetableview />
 
 {/*### 레코드 요약*/}
-
 import Dashboardhitmaptracerecordsummary from "../common-items/_dashboard-hitmap-trace-record-summary.mdx";
 
-<Dashboardhitmaptracerecordsummary /> 
+<Dashboardhitmaptracerecordsummary />
 
 import Dashboardhitmaptracerecordsummaryattribute from "../common-items/_dashboard-hitmap-trace-record-summary-attribute.mdx";
 
-<Dashboardhitmaptracerecordsummaryattribute /> 
+<Dashboardhitmaptracerecordsummaryattribute />
 
 {/*### 트리뷰*/}
-
 import Dashboardhitmaptracetreeview from "../common-items/_dashboard-hitmap-trace-treeview.mdx";
 
 <Dashboardhitmaptracetreeview />
 
 {/*### 액티브 스택*/}
-
 import Dashboardhitmapactivestack from "../common-items/_dashboard-hitmap-active-stack.mdx";
 
 <Dashboardhitmapactivestack />
 
 {/*### 멀티 트랜잭션*/}
-
 import Dashboardhitmaptracemultitx from "../common-items/_dashboard-hitmap-trace-multi-tx.mdx";
 
 <Dashboardhitmaptracemultitx />
 
 {/*### 메소드 요약*/}
-
 import Dashboardhitmaptracemethod from "../common-items/_dashboard-hitmap-trace-method.mdx";
 
 <Dashboardhitmaptracemethod />
 
 {/*### SQL 요약*/}
-
 import Dashboardhitmaptracesql from "../common-items/_dashboard-hitmap-trace-sql.mdx";
 
 <Dashboardhitmaptracesql />
 
 {/*### HTTP Call 요약*/}
-
 import Dashboardhitmaptracehttpcall from "../common-items/_dashboard-hitmap-trace-http-call.mdx";
 
 <Dashboardhitmaptracehttpcall />
 
 {/*### 트랜잭션 로그*/}
-
 import Dashboardhitmaptracetracsactionlog from "../common-items/_dashboard-hitmap-trace-tracsaction-log.mdx";
 
-<Dashboardhitmaptracetracsactionlog />  
+<Dashboardhitmaptracetracsactionlog />
 
 {/*#### 키워드 하이라이트 설정하기, 삭제*/}
-
 import Dashboardhitmaptracetxlogkeyword from "../common-items/_dashboard-hitmap-trace-tx-log-keyword.mdx";
 
 <Dashboardhitmaptracetxlogkeyword />
@@ -95,42 +85,38 @@ import Dashboardhitmaptracetxlogkeyword from "../common-items/_dashboard-hitmap-
 
 import Displayorhidetablecolumn from "../common-items/_display-or-hide-table-column.mdx";
 
-<Displayorhidetablecolumn /> 
+<Displayorhidetablecolumn />
 
 #### テーブルカラムの順序付け{#change-order-column}
 
 import Changeordertablecolumn from "../common-items/_change-order-table-column.mdx";
 
-<Changeordertablecolumn /> 
+<Changeordertablecolumn />
 
 #### テーブルコンテンツの表示設定{#setting-table-contents}
 
 import Setdisplaytablecontents from "../common-items/_set-display-table-contents.mdx";
 
-<Setdisplaytablecontents /> 
+<Setdisplaytablecontents />
 
 ## 付加機能 {#additional-options}
 
 {/*### http 파라미터 조회*/}
-
 import Searchhttpparameter from "../common-items/_search-http-parameter.mdx";
 
-<Searchhttpparameter />  
+<Searchhttpparameter />
 
 {/*### 트랜잭션 파라미터 조회*/}
-
 import Searchtransactionparmeter from "../common-items/_search-transaction-parmeter.mdx";
 
-<Searchtransactionparmeter /> 
+<Searchtransactionparmeter />
 
 {/*### 테이블 컬럼 설정하기 set-table-column*/}
-
 import Addfuncsettablecolumn from "../common-items/_add-func-set-table-column.mdx";
 
-<Addfuncsettablecolumn /> 
+<Addfuncsettablecolumn />
 
 {/*### 조회 데이터 다운로드*/}
-
 import Addfuncdownloaddate from "../common-items/_add-func-download-date.mdx";
 
-<Addfuncdownloaddate /> 
+<Addfuncdownloaddate />

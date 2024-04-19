@@ -1,11 +1,39 @@
 ---
 id: agent-usage
 title: CPU／メモリ／ディスク使用量の収集
-description: CPU／メモリ／ディスクの使用量を収集します。
+description: JavaエージェントがCPU、メモリ、ディスク使用量を収集する方法を案内します。JavaのJMXライブラリを基本的に活用し、必要に応じてLinuxのprocディレクトリやoshi、sigarライブラリによる性能指標の収集方法を確認できます。
 tags:
   - Java
+  - アプリケーション
+  - エージェント
 ---
 
-import Javausage from "../common-items/_java-usage.mdx";
+JavaエージェントがCPU、メモリ、ディスク使用量を収集する方法を案内します。JavaのJMXライブラリを基本的に活用し、必要に応じてLinuxのprocディレクトリやoshi、sigarライブラリによる性能指標の収集方法を確認できます。
 
-<Javausage />  
+- **linux_proc_stat_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  CPU、 メモリ、ディスクの使用量をLinuxの_proc_ディレクトリから収集するかどうかを設定します。
+
+- **oshi_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.1.0 or later</code>
+
+  既定値`false`
+
+  CPU、メモリ、ディスクの使用量を測定するとき、oshiライブラリを使用するかどうかを設定します。
+
+- **oshi_netstat_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.31 or later</code>
+
+  既定値`false`
+
+  netstat指標の収集有無を設定します。Maximum Transmission Unit(MTU) 指標が追加されます。
+
+- **sigar_enabled** <span class='type'>Boolean</span>
+
+  CPU、メモリ、ディスク使用量を測定する場合は、sigarライブラリを使用するかどうかを設定します。
+
+  :::note
+
+  whatap.agent.2.1.0バージョン以下では既定値は`true`です。whatap.agent.2.1.0バージョン以降では既定値は`false`です。
+
+  :::

@@ -1,11 +1,13 @@
 ---
 id: agent-transaction
 title: トランザクション
-description: エージェントのトランザクションパフォーマンスを追跡および設定するためのオプションを提供します。
+description: Javaアプリケーション内の各トランザクションの性能データをエージェントが追跡し分析できる設定方法を案内します。トランザクションのリクエスト処理、レスポンスタイム、リソース使用量などを追跡して、アプリケーションの性能を評価します。
 tags:
   - Java
+  - アプリケーション
   - Transaction
   - トランザクション
+  - エージェント
 ---
 
 import Transaction from "../common-items/_transaction.mdx";
@@ -16,7 +18,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
-<Transactionprofilingcommon /> 
+<Transactionprofilingcommon />
 
 import Javatransactionprofiling from "../common-items/_java-transaction-profiling.mdx";
 
@@ -28,11 +30,11 @@ import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
 
 import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
 
-<Javanonhttptransaction /> 
+<Javanonhttptransaction />
 
 import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
-<Javatracetransaction /> 
+<Javatracetransaction />
 
 ## トレースデータサンプリング
 
@@ -40,77 +42,77 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
 - **trace_sampling_enabled** <span class='api'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースデータサンプリングの収集有無を設定できます。
 
 - **trace_sampling_tps** <span class='type'>Int</span>
 
-  デフォルト値`10000`
+  既定値`10000`
 
   トレースデータサンプリングの数を設定できます。設定したサンプリング数を超えるデータは送信せず、5秒ごとに初期化します。
 
 - **trace_send_enabled** <span class='api'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   トレースデータの送信有無を設定できます。
 
 - **debug_trace_samling** <span class='api'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースデータサンプリングのデバッグオプションをオンまたはオフにできます。
 
 ## トレースURL名を修正する
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>string</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-特定URLおよび特定メソッド(method)を呼び出す時にトレースURLの名前を修正できます。例えば`io.home.test.TestController.test1`に登録したURLを呼び出すと`test100000()`メソッドが呼び出される場合、サービス画面から`/api/100000+test1+test100000`で確認できます。
+  特定URLおよび特定メソッド(method)を呼び出す時にトレースURLの名前を修正できます。例えば`io.home.test.TestController.test1`に登録したURLを呼び出すと`test100000()`メソッドが呼び出される場合、サービス画面から`/api/100000+test1+test100000`で確認できます。
 
-`hook_tx_name_mode`オプションを通じて**class**、**method**、**string**、**return**の中で1つを選択できます。
+  `hook_tx_name_mode`オプションを通じて**class**、**method**、**string**、**return**の中で1つを選択できます。
 
-```ini title="whatap.conf"
-# 呼び出しメソッドのフルパス、ワイルドカード(*)使用可能
-hook_tx_name_patterns=ab.cd.ef.GH.ij
+  ```ini title="whatap.conf"
+  # 呼び出しメソッドのフルパス、ワイルドカード(*)使用可能
+  hook_tx_name_patterns=ab.cd.ef.GH.ij
 
-# class, method, string, returnから1つを選択
-hook_tx_name_mode=method
-```
+  # class, method, string, returnから1つを選択
+  hook_tx_name_mode=method
+  ```
 
 ## 特定のexceptionを無視する
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **ignore_exception_tx_pattern** <span class='type'>String</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-特定のサービスで特定のexceptionを無視できるように設定できます。複数登録するときは、コンマ(,)を区切り文字として利用してください。
+  特定のサービスで特定のexceptionを無視できるように設定できます。複数登録するときは、コンマ(,)を区切り文字として利用してください。
 
-```ini title="whatap.conf"
-ignore_exception_tx_pattern=exception:service_url
-# e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
-```
+  ```ini title="whatap.conf"
+  ignore_exception_tx_pattern=exception:service_url
+  # e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+  ```
 
 ## HttpURLConnectionを追跡する
 
 - **HttpURLConnection** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   `HttpURLConnection`クラスのメソッドを追跡するためのオプションです。
 
 - **hook_HttpURLConnection_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   `HttpURLConnection`クラスのメソッドの最初の呼び出し時にも追跡できるように設定できます。
 
 - **HttpURLConnection_weblogic** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   Weblogicで`HttpURLConnection`でhttp呼び出しをする場合、`weblogic.net.http.HttpURLConnection`クラスのメソッドを追跡するためのオプションです。
 
 - **hook_HttpURLConnection_weblogic_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   `weblogic.net.http.HttpURLConnection`クラスのメソッドの最初の呼び出し時にも追跡できるように設定できます。
