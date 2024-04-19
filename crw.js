@@ -13,7 +13,7 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // 반쯤 해결: 
 // feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
-
+ 
 // Axios를 사용하여 웹 페이지 HTML 가져오기 9
 axios.get(url)
     .then(response => {
