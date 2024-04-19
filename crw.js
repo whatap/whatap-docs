@@ -9,6 +9,7 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 // 고쳐야 하는 것:
 // 묶음에 feature 있을 경우, feature 없는 <p> 배열이 출력
 // 신규 기능 등 구성 요건 다른 경우 조건 생성 필요
+// h3 여러 개일 때 다 가져오질 못 함
 
 // 반쯤 해결: 
 // feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
