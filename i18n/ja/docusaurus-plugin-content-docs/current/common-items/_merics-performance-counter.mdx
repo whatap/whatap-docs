@@ -18,7 +18,7 @@ WhaTapエージェントのユーザーを区別するためのさまざまな�
 
 - **Remote IP**
 
-  デフォルト値は、remote ipを使用してユーザーを区別します。remote ipは、実際のユーザーを区別するには制限があります。
+  既定値は、remote ipを使用してユーザーを区別します。remote ipは、実際のユーザーを区別するには制限があります。
 
 - **Cookie**
 
@@ -109,7 +109,7 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 サーバーリソースまたはNodeプロセス内のリソース使用量をカウントします。
 
-* * *
+----
 
 - **CPU** (sys, usr, wait, steal, irq, cores)
 
@@ -160,7 +160,7 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
       maxThreads="50" minSpareThreads="2" maxQueueSize="78"/>
   ```
 
-* * *
+----
 
 ### DB Connection Poolカウンター
 
@@ -168,7 +168,7 @@ DB Connection Poolは、DataSourceと呼ばれます。WASによって提供さ�
 
 WhaTapは2つの方式を提供しています。１つのBCIによる直接問い合わせ方法とJMXを利用した方法です。デフォルトは、BCI方法を使用し、サブとしてJMXを使用します。
 
-次の個別のオプションがデフォルト値に関連してByteCodeがInjectionされるクラスです。
+次の個別のオプションが既定値に関連してByteCodeがInjectionされるクラスです。
 
 ```java title='hikari_pool_enabled=false'
 com.zaxxer.hikari.pool.HikariPool
@@ -214,7 +214,7 @@ weblogic_pool_enabled== trueの場合、weblogic_ds_enabled=false
 
 2. 関連付けられたpoolのオプション値を`false`として宣言します。 
 
-3. DataSource関連オプション値を`true`に変更してください。デフォルト値は `false` です。
+3. DataSource関連オプション値を`true`に変更してください。既定値は `false` です。
 
    ```bash title='whatap.conf'
    tomcat_ds_enabled=false
@@ -276,14 +276,14 @@ Apdexはユーザー満足度の指標として使用でき、0~1の値です。
 
 > (満足回数+ (許容回数\*0.5))／全体リクエスト数
 
-| 状態                    | 説明                                     |
-| --------------------- | -------------------------------------- |
-| 満足 (Satisfied, **S**) | 業務処理に全く問題なし≤ 1.2秒 (満足**S**デフォルト値)      |
+| 状態                                       | 説明                                                        |
+| ---------------------------------------- | --------------------------------------------------------- |
+| 満足 (Satisfied, **S**) | 業務処理に全く問題なし≤ 1.2秒 (満足**S**既定値)      |
 | 許容(Tolerating, **T**) | 使用者が遅延を感じるが業務処理は可能≤ 4.8秒(満足**S** \* 4) |
 | 不満(Frustrated, **F**) | 業務処理が不可能> 4.8秒(許容**T**超過及びエラー)         |
 
 - **whatap.apdex_time** <span class='type'>millisecond</span>
 
-  デフォルト値`1200`
+  既定値`1200`
 
-  満足 **S** デフォルト値は、エージェント設定メニューから変更できます。
+  満足 **S** 既定値は、エージェント設定メニューから変更できます。

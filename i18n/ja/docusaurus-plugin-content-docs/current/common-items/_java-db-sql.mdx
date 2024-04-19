@@ -1,60 +1,60 @@
 - **dbcp_pool_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   JMXを使わず、DBCPのDB Connection情報を追跡するために使用します。
 
 - **hikari_pool_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   JMXを使わず、hikari poolのDB Connection情報を追跡するために使用します。
 
 - **tomcat_ds_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   JMXを使ってTomcat DB Connection Pool情報を追跡する機能を活性化します。
 
 - **tomcat_pool_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   JMXを使わずにTomcat DB Connection Pool情報を追跡する機能を活性化します。
 
 - **weblogic_ds_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   JMXを使ってWeblogic DB Connection Pool情報を追跡する機能を活性化します。
 
 - **weblogic_pool_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   JMXを使わずにWeblogic DB Connection Pool情報を追跡する機能を活性化します。
 
 - **jeus_pool_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   JMXを使わずにJEUS DB Connection Pool情報を追跡する機能を活性化します。
 
 - **profile_connection_open_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   トレース履歴にDBConnectionオープン情報を記録します。
 
 - **profile_dbc_close** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   `profile_connection_open_enabled`の値が`true`の場合のみ動作します。トレース履歴にDBConnectiondのクローズ情報を記録します。
 
 - **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
-  デフォルト値`false`
+  既定値`false`
 
   トレース履歴にSQLパラメータ情報を記録するときに使用します。パラメータは、別途のセキュリティ キーを入力しないと照会できません。
 
@@ -70,13 +70,13 @@
 
 - **profile_sql_resource_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースからSQLを収集する場合、そのステップで使用したCPUとメモリ使用量を追跡します。
 
 - **profile_update_count** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   `executeUpdate()`メソッドを通じてSQL UPDATE文を実行した場合、UPDATE件数を収集します。
 
@@ -86,19 +86,19 @@
 
 - **ds_update_interval** <span class='type'>MiliSeconds</span>
 
-  デフォルト値`5000`
+  既定値`5000`
 
   DB Connection情報のCount間隔を設定します。
 
 - **profile_position_sql** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   SQLを実行する時点のStackTraceを記録します。
 
 - **profile_sql_param_length** <span class='type'>Int</span>
 
-  デフォルト値`40`
+  既定値`40`
 
   SQLパラメータの長さを設定します。
 
@@ -110,7 +110,7 @@
 
 - **trace_dbc_leak_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   DBConnection Leakを追跡する機能を有効にします。
 
@@ -122,7 +122,7 @@
 
 - **trace_dbc_leak_fullstack_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   DBConnection Leakが検出された場合、その時点のStackTraceを収集します。
 
@@ -134,19 +134,19 @@
 
 - **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   SQL文からリテラル部分を抽出し、SQL文を正規化する機能を活性化します。
 
 - **profile_error_jdbc_fetch_max** <span class='type'>Int</span>
 
-  デフォルト値`10000`
+  既定値`10000`
 
   SQL Fetch Count(`ResultSet.next()`呼び出し件数)が設定した値を超えると、TOOMANY Fetchエラーとして処理します。`0`に設定するとエラー処理されません。
 
 - **profile_error_sql_time_max** <span class='type'>Int</span>
 
-  デフォルト値`30000`
+  既定値`30000`
 
   SQLの実行時間が設定値を超えると、TOO SLOWエラーとして処理されます。`0`に設定する場合、エラー処理は実行されません。
 
@@ -204,6 +204,6 @@
 
 - **debug_dbc_stack_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   DB Connection時点のStackTraceをトレースに保存します。アプリケーションで使用するConnection Pool情報を取得するために使用します。
