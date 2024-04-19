@@ -17,11 +17,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
 import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profile.mdx";
 
-<Dotnettransactionprofile /> 
+<Dotnettransactionprofile />
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
@@ -45,7 +45,7 @@ import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profil
 
 - **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
 
@@ -75,18 +75,24 @@ import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profil
 
 - **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
-  デフォルト値 `3000`
+  既定値 `3000`
 
   収集情報を確認するダッシュボードのアクティブトランザクションのアークイコライザーグラフで、slow間隔と表示するトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、slowアクティブのトランザクションの数に含まれます。
 
 - **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
-  デフォルト値 `8000`
+  既定値 `8000`
 
   収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてvery slow区間と表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、very slowアクティブトランザクションの数に含まれます。
 
 - **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
 
-  デフォルト値`30000`
+  既定値`30000`
 
   トランザクションが終了するまで待機時間です。5分以内にトランザクションが終了しない場合、トランザクションは情報を収集しません。トランザクションのトレース情報で「Lost Connection」を確認できます。
+
+- **prepend_app_pool_name** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  オプション値を`true`に設定すると、トランザクションのURLの前にアプリケーションのフルネームを表示します。
