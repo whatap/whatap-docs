@@ -55,7 +55,7 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-basic-usage.mdx";
 
-<Dbproductsqlstatbasicusage /> 
+<Dbproductsqlstatbasicusage />
 
 ## カラム情報ガイド
 
@@ -65,17 +65,17 @@ import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-bas
 | `digest`                  | `digest_text`のハッシュ値                                                    |
 | `schema_name`             | スキーマ名                                                                  |
 | `count_star`              | 実行回数                                                                   |
-| `timer_wait`              | すべての遂行時間(秒)                                                            |
-| `lock_time`               | テーブルロックによる待ち時間(秒)                                                      |
-| `rows_affected`           | 影響を受けたrowの数(insert、update、replace構文)                                   |
+| `timer_wait`              | すべての遂行時間(秒)                                         |
+| `lock_time`               | テーブルロックによる待ち時間(秒)                                   |
+| `rows_affected`           | 影響を受けたrowの数(insert、update、replace構文)                |
 | `rows_sent`               | リターンされたrowの数                                                           |
 | `rows_examined`           | server layerで検討されたrowの数                                                |
 | `created_tmp_disk_tables` | コマンドの実行中にサーバーが作成したディスクの臨時テーブル数の合計。回数が高い場合は、sortメモリサイズの増設を検討します。        |
 | `created_tmp_tables`      | コマンドの実行中にサーバーが作成した内部臨時テーブル数の合計                                         |
 | `select_full_join`        | インデックスを使用していないテーブルスキャンの数。0でなければインデックスの確認が必要です。                         |
-| `select_full_range_join`  | 参照テーブルでrange検索を使用したジョイン(join)数                                         |
-| `select_range`            | 最初のテーブルでrangeを使用したジョイン(join)数                                          |
-| `select_range_check`      | キーなしでジョイン(join)が発生した数。0でなければ確認が必要です。                                   |
+| `select_full_range_join`  | 参照テーブルでrange検索を使用したジョイン(join)数                      |
+| `select_range`            | 最初のテーブルでrangeを使用したジョイン(join)数                       |
+| `select_range_check`      | キーなしでジョイン(join)が発生した数。0でなければ確認が必要です。                |
 | `select_scan`             | Drivingテーブルをフルスキャンした数                                                  |
 | `sort_merge_passes`       | sort mergeでsortされた数                                                    |
 | `sort_range`              | rangeでsortされた数                                                         |
@@ -99,7 +99,6 @@ import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-q
 <Dbproductsqlstatquerydetails />
 
 {/* 필터 조건추가하기*/}
-
 import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 <Dbsqlfilter />
@@ -108,4 +107,4 @@ import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn /> 
+<Dbv2dataeditcolumn />

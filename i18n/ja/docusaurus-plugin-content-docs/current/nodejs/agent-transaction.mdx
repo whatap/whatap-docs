@@ -21,7 +21,7 @@ import Transactionprofilingcommon from "../common-items/_transaction-profiling-c
 
 - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   プロファイルにエラー関連情報を表示するステップを追加できます。
 
@@ -39,31 +39,31 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
 
 - **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
 
 - **hook_method_ignore_prefixes** <span class='type'>String</span>
 
-  デフォルト値`get,set `
+  既定値`get,set `
 
   メソッドトレースを設定する場合、トレースから除外するクラスをprefixに設定します。
 
@@ -73,13 +73,13 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **trace_service_port_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トランザクション名にポート番号を追加します。
 
 - **httpc_status_ignore** <span class='type'>String</span>
 
-  デフォルト値`Empty`
+  既定値`Empty`
 
   HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
 
@@ -89,7 +89,7 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **httpc_status_ignore_set** <span class='type'>String</span>
 
-  デフォルト値`Empty`
+  既定値`Empty`
 
   `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
@@ -103,11 +103,11 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
 
-<Transactiontracecommon /> 
+<Transactiontracecommon />
 
 import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
 
-<Transactionprofilehttp /> 
+<Transactionprofilehttp />
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 
@@ -119,7 +119,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **ignore_http_method** <span class='type'>String</span>
 
-  デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+  既定値 `PATCH,OPTIONS,HEAD,TRACE`
 
   設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
 
@@ -133,7 +133,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **profile_http_header_ignore_keys** <span class='type'>String</span>
 
-  デフォルト値 `Cookie,cookie,accept,user-agent,referer`
+  既定値 `Cookie,cookie,accept,user-agent,referer`
 
   HTTPヘッダー名を指定して収集情報から除外できます。指定したHTTPヘッダー名の値は収集から除外され、'#'と表示されます。
 
@@ -143,7 +143,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **status_ignore** <span class='type'>String</span>
 
-  デフォルト値`Empty`
+  既定値`Empty`
 
   無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
@@ -154,7 +154,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **status_ignore_set** <span class='type'>String</span>
 
-  デフォルト値`Empty`
+  既定値`Empty`
 
   HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
 
@@ -165,7 +165,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
@@ -177,7 +177,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   ソケット (TCP) がトランザクションではなくバックグラウンドスレッドによってオープンされた場合に接続がオープンされ、トランザクションが開始された場合にのみ、オープントレースします。
 
@@ -185,49 +185,49 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **mtrace_rate** <span class='type'>Int</span>
 
-  デフォルト値`0`
+  既定値`0`
 
   最初のトランザクションが発生したときに発行されるマルチトランザクション追跡機能(Multi Transaction ID、以下MTID)の発行レートを設定するオプションです。`0`から`100`まで設定できます。MTIDを追跡することで、登録したすべてのアプリケーション間の呼び出しを確認できます。同じプロジェクトに属するアプリケーションは、CallerとCallee機能を使用してトランザクションのトレースを直接確認することができます。
 
 - **mtrace_spec** <span class='type'>String</span>
 
-  デフォルト値`v1`
+  既定値 `v1`
 
   現在のインスタンスのアプリケーションのバージョンを設定します。任意の文字列を入力できます。このデータは、呼び出し統計のために使用します。
 
 - **mtrace_caller_key** <span class='type'>String</span>
 
-  デフォルト値`x-wtap-mst`
+  既定値 `x-wtap-mst`
 
   MTID追跡に使用するCaller Key Nameを設定します。
 
 - **mtrace_callee_key** <span class='type'>String</span>
 
-  デフォルト値`x-wtap-tx`
+  既定値 `x-wtap-tx`
 
   MTID追跡に使用するCallee Key Nameを定義します。
 
 - **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   MTID追跡時に受信したCallee IDのトレースを表します。
 
 - **mtrace_alltx_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   log4jなどのロギングシステムに接続するために、すべてのトランザクションのMTIDを追跡できます。
 
 - **mtrace_basetime** <span class='type'>Miliseconds</span>
 
-  デフォルト値`100`
+  既定値`100`
 
   `mtrace_alltx_enabled`オプションの値が`true`の場合、多くのログが残る可能性があります。この場合、トレースログの量を減らす必要があります。
 
 - **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   CallerとCalleeの相関統計を収集します。Callerに適用するとCallerの詳細情報が送信され、Calleeを適用するとurl単位のCaller-Calleeの呼び出し統計情報が収集サーバーに送信されます。
 
@@ -243,12 +243,12 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **trace_sampling_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `false`
+  既定値 `false`
 
   トレースデータサンプリングの収集有無を設定できます。
 
 - **trace_sampling_tps** <span class='type'>Number</span>
 
-  デフォルト値 `1000`
+  既定値 `1000`
 
-  トレースデータサンプリングの数を設定できます。設定したサンプリング数を超えるデータは送信せず、1秒ごとに初期化します。
+  トレースデータのサンプリング数を設定できます。設定したサンプリング数を超えるデータは送信せず、1秒ごとに初期化します。
