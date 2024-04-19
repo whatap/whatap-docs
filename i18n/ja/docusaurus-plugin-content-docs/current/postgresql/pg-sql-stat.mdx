@@ -59,27 +59,27 @@ import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-bas
 
 ## カラム情報ガイド
 
-| 項目                    | 説明                                                      |
-| --------------------- | ------------------------------------------------------- |
-| `query`               | クエリ文字列                                                  |
-| `queryid`             | クエリハッシュコード                                              |
-| `user`                | ユーザーoid                                                 |
-| `db`                  | データベース名                                                 |
-| `rows`                | 検索や影響を受けた列の総数                                           |
-| `total_exec_time`     | クエリの実行に費やされた合計時間(ミリ秒)                                   |
-| `calls`               | 実行回数                                                    |
-| `shared_blks_hit`     | 共有ブロックキャッシュの総ヒット数                                       |
-| `shared_blks_read`    | ディスクから読み取った共有ブロックの総数                                    |
-| `blk_read_time`       | ブロックの読み取りにかかった合計時間(ミリ秒)。`track_io_timing`が有効な場合。それ以外は0  |
-| `blk_write_time`      | ブロックを書き込みに費やされた合計時間。`track_io_timing`が有効になっている場合。それ以外は0 |
-| `local_blks_dirtied`  | 変更されたローカルブロック数                                          |
-| `local_blks_hit`      | ローカルブロックキャッシュヒット数                                       |
-| `local_blks_written`  | ディスクに書き込みしたローカルブロックの総数                                  |
-| `local_blks_read`     | ディスクで読み取ったローカルブロックの総数                                   |
-| `shared_blks_written` | ディスクに書き込みした共有ブロックの総数                                    |
-| `shared_blks_dirtied` | 変更された共有ブロックの総数                                          |
-| `temp_blks_read`      | ディスクから読み取った一時ブロックの総数                                    |
-| `temp_blks_written`   | ディスクに書き込みした一時ブロックの総数                                    |
+| 項目                    | 説明                                                                        |
+| --------------------- | ------------------------------------------------------------------------- |
+| `query`               | クエリ文字列                                                                    |
+| `queryid`             | クエリハッシュコード                                                                |
+| `user`                | ユーザーoid                                                                   |
+| `db`                  | データベース名                                                                   |
+| `rows`                | 検索や影響を受けた列の総数                                                             |
+| `total_exec_time`     | クエリの実行に費やされた合計時間(ミリ秒)                                  |
+| `calls`               | 実行回数                                                                      |
+| `shared_blks_hit`     | 共有ブロックキャッシュの総ヒット数                                                         |
+| `shared_blks_read`    | ディスクから読み取った共有ブロックの総数                                                      |
+| `blk_read_time`       | ブロックの読み取りにかかった合計時間(ミリ秒)。`track_io_timing`が有効な場合。それ以外は0 |
+| `blk_write_time`      | ブロックを書き込みに費やされた合計時間。`track_io_timing`が有効になっている場合。それ以外は0                   |
+| `local_blks_dirtied`  | 変更されたローカルブロック数                                                            |
+| `local_blks_hit`      | ローカルブロックキャッシュヒット数                                                         |
+| `local_blks_written`  | ディスクに書き込みしたローカルブロックの総数                                                    |
+| `local_blks_read`     | ディスクで読み取ったローカルブロックの総数                                                     |
+| `shared_blks_written` | ディスクに書き込みした共有ブロックの総数                                                      |
+| `shared_blks_dirtied` | 変更された共有ブロックの総数                                                            |
+| `temp_blks_read`      | ディスクから読み取った一時ブロックの総数                                                      |
+| `temp_blks_written`   | ディスクに書き込みした一時ブロックの総数                                                      |
 
 ## クエリプレビュー
 
@@ -96,7 +96,6 @@ import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-q
 <Dbproductsqlstatquerydetails />
 
 {/* 필터 조건추가하기*/}
-
 import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 <Dbsqlfilter />
@@ -105,4 +104,4 @@ import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn /> 
+<Dbv2dataeditcolumn />
