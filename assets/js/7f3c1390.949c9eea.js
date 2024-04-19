@@ -43,11 +43,6 @@ const metadata = {
     "toc_max_heading_level": 2,
     "pagination_next": "release-notes/dotnet/dotnet-2_1_1"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": ".NET Agent v2.1.3",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_3"
-  },
   "next": {
     "title": ".NET Agent v2.1.1",
     "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_1"

@@ -181,21 +181,6 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "profile_http_body_enabled"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "Boolean"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "false"
-        })]
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "HTTP request의 body를 트레이스 내역에 기록합니다."
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "profile_http_body_url_prefix"
         }), " ", (0,jsx_runtime.jsx)("span", {
           class: "type",
