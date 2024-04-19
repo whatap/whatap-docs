@@ -14,9 +14,10 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // 반쯤 해결: 
 // feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
- 
-// Axios를 사용하여 웹 페이지 HTML 가져오기 9
-// Axios를 사용하여 웹 페이지 HTML 가져오기
+
+// 신규 기능만 해결하면 될 듯??
+
+// Axios를 사용하여 웹 페이지 HTML 가져오기 10
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -70,6 +71,28 @@ axios.get(url)
                         mdxContent += '\n\n';
                     }
                 }
+                else if (featureInP2.length > 0 || featureInUl2.length > 0) {
+                  //
+                  const version = $(element).find('h2').text().trim();
+                  const date = $(element).find('h2 + p').text().trim();
+                  const productName = $(h3Element).text().trim();
+
+                  // 중복을 제거한 <code class="Feature"> 내용 가져오기
+                  const features = new Set();
+                  featureInP2.each((idx, code) => {
+                      features.add($(code).parent().html().trim());
+                  });
+                  featureInUl2.each((idx, code) => {
+                      features.add($(code).parent().html().trim());
+                  });
+
+                  // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                  if (features.size > 0) {
+                    mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                    mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+                    mdxContent += '\n\n';
+                }
+              }             
                 else if ((prevH3.length === 0)&&(featureInP2.length > 0 || featureInUl2.length > 0)) {
                   // <h3>가 하나인 경우 처리
                   const version = $(element).find('h2').text().trim();
