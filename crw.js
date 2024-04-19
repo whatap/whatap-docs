@@ -8,7 +8,10 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // 고쳐야 하는 것:
 // 묶음에 feature 있을 경우, feature 없는 <p> 배열이 출력
-// 반쯤 해결? feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
+// 신규 기능 등 구성 요건 다른 경우 조건 생성 필요
+
+// 반쯤 해결: 
+// feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
 
 // Axios를 사용하여 웹 페이지 HTML 가져오기5-2
 axios.get(url)
@@ -20,7 +23,7 @@ axios.get(url)
 
         // 각 릴리스 노트 항목을 순회하면서 정보 추출
         $('section.remark-sectionize-h2').each((index, element) => {
-            // <h3> 옆에 있는 <ul> 또는 <p>를 선택합니다.
+            // <h3> 옆에 있는 <ul> 또는 <p>를 선택
             const nextElement = $(element).find('h3').next();
 
             // <ul> 안에 <p>의 안에 있는 <code class="Feature">가 있는 경우
@@ -32,6 +35,7 @@ axios.get(url)
 
                 // 제품명 초기화 
                 let productName = '';
+
                 // <h3>를 찾아냄
                 const h3Elements = $(element).find('h3');
                 // <h3>가 여러 개인 경우 가장 가까운 <code class="Feature">를 찾음
@@ -42,6 +46,7 @@ axios.get(url)
                 const featureElement = nextElement.find('ul code.Feature, p code.Feature').first();
 
                 productName = $(h3Element).text().trim();
+
                 });
 
                 // 제품명 가져오기
