@@ -10,11 +10,13 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 // 묶음에 feature 있을 경우, feature 없는 <p> 배열이 출력
 // 신규 기능 등 구성 요건 다른 경우 조건 생성 필요
 // h3 여러 개일 때 다 가져오질 못 함
+// 으앙나아아아아아악!!
 
 // 반쯤 해결: 
 // feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
  
 // Axios를 사용하여 웹 페이지 HTML 가져오기 9
+// Axios를 사용하여 웹 페이지 HTML 가져오기
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -44,7 +46,7 @@ axios.get(url)
                     // 날짜 정보 가져오기
                     const date = $(element).find('h2 + p').text().trim();
                     // 제품명 가져오기
-                    const productName = $(h3Element).text().trim();
+                    const productName = $(prevH3).text().trim();
 
                     // 중복을 제거한 <code class="Feature"> 내용 가져오기
                     const features = new Set();
@@ -61,13 +63,9 @@ axios.get(url)
                         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
                     }
-                } else if (prevH3.length === 0) {
-                    // <h3>가 하나인 경우 처리
-                    const version = $(element).find('h2').text().trim();
-                    const date = $(element).find('h2 + p').text().trim();
-                    const productName = $(h3Element).text().trim();
-                    
-                    mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                } else {
+                    // <code class="Feature">가 없거나 <h3>가 하나일 경우 pass
+                    return;
                 }
             });
         });
