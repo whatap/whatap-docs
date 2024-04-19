@@ -14,7 +14,7 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 // 반쯤 해결: 
 // feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
 
-// Axios를 사용하여 웹 페이지 HTML 가져오기7
+// Axios를 사용하여 웹 페이지 HTML 가져오기 9
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -24,37 +24,34 @@ axios.get(url)
 
         // 각 릴리스 노트 항목을 순회하면서 정보 추출
         $('section.remark-sectionize-h2').each((index, element) => {
-            // 제품명 초기화
-            let productName = '';
-            // 버전 초기화
-            let version = '';
-            // 날짜 초기화
-            let date = '';
-
             // <h3>를 찾아냄
             const h3Elements = $(element).find('h3');
 
-            // <h3>가 여러 개인 경우 가장 가까운 <code class="Feature">를 찾음
+            // 각 <h3>에 대해 처리
             h3Elements.each((index, h3Element) => {
-                const nextElement = $(h3Element).next(); // <h3>의 다음 형제 요소
+                const prevH3 = $(h3Element).prevAll('h3').first(); // <h3>의 이전 형제 <h3>
+                const prevUl = $(h3Element).prevAll('ul').first(); // <h3> 이전의 <ul>
+                const prevP = $(h3Element).prevAll('p').first(); // <h3> 이전의 <p>
 
-                // <ul> 또는 <p>에서 <code class="Feature">를 찾음
-                const featureElement = nextElement.find('ul code.Feature, p code.Feature').first();
+                // <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
+                const featureInP = prevP.find('code.Feature');
+                const featureInUl = prevUl.find('code.Feature');
 
                 // <code class="Feature">가 발견되었으면 처리
-                if (featureElement.length > 0) {
-                    // 제품명 설정
-                    productName = $(h3Element).text().trim();
-
-                    // 버전 설정
-                    version = $(element).find('h2').text().trim();
-
-                    // 날짜 설정
-                    date = $(element).find('h2 + p').text().trim();
+                if (featureInP.length > 0 || featureInUl.length > 0) {
+                    // 버전 정보 가져오기
+                    const version = $(element).find('h2').text().trim();
+                    // 날짜 정보 가져오기
+                    const date = $(element).find('h2 + p').text().trim();
+                    // 제품명 가져오기
+                    const productName = $(h3Element).text().trim();
 
                     // 중복을 제거한 <code class="Feature"> 내용 가져오기
                     const features = new Set();
-                    nextElement.find('code.Feature').each((idx, code) => {
+                    featureInP.each((idx, code) => {
+                        features.add($(code).parent().html().trim());
+                    });
+                    featureInUl.each((idx, code) => {
                         features.add($(code).parent().html().trim());
                     });
 
@@ -64,7 +61,13 @@ axios.get(url)
                         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
                     }
-                    return false; // 반복문 종료
+                } else if (prevH3.length === 0) {
+                    // <h3>가 하나인 경우 처리
+                    const version = $(element).find('h2').text().trim();
+                    const date = $(element).find('h2 + p').text().trim();
+                    const productName = $(h3Element).text().trim();
+                    
+                    mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
                 }
             });
         });
