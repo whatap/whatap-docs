@@ -8,23 +8,23 @@ LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
 
 - **logsink_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   ログモニタリング機能を有効にします。
 
 - **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
 
 ### フレームワークログ内容の収集
 
-フレームワークで収集するログをモニタリングするには、モジュールからログをインターセプトするための設定とプラグインを追加する必要があります。フレームワークで収集するログの基本カテゴリ名を`AppLog`に設定します。デフォルト値は、`hooklog_enabled`オプションの設定と同じです。
+フレームワークで収集するログをモニタリングするには、モジュールからログをインターセプトするための設定とプラグインを追加する必要があります。フレームワークで収集するログの基本カテゴリ名を`AppLog`に設定します。既定値は、`hooklog_enabled`オプションの設定と同じです。
 
 - **hooklog_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`logsink_enabled`
+  既定値`logsink_enabled`
 
   ログ追跡を有効にするかどうかを設定します。
 
@@ -32,7 +32,7 @@ LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
 
   - Javaエージェント 2.2.4バージョン以降では、アプリケーションの再起動なしにオプションの変更を適用できます。 
 
-  - Javaエージェント2.2.4バージョン以前では`hooklog_enabled`値を変更した場合、再起動をする必要があります。`hooklog_enabled` のデフォルト値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`に設定されます。
+  - Javaエージェント2.2.4バージョン以前では`hooklog_enabled`値を変更した場合、再起動をする必要があります。`hooklog_enabled` の既定値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`に設定されます。
 
   :::
 

@@ -10,11 +10,11 @@ tags:
 
 import Metricswarningnotice from "../common-items/_metrics-warning-notice.mdx";
 
-<Metricswarningnotice /> 
+<Metricswarningnotice />
 
 import Compositemetricswarningnotice from "../common-items/_composite-metrics-warning-notice.mdx";
 
-<Compositemetricswarningnotice /> 
+<Compositemetricswarningnotice />
 
 import Metricseventmodifydelete from "../common-items/_metrics-event-modify-delete.mdx";
 
@@ -24,7 +24,7 @@ import Metricseventconditionselecttargetguide from "../common-items/_metrics-eve
 
 <Metricseventconditionselecttargetguide />
 
-## メトリクスイベントテンプレート{#template}
+## メトリクスイベントテンプレート {#template}
 
 :::note 
 
@@ -157,3 +157,19 @@ Kubernetesイベントの`reason`フィールド情報が`Unhealthy`が0回以�
 ノードに割り当て可能なPod数が0個以下の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > APDEXが0.7未満です (`${oname}`)
+
+{/* 
+
+#### **_HPA CPU使用率のアラート通知_**
+
+現在実行中のPodの数がリソース内の最大Pod数と同じで、CPU使用率が70%以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> HPA Podが生成できる最大値に達していて、CPU使用率が「>= 70%」です。
+
+#### **_HPAメモリ使用率のアラート通知_**
+
+現在実行中のPodの数がリソースの許容可能な最大Podの数と同じで、メモリ使用率が90%以上の場合、その通知が発生します。 
+
+> HPA Podが生成できる最大値に達していて、メモリ使用率が「>= 90%」です。
+
+*/}

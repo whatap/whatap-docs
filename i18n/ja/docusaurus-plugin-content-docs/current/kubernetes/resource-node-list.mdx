@@ -22,7 +22,7 @@ tags:
 - 10秒サイクルでリアルタイムのデータを更新します。
 
 - ノード状態のサマリー、比較、フィルター、および_CSV_ファイルのダウンロード機能を提供します。
-  > CSV ファイル名、_kubernetes_node_list\_\{pcode}\_\{timestamp}.csv_
+  > CSV ファイル名、_kubernetes_node_list\_\{pcode\}\_\{timestamp\}.csv_
 
 ## 基本画面ガイド
 
@@ -113,3 +113,13 @@ import K8slistcl from "../common-items/_k8s-list-cl.mdx";
   | NetTxDropped      | コンテナのネットワーク送信dropped数                             |
   | NetTxError        | コンテナのネットワーク送信エラー数                                 |
   | NetTxIops         | コンテナのネットワーク送信数                                    |
+
+{/* ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
+
+次の機能を追加で提供します。
+
+- ![比較するアイコン](/img/ico-compare.svg) **_比較する_**：複数のNodeを選択し、チャートベースで使用量を比較できます。
+
+- ![CSVダウンロードアイコン](/img/ico-csv.svg) **_CSVダウンロード_**：画面に表示された一覧データをCSVファイルとしてダウンロードできます。
+
+サーバー一覧ページのデータは、60秒ごとに自動更新されます。ユーザーは、![一時停止アイコン](/img/ico-pause.svg)ボタンをクリックして、データの自動更新を中止します。![再開アイコン](/img/ico-play-time.svg)ボタンをクリックして自動更新を再開できます。*/}

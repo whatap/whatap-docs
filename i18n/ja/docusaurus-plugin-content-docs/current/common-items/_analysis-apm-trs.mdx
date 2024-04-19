@@ -38,13 +38,13 @@ WhaTapモニタリングサービスのメイン画面でプロジェクトを�
 
 <Xclude product="php">
 
-<Cmdname sid="TTL06975" className="uitext" />は、エージェント設定(*whatap.conf*)で<code>trace_malloc_enabled=true</code>オプションを設定しないと収集できません。デフォルト値は<code>false</code>です。
+<Cmdname sid="TTL06975" className="uitext" />は、エージェント設定(*whatap.conf*)で<code>trace_malloc_enabled=true</code>オプションを設定しないと収集できません。既定値は<code>false</code>です。
 
 </Xclude>
 
 <InDoc product="php">
 
-<Cmdname sid="TTL06975" className="uitext" />は、エージェント設定(*whatap.ini*)で<code>trace_malloc_enabled=true</code>オプションを設定しないと収集できません。デフォルト値は<code>false</code>です。
+<Cmdname sid="TTL06975" className="uitext" />は、エージェント設定(*whatap.ini*)で<code>trace_malloc_enabled=true</code>オプションを設定しないと収集できません。既定値は<code>false</code>です。
 
 </InDoc>
 
@@ -232,18 +232,18 @@ whatap.stat_referer_enabled=true
 
 HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケーション外部呼び出し統計を収集します。5分間、異なるHttp Call文章は最大5,000まで許可します。１つのアプリケーションプロセスで制限を超えた外部Http Callが発生する場合、統計データは捨てられます。
 
-| カラム                          | 説明                                                    |
-| ---------------------------- | ----------------------------------------------------- |
-| <Cmdname sid="ITM07683" />   | HTTP呼び出しURLハッシュ(hash)                                 |
-| <Cmdname sid="TTL06918" />   | HTTP APIをリクエストしたURLのいずれかを任意に収集した情報                    |
-| <Cmdname sid="host" />       | HostまたはIPアドレス                                         |
-| <Cmdname sid="port" />       | TCPポート                                                |
-| <Cmdname sid="total" />      | すべての実行件数                                              |
-| <Cmdname sid="error" />      | エラー発生件数                                               |
-| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                                            |
-| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                                               |
-| <Cmdname sid="timeMin_ms" /> | 最小応答時間                                                |
-| <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                |
+| カラム                          | 説明                                                                      |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| <Cmdname sid="ITM07683" />   | HTTP呼び出しURLハッシュ(hash)                                |
+| <Cmdname sid="TTL06918" />   | HTTP APIをリクエストしたURLのいずれかを任意に収集した情報                                      |
+| <Cmdname sid="host" />       | HostまたはIPアドレス                                                           |
+| <Cmdname sid="port" />       | TCPポート                                                                  |
+| <Cmdname sid="total" />      | すべての実行件数                                                                |
+| <Cmdname sid="error" />      | エラー発生件数                                                                 |
+| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                                                              |
+| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                                                                 |
+| <Cmdname sid="timeMin_ms" /> | 最小応答時間                                                                  |
+| <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                                  |
 
 ## クライアントIPリージョン別の呼び出し件数
 

@@ -16,7 +16,7 @@ import Envnote from "./getting-started/_env-note.mdx";
 
 <Envnote />
 
-* * *
+----
 
 ## アプリケーションモニタリング
 
@@ -33,7 +33,7 @@ import Envnote from "./getting-started/_env-note.mdx";
 
 </div>
 
-* * *
+----
 
 ## サーバーモニタリング
 
@@ -49,12 +49,13 @@ import Envnote from "./getting-started/_env-note.mdx";
 | ^       | Amazon Linuxすべてのバージョン |
 | ^       | SUSE 10.1以降           |
 | Unix    | FreeBSD 10以降          |
+| ^       | AIX 6.1以降             |
 | Windows | Windows 2008 R2以降     |
 | ^       | Windows 7 SP1バージョン以降  |
 
 </div>
 
-* * *
+----
 
 ## DBモニタリング
 
@@ -62,17 +63,17 @@ import Envnote from "./getting-started/_env-note.mdx";
 
 <div class="c2-3-7">
 
-| 環境        | サポート環境                    |
-| --------- | ------------------------- |
-| Oracle    | Oracle 10g以降              |
-| Tibero    | Tibero 5.x以降              |
-| CUBRID    | CUBRID 9以降                |
-| MS-SQL    | SQL Server 2005以降         |
-| MySQL     | MySQL 5.5以降               |
-| MariaDB   | MariaDB 5.5以降             |
-| Altibase  | Altibase 6以降              |
-| Redis     | Redis 3.2以降               |
-| MongoDB   | MongoDB 4.2以降             |
+| 環境        | サポート環境                                       |
+| --------- | -------------------------------------------- |
+| Oracle    | Oracle 10g以降                                 |
+| Tibero    | Tibero 5.x以降                                 |
+| CUBRID    | CUBRID 9以降                                   |
+| MS-SQL    | SQL Server 2005以降                            |
+| MySQL     | MySQL 5.5以降                                  |
+| MariaDB   | MariaDB 5.5以降                                |
+| Altibase  | Altibase 6以降                                 |
+| Redis     | Redis 3.2以降                                  |
+| MongoDB   | MongoDB 4.2以降                                |
 | PostgeSQL | PostgreSQL系列(EDBなど) 9.2以降 |
 
 </div>
@@ -89,59 +90,59 @@ import Envnote from "./getting-started/_env-note.mdx";
 
 <div class='db-support-type'>
 
-| カテゴリ       | 機能区分                        |                           PostgreSQL                          |                              Oracle                              |              MySQL              |            SQL Server           |
-| ---------- | --------------------------- | :-----------------------------------------------------------: | :--------------------------------------------------------------: | :-----------------------------: | :-----------------------------: |
-| Monitoring | Instance List               |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Instance Monitoring         |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Multi Database(tenant) 機能   | <span class='emoji-ok'>✅</span><br/>(一部の指標に限ってmultidb stat可能) | <span class='emoji-ok'>✅</span><br/>(12cバージョン以降、multi tenantの場合) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Slow Query                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| Analysis   | Trends                      |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Trends Compare              |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Lock Tree                   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Parallel Query Tree         |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Dead Lock                   |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| ^          | DB Parameter                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Statistics | SQL Stat                    |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Table Size                  |                             サポート予定                            |                              サポート予定                              | <span class='emoji-ok'>✅</span> |              サポート予定             |
-| ^          | Database(TableSpace) Size   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> |              サポート予定             |
-| ^          | SGA Size                    |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Report     | Daily/Weekly/Monthly Report |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Event      | Event List                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Stat                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Setting               |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Notification                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Management | Agent Setup                 |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Agent List                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Project Management          |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| カテゴリ       | 機能区分                                         |                           PostgreSQL                          |                              Oracle                              |              MySQL              |            SQL Server           |
+| ---------- | -------------------------------------------- | :-----------------------------------------------------------: | :--------------------------------------------------------------: | :-----------------------------: | :-----------------------------: |
+| Monitoring | Instance List                                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Instance Monitoring                          |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Multi Database(tenant) 機能 | <span class='emoji-ok'>✅</span><br/>(一部の指標に限ってmultidb stat可能) | <span class='emoji-ok'>✅</span><br/>(12cバージョン以降、multi tenantの場合) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Slow Query                                   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                                       |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare                               |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                                    |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Parallel Query Tree                          |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                                    |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameter                                 |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                                     |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Table Size                                   |                             サポート予定                            |                              サポート予定                              | <span class='emoji-ok'>✅</span> |              サポート予定             |
+| ^          | Database(TableSpace) Size |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> |              サポート予定             |
+| ^          | SGA Size                                     |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Report     | Daily/Weekly/Monthly Report                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Event      | Event List                                   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                                   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting                                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                                 |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                                   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management                           |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
-| カテゴリ       | 機能区分                        |              Tibero             |              CUBRID             |             Altibase            |              Redis              |             MongoDB             |
-| ---------- | --------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Monitoring | Instance List               | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Instance Monitoring         | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Multi Database(tenant) 機能   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Slow Query                  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Analysis   | Trends                      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Trends Compare              | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Lock Tree                   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Parallel Query Tree         | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Dead Lock                   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | DB Parameter                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Statistics | SQL Stat                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Table Size                  |              サポート予定             | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Database(TableSpace) Size   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| ^          | SGA Size                    | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Report     | Daily/Weekly/Monthly Report | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Event      | Event List                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Stat                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Setting               | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Notification                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Management | Agent Setup                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Agent List                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Project Management          | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| カテゴリ       | 機能区分                                         |              Tibero             |              CUBRID             |             Altibase            |              Redis              |             MongoDB             |
+| ---------- | -------------------------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Monitoring | Instance List                                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Instance Monitoring                          | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Multi Database(tenant) 機能 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Slow Query                                   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare                               | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Parallel Query Tree                          | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                                    | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameter                                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                                     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Table Size                                   |              サポート予定             | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Database(TableSpace) Size | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| ^          | SGA Size                                     | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Report     | Daily/Weekly/Monthly Report                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Event      | Event List                                   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                                   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting                                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                                   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management                           | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
 </div>
 
-* * *
+----
 
 ## Kubernetesモニタリング
 
@@ -168,7 +169,7 @@ NVIDIA GPU対応
 
 </div>
 
-* * *
+----
 
 ## CLOUDモニタリング
 
@@ -282,7 +283,7 @@ NVIDIA GPU対応
 
 </details>
 
-* * *
+----
 
 ## ログモニタリング
 
@@ -299,7 +300,7 @@ Java、PHP、Python、Serverアプリケーションでログを収集できま�
 
 </div>
 
-* * *
+----
 
 ## ブラウザーモニタリング
 
@@ -307,7 +308,7 @@ import Browsercompatibility from "./common-items/_browser-compatibility.mdx";
 
 <Browsercompatibility />
 
-* * *
+----
 
 ## 拡張ツール
 
@@ -348,7 +349,7 @@ Telegrafは、socket_writer ouput pluginをサポートするバージョンの�
 
 </div>
 
-* * *
+----
 
 ## 対応ブラウザー
 
@@ -356,21 +357,21 @@ import Supportedbrowser from "./getting-started/_supported-browser.mdx";
 
 <Supportedbrowser />
 
-* * *
+----
 
 ## ファイアウォール
 
 import Proxy from "./getting-started/_proxy.mdx";
 
-<Proxy /> 
+<Proxy />
 
-* * *
+----
 
 ## モバイルアプリ
 
 import Mobileapp from "./getting-started/_mobile-app.mdx";
 
-<Mobileapp />  
+<Mobileapp />
 
 :::note
 
@@ -389,7 +390,7 @@ import Mobileapp from "./getting-started/_mobile-app.mdx";
 
 :::
 
-* * *
+----
 
 ## アラート通知の対応環境{#support-notice}
 
@@ -397,14 +398,14 @@ import Mobileapp from "./getting-started/_mobile-app.mdx";
 
 | 機能              | イベント発生時に受信 | <Link to="/server/set-receive-event#escalation" target='_blank'><Cmdname sid="TTL06149" /></Link> | <Link to="/server/set-event-history#scrollTo-alert-acknowledge" target='_blank'><Cmdname sid="sms_alert_acknowledge" /></Link><br/>(Acknowledge) | <Link to="/server/metric-warning-notice#scrollTo-event-pause" target='_blank'><Cmdname sid="event_pause" /></Link><br/>(ミュート) | <Link to="/server/metric-warning-notice#scrollTo-resolve-event" target='_blank'><Cmdname sid="resolved_event_notification" /></Link><br/>(Recovered) |
 | --------------- | :--------: | :-----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
-| メトリクス           |      ✅     |                            ✅ <sup><Link to="#stateful">(1)</Link></sup>                           |                                                  ✅ <sup><Link to="#acknowledge">(2)</Link></sup>                                                 |                                                               ✅                                                               |                                                                           ✅                                                                          |
+| メトリクス           |      ✅     |                  ✅ <sup><Link to="#stateful">(1)</Link></sup>                  |                                        ✅ <sup><Link to="#acknowledge">(2)</Link></sup>                                        |                                                               ✅                                                               |                                                                           ✅                                                                          |
 | ログ              |      ✅     |                                                 ❌                                                 |                                                                         ❌                                                                        |                                                               ✅                                                               |                                                                           ❌                                                                          |
 | 異常値検知           |      ✅     |                                                 ❌                                                 |                                                                         ❌                                                                        |                                                               ❌                                                               |                                                                           ❌                                                                          |
 | AI基盤のヒットマップパターン |      ✅     |                                                 ❌                                                 |                                                                         ❌                                                                        |                                                               ✅                                                               |                                                                           ❌                                                                          |
 | エージェント非活性化アラート  |      ✅     |                                                 ❌                                                 |                                                                         ❌                                                                        |                                                               ❌                                                               |                                                                           ✅                                                                          |
 | アプリケーション        |      ✅     |                                                 ✅                                                 |                                                                         ❌                                                                        |                                                               ✅                                                               |                                                                           ✅                                                                          |
-| サーバー            |      ✅     |                                                 ✅                                                 |                                                  ✅ <sup><Link to="#acknowledge">(2)</Link></sup>                                                 |                                                               ❌                                                               |                                                                           ✅                                                                          |
-| サーバープロセス        |      ✅     |                                                 ✅                                                 |                                                  ✅ <sup><Link to="#acknowledge">(2)</Link></sup>                                                 |                                                               ❌                                                               |                                                                           ✅                                                                          |
+| サーバー            |      ✅     |                                                 ✅                                                 |                                        ✅ <sup><Link to="#acknowledge">(2)</Link></sup>                                        |                                                               ❌                                                               |                                                                           ✅                                                                          |
+| サーバープロセス        |      ✅     |                                                 ✅                                                 |                                        ✅ <sup><Link to="#acknowledge">(2)</Link></sup>                                        |                                                               ❌                                                               |                                                                           ✅                                                                          |
 | サーバログキーワード      |      ✅     |                                                 ❌                                                 |                                                                         ❌                                                                        |                                                               ❌                                                               |                                                                           ❌                                                                          |
 | データベース          |      ✅     |                                                 ✅                                                 |                                                                         ❌                                                                        |                                                               ✅                                                               |                                                                           ❌                                                                          |
 | コンテナ            |      ✅     |                                                 ✅                                                 |                                                                         ❌                                                                        |                                                               ✅                                                               |                                                                           ✅                                                                          |

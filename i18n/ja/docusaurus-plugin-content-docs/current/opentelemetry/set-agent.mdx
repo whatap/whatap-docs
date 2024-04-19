@@ -14,13 +14,13 @@ OpenTelemetryから様々な指標を収集し、処理するようにエージ�
 
 - **otel_grpc_server_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   OpenTelemetry protocol(OTLP)を通じて転送されるデータを受信するためのGrpcサーバーを活性化します。
 
 - **otel_grpc_server_port** <span class='type'>String</span>
 
-  デフォルト値`6600`
+  既定値`6600`
 
   GrpcサーバーのListenポートです。 
 
@@ -32,13 +32,13 @@ OpenTelemetryから様々な指標を収集し、処理するようにエージ�
 
 - **otel_grpc_server_gzip_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   Grpcサーバから読み込むデータの暗号化により`gzip`を活性化します。 
 
 - **debug_otel_grpc_server_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   OpenTelemetry Traceデータ処理に関するデバッグログの出力を活性化します。
 
@@ -117,73 +117,73 @@ otel_attr_tx_useragent_keys=http.user_agent
 
 - **otel_trace_server_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   OpenTelemetry Traceデータ処理を活性化します。 
 
 - **otel_trace_queue_size** <span class='type'>Int</span>
 
-  デフォルト値`5000`
+  既定値`5000`
 
   OpenTelemetry Traceデータ処理のためのキューサイズを設定します。 
 
 - **otel_span_collector_max** <span class='type'>Int</span>
 
-  デフォルト値`100000`
+  既定値`100000`
 
   OpenTelemetry TraceデータのSpanデータバッファの最大サイズ(個数)を指定します。 
 
 - **otel_attr_dbcon_keys** <span class='type'>String</span>
 
-  デフォルト値`sql.system,db.connection_string,db.system`
+  既定値`sql.system,db.connection_string,db.system`
 
   DB Connection情報として活用する属性名を入力してください。 その情報を活用してWhaTapでは**DB Connection**ステップで表示します。
 
 - **otel_attr_sql_keys** <span class='type'>String</span>
 
-  デフォルト値`db.statement,sql.query`
+  既定値`db.statement,sql.query`
 
   SQLクエリ情報として活用する属性名を入力してください。 その情報を活用してWhaTapでは**SQL**ステップで表示します。 
 
 - **otel_attr_httpc_keys** <span class='type'>String</span>
 
-  デフォルト値`url.full,http.url,http.target`
+  既定値`url.full,http.url,http.target`
 
   HTTP call情報として活用する属性名を入力してください。 その情報を活用してWhaTapでは**HTTP call**ステップで表示します。 
 
 - **otel_attr_tx_url_keys** <span class='type'>String</span>
 
-  デフォルト値`http.url,http.route,http.target,tyk.api.path,http.url`
+  既定値`http.url,http.route,http.target,tyk.api.path,http.url`
 
   トランザクションのサービスURL情報として活用する属性名を入力してください。
 
 - **otel_attr_tx_host_keys** <span class='type'>String</span>
 
-  デフォルト値`http.host`
+  既定値`http.host`
 
   トランザクションのホスト情報として活用する属性名を入力してください。
 
 - **otel_attr_tx_method_keys** <span class='type'>String</span>
 
-  デフォルト値`http.method,http.request.method`
+  既定値`http.method,http.request.method`
 
   HTTP Method情報として活用する属性名を入力してください。
 
 - **otel_attr_tx_status_keys** <span class='type'>String</span>
 
-  デフォルト値`http.status_code`
+  既定値`http.status_code`
 
   トランザクションのHTTPステータスコード情報として活用する属性名を入力してください。
 
 - **otel_attr_tx_useragent_keys** <span class='type'>String</span>
 
-  デフォルト値`http.user_agent`
+  既定値`http.user_agent`
 
   トランザクションのUser-Agent情報として活用する属性名を入力してください。
 
 - **otel_attr_tx_clientip_keys** <span class='type'>String</span>
 
-  デフォルト値`net.peer.ip,net.socket.peer.addr`
+  既定値`net.peer.ip,net.socket.peer.addr`
 
   トランザクションのクライアントIP情報として活用する属性名を入力してください。
 
@@ -193,7 +193,7 @@ otel_attr_tx_useragent_keys=http.user_agent
 
 - **otel_attr_error_keys** <span class='type'>String</span>
 
-  デフォルト値`error.type`
+  既定値`error.type`
 
   トランザクションのエラー情報として活用する属性名を入力してください。
 
@@ -209,13 +209,13 @@ OpenTelemetryのMetricデータ処理の詳細については、[次のリンク
 
 - **otel_metric_server_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   OpenTelemetry Metricデータ処理を活性化します。
 
 - **otel_metric_queue_size** <span class='type'>Int</span>
 
-  デフォルト値`5000`
+  既定値`5000`
 
   Opentelemetry Metricデータ処理のためのキューサイズを設定します。
 
@@ -231,12 +231,12 @@ OpenTelemetryのLogデータ処理の詳細については、[次のリンク](h
 
 - **otel_log_server_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   Opentelemetry Logデータ処理を活性化します。
 
 - **otel_log_queue_size** <span class='type'>Int</span>
 
-  デフォルト値`5000`
+  既定値`5000`
 
   Opentelemetry Logデータ処理のためのキューサイズを設定します。
