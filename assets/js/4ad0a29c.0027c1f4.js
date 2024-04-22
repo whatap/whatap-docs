@@ -492,7 +492,7 @@ function _createMdxContent(props) {
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
               type: "tip",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                children: "리소스 사이의 연결 관계를 시각적으로 확인할 수 있는 차트입니다. 선택한 블록과 관련한 Namespace와 Deployment(DaemonSet), ReplicaSet, Pod, Container, Application 들의 관계를 한눈에 파악하는데 유용합니다."
+                children: "리소스 사이의 연결 관계를 시각적으로 확인할 수 있는 차트입니다. 선택한 블록과 관련한 Namespace와 Deployment, ReplicaSet, DaemonSet, Pod, Container, Application 들의 관계를 한눈에 파악하는데 유용합니다."
               })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
