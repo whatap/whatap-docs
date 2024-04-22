@@ -30,6 +30,9 @@ axios.get(url)
             // <h3>를 찾아냄
             const h3Elements = $(element).find('h3');
 
+            // <h4>를 찾아냄
+            const h4Elements = $(element).find('h4');
+
             // 각 <h3>에 대해 처리
             h3Elements.each((index, h3Element) => {
                 const prevH3 = $(h3Element).prevAll('h3').first(); // <h3>의 이전 형제 <h3>
@@ -62,7 +65,7 @@ axios.get(url)
                     const features2 = new Set();
 
                     featureInP2.each((idx, code) => {
-                      features2.add($(code).parent().html().trim());
+                        features2.add($(code).parent().html().trim());
                     });
                     featureInUl2.each((idx, code) => {
                         features2.add($(code).parent().html().trim());
@@ -74,51 +77,7 @@ axios.get(url)
                         mdxContent += [...features2].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
                     } 
-                }
-            //     else if ((prevH3.length > 0) && (featureInP.length > 0 || featureInUl.length > 0)) {
-            //       //
-            //       const version = $(element).find('h2').text().trim();
-            //       const date = $(element).find('h2 + p').text().trim();
-            //       const productName = $(h3Element).text().trim();
-
-            //       // 중복을 제거한 <code class="Feature"> 내용 가져오기
-            //       const features = new Set();
-            //       featureInP2.each((idx, code) => {
-            //           features.add($(code).parent().html().trim());
-            //       });
-            //       featureInUl2.each((idx, code) => {
-            //           features.add($(code).parent().html().trim());
-            //       });
-
-            //       // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-            //       if (features.size > 0) {
-            //         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-            //         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-            //         mdxContent += '\n\n';
-            //     }
-            //   }             
-            //     else if ((prevH3.length === 0)&&(featureInP2.length > 0 || featureInUl2.length > 0)) {
-            //       // <h3>가 하나인 경우 처리
-            //       const version = $(element).find('h2').text().trim();
-            //       const date = $(element).find('h2 + p').text().trim();
-            //       const productName = $(h3Element).text().trim();
-
-            //       // 중복을 제거한 <code class="Feature"> 내용 가져오기
-            //       const features = new Set();
-            //       featureInP2.each((idx, code) => {
-            //           features.add($(code).parent().html().trim());
-            //       });
-            //       featureInUl2.each((idx, code) => {
-            //           features.add($(code).parent().html().trim());
-            //       });
-
-            //       // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-            //       if (features.size > 0) {
-            //         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-            //         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-            //         mdxContent += '\n\n';
-            //     }
-            //   }                 
+                }               
                 else {
                     // <code class="Feature">가 없을 경우 pass
                     return;
