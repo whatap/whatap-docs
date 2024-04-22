@@ -4,7 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // 크롤링할 웹 페이지 URL
-const url = 'https://docs.whatap.io/release-notes/service/service-2_2_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // 고쳐야 하는 것:
 // 묶음에 feature 있을 경우, feature 없는 <p> 배열이 출력
@@ -44,12 +44,12 @@ axios.get(url)
                 const nextP = $(h3Element).next('p').first(); // <h3> 다음 <p>
                 
                 // 다음으로 <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
-                const featureInP2 = nextP.find('code.Feature');
-                const featureInUl2 = nextUl.find('code.Feature');
+                const featureInP = nextP.find('code.Feature');
+                const featureInUl = nextUl.find('code.Feature');
 
                 // <h3>가 존재할 때
                 // <code class="Feature">가 발견되었으면 처리
-                if (featureInP2.length > 0 || featureInUl2.length > 0) {
+                if (featureInP.length > 0 || featureInUl.length > 0) {
                     // 버전 정보 가져오기
                     const version = $(element).find('h2').text().trim();
                     // 날짜 정보 가져오기
@@ -58,22 +58,22 @@ axios.get(url)
                     const productName = $(h3Element).text().trim();
 
                     // 중복을 제거한 <code class="Feature"> 내용 가져오기
-                    const features2 = new Set();
+                    const features = new Set();
 
-                    featureInP2.each((idx, code) => {
-                        features2.add($(code).parent().html().trim());
+                    featureInP.each((idx, code) => {
+                        features.add($(code).parent().html().trim());
                     });
-                    featureInUl2.each((idx, code) => {
-                        features2.add($(code).parent().html().trim());
+                    featureInUl.each((idx, code) => {
+                        features.add($(code).parent().html().trim());
                     });
 
                     // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                    if (features2.size > 0) {
+                    if (features.size > 0) {
                         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                        mdxContent += [...features2].map(feature => `- ${feature}`).join('\n\n');
+                        mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
                     } 
-                }               
+                } 
                 else {
                     // <code class="Feature">가 없을 경우 pass
                     return;
@@ -83,7 +83,7 @@ axios.get(url)
             // <h3> 신규 기능 <h4> 제품명 
             h4Elements.each((index, h4Element) => {
                 // <h4> 찾기
-                const nextH4 = $(h4Element).next('h4').first(); // <h4>의 다음 형제 <h3>
+                const nextH4 = $(h4Element).next('h4').first(); // <h4>의 다음 형제 <h4>
                 const nextUl = $(h4Element).next('ul').first(); // <h4> 다음 <ul>
                 const nextP = $(h4Element).next('p').first(); // <h4> 다음 <p>
                 
@@ -91,7 +91,7 @@ axios.get(url)
                 const NewInP = nextP.find('code.New');
                 const NewInUl = nextUl.find('code.New');
 
-                // New 다음으로 오는 p, ul 찾기
+                // New 다음으로 오는 p, ul 찾기 
                 const NewNextP = $(NewInP).next('p').first();
                 const NewPNextUl = $(NewInP).next('ul').first();
 
@@ -130,6 +130,7 @@ axios.get(url)
                     });
                     NewPNextUl.each((idx, code) => {
                         NewsList.add($(code).parent().html().trim());
+                        console.log(NewPNextUl);
                     });
                     NewUlNextP.each((idx, code) => {
                         NewsList.add($(code).parent().html().trim());
