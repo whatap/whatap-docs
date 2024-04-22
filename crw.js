@@ -17,7 +17,7 @@ const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // 신규 기능만 해결하면 될 듯??
 
-// Axios를 사용하여 웹 페이지 HTML 가져오기 10
+// Axios를 사용하여 웹 페이지 HTML 가져오기 11
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -36,9 +36,11 @@ axios.get(url)
                 const prevUl = $(h3Element).prevAll('ul').first(); // <h3> 이전의 <ul>
                 const prevP = $(h3Element).prevAll('p').first(); // <h3> 이전의 <p>
                 
+                const nextH3 = $(h3Element).next('h3').first(); // <h3>의 다음 형제 <h3>
                 const nextUl = $(h3Element).next('ul').first(); // <h3> 다음 <ul>
                 const nextP = $(h3Element).next('p').first(); // <h3> 다음 <p>
-
+                
+                // 다음으로 <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
                 const featureInP2 = nextP.find('code.Feature');
                 const featureInUl2 = nextUl.find('code.Feature');
 
@@ -46,75 +48,77 @@ axios.get(url)
                 const featureInP = prevP.find('code.Feature');
                 const featureInUl = prevUl.find('code.Feature');
 
+                // <h3>가 존재할 때
                 // <code class="Feature">가 발견되었으면 처리
-                if (featureInP.length > 0 || featureInUl.length > 0) {
+                if (featureInP2.length > 0 || featureInUl2.length > 0) {
                     // 버전 정보 가져오기
                     const version = $(element).find('h2').text().trim();
                     // 날짜 정보 가져오기
                     const date = $(element).find('h2 + p').text().trim();
                     // 제품명 가져오기
-                    const productName = $(prevH3).text().trim();
+                    const productName = $(h3Element).text().trim();
 
                     // 중복을 제거한 <code class="Feature"> 내용 가져오기
-                    const features = new Set();
-                    featureInP.each((idx, code) => {
-                        features.add($(code).parent().html().trim());
+                    const features2 = new Set();
+
+                    featureInP2.each((idx, code) => {
+                      features2.add($(code).parent().html().trim());
                     });
-                    featureInUl.each((idx, code) => {
-                        features.add($(code).parent().html().trim());
+                    featureInUl2.each((idx, code) => {
+                        features2.add($(code).parent().html().trim());
                     });
 
                     // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                    if (features.size > 0) {
+                    if (features2.size > 0) {
                         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                        mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+                        mdxContent += [...features2].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
-                    }
+                    } 
                 }
-                else if (featureInP2.length > 0 || featureInUl2.length > 0) {
-                  //
-                  const version = $(element).find('h2').text().trim();
-                  const date = $(element).find('h2 + p').text().trim();
-                  const productName = $(h3Element).text().trim();
+            //     else if ((prevH3.length > 0) && (featureInP.length > 0 || featureInUl.length > 0)) {
+            //       //
+            //       const version = $(element).find('h2').text().trim();
+            //       const date = $(element).find('h2 + p').text().trim();
+            //       const productName = $(h3Element).text().trim();
 
-                  // 중복을 제거한 <code class="Feature"> 내용 가져오기
-                  const features = new Set();
-                  featureInP2.each((idx, code) => {
-                      features.add($(code).parent().html().trim());
-                  });
-                  featureInUl2.each((idx, code) => {
-                      features.add($(code).parent().html().trim());
-                  });
+            //       // 중복을 제거한 <code class="Feature"> 내용 가져오기
+            //       const features = new Set();
+            //       featureInP2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
+            //       featureInUl2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
 
-                  // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                  if (features.size > 0) {
-                    mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                    mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-                    mdxContent += '\n\n';
-                }
-              }             
-                else if ((prevH3.length === 0)&&(featureInP2.length > 0 || featureInUl2.length > 0)) {
-                  // <h3>가 하나인 경우 처리
-                  const version = $(element).find('h2').text().trim();
-                  const date = $(element).find('h2 + p').text().trim();
-                  const productName = $(h3Element).text().trim();
+            //       // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+            //       if (features.size > 0) {
+            //         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+            //         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+            //         mdxContent += '\n\n';
+            //     }
+            //   }             
+            //     else if ((prevH3.length === 0)&&(featureInP2.length > 0 || featureInUl2.length > 0)) {
+            //       // <h3>가 하나인 경우 처리
+            //       const version = $(element).find('h2').text().trim();
+            //       const date = $(element).find('h2 + p').text().trim();
+            //       const productName = $(h3Element).text().trim();
 
-                  // 중복을 제거한 <code class="Feature"> 내용 가져오기
-                  const features = new Set();
-                  featureInP2.each((idx, code) => {
-                      features.add($(code).parent().html().trim());
-                  });
-                  featureInUl2.each((idx, code) => {
-                      features.add($(code).parent().html().trim());
-                  });
+            //       // 중복을 제거한 <code class="Feature"> 내용 가져오기
+            //       const features = new Set();
+            //       featureInP2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
+            //       featureInUl2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
 
-                  // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                  if (features.size > 0) {
-                    mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                    mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-                    mdxContent += '\n\n';
-                }
-              }                 
+            //       // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+            //       if (features.size > 0) {
+            //         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+            //         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+            //         mdxContent += '\n\n';
+            //     }
+            //   }                 
                 else {
                     // <code class="Feature">가 없을 경우 pass
                     return;

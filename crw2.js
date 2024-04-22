@@ -690,3 +690,121 @@ axios.get(url)
     .catch(error => {
         console.error('Error fetching web page:', error);
     });
+
+// Axios를 사용하여 웹 페이지 HTML 가져오기 11
+axios.get(url)
+    .then(response => {
+        // Cheerio를 사용하여 HTML 파싱
+        const $ = cheerio.load(response.data);
+
+        let mdxContent = ''; // 모든 정보를 저장할 MDX 파일의 내용
+
+        // 각 릴리스 노트 항목을 순회하면서 정보 추출
+        $('section.remark-sectionize-h2').each((index, element) => {
+            // <h3>를 찾아냄
+            const h3Elements = $(element).find('h3');
+
+            // 각 <h3>에 대해 처리
+            h3Elements.each((index, h3Element) => {
+                const prevH3 = $(h3Element).prevAll('h3').first(); // <h3>의 이전 형제 <h3>
+                const prevUl = $(h3Element).prevAll('ul').first(); // <h3> 이전의 <ul>
+                const prevP = $(h3Element).prevAll('p').first(); // <h3> 이전의 <p>
+                
+                const nextH3 = $(h3Element).next('h3').first(); // <h3>의 다음 형제 <h3>
+                const nextUl = $(h3Element).next('ul').first(); // <h3> 다음 <ul>
+                const nextP = $(h3Element).next('p').first(); // <h3> 다음 <p>
+                
+                // 다음으로 <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
+                const featureInP2 = nextP.find('code.Feature');
+                const featureInUl2 = nextUl.find('code.Feature');
+
+                // <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
+                const featureInP = prevP.find('code.Feature');
+                const featureInUl = prevUl.find('code.Feature');
+
+                // <h3>가 존재할 때
+                // <code class="Feature">가 발견되었으면 처리
+                if (featureInP2.length > 0 || featureInUl2.length > 0) {
+                    // 버전 정보 가져오기
+                    const version = $(element).find('h2').text().trim();
+                    // 날짜 정보 가져오기
+                    const date = $(element).find('h2 + p').text().trim();
+                    // 제품명 가져오기
+                    const productName = $(h3Element).text().trim();
+
+                    // 중복을 제거한 <code class="Feature"> 내용 가져오기
+                    const features2 = new Set();
+
+                    featureInP2.each((idx, code) => {
+                      features2.add($(code).parent().html().trim());
+                    });
+                    featureInUl2.each((idx, code) => {
+                        features2.add($(code).parent().html().trim());
+                    });
+
+                    // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                    if (features2.size > 0) {
+                        mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                        mdxContent += [...features2].map(feature => `- ${feature}`).join('\n\n');
+                        mdxContent += '\n\n';
+                    } 
+                }
+            //     else if ((prevH3.length > 0) && (featureInP.length > 0 || featureInUl.length > 0)) {
+            //       //
+            //       const version = $(element).find('h2').text().trim();
+            //       const date = $(element).find('h2 + p').text().trim();
+            //       const productName = $(h3Element).text().trim();
+
+            //       // 중복을 제거한 <code class="Feature"> 내용 가져오기
+            //       const features = new Set();
+            //       featureInP2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
+            //       featureInUl2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
+
+            //       // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+            //       if (features.size > 0) {
+            //         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+            //         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+            //         mdxContent += '\n\n';
+            //     }
+            //   }             
+            //     else if ((prevH3.length === 0)&&(featureInP2.length > 0 || featureInUl2.length > 0)) {
+            //       // <h3>가 하나인 경우 처리
+            //       const version = $(element).find('h2').text().trim();
+            //       const date = $(element).find('h2 + p').text().trim();
+            //       const productName = $(h3Element).text().trim();
+
+            //       // 중복을 제거한 <code class="Feature"> 내용 가져오기
+            //       const features = new Set();
+            //       featureInP2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
+            //       featureInUl2.each((idx, code) => {
+            //           features.add($(code).parent().html().trim());
+            //       });
+
+            //       // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+            //       if (features.size > 0) {
+            //         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+            //         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+            //         mdxContent += '\n\n';
+            //     }
+            //   }                 
+                else {
+                    // <code class="Feature">가 없을 경우 pass
+                    return;
+                }
+            });
+        });
+
+        // MDX 파일로 데이터 저장
+        const fileName = './crw-data/crawled-data.mdx'; // 파일 경로 및 이름 설정
+        fs.writeFileSync(fileName, mdxContent);
+        console.log(`MDX file saved: ${fileName}`);
+    })
+    .catch(error => {
+        console.error('Error fetching web page:', error);
+    });
