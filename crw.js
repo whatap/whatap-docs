@@ -4,7 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // 크롤링할 웹 페이지 URL
-const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_2_x';
 
 // 고쳐야 하는 것:
 // 묶음에 feature 있을 경우, feature 없는 <p> 배열이 출력
@@ -47,10 +47,6 @@ axios.get(url)
                 const featureInP2 = nextP.find('code.Feature');
                 const featureInUl2 = nextUl.find('code.Feature');
 
-                // <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
-                const featureInP = prevP.find('code.Feature');
-                const featureInUl = prevUl.find('code.Feature');
-
                 // <h3>가 존재할 때
                 // <code class="Feature">가 발견되었으면 처리
                 if (featureInP2.length > 0 || featureInUl2.length > 0) {
@@ -77,6 +73,79 @@ axios.get(url)
                         mdxContent += [...features2].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
                     } 
+                }               
+                else {
+                    // <code class="Feature">가 없을 경우 pass
+                    return;
+                }
+            });
+
+            // <h3> 신규 기능 <h4> 제품명 
+            h4Elements.each((index, h4Element) => {
+                // <h4> 찾기
+                const nextH4 = $(h4Element).next('h4').first(); // <h4>의 다음 형제 <h3>
+                const nextUl = $(h4Element).next('ul').first(); // <h4> 다음 <ul>
+                const nextP = $(h4Element).next('p').first(); // <h4> 다음 <p>
+                
+                // <h4> 다음으로 <code class="New">가 있는 <p> 또는 <ul>을 찾음
+                const NewInP = nextP.find('code.New');
+                const NewInUl = nextUl.find('code.New');
+
+                // New 다음으로 오는 p, ul 찾기
+                const NewNextP = $(NewInP).next('p').first();
+                const NewPNextUl = $(NewInP).next('ul').first();
+
+                const NewNextUl = $(NewInUl).next('ul').first();
+                const NewUlNextP = $(NewInUl).next('p').first();
+
+                // <h4>가 존재할 때
+                // <code class="New">가 발견되었으면 처리
+                if (NewInP.length > 0 || NewInUl.length > 0) {
+                    // 버전 정보 가져오기
+                    const version = $(element).find('h2').text().trim();
+                    // 날짜 정보 가져오기
+                    const date = $(element).find('h2 + p').text().trim();
+                    // 제품명 가져오기
+                    const productName = $(h4Element).text().trim();
+
+                    // 중복을 제거한 <code class="New"> 내용 가져오기
+                    const News = new Set();
+
+                    //중복을 제거한 new 안의 리스트
+                    const NewsList = new Set();
+
+                    NewInP.each((idx, code) => {
+                        News.add($(code).parent().html().trim());
+                    });
+                    NewInUl.each((idx, code) => {
+                        News.add($(code).parent().html().trim());
+                    });
+
+                    // NewsList 
+                    NewNextP.each((idx, code) => {
+                        NewsList.add($(code).parent().html().trim());
+                    });
+                    NewNextUl.each((idx, code) => {
+                        NewsList.add($(code).parent().html().trim());
+                    });
+                    NewPNextUl.each((idx, code) => {
+                        NewsList.add($(code).parent().html().trim());
+                    });
+                    NewUlNextP.each((idx, code) => {
+                        NewsList.add($(code).parent().html().trim());
+                    });
+
+                    // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                    if (News.size > 0 && NewsList.size === 0) {
+                        mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                        mdxContent += [...News].map(New => `- ${New}`).join('\n\n');
+                        mdxContent += '\n\n';
+                    } else if (News.size > 0 && NewsList.size > 0) {
+                        mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                        mdxContent += [...News].map(New => `- ${New}`).join('\n\n');
+                        mdxContent += [...NewsList].map(New => `- ${New}`).join('\n\n');
+                        mdxContent += '\n\n';
+                    }
                 }               
                 else {
                     // <code class="Feature">가 없을 경우 pass
