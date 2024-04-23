@@ -267,6 +267,18 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
               children: "Changed"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_eventNoti",
+              className: "uitext"
+            }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "alert_receive_settings_by_member",
+              className: "uitext"
+            }), " 섹션에서 사용자 정보를 마스킹 처리하지 않도록 변경"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Changed"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "side_eventSetting",
               className: "uitext"
             }), " 메뉴에서 실시간 로그 이벤트 또는 복합 로그 이벤트를 JSON 형식으로 불러올 경우 id 속성을 제외하고 추가 또는 덮어쓰기 하도록 수정"]
