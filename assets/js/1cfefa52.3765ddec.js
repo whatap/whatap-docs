@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_3_x",
   "title": "Service 2.3.x",
-  "description": "Service 2.3.14",
+  "description": "Service 2.3.15",
   "source": "@site/docs/release-notes/service/service-2.3.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_3_x",
@@ -62,6 +62,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.3.15",
+  "id": "service-2315",
+  "level": 2
+}, {
+  "value": "<code>Application</code>",
+  "id": "application",
+  "level": 3
+}, {
   "value": "Service 2.3.14",
   "id": "service-2314",
   "level": 2
@@ -75,7 +83,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application",
+  "id": "application-1",
   "level": 3
 }, {
   "value": "Service 2.3.12",
@@ -83,7 +91,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-1",
+  "id": "application-2",
   "level": 3
 }, {
   "value": "Service 2.3.11",
@@ -91,7 +99,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-2",
+  "id": "application-3",
   "level": 3
 }, {
   "value": "Service 2.3.10",
@@ -127,7 +135,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-3",
+  "id": "application-4",
   "level": 3
 }, {
   "value": "<code>Server</code>",
@@ -143,7 +151,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-4",
+  "id": "application-5",
   "level": 3
 }, {
   "value": "Service 2.3.5",
@@ -151,7 +159,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-5",
+  "id": "application-6",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -231,7 +239,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>Application</code>",
-  "id": "application-6",
+  "id": "application-7",
   "level": 3
 }, {
   "value": "공통",
@@ -313,6 +321,48 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-2315",
+        children: "Service 2.3.15"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 04월 23일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "application",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Application"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_statistics",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_statSql",
+                className: "uitext"
+              }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL07712",
+                className: "uitext"
+              }), " 컬럼의 버튼을 선택하면 간헐적으로 화이트 아웃 현상이 발생하는 문제 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_agentsConfiguration",
+                className: "uitext"
+              }), " 메뉴의 에이전트 선택 목록에서 에이전트 이름이 잘려 보이는 현상 수정"]
+            }), "\n"]
+          }), "\n"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-2314",
         children: "Service 2.3.14"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -380,7 +430,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application",
+          id: "application-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -403,7 +453,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-1",
+          id: "application-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -451,7 +501,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-2",
+          id: "application-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -594,7 +644,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-3",
+          id: "application-4",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -682,7 +732,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-4",
+          id: "application-5",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -705,7 +755,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-5",
+          id: "application-6",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -1376,7 +1426,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-6",
+          id: "application-7",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })

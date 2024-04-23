@@ -200,7 +200,7 @@ function _createMdxContent(props) {
       product: "dotnet",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-c",
+          className: "language-csharp",
           metastring: "title='.NET'",
           children: "DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)\nSystem.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr,IntPtr,IntPtr,Int32)\nSystem.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr,IntPtr,IntPtr,Int32)\nDomainNeutralILStubClass.IL_STUB_PInvoke(IntPtr,System.Web.RequestNotificationStatus ByRef)\nSystem.Threading.ThreadHelper.ThreadStart()\nSystem.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object)\nSystem.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object,Boolean)\nSystem.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object,Boolean)\nSystem.Net.TimerThread.ThreadProc()\nSystem.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],Int32,Boolean)\nSystem.Threading.Thread.Sleep(Int32)\n"
         })

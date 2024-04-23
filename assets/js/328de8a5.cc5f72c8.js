@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15440],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16173],{
 
 /***/ 90131:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -143,7 +143,7 @@ function _createMdxContent(props) {
         }), " 입니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-c",
+          className: "language-csharp",
           children: "DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)\n"
         })
       })]
@@ -613,7 +613,7 @@ function _createMdxContent(props) {
       product: "dotnet",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-c",
+          className: "language-csharp",
           metastring: "title='.NET'",
           children: "DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)\nSystem.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr,IntPtr,IntPtr,Int32)\nSystem.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr,IntPtr,IntPtr,Int32)\nDomainNeutralILStubClass.IL_STUB_PInvoke(IntPtr,System.Web.RequestNotificationStatus ByRef)\nSystem.Threading.ThreadHelper.ThreadStart()\nSystem.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object)\nSystem.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object,Boolean)\nSystem.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object,Boolean)\nSystem.Net.TimerThread.ThreadProc()\nSystem.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],Int32,Boolean)\nSystem.Threading.Thread.Sleep(Int32)\n"
         })
@@ -679,7 +679,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 42830:
+/***/ 66596:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -701,7 +701,7 @@ const frontMatter = {
 	title: '스택',
 	description: '애플리케이션 분석을 안내합니다.',
 	tags: [
-		'.NET',
+		'Java',
 		'스택',
 		'애플리케이션',
 		'분석하기',
@@ -710,20 +710,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/analysis-apm",
+  "id": "java/analysis-apm",
   "title": "스택",
   "description": "애플리케이션 분석을 안내합니다.",
-  "source": "@site/docs/dotnet/analysis-apm.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/analysis-apm",
-  "permalink": "/whatap-docs/dotnet/analysis-apm",
+  "source": "@site/docs/java/analysis-apm.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/analysis-apm",
+  "permalink": "/whatap-docs/java/analysis-apm",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/analysis-apm.mdx",
+  "editUrl": "undefined/docs/java/analysis-apm.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "label": "스택",
@@ -748,21 +748,21 @@ const metadata = {
     "title": "스택",
     "description": "애플리케이션 분석을 안내합니다.",
     "tags": [
-      ".NET",
+      "Java",
       "스택",
       "애플리케이션",
       "분석하기",
       "UI"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "성능 추이",
-    "permalink": "/whatap-docs/dotnet/performance-trend"
+    "permalink": "/whatap-docs/java/performance-trend"
   },
   "next": {
     "title": "큐브",
-    "permalink": "/whatap-docs/dotnet/cube"
+    "permalink": "/whatap-docs/java/cube"
   }
 };
 const assets = {
