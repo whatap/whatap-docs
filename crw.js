@@ -4,45 +4,39 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // 크롤링할 웹 페이지 URL
-const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_0_x';
 
-// URL을 '/'로 분할하여 배열로 만든 후, 배열의 마지막 요소를 가져옵니다.
+// URL을 '/'로 분할하여 배열로 만든 후, 배열의 마지막 요소 가져오기
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
-console.log(lastUrl); 
+console.log(lastUrl);
 
-// 고쳐야 하는 것:
-// 신규 기능 등 구성 요건 다른 경우 조건 생성 필요
-// 으앙나아아아아아악!!
-
-// feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
-
-// 중복건 재수정 필요
-
-// Axios를 사용하여 웹 페이지 HTML 가져오기 16
+// Axios를 사용하여 웹 페이지 HTML 가져오기 17
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
         const $ = cheerio.load(response.data);
 
-        let mdxContent = ''; // 모든 정보를 저장할 MDX 파일의 내용
+        // MDX 파일로 데이터 저장할 변수
+        let mdxContent = '';
+
+        // 중복을 제거하기 위한 Set
+        let contentSet = new Set();
 
         // 각 릴리스 노트 항목을 순회하면서 정보 추출
         $('section.remark-sectionize-h2').each((index, element) => {
+            // 버전 정보 가져오기
+            const version = $(element).find('h2').text().trim();
+            // 날짜 정보 가져오기
+            const date = $(element).find('h2 + p').text().trim();
+
             // <h3>를 찾아냄
-            const h3Elements = $(element).find('h3');
-
-            // 각 <h3>에 대해 처리
-            h3Elements.each((index, h3Element) => {
-                // <h4>를 찾음
-                const h4Elements = $(h3Element).nextUntil('h3', 'h4');
-
-                // 버전 정보 가져오기
-                const version = $(element).find('h2').text().trim();
-                // 날짜 정보 가져오기
-                const date = $(element).find('h2 + p').text().trim();
+            $(element).find('h3').each((index, h3Element) => {
                 // 제품명 가져오기
                 const productName = $(h3Element).text().trim();
+
+                // <h4>를 찾음
+                const h4Elements = $(h3Element).nextUntil('h3', 'h4');
 
                 // <h4>가 있는 경우
                 if (h4Elements.length > 0) {
@@ -64,12 +58,17 @@ axios.get(url)
                         featureInP.each((idx, code) => {
                             features.add($(code).parent().html().trim());
                         });
-                        // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                        if (features.size > 0) {
-                            mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                            mdxContent += `### ${featureName}\n\n`;
-                            mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-                            mdxContent += '\n\n';
+                        // 출력할 필요 없는 경우는 건너뜁니다.
+                        if (features.size === 0) return;
+
+                        // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                        const content = `## ${version} - ${date} - ${productName}\n\n` +
+                            `### ${featureName}\n\n` +
+                            [...features].map(feature => `- ${feature}`).join('\n\n') +
+                            '\n\n';
+                        if (!contentSet.has(content)) {
+                            mdxContent += content;
+                            contentSet.add(content);
                         }
                     });
                 } else {
@@ -88,19 +87,23 @@ axios.get(url)
                     featureInP.each((idx, code) => {
                         features.add($(code).parent().html().trim());
                     });
-                    // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                    if (features.size > 0) {
-                        mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                        mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-                        mdxContent += '\n\n';
+                    // 출력할 필요 없는 경우는 건너뜁니다.
+                    if (features.size === 0) return;
+
+                    // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                    const content = `## ${version} - ${date} - ${productName}\n\n` +
+                        [...features].map(feature => `- ${feature}`).join('\n\n') +
+                        '\n\n';
+                    if (!contentSet.has(content)) {
+                        mdxContent += content;
+                        contentSet.add(content);
                     }
                 }
             });
-
         });
 
         // MDX 파일로 데이터 저장
-        const fileName = './crw-data/'+lastUrl+'.mdx'; // 파일 경로 및 이름 설정
+        const fileName = `./crw-data/${lastUrl}.mdx`; // 파일 경로 및 이름 설정
         fs.writeFileSync(fileName, mdxContent);
         console.log(`MDX file saved: ${fileName}`);
     })
