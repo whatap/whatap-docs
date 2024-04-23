@@ -4,7 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // 크롤링할 웹 페이지 URL
-const url = 'https://docs.whatap.io/release-notes/service/service-2_2_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // URL을 '/'로 분할하여 배열로 만든 후, 배열의 마지막 요소를 가져옵니다.
 const segments = url.split('/');
@@ -17,8 +17,9 @@ console.log(lastUrl);
 
 // feature 기준으로 제품명 가져오기, 리스트 형식 출력 방식 
 
+// 중복건 재수정 필요
 
-// Axios를 사용하여 웹 페이지 HTML 가져오기 13
+// Axios를 사용하여 웹 페이지 HTML 가져오기 16
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -31,113 +32,68 @@ axios.get(url)
             // <h3>를 찾아냄
             const h3Elements = $(element).find('h3');
 
-            // <h4>를 찾아냄
-            const h4Elements = $(element).find('h4');
-
             // 각 <h3>에 대해 처리
             h3Elements.each((index, h3Element) => {
-                
-                const nextH3 = $(h3Element).next('h3').first(); // <h3>의 다음 형제 <h3>
-                const nextUl = $(h3Element).next('ul').first(); // <h3> 다음 <ul>
-                const nextP = $(h3Element).next('p').first(); // <h3> 다음 <p>
+                // <h4>를 찾음
+                const h4Elements = $(h3Element).nextUntil('h3', 'h4');
 
-                // 다음으로 <code class="Feature">가 있는 <p> 또는 <ul>을 찾음
-                const featureInP = nextP.find('code.Feature, code.New');
-                const featureInUl = nextUl.find('code.Feature, code.New');
+                // 버전 정보 가져오기
+                const version = $(element).find('h2').text().trim();
+                // 날짜 정보 가져오기
+                const date = $(element).find('h2 + p').text().trim();
+                // 제품명 가져오기
+                const productName = $(h3Element).text().trim();
 
-                const h3nextH4 = $(h3Element).next('h4').first(); // <h3> 다음의 첫 번째 <h4>
-
-                // <h3>가 존재할 때
-                // <code class="Feature">가 발견되었으면 처리
-                if (featureInP.length > 0 || featureInUl.length > 0) {
-
-                    // 버전 정보 가져오기
-                    const version = $(element).find('h2').text().trim();
-                    // 날짜 정보 가져오기
-                    const date = $(element).find('h2 + p').text().trim();
-                    // 제품명 가져오기
-                    const productName = $(h3Element).text().trim();
-
-                    // 중복을 제거한 <code class="Feature"> 내용 가져오기
-                    const features = new Set();
-
-                    featureInP.each((idx, code) => {
-                        features.add($(code).parent().html().trim());
+                // <h4>가 있는 경우
+                if (h4Elements.length > 0) {
+                    // <h4>에 대해 반복 처리
+                    h4Elements.each((index, h4Element) => {
+                        // 기능명 가져오기
+                        const featureName = $(h4Element).text().trim();
+                        // <h4> 다음에 오는 <ul> 또는 <p> 찾기
+                        const nextUl = $(h4Element).next('ul').first();
+                        const nextP = $(h4Element).next('p').first();
+                        // <ul> 또는 <p> 안에 있는 <code class="Feature"> 가져오기
+                        const featureInUl = nextUl.find('code.Feature, code.New');
+                        const featureInP = nextP.find('code.Feature, code.New');
+                        // 중복 제거한 기능 상세 가져오기
+                        const features = new Set();
+                        featureInUl.each((idx, code) => {
+                            features.add($(code).parent().html().trim());
+                        });
+                        featureInP.each((idx, code) => {
+                            features.add($(code).parent().html().trim());
+                        });
+                        // MDX 형식으로 데이터 생성하여 파일 내용에 추가
+                        if (features.size > 0) {
+                            mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
+                            mdxContent += `### ${featureName}\n\n`;
+                            mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
+                            mdxContent += '\n\n';
+                        }
                     });
+                } else {
+                    // <h4>가 없는 경우
+                    // <h3> 다음에 오는 <ul> 또는 <p> 찾기
+                    const nextUl = $(h3Element).next('ul').first();
+                    const nextP = $(h3Element).next('p').first();
+                    // <ul> 또는 <p> 안에 있는 <code class="Feature"> 가져오기
+                    const featureInUl = nextUl.find('code.Feature, code.New');
+                    const featureInP = nextP.find('code.Feature, code.New');
+                    // 중복 제거한 기능 상세 가져오기
+                    const features = new Set();
                     featureInUl.each((idx, code) => {
                         features.add($(code).parent().html().trim());
                     });
-
+                    featureInP.each((idx, code) => {
+                        features.add($(code).parent().html().trim());
+                    });
                     // MDX 형식으로 데이터 생성하여 파일 내용에 추가
                     if (features.size > 0) {
                         mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
                         mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
                         mdxContent += '\n\n';
-                    } 
-                } 
-                else if (h3nextH4.length > 0) {
-                    
-                    // 버전 정보 가져오기
-                    const version = $(element).find('h2').text().trim();
-                    // 날짜 정보 가져오기
-                    const date = $(element).find('h2 + p').text().trim();
-                    // 제품명 가져오기
-                    // const productName = $(h3Element).text().trim();
-
-                    h4Elements.each((index, h4Element) => {
-
-                        const productName = $(h4Element).prevAll('h3').first().text().trim();
-                        
-                        // 기능명 가져오기 
-                        const fcName = $(h4Element).text().trim();
-                        
-                        // 중복을 제거한 <code class="Feature"> 내용 가져오기
-                        const features = new Set();
-
-                        featureInP.each((idx, code) => {
-                            features.add($(code).parent().html().trim());
-                        });
-                        featureInUl.each((idx, code) => {
-                            features.add($(code).parent().html().trim());
-                        });
-
-                        const h4nextUl = $(h4Element).next('ul').first(); 
-                        const h4nextP = $(h4Element).next('p').first();
-
-                        const featureInh4P = h4nextP.find('code.Feature, code.New');
-                        const featureInh4Ul = h4nextUl.find('code.Feature, code.New');
-
-                        console.log(fcName);
-                        
-                        // 중복 제거한 기능 상세 가져오기 
-                        const features2 = new Set();
-
-                        featureInh4P.each((idx, code) => {
-                            features2.add($(code).parent().html().trim());
-                        });
-                        featureInh4Ul.each((idx, code) => {
-                            features2.add($(code).parent().html().trim());
-                        });
-
-                        // MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                        if (features2.size > 0) {
-                            mdxContent += `## ${version} - ${date} - ${productName}\n\n`;
-                            mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n');
-                            mdxContent += `### ${fcName}\n\n`;
-                            mdxContent += [...features2].map(feature => `- ${feature}`).join('\n\n');
-                            mdxContent += '\n\n';
-                        }
-                        else {
-                            // <code class="Feature">가 없을 경우 pass
-                            return;
-                        }
-
-                    });
-
-                }
-                else {
-                    // <code class="Feature">가 없을 경우 pass
-                    return;
+                    }
                 }
             });
 
@@ -145,7 +101,6 @@ axios.get(url)
 
         // MDX 파일로 데이터 저장
         const fileName = './crw-data/'+lastUrl+'.mdx'; // 파일 경로 및 이름 설정
-        // const fileName = './crw-data/crawled-data.mdx'; 
         fs.writeFileSync(fileName, mdxContent);
         console.log(`MDX file saved: ${fileName}`);
     })
