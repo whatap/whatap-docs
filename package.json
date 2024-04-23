@@ -60,6 +60,7 @@
     "react-dom": "^18.2.0",
     "react-google-forms-hooks": "^1.2.4",
     "react-instantsearch-dom": "^6.40.4",
+    "redocusaurus": "^2.0.2",
     "rehype-extended-table": "^0.1.2",
     "sass": "^1.58.3",
     "sharp": "^0.32.6",

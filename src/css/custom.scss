@@ -679,6 +679,22 @@ article div[class*='fbsharebutton'] {
   display: none;
 }
 // UI
+// OpenAPI 
+div.redoc-wrap {
+  // .menu-content {
+  //   width: 220px !important;
+  // }
+  div.api-content {
+    width: calc(100% - 220px) !important;
+  }
+  // .gikxZY {
+  //   width: calc(100% - 32%) !important;
+  // }
+  // .errCdI {
+  //   padding: 0 20px !important;
+  // }
+}
+
 
 // document
 main {
