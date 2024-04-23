@@ -64,8 +64,8 @@ const metadata = {
     "permalink": "/whatap-docs/faq/db-faq"
   },
   "next": {
-    "title": "고객지원",
-    "permalink": "/whatap-docs/faq/support-faq"
+    "title": "에이전트 FAQ",
+    "permalink": "/whatap-docs/faq/agent-faq"
   }
 };
 const assets = {

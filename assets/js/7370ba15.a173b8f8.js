@@ -60,7 +60,15 @@ const metadata = {
     ],
     "displayed_sidebar": "referSidebar"
   },
-  "sidebar": "referSidebar"
+  "sidebar": "referSidebar",
+  "previous": {
+    "title": "Log FAQ",
+    "permalink": "/whatap-docs/faq/log-faq"
+  },
+  "next": {
+    "title": "고객지원",
+    "permalink": "/whatap-docs/faq/support-faq"
+  }
 };
 const assets = {
 
@@ -133,26 +141,20 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.conf\"",
-            children: "whatap.name=whatap-{type}-{ip2}-{ip3}-{port}\n"
+            children: "whatap.name={업무명}-{ip2}-{ip3}-{port}\n"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["예를 들어, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "{type}"
-          }), "이 Java 환경인 애플리케이션에서, IP 주소가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "{업무명}"
+          }), "을 'service', IP 주소가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "10.11.12.13"
           }), "이고, 포트 번호가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "8000"
           }), "이라면 에이전트 이름은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "whatap-java-12-13-8000"
+            children: "service-12-13-8000"
           }), "으로 부여됩니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "{type}"
-              }), ": 인스턴스 또는 컨테이너 타입을 자동 식별해 이름을 부여합니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "{ipN}"

@@ -66,8 +66,8 @@ const metadata = {
   },
   "sidebar": "referSidebar",
   "previous": {
-    "title": "Log FAQ",
-    "permalink": "/whatap-docs/faq/log-faq"
+    "title": "에이전트 FAQ",
+    "permalink": "/whatap-docs/faq/agent-faq"
   },
   "next": {
     "title": "용어 사전",
