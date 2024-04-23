@@ -681,9 +681,13 @@ article div[class*='fbsharebutton'] {
 // UI
 // OpenAPI 
 div.redoc-wrap {
-  // .menu-content {
-  //   width: 220px !important;
-  // }
+  .menu-content {
+    .scrollbar-container {
+      ul[role='menu'] + div {
+        display: none !important;
+      }
+    }
+  }
   div.api-content {
     width: calc(100% - 220px) !important;
   }
