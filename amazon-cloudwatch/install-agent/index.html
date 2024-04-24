@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.96fd0866.css">
-<script src="/whatap-docs/assets/js/runtime~main.9f405fd9.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.f355a52c.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.c6742c50.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -79,13 +79,16 @@
 </ol><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>설치 후 사용량에 따라 와탭 요금과는 별개로 클라우드에서 추가 비용이 발생할 수 있습니다. 설치 전 사용 중인 클라우드 서비스의 가격 정책을 <a href="https://aws.amazon.com/ko/cloudwatch/pricing/" target="_blank" rel="noopener noreferrer">다음 문서</a>에서 확인하세요.</p></div></div></section>
 <section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="인증-정보-입력">인증 정보 입력<a href="#인증-정보-입력" class="hash-link" aria-label="인증 정보 입력에 대한 직접 링크" title="인증 정보 입력에 대한 직접 링크">​</a></h3><p>Role ARN을 이용한 설치 방법을 지원합니다. 와탭 AWS 계정(<strong>911937781722</strong>)이 직접 사용자 Role을 Assume하여 Cloudwatch 정보를 수집합니다. Role Assume은 액세스 키 발급이 불필요해 안전하고 편리합니다.</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>Role을 이용한 설정을 권장합니다. Access Key 활용은 기존 Access Key 사용자만 가능합니다.</p></div></div></section>
 <section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="역할role-생성">역할(Role) 생성<a href="#역할role-생성" class="hash-link" aria-label="역할(Role) 생성에 대한 직접 링크" title="역할(Role) 생성에 대한 직접 링크">​</a></h4><p><img loading="lazy" src="/whatap-docs/img/cloudwatch-auth-role.png" alt="Amazon Cloudwatch - role" width="1200" height="731"></p><ol>
-<li>AWS Management Console에 로그인 후 IAM 콘솔을 엽니다.</li>
+<li>AWS Management Console에 로그인 후 IAM 콘솔을 여세요.</li>
 <li>콘솔의 탐색창에서 역할을 선택한 후 역할 생성을 선택하세요.</li>
-<li>Select type of trusted entity(신뢰할 수 있는 엔티티 유형 선택)에서 Another AWS account를 선택하세요.</li>
-<li>Account ID에 와탭 계정ID <strong>911937781722</strong> 를 입력하세요. ReadOnlyAccess를 선택해 적용하세요.</li>
-<li>Role의 이름과 설명을 입력하고 Create Role 버튼을 클릭해 Summary 화면으로 전환하세요.</li>
-<li>Maximum session duration 항목의 Edit 버튼을 클릭해 12시간으로 변경하고 저장하세요.</li>
-<li><strong>Role ARN</strong> 항목을 복사하세요.</li>
+<li>신뢰할 수 있는 엔티티 유형(Select type of trusted entity)에서 AWS 계정을 선택하세요.</li>
+<li>다른 AWS 계정을 선택하고 계정 ID에 와탭 ID인 <strong>911937781722</strong> 를 입력 후 다음을 클릭하세요.</li>
+<li>필터링 기준 유형에서 AWS 관리형 직무를 선택하세요.</li>
+<li>목록에서 ReadOnlyAccess 체크박스를 선택해 적용 후 다음을 클릭하세요.</li>
+<li>역할(Role)의 이름과 설명을 입력하고 역할 생성(Create Role) 버튼을 클릭하세요.</li>
+<li>역할 목록에서 생성한 역할을 선택 후 요약(Summary)의 편집 버튼을 클릭하세요.</li>
+<li>최대 세션 지속 시간(Maximum session duration) 항목을 12시간으로 변경 후 저장하세요.</li>
+<li><strong>Role ARN</strong>  항목을 복사하세요.</li>
 <li>와탭 <em><strong>관리</strong></em> &gt; <em><strong>에이전트 설치</strong></em> 페이지로 돌아가 <em><strong>Role</strong></em> <em><strong>ARN</strong></em> 창에 복사한 <strong>Role ARN</strong>을 붙여넣고 <em><strong>확인</strong></em> 버튼을 클릭하세요.</li>
 </ol></section>
 <section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="네임스페이스-및-수집-주기-선택">네임스페이스 및 수집 주기 선택<a href="#네임스페이스-및-수집-주기-선택" class="hash-link" aria-label="네임스페이스 및 수집 주기 선택에 대한 직접 링크" title="네임스페이스 및 수집 주기 선택에 대한 직접 링크">​</a></h3><p>설치가 완료되면 <em><strong>관리</strong></em> &gt; <em><strong>에이전트 설치</strong></em> 메뉴에서 네임스페이스와 데이터 수집 주기를 선택할 수 있습니다.</p>

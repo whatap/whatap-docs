@@ -284,19 +284,25 @@ function _createMdxContent(props) {
         desc: "Amazon Cloudwatch - role"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "AWS Management Console에 로그인 후 IAM 콘솔을 엽니다."
+          children: "AWS Management Console에 로그인 후 IAM 콘솔을 여세요."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
           children: "콘솔의 탐색창에서 역할을 선택한 후 역할 생성을 선택하세요."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "Select type of trusted entity(신뢰할 수 있는 엔티티 유형 선택)에서 Another AWS account를 선택하세요."
+          children: "신뢰할 수 있는 엔티티 유형(Select type of trusted entity)에서 AWS 계정을 선택하세요."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["Account ID에 와탭 계정ID ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: ["다른 AWS 계정을 선택하고 계정 ID에 와탭 ID인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "911937781722"
-          }), " 를 입력하세요. ReadOnlyAccess를 선택해 적용하세요."]
+          }), " 를 입력 후 다음을 클릭하세요."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "Role의 이름과 설명을 입력하고 Create Role 버튼을 클릭해 Summary 화면으로 전환하세요."
+          children: "필터링 기준 유형에서 AWS 관리형 직무를 선택하세요."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "Maximum session duration 항목의 Edit 버튼을 클릭해 12시간으로 변경하고 저장하세요."
+          children: "목록에서 ReadOnlyAccess 체크박스를 선택해 적용 후 다음을 클릭하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+          children: "역할(Role)의 이름과 설명을 입력하고 역할 생성(Create Role) 버튼을 클릭하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+          children: "역할 목록에서 생성한 역할을 선택 후 요약(Summary)의 편집 버튼을 클릭하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+          children: "최대 세션 지속 시간(Maximum session duration) 항목을 12시간으로 변경 후 저장하세요."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "Role ARN"
