@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[610],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[74168],{
 
-/***/ 3401:
+/***/ 34534:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,28 +18,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'index',
-	title: 'Preview Release Notes'
+	id: 'preview-2_5_0x',
+	title: 'Preview 2.5.0.a',
+	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/preview/index",
-  "title": "Preview Release Notes",
+  "id": "release-notes/preview/preview-2_5_0x",
+  "title": "Preview 2.5.0.a",
   "description": "preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
-  "source": "@site/docs/release-notes/preview/index.mdx",
+  "source": "@site/docs/release-notes/preview/preview-2.5.0.a.mdx",
   "sourceDirName": "release-notes/preview",
-  "slug": "/release-notes/preview/",
-  "permalink": "/whatap-docs/release-notes/preview/",
+  "slug": "/release-notes/preview/preview-2_5_0x",
+  "permalink": "/whatap-docs/release-notes/preview/preview-2_5_0x",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/preview/index.mdx",
+  "editUrl": "undefined/docs/release-notes/preview/preview-2.5.0.a.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "index",
-    "title": "Preview Release Notes"
+    "id": "preview-2_5_0x",
+    "title": "Preview 2.5.0.a",
+    "toc_max_heading_level": 2
   },
   "sidebar": "previewSidebar",
+  "previous": {
+    "title": "Preview Release Notes",
+    "permalink": "/whatap-docs/release-notes/preview/"
+  },
   "next": {
     "title": "Preview 2.4.0.a",
     "permalink": "/whatap-docs/release-notes/preview/preview-2_4_0x"
@@ -51,17 +57,32 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "Preview 2.5.0.a0",
+  "id": "preview-250a0",
+  "level": 2
+}, {
+  "value": "<code>공통</code>",
+  "id": "공통",
+  "level": 3
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
+    h2: "h2",
+    h3: "h3",
+    li: "li",
     p: "p",
+    section: "section",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {DocCardList, Head} = _components;
-  if (!DocCardList) _missingMdxReference("DocCardList", true);
+  }, {Cmdname, Head, Status} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Head) _missingMdxReference("Head", true);
+  if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Head, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
@@ -76,7 +97,55 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardList, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "preview-250a0",
+        children: "Preview 2.5.0.a0"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 04월 25일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "공통",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "공통"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_event",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_eventNoti",
+                className: "uitext"
+              }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "alert_receive_settings_by_member",
+                className: "uitext"
+              }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "member_management",
+                className: "b500"
+              }), " 권한이 있는 멤버에게 사용자 정보를 마스킹 처리하지 않도록 변경"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " 로그 모니터링을 지원하는 플랫폼의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_event",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_eventSetting",
+                className: "uitext"
+              }), " 메뉴에서 로그 이벤트 설정 기능 추가"]
+            }), "\n"]
+          }), "\n"]
+        })]
+      })]
+    })]
   });
 }
 function MDXContent(props = {}) {
