@@ -1303,6 +1303,9 @@ main {
       border: none;
       width: fit-content;
     }
+    img[alt*='Amazon Cloudwatch - Region,Metric,Stats'] {
+      width: 600px;
+    }
     img[alt*='cht'] {
       width: 600px;
     }
