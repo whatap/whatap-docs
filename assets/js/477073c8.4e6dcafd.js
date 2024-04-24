@@ -107,6 +107,10 @@ const toc = [{
   "id": "오브젝트-매니페스트-저장-시간-목록",
   "level": 4
 }, {
+  "value": "쿠네티스 이벤트 연동",
+  "id": "쿠네티스-이벤트-연동",
+  "level": 4
+}, {
   "value": "오브젝트 매니페스트 비교",
   "id": "오브젝트-매니페스트-비교",
   "level": 4
@@ -333,6 +337,34 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "쿠네티스-이벤트-연동",
+        children: "쿠네티스 이벤트 연동"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "오브젝트 매니페스트 상세"
+          })
+        }), " 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("code", {
+          class: "pay",
+          children: ["Warning ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "아이콘",
+            src: (__webpack_require__(34589)/* ["default"] */ .A) + "",
+            width: "24",
+            height: "24"
+          })]
+        }), " 버튼 클릭 시 다음과 같이 쿠버네티스 이벤트를 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-object-manifest-event.png",
+        desc: "쿠버네티스 이벤트 연동"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "쿠버네티스 이벤트 연동 기능은 와탭 마스터 에이전트 버전 1.6.1 이상에서 지원합니다."
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "오브젝트-매니페스트-비교",
         children: "오브젝트 매니페스트 비교"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -345,7 +377,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "비교하기"
           })
-        }), " 토글 활성화 시 다음과 같이 저장된 두 개의 오브젝트 매니페스트를 비교할 수 있습니다. 변경 사항이 있을 경우 하이라이팅됩니다."]
+        }), " 토글 활성화 시 저장 시간 목록에서 선택해 다음과 같이 두 개의 오브젝트 매니페스트를 비교할 수 있습니다. 변경 사항이 있을 경우 하이라이팅됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-object-manifest-compare.png",
         desc: "오브젝트 매니페스트 비교하기"
@@ -437,6 +469,16 @@ function _missingMdxReference(id, component) {
 }
 
 
+
+/***/ }),
+
+/***/ 34589:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMiAyVjE3SDdWMkgyMlpNMjAgNEg5VjZIMjBWNFpNMjAgOFYxNUg5VjhIMjBaTTIgOVYyMkgxNUgxN1YyMFYxOEgxNVYyMEg0VjlINlY3SDRIMlY5WiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4=");
 
 /***/ }),
 
