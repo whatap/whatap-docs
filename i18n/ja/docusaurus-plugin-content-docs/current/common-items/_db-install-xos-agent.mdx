@@ -23,7 +23,7 @@
 
 <ImgLang img='xos-agent.png' desc='' />
 
-1. DBXエージェントがインストールされたパスの_whatap.conf_ファイルに次のオプションを設定してください。
+1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定してください。
 
    ```ini title='whatap.conf'
    xos=1
@@ -70,7 +70,7 @@
 </TabItem>
 <TabItem value="rds" label="RDS : AWS CloudWatch">
 
-エージェントサーバーにある_whatap.conf_ファイルに次のオプションを設定してください。 CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
+エージェントサーバーにある*whatap.conf*ファイルに次のオプションを設定してください。 CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
 
 ```ini title='whatap.conf'
 aws_region={AWS_RDS_Region_Name}
@@ -112,7 +112,7 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
 <ImgLang img='xos-agent.png' desc='' />
 
-1. DBXエージェントがインストールされたパスの_whatap.conf_ファイルに次のオプションを設定してください。
+1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定してください。
 
    ```ini title='whatap.conf'
    xos=1

@@ -31,7 +31,7 @@ Dockerコンテナベースで動作するJavaアプリケーションのJVM Opt
 
 <TabItem value="dockerinstall" label="Docker Install" default>
 
-WhaTapアプリケーションエージェントのインストールのために_whatap.conf_ファイルを作成してください。`{YOUR_PROJECT_ROOT}`は、エージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+WhaTapアプリケーションエージェントのインストールのために *whatap.conf* ファイルを作成してください。`{YOUR_PROJECT_ROOT}`は、エージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
 
 ```bash
 cat >{YOUR_PROJECT_ROOT}/whatap.conf <<EOL
@@ -41,7 +41,7 @@ EOL
 
 :::note
 
-_whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
+*whatap.conf*ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
 
 :::
 
@@ -166,7 +166,7 @@ _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して
 
    :::
 
-3. 圧縮を解除する時、_whatap_ディレクトリが作成されます。_whatap_ディレクトリ内部の_whatap.conf_ファイルで設定内容を確認した後、次のように修正してください。
+3. 圧縮を解除する時、_whatap_ディレクトリが作成されます。_whatap_ディレクトリ内部の*whatap.conf*ファイルで設定内容を確認した後、次のように修正してください。
 
    ```ini
    license={licenseKey}
@@ -221,7 +221,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 - Javaエージェント2.2.2バージョン以降
 
-  `$WHATAP_HOME`パスに_security.conf_ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
+  `$WHATAP_HOME`パスに*security.conf*ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
 
   ```ini title='security.conf'
   paramkey=ABCDEF # SQL変数およびHTTPクエリの検索
@@ -230,7 +230,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 - Javaエージェント2.2.2バージョン未満
 
-  `$WHATAP_HOME`パスに_paramkey.txt_ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
+  `$WHATAP_HOME`パスに*paramkey.txt*ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
 
   ```ini title='paramkey.txt'
   ABCDEF # SQL変数およびHTTPクエリの検索、スレッド停止機能
@@ -238,14 +238,14 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 :::tip
 
-Javaエージェント 2.2.2 のバージョン未満から2.2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が _seuciry.conf_ファイルのキー値に自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用して、バージョン2.2.2にアップデートした場合、_security.conf_ファイルには次のように適用されます。
+Javaエージェント 2.2.2 のバージョン未満から2.2.2バージョンにアップデートする場合、既存の*paramkey.txt*ファイルのキー値が *security.conf*ファイルのキー値に自動的に適用されます。例えば、*paramkey.txt*に`FEDCBA`を使用して、バージョン2.2.2にアップデートした場合、*security.conf*ファイルには次のように適用されます。
 
 ```ini
 paramkey=FEDCBA
 threadkill=FEDCBA
 ```
 
-_paramkey.txt_ファイルが存在しない場合、_security.conf_ファイルのキー値は、**WHATAP**というキー値で自動的に生成されます。
+*paramkey.txt*ファイルが存在しない場合、*security.conf*ファイルのキー値は、**WHATAP**というキー値で自動的に生成されます。
 
 :::
 
@@ -259,7 +259,7 @@ _paramkey.txt_ファイルが存在しない場合、_security.conf_ファイル
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーション配布の_yaml_ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーション配布の*yaml*ファイルに次の内容を追加してください。 
 
 ```yaml
 env:

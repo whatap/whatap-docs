@@ -44,7 +44,7 @@ tags:
 
 **Bloating**は実際に使用されていないtupleが増加してオブジェクトサイズが大きくなる現象です。 
 
-エージェント設定(_whatap.conf_)の`table[index]_bloat_ratio[bytes]`に設定された収集基準よりも大きな値を持つテーブルとインデックスをリストに表示します。 該当するオブジェクトがないと、データが照会されない場合があります。
+エージェント設定(*whatap.conf*)の`table[index]_bloat_ratio[bytes]`に設定された収集基準よりも大きな値を持つテーブルとインデックスをリストに表示します。 該当するオブジェクトがないと、データが照会されない場合があります。
 
 :::tip
 
@@ -225,7 +225,7 @@ Dead tupleを減らすためにはVacuum実行を検討してください。 詳
 
 ## エージェント設定{#set-agent-topObject}
 
-次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 _whatap.conf_ファイルに必要なオプションを設定してください。
+次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 *whatap.conf*ファイルに必要なオプションを設定してください。
 
 import Dbpgtopobjectagentsetting from "../common-items/_db-pg-top-object-agent-setting.mdx";
 

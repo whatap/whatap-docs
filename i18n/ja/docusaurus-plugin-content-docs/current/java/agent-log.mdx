@@ -13,7 +13,7 @@ Javaアプリケーション環境で発生するログデータをエージェ�
 
 ## パスおよび名前設定
 
-エージェントログのパスと名前は、_whatap.conf_ファイルで設定できます。`log_root`の既定値として_`${WHATAP_HOME}`/logs_パスを使用します。
+エージェントログのパスと名前は、*whatap.conf*ファイルで設定できます。`log_root`の既定値として_`${WHATAP_HOME}`/logs_パスを使用します。
 
 ```ini title='whatap.conf'
 log_root=System.getProperty("whatap.home", ".") + "/logs"
@@ -22,7 +22,7 @@ log_name=whatap
 
 ## ログ管理オプション
 
-_whatap.conf_ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
+*whatap.conf*ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
 
 ```ini title='whatap.conf'
 watchlog_enabled=true
