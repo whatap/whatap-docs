@@ -78,7 +78,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       class: "flex-container-s",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-        href: "release-notes/service/service-2_3_x",
+        href: "release-notes/service/service-2_4_x",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
           class: "apm-agent new",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {

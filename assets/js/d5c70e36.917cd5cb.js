@@ -26,7 +26,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-previous",
   "title": "Service 지난 버전",
-  "description": "* Service 1.102.X",
+  "description": "* Service 1.104.X",
   "source": "@site/docs/release-notes/service/service-previous.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-previous",
@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Service 1.104.X",
-    "permalink": "/whatap-docs/release-notes/service/service-1_104_x"
+    "title": "Service 1.106.X",
+    "permalink": "/whatap-docs/release-notes/service/service-1_106_x"
   },
   "next": {
     "title": "WhaTap Mobile App v1.0.8",
@@ -69,6 +69,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "service-1_104_x",
+          children: "Service 1.104.X"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "service-1_102_x",

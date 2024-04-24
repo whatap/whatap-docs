@@ -40,15 +40,6 @@ const metadata = {
     "id": "service-1_104_x",
     "title": "Service 1.104.X",
     "toc_max_heading_level": 2
-  },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Service 1.106.X",
-    "permalink": "/whatap-docs/release-notes/service/service-1_106_x"
-  },
-  "next": {
-    "title": "Service 지난 버전",
-    "permalink": "/whatap-docs/release-notes/service/service-previous"
   }
 };
 const assets = {

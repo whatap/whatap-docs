@@ -117,7 +117,7 @@ const toc = [{
 }, {
   "value": "client IP",
   "id": "client-ip",
-  "level": 3
+  "level": 2
 }, {
   "value": "트랜잭션",
   "id": "트랜잭션",
@@ -356,8 +356,8 @@ function _createMdxContent(props) {
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "client-ip",
         children: "client IP"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

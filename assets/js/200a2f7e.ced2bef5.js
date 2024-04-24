@@ -238,9 +238,10 @@ function _missingMdxReference(id, component) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent)
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
 /* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle, toc */
+/* unused harmony exports frontMatter, contentTitle */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
 
@@ -252,7 +253,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
-const toc = (/* unused pure expression or super */ null && ([]));
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
     em: "em",
