@@ -11,7 +11,8 @@ const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
 console.log(lastUrl);
 
-// Axios를 사용하여 웹 페이지 HTML 가져오기 19
+// Axios를 사용하여 웹 페이지 HTML 가져오기 20
+// Axios를 사용하여 웹 페이지 HTML 가져오기
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -58,6 +59,26 @@ axios.get(url)
                         featureInP.each((idx, code) => {
                             features.add($(code).parent().html().trim());
                         });
+
+                        // codeInUl 또는 codeInP 바로 다음에 있는 <ul> 가져오기
+                        const nextUlAfterCodeInUl = featureInUl.next('ul');
+                        const nextUlAfterCodeInP = featureInP.next('ul');
+                        // console.log(nextUlAfterCodeInP);
+                        console.log(nextUlAfterCodeInP);
+                        // nextUlAfterCodeInUl 또는 nextUlAfterCodeInP가 존재하면 <ul> 안의 내용을 features 배열에 추가
+                        if (nextUlAfterCodeInUl && nextUlAfterCodeInUl.length > 0) {
+                            nextUlAfterCodeInUl.find('li').each((index, liElement) => {
+                                features.add($(liElement).text().trim());
+                            });
+                        }
+                        if (nextUlAfterCodeInP && nextUlAfterCodeInP.length > 0) {
+                            // <ul> 안의 각 <li> 요소에 대해 처리
+                            nextUlAfterCodeInP.children('li').each((index, liElement) => {
+                                // 각 <li> 요소의 텍스트를 가져와 features에 추가
+                                features.add($(liElement).text().trim());
+                            });
+                        }
+
                         // 출력할 필요 없는 경우는 건너뛰기
                         if (features.size === 0) return;
 
@@ -87,6 +108,22 @@ axios.get(url)
                     featureInP.each((idx, code) => {
                         features.add($(code).parent().html().trim());
                     });
+
+                    // codeInUl 또는 codeInP 바로 다음에 있는 <ul> 가져오기
+                    const nextUlAfterCodeInUl = featureInUl.next('ul');
+                    const nextUlAfterCodeInP = featureInP.next('ul');
+                    // nextUlAfterCodeInUl 또는 nextUlAfterCodeInP가 존재하면 <ul> 안의 내용을 features 배열에 추가
+                    if (nextUlAfterCodeInUl.length > 0) {
+                        nextUlAfterCodeInUl.find('li').each((index, liElement) => {
+                            features.add($(liElement).text().trim());
+                        });
+                    }
+                    if (nextUlAfterCodeInP.length > 0) {
+                        nextUlAfterCodeInP.find('li').each((index, liElement) => {
+                            features.add($(liElement).text().trim());
+                        });
+                    }
+
                     // 출력할 필요 없는 경우는 건너뛰기
                     if (features.size === 0) return;
 
@@ -103,7 +140,7 @@ axios.get(url)
         });
 
         // MDX 파일로 데이터 저장
-        const fileName = `./crw-data/${lastUrl}.mdx`; // 파일 경로 및 이름 설정
+        const fileName = `./crw-data/_import_${lastUrl}.mdx`; // 파일 경로 및 이름 설정
         fs.writeFileSync(fileName, mdxContent);
         console.log(`MDX file saved: ${fileName}`);
     })

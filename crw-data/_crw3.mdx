@@ -179,7 +179,7 @@ axios.get(url)
         });
 
         // MDX 파일로 데이터 저장
-        const fileName = `./crw-data/${lastUrl}.mdx`; // 파일 경로 및 이름 설정
+        const fileName = `./crw-data/_import_${lastUrl}.mdx`; // 파일 경로 및 이름 설정
         fs.writeFileSync(fileName, mdxContent);
         console.log(`MDX file saved: ${fileName}`);
     })
