@@ -9,8 +9,7 @@ const {rehypeExtendedTable} = require("rehype-extended-table");
 
 /** @type {import('@docusaurus/types').Config} */
 
-// const config = {
-module.exports = Promise.resolve({
+const config = {
   title: 'WhaTap Docs',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
@@ -636,6 +635,6 @@ module.exports = Promise.resolve({
         config: {}
       },
     }),
-});
+}
 
-// module.exports = config;
+export default config;
