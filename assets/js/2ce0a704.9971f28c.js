@@ -272,7 +272,10 @@ function _createMdxContent(props) {
             }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "alert_receive_settings_by_member",
               className: "uitext"
-            }), " 섹션에서 사용자 정보를 마스킹 처리하지 않도록 변경"]
+            }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "member_management",
+              className: "b500"
+            }), " 권한이 있는 멤버에게 사용자 정보를 마스킹 처리하지 않도록 변경"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -458,6 +461,30 @@ function _createMdxContent(props) {
             }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
               children: "SQL"
             }), " 버튼을 선택해 다운로드한 파일에 기입된 시간이 UTC+9가 적용되는 않는 문제 수정"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Fixed"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_statistics",
+              className: "uitext"
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_statSql",
+              className: "uitext"
+            }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL07712",
+              className: "uitext"
+            }), " 컬럼의 버튼을 선택할 때, SQL 문에 특정 특수 문자가 포함되면 화이트 아웃 현상이 발생하는 문제 수정"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Fixed"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_agentsConfiguration",
+              className: "uitext"
+            }), " 메뉴의 에이전트 선택 목록에서 에이전트 이름이 긴 경우 줄임표(...)가 적용되는 현상 수정"]
           }), "\n"]
         }), "\n"]
       })]
