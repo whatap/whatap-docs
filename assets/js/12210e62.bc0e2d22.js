@@ -415,6 +415,8 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
+    admonition: "admonition",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -445,6 +447,20 @@ function _createMdxContent(props) {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "alert_receving_setting-url.png",
         desc: "경고 알림 수신 설정"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "alert_receive_settings_by_member",
+          className: "uitext"
+        }), " 섹션에서 다른 멤버의 정보는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "member_management",
+          className: "b500"
+        }), " 권한을 가진 멤버만 확인할 수 있습니다. 그 외 멤버에게는 필수 정보가 마스킹 처리됩니다. 멤버 권한에 대한 자세한 설명은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "../project/project-structure#project-auth",
+          children: "다음 문서"
+        }), "를 참조하세요."]
       })
     })]
   });

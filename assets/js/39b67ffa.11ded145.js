@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43601],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18067],{
 
 /***/ 89153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -415,6 +415,8 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
+    admonition: "admonition",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -445,6 +447,20 @@ function _createMdxContent(props) {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "alert_receving_setting-url.png",
         desc: "경고 알림 수신 설정"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "alert_receive_settings_by_member",
+          className: "uitext"
+        }), " 섹션에서 다른 멤버의 정보는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "member_management",
+          className: "b500"
+        }), " 권한을 가진 멤버만 확인할 수 있습니다. 그 외 멤버에게는 필수 정보가 마스킹 처리됩니다. 멤버 권한에 대한 자세한 설명은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "../project/project-structure#project-auth",
+          children: "다음 문서"
+        }), "를 참조하세요."]
       })
     })]
   });
@@ -1831,7 +1847,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 33132:
+/***/ 72486:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1868,28 +1884,27 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	tags: [
-		'Go',
+		'로그 모니터링',
 		'경고 알림',
-		'이벤트 수신 태그',
-		'애플리케이션 모니터링'
+		'이벤트 수신 태그'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/set-receive-event",
+  "id": "log/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/golang/set-receive-event.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/set-receive-event",
-  "permalink": "/whatap-docs/golang/set-receive-event",
+  "source": "@site/docs/log/set-receive-event.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/set-receive-event",
+  "permalink": "/whatap-docs/log/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/set-receive-event.mdx",
+  "editUrl": "undefined/docs/log/set-receive-event.mdx",
   "tags": [
     {
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "로그 모니터링",
+      "permalink": "/whatap-docs/tags/로그-모니터링"
     },
     {
       "label": "경고 알림",
@@ -1898,10 +1913,6 @@ const metadata = {
     {
       "label": "이벤트 수신 태그",
       "permalink": "/whatap-docs/tags/이벤트-수신-태그"
-    },
-    {
-      "label": "애플리케이션 모니터링",
-      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
@@ -1910,20 +1921,19 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "tags": [
-      "Go",
+      "로그 모니터링",
       "경고 알림",
-      "이벤트 수신 태그",
-      "애플리케이션 모니터링"
+      "이벤트 수신 태그"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "logSidebar",
   "previous": {
-    "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/golang/set-event-log"
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/log/set-notice"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/golang/set-event-history"
+    "permalink": "/whatap-docs/log/set-event-history"
   }
 };
 const assets = {
