@@ -3132,14 +3132,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_2',
+                id: 'release-notes/dotnet/dotnet-2_2_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_2',
+                  id: 'release-notes/dotnet/dotnet-2_2_3',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-2_1_9',
@@ -3148,7 +3149,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_6',
                 'release-notes/dotnet/dotnet-2_1_5',
                 'release-notes/dotnet/dotnet-2_1_4',
-                'release-notes/dotnet/dotnet-2_1_3',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3214,7 +3214,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-aix-1_2_7'
@@ -3223,7 +3223,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-aix-1_2_7',
-                  className: 'new'
+                  // className: 'new'
                 }
               ],
             },
