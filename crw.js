@@ -12,7 +12,6 @@ const lastUrl = segments[segments.length - 1];
 console.log(lastUrl);
 
 // Axios를 사용하여 웹 페이지 HTML 가져오기 20
-// Axios를 사용하여 웹 페이지 HTML 가져오기
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
