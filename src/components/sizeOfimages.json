@@ -243,6 +243,18 @@
     "width": 1200,
     "height": 1257
   },
+  "alert_receving_setting-url-en.png": {
+    "width": 1200,
+    "height": 915
+  },
+  "alert_receving_setting-url-ja.png": {
+    "width": 1200,
+    "height": 924
+  },
+  "alert_receving_setting-url.png": {
+    "width": 1200,
+    "height": 903
+  },
   "alert_receving_setting.png": {
     "width": 1200,
     "height": 1192
@@ -260,16 +272,16 @@
     "height": 282
   },
   "amazon-cloudwatch-deact-en.png": {
-    "width": 1208,
-    "height": 772
+    "width": 1166,
+    "height": 768
   },
   "amazon-cloudwatch-deact-ja.png": {
-    "width": 1208,
-    "height": 770
+    "width": 1174,
+    "height": 768
   },
   "amazon-cloudwatch-deact.png": {
-    "width": 1208,
-    "height": 772
+    "width": 1171,
+    "height": 745
   },
   "amazon-ecs-install-en.png": {
     "width": 1200,
@@ -308,16 +320,16 @@
     "height": 265
   },
   "amazon_cloudwatch_setup_dialog_2nd-en.png": {
-    "width": 1200,
-    "height": 854
+    "width": 598,
+    "height": 718
   },
   "amazon_cloudwatch_setup_dialog_2nd-ja.png": {
-    "width": 1200,
-    "height": 854
+    "width": 598,
+    "height": 718
   },
   "amazon_cloudwatch_setup_dialog_2nd.png": {
-    "width": 1200,
-    "height": 854
+    "width": 598,
+    "height": 718
   },
   "analysis-apm-trs-en.png": {
     "width": 1200,
@@ -742,6 +754,18 @@
   "apm-dashboard-active-tx-en.png": {
     "width": 600,
     "height": 347
+  },
+  "apm-dashboard-active-tx-equalizer-en.png": {
+    "width": 600,
+    "height": 416
+  },
+  "apm-dashboard-active-tx-equalizer-ja.png": {
+    "width": 600,
+    "height": 418
+  },
+  "apm-dashboard-active-tx-equalizer.png": {
+    "width": 600,
+    "height": 417
   },
   "apm-dashboard-active-tx-ja.png": {
     "width": 600,
@@ -3300,16 +3324,16 @@
     "height": 973
   },
   "cloudwatch-auth-role-en.png": {
-    "width": 1200,
-    "height": 731
+    "width": 1287,
+    "height": 680
   },
   "cloudwatch-auth-role-ja.png": {
-    "width": 1200,
-    "height": 731
+    "width": 1291,
+    "height": 677
   },
   "cloudwatch-auth-role.png": {
-    "width": 1200,
-    "height": 731
+    "width": 1290,
+    "height": 681
   },
   "collect-custom-events-example01-en.png": {
     "width": 1200,
@@ -3518,6 +3542,30 @@
   "create-project-v2.png": {
     "width": 1422,
     "height": 908
+  },
+  "create-project-v3-en.png": {
+    "width": 800,
+    "height": 546
+  },
+  "create-project-v3-ja.png": {
+    "width": 800,
+    "height": 485
+  },
+  "create-project-v3-url-en.png": {
+    "width": 800,
+    "height": 543
+  },
+  "create-project-v3-url-ja.png": {
+    "width": 800,
+    "height": 487
+  },
+  "create-project-v3-url.png": {
+    "width": 800,
+    "height": 510
+  },
+  "create-project-v3.png": {
+    "width": 800,
+    "height": 508
   },
   "credit_card_8-en.png": {
     "width": 1200,
@@ -4145,11 +4193,11 @@
   },
   "db-dashboard-widget-add-mysql.png": {
     "width": 600,
-    "height": 452
+    "height": 518
   },
   "db-dashboard-widget-add-postgresql.png": {
     "width": 600,
-    "height": 429
+    "height": 492
   },
   "db-dashboard-widget-add-redis.png": {
     "width": 600,
@@ -5895,6 +5943,78 @@
     "width": 1200,
     "height": 207
   },
+  "event-config-v2-all-events-apm-k8s-en.png": {
+    "width": 985,
+    "height": 87
+  },
+  "event-config-v2-all-events-apm-k8s-ja.png": {
+    "width": 972,
+    "height": 87
+  },
+  "event-config-v2-all-events-apm-k8s.png": {
+    "width": 800,
+    "height": 88
+  },
+  "event-config-v2-all-events-browser-en.png": {
+    "width": 457,
+    "height": 87
+  },
+  "event-config-v2-all-events-browser-ja.png": {
+    "width": 491,
+    "height": 87
+  },
+  "event-config-v2-all-events-browser.png": {
+    "width": 417,
+    "height": 87
+  },
+  "event-config-v2-all-events-db-en.png": {
+    "width": 756,
+    "height": 87
+  },
+  "event-config-v2-all-events-db-ja.png": {
+    "width": 647,
+    "height": 87
+  },
+  "event-config-v2-all-events-db.png": {
+    "width": 625,
+    "height": 87
+  },
+  "event-config-v2-all-events-json-validate-en.png": {
+    "width": 800,
+    "height": 204
+  },
+  "event-config-v2-all-events-json-validate-ja.png": {
+    "width": 800,
+    "height": 205
+  },
+  "event-config-v2-all-events-json-validate.png": {
+    "width": 800,
+    "height": 201
+  },
+  "event-config-v2-all-events-npm-en.png": {
+    "width": 269,
+    "height": 87
+  },
+  "event-config-v2-all-events-npm-ja.png": {
+    "width": 343,
+    "height": 87
+  },
+  "event-config-v2-all-events-npm.png": {
+    "width": 230,
+    "height": 87
+  },
+  "event-config-v2-all-events-server-en.png": {
+    "width": 1036,
+    "height": 87
+  },
+  "event-config-v2-all-events-server-ja.png": {
+    "width": 1086,
+    "height": 87
+  },
+  "event-config-v2-all-events-server.png": {
+    "width": 917,
+    "height": 87
+  },
   "event-config-v2-apm-en.png": {
     "width": 1200,
     "height": 254
@@ -5990,6 +6110,18 @@
   "event-config-v2-info-receive-common.png": {
     "width": 800,
     "height": 253
+  },
+  "event-config-v2-json-batch-edit-en.png": {
+    "width": 1200,
+    "height": 749
+  },
+  "event-config-v2-json-batch-edit-ja.png": {
+    "width": 1200,
+    "height": 749
+  },
+  "event-config-v2-json-batch-edit.png": {
+    "width": 1200,
+    "height": 749
   },
   "event-config-v2-json-error.png": {
     "width": 800,
@@ -7452,12 +7584,12 @@
     "height": 356
   },
   "k8s-container-detail-en.png": {
-    "width": 1200,
-    "height": 660
+    "width": 1210,
+    "height": 588
   },
   "k8s-container-detail-ja.png": {
-    "width": 1200,
-    "height": 660
+    "width": 1210,
+    "height": 590
   },
   "k8s-container-detail-list-selected-en.png": {
     "width": 572,
@@ -7471,9 +7603,17 @@
     "width": 573,
     "height": 99
   },
+  "k8s-container-detail-rr-s.png": {
+    "width": 600,
+    "height": 203
+  },
+  "k8s-container-detail-rr.png": {
+    "width": 800,
+    "height": 381
+  },
   "k8s-container-detail.png": {
-    "width": 1200,
-    "height": 660
+    "width": 1210,
+    "height": 588
   },
   "k8s-container-event-k8s-all-en.png": {
     "width": 1200,
@@ -7733,15 +7873,15 @@
   },
   "k8s-deployment-list-detail-en.png": {
     "width": 1200,
-    "height": 662
+    "height": 743
   },
   "k8s-deployment-list-detail-ja.png": {
     "width": 1200,
-    "height": 657
+    "height": 747
   },
   "k8s-deployment-list-detail.png": {
     "width": 1200,
-    "height": 661
+    "height": 744
   },
   "k8s-deployment-list-en.png": {
     "width": 1200,
@@ -7908,16 +8048,16 @@
     "height": 694
   },
   "k8s-object-manifest-compare-en.png": {
-    "width": 1246,
-    "height": 1033
+    "width": 1204,
+    "height": 720
   },
   "k8s-object-manifest-compare-ja.png": {
-    "width": 1246,
-    "height": 1033
+    "width": 1204,
+    "height": 718
   },
   "k8s-object-manifest-compare.png": {
-    "width": 1246,
-    "height": 1033
+    "width": 1204,
+    "height": 751
   },
   "k8s-object-manifest-detail-en.png": {
     "width": 1194,
@@ -7934,6 +8074,18 @@
   "k8s-object-manifest-en.png": {
     "width": 1200,
     "height": 623
+  },
+  "k8s-object-manifest-event-en.png": {
+    "width": 1204,
+    "height": 563
+  },
+  "k8s-object-manifest-event-ja.png": {
+    "width": 1204,
+    "height": 563
+  },
+  "k8s-object-manifest-event.png": {
+    "width": 1204,
+    "height": 563
   },
   "k8s-object-manifest-ja.png": {
     "width": 1200,
@@ -9297,7 +9449,7 @@
   },
   "maintenance-en.png": {
     "width": 1200,
-    "height": 356
+    "height": 315
   },
   "maintenance-header-en.png": {
     "width": 1200,
@@ -9325,19 +9477,19 @@
   },
   "maintenance-ja.png": {
     "width": 1200,
-    "height": 356
+    "height": 315
   },
   "maintenance-v2-en.png": {
     "width": 1200,
-    "height": 434
+    "height": 341
   },
   "maintenance-v2-ja.png": {
     "width": 1200,
-    "height": 431
+    "height": 400
   },
   "maintenance-v2.png": {
     "width": 1200,
-    "height": 439
+    "height": 341
   },
   "maintenance-widget-en.png": {
     "width": 413,
@@ -9353,7 +9505,7 @@
   },
   "maintenance.png": {
     "width": 1200,
-    "height": 356
+    "height": 315
   },
   "manage-group-move-group-en.png": {
     "width": 1200,
@@ -11000,12 +11152,12 @@
     "height": 214
   },
   "notification-set-message-edit-en.png": {
-    "width": 1000,
-    "height": 320
+    "width": 600,
+    "height": 316
   },
   "notification-set-message-edit-ja.png": {
-    "width": 1000,
-    "height": 326
+    "width": 600,
+    "height": 316
   },
   "notification-set-message-edit-preview-en.png": {
     "width": 400,
@@ -11020,8 +11172,8 @@
     "height": 271
   },
   "notification-set-message-edit.png": {
-    "width": 1000,
-    "height": 325
+    "width": 600,
+    "height": 337
   },
   "notification-set-message-en.png": {
     "width": 1200,
@@ -11033,39 +11185,39 @@
   },
   "notification-set-message-main-en.png": {
     "width": 1200,
-    "height": 1035
+    "height": 798
   },
   "notification-set-message-main-ja.png": {
     "width": 1200,
-    "height": 1035
+    "height": 798
   },
   "notification-set-message-main.png": {
     "width": 1200,
-    "height": 1035
+    "height": 799
   },
   "notification-set-message-preview-disabled-en.png": {
-    "width": 1000,
-    "height": 760
+    "width": 1200,
+    "height": 612
   },
   "notification-set-message-preview-disabled-ja.png": {
-    "width": 1000,
-    "height": 794
+    "width": 1200,
+    "height": 612
   },
   "notification-set-message-preview-disabled.png": {
-    "width": 1000,
-    "height": 757
+    "width": 1200,
+    "height": 612
   },
   "notification-set-message-preview-en.png": {
-    "width": 1000,
-    "height": 757
+    "width": 1200,
+    "height": 611
   },
   "notification-set-message-preview-ja.png": {
-    "width": 1000,
-    "height": 796
+    "width": 1200,
+    "height": 609
   },
   "notification-set-message-preview.png": {
-    "width": 1000,
-    "height": 757
+    "width": 1200,
+    "height": 612
   },
   "notification-set-message.png": {
     "width": 1200,
@@ -11894,6 +12046,10 @@
   "transaction-profile-trace-before.png": {
     "width": 600,
     "height": 181
+  },
+  "url-widget-changed.png": {
+    "width": 963,
+    "height": 304
   },
   "release-note-tx-new-feature-en.png": {
     "width": 1232,
@@ -13039,6 +13195,18 @@
     "width": 1200,
     "height": 446
   },
+  "set-event-day-time-url-en.png": {
+    "width": 1200,
+    "height": 392
+  },
+  "set-event-day-time-url-ja.png": {
+    "width": 1200,
+    "height": 428
+  },
+  "set-event-day-time-url.png": {
+    "width": 1200,
+    "height": 393
+  },
   "set-event-day-time.png": {
     "width": 1200,
     "height": 415
@@ -13153,15 +13321,15 @@
   },
   "set-event-sms-notification-en.png": {
     "width": 600,
-    "height": 144
+    "height": 201
   },
   "set-event-sms-notification-ja.png": {
     "width": 600,
-    "height": 145
+    "height": 210
   },
   "set-event-sms-notification.png": {
     "width": 600,
-    "height": 169
+    "height": 213
   },
   "set-event-tag-01-en.png": {
     "width": 1200,
@@ -13835,6 +14003,18 @@
     "width": 1200,
     "height": 647
   },
+  "main-ui-adjust-size-project-list-en.png": {
+    "width": 600,
+    "height": 298
+  },
+  "main-ui-adjust-size-project-list-ja.png": {
+    "width": 600,
+    "height": 297
+  },
+  "main-ui-adjust-size-project-list.png": {
+    "width": 600,
+    "height": 306
+  },
   "main-ui-filter-project-en.png": {
     "width": 600,
     "height": 472
@@ -13957,15 +14137,15 @@
   },
   "main-ui-view-only-favorite-en.png": {
     "width": 400,
-    "height": 134
+    "height": 161
   },
   "main-ui-view-only-favorite-ja.png": {
     "width": 400,
-    "height": 133
+    "height": 152
   },
   "main-ui-view-only-favorite.png": {
     "width": 400,
-    "height": 137
+    "height": 156
   },
   "uni-topology-select-project-en.png": {
     "width": 800,
