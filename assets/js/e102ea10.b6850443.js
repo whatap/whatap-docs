@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31977],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79042],{
 
-/***/ 35420:
+/***/ 98663:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_1_3',
-	title: '.NET Agent v2.1.3',
+	id: 'dotnet-2_2_3',
+	title: '.NET Agent v2.2.3',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_1_2'
+	pagination_next: 'release-notes/dotnet/dotnet-2_2_2',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_1_3",
-  "title": ".NET Agent v2.1.3",
-  "description": "2023년 8월 16일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.3.mdx",
+  "id": "release-notes/dotnet/dotnet-2_2_3",
+  "title": ".NET Agent v2.2.3",
+  "description": "2024년 04월 24일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.3.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_1_3",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_3",
+  "slug": "/release-notes/dotnet/dotnet-2_2_3",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_3",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.3.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.3.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_1_3",
-    "title": ".NET Agent v2.1.3",
+    "id": "dotnet-2_2_3",
+    "title": ".NET Agent v2.2.3",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_1_2"
+    "pagination_next": "release-notes/dotnet/dotnet-2_2_2",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent v2.1.4",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_4"
+    "title": "Python Agent 지난 버전",
+    "permalink": "/whatap-docs/release-notes/python/python-previous"
   },
   "next": {
-    "title": ".NET Agent v2.1.2",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_2"
+    "title": ".NET Agent v2.2.2",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_2"
   }
 };
 const assets = {
@@ -59,63 +61,31 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "2023년 8월 16일",
-  "id": "2023년-8월-16일",
-  "level": 4
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    h4: "h4",
     li: "li",
     p: "p",
-    section: "section",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h4",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-8월-16일",
-      children: "2023년 8월 16일"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "2024년 04월 24일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " Rest API 모니터링 중 특정 조건에서 CPU 사용률이 증가하는 버그 수정"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Change"
-          }), " Application pool 선택 방식 변경"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "기존: 모니터링 모듈이 메모리에 올라온 상태에서 기능이 동작하지 않도록 필터링"
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "변경"
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: "대상 애플리케이션 풀이 아니면 모니터링 모듈을 로딩하지 않음"
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: "모니터링에 관련된 아무런 작업을 하지 않기 때문에 고객의 .NET 애플리케이션에 어떠한 영향도 주지 않음"
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: "설정을 변경하면 IIS를 재시작해야하는 것으로 조건 변경"
-                }), "\n"]
-              }), "\n"]
-            }), "\n"]
-          }), "\n"]
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "특정 고객에게서 CPU 사용량이 증가하는 이슈가 발생해 해당 버그를 수정합니다."
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Change"
-          }), " 서버 지원 환경 분석 툴의 .NET 버전을 4.61 버전으로 하향 조정"]
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "증상이 나타나지 않는 고객이라도 에이전트를 업그레이드할 것을 권장합니다. 성능 향상에 도움이 됩니다."
         }), "\n"]
       }), "\n"]
     })]

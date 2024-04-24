@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[75071],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31977],{
 
-/***/ 74650:
+/***/ 35420:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_2_2',
-	title: '.NET Agent v2.2.2',
+	id: 'dotnet-2_1_3',
+	title: '.NET Agent v2.1.3',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_2_1',
-	displayed_sidebar: 'releaseSidebar'
+	pagination_next: 'release-notes/dotnet/dotnet-2_1_2'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_2_2",
-  "title": ".NET Agent v2.2.2",
-  "description": "2024년 04월 18일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.2.mdx",
+  "id": "release-notes/dotnet/dotnet-2_1_3",
+  "title": ".NET Agent v2.1.3",
+  "description": "2023년 8월 16일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.3.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_2_2",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_2",
+  "slug": "/release-notes/dotnet/dotnet-2_1_3",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_3",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.2.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.3.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_2_2",
-    "title": ".NET Agent v2.2.2",
+    "id": "dotnet-2_1_3",
+    "title": ".NET Agent v2.1.3",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_2_1",
-    "displayed_sidebar": "releaseSidebar"
-  },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent 지난 버전",
-    "permalink": "/whatap-docs/release-notes/python/python-previous"
+    "pagination_next": "release-notes/dotnet/dotnet-2_1_2"
   },
   "next": {
-    "title": ".NET Agent v2.2.1",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_1"
+    "title": ".NET Agent v2.1.2",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_2"
   }
 };
 const assets = {
@@ -61,57 +54,63 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "2023년 8월 16일",
+  "id": "2023년-8월-16일",
+  "level": 4
+}];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
+    h4: "h4",
     li: "li",
     p: "p",
+    section: "section",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 18일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h4",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+      id: "2023년-8월-16일",
+      children: "2023년 8월 16일"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "New"
-          }), " DataAdapter.Fill() 메소드 모니터링 추가"]
+            children: "Change"
+          }), " Application pool 선택 방식 변경"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "기존: 모니터링 모듈이 메모리에 올라온 상태에서 기능이 동작하지 않도록 필터링"
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "변경"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "대상 애플리케이션 풀이 아니면 모니터링 모듈을 로딩하지 않음"
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "모니터링에 관련된 아무런 작업을 하지 않기 때문에 고객의 .NET 애플리케이션에 어떠한 영향도 주지 않음"
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "설정을 변경하면 IIS를 재시작해야하는 것으로 조건 변경"
+                }), "\n"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "New"
-          }), " WebForm 모니터링 지원, 페이지 이동 이벤트를 트랜잭션으로 처리"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " 에이전트 옵션 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "trace_http_client_ip_header_key"
-          }), " 추가, 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "../../dotnet/agent-number-of-user#trace_http_client_ip_header_key",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " IP 주소 표시 오류로 동시 접속자가 제대로 표시되지 않는 현상 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Deprecated"
-          }), " 에이전트가 body를 읽는 동안 충돌이 일어날 가능성이 있어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "profile_http_body_enabled"
-          }), " 옵션 지원 중단"]
+            children: "Change"
+          }), " 서버 지원 환경 분석 툴의 .NET 버전을 4.61 버전으로 하향 조정"]
         }), "\n"]
       }), "\n"]
     })]
