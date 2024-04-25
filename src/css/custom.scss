@@ -1303,7 +1303,7 @@ main {
       border: none;
       width: fit-content;
     }
-    img[alt*='Amazon Cloudwatch - Region,Metric,Stats'] {
+    img[alt*='Amazon Cloudwatch - Region,Metric,Stats'], img[alt*='Oracle Cloud Monitor - Region, Metric, Stats'], img[alt*='Ncloud Monitoring - ResourceGroup, Metric, Stats'] {
       width: 600px;
     }
     img[alt*='cht'] {
