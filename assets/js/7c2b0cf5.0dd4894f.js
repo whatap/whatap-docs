@@ -694,7 +694,7 @@ const toc = [..._getting_started_create_project_cloud_mdx__WEBPACK_IMPORTED_MODU
   "value": "리전, 메트릭스, 스탯 선택",
   "id": "리전-메트릭스-스탯-선택",
   "level": 3
-}, {
+}, ..._common_items_region_metric_stats_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, {
   "value": "데이터 수집 비활성화 및 서비스 초기화",
   "id": "data-deactivation",
   "level": 2
@@ -812,16 +812,10 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["Identity & Security 메뉴 하단 Users를 선택해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "User"
-            }), "를 생성하거나 선택하세요."]
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "오른쪽 상단의 Identity 메뉴에서 My profile을 선택하세요."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: "Create User를 선택해 신규 User를 생성하거나 User를 선택하세요."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: "User Details 화면에서 해당 유저를 3에서 선택한 Group에 추가하세요."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
               children: "왼쪽 하단의 API Keys를 선택하세요."
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
               children: "Add API Key 버튼을 선택하세요."
@@ -994,14 +988,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "리전-메트릭스-스탯-선택",
         children: "리전, 메트릭스, 스탯 선택"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "number 2",
-          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-          width: "35",
-          height: "35"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_region_metric_stats_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_region_metric_stats_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "oci_region.png",
         desc: "Oracle Cloud Monitor - Region, Metric, Stats"
       })]

@@ -694,7 +694,7 @@ const toc = [..._getting_started_create_project_cloud_mdx__WEBPACK_IMPORTED_MODU
   "value": "리전, 메트릭스, 스탯 선택",
   "id": "리전-메트릭스-스탯-선택",
   "level": 3
-}, {
+}, ..._common_items_region_metric_stats_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, {
   "value": "데이터 수집 비활성화 및 서비스 초기화",
   "id": "data-deactivation",
   "level": 2
@@ -799,14 +799,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "리전-메트릭스-스탯-선택",
         children: "리전, 메트릭스, 스탯 선택"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "number 2",
-          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-          width: "35",
-          height: "35"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_region_metric_stats_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_region_metric_stats_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "ncloud_region_dialog.png",
         desc: "Ncloud Monitoring - ResourceGroup, Metric, Stats"
       })]
