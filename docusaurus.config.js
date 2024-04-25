@@ -132,6 +132,7 @@ module.exports = Promise.resolve({
           blogSidebarTitle: '새로운 기능',
           blogSidebarCount: 'ALL',
           include: [ '**/*.mdx' ],
+          rehypePlugins: [ rehypeExtendedTable ]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
