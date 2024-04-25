@@ -4,7 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // 크롤링할 웹 페이지 URL
-const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_4_x';
 
 // URL을 '/'로 분할하여 배열로 만든 후 배열의 마지막 요소 가져오기
 const segments = url.split('/');

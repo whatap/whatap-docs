@@ -80,17 +80,179 @@ tags: [신규 기능, 24년, 1분기, 분기 요약]
 
 ### `Java` 
 
+#### Java Agent v2.2.32
+
+- <Status>Feature</Status> aws.mysql 라이브러리를 사용할 경우 <code>executeBatchInternal</code> 메소드 추적
+
+#### Java Agent v2.2.31
+
+- <Status>Feature</Status> spring-boot-2.7.x에서 kafka-batch 추적
+
+- <Status>Feature</Status> JDBC 드라이버에서 SqlException 발생 시 추적 여부 설정 옵션 추가
+
+- <Status>Feature</Status> URL + HTTP method 설정 옵션 추가
+
+- <Status>Feature</Status> oshi-core-6.1.6으로 업데이트
+
+- <Status>Feature</Status> 자바 에이전트에서 netstat 지표 수집, Maximum Transmission Unit(MTU) 지표 추가
+
+#### Java Agent v2.2.29
+
+- <Status>New</Status> jboss-logging-3.3 로그 수집 추가
+
+- <Status>Feature</Status> <code>com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal</code> 메소드 사용 시 SQL 데이터 수집 추가
+
+|에이전트 버전|에이전트 다운로드|날짜|
+|---|---|---|
+|Java Agent v2.2.32|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.32/whatap.agent-2.2.32.jar)|2024년 04월 17일|
+|Java Agent v2.2.31|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.31/whatap.agent-2.2.31.jar)|2024년 04월 03일|
+|Java Agent v2.2.30|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.30/whatap.agent-2.2.30.jar)|2024년 03월 21일|
+|Java Agent v2.2.29|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.29/whatap.agent-2.2.29.jar)|2024년 03월 15일|
+|Java Agent v2.2.28|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.28/whatap.agent-2.2.28.jar)|2024년 02월 27일|
+|Java Agent v2.2.27|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.27/whatap.agent-2.2.27.jar)|2024년 02월 06일|
+|Java Agent v2.2.26|[다운로드](https://repo.whatap.io/maven/io/whatap/whatap.agent/2.2.26/whatap.agent-2.2.26.jar)|2024년 01월 11일|
+
 ### `PHP`
+
+|에이전트 버전| OS | 아키텍처 | 파일 형식 | 에이전트 다운로드 | 날짜|
+|-| - | - | - | - |-|
+|PHP Agent v2.7.2| Red Hat / CentOS / Amazon linux | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.7-2.x86_64.rpm) |2024년 03월 06일|
+|^| Ubuntu 12 and above / Debian | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-php_2.7.2_amd64.deb) |^|
+|^| Freebsd 10 and above | x86 x64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-php-2.7.2.txz) |^|
+|^| Alpine linux | x86 x64 | tar gzip | [다운로드](https://repo.whatap.io/alpine/x86_64/whatap-php-2.7.2.tar.gz) |^|
+|PHP Agent v2.7.1| Red Hat / CentOS / Amazon linux | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.7-1.x86_64.rpm) |2024년 01월 24일|
+|^| Ubuntu 12 and above / Debian | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-php_2.7.1_amd64.deb) |^|
+|^| Freebsd 10 and above | x86 x64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-php-2.7.1.txz) |^|
+|^| Alpine linux | x86 x64 | tar gzip | [다운로드](https://repo.whatap.io/alpine/x86_64/whatap-php-2.7.1.tar.gz) |^|
+|PHP Agent v2.7.0 | Red Hat / CentOS / Amazon linux | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.7-1.x86_64.rpm) |2024년 01월 10일|
+|^| Ubuntu 12 and above / Debian | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-php_2.7.0_amd64.deb) |^|
+|^| Freebsd 10 and above | x86 x64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-php-2.7.0.txz) |^|
+|^| Alpine linux | x86 x64 | tar gzip | [다운로드](https://repo.whatap.io/alpine/x86_64/whatap-php-2.7.0.tar.gz) |^|
 
 ### `Node.js`
 
+|에이전트 버전|에이전트 다운로드|날짜|
+|---|---|---|
+|Node.js Agent v0.4.94|[다운로드](https://www.npmjs.com/package/whatap/v/0.4.94)|2024년 03월 07일|
+|Node.js Agent v0.4.90|[다운로드](https://www.npmjs.com/package/whatap/v/0.4.90)|2024년 02월 05일|
+|Node.js Agent v0.4.89|[다운로드](https://www.npmjs.com/package/whatap/v/0.4.89)|2024년 01월 22일|
+|Node.js Agent v0.4.86|[다운로드](https://www.npmjs.com/package/whatap/v/0.4.86)|2024년 01월 11일|
+
 ### `Python`
+
+|에이전트 버전|에이전트 다운로드|날짜|
+|---|---|---|
+|Python Agent v1.6.3|[다운로드](https://pypi.org/project/whatap-python/1.6.3/)|2024년 04월 17일|
+|Python Agent v1.6.2|[다운로드](https://pypi.org/project/whatap-python/1.6.2/)|2024년 03월 29일|
+|Python Agent v1.6.1|[다운로드](https://pypi.org/project/whatap-python/1.6.1/)|2024년 03월 20일|
+|Python Agent v1.6.0|[다운로드](https://pypi.org/project/whatap-python/1.6.0/)|2024년 03월 13일|
+|Python Agent v1.5.9|[다운로드](https://pypi.org/project/whatap-python/1.5.9/)|2024년 03월 11일|
+|Python Agent v1.5.8|[다운로드](https://pypi.org/project/whatap-python/1.5.8/)|2024년 02월 18일|
+|Python Agent v1.5.7|[다운로드](https://pypi.org/project/whatap-python/1.5.7/)|2024년 02월 06일|
+|Python Agent v1.5.6|[다운로드](https://pypi.org/project/whatap-python/1.5.6/)|2024년 02월 02일|
+|Python Agent v1.5.5|[다운로드](https://pypi.org/project/whatap-python/1.5.5/)|2024년 02월 01일|
+|Python Agent v1.5.4|[다운로드](https://pypi.org/project/whatap-python/1.5.4/)|2024년 01월 09일|
+|Python Agent v1.5.3|[다운로드](https://pypi.org/project/whatap-python/1.5.3/)|2024년 01월 05일|
+|Python Agent v1.5.2|[다운로드](https://pypi.org/project/whatap-python/1.5.2/)|2024년 01월 03일|
 
 ### `.NET`
 
 ### `Go`
 
 ### `Server`
+
+|에이전트 버전| OS | 시스템 | 아키텍처 |파일 형식| 에이전트 다운로드 | 날짜|
+|-| - | - | - | - |-|-|
+|Server Agent v2.5.5| Red Hat / CentOS /<br/> Amazon linux | 6Server / 6 | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-5.x86_64.rpm) |2024년 03월 13일|
+|^| ^ | ^ | i386 | ^ | [다운로드](https://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm) |^|
+|^| ^ | 7Server / 7 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-5.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-5.aarch64.rpm) |^|
+|^| ^ | 8Server / 8 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-5.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-5.aarch64.rpm) |^|
+|^| ^ | 9Server / 9 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-5.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-5.aarch64.rpm) |^|
+|^| ^ | Amazon Linux2 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-5.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-5.aarch64.rpm) |^|
+|^| Ubuntu / Debian | Ubuntu 12 and above | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.5_amd64.deb) |^|
+|^| ^ | ^ | arm64 | ^ | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.5_arm64.deb) |^|
+|^| Freebsd | Freebsd 10 and above | amd64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz) |^|
+|^| Windows | Windows Server 2008 R2 and above | 32 bit / 64 bit | EXE | [다운로드](https://repo.whatap.io/windows/whatap_infra.zip) |^|
+|^| SUNOS 11, SPARC | SUNOS 11 and above, SPARC | amd64 | PKG | [다운로드](https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz) |^|
+|Server Agent v2.5.4| Red Hat / CentOS /<br/> Amazon linux | 6Server / 6 | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-4.x86_64.rpm) |2024년 03월 11일|
+|^| ^ | ^ | i386 | ^ | [다운로드](https://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm) |^|
+|^| ^ | 7Server / 7 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-4.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-4.aarch64.rpm) |^|
+|^| ^ | 8Server / 8 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-4.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-4.aarch64.rpm) |^|
+|^| ^ | 9Server / 9 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-4.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-4.aarch64.rpm) |^|
+|^| ^ | Amazon Linux2 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-4.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-4.aarch64.rpm) |^|
+|^| Ubuntu / Debian | Ubuntu 12 and above | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.4_amd64.deb) |^|
+|^| ^ | ^ | arm64 | ^ | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.4_arm64.deb) |^|
+|^| Freebsd | Freebsd 10 and above | amd64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz) |^|
+|^| Windows | Windows Server 2008 R2 and above | 32 bit / 64 bit | EXE | [다운로드](https://repo.whatap.io/windows/whatap_infra.zip) |^|
+|^| SUNOS 11, SPARC | SUNOS 11 and above, SPARC | amd64 | PKG | [다운로드](https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz) |^|
+|Server Agent v2.5.3| Red Hat / CentOS /<br/> Amazon linux | 6Server / 6 | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-3.x86_64.rpm) |2024년 03월 07일|
+|^| ^ | ^ | i386 | ^ | [다운로드](https://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm) |^|
+|^| ^ | 7Server / 7 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-3.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-3.aarch64.rpm) |^|
+|^| ^ | 8Server / 8 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-3.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-3.aarch64.rpm) |^|
+|^| ^ | 9Server / 9 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-3.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-3.aarch64.rpm) |^|
+|^| ^ | Amazon Linux2 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-3.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-3.aarch64.rpm) |^|
+|^| Ubuntu / Debian | Ubuntu 12 and above | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.3_amd64.deb) |^|
+|^| ^ | ^ | arm64 | ^ | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.3_arm64.deb) |^|
+|^| Freebsd | Freebsd 10 and above | amd64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz) |^|
+|^| Windows | Windows Server 2008 R2 and above | 32 bit / 64 bit | EXE | [다운로드](https://repo.whatap.io/windows/whatap_infra.zip) |^|
+|^| SUNOS 11, SPARC | SUNOS 11 and above, SPARC | amd64 | PKG | [다운로드](https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz) |^|
+|Server Agent v2.5.2| Red Hat / CentOS /<br/> Amazon linux | 6Server / 6 | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-2.x86_64.rpm) |2024년 02월 13일|
+|^| ^ | ^ | i386 | ^ | [다운로드](https://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm) |^|
+|^| ^ | 7Server / 7 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-2.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-2.aarch64.rpm) |^|
+|^| ^ | 8Server / 8 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-2.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-2.aarch64.rpm) |^|
+|^| ^ | 9Server / 9 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-2.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-2.aarch64.rpm) |^|
+|^| ^ | Amazon Linux2 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-2.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-2.aarch64.rpm) |^|
+|^| Ubuntu / Debian | Ubuntu 12 and above | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.2_amd64.deb) |^|
+|^| ^ | ^ | arm64 | ^ | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.2_arm64.deb) |^|
+|^| Freebsd | Freebsd 10 and above | amd64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz) |^|
+|^| Windows | Windows Server 2008 R2 and above | 32 bit / 64 bit | EXE | [다운로드](https://repo.whatap.io/windows/whatap_infra.zip) |^|
+|^| SUNOS 11, SPARC | SUNOS 11 and above, SPARC | amd64 | PKG | [다운로드](https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz) |^|
+|Server Agent v2.5.1| Red Hat / CentOS /<br/> Amazon linux | 6Server / 6 | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-1.x86_64.rpm) |2024년 01월 26일|
+|^| ^ | ^ | i386 | ^ | [다운로드](https://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm) |^|
+|^| ^ | 7Server / 7 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-1.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-1.aarch64.rpm) |^|
+|^| ^ | 8Server / 8 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-1.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-1.aarch64.rpm) |^|
+|^| ^ | 9Server / 9 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-1.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-1.aarch64.rpm) |^|
+|^| ^ | Amazon Linux2 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-1.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-1.aarch64.rpm) |^|
+|^| Ubuntu / Debian | Ubuntu 12 and above | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.1_amd64.deb) |^|
+|^| ^ | ^ | arm64 | ^ | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.1_arm64.deb) |^|
+|^| Freebsd | Freebsd 10 and above | amd64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz) |^|
+|^| Windows | Windows Server 2008 R2 and above | 32 bit / 64 bit | EXE | [다운로드](https://repo.whatap.io/windows/whatap_infra.zip) |^|
+|^| SUNOS 11, SPARC | SUNOS 11 and above, SPARC | amd64 | PKG | [다운로드](https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz) |^|
+|Server Agent v2.5.0| Red Hat / CentOS /<br/> Amazon linux | 6Server / 6 | x86 x64 | RPM | [다운로드](https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-0.x86_64.rpm) |2024년 01월 26일|
+|^| ^ | ^ | i386 | ^ | [다운로드](https://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm) |^|
+|^| ^ | 7Server / 7 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-0.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-0.aarch64.rpm) |^|
+|^| ^ | 8Server / 8 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-0.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-0.aarch64.rpm) |^|
+|^| ^ | 9Server / 9 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-0.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-0.aarch64.rpm) |^|
+|^| ^ | Amazon Linux2 | x86 x64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-0.x86_64.rpm) |^|
+|^| ^ | ^ | aarch64 | ^ | [다운로드](https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-0.aarch64.rpm) |^|
+|^| Ubuntu / Debian | Ubuntu 12 and above | amd64 | DEB | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.0_amd64.deb) |^|
+|^| ^ | ^ | arm64 | ^ | [다운로드](https://repo.whatap.io/debian/unstable/whatap-infra_2.5.0_arm64.deb) |^|
+|^| Freebsd | Freebsd 10 and above | amd64 | TXZ | [다운로드](https://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz) |^|
+|^| Windows | Windows Server 2008 R2 and above | 32 bit / 64 bit | EXE | [다운로드](https://repo.whatap.io/windows/whatap_infra.zip) |^|
+|^| SUNOS 11, SPARC | SUNOS 11 and above, SPARC | amd64 | PKG | [다운로드](https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz) |^|
 
 ### `Server AIX`
 
@@ -119,8 +281,6 @@ tags: [신규 기능, 24년, 1분기, 분기 요약]
 ### `DBX`
 
 ### `XOS`
-
-### `URL`
 
 ### `Browser`
 
