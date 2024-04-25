@@ -65,6 +65,10 @@ const toc = [{
   "value": "<code>공통</code>",
   "id": "공통",
   "level": 3
+}, {
+  "value": "<code>Server</code>",
+  "id": "server",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -73,6 +77,7 @@ function _createMdxContent(props) {
     code: "code",
     h2: "h2",
     h3: "h3",
+    hr: "hr",
     li: "li",
     p: "p",
     section: "section",
@@ -143,6 +148,21 @@ function _createMdxContent(props) {
               }), " 메뉴에서 로그 이벤트 설정 기능 추가"]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "server",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Server"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentInstall",
+            className: "uitext"
+          }), " 메뉴에서 Debian/Ubuntu 환경의 와탭 저장소 추가 명령어 수정"]
         })]
       })]
     })]
