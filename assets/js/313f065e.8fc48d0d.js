@@ -77,6 +77,10 @@ const toc = [{
   "value": "<code>Kubernetes</code>",
   "id": "kubernetes",
   "level": 3
+}, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -92,10 +96,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Head, Status} = _components;
+  }, {Cmdname, Head, Status, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Head) _missingMdxReference("Head", true);
   if (!Status) _missingMdxReference("Status", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Head, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
@@ -287,6 +292,25 @@ function _createMdxContent(props) {
             sid: "side_agentsConfiguration",
             className: "uitext"
           }), " 메뉴 추가"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Fixed"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_dashboard",
+              className: "uitext"
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_multiInstance",
+              className: "uitext"
+            }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Long Waiting Session Count"
+            }), " 위젯의 데이터가 현재 시간을 기준으로 표시되도록 수정"]
+          }), "\n"]
         })]
       })]
     })]
