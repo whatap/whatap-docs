@@ -120,42 +120,42 @@
   },
   "account_create_form_company": {
     "en": "Company",
-    "ja": "会社名（必須）",
+    "ja": "会社名(必須)",
     "ko": "회사 이름 (필수)",
     "zh": "公司名字（必须）",
     "service_id": "_00033"
   },
   "account_create_form_name": {
     "en": "Name",
-    "ja": "お名前（必須）",
+    "ja": "お名前(必須)",
     "ko": "이름 (필수)",
     "zh": "名字（必须）",
     "service_id": "_00034"
   },
   "account_create_form_phone": {
     "en": "Phone",
-    "ja": "携帯番号（必須）",
+    "ja": "携帯番号(必須)",
     "ko": "핸드폰 (필수)",
     "zh": "手机号码（必须）",
     "service_id": "_00035"
   },
   "account_create_form_email": {
     "en": "Email",
-    "ja": "Eメール（必須）",
+    "ja": "Eメール(必須)",
     "ko": "이메일 (필수)",
     "zh": "电子邮件（必须）",
     "service_id": "_00036"
   },
   "account_create_form_password": {
     "en": "Password",
-    "ja": "パスワード（必須）",
+    "ja": "パスワード(必須)",
     "ko": "비밀번호 (필수)",
     "zh": "密码（必须）",
     "service_id": "_00037"
   },
   "account_create_form_confirm_password": {
     "en": "Confirm password",
-    "ja": "パスワードの再入力（必須）",
+    "ja": "パスワードの再入力(必須)",
     "ko": "비밀번호 확인 (필수)",
     "zh": "确认密码（必须）",
     "service_id": "_00038"
@@ -2234,56 +2234,56 @@
   },
   "select_30m_live": {
     "en": "last 30 minutes (Live)",
-    "ja": "最近、30分(リアルタイム)",
+    "ja": "最近30分(リアルタイム)",
     "ko": "최근 30분 (실시간)",
     "zh": "last 30 minutes (Live)",
     "service_id": "_00340"
   },
   "select_10_minutes": {
     "en": "last 10 minutes",
-    "ja": "最近、10分",
+    "ja": "最近10分",
     "ko": "최근 10분",
     "zh": "last 10 minutes",
     "service_id": "_00341"
   },
   "select_30_minutes": {
     "en": "last 30 minutes",
-    "ja": "最近、30分",
+    "ja": "最近30分",
     "ko": "최근 30분",
     "zh": "last 30 minutes",
     "service_id": "_00342"
   },
   "select_1_hour": {
     "en": "last 1 hour",
-    "ja": "最近、1時間",
+    "ja": "最近1時間",
     "ko": "최근 1시간",
     "zh": "last 1 hour",
     "service_id": "ITM00343"
   },
   "select_3_hour": {
     "en": "last 3 hours",
-    "ja": "最近、3時間",
+    "ja": "最近3時間",
     "ko": "최근 3시간",
     "zh": "last 3 hours",
     "service_id": "_00344"
   },
   "select_6_hour": {
     "en": "last 6 hours",
-    "ja": "最近、6時間",
+    "ja": "最近6時間",
     "ko": "최근 6시간",
     "zh": "last 6 hours",
     "service_id": "_00345"
   },
   "select_12_hour": {
     "en": "last 12 hours",
-    "ja": "最近、12時間",
+    "ja": "最近12時間",
     "ko": "최근 12시간",
     "zh": "last 12 hours",
     "service_id": "_00346"
   },
   "select_1_day": {
     "en": "last 1 day",
-    "ja": "最近、1日",
+    "ja": "最近1日",
     "ko": "최근 1일",
     "zh": "last 1 day",
     "service_id": "_00347"
@@ -2402,7 +2402,7 @@
   },
   "active_tx(peak)": {
     "en": "Active TX(Peak)",
-    "ja": "アクティブTX（ピーク）",
+    "ja": "アクティブTX(ピーク)",
     "ko": "액티브 TX(최고점)",
     "zh": "主动 TX（峰值）",
     "service_id": "_00364"
@@ -2507,7 +2507,7 @@
   },
   "angola": {
     "en": "AO(ANGOLA)",
-    "ja": "AO（アンゴラ)",
+    "ja": "AO(アンゴラ)",
     "ko": "AO(앙골라)",
     "zh": "AO(安哥拉）",
     "service_id": "_00379"
@@ -2605,7 +2605,7 @@
   },
   "ar(argentina)": {
     "en": "AR(ARGENTINA)",
-    "ja": "AR（アルゼンチン)",
+    "ja": "AR(アルゼンチン)",
     "ko": "AR(아르헨티나)",
     "zh": "AR（阿根廷）",
     "service_id": "_00394"
@@ -2633,7 +2633,7 @@
   },
   "at(austria)": {
     "en": "AT(AUSTRIA)",
-    "ja": "AT（オーストリア)",
+    "ja": "AT(オーストリア)",
     "ko": "AT(오스트리아)",
     "zh": "AT（奥地利）",
     "service_id": "_00398"
@@ -2689,7 +2689,7 @@
   },
   "be(belgium)": {
     "en": "BE(BELGIUM)",
-    "ja": "BE（ベルギー）",
+    "ja": "BE(ベルギー)",
     "ko": "BE(벨기에)",
     "zh": "BE（比利时）",
     "service_id": "_00406"
@@ -2738,7 +2738,7 @@
   },
   "br(brazil)": {
     "en": "BR(BRAZIL)",
-    "ja": "BR（ブラジル）",
+    "ja": "BR(ブラジル)",
     "ko": "BR(브라질)",
     "zh": "BR（巴西）",
     "service_id": "_00414"
@@ -2759,7 +2759,7 @@
   },
   "bn(brunei_darussalam)": {
     "en": "BN(BRUNEI DARUSSALAM)",
-    "ja": "BN（ブルナイ ダラスサラム）",
+    "ja": "BN(ブルナイ ダラスサラム)",
     "ko": "BN(브루나이)",
     "zh": "BN（文莱）",
     "service_id": "_00417"
@@ -2787,7 +2787,7 @@
   },
   "ca(canada)": {
     "en": "CA(CANADA)",
-    "ja": "カナダ（カナダ）",
+    "ja": "CA(カナダ)",
     "ko": "CA(캐나다)",
     "zh": "CA（加拿大）",
     "service_id": "_00421"
@@ -2899,8 +2899,9 @@
   },
   "chanthaburi": {
     "en": "Chanthaburi",
-    "": "Chanthaburi",
+    "ja": "チャンタブリー",
     "ko": "짠타부리",
+    "": "Chanthaburi",
     "service_id": "_00437"
   },
   "chapel_hill": {
@@ -2940,14 +2941,14 @@
   },
   "cl(chile)": {
     "en": "CL(CHILE)",
-    "ja": "CL（チル）",
+    "ja": "CL(チリ)",
     "ko": "CL(칠레)",
     "zh": "CL（智利）",
     "service_id": "_00443"
   },
   "cn(china)": {
     "en": "CN(CHINA)",
-    "ja": "CN（中国）",
+    "ja": "CN(中国)",
     "ko": "CN(중국)",
     "zh": "CN（中国）",
     "service_id": "_00444"
@@ -3038,7 +3039,7 @@
   },
   "co(columbia)": {
     "en": "CO(COLIMBIA)",
-    "ja": "CO（コリンビア）",
+    "ja": "CO(コリンビア)",
     "ko": "CO(콜럼비아)",
     "zh": "有限公司",
     "service_id": "_00457"
@@ -3199,7 +3200,7 @@
   },
   "cz(czech_republic)": {
     "en": "CZ(CZECH REPUBLIC)",
-    "ja": "CZ（チェコ共和国）",
+    "ja": "CZ(チェコ共和国)",
     "ko": "CZ(체코)",
     "zh": "CZ（捷克共和国）",
     "service_id": "_00480"
@@ -3262,21 +3263,21 @@
   },
   "daily_report_total_summary": {
     "en": "Daily report (total summary)",
-    "ja": "日次レポート（全体要約）",
+    "ja": "日次レポート(全体要約)",
     "ko": "일일 보고서 (전체 요약)",
     "zh": "每日报告 (全部)",
     "service_id": "_00489"
   },
   "daily_report_app_summary": {
     "en": "Daily report (application summary)",
-    "ja": "日次レポート（アプリケーション要約）",
+    "ja": "日次レポート(アプリケーション要約)",
     "ko": "일일 보고서 (애플리케이션 요약)",
     "zh": "每日报告 (应用程序 概要)",
     "service_id": "_00490"
   },
   "daily_report_app_detail": {
     "en": "Daily report (application detail)",
-    "ja": "日次レポート（アプリケーション 詳細）",
+    "ja": "日次レポート(アプリケーション 詳細)",
     "ko": "일일 보고서 (애플리케이션 상세)",
     "zh": "每日报告 (应用程序 详细)",
     "service_id": "_00491"
@@ -3486,7 +3487,7 @@
   },
   "denmark": {
     "en": "DK(DENMARK)",
-    "ja": "DK（デンマーク）",
+    "ja": "DK(デンマーク)",
     "ko": "DK(덴마크)",
     "zh": "DK（丹麦）",
     "service_id": "_00521"
@@ -3542,7 +3543,7 @@
   },
   "dominican_republic": {
     "en": "DO(DOMINICAN REPUBLIC)",
-    "ja": "DO（ドミニカ共和国）",
+    "ja": "DO(ドミニカ共和国)",
     "ko": "DO(도미니카 공화국)",
     "zh": "DO(多米尼加共和国)",
     "service_id": "_00529"
@@ -3668,7 +3669,7 @@
   },
   "eniwetok": {
     "en": "Eniwetok",
-    "ja": "Eniwetok",
+    "ja": "エニウェトク",
     "ko": "에니웨톡",
     "zh": "埃尼威托克岛",
     "service_id": "_00547"
@@ -3717,7 +3718,7 @@
   },
   "error_tx_rate(peak)": {
     "en": "Error TX rate(peak)",
-    "ja": "エラーTX率（ピーク）",
+    "ja": "エラーTX率(ピーク)",
     "ko": "에러 TX 비율(최고치)",
     "zh": "错误发送速率(高峰）",
     "service_id": "_00555"
@@ -3794,7 +3795,7 @@
   },
   "finland": {
     "en": "FI(FINLAND)",
-    "ja": "FI（フィンランド）",
+    "ja": "FI(フィンランド)",
     "ko": "FI(핀란드)",
     "zh": "FI（芬兰）",
     "service_id": "_00566"
@@ -3808,7 +3809,7 @@
   },
   "france": {
     "en": "FR(FRANCE)",
-    "ja": "FR（フランス）",
+    "ja": "FR(フランス)",
     "ko": "FR(프랑스)",
     "zh": "FR（法国）",
     "service_id": "_00568"
@@ -3843,14 +3844,14 @@
   },
   "ge(germany)": {
     "en": "GE(GERMANY)",
-    "ja": "GE（ドイツ）",
+    "ja": "GE(ドイツ)",
     "ko": "GE(독일)",
     "zh": "德（德国）",
     "service_id": "_00573"
   },
   "gh(ghana)": {
     "en": "GH(GHANA)",
-    "ja": "GH（GHANA）",
+    "ja": "GH(ガーナ)",
     "ko": "GH(가나)",
     "zh": "生长激素（加纳）",
     "service_id": "_00574"
@@ -4375,14 +4376,14 @@
   },
   "india": {
     "en": "IN(INDIA)",
-    "ja": "IN（インド）",
+    "ja": "IN(インド)",
     "ko": "IN(인도)",
     "zh": "在（印度）",
     "service_id": "_00648"
   },
   "indonesia": {
     "en": "ID(INDONESIA)",
-    "ja": "ID（インドネシア）",
+    "ja": "ID(インドネシア)",
     "ko": "ID(인도네시아)",
     "zh": "身份证（印度尼西亚）",
     "service_id": "_00649"
@@ -4417,7 +4418,7 @@
   },
   "iran": {
     "en": "IR(IRAN(ISLAMIC REPUBLBIS OF))",
-    "ja": "IR（イラン（イスラム共和国））",
+    "ja": "IR(イラン・イスラム共和国)",
     "ko": "IR(이란)",
     "zh": "IR（伊朗）",
     "service_id": "_00654"
@@ -4438,7 +4439,7 @@
   },
   "it(italy)": {
     "en": "IT(ITALY)",
-    "ja": "IT（イタリア）",
+    "ja": "IT(イタリア)",
     "ko": "IT(이탈리아)",
     "zh": "IT（意大利）",
     "service_id": "_00657"
@@ -4501,7 +4502,7 @@
   },
   "kr(korea)": {
     "en": "KR(KOREA, REPUBLIC OF)",
-    "ja": "KR（韓国）",
+    "ja": "KR(韓国)",
     "ko": "KR(한국)",
     "zh": "KR（韩国）",
     "service_id": "_00666"
@@ -4613,7 +4614,7 @@
   },
   "lt(lituania)": {
     "en": "LT(LITHUANIA)",
-    "ja": "LT（リトアニア）",
+    "ja": "LT(リトアニア)",
     "ko": "LT(리투아니아)",
     "zh": "LT（立陶宛）",
     "service_id": "_00683"
@@ -4634,7 +4635,7 @@
   },
   "lu(luxembourg)": {
     "en": "LU(LUXEMBOURG)",
-    "ja": "LU（ルクセンブルグ）",
+    "ja": "LU(ルクセンブルグ)",
     "ko": "LU(룩셈부르크)",
     "zh": "陆（卢森堡）",
     "service_id": "_00687"
@@ -4669,7 +4670,7 @@
   },
   "ma(malaysia)": {
     "en": "MA(MALAYSIA)",
-    "ja": "マサチューセッツ州（マレーシア）",
+    "ja": "MA(マレーシア)",
     "ko": "MA(말레이시아)",
     "zh": "MA（马来西亚）",
     "service_id": "_00692"
@@ -4886,14 +4887,14 @@
   },
   "netherland": {
     "en": "NL(NETHERLANDS)",
-    "ja": "NL（オランダ）",
+    "ja": "NL(オランダ)",
     "ko": "NL(네덜란드)",
     "zh": "NL（荷兰）",
     "service_id": "_00724"
   },
   "new": {
     "en": "NEW",
-    "ja": "新",
+    "ja": "新規",
     "ko": "신규",
     "zh": "新",
     "service_id": "TTL00725"
@@ -4935,7 +4936,7 @@
   },
   "new_zealand": {
     "en": "NZ(NEW ZEALAND)",
-    "ja": "ニュージーランド（ニュージーランド）",
+    "ja": "NZ(ニュージーランド)",
     "ko": "NZ(뉴질랜드)",
     "zh": "NZ（新西兰）",
     "service_id": "_00731"
@@ -4949,7 +4950,7 @@
   },
   "ng(nigeria)": {
     "en": "NG(NIGERIA)",
-    "ja": "NG（ナイジェリア）",
+    "ja": "NG(ナイジェリア)",
     "ko": "NG(나이지리아)",
     "zh": "NG（尼日利亚）",
     "service_id": "_00733"
@@ -4991,7 +4992,7 @@
   },
   "no(norway)": {
     "en": "NO(NORWAY)",
-    "ja": "NO（ノルウェー）",
+    "ja": "NO(ノルウェー)",
     "ko": "NO(노르웨이)",
     "zh": "NO（挪威）",
     "service_id": "_00739"
@@ -5096,7 +5097,7 @@
   },
   "pk(pakistan)": {
     "en": "PK(PAKISTAN)",
-    "ja": "PK（パキスタン）",
+    "ja": "PK(パキスタン)",
     "ko": "PK(파키스탄)",
     "zh": "PK（巴基斯坦）",
     "service_id": "_00754"
@@ -5152,7 +5153,7 @@
   },
   "philippines": {
     "en": "PH(PHILLIPHINES)",
-    "ja": "PH（フィリピン）",
+    "ja": "PH(フィリピン)",
     "ko": "PH(필리핀)",
     "zh": "PH（菲律宾）",
     "service_id": "_00762"
@@ -5173,7 +5174,7 @@
   },
   "pl(poland)": {
     "en": "PL(POLAND)",
-    "ja": "PL（ポーランド）",
+    "ja": "PL(ポーランド)",
     "ko": "PL(폴란드)",
     "zh": "PL（波兰）",
     "service_id": "_00765"
@@ -5243,14 +5244,14 @@
   },
   "puerto_rico": {
     "en": "PR(PUERTO RICO)",
-    "ja": "PR（プエルトリコ）",
+    "ja": "PR(プエルトリコ)",
     "ko": "PR(푸에르토리코)",
     "zh": "公关（波多黎各）",
     "service_id": "_00776"
   },
   "qatar": {
     "en": "QA(QATAR)",
-    "ja": "QA（カタル）",
+    "ja": "QA(カタル)",
     "ko": "QA(카타르)",
     "zh": "QA（卡塔尔）",
     "service_id": "_00777"
@@ -5327,7 +5328,7 @@
   },
   "real-time_user(peak)": {
     "en": "Real-time user(Peak)",
-    "ja": "実時間ユーザー（ピーク）",
+    "ja": "実時間ユーザー(ピーク)",
     "ko": "실시간 사용자 ( 최고치 )",
     "zh": "实时用户（峰值）",
     "service_id": "_00788"
@@ -5397,7 +5398,7 @@
   },
   "response_time(peak)": {
     "en": "Resp. time(peak)",
-    "ja": "応答時間（ピーク）",
+    "ja": "応答時間(ピーク)",
     "ko": "응답 시간 ( 최고치 )",
     "zh": "响应时间（峰值）",
     "service_id": "_00800"
@@ -5425,14 +5426,14 @@
   },
   "ro(romania)": {
     "en": "RO(ROMANIA)",
-    "ja": "RO（ルーマニア）",
-    "ko": "RO(로마니아)",
+    "ja": "RO(ルーマニア)",
+    "ko": "RO(루마니아)",
     "zh": "RO（罗马尼亚）",
     "service_id": "_00805"
   },
   "russia": {
     "en": "RU(RSSIAN FEDERATION)",
-    "ja": "RU（ウッティサン連盟）",
+    "ja": "RU(ロシア)",
     "ko": "RU(러시아)",
     "zh": "Ru（俄罗斯联邦）",
     "service_id": "_00806"
@@ -5460,7 +5461,7 @@
   },
   "saudi_arabia": {
     "en": "SA(SAUDI ARABIA)",
-    "ja": "SA（サウジアラビア）",
+    "ja": "SA(サウジアラビア)",
     "ko": "SA(SAUDI ARABIA)",
     "zh": "SA（沙特阿拉伯）",
     "service_id": "_00810"
@@ -5537,7 +5538,7 @@
   },
   "sg(singapore)": {
     "en": "SG(SINGAPORE)",
-    "ja": "SG（シンガポール）",
+    "ja": "SG(シンガポール)",
     "ko": "SG(싱가폴)",
     "zh": "SG（新加坡）",
     "service_id": "_00821"
@@ -5565,7 +5566,7 @@
   },
   "sl(slovenia)": {
     "en": "SI(SLOVENIA)",
-    "ja": "SI（スロベニア）",
+    "ja": "SI(スロベニア)",
     "ko": "SI(슬로베니아)",
     "zh": "SI（斯洛文尼亚）",
     "service_id": "_00826"
@@ -5579,7 +5580,7 @@
   },
   "za(south_africa)": {
     "en": "ZA(SOUTH AFRICA)",
-    "ja": "ZA（南アフリカ）",
+    "ja": "ZA(南アフリカ)",
     "ko": "ZA(남아프리카)",
     "zh": "ZA（南非）",
     "service_id": "_00828"
@@ -5635,7 +5636,7 @@
   },
   "sql_fetch_time_ms": {
     "en": "SQL fetch time (ms)",
-    "ja": "SQLフェッチ時間 (ms)",
+    "ja": "SQLフェッチ時間(ms)",
     "ko": "SQL 패치 시간 (ms)",
     "zh": "SQL读取时间 (ms)",
     "service_id": "_00836"
@@ -5698,7 +5699,7 @@
   },
   "taiwan": {
     "en": "TW(TAIWAN)",
-    "ja": "TW（台湾）",
+    "ja": "TW(台湾)",
     "ko": "TW(타이완)",
     "zh": "TW（台湾）",
     "service_id": "_00845"
@@ -5824,7 +5825,7 @@
   },
   "tps(peak)": {
     "en": "TPS(Peak)",
-    "ja": "TPS（ピーク）",
+    "ja": "TPS(ピーク)",
     "ko": "TPS(최고치)",
     "zh": "TPS(Peak)",
     "service_id": "_00863"
@@ -5908,7 +5909,7 @@
   },
   "turkey": {
     "en": "TR(TURKEY)",
-    "ja": "TR（トルコ）",
+    "ja": "TR(トルコ)",
     "ko": "TR(터키)",
     "zh": "TR（土耳其）",
     "service_id": "_00875"
@@ -5936,14 +5937,14 @@
   },
   "united_kingdom": {
     "en": "GB(UNITED KINGDOM)",
-    "ja": "GB（イギリス）",
+    "ja": "GB(イギリス)",
     "ko": "GB(영국)",
     "zh": "GB（英国）",
     "service_id": "_00879"
   },
   "us(united_states)": {
     "en": "US(UNITED STATES)",
-    "ja": "米国（アメリカ合衆国）",
+    "ja": "US(米国)",
     "ko": "US(미국)",
     "zh": "美国（美国）",
     "service_id": "_00880"
@@ -5978,7 +5979,7 @@
   },
   "venezuela": {
     "en": "VE(VENEZUELA)",
-    "ja": "VE（ベネズエラ）",
+    "ja": "VE(ベネズエラ)",
     "ko": "VE(베네수엘라)",
     "zh": "VE（委内瑞拉）",
     "service_id": "_00885"
@@ -5992,7 +5993,7 @@
   },
   "vietnam": {
     "en": "VN(VIETNAM)",
-    "ja": "VN（ベトナム）",
+    "ja": "VN(ベトナム)",
     "ko": "VN(베트남)",
     "zh": "VN（越南）",
     "service_id": "_00887"
@@ -6013,21 +6014,21 @@
   },
   "weekly_report_disk": {
     "en": "Weekly report (For Disk)",
-    "ja": "週次レポート (ディスク)",
+    "ja": "週次レポート(ディスク)",
     "ko": "주간 보고서 (디스크)",
     "zh": "每周报告 (磁盘)",
     "service_id": "_00890"
   },
   "monthly_report_disk": {
     "en": "Monthly report (For Disk)",
-    "ja": "月次レポート (ディスク)",
+    "ja": "月次レポート(ディスク)",
     "ko": "월간 보고서 (디스크)",
     "zh": "月月报告 (磁盘)",
     "service_id": "_00891"
   },
   "monthly_report_server_detail": {
     "en": "Monthly report (Server Detail)",
-    "ja": "月次レポート (サーバー 詳細)",
+    "ja": "月次レポート(サーバー詳細)",
     "ko": "월간 보고서 (서버 상세)",
     "zh": "月月报告 (服务器 详细)",
     "service_id": "_00892"
@@ -6349,7 +6350,7 @@
   },
   "cpu(ms)": {
     "en": "CPU(ms)",
-    "ja": "CPU（ミリ秒）",
+    "ja": "CPU(ミリ秒)",
     "ko": "CPU(ms)",
     "zh": "CPU（毫秒）",
     "service_id": "TTL00940"
@@ -6419,7 +6420,7 @@
   },
   "date_(utc)": {
     "en": "Date (UTC)",
-    "ja": "日付（UTC）",
+    "ja": "日付(UTC)",
     "ko": "날짜 (UTC)",
     "zh": "日期（UTC）",
     "service_id": "_00951"
@@ -6433,7 +6434,7 @@
   },
   "db_open_count": {
     "en": "DB open count",
-    "ja": "データベースオープン数",
+    "ja": "DBオープン数",
     "ko": "DB 오픈 수",
     "zh": "数据库",
     "service_id": "_00953"
@@ -6496,21 +6497,21 @@
   },
   "drop": {
     "en": "drop",
-    "ja": "ドロップ",
+    "ja": "drop",
     "ko": "drop",
     "zh": "下降",
     "service_id": "_00965"
   },
   "drop_a2p": {
     "en": "drop_A2P",
-    "ja": "ドロップ_A2P",
+    "ja": "drop_A2P",
     "ko": "drop_A2P",
     "zh": "停止_A2P",
     "service_id": "_00966"
   },
   "drop_p2y": {
     "en": "drop_P2Y",
-    "ja": "ドロップ_P2Y",
+    "ja": "drop_P2Y",
     "ko": "drop_P2Y",
     "zh": "停止_P2Y",
     "service_id": "_00967"
@@ -6552,7 +6553,7 @@
   },
   "elapsed(ms)": {
     "en": "Elapsed(ms)",
-    "ja": "経過時間（ミリ秒）",
+    "ja": "経過時間(ミリ秒)",
     "ko": "경과 시간(ms)",
     "zh": "经过时间（毫秒）",
     "service_id": "TTL00973"
@@ -6561,7 +6562,7 @@
     "en": "Elapsed(s)",
     "ja": "経過時間",
     "ko": "경과 시간(s)",
-    "zh": "经过（秒）",
+    "zh": "经过(秒)",
     "service_id": "_00974"
   },
   "end": {
@@ -6587,9 +6588,9 @@
   },
   "err(%)": {
     "en": "Err(%)",
-    "ja": "エラー（％）",
+    "ja": "エラー(%)",
     "ko": "에러(%)",
-    "zh": "错误（％）",
+    "zh": "错误(%)",
     "service_id": "_00978"
   },
   "error": {
@@ -6636,7 +6637,7 @@
   },
   "es(spain)": {
     "en": "ES(SPAIN)",
-    "ja": "ES（スペイン）",
+    "ja": "ES(スペイン)",
     "ko": "ES(스페인)",
     "zh": "ES（西班牙）",
     "service_id": "_00984"
@@ -7056,9 +7057,9 @@
   },
   "mem(kb)": {
     "en": "Mem(KB)",
-    "ja": "メモリ（KB）",
+    "ja": "メモリ(KB)",
     "ko": "메모리(KB)",
-    "zh": "内存（KB）",
+    "zh": "内存(KB)",
     "service_id": "_01050"
   },
   "server_memory": {
@@ -7133,7 +7134,7 @@
   },
   "name_katakana": {
     "en": "Additional",
-    "ja": "お名前 (カタカナ)",
+    "ja": "お名前(カタカナ)",
     "ko": "부가정보",
     "zh": "Additional",
     "service_id": "TTL01062"
@@ -7497,7 +7498,7 @@
   },
   "resp.(ms)": {
     "en": "Resp.(ms)",
-    "ja": "応答時間（ミリ秒）",
+    "ja": "応答時間(ミリ秒)",
     "ko": "응답시간 (ms)",
     "zh": "响应时间（毫秒）",
     "service_id": "_01119"
@@ -7693,7 +7694,7 @@
   },
   "sql_time_ms": {
     "en": "SQL time (ms)",
-    "ja": "SQL時間 (ミリ秒)",
+    "ja": "SQL時間(ミリ秒)",
     "ko": "SQL 시간 (ms)",
     "zh": "SQL时间 (ms)",
     "service_id": "_01148"
@@ -7994,7 +7995,7 @@
   },
   "transaction_id": {
     "en": "Transaction ID",
-    "ja": "TXID",
+    "ja": "TX ID",
     "ko": "트랜잭션 ID",
     "zh": "事务ID",
     "service_id": "TTL01192"
@@ -8211,7 +8212,7 @@
   },
   "visitor(daily_active_user)": {
     "en": "Visitor(Daily Active User)",
-    "ja": "訪問者（DAU）",
+    "ja": "訪問者(DAU)",
     "ko": "방문자(DAU)",
     "zh": "来访者（每日活跃用户）",
     "service_id": "_01225"
@@ -9639,7 +9640,7 @@
   },
   "sms_log_keyword_explain": {
     "en": "Keyword match can be multiple. Ex) keyword1|keyword2|keyword3, Keyword in Windows Event Viewer is not applied to this",
-    "ja": "検索キーワードは複数入力できます。例) keyword1|keyword2|keyword3",
+    "ja": "検索キーワードは複数入力できます。Windowsイベントビューアのキーワードには適用されません。例) keyword1|keyword2|keyword3",
     "ko": "검색 키워드는 복수개로 입력할 수 있습니다. Ex) keyword1|keyword2|keyword3 윈도우 이벤트뷰어 키워드 항목에는 적용되지 않습니다.",
     "zh": "Keyword match can be multiple. Ex) keyword1|keyword2|keyword3, Keyword in Windows Event Viewer is not applied to this",
     "service_id": "_01433"
@@ -9702,14 +9703,14 @@
   },
   "profile_basetime": {
     "en": "set minimum milliseconds to get transaction detail profile",
-    "ja": "TX詳細情報収集時間（ミリ秒）指定",
+    "ja": "TX詳細情報収集時間(ミリ秒)指定",
     "ko": "트랜잭션 상세 정보 수집 최소 시간(밀리초) 지정",
     "zh": "set minimum milliseconds to get transaction detail profile",
     "service_id": "_01442"
   },
   "active_stack_second": {
     "en": "set period seconds to obtain active stack",
-    "ja": "アクティブスタック確保周期（秒）指定",
+    "ja": "アクティブスタック確保周期(秒)指定",
     "ko": "액티브 스택 확보 주기(초) 지정",
     "zh": "set period seconds to obtain active stack",
     "service_id": "_01443"
@@ -12296,7 +12297,7 @@
   },
   "agent-setup-explain-step0-windows": {
     "en": "Click the link below to download the WhaTap installer file (whatap.exe / whatap.zip) for Windows servers. \\n setup.zip file is also provided for customers using browsers whose security settings prevent downloading .exe file. \\n * For your server security, it is recommended that running the downloaded installer file than direct installation through a browser.",
-    "ja": "リンクをクリックすると、Windowsサーバー用のインストールファイル（whatap.exe/ whatap.zip）がダウンロードされます。\\n セキュリティ上、exe形式のファイルがダウンロードできないユーザー向けには.zip形式のファイルも提供します。\\n * セキュリティ向上のためにはブラウザから直接インストールするよりは、ダウンロードしてからインストールファイルを実行する方をお勧めします。",
+    "ja": "リンクをクリックすると、Windowsサーバー用のインストールファイル(whatap.exe、whatap.zip)がダウンロードされます。\\n セキュリティ上、exe形式のファイルがダウンロードできないユーザー向けには.zip形式のファイルも提供します。\\n * セキュリティ向上のためにはブラウザから直接インストールするよりは、ダウンロードしてからインストールファイルを実行する方をお勧めします。",
     "ko": "링크를 클릭하시면 윈도우 서버 운영체제용 설치 파일 (whatap.exe / whatap.zip) 가 다운로드 됩니다. \\n 보안 설정으로 인해 .exe 형식의 파일이 받아지지 않는 사용자를 위해 .zip 형식의 파일도 함께 제공됩니다. \\n * 서버 보안을 위해 브라우저를 통한 직접 설치 보다 다운로드 받은 설치 파일을 실행하시는 것을 권장합니다.",
     "zh": "点击链接后即开始下载Windows Sever操作系统用安装文件 (whatap.exe / whatap.zip)。\\n 由于安全设定导致有些用户无法下载.exe扩展名的文件，所以同时提供了扩展名为.zip的压缩文件。\\n * 为了服务器的安全，不建议直接通过浏览器安装，建议安装下载的安装文件。",
     "service_id": "_01824"
@@ -12646,7 +12647,7 @@
   },
   "escalation_configuration_ex": {
     "en": "If the situation is not resolved after 0 minute (immediately), 10 minutes, and 30 minutes after the alert, the alert will be reissued.",
-    "ja": "アラートの発生時刻から0分（即時）、10分後、30分後に該当状態が解除されない場合、再アラートします。",
+    "ja": "アラートの発生時刻から0分(即時)、10分後、30分後に該当状態が解除されない場合、再アラートします。",
     "ko": "알림 발생 시간으로 부터 0분 (즉시), 10분 후, 30분 후에 해당 상황이 해소되지 않은 경우, 알림이 재발행 됩니다.",
     "zh": "If the situation is not resolved after 0 minutes (immediately), 10 minutes, and 30 minutes after the event occurred, the alert will be reissued.",
     "service_id": "_01875"
@@ -13311,7 +13312,7 @@
   },
   "placeholder_input_pcode_or_project_name": {
     "en": "Project name / PCODE",
-    "ja": "プロジェクト/コード",
+    "ja": "プロジェクト名 / PCODE",
     "ko": "프로젝트 명 / PCODE",
     "zh": "项目名 / PCODE",
     "service_id": "CNT01970"
@@ -13367,7 +13368,7 @@
   },
   "email_is_used_by_notification_check_spam_filter": {
     "en": "Email is used for sign-up approval, password reset and alert notifications. If you don't receive it, please check the spam filter.",
-    "ja": "Eメールは\bユーザー登録の承認、パスワード初期化、アラート通知に使われます。Eメールが受信できなかった場合には迷惑メールを確認してください。",
+    "ja": "Eメールは、ユーザー登録の承認、パスワード初期化、アラート通知に使われます。Eメールが受信できなかった場合には迷惑メールを確認してください。",
     "ko": "이메일은 회원가입 승인, 패스워드 초기화, 경고 알림에 사용됩니다. 수신되지 않을 경우, 스팸 메일을 확인하여 주시기 바랍니다.",
     "zh": "Email is used by sign-up approval, password reset and email notification. If you couldn't receive the email, please check the spam filter.",
     "service_id": "DSC01978"
@@ -14172,7 +14173,7 @@
   },
   "disk_usedPercent_max": {
     "en": "Disk used % (max)",
-    "ja": "ディスク使用% (最大)",
+    "ja": "ディスク使用%(最大)",
     "ko": "Disk Used % (Max)",
     "zh": "Disk Used % (Max)",
     "service_id": "TTL02092"
@@ -14228,7 +14229,7 @@
   },
   "disk_ioPercent_max": {
     "en": "Disk I/O % (max)",
-    "ja": "ディスクI/O率 (最大)",
+    "ja": "ディスクI/O率(最大)",
     "ko": "Disk I/O % (Max)",
     "zh": "Disk I/O % (Max)",
     "service_id": "TTL02100"
@@ -14340,14 +14341,14 @@
   },
   "memory_poolNonpagedBytes": {
     "en": "Memory pool non-paged",
-    "ja": "トータルメモリPool Non-Paged",
+    "ja": "メモリPool Non-Paged",
     "ko": "Memory Pool Non-Paged",
     "zh": "Memory Pool Non-Paged",
     "service_id": "_02116"
   },
   "memory_poolPagedBytes": {
     "en": "Memory pool paged",
-    "ja": "トータルメモリPool Paged",
+    "ja": "メモリPool Paged",
     "ko": "Memory Pool Paged",
     "zh": "Memory Pool Paged",
     "service_id": "_02117"
@@ -14389,7 +14390,7 @@
   },
   "memory_slab": {
     "en": "Memory slap",
-    "ja": "ネットワークSlap",
+    "ja": "メモリSlap",
     "ko": "Memory Slap",
     "zh": "Memory Slap",
     "service_id": "_02123"
@@ -14438,14 +14439,14 @@
   },
   "memory_pavailable": {
     "en": "Memory available %",
-    "ja": "利用可能メモリ ",
+    "ja": "利用可能メモリ%",
     "ko": "Memory Available %",
     "zh": "Memory Available %",
     "service_id": "_02130"
   },
   "memory_pused": {
     "en": "Memory paused",
-    "ja": "ネットワークPaused",
+    "ja": "メモリ使用量%",
     "ko": "Memory Used %",
     "zh": "Memory Used %",
     "service_id": "_02131"
@@ -14515,7 +14516,7 @@
   },
   "mem_pavailable": {
     "en": "Memory available %",
-    "ja": "利用可能メモリ",
+    "ja": "利用可能メモリ%",
     "ko": "Memory Available %",
     "zh": "Memory Available %",
     "service_id": "ITM02141"
@@ -14893,14 +14894,14 @@
   },
   "apm_rule_template_for_hithorizon": {
     "en": "Based on the response time distribution of the heat map, an alert is issued if transactions with a response time of more than <b>{minTime}</b> occur *continuously <b>{count}</b> times in a row in the same response time interval.<hr style=\"margin-top: 10px; margin-bottom: 5px;\"/> <span style=\"font-size:11px;\">\n *continuously: if the distribution in units of the X-axis (5 seconds) appears to be a continuous line (not a break in the middle).</span>",
-    "ja": "ヒトマップの応答時間分布上、応答時間が<b>{minTime}</b>以上のトランザクションが同一応答時間区間に*連続<b>{count}</b>回発生する場合に通知を行います。<hr style=\"margin-top: 10px; margin-bottom: 5px;\"/> <span style=\"font-size:11px;\">\n*連続: X軸（5秒）単位の分布が連続した線として現れる場合（途中に線が切れた場合は該当しません)。</span>",
+    "ja": "ヒトマップの応答時間分布上、応答時間が<b>{minTime}</b>以上のトランザクションが同一応答時間区間に*連続<b>{count}</b>回発生する場合に通知を行います。<hr style=\"margin-top: 10px; margin-bottom: 5px;\"/> <span style=\"font-size:11px;\">\n*連続: X軸(5秒)単位の分布が連続した線として現れる場合(途中に線が切れた場合は該当しません)。</span>",
     "ko": "히트맵의 응답시간 분포상, <b>응답시간이 {minTime} 이상</b>인 트랜잭션이 동일 응답시간 구간에 *연속하여 <b>{count}회</b> 발생할 경우 알림이 발생합니다. <hr style=\"margin-top: 10px; margin-bottom: 5px;\"/>\n<span style=\"font-size:11px;\">*연속:   X축(5초) 단위의 분포가 연속된 선으로 나타날 경우 (중간에 끊김이 있는 경우는 해당되지 않습니다.)</span>",
     "zh": "Based on the response time distribution of the heat map, an alert is issued if transactions with a response time of more than <b>{minTime}</b> occur *continuously <b>{count}</b> times in a row in the same response time interval.<hr style=\"margin-top: 10px; margin-bottom: 5px;\"/> <span style=\"font-size:11px;\">\n*continuously: if the distribution in units of the X-axis (5 seconds) appears to be a continuous line (not a break in the middle).</span>",
     "service_id": "DSC02195"
   },
   "apm_rule_template_for_hitline": {
     "en": "Based on the response time distribution of the heat map, an alert is issued when *a vertical line appear in a single section of the X-axis (5 seconds) for a period of {repeat} ({repeatcount} times). <hr style=\"margin-top: 10px; margin-bottom: 5px;\" /><span style=\"font-size:11px;\">\n *a vertical line: Of the total 100 sections representing 2.5 seconds to 80 seconds, {value1} to {value2} are marked, a <span style=\"color:#ffbf00;\"> [Warning Alert].</span>\n A <span style=\"color:red;\">[Fatal Alert]</span> occurs when more than {value2} are marked with the same rule.</span>",
-    "ja": "ヒトマップの応答時間分布上、X軸（5秒）単位分布に*縦線が現れる現象が<b>{repeat}</b>に該当する期間（{repeatcount}回）の間継続する場合に通知を行います。<hr style=\"margin-top: 10px; margin-bottom: 5px;\" /><span style=\"font-size:11px;\">*縦線現象 : 2.5秒〜80秒を表現する全体100区間中、<b>{value1}〜{value2}</b>個の区間に色づいた場合<span style=\"color:#ffbf00;\"> [アラート通知]</span>が発生します。\nまた、同一ルールで <b>{value2}</b>件の区間に色づいた場合<span style=\"color:red;\">[危険アラート]</span>が発生します。</span>",
+    "ja": "ヒトマップの応答時間分布上、X軸(5秒)単位分布に*縦線が現れる現象が<b>{repeat}</b>に該当する期間({repeatcount}回)の間継続する場合に通知を行います。<hr style=\"margin-top: 10px; margin-bottom: 5px;\" /><span style=\"font-size:11px;\">*縦線現象 : 2.5秒〜80秒を表現する全体100区間中、<b>{value1}〜{value2}</b>個の区間に色づいた場合<span style=\"color:#ffbf00;\"> [アラート通知]</span>が発生します。\nまた、同一ルールで <b>{value2}</b>件の区間に色づいた場合<span style=\"color:red;\">[危険アラート]</span>が発生します。</span>",
     "ko": "히트맵의 응답시간 분포상, X축 단일 구간(5초)에 *세로줄이 나타나는 현상이 <b>{repeat}</b>에 해당하는 시간({repeatcount}회)동안 지속될 경우 알림이 발생합니다.<hr style=\"margin-top: 10px; margin-bottom: 5px;\" /><span style=\"font-size:11px;\">*세로 줄 현상 :   2.5초 ~ 80초를 표현하는 전체 100개 구간 중, <b>{value1}~{value2}</b>개의 구간이 마킹된 경우 <span style=\"color:#ffbf00;\"> [경고 알림]</span>이 발생하며,\n동일한 규칙으로 구간이 <b>{value2}</b>개 이상 마킹된 경우 <span style=\"color:red;\">[위험 알림]</span>이 발생합니다.</span>",
     "zh": "Based on the response time distribution of the heat map, an alert is issued when *a vertical line appear in a single section of the X-axis (5 seconds) for a period of {repeat} ({repeatcount} times). <hr style=\"margin-top: 10px; margin-bottom: 5px;\" /><span style=\"font-size:11px;\">\n*a vertical line: Of the total 100 sections representing 2.5 seconds to 80 seconds, {value1} to {value2} are marked, a <span style=\"color:#ffbf00;\"> [Warning Alert].</span>\nA  <span style=\"color:red;\">[Fatal Alert]</span> occurs when more than {value2} are marked with the same rule.</span>",
     "service_id": "DSC02196"
@@ -14921,7 +14922,7 @@
   },
   "apm_rule_template_for_resource": {
     "en": "<span style=\"color:#ffbf00;\">[Warning alert]</span> occur when the {metric} utilization of the application server on which the agent is installed is {value1} % ~ {value2} %, and during the same rule, if the utilization is greater than {value2} %, a <span style=\"color:red;\">[Fatal alert]</span> occurs.",
-    "ja": "エージェントがインストールされたアプリケーションサーバーの<b>{metric}</b>使用率が<b>{repeat}</b>（{repeatcount}回）の間、<b>{value1}%以上{value2}%未満</b>の状態である場合、<span style=\"color:#ffbf00;\">[アラート通知]</span>が発生します。また、同一ルールで使用率が<b>{value2}%以上</b>の場合<span style=\"color:red;\">[危険アラート]</span>が発生します。",
+    "ja": "エージェントがインストールされたアプリケーションサーバーの<b>{metric}</b>使用率が<b>{repeat}</b>({repeatcount}回)の間、<b>{value1}%以上{value2}%未満</b>の状態である場合、<span style=\"color:#ffbf00;\">[アラート通知]</span>が発生します。また、同一ルールで使用率が<b>{value2}%以上</b>の場合<span style=\"color:red;\">[危険アラート]</span>が発生します。",
     "ko": "에이전트가 설치된 애플리케이션 서버의 <b>{metric}</b> 사용율이 <b>{repeat}</b>({repeatcount}회) 동안, <b>{value1} % 이상 {value2} % 미만</b>인 경우 <span style=\"color:#ffbf00;\">[경고 알림]</span> 발생하며, 동일한 규칙에서 사용율이 <b>{value2} % 이상</b>인 경우 <span style=\"color:red;\">[위험 알림]</span>이 발생합니다.",
     "zh": "<span style=\"color:#ffbf00;\">[Warning alert]</span> occur when the {metric} utilization of the application server on which the agent is installed is {value1} % ~ {value2} %, and during the same rule, if the utilization is greater than {value2} %, a <span style=\"color:red;\">[Fatal alert]</span> occurs.",
     "service_id": "_02199"
@@ -15030,7 +15031,7 @@
   },
   "initialize_default": {
     "en": "Initialize(default)",
-    "ja": "初期化(デフォルト)",
+    "ja": "初期化(既定値)",
     "ko": "초기화(기본값)",
     "zh": "初始化(默认)",
     "service_id": "ITM02214"
@@ -15114,7 +15115,7 @@
   },
   "save_position_merged": {
     "en": "Save Position (Merge)",
-    "ja": "位置保存（マージ）",
+    "ja": "位置保存(マージ)",
     "ko": "위치 저장(병합)",
     "zh": "Save Position (Merge)",
     "service_id": "BTN02226"
@@ -15744,28 +15745,28 @@
   },
   "timeAvg_ms": {
     "en": "Time avg (ms)",
-    "ja": "平均時間 (ミリ秒)",
+    "ja": "平均時間(ミリ秒)",
     "ko": "평균 시간 (ms)",
     "zh": "平均时间 (ms)",
     "service_id": "TTL02319"
   },
   "timeMax_ms": {
     "en": "Time max (ms)",
-    "ja": "最大時間 (ミリ秒)",
+    "ja": "最大時間(ミリ秒)",
     "ko": "최대 시간 (ms)",
     "zh": "最大时间 (ms)",
     "service_id": "TTL02320"
   },
   "timeMin_ms": {
     "en": "Time min (ms)",
-    "ja": "最小時間 (ミリ秒)",
+    "ja": "最小時間(ミリ秒)",
     "ko": "최소 시간 (ms)",
     "zh": "最小时间 (ms)",
     "service_id": "TTL02321"
   },
   "timeSum_ms": {
     "en": "Time sum (ms)",
-    "ja": "時間合計 (ミリ秒)",
+    "ja": "時間合計(ミリ秒)",
     "ko": "합계 시간 (ms)",
     "zh": "时间合计 (ms)",
     "service_id": "TTL02322"
@@ -15870,14 +15871,14 @@
   },
   "sqlFetchTime_ms": {
     "en": "SQL fetch time (ms)",
-    "ja": "SQLフェッチ時間 (ミリ秒)",
+    "ja": "SQLフェッチ時間(ミリ秒)",
     "ko": "SQL 패치 시간 (ms)",
     "zh": "SQL读取时间 (ms)",
     "service_id": "_02337"
   },
   "sqlFetchTimeAvg_ms": {
     "en": "SQL fetch time avg (ms)",
-    "ja": "SQLフェッチ時間平均 (ミリ秒)",
+    "ja": "SQLフェッチ時間平均(ミリ秒)",
     "ko": "SQL 패치 시간 평균 (ms)",
     "zh": "SQL读取时间平均 (ms)",
     "service_id": "TTL02338"
@@ -15926,7 +15927,7 @@
   },
   "sqlTime_ms": {
     "en": "SQL time (ms)",
-    "ja": "SQL時間 (ミリ秒)",
+    "ja": "SQL時間(ミリ秒)",
     "ko": "SQL 시간 (ms)",
     "zh": "SQL时间 (ms)",
     "service_id": "_02344"
@@ -15940,7 +15941,7 @@
   },
   "sqlTimeAvg_ms": {
     "en": "SQL time avg (ms)",
-    "ja": "SQL時間平均 (ミリ秒)",
+    "ja": "SQL時間平均(ミリ秒)",
     "ko": "SQL 시간 평균 (ms)",
     "zh": "SQL时间平均 (ms)",
     "service_id": "TTL02346"
@@ -16241,7 +16242,7 @@
   },
   "stack_series_percentage": {
     "en": "Stack series %",
-    "ja": "スタック比率推移（％）",
+    "ja": "スタック比率推移(%)",
     "ko": "스택 비율 추이(%)",
     "zh": "Stack Series %",
     "service_id": "TTL02390"
@@ -16409,7 +16410,7 @@
   },
   "cpuTime_ms": {
     "en": "CPU time (ms)",
-    "ja": "CPU時間 (ミリ秒)",
+    "ja": "CPU時間(ミリ秒)",
     "ko": "CPU 시간 (ms)",
     "zh": "CPU时间 (ms)",
     "service_id": "_02413"
@@ -16444,14 +16445,14 @@
   },
   "httpcTime_ms": {
     "en": "HTTP call time (ms)",
-    "ja": "HTTPコール時間 (ミリ秒)",
+    "ja": "HTTPコール時間(ミリ秒)",
     "ko": "HTTP 호출 시간 (ms)",
     "zh": "HTTP 时间 (ms)",
     "service_id": "_02418"
   },
   "httpcTimeAvg_ms": {
     "en": "HTTP call time avg (ms)",
-    "ja": "HTTPコール時間平均 (ミリ秒)",
+    "ja": "HTTPコール時間平均(ミリ秒)",
     "ko": "HTTP 호출 시간 평균 (ms)",
     "zh": "HTTP 时间平均 (ms)",
     "service_id": "TTL02419"
@@ -16787,35 +16788,35 @@
   },
   "cpm_desired": {
     "en": "Desired",
-    "ja": "希望（件数）",
+    "ja": "希望(件数)",
     "ko": "Desired (희망 개수)",
     "zh": "Desired",
     "service_id": "_02468"
   },
   "cpm_current": {
     "en": "Current",
-    "ja": "現在（件数）",
+    "ja": "現在(件数)",
     "ko": "Current (현재 개수)",
     "zh": "Current",
     "service_id": "_02469"
   },
   "cpm_ready": {
     "en": "Ready",
-    "ja": "準備（件数）",
+    "ja": "準備(件数)",
     "ko": "Ready (준비 개수)",
     "zh": "Ready",
     "service_id": "_02470"
   },
   "up_to_date": {
     "en": "Up to date",
-    "ja": "最新化（件数）",
+    "ja": "最新化(件数)",
     "ko": "Up to Date (최신화 개수)",
     "zh": "Up to Date",
     "service_id": "_02471"
   },
   "cpm_available": {
     "en": "Available",
-    "ja": "可用（件数）",
+    "ja": "可用(件数)",
     "ko": "Available (가용 개수)",
     "zh": "Available",
     "service_id": "_02472"
@@ -17284,7 +17285,7 @@
   },
   "cpm_unavailable": {
     "en": "Unavailable",
-    "ja": "非可用（件数）",
+    "ja": "非可用(件数)",
     "ko": "Unavailable (비가용 개수)",
     "zh": "Unavailable",
     "service_id": "_02539"
@@ -17697,7 +17698,7 @@
   },
   "timeStd_ms": {
     "en": "Std dev (ms)",
-    "ja": "標準偏差 (ミリ秒)",
+    "ja": "標準偏差(ミリ秒)",
     "ko": "표준편차 (ms)",
     "zh": "标准偏差 (ms)",
     "service_id": "_02598"
@@ -17956,7 +17957,7 @@
   },
   "inode": {
     "en": "inode (agent version 1.2.0 and above required)",
-    "ja": "inode (1.2.0バージョン以降のエージェントに対応)",
+    "ja": "inode(1.2.0バージョン以降のエージェントに対応)",
     "ko": "inode (설치 버젼 1.2.0 이상 필요)",
     "zh": "inode (agent version 1.2.0 and above required)",
     "service_id": "_02635"
@@ -18026,7 +18027,7 @@
   },
   "please_check_event_settings_menu": {
     "en": "You can change the alert settings from the Alert - Alert Settings menu.",
-    "ja": "アラート設定の変更は「アラート通知 〉 アラート設定」メニューから可能です。",
+    "ja": "アラート設定の変更は「アラート通知 〉アラート設定」メニューから可能です。",
     "ko": "알림 설정 변경은 [경고 알림 - 알림 설정] 메뉴에서 가능합니다.",
     "zh": "You can change the alert settings from the Alert - Alert Settings menu.",
     "service_id": "_02645"
@@ -18173,35 +18174,35 @@
   },
   "container_map_tab": {
     "en": "Container map (Tab)",
-    "ja": "コンテナマップ（別タブ）",
+    "ja": "コンテナマップ(別タブ)",
     "ko": "컨테이너 맵 (별도 탭)",
     "zh": "Container Map (Tab)",
     "service_id": "_02667"
   },
   "node_resource_tab": {
     "en": "Node resource (Tab)",
-    "ja": "ノードリソース（別タブ）",
+    "ja": "ノードリソース(別タブ)",
     "ko": "노드 자원 (별도 탭)",
     "zh": "Node Resource (Tab)",
     "service_id": "_02668"
   },
   "container_resource_tab": {
     "en": "Container resource (Tab)",
-    "ja": "コンテナリソース（別タブ）",
+    "ja": "コンテナリソース(別タブ)",
     "ko": "컨테이너 자원 (별도 탭)",
     "zh": "Container Resource (Tab)",
     "service_id": "_02669"
   },
   "app_dashboard_tab": {
     "en": "Application dashboard (Tab)",
-    "ja": "アプリケーションダッシュボード（別タブ）",
+    "ja": "アプリケーションダッシュボード(別タブ)",
     "ko": "애플리케이션 대시보드 (별도 탭)",
     "zh": "Application Dashboard (Tab)",
     "service_id": "_02670"
   },
   "service_monitoring_tab": {
     "en": "Service monitoring (Tab)",
-    "ja": "サービスモニタリング（別タブ）",
+    "ja": "サービスモニタリング(別タブ)",
     "ko": "서비스 모니터링 (별도 탭)",
     "zh": "Service Monitoring (Tab)",
     "service_id": "_02671"
@@ -19685,7 +19686,7 @@
   },
   "typing_lock_message": {
     "en": "Only English, numbers and _ (underbar) are allowed.",
-    "ja": "英字、数字、_（アンダーバー）のみ入力できます。",
+    "ja": "英字、数字、_(アンダーバー)のみ入力できます。",
     "ko": "영어, 숫자, _(언더바)만 입력이 가능합니다.",
     "zh": "Only english, numbers and _ (underbar) may be allowed.",
     "service_id": "_02883"
@@ -19797,7 +19798,7 @@
   },
   "stack_with_toggle_desc": {
     "en": "Stack (Click to display on trend chart )",
-    "ja": "スタック（クリックすると推移チャートに表示）",
+    "ja": "スタック(クリックすると推移チャートに表示)",
     "ko": "스택 ( 클릭 시 추이차트에 표시됨 )",
     "zh": "Stack (Click to display on Trend Chart )",
     "service_id": "_02899"
@@ -20301,7 +20302,7 @@
   },
   "sql_empty": {
     "en": "Empty SQL",
-    "ja": "SQL無し",
+    "ja": "Empty SQL",
     "ko": "빈 SQL",
     "zh": "Empty SQL",
     "service_id": "_02972"
@@ -21267,7 +21268,7 @@
   },
   "search_only_english": {
     "en": "Search is only available in English and _ (underbar)",
-    "ja": "検索では英字と_（アンダーバー）のみ入力できます。",
+    "ja": "検索では英字と_(アンダーバー)のみ入力できます。",
     "ko": "검색은 영어와 _(언더바) 만 가능합니다",
     "zh": "Search is only available in English and _ (underbar)",
     "service_id": "_03105"
@@ -21470,21 +21471,21 @@
   },
   "maintenance_server": {
     "en": "Maintenance (Server)",
-    "ja": "メンテナンス計画 (サーバー)",
+    "ja": "メンテナンス計画(サーバー)",
     "ko": "유지보수 계획 (서버)",
     "zh": "Maintenance (Server)",
     "service_id": "_03134"
   },
   "maintenance_project": {
     "en": "Maintenance (Project)",
-    "ja": "メンテナンス計画 (プロジェクト)",
+    "ja": "メンテナンス計画(プロジェクト)",
     "ko": "유지보수 계획 (프로젝트)",
     "zh": "Maintenance (Project)",
     "service_id": "_03135"
   },
   "smtp_configuration": {
     "en": "SMTP CONF. (Single)",
-    "ja": "SMTP設定 (Single)",
+    "ja": "SMTP設定(Single)",
     "ko": "SMTP 설정 (Single)",
     "zh": "SMTP CONF. (Single)",
     "service_id": "_03136"
@@ -21694,28 +21695,28 @@
   },
   "creditcard_abroad": {
     "en": "Credit card (global)",
-    "ja": "クレジットカード (グローバル)",
+    "ja": "クレジットカード(グローバル)",
     "ko": "신용카드 (해외카드)",
     "zh": "Credit Card (Abroad)",
     "service_id": "_03166"
   },
   "credit_card": {
     "en": "Credit card (Inipay)",
-    "ja": "クレジットカード (Inipay)",
+    "ja": "クレジットカード(Inipay)",
     "ko": "신용카드 (이니페이)",
     "zh": "Credit Card (Inipay)",
     "service_id": "_03167"
   },
   "credit_card_iamport": {
     "en": "Credit card (Nicepay)",
-    "ja": "クレジットカード (Nicepay)",
+    "ja": "クレジットカード(Nicepay)",
     "ko": "신용카드 (나이스페이)",
     "zh": "Credit Card (Nicepay)",
     "service_id": "_03168"
   },
   "credit_card_stripe": {
     "en": "Credit card (global)",
-    "ja": "クレジットカード (グローバル)",
+    "ja": "クレジットカード(グローバル)",
     "ko": "신용카드 (해외카드)",
     "zh": "Credit Card (Abroad)",
     "service_id": "_03169"
@@ -21799,7 +21800,7 @@
   },
   "business_type": {
     "en": "BIZ. type",
-    "ja": "業務形態(製造、販売等）",
+    "ja": "業務形態(製造、販売等)",
     "ko": "업태",
     "zh": "BIZ. type",
     "service_id": "_03181"
@@ -22527,21 +22528,21 @@
   },
   "logo_url": {
     "en": "Logo URL (White Font, 273 * 231 pixels)",
-    "ja": "ロゴURL (白色、273 * 231ピクセル)",
+    "ja": "ロゴURL(白色、273 * 231ピクセル)",
     "ko": "로고 URL (백색 폰트, 273 * 231 pixels)",
     "zh": "Logo URL (White Font, 273 * 231 pixels)",
     "service_id": "_03287"
   },
   "black_logo_url": {
     "en": "Logo URL (Black Font, 273 * 231 pixels)",
-    "ja": "ロゴURL (黒色、273 * 231ピクセル)",
+    "ja": "ロゴURL(黒色、273 * 231ピクセル)",
     "ko": "로고 URL (흑색 폰트, 273 * 231 pixels)",
     "zh": "Logo URL (Black Font, 273 * 231 pixels)",
     "service_id": "_03288"
   },
   "wide_logo_url": {
     "en": "Wide logo URL (230 * 49 pixels)",
-    "ja": "ワイドロゴURL (230 * 49ピクセル)",
+    "ja": "ワイドロゴURL(230 * 49ピクセル)",
     "ko": "와이드 로고 URL (230 * 49 pixels)",
     "zh": "Wide Logo URL (230 * 49 pixels)",
     "service_id": "_03289"
@@ -24235,7 +24236,7 @@
   },
   "card_password_front_2digit": {
     "en": "Card password (front 2 digit)",
-    "ja": "パスワード（最初の2桁）",
+    "ja": "パスワード(最初の2桁)",
     "ko": "카드 비밀번호 (앞 2자리)",
     "zh": "Card Password (front 2 digit)",
     "service_id": "_03533"
@@ -27126,14 +27127,14 @@
   },
   "sms_alert_info_networkiops": {
     "en": "Alert threshold(Packet per Second) of each network interface card. If you want to exclude a device of a specific server from being notified, you can enable/disable it in Server List > Server Details > View Network Details.",
-    "ja": "ネットワークインターフェースカード別の秒当たりパケット（入力＋出力）しきい値。特定サーバーのカードを通知条件から除外したい場合は、「サーバーリスト 〉 サーバー詳細 〉 ネットワーク詳細」メニューで活性化/非活性化できます。",
+    "ja": "ネットワークインターフェースカード別の秒当たりパケット(入力＋出力)しきい値。特定サーバーのカードを通知条件から除外したい場合は、「サーバーリスト > サーバー詳細 > ネットワーク詳細」メニューで活性化/非活性化できます。",
     "ko": "네트워크 인터페이스 카드 별 초당 패킷 수 (입력 + 출력) 임계치. 특정 서버의 디바이스를 알림 대상에서 제외하고 싶을 때는 서버 목록 > 서버 상세정보 > 네트워크 자세히 보기에서 활성화/비활성화 가능합니다.",
     "zh": "Packet Per Second of each network interface card. This Metric is the sum of Packet-In and Out. If you want to exclude specific card from the alert list, you can do it on the server detail page.",
     "service_id": "_03948"
   },
   "sms_alert_info_networkbps": {
     "en": "If you want to exclude a device of a specific server from being notified, you can enable/disable it in Server List - Server Details - Network Detail View.",
-    "ja": "ネットワークインターフェースカード別の秒当たりビット（入力＋出力）しきい値。特定サーバーのカードを通知条件から除外したい場合は、「サーバーリスト 〉 サーバー詳細 〉 ネットワーク詳細」メニューで活性化/非活性化できます。",
+    "ja": "ネットワークインターフェースカード別の秒当たりビット(入力＋出力)しきい値。特定サーバーのカードを通知条件から除外したい場合は、「サーバーリスト > サーバー詳細 > ネットワーク詳細」メニューで活性化/非活性化できます。",
     "ko": "각 네트워크 디바이스별 초당 Bit(입력 + 출력) 임계치. 특정 서버의 디바이스를 알림 대상에서 제외하고 싶을 때는 서버 목록 - 서버 상세정보 - 네트워크 자세히 보기에서 활성화/비활성화 가능합니다.",
     "zh": "Alert threshold(Bit per Second) of each network interface card. This Metric is the sum of Traffic-In and Out. If you want to exclude specific card from the alert list, you can do it on the server detail page.",
     "service_id": "_03949"
@@ -29681,7 +29682,7 @@
   },
   "master_alert_template_4_detail": {
     "en": "CPU request(minimum resource requirement) is greater than or equal to 80% of the cluster CPU quota.",
-    "ja": "クラスタCPUの割り当て量に比べ、CPU Request（最小リクエストリソース）が80％を超えました。",
+    "ja": "クラスタCPUの割り当て量に比べ、CPU Request(最小リクエストリソース)が80%を超えました。",
     "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 80% 이상입니다.",
     "zh": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
     "service_id": "NTC04316"
@@ -29695,7 +29696,7 @@
   },
   "master_alert_template_5_detail": {
     "en": "Memory request(minimum resource requirement) is greater than or equal to 80% of the cluster memory quota.",
-    "ja": "クラスタMemoryの割り当て量に比べ、Memory Request（最小リクエストリソース）が 80% 以上です。",
+    "ja": "クラスタMemoryの割り当て量に比べ、Memory Request(最小リクエストリソース)が80%以上です。",
     "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 80% 이상입니다.",
     "zh": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
     "service_id": "NTC04318"
@@ -29709,7 +29710,7 @@
   },
   "master_alert_template_6_detail": {
     "en": "CPU request(minimum resource requirement) is greater than or equal to 60% of the cluster CPU quota.",
-    "ja": "クラスタCPUの割り当て量に比べ、CPU Request（最小リクエストリソース）が60%を超えました。",
+    "ja": "クラスタCPUの割り当て量に比べ、CPU Request(最小リクエストリソース)が60%を超えました。",
     "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 60% 이상입니다.",
     "zh": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
     "service_id": "NTC04320"
@@ -29723,7 +29724,7 @@
   },
   "master_alert_template_7_detail": {
     "en": "Memory request(minimum resource requirement) is greater than or equal to 60% of the cluster memory quota.",
-    "ja": "クラスタMemoryの割り当て量に比べ、Memory Request（最小リクエストリソース）が 60% 以上です。",
+    "ja": "クラスタMemoryの割り当て量に比べ、Memory Request(最小リクエストリソース)が60%以上です。",
     "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 60% 이상입니다.",
     "zh": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
     "service_id": "NTC04322"
@@ -30444,7 +30445,7 @@
   },
   "cpu_quota_description": {
     "en": "Calculated cpu usage as % compared to container resource limit.",
-    "ja": "コンテナのリソース制限値に対するCPU使用率を％として表示した値です。",
+    "ja": "コンテナのリソース制限値に対するCPU使用率を%として表示した値です。",
     "ko": "컨테이너 리소스 제한량 대비 cpu 사용량을 %로 계산한 값입니다",
     "zh": "Calculated cpu usage as % compared to container resource limit.",
     "service_id": "_04425"
@@ -32068,21 +32069,21 @@
   },
   "4_day": {
     "en": "4 days",
-    "ja": "3日間",
+    "ja": "4日間",
     "ko": "4일",
     "zh": "4天",
     "service_id": "_04660"
   },
   "5_day": {
     "en": "5 days",
-    "ja": "4日間",
+    "ja": "5日間",
     "ko": "5일",
     "zh": "5天",
     "service_id": "_04661"
   },
   "6_day": {
     "en": "6 days",
-    "ja": "5日間",
+    "ja": "6日間",
     "ko": "6일",
     "zh": "6天",
     "service_id": "_04662"
@@ -32243,7 +32244,7 @@
   },
   "lm_trial_message": {
     "en": "Trial: {date} days left (You will be charged automatically after the trial.)",
-    "ja": "無料体験：残り{date}日間（無料体験後は自動的に利用料金が請求されます。）",
+    "ja": "無料体験：残り{date}日間(無料体験後は自動的に利用料金が請求されます。)",
     "ko": "무료체험기간: {date}일 남음 (무료체험 후에는 자동으로 이용요금이 청구됩니다.)",
     "zh": "Trial: {date} days left (You will be charged automatically after the trial.)",
     "service_id": "_04685"
@@ -33139,7 +33140,7 @@
   },
   "standard_response_time": {
     "en": "Standard (response time)",
-    "ja": "標準（応答時間）",
+    "ja": "標準(応答時間)",
     "ko": "기준 (응답 시간)",
     "zh": "Standard (response time)",
     "service_id": "_04814"
@@ -33496,7 +33497,7 @@
   },
   "alert_config_webhookJSON_step3": {
     "en": "* Event status is classified into \"on\", \"off\", \"disabled\", and \"acknowledge\" and has server monitoring status information (on/off).",
-    "ja": "* イベント状態は「on、off、disabled、acknowledge」のいずれかに区分されます。これらはサーバーモニタリングの状態情報（on/off）を持ちます。",
+    "ja": "* イベント状態は「on、off、disabled、acknowledge」のいずれかに区分されます。これらはサーバーモニタリングの状態情報(on/off)を持ちます。",
     "ko": "* 이벤트 상태는 \"on\", \"off\", \"disabled\", \"acknowledge\" 로 구분되며, 서버 모니터링의 상태 정보(on/off)를 갖습니다.",
     "zh": "* Event status is classified into \"on\", \"off\", \"disabled\", and \"acknowledge\" and has server monitoring status information (on/off).",
     "service_id": "DSC04865"
@@ -33853,7 +33854,7 @@
   },
   "no_organization_for_group_list": {
     "en": "There is no organization to look up the group list. Please create an organization first.",
-    "ja": "グループリストを検索する組織がありません。 まず、組織を生成してください。",
+    "ja": "グループリストを検索する組織がありません。まず、組織を生成してください。",
     "ko": "그룹 목록을 조회할 조직이 없습니다. 먼저 조직을 생성해주세요.",
     "zh": "There is no organization to look up the group list. Please create an organization first.",
     "service_id": "_04916"
@@ -33888,7 +33889,7 @@
   },
   "notice_member_list_detail": {
     "en": "<span style='display:block;margin-bottom:8px;'>\n Previously, the authority system was divided into three types (Super Admin, Admin, User). But users can now give different authority for each project and group.\n </span>\n Super Admin, Admin, and User authorization names are no longer used.",
-    "ja": "<span style='display:block;bottom:8px;'>\n以前は、3種類の権限として区分していました（uperAdmin、Admin、User）。現在は、ユーザーにプロジェクトやグループ毎に異なる権限を与えることができます。\n</span>\nこれ以上はSuperAdmin、Admin、Userといった権限名は使用しません。",
+    "ja": "<span style='display:block;bottom:8px;'>\n以前は、3種類の権限として区分していました(uperAdmin、Admin、User)。現在は、ユーザーにプロジェクトやグループ毎に異なる権限を与えることができます。\n</span>\nこれ以上はSuperAdmin、Admin、Userといった権限名は使用しません。",
     "ko": "<span style='display:block;margin-bottom:8px;'>\n기존에는 권한 체계가 세 종류(Super Admin, Admin, User)로 역할이 구분되어 있었습니다. 이제는 사용자에게 각 프로젝트, 그룹별로 다른 권한을 부여할 수 있습니다.\n</span>\nSuper Admin, Admin, User 권한명을 더 이상 사용하지 않습니다.",
     "zh": "<span style='display:block;margin-bottom:8px;'>\nPreviously, the authority system was divided into three types (Super Admin, Admin, User). But users can now give different authority for each project and group.\n</span>\nSuper Admin, Admin, and User authorization names are no longer used.",
     "service_id": "DSC04921"
@@ -34189,14 +34190,14 @@
   },
   "max_elapsed_5_sec": {
     "en": "Elapsed time (Up to 5 sec)",
-    "ja": "経過時間 (最大5秒)",
+    "ja": "経過時間(最大5秒)",
     "ko": "경과 시간 (최대 5초)",
     "zh": "Elapsed Time (Up to 5 sec)",
     "service_id": "_04964"
   },
   "max_elapsed_20_sec": {
     "en": "Elapsed time (Up to 20 sec)",
-    "ja": "経過時間 (最大20秒)",
+    "ja": "経過時間(最大20秒)",
     "ko": "경과 시간 (최대 20초)",
     "zh": "Elapsed Time (Up to 20 sec)",
     "service_id": "_4964_2"
@@ -34287,7 +34288,7 @@
   },
   "azure_setup_guide": {
     "en": "After designating the <a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a> role (Role), click the Install button to enter the following three access information.\n Application ID, Tenant ID, Secret",
-    "ja": "<a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a>権限（ロール）を指定してから「インストール」ボタンをクリックし、次の3つのアクセス情報を入力します。\nアプリケーションID(ApplicationId)、テナントID(TenantId)、シークレット(Secret)<br/>WhaTap MonitoringのためにはMonitor Reader、Reader、API ManagementサービスReaderの権限が必要です。Azure PortalのSubscript > アクセス制御(IAM)メニューから追加ボタンを使って権限が追加できます。",
+    "ja": "<a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a>権限(ロール)を指定してから「インストール」ボタンをクリックし、次の3つのアクセス情報を入力します。\nアプリケーションID(ApplicationId)、テナントID(TenantId)、シークレット(Secret)<br/>WhaTap MonitoringのためにはMonitor Reader、Reader、API ManagementサービスReaderの権限が必要です。Azure PortalのSubscript > アクセス制御(IAM)メニューから追加ボタンを使って権限が追加できます。",
     "ko": "와탭 모니터링을 위해서는 Monitor Reader, 독자, API Management 서비스 독자 권한이 필요합니다. Azure Portal에서 Subscript > 액세스 제어(IAM) 메뉴에서 추가 버튼을 통해 권한을 추가할 수 있습니다.<br/><a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a> 역할(Role)을 지정한 후, 설치하기 버튼을 클릭하여 다음 3가지 접속 정보를 입력해 주세요. 애플리케이션 ID(ApplicationId), 테넌트 ID(TenantId), 시크릿(Secret)",
     "zh": "After designating the <a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a> role (Role), click the Install button to enter the following three access information.\nApplication ID, Tenant ID, Secret",
     "service_id": "TTL04977"
@@ -35659,7 +35660,7 @@
   },
   "log_category_description": {
     "en": "The category is the log distinguished name (log folder name).",
-    "ja": "カテゴリはログ識別名（ログフォルダ名）です。\n",
+    "ja": "カテゴリはログ識別名(ログフォルダ名)です。\n",
     "ko": "카테고리는 로그 구분 명칭(로그 폴더명)입니다.",
     "zh": "The category is the log distinguished name (log folder name).",
     "service_id": "_05174"
@@ -35722,7 +35723,7 @@
   },
   "alert_group_help_event_if_not_selected": {
     "en": "If tags are not selected during event setting, a notification occurs according to the remaining reception conditions (activation, etc.) in the project notification setting menu.",
-    "ja": "イベント設定時にタグを選択していない場合は、プロジェクトのアラート通知設定メニューに設定された受信条件（活性化など）によって通知が発生します。",
+    "ja": "イベント設定時にタグを選択していない場合は、プロジェクトのアラート通知設定メニューに設定された受信条件(活性化など)によって通知が発生します。",
     "ko": "이벤트 설정 시 태그를 선택하지 않은 경우 프로젝트 이벤트 수신 설정 메뉴의 나머지 수신 조건(활성화 여부 등)에 따라 알림이 발생합니다. ",
     "zh": "If tags are not selected during event setting, a notification occurs according to the remaining reception conditions (activation, etc.) in the project notification setting menu.",
     "service_id": "_05183"
@@ -35911,7 +35912,7 @@
   },
   "master_project_event_settings_help": {
     "en": "Share event settings with related projects. (If you change settings, it applies to related projects equally.)",
-    "ja": "関連プロジェクトとイベント設定を共有します。（設定を変更すると関連プロジェクトにも同様に適用されます。）",
+    "ja": "関連プロジェクトとイベント設定を共有します。(設定を変更すると関連プロジェクトにも同様に適用されます。)",
     "ko": "관련 프로젝트와 이벤트 설정을 공유합니다. (설정 변경시 관련 프로젝트에도 동일하게 적용됩니다.)",
     "zh": "Share event settings with related projects. (If you change settings, the same applies to related projects.)",
     "service_id": "_05210"
@@ -36807,7 +36808,7 @@
   },
   "simulation_fail": {
     "en": "The simulation was failed.(reason: {msg})",
-    "ja": "シミュレーションに失敗しました。（理由:{msg}）\n",
+    "ja": "シミュレーションに失敗しました。(理由:{msg})\n",
     "ko": "시뮬레이션이 실패하였습니다.(원인: {msg})",
     "zh": "The simulation was failed.(reason: {msg})",
     "service_id": "_05338"
@@ -36982,7 +36983,7 @@
   },
   "save_fail_with_reason": {
     "en": "Failed to save (reason: {msg}).",
-    "ja": "保存に失敗しました。（理由:{msg}）",
+    "ja": "保存に失敗しました。(理由:{msg})",
     "ko": "저장에 실패했습니다. (원인: {msg})",
     "zh": "Failed to save (reason: {msg}).",
     "service_id": "_05364"
@@ -37185,7 +37186,7 @@
   },
   "log_filter_help": {
     "en": "If the filter has the same tag, it is applied as OR (||), otherwise AND (&&).",
-    "ja": "フィルターのタグが同一の場合はOR（||）として、同一ではない場合ならAND（&&）として適用されます。",
+    "ja": "フィルターのタグが同一の場合はOR(||)として、同一ではない場合ならAND(&&)として適用されます。",
     "ko": "필터의 태그가 같은 경우 OR(||)로, 그렇지 않은 경우는 AND(&&)로 적용됩니다.",
     "zh": "If the filter has the same tag, it is applied as OR (||), otherwise AND (&&).",
     "service_id": "_05393"
@@ -37423,7 +37424,7 @@
   },
   "shorten_cumulative": {
     "en": "Cumulative (ms)",
-    "ja": "累積 (ミリ秒)",
+    "ja": "累積(ミリ秒)",
     "ko": "누적 (ms)",
     "zh": "累计 (ms)",
     "service_id": "TTL05427"
@@ -37948,7 +37949,7 @@
   },
   "log_search_no_data_message": {
     "en": "<div>\n There is no log information matching the request conditions (period, log category, monitoring target).\n </div>\n <div>\n If you are not currently using the log monitoring function, \n <br />\n you can use the container/application log storage and inquiry function through additional configuration work.\n </div>",
-    "ja": "<div>\n条件に一致するログ情報が見つかりません（期間、ログカテゴリ、モニタリング対象）。\n</div>\n<div>\n現在、ログモニタリング機能を使用していない場合なら、\n<br />\n追加の設定によって、コンテナとアプリケーションにおけるログ保存と検索機能が使用できます。\n</div>",
+    "ja": "<div>\n条件に一致するログ情報が見つかりません(期間、ログカテゴリ、モニタリング対象)。\n</div>\n<div>\n現在、ログモニタリング機能を使用していない場合なら、\n<br />\n追加の設定によって、コンテナとアプリケーションにおけるログ保存と検索機能が使用できます。\n</div>",
     "ko": "<div>\n요청 조건(기간, 로그 카테고리, 모니터링 대상)에 일치하는 로그 정보가 존재하지 않습니다.\n</div>\n<div>\n만약 현재 로그 모니터링 기능을 사용하고 있지 않다면, \n<br />\n추가 설정 작업을 통해 컨테이너/애플리케이션 로그 저장 및 조회 기능을 사용할 수 있습니다.\n</div>",
     "zh": "<div>\nThere is no log information matching the request conditions (period, log category, monitoring target).\n</div>\n<div>\nIf you are not currently using the log monitoring function, \n<br />\nyou can use the container/application log storage and inquiry function through additional configuration work.\n</div>",
     "service_id": "_05502"
@@ -37990,7 +37991,7 @@
   },
   "log_statistic_data_setting_time": {
     "en": "Set log statistics data ({time})",
-    "ja": "ログ統計データ（{time}）の設定",
+    "ja": "ログ統計データ({time})の設定",
     "ko": "로그 통계 데이터 설정({time})",
     "zh": "Set log statistics data ({time})",
     "service_id": "_05508"
@@ -38193,14 +38194,14 @@
   },
   "metric_realtime_user_help": {
     "en": "Number of users who made a transaction in the last 5 minutes (collected every 10 seconds)",
-    "ja": "最近5分間にTXを発生させたユーザー数（収集間隔：10秒）",
+    "ja": "最近5分間にTXを発生させたユーザー数(収集間隔：10秒)",
     "ko": "최근 5분간 트랜잭션을 발생시킨 사용자 수 (10초마다 수집)",
     "zh": "Number of users who made a transaction in the last 5 minutes (collected every 10 seconds)",
     "service_id": "_05537"
   },
   "metric_visitor_help": {
     "en": "Number of unique users who generated transactions in one hour (collects every hour)",
-    "ja": "1時間にTXを発生させたユニークユーザー数（収集間隔：1時間）",
+    "ja": "1時間にTXを発生させたユニークユーザー数(収集間隔：1時間)",
     "ko": "1시간 동안 트랜잭션을 발생시킨 고유 사용자 수 (1시간 마다 수집)",
     "zh": "Number of unique users who generated transactions in one hour (collects every hour)",
     "service_id": "DSC05538"
@@ -39586,7 +39587,7 @@
   },
   "separate_by_comma_key": {
     "en": "You can add {key} separated by a comma (,).",
-    "ja": "カンマ（,）で区切って{key}を追加することができます。",
+    "ja": "カンマ(,)で区切って{key}を追加することができます。",
     "ko": "콤마(,)로 구분하여 {key}을(를) 추가할 수 있습니다.",
     "zh": "You can add {key} separated by a comma (,).\n",
     "service_id": "_05736"
@@ -39691,7 +39692,7 @@
   },
   "flexboard_favorite_tooltip": {
     "en": "When you add favorites, a dashboard is added to the side menu. (saved to local storage)",
-    "ja": "お気に入りを追加すると、サイドメニューにダッシュボードが追加されます。 （ローカルPCに保存）",
+    "ja": "お気に入りを追加すると、サイドメニューにダッシュボードが追加されます。(ローカルPCに保存)",
     "ko": "즐겨찾기 추가 시 사이드 메뉴에 대시보드가 추가됩니다. (로컬 스토리지 저장)",
     "zh": "When you add favorites, a dashboard is added to the side menu. (saved to local storage)",
     "service_id": "DSC05751"
@@ -39943,7 +39944,7 @@
   },
   "core_web_vitals_info_2": {
     "en": "Widgets for each indicator of WhaTap monitoring can <span><strong>monitor by page group</strong></span>. (Click the metrics button at the top of the widget to switch)<br />When monitoring by page group, you can <span><strong>check the average LCP, FID, and CLS of the top 5 page groups</strong></span>.",
-    "ja": "WhaTapモニタリングの各指標のウィジェットは、<span><strong>ページグループ別にモニタリング</strong></span>できます（ウィジェット上段のメトリクスボタンをクリックして切り替えます）。<br />ページグループ別にモニタリングする場合、<span><strong>上位5ページグループの平均LCP、FID、CLSが確認できます。</strong></span>",
+    "ja": "WhaTapモニタリングの各指標のウィジェットは、<span><strong>ページグループ別にモニタリング</strong></span>できます(ウィジェット上段のメトリクスボタンをクリックして切り替えます)。<br />ページグループ別にモニタリングする場合、<span><strong>上位5ページグループの平均LCP、FID、CLSが確認できます。</strong></span>",
     "ko": "와탭 모니터링의 각 지표에 대한 위젯은 <span><strong>페이지 그룹단위로 모니터링</strong></span>이 가능합니다. (위젯 상단의 메트릭스 버튼을 클릭하여 전환)<br />페이지 그룹단위로 모니터링 시 <span><strong>상위 5개 페이지 그룹의 평균 LCP, FID, CLS를 확인</strong></span> 할 수 있습니다.",
     "zh": "Widgets for each indicator of WhaTap monitoring can <span><strong>monitor by page group</strong></span>. (Click the metrics button at the top of the widget to switch)<br />When monitoring by page group, you can <span><strong>check the average LCP, FID, and CLS of the top 5 page groups</strong></span>.",
     "service_id": "_05787"
@@ -40090,7 +40091,7 @@
   },
   "data_retention_period_with_disk_usage": {
     "en": "Data retention period(disk usage)",
-    "ja": "データ保存期間（ディスク使用量）",
+    "ja": "データ保存期間(ディスク使用量)",
     "ko": "데이터 보관일(디스크 사용량)",
     "zh": "Data Retention Period(Disk Usage)",
     "service_id": "ITM05808"
@@ -40181,7 +40182,7 @@
   },
   "invalid_ip_port_guide_agent_setting": {
     "en": "You can also delete an agent (inactive state) that failed to create in ‘Agent Settings’.",
-    "ja": "「エージェント設定」からでも、生成に失敗したエージェント（非活性化状態）が削除できます。",
+    "ja": "「エージェント設定」からでも、生成に失敗したエージェント(非活性化状態)が削除できます。",
     "ko": "‘에이전트 설정’에서도 생성에 실패한 에이전트 (비활성 상태)를 삭제할 수 있습니다.",
     "zh": "You can also delete an agent (inactive state) that failed to create in ‘Agent Settings’.",
     "service_id": "_05821"
@@ -40363,7 +40364,7 @@
   },
   "project_create_notice": {
     "en": "If you have a project subscribing, the same type of project that you create later will also be subscribed to automatically.",
-    "ja": "有料で使用中のプロジェクトがある場合、以降作成する同一タイプ（サービス）のプロジェクトも有料として登録されます。",
+    "ja": "有料で使用中のプロジェクトがある場合、以降作成する同一タイプ(サービス)のプロジェクトも有料として登録されます。",
     "ko": "유료로 사용 중인 프로젝트가 있는 경우, 이후 생성하는 동일한 유형(상품)의 프로젝트도 유료로 등록됩니다.",
     "zh": "If you have a project that you are using for a fee, the same type of project that you create later will also be registered for a fee.",
     "service_id": "_05847"
@@ -40545,7 +40546,7 @@
   },
   "create_project_region_desc": {
     "en": "A data server region refers to a region (a bundle of data centers installed to provide cloud services).\nSelecting a specific region stores your data in the datacenter that belongs to that region.",
-    "ja": "データサーバー エリアとは、リージョン（クラウドサービスを提供するために構築したデータセンターの集合体）を意味します。\n特定のリージョンを選択すると、該当リージョンに属したデータセンター側にユーザーのデータが保存されます。",
+    "ja": "データサーバー エリアとは、リージョン(クラウドサービスを提供するために構築したデータセンターの集合体)を意味します。\n特定のリージョンを選択すると、該当リージョンに属したデータセンター側にユーザーのデータが保存されます。",
     "ko": "데이터 서버 지역은 리전(클라우드 서비스를 제공하기 위해 설치한 데이터 센터의 묶음)을 의미합니다.\n특정 리전을 선택하면 해당 리전에 속해있는 데이터 센터에 사용자의 데이터가 저장됩니다.",
     "zh": "A data server region refers to a region (a bundle of data centers installed to provide cloud services).\nSelecting a specific region stores your data in the datacenter that belongs to that region.",
     "service_id": "_05873"
@@ -40909,7 +40910,7 @@
   },
   "interval_time": {
     "en": "Interval time (ms)",
-    "ja": "区間時間 (ミリ秒)",
+    "ja": "区間時間(ミリ秒)",
     "ko": "구간 시간 (ms)",
     "zh": "Interval time (ms)",
     "service_id": "_05925"
@@ -40937,7 +40938,7 @@
   },
   "confirm_create_otp_key": {
     "en": "Do you want to (re)generate an OTP key?",
-    "ja": "OTPキーを（再）生成しますか？",
+    "ja": "OTPキーを(再)生成しますか？",
     "ko": "OTP 키를 (재)생성하시겠습니까?",
     "zh": "Do you want to (re)generate an OTP key?",
     "service_id": "_05929"
@@ -41686,7 +41687,7 @@
   },
   "DSC06035": {
     "en": "If the situation is not resolved 0 minutes (immediately), 1 hour later, or 1 day after the notification occurs, the notification will be reissued. (M:minute, H:hour, D:day, M:unit omitted)",
-    "ja": "アラート通知発生時刻から0分(即時)、1時間後、1日後の間に該当の状況が解消されなかった場合にはアラート通知を再発行します。 (M:分、H:時間、D:日、単位を省略すると分として処理されます。)",
+    "ja": "アラート通知発生時刻から0分(即時)、1時間後、1日後の間に該当の状況が解消されなかった場合にはアラート通知を再発行します。(M:分、H:時間、D:日、単位を省略すると分として処理されます。)",
     "ko": "알림 발생 시간으로 부터 0분(즉시), 1시간 후, 1일 후에 해당 상황이 해소되지 않은 경우, 알림이 재발행 됩니다. (M: 분, H:시간, D:일, 단위 생략 시 분으로 처리)",
     "": "If the situation is not resolved 0 minutes (immediately), 1 hour later, or 1 day after the notification occurs, the notification will be reissued. (M:minute, H:hour, D:day, M:unit omitted)",
     "service_id": "DSC06035"
@@ -41742,7 +41743,7 @@
   },
   "DSC06047": {
     "en": "<ul><li>All data is deleted and cannot be recovered when canceling a paid project subscription.</li><li>You may also be charged for usage.</li><li>(If canceled within 7 days of the paid subscription to the project, no charge will be incurred.)</li>\n<li>Are you sure you want to cancel?</li></ul>",
-    "ja": "\"<ul><li>サブスクリプションをキャンセルすると、すべてのデータが削除され、復元できなくなります。</li><li>使用量によっては料金が請求される場合もあります。</li><li>(サブスクリプションから7 日以内にキャンセルした場合には料金が発生しません。)</li>\n<li>本当にキャンセルしますか?</li></ul>\"",
+    "ja": "\"<ul><li>サブスクリプションをキャンセルすると、すべてのデータが削除され、復元できなくなります。</li><li>使用量によっては料金が請求される場合もあります。</li><li>(サブスクリプションから7日以内にキャンセルした場合には料金が発生しません。)</li>\n<li>本当にキャンセルしますか?</li></ul>\"",
     "ko": "<ul><li>유료 전환 취소 시 모든 데이터가 삭제 되고 복구 할 수 없습니다.</li>\n<li>또한 사용량에 대한 과금이 발생할 수 있습니다.</li>\n<li>(유료 전환 이후 7일 이내 취소 시 과금은 발생하지 않습니다.)</li>\n<li>정말 취소 하시겠습니까?</li></ul>",
     "": "<ul><li>All data is deleted and cannot be recovered when canceling a paid project subscription.</li><li>You may also be charged for usage.</li><li>(If canceled within 7 days of the paid subscription to the project, no charge will be incurred.)</li>\n<li>Are you sure you want to cancel?</li></ul>",
     "service_id": "DSC06047"
@@ -41904,7 +41905,7 @@
   "TTL06075": {
     "en": "Agent server ID",
     "ja": "エージェントサーバーID",
-    "ko": "에이전트 \b서버 ID",
+    "ko": "에이전트 서버 ID",
     "zh": "Agent Node ID",
     "service_id": "TTL06075"
   },
@@ -42414,7 +42415,7 @@
   },
   "TTL06149": {
     "en": "Recurring alert (escalation)",
-    "ja": "繰返し通知 (エスカレーション)",
+    "ja": "繰返し通知(エスカレーション)",
     "ko": "반복 알림 (에스컬레이션)",
     "zh": "Recurring Alert (escalation)",
     "service_id": "TTL06149"
@@ -42428,7 +42429,7 @@
   },
   "CNT06161": {
     "en": "When situation is not resolved from the occurrence time, set the notification reissuance cycle from the first notification. (This feature applies only to alerts in the 'Critical' phase.)",
-    "ja": "危険（Critical）アラートに対し、アラート状況が解除されずに続くと、最初アラート発生時刻からの繰返し通知の周期を指定します。",
+    "ja": "危険(Critical)アラートに対し、アラート状況が解除されずに続くと、最初アラート発生時刻からの繰返し通知の周期を指定します。",
     "ko": "알림 발생 시간으로부터 알림 발생 상황이 해소되지 않았을 경우, 최초 알림 발생 시각으로부터의 알림 재발행 주기를 지정합니다. (‘위험(Critical)’ 단계의 알림에만 적용되는 기능입니다.)",
     "zh": "If the situation is not resolved from the occurrence time, the notification reissuance cycle from the first notification is set.(This feature applies only to alerts in the 'Critical' phase.)",
     "service_id": "CNT06151"
@@ -43093,7 +43094,7 @@
   },
   "TTL06248": {
     "en": "Average core count",
-    "ja": "\n1 時間当たりの平均コア数",
+    "ja": "\n1時間当たりの平均コア数",
     "ko": "평균 코어 수",
     "zh": "Average Core Usage Per Hour",
     "service_id": "TTL06248"
@@ -43107,7 +43108,7 @@
   },
   "TTL06250": {
     "en": "Average host usage per hour",
-    "ja": "1 時間当たりの平均ホスト",
+    "ja": "1時間当たりの平均ホスト",
     "ko": "평균 호스트",
     "zh": "Average Host Usage Per Hour",
     "service_id": "TTL06250"
@@ -43128,7 +43129,7 @@
   },
   "TTL06253": {
     "en": "Average usage per hour",
-    "ja": "1 時間当たりの平均使用量",
+    "ja": "1時間当たりの平均使用量",
     "ko": "평균 사용량",
     "zh": "Average Usage Per Hour",
     "service_id": "TTL06253"
@@ -43422,7 +43423,7 @@
   },
   "DSC06298": {
     "en": "<strong>Remote access status</strong> visualizes the log of success/failure of external (remote) calls by <br />monitored target through application agent settings.",
-    "ja": "<strong>外部コールステータス</strong>は、アプリケーションエージェントの設定を通じて、<br />各モニタリング対象毎の外部（リモート）呼び出しの成功/失敗有無を記録したログを視覚化します。",
+    "ja": "<strong>外部コールステータス</strong>は、アプリケーションエージェントの設定を通じて、<br />各モニタリング対象毎の外部(リモート)呼び出しの成功/失敗有無を記録したログを視覚化します。",
     "ko": "<strong>외부 호출 상태</strong>는 애플리케이션 에이전트의 설정을 통해,<br />각 모니터링 대상별 외부(remote) 호출에 대한 성공/실패 여부를 기록한 로그를 시각화 합니다.",
     "zh": "<strong>Remote Access Status</strong> visualizes the log of success/failure of external (remote) calls by <br />monitored target through application agent settings.",
     "service_id": "DSC06298"
@@ -43611,14 +43612,14 @@
   },
   "BTN06325": {
     "en": "View Summary",
-    "ja": "一つの線",
+    "ja": "要約",
     "ko": "요약 보기",
     "zh": "Single line",
     "service_id": "BTN06325"
   },
   "BTN06326": {
     "en": "Expanded view",
-    "ja": "複数の線",
+    "ja": "詳細",
     "ko": "펼쳐 보기",
     "zh": "Multi line",
     "service_id": "BTN06326"
@@ -43807,7 +43808,7 @@
   },
   "DSC06354": {
     "en": "This is the time used to measure the usage of  ({chargeUnit}) based on the pricing method",
-    "ja": "これは、課金に必要な ({chargeUnit}) の使用量を測定するために使用する時間です。",
+    "ja": "これは、課金に必要な({chargeUnit})の使用量を測定するために使用する時間です。",
     "ko": "과금 방식 기준으로 ({chargeUnit}) 사용량을 측정하는데 이용한 시간입니다.",
     "zh": "これは、価格設定方法に基づいて ({chargeUnit}) の使用量を測定するために使用される時間です",
     "service_id": "DSC06354"
@@ -43919,7 +43920,7 @@
   },
   "TTL06370": {
     "en": "Elapsed time (ms)",
-    "ja": "経過時間 (ミリ秒)",
+    "ja": "経過時間(ミリ秒)",
     "ko": "경과 시간 (ms)",
     "zh": "Elapsed Time (ms)",
     "service_id": "TTL06370"
@@ -44738,7 +44739,7 @@
   },
   "NTC06491": {
     "en": "There is no log information <br/>matching the request conditions (period, log category, monitoring target).",
-    "ja": "条件に一致するログ情報が見つかりません<br/>（期間、ログカテゴリ、モニタリング対象）。",
+    "ja": "条件に一致するログ情報が見つかりません<br/>(期間、ログカテゴリ、モニタリング対象)。",
     "ko": "요청 조건(기간, 로그 카테고리, 모니터링 대상)에 <br/>일치하는 로그 정보가 존재하지 않습니다.",
     "zh": "There is no log information <br/>matching the request conditions (period, log category, monitoring target).",
     "service_id": "NTC06491"
@@ -45130,7 +45131,7 @@
   },
   "azure_setup_guide_2": {
     "en": "After designating the <a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a> role (Role), click the Install button to enter the following three access information.\n Application ID, Tenant ID, Secret",
-    "ja": "WhaTap Monitoringのためには<a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitor Reader</a>、Reader、API ManagementサービスReaderの権限が必要です。Azure PortalのSubscript > アクセス制御(IAM)メニューから「追加」ボタンをクリックしてから権限が追加できます。<br/>\n Monitoring Reader権限（ロール）を指定してから「インストール」ボタンをクリックし、次の3つのアクセス情報を入力します。<br/>\n ‐ アプリケーションID(ApplicationId)<br/>\n ‐ テナントID(TenantId)<br/>\n ‐シークレット(Secret)",
+    "ja": "WhaTap Monitoringのためには<a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitor Reader</a>、Reader、API ManagementサービスReaderの権限が必要です。Azure PortalのSubscript > アクセス制御(IAM)メニューから「追加」ボタンをクリックしてから権限が追加できます。<br/>\n Monitoring Reader権限(ロール)を指定してから「インストール」ボタンをクリックし、次の3つのアクセス情報を入力します。<br/>\n ‐ アプリケーションID(ApplicationId)<br/>\n ‐ テナントID(TenantId)<br/>\n ‐シークレット(Secret)",
     "ko": "와탭 모니터링을 위해서는 Monitor Reader, 독자, API Management 서비스 독자 권한이 필요합니다. Azure Portal에서 Subscript > 액세스 제어(IAM) 메뉴에서 추가 버튼을 통해 권한을 추가할 수 있습니다.<br/><a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a> 역할(Role)을 지정한 후, 설치하기 버튼을 클릭하여 다음 3가지 접속 정보를 입력해 주세요. 애플리케이션 ID(ApplicationId), 테넌트 ID(TenantId), 시크릿(Secret)",
     "zh": "After designating the <a href=\"https://docs.microsoft.com/en-us/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles\">Monitoring Reader</a> role (Role), click the Install button to enter the following three access information.\nApplication ID, Tenant ID, Secret",
     "service_id": "TTL06547"
@@ -45410,14 +45411,14 @@
   },
   "TTL06587": {
     "en": "Agent ID (oid)",
-    "ja": "エージェントID (oid)",
+    "ja": "エージェントID(oid)",
     "ko": "에이전트 ID (oid)",
     "zh": "Agent ID (oid)",
     "service_id": "TTL06587"
   },
   "TTL06588": {
     "en": "Agent name (oname)",
-    "ja": "エージェント名 (oname)",
+    "ja": "エージェント名(oname)",
     "ko": "에이전트 명 (oname)",
     "zh": "Agent Name (oname)",
     "service_id": "TTL06588"
@@ -45676,7 +45677,7 @@
   },
   "DSC06625": {
     "en": "Applying log settings to all node agents. Please wait a moment. (Takes about 30 seconds to 1 minute)",
-    "ja": "すべてのノードエージェントを対象にログ設定を適用しています。 しばらくお待ちください。 （30秒～1分ほどかかります。）",
+    "ja": "すべてのノードエージェントを対象にログ設定を適用しています。 しばらくお待ちください。 (30秒～1分ほどかかります。)",
     "ko": "모든 노드 에이전트를 대상으로 로그 설정을 적용 중입니다. 잠시만 기다려 주십시오. (30초~1분정도 소요)",
     "zh": "Applying log settings to all node agents. Please wait a moment. (Takes about 30 seconds to 1 minute)",
     "service_id": "DSC06625"
@@ -45844,28 +45845,28 @@
   },
   "ITM06659": {
     "en": "2xx status code  count",
-    "ja": "2xx ステータスコードの件数",
+    "ja": "2xxステータスコードの件数",
     "ko": "2xx 상태코드 건수",
     "zh": "2xx Status code count",
     "service_id": "ITM06659"
   },
   "ITM06660": {
     "en": "3xx status code  count",
-    "ja": "3xx ステータスコードの件数",
+    "ja": "3xxステータスコードの件数",
     "ko": "3xx 상태코드 건수",
     "zh": "3xx Status code count",
     "service_id": "ITM06660"
   },
   "ITM06661": {
     "en": "4xx status code count",
-    "ja": "4xx ステータスコードの件数",
+    "ja": "4xxステータスコードの件数",
     "ko": "4xx 상태코드 건수",
     "zh": "4xx Status code count",
     "service_id": "ITM06661"
   },
   "ITM06662": {
     "en": "5xx status code count",
-    "ja": "5xx ステータスコードの件数",
+    "ja": "5xxステータスコードの件数",
     "ko": "5xx 상태코드 건수",
     "zh": "5xx Status code count",
     "service_id": "ITM06662"
@@ -46348,21 +46349,21 @@
   },
   "BTN06731": {
     "en": "Maintenance Plan (New)",
-    "ja": "メンテナンス計画 (New)",
+    "ja": "メンテナンス計画(New)",
     "ko": "정비 계획 (New)",
     "zh": "Maintenance Plan (New)",
     "service_id": "BTN06731"
   },
   "BTN06732": {
     "en": "Maintenance Plan (Old)",
-    "ja": "メンテナンス計画 (Old)",
+    "ja": "メンテナンス計画(Old)",
     "ko": "정비 계획 (Old)",
     "zh": "Maintenance Plan (Old)",
     "service_id": "BTN06732"
   },
   "DSC06733": {
     "en": "When selecting search keys, you can only select search keys whose value ends in .n, which is a number.",
-    "ja": "検索キーを選択する際に、値が.n（数字）で終わる検索キーのみを選択することができます。",
+    "ja": "検索キーを選択する際に、値が.n(数字)で終わる検索キーのみを選択することができます。",
     "ko": "검색키 선택시, 값이 숫자인 .n으로 끝나는 검색키만 선택할 수 있습니다.",
     "zh": "When selecting search keys, you can only select search keys whose value ends in .n, which is a number.",
     "service_id": "DSC06733"
@@ -47020,7 +47021,7 @@
   },
   "DSC06828": {
     "en": "Enter the tag (process type or application name).",
-    "ja": "タグ（プロセス種類、またはアプリケーション名）を入力してください。",
+    "ja": "タグ(プロセス種類、またはアプリケーション名)を入力してください。",
     "ko": "태그(프로세스 종류 혹은 애플리케이션명)을 입력하세요.",
     "": "Enter the tag (process type or application name).",
     "service_id": "DSC06828"
@@ -47384,7 +47385,7 @@
   },
   "TTL06880": {
     "en": "Custom groups (okind)",
-    "ja": "カスタムグループ (okind)",
+    "ja": "カスタムグループ(okind)",
     "ko": "사용자 지정 그룹 (okind)",
     "zh": "Custom group (okind)",
     "service_id": "TTL06880"
@@ -47538,7 +47539,7 @@
   },
   "payment_type_card_stripe": {
     "en": "Credit card (Stripe)",
-    "ja": "クレジットカード (Stripe)",
+    "ja": "クレジットカード(Stripe)",
     "ko": "신용카드 (Stripe)",
     "zh": "Credit Card (Stripe)",
     "service_id": "_06902"
@@ -47622,7 +47623,7 @@
   },
   "TTL06915": {
     "en": "Std dev (ms)",
-    "ja": "標準偏差 (ミリ秒)",
+    "ja": "標準偏差(ミリ秒)",
     "ko": "표준 편차 (ms)",
     "zh": "标准偏差 (ms)",
     "service_id": "TTL06915"
@@ -47853,7 +47854,7 @@
   },
   "DSC06948": {
     "en": "Set database parameters (my.cnf)",
-    "ja": "データベースパラメータを設定します。 (my.cnf)",
+    "ja": "データベースパラメータを設定します。(my.cnf)",
     "ko": "데이터베이스 파라미터 설정 (my.cnf)\n",
     "zh": "Set database parameters (my.cnf)",
     "service_id": "DSC06948"
@@ -47867,7 +47868,7 @@
   },
   "DSC06950": {
     "en": "Set agent collection options (whatap.conf)",
-    "ja": "エージェント収集オプションを設定します。 (whatap.conf)",
+    "ja": "エージェント収集オプションを設定します。(whatap.conf)",
     "ko": "에이전트 수집옵션 설정 (whatap.conf)",
     "zh": "Set agent collection options (whatap.conf)",
     "service_id": "DSC06950"
@@ -48245,7 +48246,7 @@
   },
   "DSC07005": {
     "en": "New node listings are available for WhaTap Node Agent versions <strong>{minVersion}</strong> and above. Please update your agent to use the new menu (current version: {currVersion})",
-    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降で新しいノードのリストを提供しています。 新しいメニューを使用するには、エージェントをアップデートしてください。（現在のバージョン：{currVersion}）",
+    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降で新しいノードのリストを提供しています。 新しいメニューを使用するには、エージェントをアップデートしてください。(現在のバージョン：{currVersion})",
     "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 노드 목록을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "A new node list is provided in WhaTap Node Agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "service_id": "DSC07005"
@@ -49183,7 +49184,7 @@
   },
   "DSC07142": {
     "en": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
-    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count} 件あります。",
+    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count}件あります。",
     "ko": "${runtime}초 이상 커밋되지 않은 세션이 ${state_count}개 있습니다.",
     "zh": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
     "service_id": "DSC07142"
@@ -49330,7 +49331,7 @@
   },
   "ITM07164": {
     "en": "Time spent initializing (in seconds)",
-    "ja": "初期化にかかる時間（秒）",
+    "ja": "初期化にかかる時間(秒)",
     "ko": "초기화가 소요된 시간(초)",
     "zh": "Time taken for initialization (seconds)",
     "service_id": "ITM07164"
@@ -49351,7 +49352,7 @@
   },
   "ITM07167": {
     "en": "After initialization is complete (seconds) (up to 5 minutes)",
-    "ja": "初期化完了後（秒）（5分まで）",
+    "ja": "初期化完了後(秒)(5分まで)",
     "ko": "초기화 완료 후(초)(5분까지)",
     "zh": "After initialization is complete (seconds) (up to 5 minutes)",
     "service_id": "ITM07167"
@@ -49561,7 +49562,7 @@
   },
   "TTL07197": {
     "en": "Date / Time",
-    "ja": "日付 / 時間",
+    "ja": "日付/時間",
     "ko": "날짜 / 시간",
     "zh": "Date / Time",
     "service_id": "TTL07197"
@@ -49757,7 +49758,7 @@
   },
   "TLT07225": {
     "en": "Fees are based on the contract (fixed price or based on usage) and the discount is applied accordingly.",
-    "ja": "利用料金は契約方式（固定価または従量制）に割引オプションが適用された金額です。",
+    "ja": "利用料金は契約方式(固定価または従量制)に割引オプションが適用された金額です。",
     "ko": "사용요금은 계약 방식(고정가 또는 사용량 연계)에 \n따른 금액으로 할인옵션이 적용된 금액입니다.",
     "zh": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
     "service_id": "TLT07225"
@@ -49939,7 +49940,7 @@
   },
   "DSC07251": {
     "en": "You can view the bloating size, number of scans, number of DML executions, and objects with many dead tuples by object (table, index), and it provides information to understand the status of key objects and perform Vacuum or Analyze at the right time.",
-    "ja": "オブジェクト（テーブル、インデックス）別のBloatingサイズ、Scan数、DML実行数、Dead tupleの多いオブジェクトが照会できます。主なオブジェクトの現状を把握し、VacuumやAnalyzeが適時に行えるように情報を提供します。",
+    "ja": "オブジェクト(テーブル、インデックス)別のBloatingサイズ、Scan数、DML実行数、Dead tupleの多いオブジェクトが照会できます。主なオブジェクトの現状を把握し、VacuumやAnalyzeが適時に行えるように情報を提供します。",
     "ko": "오브젝트(테이블, 인덱스)별 Bloating 사이즈, Scan 수, DML 수행 수, Dead tuple이 많은 오브젝트를 조회가능하며, 주요 오브젝트의 현황을 파악하고 Vacuum이나 Analyze를 적절한 시기에 수행하도록  정보를 제공합니다.",
     "zh": "You can view the Bloating size, number of Scans, number of DML executions, and objects with many dead tuples for each object (table, index), and provide information to check the status of major objects and perform Vacuum or Analyze at an appropriate time.",
     "service_id": "DSC07251"
@@ -49995,7 +49996,7 @@
   },
   "DSC07259": {
     "en": "New Pod startup analysis (old Pod initialization performance) is provided for WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
-    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降から、新しいPod開始時の性能分析機能を提供しています。 新しいメニューを使用するには、エージェントをアップデートしてください（現在のバージョン：{currVersion}）",
+    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降から、新しいPod開始時の性能分析機能を提供しています。 新しいメニューを使用するには、エージェントをアップデートしてください(現在のバージョン：{currVersion})",
     "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 시작 분석(구 Pod 초기화 성능)을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "New Pod startup analysis (old Pod initialization performance) is provided for WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "service_id": "DSC07259"
@@ -50065,7 +50066,7 @@
   },
   "ITM07269": {
     "en": "Kubernetes version {version} or higher (GPU version)",
-    "ja": "Kubernetesバージョン{version}以降（GPUバージョン）",
+    "ja": "Kubernetesバージョン{version}以降(GPUバージョン)",
     "ko": "쿠버네티스 버전 {version} 이상(GPU 버전)",
     "zh": "Kubernetes version {version} or higher (GPU version)",
     "service_id": "ITM07269"
@@ -50079,7 +50080,7 @@
   },
   "ITM07271": {
     "en": "Kubernetes version lower than {version} (GPU version)",
-    "ja": "Kubernetesバージョン{version}未満（GPUバージョン）",
+    "ja": "Kubernetesバージョン{version}未満(GPUバージョン)",
     "ko": "쿠버네티스 버전 {version} 미만(GPU 버전)",
     "zh": "Kubernetes version lower than {version} (GPU version)",
     "service_id": "ITM07271"
@@ -50163,7 +50164,7 @@
   },
   "DSC07283": {
     "en": "When entering event conditions and targets, an error may occur  <br/>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered.  <br/>\nSelect the <b>typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
-    "ja": "イベント発生条件と対象を入力する時に特殊文字(~!@#$%^&*()_+=-[]`)が含まれたり、数字で始まるフィールド名を入力したりするとエラーが発生することがあります。 <br/>\n<b>直接入力</b>オプションを選択し、例のように中括弧（$ {}）で囲んで入力します。",
+    "ja": "イベント発生条件と対象を入力する時に特殊文字(~!@#$%^&*()_+=-[]`)が含まれたり、数字で始まるフィールド名を入力したりするとエラーが発生することがあります。 <br/>\n<b>直接入力</b>オプションを選択し、例のように中括弧($ {})で囲んで入力します。",
     "ko": "이벤트 발생조건과 대상 입력시 특수문자(~!@#$%^&*()_+=-[]`)가 포함되거나  <br/>\n숫자로 시작하는 필드명을 입력하면 오류가 발생할 수 있습니다.  <br/>\n<b>직접 입력</b> 옵션을 선택한 다음 예시와 같이 중괄호(${})로 묶어서 입력하세요.",
     "zh": "When entering event conditions and targets, an error may occur <br>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered. <br/>\nSelect the <b>Typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
     "service_id": "DSC07283"
@@ -50226,7 +50227,7 @@
   },
   "DSC07292": {
     "en": "Once the download to the agent server is complete, the agent automatically restarts with the most recent version of the Jar file. (Takes about 1 minute)",
-    "ja": "エージェントサーバーへのダウンロードが完了すると、最新バージョンのJarファイルでエージェントが自動的に再起動します（1分程かかります）。",
+    "ja": "エージェントサーバーへのダウンロードが完了すると、最新バージョンのJarファイルでエージェントが自動的に再起動します(1分程かかります)。",
     "ko": "에이전트 서버에 다운로드가 완료되면 가장 최신버전의 Jar 파일로 에이전트가 자동 재기동됩니다. (약 1분 소요)",
     "zh": "Once the download to the agent server is complete, the agent automatically restarts with the most recent version of the Jar file. (Takes about 1 minute)",
     "service_id": "DSC07292"
@@ -50513,7 +50514,7 @@
   },
   "DSC07333": {
     "en": "Enter or select a value in the required fields <span class=\"critical\">(event name, category, level, message)</span> to enable reception testing.",
-    "ja": "受信テストを使用するには、必須項目<span class=\"critical\">（イベント名、カテゴリ、レベル、メッセージ）</span>に値を入力または選択します。",
+    "ja": "受信テストを使用するには、必須項目<span class=\"critical\">(イベント名、カテゴリ、レベル、メッセージ)</span>に値を入力または選択します。",
     "ko": "수신 테스트를 이용하려면 필수 항목<span class=\"critical\">(이벤트 명, 카테고리, 레벨, 메시지)</span>에 값을 입력하거나 선택하세요.",
     "": "Enter or select a value in the required fields <span class=\"critical\">(event name, category, level, message)</span> to enable reception testing.",
     "service_id": "DSC07333"
@@ -50814,7 +50815,7 @@
   },
   "TTL07376": {
     "en": "Agent (Instance)",
-    "ja": "Agent (Instance)",
+    "ja": "エージェント(インスタンス)",
     "ko": "에이전트 (인스턴스)",
     "zh": "Agent (Instance)",
     "service_id": "TTL07376"
@@ -51822,21 +51823,21 @@
   },
   "NTC07521": {
     "en": "The event name can be up to {max_length} characters long.",
-    "ja": "イベント名は最大 {max_length} 文字まで入力できます。",
+    "ja": "イベント名は最大{max_length}文字まで入力できます。",
     "ko": "이벤트 이름은 최대 {max_length}자 까지 입력할 수 있습니다.",
     "zh": "Event title can be up to {max_length} characters long.",
     "service_id": "NTC07521"
   },
   "NTC07522": {
     "en": "Messages can be up to {max_length} characters long.",
-    "ja": "メッセージ内容は最大 {max_length} 文字まで入力できます。",
+    "ja": "メッセージ内容は最大{max_length}文字まで入力できます。",
     "ko": "메시지는 최대 {max_length}자 까지 입력할 수 있습니다.",
     "zh": "Message can be up to {max_length} characters long.",
     "service_id": "NTC07522"
   },
   "TTL07523": {
     "en": "Number of requests currently running (1 second)",
-    "ja": "現在実行中のリクエスト数（1秒）",
+    "ja": "現在実行中のリクエスト数(1秒)",
     "ko": "현재 실행 중인 요청 수 (1초)",
     "zh": "Number of currently executing requests (in 1 second)",
     "service_id": "TTL07523"
@@ -52025,7 +52026,7 @@
   },
   "ITM07550": {
     "en": "Today real-time (0-24h)",
-    "ja": "リアルタイム：本日 (0 ~ 24h)",
+    "ja": "リアルタイム：本日(0 ~ 24h)",
     "ko": "실시간 금일 (0 ~ 24h)",
     "zh": "Real-Time Today (0-24h)",
     "service_id": "ITM07550"
@@ -52382,7 +52383,7 @@
   },
   "TTL07602": {
     "en": "Introducing the Kubernetes kube-apiserver monitoring!",
-    "ja": "Kubernetes kube-apiserver 監視機能のご紹介",
+    "ja": "Kubernetes kube-apiserver監視機能のご紹介",
     "ko": "쿠버네티스 kube-apiserver 모니터링 기능을 소개합니다!",
     "zh": "Introducing the Kubernetes kube-apiserver monitoring feature!",
     "service_id": "TTL07602"
@@ -52662,7 +52663,7 @@
   },
   "DSC07642": {
     "en": "Some data cannot be viewed unless you update the agent.<br/>(Agent v{version} and earlier)",
-    "ja": "エージェントを更新しないと、一部のデータを検索できません。<br/>（エージェントv{version}以下）",
+    "ja": "エージェントを更新しないと、一部のデータを検索できません。<br/>(エージェントv{version}以下)",
     "ko": "에이전트를 업데이트하지 않으면 일부 데이터를 조회할 수 없습니다.<br/>(에이전트 v{version} 이하)",
     "zh": "Some data cannot be viewed unless you update the agent.<br/>(Agent v{version} and earlier)",
     "service_id": "DSC07642"
@@ -52676,7 +52677,7 @@
   },
   "DSC07644": {
     "en": "CPU metrics that were split between xos and xos2 are combined into one starting with Agent v1.7.0.",
-    "ja": "xos、xos2 に分かれていた CPU 指標をエージェント v1.7.0 からは 1 つに統合します。",
+    "ja": "xos、xos2 に分かれていた CPU 指標をエージェントv1.7.0からは1つに統合します。",
     "ko": "xos, xos2로 나누어져 있던 CPU 지표를 에이전트 v1.7.0부터는 하나로 통합합니다.",
     "zh": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v1.7.0.",
     "service_id": "DSC07644"
@@ -52711,7 +52712,7 @@
   },
   "DSC07649": {
     "en": "Each node has a different version of the agent. Please use only one version to ensure accurate data collection. (Number of versions currently running: {nodeAgentVersionCount})",
-    "ja": "各ノードのエージェントバージョンが異なります。 正確なデータ収集のために1つのバージョンのみを使用してください。 （現在実行中のバージョン数：{nodeAgentVersionCount}個）",
+    "ja": "各ノードのエージェントバージョンが異なります。 正確なデータ収集のために1つのバージョンのみを使用してください。 (現在実行中のバージョン数：{nodeAgentVersionCount}個)",
     "ko": "각 노드의 에이전트 버전이 상이합니다. 보다 정확한 데이터 수집을 위해 하나의 버전만 사용해주세요. (현재 실행 중인 버전 수: {nodeAgentVersionCount}개)",
     "zh": "The agent version on each node is different. Please use only one version to ensure accurate data collection. (Currently running versions: {nodeAgentVersionCount})",
     "service_id": "DSC07649"
@@ -52809,14 +52810,14 @@
   },
   "DSC07663": {
     "en": "(Updates are available from {date})",
-    "ja": "（アップデートは{date}から可能です。）",
+    "ja": "(アップデートは{date}から可能です。)",
     "ko": "(업데이트는 {date}부터 가능)",
     "zh": "(Updates are available from {date})",
     "service_id": "DSC07663"
   },
   "DSC07664": {
     "en": "(Agent v{version} and earlier)",
-    "ja": "（エージェントv{version}以下）",
+    "ja": "(エージェントv{version}以下)",
     "ko": "(에이전트 v{version} 이하)",
     "zh": "(Agent v{version} and earlier)",
     "service_id": "DSC07664"
@@ -52837,14 +52838,14 @@
   },
   "DSC07667": {
     "en": "(Agent v{version} or higher update required)",
-    "ja": "（エージェントv {バージョン}以降の更新が必要です。）",
+    "ja": "(エージェントv {バージョン}以降の更新が必要です。)",
     "ko": "(에이전트 v{version} 이상 업데이트 필수)",
     "zh": "(Agent v{version} or higher update required)",
     "service_id": "DSC07667"
   },
   "DSC07668": {
     "en": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v{version}.",
-    "ja": "xos、xos2 に分かれていた CPU 指標をエージェント v{version} からは 1 つに統合します。",
+    "ja": "xos、xos2 に分かれていた CPU 指標をエージェント v{version} からは1つに統合します。",
     "ko": "xos, xos2로 나누어져 있던 CPU 지표를 에이전트 v{version}부터는 하나로 통합합니다.",
     "zh": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v{version}.",
     "service_id": "DSC07668"
@@ -53222,7 +53223,7 @@
   },
   "DSC07722": {
     "en": "The number of restarts within 5 minutes after creation is {initRestartCount} times, and the cumulative number of restarts based on the last view time ({viewTime}) is {restartCount} times.",
-    "ja": "生成後 5 分間、再起動回数は {initRestartCount} 回、最後の照会時刻（{viewTime}）を基準にした累積再起動回数は{restartCount}回です。",
+    "ja": "生成後 5 分間、再起動回数は {initRestartCount} 回、最後の照会時刻({viewTime})を基準にした累積再起動回数は{restartCount}回です。",
     "ko": "생성 후 5분 동안 재시작 횟수는 {initRestartCount}번, 마지막 조회 시각({viewTime}) 기준 누적 재시작 횟수는 {restartCount}번 입니다.",
     "zh": "The number of restarts within 5 minutes after creation is {initRestartCount} times, and the cumulative number of restarts based on the last view time ({viewTime}) is {restartCount} times.",
     "service_id": "DSC07722"
@@ -53341,7 +53342,7 @@
   },
   "DSC07739": {
     "en": "Click Run GC to clean up invalid memory (Garbage).",
-    "ja": "無効なメモリ（Garbage）をクリーンアップするには、[Run GC]ボタンをクリックします。",
+    "ja": "無効なメモリ(Garbage)をクリーンアップするには、[Run GC]ボタンをクリックします。",
     "ko": "GC 실행 버튼을 클릭하면 유효하지 않은 메모리 (Garbage)를 정리합니다.",
     "zh": "Click the Run GC button to clean up invalid memory (Garbage).",
     "service_id": "DSC07739"
@@ -53495,7 +53496,7 @@
   },
   "NTC07764": {
     "en": "Only numbers and numeric characters (.*) can be entered.",
-    "ja": "数字と特殊文字（.*）のみを入力できます。",
+    "ja": "数字と特殊文字(.*)のみを入力できます。",
     "ko": "숫자와 특수문자(.*)만 입력 가능합니다.",
     "zh": "Only numbers and numeric characters (.*) can be entered.",
     "service_id": "NTC07764"
@@ -53530,7 +53531,7 @@
   },
   "TTL07769": {
     "en": "Selected projects ({count})",
-    "ja": "選択したプロジェクト ({count})",
+    "ja": "選択したプロジェクト({count})",
     "ko": "선택된 프로젝트 ({count})",
     "zh": "Selected projects ({count})",
     "service_id": "TTL07769"
@@ -53740,14 +53741,14 @@
   },
   "TTL07799": {
     "en": "MySQL featured widget group (RDS)",
-    "ja": "MySQL推薦ウィジェットグループ（RDS）",
+    "ja": "MySQL推薦ウィジェットグループ(RDS)",
     "ko": "MySQL 추천 위젯 그룹 (RDS)",
     "zh": "MySQL Featured Widget Groups (RDS)",
     "service_id": "TTL07799"
   },
   "TTL07800": {
     "en": "MySQL featured widget group (XOS)",
-    "ja": "MySQL推薦ウィジェットグループ（XOS）",
+    "ja": "MySQL推薦ウィジェットグループ(XOS)",
     "ko": "MySQL 추천 위젯 그룹 (XOS)",
     "zh": "MySQL Featured Widget Group (XOS)",
     "service_id": "TTL07800"
@@ -53761,21 +53762,21 @@
   },
   "DSC07802": {
     "en": "If the data is not available, please check the agent version (version {version} or higher).",
-    "ja": "データが表示されない場合は、エージェントのバージョン（{version}以降）を確認してください。",
+    "ja": "データが表示されない場合は、エージェントのバージョン({version}以降)を確認してください。",
     "ko": "데이터가 나오지 않은 경우, 에이전트 버전({version} 버전 이상)을 확인해주세요.",
     "zh": "If the data is not available, please check the agent version (version {version} or higher).",
     "service_id": "DSC07802"
   },
   "TTL07803": {
     "en": "PostgreSQL featured widget group (RDS)",
-    "ja": "PostgreSQL推薦ウィジェットグループ（RDS）",
+    "ja": "PostgreSQL推薦ウィジェットグループ(RDS)",
     "ko": "PostgreSQL 추천 위젯 그룹 (RDS)",
     "zh": "PostgreSQL Featured Widget Groups (RDS)",
     "service_id": "TTL07803"
   },
   "TTL07804": {
     "en": "PostgreSQL featured widget group (XOS)",
-    "ja": "PostgreSQL推薦ウィジェットグループ（XOS）",
+    "ja": "PostgreSQL推薦ウィジェットグループ(XOS)",
     "ko": "PostgreSQL 추천 위젯 그룹 (XOS)",
     "zh": "PostgreSQL Featured Widget Group (XOS)",
     "service_id": "TTL07804"
@@ -53866,7 +53867,7 @@
   },
   "CNT07817": {
     "en": "<span style='font-weight: bold'>Edit widget</span>: Add, delete, and change position of chart widget (right-click)",
-    "ja": "<span style='font-weight: bold'>ウィジェット編集</span>：チャートウィジェットが追加、削除、位置変更できます。（マウス右クリック）",
+    "ja": "<span style='font-weight: bold'>ウィジェット編集</span>：チャートウィジェットが追加、削除、位置変更できます。(マウス右クリック)",
     "ko": "<span style='font-weight: bold'>위젯 편집</span> : 차트 위젯을 추가, 삭제, 위치 변경 가능 (마우스 우클릭)",
     "zh": "<span style='font-weight: bold'>Edit widget</span>: Add, delete, and change position of chart widget (right-click)",
     "service_id": "CNT07817"
@@ -53901,7 +53902,7 @@
   },
   "CNT07822": {
     "en": "If your account is associated with AWS Marketplace, you cannot unsubscribe directly.{br}Please contact the WhaTap support team ({tel}).",
-    "ja": "AWS Marketplaceに関連付けられたアカウントは、直接退会できません。{br}ワタップのカスタマーサポートへ（{tel}）にお問い合わせください。",
+    "ja": "AWS Marketplaceに関連付けられたアカウントは、直接退会できません。{br}ワタップのカスタマーサポートへお問い合わせください。",
     "ko": "AWS Marketplace와 연동되어 있는 계정은 직접 탈퇴하실 수 없습니다.{br}와탭 경영지원팀({tel})으로 연락 부탁드립니다.",
     "zh": "You cannot directly cancel an account linked to AWS Marketplace.{br}Please contact the WhaTap management support team ({tel}).",
     "service_id": "CNT07822"
@@ -53921,10 +53922,10 @@
     "service_id": "NTC07824"
   },
   "DSC07825": {
-    "en": "Select the confirmed <b>CONTAINER-RUNTIME</b> and create the default settings file (values.yaml) required for installation as follows.",
-    "ja": "確認した<b> CONTAINER-RUNTIME </b>を選択して、インストールに必要なデフォルト設定ファイル（values.yaml）を次のように作成します。",
-    "ko": "확인한 <b>CONTAINER-RUNTIME</b>을 선택하여 설치에 필요한 기본 설정 파일(values.yaml)을 다음과 같이 생성하세요.",
-    "zh": "Select the confirmed <b>CONTAINER-RUNTIME</b> and create the default settings file (values.yaml) required for installation as follows.",
+    "en": "Select the confirmed <b>Container Runtime</b> and create the default settings file (values.yaml) required for installation as follows.",
+    "ja": "確認した<b>コンテナーランタイム</b>を選択して、インストールに必要なデフォルト設定ファイル(values.yaml)を次のように作成します。",
+    "ko": "확인한 <b>Container Runtime</b>을 선택하여 설치에 필요한 기본 설정 파일(values.yaml)을 다음과 같이 생성하세요.",
+    "zh": "Select the confirmed <b>Container Runtime</b> and create the default settings file (values.yaml) required for installation as follows.",
     "service_id": "DSC07825"
   },
   "ITM07826": {
@@ -53964,7 +53965,7 @@
   },
   "ITM07831": {
     "en": "Ungrouped",
-    "ja": "グループ未指定",
+    "ja": "グループ指定なし",
     "ko": "그룹 미지정",
     "zh": "Ungrouped",
     "service_id": "ITM07831"
@@ -53977,10 +53978,10 @@
     "service_id": "DSC07832"
   },
   "LNK07833": {
-    "en": "Pod details",
-    "ja": "Podの詳細",
-    "ko": "Pod 상세 정보",
-    "zh": "Pod details",
+    "en": "Pod manifest lookup",
+    "ja": "Podマニフェストの照会",
+    "ko": "Pod 매니페스트 조회",
+    "zh": "Pod manifest lookup",
     "service_id": "LNK07833"
   },
   "DSC07834": {
@@ -54188,35 +54189,35 @@
   },
   "DSC07863": {
     "en": "You can't select an event target with this template",
-    "ja": "イベントターゲットを選択できないテンプレートです。",
+    "ja": "イベント対象を選択できないテンプレートです。",
     "ko": "이벤트 대상을 선택할 수 없는 템플릿입니다.",
     "zh": "You can't select an event target with this template",
     "service_id": "DSC07863"
   },
   "DSC07864": {
     "en": "If there is no Vacuum target, it will not be queried.",
-    "ja": "Vacuum ターゲットがない場合は照会されません。",
+    "ja": "Vacuum対象がない場合は照会されません。",
     "ko": "Vacuum 대상이 없는 경우 조회되지 않습니다.",
     "zh": "If there is no Vacuum target, it will not be queried.",
     "service_id": "DSC07864"
   },
   "DSC07865": {
     "en": "Table with greater number of dead tuples(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= More tables than \"background-color: #eee;\">number-of-tuples</code>) than vacuum threshold",
-    "ja": "dead tuple 数が vacuum threshold(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= \"background-color: #eee;\">number-of-tuples</code>) より多くのテーブル",
+    "ja": "dead tuple数がvacuum threshold(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= \"background-color: #eee;\">number-of-tuples</code>)より多いテーブル",
     "ko": "dead tuple 수가 vacuum threshold(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style=\"background-color: #eee;\">number-of-tuples</code>)보다 많은 테이블",
     "zh": "Table with greater number of dead tuples(<code style=\"background-color: #eee;\">autovacuum_threshold</code> + <code style=\"background-color: #eee;\">autovacuum_scale_factor</code> * <code style= More tables than \"background-color: #eee;\">number-of-tuples</code>) than vacuum threshold",
     "service_id": "DSC07865"
   },
   "DSC07866": {
     "en": "Tables with age(relfrozenxid) greater than <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code>",
-    "ja": "age(relfrozenxid) が <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code> より大きいテーブル",
+    "ja": "age(relfrozenxid)が<code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code>より大きいテーブル",
     "ko": "age(relfrozenxid)가 <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code> 보다 큰 테이블",
     "zh": "Tables with age(relfrozenxid) greater than <code style=\"background-color: #eee;\">autovacuum_freeze_max_age</code>",
     "service_id": "DSC07866"
   },
   "DSC07867": {
     "en": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
-    "ja": "エージェント設定 (whatap.conf) の <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示するします。",
+    "ja": "エージェント設定(whatap.conf)の<code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示します。",
     "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다.",
     "zh": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
     "service_id": "DSC07867"
@@ -54230,14 +54231,18 @@
   },
   "DSC07869": {
     "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+<<<<<<< HEAD
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ラクトリ</a>をご覧ください。",
+=======
+    "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
+>>>>>>> 847065242681d8d22972969191ac4e5c2340ede3
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
     "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
     "en": "If there is no corresponding object, data may not be retrieved.",
-    "ja": "対応するオブジェクトがないと、データが照会されない可能性があります。",
+    "ja": "該当するオブジェクトがないと、データが照会されないことがあります。",
     "ko": "해당하는 오브젝트가 없으면 데이터가 조회되지 않을 수 있습니다.",
     "zh": "If there is no corresponding object, data may not be retrieved.",
     "service_id": "DSC07870"
@@ -54251,17 +54256,185 @@
   },
   "DSC07872": {
     "en": "You can receive a notification when a network daemon's reception port is disabled.",
-    "ja": "ネットワークデーモンのリスニングポートを無効にすると通知を受け取ることができます。",
+    "ja": "ネットワークデーモンのリスニングポートが無効になった場合、通知を受信できます。",
     "ko": "네트워크 데몬의 수신 포트 비활성화 시 알림을 받을 수 있습니다.",
     "zh": "You can receive a notification when a network daemon's reception port is disabled.",
     "service_id": "DSC07872"
   },
   "DSC07873": {
     "en": "Automatically select the same target",
-    "ja": "同一ターゲット自動選択",
+    "ja": "同一対象を自動選択",
     "ko": "동일 대상 자동 선택",
     "zh": "Automatically select the same target",
     "service_id": "DSC07873"
+  },
+  "DSC07874": {
+    "en": "Please select Container Runtime.",
+    "ja": "Container Runtimeを選択してください。",
+    "ko": "Container Runtime을 선택해주세요.",
+    "zh": "Please select Container Runtime.",
+    "service_id": "DSC07874"
+  },
+  "DSC07875": {
+    "en": "Output example",
+    "ja": "出力例",
+    "ko": "출력 예시",
+    "zh": "Output example",
+    "service_id": "DSC07875"
+  },
+  "TTL07876": {
+    "en": "Host name",
+    "ja": "ホスト名",
+    "ko": "호스트 명",
+    "zh": "Host name",
+    "service_id": "TTL07876"
+  },
+  "NTC07877": {
+    "en": "URL addition was successful.",
+    "ja": "URLの追加に成功しました。",
+    "ko": "URL 추가에 성공했습니다.",
+    "zh": "URL addition was successful.",
+    "service_id": "NTC07877"
+  },
+  "NTC07878": {
+    "en": "Adding URL failed.",
+    "ja": "URLの追加に失敗しました。",
+    "ko": "URL 추가에 실패했습니다.",
+    "zh": "Adding URL failed.",
+    "service_id": "NTC07878"
+  },
+  "NTC07879": {
+    "en": "URL deletion was successful.",
+    "ja": "URLの削除に成功しました。",
+    "ko": "URL 삭제에 성공했습니다.",
+    "zh": "URL deletion was successful.",
+    "service_id": "NTC07879"
+  },
+  "NTC07880": {
+    "en": "URL deletion failed.",
+    "ja": "URLの削除に失敗しました。",
+    "ko": "URL 삭제에 실패했습니다.",
+    "zh": "URL deletion failed.",
+    "service_id": "NTC07880"
+  },
+  "NTC07881": {
+    "en": "URL editing was successful.",
+    "ja": "URLの編集に成功しました。",
+    "ko": "URL 편집에 성공했습니다.",
+    "zh": "URL editing was successful.",
+    "service_id": "NTC07881"
+  },
+  "NTC07882": {
+    "en": "URL editing failed.",
+    "ja": "URLの編集に失敗しました。",
+    "ko": "URL 편집에 실패했습니다.",
+    "zh": "URL editing failed.",
+    "service_id": "NTC07882"
+  },
+  "NTC07883": {
+    "en": "URL copy was successful.",
+    "ja": "URLのコピーに成功しました。",
+    "ko": "URL 복사에 성공했습니다.",
+    "zh": "URL copy was successful.",
+    "service_id": "NTC07883"
+  },
+  "NTC07884": {
+    "en": "URL copy failed.",
+    "ja": "URLのコピーに失敗しました。",
+    "ko": "URL 복사에 실패했습니다.",
+    "zh": "URL copy failed.",
+    "service_id": "NTC07884"
+  },
+  "CNT07885": {
+    "en": "Do you want to delete the registered URL?",
+    "ja": "登録されたURLを削除しますか？",
+    "ko": "등록된 URL을 삭제하시겠습니까?",
+    "zh": "Do you want to delete the registered URL?",
+    "service_id": "CNT07885"
+  },
+  "TTL07886": {
+    "en": "Delete URL",
+    "ja": "URLを削除",
+    "ko": "URL 삭제",
+    "zh": "Delete URL",
+    "service_id": "TTL07886"
+  },
+  "TTL07887": {
+    "en": "Detailed data collection time",
+    "ja": "詳細データ収集時刻",
+    "ko": "상세 데이터 수집 시각",
+    "zh": "Detailed data collection time",
+    "service_id": "TTL07887"
+  },
+  "DSC07888": {
+    "en": "There is no pending data for the selected Pod at the time of inquiry.",
+    "ja": "照会時に選択したポッドのペンディングデータはありません。",
+    "ko": "조회 시점에 선택한 Pod의 Pending 데이터가 없습니다.",
+    "zh": "There is no pending data for the selected Pod at the time of inquiry.",
+    "service_id": "DSC07888"
+  },
+  "BTN07889": {
+    "en": "return to list",
+    "ja": "リストに戻る",
+    "ko": "목록으로 돌아가기",
+    "zh": "return to list",
+    "service_id": "BTN07889"
+  },
+  "TLT07890": {
+    "en": "View linked applications",
+    "ja": "連携アプリケーションの表示",
+    "ko": "연계 Application 보기",
+    "zh": "View linked applications",
+    "service_id": "TLT07890"
+  },
+  "TTL07891": {
+    "en": "More information",
+    "ja": "詳細情報",
+    "ko": "상세정보",
+    "zh": "More information",
+    "service_id": "TTL07891"
+  },
+  "TTL07892": {
+    "en": "Copy URL",
+    "ja": "URLをコピー",
+    "ko": "URL 복사",
+    "zh": "Copy URL",
+    "service_id": "TTL07892"
+  },
+  "NTC07893": {
+    "en": "If you do not fill out the Host Name entry, it will be difficult to identify your server. Be sure to enter this field.",
+    "ja": "Host Name項目を作成しないと、サーバーを特定できません。この項目を必ず入力してください。",
+    "ko": "Host Name 항목을 작성하지 않으면 서버를 식별하기 어렵습니다. 이 항목을 반드시 입력하세요.",
+    "zh": "If you do not fill out the Host Name entry, it will be difficult to identify your server. Be sure to enter this field.",
+    "service_id": "NTC07893"
+  },
+  "NTC07894": {
+    "en": "Connection failed due to reasons such as newly restoring or reinstalling the app on the mobile device.{br}Mobile devices that fail to connect are automatically excluded from receiving notifications.",
+    "ja": "モバイルデバイスのアプリを復元したか、再インストールなどの理由で接続に失敗しました。{br}接続に失敗したモバイルデバイスは、通知の受信対象から自動的に除外されます。",
+    "ko": "모바일 기기의 앱을 새로 복원했거나 재설치 등의 사유로 연결에 실패했습니다.{br}연결에 실패한 모바일 기기는 알림 수신 대상에서 자동 제외됩니다.",
+    "zh": "Connection failed due to reasons such as newly restoring or reinstalling the app on the mobile device.{br}Mobile devices that fail to connect are automatically excluded from receiving notifications.",
+    "service_id": "NTC07894"
+  },
+  "DSC07895": {
+    "en": "Search for {dataKey}",
+    "ja": "{dataKey}検索",
+    "ko": "{dataKey} 검색",
+    "zh": "Search for {dataKey}",
+    "service_id": "DSC07895"
+  },
+  "DSC07896": {
+    "en": "Enter or select {dataKey}.",
+    "ja": "{dataKey}を入力または選択してください。",
+    "ko": "{dataKey} 을(를) 입력하거나 선택하세요.",
+    "zh": "Enter or select {dataKey}.",
+    "service_id": "DSC07896"
+  },
+  "BTN07897": {
+    "en": "Transfer",
+    "ja": "移動",
+    "ko": "이동",
+    "zh": "Transfer",
+    "service_id": "BTN07897"
   },
   "": {
     "en": "#VALUE!",
