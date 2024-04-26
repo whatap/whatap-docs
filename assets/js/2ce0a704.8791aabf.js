@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_4_x",
   "title": "Service 2.4.0",
-  "description": "Service 2.4.1",
+  "description": "Service 2.4.2",
   "source": "@site/docs/release-notes/service/service-2.4.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_4_x",
@@ -62,6 +62,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.4.2",
+  "id": "service-242",
+  "level": 2
+}, {
+  "value": "<code>Kubernetes</code>",
+  "id": "kubernetes",
+  "level": 3
+}, {
   "value": "Service 2.4.1",
   "id": "service-241",
   "level": 2
@@ -107,7 +115,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
-  "id": "kubernetes",
+  "id": "kubernetes-1",
   "level": 3
 }, {
   "value": "<code>Database</code>",
@@ -176,6 +184,35 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-242",
+        children: "Service 2.4.2"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 04월 26일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "kubernetes",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Kubernetes"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_multiServiceHitmap",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "start_time",
+            className: "uitext"
+          }), "의 선택 창에 다크 테마가 적용되지 않은 문제 수정"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-241",
@@ -677,7 +714,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "kubernetes",
+          id: "kubernetes-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Kubernetes"
           })
