@@ -10,11 +10,15 @@ rules:
 theme:
   # See https://redocly.com/docs/api-reference-docs/configuration/functionality/
   openapi:
+    ctrlFHijack: true
     disableSearch: false
     expandResponses: '200'
     hideDownloadButton: true
     expandSingleSchemaField: true
     jsonSampleExpandLevel: 3
+    scrollYOffset: 86.5
+    hideLogo: true
+    pagination: "section"
     # See https://redocly.com/docs/api-reference-docs/configuration/theming/
     theme:
       colors:
