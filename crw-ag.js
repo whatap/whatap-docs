@@ -2,7 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const url = 'https://docs.whatap.io/release-notes/php/php-2_7_2';
+const url = 'https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_1';
 
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
@@ -20,10 +20,17 @@ axios.get(url)
         const ulContents = $('header + p').next('ul');
         const featureInUl = ulContents.find('code.Feature, code.New');
 
+        const pContents = $('header + p').next('p');
+        const featureInP = pContents.find('code.Feature, code.New');
+
         const features = new Set();
         featureInUl.each((idx, code) => {
             features.add($(code).parent().html().trim());
         });
+
+        featureInP.each((idx, code) => {
+          features.add($(code).parent().html().trim());
+      });
 
         if (features.size === 0) return;
 
