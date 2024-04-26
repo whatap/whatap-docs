@@ -22195,7 +22195,7 @@ const detector$2 = (txt) => {
   return /^\s*mindmap/.test(txt);
 };
 const loader$3 = async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(93771)]).then(__webpack_require__.bind(__webpack_require__, 16152));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(49746), __webpack_require__.e(93771)]).then(__webpack_require__.bind(__webpack_require__, 16152));
   return { id: id$2, diagram: diagram2 };
 };
 const plugin$2 = {

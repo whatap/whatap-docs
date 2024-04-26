@@ -150,11 +150,11 @@ function _object_spread(target) {
 
 
 
-const Container = styled_components_browser_esm/* default */.Ay.div`
+const Container = styled_components_browser_esm["default"].div`
   display: flex;
   flex-direction: column;
 `;
-const CheckboxContainer = styled_components_browser_esm/* default */.Ay.div`
+const CheckboxContainer = styled_components_browser_esm["default"].div`
   display: flex;
 
   & label {
@@ -230,18 +230,18 @@ function RadioInput_object_spread(target) {
 
 
 
-const RadioInput_Container = styled_components_browser_esm/* default */.Ay.div`
+const RadioInput_Container = styled_components_browser_esm["default"].div`
   display: flex;
   flex-direction: column;
 `;
-const RadioInput_CheckboxContainer = styled_components_browser_esm/* default */.Ay.div`
+const RadioInput_CheckboxContainer = styled_components_browser_esm["default"].div`
   display: flex;
 
   & label {
     margin: 0 10px;
   }
 `;
-const ErrorLabel = styled_components_browser_esm/* default */.Ay.span`
+const ErrorLabel = styled_components_browser_esm["default"].span`
   color: red;
   padding: 10px 0;
 `;
@@ -409,16 +409,16 @@ function RadioGridInput_object_spread(target) {
 
 
 
-const GridQuestionContainer = styled_components_browser_esm/* default */.Ay.div`
+const GridQuestionContainer = styled_components_browser_esm["default"].div`
   display: table;
 `;
-const TableHeader = styled_components_browser_esm/* default */.Ay.header`
+const TableHeader = styled_components_browser_esm["default"].header`
   display: table-row;
 `;
-const TableRow = styled_components_browser_esm/* default */.Ay.div`
+const TableRow = styled_components_browser_esm["default"].div`
   display: table-row;
 `;
-const TableCell = styled_components_browser_esm/* default */.Ay.div`
+const TableCell = styled_components_browser_esm["default"].div`
   display: table-cell;
   padding: 5px;
 `;
@@ -483,16 +483,16 @@ function CheckboxGridInput_object_spread(target) {
 
 
 
-const CheckboxGridInput_GridQuestionContainer = styled_components_browser_esm/* default */.Ay.div`
+const CheckboxGridInput_GridQuestionContainer = styled_components_browser_esm["default"].div`
   display: table;
 `;
-const CheckboxGridInput_TableHeader = styled_components_browser_esm/* default */.Ay.header`
+const CheckboxGridInput_TableHeader = styled_components_browser_esm["default"].header`
   display: table-row;
 `;
-const CheckboxGridInput_TableRow = styled_components_browser_esm/* default */.Ay.div`
+const CheckboxGridInput_TableRow = styled_components_browser_esm["default"].div`
   display: table-row;
 `;
-const CheckboxGridInput_TableCell = styled_components_browser_esm/* default */.Ay.div`
+const CheckboxGridInput_TableCell = styled_components_browser_esm["default"].div`
   display: table-cell;
   padding: 5px;
 `;
@@ -633,7 +633,7 @@ function LinearGrid_object_spread(target) {
 
 
 
-const LinearGrid_Container = styled_components_browser_esm/* default */.Ay.div`
+const LinearGrid_Container = styled_components_browser_esm["default"].div`
   display: flex;
   align-items: center;
 
@@ -642,7 +642,7 @@ const LinearGrid_Container = styled_components_browser_esm/* default */.Ay.div`
   }
   margin-bottom 10px;
 `;
-const LinearGrid_ErrorLabel = styled_components_browser_esm/* default */.Ay.span`
+const LinearGrid_ErrorLabel = styled_components_browser_esm["default"].span`
   color: red;
 `;
 function LinearGrid({ id }) {
@@ -773,19 +773,19 @@ function Feedback_object_spread_props(target, source) {
 
 
 
-const Form = styled_components_browser_esm/* default */.Ay.form`
+const Form = styled_components_browser_esm["default"].form`
   max-width: 580px;
   margin: 0 auto;
   padding: 15px;
 `;
-const QuestionContainer = styled_components_browser_esm/* default */.Ay.div`
+const QuestionContainer = styled_components_browser_esm["default"].div`
   margin-bottom: 20px;
 `;
-const QuestionLabel = styled_components_browser_esm/* default */.Ay.h3`
+const QuestionLabel = styled_components_browser_esm["default"].h3`
   font-size: 1.1rem;
   margin-bottom: 10px;
 `;
-const QuestionHelp = styled_components_browser_esm/* default */.Ay.p`
+const QuestionHelp = styled_components_browser_esm["default"].p`
   font-size: 0.8rem;
   color: #5c5c5c;
   margin-top: 0px;
