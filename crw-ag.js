@@ -2,7 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const url = 'https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_1';
+const url = 'https://docs.whatap.io/release-notes/k8s/k8s-1_5_0';
 
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
