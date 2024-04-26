@@ -164,7 +164,7 @@ paths:
         - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
       responses:
         '200':
-          description: 프로젝트 목록 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -253,7 +253,7 @@ paths:
         - $ref: '#/components/parameters/WhatapPcodeHeader'
       responses:
         '200':
-          description: 프로젝트 정보 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -324,7 +324,7 @@ paths:
         - $ref: '#/components/parameters/WhatapPcodeHeader'
       responses:
         '200':
-          description: 에이전트 정보 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -370,7 +370,7 @@ paths:
         - $ref: '#/components/parameters/ProjectCodePath'
       responses:
         '200':
-          description: 프로젝트 멤버 목록 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -421,7 +421,7 @@ paths:
         - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
       responses:
         '200':
-          description: 그룹 목록 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -469,7 +469,7 @@ paths:
         - $ref: '#/components/parameters/GroupKeyPath'
       responses:
         '200':
-          description: 그룹 목록 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -521,7 +521,7 @@ paths:
         - $ref: '#/components/parameters/GroupKeyPath'
       responses:
         '200':
-          description: 그룹 목록 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
@@ -619,7 +619,7 @@ paths:
         - $ref: '#/components/parameters/WhatapPcodeHeader'
       responses:
         '200':
-          description: oid 목록 호출 성공
+          description: 호출 성공
           content:
             application/json:
               schema:
@@ -723,7 +723,7 @@ paths:
         - $ref: '#/components/parameters/WhatapPcodeHeader'
       responses:
         '200':
-          description: 모든 정보 조회 성공
+          description: 조회 성공
           content:
             application/json:
               schema:
