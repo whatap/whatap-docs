@@ -705,7 +705,7 @@ article div[class*='fbsharebutton'] {
   h3 {
     font-size: var(--ifm-h3-font-size);
   }
-  p code, .api-guide table code {
+  p code, .api-guide table code, li code {
     background-color: #f0f0f0 !important;
     color: #4c4c4c !important;
     padding: 0 6px !important;
