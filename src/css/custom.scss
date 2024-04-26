@@ -693,6 +693,9 @@ article div[class*='fbsharebutton'] {
       width: calc(100% - 220px) !important;
     }
   }
+  div[role*='search'] {
+
+  }
   h1 {
     font-size: var(--ifm-h1-font-size);
     span {
