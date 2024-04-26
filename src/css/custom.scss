@@ -679,6 +679,70 @@ article div[class*='fbsharebutton'] {
   display: none;
 }
 // UI
+// OpenAPI 
+.redocusaurus {
+  div.redoc-wrap {
+    .menu-content {
+      .scrollbar-container {
+        ul[role='menu'] + div {
+          display: none !important;
+        }
+      }
+    }
+    div.api-content {
+      width: calc(100% - 220px) !important;
+    }
+  }
+  h1 {
+    font-size: var(--ifm-h1-font-size);
+    span {
+      display: none;
+    }
+  }
+  h2 {
+    font-size: var(--ifm-h2-font-size);
+  }
+  h3 {
+    font-size: var(--ifm-h3-font-size);
+  }
+  p code, .api-guide table code {
+    background-color: #f0f0f0 !important;
+    color: #4c4c4c !important;
+    padding: 0 6px !important;
+  }
+  em strong {
+    color: var(--main-osd-color);
+    font-style: normal;
+    font-weight: 400;
+  }
+  .api-guide {
+    table {
+      width: 100% !important;
+      display: table !important;
+      thead {
+        background-color: var(--ifm-table-stripe-background) !important;
+        th {
+          background-color: var(--ifm-table-head-background) !important;
+          color: var(--ifm-table-head-color) !important;
+          font-weight: var(--ifm-table-head-font-weight) !important;
+        }
+      }
+      tr {
+        background-color: var(--ifm-table-background) !important;
+        border-top: var(--ifm-table-border-width) solid var(--ifm-table-border-color) !important;
+      }
+      td:nth-child(1) {
+        border-bottom: 1px solid #ddd !important;
+      }
+    }
+  }
+  table {
+    p {
+      font-size: .9rem;
+    }
+  }
+}
+
 
 // document
 main {
