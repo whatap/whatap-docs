@@ -47,8 +47,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/php/php-2_5_2"
   },
   "next": {
-    "title": "Node.js Agent v0.4.94",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_94"
+    "title": "Node.js Agent v0.4.95",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_95"
   }
 };
 const assets = {

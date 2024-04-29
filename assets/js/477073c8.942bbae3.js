@@ -107,8 +107,8 @@ const toc = [{
   "id": "오브젝트-매니페스트-저장-시간-목록",
   "level": 4
 }, {
-  "value": "쿠네티스 이벤트 연동",
-  "id": "쿠네티스-이벤트-연동",
+  "value": "쿠버네티스 이벤트 연동",
+  "id": "쿠버네티스-이벤트-연동",
   "level": 4
 }, {
   "value": "오브젝트 매니페스트 비교",
@@ -337,8 +337,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "쿠네티스-이벤트-연동",
-        children: "쿠네티스 이벤트 연동"
+        id: "쿠버네티스-이벤트-연동",
+        children: "쿠버네티스 이벤트 연동"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
