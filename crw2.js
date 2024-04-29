@@ -3,6 +3,7 @@
 // 2. 날짜 순서로 기능 상세 추가
 // 2.1. 버전 코드 태그 추가
 // 2.2. feature, new, changed
+// 3. mdx 추가 형식
 
 // 크롤링에 필요한 모듈 불러오기
 const fs = require('fs');
@@ -17,7 +18,7 @@ const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
 console.log(lastUrl);
 
-// Axios를 사용하여 웹 페이지 HTML 가져오기 20
+// 구성2
 axios.get(url)
     .then(response => {
         // Cheerio를 사용하여 HTML 파싱
@@ -64,27 +65,7 @@ axios.get(url)
                         featureInP.each((idx, code) => {
                             features.add($(code).parent().html().trim());
                         });
-
-                        // codeInUl 또는 codeInP 바로 다음에 있는 <ul> 가져오기
-                        const nextUlAfterCodeInUl = featureInUl.next('ul');
-                        const nextUlAfterCodeInP = featureInP.next('ul');
-                        // console.log(nextUlAfterCodeInP);
-                        console.log(nextUlAfterCodeInP);
-                        // nextUlAfterCodeInUl 또는 nextUlAfterCodeInP가 존재하면 <ul> 안의 내용을 features 배열에 추가
-                        if (nextUlAfterCodeInUl && nextUlAfterCodeInUl.length > 0) {
-                            nextUlAfterCodeInUl.find('li').each((index, liElement) => {
-                                features.add($(liElement).text().trim());
-                            });
-                        }
-                        if (nextUlAfterCodeInP && nextUlAfterCodeInP.length > 0) {
-                            // <ul> 안의 각 <li> 요소에 대해 처리
-                            nextUlAfterCodeInP.children('li').each((index, liElement) => {
-                                // 각 <li> 요소의 텍스트를 가져와 features에 추가
-                                features.add($(liElement).text().trim());
-                            });
-                        }
-
-                        // 출력할 필요 없는 경우는 건너뛰기
+                        // 출력할 필요 없는 경우는 건너뜁니다.
                         if (features.size === 0) return;
 
                         // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
@@ -113,23 +94,7 @@ axios.get(url)
                     featureInP.each((idx, code) => {
                         features.add($(code).parent().html().trim());
                     });
-
-                    // codeInUl 또는 codeInP 바로 다음에 있는 <ul> 가져오기
-                    const nextUlAfterCodeInUl = featureInUl.next('ul');
-                    const nextUlAfterCodeInP = featureInP.next('ul');
-                    // nextUlAfterCodeInUl 또는 nextUlAfterCodeInP가 존재하면 <ul> 안의 내용을 features 배열에 추가
-                    if (nextUlAfterCodeInUl.length > 0) {
-                        nextUlAfterCodeInUl.find('li').each((index, liElement) => {
-                            features.add($(liElement).text().trim());
-                        });
-                    }
-                    if (nextUlAfterCodeInP.length > 0) {
-                        nextUlAfterCodeInP.find('li').each((index, liElement) => {
-                            features.add($(liElement).text().trim());
-                        });
-                    }
-
-                    // 출력할 필요 없는 경우는 건너뛰기
+                    // 출력할 필요 없는 경우는 건너뜁니다.
                     if (features.size === 0) return;
 
                     // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
@@ -145,7 +110,7 @@ axios.get(url)
         });
 
         // MDX 파일로 데이터 저장
-        const fileName = `./crw-data/_import_${lastUrl}.mdx`; // 파일 경로 및 이름 설정
+        const fileName = `./crw-data/${lastUrl}.mdx`; // 파일 경로 및 이름 설정
         fs.writeFileSync(fileName, mdxContent);
         console.log(`MDX file saved: ${fileName}`);
     })
