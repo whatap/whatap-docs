@@ -26,7 +26,7 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 * \_log-exp.mdx
 
 ```
-crowdin upload
+crowdin upload -b main
 # or
 npm run crowdin upload
 ```
