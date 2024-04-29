@@ -1,8 +1,10 @@
+//dbx 배열 필요
+
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const url = 'https://docs.whatap.io/release-notes/db/dbx-1_7_0';
+const url = 'https://docs.whatap.io/release-notes/db/dbx-1_6_30';
 
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
