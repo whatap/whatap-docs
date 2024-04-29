@@ -1762,20 +1762,7 @@ const sidebars = {
             'oracle-dma/troubleshooting',
           ],
         },
-        {
-          type: 'category',
-          label: '설정하기',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-dma/agent-settings'
-          },
-          items: [
-            'oracle-dma/agent-dbx-settings',
-            'oracle-dma/agent-xos-settings',
-          ],
-        },
+        'oracle-dma/agent-settings',
         'oracle-dma/agent-manage',
         {
           type: 'category',
