@@ -54516,6 +54516,97 @@
     "zh": "- Upon completion of addition, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
     "service_id": "DSC07909"
   },
+  "DSC07910": {
+    "en": "Optimized for the Amazon Web Services (AWS) cloud, Amazon Linux features seamless integration with AWS services and provides a secure, reliable, high-performance execution environment for running applications effortlessly on Amazon EC2.",
+    "ja": "Amazon Web Services（AWS）クラウドに最適化されたAmazon Linuxは、AWSサービスとの緊密な統合を特徴としており、Amazon EC2でアプリケーションをシームレスに実行できるように安全で信頼性の高い高性能な実行環境を提供します。",
+    "ko": "아마존 웹 서비스(AWS) 클라우드에 최적화된 아마존 리눅스는 AWS 서비스와의 긴밀한 통합을 특징으로 하며, Amazon EC2에서 애플리케이션을 원활하게 실행할 수 있도록 안전하고 안정적인 고성능의 실행 환경을 제공합니다.",
+    "zh": "Optimized for the Amazon Web Services (AWS) cloud, Amazon Linux features seamless integration with AWS services and provides a secure, reliable, high-performance execution environment for running applications effortlessly on Amazon EC2.",
+    "service_id": "DSC07910"
+  },
+  "DSC07911": {
+    "en": "RHEL is Red Hat's flagship product designed for enterprise environments. It is reliable, supports a wide range of hardware and software, and is available through a paid subscription model. It offers security updates and professional support.",
+    "ja": "RHELは、企業環境向けに設計されたRed Hatの主力商品です。非常に信頼性が高く、幅広いハードウェアとソフトウェアをサポートし、有料購読モデルを通じて利用可能です。セキュリティアップデートと専門的なサポートを提供します。",
+    "ko": "RHEL은 기업 환경을 위해 설계된 Red Hat의 주력 상품입니다. 매우 안정적이며 광범위한 하드웨어와 소프트웨어를 지원하며, 유료 구독 모델을 통해 사용 가능합니다. 보안 업데이트 및 전문적인 지원을 제공합니다.",
+    "zh": "RHEL is Red Hat's flagship product designed for enterprise environments. It is reliable, supports a wide range of hardware and software, and is available through a paid subscription model. It offers security updates and professional support.",
+    "service_id": "DSC07911"
+  },
+  "DSC07912": {
+    "en": "Fedora is a Red Hat sponsored community project and experimental distribution that incorporates the latest Linux technologies. It is the foundation for the next version of RHEL and is the first to support the latest hardware and software.",
+    "ja": "Fedoraは、Red Hatが後援するコミュニティプロジェクトに最新のLinuxテクノロジを統合する実験的なディストリビューションです。次のバージョンはRHELの基盤となり、最新のハードウェアとソフトウェア技術を最初にサポートします。",
+    "ko": "Fedora는 Red Hat이 후원하는 커뮤니티 프로젝트로 최신 리눅스 기술을 통합하는 실험적인 배포판입니다. 다음 버전 RHEL의 기반이 되며, 최신 하드웨어와 소프트웨어 기술을 가장 먼저 지원합니다.",
+    "zh": "Fedora is a Red Hat sponsored community project and experimental distribution that incorporates the latest Linux technologies. It is the foundation for the next version of RHEL and is the first to support the latest hardware and software.",
+    "service_id": "DSC07912"
+  },
+  "DSC07913": {
+    "en": "Oracle Linux is a distribution version based on RHEL, added with Oracle's specific needs and optimizations. Oracle uses this distribution to provide an optimized environment for its databases and applications.",
+    "ja": "Oracle Linuxは、RHELに基づいてOracleの特定のニーズと最適化が追加されたディストリビューションです。 Oracleは、このディストリビューションを通じて、独自のデータベースとアプリケーションに最適化された環境を提供します。",
+    "ko": "Oracle Linux는 RHEL을 기반으로 Oracle의 특정 요구와 최적화가 추가된 배포판입니다. Oracle은 이 배포판을 통해 자체 데이터베이스와 애플리케이션에 최적화된 환경을 제공합니다.",
+    "zh": "Oracle Linux is a distribution version based on RHEL, added with Oracle's specific needs and optimizations. Oracle uses this distribution to provide an optimized environment for its databases and applications.",
+    "service_id": "DSC07913"
+  },
+  "DSC07914": {
+    "en": "CentOS is based on RHEL and uses the same software packages as RHEL, but is a free version that excludes Red Hat's trademarks and logos. It recently transitioned to CentOS Stream, which serves as the parent project for RHEL development.",
+    "ja": "CentOSはRHELに基づいてRHELと同じソフトウェアパッケージを使用しますが、Red Hatの商標とロゴを除く無料版です。最近CentOS Streamに移行し、RHEL開発の上位プロジェクトとして機能するようになりました。",
+    "ko": "CentOS는 RHEL을 기반으로 RHEL과 동일한 소프트웨어 패키지를 사용하지만, Red Hat의 상표와 로고를 제외한 무료 버전입니다. 최근 CentOS Stream으로 전환되며 RHEL 개발의 상위 프로젝트 역할을 하게 되었습니다.",
+    "zh": "CentOS is based on RHEL and uses the same software packages as RHEL, but is a free version that excludes Red Hat's trademarks and logos. It recently transitioned to CentOS Stream, which serves as the parent project for RHEL development.",
+    "service_id": "DSC07914"
+  },
+  "DSC07915": {
+    "en": "Rocky Linux is a distribution version created as a result of a change in the development direction of CentOS. It is community driven with the goal of maintaining compatibility with RHEL.",
+    "ja": "Rocky Linuxは、CentOSの開発方向の変更によって作成されたディストリビューションです。 RHELとの互換性を維持することを目的として、コミュニティによって主導されています。",
+    "ko": "Rocky Linux는 CentOS의 개발 방향 변경으로 생성된 배포판입니다. RHEL과의 호환성 유지에 목적을 두고 커뮤니티에 의해 주도되고 있습니다.",
+    "zh": "Rocky Linux is a distribution version created as a result of a change in the development direction of CentOS. It is community driven with the goal of maintaining compatibility with RHEL.",
+    "service_id": "DSC07915"
+  },
+  "DSC07916": {
+    "en": "Debian is widely used for servers, desktops, and embedded systems. It is stable, and has a large software repository. It is the foundation of many Linux distribution versions, including Ubuntu.",
+    "ja": "Debian は、サーバー、デスクトップ、組み込みシステムに広く使用されており、信頼性が高く、膨大なソフトウェアリポジトリを持っています。 Ubuntuを含む多くのLinuxディストリビューションの基盤となります。",
+    "ko": "데비안은 서버, 데스크탑, 임베디드 시스템에 널리 사용되며, 안정성이 뛰어나고 방대한 소프트웨어 저장소를 가지고 있습니다. 우분투를 비롯한 여러 리눅스 배포판의 기반이 됩니다.",
+    "zh": "Debian is widely used for servers, desktops, and embedded systems. It is stable, and has a large software repository. It is the foundation of many Linux distribution versions, including Ubuntu.",
+    "service_id": "DSC07916"
+  },
+  "DSC07917": {
+    "en": "Ubuntu, based on Debian, has become very popular on desktops and servers, and more recently in container and cloud environments. It's user-friendly, offers regular releases and long-term support (LTS) versions, and supports a wide range of hardware.",
+    "ja": "Debian をベースにした Ubuntu は、デスクトップやサーバー、最近はコンテナやクラウド環境でも多くの人気を得ています。ユーザーフレンドリーで定期的なリリースと長期サポート（LTS）バージョンを提供し、さまざまなハードウェアをサポートします。",
+    "ko": "데비안을 기반으로 한 우분투는 데스크탑과 서버, 최근에는 컨테이너 및 클라우드 환경에서도 많은 인기를 얻고 있습니다. 사용자 친화적이며 정기적인 릴리스와 장기 지원(LTS) 버전을 제공하고 다양한 하드웨어를 지원합니다.",
+    "zh": "Ubuntu, based on Debian, has become very popular on desktops and servers, and more recently in container and cloud environments. It's user-friendly, offers regular releases and long-term support (LTS) versions, and supports a wide range of hardware.",
+    "service_id": "DSC07917"
+  },
+  "DSC07918": {
+    "en": "FREEBSD is a Unix-like operating system used for servers, desktops, and embedded systems. It is known for its robustness, BSD license, and direct descent from Unix through the Berkeley software distribution version.",
+    "ja": "FREEBSDは、サーバー、デスクトップ、組み込みシステムで使用されるUNIX系オペレーティングシステムです。堅牢性とBSDライセンス、バークレーのソフトウェアディストリビューションを介してUnixの直接の子孫として知られています。",
+    "ko": "FREEBSD는 서버, 데스크탑, 임베디드 시스템에 사용되는 유닉스 계열 운영 체제입니다. 견고함과 BSD 라이선스, 버클리 소프트웨어 배포판을 통한 유닉스의 직접적인 후손으로 알려져 있습니다.",
+    "zh": "FREEBSD is a Unix-like operating system used for servers, desktops, and embedded systems. It is known for its robustness, BSD license, and direct descent from Unix through the Berkeley software distribution version.",
+    "service_id": "DSC07918"
+  },
+  "DSC07919": {
+    "en": "Developed by IBM, AIX is commonly used on enterprise servers. It is specifically designed for scalability, compatibility, and robustness in enterprise environments, and runs on IBM Power systems.",
+    "ja": "IBM が開発した AIX は、エンタープライズ・サーバーで主に使用されます。スケーラビリティ、互換性、およびエンタープライズ環境での堅牢性のために特別に設計されており、IBMパワーシステムで実行されています。",
+    "ko": "IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계되었으며, IBM 파워 시스템에서 실행됩니다.",
+    "zh": "Developed by IBM, AIX is commonly used on enterprise servers. It is specifically designed for scalability, compatibility, and robustness in enterprise environments, and runs on IBM Power systems.",
+    "service_id": "DSC07919"
+  },
+  "DSC07920": {
+    "en": "Developed by Microsoft, Windows Server is designed to meet a variety of server needs in corporate environments. The operating system is particularly suited for network management, database management, web service hosting, user management, and application hosting.",
+    "ja": "マイクロソフトが開発したWindowsサーバーは、企業環境のさまざまなサーバーニーズを満たすように設計されています。このオペレーティングシステムは、特にネットワーク管理、データベース管理、Webサービスホスティング、ユーザー管理、アプリケーションホスティングに適しています。",
+    "ko": "마이크로소프트에서 개발한 윈도우 서버는 기업 환경의 다양한 서버 요구를 충족시키기 위해 설계되었습니다. 이 운영 체제는 특히 네트워크 관리, 데이터베이스 관리, 웹 서비스 호스팅, 사용자 관리 및 애플리케이션 호스팅에 적합합니다.",
+    "zh": "Developed by Microsoft, Windows Server is designed to meet a variety of server needs in corporate environments. The operating system is particularly suited for network management, database management, web service hosting, user management, and application hosting.",
+    "service_id": "DSC07920"
+  },
+  "DSC07921": {
+    "en": "Solaris is a Unix operating system originally developed by Sun Microsystems and later acquired by Oracle. It is known for its scalability on SPARC systems, features such as ZFS and DTrace.",
+    "ja": "SolarisはもともとSun Microsystemsによって開発され、後にOracleによって買収されたUnixオペレーティングシステムです。このオペレーティングシステムは、SPARCシステムにおけるスケーラビリティ、ZFS、DTraceなどの機能として知られています。",
+    "ko": "솔라리스는 원래 선 마이크로시스템즈에 의해 개발되었고, 후에 오라클에 의해 인수된 유닉스 운영 체제입니다. 이 운영 체제는 SPARC 시스템에서의 확장성, ZFS, DTrace와 같은 기능으로 알려져 있습니다.",
+    "zh": "Solaris is a Unix operating system originally developed by Sun Microsystems and later acquired by Oracle. It is known for its scalability on SPARC systems, features such as ZFS and DTrace.",
+    "service_id": "DSC07921"
+  },
+  "DSC07922": {
+    "en": "It is used in enterprise server environments where it has strong corporate fandom, especially in Europe. It is known as the YaST configuration tool and comes with a community edition, openSUSE, and an enterprise edition of Linux.",
+    "ja": "水勢は、特にヨーロッパで強力な企業サポートを受けているエンタープライズサーバー環境で使用されます。 YaST設定ツールとして知られており、コミュニティエディションであるopenSUSEとLinuxエンタープライズバージョンを同梱しています。",
+    "ko": "수세는 특히 유럽에서 강력한 기업 지원을 받고 있는 엔터프라이즈 서버 환경에서 사용됩니다. YaST 구성 도구로 알려져 있으며, 커뮤니티 에디션인 openSUSE와 리눅스 엔터프라이즈 버전을 함께 제공합니다.",
+    "zh": "It is used in enterprise server environments where it has strong corporate fandom, especially in Europe. It is known as the YaST configuration tool and comes with a community edition, openSUSE, and an enterprise edition of Linux.",
+    "service_id": "DSC07922"
+  },
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
