@@ -285,6 +285,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'oracle-dma/monitoring-intro',
+                label: 'Oracle DMA',
+              },
+              {
+                type: 'doc',
                 docId: 'mysql/monitoring-intro',
                 label: 'MySQL',
               },

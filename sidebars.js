@@ -1735,6 +1735,144 @@ const sidebars = {
       ],
     }
   ],
+  dboracledmaSidebar: [
+    {
+      type: 'category',
+      label: 'Oracle DMA 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'oracle-dma/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'oracle-dma/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-dma/install-agent',
+            'oracle-dma/after-install-agent',
+            'oracle-dma/troubleshooting',
+          ],
+        },
+        'oracle-dma/agent-settings',
+        'oracle-dma/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-dma/dashboard-intro'
+              },
+              items: [
+                'oracle-dma/instance-list',
+                'oracle-dma/instance-monitoring',
+                'oracle-dma/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-dma/flex-board',
+              },
+              items: [
+                'oracle-dma/flexboard-template',
+                'oracle-dma/flexboard-create',
+                'oracle-dma/flexboard-manage',
+                'oracle-dma/flexboard-metric-widget',
+                'oracle-dma/flexboard-widget-manage',
+                'oracle-dma/flexboard-mode',
+                'oracle-dma/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle-dma/analysis-count-trend',
+                'oracle-dma/analysis-lock-and-deadlock',
+                'oracle-dma/analysis-session-history',
+                'oracle-dma/analysis-pq-tree',
+                'oracle-dma/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-dma/metrics-intro'
+              },
+              items: [
+                'oracle-dma/metrics-data-list',
+                'oracle-dma/metrics-chart',
+                'oracle-dma/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle-dma/stat',
+                'oracle-dma/table-space-size',
+                'oracle-dma/sga-size',
+                'oracle-dma/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-dma/set-notice',
+              },
+              items: [
+                'oracle-dma/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'oracle-dma/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'oracle-dma/metric-warning-notice',
+                'oracle-dma/set-notification-message',
+                'oracle-dma/set-event-detect-anomal',
+                'oracle-dma/set-receive-event',
+                'oracle-dma/set-event-history',
+                'oracle-dma/set-event-format',
+              ],
+            },
+          ]
+        }
+      ],
+    }
+  ],
   mysqlSidebar: [
     {
       type: 'category',
@@ -3619,6 +3757,11 @@ const sidebars = {
           type: 'link',
           label: 'Oracle',
           href: 'oracle/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Oracle',
+          href: 'oracle-dma/monitoring-intro',
         },
         {
           type: 'link',

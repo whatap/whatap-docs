@@ -40,6 +40,8 @@ export default function CheckProduct() {
         product = '-postgresql';
     } else if (cProdt === 'oracle-cloud') {
         product = '-oci';
+    } else if (cProdt === 'oracle-dma') {
+        product = '-oracle-dma';
     } else if (cProdt === 'oracle') {
         product = '-oracle';
     } else if (cProdt === 'mysql-rds') {
