@@ -11,12 +11,13 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // 크롤링할 웹 페이지 URL
-const url = 'https://docs.whatap.io/release-notes/service/service-2_4_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 
 // URL을 '/'로 분할하여 배열로 만든 후 배열의 마지막 요소 가져오기
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
-console.log(lastUrl);
+const seg2 = lastUrl.split('-');
+const lastUrl2 = seg2[0];
 
 // 구성2
 axios.get(url)
@@ -55,8 +56,8 @@ axios.get(url)
                         const nextUl = $(h4Element).next('ul').first();
                         const nextP = $(h4Element).next('p').first();
                         // <ul> 또는 <p> 안에 있는 <code class="Feature"> 가져오기
-                        const featureInUl = nextUl.find('code.Feature, code.New');
-                        const featureInP = nextP.find('code.Feature, code.New');
+                        const featureInUl = nextUl.find('code.Feature, code.New, code.Changed');
+                        const featureInP = nextP.find('code.Feature, code.New, code.Changed');
                         // 중복 제거한 기능 상세 가져오기
                         const features = new Set();
                         featureInUl.each((idx, code) => {
@@ -69,14 +70,25 @@ axios.get(url)
                         if (features.size === 0) return;
 
                         // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                        const content = `## ${version} - ${date} - ${productName}`;
-                        if (!contentSet.has(content)) {
-                            mdxContent += content + '\n\n';
-                            contentSet.add(content);
+                        // const content = `## ${version} - ${date} - ${productName}`;
+                        // if (!contentSet.has(content)) {
+                        //     mdxContent += content + '\n\n';
+                        //     contentSet.add(content);
+                        // }
+                        // mdxContent += `### ${featureName}\n\n` +
+                        //     [...features].map(feature => `- ${feature}`).join('\n\n') +
+                        //     '\n\n';
+                        
+                        // 구성2 요건
+                        const content2 = `### ${version} - ${date} - ${productName}` + `\n`; 
+                        if (!contentSet.has(content2)){
+                          mdxContent += content2 + '\n';
+                          contentSet.add(content2);
                         }
-                        mdxContent += `### ${featureName}\n\n` +
-                            [...features].map(feature => `- ${feature}`).join('\n\n') +
+                        mdxContent += `#### ${featureName}\n\n` +
+                            [...features].map(feature => `- ${feature} <code class='changelog-service'>${version}</code>`).join('\n\n') +
                             '\n\n';
+
                     });
                 } else {
                     // <h4>가 없는 경우
@@ -84,8 +96,8 @@ axios.get(url)
                     const nextUl = $(h3Element).next('ul').first();
                     const nextP = $(h3Element).next('p').first();
                     // <ul> 또는 <p> 안에 있는 <code class="Feature"> 가져오기
-                    const featureInUl = nextUl.find('code.Feature, code.New');
-                    const featureInP = nextP.find('code.Feature, code.New');
+                    const featureInUl = nextUl.find('code.Feature, code.New, code.Changed');
+                    const featureInP = nextP.find('code.Feature, code.New, code.Changed');
                     // 중복 제거한 기능 상세 가져오기
                     const features = new Set();
                     featureInUl.each((idx, code) => {
@@ -98,21 +110,42 @@ axios.get(url)
                     if (features.size === 0) return;
 
                     // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                    const content = `## ${version} - ${date} - ${productName}`;
-                    if (!contentSet.has(content)) {
-                        mdxContent += content + '\n\n';
-                        contentSet.add(content);
+                    // const content = `## ${version} - ${date} - ${productName}`;
+                    // if (!contentSet.has(content)) {
+                    //     mdxContent += content + '\n\n';
+                    //     contentSet.add(content);
+                    // }
+                    // mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n') +
+                    //     '\n\n';
+
+                    // 구성2 요건
+                    const content2 = `### ${version} - ${date} - ${productName}` + `\n`; 
+                    if (!contentSet.has(content2)){
+                      mdxContent += content2 + '\n';
+                      contentSet.add(content2);
                     }
-                    mdxContent += [...features].map(feature => `- ${feature}`).join('\n\n') +
+                    mdxContent += [...features].map(feature => `- ${feature} <code class='changelog-service'>${version}</code>`).join('\n\n')+
                         '\n\n';
+
                 }
             });
         });
 
         // MDX 파일로 데이터 저장
-        const fileName = `./crw-data/${lastUrl}.mdx`; // 파일 경로 및 이름 설정
-        fs.writeFileSync(fileName, mdxContent);
-        console.log(`MDX file saved: ${fileName}`);
+        // const fileName = `./crw-data/_import_test_${lastUrl}.mdx`; 
+        // fs.writeFileSync(fileName, mdxContent);
+        // console.log(`MDX file saved: ${fileName}`);
+
+        const fileName = `./crw-data/_import-test-${lastUrl2}.mdx`;
+        let existingContent = '';
+        if (fs.existsSync(fileName)) {
+            existingContent = fs.readFileSync(fileName, 'utf-8');
+        }
+
+        const updatedContent = mdxContent + existingContent;
+
+        fs.writeFileSync(fileName, updatedContent);
+        console.log(`MDX file updated: ${fileName}`);
     })
     .catch(error => {
         console.error('Error fetching web page:', error);
