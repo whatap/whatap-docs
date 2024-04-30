@@ -1037,14 +1037,14 @@
   },
   "sms_alert_server_noti": {
     "en": "If the selected server <strong>is following a different notification policy</strong>, the notification policy will be changed to the current setting.",
-    "ja": "選択されたサーバーに<strong>他のアラートが設定された場合、</ strong>現在のアラート設定に変更されます。",
+    "ja": "選択されたサーバーに<strong>他のアラートが設定された場合、</strong>現在のアラート設定に変更されます。",
     "ko": "선택한 서버가 <strong>다른 알림 정책을 따르고 있는 경우</strong>, 현재 설정으로 알림 정책이 변경됩니다.",
     "zh": "选择的服务器<strong>跟随其他通知的当前设置</strong>， 以通知政策变动当前的配置。",
     "service_id": "_00164"
   },
   "sms_alert_process_noti": {
     "en": "If the selected process is <strong>following a different notification policy</strong>, the notification policy will be changed to the current setting.",
-    "ja": "選択されたプロセスに<strong>他のアラートが設定された場合、</ strong>現在のアラート設定に変更されます。",
+    "ja": "選択されたプロセスに<strong>他のアラートが設定された場合、</strong>現在のアラート設定に変更されます。",
     "ko": "선택한 프로세스가 <strong>다른 알림 정책을 따르고 있는 경우</strong>, 현재 설정으로 알림 정책이 변경됩니다.",
     "zh": "选择的进程<strong>跟随不同的通知政策时</strong>， 以通知政策变动当前的配置。",
     "service_id": "_00165"
@@ -1128,7 +1128,7 @@
   },
   "sms_register_windows_step_one_desc": {
     "en": "By clicking the link below, you can download the WhaTap installer file (whatap.exe / whatap.zip) for windows servers.",
-    "ja": "リンクをクリックすると、Windowsサーバー向けのインストールファイルwhatap.exe/ whatap.zip）をダウンロードします。",
+    "ja": "リンクをクリックすると、Windowsサーバー向けのインストールファイル(whatap.exe、whatap.zip)をダウンロードします。",
     "ko": "링크를 클릭하시면 윈도우 서버 운영체제용 설치 파일 (whatap.exe / whatap.zip) 가 다운로드 됩니다.",
     "zh": "点击链接后即开始下载Windows Sever操作系统用安装文件 (whatap.exe / whatap.zip)。",
     "service_id": "_00177"
@@ -1149,7 +1149,7 @@
   },
   "sms_register_windows_step_two_desc": {
     "en": "Double click the installer file and follow the prompts to start the installation. <br />Enter your WhaTap access key when prompted.",
-    "ja": "ダウンロードしたインストールファイルをダブルクリックして、インストールを開始します。 <br/>WhaTapアクセスキーを入力するためのプロンプト画面を表示します。 ",
+    "ja": "ダウンロードしたインストールファイルをダブルクリックして、インストールを開始します。 <br />WhaTapアクセスキーを入力するためのプロンプト画面を表示します。 ",
     "ko": "설치 파일을 더블클릭 하고 화면의 안내를 따르면 설치가 시작됩니다. <br />와탭 액세스 키를 입력하는 프롬프트가 나오면 제공된 액세스 키를 입력합니다.",
     "zh": "Double click the installer file and follow the prompts to start the installation. <br />Enter your WhaTap \baccess key when prompted.",
     "service_id": "_00180"
@@ -1464,7 +1464,7 @@
   },
   "sms_limited_register_msg": {
     "en": "Trial & Free users are limited to create up to [COUNT] servers per project.<br /><br />You can register unlimited number of servers after changing to a paid plan.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "": "Trial & Free users are limited to create up to [COUNT] servers per project.<br /><br />You can register unlimited number of servers after changing to a paid plan.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "トライアルおよび無料でサーバーモニタリングを利用する場合、1つのプロジェクトに追加可能なサーバーの数は[COUNT]件までに制限されます。<br /><br />プロジェクトを有料に切り替えると直ちに追加可能なサーバーの数が無制限になります。<br /><br />お問い合わせはカスタマーサポートの窓口まで問い合わせください。<br /><br />Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "Trial 및 무료로 서버 모니터링 서비스를 이용하시는 동안, 한 프로젝트에 추가할 수 있는 서버의 수는 [COUNT]대까지로 제한됩니다. <br /><br />프로젝트를 유료로 전환하시면, 즉시 추가할 수 있는 서버의 수가 무제한으로 확장됩니다. <br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "试用和免费用户仅限于每个项目创建多达[COUNT]台服务器。<br /><br />更改为付费项目后，您可以增加无限数量的服务器。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00225"
@@ -1478,7 +1478,7 @@
   },
   "sms_limited_server_count_msg": {
     "en": "This server was registered during our Open Beta, POC, Special Event, or under paid plan. During Trial or Free period, you can only register up to [COUNT] servers.<br />You can resume monitoring after you have changed to a paid plan.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "本サーバーはオープンベタ及びPoC期間等のイベント、または無償で利用したサーバーです。<br/>ライセンスポリシー上、トライアル、または無償でサーバーモニダリングサービスを利用する際にはプロゼクトに追加できるサーバーの数が[数]件までに限られます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"",
+    "ja": "本サーバーはオープンベタ及びPoC期間等のイベント、または無償で利用したサーバーです。<br/>ライセンスポリシー上、トライアル、または無償でサーバーモニダリングサービスを利用する際にはプロゼクトに追加できるサーバーの数が[数]件までに限られます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "본 서버는 오픈베타 및 POC 기간 등 특정 이벤트나, 유료로 제품을 이용하시는 동안 모니터링하셨던 서버입니다. <br />정책상, Trial 및 무료로 서버 모니터링 서비스를 이용하시는 동안, 한 프로젝트에 추가할 수 있는 서버의 수는 [COUNT]대까지로 제한됩니다. <br /><br />프로젝트를 유료로 전환하시면, 다시 모니터링하실 수 있습니다.<br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "此服务器已在我们的开放测试版，POC，特殊活动或付费计划中注册。 在试用期或免费期间，您最多只能增加[COUNT]台服务器。<br />您可以在更改为付费项目后恢复监控。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00227"
@@ -1492,7 +1492,7 @@
   },
   "sms_limited_down_check_msg": {
     "en": "Down checker enables advanced monitoring on servers & network status. The feature is provided to paid users of infrastructure monitoring only.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "ダウンチェックはサーバー及びネットワークをより詳しくモニタリングできる機能で、サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "ダウンチェックはサーバー及びネットワークをより詳しくモニタリングできる機能で、サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "Down Check는 서버 및 네트워크 상태를 보다 심화적으로 모니터링해주는 기능으로, 서버 모니터링 서비스를 유료로 사용하시는 고객에 한해 활성화되는 기능입니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "Down Check是更详细地监控服务器和网络状态的功能，该功能仅提供给基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00229"
@@ -1506,7 +1506,7 @@
   },
   "sms_limited_compound_eye_msg": {
     "en": "Compound eye offers an intuitive view on monitoring multiple servers. The feature is provided to paid users of infrastructure monitoring only.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "Compound Eyeはより多くのサーバーを一目でモニタリングできるよう視覚化したビューを提供する機能です。サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "Compound Eyeはより多くのサーバーを一目でモニタリングできるよう視覚化したビューを提供する機能です。サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "Compound Eye는 보다 많은 서버를 한 번에 모니터리 할 수 있도록  직관적인 뷰를 제공하는 기능으로, 서버 모니터링 서비스를 유료로 사용하시는 고객에 한해 활성화되는 기능입니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "Compound Eye可以监控多台服务器的直观视图, 该功能仅提供给基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00231"
@@ -1520,7 +1520,7 @@
   },
   "sms_limited_time_availability_msg": {
     "en": "Availability dashboard provides the status history of monitored servers & networks. The feature is provided to paid users of infrastructure monitoring only.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "可用性ダッシュボードはモニタリングするサーバーとネットワーク状態履歴を一目で把握できる機能です。サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "可用性ダッシュボードはモニタリングするサーバーとネットワーク状態履歴を一目で把握できる機能です。サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "가용성 대시보드는 모니터링하는 서버 및 네트워크 상태 history를 한 눈에 파악할 수 있는 기능으로, 서버 모니터링 서비스를 유료로 사용하시는 고객에 한해 활성화되는 기능입니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "可用性仪表板一目了然地可以了解监控的服务器和网络的状态历史记录。该功能仅提供给基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00233"
@@ -1534,7 +1534,7 @@
   },
   "sms_limited_detailed_info_msg": {
     "en": "To see detailed information about specific index or process, you must be a paid user of infrastructure monitoring.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "指標、またはプロセスの詳細情報を確認するためにはサーバーモニタリングを有料で利用する必要があります。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "指標、またはプロセスの詳細情報を確認するためにはサーバーモニタリングを有料で利用する必要があります。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "지표(카운트)나 프로세스의 상세 정보를 확인하기 위해서는 서버 모니터링 서비스를 유료로 사용하셔야 합니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "要查看有关特定索引或进程的详细信息，您必须是基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00235"
@@ -1548,7 +1548,7 @@
   },
   "sms_limited_export_chart_msg": {
     "en": "Please use the daily report menu or change to a paid plan to export details.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "詳細情報を抽出するためには日次レポートメニューを利用するか、有料版に転換してください。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "詳細情報を抽出するためには日次レポートメニューを利用するか、有料版に転換してください。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "지표(카운트)의 상세 정보를 내보내기 위해서는  일일 보고서 메뉴를 이용하시거나 서버 모니터링 서비스를 유료로 사용하셔야 합니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일:<a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "请使用每日报表或更改为付费以导出详细信息。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00237"
@@ -1954,7 +1954,7 @@
   },
   "active_transaction_bar": {
     "en": "Active transaction (Equalizer)",
-    "ja": "アクティブTX (Equalizer)",
+    "ja": "アクティブTX(Equalizer)",
     "ko": "액티브 트랜잭션 (이퀄라이저)",
     "zh": "活動交易 (Equalizer)",
     "service_id": "_00296"
@@ -2367,7 +2367,7 @@
   },
   "active_inactive": {
     "en": "Active / Inactive",
-    "ja": "活性 / 非活性",
+    "ja": "活性/非活性",
     "ko": "활성 / 비활성",
     "zh": "活动 / 不活动",
     "service_id": "_00359"
@@ -2759,7 +2759,7 @@
   },
   "bn(brunei_darussalam)": {
     "en": "BN(BRUNEI DARUSSALAM)",
-    "ja": "BN(ブルナイ ダラスサラム)",
+    "ja": "BN(ブルネイ)",
     "ko": "BN(브루나이)",
     "zh": "BN（文莱）",
     "service_id": "_00417"
@@ -3277,7 +3277,7 @@
   },
   "daily_report_app_detail": {
     "en": "Daily report (application detail)",
-    "ja": "日次レポート(アプリケーション 詳細)",
+    "ja": "日次レポート(アプリケーション詳細)",
     "ko": "일일 보고서 (애플리케이션 상세)",
     "zh": "每日报告 (应用程序 详细)",
     "service_id": "_00491"
@@ -4971,14 +4971,14 @@
   },
   "no_data_in_table_urllist": {
     "en": "No registered URL. Please register the URL first by clicking on the 'Add URL' button.",
-    "ja": "登録されたURLがありません。「URL 追加」 ボタンを押して、まず、URLを登録してください。",
+    "ja": "登録されたURLがありません。「URL追加」ボタンを押して、まず、URLを登録してください。",
     "ko": "\"URL 추가하기\" 버튼을 클릭해서 URL을 등록해주세요.",
     "zh": "No registered URL. Please register the URL first by clicking on the 'Add URL' button.",
     "service_id": "_00736"
   },
   "no_data_in_table_urllist_html": {
     "en": "Please register the URL by clicking on the <b style='padding: 0px 4px;'>'Add URL'</b> button.<br>When adding a URL, it takes 1 minute to verify the data.",
-    "ja": "<b style='padding: 0px 4px;'>「URL 追加」</b> ボタンを押してURLを登録してください。<br>URLを追加すると、データ確認までに1分程の時間がかかります。\n",
+    "ja": "<b style='padding: 0px 4px;'>「URL追加」</b> ボタンを押してURLを登録してください。<br>URLを追加すると、データ確認までに1分程の時間がかかります。\n",
     "ko": "<b style='padding: 0px 4px;'>\"URL 추가하기\"</b> 버튼을 클릭해서 URL을 등록해주세요.<br>최초 URL 등록 시 데이터 확인까지 약 1분의 시간이 소요됩니다.",
     "zh": "Please register the URL by clicking on the <b style='padding: 0px 4px;'>'Add URL'</b> button.<br>When adding a URL, it takes 1 minute to verify the data.\n",
     "service_id": "NTC00737"
@@ -6994,7 +6994,7 @@
   },
   "login_desc1": {
     "en": "Check out the <b>Monitoring tool</b>that fits your need, and <br><b>Start Today!</b>",
-    "ja": "<b>必要とされるモニタリングツール</ b>を確認し、<br>今すぐ<b>お試し</ b>ください！",
+    "ja": "<b>必要とされるモニタリングツール</b>を確認し、<br>今すぐ<b>お試し</b>ください！",
     "ko": "<b>나에게 맞는 모니터링 툴</b>을 확인하고,<br> 바로 지금 <b>시작</b>해보세요!",
     "zh": "<b>查看我需要的监控工具</ b>，<br> <b>今天马上开始！</ b>",
     "service_id": "_01041"
@@ -7022,7 +7022,7 @@
   },
   "login_desc5": {
     "en": "1. If its a Java or Node.js application",
-    "ja": "1. Java、Node.jsで組まれたアプリケーションであれば",
+    "ja": "1.Java、Node.jsで組まれたアプリケーションであれば",
     "ko": "1. Java, Node.js로 만들어진 애플리케이션이라면",
     "zh": "1.如果它是Java或Node.js应用程序",
     "service_id": "_01045"
@@ -7148,7 +7148,7 @@
   },
   "no_active_stack": {
     "en": "There is no Active Stack in action at the time of lookup. Transaction is complete.",
-    "ja": "照会時点に該当する活性中のアクティブスタックが存在しません。 トランザクションが終了しました。",
+    "ja": "照会時点に該当する活性中のアクティブスタックが存在しません。トランザクションが終了しました。",
     "ko": "조회 시간에 해당하는 활성중인 상태의 액티브 스택이 없습니다. 트랜잭션이 종료되었습니다.",
     "zh": "There is no ActiveStack with transactions in progress corresponding to the lookup time. Transaction is complete.",
     "service_id": "_01064"
@@ -14954,7 +14954,7 @@
   },
   "please_select_projects": {
     "en": "Please select a project to configure the topology. (Project name, PCODE)",
-    "ja": "トポロジーを構成するプロジェクトを選択してください。 (プロジェクト名、PCODE)",
+    "ja": "トポロジーを構成するプロジェクトを選択してください。(プロジェクト名、PCODE)",
     "ko": "토폴로지를 구성할 프로젝트를 선택해주세요. (프로젝트 명, PCODE)",
     "zh": "请选择一个组成拓扑的项目。 (项目名称,PCODE)",
     "service_id": "_02204"
@@ -17278,7 +17278,7 @@
   },
   "listen_ip_port": {
     "en": "Listen (IP:Port)",
-    "ja": "リスニング (IP:Port)",
+    "ja": "リスニング(IP:Port)",
     "ko": "리스닝 (IP:Port)",
     "zh": "Listen (IP:Port)",
     "service_id": "_02538"
@@ -17894,7 +17894,7 @@
   },
   "service_error_sum": {
     "en": "Service error (sum)",
-    "ja": "TXエラー (合計)",
+    "ja": "TXエラー(合計)",
     "ko": "TX 에러 건수",
     "zh": "Service Error (合计)",
     "service_id": "_02626"
@@ -18027,7 +18027,7 @@
   },
   "please_check_event_settings_menu": {
     "en": "You can change the alert settings from the Alert - Alert Settings menu.",
-    "ja": "アラート設定の変更は「アラート通知 〉アラート設定」メニューから可能です。",
+    "ja": "アラート設定の変更は「アラート通知 > アラート設定」メニューから可能です。",
     "ko": "알림 설정 변경은 [경고 알림 - 알림 설정] 메뉴에서 가능합니다.",
     "zh": "You can change the alert settings from the Alert - Alert Settings menu.",
     "service_id": "_02645"
@@ -18216,7 +18216,7 @@
   },
   "kube_cpu_total": {
     "en": "Container CPU usage by node (%)",
-    "ja": "Container CPU Usage by Node (%)",
+    "ja": "Container CPU Usage by Node(%)",
     "ko": "Container CPU Usage by Node (%)",
     "zh": "Container CPU Usage by Node (%)",
     "service_id": "_02673"
@@ -18230,14 +18230,14 @@
   },
   "kube_cpu_user": {
     "en": "Container CPU user usage by node (%)",
-    "ja": "Container CPU User Usage by Node (%)",
+    "ja": "Container CPU User Usage by Node(%)",
     "ko": "Container CPU User Usage by Node (%)",
     "zh": "Container CPU User Usage by Node (%)",
     "service_id": "_02675"
   },
   "kube_cpu_sys": {
     "en": "Container CPU Sys usage by node (%)",
-    "ja": "Container CPU Sys Usage By Node (%)",
+    "ja": "Container CPU Sys Usage By Node(%)",
     "ko": "Container CPU Sys Usage By Node (%)",
     "zh": "Container CPU Sys Usage By Node (%)",
     "service_id": "_02676"
@@ -18258,14 +18258,14 @@
   },
   "kube_cpu_quota": {
     "en": "Container CPU limit (core)",
-    "ja": "Container CPU Limit (core)",
+    "ja": "Container CPU Limit(core)",
     "ko": "Container CPU Limit (core)",
     "zh": "Container CPU Limit (core)",
     "service_id": "_02679"
   },
   "kube_cpu_per_quota": {
     "en": "Container CPU usage by limit (%)",
-    "ja": "Container CPU Usage By Limit (%)",
+    "ja": "Container CPU Usage By Limit(%)",
     "ko": "Container CPU Usage By Limit (%)",
     "zh": "Container CPU Usage By Limit (%)",
     "service_id": "_02680"
@@ -18279,14 +18279,14 @@
   },
   "kube_mem_limit": {
     "en": "Container memory limit (byte)",
-    "ja": "Container Memory Limit (byte)",
+    "ja": "Container Memory Limit(byte)",
     "ko": "Container Memory Limit (byte)",
     "zh": "Container Memory Limit (byte)",
     "service_id": "_02682"
   },
   "kube_mem_maxusage": {
     "en": "Container memory max usage (byte)",
-    "ja": "Container Memory Max Usage (byte)",
+    "ja": "Container Memory Max Usage(byte)",
     "ko": "Container Memory Max Usage (byte)",
     "zh": "Container Memory Max Usage (byte)",
     "service_id": "_02683"
@@ -18300,7 +18300,7 @@
   },
   "mem_totalrss_percent": {
     "en": "Container memory total RSS by limit (%)",
-    "ja": "Container Memory Total RSS By Limit (%)",
+    "ja": "Container Memory Total RSS By Limit(%)",
     "ko": "Container Memory Total RSS By Limit (%)",
     "zh": "Container Memory Total RSS By Limit (%)",
     "service_id": "_02685"
@@ -20211,7 +20211,7 @@
   },
   "remote_file_viewer_help": {
     "en": "<div>\n  <div>\n  <div>You can add options to the WhaTap agent config file (/usr/whatap/infra/conf/<span style='text-decoration:underline;'>whatap.conf</span>)</div> \n  <div>to specify a file that can be viewed as shown below.</div>\n  </div>\n  <div>\n  <div style='font-weight:bold; margin:5px 0px; padding: 5px 8px; background-color: #eee; color: #222'>webview.allow.xxx=File</div>\n  <div style='font-size: 11px'>\n  <div>Example</div>\n  <div>webview.allow.1=/data/whatap/logs/front.log</div>\n  <div>webview.allow.2=/data/whatap/logs/eureka.log</div>\n  <div>webview.allow.3=/data/whatap/logs/account.log</div>\n  </div>\n  </div>\n </div>",
-    "ja": "<div>\n  <div>\n    <div>Whatapエージェント設定ファイルにオプションを追加して (/usr/whatap/infra/conf/<span style='text-decoration:underline;'>whatap.conf</span>)</div> \n    <div>下記のように照会可能なファイルを指定することができます。</div>\n  </div>\n  <div>\n    <div style='font-weight:bold; margin:5px 0px; padding: 5px 8px; background-color: #eee; color: #222'>webview.allow.xxx=ファイル名</div>\n    <div style='font-size: 11px'>\n      <div>例</div>\n      <div>webview.allow.1=/data/whatap/logs/front.log</div>\n      <div>webview.allow.2=/data/whatap/logs/eureka.log</div>\n      <div>webview.allow.3=/data/whatap/logs/account.log</div>\n    </div>\n  </div>\n</div>",
+    "ja": "<div>\n  <div>\n    <div>Whatapエージェント設定ファイルにオプションを追加して(/usr/whatap/infra/conf/<span style='text-decoration:underline;'>whatap.conf</span>)</div> \n    <div>下記のように照会可能なファイルを指定することができます。</div>\n  </div>\n  <div>\n    <div style='font-weight:bold; margin:5px 0px; padding: 5px 8px; background-color: #eee; color: #222'>webview.allow.xxx=ファイル名</div>\n    <div style='font-size: 11px'>\n      <div>例</div>\n      <div>webview.allow.1=/data/whatap/logs/front.log</div>\n      <div>webview.allow.2=/data/whatap/logs/eureka.log</div>\n      <div>webview.allow.3=/data/whatap/logs/account.log</div>\n    </div>\n  </div>\n</div>",
     "ko": "<div>\n  <div>\n    <div>와탭 에이전트 설정 파일에 옵션을 추가하여 (/usr/whatap/infra/conf/<span style='text-decoration:underline;'>whatap.conf</span>)</div> \n    <div>아래 내용과 같이 조회 가능 파일을 지정할 수 있습니다.</div>\n  </div>\n  <div>\n    <div style='font-weight:bold; margin:5px 0px; padding: 5px 8px; background-color: #eee; color: #222'>webview.allow.xxx=파일명</div>\n    <div style='font-size: 11px'>\n      <div>예시</div>\n      <div>webview.allow.1=/data/whatap/logs/front.log</div>\n      <div>webview.allow.2=/data/whatap/logs/eureka.log</div>\n      <div>webview.allow.3=/data/whatap/logs/account.log</div>\n    </div>\n  </div>\n</div>",
     "zh": "<div>\n  <div>\n    <div>You can add options to the WhaTap agent config file (/usr/whatap/infra/conf/<span style='text-decoration:underline;'>whatap.conf</span>)</div> \n    <div>to specify a file that can be viewed as shown below.</div>\n  </div>\n  <div>\n    <div style='font-weight:bold; margin:5px 0px; padding: 5px 8px; background-color: #eee; color: #222'>webview.allow.xxx=File</div>\n    <div style='font-size: 11px'>\n      <div>Example</div>\n      <div>webview.allow.1=/data/whatap/logs/front.log</div>\n      <div>webview.allow.2=/data/whatap/logs/eureka.log</div>\n      <div>webview.allow.3=/data/whatap/logs/account.log</div>\n    </div>\n  </div>\n</div>",
     "service_id": "_02959"
@@ -24754,7 +24754,7 @@
   },
   "msa_prerequisite": {
     "en": "Required Configuration : stat_mtrace_enabled=true (java agent 2.0+)",
-    "ja": "適用設定 : stat_mtrace_enabled=true (Javaエージェント2.0以降)",
+    "ja": "適用設定 : stat_mtrace_enabled=true(Javaエージェント2.0以降)",
     "ko": "적용설정 : stat_mtrace_enabled=true (java 에이전트 2.0+)",
     "zh": "Required Configuration : stat_mtrace_enabled=true (java agent 2.0+)",
     "service_id": "_03607"
@@ -26938,7 +26938,7 @@
   },
   "alert_log_autoscript_header": {
     "en": "Automatic script setting (beta)",
-    "ja": "自動スクリプト設定 (ベタ)",
+    "ja": "自動スクリプト設定(ベタ)",
     "ko": "자동 스크립트 설정 (베타)",
     "zh": "Auto Script Setting(Beta)",
     "service_id": "_03921"
@@ -27211,7 +27211,7 @@
   },
   "add_metric_start": {
     "en": "Metric (",
-    "ja": "指標 (",
+    "ja": "指標(",
     "ko": "지표 (",
     "zh": "Metric (",
     "service_id": "_03960"
@@ -27267,7 +27267,7 @@
   },
   "alert_message": {
     "en": "Alert message. (Max 50 Characters)",
-    "ja": "通知メッセージ (50文字まで)",
+    "ja": "通知メッセージ(50文字まで)",
     "ko": "알림 메시지 (최대 50자)",
     "zh": "Alert message. (Max 50 Charaters)",
     "service_id": "_03968"
@@ -27652,7 +27652,7 @@
   },
   "info_agent_transfer_msg_2": {
     "en": "A crash may occur if you move an agent again within 10 minutes of running. (Asynchronous Processing)",
-    "ja": "エージェントを移動してから10分が経たない内に再度同一エージェントを移動する場合、衝突現象が発生する時があります。 (非同期処理)",
+    "ja": "エージェントを移動してから10分が経たない内に再度同一エージェントを移動する場合、衝突現象が発生する時があります。(非同期処理)",
     "ko": "실행 직후 10분 이내에 다시 동일 에이전트를 이동할 경우 충돌 현상을 유발할 수 있습니다. (비동기 처리)",
     "zh": "Moving the same agent again within 10 minutes of execution can cause a crash. (Asynchronous Processing)",
     "service_id": "NTC04024"
@@ -27946,7 +27946,7 @@
   },
   "availability_with_downcheck": {
     "en": "Availability ( Downcheck )",
-    "ja": "可用性 ( ダウンチェック )",
+    "ja": "可用性(ダウンチェック)",
     "ko": "가용성 ( 다운체크 )",
     "zh": "Availability ( Downcheck )",
     "service_id": "_04066"
@@ -31068,7 +31068,7 @@
   },
   "account_locked_over_fully_attempts_detail": {
     "en": "The account has been locked according to the security policy. </br> To unlock, Please contact to the administrator. </br>Contact Info: 02-565-1803 | Customer Support: support@whatap.io",
-    "ja": "セキュリティーポリシーによりアカウントがロックされました。</br>ロックを解除するためにはカスタマーサポートまで問い合わせてください。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "セキュリティーポリシーによりアカウントがロックされました。</br>ロックを解除するためにはカスタマーサポートまで問い合わせてください。<br/>Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "보안정책에 의해 계정이 잠금 처리 되었습니다. </br> 잠금을 해제하시려면, 관리자에게 문의 바랍니다. </br>전화(Contact): 02-565-1803 | 고객지원(Customer Support): support@whatap.io",
     "zh": "The account has been locked according to the security policy. </br> To unlock, Please contact to the administrator. </br>Contact Info: 02-565-1803 | Customer Support: support@whatap.io",
     "service_id": "_04514"
@@ -33945,7 +33945,7 @@
   },
   "create_arn": {
     "en": "Amazon resource names (ARNs)",
-    "ja": "Amazon Resource Names (ARNs)",
+    "ja": "Amazon Resource Names(ARNs)",
     "ko": "Amazon 리소스 이름(ARN)",
     "zh": "Amazon Resource Names (ARNs)",
     "service_id": "TTL04929"
@@ -34078,7 +34078,7 @@
   },
   "role_inherited_upper_group": {
     "en": "This role is Inherited from upper group. ({groupName})",
-    "ja": "該当の権限は上位のグループから継承されました。 ({groupName})",
+    "ja": "該当の権限は上位のグループから継承されました。({groupName})",
     "ko": "이 권한은 상위 그룹에서 상속되었습니다. ({groupName})",
     "zh": "This Role is Inherited from upper group. ({groupName})",
     "service_id": "_04948"
@@ -35212,7 +35212,7 @@
   },
   "group_management_selected_info": {
     "en": "You can move the selected {object} to another {target}. (Select {selected})",
-    "ja": "選択した{object}を他の{target}へ移動できます。 ({selected}件選択)",
+    "ja": "選択した{object}を他の{target}へ移動できます。({selected}件選択)",
     "ko": "선택한 {object}을(를) 다른 {target}으로 이동할 수 있습니다. ({selected}개 선택)",
     "zh": "You can move the selected {object} to another {target}. (Select {selected})",
     "service_id": "_05110"
@@ -36570,7 +36570,7 @@
   },
   "validate_message_rum_sample_rate": {
     "en": "Only numbers between 0 and 100 can be entered.",
-    "ja": "0～100までの数字のみ入力できます。",
+    "ja": "0~100までの数字のみ入力できます。",
     "ko": "0이상 100이하의 숫자만 입력 가능합니다.",
     "zh": "只能输入 0 到 100 之间的数字。",
     "service_id": "_05304"
@@ -36976,7 +36976,7 @@
   },
   "multiple_keyword_filter_help": {
     "en": "You can filter content of log with a single and multiple keyword. If you want to filter with multiple keywords, write it as below.\n <span style='display:block;'>\n - Separate each keyword by spacing.\n </span>\n <span style='display:block;'>\n - If you want to include spaces in your keyword, wrap the keyword by '' or \"\".\n </span>\n <span style='display:block;'>\n - If you include \\ in the keyword \", type \\\\ instead of \\.\n </span>\n <span style='display:block;margin-top:4px'>\n For example, When you enter keyword like \"pcode: 0000\" error, it filters the contents that including pcode: 0000 and error as keyword.\n </span>",
-    "ja": "一つ、または複数のキーワードでログのコンテンツがフィルタリングできます。複数のキーワードでログをフィルタリングする際には、次のように作成します。\n<span style='display:block;'>\n- スペースで各キーワードを区切ります。\n</span>\n<span style='display:block;'>\n- キーワード内にスペースを含める場合は、全体のキーワードを’’、または””で囲みます。\n</span>\n<span style='display:block;'>\n- ’’で囲まれたキーワード内で\\を含める場合は、\\の代わりに\\\\と入力します。\n</span>\n<span style='display:block;margin-top:4px'>\n 例）キーワードを”pcode: 0000\"errorのように入力すると、pcode: 0000とerrorを含むコンテンツをフィルタリングします。\n</span>",
+    "ja": "一つ、または複数のキーワードでログのコンテンツがフィルタリングできます。複数のキーワードでログをフィルタリングする際には、次のように作成します。\n<span style='display:block;'>\n- スペースで各キーワードを区切ります。\n</span>\n<span style='display:block;'>\n- キーワード内にスペースを含める場合は、全体のキーワードを’’、または””で囲みます。\n</span>\n<span style='display:block;'>\n- ’’で囲まれたキーワード内で\\を含める場合は、\\の代わりに\\\\と入力します。\n</span>\n<span style='display:block;margin-top:4px'>\n 例) キーワードを”pcode: 0000\"errorのように入力すると、pcode: 0000とerrorを含むコンテンツをフィルタリングします。\n</span>",
     "ko": "단일, 복수개의 키워드로 로그의 content를 필터링할 수 있습니다. 복수개의 키워드로 필터를 할 경우 아래와 같이 작성합니다.\n<span style='display:block;'>\n  - 띄어쓰기로 각 키워드를 구분\n</span>\n<span style='display:block;'>\n  - 띄어쓰기를 키워드에 포함하고 싶은 경우 ‘’ 또는 “”로 감싸서 입력 \n</span>\n<span style='display:block;'>\n  - \"\"로 감싸진 키워드에서 \\를 포함할 경우, \\\\로 입력\n</span>\n<span style='display:block;margin-top:4px'>\n  예시) 키워드를 \"pcode: 0000\" error와 같이 입력시, pcode: 0000, error가 포함된 content를 필터링합니다.\n</span>",
     "zh": "You can filter content of log with a single and multiple keyword. If you want to filter with multiple keywords, write it as below.\n<span style='display:block;'>\n- Separate each keyword by spacing.\n</span>\n<span style='display:block;'>\n- If you want to include spaces in your keyword, wrap the keyword by '' or \"\".\n</span>\n<span style='display:block;'>\n- If you include \\ in the keyword \", type \\\\ instead of \\.\n</span>\n<span style='display:block;margin-top:4px'>\nFor example, When you enter keyword like \"pcode: 0000\" error, it filters the contents that including pcode: 0000 and error as keyword.\n</span>",
     "service_id": "_05363"
@@ -39713,7 +39713,7 @@
   },
   "table_size_increase_config_info": {
     "en": "The agent setting parameters tables_min_row, tables_hour can be adjusted in the ‘Agent Settings’ menu.<br/>(Default: Collect over 10,000 cases at 5 am)",
-    "ja": "エージェント設定パラメータのtable_min_row、tables_hour は、「エージェント設定」メニューから変更できます。<br/>(デフォルト: 午前 5 時、10,000 件を超えたら収集)",
+    "ja": "エージェント設定パラメータのtable_min_row、tables_hourは、「エージェント設定」メニューから変更できます。<br/>(デフォルト: 午前5時、10,000件を超えたら収集)",
     "ko": "에이전트 설정 파라미터 tables_min_row, tables_hour를 ‘에이전트 설정’메뉴에서 조정할 수 있습니다.<br/>(기본값: 10000건 이상 새벽 5시에 수집합니다.)",
     "zh": "The agent setting parameters tables_min_row, tables_hour can be adjusted in the ‘Agent Settings’ menu.<br/>(Default: Collect over 10,000 cases at 5 am)",
     "service_id": "_05754"
@@ -39818,7 +39818,7 @@
   },
   "flexboard_widget_log_guide": {
     "en": "<span><strong>{optionName}</strong> is required to collect the data that the widget represents.<br />If this setting is not set, refer to <br /><a target='_blank' href={guideLink}>Guide </a> and do <strong>{suboptionName}</strong>.</span>",
-    "ja": "<span>該当ウィジェットが表示するデータ収集のためには<strong>{optionName}</strong>が必要です。<br/>当該設定を行っていない場合は、<br/><a target=\"_blank\"href=\"guideLink\">ガイド</a>を参考にして<strong>{subOptionName}</strong>をしてください。</span>",
+    "ja": "<span>該当ウィジェットが表示するデータ収集のためには<strong>{optionName}</strong>が必要です。<br/>当該設定を行っていない場合は、<br/><a target='_blank' href={guideLink}>ガイド</a>を参考にして<strong>{subOptionName}</strong>をしてください。</span>",
     "ko": "<span>해당 위젯이 나타낼 데이터 수집을 위해서는 <strong>{optionName}</strong>이 필요합니다.<br />해당 설정을 하지 않은 경우,<br /><a target='_blank' href={guideLink}>가이드</a>를 참고하여 <strong>{subOptionName}</strong>을 해주세요.</span>",
     "zh": "<span><strong>{optionName}</strong> is required to collect the data that the widget represents.<br />If this setting is not set, refer to <br /><a target='_blank' href={guideLink}>Guide </a> and do <strong>{suboptionName}</strong>.</span>",
     "service_id": "_05769"
@@ -40868,7 +40868,7 @@
   },
   "table_space_change_rate": {
     "en": "Change rate (%)",
-    "ja": "変化率(％)",
+    "ja": "変化率(%)",
     "ko": "변화율",
     "zh": "Change Rate (%)",
     "service_id": "TTL05919"
@@ -40889,7 +40889,7 @@
   },
   "table_space_usage": {
     "en": "Usage (%)",
-    "ja": "使用量(％)",
+    "ja": "使用量(%)",
     "ko": "사용량 (%)",
     "zh": "Usage (%)",
     "service_id": "TTL05922"
@@ -43234,7 +43234,7 @@
   },
   "NTC06271": {
     "en": "The refresh interval (in seconds) must be a value between 5 and 300.",
-    "ja": "更新間隔(秒)は5～300の間で入力してください。",
+    "ja": "更新間隔(秒)は5~300の間で入力してください。",
     "ko": "갱신 간격(초)은 5~300 사이의 값이어야 합니다.",
     "zh": "The refresh interval (in seconds) must be a value between 5 and 300.",
     "service_id": "NTC06271"
@@ -45306,7 +45306,7 @@
   },
   "TTL06572": {
     "en": "Table size (TOP 50)",
-    "ja": "テーブルサイズ (トップ50)",
+    "ja": "テーブルサイズ(トップ50)",
     "ko": "테이블 사이즈 (TOP 50)",
     "zh": "Table Size (TOP 50)",
     "service_id": "TTL06572"
@@ -45677,7 +45677,7 @@
   },
   "DSC06625": {
     "en": "Applying log settings to all node agents. Please wait a moment. (Takes about 30 seconds to 1 minute)",
-    "ja": "すべてのノードエージェントを対象にログ設定を適用しています。 しばらくお待ちください。 (30秒～1分ほどかかります。)",
+    "ja": "すべてのノードエージェントを対象にログ設定を適用しています。 しばらくお待ちください。(30秒~1分ほどかかります。)",
     "ko": "모든 노드 에이전트를 대상으로 로그 설정을 적용 중입니다. 잠시만 기다려 주십시오. (30초~1분정도 소요)",
     "zh": "Applying log settings to all node agents. Please wait a moment. (Takes about 30 seconds to 1 minute)",
     "service_id": "DSC06625"
@@ -46370,7 +46370,7 @@
   },
   "TLT06734": {
     "en": "Merge/view each",
-    "ja": "マージ / 個別に表示",
+    "ja": "マージ/個別に表示",
     "ko": "병합 / 개별로 보기",
     "zh": "Merge/Each View",
     "service_id": "TLT06734"
@@ -47357,7 +47357,7 @@
   },
   "NTC06876": {
     "en": "The title can be up to {max_length} characters long. ({length}/{max_length})",
-    "ja": "タイトルは最大{max_length}文字まで入力できます。 ({length}/{max_length})",
+    "ja": "タイトルは最大{max_length}文字まで入力できます。({length}/{max_length})",
     "ko": "제목은 최대 {max_length}자 까지 입력할 수 있습니다. ({length}/{max_length})",
     "zh": "Title can be up to {max_length} characters. ({length}/{max_length})",
     "service_id": "NTC06876"
@@ -47490,7 +47490,7 @@
   },
   "payment_type_card_paypal": {
     "en": "Credit card (Paypal)",
-    "ja": "クレジットカード (Paypal)",
+    "ja": "クレジットカード(Paypal)",
     "ko": "신용카드 (Paypal)",
     "zh": "Credit card(Paypal)",
     "service_id": "_06895"
@@ -49016,14 +49016,14 @@
   },
   "NTC07118": {
     "en": "The author value can be up to {max_length} characters long. ({length}/{max_length})",
-    "ja": "作成者の値は、{max_length}文字まで入力できます。 ({length}/{max_length})",
+    "ja": "作成者の値は、{max_length}文字まで入力できます。({length}/{max_length})",
     "ko": "작성자 값은 최대 {max_length}자 까지 입력할 수 있습니다. ({length}/{max_length})",
     "zh": "The writer value can be up to {max_length} characters. ({length}/{max_length})",
     "service_id": "NTC07118"
   },
   "NTC07119": {
     "en": "The maintenance history value can be up to {max_length} characters long. ({length}/{max_length})",
-    "ja": "メンテナンス履歴の値は、最大{max_length}文字まで入力できます。 ({length}/{max_length})",
+    "ja": "メンテナンス履歴の値は、最大{max_length}文字まで入力できます。({length}/{max_length})",
     "ko": "정비내역 값은 최대 {max_length}자 까지 입력할 수 있습니다. ({length}/{max_length})",
     "zh": "The maintenance history value can be entered up to {max_length} characters. ({length}/{max_length})",
     "service_id": "NTC07119"
@@ -50031,7 +50031,7 @@
   },
   "DSC07264": {
     "en": "The <strong>{proxyPort} port</strong> must be open to transfer data to <strong>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
-    "ja": "<strong> WhaTap Server {proxyServer}</strong>へデータを転送するには、<strong> {proxyPort}番のポート</strong>を開く必要があります。 (TCP Outbound)",
+    "ja": "<strong> WhaTap Server {proxyServer}</strong>へデータを転送するには、<strong> {proxyPort}番のポート</strong>を開く必要があります。(TCP Outbound)",
     "ko": "<strong>WhaTap Server {proxyServer}</strong>로 데이터를 전송하기 위해 <strong>{proxyPort}포트</strong>가 열려 있어야 합니다. (TCP Outbound)",
     "zh": "The <strong>{proxyPort} port</strong> must be open to transfer data to <strong>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
     "service_id": "DSC07264"
@@ -52712,7 +52712,7 @@
   },
   "DSC07649": {
     "en": "Each node has a different version of the agent. Please use only one version to ensure accurate data collection. (Number of versions currently running: {nodeAgentVersionCount})",
-    "ja": "各ノードのエージェントバージョンが異なります。 正確なデータ収集のために1つのバージョンのみを使用してください。 (現在実行中のバージョン数：{nodeAgentVersionCount}個)",
+    "ja": "各ノードのエージェントバージョンが異なります。 正確なデータ収集のために1つのバージョンのみを使用してください。(現在実行中のバージョン数：{nodeAgentVersionCount}個)",
     "ko": "각 노드의 에이전트 버전이 상이합니다. 보다 정확한 데이터 수집을 위해 하나의 버전만 사용해주세요. (현재 실행 중인 버전 수: {nodeAgentVersionCount}개)",
     "zh": "The agent version on each node is different. Please use only one version to ensure accurate data collection. (Currently running versions: {nodeAgentVersionCount})",
     "service_id": "DSC07649"
@@ -53328,7 +53328,7 @@
   },
   "DSC07737": {
     "en": "Please contact <b>WhaTap Management Support Team ({tel})</b>.\n",
-    "ja": "<b>WhaTap{tel}）</b>の窓口へお問い合わせください。",
+    "ja": "<b>WhaTapテクニカルサポートへ</b>お問い合わせください。",
     "ko": "<b>와탭 경영지원팀({tel})</b>으로 문의부탁드립니다.",
     "zh": "Please contact <b>WhaTap Management Support Team ({tel})</b>.",
     "service_id": "DSC07737"
@@ -53726,31 +53726,31 @@
     "service_id": "NTC07796"
   },
   "TTL07797": {
-    "en": "Application featured widget group",
+    "en": "Featured Applications Group Widget",
     "ja": "アプリケーション推奨ウィジェットグループ",
-    "ko": "애플리케이션 추천 위젯 그룹",
-    "zh": "Application Featured Widget Group",
+    "ko": "추천 애플리케이션 그룹 위젯",
+    "zh": "Featured Applications Group Widget",
     "service_id": "TTL07797"
   },
   "TTL07798": {
-    "en": "Server featured widget group",
+    "en": "Featured Server Group Widget",
     "ja": "サーバー推奨ウィジェットグループ",
-    "ko": "서버 추천 위젯 그룹",
-    "zh": "Server Featured Widget Group",
+    "ko": "추천 서버 그룹 위젯",
+    "zh": "Featured Server Group Widget",
     "service_id": "TTL07798"
   },
   "TTL07799": {
-    "en": "MySQL featured widget group (RDS)",
-    "ja": "MySQL推薦ウィジェットグループ(RDS)",
-    "ko": "MySQL 추천 위젯 그룹 (RDS)",
-    "zh": "MySQL Featured Widget Groups (RDS)",
+    "en": "Featured MySQL Group Widget (RDS)",
+    "ja": "推奨MySQLグループウィジェット（RDS）",
+    "ko": "추천 MySQL 그룹 위젯 (RDS)",
+    "zh": "Featured MySQL Group Widget (RDS)",
     "service_id": "TTL07799"
   },
   "TTL07800": {
-    "en": "MySQL featured widget group (XOS)",
-    "ja": "MySQL推薦ウィジェットグループ(XOS)",
-    "ko": "MySQL 추천 위젯 그룹 (XOS)",
-    "zh": "MySQL Featured Widget Group (XOS)",
+    "en": "Featured MySQL Group Widget (XOS)",
+    "ja": "推奨MySQLグループウィジェット（XOS）",
+    "ko": "추천 MySQL 그룹 위젯 (XOS)",
+    "zh": "Featured MySQL Group Widget (XOS)",
     "service_id": "TTL07800"
   },
   "NTC07801": {
@@ -53768,17 +53768,17 @@
     "service_id": "DSC07802"
   },
   "TTL07803": {
-    "en": "PostgreSQL featured widget group (RDS)",
-    "ja": "PostgreSQL推薦ウィジェットグループ(RDS)",
-    "ko": "PostgreSQL 추천 위젯 그룹 (RDS)",
-    "zh": "PostgreSQL Featured Widget Groups (RDS)",
+    "en": "Featured PostgreSQL Group Widget (RDS)",
+    "ja": "推奨PostgreSQLグループウィジェット（RDS）",
+    "ko": "추천 PostgreSQL 그룹 위젯 (RDS)",
+    "zh": "Featured PostgreSQL Group Widget (RDS)",
     "service_id": "TTL07803"
   },
   "TTL07804": {
-    "en": "PostgreSQL featured widget group (XOS)",
-    "ja": "PostgreSQL推薦ウィジェットグループ(XOS)",
-    "ko": "PostgreSQL 추천 위젯 그룹 (XOS)",
-    "zh": "PostgreSQL Featured Widget Group (XOS)",
+    "en": "Featured PostgreSQL Group Widget (XOS)",
+    "ja": "推奨PostgreSQLグループウィジェット（XOS）",
+    "ko": "추천 PostgreSQL 그룹 위젯 (XOS)",
+    "zh": "Featured PostgreSQL Group Widget (XOS)",
     "service_id": "TTL07804"
   },
   "TLT07805": {
@@ -53978,17 +53978,17 @@
     "service_id": "DSC07832"
   },
   "LNK07833": {
-    "en": "Pod manifest lookup",
+    "en": "Lookup pod manifest",
     "ja": "Podマニフェストの照会",
     "ko": "Pod 매니페스트 조회",
-    "zh": "Pod manifest lookup",
+    "zh": "Lookup pod manifest",
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54064,7 +54064,7 @@
   "DSC07845": {
     "en": "The pod is no longer in the pending state.",
     "ja": "PodがもうPending状態ではありません。",
-    "ko": "Pod가 더이상 Pending 상태가 아닙니다.",
+    "ko": "조회 시간 기준 Pod가 Pending 상태가 아닙니다.",
     "zh": "The pod is no longer in the pending state.",
     "service_id": "DSC07845"
   },
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54286,52 +54286,52 @@
     "service_id": "TTL07876"
   },
   "NTC07877": {
-    "en": "URL addition was successful.",
+    "en": "URL added successfully.",
     "ja": "URLの追加に成功しました。",
     "ko": "URL 추가에 성공했습니다.",
-    "zh": "URL addition was successful.",
+    "zh": "URL added successfully.",
     "service_id": "NTC07877"
   },
   "NTC07878": {
-    "en": "Adding URL failed.",
+    "en": "URL add failed.",
     "ja": "URLの追加に失敗しました。",
     "ko": "URL 추가에 실패했습니다.",
-    "zh": "Adding URL failed.",
+    "zh": "URL add failed.",
     "service_id": "NTC07878"
   },
   "NTC07879": {
-    "en": "URL deletion was successful.",
+    "en": "URL deleted successfully.",
     "ja": "URLの削除に成功しました。",
     "ko": "URL 삭제에 성공했습니다.",
-    "zh": "URL deletion was successful.",
+    "zh": "URL deleted successfully.",
     "service_id": "NTC07879"
   },
   "NTC07880": {
-    "en": "URL deletion failed.",
+    "en": "URL delete failed.",
     "ja": "URLの削除に失敗しました。",
     "ko": "URL 삭제에 실패했습니다.",
-    "zh": "URL deletion failed.",
+    "zh": "URL delete failed.",
     "service_id": "NTC07880"
   },
   "NTC07881": {
-    "en": "URL editing was successful.",
-    "ja": "URLの編集に成功しました。",
+    "en": "URL edited successfully.",
+    "ja": "URLの修正に成功しました。",
     "ko": "URL 편집에 성공했습니다.",
-    "zh": "URL editing was successful.",
+    "zh": "URL edited successfully.",
     "service_id": "NTC07881"
   },
   "NTC07882": {
-    "en": "URL editing failed.",
-    "ja": "URLの編集に失敗しました。",
+    "en": "URL edit failed.",
+    "ja": "URLの修正に失敗しました。",
     "ko": "URL 편집에 실패했습니다.",
-    "zh": "URL editing failed.",
+    "zh": "URL edit failed.",
     "service_id": "NTC07882"
   },
   "NTC07883": {
-    "en": "URL copy was successful.",
+    "en": "URL copied successfully.",
     "ja": "URLのコピーに成功しました。",
     "ko": "URL 복사에 성공했습니다.",
-    "zh": "URL copy was successful.",
+    "zh": "URL copied successfully.",
     "service_id": "NTC07883"
   },
   "NTC07884": {
@@ -54350,30 +54350,30 @@
   },
   "TTL07886": {
     "en": "Delete URL",
-    "ja": "URLを削除",
+    "ja": "URLの削除",
     "ko": "URL 삭제",
     "zh": "Delete URL",
     "service_id": "TTL07886"
   },
   "TTL07887": {
-    "en": "Detailed data collection time",
-    "ja": "詳細データ収集時刻",
+    "en": "Data(detailed) collection time",
+    "ja": "詳細データの収集時刻",
     "ko": "상세 데이터 수집 시각",
-    "zh": "Detailed data collection time",
+    "zh": "Data(detailed) collection time",
     "service_id": "TTL07887"
   },
   "DSC07888": {
     "en": "There is no pending data for the selected Pod at the time of inquiry.",
-    "ja": "照会時に選択したポッドのペンディングデータはありません。",
+    "ja": "照会した時点では、選択したPodのPendingが存在しません。",
     "ko": "조회 시점에 선택한 Pod의 Pending 데이터가 없습니다.",
     "zh": "There is no pending data for the selected Pod at the time of inquiry.",
     "service_id": "DSC07888"
   },
   "BTN07889": {
-    "en": "return to list",
+    "en": "Return to List",
     "ja": "リストに戻る",
     "ko": "목록으로 돌아가기",
-    "zh": "return to list",
+    "zh": "Return to List",
     "service_id": "BTN07889"
   },
   "TLT07890": {
@@ -54384,31 +54384,31 @@
     "service_id": "TLT07890"
   },
   "TTL07891": {
-    "en": "More information",
+    "en": "Details",
     "ja": "詳細情報",
     "ko": "상세정보",
-    "zh": "More information",
+    "zh": "Details",
     "service_id": "TTL07891"
   },
   "TTL07892": {
     "en": "Copy URL",
-    "ja": "URLをコピー",
+    "ja": "URLのコピー",
     "ko": "URL 복사",
     "zh": "Copy URL",
     "service_id": "TTL07892"
   },
   "NTC07893": {
-    "en": "If you do not fill out the Host Name entry, it will be difficult to identify your server. Be sure to enter this field.",
-    "ja": "Host Name項目を作成しないと、サーバーを特定できません。この項目を必ず入力してください。",
+    "en": "If you do not fill out the Host Name entry, it will be difficult to identify the server. Please enter this field.",
+    "ja": "Host Name項目を作成しないと、サーバーを識別することが難しくなる場合があります。この項目を必ず入力してください。",
     "ko": "Host Name 항목을 작성하지 않으면 서버를 식별하기 어렵습니다. 이 항목을 반드시 입력하세요.",
-    "zh": "If you do not fill out the Host Name entry, it will be difficult to identify your server. Be sure to enter this field.",
+    "zh": "If you do not fill out the Host Name entry, it will be difficult to identify the server. Please enter this field.",
     "service_id": "NTC07893"
   },
   "NTC07894": {
-    "en": "Connection failed due to reasons such as newly restoring or reinstalling the app on the mobile device.{br}Mobile devices that fail to connect are automatically excluded from receiving notifications.",
-    "ja": "モバイルデバイスのアプリを復元したか、再インストールなどの理由で接続に失敗しました。{br}接続に失敗したモバイルデバイスは、通知の受信対象から自動的に除外されます。",
+    "en": "Connection failed due to reasons such as restoring or reinstalling the app on the mobile device.{br}Mobile devices with connection failure are automatically excluded from notification target.",
+    "ja": "モバイルのアプリを復元、または再インストールしたため、接続に失敗しました。{br}接続に失敗したモバイルは、アラート通知の受信先から除外されます。",
     "ko": "모바일 기기의 앱을 새로 복원했거나 재설치 등의 사유로 연결에 실패했습니다.{br}연결에 실패한 모바일 기기는 알림 수신 대상에서 자동 제외됩니다.",
-    "zh": "Connection failed due to reasons such as newly restoring or reinstalling the app on the mobile device.{br}Mobile devices that fail to connect are automatically excluded from receiving notifications.",
+    "zh": "Connection failed due to reasons such as restoring or reinstalling the app on the mobile device.{br}Mobile devices with connection failure are automatically excluded from notification target.",
     "service_id": "NTC07894"
   },
   "DSC07895": {
@@ -54420,7 +54420,7 @@
   },
   "DSC07896": {
     "en": "Enter or select {dataKey}.",
-    "ja": "{dataKey}を入力または選択してください。",
+    "ja": "{dataKey}を入力、または選択してください。",
     "ko": "{dataKey} 을(를) 입력하거나 선택하세요.",
     "zh": "Enter or select {dataKey}.",
     "service_id": "DSC07896"
@@ -54431,6 +54431,90 @@
     "ko": "이동",
     "zh": "Transfer",
     "service_id": "BTN07897"
+  },
+  "NTC07898": {
+    "en": "This feature is only supported by the {supported_platform} agent.",
+    "ja": "この機能は、{supported_platform}エージェントのみに対応しています。",
+    "ko": "해당 기능은 {supported_platform} 에이전트만 지원하는 기능입니다.",
+    "zh": "This feature is only supported by the {supported_platform} agent.",
+    "service_id": "NTC07898"
+  },
+  "DSC07899": {
+    "en": "There are no containers running.",
+    "ja": "実行されたコンテナはありません。",
+    "ko": "실행된 컨테이너가 없습니다.",
+    "zh": "There are no containers running.",
+    "service_id": "DSC07899"
+  },
+  "TTL07900": {
+    "en": "Pending data collection time",
+    "ja": "Pendingデータの収集時刻",
+    "ko": "Pending 데이터 수집 시각",
+    "zh": "Pending data collection time",
+    "service_id": "TTL07900"
+  },
+  "DSC07901": {
+    "en": "Please enter your 10-character business registration number.",
+    "ja": "事業者登録番号を10文字で入力してください。",
+    "ko": "사업자 등록 번호를 10자로 입력해주세요.",
+    "zh": "Please enter your 10-character business registration number.",
+    "service_id": "DSC07901"
+  },
+  "DSC07902": {
+    "en": "Please verify your business registration number.",
+    "ja": "事業者登録番号を認証してください。",
+    "ko": "사업자 등록 번호를 인증해 주세요.",
+    "zh": "Please verify your business registration number.",
+    "service_id": "DSC07902"
+  },
+  "TTL07903": {
+    "en": "Featured applications group widget (simplified)",
+    "ja": "推奨アプリケーショングループのウィジェット",
+    "ko": "추천 애플리케이션 그룹 위젯 (간소화)",
+    "zh": "Featured Applications Group Widget (simplified)",
+    "service_id": "TTL07903"
+  },
+  "TTL07904": {
+    "en": "Featured server group widget (simplified)",
+    "ja": "推奨サーバーグループのウィジェット",
+    "ko": "추천 서버 그룹 위젯 (간소화)",
+    "zh": "Featured Server Group Widget (simplified)",
+    "service_id": "TTL07904"
+  },
+  "DSC07905": {
+    "en": "4. Select Identity > My profile at the top right.",
+    "ja": "4. 右上の Identity > My profile を選択します。",
+    "ko": "4. 오른쪽 상단의 Identity > My profile을 선택하세요.",
+    "zh": "4. Select Identity > My profile at the top right.",
+    "service_id": "DSC07905"
+  },
+  "DSC07906": {
+    "en": "- Click API Keys at the bottom left.",
+    "ja": "- 左下のAPI Keysをクリックします。",
+    "ko": "- 왼쪽 하단의 API Keys를 클릭합니다.",
+    "zh": "- Click API Keys at the bottom left.",
+    "service_id": "DSC07906"
+  },
+  "DSC07907": {
+    "en": "- Click the ‘Add API Key’ button.",
+    "ja": "- 「Add API Key」ボタンをクリックします。",
+    "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
+    "zh": "- Click the ‘Add API Key’ button.",
+    "service_id": "DSC07907"
+  },
+  "DSC07908": {
+    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "ja": "- ラジオボタンの「Paste Public Key」を選択して、手順2で受信したRSA Public Keyを入力します。",
+    "ko": "- 라디오 버튼의 'Paste Public Key'를 선택하여 2단계에서 받은 RSA Public Key를 입력합니다. ",
+    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "service_id": "DSC07908"
+  },
+  "DSC07909": {
+    "en": "- Upon completion of addition, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
+    "ja": "- 追加完了時にユーザー、テナンシー情報を画面で確認できます。この情報をメモ帳にコピーします。",
+    "ko": "- 추가 완료 시 user, tenancy 정보를 화면에서 확인할 수 있습니다. 이 정보를 메모장에 복사합니다.",
+    "zh": "- Upon completion of addition, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
+    "service_id": "DSC07909"
   },
   "": {
     "en": "#VALUE!",
