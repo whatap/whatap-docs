@@ -1812,6 +1812,7 @@ const sidebars = {
               items: [
                 'oracle-dma/analysis-count-trend',
                 'oracle-dma/analysis-lock-and-deadlock',
+                'oracle-dma/analysis-session-history',
                 'oracle-dma/analysis-pq-tree',
                 'oracle-dma/analysis-databaseparameter',
               ]
@@ -1845,7 +1846,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
