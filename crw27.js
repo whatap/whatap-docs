@@ -1,9 +1,10 @@
-// 일단 이게 먹힘**
+// 25에 버전 기준 추가 출력 할 때 버전 정보 코드가 잘려서 구분 안됨
+// 27
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const url = 'https://docs.whatap.io/release-notes/service/service-2_0_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
 const seg2 = lastUrl.split('-');
@@ -14,6 +15,23 @@ const productFiles = {};
 
 // 새로 생성된 파일명 목록을 담는 MDX 파일명
 const newFilesMDX = `./crw-data/crwd/_import-new-files-${lastUrl2}.mdx`;
+
+// 버전을 비교하여 정렬하는 함수
+function compareVersions(version1, version2) {
+    const v1Parts = version1.split('.').map(part => parseInt(part));
+    const v2Parts = version2.split('.').map(part => parseInt(part));
+
+    for (let i = 0; i < Math.max(v1Parts.length, v2Parts.length); i++) {
+        const v1Part = v1Parts[i] || 0;
+        const v2Part = v2Parts[i] || 0;
+
+        if (v1Part !== v2Part) {
+            return v1Part - v2Part;
+        }
+    }
+
+    return 0;
+}
 
 // 구성23 가능. 조금만 손보면 될 것 같음
 axios.get(url)
@@ -153,10 +171,13 @@ function updateMDXContent(fileName, existingContent, version, newContent, produc
             updatedContent += `${featureHeader}\n\n`;
         }
 
+        // 버전 기준으로 기능을 정렬
+        newContent[featureName].sort((a, b) => compareVersions(a.split(' ')[1], b.split(' ')[1]));
+
         newContent[featureName].forEach(feature => {
             // 중복되는 기능명이 있는 경우, 해당 기능명 아래에 추가
             const existingFeature = `#### ${featureName}`;
-            const newFeatureContent = `- ${feature} <code class='changelog-service'>${version}</code>`;
+            const newFeatureContent = `- ${feature}`;
             if (updatedContent.includes(existingFeature)) {
                 updatedContent = updatedContent.replace(existingFeature, `${existingFeature}\n\n${newFeatureContent}`);
             } else {

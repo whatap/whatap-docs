@@ -1,9 +1,8 @@
-// 일단 이게 먹힘**
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const url = 'https://docs.whatap.io/release-notes/service/service-2_0_x';
+const url = 'https://docs.whatap.io/release-notes/service/service-2_3_x';
 const segments = url.split('/');
 const lastUrl = segments[segments.length - 1];
 const seg2 = lastUrl.split('-');
@@ -54,44 +53,36 @@ axios.get(url)
                         const nextP = $(h4Element).next('p').first();
                         const featureInUl = nextUl.find('code.Feature, code.New, code.Changed');
                         const featureInP = nextP.find('code.Feature, code.New, code.Changed');
-                        const features = new Set();
+                        const features = [];
+
                         featureInUl.each((idx, code) => {
-                            features.add($(code).parent().html().trim());
+                            features.push({ name: $(code).parent().html().trim(), date });
                         });
                         featureInP.each((idx, code) => {
-                            features.add($(code).parent().html().trim());
+                            features.push({ name: $(code).parent().html().trim(), date });
                         });
 
-                        if (features.size === 0) return;
+                        if (features.length === 0) return;
 
-                        if (!featuresByFeatureName[featureName]) {
-                            featuresByFeatureName[featureName] = [];
-                        }
-
-                        features.forEach(feature => {
-                            featuresByFeatureName[featureName].push(feature);
-                        });
+                        featuresByFeatureName[featureName] = features;
                     });
                 } else {
                     const nextUl = $(h3Element).next('ul').first();
                     const nextP = $(h3Element).next('p').first();
                     const featureInUl = nextUl.find('code.Feature, code.New, code.Changed');
                     const featureInP = nextP.find('code.Feature, code.New, code.Changed');
-                    const features = new Set();
+                    const features = [];
+
                     featureInUl.each((idx, code) => {
-                        features.add($(code).parent().html().trim());
+                        features.push({ name: $(code).parent().html().trim(), date });
                     });
                     featureInP.each((idx, code) => {
-                        features.add($(code).parent().html().trim());
+                        features.push({ name: $(code).parent().html().trim(), date });
                     });
 
-                    if (features.size === 0) return;
+                    if (features.length === 0) return;
 
-                    featuresByFeatureName[""] = [];
-
-                    features.forEach(feature => {
-                        featuresByFeatureName[""].push(feature);
-                    });
+                    featuresByFeatureName[""] = features;
                 }
 
                 // 파일에 내용을 추가
@@ -153,10 +144,18 @@ function updateMDXContent(fileName, existingContent, version, newContent, produc
             updatedContent += `${featureHeader}\n\n`;
         }
 
-        newContent[featureName].forEach(feature => {
+        // 기능을 날짜에 따라 정렬
+        const sortedFeatures = newContent[featureName].sort((a, b) => {
+            // Date 형식으로 변환하여 비교
+            const dateA = new Date(a.date);
+            const dateB = new Date(b.date);
+            return dateA - dateB;
+        });
+
+        sortedFeatures.forEach(feature => {
             // 중복되는 기능명이 있는 경우, 해당 기능명 아래에 추가
             const existingFeature = `#### ${featureName}`;
-            const newFeatureContent = `- ${feature} <code class='changelog-service'>${version}</code>`;
+            const newFeatureContent = `- ${feature.name} <code class='changelog-service'>${version}</code>`;
             if (updatedContent.includes(existingFeature)) {
                 updatedContent = updatedContent.replace(existingFeature, `${existingFeature}\n\n${newFeatureContent}`);
             } else {
