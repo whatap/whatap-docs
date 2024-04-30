@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79042],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45606],{
 
-/***/ 98663:
+/***/ 88628:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,31 +18,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_2_3',
-	title: '.NET Agent v2.2.3',
+	id: 'dotnet-2_2_4',
+	title: '.NET Agent v2.2.4',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_2_2',
+	pagination_next: 'release-notes/dotnet/dotnet-2_2_3',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_2_3",
-  "title": ".NET Agent v2.2.3",
-  "description": "2024년 04월 24일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.3.mdx",
+  "id": "release-notes/dotnet/dotnet-2_2_4",
+  "title": ".NET Agent v2.2.4",
+  "description": "2024년 04월 30일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.4.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_2_3",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_3",
+  "slug": "/release-notes/dotnet/dotnet-2_2_4",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.3.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_2_3",
-    "title": ".NET Agent v2.2.3",
+    "id": "dotnet-2_2_4",
+    "title": ".NET Agent v2.2.4",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_2_2",
+    "pagination_next": "release-notes/dotnet/dotnet-2_2_3",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
@@ -51,8 +51,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/python/python-previous"
   },
   "next": {
-    "title": ".NET Agent v2.2.2",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_2"
+    "title": ".NET Agent v2.2.3",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_3"
   }
 };
 const assets = {
@@ -64,6 +64,7 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     li: "li",
     p: "p",
     ul: "ul",
@@ -73,19 +74,34 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 24일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " Rest API 모니터링 중 특정 조건에서 CPU 사용률이 증가하는 버그 수정"]
+      children: "2024년 04월 30일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "특정 고객에게서 CPU 사용량이 증가하는 이슈가 발생해 해당 버그를 수정합니다."
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 바이트 코드 처리 프로세스 성능 개선"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "증상이 나타나지 않는 고객이라도 에이전트를 업그레이드할 것을 권장합니다. 성능 향상에 도움이 됩니다."
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 로그 처리 프로세스 성능 개선"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " UDP 패킷 프로세스 성능 개선"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "http://ASP.NET",
+            children: "ASP.NET"
+          }), " MVC 라이브러리 처리 프로세스 성능 개선"]
         }), "\n"]
       }), "\n"]
     })]
