@@ -1798,7 +1798,7 @@ function _createMdxContent(props) {
           desc: "위젯 크기 조절하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb",
+        product: "postgresql,mysql,redis,mongodb,oracle-dma",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "위젯 크기 조절하기",
@@ -1827,7 +1827,7 @@ function _createMdxContent(props) {
           desc: "위젯 이동하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb",
+        product: "postgresql,mysql,redis,mongodb,oracle-dma",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "위젯 이동하기",
@@ -1856,7 +1856,7 @@ function _createMdxContent(props) {
           desc: "위젯 삭제하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb",
+        product: "postgresql,mysql,redis,mongodb,oracle-dma",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-dashboard-widget-remove.png",
           desc: "위젯 삭제하기"

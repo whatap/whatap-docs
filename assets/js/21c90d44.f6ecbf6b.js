@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15241],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86024],{
 
 /***/ 6526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1798,7 +1798,7 @@ function _createMdxContent(props) {
           desc: "위젯 크기 조절하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb",
+        product: "postgresql,mysql,redis,mongodb,oracle-dma",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "위젯 크기 조절하기",
@@ -1827,7 +1827,7 @@ function _createMdxContent(props) {
           desc: "위젯 이동하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb",
+        product: "postgresql,mysql,redis,mongodb,oracle-dma",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "위젯 이동하기",
@@ -1856,7 +1856,7 @@ function _createMdxContent(props) {
           desc: "위젯 삭제하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb",
+        product: "postgresql,mysql,redis,mongodb,oracle-dma",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-dashboard-widget-remove.png",
           desc: "위젯 삭제하기"
@@ -2125,7 +2125,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 62576:
+/***/ 45051:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2155,7 +2155,7 @@ const frontMatter = {
 	title: '애플리케이션 대시보드',
 	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	tags: [
-		'Node.js',
+		'PHP',
 		'대시보드',
 		'애플리케이션',
 		'애플리케이션 모니터링'
@@ -2163,20 +2163,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/dashboard",
+  "id": "php/dashboard",
   "title": "애플리케이션 대시보드",
   "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/nodejs/dashboard.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/dashboard",
-  "permalink": "/whatap-docs/nodejs/dashboard",
+  "source": "@site/docs/php/dashboard.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/dashboard",
+  "permalink": "/whatap-docs/php/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/dashboard.mdx",
+  "editUrl": "undefined/docs/php/dashboard.mdx",
   "tags": [
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "label": "대시보드",
@@ -2197,20 +2197,20 @@ const metadata = {
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "tags": [
-      "Node.js",
+      "PHP",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/nodejs/dashboard-intro"
+    "permalink": "/whatap-docs/php/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/nodejs/dashboard-transactionmap"
+    "permalink": "/whatap-docs/php/dashboard-transactionmap"
   }
 };
 const assets = {
