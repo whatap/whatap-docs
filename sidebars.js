@@ -2939,6 +2939,7 @@ const sidebars = {
               className: 'new',
             },
             'release-notes/service/service-2_3_x',
+            'release-notes/service/service-2_2_x',
             'release-notes/service/service-2_1_x',
             'release-notes/service/service-2_0_x',
             'release-notes/service/service-1_114_x',
