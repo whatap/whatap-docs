@@ -53726,31 +53726,31 @@
     "service_id": "NTC07796"
   },
   "TTL07797": {
-    "en": "Application featured widget group",
+    "en": "Featured Applications Group Widget",
     "ja": "アプリケーション推奨ウィジェットグループ",
-    "ko": "애플리케이션 추천 위젯 그룹",
-    "zh": "Application Featured Widget Group",
+    "ko": "추천 애플리케이션 그룹 위젯",
+    "zh": "Featured Applications Group Widget",
     "service_id": "TTL07797"
   },
   "TTL07798": {
-    "en": "Server featured widget group",
+    "en": "Featured Server Group Widget",
     "ja": "サーバー推奨ウィジェットグループ",
-    "ko": "서버 추천 위젯 그룹",
-    "zh": "Server Featured Widget Group",
+    "ko": "추천 서버 그룹 위젯",
+    "zh": "Featured Server Group Widget",
     "service_id": "TTL07798"
   },
   "TTL07799": {
-    "en": "MySQL featured widget group (RDS)",
-    "ja": "MySQL推薦ウィジェットグループ(RDS)",
-    "ko": "MySQL 추천 위젯 그룹 (RDS)",
-    "zh": "MySQL Featured Widget Groups (RDS)",
+    "en": "Featured MySQL Group Widget (RDS)",
+    "ja": "推奨MySQLグループウィジェット（RDS）",
+    "ko": "추천 MySQL 그룹 위젯 (RDS)",
+    "zh": "Featured MySQL Group Widget (RDS)",
     "service_id": "TTL07799"
   },
   "TTL07800": {
-    "en": "MySQL featured widget group (XOS)",
-    "ja": "MySQL推薦ウィジェットグループ(XOS)",
-    "ko": "MySQL 추천 위젯 그룹 (XOS)",
-    "zh": "MySQL Featured Widget Group (XOS)",
+    "en": "Featured MySQL Group Widget (XOS)",
+    "ja": "推奨MySQLグループウィジェット（XOS）",
+    "ko": "추천 MySQL 그룹 위젯 (XOS)",
+    "zh": "Featured MySQL Group Widget (XOS)",
     "service_id": "TTL07800"
   },
   "NTC07801": {
@@ -53768,17 +53768,17 @@
     "service_id": "DSC07802"
   },
   "TTL07803": {
-    "en": "PostgreSQL featured widget group (RDS)",
-    "ja": "PostgreSQL推薦ウィジェットグループ(RDS)",
-    "ko": "PostgreSQL 추천 위젯 그룹 (RDS)",
-    "zh": "PostgreSQL Featured Widget Groups (RDS)",
+    "en": "Featured PostgreSQL Group Widget (RDS)",
+    "ja": "推奨PostgreSQLグループウィジェット（RDS）",
+    "ko": "추천 PostgreSQL 그룹 위젯 (RDS)",
+    "zh": "Featured PostgreSQL Group Widget (RDS)",
     "service_id": "TTL07803"
   },
   "TTL07804": {
-    "en": "PostgreSQL featured widget group (XOS)",
-    "ja": "PostgreSQL推薦ウィジェットグループ(XOS)",
-    "ko": "PostgreSQL 추천 위젯 그룹 (XOS)",
-    "zh": "PostgreSQL Featured Widget Group (XOS)",
+    "en": "Featured PostgreSQL Group Widget (XOS)",
+    "ja": "推奨PostgreSQLグループウィジェット（XOS）",
+    "ko": "추천 PostgreSQL 그룹 위젯 (XOS)",
+    "zh": "Featured PostgreSQL Group Widget (XOS)",
     "service_id": "TTL07804"
   },
   "TLT07805": {
@@ -53978,10 +53978,10 @@
     "service_id": "DSC07832"
   },
   "LNK07833": {
-    "en": "Pod manifest lookup",
+    "en": "Lookup pod manifest",
     "ja": "Podマニフェストの照会",
     "ko": "Pod 매니페스트 조회",
-    "zh": "Pod manifest lookup",
+    "zh": "Lookup pod manifest",
     "service_id": "LNK07833"
   },
   "DSC07834": {
@@ -54064,7 +54064,7 @@
   "DSC07845": {
     "en": "The pod is no longer in the pending state.",
     "ja": "PodがもうPending状態ではありません。",
-    "ko": "Pod가 더이상 Pending 상태가 아닙니다.",
+    "ko": "조회 시간 기준 Pod가 Pending 상태가 아닙니다.",
     "zh": "The pod is no longer in the pending state.",
     "service_id": "DSC07845"
   },
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54286,52 +54286,52 @@
     "service_id": "TTL07876"
   },
   "NTC07877": {
-    "en": "URL addition was successful.",
+    "en": "URL added successfully.",
     "ja": "URLの追加に成功しました。",
     "ko": "URL 추가에 성공했습니다.",
-    "zh": "URL addition was successful.",
+    "zh": "URL added successfully.",
     "service_id": "NTC07877"
   },
   "NTC07878": {
-    "en": "Adding URL failed.",
+    "en": "URL add failed.",
     "ja": "URLの追加に失敗しました。",
     "ko": "URL 추가에 실패했습니다.",
-    "zh": "Adding URL failed.",
+    "zh": "URL add failed.",
     "service_id": "NTC07878"
   },
   "NTC07879": {
-    "en": "URL deletion was successful.",
+    "en": "URL deleted successfully.",
     "ja": "URLの削除に成功しました。",
     "ko": "URL 삭제에 성공했습니다.",
-    "zh": "URL deletion was successful.",
+    "zh": "URL deleted successfully.",
     "service_id": "NTC07879"
   },
   "NTC07880": {
-    "en": "URL deletion failed.",
+    "en": "URL delete failed.",
     "ja": "URLの削除に失敗しました。",
     "ko": "URL 삭제에 실패했습니다.",
-    "zh": "URL deletion failed.",
+    "zh": "URL delete failed.",
     "service_id": "NTC07880"
   },
   "NTC07881": {
-    "en": "URL editing was successful.",
-    "ja": "URLの編集に成功しました。",
+    "en": "URL edited successfully.",
+    "ja": "URLの修正に成功しました。",
     "ko": "URL 편집에 성공했습니다.",
-    "zh": "URL editing was successful.",
+    "zh": "URL edited successfully.",
     "service_id": "NTC07881"
   },
   "NTC07882": {
-    "en": "URL editing failed.",
-    "ja": "URLの編集に失敗しました。",
+    "en": "URL edit failed.",
+    "ja": "URLの修正に失敗しました。",
     "ko": "URL 편집에 실패했습니다.",
-    "zh": "URL editing failed.",
+    "zh": "URL edit failed.",
     "service_id": "NTC07882"
   },
   "NTC07883": {
-    "en": "URL copy was successful.",
+    "en": "URL copied successfully.",
     "ja": "URLのコピーに成功しました。",
     "ko": "URL 복사에 성공했습니다.",
-    "zh": "URL copy was successful.",
+    "zh": "URL copied successfully.",
     "service_id": "NTC07883"
   },
   "NTC07884": {
@@ -54350,30 +54350,30 @@
   },
   "TTL07886": {
     "en": "Delete URL",
-    "ja": "URLを削除",
+    "ja": "URLの削除",
     "ko": "URL 삭제",
     "zh": "Delete URL",
     "service_id": "TTL07886"
   },
   "TTL07887": {
-    "en": "Detailed data collection time",
-    "ja": "詳細データ収集時刻",
+    "en": "Data(detailed) collection time",
+    "ja": "詳細データの収集時刻",
     "ko": "상세 데이터 수집 시각",
-    "zh": "Detailed data collection time",
+    "zh": "Data(detailed) collection time",
     "service_id": "TTL07887"
   },
   "DSC07888": {
     "en": "There is no pending data for the selected Pod at the time of inquiry.",
-    "ja": "照会時点で選択したポッドのペンディングデータはありません。",
+    "ja": "照会した時点では、選択したPodのPendingが存在しません。",
     "ko": "조회 시점에 선택한 Pod의 Pending 데이터가 없습니다.",
     "zh": "There is no pending data for the selected Pod at the time of inquiry.",
     "service_id": "DSC07888"
   },
   "BTN07889": {
-    "en": "return to list",
+    "en": "Return to List",
     "ja": "リストに戻る",
     "ko": "목록으로 돌아가기",
-    "zh": "return to list",
+    "zh": "Return to List",
     "service_id": "BTN07889"
   },
   "TLT07890": {
@@ -54384,31 +54384,31 @@
     "service_id": "TLT07890"
   },
   "TTL07891": {
-    "en": "More information",
+    "en": "Details",
     "ja": "詳細情報",
     "ko": "상세정보",
-    "zh": "More information",
+    "zh": "Details",
     "service_id": "TTL07891"
   },
   "TTL07892": {
     "en": "Copy URL",
-    "ja": "URLをコピー",
+    "ja": "URLのコピー",
     "ko": "URL 복사",
     "zh": "Copy URL",
     "service_id": "TTL07892"
   },
   "NTC07893": {
-    "en": "If you do not fill out the Host Name entry, it will be difficult to identify your server. Be sure to enter this field.",
-    "ja": "Host Name項目を作成しないと、サーバーを特定できません。この項目を必ず入力してください。",
+    "en": "If you do not fill out the Host Name entry, it will be difficult to identify the server. Please enter this field.",
+    "ja": "Host Name項目を作成しないと、サーバーを識別することが難しくなる場合があります。この項目を必ず入力してください。",
     "ko": "Host Name 항목을 작성하지 않으면 서버를 식별하기 어렵습니다. 이 항목을 반드시 입력하세요.",
-    "zh": "If you do not fill out the Host Name entry, it will be difficult to identify your server. Be sure to enter this field.",
+    "zh": "If you do not fill out the Host Name entry, it will be difficult to identify the server. Please enter this field.",
     "service_id": "NTC07893"
   },
   "NTC07894": {
-    "en": "Connection failed due to reasons such as newly restoring or reinstalling the app on the mobile device.{br}Mobile devices that fail to connect are automatically excluded from receiving notifications.",
-    "ja": "モバイルデバイスのアプリを復元したか、再インストールなどの理由で接続に失敗しました。{br}接続に失敗したモバイルデバイスは、通知の受信対象から自動的に除外されます。",
+    "en": "Connection failed due to reasons such as restoring or reinstalling the app on the mobile device.{br}Mobile devices with connection failure are automatically excluded from notification target.",
+    "ja": "モバイルのアプリを復元、または再インストールしたため、接続に失敗しました。{br}接続に失敗したモバイルは、アラート通知の受信先から除外されます。",
     "ko": "모바일 기기의 앱을 새로 복원했거나 재설치 등의 사유로 연결에 실패했습니다.{br}연결에 실패한 모바일 기기는 알림 수신 대상에서 자동 제외됩니다.",
-    "zh": "Connection failed due to reasons such as newly restoring or reinstalling the app on the mobile device.{br}Mobile devices that fail to connect are automatically excluded from receiving notifications.",
+    "zh": "Connection failed due to reasons such as restoring or reinstalling the app on the mobile device.{br}Mobile devices with connection failure are automatically excluded from notification target.",
     "service_id": "NTC07894"
   },
   "DSC07895": {
@@ -54420,7 +54420,7 @@
   },
   "DSC07896": {
     "en": "Enter or select {dataKey}.",
-    "ja": "{dataKey}を入力または選択してください。",
+    "ja": "{dataKey}を入力、または選択してください。",
     "ko": "{dataKey} 을(를) 입력하거나 선택하세요.",
     "zh": "Enter or select {dataKey}.",
     "service_id": "DSC07896"
@@ -54434,10 +54434,87 @@
   },
   "NTC07898": {
     "en": "This feature is only supported by the {supported_platform} agent.",
-    "ja": "これは{supported_platform}エージェントのみをサポートする機能です。",
+    "ja": "この機能は、{supported_platform}エージェントのみに対応しています。",
     "ko": "해당 기능은 {supported_platform} 에이전트만 지원하는 기능입니다.",
     "zh": "This feature is only supported by the {supported_platform} agent.",
     "service_id": "NTC07898"
+  },
+  "DSC07899": {
+    "en": "There are no containers running.",
+    "ja": "実行されたコンテナはありません。",
+    "ko": "실행된 컨테이너가 없습니다.",
+    "zh": "There are no containers running.",
+    "service_id": "DSC07899"
+  },
+  "TTL07900": {
+    "en": "Pending data collection time",
+    "ja": "Pendingデータの収集時刻",
+    "ko": "Pending 데이터 수집 시각",
+    "zh": "Pending data collection time",
+    "service_id": "TTL07900"
+  },
+  "DSC07901": {
+    "en": "Please enter your 10-character business registration number.",
+    "ja": "事業者登録番号を10文字で入力してください。",
+    "ko": "사업자 등록 번호를 10자로 입력해주세요.",
+    "zh": "Please enter your 10-character business registration number.",
+    "service_id": "DSC07901"
+  },
+  "DSC07902": {
+    "en": "Please verify your business registration number.",
+    "ja": "事業者登録番号を認証してください。",
+    "ko": "사업자 등록 번호를 인증해 주세요.",
+    "zh": "Please verify your business registration number.",
+    "service_id": "DSC07902"
+  },
+  "TTL07903": {
+    "en": "Featured applications group widget (simplified)",
+    "ja": "推奨アプリケーショングループのウィジェット",
+    "ko": "추천 애플리케이션 그룹 위젯 (간소화)",
+    "zh": "Featured Applications Group Widget (simplified)",
+    "service_id": "TTL07903"
+  },
+  "TTL07904": {
+    "en": "Featured server group widget (simplified)",
+    "ja": "推奨サーバーグループのウィジェット",
+    "ko": "추천 서버 그룹 위젯 (간소화)",
+    "zh": "Featured Server Group Widget (simplified)",
+    "service_id": "TTL07904"
+  },
+  "DSC07905": {
+    "en": "4. Select Identity > My profile at the top right.",
+    "ja": "4. 右上の Identity > My profile を選択します。",
+    "ko": "4. 오른쪽 상단의 Identity > My profile을 선택하세요.",
+    "zh": "4. Select Identity > My profile at the top right.",
+    "service_id": "DSC07905"
+  },
+  "DSC07906": {
+    "en": "- Click API Keys at the bottom left.",
+    "ja": "- 左下のAPI Keysをクリックします。",
+    "ko": "- 왼쪽 하단의 API Keys를 클릭합니다.",
+    "zh": "- Click API Keys at the bottom left.",
+    "service_id": "DSC07906"
+  },
+  "DSC07907": {
+    "en": "- Click the ‘Add API Key’ button.",
+    "ja": "- 「Add API Key」ボタンをクリックします。",
+    "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
+    "zh": "- Click the ‘Add API Key’ button.",
+    "service_id": "DSC07907"
+  },
+  "DSC07908": {
+    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "ja": "- ラジオボタンの「Paste Public Key」を選択して、手順2で受信したRSA Public Keyを入力します。",
+    "ko": "- 라디오 버튼의 'Paste Public Key'를 선택하여 2단계에서 받은 RSA Public Key를 입력합니다. ",
+    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "service_id": "DSC07908"
+  },
+  "DSC07909": {
+    "en": "- Upon completion of addition, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
+    "ja": "- 追加完了時にユーザー、テナンシー情報を画面で確認できます。この情報をメモ帳にコピーします。",
+    "ko": "- 추가 완료 시 user, tenancy 정보를 화면에서 확인할 수 있습니다. 이 정보를 메모장에 복사합니다.",
+    "zh": "- Upon completion of addition, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
+    "service_id": "DSC07909"
   },
   "": {
     "en": "#VALUE!",
