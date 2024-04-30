@@ -208,6 +208,18 @@ function colsToJson(data){
     "ko": "에이전트 액티브 트랜잭션"
   }
 
+  rd["AA021"] = {
+    "en": "Today's Transaction (m)",
+    "ja": "本日TX (m)",
+    "ko": "금일 트랜잭션 (m)"
+  }
+
+  rd["AA022"] = {
+    "en": "Active Transaction",
+    "ja": "エージェントアクティブTX",
+    "ko": "액티브 트랜잭션"
+  }
+
   rd["yaxis"] = {
     "en": "Y Auto",
     "ja": "Y軸自動",

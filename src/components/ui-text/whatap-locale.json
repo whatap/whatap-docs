@@ -54745,6 +54745,16 @@
     "ja": "エージェントアクティブTX",
     "ko": "에이전트 액티브 트랜잭션"
   },
+  "AA021": {
+    "en": "Today's Transaction (m)",
+    "ja": "本日TX (m)",
+    "ko": "금일 트랜잭션 (m)"
+  },
+  "AA022": {
+    "en": "Active Transaction",
+    "ja": "エージェントアクティブTX",
+    "ko": "액티브 트랜잭션"
+  },
   "yaxis": {
     "en": "Y Auto",
     "ja": "Y軸自動",
