@@ -4,6 +4,7 @@
 /.credentials
 /pdf
 /node_modules
+/wip-js
 sheets.googleapis.com-whatap-locale.json
 
 # Generated files
