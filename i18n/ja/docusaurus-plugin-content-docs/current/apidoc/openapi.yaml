@@ -1,0 +1,3019 @@
+openapi: 3.0.0
+info:
+  title: WhaTap Open API
+  version: 1.0.0
+  description: >
+    ## Open API
+
+
+    収集中のモニタリング情報を抽出して活用する場合、Open APIを通じて該当情報を抽出できる機能を提供します。
+    アカウントのAPIトークン、プロジェクトAPIトークン、およびプロジェクトコードをパラメータとして伝達し、収集された情報を取得することができます。
+
+
+    ## Open API Token確認
+
+
+    トークンはアカウントAPIトークンとプロジェクトAPIトークンに区分されます。
+    アカウントAPIトークンはプロジェクトの一覧情報を取得するために活用されます。また、プロジェクトAPIトークンはプロジェクトのモニタリング情報を取得するために活用されます。
+
+
+    プロジェクトコードは、プロジェクトに入る際にブラウザ画面上部のウィンドウまたはタブタイトルに「`[{プロジェクトコード}]` Cloud
+    Application Monitoring」のように表示される情報を通じて確認することができます。
+    APIトークンを変更するには、各画面の***再発行***または***トークン再発行***ボタンをクリックしてください。
+
+
+    <div class="api-guide">
+
+
+    | 区分 | キー | 設定値 | 備考 |
+
+    | -- | --| -- | --|
+
+    | ヘッダー | `x-whatap-token` | APIトークン | アカウントAPIトークン |
+
+    | ヘッダー | `x-whatap-token` | APIトークン | プロジェクトAPIトークン |
+
+    | ヘッダー | `x-whatap-pcode` | プロジェクトコード | 画面ウィンドウまたはブラウザのタブタイトルを確認してください |
+
+
+    </div>
+
+
+    ### アカウントトークン確認
+
+
+    1. 画面の右上にあるプロフィールアイコンを選択してください。
+
+
+    1. ポップアップメニューが表示されたら、***アカウント管理***ボタンをクリックしてください。
+
+
+    1. 画面を下にスクロールし、***APIトークン***セクションへ移動してください。
+
+
+    ### プロジェクトトークン確認
+
+
+    1. ホーム画面からプロジェクトを選択してください。 
+
+
+    1. プロジェクトに入った後、左側の***管理*** &gt; ***プロジェクト管理***メニューを選択してください。
+
+
+    1. ***APIトークン***項目を確認してください。
+servers:
+  - url: https://api.whatap.io
+tags:
+  - name: APM Spot 정보 조회
+    description: アプリケーションモニタリングプロジェクトのエージェント情報および関連指標を照会できるAPIの一覧を案内します。
+  - name: APM 통계 데이터 조회
+    description: アプリケーションモニタリングプロジェクトの統計データを照会できるAPIの一覧を案内します。
+  - name: Server Spot 정보 조회
+    description: サーバーモニタリングプロジェクトのエージェント情報および関連指標を照会できるAPIの一覧を案内します。
+  - name: Server 통계 데이터 조회
+    description: サーバーモニタリングプロジェクトの統計データを照会できるAPIの一覧を案内します。
+  - name: Database 파라미터 조회
+    description: データベースのパラメータの関連事項を照会できます。
+  - name: Database SQL 조회
+    description: データベースのSQL関連事項を照会できます。
+  - name: MXQL Open API 호출하기
+  - name: MXQL Open API 사용 안내
+    description: >
+      MXQLを使用する方法は次のとおりです。
+
+
+      - 直接MXQLクエリを作成してデータを表示する方法
+
+      -
+      [次の文書](../mxql/mxql-guide#custom-query-saas)を使用して、「**SaaSサービスで提供する事前に定義されたMXQLクエリの一覧**」でデータを参照する方法
+
+
+      したがって、それぞれの場合に使用されるAPIのパスが異なります。 
+
+
+      <div class="api-guide">
+
+
+      | MXQL使用方法 | API |
+
+      | -- | -- |
+
+      | 直接MXQLクエリを作成する場合 | [MXQL text
+      API](#tag/MXQL-Open-API/paths/~1open~1api~1flush~1mxql~1text/post) |
+
+      | 「**SaaS
+      サービスで提供する事前に定義されたMXQLクエリの一覧**」を使用する場合、([次の文書](../mxql/mxql-guide#custom-query-saas)
+      参照) | [MXQL path
+      API](#tag/MXQL-Open-API/paths/~1open~1api~1flush~1mxql~1path/post) |
+
+
+      </div>
+
+
+      OpenAPIの呼び出し時、ヘッダーに含まれる内容は次のとおりです。
+
+
+      <div class="api-guide">
+
+
+      | 区分 | キー | 設定値 | 備考 |
+
+      | ---- | --- | ------- | ---- |
+
+      | ヘッダー | x-whatap-token | APIトークン `{{PROJECT API TOKEN}}` |
+      プロジェクトAPIトークン：プロジェクト選択 > ***管理*** > ***プロジェクト管理*** > ***APIトークン*** |
+
+      | ヘッダー | x-whatap-pcode | プロジェクトコード `{{projectCode}}` | プロジェクトコード：プロジェクト選択
+      > ***管理*** > ***プロジェクト管理*** > ***プロジェクトコード*** |
+
+
+      </div>
+
+
+      **MXQL Open APIの制限事項**
+
+
+      一度のリクエストで照会できる期間は最大31日です。
+x-tagGroups:
+  - name: 메타성 정보 조회
+    tags:
+      - 프로젝트
+      - 그룹
+      - 에이전트
+  - name: Appication
+    tags:
+      - APM Spot 정보 조회
+      - APM 통계 데이터 조회
+  - name: Server
+    tags:
+      - Server Spot 정보 조회
+      - Server 통계 데이터 조회
+  - name: Database
+    tags:
+      - Database 파라미터 조회
+      - Database SQL 조회
+  - name: MXQL Open API
+    tags:
+      - MXQL Open API 사용 안내
+      - MXQL Open API 호출하기
+paths:
+  /open/api/json/projects:
+    get:
+      summary: プロジェクトリストの照会
+      operationId: getProjectsList
+      description: プロジェクト一覧を照会するAPIです。
+      tags:
+        - 프로젝트
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        groupName:
+                          type: string
+                          description: プロジェクト上の親グループ名
+                        projectCode:
+                          type: integer
+                          description: プロジェクトコード
+                        projectName:
+                          type: string
+                          description: プロジェクト名
+                        createTime:
+                          type: string
+                          format: date-time
+                          description: プロジェクト作成日
+                        lastUpdatedTime:
+                          type: string
+                          format: date-time
+                          description: プロジェクト編集日
+                        status:
+                          type: string
+                          description: プロジェクトステータス
+                          enum:
+                            - pending
+                            - trial
+                            - subscribe
+                            - close_pending
+                            - limited
+                            - closed
+                            - trial_limited
+                        productType:
+                          type: string
+                          description: サーバータイプ
+                        platform:
+                          type: string
+                          description: サーバープラットフォーム
+                        gatewayName:
+                          type: string
+                          description: データサーバーリージョン
+                        apiToken:
+                          type: string
+                          description: プロジェクトAPIトークン
+                  accountEmail:
+                    type: string
+                    description: ユーザーアカウントのメールアドレス
+                  total:
+                    type: integer
+                    description: プロジェクト数
+                example:
+                  data:
+                    - groupName: ''
+                      projectCode: 35
+                      projectName: APM_TEST2
+                      createTime: '2018-10-19T07:17:03.774'
+                      status: subscribe
+                      productType: APM
+                      platform: JAVA
+                      gatewayName: LOCAL
+                      apiToken: 5**********************R
+                  accountEmail: xxx@whatap.io
+                  total: 6
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/projects"
+  /open/api/json/project:
+    get:
+      summary: プロジェクト情報照会
+      description: アプリケーションおよびサーバー製品のプロジェクト情報を照会するAPIです。
+      operationId: getProjectInfo
+      tags:
+        - 프로젝트
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: schemas.yaml#/APM
+                  - $ref: schemas.yaml#/Server
+              examples:
+                apm:
+                  summary: Application
+                  value:
+                    platform: JAVA
+                    createTime: Tue Sep 18 08:34:27 GMT 2018
+                    gatewayName: Office-OTE
+                    projectCode: 1234
+                    status: Subscribe
+                    lastUpdatedTime: Tue Sep 18 08:34:34 GMT 2018
+                    name: SEO_APM
+                    productType: APM
+                server:
+                  summary: Server
+                  value:
+                    pname: LOCAL_PC
+                    timezone: 9
+                    regionName: LOCAL
+                    values:
+                      servers:
+                        - public_ip: 192.168.1.0
+                          os_cpuvendor: Intel(R) Core(TM) i7-8550U CPU 1.80GHz
+                          agent_created: '2018-11-18T07:17:31.216Z'
+                          ip: 192.168.1.0
+                          os_arch: amd64
+                          actTime: 1572406264112
+                          cpu_cores: '8'
+                          oid: -1030311093
+                          isActive: true
+                          okind: ''
+                          version: 1.2.4
+                          tags:
+                            - network:169.254.0.0/16
+                            - network:192.168.1.0/24
+                            - java
+                            - OpenVpn
+                            - oracle
+                            - ftp
+                          inactTime: 0
+                          oname: DESKTOP-KEIPLT5
+                          os_name: windows
+                          startTime: '2018-11-18T07:17:43.602Z'
+                          os_memory: '17036419072'
+                          os_status: warning
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/project"
+  /open/json/agents:
+    get:
+      summary: エージェント状態とホストIP照会
+      description: プロジェクト内のエアジェントの状態およびIPアドレスを照会するAPIです。
+      operationId: getAgentInfo
+      tags:
+        - 에이전트
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        host_ip:
+                          type: string
+                          format: ipv4
+                          description: IPアドレス
+                        oname:
+                          type: string
+                          description: エージェント名
+                        active:
+                          type: boolean
+                          description: エージェントの活性化状態の有無
+              example:
+                data:
+                  - host_ip: 127.0.0.1
+                    oname: TC-29-96-8082
+                    active: true
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/agents"
+  /open/api/json/project/{projectCode}/members:
+    get:
+      summary: プロジェクトメンバー一覧を参照
+      description: プロジェクトに所属するメンバーの一覧を照会するAPIです。
+      operationId: getProjectMemberList
+      tags:
+        - 프로젝트
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/ProjectCodePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        email:
+                          type: string
+                          description: ユーザーアカウントのメールアドレス
+                        name:
+                          type: string
+                          description: ユーザー名
+                        desc:
+                          type: string
+                          description: ユーザーアカウントの説明
+                        sms:
+                          type: string
+                          description: ユーザー電話番号
+                  total:
+                    type: integer
+                    description: プロジェクトメンバー数
+              example:
+                data:
+                  - email: honggildong@whatap.io
+                    name: 홍길동
+                    desc: ''
+                    sms: 010XXXXXXX
+                totla: 8
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/project/{projectCode}/members"
+  /open/api/json/groups:
+    get:
+      summary: グループ一覧の表示
+      description: ユーザーが所属するグループの一覧を照会するAPIです。
+      operationId: getGroupList
+      tags:
+        - 그룹
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        groupName:
+                          type: string
+                          description: グループ名
+                        groupKey:
+                          type: string
+                          description: グループ固有識別子(ID)
+                        description:
+                          type: string
+                          description: グループの説明
+                  total:
+                    type: integer
+                    description: グループ数
+              example:
+                data:
+                  - groupName: WHATAP APM
+                    groupKey: grp****ab123kskd*****q
+                    description: APM Group
+                total: 3
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/v2/json/groups"
+  /open/api/json/group/{groupKey}/members:
+    get:
+      summary: グループメンバーのリストを表示
+      description: ユーザーが所属するグループのメンバー一覧を照会するAPIです。
+      operationId: getGroupMemberList
+      tags:
+        - 그룹
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/GroupKeyPath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        email:
+                          type: string
+                          description: ユーザーアカウントのメールアドレス
+                        name:
+                          type: string
+                          description: ユーザー名
+                        desc:
+                          type: string
+                          description: ユーザーアカウントの説明
+                        sms:
+                          type: string
+                          description: ユーザー電話番号
+                  total:
+                    type: integer
+                    description: グループメンバー数
+              example:
+                data:
+                  - email: honggildong@whatap.io
+                    name: 홍길동
+                    desc: ''
+                    sms: 010XXXXXXX
+                totla: 8
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/group/{groupKey}/members"
+  /open/api/json/group/{groupKey}/projects:
+    get:
+      summary: グループに含まれるプロジェクトを表示
+      description: グループに含まれたプロジェクトのメタ情報を照会するAPIです。
+      operationId: getGroupProjectList
+      tags:
+        - 그룹
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/GroupKeyPath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        projectCode:
+                          type: integer
+                          description: プロジェクトコード
+                        name:
+                          type: string
+                          description: プロジェクト名
+                        status:
+                          type: string
+                          description: プロジェクトステータス
+                          enum:
+                            - pending
+                            - trial
+                            - subscribe
+                            - close_pending
+                            - limited
+                            - closed
+                            - trial_limited
+                        productType:
+                          type: string
+                          description: プロジェクトの製品タイプ
+                        platform:
+                          type: string
+                          description: プロジェクトの製品プラットフォーム
+                        gatewayName:
+                          type: string
+                          description: データサーバーリージョン
+              example:
+                data:
+                  - projectCode: 35
+                    name: APM_TEST2
+                    status: Subscribe
+                    productType: APM
+                    platform: JAVA
+                    gatewayName: LOCAL
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
+  /open/api/v2/agent/list:
+    post:
+      summary: oid一覧呼び出し
+      description: >
+        ユーザーが表示したい時間帯を有効になっているエージェント情報を確認できるAPIです。
+        照会時間(`stime`、`etime`)は一日に制限され、時間単位はms(millisecond、ms)です。
+
+
+        例示で作成されたサンプルコードのうち、`stime`、`etime`のパラメータ値は、ユーザー環境に合わせて変更して利用してください。
+        パラメータ値は、様々なフォーマットに変更してリクエストできます。
+
+
+        * 1693475430087 (unix timestamp)
+
+        * `yyyyMMddHHmmss`
+
+        * `yyyyMMddHHmm`
+
+        * `MMddHHmmss`
+
+        * `MMddHHmm`
+      tags:
+        - 에이전트
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                stime:
+                  type: integer
+                  format: int64
+                  description: 照会開始時間(UNIX epoch time、millisecond)
+                etime:
+                  type: integer
+                  format: int64
+                  description: 照会終了時間(UNIX epoch time、millisecond)
+            example:
+              stime: 1690850183000
+              etime: 1693321200000
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 呼び出し成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stime:
+                    type: integer
+                    format: int64
+                    description: 照会開始時間(UNIX epoch time、millisecond)
+                  etime:
+                    type: integer
+                    format: int64
+                    description: 照会終了時間(UNIX epoch time、millisecond)
+                  timestamp:
+                    type: integer
+                    format: int64
+                    description: データ生成時間(UNIX epoch time、millisecond)
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        oid:
+                          type: integer
+                          description: エージェント固有識別子(ID)
+                        oname:
+                          type: string
+                          description: エージェント名
+                        alias:
+                          type: string
+                          description: エージェント別称
+                        initial:
+                          type: string
+                          description: エージェントイニシャル
+                        otype:
+                          type: string
+                          description: エージェントタイプ
+                        subtype:
+                          type: string
+                          description: エージェント下位タイプ
+                        active:
+                          type: boolean
+                          description: エージェント活性状態
+                        okind:
+                          type: integer
+                          description: 種類別エージェントグループ固有識別子(ID)
+                        okindName:
+                          type: string
+                          description: 種類別エージェントグループ名
+                        onode:
+                          type: integer
+                          description: サーバー別のエージェントグループの固有識別子(ID)
+                        onodeName:
+                          type: string
+                          description: サーバー別エージェントグループ名
+                        ip:
+                          type: string
+                          description: エージェントIPアドレス
+                        agent.version:
+                          type: string
+                          description: エージェントバージョン
+                        cpuCores:
+                          type: integer
+                          description: エージェントがインストールされているサーバーのCPUコア数
+              example:
+                stime: 1690850183000
+                etime: 1693321200000
+                timestamp: 1693388196965
+                data:
+                  - oid: 757639646
+                    oname: DBX-0-107-3306
+                    alias: ''
+                    initial: ''
+                    otype: database
+                    subtype: '0'
+                    active: false
+                    okind: 0
+                    okindName: ''
+                    onode: 0
+                    onodeName: ''
+                    ip: ''
+                    agent.version: ''
+                    cpuCores: 0
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location \
+            'https://api.whatap.io/open/api/v2/agent/list' \
+            -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
+            -H 'x-whatap-pcode: {{projectCode}}' \
+            -d '{"stime":{stime},"etime":{etime}}'
+  /open/api/json/spot:
+    get:
+      summary: すべての情報照会
+      operationId: getApmAllinfo
+      description: アプリケーションモニタリングプロジェクトのすべての情報を照会するAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/getApmAllinfo
+              example:
+                pcode: 8
+                act_agent: '6'
+                inact_agent: '6'
+                host: '1'
+                cpucore: '2'
+                txcount: '459'
+                tps: '93.07'
+                user: '1007'
+                actx: '149'
+                rtime: '1873'
+                cpu: '29.35'
+                threadpool_active: '0'
+                threadpool_queue: '0'
+                dbconn_total: '600.0'
+                dbconn_act: '239.0'
+                dbconn_idle: '361.0'
+                act_method: '51'
+                act_sql: '24'
+                act_httpc: '64'
+                act_dbc: '10'
+                act_socket: '0'
+                apdex: '0.9871'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/json/spot"
+  /open/api/act_agent:
+    get:
+      summary: アクティブ状態のエージェント数の照会
+      description: アプリケーションモニタリングプロジェクトで活性化状態のエージェント数を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: アクティブ状態のエージェント数
+              example: 5
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/act_agent"
+  /open/api/inact_agent:
+    get:
+      summary: 非アクティブ状態のエージェント数の照会
+      description: アプリケーションモニタリングプロジェクトで非活性化状態のエージェント数を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 非アクティブ状態のエージェント数
+              example: 2
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/inact_agent"
+  /open/api/host:
+    get:
+      summary: ホスト(HOST) 数
+      description: アプリケーションモニタリングプロジェクトに接続されたホスト(HOST) の数を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: ホスト(HOST) 数
+              example: 5
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/host"
+  /open/api/cpucore:
+    get:
+      summary: ホストCPUコアの合計
+      description: アプリケーションモニタリングプロジェクトに接続されたホスト(HOST) のCPUコア合計を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: CPUコア数
+              example: 16
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/cpucore"
+  /open/api/txcount:
+    get:
+      summary: TX数
+      description: アプリケーションモニタリングプロジェクトでトランザクション数を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: TX数
+              example: 469
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/txcount"
+  /open/api/tps:
+    get:
+      summary: TPS
+      description: >-
+        アプリケーションモニタリングプロジェクトで1秒あたりに処理されたトランザクション数(Transaction per
+        second、TPS)を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: 1秒間に処理されたトランザクション件数
+              example: 92.03
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/tps"
+  /open/api/user:
+    get:
+      summary: アクティブユーザー（5分）
+      description: アプリケーションモニタリングプロジェクトで最近5分以内にトランザクションを発生させたユーザーを測定した同時接続ユーザーを照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 5分間のリアルタイムユーザー数
+              example: 1007
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/user"
+  /open/api/actx:
+    get:
+      summary: アクティブトランザクション
+      description: アプリケーションモニタリングプロジェクトでアクティブトランザクション数を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: アクティブトランザクション数
+              example: 171
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/actx"
+  /open/api/rtime:
+    get:
+      summary: 平均応答時間
+      description: アプリケーションモニタリングプロジェクトで平均リスポンスタイムを照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 平均応答時間
+              example: 1644
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/rtime"
+  /open/api/cpu:
+    get:
+      summary: CPU使用率の平均
+      description: アプリケーションモニタリングプロジェクトで平均CPU使用率を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: CPU使用率の平均
+              example: 9.26
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/cpu"
+  /open/api/apdex:
+    get:
+      summary: Apdex
+      description: >-
+        アプリケーションモニタリングプロジェクトでApdex(Application Performance
+        Index、アプリケーションのユーザー満足度)を照会できるAPIです。
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: Apdex
+              example: 0.9871
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/apdex"
+  /open/api/json/exception/{stime}/{etime}:
+    get:
+      summary: Exception
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、Exception処理された履歴を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ExceptionRecord
+              example:
+                records:
+                  - oids: '[-1459620666]'
+                    time: 1535557500000
+                    classHash: -1811136020
+                    count: 14
+                    service: /account/delete/dept/daegu
+                    class: java.sql.SQLException(0)
+                    serviceHash: 1900616259
+                    snapSeq: '6068699991557528332'
+                    msg: Sql Exception
+                total: 2063
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/exception/{stime}/{etime}"
+  /open/api/json/httpc/{stime}/{etime}:
+    get:
+      summary: HTTP外部呼び出し
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、HTTP外部呼び出し履歴を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/HttpcRecord
+              example:
+                records:
+                  - Sum: 22628
+                    Port: 10002
+                    Url: /remote/account/save/employee/kwangju
+                    Host: 127.0.0.1
+                    Max: 1815
+                    Stdev: '247.95'
+                    Actived: 0
+                    Avg: 1131
+                    HostHash: -675813464
+                    Min: 1002
+                    Error: 0
+                    Total: 20
+                    UrlHash: -243814510
+                total: 4923
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/httpc/{stime}/{etime}"
+  /open/api/json/httpc/{stime}/{etime}/filter/host/{host}/port/{port}:
+    get:
+      summary: HTTP外部呼び出しフィルタリング
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、HTTP外部呼び出し履歴をホストのアドレスとポート番号を基準にフィルタリングして照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+        - name: host
+          in: path
+          required: true
+          schema:
+            type: string
+            description: フィルタリングするホストアドレス
+        - name: port
+          in: path
+          required: true
+          schema:
+            type: string
+            description: フィルタリングするホストポート番号
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/HttpcRecord
+              example:
+                records:
+                  - Service: /sales/remove/unit/kwangju
+                    Host: 127.0.0.1
+                    HostHash: -675813464
+                    Avg: 1080
+                    Error: 0
+                    Sum: 2411644
+                    Port: 10007
+                    Service_hash: -1003301916
+                    Url: /remote/account/save/employee/seoul
+                    Max: 2442
+                    Stdev: '159.01'
+                    UrlHash: 180997672
+                    Total: 2233
+                    Min: 1001
+                  - Service: /product/delete/employee/daejun
+                    Host: 127.0.0.1
+                    HostHash: -675813464
+                    Avg: 1085
+                    Error: 0
+                    Sum: 2075036
+                    Port: 10007
+                    Service_hash: 2100205994
+                    Url: /remote/account/save/employee/pusan
+                    Max: 2462
+                    Stdev: '173.06'
+                    UrlHash: -924053750
+                    Total: 1911
+                    Min: 1001
+                total: 1080
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/httpc/{stime}/{etime}/filter/host/{host}/port/{port}"
+  /open/api/json/sql/{stime}/{etime}:
+    get:
+      summary: SQL
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、SQL文を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/SqlQueryRecord
+              example:
+                records:
+                  - time_max: 4164
+                    dbcHash: 450678784
+                    db: jdbc:mysql://localhost:3306,localhost:3310/fake
+                    time_min: 0
+                    fetch_count: 0
+                    hash: 796628118
+                    fetch_time: 0
+                    sql_crud: 0
+                    count_total: 5224
+                    count_error: 0
+                    sql: update table set x=# where key=#
+                    time_sum: 581391
+                    time_avg: 111
+                    time_std: '240.79'
+                    count_actived: 0
+                total: 130
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/sql/{stime}/{etime}"
+  /open/api/json/remote/{stime}/{etime}:
+    get:
+      summary: Client IP
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、遠隔クライアントIPを照会できるAPIです。
+        WhaTapは、クライアントに関する情報をデフォルトで保存します。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/RemoteClientIpRecord
+              example:
+                records:
+                  - count: 86
+                    city: Winnipeg
+                    country: CA (CANADA)
+                    ip: 140.193.83.68
+                total: 1000
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/remote/{stime}/{etime}"
+  /open/api/json/transaction/{stime}/{etime}:
+    get:
+      summary: トランザクション
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、発生したトランザクション履歴を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/TransactionsRecord
+              example:
+                records:
+                  - apdex_tolerated: 98
+                    apdex_satisfied: 279
+                    apdex: 0.830379746835443
+                    time_max: 44735
+                    sql_fetch_time: 363
+                    sql_time: 2628663
+                    count: 10743
+                    error: 29
+                    sql_count: 22635
+                    hash: -1485863373
+                    sql_fetch: 6741607
+                    httpc_avg: 1084
+                    cpu_avg: 0
+                    time_sum: 19911778
+                    time_avg: 1853
+                    httpc_count: 7072
+                    service: /account/save/employee/seoul
+                    mem_avg: 0
+                total: 1080
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/transaction/{stime}/{etime}"
+  /open/api/json/heap_use/{stime}/{etime}/avg:
+    get:
+      summary: Heap使用量 - 統計平均値
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、Heap使用量に対する統計平均値を照会できるAPIです。
+        照会時間は1時間以内に制限し、ミリ秒(millisecond、ms) 単位です。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/HeapUsageRecord
+              example:
+                pcode: 5490
+                stime: 1677747600000
+                etime: 1677749594269
+                timeMerge: avg
+                unit: byte
+                data:
+                  - oid: -1143239575
+                    oname: demo-8101
+                    heap_use: '36121554.72'
+                  - oid: -857948929
+                    oname: demo-8105
+                    heap_use: '37498925.139'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/heap_use/{stime}/{etime}/avg"
+  /open/api/json/heap_use/{stime}/{etime}/max:
+    get:
+      summary: Heap使用量 - 統計最大値
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、Heap使用量に対する統計最大値を照会できるAPIです。
+        照会時間は1時間以内に制限し、ミリ秒(millisecond、ms) 単位です。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/HeapUsageRecord
+              example:
+                pcode: 5490
+                stime: 1677747600000
+                etime: 1677749594269
+                timeMerge: max
+                unit: byte
+                data:
+                  - oid: -1143239575
+                    oname: demo-8101
+                    heap_use: '36121554.72'
+                  - oid: -857948929
+                    oname: demo-8105
+                    heap_use: '37498925.139'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/heap_use/{stime}/{etime}/max"
+  /open/api/json/{metric_type}/{stime}/{etime}:
+    get:
+      summary: エージェントデータ照会
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、エージェント全体のデータを照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/MetricTypePath
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/AgentEachdata
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objects:
+                  - oname: '8080'
+                    oid: -1234257485
+                    series:
+                      - - 1536050100000
+                        - 95.2
+                      - - 1536050400000
+                        - 85.3
+                      - - 1536050700000
+                        - 91.43
+                  - oname: TC-29-96-8082
+                    oid: 1482741919
+                    series:
+                      - - 1536050100000
+                        - 98.11
+                      - - 1536050400000
+                        - 81.44
+                      - - 1536050700000
+                        - 90.05
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}"
+  /open/api/json/{metric_type}/{stime}/{etime}/avg:
+    get:
+      summary: エージェント平均データ照会
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、エージェント全体の平均データを照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/MetricTypeAvgPath
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/AgentEachAvgdata
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objectMerge: avg
+                series:
+                  - - 1536050100000
+                    - 122.86
+                  - - 1536050400000
+                    - 99.26
+                  - - 1536050700000
+                    - 109.68
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/avg"
+  /open/api/json/{metric_type}/{stime}/{etime}/{oids}:
+    get:
+      summary: 指定エージェントデータ照会
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、指定したエージェント(oids)のスレッド数データを照会できるAPIです。
+        エージェント(oids)は、コンマ(,)を区切り記号として複数指定できます。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/MetricTypePath
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+        - $ref: parameters.yaml#/OidPath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/AgentEachdata
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objects:
+                  - oname: '8080'
+                    oid: -1234257485
+                    series:
+                      - - 1536050100000
+                        - 95.2
+                      - - 1536050400000
+                        - 85.3
+                      - - 1536050700000
+                        - 91.43
+                  - oname: TC-29-96-8082
+                    oid: 1482741919
+                    series:
+                      - - 1536050100000
+                        - 98.11
+                      - - 1536050400000
+                        - 81.44
+                      - - 1536050700000
+                        - 90.05
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/{oids}"
+  /open/api/json/{metric_type}/{stime}/{etime}/avg/{oids}:
+    get:
+      summary: 指定エージェント平均データ照会
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、指定したエージェント(oids)の平均データを照会できるAPIです。
+        エージェント(oids)は、コンマ(,)を区切り記号として複数指定できます。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/MetricTypeAvgPath
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/AgentEachAvgdata
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objectMerge: avg
+                series:
+                  - - 1536050100000
+                    - 117.49
+                  - - 1536050400000
+                    - 100.26
+                  - - 1536050700000
+                    - 120.2
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/avg/{oids}"
+  /open/api/json/visitor_5m/{stime}/{etime}:
+    get:
+      summary: 5分単位のアクティブユーザー照会
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、5分単位の同時接続ユーザーを照会できるAPIです。
+        同時接続ユーザーは、最近5分以内にトランザクションを発生させたユーザーを測定した値です。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/VisitorStatic5mRecord
+              example:
+                data:
+                  - - 1554444005000
+                    - 12
+                  - - 1554444010000
+                    - 12
+                pcode: 3000000079
+                stime: 1554444000000
+                etime: 1554444300000
+                total: 59
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_5m/{stime}/{etime}"
+  /open/api/json/visitor_h/{stime}/{etime}:
+    get:
+      summary: 1時間単位のアクティブユーザー照会
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、1時間単位の同時接続ユーザーを照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/VisitorStaticHRecord
+              example:
+                data:
+                  - - 1554444000000
+                    - 18
+                  - - 1554444010000
+                    - 16
+                pcode: 3000000079
+                stime: 1554444000000
+                etime: 1554454800000
+                total: 59
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_h/{stime}/{etime}"
+  /open/api/json/visitor_d/{stime}/{etime}:
+    get:
+      summary: 1日単位のアクティブユーザー照会
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、1日単位の同時接続ユーザーを照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/VisitorStaticDayRecord
+              example:
+                data:
+                  - - 1554163200000
+                    - 1007
+                  - - 1554249600000
+                    - 1007
+                  - - 1554336000000
+                    - 1007
+                pcode: 3000000079
+                stime: 1554163200000
+                etime: 1554422400000
+                total: 3
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_d/{stime}/{etime}"
+  /open/api/json/visitor_m/{stime}/{etime}:
+    get:
+      summary: 1ヵ月単位のアクティブユーザー照会
+      description: >-
+        アプリケーションモニタリングプロジェクトで設定した時間中、1ヵ月単位の同時接続ユーザーを照会できるAPIです。
+        1ヶ月間集計された固有ユーザー統計で、`etime`は`stime`を基準に365日を超えることはできません。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/VisitorStaticMonthRecord
+              example:
+                data:
+                  - stime: 1535760000000
+                    etime: 1538352000000
+                    sdate: Sat Sep 01 00:00:00 GMT 2018
+                    edate: Mon Oct 01 00:00:00 GMT 2018
+                    mau: 1007
+                  - stime: 1538352000000
+                    etime: 1541030400000
+                    sdate: Mon Oct 01 00:00:00 GMT 2018
+                    edate: Thu Nov 01 00:00:00 GMT 2018
+                    mau: 1007
+                pcode: 1234570141
+                stime: 1535760000000
+                etime: 1541030400000
+                sdate: Sat Sep 01 00:00:00 GMT 2018
+                edate: Thu Nov 01 00:00:00 GMT 2018
+                total: 2
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_m/{stime}/{etime}"
+  /open/api/json/{metric_type}/{stime}/{etime}/filter/{filterkey}/{filtereval}:
+    get:
+      summary: 呼出統計フィルタリング
+      description: >
+        プロジェクト間のトランザクション呼び出しの統計またはトランザクションドメイン呼び出しの統計をフィルタリングして照会できます。
+
+
+        * **filterkey**：照会条件キー(`caller_pcode`, `caller_spec` (バージョン),
+        `caller_url`, `spec` (バージョン), `url`)
+
+        * **filterval**：照会条件(`filterkeyが` `caller_url` または
+        `url`の場合、base64でエンコード)
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/CallStaticTypePath
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+        - $ref: parameters.yaml#/FilterkeyPath
+        - $ref: parameters.yaml#/FiltervalPath
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/filter/{filterkey}/{filtereval}"
+  /open/api/json/{metric_type}/{stime}/{etime}/{oids}/filter/{filterkey}/{filtereval}:
+    get:
+      summary: 指定エージェント呼び出し統計フィルタリング
+      description: >
+        指定したエージェントを基準にプロジェクト間のトランザクション呼び出しの統計またはトランザクションドメイン呼び出しの統計をフィルタリングして照会できます。
+
+
+        * **filterkey**：照会条件キー(`caller_pcode`, `caller_spec` (バージョン),
+        `caller_url`, `spec` (バージョン), `url`)
+
+        * **filterval**：照会条件(`filterkeyが` `caller_url` または
+        `url`の場合、base64でエンコード)
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/CallStaticTypePath
+        - $ref: parameters.yaml#/StartTimePath
+        - $ref: parameters.yaml#/EndTimePath
+        - $ref: parameters.yaml#/OidPath
+        - $ref: parameters.yaml#/FilterkeyPath
+        - $ref: parameters.yaml#/FiltervalPath
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/{oids}/filter/{filterkey}/{filtereval}"
+  /open/api/raw/tag/app_counter/tps?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: TPS
+      description: アプリケーションモニタリングプロジェクトで設定した時間の間TPS(Transaction Per Second) データを照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimeQuery
+        - $ref: parameters.yaml#/EndTimeQuery
+        - $ref: parameters.yaml#/TimeMergeQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: TPS数
+              example: '66.0'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/raw/tag/app_counter/tps?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/raw/tag/app_counter/resp_time?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: 平均応答時間
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、平均リスポンスタイムを照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimeQuery
+        - $ref: parameters.yaml#/EndTimeQuery
+        - $ref: parameters.yaml#/TimeMergeQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: number
+                description: 平均応答時間
+              example: 1640
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/raw/tag/app_counter/resp_time?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/raw/tag/app_host_resource/cpu?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: CPU使用率の平均
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、平均CPU使用率を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimeQuery
+        - $ref: parameters.yaml#/EndTimeQuery
+        - $ref: parameters.yaml#/TimeMergeQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            text/plain:
+              schema:
+                type: number
+                description: CPU使用率の平均
+              example: '11.50'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/raw/tag/app_host_resource/cpu?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/tag/db_pool_detail/dbconn?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: データソースあたりのDB Connection数
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、データソース別DB Connection数を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimeQuery
+        - $ref: parameters.yaml#/EndTimeQuery
+        - $ref: parameters.yaml#/TimeMergeQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ApmDBconnCount
+              example:
+                pcode: 35
+                time: 1554163200000
+                dbc_total:
+                  - oid: -963710734
+                    oname: TC-29-96-8082
+                    databaseUrl: jdbc:db:virtual
+                    active: 49
+                    idle: 51
+                    total: 100
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/tag/db_pool_detail/dbconn?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/tag/db_pool_detail/dbconn?etime={etime}:
+    get:
+      summary: データソースあたりのDB Connection数 - 短期照会
+      description: アプリケーションモニタリングプロジェクトで終了時間を基準にデータソース別DB Connection数を照会できるAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapAccoutTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/EndTimeQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ApmDBconnCount
+              example:
+                pcode: 17
+                time: 1667467012037
+                dbc_total:
+                  - oid: -959062357
+                    oname: TC-0-1-8087
+                    databaseUrl: jdbc:db:virtual
+                    active: 63
+                    idle: 37
+                    total: 100
+                  - oid: -1311576515
+                    oname: TC-0-1-8086
+                    databaseUrl: jdbc:db:virtual
+                    active: 10
+                    idle: 90
+                    total: 100
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/tag/db_pool_detail/dbconn?etime={etime}"
+  /open/api/v2/yard/flush:
+    post:
+      summary: IPベースのトランザクション検索
+      description: >-
+        ユーザーが指定した開始時間(`stime`)から1時間、特定IPがリクエストしたトランザクションに対して呼び出し件数の多い順にソートして最大100件のURLリストを送信するAPIです。
+      tags:
+        - APM 통계 데이터 조회
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                path:
+                  type: string
+                pcode:
+                  type: string
+                  description: プロジェクトコード
+                params:
+                  type: object
+                  properties:
+                    stime:
+                      type: interger
+                      format: int64
+                      description: 照会開始時間(UNIX epoch time、millisecond)
+                    filter:
+                      type: object
+                      properties:
+                        ip:
+                          type: string
+                          description: IPアドレス
+            example:
+              type: profiles
+              path: /filter/search
+              pcode: '12345'
+              params:
+                stime: 1690850183000
+                filter:
+                  ip: 10.11.12.13
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 呼び出し成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  elapsed:
+                    type: number
+                    description: 開始時間(`stime`) 基準からの経過時間
+                  count:
+                    type: number
+                    description: HTTPコール件数
+                  url:
+                    type: string
+                    description: クライアントがリクエストしたトランザクション名
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location 'https://api.whatap.io/open/api/v2/yard/flush' \
+              --header 'x-whatap-token: {{PROJECT API TOKEN}}' \
+              --header 'x-whatap-pcode: {{projectCode}}' \
+              --header 'Content-Type: application/json' \
+              --data '{
+                  "type": "profiles",
+                  "path": "/filter/search",
+                  "pcode": "{{projectCode}}",
+                  "params": {
+                    "stime": {{stime}},
+                    "filter": {
+                      "ip": "{{ip}}"
+                    }
+                  }
+                }'
+  /open/json/act_agent:
+    get:
+      summary: アクティブ状態のエージェント数の照会
+      description: サーバーモニタリングプロジェクトで活性化状態のエージェント数を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerAgentCount
+              example:
+                pname: LOCAL_INFRA
+                values: '57.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/act_agent"
+  /open/json/inact_agent:
+    get:
+      summary: 非アクティブ状態のエージェント数の照会
+      description: サーバーモニタリングプロジェクトで非活性化状態のエージェント数を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerAgentCount
+              example:
+                pname: LOCAL_INFRA
+                values: '4.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/inact_agent"
+  /open/json/host:
+    get:
+      summary: ホスト(HOST) 数
+      description: サーバーモニタリングプロジェクトに接続されたホスト(HOST) の数を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerAgentCount
+              example:
+                pname: LOCAL_INFRA
+                values: '57.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/host"
+  /open/json/cpucore:
+    get:
+      summary: ホストCPUコアの合計
+      description: サーバーモニタリングプロジェクトに接続されたホスト(HOST) のCPUコア合計を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerAgentCount
+              example:
+                pname: LOCAL_INFRA
+                values: '108.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/cpucore"
+  /open/json/infra_cpu:
+    get:
+      summary: CPU使用率
+      description: サーバーモニタリングプロジェクトに接続されたホスト(HOST)のCPU使用率を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerCpuUsage
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  mysql-official-demo-03: 0.9009018
+                  php-official-demo: 1.6949158
+                  python-demo-attacker: 0.50099945
+                  virtual-java-agent: 55.08919
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_cpu"
+  /open/json/infra_disk_iops:
+    get:
+      summary: ディスクIOPSの合計
+      description: サーバモニタリングプロジェクトに接続されたホスト(HOST)のディスクIOPSの合計を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerDiskIOPS
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  mysql-official-demo-03:
+                    bps: 8208.67
+                    iops: 1.402849
+                  php-official-demo:
+                    bps: 3951.273
+                    iops: 0.771733
+                  python-demo-attacker:
+                    bps: 7376.34
+                    iops: 1.00048
+                  virtual-java-agent:
+                    bps: 6563.1836
+                    iops: 0.40058494
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_disk_iops"
+  /open/json/infra_net_traffic:
+    get:
+      summary: ネットワークトラフィック（IN／OUT）の合計
+      description: サーバモニタリングプロジェクトに接続されたホスト(HOST)のネットワークトラフィック(IN/OUT)の合算を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerNetworkTraffic
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  mysql-official-demo-03: 128204.76878652698
+                  python-demo-attacker: 16231.465016029671
+                  virtual-java-agent: 10820618.160992496
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_net_traffic"
+  /open/json/infra_proc:
+    get:
+      summary: プロセス状況
+      description: サーバモニタリングプロジェクトに接続されたホスト(HOST)のプロセス状況を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerProc
+              example:
+                pname: LOCAL_INFRA
+                values:
+                  s-p-gtw-03:
+                    - memoryBytes: 1274269696
+                      bps: 819.2
+                      cmd1: java
+                      cpu: 2.8507125
+                    - memoryBytes: 2895872
+                      bps: 0
+                      cmd1: rsyslogd
+                      cpu: 0
+                  t-a-yrd-01:
+                    - memoryBytes: 2583621632
+                      bps: 1175961.5
+                      cmd1: java
+                      cpu: 10.621243
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_proc"
+  /open/json/sm_servers:
+    get:
+      summary: サーバーリスト
+      description: サーバーモニタリングプロジェクトのサーバー一覧を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerList
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  - os.status: warning
+                    oname: php-official-demo
+                    os.name: linux
+                    oid: -1413588424
+                    isActive: true
+                  - os.status: ok
+                    oname: dotnet-official-demo
+                    os.name: windows
+                    oid: -1755389652
+                    isActive: true
+                  - os.status: ok
+                    oname: mysql-official-demo-02
+                    os.name: linux
+                    oid: -1816982090
+                    isActive: true
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/sm_servers"
+  /open/json/sm:
+    get:
+      summary: サーバーモニタリングの詳細
+      description: サーバーモニタリングプロジェクトの各サーバー別の詳細情報を照会できるAPIです。
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              example:
+                pname: LOCAL_INFRA
+                values:
+                  servers:
+                    - public_ip: 192.168.0.1
+                      os_cpuvendor: Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz
+                      agent_created: '49572130779'
+                      ip: 127.0.0.1,10.128.0.1
+                      os_arch: amd64
+                      actTime: 1570672662216
+                      cpu_cores: '1'
+                      oid: -1359816680
+                      isActive: true
+                      version: 1.2.5
+                      tags:
+                        - gateway
+                        - python
+                        - network:10.0.0.0/8
+                        - '@PRX'
+                      inactTime: 0
+                      oname: h-db-prx-01
+                      os_name: linux
+                      startTime: 1570672662000
+                      os_memory: '2088476672'
+                      os_status: ok
+                      snapshot:
+                        disk:
+                          /boot:
+                            writeIops: 0
+                            fileSystem: ext4
+                            mountPoint: /boot
+                            queueLength: 0
+                            usedSpace: 58863616
+                            blksize: 4096
+                            freeSpace: 841175040
+                            display: true
+                            count: 1
+                            readBps: 0
+                            totalSpace: 966778880
+                            ioPercent: 0
+                            mountOption: rw,relatime
+                            deviceId: /dev/sda1
+                            usedPercent: 6.540122985839844
+                            freePercent: 93.45987701416016
+                            writeBps: 0
+                            readIops: 0
+                          /home:
+                            writeIops: 0
+                            fileSystem: ext4
+                            mountPoint: /home
+                            queueLength: 0
+                            usedSpace: 1670574080
+                            blksize: 4096
+                            freeSpace: 69533446144
+                            display: true
+                            count: 1
+                            readBps: 0
+                            totalSpace: 75039498240
+                            ioPercent: 0
+                            mountOption: rw,relatime
+                            deviceId: /dev/sda3
+                            usedPercent: 2.3461761474609375
+                            freePercent: 97.65382385253906
+                            writeBps: 0
+                            readIops: 0
+                          /:
+                            writeIops: 0
+                            fileSystem: ext4
+                            mountPoint: /
+                            queueLength: 0
+                            usedSpace: 5079060480
+                            blksize: 4096
+                            freeSpace: 22798901248
+                            display: true
+                            count: 1
+                            readBps: 0
+                            totalSpace: 29394726912
+                            ioPercent: 0
+                            mountOption: rw,relatime
+                            deviceId: /dev/sda2
+                            usedPercent: 18.218902587890625
+                            freePercent: 81.78109741210938
+                            writeBps: 0
+                            readIops: 0
+                        memory:
+                          shared: 21590016
+                          swapused: 0
+                          buffers: 182550528
+                          available: 1746370560
+                          swaptotal: 0
+                          used: 342106112
+                          pused: 16.380653381347656
+                          slab: 85729280
+                          total: 2088476672
+                          sunreclaim: 23261184
+                          cached: 521756672
+                          pavailable: 83.61934661865234
+                          pagefaults: 0
+                          sreclaimable: 62468096
+                          free: 1167208448
+                          swappused: 0
+                        cpu:
+                          softirq: 0
+                          usr: 0
+                          idle: 100
+                          steal: 0
+                          irq: 0
+                          load5: 0
+                          iowait: 0
+                          sys: 0
+                          nice: 0
+                          load1: 0
+                          load15: 0
+                        open_filedescriptors: 249
+                        netstat:
+                          established: 1
+                          syn_sent: 1
+                          syn_recv: 0
+                          closing: 0
+                          time_wait: 19
+                          last_ack: 0
+                          fin_wait1: 0
+                          close_wait: 0
+                          fin_wait2: 0
+                          listen: 3
+                          unknown: 0
+                        uptime: 16313689
+                        network:
+                          lo:
+                            errorOut: 0
+                            packetOut: 0.3991734786600438
+                            trafficIn: 281.0181289766709
+                            trafficOut: 281.0181289766709
+                            hwAddr: ''
+                            errorIn: 0
+                            ip: 127.0.0.1
+                            count: 1
+                            droppedIn: 0
+                            droppedOut: 0
+                            packetIn: 0.3991734786600438
+                            desc: lo
+                          eth0:
+                            errorOut: 0
+                            packetOut: 8.1830563125309
+                            trafficIn: 11314.173079140282
+                            trafficOut: 19447.731880317337
+                            hwAddr: 00:1d:d8:b7:87:18
+                            errorIn: 0
+                            ip: 10.128.112.133
+                            count: 1
+                            droppedIn: 0
+                            droppedOut: 0
+                            packetIn: 24.549168937592693
+                            desc: eth0
+                  max:
+                    disk:
+                      writeIops: 240.9893
+                      usedPercent: 94.38699
+                      freePercent: 100
+                      usedSpace: 2464956810000
+                      freeSpace: 0
+                      writeBps: 2917852
+                      readBps: 118646.15
+                      readIops: 75.80727
+                      totalSpace: 9223372000000000000
+                      ioPercent: 100
+                      freespace: 158926471000
+                    nic:
+                      errorOut: 0
+                      packetOut: 2175.8743
+                      trafficIn: 4856648
+                      trafficOut: 2503208.8
+                      errorIn: 1
+                      droppedIn: 1
+                      droppedOut: 0
+                      packetIn: 2175.8743
+                    compound_eye_traffic: 1000000000
+                  count:
+                    total: 14
+                    paused: 0
+                    inactive: 0
+                    warning: 1
+                    ok: 13
+                    close: 0
+                    fatal: 0
+                  tags: {}
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/sm"
+  /open/json/stat/sm_stat?{stime}&{etime}&{filter}&{oid}:
+    get:
+      summary: サーバー統計の詳細
+      description: >
+        サーバーモニタリングプロジェクトの統計データを照会できるAPIです。 照会時間は1時間以内に制限し、ミリ秒(millisecond、ms)
+        単位です。
+
+
+        * `filter`：デフォルト値は`m5`であり、時間範囲内で5分の統計を照会するには`m5`、5秒の統計は`s5`,
+        1時間の統計は`h1`を入力してください。
+
+        * `oid`：特定のエージェントを指定して照会する場合は、追加してください。
+
+
+        `oid`以外のパラメータは適用できません。
+      tags:
+        - Server 통계 데이터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/StartTimeQuery
+        - $ref: parameters.yaml#/EndTimeQuery
+        - $ref: parameters.yaml#/FilterQuery
+        - $ref: parameters.yaml#/AOidQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/ServerStatDetails
+              example:
+                servers:
+                  - oid: -1030311093
+                    timeData:
+                      - usedPercent: 69.1
+                        trafficIn: 12113.57
+                        trafficOut: 24781.08
+                        cpu: 4.08
+                        memory_swappused: 15.41
+                        time: 1572341400000
+                        memory_pused: 47.6
+                        ioPercent: 0.26
+                      - usedPercent: 69.1
+                        trafficIn: 12183.97
+                        trafficOut: 25600.59
+                        cpu: 7.89
+                        memory_swappused: 15.5
+                        time: 1572341700000
+                        memory_pused: 47.79
+                        ioPercent: 0.22
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/json/stat/sm_stat?{stime}&{etime}&{filter}&{oid}"
+  /open/api/json/db/database_params?oid={oid}&baseTime={baseTime}&comparisonTime={comparisonTime}:
+    get:
+      summary: パラメータ変更事項照会
+      description: データベースのパラメータの変更を照会できます。
+      tags:
+        - Database 파라미터 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/AOidQuery
+        - $ref: parameters.yaml#/BaseTimeQuery
+        - $ref: parameters.yaml#/CompareTimeQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            applciation/json:
+              schema:
+                type: object
+                properties:
+                  unmatchedKeys:
+                    type: array
+                    description: 基準時間と比較時間で一致しないキーとその値
+                    items:
+                      $ref: schemas.yaml#/UnmatchedKey
+                  baseTime:
+                    type: array
+                    description: 基準時間でのパラメータ一覧
+                    items:
+                      $ref: schemas.yaml#/MatchedParameter
+                  comparisonTime:
+                    type: array
+                    description: 比較時間でのパラメータの一覧
+                    items:
+                      $ref: schemas.yaml#/MatchedParameter
+              example:
+                unmatchedKeys:
+                  - key: Innodb_buffer_pool_load_status(stat)
+                    value:
+                      baseTime: Buffer pool(s) load completed at 230818  2:54:51
+                      comparisonTime: Buffer pool(s) load completed at 230810  6:05:50
+                  - key: Max_used_connections_time(stat)
+                    value:
+                      baseTime: '2023-08-18 23:54:51'
+                      comparisonTime: '2023-08-10 06:05:51'
+                baseTime:
+                  - key: activate_all_roles_on_login
+                    value: 'OFF'
+                  - key: admin_address
+                    value: ''
+                comparisonTime:
+                  - key: activate_all_roles_on_login
+                    value: 'OFF'
+                  - key: admin_address
+                    value: ''
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/db/database_params?oid={oid}&baseTime={baseTime}&comparisonTime={comparisonTime}"
+  /open/api/json/db/statistics/sql?oids={oids}&period={period}&date={date}:
+    get:
+      summary: SQL統計TopN
+      description: 設定した時間中、最も多く利用されたSQL統計情報を照会できます。
+      tags:
+        - Database SQL 조회
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+        - $ref: parameters.yaml#/OidQuery
+        - $ref: parameters.yaml#/PeriodQuery
+        - $ref: parameters.yaml#/DateQuery
+        - $ref: parameters.yaml#/TopNQuery
+        - $ref: parameters.yaml#/OrderQuery
+        - $ref: parameters.yaml#/CategoryQuery
+        - $ref: parameters.yaml#/NameInCategoryQuery
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/TopSqlStatisticsRecords
+              example:
+                records:
+                  - sql_execute_cnt: 33863
+                    sql_elapse: 643
+                    sqlHash: 1559625025
+                    sql_elapse_max: 5
+                    onames: DBX-0-102-3306,DBX-0-162-3306
+                    user: kwlee
+                    sql: >-
+                      select /* WhaTap6D#5 */ * from
+                      information_schema.processlist where command<>'#'
+                  - sql_execute_cnt: 28387
+                    sql_elapse: 0
+                    sqlHash: -499643965
+                    sql_elapse_max: 0
+                    onames: DBX-0-107-3306
+                    user: whatap
+                    sql: >-
+                      select
+                      id,user,host,db,command,time,state,info,time_ms,stage,max_stage,progress,
+                      memory_used,max_memory_used,examined_rows,query_id,tid
+                      from information_schema.processlist where command<>'#' and
+                      command<>'#'
+                topN: 10
+                total: 129
+                retrievedStartTime: 1692921600000
+                retrievedEndTime: 1693007999000
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/db/statistics/sql?oids={oids}&period={period}&date={date}"
+  /open/api/flush/mxql/text:
+    post:
+      summary: MXQL text API
+      description: >
+        次の図は、MXQL実行結果の例です。
+
+
+        ![MXQL実行結果の例](https://img.whatap.io/media/images/open_api_mxql_text_example.png)
+      tags:
+        - MXQL Open API 호출하기
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: schemas.yaml#/MXQLRequest
+            example:
+              stime: 1639016640000
+              etime: 1639016940000
+              mql: |-
+                CATEGORY app_counter
+                OID [ $oidFirst, $oidSecond ]
+                TAGLOAD
+                SELECT
+                INJECT sortByOidDesc
+              limit: 2
+              pageKey: mxql
+              inject:
+                sortByOidDesc: 'ORDER {key : [oid],  sort :[desc]}'
+              param:
+                $oidFirst: '1499132250'
+                $oidSecond: '1670734023'
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      responses:
+        '200':
+          description: 照会成功
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/MXQLtextResponse
+              examples:
+                example1:
+                  summary: 参照されたデータがある場合
+                  value:
+                    - time: 1639016640000
+                      pcode: 101
+                      pname: Virtual
+                      okind: -1085056726
+                      onode: 334634079
+                      oname: 22136-8075
+                      okindName: ote-virtual-1
+                      onodeName: node-1
+                      host_ip: 192.168.1.57
+                      container: ote-8075.service
+                      pid: 22206
+                      type: java
+                      containerKey: 1876424218
+                      tx_count: 58
+                      tx_error: 0
+                      tx_time: 1643.9138
+                      apdex_satisfied: 41
+                      apdex_tolerated: 16
+                      apdex_total: 58
+                      tx_dbc_time: 13.655172
+                      tx_sql_time: 222.15517
+                      tx_httpc_time: 717.4138
+                      sql_count: 129
+                      sql_error: 0
+                      sql_time: 101.387596
+                      sql_fetch_count: 37621
+                      sql_fetch_time: 0.00045187527
+                      httpc_count: 41
+                      httpc_error: 0
+                      httpc_time: 1073.4878
+                      active_tx_count: 20
+                      active_tx_0: 19
+                      active_tx_3: 1
+                      active_tx_8: 0
+                      tps: 13.833333
+                      resp_time: 1628
+                      arrival_rate: 12.6
+                      pack_dropped: 110
+                      metering: 4
+                      _clock_delta_: 180
+                      oid: 1670734023
+                example2:
+                  value: []
+                  summary: 参照されたデータがない場合
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location 'https://api.whatap.io/open/api/flush/mxql/text' \
+            -H 'x-whatap-token: {{PROJECT API TOKEN}}' \
+            -H 'x-whatap-pcode: {{projectCode}}' \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "stime": 1639016640000,
+              "etime": 1639016940000,
+              "mql": "CATEGORY app_counter\nOID [ $oidFirst, $oidSecond ]\nTAGLOAD\nSELECT\nINJECT sortByOidDesc",
+              "limit": 2,
+              "pageKey": "mxql",
+              "inject": {
+                "sortByOidDesc": "ORDER {key : [oid],  sort :[desc]}"
+              },
+              "param": {
+                "$oidFirst": "1499132250",
+                "$oidSecond": "1670734023"
+              }
+            }'
+  /open/api/flush/mxql/path:
+    post:
+      summary: MXQL path API
+      tags:
+        - MXQL Open API 호출하기
+      parameters:
+        - $ref: parameters.yaml#/WhatapTokenHeader
+        - $ref: parameters.yaml#/WhatapPcodeHeader
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: schemas.yaml#/MXQLRequest
+            example:
+              stime: 1639016640000
+              etime: 1639016940000
+              mql: /app/act_tx/agent_with_tx
+              limit: 2
+              pageKey: mxql
+              inject:
+                default: 'CREATE {key : _pk_, value : okindName}'
+              param: {}
+      responses:
+        '200':
+          description: Query executed successfully
+          content:
+            application/json:
+              schema:
+                $ref: schemas.yaml#/MXQLPathResponse
+              examples:
+                example1:
+                  summary: 参照されたデータがある場合
+                  value:
+                    - pcode: 101
+                      pname: Virtual
+                      oid: -1348176005
+                      oname: 22137-8071
+                      otype: ap
+                      okind: -1085056726
+                      okindName: ote-virtual-1
+                      onode: 334634079
+                      onodeName: node-1
+                      type: ap
+                      subtype: java
+                      version: 2.1.0 20211207u
+                      os_name: Linux
+                      ip: 192.168.1.57
+                      container_id: 842770198
+                      metering: 4
+                      status: ok
+                      normal: 12
+                      slow: 1
+                      verySlow: 0
+                      total: 13
+                      _pk_: okindName
+                    - pcode: 101
+                      pname: Virtual
+                      oid: -883058050
+                      oname: 22141-8070
+                      otype: ap
+                      okind: -933992004
+                      okindName: ote-virtual-0
+                      onode: 1693789385
+                      onodeName: node-0
+                      type: ap
+                      subtype: java
+                      version: 2.1.0 20211207u
+                      os_name: Linux
+                      ip: 192.168.1.57
+                      container_id: 624997205
+                      metering: 4
+                      status: ok
+                      normal: 19
+                      slow: 1
+                      verySlow: 0
+                      total: 20
+                      _pk_: okindName
+                example2:
+                  summary: 参照されたデータがない場合
+                  value: []
