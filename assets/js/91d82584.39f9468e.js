@@ -78,8 +78,10 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     em: "em",
+    li: "li",
     p: "p",
     strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {InDoc, Xclude} = _components;
@@ -96,11 +98,35 @@ function _createMdxContent(props) {
           children: "락 트리"
         })
       })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
       product: "cubrid,postgresql,oracle,oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "하루 동안 발생한 Lock의 추이를 분석할 수 있습니다. Lock을 발생시킨 세션(Lock Holder)과 Lock을 대기하고 있는 세션(Lock Waitier)에 대해 트리 구조로 확인할 수 있습니다. 이러한 기능을 통해 특정 시점 발생한 락 정보 Holder와 Waiter 관계를 확인해 쿼리(Query)를 분석할 수 있습니다."
-      })
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "하루 동안 발생한 락(lock)의 추이를 분석하는 도구입니다. 이 기능을 통해 락을 발생시킨 세션(lock holder)과 락을 대기하고 있는 세션(lock waiter)에 대한 트리 구조를 시각적으로 확인할 수 있습니다. 특정 시점에 발생한 락 정보의 holder와 waiter 간의 관계를 분석할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "주요 기능은 다음과 같습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "락 추이 분석"
+            }), ": 설정한 조회 기간 동안 발생한 락의 추이를 시간에 따라 추적하여 그래프로 표시합니다. 이를 통해 락이 어떻게 발생하고 해소되는지를 시각적으로 파악할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "락 Holder 및 Waiter 확인"
+            }), ": 각 락에 대한 holder와 waiter를 트리 구조로 확인할 수 있습니다. 이를 통해 특정 락이 발생한 상황에서 락을 발생시킨 세션과 대기하는 세션 간의 관계를 파악할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "세션 간 관계 분석"
+            }), ": 락을 발생시킨 세션과 대기하는 세션 간의 관계를 분석하여 쿼리 실행 및 트랜잭션 처리 과정에서 발생한 락의 원인을 식별할 수 있습니다."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "이를 통해 데이터베이스 관리자는 락 관련 문제를 신속하게 식별하고 해결할 수 있으며, 데이터베이스 성능을 최적화할 수 있습니다."
+      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
       product: "cubrid,postgresql,oracle,oracle-dma",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {

@@ -331,7 +331,10 @@ function _createMdxContent(props) {
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_appDashboard",
                 className: "uitext"
-              }), " 메뉴에서 분당 트랜잭션 처리 건수 위젯 '금일 트랜잭션 (m)' 추가"]
+              }), " 메뉴에서 분당 트랜잭션 처리량을 표시하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "AA021",
+                className: "uitext"
+              }), " 위젯 추가"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -343,7 +346,10 @@ function _createMdxContent(props) {
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_appDashboard",
                 className: "uitext"
-              }), " 메뉴에서 액티브 트랜잭션 수의 추이 위젯 '액티브 트랜잭션 추이' 추가"]
+              }), " 메뉴에서 액티브 트랜잭션 수의 추이를 표시하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "AA022",
+                className: "uitext"
+              }), " 위젯 추가"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
