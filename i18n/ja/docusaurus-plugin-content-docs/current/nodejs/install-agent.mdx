@@ -70,6 +70,16 @@ Node.jsモニタリングサービスを構成する各ファイルの役割は�
 
 </details>
 
+:::tip
+
+**Next.js**または**Nuxt.js**などのサーバーサイドレンダリング(Server-side Rendering、SSR)フレームワークでアプリケーションをモニタリングするためにCustom Serverの設定が必要です。一般的なNode.jsフレームワーク(例、Express.js、Nest.js)とは異なるアプローチが求められます。詳細については、以下の文書を参照してください。
+
+- [Next.js環境でエージェントをインストールする](install-agent-nextjs)
+
+- [Nuxt.js環境でエージェントをインストールする](install-agent-nuxtjs)
+
+:::
+
 ## 活用方法
 
 アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加してください。例えばExpress.jsアプリケーションでは_app.js_または_server.js_ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、_main.ts_ファイルなどです。

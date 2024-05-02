@@ -32,3 +32,9 @@ hide_table_of_contents: false
   既定値`false`
 
   リアルタイムユーザーをIPアドレスで集約します。IPアドレスでなく、クッキーでユーザーを区分したい場合は、値を`false`に変更してください。
+
+- **trace_http_client_ip_header_key** <span class='type'>String</span> <code class="my">.NET Agent v2.2.2 or later</code> <ScrollToLink anchor='trace_http_client_ip_header_key' />
+
+  クライアントIP(Remote IP)情報を特定HTTPヘッダーの値に変更して設定する機能です。プロキシ(Proxy) 環境では、`X-Forwarded-For`ヘッダーの値をクライアントIPとして設定できます。
+
+  WEB/WAS の前にL4 などのロードバランサーが設置されている場合、クライアントのIPアドレスではなく、L4 のIPアドレスがRemote Adressである場合があります。この状況でクライアントのIP情報がHTTPヘッダーに特定キーの値として記録される場合は、そのキー値に置き換えることができます。

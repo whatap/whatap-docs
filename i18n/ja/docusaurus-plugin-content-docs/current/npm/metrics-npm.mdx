@@ -17,7 +17,7 @@ toc_max_heading_level: 2
 
 | フィールド名                 |   単位  | 説明                                                       | 備考                                                                                                      |
 | ---------------------- | :---: | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `app_name`             |   -   | 通信主体に対するカスタム識別タグ                                         | 既定値<br/>- 単一のLinuxサーバー環境：ホスト名<br/>- Kubernetesコンテナ環境：Pod名                                            |
+| `app_name`             |   -   | 通信主体に対するカスタム識別タグ                                         | 既定値<br/>- 単一のLinuxサーバー環境：ホスト名<br/>- Kubernetesコンテナ環境：Pod名                                               |
 | `avg_jitter`           |   ms  | パケット往復遅延時間の変動値の平均                                        | 収集間隔の平均jitter                                                                                           |
 | `avg_latency`          |   ms  | パケット往復遅延時間の平均                                            | 収集間隔の平均latency                                                                                          |
 | `container_name`       |   -   | Kubernetes環境で収集されたコンテナ名                                  | Kubernetes環境でなければ空値                                                                                     |
@@ -61,15 +61,15 @@ toc_max_heading_level: 2
 - セッションごとのタグ一覧
 - 収集周期：1分
 
-| フィールド名                   | 説明                                  | 備考                                                           |
-| ------------------------ | ----------------------------------- | ------------------------------------------------------------ |
+| フィールド名                   | 説明                                  | 備考                                                        |
+| ------------------------ | ----------------------------------- | --------------------------------------------------------- |
 | `foreign_app_name`       | 通信対象のカスタム識別値                        | 既定値<br/>- 単一のLinuxサーバー環境：ホスト名<br/>- Kubernetesコンテナ環境：Pod名 |
-| `foreign_container_id`   | Kubernetesコンテナ内にローカル通信の場合、当該コンテナのid | -                                                            |
-| `foreign_container_name` | 通信対象がKubernetes環境であればコンテナ名          | -                                                            |
-| `foreign_host_tag`       | 通信対象のホスト名                           | -                                                            |
-| `foreign_ip`             | 通信対象のIPアドレス                         | -                                                            |
-| `foreign_pod_id`         | Kubernetes Pod内にローカル通信の場合、当該Podのid  | -                                                            |
-| `foreign_pod_name`       | 通信対象がKubernetes環境であれば、Pod名          | -                                                            |
-| `foreign_port`           | 通信対象のポート番号                          | -                                                            |
-| `foreign_process_type`   | 通信対象のプロセス名                          | 識別できなければ`untagged`                                           |
-| `local_inbound_check`    | 内部ネットワークで発生したInbound通信有無の確認         | -                                                            |
+| `foreign_container_id`   | Kubernetesコンテナ内にローカル通信の場合、当該コンテナのid | -                                                         |
+| `foreign_container_name` | 通信対象がKubernetes環境であればコンテナ名          | -                                                         |
+| `foreign_host_tag`       | 通信対象のホスト名                           | -                                                         |
+| `foreign_ip`             | 通信対象のIPアドレス                         | -                                                         |
+| `foreign_pod_id`         | Kubernetes Pod内にローカル通信の場合、当該Podのid  | -                                                         |
+| `foreign_pod_name`       | 通信対象がKubernetes環境であれば、Pod名          | -                                                         |
+| `foreign_port`           | 通信対象のポート番号                          | -                                                         |
+| `foreign_process_type`   | 通信対象のプロセス名                          | 識別できなければ`untagged`                                        |
+| `local_inbound_check`    | 内部ネットワークで発生したInbound通信有無の確認         | -                                                         |

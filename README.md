@@ -103,6 +103,7 @@ code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최
 일본어 찾아 바꾸기
 
 _yaml_ -> *yaml*
+_heml_ -> *heml*
 _values.yaml_ -> *values.yaml*
 _whatap.conf_ -> *whatap.conf*
 _security.conf_ -> *security.conf*

@@ -1,0 +1,19 @@
+---
+id: dotnet-2_2_2
+title: .NET Agent v2.2.2
+toc_max_heading_level: 2
+pagination_next: release-notes/dotnet/dotnet-2_2_1
+displayed_sidebar: releaseSidebar
+---
+
+2024年04月18日
+
+- <Status>New</Status> DataAdapter.Fill() メソッドモニタリングを追加
+
+- <Status>New</Status> WebFormモニタリングに対応、ページ移動イベントをトランザクションとして処理
+
+- <Status>Feature</Status>エージェントオプション<code>trace_http_client_ip_header_key</code>追加、詳しい内容は、[次の文書](../../dotnet/agent-number-of-user#trace_http_client_ip_header_key)を参照してください。
+
+- <Status>Fixed</Status> IPアドレスの表示エラーで同時接続者が正しく表示されない現象を修正
+
+- <Status>Deprecated</Status>エージェントがボディを読み込んでいる間に衝突が起こる可能性があるので<code>profile_http_body_enabled</code>オプションの対応を中止

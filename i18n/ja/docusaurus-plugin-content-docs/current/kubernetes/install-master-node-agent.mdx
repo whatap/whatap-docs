@@ -93,7 +93,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成 {#create-kubernetes-agent}
 
-WhaTap Kubernetesエージェントのインストール時、*helm*チャート基準の案内と*yaml*ファイル基準の案内を次のように提供します。 
+WhaTap Kubernetesエージェントのインストール時、*helm* チャート基準の案内と *yaml* ファイル基準の案内を次のように提供します。 
 
 <Tabs>
 
@@ -101,7 +101,7 @@ WhaTap Kubernetesエージェントのインストール時、*helm*チャート
 
 ### Helmバージョン確認とWhaTapリポジトリのネットワーク接続状態確認{#k8s-helm-prechek}
 
-1. 次のコマンドを通じて*helm*バージョンを確認してください。3.xバージョン以降に対応します。 
+1. 次のコマンドを通じて *helm* バージョンを確認してください。3.xバージョン以降に対応します。 
 
    ```bash
    helm version
@@ -163,17 +163,17 @@ WhaTap Kubernetesエージェントのインストール時、*helm*チャート
 
    :::note 
 
-   既存*yaml*ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。既存のKubernetesエージェントを削除した後、*helm*チャートによるインストールが可能です。 
+   既存 *yaml* ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。既存のKubernetesエージェントを削除した後、*helm* チャートによるインストールが可能です。 
 
    :::
 
-### *values.yaml* 主要設定項目
+### *values.yaml*主要設定項目
 
-WhaTap Kubernetesエージェントの設定を修正するには、デフォルト設定ファイル(*values.yaml*)を修正する必要があります。*values.yaml*ファイル内の主な設定項目を次のように案内します。 
+WhaTap Kubernetesエージェントの設定を修正するには、デフォルト設定ファイル(*values.yaml*)を修正する必要があります。*values.yaml* ファイル内の主な設定項目を次のように案内します。 
 
 <div class='k8s-values-yaml-table'>
 
-| キー                                                                   | タイプ     | 既定値                   | 説明                                                         |
+| キー                                                                   | タイプ     | 既定値                      | 説明                                                         |
 | -------------------------------------------------------------------- | ------- | ------------------------ | ---------------------------------------------------------- |
 | `whatap.license`                                                     | String  | `# <license-key>`        | Whatapライセンスキー                                              |
 | `whatap.host`                                                        | String  | `# <whatap-server-host>` | Whatapサーバーのホストアドレス                                         |
@@ -224,7 +224,7 @@ Helmチャート基準**インストール問題の解決**についての案内
 
 ### YAMLファイル基準インストール
 
-ユーザーのKubernetesバージョンとContainer Runtimeの*yaml*ファイルをダウンロードしてエージェントを生成してください。
+ユーザーのKubernetesバージョンとContainer Runtimeの *yaml* ファイルをダウンロードしてエージェントを生成してください。
 
 1. 次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
@@ -234,11 +234,11 @@ Helmチャート基準**インストール問題の解決**についての案内
 
    ![](/img/k8s-check-version.svg)
 
-2. **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の*yaml*ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
+2. **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の *yaml* ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
 
    <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
 
-3. ダウンロードした*yaml*ファイルをマスターNodeにアップロードしてください。
+3. ダウンロードした *yaml* ファイルをマスターNodeにアップロードしてください。
 
 4. エージェントを作成するには、次のコマンドを実行してください。 
 
@@ -253,7 +253,7 @@ Helmチャート基準**インストール問題の解決**についての案内
 
 :::note
 
-**マスターエージェントが使用するリソース量**は、**ユーザー環境のノード数**にある程度**比例**します。つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上の資源を使ってOOM(Out Of Memory)が発生することがあります。マスターエージェントに割り当てられたメモリLimit数値は、エージェントのインストール*yaml*ファイルから変更できます。
+**マスターエージェントが使用するリソース量**は、**ユーザー環境のノード数**にある程度**比例**します。つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上の資源を使ってOOM(Out Of Memory)が発生することがあります。マスターエージェントに割り当てられたメモリLimit数値は、エージェントのインストール *yaml* ファイルから変更できます。
 
 :::
 
@@ -287,7 +287,7 @@ kubectl get pod -n whatap-monitoring
    kubectl describe pod {POD_NAME} -n whatap-monitoring
    ```
 
-2. 実行結果の下部の<b>Events:</b>項目を確認してください。
+2. 実行結果の下部の **Events:** 項目を確認してください。
 
    ![](/img/k8s-check-install-fail.svg)
 
