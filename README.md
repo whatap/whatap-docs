@@ -83,18 +83,18 @@ crowdin download -b main -l en-US
 
 일본어 괄호 부분 수정
 
-\[次の文書]\(..// account/account-manage) 관련 부분 수정
+[次の文書]\(..// account/account-manage) 관련 부분 수정
 
-\[次の文書]（trs-view#詳細-分析）
+[次の文書]（trs-view#詳細-分析）
 
-\[次の記事] (openapi-call-apm-stat-data)
+[次の記事] \(openapi-call-apm-stat-data)
 
-）로 끝나는 부분 확인 => 정규식 ]\((\[^>]+)）
+）로 끝나는 부분 확인 => 정규식 \]\(([^>]+)）
 
-(<https://pypi.org/project/whatap-python/> #files)
+\(<https://pypi.org/project/whatap-python/> #files)
 
-code(\`\`\`) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
-\=> 한글로 들어간 부분 수정 필요
+code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
+=> 한글로 들어간 부분 수정 필요
 
 [次の文書](..／billing) -> 슬래시 수정할 것
 
@@ -102,10 +102,10 @@ code(\`\`\`) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 
 
 일본어 찾아 바꾸기
 
-_yaml_ -> _yaml_
-_values.yaml_ -> _values.yaml_
-_whatap.conf_ -> _whatap.conf_
-_security.conf_ -> _security.conf_
-_paramkey.txt_ -> _paramkey.txt_
-_/whatap/logs_ -> _/whatap/logs_
-_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_ -> _logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_
+_yaml_ -> *yaml*
+_values.yaml_ -> *values.yaml*
+_whatap.conf_ -> *whatap.conf*
+_security.conf_ -> *security.conf*
+_paramkey.txt_ -> *paramkey.txt*
+_/whatap/logs_ -> */whatap/logs*
+_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_ -> *logs/whatap-`{boot、またはinstall}`-yyyymmdd.log*
