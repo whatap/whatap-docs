@@ -43,20 +43,20 @@ crowdin download -b main -l en-US
 
 * 번역 중 수동으로 수정한 사항이 있을 수 있습니다. 해당 건이 취소되지 않도록 이전 파일과 비교해 검토하세요.
 * 일부는 이전 파일과 비교해 적용되지 말아야할 부분도 있을 수 있습니다. 예, Order list 번호, 인덴트 간격이 수정된 파일, 코드 블락에 적용된 수동 번역
-* 향후 MDX 3 지원을 위해 외부 링크를 이전 파일 기준으로 적용해야 하는 부분도 있습니다. 예, <https://www.whatap.io> -> (x) <<https://wwww.whatap.io\\>>
+* 향후 MDX 3 지원을 위해 외부 링크를 이전 파일 기준으로 적용해야 하는 부분도 있습니다. 예, <https://www.whatap.io> -> (x) <<https://wwww.whatap.io\\\\>>
 
 정규표현식 찾아 바꾸기
 
-* /\\*(\[a-z]) -> /*$1
-* ^{/\_ -> {/\*
-* {/\_ -> {/\*
-* \_/}$ -> \*/}
-* ^{/\\\* -> {/\*
-* \\\*/} -> \*/}
-* {(duration: .+)} -> {$1}
+* /\\_([a-z]) -> /_$1
+* ^\{/_ -> {/*
+* \{/_ -> {/*
+* _\/\}$ -> */}
+* ^\{\/\\\* -> {/*
+* \\\*\/\} -> */}
+* \{(duration: .+)\} -> \{$1\}
 * <!---->\n\n -> (빈값으로 변경)
 * i18n/en/docusaurus-plugin-content-docs/current/server/set-event-format.mdx
-  * ($){(\[^>]+?)} -> $1{$2}
+  * (\$)\{([^>]+?)\} -> $1\{$2\}
 
 일반 찾아바꾸기
 
@@ -69,8 +69,8 @@ crowdin download -b main -l en-US
 * ${Field} -> ${Field}
 * ${user\_id} -> ${user\_id}
 * {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}
-* e.g. *kubernetes\_container\_images\_{pcode}\_{timestamp}.csv* -> e.g. *kubernetes\_container\_images\_{pcode}\_{timestamp}.csv*
-* CSV file name, *kubernetes\_node\_list\_{pcode}\_{timestamp}.csv* -> CSV file name, *kubernetes\_node\_list\_{pcode}\_{timestamp}.csv*
+* e.g. _kubernetes\_container\_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes\_container\_images\_{pcode}\_{timestamp}.csv_
+* CSV file name, _kubernetes\_node\_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes\_node\_list\_{pcode}\_{timestamp}.csv_
 
 < > -> 부호 앞에 <, > 적용할 것
 
@@ -102,10 +102,10 @@ code(\`\`\`) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 
 
 일본어 찾아 바꾸기
 
-_yaml_ -> *yaml*
-_values.yaml_ -> *values.yaml*
-_whatap.conf_ -> *whatap.conf*
-_security.conf_ -> *security.conf*
-_paramkey.txt_ -> *paramkey.txt*
-_/whatap/logs_ -> */whatap/logs*
-_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_ -> *logs/whatap-`{boot、またはinstall}`-yyyymmdd.log*
+_yaml_ -> _yaml_
+_values.yaml_ -> _values.yaml_
+_whatap.conf_ -> _whatap.conf_
+_security.conf_ -> _security.conf_
+_paramkey.txt_ -> _paramkey.txt_
+_/whatap/logs_ -> _/whatap/logs_
+_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_ -> _logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_
