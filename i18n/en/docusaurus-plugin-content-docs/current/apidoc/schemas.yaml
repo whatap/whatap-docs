@@ -1,0 +1,1324 @@
+ServerStatDetails:
+  type: object
+  description: Structure of the server statistical response data
+  properties:
+    servers:
+      type: array
+      items:
+        type: object
+        properties:
+          oid:
+            type: integer
+            description: Agent's unique identifier (ID)
+          timeData:
+            type: array
+            items:
+              type: object
+              properties:
+                usedPercent:
+                  type: number
+                  format: float
+                  description: Storage Space Utilization
+                trafficIn:
+                  type: number
+                  format: float
+                  description: Inbound traffic
+                trafficOut:
+                  type: number
+                  format: float
+                  description: Outbound traffic
+                cpu:
+                  type: number
+                  format: float
+                  description: CPU Utilization(%)
+                memory_swappused:
+                  type: number
+                  format: float
+                  description: Swap Memory Usage (%)
+                time:
+                  type: integer
+                  format: int64
+                  description: Data point time (UNIX epoch time, millisecond)
+                memory_pused:
+                  type: number
+                  format: float
+                  description: Physical Memory Utilization (%)
+                ioPercent:
+                  type: number
+                  format: float
+                  description: CPU Utilization for I/O Operations (%)
+ServerList:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    pname:
+      type: string
+      description: 프로젝트 이름
+    timezone:
+      type: integer
+      description: Time Zone
+    regionName:
+      type: string
+      description: Data Server Region
+    values:
+      type: array
+      items:
+        type: object
+        properties:
+          os.status:
+            type: string
+            description: OS Status
+          oname:
+            type: string
+            description: Server name
+          os.name:
+            type: string
+            description: OS name
+          oid:
+            type: integer
+            description: Agent's unique identifier (ID)
+          isActive:
+            type: boolean
+            description: Agent Activation Status
+    language:
+      type: string
+      description: Alert Language
+ServerProc:
+  type: object
+  properties:
+    pname:
+      type: string
+      description: 프로젝트 이름
+    values:
+      type: object
+      additionalProperties:
+        type: array
+        items:
+          type: object
+          properties:
+            memoryBytes:
+              type: integer
+              format: int64
+              description: Amount of Memory Used by Processes (bytes)
+            bps:
+              type: number
+              format: float
+              description: Bytes Per Second
+            cmd1:
+              type: string
+              description: Process Name
+            cpu:
+              type: number
+              format: float
+              description: Process CPU Usage (%)
+    language:
+      type: string
+      description: Alert Language
+ServerDiskIOPS:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    pname:
+      type: string
+      description: 프로젝트 이름
+    timezone:
+      type: integer
+      description: Time Zone
+    regionName:
+      type: string
+      description: Data Server Region
+    values:
+      type: object
+      additionalProperties:
+        type: object
+        description: Host Name
+        properties:
+          bps:
+            type: number
+            format: float
+            description: Bytes Per Second
+          iops:
+            type: number
+            format: float
+            description: Disk Input/Output Operations Per Second
+    language:
+      type: string
+      description: Alert Language
+ServerAgentCount:
+  type: object
+  properties:
+    pname:
+      type: string
+      description: 프로젝트 이름
+    values:
+      type: string
+      description: Count
+ServerCpuUsage:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    pname:
+      type: string
+      description: 프로젝트 이름
+    timezone:
+      type: integer
+      description: Time Zone
+    regionName:
+      type: string
+      description: Data Server Region
+    values:
+      type: object
+      additionalProperties:
+        type: number
+        format: float
+      description: CPU Utilization per Server (%)
+    language:
+      type: string
+      description: Alert Language
+ServerNetworkTraffic:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    pname:
+      type: string
+      description: 프로젝트 이름
+    timezone:
+      type: integer
+      description: Time Zone
+    regionName:
+      type: string
+      description: Data Server Region
+    values:
+      type: object
+      additionalProperties:
+        type: number
+        format: float
+        description: Sum of Network Traffic for each Host (bytes)
+    language:
+      type: string
+      description: Alert Language
+APM:
+  type: object
+  properties:
+    platform:
+      type: string
+      description: Application Product Platform
+    createTime:
+      type: string
+      description: Project creation date
+    gatewayName:
+      type: string
+      description: Data Server Region
+    projectCode:
+      type: number
+      description: pcode
+    status:
+      type: string
+      enum:
+        - pending
+        - trial
+        - subscribe
+        - close_pending
+        - limited
+        - closed
+        - trial_limited
+      description: Project status
+    lastUpdatedTime:
+      type: string
+      description: Project modification date
+    name:
+      type: string
+      description: 프로젝트 이름
+    productType:
+      type: string
+      description: Application Product Type
+Server:
+  type: object
+  properties:
+    pname:
+      type: string
+      description: 프로젝트 이름
+    timezone:
+      type: integer
+      description: Universal time zone in which the server's location is set
+    regionName:
+      type: string
+      description: Data Server Region
+    values:
+      type: object
+      properties:
+        servers:
+          type: array
+          items:
+            type: object
+            properties:
+              public_ip:
+                type: string
+                format: ipv4
+                description: IP address that can be accessed from outside
+              os_cpuvendor:
+                type: string
+                description: CPU manufacturer and name on Server
+              agent_created:
+                type: string
+                format: date-time
+                description: Agent Created Date
+              ip:
+                type: string
+                format: ipv4
+                description: IP address that can be accessed from inside
+              os_arch:
+                type: string
+                description: OS Architecture
+              actTime:
+                type: integer
+                format: int64
+                description: Agent Activation Time (ms)
+              cpu_cores:
+                type: string
+                description: CPU core count
+              oid:
+                type: integer
+                description: Agent's unique identifier (ID)
+              isActive:
+                type: boolean
+                description: Activation Status
+              okind:
+                type: string
+                description: Agent Group Name per Type
+              version:
+                type: string
+                description: Agent Version
+              tags:
+                type: array
+              inactTime:
+                type: integer
+                description: Agent Deactivation Time
+              oname:
+                type: string
+                description: Agent name
+              os_name:
+                type: string
+                description: OS name
+              startTime:
+                type: string
+                format: date-time
+                description: Agent Start Time
+              os_memory:
+                type: string
+                description: OS Memory Capacity
+              os_status:
+                type: string
+                description: OS Status
+getApmAllinfo:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    act_agent:
+      type: string
+      description: Active agent count
+    inact_agent:
+      type: string
+      description: Inactive agent count
+    host:
+      type: string
+      description: Host count
+    cpucore:
+      type: string
+      description: Total number of CPU cores on the host
+    txcount:
+      type: string
+      description: Transaction Count
+    tps:
+      type: string
+      description: TPS
+    user:
+      type: string
+      description: Active users (5 minutes)
+    actx:
+      type: string
+      description: Active Transaction
+    rtime:
+      type: string
+      description: Average Response Time (ms)
+    cpu:
+      type: string
+      description: Average CPU utilization(%)
+    threadpool_active:
+      type: string
+      description: Active thread count of the thread pool
+    threadpool_queue:
+      type: string
+      description: Queuing thread count of the thread pool
+    dbconn_total:
+      type: string
+      description: Total DB connection count
+    dbconn_act:
+      type: string
+      description: Active DB connection count
+    dbconn_idle:
+      type: string
+      description: Idle DB connection count
+    act_method:
+      type: string
+      description: Active Method Count
+    act_sql:
+      type: string
+      description: Active SQL Count
+    act_httpc:
+      type: string
+      description: Active HTTP Call Count
+    act_dbc:
+      type: string
+      description: Number of Active Database Connections
+    act_socket:
+      type: string
+      description: Number of Active Socket Connections
+    apdex:
+      type: string
+      description: Apdex (Application Performance Index, user satisfaction for applications)
+ExceptionRecord:
+  type: object
+  properties:
+    reocrds:
+      type: array
+      items:
+        type: object
+        properties:
+          oids:
+            type: string
+            description: Agent's unique identifier (ID)
+          time:
+            type: integer
+            format: int64
+            description: Exceptional Case Occurrence Time (UNIX epoch time, millisecond)
+          classHash:
+            type: integer
+            description: Hash Code of Exception Class
+          count:
+            type: integer
+            description: Number of Exceptions at the Time
+          service:
+            type: string
+            description: Server Path of Exception
+          class:
+            type: string
+            description: Exception Class Name
+          serviceHash:
+            type: integer
+            description: Hash Code of Service Path
+          snapSeq:
+            type: string
+            description: Snapshot Sequence Number
+          msg:
+            type: string
+            description: Exception Message
+    total:
+      type: integer
+      description: Total Number of Exception Records
+HttpcRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          Sum:
+            type: integer
+            description: Total Process Time (ms)
+          Port:
+            type: integer
+            description: Connection Port Number
+          Url:
+            type: string
+            description: Request URL
+          Host:
+            type: string
+            description: Host Address
+          Max:
+            type: integer
+            description: Maximum Response Time (ms)
+          Stdev:
+            type: string
+            description: Std dev
+          Actived:
+            type: integer
+            description: Number of Active Connections
+          Avg:
+            type: integer
+            description: Average Response Time (ms)
+          HostHash:
+            type: integer
+            description: Host Hash Code
+          Min:
+            type: integer
+            description: Minimum Response Time (ms)
+          Error:
+            type: integer
+            description: Error Count
+          Total:
+            type: integer
+            description: Total Number of Requests
+          UrlHash:
+            type: integer
+            description: URL Hash Code
+    total:
+      type: integer
+      description: Total Number of HTTP Connection Records
+HttpcFilterRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          Service:
+            type: string
+            description: Service Path
+          Host:
+            type: string
+            description: Host Address
+          HostHash:
+            type: integer
+            description: Host Hash Code
+          Avg:
+            type: integer
+            description: Average Response Time (ms)
+          Error:
+            type: integer
+            description: Error Count
+          Sum:
+            type: integer
+            description: Total Process Time (ms)
+          Port:
+            type: integer
+            description: Connection Port Number
+          Service_hash:
+            type: integer
+            description: Service Hash Code
+          Url:
+            type: string
+            description: Request URL
+          Max:
+            type: integer
+            description: Maximum Response Time (ms)
+          Stdev:
+            type: string
+            description: Std dev
+          UrlHash:
+            type: integer
+            description: URL Hash Code
+          Total:
+            type: integer
+            description: Total Number of Requests
+          Min:
+            type: integer
+            description: Minimum Response Time (ms)
+    total:
+      type: integer
+      description: Total Number of Filtered HTTP Connection Records
+SqlQueryRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          time_max:
+            type: integer
+            description: Maximum Process Time (ms)
+          dbcHash:
+            type: integer
+            description: Database Connection Hash Code
+          db:
+            type: string
+            description: Information of the Connected Database
+          time_min:
+            type: integer
+            description: Minimum Process Time (ms)
+          fetch_count:
+            type: integer
+            description: Total Number of Fetched Rows
+          hash:
+            type: integer
+            description: SQL Hash Code
+          fetch_time:
+            type: integer
+            description: Patch Time
+          sql_crud:
+            type: integer
+            description: SQL CRUD Job Type (0 - none, 1 - create, 2 - read, 3 - update, 4 - delete)
+          count_total:
+            type: integer
+            description: Total Number of Executions
+          count_error:
+            type: integer
+            description: Error Occurrence Count
+          sql:
+            type: string
+            description: Executed SQL Queries
+          time_sum:
+            type: integer
+            description: Total Process Time (ms)
+          time_avg:
+            type: integer
+            description: Average Process Time (ms)
+          time_std:
+            type: string
+            description: Standard Deviation of Process Time
+          count_actived:
+            type: integer
+            description: Number of Active Connections
+    total:
+      type: integer
+      description: Total Number of SQL Query Records
+RemoteClientIpRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          count:
+            type: integer
+            description: Number of Events Occurred from the IP
+          city:
+            type: string
+            description: City of the Client
+          country:
+            type: string
+            description: Country Code and Name of the Client
+          ip:
+            type: string
+            description: Client IP address
+    total:
+      type: integer
+      description: Total Number of Remote Client IP Records
+TransactionsRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          apdex_tolerated:
+            type: integer
+            description: Apdex Rating for Allowed Response Time
+          apdex_satisfied:
+            type: integer
+            description: Apdex Rating for Satisfactory Response Time
+          apdex:
+            type: number
+            format: double
+            description: Apdex Score
+          time_max:
+            type: integer
+            description: Maximum Process Time (ms)
+          sql_fetch_time:
+            type: integer
+            description: SQL fetch time (ms)
+          sql_time:
+            type: integer
+            description: Total SQL processing time (ms)
+          count:
+            type: integer
+            description: Total Transaction Count
+          error:
+            type: integer
+            description: Error Occurrence Count
+          sql_count:
+            type: integer
+            description: Number of executed SQL commands
+          hash:
+            type: integer
+            description: Transaction hash code
+          sql_fetch:
+            type: integer
+            description: Total number of SQL fetched data
+          httpc_avg:
+            type: integer
+            description: Average HTTP connection time (ms)
+          cpu_avg:
+            type: integer
+            description: Average CPU Usage
+          time_sum:
+            type: integer
+            description: Total Process Time (ms)
+          time_avg:
+            type: integer
+            description: Average Process Time (ms)
+          httpc_count:
+            type: integer
+            description: HTTP Request Count
+          service:
+            type: string
+            description: Service Path
+          mem_avg:
+            type: integer
+            description: Average Memory Usage
+    total:
+      type: integer
+      description: Total Transaction Record Count
+HeapUsageRecord:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    timeMerge:
+      type: string
+      description: Data Collection Method (avg or max)
+    unit:
+      type: string
+      description: Heap Usage Unit (e.g. byte)
+    data:
+      type: array
+      items:
+        type: object
+        properties:
+          oid:
+            type: integer
+            description: Agent's unique identifier (ID)
+          oname:
+            type: string
+            description: Agent name
+          heap_use:
+            type: string
+            format: float
+            description: Heap Memory Usage
+AgentEachdata:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    type:
+      type: string
+      enum:
+        - thread_count
+        - thread_daemon
+        - thread_peak_count
+        - threadpool_active
+        - threadpool_queue
+        - apdex
+        - tx_caller
+      description: Metric that can be viewed
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    interval:
+      type: integer
+      description: Data Point Interval (sec)
+    timeMerge:
+      type: string
+      description: Data Collection Method (sum)
+    objects:
+      type: array
+      items:
+        type: object
+        properties:
+          oname:
+            type: string
+            description: Agent name
+          oid:
+            type: integer
+            description: Agent's unique identifier (ID)
+          series:
+            type: array
+            items:
+              type: array
+              items:
+                - 
+                  type: integer
+                  format: int64
+                  description: Time series timestamp
+                - 
+                  type: number
+                  format: float
+                  description: Query Data
+AgentEachAvgdata:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    type:
+      type: string
+      enum:
+        - thread_count
+        - thread_daemon
+        - thread_peak_count
+        - threadpool_active
+        - threadpool_queue
+        - apdex
+      description: Metric that can be viewed
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    interval:
+      type: integer
+      description: Data Point Interval (sec)
+    timeMerge:
+      type: string
+      description: Data Collection Method (sum)
+    objectMerge:
+      type: string
+      description: Data Merge Method (avg)
+    series:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: Time series timestamp
+          - 
+            type: number
+            format: float
+            description: Average Agent Data
+VisitorStatic5mRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: Interval of 5 minutes (5x60x1000, ms)
+          - 
+            type: integer
+            description: Visitor Count per Hour
+    pcode:
+      type: integer
+      description: pcode
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    total:
+      type: integer
+      description: Total Visitor Count
+VisitorStaticHRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: Interval of 1 hour (60x60x1000, ms)
+          - 
+            type: integer
+            description: Visitor Count per Hour
+    pcode:
+      type: integer
+      description: pcode
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    total:
+      type: integer
+      description: Total Visitor Count
+VisitorStaticDayRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: Interval of 1 day (24x60x60x1000, ms)
+          - 
+            type: integer
+            description: Visitor Count per 1 day
+    pcode:
+      type: integer
+      description: pcode
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    total:
+      type: integer
+      description: Total Visitor Count
+VisitorStaticMonthRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      description: User Statistical Data per Month
+      items:
+        type: object
+        properties:
+          stime:
+            type: integer
+            format: int64
+            description: Start Time of the Month, Time on the 1st day of the Month (24x60x60x1000)
+          etime:
+            type: integer
+            format: int64
+            description: End Time of the Month, Time on the 1st day of the Month (24x60x60x1000)
+          sdate:
+            type: string
+            description: Start Date of the Month (string format)
+          edate:
+            type: string
+            description: End Date of the Month (string format)
+          mau:
+            type: integer
+            description: Active User Count of the Month (MAU)
+    pcode:
+      type: integer
+      description: pcode
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    sdate:
+      type: string
+      description: String expression on the search start time
+    edate:
+      type: string
+      description: String expression on the search end time
+    total:
+      type: integer
+      description: Total Visitor Count
+UnmatchedKey:
+  type: object
+  properties:
+    key:
+      type: string
+      description: Parameter Key
+    value:
+      type: object
+      properties:
+        baseTime:
+          type: string
+          description: Value upon the reference time
+        comparisonTime:
+          type: string
+          description: Value upon the comparison time
+MatchedParameter:
+  type: object
+  properties:
+    key:
+      type: string
+      description: Parameter Key
+    value:
+      type: string
+      description: Parameter Value
+TopSqlStatisticsRecords:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        $ref: '#/SqlRecord'
+    topN:
+      type: integer
+      description: Requested TopN Value
+    total:
+      type: integer
+      description: Total Number of Recorded SQL Records
+    retrievedStartTime:
+      type: integer
+      format: int64
+      description: Start Time for View
+    retrievedEndTime:
+      type: integer
+      format: int64
+      description: End Time for View
+SqlRecord:
+  type: object
+  properties:
+    sql_execute_cnt:
+      type: integer
+      description: SQL Execution Count
+    sql_elapse:
+      type: integer
+      description: Total Time for SQL Execution (ms)
+    sqlHash:
+      type: integer
+      description: Hash Value for SQL Statement
+    sql_elapse_max:
+      type: integer
+      description: Maximum Time for SQL Execution (ms)
+    onames:
+      type: string
+      description: Name of Database Server for SQL Execution
+    user:
+      type: string
+      description: Name of User for SQL Execution
+    sql:
+      type: string
+      description: Executed SQL Statement
+ApmDBconnCount:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    time:
+      type: integer
+      format: int64
+      description: Lookup time
+    dbc_total:
+      type: array
+      items:
+        $ref: '#/ConnectionDetail'
+ConnectionDetail:
+  type: object
+  properties:
+    oid:
+      type: integer
+      description: Agent's unique identifier (ID)
+    oname:
+      type: string
+      description: Agent name
+    databaseUrl:
+      type: string
+      description: Database URL
+    active:
+      type: integer
+      description: Active DB connection count
+    idle:
+      type: integer
+      description: Inactive DB connection count
+    total:
+      type: integer
+      description: Total DB connection count (`active` + `idle`)
+MXQLRequest:
+  type: object
+  required:
+    - stime
+    - etime
+    - mql
+    - limit
+    - pageKey
+  properties:
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    mql:
+      type: string
+      description: Written MXQL query
+    limit:
+      type: integer
+      description: Maximum data query count
+    pageKey:
+      type: string
+      description: The string MXQL's fixed value
+    inject:
+      type: object
+      additionalProperties: true
+      description: |
+        See [the following](../mxql/mxql-calculate#inject)<br/>e.g. `{ "default": "ORDER {key : [oid],  sort : [desc] }"}`
+    param:
+      type: object
+      additionalProperties: true
+      description: |
+        See [the following](../mxql/mxql-guide#bind-parameter)<br/> e.g. `{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }`
+MXQLtextResponse:
+  type: object
+  properties:
+    time:
+      type: integer
+      format: int64
+      description: Data Recorded Time
+    pcode:
+      type: integer
+      description: pcode
+    pname:
+      type: string
+      description: 프로젝트 이름
+    okind:
+      type: integer
+      description: Agent Group IDs for each Type
+    onode:
+      type: integer
+      description: Agent Group IDs for each Server
+    oname:
+      type: string
+      description: Agent name
+    okindName:
+      type: string
+      description: Agent Group Name per Type
+    onodeName:
+      type: string
+      description: Agent Group Name per Server
+    host_ip:
+      type: string
+      description: Host IP Address
+    container:
+      type: string
+      description: Container ID
+    pid:
+      type: integer
+      description: Process ID
+    type:
+      type: string
+      description: Platform Type
+    containerKey:
+      type: integer
+      description: Container Key
+    tx_count:
+      type: integer
+      description: Transaction count
+    tx_error:
+      type: integer
+      description: Number of Erroneous Transactions
+    tx_time:
+      type: number
+      format: double
+      description: Transaction Process Time
+    apdex_satisfied:
+      type: integer
+      description: Apdex - Satisfactory S
+    apdex_tolerated:
+      type: integer
+      description: Apdex - Allowed T
+    apdex_total:
+      type: integer
+      description: Apdex
+    tx_dbc_time:
+      type: number
+      format: double
+      description: Time for Database Connection
+    tx_sql_time:
+      type: number
+      format: double
+      description: SQL Process Time
+    tx_httpc_time:
+      type: number
+      format: double
+      description: HTTP Client Process Time
+    sql_count:
+      type: integer
+      description: SQL Query Count
+    sql_error:
+      type: integer
+      description: Number of Erroneous SQL Queries
+    sql_time:
+      type: number
+      format: double
+      description: SQL Process Time
+    sql_fetch_count:
+      type: integer
+      description: Number of SQL Fetches
+    sql_fetch_time:
+      type: number
+      format: double
+      description: SQL Fetch Time
+    httpc_count:
+      type: integer
+      description: HTTP Client Request Count
+    httpc_error:
+      type: integer
+      description: Number of Erroneous HTTP Client Requests
+    httpc_time:
+      type: number
+      format: double
+      description: HTTP Client Process Time
+    active_tx_count:
+      type: integer
+      description: Active transaction count
+    active_tx_0:
+      type: integer
+      description: Active Transactions in less than 3 seconds
+    active_tx_3:
+      type: integer
+      description: Active Transactions in 3 seconds or more
+    active_tx_8:
+      type: integer
+      description: Active Transactions in 8 seconds or more
+    tps:
+      type: number
+      format: double
+      description: Number of transactions per second
+    resp_time:
+      type: integer
+      description: Response Time
+    arrival_rate:
+      type: number
+      format: double
+      description: Arrival Rate per second
+    pack_dropped:
+      type: integer
+      description: Number of Dropped Packets
+    metering:
+      type: integer
+      description: Metering
+    _clock_delta_:
+      type: integer
+      description: Clock Difference
+    oid:
+      type: integer
+      description: Agent's unique identifier (ID)
+MXQLPathRequest:
+  type: object
+  required:
+    - stime
+    - etime
+    - mql
+    - limit
+    - pageKey
+  properties:
+    stime:
+      type: integer
+      format: int64
+      description: Query start time (UNIX epoch time, millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: Query end time (UNIX epoch time, millisecond)
+    mql:
+      type: string
+      description: Written MXQL query
+    limit:
+      type: integer
+      description: Maximum data query count
+    pageKey:
+      type: string
+      description: The string MXQL's fixed value
+    inject:
+      type: object
+      additionalProperties: true
+      description: |
+        See [the following](../mxql/mxql-calculate#inject)<br/>e.g. `{ "default": "ORDER {key : [oid],  sort : [desc] }"}`
+    param:
+      type: object
+      description: Parameter for Query
+MXQLPathResponse:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: pcode
+    pname:
+      type: string
+      description: 프로젝트 이름
+    oid:
+      type: integer
+      description: Agent's unique identifier (ID)
+    oname:
+      type: string
+      description: Agent name
+    otype:
+      type: string
+      description: Agent Type
+    okind:
+      type: integer
+      description: Agent Group IDs for each Type
+    okindName:
+      type: string
+      description: Agent Group Name per Type
+    onode:
+      type: integer
+      description: Agent Group IDs for each Server
+    onodeName:
+      type: string
+      description: Agent Group Name per Server
+    type:
+      type: string
+      description: Product Type
+    subtype:
+      type: string
+      description: Platform Type
+    version:
+      type: string
+      description: Version
+    os_name:
+      type: string
+      description: OS name
+    ip:
+      type: string
+      description: IP Address
+    container_id:
+      type: integer
+      description: Container ID
+    metering:
+      type: integer
+      description: Metering
+    status:
+      type: string
+      description: Status
+    normal:
+      type: integer
+      description: Number of Normal Transactions
+    slow:
+      type: integer
+      description: Number of Slow Transactions
+    verySlow:
+      type: integer
+      description: Number of Very Slow Transactions
+    total:
+      type: integer
+      description: Total Transaction Count
+    _pk_:
+      type: string
+      description: inject
