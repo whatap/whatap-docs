@@ -70,6 +70,16 @@ The roles of each file that makes up the Node.js monitoring service are as follo
 
 </details>
 
+:::tip
+
+Server-side rendering (SSR) frameworks such as **Next.js** and **Nuxt.js** require the Custom Server settings for application monitoring. It requires an approach different from typical Node.js frameworks (e.g. Express.js, Nest.js). For more information, see the following:
+
+- [Agent installation in the Next.js environment](install-agent-nextjs)
+
+- [Agent installation in the Nuxt.js environment](install-agent-nuxtjs)
+
+:::
+
 ## Using
 
 Add the following code at the top of the entry point (main module) file of the application. For example, in the Express.js application, _app.js_ and _server.js_ are the entry points (main module). When using a framework like Nest.js, _main.ts_ is the entry point.
