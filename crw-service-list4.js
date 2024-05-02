@@ -1,4 +1,4 @@
-// 똑같은 url 입력 시 해결 안됨
+// 중복 크롤링 방지 근데 쓸데없는 것 같기도
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
@@ -10,12 +10,20 @@ const urls = [
     'https://docs.whatap.io/release-notes/service/service-2_3_x',
 ];
 
+// 이미 크롤링한 URL을 추적하기 위한 Set
+const crawledUrls = new Set();
+
 // 제품명별로 생성된 파일명을 묶는 객체
 const productFiles = {};
 
 // 각 URL을 처리하는 함수
 const processUrls = async () => {
     for (const url of urls) {
+        if (crawledUrls.has(url)) {
+            console.log(`URL ${url} has already been crawled. Skipping...`);
+            continue;
+        }
+
         try {
             const response = await axios.get(url);
             const $ = cheerio.load(response.data);
@@ -140,6 +148,9 @@ const processUrls = async () => {
 
             fs.writeFileSync(newFilesMDX, productFilesContent);
             console.log(`New files MDX updated: ${newFilesMDX}`);
+
+            // 크롤링한 URL 추가
+            crawledUrls.add(url);
 
         } catch (error) {
             console.error('Error fetching web page:', error);
