@@ -60,22 +60,22 @@ crowdin download -b main -l en-US
 
 일반 찾아바꾸기
 
-* : \_ -> : \_
-* \[ -> \[
-* : -> :
-* \~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&\*()\_+=-\[]\`
-* <https://lite.ip2location.com> -> <https://lite.ip2location.com>
-* ${Tag} -> ${Tag}
-* ${Field} -> ${Field}
-* ${user\_id} -> ${user\_id}
-* {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}
-* e.g. _kubernetes\_container\_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes\_container\_images\_{pcode}\_{timestamp}.csv_
-* CSV file name, _kubernetes\_node\_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes\_node\_list\_{pcode}\_{timestamp}.csv_
+- : \_ -> : _
+- \[ -> [
+- \: -> :
+- ~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&*()_+=-[]`
+- <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
+- ${Tag} -> &#36;&#123;Tag&#125;
+- ${Field} -> &#36;&#123;Field&#125;
+- ${user_id} -> $\{user_id\}
+- {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}
+- e.g. _kubernetes_container_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes_container_images\_\{pcode\}\_\{timestamp\}.csv_
+- CSV file name, _kubernetes_node_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes_node_list\_\{pcode\}\_\{timestamp\}.csv_
 
-< > -> 부호 앞에 <, > 적용할 것
+< > -> 부호 앞에 &lt;, &gt; 적용할 것
 
-* \<whatap-monitoring> ->> \<whatap-monitoring>
-* \<section> ->> \<section>
+- \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
+- \<section> ->> &lt;section&gt;
 
 문장 끝 / 으로 끝나는 부분 확인해볼 것
 
