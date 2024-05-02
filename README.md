@@ -43,39 +43,39 @@ crowdin download -b main -l en-US
 
 * 번역 중 수동으로 수정한 사항이 있을 수 있습니다. 해당 건이 취소되지 않도록 이전 파일과 비교해 검토하세요.
 * 일부는 이전 파일과 비교해 적용되지 말아야할 부분도 있을 수 있습니다. 예, Order list 번호, 인덴트 간격이 수정된 파일, 코드 블락에 적용된 수동 번역
-* 향후 MDX 3 지원을 위해 외부 링크를 이전 파일 기준으로 적용해야 하는 부분도 있습니다. 예, <https://www.whatap.io> -> (x) <<https://wwww.whatap.io\\>>
+* 향후 MDX 3 지원을 위해 외부 링크를 이전 파일 기준으로 적용해야 하는 부분도 있습니다. 예, <https://www.whatap.io> -> (x) <<https://wwww.whatap.io\\\\>>
 
 정규표현식 찾아 바꾸기
 
-* /\\*(\[a-z]) -> /*$1
-* ^{/\_ -> {/\*
-* {/\_ -> {/\*
-* \_/}$ -> \*/}
-* ^{/\\\* -> {/\*
-* \\\*/} -> \*/}
-* {(duration: .+)} -> {$1}
+* /\\_([a-z]) -> /_$1
+* ^\{/_ -> {/*
+* \{/_ -> {/*
+* _\/\}$ -> */}
+* ^\{\/\\\* -> {/*
+* \\\*\/\} -> */}
+* \{(duration: .+)\} -> \{$1\}
 * <!---->\n\n -> (빈값으로 변경)
 * i18n/en/docusaurus-plugin-content-docs/current/server/set-event-format.mdx
-  * ($){(\[^>]+?)} -> $1{$2}
+  * (\$)\{([^>]+?)\} -> $1\{$2\}
 
 일반 찾아바꾸기
 
-* : \_ -> : \_
-* \[ -> \[
-* : -> :
-* \~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&\*()\_+=-\[]\`
-* <https://lite.ip2location.com> -> <https://lite.ip2location.com>
-* ${Tag} -> ${Tag}
-* ${Field} -> ${Field}
-* ${user\_id} -> ${user\_id}
-* {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}
-* e.g. *kubernetes\_container\_images\_{pcode}\_{timestamp}.csv* -> e.g. *kubernetes\_container\_images\_{pcode}\_{timestamp}.csv*
-* CSV file name, *kubernetes\_node\_list\_{pcode}\_{timestamp}.csv* -> CSV file name, *kubernetes\_node\_list\_{pcode}\_{timestamp}.csv*
+- : \_ -> : _
+- \[ -> [
+- \: -> :
+- ~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&*()_+=-[]`
+- <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
+- ${Tag} -> &#36;&#123;Tag&#125;
+- ${Field} -> &#36;&#123;Field&#125;
+- ${user_id} -> $\{user_id\} (install-agent-quick-setup.mdx 파일에서도 확인해볼것)
+- {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}
+- e.g. _kubernetes_container_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes_container_images\_\{pcode\}\_\{timestamp\}.csv_
+- CSV file name, _kubernetes_node_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes_node_list\_\{pcode\}\_\{timestamp\}.csv_
 
-< > -> 부호 앞에 <, > 적용할 것
+< > -> 부호 앞에 &lt;, &gt; 적용할 것
 
-* \<whatap-monitoring> ->> \<whatap-monitoring>
-* \<section> ->> \<section>
+- \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
+- \<section> ->> &lt;section&gt;
 
 문장 끝 / 으로 끝나는 부분 확인해볼 것
 
@@ -83,18 +83,18 @@ crowdin download -b main -l en-US
 
 일본어 괄호 부분 수정
 
-\[次の文書]\(..// account/account-manage) 관련 부분 수정
+[次の文書]\(..// account/account-manage) 관련 부분 수정
 
-\[次の文書]（trs-view#詳細-分析）
+[次の文書]（trs-view#詳細-分析）
 
-\[次の記事] (openapi-call-apm-stat-data)
+[次の記事] \(openapi-call-apm-stat-data)
 
-）로 끝나는 부분 확인 => 정규식 ]\((\[^>]+)）
+）로 끝나는 부분 확인 => 정규식 \]\(([^>]+)）
 
-(<https://pypi.org/project/whatap-python/> #files)
+\(<https://pypi.org/project/whatap-python/> #files)
 
-code(\`\`\`) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
-\=> 한글로 들어간 부분 수정 필요
+code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
+=> 한글로 들어간 부분 수정 필요
 
 [次の文書](..／billing) -> 슬래시 수정할 것
 
@@ -103,6 +103,7 @@ code(\`\`\`) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 
 일본어 찾아 바꾸기
 
 _yaml_ -> *yaml*
+_heml_ -> *heml*
 _values.yaml_ -> *values.yaml*
 _whatap.conf_ -> *whatap.conf*
 _security.conf_ -> *security.conf*

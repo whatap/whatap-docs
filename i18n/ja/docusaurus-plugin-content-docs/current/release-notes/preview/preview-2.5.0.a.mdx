@@ -1,0 +1,65 @@
+---
+id: preview-2_5_0x
+title: Preview 2.5.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.5.0.a0
+
+2024年04月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status>ログモニタリングに対応するプラットフォームの<Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでログイベント設定機能を追加
+
+- <Status>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューの<Cmdname sid="alert_receive_settings_by_member" className="uitext" />セクションで<Cmdname sid="member_management" className="b500" />権限のあるメンバーにユーザー情報をマスキング処理しないように変更
+
+- <Status>Changed</Status> <Cmdname sid="my_profile" className="uitext" /> &gt; <Cmdname sid="notification_setting" className="uitext" />セクションでモバイル機器を削除すると、モバイル機器リストを新しく読み込むように修正
+
+- <Status>Fixed</Status> <Cmdname sid="my_profile" className="uitext" /> &gt; <Cmdname sid="notification_setting" className="uitext" />セクションでモバイル機器の受信テストに失敗すると、モバイル機器リストを読み込めずに無限読み込みされていた問題を修正
+
+---
+
+### `Application`
+
+- <Status>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />で呼び出す<Cmdname sid="TTL07710" className="uitext" />ポップアップのチャートを交替し、詳細ボタンを削除
+
+- <Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />で呼び出す<Cmdname sid="TTL07710" className="uitext" />ポップアップのチャートをクリックして<Cmdname sid="side_statistics" className="uitext" />メニューに移動すると、選択したチャートの時間範囲とエージェント情報が選択されるように修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />メニューで<Cmdname sid="order_by" className="uitext" />を<Cmdname sid="error" className="uitext" />に設定するとエラー順にソートしない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューのヒートマップウィジェットでエージェントフィルタリングによって発生したチャートに空き領域をドラッグするとデータが照会される問題を修正
+
+---
+
+### `Server`
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでDebian/Ubuntu環境のWhaTapリポジトリを追加するコマンドを修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" />メニューでテーブルデータを更新する時に行の高さが増減する問題を修正
+
+---
+
+### `Kubernetes`
+
+<Status>Feature</Status> <Cmdname sid="side_appl" className="uitext" />カテゴリに<Cmdname sid="side_agentsConfiguration" className="uitext" />メニューを追加
+
+---
+
+### `Database`
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで<UI>Long Waiting Session Count</UI>ウィジェットのデータが現在時間を基準に表示されるように修正
+
+</div>

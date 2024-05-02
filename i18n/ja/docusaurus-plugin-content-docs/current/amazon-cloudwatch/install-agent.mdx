@@ -62,14 +62,17 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 
 <ImgLang img='cloudwatch-auth-role.png' desc='Amazon Cloudwatch - role' />
 
-1. AWS Management Consoleにログインし、IAMコンソールを開きます。
-2. コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。
-3. Select type of trusted entity(信頼されたエンティティタイプを選択)から Another AWS accountを選択してください。
-4. Account IDにWhaTapアカウントID**911937781722**を入力してください。ReadOnly Accessを選択して適用してください。
-5. Roleの名前と説明を入力します。「Create Role」ボタンをクリックしてSummary画面に切り替えてください。
-6. Maximum session duration項目の「Edit」ボタンをクリックして12時間に変更して保存してください。 
-7. **Role ARN**項目をコピーしてください。
-8. WhaTap**_管理_** > **_エージェントのインストール_** ページに戻り、**_Role_** **_ARN_**ウィンドウにコピーした**RoleARN**を貼り付け、**_確認_**ボタンをクリックしてください。
+1. AWS Management Consoleにログインしてから、IAMコンソールを開きてください。
+2. コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。 
+3. 信頼できるエンティティタイプ(Select type of trusted entity)でAWSアカウントを選択してください。 
+4. 他のAWSアカウントを選択し、アカウントIDにWhaTapのIDである**911937781722**を入力して、次へをクリックしてください。
+5. フィルタリング基準タイプでAWS管理型職務を選択してください。 
+6. 一覧でReadOnlyAccessのチェックボックスを選択して適用し、次へをクリックしてください。 
+7. 役割(Role)の名前と説明を入力し、役割作成(Create Role)ボタンをクリックしてください。 
+8. 役割一覧で作成した役割を選択し、サマリー(Summary)の編集ボタンをクリックしてください。 
+9. 最大セッション持続時間(Maximum session duration) 項目を12時間に変更して保存してください。 
+10. **Role ARN**項目をコピーしてください。
+11. WhaTap**_管理_** > **_エージェントのインストール_** ページに戻り、**_Role_** **_ARN_**ウィンドウにコピーした**RoleARN**を貼り付け、**_確認_**ボタンをクリックしてください。
 
 ### ネームスペースおよび収集サイクルの選択
 
@@ -192,7 +195,7 @@ import Collectingperiod from "../common-items/_collecting-period.mdx";
 
 import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
 
-![number 2](/img/number-02.png) <Regionmetricstats />
+<Regionmetricstats />
 
 <ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />
 

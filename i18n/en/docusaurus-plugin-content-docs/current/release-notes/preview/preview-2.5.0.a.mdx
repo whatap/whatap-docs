@@ -1,0 +1,65 @@
+---
+id: preview-2_5_0x
+title: Preview 2.5.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.5.0.a0
+
+April 25, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Feature</Status> In the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> menu of the platform that supports log monitoring, added the log event configuration function.
+
+- <Status>Changed</Status> In the <Cmdname sid="alert_receive_settings_by_member" className="uitext" /> section of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, modified not to mask the user information for the member with the <Cmdname sid="member_management" className="b500" /> role.
+
+- <Status>Changed</Status> Modified to newly load the mobile device list if you delete any mobile devices from the <Cmdname sid="my_profile" className="uitext" /> &gt; <Cmdname sid="notification_setting" className="uitext" /> section.
+
+- <Status>Fixed</Status> Fixed the issue where if the mobile device reception test fails in the <Cmdname sid="my_profile" className="uitext" /> &gt; <Cmdname sid="notification_setting" className="uitext" /> section, the mobile device list cannot be loaded and infinite loading happens.
+
+---
+
+### `Application`
+
+- <Status>Changed</Status> Replaced the chart and deleted the detail button in the <Cmdname sid="TTL07710" className="uitext" /> pop-up called by <Cmdname sid="TTL06209" className="uitext" />.
+
+- <Status>Fixed</Status> Modified to select the time range and agent information of the selected chart, when you click the pop-up chart of <Cmdname sid="TTL07710" className="uitext" /> called by <Cmdname sid="TTL06209" className="uitext" /> to go to the <Cmdname sid="side_statistics" className="uitext" /> menu.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />, fixed the issue where the data is not sorted by error when the <Cmdname sid="order_by" className="uitext" /> is set to <Cmdname sid="error" className="uitext" />.
+
+- <Status>Fixed</Status> From the hitmap widget in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where the data is viewed when dragging an empty area on the chart after an agent filtering.
+
+---
+
+### `Server`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the WhaTap repository addition command in the Debian/Ubuntu environment.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" />, fixed the issue where the row height increases and decreases while updating the table data.
+
+---
+
+### `Kubernetes`
+
+<Status>Feature</Status> Added the <Cmdname sid="side_agentsConfiguration" className="uitext" /> menu in the <Cmdname sid="side_appl" className="uitext" /> category.
+
+---
+
+### `Database`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the <UI>Long Waiting Session Count</UI> widget so that its data appears based on the current time.
+
+</div>

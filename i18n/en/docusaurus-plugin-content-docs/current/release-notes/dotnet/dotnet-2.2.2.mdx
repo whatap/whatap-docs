@@ -1,0 +1,19 @@
+---
+id: dotnet-2_2_2
+title: .NET Agent v2.2.2
+toc_max_heading_level: 2
+pagination_next: release-notes/dotnet/dotnet-2_2_1
+displayed_sidebar: releaseSidebar
+---
+
+April 18, 2024
+
+- <Status>New</Status> Added the DataAdapter.Fill() method monitoring.
+
+- <Status>New</Status> Supported WebForm monitoring and handled page movement events as transactions.
+
+- <Status>Feature</Status> Added the agent option, <code>trace_http_client_ip_header_key</code>. For more information, see [the following](../../dotnet/agent-number-of-user#trace_http_client_ip_header_key).
+
+- <Status>Fixed</Status> Fixed the issue where concurrent users are not displayed properly due to the IP address display error.
+
+- <Status>Deprecated</Status> Stopped support of the <code>profile_http_body_enabled</code> option due to potential crash while the agent is reading the body.

@@ -1,0 +1,51 @@
+---
+id: agent-faq
+title: Agent FAQ
+description: This FAQ document is related with the WhaTap agent.
+tags:
+  - Agent
+  - FAQ
+displayed_sidebar: referSidebar
+---
+
+Check the frequently asked questions about agents from WhaTap monitoring service users.
+
+---
+
+<div class ='faq'>
+
+## Monitoring agent name duplication issue
+
+### Why are agent names duplicated in the Scale In/Out environment?
+
+In the Scale In/Out environment, instances or containers are automatically added or removed depending on the resource demand. During this process, if the monitoring agents installed on each instance use a fixed name, the newly created instance may use the same name as that of existing instances, which may cause duplication issues. This happens frequently when instances are self-recovered or continuous release is happening in the DevOps environment.
+
+### What is the resolution for the agent name duplication issue?
+
+The WhaTap agent provides the agent configuration that allows you to create a unique identifier by setting variables whenever each instance or container is restarted. You can apply the `whatap.name` option to the _whatap.conf_ file for agent configuration. See the following example:
+
+```ini title="whatap.conf"
+whatap.name={Job name}-{ip2}-{ip3}-{port}
+```
+
+For example, if `{job name}` is "service," the IP address is **10.11.12.13** and the port number is `8000`, the agent name is assigned with `service-12-13-8000`.
+
+- `{ipN}`: Name is assigned using each Nth unit of the IPv4 address. `N` begins with 0. 
+
+  :::tip
+
+  If the IP address is 10.11.12.13, the following is applied depending on the specified variable.
+
+  `{ip0}`: 10, `{ip1}`: 11, `{ip2}`: 12, `{ip3}`: 13
+
+  :::
+
+- `{port}`: Name is assigned using the port number to which the application listens.
+
+:::note
+
+For more information about agent configuration to identify agent names, see [the following](../java/agent-name).
+
+:::
+
+</div>

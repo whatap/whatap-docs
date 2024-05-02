@@ -12,9 +12,13 @@ The types of widgets that can be placed on the dashboard are as follows.
 
   You can see the memory usages for each agent in real time.
 
-- **_XOS Disk Usage_**
+- **_[XOS] Disk Usage_**
 
-  Displays the disk utilizations, free sizes, and total sizes for each agent. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a wider screen.
+  Displays the disk utilizations, free sizes, and total sizes for each agent. 
+
+  - ![Detail icon](/img/ico-detail.svg): The <Cmdname sid="TTL07856" className="uitext" /> pop-up window appears. You can check the chart that displays the disk usage by time zone. You can check the data by instance. By selecting <UI>Size</UI>, <UI>Free</UI>, or <UI>Used</UI>, you can see the total size, remaining size, and size in use. 
+
+  - ![Zoom in icon](/img/ic-fullscreen.svg): You can expand the table on the widget to a wider screen.
 
   :::tip
 
@@ -90,6 +94,18 @@ For information on how to configure the agent for inquiry of AWS CloudWatch metr
   > `Buffer Hit Ratio` = (1 - (`Innodb_buffer_pool_reads`/`Innodb_buffer_pool_read_requests`)) \* 100
 
 </InDoc>
+
+- **_Long Active Session Count_**
+
+  It provides information about active sessions running on the database for long time. A chart appears for information aggregated by time zone with grouped by the session execution time. It can identify long-running sessions with performance issues or resource leaks in the database, or classify the sessions based on the execution time to visually display which sessions stay active for long time.
+
+  It appears in <span class="normal">blue</span> for less than 3 seconds, <span class="snormal">green</span> for 3 seconds or more that is less than 10, <span class='slow'>orange</span> for 10 seconds or more that is less than 15, and <span class='vslow'>red</span> for 15 seconds or more.
+
+- **_Long Waiting Session Count_**
+
+  It provides information about the long-term latency of the sessions holding or waiting for locks in the database. By combining lock information and active session information, you can trace long-term latencies for queued sessions. It monitors the sessions that are holding locks or waiting for long time. You can visually see which sessions are holding locks or waiting for long time.
+
+  It appears in <span class="normal">blue</span> for less than 5 seconds, <span class="snormal">green</span> for 5 seconds or more that is less than 10, <span class='slow'>orange</span> for 10 seconds or more that is less than 60, and <span class='vslow'>red</span> for 60 seconds or more.
 
 - **_SQL Elapse Map_**
 
