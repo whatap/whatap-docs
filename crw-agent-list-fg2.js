@@ -1,12 +1,15 @@
 // import 파일 목록 생성 추가
+// changed 뺀 것
+// 파일명 목록 Nodejs dotnet 변환 필요
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
 // URL 배열 정의
 const urls = [
-    'https://docs.whatap.io/release-notes/db/dbx-1_6_20',
-    'https://docs.whatap.io/release-notes/db/dbx-1_6_19',
+  'https://docs.whatap.io/release-notes/server/server-2_5_2',
+  'https://docs.whatap.io/release-notes/server/server-2_5_3',
+  'https://docs.whatap.io/release-notes/server/server-2_5_4',
 ];
 
 // 순차적으로 각 URL을 처리하는 함수
@@ -41,8 +44,8 @@ const processUrlsSequentially = async () => {
                         const nextUl = $(h2Element).next('ul').first();
                         const nextP = $(h2Element).next('p').first();
 
-                        const featureInUl = nextUl.find('code.Feature, code.New, code.Changed, code.Deprecated, code.Deprecate');
-                        const featureInP = nextP.find('code.Feature, code.New, code.Changed, code.Deprecated, code.Deprecate');
+                        const featureInUl = nextUl.find('code.Feature, code.New, code.Deprecated, code.Deprecate');
+                        const featureInP = nextP.find('code.Feature, code.New, code.Deprecated, code.Deprecate');
 
                         // 중복 제거한 기능 상세 가져오기
                         const features = new Set();
@@ -81,10 +84,10 @@ const processUrlsSequentially = async () => {
 
             } else {
                 const ulContents = $('header + p').next('ul');
-                const featureInUl = ulContents.find('code.Feature, code.New, code.Changed, code.Deprecated, code.Deprecate');
+                const featureInUl = ulContents.find('code.Feature, code.New, code.Deprecated, code.Deprecate');
 
                 const pContents = $('header + p').next('p');
-                const featureInP = pContents.find('code.Feature, code.New, code.Changed, code.Deprecated, code.Deprecate');
+                const featureInP = pContents.find('code.Feature, code.New, code.Deprecated, code.Deprecate');
 
                 const features = new Set();
                 featureInUl.each((idx, code) => {
