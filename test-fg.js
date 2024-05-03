@@ -1,12 +1,11 @@
-// import 파일 목록 생성 추가
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
 // URL 배열 정의
 const urls = [
-    'https://docs.whatap.io/release-notes/db/dbx-1_6_20',
-    'https://docs.whatap.io/release-notes/db/dbx-1_6_19',
+    'https://docs.whatap.io/release-notes/python/python-1_5_6',
+    'https://docs.whatap.io/release-notes/python/python-1_6_2',
 ];
 
 // 순차적으로 각 URL을 처리하는 함수
@@ -23,9 +22,7 @@ const processUrlsSequentially = async () => {
             let contentSet = new Set();
 
             const version = $('header').text().trim();
-            const versionName = $('header').text().trim().split(" ")[0];;
             const date = $('header + p').text().trim();
-            console.log(versionName);
 
             // 기능 상세 데이터 처리 로직
             const sectionElements = $('*').find('section.remark-sectionize-h2');
@@ -35,7 +32,6 @@ const processUrlsSequentially = async () => {
                     $(element).find('h2').each((index, h2Element) => {
                         // 제품군 내 제품명
                         productName = $(h2Element).text().trim(); // productName 할당
-                        console.log(productName);
 
                         // 기능 상세
                         const nextUl = $(h2Element).next('ul').first();
@@ -57,7 +53,7 @@ const processUrlsSequentially = async () => {
                         if (features.size === 0) return;
 
                         // 중복 체크 및 MDX 형식으로 데이터 생성하여 파일 내용에 추가
-                        const content = `#### <code class='changelog-service'>${version}</code>` + ` <code class='changelog-date'>${date}</code>` + `\n`;
+                        const content = `#### ${version}` + ` - ${date}` + `\n`;
                         if (!contentSet.has(content)) {
                             mdxContent += content + '\n';
                             contentSet.add(content);
@@ -67,16 +63,15 @@ const processUrlsSequentially = async () => {
                     });
 
                     // mdx 파일명 목록에 추가
-                    if (!productFiles[versionName]) {
-                        productFiles[versionName] = [];
+                    if (!productFiles[productName]) {
+                        productFiles[productName] = [];
                     }
                     const segments = url.split('/');
                     const lastUrl = segments[segments.length - 1];
                     const seg2 = lastUrl.split('-');
                     lastUrl2 = seg2[0];
                     const fileName = `./crw-data/crwld-agent/_import-agent-${lastUrl2}.mdx`;
-                    productFiles[versionName].push(fileName);
-                    console.log('테스트');
+                    productFiles[productName].push(fileName);
                 });
 
             } else {
@@ -96,7 +91,7 @@ const processUrlsSequentially = async () => {
 
                 if (features.size === 0) return;
 
-                const content = `#### <code class='changelog-service'>${version}</code>` + ` <code class='changelog-date'>${date}</code>` + `\n`;
+                const content = `#### ${version}` + ` - ${date}` + `\n`;
                 if (!contentSet.has(content)) {
                     mdxContent += content + '\n';
                     contentSet.add(content);
@@ -105,16 +100,16 @@ const processUrlsSequentially = async () => {
                     '\n\n';
 
                 // mdx 파일명 목록에 추가
-                const versionName = $('header').text().trim().split(" ")[0];
-                if (!productFiles[versionName]) {
-                    productFiles[versionName] = [];
+                const productName = $('header').text().trim();
+                if (!productFiles[productName]) {
+                    productFiles[productName] = [];
                 }
                 const segments = url.split('/');
                 const lastUrl = segments[segments.length - 1];
                 const seg2 = lastUrl.split('-');
                 lastUrl2 = seg2[0];
                 const fileName = `./crw-data/crwld-agent/_import-agent-${lastUrl2}.mdx`;
-                productFiles[versionName].push(fileName);
+                productFiles[productName].push(fileName);
             }
 
             // mdx 파일 생성 또는 추가
@@ -142,23 +137,25 @@ const processUrlsSequentially = async () => {
 const generateFilesListMDX = async (productFiles) => {
     let productFilesContent = '';
 
-    Object.keys(productFiles).forEach(versionName => {
-        const filesList = productFiles[versionName].map(file => {
+    Object.keys(productFiles).forEach(productName => {
+        const productNameOnly = productName.split(" ")[0]; // 첫 단어만 가져오기
+        const filesList = productFiles[productName].map(file => {
             const cleanFileName = file.replace(/\u200B/g, '');
-            return `<div class='indentTab'>\n\nimport ${versionName}_agent_1q from ".${cleanFileName}";\n\n<${versionName}_agent_1q />\n\n</div>\n`;
+            return `<div class='indentTab'>\n\n import ${productNameOnly}_agent_1q from ".${cleanFileName}";\n\n<${productNameOnly}_agent_1q />\n\n</div>\n`;
         }).join('\n');
-        const cleanversionName = versionName.replace(/\u200B/g, '');
-        productFilesContent += `### \`${cleanversionName}\`\n\n${filesList}\n`;
+        const cleanProductName = productNameOnly.replace(/\u200B/g, '');
+        productFilesContent += `### \`${cleanProductName}\`\n\n${filesList}\n`;
     });
 
+    // 중복 제거
     const newFilesMDX = `./crw-data/crwld-agent/_import-new-files-list.mdx`; // newFilesMDX 정의
     if (fs.existsSync(newFilesMDX)) {
         const existingFilesContent = fs.readFileSync(newFilesMDX, 'utf-8');
-        const existingFilesSet = new Set(existingFilesContent.split('\n').map(line => line.trim()));
-        const newFilesSet = new Set(productFilesContent.split('\n').map(line => line.trim()));
+        const existingFilesSet = new Set(existingFilesContent.split('\n\n'));
+        const newFilesSet = new Set(productFilesContent.split('\n\n'));
         const mergedFilesSet = new Set([...existingFilesSet, ...newFilesSet]);
         const mergedFilesArray = Array.from(mergedFilesSet);
-        const mergedFilesContent = mergedFilesArray.join('\n\n') + '\n\n';
+        const mergedFilesContent = mergedFilesArray.join('\n\n');
         productFilesContent = mergedFilesContent;
     }
 

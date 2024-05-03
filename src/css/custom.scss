@@ -1168,6 +1168,13 @@ main {
       border: 0.5px;
       padding: 2px 5px 2px 5px;
     }
+    code.changelog-date {
+      // font-family: "Oleo Script";
+      background-color: transparent;
+      border: none;
+      font-size: .6em;
+      // font-size: 70%;
+    }
     code.history {
       background-color: rgb(177, 177, 177);
     }
