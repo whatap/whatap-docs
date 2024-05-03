@@ -229,7 +229,7 @@ function _createMdxContent(props) {
               children: "https://preview.whatap.io"
             })
           }), "에서 이용할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-            to: "../../oracle-dma/monitoring-intro",
+            to: "https://whatap.github.io/whatap-docs/oracle-dma/monitoring-intro",
             target: "_blank",
             children: "다음 문서"
           }), "를 참조하세요."]

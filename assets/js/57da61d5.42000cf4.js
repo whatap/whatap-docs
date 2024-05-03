@@ -1,5 +1,720 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[34495],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78912],{
+
+/***/ 94617:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28453);
+/* harmony import */ var _theme_DocCardList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33322);
+/* harmony import */ var _site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(51738);
+/* harmony import */ var _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72995);
+
+
+const frontMatter = {
+	id: 'reference',
+	title: '참조 문서',
+	description: '와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다.',
+	tags: [
+		'참조 문서',
+		'자료집',
+		'와탭',
+		'Docs'
+	],
+	toc_max_heading_level: 4
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "reference",
+  "title": "참조 문서",
+  "description": "와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다.",
+  "source": "@site/docs/reference.mdx",
+  "sourceDirName": ".",
+  "slug": "/reference",
+  "permalink": "/whatap-docs/reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/reference.mdx",
+  "tags": [
+    {
+      "label": "참조 문서",
+      "permalink": "/whatap-docs/tags/참조-문서"
+    },
+    {
+      "label": "자료집",
+      "permalink": "/whatap-docs/tags/자료집"
+    },
+    {
+      "label": "와탭",
+      "permalink": "/whatap-docs/tags/와탭"
+    },
+    {
+      "label": "Docs",
+      "permalink": "/whatap-docs/tags/docs"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "reference",
+    "title": "참조 문서",
+    "description": "와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다.",
+    "tags": [
+      "참조 문서",
+      "자료집",
+      "와탭",
+      "Docs"
+    ],
+    "toc_max_heading_level": 4
+  },
+  "sidebar": "referSidebar",
+  "next": {
+    "title": "메트릭스",
+    "permalink": "/whatap-docs/metrics/common-metrics-intro"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+
+const toc = [{
+  "value": " Docs 다운로드",
+  "id": "pdf-download",
+  "level": 2
+}, {
+  "value": "상품별, 종류별 문서 다운로드",
+  "id": "상품별-종류별-문서-다운로드",
+  "level": 3
+}, {
+  "value": "릴리스 노트 다운로드",
+  "id": "릴리스-노트-다운로드",
+  "level": 3
+}, {
+  "value": "Service",
+  "id": "service",
+  "level": 4
+}, {
+  "value": "Java agent",
+  "id": "java-agent",
+  "level": 4
+}, {
+  "value": "Java batch agent",
+  "id": "java-batch-agent",
+  "level": 4
+}, {
+  "value": "PHP agent",
+  "id": "php-agent",
+  "level": 4
+}, {
+  "value": "Node.js agent",
+  "id": "nodejs-agent",
+  "level": 4
+}, {
+  "value": "Python agent",
+  "id": "python-agent",
+  "level": 4
+}, {
+  "value": ".NET agent",
+  "id": "net-agent",
+  "level": 4
+}, {
+  "value": "Go agent",
+  "id": "go-agent",
+  "level": 4
+}, {
+  "value": "Server agent",
+  "id": "server-agent",
+  "level": 4
+}, {
+  "value": "Kubernetes agent",
+  "id": "kubernetes-agent",
+  "level": 4
+}, {
+  "value": "DBX agent",
+  "id": "dbx-agent",
+  "level": 4
+}, {
+  "value": "XOS agent",
+  "id": "xos-agent",
+  "level": 4
+}, {
+  "value": "Browser agent",
+  "id": "browser-agent",
+  "level": 4
+}, {
+  "value": "Network Performance Monitoring agent",
+  "id": "network-performance-monitoring-agent",
+  "level": 4
+}, {
+  "value": "ETC",
+  "id": "etc",
+  "level": 4
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    em: "em",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    img: "img",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집입니다. 다음 자료 외에 기술 문서와 관련한 궁금한 사항이나 추가 내용 요청 등의 피드백은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+        href: "mailto:docs@whatap.io",
+        children: "docs@whatap.io"
+      }), "로 보내주세요."]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_DocCardList__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h2, {
+        id: "pdf-download",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          src: (__webpack_require__(20528)/* ["default"] */ .A) + "",
+          width: "28",
+          height: "28"
+        }), " Docs 다운로드"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "상품별-종류별-문서-다운로드",
+        children: "상품별, 종류별 문서 다운로드"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "주요 상품군 및 기타 문서를 PDF 파일로 다음과 같이 제공합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        class: "download-pdf",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+                children: "상품 분류"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+                children: "다운로드 링크"
+              })]
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Application"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033448whatap-apm-java-monitoring.pdf",
+                  children: "Java"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033448whatap-apm-php-monitoring.pdf",
+                  children: "PHP"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033448whatap-apm-nodejs-monitoring.pdf",
+                  children: "Node.js"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033448whatap-apm-python-monitoring.pdf",
+                  children: "Python"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033447whatap-apm-dotnet-monitoring.pdf",
+                  children: ".NET"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033447whatap-apm-go-monitoring.pdf",
+                  children: "Go"
+                })]
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Server"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033452whatap-server-monitoring.pdf",
+                  children: "Server"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Container"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-kubernetes-monitoring.pdf",
+                  children: "Kubernetes"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Database"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-db-postgresql-monitoring.pdf",
+                  children: "PostgreSQL"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-db-oracle-monitoring.pdf",
+                  children: "Oracle"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-db-mysql-monitoring.pdf",
+                  children: "MySQL"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033449whatap-db-mssql-monitoring.pdf",
+                  children: "SQL Server"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-db-tibero-monitoring.pdf",
+                  children: "Tibero"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033449whatap-db-cubrid-monitoring.pdf",
+                  children: "CUBRID"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033449whatap-db-altibase-monitoring.pdf",
+                  children: "Altibase"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-db-redis-monitoring.pdf",
+                  children: "Redis"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033449whatap-db-mongodb-monitoring.pdf",
+                  children: "MongoDB"
+                })]
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "AWS"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033447whatap-amazon-cloudwatch.pdf",
+                  children: "Amazon CloudWatch"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033447whatap-amazon-ecs.pdf",
+                  children: "Amazon ECS"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033448whatap-aws-log-monitoring.pdf",
+                  children: "AWS Log"
+                })]
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Azure"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033449whatap-azure.pdf",
+                  children: "Azure Monitor"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "NCP"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033451whatap-ncloud.pdf",
+                  children: "Naver Cloud Monitoring"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "OCI"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033451whatap-oracle-cloud.pdf",
+                  children: "Oracle Cloud Monitor"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "NPM"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033451whatap-network-performance-monitoring.pdf",
+                  children: "Network Performance Monitoring"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "URL"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033452whatap-url-monitoring.pdf",
+                  children: "URL"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Log"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033451whatap-log-monitoring.pdf",
+                  children: "Log"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "Browser"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033449whatap-browser-monitoring.pdf",
+                  children: "Browser"
+                })
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "기타"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033450whatap-extensions.pdf",
+                  children: "확장 도구(Extensions)"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033451whatap-manage.pdf",
+                  children: "관리 기능"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033451whatap-open-api.pdf",
+                  children: "Open API"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/05/03/033452whatap-reference.pdf",
+                  children: "참조 문서"
+                })]
+              })]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "교육 자료"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/02/01/052908whatap-best-practice-guides-about-apm-dashboard.pdf",
+                  children: "애플리케이션 대시보드"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/02/01/052909whatap-best-practice-guides-about-apm-hitmap-class.pdf",
+                  children: "애플리케이션 히트맵 트랜잭션"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/02/01/052909whatap-best-practice-guides-about-server-dashboard.pdf",
+                  children: "서버 리소스 보드"
+                }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "https://content.whatap.io/24/02/01/052909whatap-best-practice-guides-about-apm-dbc.pdf",
+                  children: "DB 연결 지연과 커넥션 풀"
+                })]
+              })]
+            })]
+          })]
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "download-release-notes",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "릴리스-노트-다운로드",
+          children: "릴리스 노트 다운로드"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["릴리스 노트를 PDF 문서로 다운로드할 수 있습니다. 각 버전별 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Download"
+            })
+          }), " 링크를 선택하면 다운로드할 수 있습니다. 여러 개의 릴리스 노트를 병합해 다운로드하려면 체크 박스를 선택한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Download"
+          }), " 버튼을 선택하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "service",
+          children: "Service"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "service",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .svList */ .a6
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "java-agent",
+          children: "Java agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "java",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .javaList */ .rR
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "java-batch-agent",
+          children: "Java batch agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "javabatch",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .javaBatchList */ .xl
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "php-agent",
+          children: "PHP agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "php",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .phpList */ .vy
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "nodejs-agent",
+          children: "Node.js agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "nodejs",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .nodejsList */ .wo
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "python-agent",
+          children: "Python agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "python",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .pyList */ ._r
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "net-agent",
+          children: ".NET agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "dotnet",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .dotnetList */ .vM
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "go-agent",
+          children: "Go agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "go",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .goList */ .b0
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "server-agent",
+          children: "Server agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "server",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .serverList */ .IK
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "kubernetes-agent",
+          children: "Kubernetes agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "k8s",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .k8sList */ .Tm
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "dbx-agent",
+          children: "DBX agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "dbx",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .dbxList */ .N
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "xos-agent",
+          children: "XOS agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "xos",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .xosList */ .vZ
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "browser-agent",
+          children: "Browser agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "browser",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .browserList */ .rU
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "network-performance-monitoring-agent",
+          children: "Network Performance Monitoring agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "npm",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .npmList */ .E_
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "etc",
+          children: "ETC"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "etc",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .etcList */ .Bq
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
+/***/ 33322:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ DocCardList)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18215);
+/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(51538);
+/* harmony import */ var _theme_DocCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(46647);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+
+
+function DocCardListForCurrentSidebarCategory({ className }) {
+    const category = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__/* .useCurrentSidebarCategory */ .$S)();
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardList, {
+        items: category.items,
+        className: className
+    });
+}
+function DocCardList(props) {
+    const { items, className } = props;
+    if (!items) {
+        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardListForCurrentSidebarCategory, _object_spread({}, props));
+    }
+    const filteredItems = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_3__/* .filterDocCardListItems */ .d1)(items);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", {
+        className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)('row', className),
+        children: filteredItems.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("article", {
+                className: "col col--6 margin-bottom--lg",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_DocCard__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+                    item: item
+                })
+            }, index))
+    });
+}
+
+
+/***/ }),
+
+/***/ 83477:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   W: () => (/* binding */ usePluralForm)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(90062);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 
+
+// We want to ensurer a stable plural form order in all cases
+// It is more convenient and natural to handle "small values" first
+// See https://twitter.com/sebastienlorber/status/1366820663261077510
+const OrderedPluralForms = [
+    'zero',
+    'one',
+    'two',
+    'few',
+    'many',
+    'other'
+];
+function sortPluralForms(pluralForms) {
+    return OrderedPluralForms.filter((pf)=>pluralForms.includes(pf));
+}
+// Hardcoded english/fallback implementation
+const EnglishPluralForms = {
+    locale: 'en',
+    pluralForms: sortPluralForms([
+        'one',
+        'other'
+    ]),
+    select: (count)=>count === 1 ? 'one' : 'other'
+};
+function createLocalePluralForms(locale) {
+    const pluralRules = new Intl.PluralRules(locale);
+    return {
+        locale,
+        pluralForms: sortPluralForms(pluralRules.resolvedOptions().pluralCategories),
+        select: (count)=>pluralRules.select(count)
+    };
+}
+/**
+ * Poor man's `PluralSelector` implementation, using an English fallback. We
+ * want a lightweight, future-proof and good-enough solution. We don't want a
+ * perfect and heavy solution.
+ *
+ * Docusaurus classic theme has only 2 deeply nested labels requiring complex
+ * plural rules. We don't want to use `Intl` + `PluralRules` polyfills + full
+ * ICU syntax (react-intl) just for that.
+ *
+ * Notes:
+ * - 2021: 92+% Browsers support `Intl.PluralRules`, and support will increase
+ * in the future
+ * - NodeJS >= 13 has full ICU support by default
+ * - In case of "mismatch" between SSR and Browser ICU support, React keeps
+ * working!
+ */ function useLocalePluralForms() {
+    const { i18n: { currentLocale } } = (0,_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)();
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>{
+        try {
+            return createLocalePluralForms(currentLocale);
+        } catch (err) {
+            console.error(`Failed to use Intl.PluralRules for locale "${currentLocale}".
+Docusaurus will fallback to the default (English) implementation.
+Error: ${err.message}
+`);
+            return EnglishPluralForms;
+        }
+    }, [
+        currentLocale
+    ]);
+}
+function selectPluralMessage(pluralMessages, count, localePluralForms) {
+    const separator = '|';
+    const parts = pluralMessages.split(separator);
+    if (parts.length === 1) {
+        return parts[0];
+    }
+    if (parts.length > localePluralForms.pluralForms.length) {
+        console.error(`For locale=${localePluralForms.locale}, a maximum of ${localePluralForms.pluralForms.length} plural forms are expected (${localePluralForms.pluralForms.join(',')}), but the message contains ${parts.length}: ${pluralMessages}`);
+    }
+    const pluralForm = localePluralForms.select(count);
+    const pluralFormIndex = localePluralForms.pluralForms.indexOf(pluralForm);
+    // In case of not enough plural form messages, we take the last one (other)
+    // instead of returning undefined
+    return parts[Math.min(pluralFormIndex, parts.length - 1)];
+}
+/**
+ * Reads the current locale and returns an interface very similar to
+ * `Intl.PluralRules`.
+ */ function usePluralForm() {
+    const localePluralForm = useLocalePluralForms();
+    return {
+        selectMessage: (count, pluralMessages)=>selectPluralMessage(pluralMessages, count, localePluralForm)
+    };
+} //# sourceMappingURL=usePluralForm.js.map
+
+
+/***/ }),
 
 /***/ 51738:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -224,6 +939,7 @@ async function getStaticProps() {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Bq: () => (/* binding */ etcList),
+/* harmony export */   E_: () => (/* binding */ npmList),
 /* harmony export */   IK: () => (/* binding */ serverList),
 /* harmony export */   N: () => (/* binding */ dbxList),
 /* harmony export */   Tm: () => (/* binding */ k8sList),
@@ -239,6 +955,12 @@ async function getStaticProps() {
 /* harmony export */   xl: () => (/* binding */ javaBatchList)
 /* harmony export */ });
 const svList = [
+    {
+        "name": 'Service-2.3.x',
+        "date": '2024-03-24',
+        "url": 'https://content.whatap.io/24/05/03/040111service-23x.pdf',
+        "docs": '/release-notes/service/service-2_3_x'
+    },
     {
         "name": 'Service-2.2.x',
         "date": '2024-03-22',
@@ -445,6 +1167,18 @@ const svList = [
     }
 ];
 const javaList = [
+    {
+        "name": 'Java-agent-v2.2.32',
+        "date": '2024-04-16',
+        "url": 'https://content.whatap.io/24/05/03/040316java-agent-v2232.pdf',
+        "docs": '/release-notes/java/java-2_2_32'
+    },
+    {
+        "name": 'Java-agent-v2.2.31',
+        "date": '2024-04-03',
+        "url": 'https://content.whatap.io/24/05/03/040110java-agent-v2231.pdf',
+        "docs": '/release-notes/java/java-2_2_31'
+    },
     {
         "name": 'Java-agent-v2.2.30',
         "date": '2024-03-21',
@@ -782,6 +1516,12 @@ const phpList = [
 ];
 const nodejsList = [
     {
+        "name": 'Node.js-agent-v0.4.95',
+        "date": '2024-04-29',
+        "url": 'https://content.whatap.io/24/05/03/040111nodejs-agent-v0495.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_95'
+    },
+    {
         "name": 'Node.js-agent-v0.4.94',
         "date": '2024-03-07',
         "url": 'https://content.whatap.io/24/04/02/011011nodejs-agent-v0494.pdf',
@@ -1025,6 +1765,30 @@ const pyList = [
     }
 ];
 const dotnetList = [
+    {
+        "name": '.NET-agent-v2.2.4',
+        "date": '2024-04-30',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v224.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_4'
+    },
+    {
+        "name": '.NET-agent-v2.2.3',
+        "date": '2024-04-24',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v223.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_3'
+    },
+    {
+        "name": '.NET-agent-v2.2.2',
+        "date": '2024-04-18',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v222.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_2'
+    },
+    {
+        "name": '.NET-agent-v2.2.1',
+        "date": '2024-04-09',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v221.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_1'
+    },
     {
         "name": '.NET-agent-v2.2.0',
         "date": '2023-11-10',
@@ -1487,6 +2251,24 @@ const serverList = [
     }
 ];
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.6.1",
+        "date": "2024-04-17",
+        "url": "https://content.whatap.io/24/05/03/040111k8s-agent-v161.pdf",
+        "docs": "/release-notes/k8s/k8s-1_6_1"
+    },
+    {
+        "name": "Kubernetes-agent-v1.6.0",
+        "date": "2024-04-05",
+        "url": "https://content.whatap.io/24/05/03/040111k8s-agent-v160.pdf",
+        "docs": "/release-notes/k8s/k8s-1_6_0"
+    },
+    {
+        "name": "Kubernetes-agent-v1.5.9",
+        "date": "2024-04-04",
+        "url": "https://content.whatap.io/24/05/03/040110k8s-agent-v159.pdf",
+        "docs": "/release-notes/k8s/k8s-1_5_9"
+    },
     {
         "name": "Kubernetes-agent-v1.5.8",
         "date": "2024-03-26",
@@ -2026,6 +2808,14 @@ const xosList = [
         "docs": "release-notes/db/xos-previous"
     }
 ];
+const npmList = [
+    {
+        "name": "NPM-agent-v0.4.5",
+        "date": "2024-04-15",
+        "url": "https://content.whatap.io/24/05/03/040111npm-agent-v045.pdf",
+        "docs": "release-notes/npm/npm-v0_4_5"
+    }
+];
 const browserList = [
     {
         "name": "Browser-agent-v1.3.5",
@@ -2143,253 +2933,225 @@ const etcList = [
 
 /***/ }),
 
-/***/ 98918:
+/***/ 46647:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Dlreleasenotes)
+  A: () => (/* binding */ DocCard)
 });
 
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(96540);
-// EXTERNAL MODULE: ./src/components/dl-release-notes/PdfDownload.js + 1 modules
-var PdfDownload = __webpack_require__(51738);
-// EXTERNAL MODULE: ./src/components/dl-release-notes/pdfList.js
-var pdfList = __webpack_require__(72995);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 66 modules
-var Layout = __webpack_require__(77568);
-;// CONCATENATED MODULE: ./src/pages/dl-release-notes/styles.module.css
+// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
+var clsx_m = __webpack_require__(20053);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js
+var Link = __webpack_require__(28618);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/docsUtils.js
+var docsUtils = __webpack_require__(51538);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/usePluralForm.js
+var usePluralForm = __webpack_require__(83477);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(15418);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
+var Heading = __webpack_require__(61917);
+;// CONCATENATED MODULE: ./src/theme/DocCard/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"dlmain":"dlmain_qja4","contents":"contents_TFPp","dltocs":"dltocs_PM2E","dltocItem":"dltocItem_V7vU","tocList":"tocList_Iwqw","dlHeading1":"dlHeading1_bNyW","lastdiv":"lastdiv_xnS5"});
-;// CONCATENATED MODULE: ./src/pages/dl-release-notes/index.js
+/* harmony default export */ const styles_module = ({"cardContainer":"cardContainer_S8oU","cardTitle":"cardTitle_HoSo","cardDescription":"cardDescription_c27F"});
+;// CONCATENATED MODULE: ./src/theme/DocCard/index.js
 
 
 
 
 
 
-function Dlreleasenotes() {
-    const onClickMenu = (e)=>{
-        e.preventDefault();
-        console.log(e.target.hash);
-        const headerOffset = 97;
-        const targetHash = e.target.hash;
-        const targetSection = document.querySelector(targetHash);
-        const targetPostion = targetSection.getBoundingClientRect().top;
-        const offsetPosition = targetPostion + window.pageYOffset - headerOffset;
-        console.log(offsetPosition);
-        if (targetSection) {
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        }
-    };
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(Layout/* default */.A, {
+
+
+
+function useCategoryItemsPlural() {
+    const { selectMessage } = (0,usePluralForm/* usePluralForm */.W)();
+    return (count)=>selectMessage(count, (0,Translate/* translate */.T)({
+            message: '{count} items',
+            id: 'theme.docs.DocCard.categoryDescription.plurals',
+            description: 'The default description for a category card in the generated index about how many items this category includes'
+        }, {
+            count
+        }));
+}
+function CardContainer({ href, children }) {
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
+        href: href,
+        className: (0,clsx_m/* default */.A)('card padding--lg', styles_module.cardContainer),
+        children: children
+    });
+}
+function CardLayout({ href, title, description }) {
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(CardContainer, {
+        href: href,
         children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: styles_module.dlmain,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                        className: styles_module.contents,
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("h1", {
-                                className: styles_module.dlHeading1,
-                                children: "Download Release Notes"
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Service",
-                                typeName: "service",
-                                pdfList: pdfList/* svList */.a6
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Java Agent",
-                                typeName: "java",
-                                pdfList: pdfList/* javaList */.rR
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "PHP Agent",
-                                typeName: "php",
-                                pdfList: pdfList/* phpList */.vy
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Node.js Agent",
-                                typeName: "nodejs",
-                                pdfList: pdfList/* nodejsList */.wo
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Python Agent",
-                                typeName: "python",
-                                pdfList: pdfList/* pyList */._r
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: ".NET Agent",
-                                typeName: "dotnet",
-                                pdfList: pdfList/* dotnetList */.vM
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Go Agent",
-                                typeName: "go",
-                                pdfList: pdfList/* goList */.b0
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Server Agent",
-                                typeName: "server",
-                                pdfList: pdfList/* serverList */.IK
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "Kubernetes Agent",
-                                typeName: "k8s",
-                                pdfList: pdfList/* k8sList */.Tm
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "DBX Agent",
-                                typeName: "dbx",
-                                pdfList: pdfList/* dbxList */.N
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "XOS Agent",
-                                typeName: "xos",
-                                pdfList: pdfList/* xosList */.vZ
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("hr", {}),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(PdfDownload/* default */.A, {
-                                h2title: "ETC",
-                                typeName: "etc",
-                                pdfList: pdfList/* etcList */.Bq
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                        className: styles_module.dltocs,
-                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                            className: styles_module.dltocItem,
-                            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
-                                className: styles_module.tocList,
-                                children: [
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#service",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Service"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#java",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Java Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#php",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "PHP Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#nodejs",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Node.js Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#python",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Python Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#dotnet",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: ".NET Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#go",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Go Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#server",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Server Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#k8s",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "Kubernetes Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#dbx",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "DBX Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#xos",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "XOS Agent"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("li", {
-                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("a", {
-                                            href: "#etc",
-                                            onClick: onClickMenu,
-                                            class: "table-of-contents__link",
-                                            children: "ETC"
-                                        })
-                                    })
-                                ]
-                            })
-                        })
-                    })
-                ]
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
+                as: "h2",
+                className: (0,clsx_m/* default */.A)('text--truncate', styles_module.cardTitle),
+                title: title,
+                children: title
             }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                class: styles_module.lastdiv
+            description && /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                className: (0,clsx_m/* default */.A)('text--truncate', styles_module.cardDescription),
+                title: description,
+                children: description
             })
         ]
     });
+}
+function CardCategory({ item }) {
+    const href = (0,docsUtils/* findFirstSidebarItemLink */.Nr)(item);
+    const categoryItemsPlural = useCategoryItemsPlural();
+    // Unexpected: categories that don't have a link have been filtered upfront
+    if (!href) {
+        return null;
+    }
+    var _item_description;
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLayout, {
+        href: href,
+        // icon="🗃️"
+        title: item.label,
+        description: (_item_description = item.description) !== null && _item_description !== void 0 ? _item_description : categoryItemsPlural(item.items.length)
+    });
+}
+function CardLink({ item }) {
+    var _item_docId;
+    // const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
+    const doc = (0,docsUtils/* useDocById */.cC)((_item_docId = item.docId) !== null && _item_docId !== void 0 ? _item_docId : undefined);
+    var _item_description;
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLayout, {
+        href: item.href,
+        // icon={icon}
+        title: item.label,
+        description: (_item_description = item.description) !== null && _item_description !== void 0 ? _item_description : doc === null || doc === void 0 ? void 0 : doc.description
+    });
+}
+function DocCard({ item }) {
+    switch(item.type){
+        case 'link':
+            return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardLink, {
+                item: item
+            });
+        case 'category':
+            return /*#__PURE__*/ (0,jsx_runtime.jsx)(CardCategory, {
+                item: item
+            });
+        default:
+            throw new Error(`unknown item type ${JSON.stringify(item)}`);
+    }
+}
+
+
+/***/ }),
+
+/***/ 20528:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01LjM0MjM4IDMuOTgzNjlDNS40OTA1OSAzLjY4NzI1IDUuNzkzNTcgMy41IDYuMTI1IDMuNUgyMS44NzVDMjIuMjA2NCAzLjUgMjIuNTA5NCAzLjY4NzI1IDIyLjY1NzYgMy45ODM2OUwyNC40MDc2IDcuNDgzNjlDMjQuNDY4NCA3LjYwNTE5IDI0LjUgNy43MzkxNiAyNC41IDcuODc1VjIyLjc1QzI0LjUgMjMuMjE0MSAyNC4zMTU2IDIzLjY1OTIgMjMuOTg3NCAyMy45ODc0QzIzLjY1OTIgMjQuMzE1NiAyMy4yMTQxIDI0LjUgMjIuNzUgMjQuNUg1LjI1QzQuNzg1ODcgMjQuNSA0LjM0MDc1IDI0LjMxNTYgNC4wMTI1NiAyMy45ODc0QzMuNjg0MzcgMjMuNjU5MiAzLjUgMjMuMjE0MSAzLjUgMjIuNzVWNy44NzVDMy41IDcuNzM5MTYgMy41MzE2MyA3LjYwNTE5IDMuNTkyMzggNy40ODM2OUw1LjM0MjM4IDMuOTgzNjlaTTYuNjY1NzggNS4yNUw1LjI1IDguMDgxNTZWMjIuNzVIMjIuNzVWOC4wODE1NkwyMS4zMzQyIDUuMjVINi42NjU3OFoiIGZpbGw9IiMwNjFDM0QiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjY2ODg4IDE1Ljc5NEMxMC4wMTA2IDE1LjQ1MjMgMTAuNTY0NiAxNS40NTIzIDEwLjkwNjMgMTUuNzk0TDEzLjk5OTkgMTguODg3NkwxNy4wOTM1IDE1Ljc5NEMxNy40MzUyIDE1LjQ1MjMgMTcuOTg5MiAxNS40NTIzIDE4LjMzMDkgMTUuNzk0QzE4LjY3MjYgMTYuMTM1NyAxOC42NzI2IDE2LjY4OTcgMTguMzMwOSAxNy4wMzE0TDE0LjYxODYgMjAuNzQzN0MxNC40NTQ1IDIwLjkwNzggMTQuMjMyIDIxIDEzLjk5OTkgMjFDMTMuNzY3OCAyMSAxMy41NDUzIDIwLjkwNzggMTMuMzgxMiAyMC43NDM3TDkuNjY4ODggMTcuMDMxNEM5LjMyNzE3IDE2LjY4OTcgOS4zMjcxNyAxNi4xMzU3IDkuNjY4ODggMTUuNzk0WiIgZmlsbD0iIzA2MUMzRCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0IDEwLjVDMTQuNDgzMiAxMC41IDE0Ljg3NSAxMC44OTE4IDE0Ljg3NSAxMS4zNzVWMjAuMTI1QzE0Ljg3NSAyMC42MDgyIDE0LjQ4MzIgMjEgMTQgMjFDMTMuNTE2OCAyMSAxMy4xMjUgMjAuNjA4MiAxMy4xMjUgMjAuMTI1VjExLjM3NUMxMy4xMjUgMTAuODkxOCAxMy41MTY4IDEwLjUgMTQgMTAuNVoiIGZpbGw9IiMwNjFDM0QiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zLjUgNy44NzVDMy41IDcuMzkxNzUgMy44OTE3NSA3IDQuMzc1IDdIMjMuNjI1QzI0LjEwODIgNyAyNC41IDcuMzkxNzUgMjQuNSA3Ljg3NUMyNC41IDguMzU4MjUgMjQuMTA4MiA4Ljc1IDIzLjYyNSA4Ljc1SDQuMzc1QzMuODkxNzUgOC43NSAzLjUgOC4zNTgyNSAzLjUgNy44NzVaIiBmaWxsPSIjMDYxQzNEIi8+Cjwvc3ZnPgo=");
+
+/***/ }),
+
+/***/ 28453:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @typedef {import('mdx/types.js').MDXComponents} MDXComponents
+ * @typedef {import('react').Component<{}, {}, unknown>} Component
+ * @typedef {import('react').ReactNode} ReactNode
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {JSX.Element}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
 }
 
 

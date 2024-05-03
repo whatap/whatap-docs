@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'openapi',
+	id: 'openapi-old',
 	title: 'Open API',
 	description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
 	tags: [
@@ -27,13 +27,13 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "openapi",
+  "id": "openapi-old",
   "title": "Open API",
   "description": "Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.",
   "source": "@site/docs/openapi.mdx",
   "sourceDirName": ".",
-  "slug": "/openapi",
-  "permalink": "/whatap-docs/openapi",
+  "slug": "/openapi-old",
+  "permalink": "/whatap-docs/openapi-old",
   "draft": false,
   "unlisted": false,
   "editUrl": "undefined/docs/openapi.mdx",
@@ -45,7 +45,7 @@ const metadata = {
   ],
   "version": "current",
   "frontMatter": {
-    "id": "openapi",
+    "id": "openapi-old",
     "title": "Open API",
     "description": "Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.",
     "tags": [

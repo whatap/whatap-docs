@@ -67,7 +67,7 @@ const metadata = {
   "sidebar": "openapiSidebar",
   "previous": {
     "title": "Open API",
-    "permalink": "/whatap-docs/openapi"
+    "permalink": "/whatap-docs/openapi-old"
   },
   "next": {
     "title": "OpenAPI 호출",
