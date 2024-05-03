@@ -12,7 +12,7 @@ const urls = [
 // 제품명별로 생성된 파일명을 묶는 객체
 const productFiles = {};
 
-// 각 URL을 처리하는 함수
+// 각 URL을 처리
 const processUrls = async () => {
     for (const url of urls) {
         try {
@@ -117,7 +117,7 @@ const processUrls = async () => {
                     return `import ${productName}_1q from ".${cleanFileName}";\n\n<${productName}_1q />\n`;
                 }).join('\n');
                 const cleanProductName = productName.replace(/\u200B/g, '');
-                productFilesContent += `## ${cleanProductName}\n\n${filesList}\n`;
+                productFilesContent += `### \`${cleanProductName}\`\n\n${filesList}\n`;
             });
 
             const newFilesMDX = `./crw-data/crwld-service/_import-new-files-${lastUrl2}.mdx`; // newFilesMDX 정의
@@ -140,7 +140,7 @@ const processUrls = async () => {
     }
 }
 
-// 기존 MDX 파일과 새로운 기능을 비교하고 내용을 업데이트하는 함수
+// 기존 MDX 파일과 새로운 기능을 비교하고 내용을 업데이트
 function updateMDXContent(fileName, existingContent, version, newContent, productName, lastUrl2) {
     let updatedContent = existingContent;
 
