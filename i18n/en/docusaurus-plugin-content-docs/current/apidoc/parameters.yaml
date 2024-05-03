@@ -1,0 +1,244 @@
+WhatapTokenHeader:
+  name: x-whatap-token
+  in: header
+  required: true
+  schema:
+    type: string
+  description: Project API Token {{PROJECT_API_TOKEN}}
+WhatapPcodeHeader:
+  name: x-whatap-pcode
+  in: header
+  required: true
+  schema:
+    type: string
+  description: Project Code {{projectCode}
+WhatapAccoutTokenHeader:
+  name: x-whatap-token
+  in: header
+  required: true
+  schema:
+    type: string
+  description: Account API Token {{ACCOUNT_API_TOKEN}}
+GroupKeyPath:
+  name: groupKey
+  in: path
+  required: true
+  schema:
+    type: integer
+  description: Group's unique identifier (ID)
+ProjectCodePath:
+  name: projectCode
+  in: path
+  required: true
+  schema:
+    type: integer
+  description: pcode
+StartTimePath:
+  name: stime
+  in: path
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: Query start time (UNIX epoch time, millisecond)
+StartTimeQuery:
+  name: stime
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: Query start time (UNIX epoch time, millisecond)
+EndTimePath:
+  name: etime
+  in: path
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: Query end time (UNIX epoch time, millisecond)
+EndTimeQuery:
+  name: etime
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: Query end time (UNIX epoch time, millisecond)
+TimeMergeQuery:
+  name: timeMerge
+  in: query
+  required: true
+  schema:
+    type: string
+    enum:
+      - avg
+    description: Data collection method
+MetricTypePath:
+  name: metric_type
+  in: path
+  require: true
+  schema:
+    type: string
+    enum:
+      - thread_count
+      - thread_daemon
+      - thread_peak_count
+      - threadpool_active
+      - threadpool_queue
+      - apdex
+      - tx_caller
+    description: Metric that can be viewed
+MetricTypeAvgPath:
+  name: metric_type
+  in: path
+  require: true
+  schema:
+    type: string
+    enum:
+      - thread_count
+      - thread_daemon
+      - thread_peak_count
+      - threadpool_active
+      - threadpool_queue
+      - apdex
+    description: Metric that can be viewed
+CallStaticTypePath:
+  name: metric_type
+  in: path
+  require: true
+  schema:
+    type: string
+    enum:
+      - tx_caller
+      - tx_domain
+    description: Metric that can be viewed
+OidPath:
+  name: oids
+  in: path
+  required: true
+  schema:
+    type: integer
+    format: int32
+    description: Multiple agent identifiers (ID) can be entered using comma (,) as the delimiter.
+OidQuery:
+  name: oids
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int32
+    description: Multiple agent identifiers (ID) can be entered using comma (,) as the delimiter.
+AOidQuery:
+  name: oid
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int32
+    description: Agent's unique identifier (ID)
+FilterQuery:
+  name: filter
+  in: query
+  required: true
+  schema:
+    type: string
+    enum:
+      - m5
+      - s5
+      - h1
+FilterkeyPath:
+  name: filterkey
+  in: path
+  required: true
+  schema:
+    type: string
+    enum:
+      - caller_pcode
+      - caller_spec
+      - caller_url
+      - spec
+      - url
+    description: Query condition key
+FiltervalPath:
+  name: filterval
+  in: path
+  required: true
+  schema:
+    type: string
+    description: Query condition (if `filterkey` is `caller_url` or `url`, base64 encoding is applied)
+BaseTimeQuery:
+  name: baeTime
+  in: query
+  required: true
+  schema:
+    type: string
+    format: yyyyMMdd
+    description: Reference time
+CompareTimeQuery:
+  name: comparisonTime
+  in: query
+  required: true
+  schema:
+    type: string
+    format: yyyyMMdd
+    description: Comparison time
+PeriodQuery:
+  name: period
+  in: query
+  required: true
+  schema:
+    type: string
+    enum:
+      - day
+      - weak
+    description: Inquiry time
+DateQuery:
+  name: date
+  in: query
+  required: true
+  schema:
+    type: string
+    format: yyyyMMdd
+    description: Reference time
+TopNQuery:
+  name: topN
+  in: query
+  required: false
+  schema:
+    type: number
+    format: 1 -1000
+    default: 10
+    description: Number of upper cases
+OrderQuery:
+  name: order
+  in: query
+  required: false
+  schema:
+    type: string
+    default: sql_execute_cnt
+    enum:
+      - sql_execute_cnt
+      - sql_elapse
+      - sql_elapse_max
+    description: Sort by
+CategoryQuery:
+  name: category
+  in: query
+  required: false
+  schema:
+    type: string
+    default: ALL
+    enum:
+      - ALL
+      - DB
+      - HOST
+      - USER
+    description: If you select the category, `USER`, it responds with SQL statistical data on the user basis.
+NameInCategoryQuery:
+  name: nameInCategory
+  in: query
+  required: false
+  schema:
+    type: string
+  description: Addition when `category` is selected as the parameter
