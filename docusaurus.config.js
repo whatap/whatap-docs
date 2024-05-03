@@ -143,8 +143,16 @@ const config = {
           {
             // Redocusaurus will automatically bundle your spec into a single file during the build
             spec: 'docs/apidoc/openapi.yaml',
-            route: '/openapi-test',
+            route: '/openapi-spec',
           },
+          {
+            spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            route: '/openapi-spec-en',
+          },
+          {
+            spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            route: '/openapi-spec-ja',
+          }
         ],
         // Theme Options for modifying how redoc renders them
         theme: {
@@ -599,8 +607,7 @@ const config = {
             label: '관리 기능',
           },
           {
-            type: 'doc',
-            docId: 'openapi',
+            to: 'openapi',
             position: 'left',
             label: 'Open API',
           },

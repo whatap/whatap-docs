@@ -55,7 +55,7 @@ ServerList:
       description: pcode
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     timezone:
       type: integer
       description: Time Zone
@@ -90,7 +90,7 @@ ServerProc:
   properties:
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     values:
       type: object
       additionalProperties:
@@ -124,7 +124,7 @@ ServerDiskIOPS:
       description: pcode
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     timezone:
       type: integer
       description: Time Zone
@@ -153,7 +153,7 @@ ServerAgentCount:
   properties:
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     values:
       type: string
       description: Count
@@ -165,7 +165,7 @@ ServerCpuUsage:
       description: pcode
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     timezone:
       type: integer
       description: Time Zone
@@ -189,7 +189,7 @@ ServerNetworkTraffic:
       description: pcode
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     timezone:
       type: integer
       description: Time Zone
@@ -236,7 +236,7 @@ APM:
       description: Project modification date
     name:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     productType:
       type: string
       description: Application Product Type
@@ -245,7 +245,7 @@ Server:
   properties:
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     timezone:
       type: integer
       description: Universal time zone in which the server's location is set
@@ -1095,7 +1095,7 @@ MXQLtextResponse:
       description: pcode
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     okind:
       type: integer
       description: Agent Group IDs for each Type
@@ -1261,7 +1261,7 @@ MXQLPathResponse:
       description: pcode
     pname:
       type: string
-      description: 프로젝트 이름
+      description: Project name
     oid:
       type: integer
       description: Agent's unique identifier (ID)

@@ -129,6 +129,13 @@ html[lang='ja-JP'] {
   div[class*='announcementBar'] {
     display: none;
   }
+  .api-guide {
+    table {
+      td {
+        word-break: break-all;
+      }
+    }
+  }
 }
 * {
   margin: 0;
@@ -712,6 +719,9 @@ article div[class*='fbsharebutton'] {
     background-color: #f0f0f0 !important;
     color: #4c4c4c !important;
     padding: 0 6px !important;
+  }
+  a {
+    color: var(--main-osd-color) !important;
   }
   em strong {
     color: var(--main-osd-color);

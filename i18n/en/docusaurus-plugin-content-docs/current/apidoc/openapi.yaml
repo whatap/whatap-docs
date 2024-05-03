@@ -2,177 +2,132 @@ openapi: 3.0.0
 info:
   title: WhaTap Open API
   version: 1.0.0
-  description: >
+  description: |
     ## Open API
-
 
     To extract the monitoring data being collected and use it separately, the
     function to extract data is provided through Open API. You can obtain the
     collected data by passing the account API token, project API token, and
     project code as parameters.
 
+    For older versions of Open API documentation, see [the following](openapi-old).
 
     ## Checking the open API token
-
 
     Tokens are divided into account API tokens and project API tokens. The
     account API token is used to acquire the project list, and the project API
     token is used to acquire project monitoring data.
-
 
     You can check the project code through the data displayed like "`[{project
     code}]` Cloud Application Monitoring" in the window or tab title at the top
     of the browser screen when entering the project. To change the API token,
     select ***Reissue*** or ***Reissue Token*** on each screen.
 
-
     <div class="api-guide">
 
-
     | Type | Key | Set value | Remarks |
-
-    | -- | --| -- | --|
-
+    | -- | -- | -- | -- |
     | Header | `x-whatap-token` | API token | Account API Token |
-
     | Header | `x-whatap-token` | API token | Project API Token |
-
-    | Header | `x-whatap-pcode` | Project code | Check in the window or browser
-    tab title |
-
+    | Header | `x-whatap-pcode` | Project code | Check in the window or browser tab title |
 
     </div>
 
-
-    ### 계정 토큰 확인하기
-
+    ### Checking the account token
 
     1. Select the profile icon on the upper right of the screen.
 
-
     1. If a pop-up menu appears, select ***Manage Accounts***.
-
 
     1. Scroll down the screen, go to the ***Api token*** section.
 
-
     ### Checking the project token.
-
 
     1. Select a project in the Home screen. 
 
-
     1. After entering the project, select ***Management*** &gt; ***Project
     Management*** on the left.
-
 
     1. Check the ***Api token***.
 servers:
   - url: https://api.whatap.io
 tags:
-  - name: APM Spot 정보 조회
-    description: >-
+  - name: APM spot information API
+    description: |
       It provides a list of APIs that allow you to view the agent information
       and related metrics for application monitoring projects.
-  - name: APM 통계 데이터 조회
-    description: >-
+  - name: APM viewing the statistical data
+    description: |
       It provides a list of APIs that allow you to view the statistical data for
       application monitoring projects.
-  - name: Server Spot 정보 조회
-    description: >-
+  - name: Server spot information API
+    description: |
       It provides a list of APIs that allow you to view the agent information
       and related metrics for server monitoring projects.
-  - name: Server 통계 데이터 조회
-    description: >-
+  - name: Server Viewing the statistical data
+    description: |
       It provides a list of APIs that allow you to view the statistical data for
       server monitoring projects.
-  - name: Database 파라미터 조회
+  - name: Database viewing the parameter
     description: You can view the parameters in the database.
-  - name: Database SQL 조회
+  - name: Database viewing SQL
     description: You can view the SQLs in the database.
-  - name: MXQL Open API 호출하기
-  - name: MXQL Open API 사용 안내
-    description: >
+  - name: Calling the MXQL open API
+  - name: MXQL open API usage guide
+    description: |
       You can use MXQL as follows.
-
 
       * How to write MXQL queries to retrieve data
 
-      * As in [the following](../mxql/mxql-guide#custom-query-saas), the method
-      how to retrieve data by the **predefined MXQL query list provided by the
-      SaaS service**
-
+      * As in [the following](../mxql/mxql-guide#custom-query-saas), the method how to retrieve data by the **predefined MXQL query list provided by the SaaS service**
 
       Therefore, the API path used in each case differs. 
 
-
       <div class="api-guide">
 
-
       | How to use MXQL | API |
-
       | -- | -- |
-
-      | In case of writing the MXQL queries | [MXQL text
-      API](#tag/MXQL-Open-API/paths/~1open~1api~1flush~1mxql~1text/post) |
-
-      | In case of using the **predefined MXQL query list provided by the SaaS
-      service** (see [the following](../mxql/mxql-guide#custom-query-saas)) |
-      [MXQL path
-      API](#tag/MXQL-Open-API/paths/~1open~1api~1flush~1mxql~1path/post) |
-
+      | In case of writing the MXQL queries | [MXQL text API](#tag/Calling-the-MXQL-open-API/paths/~1open~1api~1flush~1mxql~1text/post) |
+      | In case of using the **predefined MXQL query list provided by the SaaS service** (see [the following](../mxql/mxql-guide#custom-query-saas)) | [MXQL path API](#tag/Calling-the-MXQL-open-API/paths/~1open~1api~1flush~1mxql~1path/post) |
 
       </div>
-
 
       The content included in the header upon open API call is as follows:
 
-
       <div class="api-guide">
 
-
       | Type | Key  | Set value | Remarks |
-
       | ---- | --- | ------- | ---- |
-
-      | Header | x-whatap-token | API Token `{{PROJECT API TOKEN}}` | Project
-      API Token: Select Project > ***Management*** > ***Project Managemen*** >
-      ***Api token***|
-
-      | Header | x-whatap-pcode | Project code `{{projectCode}}` | Project code:
-      Select Project > ***Management*** > ***Project Managemen*** > ***pcode***
-      |
-
+      | Header | x-whatap-token | API Token `{{PROJECT API TOKEN}}` | Project API Token: Select Project &gt; ***Management*** &gt; ***Project Managemen*** &gt; ***Api token*** |
+      | Header | x-whatap-pcode | Project code `{{projectCode}}` | Project code: Select Project &gt; ***Management*** &gt; ***Project Managemen*** &gt; ***pcode*** |
 
       </div>
 
-
       **Constraints of the MXQL open API**
-
 
       You can search up to 31 days in a single request.
 x-tagGroups:
-  - name: 메타성 정보 조회
+  - name: Viewing the meta information
     tags:
-      - 프로젝트
-      - 그룹
-      - 에이전트
+      - Project
+      - Group
+      - Agent
   - name: Appication
     tags:
-      - APM Spot 정보 조회
-      - APM 통계 데이터 조회
+      - APM spot information API
+      - APM viewing the statistical data
   - name: Server
     tags:
-      - Server Spot 정보 조회
-      - Server 통계 데이터 조회
+      - Server spot information API
+      - Server viewing the statistical data
   - name: Database
     tags:
-      - Database 파라미터 조회
-      - Database SQL 조회
+      - Database viewing the parameter
+      - Database viewing SQL
   - name: MXQL Open API
     tags:
-      - MXQL Open API 사용 안내
-      - MXQL Open API 호출하기
+      - MXQL open API usage guide
+      - Calling the MXQL open API
 paths:
   /open/api/json/projects:
     get:
@@ -180,7 +135,7 @@ paths:
       operationId: getProjectsList
       description: This API provides the list of projects.
       tags:
-        - 프로젝트
+        - Project
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
       responses:
@@ -204,7 +159,7 @@ paths:
                           description: pcode
                         projectName:
                           type: string
-                          description: 프로젝트 이름
+                          description: Project name
                         createTime:
                           type: string
                           format: date-time
@@ -268,7 +223,7 @@ paths:
       description: This API provides the projects for applications and servers.
       operationId: getProjectInfo
       tags:
-        - 프로젝트
+        - Project
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -336,12 +291,12 @@ paths:
   /open/json/agents:
     get:
       summary: Viewing the agent status and host IP
-      description: >-
+      description: |
         This API provides the status and IP addresses of the agents in the
         project.
       operationId: getAgentInfo
       tags:
-        - 에이전트
+        - Agent
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -387,7 +342,7 @@ paths:
       description: This API provides the list of members in the project.
       operationId: getProjectMemberList
       tags:
-        - 프로젝트
+        - Project
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/ProjectCodePath
@@ -422,7 +377,7 @@ paths:
               example:
                 data:
                   - email: honggildong@whatap.io
-                    name: 홍길동
+                    name: Hong
                     desc: ''
                     sms: 010XXXXXXX
                 totla: 8
@@ -439,7 +394,7 @@ paths:
       description: This API provides a list of groups to which the user belongs.
       operationId: getGroupList
       tags:
-        - 그룹
+        - Group
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
       responses:
@@ -483,12 +438,12 @@ paths:
   /open/api/json/group/{groupKey}/members:
     get:
       summary: Viewing the group member list
-      description: >-
+      description: |
         This API provides a list of members in the group to which the user
         belongs.
       operationId: getGroupMemberList
       tags:
-        - 그룹
+        - Group
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/GroupKeyPath
@@ -523,7 +478,7 @@ paths:
               example:
                 data:
                   - email: honggildong@whatap.io
-                    name: 홍길동
+                    name: Hong
                     desc: ''
                     sms: 010XXXXXXX
                 totla: 8
@@ -540,7 +495,7 @@ paths:
       description: This API views meta information of the projects in the group.
       operationId: getGroupProjectList
       tags:
-        - 그룹
+        - Group
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/GroupKeyPath
@@ -562,7 +517,7 @@ paths:
                           description: pcode
                         name:
                           type: string
-                          description: 프로젝트 이름
+                          description: Project name
                         status:
                           type: string
                           description: Project status
@@ -601,7 +556,7 @@ paths:
   /open/api/v2/agent/list:
     post:
       summary: Calling the oid list
-      description: >
+      description: |
         This API allows you to view active agents during the desired period. The
         query time (`stime`, `etime`) is limited to one day and its unit is ms
         (millisecond).
@@ -622,7 +577,7 @@ paths:
 
         * `MMddHHmm`
       tags:
-        - 에이전트
+        - Agent
       requestBody:
         required: true
         content:
@@ -710,7 +665,7 @@ paths:
                           description: Agent Version
                         cpuCores:
                           type: integer
-                          description: >-
+                          description: |
                             Number of CPU cores on the server where the agent is
                             installed
               example:
@@ -744,11 +699,11 @@ paths:
     get:
       summary: Viewing all information
       operationId: getApmAllinfo
-      description: >-
+      description: |
         This API allows you to view all information of the application
         monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -793,11 +748,11 @@ paths:
   /open/api/act_agent:
     get:
       summary: Viewing the active agent count
-      description: >-
+      description: |
         This API allows you to view the number of active agents in the
         application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -821,11 +776,11 @@ paths:
   /open/api/inact_agent:
     get:
       summary: Viewing the inactive agent count
-      description: >-
+      description: |
         This API allows you to view the number of inactive agents in the
         application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -849,11 +804,11 @@ paths:
   /open/api/host:
     get:
       summary: Host count
-      description: >-
+      description: |
         This API allows you to view the number of hosts connected to the
         application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -877,11 +832,11 @@ paths:
   /open/api/cpucore:
     get:
       summary: Sum of CPU cores of the host
-      description: >-
+      description: |
         This API allows you to view the sum of CPU cores of the host connected
         to the application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -905,11 +860,11 @@ paths:
   /open/api/txcount:
     get:
       summary: Transaction Count
-      description: >-
+      description: |
         This API allows you to view the number of transactions in the
         application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -933,11 +888,11 @@ paths:
   /open/api/tps:
     get:
       summary: TPS
-      description: >-
+      description: |
         This API allows you to view the number of transactions per second (TPS)
         in the application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -962,12 +917,12 @@ paths:
   /open/api/user:
     get:
       summary: Active users (5 minutes)
-      description: >-
+      description: |
         This API allows you to view concurrent users in the application
         monitoring project, which measures users who issued transactions within
         the last 5 minutes.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -991,11 +946,11 @@ paths:
   /open/api/actx:
     get:
       summary: Active Transaction
-      description: >-
+      description: |
         This API allows you to view the number of active transactions in the
         application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1019,11 +974,11 @@ paths:
   /open/api/rtime:
     get:
       summary: Average Res. Time
-      description: >-
+      description: |
         This API allows you to view the average response time in the application
         monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1047,11 +1002,11 @@ paths:
   /open/api/cpu:
     get:
       summary: Average CPU utilization
-      description: >-
+      description: |
         This API allows you to view the average CPU utilization in the
         application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1076,11 +1031,11 @@ paths:
   /open/api/apdex:
     get:
       summary: Apdex
-      description: >-
+      description: |
         This API allows you to view the Apdex (Application Performance Index,
         application user satisfaction) in the application monitoring project.
       tags:
-        - APM Spot 정보 조회
+        - APM spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1105,11 +1060,11 @@ paths:
   /open/api/json/exception/{stime}/{etime}:
     get:
       summary: Exception
-      description: >-
+      description: |
         This API allows you to view the exception details during the time set in
         the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1145,11 +1100,11 @@ paths:
   /open/api/json/httpc/{stime}/{etime}:
     get:
       summary: HTTP outbound call
-      description: >-
+      description: |
         This API allows you to view the HTTP outbound call records during the
         time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1189,12 +1144,12 @@ paths:
   /open/api/json/httpc/{stime}/{etime}/filter/host/{host}/port/{port}:
     get:
       summary: HTTP Outbound Call Filtering
-      description: >-
+      description: |
         This API allows you to filter HTTP outbound call records based on the
         host address and port number during the time set in the application
         monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1252,7 +1207,7 @@ paths:
                 total: 1080
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1265,11 +1220,11 @@ paths:
   /open/api/json/sql/{stime}/{etime}:
     get:
       summary: SQL
-      description: >-
+      description: |
         This API allows you to view the SQL statements during the time set in
         the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1311,12 +1266,12 @@ paths:
   /open/api/json/remote/{stime}/{etime}:
     get:
       summary: Client IP
-      description: >-
+      description: |
         This API allows you to view the remote client IPs during the time set in
         the application monitoring project. WhaTap basically stores the
         client-related information.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1347,11 +1302,11 @@ paths:
   /open/api/json/transaction/{stime}/{etime}:
     get:
       summary: Transactions
-      description: >-
+      description: |
         This API allows you to view the transaction records during the time set
         in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1396,12 +1351,12 @@ paths:
   /open/api/json/heap_use/{stime}/{etime}/avg:
     get:
       summary: Heap use - statistics average
-      description: >-
+      description: |
         This API allows you to view the average statistics for heap usage during
         the time set in the application monitoring project. The query time is
         limited to one hour and is measured in milliseconds (ms).
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1438,12 +1393,12 @@ paths:
   /open/api/json/heap_use/{stime}/{etime}/max:
     get:
       summary: Heap use - statistics maximum
-      description: >-
+      description: |
         This API allows you to view the maximum statistics for heap usage during
         the time set in the application monitoring project. The query time is
         limited to one hour and is measured in milliseconds (ms).
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1480,11 +1435,11 @@ paths:
   /open/api/json/{metric_type}/{stime}/{etime}:
     get:
       summary: Viewing the agent data
-      description: >-
+      description: |
         This API allows you to view the data for all agents during the time set
         in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1535,11 +1490,11 @@ paths:
   /open/api/json/{metric_type}/{stime}/{etime}/avg:
     get:
       summary: Query for average agent data
-      description: >-
+      description: |
         This API allows you to view the average data for all agents during the
         time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1570,7 +1525,7 @@ paths:
                     - 109.68
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1583,13 +1538,13 @@ paths:
   /open/api/json/{metric_type}/{stime}/{etime}/{oids}:
     get:
       summary: Viewing the specified agent data
-      description: >-
+      description: |
         This API allows you to view the thread counts of the specified agents
         (oids) during the time set in the application monitoring project.
         Multiple agents (oids) can be specified using comma (,) as the
         delimiter.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1632,7 +1587,7 @@ paths:
                         - 90.05
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1645,13 +1600,13 @@ paths:
   /open/api/json/{metric_type}/{stime}/{etime}/avg/{oids}:
     get:
       summary: Viewing the specified average agent data
-      description: >-
+      description: |
         This API allows you to view the average data of the specified agents
         (oids) during the time set in the application monitoring project.
         Multiple agents (oids) can be specified using comma (,) as the
         delimiter.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1682,7 +1637,7 @@ paths:
                     - 120.2
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1695,13 +1650,13 @@ paths:
   /open/api/json/visitor_5m/{stime}/{etime}:
     get:
       summary: Viewing active users per 5 minutes
-      description: >-
+      description: |
         This API allows you to view the concurrent users at an interval of 5
         minutes during the time set in the application monitoring project. The
         measure of concurrent users is for users who issued transactions within
         the last 5 minutes.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1735,11 +1690,11 @@ paths:
   /open/api/json/visitor_h/{stime}/{etime}:
     get:
       summary: Viewing active users per 1 hour
-      description: >-
+      description: |
         This API allows you to view the concurrent users at an interval of 1
         hour during the time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1773,11 +1728,11 @@ paths:
   /open/api/json/visitor_d/{stime}/{etime}:
     get:
       summary: Viewing active users per 1 day
-      description: >-
+      description: |
         This API allows you to view the concurrent users at an interval of 1 day
         during the time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1813,13 +1768,13 @@ paths:
   /open/api/json/visitor_m/{stime}/{etime}:
     get:
       summary: Viewing active users per 1 month
-      description: >-
+      description: |
         This API allows you to view the concurrent users at an interval of 1
         month during the time set in the application monitoring project. As the
         unique user statistics aggregated for 1 month, `etime` cannot exceed 365
         days based on `stime`.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1861,7 +1816,7 @@ paths:
   /open/api/json/{metric_type}/{stime}/{etime}/filter/{filterkey}/{filtereval}:
     get:
       summary: Call Statistics Filtering
-      description: >
+      description: |
         You can filter cross-project transaction call statistics or transaction
         domain call statistics for view.
 
@@ -1872,7 +1827,7 @@ paths:
         * **filterval**: Query condition (base64 encoding if `filterkey` is
         `caller_url` or `url`)
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1883,7 +1838,7 @@ paths:
         - $ref: parameters.yaml#/FiltervalPath
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1896,7 +1851,7 @@ paths:
   /open/api/json/{metric_type}/{stime}/{etime}/{oids}/filter/{filterkey}/{filtereval}:
     get:
       summary: Filtering the designated agent's calls
-      description: >
+      description: |
         You can filter cross-project transaction call statistics or transaction
         domain call statistics based on the specified agent for view.
 
@@ -1907,7 +1862,7 @@ paths:
         * **filterval**: Query condition (base64 encoding if `filterkey` is
         `caller_url` or `url`)
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1919,7 +1874,7 @@ paths:
         - $ref: parameters.yaml#/FiltervalPath
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1932,11 +1887,11 @@ paths:
   /open/api/raw/tag/app_counter/tps?stime={stime}&etime={etime}&timeMerge={timeMerge}:
     get:
       summary: TPS
-      description: >-
+      description: |
         This API allows you to view the TPS (Transaction Per Second) data during
         the time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1955,7 +1910,7 @@ paths:
               example: '66.0'
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -1968,11 +1923,11 @@ paths:
   /open/api/raw/tag/app_counter/resp_time?stime={stime}&etime={etime}&timeMerge={timeMerge}:
     get:
       summary: Average response time
-      description: >-
+      description: |
         This API allows you to view the average response time during the time
         set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -1990,7 +1945,7 @@ paths:
               example: 1640
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2003,11 +1958,11 @@ paths:
   /open/api/raw/tag/app_host_resource/cpu?stime={stime}&etime={etime}&timeMerge={timeMerge}:
     get:
       summary: Average CPU utilization
-      description: >-
+      description: |
         This API allows you to view the average CPU utilization during the time
         set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2025,7 +1980,7 @@ paths:
               example: '11.50'
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2038,11 +1993,11 @@ paths:
   /open/api/tag/db_pool_detail/dbconn?stime={stime}&etime={etime}&timeMerge={timeMerge}:
     get:
       summary: DB connection counts for each data source
-      description: >-
+      description: |
         This API allows you to view the DB connection counts for each data
         source during the time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2068,7 +2023,7 @@ paths:
                     total: 100
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2081,11 +2036,11 @@ paths:
   /open/api/tag/db_pool_detail/dbconn?etime={etime}:
     get:
       summary: DB connection counts for each data source - short-term search
-      description: >-
+      description: |
         This API allows you to view the DB connection counts for each data
         source based on the end time set in the application monitoring project.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2115,7 +2070,7 @@ paths:
                     total: 100
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2128,12 +2083,12 @@ paths:
   /open/api/v2/yard/flush:
     post:
       summary: IP-based transaction search
-      description: >-
+      description: |
         For one hour from the user-specified start time (`stime`), transactions
         requested by a specific IP are sorted in descending order of the call
         count and up to 100 URLs are delivered by this API.
       tags:
-        - APM 통계 데이터 조회
+        - APM viewing the statistical data
       requestBody:
         required: true
         content:
@@ -2210,11 +2165,11 @@ paths:
   /open/json/act_agent:
     get:
       summary: Viewing the active agent count
-      description: >-
+      description: |
         This API allows you to view the number of active agents in the server
         monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2239,11 +2194,11 @@ paths:
   /open/json/inact_agent:
     get:
       summary: Viewing the inactive agent count
-      description: >-
+      description: |
         This API allows you to view the number of inactive agents in the server
         monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2268,11 +2223,11 @@ paths:
   /open/json/host:
     get:
       summary: Host count
-      description: >-
+      description: |
         This API allows you to view the number of hosts connected to the server
         monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2297,11 +2252,11 @@ paths:
   /open/json/cpucore:
     get:
       summary: Sum of CPU cores of the host
-      description: >-
+      description: |
         This API allows you to view the sum of CPU cores of the host connected
         to the server monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2326,11 +2281,11 @@ paths:
   /open/json/infra_cpu:
     get:
       summary: CPU Utilization
-      description: >-
+      description: |
         This API allows you to view the CPU utilization of the host connected to
         the server monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2363,11 +2318,11 @@ paths:
   /open/json/infra_disk_iops:
     get:
       summary: Sum of disk IOPS
-      description: >-
+      description: |
         This API allows you to view the sum of disk IOPS of the host connected
         to the server monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2408,11 +2363,11 @@ paths:
   /open/json/infra_net_traffic:
     get:
       summary: Sum of network traffic (IN/OUT)
-      description: >-
+      description: |
         This API allows you to view the sum of network traffic (IN/OUT) of the
         host connected to the server monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2444,11 +2399,11 @@ paths:
   /open/json/infra_proc:
     get:
       summary: Process status
-      description: >-
+      description: |
         This API allows you to view the process status of the host connected to
         the server monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2487,11 +2442,11 @@ paths:
   /open/json/sm_servers:
     get:
       summary: Server List
-      description: >-
+      description: |
         This API allows you to view a list of servers of the server monitoring
         project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2535,11 +2490,11 @@ paths:
   /open/json/sm:
     get:
       summary: Server monitoring details
-      description: >-
+      description: |
         This API allows you to view the details for each server in the server
         monitoring project.
       tags:
-        - Server Spot 정보 조회
+        - Server spot information API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2745,7 +2700,7 @@ paths:
   /open/json/stat/sm_stat?{stime}&{etime}&{filter}&{oid}:
     get:
       summary: Server statistics details
-      description: >
+      description: |
         This API allows you to view the statistical data of the server
         monitoring project. The query time is limited to one hour and is
         measured in milliseconds (ms).
@@ -2760,7 +2715,7 @@ paths:
 
         Parameters other than `oid` cannot be applied.
       tags:
-        - Server 통계 데이터 조회
+        - Server viewing the statistical data
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2797,7 +2752,7 @@ paths:
                         ioPercent: 0.22
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2812,7 +2767,7 @@ paths:
       summary: Viewing the parameter changes
       description: You can view the changes to parameters in the database.
       tags:
-        - Database 파라미터 조회
+        - Database viewing the parameter
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2829,8 +2784,8 @@ paths:
                 properties:
                   unmatchedKeys:
                     type: array
-                    description: >-
-                      Keys and their values ​​that do not match at the reference
+                    description: |
+                      Keys and their values ​that do not match at the reference
                       time and comparison time
                     items:
                       $ref: schemas.yaml#/UnmatchedKey
@@ -2866,7 +2821,7 @@ paths:
                     value: ''
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2881,7 +2836,7 @@ paths:
       summary: SQL statistics TopN
       description: You can view the most used SQL statistical data during the set time.
       tags:
-        - Database SQL 조회
+        - Database viewing SQL
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader
@@ -2907,7 +2862,7 @@ paths:
                     sql_elapse_max: 5
                     onames: DBX-0-102-3306,DBX-0-162-3306
                     user: kwlee
-                    sql: >-
+                    sql: |
                       select /* WhaTap6D#5 */ * from
                       information_schema.processlist where command<>'#'
                   - sql_execute_cnt: 28387
@@ -2916,7 +2871,7 @@ paths:
                     sql_elapse_max: 0
                     onames: DBX-0-107-3306
                     user: whatap
-                    sql: >-
+                    sql: |
                       select
                       id,user,host,db,command,time,state,info,time_ms,stage,max_stage,progress,
                       memory_used,max_memory_used,examined_rows,query_id,tid
@@ -2928,7 +2883,7 @@ paths:
                 retrievedEndTime: 1693007999000
       x-codeSamples:
         - lang: curl
-          source: >
+          source: |
             curl -L \
 
             -w "\n" \
@@ -2941,14 +2896,12 @@ paths:
   /open/api/flush/mxql/text:
     post:
       summary: MXQL text API
-      description: >
+      description: |
         The following image is an example of the MXQL execution result.
 
-
-        ![Example of MXQL execution
-        result](https://img.whatap.io/media/images/open_api_mxql_text_example.png)
+        ![Example of MXQL execution result](https://img.whatap.io/media/images/open_api_mxql_text_example.png)
       tags:
-        - MXQL Open API 호출하기
+        - Calling the MXQL open API
       requestBody:
         required: true
         content:
@@ -3054,7 +3007,7 @@ paths:
     post:
       summary: MXQL path API
       tags:
-        - MXQL Open API 호출하기
+        - Calling the MXQL open API
       parameters:
         - $ref: parameters.yaml#/WhatapTokenHeader
         - $ref: parameters.yaml#/WhatapPcodeHeader

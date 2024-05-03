@@ -4166,7 +4166,7 @@ const sidebars = {
       // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
       link: {
         type: 'doc',
-        id: 'openapi',
+        id: 'openapi-old',
       },
       items: [
         'apidoc/openapi-spec',
