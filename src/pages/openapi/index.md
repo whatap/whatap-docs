@@ -7,11 +7,11 @@ export const App = () => {
   } = useDocusaurusContext();
 
   if (currentLocale == 'ko') {
-    return <Redirect to="/openapi-spec" />;
+    return <Redirect to="./openapi-spec" />;
   } else if (currentLocale == 'en') {
-    return <Redirect to="/en/openapi-spec-en" />;
+    return <Redirect to="./en/openapi-spec-en" />;
   } else if (currentLocale == 'ja') {
-    return <Redirect to="/ja/openapi-spec-ja" />;
+    return <Redirect to="./ja/openapi-spec-ja" />;
   }
 };
 
