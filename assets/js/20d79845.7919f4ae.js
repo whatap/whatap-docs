@@ -61,7 +61,7 @@ function Cover() {
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
                                 className: styles_module.date,
-                                children: "WhaTap Docs 2024.04.02"
+                                children: "release date. 2024.05.03"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("img", {
                                 className: styles_module.background,
