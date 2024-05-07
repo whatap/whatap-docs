@@ -6,7 +6,7 @@ import Head from '@docusaurus/Head';
 
 export default function Cover() {
   const bgPath = useBaseUrl('/img/cover-background.png');
-  const cover = useBaseUrl('/java/introduction');
+  const cover = useBaseUrl('/python/introduction');
   return (
     <Layout>
     <Head>
@@ -25,7 +25,7 @@ export default function Cover() {
           // border: '1px solid #000',
         }}>
         <h1>
-          Java Monitoring
+          Python Monitoring
         </h1>
         <p className={styles.date}>
             release date. 2024.05.03
