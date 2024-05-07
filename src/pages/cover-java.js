@@ -27,7 +27,7 @@ export default function Cover() {
           Java 모니터링
         </h1>
         <p className={styles.date}>
-            WhaTap Docs 2024.04.02
+            release date. 2024.05.03
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
