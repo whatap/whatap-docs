@@ -74,7 +74,7 @@
 }
 
 @page:first {
-  @bottom-center { content: normal;}
+  @bottom-center { content: normal !important;}
 }
 
 @media print {
