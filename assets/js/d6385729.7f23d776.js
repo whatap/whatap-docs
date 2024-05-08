@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3524],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84363],{
 
 /***/ 6526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -155,7 +155,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-1",
+        id: "active-trs-speed",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "AA001"
         })
@@ -166,17 +166,88 @@ function _createMdxContent(props) {
           width: "1200",
           height: "173"
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["현재 진행 중인 트랜잭션(가운데 영역)과 종료된 트랜잭션(오른쪽 영역) 현황을 확인할 수 있습니다. 왼쪽에서 오른쪽으로 지나가는 물방울 모양의 아이콘은 트랜잭션을 의미합니다. 액티브 트랜잭션의 상태를 속도(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          class: "normal",
-          children: "Normal"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          class: "slow",
-          children: "Slow"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          class: "vslow",
-          children: "Very Slow"
-        }), ")로 색상으로 분류하여 우측 상단에 개수로 표시합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "현재 진행 중인 트랜잭션(가운데 영역)과 종료된 트랜잭션(오른쪽 영역) 현황을 확인할 수 있습니다. 왼쪽에서 오른쪽으로 지나가는 물방울 모양의 아이콘은 트랜잭션을 의미합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "왼쪽 영역"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "요청 트랜잭션 수를 의미하며, 트랜잭션 수에 비례해 더 많이, 더 빠르게 표시합니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "가운데 영역"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "액티브 트랜잭션의 상태를 속도로 색상으로 분류하여 우측 상단에 개수로 표시합니다. 차트 안의 숫자는 전체 액티브 트랜잭션의 수입니다. 차트의 색상의 의미는 다음과 같습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["파란색(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "normal",
+                  children: "Normal"
+                }), "): 0초 ~ 3초"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["주황색(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "slow",
+                  children: "Slow"
+                }), "): 3초 ~ 8초"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["빨간색(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "vslow",
+                  children: "Very Slow"
+                }), "): 8초 이상"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "오른쪽 영역"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "애플리케이션 성능 지표(Application Performance Index, Apdex)를 의미합니다. 웹 애플리케이션의 고객 만족도를 측정한 지표로, 0 ~ 1 사이의 값을 갖습니다. 물방울이 날아가는 속도는 Apdex 트랜잭션의 총 수에 비례하며, 물방울의 색상의 의미는 다음과 같습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["파란색: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "normal",
+                  children: "Apdex 만족"
+                }), "(Satisfied) 수"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["주황색: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "slow",
+                  children: "Apdex 허용"
+                }), "(Tolerating) 수"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["빨간색: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "vslow",
+                  children: "Apdex 불만"
+                }), "(Frustrated) 수 = ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "APDEX 트랜잭션 총 수"
+                }), " - (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "Apdex 만족 수"
+                }), " + ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "Apdex 허용 수"
+                }), ")"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["애플리케이션 성능 지표(Application Performance Index, Apdex)에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "https://www.apdex.org",
+                children: "다음 링크"
+              }), "를 참조하세요."]
+            })
+          }), "\n"]
+        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -382,7 +453,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-2",
+        id: "-1",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "AA005"
         })
@@ -482,7 +553,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-3",
+        id: "-2",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "AA016"
         })
@@ -535,7 +606,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-4",
+        id: "-3",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "apdex"
         })
@@ -563,7 +634,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-5",
+        id: "-4",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "tps"
         })
@@ -592,7 +663,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-6",
+        id: "-5",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "avg_restime"
         })
@@ -622,7 +693,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-7",
+        id: "-6",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "system_cpu"
         })
@@ -727,7 +798,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-8",
+        id: "-7",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "realtime_user"
         })
@@ -784,7 +855,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-9",
+        id: "-8",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "today_tps"
         })
@@ -808,7 +879,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "-10",
+        id: "-9",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "daily_visit"
         })
@@ -2125,7 +2196,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 39869:
+/***/ 99151:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2153,29 +2224,30 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard',
 	title: '애플리케이션 대시보드',
-	description: '자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.',
+	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	tags: [
-		'Java',
+		'Go',
 		'대시보드',
-		'애플리케이션'
+		'애플리케이션',
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard",
+  "id": "golang/dashboard",
   "title": "애플리케이션 대시보드",
-  "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
-  "source": "@site/docs/java/dashboard.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard",
-  "permalink": "/whatap-docs/java/dashboard",
+  "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
+  "source": "@site/docs/golang/dashboard.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/dashboard",
+  "permalink": "/whatap-docs/golang/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard.mdx",
+  "editUrl": "undefined/docs/golang/dashboard.mdx",
   "tags": [
     {
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     },
     {
       "label": "대시보드",
@@ -2184,27 +2256,32 @@ const metadata = {
     {
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
+    },
+    {
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard",
     "title": "애플리케이션 대시보드",
-    "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
+    "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "tags": [
-      "Java",
+      "Go",
       "대시보드",
-      "애플리케이션"
+      "애플리케이션",
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "goSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/java/dashboard-intro"
+    "permalink": "/whatap-docs/golang/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/java/dashboard-transactionmap"
+    "permalink": "/whatap-docs/golang/dashboard-transactionmap"
   }
 };
 const assets = {
