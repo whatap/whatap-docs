@@ -1087,10 +1087,6 @@
     "message": "Analysis",
     "description": "The label for category 분석 in sidebar kubeSidebar"
   },
-  "sidebar.kubeSidebar.category.알림 설정하기": {
-    "message": "Alert Settings",
-    "description": "The label for category 알림 설정하기 in sidebar kubeSidebar"
-  },
   "sidebar.kubeSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar kubeSidebar, linking to the doc kubernetes/supported-spec"
@@ -1610,5 +1606,13 @@
   "sidebar.releaseSidebar.category.Server AIX": {
     "message": "Server AIX",
     "description": "The label for category Server AIX in sidebar releaseSidebar"
+  },
+  "sidebar.releaseSidebar.category.NPM": {
+    "message": "NPM",
+    "description": "The label for category NPM in sidebar releaseSidebar"
+  },
+  "sidebar.kubeSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar kubeSidebar"
   }
 }

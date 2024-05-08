@@ -6,6 +6,7 @@ import Head from '@docusaurus/Head';
 
 export default function Cover() {
   const bgPath = useBaseUrl('/img/cover-background.png');
+  const cover = useBaseUrl('/java/introduction');
   return (
     <Layout>
     <Head>
@@ -24,14 +25,14 @@ export default function Cover() {
           // border: '1px solid #000',
         }}>
         <h1>
-          Java 모니터링
+          Java Monitoring
         </h1>
         <p className={styles.date}>
-            WhaTap Docs 2024.04.02
+            release date. 2024.05.03
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
-      <a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/best-practice-guides/about-apm-hitmap-class"><div class="pagination-nav__sublabel">다음</div></a>
+      <a class="pagination-nav__link pagination-nav__link--next" href={cover}><div class="pagination-nav__sublabel">다음</div></a>
       <div class="page-break"></div>
     </div>
     </Layout>

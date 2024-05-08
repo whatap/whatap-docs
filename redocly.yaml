@@ -1,0 +1,32 @@
+# NOTE: Only supports options marked as "Supported in Redoc CE"
+# See https://redocly.com/docs/cli/configuration/ for more information.
+
+extends:
+  - recommended
+
+rules:
+  no-unused-components: error
+
+theme:
+  # See https://redocly.com/docs/api-reference-docs/configuration/functionality/
+  openapi:
+    ctrlFHijack: true
+    disableSearch: false
+    expandResponses: '200'
+    hideDownloadButton: true
+    expandSingleSchemaField: true
+    jsonSampleExpandLevel: 3
+    scrollYOffset: 86.5
+    hideLogo: true
+    pagination: "section"
+    # See https://redocly.com/docs/api-reference-docs/configuration/theming/
+    theme:
+      colors:
+        primary:
+          main: '#32329f'
+      rightPanel:
+        width: '40%'
+      sidebar: 
+        width: '220px'
+      spacing:
+        sectionHorizontal: 20

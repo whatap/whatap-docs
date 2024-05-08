@@ -7,9 +7,6 @@ tags:
   - Usage examples
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 Use Focus to guide you to frequently used commands and other use cases. This will be helpful to development and operation by allowing you to check the data in time series.
 
 ## Checking the project access key and collection server IP
@@ -17,6 +14,20 @@ Use Focus to guide you to frequently used commands and other use cases. This wil
 import Checkpakip from "../common-items/_check-pak-ip.mdx";
 
 <Checkpakip />
+
+## Adding specific tags for filtering {#addtagfilter}
+
+Referring to the following example, you can filter the data collected from the WhaTap monitoring service screen by the name and value for the tag.
+
+```bash title="SH" showLineNumbers {5,6}
+# -tag.[User tag key name][Blank][User tag value]
+
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -tag.CustomTagName CustomTagValue \
+    -tag.MyServer1 server_01 \
+    ...
+```
 
 ## Collecting the CPU and memory for each Top command PID
 

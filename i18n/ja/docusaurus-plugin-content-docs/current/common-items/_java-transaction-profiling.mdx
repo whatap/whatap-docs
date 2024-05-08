@@ -1,36 +1,36 @@
 - **profile_step_normal_count** <span class='type'>Int</span>
 
-  デフォルト値 `1000`
+  既定値 `1000`
 
   トランザクショントレースの最大ステップ数を設定します。
 
 - **profile_step_heavy_count** <span class='type'>Int</span>
 
-  デフォルト値`1020`
+  既定値`1020`
 
   Heavyなステップの場合、トレースの基本ステップ数を超えても決められた値だけ記録します。
 
 - **profile_step_max_count** <span class='type'>Int</span>
 
-  デフォルト値 `1024`
+  既定値 `1024`
 
   トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後に収集されるステップはすべて破棄されます。`profile_step_heavy_count`を最大1000に設定すると、`profile_step_max_count`までアクティブスタックが収集されます。
 
 - **profile_step_heavy_time** <span class='type'>MiliSecond</span>
 
-  デフォルト値`100`
+  既定値`100`
 
   Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`の値を超えても、`profile_step_heavy_count`の設定値のみ記録します。
 
 - **active_stack_count** <span class='type'>Int</span>
 
-  デフォルト値`100`
+  既定値`100`
 
   トランザクション内で収集するアクティブスタックの最大数を設定します。
 
 - **profile_method_resource_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースからmethodステップを収集する場合は、そのステップで使用したCPUとメモリ使用量を追跡します。
 
@@ -40,19 +40,19 @@
 
 - **profile_position_depth** <span class='type'>Int</span>
 
-  デフォルト値`50`
+  既定値`50`
 
   position追跡のStackTraceを記録する場合、最大ライン数を設定します。
 
 - **trace_error_callstack_depth** <span class='type'>Int</span>
 
-  デフォルト値`50`
+  既定値`50`
 
   Error発生時に収集するStackTraceの最大ライン数を設定します。
 
 - **trace_active_callstack_depth** <span class='type'>Int</span>
 
-  デフォルト値`50`
+  既定値`50`
 
   アクティブスタックから収集するStackTraceの最大ライン数を設定します。
 
@@ -86,31 +86,31 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
 
 - **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
 
 - **stacklog_socket_port** <span class='type'>TCP_PortNumber</span>
 
-  デフォルト値`0`
+  既定値`0`
 
   宛先のTCPポートを設定すると、Socket.connect()は、特定の時点でStackTraceをエージェントログとして記録します。基本設定で確認されていないDB接続、HTTPC接続などを追跡する場合に使用できます。
 
@@ -121,6 +121,12 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   DB接続状態追跡の例）`stacklog_socket_port=1521`
 
   :::
+
+- **trace_concern_error_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  `trace_basetime`または`profile_basetime`オプションに関係なく、エラーのある詳細なトレースの収集有無を設定します。
 
 ## 例外処理{#exception}
 
@@ -167,7 +173,7 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
@@ -203,7 +209,7 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
 
@@ -234,3 +240,9 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   HTTPステータスエラーコード無視 / エラー統計を含まない
 
   :::
+
+- **trace_sql_exception_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  JDBCドライバーでSqlExceptionが発生した時の追跡有無を設定します。オプション値を`false`に設定すると、ユーザ定義の例外処理により`biz_exceptions`処理できます。

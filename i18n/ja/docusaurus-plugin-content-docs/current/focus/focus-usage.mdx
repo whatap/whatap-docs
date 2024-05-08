@@ -7,9 +7,6 @@ tags:
   - 使用例
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 Focusを使用して、繫栄に使用されるコマンドやその他の活用例について案内します。これにより、開発や運用時にデータを時系列で確認できるようになり、開発や運用に役立ちます。
 
 ## プロジェクトアクセスキーと収集サーバーのIP確認
@@ -17,6 +14,20 @@ Focusを使用して、繫栄に使用されるコマンドやその他の活用
 import Checkpakip from "../common-items/_check-pak-ip.mdx";
 
 <Checkpakip />
+
+## フィルターの特定のタグを追加 {#addtagfilter}
+
+次の例を参照して、WhaTapモニタリングサービス画面で収集されたデータをそのタグの名前と値でフィルタリングできます。
+
+```bash title="SH" showLineNumbers {5,6}
+# -tag.[ユーザータグキー名][空白][ユーザータグ値]
+
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -tag.CustomTagName CustomTagValue \
+    -tag.MyServer1 server_01 \
+    ...
+```
 
 ## TOPコマンドのpid別CPU、Memory収集
 

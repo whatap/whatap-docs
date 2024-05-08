@@ -1,18 +1,19 @@
 ---
 id: agent-log
 title: エージェントログの設定
-description: Javaエージェントログの場所とオプションを設定できます。
+description: Javaアプリケーション環境で発生するログデータをエージェントを通じて管理する方法を案内します。ログファイルのパスと名前の設定、保存期間の設定、ログのモニタリング、ユーザー定義型のログ追跡の活性化方法などが含まれます。ログ管理のための様々な設定オプションを提供し、システムの効率的なログ管理をサポートします。
 tags:
   - Java
-  - エージェントログ
+  - アプリケーション
+  - エージェント
   - ログ
 ---
 
-アプリケーションサーバーの稼働中は、モニタリング情報を収集します。収集された情報はログファイルに保存されます。
+Javaアプリケーション環境で発生するログデータをエージェントを通じて管理する方法を案内します。ログファイルのパスと名前の設定、保存期間の設定、ログのモニタリング、ユーザー定義型のログ追跡の活性化方法などが含まれます。ログ管理のための様々な設定オプションを提供し、システムの効率的なログ管理をサポートします。
 
 ## パスおよび名前設定
 
-エージェントログのパスと名前は、_whatap.conf_ファイルで設定できます。`log_root`のデフォルト値として_`${WHATAP_HOME}`/logs_パスを使用します。
+エージェントログのパスと名前は、*whatap.conf*ファイルで設定できます。`log_root`の既定値として_`${WHATAP_HOME}`/logs_パスを使用します。
 
 ```ini title='whatap.conf'
 log_root=System.getProperty("whatap.home", ".") + "/logs"
@@ -21,7 +22,7 @@ log_name=whatap
 
 ## ログ管理オプション
 
-_whatap.conf_ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
+*whatap.conf*ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
 
 ```ini title='whatap.conf'
 watchlog_enabled=true
@@ -30,14 +31,126 @@ log_oname_enabled=true
 log_keep_days=7
 ```
 
-import Javaagentloglist from "../common-items/_java-agent-log-list.mdx";
+- **watchlog_enabled** <span class='type'>Boolean</span>
 
-<Javaagentloglist />  
+  既定値`false`
 
-## ログシンク(LogSink){#logsink}
+  値が`true`の場合、ログモニタリングを有効にします。
+
+- **watchlog_check_interval** <span class='type'>Int</span>
+
+  既定値`2000`
+
+  ログをモニタリングする間隔です。一定の間隔でログファイルに記録を追加したことを確認します。
+
+- **watchlog_read_count** <span class='type'>Int</span>
+
+  既定値`8`
+
+  ログを読み取る最大回数です。一度に`watchlog_buffer_size`を読み取ります。
+
+- **watchlog_buffer_size** <span class='type'>Int</span>
+
+  既定値`131072(128k)`
+
+  ログを一度に読み取るログのサイズです。
+
+- **watchlog.LOGKEY**
+
+  1つのログファイルをモニタリングするための設定です。`file`名を入力し、モニタリングした複数の`word`をコンマ(,)で区切って設定します。`check_interval`間隔でログをモニタリングし、キーワードを見つけたら警告します。一度警告が出れば`silent`ほど警告を止めます。
+
+  - **watchlog.LOGKEY.enabled** <span class='type'>Boolean</span>既定値`true`
+  - **watchlog.LOGKEY.file** <span class='type'>String</span>
+  - **watchlog.LOGKEY.words** <span class='type'>String</span>
+  - **watchlog.LOGKEY.silent** <span class='type'>Int</span>既定値`10000`
+  - **watchlog.LOGKEY.check_interval** <span class='type'>Int</span>既定値`1000`
+
+- **log_root** <span class='type'>String</span>
+
+  既定値 `${WHATAP_HOME}`/logs
+
+  エージェントログのパスを設定します。
+
+- **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  InitialContext Lookup時のDataSourceの場合、ログを記録する機能を有効にします。
+
+- **log_rotation_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  エージェントログファイルを日付ごとに保存する機能を有効にします。ログファイル名は、_whatap-`yyyymmdd`.log_形式で保存します。値が`false`の場合、ログファイル名は_whatap.log_形式で保存されます。
+
+- **log_keep_days** <span class='type'>Int</span>
+
+  既定値`7`
+
+  ログファイルの保存期間を設定します。`log_rotation_enabled`の値が`true`の場合にのみ動作します。
+
+- **log_oname_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  値がtrueの場合は、各ログごとにエージェント名を追加します。
+
+  ![](/img/java-agent-log-oname.png)
+
+## ログシンク(LogSink) {#logsink}
 
 whatap.agent-2.1.0以降のバージョンからは、アプリケーションサーバーを統合モニタリングするログシンク(LogSink)機能を提供します。
 
-import Javalogsink from "../common-items/_java-logsink.mdx";
+:::caution
 
-<Javalogsink />  
+LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
+
+:::
+
+### ログモニタリング機能の有効化
+
+- **logsink_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  ログモニタリング機能を有効にします。
+
+- **logsink_trace_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
+
+### フレームワークログ内容の収集
+
+フレームワークで収集するログをモニタリングするには、モジュールからログをインターセプトするための設定とプラグインを追加する必要があります。フレームワークで収集するログの基本カテゴリ名を`AppLog`に設定します。既定値は、`hooklog_enabled`オプションの設定と同じです。
+
+- **hooklog_enabled** <span class='type'>Boolean</span>
+
+  既定値`logsink_enabled`
+
+  ログ追跡を有効にするかどうかを設定します。
+
+  :::note
+
+  - Javaエージェント 2.2.4バージョン以降では、アプリケーションの再起動なしにオプションの変更を適用できます。 
+
+  - Javaエージェント2.2.4バージョン以前では`hooklog_enabled`値を変更した場合、再起動をする必要があります。`hooklog_enabled` の既定値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`に設定されます。
+
+  :::
+
+- **hooklog_custom_methods**
+
+  ユーザーのカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用します。
+
+  ```java title='Java'
+  package io.home.test;
+
+  public class MyLog {  
+    public void customLog(String log) { ... }
+  }
+  ```
+
+  ```ini title='whatap.conf'
+  hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```

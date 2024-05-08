@@ -11,7 +11,7 @@ import TR from '@site/src/components/TR';
 
 import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
-<Agentsignupguide />   
+<Agentsignupguide />
 
 <Youtube ko="MWDFeegF6mQ" en="MWDFeegF6mQ" ja="MWDFeegF6mQ" />
 
@@ -21,7 +21,7 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
-<Accesskeyv2 /> 
+<Accesskeyv2 />
 
 ## Virtual Environmentの活性化
 
@@ -81,11 +81,11 @@ pipコマンドでインストールできない場合は、[pypi WhaTapペー�
 <summary>Pythonエージェント構成ファイル</summary>
 Pythonエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、タブ収集サーバーに伝達するトレーサーと、トレーサーがデータを送信できるよう支援する要素で構成されています。
 
-- _whatap.conf_
+- *whatap.conf*
 
-  エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて_whatap.conf_ファイルで設定できます。
+  エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて*whatap.conf*ファイルで設定できます。
 
-- _paramkey.txt_
+- *paramkey.txt*
 
   追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。 
 
@@ -95,11 +95,11 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
 
   - **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+    既定値`false`
 
   - **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+    既定値`false`
 
 </details>
 
@@ -115,7 +115,7 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
 
 2. **アクセスキーと収集サーバーのIP設定**
 
-   次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルが設定されます。
+   次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに*whatap.conf*ファイルが設定されます。
 
    ```bash
    whatap-setting-config \

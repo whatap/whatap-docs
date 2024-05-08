@@ -31,7 +31,7 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
-<Accesskeyv2 /> 
+<Accesskeyv2 />
 
 ## エージェントダウンロード
 
@@ -117,7 +117,7 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 - _whatap_agent_：サービスの実行ファイルです。
 
-- _whatap.conf_：設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。
+- *whatap.conf*：設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。
 
 - _whatap-boot-`yyyymmdd`.log_：エージェントログファイルです。(パス：_/usr/whata/agent/log_)
 
@@ -127,11 +127,11 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 ### 基本設定
 
-次のコマンドを順番に実行して、_whatap.conf_ファイルに**アクセスキー**と**収集サーバーIPアドレス**などを設定してください。
+次のコマンドを順番に実行して、*whatap.conf*ファイルに**アクセスキー**と**収集サーバーIPアドレス**などを設定してください。
 
-- アプリケーションの開始スクリプトパスに_whatap.conf_ファイルを作成してください。 
+- アプリケーションの開始スクリプトパスに*whatap.conf*ファイルを作成してください。 
 
-- `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション起動スクリプトのパスを_whatap.conf_ファイルパスとして認識します。
+- `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション起動スクリプトのパスを*whatap.conf*ファイルパスとして認識します。
 
 ```bash title='SH'
 # スクリプトの実行パスにwhatap.confファイルを作成
@@ -157,7 +157,7 @@ $ echo "app_name={アプリケーション名}" >> ./whatap.conf
 
 ### `WHATAP_HOME`環境変数の設定
 
-_whatap.conf_ファイルパスを`WHATAP_HOME`環境変数に設定できます。`WHATAP_HOME`パスを最初に作成してください。
+*whatap.conf*ファイルパスを`WHATAP_HOME`環境変数に設定できます。`WHATAP_HOME`パスを最初に作成してください。
 
 ```bash
 # WHATAP_HOMEパスを作成した後、whatap.confファイルパスを設定
@@ -172,7 +172,7 @@ WHATAP_HOME=./whatap_home ./app
 
 ### プロセス別エージェント名の設定{#duplicate_appname}
 
-2つ以上のプロセスで実行されるアプリケーションは、1つの_whatap.conf_ファイルを共有しても、ユーザーが設定した変更が反映されない場合があります。 プロセスごとにそれぞれの_whatap.conf_ファイルを設定することをお勧めします。
+2つ以上のプロセスで実行されるアプリケーションは、1つの*whatap.conf*ファイルを共有しても、ユーザーが設定した変更が反映されない場合があります。 プロセスごとにそれぞれの*whatap.conf*ファイルを設定することをお勧めします。
 
 エージェント名が重複しないように、ユーザーは文字列にエージェント名を追加して区別ができます。`app_name`オプションで設定した値は、エージェント名の最前列に追加されます。
 
@@ -200,7 +200,6 @@ WHATAP_HOME=./whatap_home1 ./app
 ```
 
 {/*Go 라이브러리 설정하기*/}
-
 import Godockersettinglibrary from "../common-items/_go-docker-setting-library.mdx";
 
 <Godockersettinglibrary />

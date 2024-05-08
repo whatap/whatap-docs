@@ -2,7 +2,7 @@
 
 - **deadlock_interval** <span class='type'>Int</span>
 
-  デフォルト値 `60`
+  既定値 `60`
 
   deadlock情報を読み込む間隔(単位: 分)を設定します。deadlock情報は、設定した間隔で発生した最後のdeadlock情報のみを読み込みます。
 
@@ -12,13 +12,13 @@
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
-  デフォルト値`10`
+  既定値`10`
 
   設定した時間より長く実行されているセッションをlong runセッションとして処理します。(単位：秒)
 
 - **tables_hour** <span class='type'>Int</span>
 
-  デフォルト値`5`
+  既定値`5`
 
   テーブル情報を保存するために情報を収集する時間を設定します。デフォルトは`5`で、午前5時に収集を開始します。
 
@@ -28,13 +28,13 @@
 
 - **tables_min_size** <span class='type'>Int</span>
 
-  デフォルト値`10`
+  既定値`10`
 
-  テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位は、デフォルト値では10MBです。
+  テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位は、既定値では10MBです。
 
 - **tables_exclude_sys** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   テーブル情報を収集する際に、sys所有のテーブル情報の収集有無を設定します。 `true`に設定すると、sys所有のテーブル情報は収集されません。
 
@@ -44,7 +44,7 @@
 
 - **tables_min_row** <span class='type'>Int</span>
 
-  デフォルト値`10000`
+  既定値`10000`
 
   テーブル情報を収集する場合、設定した値より小さいrow番号のテーブル情報は収集しません。
 
@@ -78,9 +78,9 @@
 
 - **skip_whatap_session** <span class='type'>Int</span>
 
-  デフォルト値`0`
+  既定値`0`
 
-  `1`が設定されている場合、WhaTapから収集するためのqueryが実行するセッションをactive session listに表示しません。(デフォルト値：0)
+  `1`が設定されている場合、WhaTapから収集するためのqueryが実行するセッションをactive session listに表示しません。(既定値：0)
 
 </Xclude>
 
@@ -88,7 +88,7 @@
 
 - **skip_sys_session** <span class='type'>Int</span>
 
-  デフォルト値`1`
+  既定値`1`
 
   `2`が設定されている場合、sysセッション(root、system user、event_scheduler)はactive sessionで表示されません。`1`を設定すると、sysセッションは表示されますが、total runtimeから除外されます。
 
@@ -98,7 +98,7 @@
 
 - **idle_as_active** <span class='type'>Second</span>
 
-  デフォルト値`1`
+  既定値`1`
 
   セッションが最後のactive状態になってからidle状態を維持した時間(秒)が設定値より小さいセッションをactive sessionとしてみなすオプションです。たとえば、設定値が1の場合、1秒以内にactiveだったセッションがアクティブセッションウィンドウに表示されます。
 
@@ -108,7 +108,7 @@
 
 - **ora_ratio** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.11 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   各種ratio指標を追加で収集することができます。収集する指標は次のとおりです。
 
@@ -127,7 +127,7 @@
 
 - **collections** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   コレクションサイズ情報の保存有無を設定します。保存しないためには、`false`に変更してください。
 
@@ -139,9 +139,9 @@
 
 - **collections_hour** <span class='type'>Int</span>
 
-  デフォルト値`5`
+  既定値`5`
 
-  コレクション情報を保存するために情報を収集する時刻を設定します。デフォルト値は`5`で、午前5時に収集を始めます。
+  コレクション情報を保存するために情報を収集する時刻を設定します。既定値は`5`で、午前5時に収集を始めます。
 
   :::note
 

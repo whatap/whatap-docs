@@ -88,7 +88,7 @@ RUN tar -xvzf whatap-php.tar.gz -C /
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ_yaml_ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
 
 ```yaml
 
@@ -185,4 +185,4 @@ ps -ef | grep whatap_php
 
 - コンテナで`ps -ef | grep whatap`コマンドを実行し、エージェントオプションを適用されていることを確認してください。
 
-- 該当コンテナ内の_/usr/whatap/php/logs_経路の内容を確認してください。 エージェントログは、_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_形式のファイル名として出力されます。
+- 該当コンテナ内の_/usr/whatap/php/logs_経路の内容を確認してください。 エージェントログは、*logs/whatap-`{boot、またはinstall}`-yyyymmdd.log* 形式のファイル名として出力されます。

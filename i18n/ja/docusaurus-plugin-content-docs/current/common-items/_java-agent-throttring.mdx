@@ -1,6 +1,6 @@
 - **throttle_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   アプリケーションの最大同時処理数を制限するスロットリング機能をアクティブにします。throttle\_で始まるすべてのオプションは、`throttle_enabled=true`状態でのみ機能します。
 
@@ -14,13 +14,13 @@
 
 - **throttle_limit** <span class='type'>Int</span>
 
-  デフォルト値`10000`
+  既定値`10000`
 
   エージェントごとに同時処理できるリクエスト(トランザクション) の数が設定値を超えたらと、追加で流入するリクエストはRejectされます。
 
 - **throttle_rejected_message** <span class='type'>String</span>
 
-  デフォルト値`too many request!!`
+  既定値`too many request!!`
 
   スロットリングを制限する場合は、ユーザーに案内するメッセージを設定します。
 
@@ -36,13 +36,13 @@
 
 - **reject_event_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   ユーザーリクエストがRejectされた場合、イベント通知を発生させるかどうかを設定します。
 
 - **reject_event_interval** <span class='type'>MiliSecond</span>
 
-  デフォルト値`30000`
+  既定値`30000`
 
   Rejectのイベント通知が発生した後、設定した時間の間に重複したイベントの通知は発生しません。
 
@@ -68,7 +68,7 @@
 
 - **throttle_blocked_message** <span class='type'>String</span>
 
-  デフォルト値`request blocked!!`
+  既定値`request blocked!!`
 
   リクエストをブロックしたユーザーに案内するメッセージを設定します。
 

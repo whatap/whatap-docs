@@ -31,13 +31,13 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - **hooklog_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   Logライブラリをhookingしてログモニタリングを有効にします。  
 
   :::caution
 
-  アプリケーションを実行する前に、_whatap.conf_オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
+  アプリケーションを実行する前に、*whatap.conf*オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
 
   :::
 
@@ -65,19 +65,19 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - **logsink_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   Logモニタリング機能をOn/Offします。
 
   :::caution
 
-  アプリケーションが起動する前に_whatap.conf_に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
+  アプリケーションが起動する前に*whatap.conf*に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
 
   :::
 
 - **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
 

@@ -10,11 +10,11 @@ tags:
 
 import Metricswarningnotice from "../common-items/_metrics-warning-notice.mdx";
 
-<Metricswarningnotice /> 
+<Metricswarningnotice />
 
 import Compositemetricswarningnotice from "../common-items/_composite-metrics-warning-notice.mdx";
 
-<Compositemetricswarningnotice /> 
+<Compositemetricswarningnotice />
 
 import Metricseventmodifydelete from "../common-items/_metrics-event-modify-delete.mdx";
 
@@ -24,7 +24,9 @@ import Metricseventconditionselecttargetguide from "../common-items/_metrics-eve
 
 <Metricseventconditionselecttargetguide />
 
-## メトリクスイベントテンプレート{#template}
+## テンプレート {#template}
+
+### メトリクスイベントテンプレート
 
 :::note 
 
@@ -157,3 +159,105 @@ Kubernetesイベントの`reason`フィールド情報が`Unhealthy`が0回以�
 ノードに割り当て可能なPod数が0個以下の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > APDEXが0.7未満です (`${oname}`)
+
+{/* 
+
+#### **_HPA CPUの使用率通知_**
+
+現在実行中のPodの数がリソース内の最大Pod数と同じで、CPU使用率が70%以上の場合、通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> HPA Podが生成可能な最大値に達して、CPU使用率が >= 70% の状況です。
+
+#### **_HPAメモリの使用率通知_**
+
+現在実行中のPodの数がリソースの許容可能な最大Podの数と同じで、メモリ使用率が90%以上の場合、その通知が発生します。 
+
+> HPA Podが生成できる最大値に達していて、メモリ使用率が「>= 90%」です。
+
+*/}
+
+### 複合メトリクスのイベントテンプレート
+
+#### **_Inactive agents has been found_**
+
+活性化されたエージェントの数が指定された条件よりも少ない時に通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。 
+
+> `${ip}` `${okindName}` The number of active agents has decreased to `${num_of_current_agents}`. 
+
+#### **_TPS has changed by more than 30% compared to the previous week_**
+
+アプリケーションのTPSが前週比30%以上変化した時に通知が発生します。メッセージの例は次のとおりです。
+
+> `${okindName}` a week ago : `${prev_week_tps_display}`, current : `${current_tps_display}`,  difference : `${one_week_diff_display}`
+
+#### **_Very slow active transactions detected_**
+
+アプリケーションの8秒超過区間のトランザクション数が平均10個を超えた時に通知が発生します。メッセージの例は次のとおりです。
+
+> `${okindName}` `${very_slow_tx_cnt_m5_avg_display}` active transactions performed for more than 8 seconds were detected.
+
+#### **_APDEX score dropped_**
+
+APDEX点数が70未満になると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> The average apdex of `${pname}` in the last 5 seconds is `${apdex_display}`
+
+#### **_CPU % is too high_**
+
+ノードのCPU使用率が80%を超えると通知が発生します。メッセージの例は次のとおりです。
+
+> CPU utilization rate of the `${oname}` in the last minute > `${_rule_}` %
+
+#### **_CPU User % is too high_**
+
+ユーザーが使用するCPU使用率が50%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> CPU User utilization rate of the `${oname}` in the last minute > `${_rule_}` %
+
+#### **_The number of agents with high CPU SYS % is too large_**
+
+システムが使用するCPU使用率が50%を超えると通知が発生します。メッセージの例は次のとおりです。 
+
+> The number of agents with a CPU SYS of 70% or more in the last minute > `${_rule_}` %
+
+#### **_The Disk I/O is too high_**
+
+ディスクI/O使用率が10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> In the last minute, `${oname}`'s Disk I/O > `${_rule_}` %
+
+#### **_The Disk Used % is too high_**
+
+ファイル システムの使用率が90%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> In the last minute, `${oname}`'s Disk Used > `${_rule_}` %
+
+#### **_Network Traffic I/O is too high_**
+
+ネットワークインバウンドトラフィック/アウトバウンドトラフィックが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> In the last minute, `${oname}`'s Network Traffic I/O > `${_rule_}` %
+
+#### **_Network Packet I/O is too high_**
+
+ネットワークインバウンドパケット/アウトバウンドパケットが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> In the last minute, `${oname}`'s Network Packet I/O > `${_rule_}` %
+
+#### **_Network Error I/O is too high_**
+
+ネットワークインバウンドエラー/アウトバウンドエラーが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> In the last minute, The maximum value of the `${oname}`'s Network Error I/O > `${_rule_}` %
+
+#### **_The kube-apiserver latency over 10 second_**
+
+コントロールプレーンコンポーネントのうち、kube-apiserverのlatencyが10秒を超えると通知が発生します。ただし、WATCH行為は除きます。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Latency of the `${verb}` verb in `${instance}` of kube-apiserver exceeded `${metricValue}` seconds.
+
+#### **_The kube-apiserver response increase/decrease rate for error codes_**
+
+コントロールプレーンコンポーネントのうち、kube-apiserverのエラーレスポンスが50件を超え、増減率が50%以上変化した場合、通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Rate of increase in the number of requests for code `${code}` on instance `${instance}` of kube-apiserver exceeded `${metricValue}`.

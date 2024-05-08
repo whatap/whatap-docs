@@ -2885,9 +2885,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_4_0x',
+          id: 'release-notes/preview/preview-2_5_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_4_0x',
         'release-notes/preview/preview-2_3_0x',
         'release-notes/preview/preview-2_2_0x',
         'release-notes/preview/preview-2_1_0x',
@@ -2929,14 +2930,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_3_x',
+            id: 'release-notes/service/service-2_4_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_3_x',
+              id: 'release-notes/service/service-2_4_x',
               className: 'new',
             },
+            'release-notes/service/service-2_3_x',
             'release-notes/service/service-2_2_x',
             'release-notes/service/service-2_1_x',
             'release-notes/service/service-2_0_x',
@@ -2945,7 +2947,6 @@ const sidebars = {
             'release-notes/service/service-1_110_x',
             'release-notes/service/service-1_108_x',
             'release-notes/service/service-1_106_x',
-            'release-notes/service/service-1_104_x',
             'release-notes/service/service-previous',
           ]
         },
@@ -3074,17 +3075,18 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_94',
+                id: 'release-notes/nodejs/nodejs-0_4_95',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_94',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_95',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
                 'release-notes/nodejs/nodejs-0_4_89',
                 'release-notes/nodejs/nodejs-0_4_88',
@@ -3132,14 +3134,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_2',
+                id: 'release-notes/dotnet/dotnet-2_2_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_2',
+                  id: 'release-notes/dotnet/dotnet-2_2_4',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_3',
+                'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-2_1_9',
@@ -3147,8 +3151,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-2_1_6',
                 'release-notes/dotnet/dotnet-2_1_5',
-                'release-notes/dotnet/dotnet-2_1_4',
-                'release-notes/dotnet/dotnet-2_1_3',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3214,7 +3216,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-aix-1_2_7'
@@ -3223,7 +3225,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-aix-1_2_7',
-                  className: 'new'
+                  // className: 'new'
                 }
               ],
             },
@@ -3349,7 +3351,7 @@ const sidebars = {
               label: 'NPM',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/npm/npm-v0_4_5'
@@ -3358,7 +3360,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/npm/npm-v0_4_5',
-                  className: 'new',
+                  // className: 'new',
                 }
               ],
             },
@@ -4147,6 +4149,7 @@ const sidebars = {
           items: [
             'faq/db-faq',
             'faq/log-faq',
+            'faq/agent-faq',
             'faq/support-faq',
           ]
         },
@@ -4163,7 +4166,7 @@ const sidebars = {
       // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
       link: {
         type: 'doc',
-        id: 'openapi',
+        id: 'openapi-old',
       },
       items: [
         'apidoc/openapi-spec',
@@ -5401,6 +5404,7 @@ const sidebars = {
               items: [
                 'kubernetes/resource-node-list',
                 'kubernetes/object-manifest',
+                // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/kube-apiserver-metrics-search',
                 'kubernetes/resource-namespace',
@@ -5653,4 +5657,4 @@ const sidebars = {
   ]  
 };
 
-module.exports = sidebars;
+export default sidebars;

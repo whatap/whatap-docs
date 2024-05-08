@@ -21,7 +21,7 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
 
 - **recursive_max** <span class='type'>Int</span>
 
-  デフォルト値`1000000`
+  既定値`1000000`
 
   トランザクションが再帰呼び出されているかどうかを検知するためのオプションです。１つのトランザクションから派生する再帰呼び出し回数をカウントすると、イベント通知を発行するための条件が設定されます。
 
@@ -37,9 +37,9 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
 
 - **hook_jsp_patterns** <span class='type'>String</span>
 
-  デフォルト値`org.apache.jasper.servlet.JspServlet.serviceJspFile`
+  既定値`org.apache.jasper.servlet.JspServlet.serviceJspFile`
 
-  JSPファイルをロードするためのメソッドを設定します。トランザクションの呼び出しの結果として戻されたJSP情報をトレースに表示します。このオプションで追加された設定にデフォルト値が自動的に追加されます。
+  JSPファイルをロードするためのメソッドを設定します。トランザクションの呼び出しの結果として戻されたJSP情報をトレースに表示します。このオプションで追加された設定に既定値が自動的に追加されます。
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 
@@ -51,7 +51,7 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
 
 - **ignore_http_method** <span class='type'>String</span>
 
-  デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+  既定値 `PATCH,OPTIONS,HEAD,TRACE`
 
   設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
 
@@ -62,3 +62,11 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
   # e.g. http_methodがOPTIONS、HEADであるトランザクションを「無視」
   ignore_http_method=OPTIONS,HEAD
   ```
+
+- **trace_tx_name_with_method_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  統計データでURLを変更したURL+methodで収集できます。<Cmdname sid="side_statistics" className="uitext" />または<Cmdname sid="side_txSearch" className="uitext" />メニューでURL+methodで確認できます。
+
+  > 例、/api/user+GET、/api/user+POST

@@ -44,12 +44,12 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 #### S3
 
 - VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定することで正常な収集が可能です。
-- CloudFront：Log設定時の接頭辞は、**_cloudfront_**がデフォルト値です。パラメータ設定時に変更可能です。
+- CloudFront：Log設定時の接頭辞は、**_cloudfront_**が既定値です。パラメータ設定時に変更可能です。
 - ELB
 
 </details>
 
-{/*  プロジェクト作成 */}
+{/*  프로젝트 생성 */}
 
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
@@ -81,39 +81,39 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 - **ConnectionTimeOut** <span class='type'>Second</span>
 
-  デフォルト値`10`
+  既定値`10`
 
   WhaTap ForwarderがWhaTap収集サーバーに接続するときのタイムアウト時間(秒)を指定します。
 
 - **MemorySize** <span class='type'>Int</span>
 
-  デフォルト値 `1024`
+  既定値 `1024`
 
   WhaTap Forwarderのメモリ割り当てサイズ(MB)を指定します。
 
 - **Timeout** <span class='type'>Second</span>
 
-  デフォルト値`150`
+  既定値`150`
 
   WhaTap Forwarderの休止期間(秒)を指定します。ログの送信リクエストがない場合に、Lambda Functionが削除されるまでの時間を指定します。 
 
 - **UseReservedConcurrency** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   ログを安定して送信するために、WhaTap Forwarderに割り当てる最大Functionの数の指定可否を設定します。
 
 - **ReservedConcurrency** <span class='type'>Second</span>
 
-  デフォルト値`10`
+  既定値`10`
 
   `UseReservedConcurrency`の値が`true`である場合、WhaTap Forwarderに割り当てるFunctionの数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunctionの数は1,000です。ユーザーが使用できるFunctionの総数はアカウントあたりの総割り当てFunction数(1,000)で`ReservedConcurrency`の設定の値を引いたものに制限されます。
 
-  {/* ユーザは、AWSアカウントあたりの割り当て可能なFunction数から`ReservedConcurrency`設定値を引いた分だけFunctionを使用することができます。*/}
+  {/* 사용자는 AWS 계정 당 할당 가능한 총 Function 개수에서 `ReservedConcurrency` 설정 값을 뺀 만큼 Function을 사용할 수 있습니다. */}
 
 - **cloudfrontPrefix** <span class='type'>String</span>
 
-  デフォルト値`cloudfront `
+  既定値`cloudfront `
 
   CloudFrontからS3へLogを送信する際に設定する接頭辞の値を意味します。
 
@@ -287,7 +287,7 @@ IAMポリシーは、次の権限を割り当てます。
 
 ### IAMロールの作成{#create-iam-role}
 
-{/* どのAWSアカウントIDで生成されたリソースに対して権限を許可するかを指定し、直前に生成したIAMポリシーをマッピングします。 */}
+{/* 어떤 AWS 계정 ID로 생성된 자원에 대해 권한을 허용할지를 지정하고 직전에 생성한 IAM 정책을 매핑합니다. */}
 
 作成したリソースのアクセス権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストールガイド_**セクションの**_AWS IAMロールの作成_**タブを参照してください。 
 

@@ -59,7 +59,7 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 ## エージェント設定
 
-ユーザーアプリケーションの実行パスに、WhaTapのアクセスキー、サーバーIPアドレス情報を入力した_whatap.conf_ファイルを作成してください。 特定のパスを使用する場合に`WHATAP_HOME`環境変数として設定できます。
+ユーザーアプリケーションの実行パスに、WhaTapのアクセスキー、サーバーIPアドレス情報を入力した*whatap.conf*ファイルを作成してください。 特定のパスを使用する場合に`WHATAP_HOME`環境変数として設定できます。
 
 ```docker title='whatap.conf'
 RUN echo "accesskey={アクセスキー}" >> whatap.conf
@@ -74,7 +74,7 @@ RUN echo "whatap.server.host={収集サーバーのIPアドレス}" >> whatap.co
 
 ### `WHATAP_HOME`環境変数の設定
 
-_whatap.conf_ファイルパスを`WHATAP_HOME`環境変数として設定できます。 まず、`WHATAP_HOME`パスを作成してください。 アプリケーション実行構文の前に`WHATAP_HOME`設定を追加します。 
+*whatap.conf*ファイルパスを`WHATAP_HOME`環境変数として設定できます。 まず、`WHATAP_HOME`パスを作成してください。 アプリケーション実行構文の前に`WHATAP_HOME`設定を追加します。 
 
 ```bash
 mkdir ./whatap_home
@@ -133,7 +133,7 @@ func main(){
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ_yaml_ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
 
 ```yaml
 env:
@@ -224,4 +224,4 @@ ps -ef | grep whatap_agent
 
 - コンテナで`ps -ef | grep whatap_agent`コマンドを実行し、エージェントオプションが適用されているかを確認してください。
 
-- コンテナの_`WHATAP_HOME`/logs_、またはアプリケーション実行パスの_logs_ディレクトリを確認してください。 エージェントログは、_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_形式のファイル名として出力されます。
+- コンテナの_`WHATAP_HOME`/logs_、またはアプリケーション実行パスの_logs_ディレクトリを確認してください。 エージェントログは、*logs/whatap-`{boot、またはinstall}`-yyyymmdd.log* 形式のファイル名として出力されます。

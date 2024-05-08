@@ -6,6 +6,240 @@ pagination_next: release-notes/service/service-2_2_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.3.15
+
+2024年04月23日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />メニューで<Cmdname sid="TTL07712" className="uitext" />カラムのボタンを選択する時、SQL文に特定の特殊文字が含まれるとホワイトアウト現象が発生する問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" />メニューのエージェント選択リストでエージェント名が長い場合、3点リーダー(...)が適用される現象を修正
+
+</div>
+
+## Service 2.3.14
+
+2024年04月09日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code>メニューで既存のイベント設定メニューのイベントタブを表示し、<Cmdname sid="BTN07761" className="uitext" />、<Cmdname sid="BTN07762" className="uitext" />機能を追加
+
+  :::note
+
+  この機能は、`Cloud`と`URL`製品を除くすべての製品に適用されます。
+
+  :::
+
+- <Status>Feature</Status>サイドメニューでプロジェクト一覧の幅を調整できる機能を追加
+
+- <Status>Fixed</Status>サイドメニューのプロジェクト一覧でグループ/プロジェクト名が長い場合、ソートが乱れる問題を修正
+
+</div>
+
+## Service 2.3.13
+
+2024年04月08日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Fixed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" />メニューで選択したエージェントの数が多い場合、スクロールが生じない問題を修正
+
+</div>
+
+## Service 2.3.12
+
+2024年04月05日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dailyAppStat" className="uitext" />メニューでデータ照会が完了する前に検索ボタンを選択して、再照会が可能な問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューの<Cmdname sid="today_tps" className="uitext" />および<Cmdname sid="today_user" className="uitext" />ウィジェットで照会期間を変更してもデータが維持される問題を修正
+
+</div>
+
+## Service 2.3.11
+
+2024年04月04日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューで<Cmdname sid="today_tps" className="uitext" />および<Cmdname sid="today_user" className="uitext" />ウィジェットのデータはエージェントフィルターに関係なく常に全データを照会するように修正</p>
+
+</div>
+
+## Service 2.3.10
+
+2024年04月03日
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューで<Cmdname sid="TTL06224" className="uitext" />ポップアップウィンドウを開くとqueryテキストが見えない問題を修正</p>
+
+</div>
+
+## Service 2.3.9
+
+2024年04月03日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューの読み取り専用ダッシュボードを選択した状態でページを更新すると、ダッシュボードを修正できる問題を修正</p>
+
+---
+
+### `Appication`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />メニューから<Cmdname sid="TTL07712" className="uitext" />機能を利用する時、エラー件数が一致しない問題を修正</p>
+
+</div>
+
+## Service 2.3.8
+
+2024年04月03日
+
+<div class='indentTab'>
+
+### `Browser`
+
+#### <Cmdname sid="side_dashboard" />
+
+- <Status>Fixed</Status>ダッシュボードでデータ照会時に5秒、5分、1時間単位データの照会範囲を修正
+
+- <Status>Fixed</Status>TopNチャートクエリの照会方法を改善
+
+- <Status>Fixed</Status>テーブルウィジェットの場合、最大100件まで照会するように制限
+
+</div>
+
+## Service 2.3.7
+
+2024年04月01日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />メニューで<Cmdname sid="TTL07712" className="uitext" />カラム項目を選択すると発生する414エラー問題を修正</p>
+
+### `Server`
+
+<p><Status>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューの画面右上に<Cmdname sid="groupby" className="uitext" />ボタンを<b>通知設定</b>権限を持つメンバーも利用できるように修正</p>
+
+:::note
+
+プロジェクト<b>修正</b>または<b>通知設定</b>権限を所有するメンバーは<Cmdname sid="side_serverDetail" className="uitext" />メニューでプロセスグループ化機能を利用できます。
+
+:::
+
+---
+
+### `Kubernetes`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="node_detail" className="uitext" />メニューの<Cmdname sid="cpu_cores" className="uitext" />, <Cmdname sid="memory_total" className="uitext" />指標値を<code>kube_node</code>メトリクスデータの<code>CapacityCpu</code>, <code>CapacityMemory</code> field値に変更</p>
+
+</div>
+
+## Service 2.3.6
+
+2024年03月29日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_appDashboard" className="uitext" />でプリセット保存後、上書きができない問題を修正</p>
+
+</div>
+
+## Service 2.3.5
+
+2024年03月29日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06377" className="uitext" />タブでノードをクリックし<Cmdname sid="TTL06126" className="uitext" />タブでSQLステップを選択すると<Cmdname sid="parameter_binding" className="uitext" />機能が断続的に露出しない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_moduleDependency" className="uitext" />
+
+  - Node.js及びPythonプロジェクトの場合<Cmdname sid="side_moduleDependency" className="uitext" />メニューを追加
+
+  - Goプロジェクトの場合<Cmdname sid="side_moduleDependency" className="uitext" />メニューを削除 
+
+- <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューでエージェントを1つ選択した後<Cmdname sid="TTL07712" className="uitext" />カラムの詳細表示ウィンドウのポップアップ時にホワイトアウトの発生問題を修正
+
+---
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで次のように複合メトリクスイベントテンプレートを追加</p>
+
+- <UI>The kube-apiserver latency over 10 second</UI>
+
+- <UI>The kube-apiserver response increase/decrease rate for error codes</UI>
+
+</div>
+
+## Service 2.3.4
+
+2024年03月28日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<p><Status>Fixed</Status>プロジェクト作成後、エージェントをインストールしない状態でアクセスキーのみを発行した場合、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="kubernetesAgentList" className="uitext" />メニューから発生するホワイトアウト現象を修正</p>
+
+</div>
+
+## Service 2.3.3
+
+2024年03月28日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" />メニューでグループウィジェットにメトリクスタイプのフィルターを適用し、下位ウィジェットで<Cmdname sid="apply_group_widget_filter" className="uitext" />オプションを選択するとフィルターが適用されない問題を修正</p>
+
+</div>
+
+## Service 2.3.2
+
+2024年03月28日
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> <Cmdname sid="active_sessions" className="uitext" />テーブルの<UI>query</UI>項目を選択すると現れる<Cmdname sid="TTL06224" className="uitext" />ウィンドウから<Cmdname sid="BTN06225" className="uitext" />ボタンを選択して<Cmdname sid="side_dbSqlStat" className="uitext" />メニューへの移動時にパラメータ値が正常に入力されない問題を修正</p>
+
+---
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでHelmを利用したエージェントのインストール案内を追加</p>
+
+</div>
+
 ## Service 2.3.1
 
 2024年03月27日
@@ -90,7 +324,7 @@ Service 2.3.0リリーズに含まれる新機能を紹介します。
 
 :::
 
-* * *
+---
 
 ### `共通`
 
@@ -146,7 +380,7 @@ Service 2.3.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Fixed</Status>決済手段をStripeで登録したユーザーが<Cmdname sid="bill_recipient_setting" className="uitext" />項目を修正した時に表示されるエラーメッセージを削除
 
-* * *
+---
 
 ### `Application`
 
@@ -192,7 +426,7 @@ Service 2.3.0リリーズに含まれる新機能を紹介します。
 
 <p><Status>Fixed</Status> Node.js製品のプロジェクトインストール画面でインストール案内フレーズ(日本語)を修正</p>
 
-* * *
+---
 
 ### `Server`
 
@@ -204,7 +438,7 @@ Service 2.3.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Fixed</Status> <Cmdname sid="sms_alert_status" className="uitext" />リストで処理履歴を登録する時、処理履歴(件数)ではなく登録完了タグが表示されるように修正
 
-* * *
+---
 
 ### `Kubernetes`
 
@@ -256,7 +490,7 @@ Service 2.3.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Fixed</Status> <Cmdname sid="side_integratedContainerMap" className="uitext" />メニューで<Cmdname sid="groupby" className="uitext" />オプション使用時にオブジェクト数が断続的に隠れる現象を修正
 
-* * *
+---
 
 ### `Database`
 
@@ -319,7 +553,7 @@ Service 2.3.0リリーズに含まれる新機能を紹介します。
 
 <p><Status>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューのUI変更</p>
 
-* * *
+---
 
 ### `Browser`
 

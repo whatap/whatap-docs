@@ -14,6 +14,140 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.4.0.a2
+
+April 16, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="side_flexboard" />
+
+- <Status>Feature</Status> Added the <b>Integrated service 2</b> dashboard template.
+
+- <Status>Changed</Status> In <Cmdname sid="dashboard_list" className="uitext" />, modified to display the selected product icons on the dashboard.
+
+- <Status>Changed</Status> Modified the dashboard template preview to display scrolling.
+
+- <Status>Changed</Status> Modified not to display the project names in the dashboard list within a project.
+
+- <Status>Changed</Status> Changed the action so that clicking an instance in the Database status widget brings the corresponding project dashboard.
+
+#### Side menu
+
+- <Status>Feature</Status> Added the function to adjust the width of the project list.
+
+- <Status>Fixed</Status> Fixed the issue where sorting is misaligned when the group/project name is too long in the project list of the side menu.
+
+- <Status>Deprecated</Status> Deleted the tutorial button from the side menu.
+
+#### ETC
+
+- <Status>Changed</Status> In the following menus, modified the orders for activation toggle and Edit button columns to the leftmost in the list.
+
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_maintenancePlan" className="uitext" />
+  - <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="metrics" className="uitext" /> &gt; <Cmdname sid="goto_alertTemplate" className="uitext" />
+
+- <Status>Changed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, modified to enable addition or overwriting except for the id property when loading real-time log events or composite log events in JSON format.
+
+- <Status>Changed</Status> Changed the region selection path on the project creation page (in the selection order of region → CSP).
+
+- <Status>Changed</Status> For AWS Marketplace account users, added the guidance message after removing the subscription cancelation function.
+
+---
+
+### `Application`
+
+#### Common
+
+- <Status>Feature</Status> From the <Cmdname sid="AA016" className="uitext" /> widget in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, added the option to display inactive agents.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dailyAppStat" className="uitext" />, fixed the issue where data can be searched again by selecting the search button before search is not completed.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where data is maintained even if the query period is changed in the <Cmdname sid="today_tps" className="uitext" /> and <Cmdname sid="today_user" className="uitext" /> widgets.
+
+#### Java
+
+- <Status>Fixed</Status> Modified the WebLogic installation guide from **Add JVM option** in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code>.
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> From the server event addition and modification window in <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, modified the text in the port notification tooltip.
+
+---
+
+### `Kubernetes`
+
+- <Status>Feature</Status> On the <Cmdname sid="BTN06342" className="uitext" /> screen in <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_deploymentList" className="uitext" />, added the ReplicaSet list in the <Cmdname sid="resource" className="uitext" /> tab.
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, added the <Cmdname sid="TTL07237" className="uitext" /> tab.
+
+  :::tip
+
+  The chart allows you to visually check the connections between resources. It is useful to see at a glance the relationships between Namespace, Deployment, ReplicaSet, DaemonSet, Pod, Container, and Application concerning the selected block.
+
+  :::
+
+- <Status>Changed</Status> Changed the UI for the movement button on the list screen.
+
+- <Status>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the installation guide text and terms for the Kubernetes agent.
+
+---
+
+### `Database`
+
+#### PostgreSQL
+
+- <Status>Feature</Status> Under the <UI>Age</UI> tab in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />, added the <UI>per_to_wraparound</UI> column.
+
+- <Status>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />, changed the guide text that appears when there is no data.
+
+#### PostgreSQL / MySQL
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the detailed pop-up that displays the disk usage trend.
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the following widgets.
+
+  - <UI>Long Active Session Count</UI>
+  - <UI>Long Waiting Session Count</UI>
+
+#### PostgreSQL / MySQL / MongoDB
+
+<Status>Changed</Status> Changed the CPU (xos) metric to be broken down into <code>cpu_sys(xos)</code>, <code>cpu_user(xos)</code>, and <code>cpu_iowait(xos)</code>.
+
+---
+
+### `Cloud`
+
+#### Amazon ECS
+
+- <Status>Fixed</Status> In the <Cmdname sid="agent-setup-guide" className="uitext" /> section of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu, modified the differences for each language to meet the same standards.
+
+- <Status>Fixed</Status> Modified the metric names that are not multilingual to display according to the language environment.
+
+#### Amazon CloudWatch
+
+- <Status>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, changed the label for the Role ARN field from the button format to the text format.
+
+- <Status>Fixed</Status> With the language set to Japanese, in the <Cmdname sid="pricing" className="uitext" /> tab of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified to go to the Japanese page instead of the Korean page if you select the <Cmdname sid="price_policy" className="uitext" /> link.
+
+- <Status>Fixed</Status> Modified the metric names that are not multilingual to display according to the language environment.
+
+---
+
+### `URL`
+
+- <Status>Changed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" />, reorganized the UI for the URL list widget.
+
+  ![URL list](/img/release/url-widget-changed.png)
+
+- <Status>Changed</Status> Modified to display the URL detail window as a pop-up.
+
+</div>
+
 ## Preview 2.4.0.a1
 
 April 4, 2024
@@ -76,7 +210,7 @@ April 4, 2024
 
   :::note
 
-  This function is supported in Master agent 1.5.8 or later.
+  This function is supported in Master agent 1.6.1 or later.
 
   :::
 

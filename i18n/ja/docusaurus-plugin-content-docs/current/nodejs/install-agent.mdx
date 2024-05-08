@@ -10,7 +10,7 @@ import TR from '@site/src/components/TR';
 
 import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
-<Agentsignupguide />   
+<Agentsignupguide />
 
 <Youtube ko="i8P8wrKgm40" en="i8P8wrKgm40" ja="i8P8wrKgm40" />
 
@@ -18,7 +18,7 @@ Node.jsモニタリングサービスを使用するには、モニタリング�
 
 - サービス中のNode.jsアプリケーションのディレクトリパスに、WhaTapエージェントモジュールをインストールしてください。
 
-- WhaTapエージェントの環境設定(_whatap.conf_)を作成してください。
+- WhaTapエージェントの環境設定(*whatap.conf*)を作成してください。
 
 - Node.jsサービスを再起動します。
 
@@ -28,7 +28,7 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
-<Accesskeyv2 /> 
+<Accesskeyv2 />
 
 ## エージェントダウンロード
 
@@ -38,7 +38,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
    $ npm install --save whatap
    ```
 
-2. _node_modules/whatap_パスから_whatap.conf_ファイルをコピーして、ソースコードのルート(root)パスに貼り付けます。
+2. _node_modules/whatap_パスから*whatap.conf*ファイルをコピーして、ソースコードのルート(root)パスに貼り付けます。
 
 3. [WhaTapモニタリングサービス](https://service.whatap.io) 画面に移動してください。
 
@@ -49,7 +49,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
    whatap.server.host={収集サーバーIP}
    ```
 
-5. _whatap.conf_ファイルに貼り付けてください。
+5. *whatap.conf*ファイルに貼り付けてください。
 
 ホスト(`whatap.server.host`) のアドレスは、WhaTap proxyをインストールしたサーバーのアドレスです。スラッシュ(「/」)を区切り文字として使用し、WhaTap proxy が実行中のサーバーにアドレスを入力することができます。
 
@@ -58,7 +58,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 Node.jsモニタリングサービスを構成する各ファイルの役割は、次のとおりです。
 
-- _whatap.conf_：エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。
+- *whatap.conf*：エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。
 
 - _lib_：エージェント、トレーサープログラムです。
 
@@ -69,6 +69,16 @@ Node.jsモニタリングサービスを構成する各ファイルの役割は�
 - _index.js_：main export宣言ファイルです。
 
 </details>
+
+:::tip
+
+**Next.js**または**Nuxt.js**などのサーバーサイドレンダリング(Server-side Rendering、SSR)フレームワークでアプリケーションをモニタリングするためにCustom Serverの設定が必要です。一般的なNode.jsフレームワーク(例、Express.js、Nest.js)とは異なるアプローチが求められます。詳細については、以下の文書を参照してください。
+
+- [Next.js環境でエージェントをインストールする](install-agent-nextjs)
+
+- [Nuxt.js環境でエージェントをインストールする](install-agent-nuxtjs)
+
+:::
 
 ## 活用方法
 
@@ -146,7 +156,7 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 ### デフォルトの環境変数設定
 
-PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(_app.js_)ファイルで設定する必要があります。_whatap.conf_ファイルは使用できません。
+PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(_app.js_)ファイルで設定する必要があります。*whatap.conf*ファイルは使用できません。
 
 アクセスキー(`WHATAP_LICENSE`)収集サーバーIP(`WHATAP_SERVER_HOST`)を環境変数として設定してください。
 
@@ -159,7 +169,7 @@ var whatap=require('whatap').NodeAgent;
 
 ### 環境変数として設定可能なオプション
 
-_whatap.conf_ファイルが使用できないため、ソースファイルに環境変数としてWhaTapエージェントオプションを設定する必要があります。
+*whatap.conf*ファイルが使用できないため、ソースファイルに環境変数としてWhaTapエージェントオプションを設定する必要があります。
 
 ```javascript title='app.js'
 process.env.profile_http_header_enabled=false;

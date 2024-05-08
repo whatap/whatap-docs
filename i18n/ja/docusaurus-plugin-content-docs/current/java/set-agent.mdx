@@ -9,9 +9,9 @@ tags:
   - whatap.conf
 ---
 
-WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
+WhaTapエージェントは、エージェントごとに必要な設定を*whatap.conf*ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
 
-他の設定がない場合、エージェントは(_whatap.agent-X.Y.Z.jar_)にあるディレクトリから_whatap.conf_ ファイルを実装します。5秒ごとに_whatap.conf_ファイルの確認してリロードします。
+他の設定がない場合、エージェントは(_whatap.agent-X.Y.Z.jar_)にあるディレクトリから*whatap.conf* ファイルを実装します。5秒ごとに*whatap.conf*ファイルの確認してリロードします。
 
 ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)でもエージェント設定機能を提供しています。
 
@@ -22,7 +22,7 @@ whatap.home=.
 whatap.config=whatap.conf
 ```
 
-- `whatap.home`：デフォルト値は_whatap.agent.jar_ファイルへのパスを入力してください。
+- `whatap.home`：既定値は_whatap.agent.jar_ファイルへのパスを入力してください。
 
 - `whatap.config`: ファイル名のみを入力することをお勧めします。相手パスを一緒に入力することができます。
 
@@ -33,17 +33,17 @@ license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
 whatap.server.host=10.10.0.1
 ```
 
-WhaTapエージェントを初めて実行すると、次のようにどのjarファイルがエージェントとして使用され、どのパスで_whatap.conf_ファイルをロードされたのかを確認できます。
+WhaTapエージェントを初めて実行すると、次のようにどのjarファイルがエージェントとして使用され、どのパスで*whatap.conf*ファイルをロードされたのかを確認できます。
 
 ![Java start screen](/img/set-java-agent-start.png)
 
 ## サーバー接続およびデータ送信
 
-WhaTapエージェントは、_whatap.conf_ファイルに設定したサーバーアドレスに接続します。
+WhaTapエージェントは、*whatap.conf*ファイルに設定したサーバーアドレスに接続します。
 
 ```ini title='whatap.conf'
 whatap.server.host=10.10.1.1
-whatap.server.port=6600 # デフォルト値
+whatap.server.port=6600 # 既定値
 ```
 
 - TCPセッションを接続すると`license`を利用してサーバーから通信キーを受け取ります。誤った`license`を設定すると、サーバーはセッションを終了します。
@@ -52,7 +52,7 @@ whatap.server.port=6600 # デフォルト値
 
 ## 複数のアプリケーションサーバーの設定ファイル管理
 
-1つのサーバーの中で複数のアプリケーションを運営する場合、各アプリケーション別の設定ファイルを別途管理するには、_whatap.conf_ファイル名を変更し、開始スクリプトにJVMオプションを追加してください。
+1つのサーバーの中で複数のアプリケーションを運営する場合、各アプリケーション別の設定ファイルを別途管理するには、*whatap.conf*ファイル名を変更し、開始スクリプトにJVMオプションを追加してください。
 
 ```bash title='Service A'
 -Dwhatap.config=whatap_Aservice.conf
@@ -64,7 +64,7 @@ whatap.server.port=6600 # デフォルト値
 
 :::caution
 
-_whatap.conf_設定ファイルは、`${WHATAP_HOME}`パスに配置する必要があります。
+*whatap.conf*設定ファイルは、`${WHATAP_HOME}`パスに配置する必要があります。
 
 :::
 
@@ -81,50 +81,43 @@ import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
 <Desc name='whatap.conf'/>
 
 {/*Notes*/}
-
 import Setagentinservicedescnotes from "../common-items/_set-agent-in-service-desc-notes.mdx";
 
 <Setagentinservicedescnotes />
 
 {/*옵션추가하기*/}
-
 import Setagentinserviceaddoptions from "../common-items/_set-agent-in-service-add-options.mdx";
 
 <Setagentinserviceaddoptions />
 
 {/*옵션 수정 또는 삭제 */}
-
 import Setagentinservicemodifyoptions from "../common-items/_set-agent-in-service-modify-options.mdx";
 
-<Setagentinservicemodifyoptions /> 
+<Setagentinservicemodifyoptions />
 
 {/* 여러에이전트 동시 적용 */}
-
 import Setagentinservicemuliagent from "../common-items/_set-agent-in-service-muli-agent.mdx";
 
-<Setagentinservicemuliagent /> 
+<Setagentinservicemuliagent />
 
 {/* 에이전트 기본값 적용 */}
-
 import Setagentinserviceapplydafaultdesc from "../common-items/_set-agent-in-service-apply-dafault-desc.mdx";
 
-<Setagentinserviceapplydafaultdesc /> 
+<Setagentinserviceapplydafaultdesc />
 
 import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
 
 <DefaultItems name='whatap.conf'/>
 
 {/*Notes*/}
-
 import Setagentinservicedefaultnotes from "../common-items/_set-agent-in-service-default-notes.mdx";
 
 <Setagentinservicedefaultnotes />
 
 {/*설정 공유하기*/}
-
 import Setagentsharing from "../common-items/_set-agent-sharing.mdx";
 
-<Setagentsharing />  
+<Setagentsharing />
 
 {/*서비스 화면에서 에이전트 설정하기 end*/}
 

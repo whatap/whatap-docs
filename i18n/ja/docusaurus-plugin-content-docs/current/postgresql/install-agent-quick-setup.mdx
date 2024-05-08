@@ -42,7 +42,7 @@ WhaTap Server Port (default 6600)?
 
 WhaTapのサーバー情報を入力してください。 <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>DBXエージェント設定</UI>セクションで、WhaTapのサーバーIPアドレスとポート番号を確認できます。
 
-WhaTapサーバーポートのデフォルト値は6600です。 何も入力せずにEnterキーを入力すると、デフォルト値に設定されます。
+WhaTapサーバーポートの既定値は6600です。 何も入力せずにEnterキーを入力すると、既定値に設定されます。
 
 ### STEP2 Register WhaTap server access key
 
@@ -93,13 +93,13 @@ Connecting DBMS Server with SSL (default false)?
 
 - **Monitoring Database Name**：モニタリングするデータベースの名前を入力してください。
 
-- **Monitoring User ID** / **Monitoring User \{user_id}'s Password**：アカウントIDとパスワードを入力してください。 パスワードは暗号化されて保存されます。
+- **Monitoring User ID** / **Monitoring User \{user_id\}'s Password**：アカウントIDとパスワードを入力してください。 パスワードは暗号化されて保存されます。
 
-- **Connecting DBMS Server with SSL**：SSLプロトコルを利用してデータベースサーバーに接続する場合、`true`を入力してください。 デフォルト値は`false`です。
+- **Connecting DBMS Server with SSL**：SSLプロトコルを利用してデータベースサーバーに接続する場合、`true`を入力してください。 既定値は`false`です。
 
 ## エージェントを実行する
 
-_setup.sh_ファイルを利用してエージェントのインストールプロセスを完了したら、データベース情報と_whatap.conf_ファイルに設定した内容が出力されます。
+_setup.sh_ファイルを利用してエージェントのインストールプロセスを完了したら、データベース情報と*whatap.conf*ファイルに設定した内容が出力されます。
 
 ![setup.sh](/img/db-install-agent-run-setup-complete.png)
 
@@ -107,6 +107,6 @@ _setup.sh_ファイルを利用してエージェントのインストールプ�
 
 ## 次の段階
 
-- エージェント設定が完了したら、[次の文書]](after-install-agent)を参考にしてインストールした後、点検事項を確認してください。
+- エージェント設定が完了したら、[次の文書](after-install-agent)を参考にしてインストールした後、点検事項を確認してください。
 
 - 付加エージェント(XOS)を追加でインストールしてデータベースサーバーのリソースをモニタリングするには、[次の文書](install-agent#apply-xos-agent)を参考にしてください。

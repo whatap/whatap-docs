@@ -1,15 +1,15 @@
 ---
 id: async-tracking
 title: 非同期追跡
-description: Javaエージェントを介して非同期活動を追跡する方法についてご案内します。
+description: Javaエージェント設定を介して非同期アプリケーション活動を追跡する方法を案内します。 CompletableFutureメソッドの収集方法と、ユーザーアプリケーションにそのメソッドをhookingする方法が含まれます。 設定例とともにwhatap.confファイルに追加すべきオプションを提供し、非同期呼び出しの性能モニタリングを強化できるようにサポートします。
 tags:
   - Java
   - アプリケーション
-  - エージェント設定
+  - エージェント
   - 非同期追跡
 ---
 
-Javaエージェントを介して非同期アプリケーションを追跡する方法についてご案内します。
+Javaエージェント設定を介して非同期アプリケーション活動を追跡する方法を案内します。 `CompletableFuture`メソッドの収集方法と、ユーザーアプリケーションにそのメソッドをhookingする方法が含まれます。 設定例とともに*whatap.conf*ファイルに追加すべきオプションを提供し、非同期呼び出しの性能モニタリングを強化できるようにサポートします。
 
 ## CompletableFuture
 
@@ -48,7 +48,7 @@ public class W {
 
 ### エージェント設定の追加
 
-エージェント設定のために_whatap.conf_ファイルに次のオプションを追加してください。
+エージェント設定のために*whatap.conf*ファイルに次のオプションを追加してください。
 
 ```ini title='whatap.conf'
 hook_completablefuture_patterns=io.home.test.util.W.*
