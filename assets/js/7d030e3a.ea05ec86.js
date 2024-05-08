@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93031],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[66388],{
 
 /***/ 8320:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -575,13 +575,10 @@ function _createMdxContent(props) {
             src: (__webpack_require__(87953)/* ["default"] */ .A) + "",
             width: "24",
             height: "24"
-          }), ": 해당 URL 또는 각 수행 구간의 통계 데이터 창이 나타납니다. 통계 데이터 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "detail",
-            className: "uitext"
-          }), " 버튼을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          }), ": 해당 URL 또는 각 수행 구간의 통계 데이터 창이 나타납니다. 통계 데이터 창의 그래프 차트에서 원하는 시간을 클릭하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_statistics",
             className: "uitext"
-          }), " 메뉴로 이동합니다."]
+          }), " 메뉴로 이동합니다. 선택한 시간 기준으로 통계 데이터를 조회할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3435,7 +3432,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 93051:
+/***/ 79131:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3475,31 +3472,30 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-hitmap-trace',
 	title: '히트맵 - 트레이스 분석',
-	description: '자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.',
+	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
 	tags: [
-		'Java',
+		'쿠버네티스',
 		'애플리케이션',
 		'히트맵',
-		'트랜잭션',
-		'스텝'
+		'트레이스'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard-hitmap-trace",
+  "id": "kubernetes/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
-  "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
-  "source": "@site/docs/java/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/java/dashboard-hitmap-trace",
+  "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
+  "source": "@site/docs/kubernetes/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "kubernetes",
+  "slug": "/kubernetes/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/kubernetes/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/kubernetes/dashboard-hitmap-trace.mdx",
   "tags": [
     {
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "쿠버네티스",
+      "permalink": "/whatap-docs/tags/쿠버네티스"
     },
     {
       "label": "애플리케이션",
@@ -3510,35 +3506,30 @@ const metadata = {
       "permalink": "/whatap-docs/tags/히트맵"
     },
     {
-      "label": "트랜잭션",
-      "permalink": "/whatap-docs/tags/트랜잭션"
-    },
-    {
-      "label": "스텝",
-      "permalink": "/whatap-docs/tags/스텝"
+      "label": "트레이스",
+      "permalink": "/whatap-docs/tags/트레이스"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard-hitmap-trace",
     "title": "히트맵 - 트레이스 분석",
-    "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
+    "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
     "tags": [
-      "Java",
+      "쿠버네티스",
       "애플리케이션",
       "히트맵",
-      "트랜잭션",
-      "스텝"
+      "트레이스"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "kubeSidebar",
   "previous": {
-    "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/java/dashboard-active-transaction"
+    "title": "애플리케이션 서비스 대시보드",
+    "permalink": "/whatap-docs/kubernetes/dashboard"
   },
   "next": {
-    "title": "Flex 보드",
-    "permalink": "/whatap-docs/java/flex-board"
+    "title": "일자별 애플리케이션 현황",
+    "permalink": "/whatap-docs/kubernetes/application-daily-stat"
   }
 };
 const assets = {

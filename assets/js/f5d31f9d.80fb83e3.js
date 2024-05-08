@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11578],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20581],{
 
 /***/ 11777:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -161,6 +161,14 @@ function _createMdxContent(props) {
           }), " 메뉴로 이동합니다."]
         }), "\n"]
       }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최대 31일 동안의 데이터를 조회할 수 있습니다. 다만, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_statRemote",
+          className: "uitext"
+        }), " 메뉴에서는 최대 7일 동안의 데이터를 조회할 수 있습니다."]
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -988,12 +996,20 @@ function _createMdxContent(props) {
           })]
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "info",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["와탭은 클라이언트와 관련한 정보를 기본 저장합니다. 사용자 데이터 수집과 관련한 에이전트 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "agent-number-of-user",
-            children: "다음 문서"
-          }), "를 참조하세요."]
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "클라이언트 IP에 대한 데이터는 최대 7일 동안의 데이터를 조회할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["와탭은 클라이언트와 관련한 정보를 기본 저장합니다. 사용자 데이터 수집과 관련한 에이전트 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-number-of-user",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n"]
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1153,7 +1169,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 38949:
+/***/ 72040:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1173,10 +1189,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'analysis-apm-trs',
 	title: '통계',
-	description: 'Node.js 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.',
+	description: 'PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.',
 	toc_max_heading_level: 2,
 	tags: [
-		'Node.js',
+		'PHP',
 		'트랜잭션',
 		'애플리케이션',
 		'분석하기',
@@ -1186,20 +1202,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/analysis-apm-trs",
+  "id": "php/analysis-apm-trs",
   "title": "통계",
-  "description": "Node.js 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
-  "source": "@site/docs/nodejs/analysis-apm-trs.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/analysis-apm-trs",
-  "permalink": "/whatap-docs/nodejs/analysis-apm-trs",
+  "description": "PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
+  "source": "@site/docs/php/analysis-apm-trs.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/analysis-apm-trs",
+  "permalink": "/whatap-docs/php/analysis-apm-trs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/analysis-apm-trs.mdx",
+  "editUrl": "undefined/docs/php/analysis-apm-trs.mdx",
   "tags": [
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "label": "트랜잭션",
@@ -1226,10 +1242,10 @@ const metadata = {
   "frontMatter": {
     "id": "analysis-apm-trs",
     "title": "통계",
-    "description": "Node.js 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
+    "description": "PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
     "toc_max_heading_level": 2,
     "tags": [
-      "Node.js",
+      "PHP",
       "트랜잭션",
       "애플리케이션",
       "분석하기",
@@ -1237,14 +1253,14 @@ const metadata = {
       "UI"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "에이전트 옵션 설정",
-    "permalink": "/whatap-docs/nodejs/topology-settings"
+    "permalink": "/whatap-docs/php/topology-settings"
   },
   "next": {
     "title": "보고서",
-    "permalink": "/whatap-docs/nodejs/report-intro"
+    "permalink": "/whatap-docs/php/report-intro"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[59839],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61489],{
 
 /***/ 55126:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2534,17 +2534,16 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    em: "em",
     h3: "h3",
     img: "img",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang} = _components;
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
@@ -2585,26 +2584,16 @@ function _createMdxContent(props) {
             src: (__webpack_require__(87953)/* ["default"] */ .A) + "",
             width: "24",
             height: "24"
-          }), ": 해당 URL 또는 각 수행 구간의 통계 데이터 창이 나타납니다. 통계 데이터 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "상세 >"
-            })
-          }), " 버튼을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "통계/보고서"
-            })
-          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "통계"
-            })
-          }), " 메뉴로 이동합니다."]
+          }), ": 해당 URL 또는 각 수행 구간의 통계 데이터 창이 나타납니다. 통계 데이터 창의 그래프 차트에서 원하는 시간을 클릭하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
+          }), " 메뉴로 이동합니다. 선택한 시간 기준으로 통계 데이터를 조회할 수 있습니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
           type: "note",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "통계"
-              })
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_statistics",
+              className: "uitext"
             }), " 메뉴에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "analysis-apm-trs",
               children: "다음 문서"
@@ -2647,7 +2636,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 69150:
+/***/ 31834:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2685,21 +2674,21 @@ const frontMatter = {
 	tags: [
 		'트랜잭션',
 		'UI',
-		'PHP'
+		'Go'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/trs-profile",
+  "id": "golang/trs-profile",
   "title": "트랜잭션 트레이싱",
   "description": "트랜잭션 트레이싱을 안내합니다.",
-  "source": "@site/docs/php/trs-profile.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/trs-profile",
-  "permalink": "/whatap-docs/php/trs-profile",
+  "source": "@site/docs/golang/trs-profile.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/trs-profile",
+  "permalink": "/whatap-docs/golang/trs-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/trs-profile.mdx",
+  "editUrl": "undefined/docs/golang/trs-profile.mdx",
   "tags": [
     {
       "label": "트랜잭션",
@@ -2710,8 +2699,8 @@ const metadata = {
       "permalink": "/whatap-docs/tags/ui"
     },
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     }
   ],
   "version": "current",
@@ -2722,17 +2711,17 @@ const metadata = {
     "tags": [
       "트랜잭션",
       "UI",
-      "PHP"
+      "Go"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "goSidebar",
   "previous": {
     "title": "트랜잭션 분석하기",
-    "permalink": "/whatap-docs/php/trs-view"
+    "permalink": "/whatap-docs/golang/trs-view"
   },
   "next": {
-    "title": "멀티 트랜잭션",
-    "permalink": "/whatap-docs/php/trs-multi-trace"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/golang/active-transactions"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28609],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[23797],{
 
 /***/ 8320:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -439,13 +439,10 @@ function _createMdxContent(props) {
             src: (__webpack_require__(87953)/* ["default"] */ .A) + "",
             width: "24",
             height: "24"
-          }), ": 해당 URL 또는 각 수행 구간의 통계 데이터 창이 나타납니다. 통계 데이터 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "detail",
-            className: "uitext"
-          }), " 버튼을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          }), ": 해당 URL 또는 각 수행 구간의 통계 데이터 창이 나타납니다. 통계 데이터 창의 그래프 차트에서 원하는 시간을 클릭하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_statistics",
             className: "uitext"
-          }), " 메뉴로 이동합니다."]
+          }), " 메뉴로 이동합니다. 선택한 시간 기준으로 통계 데이터를 조회할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3299,7 +3296,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 46669:
+/***/ 57944:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3340,7 +3337,7 @@ const frontMatter = {
 	title: '히트맵 - 트레이스 분석',
 	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
 	tags: [
-		'PHP',
+		'Node.js',
 		'애플리케이션',
 		'히트맵',
 		'트레이스'
@@ -3348,20 +3345,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/dashboard-hitmap-trace",
+  "id": "nodejs/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
   "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
-  "source": "@site/docs/php/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/php/dashboard-hitmap-trace",
+  "source": "@site/docs/nodejs/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/nodejs/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/nodejs/dashboard-hitmap-trace.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "애플리케이션",
@@ -3382,20 +3379,20 @@ const metadata = {
     "title": "히트맵 - 트레이스 분석",
     "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
     "tags": [
-      "PHP",
+      "Node.js",
       "애플리케이션",
       "히트맵",
       "트레이스"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/php/dashboard-active-transaction"
+    "permalink": "/whatap-docs/nodejs/dashboard-active-transaction"
   },
   "next": {
     "title": "Flex 보드",
-    "permalink": "/whatap-docs/php/flex-board"
+    "permalink": "/whatap-docs/nodejs/flex-board"
   }
 };
 const assets = {
