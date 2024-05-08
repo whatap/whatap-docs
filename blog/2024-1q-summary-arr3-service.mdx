@@ -60,7 +60,7 @@ tags: [신규 기능, 24년, 1분기, 분기 안내, 서비스, 에이전트]
 
 </div>
 
-상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전 확인은 다음 안내에서 확인할 수 있습니다.
+상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.
 
 
 {/* truncate */}
@@ -69,6 +69,24 @@ tags: [신규 기능, 24년, 1분기, 분기 안내, 서비스, 에이전트]
 <br/>
 
 ## `공통`
+
+#### 예시1 
+
+와탭 2024년 1분기 `공통` 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다. 
+
+사이드 메뉴는 프로젝트 선택과 메뉴의 영역을 각각 확보하는 구조로 개편되었습니다. 프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.
+
+  <ImgLang img='release/release-main-ui.png' desc='' />
+
+또한 SSO 계정 연동 기능이 추가되었습니다. 와탭 모니터링을 클라우드 기반 사용자 계정 관리 및 접근 권한 관리 솔루션 **Okta**와 연동할 수 있습니다. 조직 내에서 사용 중인 **Okta** 계정을 이용해 와탭 서비스에 로그인 후 서비스를 이용할 수 있습니다. 
+
+그리고 새로운 ***이벤트 설정*** <code class="newfunc">New</code> 기능은 필드(Field) 중심의 사용자 경험을 강화하였고, 카테고리보다 필드를 먼저 선택하는 방식으로 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소했습니다. 또한 상품에 적합한 기본 이벤트 템플릿을 제공해 보다 쉽게 경고 알림 이벤트를 설정할 수 있습니다. 
+
+다음 개요 안내를 통해 2024년 1분기 공통 부분의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
+#### 예시2
+
+와탭 1분기 `공통` 부분의 주목할 만한 신규 기능 및 변경 사항으로 사이드 메뉴 개편과 대시보드 고도화, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다. 
 
 ##### <code class="New">New</code> 사이드 메뉴 개편 <code class='changelog-service'>Service 2.2.0​</code>
 
@@ -80,7 +98,7 @@ tags: [신규 기능, 24년, 1분기, 분기 안내, 서비스, 에이전트]
 
 ##### <code class="New">New</code> <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 기능 추가 <code class='changelog-service'>Service 2.2.0​</code>
 
-카테고리(Category) 대신 필드(Field) 중심의 사용자 경험을 강화한 새로운 ***이벤트 설정*** <code class="newfunc">New</code> 기능이 추가되었습니다. 필드를 먼저 선택해 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소하였습니다. 
+필드(Field) 중심의 사용자 경험을 강화한 새로운 ***이벤트 설정*** <code class="newfunc">New</code> 기능이 추가되었습니다. 카테고리보다 필드를 먼저 선택해 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소하였습니다. 또한 상품에 적합한 기본 이벤트 템플릿을 제공해 보다 쉽게 경고 알림 이벤트를 설정할 수 있습니다. 
 
 :::note 
 
@@ -102,7 +120,19 @@ import Common_1q from "../crw-data/crwld-service/_import-service-Common.mdx";
 
 ## `Application`
 
-<code class="New">New</code> `Go` 모니터링 상품 **정식 서비스** 시작 <code class='changelog-service'>Service 2.2.4​</code>
+와탭 1분기 `Application` 상품군의 주목할 만한 신규 기능 및 변경 사항으로 `Go` 상품의 정식 출시, ***트랜잭션 맵***의 고도화, 그리고 ***통계*** 및 ***인스턴스 성능 관리*** 메뉴 구조의 개선을 소개합니다.  
+
+`Go` 애플리케이션 모니터링은 Beta 버전 종료 후 정식 서비스를 시작했습니다. 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다. 
+
+***트랜잭션 맵***은 기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 ***트레이스 분석*** 팝업 창을 통해 상세 정보를 확인할 수 있도록 구조를 개선했습니다. 그외에도 ***Top 30*** 섹션에 IP 필터 기능을 추가했고, ***멀티 트랜잭션*** 탭에서 프로잭트 선택 상태를 저장하는 등 트랜잭션 분석 시 편의성을 전반적으로 향상시켰습니다. 
+
+***통계***와 ***인스턴스 성능 관리*** 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 편의성과 안정성 향상을 위한 개선 작업이 이루어졌습니다. 
+
+{/* 안정적으로 각 기능을 사용할 수 있도록 / 기존 문제 개선 및 다양한 안정화 작업을 진행했습니다. */}
+
+다음 개요 안내를 통해 2024년 1분기 `Application` 상품군의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
+{/* <code class="New">New</code> `Go` 모니터링 상품 **정식 서비스** 시작 <code class='changelog-service'>Service 2.2.4​</code> */}
 
 <div class='indentTab'>
 
@@ -149,6 +179,12 @@ import Go_agent_1q from "../crw-data/crwld-agent/_import-agent-golang.mdx";
 
 ## `Server`
 
+와탭 1분기 `Server` 상품의 주목할 만한 신규 기능 및 변경 사항으로 `AIX` 설치 패키지 제공에 대해 소개합니다. 
+
+유닉스 AIX의 경우 버전 6.1 이상을 지원합니다. `AIX` 설치 패키지를 제공해 패키지 다운로드 및 실행만으로 간단하게 설치할 수 있습니다. 
+
+다음 개요 안내를 통해 2024년 1분기 `Server` 상품의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
 :::note 
 
 AIX 설치에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/server/server-os/server-aix)를 참조하세요. 
@@ -173,6 +209,12 @@ import Server_agent_1q from "../crw-data/crwld-agent/_import-agent-server.mdx";
 </div> <br/>
 
 ## `Kubernetes`
+
+와탭 1분기 `Kubernetes` 상품의 주목할 만한 신규 기능 및 변경 사항으로 컨트롤 플레인 모니터링 제공과 ***쿠버네티스 에이전트 목록***, ***Deployment 목록*** 기능 추가 및 *Helm* 차트 설치 지원 등을 소개합니다. 
+
+
+
+다음 개요 안내를 통해 2024년 1분기 `Kubernetes` 상품의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <code class="New">New</code> <span class="uitext">kube-apiserver 대시보드</span> 메뉴 추가 <code class='changelog-service'>Service 2.2.0​</code>
 
@@ -213,6 +255,10 @@ import Kubernetes_agent_1q from "../crw-data/crwld-agent/_import-agent-k8s.mdx";
 
 ## `Database`
 
+와탭 1분기 `Database` 상품군의 주목할 만한 신규 기능 및 변경 사항으로 `Go` 상품의 정식 출시, ***트랜잭션 맵***의 고도화, 그리고 ***통계*** 및 ***인스턴스 성능 관리*** 메뉴 구조의 개선을 소개합니다.  
+
+다음 개요 안내를 통해 2024년 1분기 `Database` 상품군의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
 <code class="New">New</code> Redis, MongoDB <code class="my">V2</code> 서비스 시작 <code class='changelog-service'>Service 2.3.0​</code>
 
 <div class='indentTab'>
@@ -234,6 +280,10 @@ import DBX_agent_1q from "../crw-data/crwld-agent/_import-agent-dbx.mdx";
 
 ## `Browser`
 
+와탭 1분기 `Browser` 상품의 주목할 만한 신규 기능 및 변경 사항으로 ***사용자 세션 분석*** 기능 및 ***사용자 정의 이벤트 수집 기능***을 소개합니다. 
+
+다음 개요 안내를 통해 2024년 1분기 `Browser` 상품의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
 <div class='indentTab'>
 
 import Browser_1q from "../crw-data/crwld-service/_import-service-Browser.mdx";
@@ -252,6 +302,10 @@ import Browser_agent_1q from "../crw-data/crwld-agent/_import-agent-browser.mdx"
 </div> <br/>
 
 ## `Network`
+
+와탭 1분기 `Network` 상품의 주목할 만한 신규 기능 및 변경 사항으로 `Go` 상품의 정식 출시, ***트랜잭션 맵***의 고도화, 그리고 ***통계*** 및 ***인스턴스 성능 관리*** 메뉴 구조의 개선을 소개합니다.  
+
+다음 개요 안내를 통해 2024년 1분기 `Network` 상품의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <code class="New">New</code> <b>네트워크 성능 모니터링</b>(<b>Network Performance Monitoring</b>) 서비스 시작 <code class='changelog-service'>Service 2.1.7​</code>
 
@@ -282,6 +336,10 @@ import AWSLog_1q from "../crw-data/crwld-service/_import-service-AWSLog.mdx";
 </div> <br/> */}
 
 ## `Log`
+
+와탭 1분기 `Log` 상품의 주목할 만한 신규 기능 및 변경 사항으로 `Go` 상품의 정식 출시, ***트랜잭션 맵***의 고도화, 그리고 ***통계*** 및 ***인스턴스 성능 관리*** 메뉴 구조의 개선을 소개합니다.  
+
+다음 개요 안내를 통해 2024년 1분기 `Log` 상품의 주요 신규 기능 및 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <div class='indentTab'>
 
