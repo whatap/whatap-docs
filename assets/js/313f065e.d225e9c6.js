@@ -319,7 +319,7 @@ function _createMdxContent(props) {
           }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_nodeDetail",
             className: "uitext"
-          }), " 메뉴에서 컨테이너 목록의 높이가 화면 크기에 맞춰 늘어나도록 스타일 수정"]
+          }), " 메뉴에서 컨테이너 목록의 높이가 컨테이너 개수에 맞춰 늘어나도록 스타일 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "cloud",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
