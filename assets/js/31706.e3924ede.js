@@ -1,4 +1,4 @@
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89764],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31706],{
 
 /***/ 74206:
 /***/ ((module, exports, __webpack_require__) => {
@@ -8032,7 +8032,7 @@ module.exports.YAMLException = __webpack_require__(41231);
 
 // Re-export all types in case user wants to create custom schema
 module.exports.types = {
-  binary:    __webpack_require__(66961),
+  binary:    __webpack_require__(89342),
   float:     __webpack_require__(81461),
   map:       __webpack_require__(52369),
   null:      __webpack_require__(59198),
@@ -11061,7 +11061,7 @@ module.exports = (__webpack_require__(1769).extend)({
     __webpack_require__(61851)
   ],
   explicit: [
-    __webpack_require__(66961),
+    __webpack_require__(89342),
     __webpack_require__(16946),
     __webpack_require__(66942),
     __webpack_require__(26663)
@@ -11306,7 +11306,7 @@ module.exports = Type;
 
 /***/ }),
 
-/***/ 66961:
+/***/ 89342:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -14552,7 +14552,7 @@ module.exports = baseIsArguments;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGetTag = __webpack_require__(72552),
-    isLength = __webpack_require__(7913),
+    isLength = __webpack_require__(30294),
     isObjectLike = __webpack_require__(40346);
 
 /** `Object#toString` result references. */
@@ -15679,7 +15679,7 @@ module.exports = isArguments;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isFunction = __webpack_require__(1882),
-    isLength = __webpack_require__(7913);
+    isLength = __webpack_require__(30294);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -15801,7 +15801,7 @@ module.exports = isBuffer;
 
 /***/ }),
 
-/***/ 7913:
+/***/ 30294:
 /***/ ((module) => {
 
 /** Used as references for various `Number` constants. */
@@ -41685,7 +41685,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Config = exports.StyleguideConfig = exports.AVAILABLE_REGIONS = exports.DOMAINS = exports.DEFAULT_REGION = exports.IGNORE_FILE = void 0;
 const fs = __webpack_require__(26903);
 const path = __webpack_require__(57975);
-const js_yaml_1 = __webpack_require__(84612);
+const js_yaml_1 = __webpack_require__(62231);
 const utils_1 = __webpack_require__(84036);
 const oas_types_1 = __webpack_require__(73760);
 const env_1 = __webpack_require__(4718);
@@ -42022,7 +42022,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ConfigValidationError = exports.getUniquePlugins = exports.getResolveConfig = exports.transformConfig = exports.checkForDeprecatedFields = exports.getMergedConfig = exports.mergeExtends = exports.prefixRules = exports.transformApiDefinitionsToApis = exports.parsePresetName = void 0;
 const utils_1 = __webpack_require__(84036);
 const config_1 = __webpack_require__(27304);
-const logger_1 = __webpack_require__(15254);
+const logger_1 = __webpack_require__(92873);
 function parsePresetName(presetName) {
     if (presetName.indexOf('/') > -1) {
         const [pluginId, configName] = presetName.split('/');
@@ -42488,7 +42488,7 @@ exports.env = exports.isBrowser ? {} : {} || {};
 
 /***/ }),
 
-/***/ 84612:
+/***/ 62231:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -42511,7 +42511,7 @@ exports.stringifyYaml = stringifyYaml;
 
 /***/ }),
 
-/***/ 15254:
+/***/ 92873:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -42652,7 +42652,7 @@ const registry_api_1 = __webpack_require__(93164);
 const config_1 = __webpack_require__(27304);
 const env_1 = __webpack_require__(4718);
 const utils_1 = __webpack_require__(84036);
-const logger_1 = __webpack_require__(15254);
+const logger_1 = __webpack_require__(92873);
 exports.TOKEN_FILENAME = '.redocly-config.json';
 class RedoclyClient {
     constructor(region) {
@@ -47037,10 +47037,10 @@ const path_1 = __webpack_require__(57975);
 const minimatch = __webpack_require__(82890);
 const node_fetch_1 = __webpack_require__(81912);
 const pluralize = __webpack_require__(55127);
-const js_yaml_1 = __webpack_require__(84612);
+const js_yaml_1 = __webpack_require__(62231);
 const env_1 = __webpack_require__(4718);
-const logger_1 = __webpack_require__(15254);
-var js_yaml_2 = __webpack_require__(84612);
+const logger_1 = __webpack_require__(92873);
+var js_yaml_2 = __webpack_require__(62231);
 Object.defineProperty(exports, "parseYaml", ({ enumerable: true, get: function () { return js_yaml_2.parseYaml; } }));
 Object.defineProperty(exports, "stringifyYaml", ({ enumerable: true, get: function () { return js_yaml_2.stringifyYaml; } }));
 function pushStack(head, value) {
@@ -50991,12 +50991,10 @@ module.exports = (function(doc, win) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ theme_ApiDoc)
+  A: () => (/* binding */ theme_ApiDoc)
 });
 
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
@@ -51477,6 +51475,31 @@ function ApiDoc({ layoutProps, specProps }) {
 ;// CONCATENATED MODULE: ./node_modules/docusaurus-theme-redoc/dist-jsx/theme/ApiDoc/index.js
 
 /* harmony default export */ const theme_ApiDoc = (ApiDoc_ApiDoc);
+
+
+/***/ }),
+
+/***/ 73803:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* unused harmony export useSpecData */
+/* harmony import */ var _docusaurus_useGlobalData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(44376);
+
+/**
+ *
+ * @param id ID of plugin data
+ * @returns Spec Data of ID or first one if ID is not provided
+ */ function useSpecData(id) {
+    var _Object_values;
+    const allData = (0,_docusaurus_useGlobalData__WEBPACK_IMPORTED_MODULE_0__/* .useAllPluginInstancesData */ .kh)('docusaurus-plugin-redoc');
+    const apiData = id ? allData === null || allData === void 0 ? void 0 : allData[id] : (_Object_values = Object.values(allData !== null && allData !== void 0 ? allData : {})) === null || _Object_values === void 0 ? void 0 : _Object_values[0];
+    return apiData;
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useSpecData);
 
 
 /***/ }),

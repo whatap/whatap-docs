@@ -5036,191 +5036,6 @@ body {
     z-index: 0;
   }
 }
-.ais-Hits-list {
-  list-style: none;
-  padding: 0;
-}
-.ais-Hits-list li {
-  border: 1px solid #e8e8e8;
-  padding: 20px 15px;
-  border-radius: 5px;
-}
-.ais-ClearRefinements {
-  margin: 1em 0;
-}
-
-.ais-SearchBox {
-  margin: 1em 0;
-}
-
-.ais-Pagination {
-  margin-top: 2em;
-  text-align: center;
-}
-.ais-Pagination ul {
-  list-style: none;
-}
-.ais-Pagination ul li {
-  display: inline;
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 18px;
-}
-
-.left-panel {
-  float: left;
-  width: 23%;
-}
-.mobile-refine {
-  display: none;
-}
-
-.ais-RefinementList-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 15px;
-  line-height: 210%;
-}
-.ais-RefinementList-item--selected {
-  font-weight: 600;
-  font-size: 18px;
-}
-.ais-Pagination-link--selected {
-  font-size: 22px;
-}
-.ais-RefinementList-checkbox {
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-  position: relative;
-  top: 3px;
-}
-.ais-RefinementList-count {
-  background-color: #3a4570;
-  border-radius: 5px;
-  color: #eeeeee;
-  padding: 0 5px;
-  font-size: 15px;
-}
-
-.right-panel {
-  margin-left: 25%;
-}
-
-.ais-InstantSearch {
-  /* max-width: 960px; */
-  width: 100%;
-  padding: 15px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.ais-SearchBox-form input {
-  width: 100%;
-  height: 45px;
-  font-size: 20px;
-  padding: 15px 15px;
-  border-radius: 8px;
-  border: 1px solid #d3d3d3;
-}
-.ais-SearchBox-submit, .ais-SearchBox-reset {
-  display: none;
-}
-
-.ais-Highlight-highlighted, .ais-Snippet-highlighted {
-  background-color: yellow;
-  color: #333;
-  padding: 0 1px;
-}
-
-.ais-Hits-item,
-.ais-InfiniteHits-item {
-  margin-bottom: 1em;
-  width: 100%;
-}
-
-.ais-Hits-item img,
-.ais-InfiniteHits-item img {
-  margin-right: 1em;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0.5em;
-}
-
-.hit-name {
-  margin-bottom: 0.5em;
-  display: inline-block;
-}
-.hit-name.lvl0::before {
-  content: none;
-}
-.hit-name::before {
-  content: ">";
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.hit-info {
-  font-size: 90%;
-}
-
-@media (max-width: 640px) {
-  .left-panel {
-    display: none;
-  }
-  .mobile-refine {
-    display: block;
-  }
-  .mobile-refine ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  .right-panel {
-    display: block;
-    margin-left: 0;
-    width: 100%;
-  }
-}
-.dlmain_qja4 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.contents_TFPp {
-  max-width: 80%;
-  flex: 1 0;
-}
-.dltocs_PM2E {
-  width: 20%;
-  flex: 0 0;
-  padding-top: 30px;
-  padding-left: 60px;
-}
-.dltocItem_V7vU {
-  position: fixed;
-  top: 96px;
-  border-left: 1px solid #eee;
-}
-.tocList_Iwqw {
-  list-style: none;
-  font-size: .9rem;
-  line-height: 200%;
-}
-.dlHeading1_bNyW {
-  margin-top: 30px;
-}
-.lastdiv_xnS5 {
-  height: 50px;
-}
-
-@media (max-width: 995px) {
-  .dltocs_PM2E {
-    display: none;
-  }
-  .contents_TFPp {
-    max-width: 100%;
-  }
-}
 .redocusaurus-styles {
   display: none;
 }
@@ -5438,6 +5253,191 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   filter: invert(1);
 }
 
+.ais-Hits-list {
+  list-style: none;
+  padding: 0;
+}
+.ais-Hits-list li {
+  border: 1px solid #e8e8e8;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+.ais-ClearRefinements {
+  margin: 1em 0;
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-Pagination {
+  margin-top: 2em;
+  text-align: center;
+}
+.ais-Pagination ul {
+  list-style: none;
+}
+.ais-Pagination ul li {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.left-panel {
+  float: left;
+  width: 23%;
+}
+.mobile-refine {
+  display: none;
+}
+
+.ais-RefinementList-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  line-height: 210%;
+}
+.ais-RefinementList-item--selected {
+  font-weight: 600;
+  font-size: 18px;
+}
+.ais-Pagination-link--selected {
+  font-size: 22px;
+}
+.ais-RefinementList-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+.ais-RefinementList-count {
+  background-color: #3a4570;
+  border-radius: 5px;
+  color: #eeeeee;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+.right-panel {
+  margin-left: 25%;
+}
+
+.ais-InstantSearch {
+  /* max-width: 960px; */
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ais-SearchBox-form input {
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+}
+.ais-SearchBox-submit, .ais-SearchBox-reset {
+  display: none;
+}
+
+.ais-Highlight-highlighted, .ais-Snippet-highlighted {
+  background-color: yellow;
+  color: #333;
+  padding: 0 1px;
+}
+
+.ais-Hits-item,
+.ais-InfiniteHits-item {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.ais-Hits-item img,
+.ais-InfiniteHits-item img {
+  margin-right: 1em;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5em;
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.hit-name.lvl0::before {
+  content: none;
+}
+.hit-name::before {
+  content: ">";
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.hit-info {
+  font-size: 90%;
+}
+
+@media (max-width: 640px) {
+  .left-panel {
+    display: none;
+  }
+  .mobile-refine {
+    display: block;
+  }
+  .mobile-refine ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .right-panel {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.dlmain_qja4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contents_TFPp {
+  max-width: 80%;
+  flex: 1 0;
+}
+.dltocs_PM2E {
+  width: 20%;
+  flex: 0 0;
+  padding-top: 30px;
+  padding-left: 60px;
+}
+.dltocItem_V7vU {
+  position: fixed;
+  top: 96px;
+  border-left: 1px solid #eee;
+}
+.tocList_Iwqw {
+  list-style: none;
+  font-size: .9rem;
+  line-height: 200%;
+}
+.dlHeading1_bNyW {
+  margin-top: 30px;
+}
+.lastdiv_xnS5 {
+  height: 50px;
+}
+
+@media (max-width: 995px) {
+  .dltocs_PM2E {
+    display: none;
+  }
+  .contents_TFPp {
+    max-width: 100%;
+  }
+}
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
