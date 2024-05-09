@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84601],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51266],{
 
 /***/ 27817:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -152,6 +152,32 @@ function _createMdxContent(props) {
               desc: "내보내기 아이콘",
               className: "ico"
             }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07940",
+              className: "uitext"
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07941",
+              className: "uitext"
+            }), " 옵션을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07940",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함해 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07941",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함하지 않고 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -555,7 +581,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 46019:
+/***/ 88829:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -578,30 +604,35 @@ const frontMatter = {
 	title: 'Flex 보드 공유하기',
 	description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
 	tags: [
-		'Tibero',
-		'Flex 보드'
+		'Flex 보드',
+		'Naver Cloud Monitoring',
+		'클라우드'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "tibero/flexboard-share",
+  "id": "ncloud/flexboard-share",
   "title": "Flex 보드 공유하기",
   "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-  "source": "@site/docs/tibero/flexboard-share.mdx",
-  "sourceDirName": "tibero",
-  "slug": "/tibero/flexboard-share",
-  "permalink": "/whatap-docs/tibero/flexboard-share",
+  "source": "@site/docs/ncloud/flexboard-share.mdx",
+  "sourceDirName": "ncloud",
+  "slug": "/ncloud/flexboard-share",
+  "permalink": "/whatap-docs/ncloud/flexboard-share",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/tibero/flexboard-share.mdx",
+  "editUrl": "undefined/docs/ncloud/flexboard-share.mdx",
   "tags": [
-    {
-      "label": "Tibero",
-      "permalink": "/whatap-docs/tags/tibero"
-    },
     {
       "label": "Flex 보드",
       "permalink": "/whatap-docs/tags/flex-보드"
+    },
+    {
+      "label": "Naver Cloud Monitoring",
+      "permalink": "/whatap-docs/tags/naver-cloud-monitoring"
+    },
+    {
+      "label": "클라우드",
+      "permalink": "/whatap-docs/tags/클라우드"
     }
   ],
   "version": "current",
@@ -610,18 +641,19 @@ const metadata = {
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
     "tags": [
-      "Tibero",
-      "Flex 보드"
+      "Flex 보드",
+      "Naver Cloud Monitoring",
+      "클라우드"
     ]
   },
-  "sidebar": "tiberoSidebar",
+  "sidebar": "ncloudSidebar",
   "previous": {
     "title": "Flex 보드 화면 모드",
-    "permalink": "/whatap-docs/tibero/flexboard-mode"
+    "permalink": "/whatap-docs/ncloud/flexboard-mode"
   },
   "next": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/tibero/metrics-intro"
+    "permalink": "/whatap-docs/ncloud/metrics-intro"
   }
 };
 const assets = {

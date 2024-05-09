@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20417],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79071],{
 
 /***/ 27817:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -152,6 +152,32 @@ function _createMdxContent(props) {
               desc: "내보내기 아이콘",
               className: "ico"
             }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07940",
+              className: "uitext"
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07941",
+              className: "uitext"
+            }), " 옵션을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07940",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함해 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07941",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함하지 않고 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -555,7 +581,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 36471:
+/***/ 52349:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -578,27 +604,22 @@ const frontMatter = {
 	title: 'Flex 보드 공유하기',
 	description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
 	tags: [
-		'CUBRID',
 		'Flex 보드'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid/flexboard-share",
+  "id": "server/flexboard-share",
   "title": "Flex 보드 공유하기",
   "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-  "source": "@site/docs/cubrid/flexboard-share.mdx",
-  "sourceDirName": "cubrid",
-  "slug": "/cubrid/flexboard-share",
-  "permalink": "/whatap-docs/cubrid/flexboard-share",
+  "source": "@site/docs/server/flexboard-share.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/flexboard-share",
+  "permalink": "/whatap-docs/server/flexboard-share",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid/flexboard-share.mdx",
+  "editUrl": "undefined/docs/server/flexboard-share.mdx",
   "tags": [
-    {
-      "label": "CUBRID",
-      "permalink": "/whatap-docs/tags/cubrid"
-    },
     {
       "label": "Flex 보드",
       "permalink": "/whatap-docs/tags/flex-보드"
@@ -610,18 +631,17 @@ const metadata = {
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
     "tags": [
-      "CUBRID",
       "Flex 보드"
     ]
   },
-  "sidebar": "cubridSidebar",
+  "sidebar": "serverSidebar",
   "previous": {
     "title": "Flex 보드 화면 모드",
-    "permalink": "/whatap-docs/cubrid/flexboard-mode"
+    "permalink": "/whatap-docs/server/flexboard-mode"
   },
   "next": {
-    "title": "카운트 추이 활용하기",
-    "permalink": "/whatap-docs/cubrid/analysis-count-trend"
+    "title": "메트릭스",
+    "permalink": "/whatap-docs/server/metrics-intro"
   }
 };
 const assets = {

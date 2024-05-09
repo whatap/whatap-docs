@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44167],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3680],{
 
 /***/ 27817:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -152,6 +152,32 @@ function _createMdxContent(props) {
               desc: "내보내기 아이콘",
               className: "ico"
             }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07940",
+              className: "uitext"
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07941",
+              className: "uitext"
+            }), " 옵션을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07940",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함해 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07941",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함하지 않고 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -555,7 +581,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 72876:
+/***/ 89516:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -576,52 +602,52 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'flexboard-share',
 	title: 'Flex 보드 공유하기',
-	description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
+	description: 'Flex 보드를 다른 계정의 사용자와 공유하거나 재사용할 수 있습니다.',
 	tags: [
-		'Flex 보드',
-		'쿠버네티스'
+		'Java',
+		'Flex 보드'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/flexboard-share",
+  "id": "java/flexboard-share",
   "title": "Flex 보드 공유하기",
-  "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-  "source": "@site/docs/kubernetes/flexboard-share.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/flexboard-share",
-  "permalink": "/whatap-docs/kubernetes/flexboard-share",
+  "description": "Flex 보드를 다른 계정의 사용자와 공유하거나 재사용할 수 있습니다.",
+  "source": "@site/docs/java/flexboard-share.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/flexboard-share",
+  "permalink": "/whatap-docs/java/flexboard-share",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/flexboard-share.mdx",
+  "editUrl": "undefined/docs/java/flexboard-share.mdx",
   "tags": [
+    {
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
+    },
     {
       "label": "Flex 보드",
       "permalink": "/whatap-docs/tags/flex-보드"
-    },
-    {
-      "label": "쿠버네티스",
-      "permalink": "/whatap-docs/tags/쿠버네티스"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "flexboard-share",
     "title": "Flex 보드 공유하기",
-    "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
+    "description": "Flex 보드를 다른 계정의 사용자와 공유하거나 재사용할 수 있습니다.",
     "tags": [
-      "Flex 보드",
-      "쿠버네티스"
+      "Java",
+      "Flex 보드"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "Flex 보드 화면 모드",
-    "permalink": "/whatap-docs/kubernetes/flexboard-mode"
+    "permalink": "/whatap-docs/java/flexboard-mode"
   },
   "next": {
-    "title": "컨테이너 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-container-list"
+    "title": "분석",
+    "permalink": "/whatap-docs/java/analysis-report-intro"
   }
 };
 const assets = {

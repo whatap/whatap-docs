@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[610],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21391],{
 
-/***/ 3401:
+/***/ 95953:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,28 +18,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'index',
-	title: 'Preview Release Notes'
+	id: 'preview-2_6_0x',
+	title: 'Preview 2.6.0.a',
+	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/preview/index",
-  "title": "Preview Release Notes",
+  "id": "release-notes/preview/preview-2_6_0x",
+  "title": "Preview 2.6.0.a",
   "description": "preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
-  "source": "@site/docs/release-notes/preview/index.mdx",
+  "source": "@site/docs/release-notes/preview/preview-2.6.0.a.mdx",
   "sourceDirName": "release-notes/preview",
-  "slug": "/release-notes/preview/",
-  "permalink": "/whatap-docs/release-notes/preview/",
+  "slug": "/release-notes/preview/preview-2_6_0x",
+  "permalink": "/whatap-docs/release-notes/preview/preview-2_6_0x",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/preview/index.mdx",
+  "editUrl": "undefined/docs/release-notes/preview/preview-2.6.0.a.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "index",
-    "title": "Preview Release Notes"
+    "id": "preview-2_6_0x",
+    "title": "Preview 2.6.0.a",
+    "toc_max_heading_level": 2
   },
   "sidebar": "previewSidebar",
+  "previous": {
+    "title": "Preview Release Notes",
+    "permalink": "/whatap-docs/release-notes/preview/"
+  },
   "next": {
     "title": "Preview 2.5.0.a",
     "permalink": "/whatap-docs/release-notes/preview/preview-2_5_0x"
@@ -51,17 +57,30 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "Preview 2.6.0.a0",
+  "id": "preview-260a0",
+  "level": 2
+}, {
+  "value": "<code>Application</code>",
+  "id": "application",
+  "level": 3
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
+    h2: "h2",
+    h3: "h3",
     p: "p",
+    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {DocCardList, Head} = _components;
-  if (!DocCardList) _missingMdxReference("DocCardList", true);
+  }, {Head, Status, UI} = _components;
   if (!Head) _missingMdxReference("Head", true);
+  if (!Status) _missingMdxReference("Status", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Head, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
@@ -76,7 +95,33 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardList, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "preview-260a0",
+        children: "Preview 2.6.0.a0"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 05월 22일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "application",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Application"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "트레이스 분석"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "테이블 뷰"
+          }), " 탭 > SQL 스텝 클릭 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "SQL"
+          }), " 창에서 SQL 포매팅 시 한글에 띄어쓰기가 추가되는 현상 수정"]
+        })]
+      })]
+    })]
   });
 }
 function MDXContent(props = {}) {

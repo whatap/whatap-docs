@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "previewSidebar",
   "previous": {
-    "title": "Preview Release Notes",
-    "permalink": "/whatap-docs/release-notes/preview/"
+    "title": "Preview 2.6.0.a",
+    "permalink": "/whatap-docs/release-notes/preview/preview-2_6_0x"
   },
   "next": {
     "title": "Preview 2.4.0.a",
@@ -233,6 +233,18 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Feature"
               }), " 대시보드 내보내기 기능 이용 시 프로젝트 정보를 제외하고 내보내는 기능 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " 그룹 위젯에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TLT06410",
+                className: "uitext"
+              }), " 기능 추가, 그룹 하위 위젯에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TLT07805",
+                className: "uitext"
+              }), " 선택 옵션 추가"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

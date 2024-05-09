@@ -1,105 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[75499],{
-
-/***/ 17050:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_flexboard_share_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24625);
-/* harmony import */ var _common_items_flexboard_copy_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(27817);
-
-
-const frontMatter = {
-	id: 'flexboard-share',
-	title: 'Flex 보드 공유하기',
-	description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
-	tags: [
-		'브라우저 모니터링',
-		'Flex 보드'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "browser/flexboard-share",
-  "title": "Flex 보드 공유하기",
-  "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-  "source": "@site/docs/browser/flexboard-share.mdx",
-  "sourceDirName": "browser",
-  "slug": "/browser/flexboard-share",
-  "permalink": "/whatap-docs/browser/flexboard-share",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/browser/flexboard-share.mdx",
-  "tags": [
-    {
-      "label": "브라우저 모니터링",
-      "permalink": "/whatap-docs/tags/브라우저-모니터링"
-    },
-    {
-      "label": "Flex 보드",
-      "permalink": "/whatap-docs/tags/flex-보드"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "flexboard-share",
-    "title": "Flex 보드 공유하기",
-    "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "tags": [
-      "브라우저 모니터링",
-      "Flex 보드"
-    ]
-  },
-  "sidebar": "rumsSidebar",
-  "previous": {
-    "title": "Flex 보드 화면 모드",
-    "permalink": "/whatap-docs/browser/flexboard-mode"
-  },
-  "next": {
-    "title": "페이지 로드 분석하기",
-    "permalink": "/whatap-docs/browser/analyze-pageload"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-
-const toc = [..._common_items_flexboard_share_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_flexboard_copy_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_flexboard_share_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_flexboard_copy_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[41986],{
 
 /***/ 27817:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -252,6 +152,32 @@ function _createMdxContent(props) {
               desc: "내보내기 아이콘",
               className: "ico"
             }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07940",
+              className: "uitext"
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN07941",
+              className: "uitext"
+            }), " 옵션을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07940",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함해 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "BTN07941",
+                  className: "uitext"
+                }), ": 대시보드에 설정된 프로젝트 정보를 JSON 파일에 포함하지 않고 공유할 수 있습니다."]
+              }), "\n"]
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -649,6 +575,106 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 15862:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_flexboard_share_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24625);
+/* harmony import */ var _common_items_flexboard_copy_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(27817);
+
+
+const frontMatter = {
+	id: 'flexboard-share',
+	title: 'Flex 보드 공유하기',
+	description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
+	tags: [
+		'PostgreSQL',
+		'Flex 보드'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "postgresql/flexboard-share",
+  "title": "Flex 보드 공유하기",
+  "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
+  "source": "@site/docs/postgresql/flexboard-share.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/flexboard-share",
+  "permalink": "/whatap-docs/postgresql/flexboard-share",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/postgresql/flexboard-share.mdx",
+  "tags": [
+    {
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
+    },
+    {
+      "label": "Flex 보드",
+      "permalink": "/whatap-docs/tags/flex-보드"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "flexboard-share",
+    "title": "Flex 보드 공유하기",
+    "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
+    "tags": [
+      "PostgreSQL",
+      "Flex 보드"
+    ]
+  },
+  "sidebar": "postgreSidebar",
+  "previous": {
+    "title": "Flex 보드 화면 모드",
+    "permalink": "/whatap-docs/postgresql/flexboard-mode"
+  },
+  "next": {
+    "title": "카운트 추이 비교하기",
+    "permalink": "/whatap-docs/postgresql/analysis-count-trend"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+const toc = [..._common_items_flexboard_share_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_flexboard_copy_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_flexboard_share_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_flexboard_copy_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
