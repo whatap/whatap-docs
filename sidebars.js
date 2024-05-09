@@ -3761,7 +3761,7 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Oracle',
+          label: 'Oracle DMA',
           href: 'oracle-dma/monitoring-intro',
         },
         {
