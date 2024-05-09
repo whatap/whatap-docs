@@ -1059,6 +1059,14 @@ main {
         overflow-wrap: anywhere;
       }
     }
+    details.changelog {
+      background-color:rgb(230, 230, 230);
+      padding-left: 10px; 
+      border: 0.5px;
+    }
+    details.changelog[open] summary::before {
+      top: -5px;
+    }
     details.alert--info[open] summary::before {
       top: -2px;
     }
@@ -2420,6 +2428,14 @@ main {
   main .markdown details.alert--info {
     padding-top: 0 !important;
     padding-bottom: 10px !important;
+  }
+  main .markdown details.changelog {
+    background-color:rgb(230, 230, 230);
+    padding-left: 10px; 
+    border: 0.5px;
+  }
+  main .markdown details.changelog[open] summary::before {
+    top: -5px;
   }
 
   main .markdown .download-release-notes {
