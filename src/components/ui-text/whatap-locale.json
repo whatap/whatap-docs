@@ -13144,7 +13144,7 @@
   },
   "default_value": {
     "en": "Default value",
-    "ja": "基本値",
+    "ja": "既定値",
     "ko": "기본값",
     "zh": "Default Value",
     "service_id": "TTL01946"
@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54518,94 +54518,248 @@
   },
   "DSC07910": {
     "en": "Optimized for the Amazon Web Services (AWS) cloud, Amazon Linux features seamless integration with AWS services and provides a secure, reliable, high-performance execution environment for running applications effortlessly on Amazon EC2.",
-    "ja": "Amazon Web Services（AWS）クラウドに最適化されたAmazon Linuxは、AWSサービスとの緊密な統合を特徴としており、Amazon EC2でアプリケーションをシームレスに実行できるように安全で信頼性の高い高性能な実行環境を提供します。",
+    "ja": "アマゾンウェブサービス(AWS)のクラウドに最適化されたAmazon Linuxは、AWSサービスと簡単に統合できる特徴で、Amazon EC2上でアプリケーションをスムーズに実行できる安全で安定した高性能のOS環境を提供します。",
     "ko": "아마존 웹 서비스(AWS) 클라우드에 최적화된 아마존 리눅스는 AWS 서비스와의 긴밀한 통합을 특징으로 하며, Amazon EC2에서 애플리케이션을 원활하게 실행할 수 있도록 안전하고 안정적인 고성능의 실행 환경을 제공합니다.",
     "zh": "Optimized for the Amazon Web Services (AWS) cloud, Amazon Linux features seamless integration with AWS services and provides a secure, reliable, high-performance execution environment for running applications effortlessly on Amazon EC2.",
     "service_id": "DSC07910"
   },
   "DSC07911": {
     "en": "RHEL is Red Hat's flagship product designed for enterprise environments. It is reliable, supports a wide range of hardware and software, and is available through a paid subscription model. It offers security updates and professional support.",
-    "ja": "RHELは、企業環境向けに設計されたRed Hatの主力商品です。非常に信頼性が高く、幅広いハードウェアとソフトウェアをサポートし、有料購読モデルを通じて利用可能です。セキュリティアップデートと専門的なサポートを提供します。",
+    "ja": "RHELは、エンタープライズ環境のために設計されたRed Hatの主力商品です。非常に安定しており、幅広いハードウェアとソフトウェアをサポートしており、有料サブスクリプション モデルで利用できます。セキュリティ アップデートと専門的なサポートを提供します。",
     "ko": "RHEL은 기업 환경을 위해 설계된 Red Hat의 주력 상품입니다. 매우 안정적이며 광범위한 하드웨어와 소프트웨어를 지원하며, 유료 구독 모델을 통해 사용 가능합니다. 보안 업데이트 및 전문적인 지원을 제공합니다.",
     "zh": "RHEL is Red Hat's flagship product designed for enterprise environments. It is reliable, supports a wide range of hardware and software, and is available through a paid subscription model. It offers security updates and professional support.",
     "service_id": "DSC07911"
   },
   "DSC07912": {
     "en": "Fedora is a Red Hat sponsored community project and experimental distribution that incorporates the latest Linux technologies. It is the foundation for the next version of RHEL and is the first to support the latest hardware and software.",
-    "ja": "Fedoraは、Red Hatが後援するコミュニティプロジェクトに最新のLinuxテクノロジを統合する実験的なディストリビューションです。次のバージョンはRHELの基盤となり、最新のハードウェアとソフトウェア技術を最初にサポートします。",
+    "ja": "Fedoraは、レッドハットが支援するコミュニティー「Fedora Project」によって最新のLinux技術を統合する実験的なディストリビューションです。次期バージョンのRHELのベースとなり、最新のハードウェアとソフトウェア技術を最初にサポートします。",
     "ko": "Fedora는 Red Hat이 후원하는 커뮤니티 프로젝트로 최신 리눅스 기술을 통합하는 실험적인 배포판입니다. 다음 버전 RHEL의 기반이 되며, 최신 하드웨어와 소프트웨어 기술을 가장 먼저 지원합니다.",
     "zh": "Fedora is a Red Hat sponsored community project and experimental distribution that incorporates the latest Linux technologies. It is the foundation for the next version of RHEL and is the first to support the latest hardware and software.",
     "service_id": "DSC07912"
   },
   "DSC07913": {
     "en": "Oracle Linux is a distribution version based on RHEL, added with Oracle's specific needs and optimizations. Oracle uses this distribution to provide an optimized environment for its databases and applications.",
-    "ja": "Oracle Linuxは、RHELに基づいてOracleの特定のニーズと最適化が追加されたディストリビューションです。 Oracleは、このディストリビューションを通じて、独自のデータベースとアプリケーションに最適化された環境を提供します。",
+    "ja": "Oracle Linuxは、RHELをベースにOracleのカスタマイズと最適化が追加されたディストリビューションです。Oracleは、このOSを通じて、独自のデータベースとアプリケーションに最適化された環境を提供します。",
     "ko": "Oracle Linux는 RHEL을 기반으로 Oracle의 특정 요구와 최적화가 추가된 배포판입니다. Oracle은 이 배포판을 통해 자체 데이터베이스와 애플리케이션에 최적화된 환경을 제공합니다.",
     "zh": "Oracle Linux is a distribution version based on RHEL, added with Oracle's specific needs and optimizations. Oracle uses this distribution to provide an optimized environment for its databases and applications.",
     "service_id": "DSC07913"
   },
   "DSC07914": {
     "en": "CentOS is based on RHEL and uses the same software packages as RHEL, but is a free version that excludes Red Hat's trademarks and logos. It recently transitioned to CentOS Stream, which serves as the parent project for RHEL development.",
-    "ja": "CentOSはRHELに基づいてRHELと同じソフトウェアパッケージを使用しますが、Red Hatの商標とロゴを除く無料版です。最近CentOS Streamに移行し、RHEL開発の上位プロジェクトとして機能するようになりました。",
+    "ja": "CentOSは、RHELをベースにRHELと同じソフトウェアパッケージからRed Hatの商標とロゴを除いて配布する無料ディストリビューションです。ただし、2020年12月からRHELのアップストリーム(開発版)であるCentOS Streamの開発にプロジェクトのフォーカスが変更されました。",
     "ko": "CentOS는 RHEL을 기반으로 RHEL과 동일한 소프트웨어 패키지를 사용하지만, Red Hat의 상표와 로고를 제외한 무료 버전입니다. 최근 CentOS Stream으로 전환되며 RHEL 개발의 상위 프로젝트 역할을 하게 되었습니다.",
     "zh": "CentOS is based on RHEL and uses the same software packages as RHEL, but is a free version that excludes Red Hat's trademarks and logos. It recently transitioned to CentOS Stream, which serves as the parent project for RHEL development.",
     "service_id": "DSC07914"
   },
   "DSC07915": {
     "en": "Rocky Linux is a distribution version created as a result of a change in the development direction of CentOS. It is community driven with the goal of maintaining compatibility with RHEL.",
-    "ja": "Rocky Linuxは、CentOSの開発方向の変更によって作成されたディストリビューションです。 RHELとの互換性を維持することを目的として、コミュニティによって主導されています。",
+    "ja": "Rocky Linuxは、CentOSの開発方向の変更によって生成されたディストリビューションです。RHELとの互換性の維持を目的として、コミュニティによって主導されています。",
     "ko": "Rocky Linux는 CentOS의 개발 방향 변경으로 생성된 배포판입니다. RHEL과의 호환성 유지에 목적을 두고 커뮤니티에 의해 주도되고 있습니다.",
     "zh": "Rocky Linux is a distribution version created as a result of a change in the development direction of CentOS. It is community driven with the goal of maintaining compatibility with RHEL.",
     "service_id": "DSC07915"
   },
   "DSC07916": {
     "en": "Debian is widely used for servers, desktops, and embedded systems. It is stable, and has a large software repository. It is the foundation of many Linux distribution versions, including Ubuntu.",
-    "ja": "Debian は、サーバー、デスクトップ、組み込みシステムに広く使用されており、信頼性が高く、膨大なソフトウェアリポジトリを持っています。 Ubuntuを含む多くのLinuxディストリビューションの基盤となります。",
+    "ja": "Debianは、サーバー、デスクトップ、組み込みシステムに広く使用されており、安定性に優れ、膨大なソフトウェア ストレージを持っています。Ubuntuをはじめとする様々なLinuxディストリビューションのベースとなります。",
     "ko": "데비안은 서버, 데스크탑, 임베디드 시스템에 널리 사용되며, 안정성이 뛰어나고 방대한 소프트웨어 저장소를 가지고 있습니다. 우분투를 비롯한 여러 리눅스 배포판의 기반이 됩니다.",
     "zh": "Debian is widely used for servers, desktops, and embedded systems. It is stable, and has a large software repository. It is the foundation of many Linux distribution versions, including Ubuntu.",
     "service_id": "DSC07916"
   },
   "DSC07917": {
     "en": "Ubuntu, based on Debian, has become very popular on desktops and servers, and more recently in container and cloud environments. It's user-friendly, offers regular releases and long-term support (LTS) versions, and supports a wide range of hardware.",
-    "ja": "Debian をベースにした Ubuntu は、デスクトップやサーバー、最近はコンテナやクラウド環境でも多くの人気を得ています。ユーザーフレンドリーで定期的なリリースと長期サポート（LTS）バージョンを提供し、さまざまなハードウェアをサポートします。",
+    "ja": "DebianをベースにしたUbuntuは、デスクトップやサーバー、最近ではコンテナやクラウド環境でも多くの人気を集めています。ユーザーフレンドリーで定期的なリリースと長期サポート(LTS)バージョンを提供し、さまざまなハードウェアをサポートします。",
     "ko": "데비안을 기반으로 한 우분투는 데스크탑과 서버, 최근에는 컨테이너 및 클라우드 환경에서도 많은 인기를 얻고 있습니다. 사용자 친화적이며 정기적인 릴리스와 장기 지원(LTS) 버전을 제공하고 다양한 하드웨어를 지원합니다.",
     "zh": "Ubuntu, based on Debian, has become very popular on desktops and servers, and more recently in container and cloud environments. It's user-friendly, offers regular releases and long-term support (LTS) versions, and supports a wide range of hardware.",
     "service_id": "DSC07917"
   },
   "DSC07918": {
     "en": "FREEBSD is a Unix-like operating system used for servers, desktops, and embedded systems. It is known for its robustness, BSD license, and direct descent from Unix through the Berkeley software distribution version.",
-    "ja": "FREEBSDは、サーバー、デスクトップ、組み込みシステムで使用されるUNIX系オペレーティングシステムです。堅牢性とBSDライセンス、バークレーのソフトウェアディストリビューションを介してUnixの直接の子孫として知られています。",
+    "ja": "FREEBSDは、サーバー、デスクトップ、組み込みシステムに使用される高い堅牢性とBSDライセンスのユニックス系OSです。Berkeley Software Distributionに由来したUNIXの直接的な子孫として知られています。",
     "ko": "FREEBSD는 서버, 데스크탑, 임베디드 시스템에 사용되는 유닉스 계열 운영 체제입니다. 견고함과 BSD 라이선스, 버클리 소프트웨어 배포판을 통한 유닉스의 직접적인 후손으로 알려져 있습니다.",
     "zh": "FREEBSD is a Unix-like operating system used for servers, desktops, and embedded systems. It is known for its robustness, BSD license, and direct descent from Unix through the Berkeley software distribution version.",
     "service_id": "DSC07918"
   },
   "DSC07919": {
     "en": "Developed by IBM, AIX is commonly used on enterprise servers. It is specifically designed for scalability, compatibility, and robustness in enterprise environments, and runs on IBM Power systems.",
-    "ja": "IBM が開発した AIX は、エンタープライズ・サーバーで主に使用されます。スケーラビリティ、互換性、およびエンタープライズ環境での堅牢性のために特別に設計されており、IBMパワーシステムで実行されています。",
+    "ja": "IBMが開発したAIXは、エンタープライズサーバーで主に使用されています。拡張性と互換性、エンタープライズ環境での高い堅牢性のために特別に設計され、IBMパワーシステムで実行されます。",
     "ko": "IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계되었으며, IBM 파워 시스템에서 실행됩니다.",
     "zh": "Developed by IBM, AIX is commonly used on enterprise servers. It is specifically designed for scalability, compatibility, and robustness in enterprise environments, and runs on IBM Power systems.",
     "service_id": "DSC07919"
   },
   "DSC07920": {
     "en": "Developed by Microsoft, Windows Server is designed to meet a variety of server needs in corporate environments. The operating system is particularly suited for network management, database management, web service hosting, user management, and application hosting.",
-    "ja": "マイクロソフトが開発したWindowsサーバーは、企業環境のさまざまなサーバーニーズを満たすように設計されています。このオペレーティングシステムは、特にネットワーク管理、データベース管理、Webサービスホスティング、ユーザー管理、アプリケーションホスティングに適しています。",
+    "ja": "マイクロソフトが開発したWindowsサーバーは、エンタープライズ環境のさまざまなサーバー ニーズを満たすために設計されました。このOSは、特にネットワーク管理、データベース管理、ウェブサービスのホスティング、ユーザー管理、およびアプリケーションのホスティングに適しています。",
     "ko": "마이크로소프트에서 개발한 윈도우 서버는 기업 환경의 다양한 서버 요구를 충족시키기 위해 설계되었습니다. 이 운영 체제는 특히 네트워크 관리, 데이터베이스 관리, 웹 서비스 호스팅, 사용자 관리 및 애플리케이션 호스팅에 적합합니다.",
     "zh": "Developed by Microsoft, Windows Server is designed to meet a variety of server needs in corporate environments. The operating system is particularly suited for network management, database management, web service hosting, user management, and application hosting.",
     "service_id": "DSC07920"
   },
   "DSC07921": {
     "en": "Solaris is a Unix operating system originally developed by Sun Microsystems and later acquired by Oracle. It is known for its scalability on SPARC systems, features such as ZFS and DTrace.",
-    "ja": "SolarisはもともとSun Microsystemsによって開発され、後にOracleによって買収されたUnixオペレーティングシステムです。このオペレーティングシステムは、SPARCシステムにおけるスケーラビリティ、ZFS、DTraceなどの機能として知られています。",
+    "ja": "Solarisは、サン・マイクロシステムズが開発され、Oracleに買収されたUnix系OSです。このOSは、SPARCシステムにおける拡張性、ZFS、DTraceといった機能で知られています。",
     "ko": "솔라리스는 원래 선 마이크로시스템즈에 의해 개발되었고, 후에 오라클에 의해 인수된 유닉스 운영 체제입니다. 이 운영 체제는 SPARC 시스템에서의 확장성, ZFS, DTrace와 같은 기능으로 알려져 있습니다.",
     "zh": "Solaris is a Unix operating system originally developed by Sun Microsystems and later acquired by Oracle. It is known for its scalability on SPARC systems, features such as ZFS and DTrace.",
     "service_id": "DSC07921"
   },
   "DSC07922": {
     "en": "It is used in enterprise server environments where it has strong corporate fandom, especially in Europe. It is known as the YaST configuration tool and comes with a community edition, openSUSE, and an enterprise edition of Linux.",
-    "ja": "水勢は、特にヨーロッパで強力な企業サポートを受けているエンタープライズサーバー環境で使用されます。 YaST設定ツールとして知られており、コミュニティエディションであるopenSUSEとLinuxエンタープライズバージョンを同梱しています。",
+    "ja": "SUSEは、ヨーロッパの企業から強力なサポートを受けているエンタープライズ サーバー環境で使用されています。YaSTの構成ツールとして知られており、コミュニティエディションであるopenSUSEとLinuxエンタープライズバージョンを提供しています。",
     "ko": "수세는 특히 유럽에서 강력한 기업 지원을 받고 있는 엔터프라이즈 서버 환경에서 사용됩니다. YaST 구성 도구로 알려져 있으며, 커뮤니티 에디션인 openSUSE와 리눅스 엔터프라이즈 버전을 함께 제공합니다.",
     "zh": "It is used in enterprise server environments where it has strong corporate fandom, especially in Europe. It is known as the YaST configuration tool and comes with a community edition, openSUSE, and an enterprise edition of Linux.",
     "service_id": "DSC07922"
+  },
+  "TTL07923": {
+    "en": "Select a product and click the Create button.",
+    "ja": "商品を選択して作成するボタンを押してください。",
+    "ko": "상품을 선택 후 생성하기 버튼을 눌러주세요.",
+    "zh": "Select a product and click the Create button.",
+    "service_id": "TTL07923"
+  },
+  "NTC07924": {
+    "en": "The project has been created.",
+    "ja": "プロジェクトが作成されました。",
+    "ko": "프로젝트가 생성되었습니다.",
+    "zh": "The project has been created.",
+    "service_id": "NTC07924"
+  },
+  "NTC07925": {
+    "en": "Your billing currency will change and your payment method will change. Please register your payment information.",
+    "ja": "請求通貨が変更され、お支払い方法が変更されます。お支払い情報を登録してください。",
+    "ko": "청구 통화 변경되어 결제 수단이 변경됩니다. 결제 정보를 등록해주세요.",
+    "zh": "Your billing currency will change and your payment method will change. Please register your payment information.",
+    "service_id": "NTC07925"
+  },
+  "TTL07926": {
+    "en": "Would you like to change your payment information?",
+    "ja": "お支払い情報を変更しますか？",
+    "ko": "결제 정보를 변경하시겠습니까?",
+    "zh": "Would you like to change your payment information?",
+    "service_id": "TTL07926"
+  },
+  "CNT07927": {
+    "en": "When you change your payment information, previously saved payment information will be deleted.",
+    "ja": "お支払い情報を変更すると、以前に保存したお支払い情報は削除されます。",
+    "ko": "결제 정보 변경 시 이전에 저장한 결제 정보는 삭제됩니다.",
+    "zh": "When you change your payment information, previously saved payment information will be deleted.",
+    "service_id": "CNT07927"
+  },
+  "CNT07928": {
+    "en": "The changes are as follows.",
+    "ja": "変更された履歴は以下の通りです。",
+    "ko": "변경된 내역은 아래와 같습니다.",
+    "zh": "The changes are as follows.",
+    "service_id": "CNT07928"
+  },
+  "TLT07929": {
+    "en": "Go to Group",
+    "ja": "グループへ移動",
+    "ko": "그룹 이동",
+    "zh": "Go to Group",
+    "service_id": "TLT07929"
+  },
+  "DSC07930": {
+    "en": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
+    "ja": "追加/修正/コピーしたURLがリストに反映されますが、約1分の時間がかかります。",
+    "ko": "추가/수정/복사한 URL이 목록에 반영되는데, 약 1분의 시간이 소요됩니다.",
+    "zh": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
+    "service_id": "DSC07930"
+  },
+  "TTL07931": {
+    "en": "Application Performance",
+    "ja": "アプリケーション性能",
+    "ko": "애플리케이션 성능",
+    "zh": "Application Performance",
+    "service_id": "TTL07931"
+  },
+  "BTN07932": {
+    "en": "{comparisonDate} days ago",
+    "ja": "{comparisonDate}日前",
+    "ko": "{comparisonDate}일 전",
+    "zh": "{comparisonDate} days ago",
+    "service_id": "BTN07932"
+  },
+  "BTN07933": {
+    "en": "custom",
+    "ja": "カスタマイズ",
+    "ko": "사용자 지정",
+    "zh": "custom",
+    "service_id": "BTN07933"
+  },
+  "ITM07934": {
+    "en": "(n)hours ago",
+    "ja": "（n）時間前",
+    "ko": "(n)시간 전",
+    "zh": "(n)hours ago",
+    "service_id": "ITM07934"
+  },
+  "TTL07935": {
+    "en": "Comparison time",
+    "ja": "比較時間",
+    "ko": "비교 시간",
+    "zh": "Comparison time",
+    "service_id": "TTL07935"
+  },
+  "ITM07936": {
+    "en": "{hour} hours ago",
+    "ja": "{hour}時間前",
+    "ko": "{hour}시간 전",
+    "zh": "{hour} hours ago",
+    "service_id": "ITM07936"
+  },
+  "NTC07937": {
+    "en": "You must select a time earlier than the start time of the reference time.",
+    "ja": "基準時刻の開始時刻より前の時刻を選択する必要があります。",
+    "ko": "기준 시간의 시작 시간보다 이전의 시간을 선택해야합니다.",
+    "zh": "You must select a time earlier than the start time of the reference time.",
+    "service_id": "NTC07937"
+  },
+  "BTN07938": {
+    "en": "Apply to all widgets in the group",
+    "ja": "グループ内のウィジェット全体に適用",
+    "ko": "그룹 내 전체 위젯에 적용",
+    "zh": "Apply to all widgets in the group",
+    "service_id": "BTN07938"
+  },
+  "DSC07939": {
+    "en": "Applies the current sub-chart settings to all widgets in the group.",
+    "ja": "現在の補助チャートの設定値をグループ内のすべてのウィジェットに同じように適用します。",
+    "ko": "현재의 보조 차트 설정값을 그룹 내 모든 위젯에 동일하게 적용합니다.",
+    "zh": "Applies the current sub-chart settings to all widgets in the group.",
+    "service_id": "DSC07939"
+  },
+  "BTN07940": {
+    "en": "Include project information",
+    "ja": "プロジェクト情報を含む",
+    "ko": "프로젝트 정보 포함",
+    "zh": "Include project information",
+    "service_id": "BTN07940"
+  },
+  "BTN07941": {
+    "en": "Except project information",
+    "ja": "プロジェクト情報なし",
+    "ko": "프로젝트 정보 미포함",
+    "zh": "Except project information",
+    "service_id": "BTN07941"
+  },
+  "DSC07942": {
+    "en": "The Pending Pods feature is provided in WhaTap Kubernetes agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the feature. (Current version: {currVersion})",
+    "ja": "WhaTap Kubernetesエージェントのバージョン<strong>{minVersion}</strong>以降でPending Pods機能を提供しています。機能を使用するには、エージェントを更新してください。（現在のバージョン：{currVersion}）",
+    "ko": "와탭 쿠버네티스 에이전트 버전 <strong>{minVersion}</strong> 이상에서 Pending Pods 기능을 제공하고 있습니다. 기능을 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
+    "zh": "The Pending Pods feature is provided in WhaTap Kubernetes agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the feature. (Current version: {currVersion})",
+    "service_id": "DSC07942"
+  },
+  "TTL07943": {
+    "en": "Precautions before installation",
+    "ja": "設置前の注意事項",
+    "ko": "설치 전 유의사항",
+    "zh": "Precautions before installation",
+    "service_id": "TTL07943"
+  },
+  "TTL07944": {
+    "en": "Additional installation of application monitoring",
+    "ja": "アプリケーション監視の追加インストール",
+    "ko": "애플리케이션 모니터링 추가 설치",
+    "zh": "Additional installation of application monitoring",
+    "service_id": "TTL07944"
   },
   "": {
     "en": "#VALUE!",
@@ -55699,9 +55853,14 @@
     "ko": "락 트리"
   },
   "side_dbWaitAnalysis": {
-    "en": "Wait analysis",
+    "en": "Wait Analysis",
     "ja": "Wait分析",
     "ko": "Wait 분석"
+  },
+  "side_dbSqlAnalysis": {
+    "en": "SQL Analysis",
+    "ja": "SQL分析",
+    "ko": "SQL 분석"
   },
   "side_dbObjectInfo": {
     "en": "Top Object",
