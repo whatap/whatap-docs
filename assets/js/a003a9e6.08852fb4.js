@@ -209,7 +209,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-bash",
             metastring: "title='entrypoint.sh'",
-            children: "#!/bin/bash\n\n# 컨테이너의 작업 디렉터리를 와탭 경로로 설정하세요. 해당 경로에 에이전트 로그 및 설정 파일을 생성합니다.\nexport WHATAP_HOME=${PWD}\n\n# 권한 오류 발생 시 다음 주석을 제거 후 진행하세요.\n#chmod -R 777 $WHATAP_HOME\n\n# 다음은 에이전트 구성에 필수적인 설정 값입니다. 애플리케이션 배포 yaml 파일을 통해 설정합니다.\nwhatap-setting-config \\\n--host $whatap_server_host \\\n--license $license \\\n--app_name $app_name \\\n--app_process_name $app_process_name\n\n# 다음 주석은 에이전트 그룹화 및 로그 수집 활성화 등의 추가 설정입니다. 필요한 경우에만 사용하세요.\n\n# 에이전트 그룹화\n#echo \"okind=$okind\" >> whatap.conf\n\n# 로그 수집 활성화\n#echo \"logsink_enabled=true\" >> whatap.conf\n#echo \"logsink_trace_enabled=true\" >> whatap.conf\n#echo \"trace_logging_enabled=true\" >> whatap.conf\n\n\n# 다음과 같이 whatap-start-agent를 애플리케이션 시작 명령어 앞에 추가해 에이전트를 실행하세요. \nwhatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000\n"
+            children: "#!/bin/bash\n\n# 컨테이너의 작업 디렉터리를 와탭 경로로 설정하세요. 해당 경로에 에이전트 로그 및 설정 파일을 생성합니다.\nexport WHATAP_HOME=${PWD}\n\n# 권한 오류 발생 시 다음 주석을 제거 후 진행하세요.\n#chmod -R 777 $WHATAP_HOME\n\n# 다음은 에이전트 구성에 필수적인 설정 값입니다. 애플리케이션 배포 yaml 파일을 통해 설정합니다.\nwhatap-setting-config \\\n--host $whatap_server_host \\\n--license $license \\\n--app_name $app_name \\\n--app_process_name $app_process_name\n\n# 다음 주석은 에이전트 그룹화 및 로그 수집 활성화 등의 추가 설정입니다. 필요한 경우에만 사용하세요.\n\n# 에이전트 그룹화\n#echo \"whatap.okind=$whatap.okind\" >> whatap.conf\n\n# 로그 수집 활성화\n#echo \"logsink_enabled=true\" >> whatap.conf\n#echo \"logsink_trace_enabled=true\" >> whatap.conf\n#echo \"trace_logging_enabled=true\" >> whatap.conf\n\n\n# 다음과 같이 whatap-start-agent를 애플리케이션 시작 명령어 앞에 추가해 에이전트를 실행하세요. \nwhatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000\n"
           })
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
@@ -324,7 +324,7 @@ function _createMdxContent(props) {
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              children: "echo \"okind=$okind\" >> whatap.conf\n"
+              children: "echo \"whatap.okind=$whatap.okind\" >> whatap.conf\n"
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -354,7 +354,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-yaml",
-          children: "\t  env:\n\t\t- name: license\n\t\t\tvalue: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX\n\t\t- name: whatap_server_host\n\t\t\tvalue: XXX.XXX.XXX.XXX\n\t\t- name: app_name\n\t\t\tvalue: {YOUR_APP_NAME}\n\t\t- name: app_process_name\n\t\t  value: {YOUR_PROCESS_NAME}\n\t\t- name: okind\n\t\t\tvalue: {YOUR_GROUP_NAME}\n\t\t- name: NODE_IP\n\t\t  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n\t\t- name: NODE_NAME\n\t\t  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n\t\t- name: POD_NAME\n\t\t  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n"
+          children: "\t  env:\n\t\t- name: license\n\t\t\tvalue: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX\n\t\t- name: whatap_server_host\n\t\t\tvalue: XXX.XXX.XXX.XXX\n\t\t- name: app_name\n\t\t\tvalue: {YOUR_APP_NAME}\n\t\t- name: app_process_name\n\t\t  value: {YOUR_PROCESS_NAME}\n\t\t- name: whatap.okind\n\t\t\tvalue: {YOUR_GROUP_NAME}\n\t\t- name: NODE_IP\n\t\t  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n\t\t- name: NODE_NAME\n\t\t  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n\t\t- name: POD_NAME\n\t\t  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "다음 예시를 참조하세요."
@@ -400,7 +400,7 @@ function _createMdxContent(props) {
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "okind"
+                children: "whatap.okind"
               }), "(선택사항) : Pod에 해당하는 애플리케이션들을 그룹화합니다. 디플로이먼트(Deployment) 이름으로 설정 시 해당하는 Pod들을 하나로 그룹화합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
