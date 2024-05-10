@@ -3750,7 +3750,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Open API',
-          href: 'openapi' 
+          href: 'openapi-spec' 
         },
         {
           type: 'link',
