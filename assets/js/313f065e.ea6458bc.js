@@ -62,6 +62,10 @@ const toc = [{
   "id": "preview-250a7",
   "level": 2
 }, {
+  "value": "<code>Application</code>",
+  "id": "application",
+  "level": 3
+}, {
   "value": "<code>Database</code>",
   "id": "database",
   "level": 3
@@ -71,7 +75,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application",
+  "id": "application-1",
   "level": 3
 }, {
   "value": "Preview 2.5.0.a5",
@@ -87,7 +91,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>Application</code>",
-  "id": "application-1",
+  "id": "application-2",
   "level": 3
 }, {
   "value": "<code>Browser</code>",
@@ -103,7 +107,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Application</code>",
-  "id": "application-2",
+  "id": "application-3",
   "level": 3
 }, {
   "value": "<code>Server</code>",
@@ -147,7 +151,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-3",
+  "id": "application-4",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -163,7 +167,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Application</code>",
-  "id": "application-4",
+  "id": "application-5",
   "level": 3
 }, {
   "value": "<code>Server</code>",
@@ -193,10 +197,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Head, Link, Status, UI} = _components;
+  }, {Cmdname, Head, Link, LinkImage, Status, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Head) _missingMdxReference("Head", true);
   if (!Link) _missingMdxReference("Link", true);
+  if (!LinkImage) _missingMdxReference("LinkImage", true);
   if (!Status) _missingMdxReference("Status", true);
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -219,10 +224,44 @@ function _createMdxContent(props) {
         id: "preview-250a7",
         children: "Preview 2.5.0.a7"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2024년 05월 10일"
+        children: "2024년 05월 13일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "application",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Application"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "대시보드"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "트랜잭션 맵"
+              }), " 메뉴에서 맵 상단 영역 드래그 시 데이터 미조회 현상 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "트레이스 분석"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "테이블 뷰"
+              }), " 탭 > SQL 스텝 오른쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "ic-static.svg",
+                className: "ico"
+              }), " 아이콘 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "SQL 통계"
+              }), " 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "트랜잭션 검색"
+              }), " 메뉴로 이동 시 선택한 에이전트가 유지되지 않는 현상 수정"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "database",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
@@ -247,7 +286,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application",
+          id: "application-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -329,7 +368,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-1",
+          id: "application-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -459,7 +498,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-2",
+          id: "application-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -692,7 +731,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-3",
+          id: "application-4",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -846,7 +885,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-4",
+          id: "application-5",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
