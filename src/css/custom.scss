@@ -2248,6 +2248,15 @@ main {
     }
   }
 }
+@media (max-width: 800px) {
+  .redocusaurus {
+    div.redoc-wrap {
+      div.api-content {
+        width: 100% !important;
+      }
+    }
+  }
+}
 @media (max-width: 576px) {
   .navbar__search-input {
     background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
