@@ -92,8 +92,8 @@ To configure the agent, the WhaTap project's access key and collection server IP
 Set the access key and collection server IP address in the agent configuration (_whatap.conf_) file.
 
 ```bash
-echo "accesskey={Access key}" >> /usr/whatap/otel/whatap.conf
-echo "whatap.server.host={Collection Server IP}" >> /usr/whatap/otel/whatap.conf
+echo "accesskey={액세스 키}" >> /usr/whatap/otel/whatap.conf 
+echo "whatap.server.host={수집 서버 IP 주소}" >> /usr/whatap/otel/whatap.conf 
 ```
 
 ### Configuring with environment variables
@@ -101,9 +101,9 @@ echo "whatap.server.host={Collection Server IP}" >> /usr/whatap/otel/whatap.conf
 You can set the access key and collection server IP address as environment variables.
 
 ```ini
-WHATAP_ACCESSKEY={Access key}
-WHATAP_SERVER_HOST={Collection server IP}
-WHATAP_OTEL_GRPC_SERVER_PORT={Grpc server listening port}
+WHATAP_ACCESSKEY={액세스 키} 
+WHATAP_SERVER_HOST={수집 서버 IP 주소} 
+WHATAP_OTEL_GRPC_SERVER_PORT={Grpc 서버 리스닝 포트} 
 ```
 
 :::note
@@ -127,7 +127,7 @@ processors:
 
 exporters:
   logging:
-  # Set whatap-otel as the target for the otlp exporter.
+  # otlp exporter에 whatap-otel을 대상으로 설정합니다.
   otlp:
     endpoint: 127.0.0.1:6600
     tls:

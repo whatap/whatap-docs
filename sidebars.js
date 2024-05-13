@@ -3077,6 +3077,7 @@ const sidebars = {
               className: 'new',
             },
             'release-notes/service/service-2_3_x',
+            'release-notes/service/service-2_2_x',
             'release-notes/service/service-2_1_x',
             'release-notes/service/service-2_0_x',
             'release-notes/service/service-1_114_x',
@@ -3212,17 +3213,18 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_94',
+                id: 'release-notes/nodejs/nodejs-0_4_95',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_94',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_95',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
                 'release-notes/nodejs/nodejs-0_4_89',
                 'release-notes/nodejs/nodejs-0_4_88',
@@ -3270,14 +3272,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_3',
+                id: 'release-notes/dotnet/dotnet-2_2_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_3',
+                  id: 'release-notes/dotnet/dotnet-2_2_4',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-2_2_0',
@@ -3286,7 +3289,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-2_1_6',
                 'release-notes/dotnet/dotnet-2_1_5',
-                'release-notes/dotnet/dotnet-2_1_4',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3487,7 +3489,7 @@ const sidebars = {
               label: 'NPM',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/npm/npm-v0_4_5'
@@ -3496,7 +3498,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/npm/npm-v0_4_5',
-                  className: 'new',
+                  // className: 'new',
                 }
               ],
             },
@@ -3891,7 +3893,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Open API',
-          href: 'openapi' 
+          href: 'openapi-spec' 
         },
         {
           type: 'link',
@@ -4307,7 +4309,7 @@ const sidebars = {
       // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
       link: {
         type: 'doc',
-        id: 'openapi',
+        id: 'openapi-old',
       },
       items: [
         'apidoc/openapi-spec',

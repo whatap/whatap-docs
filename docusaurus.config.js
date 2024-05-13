@@ -134,6 +134,36 @@ const config = {
         }
       },
     ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          // Pass it a path to a local OpenAPI YAML file
+          {
+            // Redocusaurus will automatically bundle your spec into a single file during the build
+            id: 'openapi-spec',
+            spec: 'docs/apidoc/openapi.yaml',
+            // route: '/openapi-spec',
+          },
+          {
+            id: 'openapi-spec-en',
+            spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            // route: '/openapi-spec-en',
+          },
+          {
+            id: 'openapi-spec-ja',
+            spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            // route: '/openapi-spec-ja',
+          }
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      },
+    ]
   ],
   webpack: {
     jsLoader: (isServer) => ({
@@ -585,8 +615,7 @@ const config = {
             label: '관리 기능',
           },
           {
-            type: 'doc',
-            docId: 'openapi',
+            to: 'openapi-spec',
             position: 'left',
             label: 'Open API',
           },
@@ -627,8 +656,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: [ 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
-        // 
+        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp' ],
+        // additionalLanguages: [ 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img',

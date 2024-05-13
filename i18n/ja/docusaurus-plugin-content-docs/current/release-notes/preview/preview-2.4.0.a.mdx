@@ -14,6 +14,140 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.4.0.a2
+
+2024年04月16日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="side_flexboard" />
+
+- <Status>Feature</Status> <b>統合サービス2</b>ダッシュボードテンプレートを追加
+
+- <Status>Changed</Status> <Cmdname sid="dashboard_list" className="uitext" />でダッシュボードに選択された製品アイコンを表示するように修正
+
+- <Status>Changed</Status>ダッシュボード テンプレートプレビューにスクロールを表示するように修正
+
+- <Status>Changed</Status>プロジェクト内のダッシュボードリストではプロジェクト名を表記しないように修正
+
+- <Status>Changed</Status>データベースステータスウィジェットでインスタンスをクリックすると、そのプロジェクトダッシュボードに移動するように動作を変更
+
+#### サイドメニュー
+
+- <Status>Feature</Status>サイドメニューでプロジェクト一覧の幅を調整できる機能を追加
+
+- <Status>Fixed</Status>サイドメニューのプロジェクト一覧でグループ/プロジェクト名が長い場合、ソートが乱れる問題を修正
+
+- <Status>Deprecated</Status> サイドメニューのチュートリアルボタンを削除
+
+#### その他
+
+- <Status>Changed</Status>次のメニューのリストテーブルで活性化トグルと修正ボタンカラムの順序を一番左に変更
+
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_maintenancePlan" className="uitext" />
+  - <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="metrics" className="uitext" /> &gt; <Cmdname sid="goto_alertTemplate" className="uitext" />
+
+- <Status>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでリアルタイムログイベントまたは複合ログイベントをJSON形式で読み込む場合、id属性を除いて追加または上書きするように修正
+
+- <Status>Changed</Status>プロジェクト作成ページでリージョン選択の動線を変更(地域→CSP選択順に動線を変更)
+
+- <Status>Changed</Status> AWS Marketplaceアカウントユーザーの場合、サブスクリプションのキャンセル機能を削除した後、案内メッセージを追加
+
+---
+
+### `Application`
+
+#### 共通
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" /> メニューの<Cmdname sid="AA016" className="uitext" />ウィジェットに非活性エージェントを表示するオプションを追加
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dailyAppStat" className="uitext" />メニューでデータ照会が完了する前に検索ボタンを選択して、再照会が可能な問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューの<Cmdname sid="today_tps" className="uitext" />および<Cmdname sid="today_user" className="uitext" />ウィジェットで照会期間を変更してもデータが維持される問題を修正
+
+#### Java
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューの**JVMオプション追加項目**でWebLogicインストールガイド内容を修正：<code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code>
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューのサーバーイベント追加/修正ウィンドウでポート通知の案内ツールチップの文句を修正
+
+---
+
+### `Kubernetes`
+
+- <Status>Feature</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_deploymentList" className="uitext" />メニューの<Cmdname sid="BTN06342" className="uitext" />画面の<Cmdname sid="resource" className="uitext" />タブにReplicasetリストを追加
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューで<Cmdname sid="TTL07237" className="uitext" />タブを追加
+
+  :::tip
+
+  リソース間の接続関係を視覚的に確認できるチャートです。 選択したブロックに関するNamespaceとDeployment、ReplicaSet、DaemonSet、Pod、Container、Applicationなどの関係を一目で把握するのに役立ちます。
+
+  :::
+
+- <Status>Changed</Status>リスト型の画面で移動ボタンのUIを変更
+
+- <Status>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでKubernetesエージェントのインストール案内メッセージと用語を修正
+
+---
+
+### `Database`
+
+#### PostgreSQL
+
+- <Status>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />メニューの<UI>Age</UI>タブに<UI>per_to_wraparound</UI>カラムを追加
+
+- <Status>Changed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />メニューでデータがない場合に表示される案内メッセージの変更
+
+#### PostgreSQL / MySQL
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューでディスク使用の推移が確認できる詳細なポップアウトを追加
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューでウィジェットを追加
+
+  - <UI>Long Active Session Count</UI>
+  - <UI>Long Waiting Session Count</UI>
+
+#### PostgreSQL / MySQL / MongoDB
+
+<Status>Changed</Status> cpu(xos) 指標を<code>cpu_sys(xos)</code>、<code>cpu_user(xos)</code>、<code>cpu_iowait(xos)</code>に細分化して表示するように変更
+
+---
+
+### `Cloud`
+
+#### Amazon ECS
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューの<Cmdname sid="agent-setup-guide" className="uitext" />セクションで言語別に異なる事項を同じ基準に修正
+
+- <Status>Fixed</Status>多言語が適用されていない指標名を言語環境に合わせて表示するように修正
+
+#### Amazon CloudWatch
+
+- <Status>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでRole ARN入力フィールドへのラベルをボタン形式からテキスト形式に変更
+
+- <Status>Fixed</Status>言語設定を日本語に設定した状態で、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューの<Cmdname sid="pricing" className="uitext" />タブで<Cmdname sid="price_policy" className="uitext" />リンクを選択すると、韓国語ページではなく日本語ページに移動するように修正
+
+- <Status>Fixed</Status>多言語が適用されていない指標名を言語環境に合わせて表示するように修正
+
+---
+
+### `URL`
+
+- <Status>Changed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューでURLリストウィジェットのUIを改編
+
+  ![URL list](/img/release/url-widget-changed.png)
+
+- <Status>Changed</Status> URL詳細ウィンドウをポップアウトで表示するように変更
+
+</div>
+
 ## Preview 2.4.0.a1
 
 2024年04月04日
@@ -76,7 +210,7 @@ toc_max_heading_level: 2
 
   :::note
 
-  この機能は、マスターエージェント1.5.8バージョン以降に対応しています。
+  この機能は、マスターエージェント1.6.1バージョン以降に対応しています。
 
   :::
 

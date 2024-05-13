@@ -1,0 +1,244 @@
+WhatapTokenHeader:
+  name: x-whatap-token
+  in: header
+  required: true
+  schema:
+    type: string
+  description: プロジェクトAPIトークン {{PROJECT_API_TOKEN}}
+WhatapPcodeHeader:
+  name: x-whatap-pcode
+  in: header
+  required: true
+  schema:
+    type: string
+  description: プロジェクトコード {{projectCode}}
+WhatapAccoutTokenHeader:
+  name: x-whatap-token
+  in: header
+  required: true
+  schema:
+    type: string
+  description: アカウントのAPIトークン {{ACCOUNT_API_TOKEN}}
+GroupKeyPath:
+  name: groupKey
+  in: path
+  required: true
+  schema:
+    type: integer
+  description: グループ固有識別子(ID)
+ProjectCodePath:
+  name: projectCode
+  in: path
+  required: true
+  schema:
+    type: integer
+  description: プロジェクトコード
+StartTimePath:
+  name: stime
+  in: path
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: 照会開始時間(UNIX epoch time、millisecond)
+StartTimeQuery:
+  name: stime
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: 照会開始時間(UNIX epoch time、millisecond)
+EndTimePath:
+  name: etime
+  in: path
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: 照会終了時間(UNIX epoch time、millisecond)
+EndTimeQuery:
+  name: etime
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int64
+    description: 照会終了時間(UNIX epoch time、millisecond)
+TimeMergeQuery:
+  name: timeMerge
+  in: query
+  required: true
+  schema:
+    type: string
+    enum:
+      - avg
+    description: データ集計方式
+MetricTypePath:
+  name: metric_type
+  in: path
+  require: true
+  schema:
+    type: string
+    enum:
+      - thread_count
+      - thread_daemon
+      - thread_peak_count
+      - threadpool_active
+      - threadpool_queue
+      - apdex
+      - tx_caller
+    description: 照会できる指標
+MetricTypeAvgPath:
+  name: metric_type
+  in: path
+  require: true
+  schema:
+    type: string
+    enum:
+      - thread_count
+      - thread_daemon
+      - thread_peak_count
+      - threadpool_active
+      - threadpool_queue
+      - apdex
+    description: 照会できる指標
+CallStaticTypePath:
+  name: metric_type
+  in: path
+  require: true
+  schema:
+    type: string
+    enum:
+      - tx_caller
+      - tx_domain
+    description: 照会できる指標
+OidPath:
+  name: oids
+  in: path
+  required: true
+  schema:
+    type: integer
+    format: int32
+    description: エージェント固有識別子(ID)、コンマ(,)を区切り文字として複数入力可能
+OidQuery:
+  name: oids
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int32
+    description: エージェント固有識別子(ID)、コンマ(,)を区切り文字として複数入力可能
+AOidQuery:
+  name: oid
+  in: query
+  required: true
+  schema:
+    type: integer
+    format: int32
+    description: エージェント固有識別子(ID)
+FilterQuery:
+  name: filter
+  in: query
+  required: true
+  schema:
+    type: string
+    enum:
+      - m5
+      - s5
+      - h1
+FilterkeyPath:
+  name: filterkey
+  in: path
+  required: true
+  schema:
+    type: string
+    enum:
+      - caller_pcode
+      - caller_spec
+      - caller_url
+      - spec
+      - url
+    description: 照会条件キー
+FiltervalPath:
+  name: filterval
+  in: path
+  required: true
+  schema:
+    type: string
+    description: 照会条件(`filterkeyが` `caller_url`または`url`の場合、base64としてエンコード)
+BaseTimeQuery:
+  name: baeTime
+  in: query
+  required: true
+  schema:
+    type: string
+    format: yyyyMMdd
+    description: 基準時間
+CompareTimeQuery:
+  name: comparisonTime
+  in: query
+  required: true
+  schema:
+    type: string
+    format: yyyyMMdd
+    description: 比較時間
+PeriodQuery:
+  name: period
+  in: query
+  required: true
+  schema:
+    type: string
+    enum:
+      - day
+      - weak
+    description: 照会期間
+DateQuery:
+  name: date
+  in: query
+  required: true
+  schema:
+    type: string
+    format: yyyyMMdd
+    description: 基準時間
+TopNQuery:
+  name: topN
+  in: query
+  required: false
+  schema:
+    type: number
+    format: 1 -1000
+    default: 10
+    description: 上位件数
+OrderQuery:
+  name: order
+  in: query
+  required: false
+  schema:
+    type: string
+    default: sql_execute_cnt
+    enum:
+      - sql_execute_cnt
+      - sql_elapse
+      - sql_elapse_max
+    description: ソート順
+CategoryQuery:
+  name: category
+  in: query
+  required: false
+  schema:
+    type: string
+    default: ALL
+    enum:
+      - ALL
+      - DB
+      - HOST
+      - USER
+    description: カテゴリーを`USER`で選択すると、ユーザー基準でSQL統計データをレスポンス
+NameInCategoryQuery:
+  name: nameInCategory
+  in: query
+  required: false
+  schema:
+    type: string
+  description: パラメータで`category`を選択すると追加

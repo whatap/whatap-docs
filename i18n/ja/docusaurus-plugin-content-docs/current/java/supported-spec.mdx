@@ -6,14 +6,14 @@ tags:
   - Java
   - アプリケーション
   - サポート環境
-  - 対応情報
+  - サポート情報
 ---
 
 ## Javaエージェント動作環境
 
 エージェントをインストールする前に、JVMアプリケーションサーバーが、次の仕様を満たしていることを確認してください。
 
-Web Application Server(WAS)だけでなく、デーモンやバッチ アプリケーションなど、JVMで動作するすべてのアプリケーションに適用できます。Java 1.6未満は、support@whatap.ioに問い合わせまたは[次の文書](add-jvm-opt/java-under-ver)を参照してください。
+Web Application Server(WAS)だけでなく、デーモンやバッチ アプリケーションなど、JVMで動作するすべてのアプリケーションに適用できます。Java 1.6未満は、support@whatap.ioに問い合わせまたは[次の文書](add-jvm-opt/java-under-ver)をご参照ください。
 
 - **対応バージョン**
 
@@ -152,35 +152,35 @@ Web Application Server(WAS)だけでなく、デーモンやバッチ アプリ�
 
 #### 互換性
 
-| WAS Ver.                                       | Java SE 6 (jdk1.6.0)       | Java SE 7 (jdk1.7.0_80)      | Java SE 8 (jdk1.8.0_91)      |
-| ---------------------------------------------- | :-------------------------------------------: | :---------------------------------------------: | :---------------------------------------------: |
-| JBoss EAP7.0 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-no'>❌</span>         |         <span class='emoji-ok'>✅</span>         |
-| JBoss EAP6.1.1 (standalone) |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-no'>❌</span>         |
-| JBoss EAP6.2 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
-| JBoss EAP6.3 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
-| JBoss EAP6.4 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
-| JBoss EAP7.0 (domain)       |        <span class='emoji-no'>❌</span>        |         <span class='emoji-no'>❌</span>         |         <span class='emoji-ok'>✅</span>         |
-| JBoss AS5.1.0 (default)     |        <span class='emoji-ok'>✅</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| WAS Ver.                                        | Java SE 6 (jdk1.6.0)       | Java SE 7 (jdk1.7.0_80)      | Java SE 8 (jdk1.8.0_91)      |
+| ----------------------------------------------- | :-------------------------------------------: | :---------------------------------------------: | :---------------------------------------------: |
+| JBoss EAP 7.0 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-no'>❌</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 6.1.1 (standalone) |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-no'>❌</span>         |
+| JBoss EAP 6.2 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 6.3 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 6.4 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 7.0 (domain)       |        <span class='emoji-no'>❌</span>        |         <span class='emoji-no'>❌</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss AS 5.1.0 (default)     |        <span class='emoji-ok'>✅</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
 
-| WAS Ver.                                       | OpenJDK 6 (1.6.0_45)       | OpenJDK 7 (1.7.0_80)       | OpenJDK 8 (1.8.0_91)       |
-| ---------------------------------------------- | :-------------------------------------------: | :-------------------------------------------: | :-------------------------------------------: |
-| JBoss EAP7.0 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |
-| JBoss EAP6.1.1 (standalone) |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-no'>❌</span>        |
-| JBoss EAP6.2 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
-| JBoss EAP6.3 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
-| JBoss EAP6.4 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
-| JBoss EAP7.0 (domain)       |        <span class='emoji-no'>❌</span>        |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |
-| JBoss AS5.1.0 (default)     |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| WAS Ver.                                        | OpenJDK 6 (1.6.0_45)       | OpenJDK 7 (1.7.0_80)       | OpenJDK 8 (1.8.0_91)       |
+| ----------------------------------------------- | :-------------------------------------------: | :-------------------------------------------: | :-------------------------------------------: |
+| JBoss EAP 7.0 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 6.1.1 (standalone) |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-no'>❌</span>        |
+| JBoss EAP 6.2 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 6.3 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 6.4 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 7.0 (domain)       |        <span class='emoji-no'>❌</span>        |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss AS 5.1.0 (default)     |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
 
-| WAS Ver.                                       |    ibm-java-x86_64-60           |    ibm-java-x86_64-71           |    ibm-java-x86_64-80           |
-| ---------------------------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| JBoss EAP7.0 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.1.1 (standalone) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| JBoss EAP6.2 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.3 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.4 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP7.0 (domain)       |                -                |                -                |                -                |
-| JBoss AS5.1.0 (default)     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| WAS Ver.                                        |    ibm-java-x86_64-60           |    ibm-java-x86_64-71           |    ibm-java-x86_64-80           |
+| ----------------------------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JBoss EAP 7.0 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 6.1.1 (standalone) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBoss EAP 6.2 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 6.3 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 6.4 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 7.0 (domain)       |                -                |                -                |                -                |
+| JBoss AS 5.1.0 (default)     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
 #### DataSource
 
@@ -199,18 +199,18 @@ Web Application Server(WAS)だけでなく、デーモンやバッチ アプリ�
 
 | WAS Ver. | Java SE 6 (jdk1.6.0) | Java SE 7 (jdk1.7.0_80) | Java SE 8 (jdk1.8.0_91) |
 | -------- | :-------------------------------------: | :----------------------------------------: | :----------------------------------------: |
-| JEUS7    |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
-| JEUS6    |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| JEUS 7   |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| JEUS 6   |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
 
 | WAS Ver. | OpenJDK 6 (1.6.0_45) | OpenJDK 7 (1.7.0_80) | OpenJDK 8 (1.8.0_91) |
 | -------- | :-------------------------------------: | :-------------------------------------: | :-------------------------------------: |
-| JEUS7    |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
-| JEUS6    |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+| JEUS 7   |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+| JEUS 6   |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
 
 | WAS Ver. |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| JEUS7    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JEUS6    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JEUS 7   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JEUS 6   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
 
 #### DataSource
 
@@ -242,17 +242,17 @@ Web Application Server(WAS)だけでなく、デーモンやバッチ アプリ�
 
 #### 互換性
 
-| WAS Ver.    | Java SE 6 (jdk1.6.0) | Java SE 7 (jdk1.7.0_80) | Java SE 8 (jdk1.8.0_91) |
-| ----------- | :-------------------------------------: | :----------------------------------------: | :----------------------------------------: |
-| Jetty8.1.21 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
-| Jetty9.2.18 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
-| Jetty9.3.12 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-no'>❌</span>      |       <span class='emoji-ok'>✅</span>      |
+| WAS Ver.     | Java SE 6 (jdk1.6.0) | Java SE 7 (jdk1.7.0_80) | Java SE 8 (jdk1.8.0_91) |
+| ------------ | :-------------------------------------: | :----------------------------------------: | :----------------------------------------: |
+| Jetty 8.1.21 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Jetty 9.2.18 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Jetty 9.3.12 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-no'>❌</span>      |       <span class='emoji-ok'>✅</span>      |
 
-| WAS Ver.    |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
-| ----------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Jetty8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Jetty9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Jetty9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| WAS Ver.     |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
+| ------------ | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Jetty 8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty 9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty 9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 
 #### DataSource
 

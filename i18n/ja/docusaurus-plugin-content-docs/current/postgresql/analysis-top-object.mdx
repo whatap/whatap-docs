@@ -186,16 +186,17 @@ PostgreSQLではXID(transaction id)を循環的に使用しているため、あ
 
 次は<span class="uitext">Age</span>を照会すると表示されるカラム項目です。
 
-| カラム名                        | 説明                                        |
-| --------------------------- | ----------------------------------------- |
-| `datname`                   | データベース名                                   |
-| `schemaname`                | スキーマ(schema)名          |
-| `tablename`                 | テーブル名                                     |
-| `xid_age`                   | vacuum作業で整理された最っとも日付の古い`xid`の間隔（年齢）       |
-| `table_size`                | テーブルサイズ                                   |
-| `autovacuum_vacuum_tuples`  | この値よりDead tupleの数が多くなると、autovacuumを実行します。 |
-| `dead_tuples`               | Dead tuple数                               |
-| `autovacuum_freeze_max_age` | 既定値は２億に設定                              |
+| カラム名                        | 説明                                                                                                                                                                   |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `datname`                   | データベース名                                                                                                                                                              |
+| `schemaname`                | スキーマ(schema)名                                                                                                                                     |
+| `tablename`                 | テーブル名                                                                                                                                                                |
+| `xid_age`                   | テーブルのmax age、最も古いレコードの`xid`(トランザクションID)                                                                                                           |
+| `per_to_wraparound`         | `xid`(トランザクションID) ラッピングまでの残りの余裕をパーセンテージで表示した指標<br/>計算式：`per_to_wraparound`(%) = `xid_age` / `Autovacuum_freeze_max_age` \* 100 |
+| `table_size`                | テーブルサイズ                                                                                                                                                              |
+| `autovacuum_vacuum_tuples`  | この値よりDead tupleの数が多くなると、autovacuumを実行します。                                                                                                                            |
+| `dead_tuples`               | Dead tuple数                                                                                                                                                          |
+| `autovacuum_freeze_max_age` | 既定値は２億に設定                                                                                                                                                            |
 
 ## Dead Tuple
 

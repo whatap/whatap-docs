@@ -52,9 +52,9 @@ Tables and indexes with the values greater than the collection reference set in 
 
 For tables with higher `Bloat_ratio`, consider performing the Vacuum operation. For more information, see the following document.
 
-* [https://postgresql.kr/blog/postgresql_table_bloating.html](https://postgresql.kr/blog/postgresql_table_bloating.html)
+- [https://postgresql.kr/blog/postgresql_table_bloating.html](https://postgresql.kr/blog/postgresql_table_bloating.html)
 
-* [https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5](https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5)
+- [https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5](https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5)
 
 :::
 
@@ -186,16 +186,17 @@ For more information, see [the following](https://www.postgresql.org/docs/curren
 
 If <span class="uitext">Age</span> is viewed, the following columns are displayed.
 
-| Column name                 | Description                                                                          |
-| --------------------------- | ------------------------------------------------------------------------------------ |
-| `datname`                   | Database name                                                                        |
-| `schemaname`                | Schema name                                                                          |
-| `tablename`                 | Table Name                                                                           |
-| `xid_age`                   | Interval (age) of the oldest `xid` cleaned up by vacuum operation |
-| `table_size`                | Table size                                                                           |
-| `autovacuum_vacuum_tuples`  | If the number of dead tuples exceeds this value, autovacuum is performed.            |
-| `dead_tuples`               | Number of dead tuples                                                                |
-| `autovacuum_freeze_max_age` | The default value is set to 200 million.                                             |
+| Column name                 | Description                                                                                                                                                                                                                      |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `datname`                   | Database name                                                                                                                                                                                                                    |
+| `schemaname`                | Schema name                                                                                                                                                                                                                      |
+| `tablename`                 | Table Name                                                                                                                                                                                                                       |
+| `xid_age`                   | Max age of the table, `xid` (transaction ID) of the oldest record                                                                                                                                             |
+| `per_to_wraparound`         | Metric that displays the remaining margin up to the `xid` (transaction ID) wrapping as a percentage. <br/>Formula: `per_to_wraparound`(%) = `xid_age` / `Autovacuum_freeze_max_age` \* 100 |
+| `table_size`                | Table size                                                                                                                                                                                                                       |
+| `autovacuum_vacuum_tuples`  | If the number of dead tuples exceeds this value, autovacuum is performed.                                                                                                                                                        |
+| `dead_tuples`               | Number of dead tuples                                                                                                                                                                                                            |
+| `autovacuum_freeze_max_age` | The default value is set to 200 million.                                                                                                                                                                                         |
 
 ## Dead Tuple
 
