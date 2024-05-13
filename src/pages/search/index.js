@@ -10,7 +10,7 @@ import {
     Configure,
     Snippet,
     Pagination
-} from 'react-instantsearch-dom';
+} from 'react-instantsearch';
 import Layout from '@theme/Layout';
 import './style.css';
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
