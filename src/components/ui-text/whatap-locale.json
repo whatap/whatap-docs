@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54091,7 +54091,7 @@
   },
   "DSC07849": {
     "en": "The access key is a unique ID for activating the WhaTap service.<br /> If the access key is no longer valid, service will be limited. The key can be renewed or extended through the channel inquiry in the upper right corner.",
-    "ja": "アクセスキーはWhaTapサービスを有効にするための一意のIDです。<br />アクセスキーが無効になった場合は、通常のサービス利用が制限されます。右上の「チャットでのお問合せ」を押してからお問合せできます。",
+    "ja": "アクセスキーはWhaTapサービスを有効にするための一意のIDです。<br />アクセスキーが無効になった場合は、通常のサービス利用が制限されます。右上の「チャットでのお問合せ」を押してからお問合せできます。アクセスキーが外部に露出されないようご注意ください。",
     "ko": "액세스 키는 와탭 서비스 활성화를 위한 고유 ID 입니다.<br /> 액세스 키가 더 이상 유효하지 않은 경우 정상적인 서비스 이용이 제한되며, 오른쪽 상단의 채널 문의를 통해 갱신하거나 연장할 수 있습니다.<br /> 액세스 키가 외부에 노출되지 않도록 주의해 주세요.",
     "zh": "The access key is a unique ID for activating the WhaTap service.<br /> If the access key is no longer valid, service will be limited. The key can be renewed or extended through the channel inquiry in the upper right corner.",
     "service_id": "DSC07849"
@@ -54504,35 +54504,35 @@
   },
   "DSC07908": {
     "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
-    "ja": "- ラジオボタンの「Paste Public Key」を選択して、手順2で受信したRSA Public Keyを入力します。",
+    "ja": "- ラジオボタンの「Paste Public Key」を選択し、前の手順で受信したRSA Public Keyを入力します。",
     "ko": "- 라디오 버튼의 'Paste Public Key'를 선택하여 2단계에서 받은 RSA Public Key를 입력합니다. ",
     "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
     "service_id": "DSC07908"
   },
   "DSC07909": {
     "en": "- Once added, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
-    "ja": "- 追加完了時にユーザー、テナンシー情報を画面で確認できます。この情報をメモ帳にコピーします。",
+    "ja": "- 追加されたら、ユーザー、テナンシー情報を画面から確認できます。この情報をメモ帳にコピーします。",
     "ko": "- 추가 완료 시 user, tenancy 정보를 화면에서 확인할 수 있습니다. 이 정보를 메모장에 복사합니다.",
     "zh": "- Once added, user and tenancy information can be checked on the screen. Copy this information into Notepad.",
     "service_id": "DSC07909"
   },
   "DSC07910": {
     "en": "Optimized for the Amazon Web Services (AWS) cloud, Amazon Linux features seamless integration with AWS services and provides a secure, reliable, high-performance execution environment for running applications effortlessly on Amazon EC2.",
-    "ja": "アマゾンウェブサービス(AWS)のクラウドに最適化されたAmazon Linuxは、AWSサービスと簡単に統合できる特徴で、Amazon EC2上でアプリケーションをスムーズに実行できる安全で安定した高性能のOS環境を提供します。",
+    "ja": "AWSのクラウドに最適化されたAmazon Linuxは、AWSサービスとの統合性が特長になります。また、Amazon EC2上でアプリケーションを円滑に実行できるよう、セキュアで安定した高性能のOS環境を提供します。",
     "ko": "아마존 웹 서비스(AWS) 클라우드에 최적화된 아마존 리눅스는 AWS 서비스와의 긴밀한 통합을 특징으로 하며, Amazon EC2에서 애플리케이션을 원활하게 실행할 수 있도록 안전하고 안정적인 고성능의 실행 환경을 제공합니다.",
     "zh": "Optimized for the Amazon Web Services (AWS) cloud, Amazon Linux features seamless integration with AWS services and provides a secure, reliable, high-performance execution environment for running applications effortlessly on Amazon EC2.",
     "service_id": "DSC07910"
   },
   "DSC07911": {
     "en": "RHEL is Red Hat's flagship product designed for enterprise environments. It is reliable, supports a wide range of hardware and software, and is available through a paid subscription model. It offers security updates and professional support.",
-    "ja": "RHELは、エンタープライズ環境のために設計されたRed Hatの主力商品です。非常に安定しており、幅広いハードウェアとソフトウェアをサポートしており、有料サブスクリプション モデルで利用できます。セキュリティ アップデートと専門的なサポートを提供します。",
+    "ja": "RHELは、エンタープライズ環境のために設計されたRed Hatの主力商品です。安定的で、幅広いハードウェアとソフトウェアをサポートしており、有料サブスクリプション モデルとして利用できます。セキュリティ アップデートと専門的なサポートを提供します。",
     "ko": "RHEL은 기업 환경을 위해 설계된 Red Hat의 주력 상품입니다. 매우 안정적이며 광범위한 하드웨어와 소프트웨어를 지원하며, 유료 구독 모델을 통해 사용 가능합니다. 보안 업데이트 및 전문적인 지원을 제공합니다.",
     "zh": "RHEL is Red Hat's flagship product designed for enterprise environments. It is reliable, supports a wide range of hardware and software, and is available through a paid subscription model. It offers security updates and professional support.",
     "service_id": "DSC07911"
   },
   "DSC07912": {
     "en": "Fedora is a Red Hat sponsored community project and experimental distribution that incorporates the latest Linux technologies. It is the foundation for the next version of RHEL and is the first to support the latest hardware and software.",
-    "ja": "Fedoraは、レッドハットが支援するコミュニティー「Fedora Project」によって最新のLinux技術を統合する実験的なディストリビューションです。次期バージョンのRHELのベースとなり、最新のハードウェアとソフトウェア技術を最初にサポートします。",
+    "ja": "Fedoraは、RedHatがサポートするコミュニティー「Fedora Project」によって、最新のLinux技術を統合する実験的なディストリビューションです。次期バージョンのRHELのベースとなり、最新のハードウェアとソフトウェア技術を先にサポートします。",
     "ko": "Fedora는 Red Hat이 후원하는 커뮤니티 프로젝트로 최신 리눅스 기술을 통합하는 실험적인 배포판입니다. 다음 버전 RHEL의 기반이 되며, 최신 하드웨어와 소프트웨어 기술을 가장 먼저 지원합니다.",
     "zh": "Fedora is a Red Hat sponsored community project and experimental distribution that incorporates the latest Linux technologies. It is the foundation for the next version of RHEL and is the first to support the latest hardware and software.",
     "service_id": "DSC07912"
@@ -54546,7 +54546,7 @@
   },
   "DSC07914": {
     "en": "CentOS is based on RHEL and uses the same software packages as RHEL, but is a free version that excludes Red Hat's trademarks and logos. It recently transitioned to CentOS Stream, which serves as the parent project for RHEL development.",
-    "ja": "CentOSは、RHELをベースにRHELと同じソフトウェアパッケージからRed Hatの商標とロゴを除いて配布する無料ディストリビューションです。ただし、2020年12月からRHELのアップストリーム(開発版)であるCentOS Streamの開発にプロジェクトのフォーカスが変更されました。",
+    "ja": "CentOSは、RHELをベースにRHELと同じソフトウェアパッケージからRed Hatの商標とロゴを除いて配布する無料ディストリビューションです。2020年12月から、RHELのアップストリーム(開発版)であるCentOS Streamの開発にプロジェクトのフォーカスが変更されました。",
     "ko": "CentOS는 RHEL을 기반으로 RHEL과 동일한 소프트웨어 패키지를 사용하지만, Red Hat의 상표와 로고를 제외한 무료 버전입니다. 최근 CentOS Stream으로 전환되며 RHEL 개발의 상위 프로젝트 역할을 하게 되었습니다.",
     "zh": "CentOS is based on RHEL and uses the same software packages as RHEL, but is a free version that excludes Red Hat's trademarks and logos. It recently transitioned to CentOS Stream, which serves as the parent project for RHEL development.",
     "service_id": "DSC07914"
@@ -54574,7 +54574,7 @@
   },
   "DSC07918": {
     "en": "FREEBSD is a Unix-like operating system used for servers, desktops, and embedded systems. It is known for its robustness, BSD license, and direct descent from Unix through the Berkeley software distribution version.",
-    "ja": "FREEBSDは、サーバー、デスクトップ、組み込みシステムに使用される高い堅牢性とBSDライセンスのユニックス系OSです。Berkeley Software Distributionに由来したUNIXの直接的な子孫として知られています。",
+    "ja": "FreeBSDは、サーバー、デスクトップ、組み込みシステムに使用される高い堅牢性とBSDライセンスのユニックス系OSです。Berkeley Software Distributionに由来したUNIXの直接的な後継として知られています。",
     "ko": "FREEBSD는 서버, 데스크탑, 임베디드 시스템에 사용되는 유닉스 계열 운영 체제입니다. 견고함과 BSD 라이선스, 버클리 소프트웨어 배포판을 통한 유닉스의 직접적인 후손으로 알려져 있습니다.",
     "zh": "FREEBSD is a Unix-like operating system used for servers, desktops, and embedded systems. It is known for its robustness, BSD license, and direct descent from Unix through the Berkeley software distribution version.",
     "service_id": "DSC07918"
@@ -54588,21 +54588,21 @@
   },
   "DSC07920": {
     "en": "Developed by Microsoft, Windows Server is designed to meet a variety of server needs in corporate environments. The operating system is particularly suited for network management, database management, web service hosting, user management, and application hosting.",
-    "ja": "マイクロソフトが開発したWindowsサーバーは、エンタープライズ環境のさまざまなサーバー ニーズを満たすために設計されました。このOSは、特にネットワーク管理、データベース管理、ウェブサービスのホスティング、ユーザー管理、およびアプリケーションのホスティングに適しています。",
+    "ja": "Microsoftが開発したWindowsサーバーは、エンタープライズ環境のさまざまなサーバー ニーズを満たすために設計されました。このOSは、特にネットワーク管理、データベース管理、ウェブサービスのホスティング、ユーザー管理、およびアプリケーションのホスティングに適しています。",
     "ko": "마이크로소프트에서 개발한 윈도우 서버는 기업 환경의 다양한 서버 요구를 충족시키기 위해 설계되었습니다. 이 운영 체제는 특히 네트워크 관리, 데이터베이스 관리, 웹 서비스 호스팅, 사용자 관리 및 애플리케이션 호스팅에 적합합니다.",
     "zh": "Developed by Microsoft, Windows Server is designed to meet a variety of server needs in corporate environments. The operating system is particularly suited for network management, database management, web service hosting, user management, and application hosting.",
     "service_id": "DSC07920"
   },
   "DSC07921": {
     "en": "Solaris is a Unix operating system originally developed by Sun Microsystems and later acquired by Oracle. It is known for its scalability on SPARC systems, features such as ZFS and DTrace.",
-    "ja": "Solarisは、サン・マイクロシステムズが開発され、Oracleに買収されたUnix系OSです。このOSは、SPARCシステムにおける拡張性、ZFS、DTraceといった機能で知られています。",
+    "ja": "Solarisは、Sun Microsystemsから開発され、Oracleに買収されたUnix系OSです。このOSは、SPARCシステムにおける拡張性、ZFS、DTraceといった機能で知られています。",
     "ko": "솔라리스는 원래 선 마이크로시스템즈에 의해 개발되었고, 후에 오라클에 의해 인수된 유닉스 운영 체제입니다. 이 운영 체제는 SPARC 시스템에서의 확장성, ZFS, DTrace와 같은 기능으로 알려져 있습니다.",
     "zh": "Solaris is a Unix operating system originally developed by Sun Microsystems and later acquired by Oracle. It is known for its scalability on SPARC systems, features such as ZFS and DTrace.",
     "service_id": "DSC07921"
   },
   "DSC07922": {
     "en": "It is used in enterprise server environments where it has strong corporate fandom, especially in Europe. It is known as the YaST configuration tool and comes with a community edition, openSUSE, and an enterprise edition of Linux.",
-    "ja": "SUSEは、ヨーロッパの企業から強力なサポートを受けているエンタープライズ サーバー環境で使用されています。YaSTの構成ツールとして知られており、コミュニティエディションであるopenSUSEとLinuxエンタープライズバージョンを提供しています。",
+    "ja": "SUSEは、ヨーロッパの企業から強力な支持を受けているエンタープライズ サーバー環境で使用されています。YaSTの構成ツールとして知られており、コミュニティエディションであるopenSUSEとLinuxエンタープライズバージョンを提供しています。",
     "ko": "수세는 특히 유럽에서 강력한 기업 지원을 받고 있는 엔터프라이즈 서버 환경에서 사용됩니다. YaST 구성 도구로 알려져 있으며, 커뮤니티 에디션인 openSUSE와 리눅스 엔터프라이즈 버전을 함께 제공합니다.",
     "zh": "It is used in enterprise server environments where it has strong corporate fandom, especially in Europe. It is known as the YaST configuration tool and comes with a community edition, openSUSE, and an enterprise edition of Linux.",
     "service_id": "DSC07922"
@@ -54616,7 +54616,7 @@
   },
   "NTC07924": {
     "en": "The project has been created.",
-    "ja": "プロジェクトが作成されました。",
+    "ja": "プロジェクトを作成しました。",
     "ko": "프로젝트가 생성되었습니다.",
     "zh": "The project has been created.",
     "service_id": "NTC07924"
@@ -54658,7 +54658,7 @@
   },
   "DSC07930": {
     "en": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
-    "ja": "追加/修正/コピーしたURLがリストに反映されますが、約1分の時間がかかります。",
+    "ja": "追加/修正/コピーしたURLがリストに反映されるまで1分程の時間がかかります。",
     "ko": "추가/수정/복사한 URL이 목록에 반영되는데, 약 1분의 시간이 소요됩니다.",
     "zh": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
     "service_id": "DSC07930"
@@ -54707,7 +54707,7 @@
   },
   "NTC07937": {
     "en": "You must select a time earlier than the start time of the reference time.",
-    "ja": "基準時刻の開始時刻より前の時刻を選択する必要があります。",
+    "ja": "基準時間の開始時刻より前の時刻を選択する必要があります。",
     "ko": "기준 시간의 시작 시간보다 이전의 시간을 선택해야합니다.",
     "zh": "You must select a time earlier than the start time of the reference time.",
     "service_id": "NTC07937"
@@ -54721,7 +54721,7 @@
   },
   "DSC07939": {
     "en": "Applies the current sub-chart settings to all widgets in the group.",
-    "ja": "現在の補助チャートの設定値をグループ内のすべてのウィジェットに同じように適用します。",
+    "ja": "現在の補助チャートの設定値をグループ内のすべてのウィジェットに同じく適用します。",
     "ko": "현재의 보조 차트 설정값을 그룹 내 모든 위젯에 동일하게 적용합니다.",
     "zh": "Applies the current sub-chart settings to all widgets in the group.",
     "service_id": "DSC07939"
@@ -54735,7 +54735,7 @@
   },
   "BTN07941": {
     "en": "Except Project Information",
-    "ja": "プロジェクト情報なし",
+    "ja": "プロジェクト情報を含まない",
     "ko": "프로젝트 정보 미포함",
     "zh": "Except project information",
     "service_id": "BTN07941"
@@ -54749,14 +54749,14 @@
   },
   "TTL07943": {
     "en": "Precautions before installation",
-    "ja": "設置前の注意事項",
+    "ja": "インストール前の注意事項",
     "ko": "설치 전 유의사항",
     "zh": "Precautions before installation",
     "service_id": "TTL07943"
   },
   "TTL07944": {
     "en": "Additional installation of application monitoring",
-    "ja": "アプリケーション監視の追加インストール",
+    "ja": "Application Monitoringの追加インストール",
     "ko": "애플리케이션 모니터링 추가 설치",
     "zh": "Additional installation of application monitoring",
     "service_id": "TTL07944"
@@ -54798,7 +54798,7 @@
   },
   "TTL07950": {
     "en": "Chooose a Kubernetes version.",
-    "ja": "クバネティスのバージョンを選択してください。",
+    "ja": "Kubernetesのバージョンを選択してください。",
     "ko": "쿠버네티스 버전을 선택하세요.",
     "zh": "Chooose a Kubernetes version.",
     "service_id": "TTL07950"
@@ -54854,7 +54854,7 @@
   },
   "DSC07958": {
     "en": "You can easily monitor the availability and performance of the cluster by collecting kube-apiserver's health and performance metrics through the kube-apiserver dashboard menu, tracking kube-apiserver's response time, throughput, request failures, etc.",
-    "ja": "kube-apiserverダッシュボードメニューを使用すると、kube-apiserverのステータスとパフォーマンスメトリックを収集して、kube-apiserverの応答時間、スループット、要求の失敗などを追跡して、クラスタの可用性とパフォーマンスを簡単に監視できます。",
+    "ja": "kube-apiserverダッシュボードメニューを通じてkube-apiserverのステータスとパフォーマンスメトリックが照会できます。kube-apiserverの応答時間、スループット、リクエスト失敗などをトレースして、クラスタの可用性とパフォーマンスを容易に監視できます。",
     "ko": "kube-apiserver 대시보드 메뉴를 통해 kube-apiserver의 상태와 성능 메트릭을 수집하여 kube-apiserver의 응답 시간, 처리량, 요청 실패 등을 추적해 클러스터의 가용성과 성능을 쉽게 모니터링할 수 있습니다.",
     "zh": "You can easily monitor the availability and performance of the cluster by collecting kube-apiserver's health and performance metrics through the kube-apiserver dashboard menu, tracking kube-apiserver's response time, throughput, request failures, etc.",
     "service_id": "DSC07958"
@@ -54868,28 +54868,28 @@
   },
   "TTL07960": {
     "en": "Installation method",
-    "ja": "設置方法",
+    "ja": "インストール方法",
     "ko": "설치 방식",
     "zh": "Installation method",
     "service_id": "TTL07960"
   },
   "TTL07961": {
     "en": "Kubernetes version",
-    "ja": "クバネティス版",
+    "ja": "Kubernetesバージョン",
     "ko": "쿠버네티스 버전",
     "zh": "Kubernetes version",
     "service_id": "TTL07961"
   },
   "TTL07962": {
-    "en": "container runtime",
+    "en": "Container Runtime",
     "ja": "コンテナランタイム",
     "ko": "컨테이너 런타임",
-    "zh": "container runtime",
+    "zh": "Container Runtime",
     "service_id": "TTL07962"
   },
   "DSC07963": {
     "en": "Clicking the Download Installation Files button will download a total of {number} files as follows:",
-    "ja": "[インストールファイルのダウンロード]ボタンをクリックすると、次のように合計{number}個のファイルがダウンロードされます。",
+    "ja": "[インストールファイルのダウンロード]ボタンをクリックすると、次のように合計{number}件のファイルがダウンロードされます。",
     "ko": "설치 파일 다운로드 버튼을 클릭하면 다음과 같이 총 {number} 개의 파일을 다운로드합니다.",
     "zh": "Clicking the Download Installation Files button will download a total of {number} files as follows:",
     "service_id": "DSC07963"
@@ -54903,28 +54903,28 @@
   },
   "DSC07965": {
     "en": "If you are installing the agent for the first time, run the following command to install the agent application.",
-    "ja": "エージェントを初めてインストールするユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールします。",
+    "ja": "エージェントを初めてインストールするユーザーは、次のコマンドを実行してエージェントプログラムをインストールします。",
     "ko": "에이전트를 처음 설치하는 사용자는 다음 명령어를 실행해 에이전트 애플리케이션을 설치하세요.",
     "zh": "If you are installing the agent for the first time, run the following command to install the agent application.",
     "service_id": "DSC07965"
   },
   "DSC07966": {
     "en": "Please select if there are additional features you would like to apply. As more features are added, the amount of data collected and agent usage can increase. Even after installation, you can enable/disable the feature through agent settings.",
-    "ja": "追加の適用を希望する機能がある場合は選択してください。追加された機能が多いほど、収集データ量とエージェント使用量が増加する可能性があります。インストールが完了した後でも、エージェント設定を使用して機能を有効/無効にできます。",
+    "ja": "追加したい機能がある場合は選択してください。追加された機能が多いほど、収集データ量とエージェント使用量が増加する可能性があります。インストールが完了した後でも、エージェント設定を通じて機能を有効/無効にできます。",
     "ko": "추가 적용을 원하는 기능이 있다면 선택해 주세요. 추가된 기능이 많을수록 수집 데이터량과 에이전트 사용량이 증가할 수 있습니다. 설치가 끝난 후에도 에이전트 설정을 통해 기능을 활성화/비활성화할 수 있습니다.",
     "zh": "Please select if there are additional features you would like to apply. As more features are added, the amount of data collected and agent usage can increase. Even after installation, you can enable/disable the feature through agent settings.",
     "service_id": "DSC07966"
   },
   "DSC07967": {
-    "en": "If you are an existing WhaTap Kubernetes agent user, run the following command to install the agent.",
+    "en": "If you are a WhaTap Kubernetes user, run the following command to install the agent.",
     "ja": "既存のWhaTap Kubernetesエージェントのユーザーは、次のコマンドを実行してエージェントをインストールします。",
     "ko": "기존 와탭 쿠버네티스 에이전트 사용자는 다음 명령어를 실행해 에이전트를 설치하세요.",
-    "zh": "If you are an existing WhaTap Kubernetes agent user, run the following command to install the agent.",
+    "zh": "If you are a WhaTap Kubernetes user, run the following command to install the agent.",
     "service_id": "DSC07967"
   },
   "DSC07968": {
     "en": "After creating a user cluster, run the following command to set permissions.",
-    "ja": "ユーザークラスタの作成後に権限を設定するには、次のコマンドを実行します。",
+    "ja": "ユーザークラスタ作成後、権限を設定するために次のコマンドを実行します。",
     "ko": "사용자 클러스터 생성 후 권한 설정을 위해 다음 명령을 실행하세요.",
     "zh": "After creating a user cluster, run the following command to set permissions.",
     "service_id": "DSC07968"
@@ -54938,16 +54938,16 @@
   },
   "DSC07970": {
     "en": "This is an OpenShift component YAML file that must be additionally created by the user when using OpenShift.",
-    "ja": "OpenShiftを使用するときに追加で作成する必要があるOpenShiftコンポーネントYAMLファイル。",
+    "ja": "OpenShiftを使用する時、追加で作成する必要があるOpenShiftコンポーネントYAMLファイルです。",
     "ko": "OpenShift 사용 시 추가로 사용자가 생성해야 하는 OpenShift 컴포넌트 YAML 파일입니다.",
     "zh": "This is an OpenShift component YAML file that must be additionally created by the user when using OpenShift.",
     "service_id": "DSC07970"
   },
   "DSC07971": {
-    "en": "If you installed the WhaTap Kubernetes agent using the existing yaml file method, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible through the helm chart.",
-    "ja": "既存のyamlファイルでWhaTap Kubernetesエージェントをインストールした場合は、Clean Installが必要です。既存のKubernetesエージェントを削除した後、helmチャートを介してインストールできます。",
+    "en": "If you installed the WhaTap Kubernetes agent using the traditional yaml file method, a clean install is required. You can delete the existing Kubernetes agent and install via Helm chart.",
+    "ja": "既存のyamlファイルでWhaTap Kubernetesエージェントをインストールした場合は、Clean Installが必要です。既存のKubernetesエージェントを削除した後、helmチャートを通じてインストールできます。",
     "ko": "기존 yaml 파일 방식으로 와탭 쿠버네티스 에이전트를 설치한 경우 Clean Install이 필요합니다. 기존 쿠버네티스 에이전트 삭제 후 helm 차트를 통한 설치가 가능합니다.",
-    "zh": "If you installed the WhaTap Kubernetes agent using the existing yaml file method, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible through the helm chart.",
+    "zh": "If you installed the WhaTap Kubernetes agent using the traditional yaml file method, a clean install is required. You can delete the existing Kubernetes agent and install via Helm chart.",
     "service_id": "DSC07971"
   },
   "DSC07972": {
@@ -54958,17 +54958,17 @@
     "service_id": "DSC07972"
   },
   "DSC07973": {
-    "en": "If you install WhaTap application monitoring, integrated analysis from containers to applications is possible.",
-    "ja": "ワタップアプリケーション監視をインストールすると、コンテナからアプリケーションまでの統合分析が可能になります。",
+    "en": "If you install WhaTap application monitoring, integrated analysis of containers and applications is possible.",
+    "ja": "Application Monitoringをインストールすると、コンテナからアプリケーションまでの統合分析が可能になります。",
     "ko": "와탭 애플리케이션 모니터링을 설치할 경우 컨테이너에서 애플리케이션까지의 통합 분석이 가능합니다.",
-    "zh": "If you install WhaTap application monitoring, integrated analysis from containers to applications is possible.",
+    "zh": "If you install WhaTap application monitoring, integrated analysis of containers and applications is possible.",
     "service_id": "DSC07973"
   },
   "DSC07974": {
-    "en": "You can track the three-level correlation of container level, service level, and transaction level in the MSA environment, and visually check the call relationships between Pods, containers, and services. Additionally, by integrating metrics-trace-log information for observability, quick cause analysis and action are possible when a problem occurs.",
-    "ja": "MSA環境のコンテナレベル、サービスレベル、トランザクションレベルの3段階の相関関係を追跡し、Pod、コンテナ、サービス間の呼び出し関係を視覚的に確認できます。また、オブザーバビリティのためのメトリックス - トレース - ログ情報を統合することで、問題が発生した場合の迅速な原因分析と対策が可能になります。",
+    "en": "You can track the three-level correlation of container level, service level, and transaction level in the MSA environment, and visually check the call relationships between pods, containers, and services. Additionally, by integrating metrics-trace-log information for observability, quick cause analysis and action are possible when a problem occurs.",
+    "ja": "MSA環境のコンテナ、サービス、トランザクションの3階層の相関関係をトレースし、Pod ‐ コンテナ ‐ サービス間の呼び出し関係を可視化することができます。また、オブザーバビリティの主要要素のメトリクス - トレース - ログ情報を統合することで、問題が発生した際の迅速な原因分析と対策が可能になります。",
     "ko": "MSA 환경의 컨테이너 레벨, 서비스 레벨, 트랜잭션 레벨 3단계 상관관계를 추적하고, Pod, 컨테이너, 서비스 간의 호출 관계를 시각적으로 확인할 수 있습니다. 또한 옵저버빌리티를 위한 메트릭스-트레이스-로그 정보를 통합하여 문제 발생 시 빠른 원인 분석 및 조치가 가능합니다.",
-    "zh": "You can track the three-level correlation of container level, service level, and transaction level in the MSA environment, and visually check the call relationships between Pods, containers, and services. Additionally, by integrating metrics-trace-log information for observability, quick cause analysis and action are possible when a problem occurs.",
+    "zh": "You can track the three-level correlation of container level, service level, and transaction level in the MSA environment, and visually check the call relationships between pods, containers, and services. Additionally, by integrating metrics-trace-log information for observability, quick cause analysis and action are possible when a problem occurs.",
     "service_id": "DSC07974"
   },
   "TTL07975": {
@@ -54980,21 +54980,21 @@
   },
   "DSC07976": {
     "en": "Quickly identify and analyze the status of real-time applications.",
-    "ja": "リアルタイムアプリケーションの現状をすばやく把握して分析します。",
+    "ja": "アプリケーションの現状をリアルタイムに把握して分析します。",
     "ko": "실시간 애플리케이션의 현황을 빠르게 파악하고 분석합니다.",
     "zh": "Quickly identify and analyze the status of real-time applications.",
     "service_id": "DSC07976"
   },
   "DSC07977": {
-    "en": "Check real-time transaction and application indicator status on one screen",
-    "ja": "リアルタイムトランザクションとアプリケーション指標の状況を1画面で確認する",
+    "en": "Check real-time transaction and application indicator on one screen",
+    "ja": "トランザクションと、アプリケーション指標の状況をリアルタイムで一つの画面で確認します。",
     "ko": "실시간 트랜잭션 및 애플리케이션 지표 현황을 한 화면에서 확인",
-    "zh": "Check real-time transaction and application indicator status on one screen",
+    "zh": "Check real-time transaction and application indicator on one screen",
     "service_id": "DSC07977"
   },
   "DSC07978": {
     "en": "Intuitive service status check",
-    "ja": "直感的なサービス状態の確認",
+    "ja": "サービス状態を分かりやすく確認",
     "ko": "직관적인 서비스 상태 확인",
     "zh": "Intuitive service status check",
     "service_id": "DSC07978"
@@ -55007,24 +55007,24 @@
     "service_id": "TTL07979"
   },
   "DSC07980": {
-    "en": "Transaction Performance Deep Dive!",
-    "ja": "トランザクションパフォーマンス Deep Dive!",
+    "en": "Transaction performance deep dive!",
+    "ja": "トランザクションパフォーマンスのDeep Dive!",
     "ko": "트랜잭션 성능 Deep Dive!",
-    "zh": "Transaction Performance Deep Dive!",
+    "zh": "Transaction performance deep dive!",
     "service_id": "DSC07980"
   },
   "DSC07981": {
     "en": "Provides SQL and HTTP Call as well as WhaTap’s unique “Active Stack” function",
-    "ja": "SQL、HTTP Callはもちろん、ワタップだけの「アクティブスタック」機能を提供",
+    "ja": "SQL、HTTP呼出しはもちろん、WhaTapならではの「アクティブスタック」機能を提供",
     "ko": "SQL, HTTP Call은 물론 와탭만의 “액티브 스택” 기능 제공",
     "zh": "Provides SQL and HTTP Call as well as WhaTap’s unique “Active Stack” function",
     "service_id": "DSC07981"
   },
   "DSC07982": {
-    "en": "Method level analysis possible without cumbersome profile settings",
-    "ja": "面倒なプロファイル設定なしでメソッドレベルの分析が可能",
+    "en": "Method-level analysis without cumbersome profile setup",
+    "ja": "煩わしいプロファイル設定がなくても、メソッドレベルの分析が可能",
     "ko": "번거로운 프로파일 설정 없이 Method 레벨 분석 가능",
-    "zh": "Method level analysis possible without cumbersome profile settings",
+    "zh": "Method-level analysis without cumbersome profile setup",
     "service_id": "DSC07982"
   },
   "TTL07983": {
@@ -55036,23 +55036,23 @@
   },
   "DSC07984": {
     "en": "View complex call relationships between applications in a microservice structure at a glance.",
-    "ja": "マイクロサービス構造のアプリケーション間の複雑な呼び出し関係を一目で確認します。",
+    "ja": "マイクロサービス構造のアプリケーション間の複雑な呼び出し関係をひと目で確認します。",
     "ko": "마이크로 서비스 구조의 애플리케이션 간 복잡한 호출 관계를 한눈에 확인합니다.",
     "zh": "View complex call relationships between applications in a microservice structure at a glance.",
     "service_id": "DSC07984"
   },
   "DSC07985": {
     "en": "Visualize call proportion based on transaction URL",
-    "ja": "トランザクションURLに基​​づいて呼び出し比率を視覚化",
+    "ja": "トランザクションURLに基​​づいて呼び出し比率を可視化します。",
     "ko": "트랜잭션 URL 기준으로 호출 비중을 시각화",
     "zh": "Visualize call proportion based on transaction URL",
     "service_id": "DSC07985"
   },
   "DSC07986": {
-    "en": "Statistically view changes in call relationships and proportions that change at each point in time",
-    "ja": "視点ごとに変化する呼び出し関係と比重の変化を統計的に眺める",
+    "en": "Statistical view of changing call relationships and proportion over time",
+    "ja": "観点ことに変化する呼出し関係と比率を、統計的に表示します。",
     "ko": "시점별로 변화하는 호출 관계와 비중의 변화를 통계적으로 조망",
-    "zh": "Statistically view changes in call relationships and proportions that change at each point in time",
+    "zh": "Statistical view of changing call relationships and proportion over time",
     "service_id": "DSC07986"
   },
   "TTL07987": {
@@ -55063,31 +55063,31 @@
     "service_id": "TTL07987"
   },
   "DSC07988": {
-    "en": "Compare and analyze status inquiries and performance data of containerized applications and associated resources.",
-    "ja": "コンテナ化されたアプリケーションと関連リソースの状態ルックアップとパフォーマンスデータを比較分析します。",
+    "en": "Compare and analyze status views and performance data for containerized applications and their associated resources.",
+    "ja": "コンテナ化されたアプリケーション、関連リソースの状態照会と性能データを比較分析します。",
     "ko": "컨테이너화된 애플리케이션과 연관 리소스의 상태 조회 및 성능 데이터를 비교 분석합니다.",
-    "zh": "Compare and analyze status inquiries and performance data of containerized applications and associated resources.",
+    "zh": "Compare and analyze status views and performance data for containerized applications and their associated resources.",
     "service_id": "DSC07988"
   },
   "DSC07989": {
-    "en": "Check target status for each component such as container, pod, node, etc., focusing on the application",
-    "ja": "アプリケーションを中心にコンテナ、Pod、ノードなどのコンポーネント別の対象状況を確認",
+    "en": "Check status of each component such as container, pod, node, etc., focusing on the application",
+    "ja": "アプリケーションを中心にコンテナ、Pod、ノードなどのコンポーネント別の対象状況を確認します。",
     "ko": "애플리케이션을 중심으로 컨테이너, Pod, 노드 등의 구성 요소별 대상 현황 확인",
-    "zh": "Check target status for each component such as container, pod, node, etc., focusing on the application",
+    "zh": "Check status of each component such as container, pod, node, etc., focusing on the application",
     "service_id": "DSC07989"
   },
   "DSC07990": {
-    "en": "Detailed monitoring of Kubernetes through comparative analysis of performance data",
-    "ja": "性能データの比較分析によるクバネティス詳細モニタリング",
+    "en": "In depth monitoring of Kubernetes through comparative analysis of performance data",
+    "ja": "性能データの比較分析により、Kubernetes詳細をモニタリングします。",
     "ko": "성능 데이터의 비교 분석을 통한 쿠버네티스 상세 모니터링",
-    "zh": "Detailed monitoring of Kubernetes through comparative analysis of performance data",
+    "zh": "In depth monitoring of Kubernetes through comparative analysis of performance data",
     "service_id": "DSC07990"
   },
   "DSC07991": {
-    "en": "hello.",
+    "en": "Hello.",
     "ja": "こんにちは。",
     "ko": "안녕하세요.",
-    "zh": "hello.",
+    "zh": "Hello.",
     "service_id": "DSC07991"
   },
   "DSC07992": {
@@ -55105,14 +55105,14 @@
     "service_id": "DSC07993"
   },
   "DSC07994": {
-    "en": "Introducing the main menu to further utilize Kubernetes monitoring.",
-    "ja": "クーバーネティスモニタリングをさらに確かめるためのメインメニューをご紹介します。",
+    "en": "Introducing the main menu to facilitate further utilization of Kubernetes monitoring.",
+    "ja": "Kubernetes Monitoringがより活用できるよう、主な機能を紹介します。",
     "ko": "쿠버네티스 모니터링을 더욱 확용하기 위한 주요 메뉴를 소개합니다.",
-    "zh": "Introducing the main menu to further utilize Kubernetes monitoring.",
+    "zh": "Introducing the main menu to facilitate further utilization of Kubernetes monitoring.",
     "service_id": "DSC07994"
   },
   "TTL07995": {
-    "en": "Container Map",
+    "en": "Container map",
     "ja": "コンテナマップ",
     "ko": "컨테이너 맵",
     "zh": "Container Map",
@@ -55120,65 +55120,65 @@
   },
   "DSC07996": {
     "en": "See the health and performance of large-scale Kubernetes at a glance through multidimensional visualization.",
-    "ja": "多次元可視化により、大規模なクーバーネティスの状態と性能を一目で確認します。",
+    "ja": "多次元の可視化により、大規模Kubernetesの状態と性能をひと目で確認します。",
     "ko": "다차원 시각화를 통해 대규모 쿠버네티스의 상태 및 성능을 한눈에 확인합니다.",
     "zh": "See the health and performance of large-scale Kubernetes at a glance through multidimensional visualization.",
     "service_id": "DSC07996"
   },
   "DSC07997": {
-    "en": "Integrated inquiry of metrics, traces, logs, and event information",
-    "ja": "メトリクス、トレース、ログ、イベント情報の統合照会",
+    "en": " Look up metrics, traces, logs, and event information integrated at once",
+    "ja": "メトリクス、トレース、ログ、イベント情報を統合して照会します。",
     "ko": "메트릭스, 트레이스, 로그, 이벤트 정보의 통합 조회",
-    "zh": "Integrated inquiry of metrics, traces, logs, and event information",
+    "zh": " Look up metrics, traces, logs, and event information integrated at once",
     "service_id": "DSC07997"
   },
   "DSC07998": {
     "en": "Various visualization options including grouping, filtering, etc.",
-    "ja": "グループ化、フィルタリングなど、さまざまな可視化オプション",
+    "ja": "グループ化、フィルタリングなど、さまざまな可視化オプションを提供します。",
     "ko": "그룹화, 필터링 등 다양한 시각화 옵션",
     "zh": "Various visualization options including grouping, filtering, etc.",
     "service_id": "DSC07998"
   },
   "DSC07999": {
-    "en": "Intuitive status check and quick cause tracking",
-    "ja": "直感的な状態確認と迅速な原因追跡",
+    "en": "Intuitive status analysis and quick cause tracking",
+    "ja": "容易な状態確認と迅速な原因追跡が可能です。",
     "ko": "직관적인 상태 확인과 신속한 원인 추적",
-    "zh": "Intuitive status check and quick cause tracking",
+    "zh": "Intuitive status analysis and quick cause tracking",
     "service_id": "DSC07999"
   },
   "TTL08000": {
-    "en": "Resource Performance List",
-    "ja": "リソースパフォーマンスリスト",
+    "en": "Resource performance list",
+    "ja": "リソース性能リスト",
     "ko": "리소스 성능 목록",
-    "zh": "Resource Performance List",
+    "zh": "Resource performance list",
     "service_id": "TTL08000"
   },
   "DSC08001": {
-    "en": "Compare and analyze status inquiries and performance data for each Kubernetes core component.",
-    "ja": "キューバネティスのコアコンポーネントごとのステータスルックアップとパフォーマンスデータを比較分析します。",
+    "en": "Compare and analyze status and performance data of each Kubernetes core component.",
+    "ja": "Kubernetesの主要コンポーネントごとの状態照会と、性能データを比較分析します。",
     "ko": "쿠버네티스 핵심 구성 요소별 상태 조회 및 성능 데이터를 비교 분석합니다.",
-    "zh": "Compare and analyze status inquiries and performance data for each Kubernetes core component.",
+    "zh": "Compare and analyze status and performance data of each Kubernetes core component.",
     "service_id": "DSC08001"
   },
   "DSC08002": {
-    "en": "Check target status for each component such as container, pod, node, application, etc.",
-    "ja": "コンテナ、Pod、ノード、アプリケーションなどのコンポーネント別のターゲット状況を確認する",
+    "en": "Check target status of each component such as container, pod, node, application, etc.",
+    "ja": "コンテナ、Pod、ノード、アプリケーションなどのコンポーネント別の状況を確認します。",
     "ko": "컨테이너, Pod, 노드, 애플리케이션 등의 구성 요소별 대상 현황 확인",
-    "zh": "Check target status for each component such as container, pod, node, application, etc.",
+    "zh": "Check target status of each component such as container, pod, node, application, etc.",
     "service_id": "DSC08002"
   },
   "DSC08003": {
     "en": "Detailed monitoring of Kubernetes through comparative analysis of performance data",
-    "ja": "性能データの比較分析によるクバネティス詳細モニタリング",
+    "ja": "性能データの比較分析によるKubernetes詳細のモニタリング",
     "ko": "성능 데이터의 비교 분석을 통한 쿠버네티스 상세 모니터링",
     "zh": "Detailed monitoring of Kubernetes through comparative analysis of performance data",
     "service_id": "DSC08003"
   },
   "DSC08004": {
-    "en": "Detailed analysis through linkage between components",
+    "en": "Detailed analysis based on components linkage",
     "ja": "コンポーネント間の連携による詳細分析",
     "ko": "구성 요소 간의 연계를 통한 상세 분석",
-    "zh": "Detailed analysis through linkage between components",
+    "zh": "Detailed analysis based on components linkage",
     "service_id": "DSC08004"
   },
   "TTL08005": {
@@ -55190,28 +55190,28 @@
   },
   "DSC08006": {
     "en": "Quickly and easily track changes in your cluster on the screen without executing commands.",
-    "ja": "コマンドを実行せずに画面上のクラスターの変化をすばやく簡単に追跡します。",
+    "ja": "コマンドを実行せず、画面上のクラスターの変化を簡単に確認します。",
     "ko": "명령어 실행 없이 화면에서 클러스터의 변화를 빠르고 쉽게 추적합니다.",
     "zh": "Quickly and easily track changes in your cluster on the screen without executing commands.",
     "service_id": "DSC08006"
   },
   "DSC08007": {
     "en": "Automatically saves manifests of cluster core objects",
-    "ja": "クラスタコアオブジェクトのマニフェストを自動的に保存",
+    "ja": "クラスタの主要オブジェクトのマニフェストを自動的に保存します。",
     "ko": "클러스터 핵심 오브젝트의 매니페스트를 자동으로 저장",
     "zh": "Automatically saves manifests of cluster core objects",
     "service_id": "DSC08007"
   },
   "DSC08008": {
     "en": "Check the manifest of each object from the past",
-    "ja": "過去時点のオブジェクト別マニフェストを確認",
+    "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
     "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
     "en": "Comparison between manifests at different times",
-    "ja": "異なる時点のマニフェスト間の比較",
+    "ja": "異なる時点のマニフェスト間を比較します。",
     "ko": "서로 다른 시점의 매니페스트간의 비교",
     "zh": "Comparison between manifests at different times",
     "service_id": "DSC08009"
@@ -55225,21 +55225,21 @@
   },
   "DSC08011": {
     "en": "Enhance Kubernetes stability through control plane monitoring.",
-    "ja": "コントロールプレーンモニタリングにより、クバネティスの安定性を強化します。",
+    "ja": "コントロールプレーンをモニタリングして、Kubernetesの安定性を強化します。",
     "ko": "컨트롤 플레인 모니터링을 통해 쿠버네티스 안정성을 강화합니다.",
     "zh": "Enhance Kubernetes stability through control plane monitoring.",
     "service_id": "DSC08011"
   },
   "DSC08012": {
     "en": "Control plane monitoring that manages worker nodes and pods within the cluster",
-    "ja": "クラスタ内のワーカーノードとPodを管理するコントロールプレーンの監視",
+    "ja": "クラスタ内のワーカーノードとPodを管理するコントロールプレーンを監視します。",
     "ko": "클러스터 내 워커 노드와 Pod를 관리하는 컨트롤 플레인 모니터링",
     "zh": "Control plane monitoring that manages worker nodes and pods within the cluster",
     "service_id": "DSC08012"
   },
   "DSC08013": {
     "en": "Detailed monitoring of each control plane component",
-    "ja": "コントロールプレーンコンポーネントによる詳細モニタリング",
+    "ja": "コントロールプレーンのコンポーネント別の詳細を監視します。",
     "ko": "컨트롤 플레인 컴포넌트별 상세 모니터링",
     "zh": "Detailed monitoring of each control plane component",
     "service_id": "DSC08013"
@@ -55253,14 +55253,14 @@
   },
   "DSC08015": {
     "en": "If the Kubernetes agent installation is completed successfully, you can check the status of the master agent and node agent by running the following command.",
-    "ja": "キューバネティスエージェントのインストールが正常に完了したら、次のコマンドを実行してマスターエージェントとノードエージェントの状態を確認できます。",
+    "ja": "Kubernetesエージェントのインストールが正常に完了すると、次のコマンドを実行してマスターエージェントとノードエージェントの状態が確認できます。",
     "ko": "쿠버네티스 에이전트 설치가 정상적으로 완료되었을 경우 다음 명령어를 실행해 마스터 에이전트와 노드 에이전트의 상태를 확인할 수 있습니다.",
     "zh": "If the Kubernetes agent installation is completed successfully, you can check the status of the master agent and node agent by running the following command.",
     "service_id": "DSC08015"
   },
   "TTL08016": {
     "en": "When in Running state",
-    "ja": "Running 状態の場合",
+    "ja": "Running状態の場合",
     "ko": "Running 상태인 경우",
     "zh": "When in Running state",
     "service_id": "TTL08016"
@@ -55274,7 +55274,7 @@
   },
   "TTL08018": {
     "en": "Supported products",
-    "ja": "サポート製品",
+    "ja": "対応製品",
     "ko": "지원 제품",
     "zh": "Supported products",
     "service_id": "TTL08018"
@@ -55287,10 +55287,10 @@
     "service_id": "LNK08019"
   },
   "DSC08020": {
-    "en": "Select the agent operating system to install.",
-    "ja": "インストールするエージェントオペレーティングシステムを選択してください。",
+    "en": "Select the agent OS to install.",
+    "ja": "インストールするエージェントのOSを選択してください。",
     "ko": "설치할 에이전트 운영체제를 선택하세요.",
-    "zh": "Select the agent operating system to install.",
+    "zh": "Select the agent OS to install.",
     "service_id": "DSC08020"
   },
   "BTN08021": {
@@ -55299,6 +55299,41 @@
     "ko": "생성하기",
     "zh": "Create",
     "service_id": "BTN08021"
+  },
+  "TTL08022": {
+    "en": "company information",
+    "ja": "企業情報",
+    "ko": "회사 정보",
+    "zh": "company information",
+    "service_id": "TTL08022"
+  },
+  "DSC08023": {
+    "en": "Helm {version} version or higher is supported.",
+    "ja": "Helm {version} バージョン以降に対応します。",
+    "ko": "Helm {version} 버전 이상을 지원합니다.",
+    "zh": "Helm {version} version or higher is supported.",
+    "service_id": "DSC08023"
+  },
+  "TLT08024": {
+    "en": "You can enter a description of up to {maxLength} characters.",
+    "ja": "最大{maxLength}文字まで入力できます。",
+    "ko": "최대 {maxLength}자의 설명을 입력할 수 있습니다.",
+    "zh": "You can enter a description of up to {maxLength} characters.",
+    "service_id": "TLT08024"
+  },
+  "ITM08025": {
+    "en": "Reference",
+    "ja": "基準",
+    "ko": "기준",
+    "zh": "Reference",
+    "service_id": "ITM08025"
+  },
+  "ITM08026": {
+    "en": "Comparison",
+    "ja": "比較",
+    "ko": "비교",
+    "zh": "Comparison",
+    "service_id": "ITM08026"
   },
   "": {
     "en": "#VALUE!",
