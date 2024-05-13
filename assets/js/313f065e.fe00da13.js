@@ -74,6 +74,10 @@ const toc = [{
   "id": "--",
   "level": 4
 }, {
+  "value": "User Interface",
+  "id": "user-interface",
+  "level": 4
+}, {
   "value": "<code>Application</code>",
   "id": "application",
   "level": 3
@@ -319,6 +323,13 @@ function _createMdxContent(props) {
               }), " 스타일의 여백 제거 및 텍스트 분량에 따라 스크롤이 자동 노출되도록 변경"]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "user-interface",
+          children: "User Interface"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " 다크 테마의 일부 색상 변경"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "application",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
