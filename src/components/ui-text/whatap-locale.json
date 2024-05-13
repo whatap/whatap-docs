@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55334,6 +55334,27 @@
     "ko": "비교",
     "zh": "Comparison",
     "service_id": "ITM08026"
+  },
+  "ITM08027": {
+    "en": "Hour",
+    "ja": "時間",
+    "ko": "시간",
+    "zh": "Hour",
+    "service_id": "ITM08027"
+  },
+  "BTN08028": {
+    "en": "Choose your operating system",
+    "ja": "オペレーティングシステムの選択",
+    "ko": "운영체제 선택",
+    "zh": "Choose your operating system",
+    "service_id": "BTN08028"
+  },
+  "TTL08029": {
+    "en": "Basic Information",
+    "ja": "基本情報",
+    "ko": "기본 정보",
+    "zh": "Basic Information",
+    "service_id": "TTL08029"
   },
   "": {
     "en": "#VALUE!",
@@ -56440,6 +56461,11 @@
     "en": "Top Object",
     "ja": "Topオブジェクト",
     "ko": "Top 오브젝트"
+  },
+  "side_dbTopSqlComparison": {
+    "en": "Top SQL Comparison",
+    "ja": "Top SQL比較",
+    "ko": "Top SQL 비교"
   },
   "side_pqTree": {
     "en": "Parallel Query Tree",
