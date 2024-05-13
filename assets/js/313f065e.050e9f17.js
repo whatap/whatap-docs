@@ -94,16 +94,16 @@ const toc = [{
   "id": "공통-1",
   "level": 4
 }, {
-  "value": "PostgreSQL / MySQL / Oracle V2 / Oracle DMA",
-  "id": "postgresql--mysql--oracle-v2--oracle-dma",
+  "value": "PostgreSQL / MySQL / Oracle DMA",
+  "id": "postgresql--mysql--oracle-dma",
   "level": 4
 }, {
   "value": "PostgreSQL / Oracle DMA",
   "id": "postgresql--oracle-dma",
   "level": 4
 }, {
-  "value": "Oracle V2 / Oracle DMA",
-  "id": "oracle-v2--oracle-dma",
+  "value": "Oracle DMA",
+  "id": "oracle-dma",
   "level": 4
 }, {
   "value": "Tibero",
@@ -516,8 +516,8 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "postgresql--mysql--oracle-v2--oracle-dma",
-          children: "PostgreSQL / MySQL / Oracle V2 / Oracle DMA"
+          id: "postgresql--mysql--oracle-dma",
+          children: "PostgreSQL / MySQL / Oracle DMA"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "New"
@@ -552,8 +552,8 @@ function _createMdxContent(props) {
             }), " 메뉴의 테이블 위젯에서 마우스를 오버하면 항목의 전체 이름을 확인할 수 있는 툴팁 추가"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracle-v2--oracle-dma",
-          children: "Oracle V2 / Oracle DMA"
+          id: "oracle-dma",
+          children: "Oracle DMA"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
