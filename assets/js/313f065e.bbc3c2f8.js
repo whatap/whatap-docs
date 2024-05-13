@@ -454,6 +454,11 @@ function _createMdxContent(props) {
                   }), " 탭 추가"]
                 }), "\n"]
               }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+              type: "note",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "이 기능은 쿠버네티스 마스터 에이전트 1.7.0 버전 이상에서 지원합니다."
+              })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
