@@ -249,10 +249,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Head, Link, Status, UI} = _components;
+  }, {Cmdname, Head, Link, LinkImage, Status, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Head) _missingMdxReference("Head", true);
   if (!Link) _missingMdxReference("Link", true);
+  if (!LinkImage) _missingMdxReference("LinkImage", true);
   if (!Status) _missingMdxReference("Status", true);
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -368,6 +369,27 @@ function _createMdxContent(props) {
                 sid: "side_transaction_map",
                 className: "uitext"
               }), " 메뉴에서 맵 상단 영역 드래그 시 데이터가 조회되지 않는 문제 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06209",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06126",
+                className: "uitext"
+              }), " 탭 > SQL 스텝 오른쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "ic-static.svg",
+                className: "ico"
+              }), " 아이콘 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06468",
+                className: "uitext"
+              }), " 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_txSearch",
+                className: "uitext"
+              }), " 메뉴로 이동 시 선택한 에이전트가 유지되지 않는 현상 수정"]
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
