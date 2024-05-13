@@ -326,6 +326,14 @@ function resourceboard_createMdxContent(props) {
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
             children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "OS"
+            })
+          }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "프로젝트 내 linux와 windows 운영체제 수입니다."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
               children: "Total Cores"
             })
           }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -354,14 +362,6 @@ function resourceboard_createMdxContent(props) {
             })
           }), "\n", (0,jsx_runtime.jsx)(_components.p, {
             children: "전체 서버들의 디스크 디바이스들의 평균 사용량(%)입니다. 아래 게이지는 평균값, 최댓값, 최솟값을 나타냅니다."
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "OS"
-            })
-          }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "프로젝트 내 linux와 windows 운영체제 수입니다."
           }), "\n"]
         }), "\n"]
       })]
