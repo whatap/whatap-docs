@@ -5257,7 +5257,7 @@ const sidebars = {
             id: 'kubernetes/install',
           },
           items: [
-            'kubernetes/install-master-node-agent',
+            'kubernetes/install-master-node-agent-v2',
             {
               type: 'category',
               label: '애플리케이션 에이전트 설치',
