@@ -419,7 +419,7 @@ const metadata = {
   },
   "next": {
     "title": "마스터 및 노드 에이전트 설치",
-    "permalink": "/whatap-docs/kubernetes/install-master-node-agent"
+    "permalink": "/whatap-docs/kubernetes/install-master-node-agent-v2"
   }
 };
 const assets = {

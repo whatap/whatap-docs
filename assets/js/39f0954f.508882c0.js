@@ -85,15 +85,6 @@ const metadata = {
       "에이전트 설치"
     ],
     "toc_max_heading_level": 2
-  },
-  "sidebar": "kubeSidebar",
-  "previous": {
-    "title": "에이전트 설치",
-    "permalink": "/whatap-docs/kubernetes/install"
-  },
-  "next": {
-    "title": "애플리케이션 에이전트 설치",
-    "permalink": "/whatap-docs/kubernetes/install-application-agent"
   }
 };
 const assets = {

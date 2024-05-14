@@ -88,7 +88,7 @@ const metadata = {
   "sidebar": "kubeSidebar",
   "previous": {
     "title": "마스터 및 노드 에이전트 설치",
-    "permalink": "/whatap-docs/kubernetes/install-master-node-agent"
+    "permalink": "/whatap-docs/kubernetes/install-master-node-agent-v2"
   },
   "next": {
     "title": "Docker Java 설치",
@@ -139,13 +139,21 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "에이전트 설치"
         })
-      }), " 메뉴의 화면 오른쪽 아래에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+      }), " 메뉴의 화면 왼쪽 목록 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "애플리케이션 에이전트 설치"
+          children: "추가 설치"
         })
-      }), " 버튼을 선택하세요."]
+      }), " 아래에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "애플리케이션 모니터링 추가 설치"
+        })
+      }), " 탭을 선택 후 하단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "애플리케이션 모니터링 추가 설치"
+        })
+      }), " 버튼을 클릭하세요."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-agent2application.png",
+      img: "k8s-install-master-node-application.png",
       desc: "애플리케이션 에이전트 설치"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
