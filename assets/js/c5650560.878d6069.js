@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[87371],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39087],{
 
-/***/ 26092:
+/***/ 83344:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_6_1',
-	title: 'Kubernetes Agent v1.6.1',
+	id: 'k8s-1_5_2',
+	title: 'Kubernetes Agent v1.5.2',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_6_0',
+	pagination_next: 'release-notes/k8s/k8s-1_5_1',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_6_1",
-  "title": "Kubernetes Agent v1.6.1",
-  "description": "2024년 04월 17일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.6.1.mdx",
+  "id": "release-notes/k8s/k8s-1_5_2",
+  "title": "Kubernetes Agent v1.5.2",
+  "description": "2024년 01월 26일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.5.2.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_6_1",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_6_1",
+  "slug": "/release-notes/k8s/k8s-1_5_2",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.6.1.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.5.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_6_1",
-    "title": "Kubernetes Agent v1.6.1",
+    "id": "k8s-1_5_2",
+    "title": "Kubernetes Agent v1.5.2",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_6_0",
+    "pagination_next": "release-notes/k8s/k8s-1_5_1",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Server Agent AIX v1.2.7",
-    "permalink": "/whatap-docs/release-notes/server/server-aix-1_2_7"
-  },
   "next": {
-    "title": "Kubernetes Agent v1.6.0",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_6_0"
+    "title": "Kubernetes Agent v1.5.1",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_1"
   }
 };
 const assets = {
@@ -66,24 +62,28 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    li: "li",
     p: "p",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 17일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " 쿠버네티스 이벤트가 일정 시간 뒤 누락되는 버그 수정"]
+      children: "2024년 01월 26일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          children: "Changed"
+        }), " 마스터 에이전트 버전 정보를 네임스페이스 프로젝트에 전송하도록 수정"]
+      }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.6.1.tar",
-          children: "kube_mon_1.6.1.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.5.2.tar",
+          children: "kube_mon_1.5.2.tar"
         })]
       })
     })]
