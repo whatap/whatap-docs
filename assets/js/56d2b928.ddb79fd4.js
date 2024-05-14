@@ -1,5 +1,178 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21760],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[85213],{
+
+/***/ 72697:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "일간 데이터베이스 보고서",
+  "id": "일간-데이터베이스-보고서",
+  "level": 2
+}, {
+  "value": "성능 추이 차트",
+  "id": "성능-추이-차트",
+  "level": 3
+}, {
+  "value": "SQL TOP 10",
+  "id": "sql-top-10",
+  "level": 3
+}, {
+  "value": "주간 데이터베이스 보고서",
+  "id": "주간-데이터베이스-보고서",
+  "level": 2
+}, {
+  "value": "성능 추이 차트",
+  "id": "성능-추이-차트-1",
+  "level": 3
+}, {
+  "value": "SQL TOP 10",
+  "id": "sql-top-10-1",
+  "level": 3
+}, {
+  "value": "월간 데이터베이스 보고서",
+  "id": "월간-데이터베이스-보고서",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    em: "em",
+    h2: "h2",
+    h3: "h3",
+    li: "li",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "일간-데이터베이스-보고서",
+        children: "일간 데이터베이스 보고서"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "일간 데이터베이스 보고서는 하루 동안의 데이터베이스 성능을 수치와 차트로 확인할 수 있는 보고서입니다. 보고서 생성 시 필요에 따라 시작일, 시작 시간, 종료 시간을 설정할 수 있으며\n특정 인스턴스만 따로 선택하여 조회 할 수 있습니다. 전체 선택 시 모든 인스턴스를 한 번에 조회합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "성능-추이-차트",
+        children: "성능 추이 차트"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "데이터베이스 인스턴스별로 지표 차트를 확인할 수 있습니다. 각 지표의 최대값에 대해서는 원형으로 표시하며, 최대값이 발생한 시간을 함께 표시합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "차트로 그려지는 지표는 Config 설정에 따라 다를 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["각 차트의 오른쪽 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "CSV"
+                })
+              }), " 버튼을 이용하여 데이터를 엑셀 파일로 다운로드 할 수 있습니다."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "sql-top-10",
+        children: "SQL TOP 10"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "조회 기간에 전체 또는 선택한 인스턴스가 수행한 SQL 쿼리 통계를 확인할 수 있습니다. 쿼리 수행 시간의 최대값을 기준으로 내림차순 정렬하여 상위 10개 항목만을 조회합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "주간-데이터베이스-보고서",
+        children: "주간 데이터베이스 보고서"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "주간 데이터베이스 보고서는 일주일간 데이터베이스 성능을 수치와 차트로 확인할 수 있는 보고서입니다. 시작일을 직접 설정할 수 있으며 조회 당일 기준 7일 전부터 조회 가능합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "성능-추이-차트-1",
+        children: "성능 추이 차트"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "데이터베이스 인스턴스별로 주간 지표를 수치 및 차트로 비교해 볼 수 있습니다. 조회 기간에 최대값은 원형으로 표시하며 해당 수치가 발생한 시간을 함께 표시합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "차트로 그려지는 지표는 Config 설정에 따라 다를 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["각 차트의 오른쪽 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "CSV"
+                })
+              }), " 버튼을 이용하여 데이터를 엑셀 파일로 다운로드 할 수 있습니다."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "sql-top-10-1",
+        children: "SQL TOP 10"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "조회 기간에 전체 또는 선택한 인스턴스가 수행한 SQL 쿼리 통계를 확인할 수 있습니다. 쿼리 수행시간의 최대값(elapse max)을 기준으로 내림차순 정렬하여 상위 10개 항목만을 조회합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "월간-데이터베이스-보고서",
+        children: "월간 데이터베이스 보고서"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "한 달 동안의 데이터베이스 성능을 수치와 차트로 확인할 수 있는 보고서입니다. 시작일을 설정할 수 있고, 시작일로부터 30일까지 조회할 수 있습니다. 한달 간의 각 지표별 변화량을 인스턴스 별로 확인할 수 있으며, 조회 기간 동안 수행한 상위 10개 항목의 SQL 쿼리 통계도 확인할 수 있습니다."
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 83521:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -170,6 +343,38 @@ function _createMdxContent(props) {
           width: "100%",
           scrolling: "no"
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "와탭 모니터링에서 현재 제공하고 있는 보고서 템플릿의 각 항목을 추가 또는 수정, 삭제가 필요한 경우 제공할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "현재 제공하는 보고서 템플릿에 없는 데이터나 분석 결과를 추가하려면 개발자의 검토가 필요합니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "데이터 추가 및 가공은 와탭 모니터링에서 수집 및 저장된 데이터(메트릭스)로 한정합니다. 다른 도구 및 외부 데이터는 추가할 수 없습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "특정 고객사의 요구를 충족하는 범용적이지 않은 보고서 양식은 제공하기 어렵습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "mailto:support@whatap.io",
+                children: "support@whatap.io"
+              }), " 또는 영업 담당자에게 문의하세요."]
+            }), "\n"]
+          }), "\n"]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -208,7 +413,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 58092:
+/***/ 97599:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -221,73 +426,72 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83521);
+/* harmony import */ var _common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72697);
 
 
 const frontMatter = {
 	id: 'report-intro',
 	title: '보고서',
-	description: '보고서를 안내합니다.',
+	description: '개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.',
 	tags: [
-		'.NET',
-		'보고서',
-		'분석하기',
-		'UI'
-	],
-	toc_max_heading_level: 2
+		'Tibero',
+		'데이터베이스',
+		'데이터베이스 모니터링',
+		'보고서'
+	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/report-intro",
+  "id": "tibero/report-intro",
   "title": "보고서",
-  "description": "보고서를 안내합니다.",
-  "source": "@site/docs/dotnet/report-intro.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/report-intro",
-  "permalink": "/whatap-docs/dotnet/report-intro",
+  "description": "개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.",
+  "source": "@site/docs/tibero/report-intro.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/report-intro",
+  "permalink": "/whatap-docs/tibero/report-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/report-intro.mdx",
+  "editUrl": "undefined/docs/tibero/report-intro.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Tibero",
+      "permalink": "/whatap-docs/tags/tibero"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
+    },
+    {
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     },
     {
       "label": "보고서",
       "permalink": "/whatap-docs/tags/보고서"
-    },
-    {
-      "label": "분석하기",
-      "permalink": "/whatap-docs/tags/분석하기"
-    },
-    {
-      "label": "UI",
-      "permalink": "/whatap-docs/tags/ui"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "report-intro",
     "title": "보고서",
-    "description": "보고서를 안내합니다.",
+    "description": "개별 프로젝트에 대해 서비스 이용 현황과 장애 발생 기록을 보고하는 문서에 대해 알아봅니다.",
     "tags": [
-      ".NET",
-      "보고서",
-      "분석하기",
-      "UI"
-    ],
-    "toc_max_heading_level": 2
+      "Tibero",
+      "데이터베이스",
+      "데이터베이스 모니터링",
+      "보고서"
+    ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
-    "title": "통계",
-    "permalink": "/whatap-docs/dotnet/analysis-apm-trs"
+    "title": "통계 데이터 확인",
+    "permalink": "/whatap-docs/tibero/stat"
   },
   "next": {
-    "title": "애플리케이션 보고서",
-    "permalink": "/whatap-docs/dotnet/report-apm"
+    "title": "통합 보고서",
+    "permalink": "/whatap-docs/tibero/integrated-report"
   }
 };
 const assets = {
@@ -297,13 +501,16 @@ const assets = {
 
 
 
-const toc = [..._common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+
+const toc = [..._common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
 function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_report_intro_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_report_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+  });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[30877],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67676],{
 
 /***/ 83521:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -170,6 +170,38 @@ function _createMdxContent(props) {
           width: "100%",
           scrolling: "no"
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "와탭 모니터링에서 현재 제공하고 있는 보고서 템플릿의 각 항목을 추가 또는 수정, 삭제가 필요한 경우 제공할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "현재 제공하는 보고서 템플릿에 없는 데이터나 분석 결과를 추가하려면 개발자의 검토가 필요합니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "데이터 추가 및 가공은 와탭 모니터링에서 수집 및 저장된 데이터(메트릭스)로 한정합니다. 다른 도구 및 외부 데이터는 추가할 수 없습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "특정 고객사의 요구를 충족하는 범용적이지 않은 보고서 양식은 제공하기 어렵습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "mailto:support@whatap.io",
+                children: "support@whatap.io"
+              }), " 또는 영업 담당자에게 문의하세요."]
+            }), "\n"]
+          }), "\n"]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -208,7 +240,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 55621:
+/***/ 74765:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -228,9 +260,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'report-intro',
 	title: '보고서',
-	description: '모니터링 보고서 메뉴를 안내합니다.',
-	toc_max_heading_level: 2,
+	description: '보고서를 안내합니다.',
 	tags: [
+		'Node.js',
 		'보고서',
 		'분석하기',
 		'UI'
@@ -238,17 +270,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "server/report-intro",
+  "id": "nodejs/report-intro",
   "title": "보고서",
-  "description": "모니터링 보고서 메뉴를 안내합니다.",
-  "source": "@site/docs/server/report-intro.mdx",
-  "sourceDirName": "server",
-  "slug": "/server/report-intro",
-  "permalink": "/whatap-docs/server/report-intro",
+  "description": "보고서를 안내합니다.",
+  "source": "@site/docs/nodejs/report-intro.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/report-intro",
+  "permalink": "/whatap-docs/nodejs/report-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/server/report-intro.mdx",
+  "editUrl": "undefined/docs/nodejs/report-intro.mdx",
   "tags": [
+    {
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
+    },
     {
       "label": "보고서",
       "permalink": "/whatap-docs/tags/보고서"
@@ -266,22 +302,22 @@ const metadata = {
   "frontMatter": {
     "id": "report-intro",
     "title": "보고서",
-    "description": "모니터링 보고서 메뉴를 안내합니다.",
-    "toc_max_heading_level": 2,
+    "description": "보고서를 안내합니다.",
     "tags": [
+      "Node.js",
       "보고서",
       "분석하기",
       "UI"
     ]
   },
-  "sidebar": "serverSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "큐브",
-    "permalink": "/whatap-docs/server/cube"
+    "title": "통계",
+    "permalink": "/whatap-docs/nodejs/analysis-apm-trs"
   },
   "next": {
-    "title": "서버 보고서",
-    "permalink": "/whatap-docs/server/report"
+    "title": "애플리케이션 보고서",
+    "permalink": "/whatap-docs/nodejs/report-apm"
   }
 };
 const assets = {
