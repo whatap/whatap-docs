@@ -1245,7 +1245,7 @@
   },
   "sidebar.indexSidebar.link.Open API": {
     "message": "Open API",
-    "description": "The label for link Open API in sidebar indexSidebar, linking to openapi"
+    "description": "The label for link Open API in sidebar indexSidebar, linking to openapi-spec"
   },
   "sidebar.openapiSidebar.category.Open API": {
     "message": "Open API",

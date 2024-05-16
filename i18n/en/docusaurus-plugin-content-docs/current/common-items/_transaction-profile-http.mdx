@@ -14,7 +14,9 @@
 
   :::note
 
-  Set the security key to 6 digits in _`${WHATAP_AGENT_HOME}`/paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+  - **Earlier than [Node.js Agent 0.4.95](../release-notes/nodejs/nodejs-0_4_95)**: The security key is written in the WAS server _`${WHATAP_AGENT_HOME}`/paramkey.txt_ file with a 6-letter value. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
+
+  - **[Node.js Agent 0.4.95](../release-notes/nodejs/nodejs-0_4_95) or later**: For the security key, check the `paramkey` key value in the WAS server _`${WHATAP_AGENT_HOME}`/security.conf_ file. If the _security.conf_ file does not exist, the `paramkey` key value is automatically created as **WHATAP**.
 
   :::
 

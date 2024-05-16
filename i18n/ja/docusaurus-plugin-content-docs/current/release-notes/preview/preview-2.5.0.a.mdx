@@ -14,6 +14,190 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.5.0.a7
+
+2024年05月13日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />メニューでマップの上段エリアドラッグ時にデータが照会されない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06126" className="uitext" />タップ&gt; SQLステップの右<LinkImage img="ic-static.svg" className="ico" />アイコンを選択&gt; <Cmdname sid="TTL06468" className="uitext" />ウィンドウから<Cmdname sid="side_txSearch" className="uitext" />メニューへの移動時に選択したエージェントが維持されない現象を修正
+
+---
+
+### `Database`
+
+<Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />メニューで<Cmdname sid="db_ip" className="uitext" />カラム内のツールチップが表示されない問題を修正
+
+</div>
+
+## Preview 2.5.0.a6
+
+2024年05月09日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06126" className="uitext" />タブで<UI>SQL</UI>ウィンドウを開き<Cmdname sid="format" className="uitext" />オプション利用時にハングルに分かち書きが追加される問題を修正
+
+</div>
+
+## Preview 2.5.0.a5
+
+2024年05月09日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="side_flexboard" /> / <Cmdname sid="side_integratedFlexboard" />
+
+- <Status>Feature</Status>補助チャートの設定でグループ内のオプションを共有できる<Cmdname sid="BTN07938" className="uitext" />機能を追加
+
+- <Status>Feature</Status>ダッシュボードのエクスポート機能を利用する際、プロジェクト情報を除いてエクスポートする機能を追加
+
+- <Status>Feature</Status>グループウィジェットに<Cmdname sid="TLT06410" className="uitext" />機能を追加、グループ下位ウィジェットに<Cmdname sid="TLT07805" className="uitext" />選択オプションを追加
+
+- <Status>Changed</Status>ウィジェットの拡大表示機能や<Cmdname sid="admin" className="uitext" />モードを利用する際、不透明な背景色を取り除き、テーマ色を適用
+
+- <Status>Fixed</Status>リッチ テキストのウィジェットを修正する際、ダッシュボードレイアウトの復元現象を修正
+
+---
+
+### `Application`
+
+<Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューでJSONファイルを連続で読み込むとき、最初のJSONファイルだけが適用され、その後読み込んだJSONファイルのイベントが動作せず、設定も適用されない問題を修正
+
+---
+
+### `Browser`
+
+- <Status>Fixed</Status> <Cmdname sid="TTL07736" className="uitext" /> &gt; <Cmdname sid="TTL07746" className="uitext" /> &gt; <Cmdname sid="TTL07757" className="uitext" /> <Cmdname sid="detail" className="uitext" />でSelectorの内容がレイアウトの大きさを超えて表示されない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="TTL07736" className="uitext" /> &gt; <Cmdname sid="TTL07746" className="uitext" />セクションのテーブルでイベントをクリックする際、照会中の現在イベントのようなイベントを引き続き照会できる問題を修正
+
+</div>
+
+## Preview 2.5.0.a4
+
+2024年05月08日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status> DatabaseプラットフォームとApplicationプラットフォーム間で連携分析機能を追加
+
+- <Status>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" />または<Cmdname sid="side_integratedFlexboard" className="uitext" />メニューでカウント形態のウィジェットにフィールド選択機能を追加
+
+- <Status>Changed</Status>プロジェクト作成時、商品選択及びプロジェクト作成関連のUI/UXを修正
+
+- <Status>Changed</Status>サイドメニューの<Cmdname sid="side_projectList" className="uitext" />でグループ項目をクリックすると、折り畳む/開く動作を実行するように変更、グループ移動ボタンを追加
+
+- <Status>Fixed</Status> <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />メニューで決済手段を登録または修正するとき<Cmdname sid="TTL06080" className="uitext" />項目を「US」と保存すると「CA」と表示される問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" />または<Cmdname sid="side_integratedFlexboard" className="uitext" />メニューでイベントのタイムラインウィジェットにスクロール生成が繰り返されるバグを修正
+
+---
+
+### `Application`
+
+<Status>Changed</Status> <Cmdname sid="side_flexboard" className="uitext" />メニューで<Cmdname sid="AA004" className="uitext" />ウィジェットのチャートカラーを変更
+
+---
+
+### `Server`
+
+- <Status>Feature</Status> <Cmdname sid="side_serverList" className="uitext" />メニューで<Cmdname sid="oname" className="uitext" />と<Cmdname sid="TTL07876" className="uitext" />を区分されたカラムで表示するように修正
+
+- <Status>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューの<Cmdname sid="server_info" className="uitext" />セクションでAgent NameとHost Nameを区分された項目で表示し、ユーザーが修正できる機能を追加
+
+- <Status>Changed</Status> <Cmdname sid="side_serverList" className="uitext" />メニューでユーザビリティを改善するため、画面上にサーバーの状態を表示および操作ボタンのレイアウトを変更
+
+---
+
+### `Kubernetes`
+
+<Status>Fixed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューでコンテナリストの高さがコンテナ数に合わせて伸びるようにスタイルを修正
+
+---
+
+### `Cloud`
+
+- <Status>Fixed</Status> <b>Oracle Cloud</b>プラットホームの<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでインストールの案内フレーズを修正
+
+- <Status>Fixed</Status> <b>AWS CloudWatch</b>プラットホームの<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでの役割(Role) 生成関連の内容を現在のAWS仕様に合わせて修正
+
+</div>
+
+## Preview 2.5.0.a3
+
+2024年05月03日
+
+<div class='indentTab'>
+
+### `共通`
+
+<Status>Fixed</Status>WhaTapのモバイルアプリで通知受信を設定すると<Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="side_accountManagement" className="uitext" />メニューの<Cmdname sid="notification_setting" className="uitext" />でWhatsAppの項目が一緒に表示される問題を修正
+
+---
+
+### `Server`
+
+<Status>Fixed</Status>サーバープロジェクトの有料切り替えの案内モーダルから価格表記を削除
+
+---
+
+### `Database`
+
+<Status>New</Status> <b>Oracle DMA</b>サービスをオープンします。 ご利用いただき誠にありがとうございます! 該当サービスは<Link to='https://preview.whatap.io' target='_blank'>https://preview.whatap.io</Link>で利用できます。 詳細については、<Link to='https://whatap.github.io/whatap-docs/oracle-dma/monitoring-intro' target='_blank'>次の文書</Link>を参照してください。
+
+</div>
+
+## Preview 2.5.0.a2
+
+2024年03月30日
+
+<div class='indentTab'>
+
+### `Database`
+
+- <Status>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agents" className="uitext" />メニューの<Cmdname sid="db_ip" className="uitext" />カラムIPリストが見えるようにツールチップを追加
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューで<Cmdname sid="database" className="uitext" />と<Cmdname sid="ip" className="uitext" />カラムの値がセルサイズを超えたら、省略記号(...)を適用し、カーソルに合わせるとツールチップとして表示するように修正
+
+</div>
+
+## Preview 2.5.0.a1
+
+2024年04月29日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Changed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューで選択できる最大時間の範囲を変更
+
+  - <Cmdname sid="side_statRemote" className="uitext" />: 最大7日
+
+  - <Cmdname sid="side_statistics" className="uitext" />下位メニューで<Cmdname sid="side_statRemote" className="uitext" />除外: 最大31日
+
+- <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />メニューで照会結果をCSVファイルとしてダウンロードするとき、文字列に'\n'が含まれるとCSVフォーマットが壊れる問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューの<Cmdname sid="TTL06549" className="uitext" />でエージェント名が長くなると、他のカラムと重なる問題を修正
+
+---
+
+### `Kubernetes`
+
+<Status>Changed</Status> <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_statistics" className="uitext" />メニューを`Appication`商品の<Cmdname sid="side_statistics" className="uitext" />メニューと一致するように修正
+
+</div>
+
 ## Preview 2.5.0.a0
 
 2024年04月25日

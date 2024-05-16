@@ -26,11 +26,41 @@
 
 トランザクションを通じて確認できるトラブルの事象は、まず応答時間で把握できます。 また、進行中のトランザクションが終了しない場合は、これもトラブルとして認識すべきです。 WhaTap Monitoringでは、進行中のトランザクションの遂行時間に基づいて状態を表示します。 <span class='normal'>青色(Normal)</span>は応答時間が正常なトランザクション、<span class='slow'>橙色(Slow)</span>は応答時間が8秒までの遅いトランザクション、<span class='vslow'>赤色(Very slow)</span>は、応答時間が8秒を超えた非常に遅いトランザクションを意味します。 これにより、ユーザーはトラブル状況が直感的にすぐ認識できるようになります。
 
-#### <Cmdname sid="AA001" />
+#### <Cmdname sid="AA001" /> {#active-trs-speed}
 
 ![アクティブトランザクションスピード](/img/speedmeter.png)
 
-現在進行中のトランザクション(中央領域)と、終了したトランザクション(右領域)の状態を確認できます。 左から右に流れる水玉模様のアイコンは、トランザクションを意味します。 アクティブトランザクションの状態を速度(<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>)で色分けし、右上に数値として表示します。 
+現在進行中のトランザクション(中央領域)と、終了したトランザクション(右領域)の状態を確認できます。 左から右に流れる水玉模様のアイコンは、トランザクションを意味します。 
+
+- 左領域
+
+  リクエストTXの数を意味し、TXの数に比例してより多く、より速く表示します。
+
+- 中央領域
+
+  アクティブTXの状態を速度で色分けし、右上に数で表示します。 チャート内の数字は、アクティブTX全体の数です。 チャートの色の意味は次のとおりです。
+
+  - 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+
+  - オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+
+  - 赤色(<span class='vslow'>Very Slow</span>)：8秒以上
+
+- 右領域
+
+  アプリケーションの性能指標(Application Performance Index, Apdex)を意味します。 ウェブアプリケーションの顧客満足度を測定した指標であり、0 ~ 1間の値を持ちます。 水滴が飛んでいく速度はApdexTXの合計数に比例し、水滴の色の意味は次のとおりです。
+
+  - 青色:<span class='normal'>Apdex満足</span>(Satisfied) 数 
+
+  - オレンジ色:<span class='slow'>Apdex許容</span>(Tolerating) 数 
+
+  - 赤色:<span class='vslow'>Apdex不満</span>(Frustrated) 数= `APDEXトランザクション総数` - (`Apdex満足数` + `Apdex許容数`)
+
+  :::note
+
+  アプリケーションの性能指標(Application Performance Index, Apdex)についての詳細は[次のリンク](https://www.apdex.org)を参照してください。
+
+  :::
 
 #### <Cmdname sid="AA002" /> {#active-trs}
 
@@ -92,21 +122,21 @@
 
   :::
 
-- <Cmdname sid="active_stat_socket" className="uitext" />：外部システムとのTCP接続の試行を意味します。 <Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続がないために、障害が発生している可能性があります。
+- <Cmdname sid="active_stat_socket" className="uitext" />：外部システムとのTCP接続試行を意味します。 <Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続ができないため障害が発生している可能性があります。
 
 #### <Cmdname sid="AA005" />
 
 <ImgLang img='hitmap.png' desc='ヒットマップ' />
 
-<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 レスポンスタイムが伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />内のチャート領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />ウィンドウが表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>を参照してください。
+<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 レスポンスタイムが伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />チャートの中の領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>をご参照ください。
 
 - 通常のトランザクションは水色→青色→紺色の順に表現されます。
 
-- エラートランザクションは黄色→橙色→赤色の順に表現されます。
+- エラートランザクションは黄色→オレンジ色→赤色の順に表現されます。
 
-- 画面の右上の数字はチャート内の<span class='normal'>トランザクション数と</span>/<span class='slow'>エラー数</span>を意味します。
+- 画面の右上の数字はチャート内の<span class='normal'>トランザクション数</span>/<span class='slow'>エラー数</span>を意味します。
 
-- <Cmdname sid="yaxis" className="uitext" />ボタンをタップすると、実行時間を示すY軸を自動調整します。
+- <Cmdname sid="yaxis" className="uitext" />ボタンを選択すると、実行時間を示すY軸を自動調整します。
 
 - <Cmdname sid="err" className="uitext" />ボタンを選択すると、エラートランザクションのみ表示します。
 
@@ -182,7 +212,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 <ImgLang img='apm-dashboard-cpu.png' desc='システムCPU' />
 
-アプリケーションサーバーのCPU使用量です。 リアルタイムでCPU使用量の変化の推移を認することができます。
+アプリケーションサーバーのCPU使用量です。 リアルタイムでCPU使用量の変化の推移を把握できます。
 
 :::note
 
@@ -246,19 +276,19 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='同時接続ユーザー' />
 
-リアルタイムブラウザのユーザー数を表示します。 5秒ごとに、過去5分以内にトランザクションを行ったユーザーを重複なくカウントされ、表示します。 ユーザーのブラウザのIPに基づいてカウントします。
+リアルタイムブラウザのユーザー数を表示します。 5秒ごとに、直近5分以内にトランザクションを発生させたユーザーを重複なくカウントして表示します。 ユーザーブラウザのIP情報でカウントします。
 
 :::note
 
 <InDoc product='java'>
 
-- エージェント設定では、ユーザー識別のためにIPを使用または、クッキーを使用します。 詳しい内容は[次の文書](agent-additional-option)を参照してください。
+- エージェント設定でユーザーを識別するためにIPまたはクッキーを選択できます。 詳しい内容は、[次の文書](agent-additional-option)をご参照ください。
 
 </InDoc>
 
 - 通常、接続ユーザーはネットワークに接続しているユーザーを意味します。 ただし、ウェブシステムは未接続のネットワークを使用するため異なります。 接続されているという意味ではなく、最近のリクエストを送信したユーザーが測定の対象になる可能性があります。
 
-- リアルタイム(同時接続) ユーザーとは、同じ時間帯にシステムを使用しているユーザーを意味します。 リアルタイム(同時接続) ユーザーを計算または測定する方式は多数あります。
+- リアルタイム(同時接続)ユーザーとは、同じ時間帯にシステムを使用しているユーザーを意味します。 リアルタイム(同時接続)ユーザーを計算または測定する方式は多数あります。
 
 - ユーザー数は、単に合計されるのではなく、** HyperLogLog**によって計算されます。 **HyperLogLog**は、非常に少ないメモリ内の要素の数を推定する確率的なデータ構造を意味します。
 

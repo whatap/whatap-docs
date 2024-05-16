@@ -1,7 +1,7 @@
 ---
 id: install-agent
 title: インストール
-description: Amazon ECS項目のインストール方法をご説明します。
+description: Amazon ECSモニタリングのインストール方法をご説明します。
 tags:
   - インストール
   - Amazon ECS
@@ -9,7 +9,7 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-WhaTap AmazonECSモニタリングは、META APIおよびCgroupディレクトリを使用してDockerコンテナ固有のリソース使用量をリアルタイムで収集します。 Amazon ECS API連携のWhaTap Taskを使用して、Amazon ECS Service、Deployment、Container Instanceの状態を参照および収集します。
+WhaTap Amazon ECSモニタリングは、META APIおよびCgroupディレクトリを使用してDockerコンテナのリソース使用量をリアルタイムで収集します。Amazon ECS API連携のWhaTap Taskを使用して、Amazon ECS Service、Deployment、Container Instanceの状態をチェックおよび収集します。
 
 import Createprojectaccesskeyitem from "../getting-started/_create-project-accesskey-item.mdx";
 
@@ -19,26 +19,26 @@ import Createprojectaccesskeyitem from "../getting-started/_create-project-acces
 
 - **AWS CLI**
 
-  インストール方法は [次の文書](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-configure.html)を参照してください。
+  インストール方法は、[次の文書](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-chap-configure.html)をご参照ください。
 
 - **Amazon ECS CLI**
 
-  インストール方法は [次の文書](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/Welcome.html)を参照してください。
+  インストール方法は、[次の文書](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/Welcome.html)をご参照ください。
 
 - **Python 2.x / 3.x**
 
-  スクリプトの jsonドキュメント分析には、インストールが必要です。
+  スクリプトの jsonデータの分析には、インストールが必要です。
 
 :::note
 
-- インストールに使用するWhaTapイメージ(_whatap/ecs_mon_)をダウンロードし、レジストリにユーザー登録をしてから使用することをお勧めします。
-- WhaTapサーバーにデータを送信するには、**6600**番ポートが開いている必要があります。
+- インストールに使用するWhaTapイメージ(_whatap/ecs_mon_)をダウンロードし、ユーザーレジストリに登録をしてから使用することをお勧めします。
+- WhaTapサーバーにデータを送信するには、**6600**番ポート(TCP)を開ける必要があります。
 
 :::
 
 ## モニタリング対象
 
-Amazon ECS의 Launch Typeによって項目が区分されます。 モニタリング対象は、Task, Service, Deployment, Container Instanceです。
+Amazon ECSのLaunch Typeによりモニタリング対象が異なります。モニタリング対象は、Task、Service、Deployment、Container Instanceです。
 
 - **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
 
@@ -48,11 +48,11 @@ Amazon ECS의 Launch Typeによって項目が区分されます。 モニタリ
 
   ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
 
-次のモニタリング手順も**_EC2 Launch Type_**のモニタリングの手続きと**_Fargate Launch Type_**のモニタリングに区分されて行われます。
+次のモニタリング手順も**_EC2起動タイプ_**と**_Fargate起動タイプ_**に分かれて実行します。
 
 :::note
 
-Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)を参照してください。
+Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)をご参照ください。
 
 :::
 
@@ -60,13 +60,13 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 
 <ImgLang img='amazon-ecs-install.png' desc='ecs install' />
 
-- インストールガイドセクション![number-s](/img/number-01.png)タブを使用して、WhaTap Amazon ECSエージェントを専用TaskまたはSidecarでデプロイしてください。
+- インストールの案内で![number-s](/img/number-01.png)部分を開き、WhaTap Amazon ECSエージェントを専用TaskまたはSidecarでデプロイしてください。
 
-- インストールガイドセクション![number-s](/img/number-02.png)タブをクリックして、モニタリングサービスを開始してください。
+- インストールの案内で![number-s](/img/number-02.png)部分を開き、モニタリングサービスを開始してください。
 
 ### EC2 Launch Type
 
-1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェントのインストール_**のインストール手順セクションに移動してください。 
+1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動してください。 
 
 2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2 Launch Type_**を選択してください。
 
@@ -140,7 +140,7 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 
 ### Fargate Launch Type
 
-1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェントのインストール_**のインストール手順セクションに移動してください。 
+1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動してください。 
 
 2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_Fargate Launch Type_**を選択してください。
 

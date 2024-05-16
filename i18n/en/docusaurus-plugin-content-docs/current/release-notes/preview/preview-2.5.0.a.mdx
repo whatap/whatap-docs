@@ -14,6 +14,190 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.5.0.a7
+
+May 13, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the issue where the data does not appear when the upper area of the map is dragged.
+
+- <Status>Fixed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06126" className="uitext" /> tab, upon selection of the <LinkImage img="ic-static.svg" className="ico" /> icon on the right of the SQL step, and upon going to the <Cmdname sid="side_txSearch" className="uitext" /> menu under the <Cmdname sid="TTL06468" className="uitext" /> window, fixed the issue where the selected agent is not kept.
+
+---
+
+### `Database`
+
+<Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />, fixed the issue where the tooltip in the <Cmdname sid="db_ip" className="uitext" /> column does not appear.
+
+</div>
+
+## Preview 2.5.0.a6
+
+May 9, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Fixed</Status> When opening the <UI>SQL</UI> window and using the <Cmdname sid="format" className="uitext" /> option in the <Cmdname sid="TTL06126" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where spacing is applied in Korean.
+
+</div>
+
+## Preview 2.5.0.a5
+
+May 9, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="side_flexboard" /> / <Cmdname sid="side_integratedFlexboard" />
+
+- <Status>Feature</Status> Added the <Cmdname sid="BTN07938" className="uitext" /> function to share options within a group in the secondary chart configuration.
+
+- <Status>Feature</Status> Added the function to transmit data excluding the project information when using Export Dashboard.
+
+- <Status>Feature</Status> Added the <Cmdname sid="TLT06410" className="uitext" /> function into the group widget and added the <Cmdname sid="TLT07805" className="uitext" /> selection option into the group's sub widget.
+
+- <Status>Changed</Status> When using the widget zoom-in or <Cmdname sid="admin" className="uitext" /> mode, removed the opaque background color and then applied the theme colors.
+
+- <Status>Fixed</Status> Fixed the dashboard layout restoration issue when modifying the rich text widget.
+
+---
+
+### `Application`
+
+<Status>Fixed</Status> When importing JSON files consecutively in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />, fixed the issue where only the first JSON file is applied, the events from other JSON files are not enabled, and the settings of them are not applied.
+
+---
+
+### `Browser`
+
+- <Status>Fixed</Status> In <Cmdname sid="TTL07736" className="uitext" /> &gt; <Cmdname sid="TTL07746" className="uitext" /> &gt; <Cmdname sid="TTL07757" className="uitext" /> <Cmdname sid="detail" className="uitext" />, fixed the issue where the content of the selector does not appear because it exceeds the size of the layout.
+
+- <Status>Fixed</Status> In the table of the <Cmdname sid="TTL07736" className="uitext" /> &gt; <Cmdname sid="TTL07746" className="uitext" /> section, fixed the issue where the event same as the current event is viewed after clicking an event.
+
+</div>
+
+## Preview 2.5.0.a4
+
+May 8, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Feature</Status> Added the correlation analysis between the database platform and application platform.
+
+- <Status>Feature</Status> In <Cmdname sid="side_flexboard" className="uitext" /> or <Cmdname sid="side_integratedFlexboard" className="uitext" />, added the field selection feature in the count-shape widget.
+
+- <Status>Changed</Status> Modified the product selection and creation UI/UX upon project creation.
+
+- <Status>Changed</Status> In <Cmdname sid="side_projectList" className="uitext" /> of the side menu, changed to run the folding/expanding action upon clicking a group, and added the group movement button.
+
+- <Status>Fixed</Status> In <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />, fixed the issue where <Cmdname sid="TTL06080" className="uitext" /> is displayed as "CA" if it is saved as "US," when registering or modifying the payment method.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_flexboard" className="uitext" /> or <Cmdname sid="side_integratedFlexboard" className="uitext" />, fixed the bug where scrolling repeats in the event timeline widget.
+
+---
+
+### `Application`
+
+<Status>Changed</Status> In <Cmdname sid="side_flexboard" className="uitext" />, changed the chart color of the <Cmdname sid="AA004" className="uitext" /> widget.
+
+---
+
+### `Server`
+
+- <Status>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" />, modified to display <Cmdname sid="oname" className="uitext" /> and <Cmdname sid="TTL07876" className="uitext" /> as separated columns.
+
+- <Status>Feature</Status> In the <Cmdname sid="server_info" className="uitext" /> section of <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />, displayed Agent Name and Host Name as separated items, and added the function to modify them.
+
+- <Status>Changed</Status> In <Cmdname sid="side_serverList" className="uitext" />, changed the server status display and the layout of operation buttons to improve usability.
+
+---
+
+### `Kubernetes`
+
+<Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />, modified the style so that the height of the container list increases to match the number of containers.
+
+---
+
+### `Cloud`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the <b>Oracle Cloud</b> platform, modified the installation guide text.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the <b>AWS CloudWatch</b> platform, modified the role creation details to match the current AWS specifications.
+
+</div>
+
+## Preview 2.5.0.a3
+
+May 3, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status>Fixed</Status> In case Alert Reception is set in the WhaTap mobile app, fixed the issue where the WhatsApp item appears together in <Cmdname sid="notification_setting" className="uitext" /> of the <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="side_accountManagement" className="uitext" /> menu.
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> Removed the price display in the subscription guide modal of the server project.
+
+---
+
+### `Database`
+
+<Status>New</Status> Open the <b>Oracle DMA</b> monitoring service. Thanks for your use! The service can be used in <Link to='https://preview.whatap.io' target='_blank'>https://preview.whatap.io</Link>. For more information, see <Link to='https://whatap.github.io/whatap-docs/oracle-dma/monitoring-intro' target='_blank'>the following</Link>.
+
+</div>
+
+## Preview 2.5.0.a2
+
+April 30, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+- <Status>Changed</Status> In the <Cmdname sid="db_ip" className="uitext" /> column of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agents" className="uitext" /> menu, added the tooltip to display the IP list.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, if the values of the <Cmdname sid="database" className="uitext" /> and <Cmdname sid="ip" className="uitext" /> columns exceed the cell size, modified to apply the ellipsis (...). When the mouse is over a column, the full value appears as a tooltip.
+
+</div>
+
+## Preview 2.5.0.a1
+
+April 29, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Changed</Status> In <Cmdname sid="side_statistics" className="uitext" />, changed the maximum time range that can be selected.
+
+  - <Cmdname sid="side_statRemote" className="uitext" />: Up to 7 days
+
+  - Among sub menus under <Cmdname sid="side_statistics" className="uitext" />, removed <Cmdname sid="side_statRemote" className="uitext" /> up to 31 days.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />, fixed the issue where the CSV format is broken if '\n' is included in the string when downloading search results as a CSV file.
+
+- <Status>Fixed</Status> In <Cmdname sid="TTL06549" className="uitext" /> of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> menu, fixed the issue where agent names are overlapped with other columns if the names are too long.
+
+---
+
+### `Kubernetes`
+
+<Status>Changed</Status> Modified <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_statistics" className="uitext" /> so that it matches the <Cmdname sid="side_statistics" className="uitext" /> menu of the `Application` product.
+
+</div>
+
 ## Preview 2.5.0.a0
 
 April 25, 2024
