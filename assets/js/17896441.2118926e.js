@@ -1648,7 +1648,10 @@ const PrintPDFButton = ()=>{
 
 // EXTERNAL MODULE: ./src/components/Feedback/index.js + 11 modules
 var Feedback = __webpack_require__(70786);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
+var useDocusaurusContext = __webpack_require__(90062);
 ;// CONCATENATED MODULE: ./src/theme/DocItem/Layout/index.js
+
 
 
 
@@ -1683,20 +1686,21 @@ var Feedback = __webpack_require__(70786);
     };
 }
 function DocItemLayout({ children }) {
+    const { i18n: { currentLocale } } = (0,useDocusaurusContext/* default */.A)();
     const docTOC = useDocTOC();
     const { metadata: { unlisted } } = (0,doc/* useDoc */.u)();
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-        className: "row",
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: (0,clsx_m/* default */.A)('col', !docTOC.hidden && Layout_styles_module.docItemCol),
-                children: [
-                    unlisted && /*#__PURE__*/ (0,jsx_runtime.jsx)(Unlisted/* default */.A, {}),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(DocVersionBanner/* default */.A, {}),
-                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                        className: Layout_styles_module.docItemContainer,
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("article", {
+    if (currentLocale !== 'ko') {
+        return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+            className: "row",
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: (0,clsx_m/* default */.A)('col', !docTOC.hidden && Layout_styles_module.docItemCol),
+                    children: [
+                        unlisted && /*#__PURE__*/ (0,jsx_runtime.jsx)(Unlisted/* default */.A, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(DocVersionBanner/* default */.A, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            className: Layout_styles_module.docItemContainer,
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("article", {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(DocBreadcrumbs, {}),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(DocVersionBadge/* default */.A, {}),
@@ -1706,23 +1710,61 @@ function DocItemLayout({ children }) {
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Footer/* default */.A, {})
                                 ]
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(Paginator/* default */.A, {})
-                        ]
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: "col col--3",
-                children: [
-                    docTOC.desktop,
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(FacebookSharing, {}),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(PrintPage, {}),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Feedback/* default */.A, {})
-                ]
-            })
-        ]
-    });
+                            })
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: "col col--3",
+                    children: [
+                        docTOC.desktop,
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(FacebookSharing, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(PrintPage, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Feedback/* default */.A, {})
+                    ]
+                })
+            ]
+        });
+    } else {
+        return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+            className: "row",
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: (0,clsx_m/* default */.A)('col', !docTOC.hidden && Layout_styles_module.docItemCol),
+                    children: [
+                        unlisted && /*#__PURE__*/ (0,jsx_runtime.jsx)(Unlisted/* default */.A, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(DocVersionBanner/* default */.A, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            className: Layout_styles_module.docItemContainer,
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("article", {
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)(DocBreadcrumbs, {}),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)(DocVersionBadge/* default */.A, {}),
+                                        docTOC.mobile,
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)(DocItemContent, {
+                                            children: children
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Footer/* default */.A, {})
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)(Paginator/* default */.A, {})
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: "col col--3",
+                    children: [
+                        docTOC.desktop,
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(FacebookSharing, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(PrintPage, {}),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Feedback/* default */.A, {})
+                    ]
+                })
+            ]
+        });
+    }
 }
 
 
