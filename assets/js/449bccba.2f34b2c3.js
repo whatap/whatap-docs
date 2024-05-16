@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[29972],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[64751],{
 
 /***/ 34789:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -161,7 +161,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc} = _components;
+  }, {Cmdname, InDoc} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
@@ -305,26 +306,21 @@ function _createMdxContent(props) {
             children: "String"
           })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그"
-            })
-          }), " 메뉴(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "라이브 테일"
-            })
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그 트렌드"
-            })
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그 검색"
-            })
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그 설정"
-            })
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_log",
+            className: "uitext"
+          }), " 메뉴(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logTail",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logExplorer",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logSearch",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logSetting",
+            className: "uitext"
           }), ")를 이용하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "file"
           }), " 옵션에 모니터링하려는 로그 파일명의 절대 경로로 입력하세요."]
@@ -602,59 +598,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 77381:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* unused harmony exports frontMatter, contentTitle, toc, default */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = (/* unused pure expression or super */ null && ([]));
-function _createMdxContent(props) {
-  const _components = {
-    admonition: "admonition",
-    ..._provideComponents(),
-    ...props.components
-  }, {Link} = _components;
-  if (!Link) _missingMdxReference("Link", true);
-  return _jsx(_components.admonition, {
-    type: "note",
-    children: _jsxs("p", {
-      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", _jsx(Link, {
-        to: props.link,
-        children: "다음 문서"
-      }), "를 참조하세요."]
-    })
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ..._provideComponents(),
-    ...props.components
-  };
-  return MDXLayout ? _jsx(MDXLayout, {
-    ...props,
-    children: _jsx(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 3392:
+/***/ 19447:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -667,45 +611,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4432);
-/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77381);
-/* harmony import */ var _common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(34789);
-/* harmony import */ var _common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5378);
-/* harmony import */ var _common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(50198);
-/* harmony import */ var _common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(44681);
+/* harmony import */ var _common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34789);
+/* harmony import */ var _common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5378);
+/* harmony import */ var _common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(50198);
+/* harmony import */ var _common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(44681);
 
 
 const frontMatter = {
 	id: 'agent-xos-settings',
 	title: 'XOS 에이전트 설정',
-	description: 'Redis 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.',
+	description: '데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.',
 	tags: [
-		'Redis',
-		'데이터베이스',
+		'PostgreSQL',
+		'데이터베이스 모니터링',
 		'XOS 에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/agent-xos-settings",
+  "id": "postgresql/agent-xos-settings",
   "title": "XOS 에이전트 설정",
-  "description": "Redis 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
-  "source": "@site/docs/redis/agent-xos-settings.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/agent-xos-settings",
-  "permalink": "/whatap-docs/redis/agent-xos-settings",
+  "description": "데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
+  "source": "@site/docs/postgresql/agent-xos-settings.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/agent-xos-settings",
+  "permalink": "/whatap-docs/postgresql/agent-xos-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/agent-xos-settings.mdx",
+  "editUrl": "undefined/docs/postgresql/agent-xos-settings.mdx",
   "tags": [
     {
-      "label": "Redis",
-      "permalink": "/whatap-docs/tags/redis"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     },
     {
-      "label": "데이터베이스",
-      "permalink": "/whatap-docs/tags/데이터베이스"
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     },
     {
       "label": "XOS 에이전트",
@@ -716,21 +659,21 @@ const metadata = {
   "frontMatter": {
     "id": "agent-xos-settings",
     "title": "XOS 에이전트 설정",
-    "description": "Redis 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
+    "description": "데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
     "tags": [
-      "Redis",
-      "데이터베이스",
+      "PostgreSQL",
+      "데이터베이스 모니터링",
       "XOS 에이전트"
     ]
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/redis/agent-dbx-settings"
+    "permalink": "/whatap-docs/postgresql/agent-dbx-settings"
   },
   "next": {
     "title": "관리하기",
-    "permalink": "/whatap-docs/redis/agent-manage"
+    "permalink": "/whatap-docs/postgresql/agent-manage"
   }
 };
 const assets = {
@@ -744,18 +687,17 @@ const assets = {
 
 
 
-
-const toc = [..._common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM];
+const toc = [..._common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "1.7.0"
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      ver: "1.6.7"
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_7__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

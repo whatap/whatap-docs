@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[74983],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[29972],{
 
 /***/ 34789:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -161,7 +161,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc} = _components;
+  }, {Cmdname, InDoc} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
@@ -305,26 +306,21 @@ function _createMdxContent(props) {
             children: "String"
           })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그"
-            })
-          }), " 메뉴(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "라이브 테일"
-            })
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그 트렌드"
-            })
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그 검색"
-            })
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "로그 설정"
-            })
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_log",
+            className: "uitext"
+          }), " 메뉴(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logTail",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logExplorer",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logSearch",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_logSetting",
+            className: "uitext"
           }), ")를 이용하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "file"
           }), " 옵션에 모니터링하려는 로그 파일명의 절대 경로로 입력하세요."]
@@ -654,7 +650,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 83893:
+/***/ 3392:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -679,29 +675,29 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'agent-xos-settings',
 	title: 'XOS 에이전트 설정',
-	description: 'MongoDB 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.',
+	description: 'Redis 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.',
 	tags: [
-		'MongoDB',
+		'Redis',
 		'데이터베이스',
 		'XOS 에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/agent-xos-settings",
+  "id": "redis/agent-xos-settings",
   "title": "XOS 에이전트 설정",
-  "description": "MongoDB 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
-  "source": "@site/docs/mongodb/agent-xos-settings.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/agent-xos-settings",
-  "permalink": "/whatap-docs/mongodb/agent-xos-settings",
+  "description": "Redis 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
+  "source": "@site/docs/redis/agent-xos-settings.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/agent-xos-settings",
+  "permalink": "/whatap-docs/redis/agent-xos-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/agent-xos-settings.mdx",
+  "editUrl": "undefined/docs/redis/agent-xos-settings.mdx",
   "tags": [
     {
-      "label": "MongoDB",
-      "permalink": "/whatap-docs/tags/mongo-db"
+      "label": "Redis",
+      "permalink": "/whatap-docs/tags/redis"
     },
     {
       "label": "데이터베이스",
@@ -716,21 +712,21 @@ const metadata = {
   "frontMatter": {
     "id": "agent-xos-settings",
     "title": "XOS 에이전트 설정",
-    "description": "MongoDB 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
+    "description": "Redis 데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
     "tags": [
-      "MongoDB",
+      "Redis",
       "데이터베이스",
       "XOS 에이전트"
     ]
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "redisSidebar",
   "previous": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/mongodb/agent-dbx-settings"
+    "permalink": "/whatap-docs/redis/agent-dbx-settings"
   },
   "next": {
     "title": "관리하기",
-    "permalink": "/whatap-docs/mongodb/agent-manage"
+    "permalink": "/whatap-docs/redis/agent-manage"
   }
 };
 const assets = {
