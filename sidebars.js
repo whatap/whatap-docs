@@ -1507,7 +1507,7 @@ const sidebars = {
                 'postgresql/analysis-session-history',
                 'postgresql/analysis-wait-events',
                 'postgresql/analysis-top-object',
-                'postgresql/analysis-compare-top-sql',
+                // 'postgresql/analysis-compare-top-sql',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -1814,7 +1814,7 @@ const sidebars = {
                 'oracle-dma/analysis-count-trend',
                 'oracle-dma/analysis-lock-and-deadlock',
                 'oracle-dma/analysis-session-history',
-                'oracle-dma/analysis-compare-top-sql',
+                // 'oracle-dma/analysis-compare-top-sql',
                 'oracle-dma/analysis-pq-tree',
                 'oracle-dma/analysis-databaseparameter',
               ]
@@ -1966,7 +1966,7 @@ const sidebars = {
               items: [
                 'mysql/analysis-count-trend',
                 'mysql/analysis-lock-and-deadlock',
-                'mysql/analysis-compare-top-sql',
+                // 'mysql/analysis-compare-top-sql',
                 'mysql/analysis-databaseparameter',
               ]
             },
