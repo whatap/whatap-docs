@@ -1,0 +1,3425 @@
+{
+  "A001_LF_AppDailyReport": {
+    "ko": "일간 이벤트 보고서",
+    "en": "Application Daily Event Report",
+    "ja": "日次レポート：イベント"
+  },
+  "A001_AppDailyReport": {
+    "ko": "일간 애플리케이션 보고서",
+    "en": "Application Daily Report",
+    "ja": "日次レポート：アプリケーション"
+  },
+  "A002_AppDailyAllCharts": {
+    "ko": "일간 애플리케이션 추이차트",
+    "en": "Application Daily Trend Chart",
+    "ja": "日次レポート：アプリケーショントレンド"
+  },
+  "A003_AppDailyHitmap": {
+    "ko": "일간 애플리케이션 히트맵",
+    "en": "Application Daily Hitmap",
+    "ja": "日次レポート：アプリケーションヒットマップ"
+  },
+  "A004_AppDailyProjectPerfReport": {
+    "ko": "애플리케이션 피크 성능 비교",
+    "en": "Application Peak Performance Comparison",
+    "ja": "日次レポート：アプリケーションピーク性能比較"
+  },
+  "A005_AppIPStatReport": {
+    "ko": "일간 애플리케이션 IP 통계",
+    "en": "Application IP statistics",
+    "ja": "日次レポート：アプリケーションIP統計"
+  },
+  "A006_AppUserStatReport": {
+    "ko": "일간 애플리케이션 사용자 통계",
+    "en": "Application User Statistics",
+    "ja": "日次レポート：アプリケーションユーザー統計"
+  },
+  "A007_AppDailyTxTimeLimitList": {
+    "ko": "일간 임계치 초과 트랜잭션 리스트",
+    "en": "Application Daily Tx Threshold Exceeded LIST",
+    "ja": "日次レポート：しきい値超過トランザクションリスト"
+  },
+  "A008_AppDailyOkindTxThresholdList": {
+    "ko": "일간 애플리케이션 종류별 임계치 초과 트랜잭션 리스트",
+    "en": "Application Daily Okind Tx Threshold Exceeded LIST",
+    "ja": "日次レポート：アプリケーション毎のしきい値超過トランザクションリスト"
+  },
+  "A010_AppDailyOidSummaryReport": {
+    "ko": "일간 애플리케이션 요약 보고서",
+    "en": "Application Daily Summary Report",
+    "ja": "日次レポート：アプリケーション要約"
+  },
+  "A011_AppDailyOidDetailReport": {
+    "ko": "애플리케이션 모니터링 수시 리포트",
+    "en": "Application Daily Detail Report",
+    "ja": "日次レポート：アプリケーション詳細"
+  },
+  "A012_AppDailyOidCustomReport": {
+    "ko": "일간 애플리케이션 사용자정의 보고서",
+    "en": "Application Daily Custom Report",
+    "ja": "日次レポート：アプリケーションユーザー定義"
+  },
+  "A013_AppDailyErrorStatReport": {
+    "ko": "일간 애플리케이션 에러통계 보고서",
+    "en": "Application Daily Error Statistics Report",
+    "ja": "日次レポート：アプリケーションエラー統計"
+  },
+  "A014_AppDailySQLTopNReport": {
+    "ko": "일간 애플리케이션 SQL TOP-N 보고서",
+    "en": "Application Daily SQL TOP-N Report",
+    "ja": "日次レポート：アプリケーションSQLトップN"
+  },
+  "A015_AppDailyHttpcReport": {
+    "ko": "일간 Http Call 지연 보고서",
+    "en": "Application Daily Http Call Report",
+    "ja": "日次レポート：アプリケーションHTTPコール遅延"
+  },
+  "A050_AppDailyAnalysisReport": {
+    "ko": "일간 애플리케이션 분석 보고서",
+    "en": "Application Daily Analysis Report",
+    "ja": "日次レポート：アプリケーション分析"
+  },
+  "A100_AppWeeklyReport": {
+    "ko": "주간 애플리케이션 보고서",
+    "en": "Application Weekly Report",
+    "ja": "週次レポート：アプリケーション"
+  },
+  "A100_AppWeeklySimpleReport": {
+    "ko": "주간 애플리케이션 요약 보고서",
+    "en": "Application Weekly Simple Report",
+    "ja": "週次レポート：アプリケーション要約"
+  },
+  "A101_AppWeeklyOkindReport": {
+    "ko": "주간 애플리케이션 종류별 보고서",
+    "en": "Application Weekly Okind Report",
+    "ja": "週次レポート：アプリケーション業務別"
+  },
+  "A110_AppWeeklyErrorStatReport": {
+    "ko": "주간 애플리케이션 에러통계 보고서",
+    "en": "Application Weekly Error Statistics Report",
+    "ja": "週次レポート：アプリケーションエラー統計"
+  },
+  "A110_AppWeeklyOkindErrorStatReport": {
+    "ko": "주간 애플리케이션 종류별 에러통계 보고서",
+    "en": "Application Weekly Okind Error Statistics Report",
+    "ja": "週次レポート：アプリケーション業務別エラー統計"
+  },
+  "A150_AppPerformance": {
+    "ko": "주간 성능비교 보고서",
+    "en": "Weekly Performance Comparison",
+    "ja": "週次レポート：性能比較"
+  },
+  "A151_AppWeeklyPerformance": {
+    "ko": "2주간 성능비교 보고서(KYCU)",
+    "undefined": "2주간 성능비교 보고서(KYCU)"
+  },
+  "A155_AppMonthPerformance": {
+    "ko": "월간 성능비교 보고서",
+    "en": "Monthly Performance Comparison",
+    "ja": "月次レポート：性能比較"
+  },
+  "A156_AppMonthPerformance": {
+    "ko": "월간 성능 비교 보고서(KYCU)",
+    "undefined": "월간 성능 비교 보고서(KYCU)"
+  },
+  "A200_AppMonthlyReport": {
+    "ko": "월간 애플리케이션 보고서",
+    "en": "Application Monthly Report",
+    "ja": "月次レポート：アプリケーション"
+  },
+  "A201_AppMonthlyOperReport": {
+    "ko": "월간 가용률 보고서",
+    "en": "Application Monthly Operation Rate Report",
+    "ja": "月次レポート：アプリケーション可用率"
+  },
+  "A202_AppMonthlyPerformanceSummary": {
+    "ko": "월간 애플리케이션 성능 요약 보고서",
+    "en": "Application Monthly Performance Summary Report",
+    "ja": "月次レポート：アプリケーション性能要約"
+  },
+  "A203_AppMonthlyVisitorReport": {
+    "ko": "월간 애플리케이션 방문자 보고서",
+    "en": "Application Monthly Visitor Report",
+    "ja": "月次レポート：アプリケーション接続ユーザー数"
+  },
+  "A210_AppMonthlyTxStatReport": {
+    "ko": "월간 서비스 통계 보고서",
+    "en": "Application Monthly Service Statistics Report",
+    "ja": "月次レポート：サービス統計"
+  },
+  "A215_AppMonthlyOkindErrorStatReport": {
+    "ko": "월간 애플리케이션 종류별 에러통계 보고서",
+    "en": "Application Monthly Okind Error Statistics Report",
+    "ja": "月次レポート：アプリケーション種類別のエラー統計"
+  },
+  "A220_AppMonthlyAnalysisReport": {
+    "ko": "월간 애플리케이션 분석 보고서",
+    "en": "Application Monthly Analysis Report",
+    "ja": "月次レポート：アプリケーション分析"
+  },
+  "A225_AppMonthlyOkindTxStatReport": {
+    "ko": "월간 애플리케이션 종류별 통계 보고서",
+    "en": "Application Kinds Monthly Tx Statistics Report",
+    "ja": "月次レポート：アプリケーション種類別の統計"
+  },
+  "K001_ContainerDailyReport": {
+    "ko": "Node별 컨테이너 보고서",
+    "en": "Container Daily Report by Node",
+    "ja": "日次レポート：ノード別コンテナ"
+  },
+  "K002_ContainerDailyReportByPodGroup": {
+    "ko": "Pod그룹별 컨테이너 보고서",
+    "en": "Container Daily Report by Pod Group",
+    "ja": "日次レポート：Podグループ別コンテナ"
+  },
+  "K003_AppStatusByPod": {
+    "ko": "Pod별 애플리케이션 보고서",
+    "en": "Application Status By Pod",
+    "ja": "Pod別アプリケーションレポート"
+  },
+  "K001_KubeDailyCpuMemReport": {
+    "ko": "Pod별 일간 CPU/Memory 보고서",
+    "en": "Kube Daily Cpu/Memory Report",
+    "ja": "日次レポート：Pod別CPU/Memory"
+  },
+  "K002_KubeDailyOkindResourceReport": {
+    "ko": "일간 컨테이너 업무별 리소스 보고서",
+    "en": "Kube Daily Okind Resource Report",
+    "ja": "日次レポート：コンテナ業務別リソース"
+  },
+  "K101_KubeWeeklyCpuMemReport": {
+    "ko": "Pod별 주간 CPU/Memory 보고서",
+    "en": "Kube Weekly Cpu/Memory Report",
+    "ja": "週次レポート：Pod別CPU/Memory"
+  },
+  "K202_KubeMonthlyOkindResourceReport": {
+    "ko": "월간 컨테이너 업무별 리소스 보고서",
+    "en": "Kube Monthly Okind Resource Report",
+    "ja": "月次レポート：コンテナ業務別リソース"
+  },
+  "S000_ServerDailyTotalReport": {
+    "ko": "일간 서버 종합 보고서",
+    "en": "Daily Comprehensive Server Report",
+    "ja": "日次レポート：サーバー総合"
+  },
+  "S001_ServerDailyReport": {
+    "ko": "일간 서버 보고서",
+    "en": "Daily Server Report",
+    "ja": "日次レポート：サーバー"
+  },
+  "S002_ServerDailyEventReport": {
+    "ko": "일간 이벤트 보고서",
+    "en": "Daily Event Report",
+    "ja": "日次レポート：イベント"
+  },
+  "S003_ServerDailyReportDisk": {
+    "ko": "일간 시간별 DISK 보고서",
+    "en": "Daily Server Report (Disk)",
+    "ja": "日次レポート：時間別ディスク"
+  },
+  "S004_ServerDailyResourceReport": {
+    "ko": "일간 서버 리소스 보고서",
+    "en": "Daily Server Resource Report",
+    "ja": "日次レポート：サーバーリソース"
+  },
+  "S005_ServerIPStatReport": {
+    "ko": "일간 서버 IP 변경이력 보고서",
+    "en": "Server IP Change History Report",
+    "ja": "日次レポート：サーバーIPアドレス変更履歴"
+  },
+  "S100_ServerWeeklyReport": {
+    "ko": "주간 서버 보고서",
+    "en": "Weekly Server Report",
+    "ja": "週次レポート：サーバー"
+  },
+  "S101_ServerWeeklyReportDisk": {
+    "ko": "주간 서버 보고서(디스크)",
+    "en": "Weekly Server Report (Disk)",
+    "ja": "週次レポート：サーバー(ディスク)"
+  },
+  "S111_ServerWeekly_TotalReport": {
+    "ko": "주간 Total 보고서",
+    "en": "Weekly Comprehensive Report",
+    "ja": "週次レポート：トータル"
+  },
+  "S112_ServerWeeklyDayDetailReport": {
+    "ko": "주간 서버 주요지표(일별)",
+    "en": "Weekly Server Key Metrics (Daily)",
+    "ja": "週次レポート：サーバー主要指標(日別)"
+  },
+  "S200_ServerMonthlyReport": {
+    "ko": "월간 서버 보고서",
+    "en": "Monthly Server Report",
+    "ja": "月次レポート：サーバー"
+  },
+  "S200_ServerMonthly5MDetailReport": {
+    "ko": "월간 서버 주요지표(5분별)",
+    "en": "Monthly Server Key Metrics (5min)",
+    "ja": "月次レポート：サーバー主要指標(5分)"
+  },
+  "S200_ServerMonthlyDetailReport": {
+    "ko": "월간 서버 주요지표(시간별)",
+    "en": "Monthly Server Key Metrics (Hourly)",
+    "ja": "月次レポート：サーバー主要指標(時間)"
+  },
+  "S200_ServerMonthlyDayDetailReport": {
+    "ko": "월간 서버 주요지표(일별)",
+    "en": "Monthly Server Key Metrics (Daily)",
+    "ja": "月次レポート：サーバー主要指標(日別)"
+  },
+  "S201_ServerMonthlyReportDisk": {
+    "ko": "월간 서버 보고서(디스크)",
+    "en": "월간 서버 보고서(디스크)",
+    "ja": "月次レポート：サーバー(ディスク)"
+  },
+  "S202_ServerMonthlyDetailReport": {
+    "ko": "월간 서버 보고서(상세)",
+    "en": "Monthly Server Report (Detail)",
+    "ja": "月次レポート：サーバー(詳細)"
+  },
+  "S001_ServerDaily_TagReport": {
+    "ko": "일간 서버 보고서",
+    "en": "Daily Server Report",
+    "ja": "日次レポート：サーバー"
+  },
+  "S100_ServerWeekly_TagReport": {
+    "ko": "주간 서버 보고서",
+    "en": "Weekly Server Report",
+    "ja": "週次レポート：サーバー"
+  },
+  "S101_ServerWeekly_TagReportDisk": {
+    "ko": "주간 서버 보고서(디스크)",
+    "en": "Weekly Server Report (Disk)",
+    "ja": "週次レポート：サーバー(ディスク)"
+  },
+  "S200_ServerMonthly_TagReport": {
+    "ko": "월간 서버 보고서",
+    "en": "Monthly Server Report",
+    "ja": "月次レポート：サーバー"
+  },
+  "S201_ServerMonthly_TagReportDisk": {
+    "ko": "월간 서버 보고서(디스크)",
+    "en": "Monthly Server Report (Disk)",
+    "ja": "月次レポート：サーバー(ディスク)"
+  },
+  "A00_DailyReportTag": {
+    "ko": "일간 메트릭 추이현황(Avg/Max)",
+    "en": "Daily Metric Trend Charts(Avg/Max)",
+    "ja": "日次レポート：メトリクス推移(平均/最大)"
+  },
+  "ALL_DailyReportTag": {
+    "ko": "일간 메트릭 추이현황",
+    "en": "Daily Metric Trend Charts",
+    "ja": "日次レポート：メトリクス推移"
+  },
+  "ALL_DailyReportTagWeek": {
+    "ko": "메트릭 추이현황(주별)",
+    "en": "Metric Trend Charts(Week)",
+    "ja": "メトリクス推移(週)"
+  },
+  "D001_DailyReport": {
+    "ko": "일간 DB 보고서",
+    "en": "Daily DB Report",
+    "ja": "日次レポート：データベース"
+  },
+  "D001_WeeklyDiffReport": {
+    "ko": "주간 DB 보고서",
+    "en": "Weekly DB Report",
+    "ja": "週次レポート：データベース"
+  },
+  "D100_MonthlyReport": {
+    "ko": "월간 DB 보고서",
+    "en": "Monthly DB Report",
+    "ja": "月次レポート：データベース"
+  },
+  "D111_TiberoDailyCustomReport": {
+    "ko": "Tibero 일간 사용자 정의 보고서",
+    "en": "Tibero Daily Custom Report",
+    "ja": "日次レポート：Tibero DBのユーザー定義"
+  },
+  "D112_TiberoWeeklyCustomReport": {
+    "ko": "Tibero 주간 사용자 정의 보고서",
+    "en": "Tibero Weekly Custom Report",
+    "ja": "週次レポート：Tibero DBのユーザー定義"
+  },
+  "D113_TiberoMonthlyCustomReport": {
+    "ko": "Tibero 월간 사용자 정의 보고서",
+    "en": "Tibero Monthly Custom Report",
+    "ja": "月次レポート：Tibero DBのユーザー定義"
+  },
+  "D130_MysqlDailyReport": {
+    "ko": "MySql 일간 사용자 정의 보고서",
+    "en": "MySql Daily Custom Report",
+    "ja": "日次レポート：MySQL DBのユーザー定義"
+  },
+  "D131_MysqlWeeklyReport": {
+    "ko": "MySql 주간 사용자 정의 보고서",
+    "en": "MySql Weekly Custom Report",
+    "ja": "週次レポート：MySQL DBのユーザー定義"
+  },
+  "D132_MysqlMonthlyReport": {
+    "ko": "MySql 월간 사용자 정의 보고서",
+    "en": "MySql Monthly Custom Report",
+    "ja": "月次レポート：MySQL DBのユーザー定義"
+  },
+  "TAG_DailyDataVerification": {
+    "ko": "일일 데이터 검증(5M)",
+    "en": "Daily Data Verification(5M)",
+    "ja": "日別のデータ検証(5M)"
+  },
+  "A001_AppProjectDayReport": {
+    "ko": "A001_AppProjectDayReport",
+    "en": "A001_AppProjectDayReport",
+    "ja": "日次レポート：アプリケーションプロジェクト"
+  },
+  "W900_AppWhatapAgentVersion": {
+    "ko": "Whatap Agent 현황",
+    "en": "Whatap Agent Status",
+    "ja": "WhaTapエージェント"
+  },
+  "W999_EventCheck": {
+    "ko": "W999_EventCheck",
+    "en": "W999_EventCheck",
+    "ja": "W999_EventCheck"
+  },
+  "W999_MigTool": {
+    "ko": "W999_MigTool",
+    "en": "W999_MigTool",
+    "ja": "W999_MigTool"
+  },
+  "B001_DailyReport": {
+    "ko": "일간 브라우저 보고서",
+    "en": "Browser Daily Report",
+    "ja": "日次レポート：Browser"
+  },
+  "daily_visitor_count": {
+    "ko": "일간 방문자 수",
+    "en": "Daily Visitor Count",
+    "ja": "日別の接続ユーザー数"
+  },
+  "summary_metrics": {
+    "ko": "요약 지표",
+    "en": "Summary Metrics",
+    "ja": "要約指標"
+  },
+  "2_weeks_ago": {
+    "ko": "2주전",
+    "en": "2 weeks ago",
+    "ja": "2週間前"
+  },
+  "a_week_ago": {
+    "ko": "일주일 전",
+    "en": "A week ago",
+    "ja": "1週間前"
+  },
+  "all": {
+    "ko": "전체",
+    "en": "All",
+    "ja": "すべて"
+  },
+  "availability": {
+    "ko": "가용률",
+    "en": "Availability",
+    "ja": "可用率"
+  },
+  "active_cnt": {
+    "ko": "액티브건수",
+    "en": "Active Count",
+    "ja": "アクティブカウント数"
+  },
+  "active_tx_avg": {
+    "ko": "평균 액티브트랜잭션",
+    "en": "Active TX Avg",
+    "ja": "平均アクティブTX"
+  },
+  "active_tx_cnt": {
+    "ko": "액티브 트랜잭션",
+    "en": "Active TX Count",
+    "ja": "アクティブTX"
+  },
+  "active_tx_max": {
+    "ko": "최대 액티브트랜잭션",
+    "en": "Active TX MAx",
+    "ja": "最大アクティブTX"
+  },
+  "agent": {
+    "ko": "에이전트",
+    "en": "Agent",
+    "ja": "エージェント"
+  },
+  "alarms_list": {
+    "ko": "알림내역",
+    "en": "Alert Details",
+    "ja": "アラート詳細"
+  },
+  "alert_type": {
+    "ko": "알림 유형",
+    "en": "Alert Types",
+    "ja": "タイプ"
+  },
+  "alert_count": {
+    "ko": "알림 건수",
+    "en": "Number of Alerts",
+    "ja": "アラート件数"
+  },
+  "alert_count_exceeded": {
+    "ko": "알림 건수가 %d건을 초과했습니다.",
+    "en": "The number of alerts exeeded %d.",
+    "ja": "アラートの件数が%d件を超えました。"
+  },
+  "alert_history": {
+    "ko": "알림 기록",
+    "en": "Alert History",
+    "ja": "アラート履歴"
+  },
+  "amount_of_change": {
+    "ko": "증감건",
+    "en": "Increase/Decrease",
+    "ja": "増減"
+  },
+  "application_okind": {
+    "ko": "애플리케이션 종류",
+    "en": "Application Kinds",
+    "ja": "アプリケーションタイプ"
+  },
+  "application_server": {
+    "ko": "애플리케이션<br>서버",
+    "en": "Application<br>Server",
+    "ja": "アプリケーション<br>サーバー"
+  },
+  "application_summary": {
+    "ko": "애플리케이션별 현황",
+    "en": "Application Summary",
+    "ja": "アプリケーション別の要約"
+  },
+  "application": {
+    "ko": "애플리케이션",
+    "en": "Application",
+    "ja": "アプリケーション"
+  },
+  "application_count": {
+    "ko": "애플리케이션 수",
+    "en": "Application Count",
+    "ja": "アプリケーション数"
+  },
+  "avg": {
+    "ko": "평균",
+    "en": "Average",
+    "ja": "平均"
+  },
+  "avg_max_by_metrics": {
+    "ko": "지표별 평균/최대값",
+    "en": "Average/Maximum Value by Metrics",
+    "ja": "指標別平均/最大値"
+  },
+  "basic_information": {
+    "ko": "기본 정보",
+    "en": "Basic Information",
+    "ja": "基本情報"
+  },
+  "change_rate": {
+    "ko": "(변동률)",
+    "en": "(change_rate)",
+    "ja": "(増減率)"
+  },
+  "count": {
+    "ko": "건수",
+    "en": "Count",
+    "ja": "件数"
+  },
+  "comparison": {
+    "ko": "비교",
+    "en": "Comparison",
+    "ja": "比較"
+  },
+  "cpu_avg": {
+    "ko": "CPU(%) 평균",
+    "en": "CPU(%) Avg.",
+    "ja": "CPU(%)平均"
+  },
+  "cpu_core": {
+    "ko": "CPU 코어",
+    "en": "CPU Core",
+    "ja": "CPUコア"
+  },
+  "cpu_info": {
+    "ko": "CPU 정보",
+    "en": "CPU Information",
+    "ja": "CPU情報"
+  },
+  "cpu_max": {
+    "ko": "CPU(%) 최대",
+    "en": "CPU(%) Max",
+    "ja": "CPU(%)最大"
+  },
+  "cpu_percent": {
+    "ko": "CPU(%)",
+    "en": "CPU(%)",
+    "ja": "CPU(%)"
+  },
+  "cpu_used_percent": {
+    "ko": "CPU 사용률(%)",
+    "en": "CPU Used Percent",
+    "ja": "CPU使用率(%)"
+  },
+  "cpu_trend": {
+    "ko": "서버 CPU 사용률",
+    "en": "Server CPU Used Percent",
+    "ja": "サーバーCPU使用率"
+  },
+  "cpu_usage_trend_by_server": {
+    "ko": "서버별 CPU 사용 추이현황",
+    "en": "CPU Usage Trend By Server",
+    "ja": "サーバー別のCPU使用推移"
+  },
+  "cpu_sys": {
+    "ko": "CPU SYS 사용률",
+    "en": "CPU SYS Utilization",
+    "ja": "CPU SYS使用率"
+  },
+  "cpu_process": {
+    "ko": "자바 CPU 사용률",
+    "en": "Java CPU Used Percent",
+    "ja": "Java CPU使用率"
+  },
+  "cpu_max_%d_server_list": {
+    "ko": "CPU 최대 %d%% - 서버 목록",
+    "en": "CPU Max %d%% - Server List",
+    "ja": "CPU最大(%d%%)：サーバーリスト"
+  },
+  "cpu_P99_max": {
+    "ko": "CPU(%) P.99 max",
+    "en": "CPU(%) P.99 max",
+    "ja": "CPU(%)最大(P.99)"
+  },
+  "system_memory_used_percent": {
+    "ko": "시스템메모리 사용률(%)",
+    "en": "System Memory Used Percent",
+    "ja": "システムメモリ使用率(%)"
+  },
+  "create_time": {
+    "ko": "생성 시간",
+    "en": "Create Time",
+    "ja": "生成時刻"
+  },
+  "stack_data": {
+    "ko": "스택 데이터",
+    "en": "Stack Data",
+    "ja": "スタックデータ　"
+  },
+  "error_data": {
+    "ko": "Error 데이터",
+    "en": "Error Data",
+    "ja": "エラーデータ"
+  },
+  "tx_data": {
+    "ko": "트랜잭션 데이터",
+    "en": "Transaction Data",
+    "ja": "トランザクションデータ"
+  },
+  "sql_data": {
+    "ko": "SQL 데이터",
+    "en": "SQL Data",
+    "ja": "SQLデータ"
+  },
+  "critical_event": {
+    "ko": "치명적 이벤트",
+    "en": "Critical Event",
+    "ja": "クリティカルイベント"
+  },
+  "current_date": {
+    "ko": "현재 날짜",
+    "en": "Current Date",
+    "ja": "今日"
+  },
+  "curr_month": {
+    "ko": "당월",
+    "en": "Current Month",
+    "ja": "今月"
+  },
+  "customer_loyalty": {
+    "ko": "고객 충성도",
+    "en": "Customer Loyalty",
+    "ja": "カスタマーロイヤリティ"
+  },
+  "daily_avg_performance": {
+    "ko": "일일평균성능",
+    "en": "Daily Avg Performance",
+    "ja": "日別平均性能"
+  },
+  "daily_hitmap": {
+    "ko": "일간 트랜잭션 분포도",
+    "en": "Daily Transaction Distribution",
+    "ja": "日別TX分布図"
+  },
+  "daily_hour_stat": {
+    "ko": "시간대별 통계",
+    "en": "Hourly Statistics",
+    "ja": "時間帯別統計"
+  },
+  "daily_m5_stat": {
+    "ko": "5분 통계",
+    "en": "5M Statistics",
+    "ja": "5分統計"
+  },
+  "daily_txcount": {
+    "ko": "일간 트랜잭션 수",
+    "en": "Daily Transaction Count",
+    "ja": "日別TX数"
+  },
+  "daily_visitor": {
+    "ko": "일간 방문자 수",
+    "en": "Daily Visitor Count",
+    "ja": "日別接続者数"
+  },
+  "daily_trend_avg": {
+    "ko": "일일 추이 (평균)",
+    "en": "Daily Trend (Average)",
+    "ja": "日別推移(平均)"
+  },
+  "db_name": {
+    "ko": "DB 이름",
+    "en": "DB Name",
+    "ja": "DB名"
+  },
+  "description": {
+    "ko": "설명",
+    "en": "Description",
+    "ja": "説明"
+  },
+  "disk": {
+    "ko": "디스크",
+    "en": "Disk",
+    "ja": "ディスク"
+  },
+  "disk_percent": {
+    "ko": "디스크(%)",
+    "en": "Disk(%)",
+    "ja": "ディスク(%)"
+  },
+  "disk_avg": {
+    "ko": "디스크(%) 평균",
+    "en": "Disk(%) Avg.",
+    "ja": "ディスク(%)平均"
+  },
+  "disk_max": {
+    "ko": "디스크(%) 최대",
+    "en": "Disk(%) Max",
+    "ja": "ディスク(%)最大"
+  },
+  "disk_info": {
+    "ko": "디스크 정보",
+    "en": "Disk Information",
+    "ja": "ディスク情報"
+  },
+  "disk_utilization_trend": {
+    "ko": "디스크 사용률 추이",
+    "en": "Disk Utilization Trend",
+    "ja": "ディスク使用率推移"
+  },
+  "disk_max_%d_server_list": {
+    "ko": "디스크 최대 %d%% - 서버 목록",
+    "en": "Disk Max %d%% - Server List",
+    "ja": "ディスク最大(%d%%)：サーバーリスト"
+  },
+  "disk_used_list": {
+    "ko": "디스크 사용 목록",
+    "en": "Disk Used List",
+    "ja": "ディスク使用リスト"
+  },
+  "disk_usage_of_%d%%_or_more_by_server": {
+    "ko": "서버별 디스크 %d%% 이상 사용현황",
+    "en": "Disk Usage of %d%% or More By Server",
+    "ja": "サーバー別ディスク使用率%d%%以上の現況"
+  },
+  "elapsed_time_avg": {
+    "ko": "수행시간(평균)",
+    "en": "Elapsed Time (Avgerage)",
+    "ja": "所要時間(平均)"
+  },
+  "elapsed_time_max": {
+    "ko": "수행시간(최대)",
+    "en": "Elapsed Time (Max)",
+    "ja": "所要時間(最大)"
+  },
+  "end_date": {
+    "ko": "종료일",
+    "en": "End Date",
+    "ja": "終了日"
+  },
+  "err_cnt_diff": {
+    "ko": "에러건수 비교",
+    "en": "Error Count Comparison",
+    "ja": "エラー件数比較"
+  },
+  "err_stat": {
+    "ko": "에러 통계",
+    "en": "Error Stat",
+    "ja": "エラー統計"
+  },
+  "error_class": {
+    "ko": "에러 클래스",
+    "en": "Error Class",
+    "ja": "エラークラス"
+  },
+  "error_cnt": {
+    "ko": "에러건수",
+    "en": "Error Count",
+    "ja": "エラー件数"
+  },
+  "error_message": {
+    "ko": "에러 메시지",
+    "en": "Error Message",
+    "ja": "エラーメッセージ"
+  },
+  "error_ratio": {
+    "ko": "에러비율(%)",
+    "en": "Error Ratio(%)",
+    "ja": "エラー比率(%)"
+  },
+  "errors_by_application_kind": {
+    "ko": "애플리케이션 종류별 에러현황",
+    "en": "Errors by Application Kinds",
+    "ja": "アプリケーション種類別エラー現況"
+  },
+  "errors_by_application_kind2": {
+    "ko": "애플리케이션 종류별 에러현황(에러메시지 포함)",
+    "en": "Errors by Application Kinds(included Error Msg)",
+    "ja": "アプリケーション種類別エラー現況(エラーメッセージを含む)"
+  },
+  "errors_in_project": {
+    "ko": "프로젝트 에러현황",
+    "en": "Errors in this Project",
+    "ja": "プロジェクトエラー現況"
+  },
+  "errors_in_project2": {
+    "ko": "프로젝트 에러현황(에러메시지 포함)",
+    "en": "Errors in this Project(included Error Msg)",
+    "ja": "プロジェクトエラー現況(エラーメッセージを含む)"
+  },
+  "event_count": {
+    "ko": "이벤트 건수",
+    "en": "Event Count",
+    "ja": "イベント件数"
+  },
+  "event_message": {
+    "ko": "이벤트 메세지",
+    "en": "Event message",
+    "ja": "イベントメッセージ"
+  },
+  "group_name": {
+    "ko": "그룹명",
+    "en": "Group Name",
+    "ja": "グループ名"
+  },
+  "heap_avg": {
+    "ko": "Heap(Mb) 평균",
+    "en": "Heap(Mb) Avg",
+    "ja": "ヒープ(Mb)平均"
+  },
+  "heap_max": {
+    "ko": "Heap(Mb) 최대",
+    "en": "Heap(Mb) Max",
+    "ja": "ヒープ(Mb)最大"
+  },
+  "heap_min": {
+    "ko": "힙(최소값)",
+    "en": "Heap(Min)",
+    "ja": "ヒープ(最小値)"
+  },
+  "heap_trend": {
+    "ko": "자바 힙 메모리 사용량",
+    "en": "Java Heap Memory Usage",
+    "ja": "Javaヒープメモリ使用量"
+  },
+  "host_count": {
+    "ko": "호스트 건수",
+    "en": "Number of Hosts",
+    "ja": "ホスト件数"
+  },
+  "httpc_cnt": {
+    "ko": "HTTPC 수",
+    "en": "HTTPC Count",
+    "ja": "HTTPC件数"
+  },
+  "httpc_time_avg": {
+    "ko": "HTTPC 시간 평균(ms)",
+    "en": "HTTPC Time Avg(ms)",
+    "ja": "HTTPC時間平均(ミリ秒)"
+  },
+  "ip_address": {
+    "ko": "IP 주소",
+    "en": "IP Address",
+    "ja": "IPアドレス"
+  },
+  "increase": {
+    "ko": "증가",
+    "en": "Increase",
+    "ja": "増加"
+  },
+  "increase_and_decrease": {
+    "ko": "증감",
+    "en": "Increase and Decrease",
+    "ja": "増減"
+  },
+  "instance_name": {
+    "ko": "인스턴스명",
+    "en": "Instance Name",
+    "ja": "インスタンス名"
+  },
+  "inflow": {
+    "ko": "유입",
+    "en": "Inflow",
+    "ja": "流入"
+  },
+  "inquiry_week": {
+    "ko": "조회 주",
+    "en": "Inquiry Week",
+    "ja": "照会(週)"
+  },
+  "inquiry_month": {
+    "ko": "조회 월",
+    "": "조회 월",
+    "ja": "照会(月)"
+  },
+  "inquiry_period_is_not_valid": {
+    "ko": "조회 기간이 유효하지 않습니다 :",
+    "en": "The inquiry period is not valid :",
+    "ja": "照会期間が有効ではありません。"
+  },
+  "last_act_time": {
+    "ko": "마지막 기동 시간",
+    "en": "Last Startup Time",
+    "ja": "最終起動時刻"
+  },
+  "last_week": {
+    "ko": "지난주",
+    "en": "Last Week",
+    "ja": "先週"
+  },
+  "last_week_cpu_avg": {
+    "ko": "지난주 CPU 평균",
+    "en": "Last Week's CPU Average",
+    "ja": "先週CPU平均"
+  },
+  "max": {
+    "ko": "최대",
+    "en": "Max",
+    "ja": "最大"
+  },
+  "memory": {
+    "ko": "메모리",
+    "en": "Memory",
+    "ja": "メモリ"
+  },
+  "mem_percent": {
+    "ko": "메모리(%)",
+    "en": "Memory(%)",
+    "ja": "メモリ(%)"
+  },
+  "mem_avg": {
+    "ko": "메모리(%) 평균",
+    "en": "Memory(%) Avg.",
+    "ja": "メモリ(%)平均"
+  },
+  "mem_info": {
+    "ko": "메모리 정보",
+    "en": "Memory Information",
+    "ja": "メモリ情報"
+  },
+  "mem_max": {
+    "ko": "메모리(%) 최대",
+    "en": "Memory(%) Max",
+    "ja": "メモリ(%)最大"
+  },
+  "mem_usage": {
+    "ko": "메모리 사용률",
+    "en": "Memory usage",
+    "ja": "メモリ使用率"
+  },
+  "mem_page_faults": {
+    "ko": "메모리 페이지폴트",
+    "en": "Memory PageFaults",
+    "ja": "メモリページフォールト"
+  },
+  "mem_summary": {
+    "ko": "메모리 사용현황",
+    "en": "Heap Used",
+    "ja": "メモリ使用現況"
+  },
+  "mem_sys": {
+    "ko": "서버 메모리 사용률",
+    "en": "Server Memory Used Percent",
+    "ja": "サーバーメモリ使用率"
+  },
+  "memory_max_%d_server_list": {
+    "ko": "메모리 최대 %d%% - 서버 목록",
+    "en": "Memory Max %d%% - Server List",
+    "ja": "メモリ最大(%d%%)：サーバーリスト"
+  },
+  "metric": {
+    "ko": "항목",
+    "en": "Metric",
+    "ja": "項目"
+  },
+  "metric_status_by_server": {
+    "ko": "서버별 항목 현황",
+    "en": "Metric Status By Server",
+    "ja": "サーバー別メトリクス"
+  },
+  "min": {
+    "ko": "최소",
+    "en": "Min",
+    "ja": "最小"
+  },
+  "minute_avg": {
+    "ko": "분 평균",
+    "en": "minutes average",
+    "ja": "分平均"
+  },
+  "monthly_total_tx": {
+    "ko": "월간 트랜잭션 건수",
+    "en": "Monthly Total Transaction",
+    "ja": "月間TX件数"
+  },
+  "tx_count": {
+    "ko": "트랜잭션 건수",
+    "en": "Transaction Count",
+    "ja": "TX件数"
+  },
+  "tx_count_total": {
+    "ko": "총 트랜잭션 건수",
+    "en": "Total Transaction Count",
+    "ja": "総TX件数"
+  },
+  "monthly_active_users": {
+    "ko": "월간 사용자수",
+    "en": "Monthly Active Users",
+    "ja": "月間ユーザー数"
+  },
+  "mount_point": {
+    "ko": "마운트 위치",
+    "en": "Mount Point",
+    "ja": "マウント位置"
+  },
+  "network_traffic": {
+    "ko": "네트워크 트래픽",
+    "en": "Network Traffic",
+    "ja": "ネットワークトラフィック"
+  },
+  "no": {
+    "ko": "번호",
+    "en": "No.",
+    "ja": "番号"
+  },
+  "no_data": {
+    "ko": "해당 기간에 데이터가 존재하지 않습니다.",
+    "en": "No data exists for the period.",
+    "ja": "該当期間のデータが存在しません。"
+  },
+  "number_of_calls": {
+    "ko": "호출건수",
+    "en": "Number of Calls",
+    "ja": "呼出し件数"
+  },
+  "okind": {
+    "ko": "종류",
+    "en": "Okind",
+    "ja": "Okind"
+  },
+  "operating_rate": {
+    "ko": "가동률",
+    "en": "Operating Rate",
+    "ja": "稼働率"
+  },
+  "os_architecture": {
+    "ko": "OS 아키텍쳐",
+    "en": "OS Architecture",
+    "ja": "OSアーキテクチャ"
+  },
+  "os_info": {
+    "ko": "OS 정보",
+    "en": "OS Information",
+    "ja": "OS情報"
+  },
+  "overview": {
+    "ko": "개요",
+    "en": "Intro",
+    "ja": "概要"
+  },
+  "peaktime": {
+    "ko": "피크타임",
+    "": "피크타임",
+    "ja": "ピークタイム"
+  },
+  "peaktime_performance_summary": {
+    "ko": "피크타임 성능요약",
+    "en": "PeakTime Summary",
+    "ja": "ピークタイム性能要約"
+  },
+  "peaktime_performance": {
+    "ko": "피크타임성능",
+    "en": "PeakTime Performance",
+    "ja": "ピークタイム性能"
+  },
+  "percent": {
+    "ko": "퍼센트",
+    "en": "Percent",
+    "ja": "パーセント"
+  },
+  "performance_trend_chart": {
+    "ko": "성능추이차트",
+    "en": "Trend Chart",
+    "ja": "性能推移チャート"
+  },
+  "prev_month": {
+    "ko": "전월",
+    "en": "Previous Month",
+    "ja": "前月"
+  },
+  "prev_week": {
+    "ko": "전주",
+    "en": "Previous Week",
+    "ja": "前週"
+  },
+  "process": {
+    "ko": "프로세스",
+    "en": "Process",
+    "ja": "プロセス"
+  },
+  "process_owner": {
+    "ko": "프로세스 소유자",
+    "en": "Process Owner",
+    "ja": "プロセス所有者"
+  },
+  "processed": {
+    "ko": "처리",
+    "en": "Processed",
+    "ja": "処理"
+  },
+  "project_name": {
+    "ko": "프로젝트명",
+    "en": "Project Name",
+    "ja": "プロジェクト名"
+  },
+  "private_ip": {
+    "ko": "Private IP",
+    "en": "Private IP",
+    "ja": "プライベートIPアドレス"
+  },
+  "public_ip": {
+    "ko": "Public IP",
+    "en": "Public IP",
+    "ja": "パブリックIPアドレス"
+  },
+  "rate_of_change": {
+    "ko": "증감율",
+    "en": "Rate of Change",
+    "ja": "増減率"
+  },
+  "realtime_user": {
+    "ko": "동시접속 사용자",
+    "en": "Concurrent User",
+    "ja": "同時接続ユーザー数"
+  },
+  "realtime_visitor": {
+    "ko": "실시간 사용자",
+    "en": "Realtime Visitor",
+    "ja": "リアルタイムユーザー数"
+  },
+  "request_cnt": {
+    "ko": "요청건수",
+    "en": "Request Count",
+    "ja": "リクエスト件数"
+  },
+  "request": {
+    "ko": "트랜잭션 건수",
+    "en": "Request",
+    "ja": "TX件数"
+  },
+  "res_time_avg": {
+    "ko": "평균응답시간",
+    "en": "Response time average",
+    "ja": "平均応答時間"
+  },
+  "res_time_diff": {
+    "ko": "평균응답시간 비교",
+    "en": "Response time comparison",
+    "ja": "平均応答時間比較"
+  },
+  "resource_cpu_avg": {
+    "ko": "CPU(평균)",
+    "en": "CPU Avg",
+    "ja": "CPU(平均)"
+  },
+  "resource_cpu_max": {
+    "ko": "CPU(최대)",
+    "en": "CPU Max",
+    "ja": "CPU(最大)"
+  },
+  "resource_date": {
+    "ko": "일자",
+    "en": "Date",
+    "ja": "日付"
+  },
+  "resource_key": {
+    "ko": "키",
+    "en": "Resource key",
+    "ja": "リソースキー"
+  },
+  "resource_mem_avg": {
+    "ko": "MEM(평균)",
+    "en": "MEM Avg",
+    "ja": "メモリ(平均)"
+  },
+  "resource_mem_max": {
+    "ko": "MEM(최대)",
+    "en": "MEM Max",
+    "ja": "メモリ(最大)"
+  },
+  "resource_list": {
+    "ko": "자원 목록",
+    "en": "Resource list",
+    "ja": "リソースリスト"
+  },
+  "response_avg": {
+    "ko": "평균응답시간(ms)",
+    "en": "Avg Response(ms)",
+    "ja": "平均応答時間(ミリ秒)"
+  },
+  "response_max": {
+    "ko": "최대응답시간(ms)",
+    "en": "Max Response(ms)",
+    "ja": "最大応答時間(ミリ秒)"
+  },
+  "response_time": {
+    "ko": "응답시간",
+    "en": "Response Time",
+    "ja": "応答時間"
+  },
+  "response_time_per_hour": {
+    "ko": "시간당 평균 응답시간",
+    "en": "Response Time per Hour",
+    "ja": "時間毎平均応答時間"
+  },
+  "search_condition": {
+    "ko": "조회조건",
+    "en": "Lookup criteria",
+    "ja": "照会条件"
+  },
+  "search_day_1": {
+    "ko": "조회 전일",
+    "en": "Search Day-1",
+    "ja": "1日前"
+  },
+  "search_day_2": {
+    "ko": "조회일-2",
+    "en": "Search Day-2",
+    "ja": "2日前"
+  },
+  "search_day_3": {
+    "ko": "조회일-3",
+    "en": "Search Day-3",
+    "ja": "3日前"
+  },
+  "search_day": {
+    "ko": "조회 당일",
+    "en": "Search Day",
+    "ja": "当日"
+  },
+  "sec": {
+    "ko": "초",
+    "en": "Sec",
+    "ja": "秒"
+  },
+  "server_group_name": {
+    "ko": "서버그룹명",
+    "en": "Server Group Name",
+    "ja": "サーバーグループ名"
+  },
+  "server_info": {
+    "ko": "서버정보",
+    "en": "Server Information",
+    "ja": "サーバー情報"
+  },
+  "server_list": {
+    "ko": "서버목록",
+    "en": "Server List",
+    "ja": "サーバーリスト"
+  },
+  "server_name": {
+    "ko": "서버명",
+    "en": "Server Name",
+    "ja": "サーバー名"
+  },
+  "server_usage_history": {
+    "ko": "서버 사용 목록",
+    "en": "List of Servers In Use",
+    "ja": "サーバー使用リスト"
+  },
+  "service": {
+    "ko": "서비스(URL)",
+    "en": "Service(URL)",
+    "ja": "サービス(URL)"
+  },
+  "severity": {
+    "ko": "심각도",
+    "en": "Severity",
+    "ja": "深刻度"
+  },
+  "snapshot": {
+    "ko": "스냅샷",
+    "en": "Snapshot",
+    "ja": "スナップショット"
+  },
+  "sql_cnt": {
+    "ko": "SQL 건수",
+    "en": "SQL Count",
+    "ja": "SQL件数"
+  },
+  "sql_fetch_time_avg": {
+    "ko": "SQL 패치 시간 평균(ms)",
+    "en": "SQL Fetch Time Avg(ms)",
+    "ja": "平均SQLフェッチ時間(ミリ秒)"
+  },
+  "sql_fetch": {
+    "ko": "SQL 패치건수",
+    "en": "SQL Fetch",
+    "ja": "SQLフェッチ"
+  },
+  "sql_res_time": {
+    "ko": "SQL 평균응답시간",
+    "en": "SQL Time Average",
+    "ja": "平均SQL応答時間"
+  },
+  "sql_res_time_support": {
+    "ko": "(실행 건수 100건 이상)",
+    "en": "(Over 100 execute count)",
+    "undefined": "(실행 건수 100건 이상)"
+  },
+  "sql_time_avg": {
+    "ko": "SQL 시간 평균(ms)",
+    "en": "SQL Time Avg(ms)",
+    "ja": "平均SQL時間(ミリ秒)"
+  },
+  "stack": {
+    "ko": "스택",
+    "en": "Stack",
+    "ja": "スタック"
+  },
+  "start_act_time": {
+    "ko": "기동 시작 시간",
+    "en": "Startup Time",
+    "ja": "起動開始時刻"
+  },
+  "swap_usage": {
+    "ko": "SWAP 사용량",
+    "en": "SWAP Usage",
+    "ja": "SWAP使用率"
+  },
+  "title": {
+    "ko": "제목",
+    "en": "Title",
+    "ja": "タイトル"
+  },
+  "this_week": {
+    "ko": "이번주",
+    "en": "This Week",
+    "ja": "今週"
+  },
+  "threshold": {
+    "ko": "임계치",
+    "en": "Threshold",
+    "ja": "しきい値"
+  },
+  "time": {
+    "ko": "시간",
+    "en": "Time",
+    "ja": "時間"
+  },
+  "time_avg": {
+    "ko": "평균 시간",
+    "en": "Time Avg(ms)",
+    "ja": "平均時間(ミリ秒)"
+  },
+  "time_max": {
+    "ko": "최대 시간",
+    "en": "Time Max(ms)",
+    "ja": "最大時間(ミリ秒)"
+  },
+  "time_interval": {
+    "ko": "증감시간",
+    "en": "Time Interval",
+    "ja": "増減時間"
+  },
+  "time_of_occurrence": {
+    "ko": "발생 시간",
+    "en": "Time of occurrence",
+    "ja": "発生時刻"
+  },
+  "today": {
+    "ko": "오늘",
+    "en": "Today",
+    "ja": "今日"
+  },
+  "today_cpu_avg": {
+    "ko": "오늘 CPU 평균",
+    "en": "Today's CPU Average",
+    "ja": "今日のCPU平均"
+  },
+  "today2": {
+    "ko": "기준일",
+    "en": "Base date",
+    "ja": "基準日"
+  },
+  "top_stack": {
+    "ko": "탑스택",
+    "en": "Top Stack",
+    "ja": "Topスタック"
+  },
+  "top_%d_cpu_process_by_server": {
+    "ko": "서버별 CPU Top %d 프로세스 현황",
+    "en": "Top %d CPU Processes By Server",
+    "ja": "サーバー別CPU Top %dプロセスの現況"
+  },
+  "top_%d_memory_process_by_server": {
+    "ko": "서버별 메모리 Top %d 프로세스 현황",
+    "en": "Top %d Memory Processes By Server",
+    "ja": "サーバー別メモリTop %dプロセスの現況"
+  },
+  "httpc_count_top5": {
+    "ko": "httpc 건수 TOP 5",
+    "en": "httpc Count TOP 5",
+    "ja": "HTTPC件数のTop5"
+  },
+  "sql_restime_top5": {
+    "ko": "SQL 응답시간 TOP 5",
+    "en": "SQL ResponseTime TOP 5",
+    "ja": "SQL応答時間のTop5"
+  },
+  "tx_count_top5": {
+    "ko": "트랜잭션 건수 TOP 5",
+    "en": "Transaction Count TOP 5",
+    "ja": "TX件数のTop5"
+  },
+  "tx_error_top5": {
+    "ko": "트랜잭션 에러 TOP 5",
+    "en": "Transaction Error TOP 5",
+    "ja": "TXエラーのTop5"
+  },
+  "tx_restime_top5": {
+    "ko": "트랜잭션 응답시간 TOP 5",
+    "en": "Transaction ResponseTime TOP 5",
+    "ja": "TX応答時間のTop5"
+  },
+  "total": {
+    "ko": "전체",
+    "en": "Total",
+    "ja": "全体"
+  },
+  "total_alarms_count": {
+    "ko": "총 알림건수 :",
+    "en": "Number of alerts :",
+    "ja": "アラート総数 :"
+  },
+  "total_alarms": {
+    "ko": "전체 알림",
+    "en": "Alert All",
+    "ja": "全体アラート"
+  },
+  "total_cnt": {
+    "ko": "전체건수",
+    "en": "Total Count",
+    "ja": "全体件数"
+  },
+  "total_core": {
+    "ko": "전체 코어",
+    "en": "Total Core",
+    "ja": "全体コア"
+  },
+  "total_disk": {
+    "ko": "전체 디스크",
+    "en": "Total Disk",
+    "ja": "全体ディスク"
+  },
+  "total_err": {
+    "ko": "에러건수",
+    "en": "Total Error",
+    "ja": "エラー総数"
+  },
+  "total_host": {
+    "ko": "전체 호스트",
+    "en": "Total Host",
+    "ja": "全体ホスト"
+  },
+  "total_resource": {
+    "ko": "전체 자원",
+    "en": "Total Resource",
+    "ja": "全体リソース"
+  },
+  "total_resource_used_list": {
+    "ko": "전체 자원 사용 목록",
+    "en": "Full Resource Usage List",
+    "ja": "全体リソース使用リスト"
+  },
+  "total_tx": {
+    "ko": "일일 TX",
+    "en": "Total Transaction",
+    "ja": "日間TX数"
+  },
+  "total_users": {
+    "ko": "일일 사용자",
+    "en": "Total Users",
+    "ja": "日間ユーザー数"
+  },
+  "tps_avg": {
+    "ko": "평균 처리량",
+    "en": "TPS Average",
+    "ja": "平均TPS"
+  },
+  "tps_max": {
+    "ko": "최대 처리량",
+    "en": "TPS Max",
+    "ja": "最大TPS"
+  },
+  "tps": {
+    "ko": "처리량",
+    "en": "TPS",
+    "ja": "TPS"
+  },
+  "transaction": {
+    "ko": "트랜잭션",
+    "en": "Transaction",
+    "ja": "TX"
+  },
+  "tx_diff": {
+    "ko": "트랜잭션 비교",
+    "en": "Transaction Comparison",
+    "ja": "TX比較"
+  },
+  "tx_list": {
+    "ko": "트랜잭션 리스트",
+    "en": "Transaction List",
+    "ja": "TXリスト"
+  },
+  "tx_okindlist": {
+    "ko": "애플리케이션 종류 리스트",
+    "en": "OKIND List",
+    "ja": "OKINDリスト"
+  },
+  "tx_threshold_list": {
+    "ko": "트랜잭션 임계치 초과 LIST",
+    "en": "Transaction Threshold Exceeded LIST",
+    "ja": "TXしきい値超過リスト"
+  },
+  "txcount": {
+    "ko": "트랜잭션 수",
+    "en": "Transaction Count",
+    "ja": "TX数"
+  },
+  "tx_per_hour": {
+    "ko": "시간당 트랜잭션",
+    "en": "Transaction per Hour",
+    "ja": "時間毎TX数"
+  },
+  "tx_errors_per_hour": {
+    "ko": "시간당 에러건수",
+    "en": "Transaction Error per Hour",
+    "ja": "時間毎エラー数"
+  },
+  "type": {
+    "ko": "유형",
+    "en": "Type",
+    "ja": "タイプ"
+  },
+  "used_list": {
+    "ko": "사용 목록",
+    "en": "Used List",
+    "ja": "使用リスト"
+  },
+  "used_percent": {
+    "ko": "사용률",
+    "en": "Utilization Rate",
+    "ja": "使用率"
+  },
+  "free_space": {
+    "ko": "잔여량",
+    "en": "Residual",
+    "ja": "残り量"
+  },
+  "used_space": {
+    "ko": "사용량",
+    "en": "Usage",
+    "ja": "使用量"
+  },
+  "users": {
+    "ko": "사용자 수",
+    "en": "Users",
+    "ja": "ユーザー数"
+  },
+  "version": {
+    "ko": "버전",
+    "en": "Version",
+    "ja": "バージョン"
+  },
+  "visitor_dau": {
+    "ko": "일간 사용자 수",
+    "en": "Visitor(DAU)",
+    "ja": "日間ユーザー数(DAU)"
+  },
+  "visitor": {
+    "ko": "방문자 수",
+    "en": "Visitor",
+    "ja": "ユーザー数"
+  },
+  "visitor_per_hour": {
+    "ko": "시간당 방문자 수",
+    "en": "Visitor Per Hour",
+    "ja": "時間毎ユーザー数"
+  },
+  "week": {
+    "ko": "주",
+    "en": "week",
+    "ja": "週"
+  },
+  "weekly": {
+    "ko": "주간",
+    "en": "Weekly",
+    "ja": "週間"
+  },
+  "weekly_report": {
+    "ko": "주간 보고서",
+    "en": "Weekly Report",
+    "ja": "週次レポート"
+  },
+  "weekly_txcount": {
+    "ko": "주간 트랜잭션건수",
+    "en": "Weekly Transaction Count",
+    "ja": "週間TX件数"
+  },
+  "weekly_user": {
+    "ko": "주간 총 방문자수",
+    "en": "Weekly User",
+    "ja": "週間ユーザー数"
+  },
+  "weekly_trend_avg_max": {
+    "ko": "전주 추이 (평균, 최대)",
+    "en": "Weekly Trend (Average, Max)",
+    "ja": "先週推移(平均、最大)"
+  },
+  "yesterday": {
+    "ko": "어제",
+    "en": "Yesterday",
+    "ja": "昨日"
+  },
+  "yesterday2": {
+    "ko": "전일",
+    "en": "Previous day",
+    "ja": "前日"
+  },
+  "short_days": {
+    "ko": "일",
+    "en": "Day",
+    "ja": "日"
+  },
+  "short_hours": {
+    "ko": "시간",
+    "en": "Hour",
+    "ja": "時間"
+  },
+  "short_minutes": {
+    "ko": "분",
+    "en": "Minute",
+    "ja": "分"
+  },
+  "division": {
+    "ko": "구분",
+    "en": "Division",
+    "ja": "区分"
+  },
+  "performance_trend_chart_explain": {
+    "ko": "* 성능추이차트를 확인하고 싶다면 에이전트를 선택해주세요.",
+    "en": "* Please pick an agent to view the performance trend chart.",
+    "ja": "* 性能推移チャートを確認するなら、エージェントを選択してください。"
+  },
+  "db_instance_name": {
+    "ko": "인스턴스 명",
+    "en": "Instance name",
+    "ja": "インスタンス名"
+  },
+  "top10_table_size_inc_dec": {
+    "ko": "테이블 사이즈 증감 Top 20",
+    "en": "Top 20 Table Size Increment/Decrement",
+    "ja": "テーブルサイズ増減(Top20)"
+  },
+  "order_elapsed_time_max": {
+    "ko": "Ordered by Elapsed Time (Max)",
+    "en": "Ordered by Elapsed Time (Max)",
+    "ja": "応答時間(最大)順"
+  },
+  "size": {
+    "ko": "전체 사이즈",
+    "en": "Total size",
+    "ja": "全体サイズ"
+  },
+  "use_size": {
+    "ko": "사용 사이즈",
+    "en": "Used size",
+    "ja": "使用サイズ"
+  },
+  "table_name": {
+    "ko": "테이블명",
+    "en": "Table name",
+    "ja": "テーブル名"
+  },
+  "db_size": {
+    "ko": "데이터베이스 사이즈",
+    "en": "Database Size",
+    "ja": "データベースサイズ"
+  },
+  "db_change_rate": {
+    "ko": "변화율 %",
+    "en": "Change Rate %",
+    "ja": "増減率(%)"
+  },
+  "db_size_diff": {
+    "ko": "사이즈 차이",
+    "en": "Size Difference",
+    "ja": "サイズ差"
+  },
+  "db_change_amount": {
+    "ko": "변화량",
+    "en": "Amount of Change",
+    "ja": "増減量"
+  },
+  "db_size_additional_info": {
+    "ko": "information_schema, performance_schema 사이즈 제외",
+    "en": "information_schema, performance_schema: excluding size",
+    "ja": "除外：information_schema、performance_schema"
+  },
+  "table_start_date": {
+    "ko": "시작일",
+    "en": "Start date",
+    "ja": "開始日"
+  },
+  "table_end_date": {
+    "ko": "마지막일",
+    "en": "End date",
+    "ja": "終了日"
+  },
+  "mysql_top10_additional_info": {
+    "ko": "whatap.conf의 tables_min_rows(디폴트 10000건) 이상 테이블 대상",
+    "en": "For tables_min_rows (default 10000) or more tables in whatap.conf",
+    "ja": "対象：tables_min_rows (デフォルト：10000件)以上のwhatap.confテーブル"
+  },
+  "tibero_top10_additional_info": {
+    "ko": "whatap.conf의 tables_min_size(디폴트 10M) 이상 테이블 대상",
+    "en": "For tables_min_size (default 10M) or more tables in whatap.conf",
+    "ja": "対象：tables_min_size (デフォルト：10M)以上のwhatap.confテーブル"
+  },
+  "table_space": {
+    "ko": "테이블스페이스 사이즈",
+    "en": "Tablespace Size",
+    "ja": "テーブルスペースサイズ"
+  },
+  "tablespace_name": {
+    "ko": "테이블스페이스 명",
+    "en": "Tablespace Name",
+    "ja": "テーブルスペース名"
+  },
+  "A110_AppWeeklyOkindErrorStatReport_guide": {
+    "ko": "*** 애플리케이션 종류별로 최대 1000건의 에러가 조회됩니다 ***",
+    "en": "*** Up to 1000 errors are viewed by okind ***",
+    "ja": "*** アプリケーション種類毎に最大1000件のエラーが照会できます。***"
+  },
+  "disk_total_used": {
+    "ko": "전체 디스크 사용량",
+    "en": "Total Disk usage",
+    "ja": "全体ディスク使用量"
+  },
+  "memory_total": {
+    "ko": "전체 메모리",
+    "en": "Total Memory",
+    "ja": "全体メモリ"
+  },
+  "memory_total_used": {
+    "ko": "전체 메모리 사용량",
+    "en": "Total Memory Usage",
+    "ja": "全体メモリ使用量"
+  },
+  "a015_title": {
+    "ko": "Http Call 지연 Top 5 (1초 이상)",
+    "en": "Http Call Delay Top 5",
+    "ja": "HTTPコール遅延のTop5"
+  },
+  "call_url": {
+    "ko": "호출 URL",
+    "en": "Call URL",
+    "ja": "コールURL"
+  },
+  "host": {
+    "ko": "호스트",
+    "en": "Host",
+    "ja": "ホスト"
+  },
+  "port": {
+    "ko": "포트",
+    "en": "Port",
+    "ja": "ポート"
+  },
+  "error": {
+    "ko": "에러",
+    "en": "Error",
+    "ja": "エラー"
+  },
+  "avg_time": {
+    "ko": "평균 시간(ms)",
+    "en": "Average Time(ms)",
+    "ja": "平均時間(ミリ秒)"
+  },
+  "total_time": {
+    "ko": "합계 시간(ms)",
+    "en": "Total Time(ms)",
+    "ja": "合計時間(ミリ秒)"
+  },
+  "max_time": {
+    "ko": "최대 시간(ms)",
+    "en": "Maximum Time(ms)",
+    "ja": "最大時間(ミリ秒)"
+  },
+  "no_data_more_than_ms": {
+    "ko": "ms 이상 지연된 데이터가 없습니다.",
+    "en": "ms is the maximum delay. There is no data with a delay of more than this.",
+    "ja": "ミリ秒以上遅延したデータがありません。"
+  },
+  "url": {
+    "ko": "URL",
+    "en": "URL",
+    "ja": "URL"
+  },
+  "disk_usage_rate_top_10": {
+    "ko": "디스크 사용률 Top 10",
+    "en": "Top 10 Disk Utilization",
+    "ja": "ディスク使用率のTop10"
+  },
+  "disk_max_rate": {
+    "ko": "최대 사용률",
+    "en": "Maximum Utilization",
+    "ja": "最大使用率"
+  },
+  "server_disk_info": {
+    "ko": "서버 디스크 정보",
+    "en": "Server Disk Information",
+    "ja": "サーバーディスク情報"
+  },
+  "daily_session_num": {
+    "ko": "유저 세션 수",
+    "en": "Daily User Session Number",
+    "ja": "ユーザーセッション数"
+  },
+  "page_load_request": {
+    "ko": "페이지로드 수",
+    "en": "PageLoad Request",
+    "ja": "ページロード数"
+  },
+  "page_load_avg_respond_time": {
+    "ko": "페이지로드 평균 응답 시간",
+    "en": "PageLoad Avg Respond Time",
+    "ja": "平均ページロード応答時間"
+  },
+  "page_error_ratio_percent": {
+    "ko": "페이지에러 비율(%)",
+    "en": "Page Error Ratio(%)",
+    "ja": "ページエラー比率(%)"
+  },
+  "ajax_request": {
+    "ko": "AJAX 요청 수",
+    "en": "AJAX request",
+    "ja": "Ajaxリクエスト"
+  },
+  "ajax_avg_respond_time": {
+    "ko": "AJAX 평균 응답 시간",
+    "en": "AJAX Avg Respond Time",
+    "ja": "平均Ajax応答時間"
+  },
+  "ajax_error_ratio_percent": {
+    "ko": "AJAX 에러 비율(%)",
+    "en": "AJAX Error Ratio(%)",
+    "ja": "Ajaxエラー比率(%)"
+  },
+  "page_group": {
+    "ko": "페이지 그룹",
+    "en": "Page Group",
+    "ja": "ページグループ"
+  },
+  "request_path": {
+    "ko": "AJAX Path",
+    "en": "AJAX Path",
+    "ja": "Ajaxパス"
+  },
+  "resource_type": {
+    "ko": "리소스 타입",
+    "en": "Resource Type",
+    "ja": "リソースタイプ"
+  },
+  "resource_path": {
+    "ko": "리소스 Path",
+    "en": "Resource Path",
+    "ja": "リソースパス"
+  },
+  "location_name": {
+    "ko": "지역명",
+    "en": "Location Name",
+    "ja": "地域名"
+  },
+  "browser_name": {
+    "ko": "브라우저명",
+    "en": "Browser Name",
+    "ja": "Browser名"
+  },
+  "user_session_chart_name": {
+    "ko": "유저 세션 수",
+    "en": "User Session Count",
+    "ja": "ユーザーセッション数"
+  },
+  "page_load_count_chart_name": {
+    "ko": "페이지로드 수",
+    "en": "PageLoad Count",
+    "ja": "ページロード数"
+  },
+  "page_load_avg_respond_time_chart_name": {
+    "ko": "페이지로드 평균 응답 시간",
+    "en": "PageLoad Avg Respond Time",
+    "ja": "平均ページロード応答時間"
+  },
+  "page_load_top_n": {
+    "ko": "페이지로드 Top 10",
+    "en": "PageLoad Top 10",
+    "ja": "ページロードTop10"
+  },
+  "browser_each_page_load_top_n": {
+    "ko": "브라우저별 페이지로드 Top 10",
+    "en": "PageLoad Top 10 By Browser Name",
+    "ja": "Browser別ページロードTop10"
+  },
+  "kr_each_page_load_top_n": {
+    "ko": "지역별 페이지로드 Top 10",
+    "en": "PageLoad Top 10 By Korean Region",
+    "ja": "地域別ページロードTop10"
+  },
+  "ajax_call_top_n": {
+    "ko": "AJAX 호출 Top 10",
+    "en": "AJAX Call Top 10",
+    "ja": "Ajax呼出しTop10"
+  },
+  "router_change_top_n": {
+    "ko": "라우터 변경 Top 10",
+    "en": "Router Change Top 10",
+    "ja": "ルーター変更Top10"
+  },
+  "ajax_error_top_n": {
+    "ko": "AJAX 에러 Top 10",
+    "en": "AJAX Error Top 10",
+    "ja": "AjaxエラーTop10"
+  },
+  "each_page_error_count_top_n": {
+    "ko": "페이지별 에러 수 Top 10",
+    "en": "Each Page Error Count Top 10",
+    "ja": "ページ別エラー数Top10"
+  },
+  "each_error_message_count_top_n": {
+    "ko": "에러 메시지별 에러 수 Top 10",
+    "en": "Each Error Message Count Top 10",
+    "ja": "エラーメッセージ別エラー数Top10"
+  },
+  "1st_resource_call_count_top_n": {
+    "ko": "1st Party 리소스 호출 수 Top 10",
+    "en": "1st Party Resource Call Count Top 10",
+    "ja": "1st Partyリソース呼出し数Top10"
+  },
+  "3rd_resource_call_count_top_n": {
+    "ko": "3rd Party 리소스 호출 수 Top 10",
+    "en": "3rd Party Resource Call Count Top 10",
+    "ja": "3rd Partyリソース呼出し数Top10"
+  },
+  "performance_summary": {
+    "ko": "성능 요약 지표",
+    "en": "Performance Summary Metrics",
+    "ja": "性能要約指標"
+  },
+  "avg_visitor_count": {
+    "ko": "평균 방문자 수",
+    "en": "Visitor Count(avg)",
+    "ja": "平均接続ユーザー数"
+  },
+  "realtime_user_count": {
+    "ko": "동시 사용자 수",
+    "en": "Realtime User",
+    "ja": "同時接続ユーザー数"
+  },
+  "avg_realtime_user": {
+    "ko": "평균 동시 사용자 수",
+    "en": "Realtime User(avg)",
+    "ja": "平均同時接続ユーザー数"
+  },
+  "max_realtime_user": {
+    "ko": "최대 동시 사용자 수",
+    "en": "Realtime User(max)",
+    "ja": "最大同時接続ユーザー数"
+  },
+  "avg_tps": {
+    "ko": "평균 TPS",
+    "en": "TPS(avg)",
+    "ja": "平均TPS"
+  },
+  "max_tps": {
+    "ko": "최대 TPS",
+    "en": "TPS(max)",
+    "ja": "最大TPS"
+  },
+  "avg_resp_time_sec": {
+    "ko": "평균 응답 시간 (초)",
+    "en": "Response Time(avg, sec)",
+    "ja": "平均応答時間(秒)"
+  },
+  "max_resp_time_sec": {
+    "ko": "최대 응답 시간 (초)",
+    "en": "Response Time(max, sec)",
+    "ja": "最大応答時間(秒)"
+  },
+  "Seoul-teukbyeolsi": {
+    "ko": "서울특별시",
+    "en": "Seoul-teukbyeolsi",
+    "ja": "Seoul-teukbyeolsi"
+  },
+  "Ulsan-gwangyeoksi": {
+    "ko": "울산광역시",
+    "en": "Ulsan-gwangyeoksi",
+    "ja": "Ulsan-gwangyeoksi"
+  },
+  "Jeollanam-do": {
+    "ko": "전라남도",
+    "en": "Jeollanam-do",
+    "ja": "Jeollanam-do"
+  },
+  "Jeollabuk-do": {
+    "ko": "전라북도",
+    "en": "Jeollabuk-do",
+    "ja": "Jeollabuk-do"
+  },
+  "Jeju-teukbyeoljachido": {
+    "ko": "제주특별자치도",
+    "en": "Jeju-teukbyeoljachido",
+    "ja": "Jeju-teukbyeoljachido"
+  },
+  "Incheon-gwangyeoksi": {
+    "ko": "인천광역시",
+    "en": "Incheon-gwangyeoksi",
+    "ja": "Incheon-gwangyeoksi"
+  },
+  "Gyeongsangnam-do": {
+    "ko": "경상남도",
+    "en": "Gyeongsangnam-do",
+    "ja": "Gyeongsangnam-do"
+  },
+  "Gyeongsangbuk-do": {
+    "ko": "경상북도",
+    "en": "Gyeongsangbuk-do",
+    "ja": "Gyeongsangbuk-do"
+  },
+  "Gyeonggi-do": {
+    "ko": "경기도",
+    "en": "Gyeonggi-do",
+    "ja": "Gyeonggi-do"
+  },
+  "Gwangju-gwangyeoksi": {
+    "ko": "광주광역시",
+    "en": "Gwangju-gwangyeoksi",
+    "ja": "Gwangju-gwangyeoksi"
+  },
+  "Gangwon-do": {
+    "ko": "강원도",
+    "en": "Gangwon-do",
+    "ja": "Gangwon-do"
+  },
+  "Daejeon-gwangyeoksi": {
+    "ko": "대전광역시",
+    "en": "Daejeon-gwangyeoksi",
+    "ja": "Daejeon-gwangyeoksi"
+  },
+  "Daegu-gwangyeoksi": {
+    "ko": "대구광역시",
+    "en": "Daegu-gwangyeoksi",
+    "ja": "Daegu-gwangyeoksi"
+  },
+  "Chungcheongnam-do": {
+    "ko": "충청남도",
+    "en": "Chungcheongnam-do",
+    "ja": "Chungcheongnam-do"
+  },
+  "Chungcheongbuk-do": {
+    "ko": "충청북도",
+    "en": "Chungcheongbuk-do",
+    "ja": "Chungcheongbuk-do"
+  },
+  "Busan-gwangyeoksi": {
+    "ko": "부산광역시",
+    "en": "Busan-gwangyeoksi",
+    "ja": "Busan-gwangyeoksi"
+  },
+  "_tps": {
+    "ko": "TPS",
+    "en": "TPS",
+    "ja": "TPS"
+  },
+  "_active_tx_count": {
+    "ko": "액티브 TX 건수",
+    "en": "Active TX Count",
+    "ja": "アクティブTX件数"
+  },
+  "_active_tx_normal": {
+    "ko": "정상 액티브 TX 건수",
+    "en": "Normal Active TX Count",
+    "ja": "正常アクティブTX数"
+  },
+  "_active_tx_slow": {
+    "ko": "느린 액티브 TX 건수",
+    "en": "Slow Active TX Count",
+    "ja": "遅いアクティブTX数"
+  },
+  "_active_tx_veryslow": {
+    "ko": "매우느린 액티브 TX 건수",
+    "en": "Very Slow Active TX Count",
+    "ja": "遅延アクティブTX数"
+  },
+  "_active_stat_method": {
+    "ko": "METHOD",
+    "en": "METHOD",
+    "ja": "METHOD"
+  },
+  "_active_stat_sql": {
+    "ko": "SQL",
+    "en": "SQL",
+    "ja": "SQL"
+  },
+  "_active_stat_httpc": {
+    "ko": "HTTPC",
+    "en": "HTTPC",
+    "ja": "HTTPC"
+  },
+  "_active_stat_dbc": {
+    "ko": "DBC",
+    "en": "DBC",
+    "ja": "DBC"
+  },
+  "_active_stat_socket": {
+    "ko": "SOCKET",
+    "en": "SOCKET",
+    "ja": "SOCKET"
+  },
+  "_service_count_avg": {
+    "ko": "TX 건수",
+    "en": "TX Count",
+    "ja": "TX件数"
+  },
+  "_service_count_sum": {
+    "ko": "합계 TX 건수",
+    "en": "Total TX Count",
+    "ja": "合計TX件数"
+  },
+  "_service_error_sum": {
+    "ko": "TX 에러 건수",
+    "en": "Service Error(Sum)",
+    "ja": "TXエラー件数(Sum)"
+  },
+  "_service_time_avg": {
+    "ko": "TX 응답시간",
+    "en": "TX Response Time",
+    "ja": "TX応答時間"
+  },
+  "_service_time": {
+    "ko": "TX 응답시간",
+    "en": "TX Response Time",
+    "ja": "TX応答時間"
+  },
+  "_sql_count_avg": {
+    "ko": "SQL 건수",
+    "en": "SQL Count",
+    "ja": "SQL件数"
+  },
+  "_sql_count_sum": {
+    "ko": "합계 SQL 건수",
+    "en": "Total SQL Count",
+    "ja": "合計SQL件数"
+  },
+  "_sql_error": {
+    "ko": "SQL 에러 건수",
+    "en": "SQL Error Count",
+    "ja": "SQLエラー件数"
+  },
+  "_sql_time": {
+    "ko": "SQL 수행 시간",
+    "en": "SQL Execution Time",
+    "ja": "SQL実行時間"
+  },
+  "_sql_fetch_count": {
+    "ko": "SQL 패치 건수",
+    "en": "SQL Fetch Count",
+    "ja": "SQLフェッチ件数"
+  },
+  "_sql_fetch_time": {
+    "ko": "SQL 패치 시간",
+    "en": "SQL Fetch Time",
+    "ja": "SQLフェッチ時間"
+  },
+  "_httpc_count_avg": {
+    "ko": "HTTPC 건수",
+    "en": "HTTPC Count",
+    "ja": "HTTPC件数"
+  },
+  "_httpc_count_sum": {
+    "ko": "합계 HTTPC 건수",
+    "en": "Total HTTPC Count",
+    "ja": "合計HTTP件数"
+  },
+  "_httpc_error": {
+    "ko": "HTTPC 호출 에러 건수",
+    "en": "HTTP Call Error Count",
+    "ja": "HTTP呼出しエラー数"
+  },
+  "_httpc_time": {
+    "ko": "HTTPC 호출 응답 시간",
+    "en": "HTTP Call Response Time",
+    "ja": "HTTP呼出し応答時間"
+  },
+  "_cpu": {
+    "ko": "CPU",
+    "en": "CPU",
+    "ja": "CPU"
+  },
+  "_cpu_core_count": {
+    "ko": "CPU Core 개수",
+    "en": "CPU Core Count",
+    "ja": "CPUコア数"
+  },
+  "_cpu_sys": {
+    "ko": "CPU System 사용률",
+    "en": "CPU System Utilization",
+    "ja": "CPU System使用率"
+  },
+  "_cpu_usr": {
+    "ko": "CPU User 사용률",
+    "en": "CPU User Utilization",
+    "ja": "CPU User使用率"
+  },
+  "_cpu_wait": {
+    "ko": "CPU Wait 사용률",
+    "en": "CPU Wait Utilization",
+    "ja": "CPU Wait使用率"
+  },
+  "_cpu_steal": {
+    "ko": "CPU Steal 사용률",
+    "en": "CPU Steal Utilization",
+    "ja": "CPU Steal使用率"
+  },
+  "_cpu_irq": {
+    "ko": "CPU IRQ 사용률",
+    "en": "CPU IRQ Utilization",
+    "ja": "CPU IRQ使用率"
+  },
+  "_cpu_proc": {
+    "ko": "프로세스 CPU 사용률",
+    "en": "Process CPU Utilization",
+    "ja": "プロセスCPU使用率"
+  },
+  "_mem": {
+    "ko": "메모리",
+    "en": "Memory",
+    "ja": "メモリ"
+  },
+  "_swap": {
+    "ko": "스왑",
+    "en": "Swap",
+    "ja": "SWAP"
+  },
+  "_disk": {
+    "ko": "디스크",
+    "en": "Disk",
+    "ja": "ディスク"
+  },
+  "_realtime_user": {
+    "ko": "동시접속 사용자",
+    "en": "Concurrent User",
+    "ja": "同時接続ユーザー数"
+  },
+  "_rt_user": {
+    "ko": "동시접속 사용자",
+    "en": "Concurrent User",
+    "ja": "同時接続ユーザー数"
+  },
+  "_visitor": {
+    "ko": "방문자",
+    "en": "Visitor",
+    "ja": "ユーザー数"
+  },
+  "_heap_tot": {
+    "ko": "Heap 크기",
+    "en": "Heap Total",
+    "ja": "ヒープサイズ"
+  },
+  "_heap_max": {
+    "ko": "Heap 최대 사용량",
+    "en": "Heap Max Usage",
+    "ja": "ヒープサイズ(最大)"
+  },
+  "_heap_use": {
+    "ko": "Heap 사용량",
+    "en": "Heap Use",
+    "ja": "ヒープ使用量"
+  },
+  "_heap_perm": {
+    "ko": "Heap Perm 영역 사용량",
+    "en": "Heap Perm Area Usage",
+    "ja": "Permヒープ使用量"
+  },
+  "_heap_pending_finalization": {
+    "ko": "Heap Pending Finalization",
+    "en": "Heap Pending Finalization Count",
+    "ja": "Heap Pending Finalization件数"
+  },
+  "_gc_count": {
+    "ko": "GC 건수",
+    "en": "GC Count",
+    "ja": "GC件数"
+  },
+  "_gc_time": {
+    "ko": "GC 시간",
+    "en": "GC Time",
+    "ja": "GC時間"
+  },
+  "_gc_oldgen_count": {
+    "ko": "Old Generation GC 건수",
+    "en": "Old Generation GC Count",
+    "ja": "Old Generation GC件数"
+  },
+  "_thread_count": {
+    "ko": "Thread 수",
+    "en": "Thread Count",
+    "ja": "スレッド数"
+  },
+  "_thread_daemon": {
+    "ko": "DaemonThread 수",
+    "en": "DaemonThread Count",
+    "ja": "デーモンスレッド数"
+  },
+  "_thread_peak_count": {
+    "ko": "Peak Thread 수",
+    "en": "Peak Thread Count",
+    "ja": "ピークスレッド数"
+  },
+  "_db_num": {
+    "ko": "DB Pool 개수",
+    "en": "DB Pool Count",
+    "ja": "DBプール数"
+  },
+  "_db_num_active": {
+    "ko": "DB Active 개수",
+    "en": "DB Active Count",
+    "ja": "DBアクティブ数"
+  },
+  "_db_num_idle": {
+    "ko": "DB Idle 개수",
+    "en": "DB Idle Count",
+    "ja": "DBアイドル数"
+  },
+  "_threadpool_active": {
+    "ko": "ThreadPool Active 개수",
+    "en": "ThreadPool Active Count",
+    "ja": "ThreadPoolアクティブ数"
+  },
+  "_threadpool_queue": {
+    "ko": "ThreadPool 개수",
+    "en": "ThreadPool Count",
+    "ja": "ThreadPool数"
+  },
+  "_host_count": {
+    "ko": "Host 개수",
+    "en": "Host Count",
+    "ja": "Host数"
+  },
+  "WARNING": {
+    "ko": "경고",
+    "en": "Warning",
+    "ja": "Warning"
+  },
+  "CRITICAL": {
+    "ko": "위험",
+    "en": "Critical",
+    "ja": "Critical"
+  },
+  "INFO": {
+    "ko": "정보",
+    "en": "Info",
+    "ja": "Info"
+  },
+  "NONE": {
+    "ko": "없음",
+    "en": "None",
+    "ja": "なし"
+  },
+  "DEFAULT": {
+    "ko": "디폴트",
+    "en": "Default",
+    "ja": "デフォルト"
+  },
+  "METRICS": {
+    "ko": "메트릭스",
+    "en": "Metrics",
+    "ja": "メトリクス"
+  },
+  "COMPOSITE_METRICS": {
+    "ko": "복합 메트릭스",
+    "en": "Composite Metrics",
+    "ja": "複合メトリクス"
+  },
+  "LOG_REALTIME": {
+    "ko": "실시간 로그",
+    "en": "Log RealTime",
+    "ja": "リアルタイムログ"
+  },
+  "COMPOSITE_LOG": {
+    "ko": "복합 로그",
+    "en": "Composite Log",
+    "ja": "複合ログ"
+  },
+  "SERVER_REBOOT": {
+    "ko": "서버 재시작",
+    "en": "Server Reboot",
+    "ja": "サーバー再起動"
+  },
+  "SERVER_NO_DATA": {
+    "ko": "서버 데이터 미수신",
+    "en": "Server No Data",
+    "ja": "サーバーデータ未受信"
+  },
+  "SERVER_PORT": {
+    "ko": "서버 포트",
+    "en": "Server Port",
+    "ja": "サーバーポート"
+  },
+  "SERVER_NETWORK_IOPS": {
+    "ko": "서버 네트워크 IOPS",
+    "en": "Server Network IOPS",
+    "ja": "サーバーネットワークIOPS"
+  },
+  "SERVER_NETWORK_BPS": {
+    "ko": "서버 네트워크 BPS",
+    "en": "Server Network BPS",
+    "ja": "サーバーネットワークBPS"
+  },
+  "SERVER_DISK_QUOTA": {
+    "ko": "서버 디스크 쿼터",
+    "en": "Server Disk Quota",
+    "ja": "サーバーディスククオータ"
+  },
+  "SERVER_DISK_IO": {
+    "ko": "서버 디스크 I/O",
+    "en": "Server Disk I/O",
+    "ja": "サーバーディスクI/O"
+  },
+  "SERVER_DISK_INODE": {
+    "ko": "서버 디스크 INODE",
+    "en": "Server Disk Inode",
+    "ja": "サーバーディスクiノード"
+  },
+  "SERVER_CPU": {
+    "ko": "서버 CPU",
+    "en": "Server Cpu",
+    "ja": "サーバーCPU"
+  },
+  "SERVER_CPU_STEAL": {
+    "ko": "서버 CPU Steal",
+    "en": "Server Cpu Steal",
+    "ja": "サーバー CPU Steal"
+  },
+  "SERVER_MEMORY": {
+    "ko": "서버 메모리",
+    "en": "Server Memory",
+    "ja": "サーバーメモリ"
+  },
+  "SERVER_MEMORY_SWAP": {
+    "ko": "서버 메모리 스왑",
+    "en": "Server Memory Swap",
+    "ja": "サーバーメモリSWAP"
+  },
+  "SERVER_LOG_FILE": {
+    "ko": "서버 로그 파일",
+    "en": "Server Log File",
+    "ja": "サーバーログファイル"
+  },
+  "SERVER_WINDOW_EVENT": {
+    "ko": "서버 윈도우 이벤트",
+    "en": "Server Window Event",
+    "ja": "サーバーWindowsイベント"
+  },
+  "SERVER_OFF": {
+    "ko": "서버 알림 해소",
+    "en": "Server Alert Recovered",
+    "ja": "サーバーアラートの解除"
+  },
+  "SERVER_ACKNOWLEDGE": {
+    "ko": "서버 처리",
+    "en": "Server Acknowledge",
+    "ja": "サーバー処理内容"
+  },
+  "SERVER_PROCESS_COUNT": {
+    "ko": "서버 프로세스 카운트",
+    "en": "Server Process Count",
+    "ja": "サーバープロセス(カウント)"
+  },
+  "SERVER_PROCESS_CPU": {
+    "ko": "서버 프로세스 CPU",
+    "en": "Server Process Cpu",
+    "ja": "サーバープロセス(CPU)"
+  },
+  "SERVER_PROCESS_MEMORY": {
+    "ko": "서버 프로세스 메모리",
+    "en": "Server Process Memory",
+    "ja": "サーバープロセス(メモリ)"
+  },
+  "SERVER_PROCESS_OFF": {
+    "ko": "서버 프로세스 알림 해소",
+    "en": "Server Process Alert Recovered",
+    "ja": "サーバープロセス(アラート解除)"
+  },
+  "AGENT_ACTIVE": {
+    "ko": "에이전트 활성",
+    "en": "Agent active",
+    "ja": "エージェント活性化"
+  },
+  "AGENT_INACTIVE": {
+    "ko": "에이전트 비활성",
+    "en": "Agent inactive",
+    "ja": "エージェント非活性化"
+  },
+  "AGENT_REACTIVATED": {
+    "ko": "에이전트 재시작",
+    "en": "Agent reactivated",
+    "ja": "エージェント再スタート"
+  },
+  "DEFAULT_EVENT_MESSAGE": {
+    "ko": "기본 이벤트 메세지",
+    "en": "Default Event Message",
+    "ja": "基本イベントメッセージ"
+  },
+  "METRICS_EVENT_MESSAGE": {
+    "ko": "메세지:%s, 카테고리:%s, 발생조건:%s, 메트릭:%s, 값:%s",
+    "en": "Message:%s, Category:%s, EventRule:%s, Metric:%s, Value:%s ",
+    "ja": "メッセージ：%s、カテゴリー：%s、発生条件：%s、Metric：%s、値：%s "
+  },
+  "COMPOSITE_METRICS_EVENT_MESSAGE": {
+    "ko": "메세지:%s, 발생조건:%s, 메트릭:%s, 값:%s ",
+    "en": "Message:%s, EventRule:%s, Metric:%s, Value:%s ",
+    "ja": "メッセージ：%s、発生条件：%s、Metric：%s、値：%s "
+  },
+  "LOG_REALTIME_MESSAGE": {
+    "ko": "메세지:%s, 로그시간:%s, 카테고리:%s, 발생조건:%s, 키워드:%s",
+    "en": "Message:%s, LogTime:%s, Category:%s, EventRule:%s, Keyword:%s",
+    "ja": "メッセージ：%s、ログ発生時刻：%s、カテゴリー：%s、発生条件：%s、キーワード：%s"
+  },
+  "COMPOSITE_LOG_MESSAGE": {
+    "ko": "메세지:%s, 로그시간:%s, 카테고리:%s, 임계값:%s, 행:%s",
+    "en": "Message:%s, LogTime:%s, Category:%s, Threshold:%s, Rows:%s",
+    "ja": "メッセージ：%s、ログ発生時刻：%s、カテゴリー：%s、しきい値：%s、行:%s"
+  },
+  "SERVER_REBOOT_MESSAGE": {
+    "ko": "서버 재시작 시간:%s",
+    "en": "Server Reboot Time:%s",
+    "ja": "サーバー再スタート時刻：%s"
+  },
+  "SERVER_NODATA_MESSAGE": {
+    "ko": "서버로부터 전달 받은 데이터가 없습니다.",
+    "en": "No data received from server",
+    "ja": "サーバーから転送されたデータがありません。"
+  },
+  "SERVER_PORT_MESSAGE": {
+    "ko": "서버 포트 간에 통신이 되지 않습니다.",
+    "en": "No connection between server ports",
+    "ja": "サーバーポート間の通信が正常ではありません。"
+  },
+  "SERVER_NETWORK_IOPS_MESSAGE": {
+    "ko": "네트워크(%s) IOPS:%s(pps), 임계치:%s(pps)",
+    "en": "Network(%s) IOPS:%s(pps), Threshold:%s(pps)",
+    "ja": "ネットワーク(%s) IOPS：%s(pps)、しきい値：%s(pps)"
+  },
+  "SERVER_NETWORK_BPS_MESSAGE": {
+    "ko": "네트워크(%s) BPS:%s(bps), 임계치:%s(bps)",
+    "en": "Network(%s) BPS:%s(bps), Threshold:%s(bps)",
+    "ja": "ネットワーク(%s) BPS：%s(bps)、しきい値：%s(bps)"
+  },
+  "SERVER_DISK_QUOTA_MESSAGE": {
+    "ko": "(%s)디스크 전체 용량 중 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "Percentage of (%s)disk space used:%s(%%), Threshold:%s(%%)",
+    "ja": "(%s)ディスク全体での使用率：%s(%%)、きい値：%s(%%)"
+  },
+  "SERVER_DISK_IO_MESSAGE": {
+    "ko": "마운트 된 (%s)디스크별 I/O 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "I/O utilization rate per mounted (%s)disk:%s(%%), Threshold:%s(%%)",
+    "ja": "マウントした(%s)ディスク別のI/O使用率：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_DISK_INODE_MESSAGE": {
+    "ko": "사용된 (%s)디스크 inode 비율:%s(%%), 임계치:%s(%%)",
+    "en": "Percentage of (%s)disk inode used:%s(%%), Threshold:%s(%%)",
+    "ja": "使用した(%s)ディスクiノード比率：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_CPU_MESSAGE": {
+    "ko": "CPU 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "CPU Usage:%s(%%), Threshold:%s(%%)",
+    "ja": "CPU使用率：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_CPU_STEAL_MESSAGE": {
+    "ko": "CPU Steal Time:%s(%%), 임계치:%s(%%)",
+    "en": "CPU Steal Time:%s(%%), Threshold:%s(%%)",
+    "ja": "CPU Steal Time：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_MEMORY_MESSAEG": {
+    "ko": "메모리 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "Memory Usage:%s(%%), Threshold:%s(%%)",
+    "ja": "メモリ使用率：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_MEMORY_SWAP_MESSAGE": {
+    "ko": "SWAP 메모리 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "SWAP Memory Usage:%s(%%), Threshold:%s(%%)",
+    "ja": "SWAPメモリ使用率：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_LOG_FILE_MESSAGE": {
+    "ko": "로그파일 이벤트가 발생했습니다. 경로:%s, 컨텐츠:%s",
+    "en": "Log file event occured. Path:%s, Content:%s",
+    "ja": "ログファイルのイベントが発生した。ファイルパス：%s、内容：%s"
+  },
+  "SERVER_WINDOW_EVENT_MESSAGE": {
+    "ko": "윈도우 이벤트가 발생했습니다. %s 컨텐츠:%s",
+    "en": "Window event occured. %s Content:%s",
+    "ja": "Windowsイベントが発生しました。%s 内容：%s"
+  },
+  "SERVER_OFF_MESSAGE": {
+    "ko": "서버 알림 해소 시간:%s",
+    "en": "Server Alert Recovered Time:%s",
+    "ja": "サーバーアラートの解除時刻：%s"
+  },
+  "SERVER_ACKNOWLEDGE_MESSAGE": {
+    "ko": "이벤트 처리내역 시간:%s",
+    "en": "Event Acknowledge Time:%s",
+    "ja": "イベント処理時刻：%s"
+  },
+  "SERVER_PROCESS_COUNT_MESSAGE": {
+    "ko": "동일 이름의 프로세스 개수:%s, 임계치:%s(%%)",
+    "en": "Number of processes with the same name:%s, Threshold:%s",
+    "ja": "同一名前のプロセス数：%s、しきい値：%s(%%)"
+  },
+  "SERVER_PROCESS_CPU_MESSAGE": {
+    "ko": "프로세스 CPU 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "CPU usage of process:%s(%%), Threshold:%s(%%)",
+    "ja": "プロセスCPU使用率：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_PROCESS_MEMORY_MESSAGE": {
+    "ko": "프로세스 메모리 사용률:%s(%%), 임계치:%s(%%)",
+    "en": "Memory usage of process:%s(%%), Threshold:%s(%%)",
+    "ja": "プロセスメモリ使用量：%s(%%)、しきい値：%s(%%)"
+  },
+  "SERVER_PROCESS_OFF_MESSAGE": {
+    "ko": "프로세스 알림 해소 시간:%s",
+    "en": "Process Alert Recovered Time:%s",
+    "ja": "プロセスアラートの解除時刻：%s"
+  },
+  "AGENT_ACTIVE_MESSAGE": {
+    "ko": "에이전트 활성 시간:%s",
+    "en": "Agent Active Time:%s",
+    "ja": "エージェント活性化時刻：%s"
+  },
+  "AGENT_INACTIVE_MESSAGE": {
+    "ko": "에이전트 비활성 시간:%s",
+    "en": "Agent InActive Time:%s",
+    "ja": "エージェント非活性化時刻：%s"
+  },
+  "AGENT_REACTIVATED_MESSAGE": {
+    "ko": "에이전트 재시작 시간:%s",
+    "en": "Agent ReActive Time:%s",
+    "ja": "エージェント再スタート時刻：%s"
+  },
+  "app_counter$_clock_delta_": {
+    "ko": "Agent와 서버간 시간차",
+    "en": "Difference in time between agent and server",
+    "ja": "エージェントとサーバー間の時差"
+  },
+  "app_counter$active_tx_0": {
+    "ko": "3초이하 액티브 트랜잭션수",
+    "en": "Number of active transactions under 3 seconds",
+    "ja": "3秒以下のアクティブTX数"
+  },
+  "app_counter$active_tx_3": {
+    "ko": "3~8초 사이의 액티브 트랜잭션수",
+    "en": "Number of active transactions between 3 and 8 seconds",
+    "ja": "3‐8秒の間のアクティブTX数"
+  },
+  "app_counter$active_tx_8": {
+    "ko": "8초이상 액티브 트랜잭션수",
+    "en": "Number of active transactions over 8 seconds",
+    "ja": "8秒以上のアクティブTX数"
+  },
+  "app_counter$active_tx_count": {
+    "ko": "전체 액티브 트랜잭션수",
+    "en": "Total number of active transactions",
+    "ja": "全体のアクティブTX数"
+  },
+  "app_counter$apdex_satisfied": {
+    "ko": "APDEX 안전한 트랜잭션 건수",
+    "en": "Number of APDEX safe transactions",
+    "ja": "正常ApdexのTX数"
+  },
+  "app_counter$apdex_tolerated": {
+    "ko": "APDEX 비정상 트랜잭션 건수",
+    "en": "Number of APDEX abnormal transactions",
+    "ja": "異常ApdexのTX数"
+  },
+  "app_counter$apdex_total": {
+    "ko": "APDEX TOTAL 건수",
+    "en": "Total number of APDEX transactions",
+    "ja": "Apdexの全体TX数"
+  },
+  "app_counter$arrival_rate": {
+    "ko": "트랜잭션 요청률",
+    "en": "Transaction request rate",
+    "ja": "TXリクエスト率"
+  },
+  "app_counter$httpc_count": {
+    "ko": "HTTP Call 건수",
+    "en": "Number of HTTP Calls",
+    "ja": "HTTPコール数"
+  },
+  "app_counter$httpc_error": {
+    "ko": "HTTP Call 에러건수",
+    "en": "Number of HTTP Call errors",
+    "ja": "HTTPコールエラー数"
+  },
+  "app_counter$httpc_time": {
+    "ko": "HTTP Call 응답시간",
+    "en": "HTTP Call response time",
+    "ja": "HTTPコール応答時間"
+  },
+  "app_counter$metering": {
+    "ko": "CPU core 수(밀리코어 대응)",
+    "en": "Number of CPU cores (corresponding to milli-core)",
+    "ja": "CPUコア数(ミリコア対応)"
+  },
+  "app_counter$resp90": {
+    "ko": "CPU 상위90% 응답시간 평균",
+    "en": "Average response time for top 90% of CPU",
+    "ja": "CPU上位90％の平均応答時間"
+  },
+  "app_counter$resp95": {
+    "ko": "CPU 상위95% 응답시간 평균",
+    "en": "Average response time for top 95% of CPU",
+    "ja": "CPU上位95％の平均応答時間"
+  },
+  "app_counter$resp_time": {
+    "ko": "평균응답시간",
+    "en": "Average response time",
+    "ja": "平均応答時間"
+  },
+  "app_counter$sql_count": {
+    "ko": "SQL 호출건수",
+    "en": "Number of SQL calls",
+    "ja": "SQL呼出し数"
+  },
+  "app_counter$sql_error": {
+    "ko": "SQL Error건수",
+    "en": "Number of SQL errors",
+    "ja": "SQLエラー数"
+  },
+  "app_counter$sql_fetch_count": {
+    "ko": "SQL Fetch 건수",
+    "en": "Number of SQL fetches",
+    "ja": "SQLフェッチ数"
+  },
+  "app_counter$sql_fetch_time": {
+    "ko": "SQL Fetch시간",
+    "en": "SQL fetch time",
+    "ja": "SQLフェッチ時間"
+  },
+  "app_counter$sql_time": {
+    "ko": "SQL 수행시간",
+    "en": "SQL execution time",
+    "ja": "SQL実行時間"
+  },
+  "app_counter$tps": {
+    "ko": "TPS",
+    "en": "TPS",
+    "ja": "TPS"
+  },
+  "app_counter$tx_count": {
+    "ko": "트랜잭션 처리수",
+    "en": "Number of transaction processes",
+    "ja": "TX処理件数"
+  },
+  "app_counter$tx_dbc_time": {
+    "ko": "트랜잭션 DB Connection시간",
+    "en": "Transaction DB Connection time",
+    "ja": "TX DB Connection時間"
+  },
+  "app_counter$tx_error": {
+    "ko": "트랜잭션 에러건수",
+    "en": "Number of transaction errors",
+    "ja": "TXエラー件数"
+  },
+  "app_counter$tx_httpc_time": {
+    "ko": "트랜잭션 HTTP Call시간",
+    "en": "Transaction HTTP Call time",
+    "ja": "TX HTTPコール時間"
+  },
+  "app_counter$tx_sql_time": {
+    "ko": "트랜잭션 SQL응답시간",
+    "en": "Transaction SQL response time",
+    "ja": "TX SQL応答時間"
+  },
+  "app_counter$tx_time": {
+    "ko": "트랜잭션 응답시간",
+    "en": "Transaction response time",
+    "ja": "TX応答時間"
+  },
+  "detail_report_text001": {
+    "ko": "애플리케이션 모니터링 수시 리포트",
+    "en": "Application Monitoring Regular Report",
+    "ja": "Application Monitoringレポート"
+  },
+  "detail_report_text002": {
+    "ko": "프로젝트명",
+    "en": "Project Name",
+    "ja": "プロジェクト名"
+  },
+  "detail_report_text003": {
+    "ko": "서버명",
+    "en": "Server Name",
+    "ja": "サーバー名"
+  },
+  "detail_report_text004": {
+    "ko": "안내 내용",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text005": {
+    "ko": "귀사의 일익 번창을 진심으로 기원합니다.",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text006": {
+    "ko": "고객 여러분의 구축 애플리케이션 서버 환경을 지속적으로 점검·관리하여 혹시나 있을 사고를 초기에 진압하거나 <br>미리 예방 할 수 있도록 하는 애플리케이션 모니터링 리포트 입니다.<br><br>",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text007": {
+    "ko": "귀사의 애플리케이션 서버를 지속적으로 모니터링하여 애플리케이션 환경의 주요한 데이터를 확인할 수 있습니다. <br>이 보고서를 통하여 고객께서는 사전에 발생할 이슈를 예방하고, 해결하실 수 있을 것 입니다. <br>더 나은 도움이 필요하시다면 언제든 저희에게 연락 하십시오.",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text008": {
+    "ko": "* 고객 여러분들의 획기적인 업무 환경 변화를 추구합니다.",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text009": {
+    "ko": "모니터링 기간",
+    "en": "Monitoring Period",
+    "ja": "モニタリング期間"
+  },
+  "detail_report_text010": {
+    "ko": "리포트 작성일",
+    "en": "Report Created",
+    "ja": "レポート生成日"
+  },
+  "detail_report_text011": {
+    "ko": "기타 애플리케이션 모니터링 서비스에 대해 궁금하신 사항이 있으시면 언제든지 연락바랍니다.",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text012": {
+    "ko": "주식회사",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text013": {
+    "ko": "와탭랩스",
+    "en": "삭제",
+    "ja": "삭제"
+  },
+  "detail_report_text014": {
+    "ko": "서비스 처리량",
+    "en": "Service Throughput",
+    "ja": "サービス処理量"
+  },
+  "detail_report_text015": {
+    "ko": "사용자 요청이 처리되는 초당 건수",
+    "en": "User requests processed per second",
+    "ja": "ユーザーからのリクエストに対する秒当りの処理件数"
+  },
+  "detail_report_text016": {
+    "ko": "애플리케이션의 서비스 처리량 지표입니다.",
+    "en": "Service throughput metric for the application.",
+    "ja": "アプリケーションにおけるサービス処理量に対する指標です。"
+  },
+  "detail_report_text017": {
+    "ko": "모니터링 결과",
+    "en": "Monitoring Results",
+    "ja": "モニタリング結果"
+  },
+  "detail_report_text018": {
+    "ko": "서비스 응답시간",
+    "en": "Service Response Time",
+    "ja": "サービス応答時間"
+  },
+  "detail_report_text019": {
+    "ko": "트랜잭션의 평균 응답시간",
+    "en": "Average response time of transactions",
+    "ja": "トランザクションの平均応答時間"
+  },
+  "detail_report_text020": {
+    "ko": "※ 응답시간은 서버에서 처리되는 시간을 의미합니다.",
+    "en": "※ Response time refers to the time taken for server processing.",
+    "ja": "＊応答時間は、サーバー内で処理される時間を示します。"
+  },
+  "detail_report_text021": {
+    "ko": "애플리케이션의 서비스 응답시간 지표입니다.",
+    "en": "Service response time metric for the application.",
+    "ja": "アプリケーションにおけるサービス応答時間に対する指標です。"
+  },
+  "detail_report_text022": {
+    "ko": "서비스 사용자",
+    "en": "Service Users",
+    "ja": "サービスユーザー数"
+  },
+  "detail_report_text023": {
+    "ko": "트랜잭션을 요청한 사용자 수",
+    "en": "Number of users requesting transactions",
+    "ja": "トランザクションをリクエストしたユーザー数"
+  },
+  "detail_report_text024": {
+    "ko": "애플리케이션의 실시간 서비스 사용자 지표입니다.",
+    "en": "This is a real-time indicator of application service users.",
+    "ja": "アプリケーションにおけるリアルタイムなサービスユーザに対する指標です。"
+  },
+  "detail_report_text025": {
+    "ko": "24시간 방문자 수<br>(리포트 작성일 기준)",
+    "en": "24-hour Visitor Count<br>(Based on report date)",
+    "ja": "24時間の接続ユーザー数<br>(レポート生成日を基準)"
+  },
+  "detail_report_text026": {
+    "ko": "시스템 담당자 의견",
+    "en": "System Manager's Opinion",
+    "ja": "コメント"
+  },
+  "detail_report_text027": {
+    "ko": "응답분포도",
+    "en": "Response Distribution",
+    "ja": "応答時間分布図"
+  },
+  "detail_report_text028": {
+    "ko": "응답분포도(HITMAP)",
+    "en": "Response Distribution (HITMAP)",
+    "ja": "応答時間分布図(ヒットマップ)"
+  },
+  "detail_report_text029": {
+    "ko": "트랜잭션의 응답시간 분포도<br>분포도 안의 셀 영역이 진할수록 더 많은 트랜잭션이 발생하였음을 의미하고 파란색은 정상응답, 빨간색은 에러를 의미합니다.",
+    "en": "This distribution map shows the response time of transactions. The darker the cell area, the more transactions have occurred. Blue indicates normal response, and red indicates errors.<br>",
+    "ja": "トランザクションの応答時間分布図<br>分布図内のセルの色が濃く程、多くのトランザクションが発生したことを示します。青色は正常な応答を、黄色はエラーを示します。"
+  },
+  "detail_report_text030": {
+    "ko": "※ 트랜잭션이란 사용자의 요청이 애플리케이션 서버에서 처리되어 결과가 리턴되는 과정을 말합니다.",
+    "en": "※ A transaction is when a user's request is processed by the application server and a result is returned.",
+    "ja": "＊トランザクションとは、ユーザーのリクエストがサーバー側で処理されてリターンするまでの一連のプロセスを言います。"
+  },
+  "detail_report_text031": {
+    "ko": "애플리케이션의 응답분포도입니다.",
+    "en": "The response distribution of the application.",
+    "ja": "アプリケーションの応答時間分布図です。"
+  },
+  "detail_report_text032": {
+    "ko": "애플리케이션 Top",
+    "en": "Application Top",
+    "ja": "アプリケーションTop"
+  },
+  "detail_report_text033": {
+    "ko": "가장 느린 트랜잭션과 가장 많이 발생한 트랜잭션의 상위 5개 목록",
+    "en": "Top 5 slowest and most frequent transactions",
+    "ja": "最も遅かったトランザクションと、最も多く発生したトランザクションの上位5件のリスト"
+  },
+  "detail_report_text034": {
+    "ko": "애플리케이션의 TOP5 목록입니다.",
+    "en": "Top 5 applications.",
+    "ja": "アプリケーションのTop5のリストです。"
+  },
+  "detail_report_text035": {
+    "ko": "느린 트랜잭션 TOP5",
+    "en": "Top 5 Slowest Transactions",
+    "ja": "遅かったトランザクションのTop5"
+  },
+  "detail_report_text036": {
+    "ko": "많이 호출 된 트랜잭션 TOP5",
+    "en": "Top 5 Most Called Transactions",
+    "ja": "多く実行されたトランザクションのTop5"
+  },
+  "detail_report_text037": {
+    "ko": "자원",
+    "en": "Resources",
+    "ja": "リソース"
+  },
+  "detail_report_text038": {
+    "ko": "서버의 전체 CPU사용량",
+    "en": "Overall CPU usage of the server",
+    "ja": "サーバー全体のCPU使用量"
+  },
+  "detail_report_text039": {
+    "ko": "Heap메모리 사용량",
+    "en": "Heap Memory Usage",
+    "ja": "ヒープメモリー使用量"
+  },
+  "detail_report_text040": {
+    "ko": "※ Heap이란 객체가 생성되면 바로 저장되는 공간으로 GC기능이 존재 합니다.",
+    "en": "※ The Heap is a space where objects are immediately stored once they're created",
+    "ja": "＊ヒープ(Heap)とは、オブジェクトが生成されたら保存されるスペースで、GCの機能を持ちます。"
+  },
+  "detail_report_text041": {
+    "ko": "애플리케이션 시스템의 자원 사용량을 보여줍니다.",
+    "en": "Shows the resource usage of the application system.",
+    "ja": "アプリケーションシステムのリソース使用量を示します。"
+  },
+  "detail_report_text042": {
+    "ko": "GC 건수",
+    "en": "GC Count",
+    "ja": "GC件数"
+  },
+  "detail_report_text043": {
+    "ko": "※ GC(Garbage Collection)란 Heap Memory 내 각 영역에 객체가 가득찼을 때 사용하지 않는 객체들을 정리하는 과정을 의미합니다.",
+    "en": "※ GC (Garbage Collection) refers to the process of cleaning up unused objects when each area within the Heap Memory is full.",
+    "ja": "＊ GC(Garbage Collection)とは、ヒープメモリー上の各領域にオブジェクトが満載した際、使われていないオブジェクトを片付ける過程を言います。"
+  },
+  "detail_report_text044": {
+    "ko": "GC 수행 시간",
+    "en": "GC Execution Time",
+    "ja": "GC実行時間"
+  },
+  "detail_report_text045": {
+    "ko": "사용중이었던 DB연결 수",
+    "en": "Number of DB connections that were in use",
+    "ja": "使用中のDBコネクション数"
+  },
+  "detail_report_text046": {
+    "ko": "전체 DB연결 수 (전체 수 = 사용중 + 대기중)",
+    "en": "Total DB Connection Count (Total Count = In Use + On Hold)",
+    "ja": "全体のDBコネクション数(全体数＝使用中＋待機中)"
+  },
+  "detail_report_text047": {
+    "ko": "애플리케이션 시스템의 기타 사용량을 보여줍니다.",
+    "en": "Shows other usage of the application system.",
+    "ja": "アプリケーションシステムのその他の使用量を示します。"
+  },
+  "detail_report_text048": {
+    "ko": "시스템 최대 CPU사용량",
+    "en": "Maximum System CPU Usage",
+    "ja": "システムの最大CPU使用量"
+  },
+  "detail_report_text049": {
+    "ko": "※ 5분 동안 5초마다 수집한 데이터 중 가장 큰 CPU값입니다.",
+    "en": "※ The largest CPU value of the data collected every 5 seconds for 5 minutes.",
+    "ja": "＊5分の間、5秒間隔で収集したデータの内、最も大きかったCPU値です。"
+  },
+  "detail_report_text050": {
+    "ko": "애플리케이션 서버의 프로세스 CPU 사용률",
+    "en": "CPU Usage by Process on the Application Server",
+    "ja": "アプリケーションサーバーのプロセスCPU使用量"
+  },
+  "detail_report_text051": {
+    "ko": "가상화 환경에서의 손실률",
+    "en": "Loss Rate in a Virtualized Environment",
+    "ja": "仮想化環境での損失率"
+  },
+  "detail_report_text052": {
+    "ko": "※ 가상 CPU가 실제 CPU 시간을 기다리느라 소비하는 초당 소비시간을 의미합니다.",
+    "en": "※ The amount of time per second that a virtual CPU spends waiting for real CPU time.",
+    "ja": "＊仮想CPUが、実際のCPU時間を待ちながら消費する秒あたりの消費時間を示します。"
+  },
+  "detail_report_text053": {
+    "ko": "하드웨어 인터럽트 처리률",
+    "en": "Hardware Interruption Processing Rate",
+    "ja": "ハードウェアインタラプト処理率"
+  },
+  "detail_report_text054": {
+    "ko": "※ CPU가 하드웨어 인터럽트 처리를 위해 소비하는 초당 소비시간을 의미 합니다.",
+    "en": "※ The amount of time per second that the CPU spends processing hardware interrupts.",
+    "ja": "＊CPUがハードウェアインタラプト処理のために消費する秒当りの消費時間を示します。"
+  },
+  "detail_report_text055": {
+    "ko": "시스템의 Memory 사용량",
+    "en": "System Memory Usage",
+    "ja": "システムのメモリー使用量"
+  },
+  "detail_report_text056": {
+    "ko": "애플리케이션 서버의 기타 자원 사용량을 보여줍니다",
+    "en": "Shows other resource usage on the application server",
+    "ja": "アプリケーションサーバーのその他のリソース使用量を示します。"
+  },
+  "detail_report_text057": {
+    "ko": "기타 자원",
+    "en": "Resources ETC",
+    "ja": "その他のリソース"
+  },
+  "detail_report_text058": {
+    "ko": "기타",
+    "en": "ETC",
+    "ja": "その他"
+  },
+  "whatap_labs": {
+    "ko": "와탭랩스",
+    "en": "WhaTap Labs",
+    "ja": "WhaTap Labs"
+  },
+  "server_monitoring_monthly_report": {
+    "ko": "서버 모니터링 월간 보고서",
+    "en": "Server Monitoring Monthly Report",
+    "ja": "サーバーモニタリングの月次レポート"
+  },
+  "monitoring_period": {
+    "ko": "모니터링 기간",
+    "en": "Monitoring Period",
+    "ja": "モニタリング期間"
+  },
+  "report_date": {
+    "ko": "보고서 작성일",
+    "en": "Report Created",
+    "ja": "レポート作成日"
+  },
+  "cpu_detail": {
+    "ko": "서버의 CPU 사용량을 보여줍니다. 사용량이 지나치게 높지 않은지 확인하세요.",
+    "en": "Shows the CPU usage by the server. Please make sure the usage is not excessively high.",
+    "ja": "サーバーのCPU使用量を示します。使用量が高すぎる状況ではないかを確認してください。"
+  },
+  "cpu_sys_def": {
+    "ko": "시스템(커널)이 사용하는 서버의 CPU 사용량",
+    "en": "Server's CPU usage by the system (kernel)",
+    "ja": "システム(カーネル)が使用するサーバーCPUの使用量"
+  },
+  "cpu_usr_def": {
+    "ko": "사용자가 사용중인 서버의 CPU 사용량",
+    "en": "Server's CPU usage by the user",
+    "ja": "ユーザーが使用しているサーバーCPUの使用量です。"
+  },
+  "cpu_steal_def": {
+    "ko": "가상화 환경에서의 손실률",
+    "en": "Loss rate in a virtualized environment",
+    "ja": "仮想化環境での損失率"
+  },
+  "cpu_steal_detail": {
+    "ko": "※ 가상 CPU가 실제 CPU 시간을 기다리느라 소비하는 초당 소비시간을 의미합니다.",
+    "en": "* The amount of time per second that the virtual CPU spends waiting for real CPU time.",
+    "ja": "＊仮想CPUが実際CPUの時間を待ちながら消費する秒当りの消費時間を示します。"
+  },
+  "monitoring_result": {
+    "ko": "모니터링 결과",
+    "en": "Monitoring Result",
+    "ja": "モニタリング結果"
+  },
+  "comments_from_system_personnel": {
+    "ko": "시스템 담당자 의견",
+    "en": "Comments from system personnel",
+    "ja": "担当者コメント"
+  },
+  "cpu_wait_def": {
+    "ko": "입출력을 기다리는 프로세스 사용률",
+    "en": "Process utilization waiting for input/output",
+    "ja": "入出力を待機するプロセス使用率"
+  },
+  "cpu_wait_detail": {
+    "ko": "※ CPU가 디스크 IO가 완료되는 것을 기다리느라 소비하는 초당 소비시간을 의미 합니다.",
+    "en": "* The amount of time per second that the CPU spends waiting for disk IOs to complete.",
+    "ja": "* CPUがディスクIOの終了を待ちながら消費する秒当りの消費時間を示します。"
+  },
+  "cpu_nice_def": {
+    "ko": "프로세스 우선순위를 기반으로 사용되는 사용률",
+    "en": "The utilization based on process priority",
+    "ja": "プロセス優先順位を基に使用される使用率"
+  },
+  "cpu_nice_detail": {
+    "ko": "※ 이 값은 사용자 공간에서 사용됩니다.",
+    "en": "* This value is used in the user space.",
+    "ja": "* この値はユーザースペースで使用されます。"
+  },
+  "cpu_irq_def": {
+    "ko": "하드웨어 인터럽트 처리률",
+    "en": "Hardware interrupt rate",
+    "ja": "ハードウェアインタラプトの処理率"
+  },
+  "cpu_irq_detail": {
+    "ko": "※ CPU가 하드웨어 인터럽트 처리를 위해 소비하는 초당 소비시간을 의미 합니다.",
+    "en": "* The amount of time per second that the CPU spends processing hardware interrupts.",
+    "ja": "* CPUがハードウェアインタラプトを処理するために消費する秒当りの消費時間を示します。"
+  },
+  "cpu_soft_irq_def": {
+    "ko": "소프트웨어 인터럽트 처리률",
+    "en": "Software interrupt throughput rate",
+    "ja": "ソフトウェアインタラプトの処理率"
+  },
+  "cpu_soft_irq_detail": {
+    "ko": "※ CPU가 소프트웨어 인터럽트 처리를 위해 소비하는 초당 소비시간을 의미 합니다.",
+    "en": "* The amount of time per second that the CPU spends processing software interrupts.",
+    "ja": "* CPUがソフトウェアインタラプトを処理するために消費する秒当りの消費時間を示します。"
+  },
+  "memory_detail": {
+    "ko": "서버의 Memory 사용량을 보여줍니다. 사용량이 지나치게 높지 않은지 확인하세요.",
+    "en": "Shows the memory usage by the server. Please make sure the usage is not excessively high.",
+    "ja": "サーバーのメモリ使用量を示します。使用量が高すぎる状況ではないかを確認してください。"
+  },
+  "swap_def": {
+    "ko": "Swap Memory 영역 사용량",
+    "en": "Swap Memory Area Usage",
+    "ja": "SWAP Memory領域の使用量"
+  },
+  "swap_detail": {
+    "ko": "※ Swap Memory는 주 메모리가 부족할 때 하드디스크와 같은 공간을 메모리로 사용하기 위한 가상 메모리입니다.",
+    "en": "* Swap Memory is a virtual memory for using hard disk-like space as memory when main memory runs out.",
+    "ja": "* SWAP Memoryは、主メモリが足りなくなった場合にハードディスクのようなスペースをメモリとして使用するための仮想メモリです。"
+  },
+  "disk_detail": {
+    "ko": "서버의 Disk 사용량을 보여줍니다. 사용량이 지나치게 높지 않은지 확인하세요.",
+    "en": "Shows the disk usage of the server. Please make sure the usage is not excessively high.",
+    "ja": "サーバーのディスク使用量を示します。使用量が高すぎる状況ではないかを確認してください。"
+  },
+  "disk_io_def": {
+    "ko": "Disk의 Device(장치)들이 각각 사용하는 IO 사용률",
+    "en": "The percentage of IO utilization used by each device on the disk.",
+    "ja": "ディスクのデバイス別に使用するI/Oの使用率"
+  },
+  "disk_io_detail": {
+    "ko": "※ IO 사용률은 초당 IO 사용 시간을 의미합니다.",
+    "en": "* IO utilization is the IO usage per second.",
+    "ja": "* I/O使用率は秒当りのI/O使用時間を示します。"
+  },
+  "network_detail": {
+    "ko": "서버의 Network 사용량을 보여줍니다. 사용량이 지나치게 높지 않은지 확인하세요.",
+    "en": "Shows the Network usage of the server. Please make sure the usage is not excessively high.",
+    "ja": "サーバーのネットワーク使用量を示します。使用量が高すぎる状況ではないかを確認してください。"
+  },
+  "network_bps_def": {
+    "ko": "Network Traffic의 대역폭",
+    "en": "The bandwidth of the network traffic",
+    "ja": "ネットワークトラフィックの帯域幅"
+  },
+  "network_bps_detail": {
+    "ko": "※ Network Traffic = OutBound + InBound",
+    "en": "* Network Traffic = OutBound + InBound",
+    "ja": "* ネットワークトラフィック = アウトバウンド + インバウンド"
+  },
+  "cpu_total_milli": {
+    "ko": "컨테이너 CPU 사용량",
+    "en": "Container CPU Usage",
+    "ja": "コンテナCPU使用量"
+  },
+  "cpu_per_quota": {
+    "ko": "컨테이너 CPU 사용률",
+    "en": "Container CPU Utilization Rate",
+    "ja": "コンテナCPU使用率"
+  },
+  "application_summary_by_user_defined_group": {
+    "ko": "사용자 지정그룹(okind) 애플리케이션 요약",
+    "en": "Application Summary for Custom User Groups",
+    "ja": "ユーザー指定グループ(okind)のアプリケーション要約"
+  },
+  "kube_okind": {
+    "ko": "사용자 지정 그룹",
+    "en": "User-Defined Group",
+    "ja": "ユーザー定義グループ"
+  },
+  "k103_h2_title_001": {
+    "ko": "kube-apiserver Pod 상태 추이",
+    "en": "Status trend of the kube-apiserver Pod",
+    "ja": "kube-apiserver Pod状態の推移"
+  },
+  "k103_h3_title_001": {
+    "ko": "kube-apiserver Pod 수 추이",
+    "en": "Count trend of the kube-apiserver Pod",
+    "ja": "kube-apiserver Pod数の推移"
+  },
+  "k103_p_desc_001": {
+    "ko": "kube-apiserver Pod 수 변화에 대한 추이입니다. kube-apiserver Pod 의 이름을 기준으로 집계되었습니다.",
+    "en": "This trend displays the changes in the number of kube-apiserver Pods. The trend is aggregated based on the name of the kube-apiserver Pod.",
+    "ja": "kube-apiserver Pod数の変化に対する推移です。kube-apiserver Pod名を基準に集計されました。"
+  },
+  "k103_p_value_001": {
+    "ko": "통계 마지막 시점 kube-apiserver Pod 수는 %s 개 입니다.",
+    "en": "At the end point of the statistics, the number of kube-apiserver Pods was %s.",
+    "ja": "統計の最後の時点のkube-apiserver Pod数は、%s個です。"
+  },
+  "k103_h3_title_002": {
+    "ko": "kube-apiserver Pod CPU(millicore) 추이",
+    "en": "Trend of the kube-apiserver Pod CPU (millicore)",
+    "ja": "kube-apiserver Pod CPU(millicore) の推移"
+  },
+  "k103_p_desc_002": {
+    "ko": "kube-apiserver Pod 에 대한 CPU 사용량 추이입니다. Pod CPU Limit 대비 CPU 사용량 정보를 기준으로 집계되었습니다.",
+    "en": "This is the CPU usage trend for the kube-apiserver Pod. It is aggregated based on the CPU usage compared to the Pod CPU limit.",
+    "ja": "kube-apiserver Podに対するCPU使用量の推移です。Pod CPU Limit対比CPU使用量の情報を基準に集計されました。"
+  },
+  "k103_p_value_002": {
+    "ko": "통계의 마지막 시점 kube-apiserver 의 Pod CPU Limit 는 %s millicore 입니다.",
+    "en": "The Pod CPU limit of the kube-apiserver at the end point of the statistics is %s millicore.",
+    "ja": "統計の最後の時点のkube-apiserverのPod CPU Limitは、%s millicoreです。"
+  },
+  "k103_h3_title_003": {
+    "ko": "kube-apiserver Pod Memory(megabyte) 추이",
+    "en": "Trend of the kube-apiserver Pod memory (megabyte)",
+    "ja": "kube-apiserver Pod Memory(megabyte) の推移"
+  },
+  "k103_p_desc_003": {
+    "ko": "kube-apiserver Pod 에 대한 Memory 사용량 추이입니다. Pod Memory Limit 대비 Memory 사용량 정보를 기준으로 집계되었습니다.",
+    "en": "This is the memory usage trend for the kube-apiserver Pod. It is aggregated based on the memory usage compared to the Pod memory limit.",
+    "ja": "kube-apiserver Podに対するMemory使用量の推移です。Pod Memory Limit対比Memory使用量の情報を基準に集計されました。"
+  },
+  "k103_p_value_003": {
+    "ko": "통계의 마지막 시점 kube-apiserver 의 Pod Memory Limit 는 %s MB 입니다.",
+    "en": "The Pod memory limit of the kube-apiserver at the end point of the statistics is %s MB.",
+    "ja": "統計の最後の時点のkube-apiserverのPod Memory Limitは、%s MBです。"
+  },
+  "k103_h3_title_004": {
+    "ko": "kube-apiserver Pod 재시작 횟수 추이",
+    "en": "Count trend of the kube-apiserver Pod restarts",
+    "ja": "kube-apiserver Pod再起動回数の推移"
+  },
+  "k103_p_desc_004": {
+    "ko": "kube-apiserver Pod 에 대한 재시작 횟수 추이입니다. 재시작 횟수는 누계 값을 사용합니다.",
+    "en": "This is the count trend of restarts for the kube-apiserver Pod. The number of restarts uses a cumulative value.",
+    "ja": "kube-apiserver Podに対する再起動回数の推移です。再起動回数は、累計値を使用します。"
+  },
+  "k103_h2_title_002": {
+    "ko": "1초 내 실행중 요청 수 추이",
+    "en": "Number of requests running within 1 second",
+    "ja": "1秒内の実行中のリクエスト数の推移"
+  },
+  "k103_p_desc_005": {
+    "ko": "데이터 수집 시 kube-apiserver 에서 1초 내에 진행되고 있던 요청 수의 추이입니다.",
+    "en": "It is the count trend of requests run within 1 second in kube-apiserver during data collection.",
+    "ja": "データ収集時にkube-apiserverで1秒以内に行われていたリクエスト数の推移です。"
+  },
+  "k103_p_desc_006": {
+    "ko": "1초 내 실행중 요청 수 추이는 kube-apiserver Pod 가 여러 개인 경우 전체 합산으로 계산됩니다.",
+    "en": "The count trend of requests running within 1 second is calculated as the total sum if there are multiple kube-apiserver Pods.",
+    "ja": "1秒内の実行中のリクエスト数の推移は、kube-apiserver Podが複数ある場合は、合計で計算されます。"
+  },
+  "k103_h2_title_003": {
+    "ko": "goroutines 추이",
+    "en": "goroutines trend",
+    "ja": "goroutinesの推移"
+  },
+  "k103_p_desc_007": {
+    "ko": "고루틴 수에 대한 추이입니다.",
+    "en": "This is the trend for the numbers of goroutines.",
+    "ja": "ゴルーチン数の推移です。"
+  },
+  "k103_p_desc_008": {
+    "ko": "goroutines 추이는 kube-apiserver Pod 가 여러 개인 경우 전체 합산으로 계산됩니다.",
+    "en": "The goroutines trend is calculated as the total sum if there are multiple kube-apiserver Pods.",
+    "ja": "goroutinesの推移は、kube-apiserver Podが複数ある場合は、合計で計算されます。"
+  },
+  "k103_h2_title_004": {
+    "ko": "go threads 추이",
+    "en": "go threads trend",
+    "ja": "go threadsの推移"
+  },
+  "k103_p_desc_009": {
+    "ko": "OS 스레드 수에 대한 추이입니다.",
+    "en": "This is the trend for the numbers of OS threads.",
+    "ja": "OSスレッド数の推移です。"
+  },
+  "k103_p_desc_010": {
+    "ko": "go threads 추이는 kube-apiserver Pod 가 여러 개인 경우 전체 합산으로 계산됩니다.",
+    "en": "The go threads trend is calculated as the total sum if there are multiple kube-apiserver Pods.",
+    "ja": "go threadsの推移は、kube-apiserver Podが複数ある場合は、合計で計算されます。"
+  },
+  "k103_h2_title_005": {
+    "ko": "kube-apiserver 요청 횟수 통계",
+    "en": "Count statistics of the kube-apiserver requests",
+    "ja": "kube-apiserverリクエスト回数の統計"
+  },
+  "k103_p_desc_011": {
+    "ko": "아래의 요청 횟수 통계표는 kube-apiserver Pod 가 여러 개인 경우 전체 합산으로 계산됩니다.",
+    "en": "The request count statistics table below is calculated as the total sum if there are multiple kube-apiserver Pods.",
+    "ja": "以下のリクエスト回数の統計表は、kube-apiserver Podが複数ある場合は、合計で計算されます。"
+  },
+  "k103_h3_title_005": {
+    "ko": "verb 별 요청 횟수",
+    "en": "Request numbers for each verb",
+    "ja": "verb別のリクエスト回数"
+  },
+  "k103_p_desc_012": {
+    "ko": "verb 별 요청 횟수를 시간대별로 세분화하여 보여줍니다. verb 에는 HTTP 요청 메소드 (GET, POST, DELETE, PUT) 등과 쿠버네티스에서 사용되는 WATCH 등이 포함됩니다.",
+    "en": "It displays the request counts per verb by each time zone. Verb includes HTTP request methods (GET, POST, DELETE, PUT), WATCH used in Kubernetes, and the like.",
+    "ja": "verb別のリクエスト回数を時間帯別に細分化して表示します。verbには、HTTPリクエストメソッド(GET、POST、DELETE、PUT) などとKubernetesで使用されるWATCHなどが含まれます。"
+  },
+  "k103_h3_title_006": {
+    "ko": "code 별 요청 횟수",
+    "en": "Request counts for each code",
+    "ja": "code別のリクエスト回数"
+  },
+  "k103_p_desc_013": {
+    "ko": "code 별 요청 횟수를 시간대별로 세분화하여 보여줍니다.",
+    "en": "It displays the request counts per code by each time zone.",
+    "ja": "code別のリクエスト回数を時間帯別に細分化して表示します。"
+  },
+  "k103_p_desc_014": {
+    "ko": "code 2xx 은 200~299, 3xx 은 300~399, 4xx 은 400~499, 5xx 은 500~599 상태 코드를 의미합니다.",
+    "en": "The status code 2xx means 200 to 299, 3xx means 300 to 399, 4xx means 400 to 499, and 5xx means 500 to 599.",
+    "ja": "code 2xxは200~299、3xxは300~399、4xxは400~499、5xxは500~599のステータスコードを意味します。"
+  },
+  "k103_h3_title_007": {
+    "ko": "instance 별 요청 횟수",
+    "en": "Request counts for each instance",
+    "ja": "instance別のリクエスト回数"
+  },
+  "k103_p_desc_015": {
+    "ko": "instance 별 요청 횟수를 시간대별로 세분화하여 보여줍니다. 각 인스턴스의 요청 처리량을 파악할 수 있습니다.",
+    "en": "It displays the request counts per instance by each time zone. You can see the request throughput for each instance.",
+    "ja": "instance別のリクエスト回数を時間帯別に細分化して表示します。各インスタンスのリクエストの処理量を把握できます。"
+  },
+  "k103_h2_title_006": {
+    "ko": "kube-apiserver Latency 통계",
+    "en": "Statistics of the kube-apiserver latency",
+    "ja": "kube-apiserver Latencyの統計"
+  },
+  "k103_p_desc_016": {
+    "ko": "아래의 Latency 표는 kube-apiserver Pod 가 여러 개인 경우 전체 합산으로 계산됩니다.",
+    "en": "The latency table below is calculated as the total sum if there are multiple kube-apiserver Pods.",
+    "ja": "以下のLatency表は、kube-apiserver Podが複数ある場合は、合計で計算されます。"
+  },
+  "k103_h3_title_008": {
+    "ko": "verb 별 latency",
+    "en": "Latencies for each verb",
+    "ja": "verb別のlatency"
+  },
+  "k103_p_desc_017": {
+    "ko": "verb 별 요청을 처리하는데 걸린 시간을 시간대별로 세분화하여 각 verb 에 대한 처리 속도를 파악할 수 있습니다. 행위엔 HTTP 요청 메소드 (GET, POST, DELETE, PUT) 등과 쿠버네티스에서 사용되는 WATCH 등이 포함됩니다.",
+    "en": "You can see the processing speed per verb (time taken to process requests) by each time zone. A behavior includes the HTTP request methods (GET, POST, DELETE, PUT) and WATCH used in Kubernetes.",
+    "ja": "verb別のリクエストを処理するのにかかった時間を時間帯別に細分化して各verbに対する処理速度を把握することができます。行為には、HTTPリクエストメソッド(GET、POST、DELETE、PUT) などとKubernetesで使用されるWATCHなどが含まれます。"
+  },
+  "k103_h3_title_009": {
+    "ko": "instance 별 latency",
+    "en": "Latencies for each instance",
+    "ja": "instance別のlatency"
+  },
+  "k103_p_desc_018": {
+    "ko": "instance 별 latency 통계는 각 인스턴스가 요청을 처리하는데 걸린 시간을 시간대별로 세분화하여 보여줍니다. 각 인스턴스의 요청에 대한 처리 속도를 파악할 수 있습니다.",
+    "en": "The latency statistics per instance displays the times taken for each instance to process requests by each time zone. You can see the speed to process requests for each instance.",
+    "ja": "instance別のlatency統計は、各インスタンスがリクエストを処理するのにかかった時間を時間帯別に細分化して表示します。各インスタンスのリクエストの処理速度を把握できます。"
+  },
+  "k103_p_desc_019": {
+    "ko": "보다 정확한 latency 통계를 위해 'WATCH' verb 대한 latency 는 통계에서 제외되었습니다. (verb 별 latency 참고)",
+    "en": "For more accurate latency statistics, the latency for the 'WATCH' verb has been excluded from the statistics (see the latencies for each verb).",
+    "ja": "より正確なlatency統計のために'WATCH' verbに対するlatencyは統計から除外されました。(verb別のlatencyを参照)"
+  }
+}

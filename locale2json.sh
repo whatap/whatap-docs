@@ -24,4 +24,7 @@ node side-menu-01
 echo "Run side-menu-02 ..."
 node side-menu-02 && echo "Remove unused files ..." && rm menu.en.js menu.ko.js menu.ja.js menu-locale.json
 
+echo "run locale2report ..."
+node locale2report
+
 echo "Complete!!"

@@ -131,6 +131,30 @@ function getFileData(auth, fileId) {
   });
 }
 
+function getFileDataReport(auth, fileId) {
+  var sheets = google.sheets('v4');
+  const rangeValue = encodeURIComponent("'보고서 통합본'!A1:D10000");
+  return new Promise(function (resolve, reject) {
+    sheets.spreadsheets.values.get(
+      {
+        auth: auth,
+        spreadsheetId: fileId,
+        range: rangeValue,
+      },
+      function (err, response) {
+        if (err) {
+          reject(err);
+          return;
+        }
+        // fs.writeFileSync('./src/components/ui-text/data.json', JSON.stringify(response.values, null, 2), 'utf-8');
+        var json = UTILS.colsToJsonReport(response.values);
+
+        resolve(json);
+      },
+    );
+  });
+}
+
 function writeFileData(authClient, fileId, range, values) {
   var sheets = google.sheets('v4');
 
@@ -189,6 +213,7 @@ function getSheetProperties(authClient) {
 
 module.exports = {
   getFileData: getFileData,
+  getFileDataReport: getFileDataReport,
   writeFileData: writeFileData,
   getAuth: getAuth,
 };
