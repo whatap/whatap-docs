@@ -3655,6 +3655,7 @@ const sidebars = {
         'about-billing',
         'software-proxy',
         'main-ui-intro-v2',
+        'glossary/glossary',
         {
           type: 'link',
           label: "상세 검색",
