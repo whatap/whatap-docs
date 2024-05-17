@@ -1507,6 +1507,7 @@ const sidebars = {
                 'postgresql/analysis-session-history',
                 'postgresql/analysis-wait-events',
                 'postgresql/analysis-top-object',
+                'postgresql/analysis-compare-top-sql',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -1964,6 +1965,7 @@ const sidebars = {
               items: [
                 'mysql/analysis-count-trend',
                 'mysql/analysis-lock-and-deadlock',
+                'mysql/analysis-compare-top-sql',
                 'mysql/analysis-databaseparameter',
               ]
             },
