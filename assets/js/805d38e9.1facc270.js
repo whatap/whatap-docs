@@ -40,6 +40,15 @@ const metadata = {
     "id": "preview-2_6_0x",
     "title": "Preview 2.6.0.a",
     "toc_max_heading_level": 2
+  },
+  "sidebar": "previewSidebar",
+  "previous": {
+    "title": "Preview Release Notes",
+    "permalink": "/whatap-docs/release-notes/preview/"
+  },
+  "next": {
+    "title": "Preview 2.5.0.a",
+    "permalink": "/whatap-docs/release-notes/preview/preview-2_5_0x"
   }
 };
 const assets = {
@@ -56,6 +65,10 @@ const toc = [{
   "value": "<code>Server</code>",
   "id": "server",
   "level": 3
+}, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -64,6 +77,7 @@ function _createMdxContent(props) {
     code: "code",
     h2: "h2",
     h3: "h3",
+    hr: "hr",
     p: "p",
     section: "section",
     strong: "strong",
@@ -93,7 +107,7 @@ function _createMdxContent(props) {
         id: "preview-260a0",
         children: "Preview 2.6.0.a0"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2024년 05월 23일"
+        children: "2024년 05월 17일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -113,6 +127,21 @@ function _createMdxContent(props) {
           }), " 메뉴에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "Oracle Solaris OS"
           }), " 설치 안내 페이지 추가"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Deprecated"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dbTopSqlComparison",
+            className: "uitext"
+          })]
         })]
       })]
     })]

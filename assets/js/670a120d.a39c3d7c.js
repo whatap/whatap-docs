@@ -41,8 +41,8 @@ const metadata = {
   },
   "sidebar": "previewSidebar",
   "next": {
-    "title": "Preview 2.5.0.a",
-    "permalink": "/whatap-docs/release-notes/preview/preview-2_5_0x"
+    "title": "Preview 2.6.0.a",
+    "permalink": "/whatap-docs/release-notes/preview/preview-2_6_0x"
   }
 };
 const assets = {
