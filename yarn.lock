@@ -2061,7 +2061,7 @@
   dependencies:
     loader-utils "^2.0.0"
 
-"@docusaurus/theme-classic@3.3.2":
+"@docusaurus/theme-classic@3.3.2", "@docusaurus/theme-classic@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-classic/-/theme-classic-3.3.2.tgz#44489580e034a6f5b877ec8bfd1203e226b4a4ab"
   integrity sha512-gepHFcsluIkPb4Im9ukkiO4lXrai671wzS3cKQkY9BXQgdVwsdPf/KS0Vs4Xlb0F10fTz+T3gNjkxNEgSN9M0A==
