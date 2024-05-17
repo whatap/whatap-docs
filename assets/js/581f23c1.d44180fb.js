@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76912],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3524],{
 
 /***/ 6526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -159,13 +159,9 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "AA001"
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "액티브 트랜잭션 스피드",
-          src: (__webpack_require__(541)/* ["default"] */ .A) + "",
-          width: "1200",
-          height: "173"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "speedmeter.png",
+        desc: "액티브 트랜잭션 스피드"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "현재 진행 중인 트랜잭션(가운데 영역)과 종료된 트랜잭션(오른쪽 영역) 현황을 확인할 수 있습니다. 왼쪽에서 오른쪽으로 지나가는 물방울 모양의 아이콘은 트랜잭션을 의미합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -2196,7 +2192,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 70563:
+/***/ 39869:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2224,30 +2220,29 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard',
 	title: '애플리케이션 대시보드',
-	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
+	description: '자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.',
 	tags: [
-		'Python',
+		'Java',
 		'대시보드',
-		'애플리케이션',
-		'애플리케이션 모니터링'
+		'애플리케이션'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/dashboard",
+  "id": "java/dashboard",
   "title": "애플리케이션 대시보드",
-  "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/python/dashboard.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/dashboard",
-  "permalink": "/whatap-docs/python/dashboard",
+  "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
+  "source": "@site/docs/java/dashboard.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/dashboard",
+  "permalink": "/whatap-docs/java/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/dashboard.mdx",
+  "editUrl": "undefined/docs/java/dashboard.mdx",
   "tags": [
     {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "label": "대시보드",
@@ -2256,32 +2251,27 @@ const metadata = {
     {
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
-    },
-    {
-      "label": "애플리케이션 모니터링",
-      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard",
     "title": "애플리케이션 대시보드",
-    "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
+    "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
     "tags": [
-      "Python",
+      "Java",
       "대시보드",
-      "애플리케이션",
-      "애플리케이션 모니터링"
+      "애플리케이션"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/python/dashboard-intro"
+    "permalink": "/whatap-docs/java/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/python/dashboard-transactionmap"
+    "permalink": "/whatap-docs/java/dashboard-transactionmap"
   }
 };
 const assets = {
@@ -2538,16 +2528,6 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxMnB4O2hlaWdodDogMTJweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcmlnaHQ8L3RpdGxlPiAtLT4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc0MC4wMDAwMDAsIC0xNjQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkaXJlY3Rpb25hbC1pY29ucyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAuMDAwMDAwLCAxMTkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcmlnaHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwMC4wMDAwMDAsIDQ1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcuMDAwMDAwLCAzLjAwMDAwMCkiIGlkPSJDb21iaW5lZC1TaGFwZSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xLjU1NzM5MzUsMTcuNDYzNTM2NiBMMC4xNDMxNzk5NCwxNi4wNDkzMjMgTDcuMjE0MTc5OTQsOC45Nzc5NzM4MyBMMC4xNDMxNzk5NCwxLjkwNzE4NzQgTDEuNTU3MzkzNSwwLjQ5Mjk3MzgzNCBMMTAuMDQyNjc0OSw4Ljk3ODI1NTIxIEwxLjU1NzM5MzUsMTcuNDYzNTM2NiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
-
-/***/ }),
-
-/***/ 541:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/speedmeter-ca3c8c20cd8eb551279a5633c2df3448.png");
 
 /***/ }),
 
