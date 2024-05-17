@@ -1814,6 +1814,7 @@ const sidebars = {
                 'oracle-dma/analysis-count-trend',
                 'oracle-dma/analysis-lock-and-deadlock',
                 'oracle-dma/analysis-session-history',
+                // 'oracle-dma/analysis-compare-top-sql',
                 'oracle-dma/analysis-pq-tree',
                 'oracle-dma/analysis-databaseparameter',
               ]
