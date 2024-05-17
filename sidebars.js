@@ -1507,6 +1507,7 @@ const sidebars = {
                 'postgresql/analysis-session-history',
                 'postgresql/analysis-wait-events',
                 'postgresql/analysis-top-object',
+                'postgresql/analysis-compare-top-sql',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -1964,6 +1965,7 @@ const sidebars = {
               items: [
                 'mysql/analysis-count-trend',
                 'mysql/analysis-lock-and-deadlock',
+                'mysql/analysis-compare-top-sql',
                 'mysql/analysis-databaseparameter',
               ]
             },
@@ -3134,7 +3136,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_32',
@@ -3143,7 +3145,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_32',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_31',
                 'release-notes/java/java-2_2_30',
@@ -3243,14 +3245,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_6_3',
+                id: 'release-notes/python/python-1_6_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_3',
+                  id: 'release-notes/python/python-1_6_4',
                   className: 'new',
                 },
+                'release-notes/python/python-1_6_3',
                 'release-notes/python/python-1_6_2',
                 'release-notes/python/python-1_6_1',
                 'release-notes/python/python-1_6_0',
@@ -3260,7 +3263,6 @@ const sidebars = {
                 'release-notes/python/python-1_5_6',
                 'release-notes/python/python-1_5_5',
                 'release-notes/python/python-1_5_4',
-                'release-notes/python/python-1_5_3',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3375,14 +3377,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_6_1',
+                id: 'release-notes/k8s/k8s-1_7_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_6_1',
+                  id: 'release-notes/k8s/k8s-1_7_0',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_6_1',
                 'release-notes/k8s/k8s-1_6_0',
                 'release-notes/k8s/k8s-1_5_9',
                 'release-notes/k8s/k8s-1_5_8',
@@ -3391,7 +3394,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_5_5', 
                 'release-notes/k8s/k8s-1_5_4', 
                 'release-notes/k8s/k8s-1_5_3', 
-                'release-notes/k8s/k8s-1_5_2', 
                 'release-notes/k8s/k8s-previous',
               ],
             },
