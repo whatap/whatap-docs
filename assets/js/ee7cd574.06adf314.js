@@ -21,7 +21,8 @@ const frontMatter = {
 	id: 'server-2_5_0',
 	title: 'Server Agent v2.5.0',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/server/server-2_4_9'
+	pagination_next: 'release-notes/server/server-2_4_9',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -41,7 +42,8 @@ const metadata = {
     "id": "server-2_5_0",
     "title": "Server Agent v2.5.0",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/server/server-2_4_9"
+    "pagination_next": "release-notes/server/server-2_4_9",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
