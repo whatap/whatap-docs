@@ -46,10 +46,6 @@ const metadata = {
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Kubernetes Agent v1.5.4",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_4"
-  },
   "next": {
     "title": "Kubernetes Agent v1.5.2",
     "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_2"
