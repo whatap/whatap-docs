@@ -3076,7 +3076,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_95',
@@ -3085,7 +3085,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_95',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
@@ -3132,7 +3132,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_2_4',
@@ -3141,7 +3141,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_2_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
@@ -3238,14 +3238,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_7_0',
+                id: 'release-notes/k8s/k8s-1_7_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_0',
+                  id: 'release-notes/k8s/k8s-1_7_1',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_0',
                 'release-notes/k8s/k8s-1_6_1',
                 'release-notes/k8s/k8s-1_6_0',
                 'release-notes/k8s/k8s-1_5_9',
@@ -3254,7 +3255,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_5_6',
                 'release-notes/k8s/k8s-1_5_5', 
                 'release-notes/k8s/k8s-1_5_4', 
-                'release-notes/k8s/k8s-1_5_3', 
                 'release-notes/k8s/k8s-previous',
               ],
             },
