@@ -606,11 +606,12 @@ div[class*='dataset'] span[class*='hitPath'] {
   font-weight: bold;
   color: #00FFFF;
 }
-[data-them='dark'] div[class*='tableOfContents'] > ul > li.table-of-contents__link > a > code {
+[data-theme='dark'] .col--2 > div > ul.table-of-contents > li > a > code {
   background-color: #4c4c4c !important;
-  // color: #333 !important;
-  display: block;
 }
+// [data-theme='dark'] .col--2 > div > ul.table-of-contents > li > a > code:hover {
+//   color: #999999 !important;
+// }
 code {
   background-color: #f0f0f0;
   color: #4c4c4c;
@@ -1087,7 +1088,8 @@ main {
       }
     }
     details.changelog {
-      background-color:rgb(230, 230, 230) !important; 
+      // background-color: #F5F5F5 !important; 
+      background-color: transparent !important;
       padding-left: 10px; 
       border: 0.5px;
     }
@@ -1120,7 +1122,7 @@ main {
       }
       div[class*='collapsibleContent'] {
         border-top: none;
-        margin-top: 16px;
+        margin-top: 26px;
         padding-top: 0;
         margin-left: 26px;
       }
@@ -1302,7 +1304,7 @@ main {
       // font-family: "Oleo Script";
       background-color: transparent;
       border: none;
-      font-size: .6em;
+      // font-size: .6em;
       // font-size: 70%;
     }
     code.history {
