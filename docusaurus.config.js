@@ -61,20 +61,7 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         // fromExtensions: ['html', 'htm'],
-        redirects: [
-          {
-            to: '/java/introduction',
-            from: '/apm/java/apm-introduction'
-          },
-          {
-            to: '/java/introduction',
-            from: '/apm/java-intro'
-          },
-          {
-            to: '/server/introduction',
-            from: '/server/server-intro'
-          },
-        ],
+        redirects: [],
       }
     ],
     [
