@@ -1906,7 +1906,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          children: "db.createUser(\n  {\n    user: \"whatap\",\n    pwd: passwordPrompt(), // Or  \"<cleartext password>\"\n    roles: [\n        { \"role\" : \"clusterMonitor\", \"db\" : \"admin\" },\n   ]\n  }\n)\n"
+          children: "db.createUser(\n  {\n    user: \"whatap\",\n    pwd: \"DB_Password\"\n    roles: [\n        { \"role\" : \"clusterMonitor\", \"db\" : \"admin\" },\n   ]\n  }\n)\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
