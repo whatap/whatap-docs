@@ -606,6 +606,12 @@ div[class*='dataset'] span[class*='hitPath'] {
   font-weight: bold;
   color: #00FFFF;
 }
+[data-theme='dark'] .col--2 > div > ul.table-of-contents > li > a > code {
+  background-color: #4c4c4c !important;
+}
+// [data-theme='dark'] .col--2 > div > ul.table-of-contents > li > a > code:hover {
+//   color: #999999 !important;
+// }
 code {
   background-color: #f0f0f0;
   color: #4c4c4c;
@@ -1082,13 +1088,94 @@ main {
       }
     }
     details.changelog {
-      background-color:rgb(230, 230, 230) !important; 
+      background-color: #FAFAFB !important; 
+      // background-color: #F9F9FB !important; 
+      // background-color: transparent !important;
       padding-left: 10px; 
       border: 0.5px;
     }
-    details.changelog[open] summary::before {
-      top: -5px;
+    details.changelog ul {
+      padding-left: 18px;
+      list-style: none;
+      padding-top: 0;
+      li {
+        display: block;
+        position: relative;
+        border-left: 1px solid #a8a8a8;
+        line-height: 1.5;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-left: 0px;
+        &::before {
+          content: "\200b";
+          width: 15px;
+          height: 15px;
+          border: 1px solid #a8a8a8;
+          background-color: #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 0px;
+          left: -8px;
+        }
+        &::marker {
+          color: #a8a8a8;
+        }
+        &:first-of-type {
+          &::marker {
+            border-left: 1px solid #333;
+          }
+        }
+        &:last-of-type {
+          border-left: none;
+        }
+      }
+      ul {
+        border-left: none;
+        list-style: decimal;
+        padding-left: 0;
+        li {
+          &::before {
+            content: "• ";
+            border: none;
+            background-color: transparent;
+            top: -5px;
+            font-size: 130%;
+            color: #a8a8a8;
+          }
+          padding-left: 5px;
+          padding-bottom: 5px;;
+          border-left: none;
+        }
+      }
+    }
+    details.changelog summary::before {
+      top: -2px;
       background-color: transparent !important;
+    }
+    details.changelog2.alert--info {
+      summary {
+        color: #4d4d4d;
+        font-size: 110%;
+      }
+    }
+    details.changelog.alert--info {
+      border: 1px solid #E3E3E3;
+      summary {
+        color: #4d4d4d;
+        font-size: 110%;
+      }
+      div[class*='collapsibleContent'] {
+        border-top: none;
+        margin-top: 26px;
+        padding-top: 0;
+        margin-left: 26px;
+        font-size: 90%;
+      }
+      ul > li > ul > li {
+        margin-top: -1px;
+        margin-left: 20px;
+      }
     }
     details.alert--info[open] summary::before {
       top: -2px;
@@ -1279,7 +1366,7 @@ main {
       color: #fff;
       // font-family: "Oleo Script";
       border: 0.5px;
-      padding: 2px 5px 2px 5px;
+      padding: 1px 4px 1px 4px;
     }
     code.changelog-service a {
       color: #fff;
@@ -1297,7 +1384,7 @@ main {
       // font-family: "Oleo Script";
       background-color: transparent;
       border: none;
-      font-size: .6em;
+      // font-size: .6em;
       // font-size: 70%;
     }
     code.history {
@@ -2215,7 +2302,22 @@ main {
       }
     }
     details.changelog {
-      color: #333;
+      // color: #333;
+      background-color: #3e3a3a !important;
+      summary {
+        color: #f0f0f0;
+      }
+    }
+    details.changelog2 {
+      summary {
+        color: #f0f0f0;
+      }
+    }
+    code.changelog-date {
+      // font-family: "Oleo Script";
+      background-color: transparent;
+      border: none;
+      color: #c0c0c0;
     }
   }
   .feedback {
