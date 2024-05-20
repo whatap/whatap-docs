@@ -106,6 +106,61 @@ import Application_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-servic
 
 <Application_23q3 />
 
+<details>
+<summary><b>에이전트 안내</b></summary>
+
+### `Java`
+
+import Java_agent_23q3 from "../crw-data/crwld-agent-23/_import-agent-23q3-java.mdx";
+
+<Java_agent_23q3 />
+
+### `PHP`
+
+#### <code class='changelog-service'>PHP Agent v2.6.2</code> <code class='changelog-date'>2023년 9월 13일</code>
+
+* <Status>Feature</Status> 대용량 프로파일 처리 옵션 추가
+
+  - **whatap.large_profile_enabled** <span class='type'>Boolean</span>
+
+    기본값 `false`
+
+    약 만 건 이하의 프로파일(스탭) 정보를 수집할 수 있습니다. 더 많은 양을 수집할 경우 `split_profile_enabled` 옵션으로 사용하는 것을 권장합니다.
+
+  - **whatap.split_profile_enabled** <span class='type'>Boolean</span>
+
+    기본값 `false`
+
+    일정량의 프로파일을 가상 트랜잭션으로 분리하여 더 많은 프로파일 정보를 수집합니다. 여러 개의 트랜잭션 목록으로 분할 표기합니다.
+
+* <Status>Feature</Status> 프로파일 데이터 압축 전송 옵션 추가
+
+  * **whatap.profile_zip_enabled** <span class='type'>Boolean</span>  기본값 `true`
+
+### `.NET`
+
+#### <code class='changelog-service'>.NET Agent v2.1.1</code> <code class='changelog-date'>2023년 7월 17일</code>
+
+* <Status>New</Status> Active Stack 지원
+
+* <Status>New</Status> 닷넷 지원환경 분석 도구 기능 추가
+
+#### <code class='changelog-service'>.NET Agent v2.1.2</code> <code class='changelog-date'>2023년 7월 20일</code>
+
+* <Status>New</Status> WCF 지원
+
+#### <code class='changelog-service'>.NET Agent v2.1.5</code> <code class='changelog-date'>2023년 9월 13일</code>
+
+- <Status>New</Status> 타임아웃 시간 조절하는 <code>webservice_method_timeout</code> 옵션 추가
+
+### `Go`
+
+import Go_agent_23q3 from "../crw-data/crwld-agent-23/_import-agent-23q3-golang.mdx";
+
+<Go_agent_23q3 />
+
+</details>
+
 </div><br/>
 
 {/* ## `Application`, `Container`, `Server`
@@ -149,6 +204,19 @@ import Container_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-
 
 <Container_23q3 />
 
+<details>
+<summary><b>에이전트 안내</b></summary>
+
+#### <code class='changelog-service'>Kubernetes Agent v1.3.6</code> <code class='changelog-date'>2023년 9월 25일</code>
+
+- <Status>Feature</Status> 노드 목록 개편을 위한 노드 정보(클러스터 버전, 노드 상태 등) 추가
+
+#### <code class='changelog-service'>Kubernetes Agent v1.3.7</code> <code class='changelog-date'>2023년 9월 27일</code>
+
+- <Status>Feature</Status> 개편될 애플리케이션 목록 메뉴에서 노드 목록 연동을 위한 key 값 추가
+
+</details>
+
 </div><br/>
 
 
@@ -168,13 +236,30 @@ import Database_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-D
 
 <Database_23q3 />
 
+<details>
+<summary><b>에이전트 안내</b></summary>
+
+#### DBX
+
+import DBX_agent_23q3 from "../crw-data/crwld-agent-23/_import-agent-23q3-dbx.mdx";
+
+<DBX_agent_23q3 />
+
+#### XOS
+
+import XOS_agent_23q3 from "../crw-data/crwld-agent-23/_import-agent-23q3-xos.mdx";
+
+<XOS_agent_23q3 />
+
+</details>
+
 </div><br/>
 
 ## `Browser`
 
 와탭 2023년 3분기 `Browser` 상품의 주목할 만한 신규 기능 및 변경 사항으로 ***페이지로드 히트맵*** 메뉴 개선 및 ***브라우저 에러*** 에러 상세 추가에 대해 소개합니다.
 
-페이지로드 히트맵 메뉴의 경우 상세 
+***페이지로드 히트맵*** 메뉴의 경우 상세 페이지로드 데이터에 운영체제 버전 및 클라이언트 IP 정보가 추가되었고 필터 기능을 새롭게 제공합니다.
 
 이제 ***브라우저 에러*** 메뉴의 ***에러 메시지 테이블*** 목록에서 에러 메시지를 선택 시 에러 메시지를 기준으로 에러와 관련한 자세한 통계 정보를 확인할 수 있습니다. 뿐만 아니라 시간대별로 발생한 에러 로그 역시 살펴볼 수 있습니다.
 
@@ -187,6 +272,15 @@ import Database_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-D
 import Browser_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-Browser.mdx";
 
 <Browser_23q3 />
+
+<details>
+<summary><b>에이전트 안내</b></summary>
+
+import Browser_agent_23q3 from "../crw-data/crwld-agent-23/_import-agent-23q3-browser.mdx";
+
+<Browser_agent_23q3 />
+
+</details>
 
 </div><br/>
 
@@ -214,6 +308,12 @@ import AWSLog_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-AWS
 
 ## `Log`
 
+와탭 2023년 3분기 Log 상품의 주목할 만한 신규 기능 및 변경 사항을 다음과 같이 소개합니다. 
+
+전반적으로 편의성 향상을 위한 업데이트가 이루어졌습니다. ***로그 검색***, ***로그 트렌드***, ***트랜잭션 로그*** 메뉴에서 키워드 하이라이팅 기능이 추가되었습니다. 또한 ***로그 검색*** 메뉴에서 인접 로그 조회 기능이 추가되었습니다. 
+
+다음 개요 안내를 통해 2023년 3분기 Log 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
 <div class='indentTab'>
 
 import Log_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-Log.mdx";
@@ -222,7 +322,7 @@ import Log_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-Log.md
 
 </div><br/>
 
-## `실험실`
+{/* ## `실험실`
 
 <div class='indentTab'>
 
@@ -230,4 +330,4 @@ import Lab_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-Lab.md
 
 <Lab_23q3 />
 
-</div><br/>
+</div><br/> */}
