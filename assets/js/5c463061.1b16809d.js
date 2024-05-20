@@ -2067,6 +2067,15 @@ function _createMdxContent(props) {
                   metastring: "title=\"MariaDB 10.5.9 or later\"",
                   children: "grant replication master admin, replica monitor, binlog monitor on *.* to whatap;\n"
                 })
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+                type: "note",
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "AWS RDS MariaDB"
+                  }), "의 경우 Replication 정보 조회는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "10.5"
+                  }), " 버전 미만까지 지원합니다."]
+                })
               }), "\n"]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
