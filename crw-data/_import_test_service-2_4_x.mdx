@@ -1,0 +1,106 @@
+## Service 2.4.0​ - 2024년 04월 24일 - 공통​
+
+### Flex 보드 / 통합 Flex 보드​
+
+- <code class="Feature">Feature</code> <b>통합 서비스 2</b> 대시보드 템플릿 추가
+
+- <code class="Changed">Changed</code> <span class="uitext">대시보드 목록</span>에서 대시보드에 선택된 상품 아이콘 표시하도록 수정
+
+- <code class="Changed">Changed</code> 대시보드 템플릿 미리보기에 스크롤을 표시하도록 수정
+
+- <code class="Changed">Changed</code> 프로젝트 내 대시보드 목록에서는 프로젝트 이름을 표기하지 않도록 수정
+
+- <code class="Changed">Changed</code> 데이터베이스 상태 위젯에서 인스턴스를 클릭하면 해당 프로젝트 대시보드로 이동하도록 동작 변경
+
+- <code class="Changed">Changed</code> 그룹 위젯에 하위 위젯을 추가할 경우 위젯 템플릿 목록이 닫히지 않도록 변경
+
+### 경고 알림
+
+- <code class="Changed">Changed</code> <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에서 <span class="uitext">JSON 일괄 수정</span> 기능 이용 시 메트릭스(<code>METRICS</code>) 이벤트 속성의 <code>relatedPcode</code> 검증 로직 제거
+
+- <code class="Changed">Changed</code> SMS 및 WhatsApp 알림을 사용할 수 없는 프로젝트는 <span class="uitext">이벤트 수신 설정</span> 메뉴의 <span class="uitext">사용자별 이벤트 수신 설정</span> 섹션에서 <span class="uitext">SMS 알림</span> 및 <span class="uitext">WhatsApp 알림</span> 컬럼 항목을 보이지 않도록 수정
+
+- <code class="Changed">Changed</code> <span class="uitext">이벤트 수신 설정</span> 메뉴의 <span class="uitext">사용자별 이벤트 수신 설정</span> 섹션에서 <span class="b500">멤버 관리</span> 권한이 있는 멤버에게 사용자 정보를 마스킹 처리하지 않도록 변경
+
+- <code class="Changed">Changed</code> <span class="uitext">이벤트 설정</span> 메뉴에서 실시간 로그 이벤트 또는 복합 로그 이벤트를 JSON 형식으로 불러올 경우 id 속성을 제외하고 추가 또는 덮어쓰기 하도록 수정
+
+### 계정 관리​
+
+- <code class="Feature">Feature</code> <span class="uitext">계정 관리</span> 메뉴의 <span class="uitext">사용자 전화번호</span> 섹션에서 일반 휴대전화에 국가 코드 선택 기능 추가
+
+### 기타​
+
+- <code class="Changed">Changed</code> 프로젝트 생성 페이지에서 리전 선택 동선 변경(지역 → CSP 선택 순으로 동선 변경)
+
+- <code class="Changed">Changed</code> 다음 메뉴에서 목록 테이블에서 활성화 토글과 수정 버튼 컬럼 순서를 가장 왼쪽으로 변경
+
+- <code class="Changed">Changed</code> AWS Marketplace 계정 사용자의 경우 구독 취소 기능 제거 후 안내 메시지 추가
+
+## Service 2.4.0​ - 2024년 04월 24일 - Application​
+
+### 공통​
+
+- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴의 <span class="uitext">액티브 트랜잭션 이퀄라이저</span> 위젯에 비활성 에이전트 표시 옵션 추가
+
+- <code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 목록</span> 메뉴에서 <span class="b500">비활성 에이전트 삭제 시간</span>을 <span class="uitext">비활성 에이전트 유지 기간</span>으로 변경
+
+- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">성능 추이</span> 메뉴에서 다운로드한 CSV 파일의 헤더 컬럼에 단위 추가
+
+## Service 2.4.0​ - 2024년 04월 24일 - Server​
+
+- <code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 설정 추가
+
+- <code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 이벤트 상세 정보 화면으로 이동하면, <span class="uitext">알림 전후</span> 항목의 시간 설정에 따라 프로세스 차트의 시간 범위가 변경되도록 개선
+
+## Service 2.4.0​ - 2024년 04월 24일 - Kubernetes​
+
+- <code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">Deployment 목록</span> 메뉴의 <span class="uitext">상세 보기</span> 화면에서 <span class="uitext">리소스</span> 탭에 ReplicaSet 목록 추가
+
+- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 <span class="uitext">리소스 관계</span> 탭 추가
+
+- <code class="Feature">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">오브젝트 매니페스트</span> 메뉴에서 <span class="uitext">쿠버네티스 이벤트</span> 연동 기능 추가
+
+- <code class="Changed">Changed</code> 목록형 화면에서 이동 버튼의 UI 변경
+
+- <code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 쿠버네티스 에이전트 설치 안내 문구 및 용어 수정
+
+- <code class="Changed">Changed</code> 다음 메뉴 경로에서 아이콘 및 버튼 스타일을 규정에 맞게 수정
+
+- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 블록 위에 마우스 오버 시 나타나는 UI 수정
+
+- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 지표 옵션 사용 시 단위 표기 포함하도록 수정
+
+## Service 2.4.0​ - 2024년 04월 24일 - Database​
+
+### Database V2​
+
+- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">액티브 세션</span> 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가
+
+### PostgreSQL​
+
+- <code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Top 오브젝트</span> 메뉴의 <span class="uitext">Age</span> 탭에 <span class="uitext">per_to_wraparound</span> 컬럼 추가
+
+- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">Top 오브젝트</span> 메뉴에서 데이터가 없을 경우 표시되는 안내 문구 변경
+
+### PostgreSQL / MySQL​
+
+- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 디스크 사용 추이를 확인할 수 있는 상세 팝아웃 추가
+
+- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 위젯 추가
+
+### PostgreSQL / MySQL / MongoDB​
+
+- <code class="Changed">Changed</code> cpu(xos) 지표를 <code>cpu_sys(xos)</code>, <code>cpu_user(xos)</code>, <code>cpu_iowait(xos)</code>으로 세분화하여 표시하도록 변경
+
+## Service 2.4.0​ - 2024년 04월 24일 - Cloud​
+
+### Amazon CloudWatch​
+
+- <code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Role ARN 입력 필드에 대한 라벨을 버튼 형식에서 텍스트 형식으로 변경
+
+## Service 2.4.0​ - 2024년 04월 24일 - URL​
+
+- <code class="Changed">Changed</code> <span class="uitext">통합 Flex 보드</span> 메뉴에서 URL 목록 위젯의 UI 개편
+
+- <code class="Changed">Changed</code> URL 상세 창을 팝아웃으로 표시하도록 변경
+
