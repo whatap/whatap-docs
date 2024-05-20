@@ -606,6 +606,11 @@ div[class*='dataset'] span[class*='hitPath'] {
   font-weight: bold;
   color: #00FFFF;
 }
+[data-them='dark'] div[class*='tableOfContents'] > ul > li.table-of-contents__link > a > code {
+  background-color: #4c4c4c !important;
+  // color: #333 !important;
+  display: block;
+}
 code {
   background-color: #f0f0f0;
   color: #4c4c4c;
