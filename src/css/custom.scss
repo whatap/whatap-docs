@@ -1093,6 +1093,20 @@ main {
       padding-left: 10px; 
       border: 0.5px;
     }
+    details.changelog ul {
+      border-left: 1px solid #a8a8a8;
+      padding-left: 12px;
+      li {
+        margin-top: 10px;
+        line-height: 1.5;
+        &::marker {
+          color: #a8a8a8;
+        }
+      }
+      ul {
+        border-left: none;
+      }
+    }
     details.changelog summary::before {
       top: -5px;
       background-color: transparent !important;
