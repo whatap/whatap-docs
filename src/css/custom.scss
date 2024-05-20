@@ -1253,6 +1253,19 @@ main {
       border: 0.5px;
       padding: 2px 5px 2px 5px;
     }
+    code.changelog-service a {
+      color: #fff;
+      // text-decoration: underline;
+      text-decoration: none;
+    }
+    code.changelog-service a:hover {
+        color: #6cbafe;
+        text-decoration: underline;
+    }
+    
+    code.changelog-service a:visited {
+        color: #fbf9f9;
+    }
     code.changelog-date {
       // font-family: "Oleo Script";
       background-color: transparent;
