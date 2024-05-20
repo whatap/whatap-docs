@@ -1060,6 +1060,14 @@ main {
         overflow-wrap: anywhere;
       }
     }
+    details.changelog {
+      background-color:rgb(230, 230, 230);
+      padding-left: 10px; 
+      border: 0.5px;
+    }
+    details.changelog[open] summary::before {
+      top: -5px;
+    }
     details.alert--info[open] summary::before {
       top: -2px;
     }
@@ -1210,6 +1218,22 @@ main {
       border: 1px solid #296cf2;
       color: #fff;
     }
+    .changelog2 {
+      --timeline-width: 4px;
+      --ring-size: 1rem;
+      --ring-border-width: var(--timeline-width);
+      --timeline-color: var(--border-color);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-column-gap: 2rem;
+    }
+    .changelog {
+      grid-area: content;
+      grid-row-start: content;
+      grid-column-start: content;
+      grid-row-end: content;
+      grid-column-end: content;
+    }
     code {
       vertical-align: baseline;
     }
@@ -1222,6 +1246,33 @@ main {
       background-color: #296cf2;
       color: #fff;
       border: none;
+    }
+    code.changelog-service {
+      background-color: rgb(177, 177, 177);
+      color: #fff;
+      // font-family: "Oleo Script";
+      border: 0.5px;
+      padding: 2px 5px 2px 5px;
+    }
+    code.changelog-service a {
+      color: #fff;
+      // text-decoration: underline;
+      text-decoration: none;
+    }
+    code.changelog-service a:hover {
+        color: #6cbafe;
+        text-decoration: underline;
+    }
+    
+    code.changelog-service a:visited {
+        color: #fbf9f9;
+    }
+    code.changelog-date {
+      // font-family: "Oleo Script";
+      background-color: transparent;
+      border: none;
+      font-size: .6em;
+      // font-size: 70%;
     }
     code.history {
       background-color: rgb(177, 177, 177);
@@ -2400,6 +2451,14 @@ main {
   main .markdown details.alert--info {
     padding-top: 0 !important;
     padding-bottom: 10px !important;
+  }
+  main .markdown details.changelog {
+    background-color:rgb(230, 230, 230);
+    padding-left: 10px; 
+    border: 0.5px;
+  }
+  main .markdown details.changelog[open] summary::before {
+    top: -5px;
   }
 
   main .markdown .download-release-notes {
