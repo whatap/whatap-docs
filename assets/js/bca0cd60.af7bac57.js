@@ -661,8 +661,8 @@ const metadata = {
   },
   "sidebar": "tiberoSidebar",
   "previous": {
-    "title": "메트릭스",
-    "permalink": "/whatap-docs/tibero/metrics-intro"
+    "title": "Tibero 지표",
+    "permalink": "/whatap-docs/tibero/metrics-data-list"
   },
   "next": {
     "title": "메트릭스 이상 탐지",

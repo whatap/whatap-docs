@@ -492,8 +492,8 @@ const metadata = {
     "permalink": "/whatap-docs/tibero/flexboard-share"
   },
   "next": {
-    "title": "메트릭스 차트",
-    "permalink": "/whatap-docs/tibero/metrics-chart"
+    "title": "Tibero 지표",
+    "permalink": "/whatap-docs/tibero/metrics-data-list"
   }
 };
 const assets = {
