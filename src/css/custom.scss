@@ -1153,11 +1153,17 @@ main {
       top: -2px;
       background-color: transparent !important;
     }
+    details.changelog2.alert--info {
+      summary {
+        color: #4d4d4d;
+        font-size: 110%;
+      }
+    }
     details.changelog.alert--info {
       border: 1px solid #E3E3E3;
       summary {
         color: #4d4d4d;
-        font-size: 102%;
+        font-size: 110%;
       }
       div[class*='collapsibleContent'] {
         border-top: none;
@@ -2291,6 +2297,11 @@ main {
     details.changelog {
       // color: #333;
       background-color: #3e3a3a !important;
+      summary {
+        color: #f0f0f0;
+      }
+    }
+    details.changelog2 {
       summary {
         color: #f0f0f0;
       }
