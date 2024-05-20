@@ -304,6 +304,7 @@ html[lang='ja-JP'] {
   }
   .navbar__link {
     font-weight: normal;
+    white-space: nowrap;
   }
 }
 .dropdown > .navbar__link:after {
@@ -1085,7 +1086,7 @@ main {
       padding-left: 10px; 
       border: 0.5px;
     }
-    details.changelog[open] summary::before {
+    details.changelog summary::before {
       top: -5px;
       background-color: transparent !important;
     }
@@ -2207,7 +2208,8 @@ main {
       }
     }
     details.changelog {
-      color: #333;
+      // color: #333;
+      background-color: #3e3a3a !important;
     }
   }
   .feedback {
