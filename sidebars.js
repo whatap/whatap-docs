@@ -2280,6 +2280,7 @@ const sidebars = {
                 id: 'tibero/metrics-intro'
               },
               items: [
+                'tibero/metrics-data-list',
                 'tibero/metrics-chart',
                 'tibero/metrics-detect-anormal',
               ]
