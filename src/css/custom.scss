@@ -1060,12 +1060,13 @@ main {
       }
     }
     details.changelog {
-      background-color:rgb(230, 230, 230);
+      background-color:rgb(230, 230, 230) !important; 
       padding-left: 10px; 
       border: 0.5px;
     }
     details.changelog[open] summary::before {
       top: -5px;
+      background-color: transparent !important;
     }
     details.alert--info[open] summary::before {
       top: -2px;
@@ -1233,6 +1234,11 @@ main {
       grid-row-end: content;
       grid-column-end: content;
     }
+    .changelog-img {
+      margin-top: -10px;
+      margin-bottom: -10px;
+      // alt cl
+    }
     code {
       vertical-align: baseline;
     }
@@ -1255,11 +1261,10 @@ main {
     }
     code.changelog-service a {
       color: #fff;
-      // text-decoration: underline;
       text-decoration: none;
     }
-    code.changelog-service a:hover {
-        color: #6cbafe;
+    code.changelog-service a:hover code {
+        color: #636363;
         text-decoration: underline;
     }
     
@@ -1430,6 +1435,11 @@ main {
     img[alt*='sc'] {
       border: none;
       width: fit-content;
+      // changelog-img
+    }
+    img[alt*='cl'] {
+      margin-top: -10px;
+      margin-bottom: -10px;
     }
     img[alt*='Amazon Cloudwatch - Region,Metric,Stats'], img[alt*='Oracle Cloud Monitor - Region, Metric, Stats'], img[alt*='Ncloud Monitoring - ResourceGroup, Metric, Stats'] {
       width: 600px;
@@ -2174,6 +2184,9 @@ main {
           filter: invert(.5);
         }
       }
+    }
+    details.changelog {
+      color: #333;
     }
   }
   .feedback {
