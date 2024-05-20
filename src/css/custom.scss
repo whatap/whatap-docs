@@ -1466,7 +1466,7 @@ main {
     img[alt*='Amazon Cloudwatch - Region,Metric,Stats'], img[alt*='Oracle Cloud Monitor - Region, Metric, Stats'], img[alt*='Ncloud Monitoring - ResourceGroup, Metric, Stats'] {
       width: 600px;
     }
-    img[alt*='cht'] {
+    img[alt*='cht'], img.width-600 {
       width: 600px;
     }
     img[alt*='cht2'] {
@@ -1506,6 +1506,13 @@ main {
       width: 1200px;
       height: auto;
       border: none;
+    }
+    details {
+      .alert {
+        border-top: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+      }
     }
     ol {
       margin: 0;
