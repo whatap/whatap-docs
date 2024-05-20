@@ -2209,6 +2209,12 @@ main {
     details.changelog {
       color: #333;
     }
+    code.changelog-date {
+      // font-family: "Oleo Script";
+      background-color: transparent;
+      border: none;
+      color: #c0c0c0;
+    }
   }
   .feedback {
     background-color: #444444;
