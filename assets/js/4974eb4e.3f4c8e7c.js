@@ -72,8 +72,8 @@ const metadata = {
     "permalink": "/whatap-docs/software-proxy"
   },
   "next": {
-    "title": "용어 사전",
-    "permalink": "/whatap-docs/glossary/"
+    "title": "참조 문서",
+    "permalink": "/whatap-docs/reference"
   }
 };
 const assets = {

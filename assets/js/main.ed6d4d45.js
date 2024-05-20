@@ -49311,12 +49311,6 @@ __webpack_require__.r(__webpack_exports__);
         },
         {
           "type": "doc",
-          "docId": "reference",
-          "position": "left",
-          "label": "참조 문서"
-        },
-        {
-          "type": "doc",
           "docId": "release-notes",
           "position": "left",
           "label": "릴리스 노트"
