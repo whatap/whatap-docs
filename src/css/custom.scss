@@ -148,6 +148,28 @@ html[lang='ja-JP'] {
 .tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
   border: 1px solid rgba(41, 108, 242, 0.7) !important; 
 }
+.container.margin-vert--lg {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 1400px;
+  .row {
+    .col--3 {
+      padding-left: 0;
+    }
+  }
+  aside.col--3 {
+    width: var(--doc-sidebar-width);
+    max-width: var(--doc-sidebar-width) !important;
+  }
+  main.col--7 {
+    max-width: 75% !important;
+    margin-left: 60px;
+  }
+  .col--2 {
+    max-width: 280px;
+    padding-left: 60px;
+  }
+}
 .container {
   max-width: 1180px;
   margin-left: 60px;
@@ -756,7 +778,6 @@ article div[class*='fbsharebutton'] {
   }
 }
 
-
 // document
 main {
   .imgError {
@@ -1258,9 +1279,9 @@ main {
       // text-decoration: underline;
       text-decoration: none;
     }
-    code.changelog-service a:hover {
-        color: #6cbafe;
-        text-decoration: underline;
+    code.changelog-service a:hover code {
+      color: #6cbafe;
+      text-decoration: underline;
     }
     
     code.changelog-service a:visited {
