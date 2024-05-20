@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44364],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17738],{
 
-/***/ 45020:
+/***/ 82959:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_4_3',
-	title: 'Kubernetes Agent v1.4.3',
+	id: 'k8s-1_4_4',
+	title: 'Kubernetes Agent v1.4.4',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_4_2',
+	pagination_next: 'release-notes/k8s/k8s-1_4_3',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_4_3",
-  "title": "Kubernetes Agent v1.4.3",
-  "description": "2023년 11월 21일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.4.3.mdx",
+  "id": "release-notes/k8s/k8s-1_4_4",
+  "title": "Kubernetes Agent v1.4.4",
+  "description": "2023년 11월 22일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.4.4.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_4_3",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3",
+  "slug": "/release-notes/k8s/k8s-1_4_4",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.3.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_4_3",
-    "title": "Kubernetes Agent v1.4.3",
+    "id": "k8s-1_4_4",
+    "title": "Kubernetes Agent v1.4.4",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_4_2",
+    "pagination_next": "release-notes/k8s/k8s-1_4_3",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "next": {
-    "title": "Kubernetes Agent v1.4.2",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2"
+    "title": "Kubernetes Agent v1.4.3",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3"
   }
 };
 const assets = {
@@ -71,13 +71,13 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 21일"
+      children: "2023년 11월 22일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.4.3.tar",
-          children: "https://repo.whatap.io/docker/kube_mon_1.4.3.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.4.4.tar",
+          children: "kube_mon_1.4.4.tar"
         })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -85,11 +85,9 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Changed"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "kube_stat"
-          }), "에 클러스터 cpu 용량 추가(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "kube_stat.total_capacity_cpu"
-          }), ")"]
+          }), " client-api 버전 변경(13.0.2 → 15.0.1)"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "낮은 client-api 버전으로 인해 쿠버네티스 서비스 플랫폼(eks, gke)과의 호환성이 떨어지는 현상이 있었습니다. 해당 문제를 해결하고자 client-api 버전을 업데이트했습니다. 특히, deprecated 메소드를 업데이트된 버전으로 대체하였습니다."
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -97,15 +95,17 @@ function _createMdxContent(props) {
             children: "Changed"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
             children: "kube_entities"
-          }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "job"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "cronJob"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "ingress"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "service"
-          }), " 데이터 추가"]
+          }), " 필드 이름 변경(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "cronJobs"
+          }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "cronjobs"
+          }), ")"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " 마스터 메타 정보 CronJob 데이터 누락 현상 해결"]
         }), "\n"]
       }), "\n"]
     })]

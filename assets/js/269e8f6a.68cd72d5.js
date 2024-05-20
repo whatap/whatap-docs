@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77261],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44364],{
 
-/***/ 14065:
+/***/ 45020:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_4_2',
-	title: 'Kubernetes Agent v1.4.2',
+	id: 'k8s-1_4_3',
+	title: 'Kubernetes Agent v1.4.3',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_4_1',
+	pagination_next: 'release-notes/k8s/k8s-1_4_2',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_4_2",
-  "title": "Kubernetes Agent v1.4.2",
-  "description": "2023년 11월 15일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.4.2.mdx",
+  "id": "release-notes/k8s/k8s-1_4_3",
+  "title": "Kubernetes Agent v1.4.3",
+  "description": "2023년 11월 21일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.4.3.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_4_2",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2",
+  "slug": "/release-notes/k8s/k8s-1_4_3",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.2.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.3.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_4_2",
-    "title": "Kubernetes Agent v1.4.2",
+    "id": "k8s-1_4_3",
+    "title": "Kubernetes Agent v1.4.3",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_4_1",
+    "pagination_next": "release-notes/k8s/k8s-1_4_2",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "next": {
-    "title": "Kubernetes Agent v1.4.1",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_1"
+    "title": "Kubernetes Agent v1.4.2",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2"
   }
 };
 const assets = {
@@ -71,45 +71,41 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 15일"
+      children: "2023년 11월 21일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.4.2.tar",
-          children: "https://repo.whatap.io/docker/kube_mon_1.4.2.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.4.3.tar",
+          children: "kube_mon_1.4.3.tar"
         })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
+            children: "Changed"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "kube_pod"
-          }), " 카테고리에 수집 데이터 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              children: "qosClass"
-            }), ": Pod에 대한 서비스 품질"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              children: "startTime"
-            }), ": Pod 시작 시간"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              children: "podHash"
-            }), ": Pod 이름의 해시값"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              children: "con_cpu_limit_total"
-            }), ": Pod 내부 컨테이너의 cpu limit 합계"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              children: "con_mem_alloc_fail_total_count"
-            }), ": Pod 내부 컨테이너의 memory 할당 실패 수 합계"]
-          }), "\n"]
+            children: "kube_stat"
+          }), "에 클러스터 cpu 용량 추가(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "kube_stat.total_capacity_cpu"
+          }), ")"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "kube_entities"
+          }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "job"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "cronJob"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "ingress"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "service"
+          }), " 데이터 추가"]
         }), "\n"]
       }), "\n"]
     })]

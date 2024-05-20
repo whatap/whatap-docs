@@ -77,7 +77,7 @@ function _createMdxContent(props) {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "https://repo.whatap.io/docker/kube_mon_1.4.1.tar",
-          children: "https://repo.whatap.io/docker/kube_mon_1.4.1.tar"
+          children: "kube_mon_1.4.1.tar"
         })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17738],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77261],{
 
-/***/ 82959:
+/***/ 14065:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_4_4',
-	title: 'Kubernetes Agent v1.4.4',
+	id: 'k8s-1_4_2',
+	title: 'Kubernetes Agent v1.4.2',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_4_3',
+	pagination_next: 'release-notes/k8s/k8s-1_4_1',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_4_4",
-  "title": "Kubernetes Agent v1.4.4",
-  "description": "2023년 11월 22일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.4.4.mdx",
+  "id": "release-notes/k8s/k8s-1_4_2",
+  "title": "Kubernetes Agent v1.4.2",
+  "description": "2023년 11월 15일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.4.2.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_4_4",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_4",
+  "slug": "/release-notes/k8s/k8s-1_4_2",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.4.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_4_4",
-    "title": "Kubernetes Agent v1.4.4",
+    "id": "k8s-1_4_2",
+    "title": "Kubernetes Agent v1.4.2",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_4_3",
+    "pagination_next": "release-notes/k8s/k8s-1_4_1",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "next": {
-    "title": "Kubernetes Agent v1.4.3",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3"
+    "title": "Kubernetes Agent v1.4.1",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_1"
   }
 };
 const assets = {
@@ -71,41 +71,45 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 22일"
+      children: "2023년 11월 15일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.4.4.tar",
-          children: "https://repo.whatap.io/docker/kube_mon_1.4.4.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.4.2.tar",
+          children: "kube_mon_1.4.2.tar"
         })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " client-api 버전 변경(13.0.2 → 15.0.1)"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "낮은 client-api 버전으로 인해 쿠버네티스 서비스 플랫폼(eks, gke)과의 호환성이 떨어지는 현상이 있었습니다. 해당 문제를 해결하고자 client-api 버전을 업데이트했습니다. 특히, deprecated 메소드를 업데이트된 버전으로 대체하였습니다."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
+            children: "Feature"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "kube_entities"
-          }), " 필드 이름 변경(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "cronJobs"
-          }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "cronjobs"
-          }), ")"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 마스터 메타 정보 CronJob 데이터 누락 현상 해결"]
+            children: "kube_pod"
+          }), " 카테고리에 수집 데이터 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              children: "qosClass"
+            }), ": Pod에 대한 서비스 품질"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              children: "startTime"
+            }), ": Pod 시작 시간"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              children: "podHash"
+            }), ": Pod 이름의 해시값"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              children: "con_cpu_limit_total"
+            }), ": Pod 내부 컨테이너의 cpu limit 합계"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              children: "con_mem_alloc_fail_total_count"
+            }), ": Pod 내부 컨테이너의 memory 할당 실패 수 합계"]
+          }), "\n"]
         }), "\n"]
       }), "\n"]
     })]
