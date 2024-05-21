@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55380],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15440],{
 
 /***/ 90131:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -106,7 +106,7 @@ function _createMdxContent(props) {
       }), "을 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "topstack",
         className: "uitext"
-      }), "은 빈번하게 호출되는 메서드의 사용량을 보여주며, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+      }), "은 호출 빈도가 높은 메소드의 사용량을 보여주며, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "uniquestack",
         className: "uitext"
       }), "은 동일한 호출 스택의 빈도를 분석합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -157,7 +157,7 @@ function _createMdxContent(props) {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                   sid: "topstack",
                   className: "uitext"
-                }), ": 가장 빈번하게 발생한 호출 스택 정보를 제공합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                }), ": 호출 빈도가 가장 높은 스택 정보를 제공합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "#top-stack",
                   children: "다음 문서"
                 }), "를 참조하세요."]
@@ -294,7 +294,7 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "topstack",
           className: "uitext"
-        }), "에서는 가장 빈번하게 호출되는 메소드의 정보를 제공합니다. 스택 최상단에 위치한 메소드의 호출 빈도를 통해 서비스에 가장 영향을 미치는 메소드를 신속하게 확인할 수 있습니다. 메소드의 호출 빈도를 파악하여 CPU 또는 메모리에 부하가 걸리는 원인을 분석할 수 있습니다. 이를 통해 성능 개선을 위한 방안을 도출할 수 있습니다."]
+        }), "에서는 호출 빈도가 가장 높은 메소드의 정보를 제공합니다. 스택 최상단에 위치한 메소드의 호출 빈도를 통해 서비스에 가장 영향을 미치는 메소드를 신속하게 확인할 수 있습니다. 메소드의 호출 빈도를 파악하여 CPU 또는 메모리에 부하가 걸리는 원인을 분석할 수 있습니다. 이를 통해 성능 개선을 위한 방안을 도출할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "와탭은 10초(기본값) 간격으로 수집한 스레드 스택을 활용하여 메소드 레벨의 성능 지연 구간을 분석합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
@@ -422,7 +422,7 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "topstack",
           className: "uitext"
-        }), "은 튜닝 시 인지하기 힘들었던 부분의 튜닝 포인트를 찾아내는 데 유용합니다. 가장 빈번하게 나타난 스택은 현재 애플리케이션 서버에서 가장 많은 응답 지연을 발생하는 것으로 판단할 수 있습니다. 가장 왼쪽에 나타나는 비율은 애플리케이션 서버 성능에 영향을 미치는 정도입니다."]
+        }), "은 튜닝 시 인지하기 힘들었던 부분의 튜닝 포인트를 찾아내는 데 유용합니다. 호출 빈도가 가장 높은 스택은 현재 애플리케이션 서버에서 가장 많은 응답 지연을 발생하는 것으로 판단할 수 있습니다. 가장 왼쪽에 나타나는 비율은 애플리케이션 서버 성능에 영향을 미치는 정도입니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         product: "java",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -454,7 +454,7 @@ function _createMdxContent(props) {
           })
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "안정적인 애플리케이션 서버일지라도 빈번하게 나타난 스택은 성능 저하를 일으킬 가능성이 있으므로 해당 클래스는 유심히 보는 것이 좋습니다."
+        children: "안정적인 애플리케이션 서버일지라도 호출 빈도가 높은 스택은 성능 저하를 일으킬 가능성이 있으므로 해당 클래스는 유심히 보는 것이 좋습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "topstack",
@@ -609,7 +609,7 @@ function _createMdxContent(props) {
           desc: "Unique stack"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "가장 많이 사용되는 스택의 정보를 파악할 수 있습니다. 동일한 스택이 여러 번 반복되더라도 중복을 제거하여 가장 빈번하게 발생하는 스택을 확인할 수 있습니다. 예를 들면 적체 비율이 높은 Stack Trace를 식별할 수 있습니다. 상세 호출 스텝 검토를 통한 호출 경로 상에 이상 모듈의 존재 여부를 파악할 수도 있습니다."
+        children: "가장 많이 사용되는 스택의 정보를 파악할 수 있습니다. 동일한 스택이 여러 번 반복되더라도 중복을 제거하여 가장 높은 호출 빈도의 스택을 확인할 수 있습니다. 예를 들면 적체 비율이 높은 Stack Trace를 식별할 수 있습니다. 상세 호출 스텝 검토를 통한 호출 경로 상에 이상 모듈의 존재 여부를 파악할 수도 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         product: "java",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
@@ -848,7 +848,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 64882:
+/***/ 42830:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -870,7 +870,7 @@ const frontMatter = {
 	title: '스택',
 	description: '특정 시간대의 호출 스택의 빈도와 메소드, 트랜잭션에 대한 상세 정보를 확인할 수 있습니다.',
 	tags: [
-		'Python',
+		'.NET',
 		'애플리케이션',
 		'분석',
 		'스택'
@@ -878,20 +878,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/analysis-apm",
+  "id": "dotnet/analysis-apm",
   "title": "스택",
   "description": "특정 시간대의 호출 스택의 빈도와 메소드, 트랜잭션에 대한 상세 정보를 확인할 수 있습니다.",
-  "source": "@site/docs/python/analysis-apm.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/analysis-apm",
-  "permalink": "/whatap-docs/python/analysis-apm",
+  "source": "@site/docs/dotnet/analysis-apm.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/analysis-apm",
+  "permalink": "/whatap-docs/dotnet/analysis-apm",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/analysis-apm.mdx",
+  "editUrl": "undefined/docs/dotnet/analysis-apm.mdx",
   "tags": [
     {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "애플리케이션",
@@ -912,20 +912,20 @@ const metadata = {
     "title": "스택",
     "description": "특정 시간대의 호출 스택의 빈도와 메소드, 트랜잭션에 대한 상세 정보를 확인할 수 있습니다.",
     "tags": [
-      "Python",
+      ".NET",
       "애플리케이션",
       "분석",
       "스택"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "성능 추이",
-    "permalink": "/whatap-docs/python/performance-trend"
+    "permalink": "/whatap-docs/dotnet/performance-trend"
   },
   "next": {
     "title": "큐브",
-    "permalink": "/whatap-docs/python/cube"
+    "permalink": "/whatap-docs/dotnet/cube"
   }
 };
 const assets = {
