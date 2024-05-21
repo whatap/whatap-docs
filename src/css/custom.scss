@@ -819,6 +819,11 @@ div[class*='BlogPostItem'] > div.avatar {
 div.avatar__intro > .avatar__name > a, div.avatar__intro > .avatar__name > a:visited {
   color: #525252 !important;
   text-decoration: none;
+  // span {
+  //   &::before {
+  //   content: url('img/ic-mail.svg');
+  //   }
+  // }
 }
 div.avatar__intro > .avatar__name > a:hover {
   color: #7e7e7e !important;
@@ -833,7 +838,7 @@ article.margin-bottom--xl {
 // 블로그 콘텐츠 자세히 보기
 footer.row > div.text--right > a {
   b {
-    font-size: 110%;
+    font-size: 112%;
     // &::before {
     // content: "[ ";
     // }
