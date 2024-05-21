@@ -835,17 +835,17 @@ div.avatar__intro > .avatar__name > a:hover {
   text-decoration: none;
 }
 article.margin-bottom--xl {
-  padding-bottom: 15px;
-  // display: block;
-  // position: relative;
-  // border-bottom: 1px solid #a8a8a8;
+  padding-bottom: 35px;
+  display: block;
+  position: relative;
+  border-bottom: 1px dashed #a8a8a8;
 }
 // 블로그 콘텐츠 자세히 보기
 footer.row > div.text--right > a {
   b {
-    font-size: 105%;
+    font-size: 110%;
     // &::before {
-    // content: "∙∙∙";
+    // content: "[ ";
     // }
   }
 }
@@ -1516,7 +1516,7 @@ main {
       padding: 0;
     }
     img[alt*='새로운 기능 콘텐츠 예시'], img[alt*='모바일 앱 sc cl'] {
-      width: 700px !important;
+      width: 750px !important;
       margin: auto;
       display: block;
     }
