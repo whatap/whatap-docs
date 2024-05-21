@@ -117,6 +117,11 @@ html[lang='en-US'] {
   div[class*='announcementBar'] {
     display: none;
   }
+  div.navbar__items {
+    a[href*='blog'] {
+      display: none;
+    }
+  }
 }
 
 html[lang='ja-JP'] {
@@ -128,6 +133,11 @@ html[lang='ja-JP'] {
   }
   div[class*='announcementBar'] {
     display: none;
+  }
+  div.navbar__items {
+    a[href*='blog'] {
+      display: none;
+    }
   }
   .api-guide {
     table {
@@ -217,6 +227,7 @@ html[lang='ja-JP'] {
 .navbar__brand {
   margin-right: 40px;
 }
+
 .navbar__item {
   padding: 8px 12px;
   margin-right: 8px;
