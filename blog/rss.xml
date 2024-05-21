@@ -15,6 +15,8 @@
             <pubDate>Mon, 20 May 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
+<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-new2-abab7fdd6c31ca5887a6800846669711.png" width="1167" height="677" class="img_ev3q"></p>
+<!-- -->
 <!-- -->
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
@@ -49,12 +51,11 @@
 <p><strong>네트워크 성능 모니터링</strong>(Network Performance Monitoring) 상품이 새롭게 출시되었습니다.</p>
 </blockquote></div>
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
-<!-- -->
 <br>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>공통</code> 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다.</p>
-<p><strong>사이드 메뉴</strong>는 프로젝트 선택과 메뉴의 영역을 각각 확보하는 구조로 개편되었습니다. 프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-star.svg" alt="비��교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
+<p><strong>사이드 메뉴</strong>는 프로젝트 선택과 메뉴의 영역을 각각 확보하는 구조로 개편되었습니다. 프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/release/release-main-ui.png" alt="사이드 메뉴 개편 cl" width="2384" height="702"></p>
 <p>또한 <strong>SSO 계정 연동 기능</strong>이 추가되었습니다. 클라우드 기반 사용자 계정 관리 및 접근 권한 관리 솔루션 <strong>Okta</strong>와 와탭 모니터링을 연동할 수 있습니다. 조직 내에서 사용 중인 <strong>Okta</strong> 계정을 이용해 와탭 서비스에 로그인 후 서비스를 이용할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/sso-check-sso-info.png" alt="sso-info cl" width="800" height="377"></p>
@@ -308,7 +309,7 @@
 <li>
 <p><code class="Feature">Feature</code> 멀티 트랜잭션 추적에서 Trace context(W3C) 지원</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python" class="hash-link" aria-label="python에 대한 직접 링크" title="python에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024년-03월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024년 03월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python-agent-v162-2024%EB%85%84-03%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="python-agent-v162-2024년-03월-29일에 대한 직접 링크" title="python-agent-v162-2024년-03월-29일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python" class="hash-link" aria-label="python에 대한 직접 링크" title="python에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024년-03월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024년 03월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python-agent-v162-2024%EB%85%84-03%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="python-agent-v162-2024년-03월-29일에 대한 직��접 링크" title="python-agent-v162-2024년-03월-29일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <code>exit_with_parent_process_enabled</code> 옵션 추가</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs" class="hash-link" aria-label="nodejs에 대한 직접 링크" title="nodejs에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0486-2024년-01월-04일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_86">Node.js Agent v0.4.86</a></code> <code class="changelog-date">2024년 01월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs-agent-v0486-2024%EB%85%84-01%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크" title="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크">​</a></h4>
@@ -335,6 +336,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Server</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 Unix <code>AIX</code> 설치 패키지에 대해 소개합니다.</p>
 <p>와탭 에이전트는 이번 1분기에 새롭게 <strong>Unix AIX 에이전트 설치 패키지</strong>를 제공합니다. IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계된 운영체제이며 IBM 파워 시스템에서 실행됩니다. 와탭은 AIX 버전 6.1 이상을 지원합니다. <code>AIX</code> 설치 패키지를 통해 해당 패키지 다운로드 및 실행만으로 간단하게 설치할 수 있습니다.</p>
+<p><img decoding="async" loading="lazy" alt="AIX sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-server-aix-6183959e1a7eeb67b0a3e06e73d0e5fb.png" width="790" height="418" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Server</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -364,7 +366,7 @@
 <p>와탭 2024년 1분기 <code>Kubernetes</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 새로운 기능인 <strong>컨트롤 플레인 모니터링</strong>, <em><strong>쿠버네티스 에이전트 목록</strong></em>, <em><strong>Deployment 목록</strong></em>, 그리고 개편된 기능인 <em><strong>Pod 시작 분석</strong></em>과 <em><strong>오브젝트 매니페스트</strong></em>, 아울러 새로 추가된 <strong>Helm</strong> 차트 설치 지원 등에 대해서 소개합니다.</p>
 <p>와탭 쿠버네티스 모니터링은 이번 1분기에 새롭게 <strong>컨트롤 플레인 모니터링</strong>을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 <em><strong>kube-apiserver 대시보드</strong></em> 및 <em><strong>kube-apiserver 메트릭스 조회</strong></em> 기능이 추가되었습니다.</p>
 <p><em><strong>kube-apiserver 대시보드</strong></em>는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. <em><strong>kube-apiserver 메트릭스 조회</strong></em>를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="컨트롤 플��레인 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-kube-apiserver-c3a6ec1b34e8e287f3c9967d770287c9.png" width="1082" height="774" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="컨트롤 플레인 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-kube-apiserver-c3a6ec1b34e8e287f3c9967d770287c9.png" width="1082" height="774" class="img_ev3q"></p>
 <p>또한 Deployment 기준으로 관련 정보를 조회할 수 있는 <em><strong>Deployment 목록</strong></em>, 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 <em><strong>쿠버네티스 에이전트 목록</strong></em> 기능이 추가되었습니다.</p>
 <p><em><strong>Deployment 목록</strong></em>에서 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다. <em><strong>쿠버네티스 에이전트 목록</strong></em>에서는 마스터 및 노드 에이전트 설치 현황을 살펴볼 수 있습니다.</p>
 <p>그리고 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 <em><strong>Pod 시작 분석</strong></em>과 <em><strong>오브젝트 매니페스트</strong></em> 기능을 제공합니다. <em><strong>Pod 시작 분석</strong></em>은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. <em><strong>오브젝트 매니페스트</strong></em>는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.</p>
@@ -672,7 +674,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직�접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알람 원복을 위한 stateful 추가</li>
@@ -829,6 +831,8 @@
             <pubDate>Mon, 20 May 2024 15:20:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
+<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-new2-abab7fdd6c31ca5887a6800846669711.png" width="1167" height="677" class="img_ev3q"></p>
+<!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <ul>
 <li><strong>와탭 모바일 앱</strong>을 새롭게 출시했습니다.</li>
@@ -853,7 +857,6 @@
 <p><em><strong>AJAX 히트맵</strong></em> 메뉴를 제공합니다.</p>
 </blockquote></div>
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
-<!-- -->
 <br>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
@@ -886,7 +889,7 @@
 <ul>
 <li><code class="Changed">Changed</code> <span class="uitext">에이전트 설정</span> 메뉴에서 사용자 편의성을 위해 옵션 목록 간소화, <span class="uitext">옵션 작성</span> 섹션의 왼쪽 목록에서 적용된 옵션의 상위 카테고리 분류를 제거하고 최종 옵션 항목만 보이도록 수정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="정비-계획">정비 계획​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EC%A0%95%EB%B9%84-%EA%B3%84%ED%9A%8D" class="hash-link" aria-label="정비 계획​에 대한 직접 링크" title="정비 계획​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="정비-계획">정비 계획​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EC%A0%95%EB%B9%84-%EA%B3%84%ED%9A%8D" class="hash-link" aria-label="��정비 계획​에 대한 직접 링크" title="정비 계획​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">정비 계획</span> 메뉴의 기능 개선 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
 </ul>
@@ -1307,6 +1310,8 @@
             <pubDate>Mon, 20 May 2024 15:10:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
+<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-new2-abab7fdd6c31ca5887a6800846669711.png" width="1167" height="677" class="img_ev3q"></p>
+<!-- -->
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <p><strong>프로젝트 플렉스 보드 편집</strong> 권한이 추가되었습니다.</p>
@@ -1338,7 +1343,8 @@
 <p><strong>네트워크 성능 모니터링</strong>(Network Performance Monitoring) 상품 베타 서비스가 시작되었습니다.</p>
 </blockquote></div>
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
-<!-- -->
+<br>
+<br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>공통</code> 부분의 주목할만한 신규 기능 및 변경 사항으로 <strong>프로젝트 플렉스보드 편집</strong> 권한 추가 및 편의성 향상을 위한 개선을 소개합니다.</p>
 <p><strong>프로젝트 플렉스보드 편집</strong> 권한이 추가되어 이제 프로젝트 내 <em><strong>Flex 보드</strong></em>를 수정하기 위해서는 해당 권한이 필요합니다.</p>
@@ -1401,7 +1407,7 @@
 <p><code class="New">New</code> <span class="uitext">실험실</span> 메뉴에서 <span class="uitext">통합 로그 검색기</span> 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.12</a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이용-내역">이용 내역<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EC%9D%B4%EC%9A%A9-%EB%82%B4%EC%97%AD" class="hash-link" aria-label="이용 내역에 대한 직접 링크" title="이용 내역에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이��용-내역">이용 내역<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EC%9D%B4%EC%9A%A9-%EB%82%B4%EC%97%AD" class="hash-link" aria-label="이용 내역에 대한 직접 링크" title="이용 내역에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">결제 정보</span> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.17</a></code></li>
 </ul>
@@ -1780,8 +1786,10 @@
             <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
             <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
             <content:encoded><![CDATA[
+<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-new2-abab7fdd6c31ca5887a6800846669711.png" width="1167" height="677" class="img_ev3q"></p>
 <p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
+<!-- -->
 <!-- -->
 <p><img decoding="async" loading="lazy" alt="새로운 기능 콘텐츠 예시 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png" width="801" height="826" class="img_ev3q"></p>
 <p>해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Changed">Changed</code>) 및 에이전트(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Deprecated">Deprecated</code>) 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code>) 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p>
