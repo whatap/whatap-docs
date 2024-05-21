@@ -1515,6 +1515,11 @@ main {
       margin: 20px 0;
       padding: 0;
     }
+    img[alt*='새로운 기능 콘텐츠 예시'], img[alt*='모바일 앱 sc cl'] {
+      width: 700px !important;
+      margin: auto;
+      display: block;
+    }
     .table-desc {
       font-size: .9em;
       margin-top: -15px;
