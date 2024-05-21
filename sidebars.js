@@ -165,11 +165,7 @@ const sidebars = {
                 'java/performance-trend',
                 'java/analysis-apm',
                 'java/cube',
-                {
-                  type: 'ref',
-                  label: '히트맵',
-                  id: 'java/trs-profile'
-                },
+                'java/analysis-hitmap',
                 'java/analysis-trace-mtx',
                 'java/tx-profile'
               ]
@@ -410,11 +406,7 @@ const sidebars = {
                 'php/application-daily-stat',
                 'php/performance-trend',
                 'php/cube',
-                {
-                  type: 'ref',
-                  label: '히트맵',
-                  id: 'php/trs-profile'
-                },
+                'php/analysis-hitmap',
                 'php/analysis-trace-mtx',
                 'php/tx-profile'
               ]
@@ -637,11 +629,7 @@ const sidebars = {
                 'nodejs/application-daily-stat',
                 'nodejs/performance-trend',
                 'nodejs/cube',
-                {
-                  type: 'ref',
-                  label: '히트맵',
-                  id: 'nodejs/trs-profile'
-                },
+                'nodejs/analysis-hitmap',
                 'nodejs/analysis-trace-mtx',
                 'nodejs/tx-profile'
               ]
@@ -860,11 +848,7 @@ const sidebars = {
                 'python/performance-trend',
                 'python/analysis-apm',
                 'python/cube',
-                {
-                  type: 'ref',
-                  label: '히트맵',
-                  id: 'python/trs-profile'
-                },
+                'python/analysis-hitmap',
                 'python/analysis-trace-mtx',
                 'python/tx-profile'
               ]
@@ -1080,11 +1064,7 @@ const sidebars = {
                 'dotnet/performance-trend',
                 'dotnet/analysis-apm',
                 'dotnet/cube',
-                {
-                  type: 'ref',
-                  label: '히트맵',
-                  id: 'dotnet/trs-profile'
-                },
+                'dotnet/analysis-hitmap',
                 'dotnet/analysis-trace-mtx',
                 'dotnet/tx-profile'
               ]
@@ -1291,11 +1271,7 @@ const sidebars = {
                 'golang/application-daily-stat',
                 'golang/performance-trend',
                 'golang/cube',
-                {
-                  type: 'ref',
-                  label: '히트맵',
-                  id: 'golang/trs-profile'
-                },
+                'golang/analysis-hitmap',
                 'golang/analysis-trace-mtx',
                 'golang/tx-profile'
               ]
