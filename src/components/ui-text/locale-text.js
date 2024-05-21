@@ -27,6 +27,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
         if (sid == "BTN07717") {
             oText = whatapLocale[sid][`${currentLocale}`].replace('{days}', days);
         }
+        if (sid == "TTL07769") {
+            oText = whatapLocale[sid][`${currentLocale}`].replace(' ({count})', '');
+        }
         if (sid == "TTL06865") {
             oText = whatapLocale[sid][`${currentLocale}`].toUpperCase();
         }
