@@ -1487,17 +1487,9 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar javaSidebar, linking to /java/trs-profile"
-  },
   "sidebar.phpSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar phpSidebar"
-  },
-  "sidebar.phpSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar phpSidebar, linking to /php/trs-profile"
   },
   "sidebar.nodejsSidebar.category.경고 알림": {
     "message": "アラート通知",
@@ -1511,25 +1503,13 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar pySidebar"
   },
-  "sidebar.pySidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar pySidebar, linking to /python/trs-profile"
-  },
   "sidebar.dotNetSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar dotNetSidebar, linking to /dotnet/trs-profile"
-  },
   "sidebar.goSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar goSidebar"
-  },
-  "sidebar.goSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar goSidebar, linking to /golang/trs-profile"
   },
   "sidebar.npmsidebar.category.Network 성능 모니터링": {
     "message": "ネットワーク性能モニタリング",
