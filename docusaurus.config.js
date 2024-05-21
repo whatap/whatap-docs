@@ -108,7 +108,18 @@ const config = {
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
         },
-        blog: false,
+        // blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl: 
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: '새로운 기능',
+          blogSidebarCount: 'ALL',
+          include: [ '**/*.mdx' ],
+          rehypePlugins: [ rehypeExtendedTable ]
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
@@ -607,17 +618,20 @@ const config = {
             position: 'left',
             label: '라이선스',
           },
-          {
-            type: 'doc',
-            docId: 'reference',
-            position: 'left',
-            label: '참조 문서',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'reference',
+          //   position: 'left',
+          //   label: '참조 문서',
+          // },
           {
             type: 'doc',
             docId: 'release-notes',
             position: 'left',
             label: '릴리스 노트',
+          },
+          {
+            to: 'blog', label: '새로운 기능', position: 'left'
           },
           {
             type: 'localeDropdown',

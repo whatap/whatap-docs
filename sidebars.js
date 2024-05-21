@@ -3491,6 +3491,7 @@ const sidebars = {
         'about-billing',
         'software-proxy',
         'main-ui-intro-v2',
+        'reference',
         'glossary/glossary',
         {
           type: 'link',
