@@ -1088,19 +1088,6 @@
 </li>
 </ul>
 </div></div></details>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="서버-목록">서버 목록​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EC%84%9C%EB%B2%84-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="서버 목록​에 대한 직접 링크" title="서버 목록​에 대한 직접 링크">​</a></h4>
-<ul>
-<li><code class="Changed">Changed</code> <span class="uitext">서버 상세</span> 메뉴에서 <span class="uitext">프로세스</span> 테이블의 상세 화면 조회 시 <span class="uitext">디스크 I/O</span> <span class="uitext">(Bps)</span> 차트에 합계 차트선을 같이 표시하도록 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
-<ul>
-<li>
-<p><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴에서 서버/프로세스 이벤트에 <span class="uitext">이벤트 수신 태그</span> 옵션 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
-</li>
-<li>
-<p><code class="Changed">Changed</code> <span class="uitext">이벤트 설정</span> 메뉴에서 기본(Default) 알림의 이름을 수정할 수 있도록 변경하고, '기본' 태그를 별도 표시하도록 수정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
-</li>
-</ul>
 <details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v138-2023년-10월-04일"><code class="changelog-service">Kubernetes Agent v1.3.8</code> <code class="changelog-date">2023년 10월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#kubernetes-agent-v138-2023%EB%85%84-10%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v138-2023년-10월-04일에 대한 직접 링크" title="kubernetes-agent-v138-2023년-10월-04일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature">Feature</code> 파드(Pod) 목록 신규 개발을 위한 데이터 추가 수집(podIp, age, restartCount)</li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v141-2023년-11월-08일"><code class="changelog-service">Kubernetes Agent v1.4.1</code> <code class="changelog-date">2023년 11월 08일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#kubernetes-agent-v141-2023%EB%85%84-11%EC%9B%94-08%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v141-2023년-11월-08일에 대한 직접 링크" title="kubernetes-agent-v141-2023년-11월-08일에 대한 직접 링크">​</a></h4><ul>
@@ -1118,7 +1105,6 @@
 </li>
 </ul></div></div></details>
 <br>
-<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Database</code> 상품군의 주목할 만한 신규 기능 및 변경 사항을 다음과 같이 소개합니다.</p>
 <p>이번 4분기에 <code>Database</code> 상품군 중 <strong>PostgreSQL</strong>와 <strong>MySQL</strong> 상품 <code class="my">V2</code> 서비스가 정식 서비스로 전환되었습니다. 그리고 기존 <strong>MS SQL Server</strong> 상품의 이름을 <strong>SQL Server</strong>로 변경했습니다.</p>
@@ -1793,8 +1779,10 @@
             <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
             <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
             <content:encoded><![CDATA[
-<p><strong>새로운 기능</strong>은 와탭 제품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>개요 안내 항목의 릴리스 버전 태그 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code> 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p></div></div>
+<p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
+<p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
+<p><img decoding="async" loading="lazy" alt="새로운 기능 콘텐츠 예시 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png" width="801" height="826" class="img_ev3q"></p>
+<p>해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Changed">Changed</code>) 및 에이전트(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Deprecated">Deprecated</code>) 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code>) 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p>
 ]]></content:encoded>
             <author>docs@whatp.io (TW 팀)</author>
         </item>

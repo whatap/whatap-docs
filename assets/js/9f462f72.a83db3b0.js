@@ -2580,7 +2580,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/에이전트"
     }
   ],
-  "readingTime": 18.955,
+  "readingTime": 18.88,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -2644,18 +2644,6 @@ import Go_agent_23q4 from "../crw-data/crwld-agent-23/_import-agent-23q4-golang.
 
 <Go_agent_23q4 />*/
 /*와탭 쿠버네티스 모니터링 상품의 경우 통합 컨테이너 맵 개발 및 메뉴 간 동선 개편*/
-/*
-
-
-## `Container`
-
-<div class='indentTab'>
-
-import Container_23q4 from "../crw-data/crwld-service-23q4/_import-23q4-service-Container.mdx";
-
-<Container_23q4 />
-
-</div><br/>*/
 /*먼저 **PostgreSQL**에 뒤이어 이번 4분기에 `Database` 상품군 중 **MySQL** 상품 <code class="my">V2</code> 서비스가 정식 서비스로 전환되었습니다. 그리고 기존 **MS SQL Server** 상품의 이름을 **SQL Server**로 변경했습니다.*/
 
 
@@ -2703,7 +2691,7 @@ const _2023_4q_summary_toc = [{
   "value": "<code>Kubernetes</code>",
   "id": "kubernetes",
   "level": 2
-}, ..._import_23q4_service_Kubernetes_toc, ..._import_23q4_service_Server_toc, {
+}, ..._import_23q4_service_Kubernetes_toc, {
   "value": "<code class=\"changelog-service\">Kubernetes Agent v1.3.8</code> <code class=\"changelog-date\">2023년 10월 04일</code>",
   "id": "kubernetes-agent-v138-2023년-10월-04일",
   "level": 4
@@ -3340,7 +3328,7 @@ function _2023_4q_summary_createMdxContent(props) {
           children: "신규 기능 및 주요 변경 사항 안내"
         })
       }), (0,jsx_runtime.jsx)(_import_23q4_service_Kubernetes_MDXContent, {})]
-    }), "\n", (0,jsx_runtime.jsx)(_import_23q4_service_Server_MDXContent, {}), "\n", (0,jsx_runtime.jsxs)(Details, {
+    }), "\n", (0,jsx_runtime.jsxs)(Details, {
       className: "changelog2",
       children: [(0,jsx_runtime.jsx)("summary", {
         children: (0,jsx_runtime.jsx)("b", {
@@ -3418,7 +3406,7 @@ function _2023_4q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       })]
-    }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+    }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "database",
       children: (0,jsx_runtime.jsx)(_components.code, {
         children: "Database"
