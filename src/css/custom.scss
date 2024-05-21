@@ -622,6 +622,23 @@ div[class*='dataset'] span[class*='hitPath'] {
 // [data-theme='dark'] .col--2 > div > ul.table-of-contents > li > a > code:hover {
 //   color: #999999 !important;
 // }
+// 블로그 콘텐츠 제목 하이퍼 링크
+[data-theme='dark'] .col--7 > article.margin-bottom--xl > header > h2 {
+  a, a:visited {
+    color: #f0f0f0 !important;
+    text-decoration: none;
+  }
+}
+[data-theme='dark'] .col--7 > article.margin-bottom--xl > header > h2 {
+  a:hover {
+    color: #a4a3a3 !important;
+    text-decoration: none;
+  }
+}
+[data-theme='dark'] div.avatar__intro > .avatar__name > a, div.avatar__intro > .avatar__name > a:visited {
+  color: #f0f0f0 !important;
+  text-decoration: none;
+}
 code {
   background-color: #f0f0f0;
   color: #4c4c4c;
@@ -792,6 +809,44 @@ article div[class*='fbsharebutton'] {
     p {
       font-size: .9rem;
     }
+  }
+}
+// 블로그 콘텐츠 내 간격
+div[class*='BlogPostItem'] > div.avatar {
+  margin-bottom: 0px !important;
+}
+// 블로그 하이퍼링크
+.col--7 > article.margin-bottom--xl > header > h2 > a, .col--7 > article.margin-bottom--xl > header > h2 > a:visited {
+  color: #333333 !important;
+  // color: #4c4c4c!important;
+  text-decoration: none;
+  font-size: 85%;
+}
+.col--7 > article.margin-bottom--xl > header > h2 > a:hover {
+  color: #525252 !important;
+  text-decoration: none;
+}
+div.avatar__intro > .avatar__name > a, div.avatar__intro > .avatar__name > a:visited {
+  color: #525252 !important;
+  text-decoration: none;
+}
+div.avatar__intro > .avatar__name > a:hover {
+  color: #7e7e7e !important;
+  text-decoration: none;
+}
+article.margin-bottom--xl {
+  padding-bottom: 15px;
+  // display: block;
+  // position: relative;
+  // border-bottom: 1px solid #a8a8a8;
+}
+// 블로그 콘텐츠 자세히 보기
+footer.row > div.text--right > a {
+  b {
+    font-size: 105%;
+    // &::before {
+    // content: "∙∙∙";
+    // }
   }
 }
 
@@ -1097,6 +1152,7 @@ main {
         overflow-wrap: anywhere;
       }
     }
+    // 블로그 changelog detail
     details.changelog {
       background-color: #FAFAFB !important; 
       // background-color: #F9F9FB !important; 
@@ -1159,19 +1215,6 @@ main {
         }
       }
     }
-    // 블로그 하이퍼링크
-    // .col--7 > article.margin-bottom--xl > header > h2 > a {
-    //   color: #222222 !important;
-    //   text-decoration: none;
-    // }
-    // .col--7 > article.margin-bottom--xl > header > h2 > a:visited {
-    //   color: #222222 !important;
-    //   text-decoration: none;
-    // }
-    // h2.title_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Title-styles-module > a {
-    //   color:#222222 !important;
-    //   background-color: #000 !important;
-    // }
     details.changelog summary::before {
       top: -2px;
       background-color: transparent !important;
