@@ -1149,6 +1149,19 @@ main {
         }
       }
     }
+    // .col--2 > div > ul.table-of-contents > li > a > code
+    .col--7 > article.margin-bottom--xl > header > h2 > a {
+      color: #222222 !important;
+      text-decoration: none;
+    }
+    .col--7 > article.margin-bottom--xl > header > h2 > a:visited {
+      color: #222222 !important;
+      text-decoration: none;
+    }
+    h2.title_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Title-styles-module > a {
+      color:#222222 !important;
+      background-color: #000 !important;
+    }
     details.changelog summary::before {
       top: -2px;
       background-color: transparent !important;
