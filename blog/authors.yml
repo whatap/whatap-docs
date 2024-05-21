@@ -17,14 +17,16 @@ slorber:
   image_url: https://github.com/slorber.png
 
 ysj:
-  name: 조예슬
+  name: TW J
   email: ysjo@whatap.io
   title: 테크니컬 라이터
+  image_url: ./img/teamtwj.svg
 
 kiim:
-  name: 임기정
+  name: TW I
   email: kj.im@whatap.io
   title: 테크니컬 라이터
+  image_url: ./img/teamtwi.svg
 
 twt:
   name: TW 팀
