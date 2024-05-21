@@ -631,12 +631,12 @@ const config = {
             position: 'left',
             label: '라이선스',
           },
-          {
-            type: 'doc',
-            docId: 'reference',
-            position: 'left',
-            label: '참조 문서',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'reference',
+          //   position: 'left',
+          //   label: '참조 문서',
+          // },
           {
             type: 'doc',
             docId: 'release-notes',
