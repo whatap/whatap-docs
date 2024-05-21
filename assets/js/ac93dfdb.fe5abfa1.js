@@ -66,7 +66,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/에이전트"
     }
   ],
-  "readingTime": 23.625,
+  "readingTime": 27.045,
   "hasTruncateMarker": true,
   "authors": [
     {

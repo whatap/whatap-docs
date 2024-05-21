@@ -4734,7 +4734,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/에이전트"
     }
   ],
-  "readingTime": 23.625,
+  "readingTime": 27.045,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -4773,6 +4773,7 @@ const assets = {
 /*truncate*/
 /*먼저 1분기 상품별 신규 기능 및 신규 상품 요약은 다음과 같습니다. 사이드 메뉴 개편 및 대시보드 고도화 작업이 이루어졌습니다.*/
 /*요약은 다시 써야 함*/
+/*그외에도 ***Top 30*** 섹션에 IP 필터 기능을 추가했고, ***멀티 트랜잭션*** 탭에서 프로잭트 선택 상태를 저장하는 등 트랜잭션 분석 시 편의성을 전반적으로 향상시켰습니다.*/
 /*안정적으로 각 기능을 사용할 수 있도록 / 기존 문제 개선 및 다양한 안정화 작업을 진행했습니다.*/
 /*<code class="New">New</code> `Go` 모니터링 상품 **정식 서비스** 시작 <code class='changelog-service'>Service 2.2.4​</code>*/
 /*
@@ -4911,8 +4912,10 @@ function _2024_1q_summary_createMdxContent(props) {
         })
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "사이드 메뉴가 개편되었습니다."
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "사이드 메뉴"
+            }), "가 개편되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["메트릭스 필드 중심의 사용자 경험을 강화한 ", (0,jsx_runtime.jsx)(_components.em, {
               children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -4922,8 +4925,10 @@ function _2024_1q_summary_createMdxContent(props) {
               class: "newfunc",
               children: "New"
             }), " 기능을 새롭게 제공합니다."]
-          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "SSO 계정 연동 기능이 추가되었습니다."
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "SSO 계정 연동"
+            }), " 기능이 추가되었습니다."]
           }), "\n"]
         }), "\n"]
       }), (0,jsx_runtime.jsx)(_components.table, {
@@ -4957,7 +4962,9 @@ function _2024_1q_summary_createMdxContent(props) {
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: [(0,jsx_runtime.jsx)(_components.code, {
               children: "Go"
-            }), " 상품 베타 서비스를 종료하고 정식 서비스를 제공합니다."]
+            }), " 상품 베타 서비스를 종료하고 ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "정식"
+            }), " 서비스를 제공합니다."]
           }), "\n"]
         }), "\n"]
       }), (0,jsx_runtime.jsx)(_components.table, {
@@ -5085,7 +5092,9 @@ function _2024_1q_summary_createMdxContent(props) {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
             children: "네트워크 성능 모니터링"
-          }), "(Network Performance Monitoring) 상품이 새롭게 출시되었습니다."]
+          }), "(Network Performance Monitoring) 상품이 ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "정식"
+          }), "으로 출시되었습니다."]
         }), "\n"]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -5100,9 +5109,11 @@ function _2024_1q_summary_createMdxContent(props) {
         children: "공통"
       }), " 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.strong, {
+      children: ["사용자 편의성 향상을 위해 5년 만에 와탭 모니터링의 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "사이드 메뉴"
-      }), "는 프로젝트 선택과 메뉴의 영역을 각각 확보하는 구조로 개편되었습니다. 프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(", (0,jsx_runtime.jsx)(LinkImage, {
+      }), "가 새롭게 개편되었습니다. 와탭 서비스 이용에는 프로젝트 선택이 선행됩니다. 프로젝트 생성 및 선택 이후 동선을 편리하게 활용할 수 있도록 기존과 비교해 UI 혼잡도를 줄여 프로젝트 선택과 메뉴의 영역을 확보하는 구조로 개편되었습니다."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(", (0,jsx_runtime.jsx)(LinkImage, {
         img: "ic-star.svg",
         desc: "비교하기 아이콘"
       }), ") 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다."]
@@ -5121,7 +5132,7 @@ function _2024_1q_summary_createMdxContent(props) {
       img: "sso-check-sso-info.png",
       desc: "sso-info cl"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["그리고 새로운 ", (0,jsx_runtime.jsx)(_components.em, {
+      children: ["새로운 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "이벤트 설정"
         })
@@ -5204,7 +5215,7 @@ function _2024_1q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.code, {
         children: "Go"
-      }), " 애플리케이션 모니터링이 Beta 버전 종료 후 ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 애플리케이션 모니터링이 베타 버전 종료 후 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "정식"
       }), " 서비스를 시작했습니다. 와탭의 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Go"
@@ -5214,20 +5225,24 @@ function _2024_1q_summary_createMdxContent(props) {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "트랜잭션 맵"
         })
-      }), "은 기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 ", (0,jsx_runtime.jsx)(_components.em, {
+      }), "은 성능 테스트 또는 장애 상황 발생 시 단기간 트랜잭션별 현황을 상세히 확인할 수 있는 메뉴입니다. 다음과 같이 ", (0,jsx_runtime.jsx)(_components.em, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "트랜잭션 맵"
+        })
+      }), " 고도화 작업이 이루어졌습니다."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "트레이스 분석"
         })
-      }), " 팝업 창을 통해 상세 정보를 확인할 수 있도록 구조를 개선했습니다. 또한 기존 실시간 최대 5분 뿐만 아니라 과거 시점 최대 10분까지 데이터를 조회할 수 있습니다. 그외에도 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Top 30"
-        })
-      }), " 섹션에 IP 필터 기능을 추가했고, ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "멀티 트랜잭션"
-        })
-      }), " 탭에서 프로잭트 선택 상태를 저장하는 등 트랜잭션 분석 시 편의성을 전반적으로 향상시켰습니다."]
-    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      }), " 팝업 창을 통해 상세 정보를 확인할 수 있도록 구조를 개선했습니다. 또한 트레이스 분석 건수를 기존 100건에서 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "1000"
+      }), "건으로 확장해 이전보다 10배 많은 트레이스를 분석할 수 있게 되었습니다."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["그외에도 한 화면에서 필터를 적용해 동작을 최소화하는 방향으로 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "필터"
+      }), " 기능을 개선하였습니다. 예를 들어 트랜잭션 필터를 이용해 선택한 트랜잭션만 선별해 조회할 수 있습니다. 그리고 기존 실시간 최대 5분 뿐만 아니라 과거 시점 최대 10분까지 데이터를 조회할 수 있도록 변경해 전반적으로 편의성을 향상시켰습니다."]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "changelog/changelog-app-tx-map.png",
       desc: "sc",
       className: "changelog-img"
@@ -5240,7 +5255,7 @@ function _2024_1q_summary_createMdxContent(props) {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "인스턴스 성능 관리"
         })
-      }), " 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 편의성과 안정성 향상을 위한 전반적인 개선 작업이 이루어졌습니다."]
+      }), " 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 동선과 안정성 향상을 위한 개선 작업이 이루어졌습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "통계 및 인스턴스 성능 모니터링 sc cl",
@@ -5299,15 +5314,25 @@ function _2024_1q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 1분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Server"
-      }), " 상품의 주목할 만한 신규 기능 및 변경 사항으로 Unix ", (0,jsx_runtime.jsx)(_components.code, {
+      }), " 상품의 주목할 만한 신규 기능 및 변경 사항으로 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Unix"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
         children: "AIX"
       }), " 설치 패키지에 대해 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["와탭 에이전트는 이번 1분기에 새롭게 ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Unix AIX 에이전트 설치 패키지"
-      }), "를 제공합니다. IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계된 운영체제이며 IBM 파워 시스템에서 실행됩니다. 와탭은 AIX 버전 6.1 이상을 지원합니다. ", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["이번 1분기에 새롭게 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Unix"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
         children: "AIX"
-      }), " 설치 패키지를 통해 해당 패키지 다운로드 및 실행만으로 간단하게 설치할 수 있습니다."]
+      }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "에이전트 설치 패키지"
+      }), "를 제공합니다. IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계된 운영체제입니다."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["와탭은 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "AIX 버전 6.1"
+      }), " 이상을 지원합니다. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AIX"
+      }), " 설치 패키지를 통해 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다. 와탭 서버 모니터링을 통해 AIX 운영체제를 보다 효과적으로 관리하고 모니터링할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "AIX sc cl",
@@ -5410,15 +5435,17 @@ function _2024_1q_summary_createMdxContent(props) {
         })
       }), " 기능이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
+      children: ["개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "Deployment 목록"
         })
-      }), "에서 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
+      }), "에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["또한 새롭게 추가된 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "쿠버네티스 에이전트 목록"
         })
-      }), "에서는 마스터 및 노드 에이전트 설치 현황을 살펴볼 수 있습니다."]
+      }), "에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["그리고 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -5625,11 +5652,13 @@ function _2024_1q_summary_createMdxContent(props) {
         })
       }), "을 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
+      children: ["이번 1분기에 새롭게 제공하는 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "사용자 세션 분석"
         })
-      }), " 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
+      }), " 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "사용자 세션 로그 검색"
         })
@@ -5641,13 +5670,7 @@ function _2024_1q_summary_createMdxContent(props) {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "페이지 로드 히트맵"
         })
-      }), "을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다."]
-    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
-      img: "browser-search-user-session-log-analysis.png",
-      desc: "사용자 세션 분석",
-      className: "changelog-img"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 ", (0,jsx_runtime.jsx)(_components.em, {
+      }), "을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "AJAX 히트맵"
         })
@@ -5656,6 +5679,10 @@ function _2024_1q_summary_createMdxContent(props) {
           children: "페이지 로드 히트맵"
         })
       }), "에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다."]
+    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      img: "browser-search-user-session-log-analysis.png",
+      desc: "사용자 세션 분석",
+      className: "changelog-img"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
@@ -5708,8 +5735,12 @@ function _2024_1q_summary_createMdxContent(props) {
         width: "972",
         height: "984"
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "최근 네트워크 시장은 클라우드와 가상화라는 큰 틀에서 성장하고 있습니다. 기존 장비 중심의 네트워크 모니터링 뿐만 아니라 작업을 수행하는 프로세스가 중요한 모니터링 대상이 되고 있습니다. 와탭 네트워크 성능 모니터링을 통해 프로세스 단위의 네트워크 지표를 안정적으로 모니터링해 보세요."
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["와탭 네트워크 모니터링은 프로세스 단위의 네트워크 지표를 안정적으로 모니터링합니다. ", (0,jsx_runtime.jsx)(_components.strong, {
+      children: ["와탭의 ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Network"
+      }), " 상품은 각 프로세스가 수행하는 네트워크 동작을 추적해 복잡한 구성 요소와 상태 정보를 토폴로지를 통해 직관적으로 이해할 수 있도록 시각화했습니다. ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "품질 지표"
       }), " ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {

@@ -20,15 +20,15 @@
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <ul>
-<li>사이드 메뉴가 개편되었습니다.</li>
+<li><strong>사이드 메뉴</strong>가 개편되었습니다.</li>
 <li>메트릭스 필드 중심의 사용자 경험을 강화한 <em><strong>이벤트 설정</strong></em> <code class="newfunc">New</code> 기능을 새롭게 제공합니다.</li>
-<li>SSO 계정 연동 기능이 추가되었습니다.</li>
+<li><strong>SSO 계정 연동</strong> 기능이 추가되었습니다.</li>
 </ul>
 </blockquote><table><thead><tr><th><strong>Application</strong></th></tr></thead></table><blockquote>
 <ul>
 <li><em><strong>통계</strong></em> 및 <em><strong>인스턴스 성능 관리</strong></em> 메뉴 구조를 개선했습니다.</li>
 <li><em><strong>트랜잭션 맵</strong></em>이 고도화되었습니다.</li>
-<li><code>Go</code> 상품 베타 서비스를 종료하고 정식 서비스를 제공합니다.</li>
+<li><code>Go</code> 상품 베타 서비스를 종료하고 <strong>정식</strong> 서비스를 제공합니다.</li>
 </ul>
 </blockquote><table><thead><tr><th><strong>Server</strong></th></tr></thead></table><blockquote>
 <p>Unix <strong>AIX</strong> 에이전트 설치 패키지를 제공합니다.</p>
@@ -47,18 +47,19 @@
 </blockquote><table><thead><tr><th><strong>Browser</strong></th></tr></thead></table><blockquote>
 <p><em><strong>사용자 세션 분석</strong></em> 기능을 새롭게 제공합니다.</p>
 </blockquote><table><thead><tr><th><strong>Network</strong></th></tr></thead></table><blockquote>
-<p><strong>네트워크 성능 모니터링</strong>(Network Performance Monitoring) 상품이 새롭게 출시되었습니다.</p>
+<p><strong>네트워크 성능 모니터링</strong>(Network Performance Monitoring) 상품이 <strong>정식</strong>으로 출시되었습니다.</p>
 </blockquote></div>
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
 <br>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>공통</code> 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다.</p>
-<p><strong>사이드 메뉴</strong>는 프로젝트 선택과 메뉴의 영역을 각각 확보하는 구조로 개편되었습니다. 프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
+<p>사용자 편의성 향상을 위해 5년 만에 와탭 모니터링의 <strong>사이드 메뉴</strong>가 새롭게 개편되었습니다. 와탭 서비스 이용에는 프로젝트 선택이 선행됩니다. 프로젝트 생성 및 선택 이후 동선을 편리하게 활용할 수 있도록 기존과 비교해 UI 혼잡도를 줄여 프로젝트 선택과 메뉴의 영역을 확보하는 구조로 개편되었습니다.</p>
+<p>프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/release/release-main-ui.png" alt="사이드 메뉴 개편 cl" width="2384" height="702"></p>
 <p>또한 <strong>SSO 계정 연동 기능</strong>이 추가되었습니다. 클라우드 기반 사용자 계정 관리 및 접근 권한 관리 솔루션 <strong>Okta</strong>와 와탭 모니터링을 연동할 수 있습니다. 조직 내에서 사용 중인 <strong>Okta</strong> 계정을 이용해 와탭 서비스에 로그인 후 서비스를 이용할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/sso-check-sso-info.png" alt="sso-info cl" width="800" height="377"></p>
-<p>그리고 새로운 <em><strong>이벤트 설정</strong></em> <code class="newfunc">New</code> 기능은 필드(Field) 중심의 사용자 경험을 강화하여 카테고리보다 필드를 먼저 선택하는 방식으로 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소했습니다. 또한 상품에 적합한 기본 이벤트 템플릿을 제공해 보다 쉽게 경고 알림 이벤트를 설정할 수 있습니다.</p>
+<p>새로운 <em><strong>이벤트 설정</strong></em> <code class="newfunc">New</code> 기능은 필드(Field) 중심의 사용자 경험을 강화하여 카테고리보다 필드를 먼저 선택하는 방식으로 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소했습니다. 또한 상품에 적합한 기본 이벤트 템플릿을 제공해 보다 쉽게 경고 알림 이벤트를 설정할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="이벤트 v2 cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-common-event-v2-1dca8eba6848781ab8443580555a0057.png" width="800" height="513" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 1분기 공통 부분의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q">
@@ -171,10 +172,13 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Application</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <code>Go</code> 상품의 정식 출시, <em><strong>트랜잭션 맵</strong></em>의 고도화, 그리고 <em><strong>통계</strong></em> 및 <em><strong>인스턴스 성능 관리</strong></em> 메뉴 구조의 개선을 소개합니다.</p>
-<p><code>Go</code> 애플리케이션 모니터링이 Beta 버전 종료 후 <strong>정식</strong> 서비스를 시작했습니다. 와탭의 <code>Go</code> 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다.</p>
-<p><em><strong>트랜잭션 맵</strong></em>은 기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 <em><strong>트레이스 분석</strong></em> 팝업 창을 통해 상세 정보를 확인할 수 있도록 구조를 개선했습니다. 또한 기존 실시간 최대 5분 뿐만 아니라 과거 시점 최대 10분까지 데이터를 조회할 수 있습니다. 그외에도 <em><strong>Top 30</strong></em> 섹션에 IP 필터 기능을 추가했고, <em><strong>멀티 트랜잭션</strong></em> 탭에서 프로잭트 선택 상태를 저장하는 등 트랜잭션 분석 시 편의성을 전반적으로 향상시켰습니다.</p>
+<p><code>Go</code> 애플리케이션 모니터링이 베타 버전 종료 후 <strong>정식</strong> 서비스를 시작했습니다. 와탭의 <code>Go</code> 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다.</p>
+<p><em><strong>트랜잭션 맵</strong></em>은 성능 테스트 또는 장애 상황 발생 시 단기간 트랜잭션별 현황을 상세히 확인할 수 있는 메뉴입니다. 다음과 같이 <em><strong>트랜잭션 맵</strong></em> 고도화 작업이 이루어졌습니다.</p>
+<p>기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 <em><strong>트레이스 분석</strong></em> 팝업 창을 통해 상세 정보를 확인할 수 있도록 구조를 개선했습니다. 또한 트레이스 분석 건수를 기존 100건에서 <strong>1000</strong>건으로 확장해 이전보다 10배 많은 트레이스를 분석할 수 있게 되었습니다.</p>
+<p>그외에도 한 화면에서 필터를 적용해 동작을 최소화하는 방향으로 <strong>필터</strong> 기능을 개선하였습니다. 예를 들어 트랜잭션 필터를 이용해 선택한 트랜잭션만 선별해 조회할 수 있습니다. 그리고 기존 실시간 최대 5분 뿐만 아니라 과거 시점 최대 10분까지 데이터를 조회할 수 있도록 변경해 전반적으로 편의성을 향상시켰습니다.</p>
+<!-- -->
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/changelog/changelog-app-tx-map.png" alt="sc" class="changelog-img" width="auto" height="auto"></p>
-<p><em><strong>통계</strong></em>와 <em><strong>인스턴스 성능 관리</strong></em> 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 편의성과 안정성 향상을 위한 전반적인 개선 작업이 이루어졌습니다.</p>
+<p><em><strong>통계</strong></em>와 <em><strong>인스턴스 성능 관리</strong></em> 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 동선과 안정성 향상을 위한 개선 작업이 이루어졌습니다.</p>
 <p><img decoding="async" loading="lazy" alt="통계 및 인스턴스 성능 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-app-stat-instance-83702c43a9311376acaefff7da6bc96c.png" width="1191" height="665" class="img_ev3q"></p>
 <!-- -->
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Application</code> 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
@@ -308,7 +312,7 @@
 <li>
 <p><code class="Feature">Feature</code> 멀티 트랜잭션 추적에서 Trace context(W3C) 지원</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python" class="hash-link" aria-label="python에 대한 직접 링크" title="python에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024년-03월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024년 03월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python-agent-v162-2024%EB%85%84-03%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="python-agent-v162-2024년-03월-29일에 대한 직��접 링크" title="python-agent-v162-2024년-03월-29일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python" class="hash-link" aria-label="python에 대한 직접 링크" title="python에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024년-03월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024년 03월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python-agent-v162-2024%EB%85%84-03%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="python-agent-v162-2024년-03월-29일에 대한 직접 링크" title="python-agent-v162-2024년-03월-29일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <code>exit_with_parent_process_enabled</code> 옵션 추가</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs" class="hash-link" aria-label="nodejs에 대한 직접 링크" title="nodejs에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0486-2024년-01월-04일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_86">Node.js Agent v0.4.86</a></code> <code class="changelog-date">2024년 01월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs-agent-v0486-2024%EB%85%84-01%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크" title="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크">​</a></h4>
@@ -333,8 +337,9 @@
 </ul></div></div></details>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
-<p>와탭 2024년 1분기 <code>Server</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 Unix <code>AIX</code> 설치 패키지에 대해 소개합니다.</p>
-<p>와탭 에이전트는 이번 1분기에 새롭게 <strong>Unix AIX 에이전트 설치 패키지</strong>를 제공합니다. IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계된 운영체제이며 IBM 파워 시스템에서 실행됩니다. 와탭은 AIX 버전 6.1 이상을 지원합니다. <code>AIX</code> 설치 패키지를 통해 해당 패키지 다운로드 및 실행만으로 간단하게 설치할 수 있습니다.</p>
+<p>와탭 2024년 1분기 <code>Server</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <strong>Unix</strong> <code>AIX</code> 설치 패키지에 대해 소개합니다.</p>
+<p>이번 1분기에 새롭게 <strong>Unix</strong> <code>AIX</code> <strong>에이전트 설치 패키지</strong>를 제공합니다. IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계된 운영체제입니다.</p>
+<p>와탭은 <strong>AIX 버전 6.1</strong> 이상을 지원합니다. <code>AIX</code> 설치 패키지를 통해 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다. 와탭 서버 모니터링을 통해 AIX 운영체제를 보다 효과적으로 관리하고 모니터링할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="AIX sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-server-aix-6183959e1a7eeb67b0a3e06e73d0e5fb.png" width="790" height="418" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Server</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
@@ -367,7 +372,8 @@
 <p><em><strong>kube-apiserver 대시보드</strong></em>는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. <em><strong>kube-apiserver 메트릭스 조회</strong></em>를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="컨트롤 플레인 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-kube-apiserver-c3a6ec1b34e8e287f3c9967d770287c9.png" width="1082" height="774" class="img_ev3q"></p>
 <p>또한 Deployment 기준으로 관련 정보를 조회할 수 있는 <em><strong>Deployment 목록</strong></em>, 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 <em><strong>쿠버네티스 에이전트 목록</strong></em> 기능이 추가되었습니다.</p>
-<p><em><strong>Deployment 목록</strong></em>에서 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다. <em><strong>쿠버네티스 에이전트 목록</strong></em>에서는 마스터 및 노드 에이전트 설치 현황을 살펴볼 수 있습니다.</p>
+<p>개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. <em><strong>Deployment 목록</strong></em>에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다.</p>
+<p>또한 새롭게 추가된 <em><strong>쿠버네티스 에이전트 목록</strong></em>에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다.</p>
 <p>그리고 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 <em><strong>Pod 시작 분석</strong></em>과 <em><strong>오브젝트 매니페스트</strong></em> 기능을 제공합니다. <em><strong>Pod 시작 분석</strong></em>은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. <em><strong>오브젝트 매니페스트</strong></em>는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시작 분석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
 <!-- -->
@@ -713,9 +719,9 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Browser</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>사용자 세션 분석</strong></em> 기능 및 <em><strong>사용자 정의 이벤트 수집 기능</strong></em>을 소개합니다.</p>
-<p><em><strong>사용자 세션 분석</strong></em> 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. <em><strong>사용자 세션 로그 검색</strong></em>, <em><strong>AJAX 히트맵</strong></em>과 <em><strong>페이지 로드 히트맵</strong></em>을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다.</p>
+<p>이번 1분기에 새롭게 제공하는 <em><strong>사용자 세션 분석</strong></em> 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다.</p>
+<p><em><strong>사용자 세션 로그 검색</strong></em>, <em><strong>AJAX 히트맵</strong></em>과 <em><strong>페이지 로드 히트맵</strong></em>을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 <em><strong>AJAX 히트맵</strong></em>과 <em><strong>페이지 로드 히트맵</strong></em>에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-search-user-session-log-analysis.png" alt="사용자 세션 분석" class="changelog-img" width="1200" height="739"></p>
-<p>세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 <em><strong>AJAX 히트맵</strong></em>과 <em><strong>페이지 로드 히트맵</strong></em>에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다.</p>
 <p><em><strong>사용자 정의 이벤트 수집</strong></em> 기능은 브라우저 모니터링이 제공하는 기본 정보 외 사용자가 원하는 이벤트를 추가적으로 수집할 수 있는 인터페이스를 제공합니다. 브라우저 에이전트에서 제공하는 인터페이스 중 <code>addCustomEvent</code> 메소드를 이용해 사용자 정의형 이벤트를 수집 후 <em><strong>사용자 세션 로그 검색</strong></em> 메뉴 또는 <em><strong>Flex 보드</strong></em>를 통해 수집한 데이터를 조회할 수 있습니다.</p>
 <!-- -->
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Browser</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
@@ -768,7 +774,8 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기에 네트워크 간의 혼잡 및 장애를 파악하고 사용자의 네트워크 성능 개선을 위해 프로세스의 네트워크 정보를 수집하는 <strong>네트워크 성능 모니터링</strong>(<strong>Network Performance Monitoring</strong>) 상품이 정식으로 출시되었습니다.</p>
 <p><img decoding="async" loading="lazy" alt="네트워크 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-network-03e52d28329611577b24b6bab5268f43.png" width="972" height="984" class="img_ev3q"></p>
-<p>와탭 네트워크 모니터링은 프로세스 단위의 네트워크 지표를 안정적으로 모니터링합니다. <strong>품질 지표</strong> <em><strong>Latency</strong></em>와 <em><strong>Jitter</strong></em>, 그리고 <strong>네트워크 사용량 지표</strong> <em><strong>bps</strong></em>, <em><strong>pps</strong></em>, <em><strong>session count</strong></em>를 조회할 수 있습니다. 또한 태그 옵션으로 가시성을 확보하였으며, <em><strong>Flex 보드</strong></em>를 통해 다양한 사용자 커스텀 차트를 제공합니다.</p>
+<p>최근 네트워크 시장은 클라우드와 가상화라는 큰 틀에서 성장하고 있습니다. 기존 장비 중심의 네트워크 모니터링 뿐만 아니라 작업을 수행하는 프로세스가 중요한 모니터링 대상이 되고 있습니다. 와탭 네트워크 성능 모니터링을 통해 프로세스 단위의 네트워크 지표를 안정적으로 모니터링해 보세요.</p>
+<p>와탭의 <code>Network</code> 상품은 각 프로세스가 수행하는 네트워크 동작을 추적해 복잡한 구성 요소와 상태 정보를 토폴로지를 통해 직관적으로 이해할 수 있도록 시각화했습니다. <strong>품질 지표</strong> <em><strong>Latency</strong></em>와 <em><strong>Jitter</strong></em>, 그리고 <strong>네트워크 사용량 지표</strong> <em><strong>bps</strong></em>, <em><strong>pps</strong></em>, <em><strong>session count</strong></em>를 조회할 수 있습니다. 또한 태그 옵션으로 가시성을 확보하였으며, <em><strong>Flex 보드</strong></em>를 통해 다양한 사용자 커스텀 차트를 제공합니다.</p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Network</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
