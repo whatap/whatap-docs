@@ -1590,5 +1590,29 @@
   "sidebar.kubeSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.인스턴스 성능 모니터링": {
+    "message": "인스턴스 성능 모니터링",
+    "description": "The label for category 인스턴스 성능 모니터링 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.doc.Java": {
+    "message": "Java",
+    "description": "The label for the doc item Java in sidebar kubeSidebar, linking to the doc java/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.Node.js": {
+    "message": "Node.js",
+    "description": "The label for the doc item Node.js in sidebar kubeSidebar, linking to the doc nodejs/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.Python": {
+    "message": "Python",
+    "description": "The label for the doc item Python in sidebar kubeSidebar, linking to the doc python/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.PHP": {
+    "message": "PHP",
+    "description": "The label for the doc item PHP in sidebar kubeSidebar, linking to the doc php/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.Go": {
+    "message": "Go",
+    "description": "The label for the doc item Go in sidebar kubeSidebar, linking to the doc golang/instance-performance-analysis"
   }
 }
