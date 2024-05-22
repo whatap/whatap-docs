@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55417],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51390],{
 
 /***/ 20250:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -193,6 +193,21 @@ function _createMdxContent(props) {
                   }), "를 참조하세요."]
                 }), "\n"]
               }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+              type: "tip",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "stop_thread",
+                  className: "uitext"
+                }), " 기능은 애플리케이션에서 실행 중인 스레드를 강제로 종료하는 기능입니다. 그러나 이 기능은 모든 경우에 동작하지 않을 수 있습니다. 예를 들어, 스레드가 IO 작업을 수행 중이라면 스레드를 즉시 중지할 수 없습니다."]
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "stop_thread",
+                  className: "uitext"
+                }), " 기능을 사용하면 스레드가 IO 작업을 수행 중이더라도 종료를 시도합니다. 하지만 스레드가 IO 작업을 완료하기 전까지는 중지되지 않습니다. 즉, 스레드는 중지 요청을 받아들이지만, 작업이 완료되고 다음 작업으로 넘어가기 전까지 중지되지 않습니다."]
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "이러면 스레드를 강제로 종료하는 것은 비즈니스 로직에 문제가 발생할 수 있으며, 예기치 못한 동작을 유발할 수 있기 때문에 권장하지 않습니다. 그래도 스레드를 중지해야 한다면 애플리케이션 전체를 중지한 후 재시작해야 합니다."
+              })]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -349,7 +364,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 98795:
+/***/ 81147:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -371,7 +386,7 @@ const frontMatter = {
 	title: '액티브 트랜잭션',
 	description: '현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.',
 	tags: [
-		'Go',
+		'.NET',
 		'액티브 트랜잭션',
 		'대시보드',
 		'애플리케이션',
@@ -380,20 +395,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/dashboard-active-transaction",
+  "id": "dotnet/dashboard-active-transaction",
   "title": "액티브 트랜잭션",
   "description": "현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.",
-  "source": "@site/docs/golang/dashboard-active-transaction.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/dashboard-active-transaction",
-  "permalink": "/whatap-docs/golang/dashboard-active-transaction",
+  "source": "@site/docs/dotnet/dashboard-active-transaction.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/dashboard-active-transaction",
+  "permalink": "/whatap-docs/dotnet/dashboard-active-transaction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/dashboard-active-transaction.mdx",
+  "editUrl": "undefined/docs/dotnet/dashboard-active-transaction.mdx",
   "tags": [
     {
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "액티브 트랜잭션",
@@ -418,21 +433,21 @@ const metadata = {
     "title": "액티브 트랜잭션",
     "description": "현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.",
     "tags": [
-      "Go",
+      ".NET",
       "액티브 트랜잭션",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/golang/dashboard-transactionmap"
+    "permalink": "/whatap-docs/dotnet/dashboard-transactionmap"
   },
   "next": {
-    "title": "히트맵 - 트레이스 분석",
-    "permalink": "/whatap-docs/golang/dashboard-hitmap-trace"
+    "title": "IIS 성능 카운트",
+    "permalink": "/whatap-docs/dotnet/dashboard-iis-perf-count"
   }
 };
 const assets = {

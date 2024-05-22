@@ -78,6 +78,10 @@ const toc = [{
   "value": "Springboot 업데이트 후 일부 위젯의 정보가 나오지 않아요.",
   "id": "springboot-업데이트-후-일부-위젯의-정보가-나오지-않아요",
   "level": 3
+}, {
+  "value": "스레드 중지 버튼이 동작하지 않아요.",
+  "id": "스레드-중지-버튼이-동작하지-않아요",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -99,9 +103,9 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭 애플리케이션 모니터링 서비스 사용자들이 자주 묻는 질문을 확인해 보세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "faqs",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
         className: "remark-sectionize-h3",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "springboot-업데이트-후-일부-위젯의-정보가-나오지-않아요",
@@ -133,6 +137,8 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "에이전트 설정"
               })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "다음 옵션을 설정한 다음 애플리케이션을 재시작하세요."
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
@@ -164,7 +170,32 @@ function _createMdxContent(props) {
             }), " 위젯의 지표는 1시간 통계 데이터를 활용해 위젯에 차트로 표시합니다. 위 설정을 진행한 이후 시간이 지나 통계 데이터가 만들어지기 때문에 데이터가 바로 보이지 않을 수 있습니다."]
           })
         })]
-      })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "스레드-중지-버튼이-동작하지-않아요",
+          children: "스레드 중지 버튼이 동작하지 않아요."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "stop_thread",
+              className: "uitext"
+            }), " 버튼을 눌러도 반응이 없는데요. 별도 설정이 필요한건가요?"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "stop_thread",
+            className: "uitext"
+          }), " 기능은 애플리케이션에서 실행 중인 스레드를 강제로 종료하는 기능입니다. 그러나 이 기능은 모든 경우에 동작하지 않을 수 있습니다. 예를 들어, 스레드가 IO 작업을 수행 중이라면 스레드를 즉시 중지할 수 없습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "stop_thread",
+            className: "uitext"
+          }), " 기능을 사용하면 스레드가 IO 작업을 수행 중이더라도 종료를 시도합니다. 하지만 스레드가 IO 작업을 완료하기 전까지는 중지되지 않습니다. 즉, 스레드는 중지 요청을 받아들이지만, 작업이 완료되고 다음 작업으로 넘어가기 전까지 중지되지 않습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "이러면 스레드를 강제로 종료하는 것은 비즈니스 로직에 문제가 발생할 수 있으며, 예기치 못한 동작을 유발할 수 있기 때문에 권장하지 않습니다. 그래도 스레드를 중지해야 한다면 애플리케이션 전체를 중지한 후 재시작해야 합니다."
+        })]
+      })]
     })]
   });
 }

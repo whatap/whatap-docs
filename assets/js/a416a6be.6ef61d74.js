@@ -76,8 +76,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/application-daily-stat"
   },
   "next": {
-    "title": "경고 알림",
-    "permalink": "/whatap-docs/kubernetes/set-notice"
+    "title": "Java",
+    "permalink": "/whatap-docs/java/instance-performance-analysis"
   }
 };
 const assets = {

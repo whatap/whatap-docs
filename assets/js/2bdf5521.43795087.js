@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70393],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51160],{
 
 /***/ 35527:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -557,7 +557,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 91244:
+/***/ 80360:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -577,29 +577,29 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'instance-performance-analysis',
 	title: '인스턴스 성능 관리',
-	description: 'PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
+	description: 'Go 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
 	tags: [
-		'PHP',
+		'Go',
 		'애플리케이션',
 		'인스턴스 성능 관리'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/instance-performance-analysis",
+  "id": "golang/instance-performance-analysis",
   "title": "인스턴스 성능 관리",
-  "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-  "source": "@site/docs/php/instance-performance-analysis.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/instance-performance-analysis",
-  "permalink": "/whatap-docs/php/instance-performance-analysis",
+  "description": "Go 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+  "source": "@site/docs/golang/instance-performance-analysis.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/instance-performance-analysis",
+  "permalink": "/whatap-docs/golang/instance-performance-analysis",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/instance-performance-analysis.mdx",
+  "editUrl": "undefined/docs/golang/instance-performance-analysis.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     },
     {
       "label": "애플리케이션",
@@ -614,21 +614,21 @@ const metadata = {
   "frontMatter": {
     "id": "instance-performance-analysis",
     "title": "인스턴스 성능 관리",
-    "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+    "description": "Go 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
     "tags": [
-      "PHP",
+      "Go",
       "애플리케이션",
       "인스턴스 성능 관리"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "kubeSidebar",
   "previous": {
-    "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/php/set-event-format"
+    "title": "PHP",
+    "permalink": "/whatap-docs/php/instance-performance-analysis"
   },
   "next": {
-    "title": "Log 모니터링",
-    "permalink": "/whatap-docs/log/introduction"
+    "title": "경고 알림",
+    "permalink": "/whatap-docs/kubernetes/set-notice"
   }
 };
 const assets = {

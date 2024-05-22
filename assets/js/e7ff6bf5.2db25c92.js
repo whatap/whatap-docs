@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50170],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44248],{
 
 /***/ 20250:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -193,6 +193,21 @@ function _createMdxContent(props) {
                   }), "를 참조하세요."]
                 }), "\n"]
               }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+              type: "tip",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "stop_thread",
+                  className: "uitext"
+                }), " 기능은 애플리케이션에서 실행 중인 스레드를 강제로 종료하는 기능입니다. 그러나 이 기능은 모든 경우에 동작하지 않을 수 있습니다. 예를 들어, 스레드가 IO 작업을 수행 중이라면 스레드를 즉시 중지할 수 없습니다."]
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "stop_thread",
+                  className: "uitext"
+                }), " 기능을 사용하면 스레드가 IO 작업을 수행 중이더라도 종료를 시도합니다. 하지만 스레드가 IO 작업을 완료하기 전까지는 중지되지 않습니다. 즉, 스레드는 중지 요청을 받아들이지만, 작업이 완료되고 다음 작업으로 넘어가기 전까지 중지되지 않습니다."]
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "이러면 스레드를 강제로 종료하는 것은 비즈니스 로직에 문제가 발생할 수 있으며, 예기치 못한 동작을 유발할 수 있기 때문에 권장하지 않습니다. 그래도 스레드를 중지해야 한다면 애플리케이션 전체를 중지한 후 재시작해야 합니다."
+              })]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -349,7 +364,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 23285:
+/***/ 41334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -369,30 +384,31 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-active-transaction',
 	title: '액티브 트랜잭션',
-	description: '자바(Java) 모니터링에서 현재 진행 중인 트랜잭션을 실시간으로 모니터링하고 분석하는 액티브 트랜잭션 기능을 안내합니다. 애플리케이션의 트랜잭션 URL, SQL, HTTP 호출 정보를 조회하고, 트랜잭션의 상태를 구분하여 파악할 수 있습니다. 이를 통해 지연 구간을 식별하고 문제 해결에 필요한 상세 정보를 얻을 수 있습니다.',
+	description: '현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.',
 	tags: [
-		'Java',
+		'Node.js',
 		'액티브 트랜잭션',
 		'대시보드',
-		'애플리케이션'
+		'애플리케이션',
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard-active-transaction",
+  "id": "nodejs/dashboard-active-transaction",
   "title": "액티브 트랜잭션",
-  "description": "자바(Java) 모니터링에서 현재 진행 중인 트랜잭션을 실시간으로 모니터링하고 분석하는 액티브 트랜잭션 기능을 안내합니다. 애플리케이션의 트랜잭션 URL, SQL, HTTP 호출 정보를 조회하고, 트랜잭션의 상태를 구분하여 파악할 수 있습니다. 이를 통해 지연 구간을 식별하고 문제 해결에 필요한 상세 정보를 얻을 수 있습니다.",
-  "source": "@site/docs/java/dashboard-active-transaction.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard-active-transaction",
-  "permalink": "/whatap-docs/java/dashboard-active-transaction",
+  "description": "현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.",
+  "source": "@site/docs/nodejs/dashboard-active-transaction.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/dashboard-active-transaction",
+  "permalink": "/whatap-docs/nodejs/dashboard-active-transaction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard-active-transaction.mdx",
+  "editUrl": "undefined/docs/nodejs/dashboard-active-transaction.mdx",
   "tags": [
     {
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "액티브 트랜잭션",
@@ -405,28 +421,33 @@ const metadata = {
     {
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
+    },
+    {
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard-active-transaction",
     "title": "액티브 트랜잭션",
-    "description": "자바(Java) 모니터링에서 현재 진행 중인 트랜잭션을 실시간으로 모니터링하고 분석하는 액티브 트랜잭션 기능을 안내합니다. 애플리케이션의 트랜잭션 URL, SQL, HTTP 호출 정보를 조회하고, 트랜잭션의 상태를 구분하여 파악할 수 있습니다. 이를 통해 지연 구간을 식별하고 문제 해결에 필요한 상세 정보를 얻을 수 있습니다.",
+    "description": "현재 진행 중인 트랜잭션의 URL, SQL, HTTP 호출 정보로 이상 트랜잭션을 신속하게 파악할 수 있으며, 상세 트레이스를 통해서 지연 구간을 상세하게 분석할 수 있습니다.",
     "tags": [
-      "Java",
+      "Node.js",
       "액티브 트랜잭션",
       "대시보드",
-      "애플리케이션"
+      "애플리케이션",
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/java/dashboard-transactionmap"
+    "permalink": "/whatap-docs/nodejs/dashboard-transactionmap"
   },
   "next": {
     "title": "히트맵 - 트레이스 분석",
-    "permalink": "/whatap-docs/java/dashboard-hitmap-trace"
+    "permalink": "/whatap-docs/nodejs/dashboard-hitmap-trace"
   }
 };
 const assets = {
@@ -438,24 +459,7 @@ const assets = {
 
 const toc = [..._common_items_dashboard_active_transaction_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
-  const _components = {
-    a: "a",
-    admonition: "admonition",
-    p: "p",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_active_transaction_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["액티브 트랜잭션 설정에 관한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "active-transactions",
-          children: "다음 문서"
-        }), "를 참조하세요."]
-      })
-    })]
-  });
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_active_transaction_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {

@@ -219,8 +219,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "트랜잭션 검색",
-    "permalink": "/whatap-docs/kubernetes/tx-profile"
+    "title": "Go",
+    "permalink": "/whatap-docs/golang/instance-performance-analysis"
   },
   "next": {
     "title": "컨테이너 경고 알림",

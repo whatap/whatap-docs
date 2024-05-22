@@ -87,24 +87,32 @@ const assets = {
 
 
 const toc = [{
-  "value": " 서버 상태",
-  "id": "-서버-상태",
+  "value": " 데이터 갱신 및 서버 상태",
+  "id": "-데이터-갱신-및-서버-상태",
   "level": 2
 }, {
-  "value": " 데이터 갱신",
-  "id": "-데이터-갱신",
+  "value": "데이터 갱신",
+  "id": "데이터-갱신",
+  "level": 3
+}, {
+  "value": "서버 상태",
+  "id": "서버-상태",
+  "level": 3
+}, {
+  "value": " 검색",
+  "id": "-검색",
   "level": 2
 }, {
   "value": " 서버 현황",
   "id": "-서버-현황",
   "level": 2
 }, {
-  "value": "검색",
-  "id": "검색",
+  "value": "컬럼 설정",
+  "id": "컬럼-설정",
   "level": 3
 }, {
-  "value": "컬럼",
-  "id": "컬럼",
+  "value": "새로고침",
+  "id": "새로고침",
   "level": 3
 }, {
   "value": "필터",
@@ -169,15 +177,53 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "server-list.png",
       desc: "서버 목록"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h2, {
-        id: "-서버-상태",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h2, {
+        id: "-데이터-갱신-및-서버-상태",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
           width: "35",
           height: "35"
-        }), " 서버 상태"]
+        }), " 데이터 갱신 및 서버 상태"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "데이터-갱신",
+        children: "데이터 갱신"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "서버 목록 페이지의 데이터는 60초마다 자동으로 갱신합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "일시정지 아이콘",
+            src: (__webpack_require__(68119)/* ["default"] */ .A) + "",
+            width: "20",
+            height: "20"
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "일시정지"
+            })
+          }), " : 사용자는 데이터의 자동 갱신을 중지할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "재생 아이콘",
+            src: (__webpack_require__(681)/* ["default"] */ .A) + "",
+            width: "24",
+            height: "24"
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "재생"
+            })
+          }), " : 사용자는 중지한 자동 갱신을 재시작할 수 있습니다."]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "서버-상태",
+        children: "서버 상태"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "수집 서버의 상태별 현황을 나타냅니다. 상태는 1분 간격으로 갱신합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -241,49 +287,23 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h2, {
-        id: "-데이터-갱신",
+        id: "-검색",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
           width: "35",
           height: "35"
-        }), " 데이터 갱신"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "서버 목록 페이지의 데이터는 60초마다 자동으로 갱신합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "일시정지 아이콘",
-            src: (__webpack_require__(68119)/* ["default"] */ .A) + "",
-            width: "20",
-            height: "20"
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "일시정지"
-            })
-          }), " : 사용자는 데이터의 자동 갱신을 중지할 수 있습니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "재생 아이콘",
-            src: (__webpack_require__(681)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "재생"
-            })
-          }), " : 사용자는 중지한 자동 갱신을 재시작할 수 있습니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "새로고침 아이콘",
-            src: (__webpack_require__(12422)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "새로고침"
-            })
-          }), " : 사용자는 현재 시간을 기준으로 데이터를 갱신할 수 있습니다."]
-        }), "\n"]
+        }), " 검색"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["상단 오른쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "number-s",
+          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
+          width: "35",
+          height: "35"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "검색창"
+          })
+        }), "을 활용해 서버 이름(ONAME), 서버 아이디(OID), 태그 중에서 입력값이 포함된 서버 목록을 필터링할 수 있습니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -311,25 +331,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "검색",
-        children: "검색"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "number-s",
-          src: (__webpack_require__(55522)/* ["default"] */ .A) + "",
-          width: "35",
-          height: "35"
-        }), " 영역 상단 오른쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "검색창"
-          })
-        }), "을 활용해 서버 이름(ONAME), 서버 아이디(OID), 태그 중에서 입력값이 포함된 서버 목록을 필터링할 수 있습니다."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "컬럼",
-        children: "컬럼"
+        id: "컬럼-설정",
+        children: "컬럼 설정"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -340,7 +343,7 @@ function _createMdxContent(props) {
               height: "24"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "컬럼 선택"
+                children: "컬럼 설정"
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -356,7 +359,7 @@ function _createMdxContent(props) {
               height: "24"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "컬럼 선택"
+                children: "컬럼 설정"
               })
             }), "  버튼을 클릭하면 다음과 같이 테이블에 표시할 컬럼을 선택할 수 있습니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
@@ -398,6 +401,23 @@ function _createMdxContent(props) {
             })
           }), "\n"]
         }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "새로고침",
+        children: "새로고침"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "새로고침 아이콘",
+          src: (__webpack_require__(12422)/* ["default"] */ .A) + "",
+          width: "24",
+          height: "24"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "새로고침"
+          })
+        }), " 버튼을 클릭하면 사용자는 현재 시간을 기준으로 데이터를 갱신할 수 있습니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -527,9 +547,9 @@ function _createMdxContent(props) {
           src: (__webpack_require__(70418)/* ["default"] */ .A) + "",
           width: "24",
           height: "24"
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "에이전트 이전"
+            children: "이동"
           })
         }), " 버튼을 선택해 에이전트를 다른 프로젝트로 이전할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
@@ -581,8 +601,17 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "서버-간-비교",
         children: "서버 간 비교"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "서버 간 비교 차트를 다음과 같이 제공합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "차트 비교 아이콘",
+          src: (__webpack_require__(24523)/* ["default"] */ .A) + "",
+          width: "24",
+          height: "24"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "비교"
+          })
+        }), " 버튼을 클릭하면 서버 간 비교 차트를 다음과 같이 제공합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server-list-compare.png",
         desc: "서버 간 비교 sc"
@@ -596,7 +625,7 @@ function _createMdxContent(props) {
               height: "24"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "비교하기"
+                children: "비교"
               })
             }), " 버튼을 선택하세요."]
           }), "\n"]
