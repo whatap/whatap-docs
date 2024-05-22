@@ -5438,7 +5438,40 @@ const sidebars = {
                 'kubernetes/dashboard-hitmap-trace',
                 'kubernetes/application-daily-stat',
                 'kubernetes/tx-profile',
-                
+                // 'kubernetes/instance-performance-analysis',
+                {
+                  type: 'category',
+                  label: '인스턴스 성능 모니터링',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    {
+                      type: 'doc',
+                      label: 'Java',
+                      id: 'java/instance-performance-analysis',
+                    },
+                    {
+                      type: 'doc',
+                      label: 'Node.js',
+                      id: 'nodejs/instance-performance-analysis',
+                    },
+                    {
+                      type: 'doc',
+                      label: 'Python',
+                      id: 'python/instance-performance-analysis',
+                    },
+                    {
+                      type: 'doc',
+                      label: 'PHP',
+                      id: 'php/instance-performance-analysis',
+                    },
+                    {
+                      type: 'doc',
+                      label: 'Go',
+                      id: 'golang/instance-performance-analysis',
+                    },
+                  ],
+                },                
               ],
             },
             {
