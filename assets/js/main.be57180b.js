@@ -18589,9 +18589,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(39553)
     ],
     "a1251ee1": [
-        ()=>__webpack_require__.e(/* import() | a1251ee1 */ 26806).then(__webpack_require__.bind(__webpack_require__, 14337)),
+        ()=>__webpack_require__.e(/* import() | a1251ee1 */ 26806).then(__webpack_require__.bind(__webpack_require__, 27368)),
         "@site/docs/java/agent-transaction.mdx",
-        /*require.resolve*/(14337)
+        /*require.resolve*/(27368)
     ],
     "a1439dde": [
         ()=>__webpack_require__.e(/* import() | a1439dde */ 18704).then(__webpack_require__.bind(__webpack_require__, 78890)),
@@ -21414,9 +21414,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(51772)
     ],
     "e81fa518": [
-        ()=>__webpack_require__.e(/* import() | e81fa518 */ 29268).then(__webpack_require__.bind(__webpack_require__, 35338)),
+        ()=>__webpack_require__.e(/* import() | e81fa518 */ 29268).then(__webpack_require__.bind(__webpack_require__, 7191)),
         "@site/docs/dotnet/agent-transaction.mdx",
-        /*require.resolve*/(35338)
+        /*require.resolve*/(7191)
     ],
     "e825052b": [
         ()=>__webpack_require__.e(/* import() | e825052b */ 89106).then(__webpack_require__.bind(__webpack_require__, 18429)),

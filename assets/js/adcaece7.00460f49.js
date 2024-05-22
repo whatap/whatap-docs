@@ -1364,6 +1364,8 @@ function agent_transaction_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "http-트랜잭션-추적",
         children: "HTTP 트랜잭션 추적"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "다음은 HTTP 요청 및 응답에 관련된 다양한 정보를 추적하고 기록하는 에이전트 옵션입니다. 이를 통해 사용자는 애플리케이션의 HTTP 트랜잭션을 세밀하게 모니터링하고 분석할 수 있습니다. 트랜잭션 이름에 파라미터 값을 추가하거나 특정 URL이나 HTTP 메소드를 제외할 수 있습니다. 또한 HTTP 헤더 정보와 파라미터 정보를 포함하여 트랜잭션을 보다 상세하게 기록할 수 있습니다."
       }), (0,jsx_runtime.jsx)(_python_track_http_trs_MDXContent, {})]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -1376,6 +1378,8 @@ function agent_transaction_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "멀티-트랜잭션-추적",
         children: "멀티 트랜잭션 추적"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "다음은 애플리케이션 간 호출을 추적하고 모니터링하기 위한 옵션입니다. 이 옵션을 통해 사용자는 여러 애플리케이션 간의 상호작용을 이해하는 데 도움이 받을 수 있습니다. 제공하는 다양한 옵션을 통해 멀티 트랜잭션 추적의 세부적인 동작을 조정할 수 있습니다."
       }), (0,jsx_runtime.jsx)(_python_multi_trace_MDXContent, {})]
     })]
   });

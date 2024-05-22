@@ -640,6 +640,122 @@ function MDXContent(props = {}) {
 }
 
 
+;// CONCATENATED MODULE: ./docs/common-items/_php-track-trs.mdx
+
+
+const _php_track_trs_frontMatter = {};
+const _php_track_trs_contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const _php_track_trs_toc = [];
+function _php_track_trs_createMdxContent(props) {
+  const _components = {
+    code: "code",
+    li: "li",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(_components.ul, {
+    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.trace_active_transaction_slow_time"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Millisecond"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "3000"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "수집 정보를 확인하는 대시보드의 액티브 트랜잭션 아크 이퀄라이저 그래프에서 Slow 구간으로 표기될 수 있는 트랜잭션 응답 시간의 기준을 지정합니다. 트랜잭션의 응답시간이 지정 시간을 초과할 경우 Slow 액티브 트랜잭션의 개수에 포함됩니다."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.trace_active_transaction_very_slow_time"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Millisecond"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "8000"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.trace_active_transaction_lost_time"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Millisecond"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "30000"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "트랜잭션의 종료를 기다리는 제한 시간 5분 안에 트랜잭션이 끝나지 않는 경우 트랜잭션을 정보를 더 이상 수집하지 않습니다. 트랜잭션의 트레이스 정보에서 \"Lost Connection\"를 확인할 수 있습니다."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.trace_useragent_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "이면 트랜잭션의 유저 에이전트 정보를 수집합니다."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.trace_referer_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "이면 트랜잭션의 Refere 정보를 수집합니다."]
+      }), "\n"]
+    }), "\n"]
+  });
+}
+function _php_track_trs_MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_php_track_trs_createMdxContent, {
+      ...props
+    })
+  }) : _php_track_trs_createMdxContent(props);
+}
+
+
 ;// CONCATENATED MODULE: ./docs/common-items/_php-track-http-trs.mdx
 
 
@@ -841,34 +957,6 @@ function _php_track_http_trs_createMdxContent(props) {
           children: "# e.g. http_method가 OPTIONS, HEAD인 트랜잭션 \"추적\"\nwhatap.ignore_http_method=PATCH,TRACE\n\n# e.g. http_method가 OPTIONS, HEAD인 트랜잭션 \"무시\"\nwhatap.ignore_http_method=OPTIONS,HEAD\n"
         })
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.biz_exceptions"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "String"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "Empty"
-        })]
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "특정 Error 또는 Exception을 Business Exception으로 지정합니다. 히트맵에서는 에러로 표기되지 않고 통계 정보에만 수집됩니다. 수집되는 Error Class 명과 동일하게 적용합니다. 콤마를 구분자로 하여 여러 개를 등록할 수 있습니다."
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.ignore_exceptions"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "String"
-        })]
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "등록한 Exception의 에러 자체를 무시합니다."
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "Exception의 경우 Custom Exception Class가 정의되어 있지 않으면, 기본으로 Exception으로 수집됩니다. 특정 Exception을 구분하기 위해서는 Custom Exception Class를 정의하고 해당 이름을 지정하면 제외할 수 있습니다."
-      }), "\n"]
     }), "\n"]
   });
 }
@@ -886,122 +974,6 @@ function _php_track_http_trs_MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-;// CONCATENATED MODULE: ./docs/common-items/_php-track-trs.mdx
-
-
-const _php_track_trs_frontMatter = {};
-const _php_track_trs_contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const _php_track_trs_toc = [];
-function _php_track_trs_createMdxContent(props) {
-  const _components = {
-    code: "code",
-    li: "li",
-    p: "p",
-    strong: "strong",
-    ul: "ul",
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return (0,jsx_runtime.jsxs)(_components.ul, {
-    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.trace_active_transaction_slow_time"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "Millisecond"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "3000"
-        })]
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "수집 정보를 확인하는 대시보드의 액티브 트랜잭션 아크 이퀄라이저 그래프에서 Slow 구간으로 표기될 수 있는 트랜잭션 응답 시간의 기준을 지정합니다. 트랜잭션의 응답시간이 지정 시간을 초과할 경우 Slow 액티브 트랜잭션의 개수에 포함됩니다."
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.trace_active_transaction_very_slow_time"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "Millisecond"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "8000"
-        })]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.trace_active_transaction_lost_time"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "Millisecond"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "30000"
-        })]
-      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-        children: "트랜잭션의 종료를 기다리는 제한 시간 5분 안에 트랜잭션이 끝나지 않는 경우 트랜잭션을 정보를 더 이상 수집하지 않습니다. 트랜잭션의 트레이스 정보에서 \"Lost Connection\"를 확인할 수 있습니다."
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.trace_useragent_enabled"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "Boolean"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "false"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "true"
-        }), "이면 트랜잭션의 유저 에이전트 정보를 수집합니다."]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "whatap.trace_referer_enabled"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "type",
-          children: "Boolean"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "false"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "true"
-        }), "이면 트랜잭션의 Refere 정보를 수집합니다."]
-      }), "\n"]
-    }), "\n"]
-  });
-}
-function _php_track_trs_MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
-    ...props,
-    children: (0,jsx_runtime.jsx)(_php_track_trs_createMdxContent, {
-      ...props
-    })
-  }) : _php_track_trs_createMdxContent(props);
 }
 
 
@@ -1214,15 +1186,15 @@ const agent_transaction_toc = [{
   "value": "트랜잭션 트레이싱",
   "id": "php-trs-trc",
   "level": 2
-}, ...toc, {
+}, ...toc, ..._php_track_trs_toc, {
+  "value": "예외 처리",
+  "id": "exception",
+  "level": 2
+}, {
   "value": "HTTP 트랜잭션 추적",
   "id": "php-track-http-trs",
   "level": 2
 }, ..._php_track_http_trs_toc, {
-  "value": "트랜잭션 추적",
-  "id": "트랜잭션-추적",
-  "level": 2
-}, ..._php_track_trs_toc, {
   "value": "멀티 트랜잭션 추적",
   "id": "멀티-트랜잭션-추적",
   "level": 2
@@ -1231,14 +1203,18 @@ function agent_transaction_createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
     em: "em",
     h2: "h2",
+    li: "li",
     p: "p",
     section: "section",
     strong: "strong",
+    ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) agent_transaction_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.admonition, {
       type: "note",
@@ -1260,24 +1236,84 @@ function agent_transaction_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "php-trs-trc",
         children: "트랜잭션 트레이싱"
-      }), (0,jsx_runtime.jsx)(MDXContent, {})]
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "다음은 애플리케이션 내의 각 트랜잭션의 실행 경로를 상세하게 추적할 수 있는 에이전트 옵션입니다. 최소 응답 시간부터 트랜잭션의 실행 스텝 수까지 다양한 측면을 조정할 수 있습니다."
+      }), (0,jsx_runtime.jsx)(MDXContent, {}), (0,jsx_runtime.jsx)(_php_track_trs_MDXContent, {})]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,jsx_runtime.jsx)(_components.h2, {
+        id: "exception",
+        children: "예외 처리"
+      }), (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["다음은 애플리케이션에서 발생하는 예외를 관리하고 모니터링하기 위한 옵션입니다. 비즈니스 예외를 등록하고 관련 통계를 수집하여 애플리케이션의 안정성을 확인할 수 있습니다. 또한 특정 예외를 무시하거나 HTTP 상태 코드가 에러인 경우 에러로 처리할지 여부를 설정할 수도 있습니다. 예외로 처리된 항목들은 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_hitmap",
+          className: "uitext"
+        }), " 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "TTL06209",
+          className: "uitext"
+        }), " 창에서 정상 트랜잭션으로 표시됩니다."]
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "whatap.biz_exceptions"
+            }), " ", (0,jsx_runtime.jsx)("span", {
+              class: "type",
+              children: "String"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Empty"
+            })]
+          }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "특정 Error 또는 Exception을 Business Exception으로 지정합니다. 히트맵에서는 에러로 표기되지 않고 통계 정보에만 수집됩니다. 수집되는 Error Class 명과 동일하게 적용합니다. 콤마를 구분자로 하여 여러 개를 등록할 수 있습니다."
+          }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+            type: "tip",
+            children: (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["에러 클래스 수집 / 히트맵 표시 레벨: ", (0,jsx_runtime.jsx)("span", {
+                class: "normal",
+                children: "INFO"
+              }), "(파란색) / 에러 통계 포함"]
+            })
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "whatap.ignore_exceptions"
+            }), " ", (0,jsx_runtime.jsx)("span", {
+              class: "type",
+              children: "String"
+            })]
+          }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "등록한 Exception의 에러 자체를 무시합니다."
+          }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "Exception의 경우 Custom Exception Class가 정의되어 있지 않으면, 기본으로 Exception으로 수집됩니다. 특정 Exception을 구분하기 위해서는 Custom Exception Class를 정의하고 해당 이름을 지정하면 제외할 수 있습니다."
+          }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+            type: "tip",
+            children: (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["에러 클래스 무시 / 히트맵 표시 레벨: ", (0,jsx_runtime.jsx)("span", {
+                class: "normal",
+                children: "INFO"
+              }), "(파란색) / 에러 통계 미포함"]
+            })
+          }), "\n"]
+        }), "\n"]
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "php-track-http-trs",
         children: "HTTP 트랜잭션 추적"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "다음은 HTTP 요청 및 응답에 관련된 다양한 정보를 추적하고 기록하는 에이전트 옵션입니다. 이를 통해 사용자는 애플리케이션의 HTTP 트랜잭션을 세밀하게 모니터링하고 분석할 수 있습니다. 트랜잭션 이름에 파라미터 값을 추가하거나 특정 URL이나 HTTP 메소드를 제외할 수 있습니다. 또한 HTTP 헤더 정보와 파라미터 정보를 포함하여 트랜잭션을 보다 상세하게 기록할 수 있습니다."
       }), (0,jsx_runtime.jsx)(_php_track_http_trs_MDXContent, {})]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
-        id: "트랜잭션-추적",
-        children: "트랜잭션 추적"
-      }), (0,jsx_runtime.jsx)(_php_track_trs_MDXContent, {})]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "멀티-트랜잭션-추적",
         children: "멀티 트랜잭션 추적"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "다음은 애플리케이션 간 호출을 추적하고 모니터링하기 위한 옵션입니다. 이 옵션을 통해 사용자는 여러 애플리케이션 간의 상호작용을 이해하는 데 도움이 받을 수 있습니다. 제공하는 다양한 옵션을 통해 멀티 트랜잭션 추적의 세부적인 동작을 조정할 수 있습니다."
       }), (0,jsx_runtime.jsx)(_php_multi_trace_MDXContent, {})]
     })]
   });
@@ -1293,6 +1329,9 @@ function agent_transaction_MDXContent(props = {}) {
       ...props
     })
   }) : agent_transaction_createMdxContent(props);
+}
+function agent_transaction_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
