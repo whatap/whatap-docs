@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>WhaTap Docs Blog</title>
-        <link>https://docs.whatap.io/whatap-docs/blog/</link>
+        <link>https://docs.whatap.io/whatap-docs/blog</link>
         <description>WhaTap Docs Blog</description>
         <lastBuildDate>Mon, 20 May 2024 15:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>ko</language>
         <item>
             <title><![CDATA[와탭 24년 1분기 안내]]></title>
-            <link>https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/</link>
-            <guid>https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/</guid>
+            <link>https://docs.whatap.io/whatap-docs/blog/2024-1q-summary</link>
+            <guid>https://docs.whatap.io/whatap-docs/blog/2024-1q-summary</guid>
             <pubDate>Mon, 20 May 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
@@ -53,7 +53,7 @@
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
 <br>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>공통</code> 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다.</p>
 <p>사용자 편의성 향상을 위해 5년 만에 와탭 모니터링의 <strong>사이드 메뉴</strong>가 새롭게 개편되었습니다. 와탭 서비스 이용에는 프로젝트 선택이 선행됩니다. 프로젝트 생성 및 선택 이후 동선을 편리하게 활용할 수 있도록 기존과 비교해 UI 혼잡도를 줄여 프로젝트 선택과 메뉴의 영역을 확보하는 구조로 개편되었습니다.</p>
 <p>프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
@@ -87,7 +87,7 @@
 <p><code class="Changed">Changed</code> <b>수정</b> 또는 <b>알림 설정</b> 권한을 가진 멤버가 <span class="uitext">정비 계획</span> 메뉴를 이용할 수 있도록 권한 조정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="flex-보드--대시보드">Flex 보드 / 대시보드​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#flex-%EB%B3%B4%EB%93%9C--%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Flex 보드 / 대시보드​에 대한 직접 링크" title="Flex 보드 / 대시보드​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="flex-보드--대시보드">Flex 보드 / 대시보드​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#flex-%EB%B3%B4%EB%93%9C--%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Flex 보드 / 대시보드​에 대한 직접 링크" title="Flex 보드 / 대시보드​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">Flex 보드</span> 메뉴에서 TopN 위젯의 순위 갱신 시 그래프 차트가 이어지지 않도록 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -117,7 +117,7 @@
 <p><code class="Changed">Changed</code> <span class="uitext">통합 Flex 보드</span> 메뉴의 대시보드 복사 및 공유 기능 개선 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 메트릭스 이벤트 추가 시 <span class="uitext">수신 테스트</span> 기능 실행을 위한 필수 입력 조건 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -171,7 +171,7 @@
 </li>
 </ul></div></div>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Application</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <code>Go</code> 상품의 정식 출시, <em><strong>트랜잭션 맵</strong></em>의 고도화, 그리고 <em><strong>통계</strong></em> 및 <em><strong>인스턴스 성능 관리</strong></em> 메뉴 구조의 개선을 소개합니다.</p>
 <p><code>Go</code> 애플리케이션 모니터링이 베타 버전 종료 후 <strong>정식</strong> 서비스를 시작했습니다. 와탭의 <code>Go</code> 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다.</p>
 <p><em><strong>트랜잭션 맵</strong></em>은 성능 테스트 또는 장애 상황 발생 시 단기간 트랜잭션별 현황을 상세히 확인할 수 있는 메뉴입니다. 다음과 같이 <em><strong>트랜잭션 맵</strong></em> 고도화 작업이 이루어졌습니다.</p>
@@ -243,7 +243,7 @@
 <p><code class="Feature">Feature</code> 에이전트 선택 옵션의 에이전트 목록 간격 조정 및 검색 기능 추가, 이름 순으로 정렬하여 표시 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="java"><code>Java</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#java" class="hash-link" aria-label="java에 대한 직접 링크" title="java에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2226-2024년-01월-11일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_26">Java Agent v2.2.26</a></code> <code class="changelog-date">2024년 01월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#java-agent-v2226-2024%EB%85%84-01%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="java-agent-v2226-2024년-01월-11일에 대한 직접 링크" title="java-agent-v2226-2024년-01월-11일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="java"><code>Java</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#java" class="hash-link" aria-label="java에 대한 직접 링크" title="java에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2226-2024년-01월-11일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_26">Java Agent v2.2.26</a></code> <code class="changelog-date">2024년 01월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#java-agent-v2226-2024%EB%85%84-01%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="java-agent-v2226-2024년-01월-11일에 대한 직접 링크" title="java-agent-v2226-2024년-01월-11일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> spring-boot-2.5 이상에서 reactor-kafka-1.3 추적</p>
@@ -264,7 +264,7 @@
 <p><code class="Feature">Feature</code> Tibero의 <code>CallableStatement</code> 추적</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2227-2024년-02월-06일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_27">Java Agent v2.2.27</a></code> <code class="changelog-date">2024년 02월 06일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#java-agent-v2227-2024%EB%85%84-02%EC%9B%94-06%EC%9D%BC" class="hash-link" aria-label="java-agent-v2227-2024년-02월-06일에 대한 직접 링크" title="java-agent-v2227-2024년-02월-06일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2227-2024년-02월-06일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_27">Java Agent v2.2.27</a></code> <code class="changelog-date">2024년 02월 06일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#java-agent-v2227-2024%EB%85%84-02%EC%9B%94-06%EC%9D%BC" class="hash-link" aria-label="java-agent-v2227-2024년-02월-06일에 대한 직접 링크" title="java-agent-v2227-2024년-02월-06일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> mule-3.9.5 추적 범위 확대</p>
@@ -279,7 +279,7 @@
 <p><code class="Deprecate">Deprecate</code> Lettuce 드라이버 사용 시 Redis의 value 수집 중단</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2228-2024년-02월-27일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_28">Java Agent v2.2.28</a></code> <code class="changelog-date">2024년 02월 27일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#java-agent-v2228-2024%EB%85%84-02%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="java-agent-v2228-2024년-02월-27일에 대한 직접 링크" title="java-agent-v2228-2024년-02월-27일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2228-2024년-02월-27일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_28">Java Agent v2.2.28</a></code> <code class="changelog-date">2024년 02월 27일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#java-agent-v2228-2024%EB%85%84-02%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="java-agent-v2228-2024년-02월-27일에 대한 직접 링크" title="java-agent-v2228-2024년-02월-27일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> logback-1.2.8 추적 시 appender 제외 옵션 추가</p>
@@ -294,7 +294,7 @@
 <p><code class="Deprecated">Deprecated</code> log4j-2.17 추적 시 지정한 appender만 수집하는 옵션 사용 중단</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2229-2024년-03월-15일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_29">Java Agent v2.2.29</a></code> <code class="changelog-date">2024년 03월 15일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#java-agent-v2229-2024%EB%85%84-03%EC%9B%94-15%EC%9D%BC" class="hash-link" aria-label="java-agent-v2229-2024년-03월-15일에 대한 직접 링크" title="java-agent-v2229-2024년-03월-15일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2229-2024년-03월-15일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_29">Java Agent v2.2.29</a></code> <code class="changelog-date">2024년 03월 15일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#java-agent-v2229-2024%EB%85%84-03%EC%9B%94-15%EC%9D%BC" class="hash-link" aria-label="java-agent-v2229-2024년-03월-15일에 대한 직접 링크" title="java-agent-v2229-2024년-03월-15일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="New">New</code> jboss-logging-3.3 로그 수집 추가</p>
@@ -305,7 +305,7 @@
 <li>
 <p><code class="Deprecated">Deprecated</code> <code>env</code>의 <b>HOSTNAME</b> 데이터 수집 중단</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="php"><code>PHP</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#php" class="hash-link" aria-label="php에 대한 직접 링크" title="php에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="php-agent-v270-2024년-01월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/php/php-2_7_0">PHP Agent v2.7.0</a></code> <code class="changelog-date">2024년 01월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#php-agent-v270-2024%EB%85%84-01%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="php-agent-v270-2024년-01월-10일에 대한 직접 링크" title="php-agent-v270-2024년-01월-10일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="php"><code>PHP</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#php" class="hash-link" aria-label="php에 대한 직접 링크" title="php에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="php-agent-v270-2024년-01월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/php/php-2_7_0">PHP Agent v2.7.0</a></code> <code class="changelog-date">2024년 01월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#php-agent-v270-2024%EB%85%84-01%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="php-agent-v270-2024년-01월-10일에 대한 직접 링크" title="php-agent-v270-2024년-01월-10일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> PHP 8.3 지원</p>
@@ -313,18 +313,18 @@
 <li>
 <p><code class="Feature">Feature</code> 멀티 트랜잭션 추적에서 Trace context(W3C) 지원</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#python" class="hash-link" aria-label="python에 대한 직접 링크" title="python에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024년-03월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024년 03월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#python-agent-v162-2024%EB%85%84-03%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="python-agent-v162-2024년-03월-29일에 대한 직접 링크" title="python-agent-v162-2024년-03월-29일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python" class="hash-link" aria-label="python에 대한 직접 링크" title="python에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024년-03월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024년 03월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#python-agent-v162-2024%EB%85%84-03%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="python-agent-v162-2024년-03월-29일에 대한 직접 링크" title="python-agent-v162-2024년-03월-29일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <code>exit_with_parent_process_enabled</code> 옵션 추가</li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#nodejs" class="hash-link" aria-label="nodejs에 대한 직접 링크" title="nodejs에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0486-2024년-01월-04일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_86">Node.js Agent v0.4.86</a></code> <code class="changelog-date">2024년 01월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#nodejs-agent-v0486-2024%EB%85%84-01%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크" title="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs" class="hash-link" aria-label="nodejs에 대한 직접 링크" title="nodejs에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0486-2024년-01월-04일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_86">Node.js Agent v0.4.86</a></code> <code class="changelog-date">2024년 01월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs-agent-v0486-2024%EB%85%84-01%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크" title="nodejs-agent-v0486-2024년-01월-04일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 옵션 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0490-2024년-02월-05일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_90">Node.js Agent v0.4.90</a></code> <code class="changelog-date">2024년 02월 05일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#nodejs-agent-v0490-2024%EB%85%84-02%EC%9B%94-05%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0490-2024년-02월-05일에 대한 직접 링크" title="nodejs-agent-v0490-2024년-02월-05일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0490-2024년-02월-05일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_90">Node.js Agent v0.4.90</a></code> <code class="changelog-date">2024년 02월 05일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs-agent-v0490-2024%EB%85%84-02%EC%9B%94-05%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0490-2024년-02월-05일에 대한 직접 링크" title="nodejs-agent-v0490-2024년-02월-05일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설정 옵션 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0494-2024년-03월-07일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_94">Node.js Agent v0.4.94</a></code> <code class="changelog-date">2024년 03월 07일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#nodejs-agent-v0494-2024%EB%85%84-03%EC%9B%94-07%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0494-2024년-03월-07일에 대한 직접 링크" title="nodejs-agent-v0494-2024년-03월-07일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0494-2024년-03월-07일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_94">Node.js Agent v0.4.94</a></code> <code class="changelog-date">2024년 03월 07일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#nodejs-agent-v0494-2024%EB%85%84-03%EC%9B%94-07%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0494-2024년-03월-07일에 대한 직접 링크" title="nodejs-agent-v0494-2024년-03월-07일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <a href="http://socket.io/" target="_blank" rel="noopener noreferrer">socket.io</a> 모니터링 모듈 추가</p>
@@ -332,12 +332,12 @@
 <li>
 <p><code class="Feature">Feature</code> 에이전트 설정 옵션 추가</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#go" class="hash-link" aria-label="go에 대한 직접 링크" title="go에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v030-2024년-01월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/go/go-0_3_0">Go Agent v0.3.0</a></code> <code class="changelog-date">2024년 01월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#go-agent-v030-2024%EB%85%84-01%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="go-agent-v030-2024년-01월-10일에 대한 직접 링크" title="go-agent-v030-2024년-01월-10일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#go" class="hash-link" aria-label="go에 대한 직접 링크" title="go에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v030-2024년-01월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/go/go-0_3_0">Go Agent v0.3.0</a></code> <code class="changelog-date">2024년 01월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#go-agent-v030-2024%EB%85%84-01%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="go-agent-v030-2024년-01월-10일에 대한 직접 링크" title="go-agent-v030-2024년-01월-10일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 멀티 트랜잭션 추적에서 Trace context(W3C) 지원</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Server</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <strong>Unix</strong> <code>AIX</code> 설치 패키지에 대해 소개합니다.</p>
 <p>이번 1분기에 새롭게 <strong>Unix</strong> <code>AIX</code> <strong>에이전트 설치 패키지</strong>를 제공합니다. IBM이 개발한 AIX는 엔터프라이즈 서버에서 주로 사용됩니다. 확장성, 호환성, 엔터프라이즈 환경에서의 견고함을 위해 특별히 설계된 운영체제입니다.</p>
 <p>와탭은 <strong>AIX 버전 6.1</strong> 이상을 지원합니다. <code>AIX</code> 설치 패키지를 통해 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다. 와탭 서버 모니터링을 통해 AIX 운영체제를 보다 효과적으로 관리하고 모니터링할 수 있습니다.</p>
@@ -357,17 +357,17 @@
 <p><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 탭에서 수신자 태그 설정 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v252-2024년-02월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_2">Server Agent v2.5.2</a></code> <code class="changelog-date">2024년 02월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#server-agent-v252-2024%EB%85%84-02%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="server-agent-v252-2024년-02월-13일에 대한 직접 링크" title="server-agent-v252-2024년-02월-13일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v252-2024년-02월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_2">Server Agent v2.5.2</a></code> <code class="changelog-date">2024년 02월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server-agent-v252-2024%EB%85%84-02%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="server-agent-v252-2024년-02월-13일에 대한 직접 링크" title="server-agent-v252-2024년-02월-13일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> 윈도우 운영체제의 이벤트 로그 중 원하는 조건에 부합하는 건을 와탭 로그로 수집 가능</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v254-2024년-03월-11일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_4">Server Agent v2.5.4</a></code> <code class="changelog-date">2024년 03월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#server-agent-v254-2024%EB%85%84-03%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="server-agent-v254-2024년-03월-11일에 대한 직접 링크" title="server-agent-v254-2024년-03월-11일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v254-2024년-03월-11일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_4">Server Agent v2.5.4</a></code> <code class="changelog-date">2024년 03월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server-agent-v254-2024%EB%85%84-03%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="server-agent-v254-2024년-03월-11일에 대한 직접 링크" title="server-agent-v254-2024년-03월-11일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> 서버 시간 동기화 명령인 <code>ntpq -p</code> 결과를 통해 시계열로 모니터링하는 기능 추가</li>
 </ul></div></div></details>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>AIX 설치에 대한 자세한 내용은 <a href="https://docs.whatap.io/server/server-os/server-aix" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p></div></div>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Kubernetes</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 새로운 기능인 <strong>컨트롤 플레인 모니터링</strong>, <em><strong>쿠버네티스 에이전트 목록</strong></em>, <em><strong>Deployment 목록</strong></em>, 그리고 개편된 기능인 <em><strong>Pod 시작 분석</strong></em>과 <em><strong>오브젝트 매니페스트</strong></em>, 아울러 새로 추가된 <strong>Helm</strong> 차트 설치 지원 등에 대해서 소개합니다.</p>
 <p>와탭 쿠버네티스 모니터링은 이번 1분기에 새롭게 <strong>컨트롤 플레인 모니터링</strong>을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 <em><strong>kube-apiserver 대시보드</strong></em> 및 <em><strong>kube-apiserver 메트릭스 조회</strong></em> 기능이 추가되었습니다.</p>
 <p><em><strong>kube-apiserver 대시보드</strong></em>는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. <em><strong>kube-apiserver 메트릭스 조회</strong></em>를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다.</p>
@@ -488,7 +488,7 @@
 </ul>
 <!-- -->
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="로그">로그​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#%EB%A1%9C%EA%B7%B8" class="hash-link" aria-label="로그​에 대한 직접 링크" title="로그​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="로그">로그​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EB%A1%9C%EA%B7%B8" class="hash-link" aria-label="로그​에 대한 직접 링크" title="로그​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">쿠버네티스 이벤트</span>: 프로젝트 단위로 쿠버네티스 이벤트에 대한 조회와 검색 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -501,11 +501,11 @@
 </li>
 </ul>
 </div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v156-2024년-02월-23일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/kubernetes/kubernetes-1_5_6">Kubernetes Agent v1.5.6</a></code> <code class="changelog-date">2024년 02월 23일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#kubernetes-agent-v156-2024%EB%85%84-02%EC%9B%94-23%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v156-2024년-02월-23일에 대한 직접 링크" title="kubernetes-agent-v156-2024년-02월-23일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v156-2024년-02월-23일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/kubernetes/kubernetes-1_5_6">Kubernetes Agent v1.5.6</a></code> <code class="changelog-date">2024년 02월 23일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#kubernetes-agent-v156-2024%EB%85%84-02%EC%9B%94-23%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v156-2024년-02월-23일에 대한 직접 링크" title="kubernetes-agent-v156-2024년-02월-23일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 볼륨</span> 메뉴에서 MountType 속성을 조회하는 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v157-2024년-03월-07일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/kubernetes/kubernetes-1_5_7">Kubernetes Agent v1.5.7</a></code> <code class="changelog-date">2024년 03월 07일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#kubernetes-agent-v157-2024%EB%85%84-03%EC%9B%94-07%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크" title="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v157-2024년-03월-07일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/kubernetes/kubernetes-1_5_7">Kubernetes Agent v1.5.7</a></code> <code class="changelog-date">2024년 03월 07일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#kubernetes-agent-v157-2024%EB%85%84-03%EC%9B%94-07%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크" title="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> whatap-node-helper는 노드 디스크 및 컨테이너의 이미지, 성능 데이터를 수집합니다. 해당 컨테이너의 로깅 및 설정 기능을 추가해 디버깅과 문제가 발생할 경우 해당 기능에 대한 옵션 처리가 가능합니다.</li>
 </ul></div></div></details>
@@ -527,7 +527,7 @@
 </li>
 </ul></div></div>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Database</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <strong>Redis</strong>와 <strong>MongoDB</strong> 상품 <code class="my">V2</code> 출시에 대해 소개합니다.</p>
 <p>와탭 <code>Database</code> 상품군이  <code class="my">V2</code>로 전환되고 있습니다. 기존 <strong>PostgreSQL</strong>과 <strong>MySQL</strong>에 뒤이어 이번 1분기에는 <strong>Redis</strong>와 <strong>MongoDB</strong> <code class="my">V2</code> 서비스가 시작되었습니다. <code class="my">V2</code>는 전반적으로 차트 및 수집 기능이 강화되었습니다.</p>
 <p><img decoding="async" loading="lazy" alt="데이터베이스 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-db-9736874a75406ed11ee29e0f828baa55.png" width="772" height="484" class="img_ev3q"></p>
@@ -594,7 +594,7 @@
 </li>
 </ul>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql">PostgreSQL / MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#postgresql--mysql" class="hash-link" aria-label="PostgreSQL / MySQL​에 대한 직접 링크" title="PostgreSQL / MySQL​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql">PostgreSQL / MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#postgresql--mysql" class="hash-link" aria-label="PostgreSQL / MySQL​에 대한 직접 링크" title="PostgreSQL / MySQL​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 목록</span> 메뉴에서 에이전트 업데이트 안내 문구 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -612,7 +612,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴의 기능 개편 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="posgresql">PosgreSQL<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#posgresql" class="hash-link" aria-label="PosgreSQL에 대한 직접 링크" title="PosgreSQL에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="posgresql">PosgreSQL<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#posgresql" class="hash-link" aria-label="PosgreSQL에 대한 직접 링크" title="PosgreSQL에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 다음 메뉴 경로에서 <b>column</b>, <b>index</b> 구성을 확인할 수 있는 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -636,7 +636,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 디자인 개선 및 설치 안내 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#mysql" class="hash-link" aria-label="MySQL에 대한 직접 링크" title="MySQL에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#mysql" class="hash-link" aria-label="MySQL에 대한 직접 링크" title="MySQL에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">데이터베이스 사이즈</span> 메뉴의 <span class="uitext">테이블 사이즈 (TOP 50)</span> 테이블에서 <span class="uitext">TABLENAME</span> 컬럼 항목을 클릭하면 <b>column</b>, <b>index</b> 구성을 확인할 수 있는 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class="changelog-service">Service 2.2.0​</code></a></code></p>
@@ -653,7 +653,7 @@
 </ul>
 <!-- -->
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="redis">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#redis" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="redis">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#redis" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Redis 버전에 따라 다른 <em>uid.sh</em> 실행 명령어에 대한 설명 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class="changelog-service">Service 2.2.0​</code></a></code></p>
@@ -665,7 +665,7 @@
 <!-- -->
 <!-- -->
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#mongodb" class="hash-link" aria-label="MongoDB​에 대한 직접 링크" title="MongoDB​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="MongoDB​에 대한 직접 링크" title="MongoDB​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">데이터베이스 사이즈</span> 메뉴의 UI 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
@@ -675,50 +675,50 @@
 </li>
 </ul></div></div></details>
 <details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q">
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1618-2024년-01월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_18">DBX v1.6.18</a></code> <code class="changelog-date">2024년 01월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v1618-2024%EB%85%84-01%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="dbx-v1618-2024년-01월-25일에 대한 직접 링크" title="dbx-v1618-2024년-01월-25일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1618-2024년-01월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_18">DBX v1.6.18</a></code> <code class="changelog-date">2024년 01월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1618-2024%EB%85%84-01%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="dbx-v1618-2024년-01월-25일에 대한 직접 링크" title="dbx-v1618-2024년-01월-25일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알람 원복을 위한 stateful 추가</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="redis">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#redis" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="redis">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#redis" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> Redis autoscale 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1623-2024년-02월-20일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_23">DBX v1.6.23</a></code> <code class="changelog-date">2024년 02월 20일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v1623-2024%EB%85%84-02%EC%9B%94-20%EC%9D%BC" class="hash-link" aria-label="dbx-v1623-2024년-02월-20일에 대한 직접 링크" title="dbx-v1623-2024년-02월-20일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1623-2024년-02월-20일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_23">DBX v1.6.23</a></code> <code class="changelog-date">2024년 02월 20일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1623-2024%EB%85%84-02%EC%9B%94-20%EC%9D%BC" class="hash-link" aria-label="dbx-v1623-2024년-02월-20일에 대한 직접 링크" title="dbx-v1623-2024년-02월-20일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 테이블 레이아웃 실시간 조회 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="dbx-v1630-2024년-02월-29일에 대한 직접 링크" title="dbx-v1630-2024년-02월-29일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="dbx-v1630-2024년-02월-29일에 대한 직접 링크" title="dbx-v1630-2024년-02월-29일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직접 링크" title="dbx-v1633-2024년-03월-13일에 대한 �직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직접 링크" title="dbx-v1633-2024년-03월-13일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.sh</em> 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1635-2024년-03월-15일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_35">DBX v1.6.35</a></code> <code class="changelog-date">2024년 03월 15일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v1635-2024%EB%85%84-03%EC%9B%94-15%EC%9D%BC" class="hash-link" aria-label="dbx-v1635-2024년-03월-15일에 대한 직접 링크" title="dbx-v1635-2024년-03월-15일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql-1">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#postgresql-1" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1635-2024년-03월-15일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_35">DBX v1.6.35</a></code> <code class="changelog-date">2024년 03월 15일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1635-2024%EB%85%84-03%EC%9B%94-15%EC%9D%BC" class="hash-link" aria-label="dbx-v1635-2024년-03월-15일에 대한 직접 링크" title="dbx-v1635-2024년-03월-15일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql-1">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#postgresql-1" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.bat</em> 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024년-03월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024년 03월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#dbx-v170-2024%EB%85%84-03%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="dbx-v170-2024년-03월-25일에 대한 직접 링크" title="dbx-v170-2024년-03월-25일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#mongodb" class="hash-link" aria-label="MongoDB​에 대한 직접 링크" title="MongoDB​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024년-03월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024년 03월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v170-2024%EB%85%84-03%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="dbx-v170-2024년-03월-25일에 대한 직접 링크" title="dbx-v170-2024년-03월-25일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="MongoDB​에 대한 직접 링크" title="MongoDB​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> MongoDB <code class="my">V2</code> 추가</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="redis-1">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#redis-1" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="redis-1">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#redis-1" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> Redis <code class="my">V2</code> 추가</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Browser</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>사용자 세션 분석</strong></em> 기능 및 <em><strong>사용자 정의 이벤트 수집 기능</strong></em>을 소개합니다.</p>
 <p>이번 1분기에 새롭게 제공하는 <em><strong>사용자 세션 분석</strong></em> 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다.</p>
 <p><em><strong>사용자 세션 로그 검색</strong></em>, <em><strong>AJAX 히트맵</strong></em>과 <em><strong>페이지 로드 히트맵</strong></em>을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 <em><strong>AJAX 히트맵</strong></em>과 <em><strong>페이지 로드 히트맵</strong></em>에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다.</p>
@@ -750,7 +750,7 @@
 <p><code class="Feature">Feature</code> 사용자 세션 로그를 검색할 수 있는 <span class="uitext">사용자 세션 로그 검색</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v134-2024년-02월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_4">Browser Agent v1.3.4</a></code> <code class="changelog-date">2024년 02월 19일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#browser-agent-v134-2024%EB%85%84-02%EC%9B%94-19%EC%9D%BC" class="hash-link" aria-label="browser-agent-v134-2024년-02월-19일에 대한 직접 링크" title="browser-agent-v134-2024년-02월-19일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v134-2024년-02월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_4">Browser Agent v1.3.4</a></code> <code class="changelog-date">2024년 02월 19일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#browser-agent-v134-2024%EB%85%84-02%EC%9B%94-19%EC%9D%BC" class="hash-link" aria-label="browser-agent-v134-2024년-02월-19일에 대한 직접 링크" title="browser-agent-v134-2024년-02월-19일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 페이지 로드, AJAX 이벤트 발생 시 <b>Network Information API</b>의 다음 지표를 추가 수집</p>
@@ -762,7 +762,7 @@
 <p><code class="Feature">Feature</code> Content Security Policy(CSP) 에러 수집 기능 추가</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v135-2024년-03월-21일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_5">Browser Agent v1.3.5</a></code> <code class="changelog-date">2024년 03월 21일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#browser-agent-v135-2024%EB%85%84-03%EC%9B%94-21%EC%9D%BC" class="hash-link" aria-label="browser-agent-v135-2024년-03월-21일에 대한 직접 링크" title="browser-agent-v135-2024년-03월-21일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v135-2024년-03월-21일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_5">Browser Agent v1.3.5</a></code> <code class="changelog-date">2024년 03월 21일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#browser-agent-v135-2024%EB%85%84-03%EC%9B%94-21%EC%9D%BC" class="hash-link" aria-label="browser-agent-v135-2024년-03월-21일에 대한 직접 링크" title="browser-agent-v135-2024년-03월-21일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 사용자 정의 이벤트 수집 인터페이스 추가</p>
@@ -772,7 +772,7 @@
 </li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기에 네트워크 간의 혼잡 및 장애를 파악하고 사용자의 네트워크 성능 개선을 위해 프로세스의 네트워크 정보를 수집하는 <strong>네트워크 성능 모니터링</strong>(<strong>Network Performance Monitoring</strong>) 상품이 정식으로 출시되었습니다.</p>
 <p><img decoding="async" loading="lazy" alt="네트워크 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-network-03e52d28329611577b24b6bab5268f43.png" width="972" height="984" class="img_ev3q"></p>
 <p>최근 네트워크 시장은 클라우드와 가상화라는 큰 틀에서 성장하고 있습니다. 기존 장비 중심의 네트워크 모니터링 뿐만 아니라 작업을 수행하는 프로세스가 중요한 모니터링 대상이 되고 있습니다. 와탭 네트워크 성능 모니터링을 통해 프로세스 단위의 네트워크 지표를 안정적으로 모니터링해 보세요.</p>
@@ -799,7 +799,7 @@
 </ul></div></div>
 <br>
 <!-- -->
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary/#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 개편된 <strong>로그 검색 필터 기능</strong>을 소개합니다.</p>
 <p><em><strong>로그 검색</strong></em> 및 <em><strong>라이브 테일</strong></em> 메뉴 내 <strong>로그 검색 필터 기능</strong>이 개편되었습니다. 검색 값 입력 시 안내 가이드 UI를 통해 지원하는 검색 문법을 확인할 수 있고, 키보드 입력으로 태그를 생성 및 수정하고 연산자를 클릭해 수정할 수 있는 기능이 추가되었습니다.</p>
 <p>또한 에이전트 옵션이 설정된 경우 로그 레벨(<span class="logwr">WARN</span>, <span class="loger">ERROR</span>, <span class="logft">FATAL</span>)을 수집해 로그 목록 왼쪽에서 해당 기준 색상을 표시하는 기능이 추가되었습니다.</p>
@@ -833,8 +833,8 @@
         </item>
         <item>
             <title><![CDATA[와탭 23년 4분기 안내]]></title>
-            <link>https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/</link>
-            <guid>https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/</guid>
+            <link>https://docs.whatap.io/whatap-docs/blog/2023-4q-summary</link>
+            <guid>https://docs.whatap.io/whatap-docs/blog/2023-4q-summary</guid>
             <pubDate>Mon, 20 May 2024 15:20:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
@@ -866,7 +866,7 @@
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
 <br>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>공통</code> 부분의 주목할만한 신규 기능 및 변경 사항으로 와탭 <strong>모바일 앱</strong>의 출시, 화면 개선 사항 및 정비 계획 <code class="my">V2</code> 제공에 대해 소개합니다.</p>
 <p>이번 4분기에 와탭 <strong>모바일 앱</strong>이 새롭게 출시되었습니다. 앱을 통해 와탭 모니터링 서비스 <em><strong>대시보드</strong></em> 주요 차트를 확인하거나 실시간으로 알림을 받을 수 있습니다. 또한 OTP 기능을 활용해 로그인 시 2차 인증 도구로 활용할 수 있습니다. 향후 업데이트를 통해 지원 범위를 확대할 예정입니다.</p>
 <p><img decoding="async" loading="lazy" alt="모바일 앱 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-mobile-app-1998f2c8392a0727e39e614c8efe46b8.png" width="606" height="596" class="img_ev3q"></p>
@@ -875,7 +875,7 @@
 <p>기존 <em><strong>정비 계획</strong></em>을 개편한 신규 <em><strong>정비 계획</strong></em> <code class="my">V2</code>를 제공합니다. 신규 <em><strong>정비 계획</strong></em>을 통해 에이전트별로 정비 계획을 추가할 수 있고, 서버 프로젝트에서도 반복 옵션을 사용할 수 있습니다. 다만 기존 정비 계획과 신규 정비 계획은 호환되지 않습니다.</p>
 <p><img decoding="async" loading="lazy" alt="정비 계획 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-maintenance-plan-1a6d06f70a30261113e20bbd695c2bda.png" width="808" height="496" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2023년 4분기 공통 부분의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
-<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="flex-보드">Flex 보드​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#flex-%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Flex 보드​에 대한 직접 링크" title="Flex 보드​에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="flex-보드">Flex 보드​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#flex-%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Flex 보드​에 대한 직접 링크" title="Flex 보드​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> Apdex 위젯에서 선택할 수 있는 차트 종류 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
@@ -884,23 +884,23 @@
 <p><code class="Feature">Feature</code> 시리즈 타입의 위젯에 보조 테이블을 설정한 경우 테이블의 컬럼 노출을 변경할 수 있는 UI 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="분석">분석​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EB%B6%84%EC%84%9D" class="hash-link" aria-label="분석​에 대한 직접 링크" title="분석​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="분석">분석​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EB%B6%84%EC%84%9D" class="hash-link" aria-label="분석​에 대한 직접 링크" title="분석​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">메트릭스 차트</span> 메뉴에서 활성화된 모든 위젯을 닫을 수 있는 버튼 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 제목 외에도 메시지 필드에 대한 검색 기능 지원 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Changed">Changed</code> <span class="uitext">에이전트 설정</span> 메뉴에서 사용자 편의성을 위해 옵션 목록 간소화, <span class="uitext">옵션 작성</span> 섹션의 왼쪽 목록에서 적용된 옵션의 상위 카테고리 분류를 제거하고 최종 옵션 항목만 보이도록 수정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="정비-계획">정비 계획​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EC%A0%95%EB%B9%84-%EA%B3%84%ED%9A%8D" class="hash-link" aria-label="정비 계획​에 대한 직접 링크" title="정비 계획​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="정비-계획">정비 계획​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EC%A0%95%EB%B9%84-%EA%B3%84%ED%9A%8D" class="hash-link" aria-label="��정비 계획​에 대한 직접 링크" title="정비 계획​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">정비 계획</span> 메뉴의 기능 개선 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이용-내역">이용 내역​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EC%9D%B4%EC%9A%A9-%EB%82%B4%EC%97%AD" class="hash-link" aria-label="이용 내역​에 대한 직접 링크" title="이용 내역​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이용-내역">이용 내역​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EC%9D%B4%EC%9A%A9-%EB%82%B4%EC%97%AD" class="hash-link" aria-label="이용 내역​에 대한 직접 링크" title="이용 내역​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 다음 메뉴에서 KRW를 기준으로 JPY, USD 환율에 따라 금액 및 환율 업데이트 날짜 표시 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
@@ -912,7 +912,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">청구서 미리보기</span> 메뉴에서 사용량 가리기 옵션 추가 및 금액 표시 개선 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="user-interface">User Interface​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#user-interface" class="hash-link" aria-label="User Interface​에 대한 직접 링크" title="User Interface​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="user-interface">User Interface​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#user-interface" class="hash-link" aria-label="User Interface​에 대한 직접 링크" title="User Interface​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 사이드 바 너비 조정 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></p>
@@ -924,7 +924,7 @@
 </div></div></details>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
 <li>
-<p>모바일 앱에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/mobile-app/">다음 문서</a>를 참조하세요. 링크를 선택하거나 QR 코드를 스캔해 모바일 앱을 다운로드하세요.</p>
+<p>모바일 앱에 대한 자세한 내용은 <a href="https://docs.whatap.io/mobile-app">다음 문서</a>를 참조하세요. 링크를 선택하거나 QR 코드를 스캔해 모바일 앱을 다운로드하세요.</p>
 <table><thead><tr><th style="text-align:center"><a href="https://apps.apple.com/us/app/whatap-mobile/id6450067434" target="_blank" rel="noopener noreferrer">iOS</a></th><th style="text-align:center"><a href="https://play.google.com/store/apps/details?id=io.whatap.lion" target="_blank" rel="noopener noreferrer">Android</a></th></tr></thead><tbody><tr><td style="text-align:center"><img decoding="async" loading="lazy" alt="QR" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQMAAACEqAqfAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC60lEQVR4nO3dQXLjIBCFYVSz8DJH8FF0NOloOoqPkKUXLjHTTQMN0aQqKZyRa/63wgI+ZQWIIDsEQgghJ841dtlKVXvhLX16SPnSd3rHwsLCwnqK9Qg1k3T9FeOaut7k2iwlubDLJ638Y7lOYcHCwsLCeg1rzjPAZFOF1dbKNfer1jV1umNhYWFh/aCVx/t+8b+X2QELCwsL619ZOt7H0rydAOI35g4sLCwsrJNYJXnuiMnSlBtpvr6fg4WFhYX1fatLu77XycCG9Ek2zrPVBgsLCwvrGdZxFlc7S+M11Duvn3TEwsLCwjqpdY01Oj2UclNpZ1d0MllkMpF5RJ8GLhXHwsLCwhpt5SW8ZU5d6402KS09LuXdujT7OVhYWFhYA63cXKLjvW6cv8Um5VB43YO5hT5YWFhYWCe3NHZhTl1DesfTH2wJZX0f3cGWw2cFLCwsLKwRluWSmufxfonHuZUOtgcT3ZMBFhYWFtZg6yqft1Qb3evxoYz3mkP873swWFhYWFjns7T5pW21Bn+jS9/1Xiq7uQMLCwsLa6yVm5dL+s7Pe3sjj5fy3lZiYWFhYZ3fstT9nHfnav96VlHz+X4OFhYWFtYYq/7rsy7hg/tuLL3R4jbky9PA7l4AxcLCwsJ6mmWjdn3nJ5b38Muye5IxXicA24PZXU8sLCwsrBewbDbo1vTWYpbymtt3VrcHg4WFhYU13NJRO7q03ymuXetv85Ts7WFzLCwsLKzB1kHq+UJdgm9S9hvna7C/ogYLCwsL6+yWv6LZXHPNnJvnDZpV1vTtxPJRx8LCwsIaYT1cv8mdY2kql8ayyrwH0zwrYGFhYWGNtebUyH4/ra7J2xzvwdyPz8FgYWFhYb2QdQs5ZQ8mRyrrSRcsLCwsrJ+zNNbLV2rWtKavWa0lFhYWFtYTrJI63tvXfge37J7sn5vRnXTZxMXCwsLCegWrS507ygWN/RDEQ9x76vnxnR8sLCwsrJEWIYSQ/yC/Ad628qx4qX+OAAAAAElFTkSuQmCC" width="600" height="600" class="img_ev3q"></td><td style="text-align:center"><img decoding="async" loading="lazy" alt="QR" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQMAAACEqAqfAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEUlEQVR4nO3bQW7jMAyFYQFZZDlH8FFyNPtoPoqPkGUXBTiRKFGk3RYoMIth8L/NjGzpc1eEKDulEEIIeWWVkO11aZGn3hvDU+rdW7z0iYWFhZXc2oulLn602fe4+F5nK615WXPZHQsLC+sNrKWtsNk21Cy+kO5zOGryEwsLC+v9rEe43fJHPtTSu6JDLCwsrDe2Tou1rrYt55j8mxqNhYWFlcayaOU8mtWG0meXOTzGk+YyLCwsLCxvhUzr5ouynWO6uz5YWFhYua1vc5t0mftVacPfBgsLC+s/t2Zd/ZybSndSuZfayofOvlzLLBYWFlZ+y42V7g22Zhn0PNZ03/os4+/AwsLCSmyVXhtD7CVO6XtMyxdbzllXsbCwsPJaI+6wsaaVyrXTLfF54XU3FhYWVn7LvuYZ+fq7x/rfUVetOT9OfxEWFhYWVpnduc4WsWZdrGTLHIbe3U45sbCwsBJba5tidTW8ptFLR3GFdG+L7mM3u5dyeT+EhYWFlc/SQup+PSPdOr3EuT5YL8XeHQsLCyunpbdlFNKtXQzfgJ/6bY0rs9fvhrCwsLCyWj/9puX09js058el38bCwsLKaO19Rd9UPnqDLX62td86+T5Zu4uFhYWV2NL0yjn7bfetzzGnzQfbMPbuWFhYWFhzth1c1ti3Pg99yhfD+s9ezr07FhYWVk6r1kaZe846+zlo6XdDniVsbmPvjoWFhZXZ6hm3rVnX9CeNPaaruudzACwsLKzM1ukXL5djTdtULvKcwxrfb2NhYWHltnoLvb0uLWMXOY8ie5ndrN+22JOwsLCwEluX1NnhNY3RY7FtKldfZrGwsLASW6uEhMqpdKirxW9Iz+eWWFhYWFjzaLLE2e5bHyvZ8yEf/u+IvTsWFhZWVssWnw4uax5+scb91Gbvw2/OAbCwsLDyWuKb9XG3ZSujle9rtZXHwsLCektLRoOtcaeeo/3uL8MDjYWFhZXaslzqathyKqxDGSeTP/buWFhYWGmskC1WzlVE/FfeVnX7k2ri7wyxsLCwMlqEEEL+Yf4Ckl7rw+cbI+wAAAAASUVORK5CYII=" width="600" height="600" class="img_ev3q"></td></tr></tbody></table>
 </li>
 <li>
@@ -932,7 +932,7 @@
 </li>
 </ul></div></div>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applicatoin"><code>Applicatoin</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#applicatoin" class="hash-link" aria-label="applicatoin에 대한 직접 링크" title="applicatoin에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applicatoin"><code>Applicatoin</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#applicatoin" class="hash-link" aria-label="applicatoin에 대한 직접 링크" title="applicatoin에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Application</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>히트맵</strong></em> 및 <em><strong>대시보드</strong></em> 고도화에 대해 소개합니다.</p>
 <p><em><strong>히트맵</strong></em> 고도화 작업의 일환으로 <em><strong>히트맵</strong></em> 드래그 시 <em><strong>트레이스 분석</strong></em> 창이 개편되었습니다. <em><strong>멀티 트랜잭션</strong></em> 탭에 프로젝트 필터 기능이 추가되었고 또한 이제 <em><strong>트랜잭션 로그</strong></em> 탭에서 로그 데이터 미조회 시 상황에 알맞게 안내 메시지를 출력합니다. 예를 들어 로그 데이터가 없는 경우, 에이전트 미설정으로 수집을 하지 못 한 경우, 로그 비활성화 상태인 경우를 각각 확인할 수 있습니다.</p>
 <p><em><strong>애플리케이션 대시보드</strong></em>를 개편했습니다. 시간 선택자 옵션이 추가되어 실시간 뿐 아니라 <strong>과거 데이터</strong>를 조회할 수 있습니다. 그리고 대시보드 내 사용자가 원하는대로 위젯을 추가 및 삭제할 수 있고 크기 역시 조절할 수 있습니다. 편집한 위젯의 위치, 크기, 레이아웃을 저장해 불러올 수 있는 <strong>프리셋</strong> 기능이 추가되었습니다.</p>
@@ -962,7 +962,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 프리셋 저장 시 에이전트 선택 상태까지 저장할 수 있는 옵션 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.10​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="java"><code>Java</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#java" class="hash-link" aria-label="java에 대한 직접 링크" title="java에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2219-2023년-10월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_19">Java Agent v2.2.19</a></code> <code class="changelog-date">2023년 10월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#java-agent-v2219-2023%EB%85%84-10%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="java-agent-v2219-2023년-10월-10일에 대한 직접 링크" title="java-agent-v2219-2023년-10월-10일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="java"><code>Java</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#java" class="hash-link" aria-label="java에 대한 직접 링크" title="java에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2219-2023년-10월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_19">Java Agent v2.2.19</a></code> <code class="changelog-date">2023년 10월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#java-agent-v2219-2023%EB%85%84-10%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="java-agent-v2219-2023년-10월-10일에 대한 직접 링크" title="java-agent-v2219-2023년-10월-10일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> quarkus-reactive-1.13 추적</p>
@@ -977,7 +977,7 @@
 <p><code class="Feature">Feature</code> 트랜잭션의 thread id 추적</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2220-2023년-10월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_20">Java Agent v2.2.20</a></code> <code class="changelog-date">2023년 10월 19일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#java-agent-v2220-2023%EB%85%84-10%EC%9B%94-19%EC%9D%BC" class="hash-link" aria-label="java-agent-v2220-2023년-10월-19일에 대한 직접 링크" title="java-agent-v2220-2023년-10월-19일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2220-2023년-10월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_20">Java Agent v2.2.20</a></code> <code class="changelog-date">2023년 10월 19일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#java-agent-v2220-2023%EB%85%84-10%EC%9B%94-19%EC%9D%BC" class="hash-link" aria-label="java-agent-v2220-2023년-10월-19일에 대한 직접 링크" title="java-agent-v2220-2023년-10월-19일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> apache-camel-seda-2.22 추적</p>
@@ -995,21 +995,21 @@
 <p><code class="Deprecated">Deprecated</code> Jedis, Tomcat, JMX metric 지표(<code>java_jedis</code>, <code>perfx_jmx_interval</code>, <code>perfx_tomcat_enabled</code>) 수집 중단</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2222-2023년-11월-16일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_22">Java Agent v2.2.22</a></code> <code class="changelog-date">2023년 11월 16일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#java-agent-v2222-2023%EB%85%84-11%EC%9B%94-16%EC%9D%BC" class="hash-link" aria-label="java-agent-v2222-2023년-11월-16일에 대한 직접 링크" title="java-agent-v2222-2023년-11월-16일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2222-2023년-11월-16일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_22">Java Agent v2.2.22</a></code> <code class="changelog-date">2023년 11월 16일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#java-agent-v2222-2023%EB%85%84-11%EC%9B%94-16%EC%9D%BC" class="hash-link" aria-label="java-agent-v2222-2023년-11월-16일에 대한 직접 링크" title="java-agent-v2222-2023년-11월-16일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> log4j-2.17 appender 로그 추적(log4j-2.17 버전 이상)</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2224-2023년-11월-30일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_24">Java Agent v2.2.24</a></code> <code class="changelog-date">2023년 11월 30일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#java-agent-v2224-2023%EB%85%84-11%EC%9B%94-30%EC%9D%BC" class="hash-link" aria-label="java-agent-v2224-2023년-11월-30일에 대한 직접 링크" title="java-agent-v2224-2023년-11월-30일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2224-2023년-11월-30일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_24">Java Agent v2.2.24</a></code> <code class="changelog-date">2023년 11월 30일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#java-agent-v2224-2023%EB%85%84-11%EC%9B%94-30%EC%9D%BC" class="hash-link" aria-label="java-agent-v2224-2023년-11월-30일에 대한 직접 링크" title="java-agent-v2224-2023년-11월-30일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> spring-boot-3.x 버전의 spring-security filter에서 발생하는 <code>org.springframework.security.core.AuthenticationException</code> 수집</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2225-2023년-12월-20일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_25">Java Agent v2.2.25</a></code> <code class="changelog-date">2023년 12월 20일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#java-agent-v2225-2023%EB%85%84-12%EC%9B%94-20%EC%9D%BC" class="hash-link" aria-label="java-agent-v2225-2023년-12월-20일에 대한 직접 링크" title="java-agent-v2225-2023년-12월-20일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2225-2023년-12월-20일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_25">Java Agent v2.2.25</a></code> <code class="changelog-date">2023년 12월 20일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#java-agent-v2225-2023%EB%85%84-12%EC%9B%94-20%EC%9D%BC" class="hash-link" aria-label="java-agent-v2225-2023년-12월-20일에 대한 직접 링크" title="java-agent-v2225-2023년-12월-20일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 로그 모니터링 자바애플리케이션 로그에 멀티 트랜잭션 아이디(<code>@mtid</code> 태그) 추가</li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#nodejs" class="hash-link" aria-label="nodejs에 대한 직접 링크" title="nodejs에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0483-2023년-12월-11일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_83">Node.js Agent v0.4.83</a></code> <code class="changelog-date">2023년 12월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#nodejs-agent-v0483-2023%EB%85%84-12%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0483-2023년-12월-11일에 대한 직접 링크" title="nodejs-agent-v0483-2023년-12월-11일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#nodejs" class="hash-link" aria-label="nodejs에 대한 직접 링크" title="nodejs에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0483-2023년-12월-11일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_83">Node.js Agent v0.4.83</a></code> <code class="changelog-date">2023년 12월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#nodejs-agent-v0483-2023%EB%85%84-12%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="nodejs-agent-v0483-2023년-12월-11일에 대한 직접 링크" title="nodejs-agent-v0483-2023년-12월-11일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 옵션 추가</li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#net" class="hash-link" aria-label="net에 대한 직접 링크" title="net에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v216-2023년-10월-5일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dotnet/dotnet-2_1_6">.NET Agent v2.1.6</a></code> <code class="changelog-date">2023년 10월 5일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#net-agent-v216-2023%EB%85%84-10%EC%9B%94-5%EC%9D%BC" class="hash-link" aria-label="net-agent-v216-2023년-10월-5일에 대한 직접 링크" title="net-agent-v216-2023년-10월-5일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#net" class="hash-link" aria-label="net에 대한 직접 링크" title="net에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v216-2023년-10월-5일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dotnet/dotnet-2_1_6">.NET Agent v2.1.6</a></code> <code class="changelog-date">2023년 10월 5일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#net-agent-v216-2023%EB%85%84-10%EC%9B%94-5%EC%9D%BC" class="hash-link" aria-label="net-agent-v216-2023년-10월-5일에 대한 직접 링크" title="net-agent-v216-2023년-10월-5일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> HTTP request body 추적 기능 추가</p>
@@ -1018,25 +1018,25 @@
 <p><code class="Feature">Feature</code> 사용자 로그 추적 기능 추가</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v217-2023년-10월-16일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dotnet/dotnet-2_1_7">.NET Agent v2.1.7</a></code> <code class="changelog-date">2023년 10월 16일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#net-agent-v217-2023%EB%85%84-10%EC%9B%94-16%EC%9D%BC" class="hash-link" aria-label="net-agent-v217-2023년-10월-16일에 대한 직접 링크" title="net-agent-v217-2023년-10월-16일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v217-2023년-10월-16일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dotnet/dotnet-2_1_7">.NET Agent v2.1.7</a></code> <code class="changelog-date">2023년 10월 16일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#net-agent-v217-2023%EB%85%84-10%EC%9B%94-16%EC%9D%BC" class="hash-link" aria-label="net-agent-v217-2023년-10월-16일에 대한 직접 링크" title="net-agent-v217-2023년-10월-16일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Deprecate">Deprecate</code> WCF(웹서비스) 타임아웃 시간 설정 옵션(<code>webservice_method_timeout</code>) 제거</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v220-2023년-11월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_0">.NET Agent v2.2.0</a></code> <code class="changelog-date">2023년 11월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#net-agent-v220-2023%EB%85%84-11%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="net-agent-v220-2023년-11월-10일에 대한 직접 링크" title="net-agent-v220-2023년-11월-10일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v220-2023년-11월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_0">.NET Agent v2.2.0</a></code> <code class="changelog-date">2023년 11월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#net-agent-v220-2023%EB%85%84-11%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="net-agent-v220-2023년-11월-10일에 대한 직접 링크" title="net-agent-v220-2023년-11월-10일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> 패킷 관련 메모리 관리를 효율적으로 개선하여 메모리와 CPU 사용량을 낮춤</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Server</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>서버 상세</strong></em> 및 <em><strong>이벤트 설정</strong></em> 메뉴 개선 사항을 소개합니다.</p>
 <p><em><strong>서버 상세</strong></em> 메뉴에서 차트 내 x축 표시 단위를 시간 기준으로 변경해 일자 기준 뷰의 가독성을 높였습니다.</p>
 <p><em><strong>이벤트 설정</strong></em> 메뉴 내 서버 및 프로세스 이벤트에 프로젝트 특정 멤버 또는 팀 대상으로 알림 수신 여부를 설정할 수 있는 <em><strong>이벤트 수신 태그</strong></em> 옵션이 추가되었습니다. 또한 기본 알림명을 수정할 수 있게 되었으며, 기본 알림의 경우 이제 <code>기본</code> 태그를 별도로 표시합니다.</p>
 <p>다음 개요 안내를 통해 2023년 4분기 <code>Server</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
-<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="서버-목록">서버 목록​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EC%84%9C%EB%B2%84-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="서버 목록​에 대한 직접 링크" title="서버 목록​에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="서버-목록">서버 목록​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EC%84%9C%EB%B2%84-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="서버 목록​에 대한 직접 링크" title="서버 목록​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Changed">Changed</code> <span class="uitext">서버 상세</span> 메뉴에서 <span class="uitext">프로세스</span> 테이블의 상세 화면 조회 시 <span class="uitext">디스크 I/O</span> <span class="uitext">(Bps)</span> 차트에 합계 차트선을 같이 표시하도록 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴에서 서버/프로세스 이벤트에 <span class="uitext">이벤트 수신 태그</span> 옵션 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
@@ -1045,12 +1045,12 @@
 <p><code class="Changed">Changed</code> <span class="uitext">이벤트 설정</span> 메뉴에서 기본(Default) 알림의 이름을 수정할 수 있도록 변경하고, '기본' 태그를 별도 표시하도록 수정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v247-2023년-12월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_4_7">Server Agent v2.4.7</a></code> <code class="changelog-date">2023년 12월 19일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#server-agent-v247-2023%EB%85%84-12%EC%9B%94-19%EC%9D%BC" class="hash-link" aria-label="server-agent-v247-2023년-12월-19일에 대한 직접 링크" title="server-agent-v247-2023년-12월-19일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v247-2023년-12월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_4_7">Server Agent v2.4.7</a></code> <code class="changelog-date">2023년 12월 19일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#server-agent-v247-2023%EB%85%84-12%EC%9B%94-19%EC%9D%BC" class="hash-link" aria-label="server-agent-v247-2023년-12월-19일에 대한 직접 링크" title="server-agent-v247-2023년-12월-19일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> Docker CgroupV2 모니터링 지원 추가</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Kubernetes</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>컨테이너 맵</strong></em> 개선 및 추가된 <em><strong>리소스</strong></em> 하위 목록 메뉴에 대해 소개합니다.</p>
 <!-- -->
 <p>와탭 쿠버네티스 모니터링의 <em><strong>컨테이너 맵</strong></em>은 지속적으로 고도화 작업이 이루어지고 있습니다. 이번 4분기에는 상세 보기 창에서 컨테이너 상 실행 중인 애플리케이션의 호출 흐름과 외부 호출 상태를 확인할 수 있는 <em><strong>호출 정보</strong></em> 탭이 새로 추가되었습니다.</p>
@@ -1067,7 +1067,7 @@
 <p><code class="Feature">Feature</code> 네임스페이스 프로젝트의 실험실 메뉴로 <span class="uitext">Pending Pods</span> 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="대시보드">대시보드​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="대시보드​에 대한 직접 링크" title="대시보드​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="대시보드">대시보드​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="대시보드​에 대한 직접 링크" title="대시보드​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">컨테이너 맵</span> 메뉴에서 컨테이너 정보 조회 테이블에 데이터 항목 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
@@ -1079,7 +1079,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">컨테이너 맵</span> 메뉴에서 1분간 사라진 컨테이너/Pod의 블록을 표시하는 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">에이전트 설치</span> 메뉴에서 쿠버네티스 에이전트 설치 정상 여부 확인 메시지 표시 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
@@ -1088,7 +1088,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">에이전트 설치</span> 메뉴에서 문서 가이드, 영상 가이드 링크 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="리소스">리소스​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#%EB%A6%AC%EC%86%8C%EC%8A%A4" class="hash-link" aria-label="리소스​에 대한 직접 링크" title="리소스​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="리소스">리소스​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#%EB%A6%AC%EC%86%8C%EC%8A%A4" class="hash-link" aria-label="리소스​에 대한 직접 링크" title="리소스​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">노드 상세</span> 메뉴에서 <span class="uitext">컨테이너</span> 테이블에 <span class="uitext">상태</span> 컬럼 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
@@ -1098,11 +1098,11 @@
 </li>
 </ul>
 </div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v138-2023년-10월-04일"><code class="changelog-service">Kubernetes Agent v1.3.8</code> <code class="changelog-date">2023년 10월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#kubernetes-agent-v138-2023%EB%85%84-10%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v138-2023년-10월-04일에 대한 직접 링크" title="kubernetes-agent-v138-2023년-10월-04일에 대한 직접 링크">​</a></h4><ul>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v138-2023년-10월-04일"><code class="changelog-service">Kubernetes Agent v1.3.8</code> <code class="changelog-date">2023년 10월 04일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#kubernetes-agent-v138-2023%EB%85%84-10%EC%9B%94-04%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v138-2023년-10월-04일에 대한 직접 링크" title="kubernetes-agent-v138-2023년-10월-04일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature">Feature</code> 파드(Pod) 목록 신규 개발을 위한 데이터 추가 수집(podIp, age, restartCount)</li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v141-2023년-11월-08일"><code class="changelog-service">Kubernetes Agent v1.4.1</code> <code class="changelog-date">2023년 11월 08일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#kubernetes-agent-v141-2023%EB%85%84-11%EC%9B%94-08%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v141-2023년-11월-08일에 대한 직접 링크" title="kubernetes-agent-v141-2023년-11월-08일에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v141-2023년-11월-08일"><code class="changelog-service">Kubernetes Agent v1.4.1</code> <code class="changelog-date">2023년 11월 08일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#kubernetes-agent-v141-2023%EB%85%84-11%EC%9B%94-08%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v141-2023년-11월-08일에 대한 직접 링크" title="kubernetes-agent-v141-2023년-11월-08일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature">Feature</code> 쿠버네티스의 클러스터 정보 추가</li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v142-2023년-11월-16일"><code class="changelog-service">Kubernetes Agent v1.4.2</code> <code class="changelog-date">2023년 11월 16일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#kubernetes-agent-v142-2023%EB%85%84-11%EC%9B%94-16%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v142-2023년-11월-16일에 대한 직접 링크" title="kubernetes-agent-v142-2023년-11월-16일에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v142-2023년-11월-16일"><code class="changelog-service">Kubernetes Agent v1.4.2</code> <code class="changelog-date">2023년 11월 16일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#kubernetes-agent-v142-2023%EB%85%84-11%EC%9B%94-16%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v142-2023년-11월-16일에 대한 직접 링크" title="kubernetes-agent-v142-2023년-11월-16일에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Feature">Feature</code> <code>kube_pod</code> 카테고리에 수집 데이터 추가</p>
 <ul>
@@ -1115,7 +1115,7 @@
 </li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Database</code> 상품군의 주목할 만한 신규 기능 및 변경 사항을 다음과 같이 소개합니다.</p>
 <p>이번 4분기에 <code>Database</code> 상품군 중 <strong>PostgreSQL</strong>와 <strong>MySQL</strong> 상품 <code class="my">V2</code> 서비스가 정식 서비스로 전환되었습니다. 그리고 기존 <strong>MS SQL Server</strong> 상품의 이름을 <strong>SQL Server</strong>로 변경했습니다.</p>
 <!-- -->
@@ -1142,7 +1142,7 @@
 <!-- -->
 <!-- -->
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <code class="my">V2</code> <b>MySQL</b> 프로젝트에서 <span class="uitext">통계/보고서</span> &gt; <span class="uitext">MySQL SQL 통계</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
@@ -1154,7 +1154,7 @@
 <p><code class="Feature">Feature</code>  <code class="my">V2</code> <span class="uitext">통계</span> &gt; <span class="uitext">MySQL SQL 통계</span> 메뉴에서 신규 기능 설명 모달 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.7​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <code class="my">V2</code> <b>PostgreSQL</b> 프로젝트에서 다음 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
@@ -1183,17 +1183,17 @@
 <p><code class="Feature">Feature</code>  <code class="my">V2</code> <span class="uitext">분석</span> &gt; <span class="uitext">Wait 분석</span>, <span class="uitext">세션 히스토리</span> 메뉴에서 신규 기능 설명 모달 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.7​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sql-server">SQL Server​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#sql-server" class="hash-link" aria-label="SQL Server​에 대한 직접 링크" title="SQL Server​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sql-server">SQL Server​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#sql-server" class="hash-link" aria-label="SQL Server​에 대한 직접 링크" title="SQL Server​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Changed">Changed</code> <b>MS SQL Server</b> 상품의 이름을 <b>SQL Server</b>로 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx">DBX<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#dbx" class="hash-link" aria-label="DBX에 대한 직접 링크" title="DBX에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1611-2023년-10월-4일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_11">DBX v1.6.11</a></code> <code class="changelog-date">2023년 10월 4일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#dbx-v1611-2023%EB%85%84-10%EC%9B%94-4%EC%9D%BC" class="hash-link" aria-label="dbx-v1611-2023년-10월-4일에 대한 직접 링크" title="dbx-v1611-2023년-10월-4일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="oracle">Oracle​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#oracle" class="hash-link" aria-label="Oracle​에 대한 직접 링크" title="Oracle​에 대한 직접 링크">​</a></h5>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx">DBX<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#dbx" class="hash-link" aria-label="DBX에 대한 직접 링크" title="DBX에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1611-2023년-10월-4일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_11">DBX v1.6.11</a></code> <code class="changelog-date">2023년 10월 4일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#dbx-v1611-2023%EB%85%84-10%EC%9B%94-4%EC%9D%BC" class="hash-link" aria-label="dbx-v1611-2023년-10월-4일에 대한 직접 링크" title="dbx-v1611-2023년-10월-4일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="oracle">Oracle​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#oracle" class="hash-link" aria-label="Oracle​에 대한 직접 링크" title="Oracle​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="New">New</code> 각종 ratio 지표 추가, 다음과 같이 옵션을 설정하세요.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1612-2023년-10월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_12">DBX v1.6.12</a></code> <code class="changelog-date">2023년 10월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#dbx-v1612-2023%EB%85%84-10%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1612-2023년-10월-13일에 대한 직접 링크" title="dbx-v1612-2023년-10월-13일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1612-2023년-10월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_12">DBX v1.6.12</a></code> <code class="changelog-date">2023년 10월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#dbx-v1612-2023%EB%85%84-10%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1612-2023년-10월-13일에 대한 직접 링크" title="dbx-v1612-2023년-10월-13일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li>
 <p><code class="New">New</code> Top 오브젝트 정보 수집 카테고리 추가</p>
@@ -1205,8 +1205,8 @@
 <p><code class="New">New</code> 테이블 레이아웃 실시간 조회</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1615-2023년-12월-09일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_15">DBX v1.6.15</a></code> <code class="changelog-date">2023년 12월 09일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#dbx-v1615-2023%EB%85%84-12%EC%9B%94-09%EC%9D%BC" class="hash-link" aria-label="dbx-v1615-2023년-12월-09일에 대한 직접 링크" title="dbx-v1615-2023년-12월-09일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1615-2023년-12월-09일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_15">DBX v1.6.15</a></code> <code class="changelog-date">2023년 12월 09일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#dbx-v1615-2023%EB%85%84-12%EC%9B%94-09%EC%9D%BC" class="hash-link" aria-label="dbx-v1615-2023년-12월-09일에 대한 직접 링크" title="dbx-v1615-2023년-12월-09일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <code>trx_rseg_history_len</code>(MySQL 5.7 버전 이상 지원), <code>active_transactions</code>(MySQL 5.5 버전 이상 지원) 지표 추가</p>
@@ -1217,7 +1217,7 @@
 <li>
 <p><code class="Feature">Feature</code> plan 전송 시 json 포맷 전송 추가</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos">XOS<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#xos" class="hash-link" aria-label="XOS에 대한 직접 링크" title="XOS에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v116j-2023년-10월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/xos/xos-1_1_6j">xos v1.1.6j</a></code> <code class="changelog-date">2023년 10월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#xos-v116j-2023%EB%85%84-10%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="xos-v116j-2023년-10월-13일에 대한 직접 링크" title="xos-v116j-2023년-10월-13일에 대한 직접 링크">​</a></h4>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos">XOS<a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#xos" class="hash-link" aria-label="XOS에 대한 직접 링크" title="XOS에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v116j-2023년-10월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/xos/xos-1_1_6j">xos v1.1.6j</a></code> <code class="changelog-date">2023년 10월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#xos-v116j-2023%EB%85%84-10%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="xos-v116j-2023년-10월-13일에 대한 직접 링크" title="xos-v116j-2023년-10월-13일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="New">New</code> 프로세스(process) 감시 기능 추가, 프로세스의 실행 상태를 모니터링 가능</p>
@@ -1227,13 +1227,13 @@
 </li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="url"><code>URL</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#url" class="hash-link" aria-label="url에 대한 직접 링크" title="url에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="url"><code>URL</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#url" class="hash-link" aria-label="url에 대한 직접 링크" title="url에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>URL</code> 상품의 경우 모니터링 데이터를 수집하는 간격을 선택할 수 있는 UI가 새로 추가되었습니다.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li><code class="Feature">Feature</code> URL 추가, 편집 시 <span class="uitext">수집 주기</span>를 선택할 수 있는 UI 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.3​</code></a></code></li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Browser</code> 상품의 주목할 만한 신규 기능으로 <em><strong>AJAX 히트맵</strong></em>을 소개합니다.</p>
 <p>Asynchronous JavaScript and XML(<strong>AJAX</strong>)는 비동기 방식으로 데이터를 교환해 웹 페이지를 업데이트하는 기술입니다. 사용자 경험을 개선하고 서버로의 요청을 줄이는 장점을 가진 AJAX는 JavaScript 코드로 구현되기에 모니터링이 필요합니다.</p>
 <p>와탭 <code>Browser</code> 모니터링이 제공하는 <em><strong>AJAX 히트맵</strong></em> 메뉴를 통해 시간에 따른 AJAX 이벤트의 응답 시간을 히트맵 차트로 확인할 수 있으며 각 이벤트 구간별 세부 시간 정보, AJAX 요청 URL 및 호출 페이지 정보, 에러 메시지 및 상태 코드 등의 상세 정보를 조회할 수 있습니다.</p>
@@ -1253,7 +1253,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">AJAX 히트맵</span> 메뉴 및 위젯, <span class="uitext">AJAX</span> <span class="uitext">분석</span> 기능에서 사용자 편의성을 위한 UI 개선 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v133-2023년-12월-27일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_3">Browser Agent v1.3.3</a></code> <code class="changelog-date">2023년 12월 27일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#browser-agent-v133-2023%EB%85%84-12%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="browser-agent-v133-2023년-12월-27일에 대한 직접 링크" title="browser-agent-v133-2023년-12월-27일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v133-2023년-12월-27일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_3">Browser Agent v1.3.3</a></code> <code class="changelog-date">2023년 12월 27일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#browser-agent-v133-2023%EB%85%84-12%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="browser-agent-v133-2023년-12월-27일에 대한 직접 링크" title="browser-agent-v133-2023년-12월-27일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> AJAX MTID 헤더 옵션 추가(APM 연계 기능)</p>
@@ -1272,13 +1272,13 @@
 </li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#cloud" class="hash-link" aria-label="cloud에 대한 직접 링크" title="cloud에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#cloud" class="hash-link" aria-label="cloud에 대한 직접 링크" title="cloud에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Cloud</code> 상품의 경우 프로젝트 내에서 사용자가 수행하는 상호 작용을 감지해 사용자 행동에 대한 통찰을 제공하는 <em><strong>사용자 행위</strong></em> 메뉴가 새로 추가되었습니다.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li><code class="Feature">Feature</code> <span class="uitext">사이트맵</span> &gt; <span class="uitext">사용자 행위</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary/#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-4q-summary#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 4분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항을 다음과 같이 소개합니다.</p>
 <p><em><strong>로그 검색</strong></em> 메뉴에서 로그 검색 필터 문법을 안내하는 <strong>가이드 UI</strong>가 추가되었습니다. 가이드 UI를 통해 검색 값 입력 시 지원하는 검색 문법을 확인할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/log-filter-ui1.png" alt="로그 필터 cl" width="1177" height="759"></p>
@@ -1312,8 +1312,8 @@
         </item>
         <item>
             <title><![CDATA[와탭 23년 3분기 안내]]></title>
-            <link>https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/</link>
-            <guid>https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/</guid>
+            <link>https://docs.whatap.io/whatap-docs/blog/2023-3q-summary</link>
+            <guid>https://docs.whatap.io/whatap-docs/blog/2023-3q-summary</guid>
             <pubDate>Mon, 20 May 2024 15:10:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
@@ -1352,7 +1352,7 @@
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
 <br>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>공통</code> 부분의 주목할만한 신규 기능 및 변경 사항으로 <strong>프로젝트 플렉스보드 편집</strong> 권한 추가 및 편의성 향상을 위한 개선을 소개합니다.</p>
 <p><strong>프로젝트 플렉스보드 편집</strong> 권한이 추가되어 이제 프로젝트 내 <em><strong>Flex 보드</strong></em>를 수정하기 위해서는 해당 권한이 필요합니다.</p>
 <p>그외 전반적인 편의성 향상을 위한 업데이트가 이루어졌습니다. 와탭의 서비스 버전과 상품 목록을 확인할 수 있는 <em><strong>와탭 모니터링 정보</strong></em> 메뉴가 추가되었습니다.</p>
@@ -1374,7 +1374,7 @@
 </li>
 </ul>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​에 대한 직접 링크" title="경고 알림​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">이벤트 수신 설정</span> &gt; <span class="uitext">사용자별 이벤트 수신 설정</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>
@@ -1386,11 +1386,11 @@
 <p><code class="Feature">Feature</code> <span class="uitext">이벤트 수신 설정</span> 메뉴의 <span class="uitext">사용자별 이벤트 수신 설정</span> 섹션에 접기/펼치기 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_106_x">Service 1.106.00​</a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="보고서">보고서​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EB%B3%B4%EA%B3%A0%EC%84%9C" class="hash-link" aria-label="보고서​에 대한 직접 링크" title="보고서​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="보고서">보고서​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EB%B3%B4%EA%B3%A0%EC%84%9C" class="hash-link" aria-label="보고서​에 대한 직접 링크" title="보고서​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">통합 보고서</span> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">계정 정보 관리</span> &gt; <span class="uitext">사용자 전화번호</span>, <span class="uitext">알림 수신 설정</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>
@@ -1405,7 +1405,7 @@
 <p><code class="Feature">Feature</code> <b>프로젝트 플렉스보드 편집</b> 권한 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="실험실">실험실<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EC%8B%A4%ED%97%98%EC%8B%A4" class="hash-link" aria-label="실험실에 대한 직접 링크" title="실험실에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="실험실">실험실<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EC%8B%A4%ED%97%98%EC%8B%A4" class="hash-link" aria-label="실험실에 대한 직접 링크" title="실험실에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <code>Kubernetes</code>, <code>Java</code> 상품에 <span class="uitext">사이트 맵</span>  &gt; <span class="uitext">실험실</span> &gt; <span class="uitext">Remote Access Status</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>
@@ -1414,16 +1414,16 @@
 <p><code class="New">New</code> <span class="uitext">실험실</span> 메뉴에서 <span class="uitext">통합 로그 검색기</span> 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.12</a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="��이용-내역">이용 내역<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EC%9D%B4%EC%9A%A9-%EB%82%B4%EC%97%AD" class="hash-link" aria-label="이용 내역에 대한 직접 링크" title="이용 내역에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이��용-내역">이용 내역<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EC%9D%B4%EC%9A%A9-%EB%82%B4%EC%97%AD" class="hash-link" aria-label="이용 내역에 대한 직접 링크" title="이용 내역에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">결제 정보</span> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.17</a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="user-interface">User Interface<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#user-interface" class="hash-link" aria-label="User Interface에 대한 직접 링크" title="User Interface에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="user-interface">User Interface<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#user-interface" class="hash-link" aria-label="User Interface에 대한 직접 링크" title="User Interface에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 사이드 바에서 프로젝트 이름에 프로젝트 전체 이름을 표시하는 툴팁 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applicatoin"><code>Applicatoin</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#applicatoin" class="hash-link" aria-label="applicatoin에 대한 직접 링크" title="applicatoin에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applicatoin"><code>Applicatoin</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#applicatoin" class="hash-link" aria-label="applicatoin에 대한 직접 링크" title="applicatoin에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>Application</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>트랜잭션 분석</strong></em> 기능 개편 및 <em><strong>트랜잭션 맵</strong></em> 화면 개선에 대해 소개합니다.</p>
 <p><em><strong>트랜잭션 분석</strong></em> 기능 개편이 시작되었습니다. 기존에는 <em><strong>히트맵</strong></em> 아래로 트랜잭션 목록을 불러오는 방식이었지만, 이제 <em><strong>히트맵</strong></em> 드래그 시 <em><strong>트랜잭션 분석</strong></em> 팝업창이 나타나 구간별로 해당 상세 정보를 분석하고 비교하기 수월해졌습니다. 또한 트랜잭션 목록 필터에서 에러 건만 바로 확인할 수 있는 옵션이 추가되었습니다.</p>
 <img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/release/release-note-tx-new-feature.png" alt="" class="noneborder" width="auto" height="auto">
@@ -1442,23 +1442,23 @@
 <p><code class="Changed">Changed</code> <span class="uitext">트랜잭션 분석</span> 창 에러 옵션 추가 및 기타 개선 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_108_x">Service 1.108.12</a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET​</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#net" class="hash-link" aria-label="net에 대한 직접 링크" title="net에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET​</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#net" class="hash-link" aria-label="net에 대한 직접 링크" title="net에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> <span class="uitext">분석</span> &gt; <span class="uitext">스택</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_106_x">Service 1.106.00</a></code></li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="java"><code>Java</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java" class="hash-link" aria-label="java에 대한 직접 링크" title="java에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2211-2023년-7월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_11">Java Agent v2.2.11</a></code> <code class="changelog-date">2023년 7월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2211-2023%EB%85%84-7%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="java-agent-v2211-2023년-7월-10일에 대한 직접 링크" title="java-agent-v2211-2023년-7월-10일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="java"><code>Java</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java" class="hash-link" aria-label="java에 대한 직접 링크" title="java에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2211-2023년-7월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_11">Java Agent v2.2.11</a></code> <code class="changelog-date">2023년 7월 10일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2211-2023%EB%85%84-7%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="java-agent-v2211-2023년-7월-10일에 대한 직접 링크" title="java-agent-v2211-2023년-7월-10일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> mongodb-reactive 추적</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2212-2023년-7월-21일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_12">Java Agent v2.2.12</a></code> <code class="changelog-date">2023년 7월 21일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2212-2023%EB%85%84-7%EC%9B%94-21%EC%9D%BC" class="hash-link" aria-label="java-agent-v2212-2023년-7월-21일에 대한 직접 링크" title="java-agent-v2212-2023년-7월-21일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2212-2023년-7월-21일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_12">Java Agent v2.2.12</a></code> <code class="changelog-date">2023년 7월 21일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2212-2023%EB%85%84-7%EC%9B%94-21%EC%9D%BC" class="hash-link" aria-label="java-agent-v2212-2023년-7월-21일에 대한 직접 링크" title="java-agent-v2212-2023년-7월-21일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> <b>ignore_http_method</b> 옵션 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2213-2023년-8월-8일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_13">Java Agent v2.2.13</a></code> <code class="changelog-date">2023년 8월 8일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2213-2023%EB%85%84-8%EC%9B%94-8%EC%9D%BC" class="hash-link" aria-label="java-agent-v2213-2023년-8월-8일에 대한 직접 링크" title="java-agent-v2213-2023년-8월-8일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2213-2023년-8월-8일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_13">Java Agent v2.2.13</a></code> <code class="changelog-date">2023년 8월 8일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2213-2023%EB%85%84-8%EC%9B%94-8%EC%9D%BC" class="hash-link" aria-label="java-agent-v2213-2023년-8월-8일에 대한 직접 링크" title="java-agent-v2213-2023년-8월-8일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> <b>CompletableFuture</b> 추적을 위한 hooking 옵션 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2214-2023년-8월-17일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_14">Java Agent v2.2.14</a></code> <code class="changelog-date">2023년 8월 17일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2214-2023%EB%85%84-8%EC%9B%94-17%EC%9D%BC" class="hash-link" aria-label="java-agent-v2214-2023년-8월-17일에 대한 직접 링크" title="java-agent-v2214-2023년-8월-17일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2214-2023년-8월-17일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_14">Java Agent v2.2.14</a></code> <code class="changelog-date">2023년 8월 17일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2214-2023%EB%85%84-8%EC%9B%94-17%EC%9D%BC" class="hash-link" aria-label="java-agent-v2214-2023년-8월-17일에 대한 직접 링크" title="java-agent-v2214-2023년-8월-17일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> resilience4j 추적</p>
@@ -1473,7 +1473,7 @@
 <p><code class="Feature">Feature</code> <code>java.sql.SQLException</code> 발생 시 에러 코드를 포함해 표시할 수 있는 옵션 추가</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2215-2023년-8월-31일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_15">Java Agent v2.2.15</a></code> <code class="changelog-date">2023년 8월 31일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2215-2023%EB%85%84-8%EC%9B%94-31%EC%9D%BC" class="hash-link" aria-label="java-agent-v2215-2023년-8월-31일에 대한 직접 링크" title="java-agent-v2215-2023년-8월-31일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2215-2023년-8월-31일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_15">Java Agent v2.2.15</a></code> <code class="changelog-date">2023년 8월 31일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2215-2023%EB%85%84-8%EC%9B%94-31%EC%9D%BC" class="hash-link" aria-label="java-agent-v2215-2023년-8월-31일에 대한 직접 링크" title="java-agent-v2215-2023년-8월-31일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> kafka-clients-2.4.0 추적</p>
@@ -1485,7 +1485,7 @@
 <p><code class="Feature">Feature</code> 트랜잭션에서 에러 스택 표시 기능 추가: 트랜잭션에서 여러 개의 에러 발생 시 첫번째 에러의 스택 표시</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2216-2023년-9월-8일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_16">Java Agent v2.2.16</a></code> <code class="changelog-date">2023년 9월 8일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2216-2023%EB%85%84-9%EC%9B%94-8%EC%9D%BC" class="hash-link" aria-label="java-agent-v2216-2023년-9월-8일에 대한 직접 링크" title="java-agent-v2216-2023년-9월-8일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2216-2023년-9월-8일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_16">Java Agent v2.2.16</a></code> <code class="changelog-date">2023년 9월 8일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2216-2023%EB%85%84-9%EC%9B%94-8%EC%9D%BC" class="hash-link" aria-label="java-agent-v2216-2023년-9월-8일에 대한 직접 링크" title="java-agent-v2216-2023년-9월-8일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> Java 20 지원 (자바 옵션 필요)</p>
@@ -1497,7 +1497,7 @@
 <p><code class="Feature">Feature</code> spring-boot-3.0 설정에 Lettuce 설정 포함</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2218-2023년-9월-26일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_18">Java Agent v2.2.18</a></code> <code class="changelog-date">2023년 9월 26일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#java-agent-v2218-2023%EB%85%84-9%EC%9B%94-26%EC%9D%BC" class="hash-link" aria-label="java-agent-v2218-2023년-9월-26일에 대한 직접 링크" title="java-agent-v2218-2023년-9월-26일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2218-2023년-9월-26일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_18">Java Agent v2.2.18</a></code> <code class="changelog-date">2023년 9월 26일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#java-agent-v2218-2023%EB%85%84-9%EC%9B%94-26%EC%9D%BC" class="hash-link" aria-label="java-agent-v2218-2023년-9월-26일에 대한 직접 링크" title="java-agent-v2218-2023년-9월-26일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> HttpServlet의 super를 설정하여 해당 클래스를 상속받은 클래스에서 http 서비스를 시작할 수 있는 기능 추가, 쉼표(,)를 구분자로 이용할 수 있습니다.</p>
@@ -1511,7 +1511,7 @@
 <li>
 <p><code class="Deprecated">Deprecated</code> HTTP 서비스 추적 시 <code>org.apache.catalina.filters.FilterBase</code> 클래스를 기본 추적에서 제외</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="php"><code>PHP</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#php" class="hash-link" aria-label="php에 대한 직접 링크" title="php에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="php-agent-v262-2023년-9월-13일"><code class="changelog-service">PHP Agent v2.6.2</code> <code class="changelog-date">2023년 9월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#php-agent-v262-2023%EB%85%84-9%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="php-agent-v262-2023년-9월-13일에 대한 직접 링크" title="php-agent-v262-2023년-9월-13일에 대한 직접 링크">​</a></h4><ul>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="php"><code>PHP</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#php" class="hash-link" aria-label="php에 대한 직접 링크" title="php에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="php-agent-v262-2023년-9월-13일"><code class="changelog-service">PHP Agent v2.6.2</code> <code class="changelog-date">2023년 9월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#php-agent-v262-2023%EB%85%84-9%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="php-agent-v262-2023년-9월-13일에 대한 직접 링크" title="php-agent-v262-2023년-9월-13일에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Feature">Feature</code> 대용량 프로파일 처리 옵션 추가</p>
 <ul>
@@ -1533,18 +1533,18 @@
 <li><strong>whatap.profile_zip_enabled</strong> <span class="type">Boolean</span>  기본값 <code>true</code></li>
 </ul>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#net" class="hash-link" aria-label="net에 대한 직접 링크" title="net에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v211-2023년-7월-17일"><code class="changelog-service">.NET Agent v2.1.1</code> <code class="changelog-date">2023년 7월 17일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#net-agent-v211-2023%EB%85%84-7%EC%9B%94-17%EC%9D%BC" class="hash-link" aria-label="net-agent-v211-2023년-7월-17일에 대한 직접 링크" title="net-agent-v211-2023년-7월-17일에 대한 직접 링크">​</a></h4><ul>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#net" class="hash-link" aria-label="net에 대한 직접 링크" title="net에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v211-2023년-7월-17일"><code class="changelog-service">.NET Agent v2.1.1</code> <code class="changelog-date">2023년 7월 17일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#net-agent-v211-2023%EB%85%84-7%EC%9B%94-17%EC%9D%BC" class="hash-link" aria-label="net-agent-v211-2023년-7월-17일에 대한 직접 링크" title="net-agent-v211-2023년-7월-17일에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="New">New</code> Active Stack 지원</p>
 </li>
 <li>
 <p><code class="New">New</code> 닷넷 지원환경 분석 도구 기능 추가</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v212-2023년-7월-20일"><code class="changelog-service">.NET Agent v2.1.2</code> <code class="changelog-date">2023년 7월 20일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#net-agent-v212-2023%EB%85%84-7%EC%9B%94-20%EC%9D%BC" class="hash-link" aria-label="net-agent-v212-2023년-7월-20일에 대한 직접 링크" title="net-agent-v212-2023년-7월-20일에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v212-2023년-7월-20일"><code class="changelog-service">.NET Agent v2.1.2</code> <code class="changelog-date">2023년 7월 20일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#net-agent-v212-2023%EB%85%84-7%EC%9B%94-20%EC%9D%BC" class="hash-link" aria-label="net-agent-v212-2023년-7월-20일에 대한 직접 링크" title="net-agent-v212-2023년-7월-20일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="New">New</code> WCF 지원</li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v215-2023년-9월-13일"><code class="changelog-service">.NET Agent v2.1.5</code> <code class="changelog-date">2023년 9월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#net-agent-v215-2023%EB%85%84-9%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="net-agent-v215-2023년-9월-13일에 대한 직접 링크" title="net-agent-v215-2023년-9월-13일에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v215-2023년-9월-13일"><code class="changelog-service">.NET Agent v2.1.5</code> <code class="changelog-date">2023년 9월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#net-agent-v215-2023%EB%85%84-9%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="net-agent-v215-2023년-9월-13일에 대한 직접 링크" title="net-agent-v215-2023년-9월-13일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="New">New</code> 타임아웃 시간 조절하는 <code>webservice_method_timeout</code> 옵션 추가</li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#go" class="hash-link" aria-label="go에 대한 직접 링크" title="go에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v023-2023년-9월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/go/go-0_2_3">Go Agent v0.2.3</a></code> <code class="changelog-date">2023년 9월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#go-agent-v023-2023%EB%85%84-9%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="go-agent-v023-2023년-9월-13일에 대�한 직접 링크" title="go-agent-v023-2023년-9월-13일에 대한 직접 링크">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#go" class="hash-link" aria-label="go에 대한 직접 링크" title="go에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v023-2023년-9월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/go/go-0_2_3">Go Agent v0.2.3</a></code> <code class="changelog-date">2023년 9월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#go-agent-v023-2023%EB%85%84-9%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="go-agent-v023-2023년-9월-13일에 대�한 직접 링크" title="go-agent-v023-2023년-9월-13일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 대용량 프로파일 처리 옵션 추가</p>
@@ -1555,7 +1555,7 @@
 </ul></div></div></details>
 <br>
 <!-- -->
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>Server</code> 상품의 경우 <em><strong>이벤트 설정</strong></em> 메뉴에서 기존 이벤트 설정을 현재 프로젝트에 복사할 수 있는 기능이 추가되었고, 그외 <em><strong>리소스 보드</strong></em> 메뉴 내 에이전트 상태 위젯에 위험과 경고 상태가 구분되어 표시도록 하는 등 사용자 편의성 향상을 위한 개선 작업이 이루어졌습니다.</p>
 <p>다음 개요 안내를 통해 2023년 3분기 <code>Server</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
@@ -1567,7 +1567,7 @@
 </li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>Kubernetes</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <strong>Docker PHP</strong> 설치 제공 및 새롭게 추가된 <em><strong>통합 컨테이너 맵</strong></em> 메뉴를 소개합니다.</p>
 <!-- -->
 <p>이제 Docker 컨테이너 기반으로 실행하는 <strong>PHP 애플리케이션</strong>에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징할 수 있습니다. whatap-php 패키지를 설치 후 설치 스크립트 및 컨테이너 환경변수를 설정해 해당 에이전트를 설치할 수 있습니다.</p>
@@ -1600,18 +1600,18 @@
 <p><code class="Feature">Feature</code> <span class="uitext">퍼포먼스 요약</span> 메뉴에 컨테이너 수, 파드 수 추이 차트 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x"><code class="changelog-service">Service 1.104.00​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v136-2023년-9월-25일"><code class="changelog-service">Kubernetes Agent v1.3.6</code> <code class="changelog-date">2023년 9월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#kubernetes-agent-v136-2023%EB%85%84-9%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v136-2023년-9월-25일에 대한 직접 링크" title="kubernetes-agent-v136-2023년-9월-25일에 대한 직접 링크">​</a></h4><ul>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v136-2023년-9월-25일"><code class="changelog-service">Kubernetes Agent v1.3.6</code> <code class="changelog-date">2023년 9월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#kubernetes-agent-v136-2023%EB%85%84-9%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v136-2023년-9월-25일에 대한 직접 링크" title="kubernetes-agent-v136-2023년-9월-25일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature">Feature</code> 노드 목록 개편을 위한 노드 정보(클러스터 버전, 노드 상태 등) 추가</li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v137-2023년-9월-27일"><code class="changelog-service">Kubernetes Agent v1.3.7</code> <code class="changelog-date">2023년 9월 27일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#kubernetes-agent-v137-2023%EB%85%84-9%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v137-2023년-9월-27일에 대한 직접 링크" title="kubernetes-agent-v137-2023년-9월-27일에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v137-2023년-9월-27일"><code class="changelog-service">Kubernetes Agent v1.3.7</code> <code class="changelog-date">2023년 9월 27일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#kubernetes-agent-v137-2023%EB%85%84-9%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="kubernetes-agent-v137-2023년-9월-27일에 대한 직접 링크" title="kubernetes-agent-v137-2023년-9월-27일에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature">Feature</code> 개편될 애플리케이션 목록 메뉴에서 노드 목록 연동을 위한 key 값 추가</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>Database</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <code class="my">V2</code> 서비스 시작에 대해서 소개합니다.</p>
 <p>이번 3분기에 <code>PostgreSQL</code> 상품과 <code>MySQL</code> 상품의 <code class="my">V2</code> 서비스가 시작되었습니다. <code class="my">V2</code> 서비스는 편의성 향상에 중점을 두었습니다.</p>
 <p>제품 환경별로 RDS와 XOS 탭을 분리하였고 또한 <em><strong>인스턴스 모니터링</strong></em> 메뉴를 개선했습니다. 예를 들어 액티브 세션 테이블 프리셋 저장 옵션 및 세션 상세 정보 내 Plan 조회 옵션 등이 추가되었습니다.</p>
 <p>다음 개요 안내를 통해 2023년 3분기 <code>Database</code> 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
-<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql">PostgreSQL / MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#postgresql--mysql" class="hash-link" aria-label="PostgreSQL / MySQL​에 대한 직접 링크" title="PostgreSQL / MySQL​에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql">PostgreSQL / MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#postgresql--mysql" class="hash-link" aria-label="PostgreSQL / MySQL​에 대한 직접 링크" title="PostgreSQL / MySQL​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">Flex 보드</span> 메뉴에서 액티브 세션 테이블 위젯 정렬 변경 상태 저장 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_106_x"><code class="changelog-service">Service 1.106.00​</code></a></code></p>
@@ -1638,7 +1638,7 @@
 <p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <span class="uitext">모니터링용 계정 생성</span> 섹션에서 AWS RDS 킬 세션 <code>grant</code> 명령어 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_108_x"><code class="changelog-service">Service 1.108.18​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="New">New</code> <b>PostgreSQL</b> <code class="my">V2</code> 모니터링 서비스 시작 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x"><code class="changelog-service">Service 1.104.00​</code></a></code></p>
@@ -1650,16 +1650,16 @@
 <p><code class="Feature">Feature</code> <span class="uitext">PG SQL 통계</span> 메뉴에서 조회 기준 선택 옵션 추가(temp blocks read, temp blocks written) <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_108_x"><code class="changelog-service">Service 1.108.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#mysql" class="hash-link" aria-label="MySQL​에 대한 직접 링크" title="MySQL​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <code class="my">V2</code> 제품의 <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴 내 액티브 세션 테이블의 초기 정렬 상태 설정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_106_x"><code class="changelog-service">Service 1.106.00​</code></a></code></li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx">DBX<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#dbx" class="hash-link" aria-label="DBX에 대한 직접 링크" title="DBX에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v168-2023년-8월-18일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_8">DBX v1.6.8</a></code> <code class="changelog-date">2023년 8월 18일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#dbx-v168-2023%EB%85%84-8%EC%9B%94-18%EC%9D%BC" class="hash-link" aria-label="dbx-v168-2023년-8월-18일에 대한 직접 링크" title="dbx-v168-2023년-8월-18일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx">DBX<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#dbx" class="hash-link" aria-label="DBX에 대한 직접 링크" title="DBX에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v168-2023년-8월-18일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/dbx/dbx-1_6_8">DBX v1.6.8</a></code> <code class="changelog-date">2023년 8월 18일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#dbx-v168-2023%EB%85%84-8%EC%9B%94-18%EC%9D%BC" class="hash-link" aria-label="dbx-v168-2023년-8월-18일에 대한 직접 링크" title="dbx-v168-2023년-8월-18일에 대한 직접 링크">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일 수정</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql-v2">PostgreSQL V2​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#postgresql-v2" class="hash-link" aria-label="PostgreSQL V2​에 대한 직접 링크" title="PostgreSQL V2​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql-v2">PostgreSQL V2​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#postgresql-v2" class="hash-link" aria-label="PostgreSQL V2​에 대한 직접 링크" title="PostgreSQL V2​에 대한 직접 링크">​</a></h5>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <code>db_postgresql_used_dml</code> 카테고리 추가</p>
@@ -1668,7 +1668,7 @@
 <p><code class="Feature">Feature</code> <em>whatap.conf</em> 파일의 <code>pg_dml</code> 옵션을 <code>pg_dml_interval</code>과 <code>pg_dml_limit</code>으로 분리</p>
 </li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mysql-v2">MySQL V2​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#mysql-v2" class="hash-link" aria-label="MySQL V2​에 대한 직접 링크" title="MySQL V2​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="mysql-v2">MySQL V2​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#mysql-v2" class="hash-link" aria-label="MySQL V2​에 대한 직접 링크" title="MySQL V2​에 대한 직접 링크">​</a></h5>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <code>db_mysql_active_session</code>, <code>db_mysql_deadlock</code>, <code>db_mysql_tables</code> 카테고리 추가</p>
@@ -1676,26 +1676,26 @@
 <li>
 <p><code class="Feature">Feature</code> agentinfo를 태그 카운트로 전송</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos">XOS<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#xos" class="hash-link" aria-label="XOS에 대한 직접 링크" title="XOS에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v114-2022년-7월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/xos/xos-1_1_4">xos v1.1.4</a></code> <code class="changelog-date">2022년 7월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#xos-v114-2022%EB%85%84-7%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="xos-v114-2022년-7월-13일에 대한 직접 링크" title="xos-v114-2022년-7월-13일에 대한 직접 링크">​</a></h4>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos">XOS<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#xos" class="hash-link" aria-label="XOS에 대한 직접 링크" title="XOS에 대한 직접 링크">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v114-2022년-7월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/xos/xos-1_1_4">xos v1.1.4</a></code> <code class="changelog-date">2022년 7월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#xos-v114-2022%EB%85%84-7%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="xos-v114-2022년-7월-13일에 대한 직접 링크" title="xos-v114-2022년-7월-13일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> TCP 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v116g-2023년-7월-11일"><code class="changelog-service">xos v1.1.6g</code> <code class="changelog-date">2023년 7월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#xos-v116g-2023%EB%85%84-7%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="xos-v116g-2023년-7월-11일에 대한 직접 링크" title="xos-v116g-2023년-7월-11일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v116g-2023년-7월-11일"><code class="changelog-service">xos v1.1.6g</code> <code class="changelog-date">2023년 7월 11일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#xos-v116g-2023%EB%85%84-7%EC%9B%94-11%EC%9D%BC" class="hash-link" aria-label="xos-v116g-2023년-7월-11일에 대한 직접 링크" title="xos-v116g-2023년-7월-11일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> Log 모니터링 기능 추가</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>Browser</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>페이지로드 히트맵</strong></em> 메뉴 개선 및 <em><strong>브라우저 에러</strong></em> 에러 상세 추가에 대해 소개합니다.</p>
 <p><em><strong>페이지로드 히트맵</strong></em> 메뉴의 경우 상세 페이지로드 데이터에 운영체제 버전 및 클라이언트 IP 정보가 추가되었고 필터 기능을 새롭게 제공합니다.</p>
 <p>이제 <em><strong>브라우저 에러</strong></em> 메뉴의 <em><strong>에러 메시지 테이블</strong></em> 목록에서 에러 메시지를 선택 시 에러 메시지를 기준으로 에러와 관련한 자세한 통계 정보를 확인할 수 있습니다. 뿐만 아니라 시간대별로 발생한 에러 로그 역시 살펴볼 수 있습니다.</p>
 <img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-error-details-log.png" alt="Error log" width="1200" height="638">
 <p>다음 개요 안내를 통해 2023년 3분기 <code>Browser</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
-<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="대시보드">대시보드​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="대시보드​에 대한 직접 링크" title="대시보드​에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="대시보드">대시보드​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="대시보드​에 대한 직접 링크" title="대시보드​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">브라우저 에러</span> 메뉴에서 에러에 관한 상세 화면 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x"><code class="changelog-service">Service 1.104.00​</code></a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="분석">분석​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EB%B6%84%EC%84%9D" class="hash-link" aria-label="분석​에 대한 직접 링크" title="분석​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="분석">분석​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EB%B6%84%EC%84%9D" class="hash-link" aria-label="분석​에 대한 직접 링크" title="분석​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">페이지로드 히트맵</span> 메뉴에서 페이지 로드 상세 데이터에 운영체제 버전, 클라이언트 IP 정보 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x"><code class="changelog-service">Service 1.104.00​</code></a></code></p>
@@ -1704,11 +1704,11 @@
 <p><code class="Feature">Feature</code> <span class="uitext">페이지로드 히트맵</span> 메뉴에서 페이지 그룹 필터와 검색 필터 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_106_x"><code class="changelog-service">Service 1.106.00​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="보고서">보고서​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#%EB%B3%B4%EA%B3%A0%EC%84%9C" class="hash-link" aria-label="보고서​에 대한 직접 링크" title="보고서​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="보고서">보고서​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EB%B3%B4%EA%B3%A0%EC%84%9C" class="hash-link" aria-label="보고서​에 대한 직접 링크" title="보고서​에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">보고서</span> &gt; <span class="uitext">일간 브라우저 보고서</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x"><code class="changelog-service">Service 1.104.00​</code></a></code></li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v121-2023년-7월-6일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_2_1">Browser Agent v1.2.1</a></code> <code class="changelog-date">2023년 7월 6일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#browser-agent-v121-2023%EF%BF%BD%EB%85%84-7%EC%9B%94-6%EC%9D%BC" class="hash-link" aria-label="browser-agent-v121-2023년-7월-6일에 대한 직접 링크" title="browser-agent-v121-2023년-7월-6일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v121-2023년-7월-6일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_2_1">Browser Agent v1.2.1</a></code> <code class="changelog-date">2023년 7월 6일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#browser-agent-v121-2023%EF%BF%BD%EB%85%84-7%EC%9B%94-6%EC%9D%BC" class="hash-link" aria-label="browser-agent-v121-2023년-7월-6일에 대한 직접 링크" title="browser-agent-v121-2023년-7월-6일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 동일 에러의 경우 5초에 1번 수집하도록 설정</p>
@@ -1717,7 +1717,7 @@
 <p><code class="Feature">Feature</code> 브라우저 에이전트 파일 내부에 버전 표기</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v130-2023년-9월-6일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_0">Browser Agent v1.3.0</a></code> <code class="changelog-date">2023년 9월 6일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#browser-agent-v130-2023%EB%85%84-9%EC%9B%94-6%EC%9D%BC" class="hash-link" aria-label="browser-agent-v130-2023년-9월-6일에 대한 직접 링크" title="browser-agent-v130-2023년-9월-6일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v130-2023년-9월-6일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_0">Browser Agent v1.3.0</a></code> <code class="changelog-date">2023년 9월 6일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#browser-agent-v130-2023%EB%85%84-9%EC%9B%94-6%EC%9D%BC" class="hash-link" aria-label="browser-agent-v130-2023년-9월-6일에 대한 직접 링크" title="browser-agent-v130-2023년-9월-6일에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 페이지로드 중 이탈 시 데이터 수집</p>
@@ -1732,24 +1732,24 @@
 <p><code class="Feature">Feature</code> 페이지 로드 이벤트 처리 로직 개선(인터렉션 100ms)</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v131-2023년-9월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_1">Browser Agent v1.3.1</a></code> <code class="changelog-date">2023년 9월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#browser-agent-v131-2023%EB%85%84-9%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="browser-agent-v131-2023년-9월-25일에 대한 직접 링크" title="browser-agent-v131-2023년-9월-25일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v131-2023년-9월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_1">Browser Agent v1.3.1</a></code> <code class="changelog-date">2023년 9월 25일</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#browser-agent-v131-2023%EB%85%84-9%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="browser-agent-v131-2023년-9월-25일에 대한 직접 링크" title="browser-agent-v131-2023년-9월-25일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> <code>cookieSecure</code> 옵션 추가, 브라우저 에이전트가 브라우저 쿠키 스토리지에 user id, session id 등의 값을 저장할 때 secure 옵션을 설정할 수 있습니다.</li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#network" class="hash-link" aria-label="network에 대한 직접 링크" title="network에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기에 네트워크 간의 혼잡 및 장애를 파악하고 사용자의 네트워크 성능 개선을 위해 프로세스의 네트워크 정보를 수집하는 <strong>네트워크 성능 모니터링</strong>(<strong>Network Performance Monitoring</strong>) 상품 베타 서비스가 출시되었습니다. 상품에 대한 자세한 내용은 <a href="https://docs.whatap.io/npm/introduction" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
 <br>
 <!-- -->
 <!-- -->
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="aws-log"><code>AWS Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#aws-log" class="hash-link" aria-label="aws-log에 대한 직접 링크" title="aws-log에 대한 직접 링크">​</a></h2>
-<p>와탭 2023년 3분기 <code>AWS Log</code> 모니터링 서비스가 정식으로 출시되었습니다. S3와 Log Group 각각 리소스별로 확인하는 번거로운 과정을 거칠 필요없이 와탭 <code>AWS Log</code>는 AWS 상에서 발생하는 각종 로그를 수집해 통합 모니터링을 제공합니다. 상품에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/aws-log/introduction">다음 문서</a>를 참조하세요.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="aws-log"><code>AWS Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#aws-log" class="hash-link" aria-label="aws-log에 대한 직접 링크" title="aws-log에 대한 직접 링크">​</a></h2>
+<p>와탭 2023년 3분기 <code>AWS Log</code> 모니터링 서비스가 정식으로 출시되었습니다. S3와 Log Group 각각 리소스별로 확인하는 번거로운 과정을 거칠 필요없이 와탭 <code>AWS Log</code>는 AWS 상에서 발생하는 각종 로그를 수집해 통합 모니터링을 제공합니다. 상품에 대한 자세한 내용은 <a href="https://docs.whatap.io/aws-log/introduction">다음 문서</a>를 참조하세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q">
 <ul>
 <li><code class="New">New</code> <b>AWS Log</b> 모니터링 서비스 시작 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00​</a></code></li>
 </ul></div></div></details>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary/#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
 <p>와탭 2023년 3분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항을 다음과 같이 소개합니다.</p>
 <p>전반적으로 편의성 향상을 위한 업데이트가 이루어졌습니다. <em><strong>로그 검색</strong></em>, <em><strong>로그 트렌드</strong></em>, <em><strong>트랜잭션 로그</strong></em> 메뉴에서 키워드 하이라이팅 기능이 추가되었습니다. 또한 <em><strong>로그 검색</strong></em> 메뉴에서 인접 로그 조회 기능이 추가되었습니다.</p>
 <p>다음 개요 안내를 통해 2023년 3분기 <code>Log</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
@@ -1788,8 +1788,8 @@
         </item>
         <item>
             <title><![CDATA[새로운 기능]]></title>
-            <link>https://docs.whatap.io/whatap-docs/blog/index/</link>
-            <guid>https://docs.whatap.io/whatap-docs/blog/index/</guid>
+            <link>https://docs.whatap.io/whatap-docs/blog/index</link>
+            <guid>https://docs.whatap.io/whatap-docs/blog/index</guid>
             <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
             <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
             <content:encoded><![CDATA[
