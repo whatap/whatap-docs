@@ -324,8 +324,9 @@ function _createMdxContent(props) {
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname} = _components;
+  }, {Cmdname, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -342,19 +343,22 @@ function _createMdxContent(props) {
       }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "프로젝트 액세스 키"
       }), "를 자동으로 발급 받은 후 다음 단계를 진행합니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "tip",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["프로젝트를 생성한 다음에는 자동으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "agent_installation",
-          className: "uitext"
-        }), " 페이지로 이동합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "agent_installation",
-          className: "uitext"
-        }), " 페이지로 이동하지 않는다면 왼쪽 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "all_projects",
-          className: "uitext"
-        }), "를 선택한 다음 새로 생성한 프로젝트를 선택하세요."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "server",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["프로젝트를 생성한 다음에는 자동으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "agent_installation",
+            className: "uitext"
+          }), " 페이지로 이동합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "agent_installation",
+            className: "uitext"
+          }), " 페이지로 이동하지 않는다면 왼쪽 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "all_projects",
+            className: "uitext"
+          }), "를 선택한 다음 새로 생성한 프로젝트를 선택하세요."]
+        })
       })
     })]
   });
@@ -625,6 +629,7 @@ const assets = {
 
 };
 
+/*프로젝트 액세스 키 안내 중 첨언의 경우 서버는 운영체제 선택란에 따로 빼기*/
 
 
 
@@ -635,22 +640,30 @@ const assets = {
 
 
 
-const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
-  "value": "환경별 에이전트 설치",
-  "id": "환경별-에이전트-설치",
+const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+  "value": "운영체제 선택",
+  "id": "운영체제-선택",
+  "level": 2
+}, ..._getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
+  "value": "운영체제별 에이전트 설치",
+  "id": "운영체제별-에이전트-설치",
   "level": 2
 }, ..._common_items_sv_cpf_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_sv_lf_cpf_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_sv_w_cpf_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    admonition: "admonition",
+    em: "em",
     h2: "h2",
     p: "p",
     section: "section",
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_9__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Details, Youtube} = _components;
+  }, {Cmdname, Details, ImgLang, Youtube} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Details) _missingMdxReference("Details", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -659,11 +672,40 @@ function _createMdxContent(props) {
       ko: "ZLPbs0jnF9k",
       en: "GHev0jbMrIQ",
       ja: "GHev0jbMrIQ"
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "환경별-에이전트-설치",
-        children: "환경별 에이전트 설치"
+        id: "운영체제-선택",
+        children: "운영체제 선택"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "에이전트 설치"
+          })
+        }), " 화면에서 설치할 에이전트 운영체제를 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-select-os.png",
+        desc: "운영체제 선택"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["프로젝트를 생성한 다음에는 자동으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "agent_installation",
+            className: "uitext"
+          }), " 페이지로 이동합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "agent_installation",
+            className: "uitext"
+          }), " 페이지로 이동하지 않는다면 왼쪽 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "all_projects",
+            className: "uitext"
+          }), "를 선택한 다음 새로 생성한 프로젝트를 선택하세요."]
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "운영체제별-에이전트-설치",
+        children: "운영체제별 에이전트 설치"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
           children: "서버 에이전트 파일 구성"
@@ -671,11 +713,13 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "프로젝트 생성"
+        }), " 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "운영체제 선택"
         }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "프로젝트 액세스 키"
         }), " 확인은 공통 과정입니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["사용하는 환경에 따른 설치 방법을 다음과 같이 제공합니다. 에이전트를 설치하고 적용하기 전에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+        children: ["사용하는 운영체제에 따른 설치 방법을 다음과 같이 제공합니다. 에이전트를 설치하고 적용하기 전에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "supported-spec",
           children: "지원 환경"
         }), "을 먼저 확인하세요."]
