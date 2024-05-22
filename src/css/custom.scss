@@ -1148,6 +1148,65 @@ main {
     .faq blockquote {
       border: none;
     }
+    .faqs {
+      section {
+        &:first-of-type {
+          margin-top: 25px;
+        }
+        margin-top: 55px;
+      }
+      h3 {
+        letter-spacing: -1px;
+      }
+      p + blockquote {
+        margin-top: 35px;
+      }
+      blockquote {
+        border-left: none;
+        border-top: 1px solid var(--ifm-color-info-dark);
+        border-bottom: 1px solid var(--ifm-color-info-dark);
+        position: relative;
+        display: table;
+        margin: 10px 0 15px 0;
+        padding: 15px 0 15px 0;
+        width: 100%;
+        &::before {
+          content: "Q";
+          font-size: 40px;
+          color: #ccc;
+          font-weight: Bold;
+          display: table-cell;
+          position: relative;
+          vertical-align: middle;
+          padding-left: 5px;
+          line-height: 0;
+          top: -5px;
+          width: 30px;
+        }
+        p {
+          display: table-cell;
+          vertical-align: middle;
+          font-weight: 500;
+          font-size: 1.1rem;
+          padding-left: 15px;
+        }
+      }
+      blockquote + p {
+        position: relative;
+        &::before {
+          content: "A";
+          position: absolute;
+          font-size: 40px;
+          color: #ccc;
+          font-weight: Bold;
+          top: -5px;
+          left: -43px
+        }
+      }
+    }
+    .faqs > section > p, .faqs > section > ul, .faqs > section > ol, .faqs > section > div {
+      margin-left: 50px;
+    }
     .vpcb strong {
       font-weight: 480;
     }
@@ -2376,6 +2435,11 @@ main {
         h2::before {
           filter: invert(.5);
         }
+      }
+    }
+    .faqs {
+      blockquote {
+        background-color: #333;
       }
     }
     details.changelog {
