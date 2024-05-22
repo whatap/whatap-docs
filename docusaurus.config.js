@@ -42,7 +42,7 @@ const config = {
       },
     }
   },
-  trailingSlash: true,
+  trailingSlash: false,
   // clientModules: [
   //   require.resolve('./static/js/rum.js')
   // ],
