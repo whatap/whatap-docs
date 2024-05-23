@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[40148],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[36009],{
 
 /***/ 83490:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1461,7 +1461,7 @@ function _createMdxContent(props) {
             }), " 탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "log_read",
               className: "b600"
-            }), " 권한이 가진 멤버만 진입할 수 있습니다. 멤버 권한에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            }), " 권한을 가진 멤버만 진입할 수 있습니다. 멤버 권한에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "../project/project-structure#member-auth",
               children: "다음 문서"
             }), "를 참조하세요."]
@@ -2690,7 +2690,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 88972:
+/***/ 97961:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2723,8 +2723,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'trs-profile',
-	title: '트랜잭션 트레이싱',
+	id: 'analysis-hitmap',
+	title: '히트맵',
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	tags: [
 		'애플리케이션',
@@ -2736,16 +2736,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/trs-profile",
-  "title": "트랜잭션 트레이싱",
+  "id": "java/analysis-hitmap",
+  "title": "히트맵",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/java/trs-profile.mdx",
+  "source": "@site/docs/java/analysis-hitmap.mdx",
   "sourceDirName": "java",
-  "slug": "/java/trs-profile",
-  "permalink": "/whatap-docs/java/trs-profile",
+  "slug": "/java/analysis-hitmap",
+  "permalink": "/whatap-docs/java/analysis-hitmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/trs-profile.mdx",
+  "editUrl": "undefined/docs/java/analysis-hitmap.mdx",
   "tags": [
     {
       "label": "애플리케이션",
@@ -2770,8 +2770,8 @@ const metadata = {
   ],
   "version": "current",
   "frontMatter": {
-    "id": "trs-profile",
-    "title": "트랜잭션 트레이싱",
+    "id": "analysis-hitmap",
+    "title": "히트맵",
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "tags": [
       "애플리케이션",
@@ -2783,12 +2783,12 @@ const metadata = {
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "트랜잭션 분석하기",
-    "permalink": "/whatap-docs/java/trs-view"
+    "title": "큐브",
+    "permalink": "/whatap-docs/java/cube"
   },
   "next": {
-    "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/java/active-transactions"
+    "title": "멀티 트랜잭션 추적",
+    "permalink": "/whatap-docs/java/analysis-trace-mtx"
   }
 };
 const assets = {

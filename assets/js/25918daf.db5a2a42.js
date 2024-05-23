@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[66388],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93031],{
 
 /***/ 8320:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2396,7 +2396,7 @@ function _createMdxContent(props) {
             }), " 탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "log_read",
               className: "b600"
-            }), " 권한이 가진 멤버만 진입할 수 있습니다. 멤버 권한에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            }), " 권한을 가진 멤버만 진입할 수 있습니다. 멤버 권한에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "../project/project-structure#member-auth",
               children: "다음 문서"
             }), "를 참조하세요."]
@@ -3360,7 +3360,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 79131:
+/***/ 93051:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3400,30 +3400,31 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-hitmap-trace',
 	title: '히트맵 - 트레이스 분석',
-	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
+	description: '자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.',
 	tags: [
-		'쿠버네티스',
+		'Java',
 		'애플리케이션',
 		'히트맵',
-		'트레이스'
+		'트랜잭션',
+		'스텝'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/dashboard-hitmap-trace",
+  "id": "java/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
-  "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
-  "source": "@site/docs/kubernetes/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/kubernetes/dashboard-hitmap-trace",
+  "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
+  "source": "@site/docs/java/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/java/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/java/dashboard-hitmap-trace.mdx",
   "tags": [
     {
-      "label": "쿠버네티스",
-      "permalink": "/whatap-docs/tags/쿠버네티스"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "label": "애플리케이션",
@@ -3434,30 +3435,35 @@ const metadata = {
       "permalink": "/whatap-docs/tags/히트맵"
     },
     {
-      "label": "트레이스",
-      "permalink": "/whatap-docs/tags/트레이스"
+      "label": "트랜잭션",
+      "permalink": "/whatap-docs/tags/트랜잭션"
+    },
+    {
+      "label": "스텝",
+      "permalink": "/whatap-docs/tags/스텝"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard-hitmap-trace",
     "title": "히트맵 - 트레이스 분석",
-    "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
+    "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
     "tags": [
-      "쿠버네티스",
+      "Java",
       "애플리케이션",
       "히트맵",
-      "트레이스"
+      "트랜잭션",
+      "스텝"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
-    "title": "애플리케이션 서비스 대시보드",
-    "permalink": "/whatap-docs/kubernetes/dashboard"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/java/dashboard-active-transaction"
   },
   "next": {
-    "title": "일자별 애플리케이션 현황",
-    "permalink": "/whatap-docs/kubernetes/application-daily-stat"
+    "title": "Flex 보드",
+    "permalink": "/whatap-docs/java/flex-board"
   }
 };
 const assets = {

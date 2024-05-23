@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[59825],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52379],{
 
 /***/ 55126:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1328,7 +1328,7 @@ function _createMdxContent(props) {
             }), " 탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "log_read",
               className: "b600"
-            }), " 권한이 가진 멤버만 진입할 수 있습니다. 멤버 권한에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            }), " 권한을 가진 멤버만 진입할 수 있습니다. 멤버 권한에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "../project/project-structure#member-auth",
               children: "다음 문서"
             }), "를 참조하세요."]
@@ -2557,7 +2557,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 82556:
+/***/ 30691:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2594,7 +2594,7 @@ const frontMatter = {
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	tags: [
 		'애플리케이션',
-		'Node.js',
+		'PHP',
 		'분석',
 		'히트맵',
 		'트랜잭션'
@@ -2602,24 +2602,24 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/analysis-hitmap",
+  "id": "php/analysis-hitmap",
   "title": "히트맵",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/nodejs/analysis-hitmap.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/analysis-hitmap",
-  "permalink": "/whatap-docs/nodejs/analysis-hitmap",
+  "source": "@site/docs/php/analysis-hitmap.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/analysis-hitmap",
+  "permalink": "/whatap-docs/php/analysis-hitmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/analysis-hitmap.mdx",
+  "editUrl": "undefined/docs/php/analysis-hitmap.mdx",
   "tags": [
     {
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
     },
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "label": "분석",
@@ -2641,20 +2641,20 @@ const metadata = {
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "tags": [
       "애플리케이션",
-      "Node.js",
+      "PHP",
       "분석",
       "히트맵",
       "트랜잭션"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "큐브",
-    "permalink": "/whatap-docs/nodejs/cube"
+    "permalink": "/whatap-docs/php/cube"
   },
   "next": {
     "title": "멀티 트랜잭션 추적",
-    "permalink": "/whatap-docs/nodejs/analysis-trace-mtx"
+    "permalink": "/whatap-docs/php/analysis-trace-mtx"
   }
 };
 const assets = {
