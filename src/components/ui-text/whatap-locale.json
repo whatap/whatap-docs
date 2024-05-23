@@ -54020,10 +54020,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54496,17 +54496,17 @@
     "service_id": "DSC07906"
   },
   "DSC07907": {
-    "en": "- Click the ‘Add API Key’ button.",
-    "ja": "- 「Add API Key」ボタンをクリックします。",
+    "en": "- Click the ‘Add API Key’ button. ",
+    "ja": "- 「Add API Key」ボタンをクリックします。 ",
     "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
-    "zh": "- Click the ‘Add API Key’ button.",
+    "zh": "- Click the ‘Add API Key’ button. ",
     "service_id": "DSC07907"
   },
   "DSC07908": {
-    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2. ",
     "ja": "- ラジオボタンの「Paste Public Key」を選択し、前の手順で受信したRSA Public Keyを入力します。",
     "ko": "- 라디오 버튼의 'Paste Public Key'를 선택하여 2단계에서 받은 RSA Public Key를 입력합니다. ",
-    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2. ",
     "service_id": "DSC07908"
   },
   "DSC07909": {
@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest for each object from the past",
+    "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
