@@ -1,10 +1,11 @@
-// 기능 상세 상품 기준 재정렬
+// 오버뷰 기능 상세 정렬
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 const urls = [
+    'https://docs.whatap.io/release-notes/service/service-1_110_x',
     'https://docs.whatap.io/release-notes/service/service-1_112_x',
     'https://docs.whatap.io/release-notes/service/service-1_114_x',
 ];
@@ -39,7 +40,7 @@ async function extractFeaturesAndUpdateMDXDocument() {
                     });
 
                     if (featureDetails.length > 0) {
-                        const featureKey = `${date}_${featureName}`;
+                        const featureKey = `${featureName}_${date}`;
                         if (!allFeatures[featureKey]) {
                             allFeatures[featureKey] = { date: date, feature: featureName, versions: [] };
                         }
@@ -56,22 +57,27 @@ async function extractFeaturesAndUpdateMDXDocument() {
 }
 
 function updateOrCreateMDXDocument(newFeatures) {
-    const mdxFilePath = './crw-data/overview/_changelog_overview_c.mdx';
+    const mdxFilePath = './crw-data/overview/_changelog_overview_c_2.mdx';
     let existingFeatures = {};
 
     if (fs.existsSync(mdxFilePath)) {
         const content = fs.readFileSync(mdxFilePath, 'utf-8');
 
         content.trim().split('\n\n').forEach(line => {
-            const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
             const featureMatch = line.match(/<code class='changelog-overview'>(.*?)<\/code>/);
-            if (match && featureMatch) {
-                const date = match[1];
+            const dateMatch = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
+            if (featureMatch && dateMatch) {
                 const feature = featureMatch[1];
-                const key = `${date}_${feature}`;
+                const date = dateMatch[1];
+                const key = `${feature}_${date}`;
                 existingFeatures[key] = line;
             }
         });
+    }
+
+    if (Object.keys(newFeatures).length === 0) {
+        console.log('No new features to update or create.');
+        return;
     }
 
     const filteredNewFeatures = {};
@@ -89,25 +95,25 @@ function updateOrCreateMDXDocument(newFeatures) {
 }
 
 function createOrUpdateMDXDocument(filename, features) {
-    try {
-        let documentContent = '';
+  try {
+      let documentContent = '';
 
-        Object.keys(features).forEach(key => {
-            const feature = features[key];
-            documentContent += `- <code class='changelog-overview'>${feature.feature}</code>\n`;
-            feature.versions.forEach(version => {
-                version.details.forEach(detail => {
-                    documentContent += `${detail}<code class='changelog-service'>${version.version}</code><code class='changelog-date'>${feature.date}</code>\n`;
-                });
-            });
-            documentContent += '\n';
-        });
+      Object.keys(features).forEach(key => {
+          const feature = features[key];
+          documentContent += `- <code class='changelog-overview'>${feature.feature}</code> <code class='changelog-date'>${feature.date}</code>\n`;
+          feature.versions.forEach(version => {
+              version.details.forEach(detail => {
+                  documentContent += `  - ${detail}<code class='changelog-service'>${version.version}</code>\n`;
+              });
+          });
+          documentContent += '\n';
+      });
 
-        fs.writeFileSync(filename, documentContent);
-        console.log(`MDX Document updated or created: ${filename}`);
-    } catch (error) {
-        console.error('Error updating or creating MDX document:', error);
-    }
+      fs.writeFileSync(filename, documentContent);
+      console.log(`MDX Document updated or created: ${filename}`);
+  } catch (error) {
+      console.error('Error updating or creating MDX document:', error);
+  }
 }
 
 function sortByDateAndRewriteMDXWithBackup(filename) {
@@ -132,8 +138,8 @@ function sortByDateAndRewriteMDX(filename) {
         const content = fs.readFileSync(filename, 'utf-8');
 
         const features = content.trim().split('\n\n').map(line => {
-            const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
-            return { line, date: match ? parseDate(match[1]) : null };
+            const dateMatch = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
+            return { line, date: dateMatch ? parseDate(dateMatch[1]) : null };
         });
 
         features.sort((a, b) => b.date - a.date);
