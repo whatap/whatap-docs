@@ -2052,7 +2052,7 @@
   },
   "m5": {
     "en": "5 min",
-    "ja": "5分",
+    "ja": "5分間",
     "ko": "5분",
     "zh": "5分",
     "service_id": "_00313"
@@ -2066,28 +2066,28 @@
   },
   "1_day": {
     "en": "1 day",
-    "ja": "1日",
+    "ja": "1日間",
     "ko": "1일",
     "zh": "1天",
     "service_id": "ITM00315"
   },
   "3_day": {
     "en": "3 days",
-    "ja": "3日",
+    "ja": "3日間",
     "ko": "3일",
     "zh": "3天",
     "service_id": "_00316"
   },
   "7_day": {
     "en": "7 days",
-    "ja": "7日",
+    "ja": "7日間",
     "ko": "7일",
     "zh": "7天",
     "service_id": "_00317"
   },
   "10_day": {
     "en": "10 days",
-    "ja": "10日",
+    "ja": "10日間",
     "ko": "10일",
     "zh": "10天",
     "service_id": "_00318"
@@ -2150,14 +2150,14 @@
   },
   "10_minute": {
     "en": "10 minutes",
-    "ja": "10分",
+    "ja": "10分間",
     "ko": "10분",
     "zh": "10分钟",
     "service_id": "ITM00328"
   },
   "10min": {
     "en": "10 mins",
-    "ja": "10分",
+    "ja": "10分間",
     "ko": "10분",
     "zh": "10分钟",
     "service_id": "_00329"
@@ -2171,21 +2171,21 @@
   },
   "12h": {
     "en": "12 h",
-    "ja": "12h",
+    "ja": "12時間",
     "ko": "12시간",
     "zh": "12h",
     "service_id": "_00331"
   },
   "20_minute": {
     "en": "20 minutes",
-    "ja": "20分",
+    "ja": "20分間",
     "ko": "20분",
     "zh": "20分钟",
     "service_id": "_00332"
   },
   "24h": {
     "en": "24 h",
-    "ja": "24h",
+    "ja": "24時間",
     "ko": "24시간",
     "zh": "24h",
     "service_id": "_00333"
@@ -2206,49 +2206,49 @@
   },
   "30_minute": {
     "en": "30 minutes",
-    "ja": "30分",
+    "ja": "30分間",
     "ko": "30분",
     "zh": "30分钟",
     "service_id": "ITM00336"
   },
   "30d": {
     "en": "30 days",
-    "ja": "30d",
+    "ja": "30日間",
     "ko": "30일",
     "zh": "30d",
     "service_id": "_00337"
   },
   "30m": {
     "en": "30 mins",
-    "ja": "30m",
+    "ja": "30分間",
     "ko": "30분",
     "zh": "30m",
     "service_id": "_00338"
   },
   "30min": {
     "en": "30 mins",
-    "ja": "30分",
+    "ja": "30分間",
     "ko": "30분",
     "zh": "30分钟",
     "service_id": "_00339"
   },
   "select_30m_live": {
     "en": "last 30 minutes (Live)",
-    "ja": "最近30分(リアルタイム)",
+    "ja": "最近30分間(リアルタイム)",
     "ko": "최근 30분 (실시간)",
     "zh": "last 30 minutes (Live)",
     "service_id": "_00340"
   },
   "select_10_minutes": {
     "en": "last 10 minutes",
-    "ja": "最近10分",
+    "ja": "最近10分間",
     "ko": "최근 10분",
     "zh": "last 10 minutes",
     "service_id": "_00341"
   },
   "select_30_minutes": {
     "en": "last 30 minutes",
-    "ja": "最近30分",
+    "ja": "最近30分間",
     "ko": "최근 30분",
     "zh": "last 30 minutes",
     "service_id": "_00342"
@@ -2283,21 +2283,21 @@
   },
   "select_1_day": {
     "en": "last 1 day",
-    "ja": "最近1日",
+    "ja": "最近1日間",
     "ko": "최근 1일",
     "zh": "last 1 day",
     "service_id": "_00347"
   },
   "3d": {
     "en": "3 days",
-    "ja": "3d",
+    "ja": "3日間",
     "ko": "3일",
     "zh": "3d",
     "service_id": "_00348"
   },
   "5_minute": {
     "en": "5 minutes",
-    "ja": "5分",
+    "ja": "5分間",
     "ko": "5분",
     "zh": "5分钟",
     "service_id": "_00349"
@@ -2311,7 +2311,7 @@
   },
   "5m_count": {
     "en": "5m count",
-    "ja": "5分数",
+    "ja": "5分件数",
     "ko": "5분 건수",
     "zh": "5分钟数",
     "service_id": "_00351"
@@ -2339,14 +2339,14 @@
   },
   "6h": {
     "en": "6 h",
-    "ja": "6h",
+    "ja": "6時間",
     "ko": "6시간",
     "zh": "6h",
     "service_id": "_00355"
   },
   "7d": {
     "en": "7 d",
-    "ja": "7d",
+    "ja": "7日間",
     "ko": "7일",
     "zh": "7d",
     "service_id": "_00356"
@@ -14355,7 +14355,7 @@
   },
   "memory_total": {
     "en": "Memory total",
-    "ja": "トータルメモリ",
+    "ja": "合計メモリ",
     "ko": "Memory Total",
     "zh": "Memory Total",
     "service_id": "TTL02118"
@@ -14453,7 +14453,7 @@
   },
   "mem_total": {
     "en": "Memory total",
-    "ja": "トータルメモリ",
+    "ja": "合計メモリ",
     "ko": "Memory Total",
     "zh": "Memory Total",
     "service_id": "ITM02132"
@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54020,10 +54020,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54496,17 +54496,17 @@
     "service_id": "DSC07906"
   },
   "DSC07907": {
-    "en": "- Click the ‘Add API Key’ button.",
-    "ja": "- 「Add API Key」ボタンをクリックします。",
+    "en": "- Click the ‘Add API Key’ button. ",
+    "ja": "- 「Add API Key」ボタンをクリックします。 ",
     "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
-    "zh": "- Click the ‘Add API Key’ button.",
+    "zh": "- Click the ‘Add API Key’ button. ",
     "service_id": "DSC07907"
   },
   "DSC07908": {
-    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2. ",
     "ja": "- ラジオボタンの「Paste Public Key」を選択し、前の手順で受信したRSA Public Keyを入力します。",
     "ko": "- 라디오 버튼의 'Paste Public Key'를 선택하여 2단계에서 받은 RSA Public Key를 입력합니다. ",
-    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2. ",
     "service_id": "DSC07908"
   },
   "DSC07909": {
@@ -54945,8 +54945,8 @@
   },
   "DSC07971": {
     "en": "If you installed the WhaTap Kubernetes agent using the traditional yaml file method, a clean install is required. You can delete the existing Kubernetes agent and install via Helm chart.",
-    "ja": "既存のyamlファイルでWhaTap Kubernetesエージェントをインストールした場合は、Clean Installが必要です。既存のKubernetesエージェントを削除した後、helmチャートを通じてインストールできます。",
-    "ko": "기존 yaml 파일 방식으로 와탭 쿠버네티스 에이전트를 설치한 경우 Clean Install이 필요합니다. 기존 쿠버네티스 에이전트 삭제 후 helm 차트를 통한 설치가 가능합니다.",
+    "ja": "既存のyamlファイルでWhaTap Kubernetesエージェントをインストールした場合は、Clean Installが必要です。既存のKubernetesエージェントを削除した後、Helmチャートを通じてインストールできます。",
+    "ko": "기존 yaml 파일 방식으로 와탭 쿠버네티스 에이전트를 설치한 경우 Clean Install이 필요합니다. 기존 쿠버네티스 에이전트 삭제 후 Helm 차트를 통한 설치가 가능합니다.",
     "zh": "If you installed the WhaTap Kubernetes agent using the traditional yaml file method, a clean install is required. You can delete the existing Kubernetes agent and install via Helm chart.",
     "service_id": "DSC07971"
   },
@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest for each object from the past",
+    "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55343,10 +55343,10 @@
     "service_id": "ITM08027"
   },
   "BTN08028": {
-    "en": "Choose your operating system",
-    "ja": "オペレーティングシステムの選択",
+    "en": "Choose Operating System",
+    "ja": "OS選択",
     "ko": "운영체제 선택",
-    "zh": "Choose your operating system",
+    "zh": "Choose Operating System",
     "service_id": "BTN08028"
   },
   "TTL08029": {
@@ -55355,6 +55355,76 @@
     "ko": "기본 정보",
     "zh": "Basic Information",
     "service_id": "TTL08029"
+  },
+  "DSC08030": {
+    "en": "Execute the following command to add the WhaTap Helm repository.",
+    "ja": "次のコマンドを実行して、WhaTap Helmリポジトリを追加してください。",
+    "ko": "다음 명령어를 실행해 와탭 Helm 리포지토리를 추가하세요.",
+    "zh": "Execute the following command to add the WhaTap Helm repository.",
+    "service_id": "DSC08030"
+  },
+  "BTN08031": {
+    "en": "Re-register",
+    "ja": "再登録",
+    "ko": "재등록",
+    "zh": "Re-register",
+    "service_id": "BTN08031"
+  },
+  "BTN08032": {
+    "en": "Payment information not registered",
+    "ja": "お支払い情報未登録",
+    "ko": "결제 정보 미등록",
+    "zh": "Payment information not registered",
+    "service_id": "BTN08032"
+  },
+  "kube_pod": {
+    "en": "Pod",
+    "ja": "Pod",
+    "ko": "Pod",
+    "zh": "Pod",
+    "service_id": "TTL08033"
+  },
+  "DSC08034": {
+    "en": "The Pod's QoS Class is {qosClass}. If the Pod's schedule needs to be guaranteed, set the container resource request and limit to the same.",
+    "ja": "PodのQoSクラスは{qosClass}です。Podのスケジュールを保証する必要がある場合は、コンテナリソースのリクエストと制限を、適切に設定してください。",
+    "ko": "Pod의 QoS Class가 {qosClass}입니다. Pod의 스케줄이 보장되어야한다면 컨테이너 리소스 요청 및 제한을 동일하게 설정해주세요.",
+    "zh": "The Pod's QoS Class is {qosClass}. If the Pod's schedule needs to be guaranteed, set the container resource request and limit to the same.",
+    "service_id": "DSC08034"
+  },
+  "CNT08035": {
+    "en": " There is a preset '{presetName}'.",
+    "ja": " 「{presetName}」プリセットがあります。",
+    "ko": " '{presetName}' 프리셋이 있습니다.",
+    "zh": " There is a preset '{presetName}'.",
+    "service_id": "CNT08035"
+  },
+  "CNT08036": {
+    "en": "Do you want to make a change?",
+    "ja": "変更しますか？",
+    "ko": "변경하시겠습니까?",
+    "zh": "Do you want to make a change?",
+    "service_id": "CNT08036"
+  },
+  "NTC08037": {
+    "en": "The preset has been deleted.",
+    "ja": "プリセットが削除されました。",
+    "ko": "프리셋이 삭제되었습니다.",
+    "zh": "The preset has been deleted.",
+    "service_id": "NTC08037"
+  },
+  "NTC08038": {
+    "en": "Preset has been saved.",
+    "ja": "プリセットの保存が完了しました。",
+    "ko": "프리셋 저장이 완료되었습니다.",
+    "zh": "Preset has been saved.",
+    "service_id": "NTC08038"
+  },
+  "NTC08039": {
+    "en": "Preset changes have been saved.",
+    "ja": "プリセット変更履歴が保存されました。",
+    "ko": "프리셋 변경 내역이 저장되었습니다.",
+    "zh": "Preset changes have been saved.",
+    "service_id": "NTC08039"
   },
   "": {
     "en": "#VALUE!",
