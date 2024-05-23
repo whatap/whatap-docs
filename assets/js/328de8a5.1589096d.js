@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15440],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16173],{
 
 /***/ 90131:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -465,7 +465,7 @@ function _createMdxContent(props) {
         }), "의 호출 관계는 1 대 1 관계이므로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "topstack",
           className: "uitext"
-        }), "의 depth가 밑으로 내려갈수록 정보의 정확성이 떨어질 수 있습니다. 하위 depth에 대한 정보는 참고 용도로 사용하며 튜닝을 진행하시기 바랍니다."]
+        }), "의 depth가 밑으로 내려갈수록 정보의 정확성이 떨어질 수 있습니다. 하위 depth에 대한 정보는 참고 용도로 사용하며 튜닝을 진행하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "애플리케이션 성능 개선을 위해 최상위 스텝의 적체 비율이 높은 모듈의 병목 가능성을 검토해야 합니다. 적체 비율이 높은 모듈의 경우 작은 성능 개선도 애플리케이션 전체에 상당한 개선 효과를 가져올 수 있습니다."
       })]
@@ -848,7 +848,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 42830:
+/***/ 66596:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -870,7 +870,7 @@ const frontMatter = {
 	title: '스택',
 	description: '특정 시간대의 호출 스택의 빈도와 메소드, 트랜잭션에 대한 상세 정보를 확인할 수 있습니다.',
 	tags: [
-		'.NET',
+		'Java',
 		'애플리케이션',
 		'분석',
 		'스택'
@@ -878,20 +878,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/analysis-apm",
+  "id": "java/analysis-apm",
   "title": "스택",
   "description": "특정 시간대의 호출 스택의 빈도와 메소드, 트랜잭션에 대한 상세 정보를 확인할 수 있습니다.",
-  "source": "@site/docs/dotnet/analysis-apm.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/analysis-apm",
-  "permalink": "/whatap-docs/dotnet/analysis-apm",
+  "source": "@site/docs/java/analysis-apm.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/analysis-apm",
+  "permalink": "/whatap-docs/java/analysis-apm",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/analysis-apm.mdx",
+  "editUrl": "undefined/docs/java/analysis-apm.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "label": "애플리케이션",
@@ -912,20 +912,20 @@ const metadata = {
     "title": "스택",
     "description": "특정 시간대의 호출 스택의 빈도와 메소드, 트랜잭션에 대한 상세 정보를 확인할 수 있습니다.",
     "tags": [
-      ".NET",
+      "Java",
       "애플리케이션",
       "분석",
       "스택"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "성능 추이",
-    "permalink": "/whatap-docs/dotnet/performance-trend"
+    "permalink": "/whatap-docs/java/performance-trend"
   },
   "next": {
     "title": "큐브",
-    "permalink": "/whatap-docs/dotnet/cube"
+    "permalink": "/whatap-docs/java/cube"
   }
 };
 const assets = {

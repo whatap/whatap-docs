@@ -197,6 +197,12 @@ function _createMdxContent(props) {
                 children: "Fixed"
               }), " 위젯 삭제 팝업이 비정상적으로 닫히면 다시 열리지 않는 문제 수정"]
             }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " 반응형 대시보드가 가득찬 상태에서 그룹 위젯 하위에 위젯을 추가하면 잘못된 알림 팝업이 나타나는 문제 수정"]
+            }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "application",
