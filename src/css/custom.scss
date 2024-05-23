@@ -855,6 +855,69 @@ footer.row > div.text--right > a {
     // }
   }
 }
+// 블로그 서비스 히스토리 overview
+div.history_overview{
+  // ul > li > ul > li {
+  //   margin-top: -1px;
+  //   margin-left: 20px;
+  // }
+  ul {
+    padding-left: 18px;
+    list-style: none;
+    padding-top: 0;
+    li {
+      display: block;
+      position: relative;
+      border-left: 1px solid #a8a8a8;
+      line-height: 1.5;
+      padding-top: 0px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      margin-left: 0px;
+      &::before {
+        content: "\200b";
+        width: 15px;
+        height: 15px;
+        border: 1px solid #a8a8a8;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: -8px;
+      }
+      &::marker {
+        color: #a8a8a8;
+      }
+      &:first-of-type {
+        &::marker {
+          border-left: 1px solid #333;
+        }
+      }
+      &:last-of-type {
+        border-left: none;
+      }
+    }
+    ul {
+      border-left: none;
+      list-style: decimal;
+      padding-left: 0;
+      li {
+        &::before {
+          content: "• ";
+          border: none;
+          background-color: transparent;
+          top: -5px;
+          font-size: 130%;
+          color: #a8a8a8;
+        }
+        padding-left: 5px;
+        padding-bottom: 5px;;
+        border-left: none;
+      }
+    }
+  }
+
+}
 
 // document
 main {
@@ -1492,6 +1555,7 @@ main {
       color: #fff;
       border: none;
     }
+    // 블로그 코드
     code.changelog-service {
       background-color: rgb(177, 177, 177);
       color: #fff;
@@ -1507,7 +1571,6 @@ main {
         color: #636363;
         text-decoration: underline;
     }
-    
     code.changelog-service a:visited {
         color: #fbf9f9;
     }
@@ -1518,6 +1581,14 @@ main {
       // font-size: .6em;
       // font-size: 70%;
     }
+    code.changelog-overview {
+      background-color: rgb(208, 208, 208);
+      color: #fff;
+      // font-family: "Oleo Script";
+      border: 0.5px;
+      padding: 1px 4px 1px 4px;
+    }
+    // 블로그 코드 끝
     code.history {
       background-color: rgb(177, 177, 177);
     }
