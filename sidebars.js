@@ -4272,6 +4272,10 @@ const sidebars = {
           type: 'category',
           label: '자주 묻는 질문',
           // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
+          link: {
+            type: 'doc',
+            id: 'faq/index'
+          },
           items: [
             'faq/apm-faq',
             'faq/db-faq',

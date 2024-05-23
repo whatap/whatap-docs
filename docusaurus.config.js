@@ -628,6 +628,12 @@ const config = {
             label: '릴리스 노트',
           },
           {
+            type: 'doc',
+            docId: 'faq/index',
+            position: 'left',
+            label: 'FAQ',
+          },
+          {
             to: 'blog', label: '새로운 기능', position: 'left'
           },
           {
