@@ -1112,7 +1112,7 @@ function _php_multi_trace_MDXContent(props = {}) {
 const agent_transaction_frontMatter = {
 	id: 'agent-transaction',
 	title: '트랜잭션',
-	description: 'PHP 트랜잭션과 관련된 설정을 제공합니다.',
+	description: 'PHP 애플리케이션 내 각 트랜잭션의 성능 데이터를 에이전트가 추적하고 분석할 수 있는 설정 방법을 안내합니다. 트랜잭션의 요청 처리, 응답 시간, 자원 사용량 등을 추적하여 애플리케이션 성능을 평가합니다.',
 	tags: [
 		'PHP',
 		'트랜잭션',
@@ -1124,7 +1124,7 @@ const agent_transaction_contentTitle = undefined;
 const metadata = {
   "id": "php/agent-transaction",
   "title": "트랜잭션",
-  "description": "PHP 트랜잭션과 관련된 설정을 제공합니다.",
+  "description": "PHP 애플리케이션 내 각 트랜잭션의 성능 데이터를 에이전트가 추적하고 분석할 수 있는 설정 방법을 안내합니다. 트랜잭션의 요청 처리, 응답 시간, 자원 사용량 등을 추적하여 애플리케이션 성능을 평가합니다.",
   "source": "@site/docs/php/agent-transaction.mdx",
   "sourceDirName": "php",
   "slug": "/php/agent-transaction",
@@ -1154,7 +1154,7 @@ const metadata = {
   "frontMatter": {
     "id": "agent-transaction",
     "title": "트랜잭션",
-    "description": "PHP 트랜잭션과 관련된 설정을 제공합니다.",
+    "description": "PHP 애플리케이션 내 각 트랜잭션의 성능 데이터를 에이전트가 추적하고 분석할 수 있는 설정 방법을 안내합니다. 트랜잭션의 요청 처리, 응답 시간, 자원 사용량 등을 추적하여 애플리케이션 성능을 평가합니다.",
     "tags": [
       "PHP",
       "트랜잭션",

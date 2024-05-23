@@ -94,6 +94,10 @@ const toc = [{
   "value": "메타락 모니터링",
   "id": "메타락-모니터링",
   "level": 3
+}, {
+  "value": "로그 메뉴 접근",
+  "id": "로그-메뉴-접근",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -112,7 +116,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭 데이터베이스 모니터링 서비스 사용자들이 자주 묻는 질문을 확인해 보세요."
@@ -271,6 +276,35 @@ function _createMdxContent(props) {
             children: "# whatap.conf에 아래 설정 추가\nmetalock=1\n"
           })
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "로그-메뉴-접근",
+          children: "로그 메뉴 접근"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["프로젝트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_log",
+              className: "uitext"
+            }), " 메뉴가 보이지 않아요."]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["설정된 멤버 권한을 확인하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_log",
+            className: "uitext"
+          }), " 및 하위 메뉴들은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "log_read",
+            className: "b600"
+          }), " 권한을 가진 멤버에게만 노출됩니다. 이 권한이 있는 멤버는 해당 메뉴로 진입하여 로그를 조회할 수 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["멤버 권한 체계에 대한 자세한 설명은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../project/project-structure#project-auth",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          })
+        })]
       })]
     })]
   });
@@ -286,6 +320,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

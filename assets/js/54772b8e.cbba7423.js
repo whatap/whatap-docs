@@ -368,7 +368,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-bash",
                 metastring: "title=SH",
-                children: "curl -s http://repo.whatap.io/debian/release.gpg | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/my-repo.gpg > /dev/null\necho \"deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/\" | sudo tee\n/etc/apt/sources.list.d/whatap.list\nsudo apt-get update\n"
+                children: "curl -s http://repo.whatap.io/debian/release.gpg | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null\necho \"deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/\" | sudo tee\n/etc/apt/sources.list.d/whatap.list\nsudo apt-get update\n"
               })
             })
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {

@@ -80,6 +80,11 @@ const assets = {
 
 /*
 
+이벤트의 심각성을 평가하고 우선순위에 따라 조치를 취할 수 있습니다. 또한 ***이벤트 수신 태그 설정***을 통해 전체 프로젝트 멤버 대신 알림을 받을 대상을 지정할 수 있습니다.
+
+일시적인 상황을 구분해 보다 정확한 알림을 제공합니다. 또한 ***이벤트 수신 태그 설정***을 통해 전체 프로젝트 멤버 대신 알림을 받을 대상을 지정할 수 있습니다.*/
+/*
+
 * 프로젝트 간 또는 동일 프로젝트 내 이벤트 설정을 복사할 수 있습니다.
 
 */
@@ -347,7 +352,7 @@ function _createMdxContent(props) {
           })
         }), " 버튼 선택"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "특정 서버에 대한 전반적인 이벤트를 설정할 수 있습니다."
+        children: "특정 서버에 대한 전반적인 이벤트를 설정해 경고 알림을 받을 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server-server-event.png",
         desc: "서버 이벤트 추가 sc"
@@ -822,8 +827,30 @@ function _createMdxContent(props) {
             children: "+ 이벤트 추가"
           })
         }), " 버튼 선택"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "특정 프로세스에 대한 이벤트 정책을 설정할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["특정 프로세스에 대한 이벤트를 설정하여 경고 알림을 받을 수 있습니다. 주요 지표인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "프로세스 수"
+          })
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "프로세스 CPU"
+          })
+        }), " 사용량, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "프로세스 메모리"
+          })
+        }), " 사용량을 기준으로 조건을 지정하면 해당 프로세스가 예기치 않게 종료되거나 성능이 급격히 변동하는 경우 실시간으로 경고를 받을 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["경고 및 위험 수준, 그리고 설정한 임계치가 유지되는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "지속 시간"
+          })
+        }), "을 설정하여 이벤트의 심각성을 평가할 수 있습니다. 또한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "이벤트 수신 태그"
+          })
+        }), "를 활용해 특정 프로젝트 멤버에게 알림을 전송할 수 있습니다. 이를 통해 효율적으로 우선순위에 따른 조치를 취할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server-process-event.png",
         desc: "프로세스 이벤트 추가 sc"

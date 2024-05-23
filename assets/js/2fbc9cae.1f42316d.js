@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_5_x",
   "title": "Service 2.5.X",
-  "description": "Service 2.5.2",
+  "description": "Service 2.5.3",
   "source": "@site/docs/release-notes/service/service-2.5.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_5_x",
@@ -62,6 +62,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.5.3",
+  "id": "service-253",
+  "level": 2
+}, {
+  "value": "<code>Server</code>",
+  "id": "server",
+  "level": 3
+}, {
   "value": "Service 2.5.2",
   "id": "service-252",
   "level": 2
@@ -91,7 +99,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Server</code>",
-  "id": "server",
+  "id": "server-1",
   "level": 3
 }, {
   "value": "<code>Database</code>",
@@ -131,7 +139,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Server</code>",
-  "id": "server-1",
+  "id": "server-2",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -187,6 +195,32 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-253",
+        children: "Service 2.5.3"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 05월 23일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "server",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Server"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentInstall",
+            className: "uitext"
+          }), " 메뉴에서 Debian/Ubuntu 관련 설치 명령어의 리포지토리 경로 수정"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-252",
@@ -266,7 +300,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에서 즐겨찾기한 대시보드가 있는 상태에서 해당 메뉴를 선택하면 조직 선택이 해제되는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "server",
+          id: "server-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Server"
           })
@@ -734,7 +768,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "server-1",
+          id: "server-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Server"
           })

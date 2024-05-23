@@ -82,6 +82,10 @@ const toc = [{
   "value": "스레드 중지 버튼이 동작하지 않아요.",
   "id": "스레드-중지-버튼이-동작하지-않아요",
   "level": 3
+}, {
+  "value": "&#39;Lost Connection&#39; 메시지",
+  "id": "lost-connection-메시지",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -194,6 +198,38 @@ function _createMdxContent(props) {
           }), " 기능을 사용하면 스레드가 IO 작업을 수행 중이더라도 종료를 시도합니다. 하지만 스레드가 IO 작업을 완료하기 전까지는 중지되지 않습니다. 즉, 스레드는 중지 요청을 받아들이지만, 작업이 완료되고 다음 작업으로 넘어가기 전까지 중지되지 않습니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "이러면 스레드를 강제로 종료하는 것은 비즈니스 로직에 문제가 발생할 수 있으며, 예기치 못한 동작을 유발할 수 있기 때문에 권장하지 않습니다. 그래도 스레드를 중지해야 한다면 애플리케이션 전체를 중지한 후 재시작해야 합니다."
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "lost-connection-메시지",
+          children: "'Lost Connection' 메시지"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "트랜잭션의 트레이스 정보에서 'Lost Connection'으로 표시되고, 어떤 프로세스까지 실행되다가 종료되었는지 자세한 내용을 확인할 수 없어요."
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "PHP"
+          }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Python"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: ".NET"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Go"
+          }), " 상품의 애플리케이션 모니터링에서는 다음 에이전트 설정 옵션으로 5분(기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "30000"
+          }), ") 안에 종료되지 않는 트랜잭션의 정보를 더 이상 수집하지 않습니다. 트레이스 내역에는 'Lost Connection' 메시지를 남깁니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["5분 이상 지연되는 트랜잭션에 대한 트레이스 정보를 수집하려면 다음 옵션 값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "30000"
+          }), " 이상으로 설정하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.ini\"",
+            children: "# PHP\nwhatap.trace_active_transaction_lost_time=30000\n\n#Python, .NET, Go\ntrace_active_transaction_lost_time=30000\n"
+          })
         })]
       })]
     })]
