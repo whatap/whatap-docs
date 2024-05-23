@@ -640,7 +640,8 @@ function _python_trs_profile_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -773,8 +774,22 @@ function _python_trs_profile_createMdxContent(props) {
         }), " 형식으로 값을 사용합니다. 콤마(,) 구분자를 통하여 여러 메소드 패턴을 지정할 수 있으며 모듈에 대한 전체 클래스나, 클래스에 대한 전체 모듈은 asterisk(*)를 사용하여 추적이 가능합니다."]
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "note",
-        children: (0,jsx_runtime.jsx)(_components.p, {
-          children: "전체 모듈 추적은 오버헤드가 발생할 수 있으니 가급적 정확한 모듈명과 메소드명에 대한 사용을 권장합니다."
+        children: (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["이 옵션을 통해 등록한 메소드는 ", (0,jsx_runtime.jsx)(Cmdname, {
+                sid: "TTL06209",
+                className: "uitext"
+              }), " 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
+                sid: "TTL06527",
+                className: "uitext"
+              }), " 창에서 Method 스텝으로 확인할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "전체 모듈 추적은 오버헤드가 발생할 수 있으니 가급적 정확한 모듈명과 메소드명에 대한 사용을 권장합니다."
+            }), "\n"]
+          }), "\n"]
         })
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -867,6 +882,9 @@ function _python_trs_profile_MDXContent(props = {}) {
     })
   }) : _python_trs_profile_createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 ;// CONCATENATED MODULE: ./docs/common-items/_python-track-http-trs.mdx
@@ -892,7 +910,7 @@ function _python_track_http_trs_createMdxContent(props) {
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   }, {ScrollToLink} = _components;
-  if (!ScrollToLink) _missingMdxReference("ScrollToLink", true);
+  if (!ScrollToLink) _python_track_http_trs_missingMdxReference("ScrollToLink", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -1049,7 +1067,7 @@ function _python_track_http_trs_MDXContent(props = {}) {
     })
   }) : _python_track_http_trs_createMdxContent(props);
 }
-function _missingMdxReference(id, component) {
+function _python_track_http_trs_missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 

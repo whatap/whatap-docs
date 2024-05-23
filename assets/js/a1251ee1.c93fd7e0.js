@@ -607,7 +607,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -782,6 +783,25 @@ function _createMdxContent(props) {
             metastring: "title='whatap.conf'",
             children: "hook_method_patterns=a.b.C1.*\n"
           })
+        }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: ["이 옵션을 통해 등록한 메소드는 ", (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "TTL06209",
+                  className: "uitext"
+                }), " 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "TTL06527",
+                  className: "uitext"
+                }), " 창에서 Method 스텝으로 확인할 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "가급적 국소 범위에 적용할 것을 권장합니다. 광범위한 범위로 적용할 경우 애플리케이션의 성능 저하를 유발할 수 있습니다."
+              }), "\n"]
+            }), "\n"]
+          })
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -940,6 +960,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -1247,7 +1270,7 @@ function _java_http_transaction_createMdxContent(props) {
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   }, {Cmdname} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!Cmdname) _java_http_transaction_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -1407,7 +1430,7 @@ function _java_http_transaction_MDXContent(props = {}) {
     })
   }) : _java_http_transaction_createMdxContent(props);
 }
-function _missingMdxReference(id, component) {
+function _java_http_transaction_missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
