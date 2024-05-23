@@ -4,15 +4,16 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    'https://docs.whatap.io/release-notes/service/service-1_110_x',
+    // 'https://docs.whatap.io/release-notes/service/service-1_110_x',
     // 'https://docs.whatap.io/release-notes/service/service-1_112_x',
     // 'https://docs.whatap.io/release-notes/service/service-1_114_x',
+    'https://docs.whatap.io/release-notes/service/service-2_0_x',
 ];
 
 async function extractFeaturesAndUpdateMDXDocument() {
+    const allFeatures = {};
+
     try {
-        const allFeatures = {};
-        
         for (const url of urls) {
             const response = await axios.get(url);
             const $ = cheerio.load(response.data);
@@ -62,14 +63,40 @@ function updateOrCreateMDXDocument(newFeatures) {
     if (fs.existsSync(mdxFilePath)) {
         const content = fs.readFileSync(mdxFilePath, 'utf-8');
 
-        content.trim().split('\n\n').forEach(line => {
+        let currentFeature;
+        let currentDate;
+        let currentDetail;
+
+        content.trim().split('\n').forEach(line => {
             const featureMatch = line.match(/<code class='changelog-overview'>(.*?)<\/code>/);
             const dateMatch = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
-            if (featureMatch && dateMatch) {
-                const feature = featureMatch[1];
-                const date = dateMatch[1];
-                const key = `${feature}_${date}`;
-                existingFeatures[key] = line;
+            const detailMatch = line.match(/<li>(.*?)<\/li>/);
+            if (featureMatch) {
+                currentFeature = featureMatch[1].trim();
+            }
+            if (dateMatch) {
+                currentDate = dateMatch[1].trim();
+            }
+            if (detailMatch) {
+                currentDetail = detailMatch[1].trim();
+            }
+
+            console.log('Line:', line);
+            console.log('Feature:', currentFeature);
+            console.log('Date:', currentDate);
+            console.log('Detail:', currentDetail);
+
+            if (currentFeature && currentDate && currentDetail) {
+                const key = `${currentFeature}_${currentDate}`;
+                if (!existingFeatures[key]) {
+                    existingFeatures[key] = {
+                        feature: currentFeature,
+                        date: currentDate,
+                        details: [currentDetail]
+                    };
+                } else {
+                    existingFeatures[key].details.push(currentDetail);
+                }
             }
         });
     }

@@ -5,9 +5,10 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    'https://docs.whatap.io/release-notes/service/service-1_110_x',
+    // 'https://docs.whatap.io/release-notes/service/service-1_110_x',
     'https://docs.whatap.io/release-notes/service/service-1_112_x',
     'https://docs.whatap.io/release-notes/service/service-1_114_x',
+    // 'https://docs.whatap.io/release-notes/service/service-2_0_x',
 ];
 
 async function extractFeaturesAndUpdateMDXDocument() {
@@ -57,7 +58,7 @@ async function extractFeaturesAndUpdateMDXDocument() {
 }
 
 function updateOrCreateMDXDocument(newFeatures) {
-    const mdxFilePath = './crw-data/overview/_changelog_overview_c_2.mdx';
+    const mdxFilePath = './crw-data/overview/_changelog_overview_c_test.mdx';
     let existingFeatures = {};
 
     if (fs.existsSync(mdxFilePath)) {
