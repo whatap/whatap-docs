@@ -60,8 +60,8 @@ const metadata = {
   },
   "sidebar": "referSidebar",
   "previous": {
-    "title": "메트릭스 가공",
-    "permalink": "/whatap-docs/mxql/mxql-calculate"
+    "title": "자주 묻는 질문",
+    "permalink": "/whatap-docs/faq/"
   },
   "next": {
     "title": "Database FAQs",

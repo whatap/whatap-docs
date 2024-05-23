@@ -66,8 +66,8 @@ const metadata = {
     "permalink": "/whatap-docs/mxql/mxql-loading"
   },
   "next": {
-    "title": "Application FAQs",
-    "permalink": "/whatap-docs/faq/apm-faq"
+    "title": "자주 묻는 질문",
+    "permalink": "/whatap-docs/faq/"
   }
 };
 const assets = {
