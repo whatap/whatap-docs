@@ -82,8 +82,8 @@ const toc = [{
   "id": "java",
   "level": 4
 }, {
-  "value": "PHP, .NET",
-  "id": "php-net",
+  "value": "PHP, Python, .NET",
+  "id": "php-python-net",
   "level": 4
 }, {
   "value": "<code>Server</code>",
@@ -312,8 +312,8 @@ function _createMdxContent(props) {
             }), " 버튼을 선택하면 오른쪽에 노출되는 다이어그램의 스타일이 정상 적용되지 않는 문제 수정"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "php-net",
-          children: "PHP, .NET"
+          id: "php-python-net",
+          children: "PHP, Python, .NET"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Fixed"

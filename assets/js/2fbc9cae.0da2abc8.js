@@ -74,8 +74,8 @@ const toc = [{
   "id": "application",
   "level": 3
 }, {
-  "value": "PHP, .Net",
-  "id": "php-net",
+  "value": "PHP, Python, .Net",
+  "id": "php-python-net",
   "level": 4
 }, {
   "value": "<code>Database</code>",
@@ -216,8 +216,8 @@ function _createMdxContent(props) {
             children: "Application"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "php-net",
-          children: "PHP, .Net"
+          id: "php-python-net",
+          children: "PHP, Python, .Net"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Fixed"
