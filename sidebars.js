@@ -60,6 +60,7 @@ const sidebars = {
             'java/add-jvm-opt/java-under-ver',
           ]
         },
+        'java/agent-weaving',
         'java/install-check',
         'java/agent-troubleshooting',
         {
@@ -92,7 +93,6 @@ const sidebars = {
             'java/agent-transaction-error-stack',
             'java/agent-additional-option',
             'java/async-tracking',
-            'java/agent-weaving',
           ]
         },
         {
