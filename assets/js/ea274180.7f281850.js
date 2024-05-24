@@ -76,7 +76,7 @@ const assets = {
 
 const toc = [{
   "value": "기본 정비 계획",
-  "id": "maintemance-v1",
+  "id": "maintenance-v1",
   "level": 2
 }, {
   "value": "정비 계획 등록하기",
@@ -208,7 +208,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "maintemance-v1",
+        id: "maintenance-v1",
         children: "기본 정비 계획"
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {

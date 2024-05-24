@@ -84,111 +84,111 @@ const assets = {
 
 const toc = [{
   "value": "rum_page_load_each_page",
-  "id": "rum_page_load_each_page",
+  "id": "b798b7654dc22dee3a29d413a85dad14",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags",
+  "id": "667f1f457e1051e615455d0ecf95b947",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields",
+  "id": "9a189c13b76ce8b9d1784cf1c790f766",
   "level": 3
 }, {
   "value": "rum_page_load_browser_each_page",
-  "id": "rum_page_load_browser_each_page",
+  "id": "5ea9bb418b92f2baf636d9cd6d835507",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-1",
+  "id": "01815fbb5f3d1977c56e3cb4d0fcd7b8",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-1",
+  "id": "8b519866d9c828cba5ac22f6936c682a",
   "level": 3
 }, {
   "value": "rum_page_load_device_each_page",
-  "id": "rum_page_load_device_each_page",
+  "id": "cae6122948ce4a2ef19b007c7149bebf",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-2",
+  "id": "a5cebb5b8e9916d57d02dee96ce82729",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-2",
+  "id": "5253d43d6cca9bb1f05b3072c47b9485",
   "level": 3
 }, {
   "value": "rum_page_load_os_each_page",
-  "id": "rum_page_load_os_each_page",
+  "id": "41e66540556c4e86eebd81306558ef5f",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-3",
+  "id": "70ad1189b536ab167bb8394db61d403f",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-3",
+  "id": "f4dcb7c1fc5a847255d5001b63e143b4",
   "level": 3
 }, {
   "value": "rum_router_change_each_page",
-  "id": "rum_router_change_each_page",
+  "id": "e9d9a41030bbbabddae2702cd0a6f21d",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-4",
+  "id": "8bff96be874041f09126639900f73465",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-4",
+  "id": "1f0c9db9b65cdca062b7943db7093019",
   "level": 3
 }, {
   "value": "rum_resource_each_page",
-  "id": "rum_resource_each_page",
+  "id": "ecb79f2064b37438ae6547c7f53110be",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-5",
+  "id": "1c1c20ee4a4bb17f2e3f925b0e4538b6",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-5",
+  "id": "66f375095544e257b9e3a11f167d4df4",
   "level": 3
 }, {
   "value": "rum_ajax_each_page",
-  "id": "rum_ajax_each_page",
+  "id": "fec598ef360cba56c537b9ce7990b05b",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-6",
+  "id": "d51f9633b28bd99783f7011dfcbf985a",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-6",
+  "id": "250a56819f0c49aeae01a33f85382623",
   "level": 3
 }, {
   "value": "rum_error_total_each_page",
-  "id": "rum_error_total_each_page",
+  "id": "ccafcb956575e6fcbda7fb52eb283fb5",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-7",
+  "id": "2319200ab7885caa96540f15a8a11db5",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-7",
+  "id": "a597110ac8cdb0a125cac8e2c307dc6c",
   "level": 3
 }, {
   "value": "rum_web_vitals_each_page",
-  "id": "rum_web_vitals_each_page",
+  "id": "a45419e40b96f96485bd8a36241c1dd0",
   "level": 2
 }, {
   "value": "Tags",
-  "id": "tags-8",
+  "id": "29de8586814a026bc25f43fc76aabc86",
   "level": 3
 }, {
   "value": "Fields",
-  "id": "fields-8",
+  "id": "631ecb47495ee519054b47c9aeab7cd2",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -222,7 +222,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_page_load_each_page",
+        id: "b798b7654dc22dee3a29d413a85dad14",
         children: "rum_page_load_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["페이지 로드 시간에 관한 지표는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -253,7 +253,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags",
+        id: "667f1f457e1051e615455d0ecf95b947",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -283,7 +283,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields",
+        id: "9a189c13b76ce8b9d1784cf1c790f766",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -540,7 +540,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_page_load_browser_each_page",
+        id: "5ea9bb418b92f2baf636d9cd6d835507",
         children: "rum_page_load_browser_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "브라우저별 페이지 로드와 관련한 지표입니다."
@@ -558,7 +558,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-1",
+        id: "01815fbb5f3d1977c56e3cb4d0fcd7b8",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -598,7 +598,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-1",
+        id: "8b519866d9c828cba5ac22f6936c682a",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -647,7 +647,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_page_load_device_each_page",
+        id: "cae6122948ce4a2ef19b007c7149bebf",
         children: "rum_page_load_device_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "디바이스별 페이지 로드와 관련한 지표입니다."
@@ -665,7 +665,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-2",
+        id: "a5cebb5b8e9916d57d02dee96ce82729",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -705,7 +705,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-2",
+        id: "5253d43d6cca9bb1f05b3072c47b9485",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -754,7 +754,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_page_load_os_each_page",
+        id: "41e66540556c4e86eebd81306558ef5f",
         children: "rum_page_load_os_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "운영체제별 페이지 로드와 관련한 지표입니다."
@@ -772,7 +772,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-3",
+        id: "70ad1189b536ab167bb8394db61d403f",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -812,7 +812,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-3",
+        id: "f4dcb7c1fc5a847255d5001b63e143b4",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -861,7 +861,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_router_change_each_page",
+        id: "e9d9a41030bbbabddae2702cd0a6f21d",
         children: "rum_router_change_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "싱글 페이지 애플리케이션에서 페이지 전환 시 발생하는 이벤트와 관련한 지표입니다."
@@ -879,7 +879,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-4",
+        id: "8bff96be874041f09126639900f73465",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -921,7 +921,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-4",
+        id: "1f0c9db9b65cdca062b7943db7093019",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -970,7 +970,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_resource_each_page",
+        id: "ecb79f2064b37438ae6547c7f53110be",
         children: "rum_resource_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "웹 페이지에서 호출되는 리소스의 응답 시간과 관련한 지표입니다."
@@ -988,7 +988,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-5",
+        id: "1c1c20ee4a4bb17f2e3f925b0e4538b6",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -1060,7 +1060,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-5",
+        id: "66f375095544e257b9e3a11f167d4df4",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -1187,7 +1187,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_ajax_each_page",
+        id: "fec598ef360cba56c537b9ce7990b05b",
         children: "rum_ajax_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "AJAX 응답 시간과 응답 상태 코드와 관련한 지표입니다."
@@ -1205,7 +1205,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-6",
+        id: "d51f9633b28bd99783f7011dfcbf985a",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -1255,7 +1255,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-6",
+        id: "250a56819f0c49aeae01a33f85382623",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -1376,7 +1376,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_error_total_each_page",
+        id: "ccafcb956575e6fcbda7fb52eb283fb5",
         children: "rum_error_total_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "브라우저에서 발생하는 에러와 관련한 지표입니다."
@@ -1394,7 +1394,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-7",
+        id: "2319200ab7885caa96540f15a8a11db5",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -1474,7 +1474,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-7",
+        id: "a597110ac8cdb0a125cac8e2c307dc6c",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
@@ -1511,7 +1511,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "rum_web_vitals_each_page",
+        id: "a45419e40b96f96485bd8a36241c1dd0",
         children: "rum_web_vitals_each_page"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "코어 웹 바이탈과 관련한 지표입니다."
@@ -1529,7 +1529,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "tags-8",
+        id: "29de8586814a026bc25f43fc76aabc86",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -1559,7 +1559,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fields-8",
+        id: "631ecb47495ee519054b47c9aeab7cd2",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         class: "browser-metric",
