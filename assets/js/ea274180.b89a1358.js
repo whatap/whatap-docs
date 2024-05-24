@@ -72,6 +72,18 @@ const assets = {
 
 };
 
+/*### 경고 알림 비활성화
+
+***정비 계획*** 실행 시간 동안 **알림**을 **일시적으로 비활성화**할 수 있습니다. 시스템의 유지 보수 작업 및 예정된 기타 작업 수행 중 불필요한 알림을 방지하고자 할 때 유용합니다. 정비 계획 설정 시간 동안 경고 알림이 일시적으로 중단되고, 관리자가 작업을 마친 후 정비 계획 종료 시점에 알림이 다시 활성화됩니다. 이를 통해 관리자는 유지보수 작업에 집중할 수 있습니다.
+
+특정 시간대에 경고 알림을 비활성화하고 싶은 경우 ***정비 계획 설정*** 시 반복 및 시간대 옵션을 통해 설정할 수 있습니다. 예를 들어 매주 수요일 오전 1시부터 오전 4시까지 알림을 받고 싶지 않다면 다음 예시 이미지를 참조하세요. ***반복***, ***요일***, ***시간*** 설정을 통해 해당 시간대에 실행되도록 ***정비 계획*** 추가 시 경고 알림이 비활성화됩니다.
+
+<ImgLang img='maintenance-v1-pause-alert.png' desc='정비 계획을 통한 알림 비활성화 v1' />*/
+/*<ScrollToLink anchor='scrollTo-event-temp-pause' />
+
+이를 통해 일시적으로 혹은 특정 시간대에 반복해 경고 알림을 비활성화하고자 할 때 ***정비 계획***을 활용할 수 있습니다.
+
+*/
 
 
 const toc = [{
@@ -140,9 +152,10 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, ScrollToLink} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!ScrollToLink) _missingMdxReference("ScrollToLink", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
@@ -342,6 +355,46 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 기능을 기존 정비 계획 메뉴에서 사용할 수 없습니다."]
         })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "정비 계획을 활용한 경고 알림 비활성화"
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
+            anchor: "scrollTo-v1-event-temp-pause"
+          })]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["정비 계획 실행 시간 동안 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "알림"
+          }), "을 일시적으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "비활성화"
+          }), "할 수 있습니다. 유지 보수 작업 및 예정된 기타 작업 수행 중 관리자가 작업에 집중할 수 있도록 불필요한 알림을 방지하기 위한 기능입니다. 정비 계획 설정 시간 동안 경고 알림이 일시적으로 중단되고, 관리자가 작업을 마친 후 정비 계획 종료 시점에 알림이 다시 활성화됩니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["특정 시간대에 경고 알림을 비활성화하고 싶은 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "정비 계획 설정"
+            })
+          }), " 시 반복 및 시간대 옵션을 통해 설정할 수 있습니다. 예를 들어 매주 수요일 오전 1시부터 오전 4시까지 알림을 받고 싶지 않다면 다음 예시 이미지를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "반복"
+            })
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "요일"
+            })
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "시간"
+            })
+          }), " 설정을 통해 해당 시간대에 실행되도록 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "정비 계획"
+            })
+          }), " 추가 시 경고 알림이 비활성화됩니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "maintenance-v1-pause-alert.png",
+          desc: "정비 계획을 통한 알림 비활성화 v1"
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -770,6 +823,46 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "정비 계획을 활용한 경고 알림 비활성화"
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
+            anchor: "scrollTo-v2-event-temp-pause"
+          })]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["정비 계획 실행 시간 동안 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "알림"
+          }), "을 일시적으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "비활성화"
+          }), "할 수 있습니다. 유지 보수 작업 및 예정된 기타 작업 수행 중 관리자가 작업에 집중할 수 있도록 불필요한 알림을 방지하기 위한 기능입니다. 정비 계획 설정 시간 동안 경고 알림이 일시적으로 중단되고, 관리자가 작업을 마친 후 정비 계획 종료 시점에 알림이 다시 활성화됩니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["특정 시간대에 경고 알림을 비활성화하고 싶은 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "정비 계획 설정"
+            })
+          }), " 시 반복 및 시간대 옵션을 통해 설정할 수 있습니다. 예를 들어 매주 수요일 오전 1시부터 오전 4시까지 알림을 받고 싶지 않다면 다음 예시 이미지를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "반복"
+            })
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "요일"
+            })
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "시간"
+            })
+          }), " 설정을 통해 해당 시간대에 실행되도록 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "정비 계획"
+            })
+          }), " 추가 시 경고 알림이 비활성화됩니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "maintenance-v2-pause-alert.png",
+          desc: "정비 계획을 통한 알림 비활성화 v2"
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
