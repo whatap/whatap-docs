@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[82263],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71255],{
 
 /***/ 73290:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -22,39 +22,39 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "app_active_stat",
-  "id": "app_active_stat",
+  "id": "d090dfbd19c09cd154a959c5a4bf4343",
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags",
+  "id": "667f1f457e1051e615455d0ecf95b947",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields",
+  "id": "9a189c13b76ce8b9d1784cf1c790f766",
   "level": 4
 }, {
   "value": "app_counter",
-  "id": "app_counter",
+  "id": "af284e6c5c43a9d3fd095d65dcde0944",
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-1",
+  "id": "01815fbb5f3d1977c56e3cb4d0fcd7b8",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-1",
+  "id": "8b519866d9c828cba5ac22f6936c682a",
   "level": 4
 }, {
   "value": "app_host_resource",
-  "id": "app_host_resource",
+  "id": "d25e6aeee71f3006fdb5e989b90bcbb9",
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-2",
+  "id": "a5cebb5b8e9916d57d02dee96ce82729",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-2",
+  "id": "5253d43d6cca9bb1f05b3072c47b9485",
   "level": 4
 }];
 function _createMdxContent(props) {
@@ -79,7 +79,7 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "app_active_stat",
+        id: "d090dfbd19c09cd154a959c5a4bf4343",
         children: "app_active_stat"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "액티브 트랜잭션 구간 지표입니다."
@@ -93,7 +93,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "tags",
+        id: "667f1f457e1051e615455d0ecf95b947",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -177,7 +177,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "fields",
+        id: "9a189c13b76ce8b9d1784cf1c790f766",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -249,7 +249,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "app_counter",
+        id: "af284e6c5c43a9d3fd095d65dcde0944",
         children: "app_counter"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "트랜잭션 지표입니다."
@@ -263,7 +263,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "tags-1",
+        id: "01815fbb5f3d1977c56e3cb4d0fcd7b8",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -355,7 +355,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "fields-1",
+        id: "8b519866d9c828cba5ac22f6936c682a",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -627,7 +627,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "app_host_resource",
+        id: "d25e6aeee71f3006fdb5e989b90bcbb9",
         children: "app_host_resource"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "애플리케이션 서버 자원 지표입니다."
@@ -641,7 +641,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "tags-2",
+        id: "a5cebb5b8e9916d57d02dee96ce82729",
         children: "Tags"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -733,7 +733,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "fields-2",
+        id: "5253d43d6cca9bb1f05b3072c47b9485",
         children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
@@ -946,7 +946,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 65878:
+/***/ 98612:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -974,7 +974,7 @@ var TabItem = __webpack_require__(15947);
 var _metrics_index = __webpack_require__(20592);
 // EXTERNAL MODULE: ./docs/common-items/_apm-server-merics.mdx
 var _apm_server_merics = __webpack_require__(73290);
-;// CONCATENATED MODULE: ./docs/common-items/_nodejs-app-proc-counter.mdx
+;// CONCATENATED MODULE: ./docs/common-items/_php-app-proc-counter.mdx
 
 
 const frontMatter = {};
@@ -1081,14 +1081,6 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "pid"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "애플리케이션 PID"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
               children: "type"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "애플리케이션 유형"
@@ -1119,31 +1111,21 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tbody, {
           children: [(0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "cputime"
+              children: "mem_proc"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "밀리 세컨드"
+              children: "바이트"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "CPU 사용 시간"
+              children: "PHP 프로세스 메모리 사용량"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_tot"
+              children: "mem_system"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "바이트"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 총량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_use"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 사용량"
+              children: "시스템 메모리 전체 크기"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
@@ -1167,7 +1149,7 @@ function MDXContent(props = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./docs/nodejs/metrics-app.mdx
+;// CONCATENATED MODULE: ./docs/php/metrics-app.mdx
 
 
 const metrics_app_frontMatter = {
@@ -1175,7 +1157,7 @@ const metrics_app_frontMatter = {
 	title: '애플리케이션 지표',
 	description: '애플리케이션 지표를 안내합니다.',
 	tags: [
-		'Node.js',
+		'PHP',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
@@ -1183,20 +1165,20 @@ const metrics_app_frontMatter = {
 };
 const metrics_app_contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/metrics-app",
+  "id": "php/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/nodejs/metrics-app.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/metrics-app",
-  "permalink": "/whatap-docs/nodejs/metrics-app",
+  "source": "@site/docs/php/metrics-app.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/metrics-app",
+  "permalink": "/whatap-docs/php/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/metrics-app.mdx",
+  "editUrl": "undefined/docs/php/metrics-app.mdx",
   "tags": [
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "label": "메트릭스",
@@ -1217,20 +1199,20 @@ const metadata = {
     "title": "애플리케이션 지표",
     "description": "애플리케이션 지표를 안내합니다.",
     "tags": [
-      "Node.js",
+      "PHP",
       "메트릭스",
       "애플리케이션",
       "UI"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/nodejs/metrics-intro"
+    "permalink": "/whatap-docs/php/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/nodejs/metrics-performance-counter"
+    "permalink": "/whatap-docs/php/metrics-performance-counter"
   }
 };
 const assets = {
