@@ -46,10 +46,6 @@ const metadata = {
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": ".NET Agent v2.1.7",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_7"
-  },
   "next": {
     "title": ".NET Agent v2.1.5",
     "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_5"
