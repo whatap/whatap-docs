@@ -3112,14 +3112,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_4',
+                id: 'release-notes/dotnet/dotnet-2_2_5',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_4',
+                  id: 'release-notes/dotnet/dotnet-2_2_5',
                   // className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
@@ -3128,7 +3129,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_8',
                 'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-2_1_6',
-                'release-notes/dotnet/dotnet-2_1_5',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
