@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4260],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67943],{
 
-/***/ 50843:
+/***/ 68393:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_1_8',
-	title: '.NET Agent v2.1.8',
+	id: 'dotnet-2_2_5',
+	title: '.NET Agent v2.2.5',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_1_7'
+	pagination_next: 'release-notes/dotnet/dotnet-2_2_4',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_1_8",
-  "title": ".NET Agent v2.1.8",
-  "description": "2023년 10월 24일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.8.mdx",
+  "id": "release-notes/dotnet/dotnet-2_2_5",
+  "title": ".NET Agent v2.2.5",
+  "description": "2024년 05월 08일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.5.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_1_8",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_8",
+  "slug": "/release-notes/dotnet/dotnet-2_2_5",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_5",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.8.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.5.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_1_8",
-    "title": ".NET Agent v2.1.8",
+    "id": "dotnet-2_2_5",
+    "title": ".NET Agent v2.2.5",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_1_7"
+    "pagination_next": "release-notes/dotnet/dotnet-2_2_4",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent v2.1.9",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_9"
+    "title": "Python Agent 지난 버전",
+    "permalink": "/whatap-docs/release-notes/python/python-previous"
   },
   "next": {
-    "title": ".NET Agent v2.1.7",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_7"
+    "title": ".NET Agent v2.2.4",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_4"
   }
 };
 const assets = {
@@ -62,41 +64,18 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    admonition: "admonition",
-    li: "li",
     p: "p",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 10월 24일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " .NET 에이전트 서비스 시작 과정에서 간헐적으로 발생하는 초기화 오류 수정"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "초기화 오류가 발생하면 WA172 로그가 반복되면서 모니터링이 활성화되지 않습니다."
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " XML로 구성된 HTTP Request body를 수집하는 동안 특정 상황에서 발생하는 오류 수정"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "JSON의 경우에는 발생하지 않는 오류입니다."
-          })
-        }), "\n"]
-      }), "\n"]
+      children: "2024년 05월 08일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " 서버의 CPU 성능에 여유가 없을 때 모니터링 메시지가 지연되어 쌓이면서 병목을 가속하는 오류 수정"]
     })]
   });
 }

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93047],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[23169],{
 
-/***/ 16669:
+/***/ 27761:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_1_6',
-	title: '.NET Agent v2.1.6',
+	id: 'dotnet-2_1_2',
+	title: '.NET Agent v2.1.2',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_1_5'
+	pagination_next: 'release-notes/dotnet/dotnet-2_1_1',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_1_6",
-  "title": ".NET Agent v2.1.6",
-  "description": "2023년 10월 5일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.6.mdx",
+  "id": "release-notes/dotnet/dotnet-2_1_2",
+  "title": ".NET Agent v2.1.2",
+  "description": "2023년 7월 20일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.2.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_1_6",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_6",
+  "slug": "/release-notes/dotnet/dotnet-2_1_2",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.6.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_1_6",
-    "title": ".NET Agent v2.1.6",
+    "id": "dotnet-2_1_2",
+    "title": ".NET Agent v2.1.2",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_1_5"
+    "pagination_next": "release-notes/dotnet/dotnet-2_1_1",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": ".NET Agent v2.1.7",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_7"
-  },
   "next": {
-    "title": ".NET Agent v2.1.5",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_5"
+    "title": ".NET Agent v2.1.1",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_1"
   }
 };
 const assets = {
@@ -59,100 +57,86 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "2023년 7월 20일",
+  "id": "2023년-7월-20일",
+  "level": 4
+}];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
+    admonition: "admonition",
     code: "code",
+    h4: "h4",
     li: "li",
     p: "p",
-    pre: "pre",
-    strong: "strong",
+    section: "section",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 10월 5일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h4",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+      id: "2023년-7월-20일",
+      children: "2023년 7월 20일"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " HTTP request body 추적 기능 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "profile_http_body_enabled"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "type",
-                children: "Boolean"
-              })]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "false"
-              })]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "HTTP request의 body를 트레이스 내역에 기록합니다."
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "profile_http_body_url_prefix"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "type",
-                children: "String"
-              })]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "트레이스 내역에 http body 정보를 기록할 대상 URL의 prefix를 정의할 때 사용합니다."
-            }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " 사용자 로그 추적 기능 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "트레이스 내역에 사용자가 직접 로그 메시지를 남길 수 있는 기능입니다. 로그를 남기기 위해서는 다음의 단계를 진행하세요."
+            children: "New"
+          }), " WCF 지원"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "로그를 남기려는 프로젝트에 cs 파일을 추가하고 코드를 작성하세요."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-csharp",
-                children: "using System;\n\nnamespace Whatap.UserLog\n{\n    public static class Tracer\n    {\n        public static void Trace(string message)\n        {\n            // 아무런 코드를 작성하지 않아도 됩니다.\n            // 이 메소드 안의 코드는 Whatap 에이전트에 의해서 무시되기 때문에 실행되지 않습니다.\n        }\n    }\n}\n"
-              })
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["로그를 남기고 싶은 위치에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Tracer.Trace(\"로그 문자열\")"
-              }), "와 같은 형식으로 코드를 추가하세요."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-csharp",
-                children: "public string UserFunction(int value)\n{\n    Tracer.Trace($\"started... {value}\");\n    ...\n}\n"
-              })
+              children: "WCF는 웹서비스와 동일하게 사용자 지정 메서드를 통해서 추적합니다. 따라서 설정한 옵션의 값을 공유합니다."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "webservice_method_enabled"
+                  }), " 옵션의 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "true"
+                  }), "가 되면 WCF도 함께 추적 대상이 됩니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["추적 대상이 되는 메서드의 이름을 네임스페이스와 함께 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "webservice_method_prefix"
+                  }), " 설정에 입력하세요."]
+                }), "\n"]
+              }), "\n"]
             }), "\n"]
           }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " Windows Communication Foundation(WCF, 웹서비스) 관련 오류 수정"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "webservice_method_prefix"
-          }), " 옵션이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "null"
-          }), " 문자열 상태에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "webservice_method_enabled=true"
-          }), "로 설정하면 추적 대상이 WCF를 포함한 모든 메소드로 확대되어서, 모니터링할 수 없는 대상이 포함되는 버그를 수정하였습니다."]
+            children: "Change"
+          }), "  Active Stack 실행 환경 자동 감지"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "OS의 .NET framework 버전이 4.6.1 이상에서만 Active Stack이 동작합니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "active_stack_enabled"
+              }), " 옵션의 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              }), "로 설정이 되어있어도 OS의 .NET framework 버전이 4.6.1 미만이면 Active Stack 수집을 중단합니다."]
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["사용자의 웹 어플리케이션은 4.5 버전 이상에서 Active Stack을 지원합니다. OS의 .NET framework 버전 확인은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.whatap.io/dotnet/supported-spec#use-tools",
+              children: "다음 문서"
+            }), "의 4번 항목을 참고하세요."]
+          })
         }), "\n"]
       }), "\n"]
     })]

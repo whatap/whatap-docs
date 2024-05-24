@@ -21,7 +21,8 @@ const frontMatter = {
 	id: 'dotnet-2_1_5',
 	title: '.NET Agent v2.1.5',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_1_4'
+	pagination_next: 'release-notes/dotnet/dotnet-2_1_4',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -41,13 +42,10 @@ const metadata = {
     "id": "dotnet-2_1_5",
     "title": ".NET Agent v2.1.5",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_1_4"
+    "pagination_next": "release-notes/dotnet/dotnet-2_1_4",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": ".NET Agent v2.1.6",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_6"
-  },
   "next": {
     "title": ".NET Agent v2.1.4",
     "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_4"

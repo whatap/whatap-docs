@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[72140],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45874],{
 
-/***/ 2464:
+/***/ 52254:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_2_0',
-	title: '.NET Agent v2.2.0',
+	id: 'dotnet-2_1_9',
+	title: '.NET Agent v2.1.9',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_1_9'
+	pagination_next: 'release-notes/dotnet/dotnet-2_1_8',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_2_0",
-  "title": ".NET Agent v2.2.0",
-  "description": "2023년 11월 10일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.0.mdx",
+  "id": "release-notes/dotnet/dotnet-2_1_9",
+  "title": ".NET Agent v2.1.9",
+  "description": "2023년 11월 03일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.9.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_2_0",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_0",
+  "slug": "/release-notes/dotnet/dotnet-2_1_9",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_9",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.0.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.9.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_2_0",
-    "title": ".NET Agent v2.2.0",
+    "id": "dotnet-2_1_9",
+    "title": ".NET Agent v2.1.9",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_1_9"
+    "pagination_next": "release-notes/dotnet/dotnet-2_1_8",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent v2.2.1",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_1"
+    "title": ".NET Agent v2.2.0",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_0"
   },
   "next": {
-    "title": ".NET Agent v2.1.9",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_9"
+    "title": ".NET Agent v2.1.8",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_8"
   }
 };
 const assets = {
@@ -62,6 +64,7 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    admonition: "admonition",
     li: "li",
     p: "p",
     ul: "ul",
@@ -71,19 +74,36 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 10일"
+      children: "2023년 11월 03일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Fixed"
-          }), " SQL 트레이스 정보가 32KB를 넘으면서 접속 관련 정보가 SQL 문자열보다 긴 경우 발생하는 오류 수정, 문자열 관련 유사한 오류가 발생할 수 있는 모든 코드에 대한 예외 처리 추가"]
+          }), " 최근 버전의 에이전트에서 CPU 사용률이 높아진 이슈 해결"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "info",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "현재 시간을 가져 오는 Go 라이브러리의 시스템 API가 CPU 성능을 많이 요구하여 이를 효율적으로 개선하였습니다."
+          })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "New"
-          }), " 패킷 관련 메모리 관리를 효율적으로 개선하여 메모리와 CPU 사용량을 낮춤"]
+            children: "Fixed"
+          }), " WCF 트랜잭션의 경우 가끔 Unknown 스텝이 추가로 표시되는 버그 수정"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " 업데이트 설치 시 기존의 설치가 완전히 삭제되지 않는 버그 수정"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " 캐시된 메모리를 최대한 빠르게 해제하여 메모리를 차지하는 비중을 줄임"]
         }), "\n"]
       }), "\n"]
     })]

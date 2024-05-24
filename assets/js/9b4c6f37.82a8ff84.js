@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[30417],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93047],{
 
-/***/ 50536:
+/***/ 16669:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_1_7',
-	title: '.NET Agent v2.1.7',
+	id: 'dotnet-2_1_6',
+	title: '.NET Agent v2.1.6',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_1_6'
+	pagination_next: 'release-notes/dotnet/dotnet-2_1_5',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_1_7",
-  "title": ".NET Agent v2.1.7",
-  "description": "2023년 10월 16일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.7.mdx",
+  "id": "release-notes/dotnet/dotnet-2_1_6",
+  "title": ".NET Agent v2.1.6",
+  "description": "2023년 10월 5일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.1.6.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_1_7",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_7",
+  "slug": "/release-notes/dotnet/dotnet-2_1_6",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_6",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.7.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.1.6.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_1_7",
-    "title": ".NET Agent v2.1.7",
+    "id": "dotnet-2_1_6",
+    "title": ".NET Agent v2.1.6",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_1_6"
+    "pagination_next": "release-notes/dotnet/dotnet-2_1_5",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent v2.1.8",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_8"
+    "title": ".NET Agent v2.1.7",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_7"
   },
   "next": {
-    "title": ".NET Agent v2.1.6",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_6"
+    "title": ".NET Agent v2.1.5",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_5"
   }
 };
 const assets = {
@@ -65,68 +67,94 @@ function _createMdxContent(props) {
     code: "code",
     li: "li",
     p: "p",
+    pre: "pre",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Link, Status} = _components;
-  if (!Link) _missingMdxReference("Link", true);
+  }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 10월 16일"
+      children: "2023년 10월 5일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " 하나의 트랜잭션에 너무 많은 스텝이 발생하여 부하를 발생시키지 않도록 1000개 이상 넘어가는 스텝은 무시하도록 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 비동기식 호출 방식에서 HTTP request body가 표시되지 않는 현상 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 일정 시점 이후 HTTP header가 비정상적으로 표시되는 버그 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 같은 네임 스페이스에 있는 Windows Communication Foundation(WCF, 웹서비스)와 상관없는 퍼블릭 메소드가 트랜잭션을 유발하여, 트랜잭션 추적이 비정상 종료되는 오류 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 에이전트 삭제 시 IIS 메모리에 로딩된 일부 파일이 삭제 후에도 남아 있는 오류 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Deprecate"
-          }), " WCF(웹서비스) 타임아웃 시간 설정 옵션(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "webservice_method_timeout"
-          }), ") 제거"]
+            children: "Feature"
+          }), " HTTP request body 추적 기능 추가"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "WCF 종료 시점을 캡쳐하지 못하여 타임아웃이 발생하는 오류 수정"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "profile_http_body_enabled"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "Boolean"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "false"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "HTTP request의 body를 트레이스 내역에 기록합니다."
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["다만 사용자가 WCF 메소드 안에서 Exception 처리를 제대로 하지 않을 경우, 트랜잭션 로스트가 발생할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-                to: "../../dotnet/agent-transaction",
-                children: "다음 문서"
-              }), "에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "trace_active_transaction_lost_time"
-              }), " 옵션을 참조하세요."]
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "profile_http_body_url_prefix"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "String"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "트레이스 내역에 http body 정보를 기록할 대상 URL의 prefix를 정의할 때 사용합니다."
             }), "\n"]
           }), "\n"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 사용자 로그 추적 기능 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "트레이스 내역에 사용자가 직접 로그 메시지를 남길 수 있는 기능입니다. 로그를 남기기 위해서는 다음의 단계를 진행하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "로그를 남기려는 프로젝트에 cs 파일을 추가하고 코드를 작성하세요."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-csharp",
+                children: "using System;\n\nnamespace Whatap.UserLog\n{\n    public static class Tracer\n    {\n        public static void Trace(string message)\n        {\n            // 아무런 코드를 작성하지 않아도 됩니다.\n            // 이 메소드 안의 코드는 Whatap 에이전트에 의해서 무시되기 때문에 실행되지 않습니다.\n        }\n    }\n}\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["로그를 남기고 싶은 위치에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "Tracer.Trace(\"로그 문자열\")"
+              }), "와 같은 형식으로 코드를 추가하세요."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-csharp",
+                children: "public string UserFunction(int value)\n{\n    Tracer.Trace($\"started... {value}\");\n    ...\n}\n"
+              })
+            }), "\n"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " Windows Communication Foundation(WCF, 웹서비스) 관련 오류 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "webservice_method_prefix"
+          }), " 옵션이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "null"
+          }), " 문자열 상태에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "webservice_method_enabled=true"
+          }), "로 설정하면 추적 대상이 WCF를 포함한 모든 메소드로 확대되어서, 모니터링할 수 없는 대상이 포함되는 버그를 수정하였습니다."]
         }), "\n"]
       }), "\n"]
     })]
