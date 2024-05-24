@@ -4,20 +4,22 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    // 'https://docs.whatap.io/release-notes/service/service-1_110_x',
-    // 'https://docs.whatap.io/release-notes/service/service-1_112_x',
-    // 'https://docs.whatap.io/release-notes/service/service-1_114_x',
-    'https://docs.whatap.io/release-notes/service/service-2_0_x',
+  // 'https://docs.whatap.io/release-notes/service/service-1_110_x',
+  // 'https://docs.whatap.io/release-notes/service/service-1_112_x',
+  // 'https://docs.whatap.io/release-notes/service/service-1_114_x',
+  // 'https://docs.whatap.io/release-notes/service/service-2_0_x',
+  'https://docs.whatap.io/release-notes/service/service-2_1_x',
 ];
 
 async function extractFeaturesAndUpdateMDXDocument() {
-    const allFeatures = {};
+    const allFeatures = [];
 
     try {
         for (const url of urls) {
             const response = await axios.get(url);
             const $ = cheerio.load(response.data);
 
+            const features = [];
             $('section.remark-sectionize-h2').each((index, element) => {
                 const version = $(element).find('h2').text().trim();
                 const date = $(element).find('h2 + p').text().trim();
@@ -40,14 +42,13 @@ async function extractFeaturesAndUpdateMDXDocument() {
                     });
 
                     if (featureDetails.length > 0) {
-                        const featureKey = `${featureName}_${date}`;
-                        if (!allFeatures[featureKey]) {
-                            allFeatures[featureKey] = { date: date, feature: featureName, versions: [] };
-                        }
-                        allFeatures[featureKey].versions.push({ version: version, details: featureDetails });
+                        features.push({ version: version, date: date, feature: featureName, details: featureDetails });
                     }
                 });
             });
+
+            features.sort((a, b) => parseDate(b.date) - parseDate(a.date));
+            allFeatures.push(...features);
         }
 
         updateOrCreateMDXDocument(allFeatures);
@@ -57,66 +58,36 @@ async function extractFeaturesAndUpdateMDXDocument() {
 }
 
 function updateOrCreateMDXDocument(newFeatures) {
-    const mdxFilePath = './crw-data/overview/_changelog_overview_d.mdx';
-    let existingFeatures = {};
+    const mdxFilePath = './crw-data/overview/_changelog_overview_fin.mdx';
+    let existingFeatures = [];
 
     if (fs.existsSync(mdxFilePath)) {
         const content = fs.readFileSync(mdxFilePath, 'utf-8');
 
-        let currentFeature;
-        let currentDate;
-        let currentDetail;
-
-        content.trim().split('\n').forEach(line => {
+        existingFeatures = content.trim().split('\n\n').map(line => {
+            const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
             const featureMatch = line.match(/<code class='changelog-overview'>(.*?)<\/code>/);
-            const dateMatch = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
-            const detailMatch = line.match(/<li>(.*?)<\/li>/);
-            if (featureMatch) {
-                currentFeature = featureMatch[1].trim();
-            }
-            if (dateMatch) {
-                currentDate = dateMatch[1].trim();
-            }
-            if (detailMatch) {
-                currentDetail = detailMatch[1].trim();
-            }
-
-            console.log('Line:', line);
-            console.log('Feature:', currentFeature);
-            console.log('Date:', currentDate);
-            console.log('Detail:', currentDetail);
-
-            if (currentFeature && currentDate && currentDetail) {
-                const key = `${currentFeature}_${currentDate}`;
-                if (!existingFeatures[key]) {
-                    existingFeatures[key] = {
-                        feature: currentFeature,
-                        date: currentDate,
-                        details: [currentDetail]
-                    };
-                } else {
-                    existingFeatures[key].details.push(currentDetail);
-                }
-            }
+            return {
+                line,
+                date: match ? parseDate(match[1]) : null,
+                feature: featureMatch ? featureMatch[1] : ''
+            };
         });
     }
 
-    if (Object.keys(newFeatures).length === 0) {
-        console.log('No new features to update or create.');
-        return;
-    }
-
-    const filteredNewFeatures = {};
-    Object.keys(newFeatures).forEach(key => {
-        if (!existingFeatures[key]) {
-            filteredNewFeatures[key] = newFeatures[key];
-        }
+    const filteredNewFeatures = newFeatures.filter(newFeature => {
+        return !existingFeatures.some(existingFeature => {
+            return existingFeature.feature === newFeature.feature && existingFeature.date.getTime() === parseDate(newFeature.date).getTime();
+        });
     });
 
-    const allFeatures = { ...existingFeatures, ...filteredNewFeatures };
+    const allFeatures = [...existingFeatures, ...filteredNewFeatures];
+
+    allFeatures.sort((a, b) => b.date - a.date);
 
     createOrUpdateMDXDocument(mdxFilePath, allFeatures);
 
+    // 날짜 재정렬 후에 백업 파일 생성
     sortByDateAndRewriteMDXWithBackup(mdxFilePath);
 }
 
@@ -124,15 +95,18 @@ function createOrUpdateMDXDocument(filename, features) {
     try {
         let documentContent = '';
 
-        Object.keys(features).forEach(key => {
-            const feature = features[key];
-            documentContent += `- <code class='changelog-overview'>${feature.feature}</code> <code class='changelog-date'>${feature.date}</code>\n`;
-            feature.versions.forEach(version => {
-                version.details.forEach(detail => {
-                    documentContent += `  - ${detail}<code class='changelog-service'>${version.version}</code>\n`;
+        features.forEach(feature => {
+            if (feature.line) {
+                documentContent += `${feature.line}\n\n`;
+            } else {
+                documentContent += `- <code class='changelog-overview'>${feature.feature}</code>\n`;
+                documentContent += `<code class='changelog-date'>${feature.date}</code>\n`;
+                feature.details.forEach(detail => {
+                    const versionLink = createVersionLink(feature.version);
+                    documentContent += `  - ${detail} <code class='changelog-service'><a href="${versionLink}">${feature.version}</a></code>\n`;
                 });
-            });
-            documentContent += '\n';
+                documentContent += `\n`;
+            }
         });
 
         fs.writeFileSync(filename, documentContent);
@@ -142,14 +116,29 @@ function createOrUpdateMDXDocument(filename, features) {
     }
 }
 
+function createVersionLink(version) {
+    const versionMatch = version.match(/(Service\s\d+\.\d+\.\d+)/);
+    if (versionMatch) {
+        const versionStr = versionMatch[1];
+        const versionNumbersMatch = versionStr.match(/(\d+\.\d+)\.\d+/);
+        if (versionNumbersMatch) {
+            const versionNumbers = versionNumbersMatch[1];
+            const versionLinkPart = versionNumbers.replace(/\./g, '_');
+            return `https://docs.whatap.io/release-notes/service/service-${versionLinkPart}_x`;
+        }
+    }
+    return '#'; // 기본 링크
+}
+
 function sortByDateAndRewriteMDXWithBackup(filename) {
     sortByDateAndRewriteMDX(filename);
 
+    // 백업 파일 생성
     createBackup(filename);
 }
 
 function createBackup(filename) {
-    const backupFolder = './crw-data/backup';
+    const backupFolder = './crw-data/backup'; // 백업 파일을 저장할 폴더
     if (!fs.existsSync(backupFolder)) {
         fs.mkdirSync(backupFolder);
     }
@@ -164,8 +153,8 @@ function sortByDateAndRewriteMDX(filename) {
         const content = fs.readFileSync(filename, 'utf-8');
 
         const features = content.trim().split('\n\n').map(line => {
-            const dateMatch = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
-            return { line, date: dateMatch ? parseDate(dateMatch[1]) : null };
+            const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
+            return { line, date: match ? parseDate(match[1]) : null };
         });
 
         features.sort((a, b) => b.date - a.date);
