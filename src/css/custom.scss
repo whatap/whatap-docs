@@ -1016,6 +1016,26 @@ main {
     section.row {
       margin-top: 40px;
     }
+    .nextstep {
+      ul {
+        // margin-top: 20px;
+        list-style: none;
+        padding-left: 0;
+        li {
+          border-bottom: 1px dotted;
+          margin-top: 15px;
+          padding-bottom: 15px;
+          &:last-of-type {
+            border-bottom: none;
+          }
+          p{
+            &:first-of-type {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
     .margin-bottom--lg {
       margin-right: 12px;
       margin-bottom: 10px !important;
