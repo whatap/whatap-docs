@@ -37,11 +37,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags",
+  "id": "container-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields",
+  "id": "container-fields",
   "level": 4
 }, {
   "value": "쿠버네티스 노드(<code>kube_node</code>) 지표",
@@ -49,11 +49,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-1",
+  "id": "kube_node-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-1",
+  "id": "kube_node-fields",
   "level": 4
 }, {
   "value": "쿠버네티스 이벤트(<code>kube_event</code>) 지표",
@@ -61,11 +61,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-2",
+  "id": "kube_event-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-2",
+  "id": "kube_event-fields",
   "level": 4
 }, {
   "value": "쿠버네티스 클러스터(<code>kube_stat</code>) 지표",
@@ -73,11 +73,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-3",
+  "id": "kube_stat-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-3",
+  "id": "kube_stat-fields",
   "level": 4
 }, {
   "value": "Pod(<code>kube_pod</code>) 지표",
@@ -85,11 +85,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-4",
+  "id": "kube_pod-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-4",
+  "id": "kube_pod-fields",
   "level": 4
 }, {
   "value": "쿠버네티스 Pod 통계(<code>kube_pod_stat</code>) 지표",
@@ -97,11 +97,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-5",
+  "id": "kube_pod_stat-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-5",
+  "id": "kube_pod_stat-fields",
   "level": 4
 }, {
   "value": "쿠버네티스 Horizontal Pod Autoscaler(HPA)(<code>kube_hpa_stat</code>) 지표",
@@ -109,11 +109,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "Tags",
-  "id": "tags-6",
+  "id": "kube_hpa_stat-tags",
   "level": 4
 }, {
   "value": "Fields",
-  "id": "fields-6",
+  "id": "kube_hpa_stat-fields",
   "level": 4
 }];
 function _createMdxContent(props) {
@@ -160,7 +160,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags",
+        id: "container-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -447,7 +447,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields",
+        id: "container-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1251,7 +1251,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags-1",
+        id: "kube_node-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1279,7 +1279,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields-1",
+        id: "kube_node-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1401,7 +1401,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags-2",
+        id: "kube_event-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1477,7 +1477,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields-2",
+        id: "kube_event-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1619,7 +1619,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags-3",
+        id: "kube_stat-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1647,7 +1647,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields-3",
+        id: "kube_stat-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1911,7 +1911,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags-4",
+        id: "kube_pod-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -2107,7 +2107,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields-4",
+        id: "kube_pod-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -2905,7 +2905,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags-5",
+        id: "kube_pod_stat-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -2941,7 +2941,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields-5",
+        id: "kube_pod_stat-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -3083,7 +3083,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags-6",
+        id: "kube_hpa_stat-tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -3111,7 +3111,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields-6",
+        id: "kube_hpa_stat-fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
