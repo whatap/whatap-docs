@@ -143,8 +143,8 @@ const metadata = {
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "Java 1.6 버전 미만",
-    "permalink": "/whatap-docs/java/add-jvm-opt/java-under-ver"
+    "title": "오픈소스 추적",
+    "permalink": "/whatap-docs/java/agent-weaving"
   },
   "next": {
     "title": "설치 문제 해결",

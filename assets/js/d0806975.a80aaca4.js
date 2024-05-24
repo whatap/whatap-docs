@@ -76,8 +76,8 @@ const metadata = {
     "permalink": "/whatap-docs/java/agent-additional-option"
   },
   "next": {
-    "title": "오픈소스 추적",
-    "permalink": "/whatap-docs/java/agent-weaving"
+    "title": "에이전트 업데이트",
+    "permalink": "/whatap-docs/java/update-agent"
   }
 };
 const assets = {

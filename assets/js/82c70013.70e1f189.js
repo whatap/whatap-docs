@@ -72,12 +72,12 @@ const metadata = {
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "비동기 추적",
-    "permalink": "/whatap-docs/java/async-tracking"
+    "title": "Java 1.6 버전 미만",
+    "permalink": "/whatap-docs/java/add-jvm-opt/java-under-ver"
   },
   "next": {
-    "title": "에이전트 업데이트",
-    "permalink": "/whatap-docs/java/update-agent"
+    "title": "설치 점검 사항",
+    "permalink": "/whatap-docs/java/install-check"
   }
 };
 const assets = {
@@ -110,11 +110,13 @@ function _createMdxContent(props) {
       }), ") 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         children: "weaving"
       }), " 옵션을 추가하여 설정하며, 다양한 프레임워크 및 라이브러리 버전에 대응하는 방법을 안내합니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "예를 들어, 프레임워크나 오픈소스로 spring-boot-3.x, feign-client-11, okhttp3-4.4 사용 시 다음과 같이 옵션을 설정하세요."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         className: "language-ini",
-        metastring: "title='${WHATAP_HOME}/whatap.conf'",
-        children: "weaving=  \n"
+        metastring: "title='whatap.conf'",
+        children: "weaving=spring-boot-3.0,feign-11,okhttp3-4.4\n"
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "Java 에이전트를 통해 추적하고 있는 프레임워크 또는 오픈소스에 대한 설정 방법은 다음을 참조하세요."
@@ -810,14 +812,6 @@ function _createMdxContent(props) {
             })]
           })]
         })]
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "프레임워크나 오픈소스로 spring-boot-3.x, feign-client-11, okhttp3-4.4 사용 시 다음과 같이 옵션을 설정하세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-ini",
-        metastring: "title='whatap.conf'",
-        children: "weaving=spring-boot-3.0,feign-11,okhttp3-4.4\n"
       })
     })]
   });

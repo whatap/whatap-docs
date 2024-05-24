@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17158],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5518],{
 
-/***/ 50695:
+/***/ 17349:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -20,19 +20,99 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
-const toc = [];
+const toc = [{
+  "value": "다음 단계",
+  "id": "다음-단계",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    em: "em",
+    h2: "h2",
+    li: "li",
     p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-    children: ["모든 설정을 완료한 다음 애플리케이션 서버를 다시 시작하면 에이전트가 정보를 수집하기 시작합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-      href: "/java/install-check",
-      children: "다음 문서"
-    }), "를 확인하세요."]
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h2",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+      id: "다음-단계",
+      children: "다음 단계"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "nextstep",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "오픈 소스 추적"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["애플리케이션에서 사용하는 프레임워크나 오픈소스 라이브러리에 따라 에이전트 옵션을 추가해야 할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../agent-weaving",
+              children: "다음 문서"
+            }), "를 확인하고 사용자의 애플리케이션 환경에 맞는 에이전트 옵션을 추가 적용하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "설치 점검하기"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["프로젝트 생성 및 에이전트 설치, JVM 옵션까지 모두 적용했다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../install-check",
+              children: "다음 문서"
+            }), "에서 점검 사항을 확인하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "설치 문제 해결"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["에이전트 설치 시 발생할 수 있는 다양한 문제들과 이를 해결하기 위한 구체적인 지침을 제공합니다. 방화벽 설정, SpringBoot 및 Tomcat JMX 설정, OSGI 프레임워크 사용 서버 설정 등 다양한 상황에 대한 해결책을 안내합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../agent-troubleshooting",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "에이전트 설정"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["에이전트 설정(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "whatap.conf"
+            }), ") 파일에 옵션을 적용해 모니터링을 위한 다양한 기능을 제공합니다. 기본 설정부터 서버 연결 및 데이터 전송 설정, 여러 애플리케이션 서버의 설정 파일 관리 방법, 트랜잭션 추적 등을 포함합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../set-agent",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "모니터링 시작하기"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["모든 설정을 완료한 다음 애플리케이션 서버를 다시 시작하세요. 에이전트가 정보를 수집하기 시작합니다. 먼저 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_appDashboard",
+              className: "uitext"
+            }), " 메뉴에서 모니터링 데이터가 수집되는지 확인하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_appDashboard",
+              className: "uitext"
+            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../dashboard",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n"]
+      })
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -46,6 +126,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -89,62 +172,6 @@ function _createMdxContent(props) {
         children: "\n--add-opens=java.base/java.lang=ALL-UNNAMED\n\n"
       })
     })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
-
-/***/ 49110:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [];
-function _createMdxContent(props) {
-  const _components = {
-    admonition: "admonition",
-    p: "p",
-    strong: "strong",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-    type: "note",
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "Platform as a Service"
-      }), "(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "PaaS"
-      }), ") 환경에서는 배포 대상 애플리케이션에 와탭 에이전트의 설정을 포함해 배포합니다."]
-    })
   });
 }
 function MDXContent(props = {}) {
@@ -280,7 +307,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 33864:
+/***/ 80443:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -293,44 +320,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
-/* harmony import */ var _pass_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49110);
-/* harmony import */ var _java_17_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(98379);
-/* harmony import */ var _set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(81823);
-/* harmony import */ var _common_items_start_apm_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(50695);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28453);
+/* harmony import */ var _java_17_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98379);
+/* harmony import */ var _set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81823);
+/* harmony import */ var _common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(17349);
 
 
 const frontMatter = {
-	id: 'ibm-bluemix',
-	title: 'IBM BlueMix',
-	description: 'IBM Bluemix 클라우드 플랫폼에서 Java 애플리케이션을 실행하는 사용자가 와탭의 자바(Java) 모니터링 에이전트를 효과적으로 적용하기 위한 JVM 옵션을 설정하는 방법에 대해 안내합니다. 사용자는 이 문서를 통해 IBM Bluemix 환경에서 와탭의 자바(Java) 에이전트를 설치한 후 에이전를 구성하는 과정, 필요한 JVM 옵션의 추가 방법을 단계별로 확인할 수 있습니다. 추가로 힙스토그램 조회 방법을 포함하고 있습니다.',
+	id: 'weblogic',
+	title: 'WebLogic',
+	description: '와탭 모니터링 솔루션을 웹로직(WebLogic) 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 웹로직(WebLogic) 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 웹로직(WebLogic)과의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.',
 	tags: [
 		'Java',
-		'IBM Bluemix',
+		'WebLogic',
 		'애플리케이션',
 		'에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/add-jvm-opt/ibm-bluemix",
-  "title": "IBM BlueMix",
-  "description": "IBM Bluemix 클라우드 플랫폼에서 Java 애플리케이션을 실행하는 사용자가 와탭의 자바(Java) 모니터링 에이전트를 효과적으로 적용하기 위한 JVM 옵션을 설정하는 방법에 대해 안내합니다. 사용자는 이 문서를 통해 IBM Bluemix 환경에서 와탭의 자바(Java) 에이전트를 설치한 후 에이전를 구성하는 과정, 필요한 JVM 옵션의 추가 방법을 단계별로 확인할 수 있습니다. 추가로 힙스토그램 조회 방법을 포함하고 있습니다.",
-  "source": "@site/docs/java/add-jvm-opt/ibm-bluemix.mdx",
+  "id": "java/add-jvm-opt/weblogic",
+  "title": "WebLogic",
+  "description": "와탭 모니터링 솔루션을 웹로직(WebLogic) 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 웹로직(WebLogic) 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 웹로직(WebLogic)과의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.",
+  "source": "@site/docs/java/add-jvm-opt/weblogic.mdx",
   "sourceDirName": "java/add-jvm-opt",
-  "slug": "/java/add-jvm-opt/ibm-bluemix",
-  "permalink": "/whatap-docs/java/add-jvm-opt/ibm-bluemix",
+  "slug": "/java/add-jvm-opt/weblogic",
+  "permalink": "/whatap-docs/java/add-jvm-opt/weblogic",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/add-jvm-opt/ibm-bluemix.mdx",
+  "editUrl": "undefined/docs/java/add-jvm-opt/weblogic.mdx",
   "tags": [
     {
       "label": "Java",
       "permalink": "/whatap-docs/tags/java"
     },
     {
-      "label": "IBM Bluemix",
-      "permalink": "/whatap-docs/tags/ibm-bluemix"
+      "label": "WebLogic",
+      "permalink": "/whatap-docs/tags/web-logic"
     },
     {
       "label": "애플리케이션",
@@ -343,154 +369,95 @@ const metadata = {
   ],
   "version": "current",
   "frontMatter": {
-    "id": "ibm-bluemix",
-    "title": "IBM BlueMix",
-    "description": "IBM Bluemix 클라우드 플랫폼에서 Java 애플리케이션을 실행하는 사용자가 와탭의 자바(Java) 모니터링 에이전트를 효과적으로 적용하기 위한 JVM 옵션을 설정하는 방법에 대해 안내합니다. 사용자는 이 문서를 통해 IBM Bluemix 환경에서 와탭의 자바(Java) 에이전트를 설치한 후 에이전를 구성하는 과정, 필요한 JVM 옵션의 추가 방법을 단계별로 확인할 수 있습니다. 추가로 힙스토그램 조회 방법을 포함하고 있습니다.",
+    "id": "weblogic",
+    "title": "WebLogic",
+    "description": "와탭 모니터링 솔루션을 웹로직(WebLogic) 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 웹로직(WebLogic) 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 웹로직(WebLogic)과의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.",
     "tags": [
       "Java",
-      "IBM Bluemix",
+      "WebLogic",
       "애플리케이션",
       "에이전트"
     ]
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "Play2",
-    "permalink": "/whatap-docs/java/add-jvm-opt/play2"
+    "title": "JEUS",
+    "permalink": "/whatap-docs/java/add-jvm-opt/jeus"
   },
   "next": {
-    "title": "Elastic Beanstalk",
-    "permalink": "/whatap-docs/java/add-jvm-opt/elastic-beanstalk"
+    "title": "WebSphere",
+    "permalink": "/whatap-docs/java/add-jvm-opt/websphere"
   }
 };
 const assets = {
 
 };
 
-
+/*다음 단계*/
 
 
 
 
 
 const toc = [{
-  "value": "에이전트 적용하기",
-  "id": "에이전트-적용하기",
+  "value": "JVM 옵션 추가",
+  "id": "jvm-옵션-추가",
   "level": 2
-}, ..._pass_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._java_17_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "모니터링 시작하기",
-  "id": "모니터링-시작하기",
-  "level": 2
-}, ..._common_items_start_apm_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+}, ..._java_17_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
     admonition: "admonition",
     code: "code",
-    em: "em",
     h2: "h2",
-    li: "li",
-    ol: "ol",
     p: "p",
     pre: "pre",
     section: "section",
-    strong: "strong",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "에이전트-적용하기",
-        children: "에이전트 적용하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "IBM BlueMix"
-        }), "를 이용해 배포할 경우 와탭 에이전트를 적용하는 방법입니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://console.bluemix.net/docs/apps/index.html%E2%80%8B",
-          children: "IBM BlueMix"
-        }), "는 컨테이너로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "WebSphere Liberty"
-        }), " 환경을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Liberty"
-        }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "WebSphere Application Server"
-        }), "와 다른 경량화 환경으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Spring Boot"
-        }), "가 동작하는 방식과 유사합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pass_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["다음은 설정 환경 예제입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://cloud.ibm.com/docs",
-          children: "가이드"
-        }), "에 따른 환경을 구성할 경우 로컬 개발 환경에서 생성하는 파일들입니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "whatap@vmwas01:/apps/bluemix/java-helloworld$ ls -alrt\n합계 64\ndrwxrwxr-x 3 whatap whatap  4096 10월 29 13:13 ..\n-rw-rw-r-- 1 whatap whatap  1079 10월 29 13:13 .classpath\n-rw-rw-r-- 1 whatap whatap  1184 10월 29 13:13 .project\n-rw-rw-r-- 1 whatap whatap    39 10월 29 13:13 .gitignore\n-rw-rw-r-- 1 whatap whatap   151 10월 29 13:13 CONTRIBUTING.md\ndrwxrwxr-x 2 whatap whatap  4096 10월 29 13:13 .settings\n-rw-rw-r-- 1 whatap whatap  2823 10월 29 13:13 pom.xml\n-rw-rw-r-- 1 whatap whatap   122 10월 29 13:13 manifest.yml\n-rw-rw-r-- 1 whatap whatap  3522 10월 29 13:13 README.md\n-rw-rw-r-- 1 whatap whatap 11323 10월 29 13:13 LICENSE\ndrwxrwxr-x 3 whatap whatap  4096 10월 29 13:13 src\ndrwxrwxr-x 2 whatap whatap  4096 10월 29 13:13 target\ndrwxrwxr-x 8 whatap whatap  4096 10월 29 13:13 .git\ndrwxrwxr-x 6 whatap whatap  4096 10월 29 15:26 .\n"
+  }, {TabItem, Tabs} = _components;
+  if (!TabItem) _missingMdxReference("TabItem", true);
+  if (!Tabs) _missingMdxReference("Tabs", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h2",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+      id: "jvm-옵션-추가",
+      children: "JVM 옵션 추가"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "WebLogic 애플리케이션 서버 환경에서 Java 모니터링 에이전트를 효과적으로 사용하기 위해 필요한 JVM 옵션을 추가하는 방법을 안내합니다."
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "사용하는 운영체제를 확인 후 설정을 완료하세요."
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
+        value: "linux",
+        label: "Linux",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            metastring: "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh\"",
+            children: "########## WHATAP START ############\nWHATAP_HOME=/path/to/whatap\nWHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`\nJAVA_OPTIONS=\"${JAVA_OPTIONS} -javaagent:${WHATAP_JAR} \"\n########## WHATAP END ############\n"
+          })
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "${APP_HOME}"
-            }), "에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "src/main/resources/whatap-agent/"
-            }), " 디렉터리를 생성하고 jar 파일, conf 파일을 복사하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              children: "$ mkdir -p src/main/resources/whatap-agent/\n$ cp /apps/whatap/whatap.agent.tracer-1.5.4.jar src/main/resources/whatap-agent/\n$ cp /apps/whatap/whatap.conf src/main/resources/whatap-agent/\n"
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "${APP_HOME}"
-              }), "/manifest.yml"]
-            }), " 파일에 옵션을 추가하세요. yml 파일이므로 공백, 들여쓰기 기준을 잘 맞춰 작성하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-yaml",
-              metastring: "title=${APP_HOME}/manifest.yml {8-9} showLineNumbers",
-              children: "---\napplications:\n- name: sample-java-helloworld\nrandom-route: true\nmemory: 256M\npath: target/JavaHelloWorldApp.war\n# 여기서부터 추가합니다.\nenv:\n    JAVA_OPTS: \"-javaagent:/{APPLICATION_DIR}/WEB-INF/classes/whatap-agent/whatap.agent-X.Y.Z.jar -Dorg.osgi.framework.bootdelegation=whatap.* \"\n"
-            })
-          }), "\n"]
-        }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_java_17_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "whatap.conf"
-            }), " 설정은 PaaS가 아닌 환경과 동일하게 적용합니다. 적용 후 에이전트 명 식별에 어려울 수 있으니 상황에 맞는 에이전트 명을 적용하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["에이전트 네이밍에 관한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../agent-name",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
+        value: "windows",
+        label: "Windows",
+        default: true,
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-batch",
+            metastring: "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.bat\"",
+            children: "rem ########## WHATAP START ############\nset WHATAP_HOME=\\path\\to\\whatap\nfor /f %%f in ('dir /b /on \"%WHATAP_HOME%\\whatap.agent-*.jar\"') do set last=%%f\nset WHATAP_JAR=%last%\nset WHATAP_OPTS=-javaagent:%WHATAP_HOME%\\%WHATAP_JAR%\nif \"x%JAVA_OPTIONS%\"==\"x\" goto setWhatap\nset JAVA_OPTIONS_TMP=%JAVA_OPTIONS:\"=%\nif not \"x%JAVA_OPTIONS_TMP:whatap=%\"==\"x%JAVA_OPTIONS_TMP%\" goto endWhatap\n:setWhatap\nset JAVA_OPTIONS=%JAVA_OPTIONS% %WHATAP_OPTS%\n:endWhatap\nrem ########## WHATAP END ############\n"
+          })
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "모니터링-시작하기",
-        children: "모니터링 시작하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_start_apm_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
-    })]
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_java_17_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -499,6 +466,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

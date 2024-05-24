@@ -164,8 +164,8 @@ const metadata = {
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "오픈소스 추적",
-    "permalink": "/whatap-docs/java/agent-weaving"
+    "title": "비동기 추적",
+    "permalink": "/whatap-docs/java/async-tracking"
   },
   "next": {
     "title": "에이전트 삭제 및 롤백",
