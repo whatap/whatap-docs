@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86024],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44258],{
 
 /***/ 6526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1549,7 +1549,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["선택한 에이전트 항목을 초기화하려면 에이전트 선택 옵션 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
           children: "Total"
-        }), " 버튼을 선택하세요."]
+        }), " 버튼을 클릭하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "apm-dashboard-reset-agent.png",
         desc: "Total"
@@ -2285,7 +2285,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 45051:
+/***/ 23167:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2316,7 +2316,7 @@ const frontMatter = {
 	title: '애플리케이션 대시보드',
 	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	tags: [
-		'PHP',
+		'.NET',
 		'대시보드',
 		'애플리케이션',
 		'애플리케이션 모니터링'
@@ -2324,20 +2324,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/dashboard",
+  "id": "dotnet/dashboard",
   "title": "애플리케이션 대시보드",
   "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/php/dashboard.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/dashboard",
-  "permalink": "/whatap-docs/php/dashboard",
+  "source": "@site/docs/dotnet/dashboard.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/dashboard",
+  "permalink": "/whatap-docs/dotnet/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/dashboard.mdx",
+  "editUrl": "undefined/docs/dotnet/dashboard.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "대시보드",
@@ -2358,20 +2358,20 @@ const metadata = {
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "tags": [
-      "PHP",
+      ".NET",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/php/dashboard-intro"
+    "permalink": "/whatap-docs/dotnet/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/php/dashboard-transactionmap"
+    "permalink": "/whatap-docs/dotnet/dashboard-transactionmap"
   }
 };
 const assets = {

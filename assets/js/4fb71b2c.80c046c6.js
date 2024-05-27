@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15241],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76912],{
 
 /***/ 6526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1549,7 +1549,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["선택한 에이전트 항목을 초기화하려면 에이전트 선택 옵션 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
           children: "Total"
-        }), " 버튼을 선택하세요."]
+        }), " 버튼을 클릭하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "apm-dashboard-reset-agent.png",
         desc: "Total"
@@ -2285,7 +2285,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 62576:
+/***/ 70563:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2316,7 +2316,7 @@ const frontMatter = {
 	title: '애플리케이션 대시보드',
 	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	tags: [
-		'Node.js',
+		'Python',
 		'대시보드',
 		'애플리케이션',
 		'애플리케이션 모니터링'
@@ -2324,20 +2324,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/dashboard",
+  "id": "python/dashboard",
   "title": "애플리케이션 대시보드",
   "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/nodejs/dashboard.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/dashboard",
-  "permalink": "/whatap-docs/nodejs/dashboard",
+  "source": "@site/docs/python/dashboard.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/dashboard",
+  "permalink": "/whatap-docs/python/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/dashboard.mdx",
+  "editUrl": "undefined/docs/python/dashboard.mdx",
   "tags": [
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "label": "대시보드",
@@ -2358,20 +2358,20 @@ const metadata = {
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "tags": [
-      "Node.js",
+      "Python",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/nodejs/dashboard-intro"
+    "permalink": "/whatap-docs/python/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/nodejs/dashboard-transactionmap"
+    "permalink": "/whatap-docs/python/dashboard-transactionmap"
   }
 };
 const assets = {
