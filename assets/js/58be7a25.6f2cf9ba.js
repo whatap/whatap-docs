@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78469],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18884],{
 
 /***/ 17349:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -28,10 +28,12 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    code: "code",
     em: "em",
     h2: "h2",
     li: "li",
     p: "p",
+    pre: "pre",
     section: "section",
     strong: "strong",
     ul: "ul",
@@ -52,11 +54,19 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "오픈 소스 추적"
             })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "애플리케이션에서 사용하는 프레임워크나 오픈소스 라이브러리에 따라 에이전트 옵션을 추가해야 할 수 있습니다. 예를 들어, 프레임워크나 오픈소스로 spring-boot-3.x, feign-client-11, okhttp3-4.4 사용 시 다음과 같이 옵션을 설정하세요."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='whatap.conf'",
+              children: "weaving=spring-boot-3.0,feign-11,okhttp3-4.4\n"
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["애플리케이션에서 사용하는 프레임워크나 오픈소스 라이브러리에 따라 에이전트 옵션을 추가해야 할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            children: ["사용자의 애플리케이션 환경에 맞는 프레임워크나 오픈소스 라이브러리를 설정하는 방법은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "../agent-weaving",
               children: "다음 문서"
-            }), "를 확인하고 사용자의 애플리케이션 환경에 맞는 에이전트 옵션을 추가 적용하세요."]
+            }), "를 참조하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -172,62 +182,6 @@ function _createMdxContent(props) {
         children: "\n--add-opens=java.base/java.lang=ALL-UNNAMED\n\n"
       })
     })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
-
-/***/ 49110:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [];
-function _createMdxContent(props) {
-  const _components = {
-    admonition: "admonition",
-    p: "p",
-    strong: "strong",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-    type: "note",
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "Platform as a Service"
-      }), "(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "PaaS"
-      }), ") 환경에서는 배포 대상 애플리케이션에 와탭 에이전트의 설정을 포함해 배포합니다."]
-    })
   });
 }
 function MDXContent(props = {}) {
@@ -363,7 +317,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 74502:
+/***/ 93035:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -376,44 +330,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
-/* harmony import */ var _pass_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49110);
-/* harmony import */ var _java_17_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(98379);
-/* harmony import */ var _set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(81823);
-/* harmony import */ var _common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(17349);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28453);
+/* harmony import */ var _java_17_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98379);
+/* harmony import */ var _set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81823);
+/* harmony import */ var _common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(17349);
 
 
 const frontMatter = {
-	id: 'elastic-beanstalk',
-	title: 'Elastic Beanstalk',
-	description: 'AWS Elastic Beanstalk 환경에서 Java 애플리케이션을 실행하는 사용자가 와탭의 자바(Java) 모니터링 에이전트를 효과적으로 적용하기 위한 JVM 옵션을 설정하는 방법을 안내합니다. Elastic Beanstalk에 맞춘 와탭 자바(Java) 에이전트의 설치 및 구성 과정, 필수 JVM 옵션의 추가 및 설정 방법을 확인할 수 있습니다. 추가로 힙스토그램 조회 방법을 포함하고 있습니다.',
+	id: 'docker',
+	title: 'Docker',
+	description: '도커(Docker) 환경에서 Java 애플리케이션에 와탭 자바(Java) 모니터링 에이전트를 적용하는 방법을 단계별로 안내합니다. 사용자는 기존 Docker 이미지에 와탭 자바(Java) 에이전트 설정을 추가하여 새로운 이미지를 빌드하는 과정, whatap.conf 파일 생성, Dockerfile 작성, JAVA_OPT 수정 방법 등을 확인할 수 있습니다. 또한, Java 17 이상의 버전에서 필요한 추가 JVM 옵션과 다양한 Java 버전에 따른 힙 히스토그램 조회 설정 방법도 제공합니다.',
 	tags: [
 		'Java',
-		'Elastic Beanstalk',
+		'Docker',
 		'애플리케이션',
 		'에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/add-jvm-opt/elastic-beanstalk",
-  "title": "Elastic Beanstalk",
-  "description": "AWS Elastic Beanstalk 환경에서 Java 애플리케이션을 실행하는 사용자가 와탭의 자바(Java) 모니터링 에이전트를 효과적으로 적용하기 위한 JVM 옵션을 설정하는 방법을 안내합니다. Elastic Beanstalk에 맞춘 와탭 자바(Java) 에이전트의 설치 및 구성 과정, 필수 JVM 옵션의 추가 및 설정 방법을 확인할 수 있습니다. 추가로 힙스토그램 조회 방법을 포함하고 있습니다.",
-  "source": "@site/docs/java/add-jvm-opt/elastic-beanstalk.mdx",
+  "id": "java/add-jvm-opt/docker",
+  "title": "Docker",
+  "description": "도커(Docker) 환경에서 Java 애플리케이션에 와탭 자바(Java) 모니터링 에이전트를 적용하는 방법을 단계별로 안내합니다. 사용자는 기존 Docker 이미지에 와탭 자바(Java) 에이전트 설정을 추가하여 새로운 이미지를 빌드하는 과정, whatap.conf 파일 생성, Dockerfile 작성, JAVA_OPT 수정 방법 등을 확인할 수 있습니다. 또한, Java 17 이상의 버전에서 필요한 추가 JVM 옵션과 다양한 Java 버전에 따른 힙 히스토그램 조회 설정 방법도 제공합니다.",
+  "source": "@site/docs/java/add-jvm-opt/docker.mdx",
   "sourceDirName": "java/add-jvm-opt",
-  "slug": "/java/add-jvm-opt/elastic-beanstalk",
-  "permalink": "/whatap-docs/java/add-jvm-opt/elastic-beanstalk",
+  "slug": "/java/add-jvm-opt/docker",
+  "permalink": "/whatap-docs/java/add-jvm-opt/docker",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/add-jvm-opt/elastic-beanstalk.mdx",
+  "editUrl": "undefined/docs/java/add-jvm-opt/docker.mdx",
   "tags": [
     {
       "label": "Java",
       "permalink": "/whatap-docs/tags/java"
     },
     {
-      "label": "Elastic Beanstalk",
-      "permalink": "/whatap-docs/tags/elastic-beanstalk"
+      "label": "Docker",
+      "permalink": "/whatap-docs/tags/docker"
     },
     {
       "label": "애플리케이션",
@@ -426,24 +379,24 @@ const metadata = {
   ],
   "version": "current",
   "frontMatter": {
-    "id": "elastic-beanstalk",
-    "title": "Elastic Beanstalk",
-    "description": "AWS Elastic Beanstalk 환경에서 Java 애플리케이션을 실행하는 사용자가 와탭의 자바(Java) 모니터링 에이전트를 효과적으로 적용하기 위한 JVM 옵션을 설정하는 방법을 안내합니다. Elastic Beanstalk에 맞춘 와탭 자바(Java) 에이전트의 설치 및 구성 과정, 필수 JVM 옵션의 추가 및 설정 방법을 확인할 수 있습니다. 추가로 힙스토그램 조회 방법을 포함하고 있습니다.",
+    "id": "docker",
+    "title": "Docker",
+    "description": "도커(Docker) 환경에서 Java 애플리케이션에 와탭 자바(Java) 모니터링 에이전트를 적용하는 방법을 단계별로 안내합니다. 사용자는 기존 Docker 이미지에 와탭 자바(Java) 에이전트 설정을 추가하여 새로운 이미지를 빌드하는 과정, whatap.conf 파일 생성, Dockerfile 작성, JAVA_OPT 수정 방법 등을 확인할 수 있습니다. 또한, Java 17 이상의 버전에서 필요한 추가 JVM 옵션과 다양한 Java 버전에 따른 힙 히스토그램 조회 설정 방법도 제공합니다.",
     "tags": [
       "Java",
-      "Elastic Beanstalk",
+      "Docker",
       "애플리케이션",
       "에이전트"
     ]
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "IBM BlueMix",
-    "permalink": "/whatap-docs/java/add-jvm-opt/ibm-bluemix"
+    "title": "Elastic Beanstalk",
+    "permalink": "/whatap-docs/java/add-jvm-opt/elastic-beanstalk"
   },
   "next": {
-    "title": "Docker",
-    "permalink": "/whatap-docs/java/add-jvm-opt/docker"
+    "title": "배치 애플리케이션",
+    "permalink": "/whatap-docs/java/add-jvm-opt/batch-app"
   }
 };
 const assets = {
@@ -456,12 +409,11 @@ const assets = {
 
 
 
-
 const toc = [{
   "value": "에이전트 적용하기",
   "id": "에이전트-적용하기",
   "level": 2
-}, ..._pass_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._java_17_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+}, ..._java_17_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
@@ -475,8 +427,7 @@ function _createMdxContent(props) {
     pre: "pre",
     section: "section",
     strong: "strong",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -484,157 +435,99 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
       id: "에이전트-적용하기",
       children: "에이전트 적용하기"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "Elastic Beanstalk"
-      }), "를 이용해 배포할 경우 와탭 에이전트를 적용하는 방법입니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pass_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "기존 Docker 이미지를 바탕으로 와탭 에이전트 설정을 추가한 이미지를 빌드하세요."
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["이 문서에서는 Java 에이전트를 설치하는 경우만을 다룹니다. 와탭 쿠버네티스 모니터링과 함께 적용하는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "../../kubernetes/install-docker-java",
+          children: "다음 문서"
+        }), "를 참조하세요."]
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["Spring Boot 결과물을 jar로 배포할 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: ".ebextensions"
-          }), "의 내용을 적용할 수 없습니다. 다음 파일들을 압축해 zip 형태로 배포하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: ".elasticbeanstalk/config.yml"
-            }), ": eb 명령을 실행하는 디렉터리 하위에 자동 생성"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-              children: [".ebextensions/", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "{config_name}"
-              }), ".config"]
-            }), ": eb 설정 파일"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "Procfile"
-            }), ": JVM command line 옵션을 설정하기 위한 파일"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "{application}"
-              }), ".jar"]
-            }), ": 실행할 applicaion.jar 파일"]
-          }), "\n"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "Service에 적용할 와탭 에이전트의 파일을 압축해 S3(혹은 다운로드할 수 있는 public 경로)에 업로드하세요."
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "paramkey.txt"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "whatap.agent-2.0_25.jar"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "whatap.conf"
-            })
-          }), "\n"]
+          children: "Docker 빌드 디렉터리를 생성하세요."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-bash",
-            children: "# 디렉터리 압축하기\nzip -r whatap-agent.zip agent\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-            children: [".ebextension/", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "{config_name}"
-            }), ".config"]
-          }), " 파일에 다운로드할 와탭 에이전트 경로를 입력하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "다운로드할 수 있도록 압축 파일 형태로 만들어 둔 경우 eb를 실행해 자동으로 다운로드한 다음 압축을 풉니다."
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-yaml",
-            metastring: "title=ebextension/{config_name}.config",
-            children: "sources:\n  target directory:\n    S3경로\n"
-          })
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-yaml",
-            metastring: "title='Example'",
-            children: "sources:\n  /home/webapp:\n    http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["와탭 에이전트 옵션을 추가한 JVM command를 입력해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "Procfile"
-          }), "을 작성하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-yaml",
-            metastring: "title='Procfile'",
-            children: "web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar\n"
-          })
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-yaml",
-            metastring: "title='Example'",
-            children: "web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar\n"
+            children: "mkdir -p {Docker build dir}\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "Procfile"
-          }), " 파일과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: ".ebextensions"
-          }), " 파일, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "{application}"
-            }), ".jar"]
-          }), " 파일을 압축하세요."]
+            children: "whatap.conf"
+          }), " 파일을 생성하세요."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-bash",
-            children: "zip -r {application}.zip Procfile .ebextensions/{application}.jar\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: ".elasticbeanstalk/config.yml"
-          }), " 파일에 배포할 zip파일 경로를 추가하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-yaml",
-            children: "deploy:\n  artifact: /path/to/{application}.zip\n"
+            className: "language-docker",
+            metastring: "{3,5} showLineNumbers",
+            children: "cat >{Docker build Dir}/whatap.conf <<EOL\n# 액세스 키를 입력하세요.\nlicense=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX \n# 수집 서버 IP 정보를 입력하세요.\nwhatap.server.host=xx.xx.xx.xx/yy.yy.yy.yy \nEOL\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "eb 배포 명령어를 실행하세요."
+          children: "Dockerfile을 생성하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["이미지를 빌드할 경우 와탭 이미지에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "-javaagent"
+          }), " 옵션에 적용할 jar 파일을 복사할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-docker",
+            children: "cat >/home/silver/whatap/docker/Dockerfile <<EOL\nFROM whatap/kube_mon as build\n## 실제 이미지 생성 (기존 이미지에 Whatap 추가)\n## $Image_Name(이미지명)\nFROM $Image_Name\nRUN mkdir -p /whatap\nCOPY --from=build /data/agent/micro/whatap.agent-*.jar /whatap\nCOPY ./whatap.conf /whatap/\n#...\nEOL\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "JAVA_OPT"
+          }), "에 다음 내용을 추가하세요."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-bash",
-            children: "eb deploy\n"
+            children: "WHATAP_HOME=/whatap\nWHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1\nexport JAVA_OPTS=\"-javaagent:${WHATAP_JAR} \"\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "Docker를 빌드하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            children: "cd docker\ndocker build -t $Image_Name\n"
           })
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_java_17_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_java_17_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html",
-          children: "AWS 가이드 문서"
-        }), "를 참조하세요."]
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["Java 에이전트 파일 이름은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "Rename"
+        }), " 기능을 활용해 수정할 수 있습니다. Java 에이전트의 이름을 수정했다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "JAVA_OPTS"
+        }), "에 새로운 Java 에이전트 이름을 등록하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Java 에이전트 이름 수정 방법 예시"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-bash",
+          children: "java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.Rename -from whatap.agent-X.Y.Z.jar -to whatap.agent.jar\n"
+        })
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_set_heap_memory_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_next_step_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

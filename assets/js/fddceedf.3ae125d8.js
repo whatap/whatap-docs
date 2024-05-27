@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5518],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[66126],{
 
 /***/ 17349:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -28,10 +28,12 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    code: "code",
     em: "em",
     h2: "h2",
     li: "li",
     p: "p",
+    pre: "pre",
     section: "section",
     strong: "strong",
     ul: "ul",
@@ -52,11 +54,19 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "오픈 소스 추적"
             })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "애플리케이션에서 사용하는 프레임워크나 오픈소스 라이브러리에 따라 에이전트 옵션을 추가해야 할 수 있습니다. 예를 들어, 프레임워크나 오픈소스로 spring-boot-3.x, feign-client-11, okhttp3-4.4 사용 시 다음과 같이 옵션을 설정하세요."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='whatap.conf'",
+              children: "weaving=spring-boot-3.0,feign-11,okhttp3-4.4\n"
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["애플리케이션에서 사용하는 프레임워크나 오픈소스 라이브러리에 따라 에이전트 옵션을 추가해야 할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            children: ["사용자의 애플리케이션 환경에 맞는 프레임워크나 오픈소스 라이브러리를 설정하는 방법은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "../agent-weaving",
               children: "다음 문서"
-            }), "를 확인하고 사용자의 애플리케이션 환경에 맞는 에이전트 옵션을 추가 적용하세요."]
+            }), "를 참조하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -307,7 +317,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 80443:
+/***/ 44666:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -327,36 +337,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'weblogic',
-	title: 'WebLogic',
-	description: '와탭 모니터링 솔루션을 웹로직(WebLogic) 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 웹로직(WebLogic) 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 웹로직(WebLogic)과의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.',
+	id: 'liberty',
+	title: 'Liberty',
+	description: '와탭 모니터링 솔루션을 Liberty 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 Liberty 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 Liberty와의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.',
 	tags: [
 		'Java',
-		'WebLogic',
+		'Liberty',
 		'애플리케이션',
 		'에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/add-jvm-opt/weblogic",
-  "title": "WebLogic",
-  "description": "와탭 모니터링 솔루션을 웹로직(WebLogic) 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 웹로직(WebLogic) 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 웹로직(WebLogic)과의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.",
-  "source": "@site/docs/java/add-jvm-opt/weblogic.mdx",
+  "id": "java/add-jvm-opt/liberty",
+  "title": "Liberty",
+  "description": "와탭 모니터링 솔루션을 Liberty 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 Liberty 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 Liberty와의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.",
+  "source": "@site/docs/java/add-jvm-opt/liberty.mdx",
   "sourceDirName": "java/add-jvm-opt",
-  "slug": "/java/add-jvm-opt/weblogic",
-  "permalink": "/whatap-docs/java/add-jvm-opt/weblogic",
+  "slug": "/java/add-jvm-opt/liberty",
+  "permalink": "/whatap-docs/java/add-jvm-opt/liberty",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/add-jvm-opt/weblogic.mdx",
+  "editUrl": "undefined/docs/java/add-jvm-opt/liberty.mdx",
   "tags": [
     {
       "label": "Java",
       "permalink": "/whatap-docs/tags/java"
     },
     {
-      "label": "WebLogic",
-      "permalink": "/whatap-docs/tags/web-logic"
+      "label": "Liberty",
+      "permalink": "/whatap-docs/tags/liberty"
     },
     {
       "label": "애플리케이션",
@@ -369,24 +379,24 @@ const metadata = {
   ],
   "version": "current",
   "frontMatter": {
-    "id": "weblogic",
-    "title": "WebLogic",
-    "description": "와탭 모니터링 솔루션을 웹로직(WebLogic) 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 웹로직(WebLogic) 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 웹로직(WebLogic)과의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.",
+    "id": "liberty",
+    "title": "Liberty",
+    "description": "와탭 모니터링 솔루션을 Liberty 애플리케이션에 통합하기 위한 JVM(Java Virtual Machine) 옵션 추가 방법에 대한 상세한 안내를 제공합니다. 사용자는 본 문서를 통해 자바(Java) 에이전트 설치 후 Liberty 애플리케이션의 성능 및 가용성 모니터링을 위해 필요한 JVM 설정을 적용하는 방법을 단계별로 확인할 수 있습니다. 에이전트 설치 과정 중 필수 JVM 옵션의 구성과 Liberty와의 원활한 통합을 위한 최적의 설정 방법, 힙스토그램 조회 방법을 포함하고 있습니다.",
     "tags": [
       "Java",
-      "WebLogic",
+      "Liberty",
       "애플리케이션",
       "에이전트"
     ]
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "JEUS",
-    "permalink": "/whatap-docs/java/add-jvm-opt/jeus"
+    "title": "Resin",
+    "permalink": "/whatap-docs/java/add-jvm-opt/resin"
   },
   "next": {
-    "title": "WebSphere",
-    "permalink": "/whatap-docs/java/add-jvm-opt/websphere"
+    "title": "Jetty",
+    "permalink": "/whatap-docs/java/add-jvm-opt/jetty"
   }
 };
 const assets = {
@@ -408,47 +418,31 @@ function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
     code: "code",
+    em: "em",
     h2: "h2",
     p: "p",
     pre: "pre",
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {TabItem, Tabs} = _components;
-  if (!TabItem) _missingMdxReference("TabItem", true);
-  if (!Tabs) _missingMdxReference("Tabs", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
       id: "jvm-옵션-추가",
       children: "JVM 옵션 추가"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "WebLogic 애플리케이션 서버 환경에서 Java 모니터링 에이전트를 효과적으로 사용하기 위해 필요한 JVM 옵션을 추가하는 방법을 안내합니다."
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "사용하는 운영체제를 확인 후 설정을 완료하세요."
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
-        value: "linux",
-        label: "Linux",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-bash",
-            metastring: "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh\"",
-            children: "########## WHATAP START ############\nWHATAP_HOME=/path/to/whatap\nWHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`\nJAVA_OPTIONS=\"${JAVA_OPTIONS} -javaagent:${WHATAP_JAR} \"\n########## WHATAP END ############\n"
-          })
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
-        value: "windows",
-        label: "Windows",
-        default: true,
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-batch",
-            metastring: "title=\"{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.bat\"",
-            children: "rem ########## WHATAP START ############\nset WHATAP_HOME=\\path\\to\\whatap\nfor /f %%f in ('dir /b /on \"%WHATAP_HOME%\\whatap.agent-*.jar\"') do set last=%%f\nset WHATAP_JAR=%last%\nset WHATAP_OPTS=-javaagent:%WHATAP_HOME%\\%WHATAP_JAR%\nif \"x%JAVA_OPTIONS%\"==\"x\" goto setWhatap\nset JAVA_OPTIONS_TMP=%JAVA_OPTIONS:\"=%\nif not \"x%JAVA_OPTIONS_TMP:whatap=%\"==\"x%JAVA_OPTIONS_TMP%\" goto endWhatap\n:setWhatap\nset JAVA_OPTIONS=%JAVA_OPTIONS% %WHATAP_OPTS%\n:endWhatap\nrem ########## WHATAP END ############\n"
-          })
-        })
-      })]
+      children: "Liberty 애플리케이션 서버 환경에서 Java 모니터링 에이전트를 효과적으로 사용하기 위해 필요한 JVM 옵션을 추가하는 방법을 안내합니다."
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: "jvm.options"
+      }), " 파일에 에이전트 옵션을 추가하세요. 파일이 없는 경우 신규로 생성하세요."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        className: "language-bash",
+        metastring: "title=/wasliberty/usr/servers/defaultServer/jvm.options {2} showLineNumbers",
+        children: "-javaagent:/app/whatap/whatap.agent-2.1.1.jar\n-Dorg.osgi.framework.bootdelegation=whatap.* ## OSGI 프레임워크 설정을 위한 추가 옵션 ##\n"
+      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_java_17_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})
@@ -466,9 +460,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
