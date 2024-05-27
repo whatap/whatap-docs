@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50380],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21189],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -88,14 +88,30 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "java,php,python,golang,dotnet,nodejs",
+      product: "java",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_collectionMap",
             className: "uitext"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "에이전트를 기준으로 클래스(Class)를 검색할 수 있는 기능을 제공합니다. 이 기능을 통해 사용자는 특정 에이전트에서 수집된 클래스 정보를 탐색하고 분석할 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["JVM에 지정된 클래스(Class)가 사용하고 있는 Collection(예, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "java.util.Map"
+            }), ")에 대한 정보를 제공합니다. 이 기능을 사용하려면 다음 에이전트 옵션을 추가하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource\n"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["이 기능은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "../release-notes/java/java-2_1_2#collectionmonitor",
+                children: "Java 에이전트 2.1.2 버전"
+              }), " 이상에서 지원합니다."]
+            })
           }), "\n"]
         }), "\n"]
       })
@@ -232,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 7574:
+/***/ 81895:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -254,26 +270,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'네트워크 성능 모니터링',
+		'.NET',
+		'애플리케이션',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "npm/labs",
+  "id": "dotnet/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/npm/labs.mdx",
-  "sourceDirName": "npm",
-  "slug": "/npm/labs",
-  "permalink": "/whatap-docs/npm/labs",
+  "source": "@site/docs/dotnet/labs.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/labs",
+  "permalink": "/whatap-docs/dotnet/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/npm/labs.mdx",
+  "editUrl": "undefined/docs/dotnet/labs.mdx",
   "tags": [
     {
-      "label": "네트워크 성능 모니터링",
-      "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
+    },
+    {
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     },
     {
       "label": "실험실",
@@ -286,14 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "네트워크 성능 모니터링",
+      ".NET",
+      "애플리케이션",
       "실험실"
     ]
   },
-  "sidebar": "npmsidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/npm/set-event-history"
+    "title": "인스턴스 성능 관리",
+    "permalink": "/whatap-docs/dotnet/instance-performance-analysis"
   }
 };
 const assets = {

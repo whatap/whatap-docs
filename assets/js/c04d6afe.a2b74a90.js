@@ -69,7 +69,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "Collection 모니터링 수정",
-  "id": "collection-모니터링-수정",
+  "id": "collectionmonitor",
   "level": 3
 }, {
   "value": "데이터베이스 호출시 에러 건수를 실시간 통계에 추가",
@@ -258,7 +258,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "collection-모니터링-수정",
+        id: "collectionmonitor",
         children: "Collection 모니터링 수정"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "Collection 클래스를 hooking 하는 기존 방식에서 CollectionHolder를 통해 간접적으로 Collection 클래스 정보를 조회 할 수 있도록 수정하였습니다."
