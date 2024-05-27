@@ -268,6 +268,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'java/labs'
           ],
         }
       ]
@@ -507,6 +508,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'php/labs'
           ],
         },
       ]
@@ -724,7 +726,8 @@ const sidebars = {
                 'nodejs/set-event-format',
               ],
             },
-            'nodejs/instance-performance-analysis'
+            'nodejs/instance-performance-analysis',
+            'nodejs/labs'
           ],
         }
       ]
@@ -950,6 +953,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'python/labs'
           ],
         },
       ]
@@ -1159,6 +1163,7 @@ const sidebars = {
               ],
             },
             'dotnet/instance-performance-analysis',
+            'dotnet/labs'
           ],
         },
       ]
@@ -1372,6 +1377,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'golang/labs'
           ],
         },
       ]
@@ -1556,6 +1562,7 @@ const sidebars = {
                 'postgresql/set-event-format',
               ],
             },
+            'postgresql/labs'
           ]
         }
       ],
@@ -1706,6 +1713,7 @@ const sidebars = {
                 'oracle/set-event-format',
               ],
             },
+            'oracle/labs'
           ]
         }
       ],
@@ -1875,7 +1883,8 @@ const sidebars = {
                 'mysql/set-event-history',
                 'mysql/set-event-format',
               ],
-            }
+            },
+            'mysql/labs'
           ]
         }
       ],
@@ -2016,6 +2025,7 @@ const sidebars = {
                 'mssql/set-event-format',
               ],
             },
+            'mssql/labs'
           ]
         }
       ],
@@ -2156,6 +2166,7 @@ const sidebars = {
                 'tibero/set-event-format',
               ],
             },
+            'tibero/labs'
           ]
         }
       ],
@@ -2306,6 +2317,7 @@ const sidebars = {
                 'cubrid/set-event-format',
               ],
             },
+            'cubrid/labs'
           ]
         }
       ],
@@ -2445,6 +2457,7 @@ const sidebars = {
                 'altibase/set-event-format',
               ],
             },
+            'altibase/labs'
           ]
         }
       ],
@@ -2598,6 +2611,7 @@ const sidebars = {
                 'redis/set-event-format',
               ],
             },
+            'redis/labs'
           ]
         }
       ],
@@ -2762,6 +2776,7 @@ const sidebars = {
                 'mongodb/set-event-format',
               ],
             },
+            'mongodb/labs'
           ]
         }
       ],
@@ -2845,7 +2860,8 @@ const sidebars = {
             'npm/set-receive-event',
             'npm/set-event-history',
           ],
-        }
+        },
+        'npm/labs'
       ],
     }
   ],
@@ -3896,6 +3912,7 @@ const sidebars = {
                   ]
                 },
               ],
+              
             }
           ]
         },
@@ -4425,6 +4442,7 @@ const sidebars = {
                 'amazon-ecs/set-event-history',
               ]
             },
+            'amazon-ecs/labs'
           ],
         }
       ]
@@ -4503,6 +4521,7 @@ const sidebars = {
                 'amazon-cloudwatch/set-event-history',
               ]
             },
+            'amazon-cloudwatch/labs'
           ],
         }
       ]
@@ -4581,6 +4600,7 @@ const sidebars = {
                 'azure/set-event-history',
               ]
             },
+            'azure/labs'
           ],
         }
       ]
@@ -4659,6 +4679,7 @@ const sidebars = {
                 'ncloud/set-event-history',
               ]
             },
+            'ncloud/labs'
           ],
         }
       ]
@@ -4737,6 +4758,7 @@ const sidebars = {
                 'oracle-cloud/set-event-history',
               ]
             },
+            'oracle-cloud/labs'
           ],
         }
       ]
@@ -4992,6 +5014,7 @@ const sidebars = {
           ],
         },
         'browser/collect-data',
+        'browser/labs'
       ],
     }
   ],
@@ -5210,6 +5233,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'server/labs'
           ],
         },
       ]  
@@ -5475,7 +5499,7 @@ const sidebars = {
                       href: '../golang/instance-performance-analysis',
                     },
                   ],
-                },                
+                },
               ],
             },
             {
@@ -5503,6 +5527,7 @@ const sidebars = {
                 'kubernetes/set-event-history',
               ],
             },
+            'kubernetes/labs'
           ],
         }
       ]
