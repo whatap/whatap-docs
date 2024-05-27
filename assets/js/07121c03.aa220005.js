@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70393],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35894],{
 
 /***/ 35527:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -557,7 +557,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 91244:
+/***/ 76579:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -577,29 +577,29 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'instance-performance-analysis',
 	title: '인스턴스 성능 관리',
-	description: 'PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
+	description: 'Node.js 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
 	tags: [
-		'PHP',
+		'Node.js',
 		'애플리케이션',
 		'인스턴스 성능 관리'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/instance-performance-analysis",
+  "id": "nodejs/instance-performance-analysis",
   "title": "인스턴스 성능 관리",
-  "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-  "source": "@site/docs/php/instance-performance-analysis.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/instance-performance-analysis",
-  "permalink": "/whatap-docs/php/instance-performance-analysis",
+  "description": "Node.js 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+  "source": "@site/docs/nodejs/instance-performance-analysis.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/instance-performance-analysis",
+  "permalink": "/whatap-docs/nodejs/instance-performance-analysis",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/instance-performance-analysis.mdx",
+  "editUrl": "undefined/docs/nodejs/instance-performance-analysis.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "애플리케이션",
@@ -614,21 +614,17 @@ const metadata = {
   "frontMatter": {
     "id": "instance-performance-analysis",
     "title": "인스턴스 성능 관리",
-    "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+    "description": "Node.js 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
     "tags": [
-      "PHP",
+      "Node.js",
       "애플리케이션",
       "인스턴스 성능 관리"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "Python",
-    "permalink": "/whatap-docs/python/instance-performance-analysis"
-  },
-  "next": {
-    "title": "Go",
-    "permalink": "/whatap-docs/golang/instance-performance-analysis"
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/nodejs/set-event-format"
   }
 };
 const assets = {
