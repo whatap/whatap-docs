@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58901],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[41642],{
 
 /***/ 10829:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1384,36 +1384,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc, Xclude} = _components;
+  }, {InDoc} = _components;
   if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "데이터베이스 접속을 위해 암호화된 UID를 생성합니다. username과 password를 입력하고 쉘 스크립트(또는 배치 파일)를 실행하세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "redis,oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "uid.sh"
-        }), " 쉘 스크립트 파일(또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "uid.bat"
-        }), " 배치 파일)은 와탭 데이터베이스 에이전트를 설치한 경로에서 찾을 수 있습니다. user 없이 암호만 있는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "DB_USER"
-        }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: props.name
-        }), "로 설정합니다."]
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "uid.sh"
-        }), " 쉘 스크립트 파일은 와탭 데이터베이스 에이전트를 설치한 경로에서 찾을 수 있습니다. user 없이 암호만 있는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "DB_USER"
-        }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: props.name
-        }), "로 설정합니다."]
-      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
       product: "redis",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -1733,7 +1708,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 29487:
+/***/ 89518:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1767,27 +1742,27 @@ const frontMatter = {
 	title: '에이전트 설치',
 	description: '와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.',
 	tags: [
-		'Redis',
+		'Oracle',
 		'데이터베이스 모니터링',
 		'에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/install-agent",
+  "id": "oracle/install-agent",
   "title": "에이전트 설치",
   "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
-  "source": "@site/docs/redis/install-agent.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/install-agent",
-  "permalink": "/whatap-docs/redis/install-agent",
+  "source": "@site/docs/oracle/install-agent.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/install-agent",
+  "permalink": "/whatap-docs/oracle/install-agent",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/install-agent.mdx",
+  "editUrl": "undefined/docs/oracle/install-agent.mdx",
   "tags": [
     {
-      "label": "Redis",
-      "permalink": "/whatap-docs/tags/redis"
+      "label": "Oracle",
+      "permalink": "/whatap-docs/tags/oracle"
     },
     {
       "label": "데이터베이스 모니터링",
@@ -1804,19 +1779,19 @@ const metadata = {
     "title": "에이전트 설치",
     "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
     "tags": [
-      "Redis",
+      "Oracle",
       "데이터베이스 모니터링",
       "에이전트"
     ]
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/redis/monitoring-support"
+    "permalink": "/whatap-docs/oracle/monitoring-support"
   },
   "next": {
     "title": "설치 점검 사항",
-    "permalink": "/whatap-docs/redis/after-install-agent"
+    "permalink": "/whatap-docs/oracle/after-install-agent"
   }
 };
 const assets = {
@@ -1825,7 +1800,7 @@ const assets = {
 
 /*공통 Notes*/
 /*모니터링용 계정 생성*/
-/*Redis*/
+/*Oracle*/
 /*## 에이전트 실행*/
 /*## XOS 에이전트 설치*/
 
@@ -1855,7 +1830,6 @@ const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_5_
 function _createMdxContent(props) {
   const _components = {
     a: "a",
-    admonition: "admonition",
     code: "code",
     em: "em",
     h2: "h2",
@@ -1889,37 +1863,35 @@ function _createMdxContent(props) {
               children: "whatap.conf"
             }), " 파일을 확인하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: "whatap.conf"
-            }), " 파일에 프로젝트 액세스 키(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "license"
-            }), ") 정보 및 와탭 서버 정보(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "whatap.server.host"
-            }), "), DB 접속 정보(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "dbms"
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "db_ip"
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "db_port"
-            }), ")를 입력하세요."]
+            }), " 파일에 프로젝트 액세스 키 정보 및 와탭 서버 정보, db 접속 정보를 입력하세요."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title='whatap.conf'",
-              children: "license={Access_Key}\nwhatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information\n\ndbms=redis\ndb_ip={DB_server_IP_address}\ndb_port={DB_server_port}\n"
+              children: "license=프로젝트 액세스 키\nwhatap.server.host=13.124.11.223/13.209.172.35 # 와탭 서버 정보\n\ndbms=oracle\ndb={DB 이름(sid)}\ndb_ip={DB 서버 IP 주소}\ndb_port={DB 서버 포트 번호}\n"
             })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["다음 디렉터리에 JDBC 드라이버를 다운로드하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "/압축해제한 폴더/jdbc"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "데이터베이스 서버의 운영체제와 버전에 맞는 JDBC 드라이버를 다운로드하세요."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Oracle 10g R2 버전 이상"
+            }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html",
+              children: "https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html"
+            })]
           }), "\n"]
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-sql",
-          children: "ACL SETUSER {whatap} on >{DB_Password} +client +config +info +cluster\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["Redis 환경의 계정 생성에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://redis.io/docs/latest/commands/acl-setuser/",
-            children: "다음 링크"
-          }), "를 참조하세요."]
+          className: "language-bash",
+          metastring: "showLineNumbers",
+          children: "# 일반적인 경우\ncreate user whatap identified by DB_PASSWORD; ## 원하는 password를 입력하세요.\ngrant create session to whatap;\ngrant select any dictionary to whatap;\n \n# 12c 이상에서 멀티태넌트의 경우 (접두어 c##)\ncreate user c##whatap identified by DB_PASSWORD; ## 원하는 password를 입력하세요.\ngrant create session to c##whatap;\ngrant select any dictionary to c##whatap;\nalter user c##whatap set container_data = ALL container = CURRENT;\n \n# kill session 기능 사용시\ngrant alter system to whatap\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1927,15 +1899,6 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "create-db-user",
         children: "DB 유저 파일 생성"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "tip",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["user와 password를 사용하지 않는 경우 (인증 없이 Redis에 접속 가능한 경우) ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "DB 유저 파일 생성"
-            })
-          }), " 단계를 건너띄어도 됩니다."]
-        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {})]
     })]
   });

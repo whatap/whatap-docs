@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[41642],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45499],{
 
 /***/ 10829:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1384,36 +1384,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc, Xclude} = _components;
+  }, {InDoc} = _components;
   if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "데이터베이스 접속을 위해 암호화된 UID를 생성합니다. username과 password를 입력하고 쉘 스크립트(또는 배치 파일)를 실행하세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "redis,oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "uid.sh"
-        }), " 쉘 스크립트 파일(또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "uid.bat"
-        }), " 배치 파일)은 와탭 데이터베이스 에이전트를 설치한 경로에서 찾을 수 있습니다. user 없이 암호만 있는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "DB_USER"
-        }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: props.name
-        }), "로 설정합니다."]
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "uid.sh"
-        }), " 쉘 스크립트 파일은 와탭 데이터베이스 에이전트를 설치한 경로에서 찾을 수 있습니다. user 없이 암호만 있는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "DB_USER"
-        }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: props.name
-        }), "로 설정합니다."]
-      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
       product: "redis",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -1733,7 +1708,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 89518:
+/***/ 47608:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1746,20 +1721,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(28453);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74235);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15947);
-/* harmony import */ var _site_src_components_TR__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21024);
-/* harmony import */ var _common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(63126);
-/* harmony import */ var _common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10829);
-/* harmony import */ var _getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(29679);
-/* harmony import */ var _getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(75689);
-/* harmony import */ var _common_items_db_install_agent_steps_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(28060);
-/* harmony import */ var _common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(46106);
-/* harmony import */ var _common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(54614);
-/* harmony import */ var _common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(81730);
-/* harmony import */ var _common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(61528);
-/* harmony import */ var _common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(6643);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(63126);
+/* harmony import */ var _common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10829);
+/* harmony import */ var _getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(29679);
+/* harmony import */ var _getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(75689);
+/* harmony import */ var _common_items_db_install_agent_steps_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28060);
+/* harmony import */ var _common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(46106);
+/* harmony import */ var _common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(54614);
+/* harmony import */ var _common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(81730);
+/* harmony import */ var _common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(61528);
+/* harmony import */ var _common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6643);
 
 
 const frontMatter = {
@@ -1767,27 +1739,27 @@ const frontMatter = {
 	title: '에이전트 설치',
 	description: '와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.',
 	tags: [
-		'Oracle',
+		'MySQL',
 		'데이터베이스 모니터링',
 		'에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle/install-agent",
+  "id": "mysql/install-agent",
   "title": "에이전트 설치",
   "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
-  "source": "@site/docs/oracle/install-agent.mdx",
-  "sourceDirName": "oracle",
-  "slug": "/oracle/install-agent",
-  "permalink": "/whatap-docs/oracle/install-agent",
+  "source": "@site/docs/mysql/install-agent.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/install-agent",
+  "permalink": "/whatap-docs/mysql/install-agent",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle/install-agent.mdx",
+  "editUrl": "undefined/docs/mysql/install-agent.mdx",
   "tags": [
     {
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
     },
     {
       "label": "데이터베이스 모니터링",
@@ -1804,19 +1776,19 @@ const metadata = {
     "title": "에이전트 설치",
     "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
     "tags": [
-      "Oracle",
+      "MySQL",
       "데이터베이스 모니터링",
       "에이전트"
     ]
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/oracle/monitoring-support"
+    "permalink": "/whatap-docs/mysql/monitoring-support"
   },
   "next": {
     "title": "설치 점검 사항",
-    "permalink": "/whatap-docs/oracle/after-install-agent"
+    "permalink": "/whatap-docs/mysql/after-install-agent"
   }
 };
 const assets = {
@@ -1825,7 +1797,7 @@ const assets = {
 
 /*공통 Notes*/
 /*모니터링용 계정 생성*/
-/*Oracle*/
+/*MySQL*/
 /*## 에이전트 실행*/
 /*## XOS 에이전트 설치*/
 
@@ -1840,21 +1812,19 @@ const assets = {
 
 
 
-
-
-
-const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, {
+const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
   "value": "와탭 데이터베이스 에이전트 다운로드",
   "id": "와탭-데이터베이스-에이전트-다운로드",
   "level": 2
-}, ..._common_items_db_install_agent_steps_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, {
+}, ..._common_items_db_install_agent_steps_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, {
   "value": "DB 유저 파일 생성",
   "id": "create-db-user",
   "level": 2
-}, ..._common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM];
+}, ..._common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    admonition: "admonition",
     code: "code",
     em: "em",
     h2: "h2",
@@ -1864,23 +1834,26 @@ function _createMdxContent(props) {
     pre: "pre",
     section: "section",
     strong: "strong",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_14__/* .useMDXComponents */ .R)(),
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_11__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Youtube} = _components;
+  }, {TabItem, Tabs, Youtube} = _components;
+  if (!TabItem) _missingMdxReference("TabItem", true);
+  if (!Tabs) _missingMdxReference("Tabs", true);
   if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
       ko: "e_UpCgapfQY",
       en: "MIo3HRIOt8M",
       ja: "MIo3HRIOt8M"
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_accesskey_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "와탭-데이터베이스-에이전트-다운로드",
         children: "와탭 데이터베이스 에이전트 다운로드"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_agent_steps_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_agent_steps_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         start: "3",
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1893,8 +1866,23 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title='whatap.conf'",
-              children: "license=프로젝트 액세스 키\nwhatap.server.host=13.124.11.223/13.209.172.35 # 와탭 서버 정보\n\ndbms=oracle\ndb={DB 이름(sid)}\ndb_ip={DB 서버 IP 주소}\ndb_port={DB 서버 포트 번호}\n"
+              children: "license={Access_Key}\nwhatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information\n\ndbms=mysql\ndb_ip={DB_server_IP_address}\ndb_port={DB_server_port}\n"
             })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "info",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "MySQL 서버와 에이전트가 localhost에 설치되는 경우"
+              }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "default 3306 port"
+              }), ")"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title='whatap.conf'",
+                children: "dbms=mysql\ndb_ip=127.0.0.1\ndb_port=3306\n"
+              })
+            })]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1903,36 +1891,205 @@ function _createMdxContent(props) {
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "데이터베이스 서버의 운영체제와 버전에 맞는 JDBC 드라이버를 다운로드하세요."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Oracle 10g R2 버전 이상"
-            }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html",
-              children: "https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html"
-            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Mysql & MariaDB 5.5 버전 이상"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "https://dev.mysql.com/downloads/connector/j/",
+                children: "Connector/J 8.0.11"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "https://dev.mysql.com/downloads/connector/j/5.1.html",
+                children: "Connector/J 5.1.46"
+              })
+            }), "\n"]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "showLineNumbers",
-          children: "# 일반적인 경우\ncreate user whatap identified by DB_PASSWORD; ## 원하는 password를 입력하세요.\ngrant create session to whatap;\ngrant select any dictionary to whatap;\n \n# 12c 이상에서 멀티태넌트의 경우 (접두어 c##)\ncreate user c##whatap identified by DB_PASSWORD; ## 원하는 password를 입력하세요.\ngrant create session to c##whatap;\ngrant select any dictionary to c##whatap;\nalter user c##whatap set container_data = ALL container = CURRENT;\n \n# kill session 기능 사용시\ngrant alter system to whatap\n"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["JDBC 드라이버 8.x 버전 이상을 이용할 경우 접속 URL에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "serverTimezone"
+              }), " 설정이 필요하다면 다음과 같이 옵션을 설정하세요."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title='whatap.conf'",
+                children: "connect_option=?serverTimezone={SERVER_TIMEZONE}\n# ex) connect_option=?serverTimezone=UTC\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "SSL을 이용한다면 다음과 같이 옵션을 설정하세요."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title='whatap.conf'",
+                children: "connect_option=?useSSL=true&verifyServerCertificate=false\n"
+              })
+            }), "\n"]
+          }), "\n"]
         })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_agent_common_notes_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
+        groupId: "mysql-db",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
+          value: "mysql",
+          label: "MySQL",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "create user whatap identified by 'DB_PASSWORD'; # 원하는 password를 입력하세요.\ngrant process on *.* to whatap;\ngrant select on performance_schema.* to whatap;\ngrant show databases on *.* to whatap;\n"
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "기능 및 사용 환경에 따라 추가 권한을 부여하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "모든 테이블 정보를 수집할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant select on *.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "특정 DB의 테이블만 모니터링하는 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant select on {DB_NAME}.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "Replication 사용할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant replication client on *.* to whatap;\ngrant replication slave on *.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "Kill session 기능을 사용할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant super on *.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "AWS RDS 환경에서 kill session 기능을 사용할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant execute on procedure mysql.rds_kill to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n"]
+          })]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
+          value: "mariadb",
+          label: "MariaDB",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "create user whatap identified by 'DB_PASSWORD'; # 원하는 password를 입력하세요.\ngrant process on *.* to whatap;\ngrant select on performance_schema.* to whatap;\ngrant show databases on *.* to whatap;\n"
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "기능 및 사용 환경에 따라 추가 권한을 부여하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "모든 테이블 정보를 수집할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant select on *.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "특정 DB의 테이블만 모니터링하는 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant select on {DB_NAME}.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "Replication 사용할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  metastring: "title=\"below MariaDB 10.5.1\"",
+                  children: "grant replication client, replication slave on *.* to whatap;\n"
+                })
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  metastring: "title=\"MariaDB 10.5.2 ~ 10.5.8\"",
+                  children: "grant replication master admin, replication slave admin, binlog monitor on *.* to whatap;\n"
+                })
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  metastring: "title=\"MariaDB 10.5.9 or later\"",
+                  children: "grant replication master admin, replica monitor, binlog monitor on *.* to whatap;\n"
+                })
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+                type: "note",
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "AWS RDS MariaDB"
+                  }), "의 경우 Replication 정보 조회는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "10.5"
+                  }), " 버전 미만까지 지원합니다."]
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "Kill session 기능을 사용할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant super on *.* to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "AWS RDS 환경에서 kill session 기능을 사용할 경우"
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "grant execute on procedure mysql.rds_kill to whatap;\n"
+                })
+              }), "\n"]
+            }), "\n"]
+          })]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "create-db-user",
         children: "DB 유저 파일 생성"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {
-        name: "default"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_create_db_user_file_body_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_14__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_11__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -1946,513 +2103,6 @@ function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
-
-
-/***/ }),
-
-/***/ 15947:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ TabItem)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(18215);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TabItem/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"tabItem":"tabItem_Ymn6"});
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TabItem/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ 
-
-
-
-function TabItem({ children, hidden, className }) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-        role: "tabpanel",
-        className: (0,clsx/* default */.A)(styles_module.tabItem, className),
-        hidden,
-        children: children
-    });
-}
-
-
-/***/ }),
-
-/***/ 74235:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Tabs)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(18215);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/scrollUtils.js
-var scrollUtils = __webpack_require__(52204);
-// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(56347);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useIsomorphicLayoutEffect.js
-var useIsomorphicLayoutEffect = __webpack_require__(13321);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/historyUtils.js
-var historyUtils = __webpack_require__(57641);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/jsUtils.js
-var jsUtils = __webpack_require__(73094);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/storageUtils.js
-var storageUtils = __webpack_require__(14278);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/tabsUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function _define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) {
-            symbols = symbols.filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-            });
-        }
-        keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _object_spread_props(target, source) {
-    source = source != null ? source : {};
-    if (Object.getOwnPropertyDescriptors) {
-        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-        ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-
-
-
-
-
-// A very rough duck type, but good enough to guard against mistakes while
-// allowing customization
-function isTabItem(comp) {
-    const { props } = comp;
-    return !!props && typeof props === 'object' && 'value' in props;
-}
-function sanitizeTabsChildren(children) {
-    var _React_Children_toArray_filter_map;
-    var _React_Children_toArray_filter_map_filter;
-    return (_React_Children_toArray_filter_map_filter = (_React_Children_toArray_filter_map = react.Children.toArray(children).filter((child)=>child !== '\n').map((child)=>{
-        if (!child || /*#__PURE__*/ (0,react.isValidElement)(child) && isTabItem(child)) {
-            return child;
-        }
-        // child.type.name will give non-sensical values in prod because of
-        // minification, but we assume it won't throw in prod.
-        throw new Error(`Docusaurus error: Bad <Tabs> child <${// @ts-expect-error: guarding against unexpected cases
-        typeof child.type === 'string' ? child.type : child.type.name}>: all children of the <Tabs> component should be <TabItem>, and every <TabItem> should have a unique "value" prop.`);
-    })) === null || _React_Children_toArray_filter_map === void 0 ? void 0 : _React_Children_toArray_filter_map.filter(Boolean)) !== null && _React_Children_toArray_filter_map_filter !== void 0 ? _React_Children_toArray_filter_map_filter : [];
-}
-function extractChildrenTabValues(children) {
-    return sanitizeTabsChildren(children).map(({ props: { value, label, attributes, default: isDefault } })=>({
-            value,
-            label,
-            attributes,
-            default: isDefault
-        }));
-}
-function ensureNoDuplicateValue(values) {
-    const dup = (0,jsUtils/* duplicates */.X)(values, (a, b)=>a.value === b.value);
-    if (dup.length > 0) {
-        throw new Error(`Docusaurus error: Duplicate values "${dup.map((a)=>a.value).join(', ')}" found in <Tabs>. Every value needs to be unique.`);
-    }
-}
-function useTabValues(props) {
-    const { values: valuesProp, children } = props;
-    return (0,react.useMemo)(()=>{
-        const values = valuesProp !== null && valuesProp !== void 0 ? valuesProp : extractChildrenTabValues(children);
-        ensureNoDuplicateValue(values);
-        return values;
-    }, [
-        valuesProp,
-        children
-    ]);
-}
-function isValidValue({ value, tabValues }) {
-    return tabValues.some((a)=>a.value === value);
-}
-function getInitialStateValue({ defaultValue, tabValues }) {
-    if (tabValues.length === 0) {
-        throw new Error('Docusaurus error: the <Tabs> component requires at least one <TabItem> children component');
-    }
-    if (defaultValue) {
-        // Warn user about passing incorrect defaultValue as prop.
-        if (!isValidValue({
-            value: defaultValue,
-            tabValues
-        })) {
-            throw new Error(`Docusaurus error: The <Tabs> has a defaultValue "${defaultValue}" but none of its children has the corresponding value. Available values are: ${tabValues.map((a)=>a.value).join(', ')}. If you intend to show no default tab, use defaultValue={null} instead.`);
-        }
-        return defaultValue;
-    }
-    var _tabValues_find;
-    const defaultTabValue = (_tabValues_find = tabValues.find((tabValue)=>tabValue.default)) !== null && _tabValues_find !== void 0 ? _tabValues_find : tabValues[0];
-    if (!defaultTabValue) {
-        throw new Error('Unexpected error: 0 tabValues');
-    }
-    return defaultTabValue.value;
-}
-function getStorageKey(groupId) {
-    if (!groupId) {
-        return null;
-    }
-    return `docusaurus.tab.${groupId}`;
-}
-function getQueryStringKey({ queryString = false, groupId }) {
-    if (typeof queryString === 'string') {
-        return queryString;
-    }
-    if (queryString === false) {
-        return null;
-    }
-    if (queryString === true && !groupId) {
-        throw new Error(`Docusaurus error: The <Tabs> component groupId prop is required if queryString=true, because this value is used as the search param name. You can also provide an explicit value such as queryString="my-search-param".`);
-    }
-    return groupId !== null && groupId !== void 0 ? groupId : null;
-}
-function useTabQueryString({ queryString = false, groupId }) {
-    const history = (0,react_router/* useHistory */.W6)();
-    const key = getQueryStringKey({
-        queryString,
-        groupId
-    });
-    const value = (0,historyUtils/* useQueryStringValue */.aZ)(key);
-    const setValue = (0,react.useCallback)((newValue)=>{
-        if (!key) {
-            return; // no-op
-        }
-        const searchParams = new URLSearchParams(history.location.search);
-        searchParams.set(key, newValue);
-        history.replace(_object_spread_props(_object_spread({}, history.location), {
-            search: searchParams.toString()
-        }));
-    }, [
-        key,
-        history
-    ]);
-    return [
-        value,
-        setValue
-    ];
-}
-function useTabStorage({ groupId }) {
-    const key = getStorageKey(groupId);
-    const [value, storageSlot] = (0,storageUtils/* useStorageSlot */.Dv)(key);
-    const setValue = (0,react.useCallback)((newValue)=>{
-        if (!key) {
-            return; // no-op
-        }
-        storageSlot.set(newValue);
-    }, [
-        key,
-        storageSlot
-    ]);
-    return [
-        value,
-        setValue
-    ];
-}
-function useTabs(props) {
-    const { defaultValue, queryString = false, groupId } = props;
-    const tabValues = useTabValues(props);
-    const [selectedValue, setSelectedValue] = (0,react.useState)(()=>getInitialStateValue({
-            defaultValue,
-            tabValues
-        }));
-    const [queryStringValue, setQueryString] = useTabQueryString({
-        queryString,
-        groupId
-    });
-    const [storageValue, setStorageValue] = useTabStorage({
-        groupId
-    });
-    // We sync valid querystring/storage value to state on change + hydration
-    const valueToSync = (()=>{
-        const value = queryStringValue !== null && queryStringValue !== void 0 ? queryStringValue : storageValue;
-        if (!isValidValue({
-            value,
-            tabValues
-        })) {
-            return null;
-        }
-        return value;
-    })();
-    // Sync in a layout/sync effect is important, for useScrollPositionBlocker
-    // See https://github.com/facebook/docusaurus/issues/8625
-    (0,useIsomorphicLayoutEffect/* default */.A)(()=>{
-        if (valueToSync) {
-            setSelectedValue(valueToSync);
-        }
-    }, [
-        valueToSync
-    ]);
-    const selectValue = (0,react.useCallback)((newValue)=>{
-        if (!isValidValue({
-            value: newValue,
-            tabValues
-        })) {
-            throw new Error(`Can't select invalid tab value=${newValue}`);
-        }
-        setSelectedValue(newValue);
-        setQueryString(newValue);
-        setStorageValue(newValue);
-    }, [
-        setQueryString,
-        setStorageValue,
-        tabValues
-    ]);
-    return {
-        selectedValue,
-        selectValue,
-        tabValues
-    };
-} //# sourceMappingURL=tabsUtils.js.map
-
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
-var useIsBrowser = __webpack_require__(12075);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Tabs/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"tabList":"tabList__CuJ","tabItem":"tabItem_LNqP"});
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Tabs/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function Tabs_define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function Tabs_object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            Tabs_define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-function Tabs_ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) {
-            symbols = symbols.filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-            });
-        }
-        keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function Tabs_object_spread_props(target, source) {
-    source = source != null ? source : {};
-    if (Object.getOwnPropertyDescriptors) {
-        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-        Tabs_ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-
-
-
-
-
-
-function TabList({ className, block, selectedValue, selectValue, tabValues }) {
-    const tabRefs = [];
-    const { blockElementScrollPositionUntilNextRender } = (0,scrollUtils/* useScrollPositionBlocker */.a_)();
-    const handleTabChange = (event)=>{
-        const newTab = event.currentTarget;
-        const newTabIndex = tabRefs.indexOf(newTab);
-        const newTabValue = tabValues[newTabIndex].value;
-        if (newTabValue !== selectedValue) {
-            blockElementScrollPositionUntilNextRender(newTab);
-            selectValue(newTabValue);
-        }
-    };
-    const handleKeydown = (event)=>{
-        let focusElement = null;
-        switch(event.key){
-            case 'Enter':
-                {
-                    handleTabChange(event);
-                    break;
-                }
-            case 'ArrowRight':
-                {
-                    const nextTab = tabRefs.indexOf(event.currentTarget) + 1;
-                    var _tabRefs_nextTab;
-                    focusElement = (_tabRefs_nextTab = tabRefs[nextTab]) !== null && _tabRefs_nextTab !== void 0 ? _tabRefs_nextTab : tabRefs[0];
-                    break;
-                }
-            case 'ArrowLeft':
-                {
-                    const prevTab = tabRefs.indexOf(event.currentTarget) - 1;
-                    var _tabRefs_prevTab;
-                    focusElement = (_tabRefs_prevTab = tabRefs[prevTab]) !== null && _tabRefs_prevTab !== void 0 ? _tabRefs_prevTab : tabRefs[tabRefs.length - 1];
-                    break;
-                }
-            default:
-                break;
-        }
-        focusElement === null || focusElement === void 0 ? void 0 : focusElement.focus();
-    };
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("ul", {
-        role: "tablist",
-        "aria-orientation": "horizontal",
-        className: (0,clsx/* default */.A)('tabs', {
-            'tabs--block': block
-        }, className),
-        children: tabValues.map(({ value, label, attributes })=>/*#__PURE__*/ (0,jsx_runtime.jsx)("li", Tabs_object_spread_props(Tabs_object_spread({
-                // TODO extract TabListItem
-                role: "tab",
-                tabIndex: selectedValue === value ? 0 : -1,
-                "aria-selected": selectedValue === value,
-                ref: (tabControl)=>tabRefs.push(tabControl),
-                onKeyDown: handleKeydown,
-                onClick: handleTabChange
-            }, attributes), {
-                className: (0,clsx/* default */.A)('tabs__item', styles_module.tabItem, attributes === null || attributes === void 0 ? void 0 : attributes.className, {
-                    'tabs__item--active': selectedValue === value
-                }),
-                children: label !== null && label !== void 0 ? label : value
-            }), value))
-    });
-}
-function TabContent({ lazy, children, selectedValue }) {
-    const childTabs = (Array.isArray(children) ? children : [
-        children
-    ]).filter(Boolean);
-    if (lazy) {
-        const selectedTabItem = childTabs.find((tabItem)=>tabItem.props.value === selectedValue);
-        if (!selectedTabItem) {
-            // fail-safe or fail-fast? not sure what's best here
-            return null;
-        }
-        return /*#__PURE__*/ (0,react.cloneElement)(selectedTabItem, {
-            className: 'margin-top--md'
-        });
-    }
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-        className: "margin-top--md",
-        children: childTabs.map((tabItem, i)=>/*#__PURE__*/ (0,react.cloneElement)(tabItem, {
-                key: i,
-                hidden: tabItem.props.value !== selectedValue
-            }))
-    });
-}
-function TabsComponent(props) {
-    const tabs = useTabs(props);
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-        className: (0,clsx/* default */.A)('tabs-container', styles_module.tabList),
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsx)(TabList, Tabs_object_spread({}, tabs, props)),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)(TabContent, Tabs_object_spread({}, tabs, props))
-        ]
-    });
-}
-function Tabs(props) {
-    const isBrowser = (0,useIsBrowser/* default */.A)();
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(TabsComponent, Tabs_object_spread_props(Tabs_object_spread({}, props), {
-        children: sanitizeTabsChildren(props.children)
-    }), String(isBrowser));
-}
-
-
-/***/ }),
-
-/***/ 21024:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ TR)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-/* harmony import */ var _docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15418);
-
-
-
-function TR({ sid }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-        id: sid
-    });
-}
 
 
 /***/ }),
