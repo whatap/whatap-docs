@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63225],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37583],{
 
 /***/ 25627:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -74,7 +74,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 86559:
+/***/ 12232:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -92,39 +92,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'java-2_2_23',
-	title: 'Java Agent v2.2.23',
+	id: 'java-2_2_33',
+	title: 'Java Agent v2.2.33',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/java/java-2_2_22'
+	pagination_next: 'release-notes/java/java-2_2_32',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/java/java-2_2_23",
-  "title": "Java Agent v2.2.23",
-  "description": "2023년 11월 22일",
-  "source": "@site/docs/release-notes/java/java-2.2.23.mdx",
+  "id": "release-notes/java/java-2_2_33",
+  "title": "Java Agent v2.2.33",
+  "description": "2024년 05월 28일",
+  "source": "@site/docs/release-notes/java/java-2.2.33.mdx",
   "sourceDirName": "release-notes/java",
-  "slug": "/release-notes/java/java-2_2_23",
-  "permalink": "/whatap-docs/release-notes/java/java-2_2_23",
+  "slug": "/release-notes/java/java-2_2_33",
+  "permalink": "/whatap-docs/release-notes/java/java-2_2_33",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/java/java-2.2.23.mdx",
+  "editUrl": "undefined/docs/release-notes/java/java-2.2.33.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "java-2_2_23",
-    "title": "Java Agent v2.2.23",
+    "id": "java-2_2_33",
+    "title": "Java Agent v2.2.33",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/java/java-2_2_22"
+    "pagination_next": "release-notes/java/java-2_2_32",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Agent v2.2.24",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_24"
+    "title": "v1.0.3",
+    "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
   },
   "next": {
-    "title": "Java Agent v2.2.22",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_22"
+    "title": "Java Agent v2.2.32",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_32"
   }
 };
 const assets = {
@@ -137,10 +139,11 @@ const assets = {
 const toc = [..._import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
+    admonition: "admonition",
     code: "code",
     li: "li",
     p: "p",
-    pre: "pre",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -148,55 +151,57 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 22일"
+      children: "2024년 05월 28일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Feature"
-          }), " Mule Framework 3.9.5 http 트랜잭션 추적"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "weaving=mule-3.9.5\n"
+          }), " 쿠버네티스 에이전트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "continerId"
+          }), "를 자바 에이전트에 전달하는 방식 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../k8s/k8s-1_5_7",
+              children: "쿠버네티스 에이전트 1.5.7 버전"
+            }), " 이상을 사용하면 이전 버전보다 쿠버네티스와 애플리케이션과의 연계 기능이 향상됩니다."]
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " Mule Framework 4.5 http 트랜잭션, component 트랜잭션 추적"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "weaving=mule-4.5\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " spring-boot-2.1.x 추적"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "weaving=spring-boot-2.1\n"
-          })
+            children: "Changed"
+          }), " Spring-boot-2.5.x ~ 2.6.x 환경을 이용하는 사용자가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "NettyRoutingFilter"
+          }), " 클래스를 구현하여 사용하는 경우에도 연계 추적할 수 있도록 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["Class NettyRoutingFilter ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              children: "org.springframework.cloud.gateway.filter.NettyRoutingFilter"
+            })]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Fixed"
-          }), " Java 에이전트 2.2.22 버전에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "hook_service_patterns"
-          }), " 옵션 사용 시 발생하는 경과 시간 버그 수정"]
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "db_pool_detail"
+          }), " 카테고리의 메트릭스에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "$okind"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "$onode"
+          }), " 값을 각각 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "okindName"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "onodeName"
+          }), "으로 변경"]
         }), "\n"]
       }), "\n"]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "2.2.23"
+      ver: "2.2.33"
     })]
   });
 }

@@ -122,8 +122,11 @@ function _createMdxContent(props) {
               }), "를 이용한 container ID 주입을 활성화합니다. 와탭 APM으로 식별되는 컨테이너의 ID를 자동으로 추출하고, 이를 APM 도구에 주입하여 성능 모니터링 데이터와 컨테이너를 연결하는 데 사용할 수 있습니다."]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
               type: "note",
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                children: "이 옵션은 Java 에이전트 2.2.28 버전 이상부터 사용할 수 있습니다."
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["이 옵션은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "../java/java-2_2_33",
+                  children: "Java 에이전트 2.2.33 버전"
+                }), " 이상부터 사용할 수 있습니다."]
               })
             }), "\n"]
           }), "\n"]
