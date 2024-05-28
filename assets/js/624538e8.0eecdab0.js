@@ -76,8 +76,8 @@ const metadata = {
     "permalink": "/whatap-docs/url/set-receive-event"
   },
   "next": {
-    "title": "에러 유형",
-    "permalink": "/whatap-docs/url/url-error-type"
+    "title": "HTTP 상태 코드 유형",
+    "permalink": "/whatap-docs/url/url-http-status"
   }
 };
 const assets = {

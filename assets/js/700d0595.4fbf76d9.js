@@ -66,10 +66,6 @@ const metadata = {
   },
   "sidebar": "urlSidebar",
   "previous": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/url/url-event-history"
-  },
-  "next": {
     "title": "HTTP 상태 코드 유형",
     "permalink": "/whatap-docs/url/url-http-status"
   }
