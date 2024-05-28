@@ -77,35 +77,40 @@ const assets = {
 
 
 const toc = [{
-  "value": "connect timed out",
-  "id": "connect-timed-out",
+  "value": "Invalid URL",
+  "id": "invalid-url",
   "level": 2
 }, {
-  "value": "no route to host",
+  "value": "Unknown Host or URL",
+  "id": "unknown-host-or-url",
+  "level": 2
+}, {
+  "value": "Connect Time Out",
+  "id": "connect-time-out",
+  "level": 2
+}, {
+  "value": "Read Time Out",
+  "id": "read-time-out",
+  "level": 2
+}, {
+  "value": "Unexpected end of file from server",
+  "id": "unexpected-end-of-file-from-server",
+  "level": 2
+}, {
+  "value": "Connection Refused",
+  "id": "connection-refused",
+  "level": 2
+}, {
+  "value": "No route to host",
   "id": "no-route-to-host",
-  "level": 2
-}, {
-  "value": "https",
-  "id": "https",
-  "level": 2
-}, {
-  "value": "handshake alert: unrecognized_name",
-  "id": "handshake-alert-unrecognized_name",
-  "level": 2
-}, {
-  "value": "sun.security.validator",
-  "id": "sunsecurityvalidator",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
-    admonition: "admonition",
-    code: "code",
+    blockquote: "blockquote",
     h2: "h2",
     li: "li",
     p: "p",
-    pre: "pre",
     section: "section",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
@@ -123,24 +128,68 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "connect-timed-out",
-        children: "connect timed out"
+        id: "invalid-url",
+        children: "Invalid URL"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "URL 호출을 위한 접속 자체가 차단된 경우입니다."
+        children: "잘못된 URL을 입력하는 경우 발생하는 메시지입니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "unknown-host-or-url",
+        children: "Unknown Host or URL"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "해당 호스트 또는 URL을 찾을 수 없는 경우 발생하는 메시지입니다. 프로토콜을 올바르게 입력하였는지 또는 올바른 URL 형식 및 호스트 주소를 입력하였는지 확인하세요."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "connect-time-out",
+        children: "Connect Time Out"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "잘못된 URL에 대한 연결 시간이 초과되어 접속할 수 없을 때 발생하는 메시지입니다. 서버에 연결을 시도하는데 최대 소요 시간 5초 내에 연결 실패했을 경우 발생합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "read-time-out",
+        children: "Read Time Out"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "읽기 작업이 지정된 시간 내에 완료되지 않았을 때 발생하는 메시지입니다. 서버로부터 데이터를 수신하는 동안 최대 소요 시간 10초 내에 응답이 없을 경우 발생합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "unexpected-end-of-file-from-server",
+        children: "Unexpected end of file from server"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "에이전트와 서버의 인코딩 값이 다른 경우 혹은 파라미터에 대한 인코딩 방식이 다른 경우 발생하는 메시지입니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "connection-refused",
+        children: "Connection Refused"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "URL 호출을 위한 접속 자체가 차단된 경우 발생하는 메시지입니다. 에이전트로부터 호출이 불가능한 상황인 경우로 해당 URL, 또는 서버의 방화벽 확인이 필요합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "웹 브라우저에서 URL을 입력해 접속에 문제가 없는지 먼저 점검하세요. 입력 과정에서 오류가 발생할 수 있습니다."
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "방화벽 및 빈번한 호출에 대한 IP 차단 내역을 확인해 모니터링 에이전트의 IP에 대하여 명시적으로 접근을 허용하세요. 서울 에이전트의 외부 아이피는 54.180.11.176입니다."
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "웹 브라우저에서 URL을 입력해 접속에 문제가 없는지 먼저 점검하세요. 입력 과정에서 오류가 발생할 수 있습니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "방화벽 및 빈번한 호출에 대한 IP 차단 내역을 확인해 모니터링 에이전트의 IP에 대하여 명시적으로 접근을 허용하세요."
+          }), "\n"]
         }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "no-route-to-host",
-        children: "no route to host"
+        children: "No route to host"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "목적지에 도달하기 위한 경로가 존재하지 않습니다. 다음 항목을 정확하게 입력했는지 확인하세요."
+        children: "목적지에 도달하기 위한 경로가 존재하지 않는 경우 발생하는 메시지입니다. DNS로부터 정보를 찾을 수 없는 경우와 해당 URL에 대한 정보가 없거나 업데이트 되지 않은 경우 발생합니다. 다음 항목을 정확하게 입력했는지 확인하세요."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -149,59 +198,10 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "입력 URL의 프로토콜"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-            type: "note",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["htts://와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://%EB%A5%BC",
-                children: "https://를"
-              }), " 잘못 입력한 경우 등"]
-            })
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "https",
-        children: "https"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["URL 입력에 protocol을 중복 입력했을 경우에 발생할 수 있습니다. URL이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://https://%E2%80%A6%E2%80%8B",
-          children: "https://https://…​"
-        }), "; 과 같은 형식으로 입력했는지 확인하세요."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "handshake-alert-unrecognized_name",
-        children: "handshake alert: unrecognized_name"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "에이전트가 호출한 서버명이 서버 측에서 식별되지 않을 경우 발생합니다. http protocol을 사용하는 URL을 https://…​;으로 입력했는지 확인하세요."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "sunsecurityvalidator",
-        children: "sun.security.validator"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-text",
-          children: "sun.security.validator.ValidatorException: PKIX path building failed:\nsun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "에이전트가 호출 대상 사이트의 SSL 인증서에 접근하지 못할 경우 발생합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["에이전트의 문제입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "mailto:support@whatap.io",
-              children: "support@whatap.io"
-            }), "로 문의주세요. 현재까지는 SSL 인증서의 알고리즘에 대응이 안 된 몇 가지 사례가 식별되었습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "자체적으로 Java HttpClient 기반으로 HTTPS 프로토콜 기반의 호출이 가능한 샘플 모듈을 공유 가능하다면, 유사한 에이전트를 추가 개발하여 전달하도록 하겠습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "예, 'htts://'와 'https://' 를 잘못 입력한 경우"
+            }), "\n"]
           }), "\n"]
         }), "\n"]
       })]
