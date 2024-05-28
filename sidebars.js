@@ -4856,8 +4856,8 @@ const sidebars = {
             'url/url-event-history',
           ],
         },
-        'url/url-error-type',
         'url/url-http-status',
+        'url/url-error-type',
         // {
         //   type: 'category',
         //   label: '주요 메뉴 알아보기',
