@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_5_x",
   "title": "Service 2.5.X",
-  "description": "Service 2.5.5",
+  "description": "Service 2.5.6",
   "source": "@site/docs/release-notes/service/service-2.5.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_5_x",
@@ -62,8 +62,8 @@ const assets = {
 
 
 const toc = [{
-  "value": "Service 2.5.5",
-  "id": "service-255",
+  "value": "Service 2.5.6",
+  "id": "service-256",
   "level": 2
 }, {
   "value": "<code>Application</code>",
@@ -213,8 +213,8 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "service-255",
-        children: "Service 2.5.5"
+        id: "service-256",
+        children: "Service 2.5.6"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "2024년 05월 28일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
