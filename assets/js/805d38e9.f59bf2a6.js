@@ -86,6 +86,10 @@ const toc = [{
   "id": "oracle-dma",
   "level": 4
 }, {
+  "value": "<code>Kubernetes</code>",
+  "id": "kubernetes",
+  "level": 3
+}, {
   "value": "<code>URL</code>",
   "id": "url",
   "level": 3
@@ -123,7 +127,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
-  "id": "kubernetes",
+  "id": "kubernetes-1",
   "level": 3
 }, {
   "value": "<code>Database</code>",
@@ -206,6 +210,14 @@ function _createMdxContent(props) {
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "트레이스 분석"
+              }), " 창 URL 복사 버튼 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Fixed"
@@ -307,6 +319,19 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Changed"
           }), " 프로젝트 설치 화면의 상품 카드 소개 내용을 지원 환경으로 변경"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "kubernetes",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Kubernetes"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "실험실"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Pending Pods"
+          }), " 메뉴에서 다국어 미적용건 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "url",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
@@ -556,7 +581,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에서 Debian/Ubuntu 관련한 설치 스크립트의 오류 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "kubernetes",
+          id: "kubernetes-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Kubernetes"
           })

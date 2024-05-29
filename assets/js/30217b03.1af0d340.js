@@ -363,8 +363,6 @@ function install_docker_java_createMdxContent(props) {
                 }), "\n"]
               }), "\n"]
             })]
-          }), (0,jsx_runtime.jsx)(_components.h4, {
-            id: ""
           }), (0,jsx_runtime.jsxs)(Tabs/* default */.A, {
             children: [(0,jsx_runtime.jsxs)(TabItem/* default */.A, {
               value: "latest",
@@ -521,6 +519,75 @@ function install_docker_java_createMdxContent(props) {
                   className: "language-ini",
                   children: "license={licenseKey}\nwhatap.server.host={proxyServer}\n"
                 })
+              }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+                type: "info",
+                children: [(0,jsx_runtime.jsx)(_components.p, {
+                  children: (0,jsx_runtime.jsx)(_components.strong, {
+                    children: "쿠버네티스 내부 애플리케이션 에이전트 옵션 설정"
+                  })
+                }), (0,jsx_runtime.jsxs)(_components.p, {
+                  children: ["쿠버네티스 내부 애플리케이션 에이전트에 필요한 설정을 ", (0,jsx_runtime.jsx)(_components.em, {
+                    children: "whatap.conf"
+                  }), " 파일에 작성하거나 또는 에이전트 배포 시 컨테이너 ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "env"
+                  }), " 필드를 통해 설정할 수 있습니다."]
+                }), (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.em, {
+                        children: "whatap.conf"
+                      }), " 파일 내 옵션이 컨테이너 ", (0,jsx_runtime.jsx)(_components.code, {
+                        children: "env"
+                      }), " 필드에 설정된 옵션보다 높은 우선순위를 가집니다."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.em, {
+                        children: "whatap.conf"
+                      }), " 또는 컨테이너 ", (0,jsx_runtime.jsx)(_components.code, {
+                        children: "env"
+                      }), "에 설정된 값이 없는 경우 기본값이 사용됩니다."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.code, {
+                        children: "license"
+                      }), " 및 ", (0,jsx_runtime.jsx)(_components.code, {
+                        children: "whatap.server.host"
+                      }), " 옵션의 경우 ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "컨테이너 환경변수"
+                      }), " 설정을 활용하세요."]
+                    }), "\n"]
+                  }), "\n"]
+                }), (0,jsx_runtime.jsxs)(_components.p, {
+                  children: ["설정 파일의 내용이 변경되거나 중요한 설정 항목이 소실될 경우 정상적으로 동작하지 않을 가능성이 있기에 쿠버네티스 환경 내 ", (0,jsx_runtime.jsx)(_components.strong, {
+                    children: "컨테이너 환경변수"
+                  }), " 설정을 권장합니다. 그외 에이전트 기능 제어 옵션에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
+                    href: "https://docs.whatap.io/java/agent-control-function",
+                    children: "다음 문서"
+                  }), "를 참조하세요."]
+                })]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+                type: "note",
+                children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsx)(_components.p, {
+                  children: (0,jsx_runtime.jsx)(_components.strong, {
+                    children: "쿠버네티스 환경 내 사용 불가 옵션"
+                  })
+                }), (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.code, {
+                        children: "whatap.name"
+                      }), ": 수집 서버가 에이전트를 식별하는 고유한 이름입니다. 해당 이름은 에이전트가 실행 중인 오브젝트 정보를 기반으로 생성됩니다. 사용자 임의 지정 시 에이전트 식별에 문제가 생길 수 있습니다."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.code, {
+                        children: "whatap.onode"
+                      }), ": 기본값으로 쿠버네티스 클러스터 노드 이름이 설정됩니다. 에이전트가 속한 노드 정보를 제공받기 위해 사용됩니다. 사용자 임의 지정 시 정확한 노드 식별이 어려워질 수 있습니다."]
+                    }), "\n"]
+                  }), "\n"]
+                })]
               }), "\n"]
             }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
               children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
