@@ -1495,10 +1495,6 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar nodejsSidebar"
   },
-  "sidebar.nodejsSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar nodejsSidebar, linking to /nodejs/trs-profile"
-  },
   "sidebar.pySidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar pySidebar"
@@ -1596,7 +1592,7 @@
     "description": "The label for category 경고 알림 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.인스턴스 성능 모니터링": {
-    "message": "インスタンス性能管理",
+    "message": "インスタンス性能モニタリング",
     "description": "The label for category 인스턴스 성능 모니터링 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.doc.Java": {

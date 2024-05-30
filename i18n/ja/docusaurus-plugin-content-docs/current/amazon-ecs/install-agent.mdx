@@ -38,7 +38,7 @@ import Createprojectaccesskeyitem from "../getting-started/_create-project-acces
 
 ## モニタリング対象
 
-Amazon ECSのLaunch Typeによりモニタリング対象が異なります。モニタリング対象は、Task、Service、Deployment、Container Instanceです。
+Amazon ECSの起動タイプ(Launch Type)によりモニタリング対象が異なります。モニタリング対象は、Task、Service、Deployment、Container Instanceです。
 
 - **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
 
@@ -52,7 +52,7 @@ Amazon ECSのLaunch Typeによりモニタリング対象が異なります。�
 
 :::note
 
-Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)をご参照ください。
+Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)をご参照ください。
 
 :::
 
@@ -60,17 +60,17 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 
 <ImgLang img='amazon-ecs-install.png' desc='ecs install' />
 
-- インストールの案内で![number-s](/img/number-01.png)部分を開き、WhaTap Amazon ECSエージェントを専用TaskまたはSidecarでデプロイしてください。
+- インストールの案内で![number-s](/img/number-01.png)部分を開き、WhaTap Amazon ECSエージェントを専用TaskまたはSidecarでデプロイします。
 
-- インストールの案内で![number-s](/img/number-02.png)部分を開き、モニタリングサービスを開始してください。
+- インストールの案内で![number-s](/img/number-02.png)部分を開き、モニタリングサービスを開始します。
 
-### EC2 Launch Type
+### EC2起動タイプ
 
-1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動してください。 
+1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動します。 
 
-2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2 Launch Type_**を選択してください。
+2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2起動タイプ_**を選択します。
 
-3. 次のスクリプトを実行して、DAEMONタイプのTaskを作成してください。 `CLUSTER`、`REGION`を追加し、`ACCESSKEY`および`WHATAP_HOST`を設定して収集サーバーと通信できるようにします。
+3. 次のスクリプトを実行して、DAEMONタイプのタスクを作成してください。 `CLUSTER`と`REGION`を追加し、`ACCESSKEY`と`WHATAP_HOST`を設定して収集サーバーと通信できるようにします。
 
    ```bash title='Linux'
    #!/usr/bin/env bash
@@ -133,16 +133,16 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 
 - 実行するために必要な項目は次のとおりです。
 
-  - `ACCESSKEY` (WhaTap プロジェクトAccess Key)
-  - `WHATAP_HOST` (WhaTap収集リージョンのIP)
-  - `REGION` (AWS Region)
-  - `CLUSTER` (ECS Cluster)
+  - `ACCESSKEY`：WhaTapプロジェクトのAccess Key
+  - `WHATAP_HOST`：WhaTap収集サーバーのIP
+  - `REGION`：AWS Region
+  - `CLUSTER`：ECS Cluster
 
-### Fargate Launch Type
+### Fargate起動タイプ
 
-1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動してください。 
+1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動します。 
 
-2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_Fargate Launch Type_**を選択してください。
+2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_Fargate起動タイプ_**を選択します。
 
    - スクリプトを実行して、AWS ECS API READONLY IAM ROLEを作成します。 
 
@@ -154,18 +154,18 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 
    - 実行するために必要な項目は次のとおりです。
 
-     - `ACCESSKEY` (WhaTap プロジェクトAccess Key)
-     - `WHATAP_HOST` (WhaTap収集リージョンのIP、複数のIPは`/`で接続)
-     - `REGION` (AWS Region)
-     - `PROFILE`（ECS Profile）
-     - `CLUSTER` (ECS Cluster)
-     - `CLUSTER_CONFIG` (ECS Cluster Config)
-     - `TASK_EXECUTION_ROLE` (WhaTapエージェントTask ECS Taskの実行ロール)
-     - `SUBNET_1` (WhaTapエージェントTask SUBNET#1)
-     - `SUBNET_2` (WhaTapエージェントTask SUBNET#2)
-     - `SGGRP` (WhaTapエージェントTask Security Group)
+     - `ACCESSKEY`：WhaTapプロジェクトのAccess Key
+     - `WHATAP_HOST`：WhaTap収集サーバーのIP(複数のIPは`/`で区切って記載)
+     - `REGION`：AWS Region
+     - `PROFILE`：ECS Profile
+     - `CLUSTER`：ECS Cluster
+     - `CLUSTER_CONFIG`：ECS Cluster Config
+     - `TASK_EXECUTION_ROLE`：WhaTapエージェントTask ECS Taskの実行ロール
+     - `SUBNET_1`：WhaTapエージェントTask SUBNET#1
+     - `SUBNET_2`：WhaTapエージェントTask SUBNET#2
+     - `SGGRP`：WhaTapエージェントTask Security Group
 
-   - 次の例を参照してください。
+   - 次の例をご参照ください。
 
      ```bash title='Linux'
      #!/usr/bin/env bash
@@ -212,7 +212,7 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
        --policy-arn $POLICY_ARN
      ```
 
-3. 作成したIAM ROLEを使用してWhatap-Singleエージェントを起動してください。 ECS APIを使用してサービス状態をリアルタイムで収集します。 
+3. 作成したIAM ROLEを使用してWhatap-Singleエージェントを起動します。ECS APIを使用してサービス状態をリアルタイムで収集します。 
 
    ```bash title='Linux'
    #!/usr/bin/env bash
@@ -264,7 +264,7 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
        --ecs-profile $PROFILE --region $REGION
    ```
 
-4. 次のようにエンドユーザーTaskにWhaTap Sidecarエージェントをデプロイしてください。 `ACCESSKEY`および`WHATAP_HOST`を環境変数として追加し、収集サーバーと通信を有効にします。
+4. 次のようにエンドユーザーTaskにWhaTap Sidecarエージェントをデプロイします。`ACCESSKEY`と`WHATAP_HOST`を環境変数として追加し、収集サーバーとの通信を有効にします。
 
    ```bash title='Linux'
    version: '3'
@@ -281,24 +281,24 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
        - WHATAP_HOST=
    ```
 
-### モニタリングサービスのアクティブ化
+### モニタリングサービスの開始
 
-![number-s](/img/number-02.png) **_モニタリングの開始_**タブで、**_モニタリングサービスを有効にする_**ボタンを選択して、モニタリングサービスを開始してください。
+![number-s](/img/number-02.png) **_モニタリングを開始_**タブで、**_モニタリングサービス活性化_**ボタンを選択して、モニタリングサービスを開始します。
 
-- モニタリングサービスを有効にします。
+- モニタリングサービスを開始できる状態
 
-  <ImgLang img='amazon-ecs-monitoring-on.png' desc='モニタリングのアクティブ化' />
+  <ImgLang img='amazon-ecs-monitoring-on.png' desc='モニタリングの活性化' />
 
-- モニタリングサービスの無効化
+- モニタリングサービスを開始できない状態
 
-  <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの無効化' />
+  <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの活性化不可' />
 
-## 除去時の注意事項
+## アンインストール時の注意事項
 
-完全なコスト発生を防ぐために、次の項目を削除してください。
+次の項目が残っている場合、費用が発生する恐れがあるのでご確認の上、必ず削除してください。
 
-- ECS Service: `whatap-ecs-agent`
+- ECS Service：`whatap-ecs-agent`
 
-- Task Sidecar: `whatap-ecs-agent` 
+- Task Sidecar：`whatap-ecs-agent` 
 
-- Role: `WhatapEcsReadonly`
+- Role：`WhatapEcsReadonly`

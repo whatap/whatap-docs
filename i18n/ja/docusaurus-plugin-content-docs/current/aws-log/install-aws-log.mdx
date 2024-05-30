@@ -13,7 +13,7 @@ import Howtostartintro from "../getting-started/_how-to-start-intro.mdx";
 
 <Howtostartintro />
 
-インストール過程は、次の動画ガイドを参照してください。 
+インストールの手順は、次の動画ガイドをご参照ください。 
 
 <Youtube ko='q4mJdUIPRlM' en='-xfcaH3pQWw' ja='-xfcaH3pQWw' />
 
@@ -44,7 +44,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 #### S3
 
 - VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定することで正常な収集が可能です。
-- CloudFront：Log設定時の接頭辞は、**_cloudfront_**が既定値です。パラメータ設定時に変更可能です。
+- CloudFront：Log設定でプレフィックスは、**_cloudfront_**が既定値です。パラメータ設定時に変更可能です。
 - ELB
 
 </details>
@@ -63,7 +63,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 **プロジェクトアクセスキー**
 
-すでに**プロジェクトアクセスキー**を発行している場合、ボタンの代わりに発行されたキーが表示されます。
+すでに**プロジェクトアクセスキー**が発行された場合、ボタンの代わりに発行されたキーが表示されます。
 
 :::
 
@@ -115,7 +115,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
   既定値`cloudfront `
 
-  CloudFrontからS3へLogを送信する際に設定する接頭辞の値を意味します。
+  CloudFrontからS3へLogを送信する際に設定するプレフィックスを意味します。
 
 ### CloudFormation Stackインストール
 
@@ -374,7 +374,7 @@ WhaTap**_エージェント設定_**>**_インストール手順_**セクショ�
 
 <ImgLang img='aws-log-start.png' desc='AWS Logモニタリングの開始'/>
 
-インストールを完了した後、**_管理_** > **_ログ設定_**メニューに移動してください。 **_ログモニタリングの開始_**セクションで**_ログモニタリングサービスのアクティブ化_**トグルボタンをクリックし、AWS Logモニタリングを開始してください。 
+インストールを完了した後、**_管理_** > **_ログ設定_**メニューに移動します。**_ログモニタリングの開始_**セクションで**_ログモニタリングサービスの活性化_**を選択し、AWS Logモニタリングを開始します。 
 
 - ![アイコン](/img/ic-toggle-on.svg)トグルボタンをオンにすると、ログモニタリンがアクティブになります。
 - ![アイコン](/img/ic-toggle-off.svg)トグル ボタンをオフにするとログモニタリンが無効になります。ログは保存されなくなります。

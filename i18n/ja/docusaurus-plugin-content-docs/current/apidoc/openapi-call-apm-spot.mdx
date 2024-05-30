@@ -1,7 +1,7 @@
 ---
 id: openapi-call-apm-spot
 title: Spot情報照会
-description: Spot情報照会（Application）のためのOpenAPIに関する説明を提供します。
+description: Spot情報照会(Application)のためのOpenAPIに関する説明を提供します。
 tags:
   - Open API
   - API
@@ -48,8 +48,8 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 | Response Field    |            Field Type           | 説明                                                                                                            |
 | ----------------- | :-----------------------------: | ------------------------------------------------------------------------------------------------------------- |
 | pcode             | <span class='api'>number</span> | 取得したプロジェクトコード                                                                                                 |
-| act_agent         | <span class='api'>string</span> | [アクティベーション状態のエージェント数](#active-agent)                                                                          |
-| inact_agent       | <span class='api'>string</span> | [非アクティブ状態のエージェント数](#deactive-agent)                                                                           |
+| act_agent         | <span class='api'>string</span> | [活性化状態のエージェント数](#active-agent)                                                                                |
+| inact_agent       | <span class='api'>string</span> | [非活性化状態のエージェント数](#deactive-agent)                                                                             |
 | host              | <span class='api'>string</span> | [ホスト(HOST) 数](#host-count)                                                                 |
 | cpucore           | <span class='api'>string</span> | [ホストCPUコアの合計数](#sum-cpu)                                                                                      |
 | txcount           | <span class='api'>string</span> | [トランザクション数](#count-transaction)                                                                               |
@@ -61,8 +61,8 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 | threadpool_active | <span class='api'>string</span> | スレッドプールのアクティブスレッド数                                                                                            |
 | threadpool_queue  | <span class='api'>string</span> | スレッドプールのキューイングスレッド数                                                                                           |
 | dbconn_total      | <span class='api'>string</span> | 全体DB Connection数                                                                                              |
-| dbconn_act        | <span class='api'>string</span> | アクティブ(Active) DB 接続の数                                                                      |
-| dbconn_idle       | <span class='api'>string</span> | 非アクティブな (idle) DB 接続の数                                                                     |
+| dbconn_act        | <span class='api'>string</span> | 活性化状態(Active)のDB Connection数                                                               |
+| dbconn_idle       | <span class='api'>string</span> | 非活性化状態(idle)のDB Connection数                                                                |
 | act_method        | <span class='api'>string</span> | アクティブMethod数                                                                                                  |
 | act_sql           | <span class='api'>string</span> | アクティブSQL数                                                                                                     |
 | act_httpc         | <span class='api'>string</span> | アクティブHTTP Call数                                                                                               |
@@ -82,7 +82,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 5//アクティブエージェント数
 ```
 
-## 非アクティブ状態のエージェント数{#deactive-agent}
+## 非活性化状態のエージェント数{#deactive-agent}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/inact_agent
 
@@ -91,7 +91,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 ```
 
 ```json title='response'
-1//非アクティブなエージェント数
+1//非活性化状態のエージェント数
 ```
 
 ## ホスト(HOST) 数{#host-count}
@@ -156,7 +156,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 :::note 
 
-WhaTapは、直前5分以内にトランザクションを行ったユーザをカウントし、**同時ユーザ**を測定します。
+WhaTapは、直近5分以内にトランザクションを発生させたユーザをカウントして**同時接続ユーザ**を測定します。
 
 :::
 
@@ -208,7 +208,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 0.9871
 ```
 
-## アクティブ／非アクティブ状態のエージェント情報
+## 活性化/非活性化状態のエージェント情報
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/json/agents
 
@@ -233,8 +233,8 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 }
 ```
 
-| Response Field |       Field Type                 | 説明                                                                |
-| -------------- | :------------------------------: | ----------------------------------------------------------------- |
-| host_ip        |  <span class='api'>string</span> | エージェントが配置されているホストのIPアドレス                                          |
-| oname          |  <span class='api'>string</span> | エージェント名                                                           |
-| active         | <span class='api'>boolean</span> | エージェントのアクティブ化の有無 (アクティブ：`true`、非アクティブ：`false`) |
+| Response Field |       Field Type                 | 説明                                                         |
+| -------------- | :------------------------------: | ---------------------------------------------------------- |
+| host_ip        |  <span class='api'>string</span> | エージェントが配置されているホストのIPアドレス                                   |
+| oname          |  <span class='api'>string</span> | エージェント名                                                    |
+| active         | <span class='api'>boolean</span> | エージェントの活性化の有無 (活性化：`true`、非活性化：`false`) |

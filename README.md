@@ -67,7 +67,7 @@ crowdin download -b main -l en-US
 - <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
 - ${Tag} -> &#36;&#123;Tag&#125;
 - ${Field} -> &#36;&#123;Field&#125;
-- ${user_id} -> $\{user_id\} (install-agent-quick-setup.mdx 파일에서도 확인해볼것)
+- {user_id} -> \{user_id\} (install-agent-quick-setup.mdx 파일에서도 확인해볼것)
 - {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}
 - e.g. _kubernetes_container_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes_container_images\_\{pcode\}\_\{timestamp\}.csv_
 - CSV file name, _kubernetes_node_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes_node_list\_\{pcode\}\_\{timestamp\}.csv_
@@ -103,7 +103,7 @@ code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최
 일본어 찾아 바꾸기
 
 _yaml_ -> *yaml*
-_heml_ -> *heml*
+_helm_ -> *helm*
 _values.yaml_ -> *values.yaml*
 _whatap.conf_ -> *whatap.conf*
 _security.conf_ -> *security.conf*
