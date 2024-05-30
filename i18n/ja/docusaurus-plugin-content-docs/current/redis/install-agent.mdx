@@ -51,6 +51,23 @@ import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-
 
 <Dbinstallagentcommonnotes />
 
+{/* 모니터링용 계정 생성*/}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
+
+{/* Redis */}
+
+```sql
+ACL SETUSER {whatap} on >{DB_Password} +client +config +info +cluster
+```
+
+:::note
+
+Redis環境のアカウント作成の詳細については、[次のリンク](https://redis.io/docs/latest/commands/acl-setuser/)を参照してください。
+
+:::
+
 ## データベースユーザーファイルの生成 {#create-db-user}
 
 :::tip

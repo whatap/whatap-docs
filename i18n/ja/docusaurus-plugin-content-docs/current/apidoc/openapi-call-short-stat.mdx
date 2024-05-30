@@ -47,6 +47,6 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 | oid            | <span class='api'>number</span> | エージェントID                                |
 | oname          | <span class='api'>string</span> | エージェント名                                 |
 | databaseUrl    | <span class='api'>string</span> | データベースURL                               |
-| active         | <span class='api'>number</span> | アクティベーションのDB接続数                         |
-| idle           | <span class='api'>number</span> | 非アクティブ化された DB接続数                        |
+| active         | <span class='api'>number</span> | 活性化状態のDB connection数                    |
+| idle           | <span class='api'>number</span> | 非活性化状態のDB connection数                   |
 | total          | <span class='api'>number</span> | DB connectionの総数（「active」+「idle」）       |

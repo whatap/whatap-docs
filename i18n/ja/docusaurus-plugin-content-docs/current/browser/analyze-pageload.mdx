@@ -10,7 +10,7 @@ tags:
 
 ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="rumPageLoadHitmap" className="uitext" />
 
-[ページ読み込み](before-starting#load-page) イベントは、ウェブ アプリケーションにアクセスしたエンド ユーザーがページの読み込みを完了したときに発生するイベントです。 <b>ページ読み込み</b>イベントをヒットマップチャート形式で提供し、各イベントに関する詳細情報をタイムライン形式で確認することができます。 これにより、Webページの読み込みを妨げている原因を特定するのに役立ちます。 次の情報を含みます。
+[ページロード](before-starting#load-page) イベントは、ウェブ アプリケーションにアクセスしたエンド ユーザーがページの読み込みを完了したときに発生するイベントです。 <b>ページロード</b>イベントをヒットマップチャート形式で提供し、各イベントに関する詳細情報をタイムライン形式で確認することができます。 これにより、Webページの読み込みを妨げている原因を特定するのに役立ちます。 次の情報を含みます。
 
 - **ページロード** イベント区間別の詳細時間情報
 
@@ -20,9 +20,9 @@ tags:
 
 ## ページロードイベント一覧確認 {#pageload-events-list}
 
-単一のページごとに読み込みイベントを分析できます。 ページ読み込みの性能を分析するために、ヒットマップと様々な指標を提供します。
+単一のページごとに読み込みイベントを分析できます。 ページロードの性能を分析するために、ヒットマップと様々な指標を提供します。
 
-<ImgLang img='browser-analysis-pageload-hitmap.png' desc='ページ読み込みヒットマップ' />
+<ImgLang img='browser-analysis-pageload-hitmap.png' desc='ページロードヒットマップ' />
 
 ![指示線1](/img/number-01.png) <Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットのチャート領域をドラッグしてください。 ドラッグした領域のページロードイベント一覧が画面下に表示されます ![指示線 2](/img/number-02.png) <Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に読み込み、[ページグループ](before-starting#page-group)別に分類して、画面の右側の ![指示線 4](/img/number-04.png) <Cmdname sid="page_group" className="uitext" /><Cmdname sid="list" className="uitext" />に読み込みます。 ![指示線3](/img/number-03.png) <Cmdname sid="page_url" className="uitext" />で目的のページ一覧を検索できます。
 
@@ -36,11 +36,11 @@ tags:
 
 - <span class='lowfg'>空色</span> → <span class='normal'>青色</span> → <span class='highfg'>藍色</span> 順に正常<b>ページロード</b>イベントを表現します。
 
-- <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>ページロード</b>イベントを表現します。 エラー<b>ページ読み込み</b>イベントは、ページの読み込み中にブラウザーエラーが発生した場合です。
+- <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>ページロード</b>イベントを表現します。 エラー<b>ページロード</b>イベントは、ページの読み込み中にブラウザーエラーが発生した場合です。
 
 ### ![](/img/number-02.png)ページ一覧 {#page-list}
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットからドラッグした領域の<b>ページ読み込み</b>イベントが<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />ウィジェットのテーブルに表示されます。 一覧で各項目の左端の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" />を選択すると<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。
+<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットからドラッグした領域の<b>ページロード</b>イベントが<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />ウィジェットのテーブルに表示されます。 一覧で各項目の左端の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" />を選択すると<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。
 
 <Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" /> ウィジェットのテーブルには、次の基本情報が含まれます。
 
@@ -90,11 +90,11 @@ tags:
 
 <ImgLang img='browser-analysis-pageload-hitmap-pagegroup.png' desc='ページグループ一覧' />
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットでドラッグした領域の<b>ページ読み込み</b>イベントを<Link to="before-starting#page-group">ページ·グループ</Link>ごとに確認できます。 一覧から項目を選択すると、選択した<b>ページグループ</b>に対応する<b>ページロード</b>イベントのみ<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に表示されます。
+<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットでドラッグした領域の<b>ページロード</b>イベントを<Link to="before-starting#page-group">ページ·グループ</Link>ごとに確認できます。 一覧から項目を選択すると、選択した<b>ページグループ</b>に対応する<b>ページロード</b>イベントのみ<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に表示されます。
 
-## ページ読み込みイベント詳細情報 {#pageload-details}
+## ページロードイベント詳細情報 {#pageload-details}
 
-<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />で各項目の一番左の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細を見るアイコン" />を選択すると、<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。 <b>ページ読み込み</b>の性能を分析するために様々な指標を提供し、性能に影響を与える要因を特定することができます。
+<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />で各項目の一番左の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細を見るアイコン" />を選択すると、<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。 <b>ページロード</b>の性能を分析するために様々な指標を提供し、性能に影響を与える要因を特定することができます。
 
 <ImgLang img='rum-pageload-event-02.png' desc='ページロード詳細' />
 
@@ -107,7 +107,7 @@ tags:
 
 ### ![](/img/number-02.png)概要(ページロードイベント要約) {#pageload-events-summary}
 
-<Cmdname sid="summary" className="uitext" />タブでは、<b>ページ読み込み</b>のプロセス中に区間別でかかった時間をグラフチャートとして提供します。 これにより、<b>ページ読み込み</b>プロセスの遅い区間を特定することができます。
+<Cmdname sid="summary" className="uitext" />タブでは、<b>ページロード</b>のプロセス中に区間別でかかった時間をグラフチャートとして提供します。 これにより、<b>ページロード</b>プロセスの遅い区間を特定することができます。
 
 - <Cmdname sid="page" className="uitext" /><Cmdname sid="info" className="uitext" />：エンドユーザーの接続環境、接続ページ情報、<Cmdname sid="user_id" className="uitext" />、<Cmdname sid="session_id" className="uitext" />情報を提供します。
 
@@ -127,7 +127,7 @@ tags:
 
 ### リソース一覧 {#resource-list}
 
-ブラウザーがサーバーからダウンロードするリソースは、<b>ページ読み込み</b>の性能に大きな影響を与える可能性があります。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />は、読み込み速度が遅いリソースやファイルサイズが大きいリソースをすばやく特定することができます。
+ブラウザーがサーバーからダウンロードするリソースは、<b>ページロード</b>の性能に大きな影響を与える可能性があります。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />は、読み込み速度が遅いリソースやファイルサイズが大きいリソースをすばやく特定することができます。
 
 <ImgLang img='rum-pageload-event-03.png' desc='リソース一覧' />
 
