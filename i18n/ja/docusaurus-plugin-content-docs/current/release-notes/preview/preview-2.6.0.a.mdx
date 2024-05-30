@@ -1,0 +1,110 @@
+---
+id: preview-2_6_0x
+title: Preview 2.6.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.6.0.a1
+
+2024年05月23日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="side_flexboard" /> / <Cmdname sid="side_integratedFlexboard" />
+
+- <Status>Feature</Status>ウィジェットに<Cmdname sid="TTL07769" className="uitext" />表示機能の追加: ウィジェットにデータを呼び出すプロジェクトの一覧を確認可能
+
+- <Status>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューでお気に入りのダッシュボードがある状態で該当するメニューを選択すると、組織選択が解除される問題を修正
+
+- <Status>Fixed</Status>リーチテキストのウィジェットでテキストを修正すると、断続的に最後の文字が消える問題を修正
+
+- <Status>Fixed</Status>ウィジェットの削除ポップアップが異常に閉じると、再び開かない問題を修正
+
+- <Status>Fixed</Status>反応型ダッシュボードがいっぱいの状態でグループウィジェットの下位にウィジェットを追加すると、間違った通知ポップアップが表示される問題を修正
+
+#### <Cmdname sid="side_maintenancePlan" />
+
+<Status>Changed</Status>全ての商品で<b>修正</b>または<b>通知設定</b>権限を持ったメンバーが<Cmdname sid="side_maintenancePlan" className="uitext" />メニューを利用できるように権限を調整
+
+---
+
+### `Application`
+
+#### 共通
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューでエージェントの検索機能を追加
+
+- <Status>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューで非アクティブ化されたエージェントは<Cmdname sid="apply" className="uitext" />ボタンを無効にするように修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューのエージェント選択オプションで<UI>Total</UI>ボタンを選択してもエージェント全体が選択されない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューでCSVダウンロード機能を利用する際、エージェント選択オプションの適用事項がCSVファイルに適用されない問題を修正
+
+#### Java
+
+- <Status>Fixed</Status> <Cmdname sid="side_topology" className="uitext" /> &gt; <Cmdname sid="side_appTopology" className="uitext" />メニューで画面の上に<Cmdname sid="node_selection" className="uitext" />ボタンをクリックすると、右側に表示されるダイアグラムのスタイルが正常に適用されない問題を修正
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでDebian/Ubuntuに関連したインストールスクリプトのエラーを修正
+
+---
+
+### `Kubernetes`
+
+- <Status>Changed</Status>次のメニュー経路で<Cmdname sid="TTL06366" className="b500" />カラムを<Cmdname sid="thread_cpu_time" className="uitext" />に変更、千単位ごとにコンマ(,)で区切り文字を表示
+
+  - <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_kubernetesAgentList" className="uitext" />
+
+- <Status>Fixed</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_pendingPod" className="uitext" />メニューの<UI>Suggestions</UI>タブで`qosClass`による案内文を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_correlatedProjectManagement" className="uitext" />メニューの<Cmdname sid="TTL07016" className="uitext" />で<Cmdname sid="view_and_analysis" className="b600" />権限のない連携プロジェクトは一覧に表示しないように修正
+
+---
+
+### `Database`
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューで1か月前のデータが照会されない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでデータがないと、トーストメッセージが出力される問題を修正
+
+---
+
+### URL
+
+<Status>Changed</Status>変更されたランディングページのURLパスに合わせてステータスコードの説明ページへのリンクを修正
+
+</div>
+
+## Preview 2.6.0.a0
+
+2024年05月17日
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューに**Oracle Solaris OS**インストール案内のページを追加
+
+---
+
+### `Database`
+
+<Status>Deprecated</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTopSqlComparison" className="uitext" />
+
+</div>

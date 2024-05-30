@@ -54,6 +54,8 @@ crowdin download -b main -l en-US
 * ^\{\/\\\* -> {/*
 * \\\*\/\} -> */}
 * \{(duration: .+)\} -> \{$1\}
+* {/\* -> {/*
+* 
 * <!---->\n\n -> (빈값으로 변경)
 * i18n/en/docusaurus-plugin-content-docs/current/server/set-event-format.mdx
   * (\$)\{([^>]+?)\} -> $1\{$2\}

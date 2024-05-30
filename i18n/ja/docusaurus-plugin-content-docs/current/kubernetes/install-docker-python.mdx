@@ -59,13 +59,13 @@ RUN pip3 install --upgrade whatap-python
 ```bash title='entrypoint.sh'
 #!/bin/bash
 
-# コンテナの作業ディレクトリをWhaTapパスとして設定してください。そのパスにエージェントログと設定ファイルを作成します。
+# コンテナの作業ディレクトリをWhaTapパスに設定します。そのパスにエージェントログと設定ファイルを作成します。
 export WHATAP_HOME=${PWD}
 
-# 権限エラーが発生した場合は、次のコメントを削除してから進めてください。
+# 権限エラーが発生した場合は、次のコメントを削除してから進みます。
 #chmod -R 777 $WHATAP_HOME
 
-# 以下は、エージェント構成に必須な設定値です。アプリケーション配布のyamlファイルを通じて設定します。
+# 以下は、エージェントの構成に必須な設定値です。アプリケーションデプロイのyamlファイルを通じて設定します。
 whatap-setting-config \
 --host $whatap_server_host \
 --license $license \
@@ -74,8 +74,8 @@ whatap-setting-config \
 
 # 次のコメントは、エージェントのグループ化やログ収集の活性化などの追加設定です。必要な場合に使用してください。
 
-# エージェントグループ化
-#echo "okind=$okind" >> whatap.conf
+# エージェントのグループ化
+#echo "whatap.okind=$whatap.okind" >> whatap.conf
 
 # ログ収集の活性化
 #echo "logsink_enabled=true" >> whatap.conf
@@ -83,7 +83,7 @@ whatap-setting-config \
 #echo "trace_logging_enabled=true" >> whatap.conf
 
 
-# 次のようにwhatap-start-agentをアプリケーション開始コマンドの前に追加して、エージェントを実行してください。 
+# 次のようにwhatap-start-agentをアプリケーション開始コマンドの前に追加して、エージェントを実行します。 
 whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
 ```
 
@@ -153,7 +153,7 @@ CMD ["./entrypoint.sh"]
 - **エージェントグループ化** 
 
   ```bash
-  echo "okind=$okind" >> whatap.conf
+  echo "whatap.okind=$whatap.okind" >> whatap.conf
   ```
 
 - **ログ収集の活性化** 
@@ -178,7 +178,7 @@ Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定
 			value: {YOUR_APP_NAME}
 		- name: app_process_name
 		  value: {YOUR_PROCESS_NAME}
-		- name: okind
+		- name: whatap.okind
 			value: {YOUR_GROUP_NAME}
 		- name: NODE_IP
 		  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
@@ -188,7 +188,7 @@ Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定
 		  valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
 
-次の例を参照してください。 
+次の例をご参照ください。 
 
 ```yaml
 apiVersion: apps/v1
@@ -236,7 +236,7 @@ spec:
 
 - `app_process_name`：CPU、Heap Memoryなど収集する対象プロセスを設定します。例としてuwsgi、gunicornなどがあります。
 
-- `okind`(オプション)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名で設定すると、該当するPodを一つにグループ化します。
+- `whatap.okind`(オプション)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment)名で設定すると、該当するPodを一つにグループ化します。
 
 - `NODE_IP`: 現在のPodがホストされているノード(Node)のIPアドレスを収集します。
 

@@ -72,6 +72,16 @@ import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 
   MasterインスタンスとSlaveインスタンスの現況を確認することができます。
 
+  :::note
+
+  **_Clusters_**ウィジェットを利用するには、DBXエージェント(*whatap.conf*)の次のオプションを設定する必要があります。詳細については、[次の文書](agent-dbx-settings#cluster-set)を参照してください。
+
+  ```ini title="whatap.conf"
+  cluster_name={cluster_name}
+  ```
+
+  :::
+
 - **_Instantaneous Ops Per Sec_**
 
   ![Instantaneous Ops Per Sec](/img/db-dashboard-instaneous-widget.png)
@@ -210,3 +220,13 @@ Redisクラスターの状態と構成情報をテーブル形式で提供する
 - **_link status_**：各インスタンスの接続状態です。
 
 - **_slots_**：クラスターで使用されるスロット(slot) 情報です。各スロットは、クラスター内のデータの一部を担当します。この情報により、クラスターのデータ分散とロードバランシングの状態を把握できます。
+
+:::note
+
+**_Cluster Info_**ウィジェットを利用するには、DBXエージェント(*whatap.conf*)の次のオプションを設定する必要があります。詳細については、[次の文書](agent-dbx-settings#cluster-set)を参照してください。
+
+```ini title="whatap.conf"
+cluster_name={cluster_name}
+```
+
+:::
