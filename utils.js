@@ -54,6 +54,12 @@ function colsToJsonReport(data){
       }
     }
   }
+
+  rd['A111_AppWeeklyOkindAvgRespTime'] = {
+    "ko": "주간 애플리케이션 종류별 평균응답시간 보고서",
+    "en": "Application Kinds Weekly Avg Resp Time Statistics Report",
+    "ja": "Application Kinds Weekly Avg Resp Time Statistics Report"
+  }
   return rd;
 }
 

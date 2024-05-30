@@ -3421,5 +3421,10 @@
     "ko": "보다 정확한 latency 통계를 위해 'WATCH' verb 대한 latency 는 통계에서 제외되었습니다. (verb 별 latency 참고)",
     "en": "For more accurate latency statistics, the latency for the 'WATCH' verb has been excluded from the statistics (see the latencies for each verb).",
     "ja": "より正確なlatency統計のために'WATCH' verbに対するlatencyは統計から除外されました。(verb別のlatencyを参照)"
+  },
+  "A111_AppWeeklyOkindAvgRespTime": {
+    "ko": "주간 애플리케이션 종류별 평균응답시간 보고서",
+    "en": "Application Kinds Weekly Avg Resp Time Statistics Report",
+    "ja": "Application Kinds Weekly Avg Resp Time Statistics Report"
   }
 }
