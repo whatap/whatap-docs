@@ -9103,6 +9103,18 @@
     "width": 600,
     "height": 622
   },
+  "main-ui-sitemap-en.png": {
+    "width": 400,
+    "height": 142
+  },
+  "main-ui-sitemap-ja.png": {
+    "width": 400,
+    "height": 142
+  },
+  "main-ui-sitemap.png": {
+    "width": 400,
+    "height": 146
+  },
   "maintenance-add-en.png": {
     "width": 600,
     "height": 354
@@ -9159,6 +9171,18 @@
     "width": 1200,
     "height": 315
   },
+  "maintenance-v1-pause-alert-en.png": {
+    "width": 756,
+    "height": 494
+  },
+  "maintenance-v1-pause-alert-ja.png": {
+    "width": 757,
+    "height": 488
+  },
+  "maintenance-v1-pause-alert.png": {
+    "width": 756,
+    "height": 489
+  },
   "maintenance-v2-en.png": {
     "width": 1200,
     "height": 341
@@ -9166,6 +9190,18 @@
   "maintenance-v2-ja.png": {
     "width": 1200,
     "height": 400
+  },
+  "maintenance-v2-pause-alert-en.png": {
+    "width": 1046,
+    "height": 761
+  },
+  "maintenance-v2-pause-alert-ja.png": {
+    "width": 1051,
+    "height": 746
+  },
+  "maintenance-v2-pause-alert.png": {
+    "width": 1052,
+    "height": 752
   },
   "maintenance-v2.png": {
     "width": 1200,
@@ -12613,15 +12649,15 @@
   },
   "set-event-sms-notification-en.png": {
     "width": 600,
-    "height": 201
+    "height": 172
   },
   "set-event-sms-notification-ja.png": {
     "width": 600,
-    "height": 210
+    "height": 172
   },
   "set-event-sms-notification.png": {
     "width": 600,
-    "height": 213
+    "height": 172
   },
   "set-event-tag-01-en.png": {
     "width": 1200,
