@@ -1806,9 +1806,10 @@ main {
     ul {
       margin: 0;
       padding-top: 8px;
-      padding-bottom: 8px;
+      padding-bottom: 0;
       + ul {
         padding-top: 0;
+        padding-bottom: 0;
         // margin-top: -8px;
       }
       li {
@@ -2308,6 +2309,43 @@ main {
       table {
         td {
           width: 33.3%;
+        }
+      }
+    }
+    .c3-30-60-10 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 30%;
+            }
+            &:nth-of-type(2) {
+              width: 60%;
+            }
+            &:last-of-type {
+              width: 10%;
+            }
+          }
+        }
+      }
+    }
+    .c4-20-10-50-10 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 20%;
+            }
+            &:nth-of-type(2) {
+              width: 10%;
+            }
+            &:nth-of-type(3) {
+              width: 50%;
+            }
+            &:last-of-type {
+              width: 10%;
+            }
+          }
         }
       }
     }
