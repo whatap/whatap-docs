@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[62497],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39978],{
 
-/***/ 18422:
+/***/ 83494:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'nodejs-0_4_77',
-	title: 'Node.js Agent v0.4.77',
-	toc_max_heading_level: 2,
-	pagination_next: null,
-	displayed_sidebar: 'releaseSidebar'
+	id: 'browser-v1_1_4',
+	title: 'Browser Agent v1.1.4',
+	toc_max_heading_level: 3
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/nodejs/nodejs-0_4_77",
-  "title": "Node.js Agent v0.4.77",
-  "description": "2023년 6월 23일",
-  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.77.mdx",
-  "sourceDirName": "release-notes/nodejs",
-  "slug": "/release-notes/nodejs/nodejs-0_4_77",
-  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77",
+  "id": "release-notes/browser/browser-v1_1_4",
+  "title": "Browser Agent v1.1.4",
+  "description": "2023년 5월 30일",
+  "source": "@site/docs/release-notes/browser/browser-v1.1.4.mdx",
+  "sourceDirName": "release-notes/browser",
+  "slug": "/release-notes/browser/browser-v1_1_4",
+  "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.77.mdx",
+  "editUrl": "undefined/docs/release-notes/browser/browser-v1.1.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "nodejs-0_4_77",
-    "title": "Node.js Agent v0.4.77",
-    "toc_max_heading_level": 2,
-    "pagination_next": null,
-    "displayed_sidebar": "releaseSidebar"
-  },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Node.js Agent v0.4.80",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
+    "id": "browser-v1_1_4",
+    "title": "Browser Agent v1.1.4",
+    "toc_max_heading_level": 3
   }
 };
 const assets = {
@@ -57,56 +48,21 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "2023년 6월 23일",
-  "id": "2023년-6월-23일",
-  "level": 4
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
-    admonition: "admonition",
-    code: "code",
-    h4: "h4",
-    li: "li",
     p: "p",
-    pre: "pre",
-    section: "section",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h4",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-6월-23일",
-      children: "2023년 6월 23일"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "2023년 5월 30일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Feature"
-      }), " mysql2/promise 지원 기능 추가"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "info",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["패키지 정보: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.npmjs.com/package/whatap",
-              children: "https://www.npmjs.com/package/whatap"
-            })]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "설치 및 적용 방법"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              children: "npm i whatap\n"
-            })
-          }), "\n"]
-        }), "\n"]
-      })
+        children: "Fixed"
+      }), " 워커 압축 로직 방어 코드 추가"]
     })]
   });
 }

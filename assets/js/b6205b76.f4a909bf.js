@@ -47,8 +47,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/db/xos-previous"
   },
   "next": {
-    "title": "Browser Agent v1.3.5",
-    "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_5"
+    "title": "Browser Agent v1.3.6",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_6"
   }
 };
 const assets = {

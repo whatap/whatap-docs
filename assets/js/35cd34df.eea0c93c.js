@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[91222],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84013],{
 
-/***/ 30699:
+/***/ 24438:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_6_4',
-	title: 'Python Agent v1.6.4',
+	id: 'nodejs-0_4_95',
+	title: 'Node.js Agent v0.4.95',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_6_3',
+	pagination_next: 'release-notes/nodejs/nodejs-0_4_94',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_6_4",
-  "title": "Python Agent v1.6.4",
-  "description": "2024년 05월 14일",
-  "source": "@site/docs/release-notes/python/python-1.6.4.mdx",
-  "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_6_4",
-  "permalink": "/whatap-docs/release-notes/python/python-1_6_4",
+  "id": "release-notes/nodejs/nodejs-0_4_95",
+  "title": "Node.js Agent v0.4.95",
+  "description": "2024년 04월 29일",
+  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.95.mdx",
+  "sourceDirName": "release-notes/nodejs",
+  "slug": "/release-notes/nodejs/nodejs-0_4_95",
+  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_95",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.6.4.mdx",
+  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.95.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_6_4",
-    "title": "Python Agent v1.6.4",
+    "id": "nodejs-0_4_95",
+    "title": "Node.js Agent v0.4.95",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_6_3",
+    "pagination_next": "release-notes/nodejs/nodejs-0_4_94",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Node.js Agent v0.4.77",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
+    "title": "Node.js Agent v0.4.96",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_96"
   },
   "next": {
-    "title": "Python Agent v1.6.3",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_3"
+    "title": "Node.js Agent v0.4.94",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_94"
   }
 };
 const assets = {
@@ -66,27 +66,71 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
+    em: "em",
+    li: "li",
     p: "p",
+    pre: "pre",
+    strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 05월 14일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " 쿠버네티스 환경 컨테이너에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: "containerID"
-      }), "를 찾는 파싱 로직 수정"]
+      children: "2024년 04월 29일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 프로파일 데이터 압축 전송을 위한 에이전트 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "profile_zip_enabled"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            class: "type",
+            children: "Boolean"
+          }), " "]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "false"
+          })]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " SQL 변수, HTTP 쿼리 조회에 필요한 보안키가 작성된 파일 이름 변경"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "paramkey.txt"
+          }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "security.conf"
+          })]
+        }), "\n"]
+      }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.6.4/",
-          children: "whatap-python v1.6.3"
-        })]
+      type: "info",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["패키지 정보: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://www.npmjs.com/package/whatap",
+              children: "https://www.npmjs.com/package/whatap"
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "설치 및 적용 방법"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "npm i whatap\n"
+            })
+          }), "\n"]
+        }), "\n"]
       })
     })]
   });

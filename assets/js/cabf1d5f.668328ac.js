@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43551],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28841],{
 
-/***/ 37475:
+/***/ 25963:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'php-previous',
-	title: 'PHP Agent 지난 버전',
+	id: 'browser-previous',
+	title: 'Browser Agent 지난 버전',
 	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-previous",
-  "title": "PHP Agent 지난 버전",
-  "description": "* PHP Agent v2.5.1",
-  "source": "@site/docs/release-notes/php/php-previous.mdx",
-  "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-previous",
-  "permalink": "/whatap-docs/release-notes/php/php-previous",
+  "id": "release-notes/browser/browser-previous",
+  "title": "Browser Agent 지난 버전",
+  "description": "* Browser Agent v1.1.4",
+  "source": "@site/docs/release-notes/browser/browser-previous.mdx",
+  "sourceDirName": "release-notes/browser",
+  "slug": "/release-notes/browser/browser-previous",
+  "permalink": "/whatap-docs/release-notes/browser/browser-previous",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-previous.mdx",
+  "editUrl": "undefined/docs/release-notes/browser/browser-previous.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-previous",
-    "title": "PHP Agent 지난 버전",
+    "id": "browser-previous",
+    "title": "Browser Agent 지난 버전",
     "toc_max_heading_level": 2
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "PHP Agent v2.5.2",
-    "permalink": "/whatap-docs/release-notes/php/php-2_5_2"
+    "title": "Browser Agent v1.2.0",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_2_0"
   },
   "next": {
-    "title": "Node.js Agent v0.4.95",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_95"
+    "title": "NPM Agent v0.4.5",
+    "permalink": "/whatap-docs/release-notes/npm/npm-v0_4_5"
   }
 };
 const assets = {
@@ -71,36 +71,36 @@ function _createMdxContent(props) {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_5_1",
-          children: "PHP Agent v2.5.1"
+          href: "browser-v1_1_4",
+          children: "Browser Agent v1.1.4"
         })
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_5_0",
-          children: "PHP Agent v2.5.0"
+          href: "browser-v1_1_3",
+          children: "Browser Agent v1.1.3"
         })
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_4_1",
-          children: "PHP Agent v2.4.1"
+          href: "browser-v1_1_2",
+          children: "Browser Agent v1.1.2"
         })
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_4_0",
-          children: "PHP Agent v2.4.0"
+          href: "browser-v1_1_1",
+          children: "Browser Agent v1.1.1"
         })
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_3_3",
-          children: "PHP Agent v2.3.3"
+          href: "browser-v1_1_0",
+          children: "Browser Agent v1.1.0"
         })
       }), "\n"]
     }), "\n"]

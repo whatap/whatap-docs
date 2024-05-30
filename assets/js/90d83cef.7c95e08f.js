@@ -154,9 +154,9 @@ function _createMdxContent(props) {
           })]
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-        href: "release-notes/nodejs/nodejs-0_4_95",
+        href: "release-notes/nodejs/nodejs-0_4_96",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          class: "apm-agent",
+          class: "apm-agent new",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             class: "logo",
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
@@ -194,7 +194,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
         href: "release-notes/python/python-1_6_4",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          class: "apm-agent new",
+          class: "apm-agent",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             class: "logo",
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
@@ -363,9 +363,9 @@ function _createMdxContent(props) {
           })]
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-        href: "release-notes/browser/browser-v1_3_5",
+        href: "release-notes/browser/browser-v1_3_6",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          class: "apm-agent",
+          class: "apm-agent new",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             class: "logo",
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {

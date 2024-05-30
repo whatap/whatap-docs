@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70512],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28850],{
 
-/***/ 78169:
+/***/ 53076:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'browser-v1_2_0',
-	title: 'Browser Agent v1.2.0',
-	toc_max_heading_level: 3
+	id: 'nodejs-previous',
+	title: 'Node.js Agent 지난 버전',
+	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/browser/browser-v1_2_0",
-  "title": "Browser Agent v1.2.0",
-  "description": "2023년 6월 21일",
-  "source": "@site/docs/release-notes/browser/browser-v1.2.0.mdx",
-  "sourceDirName": "release-notes/browser",
-  "slug": "/release-notes/browser/browser-v1_2_0",
-  "permalink": "/whatap-docs/release-notes/browser/browser-v1_2_0",
+  "id": "release-notes/nodejs/nodejs-previous",
+  "title": "Node.js Agent 지난 버전",
+  "description": "* Node.js Agent v0.4.77",
+  "source": "@site/docs/release-notes/nodejs/nodejs-previous.mdx",
+  "sourceDirName": "release-notes/nodejs",
+  "slug": "/release-notes/nodejs/nodejs-previous",
+  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-previous",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/browser/browser-v1.2.0.mdx",
+  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-previous.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "browser-v1_2_0",
-    "title": "Browser Agent v1.2.0",
-    "toc_max_heading_level": 3
+    "id": "nodejs-previous",
+    "title": "Node.js Agent 지난 버전",
+    "toc_max_heading_level": 2
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Browser Agent v1.2.1",
-    "permalink": "/whatap-docs/release-notes/browser/browser-v1_2_1"
+    "title": "Node.js Agent v0.4.80",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
   },
   "next": {
-    "title": "Browser Agent v1.1.4",
-    "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_4"
+    "title": "Python Agent v1.6.4",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_4"
   }
 };
 const assets = {
@@ -60,55 +60,19 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     li: "li",
-    p: "p",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
-  if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 6월 21일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Change"
-          }), " 일부 로직에 logger 추가"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " pageloadID(페이지 전환 전까지 고유한 ID) 추가"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " 디스패처별 타임아웃 설정 및 최대 대기시간 5초로 설정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " pcode별 샘플링 강제 설정 옵션 추가"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 워커 압축 로직 개선"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " Firefox 브라우저에서 워커 생성 에러 발생 시 에러가 정상 처리 안되는 문제 수정"]
-        }), "\n"]
-      }), "\n"]
-    })]
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+        href: "nodejs-0_4_77",
+        children: "Node.js Agent v0.4.77"
+      })
+    }), "\n"]
   });
 }
 function MDXContent(props = {}) {
@@ -122,9 +86,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

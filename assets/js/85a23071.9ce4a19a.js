@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84013],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[92738],{
 
-/***/ 24438:
+/***/ 65057:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,31 +18,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'nodejs-0_4_95',
-	title: 'Node.js Agent v0.4.95',
+	id: 'nodejs-0_4_96',
+	title: 'Node.js Agent v0.4.96',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/nodejs/nodejs-0_4_94',
+	pagination_next: 'release-notes/nodejs/nodejs-0_4_95',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/nodejs/nodejs-0_4_95",
-  "title": "Node.js Agent v0.4.95",
-  "description": "2024년 04월 29일",
-  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.95.mdx",
+  "id": "release-notes/nodejs/nodejs-0_4_96",
+  "title": "Node.js Agent v0.4.96",
+  "description": "2024년 05월 30일",
+  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.96.mdx",
   "sourceDirName": "release-notes/nodejs",
-  "slug": "/release-notes/nodejs/nodejs-0_4_95",
-  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_95",
+  "slug": "/release-notes/nodejs/nodejs-0_4_96",
+  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_96",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.95.mdx",
+  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.96.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "nodejs-0_4_95",
-    "title": "Node.js Agent v0.4.95",
+    "id": "nodejs-0_4_96",
+    "title": "Node.js Agent v0.4.96",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/nodejs/nodejs-0_4_94",
+    "pagination_next": "release-notes/nodejs/nodejs-0_4_95",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
@@ -51,8 +51,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/php/php-previous"
   },
   "next": {
-    "title": "Node.js Agent v0.4.94",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_94"
+    "title": "Node.js Agent v0.4.95",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_95"
   }
 };
 const assets = {
@@ -79,36 +79,87 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 04월 29일"
+      children: "2024년 05월 30일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "New"
-          }), " 프로파일 데이터 압축 전송을 위한 에이전트 옵션 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "profile_zip_enabled"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          }), " "]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "false"
-          })]
+            children: "Feature"
+          }), " 서버에서 클라이언트로 데이터 전송 시 데이터 수집을 위한 websocket 패키지 모니터링 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "ignore_nextjs_build_file_enabled"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "Boolean"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "Next.js"
+              }), " 빌드 파일에 대한 모니터링 여부를 설정합니다. 이 옵션값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              }), "로 설정하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "Next.js"
+              }), " 빌드 파일을 모니터링하지 않습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "ignore_nextjs_build_file_path"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "String"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "/next/"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모니터링에서 제외할 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "Next.js"
+              }), " 빌드 파일의 시작 경로를 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "ignore_nextjs_build_file_enabled"
+              }), " 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              }), "일 경우에 적용됩니다. 쉼표(,)를 구분자로 여러 개의 경로를 설정할 수 있습니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"whatap.conf\"",
+                children: "ignore_nextjs_build_file_path=/next/abc/,/next/def/\n"
+              })
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Changed"
-          }), " SQL 변수, HTTP 쿼리 조회에 필요한 보안키가 작성된 파일 이름 변경"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "paramkey.txt"
-          }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "security.conf"
-          })]
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "trace_sampling_enabled"
+          }), " 옵션의 기본값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "true"
+          }), "로 변경"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " HTTP 모니터링에서 socket 오류에 대한 통계 데이터 수집을 무시하도록 수정"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " 트랜잭션의 결과가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "Lost Connection"
+          }), "일 경우 URL이 표시되지 않는 문제 수정"]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {

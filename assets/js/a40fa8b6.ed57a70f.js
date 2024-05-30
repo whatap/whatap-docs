@@ -1339,7 +1339,7 @@ function _createMdxContent(props) {
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "false"
+              children: "true"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "트레이스 데이터 샘플링 수집 여부를 설정할 수 있습니다."

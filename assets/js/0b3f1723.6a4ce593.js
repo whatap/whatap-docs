@@ -264,14 +264,76 @@ const assets = {
 const control_function_toc = [...toc];
 function control_function_createMdxContent(props) {
   const _components = {
+    code: "code",
+    em: "em",
+    li: "li",
     p: "p",
+    pre: "pre",
+    strong: "strong",
+    ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "Node.js 애플리케이션 서버의 기능을 제어합니다."
-    }), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ignore_nextjs_build_file_enabled"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "type",
+            children: "Boolean"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "my",
+            children: "Node.js Agent v0.4.96 or later"
+          })]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "true"
+          })]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.em, {
+            children: "Next.js"
+          }), " 빌드 파일에 대한 모니터링 여부를 설정합니다. 이 옵션값을 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "true"
+          }), "로 설정하면 ", (0,jsx_runtime.jsx)(_components.em, {
+            children: "Next.js"
+          }), " 빌드 파일을 모니터링하지 않습니다."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ignore_nextjs_build_file_path"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "type",
+            children: "String"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "my",
+            children: "Node.js Agent v0.4.96 or later"
+          })]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/next/"
+          })]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["모니터링에서 제외할 ", (0,jsx_runtime.jsx)(_components.em, {
+            children: "Next.js"
+          }), " 빌드 파일의 시작 경로를 지정할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ignore_nextjs_build_file_enabled"
+          }), " 값이 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "true"
+          }), "일 경우에 적용됩니다. 쉼표(,)를 구분자로 여러 개의 경로를 설정할 수 있습니다."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "ignore_nextjs_build_file_path=/next/abc/,/next/def/\n"
+          })
+        }), "\n"]
+      }), "\n"]
+    })]
   });
 }
 function control_function_MDXContent(props = {}) {

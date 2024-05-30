@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "URL",
-    "permalink": "/whatap-docs/release-notes/url/url-release-notes"
+    "title": "Browser Agent v1.3.6",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_3_6"
   },
   "next": {
     "title": "Browser Agent v1.3.4",
