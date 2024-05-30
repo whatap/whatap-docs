@@ -857,12 +857,13 @@ footer.row > div.text--right > a {
 }
 // 블로그 서비스 히스토리 overview
 div.history_overview{
-  // ul > li > ul > li {
-  //   margin-top: -1px;
-  //   margin-left: 20px;
-  // }
+  // 검은 마커가 맨 처음에 떠서 그거 없애기
+  li:first-of-type::marker {
+    content: none;
+  }
   ul {
-    padding-left: 18px;
+    // padding-left: 18px;
+    padding-left: 68px;
     list-style: none;
     padding-top: 0;
     li {
@@ -872,8 +873,22 @@ div.history_overview{
       line-height: 1.5;
       padding-top: 0px;
       padding-bottom: 15px;
-      padding-left: 20px;
-      margin-left: 0px;
+      padding-left: 25px;
+      margin-left: 15px !important;
+      // padding-left: 20px;
+      // margin-left: 0px;
+
+      /* 추가된 부분: 날짜 정보 출력 */
+      & > .changelog-date {
+        position: absolute;
+        left: -130px; /* 조정 가능한 값 */
+        // left: -35px; /* 조정 가능한 값 */
+        top: 7px;
+        transform: translateY(-50%);
+      }
+
+      /* 기존의 가상 요소 원 스타일은 유지됨 */
+
       &::before {
         content: "\200b";
         width: 15px;
@@ -885,18 +900,22 @@ div.history_overview{
         top: 0px;
         left: -8px;
       }
+
       &::marker {
         color: #a8a8a8;
       }
+
       &:first-of-type {
         &::marker {
           border-left: 1px solid #333;
         }
       }
+
       &:last-of-type {
         border-left: none;
       }
     }
+
     ul {
       border-left: none;
       list-style: decimal;
@@ -911,13 +930,89 @@ div.history_overview{
           color: #a8a8a8;
         }
         padding-left: 5px;
-        padding-bottom: 5px;;
+        padding-bottom: 5px;
         border-left: none;
       }
     }
   }
-
 }
+
+
+// div.history_overview{
+//   // ul > li > ul > li {
+//   //   margin-top: -1px;
+//   //   margin-left: 20px;
+//   // }
+//   ul {
+//     padding-left: 18px;
+//     list-style: none;
+//     padding-top: 0;
+//     li {
+//       display: block;
+//       position: relative;
+//       border-left: 1px solid #a8a8a8;
+//       line-height: 1.5;
+//       padding-top: 0px;
+//       padding-bottom: 15px;
+//       padding-left: 20px;
+//       margin-left: 0px;
+//       // &::before {
+//       //   content: attr(data-date) "\200b";
+//       //   width: auto; /* 날짜를 표시할 수 있도록 너비 자동 설정 */
+//       //   display: inline-block;
+//       //   margin-right: 10px; /* 날짜와 둥근 원 사이의 간격 */
+//       // }
+//       // &::before {
+//       //   content: attr(data-date); /* 날짜 정보 표시 */
+//       //   display: inline-block;
+//       //   width: 80px; /* 날짜 표시 영역의 너비 조절 */
+//       //   color: #a8a8a8;
+//       // }
+//       &::before {
+//         // content: "\200b";
+//         content: attr(data-date) "\200b";
+//         width: 15px;
+//         height: 15px;
+//         border: 1px solid #a8a8a8;
+//         background-color: #fff;
+//         border-radius: 50%;
+//         position: absolute;
+//         top: 0px;
+//         left: -8px;
+//       }
+//       &::marker {
+//         color: #a8a8a8;
+//       }
+//       &:first-of-type {
+//         &::marker {
+//           border-left: 1px solid #333;
+//         }
+//       }
+//       &:last-of-type {
+//         border-left: none;
+//       }
+//     }
+//     ul {
+//       border-left: none;
+//       list-style: decimal;
+//       padding-left: 0;
+//       li {
+//         &::before {
+//           content: "• ";
+//           border: none;
+//           background-color: transparent;
+//           top: -5px;
+//           font-size: 130%;
+//           color: #a8a8a8;
+//         }
+//         padding-left: 5px;
+//         padding-bottom: 5px;;
+//         border-left: none;
+//       }
+//     }
+//   }
+
+// }
 
 // document
 main {
