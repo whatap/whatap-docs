@@ -167,7 +167,8 @@ const sidebars = {
                 'java/cube',
                 'java/analysis-hitmap',
                 'java/analysis-trace-mtx',
-                'java/tx-profile'
+                'java/tx-profile',
+                'java/analysis-msa'
               ]
             },
             {
@@ -409,7 +410,8 @@ const sidebars = {
                 'php/cube',
                 'php/analysis-hitmap',
                 'php/analysis-trace-mtx',
-                'php/tx-profile'
+                'php/tx-profile',
+                'php/analysis-msa'
               ]
             },
             {
@@ -633,7 +635,8 @@ const sidebars = {
                 'nodejs/cube',
                 'nodejs/analysis-hitmap',
                 'nodejs/analysis-trace-mtx',
-                'nodejs/tx-profile'
+                'nodejs/tx-profile',
+                'nodejs/analysis-msa'
               ]
             },
             {
@@ -853,7 +856,8 @@ const sidebars = {
                 'python/cube',
                 'python/analysis-hitmap',
                 'python/analysis-trace-mtx',
-                'python/tx-profile'
+                'python/tx-profile',
+                'python/analysis-msa'
               ]
             },
             {
@@ -1070,7 +1074,8 @@ const sidebars = {
                 'dotnet/cube',
                 'dotnet/analysis-hitmap',
                 'dotnet/analysis-trace-mtx',
-                'dotnet/tx-profile'
+                'dotnet/tx-profile',
+                'dotnet/analysis-msa'
               ]
             },
             {
@@ -1278,7 +1283,8 @@ const sidebars = {
                 'golang/cube',
                 'golang/analysis-hitmap',
                 'golang/analysis-trace-mtx',
-                'golang/tx-profile'
+                'golang/tx-profile',
+                'golang/analysis-msa'
               ]
             },
             {
