@@ -1,0 +1,110 @@
+---
+id: preview-2_6_0x
+title: Preview 2.6.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.6.0.a1
+
+May 23, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="side_flexboard" /> / <Cmdname sid="side_integratedFlexboard" />
+
+- <Status>Feature</Status> Added the feature to display <Cmdname sid="TTL07769" className="uitext" /> in the widget: you can check the list of projects to call data in the widget.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" />, fixed the issue where organization selection is canceled when the menu is selected while there is any favorite dashboard.
+
+- <Status>Fixed</Status> Fixed the issue where the last character occasionally disappears when text is modified in the rich text widget.
+
+- <Status>Fixed</Status> Fixed the issue where the widget deletion pop-up is not reopened if it is closed abnormally.
+
+- <Status>Fixed</Status> Fixed the issue where an incorrect alert pops up when a widget is added under a group widget when the responsive dashboard is full.
+
+#### <Cmdname sid="side_maintenancePlan" />
+
+<Status>Changed</Status> Adjusted roles so that members with <b>Edit</b> or <b>Alert settings</b> role can use the <Cmdname sid="side_maintenancePlan" className="uitext" /> menu for all products.
+
+---
+
+### `Application`
+
+#### Common
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, added the agent search feature.
+
+- <Status>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />, modified to disable the <Cmdname sid="apply" className="uitext" /> button for the deactivated agent.
+
+- <Status>Fixed</Status> Fixed the issue where all agents are not selected even if the <UI>Total</UI> button is selected in the agent selection option of the <Cmdname sid="side_statistics" className="uitext" /> menu.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" />, fixed the issue where the agent selection option is not applied to the CSV file when using the CSV download feature.
+
+#### Java
+
+- <Status>Fixed</Status> In <Cmdname sid="side_topology" className="uitext" /> &gt; <Cmdname sid="side_appTopology" className="uitext" />, fixed the issue where the style of the diagram displayed on the right is not applied properly when the <Cmdname sid="node_selection" className="uitext" /> button on the screen is selected.
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, fixed the error in the installation script related to Debian/Ubuntu.
+
+---
+
+### `Kubernetes`
+
+- <Status>Changed</Status> In the following menu path, changed the <Cmdname sid="TTL06366" className="b500" /> column to <Cmdname sid="thread_cpu_time" className="uitext" />, displaying comma (,) as the delimiter for every thousand.
+
+  - <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_kubernetesAgentList" className="uitext" />
+
+- <Status>Fixed</Status> In <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_pendingPod" className="uitext" />, modified the guide text according to `qosClass` in the <UI>Suggestions</UI> tab.
+
+- <Status>Fixed</Status> In <Cmdname sid="TTL07016" className="uitext" /> of <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_correlatedProjectManagement" className="uitext" />, modified not to display the integrated projects without the <Cmdname sid="view_and_analysis" className="b600" /> role in the list.
+
+---
+
+### `Database`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, fixed the issue where the data from one month ago cannot be searched.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where a toast message appears if there is no data.
+
+---
+
+### URL
+
+<Status>Changed</Status> Modified the description link for the status code to match the changed URL path of the landing page.
+
+</div>
+
+## Preview 2.6.0.a0
+
+May 17, 2024
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, added the guide page for **Oracle Solaris OS** installation.
+
+---
+
+### `Database`
+
+<Status>Deprecated</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTopSqlComparison" className="uitext" />
+
+</div>

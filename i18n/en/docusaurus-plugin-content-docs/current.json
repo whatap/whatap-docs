@@ -1592,7 +1592,7 @@
     "description": "The label for category 경고 알림 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.인스턴스 성능 모니터링": {
-    "message": "Instance Performance Management",
+    "message": "Instance Performance Monitoring",
     "description": "The label for category 인스턴스 성능 모니터링 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.doc.Java": {
