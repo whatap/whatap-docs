@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.75f732a3.css">
-<script src="/whatap-docs/assets/js/runtime~main.a67c8fa2.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.eebaaf80.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.2dde018a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -97,12 +97,12 @@
 <li>
 <p><strong>stat_ip_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
-<p><a href="https://service.whatap.io" target="_blank" rel="noopener noreferrer">와탭 모니터링 서비스</a>의 <em><strong>프로젝트 메뉴</strong></em>에서 <em><strong>통계/보고서</strong></em> &gt; <em><strong>통계</strong></em> &gt; <em><strong>클라이언트 IP</strong></em> 항목의 IP 통계 사용 여부를 활성화합니다.</p>
+<p>프로젝트의 사이드 메뉴 중 <span class="uitext">통계</span> &gt; <span class="uitext">클라이언트 IP</span> 메뉴에서 IP 통계 사용 여부를 활성화합니다.</p>
 </li>
 <li>
 <p><strong>realtime_user_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
-<p><a href="https://service.whatap.io" target="_blank" rel="noopener noreferrer">와탭 모니터링 서비스</a>의 <em><strong>대시보드</strong></em> &gt; <em><strong>애플리케이션 대시보드</strong></em> 메뉴에서 확인할 수 있는 지표 중 <em><strong>동시접속 사용자</strong></em> 지표 수집 여부를 설정합니다.</p>
+<p>프로젝트의 사이드 메뉴 중 <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 확인할 수 있는 지표 중 <span class="uitext">동시접속 사용자</span> 지표 수집 여부를 설정합니다.</p>
 </li>
 <li>
 <p><strong>hook_direct_patch_classes</strong> <span class="type">ClassFile_FullPath</span></p>
@@ -122,7 +122,7 @@
 <li>
 <p><strong>trace_component_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
-<p><a href="https://service.whatap.io" target="_blank" rel="noopener noreferrer">와탭 모니터링 서비스</a>의 <em><strong>프로젝트 메뉴</strong></em>에서 <em><strong>애플리케이션</strong></em> &gt; <em><strong>인스턴스 성능 분석</strong></em> 메뉴에서 <em><strong>라이브러리 버전</strong></em> 기능을 활성화합니다.</p>
+<p>프로젝트의 사이드 메뉴 중 <span class="uitext">인스턴스 성능 관리</span> &gt; <span class="uitext">라이브러리 버전</span> 메뉴 기능을 활성화합니다.</p>
 </li>
 <li>
 <p><strong>realtime_user_thinktime_max</strong> / <strong>wclient_thinktime_max</strong> <span class="type">MiliSeconds</span></p>
@@ -138,12 +138,12 @@
 <li>
 <p><strong>detect_deadlock_enabled</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>false</code></p>
-<p>Java 스레드의 교착 상태(DeadLock) 여부를 체  크해 감지할 경우 이벤트를 발생합니다. 발생 간격은 5초 단위입니다. 같은 DeadLock 건에 대한 이벤트는 한 시간에 한 번만 발생합니다.</p>
+<p>Java 스레드의 교착 상태(DeadLock) 여부를 체크해 감지할 경우 이벤트를 발생합니다. 발생 간격은 5초 단위입니다. 같은 DeadLock 건에 대한 이벤트는 한 시간에 한 번만 발생합니다.</p>
 </li>
 <li>
 <p><strong>text_reset</strong> <span class="type">Int</span></p>
 <p>기본값 <code>0</code></p>
-<p>와탭 에이전트는 한번 보낸 텍스트 유형 데이터를 hash 처리하므로 다음 날까지 다시 전송하지 않습니다. 이전 설정 값과 다른 값을 입력하는 경우 다시 전송합니다.</p>
+<p>와탭 에이전트는 한번 보낸 텍스트 유형 데이터를 hash 처리하므로 다음 날까지 다시 전송하지 않 습니다. 이전 설정 값과 다른 값을 입력하는 경우 다시 전송합니다.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>트랜잭션 URL, SQL String 등이 텍스트 유형 데이터에 해당합니다.</p></div></div>
 </li>
 </ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/java">Java</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/애플리케이션">애플리케이션</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/에이전트">에이전트</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/java/agent-name"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">에이전트 이름 식별</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/java/agent-usage"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">CPU/메모리/디스크 사용량 수집</div></a></nav></div></div><div class="col col--3"><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/java/agent-control-function" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
