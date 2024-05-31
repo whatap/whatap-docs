@@ -1,4 +1,5 @@
 // fin2 릴리스 노트 버전 상품명 옆에 가져오기
+// h4 공통, DB 개별 정의 필요함1
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -43,6 +44,28 @@ async function extractFeaturesAndUpdateMDXDocument() {
                         features.push({ version: version, date: date, feature: featureName, details: featureDetails });
                     }
                 });
+
+                $(element).find('h4').each((index, h4Element) => {
+                    const featureName = $(h4Element).text().trim().replace(/\u200B/g, '');
+
+                    const nextUl = $(h4Element).next('ul').first();
+                    const nextP = $(h4Element).next('p').first();
+                    const featureInUl = nextUl.find('code.Feature, code.New');
+                    const featureInP = nextP.find('code.Feature, code.New');
+
+                    const featureDetails = [];
+
+                    featureInUl.each((idx, code) => {
+                        featureDetails.push($(code).parent().html().trim());
+                    });
+                    featureInP.each((idx, code) => {
+                        featureDetails.push($(code).parent().html().trim());
+                    });
+
+                    if (featureDetails.length > 0) {
+                        features.push({ version: version, date: date, feature: featureName, details: featureDetails });
+                    }
+                });
             });
 
             features.sort((a, b) => parseDate(b.date) - parseDate(a.date));
@@ -56,7 +79,7 @@ async function extractFeaturesAndUpdateMDXDocument() {
 }
 
 function updateOrCreateMDXDocument(newFeatures) {
-    const mdxFilePath = './crw-data/overview/_changelog_overview_fin2.mdx';
+    const mdxFilePath = './crw-data/overview/_changelog_overview_fin3.mdx';
     let existingFeatures = [];
 
     if (fs.existsSync(mdxFilePath)) {
@@ -149,7 +172,7 @@ function createBackup(filename) {
         fs.mkdirSync(backupFolder);
     }
 
-    const backupFileName = path.join(backupFolder, `_changelog_overview_backup2_${Date.now()}.mdx`);
+    const backupFileName = path.join(backupFolder, `_changelog_overview_backup3_${Date.now()}.mdx`);
     fs.copyFileSync(filename, backupFileName);
     console.log(`Backup created: ${backupFileName}`);
 }
