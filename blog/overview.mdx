@@ -9,11 +9,16 @@ tags: [새로운 기능, 서비스 히스토리 ]
 
 import CustomListItem from '../CustomListItem'; 
 
-import CustomList from '../CustomList';
+import ChangelogComponent from '../ChangelogComponent';
 
 와탭의 서비스 히스토리 개요를 한 눈에 살펴보세요.
 
+<br/>
+<br/>
+
 {/* 
+
+import CustomList from '../CustomList';
 
 import CustomList from '../CustomList'; 
 
@@ -31,26 +36,26 @@ import ChangelogList from '../ChangelogList';
 
 {/* truncate */}
 
-<div class='history_overview'>
+{/* <div class='history_overview'>
 
 import Overview from "../crw-data/overview/_changelog_overview.mdx";
 
 <Overview />
 
-</div>
+</div> */}
 
 <div class='history_overview'>
 
 
 <CustomListItem>
 
-{/* <CustomList> */}
+<ChangelogComponent>
 
 import Overview_f from "../crw-data/overview/_changelog_overview_fin.mdx";
 
 <Overview_f /> 
 
-{/* </CustomList> */}
+</ChangelogComponent>
 
 </CustomListItem>
 
@@ -65,10 +70,10 @@ import Overview_d from "../crw-data/overview/_changelog_overview_d4.mdx";
 
 </div> */}
 
-<div class='history_overview'>
+{/* <div class='history_overview'>
 
 import Overview_tb from "../crw-data/overview/_changelog_overview_table.mdx";
 
 <Overview_tb />
 
-</div>
+</div> */}

@@ -861,9 +861,17 @@ div.history_overview{
   li:first-of-type::marker {
     content: none;
   }
+  .changelog-date-dup {
+    display: none;
+  }
+  .changelog-service {
+    position: relative;
+    top: -1px;
+    font-size: 85%;
+  }
   ul {
     // padding-left: 18px;
-    padding-left: 68px;
+    padding-left: 75px;
     list-style: none;
     padding-top: 0;
     li {
@@ -875,19 +883,14 @@ div.history_overview{
       padding-bottom: 15px;
       padding-left: 25px;
       margin-left: 15px !important;
-      // padding-left: 20px;
-      // margin-left: 0px;
 
-      /* 추가된 부분: 날짜 정보 출력 */
       & > .changelog-date {
         position: absolute;
-        left: -130px; /* 조정 가능한 값 */
-        // left: -35px; /* 조정 가능한 값 */
-        top: 7px;
+        left: -112px; 
+        font-size: 75%;
+        top: 8px;
         transform: translateY(-50%);
       }
-
-      /* 기존의 가상 요소 원 스타일은 유지됨 */
 
       &::before {
         content: "\200b";
@@ -920,15 +923,20 @@ div.history_overview{
       border-left: none;
       list-style: decimal;
       padding-left: 0;
+      margin-top: -6px;
+      margin-bottom: 10px;
+      width: 110%;
       li {
         &::before {
           content: "• ";
           border: none;
           background-color: transparent;
-          top: -5px;
+          top: 0px;
           font-size: 130%;
           color: #a8a8a8;
         }
+        font-size: 92%;
+        margin-bottom: -1px;
         padding-left: 5px;
         padding-bottom: 5px;
         border-left: none;
@@ -936,83 +944,6 @@ div.history_overview{
     }
   }
 }
-
-
-// div.history_overview{
-//   // ul > li > ul > li {
-//   //   margin-top: -1px;
-//   //   margin-left: 20px;
-//   // }
-//   ul {
-//     padding-left: 18px;
-//     list-style: none;
-//     padding-top: 0;
-//     li {
-//       display: block;
-//       position: relative;
-//       border-left: 1px solid #a8a8a8;
-//       line-height: 1.5;
-//       padding-top: 0px;
-//       padding-bottom: 15px;
-//       padding-left: 20px;
-//       margin-left: 0px;
-//       // &::before {
-//       //   content: attr(data-date) "\200b";
-//       //   width: auto; /* 날짜를 표시할 수 있도록 너비 자동 설정 */
-//       //   display: inline-block;
-//       //   margin-right: 10px; /* 날짜와 둥근 원 사이의 간격 */
-//       // }
-//       // &::before {
-//       //   content: attr(data-date); /* 날짜 정보 표시 */
-//       //   display: inline-block;
-//       //   width: 80px; /* 날짜 표시 영역의 너비 조절 */
-//       //   color: #a8a8a8;
-//       // }
-//       &::before {
-//         // content: "\200b";
-//         content: attr(data-date) "\200b";
-//         width: 15px;
-//         height: 15px;
-//         border: 1px solid #a8a8a8;
-//         background-color: #fff;
-//         border-radius: 50%;
-//         position: absolute;
-//         top: 0px;
-//         left: -8px;
-//       }
-//       &::marker {
-//         color: #a8a8a8;
-//       }
-//       &:first-of-type {
-//         &::marker {
-//           border-left: 1px solid #333;
-//         }
-//       }
-//       &:last-of-type {
-//         border-left: none;
-//       }
-//     }
-//     ul {
-//       border-left: none;
-//       list-style: decimal;
-//       padding-left: 0;
-//       li {
-//         &::before {
-//           content: "• ";
-//           border: none;
-//           background-color: transparent;
-//           top: -5px;
-//           font-size: 130%;
-//           color: #a8a8a8;
-//         }
-//         padding-left: 5px;
-//         padding-bottom: 5px;;
-//         border-left: none;
-//       }
-//     }
-//   }
-
-// }
 
 // document
 main {
@@ -1681,6 +1612,8 @@ main {
       color: #fff;
       // font-family: "Oleo Script";
       border: 0.5px;
+      position: relative;
+      top: -6px;
       padding: 1px 4px 1px 4px;
     }
     // 블로그 코드 끝
