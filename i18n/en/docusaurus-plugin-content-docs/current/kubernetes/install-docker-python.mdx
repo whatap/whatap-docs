@@ -75,7 +75,7 @@ whatap-setting-config \
 # The following comments are additionally configured for agent grouping and activation of log collection. Use them if necessary.
 
 # Agent grouping
-#echo "okind=$okind" >> whatap.conf
+# echo "whatap.okind=$whatap.okind" >> whatap.conf
 
 # Activation of log collection
 #echo "logsink_enabled=true" >> whatap.conf
@@ -153,7 +153,7 @@ The following settings are optional and must be used if necessary. In addition t
 - **Agent grouping** 
 
   ```bash
-  echo "okind=$okind" >> whatap.conf
+  echo "whatap.okind=$whatap.okind" >> whatap.conf
   ```
 
 - **Enabling the log collection** 
@@ -178,7 +178,7 @@ After building Docker, set **container environment variables** in the Kubernetes
 			value: {YOUR_APP_NAME}
 		- name: app_process_name
 		  value: {YOUR_PROCESS_NAME}
-		- name: okind
+		- name: whatap.okind
 			value: {YOUR_GROUP_NAME}
 		- name: NODE_IP
 		  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
@@ -236,7 +236,7 @@ spec:
 
 - `app_process_name`: Set the target processes such as CPU and Heap Memory. For example, there are uwsgi and gunicorn.
 
-- `okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
+- `whatap.okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
 
 - `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
 

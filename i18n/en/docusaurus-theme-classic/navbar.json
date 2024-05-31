@@ -234,5 +234,9 @@
   "item.label.MySQL 모니터링": {
     "message": "MySQL Monitoring",
     "description": "Navbar item with label MySQL 모니터링"
+  },
+  "item.label.새로운 기능": {
+    "message": "New features",
+    "description": "Navbar item with label 새로운 기능"
   }
 }

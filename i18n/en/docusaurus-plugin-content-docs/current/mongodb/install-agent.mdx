@@ -55,6 +55,31 @@ import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-
 
 <Dbinstallagentcommonnotes />
 
+{/* 모니터링용 계정 생성*/}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
+
+{/* mongoDB */}
+
+```javascript
+db.createUser(
+  {
+    user: "whatap",
+    pwd: "DB_Password"
+    roles: [
+        { "role" : "clusterMonitor", "db" : "admin" },
+   ]
+  }
+)
+```
+
+:::note
+
+For more information about the account creation in the MongoDB environment, see [the following link](https://www.mongodb.com/docs/manual/reference/method/db.createUser/).
+
+:::
+
 ## DB user file creation {#create-db-user}
 
 :::tip
