@@ -18,6 +18,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
                 oText = whatapLocale[sid][`${currentLocale}`].replace('&nbsp;', ' ');
             } else if (replace === "br") {
                 oText = whatapLocale[sid][`${currentLocale}`].replace('</br>', ' ').replace('\n', '');
+            } else if (replace == "ITM06005") {
+                let oType = whatapLocale["ITM06005"][`${currentLocale}`];
+                oText = whatapLocale[sid][`${currentLocale}`].replace('{type}', oType)
             } else {
                 oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '');
             }
