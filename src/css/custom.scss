@@ -856,6 +856,12 @@ footer.row > div.text--right > a {
   }
 }
 // 블로그 서비스 히스토리 overview
+#overview_test {
+  .changelog-service{
+    position: relative;
+    top: -6px;
+  }
+}
 div.history_overview{
   // 검은 마커가 맨 처음에 떠서 그거 없애기
   li:first-of-type::marker {
@@ -868,6 +874,10 @@ div.history_overview{
     position: relative;
     top: -1px;
     font-size: 85%;
+  }
+  .changelog-overview {
+    position: relative;
+    top: -6px;
   }
   ul {
     // padding-left: 18px;
@@ -924,7 +934,7 @@ div.history_overview{
       list-style: decimal;
       padding-left: 0;
       margin-top: -6px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       width: 110%;
       li {
         &::before {
@@ -1612,8 +1622,6 @@ main {
       color: #fff;
       // font-family: "Oleo Script";
       border: 0.5px;
-      position: relative;
-      top: -6px;
       padding: 1px 4px 1px 4px;
     }
     // 블로그 코드 끝
