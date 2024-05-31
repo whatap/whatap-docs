@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28850],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58084],{
 
-/***/ 53076:
+/***/ 37504:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,37 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'nodejs-previous',
-	title: 'Node.js Agent 지난 버전',
-	toc_max_heading_level: 2
+	id: 'python-1_5_4',
+	title: 'Python Agent v1.5.4',
+	toc_max_heading_level: 2,
+	pagination_next: 'release-notes/python/python-1_5_3',
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/nodejs/nodejs-previous",
-  "title": "Node.js Agent 지난 버전",
-  "description": "* Node.js Agent v0.4.77",
-  "source": "@site/docs/release-notes/nodejs/nodejs-previous.mdx",
-  "sourceDirName": "release-notes/nodejs",
-  "slug": "/release-notes/nodejs/nodejs-previous",
-  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-previous",
+  "id": "release-notes/python/python-1_5_4",
+  "title": "Python Agent v1.5.4",
+  "description": "2024년 01월 09일",
+  "source": "@site/docs/release-notes/python/python-1.5.4.mdx",
+  "sourceDirName": "release-notes/python",
+  "slug": "/release-notes/python/python-1_5_4",
+  "permalink": "/whatap-docs/release-notes/python/python-1_5_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-previous.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.5.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "nodejs-previous",
-    "title": "Node.js Agent 지난 버전",
-    "toc_max_heading_level": 2
+    "id": "python-1_5_4",
+    "title": "Python Agent v1.5.4",
+    "toc_max_heading_level": 2,
+    "pagination_next": "release-notes/python/python-1_5_3",
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Node.js Agent v0.4.80",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
-  },
   "next": {
-    "title": "Python Agent v1.6.4",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_4"
+    "title": "Python Agent v1.5.3",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_3"
   }
 };
 const assets = {
@@ -61,18 +61,36 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    admonition: "admonition",
     li: "li",
+    p: "p",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-        href: "nodejs-0_4_77",
-        children: "Node.js Agent v0.4.77"
+  }, {Status} = _components;
+  if (!Status) _missingMdxReference("Status", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "2024년 01월 09일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://pypi.org/project/whatap-python/1.5.4/",
+          children: "whatap-python v1.5.4"
+        })]
       })
-    }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " Python 에이전트 v1.4.9 버전 이상에서 일부 파이썬 버전의 모듈 의존성 수집 오류 수정"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "Python 3.6"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "Python 3.7"
+      }), "\n"]
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -86,6 +104,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
