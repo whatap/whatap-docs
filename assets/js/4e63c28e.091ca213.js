@@ -263,12 +263,12 @@ function _createMdxContent(props) {
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["*", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-              children: ["패키지와 메소드 이름을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "로 치환하는 경우"
-              })]
-            })]
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.strong, {
+              children: ["패키지와 메소드 이름을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "*"
+              }), "로 치환하는 경우"]
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-java",
@@ -325,31 +325,32 @@ function _createMdxContent(props) {
         children: "설정한 메소드 시작 시간을 트레이스에 기록하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["Java 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "hook_trace_helper_patterns"
-          }), " 옵션에 적용할 메소드를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "whatap.conf"
-          }), " 파일에 작성하세요."]
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Java 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "hook_trace_helper_patterns"
+            }), " 옵션에 적용할 메소드를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "whatap.conf"
+            }), " 파일에 작성하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='$WHATAP_HOME/whatap.conf'",
+              children: "hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "TraceHelperStart.x"
+            }), " 파일에 플러그인 코드를 작성하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-java",
+              metastring: "title='$WHATAP_HOME/plugin/TraceHelperStart.x'",
+              children: "// String prefix에 클래스명, 메소드명을 대입하세요.\nString prefix = $point.class1 + \".\" + $point.method;\n// 와탭 트레이스 속성 명칭을 `prefix` + \"st\" 로 현재 시간을 설정하세요.\n$ctx.setAttribute(prefix + \"st\", new Long(System.currentTimeMillis()));\n// 트레이스 정보에 현재 시간을 추가하세요.\n$ctx.profile(prefix + \" Start\", new java.util.Date().toString()); \n"
+            })
+          }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title='$WHATAP_HOME/whatap.conf'",
-          children: "hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-        start: "2",
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "TraceHelperStart.x"
-          }), " 파일에 플러그인 코드를 작성하세요."]
-        }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-java",
-          metastring: "title='$WHATAP_HOME/plugin/TraceHelperStart.x'",
-          children: "// String prefix에 클래스명, 메소드명을 대입하세요.\nString prefix = $point.class1 + \".\" + $point.method;\n// 와탭 트레이스 속성 명칭을 `prefix` + \"st\" 로 현재 시간을 설정하세요.\n$ctx.setAttribute(prefix + \"st\", new Long(System.currentTimeMillis()));\n// 트레이스 정보에 현재 시간을 추가하세요.\n$ctx.profile(prefix + \" Start\", new java.util.Date().toString()); \n"
-        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "트레이스 내역에 메소드 시작시간을 다음과 같이 표시합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -367,30 +368,32 @@ function _createMdxContent(props) {
         children: "설정한 메소드 종료시간과 수행시간을 트레이스에 기록하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["Java 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "hook_trace_helper_patterns"
-          }), " 옵션에 적용할 메소드를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "whatap.conf"
-          }), " 파일에 작성하세요."]
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Java 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "hook_trace_helper_patterns"
+            }), " 옵션에 적용할 메소드를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "whatap.conf"
+            }), " 파일에 작성하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='$WHATAP_HOME/whatap.conf'",
+              children: "hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "TraceHelperEnd.x"
+            }), " 파일에 플러그인 코드를 작성하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-java",
+              metastring: "title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers",
+              children: "String prefix = $point.class1 + \".\" + $point.method;\n// TraceHelperStart.x 파일에서 추가한 트레이스 속성을 가져오세요.\nlong st = ((Long) $ctx.getAttribute(prefix + \"st\")).longValue(); \nlong gap = System.currentTimeMillis() - st;\nStringBuilder sb = new StringBuilder();\nsb.append(new java.util.Date().toString() + \" (Gap:\" + gap + \" milliseconds)\");\n// 트레이스 정보에 시작 시간과의 현재 시간과의 Gap(수행시간)을 추가하세요.\n$ctx.profile(prefix + \" End\", sb.toString()); \n"
+            })
+          }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title='$WHATAP_HOME/whatap.conf'",
-          children: "hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "TraceHelperEnd.x"
-          }), " 파일에 플러그인 코드를 작성하세요."]
-        }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-java",
-          metastring: "title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers",
-          children: "String prefix = $point.class1 + \".\" + $point.method;\n// TraceHelperStart.x 파일에서 추가한 트레이스 속성을 가져오세요.\nlong st = ((Long) $ctx.getAttribute(prefix + \"st\")).longValue(); \nlong gap = System.currentTimeMillis() - st;\nStringBuilder sb = new StringBuilder();\nsb.append(new java.util.Date().toString() + \" (Gap:\" + gap + \" milliseconds)\");\n// 트레이스 정보에 시작 시간과의 현재 시간과의 Gap(수행시간)을 추가하세요.\n$ctx.profile(prefix + \" End\", sb.toString()); \n"
-        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "트레이스 내역에 메소드 종료시간과 수행시간을 다음과 같이 표시합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
