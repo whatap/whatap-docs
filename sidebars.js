@@ -3078,14 +3078,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_96',
+                id: 'release-notes/nodejs/nodejs-0_4_97',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_96',
+                  id: 'release-notes/nodejs/nodejs-0_4_97',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_97',
                 'release-notes/nodejs/nodejs-0_4_95',
                 'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
@@ -3094,7 +3095,6 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_86',
                 'release-notes/nodejs/nodejs-0_4_83',
                 'release-notes/nodejs/nodejs-0_4_81',
-                'release-notes/nodejs/nodejs-0_4_80',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
