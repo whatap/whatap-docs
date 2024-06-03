@@ -2694,6 +2694,15 @@ main {
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
   }
+
+  .redocusaurus {
+    div.redoc-wrap {
+      div.api-content {
+        width: 100% !important;
+      }
+    }
+  }
+  
   .row {
     display: block !important;
   }
