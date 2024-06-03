@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39838],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31321],{
 
-/***/ 19310:
+/***/ 97589:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_5_4',
-	title: 'Kubernetes Agent v1.5.4',
+	id: 'k8s-1_7_1',
+	title: 'Kubernetes Agent v1.7.1',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_5_3',
+	pagination_next: 'release-notes/k8s/k8s-1_7_0',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_5_4",
-  "title": "Kubernetes Agent v1.5.4",
-  "description": "2024년 02월 06일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.5.4.mdx",
+  "id": "release-notes/k8s/k8s-1_7_1",
+  "title": "Kubernetes Agent v1.7.1",
+  "description": "2024년 05월 17일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.7.1.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_5_4",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_4",
+  "slug": "/release-notes/k8s/k8s-1_7_1",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.5.4.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.7.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_5_4",
-    "title": "Kubernetes Agent v1.5.4",
+    "id": "k8s-1_7_1",
+    "title": "Kubernetes Agent v1.7.1",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_5_3",
+    "pagination_next": "release-notes/k8s/k8s-1_7_0",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Kubernetes Agent v1.5.5",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_5"
+    "title": "Kubernetes Agent v1.7.2",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_2"
   },
   "next": {
-    "title": "Kubernetes Agent v1.5.3",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_3"
+    "title": "Kubernetes Agent v1.7.0",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_0"
   }
 };
 const assets = {
@@ -66,28 +66,43 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    blockquote: "blockquote",
+    code: "code",
     p: "p",
+    strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 02월 06일"
+      children: "2024년 05월 17일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         children: "Fixed"
-      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: "kube_pod"
-      }), " 카테고리에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: "cpu_per_limit"
-      }), " 필드 값이 100 이상되는 문제 수정"]
+      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "OOMKilled"
+      }), " 컨테이너 수집 로직 수정"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "lastState"
+        }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "OOMKilled"
+        }), "인 컨테이너의 경우 컨테이너의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "state"
+        }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Running"
+        }), "임에도 불구하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "OOMKilled"
+        }), "로 보여지는 버그 수정"]
+      }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.5.4.tar",
-          children: "kube_mon_1.5.4.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.7.1.tar",
+          children: "kube_mon_1.7.1.tar"
         })]
       })
     })]
