@@ -270,13 +270,13 @@ env:
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
 - name: OKIND
-	value: {YOUR_OKIND_NAME}
+  value: {YOUR_OKIND_NAME}
 - name: license
-	value: {licenseKey}
-- name: whatap_server_host
-	value: {proxyServer}
-- name: whatap_micro_enabled
-	value: "true"
+  value: {licenseKey}
+- name: whatap.server.host
+  value: {proxyServer}
+- name: whatap.micro.enabled
+  value: "true"
 ```
 
 See the following example:
@@ -314,9 +314,9 @@ spec:
           value: #DeploymentName
         - name: license
           value: #licenseKey
-        - name: whatap_server_host
+        - name: whatap.server.host
           value: #proxyServer
-        - name: whatap_micro_enabled
+        - name: whatap.micro.enabled
           value: "true"
 ```
 
@@ -336,7 +336,7 @@ spec:
 
 - `whatap_server_host`: Host IP of the WhaTap collection server
 
-- `whatap_micro_enabled`: Enables integration with containers.
+- `whatap.micro.enabled`: Enables integration with containers.
 
 :::
 
