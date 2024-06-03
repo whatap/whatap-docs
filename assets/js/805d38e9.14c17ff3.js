@@ -58,6 +58,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Preview 2.6.0.a3",
+  "id": "preview-260a3",
+  "level": 2
+}, {
+  "value": "<code>Kubernetes</code>",
+  "id": "kubernetes",
+  "level": 3
+}, {
   "value": "Preview 2.6.0.a2",
   "id": "preview-260a2",
   "level": 2
@@ -75,7 +83,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
-  "id": "kubernetes",
+  "id": "kubernetes-1",
   "level": 3
 }, {
   "value": "<code>Database</code>",
@@ -131,7 +139,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
-  "id": "kubernetes-1",
+  "id": "kubernetes-2",
   "level": 3
 }, {
   "value": "<code>Database</code>",
@@ -189,6 +197,67 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "preview-260a3",
+        children: "Preview 2.6.0.a3"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 06월 06일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "kubernetes",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Kubernetes"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_containerMap"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " 요약 보기의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06782",
+                className: "uitext"
+              }), " 탭에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "Containter State"
+              }), " 표시 및 설명 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " 요약 보기의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06782",
+                className: "uitext"
+              }), " 탭에서 다른 목록 메뉴로 이동하는 링크를 노출하도록 스타일 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " 요약 보기, 상세 보기에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "trace",
+                className: "uitext"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "metrics",
+                className: "uitext"
+              }), " 탭이 깜빡이는 현상 개선"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " 그룹을 선택할 때 요약 보기 상단에 다른 목록 메뉴로 이동 버튼을 노출하도록 수정"]
+            }), "\n"]
+          }), "\n"]
+        })]
+      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -302,7 +371,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에서 브라우저 창 크기를 줄이면 차트 범례 텍스트가 위치를 벗어나는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "kubernetes",
+          id: "kubernetes-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Kubernetes"
           })
@@ -536,7 +605,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "",
+          id: "-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_dashboard"
           })
@@ -545,7 +614,7 @@ function _createMdxContent(props) {
             children: "Fixed"
           }), " 대시보드에서 TOP N 차트 위젯의 툴팁이 표시되지 않는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "-1",
+          id: "-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_maintenancePlan"
           })
@@ -561,7 +630,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴를 이용할 수 있도록 권한 조정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "-2",
+          id: "-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_analysis"
           })
@@ -673,7 +742,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에서 Debian/Ubuntu 관련한 설치 스크립트의 오류 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "kubernetes-1",
+          id: "kubernetes-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Kubernetes"
           })
