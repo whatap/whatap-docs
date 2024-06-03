@@ -758,14 +758,14 @@ function install_docker_java_createMdxContent(props) {
       }), (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-yaml",
-          children: "env:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n- name: OKIND\n\tvalue: {YOUR_OKIND_NAME}\n- name: license\n\tvalue: {licenseKey}\n- name: whatap_server_host\n\tvalue: {proxyServer}\n- name: whatap_micro_enabled\n\tvalue: \"true\"\n"
+          children: "env:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n- name: OKIND\n  value: {YOUR_OKIND_NAME}\n- name: license\n  value: {licenseKey}\n- name: whatap.server.host\n  value: {proxyServer}\n- name: whatap.micro.enabled\n  value: \"true\"\n"
         })
       }), (0,jsx_runtime.jsx)(_components.p, {
         children: "다음 예시를 참조하세요."
       }), (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-yaml",
-          children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: #DeploymentName\n  labels:\n    app: #AppLabel\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: #AppLabel\n  template:\n    metadata:\n      labels:\n        app: #AppLabel\n    spec:\n      containers:\n      - name: #ContainerName\n        image: nginx\n        ports:\n        - containerPort: 80\n        env:\n        - name: NODE_IP\n          valueFrom: {fieldRef: {fieldPath: \"status.hostIP\"}}\n        - name: NODE_NAME\n          valueFrom: {fieldRef: {fieldPath: \"spec.nodeName\"}}\n        - name: POD_NAME\n          valueFrom: {fieldRef: {fieldPath: \"metadata.name \"}}\n        - name: OKIND\n          value: #DeploymentName\n        - name: license\n          value: #licenseKey\n        - name: whatap_server_host\n          value: #proxyServer\n        - name: whatap_micro_enabled\n          value: \"true\"\n"
+          children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: #DeploymentName\n  labels:\n    app: #AppLabel\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: #AppLabel\n  template:\n    metadata:\n      labels:\n        app: #AppLabel\n    spec:\n      containers:\n      - name: #ContainerName\n        image: nginx\n        ports:\n        - containerPort: 80\n        env:\n        - name: NODE_IP\n          valueFrom: {fieldRef: {fieldPath: \"status.hostIP\"}}\n        - name: NODE_NAME\n          valueFrom: {fieldRef: {fieldPath: \"spec.nodeName\"}}\n        - name: POD_NAME\n          valueFrom: {fieldRef: {fieldPath: \"metadata.name \"}}\n        - name: OKIND\n          value: #DeploymentName\n        - name: license\n          value: #licenseKey\n        - name: whatap.server.host\n          value: #proxyServer\n        - name: whatap.micro.enabled\n          value: \"true\"\n"
         })
       }), (0,jsx_runtime.jsxs)(_components.admonition, {
         type: "note",
@@ -807,13 +807,13 @@ function install_docker_java_createMdxContent(props) {
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
               children: [(0,jsx_runtime.jsx)(_components.code, {
-                children: "whatap_server_host"
+                children: "whatap.server.host"
               }), ": 와탭 수집 서버 호스트 IP입니다."]
             }), "\n"]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
               children: [(0,jsx_runtime.jsx)(_components.code, {
-                children: "whatap_micro_enabled"
+                children: "whatap.micro.enabled"
               }), ": 컨테이너와의 연동을 활성화합니다."]
             }), "\n"]
           }), "\n"]

@@ -315,14 +315,14 @@ function install_docker_nodejs_createMdxContent(props) {
       }), (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-yaml",
-          children: "env:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n- name: OKIND\n\tvalue: {YOUR_OKIND_NAME}\n- name: license\n\tvalue: {licenseKey}\n- name: whatap_server_host\n\tvalue: {proxyServer}\n- name: whatap_micro_enabled\n\tvalue: \"true\"\n"
+          children: "env:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n- name: OKIND\n  value: {YOUR_OKIND_NAME}\n- name: WHTAP_LICENSE\n  value: {licenseKey}\n- name: WHATAP_SERVER_HOST\n  value: {proxyServer}\n- name: WHATAP_MICRO_ENABLED\n  value: \"true\"\n"
         })
       }), (0,jsx_runtime.jsx)(_components.p, {
         children: "다음 예시를 참조하세요."
       }), (0,jsx_runtime.jsx)(_components.pre, {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-yaml",
-          children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: #DeploymentName\n  labels:\n    app: #AppLabel\nspec:\n  selector:\n    matchLabels:\n      app: #AppLabel\n\treplicas: 3\n  template:\n    metadata:\n      labels:\n        app: #AppLabel\n\t\tspec:\n\t\t  containers:\n\t\t\t- name: #ContainerName\n        image: nginx\n        ports:\n        - containerPort: 80\n\t\t\t  env:\n\t\t    - name: NODE_IP\n\t        valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n\t\t\t\t- name: NODE_NAME\n\t\t      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n\t\t    - name: POD_NAME\n\t\t      valueFrom: {fieldRef: {fieldPath: metadata.name}}\n\t\t\t\t- name: OKIND\n          value: #DeploymentName\n\t\t\t\t- name: license\n\t\t\t\t\tvalue: {licenseKey}\n\t\t\t\t- name: whatap_server_host\n\t\t\t\t\tvalue: {proxyServer}\n\t\t\t\t- name: whatap_micro_enabled\n\t\t\t\t\tvalue: \"true\"\n"
+          children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: #DeploymentName\n  labels:\n    app: #AppLabel\nspec:\n  selector:\n    matchLabels:\n      app: #AppLabel\n  replicas: 3\n  template:\n    metadata:\n      labels:\n        app: #AppLabel\n    spec:\n      containers:\n      - name: #ContainerName\n        image: nginx\n        ports:\n        - containerPort: 80\n        env:\n        - name: NODE_IP\n          valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n        - name: NODE_NAME\n          valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n        - name: POD_NAME\n          valueFrom: {fieldRef: {fieldPath: metadata.name}}\n        - name: OKIND\n          value: #DeploymentName\n        - name: WHTAP_LICENSE\n          value: {licenseKey}\n        - name: WHATAP_SERVER_HOST\n          value: {proxyServer}\n        - name: WHATAP_MICRO_ENABLED\n          value: \"true\"\n"
         })
       }), (0,jsx_runtime.jsx)(MDXContent, {})]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
