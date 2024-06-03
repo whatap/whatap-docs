@@ -2955,13 +2955,18 @@ const sidebars = {
           label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
-          // className: 'new',
+          className: 'new',
           items: [
+            {
+              type: 'doc',
+              label: 'v1.0.9',
+              id: 'release-notes/mobile/mobile-app-v1_0_9',
+              className: 'new',
+            },
             {
               type: 'doc',
               label: 'v1.0.8',
               id: 'release-notes/mobile/mobile-app-v1_0_8',
-              // className: 'new',
             },
             {
               type: 'doc',
