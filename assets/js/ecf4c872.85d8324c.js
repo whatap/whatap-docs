@@ -427,8 +427,8 @@ const metadata = {
   },
   "sidebar": "mysqlSidebar",
   "previous": {
-    "title": "에이전트 설치",
-    "permalink": "/whatap-docs/mysql/install-agent"
+    "title": "빠른 에이전트 설정",
+    "permalink": "/whatap-docs/mysql/install-agent-quick-setup"
   },
   "next": {
     "title": "설치 문제 해결",
