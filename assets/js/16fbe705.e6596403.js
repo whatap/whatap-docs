@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98958],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90635],{
 
 /***/ 98269:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -176,7 +176,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-yaml",
-          children: "apiVersion: v1\nkind: Pod\nmetadata:\n  name: # Pod Name\n  labels: # Pod Labels\nspec:\n  containers:\n\t  env:\n    - name: NODE_IP\n      valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n    - name: NODE_NAME\n      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n    - name: POD_NAME\n      valueFrom: {fieldRef: {fieldPath: metadata.name}}\n"
+          children: "apiVersion: v1\nkind: Pod\nmetadata:\n  name: # Pod Name\n  labels: # Pod Labels\nspec:\n  containers:\n    env:\n    - name: NODE_IP\n      valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n    - name: NODE_NAME\n      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n    - name: POD_NAME\n      valueFrom: {fieldRef: {fieldPath: metadata.name}}\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
@@ -305,7 +305,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 25289:
+/***/ 85784:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -323,72 +323,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'install-agent-docker',
-	title: 'Docker 환경 설치',
-	description: 'Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
+	id: 'install-docker-php',
+	title: 'Docker PHP 설치',
+	description: '컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
 	tags: [
-		'PHP',
-		'에이전트 설치',
-		'Docker',
-		'컨테이너',
-		'애플리케이션'
+		'쿠버네티스',
+		'쿠버네티스 모니터링',
+		'애플리케이션 설치',
+		'PHP'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/install-agent-docker",
-  "title": "Docker 환경 설치",
-  "description": "Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
-  "source": "@site/docs/php/install-agent-docker.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/install-agent-docker",
-  "permalink": "/whatap-docs/php/install-agent-docker",
+  "id": "kubernetes/install-docker-php",
+  "title": "Docker PHP 설치",
+  "description": "컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+  "source": "@site/docs/kubernetes/install-docker-php.mdx",
+  "sourceDirName": "kubernetes",
+  "slug": "/kubernetes/install-docker-php",
+  "permalink": "/whatap-docs/kubernetes/install-docker-php",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/install-agent-docker.mdx",
+  "editUrl": "undefined/docs/kubernetes/install-docker-php.mdx",
   "tags": [
+    {
+      "label": "쿠버네티스",
+      "permalink": "/whatap-docs/tags/쿠버네티스"
+    },
+    {
+      "label": "쿠버네티스 모니터링",
+      "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
+    },
+    {
+      "label": "애플리케이션 설치",
+      "permalink": "/whatap-docs/tags/애플리케이션-설치"
+    },
     {
       "label": "PHP",
       "permalink": "/whatap-docs/tags/php"
-    },
-    {
-      "label": "에이전트 설치",
-      "permalink": "/whatap-docs/tags/에이전트-설치"
-    },
-    {
-      "label": "Docker",
-      "permalink": "/whatap-docs/tags/docker"
-    },
-    {
-      "label": "컨테이너",
-      "permalink": "/whatap-docs/tags/컨테이너"
-    },
-    {
-      "label": "애플리케이션",
-      "permalink": "/whatap-docs/tags/애플리케이션"
     }
   ],
   "version": "current",
   "frontMatter": {
-    "id": "install-agent-docker",
-    "title": "Docker 환경 설치",
-    "description": "Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+    "id": "install-docker-php",
+    "title": "Docker PHP 설치",
+    "description": "컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
     "tags": [
-      "PHP",
-      "에이전트 설치",
-      "Docker",
-      "컨테이너",
-      "애플리케이션"
+      "쿠버네티스",
+      "쿠버네티스 모니터링",
+      "애플리케이션 설치",
+      "PHP"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "kubeSidebar",
   "previous": {
-    "title": "AWS Elastic beanstalk",
-    "permalink": "/whatap-docs/php/php-os/aws-eb"
+    "title": "Docker Python 설치",
+    "permalink": "/whatap-docs/kubernetes/install-docker-python"
   },
   "next": {
-    "title": "설치 점검",
-    "permalink": "/whatap-docs/php/install-check"
+    "title": "Docker Go 설치",
+    "permalink": "/whatap-docs/kubernetes/install-docker-go"
   }
 };
 const assets = {
@@ -400,7 +394,34 @@ const assets = {
 
 const toc = [..._common_items_docker_php_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_docker_php_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+  const _components = {
+    em: "em",
+    p: "p",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "관리"
+        })
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "에이전트 설치"
+        })
+      }), " > 하단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "애플리케이션 설치"
+        })
+      }), " 클릭 > 설치 안내 중 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Docker PHP"
+        })
+      }), " 탭 선택"]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_docker_php_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+  });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
