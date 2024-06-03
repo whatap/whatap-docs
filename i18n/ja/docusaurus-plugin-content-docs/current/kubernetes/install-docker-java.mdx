@@ -270,13 +270,13 @@ env:
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
 - name: OKIND
-	value: {YOUR_OKIND_NAME}
+  value: {YOUR_OKIND_NAME}
 - name: license
-	value: {licenseKey}
-- name: whatap_server_host
-	value: {proxyServer}
-- name: whatap_micro_enabled
-	value: "true"
+  value: {licenseKey}
+- name: whatap.server.host
+  value: {proxyServer}
+- name: whatap.micro.enabled
+  value: "true"
 ```
 
 次の例をご参照ください。
@@ -314,9 +314,9 @@ spec:
           value: #DeploymentName
         - name: license
           value: #licenseKey
-        - name: whatap_server_host
+        - name: whatap.server.host
           value: #proxyServer
-        - name: whatap_micro_enabled
+        - name: whatap.micro.enabled
           value: "true"
 ```
 
@@ -336,7 +336,7 @@ spec:
 
 - `whatap_server_host`：WhaTap収集サーバーのホストIPです。
 
-- `whatap_micro_enabled`：コンテナとの連動を活性化します。
+- `whatap.micro.enabled`：コンテナとの連動を活性化します。
 
 :::
 
