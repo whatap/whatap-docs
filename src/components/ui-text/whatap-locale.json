@@ -11855,7 +11855,7 @@
     "ja": "対象",
     "ko": "대상",
     "zh": "Target",
-    "service_id": "TTL01760"
+    "service_id": "Target"
   },
   "feedback_type": {
     "en": "Feedback type",
@@ -13367,10 +13367,10 @@
     "service_id": "_01977"
   },
   "email_is_used_by_notification_check_spam_filter": {
-    "en": "Email is used for sign-up approval, password reset and alert notifications. If you don't receive it, please check the spam filter.",
-    "ja": "Eメールは、ユーザー登録の承認、パスワード初期化、アラート通知に使われます。Eメールが受信できなかった場合には迷惑メールを確認してください。",
-    "ko": "이메일은 회원가입 승인, 패스워드 초기화, 경고 알림에 사용됩니다. 수신되지 않을 경우, 스팸 메일을 확인하여 주시기 바랍니다.",
-    "zh": "Email is used by sign-up approval, password reset and email notification. If you couldn't receive the email, please check the spam filter.",
+    "en": "Email is used for signup confirmation, password reset, and warning notifications - check your spam if you don't receive them.",
+    "ja": "eメールはアカウント生成の承認、パスワード初期化、アラート通知時に利用されます。メールが受信されなかった場合は迷惑メールの方を確認してください。",
+    "ko": "이메일은 회원가입 승인, 패스워드 초기화, 경고 알림에 사용되며, 수신되지 않을 경우 스팸 메일을 확인해 주세요.",
+    "zh": "Email is used for signup confirmation, password reset, and warning notifications - check your spam if you don't receive them.",
     "service_id": "DSC01978"
   },
   "check_spam_filter": {
@@ -13381,10 +13381,10 @@
     "service_id": "DSC01979"
   },
   "phone_is_used_by_notification": {
-    "en": "Phone number is used for SMS notification.",
-    "ja": "電話番号はSMSアラートに使われます。",
+    "en": "Phone number is used for warning notifications.",
+    "ja": "携帯電話はアラート通知の際に利用されます。",
     "ko": "전화번호는 경고 알림 문자에 사용됩니다.",
-    "zh": "Phone number is used by SMS notification.",
+    "zh": "Phone number is used for warning notifications.",
     "service_id": "DSC01980"
   },
   "sms_authentication_is_required": {
@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54020,10 +54020,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -55407,24 +55407,311 @@
   },
   "NTC08037": {
     "en": "The preset has been deleted.",
-    "ja": "プリセットが削除されました。",
+    "ja": "プリセットを削除しました。",
     "ko": "프리셋이 삭제되었습니다.",
     "zh": "The preset has been deleted.",
     "service_id": "NTC08037"
   },
   "NTC08038": {
     "en": "Preset has been saved.",
-    "ja": "プリセットの保存が完了しました。",
+    "ja": "プリセットを保存しました。",
     "ko": "프리셋 저장이 완료되었습니다.",
     "zh": "Preset has been saved.",
     "service_id": "NTC08038"
   },
   "NTC08039": {
     "en": "Preset changes have been saved.",
-    "ja": "プリセット変更履歴が保存されました。",
+    "ja": "プリセット変更履歴を保存しました。",
     "ko": "프리셋 변경 내역이 저장되었습니다.",
     "zh": "Preset changes have been saved.",
     "service_id": "NTC08039"
+  },
+  "TTL08040": {
+    "en": "This is a verification email for setting up payment permissions.",
+    "ja": "お支払い権限設定のための認証メールです。",
+    "ko": "결제 권한 설정 인증 메일입니다.",
+    "zh": "This is a verification email for setting up payment permissions.",
+    "service_id": "TTL08040"
+  },
+  "CNT08041": {
+    "en": "Hi! This is WhaTap Labs.\n‘{Payment permission requester}’ has requested to change payment permissions.\nCheck the payment permission change details below and click the ‘Approve’ button.\nPlease complete payment authorization settings verification.",
+    "ja": "こんにちは。\n「{支払い権限の要求者}」が支払い権限の変更をしました。\n下のお支払い権限の変更履歴を確認してから「承認する」ボタンをクリックし、お支払い権限設定認証を完了してください。",
+    "ko": "안녕하세요. 와탭랩스입니다.\n‘{결제 권한 요청자}’님이 결제 권한 변경을 요청했습니다.\n아래 결제 권한 변경 내역을 확인하시고 ‘승인하기' 버튼을 클릭하여\n결제 권한 설정 인증을 완료해주세요.",
+    "zh": "Hi! This is WhaTap Labs.\n‘{Payment permission requester}’ has requested to change payment permissions.\nCheck the payment permission change details below and click the ‘Approve’ button.\nPlease complete payment authorization settings verification.",
+    "service_id": "CNT08041"
+  },
+  "TTL08042": {
+    "en": "Payment permission settings have been completed.",
+    "ja": "お支払い権限の設定を完了しました。",
+    "ko": "결제 권한 설정 완료 되었습니다.",
+    "zh": "Payment permission settings have been completed.",
+    "service_id": "TTL08042"
+  },
+  "CNT08043": {
+    "en": "Hi! This is WhaTap Labs.\nPayment permission settings have been completed as shown below.\nChanged permissions can be viewed in the member list within the service.",
+    "ja": "こんにちは。\n次の通り、お支払い権限の設定完了しました。\n変更された権限はサービス内のメンバーリストから確認できます。",
+    "ko": "안녕하세요. 와탭랩스입니다.\n아래와 같이 결제 권한 설정이 완료되었습니다.\n변경된 권한은 서비스내 멤버 목록에서 확인하실 수 있습니다.",
+    "zh": "Hi! This is WhaTap Labs.\nPayment permission settings have been completed as shown below.\nChanged permissions can be viewed in the member list within the service.",
+    "service_id": "CNT08043"
+  },
+  "CNT08044": {
+    "en": "A subgroup/project has payment permissions set on it.",
+    "ja": "サブグループ/プロジェクトに支払い権限が設定された履歴があります。",
+    "ko": "하위 그룹/프로젝트에 결제 권한이 설정된 내역이 있습니다.",
+    "zh": "A subgroup/project has payment permissions set on it.",
+    "service_id": "CNT08044"
+  },
+  "TTL08045": {
+    "en": "Payment permissions change",
+    "ja": "お支払い権限の変更",
+    "ko": "결제 권한 변경",
+    "zh": "Payment permissions change",
+    "service_id": "TTL08045"
+  },
+  "CNT08046": {
+    "en": "Do you want to turn off payment permissions for subgroups/projects and apply the changing payment permission inheritance?\nPlease select the projects you want to apply permission inheritance to and click the “Apply” button.",
+    "ja": "サブグループ/プロジェクトに支払い権限を解除し、変更される支払い権限を継承​​しますか？\n権限権限を継承​​するプロジェクトを選択し、[適用]ボタンをクリックします。",
+    "ko": "하위 그룹/프로젝트에 결제 권한을 해제하고 변경되는 결제 권한 상속을 적용 하시겠습니까?\n권한 권한 상속을 적용할 프로젝트를 선택한 후 “적용” 버튼을 클릭하세요.",
+    "zh": "Do you want to turn off payment permissions for subgroups/projects and apply the changing payment permission inheritance?\nPlease select the projects you want to apply permission inheritance to and click the “Apply” button.",
+    "service_id": "CNT08046"
+  },
+  "ITM08047": {
+    "en": "Payment authorization account",
+    "ja": "お支払い権限アカウント",
+    "ko": "결제 권한 계정",
+    "zh": "Payment authorization account",
+    "service_id": "ITM08047"
+  },
+  "CNT08048": {
+    "en": "Changing payment permissions requires authorization.",
+    "ja": "お支払い権限を変更するには承認が必要です。",
+    "ko": "결제 권한을 변경하려면 승인이 필요합니다.",
+    "zh": "Changing payment permissions requires authorization.",
+    "service_id": "CNT08048"
+  },
+  "CNT08049": {
+    "en": "An authorization email will be sent to the account below.\nYour payment authorization settings will take effect once you approve the email.",
+    "ja": "下記のアカウント承認メールを送信します。\neメールから承認を行うと、お支払い権限の設定が適用されます。",
+    "ko": "아래의 계정으로 승인 이메일을 발송됩니다.\n이메일 승인 완료 시 결제 권한 설정이 적용됩니다.",
+    "zh": "An authorization email will be sent to the account below.\nYour payment authorization settings will take effect once you approve the email.",
+    "service_id": "CNT08049"
+  },
+  "DSC08050": {
+    "en": "You can only register Korean mobile phone numbers.",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
+    "zh": "You can only register Korean mobile phone numbers.",
+    "service_id": "DSC08050"
+  },
+  "CNT08051": {
+    "en": "Autosort",
+    "ja": "自動整列",
+    "ko": "자동 정렬",
+    "zh": "Autosort",
+    "service_id": "CNT08051"
+  },
+  "CNT08052": {
+    "en": "Number of widgets to be placed on a line",
+    "ja": "1行に配置するウィジェットの数",
+    "ko": "한 줄에 배치될 위젯 수",
+    "zh": "Number of widgets to be placed on a line",
+    "service_id": "CNT08052"
+  },
+  "CNT08053": {
+    "en": "Show widget legend",
+    "ja": "ウィジェットの凡例の表示",
+    "ko": "위젯 범례 표시",
+    "zh": "Show widget legend",
+    "service_id": "CNT08053"
+  },
+  "CNT08054": {
+    "en": "Show all targets in tooltip",
+    "ja": "ツールチップにターゲットをすべて表示",
+    "ko": "툴팁에 대상 모두 표시",
+    "zh": "Show all targets in tooltip",
+    "service_id": "CNT08054"
+  },
+  "CNT08055": {
+    "en": "Apply chart zoom in batch",
+    "ja": "チャートズームイン一括適用",
+    "ko": "차트 줌인 일괄 적용",
+    "zh": "Apply chart zoom in batch",
+    "service_id": "CNT08055"
+  },
+  "CNT08056": {
+    "en": "Apply widget height in batch",
+    "ja": "ウィジェットの高さを一括適用",
+    "ko": "위젯 높이 일괄 적용",
+    "zh": "Apply widget height in batch",
+    "service_id": "CNT08056"
+  },
+  "DSC08057": {
+    "en": "Please select {br} the target on the left first.",
+    "ja": "左の対象をまず{br}選択してください。",
+    "ko": "왼쪽의 대상을 먼저 {br} 선택해 주세요.",
+    "zh": "Please select {br} the target on the left first.",
+    "service_id": "DSC08057"
+  },
+  "DSC08058": {
+    "en": "Enter transaction hash",
+    "ja": "トランザクションハッシュを入力してください",
+    "ko": "트랜잭션 해시를 입력하세요",
+    "zh": "Enter transaction hash",
+    "service_id": "DSC08058"
+  },
+  "ITM08059": {
+    "en": "Permission to create",
+    "ja": "作成権限",
+    "ko": "생성 권한",
+    "zh": "Permission to create",
+    "service_id": "ITM08059"
+  },
+  "TLT08060": {
+    "en": "View deployment details",
+    "ja": "Deploymentの詳細",
+    "ko": "Deployment 상세 보기",
+    "zh": "View deployment details",
+    "service_id": "TLT08060"
+  },
+  "TTL08061": {
+    "en": "project permissions",
+    "ja": "プロジェクト権限",
+    "ko": "프로젝트 권한",
+    "zh": "project permissions",
+    "service_id": "TTL08061"
+  },
+  "TTL08062": {
+    "en": "Equipment list",
+    "ja": "デバイス一覧",
+    "ko": "\b장비 목록",
+    "zh": "Equipment list",
+    "service_id": "TTL08062"
+  },
+  "BTN08063": {
+    "en": "Get list",
+    "ja": "リストのインポート",
+    "ko": "목록 가져오기",
+    "zh": "Get list",
+    "service_id": "BTN08063"
+  },
+  "BTN08064": {
+    "en": "Export list",
+    "ja": "リストのエクスポート",
+    "ko": "목록 내보내기",
+    "zh": "Export list",
+    "service_id": "BTN08064"
+  },
+  "BTN08065": {
+    "en": "addition",
+    "ja": "追加",
+    "ko": "추가",
+    "zh": "addition",
+    "service_id": "BTN08065"
+  },
+  "TLT08066": {
+    "en": "edit",
+    "ja": "編集",
+    "ko": "편집",
+    "zh": "edit",
+    "service_id": "TLT08066"
+  },
+  "DSC08067": {
+    "en": "Please enter the device name.",
+    "ja": "デバイス名を入力してください。",
+    "ko": "장비 이름을 입력하세요.",
+    "zh": "Please enter the device name.",
+    "service_id": "DSC08067"
+  },
+  "CNT08068": {
+    "en": "Are you sure you want to delete that item?",
+    "ja": "該当の項目を削除してもよろしいですか？",
+    "ko": "해당 항목을 삭제하시겠습니까?",
+    "zh": "Are you sure you want to delete that item?",
+    "service_id": "CNT08068"
+  },
+  "TLT08069": {
+    "en": "cancellation",
+    "ja": "キャンセル",
+    "ko": "취소",
+    "zh": "cancellation",
+    "service_id": "TLT08069"
+  },
+  "TTL08070": {
+    "en": "Delete ADDR",
+    "ja": "ADDRの削除",
+    "ko": "\bADDR 삭제",
+    "zh": "Delete ADDR",
+    "service_id": "TTL08070"
+  },
+  "NTC08071": {
+    "en": "Agency service is not installed.",
+    "ja": "Agency serviceがインストールされていません。",
+    "ko": "\b에이전시 서비스가 설치되지 않았습니다.",
+    "zh": "Agency service is not installed.",
+    "service_id": "NTC08071"
+  },
+  "NTC08072": {
+    "en": "This IP already exists.",
+    "ja": "すでに存在するIPアドレスです。",
+    "ko": "이미 존재하는 IP입니다.",
+    "zh": "This IP already exists.",
+    "service_id": "NTC08072"
+  },
+  "NTC08073": {
+    "en": "This item does not exist.",
+    "ja": "存在しない項目です。",
+    "ko": "\b존재하지 않는 항목입니다.",
+    "zh": "This item does not exist.",
+    "service_id": "NTC08073"
+  },
+  "NTC08074": {
+    "en": "An error has occurred.",
+    "ja": "エラーが発生しました。",
+    "ko": "\b오류가 발생하였습니다.",
+    "zh": "An error has occurred.",
+    "service_id": "NTC08074"
+  },
+  "NTC08075": {
+    "en": "Creation was successful.",
+    "ja": "作成に成功しました。",
+    "ko": "생성에 성공하였습니다.",
+    "zh": "Creation was successful.",
+    "service_id": "NTC08075"
+  },
+  "NTC08076": {
+    "en": "The modification was successful.",
+    "ja": "修正に成功しました。",
+    "ko": "수정에 성공하였습니다.",
+    "zh": "The modification was successful.",
+    "service_id": "NTC08076"
+  },
+  "NTC08077": {
+    "en": "Item has been deleted.",
+    "ja": "アイテムが削除されました。",
+    "ko": "항목이 삭제되었습니다.",
+    "zh": "Item has been deleted.",
+    "service_id": "NTC08077"
+  },
+  "DSC08078": {
+    "en": "There are no products found.",
+    "ja": "検索された商品はありません。",
+    "ko": "검색된 상품이 없습니다.",
+    "zh": "There are no products found.",
+    "service_id": "DSC08078"
+  },
+  "DSC08079": {
+    "en": "Please enter the product name in English or enter another search term.",
+    "ja": "商品名を英語で入力するか、別のクエリを入力してください。",
+    "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
+    "zh": "Please enter the product name in English or enter another search term.",
+    "service_id": "DSC08079"
+  },
+  "DSC08080": {
+    "en": "Please select a version.",
+    "ja": "バージョンを選択してください。",
+    "ko": "버전을 선택하세요.",
+    "zh": "Please select a version.",
+    "service_id": "DSC08080"
   },
   "": {
     "en": "#VALUE!",
@@ -56728,9 +57015,9 @@
     "ko": "클러스터"
   },
   "side_pendingPod": {
-    "en": "Pending Pods",
-    "ja": "Pending Pods",
-    "ko": "Pending Pods"
+    "en": "Pending Pod Status",
+    "ja": "Pending Pod状況",
+    "ko": "Pending Pod 현황"
   },
   "side_appl": {
     "en": "APP.",
