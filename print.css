@@ -113,7 +113,6 @@
 
   .redocusaurus div.redoc-wrap div.api-content {
     width: 100% !important;
-    height: 100% !important;
   }
 
   .redocusaurus div.redoc-wrap div.api-content > div > div[id*='operation'] > div,
