@@ -385,7 +385,7 @@ function _createMdxContent(props) {
                   href: "https://content.whatap.io/24/05/03/033451whatap-open-api.pdf",
                   children: "Open API"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053024whatap-reference.pdf",
+                  href: "https://content.whatap.io/24/06/04/045333whatap-reference.pdf",
                   children: "참조 문서"
                 })]
               })]
