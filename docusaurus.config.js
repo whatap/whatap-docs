@@ -386,6 +386,12 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'kafka/introduction',
+                label: 'KAFKA',
+                className: 'narrow',
+              },
+              {
+                type: 'doc',
                 docId: 'log/introduction',
                 label: 'Log',
               },

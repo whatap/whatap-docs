@@ -3724,6 +3724,15 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: 'KAFKA',
+          href: 'kafka/introduction',
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'link',
           label: 'Log',
           href: 'log/introduction',
         },
@@ -4771,6 +4780,89 @@ const sidebars = {
               ]
             },
             'oracle-cloud/labs'
+          ],
+        }
+      ]
+    }
+  ],
+  kafkamonitorSidebar: [
+    {
+      type: 'category',
+      label: 'KAFKA 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'kafka/introduction'
+      },
+      items: [
+        'kafka/install-agent',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          // link: {
+          //   type: 'doc',
+          //   id: 'kafka/learn-main-menu'
+          // },
+          items: [
+            'kafka/dashboard',
+            // {
+            //   type: 'category',
+            //   label: 'Flex 보드',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'kafka/flexboard',
+            //   },
+            //   items: [
+            //     'kafka/flexboard-template',
+            //     'kafka/flexboard-create',
+            //     'kafka/flexboard-manage',
+            //     'kafka/flexboard-metric-widget',
+            //     'kafka/flexboard-widget-manage',
+            //     'kafka/flexboard-mode',
+            //     'kafka/flexboard-share',
+            //   ]
+            // },
+            // {
+            //   type: 'category',
+            //   label: '메트릭스',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'kafka/metrics-intro',
+            //   },
+            //   items: [
+            //     'kafka/metrics-search',
+            //     'kafka/metrics-cube',
+            //     'kafka/metrics-chart',
+            //     'kafka/metrics-detect-anormal',
+            //   ]
+            // },
+            {
+              type: 'doc',
+              id: 'kafka/warning-notice-v2',
+              className: 'newfunc'
+            },
+            // {
+            //   type: 'category',
+            //   label: '알림 설정하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'kafka/warning-notice-v2',
+            //   },
+            //   items: [
+            //     'kafka/metric-warning-notice',
+            //     'kafka/set-receive-event',
+            //     'kafka/set-event-history',
+            //   ]
+            // },
           ],
         }
       ]

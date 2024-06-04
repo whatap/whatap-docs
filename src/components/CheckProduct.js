@@ -78,6 +78,8 @@ export default function CheckProduct() {
         product = '-browser';
     } else if (cProdt === 'npm') {
         product = '-npm';
+    }else if (cProdt === 'kafka') {
+        product = '-kafka';
     } else {
         product = '';
     }
