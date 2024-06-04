@@ -199,6 +199,20 @@
     display: none;
   }
 
+  main .markdown .faqs blockquote {
+    display: table !important;
+  }
+
+  main .markdown .faqs blockquote::before {
+    display: table-cell !important;
+    position: relative !important;
+    vertical-align: middle !important;
+    padding-left: 5px !important;
+    line-height: 0 !important;
+    top: 10px !important;
+    width: 30px !important;
+  }
+
   main .markdown iframe[src*='custom-report-template.html'] {
     display: none !important;
     visibility: hidden;
