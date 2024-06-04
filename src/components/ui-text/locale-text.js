@@ -21,6 +21,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
             } else if (replace == "ITM06005") {
                 let oType = whatapLocale["ITM06005"][`${currentLocale}`];
                 oText = whatapLocale[sid][`${currentLocale}`].replace('{type}', oType)
+            } else if (replace == "horizontal" || replace == "vertical") {
+                let oType = whatapLocale[`${replace}`][`${currentLocale}`];
+                oText = whatapLocale[sid][`${currentLocale}`].replace('{mode}', oType)
             } else {
                 oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '');
             }
