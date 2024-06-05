@@ -2565,11 +2565,11 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsx)(_components.td, {
-              children: "Pod Memory by Request (%)"
+              children: "Pod Memory Working Set By Request (%)"
             })
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsx)(_components.td, {
-              children: "Pod 메모리 요청량 기준 사용량"
+              children: "Pod 메모리 요청량 기준 Working Set 사용량"
             })
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -2583,11 +2583,11 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsx)(_components.td, {
-              children: "Pod Memory by Limit (%)"
+              children: "Pod MMemory Working Set By Limit (%)"
             })
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsx)(_components.td, {
-              children: "Pod 메모리 Limit 기준 사용량"
+              children: "Pod 메모리 Limit 기준 Working Set 사용량"
             })
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {

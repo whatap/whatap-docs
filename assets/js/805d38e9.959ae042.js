@@ -55,7 +55,21 @@ const assets = {
 
 };
 
-/*## Preview 2.6.0.a5
+/*
+
+## Preview 2.6.0.a6
+
+2024년 06월 07일
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_hitmap" className="uitext" /> 메뉴에서 DB 추적 시 이동하는 메뉴에 선택한 인스턴스가 기본 선택되지 않는 문제 수정
+
+</div>
+
+## Preview 2.6.0.a5
 
 2024년 06월 07일
 
