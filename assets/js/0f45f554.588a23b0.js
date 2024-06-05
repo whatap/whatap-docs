@@ -140,7 +140,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/mobile/mobile-app-v1_0_9",
   "title": "WhaTap Mobile App v1.0.9",
-  "description": "2024년 06월 04일",
+  "description": "2024년 06월 05일",
   "source": "@site/docs/release-notes/mobile/mobile-app-v1.0.9.mdx",
   "sourceDirName": "release-notes/mobile",
   "slug": "/release-notes/mobile/mobile-app-v1_0_9",
@@ -186,7 +186,7 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 04일"
+      children: "2024년 06월 05일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
