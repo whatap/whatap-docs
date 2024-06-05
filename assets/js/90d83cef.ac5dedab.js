@@ -97,7 +97,7 @@ function _createMdxContent(props) {
           })]
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-        href: "release-notes/mobile/mobile-app-v1_0_9",
+        href: "release-notes/mobile/mobile-app-v1_0_10",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
           class: "apm-agent new",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
