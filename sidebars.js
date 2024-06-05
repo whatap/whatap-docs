@@ -4890,6 +4890,7 @@ const sidebars = {
             'url/url-event-history',
           ],
         },
+        'url/url-http-status',
         'url/url-error-type',
         // {
         //   type: 'category',
