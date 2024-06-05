@@ -490,7 +490,7 @@ function _createMdxContent(props) {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                   children: "domInteractive"
                 }), "부터 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "loadEventEnd"
+                  children: "domComplete"
                 }), "까지 소요된 시간"]
               })]
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
