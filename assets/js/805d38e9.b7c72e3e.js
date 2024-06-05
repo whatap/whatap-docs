@@ -69,6 +69,7 @@ const assets = {
 
 </div>*/
 /*Service 배포하지 않는 항목*/
+/*Service 배포하지 않는 항목*/
 
 
 const toc = [{
@@ -244,20 +245,37 @@ function _createMdxContent(props) {
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              children: "Fixed"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_cluster",
-              className: "uitext"
-            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_nodeDetail",
-              className: "uitext"
-            }), " 메뉴에서 상세 보기(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "상세 보기 아이콘",
-              src: (__webpack_require__(21376)/* ["default"] */ .A) + "",
-              width: "24",
-              height: "24"
-            }), ")를 통해 목록 메뉴로 이동하면 선택한 오브젝트 필터링이 적용되지 않는 문제 수정 "]
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_cluster",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_nodeDetail",
+                className: "uitext"
+              }), " 메뉴에서 상세 보기(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "상세 보기 아이콘",
+                src: (__webpack_require__(21376)/* ["default"] */ .A) + "",
+                width: "24",
+                height: "24"
+              }), ")를 통해 목록 메뉴로 이동하면 선택한 오브젝트 필터링이 적용되지 않는 문제 수정 "]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dashboard",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_containerMap",
+                className: "uitext"
+              }), " 메뉴의 상세 보기에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06891",
+                className: "uitext"
+              }), " 탭이 누락된 문제 수정 "]
+            }), "\n"]
           }), "\n"]
         })]
       })]
