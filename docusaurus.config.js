@@ -386,8 +386,8 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'kafka/introduction',
-                label: 'KAFKA',
+                docId: 'features/kafka-introduction',
+                label: 'Feature Project',
                 className: 'narrow',
               },
               {
