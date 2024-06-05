@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9fda6320.css">
-<script src="/whatap-docs/assets/js/runtime~main.aeb4b648.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.e2f38c0b.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.dc1c9b6d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -47,9 +47,40 @@
 <li>
 <p><code class="Fixed">Fixed</code> 프레젠테이션 또는 커스텀 테마 모드로 화면을 변경하면 <span class="uitext">분석</span> &gt; <span class="uitext">일자별 애플리케이션 현황</span> 메뉴에서 화이트아웃이 발생하는 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h3><h4><span>대시보드</span></h4><ul>
 <li>
-<p><code class="Fixed">Fixed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 필터가 적용되지 않는 문제 수정</p>
+<p><code class="Fixed">Fixed</code> <span class="uitext">액티브 세션</span> 테이블에서 <span class="uitext">세션 상세 정보</span> 창을 열었을 때 종료된 세션이면 실시간 조회를 종료하며 시간 선택자를 선택할 수 없도록 수정</p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">액티브 세션</span> 테이블에서 <span class="uitext">세션 상세 정보</span> 창을 열었을 때 종료된 세션이면 <span class="uitext">연계 분석</span> 버튼을 노출하지 않도록 수정</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-1"><span>분석</span><a href="#-1" class="hash-link" aria-label="-1에 대한 직접 링크" title="-1에 대한 직접 링크">​</a></h4><ul>
+<li>
+<p><code class="Feature">Feature</code> <span class="uitext">데이터베이스 파라미터</span> 메뉴에서 <span class="uitext">기준 날짜</span>와 <span class="uitext">비교 날짜</span>를 모두 오늘 날짜로 설정하면 실시간 데이터와 저장된 마지막 데이터를 조회해 비교하는 기능 추가</p>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">데이터베이스 파라미터</span> 메뉴에서 테이블의 헤더에 수집 시간을 표시하도록 수정</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-2"><span>통계/보고서</span><a href="#-2" class="hash-link" aria-label="-2에 대한 직접 링크" title="-2에 대한 직접 링크">​</a></h4><ul>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">SQL 통계</span> 메뉴의 <span class="uitext">인스턴스</span> 옵션에서 하나의 인스턴스만 선택할 수 있도록 수정</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>다음 상품의 메뉴에서도 동일한 변경 사양을 적용합니다.</p><ul>
+<li>
+<p><strong>MySQL</strong>: <span class="uitext">통계/보고서</span> &gt; <span class="uitext">MYSQL SQL 통계</span></p>
+</li>
+<li>
+<p><strong>PostgreSQL</strong>: <span class="uitext">통계/보고서</span> &gt; <span class="uitext">PG SQL 통계</span></p>
+</li>
+</ul></div></div>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">SQL 통계</span> 메뉴의 기본 컬럼에서 <span class="uitext">elapse wait</span> 항목을 보이지 않도록 수정</p>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">SQL 통계</span> 메뉴에서 <span class="uitext">sqlHash</span> 컬럼 항목을 가장 오른쪽으로 이동</p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">SQL 통계</span> 메뉴에서 필터가 적용되지 않는 문제 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> 다른 메뉴 화면에서 필터값을 포함한 링크를 클릭해 <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴로 이동하면 <span class="uitext">필터</span> 항목에 <code>s_equal</code> 문자열이 확인되는 문제 수정</p>
@@ -63,7 +94,7 @@
 <p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 상세 보기에서 <span class="uitext">호출 정보</span> 탭이 누락된 문제 수정 </p>
 </li>
 </ul></div></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a3">Preview 2.6.0.a3<a href="#preview-260a3" class="hash-link" aria-label="Preview 2.6.0.a3에 대한 직접 링크" title="Preview 2.6.0.a3에 대한 직접 링크">​</a></h2><p>2024년 06월 04일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="#공통" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> 화면 오른쪽 위에 위치한 <img decoding="async" loading="lazy" alt="고객지원 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIKICAgIGQ9Ik0yIDEyQzIgNi40NzcgNi40NzggMiAxMiAyczEwIDQuNDc3IDEwIDEwYTkuOTUyIDkuOTUyIDAgMDEtMS43NDQgNS42NEwyMiAyMmwtNC4zNi0xLjc0NEE5Ljk1MiA5Ljk1MiAwIDAxMTIgMjJDNi40NzggMjIgMiAxNy41MjMgMiAxMnoiCiAgICBmaWxsPSIjMjk2Q0YyIiAvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIgogICAgZD0iTTkgMTIuNWExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptNC41IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IgogICAgZmlsbD0iI2ZmZiIgLz4KPC9zdmc+" width="24" height="24" class="img_ev3q"> &#x27;채팅 상담&#x27; 버튼이 간헐적으로 노출되지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-1"><code>Kubernetes</code><a href="#kubernetes-1" class="hash-link" aria-label="kubernetes-1에 대한 직접 링크" title="kubernetes-1에 대한 직접 링크">​</a></h3><h4><span>컨테이너 맵</span></h4><ul>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a3">Preview 2.6.0.a3<a href="#preview-260a3" class="hash-link" aria-label="Preview 2.6.0.a3에 대한 직접 링크" title="Preview 2.6.0.a3에 대한 직접 링크">​</a></h2><p>2024년 06월 04일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="#공통" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> 화면 오른쪽 위에 위치한 <img decoding="async" loading="lazy" alt="고객지원 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIKICAgIGQ9Ik0yIDEyQzIgNi40NzcgNi40NzggMiAxMiAyczEwIDQuNDc3IDEwIDEwYTkuOTUyIDkuOTUyIDAgMDEtMS43NDQgNS42NEwyMiAyMmwtNC4zNi0xLjc0NEE5Ljk1MiA5Ljk1MiAwIDAxMTIgMjJDNi40NzggMjIgMiAxNy41MjMgMiAxMnoiCiAgICBmaWxsPSIjMjk2Q0YyIiAvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIgogICAgZD0iTTkgMTIuNWExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptNC41IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IgogICAgZmlsbD0iI2ZmZiIgLz4KPC9zdmc+" width="24" height="24" class="img_ev3q"> &#x27;채팅 상담&#x27; 버튼이 간헐적으로 노출되지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-1"><code>Kubernetes</code><a href="#kubernetes-1" class="hash-link" aria-label="kubernetes-1에 대한 직접 링크" title="kubernetes-1에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-3"><span>컨테이너 맵</span><a href="#-3" class="hash-link" aria-label="-3에 대한 직접 링크" title="-3에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Feature">Feature</code> 요약 보기의 <span class="uitext">대상 정보</span> 탭에 <span class="uitext">Containter State</span> 표시 및 설명 추가</p>
 </li>
@@ -76,7 +107,7 @@
 <li>
 <p><code class="Changed">Changed</code> 그룹을 선택할 때 요약 보기 상단에 다른 목록 메뉴로 이동 버튼을 노출하도록 수정</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-1"><span>워크로드</span><a href="#-1" class="hash-link" aria-label="-1에 대한 직접 링크" title="-1에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> 다음 메뉴 경로의 리소스 관계 차트에서 애플리케이션을 선택하면 필터링이 잘못 적용되는 문제 수정</p><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-4"><span>워크로드</span><a href="#-4" class="hash-link" aria-label="-4에 대한 직접 링크" title="-4에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> 다음 메뉴 경로의 리소스 관계 차트에서 애플리케이션을 선택하면 필터링이 잘못 적용되는 문제 수정</p><ul>
 <li><span class="uitext">워크로드</span> &gt; <span class="uitext">Pod 목록</span></li>
 <li><span class="uitext">워크로드</span> &gt; <span class="uitext">Deployment 목록</span> &gt; <img decoding="async" loading="lazy" alt="상세 아이콘" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcGFnZXZpZXc8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjcxMS4wMDAwMDApIiBmaWxsPSIjMjk2Y2YyIj4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcGFnZXZpZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgMzY1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMDAwMDAwLCA0LjAwMDAwMCkiIGlkPSJwYWdldmlldyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOCwwIEMxOS4wMzUyOTQxLDAgMTkuODkzNDI1NiwwLjc5NzIzMTgzNCAxOS45OTA3OTk5LDEuODA4MTAwOTYgTDIwLDIgTDE5Ljk5OSw1LjMzMyBMMTcuOTk5LDUuMzMzIEwxOCwyIEwyLDIgTDIsMTQgTDEyLDE0IEwxMiwxNiBMMiwxNiBDMC45NjQ3MDU4ODIsMTYgMC4xMDY1NzQzOTQsMTUuMjAyNzY4MiAwLjAwOTIwMDA4MTQyLDE0LjE5MTg5OSBMLTUuMzI5MDcwNTJlLTE1LDE0IEwtNS4zMjkwNzA1MmUtMTUsMiBDLTUuMzI5MDcwNTJlLTE1LDAuOTY0NzA1ODgyIDAuNzk3MjMxODM0LDAuMTA2NTc0Mzk0IDEuODA4MTAwOTYsMC4wMDkyMDAwODE0MiBMMiwwIEwxOCwwIFogTTEzLjE2NjY2NjcsNCBDMTUuNjU2NjY2Nyw0IDE3LjY2NjY2NjcsNi4wMSAxNy42NjY2NjY3LDguNSBDMTcuNjY2NjY2Nyw5LjM4IDE3LjQwNjY2NjcsMTAuMTkgMTYuOTY2NjY2NywxMC44OSBMMTkuODc2NjY2NywxMy43OSBMMTguNDU2NjY2NywxNS4yMSBMMTUuNTQ2NjY2NywxMi4zIEMxNC44NTY2NjY3LDEyLjc0IDE0LjAzNjY2NjcsMTMgMTMuMTU2NjY2NywxMyBDMTAuNjc2NjY2NywxMyA4LjY2NjY2NjY3LDEwLjk5IDguNjY2NjY2NjcsOC41IEM4LjY2NjY2NjY3LDYuMDEgMTAuNjc2NjY2Nyw0IDEzLjE2NjY2NjcsNCBaIE0xMy4xNjY2NjY3LDYgQzExLjc4NjY2NjcsNiAxMC42NjY2NjY3LDcuMTIgMTAuNjY2NjY2Nyw4LjUgQzEwLjY2NjY2NjcsOS44OCAxMS43ODY2NjY3LDExIDEzLjE2NjY2NjcsMTEgQzE0LjU0NjY2NjcsMTEgMTUuNjY2NjY2Nyw5Ljg4IDE1LjY2NjY2NjcsOC41IEMxNS42NjY2NjY3LDcuMTIgMTQuNTQ2NjY2Nyw2IDEzLjE2NjY2NjcsNiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" width="24" height="24" class="img_ev3q"> <span class="uitext">상세 보기</span> &gt; <span class="uitext">리소스</span></li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="기타">기타<a href="#기타" class="hash-link" aria-label="기타에 대한 직접 링크" title="기타에 대한 직접 링크">​</a></h4><ul>
@@ -176,7 +207,7 @@
 <li>
 <p><code class="Fixed">Fixed</code> 반응형 대시보드가 가득찬 상태에서 그룹 위젯 하위에 위젯을 추가하면 잘못된 알림 팝업이 나타나는 문제 수정</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-2"><span>대시보드</span><a href="#-2" class="hash-link" aria-label="-2에 대한 직접 링크" title="-2에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> 대시보드에서 TOP N 차트 위젯의 툴팁이 표시되지 않는 문제 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-3"><span>정비 계획</span><a href="#-3" class="hash-link" aria-label="-3에 대한 직접 링크" title="-3에 대한 직접 링크">​</a></h4><p><code class="Changed">Changed</code> 모든 상품에서 <b>수정</b> 또는 <b>알림 설정</b> 권한을 가진 멤버가 <span class="uitext">정비 계획</span> 메뉴를 이용할 수 있도록 권한 조정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-4"><span>분석</span><a href="#-4" class="hash-link" aria-label="-4에 대한 직접 링크" title="-4에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> <span class="uitext">메트릭스 차트</span> 메뉴의 위젯에서 CSV 파일을 다운로드하면 비교 일자의 데이터가 표시되지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-2"><code>Application</code><a href="#application-2" class="hash-link" aria-label="application-2에 대한 직접 링크" title="application-2에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="공통-3">공통<a href="#공통-3" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-5"><span>대시보드</span><a href="#-5" class="hash-link" aria-label="-5에 대한 직접 링크" title="-5에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> 대시보드에서 TOP N 차트 위젯의 툴팁이 표시되지 않는 문제 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-6"><span>정비 계획</span><a href="#-6" class="hash-link" aria-label="-6에 대한 직접 링크" title="-6에 대한 직접 링크">​</a></h4><p><code class="Changed">Changed</code> 모든 상품에서 <b>수정</b> 또는 <b>알림 설정</b> 권한을 가진 멤버가 <span class="uitext">정비 계획</span> 메뉴를 이용할 수 있도록 권한 조정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="-7"><span>분석</span><a href="#-7" class="hash-link" aria-label="-7에 대한 직접 링크" title="-7에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> <span class="uitext">메트릭스 차트</span> 메뉴의 위젯에서 CSV 파일을 다운로드하면 비교 일자의 데이터가 표시되지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-2"><code>Application</code><a href="#application-2" class="hash-link" aria-label="application-2에 대한 직접 링크" title="application-2에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="공통-3">공통<a href="#공통-3" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 에이전트 검색 기능 추가</p>
 </li>
