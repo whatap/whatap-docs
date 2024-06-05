@@ -46,7 +46,7 @@ toc_max_heading_level: 2
 | `page_load_download_time`         | ミリ秒 | ブラウザがウェブページを読み込む際に、サーバーからリソースをダウンロードするのに所要する平均時間                | **responseStart**から**responseEnd**までの所要時間                             |
 | `page_load_domcontentloaded_time` | ミリ秒 | ウェブページが初期コンテンツをレンダリングして、相互作用できる状態になるまでの平均時間                     | **domContentLoadedEventStart**から**domContentLoadedEventEnd**まで所要された時間 |
 | `page_load_domload_time`          | ミリ秒 | ウェブページのすべてのリソースがロードされ、レンダリングが完了した後、ユーザーが相互作用できる状態になるまでの平均時間     | **loadEventStart**から**loadEventEnd**までの所要時間                           |
-| `page_load_render_time`           | ミリ秒 | サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するのに所要する平均時間         | **domInteractive**から**loadEventEnd**までの所要時間                           |
+| `page_load_render_time`           | ミリ秒 | サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するのに所要する平均時間         | **domInteractive**から**domComplete**までの所要時間                           |
 | `page_load_event_time`            | ミリ秒 | ブラウザが測定するloadイベントが完了する平均時間                                      | 開始から**loadEventEnd**までの所要時間                                           |
 | `page_load_duration`              | ミリ秒 | ブラウザがウェブページを完全に読み込むのに所要する平均時間                                   | **loadEventEnd**以降、追加のインタラクションを完了するまでの時間、ブラウザエージェントが測定したページロード完了時間    |
 | `page_load_count`                 | 件数  | ページロード回数                                                        | -                                                                     |
