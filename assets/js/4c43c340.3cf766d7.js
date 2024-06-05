@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[87902],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[41717],{
 
 /***/ 58960:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -29,44 +29,16 @@ const toc = [{
   "id": "number-2-성능-추이-차트",
   "level": 3
 }, {
-  "value": "동시 접속 사용자",
-  "id": "동시-접속-사용자",
+  "value": "<Cmdname></Cmdname> Top 10",
+  "id": "-top-10",
   "level": 4
 }, {
-  "value": "TPS",
-  "id": "tps",
+  "value": "<Cmdname></Cmdname> Top 10",
+  "id": "-top-10-1",
   "level": 4
 }, {
-  "value": "응답 시간",
-  "id": "응답-시간",
-  "level": 4
-}, {
-  "value": "CPU",
-  "id": "cpu",
-  "level": 4
-}, {
-  "value": "힙 메모리",
-  "id": "힙-메모리",
-  "level": 4
-}, {
-  "value": "메모리",
-  "id": "메모리",
-  "level": 4
-}, {
-  "value": "액티브 트랜잭션",
-  "id": "액티브-트랜잭션",
-  "level": 4
-}, {
-  "value": "트랜잭션 Top 10",
-  "id": "트랜잭션-top-10",
-  "level": 4
-}, {
-  "value": "HTTP 호출 Top 10",
-  "id": "http-호출-top-10",
-  "level": 4
-}, {
-  "value": "SQL Top 10",
-  "id": "sql-top-10",
+  "value": "<Cmdname></Cmdname> Top 10",
+  "id": "-top-10-2",
   "level": 4
 }];
 function _createMdxContent(props) {
@@ -90,33 +62,21 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "분석"
-        })
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "성능 추이"
-        })
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_analysis",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_perfTrend",
+        className: "uitext"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "프로젝트 메뉴"
-        })
-      }), " 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "분석"
-        })
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "성능 추이"
-        })
-      }), " 메뉴를 선택하세요. 조회를 원하는 특정 시간 범위 내 수행된 성능에 대한 여러 지표를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "성능 추이"
-        })
-      }), " 메뉴에서 확인할 수 있습니다."]
+      children: ["와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_analysis",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_perfTrend",
+        className: "uitext"
+      }), " 메뉴를 선택하세요. 조회를 원하는 특정 시간 범위 내 수행된 성능에 대한 여러 지표를 확인할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "performance-trend.png",
       desc: "성능 추이"
@@ -231,10 +191,9 @@ function _createMdxContent(props) {
               src: (__webpack_require__(97442)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "스냅샷"
-              })
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "sms_alert_snapshot",
+              className: "uitext"
             }), " 아이콘을 선택해 위젯의 옵션을 제외한 차트를 스냅샷 할 수 있습니다."]
           }), "\n"]
         }), "\n"]
@@ -242,8 +201,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "동시-접속-사용자",
-        children: "동시 접속 사용자"
+        id: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "rt_user"
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "실시간 브라우저 사용자 수를 보여줍니다. 사용자는 브라우저 IP를 기반으로 카운팅합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -260,60 +221,67 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "tps",
-        children: "TPS"
+        id: "-1",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "tps"
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "TPS"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "tps",
+          className: "uitext"
         }), "(Tansaction Per Second)는 초당 처리된 트랜잭션 건수를 의미합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "응답-시간",
-        children: "응답 시간"
+        id: "-2",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "resp_time"
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "요청에 대한 응답 시간의 평균을 의미합니다. 평균이 높은 경우 특정 시점에 느린 트랜잭션이 많이 수행되었거나 또는 장애 발생 가능성이 높습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "cpu",
-        children: "CPU"
+        id: "-3",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "cpu"
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "애플리케이션 서버의 CPU 사용량을 의미합니다. 사용량 변화의 추이를 확인할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "java,nodejs",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "힙-메모리",
-          children: "힙 메모리"
+          id: "-4",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "heap_memory"
+          })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["모니터링 대상 프로세스의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "힙 메모리"
-            })
+          children: ["모니터링 대상 프로세스의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "힙 메모리"
           }), " 사용량을 의미합니다. 시간에 따른 메모리 사용량 변화를 확인할 수 있습니다."]
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "python,dotnet,php,golang",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "메모리",
-          children: "메모리"
+          id: "-5",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "memory"
+          })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["모니터링 대상 프로세스의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "메모리"
-            })
+          children: ["모니터링 대상 프로세스의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "메모리"
           }), " 사용량을 의미합니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "액티브-트랜잭션",
-        children: "액티브 트랜잭션"
+        id: "-6",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "active_transaction"
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["액티브 트랜잭션은 진행 중인 트랜잭션을 의미합니다. 액티브 트랜잭션에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "dashboard#active-trs",
@@ -322,25 +290,31 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "트랜잭션-top-10",
-        children: "트랜잭션 Top 10"
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+        id: "-top-10",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "transaction"
+        }), " Top 10"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "트랜잭션 호출 통계를 사용해 트랜잭션 호출이 많은 상위 10개 목록을 제공합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "http-호출-top-10",
-        children: "HTTP 호출 Top 10"
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+        id: "-top-10-1",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "httpc"
+        }), " Top 10"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "HTTPC 통계를 사용해 HTTP Call URL의 건수가 많은 상위 10개 목록을 제공합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "sql-top-10",
-        children: "SQL Top 10"
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+        id: "-top-10-2",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "sql"
+        }), " Top 10"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "SQL 통계를 사용해 SQL 호출 건수가 많은 상위 10개 목록을 제공합니다."
       })]
@@ -367,7 +341,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 80276:
+/***/ 80447:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -391,7 +365,7 @@ const frontMatter = {
 	title: '성능 추이',
 	description: '성능 추이를 안내합니다.',
 	tags: [
-		'Node.js',
+		'.NET',
 		'성능 추이',
 		'애플리케이션',
 		'분석하기',
@@ -401,20 +375,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/performance-trend",
+  "id": "dotnet/performance-trend",
   "title": "성능 추이",
   "description": "성능 추이를 안내합니다.",
-  "source": "@site/docs/nodejs/performance-trend.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/performance-trend",
-  "permalink": "/whatap-docs/nodejs/performance-trend",
+  "source": "@site/docs/dotnet/performance-trend.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/performance-trend",
+  "permalink": "/whatap-docs/dotnet/performance-trend",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/performance-trend.mdx",
+  "editUrl": "undefined/docs/dotnet/performance-trend.mdx",
   "tags": [
     {
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "성능 추이",
@@ -439,7 +413,7 @@ const metadata = {
     "title": "성능 추이",
     "description": "성능 추이를 안내합니다.",
     "tags": [
-      "Node.js",
+      ".NET",
       "성능 추이",
       "애플리케이션",
       "분석하기",
@@ -447,14 +421,14 @@ const metadata = {
     ],
     "toc_max_heading_level": 2
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "일자별 애플리케이션 현황",
-    "permalink": "/whatap-docs/nodejs/application-daily-stat"
+    "permalink": "/whatap-docs/dotnet/application-daily-stat"
   },
   "next": {
-    "title": "큐브",
-    "permalink": "/whatap-docs/nodejs/cube"
+    "title": "스택",
+    "permalink": "/whatap-docs/dotnet/analysis-apm"
   }
 };
 const assets = {

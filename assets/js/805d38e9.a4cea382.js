@@ -55,6 +55,19 @@ const assets = {
 
 };
 
+/*## Preview 2.6.0.a5
+
+2024년 06월 07일
+
+<div class='indentTab'>
+
+### `Database`
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" /> 메뉴에서 필터가 적용되지 않는 문제 수정
+
+- <Status>Fixed</Status> 다른 메뉴 화면에서 필터값을 포함한 링크를 클릭해 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" /> 메뉴로 이동하면 <Cmdname sid="filter" className="uitext" /> 항목에 `s_equal` 문자열이 확인되는 문제 수정
+
+</div>*/
 /*Service 배포하지 않는 항목*/
 
 
@@ -215,13 +228,13 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "preview-260a4",
         children: "Preview 2.6.0.a4"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2024년 06월 07일"
+        children: "2024년 06월 05일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {

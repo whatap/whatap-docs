@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_5_x",
   "title": "Service 2.5.X",
-  "description": "Service 2.5.9",
+  "description": "Service 2.5.10",
   "source": "@site/docs/release-notes/service/service-2.5.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_5_x",
@@ -62,6 +62,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.5.10",
+  "id": "service-2510",
+  "level": 2
+}, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
+}, {
   "value": "Service 2.5.9",
   "id": "service-259",
   "level": 2
@@ -131,7 +139,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>Database</code>",
-  "id": "database",
+  "id": "database-1",
   "level": 3
 }, {
   "value": "Service 2.5.1",
@@ -147,7 +155,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-1",
+  "id": "database-2",
   "level": 3
 }, {
   "value": "<code>URL</code>",
@@ -191,7 +199,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-2",
+  "id": "database-3",
   "level": 3
 }, {
   "value": "공통",
@@ -240,6 +248,53 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-2510",
+        children: "Service 2.5.10"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 06월 05일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_reportStat",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbSqlStat",
+                className: "uitext"
+              }), " 메뉴에서 필터가 적용되지 않는 문제 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " 다른 메뉴 화면에서 필터값을 포함한 링크를 클릭해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_reportStat",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbSqlStat",
+                className: "uitext"
+              }), " 메뉴로 이동하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "filter",
+                className: "uitext"
+              }), " 항목에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "s_equal"
+              }), " 문자열이 확인되는 문제 수정"]
+            }), "\n"]
+          }), "\n"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-259",
@@ -566,7 +621,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 위젯이 API를 호출하지 않는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database",
+          id: "database-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -611,7 +666,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에서 Debian/Ubuntu 관련한 설치 스크립트의 오류 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-1",
+          id: "database-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -1277,7 +1332,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-2",
+          id: "database-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
