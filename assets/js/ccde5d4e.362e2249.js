@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51160],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[36890],{
 
 /***/ 35527:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -476,6 +476,10 @@ function _createMdxContent(props) {
             sid: "dump_heap",
             className: "uitext"
           }), " 버튼을 선택하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["생성된 덤프 파일은 애플리케이션 서버에 저장됩니다. 에이전트를 설치한 경로 하위의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "dump"
+          }), " 디렉터리에서 확인할 수 있습니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
           type: "note",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -557,7 +561,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 80360:
+/***/ 99092:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -577,29 +581,29 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'instance-performance-analysis',
 	title: '인스턴스 성능 관리',
-	description: 'Go 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
+	description: 'Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
 	tags: [
-		'Go',
+		'Python',
 		'애플리케이션',
 		'인스턴스 성능 관리'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/instance-performance-analysis",
+  "id": "python/instance-performance-analysis",
   "title": "인스턴스 성능 관리",
-  "description": "Go 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-  "source": "@site/docs/golang/instance-performance-analysis.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/instance-performance-analysis",
-  "permalink": "/whatap-docs/golang/instance-performance-analysis",
+  "description": "Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+  "source": "@site/docs/python/instance-performance-analysis.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/instance-performance-analysis",
+  "permalink": "/whatap-docs/python/instance-performance-analysis",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/instance-performance-analysis.mdx",
+  "editUrl": "undefined/docs/python/instance-performance-analysis.mdx",
   "tags": [
     {
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "label": "애플리케이션",
@@ -614,17 +618,17 @@ const metadata = {
   "frontMatter": {
     "id": "instance-performance-analysis",
     "title": "인스턴스 성능 관리",
-    "description": "Go 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+    "description": "Python 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
     "tags": [
-      "Go",
+      "Python",
       "애플리케이션",
       "인스턴스 성능 관리"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/golang/set-event-format"
+    "permalink": "/whatap-docs/python/set-event-format"
   },
   "next": {
     "title": "Log 모니터링",

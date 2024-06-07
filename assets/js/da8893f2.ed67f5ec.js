@@ -476,6 +476,10 @@ function _createMdxContent(props) {
             sid: "dump_heap",
             className: "uitext"
           }), " 버튼을 선택하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["생성된 덤프 파일은 애플리케이션 서버에 저장됩니다. 에이전트를 설치한 경로 하위의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "dump"
+          }), " 디렉터리에서 확인할 수 있습니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
           type: "note",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
