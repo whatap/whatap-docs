@@ -617,7 +617,7 @@ function _createMdxContent(props) {
               children: "START-END"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "액티브 스텝에 대한 정보를 포함합니다. 별도 스레드가 생성하여 트레이스에 추가하는 방식으로 수집합니다."
+            children: "액티브 스택에 대한 정보를 포함합니다. 별도 스레드가 생성하여 트레이스에 추가하는 방식으로 수집합니다."
           }), "\n"]
         }), "\n"]
       })
