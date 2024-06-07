@@ -104,10 +104,6 @@ const toc = [{
   "id": "jmx-pool-설정-추가",
   "level": 3
 }, {
-  "value": "heapdump 파일 경로 옵션 추가",
-  "id": "heapdump-파일-경로-옵션-추가",
-  "level": 3
-}, {
   "value": "배치 에이전트 active 시작 부분 수정",
   "id": "배치-에이전트-active-시작-부분-수정",
   "level": 3
@@ -355,20 +351,6 @@ function _createMdxContent(props) {
           className: "language-ini",
           metastring: "title='whatap.conf'",
           children: "jmx_pool_dsname_enabled=false\njmx_pool_object=\"*:type=DataSource,class=*,name=*\"\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "heapdump-파일-경로-옵션-추가",
-        children: "heapdump 파일 경로 옵션 추가"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "heapdump 파일 경로를 지정할 수 있도록 log_root 옵션을 추가하였습니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title='whatap.conf'",
-          children: "log_root=${WHATAP_HOME}/dump\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {

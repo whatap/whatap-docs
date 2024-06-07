@@ -146,7 +146,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-ini",
           metastring: "title='whatap.conf'",
-          children: "log_root=System.getProperty(\"whatap.home\", \".\") + \"/logs\"\nlog_name=whatap\n"
+          children: "log_root=whatap/logs\nlog_name=whatap\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
