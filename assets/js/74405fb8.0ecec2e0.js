@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[59165],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39697],{
 
-/***/ 94882:
+/***/ 25550:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_5_5',
-	title: 'Python Agent v1.5.5',
+	id: 'python-1_6_5',
+	title: 'Python Agent v1.6.5',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_5_4',
+	pagination_next: 'release-notes/python/python-1_6_4',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_5_5",
-  "title": "Python Agent v1.5.5",
-  "description": "2024년 02월 01일",
-  "source": "@site/docs/release-notes/python/python-1.5.5.mdx",
+  "id": "release-notes/python/python-1_6_5",
+  "title": "Python Agent v1.6.5",
+  "description": "2024년 05월 31일",
+  "source": "@site/docs/release-notes/python/python-1.6.5.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_5_5",
-  "permalink": "/whatap-docs/release-notes/python/python-1_5_5",
+  "slug": "/release-notes/python/python-1_6_5",
+  "permalink": "/whatap-docs/release-notes/python/python-1_6_5",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.5.5.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.6.5.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_5_5",
-    "title": "Python Agent v1.5.5",
+    "id": "python-1_6_5",
+    "title": "Python Agent v1.6.5",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_5_4",
+    "pagination_next": "release-notes/python/python-1_6_4",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Python Agent v1.5.6",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_6"
+    "title": "Python Agent v1.6.6",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_6"
   },
   "next": {
-    "title": "Python Agent v1.5.4",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_4"
+    "title": "Python Agent v1.6.4",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_4"
   }
 };
 const assets = {
@@ -73,17 +73,17 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 02월 01일"
+      children: "2024년 05월 31일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         children: "Fixed"
-      }), " Frappe 프레임워크로 개발된 애플리케이션에서 데이터베이스 연결 정보에 인스턴스(DB) 정보가 없으면 성능 수집 오류가 발생하는 현상 개선"]
+      }), " Python 3.6 gevent 사용 시 트랜잭션 종료 누락 수정"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.5.5/",
-          children: "whatap-python v1.5.5"
+          href: "https://pypi.org/project/whatap-python/1.6.5/",
+          children: "whatap-python v1.6.5"
         })]
       })
     })]
