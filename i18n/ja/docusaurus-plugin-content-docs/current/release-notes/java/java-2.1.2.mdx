@@ -95,14 +95,6 @@ jmx_pool_dsname_enabled=false
 jmx_pool_object="*:type=DataSource,class=*,name=*"
 ```
 
-### heapdumpファイルパスオプションの追加
-
-heapdumpファイルパスを指定するlog_rootオプションを追加しました。
-
-```ini title='whatap.conf'
-log_root=${WHATAP_HOME}/dump
-```
-
 ### バッチエージェントのactive開始部分の修正
 
 バッチプロセスのMain threadにactive stackを残せるようにバッチエージェントを修正しました。
