@@ -101,6 +101,7 @@ const billing_frontMatter = {
 	id: 'billing',
 	title: '결제',
 	description: '와탭 모니터링 서비스를 유료 전환해 사용하는 방법을 소개합니다.',
+	toc_max_heading_level: 3,
 	tags: [
 		'관리',
 		'결제'
@@ -133,6 +134,7 @@ const metadata = {
     "id": "billing",
     "title": "결제",
     "description": "와탭 모니터링 서비스를 유료 전환해 사용하는 방법을 소개합니다.",
+    "toc_max_heading_level": 3,
     "tags": [
       "관리",
       "결제"
@@ -160,12 +162,24 @@ const billing_toc = [{
   "id": "register-pay",
   "level": 2
 }, {
-  "value": "신용 카드",
-  "id": "credit",
+  "value": "결제 수단 등록하기",
+  "id": "결제-수단-등록하기",
   "level": 3
-}, ...toc, ...toc, {
-  "value": "세금계산서",
-  "id": "taxinvoice",
+}, {
+  "value": "신용카드(나이스페이)",
+  "id": "payment_type_card_iamport",
+  "level": 3
+}, ...toc, {
+  "value": "신용카드 (Stripe)",
+  "id": "payment_type_card_stripe",
+  "level": 3
+}, ...toc, {
+  "value": "계산서 발행",
+  "id": "payment_type_banktransfer",
+  "level": 3
+}, {
+  "value": "청구서 발송",
+  "id": "payment_type_banktransfer_abroad",
   "level": 3
 }, {
   "value": "기본 정보 수정하기",
@@ -180,7 +194,7 @@ const billing_toc = [{
   "id": "editemail",
   "level": 2
 }, {
-  "value": "세금 계산서 수신 메일 주소 수정하기",
+  "value": "세금계산서 수신 메일 주소 수정하기",
   "id": "editemail-tax",
   "level": 2
 }, {
@@ -258,23 +272,51 @@ function billing_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "register-pay",
         children: "결제 정보 등록"
+      }), (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["결제 정보는 청구 통화 종류에 따라 제공하는 방식이 다릅니다. 결제 정보를 등록하는 사용자는 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "billing",
+          className: "b600"
+        }), " 권한을 소유하고 있어야 합니다."]
       }), (0,jsx_runtime.jsx)(_components.p, {
-        children: "결제는 카드 정기 결제, 세금계산서 발행 두 가지 중 하나를 선택할 수 있습니다. 결제를 진행하기 전에 다음의 사항을 미리 준비하세요."
+        children: "결제를 진행하기 전에 다음 사항을 미리 준비하세요."
       }), (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "KRW"
+            })
+          }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(Cmdname, {
+                sid: "payment_type_card_iamport",
+                className: "uitext"
+              }), ": 지불할 카드 번호 및 유효 기간"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(Cmdname, {
+                sid: "payment_type_banktransfer",
+                className: "uitext"
+              }), ": 사업자 등록증, 세금계산서 수신 이메일"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "billing",
-              className: "b600"
-            }), " 권한 계정"]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "카드 결제의 경우: 지불할 카드 번호 및 유효 기간"
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "세금계산서 발행의 경우: 사업자 등록증, 계산서 수신 이메일"
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "JYP"
+            }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "USD"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(Cmdname, {
+                sid: "payment_type_card_stripe",
+                className: "uitext"
+              }), ": 지불할 카드 번호 및 유효 기간"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(Cmdname, {
+                sid: "payment_type_banktransfer_abroad",
+                className: "uitext"
+              }), ": 청구서 수신 이메일"]
+            }), "\n"]
           }), "\n"]
         }), "\n"]
       }), (0,jsx_runtime.jsx)(_components.admonition, {
@@ -292,10 +334,10 @@ function billing_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "credit",
-        children: "신용 카드"
+        id: "결제-수단-등록하기",
+        children: "결제 수단 등록하기"
       }), (0,jsx_runtime.jsx)(_components.p, {
-        children: "결제 수단으로 신용 카드를 추가하려면 다음 단계를 수행하세요."
+        children: "결제 수단을 처음 등록한다면 다음 단계를 수행하세요."
       }), (0,jsx_runtime.jsxs)(_components.ol, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -346,13 +388,41 @@ function billing_createMdxContent(props) {
             children: [(0,jsx_runtime.jsx)(Cmdname, {
               sid: "payment_method",
               className: "uitext"
-            }), " 항목에서 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_type_card_iamport",
-              className: "uitext"
-            }), "(KRW) 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_type_card_stripe",
-              className: "uitext"
-            }), "(JPY, USD)를 선택하세요."]
+            }), " 항목에서 원하는 결제 수단을 등록하세요."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: (0,jsx_runtime.jsx)(_components.a, {
+                href: "#payment_type_card_iamport",
+                children: (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "payment_type_card_iamport",
+                  className: "uitext"
+                })
+              })
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: (0,jsx_runtime.jsx)(_components.a, {
+                href: "#payment_type_banktransfer",
+                children: (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "payment_type_banktransfer",
+                  className: "uitext"
+                })
+              })
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: (0,jsx_runtime.jsx)(_components.a, {
+                href: "#payment_type_card_stripe",
+                children: (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "payment_type_card_stripe",
+                  className: "uitext"
+                })
+              })
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: (0,jsx_runtime.jsx)(_components.a, {
+                href: "#payment_type_banktransfer_abroad",
+                children: (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "payment_type_banktransfer_abroad",
+                  className: "uitext"
+                })
+              })
+            }), "\n"]
           }), "\n"]
         }), "\n"]
       }), (0,jsx_runtime.jsx)(_components.admonition, {
@@ -371,12 +441,10 @@ function billing_createMdxContent(props) {
         })
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
         id: "payment_type_card_iamport",
-        children: (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "payment_type_card_iamport"
-        })
+        children: "신용카드(나이스페이)"
       }), (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(Cmdname, {
           sid: "payment_method",
@@ -442,18 +510,16 @@ function billing_createMdxContent(props) {
         }), "\n"]
       }), (0,jsx_runtime.jsx)(MDXContent, {})]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
         id: "payment_type_card_stripe",
-        children: (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "payment_type_card_stripe"
-        })
+        children: "신용카드 (Stripe)"
       }), (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(Cmdname, {
           sid: "payment_method",
           className: "uitext"
         }), " 항목에서 ", (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "payment_type_card_iamport",
+          sid: "payment_type_card_stripe",
           className: "uitext"
         }), "를 선택했다면 다음 단계를 수행하세요."]
       }), (0,jsx_runtime.jsx)(ImgLang, {
@@ -490,91 +556,8 @@ function billing_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "taxinvoice",
-        children: "세금계산서"
-      }), (0,jsx_runtime.jsx)(_components.p, {
-        children: "결제 수단을 세금 계산서 발행 또는 청구서 발송으로 선택하려면 다음 단계를 수행하세요."
-      }), (0,jsx_runtime.jsxs)(_components.ol, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.a, {
-              href: "https://service.whatap.io",
-              children: "와탭 모니터링 서비스"
-            }), "에서 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "billing",
-              className: "b600"
-            }), " 권한을 가진 계정으로 로그인하세요."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "홈 화면 오른쪽 위에 프로필 아이콘을 선택하세요."
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["드롭다운 메뉴가 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "my_usage",
-              className: "uitext"
-            }), "을 선택하세요."]
-          }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
-            img: "billing-select-my-usage.png",
-            desc: "이용 내역"
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_information",
-              className: "uitext"
-            }), " 섹션에서 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "register_billing_info",
-              className: "uitext"
-            }), " 버튼을 선택하세요."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["세부 항목을 차례로 설정하세요. ", (0,jsx_runtime.jsx)("span", {
-              class: "vslow",
-              children: "*"
-            }), " 표시는 필수 항목입니다."]
-          }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
-            img: "billing-payment-information.png",
-            desc: "결제 정보"
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_method",
-              className: "uitext"
-            }), " 항목에서 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_type_banktransfer",
-              className: "uitext"
-            }), "(KRW) 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_type_banktransfer_abroad",
-              className: "uitext"
-            }), "(JPY, USD)을 선택하세요."]
-          }), "\n"]
-        }), "\n"]
-      }), (0,jsx_runtime.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["지원하는 결제 통화는 ", (0,jsx_runtime.jsx)(UI, {
-            children: "KRW"
-          }), ", ", (0,jsx_runtime.jsx)(UI, {
-            children: "JPY"
-          }), ", ", (0,jsx_runtime.jsx)(UI, {
-            children: "USD"
-          }), "입니다. 변경한 통화에 따라 ", (0,jsx_runtime.jsx)(Cmdname, {
-            sid: "payment_method",
-            className: "uitext"
-          }), "이 변경됩니다."]
-        })
-      })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
         id: "payment_type_banktransfer",
-        children: (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "payment_type_banktransfer"
-        })
+        children: "계산서 발행"
       }), (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(Cmdname, {
           sid: "payment_method",
@@ -596,7 +579,7 @@ function billing_createMdxContent(props) {
           }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
               children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "사업자 등록증 상의 대표자 명, 사업자 등록 번호, 전자 세금 계산서 발행 메일 등을 차례로 입력하세요."
+                children: "사업자 등록증 상의 대표자 명, 사업자 등록 번호, 전자 세금계산서 발행 메일 등을 차례로 입력하세요."
               }), "\n"]
             }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
               children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -682,12 +665,10 @@ function billing_createMdxContent(props) {
         })
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
         id: "payment_type_banktransfer_abroad",
-        children: (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "payment_type_banktransfer_abroad"
-        })
+        children: "청구서 발송"
       }), (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(Cmdname, {
           sid: "payment_method",
@@ -1088,9 +1069,9 @@ function billing_createMdxContent(props) {
       className: "remark-sectionize-h2",
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "editemail-tax",
-        children: "세금 계산서 수신 메일 주소 수정하기"
+        children: "세금계산서 수신 메일 주소 수정하기"
       }), (0,jsx_runtime.jsx)(_components.p, {
-        children: "세금 계산서 수신 메일 주소를 변경하려면 다음 단계를 수행하세요."
+        children: "세금계산서 수신 메일 주소를 변경하려면 다음 단계를 수행하세요."
       }), (0,jsx_runtime.jsxs)(_components.ol, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -1167,7 +1148,7 @@ function billing_createMdxContent(props) {
       }), (0,jsx_runtime.jsxs)(_components.admonition, {
         type: "note",
         children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsx)(_components.p, {
-          children: "세금 계산서 수신 메일의 경우 수신자 메일 주소를 1개만 등록할 수 있습니다."
+          children: "세금계산서 수신 메일의 경우 수신자 메일 주소를 1개만 등록할 수 있습니다."
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
