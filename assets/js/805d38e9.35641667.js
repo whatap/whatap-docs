@@ -80,6 +80,10 @@ const toc = [{
   "id": "mysql",
   "level": 4
 }, {
+  "value": "Oracle DMA",
+  "id": "oracle-dma",
+  "level": 4
+}, {
   "value": "Preview 2.6.0.a4",
   "id": "preview-260a4",
   "level": 2
@@ -133,7 +137,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "Oracle DMA",
-  "id": "oracle-dma",
+  "id": "oracle-dma-1",
   "level": 4
 }, {
   "value": "MongoDB",
@@ -451,6 +455,21 @@ function _createMdxContent(props) {
               }), " 컬럼 항목을 가장 오른쪽으로 이동"]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "oracle-dma",
+          children: "Oracle DMA"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "db_oracle_dma_sqlstat"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "db_oracle_dma_xview"
+          }), " 등에서 사용되는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "elapse_time"
+          }), " 지표를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "elapsed_time"
+          }), "으로 필드명 변경"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -886,7 +905,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracle-dma",
+          id: "oracle-dma-1",
           children: "Oracle DMA"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
