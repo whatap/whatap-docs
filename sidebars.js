@@ -3140,14 +3140,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_6',
+                id: 'release-notes/dotnet/dotnet-2_2_7',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_6',
+                  id: 'release-notes/dotnet/dotnet-2_2_7',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_6',
                 'release-notes/dotnet/dotnet-2_2_5',
                 'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
@@ -3156,7 +3157,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-2_1_9',
                 'release-notes/dotnet/dotnet-2_1_8',
-                'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3268,7 +3268,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_7_6',
@@ -3277,7 +3277,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_7_6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_7_5',
                 'release-notes/db/dbx-1_7_4',
