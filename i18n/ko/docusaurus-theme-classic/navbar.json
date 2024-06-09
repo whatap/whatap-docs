@@ -103,10 +103,6 @@
     "message": "관리 기능",
     "description": "Navbar item with label 관리 기능"
   },
-  "item.label.참조 문서": {
-    "message": "참조 문서",
-    "description": "Navbar item with label 참조 문서"
-  },
   "item.label.릴리스 노트": {
     "message": "릴리스 노트",
     "description": "Navbar item with label 릴리스 노트"
@@ -238,5 +234,9 @@
   "item.label.새로운 기능": {
     "message": "새로운 기능",
     "description": "Navbar item with label 새로운 기능"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
   }
 }
