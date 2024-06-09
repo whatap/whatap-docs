@@ -186,17 +186,21 @@ const billing_toc = [{
   "id": "기본-정보-수정하기",
   "level": 2
 }, {
+  "value": "결제 정보 수정하기",
+  "id": "결제-정보-수정하기",
+  "level": 2
+}, {
   "value": "결제 수단 변경하기",
   "id": "결제-수단-변경하기",
-  "level": 2
+  "level": 3
 }, {
   "value": "청구서 수신 정보 수정하기",
   "id": "editemail",
-  "level": 2
+  "level": 3
 }, {
   "value": "세금계산서 수신 메일 주소 수정하기",
   "id": "editemail-tax",
-  "level": 2
+  "level": 3
 }, {
   "value": "프로젝트 유료 전환",
   "id": "project-subscription",
@@ -565,7 +569,7 @@ function billing_createMdxContent(props) {
         }), " 항목에서 ", (0,jsx_runtime.jsx)(Cmdname, {
           sid: "payment_type_banktransfer",
           className: "uitext"
-        }), "를 선택했다면 다음 단계를 수행하세요."]
+        }), "을 선택했다면 다음 단계를 수행하세요."]
       }), (0,jsx_runtime.jsx)(ImgLang, {
         img: "billin-add-payment-tax.png",
         desc: "계산서 발행"
@@ -676,7 +680,7 @@ function billing_createMdxContent(props) {
         }), " 항목에서 ", (0,jsx_runtime.jsx)(Cmdname, {
           sid: "payment_type_banktransfer_abroad",
           className: "uitext"
-        }), "를 선택했다면 다음 단계를 수행하세요."]
+        }), "을 선택했다면 다음 단계를 수행하세요."]
       }), (0,jsx_runtime.jsx)(ImgLang, {
         img: "billing-add-payment-tax-abroad.png",
         desc: "청구서 발송"
@@ -828,9 +832,15 @@ function billing_createMdxContent(props) {
           }), "\n"]
         })
       })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.section, {
       className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
+      children: (0,jsx_runtime.jsx)(_components.h2, {
+        id: "결제-정보-수정하기",
+        children: "결제 정보 수정하기"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
         id: "결제-수단-변경하기",
         children: "결제 수단 변경하기"
       }), (0,jsx_runtime.jsx)(_components.p, {
@@ -972,8 +982,8 @@ function billing_createMdxContent(props) {
         })
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
         id: "editemail",
         children: "청구서 수신 정보 수정하기"
       }), (0,jsx_runtime.jsx)(_components.p, {
@@ -1066,8 +1076,8 @@ function billing_createMdxContent(props) {
         })
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
         id: "editemail-tax",
         children: "세금계산서 수신 메일 주소 수정하기"
       }), (0,jsx_runtime.jsx)(_components.p, {
