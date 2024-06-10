@@ -47,8 +47,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Python Agent 지난 버전",
-    "permalink": "/whatap-docs/release-notes/python/python-previous"
+    "title": ".NET Agent v2.2.7",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_7"
   },
   "next": {
     "title": ".NET Agent v2.2.5",
