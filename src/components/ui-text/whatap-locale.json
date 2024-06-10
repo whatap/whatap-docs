@@ -837,7 +837,7 @@
     "ja": "深刻度",
     "ko": "위험도",
     "zh": "危险性",
-    "service_id": "_00135"
+    "service_id": "危险性"
   },
   "sms_alert_server_name": {
     "en": "Server name",
@@ -32013,14 +32013,14 @@
   },
   "test_event_rules": {
     "en": "Test event rules",
-    "ja": "アラート通知テスト",
+    "ja": "アラート条件テスト",
     "ko": "이벤트 규칙 테스트",
     "zh": "Test Event Rules",
     "service_id": "_04652"
   },
   "event_rules": {
     "en": "Event rules",
-    "ja": "イベントルール",
+    "ja": "アラート条件",
     "ko": "이벤트 규칙",
     "zh": "Event Rules",
     "service_id": "_04653"
@@ -54657,10 +54657,10 @@
     "service_id": "TLT07929"
   },
   "DSC07930": {
-    "en": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
+    "en": "It takes about a minute for the added/edited/copied URL to be reflected in the list.",
     "ja": "追加/修正/コピーしたURLがリストに反映されるまで1分程の時間がかかります。",
-    "ko": "추가/수정/복사한 URL이 목록에 반영되는데, 약 1분의 시간이 소요됩니다.",
-    "zh": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
+    "ko": "추가/수정/복사한 URL이 목록에 반영되기까지 약 1분의 시간이 소요됩니다.",
+    "zh": "It takes about a minute for the added/edited/copied URL to be reflected in the list.",
     "service_id": "DSC07930"
   },
   "TTL07931": {
@@ -54952,7 +54952,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55498,7 +55498,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55623,10 +55623,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete that item?",
+    "en": "Are you sure you want to delete this item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete that item?",
+    "zh": "Are you sure you want to delete this item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55694,16 +55694,16 @@
   },
   "DSC08078": {
     "en": "There are no products found.",
-    "ja": "検索された商品はありません。",
+    "ja": "検索された商品ありません。",
     "ko": "검색된 상품이 없습니다.",
     "zh": "There are no products found.",
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
-    "ja": "商品名を英語で入力するか、別のクエリを入力してください。",
+    "en": "Please enter the product name in English or another search term.",
+    "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55712,6 +55712,104 @@
     "ko": "버전을 선택하세요.",
     "zh": "Please select a version.",
     "service_id": "DSC08080"
+  },
+  "NTC08081": {
+    "en": "The hash value could not be found and could not be added.",
+    "ja": "ハッシュ値が見つからないため追加できません。",
+    "ko": "해시값을 찾을 수 없어 추가할 수 없습니다.",
+    "zh": "The hash value could not be found and could not be added.",
+    "service_id": "NTC08081"
+  },
+  "DSC08082": {
+    "en": "The request has expired or is an invalid request.",
+    "ja": "有効期限が切れているか無効なリクエストです。",
+    "ko": "요청이 만료되었거나 유효하지 않은 요청입니다.",
+    "zh": "The request has expired or is an invalid request.",
+    "service_id": "DSC08082"
+  },
+  "BTN08083": {
+    "en": "View all products",
+    "ja": "すべての製品",
+    "ko": "전체 상품 보기",
+    "zh": "View all products",
+    "service_id": "BTN08083"
+  },
+  "LNK08084": {
+    "en": "Server Inventory",
+    "ja": "サーバー構成",
+    "ko": "서버 구성",
+    "zh": "Server Inventory",
+    "service_id": "LNK08084"
+  },
+  "TTL08085": {
+    "en": "class details",
+    "ja": "クラス詳細",
+    "ko": "클래스 상세",
+    "zh": "class details",
+    "service_id": "TTL08085"
+  },
+  "TTL08086": {
+    "en": "server name",
+    "ja": "サーバー名",
+    "ko": "서버 이름",
+    "zh": "server name",
+    "service_id": "TTL08086"
+  },
+  "TTL08087": {
+    "en": "type",
+    "ja": "種類",
+    "ko": "종류",
+    "zh": "type",
+    "service_id": "TTL08087"
+  },
+  "TTL08088": {
+    "en": "Operating system version",
+    "ja": "オペレーティングシステムのバージョン",
+    "ko": "운영체제 버전",
+    "zh": "Operating system version",
+    "service_id": "TTL08088"
+  },
+  "DSC08089": {
+    "en": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
+    "ja": "こんにちは。<br />ワタップをご利用のお客様に心から感謝申し上げます。",
+    "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
+    "zh": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
+    "service_id": "DSC08089"
+  },
+  "DSC08090": {
+    "en": "End date: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "ja": "終了対象：アプリケーションダッシュボード（Old）<br />終了日：2024年7月24日（水）",
+    "ko": "종료 대상 : 애플리케이션 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
+    "zh": "End date: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "service_id": "DSC08090"
+  },
+  "TTL08091": {
+    "en": "Application Dashboard (Old) termination notice",
+    "ja": "アプリケーションダッシュボード（Old）終了ガイド",
+    "ko": "애플리케이션 대시보드 (Old) 종료 안내",
+    "zh": "Application Dashboard (Old) termination notice",
+    "service_id": "TTL08091"
+  },
+  "DSC08092": {
+    "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションダッシュボード</a>メニューから改善された機能を利用できます。<br />より良いサービスを提供するために最善を尽くします。",
+    "ko": "<a href=\"{url}\" target=\"_blank\">대시보드 > 애플리케이션 대시보드</a> 메뉴에서 개선된 기능을 이용할 수 있습니다.<br />더 좋은 서비스 제공을 위해 최선을 다하겠습니다.",
+    "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "service_id": "DSC08092"
+  },
+  "DSC08093": {
+    "en": "thank you",
+    "ja": "ありがとうございます。",
+    "ko": "감사합니다.",
+    "zh": "thank you",
+    "service_id": "DSC08093"
+  },
+  "DSC08094": {
+    "en": "Enter the filter and press Enter to add it.",
+    "ja": "フィルタを入力してEnterを押して追加します。",
+    "ko": "필터를 입력 후 엔터를 눌러 추가하세요.",
+    "zh": "Enter the filter and press Enter to add it.",
+    "service_id": "DSC08094"
   },
   "": {
     "en": "#VALUE!",
@@ -56958,11 +57056,6 @@
     "en": "Namespace Status",
     "ja": "ネームスペース状況",
     "ko": "네임스페이스 현황"
-  },
-  "side_serviceDashboardOld": {
-    "en": "APP. Service Dashboard",
-    "ja": "APPサービス",
-    "ko": "애플리케이션 서비스 대시보드"
   },
   "side_serviceDashboard": {
     "en": "APP. Service Dashboard",
