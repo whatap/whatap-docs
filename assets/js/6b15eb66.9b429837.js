@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83080],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77856],{
 
 /***/ 73290:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -65,7 +65,7 @@ const toc = [{
   "id": "appcounterokind-tags",
   "level": 3
 }, {
-  "value": "Fiels",
+  "value": "Fields",
   "id": "appcounterokind-fileds",
   "level": 3
 }, {
@@ -1164,7 +1164,7 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "appcounterokind-fileds",
-        children: "Fiels"
+        children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "c4-20-10-50-10",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
@@ -3402,259 +3402,53 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11288:
+/***/ 42990:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  assets: () => (/* binding */ assets),
-  contentTitle: () => (/* binding */ metrics_app_contentTitle),
-  "default": () => (/* binding */ metrics_app_MDXContent),
-  frontMatter: () => (/* binding */ metrics_app_frontMatter),
-  metadata: () => (/* binding */ metadata),
-  toc: () => (/* binding */ metrics_app_toc)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Tabs/index.js + 2 modules
-var Tabs = __webpack_require__(74235);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TabItem/index.js + 1 modules
-var TabItem = __webpack_require__(15947);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-index.mdx
-var _metrics_index = __webpack_require__(20592);
-// EXTERNAL MODULE: ./docs/common-items/_apm-server-merics.mdx
-var _apm_server_merics = __webpack_require__(73290);
-;// CONCATENATED MODULE: ./docs/common-items/_python-app-proc-counter.mdx
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74235);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15947);
+/* harmony import */ var _common_items_metrics_index_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20592);
+/* harmony import */ var _common_items_apm_server_merics_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(73290);
 
 
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "app_proc_counter",
-  "id": "app_proc_counter",
-  "level": 3
-}, {
-  "value": "Tags",
-  "id": "tags",
-  "level": 4
-}, {
-  "value": "Fields",
-  "id": "fields",
-  "level": 4
-}];
-function _createMdxContent(props) {
-  const _components = {
-    h3: "h3",
-    h4: "h4",
-    hr: "hr",
-    li: "li",
-    p: "p",
-    section: "section",
-    table: "table",
-    tbody: "tbody",
-    td: "td",
-    th: "th",
-    thead: "thead",
-    tr: "tr",
-    ul: "ul",
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "app_proc_counter",
-        children: "app_proc_counter"
-      }), (0,jsx_runtime.jsx)(_components.hr, {}), (0,jsx_runtime.jsx)(_components.p, {
-        children: "애플리케이션 프로세스 지표입니다."
-      }), (0,jsx_runtime.jsxs)(_components.ul, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-          children: "수집 간격 : 5초"
-        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-          children: "통계 데이터 : 5분, 1시간"
-        }), "\n"]
-      })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "tags",
-        children: "Tags"
-      }), (0,jsx_runtime.jsxs)(_components.table, {
-        children: [(0,jsx_runtime.jsx)(_components.thead, {
-          children: (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.th, {
-              children: "태그명"
-            }), (0,jsx_runtime.jsx)(_components.th, {
-              children: "설명"
-            }), (0,jsx_runtime.jsx)(_components.th, {
-              children: "비고"
-            })]
-          })
-        }), (0,jsx_runtime.jsxs)(_components.tbody, {
-          children: [(0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "host_ip"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "Host IP"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "고유값"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "oname"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "에이전트 이름"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "고유값"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "okindName"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "애플리케이션 종류명"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "onodeName"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "애플리케이션 노드명"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "type"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "애플리케이션 유형"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "언어 이름"
-            })]
-          })]
-        })]
-      })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "fields",
-        children: "Fields"
-      }), (0,jsx_runtime.jsxs)(_components.table, {
-        children: [(0,jsx_runtime.jsx)(_components.thead, {
-          children: (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.th, {
-              children: "필드명"
-            }), (0,jsx_runtime.jsx)(_components.th, {
-              children: "단위"
-            }), (0,jsx_runtime.jsx)(_components.th, {
-              children: "설명"
-            }), (0,jsx_runtime.jsx)(_components.th, {
-              children: "비고"
-            })]
-          })
-        }), (0,jsx_runtime.jsxs)(_components.tbody, {
-          children: [(0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "cputime"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "밀리 세컨드"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "CPU 사용 시간"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_max"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 최대량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_tot"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 총량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_use"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 사용량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          })]
-        })]
-      })]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
-    ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-;// CONCATENATED MODULE: ./docs/python/metrics-app.mdx
-
-
-const metrics_app_frontMatter = {
+const frontMatter = {
 	id: 'metrics-app',
 	title: '애플리케이션 지표',
 	description: '애플리케이션 지표를 안내합니다.',
 	tags: [
-		'Python',
+		'.NET',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
 	]
 };
-const metrics_app_contentTitle = undefined;
+const contentTitle = undefined;
 const metadata = {
-  "id": "python/metrics-app",
+  "id": "dotnet/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/python/metrics-app.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/metrics-app",
-  "permalink": "/whatap-docs/python/metrics-app",
+  "source": "@site/docs/dotnet/metrics-app.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/metrics-app",
+  "permalink": "/whatap-docs/dotnet/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/metrics-app.mdx",
+  "editUrl": "undefined/docs/dotnet/metrics-app.mdx",
   "tags": [
     {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "메트릭스",
@@ -3675,20 +3469,20 @@ const metadata = {
     "title": "애플리케이션 지표",
     "description": "애플리케이션 지표를 안내합니다.",
     "tags": [
-      "Python",
+      ".NET",
       "메트릭스",
       "애플리케이션",
       "UI"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/python/metrics-intro"
+    "permalink": "/whatap-docs/dotnet/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/python/metrics-performance-counter"
+    "permalink": "/whatap-docs/dotnet/metrics-performance-counter"
   }
 };
 const assets = {
@@ -3701,24 +3495,23 @@ const assets = {
 
 
 
-
-const metrics_app_toc = [..._metrics_index/* toc */.RM, ..._apm_server_merics/* toc */.RM, ...toc];
-function metrics_app_createMdxContent(props) {
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_metrics_index/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_apm_server_merics/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
+const toc = [..._common_items_metrics_index_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_apm_server_merics_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_index_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_server_merics_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
   });
 }
-function metrics_app_MDXContent(props = {}) {
+function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(metrics_app_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
-  }) : metrics_app_createMdxContent(props);
+  }) : _createMdxContent(props);
 }
 
 

@@ -793,7 +793,7 @@ function _createMdxContent(props) {
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "$$WHATAP_HOME"
+            children: "$WHATAP_HOME"
           }), " 경로에 대한 권한 문제가 발생하다면 다음 명령어를 실행해 권한을 부여하세요."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {

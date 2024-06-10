@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71255],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[82263],{
 
 /***/ 73290:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -65,7 +65,7 @@ const toc = [{
   "id": "appcounterokind-tags",
   "level": 3
 }, {
-  "value": "Fiels",
+  "value": "Fields",
   "id": "appcounterokind-fileds",
   "level": 3
 }, {
@@ -1164,7 +1164,7 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "appcounterokind-fileds",
-        children: "Fiels"
+        children: "Fields"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "c4-20-10-50-10",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
@@ -3402,7 +3402,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 98612:
+/***/ 65878:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -3430,7 +3430,7 @@ var TabItem = __webpack_require__(15947);
 var _metrics_index = __webpack_require__(20592);
 // EXTERNAL MODULE: ./docs/common-items/_apm-server-merics.mdx
 var _apm_server_merics = __webpack_require__(73290);
-;// CONCATENATED MODULE: ./docs/common-items/_php-app-proc-counter.mdx
+;// CONCATENATED MODULE: ./docs/common-items/_nodejs-app-proc-counter.mdx
 
 
 const frontMatter = {};
@@ -3537,6 +3537,14 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "pid"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "애플리케이션 PID"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
               children: "type"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "애플리케이션 유형"
@@ -3567,21 +3575,31 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tbody, {
           children: [(0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "mem_proc"
+              children: "cputime"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
+              children: "밀리 세컨드"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "PHP 프로세스 메모리 사용량"
+              children: "CPU 사용 시간"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "mem_system"
+              children: "heap_tot"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "바이트"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "시스템 메모리 전체 크기"
+              children: "힙 총량"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "heap_use"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "바이트"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "힙 사용량"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
@@ -3605,7 +3623,7 @@ function MDXContent(props = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./docs/php/metrics-app.mdx
+;// CONCATENATED MODULE: ./docs/nodejs/metrics-app.mdx
 
 
 const metrics_app_frontMatter = {
@@ -3613,7 +3631,7 @@ const metrics_app_frontMatter = {
 	title: '애플리케이션 지표',
 	description: '애플리케이션 지표를 안내합니다.',
 	tags: [
-		'PHP',
+		'Node.js',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
@@ -3621,20 +3639,20 @@ const metrics_app_frontMatter = {
 };
 const metrics_app_contentTitle = undefined;
 const metadata = {
-  "id": "php/metrics-app",
+  "id": "nodejs/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/php/metrics-app.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/metrics-app",
-  "permalink": "/whatap-docs/php/metrics-app",
+  "source": "@site/docs/nodejs/metrics-app.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/metrics-app",
+  "permalink": "/whatap-docs/nodejs/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/metrics-app.mdx",
+  "editUrl": "undefined/docs/nodejs/metrics-app.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "label": "메트릭스",
@@ -3655,20 +3673,20 @@ const metadata = {
     "title": "애플리케이션 지표",
     "description": "애플리케이션 지표를 안내합니다.",
     "tags": [
-      "PHP",
+      "Node.js",
       "메트릭스",
       "애플리케이션",
       "UI"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/php/metrics-intro"
+    "permalink": "/whatap-docs/nodejs/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/php/metrics-performance-counter"
+    "permalink": "/whatap-docs/nodejs/metrics-performance-counter"
   }
 };
 const assets = {
