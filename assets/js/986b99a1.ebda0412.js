@@ -305,7 +305,7 @@ function billing_createMdxContent(props) {
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
             children: [(0,jsx_runtime.jsx)(_components.strong, {
-              children: "JYP"
+              children: "JPY"
             }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
               children: "USD"
             })]
