@@ -66,7 +66,7 @@ const metadata = {
   },
   "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "Web Service 추적",
+    "title": "WCF 및 Web Service 모니터링 설정",
     "permalink": "/whatap-docs/dotnet/agent-webservice"
   },
   "next": {

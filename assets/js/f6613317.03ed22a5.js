@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57403],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67386],{
 
-/***/ 89316:
+/***/ 97524:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,48 +18,54 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'agent-webservice',
-	title: 'Web Service 추적',
-	description: '.NET 애플리케이션 서버의 Web Service를 추적할 수 있습니다.',
+	id: 'agent-topology',
+	title: '토폴로지 맵',
+	description: '에이전트가 수집한 데이터로 토폴로지를 생성하는 옵션입니다.',
 	tags: [
-		'.NET'
+		'.NET',
+		'토폴로지'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/agent-webservice",
-  "title": "Web Service 추적",
-  "description": ".NET 애플리케이션 서버의 Web Service를 추적할 수 있습니다.",
-  "source": "@site/docs/dotnet/agent-webservice.mdx",
+  "id": "dotnet/agent-topology",
+  "title": "토폴로지 맵",
+  "description": "에이전트가 수집한 데이터로 토폴로지를 생성하는 옵션입니다.",
+  "source": "@site/docs/dotnet/agent-topology.mdx",
   "sourceDirName": "dotnet",
-  "slug": "/dotnet/agent-webservice",
-  "permalink": "/whatap-docs/dotnet/agent-webservice",
+  "slug": "/dotnet/agent-topology",
+  "permalink": "/whatap-docs/dotnet/agent-topology",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/agent-webservice.mdx",
+  "editUrl": "undefined/docs/dotnet/agent-topology.mdx",
   "tags": [
     {
       "label": ".NET",
       "permalink": "/whatap-docs/tags/net"
+    },
+    {
+      "label": "토폴로지",
+      "permalink": "/whatap-docs/tags/토폴로지"
     }
   ],
   "version": "current",
   "frontMatter": {
-    "id": "agent-webservice",
-    "title": "Web Service 추적",
-    "description": ".NET 애플리케이션 서버의 Web Service를 추적할 수 있습니다.",
+    "id": "agent-topology",
+    "title": "토폴로지 맵",
+    "description": "에이전트가 수집한 데이터로 토폴로지를 생성하는 옵션입니다.",
     "tags": [
-      ".NET"
+      ".NET",
+      "토폴로지"
     ]
   },
   "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "토폴로지 맵",
-    "permalink": "/whatap-docs/dotnet/agent-topology"
+    "title": "통계",
+    "permalink": "/whatap-docs/dotnet/agent-static"
   },
   "next": {
-    "title": "부가 기능",
-    "permalink": "/whatap-docs/dotnet/additional-function"
+    "title": "WCF 및 Web Service 모니터링 설정",
+    "permalink": "/whatap-docs/dotnet/agent-webservice"
   }
 };
 const assets = {
@@ -71,11 +77,9 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    admonition: "admonition",
     code: "code",
     li: "li",
     p: "p",
-    pre: "pre",
     strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
@@ -83,12 +87,12 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: ".NET 애플리케이션 서버의 Web Service를 추적할 수 있습니다."
+      children: "에이전트가 수집한 데이터로 토폴로지를 생성하는 옵션입니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "webservice_method_enabled"
+            children: "tx_caller_meter_enabled"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
             class: "type",
             children: "Boolean"
@@ -97,52 +101,38 @@ function _createMdxContent(props) {
           children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "false"
           })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "true"
-          }), "로 설정하면 Web Service를 추적할 수 있습니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "설정한 값을 적용하려면 IIS를 다시 시작하세요."
-          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "트랜잭션 정보로 토폴로지 통계를 생성합니다."
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "webservice_method_prefix"
+            children: "sql_dbc_meter_enabled"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
             class: "type",
-            children: "String"
+            children: "Boolean"
+          })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "false"
           })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "추적 대상이 되는 메소드의 이름을 네임스페이스와 함께 입력하세요. Web Service는 직접 추적할 수 없기 때문에 Web Service를 사용한 메소드를 직접 추적 대상으로 입력해야 합니다."
+          children: "Database 연결 정보로 토폴로지 통계를 생성합니다"
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "httpc_host_meter_enabled"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            class: "type",
+            children: "Boolean"
+          })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "false"
+          })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "다음 예시를 참조하세요."
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title='whatap.conf'",
-            children: "webservice_method_prefix=Test.Demo, WebServiceDemo.WebService.\n"
-          })
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "caution",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                children: "조건에 맞는 메소드가 Web Service를 사용하지 않아도 추적 대상이 됩니다. 다만 Web Service를 사용하는 메소드가 아니면 에러가 발생해도 에러는 검출되지 않고 트랜잭션이 끝나지 않은 상태로 유지될 수 있습니다."
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                children: "메소드가 소속된 클래스까지만 입력하면 해당 클래스 내의 모든 메소드가 추적 대상이 됩니다."
-              }), "\n"]
-            }), "\n"]
-          })
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "설정한 값을 적용하려면 IIS를 다시 시작하세요."
-          })
+          children: "토폴로지 맵에서 httpc outbound 정보를 표현합니다."
         }), "\n"]
       }), "\n"]
     })]
