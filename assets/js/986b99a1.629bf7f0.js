@@ -194,13 +194,13 @@ const billing_toc = [{
   "id": "결제-수단-변경하기",
   "level": 3
 }, {
-  "value": "청구서 수신 정보 수정하기",
-  "id": "editemail",
-  "level": 3
-}, {
   "value": "세금계산서 수신 메일 주소 수정하기",
   "id": "editemail-tax",
   "level": 3
+}, {
+  "value": "청구서 수신 정보 수정하기",
+  "id": "editemail",
+  "level": 2
 }, {
   "value": "프로젝트 유료 전환",
   "id": "project-subscription",
@@ -984,6 +984,92 @@ function billing_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,jsx_runtime.jsx)(_components.h3, {
+        id: "editemail-tax",
+        children: "세금계산서 수신 메일 주소 수정하기"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "세금계산서 수신 메일 주소를 변경하려면 다음 단계를 수행하세요."
+      }), (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "홈 화면 오른쪽 위에 프로필 아이콘을 선택하세요."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["드롭다운 메뉴가 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "my_usage",
+              className: "uitext"
+            }), "을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_paymentInformation",
+              className: "uitext"
+            }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "payment_information",
+              className: "uitext"
+            }), " 섹션에서 ", (0,jsx_runtime.jsx)(_components.img, {
+              alt: "수정 아이콘",
+              src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "edit",
+              className: "uitext"
+            }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "payment_method",
+              className: "uitext"
+            }), "의 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "payment_type_banktransfer",
+              className: "uitext"
+            }), " 오른쪽에 ", (0,jsx_runtime.jsx)(_components.img, {
+              alt: "수정 아이콘",
+              src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "billing_info_edit",
+              className: "uitext"
+            }), " 창이 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "tax_bill_recipient_email",
+              className: "uitext"
+            }), " 항목을 수정하세요."]
+          }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+            img: "billing-edit-mail-tax.png",
+            desc: "결제 정보 수정"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "apply",
+              className: "uitext"
+            }), " 버튼을 선택하면 이전 화면으로 돌아갑니다."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "save",
+              className: "uitext"
+            }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsx)(_components.p, {
+          children: "세금계산서 수신 메일의 경우 수신자 메일 주소를 1개만 등록할 수 있습니다."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "editemail",
         children: "청구서 수신 정보 수정하기"
       }), (0,jsx_runtime.jsx)(_components.p, {
@@ -1074,92 +1160,6 @@ function billing_createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         })
-      })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "editemail-tax",
-        children: "세금계산서 수신 메일 주소 수정하기"
-      }), (0,jsx_runtime.jsx)(_components.p, {
-        children: "세금계산서 수신 메일 주소를 변경하려면 다음 단계를 수행하세요."
-      }), (0,jsx_runtime.jsxs)(_components.ol, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "홈 화면 오른쪽 위에 프로필 아이콘을 선택하세요."
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["드롭다운 메뉴가 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "my_usage",
-              className: "uitext"
-            }), "을 선택하세요."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "side_paymentInformation",
-              className: "uitext"
-            }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_information",
-              className: "uitext"
-            }), " 섹션에서 ", (0,jsx_runtime.jsx)(_components.img, {
-              alt: "수정 아이콘",
-              src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
-              width: "24",
-              height: "24"
-            }), " ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "edit",
-              className: "uitext"
-            }), " 버튼을 선택하세요."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_method",
-              className: "uitext"
-            }), "의 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "payment_type_banktransfer",
-              className: "uitext"
-            }), " 오른쪽에 ", (0,jsx_runtime.jsx)(_components.img, {
-              alt: "수정 아이콘",
-              src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
-              width: "24",
-              height: "24"
-            }), " 버튼을 선택하세요."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "billing_info_edit",
-              className: "uitext"
-            }), " 창이 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
-              sid: "tax_bill_recipient_email",
-              className: "uitext"
-            }), " 항목을 수정하세요."]
-          }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
-            img: "billing-edit-mail-tax.png",
-            desc: "결제 정보 수정"
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "apply",
-              className: "uitext"
-            }), " 버튼을 선택하면 이전 화면으로 돌아갑니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(Cmdname, {
-              sid: "save",
-              className: "uitext"
-            }), " 버튼을 선택하세요."]
-          }), "\n"]
-        }), "\n"]
-      }), (0,jsx_runtime.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsx)(_components.p, {
-          children: "세금계산서 수신 메일의 경우 수신자 메일 주소를 1개만 등록할 수 있습니다."
-        })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
