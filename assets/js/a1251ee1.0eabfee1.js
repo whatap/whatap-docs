@@ -1001,6 +1001,12 @@ function _java_exception_options_createMdxContent(props) {
         })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "Business Exception을 등록합니다."
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title=\"whatap.conf\"",
+          children: "# example\nbiz_exceptions=com.home.test.exception.BizException\n"
+        })
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
         children: (0,jsx_runtime.jsxs)(_components.p, {
@@ -1061,6 +1067,12 @@ function _java_exception_options_createMdxContent(props) {
         })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "등록한 Exception의 에러 자체를 무시합니다."
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title=\"whatap.conf\"",
+          children: "# example\nignore_exceptions=com.home.test.exception.BizException\n"
+        })
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
         children: (0,jsx_runtime.jsxs)(_components.p, {
@@ -1176,6 +1188,12 @@ function _java_exception_options_createMdxContent(props) {
         children: ["HTTP 상태 코드가 에러(", (0,jsx_runtime.jsx)(_components.code, {
           children: "HTTPC_ERROR"
         }), ")인 경우 무시할 수 있습니다. 여러 값을 대상으로 할 경우 쉼표(,)를 구분자로 사용하세요."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title='whatap.conf'",
+          children: "# example\nhttpc_status_ignore=404,500\n"
+        })
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
         children: (0,jsx_runtime.jsx)(_components.p, {
@@ -1200,6 +1218,12 @@ function _java_exception_options_createMdxContent(props) {
         }), "와 같이 설정하세요. 이때 url은 통계/에러 분석에서 ", (0,jsx_runtime.jsx)(_components.code, {
           children: "HTTPC_URL"
         }), " 값을 입력합니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title='whatap.conf'",
+          children: "# example\nhttpc_status_url_ignore_set=a/b/c:404,d/e/f:500\n"
+        })
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
         children: (0,jsx_runtime.jsx)(_components.p, {
