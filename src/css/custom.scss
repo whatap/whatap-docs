@@ -1405,6 +1405,7 @@ main {
     .comment {
       color: #00b543 !important;
     }
+    span.info {color: #757575}
     span.slow {color: #ff9900}
     span.vslow {color: #df3737}
     span.lowfg {color: rgb(0, 150, 251)}
@@ -1689,7 +1690,7 @@ main {
       border: none;
       width: fit-content;
     }
-    img[alt*='Windows'] {
+    img[alt*='Windows Start'] {
       display: inline-block;
       position: relative;
       max-height: 20px;
