@@ -412,9 +412,7 @@ function _createMdxContent(props) {
                 children: "Changed"
               }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
                 children: "통계"
-              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
-                children: "에러"
-              }), " 메뉴에서 CSV 다운로드 시 필터가 바로 적용되도록 수정"]
+              }), " 일부 메뉴에서 CSV 다운로드 시 필터가 바로 적용되도록 수정"]
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
