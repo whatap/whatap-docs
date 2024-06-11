@@ -4791,10 +4791,10 @@ const sidebars = {
       label: 'Feature 프로젝트',
       collapsible: false,
       collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'features/kafka-introduction'
-      // },
+      link: {
+        type: 'doc',
+        id: 'features/introduction'
+      },
       items: [
         'features/kafka-introduction',
         // 'kafka/install-agent',
