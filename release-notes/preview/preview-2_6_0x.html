@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9fda6320.css">
-<script src="/whatap-docs/assets/js/runtime~main.0f803c32.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.2a4513d6.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.76367706.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -54,6 +54,19 @@
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">트레이스 분석</span> 창에서 <span class="uitext">운영체제</span>, <span class="uitext">클라  이언트 명</span>, <span class="uitext">상태</span>에 대한 문자열이 번역 key 값으로 노출되는 문제 수정</p>
 </li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h3><ul>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴의 <span class="uitext">컨테이너</span> 테이블을 <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴의 테이블과 일치하도록 수정</p>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴에서 노드 내 각 컨테이너에 대한 다음 지표의 합계 데이터를 <span class="uitext">컨테이너</span> 테이블 상단에 표시</p>
+<p><code>cpu_quota</code>, <code>cpu_request</code>, <code>cpu_total_milli</code>, <code>mem_limit</code>, <code>mem_request</code>, <code>mem_working_set</code></p>
+<p><img decoding="async" loading="lazy" alt="Node details" src="/whatap-docs/assets/images/release-node-details-container-table-a3c0f2e65782a473c418f86f28ae6085.png" width="1200" height="270" class="img_ev3q"></p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴에서 <span class="uitext">Command</span> 칼럼을 <span class="uitext">에이전트 정보</span> 하위에서 <span class="uitext">컨테이너 정보</span> 하위로 이동하도록 수정</p>
+<p><img decoding="async" loading="lazy" alt="Container list" src="/whatap-docs/assets/images/release-container-list-column-change-522a2ccb216748eaac6bac0f431424d0.png" width="400" height="453" class="img_ev3q"></p>
+</li>
 </ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h3><p><code class="Changed">Changed</code> <code>Doctype</code> 추가로 인한 User Interface 수정</p></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a5">Preview 2.6.0.a5<a href="#preview-260a5" class="hash-link" aria-label="Preview 2.6.0.a5에 대한 직접 링크" title="Preview 2.6.0.a5에 대한 직접 링크">​</a></h2><p>2024년 06월 07일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-1"><code>Application</code><a href="#application-1" class="hash-link" aria-label="application-1에 대한 직접 링크" title="application-1에 대한 직접 링크">​</a></h3><ul>
 <li>
@@ -81,7 +94,7 @@
 </ul></div></div>
 </li>
 <li>
-<p><code class="Fixed">Fixed</code> 대시보드의 <span class="uitext">액티브 세션</span> 테이블에서 <span class="uitext">세션 상세 정보</span> 창을 열었을 때 종료된 세션이면 실시간 조회를 종료하며 시간 선택자를 선택할 수 없도록 수정</p>
+<p><code class="Fixed">Fixed</code> 대시보드의 <span class="uitext">액티브 세션</span> 테이블에서 <span class="uitext">세션 상세 정보</span> 창을 열었을 때 종료된 세션이 면 실시간 조회를 종료하며 시간 선택자를 선택할 수 없도록 수정</p>
 </li>
 <li>
 <p><code class="Fixed">Fixed</code> 대시보드의 <span class="uitext">액티브 세션</span> 테이블에서 <span class="uitext">세션 상세 정보</span> 창을 열었을 때 종료된 세션이면 <span class="uitext">연계 분석</span> 버튼을 노출하지 않도록 수정</p>
@@ -99,8 +112,8 @@
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 <span class="uitext">sqlHash</span> 컬럼 항목을 가장 오른쪽으로 이동</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-dma">Oracle DMA<a href="#oracle-dma" class="hash-link" aria-label="Oracle DMA에 대한 직접 링크" title="Oracle DMA에 대한 직접 링 크">​</a></h4><p><code class="Changed">Changed</code> <code>db_oracle_dma_sqlstat</code>, <code>db_oracle_dma_xview</code> 등에서 사용되는 <code>elapse_time</code> 지표를 <code>elapsed_time</code>으로 필드명 변경</p></div></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a4">Preview 2.6.0.a4<a href="#preview-260a4" class="hash-link" aria-label="Preview 2.6.0.a4에 대한 직접 링크" title="Preview 2.6.0.a4에 대한 직접 링크">​</a></h2><p>2024년 06월 05일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h3><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-dma">Oracle DMA<a href="#oracle-dma" class="hash-link" aria-label="Oracle DMA에 대한 직접 링크" title="Oracle DMA에 대한 직접 링크">​</a></h4><p><code class="Changed">Changed</code> <code>db_oracle_dma_sqlstat</code>, <code>db_oracle_dma_xview</code> 등에서 사용되는 <code>elapse_time</code> 지표를 <code>elapsed_time</code>으로 필드명 변경</p></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a4">Preview 2.6.0.a4<a href="#preview-260a4" class="hash-link" aria-label="Preview 2.6.0.a4에 대한 직접 링크" title="Preview 2.6.0.a4에 대한 직접 링크">​</a></h2><p>2024년 06월 05일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-1"><code>Kubernetes</code><a href="#kubernetes-1" class="hash-link" aria-label="kubernetes-1에 대한 직접 링크" title="kubernetes-1에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴에서 상세 보기(<img decoding="async" loading="lazy" alt="상세 보기 아이콘" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxMnB4O2hlaWdodDogMTJweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcmlnaHQ8L3RpdGxlPiAtLT4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc0MC4wMDAwMDAsIC0xNjQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkaXJlY3Rpb25hbC1pY29ucyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAuMDAwMDAwLCAxMTkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcmlnaHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwMC4wMDAwMDAsIDQ1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcuMDAwMDAwLCAzLjAwMDAwMCkiIGlkPSJDb21iaW5lZC1TaGFwZSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xLjU1NzM5MzUsMTcuNDYzNTM2NiBMMC4xNDMxNzk5NCwxNi4wNDkzMjMgTDcuMjE0MTc5OTQsOC45Nzc5NzM4MyBMMC4xNDMxNzk5NCwxLjkwNzE4NzQgTDEuNTU3MzkzNSwwLjQ5Mjk3MzgzNCBMMTAuMDQyNjc0OSw4Ljk3ODI1NTIxIEwxLjU1NzM5MzUsMTcuNDYzNTM2NiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" width="24" height="24" class="img_ev3q">)를 통해 목록 메뉴로 이동하면 선택한 오브젝트 필터링이 적용되지 않는 문제 수정 </p>
 </li>
@@ -108,7 +121,7 @@
 <p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 상세 보기에서 <span class="uitext">호출 정보</span> 탭이 누락된 문제 수정 </p>
 </li>
 </ul></div></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a3">Preview 2.6.0.a3<a href="#preview-260a3" class="hash-link" aria-label="Preview 2.6.0.a3에 대한 직접 링크" title="Preview 2.6.0.a3에 대한 직접 링크">​</a></h2><p>2024년 06월 04일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-2"><code>공통</code><a href="#공통-2" class="hash-link" aria-label="공통-2에 대한 직접 링크" title="공통-2에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> 화면 오른쪽 위에 위치한 <img decoding="async" loading="lazy" alt="고객지원 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIKICAgIGQ9Ik0yIDEyQzIgNi40NzcgNi40NzggMiAxMiAyczEwIDQuNDc3IDEwIDEwYTkuOTUyIDkuOTUyIDAgMDEtMS43NDQgNS42NEwyMiAyMmwtNC4zNi0xLjc0NEE5Ljk1MiA5Ljk1MiAwIDAxMTIgMjJDNi40NzggMjIgMiAxNy41MjMgMiAxMnoiCiAgICBmaWxsPSIjMjk2Q0YyIiAvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIgogICAgZD0iTTkgMTIuNWExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptNC41IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IgogICAgZmlsbD0iI2ZmZiIgLz4KPC9zdmc+" width="24" height="24" class="img_ev3q"> &#x27;채팅 상담&#x27; 버튼이 간헐적으로 노출되지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-1"><code>Kubernetes</code><a href="#kubernetes-1" class="hash-link" aria-label="kubernetes-1에 대한 직접 링크" title="kubernetes-1에 대한 직접 링크">​</a></h3><h4><span>컨테이너 맵</span></h4><ul>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-260a3">Preview 2.6.0.a3<a href="#preview-260a3" class="hash-link" aria-label="Preview 2.6.0.a3에 대한 직접 링크" title="Preview 2.6.0.a3에 대한 직접 링크">​</a></h2><p>2024년 06월 04일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-2"><code>공통</code><a href="#공통-2" class="hash-link" aria-label="공통-2에 대한 직접 링크" title="공통-2에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> 화면 오른쪽 위에 위치한 <img decoding="async" loading="lazy" alt="고객지원 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIKICAgIGQ9Ik0yIDEyQzIgNi40NzcgNi40NzggMiAxMiAyczEwIDQuNDc3IDEwIDEwYTkuOTUyIDkuOTUyIDAgMDEtMS43NDQgNS42NEwyMiAyMmwtNC4zNi0xLjc0NEE5Ljk1MiA5Ljk1MiAwIDAxMTIgMjJDNi40NzggMjIgMiAxNy41MjMgMiAxMnoiCiAgICBmaWxsPSIjMjk2Q0YyIiAvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIgogICAgZD0iTTkgMTIuNWExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptNC41IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IgogICAgZmlsbD0iI2ZmZiIgLz4KPC9zdmc+" width="24" height="24" class="img_ev3q"> &#x27;채팅 상담&#x27; 버튼이 간헐적으로 노출되지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-2"><code>Kubernetes</code><a href="#kubernetes-2" class="hash-link" aria-label="kubernetes-2에 대한 직접 링크" title="kubernetes-2에 대한 직접 링크">​</a></h3><h4><span>컨테이너 맵</span></h4><ul>
 <li>
 <p><code class="Feature">Feature</code> 요약 보기의 <span class="uitext">대상 정보</span> 탭에 <span class="uitext">Containter State</span> 표시 및 설명 추가</p>
 </li>
@@ -161,7 +174,7 @@
 <li>
 <p><code class="Fixed">Fixed</code> <span class="uitext">트레이스 분석</span> 창에서 에러 트랜잭션을 선택한 다음, <span class="uitext">레코드 요약</span> 탭에서 <span class="uitext">에러 통계</span> 창을 열면 차트가 출력되지 않는 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴에서 브라우저 창 크기를 줄이면 차트 범례 텍스트가 위치를 벗어나는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-2"><code>Kubernetes</code><a href="#kubernetes-2" class="hash-link" aria-label="kubernetes-2에 대한 직접 링크" title="kubernetes-2에 대한 직접 링크">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴에서 브라우저 창 크기를 줄이면 차트 범례 텍스트가 위치를 벗어나는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-3"><code>Kubernetes</code><a href="#kubernetes-3" class="hash-link" aria-label="kubernetes-3에 대한 직접 링크" title="kubernetes-3에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Java 에이전트 설정 옵션 관련 설명 추가</p>
 </li>
@@ -236,7 +249,7 @@
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java">Java<a href="#java" class="hash-link" aria-label="Java에 대한 직접 링크" title="Java에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Fixed">Fixed</code> <span class="uitext">토폴로지</span> &gt; <span class="uitext">애플리케이션 토폴로지</span> 메뉴에서 화면 위에 <span class="uitext">노드선택</span> 버튼을 선택하면 오른쪽에 노출되는 다이어그램의 스타일이 정상 적용되지 않는 문제 수정</li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="php-python-net">PHP, Python, .NET<a href="#php-python-net" class="hash-link" aria-label="PHP, Python, .NET에 대한 직접 링크" title="PHP, Python, .NET에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> 대시보드의 <span class="uitext">프로세스 메모리</span> 위젯이 API를 호출하지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-1"><code>Server</code><a href="#server-1" class="hash-link" aria-label="server-1에 대한 직접 링크" title="server-1에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Debian/Ubuntu 관련한 설치 스크립트의 오류 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-3"><code>Kubernetes</code><a href="#kubernetes-3" class="hash-link" aria-label="kubernetes-3에 대한 직접 링크" title="kubernetes-3에 대한 직접 링크">​</a></h3><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="php-python-net">PHP, Python, .NET<a href="#php-python-net" class="hash-link" aria-label="PHP, Python, .NET에 대한 직접 링크" title="PHP, Python, .NET에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> 대시보드의 <span class="uitext">프로세스 메모리</span> 위젯이 API를 호출하지 않는 문제 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-1"><code>Server</code><a href="#server-1" class="hash-link" aria-label="server-1에 대한 직접 링크" title="server-1에 대한 직접 링크">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Debian/Ubuntu 관련한 설치 스크립트의 오류 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-4"><code>Kubernetes</code><a href="#kubernetes-4" class="hash-link" aria-label="kubernetes-4에 대한 직접 링크" title="kubernetes-4에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Changed">Changed</code> 다음 메뉴 경로에서 <span class="b500">CPU 시간</span> 컬럼을 <span class="uitext">스레드 CPU 시간</span>으로 변경, 천 단위마다 쉼표(,)로 구분자 표시</p>
 <ul>
