@@ -1507,6 +1507,14 @@ main {
       color: #fff;
       border: none;
     }
+    // 구형 old 추가
+    code.old {
+      font-family: "Oleo Script";
+      border: none;
+      // margin-top: -2px !important;
+      padding: 1px 2px 1px 2px;
+      // font-style: italic;
+    }
     code.my {
       background-color: #296cf2;
       color: #fff;
