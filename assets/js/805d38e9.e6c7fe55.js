@@ -346,7 +346,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Changed"
-              }), " 구형 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              }), " 구버전의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_appDashboard",
                 className: "uitext"
               }), " 메뉴 제거 예정"]
@@ -442,7 +442,7 @@ function _createMdxContent(props) {
                 src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
                 width: "24",
                 height: "24"
-              }), " 버튼을 클릭해 안내 창을 열면 로딩 표시가 해당 위젯에서 적용되는 문제 수정"]
+              }), " 버튼을 클릭해 안내 창을 열면 로딩 표시가 해당 위젯에서도 적용되는 문제 수정"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

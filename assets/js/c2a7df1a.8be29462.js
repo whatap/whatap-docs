@@ -802,8 +802,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "Pod 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-pod-list"
+    "title": "Pending Pod 현황",
+    "permalink": "/whatap-docs/kubernetes/pending-pod-status"
   },
   "next": {
     "title": "Deployment 목록",

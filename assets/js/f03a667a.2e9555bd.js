@@ -800,8 +800,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/analysis-oom-container"
   },
   "next": {
-    "title": "컨테이너 애플리케이션 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-application-list"
+    "title": "Pending Pod 현황",
+    "permalink": "/whatap-docs/kubernetes/pending-pod-status"
   }
 };
 const assets = {
