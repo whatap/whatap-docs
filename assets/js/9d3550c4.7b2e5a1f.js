@@ -426,31 +426,39 @@ function install_agent_createMdxContent(props) {
             children: (0,jsx_runtime.jsx)(_components.code, {
               className: "language-bash",
               metastring: "title='Linux'",
-              children: "#!/usr/bin/env bash\nexport ACCESSKEY=\nexport WHATAP_HOST=\nexport CLUSTER=\nexport REGION=\nexport LAUNCH_TYPE=EC2\ncat >whatap_ecs.json <<EOL\n{ \"containerDefinitions\": [ {\n    \"name\": \"whatap-node-agent\",\n    \"image\": \"whatap/ecs_mon\",\n    \"cpu\": 100,\n    \"memory\": 50,\n    \"essential\": true,\n    \"mountPoints\": [{\n        \"containerPath\": \"/var/run/docker.sock\",\n        \"sourceVolume\": \"docker_sock\",\n        \"readOnly\": true},{\n        \"containerPath\": \"/rootfs\",\n        \"sourceVolume\": \"rootfs\",\n        \"readOnly\": true}],\n    \"environment\": [{\n        \"name\": \"ACCESSKEY\",\n        \"value\": \"$ACCESSKEY\"\n    },{\n        \"name\": \"WHATAP_HOST\",\n        \"value\": \"$WHATAP_HOST\"}\n    ],\n    \"linuxParameters\": {\n        \"capabilities\": {\n            \"add\": [\n            \"SYS_ADMIN\",\n            \"SYS_RESOURCE\",\n            \"SYS_PTRACE\",\n            \"NET_ADMIN\",\n            \"NET_BROADCAST\",\n            \"NET_RAW\",\n            \"IPC_LOCK\",\n            \"CHOWN\"]\n        }}}],\n\"requiresCompatibilities\": [\"EC2\"],\n\"volumes\": [{\n    \"host\": {\"sourcePath\": \"/var/run/docker.sock\"},\n    \"name\": \"docker_sock\"},{\n    \"host\": {\"sourcePath\": \"/\"},\n    \"name\": \"rootfs\"}],\n\"family\": \"whatap-agent-task\"}\nEOL\naws ecs register-task-definition \\\n--cli-input-json file://$(pwd)/whatap_ecs.json \\\n--region $REGION\naws ecs create-service --cluster $CLUSTER \\\n--service-name whatap-node-agent \\\n--task-definition whatap-agent-task \\\n--scheduling-strategy DAEMON \\\n--launch-type $LAUNCH_TYPE \\\n--region $REGION\n"
+              children: "#!/usr/bin/env bash\nexport ACCESSKEY=x4u5j20mdbj98-x3btmtjfhffmrc-z6ogidu7vm3shg\nexport WHATAP_HOST=127.0.0.1\nexport CLUSTER=xxxx\nexport REGION=xxxx\nexport LAUNCH_TYPE=EC2\n\ncat >whatap_ecs.json <<EOL\n{ \"containerDefinitions\": [ {\n\"name\": \"whatap-node-agent\",\n\"image\": \"whatap/ecs_mon\",\n\"cpu\": 100,\n\"memory\": 50,\n\"essential\": true,\n\"mountPoints\": [{\n    \"containerPath\": \"/var/run/docker.sock\",\n    \"sourceVolume\": \"docker_sock\",\n    \"readOnly\": true},{\n    \"containerPath\": \"/rootfs\",\n    \"sourceVolume\": \"rootfs\",\n    \"readOnly\": true}],\n\"environment\": [{\n    \"name\": \"ACCESSKEY\",\n    \"value\": \"$ACCESSKEY\"\n},{\n    \"name\": \"WHATAP_HOST\",\n    \"value\": \"$WHATAP_HOST\"}\n],\n\"linuxParameters\": {\n    \"capabilities\": {\n        \"add\": [\n        \"SYS_ADMIN\",\n        \"SYS_RESOURCE\",\n        \"SYS_PTRACE\",\n        \"NET_ADMIN\",\n        \"NET_BROADCAST\",\n        \"NET_RAW\",\n        \"IPC_LOCK\",\n        \"CHOWN\"]\n    }}}],\n\"requiresCompatibilities\": [\"EC2\"],\n\"volumes\": [{\n\"host\": {\"sourcePath\": \"/var/run/docker.sock\"},\n\"name\": \"docker_sock\"},{\n\"host\": {\"sourcePath\": \"/\"},\n\"name\": \"rootfs\"}],\n\"family\": \"whatap-agent-task\"}\n\nEOL\n\naws ecs register-task-definition \\\n--cli-input-json file://$(pwd)/whatap_ecs.json \\\n--region $REGION\naws ecs create-service --cluster $CLUSTER \\\n--service-name whatap-node-agent \\\n--task-definition whatap-agent-task \\\n--scheduling-strategy DAEMON \\\n--launch-type $LAUNCH_TYPE \\\n--region $REGION\n"
             })
-          }), "\n"]
-        }), "\n"]
-      }), (0,jsx_runtime.jsxs)(_components.ul, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "실행에 필요한 항목은 다음과 같습니다."
           }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: [(0,jsx_runtime.jsx)(_components.code, {
-                children: "ACCESSKEY"
-              }), " (와탭 프로젝트 Access Key)"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: [(0,jsx_runtime.jsx)(_components.code, {
-                children: "WHATAP_HOST"
-              }), " (와탭 수집 리전 IP)"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: [(0,jsx_runtime.jsx)(_components.code, {
-                children: "REGION"
-              }), " (AWS Region)"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: [(0,jsx_runtime.jsx)(_components.code, {
-                children: "CLUSTER"
-              }), " (ECS Cluster)"]
+              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "실행에 필요한 항목은 다음과 같습니다."
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.code, {
+                      children: "ACCESSKEY"
+                    }), " (와탭 프로젝트 Access Key)"]
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.code, {
+                      children: "WHATAP_HOST"
+                    }), " (와탭 수집 리전 IP)"]
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.code, {
+                      children: "REGION"
+                    }), " (AWS Region)"]
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.code, {
+                      children: "CLUSTER"
+                    }), " (ECS Cluster)"]
+                  }), "\n"]
+                }), "\n"]
+              }), "\n"]
             }), "\n"]
           }), "\n"]
         }), "\n"]
@@ -570,7 +578,7 @@ function install_agent_createMdxContent(props) {
             children: (0,jsx_runtime.jsx)(_components.code, {
               className: "language-bash",
               metastring: "title='Linux'",
-              children: "#!/usr/bin/env bash\nexport ACCESSKEY=\nexport WHATAP_HOST=\nexport PROFILE=\nexport REGION=\nexport CLUSTER=\nexport CLUSTER_CONFIG=\nexport TASK_EXECUTION_ROLE=\nexport SUBNET_1=\nexport SUBNET_2=\nexport SGGRP=\nexport WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly\nexport PROJNAME=whatap-monitoring\nexport LAUNCH_TYPE=FARGATE\nexport WHATAP_ROLE_ARN=$(cat role_arn.txt)\ncat >docker-compose.yml <<EOL\nversion: '3'\nservices:\nwhatap-ecs-agent:\n    image: whatap/ecs_mon\n    environment:\n    - ACCESSKEY=$ACCESSKEY\n    - WHATAP_HOST=$WHATAP_HOST\n    - FARGATE_HELPER=true\nEOL\ncat >ecs-params.yml <<EOL\nversion: 1\ntask_definition:\ntask_execution_role: $TASK_EXECUTION_ROLE\ntask_role_arn: \"$WHATAP_ROLE_ARN\"\necs_network_mode: awsvpc\ntask_size:\n    mem_limit: 0.5GB\n    cpu_limit: 256\nrun_params:\nnetwork_configuration:\n    awsvpc_configuration:\n    subnets:\n        - \"$SUBNET_1\"\n        - \"$SUBNET_2\"\n    security_groups:\n        - \"$SGGRP\"\n    assign_public_ip: ENABLED\nEOL\necs-cli compose --project-name $PROJNAME service up \\\n    --cluster-config $CLUSTER_CONFIG \\\n    --ecs-profile $PROFILE --region $REGION\n"
+              children: "#!/usr/bin/env bash\nexport ACCESSKEY=xxxx-xxxx-xxxx\nexport WHATAP_HOST=xxx.xxx.xxx\nexport PROFILE=xxxxx\t\nexport REGION=xxxxx\nexport CLUSTER=xxxxx\nexport CLUSTER_CONFIG=xxxx\nexport TASK_EXECUTION_ROLE=xxxx\nexport SUBNET_1=xxxx\nexport SUBNET_2=xxxx\nexport SGGRP=xxxx\nexport WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly\nexport PROJNAME=whatap-monitoring\nexport LAUNCH_TYPE=FARGATE\nexport WHATAP_ROLE_ARN=$(cat role_arn.txt)\n\ncat >docker-compose.yml <<EOL\nversion: '3'\nservices:\nwhatap-ecs-agent:\n    image: whatap/ecs_mon\n    environment:\n    - ACCESSKEY=$ACCESSKEY\n    - WHATAP_HOST=$WHATAP_HOST\n    - FARGATE_HELPER=true\nEOL\n\ncat >ecs-params.yml <<EOL\nversion: 1\ntask_definition:\ntask_execution_role: $TASK_EXECUTION_ROLE\ntask_role_arn: \"$WHATAP_ROLE_ARN\"\necs_network_mode: awsvpc\ntask_size:\n    mem_limit: 0.5GB\n    cpu_limit: 256\nrun_params:\nnetwork_configuration:\n    awsvpc_configuration:\n    subnets:\n        - \"$SUBNET_1\"\n        - \"$SUBNET_2\"\n    security_groups:\n        - \"$SGGRP\"\n    assign_public_ip: ENABLED\nEOL\n\necs-cli compose --project-name $PROJNAME service up \\\n    --cluster-config $CLUSTER_CONFIG \\\n    --ecs-profile $PROFILE --region $REGION\n"
             })
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
