@@ -218,17 +218,17 @@ function _createMdxContent(props) {
           }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "Go"
           }), " 상품의 애플리케이션 모니터링에서는 다음 에이전트 설정 옵션으로 5분(기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "30000"
+            children: "300000"
           }), ") 안에 종료되지 않는 트랜잭션의 정보를 더 이상 수집하지 않습니다. 트레이스 내역에는 'Lost Connection' 메시지를 남깁니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["5분 이상 지연되는 트랜잭션에 대한 트레이스 정보를 수집하려면 다음 옵션 값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "30000"
+            children: "300000"
           }), " 이상으로 설정하세요."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.ini\"",
-            children: "# PHP\nwhatap.trace_active_transaction_lost_time=30000\n\n#Python, .NET, Go\ntrace_active_transaction_lost_time=30000\n"
+            children: "# PHP\nwhatap.trace_active_transaction_lost_time=300000\n\n#Python, .NET, Go\ntrace_active_transaction_lost_time=300000\n"
           })
         })]
       })]
