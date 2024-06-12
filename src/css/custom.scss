@@ -1520,6 +1520,17 @@ main {
       color: #fff;
       border: none;
     }
+    // k8s QoS Class
+    code.grnt {
+      background-color: #ff0d00;
+      color: #fff;
+      border: none;
+    }
+    code.bef {
+      background-color: #969696f6;
+      color: #fff;
+      border: none;
+    } 
     code.changelog-service {
       background-color: rgb(177, 177, 177);
       color: #fff;
