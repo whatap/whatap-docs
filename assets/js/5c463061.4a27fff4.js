@@ -2314,7 +2314,8 @@ function _createMdxContent(props) {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                   sid: "side_instanceList",
                   className: "uitext"
-                }), " 의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                }), " 의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "mark instance",
                   children: "S"
                 }), " 표시 / replication 정보 수집"]
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
@@ -2333,7 +2334,8 @@ function _createMdxContent(props) {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                   sid: "side_instanceList",
                   className: "uitext"
-                }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                  class: "mark master",
                   children: "M"
                 }), " 표시 / replication 정보 수집"]
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
