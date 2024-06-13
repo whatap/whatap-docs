@@ -61,6 +61,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Preview 2.6.0.a7",
+  "id": "preview-260a7",
+  "level": 2
+}, {
+  "value": "<code>Application</code>",
+  "id": "application",
+  "level": 3
+}, {
   "value": "Preview 2.6.0.a6",
   "id": "preview-260a6",
   "level": 2
@@ -70,7 +78,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Application</code>",
-  "id": "application",
+  "id": "application-1",
   "level": 3
 }, {
   "value": "공통",
@@ -106,7 +114,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application-1",
+  "id": "application-2",
   "level": 3
 }, {
   "value": "<code>Database</code>",
@@ -158,7 +166,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Application</code>",
-  "id": "application-2",
+  "id": "application-3",
   "level": 3
 }, {
   "value": "<code>Server</code>",
@@ -202,7 +210,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>Application</code>",
-  "id": "application-3",
+  "id": "application-4",
   "level": 3
 }, {
   "value": "공통",
@@ -284,6 +292,32 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "preview-260a7",
+        children: "Preview 2.6.0.a7"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 06월 20일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "application",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Application"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_appDashboard",
+            className: "uitext"
+          }), " 메뉴에서 Default 프리셋 변경 기능 추가"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "preview-260a6",
         children: "Preview 2.6.0.a6"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -341,7 +375,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application",
+          id: "application-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -956,7 +990,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-1",
+          id: "application-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -1434,7 +1468,7 @@ function _createMdxContent(props) {
             children: "Fixed"
           }), " 사이드 메뉴에서 상품 소개 링크로 이동하면 선택한 조직이 해제되는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-2",
+          id: "application-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
@@ -1799,7 +1833,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴의 위젯에서 CSV 파일을 다운로드하면 비교 일자의 데이터가 표시되지 않는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application-3",
+          id: "application-4",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })
