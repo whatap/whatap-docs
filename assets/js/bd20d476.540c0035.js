@@ -93,67 +93,54 @@ const assets = {
 
 
 const toc = [{
-  "value": "<em><strong>일간 서버 보고서</strong></em>",
-  "id": "일간-서버-보고서",
+  "value": "일간 서버 보고서",
+  "id": "S001_ServerDaily_TagReport",
   "level": 2
 }, {
   "value": "개요",
-  "id": "개요",
+  "id": "overview",
   "level": 3
 }, {
-  "value": "서버 목록",
-  "id": "서버-목록",
+  "value": "서버목록",
+  "id": "server_list",
   "level": 3
 }, {
   "value": "알림 기록",
-  "id": "알림-기록",
+  "id": "alert_history",
   "level": 3
 }, {
-  "value": "<em><strong>주간 서버 보고서</strong></em>",
-  "id": "주간-서버-보고서",
+  "value": "주간 서버 보고서",
+  "id": "S100_ServerWeeklyReport",
   "level": 2
 }, {
   "value": "전체 자원 사용 목록",
-  "id": "전체-자원-사용-목록",
+  "id": "total_resource_used_list",
   "level": 3
 }, {
-  "value": "CPU",
-  "id": "cpu",
-  "level": 4
-}, {
-  "value": "메모리",
-  "id": "메모리",
-  "level": 4
-}, {
-  "value": "디스크",
-  "id": "디스크",
-  "level": 4
-}, {
-  "value": "<em><strong>월간 서버 보고서</strong></em>",
-  "id": "월간-서버-보고서",
+  "value": "월간 서버 보고서",
+  "id": "S200_ServerMonthlyReport",
   "level": 2
 }, {
   "value": "개요",
-  "id": "개요-1",
+  "id": "overview",
   "level": 3
 }, {
-  "value": "서버 정보",
-  "id": "서버-정보",
+  "value": "서버정보",
+  "id": "server_info",
   "level": 3
 }, {
-  "value": "알림 내역",
-  "id": "알림-내역",
+  "value": "알림내역",
+  "id": "alarms_list",
   "level": 3
 }, {
   "value": "서버 사용 목록",
-  "id": "서버-사용-목록",
+  "id": "server_usage_history",
   "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
     code: "code",
-    em: "em",
     h2: "h2",
     h3: "h3",
     h4: "h4",
@@ -193,23 +180,19 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "일간-서버-보고서",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "일간 서버 보고서"
-          })
-        })
+        id: "S001_ServerDaily_TagReport",
+        children: "일간 서버 보고서"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "일간 서버 보고서"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "S001_ServerDaily_TagReport",
+          className: "uitext",
+          report: true
         }), "는 하루 동안의 서버 자원 사용량을 확인할 수 있는 보고서입니다. 시작일, 시작 시간, 종료 시간을 직접 설정하여 조회할 수 있습니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "개요",
+        id: "overview",
         children: "개요"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_daily_report_01.png",
@@ -218,20 +201,24 @@ function _createMdxContent(props) {
         children: "프로젝트 이름과 호스트 수, 발생한 알림 건수를 요약해서 볼 수 있습니다. 호스트 건수와 알림 건수의 경우 전날과 비교하여 얼마나 변동이 있었는지를 함께 확인할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "호스트 건수"
-          }), " : 조회 기간 동안의 총 서버 개수입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "host_count",
+            className: "b600",
+            report: true
+          }), ": 조회 기간 동안의 총 서버 개수입니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "알림 건수"
-          }), " : 조회 기간 동안 발생한 알림의 전체 건수입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "alert_count",
+            className: "b600",
+            report: true
+          }), ": 조회 기간 동안 발생한 알림의 전체 건수입니다."]
         }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "서버-목록",
-        children: "서버 목록"
+        id: "server_list",
+        children: "서버목록"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_daily_report_02.png",
         desc: "일간 서버 보고서 서버 목록"
@@ -251,21 +238,23 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "알림-기록",
+        id: "alert_history",
         children: "알림 기록"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_daily_report_03.png",
         desc: "알림 목록"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["조회한 시간 동안 발생한 알림 기록에 대해 발생 시간, 등급, 발생한 서버 이름, 해당 알림이 발생한 원인을 확인할 수 있습니다.\n각 알림에 대한 상세 정보는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "경고 알림"
-          })
-        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "이벤트 기록"
-          })
-        }), " 메뉴에서 조회할 수 있습니다.\n해당 프로젝트에 대해 알림 기록이 없는 경우 '해당 기간에 데이터가 존재하지 않습니다'라는 안내 문구가 뜰 수 있습니다."]
+        children: ["조회한 시간 동안 발생한 알림 기록에 대해 발생 시간, 등급, 발생한 서버 이름, 해당 알림이 발생한 원인을 확인할 수 있습니다.\n각 알림에 대한 상세 정보는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_event",
+          className: "uitext"
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_eventHistory",
+          className: "uitext"
+        }), " 메뉴에서 조회할 수 있습니다.\n해당 프로젝트에 대해 알림 기록이 없는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "no_data",
+          className: "uitext",
+          report: true
+        }), "라는 안내 문구가 뜰 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -293,30 +282,29 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "주간-서버-보고서",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "주간 서버 보고서"
-          })
-        })
+        id: "S100_ServerWeeklyReport",
+        children: "주간 서버 보고서"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "주간 서버 보고서"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "S100_ServerWeeklyReport",
+          className: "uitext",
+          report: true
         }), "는 일주일간 서버의 CPU, Memory 사용량을 확인할 수 있는 보고서입니다.\n시작일을 직접 설정할 수 있으며, 조회 당일 기준 7일 전부터 조회 가능합니다.\n시작일로부터 7일간의 데이터를 조회합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h3",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "전체-자원-사용-목록",
+        id: "total_resource_used_list",
         children: "전체 자원 사용 목록"
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "cpu",
-        children: "CPU"
+        id: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "_cpu",
+          report: true
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_weekly_report_cpu.png",
         desc: "주간 전체 자원 사용 목록 CPU"
@@ -335,8 +323,11 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "메모리",
-        children: "메모리"
+        id: "-1",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "_mem",
+          report: true
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_weekly_report_memory.png",
         desc: "주간 전체 자원 사용 목록 메모리"
@@ -346,8 +337,11 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "디스크",
-        children: "디스크"
+        id: "-2",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "_disk",
+          report: true
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_weekly_report_disk.png",
         desc: "주간 전체 자원 사용 목록 디스크"
@@ -373,23 +367,19 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "월간-서버-보고서",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "월간 서버 보고서"
-          })
-        })
+        id: "S200_ServerMonthlyReport",
+        children: "월간 서버 보고서"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "월간 서버 보고서"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "S200_ServerMonthlyReport",
+          className: "uitext",
+          report: true
         }), "는 한 달 동안의 서버의 자원 사용량 및 정보를 확인할 수 있는 보고서입니다.\n시작일을 직접 설정할 수 있으며, 조회 당일 기준 30일 전부터 조회 가능합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "개요-1",
+        id: "overview",
         children: "개요"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_monthly_report_01.png",
@@ -398,28 +388,36 @@ function _createMdxContent(props) {
         children: "한 달 동안 서버의 전체 자원 사용 내역을 취합하여 볼 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "전체 호스트"
-          }), " : 조회 기간 동안의 총 서버 개수입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "total_host",
+            className: "b600",
+            report: true
+          }), ": 조회 기간 동안의 총 서버 개수입니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "전체 코어"
-          }), " : 조회 기간 동안 사용된 총 코어 개수입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "total_core",
+            className: "b600",
+            report: true
+          }), ": 조회 기간 동안 사용된 총 코어 개수입니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "전체 디스크"
-          }), " : 조회 기간 동안 마운트 된 총 파일 시스템 크기입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "total_disk",
+            className: "b600",
+            report: true
+          }), ": 조회 기간 동안 마운트 된 총 파일 시스템 크기입니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "전체 알림"
-          }), " : 조회 기간 동안 발생한 알림의 전체 건수입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "total_alarms",
+            className: "b600",
+            report: true
+          }), ": 조회 기간 동안 발생한 알림의 전체 건수입니다."]
         }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "서버-정보",
-        children: "서버 정보"
+        id: "server_info",
+        children: "서버정보"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_monthly_report_02.png",
         desc: "서버 정보"
@@ -429,8 +427,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "알림-내역",
-        children: "알림 내역"
+        id: "alarms_list",
+        children: "알림내역"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_monthly_report_03.png",
         desc: "알림 내역"
@@ -440,7 +438,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "서버-사용-목록",
+        id: "server_usage_history",
         children: "서버 사용 목록"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "server_monthly_report_04.png",
