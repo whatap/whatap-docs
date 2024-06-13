@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.cda2e982.css">
-<script src="/whatap-docs/assets/js/runtime~main.3e3a6fbb.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.fc60e24e.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.8c679112.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -92,6 +92,10 @@
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="java">Java<a href="#java" class="hash-link" aria-label="Java에 대한 직접 링크" title="Java에 대한 직접 링크">​</a></h4><p><code class="Fixed">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 <strong>JVM 옵션 추가</strong> 섹션에서 Jetty 설치 가이드 내용 수정: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code></p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h3><ul>
 <li>
+<p><code class="Feature">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 목록</span> 메뉴에서 <span class="uitext">노드 정보</span> 하위 컬럼으로 <span class="uitext">capacityType</span> 추가</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>이 기능은 클러스터 프로젝  트에만 적용됩니다.</p></div></div>
+</li>
+<li>
 <p><code class="Changed">Changed</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴의 <span class="uitext">컨테이너</span> 테이블을 <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴의 테이블과 일치하도록 수정</p>
 </li>
 <li>
@@ -100,7 +104,28 @@
 <p><img decoding="async" loading="lazy" alt="Node details" src="/whatap-docs/assets/images/release-node-details-container-table-a3c0f2e65782a473c418f86f28ae6085.png" width="1200" height="270" class="img_ev3q"></p>
 </li>
 <li>
-<p><code class="Fixed">Fixed</code> <span class="uitext">컨테  이너</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴에서 <span class="uitext">Command</span> 칼럼을 <span class="uitext">에이전트 정보</span> 하위에서 <span class="uitext">컨테이너 정보</span> 하위로 이동하도록 수정</p>
+<p><code class="Changed">Changed</code> 목록형 메뉴의 용어 표기를 다음과 같이 변경</p>
+<ul>
+<li>
+<p><span class="b500">메모리</span> → <span class="uitext">Memory</span></p>
+</li>
+<li>
+<p><span class="b500">네트워크</span> → <span class="uitext">Network</span></p>
+</li>
+<li>
+<p><span class="b500">디스크</span> → <span class="uitext">Disk</span></p>
+</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>언어 설정이 <span class="uitext">English</span>일 때는 변동 사항 없습니다.</p></div></div>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴의 컬럼 분류 변경</p>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴의 <span class="uitext">Oname</span> 컬럼 이름을 <span class="uitext">MicroOname</span>으로 변경 </p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴에서 <span class="uitext">Command</span> 칼럼을 <span class="uitext">에이전트 정보</span> 하위에서 <span class="uitext">컨테이너 정보</span> 하위로 이동하도록 수정</p>
 <p><img decoding="async" loading="lazy" alt="Container list" src="/whatap-docs/assets/images/release-container-list-column-change-522a2ccb216748eaac6bac0f431424d0.png" width="400" height="453" class="img_ev3q"></p>
 </li>
 <li>
