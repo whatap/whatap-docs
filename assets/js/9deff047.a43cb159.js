@@ -1016,7 +1016,7 @@ const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2_
   "level": 2
 }, {
   "value": "whatap.conf 설정",
-  "id": "whatapconf-설정",
+  "id": "setting-whatapconf",
   "level": 3
 }, {
   "value": "DB 유저 파일 생성",
@@ -1110,7 +1110,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "whatapconf-설정",
+        id: "setting-whatapconf",
         children: "whatap.conf 설정"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["압축을 해제한 폴더로 이동해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
