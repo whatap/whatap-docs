@@ -21528,7 +21528,7 @@
   "data_retention": {
     "en": "Data retention",
     "ja": "データ保存期間",
-    "ko": "데이터 유지 기간",
+    "ko": "데이터 보존 기간",
     "zh": "Data Retention",
     "service_id": "TTL03142"
   },
@@ -40092,7 +40092,7 @@
   "data_retention_period_with_disk_usage": {
     "en": "Data retention period(disk usage)",
     "ja": "データ保存期間(ディスク使用量)",
-    "ko": "데이터 보관일(디스크 사용량)",
+    "ko": "데이터 보존 기간 (디스크 사용량)",
     "zh": "Data Retention Period(Disk Usage)",
     "service_id": "ITM05808"
   },
@@ -40197,7 +40197,7 @@
   "data_retention_per_category": {
     "en": "Data retention per category",
     "ja": "カテゴリ別のデータ保存期間",
-    "ko": "카테고리별 데이터 유지 기간\n",
+    "ko": "카테고리별 데이터 보존 기간\n",
     "zh": "Data Retention Per Category",
     "service_id": "TTL05823"
   },
@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54952,7 +54952,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55498,7 +55498,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55623,10 +55623,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete this item?",
+    "zh": "Are you sure you want to delete that item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55700,10 +55700,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55721,10 +55721,10 @@
     "service_id": "NTC08081"
   },
   "DSC08082": {
-    "en": "The request has expired or is an invalid request.",
+    "en": "The request has expired or is invalid.",
     "ja": "有効期限が切れているか無効なリクエストです。",
     "ko": "요청이 만료되었거나 유효하지 않은 요청입니다.",
-    "zh": "The request has expired or is an invalid request.",
+    "zh": "The request has expired or is invalid.",
     "service_id": "DSC08082"
   },
   "BTN08083": {
@@ -55756,43 +55756,43 @@
     "service_id": "TTL08086"
   },
   "TTL08087": {
-    "en": "type",
-    "ja": "種類",
-    "ko": "종류",
-    "zh": "type",
+    "en": "OS type",
+    "ja": "OSタイプ",
+    "ko": "OS 타입",
+    "zh": "OS type",
     "service_id": "TTL08087"
   },
   "TTL08088": {
-    "en": "Operating system version",
-    "ja": "オペレーティングシステムのバージョン",
-    "ko": "운영체제 버전",
-    "zh": "Operating system version",
+    "en": "OS version",
+    "ja": "OSバージョン",
+    "ko": "OS 버전",
+    "zh": "OS version",
     "service_id": "TTL08088"
   },
   "DSC08089": {
     "en": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
-    "ja": "こんにちは。<br />ワタップをご利用いただくお客様に心から感謝申し上げます。",
+    "ja": "こんにちは。<br />WhaTap Application Monitoringの旧型ダッシュボードはサービス終了予定です。",
     "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
     "zh": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
     "service_id": "DSC08089"
   },
   "DSC08090": {
     "en": "Termination target: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
-    "ja": "終了対象：アプリケーションダッシュボード（Old）<br />終了日：2024年7月24日（水）",
+    "ja": "終了対象：アプリケーションダッシュボード（Old）<br />終了日：2024年7月24日(水)",
     "ko": "종료 대상 : 애플리케이션 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
     "zh": "Termination target: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
     "service_id": "DSC08090"
   },
   "TTL08091": {
     "en": "Application Dashboard (Old) termination notice",
-    "ja": "アプリケーションダッシュボード（Old）終了ガイド",
+    "ja": "アプリケーションダッシュボード（Old）終了のご案内",
     "ko": "애플리케이션 대시보드 (Old) 종료 안내",
     "zh": "Application Dashboard (Old) termination notice",
     "service_id": "TTL08091"
   },
   "DSC08092": {
     "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
-    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションダッシュボード</a>メニューから改善された機能を利用できます。<br />より良いサービスを提供するために最善を尽くします。",
+    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションダッシュボード</a>メニューから改善された機能が利用できます。<br />より良いサービスを提供するために最善を尽くします。",
     "ko": "<a href=\"{url}\" target=\"_blank\">대시보드 > 애플리케이션 대시보드</a> 메뉴에서 개선된 기능을 이용할 수 있습니다.<br />더 좋은 서비스 제공을 위해 최선을 다하겠습니다.",
     "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
     "service_id": "DSC08092"
@@ -55806,7 +55806,7 @@
   },
   "DSC08094": {
     "en": "Enter the filter and press Enter to add it.",
-    "ja": "フィルタを入力してEnterを押して追加します。",
+    "ja": "フィルタを入力してからEnterをクリックして追加します。",
     "ko": "필터를 입력 후 엔터를 눌러 추가하세요.",
     "zh": "Enter the filter and press Enter to add it.",
     "service_id": "DSC08094"
@@ -55859,6 +55859,132 @@
     "ko": "펌웨어",
     "zh": "Firmware",
     "service_id": "TTL08101"
+  },
+  "TTL08102": {
+    "en": "Similar pattern indicator",
+    "ja": "類似パターン指標",
+    "ko": "유사 패턴 지표",
+    "zh": "Similar pattern indicator",
+    "service_id": "TTL08102"
+  },
+  "TTL08103": {
+    "en": "Session Replay",
+    "ja": "セッションリプレイ",
+    "ko": "세션 리플레이",
+    "zh": "Session Replay",
+    "service_id": "TTL08103"
+  },
+  "DSC08104": {
+    "en": "View up to 6 hours of data based on the start time of the dragged time range.",
+    "ja": "ドラッグした時間範囲の開始時刻に基づいて、最大6時間のデータを照会します。",
+    "ko": "드래그한 시간 범위의 시작 시각을 기준으로 최대 6시간의 데이터를 조회합니다.",
+    "zh": "View up to 6 hours of data based on the start time of the dragged time range.",
+    "service_id": "DSC08104"
+  },
+  "TTL08105": {
+    "en": "Application information",
+    "ja": "アプリケーション情報",
+    "ko": "애플리케이션 정보",
+    "zh": "Application information",
+    "service_id": "TTL08105"
+  },
+  "BTN08106": {
+    "en": "Show as default",
+    "ja": "デフォルトで表示",
+    "ko": "기본으로 표시",
+    "zh": "Show as default",
+    "service_id": "BTN08106"
+  },
+  "NTC08107": {
+    "en": "The default preset has been changed.",
+    "ja": "デフォルトプリセットが変更されました。",
+    "ko": "디폴트 프리셋이 변경되었습니다.",
+    "zh": "The default preset has been changed.",
+    "service_id": "NTC08107"
+  },
+  "NTC08108": {
+    "en": "Change failed.",
+    "ja": "変更に失敗しました。",
+    "ko": "변경에 실패했습니다.",
+    "zh": "Change failed.",
+    "service_id": "NTC08108"
+  },
+  "NTC08109": {
+    "en": "Failed to load preset information.",
+    "ja": "プリセット情報の読み込みに失敗しました。",
+    "ko": "프리셋 정보를 불러오는데 실패했습니다.",
+    "zh": "Failed to load preset information.",
+    "service_id": "NTC08109"
+  },
+  "NTC08110": {
+    "en": "Go to default preset.",
+    "ja": "デフォルトプリセットへ移動します。",
+    "ko": "기본 프리셋으로 이동합니다.",
+    "zh": "Go to default preset.",
+    "service_id": "NTC08110"
+  },
+  "DSC08111": {
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
+    "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "service_id": "DSC08111"
+  },
+  "TTL08112": {
+    "en": "Guide to securing a heap dump",
+    "ja": "ヒープダンプ取得の案内",
+    "ko": "힙 덤프 확보 안내",
+    "zh": "Guide to securing a heap dump",
+    "service_id": "TTL08112"
+  },
+  "DSC08113": {
+    "en": "Indicator provided",
+    "ja": "指標の提供",
+    "ko": "지표 제공",
+    "zh": "Indicator provided",
+    "service_id": "DSC08113"
+  },
+  "DSC08114": {
+    "en": "Individual target list",
+    "ja": "個々の宛先リスト",
+    "ko": "개별 대상 목록",
+    "zh": "Individual target list",
+    "service_id": "DSC08114"
+  },
+  "CNT08115": {
+    "en": "Y-axis maximum value",
+    "ja": "Y軸最大値",
+    "ko": "Y축 최대값",
+    "zh": "Y-axis maximum value",
+    "service_id": "CNT08115"
+  },
+  "CNT08116": {
+    "en": "Use automatic Y-axis",
+    "ja": "自動Y軸を使用",
+    "ko": "자동 Y축 사용",
+    "zh": "Use automatic Y-axis",
+    "service_id": "CNT08116"
+  },
+  "CNT08117": {
+    "en": "Show maximum value",
+    "ja": "最大値表示",
+    "ko": "최대값 표시",
+    "zh": "Show maximum value",
+    "service_id": "CNT08117"
+  },
+  "CNT08118": {
+    "en": "Indicator Search",
+    "ja": "指標検索",
+    "ko": "지표 검색",
+    "zh": "Indicator Search",
+    "service_id": "CNT08118"
+  },
+  "CNT08119": {
+    "en": "Target Search",
+    "ja": "ターゲット検索",
+    "ko": "대상 검색",
+    "zh": "Target Search",
+    "service_id": "CNT08119"
   },
   "": {
     "en": "#VALUE!",
