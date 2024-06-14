@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98327],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28988],{
 
-/***/ 49273:
+/***/ 95485:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -19,53 +19,65 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'agent-log',
-	title: '에이전트 로그',
-	description: '에이전트 로그의 옵션을 설정할 수 있습니다.',
+	title: '에이전트 로그 설정',
+	description: 'PHP 에이전트 로그의 위치와 옵션을 설정할 수 있습니다.',
 	tags: [
-		'Go',
-		'로그'
+		'PHP',
+		'에이전트 로그',
+		'설정하기',
+		'애플리케이션'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/agent-log",
-  "title": "에이전트 로그",
-  "description": "에이전트 로그의 옵션을 설정할 수 있습니다.",
-  "source": "@site/docs/golang/agent-log.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/agent-log",
-  "permalink": "/whatap-docs/golang/agent-log",
+  "id": "php/agent-log",
+  "title": "에이전트 로그 설정",
+  "description": "PHP 에이전트 로그의 위치와 옵션을 설정할 수 있습니다.",
+  "source": "@site/docs/php/agent-log.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/agent-log",
+  "permalink": "/whatap-docs/php/agent-log",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/agent-log.mdx",
+  "editUrl": "undefined/docs/php/agent-log.mdx",
   "tags": [
     {
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
-      "label": "로그",
-      "permalink": "/whatap-docs/tags/로그"
+      "label": "에이전트 로그",
+      "permalink": "/whatap-docs/tags/에이전트-로그"
+    },
+    {
+      "label": "설정하기",
+      "permalink": "/whatap-docs/tags/설정하기"
+    },
+    {
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "agent-log",
-    "title": "에이전트 로그",
-    "description": "에이전트 로그의 옵션을 설정할 수 있습니다.",
+    "title": "에이전트 로그 설정",
+    "description": "PHP 에이전트 로그의 위치와 옵션을 설정할 수 있습니다.",
     "tags": [
-      "Go",
-      "로그"
+      "PHP",
+      "에이전트 로그",
+      "설정하기",
+      "애플리케이션"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
-    "title": "에이전트 통신 설정",
-    "permalink": "/whatap-docs/golang/agent-network"
+    "title": "에이전트 성능 설정",
+    "permalink": "/whatap-docs/php/agent-performance"
   },
   "next": {
     "title": "트랜잭션",
-    "permalink": "/whatap-docs/golang/agent-transaction"
+    "permalink": "/whatap-docs/php/agent-transaction"
   }
 };
 const assets = {
@@ -79,8 +91,8 @@ const toc = [{
   "id": "로그-설정",
   "level": 2
 }, {
-  "value": "로그 싱크(LogSink) 설정",
-  "id": "로그-싱크logsink-설정",
+  "value": "로그싱크(LogSink) 설정",
+  "id": "로그싱크logsink-설정",
   "level": 2
 }, {
   "value": "기본 설정",
@@ -119,25 +131,29 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "로그-설정",
         children: "로그 설정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "log_keep_days"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          class: "type",
-          children: "Day"
-        })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "7"
-        })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "로그 파일 보관 기간을 설정합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "whatap.log_keep_days"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Day"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "7"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "로그 파일 보관 기간을 설정합니다."
+          }), "\n"]
+        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "로그-싱크logsink-설정",
-        children: "로그 싱크(LogSink) 설정"
+        id: "로그싱크logsink-설정",
+        children: "로그싱크(LogSink) 설정"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "로그 데이터를 수집합니다."
       })]
@@ -150,7 +166,7 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "logsink_enabled"
+              children: "whatap.logsink_enabled"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
               children: "Boolean"
@@ -167,7 +183,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "logsink_zip_enabled"
+              children: "whatap.logsink_zip_enabled"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
               children: "Boolean"
@@ -192,13 +208,13 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "logsink.files"
+              children: "whatap.logsink.files"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
               children: "String"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "수집할 로그 파일의 전체 경로 및 파일명을 설정할 수 있습니다. 여러 개의 파일을 설정하려면 쉼표(,)를 구분자로 이용하세요."
+            children: "전체 파일 경로와 파일명을 설정합니다. 콤마(,)로 여러 파일을 지정할 수 있습니다."
           }), "\n"]
         }), "\n"]
       })]
@@ -207,18 +223,36 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "예시",
         children: "예시"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "다음 예시를 참조해 사용자의 환경에 맞는 에이전트 설정을 적용하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title='whatap.conf'",
-          children: "logsink_enabled=true\nlogsink_zip_enabled=true\nlogsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log\n"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "기본 설정"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='whatap.ini'",
+              children: "whatap.logsink_enabled=true\nwhatap.logsink_zip_enabled=true\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Apache error log 및 access log 설정"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='whatap.ini'",
+              children: "whatap.logsink_enabled=true\nwhatap.logsink_zip_enabled=true\nwhatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log\n"
+            })
+          }), "\n"]
+        }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "tip",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["로그 모니터링 파일 이름에 날짜 형식의 변수를 사용할 수 있습니다. Python ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ["로그 파일 이름에 날짜 형식의 변수를 사용할 수 있습니다. Python ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "strftime()"
           }), " 사용 기준으로 적용하세요."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
@@ -234,7 +268,7 @@ function _createMdxContent(props) {
             children: "whatap.logsink.files=/etc/httpd/logs/customlog-%Y%m%d\n"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "이 기능은 Go 에이전트 0.3.2 버전 이상에서 지원합니다."
+          children: "이 기능은 PHP 에이전트 2.7.2 버전 이상에서 지원합니다."
         })]
       })]
     })]
