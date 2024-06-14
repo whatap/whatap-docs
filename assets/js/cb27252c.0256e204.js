@@ -1251,6 +1251,7 @@ function agent_transaction_createMdxContent(props) {
     h2: "h2",
     li: "li",
     p: "p",
+    pre: "pre",
     section: "section",
     strong: "strong",
     ul: "ul",
@@ -1309,7 +1310,13 @@ function agent_transaction_createMdxContent(props) {
               children: "Empty"
             })]
           }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "특정 Error 또는 Exception을 Business Exception으로 지정합니다. 히트맵에서는 에러로 표기되지 않고 통계 정보에만 수집됩니다. 수집되는 Error Class 명과 동일하게 적용합니다. 콤마를 구분자로 하여 여러 개를 등록할 수 있습니다."
+            children: "특정 Error 또는 Exception을 Business Exception으로 지정합니다. 히트맵에서는 에러로 표기되지 않고 통계 정보에만 수집됩니다. 수집되는 Error Class 명과 동일하게 적용합니다. 쉼표(,)를 구분자로 여러 개를 등록할 수 있습니다."
+          }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "whatap.biz_exceptions=HttpConnectionServerError(400), GuzzleHttp\\Exception\\ServerException, CustomException\n"
+            })
           }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
             type: "tip",
             children: (0,jsx_runtime.jsxs)(_components.p, {
@@ -1331,6 +1338,12 @@ function agent_transaction_createMdxContent(props) {
             children: "등록한 Exception의 에러 자체를 무시합니다."
           }), "\n", (0,jsx_runtime.jsx)(_components.p, {
             children: "Exception의 경우 Custom Exception Class가 정의되어 있지 않으면, 기본으로 Exception으로 수집됩니다. 특정 Exception을 구분하기 위해서는 Custom Exception Class를 정의하고 해당 이름을 지정하면 제외할 수 있습니다."
+          }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "whatap.ignore_exceptions=HttpConnectionServerError(400), GuzzleHttp\\Exception\\ServerException, CustomException\n"
+            })
           }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
             type: "tip",
             children: (0,jsx_runtime.jsxs)(_components.p, {
