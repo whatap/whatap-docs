@@ -65,6 +65,10 @@ const toc = [{
   "id": "preview-260a7",
   "level": 2
 }, {
+  "value": "<code>공통</code>",
+  "id": "공통",
+  "level": 3
+}, {
   "value": "<code>Application</code>",
   "id": "application",
   "level": 3
@@ -74,7 +78,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통",
+  "id": "공통-1",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -82,7 +86,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-1",
+  "id": "공통-2",
   "level": 4
 }, {
   "value": "Java",
@@ -122,7 +126,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-2",
+  "id": "공통-3",
   "level": 4
 }, {
   "value": "MySQL",
@@ -146,7 +150,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-3",
+  "id": "공통-4",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -162,7 +166,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-4",
+  "id": "공통-5",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -202,7 +206,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-5",
+  "id": "공통-6",
   "level": 3
 }, {
   "value": "<Cmdname></Cmdname> / <Cmdname></Cmdname>",
@@ -214,7 +218,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-6",
+  "id": "공통-7",
   "level": 4
 }, {
   "value": "Java",
@@ -299,6 +303,35 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "공통",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "공통"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_metricsML",
+            className: "uitext"
+          }), " 메뉴의 상세 데이터 조회 및 표시 기준 변경"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "기존"
+              }), ": 차트 영역을 드래그한 기간에 대해 조회"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "변경"
+              }), ": 최대 6시간 기간만 조회"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "application",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
@@ -325,7 +358,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통",
+          id: "공통-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -380,7 +413,7 @@ function _createMdxContent(props) {
             children: "Application"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-1",
+          id: "공통-2",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -1026,7 +1059,7 @@ function _createMdxContent(props) {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-2",
+          id: "공통-3",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -1283,7 +1316,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-3",
+          id: "공통-4",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -1470,7 +1503,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-4",
+          id: "공통-5",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -1757,7 +1790,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-5",
+          id: "공통-6",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -1849,7 +1882,7 @@ function _createMdxContent(props) {
             children: "Application"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-6",
+          id: "공통-7",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
