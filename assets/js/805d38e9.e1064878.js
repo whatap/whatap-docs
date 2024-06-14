@@ -1045,7 +1045,18 @@ function _createMdxContent(props) {
               }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "comparison_date",
                 className: "uitext"
-              }), "를 모두 오늘 날짜로 설정하면 실시간 데이터와 저장된 마지막 데이터(00:00 ~ 01:00)를 조회해 비교하는 기능 추가"]
+              }), "를 모두 오늘 날짜로 설정하면 실시간 데이터와 저장된 마지막 데이터를 조회해 비교하는 기능 추가"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+              type: "note",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["이 기능은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Redis"
+                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "MongoDB"
+                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Oracle DMA"
+                }), " 상품에는 적용되지 않습니다."]
+              })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
