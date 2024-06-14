@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15437],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52653],{
 
 /***/ 10829:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1158,9 +1158,9 @@ function _createMdxContent(props) {
       children: "모니터링 시작하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "에이전트를 설치한 경로에서 쉘 스크립트(또는 배치 파일)를 실행하세요."
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
       product: "oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
         groupId: "os",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
           value: "linux",
@@ -1213,7 +1213,12 @@ function _createMdxContent(props) {
             })
           })]
         })]
-      })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["데이터베이스 모니터링을 위한 에이전트 설치를 완료했습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "after-install-agent",
+          children: "다음 문서"
+        }), "에서 설치 후 점검 사항을 확인하세요."]
+      })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
       product: "oracle-dma",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
@@ -1231,11 +1236,6 @@ function _createMdxContent(props) {
           children: "./startd.sh\n"
         })
       })]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["데이터베이스 모니터링을 위한 에이전트 설치를 완료했습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-        href: "after-install-agent",
-        children: "다음 문서"
-      }), "에서 설치 후 점검 사항을 확인하세요."]
     })]
   });
 }
@@ -1518,7 +1518,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 30930:
+/***/ 91615:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1550,27 +1550,27 @@ const frontMatter = {
 	title: '에이전트 설치',
 	description: '와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.',
 	tags: [
-		'SQL Server',
+		'Tibero',
 		'데이터베이스 모니터링',
 		'에이전트'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/install-agent",
+  "id": "tibero/install-agent",
   "title": "에이전트 설치",
   "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
-  "source": "@site/docs/mssql/install-agent.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/install-agent",
-  "permalink": "/whatap-docs/mssql/install-agent",
+  "source": "@site/docs/tibero/install-agent.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/install-agent",
+  "permalink": "/whatap-docs/tibero/install-agent",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/install-agent.mdx",
+  "editUrl": "undefined/docs/tibero/install-agent.mdx",
   "tags": [
     {
-      "label": "SQL Server",
-      "permalink": "/whatap-docs/tags/sql-server"
+      "label": "Tibero",
+      "permalink": "/whatap-docs/tags/tibero"
     },
     {
       "label": "데이터베이스 모니터링",
@@ -1587,19 +1587,19 @@ const metadata = {
     "title": "에이전트 설치",
     "description": "와탭 데이터베이스 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다.",
     "tags": [
-      "SQL Server",
+      "Tibero",
       "데이터베이스 모니터링",
       "에이전트"
     ]
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/mssql/monitoring-support"
+    "permalink": "/whatap-docs/tibero/monitoring-support"
   },
   "next": {
     "title": "설치 점검 사항",
-    "permalink": "/whatap-docs/mssql/after-install-agent"
+    "permalink": "/whatap-docs/tibero/after-install-agent"
   }
 };
 const assets = {
@@ -1632,7 +1632,6 @@ const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_4_
 }, ..._common_items_db_create_db_user_file_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_run_agent_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_db_install_xos_agent_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
     admonition: "admonition",
     code: "code",
     em: "em",
@@ -1643,7 +1642,6 @@ function _createMdxContent(props) {
     pre: "pre",
     section: "section",
     strong: "strong",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_12__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Youtube} = _components;
@@ -1673,23 +1671,8 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title='whatap.conf'",
-              children: "license=프로젝트 액세스 키\nwhatap.server.host=13.124.11.223/13.209.172.35 // 와탭 서버 정보\n\ndbms=mssql\ndb=master\ndb_ip=데이터베이스 IP\ndb_port=데이터베이스 포트 \n"
+              children: "license=프로젝트 액세스 키\nwhatap.server.host=13.124.11.223/13.209.172.35 // 와탭 서버 정보\n\ndbms=tibero\ndb=데이터베이스명(sid)\ndb_ip=데이터베이스 IP\ndb_port=데이터베이스 포트 \n"
             })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-            type: "note",
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "MS SQL 서버와 에이전트가 localhost에 설치되는 경우"
-              }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "default 1433 port"
-              }), ")"]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-ini",
-                metastring: "title='whatap.conf'",
-                children: "dbms=mssql\ndb=master\ndb_ip=127.0.0.1\ndb_port=1433\n"
-              })
-            })]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1698,22 +1681,14 @@ function _createMdxContent(props) {
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "데이터베이스 서버의 운영체제와 버전에 맞는 JDBC 드라이버를 다운로드하세요."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "MS SQL 2005 버전 이상"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://www.microsoft.com/en-us/download/details.aspx?id=56615",
-                children: "Microsoft JDBC Driver 6.4 for SQL Server"
-              })
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://www.microsoft.com/en-us/download/details.aspx?id=55539",
-                children: "Microsoft JDBC Driver 6.2 for SQL Server"
-              })
-            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Tibero JDBC Drivers"
+            }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "{$TB_HOME}"
+            }), "/client/lib/jar/tibero", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "{Version}"
+            }), "-jdbc.jar"]
           }), "\n"]
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
@@ -1727,7 +1702,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-bash",
           metastring: "showLineNumbers",
-          children: "create login whatap with password='DB_PASSWORD'; ## 원하는 password를 입력하세요.\ngrant view server state to whatap;\ncreate user whatap for login whatap;\ngrant execute to whatap;\nEXEC sp_configure 'show advanced options', 1;\nRECONFIGURE;\nEXEC sp_configure 'Ole Automation Procedures', 1;\nRECONFIGURE;\n \n## kill session 사용시 - SQL Server\ngrant alter any connection to whatap;\n\n## kill session 사용시 - Azure SQL Database\ngrant kill database connection to whatap;\n"
+          children: "create user whatap identified by 'DB_PASSWORD'; ## 원하는 password를 입력하세요.\ngrant create session to whatap;\ngrant select any dictionary to whatap;\n \n## kill session 사용시\ngrant alter system to whatap;\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
