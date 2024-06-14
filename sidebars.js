@@ -3004,14 +3004,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_33',
+                id: 'release-notes/java/java-2_2_34',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_33',
+                  id: 'release-notes/java/java-2_2_34',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_33',
                 'release-notes/java/java-2_2_32',
                 'release-notes/java/java-2_2_31',
                 'release-notes/java/java-2_2_30',
@@ -3020,7 +3021,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_27',
                 'release-notes/java/java-2_2_26',
                 'release-notes/java/java-2_2_25',
-                'release-notes/java/java-2_2_24',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3193,7 +3193,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_5_9',
@@ -3202,7 +3202,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_5_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_5_8',
                 'release-notes/server/server-2_5_7',
@@ -3329,7 +3329,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_6',
@@ -3338,7 +3338,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_3_5',
                 'release-notes/browser/browser-v1_3_4',
