@@ -1107,9 +1107,97 @@
     "width": 1200,
     "height": 569
   },
+  "apm-analysis-msa-caller-callee-data-en.png": {
+    "width": 1200,
+    "height": 909
+  },
+  "apm-analysis-msa-caller-callee-data-ja.png": {
+    "width": 1200,
+    "height": 910
+  },
+  "apm-analysis-msa-caller-callee-data.png": {
+    "width": 1200,
+    "height": 910
+  },
+  "apm-analysis-msa-caller-callee-node.png": {
+    "width": 400,
+    "height": 156
+  },
+  "apm-analysis-msa-caller-callee-summary-en.png": {
+    "width": 1200,
+    "height": 910
+  },
+  "apm-analysis-msa-caller-callee-summary-extend-en.png": {
+    "width": 1200,
+    "height": 744
+  },
+  "apm-analysis-msa-caller-callee-summary-extend-ja.png": {
+    "width": 1200,
+    "height": 744
+  },
+  "apm-analysis-msa-caller-callee-summary-extend.png": {
+    "width": 1200,
+    "height": 745
+  },
+  "apm-analysis-msa-caller-callee-summary-ja.png": {
+    "width": 1200,
+    "height": 911
+  },
+  "apm-analysis-msa-caller-callee-summary.png": {
+    "width": 1200,
+    "height": 910
+  },
+  "apm-analysis-msa-caller-callee-trend-en.png": {
+    "width": 1200,
+    "height": 910
+  },
+  "apm-analysis-msa-caller-callee-trend-ja.png": {
+    "width": 1200,
+    "height": 911
+  },
+  "apm-analysis-msa-caller-callee-trend.png": {
+    "width": 1200,
+    "height": 911
+  },
+  "apm-analysis-msa-detail-en.png": {
+    "width": 1200,
+    "height": 904
+  },
+  "apm-analysis-msa-detail-ja.png": {
+    "width": 1200,
+    "height": 904
+  },
+  "apm-analysis-msa-detail.png": {
+    "width": 1200,
+    "height": 904
+  },
+  "apm-analysis-msa-list-en.png": {
+    "width": 1200,
+    "height": 562
+  },
+  "apm-analysis-msa-list-ja.png": {
+    "width": 1200,
+    "height": 561
+  },
+  "apm-analysis-msa-list.png": {
+    "width": 1200,
+    "height": 562
+  },
   "apm-analysis-stack-example-dotnet.png": {
     "width": 1485,
     "height": 281
+  },
+  "apm-custom-report-en.png": {
+    "width": 1200,
+    "height": 197
+  },
+  "apm-custom-report-ja.png": {
+    "width": 1200,
+    "height": 198
+  },
+  "apm-custom-report.png": {
+    "width": 1200,
+    "height": 198
   },
   "apm-dashboard-active-status-en.png": {
     "width": 400,
@@ -5831,6 +5919,18 @@
     "width": 1200,
     "height": 726
   },
+  "dotnet-wcf-example-pic-en.png": {
+    "width": 800,
+    "height": 406
+  },
+  "dotnet-wcf-example-pic-ja.png": {
+    "width": 800,
+    "height": 406
+  },
+  "dotnet-wcf-example-pic.png": {
+    "width": 800,
+    "height": 406
+  },
   "ec2-instances-modify-iam-role.png": {
     "width": 1200,
     "height": 551
@@ -7154,6 +7254,18 @@
   "k8s-agent2application.png": {
     "width": 1200,
     "height": 645
+  },
+  "k8s-analysis-msa-detail-en.png": {
+    "width": 1200,
+    "height": 761
+  },
+  "k8s-analysis-msa-detail-ja.png": {
+    "width": 1200,
+    "height": 761
+  },
+  "k8s-analysis-msa-detail.png": {
+    "width": 1200,
+    "height": 761
   },
   "k8s-analysis-tx-profile-cl-ip-en.png": {
     "width": 1200,
@@ -11371,6 +11483,10 @@
     "width": 527,
     "height": 228
   },
+  "k8s-container-map-log-category-sort-change.png": {
+    "width": 293,
+    "height": 126
+  },
   "k8s-metric-summary-01.png": {
     "width": 356,
     "height": 277
@@ -11415,9 +11531,17 @@
     "width": 1200,
     "height": 384
   },
+  "release-apm-dashboard-tx-map-custom.png": {
+    "width": 400,
+    "height": 368
+  },
   "release-apm-trace-add-serial-field.png": {
     "width": 1200,
     "height": 227
+  },
+  "release-container-list-column-change.png": {
+    "width": 400,
+    "height": 453
   },
   "release-db-object-details-db-size.png": {
     "width": 1200,
@@ -11455,6 +11579,10 @@
     "width": 826,
     "height": 122
   },
+  "release-node-details-container-table.png": {
+    "width": 1200,
+    "height": 270
+  },
   "release-note-tx-new-feature-en.png": {
     "width": 1232,
     "height": 406
@@ -11478,6 +11606,10 @@
   "release-npm-topology.png": {
     "width": 1730,
     "height": 824
+  },
+  "release-usage-subcribe-column.png": {
+    "width": 400,
+    "height": 177
   },
   "rl-report-time-set.png": {
     "width": 600,
@@ -12257,15 +12389,15 @@
   },
   "server-select-os-en.png": {
     "width": 1200,
-    "height": 915
+    "height": 767
   },
   "server-select-os-ja.png": {
     "width": 1200,
-    "height": 936
+    "height": 788
   },
   "server-select-os.png": {
     "width": 1200,
-    "height": 871
+    "height": 724
   },
   "server-server-event-en.png": {
     "width": 1192,
@@ -12749,15 +12881,15 @@
   },
   "share-trace-item-en.png": {
     "width": 1200,
-    "height": 255
+    "height": 246
   },
   "share-trace-item-ja.png": {
     "width": 1200,
-    "height": 255
+    "height": 244
   },
   "share-trace-item.png": {
     "width": 1200,
-    "height": 255
+    "height": 247
   },
   "software-proxy.png": {
     "width": 1408,
@@ -13378,6 +13510,18 @@
   "main-ui-project-card.png": {
     "width": 416,
     "height": 381
+  },
+  "main-ui-realtime-notification-en.png": {
+    "width": 400,
+    "height": 204
+  },
+  "main-ui-realtime-notification-ja.png": {
+    "width": 400,
+    "height": 204
+  },
+  "main-ui-realtime-notification.png": {
+    "width": 400,
+    "height": 198
   },
   "main-ui-search-by-group-en.png": {
     "width": 1200,
