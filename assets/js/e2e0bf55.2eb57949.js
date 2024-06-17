@@ -85,6 +85,19 @@ const assets = {
 };
 
 /*Pending 상태의 Pod가 많을 수록 클러스터의 효율성과 안정성이 저하될 수 있습니다. 미해결된 Pending Pod는 클러스터의 자원을 효율성을 저하시키며 애플리케이션의 가용성과 영향을 줄 수 있습니다. 클러스터에서 어떤 Pod가 왜 스케줄되지 못하고 있는지를 확인할 수 있습니다.  ***그룹화***를 통해 어떤 오브젝트를 중심으로 Pending 상태가 발생하고 있는지 파악할 수 있습니다. 이벤트 메시지==스케줄링 실패 원인?*/
+/*:::note
+
+**QoS Class 우선 순위**
+
+QoS Class(Quality of Service Class)는 Pod 스케줄링을 결정하는데 사용되는 속성 중 하나로 Pod의 리소스 요청 및 사용에 따라 동적으로 조정될 수 있습니다. 클러스터 자원의 효율적인 관리 및 Pod 간의 공정한 분배에 중요한 속성입니다. 예를 들어 우선 순위가 높은 QoS Class가 할당된 Pod가 Pending 상태일 경우 빠른 문제 분석 및 원인 파악이 필요합니다. <code class='pay'>Burstable</code> Pod의 우선 순위는 <code class='bef'>BestEffort</code> Pod보다 높고 <code class='grnt'>Guaranteed</code> Pod보다 낮습니다.
+
+* <code class='bef'>BestEffort</code>: 리소스 요청이나 제한이 없는 Pod입니다.
+
+* <code class='pay'>Burstable</code>: 제한된 리소스 요청이 있는 Pod입니다.
+
+* <code class='grnt'>Guaranteed</code>: 정확한 리소스 요청이 있는 Pod입니다.
+
+:::*/
 /*이벤트 메시지를 기반으로 현재 Pod가 Pending 상태에 놓인 원인과 문제 해결을 위한 다양한 정보를 다음과 같이 제공합니다.*/
 
 
@@ -186,44 +199,13 @@ function _createMdxContent(props) {
         desc: "Pending Pod 그룹화와 QoS Class 조회"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "QoS Class 우선 순위"
-          })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["QoS Class(Quality of Service Class)는 Pod 스케줄링을 결정하는데 사용되는 속성 중 하나로 Pod의 리소스 요청 및 사용에 따라 동적으로 조정될 수 있습니다. 클러스터 자원의 효율적인 관리 및 Pod 간의 공정한 분배에 중요한 속성입니다. 예를 들어 우선 순위가 높은 QoS Class가 할당된 Pod가 Pending 상태일 경우 빠른 문제 분석 및 원인 파악이 필요합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            class: "pay",
-            children: "Burstable"
-          }), " Pod의 우선 순위는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            class: "bef",
-            children: "BestEffort"
-          }), " Pod보다 높고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            class: "grnt",
-            children: "Guaranteed"
-          }), " Pod보다 낮습니다."]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                class: "bef",
-                children: "BestEffort"
-              }), ": 리소스 요청이나 제한이 없는 Pod입니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                class: "pay",
-                children: "Burstable"
-              }), ": 제한된 리소스 요청이 있는 Pod입니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                class: "grnt",
-                children: "Guaranteed"
-              }), ": 정확한 리소스 요청이 있는 Pod입니다."]
-            }), "\n"]
-          }), "\n"]
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "QoS Class"
+          }), "(Quality of Service Class)에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/",
+            children: "다음 문서"
+          }), "를 참조하세요."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
