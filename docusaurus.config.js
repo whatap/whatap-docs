@@ -194,7 +194,7 @@ const config = {
       },
       announcementBar: {
         id: 'moniday-banner',
-        content: '<div id="moniday-banner">This is unreleased documentation for WhaTap Docs. Official documentation is <a href="https://docs.whatap.io" target="_blank">https://docs.whatap.io</a></div>',
+        content: '<div id="moniday-banner">This document pertains to <a href="https://preview.whatap.io" target="_blank">preview.whatap.io</a> and includes content not yet released as a service version.<br/>For documentation on officially released features, please visit: <a href="https://docs.whatap.io" target="_blank">https://docs.whatap.io</a>.</div>',
         backgroundColor: 'none',
         textColor: '#ffffff',
         isCloseable: false,
