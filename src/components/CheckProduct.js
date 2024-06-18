@@ -80,6 +80,8 @@ export default function CheckProduct() {
         product = '-browser';
     } else if (cProdt === 'npm') {
         product = '-npm';
+    }else if (cProdt === 'feature') {
+        product = '-feature';
     } else {
         product = '';
     }

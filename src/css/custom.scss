@@ -394,6 +394,17 @@ html[lang='ja-JP'] {
 .menu__list-item.newfunc > a {
   display: inline-block;
 }
+// 베타 필요??
+// .menu__list-item.beta > a::after {
+//   display: inline;
+//   content: 'Beta';
+//   position: absolute;
+//   font-style: italic;
+//   font-weight: bold;
+// }
+// .menu__list-item.beta > a {
+//   display: inline-block;
+// }
 .menu__list-item.newfunc > a::after {
   display: inline;
   content: 'New';
@@ -1567,6 +1578,12 @@ main {
       border: none;
       padding: 0 5px 0 5px;
     }
+    code.Features {
+      background-color: #fde3f9;
+      color: #fc41e0;
+      border: none;
+      padding: 0 5px 0 5px;
+    }
     code.Change, code.Changed {
       background-color: #fdf3e7;
       color: #ff8200;
@@ -2010,6 +2027,21 @@ main {
           border: none;
           margin-top: 10px;
         }
+      }
+    }
+    // 피처 프로젝트
+    div[class*="flex-container-s features"] {
+      width: 100%;
+      margin-top: 22px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      div.int > code.Features {
+        background-color: #fde3f9;
+        color: #fc41e0;
+        border: none;
+        padding: 0 5px 0 5px;
       }
     }
     div.flex-container-s:has([class*='admonitionContent']) {
