@@ -3196,14 +3196,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_5_9',
+                id: 'release-notes/server/server-2_6_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_5_9',
+                  id: 'release-notes/server/server-2_6_0',
                   // className: 'new',
                 },
+                'release-notes/server/server-2_5_9',
                 'release-notes/server/server-2_5_8',
                 'release-notes/server/server-2_5_7',
                 'release-notes/server/server-2_5_5',
