@@ -63,7 +63,11 @@ const metadata = {
       "Feature"
     ]
   },
-  "sidebar": "featuremonitorSidebar"
+  "sidebar": "featuremonitorSidebar",
+  "previous": {
+    "title": "피쳐 프로젝트",
+    "permalink": "/whatap-docs/features/introduction"
+  }
 };
 const assets = {
 

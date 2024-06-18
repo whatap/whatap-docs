@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71842],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[94223],{
 
 /***/ 70123:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
