@@ -3725,7 +3725,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Feature Project',
-          href: 'features/kafka-introduction',
+          href: 'features/introduction',
         },
         {
           type: 'html',
@@ -4791,12 +4791,17 @@ const sidebars = {
       label: 'Feature 프로젝트',
       collapsible: false,
       collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'features/introduction'
-      // },
+      link: {
+        type: 'doc',
+        id: 'features/introduction',
+      },
       items: [
-        'features/kafka-introduction',
+        // 'features/kafka-introduction',
+        {
+          type: 'doc',
+          id: 'features/kafka-introduction',
+          // className: 'beta'
+        },
         // 'kafka/install-agent',
         // {
         //   type: 'category',
