@@ -93,537 +93,499 @@ function _createMdxContent(props) {
     admonition: "admonition",
     code: "code",
     li: "li",
-    ol: "ol",
     p: "p",
     strong: "strong",
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_step_normal_count"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Int"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1000"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "트랜잭션 트레이스의 최대 스텝 수를 지정합니다."
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_step_max_count"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Int"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1024"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "수집 가능한 트레이스 스텝의 최대 개수를 설정합니다. 수집된 트레이스 스텝 수가 이 값을 초과하면 이후 수집되는 스텝들은 모두 버려집니다."
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_step_heavy_count"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Int"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1000"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본 스텝의 수집 개수가 초과되면, 실행 시간이 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "profile_step_heavy_time"
-          }), "을 초과하는 스텝만 수집합니다. 해당 스텝의 수집 가능한 개수를 설정합니다. Default 설정일 경우 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "profile_step_normal_count"
-          }), "가 800 이면 최대 200개의 스텝이 수집됩니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_step_heavy_time"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Millisecond"
-          }), " "]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "100"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["Heavy 한 스텝의 기준을 지정합니다. 지정된 값보다 수행 시간이 긴 경우 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "profile_step_normal_count"
-          }), "를 초과하는 경우라도 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "profile_step_heavy_count"
-          }), " 이내에서 기록됩니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_basetime"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Millisecond"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "500"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "트랜잭션이 설정된 값 이하의 시간 내에 종료된 경우 트레이스 정보를 수집하지 않습니다. 단 5분 단위로 최초 호출된 URL, 에러가 발생한 트랜잭션에 대한 트레이스 정보는 수집됩니다."
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.query_string_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["트랜잭션 URL의 쿼리 스트링을 함께 수집하는 기능을 활성화합니다. ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.query_string_urls"
-          }), "에 등록된 URL만 적용됩니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.query_string_urls"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "String"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "트랜잭션에서 쿼리 스트링을 수집할 URL들을 등록합니다."
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.whatap.profile_compile_file_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.code, {
-            children: "compile_file"
-          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "compile_string"
-          }), " 함수의 추적 여부를 설정합니다. PHP 내부 함수인 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "compile_file"
-          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "compile_string"
-          }), " 함수는 스크립트 실행 전에 컴파일하는 함수로 Main, include, require 및 autoload 스크립트의 컴파일 시점 및 스크립트 파일 경로와 실행 시간을 확인할 수 있습니다."]
-        }), "\n"]
+  return (0,jsx_runtime.jsxs)(_components.ul, {
+    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_step_normal_count"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Int"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1000"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "트랜잭션 트레이스의 최대 스텝 수를 지정합니다."
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_step_max_count"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Int"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1024"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "수집 가능한 트레이스 스텝의 최대 개수를 설정합니다. 수집된 트레이스 스텝 수가 이 값을 초과하면 이후 수집되는 스텝들은 모두 버려집니다."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_step_heavy_count"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Int"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1000"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본 스텝의 수집 개수가 초과되면, 실행 시간이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "profile_step_heavy_time"
+        }), "을 초과하는 스텝만 수집합니다. 해당 스텝의 수집 가능한 개수를 설정합니다. Default 설정일 경우 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "profile_step_normal_count"
+        }), "가 800 이면 최대 200개의 스텝이 수집됩니다."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_step_heavy_time"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Millisecond"
+        }), " "]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "100"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["Heavy 한 스텝의 기준을 지정합니다. 지정된 값보다 수행 시간이 긴 경우 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "profile_step_normal_count"
+        }), "를 초과하는 경우라도 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "profile_step_heavy_count"
+        }), " 이내에서 기록됩니다."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_basetime"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Millisecond"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "500"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "트랜잭션이 설정된 값 이하의 시간 내에 종료된 경우 트레이스 정보를 수집하지 않습니다. 단 5분 단위로 최초 호출된 URL, 에러가 발생한 트랜잭션에 대한 트레이스 정보는 수집됩니다."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.query_string_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["트랜잭션 URL의 쿼리 스트링을 함께 수집하는 기능을 활성화합니다. ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.query_string_urls"
+        }), "에 등록된 URL만 적용됩니다."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.query_string_urls"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "String"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "트랜잭션에서 쿼리 스트링을 수집할 URL들을 등록합니다."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.whatap.profile_compile_file_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "compile_file"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "compile_string"
+        }), " 함수의 추적 여부를 설정합니다. PHP 내부 함수인 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "compile_file"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "compile_string"
+        }), " 함수는 스크립트 실행 전에 컴파일하는 함수로 Main, include, require 및 autoload 스크립트의 컴파일 시점 및 스크립트 파일 경로와 실행 시간을 확인할 수 있습니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_compile_file_basetime"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Millisecond"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "200"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "실행 시간의 기준을 설정합니다. 설정한 시간을 초과하여 실행되는 경우만 정보를 수집합니다."
+      }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "caution",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
             children: "whatap.profile_compile_file_basetime"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Millisecond"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "200"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "실행 시간의 기준을 설정합니다. 설정한 시간을 초과하여 실행되는 경우만 정보를 수집합니다."
-        }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-          type: "caution",
-          children: (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.code, {
-              children: "whatap.profile_compile_file_basetime"
-            }), "을 지나치게 작게 설정할 경우 과도한 수집으로 서버에 부하를 줄 수 있습니다."]
-          })
-        }), "\n"]
+          }), "을 지나치게 작게 설정할 경우 과도한 수집으로 서버에 부하를 줄 수 있습니다."]
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_method_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["실행 시간이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.profile_method_time"
+        }), " 설정값(기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1초"
+        }), ")을 초과하는 사용자 함수의 정보를 트랜잭션 상세 정보에서 확인할 수 있습니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_method_time"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Milliseconds"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1000"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.profile_method_enabled"
+        }), " 설정으로 수집되는 함수의 실행 시간을 설정합니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_method_stack_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "사용자 함수의 스택 정보를 트랜잭션 상세 정보에서 확인할 수 있습니다."
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_internal_method_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["PHP 내부 함수의 추적 여부를 설정합니다. ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.profile_internal_method_time"
+        }), " 설정값(기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1초"
+        }), ")보다 오래 걸리는 경우만 추적합니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "caution",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "이 옵션은 사용자 정의 함수가 아닌 PHP의 내장 함수를 모두 확인하므로 성능에 부하가 발생할 수 있습니다."
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_internal_method_time"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Milliseconds"
+        }), " "]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1000"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["PHP 내부 함수를 추적할 때(", (0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.profile_internal_method_enabled"
+        }), ") 함수의 실행 시간을 설정합니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_internal_method_param_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Milliseconds"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "1000"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["PHP 내부 함수를 추적할 때(", (0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.profile_internal_method_enabled"
+        }), ") 부가적으로 함수 파라미터 정보를 수집합니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.net_udp_flush_start"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        }), "이면 트랜잭션 시작 시점을 수집하지 않습니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "시작 시점을 수집하지 않아 진행 중인 트랜잭션 수를 계산하는 액티브 트랜잭션 정보에 조금 늦게 반영될 수 있습니다. 액티브 스테이터스는 정상적으로 표기됩니다."
+        })
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_method_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["실행 시간이 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.profile_method_time"
-          }), " 설정값(기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1초"
-          }), ")을 초과하는 사용자 함수의 정보를 트랜잭션 상세 정보에서 확인할 수 있습니다."]
-        }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.net_udp_profile_basetime_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "이면 설정된 응답시간보다 빠른 트랜잭션의 트레이스 정보를 수집하지 않습니다."]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_method_time"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Milliseconds"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1000"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.profile_method_enabled"
-          }), " 설정으로 수집되는 함수의 실행 시간을 설정합니다."]
-        }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.net_udp_profile_basetime"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Miliseconds"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "트레이스 정보 수집을 제외하는 트랜잭션의 응답시간을 설정합니다."
+      }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "트레이스 정보를 수집하지 않기 때문에 SQL, HTTPC 등의 통계에는 반영되지 않습니다."
+        })
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_method_stack_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "사용자 함수의 스택 정보를 트랜잭션 상세 정보에서 확인할 수 있습니다."
-        }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.net_udp_trace_ignoretime_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "이면 설정된 응답시간이 소요되는 트랜잭션 및 트레이스 정보를 수집하지 않습니다."]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_internal_method_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["PHP 내부 함수의 추적 여부를 설정합니다. ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.profile_internal_method_time"
-          }), " 설정값(기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1초"
-          }), ")보다 오래 걸리는 경우만 추적합니다."]
-        }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.net_udp_trace_ignoretime"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Miliseconds"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "30"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "트랜잭션 및 트레이스 정보 수집을 제외하는 트랜잭션의 응답시간을 설정합니다."
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_internal_method_time"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Milliseconds"
-          }), " "]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1000"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["PHP 내부 함수를 추적할 때(", (0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.profile_internal_method_enabled"
-          }), ") 함수의 실행 시간을 설정합니다."]
-        }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.shm_tx_counter_enable"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "이면 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "whatap.net_udp_trace_ignoretime_enabled"
+        }), " 설정으로 트랜잭션의 정보 수집이 제외되는 경우 TPS, 평균 응답시간, Apdex 지표를 공유 메모리에서 수집하면 제외된 트랜잭션의 정보가 통계에 반영됩니다."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,jsx_runtime.jsx)(_components.p, {
+          children: "수집이 안 된 트랜잭션의 경우 TPS, 평균 응답시간, Apdex 지표에는 정상적으로 반영되지만, 그 외 통계 데이터에는 반영되지 않습니다."
+        })
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_internal_method_param_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Milliseconds"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "1000"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["PHP 내부 함수를 추적할 때(", (0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.profile_internal_method_enabled"
-          }), ") 부가적으로 함수 파라미터 정보를 수집합니다."]
-        }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.split_profile_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "일정량의 프로파일을 가상 트랜잭션으로 분리해 더 많은 프로파일 정보를 수집합니다. 여러 개의 트랜잭션 목록으로 분할 표기됩니다."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: "동시에 설정된 경우 우선 순위는 다음과 같습니다."
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "1. split"
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "2. large"
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "3. circular"
+        })]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_php_restart_apply/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.net_udp_flush_start"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          }), "이면 트랜잭션 시작 시점을 수집하지 않습니다."]
-        }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,jsx_runtime.jsx)(_components.p, {
-            children: "시작 시점을 수집하지 않아 진행 중인 트랜잭션 수를 계산하는 액티브 트랜잭션 정보에 조금 늦게 반영될 수 있습니다. 액티브 스테이터스는 정상적으로 표기됩니다."
-          })
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.net_udp_profile_basetime_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          }), "이면 설정된 응답시간보다 빠른 트랜잭션의 트레이스 정보를 수집하지 않습니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.net_udp_profile_basetime"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Miliseconds"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "트레이스 정보 수집을 제외하는 트랜잭션의 응답시간을 설정합니다."
-        }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,jsx_runtime.jsx)(_components.p, {
-            children: "트레이스 정보를 수집하지 않기 때문에 SQL, HTTPC 등의 통계에는 반영되지 않습니다."
-          })
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.net_udp_trace_ignoretime_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          }), "이면 설정된 응답시간이 소요되는 트랜잭션 및 트레이스 정보를 수집하지 않습니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.net_udp_trace_ignoretime"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Miliseconds"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "30"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "트랜잭션 및 트레이스 정보 수집을 제외하는 트랜잭션의 응답시간을 설정합니다."
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.shm_tx_counter_enable"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          }), "이면 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "whatap.net_udp_trace_ignoretime_enabled"
-          }), " 설정으로 트랜잭션의 정보 수집이 제외되는 경우 TPS, 평균 응답시간, Apdex 지표를 공유 메모리에서 수집하면 제외된 트랜잭션의 정보가 통계에 반영됩니다."]
-        }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,jsx_runtime.jsx)(_components.p, {
-            children: "수집이 안 된 트랜잭션의 경우 TPS, 평균 응답시간, Apdex 지표에는 정상적으로 반영되지만, 그 외 통계 데이터에는 반영되지 않습니다."
-          })
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.split_profile_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "일정량의 프로파일을 가상 트랜잭션으로 분리해 더 많은 프로파일 정보를 수집합니다. 여러 개의 트랜잭션 목록으로 분할 표기됩니다."
-        }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
-          type: "note",
-          children: [(0,jsx_runtime.jsx)(_components.p, {
-            children: "동시에 설정된 경우 우선 순위는 다음과 같습니다."
-          }), (0,jsx_runtime.jsxs)(_components.ol, {
-            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "split"
-              }), "\n"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "large"
-              }), "\n"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "circular"
-              }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.large_profile_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "일정량의 프로파일을 압축 및 분할 전송해 메모리 증가 없이 더 많은 프로파일 정보를 수집할 수 있습니다."
+      }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["약 만 건 이하의 프로파일(스탭) 정보를 수집할 수 있습니다. 더 많은 양은 ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "whatap.split_profile_enabled"
+              }), " 옵션 사용을 권장합니다."]
             }), "\n"]
-          })]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.large_profile_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "일정량의 프로파일을 압축 및 분할 전송해 메모리 증가 없이 더 많은 프로파일 정보를 수집할 수 있습니다."
-        }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,jsx_runtime.jsxs)(_components.ul, {
-            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-                children: ["약 만 건 이하의 프로파일(스탭) 정보를 수집할 수 있습니다. 더 많은 양은 ", (0,jsx_runtime.jsx)(_components.code, {
-                  children: "whatap.split_profile_enabled"
-                }), " 옵션 사용을 권장합니다."]
-              }), "\n"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "동시에 설정된 경우 우선 순위는 다음과 같습니다."
-              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
-                children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-                  children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                    children: "split"
-                  }), "\n"]
-                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-                  children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                    children: "large"
-                  }), "\n"]
-                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-                  children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                    children: "circular"
-                  }), "\n"]
-                }), "\n"]
-              }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "동시에 설정된 경우 우선 순위는 다음과 같습니다."
+            }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "1. split"
+            }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "2. large"
+            }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "3. circular"
             }), "\n"]
-          })
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.circular_profile_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "false"
-          })]
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "마지막 1024개의 프로파일링 정보를 수집합니다."
-        }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
-          type: "note",
-          children: [(0,jsx_runtime.jsx)(_components.p, {
-            children: "동시에 설정된 경우 우선 순위는 다음과 같습니다."
-          }), (0,jsx_runtime.jsxs)(_components.ol, {
-            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "split"
-              }), "\n"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "large"
-              }), "\n"]
-            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-              children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-                children: "circular"
-              }), "\n"]
-            }), "\n"]
-          })]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "whatap.profile_zip_enabled"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "type",
-            children: "Boolean"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["프로파일 정보를 압축 전송합니다. 기본값은 ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "true"
-          }), "로 설정되어 있습니다."]
-        }), "\n"]
+          }), "\n"]
+        })
       }), "\n"]
-    })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.circular_profile_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "마지막 1024개의 프로파일링 정보를 수집합니다."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: "동시에 설정된 경우 우선 순위는 다음과 같습니다."
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "1. split"
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "2. large"
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "3. circular"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "whatap.profile_zip_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["프로파일 정보를 압축 전송합니다. 기본값은 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "로 설정되어 있습니다."]
+      }), "\n"]
+    }), "\n"]
   });
 }
 function MDXContent(props = {}) {
