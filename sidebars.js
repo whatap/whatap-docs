@@ -3202,7 +3202,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_6_0',
-                  // className: 'new',
+                  className: 'new',
                 },
                 'release-notes/server/server-2_5_9',
                 'release-notes/server/server-2_5_8',
