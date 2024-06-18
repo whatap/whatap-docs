@@ -40,6 +40,16 @@ When you select an item in the transaction list, the <Cmdname sid="active_transa
 
   - <Cmdname sid="stop_thread" className="uitext" />: You can stop a transaction in progress. To stop threading, <Cmdname sid="secret_key" className="uitext" /> is required. For more information about <Cmdname sid="secret_key" className="uitext" />, see <Link to="install-agent#security">the following</Link>.
 
+  :::tip
+
+  <Cmdname sid="stop_thread" className="uitext" /> forcibly stops threads running in the application. However, this feature may not work in all cases. For example, if a thread performs an IO operation, the thread cannot be stopped immediately.
+
+  <Cmdname sid="stop_thread" className="uitext" /> attempts to terminate the thread even if it is performing an IO operation. However, the thread does not stop until it finishes its IO operation. The thread accepts the termination request, but it does not stop until its operation is completed and it goes to the next work.
+
+  In this case, forcible termination is not recommended because it may cause problems with business logic and cause unexpected operations. If you need to stop the thread, stop and restart the entire application.
+
+  :::
+
 - If a transaction has already ended, the <Cmdname sid="show_trace" className="uitext" /> button appears. When you select the button, the <Cmdname sid="TTL06527" className="uitext" /> window appears. For more information about <Cmdname sid="TTL06527" className="uitext" />, see [the following](trs-profile#transaction-info).
 
 </InDoc>

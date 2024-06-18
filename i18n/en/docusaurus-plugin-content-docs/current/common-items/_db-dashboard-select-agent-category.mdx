@@ -1,4 +1,4 @@
-### Monitoring each classified agents
+### Monitoring each classified agents {#select-agent-category}
 
 <ImgLang img='db-dashboard-select-agent-by-category.png' desc='Select agent by category' />
 
@@ -7,3 +7,13 @@ You can select and monitor agents by each group classified through agent setting
 - <Cmdname sid="ITM06005" className="uitext" />: You can select an individual agent or all agents.
 
 - <Cmdname sid="ITM07760" className="uitext" />: In case of the database that consists of multiple clusters, agents can be monitored by cluster.
+
+:::note
+
+To use <Cmdname sid="ITM07760" className="uitext" />, configure the following options for the DBX agent (*whatap.conf*). For more information, see [the following](agent-dbx-settings#cluster-set).
+
+```ini title="whatap.conf"
+cluster_name={cluster_name}
+```
+
+:::

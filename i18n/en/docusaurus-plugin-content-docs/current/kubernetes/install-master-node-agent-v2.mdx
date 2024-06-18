@@ -1,0 +1,285 @@
+---
+id: install-master-node-agent-v2
+title: Installation of the master and node agents
+description: Follow the installation guide to install the master and node agents.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Agent
+  - Master
+  - Node
+  - Agent Installation
+toc_max_heading_level: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+The following guides you to the master and node agent installation procedure as follows: This procedure is the same as in **Install guide**.
+
+:::note 
+
+EKS Fargate is to be supported later. 
+
+:::
+
+## Selecting an installation method
+
+Check the access key and then select the **_Choose installation method_** tab on the **_Setup guide_** screen. Select a desired installation method out of the **Helm** chart and **Yaml** installation methods supported by the WhaTap Kubernetes agent, and then select an appropriate item according to your Kubernetes environment. 
+
+<ImgLang img='k8s-install-master-node-method.png' desc='Select installation method'/>
+
+1. Select a desired **installation method** out of **_Helm_** chart and **_Yaml_**. 
+
+2. Select an applicable **Kubernetes version**: **_1.16 or later_** or **_less than 1.16_**. 
+
+3. Select **Container runtime** from **_containerd_**, **_Docker Engine_**, and **_CRI-O_**. 
+
+4. Select a **User Kubernetes environment** (GKE, OpenShift, Istio, GPU Cluster), if applicable.
+
+5. After selecting an installation method, click **_Next_** at the lower right of the screen or select the **_Apply additional features_** tab on the left to move to the next step.
+
+## Apply additional features
+
+WhaTap Kubernetes Monitoring currently provides **Control plane monitoring** as an additional feature. To apply additional features, select the **_Control Plane_** check box. 
+
+<ImgLang img='k8s-install-master-node-addition.png' desc='Select additional feature'/>
+
+The more additional features are applied, the greater the amount of data collected and the resources used by the agent may increase. After installation, you can enable or disable the feature through the agent configuration. 
+
+After selecting whether or not to apply additional features, click **_Next_** at the lower right of the screen, or select the **_Download installation file_** tab on the left to move to the next step. 
+
+:::note 
+
+For more information about the **control plain monitoring**, see [the following](https://docs.whatap.io/kubernetes/kube-apiserver-dashboard). 
+
+:::
+
+## Downloading the installation file
+
+Before downloading the installation file, make sure that the appropriate items for the Kubernetes environment are selected. After confirming your selection, click **_Download installation file_** to download the default configuration file (_values.yaml_) required for installation. 
+
+<ImgLang img='k8s-install-master-node-download.png' desc='Download install file'/>
+
+After downloading, click **_Next_** at the lower right of the screen or select the **_Enter execution command_** tab to move to the next step. 
+
+## Enter execution command
+
+In the **_Choose installation method_** tab, proceed with the installation by entering the execution command according to the selected environment and installation instructions.
+
+<ImgLang img='k8s-install-master-node-command.png' desc='Enter execution command'/>
+
+### Kubernetes environment
+
+If you select the **GKE** or **OpenShift** environment in the **_Choose installation method_** tab, see the following instructions. If not applicable, skip to the next step [Create Kubernetes agent](#create-kubernetes-agent).
+
+<Tabs>
+
+<TabItem value='gke' label='GKE Environment'>
+
+If you select the **Google Kubernetes Engine** (**GKE**) environment in the **_Choose installation method_** tab, execute the following command to set the roles after creating the user cluster.
+
+```bash
+ACCOUNT=$(gcloud info --format='value(config.account)')
+kubectl create clusterrolebinding owner-cluster-admin-binding \
+  --clusterrole cluster-admin \
+  --user $ACCOUNT
+```
+
+:::note
+
+For more information about installation with the gcloud commands, see [Google Cloud Document](https://cloud.google.com/sdk/docs/install)
+
+:::
+
+</TabItem>
+
+<TabItem value='openshift' label='OpenShift Environment'>
+
+If you select the **OpenShift** environment in the **_Choose installation method_** tab, execute the following command to set the roles.
+
+```bash
+oc create -f whatap_openshift_scc.yaml
+```
+
+</TabItem>
+
+</Tabs>
+
+### Creating the Kubernetes agent {#create-kubernetes-agent}
+
+When installing the WhaTap Kubernetes agent, we provide installation instructions based on the **Helm** chart and **Yaml** file default installation instructions as follows. 
+
+<Tabs>
+
+<TabItem value='helm' label='Helm Chart' default>
+
+#### Installing the Helm chart default
+
+If you select the **_Helm_** chart installation method in the **_Choose installation method_** tab, see the following instructions. 
+
+1. Check the _helm_ version by using the following command. It supports the version of 3.x or later. 
+
+   ```bash
+   helm Version
+
+   # Output example
+   # version.BuildInfo{Version:"v3.x", GitCommit:"xxx", GitTreeState:"clean", GoVersion:"go1.20.8"}
+   ```
+
+2. Check the network connectivity to the WhaTap Helm repository. 
+
+   ```bash
+   curl https://whatap.github.io/helm/ping 
+   # Output example 
+   # pong
+   ```
+
+3. Execute the following command to add the WhaTap Helm repository.
+
+   ```bash
+   helm repo add whatap https://whatap.github.io/helm/
+   helm repo update
+   ```
+
+4. Install the agent application as follows. 
+
+   - For users who install the agent for the **first time**, run the following command to install the agent application. 
+
+     ```bash
+     helm install whatap-kube-agent whatap/kube -f values.yaml
+     ```
+
+   - In case of **existing** WhaTap Kubernetes agent users, run the following command to install the agent application. 
+
+     ```bash
+     kubectl delete ns whatap-monitoring
+     kubectl delete clusterrole whatap
+     kubectl delete clusterrolebinding whatap
+     helm install whatap-kube-agent whatap/kube -f values.yaml
+     ```
+
+   :::note 
+
+   If you have installed the WhaTap Kubernetes agent by using the existing _yaml_ file, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible using the _helm_ chart. 
+
+   :::
+
+#### Major configuration items for _values.yaml_
+
+To modify the WhaTap Kubernetes agent settings, modify the default configuration file (_ values.yaml_). The major settings in the _values.yaml_ file are as follows: 
+
+<div class='k8s-values-yaml-table'>
+
+| Key                                                                  | Type    | Default                  | Description                                                                          |
+| -------------------------------------------------------------------- | ------- | ------------------------ | ------------------------------------------------------------------------------------ |
+| `whatap.license`                                                     | String  | `# <license-key>`        | Whatap license key                                                                   |
+| `whatap.host`                                                        | String  | `# <whatap-server-host>` | Host address of the Whatap server                                                    |
+| `whatap.port`                                                        | Int     | `# <whatap-server-port>` | Whatap port number                                                                   |
+| `containerRuntime`                                                   | String  | `"docker"`               | Container runtime in use Select any of `"docker"`, `"containerd"`, and `"crio"`.     |
+| `daemonSet.name`                                                     | String  | `whatap-node-agent`      | Name of DaemonSet                                                                    |
+| `daemonSet.label`                                                    | String  | `whatap-node-agent`      | Label to assign to DaemonSet                                                         |
+| `daemonSet.initContainers.nodeDebugger.enabled`                      | Bool    | `true`                   | Whether to enable the Whatap node debugger container                                 |
+| `daemonSet.containers.nodeHelper.image`                              | String  | `whatap/kube_mon`        | Image of the nodeHelper container                                                    |
+| `daemonSet.containers.nodeHelper.requests.memory`                    | String  | `100Mi`                  | nodeHelper MEMORY request                                                            |
+| `daemonSet.containers.nodeHelper.requests.cpu`                       | String  | `100m`                   | nodeHelper CPU request                                                               |
+| `daemonSet.containers.nodeHelper.limits.memory`                      | String  | `350Mi`                  | nodeHelper MEMORY limit                                                              |
+| `daemonSet.containers.nodeHelper.limits.cpu`                         | String  | `200m`                   | nodeHelper CPU limit                                                                 |
+| `daemonSet.containers.nodeAgent.image`                               | String  | `whatap/kube_mon`        | Image of the nodeAgent container                                                     |
+| `daemonSet.containers.nodeAgent.requests.memory`                     | String  | `300Mi`                  | nodeAgent MEMORY request                                                             |
+| `daemonSet.containers.nodeAgent.requests.cpu`                        | String  | `100m`                   | nodeAgent CPU request                                                                |
+| `daemonSet.containers.nodeAgent.limits.memory`                       | String  | `350Mi`                  | nodeAgent MEMORY limit                                                               |
+| `daemonSet.containers.nodeAgent.limits.cpu`                          | String  | `200m`                   | nodeAgent CPU limit                                                                  |
+| `deployment.name`                                                    | String  | `whatap-master-agent`    | Name of Deployment                                                                   |
+| `deployment.label`                                                   | String  | `whatap-master-agent`    | Label to assign to Deployment                                                        |
+| `deployment.replicas`                                                | Int     | `1`                      | Number of replicas in Deployment                                                     |
+| `deployment.containers.controlPlaneHelper.enabled`                   | Boolean | `true`                   | Whether to enable the whatap-control-plane-helper container                          |
+| `deployment.containers.controlPlaneHelper.image`                     | String  | `"whatap/kube_mon"`      | Image of the controlPlaneHelper container                                            |
+| `deployment.containers.controlPlaneHelper.port`                      | String  | `9496`                   | Port number of the controlPlaneHelper container.                                     |
+| `deployment.containers.controlPlaneHelper.resources.requests.memory` | String  | `"300Mi"`                | MEMORY request of the controlPlaneHelper container.                                  |
+| `deployment.containers.controlPlaneHelper.resources.requests.cpu`    | String  | `"100m"`                 | CPU request of the controlPlaneHelper container                                      |
+| `deployment.containers.controlPlaneHelper.resources.limits.memory`   | String  | `"350Mi"`                | MEMORY limit of the controlPlaneHelper container.                                    |
+| `deployment.containers.controlPlaneHelper.resources.limits.cpu`      | String  | `"200m"`                 | CPU limit of the controlPlaneHelper container.                                       |
+| `deployment.containers.masterAgent.name`                             | String  | `whatap-master-agent`    | Name of the masterAgent container.                                                   |
+| `deployment.containers.masterAgent.image`                            | String  | `"whatap/kube_mon"`      | Image of the masterAgent container                                                   |
+| `deployment.containers.masterAgent.port`                             | Int     | `6600`                   | Port number of the masterAgent container.                                            |
+| `deployment.containers.masterAgent.resources.requests.memory`        | String  | `"300Mi"`                | MEMORY request of the masterAgent container                                          |
+| `deployment.containers.masterAgent.resources.requests.cpu`           | String  | `"100m"`                 | CPU request of the masterAgent container                                             |
+| `deployment.containers.masterAgent.resources.limits.memory`          | String  | `"350Mi"`                | MEMORY limit of the masterAgent container                                            |
+| `deployment.containers.masterAgent.resources.limits.cpu`             | String  | `"200m"`                 | CPU request of the masterAgent container                                             |
+
+</div>
+
+:::note 
+
+For the guide to **Installation troubleshooting** based on the Helm chart, see [the following](agent-troubleshooting#troubleshooting-helm-chart).
+
+:::
+
+</TabItem>
+
+<TabItem value='yaml' label='Yaml' default>
+
+#### Yaml file-based installation
+
+If you select the **_Yaml_** file installation method in the **_Choose installation method_** tab, execute the following command to create the agent. 
+
+```bash
+kubectl apply -f whatap_kube_agent.yaml
+```
+
+:::note
+
+The **amount of resources used by the Master Agent** is somewhat **proportional** to the **number of nodes in your environment**. In other words, if there are a large number of nodes in the cluster, OOM (Out Of Memory) may occur when resources exceed the default memory limit (350 MB). The memory limit allocated to the master agent can be changed through the agent installed _YAML_ file.
+
+:::
+
+</TabItem>
+
+</Tabs>
+
+## Checking the agent installation {#check-kubernetes-agent}
+
+If the Kubernetes agent installation has been completed, you can check the status of the master agent and node agent by executing the following command:
+
+```bash
+kubectl get pod -n whatap-monitoring
+```
+
+#### In case the status is Running
+
+If **STATUS** is in **Running**, it indicates the installation has been finished as follows. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in **_Project List_** and **_Dashboard_** > **_Container Map_**. 
+
+![](/img/k8s-check-running-agent-monitoring.svg)
+
+#### In case the status is not Running
+
+If the **STATUS** is not **Running**, it indicates that the installation has not been completed successfully as follows. 
+
+![](/img/k8s-not-running-agent-monitoring.svg)
+
+1. Execute the following command on the master node to determine the cause of the Pod creation failure. 
+
+   ```bash
+   kubectl describe pod {POD_NAME} -n whatap-monitoring
+   ```
+
+2. Check the **Events:** item at the bottom of the execution result.
+
+   ![](/img/k8s-check-install-fail.svg)
+
+:::tip
+
+When using the `kubectl` command, the `-n {namespace}` option performs the task for specific namespaces. Because the WhaTap agent is installed in the namespace named `whatap-monitoring` by default, add the `-n whatap-monitoring` option.
+
+:::
+
+:::note
+
+- When you select the **_Monitoring start guide_** button at the lower right of the screen, you can see the instructions for main menus of the Whatap Kubernetes monitoring. If you click the button at the bottom of each main menu guide, the corresponding menu appears. 
+
+- To proceed with the application agent installation, select **_Install additional monitoring_** at the lower right of the screen. For more information, see [the following](install-application-agent).
+
+- To update the agent to the latest version, see [the following](agent-update).
+
+:::

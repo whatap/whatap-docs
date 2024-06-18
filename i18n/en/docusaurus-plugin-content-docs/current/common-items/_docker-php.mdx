@@ -112,7 +112,7 @@ metadata:
   labels: # Pod Labels
 spec:
   containers:
-	  env:
+    env:
     - name: NODE_IP
       valueFrom: {fieldRef: {fieldPath: status.hostIP}}
     - name: NODE_NAME

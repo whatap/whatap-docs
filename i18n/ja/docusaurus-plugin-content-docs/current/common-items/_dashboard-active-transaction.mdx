@@ -40,6 +40,16 @@
 
   - <Cmdname sid="stop_thread" className="uitext" />：進行中のトランザクションを停止できます。スレッド中止のためには、<Cmdname sid="secret_key" className="uitext" />が必要です。<Cmdname sid="secret_key" className="uitext" />についての詳細は、<Link to="install-agent#security">次の文書</Link>を参考にしてください。
 
+  :::tip
+
+  <Cmdname sid="stop_thread" className="uitext" />機能は、アプリケーションで実行されているスレッドを強制的に終了する機能です。ただし、この機能はすべての場合に動作しない場合があります。例えば、スレッドがIOタスクを実行している場合、スレッドをすぐに中止することはできません。
+
+  <Cmdname sid="stop_thread" className="uitext" />機能を使用すると、スレッドがIOタスクを実行中であっても終了を試みます。しかし、スレッドがIO作業を完了するまでは中止されません。つまり、スレッドは中止要求を受け入れますが、作業が完了して次の作業に移るまで中止されません。
+
+  これにより、スレッドを強制的に終了させることは、ビジネスロジックに問題が発生する可能性があり、予期しない動作を引き起こす可能性があるため、お勧めしません。それでもスレッドを中止する必要がある場合は、アプリケーション全体を中止してから再起動する必要があります。
+
+  :::
+
 - すでに終了したトランザクションであれば<Cmdname sid="show_trace" className="uitext" />ボタンが表示されます。ボタンをタップすると<Cmdname sid="TTL06527" className="uitext" />ウィンドウが表示されます。<Cmdname sid="TTL06527" className="uitext" />詳細については、[次の文書](trs-profile#transaction-info)を参考にしてください。
 
 </InDoc>

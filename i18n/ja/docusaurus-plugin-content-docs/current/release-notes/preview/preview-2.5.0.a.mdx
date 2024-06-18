@@ -16,11 +16,35 @@ toc_max_heading_level: 2
 
 ## Preview 2.5.0.a7
 
-2024年05月13日
+2024年05月14日
 
 <div class='indentTab'>
 
+### `共通`
+
+#### プロジェクト
+
+- <Status>Changed</Status>商品選択およびプロジェクト作成関連のUI/UXを改善
+
+- <Status>Changed</Status> <Cmdname sid="side_agentInstall" className="uitext" />メニューへの流入経路によって、画面上段に露出するステップバーの露出有無を異なるように適用
+
+#### <Cmdname sid="side_flexboard" /> / <Cmdname sid="side_integratedFlexboard" />
+
+- <Status>Feature</Status>ウィジェットに関する説明の添付機能を追加
+
+- <Status>Changed</Status>リーチテキストのウィジェットで<b>Heading</b>スタイルの余白を削除し、テキストの分量に応じてスクロールが自動的に表示されるように変更
+
+- <Status>Fixed</Status>補助チャートの設定修正後、<Cmdname sid="BTN07938" className="uitext" />機能を利用すると<Cmdname sid="data_merge" className="uitext" />オプションが適用されない問題を修正
+
+#### User Interface
+
+<Status>Changed</Status>ダークテーマの一部のカラーを変更
+
+---
+
 ### `Application`
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューの<Cmdname sid="today_tps" className="uitext" />, <Cmdname sid="today_user" className="uitext" />ウィジェットは1日以内にデータを再照会する際、新しいデータを要請せず、すでに照会したデータを再加工して使用するように修正
 
 - <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />メニューでマップの上段エリアドラッグ時にデータが照会されない問題を修正
 
@@ -28,9 +52,81 @@ toc_max_heading_level: 2
 
 ---
 
+### `Server`
+
+<Status>Changed</Status> <Cmdname sid="side_agentInstall" className="uitext" />段階に入る前に、OS選択の段階を追加
+
+---
+
+### `Kubernetes`
+
+- <Status>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューのKubernetesエージェントのインストール方法を改編
+
+  - ユーザーがインストールファイルを修正することなく、オプションを選択するだけで環境に適したファイルをダウンロードできます。
+
+  - <Cmdname sid="TTL07852" className="uitext" />オプションを追加します。
+
+  - インストールの最後の段階で、モニタリングの主要メニューを紹介します。
+
+- <Status>Feature</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_pendingPod" className="uitext" />メニューの詳細タブの改編
+
+  - イベントメッセージをもとに迅速な原因分析をサポートする<UI>Suggestions</UI>タブを追加
+
+  - Pod関連イベントを確認できる<UI>Event</UI>タブを追加
+
+  - コンテナログが確認できる<UI>Log</UI>タブを追加
+
+  :::note
+
+  この機能は、Kubernetesマスターエージェント1.7.0バージョン以降で対応しています。
+
+  :::
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューの<Cmdname sid="BTN07267" className="uitext" />でDocker Pythonのokind設定オプション名を<code>whatap.okind</code>に変更
+
+---
+
 ### `Database`
 
-<Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />メニューで<Cmdname sid="db_ip" className="uitext" />カラム内のツールチップが表示されない問題を修正
+#### 共通
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />メニューで<Cmdname sid="db_ip" className="uitext" />カラム内のツールチップが表示されない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでqueryテキストを選択すると現れる<Cmdname sid="TTL06224" className="uitext" />ウィンドウのクエリ文が<code>undefined</code>で表示される問題を修正
+
+#### PostgreSQL / MySQL / Oracle DMA
+
+<Status>New</Status>比較時間を設定し、その時間帯で最も多く実行されたSQLとそのSQLの騰落を確認できる<Cmdname sid="side_dbTopSqlComparison" className="uitext" />メニューを追加
+
+:::note
+
+この機能は、<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbTopSqlComparison" className="uitext" />メニューパスで確認できます。
+
+:::
+
+#### PostgreSQL / Oracle DMA
+
+- <Status>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />メニューのテーブルウィジェットでマウスオーバーすると、項目の全体名を確認できるツールチップを追加
+
+#### Oracle DMA
+
+- <Status>Feature</Status> <b>Applicatoin</b>商品で<b>Database</b>商品に連携する分析機能において、イベント値が<code>enq: TX - row lock contention</code>であれば、Lockメッセージを表記するように機能を追加
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで、<UI>SQL Elapse Map</UI>ウィジェットのチャート領域をドラッグすると現れる<UI>Query List</UI>テーブルに<UI>sid</UI>, <UI>serial#</UI>カラムを追加
+
+- <Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでテーブルのカラム順序を調整
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, <Cmdname sid="side_multiInstance" className="uitext" />メニューで<Cmdname sid="active_sessions" className="uitext" />テーブルの項目を選択するとポップアップされる<Cmdname sid="session_detail" className="uitext" />ウィンドウで表示される指標の変更および修正
+
+- <Status>Fixed</Status> <b>Applicatoin</b>商品から<b>Database</b>商品で連携分析する機能に、特定のキー値があれば、エラーメッセージで確認するようにキー値を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />メニューで<UI>Operation Count</UI>チャートの読み込みが、無限に続く問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでフィルター機能が正常に動作しない問題を修正
+
+#### Tibero
+
+<Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューで<UI>DB</UI>タブの項目を除外
 
 </div>
 
@@ -154,7 +250,13 @@ toc_max_heading_level: 2
 
 ### `Database`
 
+#### Oracel DMA
+
 <Status>New</Status> <b>Oracle DMA</b>サービスをオープンします。 ご利用いただき誠にありがとうございます! 該当サービスは<Link to='https://preview.whatap.io' target='_blank'>https://preview.whatap.io</Link>で利用できます。 詳細については、<Link to='https://whatap.github.io/whatap-docs/oracle-dma/monitoring-intro' target='_blank'>次の文書</Link>を参照してください。
+
+#### PostgreSQL、MySQL
+
+<Status>Fixed</Status> <Cmdname sid="TTL06224" className="uitext" />ウィンドウでオブジェクト名を選択すると、データが照会されない問題を修正
 
 </div>
 
@@ -224,7 +326,7 @@ toc_max_heading_level: 2
 
 - <Status>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />メニューで<Cmdname sid="order_by" className="uitext" />を<Cmdname sid="error" className="uitext" />に設定するとエラー順にソートしない問題を修正
 
-- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューのヒートマップウィジェットでエージェントフィルタリングによって発生したチャートに空き領域をドラッグするとデータが照会される問題を修正
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューのヒットマップウィジェットでエージェントフィルタリングによって発生したチャートに空き領域をドラッグするとデータが照会される問題を修正
 
 ---
 

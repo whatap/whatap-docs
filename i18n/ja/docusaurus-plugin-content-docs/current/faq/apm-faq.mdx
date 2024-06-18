@@ -1,0 +1,52 @@
+---
+id: apm-faq
+title: Application FAQs
+description: WhaTapアプリケーションモニタリングサービスのFAQです。
+tags:
+  - アプリケーション
+  - FAQ
+---
+
+WhaTapアプリケーションモニタリングサービスのユーザーからのよくある質問を確認してください。 
+
+---
+
+<div className='faqs'>
+
+### Springbootのアップデート後、一部のウィジェットの情報が表示されません。
+
+> Springbootのアップデート後、<Cmdname sid="AA005" className="uitext" />, <Cmdname sid="today_user" className="uitext" />, <Cmdname sid="today_tps" className="uitext" />ウィジェットの情報が<Cmdname sid="side_appDashboard" className="uitext" />メニューに表示されません。
+
+Springbootをアップデートした後に<Cmdname sid="side_appDashboard" className="uitext" />メニューに一部のウィジェットのデータが出力されない場合は、次の事項を確認してください。
+
+- **エージェント設定**
+
+  次のオプションを設定してから、アプリケーションを再起動してください。
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-3.0
+  ```
+
+- **Java17以降**を使う環境であれば、reflectionに関する次のオプションを追加してください。
+
+  ```java
+  --add-opens=java.base/java.lang=ALL-UNNAMED
+  ```
+
+:::note
+
+<Cmdname sid="today_user" className="uitext" />, <Cmdname sid="today_tps" className="uitext" />ウィジェットの指標は、1時間の統計データを活用してウィジェットにチャートとして表示します。 上記の設定を行った後、時間が経ってから統計データが作成されるため、データがすぐに表示されない場合があります。
+
+:::
+
+### スレッド中止ボタンが動作しません。
+
+> <Cmdname sid="stop_thread" className="uitext" />ボタンを押しても反応がないですが。 別の設定が必要なんですか？
+
+<Cmdname sid="stop_thread" className="uitext" />機能は、アプリケーションで実行されているスレッドを強制的に終了する機能です。 ただし、この機能はすべての場合に動作しない可能性があります。 例えば、スレッドがIOタスクを実行している場合、スレッドをすぐに中止することはできません。
+
+<Cmdname sid="stop_thread" className="uitext" />機能を使用すると、スレッドがIOタスクを実行中であっても終了を試みます。 しかし、スレッドがIOタスクを完了するまでは中止されません。 つまり、スレッドは中止要求を受け入れますが、作業が完了し、次の作業に移るまで中止されません。
+
+これにより、スレッドを強制的に終了させることは、ビジネスロジックに問題が発生する可能性があり、予期しない動作を引き起こす可能性があるため、お勧めしません。 それでもスレッドを中止する必要がある場合は、アプリケーション全体を中止してから再起動する必要があります。
+
+</div>

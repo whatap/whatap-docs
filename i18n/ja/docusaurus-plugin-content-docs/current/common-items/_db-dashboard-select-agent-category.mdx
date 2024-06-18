@@ -1,4 +1,4 @@
-### 分類別エージェントモニタリング
+### 分類別エージェントモニタリング {#select-agent-category}
 
 <ImgLang img='db-dashboard-select-agent-by-category.png' desc='分類別エージェントの選択' />
 
@@ -7,3 +7,13 @@
 - <Cmdname sid="ITM06005" className="uitext" />: 個別エージェントまたはすべてを選択できます。
 
 - <Cmdname sid="ITM07760" className="uitext" />：クラスターで構成されるデータベースの場合、クラスターごとにエージェントをモニタリングできます。
+
+:::note
+
+<Cmdname sid="ITM07760" className="uitext" />項目を利用するには、DBXエージェント(*whatap.conf*)の次のオプションを設定する必要があります。 詳細については、[次の文書](agent-dbx-settings#cluster-set)を参照してください。
+
+```ini title="whatap.conf"
+cluster_name={cluster_name}
+```
+
+:::

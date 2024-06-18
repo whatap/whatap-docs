@@ -313,15 +313,6 @@ jmx_pool_dsname_enabled=false
 jmx_pool_object="*:type=DataSource,class=*,name=*"
 ```
 
-#### Adding the heapdump file path option
-
-The log-root option has been added to set the heapdump file path.
-
-```ini title='whatap.conf'
-# Default
-log_root=${WHATAP_HOME}/dump
-```
-
 #### Modification of the active start part of the batch agent
 
 Modified the batch agent to leave an active stack on the main thread of the batch process.

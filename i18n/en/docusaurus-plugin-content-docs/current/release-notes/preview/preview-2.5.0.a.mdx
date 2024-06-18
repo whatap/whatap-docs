@@ -16,11 +16,35 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 ## Preview 2.5.0.a7
 
-May 13, 2024
+May 14, 2024
 
 <div class='indentTab'>
 
+### `Common`
+
+#### Project
+
+- <Status>Changed</Status> Improved the UI/UX for product selection and project creation.
+
+- <Status>Changed</Status> According to the incoming path to <Cmdname sid="side_agentInstall" className="uitext" />, changed whether or not to expose the step bar at the top of the screen.
+
+#### <Cmdname sid="side_flexboard" /> / <Cmdname sid="side_integratedFlexboard" />
+
+- <Status>Feature</Status> Added the feature to attach the description to the widget.
+
+- <Status>Changed</Status> Removed the margin of the <b>Heading</b> style in the rich text widget and changed the scroll to be automatically exposed depending on the text volume.
+
+- <Status>Fixed</Status> Fixed the issue where the <Cmdname sid="data_merge" className="uitext" /> option is not applied when using the <Cmdname sid="BTN07938" className="uitext" /> function after modifying the auxiliary chart settings.
+
+#### User Interface
+
+<Status>Changed</Status> Changed some colors in the dark theme.
+
+---
+
 ### `Application`
+
+- <Status>Changed</Status> In the <Cmdname sid="today_tps" className="uitext" />, <Cmdname sid="today_user" className="uitext" /> widget of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, modified not to request new data when viewing the data again within a day but to reprocess the viewed data for use.
 
 - <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the issue where the data does not appear when the upper area of the map is dragged.
 
@@ -28,9 +52,81 @@ May 13, 2024
 
 ---
 
+### `Server`
+
+<Status>Changed</Status> Added the OS selection step before entering the <Cmdname sid="side_agentInstall" className="uitext" /> step.
+
+---
+
+### `Kubernetes`
+
+- <Status>Changed</Status> Reorganized the Kubernetes agent installation method in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />.
+
+  - You can download the files appropriate to the environment by simply selecting options without modifying the installation file.
+
+  - The <Cmdname sid="TTL07852" className="uitext" /> option has been added.
+
+  - In the final step of installation, the main monitoring menus are introduced.
+
+- <Status>Feature</Status> Reorganized the Detail tab in <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_pendingPod" className="uitext" />.
+
+  - Added the <UI>Suggestions</UI> tab to help you quickly analyze the cause based on the event messages.
+
+  - Added the <UI>Event</UI> tab to check the Pod-related events.
+
+  - Added the <UI>Log</UI> tab to check the Container logs.
+
+  :::note
+
+  This function is supported in Kubernetes master agent 1.7.0 or later.
+
+  :::
+
+- <Status>Fixed</Status> In <Cmdname sid="BTN07267" className="uitext" /> of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu, changed the name of the okind setting option of Docker Python to <code>whatap.okind</code>.
+
+---
+
 ### `Database`
 
-<Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />, fixed the issue where the tooltip in the <Cmdname sid="db_ip" className="uitext" /> column does not appear.
+#### Common
+
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />, fixed the issue where the tooltip in the <Cmdname sid="db_ip" className="uitext" /> column does not appear.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the query statement on the <Cmdname sid="TTL06224" className="uitext" /> window that appears when a query text is selected, is displayed as <code>undefined</code>.
+
+#### PostgreSQL / MySQL / Oracle DMA
+
+<Status>New</Status> Added the <Cmdname sid="side_dbTopSqlComparison" className="uitext" /> menu where you can set the comparison time to see the most frequently executed SQL and the fluctuations of the SQL in the time zone.
+
+:::note
+
+This feature can be seen in the <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbTopSqlComparison" className="uitext" /> path.
+
+:::
+
+#### PostgreSQL / Oracle DMA
+
+- <Status>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />, added a tooltip to see the full name when you hover your mouse over an item in the table widget.
+
+#### Oracle DMA
+
+- <Status>Feature</Status> In the analysis linking the <b>Application</b> product to the <b>Database</b> product, added the feature to display the Lock message when the event value is <code>enq: TX - row lock contention</code>.
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the <UI>sid</UI> and <UI>serial#</UI> columns in the <UI>Query List</UI> table that appears by dragging the chart area in the <UI>SQL Elapse Map</UI> widget.
+
+- <Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, adjusted the column order in the table.
+
+- <Status>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, <Cmdname sid="side_multiInstance" className="uitext" />, changed the metrics in the <Cmdname sid="session_detail" className="uitext" /> window that pops up when an item in the <Cmdname sid="active_sessions" className="uitext" /> table is selected.
+
+- <Status>Fixed</Status> Modified the key value to confirm with an error message if a specific key value is present in the feature that links the <b>Application</b> product to the <b>Database</b> product for analysis.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />, fixed the issue where the <UI>Operation Count</UI> chart is loaded infinitely.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the filtering does not work properly.
+
+#### Tibero
+
+<Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, removed the <UI>DB</UI> tab.
 
 </div>
 
@@ -154,7 +250,13 @@ May 3, 2024
 
 ### `Database`
 
+#### Oracel DMA
+
 <Status>New</Status> Open the <b>Oracle DMA</b> monitoring service. Thanks for your use! The service can be used in <Link to='https://preview.whatap.io' target='_blank'>https://preview.whatap.io</Link>. For more information, see <Link to='https://whatap.github.io/whatap-docs/oracle-dma/monitoring-intro' target='_blank'>the following</Link>.
+
+#### PostgreSQL, MySQL
+
+<Status>Fixed</Status> Fixed the issue where data is not viewed when selecting an object name in the <Cmdname sid="TTL06224" className="uitext" /> window.
 
 </div>
 

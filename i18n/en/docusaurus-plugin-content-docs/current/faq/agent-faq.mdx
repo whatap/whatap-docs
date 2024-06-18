@@ -1,6 +1,6 @@
 ---
 id: agent-faq
-title: Agent FAQ
+title: Agent FAQs
 description: This FAQ document is related with the WhaTap agent.
 tags:
   - Agent
@@ -12,15 +12,15 @@ Check the frequently asked questions about agents from WhaTap monitoring service
 
 ---
 
-<div class ='faq'>
+<div className='faqs'>
 
-## Monitoring agent name duplication issue
+### Monitoring agent name duplication issue
 
-### Why are agent names duplicated in the Scale In/Out environment?
+> Why are agent names duplicated in the Scale In/Out environment?
 
 In the Scale In/Out environment, instances or containers are automatically added or removed depending on the resource demand. During this process, if the monitoring agents installed on each instance use a fixed name, the newly created instance may use the same name as that of existing instances, which may cause duplication issues. This happens frequently when instances are self-recovered or continuous release is happening in the DevOps environment.
 
-### What is the resolution for the agent name duplication issue?
+> What is the resolution for the agent name duplication issue?
 
 The WhaTap agent provides the agent configuration that allows you to create a unique identifier by setting variables whenever each instance or container is restarted. You can apply the `whatap.name` option to the _whatap.conf_ file for agent configuration. See the following example:
 

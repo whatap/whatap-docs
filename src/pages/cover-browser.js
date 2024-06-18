@@ -28,7 +28,7 @@ export default function Cover() {
             Browser Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2024.05.03
+            release date. 2024.06.03
         </p>
         <img className={styles.background} src={bgPath} />
       </div>

@@ -110,6 +110,17 @@
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
   }
+
+  .redocusaurus div.redoc-wrap div.api-content {
+    width: 100% !important;
+  }
+
+  .redocusaurus div.redoc-wrap div.api-content > div > div[id*='operation'] > div,
+  .redocusaurus div.redoc-wrap div.api-content > div[id*='section'] > div,
+  .redocusaurus div.redoc-wrap div.api-content > div[id*='tag'] > div > div {
+    width: 100% !important;
+  }
+
   .row {
     display: block !important;
   }
@@ -186,6 +197,20 @@
 
   main .markdown .download-release-notes {
     display: none;
+  }
+
+  main .markdown .faqs blockquote {
+    display: table !important;
+  }
+
+  main .markdown .faqs blockquote::before {
+    display: table-cell !important;
+    position: relative !important;
+    vertical-align: middle !important;
+    padding-left: 5px !important;
+    line-height: 0 !important;
+    top: 10px !important;
+    width: 30px !important;
   }
 
   main .markdown iframe[src*='custom-report-template.html'] {

@@ -16,17 +16,19 @@ import TabItem from '@theme/TabItem';
 
 <ImgLang img='server-install-lx-unx.png' desc='サーバーモニタリングLinux Unix'/>
 
+**_エージェントのインストール_**画面で希望するオペレーティングシステムを選択し、プロジェクトのアクセスキーを確認したら、次の案内通りにインストールを進めてください。 
+
 1. WhaTap **リポジトリ**を登録します。  
 
-   ![number-s](/img/number-01.png) **_管理_** > **_エージェントのインストール_** 画面上部のOSタブで「サーバーOS」を選択してください。 ![number-s](/img/number-02.png) **_WhaTapリポジトリの追加_** タブで対応するコマンドをコピーして入力します。
+   **_WhaTapリポジトリの追加_**タブから該当するコマンドをコピーして入力します。
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
 
    ```bash title=SH
-   wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-   wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-   sudo dpkg -i whatap-repo_1.0_all.deb
+   curl -s http://repo.whatap.io/debian/release.gpg | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/my-repo.gpg > /dev/null
+   echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/" | sudo tee
+   /etc/apt/sources.list.d/whatap.list
    sudo apt-get update
    ```
 
@@ -86,7 +88,7 @@ import TabItem from '@theme/TabItem';
 
 2. 次のコマンドを使用して**パッケージ**をインストールしてください。
 
-   ![number-s](/img/number-03.png) **_WhaTapサーバーモニタリングパッチのインストール_** タブで適切なコマンドをコピーして入力します。
+   **_サーバーモニタリングパッケージのインストール_** タブで適切なコマンドをコピーして入力します。
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
@@ -123,7 +125,7 @@ import TabItem from '@theme/TabItem';
 
 3. **設定スクリプト**を実行してください。
 
-   ![number-s](/img/number-04.png)**_サーバーモニタリングを開始する_** タブに移動してコマンドを発行するか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加してください。
+   **_設定スクリプトを実行しサーバーモニターデモンを開始してください。_** タブに移動してコマンドを発行するか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加してください。
 
    ```bash
    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/infra/conf/whatap.conf

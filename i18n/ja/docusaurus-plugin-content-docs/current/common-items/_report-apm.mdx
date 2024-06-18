@@ -1,10 +1,10 @@
-ホーム画面 > プロジェクト選択 > <Cmdname sid="report" className="uitext" />
+ホーム画面> プロジェクト選択> <Cmdname sid="side_report" className="uitext" />
 
-レポート画面で ![down-arrow](/img/down-arrow.svg) ボタンをクリックすると、日次、週次、月次に分類され、様々なアプリケーション分析レポートを確認できます。
+画面の上に<Cmdname sid="report" className="uitext" />で![down-arrow](/img/down-arrow.svg)ボタンをクリックすると、日刊、週刊、月刊に分類された各種分析レポートを確認できます。希望するレポート様式を選択し、照会したい日付と時間、フィルターオプションを設定してください。![검색 아이콘](/img/ico-btn-search.png)ボタンを選択すると、選択したレポートを確認できます。
 
 ## **_日次アプリケーションレポート_**
 
-**_日次アプリケーションレポート_**は、1日あたりのアプリケーションの性能を数値とチャートで確認できるレポートです。開始日、開始時間、終了時間を設定して、表示することができます。
+<Cmdname sid="A001_AppDailyReport" className="uitext" />は、1日あたりのアプリケーションの性能を数値とチャートで確認できるレポートです。開始日、開始時間、終了時間を設定して、表示することができます。
 
 ### 概要
 
@@ -26,7 +26,7 @@
 
 - **クリティカルなイベント**
 
-  対象期間中に発生したメトリックイベントのレベルがcriticalであるイベントの数です。
+  対象期間中に発生したメトリクスイベントのレベルがcriticalであるイベントの数です。
 
 - **アプリケーションサーバー**
 
@@ -76,13 +76,13 @@ import Csvdownload from "../common-items/_csv-download.mdx";
 
 <ImgLang img='app_daily_report_06.png' desc='' />
 
-Stack Trace上のStepを基準にStep間の呼び出し頻度を比率として計算した情報を確認することができます。**_分析_** > **_スタック_** >**_トップスタック_**ページでStackの詳細を確認することができます。
+Stack Trace上のStepを基準にStep間の呼び出し頻度を比率として計算した情報を確認することができます。<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_stack" className="uitext" /> > <Cmdname sid="topstack" className="uitext" />ページでStackの詳細を確認することができます。
 
 ### SQLの平均応答時間TOP10
 
 <ImgLang img='app_daily_report_07.png' desc='' />
 
-利用期間中に使用されたSQLクエリ文の平均レスポンス時間でソートした統計情報です。**_統計/レポート_** > **_統計_** > **_SQL_**ページで各クエリの発生時間と性能を詳細に表示できます。
+利用期間中に使用されたSQLクエリ文の平均レスポンス時間でソートした統計情報です。<Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statSql" className="uitext" />ページで各クエリの発生時間と性能を詳細に表示できます。
 
 :::note 
 
@@ -139,7 +139,7 @@ Stack Trace上のStepを基準にStep間の呼び出し頻度を比率として�
 
 トランザクションのTOP10では、開始日の1週間のデータと前週のデータを比較することができます。
 
-各トランザクションの詳細情報を表示する場合は、**_統計/報告書_** > **_統計_** > **_トランザクション_**メニューから表示することができます。
+各トランザクションの詳細情報を表示する場合は、<Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_tx" className="uitext" />メニューから表示することができます。
 
 :::note 
 
