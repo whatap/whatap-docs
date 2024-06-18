@@ -790,7 +790,7 @@ function _php_track_http_trs_createMdxContent(props) {
         })]
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "0"
+          children: "Empty"
         })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "특정 URL을 설정하면 트랜잭션 추적 대상에서 제외됩니다. 설정된 URL은 트랜잭션 정보를 수집하지 않아, 트랜잭션 목록에서 확인되지 않습니다. 트랜잭션 추적 대상에서 제외할 URL을 지정합니다. 2개 이상의 값을 지정하려면 쉼표(,)를 구분자로 이용하세요"
@@ -819,7 +819,7 @@ function _php_track_http_trs_createMdxContent(props) {
         })]
       }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "0"
+          children: "Empty"
         })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "트랜잭션 추적 대상에서 제외할 URL prefix를 지정합니다."
