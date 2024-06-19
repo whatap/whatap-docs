@@ -2,31 +2,31 @@
 
 {/* 탑 스택 topstack / 유니크 스택 uniquestack / 액티브 스택 activestack */}
 
-特定の時間帯の呼び出しスタックの頻度とメソッド、トランザクションに関する詳細情報を確認できます。<Cmdname sid="topstack" className="uitext" />, <Cmdname sid="uniquestack" className="uitext" />, <Cmdname sid="activestack" className="uitext" />を照会することができます。<Cmdname sid="topstack" className="uitext" />は、呼び出し頻度の高いメソッドの使用量を示し、<Cmdname sid="uniquestack" className="uitext" />は、同じ呼び出しスタックの頻度を分析します。<Cmdname sid="activestack" className="uitext" />は、実行中のトランザクションのスタック情報を定期的に収集し、リアルタイムのパフォーマンス分析を可能にします。
+特定の時間帯の呼び出しスタックの頻度とメソッド、トランザクションに関する詳細情報が確認できます。<Cmdname sid="topstack" className="uitext" />, <Cmdname sid="uniquestack" className="uitext" />, <Cmdname sid="activestack" className="uitext" />が照会できます。<Cmdname sid="topstack" className="uitext" />は、呼び出し頻度の高いメソッドの使用量を示し、<Cmdname sid="uniquestack" className="uitext" />は、同じ呼び出しスタックの頻度を分析します。<Cmdname sid="activestack" className="uitext" />は、実行中のトランザクションのスタック情報を定期的に収集し、リアルタイムのパフォーマンス分析ができます。
 
 :::note
 
-スタック分析機能は**Java**及び**Python**、**.NET**商品プラットフォームでサポートします。
+スタック分析機能は**Java**及び**Python**、**.NET**のモニタリングで提供します。
 
 :::
 
 ## 主な機能の案内
 
-次の主な機能を利用できます。スタックの照会により、アプリケーションのパフォーマンスの問題をすばやく識別し、解決できます。特定のメソッド呼び出しの頻度、呼び出し経路、応答時間などを確認し、性能向上のための方案を用意することができます。
+次の主な機能を利用できます。スタックの照会により、アプリケーションのパフォーマンスの問題をすばやく識別し、解決できます。特定メソッドの呼び出し頻度、呼び出し経路、応答時間などを確認し、性能向上のための改善策が用意できます。
 
 <ImgLang img="apm-stack-functions.png" desc="スタック" />
 
 - **スタックタイプの選択**
 
-  <Cmdname sid="topstack" className="uitext" />, <Cmdname sid="uniquestack" className="uitext" />, <Cmdname sid="activestack" className="uitext" />中から希望するスタックを選択して照会することができます。
+  <Cmdname sid="topstack" className="uitext" />, <Cmdname sid="uniquestack" className="uitext" />, <Cmdname sid="activestack" className="uitext" />中から希望するスタックを選択して照会できます。
 
-  - <Cmdname sid="topstack" className="uitext" />:呼び出し頻度が最も高いスタック情報を提供します。詳細については、「次の文書」（#top-stack）を参照してください。
+  - <Cmdname sid="topstack" className="uitext" />：呼び出し頻度が最も高いスタック情報を提供します。詳細については、[次の文書](#top-stack)を参照にしてください。
 
-  - <Cmdname sid="uniquestack" className="uitext" />:実行されたメソッドのセットが同じ場合の統計情報を提供します。詳細については、 [次の文書](#unique-stack)を参照してください。
+  - <Cmdname sid="uniquestack" className="uitext" />：実行されたメソッドのセットが同じ場合の統計情報を提供します。詳細については、[次の文書](#unique-stack)を参照にしてください。
 
   - <Cmdname sid="activestack" className="uitext" />:実行中のトランザクションのスタック情報を提供します。詳細については、[次の文書](#active-stack)を参照してください。
 
-- <Cmdname sid="time_selector" className="uitext" /> / <Cmdname sid="start_date" className="uitext" />: 照会する時間を設定してください。特定の時間帯のスタックを照会したり、目的の期間を設定したりすることができます。スタックの種類によっては、照会できる期間が制限される場合があります。
+- <Cmdname sid="time_selector" className="uitext" /> / <Cmdname sid="start_date" className="uitext" />：照会する時間を設定します。特定の時間帯のスタックを照会したり、目的の期間を設定できます。スタックの種類によっては、照会できる期間が制限されます。
 
   :::note
 
@@ -34,29 +34,29 @@
 
   :::
 
-- <Cmdname sid="application" className="uitext" />: 照会しようとしているエージェントを選択できます。特定のエージェントを選択でき、何も選択しない場合は、プロジェクトに含まれるすべてのエージェントを対象に照会します。
+- <Cmdname sid="application" className="uitext" />：照会するエージェントを選択できます。特定のエージェントを選択でき、何も選択しないとプロジェクトに含まれるすべてのエージェントを対象に照会します。
 
-- ![カラム選択アイコン](/img/ico-column-set.svg) <Cmdname sid="column_select" className="uitext" />: 希望するカラム項目を表示または非表示にすることができます。
+- ![カラム選択アイコン](/img/ico-column-set.svg) <Cmdname sid="column_select" className="uitext" />：希望するカラム項目を表示または非表示します。
 
-- <Cmdname sid="compare" className="uitext" />: 同じフィルター条件で1日以内に照会する際、選択したスタックを時間対比で比較することができます。これにより、時間による呼び出しスタックの変化を把握し、性能のトレンドを確認できます。詳細については、[次の文書](#compare-stack)を参照してください。
+- <Cmdname sid="compare" className="uitext" />：同じフィルター条件で1日以内に照会する際、選択したスタックを別の時間帯と比較できます。この機能で、時間による呼び出しスタックの変化を把握し、性能のトレンドを確認できます。詳細については、[次の文書](#compare-stack)を参照にしてください。
 
-- ![スナップショットアイコン](/img/ic-camera.svg) : 各スタック タイプのテーブル リストでスタックまたはトランザクション項目を拡張すると、一番右側にスナップショット アイコンが表示されます。このアイコンを選択すると、そのスタックまたはトランザクション情報を画像ファイルとして保存できます。
+- ![スナップショットアイコン](/img/ic-camera.svg)：各スタック タイプのテーブル リストからスタックまたはトランザクション項目を拡張すると、一番右側にスナップショット アイコンが表示されます。このアイコンを選択すると、スタックまたはトランザクション情報を画像ファイルに保存できます。
 
 ## 基本的な使い方
 
-1. 画面上で照会したいスタックタイプを選択してください。
+1. 画面から照会するスタックタイプを選択します。
 
-2. <Cmdname sid="time_selector" className="uitext" />または<Cmdname sid="start_date" className="uitext" />で希望する照会時間を設定してください。
+2. <Cmdname sid="time_selector" className="uitext" />または<Cmdname sid="start_date" className="uitext" />で希望する照会時間を設定します。
 
-3. <Cmdname sid="application" className="uitext" />で、照会するエージェントを選択してください。何も選択しない場合は、エージェント全体を対象に照会することができます。
+3. <Cmdname sid="application" className="uitext" />で、照会するエージェントを選択します。何も選択しないと、エージェント全体を対象に照会します。
 
 4. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-照会結果をスタックテーブルの一覧で確認することができます。
+照会結果をスタックテーブルの一覧から確認できます。
 
 ## トップスタック {#top-stack}
 
-<Cmdname sid="topstack" className="uitext" />では、呼び出し頻度が最も高いメソッドの情報を提供します。スタックの最上段に位置するメソッドの呼び出し頻度により、サービスに最も影響を与えるメソッドを迅速に確認できます。メソッドの呼び出し頻度を把握し、CPUまたはメモリ荷がかかる原因を分析できます。これにより、性能改善のための方策を導き出すことができます。
+<Cmdname sid="topstack" className="uitext" />では、呼び出し頻度が最も高いメソッドの情報を提供します。スタックの最上段に位置するメソッドの呼び出し頻度により、サービスに最も影響を与えるメソッドを素早く確認できます。メソッドの呼び出し頻度を把握し、CPUまたはメモリに負荷がかかる原因を分析できます。この機能で性能改善に必要な対策を講じられます。
 
 WhaTapは、10秒(既定値) 間隔で収集したThread Stackを使用して、メソッドレベルの性能遅延を分析します。
 
@@ -87,7 +87,7 @@ System.Web.Http.Controllers.ApiControllerActionInvoker.InvokeActionAsyncCore(Sys
 ...
 ```
 
-例）スタックの**トップライン**は`lambda_method`です。 
+例のスタックから**トップライン**は`lambda_method`です。 
 
 ```csharp
 DynamicClass.lambda_method(System.Runtime.CompilerServices.Closure,System.Object,System.Object[])
@@ -116,7 +116,7 @@ inner (/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exc
 ...
 ```
 
-例）スタックの**トップライン**は`project`です。 
+例のスタックから**トップライン**は`project`です。 
 
 ```python
 project (/home/ubuntu/python-sample/test/views/test.py:69)
@@ -124,7 +124,7 @@ project (/home/ubuntu/python-sample/test/views/test.py:69)
 
 </InDoc>
 
-**トップライン**は、ダンプを実行するスレッドがメソッドを実行中であることを意味します。すぐにキャッチされる可能性もありますが、確率的にそのモジュールの処理時間のコンセンサスの比率をスタックに表示します。この**トップライン**メソッドを計算してメソッドレベルのパフォーマンスを判断することができます。WhaTapは、**トップライン頻度統計**を<Cmdname sid="topstack" className="uitext" />(Top Stack)と呼びます。
+**トップライン**は、実行中のスレッドが該当メソッドを実行していることを意味します。途中でキャプチャされた可能性もありますが、確率的には各モジュールの処理時間の合計の比率でスタックに現れます。この**トップライン**メソッドの頻度を計算してメソッドレベルのパフォーマンスを判断できます。WhaTapは、**トップラインの頻度統計**を<Cmdname sid="topstack" className="uitext" />(Top Stack)と呼びます。
 
 <InDoc product="java"><ImgLang img="apm-analysis-apm-top-stack-01.png" desc="Top stack" /></InDoc>
 
@@ -132,7 +132,7 @@ project (/home/ubuntu/python-sample/test/views/test.py:69)
 
 <InDoc product="python"><ImgLang img="apm-analysis-apm-top-stack-python-01.png" desc="Top stack" /></InDoc>
 
-<Cmdname sid="topstack" className="uitext" />分析により、導出されたメソッドをどのメソッドが呼び出したかについての頻度を分析できます。Stack Trace上の各ステップ（ステップ）基準で、ステップとステップ間の呼び出し比率をパーセンテージで分析した情報を提供します。最上位ステップのバックログ頻度ををパーセンテージで算出し、降順に並べ替えた結果を提示します。
+<Cmdname sid="topstack" className="uitext" />分析で現れたメソッドをどのメソッドが呼び出したかを頻度で分析できます。Stack Traceの各ステップで、ステップとステップの間で呼び出した比率をパーセンテージで分析した情報を提供します。最上位ステップから呼び出したステップの頻度をパーセンテージで計算し、降順に並べ替えた結果を表示します。
 
 <InDoc product="java"><ImgLang img="apm-analysis-apm-top-stack-02.png" desc="Top stack" /></InDoc>
 
@@ -140,11 +140,11 @@ project (/home/ubuntu/python-sample/test/views/test.py:69)
 
 <InDoc product="python"><ImgLang img="apm-analysis-apm-top-stack-python-02.png" desc="Top stack" /></InDoc>
 
-各ステップ項目の一番左に ![拡張アイコン](/img/ic-caret-right.svg)ボタンをタップすると、そのステップを呼び出す上位ステップの呼び出し頻度基準をパーセンテージで算出して提供します。
+各ステップ項目の一番左にある![拡張アイコン](/img/ic-caret-right.svg)ボタンを選択すると、そのステップを呼び出す上位ステップの呼び出し頻度をパーセンテージで提供します。
 
-<Cmdname sid="topstack" className="uitext" />統計は十分なデータで判断する必要があります。収集したスタックの数が10個未満の少数の場合、統計的な意味を持つには不十分です。
+<Cmdname sid="topstack" className="uitext" />統計は充分に多いデータで判断する必要があります。収集したスタックの数が10個未満の場合、統計的な意味を持つには不十分です。
 
-<Cmdname sid="topstack" className="uitext" />はチューニング時に認知しづらい部分のチューニングポイントを見つけるのに役立ちます。呼び出し頻度が最も高いスタックは、現在のアプリケーションサーバーで最も多くの応答遅延が発生していると判断できます。左端の割合は、アプリケーションサーバーのパフォーマンスに影響を与える程度です。
+<Cmdname sid="topstack" className="uitext" />は、把握しづらい部分のチューニングポイントを見つけるのに役立ちます。呼び出し頻度が最も高いスタックは、アプリケーションサーバーで最も多くの応答遅延が発生していると判断できます。左に表示する比率は、アプリケーションサーバーのパフォーマンスへの影響度です。
 
 <InDoc product="java">
 
@@ -166,13 +166,13 @@ project (/home/ubuntu/python-sample/test/views/test.py:69)
 
 安定したアプリケーションサーバーであっても、呼び出し頻度の高いスタックは性能の低下を引き起こす可能性があるため、そのクラスは注意深く見ることをお勧めします。
 
-<Cmdname sid="topstack" className="uitext" />をクリックすると、そのトップスタックを呼び出す頻度を確認できます。<Cmdname sid="topstack" className="uitext" />の呼び出し関係は1対1の関係であるため、<Cmdname sid="topstack" className="uitext" />のdepthの深さが下がるにつれて情報の精度が低下する可能性があります。下位depthに関する情報は参考として使用し、チューニングを進めてください。
+<Cmdname sid="topstack" className="uitext" />をクリックすると、その最上位スタックに対する呼び出し頻度が確認できます。<Cmdname sid="topstack" className="uitext" />の呼び出し関係は1対1なので、<Cmdname sid="topstack" className="uitext" />のdepthが下がるほど情報の精度が低下する可能性があります。チューニング作業を行う際には、下位depthの情報は参照レベルで考えてください。
 
-アプリケーションのパフォーマンスを向上させるには、最上位ステップのバックログ比率が高いモジュールのボトルネックを調べる必要があります。バックログ比率が高いモジュールの場合、パフォーマンスが少し向上しただけでも、アプリケーション全体が大幅に改善される可能性があります。
+アプリケーションのパフォーマンス改善のため、最上位ステップへの呼び出し比率が高いモジュールのボトルネックを調べる必要があります。呼び出し比率が高いモジュールの場合、小さな性能改善でも、アプリケーション全体に大きな改善効果がある場合があります。
 
 ### ダイアグラムで表示
 
-複雑なスタック呼び出しステップを簡単に理解できるように、ダイアグラムチャートを提供します。スタックテーブルの右上に<Cmdname sid="view_as_diagram" className="uitext" />ボタンを選択してください。これにより、各ステップの呼び出し頻度と実行経路を一目で把握できます。
+複雑なスタックの呼び出しステップを簡単に理解できるため、ダイアグラムチャートを提供します。スタックテーブルの右上にある<Cmdname sid="view_as_diagram" className="uitext" />ボタンを選択すると、各ステップの呼び出し頻度と実行経路を一目で把握できます。
 
 <InDoc product="java"><ImgLang img="apm-analysis-apm-top-stack-05.png" desc="ダイアグラムで表示" /></InDoc>
 
@@ -182,9 +182,9 @@ project (/home/ubuntu/python-sample/test/views/test.py:69)
 
 - 各ノードを選択すると、下位のdepthのスタックが表示されます。 
 
-- マウススクロールで拡大/縮小したり、ドラッグしたりして動くことができます。 
+- マウススクロールで拡大/縮小したり、ドラッグで動かします。 
 
-- スタックテーブルリストに戻るには<Cmdname sid="view_as_table" className="uitext" />ボタンを選択してください。
+- スタックテーブルリストに戻るには<Cmdname sid="view_as_table" className="uitext" />ボタンを選択します。
 
 ### 注意事項
 
@@ -215,11 +215,11 @@ System.Web.Http.ApiController.ExecuteAsync(System.Web.Http.Controllers.HttpContr
 System.Web.Http.Controllers.ActionFilterResult.ExecuteAsync(System.Threading.CancellationToken)
 ```
 
-`System.Threading.Thread.Sleep` ← `System.Web.Http.ApiController.ExecuteAsync` ← `System.Web.Http.Controllers.ActionFilterResult.ExecuteAsync`の呼び出し比率が58.37% \* 99.99%を意味するものではありません。`System.Web.Http.ApiController.ExecuteAsync`で他のモジュールの呼び出しの可能性が存在するためです。
+`System.Threading.Thread.Sleep` ← `System.Web.Http.ApiController.ExecuteAsync` ← `System.Web.Http.Controllers.ActionFilterResult.ExecuteAsync`の呼び出し比率が58.37% \* 99.99%を意味するものではありません。`System.Web.Http.ApiController.ExecuteAsync`から他のモジュールを呼び出す可能性があるためです。
 
 </InDoc>
 
-<Cmdname sid="topstack" className="uitext" />で呼び出し比率を判断する場合、各ステップ間の呼び出し比率を掛け合わせて、全体の呼び出し関係比率を算出してはいけません。**トップスタック**の呼び出し比率はStack Trace上に表示される情報のステップ間の呼び出し比率の算出した結果であるため、ステップ間の呼び出し比率から全体的な呼び出し比率を算出すると、歪んだ結果が得られる可能性があります。
+<Cmdname sid="topstack" className="uitext" />で呼び出し比率を確認する際には、各ステップ間の呼び出し比率を合わせて、全体の呼び出し比率を判断してはいけません。**トップスタック**の呼び出し比率はStack Trace上に表示される情報からステップ間の呼び出し比率を算出した結果であるため、ステップ間の呼び出し比率から全体の呼び出し比率を算出すると、歪んだ計算結果になる恐れがあります。
 
 ## ユニークスタック {#unique-stack}
 
@@ -231,7 +231,7 @@ System.Web.Http.Controllers.ActionFilterResult.ExecuteAsync(System.Threading.Can
 
 <InDoc product="python"><ImgLang img="apm-analysis-apm-unique-stack-python.png" desc="Unique stack" /></InDoc>
 
-最もよく使われるスタックの情報を把握することができます。同じスタックが何度も繰り返しても、重複を排除することで、最も高い呼び出し頻度のスタックを確認できます。例えば滞積比率が高いStack Traceを識別することができます。詳細の呼び出しステップの検討により、呼び出し経路上に異常モジュールが存在するかどうかを把握することもできます。
+最もよく使われるスタックの情報が把握できます。同じスタックが何度も繰り替えても、重複を排除し、最も高い呼び出し頻度のスタックが確認できます。例えば呼び出す比率が高いStack Traceを識別できます。詳細な呼び出しステップのチェックにより、呼び出し経路上で異常モジュールの存在有無も把握できます。
 
 <InDoc product="java"><ImgLang img="apm-analysis-apm-unique-stack-details.png" desc="Unique stack" /></InDoc>
 
@@ -239,35 +239,35 @@ System.Web.Http.Controllers.ActionFilterResult.ExecuteAsync(System.Threading.Can
 
 <InDoc product="python"><ImgLang img="apm-analysis-apm-unique-stack-details-python.png" desc="Unique stack" /></InDoc>
 
-各スタック項目では、メソッドの呼び出し経路（<Cmdname sid="stack" className="uitext" />）と当該メソッドの占める割合（<Cmdname sid="percent" className="uitext" />）、全体の呼び出し件数（<Cmdname sid="count" className="uitext" />)を表示します。各ステップ項目の一番左に![拡張アイコン](/img/ic-caret-right.svg)ボタンを選択すると、その呼び出しスタックのメソッド名、ファイル名、ライン番号などの問題分析に役立つ情報を提供します。
+各スタック項目では、メソッドの呼び出し経路(<Cmdname sid="stack" className="uitext" />)と当該メソッドの占める割合(<Cmdname sid="percent" className="uitext" />)、全体の呼び出し件数(<Cmdname sid="count" className="uitext" />)を表示します。各ステップ項目の左側に![拡張アイコン](/img/ic-caret-right.svg)ボタンを選択すると、その呼び出しスタックのメソッド名、ファイル名、ライン番号などの分析に役立つ情報を提供します。
 
 ### フィルタリング
 
 <ImgLang img="apm-analysis-apm-unique-stack-filter.png" desc="Unique stack" />
 
-<Cmdname sid="filter" className="uitext" />項目にメソッド名を入力して、ユーザーが希望する照会結果をフィルタリングできます。文字列を入力した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+<Cmdname sid="filter" className="uitext" />項目にメソッド名を入力して、照会結果をフィルタリングできます。文字列を入力した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
 ## アクティブスタック {#active-stack}
 
-進行中のトランザクションをアクティブトランザクションと呼びます。**アクティブトランザクションから定期的にダンプされるスタック**は<Cmdname sid="activestack" className="b600" />と呼ばれます。
+進行中のトランザクションをアクティブトランザクションと呼びます。**アクティブトランザクションから定期的にダンプされたスタック**を<Cmdname sid="activestack" className="b600" />と呼びます。
 
-<Cmdname sid="activestack" className="uitext" />では、収集された<Cmdname sid="activestack" className="b600" />を時系列チャートで確認することができます。長時間実行されるメソッドと短時間で実行されるが、頻繁に実行されるメソッドの比率により、実行中のトランザクションの状態をリアルタイムで把握することができます。
+<Cmdname sid="activestack" className="uitext" />では、収集された<Cmdname sid="activestack" className="b600" />を時系列チャートで確認できます。長時間実行されるメソッドと短時間で実行されるが、頻繁に実行されるメソッドの比率により、実行中のトランザクションの状態をリアルタイムで把握できます。
 
 <ImgLang img="apm-analysis-apm-active-stack.png" desc="Active stack" />
 
-チャートは5分間の単位統計データを活用して、<UI>Active Transaction</UI>の数を棒グラフで、<UI>TPS</UI>を折れ線グラフで表示します。特定の時間帯の棒グラフをクリックすると、その時間帯の<UI>Active Transaction</UI>のリストを確認することができます。
+チャートは5分間の単位統計データを活用して、<UI>Active Transaction</UI>の数を棒グラフで、<UI>TPS</UI>を折れ線グラフで表示します。特定の時間帯の棒グラフをクリックすると、その時間帯の<UI>Active Transaction</UI>のリストを確認できます。
 
 <InDoc product="java"><ImgLang img="apm-analysis-apm-active-stack-details.png" desc="Active stack" /></InDoc>
 
 <InDoc product="dotnet"><ImgLang img="apm-analysis-apm-active-stack-details-dotnet.png" desc="Active stack" /></InDoc>
 
-トランザクションリストの一番左に、![拡張アイコン](/img/ic-caret-right.svg)ボタンを選択すると、そのトランザクションの<Cmdname sid="activestack" className="b600" />情報を確認することができます。
+トランザクションリストの左側にある![拡張アイコン](/img/ic-caret-right.svg)ボタンを選択すると、そのトランザクションの<Cmdname sid="activestack" className="b600" />情報を確認できます。
 
 :::note
 
 - **アクティブトランザクション**収集の詳細は、[次の文書](active-transactions)を参照してください。その他のトランザクション収集に関連するエージェントオプションは、[次の文書](agent-transaction)を参照してください。
 
-- WhaTapエージェントは、**アクティブトランザクション**から10秒（オプション可）ごとにダンプした**アクティブスタック**をサーバーに転送します。収集間隔のエージェントオプションについては、次の例を参照してください。
+- WhaTapエージェントは、**アクティブトランザクション**から10秒(変更可)ごとにダンプした**アクティブスタック**をサーバーに転送します。収集間隔のエージェントオプションについては、次の例を参照にしてください。
 
   ```ini title="whatap.conf"
   active_stack_second=10
@@ -279,22 +279,22 @@ System.Web.Http.Controllers.ActionFilterResult.ExecuteAsync(System.Threading.Can
 
 <ImgLang img="apm-analysis-apm-active-stack-filter.png" desc="Unique stack" />
 
-<Cmdname sid="filter" className="uitext" />項目にトランザクション名を入力して、ユーザーが希望する照会結果をフィルタリングできます。文字列を入力した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+<Cmdname sid="filter" className="uitext" />項目にトランザクション名を入力して、照会結果をフィルタリングできます。文字列を入力した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
-## スタック比較{#compare-stack}
+## スタックの比較{#compare-stack}
 
-<Cmdname sid="topstack" className="uitext" />と<Cmdname sid="uniquestack" className="uitext" />では、一定期間を基準に、時間による比率の変化と収集件数に対するヒストリーを提供します。
+<Cmdname sid="topstack" className="uitext" />と<Cmdname sid="uniquestack" className="uitext" />では、一定期間を基準にして、時間帯ごとでの比率の変化と収集件数に対する履歴情報を提供します。
 
-<Cmdname sid="time_selector" className="uitext" />で照会する時間を設定した上で<Cmdname sid="compare" className="uitext" />ボタンを選択してください。同じフィルター条件で**一日以内**期間照会時にスタックを時間対比で比較することができます。これにより、時間による呼び出しスタックの変化を把握し、性能のトレンドを確認できます。また、障害時点の現況把握、性能改善前後の比較に有用な資料として活用できます。
+<Cmdname sid="time_selector" className="uitext" />に照会する時間を設定した上で<Cmdname sid="compare" className="uitext" />ボタンを選択します。同じフィルター条件から**1日以内**期間での照会時にスタックを時間帯ごとで比較できます。この機能で、時間帯ごとでの呼び出しスタックの変化を把握し、性能のトレンドを確認できます。また、障害時点の状況把握や性能改善前後の比較などに有用なデータとして活用できます。
 
 <ImgLang img="apm-analysis-apm-top-stack-04.png" desc="比較する" />
 
-- <Cmdname sid="percent" className="uitext" />: 照会期間中に選択されたスタックの割合の変化を確認することができます。
+- <Cmdname sid="percent" className="uitext" />：照会期間中に選択されたスタックの比率の変化を確認できます。
 
-- <Cmdname sid="count" className="uitext" />: 収集されるスタックの数は、アクティブトランザクションの数に比例します。例えば、特定の区間で収集量が増加していれば、サービスの遅延や急激な流入量の増加があったことがわかります。
+- <Cmdname sid="count" className="uitext" />：収集されるスタックの数は、アクティブトランザクションの数に比例します。例えば、特定の区間で収集量が増加していれば、サービスの遅延や急激な流入量の増加があったと推測できます。
 
 :::note
 
-<Cmdname sid="compare" className="uitext" /> ボタンがアクティブでない場合は、照会する時間範囲を超えたか、比較する時間のデータが十分でない場合です。<Cmdname sid="time_selector" className="uitext" />で照会できる時間範囲を設定されていないと、<Cmdname sid="compare" className="uitext" />ボタンが有効になりません。
+<Cmdname sid="compare" className="uitext" />ボタンが活性化にならない場合は、照会できる時間範囲を超えたか、比較する時間帯のデータが不十分な場合です。<Cmdname sid="time_selector" className="uitext" />で照会できる時間範囲に設定すると、<Cmdname sid="compare" className="uitext" />ボタンが活性化されます。
 
 :::

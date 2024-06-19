@@ -9,11 +9,11 @@ tags:
 toc_max_heading_level: 2
 ---
 
-ブラウザモニタリングで収集しているメトリクス指標の説明です。 **_メトリクス照会_**メニューから検索することができます。
+ブラウザモニタリングで収集しているメトリクス指標の説明です。 **_メトリクス照会_**メニューから検索できます。
 
-## rum_page_load_each_page
+## rum_page_load_each_page {#b798b7654dc22dee3a29d413a85dad14}
 
-ページロード時間に関する指標は、**PerformanceAPI**のうち**NavigationTiming**の値を参照します。 次の図のようにページロード探索が行われます。
+ページロード時間に関する指標は、**Performance API**のうち**Navigation Timing**の値を参照します。 次の図のようにページロード検索が行われます。
 
 ![](https://w3c.github.io/navigation-timing/timestamp-diagram.svg)
 
@@ -23,37 +23,37 @@ toc_max_heading_level: 2
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#667f1f457e1051e615455d0ecf95b947}
 
 | タグ名          | 説明        | 備考 |
 | ------------ | --------- | -- |
 | `page_group` | ページグループ   | -  |
 
-### Fields
+### Fields {#9a189c13b76ce8b9d1784cf1c790f766}
 
 <div class='browser-metric'>
 
-| フィールド名                            | 単位  | 説明                                                              | 備考                                                                    |
-| --------------------------------- | --- | --------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `page_load_backend_time`          | ミリ秒 | ページロード中のバックエンド領域の平均処理時間                                         | **startTime**から**responseEnd**までの所要時間                                 |
-| `page_load_frontend_time`         | ミリ秒 | ページロード中のフロントエンド領域の平均処理時間                                        | **domInteractive**から**loadEventEnd**までの所要時間                           |
-| `page_load_redirect_time`         | ミリ秒 | ブラウザがウェブページを読み込むときに、リダイレクトプロセスに所要した平均時間                         | **redirectStart**から**redirectEnd**までの所要時間                             |
-| `page_load_cache_time`            | ミリ秒 | ブラウザがウェブページを読み込む際に、キャッシュされたリソースを検索するのに所要する平均時間                  | **fetchStart**から**domainLookupStart**までの所要時間                          |
-| `page_load_dns_time`              | ミリ秒 | ブラウザがウェブページを読み込む際に、ウェブサイトドメインを照会するのに所要する平均時間                    | **domainLookupStart**から**domainLookupEnd**までの所要時間                     |
-| `page_load_connect_time`          | ミリ秒 | ブラウザがサーバーとのネットワーク接続プロセスに所要する平均時間                                | **connectStart**から**connectEnd**までの所要時間                               |
-| `page_load_ssl_time`              | ミリ秒 | ブラウザがウェブページを読み込む際に、TCPヘンドシェイクの過程で所要する平均時間                       | **secureConnectionStart**から**connectEnd**までの所要時間                      |
-| `page_load_firstbyte_time`        | ミリ秒 | ブラウザがウェブページを読み込み、ネットワークリクエストを送信した後、サーバーから最初のバイトが受信されるまで所要する平均時間 | **requestStart**から**responseStart**までの所要時間                            |
-| `page_load_download_time`         | ミリ秒 | ブラウザがウェブページを読み込む際に、サーバーからリソースをダウンロードするのに所要する平均時間                | **responseStart**から**responseEnd**までの所要時間                             |
-| `page_load_domcontentloaded_time` | ミリ秒 | ウェブページが初期コンテンツをレンダリングして、相互作用できる状態になるまでの平均時間                     | **domContentLoadedEventStart**から**domContentLoadedEventEnd**まで所要された時間 |
-| `page_load_domload_time`          | ミリ秒 | ウェブページのすべてのリソースがロードされ、レンダリングが完了した後、ユーザーが相互作用できる状態になるまでの平均時間     | **loadEventStart**から**loadEventEnd**までの所要時間                           |
-| `page_load_render_time`           | ミリ秒 | サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するのに所要する平均時間         | **domInteractive**から**domComplete**までの所要時間                           |
-| `page_load_event_time`            | ミリ秒 | ブラウザが測定するloadイベントが完了する平均時間                                      | 開始から**loadEventEnd**までの所要時間                                           |
-| `page_load_duration`              | ミリ秒 | ブラウザがウェブページを完全に読み込むのに所要する平均時間                                   | **loadEventEnd**以降、追加のインタラクションを完了するまでの時間、ブラウザエージェントが測定したページロード完了時間    |
-| `page_load_count`                 | 件数  | ページロード回数                                                        | -                                                                     |
+| フィールド名                            | 単位  | 説明                                                            | 備考                                                                    |
+| --------------------------------- | --- | ------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `page_load_backend_time`          | ミリ秒 | ページロード中のバックエンド領域の平均処理時間                                       | **startTime**から**responseEnd**までの所要時間                                 |
+| `page_load_frontend_time`         | ミリ秒 | ページロード中のフロントエンド領域の平均処理時間                                      | **domInteractive**から**loadEventEnd**までの所要時間                           |
+| `page_load_redirect_time`         | ミリ秒 | ブラウザがウェブページを読み込むときに、リダイレクトプロセスに所要した平均時間                       | **redirectStart**から**redirectEnd**までの所要時間                             |
+| `page_load_cache_time`            | ミリ秒 | ブラウザがウェブページを読み込む際に、キャッシュされたリソースを検索するのに所要する平均時間                | **fetchStart**から**domainLookupStart**までの所要時間                          |
+| `page_load_dns_time`              | ミリ秒 | ブラウザがウェブページを読み込む際に、ウェブサイトドメインを照会するのに所要する平均時間                  | **domainLookupStart**から**domainLookupEnd**までの所要時間                     |
+| `page_load_connect_time`          | ミリ秒 | ブラウザがサーバーとのネットワーク接続プロセスに所要する平均時間                              | **connectStart**から**connectEnd**までの所要時間                               |
+| `page_load_ssl_time`              | ミリ秒 | ブラウザがウェブページを読み込む際に、TCPハンドシェイクで所要する平均時間                        | **secureConnectionStart**から**connectEnd**までの所要時間                      |
+| `page_load_firstbyte_time`        | ミリ秒 | ブラウザがウェブページを読み込む際にネットワーク要請を送信した後、サーバーから最初のバイトが受信されるまで所要する平均時間 | **requestStart**から**responseStart**までの所要時間                            |
+| `page_load_download_time`         | ミリ秒 | ブラウザがウェブページを読み込む際に、サーバーからリソースをダウンロードするのに所要する平均時間              | **responseStart**から**responseEnd**までの所要時間                             |
+| `page_load_domcontentloaded_time` | ミリ秒 | ウェブページが初期コンテンツをレンダリングして、相互作用できる状態になるまでの平均時間                   | **domContentLoadedEventStart**から**domContentLoadedEventEnd**まで所要された時間 |
+| `page_load_domload_time`          | ミリ秒 | ウェブページのすべてのリソースがロードされ、レンダリングが完了した後、ユーザーが相互作用できる状態になるまでの平均時間   | **loadEventStart**から**loadEventEnd**までの所要時間                           |
+| `page_load_render_time`           | ミリ秒 | サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するのに所要する平均時間       | **domInteractive**から**domComplete**までの所要時間                           |
+| `page_load_event_time`            | ミリ秒 | ブラウザが測定するloadイベントが完了するまでの平均時間                                 | 開始から**loadEventEnd**までの所要時間                                           |
+| `page_load_duration`              | ミリ秒 | ブラウザがウェブページを完全に読み込むのに所要する平均時間                                 | **loadEventEnd**以降、追加のインタラクションを完了するまでの時間、ブラウザエージェントが測定したページロード完了時間    |
+| `page_load_count`                 | 件数  | ページロード回数                                                      | -                                                                     |
 
 </div>
 
-## rum_page_load_browser_each_page
+## rum_page_load_browser_each_page {#5ea9bb418b92f2baf636d9cd6d835507}
 
 ブラウザごとのページロードに関する指標です。
 
@@ -61,14 +61,14 @@ toc_max_heading_level: 2
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#01815fbb5f3d1977c56e3cb4d0fcd7b8}
 
 | タグ名            | 説明      | 備考 |
 | -------------- | ------- | -- |
 | `page_group`   | ページグループ | -  |
 | `browser_name` | ブラウザー名  | -  |
 
-### Fields
+### Fields {#8b519866d9c828cba5ac22f6936c682a}
 
 <div class='browser-metric'>
 
@@ -79,7 +79,7 @@ toc_max_heading_level: 2
 
 </div>
 
-## rum_page_load_device_each_page
+## rum_page_load_device_each_page {#cae6122948ce4a2ef19b007c7149bebf}
 
 デバイスごとのページロードに関する指標です。
 
@@ -87,14 +87,14 @@ toc_max_heading_level: 2
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#a5cebb5b8e9916d57d02dee96ce82729}
 
 | タグ名           | 説明      | 備考 |
 | ------------- | ------- | -- |
 | `page_group`  | ページグループ | -  |
 | `device_name` | デバイス名   | -  |
 
-### Fields
+### Fields {#5253d43d6cca9bb1f05b3072c47b9485}
 
 <div class='browser-metric'>
 
@@ -105,22 +105,22 @@ toc_max_heading_level: 2
 
 </div>
 
-## rum_page_load_os_each_page
+## rum_page_load_os_each_page {#41e66540556c4e86eebd81306558ef5f}
 
-オペレーティングシステムごとのページロードに関する指標です。
+OSごとのページロードに関する指標です。
 
 - 収集間隔：5秒
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#70ad1189b536ab167bb8394db61d403f}
 
 | タグ名           | 説明      | 備考 |
 | ------------- | ------- | -- |
 | `page_group`  | ページグループ | -  |
 | `device_name` | デバイス名   | -  |
 
-### Fields
+### Fields {#f4dcb7c1fc5a847255d5001b63e143b4}
 
 <div class='browser-metric'>
 
@@ -131,7 +131,7 @@ toc_max_heading_level: 2
 
 </div>
 
-## rum_router_change_each_page
+## rum_router_change_each_page {#e9d9a41030bbbabddae2702cd0a6f21d}
 
 シングルページアプリケーションでページ切り替え時に発生するイベントに関する指標です。
 
@@ -139,14 +139,14 @@ toc_max_heading_level: 2
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#8bff96be874041f09126639900f73465}
 
 | タグ名                 | 説明        | 備考                                      |
 | ------------------- | --------- | --------------------------------------- |
 | `page_group`        | ページグループ   | -                                       |
 | `completed_loading` | 切り替え完了の有無 | ページ切り替えが完了せずに別のページに切り替えると、`false`と表示される |
 
-### Fields
+### Fields {#1f0c9db9b65cdca062b7943db7093019}
 
 <div class='browser-metric'>
 
@@ -157,7 +157,7 @@ toc_max_heading_level: 2
 
 </div>
 
-## rum_resource_each_page
+## rum_resource_each_page {#ecb79f2064b37438ae6547c7f53110be}
 
 ウェブページで呼び出されるリソースの応答時間に関する指標です。
 
@@ -165,7 +165,7 @@ toc_max_heading_level: 2
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#1c1c20ee4a4bb17f2e3f925b0e4538b6}
 
 | タグ名            | 説明                     | 備考                                             |
 | -------------- | ---------------------- | ---------------------------------------------- |
@@ -173,25 +173,25 @@ toc_max_heading_level: 2
 | `is3rdParty`   | サードパーティから呼び出されたリソースの有無 | ウェブページのドメインと呼び出されたリソースのドメインが異なる場合は、'true'で配信する |
 | `request_host` | リソースのurl host値         | -                                              |
 | `request_path` | リソースのurl path値         | -                                              |
-| `type`         | リソースタイプ                | css, image, script等                            |
+| `type`         | リソースタイプ                | css、image、script等                              |
 
-### Fields
+### Fields {#66f375095544e257b9e3a11f167d4df4}
 
 <div class='browser-metric'>
 
-| フィールド名                   | 単位  | 説明                                                              | 備考                                                               |
-| ------------------------ | --- | --------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `resource_dns_time`      | ミリ秒 | ブラウザがウェブページを読み込む際に、ウェブサイトドメインを照会するのに所要する平均時間                    | **domainLookupStart**から**domainLookupEnd**までの所要時間                |
-| `resource_connect_time`  | ミリ秒 | ブラウザがサーバーとのネットワーク接続プロセスに所要する平均時間                                | **connectStart**から**connectEnd**までの所要時間                          |
-| `resource_ttfb_time`     | ミリ秒 | ブラウザがウェブページを読み込み、ネットワークリクエストを送信した後、サーバーから最初のバイトが受信されるまで所要する平均時間 | **requestStart**から**responseStart**までの所要時間                       |
-| `resource_download_time` | ミリ秒 | ブラウザがウェブページを読み込む際に、サーバーからリソースをダウンロードするのに所要する平均時間                | **responseStart**から**responseEnd**までの所要時間                        |
-| `resource_duration`      | ミリ秒 | ブラウザがウェブページを完全に読み込むのに所要する平均時間                                   | _loadEventEnd_以降、追加のインタラクションを完了するまでの時間、ブラウザエージェントが測定したページロード完了時間 |
-| `page_load_count`        | 件数  | ページロード回数                                                        | -                                                                |
-| `resource_size`          | バイト | リソースサイズ                                                         | -                                                                |
+| フィールド名                   | 単位  | 説明                                                            | 備考                                                               |
+| ------------------------ | --- | ------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `resource_dns_time`      | ミリ秒 | ブラウザがウェブページを読み込む際に、ウェブサイトドメインを照会するのに所要する平均時間                  | **domainLookupStart**から**domainLookupEnd**までの所要時間                |
+| `resource_connect_time`  | ミリ秒 | ブラウザがサーバーとのネットワーク接続プロセスに所要する平均時間                              | **connectStart**から**connectEnd**までの所要時間                          |
+| `resource_ttfb_time`     | ミリ秒 | ブラウザがウェブページを読み込む際にネットワーク要請を送信した後、サーバーから最初のバイトが受信されるまで所要する平均時間 | **requestStart**から**responseStart**までの所要時間                       |
+| `resource_download_time` | ミリ秒 | ブラウザがウェブページを読み込む際に、サーバーからリソースをダウンロードするのに所要する平均時間              | **responseStart**から**responseEnd**までの所要時間                        |
+| `resource_duration`      | ミリ秒 | ブラウザがウェブページを完全に読み込むのに所要する平均時間                                 | _loadEventEnd_以降、追加のインタラクションを完了するまでの時間、ブラウザエージェントが測定したページロード完了時間 |
+| `page_load_count`        | 件数  | ページロード回数                                                      | -                                                                |
+| `resource_size`          | バイト | リソースサイズ                                                       | -                                                                |
 
 </div>
 
-## rum_ajax_each_page
+## rum_ajax_each_page {#fec598ef360cba56c537b9ce7990b05b}
 
 AJAX応答時間と応答状態コードに関する指標です。
 
@@ -199,15 +199,15 @@ AJAX応答時間と応答状態コードに関する指標です。
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#d51f9633b28bd99783f7011dfcbf985a}
 
-| タグ名            | 説明                 | 備考 |
-| -------------- | ------------------ | -- |
-| `page_group`   | ページグループ            | -  |
-| `request_host` | AJAXリクエストURLのhost値 | -  |
-| `request_path` | AJAXリクエストURLのpath値 | -  |
+| タグ名            | 説明              | 備考 |
+| -------------- | --------------- | -- |
+| `page_group`   | ページグループ         | -  |
+| `request_host` | AJAX要求URLのhost値 | -  |
+| `request_path` | AJAX要求URLのpath値 | -  |
 
-### Fields
+### Fields {#250a56819f0c49aeae01a33f85382623}
 
 <div class='browser-metric'>
 
@@ -219,12 +219,12 @@ AJAX応答時間と応答状態コードに関する指標です。
 | `ajax_4xx_count`  | 件数  | 応答状態コード400以上500未満のAJAX件数 | -  |
 | `ajax_5xx_count`  | 件数  | 応答状態コード500以上AJAX件数       | -  |
 | `ajax_count`      | 件数  | AJAX件数                   | -  |
-| `ajax_duration`   | ミリ秒 | AJAXリクエスト平均応答時間          | -  |
-| `ajax_fail_count` | 件数  | リクエスト失敗したAJAX件数          | -  |
+| `ajax_duration`   | ミリ秒 | AJAX要求の平均応答時間            | -  |
+| `ajax_fail_count` | 件数  | 要求が失敗したAJAX件数            | -  |
 
 </div>
 
-## rum_error_total_each_page
+## rum_error_total_each_page {#ccafcb956575e6fcbda7fb52eb283fb5}
 
 ブラウザで発生するエラーに関する指標です。
 
@@ -232,18 +232,18 @@ AJAX応答時間と応答状態コードに関する指標です。
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#2319200ab7885caa96540f15a8a11db5}
 
-| タグ名             | 説明            | 備考 |
-| --------------- | ------------- | -- |
-| `page_group`    | ページグループ       | -  |
-| `browser`       | ブラウザー名        | -  |
-| `device`        | デバイス名         | -  |
-| `os`            | オペレーティングシステム名 | -  |
-| `error_message` | エラーメッセージ      | -  |
-| `error_type`    | エラータイプ        | -  |
+| タグ名             | 説明       | 備考 |
+| --------------- | -------- | -- |
+| `page_group`    | ページグループ  | -  |
+| `browser`       | ブラウザー名   | -  |
+| `device`        | デバイス名    | -  |
+| `os`            | OS       | -  |
+| `error_message` | エラーメッセージ | -  |
+| `error_type`    | エラータイプ   | -  |
 
-### Fields
+### Fields {#a597110ac8cdb0a125cac8e2c307dc6c}
 
 <div class='browser-metric'>
 
@@ -253,7 +253,7 @@ AJAX応答時間と応答状態コードに関する指標です。
 
 </div>
 
-## rum_web_vitals_each_page
+## rum_web_vitals_each_page {#a45419e40b96f96485bd8a36241c1dd0}
 
 コアウェブバイタルに関する指標です。
 
@@ -261,19 +261,19 @@ AJAX応答時間と応答状態コードに関する指標です。
 
 - 統計データ：5分、1時間
 
-### Tags
+### Tags {#29de8586814a026bc25f43fc76aabc86}
 
 | タグ名          | 説明      | 備考 |
 | ------------ | ------- | -- |
 | `page_group` | ページグループ | -  |
 
-### Fields
+### Fields {#631ecb47495ee519054b47c9aeab7cd2}
 
 <div class='browser-metric'>
 
 | フィールド名           | 単位  | 説明                                       | 備考 |
 | ---------------- | --- | ---------------------------------------- | -- |
-| `web_vitals_cls` | ミリ秒 | ウェブサイトで最大のコンテンツ要素がロードされる平均時間             | -  |
+| `web_vitals_cls` | ミリ秒 | ウェブサイトで最大サイズのコンテンツがロードされる平均時間            | -  |
 | `web_vitals_fid` | ミリ秒 | ウェブサイトがロードされ、ユーザーが最初の入力を行い、ブラウザが反応する平均時間 | -  |
 | `web_vitals_lcp` | 整数  | ウェブサイトのロード中に、レイアウトがどのくらいの頻度で変更されるかを示すスコア | -  |
 

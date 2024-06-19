@@ -38,7 +38,7 @@
 
 - 中央領域
 
-  アクティブTXの状態を速度で色分けし、右上に数で表示します。 チャート内の数字は、アクティブTX全体の数です。 チャートの色の意味は次のとおりです。
+  アクティブTXの状態を速度で色分けし、右上に個数を表示します。 チャートの数字は、アクティブTX全体の数です。 チャートの色の意味は次のとおりです。
 
   - 青色(<span class='normal'>Normal</span>)： 0秒~3秒
 
@@ -48,17 +48,17 @@
 
 - 右領域
 
-  アプリケーションの性能指標(Application Performance Index, Apdex)を意味します。 ウェブアプリケーションの顧客満足度を測定した指標であり、0 ~ 1間の値を持ちます。 水滴が飛んでいく速度はApdexTXの合計数に比例し、水滴の色の意味は次のとおりです。
+  アプリケーションの性能指標(Application Performance Index, Apdex)を意味します。 ウェブアプリケーションの顧客満足度を測定した指標であり、0と1の間の数です。 水滴が飛んでいく速度はApdexのトランザクションの合計数に比例し、水滴の色の意味は次のとおりです。
 
-  - 青色:<span class='normal'>Apdex満足</span>(Satisfied) 数 
+  - 青色:<span class='normal'>Apdex満足</span>(Satisfied)数 
 
-  - オレンジ色:<span class='slow'>Apdex許容</span>(Tolerating) 数 
+  - オレンジ色:<span class='slow'>Apdex許容</span>(Tolerating)数 
 
-  - 赤色:<span class='vslow'>Apdex不満</span>(Frustrated) 数= `APDEXトランザクション総数` - (`Apdex満足数` + `Apdex許容数`)
+  - 赤色:<span class='vslow'>Apdex不満</span>(Frustrated)数= `APDEXトランザクション総数` - (`Apdex満足数` + `Apdex許容数`)
 
   :::note
 
-  アプリケーションの性能指標(Application Performance Index, Apdex)についての詳細は[次のリンク](https://www.apdex.org)を参照してください。
+  アプリケーションの性能指標(Application Performance Index、Apdex)についての詳細は[次のリンク](https://www.apdex.org)を参照してください。
 
   :::
 
@@ -88,7 +88,7 @@
 
   :::note
 
-  - トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、<Cmdname sid="show_trace" className="uitext" />ボタンを選択してください。 <Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06527" className="uitext" />ウィンドウについての詳細は、<Link to="trs-profile">次の文書</Link>を参考にしてください。
+  - トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、<Cmdname sid="show_trace" className="uitext" />ボタンを選択してください。 <Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06527" className="uitext" />画面についての詳細は、<Link to="trs-profile">次の文書</Link>を参照にしてください。
 
   - トランザクションの詳細については、[次の文書](track-transactions-intro)を参照してください。
 
@@ -98,7 +98,7 @@
 
 <ImgLang img='apm-dashboard-active-tx-agent.png' desc='エージェントアクティブTX' />
 
-<Cmdname sid="AA002" className="uitext" />ウィジェットは、エージェント選択オプションで選択した基準に従って、マージされたデータをチャートに表示します。 一方、<Cmdname sid="AA018" className="uitext" />ウィジェットは選択したエージェント分類の基準に含まれたエージェントの現況を個別に確認することができます。
+<Cmdname sid="AA002" className="uitext" />ウィジェットは、エージェント選択オプションで選択した基準に従って、マージされたデータをチャートに表示します。 一方、<Cmdname sid="AA018" className="uitext" />ウィジェットでは選択したエージェント分類の基準に含まれたエージェントの状況を確認できます。
 
 ダッシュボードでマウスの右ボタンをクリックし、ウィジェット一覧で<Cmdname sid="AA018" className="uitext" />ウィジェットを選択してください。
 
@@ -128,7 +128,7 @@
 
 <ImgLang img='hitmap.png' desc='ヒットマップ' />
 
-<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 応答時間が伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />チャートの中の領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>をご参照ください。
+<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 応答時間が伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />チャートの中の領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>を参照にしてください。
 
 - 通常のトランザクションは水色→青色→紺色の順に表現されます。
 
@@ -148,7 +148,7 @@
 
 - TPSや平均応答時間などの統計情報には影響しません。
 
-- エージェント設定により、ポリシーを設定できます。 詳細については、[次の文書](agent-transaction)を参考してください。
+- エージェント設定により、ポリシーを設定できます。 詳細については、[次の文書](agent-transaction)を参照にしてください。
 
 - ヒットマップウィジェットを使用してトランザクションを分析するプロセスについては、次の文書を参照してください。
 
@@ -160,7 +160,7 @@
 
 エージェント全体の一覧と進行中のトランザクションの合計数を表示します。 チャートの各グラフにマウスをオーバーすると、トランザクションのステータス速度を確認できます。 トランザクション状態の速度は、<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>に分類します。
 
-- 非活性化されたエージェントを表示または非表示にするには、![エージェント表示アイコン](/img/ic-inactive.svg)ボタンを選択してください。 
+- 非活性化されたエージェントを表示または非表示にするには、![エージェント表示アイコン](/img/ic-inactive.svg)ボタンを選択します。 
 
 - ![right-arrow](/img/right-arrow.svg)ボタンを選択すると<Cmdname sid="side_multi_active_tx" className="uitext" />メニューに移動します。
 
@@ -282,7 +282,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 <InDoc product='java'>
 
-- エージェント設定でユーザーを識別するためにIPまたはクッキーを選択できます。 詳しい内容は、[次の文書](agent-additional-option)をご参照ください。
+- エージェント設定でユーザーを識別するためにIPまたはクッキーを選択できます。 詳しい内容は、[次の文書](agent-additional-option)を参照にしてください。
 
 </InDoc>
 

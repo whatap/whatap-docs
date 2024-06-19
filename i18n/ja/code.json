@@ -137,7 +137,7 @@
     "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "ダークモードとライトモードの切り替え（現在 {mode}）",
+    "message": "ダークモードとライトモードの切り替え(現在 {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
@@ -232,7 +232,7 @@
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "折りたたみ可能なサイドバーの分類 '{label}' 折りたたむ（展開）",
+    "message": "折りたたみ可能なサイドバーの分類 '{label}' 折りたたむ(展開)",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
