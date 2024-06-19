@@ -842,7 +842,7 @@ function _createMdxContent(props) {
       id: "custom",
       children: "사용자 맞춤 항목 모니터링"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["특정 트랜잭션, 도메인, 에이전트를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+      children: ["특정 트랜잭션, 도메인, IP를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "custom",
         className: "uitext"
       }), " 탭에 추가해 응답 시간 분포도 차트에서 선택한 항목만을 확인할 수 있는 기능을 제공합니다. 이를 통해 사용자는 문제가 발생하는 특정 항목을 효율적으로 감시하고 분석할 수 있습니다."]

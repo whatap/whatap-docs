@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18267],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[95424],{
 
 /***/ 15304:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -842,7 +842,7 @@ function _createMdxContent(props) {
       id: "custom",
       children: "사용자 맞춤 항목 모니터링"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["특정 트랜잭션, 도메인, 에이전트를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+      children: ["특정 트랜잭션, 도메인, IP를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "custom",
         className: "uitext"
       }), " 탭에 추가해 응답 시간 분포도 차트에서 선택한 항목만을 확인할 수 있는 기능을 제공합니다. 이를 통해 사용자는 문제가 발생하는 특정 항목을 효율적으로 감시하고 분석할 수 있습니다."]
@@ -1477,7 +1477,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 16820:
+/***/ 10148:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1509,7 +1509,7 @@ const frontMatter = {
 	title: '트랜잭션 맵',
 	description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
 	tags: [
-		'Golnag',
+		'.NET',
 		'트랜잭션 맵',
 		'대시보드',
 		'애플리케이션'
@@ -1517,20 +1517,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/dashboard-transactionmap",
+  "id": "dotnet/dashboard-transactionmap",
   "title": "트랜잭션 맵",
   "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
-  "source": "@site/docs/golang/dashboard-transactionmap.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/dashboard-transactionmap",
-  "permalink": "/whatap-docs/golang/dashboard-transactionmap",
+  "source": "@site/docs/dotnet/dashboard-transactionmap.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/dashboard-transactionmap",
+  "permalink": "/whatap-docs/dotnet/dashboard-transactionmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/dashboard-transactionmap.mdx",
+  "editUrl": "undefined/docs/dotnet/dashboard-transactionmap.mdx",
   "tags": [
     {
-      "label": "Golnag",
-      "permalink": "/whatap-docs/tags/golnag"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "트랜잭션 맵",
@@ -1551,20 +1551,20 @@ const metadata = {
     "title": "트랜잭션 맵",
     "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
     "tags": [
-      "Golnag",
+      ".NET",
       "트랜잭션 맵",
       "대시보드",
       "애플리케이션"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "애플리케이션 대시보드",
-    "permalink": "/whatap-docs/golang/dashboard"
+    "permalink": "/whatap-docs/dotnet/dashboard"
   },
   "next": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/golang/dashboard-active-transaction"
+    "permalink": "/whatap-docs/dotnet/dashboard-active-transaction"
   }
 };
 const assets = {
