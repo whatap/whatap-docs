@@ -818,7 +818,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "사용자 맞춤 항목 모니터링",
-  "id": "사용자-맞춤-항목-모니터링",
+  "id": "custom",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -832,13 +832,14 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "사용자-맞춤-항목-모니터링",
+      id: "custom",
       children: "사용자 맞춤 항목 모니터링"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["특정 트랜잭션, 도메인, 에이전트를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -864,7 +865,9 @@ function _createMdxContent(props) {
           }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "ip",
             className: "uitext"
-          }), " 항목에서 원하는 값을 직접 입력하거나 제공하는 목록에서 선택하세요."]
+          }), " 항목에서 원하는 값을 직접 입력하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Top 30"
+          }), " 목록에서 제공하는 항목을 선택할 수 있습니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "txmap-custom-filter-add.png",
           desc: "커스텀"

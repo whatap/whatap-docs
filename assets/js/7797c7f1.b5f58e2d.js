@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[22276],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[95424],{
 
 /***/ 15304:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -818,7 +818,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "사용자 맞춤 항목 모니터링",
-  "id": "사용자-맞춤-항목-모니터링",
+  "id": "custom",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -832,13 +832,14 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "사용자-맞춤-항목-모니터링",
+      id: "custom",
       children: "사용자 맞춤 항목 모니터링"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["특정 트랜잭션, 도메인, 에이전트를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -864,7 +865,9 @@ function _createMdxContent(props) {
           }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "ip",
             className: "uitext"
-          }), " 항목에서 원하는 값을 직접 입력하거나 제공하는 목록에서 선택하세요."]
+          }), " 항목에서 원하는 값을 직접 입력하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Top 30"
+          }), " 목록에서 제공하는 항목을 선택할 수 있습니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "txmap-custom-filter-add.png",
           desc: "커스텀"
@@ -1474,7 +1477,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 1360:
+/***/ 10148:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1506,7 +1509,7 @@ const frontMatter = {
 	title: '트랜잭션 맵',
 	description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
 	tags: [
-		'PHP',
+		'.NET',
 		'트랜잭션 맵',
 		'대시보드',
 		'애플리케이션'
@@ -1514,20 +1517,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/dashboard-transactionmap",
+  "id": "dotnet/dashboard-transactionmap",
   "title": "트랜잭션 맵",
   "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
-  "source": "@site/docs/php/dashboard-transactionmap.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/dashboard-transactionmap",
-  "permalink": "/whatap-docs/php/dashboard-transactionmap",
+  "source": "@site/docs/dotnet/dashboard-transactionmap.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/dashboard-transactionmap",
+  "permalink": "/whatap-docs/dotnet/dashboard-transactionmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/dashboard-transactionmap.mdx",
+  "editUrl": "undefined/docs/dotnet/dashboard-transactionmap.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "트랜잭션 맵",
@@ -1548,20 +1551,20 @@ const metadata = {
     "title": "트랜잭션 맵",
     "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
     "tags": [
-      "PHP",
+      ".NET",
       "트랜잭션 맵",
       "대시보드",
       "애플리케이션"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "애플리케이션 대시보드",
-    "permalink": "/whatap-docs/php/dashboard"
+    "permalink": "/whatap-docs/dotnet/dashboard"
   },
   "next": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/php/dashboard-active-transaction"
+    "permalink": "/whatap-docs/dotnet/dashboard-active-transaction"
   }
 };
 const assets = {

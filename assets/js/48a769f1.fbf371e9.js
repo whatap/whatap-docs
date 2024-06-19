@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18267],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15371],{
 
 /***/ 15304:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -818,7 +818,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "사용자 맞춤 항목 모니터링",
-  "id": "사용자-맞춤-항목-모니터링",
+  "id": "custom",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -832,13 +832,14 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "사용자-맞춤-항목-모니터링",
+      id: "custom",
       children: "사용자 맞춤 항목 모니터링"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["특정 트랜잭션, 도메인, 에이전트를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -864,7 +865,9 @@ function _createMdxContent(props) {
           }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "ip",
             className: "uitext"
-          }), " 항목에서 원하는 값을 직접 입력하거나 제공하는 목록에서 선택하세요."]
+          }), " 항목에서 원하는 값을 직접 입력하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Top 30"
+          }), " 목록에서 제공하는 항목을 선택할 수 있습니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "txmap-custom-filter-add.png",
           desc: "커스텀"
@@ -1474,7 +1477,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 16820:
+/***/ 35710:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1504,9 +1507,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-transactionmap',
 	title: '트랜잭션 맵',
-	description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
+	description: '자바(Java) 모니터링에서 개별 트랜잭션의 응답 시간을 분포도 형태로 시각화하여 제공하는 트랜잭션 맵 기능을 안내합니다. 실시간 및 과거 데이터 조회 기능을 통해 트랜잭션의 세부 정보를 분석할 수 있으며, 이를 통해 문제점을 식별하고 분석하는 데 유용합니다. 특히 히트맵과 달리 개별 트랜잭션을 표시하여 더 상세한 분석을 할 수 있습니다.',
 	tags: [
-		'Golnag',
+		'Java',
 		'트랜잭션 맵',
 		'대시보드',
 		'애플리케이션'
@@ -1514,20 +1517,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/dashboard-transactionmap",
+  "id": "java/dashboard-transactionmap",
   "title": "트랜잭션 맵",
-  "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
-  "source": "@site/docs/golang/dashboard-transactionmap.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/dashboard-transactionmap",
-  "permalink": "/whatap-docs/golang/dashboard-transactionmap",
+  "description": "자바(Java) 모니터링에서 개별 트랜잭션의 응답 시간을 분포도 형태로 시각화하여 제공하는 트랜잭션 맵 기능을 안내합니다. 실시간 및 과거 데이터 조회 기능을 통해 트랜잭션의 세부 정보를 분석할 수 있으며, 이를 통해 문제점을 식별하고 분석하는 데 유용합니다. 특히 히트맵과 달리 개별 트랜잭션을 표시하여 더 상세한 분석을 할 수 있습니다.",
+  "source": "@site/docs/java/dashboard-transactionmap.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/dashboard-transactionmap",
+  "permalink": "/whatap-docs/java/dashboard-transactionmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/dashboard-transactionmap.mdx",
+  "editUrl": "undefined/docs/java/dashboard-transactionmap.mdx",
   "tags": [
     {
-      "label": "Golnag",
-      "permalink": "/whatap-docs/tags/golnag"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "label": "트랜잭션 맵",
@@ -1546,22 +1549,22 @@ const metadata = {
   "frontMatter": {
     "id": "dashboard-transactionmap",
     "title": "트랜잭션 맵",
-    "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
+    "description": "자바(Java) 모니터링에서 개별 트랜잭션의 응답 시간을 분포도 형태로 시각화하여 제공하는 트랜잭션 맵 기능을 안내합니다. 실시간 및 과거 데이터 조회 기능을 통해 트랜잭션의 세부 정보를 분석할 수 있으며, 이를 통해 문제점을 식별하고 분석하는 데 유용합니다. 특히 히트맵과 달리 개별 트랜잭션을 표시하여 더 상세한 분석을 할 수 있습니다.",
     "tags": [
-      "Golnag",
+      "Java",
       "트랜잭션 맵",
       "대시보드",
       "애플리케이션"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "애플리케이션 대시보드",
-    "permalink": "/whatap-docs/golang/dashboard"
+    "permalink": "/whatap-docs/java/dashboard"
   },
   "next": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/golang/dashboard-active-transaction"
+    "permalink": "/whatap-docs/java/dashboard-active-transaction"
   }
 };
 const assets = {
