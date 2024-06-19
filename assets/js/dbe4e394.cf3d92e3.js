@@ -938,7 +938,7 @@ function install_agent_missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/golang_system-8da823abb548e3c11b54bfc48ec7d9bb.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/golang_system-4f437191bf8b13d0ebb354a4c67a470c.png");
 
 /***/ }),
 
