@@ -106,7 +106,7 @@ const config = {
           remarkPlugins: [ require("@whatap-docs/remark-sectionize") ],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
-          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
+          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx', 'release-notes/otel/*.mdx' ],
         },
         // blog: false,
         blog: {
