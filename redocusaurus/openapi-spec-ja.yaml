@@ -3935,7 +3935,7 @@ components:
           description: 照会終了時間(UNIX epoch time、millisecond)
         total:
           type: integer
-          description: 合計訪問者数
+          description: data 配列の総数
     VisitorStaticDayRecord:
       type: object
       properties:

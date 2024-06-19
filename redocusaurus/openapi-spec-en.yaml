@@ -4068,7 +4068,7 @@ components:
           description: Query end time (UNIX epoch time, millisecond)
         total:
           type: integer
-          description: Total Visitor Count
+          description: Total number of data arrays
     VisitorStaticDayRecord:
       type: object
       properties:

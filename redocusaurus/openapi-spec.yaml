@@ -3875,7 +3875,7 @@ components:
           description: 조회 종료 시간(UNIX epoch time, millisecond)
         total:
           type: integer
-          description: 총 방문자 수
+          description: data 배열의 총 개수
     VisitorStaticDayRecord:
       type: object
       properties:
