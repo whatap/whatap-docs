@@ -1,0 +1,39 @@
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+## Application Weekly Report {#A100_AppWeeklyReport}
+
+This report can provide a comprehensive analysis of key metrics for applications during the week.
+
+:::note
+
+For more information about key terms and metrics, see [the following](#metricdesc).
+
+:::
+
+- <Cmdname sid="overview" className="b600" report />: Provides the total number of visitors and transactions for the week.
+
+- <Cmdname sid="operating_rate" className="b600" report/>: This is the percentage of time when the application ran during a specified period of time. For example, an uptime of 100% means that the application continued to run without a single interruption during the search period. On the other hand, a low uptime rate indicates that the application stopped or abnormal operations happened during the search period.
+
+- <Cmdname sid="performance_trend_chart" className="b600" report/>: This time series chart visually displays key metrics of the system. You can check the numbers of key metrics over time. It is an important metric in evaluating the system stability and performance.
+
+  :::note
+
+  - It provides daily variations and daily average and maximum values.
+
+  - <Csvdownload />
+
+  :::
+
+- Based on the <Cmdname sid="transaction" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: <Cmdname sid="txcount" className="b600" report/>, <Cmdname sid="error_cnt" className="b600" report/>, and <Cmdname sid="res_time_avg" className="b600" report/>, the top 10 transactions can be seen. It provides the number of executions, increases, and decreases for each transaction from a week ago and the week of inquiry.
+
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: A list of top 10 stack traces by comparing the percentage and number of cases from the current week with those from a week ago. You can identify the most frequently called stack.
+
+  :::note
+
+  In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> &gt; <Cmdname sid="topstack" className="uitext" />, you can view the stack information details.
+
+  :::
+
+- <Cmdname sid="sql_res_time" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/> <Cmdname sid="sql_res_time_support" className="b600" report/>: This list has been created after comparing top 10 SQL statements based on the SQL average response time. For each SQL statement, it provides the number of executions, average response time, and increase/decrease time for a week ago and the week of the search.
+
+- <Cmdname sid="errors_in_project2" className="b600" report/>: This statistical information provides the error statistics for the week's projects based on the error class and messages.

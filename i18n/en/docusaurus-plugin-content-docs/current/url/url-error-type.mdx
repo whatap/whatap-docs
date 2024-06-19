@@ -14,44 +14,40 @@ If you drag the chart area that appears on the URL Monitoring screen, the result
 
 <ImgLang img='url-error-type.png' desc='Error types of URL Monitoring' />
 
-## connect timed out
+## Invalid URL
 
-In this case, the access for URL call is blocked.
+This message is generated when an incorrect URL is specified. 
+
+## Unknown Host or URL
+
+This message is generated when the host or URL cannot be found. Make sure that you entered the protocol correctly or entered the correct URL format and host address. 
+
+## Connect Time Out
+
+This message appears when the time out occurs upon connection to an incorrect URL and connection cannot be made. This message appears when an attempt to connect to the server fails within the maximum time of 5 seconds. 
+
+## Read Time Out
+
+This message appears when a read operation is not ended within the specified time. It appears when there is no response within the maximum time of 10 seconds while receiving data from the server.
+
+## Unexpected end of file from server
+
+This message appears when the encoding values ​​of the agent and server are different, or the encoding methods for parameters are different. 
+
+## Connection Refused
+
+This message appears when the connection to call the URL is blocked. If calling from the agent is impossible, it is required to check the URL or the server's firewall.
 
 - First check whether access has any problem by entering the URL in the web browser. Errors may occur during data input.
-- Check the firewall and IP blocking history against frequent calls and explicitly allow access to the IP of the monitoring agent. The external IP of the Seoul agent is 54.180.11.176.
 
-## no route to host
+- Check the firewall and IP blocking history against frequent calls and explicitly allow access to the IP of the monitoring agent. 
 
-The path to reach the destination does not exist. Check whether the following items are entered correctly.
+## No route to host
+
+This message appears when there is no path to reach the destination. It appears when the data cannot be found from the DNS and the URL is missing or not updated. Check that you have entered the following items correctly.
 
 - Port assignment
 
 - Protocol of the input URL
 
-  :::note
-
-  Incorrect input of htts://, https://, etc.:::
-
-  :::
-
-## https
-
-This can happen when a protocol is entered repeatedly in the URL field. Check whether the URL is entered in the form of "https://https://...;".
-
-## handshake alert: unrecognized_name
-
-It occurs when the server name called by the agent is not identified on the server side. Check whether you entered the URL using the http protocol as "http://...;".
-
-## sun.security.validator
-
-```text
-sun.security.validator.ValidatorException: PKIX path building failed:
-sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-```
-
-It occurs when the agent cannot access the SSL certificate of the called site.
-
-- It's an agent problem. Contact [support@whatap.io](mailto:support@whatap.io). Until now, several cases that are not compatible with the SSL certificate's algorithm have been identified.
-
-- If it is possible to share a sample module that can call HTTPS protocol based on Java HttpClient, we will develop and deliver a similar agent.
+  > e.g. in case of typing 'htts://' and 'https://' incorrectly

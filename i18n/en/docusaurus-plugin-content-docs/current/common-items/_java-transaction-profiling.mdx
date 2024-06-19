@@ -68,6 +68,14 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   hook_method_patterns=a.b.C1.*
   ```
 
+  :::note
+
+  - The methods registered through this option can be checked through the Method step in <Cmdname sid="TTL06209" className="uitext" /> or <Cmdname sid="TTL06527" className="uitext" /> window.
+
+  - It is recommended to apply it locally as much as possible. If applied extensively, it may cause performance degradation in applications.
+
+  :::
+
 - **hook_method_supers** <span class='type'>String</span>
 
   Set the super class when measuring the response time of the method inherited from a specific class. It sets the full name of the class. Multiple items are separated with comma (,).
@@ -127,122 +135,3 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   Default `true`
 
   It sets whether or not to collect detailed traces with errors, regardless of the `trace_basetime` or `profile_basetime` option.
-
-## Exceptional handling {#exception}
-
-- **biz_exceptions** <span class='type'>String</span>
-
-  It registers the business exception.
-
-  :::tip
-
-  Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
-
-  :::
-
-  :::note
-
-  In the Java agent [v2.2.20](../release-notes/java/java-2_2_20) or higher, the registered business exceptions are collected as error statistics. In the versions below v2.2.20, the registered business exceptions are excluded from error statistics. However, they appear in the trace details.
-
-  :::
-
-- **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
-
-  Set the business exceptiona and status to restrict event notifications when any business exception occurs. For **Business Exception:Status** set by this option, the event level is changed to <span class="normal">INFO</span>. Business exceptions and status are separated by colon (:). If multiple statuses are used for a business exception, they are separated by ampersand (&). You can set multiple values using comma(,) as the delimiter.
-
-  ```ini title='whatap.conf'
-  # example
-  biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
-  ```
-
-  :::tip
-
-  Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
-
-  :::
-
-- **ignore_exceptions** <span class='type'>String</span>
-
-  The errors of the registered exceptions are ignored.
-
-  :::tip
-
-  Ignore error class/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
-
-  :::
-
-- **transaction_status_error_enable** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
-
-- **status_ignore** <span class='type'>String</span>
-
-  You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore=408,500
-  ```
-
-  :::tip
-
-  Ignore status error/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
-
-  :::
-
-- **status_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-  ```
-
-  :::tip
-
-  Ignore status error set/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
-
-  :::
-
-- **httpc_status_error_enable** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
-
-  :::note
-
-  For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
-
-  :::
-
-- **httpc_status_ignore** <span class='type'>String</span>
-
-  If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
-
-  :::tip
-
-  Ignore HTTP status error code/Exclude error statistics
-
-  :::
-
-- **httpc_status_url_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
-
-  Set it as `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
-
-  :::tip
-
-  Ignore HTTP status error code/Exclude error statistics
-
-  :::
-
-- **trace_sql_exception_enabled** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  It sets whether or not to trace SqlException when it occurs in the JDBC driver. By setting the option value to `false`, you can handle `biz_exceptions` as custom exceptional handling.
