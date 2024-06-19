@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3585],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[88952],{
 
-/***/ 9083:
+/***/ 63688:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,31 +18,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dotnet-2_2_7',
-	title: '.NET Agent v2.2.7',
+	id: 'dotnet-2_2_8',
+	title: '.NET Agent v2.2.8',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/dotnet/dotnet-2_2_6',
+	pagination_next: 'release-notes/dotnet/dotnet-2_2_7',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/dotnet/dotnet-2_2_7",
-  "title": ".NET Agent v2.2.7",
-  "description": "2024년 06월 10일",
-  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.7.mdx",
+  "id": "release-notes/dotnet/dotnet-2_2_8",
+  "title": ".NET Agent v2.2.8",
+  "description": "2024년 06월 19일",
+  "source": "@site/docs/release-notes/dotnet/dotnet-2.2.8.mdx",
   "sourceDirName": "release-notes/dotnet",
-  "slug": "/release-notes/dotnet/dotnet-2_2_7",
-  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_7",
+  "slug": "/release-notes/dotnet/dotnet-2_2_8",
+  "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_8",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.7.mdx",
+  "editUrl": "undefined/docs/release-notes/dotnet/dotnet-2.2.8.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dotnet-2_2_7",
-    "title": ".NET Agent v2.2.7",
+    "id": "dotnet-2_2_8",
+    "title": ".NET Agent v2.2.8",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/dotnet/dotnet-2_2_6",
+    "pagination_next": "release-notes/dotnet/dotnet-2_2_7",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
@@ -51,8 +51,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/python/python-previous"
   },
   "next": {
-    "title": ".NET Agent v2.2.6",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_6"
+    "title": ".NET Agent v2.2.7",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_7"
   }
 };
 const assets = {
@@ -65,6 +65,8 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    admonition: "admonition",
+    code: "code",
     li: "li",
     p: "p",
     ul: "ul",
@@ -74,32 +76,45 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 10일"
+      children: "2024년 06월 19일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " 지원 환경 분석 툴(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://repo.whatap.io/windows/WhaTapDotnetScan.exe",
-            children: "WhaTapDotnetScan.exe"
-          }), ") 개선"]
+            children: "New"
+          }), " .NET 6, 7, 8 버전 추가 지원"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "닷넷이 설치되지 않은 환경에서도 실행될 수 있도록 개선"
+              children: "ASP.NET core 지원"
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "낮은 버전의 닷넷 런타임을 사용하거나 닷넷 런타임이 설치되지 않은 경우 발생하는 오류 수정"
+              children: "HTTP Call, Redis, WCF client, 사용자 로그, Active Stack 지원"
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["별도의 설치 링크로 다운로드하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "https://repo.whatap.io/windows/whatap_dotnet_core.exe",
+                children: "whatap_dotnet_core.exe"
+              })]
             }), "\n"]
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "통합 설치 프로그램은 준비 중입니다."
+          })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 처리 허용량을 넘어선 트랜잭션을 제거하는 과정에서 시작 시점만 남고 종료 시점이 삭제되는 버그 수정"]
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "trace_http_client_ip_header_key"
+          }), " 옵션의 기본값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "X-Forwarded-For"
+          }), "로 변경"]
         }), "\n"]
       }), "\n"]
     })]

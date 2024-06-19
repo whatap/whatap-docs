@@ -25,8 +25,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9589e255.css">
-<script src="/whatap-docs/assets/js/runtime~main.29071e2f.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.0c216295.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.a97a712b.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.37a9d8c2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -55,6 +55,7 @@
 </li>
 <li>
 <p><strong>trace_http_client_ip_header_key</strong> <span class="type">String</span> <code class="my">.NET Agent v2.2.2 or later</code> <a href="/whatap-docs/dotnet/agent-number-of-user#trace_http_client_ip_header_key" class="hash-link"><span id="trace_http_client_ip_header_key">​</span></a></p>
+<p>기본값 <code>X-Forwarded-For</code></p>
 <p>클라이언트 IP(Remote IP)의 정보를 특정 HTTP 헤더의 값으로 변경해 설정하는 기능입니다. 프록시(Proxy) 환경에서 <code>X-Forwarded-For</code> 헤더 값을 클라이언트 IP로 설정할 수 있습니다.</p>
 <p>WEB/WAS 앞에 L4와 같은 로드밸런서가 위치한 경우 클라이언트의 IP 주소가 아닌 L4의 IP 주소가 Remote Address가 되는 경우가 있습니다. 이 상황에서 실제 클라이언트 IP 정보가 http 헤더에 특정 키 값으로 기록되는 경우라면 해당 키 값으로 대체할 수 있습니다.</p>
 </li>
