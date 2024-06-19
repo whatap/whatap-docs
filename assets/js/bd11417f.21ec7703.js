@@ -58,6 +58,10 @@ const assets = {
 
 
 const toc = [{
+  "value": "Preview 2.7.0.a1",
+  "id": "preview-270a1",
+  "level": 2
+}, {
   "value": "Preview 2.7.0.a0",
   "id": "preview-270a0",
   "level": 2
@@ -102,6 +106,29 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "preview-270a1",
+        children: "Preview 2.7.0.a1"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 06월 27일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        class: "indentTab",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Feature"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_agentsConfiguration",
+              className: "uitext"
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_threadList",
+              className: "uitext"
+            }), " 메뉴의 테이블에서 CPU 시간 증가량을 표시하는 컬럼 추가"]
+          }), "\n"]
+        })
+      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
