@@ -16,6 +16,8 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## Transaction Tracing
 
+The following agent options allow you to trace the execution paths of each transaction within applications in detail. You can adjust various aspects, from the minimum response time to the number of execution steps for transactions.
+
 import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
 <Transactionprofilingcommon />
@@ -24,13 +26,41 @@ import Javatransactionprofiling from "../common-items/_java-transaction-profilin
 
 <Javatransactionprofiling />
 
+## Exceptional handling {#exception}
+
+The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
+
+import JavaException from "../common-items/_java-exception-options.mdx";
+
+<JavaException />
+
+## HTTP transaction tracing
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
+
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
+
+<Transactiontracecommon />
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp />
+
 import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
 
 <Javahttptransaction />
 
+## Non-HTTP transaction tracing
+
+The following options are used to trace and monitor non-HTTP transactions: These options allow you to closely trace background tasks or transactions for other protocols.
+
 import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
 
 <Javanonhttptransaction />
+
+## Multiple transaction trace
+
+The following options are used to trace and monitor cross-application calls. The options can help you understand the interactions between multiple applications. Various options provided allow you to fine-tune the behaviors for tracing multiple transactions.
 
 import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
@@ -38,7 +68,9 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
 ## Trace data sampling
 
-<code class="my">Java Agent v2.2.4 or later</code>
+The following options are used to control sampling of trace data and set whether to transmit data. The options allow you to manage the performance and data transfer volume for applications.
+
+Agent support scope: <code class="my">Java Agent v2.2.4 or later</code>
 
 - **trace_sampling_enabled** <span class='api'>Boolean</span>
 
@@ -92,6 +124,8 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
   ```
 
 ## Tracing HttpURLConnection
+
+The following options are used to trace HTTP calls by using the `HttpURLConnection` class.
 
 - **HttpURLConnection** <span class='type'>Boolean</span>
 

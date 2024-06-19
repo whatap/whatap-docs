@@ -50,7 +50,7 @@ You can create, modify, and delete event policies such as **_Server_**, **_Proce
 
 Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Server_** tab, and then select **_+ Add alert policy_**.
 
-You can set overall events for a specific server. 
+You can receive alerts by setting the global events for specific servers. 
 
 <ImgLang img='server-server-event.png' desc='Adding a server event'/>
 
@@ -156,7 +156,15 @@ WhaTap server monitoring service provides the following basic event settings aft
 
 Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Process_** tab, and then select **_+ Add alert policy_**.
 
-You can set the event policy for a specific process.
+You can receive alerts by setting the events for specific processes. If you specify conditions based on the key metrics such as **_process count_**, **_process CPU_** usage, and **_process memory_** usage, you can prevent the processes from terminating unexpectedly or experiencing rapid performance fluctuations. By doing so, you can receive alerts in real time.
+
+You can assess the severity of events by setting the warning and critical levels and the **_duration_** for which the set thresholds remain in effect. You can also send alerts to specific project members by using the **_event receiving tag_**. This allows you to efficiently take prioritized actions.
+
+{/* 
+
+이벤트의 심각성을 평가하고 우선순위에 따라 조치를 취할 수 있습니다. 또한 **_이벤트 수신 태그 설정_**을 통해 전체 프로젝트 멤버 대신 알림을 받을 대상을 지정할 수 있습니다.
+
+일시적인 상황을 구분해 보다 정확한 알림을 제공합니다. 또한 **_이벤트 수신 태그 설정_**을 통해 전체 프로젝트 멤버 대신 알림을 받을 대상을 지정할 수 있습니다.  */}
 
 <ImgLang img='server-process-event.png' desc='Event Alert settings - Process'/>
 

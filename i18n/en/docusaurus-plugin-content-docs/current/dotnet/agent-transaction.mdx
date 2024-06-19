@@ -11,67 +11,9 @@ import Transaction from "../common-items/_transaction.mdx";
 
 <Transaction />
 
-The agent traces the transaction performance and provides the following configurable options.
+## Transaction Tracing
 
-### Transaction Tracing
-
-import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profile.mdx";
-
-<Dotnettransactionprofile />
-
-- **transaction_status_error_enable** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
-
-- **status_ignore** <span class='type'>String</span>
-
-  You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore=408,500
-  ```
-
-- **status_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-  ```
-
-- **httpc_status_error_enable** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
-
-  :::note
-
-  For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
-
-  :::
-
-- **httpc_status_ignore** <span class='type'>String</span>
-
-  If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
-
-- **httpc_status_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
-
-  :::note
-
-  Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
-
-  :::
-
-- **profile_http_parameter_keys** <span class='type'>String</span>
-
-  Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
+The following agent options allow you to trace the execution paths of each transaction for applications in detail.
 
 - **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
@@ -96,3 +38,139 @@ import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profil
   Default `false`
 
   If the option value is set to `true`, the full name of the application appears before the URL of the transaction.
+
+- **trace_db_command_methods** <span class='type'>String</span>
+
+  Enter the name of the method to monitor in the `System.Data.Common.DbCommand` class. To set multiple values, use comma (,) as the delimiter. To monitor all methods, apply as follows:
+
+  ```ini title="whatap.conf"
+  trace_db_command_methods=ExecuteReader, ExecuteReaderAsync, ExecuteNonQuery, ExecuteNonQueryAsync, ExecuteScalar, ExecuteScalarAsync
+  ```
+
+## Exceptional handling {#exception}
+
+The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
+
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
+
+- **status_ignore** <span class='type'>String</span>
+
+  You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
+
+  :::tip
+
+  Ignore status error/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
+- **status_ignore_set** <span class='type'>String</span>
+
+  `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
+
+  :::tip
+
+  Ignore status error set/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
+- **httpc_status_error_enable** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
+
+  :::note
+
+  For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
+
+  :::
+
+- **httpc_status_ignore** <span class='type'>String</span>
+
+  If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
+
+  :::tip
+
+  Ignore HTTP status error code/Exclude error statistics
+
+  :::
+
+- **httpc_status_ignore_set** <span class='type'>String</span>
+
+  `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+  Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+
+  :::tip
+
+  Ignore HTTP status error code/Exclude error statistics
+
+  :::
+
+## HTTP transaction tracing
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
+
+- **profile_http_parameter_keys** <span class='type'>String</span>
+
+  Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
+
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  To record HTTP headers in the trace details, set it to `true`.
+
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+
+  Default `false`
+
+  To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
+
+  :::note
+
+  Set the security key to 6 digits in _'%PROGRAMFILES%'\\WhaTap .NET\\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+
+  :::
+
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
+
+  It is used to define the prefix of URL to record HTTP parameters in the trace details.
+
+- **profile_http_body_url_prefix** <span class='type'>String</span>
+
+  It is used to define the prefix of the target URL to record the HTTP body information in the trace history.
+
+- **trace_ignore_url_set** <span class='type'>String</span>
+
+  It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
+- **trace_ignore_url_prefix** <span class='type'>String</span>
+
+  Set the URL prefix for excluding transactions during collection. Any URLs whose prefix matches the set value do not collect the transaction performance. For multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::

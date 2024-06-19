@@ -40,7 +40,7 @@ In case of setting multiple classes, use the comma (,) as the delimiter. Part or
   whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
   ```
 
-- **In case of replacing the package and method name with "\*"**
+- **In case of replacing the package and method name with `*`**
 
   ```java
   *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
@@ -74,20 +74,20 @@ In most cases, the explicit type casting is required because objects are returne
 
 1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
 2. Write the plug-in code in _TraceHelperStart.x_.
 
-```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
-// Substitute the class name and method name in the string prefix.
-String prefix = $point.class1 + "." + $point.method;
-// Set the WhaTap trace property name to `prefix` + "st" as the current time.
-$ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
-// Add the current time in the trace information.
-$ctx.profile(prefix + " Start", new java.util.Date().toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
+   // Substitute the class name and method name in the string prefix.
+   String prefix = $point.class1 + "." + $point.method;
+   // Set the WhaTap trace property name to `prefix` + "st" as the current time.
+   $ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
+   // Add the current time in the trace information.
+   $ctx.profile(prefix + " Start", new java.util.Date().toString()); 
+   ```
 
 Display the method start time in the transaction trace as follows.
 
@@ -97,22 +97,22 @@ Display the method start time in the transaction trace as follows.
 
 1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
-1. Write the plug-in code in _TraceHelperEnd.x_.
+2. Write the plug-in code in _TraceHelperEnd.x_.
 
-```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
-String prefix = $point.class1 + "." + $point.method;
-// Import the trace attributes added in the TraceHelperStart.x file.
-long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
-long gap = System.currentTimeMillis() - st;
-StringBuilder sb = new StringBuilder();
-sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
-// Add the gap (execution time) between the start time and the current time to the trace information.
-$ctx.profile(prefix + " End", sb.toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
+   String prefix = $point.class1 + "." + $point.method;
+   // Import the trace attributes added in the TraceHelperStart.x file.
+   long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
+   long gap = System.currentTimeMillis() - st;
+   StringBuilder sb = new StringBuilder();
+   sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
+   // Add the gap (execution time) between the start time and the current time to the trace information.
+   $ctx.profile(prefix + " End", sb.toString()); 
+   ```
 
 It displays the method start time and execution time in the transaction trace as follows.
 
@@ -164,7 +164,7 @@ It is prohibited to store personally identifiable information by using plug-in A
 
 | Parameter | Method/variable                                                         | Description                                                                        |
 | :-------: | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-|   None    | void log(Object c)                                   | Logging through the logger                                                         |
+|    No     | void log(Object c)                                   | Logging through the logger                                                         |
 |   ^       | void println(Object c)                               | Printing through System.out.printin()                           |
 |   ^       | Object field(Object o, String field)                 | It returns the field value.                                                        |
 |   ^       | Object method(Object o, String method)               | Invoke method                                                                      |

@@ -1,0 +1,120 @@
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+## Daily Report
+
+It provides the report to check changes in application performance for the day. The provided report form as a daily report is as follows:
+
+- [<Cmdname sid="A001_AppDailyReport" className="uitext" report/>](#A001_AppDailyReport)
+
+- [<Cmdname sid="A004_AppDailyProjectPerfReport" className="uitext" report/>](#A004_AppDailyProjectPerfReport)
+
+- [<Cmdname sid="A006_AppUserStatReport" className="uitext" report/>](#A006_AppUserStatReport)
+
+- [<Cmdname sid="A00_DailyReportTag" className="uitext" report/>](#A00_DailyReportTag)
+
+- [<Cmdname sid="A012_AppDailyOidCustomReport" className="uitext" report/>](#A012_AppDailyOidCustomReport)
+
+### Application Daily Report {#A001_AppDailyReport}
+
+This report provides a comprehensive analysis of key metrics for application performance for the day.
+
+:::note
+
+For more information about key terms and metrics, see [the following](#metricdesc).
+
+:::
+
+- <Cmdname sid="overview" className="b600" report />: You can see the key performance metrics of the application.
+
+- <Cmdname sid="peaktime_performance_summary" className="b600" report/>: You can see the time of the day when the throughput (TPS) was the highest and the metric value of that time.
+
+- <Cmdname sid="avg_max_by_metrics" className="b600" report/>: You can check the average values for each key metric for the day and the maximum value based on the time of occurrence.
+
+- <Cmdname sid="performance_trend_chart" className="b600" report/>: This time series chart visually displays key metrics of the system. You can check the numbers of key metrics over time. It is an important metric in evaluating the system stability and performance.
+
+  :::note
+
+  - <Cmdname sid="A100_AppWeeklyReport" className="b600" report/> provides additional daily changes.
+
+  - <Csvdownload />
+
+  :::
+
+- <Cmdname sid="daily_hitmap" className="b600" report/>: You can see the distribution of transactions and error occurrences by time zone for the day at a glance. The x-axis of the graph represents the end times for each transaction, and the y-axis represents the response times (seconds). Normal transactions are displayed in <span class='ntrs'>blue</span>, and erroneous transactions are displayed in <span class='etrs'>red</span>.
+
+  <ImgLang img='app_daily_report_03.png' desc='' />
+
+- <Cmdname sid="application_summary" className="b600" report/>: You can check the status for each monitored agent. <Cmdname sid="active_cnt" className="b600" report/> indicates the number of active transactions.
+
+- <Cmdname sid="transaction" className="b600" report/> **TOP 10**: Based on the <Cmdname sid="txcount" className="b600" report/>, <Cmdname sid="error_cnt" className="b600" report/>, and <Cmdname sid="res_time_avg" className="b600" report/>, you can see the top 10 transactions.
+
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10**: Based on the steps on the stack trace, you can view simplified data calculated as call frequency rates between steps.
+
+  :::note
+
+  In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> &gt; <Cmdname sid="topstack" className="uitext" />, you can view the stack information details.
+
+  :::
+
+- <Cmdname sid="sql_res_time" className="b600" report/> **TOP 10**: This is the statistical data sorted by the average response time for the used SQL query statements.
+
+  :::note
+
+  - **Increase %**: This figure is calculated for the percentage increase by comparing the average data for three days up to the day before the search and the data of the search.
+
+    > e.g. `4/25 00:00` to `23:59` data inquiry → comparison with `4/22 00:00` to `4/24 23:59` data\
+    > If the figure is greater than 10%, it appears in <span class='ov10'>red</span>, and it is between 5% and 10%, it appears in <span class='ov5ud10'>orange</span>. The growth rates less than 5% are not displayed.
+
+  - In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />, you can view the occurrence time and performance for each query.
+
+  :::
+
+### Application Peak Performance Comparison {#A004_AppDailyProjectPerfReport}
+
+For each monitored agent, the application's maximum performance metric appears by comparing with the data for the day (<span class="vslow">red</span>), the previous day (<span class="normal">blue</span>), and the previous week (<span class="vslow">blue</span>). Each metric displays the maximum value in a specific time zone and the metric value for the corresponding time. This allows you to see performance changes for each application at a glance.
+
+:::note
+
+For more information about key terms and metrics, see [the following](#metricdesc).
+
+:::
+
+### Application User Statistics {#A006_AppUserStatReport}
+
+This report provides a time series chart of the numbers of concurrent users at intervals of 10 seconds, 5 minutes, and 30 minutes and the number of visitors per hour. This report can provide valuable data to help you understand usage patterns and effectively manage user traffic.
+
+- **10s** <Cmdname sid="realtime_user" className="b600" report/>: You can closely monitor real-time traffic changes to identify the time zone when the number of users suddenly increased. You can also establish a strategy to provide content and services during the time zone when users are most concentrated.
+
+- **5m** / **30m** <Cmdname sid="realtime_user" className="b600" report/>: Server resources and network bandwidth can be efficiently distributed by analyzing short- to medium-term user patterns. You can also predict the peak time zone and plan to allocate more resources to the period.
+
+- **1h** <Cmdname sid="visitor" className="b600" report/>: You can analyze the user visiting patterns over time and use them in marketing strategies and operation plans.
+
+### Daily Metric Trend Charts(Avg/Max) {#A00_DailyReportTag}
+
+This report provides various performance metrics for applications in a time series chart. The average and maximum values ​​for each metric are visually displayed. This allows you to monitor the system performance trends and use the data needed for performance optimization and troubleshooting.
+
+The title of the chart is in the **Category[Field]** format. For more information about the application performance metrics, see [the following](metrics-app).
+
+:::note
+
+- <UI>Avg.</UI>: It is distinguished by the <span class="normal">blue</span> line. It displays the average values for each time zone.
+
+- <UI>Max.</UI>: It is distinguished by the <span class="vslow">red</span> line and it represents the maximum values for each time zone.
+
+:::
+
+### Application Daily Custom Report {#A012_AppDailyOidCustomReport}
+
+You can create a report by selecting the desired metrics. You can create reports that provide time series charts based on the selected metrics.
+
+![Custom report](/img/apm-custom-report.png)
+
+1. In <Cmdname sid="report" className="uitext" /> on the screen, select <Cmdname sid="A012_AppDailyOidCustomReport" className="uitext" report />.
+
+2. In <Cmdname sid="layout_setting" className="uitext" />, set the desired number of columns.
+
+3. Select desired metrics. To select all, click <Cmdname sid="select_all" className="uitext" />.
+
+4. Select ![Search icon](/img/ico-btn-search.png).
+
+The report is generated.

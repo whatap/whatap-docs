@@ -66,7 +66,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 db.createUser(
   {
     user: "whatap",
-    pwd: "DB_Password"
+    pwd: "DB_Password",
     roles: [
         { "role" : "clusterMonitor", "db" : "admin" },
    ]
@@ -76,7 +76,9 @@ db.createUser(
 
 :::note
 
-For more information about the account creation in the MongoDB environment, see [the following link](https://www.mongodb.com/docs/manual/reference/method/db.createUser/).
+- If the `user` and `pwd` values ​​include special characters, they must be converted using the percent encoding. For example, if the password is `whatap@#`, it must be converted to `whatap%40%23` for entry. For more information, see the [following link](https://www.mongodb.com/docs/manual/reference/connection-string/#connection-string-components-1).
+
+- For more information about the account creation in the MongoDB environment, see [the following link](https://www.mongodb.com/docs/manual/reference/method/db.createUser/).
 
 :::
 

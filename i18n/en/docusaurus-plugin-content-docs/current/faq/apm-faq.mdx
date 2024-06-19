@@ -49,4 +49,20 @@ If you use the <Cmdname sid="stop_thread" className="uitext" /> feature, an atte
 
 In this case, forcible termination of the thread is not recommended because it may cause problems with business logic and cause unexpected operations. If you still need to terminate the thread, stop and restart the entire application.
 
+### 'Lost Connection' message
+
+> In the transaction trace information, it is displayed as 'Lost Connection', and it is not possible to check the details of which process has been run and ended.
+
+In Application Monitoring for **PHP**, **Python**, **.NET**, and **Go** products, information on the transactions that have not been terminated within 5 minutes (default: `30000`) is not collected. The 'Lost Connection' message is left in the trace history. 
+
+To collect the trace data for transactions that are delayed more than 5 minutes, set the following option value to `30000` or higher.
+
+```ini title="whatap.ini"
+# PHP
+whatap.trace_active_transaction_lost_time=300000
+
+#Python, .NET, Go
+trace_active_transaction_lost_time=300000
+```
+
 </div>

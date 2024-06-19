@@ -6,6 +6,150 @@ pagination_next: release-notes/service/service-2_4_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.5.10
+
+June 5, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_hitmap" className="uitext" />, fixed the issue where a specified instance is not selected by default in the pop-up menu when tracing databases.
+
+- <Status>Fixed</Status> When going to the screen in presentation or custom theme mode, in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dailyAppStat" className="uitext" />, fixed the whiteout issue.
+
+---
+
+### `Database`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where filtering is not applied.
+
+- <Status>Fixed</Status> Fixed the issue where the `s_equal` string is found in <Cmdname sid="filter" className="uitext" /> when going to the <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" /> menu by clicking a link such as filter value from other menus.
+
+</div>
+
+## Service 2.5.9
+
+June 4, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />, fixed the issue where more than 100 data units are not viewed.
+
+</div>
+
+## Service 2.5.8
+
+June 3, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Feature</Status> Added the URL copying button in the <Cmdname sid="TTL06209" className="uitext" /> window.
+
+---
+
+### `Kubernetes`
+
+- <Status>Fixed</Status> In the <Cmdname sid="BTN07267" className="uitext" /> guide of <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, corrected some option names and typos in the Kubernetes environment variables.
+
+- <Status>Fixed</Status> Fixed the issue where default agent settings on a task or project basis cannot be set in the following menu path:
+
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />
+  - <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
+
+- <Status>Fixed</Status> Fixed the issue where filtering is applied wrongly when selecting applications from the resource relationship chart in the following menu path.
+
+  - <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_podList" className="uitext" />
+  - <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_deploymentList" className="uitext" /> &gt; ![Details icon](/img/ico-detail-view.svg) <Cmdname sid="BTN06342" className="uitext" /> &gt; <Cmdname sid="resource" className="uitext" />
+
+- <Status>Fixed</Status> Fixed the issue where the application performance metrics are not displayed in the <Cmdname sid="resource" className="uitext" /> tab of a list-type menu.
+
+</div>
+
+## Service 2.5.7
+
+May 30, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" />, added the continuous search prevention feature.
+
+</div>
+
+## Service 2.5.6
+
+May 28, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />, fixed the issue where the last selected column value cannot be loaded.
+
+- <Status>Fixed</Status> In the search bar of <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />, fixed the issue where vowels and consonants are entered separately when entering Korean characters.
+
+- <Status>Fixed</Status> Fixed the issue where a chart is not output when you select an error transaction in the <Cmdname sid="TTL06209" className="uitext" /> window and then open the <Cmdname sid="error_statistics" className="uitext" /> window in the <Cmdname sid="TTL06125" className="uitext" /> tab.
+
+</div>
+
+## Service 2.5.4
+
+May 27, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status>Changed</Status> In the <Cmdname sid="account_user_phone" className="uitext" /> section of <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="side_accountManagement" className="uitext" />, modified to allow only the Korean country code to be entered.
+
+</div>
+
+## Service 2.5.3
+
+May 23, 2024
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the repository path for Debian/Ubuntu related installation commands.
+
+</div>
+
+## Service 2.5.2
+
+May 23, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Fixed</Status> In the widget of <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" />, fixed the issue where the data on the comparison date does not appear when a CSV file is downloaded.
+
+- <Status>Fixed</Status> Fixed the issue where the tooltip of the TOP N chart widget does not appear on the dashboard.
+
+---
+
+### `Application`
+
+#### PHP, Python, .Net
+
+<Status>Fixed</Status> Fixed the issue where the <Cmdname sid="AA017" className="uitext" /> widget on the dashboard does not call APIs.
+
+---
+
+### `Database`
+
+<Status>Fixed</Status> Fixed the issue where unreleased products are exposed on the introduction page to the database monitoring.
+
+</div>
+
 ## Service 2.5.1
 
 May 22, 2024

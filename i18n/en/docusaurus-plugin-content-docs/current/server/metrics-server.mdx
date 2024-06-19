@@ -26,7 +26,7 @@ It is the metric for server resources.
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_base-tags}
 
 | Tag name  | Description                                   | Remarks |
 | --------- | --------------------------------------------- | ------- |
@@ -36,7 +36,7 @@ It is the metric for server resources.
 | okindName | Server type name                              | -       |
 | os        | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_base-fields}
 
 | Field name           | Unit            | Description                                               | Remarks |
 | -------------------- | --------------- | --------------------------------------------------------- | ------- |
@@ -89,7 +89,7 @@ Metrics for each server CPU core
 - Collection interval: 5 seconds
 - Statistical data: -
 
-#### Tags
+#### Tags {#server_cpu_core-tags}
 
 | Tag name | Description                                   | Remarks |
 | -------- | --------------------------------------------- | ------- |
@@ -98,7 +98,7 @@ Metrics for each server CPU core
 | oname    | Server name                                   | -       |
 | os       | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_cpu_core-fields}
 
 | Field name           | Unit            | Description                      | Remarks |
 | -------------------- | --------------- | -------------------------------- | ------- |
@@ -124,7 +124,7 @@ It has metrics for each file system mounted on each server.
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_disk-tags}
 
 | Tag name       | Description                                   | Remarks |
 | -------------- | --------------------------------------------- | ------- |
@@ -136,7 +136,7 @@ It has metrics for each file system mounted on each server.
 | oname          | Server name                                   | -       |
 | os             | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_disk-fields}
 
 | Field name       | Unit            | Description                                                             | Remarks |
 | ---------------- | --------------- | ----------------------------------------------------------------------- | ------- |
@@ -167,7 +167,7 @@ Network interface metrics for each server
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_network-tags}
 
 | Tag name | Description                                   | Remarks |
 | -------- | --------------------------------------------- | ------- |
@@ -178,7 +178,7 @@ Network interface metrics for each server
 | oname    | Server name                                   | -       |
 | os       | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_network-fields}
 
 | Field name     | Unit            | Description      | Remarks |
 | -------------- | --------------- | ---------------- | ------- |
@@ -204,7 +204,7 @@ It provides the network protocol statistics for each server.
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_netstat-tags}
 
 | Tag name                                           | Description                     | Remarks |
 | -------------------------------------------------- | ------------------------------- | ------- |
@@ -223,7 +223,7 @@ It provides the network protocol statistics for each server.
 | whatap_product                                     | WhaTap product type             | -       |
 | whatap_version                                     | WhaTap agent version            | -       |
 
-#### Fields
+#### Fields {#server_netstat-fields}
 
 | Field name             | Unit            | Description                        | Remarks |
 | ---------------------- | --------------- | ---------------------------------- | ------- |
@@ -249,7 +249,7 @@ It has the server process information.
 - Collection interval: 20 seconds
 - Statistical data: 5 minutes
 
-#### Tags
+#### Tags {#server_process-tags}
 
 | Tag name | Description                     | Remarks |
 | -------- | ------------------------------- | ------- |
@@ -261,7 +261,7 @@ It has the server process information.
 | oname    | Server name                     | -       |
 | user     | Linux user name for the process | -       |
 
-#### Fields
+#### Fields {#server_process-fields}
 
 | Field name          | Unit            | Description                          | Remarks |
 | ------------------- | --------------- | ------------------------------------ | ------- |

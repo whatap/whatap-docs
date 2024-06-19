@@ -48,6 +48,18 @@
 
   It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
   Set the URL prefix for excluding transactions during collection. Any URLs whose prefix matches the set value do not collect the transaction performance.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
