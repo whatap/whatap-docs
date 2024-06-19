@@ -44,11 +44,11 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
    db_port={DB_server_port}
    ```
 
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードしてください。_/圧縮を解凍したフォルダ/jdbc_
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+   データベースサーバーのOSとバージョンに合わせてJDBCドライバをダウンロードします。
 
-   **MongoDB JDBC Drivers**: https://github.com/mongodb/mongo-jdbc-driver
+   **MongoDB JDBC Drivers**：https://github.com/mongodb/mongo-jdbc-driver
 
 {/* 공통 Notes*/}
 import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
@@ -66,7 +66,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 db.createUser(
   {
     user: "whatap",
-    pwd: "DB_Password"
+    pwd: "DB_Password",
     roles: [
         { "role" : "clusterMonitor", "db" : "admin" },
    ]
@@ -76,7 +76,9 @@ db.createUser(
 
 :::note
 
-MongoDB環境のアカウント作成の詳細については、[次のリンク](https://www.mongodb.com/docs/manual/reference/method/db.createUser/)を参照してください。
+- `user`と`pwd`値に特殊文字を含めると、パーセントエンコード(percent encoding)を適用して変換する必要があります。例えば、パスワードが`whatap@#`だったら`whatap%40%23`に変換して入力する必要があります。詳細は、[次のリンク](https://www.mongodb.com/docs/manual/reference/connection-string/#connection-string-components-1)を参照してください。
+
+- MongoDB環境のアカウント作成の詳細については、[次のリンク](https://www.mongodb.com/docs/manual/reference/method/db.createUser/)を参照してください。
 
 :::
 
@@ -84,7 +86,7 @@ MongoDB環境のアカウント作成の詳細については、[次のリンク
 
 :::tip
 
-userとpasswordを使用しない場合 (認証なしでMongoDBに接続可能な場合) **_データベースユーザーファイルの生成_**する手順をスキップできます。
+userとpasswordを使用しない場合(認証なしでMongoDBに接続可能な場合) **_DBユーザーファイル生成_**する手順をスキップできます。
 
 :::
 

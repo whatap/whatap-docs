@@ -1,13 +1,13 @@
 ---
 id: install-master-node-agent
-title: マスターおよびNodeエージェントのインストール
-description: インストール手順のページに従って、マスターおよびNodeエージェントのインストールプロセスを進めてください。
+title: マスターおよびノードエージェントのインストール
+description: インストール手順のページに従って、マスターおよびノードエージェントのインストールプロセスを進めてください。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
   - エージェント
   - マスター
-  - Node
+  - ノード
   - エージェントのインストール
 toc_max_heading_level: 2
 ---
@@ -25,13 +25,13 @@ EKS Fargateは、対応予定です。
 
 ## 環境を事前に確認して設定
 
-ユーザーのKubernetes環境によって、事前に環境設定が必要になります。Istio、GKE、OpenShiftの環境ではない場合は、[次の段階](#create-kubernetes-agent)に進んでください。
+ユーザーのKubernetes環境によって、事前に環境設定が必要になります。Istio、GKE、OpenShiftの環境ではない場合は、[次の手順](#create-kubernetes-agent)に進みます。
 
 <Tabs>
 
 <TabItem value='istio' label='Istio環境' default>
 
-Istio環境の場合は、次のコマンドを実行し、WhaTap収集サーバーと通信するリソースであるServiceEntryを生成してください。
+Istio環境の場合は、次のコマンドを実行し、WhaTap収集サーバーと通信するリソースであるServiceEntryを生成します。
 
 ```bash title='SH'
 kubectl create namespace whatap-monitoring
@@ -81,7 +81,7 @@ gcloudコマンドのインストールの詳細については、[グーグル�
 
 <ImgLang img='kube-install-openshift.png' desc='OpenShift'/>
 
-**_インストール方法_**画面で**_OpenShift環境の場合の追加設定_**セクションを開いて**_whatap_openshift_scc.yaml_**ボタンを選択してください。ファイルをダウンロードした後、次のコマンドを実行してください。
+**_インストール方法_**画面で**_OpenShift環境の場合の追加設定_**セクションを開いて**_whatap_openshift_scc.yaml_**ボタンを選択します。ファイルをダウンロードした後、次のコマンドを実行します。
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -101,7 +101,7 @@ WhaTap Kubernetesエージェントのインストール時、*helm* チャー�
 
 ### Helmバージョン確認とWhaTapリポジトリのネットワーク接続状態確認{#k8s-helm-prechek}
 
-1. 次のコマンドを通じて *helm* バージョンを確認してください。3.xバージョン以降に対応します。 
+1. 次のコマンドで*helm*のバージョンを確認します。3.xバージョン以降に対応します。 
 
    ```bash
    helm version
@@ -119,14 +119,14 @@ WhaTap Kubernetesエージェントのインストール時、*helm* チャー�
 
 ワタブHelmリポジトリを追加した後、ユーザーのContainer Runtimeに合った適切なデフォルト設定ファイルを作成して、エージェントをインストールしてください。
 
-1. 次のコマンドを実行して、WhaTap Helmリポジトリを追加してください。
+1. 次のコマンドを実行して、WhaTap Helmリポジトリを追加します。
 
    ```bash
    helm repo add whatap https://whatap.github.io/helm/
    helm repo update
    ```
 
-2. 次のコマンドを実行して、ユーザーの**CONTAINER-RUNTIME**を確認してください。 
+2. 次のコマンドを実行して、ユーザーの**CONTAINER-RUNTIME**を確認します。 
 
    ```bash
    kubectl get nodes -o wide
@@ -134,7 +134,7 @@ WhaTap Kubernetesエージェントのインストール時、*helm* チャー�
 
    ![](/img/k8s-check-containerRuntime.png)
 
-3. **CONTAINER-RUNTIME**を確認し、インストールに必要なデフォルト設定ファイル(*values.yaml*)を次のように作成してください。 
+3. **CONTAINER-RUNTIME**を確認し、インストールに必要なデフォルト設定ファイル(*values.yaml*)を次のように作成します。 
 
    ```yaml
    containerRuntime: #CONTAINER-RUNTIME
@@ -144,15 +144,15 @@ WhaTap Kubernetesエージェントのインストール時、*helm* チャー�
        port: "6600"
    ```
 
-4. 次のようにエージェントアプリケーションをインストールしてください。 
+4. 次のようにエージェントアプリケーションをインストールします。 
 
-   - エージェントを**初めて**インストールするユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールしてください。 
+   - エージェントを**初めて**インストールするユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールします。 
 
      ```bash
      helm install whatap-kube-agent whatap/kube -f values.yaml
      ```
 
-   - **既存**WhaTap Kubernetesエージェントのユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールしてください。 
+   - **既存**WhaTap Kubernetesエージェントのユーザーは、次のコマンドを実行してエージェントアプリケーションをインストールします。 
 
      ```bash
      kubectl delete ns whatap-monitoring
@@ -163,13 +163,13 @@ WhaTap Kubernetesエージェントのインストール時、*helm* チャー�
 
    :::note 
 
-   既存 *yaml* ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。既存のKubernetesエージェントを削除した後、*helm* チャートによるインストールが可能です。 
+   既に*yaml*ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。既存のKubernetesエージェントを削除した後、*helm*チャートによるインストールが可能です。 
 
    :::
 
-### *values.yaml*主要設定項目
+### *values.yaml*の主な設定項目
 
-WhaTap Kubernetesエージェントの設定を修正するには、デフォルト設定ファイル(*values.yaml*)を修正する必要があります。*values.yaml* ファイル内の主な設定項目を次のように案内します。 
+WhaTap Kubernetesエージェントの設定を修正するには、設定ファイル(*values.yaml*)の修正が必要です。*values.yaml*の主な設定項目を次のように案内します。 
 
 <div class='k8s-values-yaml-table'>
 
@@ -197,7 +197,7 @@ WhaTap Kubernetesエージェントの設定を修正するには、デフォル
 | `deployment.replicas`                                                | Int     | `1`                      | Deploymentのreplica数                                        |
 | `deployment.containers.controlPlaneHelper.enabled`                   | Boolean | `true`                   | whatap-control-plane-helperコンテナの活性化有無                      |
 | `deployment.containers.controlPlaneHelper.image`                     | String  | `"whatap/kube_mon"`      | controlPlaneHelperコンテナのイメージ                                |
-| `deployment.containers.controlPlaneHelper.port`                      | String  | `9496`                   | controlPlaneHelperコンテナのポート番号です                             |
+| `deployment.containers.controlPlaneHelper.port`                      | String  | `9496`                   | controlPlaneHelperコンテナのポート番号                               |
 | `deployment.containers.controlPlaneHelper.resources.requests.memory` | String  | `"300Mi"`                | controlPlaneHelperコンテナMEMORY request                       |
 | `deployment.containers.controlPlaneHelper.resources.requests.cpu`    | String  | `"100m"`                 | controlPlaneHelperコンテナCPU request                          |
 | `deployment.containers.controlPlaneHelper.resources.limits.memory`   | String  | `"350Mi"`                | controlPlaneHelperコンテナMEMORY limit                         |
@@ -214,7 +214,7 @@ WhaTap Kubernetesエージェントの設定を修正するには、デフォル
 
 :::note 
 
-Helmチャート基準**インストール問題の解決**についての案内は、[次の文書](agent-troubleshooting#troubleshooting-helm-chart)を参考にしてください。
+Helmチャート基準での**インストール問題の解決**についての案内は、[次の文書](agent-troubleshooting#troubleshooting-helm-chart)を参照してください。
 
 :::
 
@@ -224,9 +224,9 @@ Helmチャート基準**インストール問題の解決**についての案内
 
 ### YAMLファイル基準インストール
 
-ユーザーのKubernetesバージョンとContainer Runtimeの *yaml* ファイルをダウンロードしてエージェントを生成してください。
+KubernetesバージョンとContainer Runtimeに合わせて*YAML*ファイルをダウンロードし、エージェントを作成します。
 
-1. 次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
+1. 次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認します。
 
    ```bash
    kubectl get node -o wide
@@ -234,32 +234,32 @@ Helmチャート基準**インストール問題の解決**についての案内
 
    ![](/img/k8s-check-version.svg)
 
-2. **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の *yaml* ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
+2. **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**に合わせて*YAML*ファイルを選択し、**_ダウンロード_**ボタンをクリックします。
 
    <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
 
-3. ダウンロードした *yaml* ファイルをマスターNodeにアップロードしてください。
+3. ダウンロードした*YAML*ファイルをマスターノードにアップロードします。
 
-4. エージェントを作成するには、次のコマンドを実行してください。 
+4. エージェントを作成するには、次のコマンドを実行します。 
 
    ```bash
    # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように変更してください。
    kubectl apply -f {whatap_kube_X.YZ.yaml}
    ```
 
-5. 次のようにエージェントを正常に生成(create)したことを確認してください。
+5. 次のようにエージェントを正常に作成(create)したことを確認します。
 
-   ![エージェント生成確認](/img/k8s-install-agent-check.svg)
+   ![エージェント作成確認](/img/k8s-install-agent-check.svg)
 
 :::note
 
-**マスターエージェントが使用するリソース量**は、**ユーザー環境のノード数**にある程度**比例**します。つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上の資源を使ってOOM(Out Of Memory)が発生することがあります。マスターエージェントに割り当てられたメモリLimit数値は、エージェントのインストール *yaml* ファイルから変更できます。
+**マスターエージェントが使用するリソース量**は、**ユーザー環境のノード数**にある程度**比例**します。つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する場合があります。マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール*YAML*ファイルで変更できます。
 
 :::
 
-## Kubernetesエージェントのインストールを確認 {#check-kubernetes-agent}
+## Kubernetesエージェントのインストール確認 {#check-kubernetes-agent}
 
-Kubernetesエージェントのインストールが正常に完了した場合、次のコマンドを実行してマスターエージェントとノードエージェントの状態を確認することができます。
+Kubernetesエージェントのインストールが正常に完了した場合、次のコマンドを実行してマスターエージェントとノードエージェントの状態を確認できます。
 
 ```bash
 kubectl get pod -n whatap-monitoring
@@ -267,7 +267,7 @@ kubectl get pod -n whatap-monitoring
 
 #### Running状態の場合
 
-次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、**_プロジェクトリスト_**と**_ダッシュボード_** > **_コンテナマップ_**メニューから性能情報を収集することを確認してください。 
+次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングが始まります。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、**_プロジェクトリスト_**と**_ダッシュボード_** > **_コンテナマップ_**メニューから性能情報が収集されるのを確認してください。 
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
@@ -277,7 +277,7 @@ kubectl get pod -n whatap-monitoring
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-1. マスターNodeで次のコマンドを実行して、Pod の生成に失敗した原因を特定します。 
+1. マスターノードで次のコマンドを実行し、Podの生成に失敗した原因を特定します。 
 
    ```bash
    kubectl describe pod {POD_NAME} -n whatap-monitoring

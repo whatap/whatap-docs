@@ -56,9 +56,9 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
    :::
 
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードしてください。_/圧縮を解凍したフォルダ/jdbc_
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
+   データベースサーバーのOSとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
 
 {/* 공통 Notes*/}
 import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
@@ -71,9 +71,9 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-データベース接続用に暗号化されたUIDを生成します。ユーザーファイルは、ユーザーDB(`dba`)とCUBRID Manager(`admin`)の両方に対して実行する必要があります。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行してください。 
+データベース接続用に暗号化されたUIDを生成します。ユーザーファイルは、ユーザーDB(`dba`)とCUBRID Manager(`admin`)の両方に対して実行する必要があります。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行します。 
 
-- _uid.sh_シェルスクリプトファイル(または_uid.bat_配置ファイル)は、WhaTapデータベースエージェントをインストールしたパスで見ることができます。
+- _uid.sh_シェルスクリプトファイル(または_uid.bat_配置ファイル)は、WhaTapデータベースエージェントをインストールしたパスにあります。
 
 - `dba`と`DB_PASSWORD`は、会員登録で使用したユーザー名とパスワードです。
 
@@ -89,9 +89,9 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
 :::note
 
-- 最初に設定すると、暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
+- 最初1回の設定で暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
 - DBユーザーファイルを生成するには、プロジェクトアクセスキーを*whatap.conf*ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
-- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力する必要があります。
+- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力してください。
 - `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character(\\)を入力してください。
 
   ```bash title='Example'

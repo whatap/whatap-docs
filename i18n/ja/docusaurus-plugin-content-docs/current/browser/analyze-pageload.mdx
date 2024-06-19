@@ -28,7 +28,7 @@ tags:
 
 ### ![](/img/number-01.png)ページロードヒットマップ {#pageload-hitmap}
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" /> ウィジェットは、時間の経過に伴う <b>ページロード</b>レスポンス時間を分布図チャートとして表示します。
+<Cmdname sid="rumPageLoadHitmap" className="uitext" /> ウィジェットは、時間の経過に伴う <b>ページロード</b>応答時間を分布図チャートで表示します。
 
 - 横軸は<b>ページロード</b>イベントの終了時間です。
 
@@ -52,13 +52,13 @@ tags:
 
 - <Cmdname sid="browser" className="uitext" />：エンドユーザーが使用したブラウザーの種類
 
-- <Cmdname sid="device" className="uitext" />：エンドユーザーが使用した機器の種類
+- <Cmdname sid="device" className="uitext" />：エンドユーザーが使用したデバイスの種類
 
-- <Cmdname sid="os" className="uitext" />：エンドユーザーが使用する機器のオペレーティングシステムの種類
+- <Cmdname sid="os" className="uitext" />：エンドユーザーが使用する機器のOSの種類
 
 - <Cmdname sid="client_ip" className="uitext" />：エンドユーザーが使用するデバイスのIPアドレス
 
-テーブルに他の情報カラムを追加したり、追加したカラムを非表示にすることもできます。 <Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />ウィジェットの右上の![カラムアイコン](/img/ico-column.svg)ボタンを選択してください。
+テーブルに他の情報カラムを追加したり、追加したカラムを非表示にすることもできます。 <Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />ウィジェットの右上の![カラムアイコン](/img/ico-column.svg)ボタンを選択します。
 
 :::note
 
@@ -90,28 +90,28 @@ tags:
 
 <ImgLang img='browser-analysis-pageload-hitmap-pagegroup.png' desc='ページグループ一覧' />
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットでドラッグした領域の<b>ページロード</b>イベントを<Link to="before-starting#page-group">ページ·グループ</Link>ごとに確認できます。 一覧から項目を選択すると、選択した<b>ページグループ</b>に対応する<b>ページロード</b>イベントのみ<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に表示されます。
+<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットでドラッグした領域の<b>ページロード</b>イベントを<Link to="before-starting#page-group">ページ·グループ</Link>ごとに確認できます。 一覧から選択した<b>ページグループ</b>に該当する<b>ページロード</b>イベントが<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に表示されます。
 
-## ページロードイベント詳細情報 {#pageload-details}
+## ページロードイベントの詳細情報 {#pageload-details}
 
-<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />で各項目の一番左の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細を見るアイコン" />を選択すると、<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。 <b>ページロード</b>の性能を分析するために様々な指標を提供し、性能に影響を与える要因を特定することができます。
+<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />で各項目の一番左の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" />を選択すると、<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。 <b>ページロード</b>の性能を分析するために様々な指標を提供し、性能に影響を与える要因を特定できます。
 
 <ImgLang img='rum-pageload-event-02.png' desc='ページロード詳細' />
 
 ### ![](/img/number-01.png)URLリスト {#url-list}
 
-<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />の項目をURL基準で確認できます。 <Cmdname sid="url_list" className="uitext" />のソートは、経過時間です。 URL項目を選択すると<b>ページロード</b>イベントの詳細情報を<LinkImage img="number-02.png" className="ico" desc="指示線 2" />右側の画面に表示することができます。
+<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />の項目をURL基準で確認できます。 <Cmdname sid="url_list" className="uitext" />のソート基準は、経過時間です。 URL項目を選択すると<b>ページロード</b>イベントの詳細情報を<LinkImage img="number-02.png" className="ico" desc="指示線 2" />右側の画面から照会できます。
 
 - 各項目の青色の棒グラフは、<b>ページロード</b>の経過時間です。
 - 各項目の棒グラフの右側の時間は、<b>ページロード</b>の開始時間です。
 
-### ![](/img/number-02.png)概要(ページロードイベント要約) {#pageload-events-summary}
+### ![](/img/number-02.png)概要(ページロードイベントの要約) {#pageload-events-summary}
 
-<Cmdname sid="summary" className="uitext" />タブでは、<b>ページロード</b>のプロセス中に区間別でかかった時間をグラフチャートとして提供します。 これにより、<b>ページロード</b>プロセスの遅い区間を特定することができます。
+<Cmdname sid="summary" className="uitext" />タブでは、<b>ページロード</b>するさいでの区間ごとでかかった時間をグラフチャートで提供します。 この機能で<b>ページロード</b>するさいでの遅い区間を特定できます。
 
-- <Cmdname sid="page" className="uitext" /><Cmdname sid="info" className="uitext" />：エンドユーザーの接続環境、接続ページ情報、<Cmdname sid="user_id" className="uitext" />、<Cmdname sid="session_id" className="uitext" />情報を提供します。
+- <Cmdname sid="page" className="uitext" /><Cmdname sid="info" className="uitext" />：エンドユーザーの接続環境、接続ページの情報、<Cmdname sid="user_id" className="uitext" />、<Cmdname sid="session_id" className="uitext" />情報を提供します。
 
-- <Cmdname sid="page_load_timing" className="uitext" /><Cmdname sid="info" className="uitext" />：<b>ページロード</b>時の区間別の所要時間を確認することができます。
+- <Cmdname sid="page_load_timing" className="uitext" /><Cmdname sid="info" className="uitext" />：<b>ページロード</b>するさいでの区間ごとの所要時間を確認できます。
 
   - **_redirect_**：ブラウザーがリダイレクトに要した時間
 
@@ -119,29 +119,29 @@ tags:
 
   - **_dns_**：ブラウザーがドメインを検索するのにかかる時間
 
-  - **_wait_**：ブラウザーが <b>ページロード</b>に必要なデータへのレスポンスを待つのにかかる時間
+  - **_wait_**：ブラウザーが <b>ページロード</b>するさいに必要なデータへの応答待ち時間
 
   - **_download_**：ブラウザーがサーバーからリソースをダウンロードするのにかかる時間
 
-  - **_render_**：サーバーからダウンロードしたリソースを画面にレンダリングし <b>ページロード</b> イベントを完了するのにかかる時間
+  - **_render_**：サーバーからダウンロードしたリソースを画面にレンダリングし <b>ページロード</b> イベントを完了するまでの時間
 
 ### リソース一覧 {#resource-list}
 
-ブラウザーがサーバーからダウンロードするリソースは、<b>ページロード</b>の性能に大きな影響を与える可能性があります。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />は、読み込み速度が遅いリソースやファイルサイズが大きいリソースをすばやく特定することができます。
+ブラウザーがサーバーからダウンロードするリソースは、<b>ページロード</b>の性能に大きな影響を与える場合があります。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />は、読み込み速度が遅いリソースやファイルサイズが大きいリソースをすばやく特定できます。
 
 <ImgLang img='rum-pageload-event-03.png' desc='リソース一覧' />
 
-各リソースの開始時間に基づいてタイムラインチャートを提供し、ロード速度が遅いリソースを特定できます。 各リソースのファイルサイズを参照し、パフォーマンスに影響を与える部分を改善することができます。 各リソースをクリックすると<Cmdname sid="resource" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウから詳細な時間情報を確認できます。
+各リソースの開始時間に基づいてタイムラインチャートを提供し、ロード速度が遅いリソースを特定できます。 各リソースのファイルサイズを参照し、パフォーマンスに影響を与える部分を改善することができます。 各リソースをクリックすると<Cmdname sid="resource" className="uitext" /><Cmdname sid="detail" className="uitext" />画面から詳細な時間情報を確認できます。
 
 <ImgLang img='rum-pageload-event-04.png' desc='リソース詳細' />
 
 ### ブラウザーエラーを確認する
 
-ブラウザのエラーデータを含むページロードイベントの場合、赤色で表示されます。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />でエラーが発生したステップを確認することができます。
+ブラウザのエラーデータを含むページロードイベントの場合、赤色で表示されます。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />からエラーが発生したステップを確認できます。
 
 <ImgLang img='browser-pageload-details-resource-error.png' desc='リソースリスト-エラーデータ' />
 
-1. <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />でエラーが発生したステップを選択すると、<Cmdname sid="exception_stack" className="uitext" />ウィンドウが表示されます。
+1. <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />からエラーが発生したステップを選択すると、<Cmdname sid="exception_stack" className="uitext" />画面が表示されます。
 
    <ImgLang img='browser-pageload-details-resource-error-stack.png' desc='エラースタック' />
 
@@ -155,4 +155,4 @@ tags:
 
 <ImgLang img='browser-pageload-details-user-session.png' desc='ユーザーセッション分析' />
 
-ユーザーセッションを基準にウェブページと相互作用しながら発生させたイベントやエラーなどを時間順に確認することができます。 <Cmdname sid="TTL07736" className="uitext" />についての詳細は、[次の文書](user-session-log-search#analysisusersession)を参照してください。
+ユーザーセッションを基準にウェブページと相互作用しながら発生させたイベントやエラーなどを時間順に確認できます。 <Cmdname sid="TTL07736" className="uitext" />についての詳細は、[次の文書](user-session-log-search#analysisusersession)を参照してください。

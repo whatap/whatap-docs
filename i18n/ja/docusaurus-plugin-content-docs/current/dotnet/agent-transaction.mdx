@@ -11,67 +11,9 @@ import Transaction from "../common-items/_transaction.mdx";
 
 <Transaction />
 
-エージェントでトランザクションのパフォーマンスを追跡および設定するため、次のオプションを提供します。
+## トランザクショントレーシング
 
-### トランザクショントレーシング
-
-import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profile.mdx";
-
-<Dotnettransactionprofile />
-
-- **transaction_status_error_enable** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
-
-- **status_ignore** <span class='type'>String</span>
-
-  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore=408,500
-  ```
-
-- **status_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-  ```
-
-- **httpc_status_error_enable** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
-
-  :::note
-
-  HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
-
-  :::
-
-- **httpc_status_ignore** <span class='type'>String</span>
-
-  HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
-
-- **httpc_status_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
-
-  :::note
-
-  `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
-
-  :::
-
-- **profile_http_parameter_keys** <span class='type'>String</span>
-
-  設定されたキーで対応するパラメータ情報を記録します。複数の登録をする場合は、コンマ(,)を区切り文字として使用します。
+以下は、アプリケーション内の各トランザクションの実行パスを詳以下追跡できるエージェントのオプションです。
 
 - **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
@@ -96,3 +38,139 @@ import Dotnettransactionprofile from "../common-items/_dotnet-transaction-profil
   既定値`false`
 
   オプション値を`true`に設定すると、トランザクションのURLの前にアプリケーションのフルネームを表示します。
+
+- **trace_db_command_methods** <span class='type'>String</span>
+
+  `System.Data.Common.DbCommand`クラスでモニタリングするメソッド名を入力します。2 つ以上の値を設定するには、コンマ(,)を区切り文字として利用します。すべてのメソッドをモニタリングするには、以下のように適用します。
+
+  ```ini title="whatap.conf"
+  trace_db_command_methods=ExecuteReader, ExecuteReaderAsync, ExecuteNonQuery, ExecuteNonQueryAsync, ExecuteScalar, ExecuteScalarAsync
+  ```
+
+## 例外処理{#exception}
+
+以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。ビジネス例外を登録し、関連する統計を収集することで、アプリケーションの安定性を確認できます。また、特定の例外を無視したりHTTPステータスコードがエラーの場合、エラーとして処理するかどうかを設定できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で、正常なトランザクションとして表示されます。
+
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
+
+- **status_ignore** <span class='type'>String</span>
+
+  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
+
+  :::tip
+
+  Statusエラー無視 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+  :::
+
+- **status_ignore_set** <span class='type'>String</span>
+
+  `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
+
+  :::tip
+
+  Status エラーセット無視 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+  :::
+
+- **httpc_status_error_enable** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
+
+  :::note
+
+  HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
+
+  :::
+
+- **httpc_status_ignore** <span class='type'>String</span>
+
+  HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
+
+  :::tip
+
+  HTTPステータスエラーコード無視 / エラー統計を含まない
+
+  :::
+
+- **httpc_status_ignore_set** <span class='type'>String</span>
+
+  `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+  `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+
+  :::tip
+
+  HTTPステータスエラーコード無視 / エラー統計を含まない
+
+  :::
+
+## HTTPトランザクションの追跡
+
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+
+- **profile_http_parameter_keys** <span class='type'>String</span>
+
+  設定されたキーで対応するパラメータ情報を記録します。複数の登録をする場合は、コンマ(,)を区切り文字として使用します。
+
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  トレース履歴にHTTPヘッダー情報を記録するには、`true`に設定します。
+
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+
+  既定値`false`
+
+  トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
+
+  :::note
+
+  セキュリティキーは、WASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイル内に6桁に設定します。 *paramkey.txt* ファイルが存在しない場合、ランダムな値で自動的に生成されます。
+
+  :::
+
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
+
+  トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+
+- **profile_http_body_url_prefix** <span class='type'>String</span>
+
+  トレース履歴にhttp body情報を記録する対象URLのprefixを定義するときに使用します。
+
+- **trace_ignore_url_set** <span class='type'>String</span>
+
+  トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
+- **trace_ignore_url_prefix** <span class='type'>String</span>
+
+  トランザクション収集の例外URL prefixを指定します。指定した値と前の部分が一致するurlは、トランザクション性能を収集しません。2つ以上の値を指定するには、コンマ(,)を区切り文字として利用します。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::

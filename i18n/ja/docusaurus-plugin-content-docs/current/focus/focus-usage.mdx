@@ -15,12 +15,12 @@ import Checkpakip from "../common-items/_check-pak-ip.mdx";
 
 <Checkpakip />
 
-## フィルターの特定のタグを追加 {#addtagfilter}
+## フィルターに特定のタグを追加 {#addtagfilter}
 
 次の例を参照して、WhaTapモニタリングサービス画面で収集されたデータをそのタグの名前と値でフィルタリングできます。
 
 ```bash title="SH" showLineNumbers {5,6}
-# -tag.[ユーザータグキー名][空白][ユーザータグ値]
+# -tag.[ユーザータグのキー名][空白][ユーザータグの値]
 
 ./focus -license $WHATAP_LICENSE \
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \

@@ -78,7 +78,7 @@ tags:
 | ^             | `Num_plan_cache_lookup`                    | 特定のキーを使用してルックアップ(lookup)を試みた回数                                                                                               |
 | ^             | `Num_plan_cache_hit`                       | クエリ文字列ハッシュテーブルでエントリーを見つけた(hit) 回数                                                                                            |
 | ^             | `Num_plan_cache_miss`                      | クエリ文字列ハッシュテーブルでエントリーを見つけなかった(miss) 回数                                                                                        |
-| ^             | `Num_plan_cache_full`                      | キャッシュエントリー数が許可された最大数を超えて被害者(victim) の検索を試みた回数                                                                                |
+| ^             | `Num_plan_cache_full`                      | キャッシュエントリー数が許可された最大数を超えてVictimキャッシュの検索を行った回数                                                                                                    |
 | ^             | `Num_plan_cache_delete`                    | キャッシュエントリーが削除された(victimized) 回数                                                                                              |
 | ^             | `Num_plan_cache_invalid_xasl_id`           | `xasl_id`ハッシュテーブルでエントリーを見つけなかった(miss) 回数。サーバーから特定のエントリーが削除(victimized)されたエントリーをクライアントでリクエストしたときに発生するエラー回数 |
 | ^             | `Num_plan_cache_query_string_hash_entries` | クエリ文字列ハッシュテーブルの現在のエントリー数                                                                                                                        |

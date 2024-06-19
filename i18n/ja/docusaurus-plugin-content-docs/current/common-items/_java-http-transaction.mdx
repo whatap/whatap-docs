@@ -1,9 +1,3 @@
-## HTTPトランザクションの追跡
-
-import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
-
-<Transactionprofilehttp />
-
 - **trace_transaction_name_key** <span class='type'>String</span>
 
   HTTPリクエストパラメータの変数名を設定すると、その変数の値を取得してトランザクション名の最後に追加します。 
@@ -14,10 +8,6 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
   # example
   trace_transaction_name_key=paramKey
   ```
-
-import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
-
-<Transactiontracecommon />
 
 - **recursive_max** <span class='type'>Int</span>
 
@@ -33,7 +23,7 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
 
 - **hook_httpservlet_classes** <span class='type'>String</span>
 
-  HTTPトランザクションのEND POINTを設定します。メソッドの2つのパラメータは、`HttpServletRequest`と`HttpServletResponse`を設定することができます。
+  HTTPトランザクションのEND POINTを設定します。メソッドの2つのパラメータは、`HttpServletRequest`と`HttpServletResponse`を設定できます。
 
 - **hook_jsp_patterns** <span class='type'>String</span>
 
@@ -45,9 +35,21 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
 
   トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
   トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
 
 - **ignore_http_method** <span class='type'>String</span>
 
@@ -62,6 +64,12 @@ import Transactiontracecommon from "../common-items/_transaction-trace-common.md
   # e.g. http_methodがOPTIONS、HEADであるトランザクションを「無視」
   ignore_http_method=OPTIONS,HEAD
   ```
+
+  :::note
+
+  このオプションを通じて登録したHTTPメソッドは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
 
 - **trace_tx_name_with_method_enabled** <span class='type'>Boolean</span>
 

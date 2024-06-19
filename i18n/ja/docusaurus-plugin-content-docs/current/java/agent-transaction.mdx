@@ -16,6 +16,8 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## トランザクショントレーシング
 
+以下は、アプリケーション内の各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な側面を調整できます。
+
 import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
 <Transactionprofilingcommon />
@@ -24,13 +26,41 @@ import Javatransactionprofiling from "../common-items/_java-transaction-profilin
 
 <Javatransactionprofiling />
 
+## 例外処理{#exception}
+
+以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。ビジネス例外を登録し、関連する統計を収集することで、アプリケーションの安定性を確認できます。また、特定の例外を無視したりHTTPステータスコードがエラーの場合、エラーとして処理するかどうかを設定できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で、正常なトランザクションとして表示されます。
+
+import JavaException from "../common-items/_java-exception-options.mdx";
+
+<JavaException />
+
+## HTTPトランザクションの追跡
+
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
+
+<Transactiontracecommon />
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp />
+
 import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
 
 <Javahttptransaction />
 
+## 非HTTPトランザクションのトレース
+
+以下は、HTTP以外のトランザクションを追跡してモニタリングするためのオプションです。このオプションにより、ユーザーはバックグラウンド作業や他のプロトコルに対するトランザクションを細かく追跡できます。
+
 import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
 
 <Javanonhttptransaction />
+
+## マルチトランザクショントレース
+
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡の詳細な動作を調整できます。
 
 import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
@@ -38,7 +68,9 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
 ## トレースデータサンプリング
 
-<code class="my">Java Agent v2.2.4 or later</code>
+以下は、トレースデータのサンプリングを調整し、データの送信有無を設定するオプションです。このオプションにより、ユーザーはアプリケーションの性能とデータ転送量を管理できます。
+
+エージェント対応の範囲：<code class="my">Java Agent v2.2.4以降</code>
 
 - **trace_sampling_enabled** <span class='api'>Boolean</span>
 
@@ -92,6 +124,8 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
   ```
 
 ## HttpURLConnectionを追跡する
+
+次は、`HttpURLConnection`クラスを使ってHTTP呼び出しを追跡するためのオプションです。
 
 - **HttpURLConnection** <span class='type'>Boolean</span>
 

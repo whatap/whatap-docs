@@ -1,7 +1,7 @@
 ---
 id: pod-init-perform
 title: Pod起動分析
-description: Pod開始分析機能を活用することで、Pod開始時のピーク使用量と初期化時間を分析し、最適なInitial Delayを設定できます。
+description: Pod起動分析機能を活用するとPod起動時のピーク使用量と初期化時間を分析し、最適なInitial Delayを設定できます。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
@@ -24,7 +24,7 @@ tags:
 
 Springbootを含むJVMベースのアプリケーションは、初期化時に大量のリソースを使用して、Livenessチェックに失敗する場合があります。もし、一定回数以上Livenessチェックに失敗した場合、Podが削除され、無制限に再起動現象が発生し、デプロイが失敗する可能性があります。
 
-WhaTap Kubernetesの**_Pod起動分析_**機能を使用すると、Pod開始時のピーク使用量と初期化時間を分析して、最適なInitial Delay(Livenessチェック除外時間) 設定することができます。
+WhaTap Kubernetesの**_Pod起動分析_**機能を活用すると、Pod起動時の最大使用量と初期化時間を分析し、最適なInitial Delay(Livenessチェック除外時間)設定に効果的です。
 
 ## 基本画面ガイド
 
@@ -44,7 +44,7 @@ WhaTap Kubernetesの**_Pod起動分析_**機能を使用すると、Pod開始時
 
 <ImgLang img='k8s-pod-init-perform-cl.png' desc='Pod初期化性能カラム' />
 
-**_Pod起動分析_**は次のとおり、<Cmdname sid="pod_info" className="uitext" />とPod初期化タイムラインによってカラムを分類することができます。
+**_Pod起動分析_**のリストは次のとおり、<Cmdname sid="pod_info" className="uitext" />とPod初期化のタイムラインによりカラムを分類します。
 
 ### <Cmdname sid="pod_info" className="b600" />
 

@@ -32,7 +32,7 @@ PythonアプリケーションのDockerイメージをビルドする場合、wh
 RUN pip3 install --upgrade whatap-python
 ```
 
-次のDockerfileの定義例をご参照ください。 
+次のDockerfileの定義例を参照にしてください。 
 
 ```docker title='python ver 3.10'
 # python3.10をドッカー環境にインストールします。
@@ -123,7 +123,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::note 
 
-- *yaml*の作成例は、次の[コンテナ環境変数の設定](#k8s-env)をご参照ください。
+- *yaml*の作成例は、次の[コンテナ環境変数の設定](#k8s-env)を参照にしてください。
 
 - ライセンス(`license`)は、WhaTapのユーザー認証情報です。**外部に公開してはいけません**。
 
@@ -131,7 +131,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ### スクリプト実行の例
 
-次のDockerfile定義の例をご参照ください。_entrypoint.sh_スクリプトを実行する例です。
+次のDockerfile定義の例を参照にしてください。_entrypoint.sh_スクリプトを実行する例です。
 
 ```docker
 FROM python:3.10
@@ -148,7 +148,7 @@ CMD ["./entrypoint.sh"]
 
 ### 追加設定
 
-次の設定は、オプションとして必要な場合のみ使用してください。設定ファイル(_entrypoint.sh_)に次の追加設定の他にも、ログおよびトランザクション関連の設定が可能です。その他の追加設定に関しては、[次の文書](https://docs.whatap.io/python/set-agent)をご参照ください。 
+次の設定は、オプションとして必要な場合のみ使用してください。設定ファイル(_entrypoint.sh_)に次の追加設定の他にも、ログおよびトランザクション関連の設定が可能です。その他の追加設定に関しては、[次の文書](https://docs.whatap.io/python/set-agent)を参照にしてください。 
 
 - **エージェントグループ化** 
 
@@ -188,7 +188,7 @@ Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定
       valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
 
-次の例をご参照ください。 
+次の例を参照にしてください。 
 
 ```yaml
 apiVersion: apps/v1
