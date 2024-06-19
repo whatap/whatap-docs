@@ -1,0 +1,39 @@
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+## 週次レポート：アプリケーション {#A100_AppWeeklyReport}
+
+アプリケーションの1週間の主要指標を総合的に分析できるレポートです。
+
+:::note
+
+主要用語や指標の詳細は、[次の文書](#metricdesc)を参照してください。
+
+:::
+
+- <Cmdname sid="overview" className="b600" report />: 1週間の総訪問者とトランザクション数を提供します。
+
+- <Cmdname sid="operating_rate" className="b600" report/>: アプリケーションが与えられた時間の間に動作した時間をパーセントで表したものです。 たとえば、稼働率が100%であれば、そのアプリケーションが照会期間中に一度も中断されずに動作し続けたことを意味します。 一方、稼働率が低いと、そのアプリケーションが照会期間に中断されたり、異常に動作した時間があったことを示します。
+
+- <Cmdname sid="performance_trend_chart" className="b600" report/>: システムの主要指標を視覚的に表現した時系列チャートです。 時間の流れによって主要指標の数値を確認できます。 システムの安定性と性能を評価する上で重要な指標です。
+
+  :::note
+
+  - 日ごとの変化量と日ごとの平均および最大値を提供します。
+
+  - <Csvdownload />
+
+  :::
+
+- <Cmdname sid="transaction" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: <Cmdname sid="txcount" className="b600" report/>、<Cmdname sid="error_cnt" className="b600" report/>、<Cmdname sid="res_time_avg" className="b600" report/>基準で上位10件のトランザクションを確認できます。 各トランザクションの1週間前と照会週の実行件数、増減の件を提供します。
+
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: スタックトレース上位10個をに対し、1週間前と照会週間のパーセントと件数を比較したリストです。 最も呼び出されるスタック項目を識別できます。
+
+  :::note
+
+  <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> &gt; <Cmdname sid="topstack" className="uitext" />メニューでスタックの詳細を照会できます。
+
+  :::
+
+- <Cmdname sid="sql_res_time" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/> <Cmdname sid="sql_res_time_support" className="b600" report/>: SQL平均レスポンスタイムを基準に上位10個のSQL文を比較したリストです。 各SQL文に対して、1週間前と照会注意の実行件数、平均レスポンスタイム、増減時間を提供します。
+
+- <Cmdname sid="errors_in_project2" className="b600" report/>: 一週間のプロジェクトのエラー統計をエラークラスとエラーメッセージ基準で提供する統計情報です。

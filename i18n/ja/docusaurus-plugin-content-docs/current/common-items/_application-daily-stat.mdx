@@ -1,18 +1,18 @@
 ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />
 
-アプリケーションの主な性能指標の1日の推移を時間単位チャートで確認することができます。
+アプリケーションの主な性能指標の1日間の推移を時間単位のチャートで確認できます。
 
 <ImgLang img='application_daily_app_stat.png' desc='日別APP現況' />
 
-一日間のアプリケーションの状態を確認できます。 検索条件(<Cmdname sid="select_date2" className="uitext" />, <Cmdname sid="option_type" className="uitext" />, <Cmdname sid="application" className="uitext" />)を設定し![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。 <Cmdname sid="option_type" className="uitext" />オプションの条件は次のとおりです。
+1日間のアプリケーションの状態を確認できます。 検索条件(<Cmdname sid="select_date2" className="uitext" />, <Cmdname sid="option_type" className="uitext" />, <Cmdname sid="application" className="uitext" />)を設定し![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。 <Cmdname sid="option_type" className="uitext" />オプションの条件は次のとおりです。
 
 | 分類                                              | 説明                                              |
 | ----------------------------------------------- | ----------------------------------------------- |
-| <Cmdname sid="type_oid" className="uitext" />   | プロジェクトに含まれているアプリケーションエージェント名                    |
+| <Cmdname sid="type_oid" className="uitext" />   | プロジェクトに追加されたアプリケーションエージェントの名前                   |
 | <Cmdname sid="type_okind" className="uitext" /> | エージェント設定で`whatap.okind`オプションで分類されたグループ単位        |
 | <Cmdname sid="type_onode" className="uitext" /> | エージェント設定で`whatap.onode`オプションで分類されたグループ単位        |
 
-提供するチャートは次のとおりです。 チャートの右側に位置する数値は、一日の間に累積された値または平均、最大値を確認することができます。
+提供するチャートは次のとおりです。 チャートの右側にある数値で、1日間の累積値、平均値または最大値を確認できます。
 
 - <Cmdname sid="h24_tx" className="uitext" />
 
@@ -20,7 +20,7 @@
 
   :::note
 
-  <Cmdname sid="daily_visit" className="uitext" />は、一日の間に累積されたユーザーを重複なく合算した値です。 単に合算するのではなく<b>HyperLogLog</b>で算出します。 <b>HyperLogLog</b>は、非常に少ないメモリ内の要素の数を推定する確率的なデータ構造を意味します。
+  <Cmdname sid="daily_visit" className="uitext" />は、一日間の累積されたユーザー数を重複なく合算した値です。 単に合算するのではなく<b>HyperLogLog</b>で算出します。 <b>HyperLogLog</b>は、非常に小さいメモリで集合の元素数を推定する確率的データ構造を意味します。
 
   :::
 

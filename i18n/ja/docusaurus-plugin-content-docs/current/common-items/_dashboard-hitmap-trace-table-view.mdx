@@ -1,6 +1,6 @@
 ### テーブルビュー {#anlaysis-trace-table-view}
 
-<Cmdname sid="TTL06126" className="uitext" />タブでは、トランザクションの実行過程を時間順に確認することができます。
+<Cmdname sid="TTL06126" className="uitext" />タブでは、トランザクションの実行過程を時間順に確認できます。
 
 <Xclude product='php,nodejs,golang'>
 
@@ -14,7 +14,7 @@
 
 </InDoc>
 
-- トランザクションを実行区間別に分類し、ダイアグラムで確認できます。 全経過時間のうち、各区間別に所要された時間、最も長くかかった区間を素早く把握することができます。
+- トランザクションを実行区間別に分類し、ダイアグラムで確認できます。 全経過時間のうち、各区間別に所要された時間、最も長くかかった区間を素早く把握できます。
 
 <Xclude product='php,nodejs,golang'>
 
@@ -34,7 +34,7 @@
 
 <Xclude product='php,nodejs,golang,kubernetes'>
 
-- 赤色の丸(![アクティブスタックアイコン](/img/ic-c-tx-active-stack.svg))この位置する領域は、アクティブスタックが収集された瞬間です。 赤い丸を選択すると、<Cmdname sid="active_stack" className="uitext" />ボタンがあるテーブル一覧に移動できます。 <Cmdname sid="active_stack" className="uitext" />ボタンをクリックすると、その区間で行われたステップ情報を確認することができます。
+- 赤い丸(![アクティブスタックアイコン](/img/ic-c-tx-active-stack.svg))が位置する領域は、アクティブスタックが収集された時点です。 赤い丸を選択すると、<Cmdname sid="active_stack" className="uitext" />ボタンがあるテーブル一覧に移動できます。 <Cmdname sid="active_stack" className="uitext" />ボタンをクリックすると、その区間で行われたステップ情報を確認できます。
 
   :::note
 
@@ -48,7 +48,7 @@
 
 <InDoc product='kubernetes'>
 
-- 赤色の丸(![アクティブスタックアイコン](/img/ic-c-tx-active-stack.svg))この位置する領域は、アクティブスタックが収集された瞬間です。 赤い丸を選択すると、<Cmdname sid="active_stack" className="uitext" />ボタンがあるテーブル一覧に移動できます。 <Cmdname sid="active_stack" className="uitext" />ボタンをクリックすると、その区間で行われたステップ情報を確認することができます。
+- 赤い丸(![アクティブスタックアイコン](/img/ic-c-tx-active-stack.svg))が位置する領域は、アクティブスタックが収集された時点です。 赤い丸を選択すると、<Cmdname sid="active_stack" className="uitext" />ボタンがあるテーブル一覧に移動できます。 <Cmdname sid="active_stack" className="uitext" />ボタンをクリックすると、その区間で行われたステップ情報を確認できます。
 
   :::note
 
@@ -60,22 +60,22 @@
 
 </InDoc>
 
-- ![カラムアイコン](/img/ico-column.svg)<Cmdname sid="select_column" className="uitext" />：テーブル一覧にカラムでメモリ累積情報およびCPU累積情報を追加または非表示することができます。 カラム情報は次のとおりです。
+- ![カラムアイコン](/img/ico-column.svg)<Cmdname sid="select_column" className="uitext" />：テーブル一覧にカラムでメモリ累積情報およびCPU累積情報を追加または非表示できます。 カラム情報は次のとおりです。
 
-  - <UI>No</UI>：ステップの発生順序
+  - <UI>No</UI>：ステップの実行順序
 
   - <Cmdname sid="TTL06416" className="uitext" />：各ステップの開始時刻
 
-  - <Cmdname sid="gap_time" className="uitext" />：直前ステップの開始時刻から現在のステップに移るまで待ち時間、外部要因により遅延する場合、経過時間と異なる場合があります。
+  - <Cmdname sid="gap_time" className="uitext" />：直前ステップの開始時刻から現在のステップに移るまでの待ち時間、外部要因により遅延される場合、経過時間と異なる場合があります。
 
   - <Cmdname sid="TTL06375" className="uitext" />：各メソッドの開始から終了までの所要時間
 
   - <Cmdname sid="TTL06417" className="uitext" />：該当ステップの詳細な実行内容
 
-- ![ダウンロードアイコン](/img/ico-download.svg)<UI>TXT</UI>：トランザクション基本情報および区間別の実行情報をtxt形式のファイルでダウンロードできます。
+- ![ダウンロードアイコン](/img/ico-download.svg)<UI>TXT</UI>：トランザクションの基本情報および区間ごとの実行情報をtxtファイルでダウンロードできます。
 
-- ![ダウンロードアイコン](/img/ico-download.svg)<UI>SQL</UI>：トランザクション基本情報およびSQL実行情報をtxt形式のファイルにダウンロードできます。
+- ![ダウンロードアイコン](/img/ico-download.svg)<UI>SQL</UI>：トランザクションの基本情報およびSQL実行情報をtxtファイルでダウンロードできます。
 
 - ![拡大アイコン](/img/ic-outside.svg):トランザクションの要約情報とダイアグラムを非表示にし、テーブル一覧のみを確認できます。 ![縮小アイコン](/img/ic-inside.svg)ボタンをクリックすると、隠された情報を再表示します。 テーブル一覧が長い場合は、この機能を利用すると便利です。
 
-- SQLステップを選択すると、パラメータを照会できる<UI>SQL</UI>ウィンドウが表示されます。 詳細については、[次の文書](#transaction-parameter)を参照してください。
+- SQLステップを選択すると、パラメータを照会できる<UI>SQL</UI>画面が表示されます。 詳細については、[次の文書](#transaction-parameter)を参照してください。

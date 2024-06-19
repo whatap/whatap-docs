@@ -40,7 +40,7 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
   whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
   ```
 
-- **パッケージとメソッド名を「\*」に置き換える場合**
+- **パッケージとメソッド名を`*`に置き換える場合**
 
   ```java
   *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
@@ -74,20 +74,20 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
 2. _TraceHelperStart.x_ファイルにプラグインコードを記述してください。
 
-```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
-// String prefixにクラス名、メソッド名を代入してください。
-String prefix = $point.class1 + "." + $point.method;
-// WhaTapトレース属性名称を`prefix` + "st"にして現在の時間を設定してください。
-$ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
-// トレース情報に現在の時間を追加してください。
-$ctx.profile(prefix + " Start", new java.util.Date().toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
+   // String prefixにクラス名、メソッド名を代入してください。
+   String prefix = $point.class1 + "." + $point.method;
+   // WhaTapトレース属性名称を`prefix` + "st"にして現在の時間を設定してください。
+   $ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
+   // トレース情報に現在の時間を追加してください。
+   $ctx.profile(prefix + " Start", new java.util.Date().toString()); 
+   ```
 
 トレース履歴にメソッドの開始時間を次のように表示します。
 
@@ -97,22 +97,22 @@ $ctx.profile(prefix + " Start", new java.util.Date().toString());
 
 1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
-1. _TraceHelperEnd.x_ファイルにプラグインコードを記述してください。
+2. _TraceHelperEnd.x_ファイルにプラグインコードを記述してください。
 
-```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
-String prefix = $point.class1 + "." + $point.method;
-// TraceHelperStart.xファイルで追加したトレース属性を取得してください。
-long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
-long gap = System.currentTimeMillis() - st;
-StringBuilder sb = new StringBuilder();
-sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
-// トレース情報に開始時間と現在時間とのGap(実行時間)を追加してください。
-$ctx.profile(prefix + " End", sb.toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
+   String prefix = $point.class1 + "." + $point.method;
+   // TraceHelperStart.xファイルで追加したトレース属性を取得してください。
+   long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
+   long gap = System.currentTimeMillis() - st;
+   StringBuilder sb = new StringBuilder();
+   sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
+   // トレース情報に開始時間と現在時間とのGap(実行時間)を追加してください。
+   $ctx.profile(prefix + " End", sb.toString()); 
+   ```
 
 トレース履歴にメソッド終了時間と実行時間を次のように表示します。
 

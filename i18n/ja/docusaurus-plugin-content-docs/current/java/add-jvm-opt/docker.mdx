@@ -9,6 +9,14 @@ tags:
   - エージェント
 ---
 
+Dockerはコンテナベースの仮想化プラットフォームで、JavaアプリケーションをDockerコンテナ内で実行する時、JVMオプションを追加して、アプリケーションの性能とリソースの使用を調整できます。この文書ではDockerfileを修正してJVMオプションを追加する方法を案内します。
+
+:::note
+
+Dockerがインストールされており、JavaアプリケーションのDockerイメージがビルドできる必要があります。
+
+:::
+
 ## エージェントの適用
 
 既存のDockerイメージに基づいて、WhaTapエージェント構成を追加したイメージをビルドします。
@@ -19,54 +27,62 @@ tags:
 
 :::
 
-1. Dockerのビルドディレクトリを作成します。
+### Dockerのビルドディレクトリを作成する
 
-   ```bash
-   mkdir -p {Docker build dir}
-   ```
+Dockerのビルドディレクトリを作成します。
 
-2. *whatap.conf*ファイルを作成します。
+```bash
+mkdir -p {Docker build dir}
+```
 
-   ```docker {3,5} showLineNumbers
-   cat >{Docker build Dir}/whatap.conf <<EOL
-   # アクセスキーを入力します。
-   license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX 
-   # 収集サーバーのIP情報を入力します。
-   whatap.server.host=xx.xx.xx.xx/yy.yy.yy.yy 
-   EOL
-   ```
+### エージェント設定ファイルの作成する
 
-3. Dockerfileを作成してください。
+*whatap.conf*ファイルを作成します。
 
-   イメージをビルドする場合、WhaTapイメージから`-javaagent`オプションに適用するjarファイルをコピーできます。
+```docker {3,5} showLineNumbers
+cat >{Docker build Dir}/whatap.conf <<EOL
+# アクセスキーを入力します。
+license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX 
+# 収集サーバーのIP情報を入力します。
+whatap.server.host=xx.xx.xx.xx/yy.yy.yy.yy 
+EOL
+```
 
-   ```docker
-   cat >/home/silver/whatap/docker/Dockerfile <<EOL
-   FROM whatap/kube_mon as build
-   ## 実際イメージの作成(既存のイメージにWhatapを追加)
-   ## $Image_Name(イメージ名)
-   FROM $Image_Name
-   RUN mkdir -p /whatap
-   COPY --from=build /data/agent/micro/whatap.agent-*.jar /whatap
-   COPY ./whatap.conf /whatap/
-   #...
-   EOL
-   ```
+### Dockerfile生成する
 
-4. `JAVA_OPT`に以下を追加します。
+イメージをビルドするには、WhaTapのイメージから`-javaagent`のオプションに適用するjarファイルをコピーします。
 
-   ```bash
-   WHATAP_HOME=/whatap
-   WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1
-   export JAVA_OPTS="-javaagent:${WHATAP_JAR} "
-   ```
+```docker
+cat >/home/silver/whatap/docker/Dockerfile <<EOL
+FROM whatap/kube_mon as build
+## 実際イメージの作成(既存のイメージにWhatapを追加)
+## $Image_Name(イメージ名)
+FROM $Image_Name
+RUN mkdir -p /whatap
+COPY --from=build /data/agent/micro/whatap.agent-*.jar /whatap
+COPY ./whatap.conf /whatap/
+#...
+EOL
+```
 
-5. Dockerをビルドします。
+### `JAVA_OPTS`適用する
 
-   ```bash
-   cd docker
-   docker build -t $Image_Name
-   ```
+`JAVA_OPT`に次の内容を追加します。
+
+```bash
+WHATAP_HOME=/whatap
+WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1
+export JAVA_OPTS="-javaagent:${WHATAP_JAR} "
+```
+
+### Dockerビルドする
+
+Dockerをビルドします。
+
+```bash
+cd docker
+docker build -t $Image_Name
+```
 
 :::note
 
@@ -78,7 +94,7 @@ import Java17 from "./_java-17.mdx";
 
 :::note
 
-Javaエージェントファイル名は、`Rename`機能を活用して変更することができます。Javaエージェント名を変更した場合は、`Java_OPTS`に新しいJavaエージェント名を登録してください。
+Javaエージェントファイル名は、`Rename`機能を活用して変更できます。Javaエージェント名を変更した場合は、`Java_OPTS`に新しいJavaエージェント名を登録してください。
 
 **Javaエージェント名の変更方法の例**
 
@@ -92,8 +108,7 @@ import Setheapmemory from "./_set-heap-memory.mdx";
 
 <Setheapmemory />
 
-## モニタリングの開始
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
 
-import Startapm from "../../common-items/_start-apm.mdx";
-
-<Startapm />
+<Nextstep />

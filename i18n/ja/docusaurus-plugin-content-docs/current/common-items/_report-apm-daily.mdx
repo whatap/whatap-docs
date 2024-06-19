@@ -1,0 +1,120 @@
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+## 日次レポート
+
+一日間のアプリケーション性能の変化が確認できるレポートを提供します。 日次レポートで提供するレポートのフォームは次の通りです。
+
+- [<Cmdname sid="A001_AppDailyReport" className="uitext" report/>](#A001_AppDailyReport)
+
+- [<Cmdname sid="A004_AppDailyProjectPerfReport" className="uitext" report/>](#A004_AppDailyProjectPerfReport)
+
+- [<Cmdname sid="A006_AppUserStatReport" className="uitext" report/>](#A006_AppUserStatReport)
+
+- [<Cmdname sid="A00_DailyReportTag" className="uitext" report/>](#A00_DailyReportTag)
+
+- [<Cmdname sid="A012_AppDailyOidCustomReport" className="uitext" report/>](#A012_AppDailyOidCustomReport)
+
+### 日次レポート：アプリケーション {#A001_AppDailyReport}
+
+一日中のアプリケーション性能に関する主要な指標を総合的に分析できるレポートです。
+
+:::note
+
+主要用語や指標の詳細は、[次の文書](#metricdesc)を参照してください。
+
+:::
+
+- <Cmdname sid="overview" className="b600" report />: アプリケーションの主要な性能指標を確認できます。
+
+- <Cmdname sid="peaktime_performance_summary" className="b600" report/>: 一日の処理量(TPS)が最も高かった時間とその時間の指標値を確認できます。
+
+- <Cmdname sid="avg_max_by_metrics" className="b600" report/>: 一日の主要指標別の平均値と発生時間基準の最大値を確認できます。
+
+- <Cmdname sid="performance_trend_chart" className="b600" report/>: システムの主要指標を視覚的に表現した時系列チャートです。 時間の流れによって主要指標の数値を確認できます。 システムの安定性と性能を評価する上で重要な指標です。
+
+  :::note
+
+  - <Cmdname sid="A100_AppWeeklyReport" className="b600" report/>は日別変化量を追加提供します。
+
+  - <Csvdownload />
+
+  :::
+
+- <Cmdname sid="daily_hitmap" className="b600" report/>: 1日の時間帯別のトランザクション分布とエラー発生状況を一目で把握できます。 グラフのx軸は各トランザクションの終了時間、y軸は応答時間(秒)を意味します。 正常トランザクションの場合は<span class='ntrs'>青</span>として表示され、エラーが発生した場合は<span class='etrs'>赤</span>で表示されます。
+
+  <ImgLang img='app_daily_report_03.png' desc='' />
+
+- <Cmdname sid="application_summary" className="b600" report/>: 監視対象エージェントごとのステータスを確認できます。 <Cmdname sid="active_cnt" className="b600" report/>は、進行中のトランザクション数です。
+
+- <Cmdname sid="transaction" className="b600" report/> **TOP 10**: <Cmdname sid="txcount" className="b600" report/>、<Cmdname sid="error_cnt" className="b600" report/>、<Cmdname sid="res_time_avg" className="b600" report/>基準で上位10件のトランザクションを確認できます。
+
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10**: Stack Trace像のステップに基づいて、ステップ間の呼び出し頻度を割合で計算した情報を簡素化して確認できます。
+
+  :::note
+
+  <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> &gt; <Cmdname sid="topstack" className="uitext" />メニューでスタックの詳細を照会できます。
+
+  :::
+
+- <Cmdname sid="sql_res_time" className="b600" report/> **TOP 10**: 使用されたSQLクエリ文に対する平均レスポンスタイムを基準にソートした統計情報です。
+
+  :::note
+
+  - **増加%**: 照会前日までの3日間の平均データと照会当日のデータを比較して増加した割合を計算した数値です。
+
+    > 例）`4月25日00時00分` ~ `23時59分`データ検索 → `4月22日00時00分` ~ `4月24日23時59分`データと比較\
+    > 数値が10%以上の場合<span class='ov10'>赤</span>で表示され、5%~10%の間の場合<span class='ov5ud10'>オレンジ</span>で表示されます。 5%未満の増加率は表示しません。
+
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />メニューで各クエリの発生時間と性能を詳細に照会できます。
+
+  :::
+
+### 日次レポート：アプリケーションピーク性能比較 {#A004_AppDailyProjectPerfReport}
+
+モニタリング対象エージェントごとにアプリケーションの最大性能指標を日刊(<span class="vslow">赤</span>)、前日(<span class="normal">青</span>), そして先週(<span class="snormal">緑</span>) のデータと比較して提供します。 各指標は、特定の時間帯の最大値とそれに対応する時間の指標値を一緒に表示します。 これにより、各アプリケーションの性能の変動を一目で把握できます。
+
+:::note
+
+主要用語や指標の詳細は、[次の文書](#metricdesc)を参照してください。
+
+:::
+
+### 日次レポート：アプリケーションユーザー統計 {#A006_AppUserStatReport}
+
+10秒、5分、30分単位の同時接続ユーザーと1時間の訪問者数を時系列チャートで提供するレポートです。 このレポートは、使用パターンを理解し、ユーザートラフィックを効果的に管理するための重要なデータとして活用できます。
+
+- **10s** <Cmdname sid="realtime_user" className="b600" report/>: リアルタイムのトラフィックの変化を細かくモニタリングすることで、ユーザー数が急増する時間帯を確認できます。 また、ユーザーが集中する時間帯にコンテンツやサービスを提供する戦略を策定できます。
+
+- **5m** / **30m** <Cmdname sid="realtime_user" className="b600" report/>: 短期・中期的なユーザーパターンを分析して、サーバーリソースとネットワーク帯域幅を効率的に配分できます。 ピーク時間帯を予測して、その時間帯により多くのリソースを割り当てる計画を策定できます。
+
+- **1h** <Cmdname sid="visitor" className="b600" report/>: 時間ごとにユーザーの訪問パターンを分析し、マーケティング戦略および運営計画に活用できます。
+
+### 日次レポート：メトリクス推移(平均/最大) {#A00_DailyReportTag}
+
+アプリケーションの様々な性能指標を時系列チャートで提供するレポートです。 各指標の平均および最大値を視覚的に表現します。 これにより、システムの性能推移をモニタリングし、性能の最適化と問題解決に必要なデータとして活用できます。
+
+チャートのタイトルは、**Category[Field]**形式で構成されています。 アプリケーションの性能指標の詳細は、[次の文書](metrics-app)を参照してください。
+
+:::note
+
+- <UI>Avg.</UI>: <span class="normal">青</span>線で表示され、各時間帯の平均値です。
+
+- <UI>Max.</UI>: <span class="vslow">赤</span>線で表示され、各時間帯の最大値です。
+
+:::
+
+### 日次レポート：アプリケーションユーザー定義 {#A012_AppDailyOidCustomReport}
+
+ユーザーが希望する指標を選択してレポートを作成できます。 選択した指標に基づいて時系列チャートを提供するレポートを作成できます。
+
+![Custom report](/img/apm-custom-report.png)
+
+1. 画面の上の<Cmdname sid="report" className="uitext" />で<Cmdname sid="A012_AppDailyOidCustomReport" className="uitext" report />を選択してください。
+
+2. <Cmdname sid="layout_setting" className="uitext" />で希望する段数を設定してください。
+
+3. 希望する指標を選択してください。 全体を選択するには、<Cmdname sid="select_all" className="uitext" />をクリックします。
+
+4. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+レポートが作成されます。

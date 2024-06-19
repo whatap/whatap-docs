@@ -6,6 +6,150 @@ pagination_next: release-notes/service/service-2_4_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.5.10
+
+2024年06月05日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_hitmap" className="uitext" />メニューでDB追跡時に移動するメニューに選択したインスタンスが基本選択されない問題を修正
+
+- <Status>Fixed</Status>プレゼンテーションまたはカスタムテーマモードで画面を変更すると、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dailyAppStat" className="uitext" />メニューでホワイトアウトが発生する問題を修正
+
+---
+
+### `Database`
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでフィルターが適用されない問題を修正
+
+- <Status>Fixed</Status>別のメニュー画面でフィルター値を含むリンクをクリックして<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューに移動すると、<Cmdname sid="filter" className="uitext" />項目に`s_equal`文字列が確認される問題を修正
+
+</div>
+
+## Service 2.5.9
+
+2024年06月04日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status>Fixed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />メニューで100個以上のデータが照会されない問題を修正
+
+</div>
+
+## Service 2.5.8
+
+2024年06月03日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Feature</Status> <Cmdname sid="TTL06209" className="uitext" />画面のURLをコピーするボタンを追加
+
+---
+
+### `Kubernetes`
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューの<Cmdname sid="BTN07267" className="uitext" />案内でKubernetes環境変数の一部オプション名と誤字脱字を修正
+
+- <Status>Fixed</Status>次のメニューパスで業務およびプロジェクト単位のデフォルトエージェント設定が不可能な問題を修正
+
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />
+  - <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
+
+- <Status>Fixed</Status>次のメニューパスのリソース関係チャートでアプリケーションを選択すると、フィルタリングが間違って適用される問題を修正
+
+  - <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_podList" className="uitext" />
+  - <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_deploymentList" className="uitext" /> &gt; ![詳細アイコン](/img/ico-detail-view.svg) <Cmdname sid="BTN06342" className="uitext" /> &gt; <Cmdname sid="resource" className="uitext" />
+
+- <Status>Fixed</Status>リスト型メニューの<Cmdname sid="resource" className="uitext" />タブでアプリケーションの性能メトリクスが出ない問題を修正
+
+</div>
+
+## Service 2.5.7
+
+2024年05月30日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" />メニューで連続検索を防止する機能を追加
+
+</div>
+
+## Service 2.5.6
+
+2024年05月28日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />メニューで最後に選択したカラム設定値を読み込めない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />メニューの検索ボックスでハングルを入力すると、母音と子音が分離して入力される問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />画面でエラートランザクションを選択し、<Cmdname sid="TTL06125" className="uitext" />タブで<Cmdname sid="error_statistics" className="uitext" />画面を開くとチャートが出力されない問題を修正
+
+</div>
+
+## Service 2.5.4
+
+2024年05月27日
+
+<div class='indentTab'>
+
+### `共通`
+
+<Status>Changed</Status> <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="side_accountManagement" className="uitext" />メニューの<Cmdname sid="account_user_phone" className="uitext" />セクションで、韓国の国/地域コードのみ入力できるように修正
+
+</div>
+
+## Service 2.5.3
+
+2024年05月23日
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでDebian/Ubuntuに関連するインストールコマンドのリポジトリパスを修正
+
+</div>
+
+## Service 2.5.2
+
+2024年05月23日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" />メニューのウィジェットでCSVファイルをダウンロードすると、比較日のデータが表示されない問題を修正
+
+- <Status>Fixed</Status>ダッシュボードで、TOP Nチャートウィジェットのツールチップが表示されない問題を修正
+
+---
+
+### `Application`
+
+#### PHP、Python、.Net
+
+<Status>Fixed</Status>ダッシュボードの<Cmdname sid="AA017" className="uitext" />ウィジェットがAPIを呼び出さない問題を修正
+
+---
+
+### `Database`
+
+<Status>Fixed</Status>データベースのモニタリング紹介ページに未発売の商品が露出する問題を修正
+
+</div>
+
 ## Service 2.5.1
 
 2024年05月22日
