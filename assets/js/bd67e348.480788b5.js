@@ -117,11 +117,6 @@ const metadata = {
     "toc_max_heading_level": 2,
     "pagination_next": "release-notes/java/java-2_2_24"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Java Agent v2.2.26",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_26"
-  },
   "next": {
     "title": "Java Agent v2.2.24",
     "permalink": "/whatap-docs/release-notes/java/java-2_2_24"
