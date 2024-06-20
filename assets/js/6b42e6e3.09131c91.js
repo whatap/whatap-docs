@@ -1,5 +1,107 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89398],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[46140],{
+
+/***/ 33696:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_metrics_detect_anormal_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(59892);
+
+
+const frontMatter = {
+	id: 'metrics-detect-anormal',
+	title: '메트릭스 이상 탐지',
+	description: '다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.',
+	tags: [
+		'Altibase',
+		'메트릭스',
+		'이상 탐지'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/metrics-detect-anormal",
+  "title": "메트릭스 이상 탐지",
+  "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
+  "source": "@site/docs/altibase/metrics-detect-anormal.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/metrics-detect-anormal",
+  "permalink": "/whatap-docs/altibase/metrics-detect-anormal",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/metrics-detect-anormal.mdx",
+  "tags": [
+    {
+      "label": "Altibase",
+      "permalink": "/whatap-docs/tags/altibase"
+    },
+    {
+      "label": "메트릭스",
+      "permalink": "/whatap-docs/tags/메트릭스"
+    },
+    {
+      "label": "이상 탐지",
+      "permalink": "/whatap-docs/tags/이상-탐지"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "metrics-detect-anormal",
+    "title": "메트릭스 이상 탐지",
+    "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
+    "tags": [
+      "Altibase",
+      "메트릭스",
+      "이상 탐지"
+    ]
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "메트릭스 차트",
+    "permalink": "/whatap-docs/altibase/metrics-chart"
+  },
+  "next": {
+    "title": "데이터베이스 분석하기",
+    "permalink": "/whatap-docs/altibase/analysis-function"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_metrics_detect_anormal_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_detect_anormal_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 59892:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -27,6 +129,10 @@ const toc = [{
 }, {
   "value": "위젯 배치하기",
   "id": "위젯-배치하기",
+  "level": 2
+}, {
+  "value": "위젯 삭제하기",
+  "id": "위젯-삭제하기",
   "level": 2
 }, {
   "value": "연관 지표 확인하기",
@@ -285,13 +391,32 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "위젯-삭제하기",
+        children: "위젯 삭제하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["화면에 배치한 모든 위젯을 삭제하려면 화면 위에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "삭제 아이콘",
+          src: (__webpack_require__(93380)/* ["default"] */ .A) + "",
+          width: "24",
+          height: "24"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "BTN06884",
+          className: "uitext"
+        }), " 버튼을 선택하세요."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "연관-지표-확인하기",
         children: "연관 지표 확인하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "metrics-detect-anormal-details.png",
         desc: "메트릭스 이상 탐지"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "위젯에서 차트의 일부 영역을 드래그하세요. 선택한 영역에서 해당 메트릭스 지표와 관련한 지표를 같이 확인할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["위젯에서 차트의 일부 영역을 드래그하세요. 화면 오른쪽에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL08102",
+          className: "uitext"
+        }), " 창이 나타납니다. 드래그한 시간 범위의 시작 시간을 기준으로 최대 6시간의 연관 지표를 조회할 수 있습니다."]
       })]
     })]
   });
@@ -316,108 +441,6 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 64641:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_metrics_detect_anormal_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(59892);
-
-
-const frontMatter = {
-	id: 'metrics-detect-anormal',
-	title: '메트릭스 이상 탐지',
-	description: '다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.',
-	tags: [
-		'Python',
-		'메트릭스',
-		'이상 탐지'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "python/metrics-detect-anormal",
-  "title": "메트릭스 이상 탐지",
-  "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
-  "source": "@site/docs/python/metrics-detect-anormal.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/metrics-detect-anormal",
-  "permalink": "/whatap-docs/python/metrics-detect-anormal",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/python/metrics-detect-anormal.mdx",
-  "tags": [
-    {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
-    },
-    {
-      "label": "메트릭스",
-      "permalink": "/whatap-docs/tags/메트릭스"
-    },
-    {
-      "label": "이상 탐지",
-      "permalink": "/whatap-docs/tags/이상-탐지"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "metrics-detect-anormal",
-    "title": "메트릭스 이상 탐지",
-    "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
-    "tags": [
-      "Python",
-      "메트릭스",
-      "이상 탐지"
-    ]
-  },
-  "sidebar": "pySidebar",
-  "previous": {
-    "title": "메트릭스 조회",
-    "permalink": "/whatap-docs/python/metrics-search"
-  },
-  "next": {
-    "title": "트랜잭션",
-    "permalink": "/whatap-docs/python/track-transactions-intro"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_metrics_detect_anormal_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_detect_anormal_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
-
 /***/ 58624:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -435,6 +458,16 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcy1jbG9zZTwvdGl0bGU+IC0tPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iSWNvbi1TZXQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJXaGFUYXBfSWNvbl9TZXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05MzQuMDAwMDAwLCAtMTAxMy4wMDAwMDApIiBmaWxsPSIjZDUwMDAwIj4KICAgICAgICAgICAgPGcgaWQ9InN1Z2dlc3RlZC1pY29ucy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDk2Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jbG9zZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODkyLjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMyw0IEwxMi45OTksMTEgTDIwLDExIEwyMCwxMyBMMTIuOTk5LDEzIEwxMywyMCBMMTEsMjAgTDEwLjk5OSwxMyBMNCwxMyBMNCwxMSBMMTAuOTk5LDExIEwxMSw0IEwxMyw0IFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjAwMDAwMCwgMTIuMDAwMDAwKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSAiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+
+/***/ }),
+
+/***/ 93380:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIwIDIySDRWNmgydjE0aDEyVjZoMnYxNnptMi0xOGgtNWwtMS4xNDMtMkg4LjE0M0w3IDRIMnYyaDIwVjR6IgogICAgZmlsbD0iIzc1NzU3NSIgLz4KICA8cGF0aCBkPSJNOSA4aDJ2MTBIOVY4ek0xMyA4aDJ2MTBoLTJWOHoiIGZpbGw9IiM3NTc1NzUiIC8+Cjwvc3ZnPg==");
 
 /***/ }),
 

@@ -136,10 +136,6 @@ function _createMdxContent(props) {
             children: "String"
           })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "empty"
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["cookie key에 해당하는 값을 사용자 식별 값으로 사용합니다.  콤마(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: ","
           }), ")를 구분자로 여러 개의 값을 설정할 수 있습니다."]

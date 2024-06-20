@@ -788,10 +788,6 @@ function _php_track_http_trs_createMdxContent(props) {
           class: "type",
           children: "String"
         })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "Empty"
-        })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "특정 URL을 설정하면 트랜잭션 추적 대상에서 제외됩니다. 설정된 URL은 트랜잭션 정보를 수집하지 않아, 트랜잭션 목록에서 확인되지 않습니다. 트랜잭션 추적 대상에서 제외할 URL을 지정합니다. 2개 이상의 값을 지정하려면 쉼표(,)를 구분자로 이용하세요"
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
@@ -816,10 +812,6 @@ function _php_track_http_trs_createMdxContent(props) {
         }), " ", (0,jsx_runtime.jsx)("span", {
           class: "type",
           children: "String"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "Empty"
         })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "트랜잭션 추적 대상에서 제외할 URL prefix를 지정합니다."
@@ -971,10 +963,6 @@ function _php_track_http_trs_createMdxContent(props) {
         }), " ", (0,jsx_runtime.jsx)("span", {
           class: "type",
           children: "String"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "Empty"
         })]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "설정한 HTTP 메소드(Method)로 요청된 트랜잭션 정보는 수집하지 않습니다. 여러 개를 설정하려면 쉼표(,)를 구분자로 이용하세요."
@@ -1303,10 +1291,6 @@ function agent_transaction_createMdxContent(props) {
             }), " ", (0,jsx_runtime.jsx)("span", {
               class: "type",
               children: "String"
-            })]
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
-              children: "Empty"
             })]
           }), "\n", (0,jsx_runtime.jsx)(_components.p, {
             children: "특정 Error 또는 Exception을 Business Exception으로 지정합니다. 히트맵에서는 에러로 표기되지 않고 통계 정보에만 수집됩니다. 수집되는 Error Class 명과 동일하게 적용합니다. 쉼표(,)를 구분자로 여러 개를 등록할 수 있습니다."

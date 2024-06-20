@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[33255],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[99285],{
 
 /***/ 59892:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -27,6 +27,10 @@ const toc = [{
 }, {
   "value": "위젯 배치하기",
   "id": "위젯-배치하기",
+  "level": 2
+}, {
+  "value": "위젯 삭제하기",
+  "id": "위젯-삭제하기",
   "level": 2
 }, {
   "value": "연관 지표 확인하기",
@@ -285,13 +289,32 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "위젯-삭제하기",
+        children: "위젯 삭제하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["화면에 배치한 모든 위젯을 삭제하려면 화면 위에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "삭제 아이콘",
+          src: (__webpack_require__(93380)/* ["default"] */ .A) + "",
+          width: "24",
+          height: "24"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "BTN06884",
+          className: "uitext"
+        }), " 버튼을 선택하세요."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "연관-지표-확인하기",
         children: "연관 지표 확인하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "metrics-detect-anormal-details.png",
         desc: "메트릭스 이상 탐지"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "위젯에서 차트의 일부 영역을 드래그하세요. 선택한 영역에서 해당 메트릭스 지표와 관련한 지표를 같이 확인할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["위젯에서 차트의 일부 영역을 드래그하세요. 화면 오른쪽에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL08102",
+          className: "uitext"
+        }), " 창이 나타납니다. 드래그한 시간 범위의 시작 시간을 기준으로 최대 6시간의 연관 지표를 조회할 수 있습니다."]
       })]
     })]
   });
@@ -316,7 +339,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 89933:
+/***/ 93702:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -338,32 +361,27 @@ const frontMatter = {
 	title: '메트릭스 이상 탐지',
 	description: '다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.',
 	tags: [
-		'Oracle Cloud Monitor',
-		'클라우드',
+		'Tibero',
 		'메트릭스',
 		'이상 탐지'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-cloud/metrics-detect-anormal",
+  "id": "tibero/metrics-detect-anormal",
   "title": "메트릭스 이상 탐지",
   "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
-  "source": "@site/docs/oracle-cloud/metrics-detect-anormal.mdx",
-  "sourceDirName": "oracle-cloud",
-  "slug": "/oracle-cloud/metrics-detect-anormal",
-  "permalink": "/whatap-docs/oracle-cloud/metrics-detect-anormal",
+  "source": "@site/docs/tibero/metrics-detect-anormal.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/metrics-detect-anormal",
+  "permalink": "/whatap-docs/tibero/metrics-detect-anormal",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-cloud/metrics-detect-anormal.mdx",
+  "editUrl": "undefined/docs/tibero/metrics-detect-anormal.mdx",
   "tags": [
     {
-      "label": "Oracle Cloud Monitor",
-      "permalink": "/whatap-docs/tags/oracle-cloud-monitor"
-    },
-    {
-      "label": "클라우드",
-      "permalink": "/whatap-docs/tags/클라우드"
+      "label": "Tibero",
+      "permalink": "/whatap-docs/tags/tibero"
     },
     {
       "label": "메트릭스",
@@ -380,20 +398,19 @@ const metadata = {
     "title": "메트릭스 이상 탐지",
     "description": "다양한 메트릭스 지표의 패턴을 AI가 학습한 예상 패턴과 비교해 볼 수 있습니다.",
     "tags": [
-      "Oracle Cloud Monitor",
-      "클라우드",
+      "Tibero",
       "메트릭스",
       "이상 탐지"
     ]
   },
-  "sidebar": "oracleSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
     "title": "메트릭스 차트",
-    "permalink": "/whatap-docs/oracle-cloud/metrics-chart"
+    "permalink": "/whatap-docs/tibero/metrics-chart"
   },
   "next": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/oracle-cloud/set-notice"
+    "title": "데이터베이스 분석하기",
+    "permalink": "/whatap-docs/tibero/analysis-function"
   }
 };
 const assets = {
@@ -441,6 +458,16 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcy1jbG9zZTwvdGl0bGU+IC0tPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iSWNvbi1TZXQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJXaGFUYXBfSWNvbl9TZXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05MzQuMDAwMDAwLCAtMTAxMy4wMDAwMDApIiBmaWxsPSIjZDUwMDAwIj4KICAgICAgICAgICAgPGcgaWQ9InN1Z2dlc3RlZC1pY29ucy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDk2Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jbG9zZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODkyLjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMyw0IEwxMi45OTksMTEgTDIwLDExIEwyMCwxMyBMMTIuOTk5LDEzIEwxMywyMCBMMTEsMjAgTDEwLjk5OSwxMyBMNCwxMyBMNCwxMSBMMTAuOTk5LDExIEwxMSw0IEwxMyw0IFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjAwMDAwMCwgMTIuMDAwMDAwKSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSAiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+
+/***/ }),
+
+/***/ 93380:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIwIDIySDRWNmgydjE0aDEyVjZoMnYxNnptMi0xOGgtNWwtMS4xNDMtMkg4LjE0M0w3IDRIMnYyaDIwVjR6IgogICAgZmlsbD0iIzc1NzU3NSIgLz4KICA8cGF0aCBkPSJNOSA4aDJ2MTBIOVY4ek0xMyA4aDJ2MTBoLTJWOHoiIGZpbGw9IiM3NTc1NzUiIC8+Cjwvc3ZnPg==");
 
 /***/ }),
 
