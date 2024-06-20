@@ -2956,13 +2956,13 @@ const sidebars = {
           label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
-          className: 'new',
+          // className: 'new',
           items: [
             {
               type: 'doc',
               label: 'v1.0.9',
               id: 'release-notes/mobile/mobile-app-v1_0_9',
-              className: 'new',
+              // className: 'new',
             },
             {
               type: 'doc',
@@ -3005,14 +3005,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_34',
+                id: 'release-notes/java/java-2_2_35',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_34',
+                  id: 'release-notes/java/java-2_2_35',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_34',
                 'release-notes/java/java-2_2_33',
                 'release-notes/java/java-2_2_32',
                 'release-notes/java/java-2_2_31',
@@ -3021,7 +3022,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_28',
                 'release-notes/java/java-2_2_27',
                 'release-notes/java/java-2_2_26',
-                'release-notes/java/java-2_2_25',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3081,7 +3081,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_97',
@@ -3090,7 +3090,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_97',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_96',
                 'release-notes/nodejs/nodejs-0_4_95',
