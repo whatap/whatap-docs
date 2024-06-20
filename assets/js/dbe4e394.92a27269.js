@@ -573,7 +573,6 @@ function install_agent_createMdxContent(props) {
     em: "em",
     h2: "h2",
     h3: "h3",
-    img: "img",
     li: "li",
     ol: "ol",
     p: "p",
@@ -583,8 +582,9 @@ function install_agent_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  }, {Details, TabItem, Tabs} = _components;
+  }, {Details, ImgLang, TabItem, Tabs} = _components;
   if (!Details) install_agent_missingMdxReference("Details", true);
+  if (!ImgLang) install_agent_missingMdxReference("ImgLang", true);
   if (!TabItem) install_agent_missingMdxReference("TabItem", true);
   if (!Tabs) install_agent_missingMdxReference("Tabs", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
@@ -611,13 +611,9 @@ function install_agent_createMdxContent(props) {
           children: "whatap-agent 서비스를 실행하세요."
         }), "\n"]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Go Monitoring",
-        src: (__webpack_require__(8883)/* ["default"] */ .A) + "",
-        width: "1175",
-        height: "593"
-      })
+    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      img: "golang_system.png",
+      desc: "Go Monitoring"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 모니터링 서비스를 사용하기 위해서는 ", (0,jsx_runtime.jsx)(_components.a, {
         href: "https://www.whatap.io/ko/signup/",
@@ -929,16 +925,6 @@ function install_agent_missingMdxReference(id, component) {
 }
 
 
-
-/***/ }),
-
-/***/ 8883:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/golang_system-4f437191bf8b13d0ebb354a4c67a470c.png");
 
 /***/ }),
 
