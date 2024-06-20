@@ -242,10 +242,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -254,26 +255,24 @@ function _createMdxContent(props) {
         children: "프리셋"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-dma",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "프리셋",
-            src: (__webpack_require__(21840)/* ["default"] */ .A) + "",
-            width: "400",
-            height: "214"
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "apm-dashboard-preset-list.png",
+          desc: "Preset"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 위젯의 크기를 조절하고, 원하는 위치에 배치해 새로운 프리셋을 만들 수 있습니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "default",
+              className: "uitext"
+            }), "으로 설정된 프리셋은 변경할 수 없습니다."]
           })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 기본 프리셋(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "kube_default",
-            className: "uitext"
-          }), ")은 변경할 수 없으며, 원하는 형식으로 위젯의 크기를 조절하고, 배치해 새로운 프리셋을 만들 수 있습니다."]
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "postgresql,mysql",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 기본 프리셋(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "kube_default",
-            className: "uitext"
-          }), ")은 변경할 수 없으며, 원하는 형식으로 위젯의 크기를 조절하고, 배치해 새로운 프리셋을 만들 수 있습니다."]
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 위젯의 크기를 조절하고, 원하는 위치에 배치해 새로운 프리셋을 만들 수 있습니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-preset-list.png",
           desc: "프리셋"
@@ -303,6 +302,14 @@ function _createMdxContent(props) {
               }), ": AWS RDS CloudWatch 지표와 주요 DB 지표로 구성된 프리셋입니다."]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본 프리셋(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "kube_default",
+              className: "uitext"
+            }), ")은 변경할 수 없습니다."]
+          })
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -364,7 +371,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "프리셋은 사용자 계정으로 저장되며 현재는 다른 사용자와 공유할 수 없습니다. 더 나은 기능을 제공하도록 업데이트 예정입니다."
+              children: "프리셋은 프로젝트 단위로 저장되어 다른 사용자와 공유할 수 있습니다."
             }), "\n"]
           }), "\n"]
         })
@@ -381,6 +388,13 @@ function _createMdxContent(props) {
           width: "20",
           height: "20"
         }), " 버튼을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Default"
+          }), " 프리셋은 삭제할 수 없습니다."]
+        })
       })]
     })]
   });
@@ -3477,16 +3491,6 @@ function _missingMdxReference(id, component) {
 }
 
 
-
-/***/ }),
-
-/***/ 21840:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-dashboard-preset-default-7873c6f9d0334e4a0ada0e1c10bff799.png");
 
 /***/ }),
 

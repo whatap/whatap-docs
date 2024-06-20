@@ -62,12 +62,20 @@ const toc = [{
   "id": "preview-270a1",
   "level": 2
 }, {
+  "value": "<code>공통</code>",
+  "id": "공통",
+  "level": 3
+}, {
+  "value": "<code>Application</code>",
+  "id": "application",
+  "level": 3
+}, {
   "value": "Preview 2.7.0.a0",
   "id": "preview-270a0",
   "level": 2
 }, {
   "value": "<code>Application</code>",
-  "id": "application",
+  "id": "application-1",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -113,21 +121,36 @@ function _createMdxContent(props) {
         children: "Preview 2.7.0.a1"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "2024년 06월 27일"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              children: "Feature"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_agentsConfiguration",
-              className: "uitext"
-            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_threadList",
-              className: "uitext"
-            }), " 메뉴의 테이블에서 CPU 시간 증가량을 표시하는 컬럼 추가"]
-          }), "\n"]
-        })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "공통",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "공통"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_correlatedProjectManagement",
+            className: "uitext"
+          }), " 메뉴의 일본어 명칭 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "application",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Application"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentsConfiguration",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_threadList",
+            className: "uitext"
+          }), " 메뉴의 테이블에서 CPU 시간 증가량을 표시하는 컬럼 추가"]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -139,7 +162,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "application",
+          id: "application-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Application"
           })

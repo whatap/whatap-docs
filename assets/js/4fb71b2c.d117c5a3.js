@@ -1196,6 +1196,103 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
+/***/ 15094:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "기본 프리셋 변경하기",
+  "id": "기본-프리셋-변경하기",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    h3: "h3",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    section: "section",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h3",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "기본-프리셋-변경하기",
+      children: "기본 프리셋 변경하기"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_appDashboard",
+        className: "uitext"
+      }), " 메뉴로 처음 진입했을 때 보여지는 프리셋을 변경할 수 있습니다."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "대시보드의 오른쪽 위에 프리셋 선택 상자를 선택하세요."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "기본으로 설정할 프리셋에 마우스를 오버하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "apm-dashboard-preset-change-default.png",
+          desc: "Preset"
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "BTN08106",
+            className: "uitext"
+          }), " 버튼이 나타나면 선택하세요."]
+        }), "\n"]
+      }), "\n"]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["선택한 프리셋이 기본 프리셋으로 변경되며, 프리셋 목록에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "default",
+        className: "uitext"
+      }), " 태그가 표시됩니다."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "apm-dashboard-preset-changed-default.png",
+      desc: "Preset"
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 36595:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1243,10 +1340,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -1255,26 +1353,24 @@ function _createMdxContent(props) {
         children: "프리셋"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-dma",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "프리셋",
-            src: (__webpack_require__(21840)/* ["default"] */ .A) + "",
-            width: "400",
-            height: "214"
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "apm-dashboard-preset-list.png",
+          desc: "Preset"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 위젯의 크기를 조절하고, 원하는 위치에 배치해 새로운 프리셋을 만들 수 있습니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "default",
+              className: "uitext"
+            }), "으로 설정된 프리셋은 변경할 수 없습니다."]
           })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 기본 프리셋(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "kube_default",
-            className: "uitext"
-          }), ")은 변경할 수 없으며, 원하는 형식으로 위젯의 크기를 조절하고, 배치해 새로운 프리셋을 만들 수 있습니다."]
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "postgresql,mysql",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 기본 프리셋(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "kube_default",
-            className: "uitext"
-          }), ")은 변경할 수 없으며, 원하는 형식으로 위젯의 크기를 조절하고, 배치해 새로운 프리셋을 만들 수 있습니다."]
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 위젯의 크기를 조절하고, 원하는 위치에 배치해 새로운 프리셋을 만들 수 있습니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-preset-list.png",
           desc: "프리셋"
@@ -1304,6 +1400,14 @@ function _createMdxContent(props) {
               }), ": AWS RDS CloudWatch 지표와 주요 DB 지표로 구성된 프리셋입니다."]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본 프리셋(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "kube_default",
+              className: "uitext"
+            }), ")은 변경할 수 없습니다."]
+          })
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1365,7 +1469,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "프리셋은 사용자 계정으로 저장되며 현재는 다른 사용자와 공유할 수 없습니다. 더 나은 기능을 제공하도록 업데이트 예정입니다."
+              children: "프리셋은 프로젝트 단위로 저장되어 다른 사용자와 공유할 수 있습니다."
             }), "\n"]
           }), "\n"]
         })
@@ -1382,6 +1486,13 @@ function _createMdxContent(props) {
           width: "20",
           height: "20"
         }), " 버튼을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Default"
+          }), " 프리셋은 삭제할 수 없습니다."]
+        })
       })]
     })]
   });
@@ -2298,7 +2409,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_apm_dashboard_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(80573);
 /* harmony import */ var _common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(84549);
 /* harmony import */ var _common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15304);
@@ -2306,9 +2417,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_items_apm_dashboard_search_agent_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(32318);
 /* harmony import */ var _common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(99999);
 /* harmony import */ var _common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(36595);
-/* harmony import */ var _common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(13771);
-/* harmony import */ var _common_items_apm_dashboard_about_widget_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(6526);
-/* harmony import */ var _common_items_apm_dashboard_realtime_notice_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(18164);
+/* harmony import */ var _common_items_apm_dashboard_preset_change_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(15094);
+/* harmony import */ var _common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(13771);
+/* harmony import */ var _common_items_apm_dashboard_about_widget_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6526);
+/* harmony import */ var _common_items_apm_dashboard_realtime_notice_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(18164);
 
 
 const frontMatter = {
@@ -2385,6 +2497,7 @@ const assets = {
 /*에이전트 검색하기*/
 /*위젯 편집하기*/
 /*프리셋*/
+/*기본 프리셋 변경하기*/
 /*위젯 옵션 이용하기*/
 /*위젯 알아보기*/
 /*실시간 알림 확인하기*/
@@ -2400,15 +2513,16 @@ const assets = {
 
 
 
-const toc = [..._common_items_apm_dashboard_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_dashboard_select_agent_category_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_apm_dashboard_search_agent_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_apm_dashboard_about_widget_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_apm_dashboard_realtime_notice_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM];
+
+const toc = [..._common_items_apm_dashboard_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_dashboard_select_agent_category_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_apm_dashboard_search_agent_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_apm_dashboard_preset_change_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_apm_dashboard_about_widget_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_apm_dashboard_realtime_notice_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_select_agent_category_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_search_agent_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_about_widget_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_realtime_notice_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {})]
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_select_agent_category_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_search_agent_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_preset_change_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_about_widget_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_realtime_notice_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_11__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_12__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -2430,16 +2544,6 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-dashboard-apdex-4beb13d03ae3217f150ef39562cb6ed1.png");
-
-/***/ }),
-
-/***/ 21840:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-dashboard-preset-default-7873c6f9d0334e4a0ada0e1c10bff799.png");
 
 /***/ }),
 
