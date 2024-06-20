@@ -637,10 +637,6 @@ function _createMdxContent(props) {
               class: "type",
               children: "String"
             })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "0"
-            })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "특정 URL을 설정하면 트랜잭션 추적 대상에서 제외됩니다. 설정된 URL은 트랜잭션 정보를 수집하지 않아, 트랜잭션 목록에서 확인되지 않습니다. 트랜잭션 추적 대상에서 제외할 URL을 지정합니다. 2개 이상의 값을 지정하려면 쉼표(,)를 구분자로 이용하세요"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
@@ -665,10 +661,6 @@ function _createMdxContent(props) {
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
               children: "String"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "0"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "트랜잭션 추적 대상에서 제외할 URL prefix를 지정합니다."

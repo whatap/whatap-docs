@@ -161,10 +161,6 @@ function _createMdxContent(props) {
             class: "type",
             children: "String"
           })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "agent"
-          })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "설정한 값에 대한 method를 수집하지 않습니다. 여러 개를 등록할 때는 쉼표(,)를 구분자로 이용하세요."
         }), "\n"]
