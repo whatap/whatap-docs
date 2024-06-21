@@ -326,7 +326,7 @@ function _createMdxContent(props) {
               sid: "TTL08103",
               className: "uitext"
             }), "는 사용자가 웹 사이트에서 수행하는 모든 이벤트를 기록하고 재생할 수 있는 기능입니다. 이 기능을 통해 클릭, 스크롤, 입력, 페이지 전환 등의 사용자 행동을 재현할 수 있습니다. 이를 통해 사용자가 실제로 웹사이트와 어떻게 상호 작용하는지 정확히 파악할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "set-session-replay",
+              href: "session-replay",
               children: "다음 문서"
             }), "를 참조하세요."]
           }), "\n"]
