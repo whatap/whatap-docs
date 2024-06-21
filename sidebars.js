@@ -4436,6 +4436,7 @@ const sidebars = {
                 id: 'amazon-ecs/metrics-intro',
               },
               items: [
+                'amazon-ecs/metrics-ecs',
                 'amazon-ecs/metrics-search',
                 'amazon-ecs/metrics-cube',
                 'amazon-ecs/metrics-chart',
