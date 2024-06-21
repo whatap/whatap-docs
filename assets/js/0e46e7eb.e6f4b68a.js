@@ -62,7 +62,7 @@ function _createMdxContent(props) {
         children: ["지표는 와탭 ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "메트릭스"
         }), "로 수집됩니다. ", (0,jsx_runtime.jsx)(_components.a, {
-          href: "../amazon-ecs/dashboard",
+          href: "../amazon-ecs/metrics-ecs",
           children: "다음 문서"
         }), "를 참조하세요."]
       }), "\n"]
@@ -143,8 +143,8 @@ const metadata = {
     "permalink": "/whatap-docs/amazon-ecs/flexboard-share"
   },
   "next": {
-    "title": "메트릭스 조회",
-    "permalink": "/whatap-docs/amazon-ecs/metrics-search"
+    "title": "Amazon ECS 지표",
+    "permalink": "/whatap-docs/amazon-ecs/metrics-ecs"
   }
 };
 const assets = {

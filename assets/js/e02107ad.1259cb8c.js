@@ -210,7 +210,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
           metastring: "title='config example' showLineNumbers",
-          children: "config: {\n  projectAccessKey: {projec_access_key},\n  pcode: {pcode},\n  sampleRate: 100,\n  sessionReplaySampleRate: 50,\n  ignoreOrigins: [ 'https://ignore-site.com/' , '/^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i' ],\n  collectUserClick: false\n}\n"
+          children: "config: {\n  projectAccessKey: {projec_access_key},\n  pcode: {pcode},\n  sampleRate: 100,\n  ignoreOrigins: [ 'https://ignore-site.com/' , '/^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i' ],\n  collectUserClick: false\n}\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -230,12 +230,6 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "sampleRate"
             }), ": 수집하는 사용자 세션 비율을 설정할 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "sessionReplaySampleRate"
-            }), ": 수집할 세션 중에서 세션 리플레이를 적용할 세션의 비율을 설정할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -261,32 +255,6 @@ function _createMdxContent(props) {
             children: "pcode"
           }), " 값은 설치 안내에서 제공하는 스크립트 코드를 가져와 사용하길 권장합니다."]
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "tip",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["수집하는 세션 중에서 세션 리플레이를 적용할 세션의 비율을 설정할 수 있습니다. 예를 들어, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "sampleRate"
-          }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "100"
-          }), "이고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "sessionReplaySampleRate"
-          }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "50"
-          }), "이라면, 전체 세션 중 50%만 세션 리플레이로 기록됩니다. 반면에, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "sampleRate"
-          }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "50"
-          }), "이고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "sessionReplaySampleRate"
-          }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "100"
-          }), "이라면, 전체 세션의 50%가 수집 대상이며, 이 중 100%가 세션 리플레이로 기록됩니다."]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["세션 리플레이에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "session-replay",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",

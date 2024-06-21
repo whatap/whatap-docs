@@ -67,8 +67,8 @@ const metadata = {
   },
   "sidebar": "awsecsSidebar",
   "previous": {
-    "title": "메트릭스",
-    "permalink": "/whatap-docs/amazon-ecs/metrics-intro"
+    "title": "Amazon ECS 지표",
+    "permalink": "/whatap-docs/amazon-ecs/metrics-ecs"
   },
   "next": {
     "title": "메트릭스 큐브",
