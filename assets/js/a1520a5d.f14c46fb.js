@@ -1,109 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17542],{
-
-/***/ 62936:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13382);
-
-
-const frontMatter = {
-	id: 'aws-log-setting',
-	title: '로그 설정',
-	description: 'AWS Log 모니터링 설정 방법을 안내합니다.',
-	toc_max_heading_level: 3,
-	tags: [
-		'로그',
-		'AWS Log',
-		'설정하기'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "aws-log/aws-log-setting",
-  "title": "로그 설정",
-  "description": "AWS Log 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/aws-log/aws-log-setting.mdx",
-  "sourceDirName": "aws-log",
-  "slug": "/aws-log/aws-log-setting",
-  "permalink": "/whatap-docs/aws-log/aws-log-setting",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/aws-log/aws-log-setting.mdx",
-  "tags": [
-    {
-      "label": "로그",
-      "permalink": "/whatap-docs/tags/로그"
-    },
-    {
-      "label": "AWS Log",
-      "permalink": "/whatap-docs/tags/aws-log"
-    },
-    {
-      "label": "설정하기",
-      "permalink": "/whatap-docs/tags/설정하기"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "aws-log-setting",
-    "title": "로그 설정",
-    "description": "AWS Log 모니터링 설정 방법을 안내합니다.",
-    "toc_max_heading_level": 3,
-    "tags": [
-      "로그",
-      "AWS Log",
-      "설정하기"
-    ]
-  },
-  "sidebar": "awslogSidebar",
-  "previous": {
-    "title": "자원 삭제하기",
-    "permalink": "/whatap-docs/aws-log/delete-aws-resource"
-  },
-  "next": {
-    "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/aws-log/log-parser"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84746],{
 
 /***/ 13382:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -170,11 +66,11 @@ const toc = [{
   "id": "log-data-setting",
   "level": 3
 }, {
-  "value": "데이터 유지 기간",
+  "value": "데이터 보존 기간",
   "id": "data-retention",
   "level": 4
 }, {
-  "value": "카테고리별 데이터 유지 기간",
+  "value": "카테고리별 데이터 보존 기간",
   "id": "data-retention-per-category",
   "level": 4
 }, {
@@ -629,7 +525,7 @@ function _createMdxContent(props) {
           })
         }), "을 확인할 수 있습니다. 또한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "데이터 유지 기간"
+            children: "데이터 보존 기간"
           })
         }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -641,21 +537,21 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "data-retention",
-        children: "데이터 유지 기간"
+        children: "데이터 보존 기간"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["공통으로 적용할 기본(default) 데이터 유지 기간입니다. 미지정 시 기본값은 1일입니다. 카테고리별 데이터 유지 기간을 별도로 설정하지 않으면 이 데이터 유지 기간이 기본적으로 적용됩니다. 카테고리별 데이터 유지 기간을 설정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: ["공통으로 적용할 기본(default) 데이터 보존 기간입니다. 미지정 시 기본값은 1일입니다. 카테고리별 데이터 보존 기간을 별도로 설정하지 않으면 이 데이터 보존 기간이 기본적으로 적용됩니다. 카테고리별 데이터 보존 기간을 설정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "초기화"
           })
-        }), " 버튼을 선택하면 기본 데이터 유지 기간으로 초기화됩니다."]
+        }), " 버튼을 선택하면 기본 데이터 보존 기간으로 초기화됩니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "data-retention-per-category",
-        children: "카테고리별 데이터 유지 기간"
+        children: "카테고리별 데이터 보존 기간"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["카테고리별 로그 데이터 유지 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: ["카테고리별 로그 데이터 보존 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "로그 수"
         }), "는 해당 기간 동안 쌓인 로그 라인을 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -667,7 +563,7 @@ function _createMdxContent(props) {
           })
         }), "는 데이터 보관일에 금일 로그 수를 곱한 로그 라인 개수를 의미합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "로그 데이터 유지 기간을 다음과 같이 지정할 수 있습니다. 기간 지정에 따라 오래된 데이터를 삭제해 공간을 확보할 수 있습니다."
+        children: "로그 데이터 보존 기간을 다음과 같이 지정할 수 있습니다. 기간 지정에 따라 오래된 데이터를 삭제해 공간을 확보할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -675,7 +571,7 @@ function _createMdxContent(props) {
               children: "트라이얼 프로젝트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터 유지 기간으로 1일, 2일, 3일을 선택할 수 있습니다."
+            children: "데이터 보존 기간으로 1일, 2일, 3일을 선택할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -683,7 +579,7 @@ function _createMdxContent(props) {
               children: "유료 프로젝트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터 유지 기간으로 1일, 2일, 3일, 4일, 5일, 6일, 7일, 10일, 30일, 40일을 선택할 수 있습니다."
+            children: "데이터 보존 기간으로 1일, 2일, 3일, 4일, 5일, 6일, 7일, 10일, 30일, 40일을 선택할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -691,10 +587,10 @@ function _createMdxContent(props) {
               children: "저장량 기준 과금"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터 유지 기간에 따라 비용이 달라집니다."
+            children: "데이터 보존 기간에 따라 비용이 달라집니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "예시, 일 평균 200만 로그 라인이 쌓이고 데이터 유지 기간을 3일로 지정한 경우라면 평균 600만 로그 라인이 수집 서버에 유지되고 과금 대상이 됩니다."
+              children: "예시, 일 평균 200만 로그 라인이 쌓이고 데이터 보존 기간을 3일로 지정한 경우라면 평균 600만 로그 라인이 수집 서버에 유지되고 과금 대상이 됩니다."
             }), "\n"]
           }), "\n"]
         }), "\n"]
@@ -2232,6 +2128,110 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 83900:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13382);
+
+
+const frontMatter = {
+	id: 'log-setting',
+	title: '로그 설정',
+	description: '로그 모니터링 설정 방법을 안내합니다.',
+	toc_max_heading_level: 3,
+	tags: [
+		'로그',
+		'로그 모니터링',
+		'설정하기'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "log/log-setting",
+  "title": "로그 설정",
+  "description": "로그 모니터링 설정 방법을 안내합니다.",
+  "source": "@site/docs/log/log-setting.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-setting",
+  "permalink": "/whatap-docs/log/log-setting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/log/log-setting.mdx",
+  "tags": [
+    {
+      "label": "로그",
+      "permalink": "/whatap-docs/tags/로그"
+    },
+    {
+      "label": "로그 모니터링",
+      "permalink": "/whatap-docs/tags/로그-모니터링"
+    },
+    {
+      "label": "설정하기",
+      "permalink": "/whatap-docs/tags/설정하기"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-setting",
+    "title": "로그 설정",
+    "description": "로그 모니터링 설정 방법을 안내합니다.",
+    "toc_max_heading_level": 3,
+    "tags": [
+      "로그",
+      "로그 모니터링",
+      "설정하기"
+    ]
+  },
+  "sidebar": "logSidebar",
+  "previous": {
+    "title": "Kubernetes",
+    "permalink": "/whatap-docs/log/log-k8s"
+  },
+  "next": {
+    "title": "로그 파싱하기",
+    "permalink": "/whatap-docs/log/log-parser"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

@@ -161,11 +161,11 @@ function _createMdxContent(props) {
             })
           }), " 메뉴에서 설정한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "데이터 유지 기간"
+              children: "데이터 보존 기간"
             })
           }), "과 같습니다. 다만 적재된 로그 잔존 주기는 시간 단위이기에 설정한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "데이터 유지 기간"
+              children: "데이터 보존 기간"
             })
           }), "에 추가로 1시간까지 데이터가 남아있을 수 있습니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
@@ -173,11 +173,11 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "데이터 유지 기간"
+                children: "데이터 보존 기간"
               })
             }), "을 설정하지 않은 경우 기본값은 1일입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "데이터 유지 기간"
+                children: "데이터 보존 기간"
               })
             }), " 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
               href: "../log/log-setting#log-data-setting",

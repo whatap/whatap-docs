@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63627],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5055],{
 
 /***/ 13382:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -66,11 +66,11 @@ const toc = [{
   "id": "log-data-setting",
   "level": 3
 }, {
-  "value": "데이터 유지 기간",
+  "value": "데이터 보존 기간",
   "id": "data-retention",
   "level": 4
 }, {
-  "value": "카테고리별 데이터 유지 기간",
+  "value": "카테고리별 데이터 보존 기간",
   "id": "data-retention-per-category",
   "level": 4
 }, {
@@ -525,7 +525,7 @@ function _createMdxContent(props) {
           })
         }), "을 확인할 수 있습니다. 또한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "데이터 유지 기간"
+            children: "데이터 보존 기간"
           })
         }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -537,21 +537,21 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "data-retention",
-        children: "데이터 유지 기간"
+        children: "데이터 보존 기간"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["공통으로 적용할 기본(default) 데이터 유지 기간입니다. 미지정 시 기본값은 1일입니다. 카테고리별 데이터 유지 기간을 별도로 설정하지 않으면 이 데이터 유지 기간이 기본적으로 적용됩니다. 카테고리별 데이터 유지 기간을 설정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: ["공통으로 적용할 기본(default) 데이터 보존 기간입니다. 미지정 시 기본값은 1일입니다. 카테고리별 데이터 보존 기간을 별도로 설정하지 않으면 이 데이터 보존 기간이 기본적으로 적용됩니다. 카테고리별 데이터 보존 기간을 설정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "초기화"
           })
-        }), " 버튼을 선택하면 기본 데이터 유지 기간으로 초기화됩니다."]
+        }), " 버튼을 선택하면 기본 데이터 보존 기간으로 초기화됩니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "data-retention-per-category",
-        children: "카테고리별 데이터 유지 기간"
+        children: "카테고리별 데이터 보존 기간"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["카테고리별 로그 데이터 유지 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: ["카테고리별 로그 데이터 보존 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "로그 수"
         }), "는 해당 기간 동안 쌓인 로그 라인을 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -563,7 +563,7 @@ function _createMdxContent(props) {
           })
         }), "는 데이터 보관일에 금일 로그 수를 곱한 로그 라인 개수를 의미합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "로그 데이터 유지 기간을 다음과 같이 지정할 수 있습니다. 기간 지정에 따라 오래된 데이터를 삭제해 공간을 확보할 수 있습니다."
+        children: "로그 데이터 보존 기간을 다음과 같이 지정할 수 있습니다. 기간 지정에 따라 오래된 데이터를 삭제해 공간을 확보할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -571,7 +571,7 @@ function _createMdxContent(props) {
               children: "트라이얼 프로젝트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터 유지 기간으로 1일, 2일, 3일을 선택할 수 있습니다."
+            children: "데이터 보존 기간으로 1일, 2일, 3일을 선택할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -579,7 +579,7 @@ function _createMdxContent(props) {
               children: "유료 프로젝트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터 유지 기간으로 1일, 2일, 3일, 4일, 5일, 6일, 7일, 10일, 30일, 40일을 선택할 수 있습니다."
+            children: "데이터 보존 기간으로 1일, 2일, 3일, 4일, 5일, 6일, 7일, 10일, 30일, 40일을 선택할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -587,10 +587,10 @@ function _createMdxContent(props) {
               children: "저장량 기준 과금"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터 유지 기간에 따라 비용이 달라집니다."
+            children: "데이터 보존 기간에 따라 비용이 달라집니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "예시, 일 평균 200만 로그 라인이 쌓이고 데이터 유지 기간을 3일로 지정한 경우라면 평균 600만 로그 라인이 수집 서버에 유지되고 과금 대상이 됩니다."
+              children: "예시, 일 평균 200만 로그 라인이 쌓이고 데이터 보존 기간을 3일로 지정한 경우라면 평균 600만 로그 라인이 수집 서버에 유지되고 과금 대상이 됩니다."
             }), "\n"]
           }), "\n"]
         }), "\n"]
@@ -2134,7 +2134,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 52547:
+/***/ 95134:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2160,21 +2160,21 @@ const frontMatter = {
 		'로그',
 		'로그 모니터링',
 		'설정하기',
-		'Redis'
+		'PostgreSQL'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/log-setting",
+  "id": "postgresql/log-setting",
   "title": "로그 설정",
   "description": "로그 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/redis/log-setting.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/log-setting",
-  "permalink": "/whatap-docs/redis/log-setting",
+  "source": "@site/docs/postgresql/log-setting.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/log-setting",
+  "permalink": "/whatap-docs/postgresql/log-setting",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/log-setting.mdx",
+  "editUrl": "undefined/docs/postgresql/log-setting.mdx",
   "tags": [
     {
       "label": "로그",
@@ -2189,8 +2189,8 @@ const metadata = {
       "permalink": "/whatap-docs/tags/설정하기"
     },
     {
-      "label": "Redis",
-      "permalink": "/whatap-docs/tags/redis"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     }
   ],
   "version": "current",
@@ -2203,17 +2203,17 @@ const metadata = {
       "로그",
       "로그 모니터링",
       "설정하기",
-      "Redis"
+      "PostgreSQL"
     ]
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "로그 검색",
-    "permalink": "/whatap-docs/redis/log-search"
+    "permalink": "/whatap-docs/postgresql/log-search"
   },
   "next": {
     "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/redis/log-parser"
+    "permalink": "/whatap-docs/postgresql/log-parser"
   }
 };
 const assets = {
