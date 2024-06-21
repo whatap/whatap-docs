@@ -33616,7 +33616,7 @@
   },
   "related_project": {
     "en": "Related project",
-    "ja": "関連プロジェクト",
+    "ja": "連携プロジェクト",
     "ko": "관련 프로젝트",
     "zh": "Related Project",
     "service_id": "_04882"
@@ -35912,7 +35912,7 @@
   },
   "master_project_event_settings_help": {
     "en": "Share event settings with related projects. (If you change settings, it applies to related projects equally.)",
-    "ja": "関連プロジェクトとイベント設定を共有します。(設定を変更すると関連プロジェクトにも同様に適用されます。)",
+    "ja": "連携プロジェクトとイベント設定を共有します。(設定を変更すると連携プロジェクトにも同様に適用されます。)",
     "ko": "관련 프로젝트와 이벤트 설정을 공유합니다. (설정 변경시 관련 프로젝트에도 동일하게 적용됩니다.)",
     "zh": "Share event settings with related projects. (If you change settings, the same applies to related projects.)",
     "service_id": "_05210"
@@ -48441,10 +48441,10 @@
     "service_id": "DSC07032"
   },
   "CNT07033": {
-    "en": "You have viewed <span style=\"color: #296CF2;\">{y} of the total {x} results, and the results retrieved are <span style=\"color: #296CF2;\">{z}.",
+    "en": "You have viewed <span style=\"color: #296CF2;\">{y}</span> of the total {x} results, and the results retrieved are <span style=\"color: #296CF2;\">{z}.</span>",
     "ja": "全体の{x}件の内、<span style=\"color: #296CF2;\">{y}件を</span>照会し、検索された結果は<span style=\"color: #296CF2;\">{z}件</span>です。",
     "ko": "전체 {x}건 중 <span style=\"color: #296CF2;\">{y}건</span> 조회했으며 검색된 결과는 <span style=\"color: #296CF2;\">{z}건</span>입니다.",
-    "zh": "Out of all {x} cases, <span style=\"color: #296CF2;\">{y}</span> has been searched for <span style=\"color: #296CF2;\">{z} cases</span>.",
+    "zh": "You have viewed <span style=\"color: #296CF2;\">{y}</span> of the total {x} results, and the results retrieved are <span style=\"color: #296CF2;\">{z}.</span>",
     "service_id": "CNT07033"
   },
   "DSC07034": {
@@ -54020,10 +54020,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -55623,10 +55623,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete this item?",
+    "zh": "Are you sure you want to delete that item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55924,10 +55924,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -55959,10 +55959,10 @@
     "service_id": "CNT08115"
   },
   "CNT08116": {
-    "en": "Use automatic Y axis",
+    "en": "Use automatic Y-axis",
     "ja": "自動Y軸を使用",
     "ko": "자동 Y축 사용",
-    "zh": "Use automatic Y axis",
+    "zh": "Use automatic Y-axis",
     "service_id": "CNT08116"
   },
   "CNT08117": {
@@ -55994,10 +55994,10 @@
     "service_id": "TTL08120"
   },
   "CNT08121": {
-    "en": "{menu} <b>Service ends from {date}</b>.",
-    "ja": "{menu}は<b> {date}からサービスを終了</b>します。",
-    "ko": "{menu}는 <b>{date}부터 서비스 종료</b>합니다.",
-    "zh": "{menu} <b>Service ends from {date}</b>.",
+    "en": "{menu} will end the service on <b>{date}</b>.",
+    "ja": "{menu}は<b>{date}でサービス終了</b>します。",
+    "ko": "{menu}는 <b>{date}자로 서비스 종료</b>합니다.",
+    "zh": "{menu} will end the service on <b>{date}</b>.",
     "service_id": "CNT08121"
   },
   "CNT08122": {
@@ -56027,6 +56027,202 @@
     "ko": "통합 Flex 보드",
     "zh": "Integrated Flex Board",
     "service_id": "MNU08125"
+  },
+  "TTL08126": {
+    "en": "increase",
+    "ja": "増加量",
+    "ko": "증가량",
+    "zh": "increase",
+    "service_id": "TTL08126"
+  },
+  "CNT08127": {
+    "en": "Set inquiry date",
+    "ja": "照会日の設定",
+    "ko": "조회 날짜 설정",
+    "zh": "Set inquiry date",
+    "service_id": "CNT08127"
+  },
+  "CNT08128": {
+    "en": "Please select a date and time.",
+    "ja": "日付と時刻を選択してください。",
+    "ko": "날짜와 시간을 선택해 주세요.",
+    "zh": "Please select a date and time.",
+    "service_id": "CNT08128"
+  },
+  "CNT08129": {
+    "en": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
+    "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
+    "zh": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "service_id": "CNT08129"
+  },
+  "CNT08130": {
+    "en": "Select indicator",
+    "ja": "指標の選択",
+    "ko": "지표 선택",
+    "zh": "Select indicator",
+    "service_id": "CNT08130"
+  },
+  "CNT08131": {
+    "en": "The available metrics change depending on the target you select. Click on an indicator to add it to the right pane.",
+    "ja": "選択したターゲットに応じて利用可能な指標が変わります。指標をクリックして右側の領域に追加します。",
+    "ko": "선택한 대상에 따라 사용할 수 있는 지표가 변경됩니다. 지표를 클릭하여 오른쪽 영역에 추가합니다.",
+    "zh": "The available metrics change depending on the target you select. Click on an indicator to add it to the right pane.",
+    "service_id": "CNT08131"
+  },
+  "CNT08132": {
+    "en": "The default interval time is different for each indicator, and the interval time changes depending on the inquiry time range.",
+    "ja": "インジケータごとにデフォルトに設定されたインターバル時間が異なり、ルックアップ時間の範囲によってインターバル時間が変更されます。",
+    "ko": "지표 마다 기본으로 설정된 인터벌 시간이 다르며, 조회 시간 범위에 따라 인터벌 시간이 변경됩니다.",
+    "zh": "The default interval time is different for each indicator, and the interval time changes depending on the inquiry time range.",
+    "service_id": "CNT08132"
+  },
+  "CNT08133": {
+    "en": "If the layer where you select the indicator is closed, you can open the layer by clicking the indicator button.",
+    "ja": "インジケーターを選択するレイヤーが閉じている場合は、インジケーターボタンをクリックしてレイヤーを開くことができます。",
+    "ko": "지표를 선택하는 레이어가 닫혀있다면 지표 버튼을 클릭하여 레이어를 열 수 있습니다.",
+    "zh": "If the layer where you select the indicator is closed, you can open the layer by clicking the indicator button.",
+    "service_id": "CNT08133"
+  },
+  "CNT08134": {
+    "en": "Dashboard Options Area",
+    "ja": "ダッシュボードオプションエリア",
+    "ko": "대시보드 옵션 영역",
+    "zh": "Dashboard Options Area",
+    "service_id": "CNT08134"
+  },
+  "CNT08135": {
+    "en": "Automatically aligns the positions of widgets.",
+    "ja": "ウィジェットの位置を自動的にソートします。",
+    "ko": "위젯들의 위치를 자동으로 정렬합니다.",
+    "zh": "Automatically aligns the positions of widgets.",
+    "service_id": "CNT08135"
+  },
+  "CNT08136": {
+    "en": "Download the added widgets as a CSV file.",
+    "ja": "追加されたウィジェットをCSVファイルとしてダウンロードします。",
+    "ko": "추가된 위젯을 CSV 파일로 다운로드합니다.",
+    "zh": "Download the added widgets as a CSV file.",
+    "service_id": "CNT08136"
+  },
+  "CNT08137": {
+    "en": "Compare widgets in one chart.",
+    "ja": "ウィジェットを1つのチャートで比較します。",
+    "ko": "위젯들을 하나의 차트에서 비교합니다.",
+    "zh": "Compare widgets in one chart.",
+    "service_id": "CNT08137"
+  },
+  "CNT08138": {
+    "en": "Delete all widgets.",
+    "ja": "ウィジェットをすべて削除します。",
+    "ko": "위젯을 모두 삭제합니다.",
+    "zh": "Delete all widgets.",
+    "service_id": "CNT08138"
+  },
+  "CNT08139": {
+    "en": "Set widget options.",
+    "ja": "ウィジェットオプションを設定します。",
+    "ko": "위젯 옵션을 설정합니다.",
+    "zh": "Set widget options.",
+    "service_id": "CNT08139"
+  },
+  "CNT08140": {
+    "en": "Set the number of widgets placed in one line.",
+    "ja": "1行に配置されるウィジェットの数を設定します。",
+    "ko": "한 줄에 배치되는 위젯의 개수를 설정합니다.",
+    "zh": "Set the number of widgets placed in one line.",
+    "service_id": "CNT08140"
+  },
+  "CNT08141": {
+    "en": "Displays a legend at the bottom of the chart.",
+    "ja": "グラフの下部に凡例を公開します。",
+    "ko": "차트 하단에 범례를 노출합니다.",
+    "zh": "Displays a legend at the bottom of the chart.",
+    "service_id": "CNT08141"
+  },
+  "CNT08142": {
+    "en": "Displays both the target and value when the mouse hovers over the chart.",
+    "ja": "チャートマウスホバー時にターゲットと値の両方を表示します。",
+    "ko": "차트 마우스 호버 시 대상과 값을 모두 표시합니다.",
+    "zh": "Displays both the target and value when the mouse hovers over the chart.",
+    "service_id": "CNT08142"
+  },
+  "CNT08143": {
+    "en": "When you drag a chart, the charts of all widgets zoom in.",
+    "ja": "チャートをドラッグすると、すべてのウィジェットのチャートがズームインされます。",
+    "ko": "차트 드래그 시 모든 위젯들의 차트가 줌인됩니다.",
+    "zh": "When you drag a chart, the charts of all widgets zoom in.",
+    "service_id": "CNT08143"
+  },
+  "CNT08144": {
+    "en": "Set the height of the widgets to be the same.",
+    "ja": "ウィジェットの高さを等しく設定します。",
+    "ko": "위젯들의 높이를 동일하게 설정합니다.",
+    "zh": "Set the height of the widgets to be the same.",
+    "service_id": "CNT08144"
+  },
+  "CNT08145": {
+    "en": "Save added widgets and settings to presets.",
+    "ja": "追加したウィジェットと設定をプリセットに保存します。",
+    "ko": "추가한 위젯과 설정을 프리셋에 저장합니다.",
+    "zh": "Save added widgets and settings to presets.",
+    "service_id": "CNT08145"
+  },
+  "CNT08146": {
+    "en": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
+    "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
+    "zh": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "service_id": "CNT08146"
+  },
+  "DSC08147": {
+    "en": "Search for values ​​starting with search value.",
+    "ja": "検索値で始まる値を検索します。",
+    "ko": "검색 값으로 시작하는 값을 검색합니다.",
+    "zh": "Search for values ​​starting with search value.",
+    "service_id": "DSC08147"
+  },
+  "DSC08148": {
+    "en": "Searches for values ​​ending with search value.",
+    "ja": "検索値で終わる値を検索します。",
+    "ko": "검색 값으로 끝나는 값을 검색합니다.",
+    "zh": "Searches for values ​​ending with search value.",
+    "service_id": "DSC08148"
+  },
+  "DSC08149": {
+    "en": "Search for values ​​containing the search value.",
+    "ja": "検索値を含む値を検索します。",
+    "ko": "검색 값이 포함된 값을 검색합니다.",
+    "zh": "Search for values ​​containing the search value.",
+    "service_id": "DSC08149"
+  },
+  "DSC08150": {
+    "en": "Search for values ​​containing the search value.",
+    "ja": "検索値を含む値を検索します。",
+    "ko": "검색 값이 포함된 값을 검색합니다.",
+    "zh": "Search for values ​​containing the search value.",
+    "service_id": "DSC08150"
+  },
+  "DSC08151": {
+    "en": "Search for values ​​that match a regular expression.",
+    "ja": "正規表現に一致する値を検索します。",
+    "ko": "정규표현식에 매칭되는 값을 검색합니다.",
+    "zh": "Search for values ​​that match a regular expression.",
+    "service_id": "DSC08151"
+  },
+  "DSC08152": {
+    "en": "Search for all values ​​corresponding to the search key.",
+    "ja": "検索キーに対応するすべての値を検索します。",
+    "ko": "검색 키에 해당하는 모든 값을 검색합니다.",
+    "zh": "Search for all values ​​corresponding to the search key.",
+    "service_id": "DSC08152"
+  },
+  "BTN08153": {
+    "en": "Download configuration file",
+    "ja": "設定ファイルのダウンロード",
+    "ko": "설정 파일 다운로드",
+    "zh": "Download configuration file",
+    "service_id": "BTN08153"
   },
   "": {
     "en": "#VALUE!",
@@ -57886,7 +58082,7 @@
   },
   "side_correlatedProjectManagement": {
     "en": "Correlated Project Management",
-    "ja": "相関プロジェクト管理",
+    "ja": "連携プロジェクト管理",
     "ko": "연계 프로젝트 관리"
   },
   "side_kubeApiserverDashboard": {
