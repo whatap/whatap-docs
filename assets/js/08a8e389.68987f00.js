@@ -407,7 +407,7 @@ function _createMdxContent(props) {
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              children: "chmod +x install_kafka_monitoring.sh\n./install_kafka_monitoring.sh \"XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX\" \"15.165.146.117\"\n"
+              children: "chmod +x install_kafka_monitoring.sh\nsudo ./install_kafka_monitoring.sh \"x604pf485d1kk-z6q14nuc509pk3-x39moealrfodum\" \"13.124.11.223/13.209.172.35\"\n"
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
