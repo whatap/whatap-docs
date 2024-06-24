@@ -251,7 +251,7 @@ function _createMdxContent(props) {
               height: "35"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "Caption"
-            }), " 항목에서 윈도우 서버의 버전이 2012 이상인지 확인하세요."]
+            }), " 항목에서 윈도우 서버의 버전이 2008 R2 이상인지 확인하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -277,16 +277,6 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "사용자의-애플리케이션-버전-확인",
         children: "사용자의 애플리케이션 버전 확인"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["서버의 환경이 지원 버전을 만족하더라도 사용자의 애플리케이션이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: ".NET Framework"
-        }), "가 아닌 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: ".NET Core"
-        }), " 버전으로 개발되었다면 .NET 모니터링을 지원하지 않습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["사용자의 애플리케이션 버전은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "IIS Manager"
-        }), "에서 다음과 같이 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "IIS Manager",
