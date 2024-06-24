@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5468],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48459],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 62183:
+/***/ 340:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,27 +270,27 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'PostgreSQL',
+		'CUBRID',
 		'데이터베이스',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/labs",
+  "id": "cubrid/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/postgresql/labs.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/labs",
-  "permalink": "/whatap-docs/postgresql/labs",
+  "source": "@site/docs/cubrid/labs.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/labs",
+  "permalink": "/whatap-docs/cubrid/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/labs.mdx",
+  "editUrl": "undefined/docs/cubrid/labs.mdx",
   "tags": [
     {
-      "label": "PostgreSQL",
-      "permalink": "/whatap-docs/tags/postgre-sql"
+      "label": "CUBRID",
+      "permalink": "/whatap-docs/tags/cubrid"
     },
     {
       "label": "데이터베이스",
@@ -307,15 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "PostgreSQL",
+      "CUBRID",
       "데이터베이스",
       "실험실"
     ]
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "cubridSidebar",
   "previous": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/postgresql/set-event-format"
+    "permalink": "/whatap-docs/cubrid/set-event-format"
   }
 };
 const assets = {

@@ -1,103 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17878],{
-
-/***/ 88345:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98954);
-
-
-const frontMatter = {
-	id: 'labs',
-	title: '실험실',
-	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
-	tags: [
-		'Amazon ECS',
-		'클라우드',
-		'실험실'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "amazon-ecs/labs",
-  "title": "실험실",
-  "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/amazon-ecs/labs.mdx",
-  "sourceDirName": "amazon-ecs",
-  "slug": "/amazon-ecs/labs",
-  "permalink": "/whatap-docs/amazon-ecs/labs",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/amazon-ecs/labs.mdx",
-  "tags": [
-    {
-      "label": "Amazon ECS",
-      "permalink": "/whatap-docs/tags/amazon-ecs"
-    },
-    {
-      "label": "클라우드",
-      "permalink": "/whatap-docs/tags/클라우드"
-    },
-    {
-      "label": "실험실",
-      "permalink": "/whatap-docs/tags/실험실"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "labs",
-    "title": "실험실",
-    "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-    "tags": [
-      "Amazon ECS",
-      "클라우드",
-      "실험실"
-    ]
-  },
-  "sidebar": "awsecsSidebar",
-  "previous": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/amazon-ecs/set-event-history"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5468],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -262,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -340,6 +242,104 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 62183:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98954);
+
+
+const frontMatter = {
+	id: 'labs',
+	title: '실험실',
+	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
+	tags: [
+		'PostgreSQL',
+		'데이터베이스',
+		'실험실'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "postgresql/labs",
+  "title": "실험실",
+  "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
+  "source": "@site/docs/postgresql/labs.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/labs",
+  "permalink": "/whatap-docs/postgresql/labs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/postgresql/labs.mdx",
+  "tags": [
+    {
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
+    },
+    {
+      "label": "실험실",
+      "permalink": "/whatap-docs/tags/실험실"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "labs",
+    "title": "실험실",
+    "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
+    "tags": [
+      "PostgreSQL",
+      "데이터베이스",
+      "실험실"
+    ]
+  },
+  "sidebar": "postgreSidebar",
+  "previous": {
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/postgresql/set-event-format"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

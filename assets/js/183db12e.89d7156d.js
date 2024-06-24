@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[73242],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56265],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 49019:
+/***/ 1896:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,31 +270,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'PHP',
-		'애플리케이션',
+		'Tibero',
+		'데이터베이스',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/labs",
+  "id": "tibero/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/php/labs.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/labs",
-  "permalink": "/whatap-docs/php/labs",
+  "source": "@site/docs/tibero/labs.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/labs",
+  "permalink": "/whatap-docs/tibero/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/labs.mdx",
+  "editUrl": "undefined/docs/tibero/labs.mdx",
   "tags": [
     {
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Tibero",
+      "permalink": "/whatap-docs/tags/tibero"
     },
     {
-      "label": "애플리케이션",
-      "permalink": "/whatap-docs/tags/애플리케이션"
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
     },
     {
       "label": "실험실",
@@ -307,15 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "PHP",
-      "애플리케이션",
+      "Tibero",
+      "데이터베이스",
       "실험실"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
-    "title": "Log 모니터링",
-    "permalink": "/whatap-docs/log/introduction"
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/tibero/set-event-format"
   }
 };
 const assets = {

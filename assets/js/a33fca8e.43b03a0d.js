@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[62806],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15553],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 55791:
+/***/ 93313:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,27 +270,27 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'SQL Server',
+		'MySQL',
 		'데이터베이스',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/labs",
+  "id": "mysql/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/mssql/labs.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/labs",
-  "permalink": "/whatap-docs/mssql/labs",
+  "source": "@site/docs/mysql/labs.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/labs",
+  "permalink": "/whatap-docs/mysql/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/labs.mdx",
+  "editUrl": "undefined/docs/mysql/labs.mdx",
   "tags": [
     {
-      "label": "SQL Server",
-      "permalink": "/whatap-docs/tags/sql-server"
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
     },
     {
       "label": "데이터베이스",
@@ -307,15 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "SQL Server",
+      "MySQL",
       "데이터베이스",
       "실험실"
     ]
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/mssql/set-event-format"
+    "permalink": "/whatap-docs/mysql/set-event-format"
   }
 };
 const assets = {

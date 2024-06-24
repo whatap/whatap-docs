@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[2324],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67877],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 14686:
+/***/ 56235:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,26 +270,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'Server',
+		'Redis',
+		'데이터베이스',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "server/labs",
+  "id": "redis/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/server/labs.mdx",
-  "sourceDirName": "server",
-  "slug": "/server/labs",
-  "permalink": "/whatap-docs/server/labs",
+  "source": "@site/docs/redis/labs.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/labs",
+  "permalink": "/whatap-docs/redis/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/server/labs.mdx",
+  "editUrl": "undefined/docs/redis/labs.mdx",
   "tags": [
     {
-      "label": "Server",
-      "permalink": "/whatap-docs/tags/server"
+      "label": "Redis",
+      "permalink": "/whatap-docs/tags/redis"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
     },
     {
       "label": "실험실",
@@ -302,14 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "Server",
+      "Redis",
+      "데이터베이스",
       "실험실"
     ]
   },
-  "sidebar": "serverSidebar",
+  "sidebar": "redisSidebar",
   "previous": {
-    "title": "Log 모니터링",
-    "permalink": "/whatap-docs/log/introduction"
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/redis/set-event-format"
   }
 };
 const assets = {

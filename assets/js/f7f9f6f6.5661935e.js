@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21189],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[38885],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 81895:
+/***/ 76359:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,31 +270,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'.NET',
-		'애플리케이션',
+		'Oracle Cloud Monitor',
+		'클라우드',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/labs",
+  "id": "oracle-cloud/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/dotnet/labs.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/labs",
-  "permalink": "/whatap-docs/dotnet/labs",
+  "source": "@site/docs/oracle-cloud/labs.mdx",
+  "sourceDirName": "oracle-cloud",
+  "slug": "/oracle-cloud/labs",
+  "permalink": "/whatap-docs/oracle-cloud/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/labs.mdx",
+  "editUrl": "undefined/docs/oracle-cloud/labs.mdx",
   "tags": [
     {
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Oracle Cloud Monitor",
+      "permalink": "/whatap-docs/tags/oracle-cloud-monitor"
     },
     {
-      "label": "애플리케이션",
-      "permalink": "/whatap-docs/tags/애플리케이션"
+      "label": "클라우드",
+      "permalink": "/whatap-docs/tags/클라우드"
     },
     {
       "label": "실험실",
@@ -307,15 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      ".NET",
-      "애플리케이션",
+      "Oracle Cloud Monitor",
+      "클라우드",
       "실험실"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "oracleSidebar",
   "previous": {
-    "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/dotnet/instance-performance-analysis"
+    "title": "이벤트 기록",
+    "permalink": "/whatap-docs/oracle-cloud/set-event-history"
   }
 };
 const assets = {

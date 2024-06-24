@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35048],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21179],{
 
-/***/ 63667:
+/***/ 85630:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -23,26 +23,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'브라우저',
+		'Altibase',
+		'데이터베이스',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "browser/labs",
+  "id": "altibase/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/browser/labs.mdx",
-  "sourceDirName": "browser",
-  "slug": "/browser/labs",
-  "permalink": "/whatap-docs/browser/labs",
+  "source": "@site/docs/altibase/labs.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/labs",
+  "permalink": "/whatap-docs/altibase/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/browser/labs.mdx",
+  "editUrl": "undefined/docs/altibase/labs.mdx",
   "tags": [
     {
-      "label": "브라우저",
-      "permalink": "/whatap-docs/tags/브라우저"
+      "label": "Altibase",
+      "permalink": "/whatap-docs/tags/altibase"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
     },
     {
       "label": "실험실",
@@ -55,14 +60,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "브라우저",
+      "Altibase",
+      "데이터베이스",
       "실험실"
     ]
   },
-  "sidebar": "rumsSidebar",
+  "sidebar": "altibaseSidebar",
   "previous": {
-    "title": "브라우저 에이전트 수집 데이터",
-    "permalink": "/whatap-docs/browser/collect-data"
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/altibase/set-event-format"
   }
 };
 const assets = {
@@ -256,7 +262,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {

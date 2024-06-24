@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[38885],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[65635],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 76359:
+/***/ 96983:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,31 +270,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'Oracle Cloud Monitor',
-		'클라우드',
+		'Go',
+		'애플리케이션',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-cloud/labs",
+  "id": "golang/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/oracle-cloud/labs.mdx",
-  "sourceDirName": "oracle-cloud",
-  "slug": "/oracle-cloud/labs",
-  "permalink": "/whatap-docs/oracle-cloud/labs",
+  "source": "@site/docs/golang/labs.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/labs",
+  "permalink": "/whatap-docs/golang/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-cloud/labs.mdx",
+  "editUrl": "undefined/docs/golang/labs.mdx",
   "tags": [
     {
-      "label": "Oracle Cloud Monitor",
-      "permalink": "/whatap-docs/tags/oracle-cloud-monitor"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     },
     {
-      "label": "클라우드",
-      "permalink": "/whatap-docs/tags/클라우드"
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     },
     {
       "label": "실험실",
@@ -307,15 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "Oracle Cloud Monitor",
-      "클라우드",
+      "Go",
+      "애플리케이션",
       "실험실"
     ]
   },
-  "sidebar": "oracleSidebar",
+  "sidebar": "goSidebar",
   "previous": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/oracle-cloud/set-event-history"
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
   }
 };
 const assets = {

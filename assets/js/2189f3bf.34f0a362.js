@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50380],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35032],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 7574:
+/***/ 48998:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,26 +270,31 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'네트워크 성능 모니터링',
+		'Node.js',
+		'애플리케이션',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "npm/labs",
+  "id": "nodejs/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/npm/labs.mdx",
-  "sourceDirName": "npm",
-  "slug": "/npm/labs",
-  "permalink": "/whatap-docs/npm/labs",
+  "source": "@site/docs/nodejs/labs.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/labs",
+  "permalink": "/whatap-docs/nodejs/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/npm/labs.mdx",
+  "editUrl": "undefined/docs/nodejs/labs.mdx",
   "tags": [
     {
-      "label": "네트워크 성능 모니터링",
-      "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
+    },
+    {
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     },
     {
       "label": "실험실",
@@ -302,14 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "네트워크 성능 모니터링",
+      "Node.js",
+      "애플리케이션",
       "실험실"
     ]
   },
-  "sidebar": "npmsidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/npm/set-event-history"
+    "title": "인스턴스 성능 관리",
+    "permalink": "/whatap-docs/nodejs/instance-performance-analysis"
   }
 };
 const assets = {

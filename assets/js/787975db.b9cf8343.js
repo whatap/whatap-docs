@@ -1,103 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[65554],{
-
-/***/ 52928:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98954);
-
-
-const frontMatter = {
-	id: 'labs',
-	title: '실험실',
-	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
-	tags: [
-		'Amazon CloudWatch',
-		'클라우드',
-		'실험실'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "amazon-cloudwatch/labs",
-  "title": "실험실",
-  "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/amazon-cloudwatch/labs.mdx",
-  "sourceDirName": "amazon-cloudwatch",
-  "slug": "/amazon-cloudwatch/labs",
-  "permalink": "/whatap-docs/amazon-cloudwatch/labs",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/amazon-cloudwatch/labs.mdx",
-  "tags": [
-    {
-      "label": "Amazon CloudWatch",
-      "permalink": "/whatap-docs/tags/amazon-cloud-watch"
-    },
-    {
-      "label": "클라우드",
-      "permalink": "/whatap-docs/tags/클라우드"
-    },
-    {
-      "label": "실험실",
-      "permalink": "/whatap-docs/tags/실험실"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "labs",
-    "title": "실험실",
-    "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-    "tags": [
-      "Amazon CloudWatch",
-      "클라우드",
-      "실험실"
-    ]
-  },
-  "sidebar": "amazoncloudwatchSidebar",
-  "previous": {
-    "title": "이벤트 기록",
-    "permalink": "/whatap-docs/amazon-cloudwatch/set-event-history"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[2324],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -262,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -340,6 +242,98 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 14686:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98954);
+
+
+const frontMatter = {
+	id: 'labs',
+	title: '실험실',
+	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
+	tags: [
+		'Server',
+		'실험실'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "server/labs",
+  "title": "실험실",
+  "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
+  "source": "@site/docs/server/labs.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/labs",
+  "permalink": "/whatap-docs/server/labs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/server/labs.mdx",
+  "tags": [
+    {
+      "label": "Server",
+      "permalink": "/whatap-docs/tags/server"
+    },
+    {
+      "label": "실험실",
+      "permalink": "/whatap-docs/tags/실험실"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "labs",
+    "title": "실험실",
+    "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
+    "tags": [
+      "Server",
+      "실험실"
+    ]
+  },
+  "sidebar": "serverSidebar",
+  "previous": {
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_labs_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

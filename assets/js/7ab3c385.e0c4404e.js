@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57871],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21189],{
 
 /***/ 98954:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
+      product: "java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -248,7 +248,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 18531:
+/***/ 81895:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,27 +270,27 @@ const frontMatter = {
 	title: '실험실',
 	description: '사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.',
 	tags: [
-		'Python',
+		'.NET',
 		'애플리케이션',
 		'실험실'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/labs",
+  "id": "dotnet/labs",
   "title": "실험실",
   "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
-  "source": "@site/docs/python/labs.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/labs",
-  "permalink": "/whatap-docs/python/labs",
+  "source": "@site/docs/dotnet/labs.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/labs",
+  "permalink": "/whatap-docs/dotnet/labs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/labs.mdx",
+  "editUrl": "undefined/docs/dotnet/labs.mdx",
   "tags": [
     {
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "label": "애플리케이션",
@@ -307,15 +307,15 @@ const metadata = {
     "title": "실험실",
     "description": "사용자에게 새로운 기능 또는 실험적인 기능을 제공하는 메뉴인 실험실에 대해 안내합니다.",
     "tags": [
-      "Python",
+      ".NET",
       "애플리케이션",
       "실험실"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "Log 모니터링",
-    "permalink": "/whatap-docs/log/introduction"
+    "title": "인스턴스 성능 관리",
+    "permalink": "/whatap-docs/dotnet/instance-performance-analysis"
   }
 };
 const assets = {
