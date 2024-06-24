@@ -1,5 +1,117 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[59719],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[41355],{
+
+/***/ 10539:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_intro_alarm_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42226);
+/* harmony import */ var _common_items_note_common_set_notice_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32528);
+
+
+const frontMatter = {
+	id: 'set-notice',
+	title: '알림 설정하기',
+	description: '이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.',
+	tags: [
+		'Altibase',
+		'데이터베이스',
+		'데이터베이스 모니터링',
+		'알림'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/set-notice",
+  "title": "알림 설정하기",
+  "description": "이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.",
+  "source": "@site/docs/altibase/set-notice.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/set-notice",
+  "permalink": "/whatap-docs/altibase/set-notice",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/set-notice.mdx",
+  "tags": [
+    {
+      "label": "Altibase",
+      "permalink": "/whatap-docs/tags/altibase"
+    },
+    {
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
+    },
+    {
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+    },
+    {
+      "label": "알림",
+      "permalink": "/whatap-docs/tags/알림"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-notice",
+    "title": "알림 설정하기",
+    "description": "이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.",
+    "tags": [
+      "Altibase",
+      "데이터베이스",
+      "데이터베이스 모니터링",
+      "알림"
+    ]
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "통합 보고서",
+    "permalink": "/whatap-docs/altibase/integrated-report"
+  },
+  "next": {
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/altibase/warning-notice"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+const toc = [..._common_items_intro_alarm_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_note_common_set_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_intro_alarm_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_note_common_set_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 42226:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -23,42 +135,50 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    em: "em",
     li: "li",
     p: "p",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "이벤트 조건을 설정하고 이메일, SMS, 메신저, App Push 등 다양한 경로로 알림을 수신할 수 있습니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "에이전트와 수집 서버의 통신 두절 및 자원 사용률, 액티브 트랜잭션, 에러, 응답 지연, 응답 분포 이상에 대한 알림 설정이 가능합니다."
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "어려운 조건의 알림 설정은 태그 카운트 알림 기능을 통해 제공합니다."
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "머신 러닝 기반 AI 알림 설정을 통해 히트맵 패턴을 감지해 알림 기능을 제공합니다. AI 모듈이 애플리케이션 실행 분포 패턴을 판단해 알림을 보냅니다. 복잡한 조건 없이 이슈 상황을 빠르고 정확하게 인지할 수 있습니다."
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "에이전트와 수집 서버의 통신 두절 및 자원 사용률, 액티브 트랜잭션, 에러, 응답 지연, 응답 분포 이상에 대한 알림 설정이 가능합니다."
+        }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "이벤트 설정"
-          })
-        }), " 메뉴를 통해 임계치 기반 알림 조건 및 수신 설정을 할 수 있습니다."]
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "어려운 조건의 알림 설정은 태그 카운트 알림 기능을 통해 제공합니다."
+        }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "이벤트 수신 설정"
-          })
-        }), " 메뉴에서는 개인별 알림 수신 채널 및 시간대를 설정할 수 있습니다."]
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "머신 러닝 기반 AI 알림 설정을 통해 히트맵 패턴을 감지해 알림 기능을 제공합니다. AI 모듈이 애플리케이션 실행 분포 패턴을 판단해 알림을 보냅니다. 복잡한 조건 없이 이슈 상황을 빠르고 정확하게 인지할 수 있습니다."
+        }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "이벤트 기록"
-          })
-        }), " 메뉴에서는 알림 발생 기록을 조회할 수 있습니다."]
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
+          }), " 메뉴를 통해 임계치 기반 알림 조건 및 수신 설정을 할 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_eventNoti",
+            className: "uitext"
+          }), " 메뉴에서는 개인별 알림 수신 채널 및 시간대를 설정할 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_eventHistory",
+            className: "uitext"
+          }), " 메뉴에서는 알림 발생 기록을 조회할 수 있습니다."]
+        }), "\n"]
       }), "\n"]
     })]
   });
@@ -74,6 +194,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -138,118 +261,6 @@ function _createMdxContent(props) {
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
-
-/***/ 4981:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_intro_alarm_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42226);
-/* harmony import */ var _common_items_note_common_set_notice_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32528);
-
-
-const frontMatter = {
-	id: 'set-notice',
-	title: '알림 설정하기',
-	description: '이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.',
-	tags: [
-		'Redis',
-		'데이터베이스',
-		'데이터베이스 모니터링',
-		'알림'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "redis/set-notice",
-  "title": "알림 설정하기",
-  "description": "이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.",
-  "source": "@site/docs/redis/set-notice.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/set-notice",
-  "permalink": "/whatap-docs/redis/set-notice",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/redis/set-notice.mdx",
-  "tags": [
-    {
-      "label": "Redis",
-      "permalink": "/whatap-docs/tags/redis"
-    },
-    {
-      "label": "데이터베이스",
-      "permalink": "/whatap-docs/tags/데이터베이스"
-    },
-    {
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
-    },
-    {
-      "label": "알림",
-      "permalink": "/whatap-docs/tags/알림"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "set-notice",
-    "title": "알림 설정하기",
-    "description": "이벤트 조건을 설정하고 다양한 형태로 알림을 받을 수 있습니다.",
-    "tags": [
-      "Redis",
-      "데이터베이스",
-      "데이터베이스 모니터링",
-      "알림"
-    ]
-  },
-  "sidebar": "redisSidebar",
-  "previous": {
-    "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/redis/log-parser"
-  },
-  "next": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/redis/metric-warning-notice"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-
-const toc = [..._common_items_intro_alarm_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_note_common_set_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_intro_alarm_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_note_common_set_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
