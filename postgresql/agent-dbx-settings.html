@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9589e255.css">
-<script src="/whatap-docs/assets/js/runtime~main.e2bb2a79.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.f2b792c8.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.5e429c77.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -95,7 +95,7 @@
 <li>
 <p><strong>replication_name</strong> <span class="type">String</span></p>
 <p>리플리케이션 이름을 설정하면 동일한 <code>replication_name</code>을 갖는 DB 사이에 Master/Slave 관계가 있는 것으로 간주합니다.</p>
-<p>리플리케이션 세트를 정의하는 옵션으로 마스터, 슬레이브 노드에 모두 동일한 값의 <code>replication_name</code> 옵션을 설정하면 <em><strong>인스턴스 모니터링</strong></em>에서 트리 구조로 표시됩니다. 또한 이 옵션 값을 기준으로 <em><strong>Flex 보드</strong></em>에서 리플리케이션 상태를 모니터링하는 위젯을 제공합니다.</p>
+<p>리플리케이션 세트를 정의하는 옵션으로 마스터, 슬레이브 노드에 모두 동일한 값의 <code>replication_name</code> 옵션을 설정하면 <span class="uitext">인스턴스 모니터링</span>에서 트리 구조로 표시됩니다. 또한 이 옵션 값을 기준으로 <span class="uitext">Flex 보드</span>에서 리플리케이션 상태를 모니터링하는 위젯을 제공합니다.</p>
 </li>
 </ul>
 <ul>
@@ -140,7 +140,7 @@
 <li>
 <p><strong>index_bloat_ratio</strong> <span class="type">Percentage</span></p>
 <p>기본값 <code>50</code></p>
-<p>인덱스 bloating ratio 값이 설정값 이상인 경우   정보를 수집합니다. 기본값은 50%입니다.</p>
+<p>인덱스 bloating ratio 값이 설정값 이상인 경  우 정보를 수집합니다. 기본값은 50%입니다.</p>
 </li>
 <li>
 <p><strong>index_bloat_bytes</strong> <span class="type">Byte</span></p>
@@ -153,7 +153,7 @@
 <p>가장 오래된 age(<code>relfrozenxid</code>) 순으로 설정값만큼 테이블 정보를 수집합니다. 기본값은 50개입니다.</p>
 </li>
 </ul></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-aws-rds">AWS RDS CloudWatch 적용<a href="#using-aws-rds" class="hash-link" aria-label="AWS RDS CloudWatch 적용에 대한 직접 링크" title="AWS RDS CloudWatch 적용에 대한 직접 링크">​</a></h2><p></p><p>AWS CloudWatch를 이용하는 에이전트 설정에 대한 설명입니다. 수집을 시작하면 메트릭스에 포함되며, <span class="uitext">분석</span> &gt; <span class="uitext">메트릭스 차트</span> 메뉴의 <code>db_postgresql_counter</code> 카테고리에서 다른 지표들과 함께 확인할 수 있습니다.</p><p></p><ul>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-aws-rds">AWS RDS CloudWatch 적용<a href="#using-aws-rds" class="hash-link" aria-label="AWS RDS CloudWatch 적용에 대한 직접 링크" title="AWS RDS CloudWatch 적용에 대한 직접 링크">​</a></h2><p></p><p>AWS CloudWatch를 이용하는 에이전트 설정에 대한 설명입니다. 수집을 시작하면 메트릭스에 포함되며, <span class="uitext">관리</span> &gt; <span class="uitext">메트릭스 차트</span> 메뉴의 <code>db_postgresql_counter</code> 카테고리에서 다른 지표들과 함께 확인할 수 있습니다.</p><p></p><ul>
 <li>
 <p><strong>aws_region</strong> <span class="type">String</span></p>
 <p>AWS 리전을 설정합니다.</p>
@@ -186,7 +186,7 @@
 <p><strong>역할 ARN</strong>(<strong>Role ARN</strong>)에 대한 자세한 내용은 <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html" target="_blank" rel="noopener noreferrer">다음 링크</a>를 참조하세요.</p>
 </li>
 <li>
-<p>IAM ROLE의 ARN 값을 이용하지 않고 EC2에 RDS CloudWatch Metric의 수집 권한을 부 여해 데이터를 수집하는 방법은 <a href="/whatap-docs/reference/cloudwatch-metric-guide">다음 문서</a>를 참조하세요.</p>
+<p>IAM ROLE의 ARN 값을 이용하지 않고 EC2에 RDS CloudWatch Metric의 수집 권한을 부여해 데이터를 수집하는 방법은 <a href="/whatap-docs/reference/cloudwatch-metric-guide">다음 문서</a>를 참조하세요.</p>
 </li>
 </ul></div></div></section><section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="aes-256-암호화-적용">AES 256 암호화 적용<a href="#aes-256-암호화-적용" class="hash-link" aria-label="AES 256 암호화 적용에 대한 직접 링크" title="AES 256 암호화 적용에 대한 직접 링크">​</a></h2><p>와탭 DBX 에이전트는 수집된 데이터를 암호화하여 서버로 전송합니다. 데이터의 중요도나 설정에 따라 이를 변경할 수 있습니다. 기본적으로 XOR 연산과 AES 알고리즘을 통한 암호화를 사용하며 평문을 128비트 단위로 나누어 암호화, 복호화를 수행합니다. 사용자 설정에 따라 256비트까지 확장할 수 있습니다.</p><p>와탭 DBX 에이전트를 설치한 경로에서 <em>whatap.conf</em> 파일에 다음과 같이 옵션을 추가하세요.</p><div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">whatap.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token key attr-name" style="color:rgb(255, 203, 107)">cypher_level</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">256</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>설정을 추가한 다음 에이전트를 다시 시작하세요.</p></section></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="naming">에이전트 이름 식별<a href="#naming" class="hash-link" aria-label="에이전트 이름 식별에 대한 직접 링크" title="에이전트 이름 식별에 대한 직접 링크">​</a></h2><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary>에이전트 이름 설정</summary>
