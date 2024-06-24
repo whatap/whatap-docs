@@ -1217,7 +1217,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "기본 프리셋 변경하기",
-  "id": "기본-프리셋-변경하기",
+  "id": "changepreset",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -1235,7 +1235,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "기본-프리셋-변경하기",
+      id: "changepreset",
       children: "기본 프리셋 변경하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -1314,15 +1314,15 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "프리셋",
-  "id": "프리셋",
+  "id": "preset",
   "level": 2
 }, {
   "value": "새로운 프리셋 만들기",
-  "id": "새로운-프리셋-만들기",
+  "id": "newpreset",
   "level": 3
 }, {
   "value": "프리셋 삭제하기",
-  "id": "프리셋-삭제하기",
+  "id": "removepreset",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -1349,7 +1349,7 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "프리셋",
+        id: "preset",
         children: "프리셋"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
         product: "java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-dma",
@@ -1413,7 +1413,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "새로운-프리셋-만들기",
+        id: "newpreset",
         children: "새로운 프리셋 만들기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -1477,7 +1477,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "프리셋-삭제하기",
+        id: "removepreset",
         children: "프리셋 삭제하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["사용하지 않는 프리셋이 있다면 프리셋 목록에서 삭제할 수 있습니다. 프리셋 목록에서 삭제하려는 항목의 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
