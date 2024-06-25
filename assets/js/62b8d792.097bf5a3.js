@@ -489,6 +489,7 @@ const assets = {
 
 };
 
+/** XenServer 6.0 이상*/
 
 
 
@@ -561,10 +562,8 @@ function _createMdxContent(props) {
               children: "Ubuntu 12.04 이상"
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
               children: "Debian 6.0 이상"
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: "XenServer 6.0 이상"
             }), "\n"]
-          }), "\n"]
+          }), "\n", "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {

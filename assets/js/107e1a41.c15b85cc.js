@@ -178,15 +178,6 @@ function _createMdxContent(props) {
                 children: "wget http://repo.whatap.io/freebsd/10/whatap-infra.txz\npkg install whatap-infra.txz\necho \"license={LICENSE_INFO}\" |tee /usr/whatap/infra/conf/whatap.conf\necho \"whatap.server.host={HOST_IP}\" |tee -a /usr/whatap/infra/conf/whatap.conf\necho \"createdtime=`date +%s%N`\" |tee -a /usr/whatap/infra/conf/whatap.conf\nservice whatap_infra restart\n"
               })
             })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "xs",
-            label: "XenServer",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                children: "sudo rpm --import http://repo.whatap.io/centos/release.gpg\nsudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm\nsudo yum install whatap-infra\necho \"license={LICENSE_INFO}\" |sudo tee /usr/whatap/infra/conf/whatap.conf\necho \"whatap.server.host={HOST_IP}\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\necho \"createdtime=`date +%s%N`\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\nsudo service whatap_infra restart\n"
-              })
-            })
           })]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
