@@ -219,8 +219,8 @@ const metadata = {
   },
   "sidebar": "serverSidebar",
   "previous": {
-    "title": "Oracle Solaris",
-    "permalink": "/whatap-docs/server/server-os/server-solaris"
+    "title": "Unix",
+    "permalink": "/whatap-docs/server/server-os/server-unix"
   },
   "next": {
     "title": "서버 컴퓨터 이외의 경우",

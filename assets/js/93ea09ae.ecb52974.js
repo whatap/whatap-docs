@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57047],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86902],{
 
 /***/ 99612:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -208,7 +208,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 95938:
+/***/ 78858:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -230,28 +230,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'server-linux',
-	title: 'Linux 및 Unix',
-	description: 'Linux와 Unix 환경에서 와탭 서버 모니터링 에이전트를 설치하는 방법을 제공합니다.',
+	id: 'server-unix',
+	title: 'Unix',
+	description: 'Unix 환경에서 와탭 서버 모니터링 에이전트를 설치하는 방법을 제공합니다.',
+	toc_max_heading_level: 2,
 	tags: [
 		'Server',
 		'설치하기',
-		'Linux',
-		'Unix'
+		'Unix',
+		'Aix',
+		'Oracle Solaris',
+		'FreeBSD'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "server/server-os/server-linux",
-  "title": "Linux 및 Unix",
-  "description": "Linux와 Unix 환경에서 와탭 서버 모니터링 에이전트를 설치하는 방법을 제공합니다.",
-  "source": "@site/docs/server/server-os/sv-linux.mdx",
+  "id": "server/server-os/server-unix",
+  "title": "Unix",
+  "description": "Unix 환경에서 와탭 서버 모니터링 에이전트를 설치하는 방법을 제공합니다.",
+  "source": "@site/docs/server/server-os/server-unix.mdx",
   "sourceDirName": "server/server-os",
-  "slug": "/server/server-os/server-linux",
-  "permalink": "/whatap-docs/server/server-os/server-linux",
+  "slug": "/server/server-os/server-unix",
+  "permalink": "/whatap-docs/server/server-os/server-unix",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/server/server-os/sv-linux.mdx",
+  "editUrl": "undefined/docs/server/server-os/server-unix.mdx",
   "tags": [
     {
       "inline": true,
@@ -265,46 +268,54 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "Linux",
-      "permalink": "/whatap-docs/tags/linux"
+      "label": "Unix",
+      "permalink": "/whatap-docs/tags/unix"
     },
     {
       "inline": true,
-      "label": "Unix",
-      "permalink": "/whatap-docs/tags/unix"
+      "label": "Aix",
+      "permalink": "/whatap-docs/tags/aix"
+    },
+    {
+      "inline": true,
+      "label": "Oracle Solaris",
+      "permalink": "/whatap-docs/tags/oracle-solaris"
+    },
+    {
+      "inline": true,
+      "label": "FreeBSD",
+      "permalink": "/whatap-docs/tags/free-bsd"
     }
   ],
   "version": "current",
   "frontMatter": {
-    "id": "server-linux",
-    "title": "Linux 및 Unix",
-    "description": "Linux와 Unix 환경에서 와탭 서버 모니터링 에이전트를 설치하는 방법을 제공합니다.",
+    "id": "server-unix",
+    "title": "Unix",
+    "description": "Unix 환경에서 와탭 서버 모니터링 에이전트를 설치하는 방법을 제공합니다.",
+    "toc_max_heading_level": 2,
     "tags": [
       "Server",
       "설치하기",
-      "Linux",
-      "Unix"
+      "Unix",
+      "Aix",
+      "Oracle Solaris",
+      "FreeBSD"
     ]
   },
   "sidebar": "serverSidebar",
   "previous": {
-    "title": "설치하기",
-    "permalink": "/whatap-docs/server/install-agent"
+    "title": "Linux",
+    "permalink": "/whatap-docs/server/server-os/server-linux"
   },
   "next": {
-    "title": "AIX",
-    "permalink": "/whatap-docs/server/server-os/server-aix"
+    "title": "Windows",
+    "permalink": "/whatap-docs/server/server-os/server-windows"
   }
 };
 const assets = {
 
 };
 
-/*
-:::note
-에이전트에서 수집 서버로 **TCP 6600** 포트 접근이 가능해야 합니다.(TCP 아웃바운드)
-:::
-*/
 
 
 
@@ -312,15 +323,42 @@ const assets = {
 
 
 
-const toc = [..._common_items_sv_tcp6600_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_sv_cpf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_sv_lf_cpf_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
+const toc = [{
+  "value": "FreeBSD",
+  "id": "freebsd",
+  "level": 2
+}, ..._common_items_sv_tcp6600_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_sv_cpf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_sv_lf_cpf_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
+  "value": "Aix",
+  "id": "aix",
+  "level": 2
+}, {
+  "value": "에이전트 실행",
+  "id": "에이전트-실행",
+  "level": 3
+}, {
+  "value": "Oracle Solaris",
+  "id": "oracle-solaris",
+  "level": 2
+}, {
+  "value": "에이전트 실행",
+  "id": "에이전트-실행-1",
+  "level": 3
+}];
 function _createMdxContent(props) {
   const _components = {
+    admonition: "admonition",
     code: "code",
+    em: "em",
+    h2: "h2",
+    h3: "h3",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     ol: "ol",
     p: "p",
     pre: "pre",
+    section: "section",
     strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname, Details, ImgLang} = _components;
@@ -328,178 +366,250 @@ function _createMdxContent(props) {
   if (!Details) _missingMdxReference("Details", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["신규 생성한 서버 모니터링 프로젝트를 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_agentInstall",
-        className: "uitext"
-      }), " 화면이 나타납니다. 프로젝트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_management",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_agentInstall",
-        className: "uitext"
-      }), " 메뉴를 통해서도 가능합니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "server-install-lx-unx.png",
-      desc: "서버 모니터링 Linux Unix"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_agentInstall",
-        className: "uitext"
-      }), " 화면에서 원하는 운영체제 선택 후 프로젝트 액세스 키를 확인했다면 다음 안내대로 설치를 진행하세요."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "리포지토리"
-          }), "를 등록하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "server_installAgent_add_whatapRepo",
-            className: "uitext"
-          }), " 탭에서 해당하는 명령어를 복사하여 입력합니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "du",
-            label: "Debian / Ubuntu",
-            default: true,
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "curl -s http://repo.whatap.io/debian/release.gpg | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null\necho \"deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/\" | sudo tee\n/etc/apt/sources.list.d/whatap.list\nsudo apt-get update\n"
-              })
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "freebsd",
+        children: "FreeBSD"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["신규 생성한 서버 모니터링 프로젝트를 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 화면이 나타납니다. 프로젝트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_management",
+          className: "uitext"
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 메뉴를 통해서도 가능합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-install-lx-unx.png",
+        desc: "서버 모니터링 Linux Unix"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 화면에서 원하는 운영체제 선택 후 프로젝트 액세스 키를 확인했다면 다음 안내대로 설치를 진행하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "리포지토리"
+            }), "를 등록하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "server_installAgent_add_whatapRepo",
+              className: "uitext"
+            }), " 탭에서 해당하는 명령어를 복사하여 입력합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title=SH",
+              children: "wget http://repo.whatap.io/freebsd/10/whatap-infra.txz\n"
             })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "co",
-            label: "CentOS",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo rpm --import http://repo.whatap.io/centos/release.gpg\nsudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm\n"
-              })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["다음 명령어를 통해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "패키지"
+            }), "를 설치하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "server_installAgent_installPackages",
+              className: "uitext"
+            }), " 탭에서 해당하는 명령어를 복사해 입력합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title=SH",
+              children: "pkg install whatap-infra.txz\n"
             })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "al",
-            label: "Amazon Linux",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo rpm --import http://repo.whatap.io/centos/release.gpg\necho \"[whatap]\" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null\necho \"name=whatap packages for enterprise linux\" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null\necho \"baseurl=http://repo.whatap.io/centos/latest/\\$basearch\" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null\necho \"enabled=1\" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null\necho \"gpgcheck=0\" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null\n"
-              })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "설정 스크립트"
+            }), "를 실행하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "server_installAgent_startMonitoring",
+              className: "uitext"
+            }), " 탭으로 이동해 명령어를 발급받거나, 하단의 명령어에 프로젝트 액세스 키와 서버 IP를 추가해 실행하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "echo \"license=[발급된 프로젝트 액세스 키]\" |sudo tee /usr/whatap/infra/conf/whatap.conf\necho \"whatap.server.host=[할당된 와탭 서버 IP]\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\necho \"createdtime=`date +%s%N`\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\nsudo service whatap-infra restart\n"
             })
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "suse",
-            label: "SUSE",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo rpm --import http://repo.whatap.io/suse/release.gpg\necho \"[whatap]\" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null\necho \"name=whatap packages for enterprise linux\" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null\necho \"baseurl=http://repo.whatap.io/suse/12/x86_64\" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null\necho \"enabled=1\" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null\necho \"gpgcheck=1\" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null\nsudo zypper refresh\n"
-              })
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "fb",
-            label: "FreeBSD",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "wget http://repo.whatap.io/freebsd/10/whatap-infra.txz\n"
-              })
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "xs",
-            label: "XenServer",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo rpm --import http://repo.whatap.io/centos/release.gpg\nsudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm\n"
-              })
-            })
-          })]
+          }), "\n"]
         }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["다음 명령어를 통해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "패키지"
-          }), "를 설치하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "server_installAgent_installPackages",
-            className: "uitext"
-          }), " 탭에서 해당하는 명령어를 복사해 입력합니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "du",
-            label: "Debian / Ubuntu",
-            default: true,
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo apt-get install whatap-infra\n"
-              })
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "suse",
-            label: "SUSE",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo zypper install whatap-infra\n"
-              })
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "fb",
-            label: "FreeBSD",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "pkg install whatap-infra.txz\n"
-              })
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-            value: "cax",
-            label: "CentOS / Amazon Linux / XenServer",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-bash",
-                metastring: "title=SH",
-                children: "sudo yum install whatap-infra\n"
-              })
-            })
-          })]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "설정 스크립트"
-          }), "를 실행하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "server_installAgent_startMonitoring",
-            className: "uitext"
-          }), " 탭으로 이동해 명령어를 발급받거나, 하단의 명령어에 프로젝트 액세스 키와 서버 IP를 추가해 실행하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-bash",
-            children: "echo \"license=[발급된 프로젝트 액세스 키]\" |sudo tee /usr/whatap/infra/conf/whatap.conf\necho \"whatap.server.host=[할당된 와탭 서버 IP]\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\necho \"createdtime=`date +%s%N`\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\nsudo service whatap-infra restart\n"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_sv_tcp6600_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
+          children: "서버 에이전트 파일 구성"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_sv_cpf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_sv_lf_cpf_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "aix",
+        children: "Aix"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "AIX 6.1 버전 이상부터 지원합니다."
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["신규 생성한 서버 모니터링 프로젝트를 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 화면이 나타납니다. 프로젝트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_management",
+          className: "uitext"
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 메뉴를 통해서도 가능합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-install-unx-aix.png",
+        desc: "서버 모니터링 AIX"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 메뉴의 운영체제 선택 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "AIX"
           })
+        }), " 선택 후 프로젝트 액세스 키를 확인했다면 다음 안내대로 설치를 진행하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL07853",
+              className: "uitext"
+            }), " 탭에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "whatap-infra-latest.noarch.rpm"
+            }), " 버튼을 선택해 에이전트 설치 파일을 다운로드하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "server_installAgent_aix_runSetup",
+              className: "uitext"
+            }), " 탭으로 이동해 다음의 실행 명령어를 확인 후 패키지를 실행하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "rpm -Uvh whatap-infra-latest.noarch.rpm\n"
+            })
+          }), "\n"]
         }), "\n"]
-      }), "\n"]
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_sv_tcp6600_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
-        children: "서버 에이전트 파일 구성"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_sv_cpf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_sv_lf_cpf_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
-    }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["서버 보안을 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "설치 파일"
+          }), "은 다운로드 형식으로만 제공합니다."]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "에이전트-실행",
+        children: "에이전트 실행"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "다음 명령어를 실행해 서버 모니터링을 시작하세요. 애플리케이션 서버가 실행되면 에이전트가 모니터링 정보를 수집하기 시작합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-bash",
+          children: "echo \"license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g\" |tee /usr/whatap/infra/conf/whatap.conf\necho \"whatap.server.host=127.0.0.1\" |tee -a /usr/whatap/infra/conf/whatap.conf\necho \"createdtime=date +%s%S\" |tee -a /usr/whatap/infra/conf/whatap.conf\nstopsrc -s whatap-infra\nstartsrc -s whatap-infra\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "oracle-solaris",
+        children: "Oracle Solaris"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "Oracle Solaris 11.2 버전 이상부터 지원합니다."
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["신규 생성한 서버 모니터링 프로젝트를 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 화면이 나타납니다. 프로젝트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_management",
+          className: "uitext"
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 메뉴를 통해서도 가능합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-install-oracle-solaris.png",
+        desc: "서버 모니터링 Solaris"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
+        }), " 메뉴의 운영체제 선택 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Oracle Solaris"
+          })
+        }), " 선택 후 프로젝트 액세스 키를 확인했다면 다음 안내대로 설치를 진행하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["다운로드 명령어를 실행하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL07853",
+              className: "uitext"
+            }), " 탭에서 설치 파일을 다운로드하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "다음 명령어를 통해 에이전트 설치 파일을 다운로드하세요."
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-bash",
+                  children: "wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz\n"
+                })
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "whatap_infra.zip"
+                }), " 버튼을 선택해 에이전트 설치 파일을 다운로드하세요."]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "server_installAgent_aix_runSetup",
+              className: "uitext"
+            }), " 탭으로 이동해 다음의 실행 명령어를 확인 후 패키지를 실행하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz\npkgadd -d .\n"
+            })
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "에이전트-실행-1",
+        children: "에이전트 실행"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "다음 명령어를 실행해 서버 모니터링을 시작하세요. 애플리케이션 서버가 실행되면 에이전트가 모니터링 정보를 수집하기 시작합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-bash",
+          children: "echo \"license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g\" |tee /usr/whatap/infra/conf/whatap.conf\necho \"whatap.server.host=127.0.0.1\" |tee -a /usr/whatap/infra/conf/whatap.conf\necho \"createdtime=`date +%s%S`\" |tee -a /usr/whatap/infra/conf/whatap.conf\n/etc/init.d/whatap-infra start\n"
+        })
+      })]
+    })]
   });
 }
 function MDXContent(props = {}) {

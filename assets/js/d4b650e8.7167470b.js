@@ -700,7 +700,7 @@ const metadata = {
     "permalink": "/whatap-docs/server/supported-spec"
   },
   "next": {
-    "title": "Linux 및 Unix",
+    "title": "Linux",
     "permalink": "/whatap-docs/server/server-os/server-linux"
   }
 };
