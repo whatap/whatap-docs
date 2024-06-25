@@ -32,25 +32,25 @@ Javaアプリケーションサーバーのモニタリングのためのエー�
 
   既定値 `true`
 
-  パフォーマンスカウンターを追跡する機能をアクティブにします。 アクティブトランザクション数およびユーザ数、JVMリソースの使用量、Process CPUの使用量、DB Poolの使用量情報などが含まれます。`enabled`オプションが`false`の場合、無効にします。
+  パフォーマンスカウンターを追跡する機能を有効にします。アクティブトランザクション数およびユーザ数、JVMリソースの使用量、Process CPUの使用量、DB Poolの使用量情報などが含まれます。`enabled`オプションが`false`の場合、無効にします。
 
 - **stat_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
 
-  統計情報を追跡する機能をアクティブにします。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが含まれます。`enabled`オプションが`false`の場合、無効にします。
+  統計情報を追跡する機能を有効にします。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが含まれます。`enabled`オプションが`false`の場合、無効にします。
 
 - **sigar_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
 
-  sigarライブラリによるOS情報の収集をアクティブします。sigarライブラリを通じて5秒単位で収集するCPU、Memory、DiskなどのOSリソースデータが含まれます。`enabled`オプションが`false`の場合、無効にします。
+  sigarライブラリによるOS情報の収集を有効にします。sigarライブラリを通じて5秒単位で収集するCPU、Memory、DiskなどのOSリソースデータが含まれます。`enabled`オプションが`false`の場合、無効にします。
 
 - **active_stack_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
 
-  アクティブスタックの追跡をアクティブにします。スタックメニューのトップスタック、およびユニークスタック、アクティブスタックが適用されます。`enabled`または`counter_enabled`オプションが`false`の場合、無効にします。
+  アクティブスタックの追跡を有効にします。スタックメニューのトップスタック、ユニークスタック、アクティブスタックが対象です。`enabled`または`counter_enabled`オプションが`false`の場合、無効にします。
 
 - **license** <span class='type'>String</span>
 
@@ -76,13 +76,13 @@ Javaアプリケーションサーバーのモニタリングのためのエー�
 
   既定値 `true`
 
-  [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で、**_統計/レポート_** > **_統計_** > **_クライアントIP_**項目のIP統計の使用を有効にします。
+  プロジェクトのサイドメニューの中、<Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statRemote" className="uitext" />のメニューでIP統計の使用有無を有効にします。
 
 - **realtime_user_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
 
-  [WhaTapモニタリングサービス](https://service.whatap.io)の**_ダッシュボード_** > **_アプリケーションダッシュボード_**メニューで確認できる指標のうち、**_同時接続ユーザー_**指標を収集するかどうかを設定します。
+  プロジェクトのサイドメニューの中、<Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_appDashboard" className="uitext" />メニューで確認できる指標のうち、<Cmdname sid="dashboard_user" className="uitext" />指標の収集有無を設定します。
 
 - **hook_direct_patch_classes** <span class='type'>ClassFile_FullPath</span>
 
@@ -110,7 +110,7 @@ Javaアプリケーションサーバーのモニタリングのためのエー�
 
   既定値 `true`
 
-  [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で**_アプリケーション_** > **_インスタンスパフォーマンス分析_**メニューで**_ライブラリバージョン_**機能をアクティブにします。
+  プロジェクトのサイドメニューの中、<Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_libraryVersion" className="uitext" />のメニュー機能を有効にします。
 
 - **realtime_user_thinktime_max** / **wclient_thinktime_max** <span class='type'>MiliSeconds</span>
 
@@ -128,7 +128,7 @@ Javaアプリケーションサーバーのモニタリングのためのエー�
 
   既定値`300000`
 
-  エージェントとサーバー間を同期する時間間隔を設定します。同期しない場合は、`0`に設定します。
+  エージェントとサーバー間で同期化する時間の間隔を設定します。同期しない場合は、`0`に設定します。
 
 - **detect_deadlock_enabled** <span class='type'>Boolean</span>
 

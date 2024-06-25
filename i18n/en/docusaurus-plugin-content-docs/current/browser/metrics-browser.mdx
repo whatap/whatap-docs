@@ -11,7 +11,7 @@ toc_max_heading_level: 2
 
 It describes the metrics that are collected by Browser Monitoring. They can be searched in **_Metrics search_**.
 
-## rum_page_load_each_page
+## rum_page_load_each_page {#b798b7654dc22dee3a29d413a85dad14}
 
 For the page load time metric, **Navigation Timing** value is queried in the **Performance API**. The page load searching proceeds as shown in the following figure.
 
@@ -23,13 +23,13 @@ The page load's response time covers up to the **loadEventEnd** point.
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#667f1f457e1051e615455d0ecf95b947}
 
 | Tag name     | Description        | Remarks |
 | ------------ | ------------------ | ------- |
 | `page_group` | Page Group         | -       |
 
-### Fields
+### Fields {#9a189c13b76ce8b9d1784cf1c790f766}
 
 <div class='browser-metric'>
 
@@ -46,14 +46,14 @@ The page load's response time covers up to the **loadEventEnd** point.
 | `page_load_download_time`         | millisecond | Average time spent for a browser to download resources from the server while loading web pages                                     | Time elapsed from **responseStart** to **responseEnd**                                                                   |
 | `page_load_domcontentloaded_time` | millisecond | Average time for a web page to render its initial content and become interactive                                                   | Time elapsed from **domContentLoadedEventStart** to **domContentLoadedEventEnd**                                         |
 | `page_load_domload_time`          | millisecond | Average time for a web page to load all resources, finish rendering, and become interactive                                        | Time elapsed from **loadEventStart** to **loadEventEnd**                                                                 |
-| `page_load_render_time`           | millisecond | Average time spent rendering resources downloaded from the server to the screen and completing page load events                    | Time elapsed from **domInteractive** to **loadEventEnd**                                                                 |
+| `page_load_render_time`           | millisecond | Average time spent rendering resources downloaded from the server to the screen and completing page load events                    | Time elapsed from **domInteractive** to ** domComplete**                                                                 |
 | `page_load_event_time`            | millisecond | Average time for the load event to complete as measured by the browser                                                             | Time elapsed from the start to **loadEventEnd**                                                                          |
 | `page_load_duration`              | millisecond | Average time taken by the browser to fully load a web page                                                                         | Time to complete additional interactions after **loadEventEnd**, page load completion time measured by the browser agent |
 | `page_load_count`                 | Count       | Page Load Count                                                                                                                    | -                                                                                                                        |
 
 </div>
 
-## rum_page_load_browser_each_page
+## rum_page_load_browser_each_page {#5ea9bb418b92f2baf636d9cd6d835507}
 
 Metric related to page loads for each browser
 
@@ -61,14 +61,14 @@ Metric related to page loads for each browser
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#01815fbb5f3d1977c56e3cb4d0fcd7b8}
 
 | Tag name       | Description  | Remarks |
 | -------------- | ------------ | ------- |
 | `page_group`   | Page Group   | -       |
 | `browser_name` | Browser name | -       |
 
-### Fields
+### Fields {#8b519866d9c828cba5ac22f6936c682a}
 
 <div class='browser-metric'>
 
@@ -79,7 +79,7 @@ Metric related to page loads for each browser
 
 </div>
 
-## rum_page_load_device_each_page
+## rum_page_load_device_each_page {#cae6122948ce4a2ef19b007c7149bebf}
 
 Metric related to page loads for each device
 
@@ -87,14 +87,14 @@ Metric related to page loads for each device
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#a5cebb5b8e9916d57d02dee96ce82729}
 
 | Tag name      | Description | Remarks |
 | ------------- | ----------- | ------- |
 | `page_group`  | Page Group  | -       |
 | `device_name` | Device name | -       |
 
-### Fields
+### Fields {#5253d43d6cca9bb1f05b3072c47b9485}
 
 <div class='browser-metric'>
 
@@ -105,7 +105,7 @@ Metric related to page loads for each device
 
 </div>
 
-## rum_page_load_os_each_page
+## rum_page_load_os_each_page {#41e66540556c4e86eebd81306558ef5f}
 
 Metric related to page loads for each OS
 
@@ -113,14 +113,14 @@ Metric related to page loads for each OS
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#70ad1189b536ab167bb8394db61d403f}
 
 | Tag name      | Description | Remarks |
 | ------------- | ----------- | ------- |
 | `page_group`  | Page Group  | -       |
 | `device_name` | Device name | -       |
 
-### Fields
+### Fields {#f4dcb7c1fc5a847255d5001b63e143b4}
 
 <div class='browser-metric'>
 
@@ -131,7 +131,7 @@ Metric related to page loads for each OS
 
 </div>
 
-## rum_router_change_each_page
+## rum_router_change_each_page {#e9d9a41030bbbabddae2702cd0a6f21d}
 
 Metric related to the events that occur when pages change in a single-page application
 
@@ -139,14 +139,14 @@ Metric related to the events that occur when pages change in a single-page appli
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#8bff96be874041f09126639900f73465}
 
 | Tag name            | Description                            | Remarks                                                                           |
 | ------------------- | -------------------------------------- | --------------------------------------------------------------------------------- |
 | `page_group`        | Page Group                             | -                                                                                 |
 | `completed_loading` | Whether a page change completes or not | Page change is not complete and appears as `false` when switching to another page |
 
-### Fields
+### Fields {#1f0c9db9b65cdca062b7943db7093019}
 
 <div class='browser-metric'>
 
@@ -157,7 +157,7 @@ Metric related to the events that occur when pages change in a single-page appli
 
 </div>
 
-## rum_resource_each_page
+## rum_resource_each_page {#ecb79f2064b37438ae6547c7f53110be}
 
 Metric related to the response time of a resource called from a web page
 
@@ -165,7 +165,7 @@ Metric related to the response time of a resource called from a web page
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#1c1c20ee4a4bb17f2e3f925b0e4538b6}
 
 | Tag name       | Description                                       | Remarks                                                                                              |
 | -------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -175,7 +175,7 @@ Metric related to the response time of a resource called from a web page
 | `request_path` | URL path of the resource                          | -                                                                                                    |
 | `type`         | Resource type                                     | css, image, script, etc.                                                                             |
 
-### Fields
+### Fields {#66f375095544e257b9e3a11f167d4df4}
 
 <div class='browser-metric'>
 
@@ -191,7 +191,7 @@ Metric related to the response time of a resource called from a web page
 
 </div>
 
-## rum_ajax_each_page
+## rum_ajax_each_page {#fec598ef360cba56c537b9ce7990b05b}
 
 Metric related to the AJAX response time and response status code
 
@@ -199,7 +199,7 @@ Metric related to the AJAX response time and response status code
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#d51f9633b28bd99783f7011dfcbf985a}
 
 | Tag name       | Description                  | Remarks |
 | -------------- | ---------------------------- | ------- |
@@ -207,7 +207,7 @@ Metric related to the AJAX response time and response status code
 | `request_host` | Host of the AJAX request URL | -       |
 | `request_path` | Path of the AJAX request URL | -       |
 
-### Fields
+### Fields {#250a56819f0c49aeae01a33f85382623}
 
 <div class='browser-metric'>
 
@@ -224,7 +224,7 @@ Metric related to the AJAX response time and response status code
 
 </div>
 
-## rum_error_total_each_page
+## rum_error_total_each_page {#ccafcb956575e6fcbda7fb52eb283fb5}
 
 This is the metric related to errors from the browser.
 
@@ -232,7 +232,7 @@ This is the metric related to errors from the browser.
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#2319200ab7885caa96540f15a8a11db5}
 
 | Tag name        | Description   | Remarks |
 | --------------- | ------------- | ------- |
@@ -243,7 +243,7 @@ This is the metric related to errors from the browser.
 | `error_message` | Error Message | -       |
 | `error_type`    | Error Type    | -       |
 
-### Fields
+### Fields {#a597110ac8cdb0a125cac8e2c307dc6c}
 
 <div class='browser-metric'>
 
@@ -253,7 +253,7 @@ This is the metric related to errors from the browser.
 
 </div>
 
-## rum_web_vitals_each_page
+## rum_web_vitals_each_page {#a45419e40b96f96485bd8a36241c1dd0}
 
 Metric related to the core web vitals
 
@@ -261,13 +261,13 @@ Metric related to the core web vitals
 
 - Statistical data: 5 minutes, 1 hour
 
-### Tags
+### Tags {#29de8586814a026bc25f43fc76aabc86}
 
 | Tag name     | Description | Remarks |
 | ------------ | ----------- | ------- |
 | `page_group` | Page Group  | -       |
 
-### Fields
+### Fields {#631ecb47495ee519054b47c9aeab7cd2}
 
 <div class='browser-metric'>
 

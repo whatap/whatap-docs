@@ -15,15 +15,15 @@ import Checkpakip from "../common-items/_check-pak-ip.mdx";
 
 <Checkpakip />
 
-## フィルターの特定のタグを追加 {#addtagfilter}
+## フィルターに特定のタグを追加 {#addtagfilter}
 
-ユーザーは、フィルター用に特定の文字列をタグ付けできます。設定により、WhaTapモニタリングサービス画面で収集されたデータをそのタグの名前と値でフィルタリングできます。
+ユーザーは、フィルターで利用する特定の文字列をタグとして設定できます。設定により、WhaTapモニタリングサービス画面で収集されたデータをそのタグの名前と値でフィルタリングできます。
 
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
 
 ```bash title="SH" showLineNumbers {5,6}
-# -tag.[ユーザータグキー名][空白][ユーザータグ値]
+# -tag.[ユーザータグのキー名][空白][ユーザータグの値]
 
 ./focus -license $WHATAP_LICENSE \
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
@@ -36,7 +36,7 @@ import Checkpakip from "../common-items/_check-pak-ip.mdx";
 <TabItem value="wd" label="Windows Powershell">
 
 ```powershell title="Powersehll" showLineNumbers {5,6}
-# -tag.[ユーザータグキー名][空白][ユーザータグ値]
+# -tag.[ユーザータグのキー名][空白][ユーザータグの値]
 
 .\focus.exe -license $WHATAP_LICENSE `
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `

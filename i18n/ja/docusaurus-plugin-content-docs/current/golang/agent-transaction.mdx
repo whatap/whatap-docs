@@ -19,6 +19,14 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## トランザクショントレーシング{#trs-trc}
 
+以下は、アプリケーション内の各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な側面を調整できます。
+
+- **profile_basetime** <span class='type'>Millisecond</span>
+
+  既定値`500`
+
+  トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただし、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
+
 - **profile_step_normal_count** <span class='type'>Int</span>
 
   既定値 `1000`
@@ -49,12 +57,6 @@ import Transaction from "../common-items/_transaction.mdx";
 
   Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
 
-- **profile_basetime** <span class='type'>Millisecond</span>
-
-  既定値`500`
-
-  トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただし、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
-
 - **query_string_enabled** <span class='type'>Boolean</span>
 
   既定値`false`
@@ -75,11 +77,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
   同時に設定された場合、優先順位は次の通りです。 
 
-  1. split
+  1\. split
 
-  2. large
+  2\. large
 
-  3. circular
+  3\. circular
 
   :::
 
@@ -95,11 +97,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
   - 同時に設定された場合、優先順位は次の通りです。 
 
-    1. split
+    1\. split
 
-    2. large
+    2\. large
 
-    3. circular
+    3\. circular
 
   :::
 
@@ -113,11 +115,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
   同時に設定された場合、優先順位は次の通りです。 
 
-  1. split
+  1\. split
 
-  2. large
+  2\. large
 
-  3. circular
+  3\. circular
 
   :::
 
@@ -127,7 +129,74 @@ import Transaction from "../common-items/_transaction.mdx";
 
   プロファイル情報を圧縮して送信します。既定値は、`true`に設定されています。
 
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+  既定値 `3000`
+
+  収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表示できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
+
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+  既定値 `8000`
+
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+  既定値`300000`
+
+  トランザクションが終了する制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報はそれ以上収集されません。トランザクションのトレース情報から"Lost Connection"を確認できます。
+
+- **trace_useragent_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  値が`true`の場合、トランザクションのユーザーエージェント情報を収集します。 
+
+- **trace_referer_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  値が`true`であれば、トランザクションのRefere情報を収集します。
+
+## 例外処理{#exception}
+
+以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。ビジネス例外を登録し、関連する統計を収集することで、アプリケーションの安定性を確認できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で正常トランザクションとして表示されます。
+
+- **biz_exceptions** <span class='type'>String</span>
+
+  特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒットマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
+
+  :::tip
+
+  エラークラス収集 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
+
+  :::
+
+- **ignore_exceptions** <span class='type'>String</span>
+
+  登録したExceptionのエラー自体を無視します。例外する文字列は、プロファイルのエラーの種類またはエラー統計に関連するクラス項目の文字列です。
+
+  Goでは、発生するerrorのTypeを文字列で表記します。
+
+  ```go
+  thr.ErrorClassName = fmt.Sprintf("%T", err)
+  thr.ErrorMessage = err.Error()
+
+  # error Type 出力
+
+  *errors.errorString
+  *echo.HTTPError
+  *url.Error
+  ```
+
+  :::tip
+
+  エラークラス無視 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+  :::
+
 ## HTTPトランザクションの追跡{#track-http-trs}
+
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
 
 - **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -147,15 +216,23 @@ import Transaction from "../common-items/_transaction.mdx";
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 
-  既定値`0`
-
   特定のURLを設定すると、トランザクション追跡対象から除外されます。設定されたURLはトランザクション情報を収集せず、トランザクション 一覧で確認できません。トランザクション追跡対象から除外するURLを指定します。2つ以上の値を指定する場合は、コンマ(,)を区切り文字として使用します。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
 
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
-  既定値`0`
-
   トランザクション追跡対象から除外するURL prefixを指定します。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
 
 - **profile_http_header_enabled** <span class='type'>Boolean</span>
 
@@ -195,8 +272,6 @@ import Transaction from "../common-items/_transaction.mdx";
 
 - **ignore_http_method** <span class='type'>String</span>
 
-  既定値`Empty`
-
   設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
 
   ```ini title="whatap.conf"
@@ -207,60 +282,15 @@ import Transaction from "../common-items/_transaction.mdx";
   ignore_http_method=OPTIONS,HEAD
   ```
 
-- **biz_exceptions** <span class='type'>String</span>
+  :::note
 
-  既定値`Empty`
+  このオプションを通じて登録したHTTPメソッドは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
 
-  特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒットマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
-
-- **ignore_exceptions** <span class='type'>String</span>
-
-  登録したExceptionのエラー自体を無視します。例外する文字列は、プロファイルのエラーの種類またはエラー統計に関連するクラス項目の文字列です。
-
-  Goでは、発生するerrorのTypeを文字列で表記します。
-
-  ```go
-  thr.ErrorClassName = fmt.Sprintf("%T", err)
-  thr.ErrorMessage = err.Error()
-
-  # error Type 出力
-
-  *errors.errorString
-  *echo.HTTPError
-  *url.Error
-  ```
-
-## トランザクションのトレース
-
-- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
-
-  既定値 `3000`
-
-  収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表示できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
-
-- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
-
-  既定値 `8000`
-
-- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
-
-  既定値`30000`
-
-  トランザクションが終了する制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報はそれ以上収集されません。トランザクションのトレース情報から"Lost Connection"を確認できます。
-
-- **trace_useragent_enabled** <span class='type'>Boolean</span>
-
-  既定値`false`
-
-  値が`true`の場合、トランザクションのユーザーエージェント情報を収集します。 
-
-- **trace_referer_enabled** <span class='type'>Boolean</span>
-
-  既定値`false`
-
-  値が`true`であれば、トランザクションのRefere情報を収集します。
+  :::
 
 ## マルチトランザクショントレース
+
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡の詳細な動作を調整できます。
 
 - **mtrace_enabled** <span class='type'>Boolean</span>
 

@@ -230,9 +230,9 @@ target IPまたはサービスの接続状態をログモニタリングのliveT
 
 - 正常なレスポンスの場合のレベルはOK、エラーの場合のレベルはエラーです。
 
-- 通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログは記録されます。既定値は30秒です。
+- 通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログが記録されます。既定値は30秒です。
 
-- エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログは記録されます。既定値は5秒です。
+- エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログが記録されます。既定値は5秒です。
 
 ```ini title='whatap.conf'
 # 既定値
@@ -311,15 +311,6 @@ jmx pool objectの既定値を修正しました。jmx poolのデータソース
 ```ini title='whatap.conf'
 jmx_pool_dsname_enabled=false
 jmx_pool_object="*:type=DataSource,class=*,name=*"
-```
-
-#### heapdumpファイルパスオプションの追加
-
-heapdumpファイルパスを指定するlog_rootオプションを追加しました。
-
-```ini title='whatap.conf'
-# 既定値
-log_root=${WHATAP_HOME}/dump
 ```
 
 #### バッチエージェントのactive開始部分の修正

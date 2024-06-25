@@ -11,8 +11,10 @@ tags:
 
 It provides the configuration method how to trace frameworks or open source libraries used in Java applications through the agent. It is configured by adding the `weaving` option in the Java agent configuration file (_whatap.conf_). The guide on how to respond to various framework and library versions is also provided.
 
-```ini title='${WHATAP_HOME}/whatap.conf'
-weaving=  
+For example, when using spring-boot-3.x, feign-client-11, or okhttp3-4.4 with a framework or open source, set the options as follows:
+
+```ini title='whatap.conf'
+weaving=spring-boot-3.0,feign-11,okhttp3-4.4
 ```
 
 For configuration of the framework or open source to trace through the Java agent, see the following:
@@ -56,9 +58,3 @@ For configuration of the framework or open source to trace through the Java agen
 | undertow                           | undertow-2.3 or later          | `weaving=undertow-2.3`          |   <Link to="../release-notes/java/java-2_2_14" target="_blank">v2.2.14</Link>   | -                                                                                                                                                        |
 
 </div>
-
-When using spring-boot-3.x, feign-client-11, or okhttp3-4.4 with a framework or open source, set the options as follows:
-
-```ini title='whatap.conf'
-weaving=spring-boot-3.0,feign-11,okhttp3-4.4
-```

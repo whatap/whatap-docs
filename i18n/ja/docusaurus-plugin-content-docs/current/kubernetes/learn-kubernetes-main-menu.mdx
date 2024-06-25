@@ -22,7 +22,7 @@ Kubernetesには多くの用途があるため、運用環境やビジネス状�
 - コンテナマップ - ノード（ホスト）、コンテナ、アプリケーション、ログ、イベント情報を提供する動的ダッシュボード
   - Namespace、Deployment、ReplicaSet、PodなどのKubernetesの構成要素を個別/グループ化して表示
   - 個別対象 / ユーザー指定グループ別の情報をリアルタイムで確認
-    - コンテナ状態およびコアリソース指標別のリアルタイム状態を3段階の色で区分（Normal、 Warning、 Critical）
+    - コンテナおよびコアリソースのメトリクス別リアルタイム状況を3段階の色で区分(Normal、 Warning、 Critical)
     - コンテナに割り当てられたCPU Limit、Request及び実使用量（core）
     - コンテナに割り当てられたMemory Limit、Request及び実使用量（MiB, GiB）
     - コンテナが使用中のDisk I/O、Network I/O情報
@@ -36,9 +36,9 @@ Kubernetesには多くの用途があるため、運用環境やビジネス状�
     - すべてのコンテナリストと使用率の確認
     - 個別コンテナのCPU、Memory、Disk(Volume)、Network使用率
     - コンテナに接続されたボリューム情報
-  - Node
+  - ノード
     - すべてのノードリストと使用率の確認
-    - 個別ノード（ホスト）のCPU、Memory、Disk、Network使用率
+    - 個別ノード(ホスト)のCPU、Memory、Disk、Network使用率
 - アプリケーションモニタリング - Kubernetes上でコンテナ化されたアプリケーションモニタリング
   - 対応アプリケーション：Java、Node.js、Python
   - フィルタリングを使用した特定アプリケーションのモニタリング
@@ -53,7 +53,7 @@ Kubernetesには多くの用途があるため、運用環境やビジネス状�
 
 - Kubernetes Podピーク使用量および初期化時間
 - 期間別メモリ不足発生コンテナ情報とメモリチャート
-- アプリケーション（APM）と同一機能
+- アプリケーション(APM)と同一機能
   - メトリクスチャート
   - MSA分析
   - スタック

@@ -14,7 +14,8 @@ const config = {
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   baseUrl: '/',
-  onBrokenLinks: 'log',
+  onBrokenLinks: 'ignore',
+  onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
   favicon: '/img/whatap-favicon.ico',
@@ -61,20 +62,7 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         // fromExtensions: ['html', 'htm'],
-        redirects: [
-          {
-            to: '/java/introduction',
-            from: '/apm/java/apm-introduction'
-          },
-          {
-            to: '/java/introduction',
-            from: '/apm/java-intro'
-          },
-          {
-            to: '/server/introduction',
-            from: '/server/server-intro'
-          },
-        ],
+        redirects: [],
       }
     ],
     [
@@ -119,9 +107,20 @@ const config = {
           remarkPlugins: [ require("@whatap-docs/remark-sectionize") ],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
-          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
+          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx', 'release-notes/otel/*.mdx' ],
         },
-        blog: false,
+        // blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl: 
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: '새로운 기능',
+          blogSidebarCount: 'ALL',
+          include: [ '**/*.mdx' ],
+          rehypePlugins: [ rehypeExtendedTable ]
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
@@ -625,17 +624,26 @@ const config = {
             position: 'left',
             label: '라이선스',
           },
-          {
-            type: 'doc',
-            docId: 'reference',
-            position: 'left',
-            label: '참조 문서',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'reference',
+          //   position: 'left',
+          //   label: '참조 문서',
+          // },
           {
             type: 'doc',
             docId: 'release-notes',
             position: 'left',
             label: '릴리스 노트',
+          },
+          {
+            type: 'doc',
+            docId: 'faq/index',
+            position: 'left',
+            label: 'FAQ',
+          },
+          {
+            to: 'blog', label: '새로운 기능', position: 'left'
           },
           {
             type: 'localeDropdown',
@@ -657,7 +665,6 @@ const config = {
       },
       prism: {
         additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp' ],
-        // additionalLanguages: [ 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img',

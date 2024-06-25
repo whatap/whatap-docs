@@ -1,12 +1,12 @@
 ---
 id: resource-node-list
-title: Node一覧
+title: ノードリスト
 description: 現在のプロジェクトのNodeステータス情報と詳細情報を確認できます。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
   - クラスター
-  - Node一覧
+  - ノードリスト
 ---
 
 ホーム画面 > プロジェクト選択 > <Cmdname sid="cluster" className="uitext" /> > <Cmdname sid="node_list" className="uitext" />
@@ -32,7 +32,7 @@ tags:
 
 - ![number 01](/img/number-01.png)をクリックすると、ノードの総数とステータス別のノード数を確認できます。
 
-- ![number 01](/img/number-01.png)領域の右側にある**_→旧バージョンを閲覧_**ボタンを選択すると、改編前の**_ノード一覧_**画面を確認できます。
+- ![number 01](/img/number-01.png)領域の右側にある**_→ 以前のバージョンで見る_**ボタンを選択すると、以前のUIで**_ノードリスト_**画面が表示されます。
 
 - ![number 02](/img/number-02.png)領域でカラムを選択する場合、カラムをノード一覧に並べ替えることができます。 
 
@@ -40,11 +40,11 @@ tags:
 
   :::note 
 
-  **_ノード詳細_**の詳細については、[次の文書](#nodedetails)を参考にしてください。
+  **_ノード詳細_**については、[次の文書](#nodedetails)を参照してください。
 
   :::
 
-## メトリック情報
+## メトリクス情報
 
 import K8slistmetric from "../common-items/_k8s-list-metric.mdx";
 
@@ -68,11 +68,11 @@ import K8slistcl from "../common-items/_k8s-list-cl.mdx";
 
 <K8slistcl />
 
-## ノード詳細情報 {#nodedetails}
+## ノード詳細 {#nodedetails}
 
-**_Node詳細_**画面は、上部の4つのチャートとNode内のコンテナ詳細情報で構成されています。
+**_ノード詳細_**画面は、上部の4つのチャートとノード内のコンテナ詳細情報で構成されています。
 
-<ImgLang img='k8s-resource-node-detail.png' desc='Node詳細画面' />
+<ImgLang img='k8s-resource-node-detail.png' desc='ノード詳細画面' />
 
 - トップチャート
 
@@ -122,4 +122,4 @@ import K8slistcl from "../common-items/_k8s-list-cl.mdx";
 
 - ![CSVダウンロードアイコン](/img/ico-csv.svg) **_CSVダウンロード_**：画面に表示された一覧データをCSVファイルとしてダウンロードできます。
 
-サーバー一覧ページのデータは、60秒ごとに自動更新されます。ユーザーは、![一時停止アイコン](/img/ico-pause.svg)ボタンをクリックして、データの自動更新を中止します。![再開アイコン](/img/ico-play-time.svg)ボタンをクリックして自動更新を再開できます。*/}
+サーバー一覧ページのデータは、60秒ごとに自動更新されます。ユーザーは、![一時停止アイコン](/img/ico-pause.svg)ボタンをクリックして、データの自動更新を中止するか、![再開アイコン](/img/ico-play-time.svg)ボタンをクリックして自動更新を再開できます。*/}

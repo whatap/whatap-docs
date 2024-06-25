@@ -1,5 +1,3 @@
-## 非HTTPトランザクションのトレース
-
 - **trace_auto_transaction_enabled** <span class='type'>Boolean</span>
 
   既定値`false`
@@ -16,7 +14,7 @@
 
   既定値 `true`
 
-  `trace_auto_transaction_enabled`オプションの値が`true`の場合、トランザクション開始時にStackTraceを記録します。 これを通じて、トランザクションの開始点を見つけることができます。
+  `trace_auto_transaction_enabled`オプションの値が`true`の場合、トランザクション開始時にStackTraceを記録します。これを通じて、トランザクションの開始点を見つけることができます。
 
 - **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
@@ -50,7 +48,7 @@
 
 - **hook_service_supers** <span class='type'>String</span>
 
-  NON-HTTPトランザクション追跡のための始点の共通分母が特定のクラスのメソッドを継承した場合、共通分母のメソッドを設定します。メソッド全体のパスを入力してください。ワイルドカード(`*`)が使用でき、コンマ(,)を区切り文字として利用して複数のメソッドを登録することができます。
+  NON-HTTPトランザクション追跡のための始点の共通分母が特定のクラスのメソッドを継承した場合、共通分母のメソッドを設定します。メソッド全体のパスを入力してください。ワイルドカード(`*`)が使用でき、コンマ(,)を区切り文字として利用して複数のメソッドを登録できます。
 
   ```ini title="whatap.conf"
   hook_service_supers=a.b.C.method,a.b.C.*

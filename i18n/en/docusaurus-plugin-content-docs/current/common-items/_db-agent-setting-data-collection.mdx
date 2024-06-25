@@ -8,7 +8,7 @@
 
 </InDoc>
 
-<Xclude product ='redis'>
+<Xclude product ='redis,mongodb'>
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
@@ -50,7 +50,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis'>
+<Xclude product='cubrid,redis,mongodb'>
 
 - **replication_name** <span class='type'>String</span>
 
@@ -74,7 +74,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis'>
+<Xclude product='cubrid,redis,mongodb'>
 
 - **skip_whatap_session** <span class='type'>Int</span>
 
@@ -120,6 +120,12 @@
   - `library cache get hit ratio`
   - `latch hit ratio`
   - `shared pool free mem ratio`
+
+- **interval_sec** <span class='type'>Boolean</span> <code class="my">DBX agent v1.7.3 or later</code>
+
+  Default `true`
+
+  This option is used to convert the data collected from the agent every 5 seconds in seconds (`delta` value for 1 second) and report it.
 
 </InDoc>
 

@@ -1,0 +1,165 @@
+## What is the MSA analysis?
+
+The MSA analysis function analyzes the proportion of calls between transactions collected through the WhaTap's **Multiple transaction trace** function. Based on this, dependencies between microservices can be checked at the URL level rather than instance-centric basis.
+
+![Microservice Architecture Pattern](https://img.whatap.io/media/images/whatap_application_analysis_msa_pattern.png)
+
+For example, there are five microservices: A, B, C, D, and E. If a user calls A, it is assumed that the following three call patterns occur according to the logic. 
+
+1. A→B, C calls
+2. A→B, C calls + then B→D call
+3. A→B, C calls + then B→D, E calls 
+
+If these three patterns have been performed once, MSA analysis can check the association analysis data depending on the reference URL.
+
+![Microservice Architecture Caller & Callee](https://img.whatap.io/media/images/whatap_application_analysis_msa_caller_callee.png)
+
+:::note
+
+<InDoc product="kubernetes">
+
+For more information about **multiple transaction trace**, see [the following](../java/trs-multi-trace).
+
+</InDoc>
+
+<Xclude product="kubernetes">
+
+For more information about **multiple transaction trace**, see [the following](trs-multi-trace).
+
+</Xclude>
+
+:::
+
+## MSA Transaction Statistics
+
+<Xclude product="kubernetes">
+
+Home > Select Project > ![Sitemap Icon](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_msa" className="uitext" />
+
+</Xclude>
+
+<InDoc product="kubernetes">
+
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_msa" className="uitext" />
+
+</InDoc>
+
+The <Cmdname sid="side_msa" className="uitext" /> menu is a tool that can effectively analyze the performance and stability for each service in the microservice environment. By analyzing the detailed call relationships for transactions, you can optimize the system performance and proactively identify potential problems based on the analysis.
+
+<InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_2.png' desc='MSA Analysis' /></InDoc>
+
+<Xclude product="kubernetes"><ImgLang img="apm-analysis-msa-list.png" desc="MSA Analysis" /></Xclude>
+
+- <Cmdname sid="time_selector" className="uitext" />: Select a desired search period. You can view a list of transactions including callers and callees on a daily basis.
+
+- <Cmdname sid="filter" className="uitext" />: By filtering based on <Cmdname sid="TTL06356" className="uitext" />, <Cmdname sid="spec" className="uitext" />, and <Cmdname sid="TTL06918" className="uitext" />, you can perform the search.
+
+- <Cmdname sid="order_by" className="uitext" />: Based on <Cmdname sid="count" className="uitext" />, <Cmdname sid="error" className="uitext" />, and <Cmdname sid="timeAvg" className="uitext" /> (average response time), the list can be sorted.
+
+:::note
+
+- The time range that can be searched in <Cmdname sid="time_selector" className="uitext" /> is up to 1 day (24 hours).
+
+- <Cmdname sid="TTL06356" className="uitext" /> is the group name classified as `whatap.okind` in the agent configuration options.
+
+- After setting the conditions, select ![Search icon](/img/ico-btn-search.png) to update the transaction list.
+
+:::
+
+## Analyzing in detail
+
+When you select ![Detail icon](/img/ic-pageview.svg) for the item to view in the transaction list, the Display Detail window appears. You can view the caller and callee for the transaction in the Display Detail window. 
+
+<InDoc product="kubernetes"><ImgLang img="k8s-analysis-msa-detail.png" desc="MSA Analysis" /></InDoc>
+
+<Xclude product="kubernetes"><ImgLang img="apm-analysis-msa-detail.png" desc="MSA Analysis" /></Xclude>
+
+Each tab provides the following analysis features:
+
+- <Cmdname sid="msa_caller_callee_summary" className="uitext" />: It provides a visualized diagram for the relationship between the caller and callee of the transaction.
+
+- <Cmdname sid="msa_caller_callee_table" className="uitext" />: It provides the details of the transaction such as call count, error count, and response time.
+
+- <Cmdname sid="msa_caller_callee_trend" className="uitext" />: It provides a time series chart for performance changes in the number and rate of transaction calls over time.
+
+:::note
+
+- You can view it in full screen when the ![Full screen view icon](/img/ico-detail-mode.svg) button is selected on the upper right of the Display Detail window.
+
+- To close the Display Detail window, select <Cmdname sid="confirm" className="uitext" /> at the lower right or press the ESC key.
+
+:::
+
+### Caller callee summary {#msa_caller_callee_summary}
+
+The <Cmdname sid="msa_caller_callee_summary" className="uitext" /> tab displays the dependency between the caller and callee of a transaction selected from the transaction list in a visualized diagram. You can intuitively understand the call relationships between services. Call paths and dependencies can be visually identified, which is advantageous for analyzing the causes of problems.
+
+#### Analyzing call relationships
+
+<InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_3.png' desc='Caller callee summary' /></InDoc>
+
+<Xclude product="kubernetes"><ImgLang img='apm-analysis-msa-caller-callee-summary.png' desc='Caller callee summary' /></Xclude>
+
+Caller and callee nodes display numerical data whose maximum is 1 such as 0.004 and 0.003, which represents its proportion among all callers. Likewise, the weight of each callee is displayed together on the right. 
+
+Through the above screen, you can analyze the dependencies between callers and callees based on the _/account/save/employee/seoul_ transaction. You can visually see from and to which services the transactions are called.
+
+#### Checking the performance metrics
+
+![node](/img/apm-analysis-msa-caller-callee-node.png)
+
+Each node consists of a transaction URL, project name, agent group name, and the following performance data:
+
+- <UI>Count</UI>: Number of calls for the transaction
+
+- <UI>Error</UI>: Number of errors occurred for calls
+
+- Average response time: Average response time for the transaction, in milliseconds (ms)
+
+#### Finding the transaction flow
+
+When you hover your mouse over a caller or callee node, the ![Expand icon](/img/right-arrow.svg) button appears. If you select this button, it expandes into subnodes. By checking the entire flow of transactions, you can get answers in finding where problems occur.
+
+<InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_4.png' desc='Caller Callee - Expand child node details' /></InDoc>
+
+<Xclude product="kubernetes"><ImgLang img='apm-analysis-msa-caller-callee-summary-extend.png' desc='Caller callee summary' /></Xclude>
+
+:::note
+
+- To close the subnodes, select ![Expand icon](/img/right-arrow.svg) again.
+
+- You can enlarge or reduce the screen using the scroll feature of the mouse. Or click the +/- buttons on the upper left of the screen.
+
+:::
+
+### Caller callee data {#msa_caller_callee_table}
+
+The <Cmdname sid="msa_caller_callee_table" className="uitext" /> tab displays the correlation between caller and callee for the reference URL (e.g. */account/save/employee/seoul*) in a tabular format. You can specifically check the details of each transaction (call count, error count, average response time, etc.), enabling a precise, data-based analysis.
+
+<InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_5.png' desc='correlation between callers and callees' /></InDoc>
+
+<Xclude product="kubernetes"><ImgLang img='apm-analysis-msa-caller-callee-data.png' desc='Caller callee summary' /></Xclude>
+
+- It can be used to analyze performance issues by checking the number and rate of calls, number of errors, and average response time of each transaction.
+
+- Through the <Cmdname sid="type" className="uitext" /> column, you can easily distinguish between caller and callee and find the call relationship.
+
+- By selecting ![Expand icon](/img/ic-caret-right.svg) for each transaction, you can additionally check the transactions related to the transaction. 
+
+- To save the data list in CSV format, select <Cmdname sid="download_csv" className="uitext" /> at the upper right.
+
+### Caller callee trend {#msa_caller_callee_trend}
+
+The <Cmdname sid="msa_caller_callee_trend" className="uitext" /> tab allows you to visually analyze the call relationships and performance data of the reference URL (*/account/save/employee/seoul*) over time. This can help you find the pattern in the performance of transactions.
+
+<InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_6.png' desc='Caller callee trend' /></InDoc>
+
+<Xclude product="kubernetes"><ImgLang img='apm-analysis-msa-caller-callee-trend.png' desc='Caller callee summary' /></Xclude>
+
+- You can see performance changes at a glance by visualizing the number and ratio of calls for specific transactions on a graph over time.
+
+- Through the <Cmdname sid="type" className="uitext" /> column, you can easily distinguish between caller and callee and find the call relationship.
+
+- When you hover your mouse over the time series chart, you can see the numerical data through the tooltip. 
+
+- When you click a specific time zone on the chart, the <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_txSearch" className="uitext" /> menu appears. You can view a list of transactions in the selected time zone.

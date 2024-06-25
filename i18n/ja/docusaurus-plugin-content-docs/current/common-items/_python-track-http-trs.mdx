@@ -8,7 +8,7 @@
 
   既定値`false`
 
-  トレース履歴にhttpパラメータ情報を記録する場合は`true`に設定してください。ただし、パラメータを表示するには、パラメータに別のセキュリティキーを入力する必要があります。セキュリティキーをエージェントインストールパスの*paramkey.txt*ファイルを6桁で指定します。*paramkey.txt*が存在しない場合は、自動生成され、randomキーが設定されます。
+  トレース履歴にhttpパラメータ情報を記録する場合は`true`に設定してください。ただし、パラメータを表示するには、パラメータにセキュリティキーを入力する必要があります。セキュリティキーは、エージェントのインストールパスにある*paramkey.txt*ファイルに6桁で指定できます。*paramkey.txt*が存在しない場合は、自動生成され、randomキーが設定されます。
 
 - **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -48,6 +48,18 @@
 
   トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
   トランザクション収集を除外するURL prefixを指定します。指定した値と一致するURLは、トランザクションのパフォーマンスを収集しません。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::

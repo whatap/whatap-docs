@@ -73,7 +73,7 @@ spec:
 
 Memoryは、Request 128MiB、Limit 256MiBに設定されています。ところで現在のMemory使用量は184MiBです。右側のMemory関連推移グラフを見てもRequest基準で100%を超過し、Limit基準でも70%以上を使用しています。
 
-CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです。 
+CPU、Memoryに関するの主なWhaTapメトリクスは次のとおりです。 
 
 | 対象リソース      | Shortname      | Name                                                                    | 説明                                           |
 | ----------- | -------------- | ----------------------------------------------------------------------- | -------------------------------------------- |
@@ -86,7 +86,7 @@ CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです�
 
 :::note
 
-Podが実行中のノードに使用可能なリソースが十分である場合、コンテナに設定されたRequest以上のリソースを使用できます。WhaTapメトリックのうち、<span class="uitext">Container CPU Usage by Request (%)</span>、<span class="uitext">Container Memory Working Set by Request (%)</span>の値が100%を超える可能性があります。
+Podが実行中のノードに使用可能なリソースが十分である場合、コンテナに設定されたRequest以上のリソースを使用できます。そのためWhaTapのメトリクスデータで、<span class="uitext">Container CPU Usage by Request (%)</span>と<span class="uitext">Container Memory Working Set by Request (%)</span>の値が100%を超える可能性があります。
 
 例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ(Pod)が実行中のNodeの合計メモリは4GiBで、そのNodeに他のPodがない場合、コンテナは128MiB以上のメモリを使用できます。
 

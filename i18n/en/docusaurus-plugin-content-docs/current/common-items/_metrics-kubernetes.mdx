@@ -8,7 +8,7 @@ The `container` category collects all custom labels set on the container's pods 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes
 
-#### Tags
+#### Tags {#container-tags}
 
 | Tag name         | Description                                                                       |   Remarks    |
 | ---------------- | --------------------------------------------------------------------------------- | :----------: |
@@ -37,7 +37,7 @@ The `container` category collects all custom labels set on the container's pods 
 | replicaSetName   | Name of the container's replica set                                               |       -      |
 | whatap_project   | Name of the WhaTab project to which the container belongs                         |       -      |
 
-#### Fields
+#### Fields {#container-fields}
 
 | Field name              | Unit            | Shortname, Name, Description                                                                                                                                   |
 | ----------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -177,13 +177,13 @@ The `kube_node` category collects all custom labels set on the node as tags.
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#kube_node-tags}
 
 | Tag name   | Description      | Remarks |
 | ---------- | ---------------- | ------- |
 | nodeName   | Node name        | -       |
 
-#### Fields
+#### Fields {#kube_node-fields}
 
 | Field name             | Unit                 | Description                                   | Remarks |
 | ---------------------- | -------------------- | --------------------------------------------- | ------- |
@@ -204,7 +204,7 @@ The `kube_event` category collects cluster-wide data for cluster projects, and c
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#kube_event-tags}
 
 | Tag name     | Description              | Remarks                                            |
 | ------------ | ------------------------ | -------------------------------------------------- |
@@ -216,7 +216,7 @@ The `kube_event` category collects cluster-wide data for cluster projects, and c
 | type         | Event type               | Warning or normal                                  |
 | uid          | UID                      | Object on which the event occurred                 |
 
-#### Fields
+#### Fields {#kube_event-fields}
 
 | Field name                    | Unit              | Description                              | Remarks |
 | ----------------------------- | ----------------- | ---------------------------------------- | ------- |
@@ -239,13 +239,13 @@ The `kube_stat` category collects all the clusters for the cluster project, and 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#kube_stat-tags}
 
 | Tag name | Description      | Remarks     |
 | -------- | ---------------- | ----------- |
 | name     | kube_stat        | Fixed value |
 
-#### Fields
+#### Fields {#kube_stat-fields}
 
 | Field name                       | Unit                 | Description                                                                                                                                                                                | Remarks                   |
 | -------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
@@ -280,7 +280,7 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes
 
-#### Tags
+#### Tags {#kube_pod-tags}
 
 | Tag name             | Description                                                                                        | Remarks      |
 | -------------------- | -------------------------------------------------------------------------------------------------- | ------------ |
@@ -307,7 +307,7 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | replicaSetName       | ReplicaSet name of the Pod                                                                         | -            |
 | whatap_project       | Name of the WhaTab project to which the Pod belongs                                                | -            |
 
-#### Fields
+#### Fields {#kube_pod-fields}
 
 | Field name           | Unit       | (Shortname, Name, Description)                                                                                                 |
 | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -384,11 +384,11 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | ^                    | ^          | Pod Memory Limit (byte)                                                                                                        |
 | ^                    | ^          | Pod memory limit quota                                                                                                                            |
 | memory_per_request   | Percent    | MemByRequest                                                                                                                                      |
-| ^                    | ^          | Pod Memory by Request (%)                                                                                                      |
-| ^                    | ^          | Usage based on Pod memory requests                                                                                                                |
+| ^                    | ^          | Pod Memory Working Set by Request (%)                                                                                          |
+| ^                    | ^          | Working Set usage based on the Pod memory request                                                                                                 |
 | memory_per_limit     | Percent    | MemByLimit                                                                                                                                        |
-| ^                    | ^          | Pod Memory by Limit (%)                                                                                                        |
-| ^                    | ^          | Usage based on Pod memory limit                                                                                                                   |
+| ^                    | ^          | Pod Memory Working Set by Limit (%)                                                                                            |
+| ^                    | ^          | Working Set usage based on the Pod memory limit                                                                                                   |
 | network_rbps         | Byte       | NetRxBytes                                                                                                                                        |
 | ^                    | ^          | Pod Network Receive Byte                                                                                                                          |
 | ^                    | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
@@ -444,14 +444,14 @@ The `kube_pod_stat` category cluster project collects data for all clusters, and
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#kube_pod_stat-tags}
 
 | Tag name | Description              | Remarks                                                                                                                   |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
 | kind     | Type                     | The cluster project has cluster as the fixed value, and the namespace projects collect only for Deployment or ReplicaSet. |
 | name     | Kubernetes resource name | The cluster project has no name value and the namespace projects have the name for Deployment or ReplicaSet.              |
 
-#### Fields
+#### Fields {#kube_pod_stat-fields}
 
 | Field name            | Unit                 | Description                                                                                                                                                                                | Remarks |
 | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
@@ -474,13 +474,13 @@ Metric collection starts only when HPA is added to the ClusterRole used by WhaTa
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#kube_hpa_stat-tags}
 
 | Tag name | Description     | Remarks |
 | -------- | --------------- | ------- |
 | name     | HPA name        | -       |
 
-#### Fields
+#### Fields {#kube_hpa_stat-fields}
 
 | Field name                | Unit                 | Description                                 | Remarks |
 | ------------------------- | -------------------- | ------------------------------------------- | ------- |

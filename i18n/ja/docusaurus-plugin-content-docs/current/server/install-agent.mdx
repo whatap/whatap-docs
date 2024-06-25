@@ -22,11 +22,25 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
 
+## OS選択
+
+**_エージェントのインストール_**画面で、インストールするエージェントのオペレーティング システムを選択してください。
+
+<ImgLang img='server-select-os.png' desc='OSの選択'/>
+
+:::tip
+
+プロジェクトを作成すると、自動的に<Cmdname sid="agent_installation" className="uitext" />ページに移動します。<Cmdname sid="agent_installation" className="uitext" />ページが表示されない場合は、左側のメニューから<Cmdname sid="all_projects" className="uitext" />を選択し、新しく作成したプロジェクトを選択します。
+
+:::
+
+{/* 프로젝트 액세스 키 안내 중 첨언의 경우 서버는 운영체제 선택란에 따로 빼기 */}
+
 import Accesskey from "../getting-started/_accesskey.mdx";
 
 <Accesskey />
 
-## 環境別エージェントのインストール
+## OS別エージェントのインストール
 
 <details>
 <summary>サーバー エージェントファイルの構成</summary>
@@ -45,8 +59,8 @@ import Svwcpf from "../common-items/_sv-w-cpf.mdx";
 
 </details>
 
-**プロジェクト作成**と**プロジェクトアクセスキー**の確認は、共通プロセスです。 
+**プロジェクト作成**後**OSの選択**と**プロジェクトアクセスキー**の確認は、共通のプロセスです。 
 
-使用する環境に応じたインストール方法を次のように提供します。 エージェントをインストールして適用する前に [動作環境環境](supported-spec)を確認してください。
+使用するOSに合わせてインストール方法を次のように提供します。 エージェントをインストールして適用する前に[動作環境](supported-spec)を確認してください。
 
 <DocCardList/>

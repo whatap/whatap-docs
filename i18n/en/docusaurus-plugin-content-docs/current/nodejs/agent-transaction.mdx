@@ -15,6 +15,8 @@ The agent traces the transaction performance and provides the following configur
 
 ## Transaction Tracing
 
+The following agent options allow you to trace the execution paths of each transaction within applications in detail. You can adjust various aspects, from the minimum response time to the number of execution steps for transactions.
+
 import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
 <Transactionprofilingcommon />
@@ -36,6 +38,14 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   ```ini title='Example'
   hook_method_patterns=a.b.C1.*
   ```
+
+  :::note
+
+  - The methods registered through this option can be checked through the Method step in <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window.
+
+  - It is recommended to apply it locally as much as possible. If applied extensively, it may cause performance degradation in applications.
+
+  :::
 
 - **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
@@ -61,6 +71,22 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
   When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
 
+- **trace_service_port_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Add the port number to the transaction name.
+
+- **profile_zip_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  The compressed profile information is transmitted.
+
+## Exceptional handling {#exception}
+
+The following are options for managing and monitoring exceptions that occur in applications. You can set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. The exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
+
 - **hook_method_ignore_prefixes** <span class='type'>String</span>
 
   Default `get,set`
@@ -70,12 +96,6 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 - **hook_method_ignore_classes** <span class='type'>String</span>
 
   When setting a method trace, it sets the classes to exclude from the trace.
-
-- **trace_service_port_enabled** <span class='type'>Boolean</span>
-
-  Default `false`
-
-  Add the port number to the transaction name.
 
 - **httpc_status_ignore** <span class='type'>String</span>
 
@@ -87,19 +107,29 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
   httpc_status_ignore=404,500
   ```
 
+  :::tip
+
+  Ignore HTTP status error code/Exclude error statistics
+
+  :::
+
 - **httpc_status_ignore_set** <span class='type'>String</span>
 
   Default `Empty`
 
   `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-  :::note
-
   Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+
+  :::tip
+
+  Ignore HTTP status error code/Exclude error statistics
 
   :::
 
 ## HTTP transaction tracing
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
 
 import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
 
@@ -113,9 +143,21 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
   It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
 - **trace_ignore_url_prefix** <span class='type'>String</span> <ScrollToLink anchor="trace_ignore_url_prefix" />
 
   It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **ignore_http_method** <span class='type'>String</span>
 
@@ -130,6 +172,12 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
   # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
   ignore_http_method=OPTIONS,HEAD
   ```
+
+  :::note
+
+  The HTTP methods registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **profile_http_header_ignore_keys** <span class='type'>String</span>
 
@@ -171,6 +219,8 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 ## Non-HTTP transaction tracing
 
+The following options are used to trace and monitor non-HTTP transactions: These options allow you to closely trace background tasks or transactions for other protocols.
+
 - **hook_service_patterns** <span class='type'>String</span>
 
   It sets the starting point pattern for tracing NON-Http transactions. Wildcard characters cannot be used. To set multiple values, use comma (,) as the delimiter.
@@ -182,6 +232,8 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
   When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
 
 ## Multiple transaction trace
+
+The following options are used to trace and monitor cross-application calls. The options can help you understand the interactions between multiple applications. Various options provided allow you to fine-tune the behaviors for tracing multiple transactions.
 
 - **mtrace_rate** <span class='type'>Int</span>
 
@@ -233,7 +285,9 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 ## Trace data sampling
 
-<code class="my">Node.js Agent v0.4.94 or later</code>
+The following options are used to control sampling of trace data and set whether to transmit data. The options allow you to manage the performance and data transfer volume for applications.
+
+Agent support scope: <code class="my">Node.js Agent v0.4.94 or later</code>
 
 :::note
 
@@ -243,7 +297,7 @@ Added the [Socket.io](http://socket.io) monitoring module in [Node.js agent vers
 
 - **trace_sampling_enabled** <span class='type'>Boolean</span>
 
-  Default `false`
+  Default `true`
 
   You can set whether or not to collect trace data samples.
 

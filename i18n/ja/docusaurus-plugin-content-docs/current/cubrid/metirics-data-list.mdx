@@ -23,7 +23,7 @@ tags:
 | ページバッファ関連     | `Num_data_page_fetches`                    | 読み込み(fetch)したページ数                                                                                                            |
 | ^             | `Num_data_page_dirties`                    | ダーティページ数                                                                                                                                        |
 | ^             | `Num_data_page_ioreads`                    | ディスクから読み込んだページ数 (この値が大きいほど効率が低下し、ヒット率の低下と関係します)                                                                              |
-| ^             | `Num_data_page_iowrites`                   | ディスクに書き込まれるページ数 (この値が大きいほど効率が低下します)                                                                                          |
+| ^             | `Num_data_page_iowrites`                   | ディスクに書き込まれるページ数(この値が大きいほど効率が低下します)                                                                                           |
 | ^             | `Num_data_page_victims`                    | データバッファからディスクへの書き込み(flush)スレッドが活性化される回数 (書き込みページまたは被害者(victim)のではありません)                |
 | ^             | `Num_data_page_iowrites_for_replacement`   | 指定ディスクに書き込まれたデータページ数                                                                                                                            |
 | ^             | `Num_adaptive_flush_pages`                 | データバッファからディスクに書き込み(flush)したデータページ数                                                                                           |
@@ -78,7 +78,7 @@ tags:
 | ^             | `Num_plan_cache_lookup`                    | 特定のキーを使用してルックアップ(lookup)を試みた回数                                                                                               |
 | ^             | `Num_plan_cache_hit`                       | クエリ文字列ハッシュテーブルでエントリーを見つけた(hit) 回数                                                                                            |
 | ^             | `Num_plan_cache_miss`                      | クエリ文字列ハッシュテーブルでエントリーを見つけなかった(miss) 回数                                                                                        |
-| ^             | `Num_plan_cache_full`                      | キャッシュエントリー数が許可された最大数を超えて被害者(victim) の検索を試みた回数                                                                                |
+| ^             | `Num_plan_cache_full`                      | キャッシュエントリー数が許可された最大数を超えてVictimキャッシュの検索を行った回数                                                                                                    |
 | ^             | `Num_plan_cache_delete`                    | キャッシュエントリーが削除された(victimized) 回数                                                                                              |
 | ^             | `Num_plan_cache_invalid_xasl_id`           | `xasl_id`ハッシュテーブルでエントリーを見つけなかった(miss) 回数。サーバーから特定のエントリーが削除(victimized)されたエントリーをクライアントでリクエストしたときに発生するエラー回数 |
 | ^             | `Num_plan_cache_query_string_hash_entries` | クエリ文字列ハッシュテーブルの現在のエントリー数                                                                                                                        |

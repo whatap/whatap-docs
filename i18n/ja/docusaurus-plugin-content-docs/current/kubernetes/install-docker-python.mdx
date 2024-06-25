@@ -32,7 +32,7 @@ PythonアプリケーションのDockerイメージをビルドする場合、wh
 RUN pip3 install --upgrade whatap-python
 ```
 
-次のDockerfileの定義例をご参照ください。 
+次のDockerfileの定義例を参照にしてください。 
 
 ```docker title='python ver 3.10'
 # python3.10をドッカー環境にインストールします。
@@ -59,13 +59,13 @@ RUN pip3 install --upgrade whatap-python
 ```bash title='entrypoint.sh'
 #!/bin/bash
 
-# コンテナの作業ディレクトリをWhaTapパスとして設定してください。そのパスにエージェントログと設定ファイルを作成します。
+# コンテナの作業ディレクトリをWhaTapパスに設定します。そのパスにエージェントログと設定ファイルを作成します。
 export WHATAP_HOME=${PWD}
 
-# 権限エラーが発生した場合は、次のコメントを削除してから進めてください。
+# 権限エラーが発生した場合は、次のコメントを削除してから進みます。
 #chmod -R 777 $WHATAP_HOME
 
-# 以下は、エージェント構成に必須な設定値です。アプリケーション配布のyamlファイルを通じて設定します。
+# 以下は、エージェントの構成に必須な設定値です。アプリケーションデプロイのyamlファイルを通じて設定します。
 whatap-setting-config \
 --host $whatap_server_host \
 --license $license \
@@ -74,8 +74,8 @@ whatap-setting-config \
 
 # 次のコメントは、エージェントのグループ化やログ収集の活性化などの追加設定です。必要な場合に使用してください。
 
-# エージェントグループ化
-#echo "okind=$okind" >> whatap.conf
+# エージェントのグループ化
+#echo "whatap.okind=$whatap.okind" >> whatap.conf
 
 # ログ収集の活性化
 #echo "logsink_enabled=true" >> whatap.conf
@@ -83,7 +83,7 @@ whatap-setting-config \
 #echo "trace_logging_enabled=true" >> whatap.conf
 
 
-# 次のようにwhatap-start-agentをアプリケーション開始コマンドの前に追加して、エージェントを実行してください。 
+# 次のようにwhatap-start-agentをアプリケーション開始コマンドの前に追加して、エージェントを実行します。 
 whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
 ```
 
@@ -123,7 +123,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::note 
 
-- *yaml*の作成例は、次の[コンテナ環境変数の設定](#k8s-env)をご参照ください。
+- *yaml*の作成例は、次の[コンテナ環境変数の設定](#k8s-env)を参照にしてください。
 
 - ライセンス(`license`)は、WhaTapのユーザー認証情報です。**外部に公開してはいけません**。
 
@@ -131,7 +131,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ### スクリプト実行の例
 
-次のDockerfile定義の例をご参照ください。_entrypoint.sh_スクリプトを実行する例です。
+次のDockerfile定義の例を参照にしてください。_entrypoint.sh_スクリプトを実行する例です。
 
 ```docker
 FROM python:3.10
@@ -148,12 +148,12 @@ CMD ["./entrypoint.sh"]
 
 ### 追加設定
 
-次の設定は、オプションとして必要な場合のみ使用してください。設定ファイル(_entrypoint.sh_)に次の追加設定の他にも、ログおよびトランザクション関連の設定が可能です。その他の追加設定に関しては、[次の文書](https://docs.whatap.io/python/set-agent)をご参照ください。 
+次の設定は、オプションとして必要な場合のみ使用してください。設定ファイル(_entrypoint.sh_)に次の追加設定の他にも、ログおよびトランザクション関連の設定が可能です。その他の追加設定に関しては、[次の文書](https://docs.whatap.io/python/set-agent)を参照にしてください。 
 
 - **エージェントグループ化** 
 
   ```bash
-  echo "okind=$okind" >> whatap.conf
+  echo "whatap.okind=$whatap.okind" >> whatap.conf
   ```
 
 - **ログ収集の活性化** 
@@ -169,26 +169,26 @@ CMD ["./entrypoint.sh"]
 Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーション配布の*yaml*ファイルに次の内容を追加してください。 
 
 ```yaml
-	  env:
-		- name: license
-			value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-		- name: whatap_server_host
-			value: XXX.XXX.XXX.XXX
-		- name: app_name
-			value: {YOUR_APP_NAME}
-		- name: app_process_name
-		  value: {YOUR_PROCESS_NAME}
-		- name: okind
-			value: {YOUR_GROUP_NAME}
-		- name: NODE_IP
-		  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-		- name: NODE_NAME
-		  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-		- name: POD_NAME
-		  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    env:
+    - name: license
+      value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+    - name: whatap_server_host
+      value: XXX.XXX.XXX.XXX
+    - name: app_name
+      value: {YOUR_APP_NAME}
+    - name: app_process_name
+      value: {YOUR_PROCESS_NAME}
+    - name: whatap.okind
+      value: {YOUR_GROUP_NAME}
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
 
-次の例を参照してください。 
+次の例を参照にしてください。 
 
 ```yaml
 apiVersion: apps/v1
@@ -205,23 +205,23 @@ spec:
       labels:
         app: python-fastapi-pod
   containers:
-	- name: agent-python-fastapi
+  - name: agent-python-fastapi
     image: whatap/agent-python-fastapi
-	  env:
-		- name: license
-			value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-		- name: whatap_server_host
-			value: XXX.XXX.XXX.XXX
-		- name: app_name
-			value: "myapp-python-fastapi"
-		- name: app_process_name
-		  value: "uvicorn"
-		- name: NODE_IP
-		  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-		- name: NODE_NAME
-		  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-		- name: POD_NAME
-		  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    env:
+    - name: license
+      value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+    - name: whatap_server_host
+      value: XXX.XXX.XXX.XXX
+    - name: app_name
+      value: "myapp-python-fastapi"
+    - name: app_process_name
+      value: "uvicorn"
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
 
 :::note
@@ -236,7 +236,7 @@ spec:
 
 - `app_process_name`：CPU、Heap Memoryなど収集する対象プロセスを設定します。例としてuwsgi、gunicornなどがあります。
 
-- `okind`(オプション)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名で設定すると、該当するPodを一つにグループ化します。
+- `whatap.okind`(オプション)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment)名で設定すると、該当するPodを一つにグループ化します。
 
 - `NODE_IP`: 現在のPodがホストされているノード(Node)のIPアドレスを収集します。
 

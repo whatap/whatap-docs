@@ -1,7 +1,7 @@
 ---
 id: metric-warning-notice
-title: メトリックアラート通知
-description: 特定の複雑なイベントを設定するには、メトリックイベント設定を使用します。
+title: メトリクスアラートの通知
+description: 特定の複雑なイベントを設定するには、メトリクスイベント設定を使用します。
 tags:
   - アラート通知
   - メトリクスイベント
@@ -170,9 +170,9 @@ Kubernetesイベントの`reason`フィールド情報が`Unhealthy`が0回以�
 
 #### **_HPAメモリの使用率通知_**
 
-現在実行中のPodの数がリソースの許容可能な最大Podの数と同じで、メモリ使用率が90%以上の場合、その通知が発生します。 
+実行中のPod数がリソースの許容可能な最大Pod数と同じで、メモリ使用率が90%以上の場合、通知が発生します。 
 
-> HPA Podが生成できる最大値に達していて、メモリ使用率が「>= 90%」です。
+> HPA Podの生成が最大値に達していて、メモリ使用率が「>=90%」です。
 
 */}
 
@@ -180,13 +180,13 @@ Kubernetesイベントの`reason`フィールド情報が`Unhealthy`が0回以�
 
 #### **_Inactive agents has been found_**
 
-活性化されたエージェントの数が指定された条件よりも少ない時に通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。 
+動作中のエージェント数が指定された条件より少ない時に通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。 
 
 > `${ip}` `${okindName}` The number of active agents has decreased to `${num_of_current_agents}`. 
 
 #### **_TPS has changed by more than 30% compared to the previous week_**
 
-アプリケーションのTPSが前週比30%以上変化した時に通知が発生します。メッセージの例は次のとおりです。
+アプリケーションのTPSが前週と比べ30%以上変化した時に通知が発生します。メッセージの例は次のとおりです。
 
 > `${okindName}` a week ago : `${prev_week_tps_display}`, current : `${current_tps_display}`,  difference : `${one_week_diff_display}`
 
@@ -234,19 +234,19 @@ APDEX点数が70未満になると通知が発生します。<Cmdname sid="messa
 
 #### **_Network Traffic I/O is too high_**
 
-ネットワークインバウンドトラフィック/アウトバウンドトラフィックが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ネットワークのインバウンドトラフィックまたはアウトバウンドトラフィックが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute, `${oname}`'s Network Traffic I/O > `${_rule_}` %
 
 #### **_Network Packet I/O is too high_**
 
-ネットワークインバウンドパケット/アウトバウンドパケットが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ネットワークのインバウンドパケットまたはアウトバウンドパケットが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute, `${oname}`'s Network Packet I/O > `${_rule_}` %
 
 #### **_Network Error I/O is too high_**
 
-ネットワークインバウンドエラー/アウトバウンドエラーが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ネットワークのインバウンドエラーまたはアウトバウンドエラーが10%を超えると通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute, The maximum value of the `${oname}`'s Network Error I/O > `${_rule_}` %
 

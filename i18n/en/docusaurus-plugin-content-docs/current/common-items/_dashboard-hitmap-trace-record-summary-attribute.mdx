@@ -1,46 +1,47 @@
-#### Transaction properties{#transaction-attribute}
+#### Transaction properties {#transaction-attribute}
 
-| Classification    | Properties                                    | Description                                                                                                                        |
-| ----------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Agent             | **Agent name** (**oname**) | Agent object name                                                                                                                  |
-| ^                 | Agent ID (oid)             | Agent object ID                                                                                                                    |
-| ^                 | Agent group name                              | Agent group name set with the `okind` option                                                                                       |
-| ^                 | Agent Group ID                                | Agent group ID                                                                                                                     |
-| ^                 | Agent server name                             | Agent server name set with the `ondoe` option                                                                                      |
-| ^                 | Agent server ID                               | Agent server ID                                                                                                                    |
-| ^                 | pcode                                         | Identification code of the project registered in the WhaTap monitoring service                                                     |
-| Transactions      | **Transaction ID**                            | Transaction ID                                                                                                                     |
-| ^                 | Start Time                                    | Transaction start time                                                                                                             |
-| ^                 | Endtime                                       | Transaction end time                                                                                                               |
-| ^                 | **Elapsed Time**                              | Transaction execution time                                                                                                         |
-| ^                 | HTTP Method                                   | HTTP methods - GET, POST, PUT, HEAD, etc.                                                                                          |
-| ^                 | HTTP Call Time                                | External HTTP call time                                                                                                            |
-| ^                 | HTTP Call Count                               | External HTTP call count                                                                                                           |
-| ^                 | Average DBC Time                              | DB connection time                                                                                                                 |
-| ^                 | SQL Time                                      | SQL Execution Time                                                                                                                 |
-| ^                 | SQL Count                                     | SQL execution count                                                                                                                |
-| ^                 | SQL Fetch Time                                | Time taken to retrieve records<br/>(may overlap or involve other logics)                                        |
-| ^                 | SQL Fetch Count                               | Number of the records retrieved from SQL                                                                                           |
-| Multi-transaction | CallerUrl                                     | Address of the parent transaction                                                                                                  |
-| ^                 | CallerPcode                                   | Project code from which the parent transaction was collected                                                                       |
-| ^                 | CallerOid                                     | Agent object ID of the parent transaction                                                                                          |
-| ^                 | CallerOName                                   | Agent name of the parent transaction                                                                                               |
-| ^                 | CallerOkind                                   | Agent group ID of the parent transaction                                                                                           |
-| ^                 | CallerOkindName                               | Agent group name of the parent transaction                                                                                         |
-| Resource          | CPU usage time                                | CPU usage used by transactions                                                                                                     |
-| ^                 | Memory Allocation                             | Memory usage used by transactions                                                                                                  |
-| Client            | Client IP                                     | Client IP address                                                                                                                  |
-| ^                 | Domain                                        | Internet address assigned to the IP address that the client connected to                                                           |
-| ^                 | WClientID                                     | Client ID                                                                                                                          |
-| ^                 | Country/Region                                | Client's country                                                                                                                   |
-| ^                 | City                                          | City in the client's country                                                                                                       |
-| ^                 | OS                                            | OS environment in which the browser runs                                                                                           |
-| ^                 | Client type                                   | Browser type used by the client                                                                                                    |
-| ^                 | Client Name                                   | Device name used by the client                                                                                                     |
-| ^                 | Status                                        | HTTP status code for the client request                                                                                            |
-| ^                 | Referer                                       | Page address or incoming path used by the browser of the client                                                                    |
-| ^                 | Original URL/Transaction                      | Combination of transaction name and original URL.<br/> Original URL appears if the URL exists. Otherwise, the transaction appears. |
-| ^                 | UserAgent                                     | Browser used to extract client-related data                                                                                        |
+| Classification    | Properties                                  | Description                                                                                                                        |
+| ----------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Agent             | <Cmdname sid="TTL06588" className="b600" /> | Agent object name                                                                                                                  |
+| ^                 | <Cmdname sid="TTL06587" />                  | Agent object ID                                                                                                                    |
+| ^                 | <Cmdname sid="TTL06356" />                  | Agent group name set with the `okind` option                                                                                       |
+| ^                 | <Cmdname sid="TTL06072" />                  | Agent group ID                                                                                                                     |
+| ^                 | <Cmdname sid="TTL06357" />                  | Agent server name set with the `ondoe` option                                                                                      |
+| ^                 | <Cmdname sid="TTL06309" />                  | Agent server ID                                                                                                                    |
+| ^                 | <Cmdname sid="TTL06077" />                  | Identification code of the project registered in the WhaTap monitoring service                                                     |
+| Transactions      | <Cmdname sid="TTL06111" className="b600" /> | Transaction ID                                                                                                                     |
+| ^                 | <Cmdname sid="TTL06110" />                  | Transaction start time                                                                                                             |
+| ^                 | <Cmdname sid="TTL06103" />                  | Transaction end time                                                                                                               |
+| ^                 | <Cmdname sid="TTL06361" className="b600" /> | Transaction execution time                                                                                                         |
+| ^                 | <Cmdname sid="TTL06106" />                  | HTTP methods - GET, POST, PUT, HEAD, etc.                                                                                          |
+| ^                 | <Cmdname sid="TTL06362" />                  | External HTTP call time                                                                                                            |
+| ^                 | <Cmdname sid="TTL06089" />                  | External HTTP call count                                                                                                           |
+| ^                 | <Cmdname sid="TTL06972" />                  | DB connection time                                                                                                                 |
+| ^                 | <Cmdname sid="TTL06364" />                  | SQL Execution Time                                                                                                                 |
+| ^                 | <Cmdname sid="TTL06097" />                  | SQL execution count                                                                                                                |
+| ^                 | <Cmdname sid="TTL06530" />                  | Time taken to retrieve records<br/>(may overlap or involve other logics)                                        |
+| ^                 | <Cmdname sid="TTL06094" />                  | Number of the records retrieved from SQL                                                                                           |
+| Multi-transaction | <Cmdname sid="TTL06107" />                  | Multi Transaction ID                                                                                                               |
+| ^                 | <Cmdname sid="TTL06905" />                  | Address of the parent transaction                                                                                                  |
+| ^                 | <Cmdname sid="TTL06906" />                  | Project code from which the parent transaction was collected                                                                       |
+| ^                 | <Cmdname sid="TTL06907" />                  | Agent object ID of the parent transaction                                                                                          |
+| ^                 | <Cmdname sid="TTL06908" />                  | Agent name of the parent transaction                                                                                               |
+| ^                 | <Cmdname sid="TTL06909" />                  | Agent group ID of the parent transaction                                                                                           |
+| ^                 | <Cmdname sid="TTL06910" />                  | Agent group name of the parent transaction                                                                                         |
+| Resource          | <Cmdname sid="TTL06418" />                  | CPU usage used by transactions                                                                                                     |
+| ^                 | <Cmdname sid="TTL06974" />                  | Memory usage used by transactions                                                                                                  |
+| Client            | <Cmdname sid="TTL06081" />                  | Client IP address                                                                                                                  |
+| ^                 | <Cmdname sid="TTL06101" />                  | Internet address assigned to the IP address that the client connected to                                                           |
+| ^                 | <Cmdname sid="TTL06420" />                  | Client ID                                                                                                                          |
+| ^                 | <Cmdname sid="TTL06080" />                  | Client's country                                                                                                                   |
+| ^                 | <Cmdname sid="TTL06078" />                  | City in the client's country                                                                                                       |
+| ^                 | <Cmdname sid="clientOs" />                  | OS environment in which the browser runs                                                                                           |
+| ^                 | <Cmdname sid="TTL06485" />                  | Browser type used by the client                                                                                                    |
+| ^                 | <Cmdname sid="clientName" />                | Device name used by the client                                                                                                     |
+| ^                 | <Cmdname sid="status" />                    | HTTP status code for the client request                                                                                            |
+| ^                 | <Cmdname sid="TTL06108" />                  | Page address or incoming path used by the browser of the client                                                                    |
+| ^                 | <Cmdname sid="TTL06971" />                  | Combination of transaction name and original URL.<br/> Original URL appears if the URL exists. Otherwise, the transaction appears. |
+| ^                 | <Cmdname sid="TTL06359" />                  | Browser used to extract client-related data                                                                                        |
 
 <Xclude product='kubernetes'>
 

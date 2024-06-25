@@ -24,7 +24,7 @@ import Createaccount from "./_create-account.mdx";
 
 4. <Cmdname sid="account_user_password" className="uitext" />セクションで<Cmdname sid="account_current_password" className="uitext" />項目を入力し、<Cmdname sid="account_new_password" className="uitext" />と<Cmdname sid="account_confirm_new_password" className="uitext" />をすべて入力してください。
 
-5. <Cmdname sid="account_edit_password" className="uitext" />ボタンがアクティブな場合は、選択してください。
+5. <Cmdname sid="account_edit_password" className="uitext" />ボタンが活性化されると選択します。
 
 ## パスワードを忘れた場合
 
@@ -53,6 +53,22 @@ import Setreceiveeventwhatsapp from "../common-items/_set-receive-event-whatsapp
 
 <Setreceiveeventwhatsapp />
 
+### モバイルデバイスの通知受信を追加する
+
+ユーザーのモバイルデバイスにWhaTapモバイルアプリをインストールすると、モバイルデバイスに対する通知設定が自動的に追加されます。
+
+<ImgLang img="account-set-mobile-notification.png" desc="モバイルデバイス" />
+
+- <Cmdname sid="test" className="uitext" />: モバイルデバイスに通知が正しく送信されるかを確認できます。モバイルデバイスのアプリを新しく復元したり、再インストールなどの理由で接続に失敗することがあります。接続に失敗したモバイルデバイスは、通知の受信対象から自動的に除外されます。
+
+- ![削除アイコン](/img/ico-trash-red.svg):登録したモバイルデバイスに対する通知を削除できます。
+
+:::note
+
+WhaTapモバイルアプリについての詳細は、[次の文書](../../mobile-app)をご参考ください。
+
+:::
+
 ### 受信レベル及び通知時間の設定
 
 <ImgLang img='account-set-notification.png' desc='アラート受信設定' />
@@ -77,7 +93,7 @@ APIトークンは、Open APIを通じて収集中のモニタリング情報を
 
 :::note
 
-Open APIの詳細については、[次の文書](../openapi-spec)を参考にしてください。
+Open APIの詳細については、[次の文書](../openapi-spec)をご参考ください。
 
 :::
 
@@ -115,9 +131,9 @@ WhaTapが提供するマーケティング情報を受信または受信拒否�
 
 - 有料で使用中のプロジェクトがある場合、未払金がない場合のみ退会が可能です。<Cmdname sid="my_usage" className="uitext" /> > <Cmdname sid="paymentHistory" className="uitext" />または<Cmdname sid="my_usage" className="uitext" /> > <Cmdname sid="billingPreview" className="uitext" />メニューから未払金を確認できます。
 
-- プロジェクトの**決済**権限を持っている場合は、**決済**権限を他のメンバーに移行するか、プロジェクトを削除する必要があります。決済情報を登録した他のメンバーに**決済**権限を移行できます。決済権限移行の詳細については[次の文書](../about-billing)をご参照ください。
+- プロジェクトの**決済**権限を持っている場合は、**決済**権限を他のメンバーに移行するか、プロジェクトを削除する必要があります。決済情報を登録した他のメンバーに**決済**権限を移行できます。決済権限移行の詳細については[次の文書](../about-billing)を参照にしてください。
 
-- プロジェクトで**メンバーの管理**権限を持つ場合は、他のメンバーに**メンバー管理**権限を追加しないと退会できません。メンバーの権限変更に関する詳細については、[次の文書](../project/project-structure#modify-auth)をご参照ください。
+- プロジェクトで**メンバーの管理**権限を持つ場合は、他のメンバーに**メンバー管理**権限を追加しないと退会できません。メンバーの権限変更に関する詳細については、[次の文書](../project/project-structure#modify-auth)を参照にしてください。
 
 - 退会したアカウントは、再利用および復旧できませんので、慎重に選択してください。
 

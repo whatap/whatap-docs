@@ -1,6 +1,6 @@
-Home > Select Project > **_Analysis_** > **_Performance Trend_**
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_perfTrend" className="uitext" />
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_Performance Trend_** under **_Project Menu_**. You can check the **_Performance Trend_** menu for several performance metrics within the specific time range to search. 
+On the initial screen of the WhaTap Monitoring service, select a project and then click <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_perfTrend" className="uitext" />. You can see numerous metrics about the performance within the specific time range to view. 
 
 <ImgLang img='performance-trend.png' desc='Performance Trend' />
 
@@ -24,9 +24,9 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 - In the chart area, you can see the <Cmdname sid="rt_user" className="uitext" />, <Cmdname sid="tps" className="uitext" />, <Cmdname sid="resp_time" className="uitext" />, <Cmdname sid="cpu" className="uitext" />, <Cmdname sid="heap_memory" className="uitext" />, <Cmdname sid="active_transaction" className="uitext" />, <Cmdname sid="transaction" className="uitext" />, <UI>Top 10</UI>, <Cmdname sid="httpc" className="uitext" /> <UI>Top 10</UI>, <Cmdname sid="sql" className="uitext" /> <UI>Top 10</UI> and such.
 
-- By selecting the ![Snapshot icon](/img/ic-camera.svg) **_snapshot_** icon, you can snapshot charts except for widget options.
+- By selecting the ![Snapshot icon](/img/ic-camera.svg) <Cmdname sid="sms_alert_snapshot" className="uitext" /> icon, you can snapshot charts except for widget options.
 
-#### Concurrent Users
+#### <Cmdname sid="rt_user" />
 
 It displays the number of real-time browser users. Users are counted based on their browser's IP. 
 
@@ -34,46 +34,46 @@ It displays the number of real-time browser users. Users are counted based on th
 
 - When using 1-hour statistics, it displays the number of unique users who invoked the requests in 1 hour.
 
-#### TPS
+#### <Cmdname sid="tps" />
 
-**_TPS_** (Transaction Per Second) means the number of transactions processed per second. 
+<Cmdname sid="tps" className="uitext" /> (Transaction Per Second) means the number of transactions processed per second.
 
-#### Response Time
+#### <Cmdname sid="resp_time" />
 
 It indicates the average response time for requests. If the average is very high, there may be many slow transactions or failures at any specified time.
 
-#### CPU
+#### <Cmdname sid="cpu" />
 
 It indicates the CPU usage of the application server. You can see the trend in usage change.
 
 <InDoc product='java,nodejs'>
 
-#### Heap Memory
+#### <Cmdname sid="heap_memory" />
 
-It indicates the **_heap memory_** usage of the monitored process. The changes in memory usage over time can be seen.
+It indicates the **heap memory** usage of the monitored process. The changes in memory usage over time can be seen.
 
 </InDoc>
 
 <InDoc product='python,dotnet,php,golang'>
 
-#### Memory
+#### <Cmdname sid="memory" />
 
-It indicates the **_memory_** usage of the monitored process.
+It indicates the **memory** usage of the monitored process.
 
 </InDoc>
 
-#### Active Transaction
+#### <Cmdname sid="active_transaction" />
 
 Active transaction indicates a transaction in progress. For more information about active transactions, see [the following](dashboard#active-trs).
 
-#### Transaction Top 10
+#### <Cmdname sid="transaction" /> Top 10
 
 We use the transaction call statistics to provide you with the top 10 list with the most frequent transaction calls.
 
-#### HTTP Call Top 10
+#### <Cmdname sid="httpc" /> Top 10
 
 We use the HTTPC statistics to provide the top 10 list with the highest numbers of HTTP call URLs.
 
-#### SQL Top 10
+#### <Cmdname sid="sql" /> Top 10
 
 It provides the top 10 list with the highest numbers of SQL calls using SQL statistics. 

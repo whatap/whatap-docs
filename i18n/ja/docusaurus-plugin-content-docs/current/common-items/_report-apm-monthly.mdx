@@ -1,0 +1,35 @@
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+## 月次レポート：アプリケーション {#A200_AppMonthlyReport}
+
+一か月間のアプリケーション性能に関する主要な指標を総合的に分析できるレポートです。
+
+:::note
+
+主要用語や指標の詳細は、[次の文書](#metricdesc)を参照してください。
+
+:::
+
+- <Cmdname sid="overview" className="b600" report />: アプリケーションの主要な性能指標を確認できます。
+
+- <Cmdname sid="application_summary" className="b600" report/>: エージェント別<Cmdname sid="ip_address" className="b600" report/>、<Cmdname sid="os_info" className="b600" report/>、<Cmdname sid="operating_rate" className="b600" report/>を確認できます。
+
+- <Cmdname sid="performance_trend_chart" className="b600" report/>: システムの主要指標を視覚的に表現した時系列チャートです。 時間の流れによって主要指標の数値を確認できます。 システムの安定性と性能を評価する上で重要な指標です。
+
+  :::note
+
+  <Csvdownload />
+
+  :::
+
+- <Cmdname sid="transaction" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: <Cmdname sid="txcount" className="b600" report/>、<Cmdname sid="error_cnt" className="b600" report/>、<Cmdname sid="res_time_avg" className="b600" report/>基準で上位10件のトランザクションを確認できます。 各トランザクションの1か月前と照会当月の実行件数、増減件を提供します。
+
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: スタックトレース上位10個に対し、1か月前と照会当月のパーセントと件数を比較したリストです。 最も呼び出されるスタック項目を識別できます。
+
+  :::note
+
+  <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> &gt; <Cmdname sid="topstack" className="uitext" />メニューでスタックの詳細を照会できます。
+
+  :::
+
+- <Cmdname sid="sql_res_time" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: SQL平均レスポンスタイムを基準に上位10個のSQL文を比較したリストです。 各SQL文に対して、1か月前と照会当月の実行件数、平均レスポンスタイム、増減時間を提供します。

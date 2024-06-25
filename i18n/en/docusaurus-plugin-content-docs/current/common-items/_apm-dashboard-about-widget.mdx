@@ -26,11 +26,41 @@ It displays the execution status and number of applications registered in the pr
 
 The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. <span class='normal'>Blue (Normal)</span> means transactions within the specified response time, <span class='slow'>Orange (Slow)</span> means slow transactions with the response time of around 8 seconds, and <span class='vslow'>Red (Very slow)</span> means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
 
-#### <Cmdname sid="AA001" />
+#### <Cmdname sid="AA001" /> {#active-trs-speed}
 
-![Active transaction speed](/img/speedmeter.png)
+<ImgLang img="speedmeter.png" desc="Active Transaction Speed Chart" />
 
-You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
+You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. 
+
+- Area on the left
+
+  This indicates the number of requested transactions and displays data in proportion to the number of transactions.
+
+- Area in the middle
+
+  The status of active transactions is color displayed by the speed along with the count at the upper right. The number in the chart is the total number of active transactions. The colors in the chart indicate as follows:
+
+  - Blue (<span class='normal'>Normal</span>): 0 to 3 seconds
+
+  - Orange (<span class='slow'>Slow</span>): 3 to 8 seconds
+
+  - Red (<span class='vslow'>Very Slow</span>): 8 seconds or more
+
+- Area on the right
+
+  This indicates the Application Performance Index (Apdex). This metric is measured for customer satisfaction of a web application and has a value between 0 and 1. The droplet flying speed is proportional to the total number of Apdex transactions, and the droplet colors mean as follows:
+
+  - Blue: <span class='normal'>Apdex </span>satisfied count 
+
+  - Orange: <span class='slow'>Apdex </span>tolerating count 
+
+  - Red: <span class='vslow'>Apdex </span>frustrated count = `Total number of APDEX transactions` - (`Apdex satisfied count` + `Apdex tolerating count`)
+
+  :::note
+
+  For more information about the Application Performance Index (Apdex), see [the following link](https://www.apdex.org).
+
+  :::
 
 #### <Cmdname sid="AA002" /> {#active-trs}
 

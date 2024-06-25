@@ -1487,49 +1487,25 @@
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.link.히트맵": {
-    "message": "히트맵",
-    "description": "The label for link 히트맵 in sidebar javaSidebar, linking to /java/trs-profile"
-  },
   "sidebar.phpSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar phpSidebar"
-  },
-  "sidebar.phpSidebar.link.히트맵": {
-    "message": "히트맵",
-    "description": "The label for link 히트맵 in sidebar phpSidebar, linking to /php/trs-profile"
   },
   "sidebar.nodejsSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar nodejsSidebar"
   },
-  "sidebar.nodejsSidebar.link.히트맵": {
-    "message": "히트맵",
-    "description": "The label for link 히트맵 in sidebar nodejsSidebar, linking to /nodejs/trs-profile"
-  },
   "sidebar.pySidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar pySidebar"
-  },
-  "sidebar.pySidebar.link.히트맵": {
-    "message": "히트맵",
-    "description": "The label for link 히트맵 in sidebar pySidebar, linking to /python/trs-profile"
   },
   "sidebar.dotNetSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.link.히트맵": {
-    "message": "히트맵",
-    "description": "The label for link 히트맵 in sidebar dotNetSidebar, linking to /dotnet/trs-profile"
-  },
   "sidebar.goSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar goSidebar"
-  },
-  "sidebar.goSidebar.link.히트맵": {
-    "message": "히트맵",
-    "description": "The label for link 히트맵 in sidebar goSidebar, linking to /golang/trs-profile"
   },
   "sidebar.npmsidebar.category.Network 성능 모니터링": {
     "message": "Network 성능 모니터링",
@@ -1614,5 +1590,53 @@
   "sidebar.kubeSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.인스턴스 성능 모니터링": {
+    "message": "인스턴스 성능 모니터링",
+    "description": "The label for category 인스턴스 성능 모니터링 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.doc.Java": {
+    "message": "Java",
+    "description": "The label for the doc item Java in sidebar kubeSidebar, linking to the doc java/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.Node.js": {
+    "message": "Node.js",
+    "description": "The label for the doc item Node.js in sidebar kubeSidebar, linking to the doc nodejs/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.Python": {
+    "message": "Python",
+    "description": "The label for the doc item Python in sidebar kubeSidebar, linking to the doc python/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.PHP": {
+    "message": "PHP",
+    "description": "The label for the doc item PHP in sidebar kubeSidebar, linking to the doc php/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.doc.Go": {
+    "message": "Go",
+    "description": "The label for the doc item Go in sidebar kubeSidebar, linking to the doc golang/instance-performance-analysis"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.9": {
+    "message": "v1.0.9",
+    "description": "The label for the doc item v1.0.9 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_9"
+  },
+  "sidebar.kubeSidebar.link.Java": {
+    "message": "Java",
+    "description": "The label for link Java in sidebar kubeSidebar, linking to ../java/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.Node.js": {
+    "message": "Node.js",
+    "description": "The label for link Node.js in sidebar kubeSidebar, linking to ../nodejs/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.Python": {
+    "message": "Python",
+    "description": "The label for link Python in sidebar kubeSidebar, linking to ../python/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.PHP": {
+    "message": "PHP",
+    "description": "The label for link PHP in sidebar kubeSidebar, linking to ../php/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.Go": {
+    "message": "Go",
+    "description": "The label for link Go in sidebar kubeSidebar, linking to ../golang/instance-performance-analysis"
   }
 }

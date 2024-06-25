@@ -102,7 +102,7 @@ env:
 
 ```
 
-次の例を参照してください。 
+次の例を参照にしてください。 
 
 ```yaml
 apiVersion: v1
@@ -112,7 +112,7 @@ metadata:
   labels: # Pod Labels
 spec:
   containers:
-	  env:
+    env:
     - name: NODE_IP
       valueFrom: {fieldRef: {fieldPath: status.hostIP}}
     - name: NODE_NAME

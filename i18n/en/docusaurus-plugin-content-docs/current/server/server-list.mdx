@@ -15,7 +15,16 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 <ImgLang img='server-list.png' desc='Server List'/>
 
-## ![](/img/number-01.png) Server Status
+## ![](/img/number-01.png) Data refreshing and server status
+
+### Data update
+
+The data on the server list page is automatically updated every 60 seconds.
+
+- ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : You can stop automatic update of the data. 
+- ![Playback icon](/img/ic-play-grn.svg)**_Playback_** : You can restart the auto update you have stopped.
+
+### Server Status
 
 It displays the current status of the collection server by status. The status is updated every 1 minute.
 
@@ -29,27 +38,19 @@ It displays the current status of the collection server by status. The status is
 
 - ![Icon](/img/ic-s-pause.svg)**Pause** : The agent temporarily paused collecting data.
 
-## ![](/img/number-02.png) Data update
+## ![](/img/number-02.png) Searching
 
-The data on the server list page is automatically updated every 60 seconds.
-
-- ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : You can stop automatic update of the data. 
-- ![Playback icon](/img/ic-play-grn.svg)**_Playback_** : You can restart the auto update you have stopped.
-- ![Refresh icon](/img/ic-refresh2.svg)**_Refresh_** : You can update the data based on the current time.
+Using the ![number-s](/img/number-02.png) **_search bar_** at the upper right corner, you can filter the list of servers that include input values from the server name (ONAME), server ID (OID), and tags.
 
 ## ![](/img/number-03.png) Server Status
 
 It displays the status of all servers to which agents are assigned. If an agent is selected in the list, the **_Server Detail_** page appears. For more information about **_Server Detail_**, see [the following](server-detail).
 
-### Search
+### Column Settings
 
-![number-s](/img/number-03.png) By using the **_search bar_** at the upper right of the area, you can filter the servers containing input values among server name (ONAME), server ID (OID), and tags.
+- ![Columns Icon](/img/ic-column.svg) **_Column settings_**
 
-### Columns
-
-- ![Columns Icon](/img/ic-column.svg) **_Select Column_**
-
-  ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Select Column_**, you can select columns to displays in the table as follows.
+  ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Column settings_**, you can select columns to displays in the table as follows.
 
   <ImgLang img='server-list-cl.png' desc='Server list column'/>
 
@@ -72,6 +73,10 @@ It displays the status of all servers to which agents are assigned. If an agent 
   The settings for **Columns Width** and **Columns Align** are stored in the browser cookies and the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the unset state.
 
   :::
+
+### Refresh
+
+If you click ![Refresh icon](/img/ic-refresh2.svg) **_Refresh_**, the data is updated based on the current time.
 
 ### Filtering
 
@@ -97,7 +102,7 @@ This function manages servers through agent commands. Click ![Server Management 
 
 ### Agent Transfer
 
-By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can transfer the agent to another project.
+By selecting ![Transfer icon](/img/ic-swap.svg)**_Transfer_**, you can transfer the agent to another project.
 
 <ImgLang img='server-list-agent-transfer.png' desc='Server list agent transfer'/>
 
@@ -118,7 +123,7 @@ By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can tra
 
 ### Comparison between servers
 
-The comparison chart between servers is provided as follows. 
+If you click ![Chart comparison icon](/img/ic-multiline-chart2.svg) **_Compare_**, the cross-server comparison chart is provided as follows. 
 
 <ImgLang img='server-list-compare.png' desc='Comparison between servers'/>
 

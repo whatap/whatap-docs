@@ -1,13 +1,13 @@
 ---
 id: multi-instance-monitoring
-title: Multiple Instance Monitoring
+title: Monitoring Multiple Instances
 description: It provides the function to display the integrated data for key metrics of multiple database instances.
 tags:
   - Redis
   - Instance
   - Dashboard
   - Database
-  - Multiple Instance Monitoring
+  - Monitoring Multiple Instances
 ---
 
 {/* 개요*/}
@@ -71,6 +71,16 @@ The types of widgets that can be placed on the dashboard are as follows.
 - **_Clusters_**
 
   You can see the status of Master and Slave instances.
+
+  :::note
+
+  To use the **_Clusters_** widget, set the following options in the DBX agent (_whatap.conf_). For more information, see [the following](agent-dbx-settings#cluster-set).
+
+  ```ini title="whatap.conf"
+  cluster_name={cluster_name}
+  ```
+
+  :::
 
 - **_Instantaneous Ops Per Sec_**
 
@@ -210,3 +220,13 @@ The data for each column in the table is as follows:
 - **_link status_**: Connection status of each instance.
 
 - **_slots_**: Slots used in the cluster. Each slot is a part of data in the cluster. This information helps you find the data distribution and load balancing status in the cluster.
+
+:::note
+
+To use the **_Cluster Info_** widget, set the following options in the DBX agent (_whatap.conf_). For more information, see [the following](agent-dbx-settings#cluster-set).
+
+```ini title="whatap.conf"
+cluster_name={cluster_name}
+```
+
+:::

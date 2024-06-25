@@ -11,8 +11,10 @@ tags:
 
 Javaアプリケーションで使用するフレームワークやオープンソースライブラリをエージェントを介して追跡する設定方法を提供します。 これはJavaエージェント設定ファイル(*whatap.conf*)ファイルに`weaving`オプションを追加して設定し、様々なフレームワークやライブラリバージョンに対応する方法を案内します。
 
-```ini title='${WHATAP_HOME}/whatap.conf'
-weaving=  
+たとえば、フレームワークやオープンソースでspring-boot-3.x、feign-client-11、okhttp3-4.4使用の際は、次のようにオプションを設定してください。
+
+```ini title='whatap.conf'
+weaving=spring-boot-3.0,feign-11,okhttp3-4.4
 ```
 
 Javaエージェントを通じて追跡しているフレームワーク、またはオープンソースに対する設定方法は以下を参照してください。
@@ -56,9 +58,3 @@ Javaエージェントを通じて追跡しているフレームワーク、ま�
 | undertow                          | undertow-2.3以降          | `weaving=undertow-2.3`          |   <Link to="../release-notes/java/java-2_2_14" target="_blank">v2.2.14</Link>   | -                                                                                                                                        |
 
 </div>
-
-フレームワークやオープンソースでspring-boot-3.x、feign-client-11、okhttp3-4.4使用の際は、次のようにオプションを設定してください。
-
-```ini title='whatap.conf'
-weaving=spring-boot-3.0,feign-11,okhttp3-4.4
-```

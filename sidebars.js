@@ -60,6 +60,7 @@ const sidebars = {
             'java/add-jvm-opt/java-under-ver',
           ]
         },
+        'java/agent-weaving',
         'java/install-check',
         'java/agent-troubleshooting',
         {
@@ -92,7 +93,6 @@ const sidebars = {
             'java/agent-transaction-error-stack',
             'java/agent-additional-option',
             'java/async-tracking',
-            'java/agent-weaving',
           ]
         },
         {
@@ -165,13 +165,10 @@ const sidebars = {
                 'java/performance-trend',
                 'java/analysis-apm',
                 'java/cube',
-                {
-                  type: 'link',
-                  label: '히트맵',
-                  href: '/java/trs-profile'
-                },
+                'java/analysis-hitmap',
                 'java/analysis-trace-mtx',
-                'java/tx-profile'
+                'java/tx-profile',
+                'java/analysis-msa'
               ]
             },
             {
@@ -272,6 +269,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'java/labs'
           ],
         }
       ]
@@ -410,13 +408,10 @@ const sidebars = {
                 'php/application-daily-stat',
                 'php/performance-trend',
                 'php/cube',
-                {
-                  type: 'link',
-                  label: '히트맵',
-                  href: '/php/trs-profile'
-                },
+                'php/analysis-hitmap',
                 'php/analysis-trace-mtx',
-                'php/tx-profile'
+                'php/tx-profile',
+                'php/analysis-msa'
               ]
             },
             {
@@ -515,6 +510,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'php/labs'
           ],
         },
       ]
@@ -637,13 +633,10 @@ const sidebars = {
                 'nodejs/application-daily-stat',
                 'nodejs/performance-trend',
                 'nodejs/cube',
-                {
-                  type: 'link',
-                  label: '히트맵',
-                  href: '/nodejs/trs-profile'
-                },
+                'nodejs/analysis-hitmap',
                 'nodejs/analysis-trace-mtx',
-                'nodejs/tx-profile'
+                'nodejs/tx-profile',
+                'nodejs/analysis-msa'
               ]
             },
             {
@@ -736,7 +729,8 @@ const sidebars = {
                 'nodejs/set-event-format',
               ],
             },
-            'nodejs/instance-performance-analysis'
+            'nodejs/instance-performance-analysis',
+            'nodejs/labs'
           ],
         }
       ]
@@ -860,13 +854,10 @@ const sidebars = {
                 'python/performance-trend',
                 'python/analysis-apm',
                 'python/cube',
-                {
-                  type: 'link',
-                  label: '히트맵',
-                  href: '/python/trs-profile'
-                },
+                'python/analysis-hitmap',
                 'python/analysis-trace-mtx',
-                'python/tx-profile'
+                'python/tx-profile',
+                'python/analysis-msa'
               ]
             },
             {
@@ -966,6 +957,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'python/labs'
           ],
         },
       ]
@@ -1080,13 +1072,10 @@ const sidebars = {
                 'dotnet/performance-trend',
                 'dotnet/analysis-apm',
                 'dotnet/cube',
-                {
-                  type: 'link',
-                  label: '히트맵',
-                  href: '/dotnet/trs-profile'
-                },
+                'dotnet/analysis-hitmap',
                 'dotnet/analysis-trace-mtx',
-                'dotnet/tx-profile'
+                'dotnet/tx-profile',
+                'dotnet/analysis-msa'
               ]
             },
             {
@@ -1179,6 +1168,7 @@ const sidebars = {
               ],
             },
             'dotnet/instance-performance-analysis',
+            'dotnet/labs'
           ],
         },
       ]
@@ -1291,13 +1281,10 @@ const sidebars = {
                 'golang/application-daily-stat',
                 'golang/performance-trend',
                 'golang/cube',
-                {
-                  type: 'link',
-                  label: '히트맵',
-                  href: '/golang/trs-profile'
-                },
+                'golang/analysis-hitmap',
                 'golang/analysis-trace-mtx',
-                'golang/tx-profile'
+                'golang/tx-profile',
+                'golang/analysis-msa'
               ]
             },
             {
@@ -1396,6 +1383,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'golang/labs'
           ],
         },
       ]
@@ -1581,6 +1569,7 @@ const sidebars = {
                 'postgresql/set-event-format',
               ],
             },
+            'postgresql/labs'
           ]
         }
       ],
@@ -1731,6 +1720,7 @@ const sidebars = {
                 'oracle/set-event-format',
               ],
             },
+            'oracle/labs'
           ]
         }
       ],
@@ -2040,7 +2030,8 @@ const sidebars = {
                 'mysql/set-event-history',
                 'mysql/set-event-format',
               ],
-            }
+            },
+            'mysql/labs'
           ]
         }
       ],
@@ -2181,6 +2172,7 @@ const sidebars = {
                 'mssql/set-event-format',
               ],
             },
+            'mssql/labs'
           ]
         }
       ],
@@ -2280,6 +2272,7 @@ const sidebars = {
                 id: 'tibero/metrics-intro'
               },
               items: [
+                'tibero/metrics-data-list',
                 'tibero/metrics-chart',
                 'tibero/metrics-detect-anormal',
               ]
@@ -2320,6 +2313,7 @@ const sidebars = {
                 'tibero/set-event-format',
               ],
             },
+            'tibero/labs'
           ]
         }
       ],
@@ -2470,6 +2464,7 @@ const sidebars = {
                 'cubrid/set-event-format',
               ],
             },
+            'cubrid/labs'
           ]
         }
       ],
@@ -2609,6 +2604,7 @@ const sidebars = {
                 'altibase/set-event-format',
               ],
             },
+            'altibase/labs'
           ]
         }
       ],
@@ -2762,6 +2758,7 @@ const sidebars = {
                 'redis/set-event-format',
               ],
             },
+            'redis/labs'
           ]
         }
       ],
@@ -2926,6 +2923,7 @@ const sidebars = {
                 'mongodb/set-event-format',
               ],
             },
+            'mongodb/labs'
           ]
         }
       ],
@@ -3009,7 +3007,8 @@ const sidebars = {
             'npm/set-receive-event',
             'npm/set-event-history',
           ],
-        }
+        },
+        'npm/labs'
       ],
     }
   ],
@@ -3026,9 +3025,11 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_5_0x',
+          id: 'release-notes/preview/preview-2_7_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_6_0x',
+        'release-notes/preview/preview-2_5_0x',
         'release-notes/preview/preview-2_4_0x',
         'release-notes/preview/preview-2_3_0x',
         'release-notes/preview/preview-2_2_0x',
@@ -3071,14 +3072,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_4_x',
+            id: 'release-notes/service/service-2_5_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_4_x',
+              id: 'release-notes/service/service-2_5_x',
               className: 'new',
             },
+            'release-notes/service/service-2_4_x',
             'release-notes/service/service-2_3_x',
             'release-notes/service/service-2_2_x',
             'release-notes/service/service-2_1_x',
@@ -3087,7 +3089,6 @@ const sidebars = {
             'release-notes/service/service-1_112_x',
             'release-notes/service/service-1_110_x',
             'release-notes/service/service-1_108_x',
-            'release-notes/service/service-1_106_x',
             'release-notes/service/service-previous',
           ]
         },
@@ -3100,9 +3101,14 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              label: 'v1.0.9',
+              id: 'release-notes/mobile/mobile-app-v1_0_9',
+              // className: 'new',
+            },
+            {
+              type: 'doc',
               label: 'v1.0.8',
               id: 'release-notes/mobile/mobile-app-v1_0_8',
-              // className: 'new',
             },
             {
               type: 'doc',
@@ -3137,26 +3143,26 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_32',
+                id: 'release-notes/java/java-2_2_35',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_32',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_35',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_34',
+                'release-notes/java/java-2_2_33',
+                'release-notes/java/java-2_2_32',
                 'release-notes/java/java-2_2_31',
                 'release-notes/java/java-2_2_30',
                 'release-notes/java/java-2_2_29',
                 'release-notes/java/java-2_2_28',
                 'release-notes/java/java-2_2_27',
                 'release-notes/java/java-2_2_26',
-                'release-notes/java/java-2_2_25',
-                'release-notes/java/java-2_2_24',
-                'release-notes/java/java-2_2_23',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3188,17 +3194,18 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_7_2',
+                id: 'release-notes/php/php-2_8_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_7_2',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_8_0',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_7_2',
                 'release-notes/php/php-2_7_1',
                 'release-notes/php/php-2_7_0',
                 'release-notes/php/php-2_6_3',
@@ -3207,7 +3214,6 @@ const sidebars = {
                 'release-notes/php/php-2_6_0',
                 'release-notes/php/php-2_5_4',
                 'release-notes/php/php-2_5_3',
-                'release-notes/php/php-2_5_2',
                 'release-notes/php/php-previous',
               ],
             },
@@ -3216,17 +3222,19 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_95',
+                id: 'release-notes/nodejs/nodejs-0_4_97',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_95',
-                  className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_97',
+                  // className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_96',
+                'release-notes/nodejs/nodejs-0_4_95',
                 'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
                 'release-notes/nodejs/nodejs-0_4_89',
@@ -3234,8 +3242,7 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_86',
                 'release-notes/nodejs/nodejs-0_4_83',
                 'release-notes/nodejs/nodejs-0_4_81',
-                'release-notes/nodejs/nodejs-0_4_80',
-                'release-notes/nodejs/nodejs-0_4_77'
+                'release-notes/nodejs/nodejs-previous'
               ]
             },
             {
@@ -3246,14 +3253,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_6_4',
+                id: 'release-notes/python/python-1_6_6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_4',
+                  id: 'release-notes/python/python-1_6_6',
                   className: 'new',
                 },
+                'release-notes/python/python-1_6_5',
+                'release-notes/python/python-1_6_4',
                 'release-notes/python/python-1_6_3',
                 'release-notes/python/python-1_6_2',
                 'release-notes/python/python-1_6_1',
@@ -3262,8 +3271,6 @@ const sidebars = {
                 'release-notes/python/python-1_5_8',
                 'release-notes/python/python-1_5_7',
                 'release-notes/python/python-1_5_6',
-                'release-notes/python/python-1_5_5',
-                'release-notes/python/python-1_5_4',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3275,23 +3282,23 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_4',
+                id: 'release-notes/dotnet/dotnet-2_2_8',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_4',
+                  id: 'release-notes/dotnet/dotnet-2_2_8',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_7',
+                'release-notes/dotnet/dotnet-2_2_6',
+                'release-notes/dotnet/dotnet-2_2_5',
+                'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-2_1_9',
-                'release-notes/dotnet/dotnet-2_1_8',
-                'release-notes/dotnet/dotnet-2_1_7',
-                'release-notes/dotnet/dotnet-2_1_6',
-                'release-notes/dotnet/dotnet-2_1_5',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3300,17 +3307,18 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/golang/golang-0_3_3',
+                id: 'release-notes/golang/golang-0_4_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_3_3',
-                  // className: 'new'
+                  id: 'release-notes/golang/golang-0_4_0',
+                  className: 'new'
                 },
+                'release-notes/golang/golang-0_3_3',
                 'release-notes/golang/golang-0_3_2',
                 'release-notes/golang/golang-0_3_1',
                 'release-notes/golang/golang-0_3_0',
@@ -3319,7 +3327,6 @@ const sidebars = {
                 'release-notes/golang/golang-0_2_2',
                 'release-notes/golang/golang-0_1_14',
                 'release-notes/golang/golang-0_1_13',
-                'release-notes/golang/golang-0_1_12',
                 'release-notes/golang/golang-previous',
               ],
             },
@@ -3328,17 +3335,21 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_5_5',
+                id: 'release-notes/server/server-2_6_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_5_5',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2_6_0',
+                  className: 'new',
                 },
+                'release-notes/server/server-2_5_9',
+                'release-notes/server/server-2_5_8',
+                'release-notes/server/server-2_5_7',
+                'release-notes/server/server-2_5_5',
                 'release-notes/server/server-2_5_4',
                 'release-notes/server/server-2_5_3',
                 'release-notes/server/server-2_5_2',
@@ -3346,9 +3357,6 @@ const sidebars = {
                 'release-notes/server/server-2_5_0',
                 'release-notes/server/server-2_4_9',
                 'release-notes/server/server-2_4_8',
-                'release-notes/server/server-2_4_7',
-                'release-notes/server/server-2_4_6',
-                'release-notes/server/server-2_4_5',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3378,23 +3386,24 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_7_0',
+                id: 'release-notes/k8s/k8s-1_7_5',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_0',
+                  id: 'release-notes/k8s/k8s-1_7_5',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_4',
+                'release-notes/k8s/k8s-1_7_3',
+                'release-notes/k8s/k8s-1_7_2',
+                'release-notes/k8s/k8s-1_7_1',
+                'release-notes/k8s/k8s-1_7_0',
                 'release-notes/k8s/k8s-1_6_1',
                 'release-notes/k8s/k8s-1_6_0',
                 'release-notes/k8s/k8s-1_5_9',
                 'release-notes/k8s/k8s-1_5_8',
                 'release-notes/k8s/k8s-1_5_7',
-                'release-notes/k8s/k8s-1_5_6',
-                'release-notes/k8s/k8s-1_5_5', 
-                'release-notes/k8s/k8s-1_5_4', 
-                'release-notes/k8s/k8s-1_5_3', 
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3406,23 +3415,23 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_7_0',
+                id: 'release-notes/db/dbx-1_7_6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_7_0',
+                  id: 'release-notes/db/dbx-1_7_6',
                   // className: 'new',
                 },
+                'release-notes/db/dbx-1_7_5',
+                'release-notes/db/dbx-1_7_4',
+                'release-notes/db/dbx-1_7_3',
+                'release-notes/db/dbx-1_7_2',
+                'release-notes/db/dbx-1_7_1',
+                'release-notes/db/dbx-1_7_0',
                 'release-notes/db/dbx-1_6_35',
                 'release-notes/db/dbx-1_6_33',
                 'release-notes/db/dbx-1_6_32',
-                'release-notes/db/dbx-1_6_31',
-                'release-notes/db/dbx-1_6_30',
-                'release-notes/db/dbx-1_6_26',
-                'release-notes/db/dbx-1_6_25',
-                'release-notes/db/dbx-1_6_24',
-                'release-notes/db/dbx-1_6_23',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -3467,14 +3476,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/browser/browser-v1_3_5',
+                id: 'release-notes/browser/browser-v1_3_6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/browser/browser-v1_3_5',
+                  id: 'release-notes/browser/browser-v1_3_6',
                   // className: 'new',
                 },
+                'release-notes/browser/browser-v1_3_5',
                 'release-notes/browser/browser-v1_3_4',
                 'release-notes/browser/browser-v1_3_3',
                 'release-notes/browser/browser-v1_3_2',
@@ -3483,7 +3493,6 @@ const sidebars = {
                 'release-notes/browser/browser-v1_2_2',
                 'release-notes/browser/browser-v1_2_1',
                 'release-notes/browser/browser-v1_2_0',
-                'release-notes/browser/browser-v1_1_4',
                 'release-notes/browser/browser-previous',
               ],
             },
@@ -3654,6 +3663,8 @@ const sidebars = {
         'about-billing',
         'software-proxy',
         'main-ui-intro-v2',
+        'reference',
+        'glossary/glossary',
         {
           type: 'link',
           label: "상세 검색",
@@ -4062,6 +4073,7 @@ const sidebars = {
                   ]
                 },
               ],
+              
             }
           ]
         },
@@ -4292,7 +4304,12 @@ const sidebars = {
           type: 'category',
           label: '자주 묻는 질문',
           // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
+          link: {
+            type: 'doc',
+            id: 'faq/index'
+          },
           items: [
+            'faq/apm-faq',
             'faq/db-faq',
             'faq/log-faq',
             'faq/agent-faq',
@@ -4565,6 +4582,7 @@ const sidebars = {
                 id: 'amazon-ecs/metrics-intro',
               },
               items: [
+                'amazon-ecs/metrics-ecs',
                 'amazon-ecs/metrics-search',
                 'amazon-ecs/metrics-cube',
                 'amazon-ecs/metrics-chart',
@@ -4586,6 +4604,7 @@ const sidebars = {
                 'amazon-ecs/set-event-history',
               ]
             },
+            'amazon-ecs/labs'
           ],
         }
       ]
@@ -4664,6 +4683,7 @@ const sidebars = {
                 'amazon-cloudwatch/set-event-history',
               ]
             },
+            'amazon-cloudwatch/labs'
           ],
         }
       ]
@@ -4742,6 +4762,7 @@ const sidebars = {
                 'azure/set-event-history',
               ]
             },
+            'azure/labs'
           ],
         }
       ]
@@ -4820,6 +4841,7 @@ const sidebars = {
                 'ncloud/set-event-history',
               ]
             },
+            'ncloud/labs'
           ],
         }
       ]
@@ -4898,6 +4920,7 @@ const sidebars = {
                 'oracle-cloud/set-event-history',
               ]
             },
+            'oracle-cloud/labs'
           ],
         }
       ]
@@ -5017,6 +5040,7 @@ const sidebars = {
             'url/url-event-history',
           ],
         },
+        'url/url-http-status',
         'url/url-error-type',
         // {
         //   type: 'category',
@@ -5153,6 +5177,7 @@ const sidebars = {
           ],
         },
         'browser/collect-data',
+        'browser/labs'
       ],
     }
   ],
@@ -5371,6 +5396,7 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
+            'server/labs'
           ],
         },
       ]  
@@ -5403,7 +5429,7 @@ const sidebars = {
             id: 'kubernetes/install',
           },
           items: [
-            'kubernetes/install-master-node-agent',
+            'kubernetes/install-master-node-agent-v2',
             {
               type: 'category',
               label: '애플리케이션 에이전트 설치',
@@ -5603,7 +5629,40 @@ const sidebars = {
                 'kubernetes/dashboard-hitmap-trace',
                 'kubernetes/application-daily-stat',
                 'kubernetes/tx-profile',
-                
+                // 'kubernetes/instance-performance-analysis',
+                {
+                  type: 'category',
+                  label: '인스턴스 성능 모니터링',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    {
+                      type: 'link',
+                      label: 'Java',
+                      href: '../java/instance-performance-analysis',
+                    },
+                    {
+                      type: 'link',
+                      label: 'Node.js',
+                      href: '../nodejs/instance-performance-analysis',
+                    },
+                    {
+                      type: 'link',
+                      label: 'Python',
+                      href: '../python/instance-performance-analysis',
+                    },
+                    {
+                      type: 'link',
+                      label: 'PHP',
+                      href: '../php/instance-performance-analysis',
+                    },
+                    {
+                      type: 'link',
+                      label: 'Go',
+                      href: '../golang/instance-performance-analysis',
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -5631,6 +5690,7 @@ const sidebars = {
                 'kubernetes/set-event-history',
               ],
             },
+            'kubernetes/labs'
           ],
         }
       ]

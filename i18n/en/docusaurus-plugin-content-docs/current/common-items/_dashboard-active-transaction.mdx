@@ -40,6 +40,16 @@ When you select an item in the transaction list, the <Cmdname sid="active_transa
 
   - <Cmdname sid="stop_thread" className="uitext" />: You can stop a transaction in progress. To stop threading, <Cmdname sid="secret_key" className="uitext" /> is required. For more information about <Cmdname sid="secret_key" className="uitext" />, see <Link to="install-agent#security">the following</Link>.
 
+  :::tip
+
+  <Cmdname sid="stop_thread" className="uitext" /> forcibly stops threads running in the application. However, this feature may not work in all cases. For example, if a thread performs an IO operation, the thread cannot be stopped immediately.
+
+  <Cmdname sid="stop_thread" className="uitext" /> attempts to terminate the thread even if it is performing an IO operation. However, the thread does not stop until it finishes its IO operation. The thread accepts the termination request, but it does not stop until its operation is completed and it goes to the next work.
+
+  In this case, forcible termination is not recommended because it may cause problems with business logic and cause unexpected operations. If you need to stop the thread, stop and restart the entire application.
+
+  :::
+
 - If a transaction has already ended, the <Cmdname sid="show_trace" className="uitext" /> button appears. When you select the button, the <Cmdname sid="TTL06527" className="uitext" /> window appears. For more information about <Cmdname sid="TTL06527" className="uitext" />, see [the following](trs-profile#transaction-info).
 
 </InDoc>
@@ -48,17 +58,17 @@ When you select an item in the transaction list, the <Cmdname sid="active_transa
 
 In ![Leader line 2](/img/number-02.png) **Agent List**, you can select or search the filtering targets and see them individually in the transaction list. 
 
-- To see the active agents, select the **_Active Only_** checkbox.
+- To see the active agents, select the <Cmdname sid="active_only" className="uitext" /> checkbox.
 
-- Click the **_All Agents_** list box. You can view the agents by category.
+- Click the <Cmdname sid="all_agents" className="uitext" /> list box. You can view the agents by category.
 
-- To see active transactions by agent, select an agent and then click **_Apply_**. To cancel the selection, select ![Reset icon](/img/ico-reset.svg).
+- To see active transactions by agent, select an agent and then click <Cmdname sid="apply" className="uitext" />. To cancel the selection, select ![Reset icon](/img/ico-reset.svg).
 
 ## Automatic refresh
 
-The active transactions can be automatically updated at the set intervals. Select **_Auto refresh(sec)_** to activate the option, and then enter the refresh interval in the field on the right.
+The active transactions can be automatically updated at the set intervals. Select <Cmdname sid="auto_refresh_sec" className="uitext" /> to activate the option, and then enter the refresh interval in the field on the right.
 
-To deactivate the auto refresh setting, select **_Auto refresh(sec)_** again.
+To deactivate the auto refresh setting, select <Cmdname sid="auto_refresh_sec" className="uitext" /> again.
 
 :::note
 

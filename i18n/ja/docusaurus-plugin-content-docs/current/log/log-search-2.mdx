@@ -1,11 +1,11 @@
 ---
 id: log-search-2
-title: ログ検索
+title: ログの検索
 description: ログモニタリングのログ検索メニューについて説明します。
 tags:
   - ログモニタリング
   - ログ
-  - ログ検索
+  - ログの検索
   - UI
 toc_max_heading_level: 3
 draft: true
@@ -50,7 +50,7 @@ import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
 
 - 下部までスクロールすると、次のデータを表示します。 一度に10,000件のログを照会します。
 
-- ![number-s](/img/number-03.png)ログテーブルの左上に表示されたログの総数を確認することができます。 
+- ![number-s](/img/number-03.png)ログテーブルの左上から照会されたログの総数を確認できます。 
 
 - ログデータを時系列順と逆の順順で表示できます。 ![number-s](/img/number-03.png)ログテーブルの右上で、**_Timestamp_** **_過去順_**と**_現在順_**で目的の検索方法を選択してください。
 
@@ -98,7 +98,7 @@ import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
 
 ### 構文解析されていないキーワードのフィルター適用
 
-ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、ログパーサー設定\*\*\*を通じてインデックスキー値を活用して検索することをお勧めします。
+ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、**_ログパーサの設定_**を通じてインデックスキー値を活用して検索することをお勧めします。
 
 ![構文解析されていないキーワードのフィルター適用](/img/log-filter-search.png)
 
@@ -144,7 +144,7 @@ import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
 
 </InDoc>
 
-### フィルター入力文法{#filter-expressions}
+### フィルター入力の文法{#filter-expressions}
 
 import Logfilterexpressionssearchkey from "../common-items/_log-filter-expressions-search-key.mdx";
 

@@ -28,6 +28,41 @@ function rowsToJson(data) {
   return rd;
 }
 
+function colsToJsonReport(data){
+  const defaultCol = 1;
+  const rd = {}; // resultData
+  console.log('2222', data.length);
+  if (!data || data.length < 1) return undefined;
+  const header = data[0];
+  console.log(header[0]);
+  if (header[0] != 'key') return undefined;
+  const colCount = header.length;
+  
+  for (let i=1;i<data.length;i++) {
+    const row = data[i];
+    const headerName = row[0].trim();
+    if (!rd[headerName]) rd[headerName] = {};
+    for (let j=1;j<colCount;j++) {
+      if (['key', 'en', 'ko', 'ja'].includes(data[0][j])) {
+        let lang = data[0][j];
+        const value = row[j];
+        if (!value || value.length < 1) {
+          rd[headerName][row[j]] = row[defaultCol];
+        } else {
+          rd[headerName][lang] = value.replace(/\u2028/gm, '');
+        }
+      }
+    }
+  }
+
+  rd['A111_AppWeeklyOkindAvgRespTime'] = {
+    "ko": "주간 애플리케이션 종류별 평균응답시간 보고서",
+    "en": "Application Kinds Weekly Avg Resp Time Statistics Report",
+    "ja": "Application Kinds Weekly Avg Resp Time Statistics Report"
+  }
+  return rd;
+}
+
 function colsToJson(data){
   const defaultCol = 1;
   const rd = {}; // resultData
@@ -370,6 +405,42 @@ function colsToJson(data){
     "ko": "애플리케이션 대시보드"
   }
 
+  rd["server_installAgent_add_whatapRepo"] = {
+    "en": "Add the WhaTap Repository",
+    "ja": "WhaTapリポジトリの追加",
+    "ko": "와탭 리포지토리 추가"
+  }
+
+  rd["server_installAgent_installPackages"] = {
+    "en": "Install the WhaTap Server Monitor Package",
+    "ja": "サーバーモニタリングパッケージのインストール",
+    "ko": "와탭 서버 모니터링 패키지 설치"
+  }
+
+  rd["server_installAgent_startMonitoring"] = {
+    "en": "Run the Configure Script and Start the Server Monitor Daemon.",
+    "ja": "設定スクリプトを実行しサーバーモニターデモンを開始してください。",
+    "ko": "서버 모니터링 시작하기"
+  }
+
+  rd["server_installAgent_aix_runSetup"] = {
+    "en": "Run the setup file",
+    "ja": "インストールファイルの実行",
+    "ko": "설치 파일 실행"
+  }
+
+  rd["server_installAgent_win_download"] = {
+    "en": "Download the WhaTap Installer for Windows",
+    "ja": "インストールファイルのダウンロード'",
+    "ko": "설치 파일 다운로드"
+  }
+
+  rd["server_installAgent_win_runSetup"] = {
+    "en": "Run the WhaTap Installer",
+    "ja": "インストールファイルの実行",
+    "ko": "설치 파일 실행"
+  }
+
   rd["daily_app_stat"].en = "Daily APP. Status";
   rd["daily_app_stat"].ja = "日別APP現況"
 
@@ -460,5 +531,6 @@ module.exports = {
   jsonToKeyValue: jsonToKeyValue,
   rowsToJson: rowsToJson,
   colsToJson: colsToJson,
+  colsToJsonReport: colsToJsonReport,
   jsonToArray: jsonToArray,
 };

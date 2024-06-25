@@ -837,7 +837,7 @@
     "ja": "深刻度",
     "ko": "위험도",
     "zh": "危险性",
-    "service_id": "_00135"
+    "service_id": "危险性"
   },
   "sms_alert_server_name": {
     "en": "Server name",
@@ -2052,7 +2052,7 @@
   },
   "m5": {
     "en": "5 min",
-    "ja": "5分",
+    "ja": "5分間",
     "ko": "5분",
     "zh": "5分",
     "service_id": "_00313"
@@ -2066,28 +2066,28 @@
   },
   "1_day": {
     "en": "1 day",
-    "ja": "1日",
+    "ja": "1日間",
     "ko": "1일",
     "zh": "1天",
     "service_id": "ITM00315"
   },
   "3_day": {
     "en": "3 days",
-    "ja": "3日",
+    "ja": "3日間",
     "ko": "3일",
     "zh": "3天",
     "service_id": "_00316"
   },
   "7_day": {
     "en": "7 days",
-    "ja": "7日",
+    "ja": "7日間",
     "ko": "7일",
     "zh": "7天",
     "service_id": "_00317"
   },
   "10_day": {
     "en": "10 days",
-    "ja": "10日",
+    "ja": "10日間",
     "ko": "10일",
     "zh": "10天",
     "service_id": "_00318"
@@ -2150,14 +2150,14 @@
   },
   "10_minute": {
     "en": "10 minutes",
-    "ja": "10分",
+    "ja": "10分間",
     "ko": "10분",
     "zh": "10分钟",
     "service_id": "ITM00328"
   },
   "10min": {
     "en": "10 mins",
-    "ja": "10分",
+    "ja": "10分間",
     "ko": "10분",
     "zh": "10分钟",
     "service_id": "_00329"
@@ -2171,21 +2171,21 @@
   },
   "12h": {
     "en": "12 h",
-    "ja": "12h",
+    "ja": "12時間",
     "ko": "12시간",
     "zh": "12h",
     "service_id": "_00331"
   },
   "20_minute": {
     "en": "20 minutes",
-    "ja": "20分",
+    "ja": "20分間",
     "ko": "20분",
     "zh": "20分钟",
     "service_id": "_00332"
   },
   "24h": {
     "en": "24 h",
-    "ja": "24h",
+    "ja": "24時間",
     "ko": "24시간",
     "zh": "24h",
     "service_id": "_00333"
@@ -2206,49 +2206,49 @@
   },
   "30_minute": {
     "en": "30 minutes",
-    "ja": "30分",
+    "ja": "30分間",
     "ko": "30분",
     "zh": "30分钟",
     "service_id": "ITM00336"
   },
   "30d": {
     "en": "30 days",
-    "ja": "30d",
+    "ja": "30日間",
     "ko": "30일",
     "zh": "30d",
     "service_id": "_00337"
   },
   "30m": {
     "en": "30 mins",
-    "ja": "30m",
+    "ja": "30分間",
     "ko": "30분",
     "zh": "30m",
     "service_id": "_00338"
   },
   "30min": {
     "en": "30 mins",
-    "ja": "30分",
+    "ja": "30分間",
     "ko": "30분",
     "zh": "30分钟",
     "service_id": "_00339"
   },
   "select_30m_live": {
     "en": "last 30 minutes (Live)",
-    "ja": "最近30分(リアルタイム)",
+    "ja": "最近30分間(リアルタイム)",
     "ko": "최근 30분 (실시간)",
     "zh": "last 30 minutes (Live)",
     "service_id": "_00340"
   },
   "select_10_minutes": {
     "en": "last 10 minutes",
-    "ja": "最近10分",
+    "ja": "最近10分間",
     "ko": "최근 10분",
     "zh": "last 10 minutes",
     "service_id": "_00341"
   },
   "select_30_minutes": {
     "en": "last 30 minutes",
-    "ja": "最近30分",
+    "ja": "最近30分間",
     "ko": "최근 30분",
     "zh": "last 30 minutes",
     "service_id": "_00342"
@@ -2283,21 +2283,21 @@
   },
   "select_1_day": {
     "en": "last 1 day",
-    "ja": "最近1日",
+    "ja": "最近1日間",
     "ko": "최근 1일",
     "zh": "last 1 day",
     "service_id": "_00347"
   },
   "3d": {
     "en": "3 days",
-    "ja": "3d",
+    "ja": "3日間",
     "ko": "3일",
     "zh": "3d",
     "service_id": "_00348"
   },
   "5_minute": {
     "en": "5 minutes",
-    "ja": "5分",
+    "ja": "5分間",
     "ko": "5분",
     "zh": "5分钟",
     "service_id": "_00349"
@@ -2311,7 +2311,7 @@
   },
   "5m_count": {
     "en": "5m count",
-    "ja": "5分数",
+    "ja": "5分件数",
     "ko": "5분 건수",
     "zh": "5分钟数",
     "service_id": "_00351"
@@ -2339,14 +2339,14 @@
   },
   "6h": {
     "en": "6 h",
-    "ja": "6h",
+    "ja": "6時間",
     "ko": "6시간",
     "zh": "6h",
     "service_id": "_00355"
   },
   "7d": {
     "en": "7 d",
-    "ja": "7d",
+    "ja": "7日間",
     "ko": "7일",
     "zh": "7d",
     "service_id": "_00356"
@@ -11855,7 +11855,7 @@
     "ja": "対象",
     "ko": "대상",
     "zh": "Target",
-    "service_id": "TTL01760"
+    "service_id": "Target"
   },
   "feedback_type": {
     "en": "Feedback type",
@@ -13367,10 +13367,10 @@
     "service_id": "_01977"
   },
   "email_is_used_by_notification_check_spam_filter": {
-    "en": "Email is used for sign-up approval, password reset and alert notifications. If you don't receive it, please check the spam filter.",
-    "ja": "Eメールは、ユーザー登録の承認、パスワード初期化、アラート通知に使われます。Eメールが受信できなかった場合には迷惑メールを確認してください。",
-    "ko": "이메일은 회원가입 승인, 패스워드 초기화, 경고 알림에 사용됩니다. 수신되지 않을 경우, 스팸 메일을 확인하여 주시기 바랍니다.",
-    "zh": "Email is used by sign-up approval, password reset and email notification. If you couldn't receive the email, please check the spam filter.",
+    "en": "Email is used for signup confirmation, password reset, and warning notifications - check your spam if you don't receive them.",
+    "ja": "eメールはアカウント生成の承認、パスワード初期化、アラート通知時に利用されます。メールが受信されなかった場合は迷惑メールの方を確認してください。",
+    "ko": "이메일은 회원가입 승인, 패스워드 초기화, 경고 알림에 사용되며, 수신되지 않을 경우 스팸 메일을 확인해 주세요.",
+    "zh": "Email is used for signup confirmation, password reset, and warning notifications - check your spam if you don't receive them.",
     "service_id": "DSC01978"
   },
   "check_spam_filter": {
@@ -13381,10 +13381,10 @@
     "service_id": "DSC01979"
   },
   "phone_is_used_by_notification": {
-    "en": "Phone number is used for SMS notification.",
-    "ja": "電話番号はSMSアラートに使われます。",
+    "en": "Phone number is used for warning notifications.",
+    "ja": "携帯電話はアラート通知の際に利用されます。",
     "ko": "전화번호는 경고 알림 문자에 사용됩니다.",
-    "zh": "Phone number is used by SMS notification.",
+    "zh": "Phone number is used for warning notifications.",
     "service_id": "DSC01980"
   },
   "sms_authentication_is_required": {
@@ -14355,7 +14355,7 @@
   },
   "memory_total": {
     "en": "Memory total",
-    "ja": "トータルメモリ",
+    "ja": "合計メモリ",
     "ko": "Memory Total",
     "zh": "Memory Total",
     "service_id": "TTL02118"
@@ -14453,7 +14453,7 @@
   },
   "mem_total": {
     "en": "Memory total",
-    "ja": "トータルメモリ",
+    "ja": "合計メモリ",
     "ko": "Memory Total",
     "zh": "Memory Total",
     "service_id": "ITM02132"
@@ -21528,7 +21528,7 @@
   "data_retention": {
     "en": "Data retention",
     "ja": "データ保存期間",
-    "ko": "데이터 유지 기간",
+    "ko": "데이터 보존 기간",
     "zh": "Data Retention",
     "service_id": "TTL03142"
   },
@@ -32013,14 +32013,14 @@
   },
   "test_event_rules": {
     "en": "Test event rules",
-    "ja": "アラート通知テスト",
+    "ja": "アラート条件テスト",
     "ko": "이벤트 규칙 테스트",
     "zh": "Test Event Rules",
     "service_id": "_04652"
   },
   "event_rules": {
     "en": "Event rules",
-    "ja": "イベントルール",
+    "ja": "アラート条件",
     "ko": "이벤트 규칙",
     "zh": "Event Rules",
     "service_id": "_04653"
@@ -33616,7 +33616,7 @@
   },
   "related_project": {
     "en": "Related project",
-    "ja": "関連プロジェクト",
+    "ja": "連携プロジェクト",
     "ko": "관련 프로젝트",
     "zh": "Related Project",
     "service_id": "_04882"
@@ -35912,7 +35912,7 @@
   },
   "master_project_event_settings_help": {
     "en": "Share event settings with related projects. (If you change settings, it applies to related projects equally.)",
-    "ja": "関連プロジェクトとイベント設定を共有します。(設定を変更すると関連プロジェクトにも同様に適用されます。)",
+    "ja": "連携プロジェクトとイベント設定を共有します。(設定を変更すると連携プロジェクトにも同様に適用されます。)",
     "ko": "관련 프로젝트와 이벤트 설정을 공유합니다. (설정 변경시 관련 프로젝트에도 동일하게 적용됩니다.)",
     "zh": "Share event settings with related projects. (If you change settings, the same applies to related projects.)",
     "service_id": "_05210"
@@ -40092,7 +40092,7 @@
   "data_retention_period_with_disk_usage": {
     "en": "Data retention period(disk usage)",
     "ja": "データ保存期間(ディスク使用量)",
-    "ko": "데이터 보관일(디스크 사용량)",
+    "ko": "데이터 보존 기간 (디스크 사용량)",
     "zh": "Data Retention Period(Disk Usage)",
     "service_id": "ITM05808"
   },
@@ -40197,7 +40197,7 @@
   "data_retention_per_category": {
     "en": "Data retention per category",
     "ja": "カテゴリ別のデータ保存期間",
-    "ko": "카테고리별 데이터 유지 기간\n",
+    "ko": "카테고리별 데이터 보존 기간\n",
     "zh": "Data Retention Per Category",
     "service_id": "TTL05823"
   },
@@ -48441,10 +48441,10 @@
     "service_id": "DSC07032"
   },
   "CNT07033": {
-    "en": "You have viewed <span style=\"color: #296CF2;\">{y} of the total {x} results, and the results retrieved are <span style=\"color: #296CF2;\">{z}.",
+    "en": "You have viewed <span style=\"color: #296CF2;\">{y}</span> of the total {x} results, and the results retrieved are <span style=\"color: #296CF2;\">{z}.</span>",
     "ja": "全体の{x}件の内、<span style=\"color: #296CF2;\">{y}件を</span>照会し、検索された結果は<span style=\"color: #296CF2;\">{z}件</span>です。",
     "ko": "전체 {x}건 중 <span style=\"color: #296CF2;\">{y}건</span> 조회했으며 검색된 결과는 <span style=\"color: #296CF2;\">{z}건</span>입니다.",
-    "zh": "Out of all {x} cases, <span style=\"color: #296CF2;\">{y}</span> has been searched for <span style=\"color: #296CF2;\">{z} cases</span>.",
+    "zh": "You have viewed <span style=\"color: #296CF2;\">{y}</span> of the total {x} results, and the results retrieved are <span style=\"color: #296CF2;\">{z}.</span>",
     "service_id": "CNT07033"
   },
   "DSC07034": {
@@ -54020,10 +54020,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54496,17 +54496,17 @@
     "service_id": "DSC07906"
   },
   "DSC07907": {
-    "en": "- Click the ‘Add API Key’ button.",
-    "ja": "- 「Add API Key」ボタンをクリックします。",
+    "en": "- Click the ‘Add API Key’ button. ",
+    "ja": "- 「Add API Key」ボタンをクリックします。 ",
     "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
-    "zh": "- Click the ‘Add API Key’ button.",
+    "zh": "- Click the ‘Add API Key’ button. ",
     "service_id": "DSC07907"
   },
   "DSC07908": {
-    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "en": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2. ",
     "ja": "- ラジオボタンの「Paste Public Key」を選択し、前の手順で受信したRSA Public Keyを入力します。",
     "ko": "- 라디오 버튼의 'Paste Public Key'를 선택하여 2단계에서 받은 RSA Public Key를 입력합니다. ",
-    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2.",
+    "zh": "- Select 'Paste Public Key' from the radio button and enter the RSA Public Key received in step 2. ",
     "service_id": "DSC07908"
   },
   "DSC07909": {
@@ -54657,10 +54657,10 @@
     "service_id": "TLT07929"
   },
   "DSC07930": {
-    "en": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
+    "en": "It takes about a minute for the added/edited/copied URL to be reflected in the list.",
     "ja": "追加/修正/コピーしたURLがリストに反映されるまで1分程の時間がかかります。",
-    "ko": "추가/수정/복사한 URL이 목록에 반영되는데, 약 1분의 시간이 소요됩니다.",
-    "zh": "The added/edited/copied URLs are reflected in the list, which takes about a minute.",
+    "ko": "추가/수정/복사한 URL이 목록에 반영되기까지 약 1분의 시간이 소요됩니다.",
+    "zh": "It takes about a minute for the added/edited/copied URL to be reflected in the list.",
     "service_id": "DSC07930"
   },
   "TTL07931": {
@@ -54945,14 +54945,14 @@
   },
   "DSC07971": {
     "en": "If you installed the WhaTap Kubernetes agent using the traditional yaml file method, a clean install is required. You can delete the existing Kubernetes agent and install via Helm chart.",
-    "ja": "既存のyamlファイルでWhaTap Kubernetesエージェントをインストールした場合は、Clean Installが必要です。既存のKubernetesエージェントを削除した後、helmチャートを通じてインストールできます。",
-    "ko": "기존 yaml 파일 방식으로 와탭 쿠버네티스 에이전트를 설치한 경우 Clean Install이 필요합니다. 기존 쿠버네티스 에이전트 삭제 후 helm 차트를 통한 설치가 가능합니다.",
+    "ja": "既存のyamlファイルでWhaTap Kubernetesエージェントをインストールした場合は、Clean Installが必要です。既存のKubernetesエージェントを削除した後、Helmチャートを通じてインストールできます。",
+    "ko": "기존 yaml 파일 방식으로 와탭 쿠버네티스 에이전트를 설치한 경우 Clean Install이 필요합니다. 기존 쿠버네티스 에이전트 삭제 후 Helm 차트를 통한 설치가 가능합니다.",
     "zh": "If you installed the WhaTap Kubernetes agent using the traditional yaml file method, a clean install is required. You can delete the existing Kubernetes agent and install via Helm chart.",
     "service_id": "DSC07971"
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55343,10 +55343,10 @@
     "service_id": "ITM08027"
   },
   "BTN08028": {
-    "en": "Choose your operating system",
-    "ja": "オペレーティングシステムの選択",
+    "en": "Choose Operating System",
+    "ja": "OS選択",
     "ko": "운영체제 선택",
-    "zh": "Choose your operating system",
+    "zh": "Choose Operating System",
     "service_id": "BTN08028"
   },
   "TTL08029": {
@@ -55355,6 +55355,874 @@
     "ko": "기본 정보",
     "zh": "Basic Information",
     "service_id": "TTL08029"
+  },
+  "DSC08030": {
+    "en": "Execute the following command to add the WhaTap Helm repository.",
+    "ja": "次のコマンドを実行して、WhaTap Helmリポジトリを追加してください。",
+    "ko": "다음 명령어를 실행해 와탭 Helm 리포지토리를 추가하세요.",
+    "zh": "Execute the following command to add the WhaTap Helm repository.",
+    "service_id": "DSC08030"
+  },
+  "BTN08031": {
+    "en": "Re-register",
+    "ja": "再登録",
+    "ko": "재등록",
+    "zh": "Re-register",
+    "service_id": "BTN08031"
+  },
+  "BTN08032": {
+    "en": "Payment information not registered",
+    "ja": "お支払い情報未登録",
+    "ko": "결제 정보 미등록",
+    "zh": "Payment information not registered",
+    "service_id": "BTN08032"
+  },
+  "kube_pod": {
+    "en": "Pod",
+    "ja": "Pod",
+    "ko": "Pod",
+    "zh": "Pod",
+    "service_id": "TTL08033"
+  },
+  "DSC08034": {
+    "en": "The Pod's QoS Class is {qosClass}. If the Pod's schedule needs to be guaranteed, set the container resource request and limit to the same.",
+    "ja": "PodのQoSクラスは{qosClass}です。Podのスケジュールを保証する必要がある場合は、コンテナリソースのリクエストと制限を、適切に設定してください。",
+    "ko": "Pod의 QoS Class가 {qosClass}입니다. Pod의 스케줄이 보장되어야한다면 컨테이너 리소스 요청 및 제한을 동일하게 설정해주세요.",
+    "zh": "The Pod's QoS Class is {qosClass}. If the Pod's schedule needs to be guaranteed, set the container resource request and limit to the same.",
+    "service_id": "DSC08034"
+  },
+  "CNT08035": {
+    "en": " There is a preset '{presetName}'.",
+    "ja": " 「{presetName}」プリセットがあります。",
+    "ko": " '{presetName}' 프리셋이 있습니다.",
+    "zh": " There is a preset '{presetName}'.",
+    "service_id": "CNT08035"
+  },
+  "CNT08036": {
+    "en": "Do you want to make a change?",
+    "ja": "変更しますか？",
+    "ko": "변경하시겠습니까?",
+    "zh": "Do you want to make a change?",
+    "service_id": "CNT08036"
+  },
+  "NTC08037": {
+    "en": "The preset has been deleted.",
+    "ja": "プリセットを削除しました。",
+    "ko": "프리셋이 삭제되었습니다.",
+    "zh": "The preset has been deleted.",
+    "service_id": "NTC08037"
+  },
+  "NTC08038": {
+    "en": "Preset has been saved.",
+    "ja": "プリセットを保存しました。",
+    "ko": "프리셋 저장이 완료되었습니다.",
+    "zh": "Preset has been saved.",
+    "service_id": "NTC08038"
+  },
+  "NTC08039": {
+    "en": "Preset changes have been saved.",
+    "ja": "プリセット変更履歴を保存しました。",
+    "ko": "프리셋 변경 내역이 저장되었습니다.",
+    "zh": "Preset changes have been saved.",
+    "service_id": "NTC08039"
+  },
+  "TTL08040": {
+    "en": "This is a verification email for setting up payment permissions.",
+    "ja": "お支払い権限設定のための認証メールです。",
+    "ko": "결제 권한 설정 인증 메일입니다.",
+    "zh": "This is a verification email for setting up payment permissions.",
+    "service_id": "TTL08040"
+  },
+  "CNT08041": {
+    "en": "Hi! This is WhaTap Labs.\n‘{Payment permission requester}’ has requested to change payment permissions.\nCheck the payment permission change details below and click the ‘Approve’ button.\nPlease complete payment authorization settings verification.",
+    "ja": "こんにちは。\n「{支払い権限の要求者}」が支払い権限の変更をしました。\n下のお支払い権限の変更履歴を確認してから「承認する」ボタンをクリックし、お支払い権限設定認証を完了してください。",
+    "ko": "안녕하세요. 와탭랩스입니다.\n‘{결제 권한 요청자}’님이 결제 권한 변경을 요청했습니다.\n아래 결제 권한 변경 내역을 확인하시고 ‘승인하기' 버튼을 클릭하여\n결제 권한 설정 인증을 완료해주세요.",
+    "zh": "Hi! This is WhaTap Labs.\n‘{Payment permission requester}’ has requested to change payment permissions.\nCheck the payment permission change details below and click the ‘Approve’ button.\nPlease complete payment authorization settings verification.",
+    "service_id": "CNT08041"
+  },
+  "TTL08042": {
+    "en": "Payment permission settings have been completed.",
+    "ja": "お支払い権限の設定を完了しました。",
+    "ko": "결제 권한 설정 완료 되었습니다.",
+    "zh": "Payment permission settings have been completed.",
+    "service_id": "TTL08042"
+  },
+  "CNT08043": {
+    "en": "Hi! This is WhaTap Labs.\nPayment permission settings have been completed as shown below.\nChanged permissions can be viewed in the member list within the service.",
+    "ja": "こんにちは。\n次の通り、お支払い権限の設定完了しました。\n変更された権限はサービス内のメンバーリストから確認できます。",
+    "ko": "안녕하세요. 와탭랩스입니다.\n아래와 같이 결제 권한 설정이 완료되었습니다.\n변경된 권한은 서비스내 멤버 목록에서 확인하실 수 있습니다.",
+    "zh": "Hi! This is WhaTap Labs.\nPayment permission settings have been completed as shown below.\nChanged permissions can be viewed in the member list within the service.",
+    "service_id": "CNT08043"
+  },
+  "CNT08044": {
+    "en": "A subgroup/project has payment permissions set on it.",
+    "ja": "サブグループ/プロジェクトに支払い権限が設定された履歴があります。",
+    "ko": "하위 그룹/프로젝트에 결제 권한이 설정된 내역이 있습니다.",
+    "zh": "A subgroup/project has payment permissions set on it.",
+    "service_id": "CNT08044"
+  },
+  "TTL08045": {
+    "en": "Payment permissions change",
+    "ja": "お支払い権限の変更",
+    "ko": "결제 권한 변경",
+    "zh": "Payment permissions change",
+    "service_id": "TTL08045"
+  },
+  "CNT08046": {
+    "en": "Do you want to turn off payment permissions for subgroups/projects and apply the changing payment permission inheritance?\nPlease select the projects you want to apply permission inheritance to and click the “Apply” button.",
+    "ja": "サブグループ/プロジェクトに支払い権限を解除し、変更される支払い権限を継承​​しますか？\n権限権限を継承​​するプロジェクトを選択し、[適用]ボタンをクリックします。",
+    "ko": "하위 그룹/프로젝트에 결제 권한을 해제하고 변경되는 결제 권한 상속을 적용 하시겠습니까?\n권한 권한 상속을 적용할 프로젝트를 선택한 후 “적용” 버튼을 클릭하세요.",
+    "zh": "Do you want to turn off payment permissions for subgroups/projects and apply the changing payment permission inheritance?\nPlease select the projects you want to apply permission inheritance to and click the “Apply” button.",
+    "service_id": "CNT08046"
+  },
+  "ITM08047": {
+    "en": "Payment authorization account",
+    "ja": "お支払い権限アカウント",
+    "ko": "결제 권한 계정",
+    "zh": "Payment authorization account",
+    "service_id": "ITM08047"
+  },
+  "CNT08048": {
+    "en": "Changing payment permissions requires authorization.",
+    "ja": "お支払い権限を変更するには承認が必要です。",
+    "ko": "결제 권한을 변경하려면 승인이 필요합니다.",
+    "zh": "Changing payment permissions requires authorization.",
+    "service_id": "CNT08048"
+  },
+  "CNT08049": {
+    "en": "An authorization email will be sent to the account below.\nYour payment authorization settings will take effect once you approve the email.",
+    "ja": "下記のアカウント承認メールを送信します。\neメールから承認を行うと、お支払い権限の設定が適用されます。",
+    "ko": "아래의 계정으로 승인 이메일을 발송됩니다.\n이메일 승인 완료 시 결제 권한 설정이 적용됩니다.",
+    "zh": "An authorization email will be sent to the account below.\nYour payment authorization settings will take effect once you approve the email.",
+    "service_id": "CNT08049"
+  },
+  "DSC08050": {
+    "en": "You can only register Korean mobile phone numbers.",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
+    "zh": "You can only register Korean mobile phone numbers.",
+    "service_id": "DSC08050"
+  },
+  "CNT08051": {
+    "en": "Autosort",
+    "ja": "自動整列",
+    "ko": "자동 정렬",
+    "zh": "Autosort",
+    "service_id": "CNT08051"
+  },
+  "CNT08052": {
+    "en": "Number of widgets to be placed on a line",
+    "ja": "1行に配置するウィジェットの数",
+    "ko": "한 줄에 배치될 위젯 수",
+    "zh": "Number of widgets to be placed on a line",
+    "service_id": "CNT08052"
+  },
+  "CNT08053": {
+    "en": "Show widget legend",
+    "ja": "ウィジェットの凡例の表示",
+    "ko": "위젯 범례 표시",
+    "zh": "Show widget legend",
+    "service_id": "CNT08053"
+  },
+  "CNT08054": {
+    "en": "Show all targets in tooltip",
+    "ja": "ツールチップにターゲットをすべて表示",
+    "ko": "툴팁에 대상 모두 표시",
+    "zh": "Show all targets in tooltip",
+    "service_id": "CNT08054"
+  },
+  "CNT08055": {
+    "en": "Apply chart zoom in batch",
+    "ja": "チャートズームイン一括適用",
+    "ko": "차트 줌인 일괄 적용",
+    "zh": "Apply chart zoom in batch",
+    "service_id": "CNT08055"
+  },
+  "CNT08056": {
+    "en": "Apply widget height in batch",
+    "ja": "ウィジェットの高さを一括適用",
+    "ko": "위젯 높이 일괄 적용",
+    "zh": "Apply widget height in batch",
+    "service_id": "CNT08056"
+  },
+  "DSC08057": {
+    "en": "Please select {br} the target on the left first.",
+    "ja": "左の対象をまず{br}選択してください。",
+    "ko": "왼쪽의 대상을 먼저 {br} 선택해 주세요.",
+    "zh": "Please select {br} the target on the left first.",
+    "service_id": "DSC08057"
+  },
+  "DSC08058": {
+    "en": "Enter transaction hash",
+    "ja": "トランザクションハッシュを入力してください",
+    "ko": "트랜잭션 해시를 입력하세요",
+    "zh": "Enter transaction hash",
+    "service_id": "DSC08058"
+  },
+  "ITM08059": {
+    "en": "Permission to create",
+    "ja": "作成権限",
+    "ko": "생성 권한",
+    "zh": "Permission to create",
+    "service_id": "ITM08059"
+  },
+  "TLT08060": {
+    "en": "View deployment details",
+    "ja": "Deploymentの詳細",
+    "ko": "Deployment 상세 보기",
+    "zh": "View deployment details",
+    "service_id": "TLT08060"
+  },
+  "TTL08061": {
+    "en": "project permissions",
+    "ja": "プロジェクト権限",
+    "ko": "프로젝트 권한",
+    "zh": "project permissions",
+    "service_id": "TTL08061"
+  },
+  "TTL08062": {
+    "en": "Equipment list",
+    "ja": "デバイス一覧",
+    "ko": "\b장비 목록",
+    "zh": "Equipment list",
+    "service_id": "TTL08062"
+  },
+  "BTN08063": {
+    "en": "Get list",
+    "ja": "リストのインポート",
+    "ko": "목록 가져오기",
+    "zh": "Get list",
+    "service_id": "BTN08063"
+  },
+  "BTN08064": {
+    "en": "Export list",
+    "ja": "リストのエクスポート",
+    "ko": "목록 내보내기",
+    "zh": "Export list",
+    "service_id": "BTN08064"
+  },
+  "BTN08065": {
+    "en": "addition",
+    "ja": "追加",
+    "ko": "추가",
+    "zh": "addition",
+    "service_id": "BTN08065"
+  },
+  "TLT08066": {
+    "en": "edit",
+    "ja": "編集",
+    "ko": "편집",
+    "zh": "edit",
+    "service_id": "TLT08066"
+  },
+  "DSC08067": {
+    "en": "Please enter the device name.",
+    "ja": "デバイス名を入力してください。",
+    "ko": "장비 이름을 입력하세요.",
+    "zh": "Please enter the device name.",
+    "service_id": "DSC08067"
+  },
+  "CNT08068": {
+    "en": "Are you sure you want to delete that item?",
+    "ja": "該当の項目を削除してもよろしいですか？",
+    "ko": "해당 항목을 삭제하시겠습니까?",
+    "zh": "Are you sure you want to delete that item?",
+    "service_id": "CNT08068"
+  },
+  "TLT08069": {
+    "en": "cancellation",
+    "ja": "キャンセル",
+    "ko": "취소",
+    "zh": "cancellation",
+    "service_id": "TLT08069"
+  },
+  "TTL08070": {
+    "en": "Delete ADDR",
+    "ja": "ADDRの削除",
+    "ko": "\bADDR 삭제",
+    "zh": "Delete ADDR",
+    "service_id": "TTL08070"
+  },
+  "NTC08071": {
+    "en": "Agency service is not installed.",
+    "ja": "Agency serviceがインストールされていません。",
+    "ko": "\b에이전시 서비스가 설치되지 않았습니다.",
+    "zh": "Agency service is not installed.",
+    "service_id": "NTC08071"
+  },
+  "NTC08072": {
+    "en": "This IP already exists.",
+    "ja": "すでに存在するIPアドレスです。",
+    "ko": "이미 존재하는 IP입니다.",
+    "zh": "This IP already exists.",
+    "service_id": "NTC08072"
+  },
+  "NTC08073": {
+    "en": "This item does not exist.",
+    "ja": "存在しない項目です。",
+    "ko": "\b존재하지 않는 항목입니다.",
+    "zh": "This item does not exist.",
+    "service_id": "NTC08073"
+  },
+  "NTC08074": {
+    "en": "An error has occurred.",
+    "ja": "エラーが発生しました。",
+    "ko": "\b오류가 발생하였습니다.",
+    "zh": "An error has occurred.",
+    "service_id": "NTC08074"
+  },
+  "NTC08075": {
+    "en": "Creation was successful.",
+    "ja": "作成に成功しました。",
+    "ko": "생성에 성공하였습니다.",
+    "zh": "Creation was successful.",
+    "service_id": "NTC08075"
+  },
+  "NTC08076": {
+    "en": "The modification was successful.",
+    "ja": "修正に成功しました。",
+    "ko": "수정에 성공하였습니다.",
+    "zh": "The modification was successful.",
+    "service_id": "NTC08076"
+  },
+  "NTC08077": {
+    "en": "Item has been deleted.",
+    "ja": "アイテムが削除されました。",
+    "ko": "항목이 삭제되었습니다.",
+    "zh": "Item has been deleted.",
+    "service_id": "NTC08077"
+  },
+  "DSC08078": {
+    "en": "There are no products found.",
+    "ja": "検索された商品ありません。",
+    "ko": "검색된 상품이 없습니다.",
+    "zh": "There are no products found.",
+    "service_id": "DSC08078"
+  },
+  "DSC08079": {
+    "en": "Please enter the product name in English or another search term.",
+    "ja": "商品名をで入力するか、別の検索語を入力してください。",
+    "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
+    "zh": "Please enter the product name in English or another search term.",
+    "service_id": "DSC08079"
+  },
+  "DSC08080": {
+    "en": "Please select a version.",
+    "ja": "バージョンを選択してください。",
+    "ko": "버전을 선택하세요.",
+    "zh": "Please select a version.",
+    "service_id": "DSC08080"
+  },
+  "NTC08081": {
+    "en": "The hash value could not be found and could not be added.",
+    "ja": "ハッシュ値が見つからないため追加できません。",
+    "ko": "해시값을 찾을 수 없어 추가할 수 없습니다.",
+    "zh": "The hash value could not be found and could not be added.",
+    "service_id": "NTC08081"
+  },
+  "DSC08082": {
+    "en": "The request has expired or is an invalid request.",
+    "ja": "有効期限が切れているか無効なリクエストです。",
+    "ko": "요청이 만료되었거나 유효하지 않은 요청입니다.",
+    "zh": "The request has expired or is an invalid request.",
+    "service_id": "DSC08082"
+  },
+  "BTN08083": {
+    "en": "View all products",
+    "ja": "すべての製品",
+    "ko": "전체 상품 보기",
+    "zh": "View all products",
+    "service_id": "BTN08083"
+  },
+  "LNK08084": {
+    "en": "Server Inventory",
+    "ja": "サーバー構成",
+    "ko": "서버 구성",
+    "zh": "Server Inventory",
+    "service_id": "LNK08084"
+  },
+  "TTL08085": {
+    "en": "class details",
+    "ja": "クラス詳細",
+    "ko": "클래스 상세",
+    "zh": "class details",
+    "service_id": "TTL08085"
+  },
+  "TTL08086": {
+    "en": "server name",
+    "ja": "サーバー名",
+    "ko": "서버 이름",
+    "zh": "server name",
+    "service_id": "TTL08086"
+  },
+  "TTL08087": {
+    "en": "OS type",
+    "ja": "OSタイプ",
+    "ko": "OS 타입",
+    "zh": "OS type",
+    "service_id": "TTL08087"
+  },
+  "TTL08088": {
+    "en": "OS version",
+    "ja": "OSバージョン",
+    "ko": "OS 버전",
+    "zh": "OS version",
+    "service_id": "TTL08088"
+  },
+  "DSC08089": {
+    "en": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
+    "ja": "こんにちは。<br />WhaTap Application Monitoringの旧型ダッシュボードはサービス終了予定です。",
+    "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
+    "zh": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
+    "service_id": "DSC08089"
+  },
+  "DSC08090": {
+    "en": "End date: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "ja": "終了対象：アプリケーションダッシュボード（Old）<br />終了日：2024年7月24日(水)",
+    "ko": "종료 대상 : 애플리케이션 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
+    "zh": "End date: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "service_id": "DSC08090"
+  },
+  "TTL08091": {
+    "en": "Application Dashboard (Old) termination notice",
+    "ja": "アプリケーションダッシュボード（Old）終了のご案内",
+    "ko": "애플리케이션 대시보드 (Old) 종료 안내",
+    "zh": "Application Dashboard (Old) termination notice",
+    "service_id": "TTL08091"
+  },
+  "DSC08092": {
+    "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションダッシュボード</a>メニューから改善された機能が利用できます。<br />より良いサービスを提供するために最善を尽くします。",
+    "ko": "<a href=\"{url}\" target=\"_blank\">대시보드 > 애플리케이션 대시보드</a> 메뉴에서 개선된 기능을 이용할 수 있습니다.<br />더 좋은 서비스 제공을 위해 최선을 다하겠습니다.",
+    "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "service_id": "DSC08092"
+  },
+  "DSC08093": {
+    "en": "thank you",
+    "ja": "ありがとうございます。",
+    "ko": "감사합니다.",
+    "zh": "thank you",
+    "service_id": "DSC08093"
+  },
+  "DSC08094": {
+    "en": "Enter the filter and press Enter to add it.",
+    "ja": "フィルタを入力してからEnterをクリックして追加します。",
+    "ko": "필터를 입력 후 엔터를 눌러 추가하세요.",
+    "zh": "Enter the filter and press Enter to add it.",
+    "service_id": "DSC08094"
+  },
+  "DSC08095": {
+    "en": "Sort",
+    "ja": "ソート",
+    "ko": "정렬 선택",
+    "zh": "Sort",
+    "service_id": "DSC08095"
+  },
+  "DSC08096": {
+    "en": "2nd Sort",
+    "ja": "2次ソート",
+    "ko": "2차 정렬 선택",
+    "zh": "2nd Sort",
+    "service_id": "DSC08096"
+  },
+  "DSC08097": {
+    "en": "3rd Sort",
+    "ja": "3次ソート",
+    "ko": "3차 정렬 선택",
+    "zh": "3rd Sort",
+    "service_id": "DSC08097"
+  },
+  "TTL08098": {
+    "en": "Server type",
+    "ja": "サーバータイプ",
+    "ko": "서버 타입",
+    "zh": "Server type",
+    "service_id": "TTL08098"
+  },
+  "TTL08099": {
+    "en": "Model",
+    "ja": "モデル",
+    "ko": "모델",
+    "zh": "Model",
+    "service_id": "TTL08099"
+  },
+  "TTL08100": {
+    "en": "Serial",
+    "ja": "シリアル",
+    "ko": "시리얼",
+    "zh": "Serial",
+    "service_id": "TTL08100"
+  },
+  "TTL08101": {
+    "en": "Firmware",
+    "ja": "ファームウェア",
+    "ko": "펌웨어",
+    "zh": "Firmware",
+    "service_id": "TTL08101"
+  },
+  "TTL08102": {
+    "en": "Similar pattern indicator",
+    "ja": "類似パターン指標",
+    "ko": "유사 패턴 지표",
+    "zh": "Similar pattern indicator",
+    "service_id": "TTL08102"
+  },
+  "TTL08103": {
+    "en": "Session Replay",
+    "ja": "セッションリプレイ",
+    "ko": "세션 리플레이",
+    "zh": "Session Replay",
+    "service_id": "TTL08103"
+  },
+  "DSC08104": {
+    "en": "View up to 6 hours of data based on the start time of the dragged time range.",
+    "ja": "ドラッグした時間範囲の開始時刻に基づいて、最大6時間のデータを照会します。",
+    "ko": "드래그한 시간 범위의 시작 시각을 기준으로 최대 6시간의 데이터를 조회합니다.",
+    "zh": "View up to 6 hours of data based on the start time of the dragged time range.",
+    "service_id": "DSC08104"
+  },
+  "TTL08105": {
+    "en": "Application information",
+    "ja": "アプリケーション情報",
+    "ko": "애플리케이션 정보",
+    "zh": "Application information",
+    "service_id": "TTL08105"
+  },
+  "BTN08106": {
+    "en": "Show as default",
+    "ja": "デフォルトで表示",
+    "ko": "기본으로 표시",
+    "zh": "Show as default",
+    "service_id": "BTN08106"
+  },
+  "NTC08107": {
+    "en": "The default preset has been changed.",
+    "ja": "デフォルトプリセットが変更されました。",
+    "ko": "디폴트 프리셋이 변경되었습니다.",
+    "zh": "The default preset has been changed.",
+    "service_id": "NTC08107"
+  },
+  "NTC08108": {
+    "en": "Change failed.",
+    "ja": "変更に失敗しました。",
+    "ko": "변경에 실패했습니다.",
+    "zh": "Change failed.",
+    "service_id": "NTC08108"
+  },
+  "NTC08109": {
+    "en": "Failed to load preset information.",
+    "ja": "プリセット情報の読み込みに失敗しました。",
+    "ko": "프리셋 정보를 불러오는데 실패했습니다.",
+    "zh": "Failed to load preset information.",
+    "service_id": "NTC08109"
+  },
+  "NTC08110": {
+    "en": "Go to default preset.",
+    "ja": "デフォルトプリセットへ移動します。",
+    "ko": "기본 프리셋으로 이동합니다.",
+    "zh": "Go to default preset.",
+    "service_id": "NTC08110"
+  },
+  "DSC08111": {
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
+    "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "service_id": "DSC08111"
+  },
+  "TTL08112": {
+    "en": "Guide to securing a heap dump",
+    "ja": "ヒープダンプ取得の案内",
+    "ko": "힙 덤프 확보 안내",
+    "zh": "Guide to securing a heap dump",
+    "service_id": "TTL08112"
+  },
+  "DSC08113": {
+    "en": "Indicator provided",
+    "ja": "指標の提供",
+    "ko": "지표 제공",
+    "zh": "Indicator provided",
+    "service_id": "DSC08113"
+  },
+  "DSC08114": {
+    "en": "Individual target list",
+    "ja": "個々の宛先リスト",
+    "ko": "개별 대상 목록",
+    "zh": "Individual target list",
+    "service_id": "DSC08114"
+  },
+  "CNT08115": {
+    "en": "Y-axis maximum value",
+    "ja": "Y軸最大値",
+    "ko": "Y축 최대값",
+    "zh": "Y-axis maximum value",
+    "service_id": "CNT08115"
+  },
+  "CNT08116": {
+    "en": "Use automatic Y-axis",
+    "ja": "自動Y軸を使用",
+    "ko": "자동 Y축 사용",
+    "zh": "Use automatic Y-axis",
+    "service_id": "CNT08116"
+  },
+  "CNT08117": {
+    "en": "Show maximum value",
+    "ja": "最大値表示",
+    "ko": "최대값 표시",
+    "zh": "Show maximum value",
+    "service_id": "CNT08117"
+  },
+  "CNT08118": {
+    "en": "Indicator Search",
+    "ja": "指標検索",
+    "ko": "지표 검색",
+    "zh": "Indicator Search",
+    "service_id": "CNT08118"
+  },
+  "CNT08119": {
+    "en": "Target Search",
+    "ja": "ターゲット検索",
+    "ko": "대상 검색",
+    "zh": "Target Search",
+    "service_id": "CNT08119"
+  },
+  "TTL08120": {
+    "en": "{menu} Service termination notice",
+    "ja": "{menu}サービス終了ガイド",
+    "ko": "{menu} 서비스 종료 안내",
+    "zh": "{menu} Service termination notice",
+    "service_id": "TTL08120"
+  },
+  "CNT08121": {
+    "en": "{menu} will end the service on <b>{date}</b>.",
+    "ja": "{menu}は<b>{date}でサービス終了</b>します。",
+    "ko": "{menu}는 <b>{date}자로 서비스 종료</b>합니다.",
+    "zh": "{menu} will end the service on <b>{date}</b>.",
+    "service_id": "CNT08121"
+  },
+  "CNT08122": {
+    "en": "We recommend using {menu2}, which has improved the functionality and convenience of {menu}.",
+    "ja": "{menu}の機能と利便性を向上させた{menu2}の利用をお勧めします。",
+    "ko": "{menu}의 기능 및 편의성을 개선한 {menu2} 이용을 권장합니다.",
+    "zh": "We recommend using {menu2}, which has improved the functionality and convenience of {menu}.",
+    "service_id": "CNT08122"
+  },
+  "CNT08123": {
+    "en": "{menu} can be accessed through the path below.",
+    "ja": "{menu}は以下のルートでご利用いただけます。",
+    "ko": "{menu}는 아래의 경로로 이용하실 수 있습니다.",
+    "zh": "{menu} can be accessed through the path below.",
+    "service_id": "CNT08123"
+  },
+  "MNU08124": {
+    "en": "Main",
+    "ja": "メイン",
+    "ko": "메인",
+    "zh": "Main",
+    "service_id": "MNU08124"
+  },
+  "MNU08125": {
+    "en": "Integrated Flex Board",
+    "ja": "統合Flexボード",
+    "ko": "통합 Flex 보드",
+    "zh": "Integrated Flex Board",
+    "service_id": "MNU08125"
+  },
+  "TTL08126": {
+    "en": "increase",
+    "ja": "増加量",
+    "ko": "증가량",
+    "zh": "increase",
+    "service_id": "TTL08126"
+  },
+  "CNT08127": {
+    "en": "Set inquiry date",
+    "ja": "照会日の設定",
+    "ko": "조회 날짜 설정",
+    "zh": "Set inquiry date",
+    "service_id": "CNT08127"
+  },
+  "CNT08128": {
+    "en": "Please select a date and time.",
+    "ja": "日付と時刻を選択してください。",
+    "ko": "날짜와 시간을 선택해 주세요.",
+    "zh": "Please select a date and time.",
+    "service_id": "CNT08128"
+  },
+  "CNT08129": {
+    "en": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
+    "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
+    "zh": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "service_id": "CNT08129"
+  },
+  "CNT08130": {
+    "en": "Select indicator",
+    "ja": "指標の選択",
+    "ko": "지표 선택",
+    "zh": "Select indicator",
+    "service_id": "CNT08130"
+  },
+  "CNT08131": {
+    "en": "The available metrics change depending on the target you select. Click on an indicator to add it to the right pane.",
+    "ja": "選択したターゲットに応じて利用可能な指標が変わります。指標をクリックして右側の領域に追加します。",
+    "ko": "선택한 대상에 따라 사용할 수 있는 지표가 변경됩니다. 지표를 클릭하여 오른쪽 영역에 추가합니다.",
+    "zh": "The available metrics change depending on the target you select. Click on an indicator to add it to the right pane.",
+    "service_id": "CNT08131"
+  },
+  "CNT08132": {
+    "en": "The default interval time is different for each indicator, and the interval time changes depending on the inquiry time range.",
+    "ja": "インジケータごとにデフォルトに設定されたインターバル時間が異なり、ルックアップ時間の範囲によってインターバル時間が変更されます。",
+    "ko": "지표 마다 기본으로 설정된 인터벌 시간이 다르며, 조회 시간 범위에 따라 인터벌 시간이 변경됩니다.",
+    "zh": "The default interval time is different for each indicator, and the interval time changes depending on the inquiry time range.",
+    "service_id": "CNT08132"
+  },
+  "CNT08133": {
+    "en": "If the layer where you select the indicator is closed, you can open the layer by clicking the indicator button.",
+    "ja": "インジケーターを選択するレイヤーが閉じている場合は、インジケーターボタンをクリックしてレイヤーを開くことができます。",
+    "ko": "지표를 선택하는 레이어가 닫혀있다면 지표 버튼을 클릭하여 레이어를 열 수 있습니다.",
+    "zh": "If the layer where you select the indicator is closed, you can open the layer by clicking the indicator button.",
+    "service_id": "CNT08133"
+  },
+  "CNT08134": {
+    "en": "Dashboard Options Area",
+    "ja": "ダッシュボードオプションエリア",
+    "ko": "대시보드 옵션 영역",
+    "zh": "Dashboard Options Area",
+    "service_id": "CNT08134"
+  },
+  "CNT08135": {
+    "en": "Automatically aligns the positions of widgets.",
+    "ja": "ウィジェットの位置を自動的にソートします。",
+    "ko": "위젯들의 위치를 자동으로 정렬합니다.",
+    "zh": "Automatically aligns the positions of widgets.",
+    "service_id": "CNT08135"
+  },
+  "CNT08136": {
+    "en": "Download the added widgets as a CSV file.",
+    "ja": "追加されたウィジェットをCSVファイルとしてダウンロードします。",
+    "ko": "추가된 위젯을 CSV 파일로 다운로드합니다.",
+    "zh": "Download the added widgets as a CSV file.",
+    "service_id": "CNT08136"
+  },
+  "CNT08137": {
+    "en": "Compare widgets in one chart.",
+    "ja": "ウィジェットを1つのチャートで比較します。",
+    "ko": "위젯들을 하나의 차트에서 비교합니다.",
+    "zh": "Compare widgets in one chart.",
+    "service_id": "CNT08137"
+  },
+  "CNT08138": {
+    "en": "Delete all widgets.",
+    "ja": "ウィジェットをすべて削除します。",
+    "ko": "위젯을 모두 삭제합니다.",
+    "zh": "Delete all widgets.",
+    "service_id": "CNT08138"
+  },
+  "CNT08139": {
+    "en": "Set widget options.",
+    "ja": "ウィジェットオプションを設定します。",
+    "ko": "위젯 옵션을 설정합니다.",
+    "zh": "Set widget options.",
+    "service_id": "CNT08139"
+  },
+  "CNT08140": {
+    "en": "Set the number of widgets placed in one line.",
+    "ja": "1行に配置されるウィジェットの数を設定します。",
+    "ko": "한 줄에 배치되는 위젯의 개수를 설정합니다.",
+    "zh": "Set the number of widgets placed in one line.",
+    "service_id": "CNT08140"
+  },
+  "CNT08141": {
+    "en": "Displays a legend at the bottom of the chart.",
+    "ja": "グラフの下部に凡例を公開します。",
+    "ko": "차트 하단에 범례를 노출합니다.",
+    "zh": "Displays a legend at the bottom of the chart.",
+    "service_id": "CNT08141"
+  },
+  "CNT08142": {
+    "en": "Displays both the target and value when the mouse hovers over the chart.",
+    "ja": "チャートマウスホバー時にターゲットと値の両方を表示します。",
+    "ko": "차트 마우스 호버 시 대상과 값을 모두 표시합니다.",
+    "zh": "Displays both the target and value when the mouse hovers over the chart.",
+    "service_id": "CNT08142"
+  },
+  "CNT08143": {
+    "en": "When you drag a chart, the charts of all widgets zoom in.",
+    "ja": "チャートをドラッグすると、すべてのウィジェットのチャートがズームインされます。",
+    "ko": "차트 드래그 시 모든 위젯들의 차트가 줌인됩니다.",
+    "zh": "When you drag a chart, the charts of all widgets zoom in.",
+    "service_id": "CNT08143"
+  },
+  "CNT08144": {
+    "en": "Set the height of the widgets to be the same.",
+    "ja": "ウィジェットの高さを等しく設定します。",
+    "ko": "위젯들의 높이를 동일하게 설정합니다.",
+    "zh": "Set the height of the widgets to be the same.",
+    "service_id": "CNT08144"
+  },
+  "CNT08145": {
+    "en": "Save added widgets and settings to presets.",
+    "ja": "追加したウィジェットと設定をプリセットに保存します。",
+    "ko": "추가한 위젯과 설정을 프리셋에 저장합니다.",
+    "zh": "Save added widgets and settings to presets.",
+    "service_id": "CNT08145"
+  },
+  "CNT08146": {
+    "en": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
+    "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
+    "zh": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "service_id": "CNT08146"
+  },
+  "DSC08147": {
+    "en": "Search for values ​​starting with search value.",
+    "ja": "検索値で始まる値を検索します。",
+    "ko": "검색 값으로 시작하는 값을 검색합니다.",
+    "zh": "Search for values ​​starting with search value.",
+    "service_id": "DSC08147"
+  },
+  "DSC08148": {
+    "en": "Searches for values ​​ending with search value.",
+    "ja": "検索値で終わる値を検索します。",
+    "ko": "검색 값으로 끝나는 값을 검색합니다.",
+    "zh": "Searches for values ​​ending with search value.",
+    "service_id": "DSC08148"
+  },
+  "DSC08149": {
+    "en": "Search for values ​​containing the search value.",
+    "ja": "検索値を含む値を検索します。",
+    "ko": "검색 값이 포함된 값을 검색합니다.",
+    "zh": "Search for values ​​containing the search value.",
+    "service_id": "DSC08149"
+  },
+  "DSC08150": {
+    "en": "Search for values ​​containing the search value.",
+    "ja": "検索値を含む値を検索します。",
+    "ko": "검색 값이 포함된 값을 검색합니다.",
+    "zh": "Search for values ​​containing the search value.",
+    "service_id": "DSC08150"
+  },
+  "DSC08151": {
+    "en": "Search for values ​​that match a regular expression.",
+    "ja": "正規表現に一致する値を検索します。",
+    "ko": "정규표현식에 매칭되는 값을 검색합니다.",
+    "zh": "Search for values ​​that match a regular expression.",
+    "service_id": "DSC08151"
+  },
+  "DSC08152": {
+    "en": "Search for all values ​​corresponding to the search key.",
+    "ja": "検索キーに対応するすべての値を検索します。",
+    "ko": "검색 키에 해당하는 모든 값을 검색합니다.",
+    "zh": "Search for all values ​​corresponding to the search key.",
+    "service_id": "DSC08152"
+  },
+  "BTN08153": {
+    "en": "Download configuration file",
+    "ja": "設定ファイルのダウンロード",
+    "ko": "설정 파일 다운로드",
+    "zh": "Download configuration file",
+    "service_id": "BTN08153"
   },
   "": {
     "en": "#VALUE!",
@@ -55623,6 +56491,36 @@
     "en": "Application Dashboard",
     "ja": "アプリケーション",
     "ko": "애플리케이션 대시보드"
+  },
+  "server_installAgent_add_whatapRepo": {
+    "en": "Add the WhaTap Repository",
+    "ja": "WhaTapリポジトリの追加",
+    "ko": "와탭 리포지토리 추가"
+  },
+  "server_installAgent_installPackages": {
+    "en": "Install the WhaTap Server Monitor Package",
+    "ja": "サーバーモニタリングパッケージのインストール",
+    "ko": "와탭 서버 모니터링 패키지 설치"
+  },
+  "server_installAgent_startMonitoring": {
+    "en": "Run the Configure Script and Start the Server Monitor Daemon.",
+    "ja": "設定スクリプトを実行しサーバーモニターデモンを開始してください。",
+    "ko": "서버 모니터링 시작하기"
+  },
+  "server_installAgent_aix_runSetup": {
+    "en": "Run the setup file",
+    "ja": "インストールファイルの実行",
+    "ko": "설치 파일 실행"
+  },
+  "server_installAgent_win_download": {
+    "en": "Download the WhaTap Installer for Windows",
+    "ja": "インストールファイルのダウンロード'",
+    "ko": "설치 파일 다운로드"
+  },
+  "server_installAgent_win_runSetup": {
+    "en": "Run the WhaTap Installer",
+    "ja": "インストールファイルの実行",
+    "ko": "설치 파일 실행"
   },
   "side_common": {
     "en": "Common",
@@ -56602,11 +57500,6 @@
     "ja": "ネームスペース状況",
     "ko": "네임스페이스 현황"
   },
-  "side_serviceDashboardOld": {
-    "en": "APP. Service Dashboard",
-    "ja": "APPサービス",
-    "ko": "애플리케이션 서비스 대시보드"
-  },
   "side_serviceDashboard": {
     "en": "APP. Service Dashboard",
     "ja": "APPサービス",
@@ -56658,9 +57551,9 @@
     "ko": "클러스터"
   },
   "side_pendingPod": {
-    "en": "Pending Pods",
-    "ja": "Pending Pods",
-    "ko": "Pending Pods"
+    "en": "Pending Pod Status",
+    "ja": "Pending Pod状況",
+    "ko": "Pending Pod 현황"
   },
   "side_appl": {
     "en": "APP.",
@@ -57189,7 +58082,7 @@
   },
   "side_correlatedProjectManagement": {
     "en": "Correlated Project Management",
-    "ja": "相関プロジェクト管理",
+    "ja": "連携プロジェクト管理",
     "ko": "연계 프로젝트 관리"
   },
   "side_kubeApiserverDashboard": {

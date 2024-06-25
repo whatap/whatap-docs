@@ -1,7 +1,7 @@
 ---
 id: agent-transaction
 title: Transactions
-description: It provides the settings for the PHP transactions.
+description: The following explains how to set an agent to trace and analyze performance data for each transaction within PHP applications. It evaluates the application performance by tracing transaction requests, response time, and resource usage.
 tags:
   - PHP
   - Transactions
@@ -15,25 +15,57 @@ For more information about transaction, see [the following](track-transactions-i
 
 :::
 
-## Transaction tracing{#php-trs-trc}
+## Transaction tracing {#php-trs-trc}
+
+The following agent options allow you to trace the execution paths of each transaction within applications in detail. You can adjust various aspects, from the minimum response time to the number of execution steps for transactions.
 
 import Phptrsprofile from "../common-items/_php-trs-profile.mdx";
 
 <Phptrsprofile />
 
-## HTTP transaction tracing{#php-track-http-trs}
+import Phptracktrs from "../common-items/_php-track-trs.mdx";
+
+<Phptracktrs />
+
+## Exceptional handling {#exception}
+
+The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
+
+- **whatap.biz_exceptions** <span class='type'>String</span>
+
+  Default `Empty`
+
+  Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+
+  :::tip
+
+  Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
+- **whatap.ignore_exceptions** <span class='type'>String</span>
+
+  The errors of the registered exceptions are ignored.
+
+  In case of exception, if the custom exception class is not defined, data is collected as exception by default. To exclude specific exceptions, define the custom exception class and then set the name of exception.
+
+  :::tip
+
+  Ignore error class/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
+## HTTP transaction tracing {#php-track-http-trs}
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
 
 import Phptrackhttptrs from "../common-items/_php-track-http-trs.mdx";
 
 <Phptrackhttptrs />
 
-## Transaction tracing
-
-import Phptracktrs from "../common-items/_php-track-trs.mdx";
-
-<Phptracktrs />
-
 ## Multiple transaction trace
+
+The following options are used to trace and monitor cross-application calls. The options can help you understand the interactions between multiple applications. Various options provided allow you to fine-tune the behaviors for tracing multiple transactions.
 
 import Phpmultitrace from "../common-items/_php-multi-trace.mdx";
 

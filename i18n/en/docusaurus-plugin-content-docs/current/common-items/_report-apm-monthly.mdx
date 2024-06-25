@@ -1,0 +1,35 @@
+import Csvdownload from "../common-items/_csv-download.mdx";
+
+## Application Monthly Report {#A200_AppMonthlyReport}
+
+This report provides a comprehensive analysis of key metrics for the application performance during the period of one month.
+
+:::note
+
+For more information about key terms and metrics, see [the following](#metricdesc).
+
+:::
+
+- <Cmdname sid="overview" className="b600" report />: You can see the key performance metrics of the application.
+
+- <Cmdname sid="application_summary" className="b600" report/>: You can check the <Cmdname sid="ip_address" className="b600" report/>, <Cmdname sid="os_info" className="b600" report/>, and <Cmdname sid="operating_rate" className="b600" report/> for each agent.
+
+- <Cmdname sid="performance_trend_chart" className="b600" report/>: This time series chart visually displays key metrics of the system. You can check the numbers of key metrics over time. It is an important metric in evaluating the system stability and performance.
+
+  :::note
+
+  <Csvdownload />
+
+  :::
+
+- Based on the <Cmdname sid="transaction" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: <Cmdname sid="txcount" className="b600" report/>, <Cmdname sid="error_cnt" className="b600" report/>, and <Cmdname sid="res_time_avg" className="b600" report/>, the top 10 transactions can be seen. It provides the number of executions and increases and decreases for each transaction from one month ago and for the current month.
+
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: This is a list comparing the percentage and number of views for the top 10 stack traces from a month ago and for the current month. You can identify the most frequently called stack.
+
+  :::note
+
+  In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> &gt; <Cmdname sid="topstack" className="uitext" />, you can view the stack information details.
+
+  :::
+
+- <Cmdname sid="sql_res_time" className="b600" report/> **TOP 10** <Cmdname sid="comparison" className="b600" report/>: A list comparing the top 10 SQL statements based on the SQL average response time. For each SQL statement, it provides the number of executions, average response time, and increase/decrease times for one month ago and the current month.

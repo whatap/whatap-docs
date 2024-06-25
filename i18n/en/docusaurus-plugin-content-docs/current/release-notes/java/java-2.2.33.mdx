@@ -1,0 +1,27 @@
+---
+id: java-2_2_33
+title: Java Agent v2.2.33
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_32
+displayed_sidebar: releaseSidebar
+---
+
+May 28, 2024
+
+- <Status>Feature</Status> Added the method to pass `continerId` from the Kubernetes agent to a Java agent.
+
+  :::note
+
+  Using [Kubernetes agent 1.5.7](../k8s/k8s-1_5_7) or later improves the integration between Kubernetes and applications compared to the previous version.
+
+  :::
+
+- <Status>Changed</Status> Modified to enable integrated tracing even when users who are using Spring-boot-2.5.x to 2.6.x implement the `NettyRoutingFilter` class for use.
+
+  - Class NettyRoutingFilter <code>org.springframework.cloud.gateway.filter.NettyRoutingFilter</code>
+
+- <Status>Fixed</Status> Changed the `$okind` and `$onode` values ​​to `okindName` and `onodeName` in the metrics in the `db_pool_detail` category.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.33" />
