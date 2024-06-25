@@ -45,7 +45,7 @@ Assign additional roles depending on the features and operation environment.
 
   ```sql title="SQL"
   create user whatap with password 'DB Password'; 
-  grant pg_read_all_stats to whatap;
+  grant pg_monitor to whatap;
   ```
 
 - Below PostgreSQL 10
@@ -60,20 +60,7 @@ Assign additional roles depending on the features and operation environment.
   Database monitoring provides the <UI>Kill Session</UI> function that allows you to kill an active session. To use this function, set the role as follows:
 
   ```sql title="SQL"
-  alter user whatap with superuser;
-  ```
-
-- In case of using the kill session in the AWS RDS environment
-
-  ```sql title="SQL"
-  grant rds_superuser to whatap;
-  ```
-
-- In case of collecting wal_count
-
-  ```sql title="SQL"
-  grant execute on function pg_ls_dir(text) to whatap;  # In case of use of EDB
-  alter user whatap with superuser;
+  grant pg_signal_backend to whatap;
   ```
 
 - In case of collecting the cache
