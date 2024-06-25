@@ -2146,7 +2146,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-sql",
             metastring: "title=\"SQL\"",
-            children: "create user DB_User with password 'DB Password'; \ngrant pg_read_all_stats to DB_User;\n"
+            children: "create user DB_User with password 'DB Password'; \ngrant pg_monitor to DB_User;\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -2170,27 +2170,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-sql",
             metastring: "title=\"SQL\"",
-            children: "alter user DB_User with superuser;\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "AWS RDS 환경에서 Kill session 기능을 사용할 경우"
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-sql",
-            metastring: "title=\"SQL\"",
-            children: "grant rds_superuser to DB_User;\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "wal_count 수집하는 경우"
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-sql",
-            metastring: "title=\"SQL\"",
-            children: "grant execute on function pg_ls_dir(text) to DB_User;  # EDB 사용 시\nalter user DB_User with superuser;\n"
+            children: "grant pg_signal_backend to DB_User;\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {

@@ -2721,231 +2721,6 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 88867:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "세션 상세 정보 확인하기",
-  "id": "session-details",
-  "level": 3
-}];
-function _createMdxContent(props) {
-  const _components = {
-    a: "a",
-    admonition: "admonition",
-    em: "em",
-    h3: "h3",
-    img: "img",
-    li: "li",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname, ImgLang, InDoc, Link} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!Link) _missingMdxReference("Link", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h3",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "session-details",
-      children: "세션 상세 정보 확인하기"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "active_sessions",
-        className: "uitext"
-      }), " 탭에서 세션 항목을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "session_detail",
-        className: "uitext"
-      }), " 창이 나타납니다. 선택한 세션에 대한 자세한 내용을 확인할 수 있습니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "db-session-details-info.png",
-        desc: "세션 상세 정보"
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "db-session-details-info-oracle-dma.png",
-        desc: "세션 상세 정보"
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["세션에 대한 정보는 기본값으로 실시간 조회되고 있습니다. 시간 선택자에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "정지 아이콘",
-            src: (__webpack_require__(50872)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), " 버튼을 선택하면 실시간 조회를 중지하고, 중지한 시간 기준의 데이터를 확인할 수 있습니다. 실시간 조회를 중지한 상태에서 데이터를 갱신하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "새로고침 아이콘",
-            src: (__webpack_require__(88831)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Kill Session"
-            })
-          }), ": 선택한 세션을 중지할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "session_kill",
-            className: "uitext"
-          }), " 창이 나타나면 비밀번호(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Parameter Key"
-            })
-          }), ") 값을 입력한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "apply",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "실시간 조회 모드에서만 이 기능을 이용할 수 있습니다."
-          })
-        }), "\n"]
-      }), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL06721",
-              className: "uitext"
-            }), ": 선택한 세션 기록을 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_sessionHistory",
-              className: "uitext"
-            }), " 메뉴로 이동할 수 있습니다."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-            type: "note",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_sessionHistory",
-                className: "uitext"
-              }), " 메뉴에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-                to: "analysis-session-history",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            })
-          }), "\n"]
-        }), "\n"]
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-dma",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Session Stat"
-              })
-            }), ": 선택한 세션의 다양한 성능 지표 및 통계 정보를 제공합니다. 세션에서 수행된 작업의 유형과 횟수, 리소스 사용량 등을 포함합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Delta"
-              })
-            }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Sigma"
-              })
-            }), ": 선택한 세션의 변화율과 통계적 분석 정보를 제공합니다. 세션의 활동에 대한 변화량을 확인할 수 있습니다."]
-          }), "\n"]
-        }), "\n"]
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Session Info"
-            })
-          }), ": 선택한 세션에 대한 기본 정보와 상태가 포함된 상세 내용을 확인할 수 있습니다."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Wait Info"
-            })
-          }), ": 선택한 세션의 대기 이벤트 및 대기 시간 정보를 제공합니다. 특정 작업을 실행하기 위해 데이터베이스 시스템에서 대기할 때 발생하는 대기 이벤트에 대한 정보도 확인할 수 있습니다."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "SQL Text"
-            })
-          }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Plan"
-            })
-          }), ": 선택한 세션의 SQL 쿼리 문과 Plan 정보를 확인할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "#query-details",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        }), "\n"]
-      }), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Process Info"
-            })
-          }), ": 선택한 세션에 대한 프로세스 정보를 확인할 수 있습니다."]
-        }), "\n"]
-      })
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
 /***/ 27877:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -3321,7 +3096,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_db_v2_mulit_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(75629);
 /* harmony import */ var _common_items_db_multi_instance_monitoring_desc_notes_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6020);
 /* harmony import */ var _common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67108);
@@ -3334,13 +3109,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(10939);
 /* harmony import */ var _common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(23466);
 /* harmony import */ var _common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(6962);
-/* harmony import */ var _common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(88867);
-/* harmony import */ var _common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(48441);
-/* harmony import */ var _common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(93782);
-/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(19193);
-/* harmony import */ var _common_items_db_mysql_column_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(27877);
-/* harmony import */ var _common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(751);
-/* harmony import */ var _common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(22189);
+/* harmony import */ var _common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(48441);
+/* harmony import */ var _common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(93782);
+/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(19193);
+/* harmony import */ var _common_items_db_mysql_column_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(27877);
+/* harmony import */ var _common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(751);
+/* harmony import */ var _common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(22189);
 
 
 const frontMatter = {
@@ -3430,7 +3204,6 @@ const assets = {
 /*프리셋*/
 /*위젯 알아보기*/
 /*Session Table*/
-/*## 세션 상세 정보 확인하기*/
 /*쿼리 자세히 보기*/
 /*조회 목록 다운로드하기*/
 /*새창으로 보기*/
@@ -3454,25 +3227,24 @@ const assets = {
 
 
 
-
-const toc = [..._common_items_db_v2_mulit_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_multi_instance_monitoring_desc_notes_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_db_v2_mim_chart_area_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_v2_mim_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, {
+const toc = [..._common_items_db_v2_mulit_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_multi_instance_monitoring_desc_notes_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_db_v2_mim_chart_area_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_v2_mim_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, {
   "value": "테이블 데이터 필터링하기",
   "id": "테이블-데이터-필터링하기",
   "level": 3
-}, ..._common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, {
+}, ..._common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, {
   "value": "테이블 컬럼 설정하기",
   "id": "change-column",
   "level": 3
-}, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, {
+}, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, {
   "value": "컬럼 정보 안내",
   "id": "column-info",
   "level": 3
-}, ..._common_items_db_mysql_column_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM];
+}, ..._common_items_db_mysql_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     h3: "h3",
     section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_20__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_19__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {ProdImg} = _components;
   if (!ProdImg) _missingMdxReference("ProdImg", true);
@@ -3480,30 +3252,30 @@ function _createMdxContent(props) {
     children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mulit_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
       img: "db-multi-instance.png",
       desc: "멀티 인스턴스 모니터링"
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_multi_instance_monitoring_desc_notes_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_chart_area_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_multi_instance_monitoring_desc_notes_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_set_past_time_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_check_agent_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashborad_edit_widget_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_widget_options_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_dashboard_preset_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_chart_area_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "테이블-데이터-필터링하기",
         children: "테이블 데이터 필터링하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "change-column",
         children: "테이블 컬럼 설정하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "column-info",
         children: "컬럼 정보 안내"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_mysql_column_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_mysql_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_20__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_19__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -3728,16 +3500,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtbGl2ZS10aW1lPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2My4wMDAwMDAsIC0yMjQyLjAwMDAwMCkiIGZpbGw9IiMyOGE5MmMiPgogICAgICAgICAgICA8ZyBpZD0idGltZS1pY29ucyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDMuMDAwMDAwLCAyMTk3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImljLWxpdmUtdGltZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjIwLjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDIuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMCwwIEMxNS41MjI4NDc1LDAgMjAsNC40NzcxNTI1IDIwLDEwIEMyMCwxNS41MjI4NDc1IDE1LjUyMjg0NzUsMjAgMTAsMjAgQzQuNDc3MTUyNSwyMCAwLDE1LjUyMjg0NzUgMCwxMCBDMCw0LjQ3NzE1MjUgNC40NzcxNTI1LDAgMTAsMCBaIE0xMCwyIEM1LjU4MTcyMiwyIDIsNS41ODE3MjIgMiwxMCBDMiwxNC40MTgyNzggNS41ODE3MjIsMTggMTAsMTggQzE0LjQxODI3OCwxOCAxOCwxNC40MTgyNzggMTgsMTAgQzE4LDUuNTgxNzIyIDE0LjQxODI3OCwyIDEwLDIgWiBNOCw2IEwxNCwxMCBMOCwxNCBMOCw2IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
-
-/***/ }),
-
-/***/ 88831:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcmVmcmVzaDwvdGl0bGU+IC0tPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iSWNvbi1TZXQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJXaGFUYXBfSWNvbl9TZXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02NDcuMDAwMDAwLCAtMjI0Mi4wMDAwMDApIiBmaWxsPSIjNzU3NTc1Ij4KICAgICAgICAgICAgPGcgaWQ9InRpbWUtaWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzLjAwMDAwMCwgMjE5Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1yZWZyZXNoIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDQuMDAwMDAwLCA0NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLDIyIEwxNC41LDE4LjkwNzQyNDIgTDEwLDE2IEwxMCwyMiBaIE0xMCw2LjEgTDUuNSwzLjAwNzQyNDE5IEwxMCwwLjEgTDEwLDYuMSBaIiBpZD0iSWNvbiIgZmlsbC1ydWxlPSJldmVub2RkIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yLjQzNDgwMDEsNi4xMjI3ODYxOCBMNC4wMzc5MDMwOSw3LjMzMDI0MzQ5IEMzLjM3OTczNzcsOC4zOTcyNjMxNiAzLDkuNjU0Mjg1MzQgMywxMSBDMywxNC44NjU5OTMyIDYuMTM0MDA2NzUsMTggMTAsMTggQzEwLjU3Nzg3NjQsMTggMTEuMTM5Mzk3OCwxNy45Mjk5NzU5IDExLjY3NjU0MTksMTcuNzk3OTQ5OSBMMTMuNjAyNjQ2OCwxOS4yNDk5NjQ0IEMxMi40OTk1MTY3LDE5LjczMjM2NjYgMTEuMjgxMDEyOSwyMCAxMCwyMCBDNS4wMjk0MzcyNSwyMCAxLDE1Ljk3MDU2MjcgMSwxMSBDMSw5LjIwMjUwMTgxIDEuNTI2OTUwOTYsNy41MjgwNzk2MSAyLjQzNDgwMDEsNi4xMjI3ODYxOCBaIE0xMCwyIEMxNC45NzA1NjI3LDIgMTksNi4wMjk0MzcyNSAxOSwxMSBDMTksMTIuODI1MzY5NyAxOC40NTY1ODA4LDE0LjUyMzgxNzEgMTcuNTIyNjk1MSwxNS45NDIzODk0IEwxNS45MjA5ODg2LDE0LjczNTU4MjMgQzE2LjYwNDQyNSwxMy42NTQ1ODg3IDE3LDEyLjM3MzQ5MDEgMTcsMTEgQzE3LDcuMTM0MDA2NzUgMTMuODY1OTkzMiw0IDEwLDQgQzkuMzg3ODEyMTcsNCA4Ljc5Mzk3OTE2LDQuMDc4NTg2MzUgOC4yMjgwMzg3Nyw0LjIyNjIyMTI3IEw2LjMxNTQ1ODEzLDIuNzg2MzM3ODkgQzcuNDQwMDU3NCwyLjI4MTA3ODU5IDguNjg3MjAzOTksMiAxMCwyIFoiIGlkPSJDb21iaW5lZC1TaGFwZSIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
 
 /***/ }),
 

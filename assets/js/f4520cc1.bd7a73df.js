@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6257],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31371],{
 
 /***/ 91004:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -10,7 +10,8 @@
 /* harmony export */ });
 /* unused harmony exports frontMatter, contentTitle */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48441);
 
 
 const frontMatter = {};
@@ -18,13 +19,15 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
+/*쿼리 자세히 보기*/
+
 
 
 const toc = [{
   "value": "기본 사용 안내",
   "id": "기본-사용-안내",
   "level": 2
-}];
+}, ..._common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     em: "em",
@@ -35,7 +38,7 @@ function _createMdxContent(props) {
     section: "section",
     strong: "strong",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname, ImgLang, InDoc} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
@@ -165,19 +168,303 @@ function _createMdxContent(props) {
               })
             }), ": 디스크 사용량 변화를 차트를 통해 확인할 수 있습니다."]
           }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["목록 가장 오른쪽의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "query"
+          })
+        }), " 컬럼 항목을 선택하면 SQL 문을 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06224",
+          className: "uitext"
+        }), " 창이 나타납니다. 선택한 쿼리(Query)에 대한 Full Text 및 Plan 정보를 포함하고 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 48441:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "쿼리 자세히 보기",
+  "id": "query-details",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    admonition: "admonition",
+    code: "code",
+    em: "em",
+    h3: "h3",
+    img: "img",
+    li: "li",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h3",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "query-details",
+      children: "쿼리 자세히 보기"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "instance-monitoring,multi-instance-monitoring",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["현재 수행 중인 세션의 SQL 쿼리 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "active_sessions",
+          className: "uitext"
+        }), " 섹션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "uitext",
+          children: "query"
+        }), " 컬럼 항목을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06224",
+          className: "uitext"
+        }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "analysis-compare-top-sql",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["자세한 SQL 정보를 확인하려면 SQL 순위 테이블의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "uitext",
+          children: "query"
+        }), " 컬럼 항목을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06224",
+          className: "uitext"
+        }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "slow-query",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["현재 수행 중인 세션의 SQL 쿼리 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Slow Query List"
+          })
+        }), " 섹션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "uitext",
+          children: "SQL"
+        }), " 컬럼 항목을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06224",
+          className: "uitext"
+        }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "oracle-dma",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "db-sql-details-oracle-dma.png",
+        desc: "SQL 상세"
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "postgresql,mysql",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "db-sql-details-postgresql.png",
+        desc: "SQL 상세"
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "postgresql,mysql,oracle-dma",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "db-sql-details-common.png",
+        desc: "SQL 상세"
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "BTN06225",
+            className: "uitext"
+          }), ": 해당 SQL 쿼리문과 관련한 통계 정보를 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "statistics_sql",
+            className: "uitext"
+          }), " 메뉴로 이동할 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Default Bind"
+            })
+          }), ": 쿼리 문장에서 변수로 설정된 부분을 기본값으로 바인딩할 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Reset Bind"
+            })
+          }), ": 바인딩된 기본값을 해제하고 변수를 확인할 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Formatting"
+            })
+          }), ": SQL 쿼리문에 들여쓰기 및 포맷팅을 적용해 가독성을 높일 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Plan"
+            })
+          }), ": Plan 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "DB Name"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "User Name"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Password"
+          }), "를 입력한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "검색 아이콘",
+            src: (__webpack_require__(13732)/* ["default"] */ .A) + "",
+            width: "35",
+            height: "29"
+          }), " 버튼을 선택하세요."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+          product: "postgresql,mysql",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Text"
+                  })
+                }), ": 텍스트 형식으로 플랜 정보를 확인할 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "JSON"
+                  })
+                }), ": Json 형식으로 플랜 정보를 조회하면 병목이 발생하는 지점을 빠르게 확인할 수 있습니다."]
+              }), "\n"]
+            }), "\n"]
+          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+          product: "postgresql",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "JSON"
+                })
+              }), " 형식으로 플랜 정보를 조회하는 기능은 DBX 에이전트 1.6.12 버전 이상에서만 지원합니다."]
+            })
+          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+          product: "mysql",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "JSON"
+                })
+              }), " 형식으로 플랜 정보를 조회하는 기능은 DBX 에이전트 1.6.15 버전 이상에서만 지원합니다."]
+            })
+          })
+        }), "\n"]
+      }), "\n"]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "oracle-dma",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Bind Capture"
+              })
+            }), ": 데이터베이스에서 실행된 SQL 쿼리에 사용된 바인드 변수의 값을 확인할 수 있습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["실시간 실행된 bind 값이 아닌 데이터베이스에 캡처된 값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "v$sql_bind_capture"
+              }), ")입니다. 건수가 많으면 100개까지 표시합니다."]
+            })
+          }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["목록 가장 오른쪽의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "query"
+                children: "Plan History"
               })
-            }), " 컬럼 항목을 선택하면 SQL 문을 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL06224",
-              className: "uitext"
-            }), " 창이 나타납니다. 선택한 쿼리(Query)에 대한 Full Text 및 Plan 정보를 포함하고 있습니다."]
+            }), ": 데이터베이스에서 실행된 SQL 쿼리의 실행 계획에 대한 이력을 확인할 수 있습니다."]
           }), "\n"]
         }), "\n"]
-      })]
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "postgresql,mysql",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "tip",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "JSON"
+            })
+          }), " 형식으로 플랜 정보를 조회한 상태에서 table 또는 index 항목을 선택하면 테이블의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "column"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "index"
+          }), " 구성을 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Object detail"
+            })
+          }), " 창이 나타납니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "db-sql-objectdetail-pg.png",
+          desc: "Object detail"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["이 기능은 DBX 에이전트 1.6.15 버전 이상에서 지원합니다. 데이터베이스 권한과 관련한 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "install-agent#uid",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
     })]
   });
 }
@@ -374,7 +661,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 5539:
+/***/ 32472:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -397,7 +684,7 @@ const frontMatter = {
 	title: '세션 히스토리',
 	description: '장시간 수행된 세션에 대해 수행 중인 SQL이 얼마나 자원을 사용했는지 확인하고 원인을 분석할 수 있습니다.',
 	tags: [
-		'Oracle DMA',
+		'PostgreSQL',
 		'데이터베이스',
 		'분석',
 		'세션 히스토리'
@@ -405,21 +692,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-dma/analysis-session-history",
+  "id": "postgresql/analysis-session-history",
   "title": "세션 히스토리",
   "description": "장시간 수행된 세션에 대해 수행 중인 SQL이 얼마나 자원을 사용했는지 확인하고 원인을 분석할 수 있습니다.",
-  "source": "@site/docs/oracle-dma/analysis-session-history.mdx",
-  "sourceDirName": "oracle-dma",
-  "slug": "/oracle-dma/analysis-session-history",
-  "permalink": "/whatap-docs/oracle-dma/analysis-session-history",
+  "source": "@site/docs/postgresql/analysis-session-history.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/analysis-session-history",
+  "permalink": "/whatap-docs/postgresql/analysis-session-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-dma/analysis-session-history.mdx",
+  "editUrl": "undefined/docs/postgresql/analysis-session-history.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle DMA",
-      "permalink": "/whatap-docs/tags/oracle-dma"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     },
     {
       "inline": true,
@@ -443,20 +730,20 @@ const metadata = {
     "title": "세션 히스토리",
     "description": "장시간 수행된 세션에 대해 수행 중인 SQL이 얼마나 자원을 사용했는지 확인하고 원인을 분석할 수 있습니다.",
     "tags": [
-      "Oracle DMA",
+      "PostgreSQL",
       "데이터베이스",
       "분석",
       "세션 히스토리"
     ]
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "락 트리",
-    "permalink": "/whatap-docs/oracle-dma/analysis-lock-and-deadlock"
+    "permalink": "/whatap-docs/postgresql/analysis-lock-and-deadlock"
   },
   "next": {
-    "title": "병렬 쿼리 트리",
-    "permalink": "/whatap-docs/oracle-dma/analysis-pq-tree"
+    "title": "Wait 분석",
+    "permalink": "/whatap-docs/postgresql/analysis-wait-events"
   }
 };
 const assets = {
@@ -503,6 +790,16 @@ function MDXContent(props = {}) {
 }
 
 
+
+/***/ }),
+
+/***/ 13732:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NGYxMDZkYi1mOWQ1LTRkNWItYjg1Mi01N2E4OWQ4N2NiODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM0RjAyQzM1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM0RjAyQzI1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphMzM1ZWVmNC1mYjZhLTRkNzctOWI5MS0yZDViNTU2OTE4YTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRmMTA2ZGItZjlkNS00ZDViLWI4NTItNTdhODlkODdjYjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xFhE8QAAA2NJREFUeNrMl0tIVGEUx//fd2fm3nGaZHwkA+KjFylBWG5amG10GRGW9AKjRVFRCSJEQUPRokioNulCAhFsV2LiKogIwl7SoiyVsdJ8Vb5G5z3f1/luumk12lynw2WGy1zm/L7z+J9zmZRy4u1gIs/XEV78OC5g0xjostwSEojTR6mXw3fYcO3aok2y15/j83suL7rBgeI8bj4opfUwbOnAw5MCoOv5DVdAG8luvPR1RuqbCUSsAcTfluNmmA5J+MdFlA8Q2cZcjrhAWkz5Vf4VB3dQgUik15R/xcFV7mSaaZR/xcH/9U9SeRDbarpAUJ5HpgVkhO6X4pyZzZDjYogl1ghG04DpRYm5XxKHKm3YV26HywkMjAnc64nBPyxQULh6eUgahpOPnwGJBYrGk6sZ2LvDhukFIEhtWbWToa5Kx/nmEDpexFDs5dZGJhKTCISBRw1OE+Ts/RAePIubVWfYgYcXDbRecELjEh29CRR4Vt6lSR9hbFbi+G4NVWU2HL0dRHtXFN4sIN8D2DWJGl8IbwYTuFLrhJ2OGFuFbvGkW4+iUlvhwMB3gc6XceQVa9BtzJxluW6OGNVO0+MICjYwVJdwTAWkNTBqqAkHQyZ1y3xQQvw1TNUYcdDvs4t/ALLWUVfFLYqMjZ5iVDOfRhIo26TByABmCIovAdmpyySlsWKbRrUFvKKu8mRYBKPMlcnQ1B2lAgVaTuoI07rhnxCYmJMY9gtkehnqDxjo7o2i/wvdZzDruimXQt9PJ/a1h+E7ZmB7iw3NPREMEFRlqYb6/QZ0BzA+Q3pE7R+MSLh0tqJNYEWil0/6cas7ZgLcrHPi7imnOXVVeNueRjFFqWo8qMPjAk7fCUN4AbfBTMVOKYzqKFU7RTkMne/i6Hq/gHJS2zxKX983gbFRWgGoXlQdNdTocFOxn2kNmxEy7Cz1kVmW+CLaP9QM+kAR6hsF1uu0JRJYiIr8WlsEBqXrRLWOwuwohmhPUaKY1NwrOReYp293qlbJWFzS5gZku1R6JBykRUnOqQBHCk05tZNzDwlgMCrNhUlaVcBJAxGEqT1W6cxaGF9e+dJpy6svj9LgSTOL6V9x8K30vuT/IUwNSYcpv8q/4uDXjxj08gIM0ZxR4VqrlC37Un6Vf8XB/qd37d8CDAAmlWmEg71//QAAAABJRU5ErkJggg==");
 
 /***/ }),
 

@@ -1126,7 +1126,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'analysis-count-trend',
-	title: '카운트 추이 비교하기',
+	title: '카운트 추이 비교',
 	description: '데이터베이스 운용 추이를 확인하고 비교할 수 있습니다.',
 	tags: [
 		'PostgreSQL',
@@ -1138,7 +1138,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "postgresql/analysis-count-trend",
-  "title": "카운트 추이 비교하기",
+  "title": "카운트 추이 비교",
   "description": "데이터베이스 운용 추이를 확인하고 비교할 수 있습니다.",
   "source": "@site/docs/postgresql/analysis-count-trend.mdx",
   "sourceDirName": "postgresql",
@@ -1172,7 +1172,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "analysis-count-trend",
-    "title": "카운트 추이 비교하기",
+    "title": "카운트 추이 비교",
     "description": "데이터베이스 운용 추이를 확인하고 비교할 수 있습니다.",
     "tags": [
       "PostgreSQL",

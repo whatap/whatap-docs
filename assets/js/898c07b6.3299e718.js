@@ -649,7 +649,7 @@ const metadata = {
     "permalink": "/whatap-docs/postgresql/flexboard-mode"
   },
   "next": {
-    "title": "카운트 추이 비교하기",
+    "title": "카운트 추이 비교",
     "permalink": "/whatap-docs/postgresql/analysis-count-trend"
   }
 };

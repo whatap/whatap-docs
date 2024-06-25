@@ -77,26 +77,24 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    em: "em",
     li: "li",
     p: "p",
     strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc, Xclude} = _components;
+  }, {Cmdname, InDoc, Xclude} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
   if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "분석"
-        })
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "락 트리"
-        })
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_analysis",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_dbLockTree",
+        className: "uitext"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
       product: "cubrid,postgresql,oracle,oracle-dma",
