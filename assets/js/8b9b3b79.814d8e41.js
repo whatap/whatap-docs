@@ -589,7 +589,9 @@ function _createMdxContent(props) {
               children: "node_modules/whatap"
             }), " 경로의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: "whatap.conf"
-            }), " 파일을 복사해 소스 코드의 루트(root) 경로로 붙여넣기하세요."]
+            }), " 파일을 복사해 프로젝트의 루트(root) 경로(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "package.json"
+            }), " 파일과 같은 위치)에 붙여 넣으세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
