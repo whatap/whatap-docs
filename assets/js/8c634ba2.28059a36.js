@@ -127,6 +127,7 @@ function _createMdxContent(props) {
     a: "a",
     admonition: "admonition",
     code: "code",
+    em: "em",
     h3: "h3",
     h4: "h4",
     hr: "hr",
@@ -798,6 +799,16 @@ function _createMdxContent(props) {
               sid: "BTN06342",
               className: "uitext"
             }), "의 조회 결과와 일치하지 않는 문제 수정"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              children: "Fixed"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Container"
+              })
+            }), " 뷰에서 블록이 정상 개수로 표시되지 않는 문제 수정"]
           }), "\n"]
         }), "\n"]
       })]
