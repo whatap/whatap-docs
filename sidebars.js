@@ -4956,7 +4956,7 @@ const sidebars = {
           },
           items: [
             'browser/collect-custom-events',
-            'browser/set-real-user-id'
+            'browser/set-real-user-id',
           ],
         },
         'browser/before-starting',
@@ -5003,7 +5003,8 @@ const sidebars = {
             'browser/analyze-pageload',
             'browser/analyze-ajax-hitmap',
             'browser/tracking-error',
-            'browser/user-session-log-search'
+            'browser/user-session-log-search',
+            'browser/session-replay'
           ],
         },
         {
