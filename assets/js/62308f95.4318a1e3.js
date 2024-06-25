@@ -366,10 +366,6 @@ const toc = [{
   "value": "whatap-php 실행",
   "id": "whatap-php-실행",
   "level": 4
-}, {
-  "value": "Docker 설치 과정",
-  "id": "docker-설치-과정",
-  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -384,7 +380,9 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {TabItem, Tabs} = _components;
+  if (!TabItem) _missingMdxReference("TabItem", true);
+  if (!Tabs) _missingMdxReference("Tabs", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -401,12 +399,30 @@ function _createMdxContent(props) {
             }), " 디렉터리 기준으로 압축을 해제하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: "/usr/whatap/php"
             }), " 디렉터리에 모니터링 설치 파일이 생성됩니다."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title=SH",
-              children: "wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz\ntar -xvzf whatap-php.tar.gz -C /\n"
-            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
+              value: "x64",
+              label: "x64",
+              default: true,
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-docker",
+                  metastring: "title='x64'",
+                  children: "wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz\ntar -xvzf whatap-php.tar.gz -C /\n"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
+              value: "aarch64",
+              label: "AArch64",
+              default: true,
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-docker",
+                  metastring: "title='AArch64'",
+                  children: "wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-php.tar.gz\ntar -xvzf whatap-php.tar.gz -C /\n"
+                })
+              })
+            })]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_php_install_script_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n"]
@@ -428,42 +444,6 @@ function _createMdxContent(props) {
           children: "whatap.so"
         }), " 파일이 로딩됩니다."]
       })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "docker-설치-과정",
-        children: "Docker 설치 과정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "whatap-php.targ.gz"
-            }), " 을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "/usr/whatap/php"
-            }), " 디렉터리에 압축을 해제하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "install.sh"
-            }), " 스크립트를 통해서 설치하세요."]
-          }), "\n"]
-        }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-docker",
-          metastring: "title=SH",
-          children: "FROM alpine\n\nRUN apk update && apk upgrade\nRUN apk add php7 php7-fpm php7-opcache\nRUN apk add php7-gd php7-mysqli php7-zlib php7-curl\nRUN apk add php7-pdo php7-pdo_mysql\nRUN apk add php7-pgsql\n\nRUN apk add apache2 php7-apache2\n\n# Install WhaTap PHP monitoring\nADD whatap-php.tar.gz /\nRUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz\nRUN tar -xvzf whatap-php.tar.gz -C /\nRUN /usr/whatap/php/install.sh -l <액세스 키> -s <Whatap server Host> -e <php CLI 경로> -p <프로세스 이름>\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "Docker의 entrypoint에 whatap-php 실행 명령어를 추가하여 container 실행 후에 whatap-php 데몬이 시작될 수 있도록 설정하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "title=SH",
-          children: "/usr/whatap/php/whatap-php\n"
-        })
-      })]
     })]
   });
 }
@@ -478,6 +458,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

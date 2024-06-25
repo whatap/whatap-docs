@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98897],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98958],{
 
-/***/ 25218:
+/***/ 98094:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -29,14 +29,6 @@ const toc = [{
   "id": "에이전트-설정",
   "level": 2
 }, {
-  "value": "<code>WHATAP_HOME</code> 환경변수 설정하기",
-  "id": "whatap_home-환경변수-설정하기",
-  "level": 3
-}, {
-  "value": "Go 라이브러리 설정하기",
-  "id": "go-라이브러리-설정하기",
-  "level": 2
-}, {
   "value": "컨테이너 환경변수 설정",
   "id": "컨테이너-환경변수-설정",
   "level": 2
@@ -51,12 +43,10 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
     admonition: "admonition",
     code: "code",
     em: "em",
     h2: "h2",
-    h3: "h3",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
@@ -73,7 +63,7 @@ function _createMdxContent(props) {
   if (!Tabs) _missingMdxReference("Tabs", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "Docker 컨테이너 기반으로 실행하는 Go 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다."
+      children: "Docker 컨테이너 기반으로 실행하는 PHP 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
       product: "kubernetes",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
@@ -88,7 +78,7 @@ function _createMdxContent(props) {
         id: "에이전트-다운로드",
         children: "에이전트 다운로드"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "Go 애플리케이션 도커 이미지 빌드 시 whatap-agent 패키지를 설치하세요."
+        children: "PHP 애플리케이션 도커 이미지 빌드 시 whatap-php 패키지를 설치하세요."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
           value: "x64",
@@ -98,7 +88,7 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-docker",
               metastring: "title='x64'",
-              children: "RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz\nRUN tar -xvzf whatap-agent.tar.gz -C /\n"
+              children: "RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz\nRUN tar -xvzf whatap-php.tar.gz -C /\n"
             })
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
@@ -109,7 +99,7 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-docker",
               metastring: "title='AArch64'",
-              children: "RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz\nRUN tar -xvzf whatap-agent.tar.gz -C /\n"
+              children: "RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-php.tar.gz\nRUN tar -xvzf whatap-php.tar.gz -C /\n"
             })
           })
         })]
@@ -119,18 +109,26 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "에이전트-설정",
         children: "에이전트 설정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["사용자 애플리케이션 실행 경로에 와탭의 액세스 키, 서버 IP 주소 정보를 입력한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "whatap.conf"
-        }), " 파일을 생성하세요. 특정 경로를 사용할 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "WHATAP_HOME"
-        }), " 환경변수로 설정할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-docker",
-          metastring: "title='whatap.conf'",
-          children: "RUN echo \"accesskey={액세스 키}\" >> whatap.conf\nRUN echo \"whatap.server.host={수집 서버 IP 주소}\" >> whatap.conf\n"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음 명령어를 이용해 설치 스크립트를 설정하세요. 와탭 액세스 키, 서버 IP 정보를 입력하면 PHP 환경 정보를 자동으로 수집합니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-docker",
+              children: "RUN (echo \"[액세스 키]\"; echo \"[서버 IP]\")|/usr/whatap/php/install.sh\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음과 같이 PHP 환경 정보를 직접 입력할 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-docker",
+              children: "# RUN /usr/whatap/php/install.sh -l [액세스 키] -s [서버 IP] -v [PHP 버전 x.x] -i [php.ini의 전체 경로] -p [프로세스명] -z [thread safety]\nRUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]\n"
+            })
+          }), "\n"]
+        }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -138,83 +136,6 @@ function _createMdxContent(props) {
             children: "액세스 키"
           }), "가 Docker Public 상태의 이미지에 노출되지 않도록 주의하세요."]
         })]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h3, {
-        id: "whatap_home-환경변수-설정하기",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "WHATAP_HOME"
-        }), " 환경변수 설정하기"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "whatap.conf"
-        }), " 파일 경로를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "WHATAP_HOME"
-        }), " 환경변수로 설정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "WHATAP_HOME"
-        }), " 경로를 우선 생성하세요. 애플리케이션 실행 문구 앞에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "WHATAP_HOME"
-        }), " 설정을 추가합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "mkdir ./whatap_home\necho \"license={액세스 키}\" >> ./whatap_home/whatap.conf\necho \"whatap.server.host={수집 서버 IP 주소}\" >> ./whatap_home/whatap.conf\n\n# run application\nWHATAP_HOME=./whatap_home ./app\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "go-라이브러리-설정하기",
-        children: "Go 라이브러리 설정하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Go 애플리케이션 소스 코드에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://github.com/whatap/go-api",
-          children: "github.com/whatap/go-api"
-        }), " 패키지를 추가하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "go get github.com/whatap/go-api\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "trace.Init()"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "trace.Shutdown()"
-        }), " 함수로 초기화 및 종료를 설정하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "trace.Start()"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "trace.End()"
-        }), " 함수로 트랜잭션의 시작 종료를 설정하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-go",
-          metastring: "title='Go'",
-          children: "import \"github.com/whatap/go-api/trace\"\n\nfunc main(){\n    trace.Init(nil)\n    //It must be executed before closing the app.    \n    defer trace.Shutdown()    \n\n    ctx, _ := trace.Start(context.Background(), \"Start Tx\")\n\n    ...\n\n    trace.End(ctx, err)\n}\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "golang",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["라이브러리 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "api-guide",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          })
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "kubernetes",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["라이브러리 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../golang/api-guide",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          })
-        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -230,7 +151,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-yaml",
-          children: "env:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n"
+          children: "\nenv:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "다음 예시를 참조하세요."
@@ -250,19 +171,19 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "NODE_IP"
-              }), ": 현재 파드가 호스팅된 노드(Node)의 IP 주소를 수집합니다."]
+              }), ": 현재 Pod가 호스팅된 노드(Node)의 IP 주소를 수집합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "NODE_NAME"
-              }), ": 현재 파드가 실행 중인 노드의 이름을 수집합니다."]
+              }), ": 현재 Pod가 실행 중인 노드의 이름을 수집합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "POD_NAME"
-              }), ": 현재 파드의 이름을 수집합니다."]
+              }), ": 현재 Pod의 이름을 수집합니다."]
             }), "\n"]
           }), "\n"]
         })]
@@ -278,11 +199,11 @@ function _createMdxContent(props) {
           label: "Command",
           default: true,
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "애플리케이션 시작 명령어 앞에 추가로 whatap-agent 시작 명령어를 추가하세요."
+            children: "애플리케이션 시작 명령어 앞에 추가로 whatap-php 시작 명령어를 추가하세요."
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-docker",
-              children: "sh -c \"/usr/whatap/agent/whatap-agent start && [애플리케이션 시작 명령어]\"\n"
+              className: "language-docker'",
+              children: "sh -c \"/usr/whatap/php/whatap-php start && [애플리케이션 시작 명령어]\"\n"
             })
           })]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
@@ -290,11 +211,11 @@ function _createMdxContent(props) {
           label: "Supervisor",
           default: true,
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Supervisor로 애플리케이션을 시작하는 경우 다음 코드를 참조해 whatap-agent 서비스를 추가하세요."
+            children: "Supervisor로 애플리케이션을 시작하는 경우 다음 코드를 참조해 whatap-php 서비스를 추가하세요."
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-docker",
-              children: "RUN echo \"[program:whatap-agent]\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"command = /usr/whatap/agent/whatap-agent start\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"user = root\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"startsecs = 0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autostart = true\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autorestart = false\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile = /dev/stdout\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile = /dev/stderr\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\n"
+              children: "\nRUN echo \"[program:whatap-php]\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"command = sh -c ‘/usr/whatap/php/whatap-php start’\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"user = root\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"startsecs = 0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autostart = true\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autorestart = false\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile = /dev/stdout\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile = /dev/stderr\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\n\n"
             })
           })]
         })]
@@ -303,7 +224,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-docker",
-          children: "ps -ef | grep whatap_agent\n"
+          children: "\nps -ef | grep whatap_php\n\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -328,18 +249,14 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["컨테이너에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ps -ef | grep whatap_agent"
+              children: "ps -ef | grep whatap"
             }), " 명령어를 실행해 에이전트 옵션을 적용했는지 확인하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["컨테이너의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "WHATAP_HOME"
-              }), "/logs"]
-            }), " 또는 애플리케이션 실행 경로의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "logs"
-            }), " 디렉터리를 확인하세요. 에이전트 로그는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
+            children: ["컨테이너의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "/usr/whatap/php/logs"
+            }), " 경로의 내용을 확인하세요. 에이전트 로그는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
               children: ["logs/whatap-", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "{boot or install}"
               }), "-yyyymmdd.log"]
@@ -370,7 +287,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 70980:
+/***/ 33682:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -384,15 +301,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_docker_go_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25218);
+/* harmony import */ var _common_items_docker_php_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98094);
 
 
 const frontMatter = {
 	id: 'install-agent-docker',
 	title: 'Docker 환경 설치',
-	description: 'Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
+	description: 'Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
 	tags: [
-		'Go',
+		'PHP',
 		'에이전트 설치',
 		'Docker',
 		'컨테이너',
@@ -401,21 +318,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/install-agent-docker",
+  "id": "php/install-agent-docker",
   "title": "Docker 환경 설치",
-  "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
-  "source": "@site/docs/golang/install-agent-docker.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/install-agent-docker",
-  "permalink": "/whatap-docs/golang/install-agent-docker",
+  "description": "Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+  "source": "@site/docs/php/install-agent-docker.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/install-agent-docker",
+  "permalink": "/whatap-docs/php/install-agent-docker",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/install-agent-docker.mdx",
+  "editUrl": "undefined/docs/php/install-agent-docker.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "inline": true,
@@ -442,23 +359,23 @@ const metadata = {
   "frontMatter": {
     "id": "install-agent-docker",
     "title": "Docker 환경 설치",
-    "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+    "description": "Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
     "tags": [
-      "Go",
+      "PHP",
       "에이전트 설치",
       "Docker",
       "컨테이너",
       "애플리케이션"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
-    "title": "에이전트 설치",
-    "permalink": "/whatap-docs/golang/install-agent"
+    "title": "AWS Elastic beanstalk",
+    "permalink": "/whatap-docs/php/php-os/aws-eb"
   },
   "next": {
-    "title": "API 가이드",
-    "permalink": "/whatap-docs/golang/api-guide"
+    "title": "설치 점검",
+    "permalink": "/whatap-docs/php/install-check"
   }
 };
 const assets = {
@@ -468,9 +385,9 @@ const assets = {
 
 
 
-const toc = [..._common_items_docker_go_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+const toc = [..._common_items_docker_php_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_docker_go_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_docker_php_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {

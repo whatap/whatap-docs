@@ -672,29 +672,30 @@ function install_agent_createMdxContent(props) {
             }), " 파일을 다운받고 '/' 디렉터리 기준으로 압축을 해제하세요. ", (0,jsx_runtime.jsx)(_components.em, {
               children: "/usr/whatap/agent"
             }), " 경로에 모니터링 파일을 생성합니다."]
-          }), (0,jsx_runtime.jsx)(_components.pre, {
-            children: (0,jsx_runtime.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title='SH'",
-              children: "$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz\n$ tar -xvzf whatap-agent.tar.gz -C /\n"
-            })
-          })]
-        }), (0,jsx_runtime.jsxs)(TabItem, {
-          value: "al-docker",
-          label: "Alpine Linux Docker",
-          children: [(0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.a, {
-              href: "https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz",
-              children: "whatap-agent.tar.gz"
-            }), " 파일을 다운받고 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: "/usr/whatap/agent"
-            }), " 경로에 압축을 해제하세요."]
-          }), (0,jsx_runtime.jsx)(_components.pre, {
-            children: (0,jsx_runtime.jsx)(_components.code, {
-              className: "language-bash",
-              metastring: "title='SH'",
-              children: "FROM alpine\n\nRUN apk update && apk upgrade\n\n# Install WhaTap Go monitoring agent\nRUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz\nRUN tar -xvzf whatap-agent.tar.gz -C /\n"
-            })
+          }), (0,jsx_runtime.jsxs)(Tabs, {
+            children: [(0,jsx_runtime.jsx)(TabItem, {
+              value: "x64",
+              label: "x64",
+              default: true,
+              children: (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-docker",
+                  metastring: "title='x64'",
+                  children: "wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz\ntar -xvzf whatap-agent.tar.gz -C /\n"
+                })
+              })
+            }), (0,jsx_runtime.jsx)(TabItem, {
+              value: "aarch64",
+              label: "AArch64",
+              default: true,
+              children: (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-docker",
+                  metastring: "title='AArch64'",
+                  children: "wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz\ntar -xvzf whatap-agent.tar.gz -C /\n"
+                })
+              })
+            })]
           })]
         })]
       }), (0,jsx_runtime.jsxs)(Details, {

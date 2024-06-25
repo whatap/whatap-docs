@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10472],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98897],{
 
 /***/ 25218:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -294,7 +294,7 @@ function _createMdxContent(props) {
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-docker",
-              children: "RUN echo \"[program:whatap-agent]\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"command = /usr/whatap/agent/whatap-agent start\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"user = root\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"startsecs = 0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autostart = true\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autorestart = false\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile = /dev/stdout\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile = /dev/stderr\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\n"
+              children: "RUN echo \"[program:whatap-agent]\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"command = sh -c ‘/usr/whatap/agent/whatap-agent start’\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"user = root\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"startsecs = 0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autostart = true\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"autorestart = false\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile = /dev/stdout\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stdout_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile = /dev/stderr\" >> /etc/supervisor/conf.d/whatap.conf\nRUN echo \"stderr_logfile_maxbytes=0\" >> /etc/supervisor/conf.d/whatap.conf\n"
             })
           })]
         })]
@@ -370,7 +370,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 56367:
+/***/ 70980:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -388,70 +388,77 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'install-docker-go',
-	title: 'Docker Go 설치',
-	description: '컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
+	id: 'install-agent-docker',
+	title: 'Docker 환경 설치',
+	description: 'Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
 	tags: [
-		'쿠버네티스',
-		'쿠버네티스 모니터링',
-		'애플리케이션 설치',
-		'Go'
+		'Go',
+		'에이전트 설치',
+		'Docker',
+		'컨테이너',
+		'애플리케이션'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/install-docker-go",
-  "title": "Docker Go 설치",
-  "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
-  "source": "@site/docs/kubernetes/install-docker-go.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/install-docker-go",
-  "permalink": "/whatap-docs/kubernetes/install-docker-go",
+  "id": "golang/install-agent-docker",
+  "title": "Docker 환경 설치",
+  "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+  "source": "@site/docs/golang/install-agent-docker.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/install-agent-docker",
+  "permalink": "/whatap-docs/golang/install-agent-docker",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/install-docker-go.mdx",
+  "editUrl": "undefined/docs/golang/install-agent-docker.mdx",
   "tags": [
-    {
-      "inline": true,
-      "label": "쿠버네티스",
-      "permalink": "/whatap-docs/tags/쿠버네티스"
-    },
-    {
-      "inline": true,
-      "label": "쿠버네티스 모니터링",
-      "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
-    },
-    {
-      "inline": true,
-      "label": "애플리케이션 설치",
-      "permalink": "/whatap-docs/tags/애플리케이션-설치"
-    },
     {
       "inline": true,
       "label": "Go",
       "permalink": "/whatap-docs/tags/go"
+    },
+    {
+      "inline": true,
+      "label": "에이전트 설치",
+      "permalink": "/whatap-docs/tags/에이전트-설치"
+    },
+    {
+      "inline": true,
+      "label": "Docker",
+      "permalink": "/whatap-docs/tags/docker"
+    },
+    {
+      "inline": true,
+      "label": "컨테이너",
+      "permalink": "/whatap-docs/tags/컨테이너"
+    },
+    {
+      "inline": true,
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     }
   ],
   "version": "current",
   "frontMatter": {
-    "id": "install-docker-go",
-    "title": "Docker Go 설치",
-    "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+    "id": "install-agent-docker",
+    "title": "Docker 환경 설치",
+    "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
     "tags": [
-      "쿠버네티스",
-      "쿠버네티스 모니터링",
-      "애플리케이션 설치",
-      "Go"
+      "Go",
+      "에이전트 설치",
+      "Docker",
+      "컨테이너",
+      "애플리케이션"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "goSidebar",
   "previous": {
-    "title": "Docker PHP 설치",
-    "permalink": "/whatap-docs/kubernetes/install-docker-php"
+    "title": "에이전트 설치",
+    "permalink": "/whatap-docs/golang/install-agent"
   },
   "next": {
-    "title": "네임스페이스 프로젝트 만들기",
-    "permalink": "/whatap-docs/kubernetes/create-name-space-project"
+    "title": "API 가이드",
+    "permalink": "/whatap-docs/golang/api-guide"
   }
 };
 const assets = {
@@ -463,34 +470,7 @@ const assets = {
 
 const toc = [..._common_items_docker_go_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
-  const _components = {
-    em: "em",
-    p: "p",
-    strong: "strong",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "관리"
-        })
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "에이전트 설치"
-        })
-      }), " > 하단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "애플리케이션 설치"
-        })
-      }), " 클릭 > 설치 안내 중 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Docker Go"
-        })
-      }), " 탭 선택"]
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_docker_go_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
-  });
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_docker_go_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
