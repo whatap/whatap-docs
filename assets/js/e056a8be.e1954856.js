@@ -92,6 +92,10 @@ const toc = [{
   "id": "aix",
   "level": 2
 }, {
+  "value": "Oracle Solaris",
+  "id": "oracle-solaris",
+  "level": 2
+}, {
   "value": "Windows",
   "id": "windows",
   "level": 2
@@ -193,6 +197,19 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-bash",
           children: "stopsrc -s whatap-infra\ncp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf\nrpm -e whatap-infra\nrpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm\ncp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf\nstartsrc -s whatap-infra\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "oracle-solaris",
+        children: "Oracle Solaris"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "설치된 에이전트를 최신 버전으로 업데이트하려면 다음 명령어를 실행하세요."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-bash",
+          children: "cp /usr/whatap/infra/conf/whatap.conf /tmp\n/etc/init.d/whatap-infra stop\npkgrm whatap-infra\nwget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz\ntar xzvf whatap-infra.latest.SPARC.pkg.tar.gz\npkgadd -d .\ncp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf\n/etc/init.d/whatap-infra start\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
