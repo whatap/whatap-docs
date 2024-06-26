@@ -47,7 +47,7 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Service 2.6.0",
+    "title": "Service 2.6.X",
     "permalink": "/whatap-docs/release-notes/service/service-2_6_x"
   },
   "next": {

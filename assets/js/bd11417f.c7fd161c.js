@@ -259,7 +259,7 @@ function _createMdxContent(props) {
           }), " 항목의 기본값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "BTN07329",
             className: "uitext"
-          }), "가 되는 오류 수정"]
+          }), "로 설정되는 문제 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
