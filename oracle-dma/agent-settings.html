@@ -25,8 +25,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.29255855.css">
-<script src="/whatap-docs/assets/js/runtime~main.588d3739.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.f0928c2b.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.4d0ead10.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.3a1cfbb7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -92,19 +92,14 @@
 <p>데이터베이스 서버의 자원을 추가로 모니터링하기 위한 XOS 에이전트(<em>xos.conf</em>) 활성화 옵션입니다.</p>
 </li>
 <li>
-<p><strong>tables_min_size</strong> <span class="type">Int</span></p>
-<p>기본값 <code>10</code></p>
-<p>테이블 정보를 수집할 때 설정한 값보다 작은 크기의 테이블 정보는 수집하지 않습니다. 테이블 데이터를 수집하는 최소 단위로 기본값은 10MB 입니다.</p>
-</li>
-<li>
 <p><strong>interval</strong> <span class="type">Int</span></p>
 <p>기본값 <code>3</code></p>
 <p>데이터 수집 주기를 초 단위로 설정합니다.</p>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>Oracle DMA 모니터링에서는 메모리 접근을 통해 데이터를 거의 실시간으로 수집할 수 있지만, <strong>액티브 세션</strong>, <strong>stat</strong>, <strong>event</strong> 지표의 경우 쿼리 방식으로 수집합니다.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>Oracle Pro 모니터링에서는 메모리 접근을 통해 데이터를 거의 실시간으로 수집할 수 있지만, <strong>액티브 세션</strong>, <strong>stat</strong>, <strong>event</strong> 지표의 경우 쿼리 방식으로 수집합니다.</p></div></div>
 </li>
 <li>
 <p><strong>stat</strong> <span class="type">String</span></p>
-<p>통계 관련 지표를 수집하도록 설정합니다. <code>v$sysstat</code>, <code>v$statname</code> 등의 <code>NAME</code> 컬럼을 참조해 수집하길 원하는 지표 이름을 작성하세요. <code>stat+=</code>와 같은 방식  으로 작성하면 기본 지표들과 함께 추가로 수집할 수 있습니다. 공백 없이 쉼표(,)를 구분자로 이용해 여러 개를 입력할 수 있습니다.</p>
+<p>통계 관련 지표를 수집하도록 설정합니다. <code>v$sysstat</code>, <code>v$statname</code> 등의 <code>NAME</code> 컬럼을 참조해 수집하길 원하는 지표 이름을 작성하세요. <code>stat+=</code>와 같은 방식으로 작성하면 기본 지표들과 함께 추가로 수집할 수 있습니다. 공백 없이 쉼표(,)를 구분자로 이용해 여러 개를 입력할 수 있습니다.</p>
 </li>
 <li>
 <p><strong>event</strong> <span class="type">String</span></p>
@@ -124,7 +119,7 @@
 <li>
 <p><strong>bind_interval</strong> <span class="type">Int</span></p>
 <p>기본값 <code>0</code></p>
-<p>바인드 캡처 간격을 초 단위로 설정합니다. 기본값(<code>0</code>)을 설정하면 바인드 캡쳐하지 않습니다.</p>
+<p>바인드 캡처 간격  을 초 단위로 설정합니다. 기본값(<code>0</code>)을 설정하면 바인드 캡쳐하지 않습니다.</p>
 </li>
 <li>
 <p><strong>bind_max_count</strong> <span class="type">Int</span></p>
@@ -161,9 +156,34 @@
 <p>히든 파라미터 값 수집 여부를 설정합니다. 히든 파라미터를 수집하려면 옵션값을 <code>true</code>로 설정하세요.</p>
 </li>
 <li>
-<p><strong>tables_exclude_sys</strong> <span class="type">Boolean</span></p>
+<p><strong>segments</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
-<p>Table 사이즈 수집 시 system 테이블은 제외합니다. <code>tables_min_size</code>(기본값 <code>10</code>) 이상인 테이블만 수집합니다.</p>
+<p>세그먼트 사이즈 정보를 수집합니다. <span class="uitext">통계/보고서</span> &gt; <span class="uitext">테이블스페이스 사이즈</span> 메뉴에서 해당 데이터베이스 또는 테이블스페이스를 선택하면 사이즈 정보를 확인할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>segments_hour</strong> <span class="type">Int</span></p>
+<p>기본값 <code>5</code></p>
+<p>세그먼트 사이즈 정보를 수집하는 시각을 설정합니다. 기본값으로 <code>5</code>이며 새벽 5시에 수집을 시작합니다.</p>
+</li>
+<li>
+<p><strong>segments_min_size</strong> <span class="type">Int</span></p>
+<p>기본값 <code>10</code></p>
+<p>세그먼트 사이즈 정보를 수집하는 최소 단위로 기본값은 10MB 입니다. 세그먼트 사이즈 정보를 수집할 때 설정한 값보다 작은 크기의 세그먼트 사이즈 정보는 수집하지 않습니다.</p>
+</li>
+<li>
+<p><strong>segments_exclude_sys</strong> <span class="type">Int</span></p>
+<p>기본값 <code>1</code></p>
+<p>sys에 해당하는 계정을 제외하고 사이즈 정보를 수집합니다.</p>
+</li>
+<li>
+<p><strong>segments_sys</strong> <span class="type">String</span></p>
+<p>기본값 &#x27;SYS&#x27;, &#x27;OUTLN&#x27;, &#x27;SYSTEM&#x27;, &#x27;AUDSYS&#x27;, &#x27;DBSNMP&#x27;, &#x27;GSMADMIN_INTERNAL&#x27;, &#x27;XDB&#x27;, &#x27;WMSYS&#x27;, &#x27;OJVMSYS&#x27;, &#x27;CTXSYS&#x27;, &#x27;ORDSYS&#x27;, &#x27;ORDDATA&#x27;, &#x27;MDSYS&#x27;, &#x27;LBACSYS&#x27;, &#x27;DVSYS&#x27;, &#x27;DBSFWUSER&#x27;, &#x27;APPQOSSYS&#x27;, &#x27;OLAPSYS&#x27;</p>
+<p>sys에 해당하는 계정 목록입니다. 위 계정에 추가하고 싶으면 <code>segment_sys += &#x27;xxx&#x27;</code>로 추가할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>segments_max_count</strong> <span class="type">Int</span></p>
+<p>기본값 <code>50</code></p>
+<p>테이블스페이스 별로 사이즈가 큰 세그먼트 50개만 수집하여 저장합니다.</p>
 </li>
 <li>
 <p><strong>xview_min</strong> <span class="type">Int</span></p>
@@ -185,7 +205,7 @@
 <p><strong>object_name</strong> <span class="type">String</span></p>
 <p>기본값 <code>{type}</code>-<code>{ip2}</code>-<code>{ip3}</code>-<code>{port}</code></p>
 <p>데이터베이스 서버를 식별하기 위한 에이전트 이름(ONAME) 구성 방식입니다. ONAME을 토대로 OID가 생성됩니다.</p>
-<table><thead><tr><th>설정</th><th>설명</th></tr></thead><tbody><tr><td><code>{type}</code></td><td><code>whatap.app_name</code>에 설정된 값을 사용합니다</td></tr><tr><td><code>{ip0}</code></td><td>IPv4 주소 중 첫 번째 단위를 사용합니다. (예시, <strong>10</strong>.11.12.13 중 <strong>10</strong>)</td></tr><tr><td><code>{ip1}</code></td><td>IPv4 주소 중 두 번째 단위를 사용합니다. (예시, 10.<strong>11</strong>.12.13 중 <strong>11</strong>)</td></tr><tr><td><code>{ip2}</code></td><td>IPv4 주소 중 세 번째 단위를 사용합니다. (예시, 10.11.<strong>12</strong>.13 중 <strong>12</strong>)</td></tr><tr><td><code>{ip3}</code></td><td>IPv4 주소 중 네 번째 단위를 사용합니다. (예시, 10.11.12.<strong>13</strong> 중 <strong>13</strong>)</td></tr><tr><td><code>{port}</code></td><td>데이터베이스 서버 포트</td></tr><tr><td><code>{hostname}</code></td><td>호스트 명</td></tr></tbody></table>
+<table><thead><tr><th>설정</th><th>설명</th></tr></thead><tbody><tr><td><code>{type}</code></td><td><code>whatap.app_name</code>에 설정된 값을 사용합니다</td></tr><tr><td><code>{ip0}</code></td><td>IPv4 주소 중 첫 번째 단위를 사용합니다. (예시, <strong>10</strong>.11.12.13  중 <strong>10</strong>)</td></tr><tr><td><code>{ip1}</code></td><td>IPv4 주소 중 두 번째 단위를 사용합니다. (예시, 10.<strong>11</strong>.12.13 중 <strong>11</strong>)</td></tr><tr><td><code>{ip2}</code></td><td>IPv4 주소 중 세 번째 단위를 사용합니다. (예시, 10.11.<strong>12</strong>.13 중 <strong>12</strong>)</td></tr><tr><td><code>{ip3}</code></td><td>IPv4 주소 중 네 번째 단위를 사용합니다. (예시, 10.11.12.<strong>13</strong> 중 <strong>13</strong>)</td></tr><tr><td><code>{port}</code></td><td>데이터베이스 서버 포트</td></tr><tr><td><code>{hostname}</code></td><td>호스트 명</td></tr></tbody></table>
 </li>
 <li>
 <p><strong>auto_oname_enabled</strong> <span class="type">Boolean</span></p>
@@ -242,6 +262,6 @@
 <p><span class="uitext">로그</span> 메뉴(<span class="uitext">라이브 테일</span>, <span class="uitext">로그 트렌드</span>, <span class="uitext">로그 검색</span>, <span class="uitext">로그 설정</span>)를 이용하려면 <code>file</code> 옵션에 모니터링하려는 로그 파일명의 절대 경로로 입력하세요.</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">xos.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key attr-name" style="color:rgb(255, 203, 107)">file</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">/opt/oracle/log</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
-</ul></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/oracle-dma">Oracle DMA</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/데이터베이스">데이터베이스</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/oracle-dma/troubleshooting"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">설치 문제 해결</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/oracle-dma/agent-manage"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">관리하기</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#에이전트-구성">에이전트 구성</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#기본-에이전트-설정">기본 에이전트 설정</a><ul><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#기본-옵션">기본 옵션</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#데이터베이스-데이터-수집-옵션">데이터베이스 데이터 수집 옵션</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#aes-256-암호화-적용">AES 256 암호화 적용</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#naming">에이전트 이름 식별</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#xosconf">부가 에이전트 설정</a></li></ul></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/oracle-dma/agent-settings" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
+</ul></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/oracle-pro">Oracle Pro</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/whatap-docs/tags/데이터베이스">데이터베이스</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/oracle-dma/troubleshooting"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">설치 문제 해결</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/oracle-dma/agent-manage"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">관리하기</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#에이전트-구성">에이전트 구성</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#기본-에이전트-설정">기본 에이전트 설정</a><ul><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#기본-옵션">기본 옵션</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#데이터베이스-데이터-수집-옵션">데이터베이스 데이터 수집 옵션</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#aes-256-암호화-적용">AES 256 암호화 적용</a></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#naming">에이전트 이름 식별</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/whatap-docs/oracle-dma/agent-settings#xosconf">부가 에이전트 설정</a></li></ul></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/oracle-dma/agent-settings" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
