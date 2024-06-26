@@ -5125,7 +5125,9 @@ const sidebars = {
               },
               items: [
                 'server/server-os/server-linux',
-                'server/server-os/server-aix',
+                'server/server-os/server-unix',
+                // 'server/server-os/server-aix',
+                // 'server/server-os/server-solaris',
                 'server/server-os/server-windows',
                 'server/server-os/server-other',
                 'server/server-os/server-aws',
