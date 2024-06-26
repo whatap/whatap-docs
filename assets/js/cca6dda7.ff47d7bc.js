@@ -43,11 +43,6 @@ const metadata = {
     "toc_max_heading_level": 2,
     "pagination_next": "release-notes/service/service-1_106_x"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Service 1.110.x",
-    "permalink": "/whatap-docs/release-notes/service/service-1_110_x"
-  },
   "next": {
     "title": "Service 1.106.X",
     "permalink": "/whatap-docs/release-notes/service/service-1_106_x"
