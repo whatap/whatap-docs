@@ -1887,7 +1887,19 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mysql/install-agent',
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/install-agent'
+              },
+              items: [
+                'mysql/install-agent-quick-setup',
+              ],
+            },
             'mysql/after-install-agent',
             'mysql/troubleshooting',
           ],
@@ -5090,7 +5102,7 @@ const sidebars = {
           },
           items: [
             'browser/collect-custom-events',
-            'browser/set-real-user-id'
+            'browser/set-real-user-id',
           ],
         },
         'browser/before-starting',
@@ -5137,7 +5149,8 @@ const sidebars = {
             'browser/analyze-pageload',
             'browser/analyze-ajax-hitmap',
             'browser/tracking-error',
-            'browser/user-session-log-search'
+            'browser/user-session-log-search',
+            'browser/session-replay'
           ],
         },
         {

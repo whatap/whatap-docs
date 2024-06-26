@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54020,10 +54020,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -55588,24 +55588,24 @@
     "service_id": "TTL08062"
   },
   "BTN08063": {
-    "en": "Get list",
+    "en": "Import List",
     "ja": "リストのインポート",
     "ko": "목록 가져오기",
-    "zh": "Get list",
+    "zh": "Import List",
     "service_id": "BTN08063"
   },
   "BTN08064": {
-    "en": "Export list",
+    "en": "Export List",
     "ja": "リストのエクスポート",
     "ko": "목록 내보내기",
-    "zh": "Export list",
+    "zh": "Export List",
     "service_id": "BTN08064"
   },
   "BTN08065": {
-    "en": "addition",
+    "en": "Add",
     "ja": "追加",
     "ko": "추가",
-    "zh": "addition",
+    "zh": "Add",
     "service_id": "BTN08065"
   },
   "TLT08066": {
@@ -55623,17 +55623,17 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete that item?",
+    "en": "Are you sure you want to delete this item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete that item?",
+    "zh": "Are you sure you want to delete this item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
-    "en": "cancellation",
+    "en": "Calcellation",
     "ja": "キャンセル",
     "ko": "취소",
-    "zh": "cancellation",
+    "zh": "Calcellation",
     "service_id": "TLT08069"
   },
   "TTL08070": {
@@ -55672,24 +55672,24 @@
     "service_id": "NTC08074"
   },
   "NTC08075": {
-    "en": "Creation was successful.",
+    "en": "Successfully created.",
     "ja": "作成に成功しました。",
     "ko": "생성에 성공하였습니다.",
-    "zh": "Creation was successful.",
+    "zh": "Successfully created.",
     "service_id": "NTC08075"
   },
   "NTC08076": {
-    "en": "The modification was successful.",
+    "en": "Succesfully modified.",
     "ja": "修正に成功しました。",
     "ko": "수정에 성공하였습니다.",
     "zh": "The modification was successful.",
     "service_id": "NTC08076"
   },
   "NTC08077": {
-    "en": "Item has been deleted.",
+    "en": "Item deleted.",
     "ja": "アイテムが削除されました。",
     "ko": "항목이 삭제되었습니다.",
-    "zh": "Item has been deleted.",
+    "zh": "Item deleted.",
     "service_id": "NTC08077"
   },
   "DSC08078": {
@@ -55700,10 +55700,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55728,31 +55728,31 @@
     "service_id": "DSC08082"
   },
   "BTN08083": {
-    "en": "View all products",
+    "en": "View All Products",
     "ja": "すべての製品",
     "ko": "전체 상품 보기",
-    "zh": "View all products",
+    "zh": "View All Products",
     "service_id": "BTN08083"
   },
   "LNK08084": {
-    "en": "Server Inventory",
+    "en": "Server inventory",
     "ja": "サーバー構成",
     "ko": "서버 구성",
-    "zh": "Server Inventory",
+    "zh": "Server inventory",
     "service_id": "LNK08084"
   },
   "TTL08085": {
-    "en": "class details",
+    "en": "Class details",
     "ja": "クラス詳細",
     "ko": "클래스 상세",
-    "zh": "class details",
+    "zh": "Class details",
     "service_id": "TTL08085"
   },
   "TTL08086": {
-    "en": "server name",
+    "en": "Server name",
     "ja": "サーバー名",
     "ko": "서버 이름",
-    "zh": "server name",
+    "zh": "Server name",
     "service_id": "TTL08086"
   },
   "TTL08087": {
@@ -55777,10 +55777,10 @@
     "service_id": "DSC08089"
   },
   "DSC08090": {
-    "en": "End date: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "en": "Termination target: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
     "ja": "終了対象：アプリケーションダッシュボード（Old）<br />終了日：2024年7月24日(水)",
     "ko": "종료 대상 : 애플리케이션 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
-    "zh": "End date: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "zh": "Termination target: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
     "service_id": "DSC08090"
   },
   "TTL08091": {
@@ -55924,10 +55924,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -55959,10 +55959,10 @@
     "service_id": "CNT08115"
   },
   "CNT08116": {
-    "en": "Use automatic Y-axis",
+    "en": "Use automatic Y axis",
     "ja": "自動Y軸を使用",
     "ko": "자동 Y축 사용",
-    "zh": "Use automatic Y-axis",
+    "zh": "Use automatic Y axis",
     "service_id": "CNT08116"
   },
   "CNT08117": {
@@ -56211,10 +56211,10 @@
     "service_id": "DSC08151"
   },
   "DSC08152": {
-    "en": "Search for all values ​​corresponding to the search key.",
+    "en": "Searches for all values ​​matching the search key.",
     "ja": "検索キーに対応するすべての値を検索します。",
     "ko": "검색 키에 해당하는 모든 값을 검색합니다.",
-    "zh": "Search for all values ​​corresponding to the search key.",
+    "zh": "Searches for all values ​​matching the search key.",
     "service_id": "DSC08152"
   },
   "BTN08153": {
@@ -56223,6 +56223,62 @@
     "ko": "설정 파일 다운로드",
     "zh": "Download configuration file",
     "service_id": "BTN08153"
+  },
+  "NTC08154": {
+    "en": "This is an invalid input value.",
+    "ja": "無効な入力値です。",
+    "ko": "유효하지 않은 입력값 입니다.",
+    "zh": "This is an invalid input value.",
+    "service_id": "NTC08154"
+  },
+  "BTN08155": {
+    "en": "Reset zoom",
+    "ja": "ズーム初期化",
+    "ko": "줌 초기화",
+    "zh": "Reset zoom",
+    "service_id": "BTN08155"
+  },
+  "NTC08156": {
+    "en": "Either the URL has had its 'name' modified by a user, or there is no valid URL information. Return to the URL list and refresh, or try again later.",
+    "ja": "ユーザーによって「名前」が変更されたURLか、有効なURL情報がありません。 URLリストに戻って更新するか、しばらくしてから再試行してください。",
+    "ko": "사용자에 의해 ‘이름’을 수정한 URL이거나 유효한 URL 정보가 없습니다. URL 목록으로 돌아가 새로고침하거나 잠시 후에 다시 시도하세요.",
+    "zh": "Either the URL has had its 'name' modified by a user, or there is no valid URL information. Return to the URL list and refresh, or try again later.",
+    "service_id": "NTC08156"
+  },
+  "TTL08157": {
+    "en": "Application Service Dashboard (Old)<br/>Termination Notice",
+    "ja": "アプリケーションサービスダッシュボード（Old）<br/>終了ガイド",
+    "ko": "애플리케이션 서비스 대시보드 (Old)<br/>종료 안내",
+    "zh": "Application Service Dashboard (Old)<br/>Termination Notice",
+    "service_id": "TTL08157"
+  },
+  "DSC08158": {
+    "en": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the Application Service Dashboard (Old) function will be terminated.",
+    "ja": "こんにちは。<br />ワタップをご利用のお客様に心から感謝申し上げます。",
+    "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 서비스 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
+    "zh": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the Application Service Dashboard (Old) function will be terminated.",
+    "service_id": "DSC08158"
+  },
+  "DSC08159": {
+    "en": "Termination target: Application Service Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "ja": "終了対象：アプリケーションサービスダッシュボード（Old）<br />終了日：2024年7月24日（水）",
+    "ko": "종료 대상 : 애플리케이션 서비스 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
+    "zh": "Termination target: Application Service Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "service_id": "DSC08159"
+  },
+  "DSC08160": {
+    "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Service Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションサービスダッシュボード</a>メニューから改善された機能を利用できます。<br />より良いサービスを提供するために最善を尽くします。",
+    "ko": "<a href=\"{url}\" target=\"_blank\">대시보드 > 애플리케이션 서비스 대시보드</a> 메뉴에서 개선된 기능을 이용할 수 있습니다.<br />더 좋은 서비스 제공을 위해 최선을 다하겠습니다.",
+    "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Service Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "service_id": "DSC08160"
+  },
+  "TTL08161": {
+    "en": "server uptime",
+    "ja": "サーバーのアップタイム",
+    "ko": "서버 업타임",
+    "zh": "server uptime",
+    "service_id": "TTL08161"
   },
   "": {
     "en": "#VALUE!",
