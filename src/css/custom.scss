@@ -914,9 +914,19 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
+    counter-reset: steps;
     .docusaurus-mermaid-container {
       background-color: #fff;
       margin: 8px 0;
+    }
+    .steps {
+      h2::before {
+        counter-increment: steps;
+        content: "" counter(steps) ": ";
+      }
+      > * {
+        margin-left: 15px;
+      }
     }
     h1 {
       padding-top: 8px;
