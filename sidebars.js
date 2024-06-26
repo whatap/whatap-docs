@@ -1729,7 +1729,7 @@ const sidebars = {
   dboracledmaSidebar: [
     {
       type: 'category',
-      label: 'Oracle DMA 모니터링',
+      label: 'Oracle Pro 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
