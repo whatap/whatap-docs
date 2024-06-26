@@ -3786,7 +3786,7 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Oracle',
+          label: 'Oracle Pro',
           href: 'oracle-pro/monitoring-intro',
         },
         {
