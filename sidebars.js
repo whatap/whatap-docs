@@ -1734,13 +1734,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'oracle-dma/monitoring-intro'
+        id: 'oracle-pro/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'oracle-dma/monitoring-support',
+          id: 'oracle-pro/monitoring-support',
         },
         {
           type: 'category',
@@ -1748,13 +1748,13 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'oracle-dma/install-agent',
-            'oracle-dma/after-install-agent',
-            'oracle-dma/troubleshooting',
+            'oracle-pro/install-agent',
+            'oracle-pro/after-install-agent',
+            'oracle-pro/troubleshooting',
           ],
         },
-        'oracle-dma/agent-settings',
-        'oracle-dma/agent-manage',
+        'oracle-pro/agent-settings',
+        'oracle-pro/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1768,12 +1768,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle-dma/dashboard-intro'
+                id: 'oracle-pro/dashboard-intro'
               },
               items: [
-                'oracle-dma/instance-list',
-                'oracle-dma/instance-monitoring',
-                'oracle-dma/multi-instance-monitoring',
+                'oracle-pro/instance-list',
+                'oracle-pro/instance-monitoring',
+                'oracle-pro/multi-instance-monitoring',
               ],
             },
             {
@@ -1783,16 +1783,16 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle-dma/flex-board',
+                id: 'oracle-pro/flex-board',
               },
               items: [
-                'oracle-dma/flexboard-template',
-                'oracle-dma/flexboard-create',
-                'oracle-dma/flexboard-manage',
-                'oracle-dma/flexboard-metric-widget',
-                'oracle-dma/flexboard-widget-manage',
-                'oracle-dma/flexboard-mode',
-                'oracle-dma/flexboard-share',
+                'oracle-pro/flexboard-template',
+                'oracle-pro/flexboard-create',
+                'oracle-pro/flexboard-manage',
+                'oracle-pro/flexboard-metric-widget',
+                'oracle-pro/flexboard-widget-manage',
+                'oracle-pro/flexboard-mode',
+                'oracle-pro/flexboard-share',
               ],
             },
             {
@@ -1801,12 +1801,12 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'oracle-dma/analysis-count-trend',
-                'oracle-dma/analysis-lock-and-deadlock',
-                'oracle-dma/analysis-session-history',
-                // 'oracle-dma/analysis-compare-top-sql',
-                'oracle-dma/analysis-pq-tree',
-                'oracle-dma/analysis-databaseparameter',
+                'oracle-pro/analysis-count-trend',
+                'oracle-pro/analysis-lock-and-deadlock',
+                'oracle-pro/analysis-session-history',
+                // 'oracle-pro/analysis-compare-top-sql',
+                'oracle-pro/analysis-pq-tree',
+                'oracle-pro/analysis-databaseparameter',
               ]
             },
             {
@@ -1816,12 +1816,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle-dma/metrics-intro'
+                id: 'oracle-pro/metrics-intro'
               },
               items: [
-                'oracle-dma/metrics-data-list',
-                'oracle-dma/metrics-chart',
-                'oracle-dma/metrics-detect-anormal',
+                'oracle-pro/metrics-data-list',
+                'oracle-pro/metrics-chart',
+                'oracle-pro/metrics-detect-anormal',
               ]
             },
             {
@@ -1830,10 +1830,10 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'oracle-dma/stat',
-                'oracle-dma/table-space-size',
-                'oracle-dma/sga-size',
-                'oracle-dma/report-intro',
+                'oracle-pro/stat',
+                'oracle-pro/table-space-size',
+                'oracle-pro/sga-size',
+                'oracle-pro/report-intro',
               ],
             },
             {
@@ -1843,21 +1843,21 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle-dma/set-notice',
+                id: 'oracle-pro/set-notice',
               },
               items: [
-                'oracle-dma/warning-notice',
+                'oracle-pro/warning-notice',
                 {
                   type: 'doc',
-                  id: 'oracle-dma/warning-notice-v2',
+                  id: 'oracle-pro/warning-notice-v2',
                   className: 'newfunc'
                 },
-                'oracle-dma/metric-warning-notice',
-                'oracle-dma/set-notification-message',
-                'oracle-dma/set-event-detect-anomal',
-                'oracle-dma/set-receive-event',
-                'oracle-dma/set-event-history',
-                'oracle-dma/set-event-format',
+                'oracle-pro/metric-warning-notice',
+                'oracle-pro/set-notification-message',
+                'oracle-pro/set-event-detect-anomal',
+                'oracle-pro/set-receive-event',
+                'oracle-pro/set-event-history',
+                'oracle-pro/set-event-format',
               ],
             },
           ]
@@ -3787,7 +3787,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Oracle',
-          href: 'oracle-dma/monitoring-intro',
+          href: 'oracle-pro/monitoring-intro',
         },
         {
           type: 'link',
