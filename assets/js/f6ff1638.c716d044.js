@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17798],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71255],{
 
 /***/ 67819:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -87,18 +87,6 @@ const toc = [{
 }, {
   "value": "Fields",
   "id": "5253d43d6cca9bb1f05b3072c47b9485",
-  "level": 3
-}, {
-  "value": "app_proc_counter",
-  "id": "appproccounter",
-  "level": 2
-}, {
-  "value": "Tags",
-  "id": "appproccounter-tags",
-  "level": 3
-}, {
-  "value": "Fields",
-  "id": "appproccounter-fields",
   "level": 3
 }, {
   "value": "app_remote_active_stat",
@@ -2097,376 +2085,6 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "appproccounter",
-        children: "app_proc_counter"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "애플리케이션 프로세스 지표를 수집한 데이터의 카테고리입니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "수집 간격: 5초"
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "통계 데이터: 5분, 1시간"
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "appproccounter-tags",
-        children: "Tags"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-        className: "c3-30-60-10",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "태그명"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "설명"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "비고"
-              })]
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "alias"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "애플리케이션 별칭"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "고유값"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "container"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "컨테이너 이름"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "고유값"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "containerKey"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "컨테이너 키값"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "고유값"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "host_ip"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "호스트 IP 주소"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "고유값"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "okindName"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "whatap.okind"
-                }), "로 분류된 그룹 이름"]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "oname"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "에이전트 이름"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "고유값"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "onodeName"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "whatap.onode"
-                }), "로 분류된 그룹 이름"]
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "pid"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "특정프로세스의 고유 식별자(ID)"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "type"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "플랫폼 유형(애플리케이션 개발 언어)"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "언어 이름"
-              })]
-            })]
-          })]
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "appproccounter-fields",
-        children: "Fields"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-        className: "c4-20-10-50-10",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "필드명"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "단위"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "설명"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                children: "비고"
-              })]
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "cputime"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "밀리초(ms)"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "트랜잭션 cpu 시간"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "db_num_active"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "DB Connection Pool Active 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "db_num_idle"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "DB Connection Pool Idel 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "gc_count"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "GC 발생 횟수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "gc_oldgen_count"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "Old Generation GC 건수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "gc_time"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "밀리초(ms)"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "GC 수행 시간"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "heap_max"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "byte"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "힙 메모리의 최댓값"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "heap_perm"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "byte"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "Perm 영역의 메모리 사용량"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "heap_tot"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "byte"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "현재 할당된 힙 메모리의 총량"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "heap_use"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "byte"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "현재 사용 중인 힙 메모리의 양"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "pending_finalization"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "GC 중 finalize 수행을 위해 대기 중인 객체 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "proc_fd"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count 프로세스가 열고 있는 파일 디스크립터(file descriptors)의 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {})]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "proc_fd_max"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "프로세스가 열 수 있는 최대 팡리 디스크립터 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "thread_count"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "JVM에서 실행 중인 스레드의 총 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "thread_daemon"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "JVM에서 실행 중인 데몬 스레드의 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "thread_peak_count"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "JVM이 실행되는 동안 관찰된 스레드 수의 최댓값"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "thread_total_started"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "JVM이 시작된 이후 생성된 총 스레드 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "threadpool_activeCount"
-                })
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "현재 실행 중인 스레드 풀의 스레드 수"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "-"
-              })]
-            })]
-          })]
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "appremoteactivestat",
         children: "app_remote_active_stat"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -3402,7 +3020,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 90500:
+/***/ 24909:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -3430,7 +3048,7 @@ var TabItem = __webpack_require__(15947);
 var _metrics_index = __webpack_require__(77037);
 // EXTERNAL MODULE: ./docs/common-items/_apm-server-merics.mdx
 var _apm_server_merics = __webpack_require__(67819);
-;// CONCATENATED MODULE: ./docs/common-items/_java-app-proc-counter.mdx
+;// CONCATENATED MODULE: ./docs/common-items/_php-app-proc-counter.mdx
 
 
 const frontMatter = {};
@@ -3442,22 +3060,21 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "app_proc_counter",
-  "id": "2906a15634d6cd021d6aff54d886d9c5",
-  "level": 3
+  "id": "app_proc_counter",
+  "level": 2
 }, {
   "value": "Tags",
-  "id": "667f1f457e1051e615455d0ecf95b947",
-  "level": 4
+  "id": "tags",
+  "level": 3
 }, {
   "value": "Fields",
-  "id": "9a189c13b76ce8b9d1784cf1c790f766",
-  "level": 4
+  "id": "fields",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
+    h2: "h2",
     h3: "h3",
-    h4: "h4",
-    hr: "hr",
     li: "li",
     p: "p",
     section: "section",
@@ -3473,11 +3090,11 @@ function _createMdxContent(props) {
   };
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "2906a15634d6cd021d6aff54d886d9c5",
+      className: "remark-sectionize-h2",
+      children: [(0,jsx_runtime.jsx)(_components.h2, {
+        id: "app_proc_counter",
         children: "app_proc_counter"
-      }), (0,jsx_runtime.jsx)(_components.hr, {}), (0,jsx_runtime.jsx)(_components.p, {
+      }), (0,jsx_runtime.jsx)(_components.p, {
         children: "애플리케이션 프로세스 지표입니다."
       }), (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
@@ -3487,9 +3104,9 @@ function _createMdxContent(props) {
         }), "\n"]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "667f1f457e1051e615455d0ecf95b947",
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
+        id: "tags",
         children: "Tags"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -3505,25 +3122,17 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tbody, {
           children: [(0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "container"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "컨테이너 이름"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "고유값"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "containerKey"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "컨테이너 키 값"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "고유값"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
               children: "host_ip"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "Host IP"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "고유값"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "oname"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "에이전트 이름"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "고유값"
             })]
@@ -3537,25 +3146,9 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "oname"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "에이전트 이름"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "고유값"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
               children: "onodeName"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "애플리케이션 노드명"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "pid"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "애플리케이션 PID"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
@@ -3571,9 +3164,9 @@ function _createMdxContent(props) {
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,jsx_runtime.jsx)(_components.h4, {
-        id: "9a189c13b76ce8b9d1784cf1c790f766",
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
+        id: "fields",
         children: "Fields"
       }), (0,jsx_runtime.jsxs)(_components.table, {
         children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -3591,171 +3184,21 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tbody, {
           children: [(0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "cputime"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "밀리 세컨드"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "트랜잭션 cpu 시간"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "db_num_active"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "DB Connection Pool Active 수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "db_num_idle"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "DB Connection Pool Idel 수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "gc_count"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "회수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "GC 발생 회수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "gc_oldgen_count"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "건수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "Old Generation GC 건수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "gc_time"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "밀리 세컨드"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "GC 수행 시간"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_max"
+              children: "mem_proc"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "바이트"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 최대량"
+              children: "PHP 프로세스 메모리 사용량"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_perm"
+              children: "mem_system"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "바이트"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "Perm 사용량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_tot"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 총량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "heap_use"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "바이트"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "힙 사용량"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "pending_finalization"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "GC 중 fianlize 수행을 위해 대기 중인 객체 수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "proc_fd"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "프로세스 fd 사용수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "proc_fd_max"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "프로세스 fd 최대수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "thread_count"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "JVM 실행중인 스레드 수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "thread_daemon"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "JVM 데몬 스레드 수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "thread_peak_count"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "JVM 최대 스레드 수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "-"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "thread_total_started"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "정수"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "JVM 실행 이후 총 start된 스레드 수"
+              children: "시스템 메모리 전체 크기"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "-"
             })]
@@ -3779,7 +3222,7 @@ function MDXContent(props = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./docs/java/metrics-app.mdx
+;// CONCATENATED MODULE: ./docs/php/metrics-app.mdx
 
 
 const metrics_app_frontMatter = {
@@ -3788,7 +3231,7 @@ const metrics_app_frontMatter = {
 	description: '애플리케이션 지표를 안내합니다.',
 	toc_max_heading_level: 2,
 	tags: [
-		'Java',
+		'PHP',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
@@ -3796,21 +3239,21 @@ const metrics_app_frontMatter = {
 };
 const metrics_app_contentTitle = undefined;
 const metadata = {
-  "id": "java/metrics-app",
+  "id": "php/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/java/metrics-app.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/metrics-app",
-  "permalink": "/whatap-docs/java/metrics-app",
+  "source": "@site/docs/php/metrics-app.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/metrics-app",
+  "permalink": "/whatap-docs/php/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/metrics-app.mdx",
+  "editUrl": "undefined/docs/php/metrics-app.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "inline": true,
@@ -3835,20 +3278,20 @@ const metadata = {
     "description": "애플리케이션 지표를 안내합니다.",
     "toc_max_heading_level": 2,
     "tags": [
-      "Java",
+      "PHP",
       "메트릭스",
       "애플리케이션",
       "UI"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/java/metrics-intro"
+    "permalink": "/whatap-docs/php/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/java/metrics-performance-counter"
+    "permalink": "/whatap-docs/php/metrics-performance-counter"
   }
 };
 const assets = {

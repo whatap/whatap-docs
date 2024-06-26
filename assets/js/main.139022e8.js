@@ -13856,9 +13856,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(39880)
     ],
     "2fc2d29e": [
-        ()=>Promise.all(/* import() | 2fc2d29e */[__webpack_require__.e(71869), __webpack_require__.e(83080)]).then(__webpack_require__.bind(__webpack_require__, 28681)),
+        ()=>Promise.all(/* import() | 2fc2d29e */[__webpack_require__.e(71869), __webpack_require__.e(83080)]).then(__webpack_require__.bind(__webpack_require__, 50809)),
         "@site/docs/python/metrics-app.mdx",
-        /*require.resolve*/(28681)
+        /*require.resolve*/(50809)
     ],
     "2fe6a9ab": [
         ()=>__webpack_require__.e(/* import() | 2fe6a9ab */ 62357).then(__webpack_require__.bind(__webpack_require__, 96910)),
@@ -22541,9 +22541,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(63895)
     ],
     "fa970bce": [
-        ()=>Promise.all(/* import() | fa970bce */[__webpack_require__.e(71869), __webpack_require__.e(17798)]).then(__webpack_require__.bind(__webpack_require__, 90500)),
+        ()=>Promise.all(/* import() | fa970bce */[__webpack_require__.e(71869), __webpack_require__.e(17798)]).then(__webpack_require__.bind(__webpack_require__, 96327)),
         "@site/docs/java/metrics-app.mdx",
-        /*require.resolve*/(90500)
+        /*require.resolve*/(96327)
     ],
     "fa9efe25": [
         ()=>__webpack_require__.e(/* import() | fa9efe25 */ 29950).then(__webpack_require__.bind(__webpack_require__, 2319)),
