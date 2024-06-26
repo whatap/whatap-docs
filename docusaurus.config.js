@@ -387,6 +387,12 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'features/introduction',
+                label: 'Feature Project', 
+                className: 'narrow',
+              },
+              {
+                type: 'doc',
                 docId: 'log/introduction',
                 label: 'Log',
               },

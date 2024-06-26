@@ -3739,6 +3739,15 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: 'Feature Project',
+          href: 'features/introduction',
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'link',
           label: 'Log',
           href: 'log/introduction',
         },
@@ -4789,6 +4798,41 @@ const sidebars = {
             'oracle-cloud/labs'
           ],
         }
+      ]
+    }
+  ],
+  featuremonitorSidebar: [
+    {
+      type: 'category',
+      label: 'Feature 프로젝트',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'features/introduction',
+      },
+      items: [
+        // 'features/kafka-introduction',
+        {
+          type: 'doc',
+          id: 'features/kafka-introduction',
+          // className: 'beta'
+        },
+        // 'kafka/install-agent',
+        // {
+        //   type: 'category',
+        //   label: '주요 메뉴 알아보기',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   items: [
+        //     'kafka/dashboard',
+        //     {
+        //       type: 'doc',
+        //       id: 'kafka/warning-notice-v2',
+        //       className: 'newfunc'
+        //     },
+        //   ],
+        // }
       ]
     }
   ],
