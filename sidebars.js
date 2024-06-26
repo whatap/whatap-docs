@@ -5476,6 +5476,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/resource-pod-list',
+                'kubernetes/pending-pod-status',
                 'kubernetes/resource-application-list',
                 'kubernetes/deployment-list',
               ],
