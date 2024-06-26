@@ -55889,10 +55889,10 @@
     "service_id": "TTL08105"
   },
   "BTN08106": {
-    "en": "Show As Default",
+    "en": "Set As Primary",
     "ja": "デフォルトで表示",
     "ko": "기본으로 표시",
-    "zh": "Show As Default",
+    "zh": "Set As Primary",
     "service_id": "BTN08106"
   },
   "NTC08107": {
@@ -56279,6 +56279,13 @@
     "ko": "서버 업타임",
     "zh": "Server uptime",
     "service_id": "TTL08161"
+  },
+  "DSC08162": {
+    "en": "Primary",
+    "ja": "基本",
+    "ko": "기본",
+    "zh": "Primary",
+    "service_id": "DSC08162"
   },
   "": {
     "en": "#VALUE!",
