@@ -295,7 +295,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'oracle-dma/monitoring-intro',
+                docId: 'oracle-pro/monitoring-intro',
                 label: 'Oracle Pro',
               },
               {
