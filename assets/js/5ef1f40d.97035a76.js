@@ -26,7 +26,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/server/server-previous",
   "title": "Server Agent 지난 버전",
-  "description": "* Server Agent 2.4.7",
+  "description": "* Server Agent 2.4.8",
   "source": "@site/docs/release-notes/server/server-previous.mdx",
   "sourceDirName": "release-notes/server",
   "slug": "/release-notes/server/server-previous",
@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server Agent v2.4.8",
-    "permalink": "/whatap-docs/release-notes/server/server-2_4_8"
+    "title": "Server Agent v2.4.9",
+    "permalink": "/whatap-docs/release-notes/server/server-2_4_9"
   },
   "next": {
     "title": "Server Agent AIX v1.2.7",
@@ -69,6 +69,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "server-2_4_8",
+          children: "Server Agent 2.4.8"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "server-2_4_7",
