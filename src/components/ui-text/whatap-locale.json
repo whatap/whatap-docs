@@ -55769,46 +55769,46 @@
     "zh": "OS version",
     "service_id": "TTL08088"
   },
-  "DSC08089": {
-    "en": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
+  "server name": {
+    "en": "Hi.<br />We would like to express our sincere gratitude to our customers, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
     "ja": "こんにちは。<br />WhaTap Application Monitoringの旧型ダッシュボードはサービス終了予定です。",
     "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
-    "zh": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
+    "zh": "Hi.<br />We would like to express our sincere gratitude to our customers, and we would like to inform you in advance that the application dashboard (Old) function will be terminated.",
     "service_id": "DSC08089"
   },
   "DSC08090": {
-    "en": "Termination target: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "en": "Termination target: application dashboard (Old)<br />End of service: Wednesday, July 24, 2024",
     "ja": "終了対象：アプリケーションダッシュボード（Old）<br />終了日：2024年7月24日(水)",
     "ko": "종료 대상 : 애플리케이션 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
-    "zh": "Termination target: Application Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "zh": "Termination target: application dashboard (Old)<br />End of service: Wednesday, July 24, 2024",
     "service_id": "DSC08090"
   },
   "TTL08091": {
-    "en": "Application Dashboard (Old) termination notice",
+    "en": "Application dashboard (Old) termination notice",
     "ja": "アプリケーションダッシュボード（Old）終了のご案内",
     "ko": "애플리케이션 대시보드 (Old) 종료 안내",
-    "zh": "Application Dashboard (Old) termination notice",
+    "zh": "Application dashboard (Old) termination notice",
     "service_id": "TTL08091"
   },
   "DSC08092": {
-    "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">dashboard > application dashboard</a> menu.<br />We will do our best to provide better service.",
     "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションダッシュボード</a>メニューから改善された機能が利用できます。<br />より良いサービスを提供するために最善を尽くします。",
     "ko": "<a href=\"{url}\" target=\"_blank\">대시보드 > 애플리케이션 대시보드</a> 메뉴에서 개선된 기능을 이용할 수 있습니다.<br />더 좋은 서비스 제공을 위해 최선을 다하겠습니다.",
-    "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Dashboard</a> menu.<br />We will do our best to provide better service.",
+    "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">dashboard > application dashboard</a> menu.<br />We will do our best to provide better service.",
     "service_id": "DSC08092"
   },
   "DSC08093": {
-    "en": "thank you",
+    "en": "Thank you.",
     "ja": "ありがとうございます。",
     "ko": "감사합니다.",
-    "zh": "thank you",
+    "zh": "Thank you.",
     "service_id": "DSC08093"
   },
   "DSC08094": {
-    "en": "Enter the filter and press Enter to add it.",
+    "en": "Enter the filter and press enter to add it.",
     "ja": "フィルタを入力してからEnterをクリックして追加します。",
     "ko": "필터를 입력 후 엔터를 눌러 추가하세요.",
-    "zh": "Enter the filter and press Enter to add it.",
+    "zh": "Enter the filter and press enter to add it.",
     "service_id": "DSC08094"
   },
   "DSC08095": {
@@ -55868,7 +55868,7 @@
     "service_id": "TTL08102"
   },
   "TTL08103": {
-    "en": "Session Replay",
+    "en": "Session replay",
     "ja": "セッションリプレイ",
     "ko": "세션 리플레이",
     "zh": "Session Replay",
@@ -55889,10 +55889,10 @@
     "service_id": "TTL08105"
   },
   "BTN08106": {
-    "en": "Show as default",
+    "en": "Show As Default",
     "ja": "デフォルトで表示",
     "ko": "기본으로 표시",
-    "zh": "Show as default",
+    "zh": "Show As Default",
     "service_id": "BTN08106"
   },
   "NTC08107": {
@@ -55959,10 +55959,10 @@
     "service_id": "CNT08115"
   },
   "CNT08116": {
-    "en": "Use automatic Y axis",
+    "en": "Use Y axis automatically",
     "ja": "自動Y軸を使用",
     "ko": "자동 Y축 사용",
-    "zh": "Use automatic Y axis",
+    "zh": "Use Y axis automatically",
     "service_id": "CNT08116"
   },
   "CNT08117": {
@@ -55973,7 +55973,7 @@
     "service_id": "CNT08117"
   },
   "CNT08118": {
-    "en": "Indicator Search",
+    "en": "Search indicator",
     "ja": "指標検索",
     "ko": "지표 검색",
     "zh": "Indicator Search",
@@ -56029,17 +56029,17 @@
     "service_id": "MNU08125"
   },
   "TTL08126": {
-    "en": "increase",
+    "en": "Increment",
     "ja": "増加量",
     "ko": "증가량",
-    "zh": "increase",
+    "zh": "Increment",
     "service_id": "TTL08126"
   },
   "CNT08127": {
-    "en": "Set inquiry date",
+    "en": "Set search date",
     "ja": "照会日の設定",
     "ko": "조회 날짜 설정",
-    "zh": "Set inquiry date",
+    "zh": "Set search date",
     "service_id": "CNT08127"
   },
   "CNT08128": {
@@ -56050,10 +56050,10 @@
     "service_id": "CNT08128"
   },
   "CNT08129": {
-    "en": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "en": "The items that you can select may change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
     "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
     "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
-    "zh": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "zh": "The items that you can select may change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
     "service_id": "CNT08129"
   },
   "CNT08130": {
@@ -56064,17 +56064,17 @@
     "service_id": "CNT08130"
   },
   "CNT08131": {
-    "en": "The available metrics change depending on the target you select. Click on an indicator to add it to the right pane.",
+    "en": "The available metrics to change dpends on the target you select. Click on an indicator to add it to the right pane.",
     "ja": "選択したターゲットに応じて利用可能な指標が変わります。指標をクリックして右側の領域に追加します。",
     "ko": "선택한 대상에 따라 사용할 수 있는 지표가 변경됩니다. 지표를 클릭하여 오른쪽 영역에 추가합니다.",
-    "zh": "The available metrics change depending on the target you select. Click on an indicator to add it to the right pane.",
+    "zh": "The available metrics to change dpends on the target you select. Click on an indicator to add it to the right pane.",
     "service_id": "CNT08131"
   },
   "CNT08132": {
-    "en": "The default interval time is different for each indicator, and the interval time changes depending on the inquiry time range.",
+    "en": "The default interval time is different for each indicator, and the interval time changes depending on the search time range.",
     "ja": "インジケータごとにデフォルトに設定されたインターバル時間が異なり、ルックアップ時間の範囲によってインターバル時間が変更されます。",
     "ko": "지표 마다 기본으로 설정된 인터벌 시간이 다르며, 조회 시간 범위에 따라 인터벌 시간이 변경됩니다.",
-    "zh": "The default interval time is different for each indicator, and the interval time changes depending on the inquiry time range.",
+    "zh": "The default interval time is different for each indicator, and the interval time changes depending on the search time range.",
     "service_id": "CNT08132"
   },
   "CNT08133": {
@@ -56085,10 +56085,10 @@
     "service_id": "CNT08133"
   },
   "CNT08134": {
-    "en": "Dashboard Options Area",
+    "en": "Dashboard option field",
     "ja": "ダッシュボードオプションエリア",
     "ko": "대시보드 옵션 영역",
-    "zh": "Dashboard Options Area",
+    "zh": "Dashboard option field",
     "service_id": "CNT08134"
   },
   "CNT08135": {
@@ -56148,17 +56148,17 @@
     "service_id": "CNT08142"
   },
   "CNT08143": {
-    "en": "When you drag a chart, the charts of all widgets zoom in.",
+    "en": "All widget charts will zoom in when you drag a chart.",
     "ja": "チャートをドラッグすると、すべてのウィジェットのチャートがズームインされます。",
     "ko": "차트 드래그 시 모든 위젯들의 차트가 줌인됩니다.",
-    "zh": "When you drag a chart, the charts of all widgets zoom in.",
+    "zh": "All widget charts will zoom in when you drag a chart.",
     "service_id": "CNT08143"
   },
   "CNT08144": {
-    "en": "Set the height of the widgets to be the same.",
+    "en": "Level the height of the widgets.",
     "ja": "ウィジェットの高さを等しく設定します。",
     "ko": "위젯들의 높이를 동일하게 설정합니다.",
-    "zh": "Set the height of the widgets to be the same.",
+    "zh": "Level the height of the widgets.",
     "service_id": "CNT08144"
   },
   "CNT08145": {
@@ -56169,10 +56169,10 @@
     "service_id": "CNT08145"
   },
   "CNT08146": {
-    "en": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "en": "The targets available for selection change based on the time and date you set. Select or deselect an audience with a click. Press the right All button to select or deselect all related child audiences at once.",
     "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
     "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
-    "zh": "The items you can select change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
+    "zh": "The targets available for selection change based on the time and date you set. Select or deselect an audience with a click. Press the right All button to select or deselect all related child audiences at once.",
     "service_id": "CNT08146"
   },
   "DSC08147": {
@@ -56183,10 +56183,10 @@
     "service_id": "DSC08147"
   },
   "DSC08148": {
-    "en": "Searches for values ​​ending with search value.",
+    "en": "Search for values ​​ending with search value.",
     "ja": "検索値で終わる値を検索します。",
     "ko": "검색 값으로 끝나는 값을 검색합니다.",
-    "zh": "Searches for values ​​ending with search value.",
+    "zh": "Search for values ​​ending with search value.",
     "service_id": "DSC08148"
   },
   "DSC08149": {
@@ -56211,59 +56211,59 @@
     "service_id": "DSC08151"
   },
   "DSC08152": {
-    "en": "Searches for all values ​​matching the search key.",
+    "en": "Search for all values ​​matching the search key.",
     "ja": "検索キーに対応するすべての値を検索します。",
     "ko": "검색 키에 해당하는 모든 값을 검색합니다.",
-    "zh": "Searches for all values ​​matching the search key.",
+    "zh": "Search for all values ​​matching the search key.",
     "service_id": "DSC08152"
   },
   "BTN08153": {
-    "en": "Download configuration file",
+    "en": "Download Config File",
     "ja": "設定ファイルのダウンロード",
     "ko": "설정 파일 다운로드",
-    "zh": "Download configuration file",
+    "zh": "Download Config File",
     "service_id": "BTN08153"
   },
   "NTC08154": {
-    "en": "This is an invalid input value.",
+    "en": "This input value is invalid.",
     "ja": "無効な入力値です。",
     "ko": "유효하지 않은 입력값 입니다.",
-    "zh": "This is an invalid input value.",
+    "zh": "This input value is invalid.",
     "service_id": "NTC08154"
   },
   "BTN08155": {
-    "en": "Reset zoom",
+    "en": "Reset Zoom",
     "ja": "ズーム初期化",
     "ko": "줌 초기화",
-    "zh": "Reset zoom",
+    "zh": "Reset Zoom",
     "service_id": "BTN08155"
   },
   "NTC08156": {
-    "en": "Either the URL has had its 'name' modified by a user, or there is no valid URL information. Return to the URL list and refresh, or try again later.",
+    "en": "Either the URL has had its 'name' modified by a user, or there is no valid URL information. Return to the URL list and refresh, or try again later",
     "ja": "ユーザーによって「名前」が変更されたURLか、有効なURL情報がありません。 URLリストに戻って更新するか、しばらくしてから再試行してください。",
     "ko": "사용자에 의해 ‘이름’을 수정한 URL이거나 유효한 URL 정보가 없습니다. URL 목록으로 돌아가 새로고침하거나 잠시 후에 다시 시도하세요.",
-    "zh": "Either the URL has had its 'name' modified by a user, or there is no valid URL information. Return to the URL list and refresh, or try again later.",
+    "zh": "Either the URL has had its 'name' modified by a user, or there is no valid URL information. Return to the URL list and refresh, or try again later",
     "service_id": "NTC08156"
   },
   "TTL08157": {
-    "en": "Application Service Dashboard (Old)<br/>Termination Notice",
+    "en": "Application service dashboard (Old)<br/> termination notice",
     "ja": "アプリケーションサービスダッシュボード（Old）<br/>終了ガイド",
     "ko": "애플리케이션 서비스 대시보드 (Old)<br/>종료 안내",
-    "zh": "Application Service Dashboard (Old)<br/>Termination Notice",
+    "zh": "Application service dashboard (Old)<br/> termination notice",
     "service_id": "TTL08157"
   },
   "DSC08158": {
-    "en": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the Application Service Dashboard (Old) function will be terminated.",
+    "en": "Hi.<br />We would like to express our sincere gratitude to our customers, and we would like to inform you in advance that the application service dashboard (Old) function will be terminated.",
     "ja": "こんにちは。<br />ワタップをご利用のお客様に心から感謝申し上げます。",
     "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 서비스 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
-    "zh": "Hello.<br />We would like to express our sincere gratitude to our customers who use WhaTap, and we would like to inform you in advance that the Application Service Dashboard (Old) function will be terminated.",
+    "zh": "Hi.<br />We would like to express our sincere gratitude to our customers, and we would like to inform you in advance that the application service dashboard (Old) function will be terminated.",
     "service_id": "DSC08158"
   },
   "DSC08159": {
-    "en": "Termination target: Application Service Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "en": "Termination target: Application service dashboard (Old)<br />End date: Wednesday, July 24, 2024",
     "ja": "終了対象：アプリケーションサービスダッシュボード（Old）<br />終了日：2024年7月24日（水）",
     "ko": "종료 대상 : 애플리케이션 서비스 대시보드 (Old)<br />종료 날짜 : 2024년 7월 24일 (수)",
-    "zh": "Termination target: Application Service Dashboard (Old)<br />End date: Wednesday, July 24, 2024",
+    "zh": "Termination target: Application service dashboard (Old)<br />End date: Wednesday, July 24, 2024",
     "service_id": "DSC08159"
   },
   "DSC08160": {
@@ -56274,10 +56274,10 @@
     "service_id": "DSC08160"
   },
   "TTL08161": {
-    "en": "server uptime",
+    "en": "Server uptime",
     "ja": "サーバーのアップタイム",
     "ko": "서버 업타임",
-    "zh": "server uptime",
+    "zh": "Server uptime",
     "service_id": "TTL08161"
   },
   "": {
