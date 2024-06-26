@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.29255855.css">
-<script src="/whatap-docs/assets/js/runtime~main.adda2a64.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.0c26143c.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.e16f619d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -178,7 +178,7 @@
 <li>
 <p><strong>segments_sys</strong> <span class="type">String</span></p>
 <p>기본값 &#x27;SYS&#x27;, &#x27;OUTLN&#x27;, &#x27;SYSTEM&#x27;, &#x27;AUDSYS&#x27;, &#x27;DBSNMP&#x27;, &#x27;GSMADMIN_INTERNAL&#x27;, &#x27;XDB&#x27;, &#x27;WMSYS&#x27;, &#x27;OJVMSYS&#x27;, &#x27;CTXSYS&#x27;, &#x27;ORDSYS&#x27;, &#x27;ORDDATA&#x27;, &#x27;MDSYS&#x27;, &#x27;LBACSYS&#x27;, &#x27;DVSYS&#x27;, &#x27;DBSFWUSER&#x27;, &#x27;APPQOSSYS&#x27;, &#x27;OLAPSYS&#x27;</p>
-<p>sys에 해당하는 계정 목록입니다. 위 계정에 추가하고 싶으면 <code>segment_sys += &#x27;xxx&#x27;</code>로 추가할 수 있습니다.</p>
+<p>sys에 해당하는 계정 목록입니다. 위 계정에 추가하고 싶으면 <code>segments_sys+=&#x27;xxx&#x27;</code>로 추가할 수 있습니다.</p>
 </li>
 <li>
 <p><strong>segments_max_count</strong> <span class="type">Int</span></p>
@@ -205,7 +205,7 @@
 <p><strong>object_name</strong> <span class="type">String</span></p>
 <p>기본값 <code>{type}</code>-<code>{ip2}</code>-<code>{ip3}</code>-<code>{port}</code></p>
 <p>데이터베이스 서버를 식별하기 위한 에이전트 이름(ONAME) 구성 방식입니다. ONAME을 토대로 OID가 생성됩니다.</p>
-<table><thead><tr><th>설정</th><th>설명</th></tr></thead><tbody><tr><td><code>{type}</code></td><td><code>whatap.app_name</code>에 설정된 값을 사용합니다</td></tr><tr><td><code>{ip0}</code></td><td>IPv4 주소 중 첫 번째 단위를 사용합니다. (예시, <strong>10</strong>.11.12.13  중 <strong>10</strong>)</td></tr><tr><td><code>{ip1}</code></td><td>IPv4 주소 중 두 번째 단위를 사용합니다. (예시, 10.<strong>11</strong>.12.13 중 <strong>11</strong>)</td></tr><tr><td><code>{ip2}</code></td><td>IPv4 주소 중 세 번째 단위를 사용합니다. (예시, 10.11.<strong>12</strong>.13 중 <strong>12</strong>)</td></tr><tr><td><code>{ip3}</code></td><td>IPv4 주소 중 네 번째 단위를 사용합니다. (예시, 10.11.12.<strong>13</strong> 중 <strong>13</strong>)</td></tr><tr><td><code>{port}</code></td><td>데이터베이스 서버 포트</td></tr><tr><td><code>{hostname}</code></td><td>호스트 명</td></tr></tbody></table>
+<table><thead><tr><th>설정</th><th>설명</th></tr></thead><tbody><tr><td><code>{type}</code></td><td><code>whatap.app_name</code>에 설정된 값을 사용합니다</td></tr><tr><td><code>{ip0}</code></td><td>IPv4 주소 중 첫 번째 단위를 사용합니다. (예시, <strong>10</strong>.11.12.13   중 <strong>10</strong>)</td></tr><tr><td><code>{ip1}</code></td><td>IPv4 주소 중 두 번째 단위를 사용합니다. (예시, 10.<strong>11</strong>.12.13 중 <strong>11</strong>)</td></tr><tr><td><code>{ip2}</code></td><td>IPv4 주소 중 세 번째 단위를 사용합니다. (예시, 10.11.<strong>12</strong>.13 중 <strong>12</strong>)</td></tr><tr><td><code>{ip3}</code></td><td>IPv4 주소 중 네 번째 단위를 사용합니다. (예시, 10.11.12.<strong>13</strong> 중 <strong>13</strong>)</td></tr><tr><td><code>{port}</code></td><td>데이터베이스 서버 포트</td></tr><tr><td><code>{hostname}</code></td><td>호스트 명</td></tr></tbody></table>
 </li>
 <li>
 <p><strong>auto_oname_enabled</strong> <span class="type">Boolean</span></p>
