@@ -5478,6 +5478,7 @@ const sidebars = {
       },
       items: [
         'kubernetes/before-starting',
+        'kubernetes/agent-architecture',
         {
           type: 'doc',
           label: '지원 환경',
