@@ -1321,11 +1321,11 @@
   },
   "apm-dashboard-preset-change-default-en.png": {
     "width": 600,
-    "height": 239
+    "height": 233
   },
   "apm-dashboard-preset-change-default-ja.png": {
     "width": 600,
-    "height": 236
+    "height": 230
   },
   "apm-dashboard-preset-change-default.png": {
     "width": 600,
@@ -4507,15 +4507,15 @@
     "width": 1200,
     "height": 326
   },
-  "db-compare-count-trend-activesession-oracle-dma-en.png": {
+  "db-compare-count-trend-activesession-oracle-pro-en.png": {
     "width": 1200,
     "height": 329
   },
-  "db-compare-count-trend-activesession-oracle-dma-ja.png": {
+  "db-compare-count-trend-activesession-oracle-pro-ja.png": {
     "width": 1200,
     "height": 329
   },
-  "db-compare-count-trend-activesession-oracle-dma.png": {
+  "db-compare-count-trend-activesession-oracle-pro.png": {
     "width": 1200,
     "height": 329
   },
@@ -4583,18 +4583,6 @@
     "width": 1200,
     "height": 1035
   },
-  "db-compare-count-trend-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 1054
-  },
-  "db-compare-count-trend-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 1054
-  },
-  "db-compare-count-trend-oracle-dma.png": {
-    "width": 1200,
-    "height": 1054
-  },
   "db-compare-count-trend-oracle-en.png": {
     "width": 1200,
     "height": 1058
@@ -4602,6 +4590,18 @@
   "db-compare-count-trend-oracle-ja.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-compare-count-trend-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-compare-count-trend-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-compare-count-trend-oracle-pro.png": {
+    "width": 1200,
+    "height": 1054
   },
   "db-compare-count-trend-oracle.png": {
     "width": 1200,
@@ -4855,7 +4855,7 @@
     "width": 600,
     "height": 518
   },
-  "db-dashboard-widget-add-oracle-dma.png": {
+  "db-dashboard-widget-add-oracle-pro.png": {
     "width": 600,
     "height": 403
   },
@@ -5175,18 +5175,6 @@
     "width": 1200,
     "height": 443
   },
-  "db-databaseparameter-changed-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 203
-  },
-  "db-databaseparameter-changed-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 203
-  },
-  "db-databaseparameter-changed-oracle-dma.png": {
-    "width": 1200,
-    "height": 203
-  },
   "db-databaseparameter-changed-oracle-en.png": {
     "width": 1200,
     "height": 213
@@ -5194,6 +5182,18 @@
   "db-databaseparameter-changed-oracle-ja.png": {
     "width": 1200,
     "height": 212
+  },
+  "db-databaseparameter-changed-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 202
+  },
+  "db-databaseparameter-changed-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 202
+  },
+  "db-databaseparameter-changed-oracle-pro.png": {
+    "width": 1200,
+    "height": 202
   },
   "db-databaseparameter-changed-oracle.png": {
     "width": 1200,
@@ -5367,18 +5367,6 @@
     "width": 1200,
     "height": 452
   },
-  "db-databaseparameter-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 770
-  },
-  "db-databaseparameter-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 770
-  },
-  "db-databaseparameter-oracle-dma.png": {
-    "width": 1200,
-    "height": 770
-  },
   "db-databaseparameter-oracle-en.png": {
     "width": 1200,
     "height": 480
@@ -5386,6 +5374,18 @@
   "db-databaseparameter-oracle-ja.png": {
     "width": 1200,
     "height": 480
+  },
+  "db-databaseparameter-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 529
+  },
+  "db-databaseparameter-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 529
+  },
+  "db-databaseparameter-oracle-pro.png": {
+    "width": 1200,
+    "height": 529
   },
   "db-databaseparameter-oracle.png": {
     "width": 1200,
@@ -5515,18 +5515,6 @@
     "width": 1200,
     "height": 624
   },
-  "db-instance-list-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 399
-  },
-  "db-instance-list-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 398
-  },
-  "db-instance-list-oracle-dma.png": {
-    "width": 1200,
-    "height": 399
-  },
   "db-instance-list-oracle-en.png": {
     "width": 1200,
     "height": 295
@@ -5534,6 +5522,18 @@
   "db-instance-list-oracle-ja.png": {
     "width": 1200,
     "height": 295
+  },
+  "db-instance-list-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 399
+  },
+  "db-instance-list-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 398
+  },
+  "db-instance-list-oracle-pro.png": {
+    "width": 1200,
+    "height": 399
   },
   "db-instance-list-oracle.png": {
     "width": 1200,
@@ -5639,18 +5639,6 @@
     "width": 1200,
     "height": 1035
   },
-  "db-instance-monitoring-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 1055
-  },
-  "db-instance-monitoring-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 1055
-  },
-  "db-instance-monitoring-oracle-dma.png": {
-    "width": 1200,
-    "height": 1055
-  },
   "db-instance-monitoring-oracle-en.png": {
     "width": 1200,
     "height": 1060
@@ -5658,6 +5646,18 @@
   "db-instance-monitoring-oracle-ja.png": {
     "width": 1200,
     "height": 1060
+  },
+  "db-instance-monitoring-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-instance-monitoring-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-instance-monitoring-oracle-pro.png": {
+    "width": 1200,
+    "height": 1055
   },
   "db-instance-monitoring-oracle.png": {
     "width": 1200,
@@ -5711,15 +5711,15 @@
     "width": 1200,
     "height": 1035
   },
-  "db-instance-monitoring-seltime-oracle-dma-en.png": {
+  "db-instance-monitoring-seltime-oracle-pro-en.png": {
     "width": 1200,
     "height": 1055
   },
-  "db-instance-monitoring-seltime-oracle-dma-ja.png": {
+  "db-instance-monitoring-seltime-oracle-pro-ja.png": {
     "width": 1200,
     "height": 1055
   },
-  "db-instance-monitoring-seltime-oracle-dma.png": {
+  "db-instance-monitoring-seltime-oracle-pro.png": {
     "width": 1200,
     "height": 1055
   },
@@ -5823,18 +5823,6 @@
     "width": 1200,
     "height": 722
   },
-  "db-locktress-basic-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 717
-  },
-  "db-locktress-basic-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 721
-  },
-  "db-locktress-basic-oracle-dma.png": {
-    "width": 1200,
-    "height": 715
-  },
   "db-locktress-basic-oracle-en.png": {
     "width": 1200,
     "height": 648
@@ -5842,6 +5830,18 @@
   "db-locktress-basic-oracle-ja.png": {
     "width": 1200,
     "height": 648
+  },
+  "db-locktress-basic-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 717
+  },
+  "db-locktress-basic-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 721
+  },
+  "db-locktress-basic-oracle-pro.png": {
+    "width": 1200,
+    "height": 715
   },
   "db-locktress-basic-oracle.png": {
     "width": 1200,
@@ -5923,15 +5923,15 @@
     "width": 1200,
     "height": 1035
   },
-  "db-metrics-select-oracle-dma-en.png": {
+  "db-metrics-select-oracle-pro-en.png": {
     "width": 1200,
     "height": 1055
   },
-  "db-metrics-select-oracle-dma-ja.png": {
+  "db-metrics-select-oracle-pro-ja.png": {
     "width": 1200,
     "height": 1055
   },
-  "db-metrics-select-oracle-dma.png": {
+  "db-metrics-select-oracle-pro.png": {
     "width": 1200,
     "height": 1055
   },
@@ -6047,18 +6047,6 @@
     "width": 1200,
     "height": 668
   },
-  "db-multi-instance-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 1055
-  },
-  "db-multi-instance-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 1055
-  },
-  "db-multi-instance-oracle-dma.png": {
-    "width": 1200,
-    "height": 1055
-  },
   "db-multi-instance-oracle-en.png": {
     "width": 1200,
     "height": 1058
@@ -6066,6 +6054,18 @@
   "db-multi-instance-oracle-ja.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-multi-instance-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-multi-instance-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-multi-instance-oracle-pro.png": {
+    "width": 1200,
+    "height": 1055
   },
   "db-multi-instance-oracle.png": {
     "width": 1200,
@@ -6135,15 +6135,15 @@
     "width": 1200,
     "height": 642
   },
-  "db-pq-tree-oracle-dma-en.png": {
+  "db-pq-tree-oracle-pro-en.png": {
     "width": 1200,
     "height": 840
   },
-  "db-pq-tree-oracle-dma-ja.png": {
+  "db-pq-tree-oracle-pro-ja.png": {
     "width": 1200,
     "height": 840
   },
-  "db-pq-tree-oracle-dma.png": {
+  "db-pq-tree-oracle-pro.png": {
     "width": 1200,
     "height": 840
   },
@@ -6183,15 +6183,15 @@
     "width": 1201,
     "height": 841
   },
-  "db-session-details-info-oracle-dma-en.png": {
+  "db-session-details-info-oracle-pro-en.png": {
     "width": 1201,
     "height": 1040
   },
-  "db-session-details-info-oracle-dma-ja.png": {
+  "db-session-details-info-oracle-pro-ja.png": {
     "width": 1200,
     "height": 1070
   },
-  "db-session-details-info-oracle-dma.png": {
+  "db-session-details-info-oracle-pro.png": {
     "width": 1200,
     "height": 1026
   },
@@ -6235,39 +6235,39 @@
     "width": 1200,
     "height": 538
   },
-  "db-session-history-oracle-dma-01-en.png": {
+  "db-session-history-oracle-pro-01-en.png": {
     "width": 1200,
     "height": 844
   },
-  "db-session-history-oracle-dma-01-ja.png": {
+  "db-session-history-oracle-pro-01-ja.png": {
     "width": 1200,
     "height": 848
   },
-  "db-session-history-oracle-dma-01.png": {
+  "db-session-history-oracle-pro-01.png": {
     "width": 1200,
     "height": 853
   },
-  "db-session-history-oracle-dma-02-en.png": {
+  "db-session-history-oracle-pro-02-en.png": {
     "width": 1200,
     "height": 995
   },
-  "db-session-history-oracle-dma-02-ja.png": {
+  "db-session-history-oracle-pro-02-ja.png": {
     "width": 1200,
     "height": 990
   },
-  "db-session-history-oracle-dma-02.png": {
+  "db-session-history-oracle-pro-02.png": {
     "width": 1200,
     "height": 1005
   },
-  "db-session-history-oracle-dma-03-en.png": {
+  "db-session-history-oracle-pro-03-en.png": {
     "width": 1200,
     "height": 520
   },
-  "db-session-history-oracle-dma-03-ja.png": {
+  "db-session-history-oracle-pro-03-ja.png": {
     "width": 1200,
     "height": 521
   },
-  "db-session-history-oracle-dma-03.png": {
+  "db-session-history-oracle-pro-03.png": {
     "width": 1200,
     "height": 519
   },
@@ -6323,29 +6323,29 @@
     "width": 1200,
     "height": 473
   },
-  "db-sql-details-oracle-dma-en.png": {
+  "db-sql-details-oracle-pro-en.png": {
     "width": 1200,
     "height": 728
   },
-  "db-sql-details-oracle-dma-ja.png": {
+  "db-sql-details-oracle-pro-ja.png": {
     "width": 1200,
     "height": 728
   },
-  "db-sql-details-oracle-dma.png": {
+  "db-sql-details-oracle-pro.png": {
     "width": 1200,
     "height": 728
   },
   "db-sql-details-postgresql-en.png": {
     "width": 1200,
-    "height": 712
+    "height": 747
   },
   "db-sql-details-postgresql-ja.png": {
     "width": 1200,
-    "height": 712
+    "height": 747
   },
   "db-sql-details-postgresql.png": {
     "width": 1200,
-    "height": 712
+    "height": 747
   },
   "db-sql-elapse-map-example.png": {
     "width": 1810,
@@ -6451,18 +6451,6 @@
     "width": 1201,
     "height": 405
   },
-  "db-stat-sga-size-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 552
-  },
-  "db-stat-sga-size-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 557
-  },
-  "db-stat-sga-size-oracle-dma.png": {
-    "width": 1200,
-    "height": 552
-  },
   "db-stat-sga-size-oracle-en.png": {
     "width": 1200,
     "height": 951
@@ -6470,6 +6458,18 @@
   "db-stat-sga-size-oracle-ja.png": {
     "width": 1200,
     "height": 951
+  },
+  "db-stat-sga-size-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 552
+  },
+  "db-stat-sga-size-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 557
+  },
+  "db-stat-sga-size-oracle-pro.png": {
+    "width": 1200,
+    "height": 552
   },
   "db-stat-sga-size-oracle.png": {
     "width": 1200,
@@ -6503,18 +6503,6 @@
     "width": 1200,
     "height": 1058
   },
-  "db-stat-table-space-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 722
-  },
-  "db-stat-table-space-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 730
-  },
-  "db-stat-table-space-oracle-dma.png": {
-    "width": 1200,
-    "height": 724
-  },
   "db-stat-table-space-oracle-en.png": {
     "width": 1200,
     "height": 1058
@@ -6522,6 +6510,18 @@
   "db-stat-table-space-oracle-ja.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-stat-table-space-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 722
+  },
+  "db-stat-table-space-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 730
+  },
+  "db-stat-table-space-oracle-pro.png": {
+    "width": 1200,
+    "height": 724
   },
   "db-stat-table-space-oracle.png": {
     "width": 1200,
@@ -6600,12 +6600,12 @@
     "height": 848
   },
   "dbx-install-agent-on-db-server-dma-ja.png": {
-    "width": 1086,
-    "height": 565
-  },
-  "dbx-install-agent-on-db-server-dma.png": {
     "width": 1629,
     "height": 848
+  },
+  "dbx-install-agent-on-db-server-dma.png": {
+    "width": 2172,
+    "height": 1130
   },
   "dbx-install-agent-on-db-server-en.png": {
     "width": 1086,
@@ -7991,6 +7991,10 @@
     "width": 489,
     "height": 146
   },
+  "k8s-agent-archi.png": {
+    "width": 3904,
+    "height": 4384
+  },
   "k8s-agent-install-check-en.png": {
     "width": 364,
     "height": 120
@@ -8245,15 +8249,15 @@
   },
   "k8s-app-list-en.png": {
     "width": 1200,
-    "height": 515
+    "height": 438
   },
   "k8s-app-list-ja.png": {
     "width": 1200,
-    "height": 515
+    "height": 436
   },
   "k8s-app-list.png": {
     "width": 1200,
-    "height": 515
+    "height": 438
   },
   "k8s-application-accesskey-en.png": {
     "width": 1200,
@@ -8851,6 +8855,54 @@
     "width": 1200,
     "height": 629
   },
+  "k8s-pending-pod-status-detail-en.png": {
+    "width": 1201,
+    "height": 677
+  },
+  "k8s-pending-pod-status-detail-ja.png": {
+    "width": 1201,
+    "height": 677
+  },
+  "k8s-pending-pod-status-detail.png": {
+    "width": 1200,
+    "height": 677
+  },
+  "k8s-pending-pod-status-en.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "k8s-pending-pod-status-filter-en.png": {
+    "width": 1099,
+    "height": 278
+  },
+  "k8s-pending-pod-status-filter-ja.png": {
+    "width": 1099,
+    "height": 278
+  },
+  "k8s-pending-pod-status-filter.png": {
+    "width": 1099,
+    "height": 278
+  },
+  "k8s-pending-pod-status-gr-qos-en.png": {
+    "width": 1200,
+    "height": 379
+  },
+  "k8s-pending-pod-status-gr-qos-ja.png": {
+    "width": 1200,
+    "height": 380
+  },
+  "k8s-pending-pod-status-gr-qos.png": {
+    "width": 1200,
+    "height": 381
+  },
+  "k8s-pending-pod-status-ja.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-pending-pod-status.png": {
+    "width": 1200,
+    "height": 675
+  },
   "k8s-performance-summary-en.png": {
     "width": 1211,
     "height": 1360
@@ -9065,15 +9117,15 @@
   },
   "k8s-resource-node-detail-en.png": {
     "width": 1200,
-    "height": 695
+    "height": 755
   },
   "k8s-resource-node-detail-ja.png": {
     "width": 1200,
-    "height": 696
+    "height": 753
   },
   "k8s-resource-node-detail.png": {
     "width": 1200,
-    "height": 696
+    "height": 756
   },
   "k8s-resource-node-list-cl-en.png": {
     "width": 967,
@@ -9640,11 +9692,11 @@
     "height": 832
   },
   "log-getting-started-en.png": {
-    "width": 1201,
+    "width": 1200,
     "height": 776
   },
   "log-getting-started-ja.png": {
-    "width": 1200,
+    "width": 1201,
     "height": 778
   },
   "log-getting-started.png": {
@@ -10267,18 +10319,6 @@
     "width": 1200,
     "height": 972
   },
-  "metrics-chart-all-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 1020
-  },
-  "metrics-chart-all-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 1020
-  },
-  "metrics-chart-all-oracle-dma.png": {
-    "width": 1200,
-    "height": 1011
-  },
   "metrics-chart-all-oracle-en.png": {
     "width": 1200,
     "height": 1006
@@ -10286,6 +10326,18 @@
   "metrics-chart-all-oracle-ja.png": {
     "width": 1200,
     "height": 1006
+  },
+  "metrics-chart-all-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 1020
+  },
+  "metrics-chart-all-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 1020
+  },
+  "metrics-chart-all-oracle-pro.png": {
+    "width": 1200,
+    "height": 1011
   },
   "metrics-chart-all-oracle.png": {
     "width": 1200,
@@ -10403,18 +10455,6 @@
     "width": 800,
     "height": 454
   },
-  "metrics-chart-example-01-oracle-dma-en.png": {
-    "width": 800,
-    "height": 457
-  },
-  "metrics-chart-example-01-oracle-dma-ja.png": {
-    "width": 800,
-    "height": 441
-  },
-  "metrics-chart-example-01-oracle-dma.png": {
-    "width": 800,
-    "height": 458
-  },
   "metrics-chart-example-01-oracle-en.png": {
     "width": 800,
     "height": 454
@@ -10422,6 +10462,18 @@
   "metrics-chart-example-01-oracle-ja.png": {
     "width": 800,
     "height": 441
+  },
+  "metrics-chart-example-01-oracle-pro-en.png": {
+    "width": 800,
+    "height": 457
+  },
+  "metrics-chart-example-01-oracle-pro-ja.png": {
+    "width": 800,
+    "height": 441
+  },
+  "metrics-chart-example-01-oracle-pro.png": {
+    "width": 800,
+    "height": 458
   },
   "metrics-chart-example-01-oracle.png": {
     "width": 800,
@@ -10523,18 +10575,6 @@
     "width": 1200,
     "height": 583
   },
-  "metrics-chart-example-02-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 585
-  },
-  "metrics-chart-example-02-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 585
-  },
-  "metrics-chart-example-02-oracle-dma.png": {
-    "width": 1200,
-    "height": 521
-  },
   "metrics-chart-example-02-oracle-en.png": {
     "width": 1200,
     "height": 351
@@ -10542,6 +10582,18 @@
   "metrics-chart-example-02-oracle-ja.png": {
     "width": 1200,
     "height": 351
+  },
+  "metrics-chart-example-02-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 585
+  },
+  "metrics-chart-example-02-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 585
+  },
+  "metrics-chart-example-02-oracle-pro.png": {
+    "width": 1200,
+    "height": 521
   },
   "metrics-chart-example-02-oracle.png": {
     "width": 1200,
@@ -10679,18 +10731,6 @@
     "width": 800,
     "height": 90
   },
-  "metrics-chart-widget-upper-oracle-dma-en.png": {
-    "width": 1200,
-    "height": 156
-  },
-  "metrics-chart-widget-upper-oracle-dma-ja.png": {
-    "width": 1200,
-    "height": 150
-  },
-  "metrics-chart-widget-upper-oracle-dma.png": {
-    "width": 1200,
-    "height": 153
-  },
   "metrics-chart-widget-upper-oracle-en.png": {
     "width": 1200,
     "height": 139
@@ -10698,6 +10738,18 @@
   "metrics-chart-widget-upper-oracle-ja.png": {
     "width": 1200,
     "height": 139
+  },
+  "metrics-chart-widget-upper-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 156
+  },
+  "metrics-chart-widget-upper-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 150
+  },
+  "metrics-chart-widget-upper-oracle-pro.png": {
+    "width": 1200,
+    "height": 153
   },
   "metrics-chart-widget-upper-oracle.png": {
     "width": 1200,
@@ -10989,81 +11041,69 @@
   },
   "mobile-app-main-tab.png": {
     "width": 591,
-    "height": 97
+    "height": 133
   },
   "mobile-app-notice.png": {
     "width": 45,
     "height": 45
   },
-  "mobile-app-org-en.png": {
-    "width": 591,
-    "height": 1184
-  },
-  "mobile-app-org-ja.png": {
-    "width": 591,
-    "height": 1184
-  },
-  "mobile-app-org.png": {
-    "width": 591,
-    "height": 1184
-  },
   "mobile-app-project-alert-en.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-alert-ja.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-alert.png": {
     "width": 591,
-    "height": 1184
-  },
-  "mobile-app-project-all-status-en.png": {
-    "width": 591,
-    "height": 195
-  },
-  "mobile-app-project-all-status-ja.png": {
-    "width": 591,
-    "height": 195
-  },
-  "mobile-app-project-all-status.png": {
-    "width": 591,
-    "height": 195
+    "height": 1159
   },
   "mobile-app-project-card-en.png": {
     "width": 591,
-    "height": 644
+    "height": 549
   },
   "mobile-app-project-card-ja.png": {
     "width": 591,
-    "height": 644
+    "height": 552
   },
   "mobile-app-project-card.png": {
     "width": 591,
-    "height": 644
+    "height": 554
   },
   "mobile-app-project-dashboard-en.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-dashboard-ja.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-dashboard.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-setting-en.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-setting-ja.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-setting.png": {
+    "width": 591,
+    "height": 1159
+  },
+  "mobile-app-search-result-en.png": {
+    "width": 591,
+    "height": 1184
+  },
+  "mobile-app-search-result-ja.png": {
+    "width": 591,
+    "height": 1184
+  },
+  "mobile-app-search-result.png": {
     "width": 591,
     "height": 1184
   },
@@ -12395,6 +12435,22 @@
     "width": 2384,
     "height": 702
   },
+  "release-mobile-app-add-home.png": {
+    "width": 400,
+    "height": 850
+  },
+  "release-mobile-app-favorite.png": {
+    "width": 400,
+    "height": 334
+  },
+  "release-mobile-app-logining.png": {
+    "width": 400,
+    "height": 241
+  },
+  "release-mobile-app-test-alert.png": {
+    "width": 400,
+    "height": 849
+  },
   "release-multi-tx-chartview.png": {
     "width": 826,
     "height": 122
@@ -12999,6 +13055,18 @@
     "width": 1273,
     "height": 652
   },
+  "server-install-oracle-solaris-en.png": {
+    "width": 1270,
+    "height": 998
+  },
+  "server-install-oracle-solaris-ja.png": {
+    "width": 1270,
+    "height": 1024
+  },
+  "server-install-oracle-solaris.png": {
+    "width": 1273,
+    "height": 1001
+  },
   "server-install-unx-aix-en.png": {
     "width": 1264,
     "height": 830
@@ -13209,15 +13277,15 @@
   },
   "server-select-os-en.png": {
     "width": 1200,
-    "height": 767
+    "height": 911
   },
   "server-select-os-ja.png": {
     "width": 1200,
-    "height": 788
+    "height": 935
   },
   "server-select-os.png": {
     "width": 1200,
-    "height": 724
+    "height": 869
   },
   "server-server-event-en.png": {
     "width": 1192,
