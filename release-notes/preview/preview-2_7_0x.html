@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.29255855.css">
-<script src="/whatap-docs/assets/js/runtime~main.e711d503.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.f09506f4.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.139022e8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -71,8 +71,56 @@
 <li>
 <p><code class="Fixed">Fixed</code> 구버전의 <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 안내 메시지의 로케일 깨짐 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#database">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">데이터베이스</span> 탭에서 <span class="uitext">인스턴스</span> 항목의 기본값이 <span class="uitext">전체</span>로 설정되는 문제 수정</p></div></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-270a1">Preview 2.7.0.a1<a class="hash-link" aria-label="Preview 2.7.0.a1에 대한 직접 링크" title="Preview 2.7.0.a1에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#preview-270a1">​</a></h2><p>2024년 06월 25일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#kubernetes">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 <em><strong>Container</strong></em> 뷰에서 블록 이 정상 개수로 표시되지 않는 문제 수정</p></div></section>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#database">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통<a class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#공통-1">​</a></h4><ul>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 일부 위젯의 이름 변경</p>
+<ul>
+<li>
+<p><strong>Active sessions</strong> → <em><strong>Active Session Count</strong></em></p>
+</li>
+<li>
+<p><strong>Long Active Sessions</strong> → <em><strong>Long Active Session Count</strong></em></p>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Changed">Changed</code> 다음 메뉴 경로에서 <span class="uitext">액티브 세션</span> 섹션의 항목을 선택하면 나타나는 <span class="uitext">세션 상세 정보</span> 창을 통해 <span class="uitext">분석</span> &gt; <span class="uitext">세션 히스토리</span> 메뉴로 이동하면 해당 세션이 수행되는 시간의 전후 30분을 기본 조회하도록 변경</p>
+<ul>
+<li><span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span></li>
+<li><span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span></li>
+</ul>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">데이터베이스</span> 탭에서 <span class="uitext">인스턴스</span> 항목의 기본값이 <span class="uitext">전체</span>로 설정되는 문제 수정</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-dma">Oracle DMA<a class="hash-link" aria-label="Oracle DMA에 대한 직접 링크" title="Oracle DMA에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#oracle-dma">​</a></h4><ul>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 일부 위젯의 이름 변경</p>
+<ul>
+<li><strong>Bandwidth</strong>  → <em><strong>[RAC] Interconnect Bandwidth</strong></em></li>
+<li><strong>Load Balance</strong> → <em><strong>[RAC] Load Balance</strong></em></li>
+<li><em><strong>Load Balance</strong></em> 위젯의 <strong>physical reads</strong> 필드 이름을 <em><strong>session logical reads</strong></em> 필드로 변경</li>
+</ul>
+</li>
+<li>
+<p><code class="Changed">Changed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">테이블스페이스 사이즈</span> 메뉴에서 차트의 범례를 표시하는 방식 변경</p>
+<ul>
+<li>
+<p>Multidb이면 중간 구분자를 언더바(_) 에서 하이픈(-)으로 변경</p>
+</li>
+<li>
+<p>Multidb가 아니면 중간 구분자를 표시하지 않도록 변경</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 <em><strong>Interconnect Bandwidth</strong></em> 위젯과 <em><strong>Load Balance</strong></em> 위젯의 인스턴스 순서를 인스턴스 셀렉터의 순서와 동일하게 보여지도록 수정</p>
+</li>
+<li>
+<p><code class="Fixed">Fixed</code> <span class="uitext">분석</span> &gt; <span class="uitext">세션 히스토리</span> 메뉴에서 차트 데이터와 테이블 데이터가 일치하지 않는 문제 수정</p>
+</li>
+</ul></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-270a1">Preview 2.7.0.a1<a class="hash-link" aria-label="Preview 2.7.0.a1에 대한 직접 링크" title="Preview 2.7.0.a1에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#preview-270a1">​</a></h2><p>2024년 06월 25일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#kubernetes">​</a></h3><p><code class="Fixed">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 <em><strong>Container</strong></em> 뷰에서 블록이 정상 개수로 표시되지 않는 문제 수정</p></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-270a0">Preview 2.7.0.a0<a class="hash-link" aria-label="Preview 2.7.0.a0에 대한 직접 링크" title="Preview 2.7.0.a0에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#preview-270a0">​</a></h2><p>2024년 06월 18일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-1"><code>Application</code><a class="hash-link" aria-label="application-1에 대한 직접 링크" title="application-1에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_7_0x#application-1">​</a></h3><ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">인스턴스 성능 관리</span> &gt; <span class="uitext">힙 덤프</span> 메뉴에서 힙 덤프 확보 관련 안내 메시지가 항상 표시되도록 변경</p>
