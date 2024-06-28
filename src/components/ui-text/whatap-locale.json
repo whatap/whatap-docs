@@ -57563,6 +57563,11 @@
     "ja": "ネームスペース状況",
     "ko": "네임스페이스 현황"
   },
+  "side_serviceDashboardOld": {
+    "en": "APP. Service Dashboard",
+    "ja": "APPサービス",
+    "ko": "애플리케이션 서비스 대시보드"
+  },
   "side_serviceDashboard": {
     "en": "APP. Service Dashboard",
     "ja": "APPサービス",
