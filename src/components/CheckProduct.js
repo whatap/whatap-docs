@@ -34,8 +34,6 @@ export default function CheckProduct() {
         product = '-server';
     } else if (cProdt === 'kubernetes') {
         product = '-k8s';
-    } else if (cProdt === 'postgresql-v1') {
-        product = '-postgresql-v1';
     } else if (cProdt === 'postgresql') {
         product = '-postgresql';
     } else if (cProdt === 'oracle-cloud') {
@@ -44,10 +42,8 @@ export default function CheckProduct() {
         product = '-oracle-pro';
     } else if (cProdt === 'oracle') {
         product = '-oracle';
-    } else if (cProdt === 'mysql-rds') {
-        product = '-mysql-rds';
-    } else if (cProdt === 'mysql-v1') {
-        product = '-mysql-v1';
+    } else if (cProdt === 'oracle-v2') {
+        product = '-oracle';
     } else if (cProdt === 'mysql') {
         product = '-mysql';
     } else if (cProdt === 'mssql') {

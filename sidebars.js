@@ -1726,6 +1726,145 @@ const sidebars = {
       ],
     }
   ],
+  dboracleV2Sidebar: [
+    {
+      type: 'category',
+      label: 'Oracle V2 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'oracle-v2/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'oracle-v2/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-v2/install-agent',
+            'oracle-v2/after-install-agent',
+            'oracle-v2/troubleshooting',
+          ],
+        },
+        'oracle-v2/agent-settings',
+        'oracle-v2/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v2/dashboard-intro'
+              },
+              items: [
+                'oracle-v2/instance-list',
+                'oracle-v2/instance-monitoring',
+                'oracle-v2/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v2/flex-board',
+              },
+              items: [
+                'oracle-v2/flexboard-template',
+                'oracle-v2/flexboard-create',
+                'oracle-v2/flexboard-manage',
+                'oracle-v2/flexboard-metric-widget',
+                'oracle-v2/flexboard-widget-manage',
+                'oracle-v2/flexboard-mode',
+                'oracle-v2/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle-v2/analysis-count-trend',
+                'oracle-v2/analysis-lock-and-deadlock',
+                'oracle-v2/analysis-session-history',
+                // 'oracle-v2/analysis-compare-top-sql',
+                'oracle-v2/analysis-pq-tree',
+                'oracle-v2/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v2/metrics-intro'
+              },
+              items: [
+                'oracle-v2/metrics-data-list',
+                'oracle-v2/metrics-chart',
+                'oracle-v2/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle-v2/stat',
+                'oracle-v2/table-space-size',
+                'oracle-v2/sga-size',
+                'oracle-v2/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v2/set-notice',
+              },
+              items: [
+                'oracle-v2/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'oracle-v2/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'oracle-v2/metric-warning-notice',
+                'oracle-v2/set-notification-message',
+                'oracle-v2/set-event-detect-anomal',
+                'oracle-v2/set-receive-event',
+                'oracle-v2/set-event-history',
+                'oracle-v2/set-event-format',
+              ],
+            },
+          ]
+        }
+      ],
+    }
+  ],
   dboracledmaSidebar: [
     {
       type: 'category',
