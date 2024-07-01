@@ -20,12 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'install-agent',
 	title: '에이전트 설치',
-	description: 'OpenTelemetry 에이전트 설치 방법을 안내합니다.',
-	tags: [
-		'OpenTelemetry',
-		'Extensions',
-		'설치'
-	]
+	description: 'OpenTelemetry 에이전트 설치 방법을 안내합니다.'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -39,33 +34,12 @@ const metadata = {
   "draft": false,
   "unlisted": false,
   "editUrl": "undefined/docs/opentelemetry/install-agent.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": "OpenTelemetry",
-      "permalink": "/whatap-docs/tags/open-telemetry"
-    },
-    {
-      "inline": true,
-      "label": "Extensions",
-      "permalink": "/whatap-docs/tags/extensions"
-    },
-    {
-      "inline": true,
-      "label": "설치",
-      "permalink": "/whatap-docs/tags/설치"
-    }
-  ],
+  "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "install-agent",
     "title": "에이전트 설치",
-    "description": "OpenTelemetry 에이전트 설치 방법을 안내합니다.",
-    "tags": [
-      "OpenTelemetry",
-      "Extensions",
-      "설치"
-    ]
+    "description": "OpenTelemetry 에이전트 설치 방법을 안내합니다."
   },
   "sidebar": "otelSidebar",
   "previous": {

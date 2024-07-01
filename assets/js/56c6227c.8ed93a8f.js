@@ -20,11 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'introduction',
 	title: 'OpenTelemetry',
-	description: 'OpenTelemetry Collector의 수집 정보를 와탭 모니터링 서비스에서 확인할 수 있는 방법을 안내합니다.',
-	tags: [
-		'OpenTelemetry',
-		'Extensions'
-	]
+	description: 'OpenTelemetry Collector의 수집 정보를 와탭 모니터링 서비스에서 확인할 수 있는 방법을 안내합니다.'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -38,27 +34,12 @@ const metadata = {
   "draft": false,
   "unlisted": false,
   "editUrl": "undefined/docs/opentelemetry/introduction.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": "OpenTelemetry",
-      "permalink": "/whatap-docs/tags/open-telemetry"
-    },
-    {
-      "inline": true,
-      "label": "Extensions",
-      "permalink": "/whatap-docs/tags/extensions"
-    }
-  ],
+  "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "introduction",
     "title": "OpenTelemetry",
-    "description": "OpenTelemetry Collector의 수집 정보를 와탭 모니터링 서비스에서 확인할 수 있는 방법을 안내합니다.",
-    "tags": [
-      "OpenTelemetry",
-      "Extensions"
-    ]
+    "description": "OpenTelemetry Collector의 수집 정보를 와탭 모니터링 서비스에서 확인할 수 있는 방법을 안내합니다."
   },
   "sidebar": "otelSidebar",
   "next": {

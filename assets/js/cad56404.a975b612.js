@@ -20,12 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'set-agent',
 	title: '설정하기',
-	description: '에이전트 설정을 통해 OpenTelemetry로부터 다양한 지표를 수집할 수 있습니다.',
-	tags: [
-		'OpenTelemetry',
-		'Extensions',
-		'에이전트'
-	]
+	description: '에이전트 설정을 통해 OpenTelemetry로부터 다양한 지표를 수집할 수 있습니다.'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -39,33 +34,12 @@ const metadata = {
   "draft": false,
   "unlisted": false,
   "editUrl": "undefined/docs/opentelemetry/set-agent.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": "OpenTelemetry",
-      "permalink": "/whatap-docs/tags/open-telemetry"
-    },
-    {
-      "inline": true,
-      "label": "Extensions",
-      "permalink": "/whatap-docs/tags/extensions"
-    },
-    {
-      "inline": true,
-      "label": "에이전트",
-      "permalink": "/whatap-docs/tags/에이전트"
-    }
-  ],
+  "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "set-agent",
     "title": "설정하기",
-    "description": "에이전트 설정을 통해 OpenTelemetry로부터 다양한 지표를 수집할 수 있습니다.",
-    "tags": [
-      "OpenTelemetry",
-      "Extensions",
-      "에이전트"
-    ]
+    "description": "에이전트 설정을 통해 OpenTelemetry로부터 다양한 지표를 수집할 수 있습니다."
   },
   "sidebar": "otelSidebar",
   "previous": {
