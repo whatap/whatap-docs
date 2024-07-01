@@ -43,7 +43,7 @@ export default function CheckProduct() {
     } else if (cProdt === 'oracle') {
         product = '-oracle';
     } else if (cProdt === 'oracle-v2') {
-        product = '-oracle';
+        product = '-oracle-pro';
     } else if (cProdt === 'mysql') {
         product = '-mysql';
     } else if (cProdt === 'mssql') {
