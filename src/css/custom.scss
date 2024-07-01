@@ -393,6 +393,17 @@ html[lang='ja-JP'] {
 .menu__list-item.newfunc > a {
   display: inline-block;
 }
+// 베타 필요??
+// .menu__list-item.beta > a::after {
+//   display: inline;
+//   content: 'Beta';
+//   position: absolute;
+//   font-style: italic;
+//   font-weight: bold;
+// }
+// .menu__list-item.beta > a {
+//   display: inline-block;
+// }
 .menu__list-item.newfunc > a::after {
   display: inline;
   content: 'New';
@@ -903,9 +914,59 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
+    counter-reset: steps;
     .docusaurus-mermaid-container {
       background-color: #fff;
       margin: 8px 0;
+    }
+    .steps {
+      display: block;
+      h2 {
+        margin-left: -37px;
+        position: relative;
+        top: -3px;
+        font-size: 28px;
+      }
+      h2::before {
+        counter-increment: steps;
+        content: counter(steps);
+        display: inline-block;
+        border: 2px solid var(--ifm-font-code-color);
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        font-weight: 200;
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        position: relative;
+        top: -4px;
+        left: -10px
+      }
+      section {
+        padding-left: 28px;
+        padding-bottom: 20px;
+        margin-top: 24px;
+        border-left: 2px solid var(--ifm-font-code-color);
+        margin-left: 20px;
+        h2 {
+          padding-top: 0;
+        }
+      }
+      section > section {
+        padding-left: 0px;
+        padding-bottom: 20px;
+        margin-top: 24px;
+        border-left: none;
+        margin-left: 0px;
+        h2 {
+          padding-top: 0;
+        }
+      }
+      section + section {
+        margin-top: 0;
+      }
     }
     h1 {
       padding-top: 8px;
@@ -1512,6 +1573,17 @@ main {
       color: #fff;
       border: none;
     }
+    // k8s QoS Class
+    code.grnt {
+      background-color: #ff0d00;
+      color: #fff;
+      border: none;
+    }
+    code.bef {
+      background-color: #969696f6;
+      color: #fff;
+      border: none;
+    } 
     code.changelog-service {
       background-color: rgb(177, 177, 177);
       color: #fff;
@@ -1544,6 +1616,12 @@ main {
     code.Feature {
       background-color: #e9f7ed;
       color: #00b543;
+      border: none;
+      padding: 0 5px 0 5px;
+    }
+    code.Features {
+      background-color: #fde3f9;
+      color: #fc41e0;
       border: none;
       padding: 0 5px 0 5px;
     }
@@ -1990,6 +2068,21 @@ main {
           border: none;
           margin-top: 10px;
         }
+      }
+    }
+    // 피처 프로젝트
+    div[class*="flex-container-s features"] {
+      width: 100%;
+      margin-top: 22px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      div.int > code.Features {
+        background-color: #fde3f9;
+        color: #fc41e0;
+        border: none;
+        padding: 0 5px 0 5px;
       }
     }
     div.flex-container-s:has([class*='admonitionContent']) {

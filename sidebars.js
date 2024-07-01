@@ -3223,14 +3223,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_5_x',
+            id: 'release-notes/service/service-2_6_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_5_x',
+              id: 'release-notes/service/service-2_6_x',
               className: 'new',
             },
+            'release-notes/service/service-2_5_x',
             'release-notes/service/service-2_4_x',
             'release-notes/service/service-2_3_x',
             'release-notes/service/service-2_2_x',
@@ -3239,7 +3240,6 @@ const sidebars = {
             'release-notes/service/service-1_114_x',
             'release-notes/service/service-1_112_x',
             'release-notes/service/service-1_110_x',
-            'release-notes/service/service-1_108_x',
             'release-notes/service/service-previous',
           ]
         },
@@ -3401,7 +3401,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1_6_6',
@@ -3410,7 +3410,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_6_6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_6_5',
                 'release-notes/python/python-1_6_4',
@@ -3489,14 +3489,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_6_0',
+                id: 'release-notes/server/server-2_6_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_0',
+                  id: 'release-notes/server/server-2_6_1',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_0',
                 'release-notes/server/server-2_5_9',
                 'release-notes/server/server-2_5_8',
                 'release-notes/server/server-2_5_7',
@@ -3507,7 +3508,6 @@ const sidebars = {
                 'release-notes/server/server-2_5_1',
                 'release-notes/server/server-2_5_0',
                 'release-notes/server/server-2_4_9',
-                'release-notes/server/server-2_4_8',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4017,6 +4017,15 @@ const sidebars = {
           type: 'link',
           label: 'Network Performance Monitoring',
           href: 'npm/introduction',
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'link',
+          label: 'Feature Project',
+          href: 'features/introduction',
         },
         {
           type: 'html',
@@ -5077,6 +5086,41 @@ const sidebars = {
       ]
     }
   ],
+  featuremonitorSidebar: [
+    {
+      type: 'category',
+      label: 'Feature 프로젝트',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'features/introduction',
+      },
+      items: [
+        // 'features/kafka-introduction',
+        {
+          type: 'doc',
+          id: 'features/kafka-introduction',
+          // className: 'beta'
+        },
+        // 'kafka/install-agent',
+        // {
+        //   type: 'category',
+        //   label: '주요 메뉴 알아보기',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   items: [
+        //     'kafka/dashboard',
+        //     {
+        //       type: 'doc',
+        //       id: 'kafka/warning-notice-v2',
+        //       className: 'newfunc'
+        //     },
+        //   ],
+        // }
+      ]
+    }
+  ],
   // integSidebar: [
   //   {
   //     type: 'category',
@@ -5366,7 +5410,9 @@ const sidebars = {
               },
               items: [
                 'server/server-os/server-linux',
-                'server/server-os/server-aix',
+                'server/server-os/server-unix',
+                // 'server/server-os/server-aix',
+                // 'server/server-os/server-solaris',
                 'server/server-os/server-windows',
                 'server/server-os/server-other',
                 'server/server-os/server-aws',
@@ -5566,6 +5612,7 @@ const sidebars = {
       },
       items: [
         'kubernetes/before-starting',
+        'kubernetes/agent-architecture',
         {
           type: 'doc',
           label: '지원 환경',
@@ -5716,6 +5763,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/resource-pod-list',
+                'kubernetes/pending-pod-status',
                 'kubernetes/resource-application-list',
                 'kubernetes/deployment-list',
               ],

@@ -45,7 +45,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 
   ```sql title="SQL"
   create user whatap with password 'DB Password'; 
-  grant pg_read_all_stats to whatap;
+  grant pg_monitor to whatap;
   ```
 
 - PostgreSQL 10バージョン未満
@@ -60,20 +60,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
   データベースモニタリングでは、進行中のセッションを終了できる<UI>Kill Session</UI>機能を提供します。この機能を使用するには、次のように権限を設定してください。
 
   ```sql title="SQL"
-  alter user whatap with superuser;
-  ```
-
-- AWS RDS環境でKill session機能を使用する場合
-
-  ```sql title="SQL"
-  grant rds_superuser to whatap;
-  ```
-
-- wal_countを収集する場合
-
-  ```sql title="SQL"
-  grant execute on function pg_ls_dir(text) to whatap;  # EDB使用時
-  alter user whatap with superuser;
+  grant pg_signal_backend to whatap;
   ```
 
 - cacheを収集する場合
