@@ -920,12 +920,52 @@ main {
       margin: 8px 0;
     }
     .steps {
+      display: block;
+      h2 {
+        margin-left: -37px;
+        position: relative;
+        top: -3px;
+        font-size: 28px;
+      }
       h2::before {
         counter-increment: steps;
-        content: "" counter(steps) ": ";
+        content: counter(steps);
+        display: inline-block;
+        border: 2px solid var(--ifm-font-code-color);
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        font-weight: 200;
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        position: relative;
+        top: -4px;
+        left: -10px
       }
-      > * {
-        margin-left: 15px;
+      section {
+        padding-left: 28px;
+        padding-bottom: 20px;
+        margin-top: 24px;
+        border-left: 2px solid var(--ifm-font-code-color);
+        margin-left: 20px;
+        h2 {
+          padding-top: 0;
+        }
+      }
+      section > section {
+        padding-left: 0px;
+        padding-bottom: 20px;
+        margin-top: 24px;
+        border-left: none;
+        margin-left: 0px;
+        h2 {
+          padding-top: 0;
+        }
+      }
+      section + section {
+        margin-top: 0;
       }
     }
     h1 {

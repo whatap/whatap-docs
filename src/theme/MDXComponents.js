@@ -19,6 +19,7 @@ import Cmdname from '@site/src/components/ui-text/locale-text.js';
 import Appname from '@site/src/components/ui-text/mobile-locale.js';
 import ScrollToLink from '@site/src/components/OnClickeventOffset.js';
 import CurProd from '@site/src/components/GetProductName.js';
+import Steps from '@site/src/components/Steps.js';
 
 export default {
   // 기본 mapping 재사용
@@ -40,5 +41,6 @@ export default {
   Cmdname,
   Appname,
   ScrollToLink,
-  CurProd
+  CurProd,
+  Steps
 };
