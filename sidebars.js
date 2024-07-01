@@ -1753,7 +1753,20 @@ const sidebars = {
             'oracle-v2/troubleshooting',
           ],
         },
-        'oracle-v2/agent-settings',
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-v2/agent-settings'
+          },
+          items: [
+            'oracle-v2/agent-dbx-settings',
+            'oracle-v2/agent-xos-settings',
+          ],
+        },
         'oracle-v2/agent-manage',
         {
           type: 'category',
