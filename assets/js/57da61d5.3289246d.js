@@ -143,6 +143,10 @@ const toc = [{
   "id": "server-agent",
   "level": 4
 }, {
+  "value": "Server AIX agent",
+  "id": "server-aix-agent",
+  "level": 4
+}, {
   "value": "Kubernetes agent",
   "id": "kubernetes-agent",
   "level": 4
@@ -227,22 +231,22 @@ function _createMdxContent(props) {
                 children: "Application"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053020whatap-apm-java-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003044whatap-apm-java-monitoring.pdf",
                   children: "Java"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053021whatap-apm-php-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003044whatap-apm-php-monitoring.pdf",
                   children: "PHP"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053020whatap-apm-nodejs-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003044whatap-apm-nodejs-monitoring.pdf",
                   children: "Node.js"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053021whatap-apm-python-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003044whatap-apm-python-monitoring.pdf",
                   children: "Python"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053020whatap-apm-dotnet-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003043whatap-apm-dotnet-monitoring.pdf",
                   children: ".NET"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053020whatap-apm-go-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003043whatap-apm-go-monitoring.pdf",
                   children: "Go"
                 })]
               })]
@@ -251,7 +255,7 @@ function _createMdxContent(props) {
                 children: "Server"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053024whatap-server-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-server-monitoring.pdf",
                   children: "Server"
                 })
               })]
@@ -260,7 +264,7 @@ function _createMdxContent(props) {
                 children: "Container"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-kubernetes-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-kubernetes-monitoring.pdf",
                   children: "Kubernetes"
                 })
               })]
@@ -269,31 +273,31 @@ function _createMdxContent(props) {
                 children: "Database"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053022whatap-db-postgresql-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-db-postgresql-monitoring.pdf",
                   children: "PostgreSQL"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053022whatap-db-oracle-monitoring.pdf",
+                  href: "hhttps://content.whatap.io/24/07/01/003046whatap-db-oracle-monitoring.pdf",
                   children: "Oracle"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053022whatap-db-mysql-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003045whatap-db-mysql-monitoring.pdf",
                   children: "MySQL"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053022whatap-db-mssql-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003045whatap-db-mssql-monitoring.pdf",
                   children: "SQL Server"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-db-tibero-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-db-tibero-monitoring.pdf",
                   children: "Tibero"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053022whatap-db-cubrid-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003045whatap-db-cubrid-monitoring.pdf",
                   children: "CUBRID"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053021whatap-db-altibase-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003045whatap-db-altibase-monitoring.pdf",
                   children: "Altibase"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-db-redis-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-db-redis-monitoring.pdf",
                   children: "Redis"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053022whatap-db-mongodb-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003045whatap-db-mongodb-monitoring.pdf",
                   children: "MongoDB"
                 })]
               })]
@@ -302,13 +306,13 @@ function _createMdxContent(props) {
                 children: "AWS"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053019whatap-amazon-cloudwatch.pdf",
+                  href: "https://content.whatap.io/24/07/01/003043whatap-amazon-cloudwatch.pdf",
                   children: "Amazon CloudWatch"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053019whatap-amazon-ecs.pdf",
+                  href: "https://content.whatap.io/24/07/01/003043whatap-amazon-ecs.pdf",
                   children: "Amazon ECS"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053021whatap-aws-log-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003044whatap-aws-log-monitoring.pdf",
                   children: "AWS Log"
                 })]
               })]
@@ -317,7 +321,7 @@ function _createMdxContent(props) {
                 children: "Azure"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053021whatap-azure.pdf",
+                  href: "https://content.whatap.io/24/07/01/003044whatap-azure.pdf",
                   children: "Azure Monitor"
                 })
               })]
@@ -326,7 +330,7 @@ function _createMdxContent(props) {
                 children: "NCP"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-ncloud.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-ncloud.pdf",
                   children: "Naver Cloud Monitoring"
                 })
               })]
@@ -335,7 +339,7 @@ function _createMdxContent(props) {
                 children: "OCI"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-oracle-cloud.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-oracle-cloud.pdfs",
                   children: "Oracle Cloud Monitor"
                 })
               })]
@@ -344,7 +348,7 @@ function _createMdxContent(props) {
                 children: "NPM"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-network-performance-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-network-performance-monitoring.pdf",
                   children: "Network Performance Monitoring"
                 })
               })]
@@ -353,7 +357,7 @@ function _createMdxContent(props) {
                 children: "URL"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053024whatap-url-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-url-monitoring.pdf",
                   children: "URL"
                 })
               })]
@@ -362,7 +366,7 @@ function _createMdxContent(props) {
                 children: "Log"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-log-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-log-monitoring.pdf",
                   children: "Log"
                 })
               })]
@@ -371,7 +375,7 @@ function _createMdxContent(props) {
                 children: "Browser"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053021whatap-browser-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003045whatap-browser-monitoring.pdf",
                   children: "Browser"
                 })
               })]
@@ -380,16 +384,16 @@ function _createMdxContent(props) {
                 children: "기타"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-extensions.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-extensions.pdf",
                   children: "확장 도구(Extensions)"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/03/053023whatap-manage.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-manage.pdf",
                   children: "관리 기능"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/05/03/033451whatap-open-api.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-open-api.pdf",
                   children: "Open API"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/06/04/045333whatap-reference.pdf",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-reference.pdfs",
                   children: "참조 문서"
                 })]
               })]
@@ -481,6 +485,12 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
           typeName: "server",
           pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .serverList */ .IK
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "server-aix-agent",
+          children: "Server AIX agent"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_dl_release_notes_PdfDownload__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          typeName: "server-aix",
+          pdfList: _site_src_components_dl_release_notes_pdfList_js__WEBPACK_IMPORTED_MODULE_3__/* .serveraixList */ .y8
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("hr", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
           id: "kubernetes-agent",
           children: "Kubernetes agent"
@@ -956,9 +966,16 @@ async function getStaticProps() {
 /* harmony export */   vZ: () => (/* binding */ xosList),
 /* harmony export */   vy: () => (/* binding */ phpList),
 /* harmony export */   wo: () => (/* binding */ nodejsList),
-/* harmony export */   xl: () => (/* binding */ javaBatchList)
+/* harmony export */   xl: () => (/* binding */ javaBatchList),
+/* harmony export */   y8: () => (/* binding */ serveraixList)
 /* harmony export */ });
 const svList = [
+    {
+        "name": 'Service-2.5.x',
+        "date": '2024-06-25',
+        "url": 'https://img.whatap.io/24/07/01/011308service-25x.pdf',
+        "docs": '/release-notes/service/service-2_5_x'
+    },
     {
         "name": 'Service-2.4.x',
         "date": '2024-05-08',
@@ -1177,6 +1194,18 @@ const svList = [
     }
 ];
 const javaList = [
+    {
+        "name": 'Java-agent-v2.2.35',
+        "date": '2024-06-20',
+        "url": 'https://img.whatap.io/24/07/01/011308java-agent-v2235.pdf',
+        "docs": '/release-notes/java/java-2_2_35s'
+    },
+    {
+        "name": 'Java-agent-v2.2.34',
+        "date": '2024-06-14',
+        "url": 'https://img.whatap.io/24/07/01/011308java-agent-v2234.pdf',
+        "docs": '/release-notes/java/java-2_2_34'
+    },
     {
         "name": 'Java-agent-v2.2.33',
         "date": '2024-05-28',
@@ -1440,6 +1469,12 @@ const javaBatchList = [
 ];
 const phpList = [
     {
+        "name": 'php-agent-v2.8.0',
+        "date": '2024-06-19',
+        "url": 'https://img.whatap.io/24/07/01/011308php-agent-v280.pdf',
+        "docs": '/release-notes/php/php-2_8_0'
+    },
+    {
         "name": 'php-agent-v2.7.2',
         "date": '2024-03-06',
         "url": 'https://content.whatap.io/24/04/02/012058php-agent-v272.pdf',
@@ -1605,6 +1640,18 @@ const nodejsList = [
     }
 ];
 const pyList = [
+    {
+        "name": 'Python-agent-v1.6.6',
+        "date": '2024-06-07',
+        "url": 'https://img.whatap.io/24/07/01/011308python-agent-v166.pdf',
+        "docs": '/release-notes/python/python-1_6_6'
+    },
+    {
+        "name": 'Python-agent-v1.6.5',
+        "date": '2024-05-31',
+        "url": 'https://img.whatap.io/24/07/01/011308python-agent-v165.pdf',
+        "docs": '/release-notes/python/python-1_6_5'
+    },
     {
         "name": 'Python-agent-v1.6.4',
         "date": '2024-05-14',
@@ -1806,6 +1853,18 @@ const pyList = [
 ];
 const dotnetList = [
     {
+        "name": '.NET-agent-v2.2.8',
+        "date": '2024-06-19',
+        "url": 'https://img.whatap.io/24/07/01/011308dotnet-agent-v228.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_9'
+    },
+    {
+        "name": '.NET-agent-v2.2.7',
+        "date": '2024-06-10',
+        "url": 'https://img.whatap.io/24/07/01/011308dotnet-agent-v227.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_7'
+    },
+    {
         "name": '.NET-agent-v2.2.6',
         "date": '2024-05-24',
         "url": 'https://content.whatap.io/24/06/03/054322dotnet-agent-v226.pdf',
@@ -1970,6 +2029,12 @@ const dotnetList = [
 ];
 const goList = [
     {
+        "name": 'Go-agent-v0.4.0',
+        "date": '2024-06-19',
+        "url": 'https://img.whatap.io/24/07/01/011308go-agent-v040.pdf',
+        "docs": '/release-notes/golang/golang-0_4_0'
+    },
+    {
         "name": 'Go-agent-v0.3.3',
         "date": '2024-03-14',
         "url": 'https://content.whatap.io/24/04/02/011011Go-agent-v033.pdf',
@@ -2073,6 +2138,18 @@ const goList = [
     }, 
 ];
 const serverList = [
+    {
+        "name": "Server-agent-v2.6.1",
+        "date": "2024-06-26",
+        "url": "https://img.whatap.io/24/07/01/011308server-agent-v261.pdf",
+        "docs": "/release-notes/server/server-2_6_1"
+    },
+    {
+        "name": "Server-agent-v2.6.0",
+        "date": "2024-06-18",
+        "url": "https://img.whatap.io/24/07/01/011308server-agent-v260.pdf",
+        "docs": "/release-notes/server/server-2_6_0"
+    },
     {
         "name": "Server-agent-v2.5.9",
         "date": "2024-05-24",
@@ -2320,7 +2397,39 @@ const serverList = [
         "docs": "/release-notes/server/server-2_1_7"
     }
 ];
+const serveraixList = [
+    {
+        "name": "Server-AIX-agent-v1.2.7",
+        "date": "2024-04-09",
+        "url": "https://img.whatap.io/24/07/01/011308server-aix-agent-v127.pdf",
+        "docs": "/release-notes/server/server-aix-1_2_7"
+    }, 
+];
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.7.5",
+        "date": "2024-06-18",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v175.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_5"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.4",
+        "date": "2024-06-07",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v174.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_4"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.3",
+        "date": "2024-06-04",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v173.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_3"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.2",
+        "date": "2024-06-02",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v172.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_2"
+    },
     {
         "name": "Kubernetes-agent-v1.7.1",
         "date": "2024-05-17",
@@ -2939,7 +3048,7 @@ const browserList = [
         "name": "Browser-agent-v1.3.6",
         "date": "2024-05-30",
         "url": "https://content.whatap.io/24/06/03/054322browser-agent-v136.pdf",
-        "docs": "release-notes/browser/browser-v1_3_5"
+        "docs": "release-notes/browser/browser-v1_3_6"
     },
     {
         "name": "Browser-agent-v1.3.5",
