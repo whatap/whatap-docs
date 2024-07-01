@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[82979],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[36166],{
 
 /***/ 91004:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -288,7 +288,7 @@ function _createMdxContent(props) {
         }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-oracle-pro.png",
         desc: "SQL 상세"
@@ -300,7 +300,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "postgresql,mysql,oracle-pro",
+      product: "postgresql,mysql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세"
@@ -406,7 +406,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -657,7 +657,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 76250:
+/***/ 55699:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -681,7 +681,7 @@ const frontMatter = {
 	title: '세션 히스토리',
 	description: '장시간 수행된 세션에 대해 수행 중인 SQL이 얼마나 자원을 사용했는지 확인하고 원인을 분석할 수 있습니다.',
 	tags: [
-		'Oracle Pro',
+		'Oracle',
 		'데이터베이스',
 		'분석',
 		'세션 히스토리'
@@ -689,21 +689,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/analysis-session-history",
+  "id": "oracle-v2/analysis-session-history",
   "title": "세션 히스토리",
   "description": "장시간 수행된 세션에 대해 수행 중인 SQL이 얼마나 자원을 사용했는지 확인하고 원인을 분석할 수 있습니다.",
-  "source": "@site/docs/oracle-pro/analysis-session-history.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/analysis-session-history",
-  "permalink": "/whatap-docs/oracle-pro/analysis-session-history",
+  "source": "@site/docs/oracle-v2/analysis-session-history.mdx",
+  "sourceDirName": "oracle-v2",
+  "slug": "/oracle-v2/analysis-session-history",
+  "permalink": "/whatap-docs/oracle-v2/analysis-session-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/analysis-session-history.mdx",
+  "editUrl": "undefined/docs/oracle-v2/analysis-session-history.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle Pro",
-      "permalink": "/whatap-docs/tags/oracle-pro"
+      "label": "Oracle",
+      "permalink": "/whatap-docs/tags/oracle"
     },
     {
       "inline": true,
@@ -727,20 +727,20 @@ const metadata = {
     "title": "세션 히스토리",
     "description": "장시간 수행된 세션에 대해 수행 중인 SQL이 얼마나 자원을 사용했는지 확인하고 원인을 분석할 수 있습니다.",
     "tags": [
-      "Oracle Pro",
+      "Oracle",
       "데이터베이스",
       "분석",
       "세션 히스토리"
     ]
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "락 트리",
-    "permalink": "/whatap-docs/oracle-pro/analysis-lock-and-deadlock"
+    "permalink": "/whatap-docs/oracle-v2/analysis-lock-and-deadlock"
   },
   "next": {
     "title": "병렬 쿼리 트리",
-    "permalink": "/whatap-docs/oracle-pro/analysis-pq-tree"
+    "permalink": "/whatap-docs/oracle-v2/analysis-pq-tree"
   }
 };
 const assets = {

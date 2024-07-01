@@ -111,7 +111,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -652,7 +652,7 @@ function _createMdxContent(props) {
         }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-oracle-pro.png",
         desc: "SQL 상세"
@@ -664,7 +664,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "postgresql,mysql,oracle-pro",
+      product: "postgresql,mysql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세"
@@ -770,7 +770,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -999,7 +999,7 @@ function _createMdxContent(props) {
         className: "uitext"
       }), " 섹션을 통해 실시간 수행 중인 세션 정보를 확인할 수 있습니다. 다음은 테이블 오른쪽 위에 버튼에 대한 기능 안내입니다."]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "postgresql,mysql,redis,mongodb,oracle-pro",
+      product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -1016,7 +1016,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,redis,mongodb,oracle-pro",
+      product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -1048,7 +1048,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,oracle-pro",
+      product: "postgresql,mysql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1072,7 +1072,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,redis,mongodb,oracle-pro",
+      product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1095,7 +1095,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
-      product: "postgresql,mysql,redis,mongodb,oracle-pro",
+      product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle-v2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1579,8 +1579,9 @@ function _createMdxContent(props) {
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname} = _components;
+  }, {Cmdname, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -1647,23 +1648,26 @@ function _createMdxContent(props) {
           }), " 버튼을 선택하세요."]
         }), "\n"]
       }), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["지표를 추가한 위젯에 추가한 지표의 수만큼 차트가 생성됩니다. 위젯의 이름 옆에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "정보 아이콘",
-        src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
-        width: "24",
-        height: "24"
-      }), " 버튼을 선택하면 추가한 지표의 이름과 내용을 확인할 수 있습니다. 또한 차트 위로 마우스를 오버하면 툴팁을 통해 수치를 확인할 수 있습니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
+      product: "oracle-v2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["지표를 추가한 위젯에 추가한 지표의 수만큼 차트가 생성됩니다. 위젯의 이름 옆에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "정보 아이콘",
           src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
           width: "24",
           height: "24"
-        }), " 버튼의 툴팁 기능은 다국어에서 지원하지 않습니다."]
-      })
+        }), " 버튼을 선택하면 추가한 지표의 이름과 내용을 확인할 수 있습니다. 또한 차트 위로 마우스를 오버하면 툴팁을 통해 수치를 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "정보 아이콘",
+            src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
+            width: "24",
+            height: "24"
+          }), " 버튼의 툴팁 기능은 다국어에서 지원하지 않습니다."]
+        })
+      })]
     })]
   });
 }
@@ -2112,7 +2116,7 @@ function _createMdxContent(props) {
         id: "preset",
         children: "프리셋"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-        product: "postgresql,mysql",
+        product: "postgresql,mysql,oracle-v2",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["사용자가 설정한 위젯의 설정과 액티브 세션 테이블의 정렬 상태를 프리셋으로 저장하고 불러올 수 있습니다. 다음의 프리셋을 기본 제공하며 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -2725,7 +2729,7 @@ function _createMdxContent(props) {
         desc: "세션 상세 정보"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-session-details-info-oracle-pro.png",
         desc: "세션 상세 정보"
@@ -2770,7 +2774,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,oracle-pro",
+      product: "postgresql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2796,7 +2800,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

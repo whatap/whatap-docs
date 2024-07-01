@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18847],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70616],{
 
 /***/ 48441:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -91,7 +91,7 @@ function _createMdxContent(props) {
         }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-oracle-pro.png",
         desc: "SQL 상세"
@@ -103,7 +103,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "postgresql,mysql,oracle-pro",
+      product: "postgresql,mysql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세"
@@ -209,7 +209,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -732,7 +732,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 77002:
+/***/ 44398:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -757,7 +757,7 @@ const frontMatter = {
 	title: '슬로우 쿼리',
 	description: '특정 시점에 진행중이었던 세션을 파악해 느렸던 쿼리를 분석할 수 있습니다.',
 	tags: [
-		'MySQL',
+		'PostgreSQL',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스 모니터링',
@@ -766,21 +766,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/slow-query",
+  "id": "postgresql/slow-query",
   "title": "슬로우 쿼리",
   "description": "특정 시점에 진행중이었던 세션을 파악해 느렸던 쿼리를 분석할 수 있습니다.",
-  "source": "@site/docs/mysql/slow-query.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/slow-query",
-  "permalink": "/whatap-docs/mysql/slow-query",
+  "source": "@site/docs/postgresql/slow-query.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/slow-query",
+  "permalink": "/whatap-docs/postgresql/slow-query",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/slow-query.mdx",
+  "editUrl": "undefined/docs/postgresql/slow-query.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MySQL",
-      "permalink": "/whatap-docs/tags/my-sql"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     },
     {
       "inline": true,
@@ -809,21 +809,21 @@ const metadata = {
     "title": "슬로우 쿼리",
     "description": "특정 시점에 진행중이었던 세션을 파악해 느렸던 쿼리를 분석할 수 있습니다.",
     "tags": [
-      "MySQL",
+      "PostgreSQL",
       "인스턴스",
       "대시보드",
       "데이터베이스 모니터링",
       "슬로우 쿼리"
     ]
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "멀티 인스턴스 모니터링",
-    "permalink": "/whatap-docs/mysql/multi-instance-monitoring"
+    "permalink": "/whatap-docs/postgresql/multi-instance-monitoring"
   },
   "next": {
     "title": "Flex 보드",
-    "permalink": "/whatap-docs/mysql/flex-board"
+    "permalink": "/whatap-docs/postgresql/flex-board"
   }
 };
 const assets = {

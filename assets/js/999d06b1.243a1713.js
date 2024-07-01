@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10544],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60887],{
 
 /***/ 61407:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -413,7 +413,7 @@ function _createMdxContent(props) {
         }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-oracle-pro.png",
         desc: "SQL 상세"
@@ -425,7 +425,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "postgresql,mysql,oracle-pro",
+      product: "postgresql,mysql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세"
@@ -531,7 +531,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -609,7 +609,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 35343:
+/***/ 34289:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -632,7 +632,7 @@ const frontMatter = {
 	title: 'Top SQL 비교',
 	description: '특정 날짜를 기준으로 설정된 시간대의 SQL의 추이를 비교하고 등락을 확인할 수 있습니다.',
 	tags: [
-		'MySQL',
+		'Oracle Pro',
 		'데이터베이스',
 		'분석',
 		'Top SQL 비교'
@@ -640,21 +640,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/analysis-compare-top-sql",
+  "id": "oracle-pro/analysis-compare-top-sql",
   "title": "Top SQL 비교",
   "description": "특정 날짜를 기준으로 설정된 시간대의 SQL의 추이를 비교하고 등락을 확인할 수 있습니다.",
-  "source": "@site/docs/mysql/analysis-compare-top-sql.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/analysis-compare-top-sql",
-  "permalink": "/whatap-docs/mysql/analysis-compare-top-sql",
+  "source": "@site/docs/oracle-pro/analysis-compare-top-sql.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/analysis-compare-top-sql",
+  "permalink": "/whatap-docs/oracle-pro/analysis-compare-top-sql",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/analysis-compare-top-sql.mdx",
+  "editUrl": "undefined/docs/oracle-pro/analysis-compare-top-sql.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MySQL",
-      "permalink": "/whatap-docs/tags/my-sql"
+      "label": "Oracle Pro",
+      "permalink": "/whatap-docs/tags/oracle-pro"
     },
     {
       "inline": true,
@@ -678,7 +678,7 @@ const metadata = {
     "title": "Top SQL 비교",
     "description": "특정 날짜를 기준으로 설정된 시간대의 SQL의 추이를 비교하고 등락을 확인할 수 있습니다.",
     "tags": [
-      "MySQL",
+      "Oracle Pro",
       "데이터베이스",
       "분석",
       "Top SQL 비교"

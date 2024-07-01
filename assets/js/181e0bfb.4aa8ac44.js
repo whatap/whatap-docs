@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61502],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63200],{
 
 /***/ 83961:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1050,7 +1050,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1523,7 +1523,7 @@ function _createMdxContent(props) {
         }), " 창이 나타납니다. SQL 쿼리문과 Plan 정보를 확인할 수 있습니다."]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-oracle-pro.png",
         desc: "SQL 상세"
@@ -1535,7 +1535,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "postgresql,mysql,oracle-pro",
+      product: "postgresql,mysql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세"
@@ -1641,7 +1641,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2255,7 +2255,7 @@ function _createMdxContent(props) {
         desc: "세션 상세 정보"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "db-session-details-info-oracle-pro.png",
         desc: "세션 상세 정보"
@@ -2300,7 +2300,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,oracle-pro",
+      product: "postgresql,oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2326,7 +2326,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-pro",
+      product: "oracle-pro,oracle-v2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3172,7 +3172,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 45009:
+/***/ 31934:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3211,7 +3211,7 @@ const frontMatter = {
 	title: '멀티 인스턴스 모니터링',
 	description: '다수의 데이터베이스 인스턴스 핵심 지표를 통합해 확인할 수 있는 기능을 제공합니다.',
 	tags: [
-		'Oracle',
+		'Oracle Pro',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스',
@@ -3220,21 +3220,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v2/multi-instance-monitoring",
+  "id": "oracle-pro/multi-instance-monitoring",
   "title": "멀티 인스턴스 모니터링",
   "description": "다수의 데이터베이스 인스턴스 핵심 지표를 통합해 확인할 수 있는 기능을 제공합니다.",
-  "source": "@site/docs/oracle-v2/multi-instance-monitoring.mdx",
-  "sourceDirName": "oracle-v2",
-  "slug": "/oracle-v2/multi-instance-monitoring",
-  "permalink": "/whatap-docs/oracle-v2/multi-instance-monitoring",
+  "source": "@site/docs/oracle-pro/multi-instance-monitoring.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/multi-instance-monitoring",
+  "permalink": "/whatap-docs/oracle-pro/multi-instance-monitoring",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v2/multi-instance-monitoring.mdx",
+  "editUrl": "undefined/docs/oracle-pro/multi-instance-monitoring.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "Oracle Pro",
+      "permalink": "/whatap-docs/tags/oracle-pro"
     },
     {
       "inline": true,
@@ -3263,21 +3263,21 @@ const metadata = {
     "title": "멀티 인스턴스 모니터링",
     "description": "다수의 데이터베이스 인스턴스 핵심 지표를 통합해 확인할 수 있는 기능을 제공합니다.",
     "tags": [
-      "Oracle",
+      "Oracle Pro",
       "인스턴스",
       "대시보드",
       "데이터베이스",
       "멀티 인스턴스 모니터링"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
     "title": "인스턴스 모니터링",
-    "permalink": "/whatap-docs/oracle-v2/instance-monitoring"
+    "permalink": "/whatap-docs/oracle-pro/instance-monitoring"
   },
   "next": {
     "title": "Flex 보드",
-    "permalink": "/whatap-docs/oracle-v2/flex-board"
+    "permalink": "/whatap-docs/oracle-pro/flex-board"
   }
 };
 const assets = {
