@@ -975,6 +975,7 @@ const sidebars = {
       },
       items: [
         'dotnet/supported-spec',
+        'dotnet/quick-start',
         'dotnet/install-agent',
         'dotnet/install-check',
         'dotnet/agent-troubleshooting',
