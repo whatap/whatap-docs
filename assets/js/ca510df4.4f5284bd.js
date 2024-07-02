@@ -73,8 +73,8 @@ const metadata = {
     "permalink": "/whatap-docs/dotnet/install-check"
   },
   "next": {
-    "title": "설정하기",
-    "permalink": "/whatap-docs/dotnet/set-agent"
+    "title": "빠른 설치 및 문제 해결",
+    "permalink": "/whatap-docs/dotnet/quick-start"
   }
 };
 const assets = {

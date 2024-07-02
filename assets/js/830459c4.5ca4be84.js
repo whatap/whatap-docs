@@ -956,8 +956,8 @@ const metadata = {
   },
   "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "설치 문제 해결",
-    "permalink": "/whatap-docs/dotnet/agent-troubleshooting"
+    "title": "빠른 설치 및 문제 해결",
+    "permalink": "/whatap-docs/dotnet/quick-start"
   },
   "next": {
     "title": "에이전트 이름 식별",
