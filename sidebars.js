@@ -1818,6 +1818,7 @@ const sidebars = {
                 'oracle-v2/analysis-lock-and-deadlock',
                 'oracle-v2/analysis-session-history',
                 'oracle-v2/analysis-wait-events',
+                'oracle-v2/analysis-sql',
                 // 'oracle-v2/analysis-compare-top-sql',
                 'oracle-v2/analysis-pq-tree',
                 'oracle-v2/analysis-databaseparameter',
