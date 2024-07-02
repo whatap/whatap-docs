@@ -920,6 +920,14 @@ main {
       background-color: #fff;
       margin: 8px 0;
     }
+    .container {
+      margin-left: 0;
+      .fitcontent {
+        img.mobile {
+          width: 80%;
+        }
+      }
+    }
     .steps {
       display: block;
       h2 {
