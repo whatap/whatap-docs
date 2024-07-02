@@ -975,10 +975,18 @@ const sidebars = {
       },
       items: [
         'dotnet/supported-spec',
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'dotnet/install-agent',
+            'dotnet/install-check',
+            'dotnet/agent-troubleshooting',
+          ]
+        },
         'dotnet/quick-start',
-        'dotnet/install-agent',
-        'dotnet/install-check',
-        'dotnet/agent-troubleshooting',
         {
           type: 'category',
           label: '설정하기',
