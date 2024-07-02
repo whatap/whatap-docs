@@ -1817,7 +1817,7 @@ const sidebars = {
                 'oracle-v2/analysis-count-trend',
                 'oracle-v2/analysis-lock-and-deadlock',
                 'oracle-v2/analysis-session-history',
-                // 'oracle-v2/analysis-compare-top-sql',
+                'oracle-v2/analysis-wait-events',
                 'oracle-v2/analysis-pq-tree',
                 'oracle-v2/analysis-databaseparameter',
               ]
@@ -1851,6 +1851,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v2/log-main'
+              },
+              items: [
+                'oracle-v2/log-db',
+                'oracle-v2/log-lt',
+                'oracle-v2/log-exp',
+                'oracle-v2/log-search',
+                'oracle-v2/log-setting',
+                'oracle-v2/log-parser',
+              ]
+            },
+            {
+              type: 'category',
               label: '경고 알림',
               collapsible: true,
               collapsed: true,
@@ -1873,6 +1891,7 @@ const sidebars = {
                 'oracle-v2/set-event-format',
               ],
             },
+            'oracle-v2/labs'
           ]
         }
       ],
