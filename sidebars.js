@@ -1998,7 +1998,7 @@ const sidebars = {
                 id: 'oracle-pro/set-notice',
               },
               items: [
-                'oracle-pro/warning-notice',
+                // 'oracle-pro/warning-notice',
                 {
                   type: 'doc',
                   id: 'oracle-pro/warning-notice-v2',
