@@ -3974,8 +3974,8 @@ const metadata = {
   },
   "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/oracle-pro/warning-notice"
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/oracle-pro/set-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",

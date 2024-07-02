@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[8032],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60584],{
 
 /***/ 20234:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -366,7 +366,7 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title='xos.conf'",
-              children: "file=/var/opt/oracle/log/\n"
+              children: "file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log\n"
             })
           })
         }), "\n"]
@@ -534,7 +534,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 74845:
+/***/ 34566:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -568,16 +568,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v2/agent-xos-settings",
+  "id": "oracle/agent-xos-settings",
   "title": "XOS 에이전트 설정",
   "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
-  "source": "@site/docs/oracle-v2/agent-xos-settings.mdx",
-  "sourceDirName": "oracle-v2",
-  "slug": "/oracle-v2/agent-xos-settings",
-  "permalink": "/whatap-docs/oracle-v2/agent-xos-settings",
+  "source": "@site/docs/oracle/agent-xos-settings.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/agent-xos-settings",
+  "permalink": "/whatap-docs/oracle/agent-xos-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v2/agent-xos-settings.mdx",
+  "editUrl": "undefined/docs/oracle/agent-xos-settings.mdx",
   "tags": [
     {
       "inline": true,
@@ -618,14 +618,14 @@ const metadata = {
       "XOS"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/oracle-v2/agent-dbx-settings"
+    "permalink": "/whatap-docs/oracle/agent-dbx-settings"
   },
   "next": {
     "title": "관리하기",
-    "permalink": "/whatap-docs/oracle-v2/agent-manage"
+    "permalink": "/whatap-docs/oracle/agent-manage"
   }
 };
 const assets = {

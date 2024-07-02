@@ -244,8 +244,8 @@ const metadata = {
     "permalink": "/whatap-docs/oracle-pro/report-intro"
   },
   "next": {
-    "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/oracle-pro/warning-notice"
+    "title": "이벤트 설정",
+    "permalink": "/whatap-docs/oracle-pro/warning-notice-v2"
   }
 };
 const assets = {
