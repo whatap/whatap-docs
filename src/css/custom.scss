@@ -921,10 +921,17 @@ main {
     }
     .container {
       margin-left: 0;
+      img {
+        max-width: 90%;
+      }
       .fitcontent {
         img.mobile {
           width: 80%;
         }
+      }
+      .width--40 {
+        width: 40%;
+        max-width: 40%;
       }
     }
     .steps {
@@ -2810,8 +2817,20 @@ main {
 @media (max-width: 590px) {
   main {
     .markdown {
-      .col--6 {
-        --ifm-col-width: 100%;
+      .container {
+        margin-left: 0;
+        img {
+          max-width: 100%;
+        }
+        .fitcontent {
+          img.mobile {
+            width: 100%;
+          }
+        }
+        div[class*='width--'] {
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
