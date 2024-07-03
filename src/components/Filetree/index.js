@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './styles.module.css';
+import OpenFolderIcon from './openFolderIcon';
+import CloseFolderIcon from './CloseFolderIcon';
 
 export default function Filetree({ children, name, type }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +28,12 @@ export default function Filetree({ children, name, type }) {
   };
   return (
     <div className={styles.filetree}>
-        <button className={styles.top} onClick={handleToggle}>{name}</button>
+        <button className={styles.top} onClick={handleToggle}>
+          <span className={styles.type}>
+            {isOpen ? <OpenFolderIcon /> : <CloseFolderIcon />}
+          </span>
+          {name}
+        </button>
         {isOpen && (
           <ul className={styles.fileitem} type={type}>
             {children}
