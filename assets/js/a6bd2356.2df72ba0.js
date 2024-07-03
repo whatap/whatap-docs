@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[40225],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43416],{
 
 /***/ 72828:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -28,8 +28,8 @@ const toc = [{
   "id": "access_statistics",
   "level": 2
 }, ..._common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
-  "value": "Index 스캔 조회하기",
-  "id": "index-스캔-조회하기",
+  "value": "조회 결과 필터링하기",
+  "id": "조회-결과-필터링하기",
   "level": 3
 }, {
   "value": "Plan Change History",
@@ -145,8 +145,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "index-스캔-조회하기",
-        children: "Index 스캔 조회하기"
+        id: "조회-결과-필터링하기",
+        children: "조회 결과 필터링하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["조회한 SQL 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "filter",
@@ -176,15 +176,11 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "FULL"
               })
-            }), " 항목을 선택하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "INDEX"
               })
-            }), "를 선택하세요."]
+            }), " 항목을 선택하세요."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -584,7 +580,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 42936:
+/***/ 92197:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -606,7 +602,7 @@ const frontMatter = {
 	title: 'SQL 분석',
 	description: 'description',
 	tags: [
-		'Oracle',
+		'Oracle Pro',
 		'데이터베이스',
 		'분석',
 		'SQL'
@@ -614,21 +610,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v2/analysis-sql",
+  "id": "oracle-pro/analysis-sql",
   "title": "SQL 분석",
   "description": "description",
-  "source": "@site/docs/oracle-v2/analysis-sql.mdx",
-  "sourceDirName": "oracle-v2",
-  "slug": "/oracle-v2/analysis-sql",
-  "permalink": "/whatap-docs/oracle-v2/analysis-sql",
+  "source": "@site/docs/oracle-pro/analysis-sql.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/analysis-sql",
+  "permalink": "/whatap-docs/oracle-pro/analysis-sql",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v2/analysis-sql.mdx",
+  "editUrl": "undefined/docs/oracle-pro/analysis-sql.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "Oracle Pro",
+      "permalink": "/whatap-docs/tags/oracle-pro"
     },
     {
       "inline": true,
@@ -652,20 +648,20 @@ const metadata = {
     "title": "SQL 분석",
     "description": "description",
     "tags": [
-      "Oracle",
+      "Oracle Pro",
       "데이터베이스",
       "분석",
       "SQL"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "Wait 분석",
-    "permalink": "/whatap-docs/oracle-v2/analysis-wait-events"
+    "title": "세션 히스토리",
+    "permalink": "/whatap-docs/oracle-pro/analysis-session-history"
   },
   "next": {
     "title": "병렬 쿼리 트리",
-    "permalink": "/whatap-docs/oracle-v2/analysis-pq-tree"
+    "permalink": "/whatap-docs/oracle-pro/analysis-pq-tree"
   }
 };
 const assets = {
