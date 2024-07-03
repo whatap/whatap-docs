@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83080],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17798],{
 
 /***/ 67819:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3239,7 +3239,7 @@ function _createMdxContent(props) {
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "byte"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "힙 메모리의 최댓값"
+                children: "설정된 힙 메모리의 최댓값(-Xmx 값)"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "-"
               })]
@@ -3461,7 +3461,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 50809:
+/***/ 96327:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3488,7 +3488,7 @@ const frontMatter = {
 	description: '애플리케이션 지표를 안내합니다.',
 	toc_max_heading_level: 2,
 	tags: [
-		'Python',
+		'Java',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
@@ -3496,21 +3496,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/metrics-app",
+  "id": "java/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/python/metrics-app.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/metrics-app",
-  "permalink": "/whatap-docs/python/metrics-app",
+  "source": "@site/docs/java/metrics-app.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/metrics-app",
+  "permalink": "/whatap-docs/java/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/metrics-app.mdx",
+  "editUrl": "undefined/docs/java/metrics-app.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "inline": true,
@@ -3535,20 +3535,20 @@ const metadata = {
     "description": "애플리케이션 지표를 안내합니다.",
     "toc_max_heading_level": 2,
     "tags": [
-      "Python",
+      "Java",
       "메트릭스",
       "애플리케이션",
       "UI"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/python/metrics-intro"
+    "permalink": "/whatap-docs/java/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/python/metrics-performance-counter"
+    "permalink": "/whatap-docs/java/metrics-performance-counter"
   }
 };
 const assets = {
