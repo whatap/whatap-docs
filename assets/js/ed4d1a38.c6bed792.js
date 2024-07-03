@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'analysis-databaseparameter',
-	title: '데이터베이스 파라미터 조회',
+	title: '데이터베이스 파라미터',
 	description: '데이터베이스의 파라미터 값을 조회하고 날짜별로 비교할 수 있습니다.',
 	tags: [
 		'Oracle',
@@ -165,7 +165,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "oracle-v2/analysis-databaseparameter",
-  "title": "데이터베이스 파라미터 조회",
+  "title": "데이터베이스 파라미터",
   "description": "데이터베이스의 파라미터 값을 조회하고 날짜별로 비교할 수 있습니다.",
   "source": "@site/docs/oracle-v2/analysis-databaseparameter.mdx",
   "sourceDirName": "oracle-v2",
@@ -199,7 +199,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "analysis-databaseparameter",
-    "title": "데이터베이스 파라미터 조회",
+    "title": "데이터베이스 파라미터",
     "description": "데이터베이스의 파라미터 값을 조회하고 날짜별로 비교할 수 있습니다.",
     "tags": [
       "Oracle",

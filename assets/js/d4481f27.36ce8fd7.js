@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4588],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[32239],{
 
 /***/ 56162:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -410,7 +410,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 9604:
+/***/ 63639:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -438,7 +438,7 @@ const frontMatter = {
 	title: '메트릭스',
 	description: '데이터베이스 모니터링 분석을 위한 메트릭스 메뉴에 대해 알아봅니다.',
 	tags: [
-		'Oracle Pro',
+		'Oracle',
 		'메트릭스',
 		'데이터베이스',
 		'데이터베이스'
@@ -446,21 +446,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/metrics-intro",
+  "id": "oracle-v2/metrics-intro",
   "title": "메트릭스",
   "description": "데이터베이스 모니터링 분석을 위한 메트릭스 메뉴에 대해 알아봅니다.",
-  "source": "@site/docs/oracle-pro/metrics-intro.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/metrics-intro",
-  "permalink": "/whatap-docs/oracle-pro/metrics-intro",
+  "source": "@site/docs/oracle-v2/metrics-intro.mdx",
+  "sourceDirName": "oracle-v2",
+  "slug": "/oracle-v2/metrics-intro",
+  "permalink": "/whatap-docs/oracle-v2/metrics-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/metrics-intro.mdx",
+  "editUrl": "undefined/docs/oracle-v2/metrics-intro.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle Pro",
-      "permalink": "/whatap-docs/tags/oracle-pro"
+      "label": "Oracle",
+      "permalink": "/whatap-docs/tags/oracle"
     },
     {
       "inline": true,
@@ -484,20 +484,20 @@ const metadata = {
     "title": "메트릭스",
     "description": "데이터베이스 모니터링 분석을 위한 메트릭스 메뉴에 대해 알아봅니다.",
     "tags": [
-      "Oracle Pro",
+      "Oracle",
       "메트릭스",
       "데이터베이스",
       "데이터베이스"
     ]
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
-    "title": "데이터베이스 파라미터 조회",
-    "permalink": "/whatap-docs/oracle-pro/analysis-databaseparameter"
+    "title": "데이터베이스 파라미터",
+    "permalink": "/whatap-docs/oracle-v2/analysis-databaseparameter"
   },
   "next": {
-    "title": "Oracle Pro 지표",
-    "permalink": "/whatap-docs/oracle-pro/metrics-data-list"
+    "title": "Oracle 지표",
+    "permalink": "/whatap-docs/oracle-v2/metrics-data-list"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28023],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45809],{
 
 /***/ 25735:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -756,7 +756,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 91902:
+/***/ 12324:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -778,28 +778,28 @@ const frontMatter = {
 	title: '병렬 쿼리 트리',
 	description: 'description',
 	tags: [
-		'Oracle',
+		'Oracle Pro',
 		'데이터베이스',
 		'병렬 쿼리 트리'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v2/analysis-pq-tree",
+  "id": "oracle-pro/analysis-pq-tree",
   "title": "병렬 쿼리 트리",
   "description": "description",
-  "source": "@site/docs/oracle-v2/analysis-pq-tree.mdx",
-  "sourceDirName": "oracle-v2",
-  "slug": "/oracle-v2/analysis-pq-tree",
-  "permalink": "/whatap-docs/oracle-v2/analysis-pq-tree",
+  "source": "@site/docs/oracle-pro/analysis-pq-tree.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/analysis-pq-tree",
+  "permalink": "/whatap-docs/oracle-pro/analysis-pq-tree",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v2/analysis-pq-tree.mdx",
+  "editUrl": "undefined/docs/oracle-pro/analysis-pq-tree.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "Oracle Pro",
+      "permalink": "/whatap-docs/tags/oracle-pro"
     },
     {
       "inline": true,
@@ -818,19 +818,19 @@ const metadata = {
     "title": "병렬 쿼리 트리",
     "description": "description",
     "tags": [
-      "Oracle",
+      "Oracle Pro",
       "데이터베이스",
       "병렬 쿼리 트리"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
     "title": "SQL 분석",
-    "permalink": "/whatap-docs/oracle-v2/analysis-sql"
+    "permalink": "/whatap-docs/oracle-pro/analysis-sql"
   },
   "next": {
-    "title": "데이터베이스 파라미터 조회",
-    "permalink": "/whatap-docs/oracle-v2/analysis-databaseparameter"
+    "title": "데이터베이스 파라미터",
+    "permalink": "/whatap-docs/oracle-pro/analysis-databaseparameter"
   }
 };
 const assets = {
