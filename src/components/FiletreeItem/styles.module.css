@@ -1,0 +1,46 @@
+ul li.fileitem {
+  font-family: 'Noto Sans Coptic';
+  font-weight: 500;
+  display: list-item;
+  padding-bottom: 15px !important;
+}
+
+/* ul li[type='file'] {
+  border-left: 1px solid #333;
+  padding-left: 15px;
+}
+ul li[type='file']::before {
+  content: "—";
+  position: relative;
+  left: -16px;
+  color: #333;
+} */
+
+ul li[type='file'] span.name::before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: url("ic-file.svg") 0px 0px no-repeat;
+  top: 5px;
+  margin-right: 5px;
+}
+
+/* ul li[type='file'] span.name::after {
+  content: " ------- ";
+  margin: 0 15px;
+} */
+
+ul li[type='file'] span.name {
+  display: table-cell;
+  margin-right: 15px;
+  min-width: 190px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul li span.desc {
+  font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP';
+  display: table-cell;
+}

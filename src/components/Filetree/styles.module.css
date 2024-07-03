@@ -1,0 +1,33 @@
+.filetree {
+  border: 1px solid var(--ifm-menu-color);
+  border-radius: 5px;
+  font-family: 'Noto Sans Coptic';
+  padding: 15px 15px 20px 15px;
+}
+.top {
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  display: block;
+  text-align: left;
+  background: none;
+  cursor: pointer;
+}
+.top::before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: url("ic-folder-open.svg") 0px 4px no-repeat;
+  top: 2px;
+  margin-right: 5px;
+}
+
+.filetree ul.fileitem {
+  margin-left: 15px;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 25px;
+}
