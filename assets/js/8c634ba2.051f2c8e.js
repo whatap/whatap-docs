@@ -456,7 +456,7 @@ function _createMdxContent(props) {
               type: "note",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                 children: ["결제 정보 등록 및 수정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "/whatap-docs/management/billing",
+                  href: "../../management/billing",
                   children: "다음 문서"
                 }), "를 참조하세요."]
               })
