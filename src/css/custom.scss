@@ -122,6 +122,9 @@ html[lang='en-US'] {
       display: none;
     }
   }
+  nav.pagination-nav {
+    display: none;
+  }
 }
 
 html[lang='ja-JP'] {
@@ -138,6 +141,9 @@ html[lang='ja-JP'] {
     a[href*='blog'] {
       display: none;
     }
+  }
+  nav.pagination-nav {
+    display: none;
   }
   .api-guide {
     table {
