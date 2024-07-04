@@ -28,3 +28,11 @@ ul li span.desc {
   font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP';
   display: table-cell;
 }
+
+ul li.fileitem ul {
+  list-style-type: none;
+}
+
+ul li.fileitem ul li [type='file'] span.name {
+  min-width: 215px;
+}
