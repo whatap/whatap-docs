@@ -3524,7 +3524,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '고급 활용',
+          label: '더 알아보기',
           collapsible: true,
           collapsed: false,
           items: [
