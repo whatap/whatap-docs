@@ -5,46 +5,23 @@ ul li.fileitem {
   padding-bottom: 15px !important;
 }
 
-/* ul li[type='file'] {
-  border-left: 1px solid #333;
-  padding-left: 15px;
+ul li.fileitem:first-of-type {
+  margin-top: 15px;
 }
-ul li[type='file']::before {
-  content: "—";
-  position: relative;
-  left: -16px;
-  color: #333;
-} */
-
-ul li[type='file'] span.name::before, ul li[type='folder'] span.name::before {
-  content: " ";
-  display: inline-block;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  top: 5px;
-  margin-right: 5px;
-}
-
-ul li[type='file'] span.name::before {
-  background: url("ic-file.svg") 0px 0px no-repeat;
-}
-
-ul li[type='folder'] span.name::before {
-  background: url("ic-folder-open.svg") 0px 0px no-repeat;
-}
-
-/* ul li[type='file'] span.name::after {
-  content: " ------- ";
-  margin: 0 15px;
-} */
 
 ul li[type='file'] span.name, ul li[type='folder'] span.name {
   display: table-cell;
   margin-right: 15px;
-  min-width: 190px;
-  font-size: 16px;
+  min-width: 240px;
+  font-size: 14px;
   font-weight: 600;
+}
+
+.ico {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
 }
 
 ul li span.desc {
