@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import OpenFolderIcon from './openFolderIcon';
-import CloseFolderIcon from './CloseFolderIcon';
+import CloseFolderIcon from './closeFolderIcon';
 import FileIcon from './fileIcon';
 
 export default function FiletreeItem({ children, name, type }) {

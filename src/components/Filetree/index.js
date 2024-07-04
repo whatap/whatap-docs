@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './styles.module.css';
 import OpenFolderIcon from './openFolderIcon';
-import CloseFolderIcon from './CloseFolderIcon';
+import CloseFolderIcon from './closeFolderIcon';
 
 export default function Filetree({ children, name, type }) {
   const [isOpen, setIsOpen] = useState(false);
