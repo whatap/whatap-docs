@@ -73,6 +73,10 @@ const metadata = {
   "previous": {
     "title": "힙 메모리 메트릭스",
     "permalink": "/whatap-docs/best-practice-guides/about-apm-heap-memory"
+  },
+  "next": {
+    "title": "인스턴스 성능 관리 활용",
+    "permalink": "/whatap-docs/best-practice-guides/about-instance-performance-analysis"
   }
 };
 const assets = {

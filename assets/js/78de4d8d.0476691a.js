@@ -128,11 +128,20 @@ const toc = [{
   "value": "데이터베이스 경고 알림 설정",
   "id": "데이터베이스-경고-알림-설정",
   "level": 3
+}, {
+  "value": "더 알아보기",
+  "id": "더-알아보기",
+  "level": 2
+}, {
+  "value": "인스턴스 성능 관리 활용",
+  "id": "인스턴스-성능-관리-활용",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    em: "em",
     h2: "h2",
     h3: "h3",
     h4: "h4",
@@ -140,6 +149,7 @@ function _createMdxContent(props) {
     li: "li",
     p: "p",
     section: "section",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -382,6 +392,37 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "메트릭스 경고 알림 설정"
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "더-알아보기",
+        children: "더 알아보기"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "인스턴스-성능-관리-활용",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "best-pracice-guides/about-instance-performance-analysis",
+          children: "인스턴스 성능 관리 활용"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "인스턴스 성능 관리"
+          })
+        }), " 메뉴의 주요 기능 및 활용 예시를 안내합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "로딩된 클래스와 재정의"
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "스레드 목록/덤프와 CPU 최적화"
           }), "\n"]
         }), "\n"]
       })]
