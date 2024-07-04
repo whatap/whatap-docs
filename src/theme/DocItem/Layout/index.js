@@ -41,57 +41,30 @@ export default function DocItemLayout({children}) {
   const {
     metadata: {unlisted},
   } = useDoc();
-  if (currentLocale !== 'ko') {
-    return (
-      <div className="row">
-        <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
-          {unlisted && <Unlisted />}
-          <DocVersionBanner />
-          <div className={styles.docItemContainer}>
-            <article>
-              <DocBreadcrumbs />
-              <DocVersionBadge />
-              {docTOC.mobile}
-              <DocItemContent>{children}</DocItemContent>
-              <DocItemFooter />
-            </article>
-            {/* <DocItemPaginator /> */}
-          </div>
-        </div>
-        {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
-        <div className="col col--3">
-          {docTOC.desktop}
-          <FacebookShare />
-          <PrintPDF/>
-          <Feedback/>
+
+  return (
+    <div className="row">
+      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+        {unlisted && <Unlisted />}
+        <DocVersionBanner />
+        <div className={styles.docItemContainer}>
+          <article>
+            <DocBreadcrumbs />
+            <DocVersionBadge />
+            {docTOC.mobile}
+            <DocItemContent>{children}</DocItemContent>
+            <DocItemFooter />
+          </article>
+          <DocItemPaginator />
         </div>
       </div>
-    );
-  } else {
-    return (
-      <div className="row">
-        <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
-          {unlisted && <Unlisted />}
-          <DocVersionBanner />
-          <div className={styles.docItemContainer}>
-            <article>
-              <DocBreadcrumbs />
-              <DocVersionBadge />
-              {docTOC.mobile}
-              <DocItemContent>{children}</DocItemContent>
-              <DocItemFooter />
-            </article>
-            <DocItemPaginator />
-          </div>
-        </div>
-        {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
-        <div className="col col--3">
-          {docTOC.desktop}
-          <FacebookShare />
-          <PrintPDF/>
-          <Feedback/>
-        </div>
+      {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
+      <div className="col col--3">
+        {docTOC.desktop}
+        <FacebookShare />
+        <PrintPDF/>
+        <Feedback/>
       </div>
-    );
-  }
+    </div>
+  );
 }
