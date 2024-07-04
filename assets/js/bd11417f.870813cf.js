@@ -90,6 +90,10 @@ const toc = [{
   "id": "oracle-pro",
   "level": 4
 }, {
+  "value": "Oracle <code class=\"my\">V2</code> / Oracle Pro",
+  "id": "oracle-v2--oracle-pro",
+  "level": 4
+}, {
   "value": "Preview 2.7.0.a2",
   "id": "preview-270a2",
   "level": 2
@@ -515,25 +519,20 @@ function _createMdxContent(props) {
                 className: "uitext"
               }), " 메뉴에서 버전 선택을 할 수 있는 기능 추가"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                children: "Feature"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "TTL06224",
-                className: "uitext"
-              }), " 창에서 선택한 쿼리에 대한 통계 요약 정보를 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "Runtime Plan"
-                })
-              }), " 탭 추가"]
-            }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
           id: "oracle-pro",
           children: "Oracle Pro"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Changed"
+              }), " 상품명 변경: Oracle DMA → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Oracle Pro"
+              })]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Feature"
@@ -545,19 +544,6 @@ function _createMdxContent(props) {
               }), " 변수를 수정하고 조회할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                   children: "Explain Plan"
-                })
-              }), " 탭 추가"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                children: "Feature"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "TTL06224",
-                className: "uitext"
-              }), " 창에서 선택한 쿼리에 대한 통계 요약 정보를 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "Runtime Plan"
                 })
               }), " 탭 추가"]
             }), "\n"]
@@ -584,6 +570,98 @@ function _createMdxContent(props) {
                 sid: "side_dbSqlStat",
                 className: "uitext"
               }), " 메뉴의 시리즈 데이터가 제대로 표시되지 않는 문제 수정"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_reportStat",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbSqlStat",
+                className: "uitext"
+              }), " 메뉴의 탭 명칭 변경"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "USERNAME"
+                  }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "SCHEMANAME"
+                    })
+                  })]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "MODULE"
+                    })
+                  }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "OSUSER"
+                    })
+                  }), " 추가"]
+                }), "\n"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dashboard",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbMonitoring",
+                className: "uitext"
+              }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "active_sessions",
+                className: "uitext"
+              }), " 테이블의 쿼리를 선택한 다음, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbSqlStat",
+                className: "uitext"
+              }), " 메뉴로 이동하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "sql_id"
+              }), "로 필터를 기본 설정하도록 수정"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+          id: "oracle-v2--oracle-pro",
+          children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            className: "my",
+            children: "V2"
+          }), " / Oracle Pro"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06224",
+                className: "uitext"
+              }), " 창에서 선택한 쿼리에 대한 통계 요약 정보를 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Runtime Plan"
+                })
+              }), " 탭 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                children: "Feature"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_reportStat",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_tableSpace",
+                className: "uitext"
+              }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "table_space_detail",
+                className: "uitext"
+              }), " 섹션 목록에서 항목을 선택하면 세그먼트 사이즈(TOP 50)를 표시하는 기능 추가"]
             }), "\n"]
           }), "\n"]
         })]

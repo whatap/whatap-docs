@@ -1,4 +1,4 @@
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4031],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17079],{
 
 /***/ 72733:
 /***/ ((module) => {
@@ -424,7 +424,8 @@ function isUndefined(arg) {
          */
         var MatchingStrategies = {
           ALL: 'all',
-          LAST: 'last'
+          LAST: 'last',
+          FREQUENCY: 'frequency'
         };
         var ContentTypeEnum = {
           JSON: 'application/json',
@@ -653,6 +654,8 @@ function isUndefined(arg) {
           INVALID_SETTINGS_FACETING: 'invalid_settings_faceting',
           /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_settings_pagination */
           INVALID_SETTINGS_PAGINATION: 'invalid_settings_pagination',
+          /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_settings_search_cutoff_ms */
+          INVALID_SETTINGS_SEARCH_CUTOFF_MS: 'invalid_settings_search_cutoff_ms',
           /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_task_before_enqueued_at */
           INVALID_TASK_BEFORE_ENQUEUED_AT: 'invalid_task_before_enqueued_at',
           /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_task_after_enqueued_at */
@@ -680,7 +683,11 @@ function isUndefined(arg) {
           /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#missing_facet_search_facet_name */
           MISSING_FACET_SEARCH_FACET_NAME: 'missing_facet_search_facet_name',
           /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_facet_search_facet_query */
-          INVALID_FACET_SEARCH_FACET_QUERY: 'invalid_facet_search_facet_query'
+          INVALID_FACET_SEARCH_FACET_QUERY: 'invalid_facet_search_facet_query',
+          /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_search_ranking_score_threshold */
+          INVALID_SEARCH_RANKING_SCORE_THRESHOLD: 'invalid_search_ranking_score_threshold',
+          /** @see https://www.meilisearch.com/docs/reference/errors/error_codes#invalid_similar_ranking_score_threshold */
+          INVALID_SIMILAR_RANKING_SCORE_THRESHOLD: 'invalid_similar_ranking_score_threshold'
         };
         function _iterableToArrayLimit(r, l) {
           var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
@@ -708,6 +715,27 @@ function isUndefined(arg) {
             }
             return a;
           }
+        }
+        function ownKeys(e, r) {
+          var t = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var o = Object.getOwnPropertySymbols(e);
+            r && (o = o.filter(function (r) {
+              return Object.getOwnPropertyDescriptor(e, r).enumerable;
+            })), t.push.apply(t, o);
+          }
+          return t;
+        }
+        function _objectSpread2(e) {
+          for (var r = 1; r < arguments.length; r++) {
+            var t = null != arguments[r] ? arguments[r] : {};
+            r % 2 ? ownKeys(Object(t), !0).forEach(function (r) {
+              _defineProperty(e, r, t[r]);
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) {
+              Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+            });
+          }
+          return e;
         }
         function _regeneratorRuntime() {
           _regeneratorRuntime = function () {
@@ -1033,6 +1061,36 @@ function isUndefined(arg) {
             return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
           }, _typeof(o);
         }
+        function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+          try {
+            var info = gen[key](arg);
+            var value = info.value;
+          } catch (error) {
+            reject(error);
+            return;
+          }
+          if (info.done) {
+            resolve(value);
+          } else {
+            Promise.resolve(value).then(_next, _throw);
+          }
+        }
+        function _asyncToGenerator(fn) {
+          return function () {
+            var self = this,
+              args = arguments;
+            return new Promise(function (resolve, reject) {
+              var gen = fn.apply(self, args);
+              function _next(value) {
+                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+              }
+              function _throw(err) {
+                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+              }
+              _next(undefined);
+            });
+          };
+        }
         function _classCallCheck(instance, Constructor) {
           if (!(instance instanceof Constructor)) {
             throw new TypeError("Cannot call a class as a function");
@@ -1258,47 +1316,6 @@ function isUndefined(arg) {
             }
           };
         }
-
-        /******************************************************************************
-        Copyright (c) Microsoft Corporation.
-          Permission to use, copy, modify, and/or distribute this software for any
-        purpose with or without fee is hereby granted.
-          THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-        REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-        AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-        INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-        LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-        OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-        PERFORMANCE OF THIS SOFTWARE.
-        ***************************************************************************** */
-
-        function __awaiter(thisArg, _arguments, P, generator) {
-          function adopt(value) {
-            return value instanceof P ? value : new P(function (resolve) {
-              resolve(value);
-            });
-          }
-          return new (P || (P = Promise))(function (resolve, reject) {
-            function fulfilled(value) {
-              try {
-                step(generator.next(value));
-              } catch (e) {
-                reject(e);
-              }
-            }
-            function rejected(value) {
-              try {
-                step(generator["throw"](value));
-              } catch (e) {
-                reject(e);
-              }
-            }
-            function step(result) {
-              result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-            }
-            step((generator = generator.apply(thisArg, _arguments || [])).next());
-          });
-        }
         var MeiliSearchError = /*#__PURE__*/function (_Error) {
           _inherits(MeiliSearchError, _Error);
           var _super = _createSuper(MeiliSearchError);
@@ -1322,9 +1339,12 @@ function isUndefined(arg) {
           function MeiliSearchCommunicationError(message, body, url, stack) {
             var _this;
             _classCallCheck(this, MeiliSearchCommunicationError);
-            var _a, _b, _c;
             _this = _super.call(this, message);
             // Make errors comparison possible. ex: error instanceof MeiliSearchCommunicationError.
+            _defineProperty(_assertThisInitialized(_this), "statusCode", void 0);
+            _defineProperty(_assertThisInitialized(_this), "errno", void 0);
+            _defineProperty(_assertThisInitialized(_this), "code", void 0);
+            _defineProperty(_assertThisInitialized(_this), "stack", void 0);
             Object.setPrototypeOf(_assertThisInitialized(_this), MeiliSearchCommunicationError.prototype);
             _this.name = 'MeiliSearchCommunicationError';
             if (body instanceof Response) {
@@ -1336,10 +1356,11 @@ function isUndefined(arg) {
               _this.code = body.code;
             }
             if (stack) {
+              var _this$stack, _this$stack2, _this$stack3;
               _this.stack = stack;
-              _this.stack = (_a = _this.stack) === null || _a === void 0 ? void 0 : _a.replace(/(TypeError|FetchError)/, _this.name);
-              _this.stack = (_b = _this.stack) === null || _b === void 0 ? void 0 : _b.replace('Failed to fetch', "request to ".concat(url, " failed, reason: connect ECONNREFUSED"));
-              _this.stack = (_c = _this.stack) === null || _c === void 0 ? void 0 : _c.replace('Not Found', "Not Found: ".concat(url));
+              _this.stack = (_this$stack = _this.stack) === null || _this$stack === void 0 ? void 0 : _this$stack.replace(/(TypeError|FetchError)/, _this.name);
+              _this.stack = (_this$stack2 = _this.stack) === null || _this$stack2 === void 0 ? void 0 : _this$stack2.replace('Failed to fetch', "request to ".concat(url, " failed, reason: connect ECONNREFUSED"));
+              _this.stack = (_this$stack3 = _this.stack) === null || _this$stack3 === void 0 ? void 0 : _this$stack3.replace('Not Found', "Not Found: ".concat(url));
             } else {
               if (Error.captureStackTrace) {
                 Error.captureStackTrace(_assertThisInitialized(_this), MeiliSearchCommunicationError);
@@ -1357,6 +1378,11 @@ function isUndefined(arg) {
             _classCallCheck(this, MeiliSearchApiError);
             _this = _super.call(this, error.message);
             // Make errors comparison possible. ex: error instanceof MeiliSearchApiError.
+            _defineProperty(_assertThisInitialized(_this), "httpStatus", void 0);
+            _defineProperty(_assertThisInitialized(_this), "code", void 0);
+            _defineProperty(_assertThisInitialized(_this), "link", void 0);
+            _defineProperty(_assertThisInitialized(_this), "type", void 0);
+            _defineProperty(_assertThisInitialized(_this), "stack", void 0);
             Object.setPrototypeOf(_assertThisInitialized(_this), MeiliSearchApiError.prototype);
             _this.name = 'MeiliSearchApiError';
             _this.code = error.code;
@@ -1371,8 +1397,11 @@ function isUndefined(arg) {
           }
           return _createClass(MeiliSearchApiError);
         }(MeiliSearchError);
-        function httpResponseErrorHandler(response) {
-          return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        function httpResponseErrorHandler(_x) {
+          return _httpResponseErrorHandler.apply(this, arguments);
+        }
+        function _httpResponseErrorHandler() {
+          _httpResponseErrorHandler = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(response) {
             var responseBody;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
@@ -1402,6 +1431,7 @@ function isUndefined(arg) {
               }
             }, _callee, null, [[1, 7]]);
           }));
+          return _httpResponseErrorHandler.apply(this, arguments);
         }
         function httpErrorHandler(response, stack, url) {
           if (response.name !== 'MeiliSearchApiError') {
@@ -1440,8 +1470,11 @@ function isUndefined(arg) {
             return acc;
           }, {});
         }
-        function sleep(ms) {
-          return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        function sleep(_x) {
+          return _sleep.apply(this, arguments);
+        }
+        function _sleep() {
+          _sleep = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(ms) {
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
@@ -1457,6 +1490,7 @@ function isUndefined(arg) {
               }
             }, _callee);
           }));
+          return _sleep.apply(this, arguments);
         }
         function addProtocolIfNotPresent(host) {
           if (!(host.startsWith('https://') || host.startsWith('http://'))) {
@@ -1470,7 +1504,7 @@ function isUndefined(arg) {
           }
           return url;
         }
-        var PACKAGE_VERSION = '0.38.0';
+        var PACKAGE_VERSION = '0.41.0';
         function toQueryParams(parameters) {
           var params = Object.keys(parameters);
           var queryParams = params.reduce(function (acc, key) {
@@ -1478,11 +1512,11 @@ function isUndefined(arg) {
             if (value === undefined) {
               return acc;
             } else if (Array.isArray(value)) {
-              return Object.assign(Object.assign({}, acc), _defineProperty({}, key, value.join(',')));
+              return _objectSpread2(_objectSpread2({}, acc), {}, _defineProperty({}, key, value.join(',')));
             } else if (value instanceof Date) {
-              return Object.assign(Object.assign({}, acc), _defineProperty({}, key, value.toISOString()));
+              return _objectSpread2(_objectSpread2({}, acc), {}, _defineProperty({}, key, value.toISOString()));
             }
-            return Object.assign(Object.assign({}, acc), _defineProperty({}, key, value));
+            return _objectSpread2(_objectSpread2({}, acc), {}, _defineProperty({}, key, value));
           }, {});
           return queryParams;
         }
@@ -1512,12 +1546,12 @@ function isUndefined(arg) {
           }
         }
         function createHeaders(config) {
-          var _a, _b;
+          var _config$requestConfig, _config$requestConfig2;
           var agentHeader = 'X-Meilisearch-Client';
           var packageAgent = "Meilisearch JavaScript (v".concat(PACKAGE_VERSION, ")");
           var contentType = 'Content-Type';
           var authorization = 'Authorization';
-          var headers = cloneAndParseHeaders((_b = (_a = config.requestConfig) === null || _a === void 0 ? void 0 : _a.headers) !== null && _b !== void 0 ? _b : {});
+          var headers = cloneAndParseHeaders((_config$requestConfig = (_config$requestConfig2 = config.requestConfig) === null || _config$requestConfig2 === void 0 ? void 0 : _config$requestConfig2.headers) !== null && _config$requestConfig !== void 0 ? _config$requestConfig : {});
           // do not override if user provided the header
           if (config.apiKey && !headers[authorization]) {
             headers[authorization] = "Bearer ".concat(config.apiKey);
@@ -1540,6 +1574,11 @@ function isUndefined(arg) {
         var HttpRequests = /*#__PURE__*/function () {
           function HttpRequests(config) {
             _classCallCheck(this, HttpRequests);
+            _defineProperty(this, "headers", void 0);
+            _defineProperty(this, "url", void 0);
+            _defineProperty(this, "requestConfig", void 0);
+            _defineProperty(this, "httpClient", void 0);
+            _defineProperty(this, "requestTimeout", void 0);
             this.headers = createHeaders(config);
             this.requestConfig = config.requestConfig;
             this.httpClient = config.httpClient;
@@ -1553,19 +1592,14 @@ function isUndefined(arg) {
           }
           _createClass(HttpRequests, [{
             key: "request",
-            value: function request(_ref) {
-              var method = _ref.method,
-                url = _ref.url,
-                params = _ref.params,
-                body = _ref.body,
-                _ref$config = _ref.config,
-                config = _ref$config === void 0 ? {} : _ref$config;
-              var _a;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-                var constructURL, queryParams, headers, result, response, parsedBody, stack;
+            value: function () {
+              var _request = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(_ref) {
+                var _config$headers;
+                var method, url, params, body, _ref$config, config, constructURL, queryParams, headers, result, response, parsedBody, stack;
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
                   while (1) switch (_context.prev = _context.next) {
                     case 0:
+                      method = _ref.method, url = _ref.url, params = _ref.params, body = _ref.body, _ref$config = _ref.config, config = _ref$config === void 0 ? {} : _ref$config;
                       constructURL = new URL(url, this.url);
                       if (params) {
                         queryParams = new URLSearchParams();
@@ -1578,54 +1612,58 @@ function isUndefined(arg) {
                       }
                       // in case a custom content-type is provided
                       // do not stringify body
-                      if (!((_a = config.headers) === null || _a === void 0 ? void 0 : _a['Content-Type'])) {
+                      if (!((_config$headers = config.headers) !== null && _config$headers !== void 0 && _config$headers['Content-Type'])) {
                         body = JSON.stringify(body);
                       }
-                      headers = Object.assign(Object.assign({}, this.headers), config.headers);
-                      _context.prev = 5;
-                      result = this.fetchWithTimeout(constructURL.toString(), Object.assign(Object.assign(Object.assign({}, config), this.requestConfig), {
+                      headers = _objectSpread2(_objectSpread2({}, this.headers), config.headers);
+                      _context.prev = 6;
+                      result = this.fetchWithTimeout(constructURL.toString(), _objectSpread2(_objectSpread2(_objectSpread2({}, config), this.requestConfig), {}, {
                         method: method,
                         body: body,
                         headers: headers
                       }), this.requestTimeout); // When using a custom HTTP client, the response is returned to allow the user to parse/handle it as they see fit
                       if (!this.httpClient) {
-                        _context.next = 11;
+                        _context.next = 12;
                         break;
                       }
-                      _context.next = 10;
+                      _context.next = 11;
                       return result;
-                    case 10:
-                      return _context.abrupt("return", _context.sent);
                     case 11:
-                      _context.next = 13;
+                      return _context.abrupt("return", _context.sent);
+                    case 12:
+                      _context.next = 14;
                       return result.then(function (res) {
                         return httpResponseErrorHandler(res);
                       });
-                    case 13:
+                    case 14:
                       response = _context.sent;
-                      _context.next = 16;
+                      _context.next = 17;
                       return response.json().catch(function () {
                         return undefined;
                       });
-                    case 16:
+                    case 17:
                       parsedBody = _context.sent;
                       return _context.abrupt("return", parsedBody);
-                    case 20:
-                      _context.prev = 20;
-                      _context.t0 = _context["catch"](5);
+                    case 21:
+                      _context.prev = 21;
+                      _context.t0 = _context["catch"](6);
                       stack = _context.t0.stack;
                       httpErrorHandler(_context.t0, stack, constructURL.toString());
-                    case 24:
+                    case 25:
                     case "end":
                       return _context.stop();
                   }
-                }, _callee, this, [[5, 20]]);
+                }, _callee, this, [[6, 21]]);
               }));
-            }
+              function request(_x) {
+                return _request.apply(this, arguments);
+              }
+              return request;
+            }()
           }, {
             key: "fetchWithTimeout",
-            value: function fetchWithTimeout(url, options, timeout) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+            value: function () {
+              var _fetchWithTimeout = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(url, options, timeout) {
                 var _this = this;
                 return _regeneratorRuntime().wrap(function _callee2$(_context2) {
                   while (1) switch (_context2.prev = _context2.next) {
@@ -1654,11 +1692,15 @@ function isUndefined(arg) {
                   }
                 }, _callee2);
               }));
-            }
+              function fetchWithTimeout(_x2, _x3, _x4) {
+                return _fetchWithTimeout.apply(this, arguments);
+              }
+              return fetchWithTimeout;
+            }()
           }, {
             key: "get",
-            value: function get(url, params, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+            value: function () {
+              var _get = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(url, params, config) {
                 return _regeneratorRuntime().wrap(function _callee3$(_context3) {
                   while (1) switch (_context3.prev = _context3.next) {
                     case 0:
@@ -1677,11 +1719,15 @@ function isUndefined(arg) {
                   }
                 }, _callee3, this);
               }));
-            }
+              function get(_x5, _x6, _x7) {
+                return _get.apply(this, arguments);
+              }
+              return get;
+            }()
           }, {
             key: "post",
-            value: function post(url, data, params, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+            value: function () {
+              var _post = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(url, data, params, config) {
                 return _regeneratorRuntime().wrap(function _callee4$(_context4) {
                   while (1) switch (_context4.prev = _context4.next) {
                     case 0:
@@ -1701,11 +1747,15 @@ function isUndefined(arg) {
                   }
                 }, _callee4, this);
               }));
-            }
+              function post(_x8, _x9, _x10, _x11) {
+                return _post.apply(this, arguments);
+              }
+              return post;
+            }()
           }, {
             key: "put",
-            value: function put(url, data, params, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+            value: function () {
+              var _put = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(url, data, params, config) {
                 return _regeneratorRuntime().wrap(function _callee5$(_context5) {
                   while (1) switch (_context5.prev = _context5.next) {
                     case 0:
@@ -1725,11 +1775,15 @@ function isUndefined(arg) {
                   }
                 }, _callee5, this);
               }));
-            }
+              function put(_x12, _x13, _x14, _x15) {
+                return _put.apply(this, arguments);
+              }
+              return put;
+            }()
           }, {
             key: "patch",
-            value: function patch(url, data, params, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+            value: function () {
+              var _patch = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(url, data, params, config) {
                 return _regeneratorRuntime().wrap(function _callee6$(_context6) {
                   while (1) switch (_context6.prev = _context6.next) {
                     case 0:
@@ -1749,11 +1803,15 @@ function isUndefined(arg) {
                   }
                 }, _callee6, this);
               }));
-            }
+              function patch(_x16, _x17, _x18, _x19) {
+                return _patch.apply(this, arguments);
+              }
+              return patch;
+            }()
           }, {
             key: "delete",
-            value: function _delete(url, data, params, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+            value: function () {
+              var _delete2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(url, data, params, config) {
                 return _regeneratorRuntime().wrap(function _callee7$(_context7) {
                   while (1) switch (_context7.prev = _context7.next) {
                     case 0:
@@ -1773,12 +1831,21 @@ function isUndefined(arg) {
                   }
                 }, _callee7, this);
               }));
-            }
+              function _delete(_x20, _x21, _x22, _x23) {
+                return _delete2.apply(this, arguments);
+              }
+              return _delete;
+            }()
           }]);
           return HttpRequests;
         }();
         var EnqueuedTask = /*#__PURE__*/_createClass(function EnqueuedTask(task) {
           _classCallCheck(this, EnqueuedTask);
+          _defineProperty(this, "taskUid", void 0);
+          _defineProperty(this, "indexUid", void 0);
+          _defineProperty(this, "status", void 0);
+          _defineProperty(this, "type", void 0);
+          _defineProperty(this, "enqueuedAt", void 0);
           this.taskUid = task.taskUid;
           this.indexUid = task.indexUid;
           this.status = task.status;
@@ -1787,6 +1854,17 @@ function isUndefined(arg) {
         });
         var Task = /*#__PURE__*/_createClass(function Task(task) {
           _classCallCheck(this, Task);
+          _defineProperty(this, "indexUid", void 0);
+          _defineProperty(this, "status", void 0);
+          _defineProperty(this, "type", void 0);
+          _defineProperty(this, "uid", void 0);
+          _defineProperty(this, "canceledBy", void 0);
+          _defineProperty(this, "details", void 0);
+          _defineProperty(this, "error", void 0);
+          _defineProperty(this, "duration", void 0);
+          _defineProperty(this, "startedAt", void 0);
+          _defineProperty(this, "enqueuedAt", void 0);
+          _defineProperty(this, "finishedAt", void 0);
           this.indexUid = task.indexUid;
           this.status = task.status;
           this.type = task.type;
@@ -1802,6 +1880,7 @@ function isUndefined(arg) {
         var TaskClient = /*#__PURE__*/function () {
           function TaskClient(config) {
             _classCallCheck(this, TaskClient);
+            _defineProperty(this, "httpRequest", void 0);
             this.httpRequest = new HttpRequests(config);
           }
           /**
@@ -1812,8 +1891,8 @@ function isUndefined(arg) {
            */
           _createClass(TaskClient, [{
             key: "getTask",
-            value: function getTask(uid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+            value: function () {
+              var _getTask = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(uid) {
                 var url, taskItem;
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
                   while (1) switch (_context.prev = _context.next) {
@@ -1830,7 +1909,11 @@ function isUndefined(arg) {
                   }
                 }, _callee, this);
               }));
-            }
+              function getTask(_x) {
+                return _getTask.apply(this, arguments);
+              }
+              return getTask;
+            }()
             /**
              * Get tasks
              *
@@ -1839,30 +1922,37 @@ function isUndefined(arg) {
              */
           }, {
             key: "getTasks",
-            value: function getTasks() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-                var url, tasks;
+            value: function () {
+              var _getTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+                var parameters,
+                  url,
+                  tasks,
+                  _args2 = arguments;
                 return _regeneratorRuntime().wrap(function _callee2$(_context2) {
                   while (1) switch (_context2.prev = _context2.next) {
                     case 0:
+                      parameters = _args2.length > 0 && _args2[0] !== undefined ? _args2[0] : {};
                       url = "tasks";
-                      _context2.next = 3;
+                      _context2.next = 4;
                       return this.httpRequest.get(url, toQueryParams(parameters));
-                    case 3:
+                    case 4:
                       tasks = _context2.sent;
-                      return _context2.abrupt("return", Object.assign(Object.assign({}, tasks), {
+                      return _context2.abrupt("return", _objectSpread2(_objectSpread2({}, tasks), {}, {
                         results: tasks.results.map(function (task) {
                           return new Task(task);
                         })
                       }));
-                    case 5:
+                    case 6:
                     case "end":
                       return _context2.stop();
                   }
                 }, _callee2, this);
               }));
-            }
+              function getTasks() {
+                return _getTasks.apply(this, arguments);
+              }
+              return getTasks;
+            }()
             /**
              * Wait for a task to be processed.
              *
@@ -1872,47 +1962,54 @@ function isUndefined(arg) {
              */
           }, {
             key: "waitForTask",
-            value: function waitForTask(taskUid) {
-              var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref$timeOutMs = _ref.timeOutMs,
-                timeOutMs = _ref$timeOutMs === void 0 ? 5000 : _ref$timeOutMs,
-                _ref$intervalMs = _ref.intervalMs,
-                intervalMs = _ref$intervalMs === void 0 ? 50 : _ref$intervalMs;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-                var startingTime, response;
+            value: function () {
+              var _waitForTask = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(taskUid) {
+                var _ref,
+                  _ref$timeOutMs,
+                  timeOutMs,
+                  _ref$intervalMs,
+                  intervalMs,
+                  startingTime,
+                  response,
+                  _args3 = arguments;
                 return _regeneratorRuntime().wrap(function _callee3$(_context3) {
                   while (1) switch (_context3.prev = _context3.next) {
                     case 0:
+                      _ref = _args3.length > 1 && _args3[1] !== undefined ? _args3[1] : {}, _ref$timeOutMs = _ref.timeOutMs, timeOutMs = _ref$timeOutMs === void 0 ? 5000 : _ref$timeOutMs, _ref$intervalMs = _ref.intervalMs, intervalMs = _ref$intervalMs === void 0 ? 50 : _ref$intervalMs;
                       startingTime = Date.now();
-                    case 1:
+                    case 2:
                       if (!(Date.now() - startingTime < timeOutMs)) {
-                        _context3.next = 11;
+                        _context3.next = 12;
                         break;
                       }
-                      _context3.next = 4;
+                      _context3.next = 5;
                       return this.getTask(taskUid);
-                    case 4:
+                    case 5:
                       response = _context3.sent;
                       if ([TaskStatus.TASK_ENQUEUED, TaskStatus.TASK_PROCESSING].includes(response.status)) {
-                        _context3.next = 7;
+                        _context3.next = 8;
                         break;
                       }
                       return _context3.abrupt("return", response);
-                    case 7:
-                      _context3.next = 9;
+                    case 8:
+                      _context3.next = 10;
                       return sleep(intervalMs);
-                    case 9:
-                      _context3.next = 1;
+                    case 10:
+                      _context3.next = 2;
                       break;
-                    case 11:
-                      throw new MeiliSearchTimeOutError("timeout of ".concat(timeOutMs, "ms has exceeded on process ").concat(taskUid, " when waiting a task to be resolved."));
                     case 12:
+                      throw new MeiliSearchTimeOutError("timeout of ".concat(timeOutMs, "ms has exceeded on process ").concat(taskUid, " when waiting a task to be resolved."));
+                    case 13:
                     case "end":
                       return _context3.stop();
                   }
                 }, _callee3, this);
               }));
-            }
+              function waitForTask(_x2) {
+                return _waitForTask.apply(this, arguments);
+              }
+              return waitForTask;
+            }()
             /**
              * Waits for multiple tasks to be processed
              *
@@ -1922,58 +2019,68 @@ function isUndefined(arg) {
              */
           }, {
             key: "waitForTasks",
-            value: function waitForTasks(taskUids) {
-              var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref2$timeOutMs = _ref2.timeOutMs,
-                timeOutMs = _ref2$timeOutMs === void 0 ? 5000 : _ref2$timeOutMs,
-                _ref2$intervalMs = _ref2.intervalMs,
-                intervalMs = _ref2$intervalMs === void 0 ? 50 : _ref2$intervalMs;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-                var tasks, _iterator, _step, taskUid, task;
+            value: function () {
+              var _waitForTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(taskUids) {
+                var _ref2,
+                  _ref2$timeOutMs,
+                  timeOutMs,
+                  _ref2$intervalMs,
+                  intervalMs,
+                  tasks,
+                  _iterator,
+                  _step,
+                  taskUid,
+                  task,
+                  _args4 = arguments;
                 return _regeneratorRuntime().wrap(function _callee4$(_context4) {
                   while (1) switch (_context4.prev = _context4.next) {
                     case 0:
+                      _ref2 = _args4.length > 1 && _args4[1] !== undefined ? _args4[1] : {}, _ref2$timeOutMs = _ref2.timeOutMs, timeOutMs = _ref2$timeOutMs === void 0 ? 5000 : _ref2$timeOutMs, _ref2$intervalMs = _ref2.intervalMs, intervalMs = _ref2$intervalMs === void 0 ? 50 : _ref2$intervalMs;
                       tasks = [];
                       _iterator = _createForOfIteratorHelper(taskUids);
-                      _context4.prev = 2;
+                      _context4.prev = 3;
                       _iterator.s();
-                    case 4:
+                    case 5:
                       if ((_step = _iterator.n()).done) {
-                        _context4.next = 12;
+                        _context4.next = 13;
                         break;
                       }
                       taskUid = _step.value;
-                      _context4.next = 8;
+                      _context4.next = 9;
                       return this.waitForTask(taskUid, {
                         timeOutMs: timeOutMs,
                         intervalMs: intervalMs
                       });
-                    case 8:
+                    case 9:
                       task = _context4.sent;
                       tasks.push(task);
-                    case 10:
-                      _context4.next = 4;
+                    case 11:
+                      _context4.next = 5;
                       break;
-                    case 12:
-                      _context4.next = 17;
+                    case 13:
+                      _context4.next = 18;
                       break;
-                    case 14:
-                      _context4.prev = 14;
-                      _context4.t0 = _context4["catch"](2);
+                    case 15:
+                      _context4.prev = 15;
+                      _context4.t0 = _context4["catch"](3);
                       _iterator.e(_context4.t0);
-                    case 17:
-                      _context4.prev = 17;
+                    case 18:
+                      _context4.prev = 18;
                       _iterator.f();
-                      return _context4.finish(17);
-                    case 20:
-                      return _context4.abrupt("return", tasks);
+                      return _context4.finish(18);
                     case 21:
+                      return _context4.abrupt("return", tasks);
+                    case 22:
                     case "end":
                       return _context4.stop();
                   }
-                }, _callee4, this, [[2, 14, 17, 20]]);
+                }, _callee4, this, [[3, 15, 18, 21]]);
               }));
-            }
+              function waitForTasks(_x3) {
+                return _waitForTasks.apply(this, arguments);
+              }
+              return waitForTasks;
+            }()
             /**
              * Cancel a list of enqueued or processing tasks.
              *
@@ -1982,26 +2089,33 @@ function isUndefined(arg) {
              */
           }, {
             key: "cancelTasks",
-            value: function cancelTasks() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-                var url, task;
+            value: function () {
+              var _cancelTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+                var parameters,
+                  url,
+                  task,
+                  _args5 = arguments;
                 return _regeneratorRuntime().wrap(function _callee5$(_context5) {
                   while (1) switch (_context5.prev = _context5.next) {
                     case 0:
+                      parameters = _args5.length > 0 && _args5[0] !== undefined ? _args5[0] : {};
                       url = "tasks/cancel";
-                      _context5.next = 3;
+                      _context5.next = 4;
                       return this.httpRequest.post(url, {}, toQueryParams(parameters));
-                    case 3:
+                    case 4:
                       task = _context5.sent;
                       return _context5.abrupt("return", new EnqueuedTask(task));
-                    case 5:
+                    case 6:
                     case "end":
                       return _context5.stop();
                   }
                 }, _callee5, this);
               }));
-            }
+              function cancelTasks() {
+                return _cancelTasks.apply(this, arguments);
+              }
+              return cancelTasks;
+            }()
             /**
              * Delete a list tasks.
              *
@@ -2010,26 +2124,33 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteTasks",
-            value: function deleteTasks() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
-                var url, task;
+            value: function () {
+              var _deleteTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+                var parameters,
+                  url,
+                  task,
+                  _args6 = arguments;
                 return _regeneratorRuntime().wrap(function _callee6$(_context6) {
                   while (1) switch (_context6.prev = _context6.next) {
                     case 0:
+                      parameters = _args6.length > 0 && _args6[0] !== undefined ? _args6[0] : {};
                       url = "tasks";
-                      _context6.next = 3;
+                      _context6.next = 4;
                       return this.httpRequest.delete(url, {}, toQueryParams(parameters));
-                    case 3:
+                    case 4:
                       task = _context6.sent;
                       return _context6.abrupt("return", new EnqueuedTask(task));
-                    case 5:
+                    case 6:
                     case "end":
                       return _context6.stop();
                   }
                 }, _callee6, this);
               }));
-            }
+              function deleteTasks() {
+                return _deleteTasks.apply(this, arguments);
+              }
+              return deleteTasks;
+            }()
           }]);
           return TaskClient;
         }();
@@ -2048,6 +2169,12 @@ function isUndefined(arg) {
            */
           function Index(config, uid, primaryKey) {
             _classCallCheck(this, Index);
+            _defineProperty(this, "uid", void 0);
+            _defineProperty(this, "primaryKey", void 0);
+            _defineProperty(this, "createdAt", void 0);
+            _defineProperty(this, "updatedAt", void 0);
+            _defineProperty(this, "httpRequest", void 0);
+            _defineProperty(this, "tasks", void 0);
             this.uid = uid;
             this.primaryKey = primaryKey;
             this.httpRequest = new HttpRequests(config);
@@ -2066,15 +2193,15 @@ function isUndefined(arg) {
            */
           _createClass(Index, [{
             key: "search",
-            value: function search(query, options, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+            value: function () {
+              var _search = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(query, options, config) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
                   while (1) switch (_context.prev = _context.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/search");
                       _context.next = 3;
-                      return this.httpRequest.post(url, removeUndefinedFromObject(Object.assign({
+                      return this.httpRequest.post(url, removeUndefinedFromObject(_objectSpread2({
                         q: query
                       }, options)), undefined, config);
                     case 3:
@@ -2085,7 +2212,11 @@ function isUndefined(arg) {
                   }
                 }, _callee, this);
               }));
-            }
+              function search(_x, _x2, _x3) {
+                return _search.apply(this, arguments);
+              }
+              return search;
+            }()
             /**
              * Search for documents into an index using the GET method
              *
@@ -2096,9 +2227,9 @@ function isUndefined(arg) {
              */
           }, {
             key: "searchGet",
-            value: function searchGet(query, options, config) {
-              var _a, _b, _c, _d, _e, _f, _g;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+            value: function () {
+              var _searchGet = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(query, options, config) {
+                var _options$sort, _options$facets, _options$attributesTo, _options$attributesTo2, _options$attributesTo3, _options$vector, _options$attributesTo4;
                 var url, parseFilter, getParams;
                 return _regeneratorRuntime().wrap(function _callee2$(_context2) {
                   while (1) switch (_context2.prev = _context2.next) {
@@ -2107,17 +2238,17 @@ function isUndefined(arg) {
                       parseFilter = function parseFilter(filter) {
                         if (typeof filter === 'string') return filter;else if (Array.isArray(filter)) throw new MeiliSearchError('The filter query parameter should be in string format when using searchGet');else return undefined;
                       };
-                      getParams = Object.assign(Object.assign({
+                      getParams = _objectSpread2(_objectSpread2({
                         q: query
-                      }, options), {
+                      }, options), {}, {
                         filter: parseFilter(options === null || options === void 0 ? void 0 : options.filter),
-                        sort: (_a = options === null || options === void 0 ? void 0 : options.sort) === null || _a === void 0 ? void 0 : _a.join(','),
-                        facets: (_b = options === null || options === void 0 ? void 0 : options.facets) === null || _b === void 0 ? void 0 : _b.join(','),
-                        attributesToRetrieve: (_c = options === null || options === void 0 ? void 0 : options.attributesToRetrieve) === null || _c === void 0 ? void 0 : _c.join(','),
-                        attributesToCrop: (_d = options === null || options === void 0 ? void 0 : options.attributesToCrop) === null || _d === void 0 ? void 0 : _d.join(','),
-                        attributesToHighlight: (_e = options === null || options === void 0 ? void 0 : options.attributesToHighlight) === null || _e === void 0 ? void 0 : _e.join(','),
-                        vector: (_f = options === null || options === void 0 ? void 0 : options.vector) === null || _f === void 0 ? void 0 : _f.join(','),
-                        attributesToSearchOn: (_g = options === null || options === void 0 ? void 0 : options.attributesToSearchOn) === null || _g === void 0 ? void 0 : _g.join(',')
+                        sort: options === null || options === void 0 ? void 0 : (_options$sort = options.sort) === null || _options$sort === void 0 ? void 0 : _options$sort.join(','),
+                        facets: options === null || options === void 0 ? void 0 : (_options$facets = options.facets) === null || _options$facets === void 0 ? void 0 : _options$facets.join(','),
+                        attributesToRetrieve: options === null || options === void 0 ? void 0 : (_options$attributesTo = options.attributesToRetrieve) === null || _options$attributesTo === void 0 ? void 0 : _options$attributesTo.join(','),
+                        attributesToCrop: options === null || options === void 0 ? void 0 : (_options$attributesTo2 = options.attributesToCrop) === null || _options$attributesTo2 === void 0 ? void 0 : _options$attributesTo2.join(','),
+                        attributesToHighlight: options === null || options === void 0 ? void 0 : (_options$attributesTo3 = options.attributesToHighlight) === null || _options$attributesTo3 === void 0 ? void 0 : _options$attributesTo3.join(','),
+                        vector: options === null || options === void 0 ? void 0 : (_options$vector = options.vector) === null || _options$vector === void 0 ? void 0 : _options$vector.join(','),
+                        attributesToSearchOn: options === null || options === void 0 ? void 0 : (_options$attributesTo4 = options.attributesToSearchOn) === null || _options$attributesTo4 === void 0 ? void 0 : _options$attributesTo4.join(',')
                       });
                       _context2.next = 5;
                       return this.httpRequest.get(url, removeUndefinedFromObject(getParams), config);
@@ -2129,7 +2260,11 @@ function isUndefined(arg) {
                   }
                 }, _callee2, this);
               }));
-            }
+              function searchGet(_x4, _x5, _x6) {
+                return _searchGet.apply(this, arguments);
+              }
+              return searchGet;
+            }()
             /**
              * Search for facet values
              *
@@ -2139,8 +2274,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "searchForFacetValues",
-            value: function searchForFacetValues(params, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+            value: function () {
+              var _searchForFacetValues = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(params, config) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee3$(_context3) {
                   while (1) switch (_context3.prev = _context3.next) {
@@ -2156,8 +2291,41 @@ function isUndefined(arg) {
                   }
                 }, _callee3, this);
               }));
-            }
-            ///
+              function searchForFacetValues(_x7, _x8) {
+                return _searchForFacetValues.apply(this, arguments);
+              }
+              return searchForFacetValues;
+            }()
+            /**
+             * Search for similar documents
+             *
+             * @param params - Parameters used to search for similar documents
+             * @returns Promise containing the search response
+             */
+          }, {
+            key: "searchSimilarDocuments",
+            value: function () {
+              var _searchSimilarDocuments = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(params) {
+                var url;
+                return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+                  while (1) switch (_context4.prev = _context4.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/similar");
+                      _context4.next = 3;
+                      return this.httpRequest.post(url, removeUndefinedFromObject(params), undefined);
+                    case 3:
+                      return _context4.abrupt("return", _context4.sent);
+                    case 4:
+                    case "end":
+                      return _context4.stop();
+                  }
+                }, _callee4, this);
+              }));
+              function searchSimilarDocuments(_x9) {
+                return _searchSimilarDocuments.apply(this, arguments);
+              }
+              return searchSimilarDocuments;
+            }() ///
             /// INDEX
             ///
             /**
@@ -2167,28 +2335,32 @@ function isUndefined(arg) {
              */
           }, {
             key: "getRawInfo",
-            value: function getRawInfo() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+            value: function () {
+              var _getRawInfo = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
                 var url, res;
-                return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-                  while (1) switch (_context4.prev = _context4.next) {
+                return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+                  while (1) switch (_context5.prev = _context5.next) {
                     case 0:
                       url = "indexes/".concat(this.uid);
-                      _context4.next = 3;
+                      _context5.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      res = _context4.sent;
+                      res = _context5.sent;
                       this.primaryKey = res.primaryKey;
                       this.updatedAt = new Date(res.updatedAt);
                       this.createdAt = new Date(res.createdAt);
-                      return _context4.abrupt("return", res);
+                      return _context5.abrupt("return", res);
                     case 8:
                     case "end":
-                      return _context4.stop();
+                      return _context5.stop();
                   }
-                }, _callee4, this);
+                }, _callee5, this);
               }));
-            }
+              function getRawInfo() {
+                return _getRawInfo.apply(this, arguments);
+              }
+              return getRawInfo;
+            }()
             /**
              * Fetch and update Index information.
              *
@@ -2196,22 +2368,26 @@ function isUndefined(arg) {
              */
           }, {
             key: "fetchInfo",
-            value: function fetchInfo() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-                return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-                  while (1) switch (_context5.prev = _context5.next) {
+            value: function () {
+              var _fetchInfo = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+                return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+                  while (1) switch (_context6.prev = _context6.next) {
                     case 0:
-                      _context5.next = 2;
+                      _context6.next = 2;
                       return this.getRawInfo();
                     case 2:
-                      return _context5.abrupt("return", this);
+                      return _context6.abrupt("return", this);
                     case 3:
                     case "end":
-                      return _context5.stop();
+                      return _context6.stop();
                   }
-                }, _callee5, this);
+                }, _callee6, this);
               }));
-            }
+              function fetchInfo() {
+                return _fetchInfo.apply(this, arguments);
+              }
+              return fetchInfo;
+            }()
             /**
              * Get Primary Key.
              *
@@ -2219,23 +2395,27 @@ function isUndefined(arg) {
              */
           }, {
             key: "fetchPrimaryKey",
-            value: function fetchPrimaryKey() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
-                return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-                  while (1) switch (_context6.prev = _context6.next) {
+            value: function () {
+              var _fetchPrimaryKey = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+                return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+                  while (1) switch (_context7.prev = _context7.next) {
                     case 0:
-                      _context6.next = 2;
+                      _context7.next = 2;
                       return this.getRawInfo();
                     case 2:
-                      this.primaryKey = _context6.sent.primaryKey;
-                      return _context6.abrupt("return", this.primaryKey);
+                      this.primaryKey = _context7.sent.primaryKey;
+                      return _context7.abrupt("return", this.primaryKey);
                     case 4:
                     case "end":
-                      return _context6.stop();
+                      return _context7.stop();
                   }
-                }, _callee6, this);
+                }, _callee7, this);
               }));
-            }
+              function fetchPrimaryKey() {
+                return _fetchPrimaryKey.apply(this, arguments);
+              }
+              return fetchPrimaryKey;
+            }()
             /**
              * Create an index.
              *
@@ -2253,26 +2433,30 @@ function isUndefined(arg) {
              * @param data - Data to update
              * @returns Promise to the current Index object with updated information
              */
-            function update(data) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+            function () {
+              var _update = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(data) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee7$(_context7) {
-                  while (1) switch (_context7.prev = _context7.next) {
+                return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+                  while (1) switch (_context8.prev = _context8.next) {
                     case 0:
                       url = "indexes/".concat(this.uid);
-                      _context7.next = 3;
+                      _context8.next = 3;
                       return this.httpRequest.patch(url, data);
                     case 3:
-                      task = _context7.sent;
+                      task = _context8.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context7.abrupt("return", task);
+                      return _context8.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context7.stop();
+                      return _context8.stop();
                   }
-                }, _callee7, this);
+                }, _callee8, this);
               }));
-            }
+              function update(_x10) {
+                return _update.apply(this, arguments);
+              }
+              return update;
+            }()
             /**
              * Delete an index.
              *
@@ -2280,26 +2464,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "delete",
-            value: function _delete() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
+            value: function () {
+              var _delete2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee8$(_context8) {
-                  while (1) switch (_context8.prev = _context8.next) {
+                return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+                  while (1) switch (_context9.prev = _context9.next) {
                     case 0:
                       url = "indexes/".concat(this.uid);
-                      _context8.next = 3;
+                      _context9.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context8.sent;
-                      return _context8.abrupt("return", new EnqueuedTask(task));
+                      task = _context9.sent;
+                      return _context9.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context8.stop();
+                      return _context9.stop();
                   }
-                }, _callee8, this);
+                }, _callee9, this);
               }));
-            }
-            ///
+              function _delete() {
+                return _delete2.apply(this, arguments);
+              }
+              return _delete;
+            }() ///
             /// TASKS
             ///
             /**
@@ -2310,25 +2497,31 @@ function isUndefined(arg) {
              */
           }, {
             key: "getTasks",
-            value: function getTasks() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
-                return _regeneratorRuntime().wrap(function _callee9$(_context9) {
-                  while (1) switch (_context9.prev = _context9.next) {
+            value: function () {
+              var _getTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
+                var parameters,
+                  _args10 = arguments;
+                return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+                  while (1) switch (_context10.prev = _context10.next) {
                     case 0:
-                      _context9.next = 2;
-                      return this.tasks.getTasks(Object.assign(Object.assign({}, parameters), {
+                      parameters = _args10.length > 0 && _args10[0] !== undefined ? _args10[0] : {};
+                      _context10.next = 3;
+                      return this.tasks.getTasks(_objectSpread2(_objectSpread2({}, parameters), {}, {
                         indexUids: [this.uid]
                       }));
-                    case 2:
-                      return _context9.abrupt("return", _context9.sent);
                     case 3:
+                      return _context10.abrupt("return", _context10.sent);
+                    case 4:
                     case "end":
-                      return _context9.stop();
+                      return _context10.stop();
                   }
-                }, _callee9, this);
+                }, _callee10, this);
               }));
-            }
+              function getTasks() {
+                return _getTasks.apply(this, arguments);
+              }
+              return getTasks;
+            }()
             /**
              * Get one task of the index.
              *
@@ -2337,22 +2530,26 @@ function isUndefined(arg) {
              */
           }, {
             key: "getTask",
-            value: function getTask(taskUid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
-                return _regeneratorRuntime().wrap(function _callee10$(_context10) {
-                  while (1) switch (_context10.prev = _context10.next) {
+            value: function () {
+              var _getTask = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11(taskUid) {
+                return _regeneratorRuntime().wrap(function _callee11$(_context11) {
+                  while (1) switch (_context11.prev = _context11.next) {
                     case 0:
-                      _context10.next = 2;
+                      _context11.next = 2;
                       return this.tasks.getTask(taskUid);
                     case 2:
-                      return _context10.abrupt("return", _context10.sent);
+                      return _context11.abrupt("return", _context11.sent);
                     case 3:
                     case "end":
-                      return _context10.stop();
+                      return _context11.stop();
                   }
-                }, _callee10, this);
+                }, _callee11, this);
               }));
-            }
+              function getTask(_x11) {
+                return _getTask.apply(this, arguments);
+              }
+              return getTask;
+            }()
             /**
              * Wait for multiple tasks to be processed.
              *
@@ -2362,30 +2559,36 @@ function isUndefined(arg) {
              */
           }, {
             key: "waitForTasks",
-            value: function waitForTasks(taskUids) {
-              var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref$timeOutMs = _ref.timeOutMs,
-                timeOutMs = _ref$timeOutMs === void 0 ? 5000 : _ref$timeOutMs,
-                _ref$intervalMs = _ref.intervalMs,
-                intervalMs = _ref$intervalMs === void 0 ? 50 : _ref$intervalMs;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
-                return _regeneratorRuntime().wrap(function _callee11$(_context11) {
-                  while (1) switch (_context11.prev = _context11.next) {
+            value: function () {
+              var _waitForTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12(taskUids) {
+                var _ref,
+                  _ref$timeOutMs,
+                  timeOutMs,
+                  _ref$intervalMs,
+                  intervalMs,
+                  _args12 = arguments;
+                return _regeneratorRuntime().wrap(function _callee12$(_context12) {
+                  while (1) switch (_context12.prev = _context12.next) {
                     case 0:
-                      _context11.next = 2;
+                      _ref = _args12.length > 1 && _args12[1] !== undefined ? _args12[1] : {}, _ref$timeOutMs = _ref.timeOutMs, timeOutMs = _ref$timeOutMs === void 0 ? 5000 : _ref$timeOutMs, _ref$intervalMs = _ref.intervalMs, intervalMs = _ref$intervalMs === void 0 ? 50 : _ref$intervalMs;
+                      _context12.next = 3;
                       return this.tasks.waitForTasks(taskUids, {
                         timeOutMs: timeOutMs,
                         intervalMs: intervalMs
                       });
-                    case 2:
-                      return _context11.abrupt("return", _context11.sent);
                     case 3:
+                      return _context12.abrupt("return", _context12.sent);
+                    case 4:
                     case "end":
-                      return _context11.stop();
+                      return _context12.stop();
                   }
-                }, _callee11, this);
+                }, _callee12, this);
               }));
-            }
+              function waitForTasks(_x12) {
+                return _waitForTasks.apply(this, arguments);
+              }
+              return waitForTasks;
+            }()
             /**
              * Wait for a task to be processed.
              *
@@ -2395,31 +2598,36 @@ function isUndefined(arg) {
              */
           }, {
             key: "waitForTask",
-            value: function waitForTask(taskUid) {
-              var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref2$timeOutMs = _ref2.timeOutMs,
-                timeOutMs = _ref2$timeOutMs === void 0 ? 5000 : _ref2$timeOutMs,
-                _ref2$intervalMs = _ref2.intervalMs,
-                intervalMs = _ref2$intervalMs === void 0 ? 50 : _ref2$intervalMs;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee12() {
-                return _regeneratorRuntime().wrap(function _callee12$(_context12) {
-                  while (1) switch (_context12.prev = _context12.next) {
+            value: function () {
+              var _waitForTask = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13(taskUid) {
+                var _ref2,
+                  _ref2$timeOutMs,
+                  timeOutMs,
+                  _ref2$intervalMs,
+                  intervalMs,
+                  _args13 = arguments;
+                return _regeneratorRuntime().wrap(function _callee13$(_context13) {
+                  while (1) switch (_context13.prev = _context13.next) {
                     case 0:
-                      _context12.next = 2;
+                      _ref2 = _args13.length > 1 && _args13[1] !== undefined ? _args13[1] : {}, _ref2$timeOutMs = _ref2.timeOutMs, timeOutMs = _ref2$timeOutMs === void 0 ? 5000 : _ref2$timeOutMs, _ref2$intervalMs = _ref2.intervalMs, intervalMs = _ref2$intervalMs === void 0 ? 50 : _ref2$intervalMs;
+                      _context13.next = 3;
                       return this.tasks.waitForTask(taskUid, {
                         timeOutMs: timeOutMs,
                         intervalMs: intervalMs
                       });
-                    case 2:
-                      return _context12.abrupt("return", _context12.sent);
                     case 3:
+                      return _context13.abrupt("return", _context13.sent);
+                    case 4:
                     case "end":
-                      return _context12.stop();
+                      return _context13.stop();
                   }
-                }, _callee12, this);
+                }, _callee13, this);
               }));
-            }
-            ///
+              function waitForTask(_x13) {
+                return _waitForTask.apply(this, arguments);
+              }
+              return waitForTask;
+            }() ///
             /// STATS
             ///
             /**
@@ -2429,25 +2637,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getStats",
-            value: function getStats() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee13() {
+            value: function () {
+              var _getStats = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee14() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee13$(_context13) {
-                  while (1) switch (_context13.prev = _context13.next) {
+                return _regeneratorRuntime().wrap(function _callee14$(_context14) {
+                  while (1) switch (_context14.prev = _context14.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/stats");
-                      _context13.next = 3;
+                      _context14.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context13.abrupt("return", _context13.sent);
+                      return _context14.abrupt("return", _context14.sent);
                     case 4:
                     case "end":
-                      return _context13.stop();
+                      return _context14.stop();
                   }
-                }, _callee13, this);
+                }, _callee14, this);
               }));
-            }
-            ///
+              function getStats() {
+                return _getStats.apply(this, arguments);
+              }
+              return getStats;
+            }() ///
             /// DOCUMENTS
             ///
             /**
@@ -2459,54 +2670,64 @@ function isUndefined(arg) {
              */
           }, {
             key: "getDocuments",
-            value: function getDocuments() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              var _a;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee14() {
-                var url, _url, fields;
-                return _regeneratorRuntime().wrap(function _callee14$(_context14) {
-                  while (1) switch (_context14.prev = _context14.next) {
+            value: function () {
+              var _getDocuments = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee15() {
+                var parameters,
+                  url,
+                  _parameters,
+                  _parameters2,
+                  _parameters2$fields,
+                  _url,
+                  fields,
+                  _args15 = arguments;
+                return _regeneratorRuntime().wrap(function _callee15$(_context15) {
+                  while (1) switch (_context15.prev = _context15.next) {
                     case 0:
+                      parameters = _args15.length > 0 && _args15[0] !== undefined ? _args15[0] : {};
                       parameters = removeUndefinedFromObject(parameters);
                       // In case `filter` is provided, use `POST /documents/fetch`
                       if (!(parameters.filter !== undefined)) {
-                        _context14.next = 15;
+                        _context15.next = 16;
                         break;
                       }
-                      _context14.prev = 2;
+                      _context15.prev = 3;
                       url = "indexes/".concat(this.uid, "/documents/fetch");
-                      _context14.next = 6;
+                      _context15.next = 7;
                       return this.httpRequest.post(url, parameters);
-                    case 6:
-                      return _context14.abrupt("return", _context14.sent);
-                    case 9:
-                      _context14.prev = 9;
-                      _context14.t0 = _context14["catch"](2);
-                      if (_context14.t0 instanceof MeiliSearchCommunicationError) {
-                        _context14.t0.message = versionErrorHintMessage(_context14.t0.message, 'getDocuments');
-                      } else if (_context14.t0 instanceof MeiliSearchApiError) {
-                        _context14.t0.message = versionErrorHintMessage(_context14.t0.message, 'getDocuments');
+                    case 7:
+                      return _context15.abrupt("return", _context15.sent);
+                    case 10:
+                      _context15.prev = 10;
+                      _context15.t0 = _context15["catch"](3);
+                      if (_context15.t0 instanceof MeiliSearchCommunicationError) {
+                        _context15.t0.message = versionErrorHintMessage(_context15.t0.message, 'getDocuments');
+                      } else if (_context15.t0 instanceof MeiliSearchApiError) {
+                        _context15.t0.message = versionErrorHintMessage(_context15.t0.message, 'getDocuments');
                       }
-                      throw _context14.t0;
-                    case 13:
-                      _context14.next = 20;
+                      throw _context15.t0;
+                    case 14:
+                      _context15.next = 21;
                       break;
-                    case 15:
+                    case 16:
                       _url = "indexes/".concat(this.uid, "/documents"); // Transform fields to query parameter string format
-                      fields = Array.isArray(parameters === null || parameters === void 0 ? void 0 : parameters.fields) ? {
-                        fields: (_a = parameters === null || parameters === void 0 ? void 0 : parameters.fields) === null || _a === void 0 ? void 0 : _a.join(',')
+                      fields = Array.isArray((_parameters = parameters) === null || _parameters === void 0 ? void 0 : _parameters.fields) ? {
+                        fields: (_parameters2 = parameters) === null || _parameters2 === void 0 ? void 0 : (_parameters2$fields = _parameters2.fields) === null || _parameters2$fields === void 0 ? void 0 : _parameters2$fields.join(',')
                       } : {};
-                      _context14.next = 19;
-                      return this.httpRequest.get(_url, Object.assign(Object.assign({}, parameters), fields));
-                    case 19:
-                      return _context14.abrupt("return", _context14.sent);
+                      _context15.next = 20;
+                      return this.httpRequest.get(_url, _objectSpread2(_objectSpread2({}, parameters), fields));
                     case 20:
+                      return _context15.abrupt("return", _context15.sent);
+                    case 21:
                     case "end":
-                      return _context14.stop();
+                      return _context15.stop();
                   }
-                }, _callee14, this, [[2, 9]]);
+                }, _callee15, this, [[3, 10]]);
               }));
-            }
+              function getDocuments() {
+                return _getDocuments.apply(this, arguments);
+              }
+              return getDocuments;
+            }()
             /**
              * Get one document
              *
@@ -2516,33 +2737,37 @@ function isUndefined(arg) {
              */
           }, {
             key: "getDocument",
-            value: function getDocument(documentId, parameters) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee15() {
+            value: function () {
+              var _getDocument = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee16(documentId, parameters) {
                 var url, fields;
-                return _regeneratorRuntime().wrap(function _callee15$(_context15) {
-                  while (1) switch (_context15.prev = _context15.next) {
+                return _regeneratorRuntime().wrap(function _callee16$(_context16) {
+                  while (1) switch (_context16.prev = _context16.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents/").concat(documentId);
                       fields = function () {
-                        var _a;
                         if (Array.isArray(parameters === null || parameters === void 0 ? void 0 : parameters.fields)) {
-                          return (_a = parameters === null || parameters === void 0 ? void 0 : parameters.fields) === null || _a === void 0 ? void 0 : _a.join(',');
+                          var _parameters$fields;
+                          return parameters === null || parameters === void 0 ? void 0 : (_parameters$fields = parameters.fields) === null || _parameters$fields === void 0 ? void 0 : _parameters$fields.join(',');
                         }
                         return undefined;
                       }();
-                      _context15.next = 4;
-                      return this.httpRequest.get(url, removeUndefinedFromObject(Object.assign(Object.assign({}, parameters), {
+                      _context16.next = 4;
+                      return this.httpRequest.get(url, removeUndefinedFromObject(_objectSpread2(_objectSpread2({}, parameters), {}, {
                         fields: fields
                       })));
                     case 4:
-                      return _context15.abrupt("return", _context15.sent);
+                      return _context16.abrupt("return", _context16.sent);
                     case 5:
                     case "end":
-                      return _context15.stop();
+                      return _context16.stop();
                   }
-                }, _callee15, this);
+                }, _callee16, this);
               }));
-            }
+              function getDocument(_x14, _x15) {
+                return _getDocument.apply(this, arguments);
+              }
+              return getDocument;
+            }()
             /**
              * Add or replace multiples documents to an index
              *
@@ -2552,25 +2777,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "addDocuments",
-            value: function addDocuments(documents, options) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee16() {
+            value: function () {
+              var _addDocuments = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee17(documents, options) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee16$(_context16) {
-                  while (1) switch (_context16.prev = _context16.next) {
+                return _regeneratorRuntime().wrap(function _callee17$(_context17) {
+                  while (1) switch (_context17.prev = _context17.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents");
-                      _context16.next = 3;
+                      _context17.next = 3;
                       return this.httpRequest.post(url, documents, options);
                     case 3:
-                      task = _context16.sent;
-                      return _context16.abrupt("return", new EnqueuedTask(task));
+                      task = _context17.sent;
+                      return _context17.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context16.stop();
+                      return _context17.stop();
                   }
-                }, _callee16, this);
+                }, _callee17, this);
               }));
-            }
+              function addDocuments(_x16, _x17) {
+                return _addDocuments.apply(this, arguments);
+              }
+              return addDocuments;
+            }()
             /**
              * Add or replace multiples documents in a string format to an index. It only
              * supports csv, ndjson and json formats.
@@ -2583,29 +2812,33 @@ function isUndefined(arg) {
              */
           }, {
             key: "addDocumentsFromString",
-            value: function addDocumentsFromString(documents, contentType, queryParams) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee17() {
+            value: function () {
+              var _addDocumentsFromString = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee18(documents, contentType, queryParams) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee17$(_context17) {
-                  while (1) switch (_context17.prev = _context17.next) {
+                return _regeneratorRuntime().wrap(function _callee18$(_context18) {
+                  while (1) switch (_context18.prev = _context18.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents");
-                      _context17.next = 3;
+                      _context18.next = 3;
                       return this.httpRequest.post(url, documents, queryParams, {
                         headers: {
                           'Content-Type': contentType
                         }
                       });
                     case 3:
-                      task = _context17.sent;
-                      return _context17.abrupt("return", new EnqueuedTask(task));
+                      task = _context18.sent;
+                      return _context18.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context17.stop();
+                      return _context18.stop();
                   }
-                }, _callee17, this);
+                }, _callee18, this);
               }));
-            }
+              function addDocumentsFromString(_x18, _x19, _x20) {
+                return _addDocumentsFromString.apply(this, arguments);
+              }
+              return addDocumentsFromString;
+            }()
             /**
              * Add or replace multiples documents to an index in batches
              *
@@ -2616,40 +2849,48 @@ function isUndefined(arg) {
              */
           }, {
             key: "addDocumentsInBatches",
-            value: function addDocumentsInBatches(documents) {
-              var batchSize = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
-              var options = arguments.length > 2 ? arguments[2] : undefined;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee18() {
-                var updates, i;
-                return _regeneratorRuntime().wrap(function _callee18$(_context18) {
-                  while (1) switch (_context18.prev = _context18.next) {
+            value: function () {
+              var _addDocumentsInBatches = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee19(documents) {
+                var batchSize,
+                  options,
+                  updates,
+                  i,
+                  _args19 = arguments;
+                return _regeneratorRuntime().wrap(function _callee19$(_context19) {
+                  while (1) switch (_context19.prev = _context19.next) {
                     case 0:
+                      batchSize = _args19.length > 1 && _args19[1] !== undefined ? _args19[1] : 1000;
+                      options = _args19.length > 2 ? _args19[2] : undefined;
                       updates = [];
                       i = 0;
-                    case 2:
+                    case 4:
                       if (!(i < documents.length)) {
-                        _context18.next = 11;
+                        _context19.next = 13;
                         break;
                       }
-                      _context18.t0 = updates;
-                      _context18.next = 6;
+                      _context19.t0 = updates;
+                      _context19.next = 8;
                       return this.addDocuments(documents.slice(i, i + batchSize), options);
-                    case 6:
-                      _context18.t1 = _context18.sent;
-                      _context18.t0.push.call(_context18.t0, _context18.t1);
                     case 8:
+                      _context19.t1 = _context19.sent;
+                      _context19.t0.push.call(_context19.t0, _context19.t1);
+                    case 10:
                       i += batchSize;
-                      _context18.next = 2;
+                      _context19.next = 4;
                       break;
-                    case 11:
-                      return _context18.abrupt("return", updates);
-                    case 12:
+                    case 13:
+                      return _context19.abrupt("return", updates);
+                    case 14:
                     case "end":
-                      return _context18.stop();
+                      return _context19.stop();
                   }
-                }, _callee18, this);
+                }, _callee19, this);
               }));
-            }
+              function addDocumentsInBatches(_x21) {
+                return _addDocumentsInBatches.apply(this, arguments);
+              }
+              return addDocumentsInBatches;
+            }()
             /**
              * Add or update multiples documents to an index
              *
@@ -2659,25 +2900,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateDocuments",
-            value: function updateDocuments(documents, options) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee19() {
+            value: function () {
+              var _updateDocuments = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee20(documents, options) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee19$(_context19) {
-                  while (1) switch (_context19.prev = _context19.next) {
+                return _regeneratorRuntime().wrap(function _callee20$(_context20) {
+                  while (1) switch (_context20.prev = _context20.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents");
-                      _context19.next = 3;
+                      _context20.next = 3;
                       return this.httpRequest.put(url, documents, options);
                     case 3:
-                      task = _context19.sent;
-                      return _context19.abrupt("return", new EnqueuedTask(task));
+                      task = _context20.sent;
+                      return _context20.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context19.stop();
+                      return _context20.stop();
                   }
-                }, _callee19, this);
+                }, _callee20, this);
               }));
-            }
+              function updateDocuments(_x22, _x23) {
+                return _updateDocuments.apply(this, arguments);
+              }
+              return updateDocuments;
+            }()
             /**
              * Add or update multiples documents to an index in batches
              *
@@ -2688,40 +2933,48 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateDocumentsInBatches",
-            value: function updateDocumentsInBatches(documents) {
-              var batchSize = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
-              var options = arguments.length > 2 ? arguments[2] : undefined;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee20() {
-                var updates, i;
-                return _regeneratorRuntime().wrap(function _callee20$(_context20) {
-                  while (1) switch (_context20.prev = _context20.next) {
+            value: function () {
+              var _updateDocumentsInBatches = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee21(documents) {
+                var batchSize,
+                  options,
+                  updates,
+                  i,
+                  _args21 = arguments;
+                return _regeneratorRuntime().wrap(function _callee21$(_context21) {
+                  while (1) switch (_context21.prev = _context21.next) {
                     case 0:
+                      batchSize = _args21.length > 1 && _args21[1] !== undefined ? _args21[1] : 1000;
+                      options = _args21.length > 2 ? _args21[2] : undefined;
                       updates = [];
                       i = 0;
-                    case 2:
+                    case 4:
                       if (!(i < documents.length)) {
-                        _context20.next = 11;
+                        _context21.next = 13;
                         break;
                       }
-                      _context20.t0 = updates;
-                      _context20.next = 6;
+                      _context21.t0 = updates;
+                      _context21.next = 8;
                       return this.updateDocuments(documents.slice(i, i + batchSize), options);
-                    case 6:
-                      _context20.t1 = _context20.sent;
-                      _context20.t0.push.call(_context20.t0, _context20.t1);
                     case 8:
+                      _context21.t1 = _context21.sent;
+                      _context21.t0.push.call(_context21.t0, _context21.t1);
+                    case 10:
                       i += batchSize;
-                      _context20.next = 2;
+                      _context21.next = 4;
                       break;
-                    case 11:
-                      return _context20.abrupt("return", updates);
-                    case 12:
+                    case 13:
+                      return _context21.abrupt("return", updates);
+                    case 14:
                     case "end":
-                      return _context20.stop();
+                      return _context21.stop();
                   }
-                }, _callee20, this);
+                }, _callee21, this);
               }));
-            }
+              function updateDocumentsInBatches(_x24) {
+                return _updateDocumentsInBatches.apply(this, arguments);
+              }
+              return updateDocumentsInBatches;
+            }()
             /**
              * Add or update multiples documents in a string format to an index. It only
              * supports csv, ndjson and json formats.
@@ -2734,29 +2987,33 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateDocumentsFromString",
-            value: function updateDocumentsFromString(documents, contentType, queryParams) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee21() {
+            value: function () {
+              var _updateDocumentsFromString = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee22(documents, contentType, queryParams) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee21$(_context21) {
-                  while (1) switch (_context21.prev = _context21.next) {
+                return _regeneratorRuntime().wrap(function _callee22$(_context22) {
+                  while (1) switch (_context22.prev = _context22.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents");
-                      _context21.next = 3;
+                      _context22.next = 3;
                       return this.httpRequest.put(url, documents, queryParams, {
                         headers: {
                           'Content-Type': contentType
                         }
                       });
                     case 3:
-                      task = _context21.sent;
-                      return _context21.abrupt("return", new EnqueuedTask(task));
+                      task = _context22.sent;
+                      return _context22.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context21.stop();
+                      return _context22.stop();
                   }
-                }, _callee21, this);
+                }, _callee22, this);
               }));
-            }
+              function updateDocumentsFromString(_x25, _x26, _x27) {
+                return _updateDocumentsFromString.apply(this, arguments);
+              }
+              return updateDocumentsFromString;
+            }()
             /**
              * Delete one document
              *
@@ -2765,26 +3022,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteDocument",
-            value: function deleteDocument(documentId) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee22() {
+            value: function () {
+              var _deleteDocument = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee23(documentId) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee22$(_context22) {
-                  while (1) switch (_context22.prev = _context22.next) {
+                return _regeneratorRuntime().wrap(function _callee23$(_context23) {
+                  while (1) switch (_context23.prev = _context23.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents/").concat(documentId);
-                      _context22.next = 3;
+                      _context23.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context22.sent;
+                      task = _context23.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context22.abrupt("return", task);
+                      return _context23.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context22.stop();
+                      return _context23.stop();
                   }
-                }, _callee22, this);
+                }, _callee23, this);
               }));
-            }
+              function deleteDocument(_x28) {
+                return _deleteDocument.apply(this, arguments);
+              }
+              return deleteDocument;
+            }()
             /**
              * Delete multiples documents of an index.
              *
@@ -2798,38 +3059,42 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteDocuments",
-            value: function deleteDocuments(params) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee23() {
+            value: function () {
+              var _deleteDocuments = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee24(params) {
                 var isDocumentsDeletionQuery, endpoint, url, task;
-                return _regeneratorRuntime().wrap(function _callee23$(_context23) {
-                  while (1) switch (_context23.prev = _context23.next) {
+                return _regeneratorRuntime().wrap(function _callee24$(_context24) {
+                  while (1) switch (_context24.prev = _context24.next) {
                     case 0:
                       // If params is of type DocumentsDeletionQuery
                       isDocumentsDeletionQuery = !Array.isArray(params) && _typeof(params) === 'object';
                       endpoint = isDocumentsDeletionQuery ? 'documents/delete' : 'documents/delete-batch';
                       url = "indexes/".concat(this.uid, "/").concat(endpoint);
-                      _context23.prev = 3;
-                      _context23.next = 6;
+                      _context24.prev = 3;
+                      _context24.next = 6;
                       return this.httpRequest.post(url, params);
                     case 6:
-                      task = _context23.sent;
-                      return _context23.abrupt("return", new EnqueuedTask(task));
+                      task = _context24.sent;
+                      return _context24.abrupt("return", new EnqueuedTask(task));
                     case 10:
-                      _context23.prev = 10;
-                      _context23.t0 = _context23["catch"](3);
-                      if (_context23.t0 instanceof MeiliSearchCommunicationError && isDocumentsDeletionQuery) {
-                        _context23.t0.message = versionErrorHintMessage(_context23.t0.message, 'deleteDocuments');
-                      } else if (_context23.t0 instanceof MeiliSearchApiError) {
-                        _context23.t0.message = versionErrorHintMessage(_context23.t0.message, 'deleteDocuments');
+                      _context24.prev = 10;
+                      _context24.t0 = _context24["catch"](3);
+                      if (_context24.t0 instanceof MeiliSearchCommunicationError && isDocumentsDeletionQuery) {
+                        _context24.t0.message = versionErrorHintMessage(_context24.t0.message, 'deleteDocuments');
+                      } else if (_context24.t0 instanceof MeiliSearchApiError) {
+                        _context24.t0.message = versionErrorHintMessage(_context24.t0.message, 'deleteDocuments');
                       }
-                      throw _context23.t0;
+                      throw _context24.t0;
                     case 14:
                     case "end":
-                      return _context23.stop();
+                      return _context24.stop();
                   }
-                }, _callee23, this, [[3, 10]]);
+                }, _callee24, this, [[3, 10]]);
               }));
-            }
+              function deleteDocuments(_x29) {
+                return _deleteDocuments.apply(this, arguments);
+              }
+              return deleteDocuments;
+            }()
             /**
              * Delete all documents of an index
              *
@@ -2837,27 +3102,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteAllDocuments",
-            value: function deleteAllDocuments() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee24() {
+            value: function () {
+              var _deleteAllDocuments = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee25() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee24$(_context24) {
-                  while (1) switch (_context24.prev = _context24.next) {
+                return _regeneratorRuntime().wrap(function _callee25$(_context25) {
+                  while (1) switch (_context25.prev = _context25.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/documents");
-                      _context24.next = 3;
+                      _context25.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context24.sent;
+                      task = _context25.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context24.abrupt("return", task);
+                      return _context25.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context24.stop();
+                      return _context25.stop();
                   }
-                }, _callee24, this);
+                }, _callee25, this);
               }));
-            }
-            ///
+              function deleteAllDocuments() {
+                return _deleteAllDocuments.apply(this, arguments);
+              }
+              return deleteAllDocuments;
+            }() ///
             /// SETTINGS
             ///
             /**
@@ -2867,24 +3135,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getSettings",
-            value: function getSettings() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee25() {
+            value: function () {
+              var _getSettings = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee26() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee25$(_context25) {
-                  while (1) switch (_context25.prev = _context25.next) {
+                return _regeneratorRuntime().wrap(function _callee26$(_context26) {
+                  while (1) switch (_context26.prev = _context26.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings");
-                      _context25.next = 3;
+                      _context26.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context25.abrupt("return", _context25.sent);
+                      return _context26.abrupt("return", _context26.sent);
                     case 4:
                     case "end":
-                      return _context25.stop();
+                      return _context26.stop();
                   }
-                }, _callee25, this);
+                }, _callee26, this);
               }));
-            }
+              function getSettings() {
+                return _getSettings.apply(this, arguments);
+              }
+              return getSettings;
+            }()
             /**
              * Update all settings Any parameters not provided will be left unchanged.
              *
@@ -2893,45 +3165,18 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateSettings",
-            value: function updateSettings(settings) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee26() {
-                var url, task;
-                return _regeneratorRuntime().wrap(function _callee26$(_context26) {
-                  while (1) switch (_context26.prev = _context26.next) {
-                    case 0:
-                      url = "indexes/".concat(this.uid, "/settings");
-                      _context26.next = 3;
-                      return this.httpRequest.patch(url, settings);
-                    case 3:
-                      task = _context26.sent;
-                      task.enqueued = new Date(task.enqueuedAt);
-                      return _context26.abrupt("return", task);
-                    case 6:
-                    case "end":
-                      return _context26.stop();
-                  }
-                }, _callee26, this);
-              }));
-            }
-            /**
-             * Reset settings.
-             *
-             * @returns Promise containing an EnqueuedTask
-             */
-          }, {
-            key: "resetSettings",
-            value: function resetSettings() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee27() {
+            value: function () {
+              var _updateSettings = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee27(settings) {
                 var url, task;
                 return _regeneratorRuntime().wrap(function _callee27$(_context27) {
                   while (1) switch (_context27.prev = _context27.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings");
                       _context27.next = 3;
-                      return this.httpRequest.delete(url);
+                      return this.httpRequest.patch(url, settings);
                     case 3:
                       task = _context27.sent;
-                      task.enqueuedAt = new Date(task.enqueuedAt);
+                      task.enqueued = new Date(task.enqueuedAt);
                       return _context27.abrupt("return", task);
                     case 6:
                     case "end":
@@ -2939,8 +3184,42 @@ function isUndefined(arg) {
                   }
                 }, _callee27, this);
               }));
-            }
-            ///
+              function updateSettings(_x30) {
+                return _updateSettings.apply(this, arguments);
+              }
+              return updateSettings;
+            }()
+            /**
+             * Reset settings.
+             *
+             * @returns Promise containing an EnqueuedTask
+             */
+          }, {
+            key: "resetSettings",
+            value: function () {
+              var _resetSettings = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee28() {
+                var url, task;
+                return _regeneratorRuntime().wrap(function _callee28$(_context28) {
+                  while (1) switch (_context28.prev = _context28.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings");
+                      _context28.next = 3;
+                      return this.httpRequest.delete(url);
+                    case 3:
+                      task = _context28.sent;
+                      task.enqueuedAt = new Date(task.enqueuedAt);
+                      return _context28.abrupt("return", task);
+                    case 6:
+                    case "end":
+                      return _context28.stop();
+                  }
+                }, _callee28, this);
+              }));
+              function resetSettings() {
+                return _resetSettings.apply(this, arguments);
+              }
+              return resetSettings;
+            }() ///
             /// PAGINATION SETTINGS
             ///
             /**
@@ -2950,24 +3229,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getPagination",
-            value: function getPagination() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee28() {
+            value: function () {
+              var _getPagination = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee29() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee28$(_context28) {
-                  while (1) switch (_context28.prev = _context28.next) {
+                return _regeneratorRuntime().wrap(function _callee29$(_context29) {
+                  while (1) switch (_context29.prev = _context29.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/pagination");
-                      _context28.next = 3;
+                      _context29.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context28.abrupt("return", _context28.sent);
+                      return _context29.abrupt("return", _context29.sent);
                     case 4:
                     case "end":
-                      return _context28.stop();
+                      return _context29.stop();
                   }
-                }, _callee28, this);
+                }, _callee29, this);
               }));
-            }
+              function getPagination() {
+                return _getPagination.apply(this, arguments);
+              }
+              return getPagination;
+            }()
             /**
              * Update the pagination settings.
              *
@@ -2976,41 +3259,15 @@ function isUndefined(arg) {
              */
           }, {
             key: "updatePagination",
-            value: function updatePagination(pagination) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee29() {
-                var url, task;
-                return _regeneratorRuntime().wrap(function _callee29$(_context29) {
-                  while (1) switch (_context29.prev = _context29.next) {
-                    case 0:
-                      url = "indexes/".concat(this.uid, "/settings/pagination");
-                      _context29.next = 3;
-                      return this.httpRequest.patch(url, pagination);
-                    case 3:
-                      task = _context29.sent;
-                      return _context29.abrupt("return", new EnqueuedTask(task));
-                    case 5:
-                    case "end":
-                      return _context29.stop();
-                  }
-                }, _callee29, this);
-              }));
-            }
-            /**
-             * Reset the pagination settings.
-             *
-             * @returns Promise containing an EnqueuedTask
-             */
-          }, {
-            key: "resetPagination",
-            value: function resetPagination() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee30() {
+            value: function () {
+              var _updatePagination = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee30(pagination) {
                 var url, task;
                 return _regeneratorRuntime().wrap(function _callee30$(_context30) {
                   while (1) switch (_context30.prev = _context30.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/pagination");
                       _context30.next = 3;
-                      return this.httpRequest.delete(url);
+                      return this.httpRequest.patch(url, pagination);
                     case 3:
                       task = _context30.sent;
                       return _context30.abrupt("return", new EnqueuedTask(task));
@@ -3020,8 +3277,41 @@ function isUndefined(arg) {
                   }
                 }, _callee30, this);
               }));
-            }
-            ///
+              function updatePagination(_x31) {
+                return _updatePagination.apply(this, arguments);
+              }
+              return updatePagination;
+            }()
+            /**
+             * Reset the pagination settings.
+             *
+             * @returns Promise containing an EnqueuedTask
+             */
+          }, {
+            key: "resetPagination",
+            value: function () {
+              var _resetPagination = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee31() {
+                var url, task;
+                return _regeneratorRuntime().wrap(function _callee31$(_context31) {
+                  while (1) switch (_context31.prev = _context31.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings/pagination");
+                      _context31.next = 3;
+                      return this.httpRequest.delete(url);
+                    case 3:
+                      task = _context31.sent;
+                      return _context31.abrupt("return", new EnqueuedTask(task));
+                    case 5:
+                    case "end":
+                      return _context31.stop();
+                  }
+                }, _callee31, this);
+              }));
+              function resetPagination() {
+                return _resetPagination.apply(this, arguments);
+              }
+              return resetPagination;
+            }() ///
             /// SYNONYMS
             ///
             /**
@@ -3031,24 +3321,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getSynonyms",
-            value: function getSynonyms() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee31() {
+            value: function () {
+              var _getSynonyms = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee32() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee31$(_context31) {
-                  while (1) switch (_context31.prev = _context31.next) {
+                return _regeneratorRuntime().wrap(function _callee32$(_context32) {
+                  while (1) switch (_context32.prev = _context32.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/synonyms");
-                      _context31.next = 3;
+                      _context32.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context31.abrupt("return", _context31.sent);
+                      return _context32.abrupt("return", _context32.sent);
                     case 4:
                     case "end":
-                      return _context31.stop();
+                      return _context32.stop();
                   }
-                }, _callee31, this);
+                }, _callee32, this);
               }));
-            }
+              function getSynonyms() {
+                return _getSynonyms.apply(this, arguments);
+              }
+              return getSynonyms;
+            }()
             /**
              * Update the list of synonyms. Overwrite the old list.
              *
@@ -3057,25 +3351,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateSynonyms",
-            value: function updateSynonyms(synonyms) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee32() {
+            value: function () {
+              var _updateSynonyms = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee33(synonyms) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee32$(_context32) {
-                  while (1) switch (_context32.prev = _context32.next) {
+                return _regeneratorRuntime().wrap(function _callee33$(_context33) {
+                  while (1) switch (_context33.prev = _context33.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/synonyms");
-                      _context32.next = 3;
+                      _context33.next = 3;
                       return this.httpRequest.put(url, synonyms);
                     case 3:
-                      task = _context32.sent;
-                      return _context32.abrupt("return", new EnqueuedTask(task));
+                      task = _context33.sent;
+                      return _context33.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context32.stop();
+                      return _context33.stop();
                   }
-                }, _callee32, this);
+                }, _callee33, this);
               }));
-            }
+              function updateSynonyms(_x32) {
+                return _updateSynonyms.apply(this, arguments);
+              }
+              return updateSynonyms;
+            }()
             /**
              * Reset the synonym list to be empty again
              *
@@ -3083,27 +3381,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetSynonyms",
-            value: function resetSynonyms() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee33() {
+            value: function () {
+              var _resetSynonyms = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee34() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee33$(_context33) {
-                  while (1) switch (_context33.prev = _context33.next) {
+                return _regeneratorRuntime().wrap(function _callee34$(_context34) {
+                  while (1) switch (_context34.prev = _context34.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/synonyms");
-                      _context33.next = 3;
+                      _context34.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context33.sent;
+                      task = _context34.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context33.abrupt("return", task);
+                      return _context34.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context33.stop();
+                      return _context34.stop();
                   }
-                }, _callee33, this);
+                }, _callee34, this);
               }));
-            }
-            ///
+              function resetSynonyms() {
+                return _resetSynonyms.apply(this, arguments);
+              }
+              return resetSynonyms;
+            }() ///
             /// STOP WORDS
             ///
             /**
@@ -3113,24 +3414,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getStopWords",
-            value: function getStopWords() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee34() {
+            value: function () {
+              var _getStopWords = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee35() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee34$(_context34) {
-                  while (1) switch (_context34.prev = _context34.next) {
+                return _regeneratorRuntime().wrap(function _callee35$(_context35) {
+                  while (1) switch (_context35.prev = _context35.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/stop-words");
-                      _context34.next = 3;
+                      _context35.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context34.abrupt("return", _context34.sent);
+                      return _context35.abrupt("return", _context35.sent);
                     case 4:
                     case "end":
-                      return _context34.stop();
+                      return _context35.stop();
                   }
-                }, _callee34, this);
+                }, _callee35, this);
               }));
-            }
+              function getStopWords() {
+                return _getStopWords.apply(this, arguments);
+              }
+              return getStopWords;
+            }()
             /**
              * Update the list of stop-words. Overwrite the old list.
              *
@@ -3139,25 +3444,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateStopWords",
-            value: function updateStopWords(stopWords) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee35() {
+            value: function () {
+              var _updateStopWords = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee36(stopWords) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee35$(_context35) {
-                  while (1) switch (_context35.prev = _context35.next) {
+                return _regeneratorRuntime().wrap(function _callee36$(_context36) {
+                  while (1) switch (_context36.prev = _context36.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/stop-words");
-                      _context35.next = 3;
+                      _context36.next = 3;
                       return this.httpRequest.put(url, stopWords);
                     case 3:
-                      task = _context35.sent;
-                      return _context35.abrupt("return", new EnqueuedTask(task));
+                      task = _context36.sent;
+                      return _context36.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context35.stop();
+                      return _context36.stop();
                   }
-                }, _callee35, this);
+                }, _callee36, this);
               }));
-            }
+              function updateStopWords(_x33) {
+                return _updateStopWords.apply(this, arguments);
+              }
+              return updateStopWords;
+            }()
             /**
              * Reset the stop-words list to be empty again
              *
@@ -3165,27 +3474,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetStopWords",
-            value: function resetStopWords() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee36() {
+            value: function () {
+              var _resetStopWords = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee37() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee36$(_context36) {
-                  while (1) switch (_context36.prev = _context36.next) {
+                return _regeneratorRuntime().wrap(function _callee37$(_context37) {
+                  while (1) switch (_context37.prev = _context37.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/stop-words");
-                      _context36.next = 3;
+                      _context37.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context36.sent;
+                      task = _context37.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context36.abrupt("return", task);
+                      return _context37.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context36.stop();
+                      return _context37.stop();
                   }
-                }, _callee36, this);
+                }, _callee37, this);
               }));
-            }
-            ///
+              function resetStopWords() {
+                return _resetStopWords.apply(this, arguments);
+              }
+              return resetStopWords;
+            }() ///
             /// RANKING RULES
             ///
             /**
@@ -3195,24 +3507,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getRankingRules",
-            value: function getRankingRules() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee37() {
+            value: function () {
+              var _getRankingRules = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee38() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee37$(_context37) {
-                  while (1) switch (_context37.prev = _context37.next) {
+                return _regeneratorRuntime().wrap(function _callee38$(_context38) {
+                  while (1) switch (_context38.prev = _context38.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/ranking-rules");
-                      _context37.next = 3;
+                      _context38.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context37.abrupt("return", _context37.sent);
+                      return _context38.abrupt("return", _context38.sent);
                     case 4:
                     case "end":
-                      return _context37.stop();
+                      return _context38.stop();
                   }
-                }, _callee37, this);
+                }, _callee38, this);
               }));
-            }
+              function getRankingRules() {
+                return _getRankingRules.apply(this, arguments);
+              }
+              return getRankingRules;
+            }()
             /**
              * Update the list of ranking-rules. Overwrite the old list.
              *
@@ -3222,25 +3538,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateRankingRules",
-            value: function updateRankingRules(rankingRules) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee38() {
+            value: function () {
+              var _updateRankingRules = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee39(rankingRules) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee38$(_context38) {
-                  while (1) switch (_context38.prev = _context38.next) {
+                return _regeneratorRuntime().wrap(function _callee39$(_context39) {
+                  while (1) switch (_context39.prev = _context39.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/ranking-rules");
-                      _context38.next = 3;
+                      _context39.next = 3;
                       return this.httpRequest.put(url, rankingRules);
                     case 3:
-                      task = _context38.sent;
-                      return _context38.abrupt("return", new EnqueuedTask(task));
+                      task = _context39.sent;
+                      return _context39.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context38.stop();
+                      return _context39.stop();
                   }
-                }, _callee38, this);
+                }, _callee39, this);
               }));
-            }
+              function updateRankingRules(_x34) {
+                return _updateRankingRules.apply(this, arguments);
+              }
+              return updateRankingRules;
+            }()
             /**
              * Reset the ranking rules list to its default value
              *
@@ -3248,27 +3568,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetRankingRules",
-            value: function resetRankingRules() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee39() {
+            value: function () {
+              var _resetRankingRules = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee40() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee39$(_context39) {
-                  while (1) switch (_context39.prev = _context39.next) {
+                return _regeneratorRuntime().wrap(function _callee40$(_context40) {
+                  while (1) switch (_context40.prev = _context40.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/ranking-rules");
-                      _context39.next = 3;
+                      _context40.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context39.sent;
+                      task = _context40.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context39.abrupt("return", task);
+                      return _context40.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context39.stop();
+                      return _context40.stop();
                   }
-                }, _callee39, this);
+                }, _callee40, this);
               }));
-            }
-            ///
+              function resetRankingRules() {
+                return _resetRankingRules.apply(this, arguments);
+              }
+              return resetRankingRules;
+            }() ///
             /// DISTINCT ATTRIBUTE
             ///
             /**
@@ -3278,24 +3601,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getDistinctAttribute",
-            value: function getDistinctAttribute() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee40() {
+            value: function () {
+              var _getDistinctAttribute = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee41() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee40$(_context40) {
-                  while (1) switch (_context40.prev = _context40.next) {
+                return _regeneratorRuntime().wrap(function _callee41$(_context41) {
+                  while (1) switch (_context41.prev = _context41.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/distinct-attribute");
-                      _context40.next = 3;
+                      _context41.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context40.abrupt("return", _context40.sent);
+                      return _context41.abrupt("return", _context41.sent);
                     case 4:
                     case "end":
-                      return _context40.stop();
+                      return _context41.stop();
                   }
-                }, _callee40, this);
+                }, _callee41, this);
               }));
-            }
+              function getDistinctAttribute() {
+                return _getDistinctAttribute.apply(this, arguments);
+              }
+              return getDistinctAttribute;
+            }()
             /**
              * Update the distinct-attribute.
              *
@@ -3304,25 +3631,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateDistinctAttribute",
-            value: function updateDistinctAttribute(distinctAttribute) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee41() {
+            value: function () {
+              var _updateDistinctAttribute = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee42(distinctAttribute) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee41$(_context41) {
-                  while (1) switch (_context41.prev = _context41.next) {
+                return _regeneratorRuntime().wrap(function _callee42$(_context42) {
+                  while (1) switch (_context42.prev = _context42.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/distinct-attribute");
-                      _context41.next = 3;
+                      _context42.next = 3;
                       return this.httpRequest.put(url, distinctAttribute);
                     case 3:
-                      task = _context41.sent;
-                      return _context41.abrupt("return", new EnqueuedTask(task));
+                      task = _context42.sent;
+                      return _context42.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context41.stop();
+                      return _context42.stop();
                   }
-                }, _callee41, this);
+                }, _callee42, this);
               }));
-            }
+              function updateDistinctAttribute(_x35) {
+                return _updateDistinctAttribute.apply(this, arguments);
+              }
+              return updateDistinctAttribute;
+            }()
             /**
              * Reset the distinct-attribute.
              *
@@ -3330,27 +3661,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetDistinctAttribute",
-            value: function resetDistinctAttribute() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee42() {
+            value: function () {
+              var _resetDistinctAttribute = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee43() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee42$(_context42) {
-                  while (1) switch (_context42.prev = _context42.next) {
+                return _regeneratorRuntime().wrap(function _callee43$(_context43) {
+                  while (1) switch (_context43.prev = _context43.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/distinct-attribute");
-                      _context42.next = 3;
+                      _context43.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context42.sent;
+                      task = _context43.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context42.abrupt("return", task);
+                      return _context43.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context42.stop();
+                      return _context43.stop();
                   }
-                }, _callee42, this);
+                }, _callee43, this);
               }));
-            }
-            ///
+              function resetDistinctAttribute() {
+                return _resetDistinctAttribute.apply(this, arguments);
+              }
+              return resetDistinctAttribute;
+            }() ///
             /// FILTERABLE ATTRIBUTES
             ///
             /**
@@ -3360,24 +3694,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getFilterableAttributes",
-            value: function getFilterableAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee43() {
+            value: function () {
+              var _getFilterableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee44() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee43$(_context43) {
-                  while (1) switch (_context43.prev = _context43.next) {
+                return _regeneratorRuntime().wrap(function _callee44$(_context44) {
+                  while (1) switch (_context44.prev = _context44.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/filterable-attributes");
-                      _context43.next = 3;
+                      _context44.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context43.abrupt("return", _context43.sent);
+                      return _context44.abrupt("return", _context44.sent);
                     case 4:
                     case "end":
-                      return _context43.stop();
+                      return _context44.stop();
                   }
-                }, _callee43, this);
+                }, _callee44, this);
               }));
-            }
+              function getFilterableAttributes() {
+                return _getFilterableAttributes.apply(this, arguments);
+              }
+              return getFilterableAttributes;
+            }()
             /**
              * Update the filterable-attributes.
              *
@@ -3387,25 +3725,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateFilterableAttributes",
-            value: function updateFilterableAttributes(filterableAttributes) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee44() {
+            value: function () {
+              var _updateFilterableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee45(filterableAttributes) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee44$(_context44) {
-                  while (1) switch (_context44.prev = _context44.next) {
+                return _regeneratorRuntime().wrap(function _callee45$(_context45) {
+                  while (1) switch (_context45.prev = _context45.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/filterable-attributes");
-                      _context44.next = 3;
+                      _context45.next = 3;
                       return this.httpRequest.put(url, filterableAttributes);
                     case 3:
-                      task = _context44.sent;
-                      return _context44.abrupt("return", new EnqueuedTask(task));
+                      task = _context45.sent;
+                      return _context45.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context44.stop();
+                      return _context45.stop();
                   }
-                }, _callee44, this);
+                }, _callee45, this);
               }));
-            }
+              function updateFilterableAttributes(_x36) {
+                return _updateFilterableAttributes.apply(this, arguments);
+              }
+              return updateFilterableAttributes;
+            }()
             /**
              * Reset the filterable-attributes.
              *
@@ -3413,27 +3755,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetFilterableAttributes",
-            value: function resetFilterableAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee45() {
+            value: function () {
+              var _resetFilterableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee46() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee45$(_context45) {
-                  while (1) switch (_context45.prev = _context45.next) {
+                return _regeneratorRuntime().wrap(function _callee46$(_context46) {
+                  while (1) switch (_context46.prev = _context46.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/filterable-attributes");
-                      _context45.next = 3;
+                      _context46.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context45.sent;
+                      task = _context46.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context45.abrupt("return", task);
+                      return _context46.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context45.stop();
+                      return _context46.stop();
                   }
-                }, _callee45, this);
+                }, _callee46, this);
               }));
-            }
-            ///
+              function resetFilterableAttributes() {
+                return _resetFilterableAttributes.apply(this, arguments);
+              }
+              return resetFilterableAttributes;
+            }() ///
             /// SORTABLE ATTRIBUTES
             ///
             /**
@@ -3443,24 +3788,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getSortableAttributes",
-            value: function getSortableAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee46() {
+            value: function () {
+              var _getSortableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee47() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee46$(_context46) {
-                  while (1) switch (_context46.prev = _context46.next) {
+                return _regeneratorRuntime().wrap(function _callee47$(_context47) {
+                  while (1) switch (_context47.prev = _context47.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/sortable-attributes");
-                      _context46.next = 3;
+                      _context47.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context46.abrupt("return", _context46.sent);
+                      return _context47.abrupt("return", _context47.sent);
                     case 4:
                     case "end":
-                      return _context46.stop();
+                      return _context47.stop();
                   }
-                }, _callee46, this);
+                }, _callee47, this);
               }));
-            }
+              function getSortableAttributes() {
+                return _getSortableAttributes.apply(this, arguments);
+              }
+              return getSortableAttributes;
+            }()
             /**
              * Update the sortable-attributes.
              *
@@ -3470,25 +3819,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateSortableAttributes",
-            value: function updateSortableAttributes(sortableAttributes) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee47() {
+            value: function () {
+              var _updateSortableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee48(sortableAttributes) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee47$(_context47) {
-                  while (1) switch (_context47.prev = _context47.next) {
+                return _regeneratorRuntime().wrap(function _callee48$(_context48) {
+                  while (1) switch (_context48.prev = _context48.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/sortable-attributes");
-                      _context47.next = 3;
+                      _context48.next = 3;
                       return this.httpRequest.put(url, sortableAttributes);
                     case 3:
-                      task = _context47.sent;
-                      return _context47.abrupt("return", new EnqueuedTask(task));
+                      task = _context48.sent;
+                      return _context48.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context47.stop();
+                      return _context48.stop();
                   }
-                }, _callee47, this);
+                }, _callee48, this);
               }));
-            }
+              function updateSortableAttributes(_x37) {
+                return _updateSortableAttributes.apply(this, arguments);
+              }
+              return updateSortableAttributes;
+            }()
             /**
              * Reset the sortable-attributes.
              *
@@ -3496,27 +3849,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetSortableAttributes",
-            value: function resetSortableAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee48() {
+            value: function () {
+              var _resetSortableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee49() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee48$(_context48) {
-                  while (1) switch (_context48.prev = _context48.next) {
+                return _regeneratorRuntime().wrap(function _callee49$(_context49) {
+                  while (1) switch (_context49.prev = _context49.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/sortable-attributes");
-                      _context48.next = 3;
+                      _context49.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context48.sent;
+                      task = _context49.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context48.abrupt("return", task);
+                      return _context49.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context48.stop();
+                      return _context49.stop();
                   }
-                }, _callee48, this);
+                }, _callee49, this);
               }));
-            }
-            ///
+              function resetSortableAttributes() {
+                return _resetSortableAttributes.apply(this, arguments);
+              }
+              return resetSortableAttributes;
+            }() ///
             /// SEARCHABLE ATTRIBUTE
             ///
             /**
@@ -3526,24 +3882,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getSearchableAttributes",
-            value: function getSearchableAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee49() {
+            value: function () {
+              var _getSearchableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee50() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee49$(_context49) {
-                  while (1) switch (_context49.prev = _context49.next) {
+                return _regeneratorRuntime().wrap(function _callee50$(_context50) {
+                  while (1) switch (_context50.prev = _context50.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/searchable-attributes");
-                      _context49.next = 3;
+                      _context50.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context49.abrupt("return", _context49.sent);
+                      return _context50.abrupt("return", _context50.sent);
                     case 4:
                     case "end":
-                      return _context49.stop();
+                      return _context50.stop();
                   }
-                }, _callee49, this);
+                }, _callee50, this);
               }));
-            }
+              function getSearchableAttributes() {
+                return _getSearchableAttributes.apply(this, arguments);
+              }
+              return getSearchableAttributes;
+            }()
             /**
              * Update the searchable-attributes.
              *
@@ -3553,25 +3913,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateSearchableAttributes",
-            value: function updateSearchableAttributes(searchableAttributes) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee50() {
+            value: function () {
+              var _updateSearchableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee51(searchableAttributes) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee50$(_context50) {
-                  while (1) switch (_context50.prev = _context50.next) {
+                return _regeneratorRuntime().wrap(function _callee51$(_context51) {
+                  while (1) switch (_context51.prev = _context51.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/searchable-attributes");
-                      _context50.next = 3;
+                      _context51.next = 3;
                       return this.httpRequest.put(url, searchableAttributes);
                     case 3:
-                      task = _context50.sent;
-                      return _context50.abrupt("return", new EnqueuedTask(task));
+                      task = _context51.sent;
+                      return _context51.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context50.stop();
+                      return _context51.stop();
                   }
-                }, _callee50, this);
+                }, _callee51, this);
               }));
-            }
+              function updateSearchableAttributes(_x38) {
+                return _updateSearchableAttributes.apply(this, arguments);
+              }
+              return updateSearchableAttributes;
+            }()
             /**
              * Reset the searchable-attributes.
              *
@@ -3579,27 +3943,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetSearchableAttributes",
-            value: function resetSearchableAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee51() {
+            value: function () {
+              var _resetSearchableAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee52() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee51$(_context51) {
-                  while (1) switch (_context51.prev = _context51.next) {
+                return _regeneratorRuntime().wrap(function _callee52$(_context52) {
+                  while (1) switch (_context52.prev = _context52.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/searchable-attributes");
-                      _context51.next = 3;
+                      _context52.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context51.sent;
+                      task = _context52.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context51.abrupt("return", task);
+                      return _context52.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context51.stop();
+                      return _context52.stop();
                   }
-                }, _callee51, this);
+                }, _callee52, this);
               }));
-            }
-            ///
+              function resetSearchableAttributes() {
+                return _resetSearchableAttributes.apply(this, arguments);
+              }
+              return resetSearchableAttributes;
+            }() ///
             /// DISPLAYED ATTRIBUTE
             ///
             /**
@@ -3609,24 +3976,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getDisplayedAttributes",
-            value: function getDisplayedAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee52() {
+            value: function () {
+              var _getDisplayedAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee53() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee52$(_context52) {
-                  while (1) switch (_context52.prev = _context52.next) {
+                return _regeneratorRuntime().wrap(function _callee53$(_context53) {
+                  while (1) switch (_context53.prev = _context53.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/displayed-attributes");
-                      _context52.next = 3;
+                      _context53.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context52.abrupt("return", _context52.sent);
+                      return _context53.abrupt("return", _context53.sent);
                     case 4:
                     case "end":
-                      return _context52.stop();
+                      return _context53.stop();
                   }
-                }, _callee52, this);
+                }, _callee53, this);
               }));
-            }
+              function getDisplayedAttributes() {
+                return _getDisplayedAttributes.apply(this, arguments);
+              }
+              return getDisplayedAttributes;
+            }()
             /**
              * Update the displayed-attributes.
              *
@@ -3636,25 +4007,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateDisplayedAttributes",
-            value: function updateDisplayedAttributes(displayedAttributes) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee53() {
+            value: function () {
+              var _updateDisplayedAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee54(displayedAttributes) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee53$(_context53) {
-                  while (1) switch (_context53.prev = _context53.next) {
+                return _regeneratorRuntime().wrap(function _callee54$(_context54) {
+                  while (1) switch (_context54.prev = _context54.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/displayed-attributes");
-                      _context53.next = 3;
+                      _context54.next = 3;
                       return this.httpRequest.put(url, displayedAttributes);
                     case 3:
-                      task = _context53.sent;
-                      return _context53.abrupt("return", new EnqueuedTask(task));
+                      task = _context54.sent;
+                      return _context54.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context53.stop();
+                      return _context54.stop();
                   }
-                }, _callee53, this);
+                }, _callee54, this);
               }));
-            }
+              function updateDisplayedAttributes(_x39) {
+                return _updateDisplayedAttributes.apply(this, arguments);
+              }
+              return updateDisplayedAttributes;
+            }()
             /**
              * Reset the displayed-attributes.
              *
@@ -3662,27 +4037,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetDisplayedAttributes",
-            value: function resetDisplayedAttributes() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee54() {
+            value: function () {
+              var _resetDisplayedAttributes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee55() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee54$(_context54) {
-                  while (1) switch (_context54.prev = _context54.next) {
+                return _regeneratorRuntime().wrap(function _callee55$(_context55) {
+                  while (1) switch (_context55.prev = _context55.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/displayed-attributes");
-                      _context54.next = 3;
+                      _context55.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context54.sent;
+                      task = _context55.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context54.abrupt("return", task);
+                      return _context55.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context54.stop();
+                      return _context55.stop();
                   }
-                }, _callee54, this);
+                }, _callee55, this);
               }));
-            }
-            ///
+              function resetDisplayedAttributes() {
+                return _resetDisplayedAttributes.apply(this, arguments);
+              }
+              return resetDisplayedAttributes;
+            }() ///
             /// TYPO TOLERANCE
             ///
             /**
@@ -3692,24 +4070,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getTypoTolerance",
-            value: function getTypoTolerance() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee55() {
+            value: function () {
+              var _getTypoTolerance = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee56() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee55$(_context55) {
-                  while (1) switch (_context55.prev = _context55.next) {
+                return _regeneratorRuntime().wrap(function _callee56$(_context56) {
+                  while (1) switch (_context56.prev = _context56.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/typo-tolerance");
-                      _context55.next = 3;
+                      _context56.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context55.abrupt("return", _context55.sent);
+                      return _context56.abrupt("return", _context56.sent);
                     case 4:
                     case "end":
-                      return _context55.stop();
+                      return _context56.stop();
                   }
-                }, _callee55, this);
+                }, _callee56, this);
               }));
-            }
+              function getTypoTolerance() {
+                return _getTypoTolerance.apply(this, arguments);
+              }
+              return getTypoTolerance;
+            }()
             /**
              * Update the typo tolerance settings.
              *
@@ -3719,42 +4101,15 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateTypoTolerance",
-            value: function updateTypoTolerance(typoTolerance) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee56() {
-                var url, task;
-                return _regeneratorRuntime().wrap(function _callee56$(_context56) {
-                  while (1) switch (_context56.prev = _context56.next) {
-                    case 0:
-                      url = "indexes/".concat(this.uid, "/settings/typo-tolerance");
-                      _context56.next = 3;
-                      return this.httpRequest.patch(url, typoTolerance);
-                    case 3:
-                      task = _context56.sent;
-                      task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context56.abrupt("return", task);
-                    case 6:
-                    case "end":
-                      return _context56.stop();
-                  }
-                }, _callee56, this);
-              }));
-            }
-            /**
-             * Reset the typo tolerance settings.
-             *
-             * @returns Promise containing object of the enqueued update
-             */
-          }, {
-            key: "resetTypoTolerance",
-            value: function resetTypoTolerance() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee57() {
+            value: function () {
+              var _updateTypoTolerance = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee57(typoTolerance) {
                 var url, task;
                 return _regeneratorRuntime().wrap(function _callee57$(_context57) {
                   while (1) switch (_context57.prev = _context57.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/typo-tolerance");
                       _context57.next = 3;
-                      return this.httpRequest.delete(url);
+                      return this.httpRequest.patch(url, typoTolerance);
                     case 3:
                       task = _context57.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
@@ -3765,8 +4120,42 @@ function isUndefined(arg) {
                   }
                 }, _callee57, this);
               }));
-            }
-            ///
+              function updateTypoTolerance(_x40) {
+                return _updateTypoTolerance.apply(this, arguments);
+              }
+              return updateTypoTolerance;
+            }()
+            /**
+             * Reset the typo tolerance settings.
+             *
+             * @returns Promise containing object of the enqueued update
+             */
+          }, {
+            key: "resetTypoTolerance",
+            value: function () {
+              var _resetTypoTolerance = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee58() {
+                var url, task;
+                return _regeneratorRuntime().wrap(function _callee58$(_context58) {
+                  while (1) switch (_context58.prev = _context58.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings/typo-tolerance");
+                      _context58.next = 3;
+                      return this.httpRequest.delete(url);
+                    case 3:
+                      task = _context58.sent;
+                      task.enqueuedAt = new Date(task.enqueuedAt);
+                      return _context58.abrupt("return", task);
+                    case 6:
+                    case "end":
+                      return _context58.stop();
+                  }
+                }, _callee58, this);
+              }));
+              function resetTypoTolerance() {
+                return _resetTypoTolerance.apply(this, arguments);
+              }
+              return resetTypoTolerance;
+            }() ///
             /// FACETING
             ///
             /**
@@ -3776,24 +4165,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getFaceting",
-            value: function getFaceting() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee58() {
+            value: function () {
+              var _getFaceting = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee59() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee58$(_context58) {
-                  while (1) switch (_context58.prev = _context58.next) {
+                return _regeneratorRuntime().wrap(function _callee59$(_context59) {
+                  while (1) switch (_context59.prev = _context59.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/faceting");
-                      _context58.next = 3;
+                      _context59.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context58.abrupt("return", _context58.sent);
+                      return _context59.abrupt("return", _context59.sent);
                     case 4:
                     case "end":
-                      return _context58.stop();
+                      return _context59.stop();
                   }
-                }, _callee58, this);
+                }, _callee59, this);
               }));
-            }
+              function getFaceting() {
+                return _getFaceting.apply(this, arguments);
+              }
+              return getFaceting;
+            }()
             /**
              * Update the faceting settings.
              *
@@ -3802,41 +4195,15 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateFaceting",
-            value: function updateFaceting(faceting) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee59() {
-                var url, task;
-                return _regeneratorRuntime().wrap(function _callee59$(_context59) {
-                  while (1) switch (_context59.prev = _context59.next) {
-                    case 0:
-                      url = "indexes/".concat(this.uid, "/settings/faceting");
-                      _context59.next = 3;
-                      return this.httpRequest.patch(url, faceting);
-                    case 3:
-                      task = _context59.sent;
-                      return _context59.abrupt("return", new EnqueuedTask(task));
-                    case 5:
-                    case "end":
-                      return _context59.stop();
-                  }
-                }, _callee59, this);
-              }));
-            }
-            /**
-             * Reset the faceting settings.
-             *
-             * @returns Promise containing an EnqueuedTask
-             */
-          }, {
-            key: "resetFaceting",
-            value: function resetFaceting() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee60() {
+            value: function () {
+              var _updateFaceting = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee60(faceting) {
                 var url, task;
                 return _regeneratorRuntime().wrap(function _callee60$(_context60) {
                   while (1) switch (_context60.prev = _context60.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/faceting");
                       _context60.next = 3;
-                      return this.httpRequest.delete(url);
+                      return this.httpRequest.patch(url, faceting);
                     case 3:
                       task = _context60.sent;
                       return _context60.abrupt("return", new EnqueuedTask(task));
@@ -3846,8 +4213,41 @@ function isUndefined(arg) {
                   }
                 }, _callee60, this);
               }));
-            }
-            ///
+              function updateFaceting(_x41) {
+                return _updateFaceting.apply(this, arguments);
+              }
+              return updateFaceting;
+            }()
+            /**
+             * Reset the faceting settings.
+             *
+             * @returns Promise containing an EnqueuedTask
+             */
+          }, {
+            key: "resetFaceting",
+            value: function () {
+              var _resetFaceting = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee61() {
+                var url, task;
+                return _regeneratorRuntime().wrap(function _callee61$(_context61) {
+                  while (1) switch (_context61.prev = _context61.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings/faceting");
+                      _context61.next = 3;
+                      return this.httpRequest.delete(url);
+                    case 3:
+                      task = _context61.sent;
+                      return _context61.abrupt("return", new EnqueuedTask(task));
+                    case 5:
+                    case "end":
+                      return _context61.stop();
+                  }
+                }, _callee61, this);
+              }));
+              function resetFaceting() {
+                return _resetFaceting.apply(this, arguments);
+              }
+              return resetFaceting;
+            }() ///
             /// SEPARATOR TOKENS
             ///
             /**
@@ -3857,24 +4257,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getSeparatorTokens",
-            value: function getSeparatorTokens() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee61() {
+            value: function () {
+              var _getSeparatorTokens = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee62() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee61$(_context61) {
-                  while (1) switch (_context61.prev = _context61.next) {
+                return _regeneratorRuntime().wrap(function _callee62$(_context62) {
+                  while (1) switch (_context62.prev = _context62.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/separator-tokens");
-                      _context61.next = 3;
+                      _context62.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context61.abrupt("return", _context61.sent);
+                      return _context62.abrupt("return", _context62.sent);
                     case 4:
                     case "end":
-                      return _context61.stop();
+                      return _context62.stop();
                   }
-                }, _callee61, this);
+                }, _callee62, this);
               }));
-            }
+              function getSeparatorTokens() {
+                return _getSeparatorTokens.apply(this, arguments);
+              }
+              return getSeparatorTokens;
+            }()
             /**
              * Update the list of separator tokens. Overwrite the old list.
              *
@@ -3883,25 +4287,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateSeparatorTokens",
-            value: function updateSeparatorTokens(separatorTokens) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee62() {
+            value: function () {
+              var _updateSeparatorTokens = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee63(separatorTokens) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee62$(_context62) {
-                  while (1) switch (_context62.prev = _context62.next) {
+                return _regeneratorRuntime().wrap(function _callee63$(_context63) {
+                  while (1) switch (_context63.prev = _context63.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/separator-tokens");
-                      _context62.next = 3;
+                      _context63.next = 3;
                       return this.httpRequest.put(url, separatorTokens);
                     case 3:
-                      task = _context62.sent;
-                      return _context62.abrupt("return", new EnqueuedTask(task));
+                      task = _context63.sent;
+                      return _context63.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context62.stop();
+                      return _context63.stop();
                   }
-                }, _callee62, this);
+                }, _callee63, this);
               }));
-            }
+              function updateSeparatorTokens(_x42) {
+                return _updateSeparatorTokens.apply(this, arguments);
+              }
+              return updateSeparatorTokens;
+            }()
             /**
              * Reset the separator tokens list to its default value
              *
@@ -3909,27 +4317,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetSeparatorTokens",
-            value: function resetSeparatorTokens() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee63() {
+            value: function () {
+              var _resetSeparatorTokens = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee64() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee63$(_context63) {
-                  while (1) switch (_context63.prev = _context63.next) {
+                return _regeneratorRuntime().wrap(function _callee64$(_context64) {
+                  while (1) switch (_context64.prev = _context64.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/separator-tokens");
-                      _context63.next = 3;
+                      _context64.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context63.sent;
+                      task = _context64.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context63.abrupt("return", task);
+                      return _context64.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context63.stop();
+                      return _context64.stop();
                   }
-                }, _callee63, this);
+                }, _callee64, this);
               }));
-            }
-            ///
+              function resetSeparatorTokens() {
+                return _resetSeparatorTokens.apply(this, arguments);
+              }
+              return resetSeparatorTokens;
+            }() ///
             /// NON-SEPARATOR TOKENS
             ///
             /**
@@ -3939,24 +4350,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getNonSeparatorTokens",
-            value: function getNonSeparatorTokens() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee64() {
+            value: function () {
+              var _getNonSeparatorTokens = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee65() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee64$(_context64) {
-                  while (1) switch (_context64.prev = _context64.next) {
+                return _regeneratorRuntime().wrap(function _callee65$(_context65) {
+                  while (1) switch (_context65.prev = _context65.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/non-separator-tokens");
-                      _context64.next = 3;
+                      _context65.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context64.abrupt("return", _context64.sent);
+                      return _context65.abrupt("return", _context65.sent);
                     case 4:
                     case "end":
-                      return _context64.stop();
+                      return _context65.stop();
                   }
-                }, _callee64, this);
+                }, _callee65, this);
               }));
-            }
+              function getNonSeparatorTokens() {
+                return _getNonSeparatorTokens.apply(this, arguments);
+              }
+              return getNonSeparatorTokens;
+            }()
             /**
              * Update the list of non-separator tokens. Overwrite the old list.
              *
@@ -3965,25 +4380,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateNonSeparatorTokens",
-            value: function updateNonSeparatorTokens(nonSeparatorTokens) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee65() {
+            value: function () {
+              var _updateNonSeparatorTokens = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee66(nonSeparatorTokens) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee65$(_context65) {
-                  while (1) switch (_context65.prev = _context65.next) {
+                return _regeneratorRuntime().wrap(function _callee66$(_context66) {
+                  while (1) switch (_context66.prev = _context66.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/non-separator-tokens");
-                      _context65.next = 3;
+                      _context66.next = 3;
                       return this.httpRequest.put(url, nonSeparatorTokens);
                     case 3:
-                      task = _context65.sent;
-                      return _context65.abrupt("return", new EnqueuedTask(task));
+                      task = _context66.sent;
+                      return _context66.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context65.stop();
+                      return _context66.stop();
                   }
-                }, _callee65, this);
+                }, _callee66, this);
               }));
-            }
+              function updateNonSeparatorTokens(_x43) {
+                return _updateNonSeparatorTokens.apply(this, arguments);
+              }
+              return updateNonSeparatorTokens;
+            }()
             /**
              * Reset the non-separator tokens list to its default value
              *
@@ -3991,27 +4410,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetNonSeparatorTokens",
-            value: function resetNonSeparatorTokens() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee66() {
+            value: function () {
+              var _resetNonSeparatorTokens = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee67() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee66$(_context66) {
-                  while (1) switch (_context66.prev = _context66.next) {
+                return _regeneratorRuntime().wrap(function _callee67$(_context67) {
+                  while (1) switch (_context67.prev = _context67.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/non-separator-tokens");
-                      _context66.next = 3;
+                      _context67.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context66.sent;
+                      task = _context67.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context66.abrupt("return", task);
+                      return _context67.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context66.stop();
+                      return _context67.stop();
                   }
-                }, _callee66, this);
+                }, _callee67, this);
               }));
-            }
-            ///
+              function resetNonSeparatorTokens() {
+                return _resetNonSeparatorTokens.apply(this, arguments);
+              }
+              return resetNonSeparatorTokens;
+            }() ///
             /// DICTIONARY
             ///
             /**
@@ -4021,24 +4443,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getDictionary",
-            value: function getDictionary() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee67() {
+            value: function () {
+              var _getDictionary = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee68() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee67$(_context67) {
-                  while (1) switch (_context67.prev = _context67.next) {
+                return _regeneratorRuntime().wrap(function _callee68$(_context68) {
+                  while (1) switch (_context68.prev = _context68.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/dictionary");
-                      _context67.next = 3;
+                      _context68.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context67.abrupt("return", _context67.sent);
+                      return _context68.abrupt("return", _context68.sent);
                     case 4:
                     case "end":
-                      return _context67.stop();
+                      return _context68.stop();
                   }
-                }, _callee67, this);
+                }, _callee68, this);
               }));
-            }
+              function getDictionary() {
+                return _getDictionary.apply(this, arguments);
+              }
+              return getDictionary;
+            }()
             /**
              * Update the dictionary settings. Overwrite the old settings.
              *
@@ -4047,25 +4473,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateDictionary",
-            value: function updateDictionary(dictionary) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee68() {
+            value: function () {
+              var _updateDictionary = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee69(dictionary) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee68$(_context68) {
-                  while (1) switch (_context68.prev = _context68.next) {
+                return _regeneratorRuntime().wrap(function _callee69$(_context69) {
+                  while (1) switch (_context69.prev = _context69.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/dictionary");
-                      _context68.next = 3;
+                      _context69.next = 3;
                       return this.httpRequest.put(url, dictionary);
                     case 3:
-                      task = _context68.sent;
-                      return _context68.abrupt("return", new EnqueuedTask(task));
+                      task = _context69.sent;
+                      return _context69.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context68.stop();
+                      return _context69.stop();
                   }
-                }, _callee68, this);
+                }, _callee69, this);
               }));
-            }
+              function updateDictionary(_x44) {
+                return _updateDictionary.apply(this, arguments);
+              }
+              return updateDictionary;
+            }()
             /**
              * Reset the dictionary settings to its default value
              *
@@ -4073,27 +4503,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetDictionary",
-            value: function resetDictionary() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee69() {
+            value: function () {
+              var _resetDictionary = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee70() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee69$(_context69) {
-                  while (1) switch (_context69.prev = _context69.next) {
+                return _regeneratorRuntime().wrap(function _callee70$(_context70) {
+                  while (1) switch (_context70.prev = _context70.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/dictionary");
-                      _context69.next = 3;
+                      _context70.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context69.sent;
+                      task = _context70.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context69.abrupt("return", task);
+                      return _context70.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context69.stop();
+                      return _context70.stop();
                   }
-                }, _callee69, this);
+                }, _callee70, this);
               }));
-            }
-            ///
+              function resetDictionary() {
+                return _resetDictionary.apply(this, arguments);
+              }
+              return resetDictionary;
+            }() ///
             /// PROXIMITY PRECISION
             ///
             /**
@@ -4103,24 +4536,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getProximityPrecision",
-            value: function getProximityPrecision() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee70() {
+            value: function () {
+              var _getProximityPrecision = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee71() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee70$(_context70) {
-                  while (1) switch (_context70.prev = _context70.next) {
+                return _regeneratorRuntime().wrap(function _callee71$(_context71) {
+                  while (1) switch (_context71.prev = _context71.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/proximity-precision");
-                      _context70.next = 3;
+                      _context71.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context70.abrupt("return", _context70.sent);
+                      return _context71.abrupt("return", _context71.sent);
                     case 4:
                     case "end":
-                      return _context70.stop();
+                      return _context71.stop();
                   }
-                }, _callee70, this);
+                }, _callee71, this);
               }));
-            }
+              function getProximityPrecision() {
+                return _getProximityPrecision.apply(this, arguments);
+              }
+              return getProximityPrecision;
+            }()
             /**
              * Update the proximity precision settings. Overwrite the old settings.
              *
@@ -4130,25 +4567,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateProximityPrecision",
-            value: function updateProximityPrecision(proximityPrecision) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee71() {
+            value: function () {
+              var _updateProximityPrecision = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee72(proximityPrecision) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee71$(_context71) {
-                  while (1) switch (_context71.prev = _context71.next) {
+                return _regeneratorRuntime().wrap(function _callee72$(_context72) {
+                  while (1) switch (_context72.prev = _context72.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/proximity-precision");
-                      _context71.next = 3;
+                      _context72.next = 3;
                       return this.httpRequest.put(url, proximityPrecision);
                     case 3:
-                      task = _context71.sent;
-                      return _context71.abrupt("return", new EnqueuedTask(task));
+                      task = _context72.sent;
+                      return _context72.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context71.stop();
+                      return _context72.stop();
                   }
-                }, _callee71, this);
+                }, _callee72, this);
               }));
-            }
+              function updateProximityPrecision(_x45) {
+                return _updateProximityPrecision.apply(this, arguments);
+              }
+              return updateProximityPrecision;
+            }()
             /**
              * Reset the proximity precision settings to its default value
              *
@@ -4156,27 +4597,30 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetProximityPrecision",
-            value: function resetProximityPrecision() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee72() {
+            value: function () {
+              var _resetProximityPrecision = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee73() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee72$(_context72) {
-                  while (1) switch (_context72.prev = _context72.next) {
+                return _regeneratorRuntime().wrap(function _callee73$(_context73) {
+                  while (1) switch (_context73.prev = _context73.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/proximity-precision");
-                      _context72.next = 3;
+                      _context73.next = 3;
                       return this.httpRequest.delete(url);
                     case 3:
-                      task = _context72.sent;
+                      task = _context73.sent;
                       task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context72.abrupt("return", task);
+                      return _context73.abrupt("return", task);
                     case 6:
                     case "end":
-                      return _context72.stop();
+                      return _context73.stop();
                   }
-                }, _callee72, this);
+                }, _callee73, this);
               }));
-            }
-            ///
+              function resetProximityPrecision() {
+                return _resetProximityPrecision.apply(this, arguments);
+              }
+              return resetProximityPrecision;
+            }() ///
             /// EMBEDDERS
             ///
             /**
@@ -4186,24 +4630,28 @@ function isUndefined(arg) {
              */
           }, {
             key: "getEmbedders",
-            value: function getEmbedders() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee73() {
+            value: function () {
+              var _getEmbedders = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee74() {
                 var url;
-                return _regeneratorRuntime().wrap(function _callee73$(_context73) {
-                  while (1) switch (_context73.prev = _context73.next) {
+                return _regeneratorRuntime().wrap(function _callee74$(_context74) {
+                  while (1) switch (_context74.prev = _context74.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/embedders");
-                      _context73.next = 3;
+                      _context74.next = 3;
                       return this.httpRequest.get(url);
                     case 3:
-                      return _context73.abrupt("return", _context73.sent);
+                      return _context74.abrupt("return", _context74.sent);
                     case 4:
                     case "end":
-                      return _context73.stop();
+                      return _context74.stop();
                   }
-                }, _callee73, this);
+                }, _callee74, this);
               }));
-            }
+              function getEmbedders() {
+                return _getEmbedders.apply(this, arguments);
+              }
+              return getEmbedders;
+            }()
             /**
              * Update the embedders settings. Overwrite the old settings.
              *
@@ -4212,25 +4660,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateEmbedders",
-            value: function updateEmbedders(embedders) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee74() {
+            value: function () {
+              var _updateEmbedders = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee75(embedders) {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee74$(_context74) {
-                  while (1) switch (_context74.prev = _context74.next) {
+                return _regeneratorRuntime().wrap(function _callee75$(_context75) {
+                  while (1) switch (_context75.prev = _context75.next) {
                     case 0:
                       url = "indexes/".concat(this.uid, "/settings/embedders");
-                      _context74.next = 3;
+                      _context75.next = 3;
                       return this.httpRequest.patch(url, embedders);
                     case 3:
-                      task = _context74.sent;
-                      return _context74.abrupt("return", new EnqueuedTask(task));
+                      task = _context75.sent;
+                      return _context75.abrupt("return", new EnqueuedTask(task));
                     case 5:
                     case "end":
-                      return _context74.stop();
+                      return _context75.stop();
                   }
-                }, _callee74, this);
+                }, _callee75, this);
               }));
-            }
+              function updateEmbedders(_x46) {
+                return _updateEmbedders.apply(this, arguments);
+              }
+              return updateEmbedders;
+            }()
             /**
              * Reset the embedders settings to its default value
              *
@@ -4238,52 +4690,157 @@ function isUndefined(arg) {
              */
           }, {
             key: "resetEmbedders",
-            value: function resetEmbedders() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee75() {
+            value: function () {
+              var _resetEmbedders = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee76() {
                 var url, task;
-                return _regeneratorRuntime().wrap(function _callee75$(_context75) {
-                  while (1) switch (_context75.prev = _context75.next) {
-                    case 0:
-                      url = "indexes/".concat(this.uid, "/settings/embedders");
-                      _context75.next = 3;
-                      return this.httpRequest.delete(url);
-                    case 3:
-                      task = _context75.sent;
-                      task.enqueuedAt = new Date(task.enqueuedAt);
-                      return _context75.abrupt("return", task);
-                    case 6:
-                    case "end":
-                      return _context75.stop();
-                  }
-                }, _callee75, this);
-              }));
-            }
-          }], [{
-            key: "create",
-            value: function create(uid) {
-              var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-              var config = arguments.length > 2 ? arguments[2] : undefined;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee76() {
-                var url, req, task;
                 return _regeneratorRuntime().wrap(function _callee76$(_context76) {
                   while (1) switch (_context76.prev = _context76.next) {
                     case 0:
-                      url = "indexes";
-                      req = new HttpRequests(config);
-                      _context76.next = 4;
-                      return req.post(url, Object.assign(Object.assign({}, options), {
-                        uid: uid
-                      }));
-                    case 4:
+                      url = "indexes/".concat(this.uid, "/settings/embedders");
+                      _context76.next = 3;
+                      return this.httpRequest.delete(url);
+                    case 3:
                       task = _context76.sent;
-                      return _context76.abrupt("return", new EnqueuedTask(task));
+                      task.enqueuedAt = new Date(task.enqueuedAt);
+                      return _context76.abrupt("return", task);
                     case 6:
                     case "end":
                       return _context76.stop();
                   }
-                }, _callee76);
+                }, _callee76, this);
               }));
-            }
+              function resetEmbedders() {
+                return _resetEmbedders.apply(this, arguments);
+              }
+              return resetEmbedders;
+            }() ///
+            /// SEARCHCUTOFFMS SETTINGS
+            ///
+            /**
+             * Get the SearchCutoffMs settings.
+             *
+             * @returns Promise containing object of SearchCutoffMs settings
+             */
+          }, {
+            key: "getSearchCutoffMs",
+            value: function () {
+              var _getSearchCutoffMs = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee77() {
+                var url;
+                return _regeneratorRuntime().wrap(function _callee77$(_context77) {
+                  while (1) switch (_context77.prev = _context77.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings/search-cutoff-ms");
+                      _context77.next = 3;
+                      return this.httpRequest.get(url);
+                    case 3:
+                      return _context77.abrupt("return", _context77.sent);
+                    case 4:
+                    case "end":
+                      return _context77.stop();
+                  }
+                }, _callee77, this);
+              }));
+              function getSearchCutoffMs() {
+                return _getSearchCutoffMs.apply(this, arguments);
+              }
+              return getSearchCutoffMs;
+            }()
+            /**
+             * Update the SearchCutoffMs settings.
+             *
+             * @param searchCutoffMs - Object containing SearchCutoffMsSettings
+             * @returns Promise containing an EnqueuedTask
+             */
+          }, {
+            key: "updateSearchCutoffMs",
+            value: function () {
+              var _updateSearchCutoffMs = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee78(searchCutoffMs) {
+                var url, task;
+                return _regeneratorRuntime().wrap(function _callee78$(_context78) {
+                  while (1) switch (_context78.prev = _context78.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings/search-cutoff-ms");
+                      _context78.next = 3;
+                      return this.httpRequest.put(url, searchCutoffMs);
+                    case 3:
+                      task = _context78.sent;
+                      return _context78.abrupt("return", new EnqueuedTask(task));
+                    case 5:
+                    case "end":
+                      return _context78.stop();
+                  }
+                }, _callee78, this);
+              }));
+              function updateSearchCutoffMs(_x47) {
+                return _updateSearchCutoffMs.apply(this, arguments);
+              }
+              return updateSearchCutoffMs;
+            }()
+            /**
+             * Reset the SearchCutoffMs settings.
+             *
+             * @returns Promise containing an EnqueuedTask
+             */
+          }, {
+            key: "resetSearchCutoffMs",
+            value: function () {
+              var _resetSearchCutoffMs = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee79() {
+                var url, task;
+                return _regeneratorRuntime().wrap(function _callee79$(_context79) {
+                  while (1) switch (_context79.prev = _context79.next) {
+                    case 0:
+                      url = "indexes/".concat(this.uid, "/settings/search-cutoff-ms");
+                      _context79.next = 3;
+                      return this.httpRequest.delete(url);
+                    case 3:
+                      task = _context79.sent;
+                      return _context79.abrupt("return", new EnqueuedTask(task));
+                    case 5:
+                    case "end":
+                      return _context79.stop();
+                  }
+                }, _callee79, this);
+              }));
+              function resetSearchCutoffMs() {
+                return _resetSearchCutoffMs.apply(this, arguments);
+              }
+              return resetSearchCutoffMs;
+            }()
+          }], [{
+            key: "create",
+            value: function () {
+              var _create = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee80(uid) {
+                var options,
+                  config,
+                  url,
+                  req,
+                  task,
+                  _args80 = arguments;
+                return _regeneratorRuntime().wrap(function _callee80$(_context80) {
+                  while (1) switch (_context80.prev = _context80.next) {
+                    case 0:
+                      options = _args80.length > 1 && _args80[1] !== undefined ? _args80[1] : {};
+                      config = _args80.length > 2 ? _args80[2] : undefined;
+                      url = "indexes";
+                      req = new HttpRequests(config);
+                      _context80.next = 6;
+                      return req.post(url, _objectSpread2(_objectSpread2({}, options), {}, {
+                        uid: uid
+                      }));
+                    case 6:
+                      task = _context80.sent;
+                      return _context80.abrupt("return", new EnqueuedTask(task));
+                    case 8:
+                    case "end":
+                      return _context80.stop();
+                  }
+                }, _callee80);
+              }));
+              function create(_x48) {
+                return _create.apply(this, arguments);
+              }
+              return create;
+            }()
           }]);
           return Index;
         }();
@@ -4302,6 +4859,9 @@ function isUndefined(arg) {
            */
           function Client(config) {
             _classCallCheck(this, Client);
+            _defineProperty(this, "config", void 0);
+            _defineProperty(this, "httpRequest", void 0);
+            _defineProperty(this, "tasks", void 0);
             this.config = config;
             this.httpRequest = new HttpRequests(config);
             this.tasks = new TaskClient(config);
@@ -4326,8 +4886,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "getIndex",
-            value: function getIndex(indexUid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+            value: function () {
+              var _getIndex = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(indexUid) {
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
                   while (1) switch (_context.prev = _context.next) {
                     case 0:
@@ -4338,7 +4898,11 @@ function isUndefined(arg) {
                   }
                 }, _callee, this);
               }));
-            }
+              function getIndex(_x) {
+                return _getIndex.apply(this, arguments);
+              }
+              return getIndex;
+            }()
             /**
              * Gather information about an index by calling MeiliSearch and return the raw
              * JSON response
@@ -4348,8 +4912,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "getRawIndex",
-            value: function getRawIndex(indexUid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+            value: function () {
+              var _getRawIndex = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(indexUid) {
                 return _regeneratorRuntime().wrap(function _callee2$(_context2) {
                   while (1) switch (_context2.prev = _context2.next) {
                     case 0:
@@ -4360,7 +4924,11 @@ function isUndefined(arg) {
                   }
                 }, _callee2, this);
               }));
-            }
+              function getRawIndex(_x2) {
+                return _getRawIndex.apply(this, arguments);
+              }
+              return getRawIndex;
+            }()
             /**
              * Get all the indexes as Index instances.
              *
@@ -4369,31 +4937,38 @@ function isUndefined(arg) {
              */
           }, {
             key: "getIndexes",
-            value: function getIndexes() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+            value: function () {
+              var _getIndexes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
                 var _this = this;
-                var rawIndexes, indexes;
+                var parameters,
+                  rawIndexes,
+                  indexes,
+                  _args3 = arguments;
                 return _regeneratorRuntime().wrap(function _callee3$(_context3) {
                   while (1) switch (_context3.prev = _context3.next) {
                     case 0:
-                      _context3.next = 2;
+                      parameters = _args3.length > 0 && _args3[0] !== undefined ? _args3[0] : {};
+                      _context3.next = 3;
                       return this.getRawIndexes(parameters);
-                    case 2:
+                    case 3:
                       rawIndexes = _context3.sent;
                       indexes = rawIndexes.results.map(function (index) {
                         return new Index(_this.config, index.uid, index.primaryKey);
                       });
-                      return _context3.abrupt("return", Object.assign(Object.assign({}, rawIndexes), {
+                      return _context3.abrupt("return", _objectSpread2(_objectSpread2({}, rawIndexes), {}, {
                         results: indexes
                       }));
-                    case 5:
+                    case 6:
                     case "end":
                       return _context3.stop();
                   }
                 }, _callee3, this);
               }));
-            }
+              function getIndexes() {
+                return _getIndexes.apply(this, arguments);
+              }
+              return getIndexes;
+            }()
             /**
              * Get all the indexes in their raw value (no Index instances).
              *
@@ -4402,25 +4977,31 @@ function isUndefined(arg) {
              */
           }, {
             key: "getRawIndexes",
-            value: function getRawIndexes() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-                var url;
+            value: function () {
+              var _getRawIndexes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+                var parameters,
+                  url,
+                  _args4 = arguments;
                 return _regeneratorRuntime().wrap(function _callee4$(_context4) {
                   while (1) switch (_context4.prev = _context4.next) {
                     case 0:
+                      parameters = _args4.length > 0 && _args4[0] !== undefined ? _args4[0] : {};
                       url = "indexes";
-                      _context4.next = 3;
+                      _context4.next = 4;
                       return this.httpRequest.get(url, parameters);
-                    case 3:
-                      return _context4.abrupt("return", _context4.sent);
                     case 4:
+                      return _context4.abrupt("return", _context4.sent);
+                    case 5:
                     case "end":
                       return _context4.stop();
                   }
                 }, _callee4, this);
               }));
-            }
+              function getRawIndexes() {
+                return _getRawIndexes.apply(this, arguments);
+              }
+              return getRawIndexes;
+            }()
             /**
              * Create a new index
              *
@@ -4430,23 +5011,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "createIndex",
-            value: function createIndex(uid) {
-              var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+            value: function () {
+              var _createIndex = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(uid) {
+                var options,
+                  _args5 = arguments;
                 return _regeneratorRuntime().wrap(function _callee5$(_context5) {
                   while (1) switch (_context5.prev = _context5.next) {
                     case 0:
-                      _context5.next = 2;
+                      options = _args5.length > 1 && _args5[1] !== undefined ? _args5[1] : {};
+                      _context5.next = 3;
                       return Index.create(uid, options, this.config);
-                    case 2:
-                      return _context5.abrupt("return", _context5.sent);
                     case 3:
+                      return _context5.abrupt("return", _context5.sent);
+                    case 4:
                     case "end":
                       return _context5.stop();
                   }
                 }, _callee5, this);
               }));
-            }
+              function createIndex(_x3) {
+                return _createIndex.apply(this, arguments);
+              }
+              return createIndex;
+            }()
             /**
              * Update an index
              *
@@ -4456,23 +5043,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateIndex",
-            value: function updateIndex(uid) {
-              var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+            value: function () {
+              var _updateIndex = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(uid) {
+                var options,
+                  _args6 = arguments;
                 return _regeneratorRuntime().wrap(function _callee6$(_context6) {
                   while (1) switch (_context6.prev = _context6.next) {
                     case 0:
-                      _context6.next = 2;
+                      options = _args6.length > 1 && _args6[1] !== undefined ? _args6[1] : {};
+                      _context6.next = 3;
                       return new Index(this.config, uid).update(options);
-                    case 2:
-                      return _context6.abrupt("return", _context6.sent);
                     case 3:
+                      return _context6.abrupt("return", _context6.sent);
+                    case 4:
                     case "end":
                       return _context6.stop();
                   }
                 }, _callee6, this);
               }));
-            }
+              function updateIndex(_x4) {
+                return _updateIndex.apply(this, arguments);
+              }
+              return updateIndex;
+            }()
             /**
              * Delete an index
              *
@@ -4481,8 +5074,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteIndex",
-            value: function deleteIndex(uid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+            value: function () {
+              var _deleteIndex = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(uid) {
                 return _regeneratorRuntime().wrap(function _callee7$(_context7) {
                   while (1) switch (_context7.prev = _context7.next) {
                     case 0:
@@ -4496,7 +5089,11 @@ function isUndefined(arg) {
                   }
                 }, _callee7, this);
               }));
-            }
+              function deleteIndex(_x5) {
+                return _deleteIndex.apply(this, arguments);
+              }
+              return deleteIndex;
+            }()
             /**
              * Deletes an index if it already exists.
              *
@@ -4506,8 +5103,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteIndexIfExists",
-            value: function deleteIndexIfExists(uid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
+            value: function () {
+              var _deleteIndexIfExists = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(uid) {
                 return _regeneratorRuntime().wrap(function _callee8$(_context8) {
                   while (1) switch (_context8.prev = _context8.next) {
                     case 0:
@@ -4532,7 +5129,11 @@ function isUndefined(arg) {
                   }
                 }, _callee8, this, [[0, 6]]);
               }));
-            }
+              function deleteIndexIfExists(_x6) {
+                return _deleteIndexIfExists.apply(this, arguments);
+              }
+              return deleteIndexIfExists;
+            }()
             /**
              * Swaps a list of index tuples.
              *
@@ -4541,8 +5142,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "swapIndexes",
-            value: function swapIndexes(params) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
+            value: function () {
+              var _swapIndexes = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(params) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee9$(_context9) {
                   while (1) switch (_context9.prev = _context9.next) {
@@ -4558,8 +5159,11 @@ function isUndefined(arg) {
                   }
                 }, _callee9, this);
               }));
-            }
-            ///
+              function swapIndexes(_x7) {
+                return _swapIndexes.apply(this, arguments);
+              }
+              return swapIndexes;
+            }() ///
             /// Multi Search
             ///
             /**
@@ -4576,7 +5180,7 @@ function isUndefined(arg) {
              *     { indexUid: 'movies', q: 'wonder' },
              *     { indexUid: 'books', q: 'flower' },
              *   ],
-             * })
+             * });
              * ```
              *
              * @param queries - Search queries
@@ -4585,8 +5189,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "multiSearch",
-            value: function multiSearch(queries, config) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
+            value: function () {
+              var _multiSearch = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10(queries, config) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee10$(_context10) {
                   while (1) switch (_context10.prev = _context10.next) {
@@ -4602,8 +5206,11 @@ function isUndefined(arg) {
                   }
                 }, _callee10, this);
               }));
-            }
-            ///
+              function multiSearch(_x8, _x9) {
+                return _multiSearch.apply(this, arguments);
+              }
+              return multiSearch;
+            }() ///
             /// TASKS
             ///
             /**
@@ -4614,23 +5221,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "getTasks",
-            value: function getTasks() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
+            value: function () {
+              var _getTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
+                var parameters,
+                  _args11 = arguments;
                 return _regeneratorRuntime().wrap(function _callee11$(_context11) {
                   while (1) switch (_context11.prev = _context11.next) {
                     case 0:
-                      _context11.next = 2;
+                      parameters = _args11.length > 0 && _args11[0] !== undefined ? _args11[0] : {};
+                      _context11.next = 3;
                       return this.tasks.getTasks(parameters);
-                    case 2:
-                      return _context11.abrupt("return", _context11.sent);
                     case 3:
+                      return _context11.abrupt("return", _context11.sent);
+                    case 4:
                     case "end":
                       return _context11.stop();
                   }
                 }, _callee11, this);
               }));
-            }
+              function getTasks() {
+                return _getTasks.apply(this, arguments);
+              }
+              return getTasks;
+            }()
             /**
              * Get one task on the client scope
              *
@@ -4639,8 +5252,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "getTask",
-            value: function getTask(taskUid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee12() {
+            value: function () {
+              var _getTask = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12(taskUid) {
                 return _regeneratorRuntime().wrap(function _callee12$(_context12) {
                   while (1) switch (_context12.prev = _context12.next) {
                     case 0:
@@ -4654,7 +5267,11 @@ function isUndefined(arg) {
                   }
                 }, _callee12, this);
               }));
-            }
+              function getTask(_x10) {
+                return _getTask.apply(this, arguments);
+              }
+              return getTask;
+            }()
             /**
              * Wait for multiple tasks to be finished.
              *
@@ -4664,30 +5281,36 @@ function isUndefined(arg) {
              */
           }, {
             key: "waitForTasks",
-            value: function waitForTasks(taskUids) {
-              var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref$timeOutMs = _ref.timeOutMs,
-                timeOutMs = _ref$timeOutMs === void 0 ? 5000 : _ref$timeOutMs,
-                _ref$intervalMs = _ref.intervalMs,
-                intervalMs = _ref$intervalMs === void 0 ? 50 : _ref$intervalMs;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee13() {
+            value: function () {
+              var _waitForTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13(taskUids) {
+                var _ref,
+                  _ref$timeOutMs,
+                  timeOutMs,
+                  _ref$intervalMs,
+                  intervalMs,
+                  _args13 = arguments;
                 return _regeneratorRuntime().wrap(function _callee13$(_context13) {
                   while (1) switch (_context13.prev = _context13.next) {
                     case 0:
-                      _context13.next = 2;
+                      _ref = _args13.length > 1 && _args13[1] !== undefined ? _args13[1] : {}, _ref$timeOutMs = _ref.timeOutMs, timeOutMs = _ref$timeOutMs === void 0 ? 5000 : _ref$timeOutMs, _ref$intervalMs = _ref.intervalMs, intervalMs = _ref$intervalMs === void 0 ? 50 : _ref$intervalMs;
+                      _context13.next = 3;
                       return this.tasks.waitForTasks(taskUids, {
                         timeOutMs: timeOutMs,
                         intervalMs: intervalMs
                       });
-                    case 2:
-                      return _context13.abrupt("return", _context13.sent);
                     case 3:
+                      return _context13.abrupt("return", _context13.sent);
+                    case 4:
                     case "end":
                       return _context13.stop();
                   }
                 }, _callee13, this);
               }));
-            }
+              function waitForTasks(_x11) {
+                return _waitForTasks.apply(this, arguments);
+              }
+              return waitForTasks;
+            }()
             /**
              * Wait for a task to be finished.
              *
@@ -4697,30 +5320,36 @@ function isUndefined(arg) {
              */
           }, {
             key: "waitForTask",
-            value: function waitForTask(taskUid) {
-              var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref2$timeOutMs = _ref2.timeOutMs,
-                timeOutMs = _ref2$timeOutMs === void 0 ? 5000 : _ref2$timeOutMs,
-                _ref2$intervalMs = _ref2.intervalMs,
-                intervalMs = _ref2$intervalMs === void 0 ? 50 : _ref2$intervalMs;
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee14() {
+            value: function () {
+              var _waitForTask = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee14(taskUid) {
+                var _ref2,
+                  _ref2$timeOutMs,
+                  timeOutMs,
+                  _ref2$intervalMs,
+                  intervalMs,
+                  _args14 = arguments;
                 return _regeneratorRuntime().wrap(function _callee14$(_context14) {
                   while (1) switch (_context14.prev = _context14.next) {
                     case 0:
-                      _context14.next = 2;
+                      _ref2 = _args14.length > 1 && _args14[1] !== undefined ? _args14[1] : {}, _ref2$timeOutMs = _ref2.timeOutMs, timeOutMs = _ref2$timeOutMs === void 0 ? 5000 : _ref2$timeOutMs, _ref2$intervalMs = _ref2.intervalMs, intervalMs = _ref2$intervalMs === void 0 ? 50 : _ref2$intervalMs;
+                      _context14.next = 3;
                       return this.tasks.waitForTask(taskUid, {
                         timeOutMs: timeOutMs,
                         intervalMs: intervalMs
                       });
-                    case 2:
-                      return _context14.abrupt("return", _context14.sent);
                     case 3:
+                      return _context14.abrupt("return", _context14.sent);
+                    case 4:
                     case "end":
                       return _context14.stop();
                   }
                 }, _callee14, this);
               }));
-            }
+              function waitForTask(_x12) {
+                return _waitForTask.apply(this, arguments);
+              }
+              return waitForTask;
+            }()
             /**
              * Cancel a list of enqueued or processing tasks.
              *
@@ -4729,8 +5358,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "cancelTasks",
-            value: function cancelTasks(parameters) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee15() {
+            value: function () {
+              var _cancelTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee15(parameters) {
                 return _regeneratorRuntime().wrap(function _callee15$(_context15) {
                   while (1) switch (_context15.prev = _context15.next) {
                     case 0:
@@ -4744,7 +5373,11 @@ function isUndefined(arg) {
                   }
                 }, _callee15, this);
               }));
-            }
+              function cancelTasks(_x13) {
+                return _cancelTasks.apply(this, arguments);
+              }
+              return cancelTasks;
+            }()
             /**
              * Delete a list of tasks.
              *
@@ -4753,24 +5386,29 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteTasks",
-            value: function deleteTasks() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee16() {
+            value: function () {
+              var _deleteTasks = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee16() {
+                var parameters,
+                  _args16 = arguments;
                 return _regeneratorRuntime().wrap(function _callee16$(_context16) {
                   while (1) switch (_context16.prev = _context16.next) {
                     case 0:
-                      _context16.next = 2;
+                      parameters = _args16.length > 0 && _args16[0] !== undefined ? _args16[0] : {};
+                      _context16.next = 3;
                       return this.tasks.deleteTasks(parameters);
-                    case 2:
-                      return _context16.abrupt("return", _context16.sent);
                     case 3:
+                      return _context16.abrupt("return", _context16.sent);
+                    case 4:
                     case "end":
                       return _context16.stop();
                   }
                 }, _callee16, this);
               }));
-            }
-            ///
+              function deleteTasks() {
+                return _deleteTasks.apply(this, arguments);
+              }
+              return deleteTasks;
+            }() ///
             /// KEYS
             ///
             /**
@@ -4781,32 +5419,39 @@ function isUndefined(arg) {
              */
           }, {
             key: "getKeys",
-            value: function getKeys() {
-              var parameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee17() {
-                var url, keys;
+            value: function () {
+              var _getKeys = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee17() {
+                var parameters,
+                  url,
+                  keys,
+                  _args17 = arguments;
                 return _regeneratorRuntime().wrap(function _callee17$(_context17) {
                   while (1) switch (_context17.prev = _context17.next) {
                     case 0:
+                      parameters = _args17.length > 0 && _args17[0] !== undefined ? _args17[0] : {};
                       url = "keys";
-                      _context17.next = 3;
+                      _context17.next = 4;
                       return this.httpRequest.get(url, parameters);
-                    case 3:
+                    case 4:
                       keys = _context17.sent;
                       keys.results = keys.results.map(function (key) {
-                        return Object.assign(Object.assign({}, key), {
+                        return _objectSpread2(_objectSpread2({}, key), {}, {
                           createdAt: new Date(key.createdAt),
                           updatedAt: new Date(key.updatedAt)
                         });
                       });
                       return _context17.abrupt("return", keys);
-                    case 6:
+                    case 7:
                     case "end":
                       return _context17.stop();
                   }
                 }, _callee17, this);
               }));
-            }
+              function getKeys() {
+                return _getKeys.apply(this, arguments);
+              }
+              return getKeys;
+            }()
             /**
              * Get one API key
              *
@@ -4815,8 +5460,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "getKey",
-            value: function getKey(keyOrUid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee18() {
+            value: function () {
+              var _getKey = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee18(keyOrUid) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee18$(_context18) {
                   while (1) switch (_context18.prev = _context18.next) {
@@ -4832,7 +5477,11 @@ function isUndefined(arg) {
                   }
                 }, _callee18, this);
               }));
-            }
+              function getKey(_x14) {
+                return _getKey.apply(this, arguments);
+              }
+              return getKey;
+            }()
             /**
              * Create one API key
              *
@@ -4841,8 +5490,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "createKey",
-            value: function createKey(options) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee19() {
+            value: function () {
+              var _createKey = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee19(options) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee19$(_context19) {
                   while (1) switch (_context19.prev = _context19.next) {
@@ -4858,7 +5507,11 @@ function isUndefined(arg) {
                   }
                 }, _callee19, this);
               }));
-            }
+              function createKey(_x15) {
+                return _createKey.apply(this, arguments);
+              }
+              return createKey;
+            }()
             /**
              * Update one API key
              *
@@ -4868,8 +5521,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "updateKey",
-            value: function updateKey(keyOrUid, options) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee20() {
+            value: function () {
+              var _updateKey = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee20(keyOrUid, options) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee20$(_context20) {
                   while (1) switch (_context20.prev = _context20.next) {
@@ -4885,7 +5538,11 @@ function isUndefined(arg) {
                   }
                 }, _callee20, this);
               }));
-            }
+              function updateKey(_x16, _x17) {
+                return _updateKey.apply(this, arguments);
+              }
+              return updateKey;
+            }()
             /**
              * Delete one API key
              *
@@ -4894,8 +5551,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "deleteKey",
-            value: function deleteKey(keyOrUid) {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee21() {
+            value: function () {
+              var _deleteKey = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee21(keyOrUid) {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee21$(_context21) {
                   while (1) switch (_context21.prev = _context21.next) {
@@ -4911,8 +5568,11 @@ function isUndefined(arg) {
                   }
                 }, _callee21, this);
               }));
-            }
-            ///
+              function deleteKey(_x18) {
+                return _deleteKey.apply(this, arguments);
+              }
+              return deleteKey;
+            }() ///
             /// HEALTH
             ///
             /**
@@ -4922,8 +5582,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "health",
-            value: function health() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee22() {
+            value: function () {
+              var _health = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee22() {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee22$(_context22) {
                   while (1) switch (_context22.prev = _context22.next) {
@@ -4939,7 +5599,11 @@ function isUndefined(arg) {
                   }
                 }, _callee22, this);
               }));
-            }
+              function health() {
+                return _health.apply(this, arguments);
+              }
+              return health;
+            }()
             /**
              * Checks if the server is healthy, return true or false.
              *
@@ -4947,8 +5611,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "isHealthy",
-            value: function isHealthy() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee23() {
+            value: function () {
+              var _isHealthy = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee23() {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee23$(_context23) {
                   while (1) switch (_context23.prev = _context23.next) {
@@ -4969,8 +5633,11 @@ function isUndefined(arg) {
                   }
                 }, _callee23, this, [[0, 7]]);
               }));
-            }
-            ///
+              function isHealthy() {
+                return _isHealthy.apply(this, arguments);
+              }
+              return isHealthy;
+            }() ///
             /// STATS
             ///
             /**
@@ -4980,8 +5647,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "getStats",
-            value: function getStats() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee24() {
+            value: function () {
+              var _getStats = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee24() {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee24$(_context24) {
                   while (1) switch (_context24.prev = _context24.next) {
@@ -4997,8 +5664,11 @@ function isUndefined(arg) {
                   }
                 }, _callee24, this);
               }));
-            }
-            ///
+              function getStats() {
+                return _getStats.apply(this, arguments);
+              }
+              return getStats;
+            }() ///
             /// VERSION
             ///
             /**
@@ -5008,8 +5678,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "getVersion",
-            value: function getVersion() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee25() {
+            value: function () {
+              var _getVersion = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee25() {
                 var url;
                 return _regeneratorRuntime().wrap(function _callee25$(_context25) {
                   while (1) switch (_context25.prev = _context25.next) {
@@ -5025,8 +5695,11 @@ function isUndefined(arg) {
                   }
                 }, _callee25, this);
               }));
-            }
-            ///
+              function getVersion() {
+                return _getVersion.apply(this, arguments);
+              }
+              return getVersion;
+            }() ///
             /// DUMPS
             ///
             /**
@@ -5036,8 +5709,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "createDump",
-            value: function createDump() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee26() {
+            value: function () {
+              var _createDump = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee26() {
                 var url, task;
                 return _regeneratorRuntime().wrap(function _callee26$(_context26) {
                   while (1) switch (_context26.prev = _context26.next) {
@@ -5054,8 +5727,11 @@ function isUndefined(arg) {
                   }
                 }, _callee26, this);
               }));
-            }
-            ///
+              function createDump() {
+                return _createDump.apply(this, arguments);
+              }
+              return createDump;
+            }() ///
             /// SNAPSHOTS
             ///
             /**
@@ -5065,8 +5741,8 @@ function isUndefined(arg) {
              */
           }, {
             key: "createSnapshot",
-            value: function createSnapshot() {
-              return __awaiter(this, void 0, void 0, /*#__PURE__*/_regeneratorRuntime().mark(function _callee27() {
+            value: function () {
+              var _createSnapshot = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee27() {
                 var url, task;
                 return _regeneratorRuntime().wrap(function _callee27$(_context27) {
                   while (1) switch (_context27.prev = _context27.next) {
@@ -5083,8 +5759,11 @@ function isUndefined(arg) {
                   }
                 }, _callee27, this);
               }));
-            }
-            ///
+              function createSnapshot() {
+                return _createSnapshot.apply(this, arguments);
+              }
+              return createSnapshot;
+            }() ///
             /// TOKENS
             ///
             /**
@@ -5099,7 +5778,8 @@ function isUndefined(arg) {
             key: "generateTenantToken",
             value: function generateTenantToken(_apiKeyUid, _searchRules, _options) {
               var error = new Error();
-              throw new Error("Meilisearch: failed to generate a tenant token. Generation of a token only works in a node environment \n ".concat(error.stack, "."));
+              error.message = "Meilisearch: failed to generate a tenant token. Generation of a token only works in a node environment \n ".concat(error.stack, ".");
+              return Promise.reject(error);
             }
           }]);
           return Client;
@@ -6049,7 +6729,7 @@ function isUndefined(arg) {
         return initialFacetDistribution;
     }
 
-    var PACKAGE_VERSION = '0.17.0';
+    var PACKAGE_VERSION = '0.19.0';
 
     var constructClientAgents = function (clientAgents) {
         if (clientAgents === void 0) { clientAgents = []; }
@@ -6211,6 +6891,7 @@ function isUndefined(arg) {
 
 var AlgoliaSearchHelper = __webpack_require__(36571);
 var RecommendParameters = __webpack_require__(19127);
+var RecommendResults = __webpack_require__(42223);
 var SearchParameters = __webpack_require__(33371);
 var SearchResults = __webpack_require__(67691);
 
@@ -6284,6 +6965,13 @@ algoliasearchHelper.RecommendParameters = RecommendParameters;
  * @type {SearchResults}
  */
 algoliasearchHelper.SearchResults = SearchResults;
+
+/**
+ * Constructor for the object containing the results for Recommend.
+ * @member module:algoliasearchHelper.RecommendResults
+ * @type {RecommendResults}
+ */
+algoliasearchHelper.RecommendResults = RecommendResults;
 
 module.exports = algoliasearchHelper;
 
@@ -6375,15 +7063,8 @@ RecommendParameters.prototype = {
 
   addParams: function (params) {
     var newParams = this.params.slice();
-    var existingParamsIndex = this.params.findIndex(function (currentParams) {
-      return currentParams.$$id === params.$$id;
-    });
 
-    if (existingParamsIndex !== -1) {
-      newParams.splice(existingParamsIndex, 1, params);
-    } else {
-      newParams.push(params);
-    }
+    newParams.push(params);
 
     return new RecommendParameters({ params: newParams });
   },
@@ -6426,17 +7107,62 @@ RecommendParameters.prototype = {
     );
   },
 
-  _buildQueries: function (indexName) {
-    return this.params.map(function (params) {
-      var query = Object.assign({}, params, { indexName: indexName });
-      delete query.$$id;
+  _buildQueries: function (indexName, cache) {
+    return this.params
+      .filter(function (params) {
+        return cache[params.$$id] === undefined;
+      })
+      .map(function (params) {
+        var query = Object.assign({}, params, {
+          indexName: indexName,
+          // @TODO: remove this if it ever gets handled by the API
+          threshold: params.threshold || 0,
+        });
+        delete query.$$id;
 
-      return query;
-    });
+        return query;
+      });
   },
 };
 
 module.exports = RecommendParameters;
+
+
+/***/ }),
+
+/***/ 42223:
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Constructor for SearchResults
+ * @class
+ * @classdesc SearchResults contains the results of a query to Algolia using the
+ * {@link AlgoliaSearchHelper}.
+ * @param {RecommendParameters} state state that led to the response
+ * @param {Record<string,RecommendResultItem>} results the results from algolia client
+ **/
+function RecommendResults(state, results) {
+  this._state = state;
+  this._rawResults = {};
+
+  // eslint-disable-next-line consistent-this
+  var self = this;
+
+  state.params.forEach(function (param) {
+    var id = param.$$id;
+    self[id] = results[id];
+    self._rawResults[id] = results[id];
+  });
+}
+
+RecommendResults.prototype = {
+  constructor: RecommendResults,
+};
+
+module.exports = RecommendResults;
 
 
 /***/ }),
@@ -8763,7 +9489,7 @@ function findMatchingHierarchicalFacetFromAttributeName(
 }
  **/
 function SearchResults(state, results, options) {
-  var mainSubResponse = results[0];
+  var mainSubResponse = results[0] || {};
 
   this._rawResults = results;
 
@@ -9346,8 +10072,9 @@ function vanillaSortFn(order, data) {
 function sortViaFacetOrdering(facetValues, facetOrdering) {
   var orderedFacets = [];
   var remainingFacets = [];
-
+  var hide = facetOrdering.hide || [];
   var order = facetOrdering.order || [];
+
   /**
    * an object with the keys being the values in order, the values their index:
    * ['one', 'two'] -> { one: 0, two: 1 }
@@ -9360,9 +10087,10 @@ function sortViaFacetOrdering(facetValues, facetOrdering) {
   facetValues.forEach(function (item) {
     // hierarchical facets get sorted using their raw name
     var name = item.path || item.name;
-    if (reverseOrder[name] !== undefined) {
+    var hidden = hide.indexOf(name) > -1;
+    if (!hidden && reverseOrder[name] !== undefined) {
       orderedFacets[reverseOrder[name]] = item;
-    } else {
+    } else if (!hidden) {
       remainingFacets.push(item);
     }
   });
@@ -9707,9 +10435,11 @@ var merge = __webpack_require__(44728);
 var objectHasKeys = __webpack_require__(40317);
 var omit = __webpack_require__(21383);
 var RecommendParameters = __webpack_require__(19127);
+var RecommendResults = __webpack_require__(42223);
 var requestBuilder = __webpack_require__(49228);
 var SearchParameters = __webpack_require__(33371);
 var SearchResults = __webpack_require__(67691);
+var sortAndMergeRecommendations = __webpack_require__(57749);
 var version = __webpack_require__(16938);
 
 /**
@@ -9838,6 +10568,7 @@ function AlgoliaSearchHelper(client, index, options, searchResultsOptions) {
   this._currentNbQueries = 0;
   this._currentNbRecommendQueries = 0;
   this._searchResultsOptions = searchResultsOptions;
+  this._recommendCache = {};
 }
 
 inherits(AlgoliaSearchHelper, EventEmitter);
@@ -10626,7 +11357,7 @@ AlgoliaSearchHelper.prototype.removeTag = function (tag) {
 /**
  * Removes a "frequently bought together" recommendation query.
  *
- * @param {string} id identifier of the recommendation widget
+ * @param {number} id identifier of the recommendation widget
  * @returns {AlgoliaSearchHelper} Method is chainable, it returns itself
  * @fires change
  * @chainable
@@ -10642,7 +11373,7 @@ AlgoliaSearchHelper.prototype.removeFrequentlyBoughtTogether = function (id) {
 /**
  * Removes a "related products" recommendation query.
  *
- * @param {string} id identifier of the recommendation widget
+ * @param {number} id identifier of the recommendation widget
  * @returns {AlgoliaSearchHelper} Method is chainable, it returns itself
  * @fires change
  * @chainable
@@ -10658,7 +11389,7 @@ AlgoliaSearchHelper.prototype.removeRelatedProducts = function (id) {
 /**
  * Removes a "trending items" recommendation query.
  *
- * @param {string} id identifier of the recommendation widget
+ * @param {number} id identifier of the recommendation widget
  * @returns {AlgoliaSearchHelper} Method is chainable, it returns itself
  * @fires change
  * @chainable
@@ -10674,7 +11405,7 @@ AlgoliaSearchHelper.prototype.removeTrendingItems = function (id) {
 /**
  * Removes a "trending facets" recommendation query.
  *
- * @param {string} id identifier of the recommendation widget
+ * @param {number} id identifier of the recommendation widget
  * @returns {AlgoliaSearchHelper} Method is chainable, it returns itself
  * @fires change
  * @chainable
@@ -10690,7 +11421,7 @@ AlgoliaSearchHelper.prototype.removeTrendingFacets = function (id) {
 /**
  * Removes a "looking similar" recommendation query.
  *
- * @param {string} id identifier of the recommendation widget
+ * @param {number} id identifier of the recommendation widget
  * @returns {AlgoliaSearchHelper} Method is chainable, it returns itself
  * @fires change
  * @chainable
@@ -11275,6 +12006,9 @@ AlgoliaSearchHelper.prototype._recommend = function () {
   var recommendState = this.recommendState;
   var index = this.getIndex();
   var states = [{ state: recommendState, index: index, helper: this }];
+  var ids = recommendState.params.map(function (param) {
+    return param.$$id;
+  });
 
   this.emit('fetch', {
     recommend: {
@@ -11282,6 +12016,8 @@ AlgoliaSearchHelper.prototype._recommend = function () {
       results: this.lastRecommendResults,
     },
   });
+
+  var cache = this._recommendCache;
 
   var derivedQueries = this.derivedHelpers.map(function (derivedHelper) {
     var derivedIndex = derivedHelper.getModifiedState(searchState).index;
@@ -11301,6 +12037,13 @@ AlgoliaSearchHelper.prototype._recommend = function () {
       helper: derivedHelper,
     });
 
+    ids = Array.prototype.concat.apply(
+      ids,
+      derivedState.params.map(function (param) {
+        return param.$$id;
+      })
+    );
+
     derivedHelper.emit('fetch', {
       recommend: {
         state: derivedState,
@@ -11308,11 +12051,11 @@ AlgoliaSearchHelper.prototype._recommend = function () {
       },
     });
 
-    return derivedState._buildQueries(derivedIndex);
+    return derivedState._buildQueries(derivedIndex, cache);
   });
 
   var queries = Array.prototype.concat.apply(
-    this.recommendState._buildQueries(index),
+    this.recommendState._buildQueries(index, cache),
     derivedQueries
   );
 
@@ -11326,7 +12069,7 @@ AlgoliaSearchHelper.prototype._recommend = function () {
   ) {
     // eslint-disable-next-line no-console
     console.warn(
-      'Please update algoliasearch/lite to the latest version in order to use recommendations widgets.'
+      'Please update algoliasearch/lite to the latest version in order to use recommend widgets.'
     );
     return;
   }
@@ -11337,7 +12080,7 @@ AlgoliaSearchHelper.prototype._recommend = function () {
   try {
     this.client
       .getRecommendations(queries)
-      .then(this._dispatchRecommendResponse.bind(this, queryId, states))
+      .then(this._dispatchRecommendResponse.bind(this, queryId, states, ids))
       .catch(this._dispatchRecommendError.bind(this, queryId));
   } catch (error) {
     // If we reach this part, we're in an internal error state
@@ -11411,6 +12154,7 @@ AlgoliaSearchHelper.prototype._dispatchAlgoliaResponse = function (
 AlgoliaSearchHelper.prototype._dispatchRecommendResponse = function (
   queryId,
   states,
+  ids,
   content
 ) {
   // @TODO remove the number of outdated queries discarded instead of just one
@@ -11426,7 +12170,39 @@ AlgoliaSearchHelper.prototype._dispatchRecommendResponse = function (
 
   if (this._currentNbRecommendQueries === 0) this.emit('recommendQueueEmpty');
 
-  var results = content.results.slice();
+  var cache = this._recommendCache;
+
+  var idsMap = {};
+  ids
+    .filter(function (id) {
+      return cache[id] === undefined;
+    })
+    .forEach(function (id, index) {
+      if (!idsMap[id]) idsMap[id] = [];
+
+      idsMap[id].push(index);
+    });
+
+  Object.keys(idsMap).forEach(function (id) {
+    var indices = idsMap[id];
+    var firstResult = content.results[indices[0]];
+    if (indices.length === 1) {
+      cache[id] = firstResult;
+      return;
+    }
+    cache[id] = Object.assign({}, firstResult, {
+      hits: sortAndMergeRecommendations(
+        indices.map(function (idx) {
+          return content.results[idx].hits;
+        })
+      ),
+    });
+  });
+
+  var results = {};
+  ids.forEach(function (id) {
+    results[id] = cache[id];
+  });
 
   states.forEach(function (s) {
     var state = s.state;
@@ -11442,7 +12218,7 @@ AlgoliaSearchHelper.prototype._dispatchRecommendResponse = function (
       return;
     }
 
-    helper.lastRecommendResults = results;
+    helper.lastRecommendResults = new RecommendResults(state, results);
 
     // eslint-disable-next-line no-warning-comments
     // TODO: emit "result" event when events for Recommend are implemented
@@ -11786,6 +12562,19 @@ module.exports = function find(array, comparator) {
     }
   }
   return -1;
+};
+
+
+/***/ }),
+
+/***/ 38657:
+/***/ ((module) => {
+
+// @MAJOR: remove this function and use Array.prototype.flat
+module.exports = function flat(arr) {
+  return arr.reduce(function (acc, val) {
+    return acc.concat(val);
+  }, []);
 };
 
 
@@ -12272,10 +13061,15 @@ var requestBuilder = {
     var facetFilters = requestBuilder._getFacetFilters(state);
     var numericFilters = requestBuilder._getNumericFilters(state);
     var tagFilters = requestBuilder._getTagFilters(state);
-    var additionalParams = {
-      facets: facets.indexOf('*') > -1 ? ['*'] : facets,
-      tagFilters: tagFilters,
-    };
+    var additionalParams = {};
+
+    if (facets.length > 0) {
+      additionalParams.facets = facets.indexOf('*') > -1 ? ['*'] : facets;
+    }
+
+    if (tagFilters.length > 0) {
+      additionalParams.tagFilters = tagFilters;
+    }
 
     if (facetFilters.length > 0) {
       additionalParams.facetFilters = facetFilters;
@@ -12599,13 +13393,77 @@ module.exports = function isValidUserToken(userToken) {
 
 /***/ }),
 
+/***/ 57749:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var find = __webpack_require__(20849);
+var flat = __webpack_require__(38657);
+
+function getAverageIndices(indexTracker, nrOfObjs) {
+  var avgIndices = [];
+
+  Object.keys(indexTracker).forEach(function (key) {
+    if (indexTracker[key].count < 2) {
+      indexTracker[key].indexSum += 100;
+    }
+    avgIndices.push({
+      objectID: key,
+      avgOfIndices: indexTracker[key].indexSum / nrOfObjs,
+    });
+  });
+
+  return avgIndices.sort(function (a, b) {
+    return a.avgOfIndices > b.avgOfIndices ? 1 : -1;
+  });
+}
+
+function sortAndMergeRecommendations(results) {
+  var indexTracker = {};
+
+  results.forEach(function (hits) {
+    hits.forEach(function (hit, index) {
+      if (!indexTracker[hit.objectID]) {
+        indexTracker[hit.objectID] = { indexSum: index, count: 1 };
+      } else {
+        indexTracker[hit.objectID] = {
+          indexSum: indexTracker[hit.objectID].indexSum + index,
+          count: indexTracker[hit.objectID].count + 1,
+        };
+      }
+    });
+  });
+
+  var sortedAverageIndices = getAverageIndices(indexTracker, results.length);
+
+  var finalOrder = sortedAverageIndices.reduce(function (
+    orderedHits,
+    avgIndexRef
+  ) {
+    var result = find(flat(results), function (hit) {
+      return hit.objectID === avgIndexRef.objectID;
+    });
+    return result ? orderedHits.concat(result) : orderedHits;
+  },
+  []);
+
+  return finalOrder;
+}
+
+module.exports = sortAndMergeRecommendations;
+
+
+/***/ }),
+
 /***/ 16938:
 /***/ ((module) => {
 
 "use strict";
 
 
-module.exports = '3.19.0';
+module.exports = '3.22.2';
 
 
 /***/ }),
@@ -14198,9 +15056,15 @@ function useConfigure(props, additionalWidgetProperties) {
   }, additionalWidgetProperties);
 }
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/components/Configure.js
+function Configure_typeof(obj) { "@babel/helpers - typeof"; return Configure_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, Configure_typeof(obj); }
+function Configure_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function Configure_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? Configure_ownKeys(Object(source), !0).forEach(function (key) { Configure_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : Configure_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function Configure_defineProperty(obj, key, value) { key = Configure_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function Configure_toPropertyKey(arg) { var key = Configure_toPrimitive(arg, "string"); return Configure_typeof(key) === "symbol" ? key : String(key); }
+function Configure_toPrimitive(input, hint) { if (Configure_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (Configure_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 function Configure(props) {
-  useConfigure(props, {
+  useConfigure(Configure_objectSpread({}, props), {
     $$widgetType: 'ais.configure'
   });
   return null;
@@ -14208,7 +15072,7 @@ function Configure(props) {
 
 /***/ }),
 
-/***/ 61598:
+/***/ 74546:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14636,8 +15500,8 @@ function createInitArgs(instantSearchInstance, parent, uiState) {
     error: instantSearchInstance.error
   };
 }
-function createRenderArgs(instantSearchInstance, parent) {
-  var results = parent.getResults();
+function createRenderArgs(instantSearchInstance, parent, widget) {
+  var results = parent.getResultsForWidget(widget);
   var helper = parent.getHelper();
   return {
     helper: helper,
@@ -14645,7 +15509,7 @@ function createRenderArgs(instantSearchInstance, parent) {
     instantSearchInstance: instantSearchInstance,
     results: results,
     scopedResults: parent.getScopedResults(),
-    state: results ? results._state : helper.state,
+    state: results && '_state' in results ? results._state : helper.state,
     renderState: instantSearchInstance.renderState,
     templatesConfig: instantSearchInstance.templatesConfig,
     createURL: parent.createURL,
@@ -15180,6 +16044,7 @@ var createRouterMiddleware = function createRouterMiddleware() {
         }
       },
       subscribe: function subscribe() {
+         false ? 0 : void 0;
         instantSearchInstance._initialUiState = createRouterMiddleware_objectSpread(createRouterMiddleware_objectSpread({}, initialUiState), stateMapping.routeToState(router.read()));
         router.onUpdate(function (route) {
           if (instantSearchInstance.mainIndex.getWidgets().length > 0) {
@@ -15215,6 +16080,17 @@ function resolveSearchParameters(current) {
   }
   return states;
 }
+;// CONCATENATED MODULE: ./node_modules/instantsearch.js/es/lib/utils/addWidgetId.js
+var id = 0;
+function addWidgetId(widget) {
+  if (widget.dependsOn !== 'recommend') {
+    return;
+  }
+  widget.$$id = id++;
+}
+function resetWidgetId() {
+  id = 0;
+}
 ;// CONCATENATED MODULE: ./node_modules/instantsearch.js/es/widgets/index/index.js
 function index_typeof(obj) { "@babel/helpers - typeof"; return index_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, index_typeof(obj); }
 var index_excluded = ["initialSearchParameters"],
@@ -15232,6 +16108,7 @@ function index_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return index_arr
 function index_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function index_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = index_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function index_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 
 
 var withUsage = (0,documentation/* createDocumentationMessageGenerator */.V)({
@@ -15341,6 +16218,8 @@ var index = function index(widgetParams) {
   var helper = null;
   var derivedHelper = null;
   var lastValidSearchParameters = null;
+  var hasRecommendWidget = false;
+  var hasSearchWidget = false;
   return {
     $$type: 'ais.index',
     $$widgetType: 'ais.index',
@@ -15364,6 +16243,16 @@ var index = function index(widgetParams) {
       // the status of the network request.
       derivedHelper.lastResults._state = helper.state;
       return derivedHelper.lastResults;
+    },
+    getResultsForWidget: function getResultsForWidget(widget) {
+      var _helper;
+      if (widget.dependsOn !== 'recommend' || isIndexWidget(widget) || widget.$$id === undefined) {
+        return this.getResults();
+      }
+      if (!((_helper = helper) !== null && _helper !== void 0 && _helper.lastRecommendResults)) {
+        return null;
+      }
+      return helper.lastRecommendResults[widget.$$id];
     },
     getPreviousState: function getPreviousState() {
       return lastValidSearchParameters;
@@ -15409,6 +16298,21 @@ var index = function index(widgetParams) {
       })) {
         throw new Error(withUsage('The widget definition expects a `render` and/or an `init` method.'));
       }
+      widgets.forEach(function (widget) {
+        if (isIndexWidget(widget)) {
+          return;
+        }
+        if (localInstantSearchInstance && widget.dependsOn === 'recommend') {
+          localInstantSearchInstance._hasRecommendWidget = true;
+        } else if (localInstantSearchInstance) {
+          localInstantSearchInstance._hasSearchWidget = true;
+        } else if (widget.dependsOn === 'recommend') {
+          hasRecommendWidget = true;
+        } else {
+          hasSearchWidget = true;
+        }
+        addWidgetId(widget);
+      });
       localWidgets = localWidgets.concat(widgets);
       if (localInstantSearchInstance && Boolean(widgets.length)) {
         privateHelperSetState(helper, {
@@ -15458,16 +16362,41 @@ var index = function index(widgetParams) {
       localWidgets = localWidgets.filter(function (widget) {
         return widgets.indexOf(widget) === -1;
       });
+      localWidgets.forEach(function (widget) {
+        if (isIndexWidget(widget)) {
+          return;
+        }
+        if (localInstantSearchInstance && widget.dependsOn === 'recommend') {
+          localInstantSearchInstance._hasRecommendWidget = true;
+        } else if (localInstantSearchInstance) {
+          localInstantSearchInstance._hasSearchWidget = true;
+        } else if (widget.dependsOn === 'recommend') {
+          hasRecommendWidget = true;
+        } else {
+          hasSearchWidget = true;
+        }
+      });
       if (localInstantSearchInstance && Boolean(widgets.length)) {
-        var cleanedState = widgets.reduce(function (state, widget) {
-          // the `dispose` method exists at this point we already assert it
-          var next = widget.dispose({
-            helper: helper,
-            state: state,
-            parent: _this2
-          });
-          return next || state;
-        }, helper.state);
+        var _widgets$reduce = widgets.reduce(function (states, widget) {
+            // the `dispose` method exists at this point we already assert it
+            var next = widget.dispose({
+              helper: helper,
+              state: states.cleanedSearchState,
+              recommendState: states.cleanedRecommendState,
+              parent: _this2
+            });
+            if (next instanceof algoliasearch_helper.RecommendParameters) {
+              states.cleanedRecommendState = next;
+            } else if (next) {
+              states.cleanedSearchState = next;
+            }
+            return states;
+          }, {
+            cleanedSearchState: helper.state,
+            cleanedRecommendState: helper.recommendState
+          }),
+          cleanedSearchState = _widgets$reduce.cleanedSearchState,
+          cleanedRecommendState = _widgets$reduce.cleanedRecommendState;
         var newState = localInstantSearchInstance.future.preserveSharedStateOnUnmount ? getLocalWidgetsSearchParameters(localWidgets, {
           uiState: localUiState,
           initialSearchParameters: new algoliasearch_helper.SearchParameters({
@@ -15475,16 +16404,17 @@ var index = function index(widgetParams) {
           })
         }) : getLocalWidgetsSearchParameters(localWidgets, {
           uiState: getLocalWidgetsUiState(localWidgets, {
-            searchParameters: cleanedState,
+            searchParameters: cleanedSearchState,
             helper: helper
           }),
-          initialSearchParameters: cleanedState
+          initialSearchParameters: cleanedSearchState
         });
         localUiState = getLocalWidgetsUiState(localWidgets, {
           searchParameters: newState,
           helper: helper
         });
         helper.setState(newState);
+        helper.recommendState = cleanedRecommendState;
         if (localWidgets.length) {
           localInstantSearchInstance.scheduleSearch();
         }
@@ -15560,12 +16490,19 @@ var index = function index(widgetParams) {
         return _this3.getHelper().recommendState;
       });
       var indexInitialResults = (_instantSearchInstanc = instantSearchInstance._initialResults) === null || _instantSearchInstanc === void 0 ? void 0 : _instantSearchInstanc[this.getIndexId()];
-      if (indexInitialResults) {
+      if (indexInitialResults !== null && indexInitialResults !== void 0 && indexInitialResults.results) {
         // We restore the shape of the results provided to the instance to respect
         // the helper's structure.
         var results = new algoliasearch_helper.SearchResults(new algoliasearch_helper.SearchParameters(indexInitialResults.state), indexInitialResults.results);
         derivedHelper.lastResults = results;
         helper.lastResults = results;
+      }
+      if (indexInitialResults !== null && indexInitialResults !== void 0 && indexInitialResults.recommendResults) {
+        var recommendResults = new algoliasearch_helper.RecommendResults(new algoliasearch_helper.RecommendParameters({
+          params: indexInitialResults.recommendResults.params
+        }), indexInitialResults.recommendResults.results);
+        derivedHelper.lastRecommendResults = recommendResults;
+        helper.lastRecommendResults = recommendResults;
       }
 
       // Subscribe to the Helper state changes for the page before widgets
@@ -15662,9 +16599,16 @@ var index = function index(widgetParams) {
         // schedule a render that will render the results injected on the helper.
         instantSearchInstance.scheduleRender();
       }
+      if (hasRecommendWidget) {
+        instantSearchInstance._hasRecommendWidget = true;
+      }
+      if (hasSearchWidget) {
+        instantSearchInstance._hasSearchWidget = true;
+      }
     },
     render: function render(_ref6) {
-      var _this4 = this;
+      var _derivedHelper2,
+        _this4 = this;
       var instantSearchInstance = _ref6.instantSearchInstance;
       // we can't attach a listener to the error event of search, as the error
       // then would no longer be thrown for global handlers.
@@ -15674,7 +16618,7 @@ var index = function index(widgetParams) {
 
       // We only render index widgets if there are no results.
       // This makes sure `render` is never called with `results` being `null`.
-      var widgetsToRender = this.getResults() ? localWidgets : localWidgets.filter(isIndexWidget);
+      var widgetsToRender = this.getResults() || (_derivedHelper2 = derivedHelper) !== null && _derivedHelper2 !== void 0 && _derivedHelper2.lastRecommendResults ? localWidgets : localWidgets.filter(isIndexWidget);
       widgetsToRender = widgetsToRender.filter(function (widget) {
         if (!widget.shouldRender) {
           return true;
@@ -15685,7 +16629,7 @@ var index = function index(widgetParams) {
       });
       widgetsToRender.forEach(function (widget) {
         if (widget.getRenderState) {
-          var renderState = widget.getRenderState(instantSearchInstance.renderState[_this4.getIndexId()] || {}, createRenderArgs(instantSearchInstance, _this4));
+          var renderState = widget.getRenderState(instantSearchInstance.renderState[_this4.getIndexId()] || {}, createRenderArgs(instantSearchInstance, _this4, widget));
           storeRenderState({
             renderState: renderState,
             instantSearchInstance: instantSearchInstance,
@@ -15702,14 +16646,14 @@ var index = function index(widgetParams) {
         // not have results yet.
 
         if (widget.render) {
-          widget.render(createRenderArgs(instantSearchInstance, _this4));
+          widget.render(createRenderArgs(instantSearchInstance, _this4, widget));
         }
       });
     },
     dispose: function dispose() {
       var _this5 = this,
-        _helper,
-        _derivedHelper2;
+        _helper2,
+        _derivedHelper3;
       localWidgets.forEach(function (widget) {
         if (widget.dispose && helper) {
           // The dispose function is always called once the instance is started
@@ -15721,15 +16665,16 @@ var index = function index(widgetParams) {
           widget.dispose({
             helper: helper,
             state: helper.state,
+            recommendState: helper.recommendState,
             parent: _this5
           });
         }
       });
       localInstantSearchInstance = null;
       localParent = null;
-      (_helper = helper) === null || _helper === void 0 ? void 0 : _helper.removeAllListeners();
+      (_helper2 = helper) === null || _helper2 === void 0 ? void 0 : _helper2.removeAllListeners();
       helper = null;
-      (_derivedHelper2 = derivedHelper) === null || _derivedHelper2 === void 0 ? void 0 : _derivedHelper2.detach();
+      (_derivedHelper3 = derivedHelper) === null || _derivedHelper3 === void 0 ? void 0 : _derivedHelper3.detach();
       derivedHelper = null;
     },
     getWidgetUiState: function getWidgetUiState(uiState) {
@@ -16145,16 +17090,20 @@ function hydrateSearchClient(client, results) {
       state = _results$key.state,
       requestParams = _results$key.requestParams,
       serverResults = _results$key.results;
-    return serverResults.map(function (result) {
+    return serverResults && state ? serverResults.map(function (result) {
       return hydrateSearchClient_objectSpread({
         indexName: state.index || result.index
       }, requestParams || result.params ? {
         params: serializeQueryParameters(requestParams || deserializeQueryParameters(result.params))
       } : {});
-    });
+    }) : [];
   });
   var cachedResults = Object.keys(results).reduce(function (acc, key) {
-    return acc.concat(results[key].results);
+    var res = results[key].results;
+    if (!res) {
+      return acc;
+    }
+    return acc.concat(res);
   }, []);
 
   // Algoliasearch API Client >= v4
@@ -16239,6 +17188,24 @@ function serializeQueryParameters(parameters) {
     return encode('%s=%s', key, isObjectOrArray(parameters[key]) ? JSON.stringify(parameters[key]) : parameters[key]);
   }).join('&');
 }
+;// CONCATENATED MODULE: ./node_modules/instantsearch.js/es/lib/utils/hydrateRecommendCache.js
+function hydrateRecommendCache_typeof(obj) { "@babel/helpers - typeof"; return hydrateRecommendCache_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, hydrateRecommendCache_typeof(obj); }
+function hydrateRecommendCache_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function hydrateRecommendCache_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? hydrateRecommendCache_ownKeys(Object(source), !0).forEach(function (key) { hydrateRecommendCache_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : hydrateRecommendCache_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function hydrateRecommendCache_defineProperty(obj, key, value) { key = hydrateRecommendCache_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function hydrateRecommendCache_toPropertyKey(arg) { var key = hydrateRecommendCache_toPrimitive(arg, "string"); return hydrateRecommendCache_typeof(key) === "symbol" ? key : String(key); }
+function hydrateRecommendCache_toPrimitive(input, hint) { if (hydrateRecommendCache_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (hydrateRecommendCache_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function hydrateRecommendCache(helper, initialResults) {
+  var recommendCache = Object.keys(initialResults).reduce(function (acc, indexName) {
+    var initialResult = initialResults[indexName];
+    if (initialResult.recommendResults) {
+      // @MAJOR: Use `Object.assign` instead of spread operator
+      return hydrateRecommendCache_objectSpread(hydrateRecommendCache_objectSpread({}, acc), initialResult.recommendResults.results);
+    }
+    return acc;
+  }, {});
+  helper._recommendCache = recommendCache;
+}
 ;// CONCATENATED MODULE: ./node_modules/instantsearch.js/es/lib/utils/setIndexHelperState.js
 
 
@@ -16253,7 +17220,7 @@ function setIndexHelperState(finalUiState, indexWidget) {
   });
 }
 ;// CONCATENATED MODULE: ./node_modules/instantsearch.js/es/lib/version.js
-/* harmony default export */ const version = ('4.68.1');
+/* harmony default export */ const version = ('4.73.0');
 ;// CONCATENATED MODULE: ./node_modules/instantsearch.js/es/lib/InstantSearch.js
 function InstantSearch_typeof(obj) { "@babel/helpers - typeof"; return InstantSearch_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, InstantSearch_typeof(obj); }
 function InstantSearch_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -16331,6 +17298,8 @@ var InstantSearch = /*#__PURE__*/function (_EventEmitter) {
     InstantSearch_defineProperty(_assertThisInitialized(_this), "_createURL", void 0);
     InstantSearch_defineProperty(_assertThisInitialized(_this), "_searchFunction", void 0);
     InstantSearch_defineProperty(_assertThisInitialized(_this), "_mainHelperSearch", void 0);
+    InstantSearch_defineProperty(_assertThisInitialized(_this), "_hasSearchWidget", false);
+    InstantSearch_defineProperty(_assertThisInitialized(_this), "_hasRecommendWidget", false);
     InstantSearch_defineProperty(_assertThisInitialized(_this), "_insights", void 0);
     InstantSearch_defineProperty(_assertThisInitialized(_this), "middleware", []);
     InstantSearch_defineProperty(_assertThisInitialized(_this), "sendEventToInsights", void 0);
@@ -16634,7 +17603,13 @@ var InstantSearch = /*#__PURE__*/function (_EventEmitter) {
         // under the hood, we have a different implementation. It should be
         // completely transparent for the rest of the codebase. Only this module
         // is impacted.
-        return mainHelper.searchOnlyWithDerivedHelpers() && mainHelper.recommend();
+        if (_this3._hasSearchWidget) {
+          mainHelper.searchOnlyWithDerivedHelpers();
+        }
+        if (_this3._hasRecommendWidget) {
+          mainHelper.recommend();
+        }
+        return mainHelper;
       };
       if (this._searchFunction) {
         // this client isn't used to actually search, but required for the helper
@@ -16701,6 +17676,7 @@ var InstantSearch = /*#__PURE__*/function (_EventEmitter) {
       });
       if (this._initialResults) {
         hydrateSearchClient(this.client, this._initialResults);
+        hydrateRecommendCache(this.mainHelper, this._initialResults);
         var originalScheduleSearch = this.scheduleSearch;
         // We don't schedule a first search when initial results are provided
         // because we already have the results to render. This skips the initial
@@ -16866,7 +17842,7 @@ var InstantSearch = /*#__PURE__*/function (_EventEmitter) {
 // EXTERNAL MODULE: ./node_modules/use-sync-external-store/shim/index.js
 var shim = __webpack_require__(19888);
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/version.js
-/* harmony default export */ const es_version = ('7.8.0');
+/* harmony default export */ const es_version = ('7.12.0');
 // EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/dequal.js
 var dequal = __webpack_require__(11327);
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useForceUpdate.js
@@ -16892,16 +17868,8 @@ function useForceUpdate() {
 }
 // EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchServerContext.js + 1 modules
 var useInstantSearchServerContext = __webpack_require__(244);
-;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/InstantSearchSSRContext.js
-
-var InstantSearchSSRContext = /*#__PURE__*/(0,react.createContext)(null);
-if (false) {}
-;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchSSRContext.js
-
-
-function useInstantSearchSSRContext() {
-  return (0,react.useContext)(InstantSearchSSRContext);
-}
+// EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchSSRContext.js + 1 modules
+var useInstantSearchSSRContext = __webpack_require__(37257);
 // EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useRSCContext.js + 1 modules
 var useRSCContext = __webpack_require__(72965);
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchApi.js
@@ -16929,7 +17897,7 @@ var nextUserAgent = function nextUserAgent(nextVersion) {
 function useInstantSearchApi(props) {
   var forceUpdate = useForceUpdate();
   var serverContext = (0,useInstantSearchServerContext/* useInstantSearchServerContext */.r)();
-  var serverState = useInstantSearchSSRContext();
+  var serverState = (0,useInstantSearchSSRContext/* useInstantSearchSSRContext */.m)();
   var waitingForResultsRef = (0,useRSCContext/* useRSCContext */.t)();
   var initialResults = serverState === null || serverState === void 0 ? void 0 : serverState.initialResults;
   var prevPropsRef = (0,react.useRef)(props);
@@ -17188,7 +18156,8 @@ function getIndexSearchResults(indexWidget) {
   });
   return {
     results: results,
-    scopedResults: scopedResults
+    scopedResults: scopedResults,
+    recommendResults: helper.lastRecommendResults
   };
 }
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/invariant.js
@@ -17233,6 +18202,8 @@ function useInstantSearchContext() {
 }
 // EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchServerContext.js + 1 modules
 var useInstantSearchServerContext = __webpack_require__(244);
+// EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchSSRContext.js + 1 modules
+var useInstantSearchSSRContext = __webpack_require__(37257);
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useStableValue.js
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -17384,10 +18355,12 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
+
 function useConnector(connector) {
   var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var additionalWidgetProperties = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   var serverContext = (0,useInstantSearchServerContext/* useInstantSearchServerContext */.r)();
+  var ssrContext = (0,useInstantSearchSSRContext/* useInstantSearchSSRContext */.m)();
   var search = useInstantSearchContext();
   var parentIndex = useIndexContext();
   var stableProps = useStableValue(props);
@@ -17452,7 +18425,8 @@ function useConnector(connector) {
         })) || helper.state;
         var _getIndexSearchResult = getIndexSearchResults(parentIndex),
           results = _getIndexSearchResult.results,
-          scopedResults = _getIndexSearchResult.scopedResults;
+          scopedResults = _getIndexSearchResult.scopedResults,
+          recommendResults = _getIndexSearchResult.recommendResults;
 
         // We get the widget render state by providing the same parameters as
         // InstantSearch provides to the widget's `render` method.
@@ -17461,7 +18435,7 @@ function useConnector(connector) {
             helper: helper,
             parent: parentIndex,
             instantSearchInstance: search,
-            results: results,
+            results: widget.dependsOn === 'recommend' && recommendResults && ssrContext ? recommendResults[ssrContext.recommendIdx.current++] : results,
             scopedResults: scopedResults,
             state: helper.state,
             renderState: search.renderState,
@@ -17574,6 +18548,31 @@ function dequal(foo, bar, compare) {
 
   // eslint-disable-next-line no-self-compare
   return foo !== foo && bar !== bar;
+}
+
+/***/ }),
+
+/***/ 37257:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  m: () => (/* binding */ useInstantSearchSSRContext)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(96540);
+;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/InstantSearchSSRContext.js
+
+var InstantSearchSSRContext = /*#__PURE__*/(0,react.createContext)(null);
+if (false) {}
+;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/lib/useInstantSearchSSRContext.js
+
+
+function useInstantSearchSSRContext() {
+  return (0,react.useContext)(InstantSearchSSRContext);
 }
 
 /***/ }),
@@ -18390,7 +19389,6 @@ var _excluded = ["classNames", "hits", "itemComponent", "sendEvent", "emptyCompo
 function createDefaultBannerComponent(_ref) {
   var createElement = _ref.createElement;
   return function DefaultBanner(_ref2) {
-    var _banner$link;
     var classNames = _ref2.classNames,
       banner = _ref2.banner;
     if (!banner.image.urls[0].url) {
@@ -18398,7 +19396,7 @@ function createDefaultBannerComponent(_ref) {
     }
     return createElement("aside", {
       className: (0,cx.cx)('ais-Hits-banner', classNames.bannerRoot)
-    }, (_banner$link = banner.link) !== null && _banner$link !== void 0 && _banner$link.url ? createElement("a", {
+    }, banner.link ? createElement("a", {
       className: (0,cx.cx)('ais-Hits-banner-link', classNames.bannerLink),
       href: banner.link.url,
       target: banner.link.target
@@ -18681,7 +19679,7 @@ var withUsage = (0,documentation/* createDocumentationMessageGenerator */.V)({
   name: 'hits',
   connector: true
 });
-var connectHits = function connectHits(renderFn) {
+/* harmony default export */ const connectHits = (function connectHits(renderFn) {
   var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : noop/* noop */.l;
   (0,checkRendering/* checkRendering */.t)(renderFn, withUsage());
   return function (widgetParams) {
@@ -18706,9 +19704,11 @@ var connectHits = function connectHits(renderFn) {
         renderFn(connectHits_objectSpread(connectHits_objectSpread({}, renderState), {}, {
           instantSearchInstance: renderOptions.instantSearchInstance
         }), false);
-        renderState.sendEvent('view:internal', renderState.hits);
+        renderState.sendEvent('view:internal', renderState.items);
       },
-      getRenderState: function getRenderState(renderState, renderOptions) {
+      getRenderState: function getRenderState(renderState, renderOptions
+      // Type is explicitly redefined, to avoid having the TWidgetParams type in the definition
+      ) {
         return connectHits_objectSpread(connectHits_objectSpread({}, renderState), {}, {
           hits: this.getWidgetRenderState(renderOptions)
         });
@@ -18739,6 +19739,7 @@ var connectHits = function connectHits(renderFn) {
         if (!results) {
           return {
             hits: [],
+            items: [],
             results: undefined,
             banner: undefined,
             sendEvent: sendEvent,
@@ -18751,12 +19752,13 @@ var connectHits = function connectHits(renderFn) {
         }
         var hitsWithAbsolutePosition = addAbsolutePosition(results.hits, results.page, results.hitsPerPage);
         var hitsWithAbsolutePositionAndQueryID = addQueryID(hitsWithAbsolutePosition, results.queryID);
-        var transformedHits = transformItems(hitsWithAbsolutePositionAndQueryID, {
+        var items = transformItems(hitsWithAbsolutePositionAndQueryID, {
           results: results
         });
         var banner = (_results$renderingCon = results.renderingContent) === null || _results$renderingCon === void 0 ? void 0 : (_results$renderingCon2 = _results$renderingCon.widgets) === null || _results$renderingCon2 === void 0 ? void 0 : (_results$renderingCon3 = _results$renderingCon2.banners) === null || _results$renderingCon3 === void 0 ? void 0 : _results$renderingCon3[0];
         return {
-          hits: transformedHits,
+          hits: items,
+          items: items,
           results: results,
           banner: banner,
           sendEvent: sendEvent,
@@ -18774,7 +19776,7 @@ var connectHits = function connectHits(renderFn) {
           return connectHits_objectSpread(connectHits_objectSpread({}, acc), {}, connectHits_defineProperty({}, key, undefined));
         }, {}));
       },
-      getWidgetSearchParameters: function getWidgetSearchParameters(state) {
+      getWidgetSearchParameters: function getWidgetSearchParameters(state, _uiState) {
         if (!escapeHTML) {
           return state;
         }
@@ -18784,15 +19786,14 @@ var connectHits = function connectHits(renderFn) {
       }
     };
   };
-};
-/* harmony default export */ const hits_connectHits = (connectHits);
+});
 // EXTERNAL MODULE: ./node_modules/react-instantsearch-core/dist/es/hooks/useConnector.js + 9 modules
 var useConnector = __webpack_require__(71291);
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch-core/dist/es/connectors/useHits.js
 
 
 function useHits(props, additionalWidgetProperties) {
-  return (0,useConnector/* useConnector */.Z)(hits_connectHits, props, additionalWidgetProperties);
+  return (0,useConnector/* useConnector */.Z)(connectHits, props, additionalWidgetProperties);
 }
 ;// CONCATENATED MODULE: ./node_modules/react-instantsearch/dist/es/widgets/Hits.js
 var Hits_excluded = ["escapeHTML", "transformItems", "hitComponent", "bannerComponent"],
@@ -18833,17 +19834,19 @@ function Hits(_ref2) {
     hits = _useHits.hits,
     banner = _useHits.banner,
     sendEvent = _useHits.sendEvent;
-  var itemComponent = function itemComponent(_ref3) {
-    var hit = _ref3.hit,
-      index = _ref3.index,
-      itemProps = _objectWithoutProperties(_ref3, _excluded2);
-    return /*#__PURE__*/react.createElement("li", _extends({
-      key: hit.objectID
-    }, itemProps), /*#__PURE__*/react.createElement(HitComponent, {
-      hit: hit,
-      sendEvent: sendEvent
-    }));
-  };
+  var itemComponent = (0,react.useMemo)(function () {
+    return function (_ref3) {
+      var hit = _ref3.hit,
+        index = _ref3.index,
+        itemProps = _objectWithoutProperties(_ref3, _excluded2);
+      return /*#__PURE__*/react.createElement("li", _extends({
+        key: hit.objectID
+      }, itemProps), /*#__PURE__*/react.createElement(HitComponent, {
+        hit: hit,
+        sendEvent: sendEvent
+      }));
+    };
+  }, [HitComponent, sendEvent]);
   var bannerComponent = BannerComponent === false ? function () {
     return null;
   } : BannerComponent;
@@ -18963,12 +19966,12 @@ var Paginator = /*#__PURE__*/function () {
   }, {
     key: "isLastPage",
     value: function isLastPage() {
-      return this.currentPage === this.total - 1 || this.total === 0;
+      return this.currentPage >= this.total - 1;
     }
   }, {
     key: "isFirstPage",
     value: function isFirstPage() {
-      return this.currentPage === 0;
+      return this.currentPage <= 0;
     }
   }]);
   return Paginator;

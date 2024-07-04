@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49607],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77856],{
 
 /***/ 67819:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3239,7 +3239,7 @@ function _createMdxContent(props) {
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "byte"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "설정된 힙 메모리의 최댓값(-Xmx 값)"
+                children: "힙 메모리의 최대 크기(-Xmx 값)"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "-"
               })]
@@ -3461,7 +3461,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 64305:
+/***/ 77585:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3486,9 +3486,8 @@ const frontMatter = {
 	id: 'metrics-app',
 	title: '애플리케이션 지표',
 	description: '애플리케이션 지표를 안내합니다.',
-	toc_max_heading_level: 2,
 	tags: [
-		'Go',
+		'.NET',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
@@ -3496,21 +3495,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/metrics-app",
+  "id": "dotnet/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/golang/metrics-app.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/metrics-app",
-  "permalink": "/whatap-docs/golang/metrics-app",
+  "source": "@site/docs/dotnet/metrics-app.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/metrics-app",
+  "permalink": "/whatap-docs/dotnet/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/metrics-app.mdx",
+  "editUrl": "undefined/docs/dotnet/metrics-app.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "inline": true,
@@ -3533,22 +3532,21 @@ const metadata = {
     "id": "metrics-app",
     "title": "애플리케이션 지표",
     "description": "애플리케이션 지표를 안내합니다.",
-    "toc_max_heading_level": 2,
     "tags": [
-      "Go",
+      ".NET",
       "메트릭스",
       "애플리케이션",
       "UI"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/golang/metrics-intro"
+    "permalink": "/whatap-docs/dotnet/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/golang/metrics-performance-counter"
+    "permalink": "/whatap-docs/dotnet/metrics-performance-counter"
   }
 };
 const assets = {

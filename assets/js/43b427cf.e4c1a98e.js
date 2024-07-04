@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
 /* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(81063);
 /* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(48643);
-/* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(61598);
+/* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(74546);
 /* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(29330);
 /* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(2764);
 /* harmony import */ var react_instantsearch__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(97106);

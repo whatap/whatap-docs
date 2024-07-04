@@ -112,7 +112,7 @@ Java 가상 머신이 프로그램을 실행하기 위해 메모리에 할당한
 
 성능 추이 차트 > 힙 메모리 위젯: 사용량 추이
 
-메트릭스 차트 > 힙 > 크기, 사용량, 최대 사용량, heap perm 영역 사용량, heap pending finalization 개수
+메트릭스 차트 > 힙 > 크기, 사용량, 총 사용량, heap perm 영역 사용량, heap pending finalization 개수
 
 
 */
@@ -193,6 +193,7 @@ function _createMdxContent(props) {
     h4: "h4",
     img: "img",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     ol: "ol",
     p: "p",
     section: "section",
@@ -203,7 +204,28 @@ function _createMdxContent(props) {
   }, {ImgLang} = _components;
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+      type: "note",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "다음 자바 공식 문서 링크를 참조하세요."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.oracle.com/en/java/javase/22/",
+              children: "Java SE 22"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryUsage.html",
+              children: "Java Memory Usage"
+            })
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "애플리케이션 프로젝트의 힙 메모리 관련 메트릭스와 메트릭스 알림 설정에 대해 안내합니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -249,6 +271,10 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "heap-memory",
         children: "Heap Memory"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "app_proc_counter"
+        }), " 카테고리 선택 후 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -273,7 +299,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Heap 최대 사용량"
+              children: "Heap 최대 크기"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "heap_max"
             })]
@@ -288,7 +314,17 @@ function _createMdxContent(props) {
               children: "heap_used"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "JVM에서 사용된 힙 메모리를 의미합니다."
+            children: "JVM에서 사용 중인 힙 메모리를 의미합니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Heap 총 사용량"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "heap_tot"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "JVM이 할당받은 힙 메모리의 총량을 의미합니다."
           }), "\n"]
         }), "\n"]
       })]
@@ -297,6 +333,10 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "non-heap-memory",
         children: "Non-heap Memory"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "java_memory"
+        }), " 카테고리 선택 후 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -321,12 +361,19 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Non-heap 최대 사용량"
+              children: "Non-heap 총 사용량"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "nonheap_max"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "JVM이 메모리 관리에 사용할 수 있는 최대 비 힙 메모리를 의미합니다."
+            children: "JVM에서 메모리 관리에 사용할 수 있는 최대 비 힙 메모리 사용량을 의미합니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "note",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["Metaspace 및 JIT 코드 캐시 최대 메모리 크기가 정의되지 않은 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "-1"
+              }), "을 반환합니다."]
+            })]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -365,12 +412,22 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Heap 크기"
+              children: "Heap 최대 크기"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "heap_max"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "JVM이 메모리 관리에 사용할 수 있는 최대 힙 메모리를 의미합니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Heap 총 사용량"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "heap_tot"
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "JVM의 총 메모리를 의미합니다."
+            children: "JVM이 할당받은 힙 메모리의 총량을 의미합니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -381,16 +438,6 @@ function _createMdxContent(props) {
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "JVM에서 사용 중인 힙 메모리를 의미합니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Heap 최대 사용량"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "heap_max"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "JVM이 할당할 수 있는 최대 메모리를 의미합니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

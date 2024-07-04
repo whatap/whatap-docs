@@ -3239,7 +3239,7 @@ function _createMdxContent(props) {
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "byte"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "설정된 힙 메모리의 최댓값(-Xmx 값)"
+                children: "힙 메모리의 최대 크기(-Xmx 값)"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "-"
               })]
