@@ -13,6 +13,10 @@ export default function FiletreeItem({ children, name, type }) {
     }
     return null;
   };
+  const hasChildFiletreeItems = React.Children.toArray(children).some(
+    (child) => React.isValidElement(child) && child.type === FiletreeItem
+  );
+
   return (
     <li className={styles.fileitem} type={type}>
       <span className={styles.name}>
@@ -21,7 +25,17 @@ export default function FiletreeItem({ children, name, type }) {
         </div>
         {name}
       </span>
-      <span className={styles.desc}>{children}</span>
+      {type === 'folder' && hasChildFiletreeItems ? (
+        <ul>
+          {React.Children.map(children, (child, index) => (
+            React.isValidElement(child) && child.type === FiletreeItem ? (
+              <li key={index}>{child}</li>
+            ) : null
+          ))}
+        </ul>
+      ) : (
+        <span className={styles.desc}>{children}</span>
+      )}
     </li>
   );
 }
