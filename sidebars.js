@@ -3028,7 +3028,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_35',
@@ -3037,7 +3037,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_35',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_34',
                 'release-notes/java/java-2_2_33',
@@ -3079,7 +3079,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/php-2_8_0',
@@ -3088,7 +3088,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_8_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_7_2',
                 'release-notes/php/php-2_7_1',
@@ -3164,7 +3164,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_2_8',
@@ -3173,7 +3173,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_2_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_2_7',
                 'release-notes/dotnet/dotnet-2_2_6',
@@ -3192,7 +3192,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_4_0',
@@ -3201,7 +3201,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_4_0',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_3_3',
                 'release-notes/golang/golang-0_3_2',
@@ -3297,26 +3297,26 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_7_6',
+                id: 'release-notes/db/dbx-1_9_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_7_6',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-1_9_0',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-1_8_2',
+                'release-notes/db/dbx-1_8_1',
+                'release-notes/db/dbx-1_8_0',
+                'release-notes/db/dbx-1_7_8',
+                'release-notes/db/dbx-1_7_7',
+                'release-notes/db/dbx-1_7_6',
                 'release-notes/db/dbx-1_7_5',
                 'release-notes/db/dbx-1_7_4',
                 'release-notes/db/dbx-1_7_3',
-                'release-notes/db/dbx-1_7_2',
-                'release-notes/db/dbx-1_7_1',
-                'release-notes/db/dbx-1_7_0',
-                'release-notes/db/dbx-1_6_35',
-                'release-notes/db/dbx-1_6_33',
-                'release-notes/db/dbx-1_6_32',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -3325,17 +3325,18 @@ const sidebars = {
               label: 'XOS',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/xos-1_1_8b',
+                id: 'release-notes/db/xos-1_1_8f',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/xos-1_1_8b',
-                  // className: 'new',
+                  id: 'release-notes/db/xos-1_1_8f',
+                  className: 'new',
                 },
+                'release-notes/db/xos-1_1_8b',
                 'release-notes/db/xos-1_1_8a',
                 'release-notes/db/xos-1_1_6j',
                 'release-notes/db/xos-1_1_6g',
@@ -3344,7 +3345,6 @@ const sidebars = {
                 'release-notes/db/xos-1_1_3',
                 'release-notes/db/xos-1_1_2',
                 'release-notes/db/xos-1_1_1b',
-                'release-notes/db/xos-1_1_1a',
                 'release-notes/db/xos-previous',
               ]
             },
