@@ -2981,9 +2981,14 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              label: 'v1.0.10',
+              id: 'release-notes/mobile/mobile-app-v1_0_10',
+              className: 'new',
+            },
+            {
+              type: 'doc',
               label: 'v1.0.9',
               id: 'release-notes/mobile/mobile-app-v1_0_9',
-              // className: 'new',
             },
             {
               type: 'doc',
