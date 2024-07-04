@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[27512],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18703],{
 
-/***/ 76417:
+/***/ 21148:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'xos-1_1_1a',
-	title: 'xos v1.1.1a',
-	toc_max_heading_level: 2,
+	id: 'dbx-1_8_1',
+	title: 'DBX v1.8.1',
+	pagination_next: 'release-notes/db/dbx-1_8_0',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/xos-1_1_1a",
-  "title": "xos v1.1.1a",
-  "description": "배포일: 2021-12-20",
-  "source": "@site/docs/release-notes/db/xos-1.1.1a.mdx",
+  "id": "release-notes/db/dbx-1_8_1",
+  "title": "DBX v1.8.1",
+  "description": "2024년 06월 27일",
+  "source": "@site/docs/release-notes/db/dbx-1.8.1.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/xos-1_1_1a",
-  "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a",
+  "slug": "/release-notes/db/dbx-1_8_1",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_8_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/xos-1.1.1a.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.8.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "xos-1_1_1a",
-    "title": "xos v1.1.1a",
-    "toc_max_heading_level": 2,
+    "id": "dbx-1_8_1",
+    "title": "DBX v1.8.1",
+    "pagination_next": "release-notes/db/dbx-1_8_0",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "xos v1.1.1b",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1b"
+    "title": "DBX v1.8.2",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_2"
   },
   "next": {
-    "title": "xos 지난 버전",
-    "permalink": "/whatap-docs/release-notes/db/xos-previous"
+    "title": "DBX v1.8.0",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_0"
   }
 };
 const assets = {
@@ -62,18 +62,18 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    code: "code",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Status} = _components;
+  if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "배포일: 2021-12-20"
+      children: "2024년 06월 27일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        children: "io_user"
-      }), " 를 지정하지 않을 경우 죽는 현상 막음"]
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Changed"
+      }), " XOS 에이전트의 에러 메시지 번호를 내용까지 표시하도록 수정"]
     })]
   });
 }
@@ -88,6 +88,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

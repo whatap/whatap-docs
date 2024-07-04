@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55750],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43507],{
 
-/***/ 8118:
+/***/ 69081:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'xos-1_1_1b',
-	title: 'xos v1.1.1b',
+	id: 'xos-1_1_8b',
+	title: 'xos v1.1.8b',
 	toc_max_heading_level: 2,
+	pagination_next: 'release-notes/db/xos-1_1_8a',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/xos-1_1_1b",
-  "title": "xos v1.1.1b",
-  "description": "배포일: 2021-12-22",
-  "source": "@site/docs/release-notes/db/xos-1.1.1b.mdx",
+  "id": "release-notes/db/xos-1_1_8b",
+  "title": "xos v1.1.8b",
+  "description": "2024년 03월 15일",
+  "source": "@site/docs/release-notes/db/xos-1.1.8b.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/xos-1_1_1b",
-  "permalink": "/whatap-docs/release-notes/db/xos-1_1_1b",
+  "slug": "/release-notes/db/xos-1_1_8b",
+  "permalink": "/whatap-docs/release-notes/db/xos-1_1_8b",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/xos-1.1.1b.mdx",
+  "editUrl": "undefined/docs/release-notes/db/xos-1.1.8b.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "xos-1_1_1b",
-    "title": "xos v1.1.1b",
+    "id": "xos-1_1_8b",
+    "title": "xos v1.1.8b",
     "toc_max_heading_level": 2,
+    "pagination_next": "release-notes/db/xos-1_1_8a",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "xos v1.1.2",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_2"
+    "title": "xos v1.1.8f",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_8f"
   },
   "next": {
-    "title": "xos v1.1.1a",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a"
+    "title": "xos v1.1.8a",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_8a"
   }
 };
 const assets = {
@@ -62,18 +64,18 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    code: "code",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Status} = _components;
+  if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "배포일: 2021-12-22"
+      children: "2024년 03월 15일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        children: "fileview="
-      }), " 에 지정하지 않을 경우에도 0 을 return"]
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " 프로세스 값이 음수로 출력될 경우 로그 수정"]
     })]
   });
 }
@@ -88,6 +90,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

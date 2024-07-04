@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[9485],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[27512],{
 
-/***/ 55328:
+/***/ 76417:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,40 +18,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_7_1',
-	title: 'DBX v1.7.1',
-	pagination_next: 'release-notes/db/dbx-1_7_0',
+	id: 'xos-1_1_1a',
+	title: 'xos v1.1.1a',
+	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_7_1",
-  "title": "DBX v1.7.1",
-  "description": "2024년 03월 28일",
-  "source": "@site/docs/release-notes/db/dbx-1.7.1.mdx",
+  "id": "release-notes/db/xos-1_1_1a",
+  "title": "xos v1.1.1a",
+  "description": "배포일: 2021-12-20",
+  "source": "@site/docs/release-notes/db/xos-1.1.1a.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_7_1",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_1",
+  "slug": "/release-notes/db/xos-1_1_1a",
+  "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.1.mdx",
+  "editUrl": "undefined/docs/release-notes/db/xos-1.1.1a.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_7_1",
-    "title": "DBX v1.7.1",
-    "pagination_next": "release-notes/db/dbx-1_7_0",
+    "id": "xos-1_1_1a",
+    "title": "xos v1.1.1a",
+    "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar"
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "DBX v1.7.2",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_2"
-  },
-  "next": {
-    "title": "DBX v1.7.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_0"
-  }
+  "sidebar": "releaseSidebar"
 };
 const assets = {
 
@@ -59,54 +51,21 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "Postgresql, Oracle",
-  "id": "postgresql-oracle",
-  "level": 2
-}, {
-  "value": "MongoDB",
-  "id": "mongodb",
-  "level": 2
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    h2: "h2",
+    code: "code",
     p: "p",
-    section: "section",
-    strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
-  if (!Status) _missingMdxReference("Status", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 28일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "postgresql-oracle",
-        children: "Postgresql, Oracle"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Changed"
-        }), " Whatap에서 수행하는 쿼리들에 수집 쿼리임을 알 수 있는 주석 추가"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "mongodb",
-        children: "MongoDB"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Fixed"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "DocumentDB"
-        }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "process"
-        }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "replication delay"
-        }), " 처리 버그 수정"]
-      })]
+      children: "배포일: 2021-12-20"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        children: "io_user"
+      }), " 를 지정하지 않을 경우 죽는 현상 막음"]
     })]
   });
 }
@@ -121,9 +80,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

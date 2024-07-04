@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48877],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50543],{
 
-/***/ 45595:
+/***/ 51527:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_7_6',
-	title: 'DBX v1.7.6',
-	pagination_next: 'release-notes/db/dbx-1_7_5',
+	id: 'dbx-1_7_2',
+	title: 'DBX v1.7.2',
+	pagination_next: 'release-notes/db/dbx-1_7_1',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_7_6",
-  "title": "DBX v1.7.6",
-  "description": "2024년 05월 20일",
-  "source": "@site/docs/release-notes/db/dbx-1.7.6.mdx",
+  "id": "release-notes/db/dbx-1_7_2",
+  "title": "DBX v1.7.2",
+  "description": "2024년 03월 29일",
+  "source": "@site/docs/release-notes/db/dbx-1.7.2.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_7_6",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_6",
+  "slug": "/release-notes/db/dbx-1_7_2",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.6.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_7_6",
-    "title": "DBX v1.7.6",
-    "pagination_next": "release-notes/db/dbx-1_7_5",
+    "id": "dbx-1_7_2",
+    "title": "DBX v1.7.2",
+    "pagination_next": "release-notes/db/dbx-1_7_1",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Kubernetes Agent 지난 버전",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
-  },
   "next": {
-    "title": "DBX v1.7.5",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_5"
+    "title": "DBX v1.7.1",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_1"
   }
 };
 const assets = {
@@ -59,21 +55,52 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "MySQL",
+  "id": "mysql",
+  "level": 2
+}, {
+  "value": "MongoDB",
+  "id": "mongodb",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
+    code: "code",
+    h2: "h2",
     p: "p",
+    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 05월 20일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Changed"
-      }), " Autoscale EventPack에 Status On 수정"]
+      children: "2024년 03월 29일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "mysql",
+        children: "MySQL"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          children: "Fixed"
+        }), " Agent info의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "db_loc"
+        }), " 정보 오류 수정 (AWS RDS)"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "mongodb",
+        children: "MongoDB"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          children: "Fixed"
+        }), " MongoDbSize ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "type"
+        }), " 에러 수정"]
+      })]
     })]
   });
 }

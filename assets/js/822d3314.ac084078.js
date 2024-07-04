@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50543],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55750],{
 
-/***/ 51527:
+/***/ 8118:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_7_2',
-	title: 'DBX v1.7.2',
-	pagination_next: 'release-notes/db/dbx-1_7_1',
+	id: 'xos-1_1_1b',
+	title: 'xos v1.1.1b',
+	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_7_2",
-  "title": "DBX v1.7.2",
-  "description": "2024년 03월 29일",
-  "source": "@site/docs/release-notes/db/dbx-1.7.2.mdx",
+  "id": "release-notes/db/xos-1_1_1b",
+  "title": "xos v1.1.1b",
+  "description": "배포일: 2021-12-22",
+  "source": "@site/docs/release-notes/db/xos-1.1.1b.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_7_2",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_2",
+  "slug": "/release-notes/db/xos-1_1_1b",
+  "permalink": "/whatap-docs/release-notes/db/xos-1_1_1b",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.2.mdx",
+  "editUrl": "undefined/docs/release-notes/db/xos-1.1.1b.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_7_2",
-    "title": "DBX v1.7.2",
-    "pagination_next": "release-notes/db/dbx-1_7_1",
+    "id": "xos-1_1_1b",
+    "title": "xos v1.1.1b",
+    "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.7.3",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_3"
+    "title": "xos v1.1.2",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_2"
   },
   "next": {
-    "title": "DBX v1.7.1",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_1"
+    "title": "xos 지난 버전",
+    "permalink": "/whatap-docs/release-notes/db/xos-previous"
   }
 };
 const assets = {
@@ -59,52 +59,21 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "MySQL",
-  "id": "mysql",
-  "level": 2
-}, {
-  "value": "MongoDB",
-  "id": "mongodb",
-  "level": 2
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
     code: "code",
-    h2: "h2",
     p: "p",
-    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
-  if (!Status) _missingMdxReference("Status", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 29일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "mysql",
-        children: "MySQL"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Fixed"
-        }), " Agent info의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "db_loc"
-        }), " 정보 오류 수정 (AWS RDS)"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "mongodb",
-        children: "MongoDB"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Fixed"
-        }), " MongoDbSize ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "type"
-        }), " 에러 수정"]
-      })]
+      children: "배포일: 2021-12-22"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        children: "fileview="
+      }), " 에 지정하지 않을 경우에도 0 을 return"]
     })]
   });
 }
@@ -119,9 +88,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

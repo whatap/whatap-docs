@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[8407],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61609],{
 
-/***/ 59945:
+/***/ 91069:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_6_32',
-	title: 'DBX v1.6.32',
-	pagination_next: 'release-notes/db/dbx-1_6_31',
+	id: 'dbx-1_7_8',
+	title: 'DBX v1.7.8',
+	pagination_next: 'release-notes/db/dbx-1_7_7',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_6_32",
-  "title": "DBX v1.6.32",
-  "description": "2024년 03월 11일",
-  "source": "@site/docs/release-notes/db/dbx-1.6.32.mdx",
+  "id": "release-notes/db/dbx-1_7_8",
+  "title": "DBX v1.7.8",
+  "description": "2024년 06월 21일",
+  "source": "@site/docs/release-notes/db/dbx-1.7.8.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_6_32",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_6_32",
+  "slug": "/release-notes/db/dbx-1_7_8",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_8",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.6.32.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.8.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_6_32",
-    "title": "DBX v1.6.32",
-    "pagination_next": "release-notes/db/dbx-1_6_31",
+    "id": "dbx-1_7_8",
+    "title": "DBX v1.7.8",
+    "pagination_next": "release-notes/db/dbx-1_7_7",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.6.33",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_33"
+    "title": "DBX v1.8.0",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_0"
   },
   "next": {
-    "title": "DBX v1.6.31",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_31"
+    "title": "DBX v1.7.7",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_7"
   }
 };
 const assets = {
@@ -59,39 +59,21 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "PostgreSQL",
-  "id": "postgresql",
-  "level": 2
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    h2: "h2",
     p: "p",
-    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 11일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "postgresql",
-        children: "PostgreSQL"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Changed"
-        }), " 데이터베이스 파라미터 실시간 조회 로직 수정, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "unit"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "start_time"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "uptime"
-        }), " 데이터 추가"]
-      })]
+      children: "2024년 06월 21일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Deprecated"
+      }), " DB Connection 알림 원복 기능 제거"]
     })]
   });
 }

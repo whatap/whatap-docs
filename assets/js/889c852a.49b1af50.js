@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[69600],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48877],{
 
-/***/ 66202:
+/***/ 45595:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_6_35',
-	title: 'DBX v1.6.35',
-	pagination_next: 'release-notes/db/dbx-1_6_33',
+	id: 'dbx-1_7_6',
+	title: 'DBX v1.7.6',
+	pagination_next: 'release-notes/db/dbx-1_7_5',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_6_35",
-  "title": "DBX v1.6.35",
-  "description": "2024년 03월 15일",
-  "source": "@site/docs/release-notes/db/dbx-1.6.35.mdx",
+  "id": "release-notes/db/dbx-1_7_6",
+  "title": "DBX v1.7.6",
+  "description": "2024년 05월 20일",
+  "source": "@site/docs/release-notes/db/dbx-1.7.6.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_6_35",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_6_35",
+  "slug": "/release-notes/db/dbx-1_7_6",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_6",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.6.35.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.6.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_6_35",
-    "title": "DBX v1.6.35",
-    "pagination_next": "release-notes/db/dbx-1_6_33",
+    "id": "dbx-1_7_6",
+    "title": "DBX v1.7.6",
+    "pagination_next": "release-notes/db/dbx-1_7_5",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.7.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_0"
+    "title": "DBX v1.7.7",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_7"
   },
   "next": {
-    "title": "DBX v1.6.33",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_33"
+    "title": "DBX v1.7.5",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_5"
   }
 };
 const assets = {
@@ -59,70 +59,21 @@ const assets = {
 
 
 
-const toc = [{
-  "value": "Postgresql/Oracle/MySQL",
-  "id": "postgresqloraclemysql",
-  "level": 2
-}, {
-  "value": "PostgreSQL",
-  "id": "postgresql",
-  "level": 2
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
-    admonition: "admonition",
-    em: "em",
-    h2: "h2",
     p: "p",
-    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 15일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "postgresqloraclemysql",
-        children: "Postgresql/Oracle/MySQL"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Changed"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "db_agentinfo"
-        }), " 수정: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "dbInstNo"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "db_inst no"
-        }), " 지표를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "db_inst_id"
-        }), " 지표로 통일"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "postgresql",
-        children: "PostgreSQL"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Feature"
-        }), " 에이전트 설치 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
-          children: "setup.bat"
-        }), " 추가"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "setup.bat"
-          }), " 파일을 이용한 빠른 에이전트 설정 방법에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "../../postgresql/install-agent-quick-setup",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        })
-      })]
+      children: "2024년 05월 20일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Changed"
+      }), " Autoscale EventPack에 Status On 수정"]
     })]
   });
 }

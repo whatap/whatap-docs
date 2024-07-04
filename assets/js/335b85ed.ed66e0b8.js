@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43507],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17666],{
 
-/***/ 69081:
+/***/ 99010:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'xos-1_1_8b',
-	title: 'xos v1.1.8b',
-	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/db/xos-1_1_8a',
+	id: 'dbx-1_8_0',
+	title: 'DBX v1.8.0',
+	pagination_next: 'release-notes/db/dbx-1_7_8',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/xos-1_1_8b",
-  "title": "xos v1.1.8b",
-  "description": "2024년 03월 15일",
-  "source": "@site/docs/release-notes/db/xos-1.1.8b.mdx",
+  "id": "release-notes/db/dbx-1_8_0",
+  "title": "DBX v1.8.0",
+  "description": "2024년 06월 26일",
+  "source": "@site/docs/release-notes/db/dbx-1.8.0.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/xos-1_1_8b",
-  "permalink": "/whatap-docs/release-notes/db/xos-1_1_8b",
+  "slug": "/release-notes/db/dbx-1_8_0",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_8_0",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/xos-1.1.8b.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.8.0.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "xos-1_1_8b",
-    "title": "xos v1.1.8b",
-    "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/db/xos-1_1_8a",
+    "id": "dbx-1_8_0",
+    "title": "DBX v1.8.0",
+    "pagination_next": "release-notes/db/dbx-1_7_8",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX 지난 버전",
-    "permalink": "/whatap-docs/release-notes/db/dbx-previous"
+    "title": "DBX v1.8.1",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_1"
   },
   "next": {
-    "title": "xos v1.1.8a",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_8a"
+    "title": "DBX v1.7.8",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_8"
   }
 };
 const assets = {
@@ -61,21 +59,46 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "MySQL",
+  "id": "mysql",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
+    admonition: "admonition",
+    em: "em",
+    h2: "h2",
     p: "p",
+    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 15일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " 프로세스 값이 음수로 출력될 경우 로그 수정"]
+      children: "2024년 06월 26일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "mysql",
+        children: "MySQL"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          children: "Feature"
+        }), " 빠른 에이전트 설정을 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "setup.sh"
+        }), " 추가"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["빠른 에이전트 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "../../mysql/install-agent-quick-setup",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
+      })]
     })]
   });
 }

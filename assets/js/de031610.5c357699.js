@@ -26,7 +26,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/db/xos-previous",
   "title": "xos 지난 버전",
-  "description": "* xos v1.1.1",
+  "description": "* xos v1.1.1a",
   "source": "@site/docs/release-notes/db/xos-previous.mdx",
   "sourceDirName": "release-notes/db",
   "slug": "/release-notes/db/xos-previous",
@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "xos v1.1.1a",
-    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1a"
+    "title": "xos v1.1.1b",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_1b"
   },
   "next": {
     "title": "URL",
@@ -129,6 +129,13 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "xos-1_1_1a",
+            children: "xos v1.1.1a"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
             href: "xos-1_1_1",
