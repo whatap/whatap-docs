@@ -1117,6 +1117,7 @@ const sidebars = {
                 'dotnet/trs-view',
                 'dotnet/trs-profile',
                 'dotnet/active-transactions',
+                'dotnet/trs-multi-trace',
                 'dotnet/collect-stacks',
               ]
             },
@@ -3479,17 +3480,18 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_8',
+                id: 'release-notes/dotnet/dotnet-2_2_9',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_8',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_2_9',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
                 'release-notes/dotnet/dotnet-2_2_6',
                 'release-notes/dotnet/dotnet-2_2_5',
@@ -3498,7 +3500,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-2_2_0',
-                'release-notes/dotnet/dotnet-2_1_9',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
