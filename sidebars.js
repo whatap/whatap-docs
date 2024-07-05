@@ -3522,6 +3522,19 @@ const sidebars = {
               id: 'best-practice-guides/set-db-metric-warning-notice'
             }
           ]
+        },
+        {
+          type: 'category',
+          label: '더 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              label: '인스턴스 성능 관리 활용',
+              id: 'best-practice-guides/about-instance-performance-analysis'
+            },
+          ]
         }
       ]
     }
