@@ -3,7 +3,7 @@ const path = require('path');
 const readline = require('readline');
 const jsonFile = require('./src/components/ui-text/whatap-locale.json');
 
-const mdxFilepath = path.resolve(__dirname, './docs/browser/ajax-dashboard.mdx');
+const mdxFilepath = path.resolve(__dirname, './docs/dotnet/quick-start.mdx');
 let mdxContent = fs.readFileSync(mdxFilepath, 'utf-8');
 
 function getServiceIdByKeyword(keyword) {
