@@ -441,6 +441,18 @@ function colsToJson(data){
     "ko": "설치 파일 실행"
   }
 
+  rd["side_integratedMetricsBoard"] = {
+    "en": "Integrated Metrics Dashboard",
+    "ja": "統合メトリックスダッシューボード",
+    "ko": "통합 메트릭스 보드"
+  }
+
+  rd["side_integratedDashboard"] = {
+    "en": "Integrated Dashboard",
+    "ja": "統合ダッシューボード",
+    "ko": "통합 대시보드"
+  }
+
   rd["daily_app_stat"].en = "Daily APP. Status";
   rd["daily_app_stat"].ja = "日別APP現況"
 
