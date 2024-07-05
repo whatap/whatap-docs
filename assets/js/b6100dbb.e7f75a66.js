@@ -224,8 +224,8 @@ const metadata = {
   },
   "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/dotnet/active-transactions"
+    "title": "멀티 트랜잭션",
+    "permalink": "/whatap-docs/dotnet/trs-multi-trace"
   },
   "next": {
     "title": "토폴로지",

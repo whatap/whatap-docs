@@ -427,8 +427,8 @@ const metadata = {
     "permalink": "/whatap-docs/dotnet/trs-profile"
   },
   "next": {
-    "title": "트랜잭션 스텝 수집 방식",
-    "permalink": "/whatap-docs/dotnet/collect-stacks"
+    "title": "멀티 트랜잭션",
+    "permalink": "/whatap-docs/dotnet/trs-multi-trace"
   }
 };
 const assets = {

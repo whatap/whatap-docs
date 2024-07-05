@@ -26,7 +26,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/dotnet/dotnet-previous",
   "title": ".NET Agent 지난 버전",
-  "description": "* .NET Agent v2.1.8",
+  "description": "* .NET Agent v2.1.9",
   "source": "@site/docs/release-notes/dotnet/dotnet-previous.mdx",
   "sourceDirName": "release-notes/dotnet",
   "slug": "/release-notes/dotnet/dotnet-previous",
@@ -43,8 +43,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent v2.1.9",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_9"
+    "title": ".NET Agent v2.2.0",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_0"
   },
   "next": {
     "title": "Go Agent v0.4.0",
@@ -69,6 +69,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "dotnet-2_1_",
+          children: ".NET Agent v2.1.9"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "dotnet-2_1_8",

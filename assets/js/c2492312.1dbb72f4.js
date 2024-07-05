@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76370],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49101],{
 
 /***/ 97304:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -517,7 +517,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 68131:
+/***/ 66689:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -539,31 +539,30 @@ const frontMatter = {
 	title: '멀티 트랜잭션',
 	description: '멀티 트랜잭션 추적을 안내합니다.',
 	tags: [
-		'Java',
+		'.NET',
 		'트랜잭션',
 		'멀티 트랜잭션',
 		'UI',
-		'애플리케이션',
-		'애플리케이션 모니터링'
+		'애플리케이션'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/trs-multi-trace",
+  "id": "dotnet/trs-multi-trace",
   "title": "멀티 트랜잭션",
   "description": "멀티 트랜잭션 추적을 안내합니다.",
-  "source": "@site/docs/java/trs-multi-trace.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/trs-multi-trace",
-  "permalink": "/whatap-docs/java/trs-multi-trace",
+  "source": "@site/docs/dotnet/trs-multi-trace.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/trs-multi-trace",
+  "permalink": "/whatap-docs/dotnet/trs-multi-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/trs-multi-trace.mdx",
+  "editUrl": "undefined/docs/dotnet/trs-multi-trace.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "inline": true,
@@ -584,11 +583,6 @@ const metadata = {
       "inline": true,
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
-    },
-    {
-      "inline": true,
-      "label": "애플리케이션 모니터링",
-      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
@@ -597,22 +591,21 @@ const metadata = {
     "title": "멀티 트랜잭션",
     "description": "멀티 트랜잭션 추적을 안내합니다.",
     "tags": [
-      "Java",
+      ".NET",
       "트랜잭션",
       "멀티 트랜잭션",
       "UI",
-      "애플리케이션",
-      "애플리케이션 모니터링"
+      "애플리케이션"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/java/active-transactions"
+    "permalink": "/whatap-docs/dotnet/active-transactions"
   },
   "next": {
-    "title": "트랜잭션 엔드포인트 설정",
-    "permalink": "/whatap-docs/java/trs-endpoint-setting"
+    "title": "트랜잭션 스텝 수집 방식",
+    "permalink": "/whatap-docs/dotnet/collect-stacks"
   }
 };
 const assets = {
