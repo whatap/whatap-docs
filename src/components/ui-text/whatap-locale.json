@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -56393,10 +56393,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IP形式に合わない。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56485,7 +56485,7 @@
   },
   "NTC08193": {
     "en": "This is the column name ({column}) used in the default column. Please enter a different name.",
-    "ja": "基本列で使用される列名（{column}）。別の名前を入力してください。",
+    "ja": "デフォルト列で使用される列名（{column}）。別の名前を入力してください。",
     "ko": "기본 컬럼에서 사용하는 컬럼 이름({column})입니다. 다른 이름을 입력하세요.",
     "zh": "This is the column name ({column}) used in the default column. Please enter a different name.",
     "service_id": "NTC08193"
@@ -56538,6 +56538,41 @@
     "ko": "특수 문자를 사용할 수 없습니다.",
     "zh": "Special characters cannot be used.",
     "service_id": "TLT08200"
+  },
+  "LNK08201": {
+    "en": "Go to log menu",
+    "ja": "ログメニューの移動",
+    "ko": "로그 메뉴 이동",
+    "zh": "Go to log menu",
+    "service_id": "LNK08201"
+  },
+  "TLT08202": {
+    "en": "Empty strings are not allowed.",
+    "ja": "空の文字列は使用できません。",
+    "ko": "빈 문자열을 사용할 수 없습니다.",
+    "zh": "Empty strings are not allowed.",
+    "service_id": "TLT08202"
+  },
+  "TTL08203": {
+    "en": "{platform} New release",
+    "ja": "{platform}新規リリース",
+    "ko": "{platform} 신규 출시",
+    "zh": "{platform} New release",
+    "service_id": "TTL08203"
+  },
+  "DSC08204": {
+    "en": "Oracle Pro has been released. Oracle Pro enables precise analysis by collecting performance information dozens of times per second without putting any load on the server.",
+    "ja": "Oracle Proがリリースされました。 Oracle Proは、サーバーに負荷をかけずにパフォーマンス情報を1秒に数十回まで収集し、正確な分析を可能にします。",
+    "ko": "Oracle Pro가 출시되었습니다. Oracle Pro는 서버에 부하없이 성능정보를 1초에 수십번까지 수집하여 정밀한 분석이 가능합니다.",
+    "zh": "Oracle Pro has been released. Oracle Pro enables precise analysis by collecting performance information dozens of times per second without putting any load on the server.",
+    "service_id": "DSC08204"
+  },
+  "DSC08205": {
+    "en": "Please contact sales@whatap.io.",
+    "ja": "sales@whatap.io にご連絡ください。",
+    "ko": "sales@whatap.io 로 연락주시기 바랍니다.",
+    "zh": "Please contact sales@whatap.io.",
+    "service_id": "DSC08205"
   },
   "": {
     "en": "#VALUE!",
@@ -56836,6 +56871,16 @@
     "en": "Run the WhaTap Installer",
     "ja": "インストールファイルの実行",
     "ko": "설치 파일 실행"
+  },
+  "side_integratedMetricsBoard": {
+    "en": "Integrated Metrics Dashboard",
+    "ja": "統合メトリックスダッシューボード",
+    "ko": "통합 메트릭스 보드"
+  },
+  "side_integratedDashboard": {
+    "en": "Integrated Dashboard",
+    "ja": "統合ダッシューボード",
+    "ko": "통합 대시보드"
   },
   "side_common": {
     "en": "Common",
