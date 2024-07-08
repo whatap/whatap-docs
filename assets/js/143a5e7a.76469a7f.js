@@ -34,7 +34,6 @@ function _createMdxContent(props) {
     h2: "h2",
     p: "p",
     section: "section",
-    strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname} = _components;
@@ -61,10 +60,9 @@ function _createMdxContent(props) {
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["모니터링 대상 서버에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: "whatap.conf"
-      }), " 파일을 직접 수정하지 않고 에이전트 설정 옵션을 추가하거나 수정, 삭제할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "설정 파일 다운로드"
-        })
+      }), " 파일을 직접 수정하지 않고 에이전트 설정 옵션을 추가하거나 수정, 삭제할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "BTN08153",
+        className: "uitext"
       }), " 버튼 클릭 시 선택한 에이전트의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: "whatap.conf"
       }), " 파일을 다운로드합니다."]
@@ -330,12 +328,10 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     code: "code",
-    em: "em",
     h2: "h2",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -360,10 +356,9 @@ function _createMdxContent(props) {
       img: "ipa-env-var.png",
       desc: "환경 변수"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["애플리케이션 실행과 관련한 환경 변수 정보를 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "환경 변수"
-        })
+      children: ["애플리케이션 실행과 관련한 환경 변수 정보를 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "boot_env",
+        className: "uitext"
       }), " 메뉴는 조회 시점의 환경 변수 정보를 수집해 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         children: "System.getProperty()"
       }), "를 사용해 매개변수로 전달된 키의 값을 조회합니다. 주요 확인 사항은 다음과 같습니다."]
@@ -450,12 +445,10 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     code: "code",
-    em: "em",
     h2: "h2",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -480,10 +473,9 @@ function _createMdxContent(props) {
       img: "ipa-run-env-var.png",
       desc: "실행 환경 변수"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["에이전트 실행과 관련한 환경 변수를 조회할 수 있습니다. 환경 변수 중 중요한 정보 또는 애플리케이션의 상태 정보를 와탭 서버에 저장해 에이전트가 다운되더라도 조회가 가능합니다. 에이전트 버전 및 설치 경로, 이름, IP 주소 등을 확인할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "CSV 다운로드"
-        })
+      children: ["에이전트 실행과 관련한 환경 변수를 조회할 수 있습니다. 환경 변수 중 중요한 정보 또는 애플리케이션의 상태 정보를 와탭 서버에 저장해 에이전트가 다운되더라도 조회가 가능합니다. 에이전트 버전 및 설치 경로, 이름, IP 주소 등을 확인할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "sms_summary_download_csv",
+        className: "uitext"
       }), " 버튼 클릭 시 환경 변수 정보를 다운로드할 수 있습니다. 주요 확인 사항은 다음과 같습니다."]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -632,10 +624,9 @@ function _createMdxContent(props) {
       img: "ipa-heap-histogram-java.png",
       desc: "힙 히스토그램"
     }), (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["JVM(자바 가상 머신)의 메모리에 올라가 있는 Heap 점유 객체 현황(힙 메모리상의 객체별 사이즈)을 조회할 수 있습니다. 즉 객체의 순수 크기를 조회합니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "건수"
-        })
+      children: ["JVM(자바 가상 머신)의 메모리에 올라가 있는 Heap 점유 객체 현황(힙 메모리상의 객체별 사이즈)을 조회할 수 있습니다. 즉 객체의 순수 크기를 조회합니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "count",
+        className: "uitext"
       }), " 컬럼을 통해 주요 객체들의 개수 확인이 용이합니다."]
     }), (0,jsx_runtime.jsxs)(_components.admonition, {
       type: "note",
@@ -722,7 +713,7 @@ const _import_instance_performance_loaded_class_contentTitle = (/* unused pure e
 
 
 
-/****로딩된 클래스*** 메뉴는 애플리케이션 성능 최적화 및 메모리 관리와 클래스 종속성 문제 등의 해결을 도울 수 있습니다.*/
+/*<Cmdname sid="side_loadedClasses" className="uitext" /> 메뉴는 애플리케이션 성능 최적화 및 메모리 관리와 클래스 종속성 문제 등의 해결을 도울 수 있습니다.*/
 
 
 const _import_instance_performance_loaded_class_toc = [{
@@ -765,47 +756,40 @@ function _import_instance_performance_loaded_class_createMdxContent(props) {
       img: "ipa-loaded-class-java.png",
       desc: "로딩된 클래스"
     }), (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Java 애플리케이션에 로딩된 클래스 정보를 확인할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "로딩된 클래스"
-        })
+      children: ["Java 애플리케이션에 로딩된 클래스 정보를 확인할 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_loadedClasses",
+        className: "uitext"
       }), " 메뉴를 통해 애플리케이션에서 로딩된 클래스 목록과 관련 상세 데이터를 조회하고, 중단없이 클래스의 동작을 변경할 수 있습니다."]
     }), (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "클래스 상세"
-            })
-          }), ": ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "조회"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL08085",
+            className: "uitext"
+          }), ": ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "bsm_button_show",
+            className: "uitext"
           }), " 컬럼에서 ", (0,jsx_runtime.jsx)(_components.img, {
             alt: "상세 보기 아이콘",
             src: (__webpack_require__(1353)/* ["default"] */ .A) + "",
             width: "24",
             height: "24"
-          }), " 아이콘 클릭 시 ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "클래스 상세"
-            })
-          }), "를 확인할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "클래스 상세"
-            })
+          }), " 아이콘 클릭 시 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL08085",
+            className: "uitext"
+          }), "를 확인할 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL08085",
+            className: "uitext"
           }), "는 클래스 내 메소드 및 상속 관계 정보를 제공합니다."]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "재정의"
-            })
-          }), ": ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "재정의"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "redefine",
+            className: "uitext"
+          }), ": ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "redefine",
+            className: "uitext"
           }), " 컬럼에서 ", (0,jsx_runtime.jsx)(_components.img, {
             alt: "수정 아이콘",
             src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
@@ -815,30 +799,26 @@ function _import_instance_performance_loaded_class_createMdxContent(props) {
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "리소스"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "resource",
+            className: "uitext"
           }), ": 해당 클래스가 물리적으로 어느 파일에서 로딩되었는지 확인할 수 있습니다. 애플리케이션의 복잡한 다계층 구조 특성상 클래스가 정확히 어느 ", (0,jsx_runtime.jsx)(_components.em, {
             children: "jar"
-          }), " 파일에서 로딩되었는지 파악하는 ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "리소스"
-            })
+          }), " 파일에서 로딩되었는지 파악하는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "resource",
+            className: "uitext"
           }), " 정보 확인이 필요합니다."]
         }), "\n"]
       }), "\n"]
     }), (0,jsx_runtime.jsx)(_components.admonition, {
       type: "tip",
       children: (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "재정의"
-          })
-        }), " 기능과 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "리소스"
-          })
+        children: [(0,jsx_runtime.jsx)(Cmdname, {
+          sid: "redefine",
+          className: "uitext"
+        }), " 기능과 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "resource",
+          className: "uitext"
         }), " 정보 확인 활용에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
           href: "../best-practice-guides/about-instance-performance-analysis#advanced-use-loaded-classes",
           children: "다음 문서"
@@ -915,7 +895,6 @@ function _import_instance_performance_library_version_createMdxContent(props) {
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
@@ -947,22 +926,19 @@ function _import_instance_performance_library_version_createMdxContent(props) {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["컴포넌트 목록 정보: 해당 ", (0,jsx_runtime.jsx)(_components.em, {
             children: "jar"
-          }), " 파일의 ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "이름"
-            })
-          }), " 및 버전 정보를 ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "상세"
-            })
+          }), " 파일의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "name",
+            className: "uitext"
+          }), " 및 버전 정보를 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "detail",
+            className: "uitext"
           }), "에서 제공합니다."]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "CSV 다운로드"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "sms_summary_download_csv",
+            className: "uitext"
           }), ": 다운로드 버튼을 클릭해 버전 정보를 다운로드할 수 있습니다."]
         }), "\n"]
       }), "\n"]
@@ -994,7 +970,7 @@ const _import_instance_performance_thread_dump_contentTitle = (/* unused pure ex
 
 
 
-/*이를 통해 Java 애플리케이션의 성능 문제를 진단하는데 이용할 수 있습니다. * ***상태***: 해당 스레드의 현재 상태를 확인할 수 있습니다. 또한 Java 애플리케이션 성능 문제를 진단하는데 활용할 수 있습니다.*/
+/*이를 통해 Java 애플리케이션의 성능 문제를 진단하는데 이용할 수 있습니다. * <Cmdname sid="status" className="uitext" />: 해당 스레드의 현재 상태를 확인할 수 있습니다. 또한 Java 애플리케이션 성능 문제를 진단하는데 활용할 수 있습니다.*/
 /*<ScrollToLink anchor='thread-details' />*/
 
 
@@ -1020,7 +996,6 @@ function _import_instance_performance_thread_dump_createMdxContent(props) {
     a: "a",
     admonition: "admonition",
     code: "code",
-    em: "em",
     h2: "h2",
     h3: "h3",
     h4: "h4",
@@ -1062,18 +1037,16 @@ function _import_instance_performance_thread_dump_createMdxContent(props) {
         img: "ipa-thread-list-java.png",
         desc: "스레드 목록/덤프"
       }), (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["Java 프로세스의 모든 스레드 상태에 대한 스냅샷 정보를 제공합니다. ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "스레드 목록/덤프"
-          })
+        children: ["Java 프로세스의 모든 스레드 상태에 대한 스냅샷 정보를 제공합니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_threadList",
+          className: "uitext"
         }), "는 CPU 최적화 작업에 핵심적인 메뉴입니다. 프로세스가 아닌 스레드 단위로 상태를 확인함으로써 CPU 자원을 더욱 세밀하게 관리할 수 있습니다. 예를 들어 조회 시점에 CPU를 가장 많이 사용하고 있는 스레드 특정 후 해당 스레드의 스택 정보를 확인해 성능 문제를 식별할 수 있습니다."]
       }), (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "스레드 덤프"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "thread_dump",
+              className: "uitext"
             }), ": 상단 오른쪽의 ", (0,jsx_runtime.jsx)("code", {
               class: "my",
               children: "스레드 덤프"
@@ -1086,14 +1059,12 @@ function _import_instance_performance_thread_dump_createMdxContent(props) {
               src: (__webpack_require__(36455)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
-            }), " 아이콘 선택 시 개별 스레드 덤프 정보를 확인할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "스택"
-              })
-            }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "Stack 추적"
-              })
+            }), " 아이콘 선택 시 개별 스레드 덤프 정보를 확인할 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "stack",
+              className: "uitext"
+            }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "stack_trace",
+              className: "uitext"
             }), "에서 스레드 상태와 실행 경로에 대한 세부 정보 및 스택 트레이스를 조회할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.img, {
               alt: "새로고침 아이콘",
               src: (__webpack_require__(99216)/* ["default"] */ .A) + "",
@@ -1106,18 +1077,16 @@ function _import_instance_performance_thread_dump_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "스레드 CPU 시간"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "thread_cpu_time",
+              className: "uitext"
             }), ": 해당 스레드가 CPU를 점유한 누적 시간을 의미합니다. 밀리초 단위 시간을 사용합니다."]
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "증가량"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "TTL08126",
+              className: "uitext"
             }), ": 스레드 목록 상단에서 ", (0,jsx_runtime.jsx)(_components.img, {
               alt: "새로고침 아이콘",
               src: (__webpack_require__(99216)/* ["default"] */ .A) + "",
@@ -1129,14 +1098,12 @@ function _import_instance_performance_thread_dump_createMdxContent(props) {
       }), (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
         children: (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "스레드 CPU 시간"
-            })
-          }), "은 해당 스레드가 CPU를 점유한 총 누적 시간이기 때문에 조회 시점에 가장 많이 CPU를 사용하고 있는 스레드를 특정하기 위해서는 ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "증가량"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "thread_cpu_time",
+            className: "uitext"
+          }), "은 해당 스레드가 CPU를 점유한 총 누적 시간이기 때문에 조회 시점에 가장 많이 CPU를 사용하고 있는 스레드를 특정하기 위해서는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL08126",
+            className: "uitext"
           }), " 값 확인이 필요합니다. 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
             href: "../best-practice-guides/about-instance-performance-analysis#advanced-use-thread-list-dump",
             children: "다음 문서"
@@ -1509,7 +1476,6 @@ const _import_instance_performance_open_socket_toc = [{
 function _import_instance_performance_open_socket_createMdxContent(props) {
   const _components = {
     admonition: "admonition",
-    em: "em",
     h2: "h2",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
@@ -1543,42 +1509,35 @@ function _import_instance_performance_open_socket_createMdxContent(props) {
     }), (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "건수"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "count",
+            className: "uitext"
           }), ": 외부 시스템에 대한 연결 시도 횟수를 의미합니다."]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "스택"
-            })
-          }), ": ", (0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "스택 확보"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "stack",
+            className: "uitext"
+          }), ": ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "get_stack",
+            className: "uitext"
           }), "를 선택하여 다음 연결 시 확보한 스택을 조회 및 삭제할 수 있습니다."]
         }), "\n"]
       }), "\n"]
     }), (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "건수"
-        })
-      }), " 기준으로 정렬 후 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "호스트"
-        })
-      }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "포트"
-        })
-      }), "를 확인하여 어떤 서비스 또는 시스템과 연결이 많은지 확인할 수 있습니다. 이후 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "스택"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "count",
+        className: "uitext"
+      }), " 기준으로 정렬 후 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "host",
+        className: "uitext"
+      }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "port",
+        className: "uitext"
+      }), "를 확인하여 어떤 서비스 또는 시스템과 연결이 많은지 확인할 수 있습니다. 이후 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "stack",
+        className: "uitext"
       }), "을 확보해 상세 내용을 조회해 보세요."]
     }), (0,jsx_runtime.jsxs)(_components.admonition, {
       type: "note",
@@ -1587,22 +1546,18 @@ function _import_instance_performance_open_socket_createMdxContent(props) {
           children: "데이터베이스와 커넥션 풀"
         })
       }), (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["예를 들어 3306 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "포트"
-          })
-        }), "의 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "건수"
-          })
-        }), "가 증가 시 커넥션 풀을 사용하지 않거나 또는 커넥션 풀을 빈번하게 끊고 다시 만드는 등 MySQL의 커넥션 관리가 올바르게 이루어지지 않는 상황일 가능성이 있습니다. 해당 3306 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "포트"
-          })
-        }), "가 어떤 코드 경로에서 사용되고 있는지 파악하기 위해 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "스택"
-          })
+        children: ["예를 들어 3306 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "port",
+          className: "uitext"
+        }), "의 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "count",
+          className: "uitext"
+        }), "가 증가 시 커넥션 풀을 사용하지 않거나 또는 커넥션 풀을 빈번하게 끊고 다시 만드는 등 MySQL의 커넥션 관리가 올바르게 이루어지지 않는 상황일 가능성이 있습니다. 해당 3306 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "port",
+          className: "uitext"
+        }), "가 어떤 코드 경로에서 사용되고 있는지 파악하기 위해 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "stack",
+          className: "uitext"
         }), "을 확보하여 추적할 수 있습니다."]
       })]
     })]
@@ -1645,13 +1600,11 @@ function _import_instance_performance_method_stat_createMdxContent(props) {
     admonition: "admonition",
     blockquote: "blockquote",
     code: "code",
-    em: "em",
     h2: "h2",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
@@ -1675,40 +1628,34 @@ function _import_instance_performance_method_stat_createMdxContent(props) {
     }), (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "새로고침"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "refresh",
+            className: "uitext"
           }), ": 데이터를 재호출합니다."]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "리셋"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "reset",
+            className: "uitext"
           }), ": 등록된 메소드 통계 데이터를 초기화합니다."]
         }), "\n"]
       }), "\n"]
     }), (0,jsx_runtime.jsxs)(_components.admonition, {
       type: "note",
       children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "메소드 성능 상태"
-          })
-        }), " 메뉴를 사용하려면 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "에이전트 설정"
-          })
-        }), " 메뉴에서 다음 사용자 정의 옵션을 추가하세요. 그리고 재기동 또는 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "로딩된 클래스"
-          })
-        }), " 메뉴에서 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "재정의"
-          })
+        children: [(0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_methodStat",
+          className: "uitext"
+        }), " 메뉴를 사용하려면 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "agent_configuration",
+          className: "uitext"
+        }), " 메뉴에서 다음 사용자 정의 옵션을 추가하세요. 그리고 재기동 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_loadedClasses",
+          className: "uitext"
+        }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "redefine",
+          className: "uitext"
         }), "하세요."]
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -1860,20 +1807,18 @@ function _import_instance_performance_system_gc_createMdxContent(props) {
     }), (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.code, {
         children: "System.gc()"
-      }), "를 호출해 JVM(자바 가상 머신)의 Heap 영역에서 동적으로 할당했던 메모리 중 필요없게 된 메모리 객체(garbage)를 모아 제거할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "GC 실행"
-        })
+      }), "를 호출해 JVM(자바 가상 머신)의 Heap 영역에서 동적으로 할당했던 메모리 중 필요없게 된 메모리 객체(garbage)를 모아 제거할 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "BTN07740",
+        className: "uitext"
       }), " 버튼을 선택하면 GC 프로세스를 실행하게 되며, 실행 전과 실행 후의 메모리 용량을 확인할 수 있습니다."]
     }), (0,jsx_runtime.jsxs)(_components.admonition, {
       type: "note",
       children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.code, {
           children: "-XX:+DisableExplicitGC"
-        }), "와 같이 명시적인 GC 요청을 비활성화하는 옵션이 설정된 경우 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "시스템 GC"
-          })
+        }), "와 같이 명시적인 GC 요청을 비활성화하는 옵션이 설정된 경우 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_systemGarbageCollection",
+          className: "uitext"
         }), "가 동작하지 않습니다."]
       })]
     }), (0,jsx_runtime.jsxs)(_components.admonition, {

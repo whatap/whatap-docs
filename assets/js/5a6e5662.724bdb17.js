@@ -107,7 +107,7 @@ const assets = {
 
 };
 
-/*예를 들어 새로운 서비스 패턴 지정으로 추가적인 트랜잭션 시작점을 설정하여 응답 시간을 측정하는 등 트레이스 및 후킹과 관련된 와탭 설정 변경 시 해당 클래스를 목록에서 찾아 ![수정 아이콘](/img/ico-edit.svg) ***재정의***를 클릭하세요.*/
+/*예를 들어 새로운 서비스 패턴 지정으로 추가적인 트랜잭션 시작점을 설정하여 응답 시간을 측정하는 등 트레이스 및 후킹과 관련된 와탭 설정 변경 시 해당 클래스를 목록에서 찾아 ![수정 아이콘](/img/ico-edit.svg) <Cmdname sid="redefine" className="uitext" />를 클릭하세요.*/
 /*해당 기능을 선택 해 재정의
 
 재정의 기능은 redefine 함수
@@ -131,7 +131,7 @@ const assets = {
 /*
 클래스가 어떤 *jar* 파일에서 과도하게 로딩되는지 확인하여 성능을 최적화할 수 있습니다.
 클래스 로딩 시 성능 문제가 발생하는 경우 어떤 *jar* 파일에서 클래스가 과도하게 로딩되고 있는지 여부를 파악해 성능을 관리할 수 있습니다.*/
-/*자바 애플리케이션의 다계층 구조 특성상 ***리소스*** 정보 확인이 필요합니다.*/
+/*자바 애플리케이션의 다계층 구조 특성상 <Cmdname sid="resource" className="uitext" /> 정보 확인이 필요합니다.*/
 /*스레드 목록을 보고 하는 중요한 행위-> 스레드 cpu 누적 시간 보여줌 -> 시계열 정보 확인 가능하다는 얘기를 추가하기*/
 /*:::note
 
@@ -153,11 +153,11 @@ const assets = {
 
 ![스레드 목록/덤프 델타값](/img/best-p/about-instance-thread-list-dump2.png)*/
 /*## 소켓 오픈 개수 {#advanced-use-opened-socket-count}*/
-/*이때 가장 먼저 확인하는 것은 식별이 용이한 힙 메모리입니다. 힙 메모리가 가득 찬 경우 JVM이 GC를 빈번히 실행해 CPU 사용량이 급증할 수 있습니다. ~~특히 Full GC 발생 시 애플리케이션이 일시적으로 멈추며 CPU 사용량이 크게 상승합니다. 예를 들어 애플리케이션에서 객체가 적절히 해제되지 않고 메모리를 점유하는 메모리 누수가 발생한 경우 힙 메모리가 부족할 수 있으며 이때 메모리를 회수하기 위해 JVM이 GC를 반복적으로 실행하여 CPU 사용률이 급격히 증가하게 됩니다.~~ 이 경우 ***애플리케이션 대시보드***의 ***힙 메모리*** 그래프를 통해 쉽게 확인할 수 있습니다.
+/*이때 가장 먼저 확인하는 것은 식별이 용이한 힙 메모리입니다. 힙 메모리가 가득 찬 경우 JVM이 GC를 빈번히 실행해 CPU 사용량이 급증할 수 있습니다. ~~특히 Full GC 발생 시 애플리케이션이 일시적으로 멈추며 CPU 사용량이 크게 상승합니다. 예를 들어 애플리케이션에서 객체가 적절히 해제되지 않고 메모리를 점유하는 메모리 누수가 발생한 경우 힙 메모리가 부족할 수 있으며 이때 메모리를 회수하기 위해 JVM이 GC를 반복적으로 실행하여 CPU 사용률이 급격히 증가하게 됩니다.~~ 이 경우 <Cmdname sid="application_dashboard" className="uitext" />의 <Cmdname sid="AA010" className="uitext" /> 그래프를 통해 쉽게 확인할 수 있습니다.
 
-두 번째는 실제 요청이 많은 것으로 애플리케이션이 많은 수의 클라이언트 요청을 처리해 CPU 사용량이 높아진 경우입니다. 각 요청은 자바 스레드를 생성해 처리되기에 CPU가 많은 작업을 수행하게 됩니다. ~~쇼핑몰 사이트의 대규모 할인 이벤트 등으로 웹 서퍼 트래픽이 급증한 경우를 예로 들 수 있습니다. 많은 사용자가 웹 페이지를 방문해 서버가 다수의 HTTP 요청을 처리하기 위해 마찬가지로 많은 스레드를 생성해 CPU 사용률이 크게 상승하게 됩니다.~~ 이 경우 ***애플리케이션 대시보드***에서 TPS 관련 지표를 통해 확인할 수 있습니다.
+두 번째는 실제 요청이 많은 것으로 애플리케이션이 많은 수의 클라이언트 요청을 처리해 CPU 사용량이 높아진 경우입니다. 각 요청은 자바 스레드를 생성해 처리되기에 CPU가 많은 작업을 수행하게 됩니다. ~~쇼핑몰 사이트의 대규모 할인 이벤트 등으로 웹 서퍼 트래픽이 급증한 경우를 예로 들 수 있습니다. 많은 사용자가 웹 페이지를 방문해 서버가 다수의 HTTP 요청을 처리하기 위해 마찬가지로 많은 스레드를 생성해 CPU 사용률이 크게 상승하게 됩니다.~~ 이 경우 <Cmdname sid="application_dashboard" className="uitext" />에서 TPS 관련 지표를 통해 확인할 수 있습니다.
 
-세 번째는 잘못된 코드 로직으로 문제가 발생한 경우입니다. 애플리케이션 코드에 비효율적인 알고리즘이나 무한 루프 등이 포함되어 있을 경우 CPU 사용률이 비정상적으로 높아질 수 있습니다. 이 경우 ***스레드 목록/덤프*** 메뉴를 통해 CPU 사용량이 높은 스레드를 특정 후 해당 스레드 덤프를 확인해 문제가 되는 코드를 확인할 수 있습니다.*/
+세 번째는 잘못된 코드 로직으로 문제가 발생한 경우입니다. 애플리케이션 코드에 비효율적인 알고리즘이나 무한 루프 등이 포함되어 있을 경우 CPU 사용률이 비정상적으로 높아질 수 있습니다. 이 경우 <Cmdname sid="side_threadList" className="uitext" /> 메뉴를 통해 CPU 사용량이 높은 스레드를 특정 후 해당 스레드 덤프를 확인해 문제가 되는 코드를 확인할 수 있습니다.*/
 
 
 const toc = [{
@@ -200,14 +200,12 @@ function _createMdxContent(props) {
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "인스턴스 성능 관리"
-        })
-      }), " 메뉴는 애플리케이션의 환경을 확인하고 성능을 관리하는데에 유용한 기능을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "인스턴스 성능 관리"
-        })
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_agentsConfiguration",
+        className: "uitext"
+      }), " 메뉴는 애플리케이션의 환경을 확인하고 성능을 관리하는데에 유용한 기능을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_agentsConfiguration",
+        className: "uitext"
       }), "에서 자주 사용하는 주요 메뉴 상세 및 활용 예시를 다음과 같이 안내합니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -223,14 +221,12 @@ function _createMdxContent(props) {
           className: "uitext"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로딩된 클래스"
-          })
-        }), " 메뉴는 애플리케이션에 로딩된 클래스의 구조와 메소드 시그니처 등 상세 정보를 제공하고 또한 중단없는 클래스 동작 변경이 가능하도록 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "재정의"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_loadedClasses",
+          className: "uitext"
+        }), " 메뉴는 애플리케이션에 로딩된 클래스의 구조와 메소드 시그니처 등 상세 정보를 제공하고 또한 중단없는 클래스 동작 변경이 가능하도록 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "redefine",
+          className: "uitext"
         }), " 기능을 제공합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -239,27 +235,24 @@ function _createMdxContent(props) {
         id: "재정의",
         children: "재정의"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "재정의"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "redefine",
+          className: "uitext"
         }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "Instrumentation"
         }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "redefineClasses"
-        }), " 메소드를 호출하여 애플리케이션을 중단시키지 않고도 런타임 중에 이미 로딩된 클래스의 동작을 변경할 수 있게 합니다. 이는 운영 중인 서비스에 대한 수정이나 변경이 필요한 경우 유용합니다. 예를 들어 새로운 서비스 패턴 지정으로 추가적인 트랜잭션 시작점을 설정하고 응답 시간을 측정하고자 할 때, 관련된 와탭 설정 변경 후 해당 클래스를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로딩된 클래스"
-          })
+        }), " 메소드를 호출하여 애플리케이션을 중단시키지 않고도 런타임 중에 이미 로딩된 클래스의 동작을 변경할 수 있게 합니다. 이는 운영 중인 서비스에 대한 수정이나 변경이 필요한 경우 유용합니다. 예를 들어 새로운 서비스 패턴 지정으로 추가적인 트랜잭션 시작점을 설정하고 응답 시간을 측정하고자 할 때, 관련된 와탭 설정 변경 후 해당 클래스를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_loadedClasses",
+          className: "uitext"
         }), " 목록에서 찾아 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "수정 아이콘",
           src: (__webpack_require__(63582)/* ["default"] */ .A) + "",
           width: "24",
           height: "24"
-        }), " 아이콘을 클릭해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "재정의"
-          })
+        }), " 아이콘을 클릭해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "redefine",
+          className: "uitext"
         }), "할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "/best-p/about-instance-loaded-class1.png",
@@ -271,14 +264,12 @@ function _createMdxContent(props) {
         id: "리소스",
         children: "리소스"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "리소스"
-          })
-        }), " 컬럼을 통해 해당 클래스가 물리적으로 어느 파일에서 로딩되었는지 조회할 수 있습니다. 자바 애플리케이션의 다계층 구조 특성상 이와 같은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "리소스"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "resource",
+          className: "uitext"
+        }), " 컬럼을 통해 해당 클래스가 물리적으로 어느 파일에서 로딩되었는지 조회할 수 있습니다. 자바 애플리케이션의 다계층 구조 특성상 이와 같은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "resource",
+          className: "uitext"
         }), " 정보 확인이 필요합니다. 복잡한 애플리케이션 환경에서는 클래스가 정확히 어느 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: "jar"
         }), " 파일에서 로딩되었는지 파악하는 것이 중요합니다."]
@@ -301,40 +292,33 @@ function _createMdxContent(props) {
           className: "uitext"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "스레드 목록/덤프"
-          })
-        }), " 메뉴는 현재 실행 중인 스레드 목록을 확인하고 해당 스레드의 개별 스냅샷 및 전체 스레드 덤프 정보를 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "히트맵"
-          })
-        }), "이 트랜잭션 응답 시간 위주 최적화 작업의 핵심이라면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "스레드 목록/덤프"
-          })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_threadList",
+          className: "uitext"
+        }), " 메뉴는 현재 실행 중인 스레드 목록을 확인하고 해당 스레드의 개별 스냅샷 및 전체 스레드 덤프 정보를 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "hitmap",
+          className: "uitext"
+        }), "이 트랜잭션 응답 시간 위주 최적화 작업의 핵심이라면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_threadList",
+          className: "uitext"
         }), "는 CPU 최적화의 핵심 요소라고 할 수 있으며 이는 애플리케이션의 성능 최적화, 문제 진단, 그리고 안정성 유지에 중요한 역할을 합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["어떤 스레드가 CPU를 많이 사용하고 있는지 파악하는 것은 병목 발생 원인 식별에 있어 중요합니다. 특히 특정 시간대에 CPU 사용이 급증한 스레드 식별을 위해 시계열 데이터를 조회할 수 있어야 합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "스레드 목록/덤프"
-          })
-        }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "스레드 CPU 시간"
-          })
+        children: ["어떤 스레드가 CPU를 많이 사용하고 있는지 파악하는 것은 병목 발생 원인 식별에 있어 중요합니다. 특히 특정 시간대에 CPU 사용이 급증한 스레드 식별을 위해 시계열 데이터를 조회할 수 있어야 합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_threadList",
+          className: "uitext"
+        }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "thread_cpu_time",
+          className: "uitext"
         }), "은 해당 스레드가 CPU를 점유한 총 누적 시간을 의미합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "새로 고침"
           })
-        }), " 시 현재 스레드 CPU 시간과 기존 스레드 CPU 시간의 차이인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "증가량"
-          })
-        }), "을 제공하여 조회 시점에 가장 많이 CPU를 사용하고 있는 스레드를 특정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "증가량"
-          })
+        }), " 시 현재 스레드 CPU 시간과 기존 스레드 CPU 시간의 차이인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL08126",
+          className: "uitext"
+        }), "을 제공하여 조회 시점에 가장 많이 CPU를 사용하고 있는 스레드를 특정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL08126",
+          className: "uitext"
         }), " 컬럼을 클릭해 내림차순 정렬 방식으로 증가량이 가장 높은 스레드를 확인해 보세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "/best-p/about-instance-thread-list-dump3.png",
@@ -353,40 +337,33 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "애플리케이션 CPU 사용량이 급증한 경우는 여러가지 원인에 기인할 수 있습니다. 이를 힙 메모리가 가득 찬 경우, 실제 요청이 많은 경우, 그리고 로직 문제인 경우 세 가지 유형으로 분류할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["이때 가장 먼저 확인하는 것은 식별이 용이한 힙 메모리입니다. 힙 메모리가 가득 찬 경우 JVM이 GC를 빈번히 실행해 CPU 사용량이 급증할 수 있습니다. 이 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "애플리케이션 대시보드"
-          })
-        }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "힙 메모리"
-          })
-        }), " 그래프를 통해 쉽게 확인할 수 있습니다. 두 번째는 실제 요청이 많은 것으로 애플리케이션이 많은 수의 클라이언트 요청을 처리해 CPU 사용량이 높아진 경우입니다. 각 요청은 자바 스레드를 생성해 처리되기에 CPU가 많은 작업을 수행하게 됩니다. 이 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "애플리케이션 대시보드"
-          })
+        children: ["이때 가장 먼저 확인하는 것은 식별이 용이한 힙 메모리입니다. 힙 메모리가 가득 찬 경우 JVM이 GC를 빈번히 실행해 CPU 사용량이 급증할 수 있습니다. 이 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "application_dashboard",
+          className: "uitext"
+        }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "AA010",
+          className: "uitext"
+        }), " 그래프를 통해 쉽게 확인할 수 있습니다. 두 번째는 실제 요청이 많은 것으로 애플리케이션이 많은 수의 클라이언트 요청을 처리해 CPU 사용량이 높아진 경우입니다. 각 요청은 자바 스레드를 생성해 처리되기에 CPU가 많은 작업을 수행하게 됩니다. 이 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "application_dashboard",
+          className: "uitext"
         }), "에서 TPS 관련 지표를 통해 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["세 번째로 애플리케이션 코드에 비효율적인 알고리즘이나 무한 루프 등이 포함되어 있을 경우 CPU 사용률이 비정상적으로 높아질 수 있습니다. 이 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "스레드 목록/덤프"
-          })
+        children: ["세 번째로 애플리케이션 코드에 비효율적인 알고리즘이나 무한 루프 등이 포함되어 있을 경우 CPU 사용률이 비정상적으로 높아질 수 있습니다. 이 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_threadList",
+          className: "uitext"
         }), " 메뉴를 통해 CPU 사용량이 높은 스레드를 특정 후 해당 스레드 덤프를 확인해 문제가 되는 코드를 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "스레드 CPU 시간"
-            })
-          }), " 확인 → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "새로고침"
-            })
-          }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "증가량"
-            })
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "thread_cpu_time",
+            className: "uitext"
+          }), " 확인 → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "refresh",
+            className: "uitext"
+          }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL08126",
+            className: "uitext"
           }), " 기준으로 목록 정렬 → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "CPU 사용량 높은 스레드 식별"
           })]

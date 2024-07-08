@@ -1,112 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35894],{
-
-/***/ 9048:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-/*node js, java*/
-
-
-const toc = [{
-  "value": "에이전트 설정 <code class=\"oldfunc\">Old</code>",
-  "id": "agent_configuration",
-  "level": 2
-}];
-function _createMdxContent(props) {
-  const _components = {
-    a: "a",
-    admonition: "admonition",
-    em: "em",
-    h2: "h2",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h2",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h2, {
-      id: "agent_configuration",
-      children: ["에이전트 설정 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "oldfunc",
-        children: "Old"
-      })]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_agentsConfiguration",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_agentSetting",
-        className: "uitext"
-      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "oldfunc",
-        children: "Old"
-      })]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["모니터링 대상 서버에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: "whatap.conf"
-      }), " 파일을 직접 수정하지 않고 에이전트 설정 옵션을 추가하거나 수정, 삭제할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "설정 파일 다운로드"
-        })
-      }), " 버튼 클릭 시 선택한 에이전트의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: "whatap.conf"
-      }), " 파일을 다운로드합니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "info",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["에이전트 설정 기능은 사용성과 기능을 개선한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "side_management",
-          className: "uitext"
-        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "side_agentSetting",
-          className: "uitext"
-        }), " 메뉴를 이용할 것을 권장합니다. 화면 오른쪽 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "new_agents_setting",
-          className: "uitext"
-        }), " 버튼을 선택하세요. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "set-agent#set-agent-service",
-          children: "다음 문서"
-        }), "를 참조하세요."]
-      })
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70393],{
 
 /***/ 59258:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -176,6 +69,82 @@ function _createMdxContent(props) {
           children: "다음 문서"
         }), "를 참조하세요."]
       })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 84068:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+/*go, php*/
+
+
+const toc = [{
+  "value": "에이전트 상태",
+  "id": "agent_status",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    h2: "h2",
+    p: "p",
+    section: "section",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ProdImg} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ProdImg) _missingMdxReference("ProdImg", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h2",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+      id: "agent_status",
+      children: "에이전트 상태"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_agentsConfiguration",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_agentStatus",
+        className: "uitext"
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
+      img: "ipa-agent-status.png",
+      desc: "에이전트 상태"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "지난 하루 동안 에이전트가 사용한 리소스 사용량을 확인할 수 있습니다."
     })]
   });
 }
@@ -330,12 +299,10 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     code: "code",
-    em: "em",
     h2: "h2",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -360,10 +327,9 @@ function _createMdxContent(props) {
       img: "ipa-env-var.png",
       desc: "환경 변수"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["애플리케이션 실행과 관련한 환경 변수 정보를 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "환경 변수"
-        })
+      children: ["애플리케이션 실행과 관련한 환경 변수 정보를 조회할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "boot_env",
+        className: "uitext"
       }), " 메뉴는 조회 시점의 환경 변수 정보를 수집해 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         children: "System.getProperty()"
       }), "를 사용해 매개변수로 전달된 키의 값을 조회합니다. 주요 확인 사항은 다음과 같습니다."]
@@ -526,12 +492,10 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     code: "code",
-    em: "em",
     h2: "h2",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -556,10 +520,9 @@ function _createMdxContent(props) {
       img: "ipa-run-env-var.png",
       desc: "실행 환경 변수"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["에이전트 실행과 관련한 환경 변수를 조회할 수 있습니다. 환경 변수 중 중요한 정보 또는 애플리케이션의 상태 정보를 와탭 서버에 저장해 에이전트가 다운되더라도 조회가 가능합니다. 에이전트 버전 및 설치 경로, 이름, IP 주소 등을 확인할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "CSV 다운로드"
-        })
+      children: ["에이전트 실행과 관련한 환경 변수를 조회할 수 있습니다. 환경 변수 중 중요한 정보 또는 애플리케이션의 상태 정보를 와탭 서버에 저장해 에이전트가 다운되더라도 조회가 가능합니다. 에이전트 버전 및 설치 경로, 이름, IP 주소 등을 확인할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "sms_summary_download_csv",
+        className: "uitext"
       }), " 버튼 클릭 시 환경 변수 정보를 다운로드할 수 있습니다. 주요 확인 사항은 다음과 같습니다."]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -631,7 +594,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 64064:
+/***/ 69593:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -650,36 +613,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_items_import_instance_performance_env_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72897);
 /* harmony import */ var _common_items_import_instance_performance_agent_log_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(59258);
 /* harmony import */ var _common_items_import_instance_performance_moduledep_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(64567);
-/* harmony import */ var _common_items_import_instance_performance_agent_config_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9048);
+/* harmony import */ var _common_items_import_instance_performance_agent_status_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(84068);
 
 
 const frontMatter = {
 	id: 'instance-performance-analysis',
 	title: '인스턴스 성능 관리',
-	description: 'Node.js 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
+	description: 'PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.',
 	tags: [
-		'Node.js',
+		'PHP',
 		'애플리케이션',
 		'인스턴스 성능 관리'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/instance-performance-analysis",
+  "id": "php/instance-performance-analysis",
   "title": "인스턴스 성능 관리",
-  "description": "Node.js 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
-  "source": "@site/docs/nodejs/instance-performance-analysis.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/instance-performance-analysis",
-  "permalink": "/whatap-docs/nodejs/instance-performance-analysis",
+  "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+  "source": "@site/docs/php/instance-performance-analysis.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/instance-performance-analysis",
+  "permalink": "/whatap-docs/php/instance-performance-analysis",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/instance-performance-analysis.mdx",
+  "editUrl": "undefined/docs/php/instance-performance-analysis.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "inline": true,
@@ -696,21 +659,21 @@ const metadata = {
   "frontMatter": {
     "id": "instance-performance-analysis",
     "title": "인스턴스 성능 관리",
-    "description": "Node.js 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
+    "description": "PHP 애플리케이션의 환경을 확인하고 성능과 관련한 설정을 확인할 수 있습니다.",
     "tags": [
-      "Node.js",
+      "PHP",
       "애플리케이션",
       "인스턴스 성능 관리"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/nodejs/set-event-format"
+    "permalink": "/whatap-docs/php/set-event-format"
   },
   "next": {
-    "title": "실험실",
-    "permalink": "/whatap-docs/nodejs/labs"
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
   }
 };
 const assets = {
@@ -722,7 +685,7 @@ const assets = {
 /*환경 변수 {#side_environmentVariable}*/
 /*에이전트 로그 {#agent_log}*/
 /*모듈 의존성*/
-/*에이전트 설정 <code class='oldfunc'>Old</code> {#agent_configuration}*/
+/*에이전트 상태*/
 
 
 
@@ -731,10 +694,10 @@ const assets = {
 
 
 
-const toc = [..._common_items_import_instance_performance_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_import_instance_performance_run_env_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_import_instance_performance_env_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_import_instance_performance_agent_log_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_import_instance_performance_moduledep_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_import_instance_performance_agent_config_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM];
+const toc = [..._common_items_import_instance_performance_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_import_instance_performance_run_env_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_import_instance_performance_env_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_import_instance_performance_agent_log_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_import_instance_performance_moduledep_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_import_instance_performance_agent_status_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_run_env_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_env_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_agent_log_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_moduledep_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_agent_config_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_run_env_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_env_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_agent_log_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_moduledep_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_instance_performance_agent_status_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
