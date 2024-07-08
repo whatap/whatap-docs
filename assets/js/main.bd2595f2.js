@@ -22871,9 +22871,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(63895)
     ],
     "fa970bce": [
-        ()=>Promise.all(/* import() | fa970bce */[__webpack_require__.e(71869), __webpack_require__.e(17798)]).then(__webpack_require__.bind(__webpack_require__, 96327)),
+        ()=>Promise.all(/* import() | fa970bce */[__webpack_require__.e(71869), __webpack_require__.e(17798)]).then(__webpack_require__.bind(__webpack_require__, 96376)),
         "@site/docs/java/metrics-app.mdx",
-        /*require.resolve*/(96327)
+        /*require.resolve*/(96376)
     ],
     "fa9efe25": [
         ()=>__webpack_require__.e(/* import() | fa9efe25 */ 29950).then(__webpack_require__.bind(__webpack_require__, 2319)),
