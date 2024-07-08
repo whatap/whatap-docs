@@ -8,13 +8,13 @@ tags:
   - UI
 ---
 
-Home > Select Project > **_Alert_** > **_Event Setting_** 
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" />
 
-You can create, modify, and delete event policies such as **_Server_**, **_Process_**, **_Log File_**, and **_Window Event_**. By selecting an event type, you can configure events according to the server restart, agent's communication failure duration, and resource usage.
+You can create, modify, and delete event policies such as <Cmdname sid="server" className="uitext" />, <Cmdname sid="process" className="uitext" />, and <Cmdname sid="sm_log_event_tab" className="uitext" />. By selecting an event type, you can configure events according to the server restart, agent's communication failure duration, and resource usage.
 
 <ImgLang img='server-warning.png' desc='Server Event setting'/>
 
-- ![Leader line 1](/img/number-01.png) **_+ Add Alert settings_**
+- ![Leader line 1](/img/number-01.png) **_+_** <Cmdname sid="add_alert_setting" className="uitext" />
 
   You can add the event.
 
@@ -22,11 +22,11 @@ You can create, modify, and delete event policies such as **_Server_**, **_Proce
 
   Displays the event name.
 
-- ![Leader line 3](/img/number-03.png) **_Condition_**
+- ![Leader line 3](/img/number-03.png) <Cmdname sid="condition" className="uitext" />
 
   Displays the event condition.
 
-- ![Leader line 4](/img/number-04.png) **_Server_**
+- ![Leader line 4](/img/number-04.png) <Cmdname sid="server" className="uitext" />
 
   Displays the server on which the event has been set.    
 
@@ -38,47 +38,47 @@ You can create, modify, and delete event policies such as **_Server_**, **_Proce
 
 :::note
 
-- For more information about addition of **_metrics_** events, see [the following](metric-warning-notice).
+- For more information about addition of <Cmdname sid="metrics" className="uitext" /> events, see [the following](metric-warning-notice).
 
-- For addition of **_Anomaly Detection_** events, see [the following](set-event-detect-anomal).
+- For addition of <Cmdname sid="anomaly_detection" className="uitext" /> events, see [the following](set-event-detect-anomal).
 
-- For addition of **_log_** events, see [the following](set-event-log).
+- For addition of <Cmdname sid="log" className="uitext" /> events, see [the following](set-event-log).
 
 :::
 
 ## Adding a server event{#add-server-event}
 
-Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Server_** tab, and then select **_+ Add alert policy_**.
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="server" className="uitext" /> tab > Select **_+_** <Cmdname sid="add_alert_setting" className="uitext" />
 
 You can receive alerts by setting the global events for specific servers. 
 
 <ImgLang img='server-server-event.png' desc='Adding a server event'/>
 
-1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the <Cmdname sid="add_alert_setting" className="uitext" /> window appears, enter the ![number1](/img/number-01.png) event <Cmdname sid="title" className="uitext" />.
 
-2. Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+2. Check the ![number2](/img/number-02.png) <Cmdname sid="sms_server_list" className="uitext" /> or select a desired server for monitoring through the search bar. 
 
-3. In the ![number3](/img/number-03.png) **_Event rule condition_** tab, set the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
+3. In the ![number3](/img/number-03.png) <Cmdname sid="alert_rule" className="uitext" /> tab, set the <Cmdname sid="condition" className="uitext" />, <Cmdname sid="level" className="uitext" />, <Cmdname sid="sms_alert_duration" className="uitext" />, and <Cmdname sid="enable" className="uitext" /> of the desired <Cmdname sid="indicator" className="uitext" />.
 
-   - **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
+   - <Cmdname sid="level" className="uitext" />: You can select a level of <Cmdname sid="sms_alert_warn" className="slow" /> and <Cmdname sid="sms_alert_fatal" className="vslow" />.
 
-   - **_Duration_**: After the set **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
+   - <Cmdname sid="sms_alert_duration" className="uitext" />: After the set <Cmdname sid="sms_alert_duration" className="uitext" />, the server status is set to <Cmdname sid="sms_alert_warn" className="slow" /> or <Cmdname sid="sms_alert_fatal" className="vslow" />.
 
-   For guide to **_metrics_**, see the following. 
+   For guide to <Cmdname sid="indicator" className="uitext" />, see the following.
 
-   - **_Restart_**: This event occurs when the server restarts.
+   - <Cmdname sid="restart" className="uitext" />: This event occurs when the server restarts.
 
-   - **_Not received_**: This is a communication failure event that occurs when normal data is not received from the agent for the **_duration_**.
+   - <Cmdname sid="down" className="uitext" />: This is a communication failure event that occurs when normal data is not received from the agent for the <Cmdname sid="sms_alert_duration" className="uitext" />.
 
-   - **_Port_**: Port access unavailable event. Registered agents in the project check each other's status through **10120 port**. This event occurs when communication fails for the **_duration_**.  
+   - <Cmdname sid="port" className="uitext" />: Port access unavailable event. Registered agents in the project check each other's status through **10120 port**. This event occurs when communication fails for the <Cmdname sid="sms_alert_duration" className="uitext" />.
 
-   - **_CPU, Memory, Swap_**: Set the usage events such as CPU, memory, and SWAP memory. 
+   - <Cmdname sid="cpu" className="uitext" />, <Cmdname sid="mem" className="uitext" />, <Cmdname sid="swap" className="uitext" />: Set the usage events such as CPU, memory, and SWAP memory.
 
-   - **_Steal_**: Set the event for CPU steal time. Only Linux-based OS can be set. 
+   - <UI>steal</UI>: Set the event for CPU steal time. Only Linux-based OS can be set.
 
-   - **_Disk_**: Set the events based on the disk usage, I/O usage, and Inode usage.
+   - <Cmdname sid="diskIo" className="uitext" />, <Cmdname sid="diskQuota" className="uitext" />, <UI>inode</UI>: Set the event based on the disk usage, I/O usage, and Inode usage.
 
-   - **_Network_**: Set the network usage-related event. It can be set based on the traffic and packets per second. 
+   - <Cmdname sid="networkIops" className="uitext" />, <Cmdname sid="networkBps" className="uitext" />: Set the network usage-related event. It can be set based on the traffic and packets per second.
 
 4. Set the ![number 4](/img/number-04.png) <Cmdname sid="event_tag" className="uitext" />. 
 
@@ -88,7 +88,7 @@ You can receive alerts by setting the global events for specific servers.
 
    - In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information about <Cmdname sid="event_receive_configuration" className="uitext" />, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
 
-5. If you finished the event configuration, select ![number5](/img/number-05.png) **_Save_**.
+5. If you finished the event configuration, select ![number5](/img/number-05.png) <Cmdname sid="save" className="uitext" />.
 
 :::caution
 
@@ -103,62 +103,62 @@ WhaTap server monitoring service provides the following basic event settings aft
 
 ![Server Default Alarm sc](/img/server-default-notice-setting.png)
 
-- **_Restart_**: Enable
+- <Cmdname sid="restart" className="uitext" />: Enable
 
-- **_Network IOPS_**
+- <Cmdname sid="networkIops" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 45,000 pps/duration: 5 minutes
-  - <span class='vslow'>Fatal</span>: 50,000 pps/duration: 5 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 45,000 pps/duration: 5 minutes
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 50,000 pps/duration: 5 minutes
 
-- **_Network BPS_**
+- <Cmdname sid="networkBps" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 5000,000 bps/duration: 5 minutes
-  - <span class='vslow'>Fatal</span>: 7000,000 bps/duration: 5 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 5000,000 bps/duration: 5 minutes
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 7000,000 bps/duration: 5 minutes
 
-- **_Disk I/O_**
+- <Cmdname sid="diskIo" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 90%/duration: 5 minutes
-  - <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 90%/duration: 5 minutes
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 95%/duration: 5 minutes
 
-- **_Disk Usage_**
+- <Cmdname sid="diskQuota" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 90%/duration: 5 minutes
-  - <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 90%/duration: 5 minutes
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 95%/duration: 5 minutes
 
 - **_inode_**
 
-  - <span class='slow'>Warning</span>: 90%/duration: 5 minutes
-  - <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 90%/duration: 5 minutes
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 95%/duration: 5 minutes
 
-- **_CPU_**
+- <Cmdname sid="cpu" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 70%/duration: 1 minute
-  - <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 70%/duration: 1 minute
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 90%/duration: 1 minute
 
-- **_Memory_**
+- <Cmdname sid="mem" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 70%/duration: 1 minute
-  - <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 70%/duration: 1 minute
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 90%/duration: 1 minute
 
 - **_steal_**
 
-  - <span class='slow'>Warning</span>: 5%/duration: 1 minute
-  - <span class='vslow'>Fatal</span>: 10%/duration: 1 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 5%/duration: 1 minute
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 10%/duration: 1 minutes
 
-- **_Swap_**
+- <Cmdname sid="swap" className="uitext" />
 
-  - <span class='slow'>Warning</span>: 50%/duration: 1 minute
-  - <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
+  - <Cmdname sid="sms_alert_warn" className="slow" />: 50%/duration: 1 minute
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />: 90%/duration: 1 minute
 
 </details>
 
 ## Adding process event{#process-event}
 
-Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Process_** tab, and then select **_+ Add alert policy_**.
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="process" className="uitext" /> tab > Select **_+_** <Cmdname sid="add_alert_setting" className="uitext" />
 
-You can receive alerts by setting the events for specific processes. If you specify conditions based on the key metrics such as **_process count_**, **_process CPU_** usage, and **_process memory_** usage, you can prevent the processes from terminating unexpectedly or experiencing rapid performance fluctuations. By doing so, you can receive alerts in real time.
+You can receive alerts by setting the events for specific processes. If you specify conditions based on the key metrics such as <Cmdname sid="processcount" className="uitext" />, <Cmdname sid="processcpu" className="uitext" /> usage, and <Cmdname sid="processmem" className="uitext" /> usage, you can prevent the processes from terminating unexpectedly or experiencing rapid performance fluctuations. By doing so, you can receive alerts in real time.
 
-You can assess the severity of events by setting the warning and critical levels and the **_duration_** for which the set thresholds remain in effect. You can also send alerts to specific project members by using the **_event receiving tag_**. This allows you to efficiently take prioritized actions.
+You can assess the severity of events by setting the warning and critical levels and the <Cmdname sid="sms_alert_duration" className="uitext" /> for which the set thresholds remain in effect. You can also send alerts to specific project members by using the <Cmdname sid="event_tag" className="uitext" />. This allows you to efficiently take prioritized actions.
 
 {/* 
 
@@ -168,9 +168,9 @@ You can assess the severity of events by setting the warning and critical levels
 
 <ImgLang img='server-process-event.png' desc='Event Alert settings - Process'/>
 
-1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the <Cmdname sid="add_alert_setting" className="uitext" /> window appears, enter the ![number1](/img/number-01.png) event <Cmdname sid="title" className="uitext" />.
 
-2. In the ![number2](/img/number-02.png) **_Event rule condition_** tab, click **_No agent selected_** under the **_server list_** and then select a server from the **_server list_** window. 
+2. In the ![number2](/img/number-02.png) <Cmdname sid="alert_rule" className="uitext" /> tab, click <Cmdname sid="empty_selected_agent" className="uitext" /> under the <Cmdname sid="sms_server_list" className="uitext" /> and then select a server from the <Cmdname sid="sms_server_list" className="uitext" /> window. 
 
    :::note
 
@@ -178,7 +178,7 @@ You can assess the severity of events by setting the warning and critical levels
 
    :::
 
-3. In the **_process_** selection window, select a process or process group. 
+3. In the <Cmdname sid="process" className="uitext" /> selection window, select a process or process group.
 
    :::note
 
@@ -186,22 +186,22 @@ You can assess the severity of events by setting the warning and critical levels
 
    :::
 
-4. Select a **_process owner_**. 
+4. Select <Cmdname sid="process_owner" className="uitext" />.
 
-   - If no **_process owner_** has been assigned, the settings are applied to all processes with the same name regardless of the owner.
-   - Event conditions work on the owner-process unit basis, even if the **_process owner_** is omitted.
+   - If no <Cmdname sid="process_owner" className="uitext" /> has been assigned, the settings are applied to all processes with the same name regardless of the owner.
+   - Event conditions work on the owner-process unit basis, even if the <Cmdname sid="process_owner" className="uitext" /> is omitted.
 
-5. Set the **_level_**, **_duration_**, and **_Enable_** for the desired **_metric_**.
+5. Set the <Cmdname sid="level" className="uitext" />, <Cmdname sid="sms_alert_duration" className="uitext" />, and <Cmdname sid="enable" className="uitext" /> for the desired <Cmdname sid="indicator" className="uitext" />.
 
-   - **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
+   - <Cmdname sid="level" className="uitext" />: You can select a level of <Cmdname sid="sms_alert_warn" className="slow" /> and <Cmdname sid="sms_alert_fatal" className="vslow" />.
 
-   - **_Duration_**: After the threshold's **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
+   - <Cmdname sid="sms_alert_duration" className="uitext" />: After the threshold's <Cmdname sid="sms_alert_duration" className="uitext" />, the server status is set to <Cmdname sid="sms_alert_warn" className="slow" /> or <Cmdname sid="sms_alert_fatal" className="vslow" />.
 
-   For guide to **_metrics_**, see the following. 
+   For guide to <Cmdname sid="indicator" className="uitext" />, see the following.
 
-   - **_Process Count_**: You can set an event for the number of processes with the same name. Set the number of **_Danger_** and **_Warning_** conditions.
-   - **_Process CPU_**: You can set the events depending on the CPU usage.
-   - **_Process Memory_**: You can set the events depending on the memory usage.
+   - <Cmdname sid="processcount" className="uitext" />: You can set an event for the number of processes with the same name. Set the number of <Cmdname sid="sms_alert_fatal" className="uitext" /> and <Cmdname sid="sms_alert_warn" className="uitext" /> conditions.
+   - <Cmdname sid="processcpu" className="uitext" />: You can set the events depending on the CPU usage.
+   - <Cmdname sid="processmem" className="uitext" />: You can set the events depending on the memory usage.
 
 6. Set the ![number 3](/img/number-03.png) <Cmdname sid="event_tag" className="uitext" />. 
 
@@ -211,30 +211,30 @@ You can assess the severity of events by setting the warning and critical levels
 
    - In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information about <Cmdname sid="event_receive_configuration" className="uitext" />, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
 
-7. If you finished the event configuration, select ![number4](/img/number-04.png) **_Save_**.
+7. If you finished the event configuration, select ![number4](/img/number-04.png) <Cmdname sid="save" className="uitext" />.
 
 :::note
 
-- If you set the process alert **_conditions_** incorrectly, disable it or set the alert **_conditions_** again.
-- If you have incorrectly set the **_process_** and **_process owner_**, disable these alerts to cancel activation, and then set the alert **_conditions_** again.
+- If you set the process alert <Cmdname sid="condition" className="uitext" /> incorrectly, disable it or set the alert <Cmdname sid="condition" className="uitext" /> again.
+- If you have incorrectly set the <Cmdname sid="process" className="uitext" /> and <Cmdname sid="process_owner" className="uitext" />, disable these alerts to cancel activation, and then set the alert ***conditions*** again.
 
 :::
 
 ## Adding the log files and Windows events
 
-Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Log File/Window Event_** tab, and then select **_+ Add alert policy_**.
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="sm_log_event_tab" className="uitext" /> tab > Select **_+_** <Cmdname sid="add_alert_setting" className="uitext" />
 
 You can manage specific log files and Windows event settings.
 
 ### Log File{#log-file-event}
 
-To add a **_log file_** event, set the **_event rules_** seeing the following. 
+To add a <Cmdname sid="log_file" className="uitext" /> event, set the <Cmdname sid="metrics_event_rules" className="uitext" /> seeing the following.
 
 <ImgLang img='server-log-file.png' desc='Adding log file event'/>
 
-1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the <Cmdname sid="add_alert_setting" className="uitext" /> window appears, enter the ![number1](/img/number-01.png) event <Cmdname sid="title" className="uitext" />.
 
-2. Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+2. Check the ![number2](/img/number-02.png) <Cmdname sid="sms_server_list" className="uitext" /> or select a desired server for monitoring through the search bar. 
 
    :::note
 
@@ -242,31 +242,31 @@ To add a **_log file_** event, set the **_event rules_** seeing the following.
 
    :::
 
-3. ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Log File_** in **_Log Type_**.
+3. ![number 3](/img/number-03.png) In the <Cmdname sid="alert_rule" className="uitext" /> tab, select <Cmdname sid="log_file" className="uitext" /> in <Cmdname sid="sms_alert_log_rule_type" className="uitext" />.
 
-4. See the example and then enter the **_file path_** following a regular expression rule. 
+4. See the example and then enter the <Cmdname sid="sms_alert_log_rule_file_path" className="uitext" /> following a regular expression rule. 
 
    > e.g. _/var/log/mylogfile_%Y-%m-%d_%H:%M:%S.log_
 
-5. Enter the **_search keyword_** to trigger events. Multiple items can be specified.
+5. Enter the <Cmdname sid="sms_alert_log_rule_keyword" className="uitext" /> to trigger events. Multiple items can be specified.
 
-6. Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
+6. Enter the <Cmdname sid="sms_alert_log_rule_keyword_exclude" className="uitext" /> to be excluded from alerts. Multiple items can be specified.
 
-7. Enter the **_repetitions_** and **_duration_** for alerts how many seconds and how many times when detecting the specified **_keyword_**. 
+7. Enter the <Cmdname sid="sms_alert_log_rule_keyword_option_repeat" className="uitext" /> and <Cmdname sid="sms_alert_log_rule_keyword_option_duration" className="uitext" /> for alerts how many seconds and how many times when detecting the specified **keyword**. 
 
-8. Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
+8. Select an event <Cmdname sid="sms_alert_severity" className="uitext" />. You can set the level of <Cmdname sid="sms_alert_fatal" className="vslow" /> or <Cmdname sid="sms_alert_warn" className="slow" />.
 
-9. Select ![number4](/img/number-04.png) **_Save_**.
+9. Select ![number4](/img/number-04.png) <Cmdname sid="save" className="uitext" />.
 
 ### Window Event{#windows-event}
 
-To add an **_Windows event_**, set the **_event rule conditions_** seeing the following. It is available only in the Windows environment.
+To add an <Cmdname sid="window_event" className="uitext" />, set the <Cmdname sid="metrics_event_rules" className="uitext" /> seeing the following. It is available only in the Windows environment.
 
 <ImgLang img='server-log-windows.png' desc='Adding Windows events'/>
 
-1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the <Cmdname sid="add_alert_setting" className="uitext" /> window appears, enter the ![number1](/img/number-01.png) event <Cmdname sid="title" className="uitext" />.
 
-2. Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+2. Check the ![number2](/img/number-02.png) <Cmdname sid="sms_server_list" className="uitext" /> or select a desired server for monitoring through the search bar. 
 
    :::note
 
@@ -274,21 +274,21 @@ To add an **_Windows event_**, set the **_event rule conditions_** seeing the fo
 
    :::
 
-3. ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Window Event_** in **_Log Type_**.
+3. ![number 3](/img/number-03.png) In the <Cmdname sid="alert_rule" className="uitext" /> tab, select <Cmdname sid="window_event" className="uitext" /> in <Cmdname sid="sms_alert_log_rule_type" className="uitext" />.
 
-4. Select **_Log Name_** by referencing the following example.
+4. Select <Cmdname sid="sms_alert_log_rule_event_category" className="uitext" /> by referencing the following example.
 
    <ImgLang img='server-log-windows-a-01.png' desc='Log name'/>
 
-5. Noting the following example, set the values for **_Level_**, **_Event Source_**, **_Event ID_**, and **_Keyword_**. For the **_search keyword_**, multiple items can be specified.
+5. Noting the following example, set the values for <Cmdname sid="sms_alert_log_rule_event_level" className="uitext" />, <Cmdname sid="sms_alert_log_rule_eventsource" className="uitext" />, <Cmdname sid="sms_alert_log_rule_eventid" className="uitext" />, and <Cmdname sid="sms_alert_log_rule_keyword" className="uitext" />. For the <Cmdname sid="sms_alert_log_rule_keyword" className="uitext" />, multiple items can be specified.
 
    <ImgLang img='server-log-windows-a-02.png' desc='Level, event source, etc'/>
 
-6. Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
+6. Enter the <Cmdname sid="sms_alert_log_rule_keyword_exclude" className="uitext" /> to be excluded from alerts. Multiple items can be specified.
 
-7. Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
+7. Select an event <Cmdname sid="sms_alert_severity" className="uitext" />. You can set the level of <Cmdname sid="sms_alert_fatal" className="vslow" /> or <Cmdname sid="sms_alert_warn" className="slow" />.
 
-8. Select ![number4](/img/number-04.png) **_Save_**.
+8. Select ![number4](/img/number-04.png) <Cmdname sid="save" className="uitext" />.
 
 #### Log File Throughput
 
@@ -309,33 +309,33 @@ You can adjust the excess per 2 seconds with the following option.
 
 ## Modifying an event{#event-edit}
 
-1. On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
+1. On the right of the event list, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />. 
 
-2. In the **_Event rule condition_** tab, modify the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
+2. In the <Cmdname sid="alert_rule" className="uitext" /> tab, modify the <Cmdname sid="condition" className="uitext" />, <Cmdname sid="level" className="uitext" />, <Cmdname sid="sms_alert_duration" className="uitext" />, and <Cmdname sid="enable" className="uitext" /> of the desired <Cmdname sid="indicator" className="uitext" />.
 
-3. After modification, select **_Save_**.
+3. After modification, select <Cmdname sid="save" className="uitext" />.
 
 :::note
 
 - If there is any modification for a specific metric, all active alerts for the metric are <span class='vslow'>disabled</span>.
 - After modification, a new alert is triggered when any data for the set conditions is received.
-- If any process alert data of **_title_**, **_process_**, and **_process owner_** has been modified, all alerts for the condition are <span class='vslow'>disabled</span>.
+- If any process alert data of <Cmdname sid="title" className="uitext" />, <Cmdname sid="process" className="uitext" />, and <Cmdname sid="process_owner" className="uitext" /> has been modified, all alerts for the condition are <span class='vslow'>disabled</span>.
 
 :::
 
 ## Deleting an event{#event-delete}
 
-1. On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
+1. On the right of the event list, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />. 
 
-2. On the upper right of the modification screen, select ![Delete icon](/img/ic-delete-critical.svg)**_Delete_**.
+2. On the upper right of the modification screen, select ![Delete icon](/img/ic-delete-critical.svg) <Cmdname sid="delete" className="uitext" />.
 
 ## Copying an event{#event-copy}
 
-1. On the right of the event list, select ![Copy icon](/img/ico-copy.svg)**_Copy_**.
+1. On the right of the event list, select ![Copy icon](/img/ico-copy.svg) <Cmdname sid="copy" className="uitext" />.
 
-2. If the **_Copying event settings_** window appears, select a desired project or **_Copy to current project_**.
+2. When the <Cmdname sid="TTL06597" className="uitext" /> window appears, select a desired project or select <Cmdname sid="BTN06571" className="uitext" /> at the bottom.
 
-3. If a project to copy the event settings to has been set, select **_Copy_**.
+3. If a project to copy the event settings to has been set, select <Cmdname sid="copy" className="uitext" />.
 
 :::note
 

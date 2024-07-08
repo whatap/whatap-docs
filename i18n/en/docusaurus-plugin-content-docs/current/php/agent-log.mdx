@@ -59,3 +59,17 @@ It is used to log data.
   whatap.logsink_zip_enabled=true
   whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
   ```
+
+:::tip
+
+You can use any variable in date format in log file names. Apply it based on the use of the Python `strftime()`. 
+
+> e.g. 20240101: `%Y%m%d`
+
+```ini title="whatap.ini"
+whatap.logsink.files=/etc/httpd/logs/customlog-%Y%m%d
+```
+
+This function is supported in PHP agent 2.7.2 or later. 
+
+:::

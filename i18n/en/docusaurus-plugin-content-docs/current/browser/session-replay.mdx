@@ -1,0 +1,180 @@
+---
+id: session-replay
+title: Session Replay
+description: The following explains how to apply the session replay feature, which allows you to record and replay all events performed on the website.
+tags:
+  - Browser Monitoring
+  - Agent
+  - Session Replay
+---
+
+<Cmdname sid="TTL08103" className="uitext" /> is a feature that allows to record and replay all events performed by users on the website. This feature allows you to reproduce user behaviors such as clicking, scrolling, typing, and page switching. This helps you understand exactly how users actually interact with the website.
+
+- **Record and replay user behaviors**: Session replay records user behaviors. Recorded user behaviors include mouse movements, clicks, scrolling, and more. You can replay recorded user behaviors to visually see what they were doing at a specific time.
+
+- **Error tracing and failure reproduction**: You can analyze the cause of a failure by tracing the occurrence time of a specific event or error. You can visually check how users see when a page takes a long time to load or other technical glitches occur on the screen.
+
+:::note
+
+The <Cmdname sid="TTL08103" className="uitext" /> feature can be used by the members with the <Cmdname sid="log_read" className="b600" /> role. For more information about the member role scheme, see [the following](../project/project-structure#project-auth).
+
+:::
+
+## Collection methods
+
+Instead of recording the actual screen or capturing it as an image, it collects DOM changes and CSS style information in text format. To avoid overhead, it only collects changes and transfers data when the browser's main thread is idle.
+
+### Exclusion of sensitive data collection
+
+The default method to exclude collection of sensitive data is provided. All text data on the screen is masked and collected as follows:
+
+<ImgLang img="browser-session-replay-masking-example.png" desc="Session replay" />
+
+### Masking specific areas
+
+In addition to text, it may contain personally identifiable information or sensitive data, and the option to mask specific areas is provided for protection.
+
+![Masking](/img/browser-session-replay-masking-area.png)
+
+Add `session-replay-ignore-class` to the class name of the html element for the area to be excluded from collection.
+
+```html showLineNumbers {1}
+<div class="session-replay-ignore-class home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    {% if site.data.archive %}
+    <ul class="home-header-menu pure-menu-list">
+      {% for item in site.data.archive %}
+        <li class="pure-menu-item">
+          <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}"">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+```
+
+## Applying the agent option {#set-agentoption}
+
+To apply the session replay feature, apply the browser agent option. You can set the `sessionReplaySampleRate` property in the `config` object from 0 to 100.
+
+```javascript showLineNumbers {8}
+<script>
+(function (w, h, _a, t, a, b) {
+    w = w[a] = w[a] || {
+        config: {
+            projectAccessKey: {projec_access_key},
+            pcode: {pcode},
+            sampleRate: 100,
+            sessionReplaySampleRate: 50,
+            proxyBaseUrl: "https://rum-ap-northeast-2.whatap-browser-agent.io/",
+        },
+    };
+    a = h.createElement(_a);
+    a.async = 1;
+    a.src = t;
+    t = h.getElementsByTagName(_a)[0];
+    t.parentNode.insertBefore(a, t);
+})(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');
+</script>
+```
+
+You can set the percentage of sessions to apply the session replay among the sessions to collect. For example, if `sampleRate` is **100** and `sessionReplaySampleRate` is **50**, only 50% of all sessions is recorded for the session replay.
+
+On the other hand, if `sampleRate` is **50** and `sessionReplaySampleRate` is **100**, 50% of all sessions is collected, and 100% of these is recorded for the session replay.
+
+## Using the session replay
+
+The <Cmdname sid="TTL08103" className="uitext" /> feature can be used in the following menu path:
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_ajaxAnalytics" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+### Page Load Hitmap {#side_rumPageLoadHitmap}
+
+<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />
+
+<ImgLang img="browser-pageloadhitmap-session-replay.png" desc="Page Load Hitmap" />
+
+1. In the <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="hitmap" className="uitext" /> chart, drag a specific area.
+
+2. In <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" />, select ![Detail icon](/img/ico-detail-view.svg) to check the <Cmdname sid="TTL08103" /> feature.
+
+3. If the <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" /> window appears, select the <Cmdname sid="TTL08103" className="uitext" /> tab.
+
+### AJAX Hitmap {#side_ajaxAnalytics}
+
+<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_ajaxAnalytics" className="uitext" />
+
+<ImgLang img="browser-ajaxhitmap-session-replay.png" desc="AJAX hitmap" />
+
+1. In the <Cmdname sid="side_ajaxAnalytics" className="uitext" /> chart, drag a specific area.
+
+2. If the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window appears, select an item from the list to check the <Cmdname sid="TTL08103" /> feature.
+
+3. On the screen to the right, select the <Cmdname sid="TTL08103" className="uitext" /> tab.
+
+### User Session Log Search {#side_userSessionEventSearch}
+
+<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+<ImgLang img="browser-usersessionlog-session-replay.png" desc="User Session Log Search" />
+
+1. Set the time to search in <Cmdname sid="time" className="uitext" />.
+
+2. On the right of the screen, select ![Search icon](/img/ico-btn-search.png).
+
+3. In the list of search results, select <Cmdname sid="analysis" className="uitext" /> on the utmost right of the item to check the <Cmdname sid="TTL08103" /> feature.
+
+4. If the <Cmdname sid="TTL07736" className="uitext" /> window appears, select the <Cmdname sid="TTL08103" className="uitext" /> tab.
+
+## Using the session replay {#usage}
+
+### Session replay player
+
+You can replay the recorded user behavior events to see how actual users interact with the screen.
+
+![Session replay player](/img/browser-session-replay-player.png)
+
+- ![Replay icon](/img/ic-rum-play.svg) / ![Pause icon](/img/ic-rum-pause.svg): You can play or pause recorded user behavior events.
+
+- <UI>1x</UI> / <UI>2x</UI> / <UI>3x</UI> / <UI>4x</UI>: You can adjust the playback speed.
+
+- ![Full screen icon](/img/ic-fullscreen.svg): The player screen can be enlarged to full screen. To end the full screen, press the `ESC` key.
+
+- You can drag the timeline to move it to a desired location. The areas without mouse interaction are displayed in light gray.
+
+  ![Timeline](/img/browser-session-replay-timeline.png)
+
+### User session information {#TTL07745}
+
+On the right of the <Cmdname sid="TTL08103" className="uitext" /> screen, you can see the actual user's session information.
+
+<ImgLang img="browser-session-replay-user-info.png" desc="User session information" />
+
+- <Cmdname sid="browser" className="uitext" />: Type of the browser of the end user.
+- <Cmdname sid="os" className="uitext" />: OS type of the device used by the end user
+- <Cmdname sid="device" className="uitext" />: Type of the device of the end user.
+- <Cmdname sid="user_id" className="uitext" />: Unique ID issued when an end user first accesses the web application
+- <Cmdname sid="session_id" className="uitext" />: A unique ID issued when an end user of the web application begins browsing a web page.
+- <Cmdname sid="ip" className="uitext" />: IP address of the device used by the end user
+- <Cmdname sid="user_agent" className="uitext" />: The user agent of the browser when an event occurred.
+
+### User session flow {#TTL07746}
+
+You can check the event records collected based on the start time. It is the same as the <Cmdname sid="TTL07746" className="uitext" /> information shown in <Cmdname sid="TTL07736" className="uitext" />.
+
+<ImgLang img="browser-session-replay-user-session-flow.png" desc="User session flow" />
+
+- If you select an individual event, the timeline of the Session Replay player is moved to the start point of the event.
+
+- To check the detailed information about an individual event, select ![Detail icon](/img/ico-detail-view.svg).
+
+:::note
+
+For more information about <Cmdname sid="TTL07736" className="uitext" />, see [the following](user-session-log-search#analysisusersession).
+
+:::

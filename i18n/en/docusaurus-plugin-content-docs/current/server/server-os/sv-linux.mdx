@@ -1,26 +1,25 @@
 ---
 id: server-linux
-title: Linux and Unix
-description: It explains how to install the WhaTap server monitoring agent in the Linux or Unix environment.
+title: Linux
+description: It explains how to install the WhaTap server monitoring agent in the Linux environment.
 tags:
   - Server
   - Installation
   - Linux
-  - Unix
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-If you select a newly generated server monitoring project, the **_agent installation_** screen appears. It is also possible in **_Management_** > **_Agent Installation_** for the project.
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. It is also possible in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> for the project.
 
 <ImgLang img='server-install-lx-unx.png' desc='Server Monitoring Linux Unix'/>
 
-Select a desired OS on the **_Agent Installation_** screen, check the project access key, and then proceed with the installation according to the following instructions. 
+Select a desired OS on the <Cmdname sid="side_agentInstall" className="uitext" /> screen, check the project access key, and then proceed with the installation according to the following instructions.
 
 1. Register the WhaTap **repository**.  
 
-   In the **_Add the WhaTap Repository_** tab, copy the command and enter it.
+   In the <Cmdname sid="server_installAgent_add_whatapRepo" className="uitext" /> tab, copy the command and enter it.
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
@@ -30,6 +29,19 @@ Select a desired OS on the **_Agent Installation_** screen, check the project ac
    echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/" | sudo tee
    /etc/apt/sources.list.d/whatap.list
    sudo apt-get update
+   ```
+
+   </TabItem>
+   <TabItem value="suse" label="SUSE">
+
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/suse/release.gpg
+   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   sudo zypper refresh
    ```
 
    </TabItem>
@@ -55,40 +67,9 @@ Select a desired OS on the **_Agent Installation_** screen, check the project ac
    </TabItem>
    </Tabs>
 
-   <Tabs>
-   <TabItem value="suse" label="SUSE">
-
-   ```bash title=SH
-   sudo rpm --import http://repo.whatap.io/suse/release.gpg
-   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   sudo zypper refresh
-   ```
-
-   </TabItem>
-   <TabItem value="fb" label="FreeBSD">
-
-   ```bash title=SH
-   wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
-   ```
-
-   </TabItem>
-   <TabItem value="xs" label="XenServer">
-
-   ```bash title=SH
-   sudo rpm --import http://repo.whatap.io/centos/release.gpg
-   sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
-   ```
-
-   </TabItem>
-   </Tabs>
-
 2. Install the **package** with the following command.
 
-   In the **_Install the WhaTap Server Monitor Package_** tab, copy the command and enter it.
+   In the <Cmdname sid="server_installAgent_installPackages" className="uitext" /> tab, copy the command and enter it.
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
@@ -105,15 +86,8 @@ Select a desired OS on the **_Agent Installation_** screen, check the project ac
    ```
 
    </TabItem>
-   <TabItem value="fb" label="FreeBSD">
 
-   ```bash title=SH
-   pkg install whatap-infra.txz
-   ```
-
-   </TabItem>
-
-   <TabItem value="cax" label="CentOS / Amazon Linux / XenServer">
+   <TabItem value="cax" label="CentOS / Amazon Linux">
 
    ```bash title=SH
    sudo yum install whatap-infra
@@ -125,7 +99,7 @@ Select a desired OS on the **_Agent Installation_** screen, check the project ac
 
 3. Run the **configuration script**.
 
-   Go to the **_Run the Configure Script and Start the Server Monitor Daemon_** tab, get the command or execute the command below after adding the project access key and server IP.
+   In the <Cmdname sid="server_installAgent_startMonitoring" className="uitext" /> tab, get the command or execute the command below after adding the project access key and server IP.
 
    ```bash
    echo "license=[Granted Project Access Key]" |sudo tee /usr/whatap/infra/conf/whatap.conf
@@ -155,4 +129,16 @@ import Svlfcpf from "../../common-items/_sv-lf-cpf.mdx";
     :::note
     에이전트에서 수집 서버로 **TCP 6600** 포트 접근이 가능해야 합니다.(TCP 아웃바운드)
     :::
+
+````
+<TabItem value="xs" label="XenServer">
+
+```bash title=SH
+sudo rpm --import http://repo.whatap.io/centos/release.gpg
+sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
+```
+
+</TabItem>
+````
+
 */}

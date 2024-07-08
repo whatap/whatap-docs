@@ -9,15 +9,15 @@ tags:
   - UI
 ---
 
-Home > Select Project > **_Dashboard_** > **_Resource Board_**
+Home > Select Project > <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_resourceBoard" className="uitext" />
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_Dashboard_** > **_Resource Board_** under **_Project Menu_**.
+On the initial screen of the WhaTap Monitoring service, select a project and then select <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_resourceBoard" className="uitext" />.
 
 <ImgLang img='server-resourceboard.png' desc='Resource Board'/>
 
-**_Resource Board_** allows you to monitor all servers registered in a project. 
+<Cmdname sid="side_resourceBoard" className="uitext" /> allows you to monitor all servers registered in a project.
 
-It provides the **_CPU resource map_** to check the summary of all servers in the project and changes in real-time resource usage. It displays **_Top 5_** total resource size, CPU, memory, and utilization processes. You can immediately recognize and respond to failures through the **_resource board_**.
+It provides the **_CPU resource map_** to check the summary of all servers in the project and changes in real-time resource usage. It displays **_Top 5_** total resource size, CPU, memory, and utilization processes. You can immediately recognize and respond to failures through the <Cmdname sid="side_resourceBoard" className="uitext" />.
 
 ## ![](/img/number-01.png) Fixed menu
 
@@ -29,9 +29,9 @@ import Dashboardstaticdef from "../common-items/_dashboard-static-def.mdx";
 
 It provides the summary metrics for all servers registered in the project. They are updated every 10 seconds.
 
-- **Servers**  
+- **Server**  
 
-  It provides the total number of servers together with the number of servers with problems. If you select an area, the **_Server List_** page appears.
+  It provides the total number of servers together with the number of servers with problems. If you select an area, the <Cmdname sid="side_serverList" className="uitext" /> page appears.
 
   - Exception status: <span class='vslow'>Danger</span>, <span class='slow'>Warning</span>
 
@@ -71,7 +71,7 @@ This distribution chart displays the CPU usage of all servers. It displays data 
 
   - Five servers are selected by default, and the usage trend of the selected servers are also provided in a multi-line chart.
 
-  - **_Click Refresh_** to refresh the current data. 
+  - Click ![Refresh icon](/img/ico-refresh.svg) <Cmdname sid="refresh" className="uitext" /> to refresh the current data. 
 
 :::note
 
@@ -83,16 +83,16 @@ Multiple lines are displayed on a chart.
 
 ## ![](/img/number-04.png) Resource Equalizer
 
-It displays a list of the top 5 servers in real time for **_CPU_**, **_memory_**, **_disk I/O_**, and **_disk IOPS_**.
+It displays a list of the top 5 servers in real time for <Cmdname sid="cpu" className="uitext" />, <Cmdname sid="memory" className="uitext" />, <Cmdname sid="diskIo" className="uitext" />, and <Cmdname sid="disk_iops" className="uitext" />.
 
 For example, the disk I/O (%) metric displays the disk usage for 5 seconds. If the disk I/O usage (%) exceeds 80%, the system performance can be affected. The default alert value is 90%. If the disk I/O (%) is 100%, it means that the disk is working non-stop.
 
-- If you select the equalizer chart area, the target **_Server Details_** page appears. 
+- If you select the equalizer chart area, the target <Cmdname sid="side_serverDetail" className="uitext" /> page appears. 
 
-- If you select ![right-arrow](/img/right-arrow.svg), the **_Resource Equalizer_** page appears. You can see the real-time usage for all servers.
+- If you select ![right-arrow](/img/right-arrow.svg), the <Cmdname sid="side_resourceEqualizer" className="uitext" /> page appears. You can see the real-time usage for all servers.
 
 ## ![](/img/number-05.png) Process Top 5
 
-The list of top 5 processes is provided based on the maximum occupancy of CPU and memory. If you select ![right-arrow](/img/right-arrow.svg), the **_process list_** for all servers appears. 
+The list of top 5 processes is provided based on the maximum occupancy of CPU and memory. If you select ![right-arrow](/img/right-arrow.svg), the <Cmdname sid="process_list" className="uitext" /> for all servers appears.
 
 <ImgLang img='server-process-list-dt.png' desc='Server process list'/>

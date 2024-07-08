@@ -15,3 +15,17 @@ If a problem occurs due to a parameter in the database, the cause can be quickly
 To check the changes between the current time and the selected past date at a glance, select <Cmdname sid="view_changes" className="uitext" />.
 
 <ProdImg img='db-databaseparameter-changed.png' desc='Database parameter'/>
+
+<Xclude product="redis,mongodb,oracle-dma">
+
+:::tip
+
+**Comparing database parameters for today**
+
+<Xclude product="cubrid"><ProdImg img="db-databaseparameter-compare-today.png" desc="Database parameter" /></Xclude>
+
+If you set both <Cmdname sid="reference_date" className="uitext" /> and <Cmdname sid="comparison_date" className="uitext" /> to the date for today, you can view and compare the real-time data and the last saved data. The storage time of the last data may differr depending on the database server environment.
+
+:::
+
+</Xclude>

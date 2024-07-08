@@ -16,13 +16,32 @@ To delete the installed agent, execute the following command.
   ```bash title=SH
   sudo apt-get remove whatap-infra
   ```
-- **CentOS/Amazon Linux/SUSE/XenServer**
+- **CentOS / Amazon Linux / SUSE**
   ```bash title=SH
   sudo yum remove whatap-infra
   ```
+
+### Unix
+
 - **FreeBSD**
+
   ```bash title=SH
   pkg delete whatap-infra
+  ```
+
+- **AIX**
+
+  ```bash
+  stopsrc -s whatap-infra
+  rpm -e whatap-infra
+  rm -rf /usr/whatap/infra
+  ```
+
+- **Oracle Solaris**
+
+  ```bash
+  pkgrm whatap-infra
+  rm -rf /usr/whatap/infra
   ```
 
 ### Windows

@@ -21,7 +21,7 @@ The agent works as the default **127.0.0.1:6600** TCP server. It receives data f
 
 3. Run the whatap-agent service.
 
-![Go Monitoring](/img/golang_system.png)
+<ImgLang img="golang_system.png" desc="Go Monitoring" />
 
 To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/en/signup/), create a project and then install the agent to the target server.
 
@@ -83,27 +83,30 @@ $ sudo yum install whatap-agent
 
 [whatap-agent.tar.gz]After downloading the file (https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz), unzip the file based on the "/" directory. Create the monitoring file in the _/usr/whatap/agent_ path.
 
-```bash title='SH'
-$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
-$ tar -xvzf whatap-agent.tar.gz -C /
+<Tabs>
+
+<TabItem value="x64" label="x64" default>
+
+```docker title='x64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
 ```
 
 </TabItem>
-<TabItem value="al-docker" label="Alpine Linux Docker">
 
-[whatap-agent.tar.gz]After downloading the file (https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz), unzip the file in the _/usr/whatap/agent_ path.
+<TabItem value="aarch64" label="AArch64" default>
 
-```bash title='SH'
-FROM alpine
-
-RUN apk update && apk upgrade
-
-# Install WhaTap Go monitoring agent
-RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
-RUN tar -xvzf whatap-agent.tar.gz -C /
+```docker title='AArch64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
 ```
 
 </TabItem>
+
+</Tabs>
+
+</TabItem>
+
 </Tabs>
 
 <details>
