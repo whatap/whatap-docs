@@ -17,7 +17,7 @@ tags:
 
 ## トランザクショントレーシング {#php-trs-trc}
 
-以下は、アプリケーション内の各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な側面を調整できます。
+以下は、アプリケーションの各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な部分を調整可能です。
 
 import Phptrsprofile from "../common-items/_php-trs-profile.mdx";
 
@@ -33,7 +33,11 @@ import Phptracktrs from "../common-items/_php-track-trs.mdx";
 
 - **whatap.biz_exceptions** <span class='type'>String</span>
 
-  特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒットマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
+  特定のErrorまたはExceptionをBusiness Exceptionに指定します。ヒートマップではエラーとして表記されず、統計情報にのみ収集されます。収集されるError Class 名と同様に適用します。コンマ(,)を区切り文字として複数登録できます。
+
+  ```ini title="whatap.conf"
+  whatap.biz_exceptions=HttpConnectionServerError(400), GuzzleHttp\Exception\ServerException, CustomException
+  ```
 
   :::tip
 
@@ -47,6 +51,10 @@ import Phptracktrs from "../common-items/_php-track-trs.mdx";
 
   Exceptionの場合、Custom Exception Classが定義されていない場合、基本的にExceptionとして収集されます。特定のExceptionを区別するために、Custom Exception Classを定義し、その名前を指定することで除外できます。
 
+  ```ini title="whatap.conf"
+  whatap.ignore_exceptions=HttpConnectionServerError(400), GuzzleHttp\Exception\ServerException, CustomException
+  ```
+
   :::tip
 
   エラークラス無視 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
@@ -55,7 +63,7 @@ import Phptracktrs from "../common-items/_php-track-trs.mdx";
 
 ## HTTPトランザクションの追跡 {#php-track-http-trs}
 
-以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザーはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
 
 import Phptrackhttptrs from "../common-items/_php-track-http-trs.mdx";
 
@@ -63,7 +71,7 @@ import Phptrackhttptrs from "../common-items/_php-track-http-trs.mdx";
 
 ## マルチトランザクショントレース
 
-以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡の詳細な動作を調整できます。
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡に対する詳細な動作を調整できます。
 
 import Phpmultitrace from "../common-items/_php-multi-trace.mdx";
 

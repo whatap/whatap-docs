@@ -1,12 +1,12 @@
 ## ヒットマップ{#hitmap}
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_ヒットマップ_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_hitmap" className="uitext" />
 
-WhaTapモニタリングサービスのホーム画面でプロジェクトを選択し、プロジェクトメニューの配下にある**_分析_** > **_ヒットマップ_**メニューを選択してください。 
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択した後、<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_hitmap" className="uitext" />メニューを選択します。 
 
 :::note
 
-**_ヒットマップ_**は、**_ダッシュボード_** > **_アプリケーションダッシュボード_**の**_ヒットマップ_**ウィジェットからもアクセスできます。
+<Cmdname sid="side_hitmap" className="uitext" />は、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />の<Cmdname sid="AA005" className="uitext" />ウィジェットからもアクセスできます。
 
 :::
 
@@ -16,23 +16,23 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 #### ![number1](/img/number-01.png)エージェント領域
 
-現在のプロジェクトと関連づけられたエージェントを選択し、フィルタリングできます。![アイコン](/img/ic-search-on-press.svg) **_虫眼鏡_**アイコンを選択すると、![number2](/img/number-02.png)領域で**_ヒットマップトランザクション_**チャートが表示します。
+現在のプロジェクトと関連づけられたエージェントを選択し、フィルタリングできます。![アイコン](/img/ic-search-on-press.svg)ボタンを選択すると、![number2](/img/number-02.png)領域で<Cmdname sid="hitmap_transaction" className="uitext" />チャートが表示します。
 
-#### ![number2](/img/number-02.png)ヒットマップトランザクションチャート
+#### ![number2](/img/number-02.png)ヒットマップTXチャート {#hitmap_transaction}
 
-遅延の問題があるトランザクションが含まれている場合**_ヒットマップトランザクション_**チャートに、<span class='ov5ud10'>オレンジ</span>や<span class='etrs'>赤</span>で表示されます。通常のトランザクションが含まれている場合、<span class='woer'>青</span>で表示されます。
+遅延の問題があるトランザクションが含まれている場合<Cmdname sid="hitmap_transaction" className="uitext" />チャートに、<span class='ov5ud10'>オレンジ</span>や<span class='etrs'>赤</span>で表示されます。通常のトランザクションが含まれている場合、<span class='woer'>青</span>で表示されます。
 
 #### ![number3](/img/number-03.png)選択
 
-リアルタイムヒットマップチャートをドラッグすると、![number4](/img/number-04.png) **_エージェント一覧_**とトランザクション情報を確認できます ![number5](/img/number-05.png) **_TXトレース_** 一覧が表示されます。
+リアルタイムヒットマップチャートをドラッグすると、![number4](/img/number-04.png) <Cmdname sid="application_list" className="uitext" />一覧とトランザクション情報を確認できる![number5](/img/number-05.png) <Cmdname sid="trace_list" className="uitext" /> 一覧が表示されます。
 
-#### ![number4](/img/number-04.png)エージェント一覧
+#### ![number4](/img/number-04.png)アプリケーション一覧{#application_list}
 
-チャートで選択された領域に含まれるトランザクション数とエラー数を確認できます。一覧から目的のアプリケーションを選択し、![number5](/img/number-05.png)の**_TXトレース_**一覧に詳細が表示されます。
+チャートで選択された領域に該当するTXの数とエラーの数を確認できます。一覧からアプリケーションを選択すると、該当アプリケーションの![number5](/img/number-05.png)<Cmdname sid="trace_list" className="uitext" />一覧に詳細が表示されます。
 
-#### ![number5](/img/number-05.png)TXトレース一覧
+#### ![number5](/img/number-05.png)TXトレース一覧{#trace_list}
 
-**_TXトレース_**一覧に詳細情報が含まれています。一覧から目的のトランザクションを選択すると、**_統計_**情報ウィンドウが表示されます。**_統計_**ウィンドウでは、トランザクションのトレースの詳細分析を確認できます。詳細については、[次の文書](trs-profile#details)を参照にしてください。
+<Cmdname sid="trace_list" className="uitext" />一覧には詳細情報が含まれています。一覧からトランザクションを選択すると、<Cmdname sid="TTL06527" className="uitext" />画面が表示されます。<Cmdname sid="TTL06527" className="uitext" />画面から該当トランザクションのトレース分析を確認できます。詳細については、[次の文書](trs-profile#details)を参照してください。
 
 ### ヒットマップパターンを理解する
 
@@ -104,6 +104,6 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 :::note
 
-**_ヒットマップトランザクション_**チャートを分析する方法についての詳細は、[次の文書](../best-practice-guides/about-apm-hitmap-class)を参照にしてください。
+<Cmdname sid="hitmap_transaction" className="uitext" />チャートを分析する方法については、[次の文書](../best-practice-guides/about-apm-hitmap-class)を参照してください。
 
 :::

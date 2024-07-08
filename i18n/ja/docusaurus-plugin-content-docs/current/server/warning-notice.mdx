@@ -8,13 +8,13 @@ tags:
   - UI
 ---
 
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" />
 
-**_サーバー_**、**_プロセス_**、**_ログファイル_**および**_ウィンドウイベント_**などのイベントポリシーを作成、修正、削除できます。イベントタイプを選択してサーバーの再起動の可否、エージェントの通信障害の時間、リソース使用量などのイベントを設定できます。
+<Cmdname sid="server" className="uitext" />および<Cmdname sid="process" className="uitext" />、<Cmdname sid="sm_log_event_tab" className="uitext" />などのポリシーを作成・修正・削除できます。イベントタイプを選択して、サーバーの再起動有無、エージェントの通信トラブルの持続時間、リソース使用量に応じてイベントを設定できます。
 
 <ImgLang img='server-warning.png' desc='イベント設定 - サーバー'/>
 
-- ![指示線1](/img/number-01.png) **_+イベント設定追加_**
+- ![指示線1](/img/number-01.png) **_+_** <Cmdname sid="add_alert_setting" className="uitext" />
 
   イベントを追加できます。
 
@@ -22,11 +22,11 @@ tags:
 
   イベントの名前を表示します
 
-- ![指示線3](/img/number-03.png)**_条件_**
+- ![指示線3](/img/number-03.png) <Cmdname sid="condition" className="uitext" />
 
   イベントの条件を表示します.
 
-- ![指示線4](/img/number-04.png)**_サーバー_**
+- ![指示線4](/img/number-04.png) <Cmdname sid="server" className="uitext" />
 
   当該イベントが設定されたサーバーを表示します。    
 
@@ -38,47 +38,47 @@ tags:
 
 :::note
 
-- **_メトリクス_**イベントの追加は[次の文書](metric-warning-notice)を参照してください。
+- <Cmdname sid="metrics" className="uitext" />イベントの追加は、[次の文書](metric-warning-notice)を参照してください。
 
-- **_異常値検知_**イベントの追加は[次の文書](set-event-detect-anomal)を参照してください。
+- <Cmdname sid="anomaly_detection" className="uitext" />イベントの追加は、[次の文書](set-event-detect-anomal)を参照してください。
 
-- **_ログ_**イベントの追加は[次の文書](set-event-log)参照してください。
+- <Cmdname sid="log" className="uitext" />イベントの追加は、[次の文書](set-event-log)参照してください。
 
 :::
 
 ## サーバーイベント設定の追加{#add-server-event}
 
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** > **_サーバー_** タブ > **_+ イベント追加_** ボタン選択
+ホーム画面> プロジェクト選択> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="server" className="uitext" />タップ> **_+_** <Cmdname sid="add_alert_setting" className="uitext" />ボタンを選択
 
 特定のサーバーの全体的なイベントを設定して、警告通知を受信できます。 
 
 <ImgLang img='server-server-event.png' desc='サーバーイベント追加 sc'/>
 
-1. **_イベント追加_**ウインドウが表示されると![number 1](/img/number-01.png)イベント**_タイトル_**を入力してください。
+1. <Cmdname sid="add_alert_setting" className="uitext" />画面が表示されると![number 1](/img/number-01.png)イベント<Cmdname sid="title" className="uitext" />を入力します。
 
-2. ![number 2](/img/number-02.png)**_サーバーリスト_**を確認するか、検索ウィンドウからモニタリングするサーバーを選択してください。 
+2. ![number 2](/img/number-02.png)<Cmdname sid="sms_server_list" className="uitext" />を確認するか、検索画面からモニタリングするサーバーを選択します。 
 
-3. ![number 3](/img/number-03.png)**_アラート通知条件_**タブで目的の**_メトリクス_**の**_条件_**、**_レベル_**、**_持続時間_**、**_活性化_**の有無を設定してください。
+3. ![number 3](/img/number-03.png) <Cmdname sid="alert_rule" className="uitext" />タブで目的の<Cmdname sid="indicator" className="uitext" />の<Cmdname sid="condition" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="sms_alert_duration" className="uitext" />、<Cmdname sid="enable" className="uitext" />の有無を修正します。
 
-   - **_レベル_**：<span class='slow'>アラート</span>または<span class='vslow'>危険</span>レベルを選択できます。
+   - <Cmdname sid="level" className="uitext" />：<Cmdname sid="sms_alert_warn" className="slow" />または<Cmdname sid="sms_alert_fatal" className="vslow" />レベルを選択できます。
 
-   - **_持続時間_**：設定した**_持続時間_**以降のサーバの状態が<span class='slow'>アラート</span>、<span class='vslow'>危険</span>レベルに変更されます。
+   - <Cmdname sid="sms_alert_duration" className="uitext" />：設定した<Cmdname sid="sms_alert_duration" className="uitext" />以降のサーバの状態が<Cmdname sid="sms_alert_warn" className="slow" />、<Cmdname sid="sms_alert_fatal" className="vslow" />レベルに変更されます。
 
-   **_メトリクス_**ガイダンスは以下を参照してください。 
+   <Cmdname sid="indicator" className="uitext" />ガイダンスは以下を参照してください。
 
-   - **_再起動_**：サーバーの再起動時に発生するイベントです。
+   - <Cmdname sid="restart" className="uitext" />：サーバーの再起動時に発生するイベントです。
 
-   - **_未受信_**：エージェントから**_持続時間_**の間、正常なデータを受信できなかった場合に発生する通信障害イベントです。
+   - <Cmdname sid="down" className="uitext" />：エージェントから<Cmdname sid="sms_alert_duration" className="uitext" />の間、正常なデータを受信できなかった場合に発生する通信障害イベントです。
 
-   - **_ポート_**：ポート接続不可イベントです。プロジェクト内に登録されたエージェントは、**10120ポート**を使用して双方の状態を確認します。 **_持続時間_**の間の通信が行われない場合に発生するイベントです。  
+   - <Cmdname sid="port" className="uitext" />：ポート接続不可イベントです。プロジェクト内に登録されたエージェントは、**10120ポート**を使用して双方の状態を確認します。<Cmdname sid="sms_alert_duration" className="uitext" />の間の通信が行われない場合に発生するイベントです。
 
-   - **_CPU、Memory、スワップ_**：CPU、Memory、SWAPメモリなどの使用量に関するイベントを設定します。 
+   - <Cmdname sid="cpu" className="uitext" />、<Cmdname sid="mem" className="uitext" />、<Cmdname sid="swap" className="uitext" />：CPU、Memory、SWAPメモリなどの使用量に関するイベントを設定します。
 
-   - **_Steal_**：CPU Steal Timeのイベントを設定します。Linux系のOSのみ設定できます。 
+   - <UI>Steal</UI>：CPU Steal Timeのイベントを設定します。Linux系のOSのみ設定できます。
 
-   - **_Disk_**：ディスク使用量とI/O使用量、Inode使用量に基づいてイベントを設定します。
+   - <Cmdname sid="diskIo" className="uitext" />、<Cmdname sid="diskQuota" className="uitext" />、<UI>inode</UI>：ディスク使用量とI/O使用量、Inode使用量に基づいてイベントを設定します。
 
-   - **_Network_**：ネットワーク使用量に関するイベントを設定します。トラフィック量と毎秒パケットを基準に設定できます。 
+   - <Cmdname sid="networkIops" className="uitext" />、<Cmdname sid="networkBps" className="uitext" />：ネットワーク使用量に関するイベントを設定します。トラフィック量と毎秒パケットを基準に設定できます。
 
 4. ![number 4](/img/number-04.png) <Cmdname sid="event_tag" className="uitext" />を設定してください。 
 
@@ -88,7 +88,7 @@ tags:
 
    - <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューからプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。<Cmdname sid="event_receive_configuration" className="uitext" />メニューの詳細は<Link to="set-receive-event#set-notice-by-team-or-users">次の文書</Link>を参照してください。
 
-5. イベント設定終了後、![number 5](/img/number-05.png)**_保存_**ボタンを選択してください。
+5. イベント設定終了後、![number 5](/img/number-05.png)<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 :::caution
 
@@ -103,62 +103,62 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
 ![サーバー基本通知sc](/img/server-default-notice-setting.png)
 
-- **_再起動_**：有効化
+- <Cmdname sid="restart" className="uitext" />：活性化
 
-- **_ネットワークIOPS_**
+- <Cmdname sid="networkIops" className="uitext" />
 
-  - <span class='slow'>アラート</span>：45,000 pps / 持続時間：5分
-  - <span class='vslow'>危険</span>：50,000 pps / 持続時間：5分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：45,000 pps / 持続時間：5分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：50,000 pps / 持続時間：5分
 
-- **_ネットワークBPS_**
+- <Cmdname sid="networkBps" className="uitext" />
 
-  - <span class='slow'>アラート</span>：5000,000,000 bps / 持続時間：5分
-  - <span class='vslow'>危険</span>：7000,000,000 bps / 持続時間：5分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：5000,000,000 bps / 持続時間：5分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：7000,000,000 bps / 持続時間：5分
 
-- **_ディスクI/O_**
+- <Cmdname sid="diskIo" className="uitext" />
 
-  - <span class='slow'>アラート</span>：90% / 持続時間：5分
-  - <span class='vslow'>危険</span>：95% / 持続時間：5分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：90% / 持続時間：5分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：95% / 持続時間：5分
 
-- **_ディスク使用量_**
+- <Cmdname sid="diskQuota" className="uitext" />
 
-  - <span class='slow'>アラート</span>：90% / 持続時間：5分
-  - <span class='vslow'>危険</span>：95% / 持続時間：5分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：90% / 持続時間：5分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：95% / 持続時間：5分
 
 - **_inode_**
 
-  - <span class='slow'>アラート</span>：90% / 持続時間：5分
-  - <span class='vslow'>危険</span>：95% / 持続時間：5分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：90% / 持続時間：5分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：95% / 持続時間：5分
 
-- **_CPU_**
+- <Cmdname sid="cpu" className="uitext" />
 
-  - <span class='slow'>アラート</span>：70% / 持続時間：1分
-  - <span class='vslow'>危険</span>：90% / 持続時間：1分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：70% / 持続時間：1分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：90% / 持続時間：1分
 
-- **_メモリ_**
+- <Cmdname sid="mem" className="uitext" />
 
-  - <span class='slow'>アラート</span>：70% / 持続時間：1分
-  - <span class='vslow'>危険</span>：90% / 持続時間：1分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：70% / 持続時間：1分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：90% / 持続時間：1分
 
 - **_steal_**
 
-  - <span class='slow'>アラート</span>：5% / 持続時間：1分
-  - <span class='vslow'>アラート</span>：10% / 持続時間：1分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：5% / 持続時間：1分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：10% / 持続時間：1分
 
-- **_スワップ_**
+- <Cmdname sid="swap" className="uitext" />
 
-  - <span class='slow'>アラート</span>：50% / 持続時間：1分
-  - <span class='vslow'>危険</span>：90% / 持続時間：1分
+  - <Cmdname sid="sms_alert_warn" className="slow" />：50% / 持続時間：1分
+  - <Cmdname sid="sms_alert_fatal" className="vslow" />：90% / 持続時間：1分
 
 </details>
 
 ## プロセスイベント設定の追加{#process-event}
 
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** > **_プロセス_** タブ > **_+ イベント追加_** ボタン選択
+ホーム画面> プロジェクト選択 > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="process" className="uitext" />タップ> **_+_** <Cmdname sid="add_alert_setting" className="uitext" />ボタン選択
 
-特定のプロセスのイベントを設定して、アラート通知を受信できます。主要メトリクスである**_プロセス数_**、**_プロセスCPU_**使用量、**_プロセスメモリ_**使用量に基づいて条件を指定すると、そのプロセスが予期せず終了したり、性能が急激に変動した場合はリアルタイムでアラートを受けることがあります。
+特定のプロセスのイベントを設定して、アラート通知を受信できます。主要メトリクスである<Cmdname sid="processcount" className="uitext" />、<Cmdname sid="processcpu" className="uitext" />の使用量、<Cmdname sid="processmem" className="uitext" />の使用量に基づいて条件を指定すると、そのプロセスが予期せず終了したり、性能が急激に変動した場合はリアルタイムでアラートを受けることがあります。
 
-警告と危険レベル、そして設定したしきい値が維持される**_持続時間_**を設定して、イベントの深刻さを評価できます。また**_イベント受信タグ_**を活用して、特定のプロジェクト メンバーに通知を送信できます。これにより、効率的に優先順位に応じた措置できます。
+警告と危険レベル、そして設定したしきい値が維持される<Cmdname sid="sms_alert_duration" className="uitext" />を設定して、イベントの深刻さを評価できます。また<Cmdname sid="event_tag" className="uitext" />を活用して、特定のプロジェクト メンバーに通知を送信できます。これにより、効率的に優先順位に応じた措置できます。
 
 {/* 
 
@@ -168,9 +168,9 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
 <ImgLang img='server-process-event.png' desc='プロセスイベント追加 sc'/>
 
-1. **_イベント追加_**ウインドウが表示されると![number 1](/img/number-01.png)イベント**_タイトル_**を入力してください。
+1. <Cmdname sid="add_alert_setting" className="uitext" />画面が表示されると![number 1](/img/number-01.png)イベント<Cmdname sid="title" className="uitext" />を入力します。
 
-2. ![number 2](/img/number-02.png)**_アラート通知条件_**タブで**_サーバーリスト_**の**_エージェントが選択されていません。_**ボタンをクリックして**_サーバーリスト_**ウィンドウからサーバーを選択します。 
+2. ![number 2](/img/number-02.png) <Cmdname sid="alert_rule" className="uitext" />タブで<Cmdname sid="sms_server_list" className="uitext" />の<Cmdname sid="empty_selected_agent" className="uitext" />ボタンをクリックして<Cmdname sid="sms_server_list" className="uitext" />画面でサーバーを選択します。 
 
    :::note
 
@@ -178,7 +178,7 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
    :::
 
-3. **_プロセス_**選択ウィンドウからプロセスまたはプロセスグループを選択してください。 
+3. <Cmdname sid="process" className="uitext" />の選択欄からプロセスまたはプロセスグループを選択します。
 
    :::note
 
@@ -186,22 +186,22 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
    :::
 
-4. **_プロセス所有者_**を選択してください。 
+4. <Cmdname sid="process_owner" className="uitext" />を選択します。
 
-   - **_プロセス所有者_**を指定しない場合、所有者に関係なく同じ名前のすべてのプロセスにその設定が適用されます。
-   - イベント条件は、 **_プロセス所有者 _**を省略した場合でも、所有者-プロセス単位で動作します。
+   - <Cmdname sid="process_owner" className="uitext" />を指定しない場合、所有者に関係なく同じ名前のすべてのプロセスにその設定が適用されます。
+   - イベント条件は、<Cmdname sid="process_owner" className="uitext" />を省略した場合でも、所有者-プロセス単位で動作します。
 
-5. 必要な**_メトリクス_**の**_レベル_**、**_持続時間_**、**_有効化_**を設定してください。
+5. ご希望の<Cmdname sid="indicator" className="uitext" />の<Cmdname sid="level" className="uitext" />、<Cmdname sid="sms_alert_duration" className="uitext" />、<Cmdname sid="enable" className="uitext" />有無を設定してください。
 
-   - **_レベル_**：<span class='slow'>アラート</span>または<span class='vslow'>危険</span>レベルを選択できます。
+   - <Cmdname sid="level" className="uitext" />：<Cmdname sid="sms_alert_warn" className="slow" />または<Cmdname sid="sms_alert_fatal" className="vslow" />レベルを選択できます。
 
-   - **_持続時間_**：設定したしきい値の**_持続時間_**以降のサーバの状態が<span class='slow'>警告</span>、<span class='vslow'>危険</span>レベルに変更されます。
+   - <Cmdname sid="sms_alert_duration" className="uitext" />：設定したしきい値の<Cmdname sid="sms_alert_duration" className="uitext" />以降のサーバの状態が<Cmdname sid="sms_alert_warn" className="slow" />、<Cmdname sid="sms_alert_fatal" className="vslow" />レベルに変更されます。
 
-   **_メトリクス_**ガイダンスは以下を参照してください。 
+   <Cmdname sid="indicator" className="uitext" />ガイダンスは以下を参照してください。
 
-   - **_プロセス数_**：同じ名前のプロセスの数に対してイベントを設定できます。**_危険_**と**_警告_**条件の個数を指定してください。
-   - **_プロセスCPU_**：CPU使用量に応じてイベントを設定できます。
-   - **_プロセスMemory_**：メモリ使用量に応じてイベントを設定できます。
+   - <Cmdname sid="processcount" className="uitext" />：同じ名前のプロセスの数に対してイベントを設定できます。<Cmdname sid="sms_alert_fatal" className="uitext" />と<Cmdname sid="sms_alert_warn" className="uitext" />条件の個数を指定してください。
+   - <Cmdname sid="processcpu" className="uitext" />：CPU使用量に応じてイベントを設定できます。
+   - <Cmdname sid="processmem" className="uitext" />：メモリ使用量に応じてイベントを設定できます。
 
 6. ![number 3](/img/number-03.png) <Cmdname sid="event_tag" className="uitext" />を設定してください。 
 
@@ -211,30 +211,30 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
    - <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューからプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。<Cmdname sid="event_receive_configuration" className="uitext" />メニューの詳細は<Link to="set-receive-event#set-notice-by-team-or-users">次の文書</Link>を参照してください。
 
-7. イベント設定を終えると![number 4](/img/number-04.png)**_保存_**ボタンを選択してください。
+7. イベント設定を終えると![number 4](/img/number-04.png) <Cmdname sid="save" className="uitext" />ボタンを選択してください。
 
 :::note
 
-- プロセス通知 **_条件_**を誤って設定した場合は、通知を無効にするか、通知 **_条件_**を再設定してください。
-- **_プロセス_** および **_プロセス所有者_**を誤って指定した場合は、通知を無効にして進行中の通知を閉じた後に、通知 **_条件_**を再設定してください。
+- プロセス通知の<Cmdname sid="condition" className="uitext" />を誤って設定した場合は、通知を無効にするか、通知の<Cmdname sid="condition" className="uitext" />を再設定します。
+- <Cmdname sid="process" className="uitext" />および<Cmdname sid="process_owner" className="uitext" />を誤って指定した場合は、通知を無効にして進行中の通知を閉じた後に、通知条件を再設定してください。
 
 :::
 
 ## ログファイルおよびウィンドウイベントの追加
 
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** > **_ログファイル/ウィンドウイベント_** タブ > **_+ イベント追加_** ボタン選択
+ホーム画面> プロジェクト選択> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="sm_log_event_tab" className="uitext" />タップ> **_+_** <Cmdname sid="add_alert_setting" className="uitext" />ボタン選択
 
 特定のログファイルとウィンドウイベント設定を管理できます。
 
 ### ログファイル{#log-file-event}
 
-**_ログファイル_**イベントを追加するには、次を確認して**_イベント発生条件_**を指定してください。 
+<Cmdname sid="log_file" className="uitext" />イベントを追加するには、次を確認して<Cmdname sid="metrics_event_rules" className="uitext" />を指定してください。
 
 <ImgLang img='server-log-file.png' desc='ログファイル イベント追加 sc'/>
 
-1. **_イベント追加_**ウインドウが表示されると![number 1](/img/number-01.png)イベント**_タイトル_**を入力してください。
+1. <Cmdname sid="add_alert_setting" className="uitext" />画面が表示されると![number 1](/img/number-01.png)イベント<Cmdname sid="title" className="uitext" />を入力します。
 
-2. ![number 2](/img/number-02.png)**_サーバーリスト_**を確認するか、検索ウィンドウからモニタリングするサーバーを選択してください。 
+2. ![number 2](/img/number-02.png)<Cmdname sid="sms_server_list" className="uitext" />を確認するか、検索画面からモニタリングするサーバーを選択します。 
 
    :::note
 
@@ -242,31 +242,31 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
    :::
 
-3. ![number 3](/img/number-03.png)**_アラート通知条件_**タブから**_ログの種類_**を **_ログファイル_**として選択します。
+3. ![number 3](/img/number-03.png) <Cmdname sid="alert_rule" className="uitext" />タブから<Cmdname sid="sms_alert_log_rule_type" className="uitext" />を<Cmdname sid="log_file" className="uitext" />として選択します。
 
-4. 例にして、**_ファイルパス_**を正規表現として入力してください。 
+4. 例にして、<Cmdname sid="sms_alert_log_rule_file_path" className="uitext" />を正規表現として入力してください。 
 
    > 例）_/var/log/mylogfile_%Y-%m-%d_%H:%M:%S.log_
 
-5. イベントを発生させる**_検索キーワード_**を入力してください。複数指定ができます。
+5. イベントを発生させる<Cmdname sid="sms_alert_log_rule_keyword" className="uitext" />を入力します。複数指定できます。
 
-6. 通知から除外する**_検出除外文字列_**を入力してください。複数指定ができます。
+6. 通知から除外する<Cmdname sid="sms_alert_log_rule_keyword_exclude" className="uitext" />を入力してください。複数指定ができます。
 
-7. 数秒間指定した**_キーワード_**を検出した時に通知を受信する**_の繰り返し回数_**と**_期間_**を入力してください。 
+7. 数秒間指定した**_キーワード_**を検出した時に通知の受信有無の基準で<Cmdname sid="sms_alert_log_rule_keyword_option_repeat" className="uitext" />と<Cmdname sid="sms_alert_log_rule_keyword_option_duration" className="uitext" />を入力します。 
 
-8. イベントの**_危険度_**を選択してください。<span class='vslow'>危険</span>あるいは<span class='slow'>警告</span>レベルを選択できます。
+8. イベントの<Cmdname sid="sms_alert_severity" className="uitext" />を選択してください。<Cmdname sid="sms_alert_fatal" className="vslow" />あるいは<Cmdname sid="sms_alert_warn" className="slow" />レベルを選択できます。
 
-9. ![number 4](/img/number-04.png) **_保存_**ボタンを選択してください。
+9. ![number 4](/img/number-04.png) <Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 ### ウィンドウイベント{#windows-event}
 
-**_ウィンドウイベント_**を追加するには、次の流れで、**_アラート通知条件_**を指定します。Windows環境でのみ使用できます。
+<Cmdname sid="window_event" className="uitext" />を追加するには、次の流れで、<Cmdname sid="metrics_event_rules" className="uitext" />を指定します。Windows環境でのみ使用できます。
 
 <ImgLang img='server-log-windows.png' desc='Windowsイベント追加 sc'/>
 
-1. **_イベント追加_**ウインドウが表示されると![number 1](/img/number-01.png)イベント**_タイトル_**を入力してください。
+1. <Cmdname sid="add_alert_setting" className="uitext" />画面が表示されると![number 1](/img/number-01.png)イベント<Cmdname sid="title" className="uitext" />を入力します。
 
-2. ![number 2](/img/number-02.png)**_サーバーリスト_**を確認するか、検索ウィンドウからモニタリングするサーバーを選択してください。 
+2. ![number 2](/img/number-02.png)<Cmdname sid="sms_server_list" className="uitext" />を確認するか、検索画面からモニタリングするサーバーを選択します。 
 
    :::note
 
@@ -274,21 +274,21 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
    :::
 
-3. ![number 3](/img/number-03.png)**_アラート通知条件_**タブで**_ログの種類_**を**_ウィンドウイベント_**として選択します。
+3. ![number 3](/img/number-03.png) <Cmdname sid="alert_rule" className="uitext" />タブから<Cmdname sid="sms_alert_log_rule_type" className="uitext" />を<Cmdname sid="window_event" className="uitext" />として選択します。
 
-4. 次の例を参照して、**_ログ名_**を選択してください。
+4. 次の例を参照して、<Cmdname sid="sms_alert_log_rule_event_category" className="uitext" />を選択してください。
 
    <ImgLang img='server-log-windows-a-01.png' desc='ログ名'/>
 
-5. 次の例を参照して**_レベル_**、**_ソース_**(イベントソース)、**_イベントID_**、**_検索キーワード_**を指定してください。**_検索キーワード_**は複数指定できます。
+5. 次の例を参照して<Cmdname sid="sms_alert_log_rule_event_level" className="uitext" />、<Cmdname sid="sms_alert_log_rule_eventsource" className="uitext" />(イベントソース)、<Cmdname sid="sms_alert_log_rule_eventid" className="uitext" />、<Cmdname sid="sms_alert_log_rule_keyword" className="uitext" />を指定してください。<Cmdname sid="sms_alert_log_rule_keyword" className="uitext" />は複数指定できます。
 
    <ImgLang img='server-log-windows-a-02.png' desc='レベル, イベントソースなど'/>
 
-6. 通知から除外する**_検出除外文字列_**を入力してください。複数指定ができます。
+6. 通知から除外する<Cmdname sid="sms_alert_log_rule_keyword_exclude" className="uitext" />を入力してください。複数指定ができます。
 
-7. イベントの**_危険度_**を選択してください。<span class='vslow'>危険</span>あるいは<span class='slow'>警告</span>レベルを選択できます。
+7. イベントの<Cmdname sid="sms_alert_severity" className="uitext" />を選択してください。<Cmdname sid="sms_alert_fatal" className="vslow" />あるいは<Cmdname sid="sms_alert_warn" className="slow" />レベルを選択できます。
 
-8. ![number 4](/img/number-04.png) **_保存_**ボタンを選択してください。
+8. ![number 4](/img/number-04.png) <Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 #### ログファイル処理量
 
@@ -309,33 +309,33 @@ WhaTapサーバーモニタリング サービスは、エージェントのイ�
 
 ## イベントの修正{#event-edit}
 
-1. イベントリストの右側の![修正アイコン](/img/ico-edit.svg)**_修正_**アイコンを選択してください。 
+1. イベントリストの右側の![修正アイコン](/img/ico-edit.svg)<Cmdname sid="edit" className="uitext" />アイコンを選択します。 
 
-2. **_アラート通知条件_**タブで目的の**_メトリクス_**の**_条件_**、**_レベル_**、**_持続時間_**、**_活性化_**の有無を修正します。
+2. <Cmdname sid="alert_rule" className="uitext" />タブで目的の<Cmdname sid="indicator" className="uitext" />の<Cmdname sid="condition" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="sms_alert_duration" className="uitext" />、<Cmdname sid="enable" className="uitext" />の有無を修正します。
 
-3. イベントの修正が終わると、**_保存_**ボタンを選択してください。
+3. イベントの修正が終わると、<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 :::note
 
 - イベント修正時、特定のメトリクスに変更事項がある場合、メトリクスが停止していた進行状況の通知は<span class='vslow'>Disabled</span>されます。
 - 修正後、条件を満たすデータが入ってくると、新しい通知が発生します。
-- プロセス通知の**_タイトル_**、**_プロセス_**、**_プロセス所有者_**のいずれかの値を修正する場合、その条件をもつすべての通知は<span class='vslow'>Disabled</span>されます。
+- プロセス通知の<Cmdname sid="title" className="uitext" />、<Cmdname sid="process" className="uitext" />、<Cmdname sid="process_owner" className="uitext" />のいずれかの値を修正する場合、その条件をもつすべての通知は<span class='vslow'>Disabled</span>されます。
 
 :::
 
 ## イベントの削除{#event-delete}
 
-1. イベントリストの右側の![修正アイコン](/img/ico-edit.svg)**_修正_**アイコンを選択してください。 
+1. イベントリストの右側の![修正アイコン](/img/ico-edit.svg)<Cmdname sid="edit" className="uitext" />アイコンを選択します。 
 
-2. 修正画面の右上の![削除アイコン](/img/ic-delete-critical.svg)**_削除_**アイコンを選択してください。
+2. 修正画面の右上の![削除アイコン](/img/ic-delete-critical.svg)<Cmdname sid="delete" className="uitext" />アイコンを選択します。
 
 ## イベントのコピー{#event-copy}
 
-1. イベント一覧の右側の![コピーアイコン](/img/ico-copy.svg)**_コピー_**アイコンを選択してください。
+1. イベント一覧の右側の![コピーアイコン](/img/ico-copy.svg) <Cmdname sid="copy" className="uitext" />アイコンを選択してください。
 
-2. **_イベント設定をコピー_**ウィンドウが表示されると、目的のプロジェクトを選択するか下段の**_現在のプロジェクトにコピー_**を選択します。
+2. <Cmdname sid="TTL06597" className="uitext" />画面が表示されたら、希望するプロジェクトを選択するか、下段の<Cmdname sid="BTN06571" className="uitext" />を選択します。
 
-3. イベント設定をコピーするプロジェクトを指定して、**_コピー_**ボタンを選択してください。
+3. イベント設定をコピーするプロジェクトを指定して、<Cmdname sid="copy" className="uitext" />ボタンを選択します。
 
 :::note
 

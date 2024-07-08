@@ -19,13 +19,7 @@ tags:
 
 ## ログシンク(LogSink) の設定
 
-ログデータを収集します。次の例を参照してください。
-
-```ini title='whatap.conf'
-logsink_enabled=true
-logsink_zip_enabled=true
-logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
-```
+ログデータを収集します。
 
 ### 基本設定
 
@@ -46,3 +40,27 @@ logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
 - **logsink.files** <span class='type'>String</span>
 
   収集するログファイルの完全なパスおよびファイル名を設定します。複数のファイルを設定するにはコンマ(,)を区切り文字として使用します。
+
+### 例
+
+次の例を参照して、ユーザーの環境に合わせたエージェント設定を適用します。
+
+```ini title='whatap.conf'
+logsink_enabled=true
+logsink_zip_enabled=true
+logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
+```
+
+:::tip
+
+ログファイル名に、日付形式の変数を使用できます。Python `strftime()`使用基準として適用します。 
+
+> 例、20240101:`%Y%m%d`
+
+```ini title="whatap.ini"
+whatap.logsink.files=/etc/httpd/logs/customlog-%Y%m%d
+```
+
+この機能は、Goエージェント0.3.2バージョン以降に対応しています。 
+
+:::

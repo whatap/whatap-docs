@@ -1,52 +1,52 @@
 <Xclude product='amazon-cloudwatch,amazon-ecs,azure,ncloud,browser'>
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_metricsSearch" className="uitext" />
 
 </Xclude>
 
 <InDoc product='amazon-cloudwatch,amazon-ecs,azure,ncloud'>
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="metrics" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_metrics" className="uitext" /> > <Cmdname sid="side_metricsSearch" className="uitext" />
 
 </InDoc>
 
 <InDoc product="browser">
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="laboratory" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_lab" className="uitext" /> > <Cmdname sid="side_metricsSearch" className="uitext" />
 
 </InDoc>
 
-**_メトリクス検索_**メニューからタグベースで特定のメトリクスを検索することができます。 
+<Cmdname sid="side_metricsSearch" className="uitext" />メニューからタグベースで特定のメトリクスを照会できます。
 
 <ImgLang img='metrics-search.png' desc='メトリクス参照' />
 
 ## ![](/img/number-01.png)時間とカテゴリの選択
 
-![number 1](/img/number-01.png)領域でメトリクスが収集された**_時間_**と**_最大個数_**および**_カテゴリ_**を指定することができます。 **_時間_**と**_カテゴリ_**は、必ず指定してください。
+![number 1](/img/number-01.png)領域でメトリクスが収集された<Cmdname sid="time_selector" className="uitext" />と<Cmdname sid="max_count" className="uitext" />および<Cmdname sid="category" className="uitext" />を指定することができます。 <Cmdname sid="time_selector" className="uitext" />と<Cmdname sid="category" className="uitext" />は、必ず指定してください。
 
-- **_時間_**：メトリクスが収集された時間を指定して表示することができます。 既定値は`1時間`です。 基本オプションとして提供する検索時間以外に、ユーザーが**_時間_**タブを選択して日付と時間を指定することができます。
+- <Cmdname sid="time_selector" className="uitext" />：メトリクスが収集された時間を指定して照会できます。 既定値は`1時間`です。 基本オプションとして提供する照会時間以外に、ユーザーが<Cmdname sid="time_selector" className="uitext" />タブを選択して日付と時間を指定できます。
 
-- **_最大数_**：![number 3](/img/number-03.png)一覧から参照するメトリクスの最大数を指定できます。 `10`、`50`、`100`、`200`、`300`、`1000`、`2000`、`3000`個まで設定できます。
+- <Cmdname sid="max_count" className="uitext" />：![number 3](/img/number-03.png)一覧から参照するメトリクスの最大数を指定できます。 `10`、`50`、`100`、`200`、`300`、`1000`、`2000`、`3000`個まで設定できます。
 
-- **_カテゴリ_**：関連指標の分類単位です。 **_カテゴリ_**タブを選択し、目的の**_カテゴリ_**を指定することができます。
+- <Cmdname sid="category" className="uitext" />：関連指標の分類単位です。 <Cmdname sid="category" className="uitext" />タブを選択し、目的の<Cmdname sid="category" className="uitext" />を指定することができます。
 
-- ![更新アイコン](/img/ic-refresh-w-bg.svg) **_更新_**：**_更新_**アイコンを選択すると**_カテゴリ_**、**_タグ_**および**_フィールド_**オプションを再読み込みすることができます。
+- ![更新アイコン](/img/ic-refresh-w-bg.svg) <Cmdname sid="refresh_tag_options" className="uitext" />：<Cmdname sid="category" className="uitext" />、<Cmdname sid="tags" className="uitext" />および<Cmdname sid="field" className="uitext" />オプションを再読み込みすることができます。
 
 ## ![](/img/number-02.png)タグとフィールドの選択
 
-![number 2](/img/number-02.png)領域で**_タグ_**と**_フィールド_**を選択します。 ユーザーが個別に指定しない場合、デフォルト設定が完全な選択になります。 
+![number 2](/img/number-02.png)領域で<Cmdname sid="tags" className="uitext" />と<Cmdname sid="field" className="uitext" />を選択します。 ユーザーが個別に指定しない場合、デフォルト設定が完全な選択になります。 
 
-- **_タグ_**：収集された対象を区分できる固有情報データです。
+- <Cmdname sid="tags" className="uitext" />：収集された対象を区分できる固有情報データです。
 
-- **_フィールド_**：モニタリング対象から収集された指標です。
+- <Cmdname sid="field" className="uitext" />：モニタリング対象から収集された指標です。
 
-- **_フィルター_**：![フィルターアイコン](/img/ico-filter.svg) **_タグ値でフィルタリング_**ボタンを選択し、タグ値を設定してフィルタリングできます。
+- <Cmdname sid="filter" className="uitext" />：![フィルターアイコン](/img/ico-filter.svg)<Cmdname sid="filter_by_tag_value" className="uitext" />ボタンを選択し、タグ値を設定してフィルタリングできます。
 
   > 例）`oname`の値を`demo-8101`に設定すると、フィルタリングしたデータを表示することができます。
 
-- ![検索アイコン](/img/ic-search-on-press.svg) **_検索_**：条件を設定して**_検索_**アイコンを選択すると、![number 3](/img/number-03.png)領域でそのメトリクスの原本データを検索できます。 
+- ![検索アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />：条件を設定して<Cmdname sid="search" className="uitext" />アイコンを選択すると、![number 3](/img/number-03.png)領域でそのメトリクスの原本データを検索できます。 
 
-- ![CSVダウンロードアイコン](/img/ic-csv-download-ms.svg) **_CSVダウンロード_**：**_CSVダウンロード_** ボタンを選択すると、メトリクスの原本データをCSVファイルとしてダウンロードできます。
+- ![CSVダウンロードアイコン](/img/ic-csv-download-ms.svg)：メトリクスの原本データをCSVファイルとしてダウンロードできます。
 
 <InDoc product="npm">
 
@@ -60,13 +60,13 @@
 
 ## ![](/img/number-03.png)メトリクステーブル
 
-収集されるメトリクスを事前に特定できないため、収集されるすべてのメトリクスの原本データを確認することが重要です。  上記の条件領域で目的の条件を設定した後![number 3](/img/number-03.png)領域で、そのメトリクスの原本データをテーブル形式で検索できます。 ユーザーが**_タグ_**と**_フィールド_**の各条件を指定することによって、テーブルのカラムが変更されます。
+収集されるメトリクスを事前に特定できないため、収集されるすべてのメトリクスの原本データを確認することが重要です。 上記の条件領域で目的の条件を設定した後![number 3](/img/number-03.png)領域で、そのメトリクスの原本データをテーブル形式で検索できます。 ユーザーが<Cmdname sid="tags" className="uitext" />と<Cmdname sid="field" className="uitext" />の各条件を指定することによって、テーブルのカラムが変更されます。
 
 :::note
 
-- メトリクスの参照時、**_時間_**と**_カテゴリ_**を指定する必要があります。 
+- メトリクスの参照時、<Cmdname sid="time_selector" className="uitext" />と<Cmdname sid="category" className="uitext" />を指定する必要があります。 
 
-- メトリクス参照時、**_タグ_**と**_フィールド_**の指定はオプションです。
+- メトリクス参照時、<Cmdname sid="tags" className="uitext" />と<Cmdname sid="field" className="uitext" />の指定はオプションです。
 
 <InDoc product="npm">
 
