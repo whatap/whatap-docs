@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5764],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89568],{
 
 /***/ 57666:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1281,14 +1281,7 @@ function _createMdxContent(props) {
             sid: "application_alert_template_3",
             className: "uitext"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "8초 초과 구간의 액티브 트랜잭션 수가 너무 많을 경우 경고 알림을 보냅니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "application_alert_template_5",
-            className: "uitext"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "TPS 수치가 급격하게 떨어지면 경고 알림을 보냅니다."
+            children: "8초 초과 구간의 액티브 트랜잭션 수가 100개를 초과하면 경고 알림을 보냅니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -2017,7 +2010,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 13556:
+/***/ 16414:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2043,7 +2036,7 @@ const frontMatter = {
 	title: '메트릭스 경고 알림',
 	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
 	tags: [
-		'Python',
+		'PHP',
 		'경고 알림',
 		'메트릭스 이벤트',
 		'애플리케이션 모니터링'
@@ -2051,21 +2044,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/metric-warning-notice",
+  "id": "php/metric-warning-notice",
   "title": "메트릭스 경고 알림",
   "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-  "source": "@site/docs/python/metric-warning-notice.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/metric-warning-notice",
-  "permalink": "/whatap-docs/python/metric-warning-notice",
+  "source": "@site/docs/php/metric-warning-notice.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/metric-warning-notice",
+  "permalink": "/whatap-docs/php/metric-warning-notice",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/metric-warning-notice.mdx",
+  "editUrl": "undefined/docs/php/metric-warning-notice.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "inline": true,
@@ -2089,20 +2082,20 @@ const metadata = {
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
     "tags": [
-      "Python",
+      "PHP",
       "경고 알림",
       "메트릭스 이벤트",
       "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "이벤트 설정",
-    "permalink": "/whatap-docs/python/warning-notice-v2"
+    "permalink": "/whatap-docs/php/warning-notice-v2"
   },
   "next": {
     "title": "알림 메시지 사용자 정의",
-    "permalink": "/whatap-docs/python/set-notification-message"
+    "permalink": "/whatap-docs/php/set-notification-message"
   }
 };
 const assets = {
