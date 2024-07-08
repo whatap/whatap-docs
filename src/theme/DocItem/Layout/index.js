@@ -16,6 +16,7 @@ import FacebookShare from '@site/src/components/facebook';
 import PrintPDF from '@site/src/components/printpage/PrintPage';
 import Feedback from '@site/src/components/Feedback';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import GenerateToc from '@site/src/components/GenerateToc';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -61,6 +62,7 @@ export default function DocItemLayout({children}) {
       {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
       <div className="col col--3">
         {docTOC.desktop}
+        {/* <GenerateToc device="desktop" /> */}
         <FacebookShare />
         <PrintPDF/>
         <Feedback/>
