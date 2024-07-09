@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 폴더 경로
-const folderPath = './crw-data/crwld-service-test';
+const folderPath = './crw-data/crwld-agent-24q2';
 
 // 폴더 내 파일 목록 읽기
 fs.readdir(folderPath, (err, files) => {
@@ -46,6 +46,8 @@ function modifyFile(filePath) {
         // 예외 처리: .NET Agent -> dotnet
         if (productName === '.net') {
             productName = 'dotnet';
+        } else if (productName === 'go') {
+            productName = 'golang'
         } else if (productName === 'kubernetes') {
             productName = 'k8s';
         } else {
