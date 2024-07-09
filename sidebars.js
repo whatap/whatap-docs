@@ -3221,7 +3221,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_6_1',
@@ -3230,7 +3230,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_6_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_6_0',
                 'release-notes/server/server-2_5_9',
@@ -3272,14 +3272,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_7_6',
+                id: 'release-notes/k8s/k8s-1_7_7',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_6',
+                  id: 'release-notes/k8s/k8s-1_7_7',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_6',
                 'release-notes/k8s/k8s-1_7_5',
                 'release-notes/k8s/k8s-1_7_4',
                 'release-notes/k8s/k8s-1_7_3',
@@ -3289,7 +3290,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_6_1',
                 'release-notes/k8s/k8s-1_6_0',
                 'release-notes/k8s/k8s-1_5_9',
-                'release-notes/k8s/k8s-1_5_8',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3326,7 +3326,7 @@ const sidebars = {
               label: 'XOS',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/xos-1_1_8f',
@@ -3335,7 +3335,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/xos-1_1_8f',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/xos-1_1_8b',
                 'release-notes/db/xos-1_1_8a',
