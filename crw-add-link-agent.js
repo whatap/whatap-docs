@@ -1,3 +1,4 @@
+// 브라우저 예외 처리 추가
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -61,6 +62,8 @@ function generateVersionLink(productName, versionLinkPart) {
         versionLinkDB = 'db/xos';
     } else if (versionLinkDB === 'dbx/dbx') {
         versionLinkDB = 'db/dbx';
+    } else if (versionLink = 'browser/browser'){
+        return `https://docs.whatap.io/release-notes/${versionLinkDB}-v${versionLinkPart}`;
     }
     return `https://docs.whatap.io/release-notes/${versionLinkDB}-${versionLinkPart}`;
 }
