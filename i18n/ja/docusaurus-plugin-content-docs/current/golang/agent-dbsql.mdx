@@ -22,6 +22,8 @@ tags:
 
   :::note
 
-  セキュリティキーは、*whatap.conf*ファイルがある`WHATAP_HOME`_/paramkey.txt_ファイルに６ケタで設定します。*paramkey.txt*ファイルがない場合は、ランダムに値が自動生成されます。
+  - <code class="my">Go agent v0.4.0 or later</code>: セキュリティキーは*whatap.conf*ファイルがある`WHATAP_HOME`*/security.conf*ファイル内の6桁(`paramkey`)に設定します。
+
+  - <code class="my">Below Go agent v0.4.0</code>: セキュリティキーは*whatap.conf*ファイルがある`WHATAP_HOME`*/paramkey.txt*ファイル内の6桁に設定します。*paramkey.txt*ファイルが存在しない場合は、ランダム値で自動生成します。
 
   :::

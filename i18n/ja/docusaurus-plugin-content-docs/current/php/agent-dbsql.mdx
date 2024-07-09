@@ -10,6 +10,8 @@ tags:
   - アプリケーション
 ---
 
+import Phprestartapply from "../common-items/_php-restart-apply.mdx";
+
 - **whatap.trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
@@ -30,7 +32,9 @@ tags:
 
   :::note
 
-  セキュリティキーは、WASサーバー_/usr/whatap/php/paramkey.txt_ファイル内に6桁で指定します。*paramkey.txt*ファイルが存在しない場合は、ランダム値で自動的に生成されます。
+  - <code class="my">PHP agent v2.8.0 or later</code>: セキュリティキーは*whatap.ini*ファイルがある`WHATAP_HOME`*/security.conf*ファイル内の6桁(`paramkey`)に設定します。
+
+  - <code class="my">Below PHP agent v2.8.0</code>：セキュリティキーは、*whatap.ini*ファイルがある`WHATAP_HOME`*/paramkey.txt*ファイルに６ケタで設定します。*paramkey.txt*ファイルがない場合は、ランダムに値が自動生成されます。
 
   :::
 
@@ -46,9 +50,7 @@ tags:
 
   同時に接続が維持されるDB Connection情報を最大に保存できるサイズです。過剰なDB Connection接続が確立されると、古い情報は削除されます。
 
-import Phprestartapply from "../common-items/_php-restart-apply.mdx";
-
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_mysql_return_enabled** <span class='type'>Boolean</span>
 

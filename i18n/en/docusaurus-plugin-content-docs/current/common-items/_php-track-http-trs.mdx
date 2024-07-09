@@ -52,9 +52,17 @@
 
   It is used to record HTTP parameters in the trace history. The parameters can be viewed by entering a separate security key.
 
-  It collects the text names and values among Get and Post parameters. Parameters are collected up to 40 (Get 20, Post 20) and the parameter names and values are collected up to 256 bytes.
+  The name and value of the text type are collected among Get and Post parameters. Up to 40 items (20 Gets, 20 Posts) are collected, and parameter names and values are collected up to 256 bytes.
 
-  Parameter data is transferred after being encrypted separately, and can be viewed by decrypting with the key in _/usr/whatap/php/paramkey.txt_ of the application server.
+  Parameter data is transferred after being encrypted separately, and can be viewed by decrypting with the key(`paramkey`) in _/usr/whatap/php/security.conf_ of the application server.
+
+  :::note
+
+  - <code class="my">PHP agent v2.8.0 or later</code>: The security key is set to 6 characters (`paramkey`) in the `WHATAP_HOME`*/security.conf* file where the *whatap.ini* file is located.
+
+  - <code class="my">Below PHP agent v2.8.0</code>: The security key is set to 6 characters within the `WHATAP_HOME`*/paramkey.txt* file where the *whatap.ini* file is located. If the *paramkey.txt* file does not exist, it is automatically created with a random value.
+
+  :::
 
 - **whatap.profile_http_parameter_url_prefix** <span class='type'>String</span>
 
@@ -69,8 +77,6 @@
   The transation host is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, the output has the format of `/xxx.aaa.com/URL`.
 
 - **whatap.ignore_http_method** <span class='type'>String</span>
-
-  Default `Empty`
 
   Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 

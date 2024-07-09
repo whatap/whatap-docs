@@ -9,25 +9,25 @@ tags:
   - セッション履歴
 ---
 
-ホーム画面>プロジェクト選択>**_分析_**>**_セッション履歴_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_sessionHistory" className="uitext" />
 
-**_セッション履歴_**メニューでは、特定のセッションが照会期間中にどのような遂行を行ったかを照会することができます。 長時間実行されたセッションに対して、遂行中のSQLがどれ程リソースを使用したかを確認し、原因を分析できる情報を提供します。
+<Cmdname sid="side_sessionHistory" className="uitext" />メニューでは、特定のセッションが照会期間中にどのように作業を行ったかを照会できます。 長時間実行されたセッションに対して、遂行中のSQLがどれ程リソースを使用したかを確認し、原因を分析できる情報を提供します。
 
 ## 基本的な使い方
 
-必須入力値としてモニタリングしようとするセッション番号(**_プロセスID_**)を入力する必要がありますが、**_インスタンスモニタリング_**メニューからアクセスするのが効率的です。
+必須入力値としてモニタリングしようとするセッション番号(<Cmdname sid="TTL06802" className="uitext" />)を入力する必要がありますが、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューからアクセスするのが効率的です。
 
-1. **_ダッシュボード_**>**_インスタンスモニタリング_**メニューへアクセスしてください。
+1. <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューへアクセスしてください。
 
 2. 長時間遂行中で、終了していないセッションを選択してください。
 
    <ImgLang img='db-session-history-01.png' desc='インスタンス' />
 
-3. **_セッション詳細情報_**画面が表示されたら、**_セッション履歴_**ボタンを選択してください。
+3. <Cmdname sid="session_detail" className="uitext" />ウィンドウが表示されると<Cmdname sid="TTL06721" className="uitext" /> ボタンを選択します。
 
    <ImgLang img='db-session-history-02.png' desc='セッション履歴' />
 
-選択したセッションのプロセスID(PID)を照会した**_セッション履歴_**メニューへ移動します。
+選択したセッションのプロセスID(PID)を照会した<Cmdname sid="side_sessionHistory" className="uitext" />メニューへ移動します。
 
 <ImgLang img='db-session-history-03.png' desc='セッション履歴' />
 
@@ -41,7 +41,12 @@ tags:
 
 - **_Disk I/O_**: ディスク使用量の変化をチャートで確認できます。
 
-- 一覧の一番右の**_query_**カラム項目を選択すると、SQL文を確認できる**_SQL詳細_**画面が表示されます。 選択したクエリ(Query)に対するFullTextおよびPlan情報が含まれています。
+一覧の一番右の**_query_**カラム項目を選択すると、SQL文を確認できる<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 選択したクエリ(Query)に対するFullTextおよびPlan情報が含まれています。
+
+{/*쿼리 자세히 보기*/}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
 
 ## テーブルカラムの設定{#change-column}
 

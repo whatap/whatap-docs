@@ -1,0 +1,180 @@
+---
+id: session-replay
+title: セッションリプレイ
+description: ユーザーがウェブサイトで行うすべてのイベントを記録し、再生できるセッションリプレイ機能を適用する方法を案内します。
+tags:
+  - Browserモニタリング
+  - エージェント
+  - セッションリプレイ
+---
+
+<Cmdname sid="TTL08103" className="uitext" />は、ユーザーがウェブサイトで行うすべてのイベントを記録し、再生できる機能です。 この機能により、クリック、スクロール、入力、ページ切り替えなどのユーザー行動を再現できます。 これにより、ユーザーが実際にウェブサイトとどのように相互作用するかを、正確に把握できます。
+
+- **ユーザー行動記録と再生**: セッション リプレイは、ユーザーの行動を記録します。 記録されたユーザーの行動には、マウスの移動、クリック、スクロールなどが含まれます。 記録されたユーザーの行動をそのまま再生し、特定の時点で何をしたかを視覚的に確認できます。
+
+- **エラー追跡および障害再現**: 特定のイベントやエラーの発生時点を追跡して、障害の原因を分析できます。 ページを読み込むのに長い時間がかかる問題や画面で発生するその他の技術的欠陥がユーザーにどのように表示されるかを視覚的に確認できます。
+
+:::note
+
+<Cmdname sid="TTL08103" className="uitext" />機能は、<Cmdname sid="log_read" className="b600" />権限があるメンバーが利用できます。 メンバーのアクセス権限の体系の詳細については、[次の文書](../project/project-structure#project-auth)を参照してください。
+
+:::
+
+## 収集方法
+
+実際の画面を録画したり、画像でキャプチャーしたりする代わりに、DOM変更事項とCSSスタイル情報などをテキスト形式で収集します。 この時、オーバーヘッドを防止するためにブラウザのメインスレッドがアイドル状態の場合にのみ変更を収集し、データを送信します。
+
+### 高感度の情報収集を除外
+
+高感度情報に対する収集の除外方法を基本的に提供します。 画面上のすべてのテキストは、次のようにマスキングされ、収集されます。
+
+<ImgLang img="browser-session-replay-masking-example.png" desc="Session replay" />
+
+### 特定の領域をマスキング処理する
+
+テキストの他にも、個人識別情報や機密データが含まれる場合があり、これを保護するために特定の領域をマスキング処理するオプションが提供されます。
+
+![Masking](/img/browser-session-replay-masking-area.png)
+
+収集対象から除外する領域についてのhtml要素(element)のクラス名(class name)に`session-replay-ignore-class`を追加します。
+
+```html showLineNumbers {1}
+<div class="session-replay-ignore-class home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    {% if site.data.archive %}
+    <ul class="home-header-menu pure-menu-list">
+      {% for item in site.data.archive %}
+        <li class="pure-menu-item">
+          <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}"">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+```
+
+## エージェントのオプションを適用する{#set-agentoption}
+
+セッションリプレイ機能を適用するには、ブラウザエージェントオプションを適用する必要があります。 `config`オブジェクトに`sessionReplaySampleRate`プロパティを0から100まで設定できます。
+
+```javascript showLineNumbers {8}
+<script>
+(function (w, h, _a, t, a, b) {
+    w = w[a] = w[a] || {
+        config: {
+            projectAccessKey: {projec_access_key},
+            pcode: {pcode},
+            sampleRate: 100,
+            sessionReplaySampleRate: 50,
+            proxyBaseUrl: "https://rum-ap-northeast-2.whatap-browser-agent.io/",
+        },
+    };
+    a = h.createElement(_a);
+    a.async = 1;
+    a.src = t;
+    t = h.getElementsByTagName(_a)[0];
+    t.parentNode.insertBefore(a, t);
+})(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');
+</script>
+```
+
+収集するセッション中でセッションリプレイを適用するセッションの割合を設定できます。 例えば、`sampleRate`が**100**であり、`sessionReplaySampleRate`が**50**であると、全体セッションの中で50%のみセッションリプレイとして記録されます。
+
+一方、`sampleRate`が**50**であり、`sessionReplaySampleRate`が**100**であると、全体セッションの50%が収集対象であり、この中で100%がセッションリプレイとして記録されます。
+
+## セッションリプレイを利用する
+
+<Cmdname sid="TTL08103" className="uitext" />機能は、次のパスから利用できます。
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_ajaxAnalytics" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+### ページロードヒットマップ {#side_rumPageLoadHitmap}
+
+<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />
+
+<ImgLang img="browser-pageloadhitmap-session-replay.png" desc="ページロードヒットマップ" />
+
+1. <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="hitmap" className="uitext" />のチャート領域をドラッグします。
+
+2. <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" />で<Cmdname sid="TTL08103" />機能を確認する項目の![詳細アイコン](/img/ico-detail-view.svg)ボタンを選択します。
+
+3. <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" />画面が表示されると<Cmdname sid="TTL08103" className="uitext" />タブを選択します。
+
+### Ajaxヒットマップ {#side_ajaxAnalytics}
+
+<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_ajaxAnalytics" className="uitext" />
+
+<ImgLang img="browser-ajaxhitmap-session-replay.png" desc="Ajaxヒットマップ" />
+
+1. <Cmdname sid="side_ajaxAnalytics" className="uitext" /> のチャート領域をドラッグします。
+
+2. <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" />画面が表示されたら、一覧で<Cmdname sid="TTL08103" />機能を確認する項目を選択します。
+
+3. 右の画面から<Cmdname sid="chart" className="uitext" />タブを選択します。
+
+### ユーザーセッションログ検索 {#side_userSessionEventSearch}
+
+<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+<ImgLang img="browser-usersessionlog-session-replay.png" desc="ユーザーセッションログ検索" />
+
+1. <Cmdname sid="time" className="uitext" />で照会したい時間を設定します。
+
+2. 画面の右側に![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
+
+3. 照会結果の一覧で、<Cmdname sid="TTL08103" />機能を確認する項目の一番右にある<Cmdname sid="analysis" className="uitext" />ボタンを選択します。
+
+4. <Cmdname sid="TTL07736" className="uitext" />画面が表示されたら、<Cmdname sid="TTL08103" className="uitext" />タブを選択します。
+
+## セッションリプレイを活用する{#usage}
+
+### セッションリプレイのプレーヤー
+
+記録されたユーザー行動イベントを再生して、実際のユーザーが画面をどのように操作するかを確認できます。
+
+![セッションリプレイのプレーヤー](/img/browser-session-replay-player.png)
+
+- ![再生アイコン](/img/ic-rum-play.svg) / ![一時停止アイコン](/img/ic-rum-pause.svg) : 記録されたユーザー行動イベントを再生または一時停止できます。
+
+- <UI>1x</UI> / <UI>2x</UI> / <UI>3x</UI> / <UI>4x</UI>: 再生速度を調整できます。
+
+- ![全画面アイコン](/img/ic-fullscreen.svg) : プレーヤー画面を全画面に拡大できます。 全画面を終了するには`ESC`キーを押します。
+
+- タイムラインをドラッグして、目的の位置に移動できます。 マウスの相互作用のないセクションは、明るいグレーで表示されます。
+
+  ![Timeline](/img/browser-session-replay-timeline.png)
+
+### ユーザーセッション情報 {#TTL07745}
+
+<Cmdname sid="TTL08103" className="uitext" />画面右側では、実際のユーザーのセッション情報を確認できます。
+
+<ImgLang img="browser-session-replay-user-info.png" desc="ユーザーセッション情報" />
+
+- <Cmdname sid="browser" className="uitext" />：エンドユーザーが使用したブラウザーの種類
+- <Cmdname sid="os" className="uitext" />：エンドユーザーが使用する機器のOSの種類
+- <Cmdname sid="device" className="uitext" />：エンドユーザーが使用したデバイスの種類
+- <Cmdname sid="user_id" className="uitext" />: エンドユーザーがウェブアプリケーションに初めてアクセスする時に発行する固有ID
+- <Cmdname sid="session_id" className="uitext" />：ウェブアプリケーションのエンドユーザーがウェブアクセスを開始する際に発行される固有IDです。
+- <Cmdname sid="ip" className="uitext" />：エンドユーザーが使用するデバイスのIPアドレス
+- <Cmdname sid="user_agent" className="uitext" />: イベントが発生したブラウザのuser agent情報
+
+### ユーザーセッションフロー {#TTL07746}
+
+開始時間を基準に収集したイベント記録を確認できます。 <Cmdname sid="TTL07736" className="uitext" />で見られる<Cmdname sid="TTL07746" className="uitext" />情報と同じです。
+
+<ImgLang img="browser-session-replay-user-session-flow.png" desc="ユーザーセッションフロー" />
+
+- 個別のイベントを選択すると、セッションリプレイのプレーヤーのタイムラインがそのイベントの時点に移動します。
+
+- 個別のイベントの詳細情報を確認するには![詳細アイコン](/img/ico-detail-view.svg)ボタンを選択します。
+
+:::note
+
+<Cmdname sid="TTL07736" className="uitext" />についての詳細は、[次の文書](user-session-log-search#analysisusersession)を参照してください。
+
+:::

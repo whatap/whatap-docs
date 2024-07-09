@@ -1,0 +1,293 @@
+---
+id: kafka-introduction
+title: KAFKA Monitoring
+description: This document introduces the KAFKA monitoring products.
+displyed_sidebar: featuremonitorSidebar
+toc_max_heading_level: 2
+tags:
+  - KAFKA
+  - Feature
+---
+
+import TR from '@site/src/components/TR';
+
+:::note
+
+**Feature Project**<ScrollToLink anchor='feature-project' />
+
+WhaTap newly introduced **Feature Project** (<code class='Features'>Features</code>) so that users can easily check whether the desired software supports monitoring and easily start monitoring. The Feature Project provides an optimized monitoring solution by repackaging existing monitoring products to fit the software to monitor. Manage your services for stability and performance more effectively through the WhaTap's Feature Project. 
+
+:::
+
+KAFKA is a distributed streaming platform optimized for processing, storing, and delivering real-time data feeds. KAFKA allows you to trace anomalies in data streams. Because KAFKA is a distributed system, it is required to check the status of each broker, topic, partition, producer, and consumer in more detail through monitoring. 
+
+WhaTap provides the **_KAFKA_** monitoring with a new **Feature Project** method. It traces the overall performance and health of the KAFKA cluster to help you find and resolve issues early.
+
+- **Metrics Monitoring**: It monitors various metrics of Kafka brokers, topics, partitions, producers, and consumers in real time.
+
+- **Custom Dashboard**: You can view the metrics efficiently through this dashboard.
+
+- **Alert Settings**: Alerts are sent in real time when the set conditions are detected, allowing users to quickly respond to the problems.
+
+Effectively manage KAFKA’s complex operating environments through WhaTap's **_KAFKA_** monitoring.
+
+## Installation
+
+The following guides you to the basic installation method for using the WhaTap KFKA monitoring service. 
+
+To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/en/signup/), create a project and then install the agent to the target server. For more information about membership registration, see [the following](../account/account-manage). 
+
+:::note 
+
+**Supported environment**<ScrollToLink anchor='kafka-supported-env' />
+
+Before installing the WhaTap KAFKA monitoring agent, check the support environment. 
+
+- **Kafka**: Apache Kafka 3.x or later
+
+- **Ubuntu**: Ubuntu 12.04 or later
+
+- **OS**: Red Hat 6 or equivalent (CentOS, Rocky Linux, Amazon Linux)
+
+- **OS Architecture**: Amd64/X86_64, Arm64/Aarch64
+
+:::
+
+### Creating a Feature Project
+
+Create a **feature project** (<code class='Features'>Feature</code>) before installing the agent.
+
+1. Log in [WhaTap monitoring service](https://service.whatap.io).
+
+2. To create a project, on the left of the screen, select <Cmdname sid="BTN07332" className="uitext" /> > **_+_** <Cmdname sid='BTN06696' className='uitext'/>.
+
+3. On the <Cmdname sid="TTL07073" className="uitext" /> screen, select the **feature product** to install in the project.
+
+4. Configure the settings for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, and <Cmdname sid="project_time_zone" className="uitext" />.
+
+   <ImgLang img='create-project-v3.png' desc='Create Project'/>
+
+5. In <Cmdname sid="TTL07727" className="uitext" />, select the language for alert messages.
+
+6. After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
+
+### Installing the KAFKA agent
+
+After creating a **Feature Project** (<code class='Features'>Features</code>), the **_KAFKA Agent Installation_** screen appears. Proceed with installation according to the following instructions. 
+
+1. Check the **project access key**. 
+
+   Project access key is the unique ID for activating the WhaTap services. Select <code class='my'>Getting the access key</code>. 
+
+2. Create the **installation script**. 
+
+   Execute the following command to automatically check the user environment and create an installation script on the server where KAFKA has been installed. 
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/kafka/install_kafka_monitoring.sh -o install_kafka_monitoring.sh
+   ```
+
+   Execute the following command to install the KAFKA agent.
+
+   ```bash
+   chmod +x install_kafka_monitoring.sh
+   sudo ./install_kafka_monitoring.sh "x604pf485d1kk-z6q14nuc509pk3-x39moealrfodum" "13.124.11.223/13.209.172.35"
+   ```
+
+3. After configuring and restarting the agent, **start** **monitoring**.  
+
+   To configure the Jolokia agent in KAFKA, execute the following command and then restart it.
+
+   ```bash
+   #cd {kafka home directory}/bin
+   sed -i '/^#!/a export KAFKA_OPTS='\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\''' kafka-server-start.sh
+   ./kafka-server-stop.sh
+   ./kafka-server-start.sh
+   ```
+
+## Learn about the main features
+
+### Custom dashboard
+
+Home > Select **Feature Project** (<code class='Features'>Feature</code>) > **_KAFKA_** > **_ KAFKA Dashboard_**
+
+WhaTap's KAFKA Monitoring monitors various metrics for KAFKA brokers, topics, partitions, producers, and consumers in real time so that you can see the overall status of the KAFFKA cluster at a glance. You can check each metric regularly to keep your cluster in optimal health.
+
+KAFKA **Custom Dashboard** provided by WhaTap consists of the following three presets: 
+
+- **_Kafka Default_**
+
+  This basic dashboard allows you to check whether the **cluster features are working properly**. It monitors the overall status of the KAFKA cluster in real time and helps detect performance degradation or any failures in advance.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  ##### Kafka Overview
+
+  - **_Active Controller Count_**: Number of controllers that are active. The controllers manage the partition leaders and replication in the KAFKA cluster. Generally there is one active controller.
+
+  - **_Brokers Online_**: It is the number of brokers that are online. A broker plays a role for storing messages and processing client requests.
+
+  - **_Online Partitions_**: It is the number of partitions that are online. Each topic is divided into multiple partitions, and each partition is stored across multiple brokers.
+
+  - **_Preferred Replica Imbalance_**: It indicates the imbalance in preferred replicas. A high value indicates that replicas are concentrated in specific brokers.
+
+  - **_Under Replicated Partitions_**: It is the number of non-replicated partitions. If this value is not zero, there is a risk of data loss.
+
+  - **_Leader Count per Broker_**: It indicates the number of leader partitions for each broker. The leader partition directly handles client requests.
+
+  - **_Unclean Leader Elections_**: It is the abnormal number of leader elections. A high value indicates that there are cluster stability issues.
+
+  - **_Under min ISR Partitions_**: It is the number of partitions below the minimum synchronized replicas (ISR). ISR ensures the data durability.
+
+  - **_Offline Partitions Count_**: It is the number of partitions that are offline. When a partition is offline, you cannot access the data on that partition.
+
+  - **_Broker Network Throughput_** `BytesOutPerSec`/`BytesInPerSec`: It indicates the broker's network throughput. It graphs the numbers of bytes sent/received per second.
+
+  ##### Java Virtual Machine
+
+  - **_CPU Usage_**: It displays the CPU utilization of the JVM. A high CPU utilization may affect the performance.
+
+  - **_JVM Memory Used_**: It indicates how much memory the JVM is using. It displays a pattern of periodic memory increase and decrease after Garbage Collection (GC).
+
+  - **_Time Spent in GC_**: It indicates the time spent in Garbage Collection (GC). Increased GC time can lead to poor performance.
+
+  ##### Linux Disk I/O
+
+  - **_Linux Disk Read Bytes_**: It indicates the number of read bytes on the disk. A high disk read/write volume can cause I/O bottleneck.
+
+  - **_Linux Disk Write Bytes_**: It indicates the number of disk write bytes. As in reads, a high write volume can affect the performance.
+
+  </details>
+
+- **_Kafka Request_**
+
+  With this dashboard, you can check the **throughput related to consumers and producers**. It monitors various performance metrics of the KAFKA cluster in real time to check the system health and help detect potential problems early as possible.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  ##### Processing Performance
+
+  - **_Messages In_**: It indicates the number of messages received per second across the entire cluster.
+
+  - **_Messages In per Broker_**: It indicates the number of messages received per second for each broker.
+
+  - **Bytes In\***: It indicates the number of bytes received per second across the entire cluster.
+
+  - **_Bytes In per Broker_**: It indicates the number of bytes received per second for each broker.
+
+  - **_Request Queue Size_**: It indicates the size of the queue where unprocessed requests are queued. A larger queue size can lead to a longer response time.
+
+  - **_Response Queue Size_**: It indicates the size of the queue where requests waiting for a response are queued. A large queue size can cause a delay.
+
+  - **_Network Processor Avg Usage Percent_**: It indicates the average utilization of the network processor. It displays the load of network tasks.
+
+  - **_Request Handler Avg Percent_**: It indicates the average utilization of the request handler. It displays the load for request processing.
+
+  ##### Requests
+
+  - **_Produce Request Per Sec_**: It indicates the number of producer requests generated per second. A high value indicates a lot of data is being sent to the broker.
+
+  - **_Consume Fetch Request Per Sec_**: It indicates the number of consumer fetch requests generated per second. A high value indicates a lot of data is being sent to the consumer.
+
+  - **_Broker Fetch Request Per Sec_**: It indicates the number of fetch requests between brokers. It displays internal traffic for data replication.
+
+  - **_All Request Per Sec Across All Brokers_**: It indicates the number of requests per second processed by all brokers. It displays the request load across the entire cluster.
+
+  ##### Errors
+
+  - **_Errors Per Sec_**: It indicates the number of errors occurring per second. If there are many errors, it indicates that there may be system stability issues.
+
+  ##### Offset Commit
+
+  - **_Offset Commit Request Per Sec_**: It indicates the number of offset requests committed per second. The offset commit displays the position where the consumer group processed the message.
+
+  ##### Metadata
+
+  - **_Metadata Request Per Sec_**: It indicates the number of metadata requests per second. A metadata request indicates a request for the broker and partition information.
+
+  ##### Topic
+
+  - **_IsrShrinks per Sec_**: It indicates the number of synchronized replica (ISR) shrink events per second. As the ISR scales down, there may be data durability issues.
+
+  - **_IsrExpands per Sec_**: It indicates the number of ISR expansion events per second. Data durability can be improved as the ISR expands.
+
+  - **_Log size per Topic_**: It indicates the log size for each topic. It displays the size of topic data.
+
+  - **_Log size per Broker_**: It indicates the log size for each broker. It displays the size of data stored in the broker.
+
+  ##### Consume Lag
+
+  - **_Lag_**: It indicates a delay in message consumption. This occurs when the consumer reads messages slower than the producer writes.
+
+  </details>
+
+- **_Kafka Broker_** 
+
+  Using this dashboard, you can check the **broker performance**. It monitors the performance of the KAFKA cluster in real time and helps detect potential problems early as possible.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  ##### Broker Performance - Produce
+
+  - **_Producer - RequestQueueTimeMs_**: It displays the time while the producer request is waiting in the queue, in milliseconds (ms). A long queue waiting can cause performance degradation.
+
+  - **_Producer - LocalTimeMs_**: It displays the time, in milliseconds, that the producer request is processed by the local broker.
+
+  - **_Producer - RemoteTimeMs_**: It displays the time in milliseconds that a producer request is sent to and processed by the remote broker.
+
+  - **_Producer - ResponseQueueTimeMs_**: It displays the time, in milliseconds, that a producer request's response waits in the queue.
+
+  - **_Producer - ResponseSendTimeMs_**: It displays the time, in milliseconds, that the response from the producer request is sent to the client.
+
+  ##### Broker Performance - Consume
+
+  - **_Consumer - RequestQueueTimeMs_**: It displays the time, in milliseconds, that consumer requests wait in the queue.
+
+  - **_Consumer - LocalTimeMs_**: It displays the time, in milliseconds, that a consumer request is processed by the local broker.
+
+  - **_Consumer - RemoteTimeMs_**: It displays the time in milliseconds that a consumer request is sent to and processed by the remote broker.
+
+  - **_Consumer - ResponseQueueTimeMs_**: It displays the time, in milliseconds, that the response of a consumer request waits in the queue.
+
+  - **_Consumer - ResponseSendTimeMs_**: It displays the time, in milliseconds, that the response to a consumer request is sent to the client.
+
+  ##### Broker Performance - Fetch Follower
+
+  - **_FetchFollower - RequestQueueTimeMs_**: It displays the time, in milliseconds, that the follower broker's fetch request waits in the queue.
+
+  - **_FetchFollower - LocalTimeMs_**: It displays the time, in milliseconds, that a follower broker's fetch request is processed by the local broker.
+
+  - **_FetchFollower - RemoteTimeMs_**: It displays the time, in milliseconds, that the follower broker's fetch request is sent to and processed by the remote broker.
+
+  - **_FetchFollower - ResponseQueueTimeMs_**: It displays the time, in milliseconds, that the response of the follower broker's fetch request waits in the queue.
+
+  - **FetchFollower - ResponseSendTimeMs\***: It displays the time, in milliseconds, that the response to the follower broker's fetch request is sent to the client.
+
+  ##### ZooKeeper
+
+  - **_ZooKeeper Request Latency_**: It displays the delay times of ZooKeeper requests. A high latency may indicate performance degradation in ZooKeeper.
+
+  - **_ZooKeeper Connections per sec_**: It displays the number of connections to ZooKeeper per second.
+
+  - **_ZooKeeper Expired Connections per sec_**: It displays the number of expired ZooKeeper connections per second. Connection expiration can occur due to session timeout.
+
+  - **_ZooKeeper auth failures per sec_**: It displays the number of ZooKeeper authentication failures per second. If there are many authentication failures, you may suspect security issues or configuration errors.
+
+  - **_ZooKeeper disconnects per sec_**: It displays the number of ZooKeeper disconnections per second. If connection drops frequently, you may suspect network issues or performance issues of the ZooKeeper server.
+
+  </details>
+
+### Alert
+
+Home > Select **Feature Project** (<code class='Features'>Feature</code>) > **_Alert_** > **_Event Configuration_**
+
+WhaTap's KAFKA monitoring provides the **_complex metrics_** alerts by default. 
+
+:::note 
+
+For more information about composite metrics events, see [the following](https://docs.whatap.io/server/metric-warning-notice#composite-metrics-event). 
+
+:::

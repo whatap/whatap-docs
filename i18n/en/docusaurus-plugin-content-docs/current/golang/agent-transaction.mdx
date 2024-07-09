@@ -163,9 +163,11 @@ The following options are used to manage and monitor exceptions that occur in ap
 
 - **biz_exceptions** <span class='type'>String</span>
 
-  Default `Empty`
-
   Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+
+  ```ini title="whatap.conf"
+  biz_exceptions=*errors.errorString, *echo.HTTPError, *url.Error, *exceptions.CustomErrors
+  ```
 
   :::tip
 
@@ -188,6 +190,10 @@ The following options are used to manage and monitor exceptions that occur in ap
   *errors.errorString
   *echo.HTTPError
   *url.Error
+  ```
+
+  ```ini title="whatap.conf"
+  ignore_exceptions=*errors.errorString, *echo.HTTPError, *url.Error, *exceptions.CustomErrors
   ```
 
   :::tip
@@ -256,7 +262,9 @@ The following agent options trace and record various data related to HTTP reques
 
   :::note
 
-  The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
+  - <code class="my">Go agent v2.4.0 or later</code>: The security key is set to 6 characters (`paramkey`) in the `WHATAP_HOME`*/security.conf* file where the *whatap.conf* file is located.
+
+  - <code class="my"> Below Go agent v0.4.0 </code>: The security key is set to 6 characters within the `WHATAP_HOME`*/paramkey.txt* file where the *whatap.conf* file is located. If the *paramkey.txt* file does not exist, it is automatically created with a random value.
 
   :::
 
@@ -273,8 +281,6 @@ The following agent options trace and record various data related to HTTP reques
   The transation host is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, the output has the format of `/xxx.aaa.com/URL`.
 
 - **ignore_http_method** <span class='type'>String</span>
-
-  Default `Empty`
 
   Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 

@@ -1,0 +1,44 @@
+---
+id: agent-architecture
+title: エージェントアーキテクチャ
+description: Kubernetesエージェントのアーキテクチャについてご案内します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - エージェント
+  - エージェントアーキテクチャ
+---
+
+WhaTapのKubernetesエージェントは、マスターエージェントPodとノードエージェントPodで構成されます。 エージェントアーキテクチャについて次のようにご案内します。
+
+![Kubernetesエージェントアーキテクチャ](/img/k8s-agent-archi.png)
+
+## WHATAP-NODE-AGENT POD
+
+WhaTapノードエージェントポッドは、DaemonSet形式でデプロイされます。 従って、ノードごとに1つのPodが実行され、各Pod内部には次のように2つの主要コンテナが存在します。
+
+- **whatap-node-agent**
+
+  whatap-node-agentコンテナはkube-apiserverとの通信を通じて、ノードに存在するワークロードのメトリクスのデータを収集します。 当該情報は、`kube_pod`, `container`, `kube_pod_volume`などのメトリクスに影響します。
+
+- **whatap-node-helper**
+
+  whatap-node-helperは、Runtime-socketとルートボリュームがマウントされます。 これをもとにnode-helperは、そのノードとコンテナのリソース使用量を収集します。
+
+## WHATAP-MASTER-AGENT POD
+
+WhaTapマスターエージェントPodは、deploymentでデプロイされます。 基本的に、1つのクラスターに1つのマスターエージェントPodが存在します。 Pod内部には、whatap-master-agentコンテナが必須的に含まれます。
+
+- **whatap-master-agent**
+
+  whatap-master-agentコンテナは、クラスター全体のメトリクスを収集します。 ネームスペースプロジェクトに関する情報のように、エージェントの全領域にわたって共有される必要があるデータを、各ノードエージェントに渡すおよび同期化する役割を果たします。 
+
+- **whatap-control-plane**
+
+  whatap-control-planeコンテナは、Kubernetesコントロールプレーンノードに対するメトリクスを収集します。 現在はapiserverに対するメトリクスを収集し、apiserverのステータスとリクエスト回数を把握します。 コントロールプレーンモニタリングを使用するには、追加機能の適用が必要です。 詳細については、[次の文書](https://docs.whatap.io/kubernetes/kube-apiserver-dashboard)を参照してください。
+
+:::note 
+
+WhaTapのKubernetesモニタリングは、今後複数のマスターエージェントPodが同時に動作できるように、多重化機能を提供する予定です。
+
+:::

@@ -88,9 +88,15 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
 - **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
-  既定値 `false`
+  既定値`false`
 
-  PHP内部関数を追跡するかどうかを設定します。`whatap.profile_internal_method_time`の設定値(既定値`1秒`)より長くかかる場合のみ追跡します。 
+  PHP内部関数を追跡するかどうかを設定します。`whatap.profile_internal_method_time`の設定値(既定値`1秒`)より長くかかる場合のみ追跡します。
+
+  :::caution
+
+  このオプションは、ユーザ定義関数ではなく、PHPの内蔵関数をすべて確認するため、性能に負荷が発生する可能性があります。
+
+  :::
 
   <Phprestartapply />
 
@@ -174,11 +180,11 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   同時に設定された場合、優先順位は次の通りです。 
 
-  1\. split
+  1. split
 
-  2\. large
+  2. large
 
-  3\. circular
+  3. large
 
   :::
 
@@ -194,11 +200,11 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   - 同時に設定された場合、優先順位は次の通りです。 
 
-    1\. split
+    1. split
 
-    2\. large
+    2. large
 
-    3\. circular
+    3. large
 
   :::
 
@@ -212,11 +218,11 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   同時に設定された場合、優先順位は次の通りです。 
 
-  1\. split
+  1. split
 
-  2\. large
+  2. large
 
-  3\. circular
+  3. large
 
   :::
 

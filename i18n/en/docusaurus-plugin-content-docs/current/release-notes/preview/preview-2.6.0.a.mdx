@@ -14,6 +14,216 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.6.0.a7
+
+June 17, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Changed</Status> Changed the criteria for the detailed view and display in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsML" className="uitext" />.
+
+  - **Previous**: Displays the chart for the dragged period.
+
+  - **Change**: Displays the data for up to 6 hours.
+
+- <Status>Changed</Status> In <Cmdname sid="side_integratedDashboard" className="uitext" />, <Cmdname sid="side_integratedMetricsBoard" className="uitext" />, changed the service termination message.
+
+---
+
+### `Application`
+
+<Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, added the default preset modification feature.
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, changed the variables for the **Oracle Solaris** agent installation command and applied the multilingual content.
+
+---
+
+### `Kubernetes`
+
+<Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />, fixed the issue where the checkbox cannot be selected if the checkbox in the column selection dropdown is overlapped with that in the list below.
+
+---
+
+### `Database`
+
+#### Common
+
+<Status>Fixed</Status> Fixed the issue where the data is not displayed properly when you click <Cmdname sid="time_today" className="uitext" /> while selecting a date to compare in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="db_parameter" className="uitext" />.
+
+:::note
+
+This feature is not applied to **Redis**, **MongoDB**, and **Oracle DMA** products.
+
+:::
+
+#### MySQL
+
+<Status>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, improved the installation guide style.
+
+---
+
+### `Log`
+
+<Status>Changed</Status> In <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />, unified **Data Retention** and the name of <Cmdname sid="sms_summary_data_period" className="b600" /> into <Cmdname sid="data_retention" className="uitext" />.
+
+---
+
+### `Browser`
+
+<Status>Feature</Status> In <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />, <Cmdname sid="side_ajaxAnalytics" className="uitext" />, and <Cmdname sid="side_userSessionEventSearch" className="uitext" />, added the <Cmdname sid="TTL08103" className="uitext" /> feature.
+
+</div>
+
+## Preview 2.6.0.a6
+
+June 13, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Feature</Status> Reorganized the UI/UX for payment method registration and modification menus (Profile icon &gt; <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />).
+
+- <Status>Changed</Status> Improved the guidance message when there are no search results on the product selection screen for project creation.
+
+- <Status>Changed</Status> In <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="side_projectSubscription" className="uitext" />, modified to display the <Cmdname sid="subscribe" className="uitext" /> button with separated from the <Cmdname sid="status" className="uitext" /> column.
+
+  ![Example](/img/release/release-usage-subcribe-column.png)
+
+---
+
+### `Application`
+
+#### Common
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, added the <Cmdname sid="custom" className="uitext" /> feature that can add items in the <UI>TOP 30</UI> filter after searching them.
+
+  ![Custom](/img/release/release-apm-dashboard-tx-map-custom.png)
+
+- <Status>Feature</Status> Enhanced the features under <Cmdname sid="side_statistics" className="uitext" />.
+
+  - It saves the selected value by the last viewed agent selection option.
+
+  - It changed the feature not to automatically search upon entry of each menu.
+
+  - It changed the initial query period for each menu from **Today** to **Previous day**.
+
+  - It changed the default sorting order for <Cmdname sid="side_tx" className="uitext" /> and <Cmdname sid="side_statSql" className="uitext" /> menus to <Cmdname sid="TTL06963" className="uitext" />.
+
+- <Status>Changed</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_loadedClasses" className="uitext" />, changed the title of the class search window (<Cmdname sid="class_signature" className="b500" /> → <Cmdname sid="TTL08085" className="uitext" />).
+
+- <Status>Changed</Status> The <Cmdname sid="side_appDashboard" className="uitext" /> menu of old version is scheduled to be removed.
+
+  - Added the <Status>Deprecated</Status> tag in the <Cmdname sid="sitemap" className="uitext" /> menu.
+
+  - If you enter <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" /> <code class='old'>Old</code>, the guidance message for planned removal appears.
+
+- <Status>Changed</Status> Even if you do not select ![Search icon](/img/ico-btn-search.png) after applying the filter in the <Cmdname sid="side_statistics" className="uitext" /> submenu, the filter is to be applied when you download the CSV file.
+
+- <Status>Fixed</Status> On the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the strings for <Cmdname sid="clientOs" className="uitext" />, <Cmdname sid="clientName" className="uitext" />, and <Cmdname sid="status" className="uitext" /> are exposed as translation keys.
+
+- <Status>Fixed</Status> Fixed the issue where if you select the step timeline graph on the <Cmdname sid="TTL06209" className="uitext" /> window, the corresponding step does not appear.
+
+- <Status>Fixed</Status> Fixed the issue where the search time for the screen that appears by selecting ![Detail icon](/img/ico-detail.svg) <Cmdname sid="detail" className="uitext" /> after dragging the chart on the widget in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" />, appears differently from the widget search time.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where the loading indicator is applied to the widget when the guidance window appears by clicking the ![Info icon](/img/ic-info-circle.svg) button of the widget.
+
+- <Status>Fixed</Status> Fixed the issue where data call is followed without a delay when there is no agent in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />.
+
+- <Status>Fixed</Status> Fixed the issue where scrolling is not applied when the agent list in the agent selection (<Cmdname sid="application" className="uitext" />) option is greater than the vertical size of the screen.
+
+- <Status>Fixed</Status> In <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_topology" className="uitext" /> &gt; <Cmdname sid="side_appStatTopology" className="uitext" />, fixed the issue where the feature does not work by clicking the time selection option and changed the UIs for the time selection option.
+
+- <Status>Fixed</Status> Fixed the issue where a whiteout occurs when entering the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" /> menu from a project that belongs to the organization.
+
+#### Java
+
+<Status>Fixed</Status> Modified the Jetty installation guide in the **Add JVM Option** section of <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code>.
+
+---
+
+### `Kubernetes`
+
+- <Status>Feature</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />, added <UI>capacityType</UI> as a subcolumn of <Cmdname sid="TTL06705" className="uitext" />.
+
+  :::note
+
+  This feature is applied only to cluster projects.
+
+  :::
+
+- <Status>Changed</Status> The <Cmdname sid="product_type_cpm" className="uitext" /> table in <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" /> was modified to match the table in <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />.
+
+- <Status>Changed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />, displayed the sums for the following metrics for each container within the node at the top of the <Cmdname sid="product_type_cpm" className="uitext" /> table.
+
+  `cpu_quota`, `cpu_request`, `cpu_total_milli`, `mem_limit`, `mem_request`, `mem_working_set`
+
+  ![Node details](/img/release/release-node-details-container-table.png)
+
+- <Status>Changed</Status> Changed the terminology of the list-type menus as follows:
+
+  - <Cmdname sid="TTL06702" className="b500" /> → <UI>Memory</UI>
+
+  - <Cmdname sid="TTL06703" className="b500" /> → <UI>Network</UI>
+
+  - <Cmdname sid="TTL06706" className="b500" /> → <UI>Disk</UI>
+
+  :::note
+
+  There is no change when the language setting is <UI>English</UI>.
+
+  :::
+
+- <Status>Changed</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />, changed the column classification.
+
+- <Status>Changed</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />, changed the column name of <UI>Oname</UI> to <UI>MicroOname</UI>. {/* ApplicationName is to be displayed when deploying the service */}
+
+- <Status>Changed</Status> In the summary view of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, changed the category sorting sequence in the <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="BTN07827" className="uitext" /> tab.
+
+  ![Category](/img/release/k8s-container-map-log-category-sort-change.png)
+
+- <Status>Fixed</Status> In the summary view of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, fixed the issue where the search result of the <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="BTN07827" className="uitext" /> tab is not consistent with the search result of <Cmdname sid="BTN06342" className="uitext" />.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_kubernetesAgentList" className="uitext" />, modified to enable the ![Display Detail icon](/img/ico-detail-view.svg) <Cmdname sid="BTN06342" className="uitext" /> button only when the agent is active.
+
+---
+
+### `Log`
+
+<Status>Changed</Status> In <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSearch" className="uitext" />, changed the display method of the accumulated number of cases when searching logs.
+
+- If the next page can be viewed, <UI>number+</UI> appears. Otherwise, <UI>number</UI> appears.
+
+- When viewing the next page, the accumulated number of cases appears as <UI>9999+</UI>, <UI>19999+</UI>, and <UI>29999+</UI>.
+
+---
+
+### `URL`
+
+<Status>Fixed</Status> Fixed the issue where the ![Notification icon](/img/ico-noti.svg) <Cmdname sid="sms_alert_status" className="uitext" /> icon on the URL project screen disappears.
+
+---
+
+### `Database`
+
+#### Oracle DMA
+
+- <Status>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, provided the agent download feature according to the Oracle version.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />, fixed the issue where multiple filtering is not applied.
+
+- <Status>Fixed</Status> Fixed the issue where the chart disappears from the <UI>Plan Change History</UI> tab of <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />, when the browser is a specific size.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the message of the installation guide.
+
+</div>
+
 ## Preview 2.6.0.a5
 
 June 7, 2024
@@ -32,7 +242,13 @@ June 7, 2024
 
 #### Common
 
-- <Status>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbParameter" className="uitext" />, added the feature to compare between the real-time data and the last saved data (00:00 to 01:00) when <Cmdname sid="reference_date" className="uitext" /> and <Cmdname sid="comparison_date" className="uitext" /> are all set to the date of today.
+- <Status>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbParameter" className="uitext" />, added the feature to compare between the real-time data and the last saved data when <Cmdname sid="reference_date" className="uitext" /> and <Cmdname sid="comparison_date" className="uitext" /> are all set to the date of today.
+
+  :::note
+
+  This feature is not applied to **Redis**, **MongoDB**, and **Oracle DMA** products.
+
+  :::
 
 - <Status>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbParameter" className="uitext" />, modified to display the collection time in the table's header area.
 

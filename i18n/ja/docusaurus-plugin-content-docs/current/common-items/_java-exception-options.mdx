@@ -2,6 +2,11 @@
 
   Business Exceptionを登録します。
 
+  ```ini title="whatap.conf"
+  # example
+  biz_exceptions=com.home.test.exception.BizException
+  ```
+
   :::tip
 
   エラークラス収集 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
@@ -32,6 +37,11 @@
 - **ignore_exceptions** <span class='type'>String</span>
 
   登録したExceptionのエラー自体を無視します。
+
+  ```ini title="whatap.conf"
+  # example
+  ignore_exceptions=com.home.test.exception.BizException
+  ```
 
   :::tip
 
@@ -91,6 +101,11 @@
 
   HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。 複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
 
+  ```ini title='whatap.conf'
+  # example
+  httpc_status_ignore=404,500
+  ```
+
   :::tip
 
   HTTPステータスエラーコード無視 / エラー統計を含まない
@@ -102,6 +117,11 @@
   `whatap.error.HTTPC_ERROR`を無視します。 複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
 
   `httpc_status_url_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+
+  ```ini title='whatap.conf'
+  # example
+  httpc_status_url_ignore_set=a/b/c:404,d/e/f:500
+  ```
 
   :::tip
 

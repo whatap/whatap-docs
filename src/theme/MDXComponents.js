@@ -20,6 +20,11 @@ import Appname from '@site/src/components/ui-text/mobile-locale.js';
 import ScrollToLink from '@site/src/components/OnClickeventOffset.js';
 import CurProd from '@site/src/components/GetProductName.js';
 import Steps from '@site/src/components/Steps.js';
+import Columns from '@site/src/components/Columns';
+import Column from '@site/src/components/Column';
+import Filetree from '@site/src/components/Filetree';
+import FiletreeItem from '@site/src/components/FiletreeItem';
+import Title from '@site/src/components/Title';
 
 export default {
   // 기본 mapping 재사용
@@ -42,5 +47,10 @@ export default {
   Appname,
   ScrollToLink,
   CurProd,
-  Steps
+  Steps,
+  Columns,
+  Column,
+  Filetree,
+  FiletreeItem,
+  Title
 };

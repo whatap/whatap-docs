@@ -51,7 +51,49 @@ import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data
   variables_metric=uptime,version
   ```
 
-## AWS RDS CloudWatch適用{#using-aws-rds}
+## アクティブセッション除外の設定
+
+DBXエージェントは、MySQLのアクティブセッションの一覧を収集しますが、特定のセッションを除外するオプションを提供します。除くセッションは`total_runtime`を計算する際に含めず、<Cmdname sid="side_dbSqlStat" className="uitext" />メニューでも該当するSQLは表示されません。
+
+- **skip_command** <span class='type'>String</span>
+
+  アクティブセッション収集時、オプション値に設定した`command`に該当するセッションは収集しません。例えば、次のように設定すると`Daemon`と`Sleep`ステータスのセッションは収集から除外できます。
+
+  ```ini title="whatap.conf"
+  skip_command=Daemon,Sleep
+  ```
+
+  :::note
+
+  オプション値で設定できる`command`についての詳細は、[次のリンク](https://dev.mysql.com/doc/refman/8.4/en/thread-commands.html)を参照してください。
+
+  :::
+
+- **skip_sys_session** <span class='type'>Int</span>
+
+  既定値`1`
+
+  - `0`: sysセッション(root, system user)をアクティブセッションの収集と`total_runtime`に含みます。
+
+  - `1`: sysセッションをアクティブセッションの収集には含めますが、`total_runtime`からは除外します。 
+
+  - `2`: sysセッションをアクティブセッションの収集と`total_runtime`から除外します。
+
+- **skip_user** <span class='type'>String</span>
+
+  オプション値に設定したユーザーのアカウントを、アクティブセッションと'total_runtime'から除外します。例えば、次のように設定すると、`root`、`system user`、`event_scheduler`アカウントの収集を除外できます。
+
+  ```ini title="whatap.conf"
+  skip_user=root,system user,event_scheduler
+  ```
+
+- **skip_whatap_session** <span class='type'>Int</span>
+
+  既定値`0`
+
+  オプション値を`1`に設定すると、WhaTapの収集クエリをアクティブセッションの収集と`total_runtime`から除外します。
+
+## AWS RDS CloudWatch適用 {#using-aws-rds}
 
 <AWSRDSdesc name='db_mysql_counter' />
 

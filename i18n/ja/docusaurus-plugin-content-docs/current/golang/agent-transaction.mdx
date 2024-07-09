@@ -19,7 +19,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## トランザクショントレーシング{#trs-trc}
 
-以下は、アプリケーション内の各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な側面を調整できます。
+以下は、アプリケーションの各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な部分を調整可能です。
 
 - **profile_basetime** <span class='type'>Millisecond</span>
 
@@ -77,11 +77,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
   同時に設定された場合、優先順位は次の通りです。 
 
-  1\. split
+  1. split
 
-  2\. large
+  2. large
 
-  3\. circular
+  3. circular
 
   :::
 
@@ -97,11 +97,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
   - 同時に設定された場合、優先順位は次の通りです。 
 
-    1\. split
+    1. split
 
-    2\. large
+    2. large
 
-    3\. circular
+    3. circular
 
   :::
 
@@ -115,11 +115,11 @@ import Transaction from "../common-items/_transaction.mdx";
 
   同時に設定された場合、優先順位は次の通りです。 
 
-  1\. split
+  1. split
 
-  2\. large
+  2. large
 
-  3\. circular
+  3. circular
 
   :::
 
@@ -165,6 +165,10 @@ import Transaction from "../common-items/_transaction.mdx";
 
   特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒットマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
 
+  ```ini title="whatap.conf"
+  biz_exceptions=*errors.errorString, *echo.HTTPError, *url.Error, *exceptions.CustomErrors
+  ```
+
   :::tip
 
   エラークラス収集 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
@@ -188,6 +192,10 @@ import Transaction from "../common-items/_transaction.mdx";
   *url.Error
   ```
 
+  ```ini title="whatap.conf"
+  ignore_exceptions=*errors.errorString, *echo.HTTPError, *url.Error, *exceptions.CustomErrors
+  ```
+
   :::tip
 
   エラークラス無視 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
@@ -196,7 +204,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## HTTPトランザクションの追跡{#track-http-trs}
 
-以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザーはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
 
 - **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -254,7 +262,9 @@ import Transaction from "../common-items/_transaction.mdx";
 
   :::note
 
-  セキュリティキーは、*whatap.conf*ファイルがある`WHATAP_HOME`_/paramkey.txt_ファイルに６ケタで設定します。*paramkey.txt*ファイルがない場合は、ランダムに値が自動生成されます。
+  - <code class="my">Go agent v0.4.0 or later</code>: セキュリティキーは*whatap.conf*ファイルがある`WHATAP_HOME`*/security.conf*ファイル内の6桁(`paramkey`)に設定します。
+
+  - <code class="my">Below Go agent v0.4.0</code>: セキュリティキーは*whatap.conf*ファイルがある`WHATAP_HOME`*/paramkey.txt*ファイル内の6桁に設定します。*paramkey.txt*ファイルが存在しない場合は、ランダム値で自動生成します。
 
   :::
 
@@ -290,7 +300,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## マルチトランザクショントレース
 
-以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡の詳細な動作を調整できます。
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡に対する詳細な動作を調整できます。
 
 - **mtrace_enabled** <span class='type'>Boolean</span>
 

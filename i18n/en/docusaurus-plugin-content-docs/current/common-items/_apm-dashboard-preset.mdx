@@ -1,16 +1,22 @@
-## Preset
+## Preset {#preset}
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,redis,mongodb">
 
-![Preset](/img/apm-dashboard-preset-default.png)
+<ImgLang img="apm-dashboard-preset-list.png" desc="Preset" />
 
-You can save and load the settings and layouts for widgets on the dashboard. The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed, but you can create a new preset by resizing and placing widgets in the desired format.
+You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
+
+:::note
+
+Using <Cmdname sid="default" className="uitext" />, the specified preset cannot be changed.
+
+:::
 
 </InDoc>
 
 <InDoc product="postgresql,mysql">
 
-You can save and load the settings and layouts for widgets on the dashboard. The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed, but you can create a new preset by resizing and placing widgets in the desired format.
+You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
 
 <ImgLang img='db-preset-list.png' desc='Preset' />
 
@@ -20,9 +26,15 @@ You can save and load the settings and layouts for widgets on the dashboard. The
 
 - **_Default(rds)_**: This preset consists of AWS RDS CloudWatch metrics and major DB metrics.
 
+:::note
+
+The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed.
+
+:::
+
 </InDoc>
 
-### Creating a new preset
+### Creating a new preset {#newpreset}
 
 1. Place the widgets in the desired format on the dashboard. You can also resize and place only the widgets to be frequently checked.
 
@@ -44,10 +56,26 @@ You can see the newly saved preset from the preset list.
 
 - If you go to another menu without saving changes on the dashboard, the changes are not saved.
 
+<InDoc product="java,php,python,golang,nodejs,dotnet">
+
+- Presets are saved on a project basis and can be shared with other users.
+
+</InDoc>
+
+<Xclude product="java,php,python,golang,nodejs,dotnet">
+
 - Presets are saved in your user account and cannot be shared with other users. We plan to update it for better features.
+
+</Xclude>
 
 :::
 
-### Deleting presets
+### Deleting presets {#removepreset}
 
 If you have unused presets, you can delete them from the preset list. Select ![Delete icon](/img/ico-remove.svg) on the right of the item to delete from the preset list.
+
+:::note
+
+The <UI>Default</UI> preset cannot be deleted.
+
+:::
