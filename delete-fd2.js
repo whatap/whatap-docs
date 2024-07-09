@@ -41,5 +41,5 @@ function deleteMdxFiles(directory) {
 }
 
 // 삭제할 파일이 있는 디렉토리 경로들 설정
-const targetDirectories = ['crw-data/crwd-service', 'crw-data/backup2'];
+const targetDirectories = ['crw-data/crwld-service-test'];
 deleteMdxFilesInDirectories(targetDirectories);

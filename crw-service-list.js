@@ -4,9 +4,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 const urls = [
-    // 'https://docs.whatap.io/release-notes/service/service-2_3_x',
-    // 'https://docs.whatap.io/release-notes/service/service-2_4_x',
-    'https://docs.whatap.io/release-notes/service/service-2_6_x',
+    'https://docs.whatap.io/release-notes/service/service-2_3_x',
+    'https://docs.whatap.io/release-notes/service/service-2_4_x',
+    'https://docs.whatap.io/release-notes/service/service-2_5_x',
 ];
 
 // 제품명별로 생성된 파일명을 묶는 객체
