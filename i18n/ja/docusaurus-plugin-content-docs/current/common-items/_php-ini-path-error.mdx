@@ -8,7 +8,7 @@ $ sudo php -i | grep '.ini files'
 Scan this dir for additional .ini files => (none)
 ```
 
-_whatap.ini_ファイルの内容を_php.ini_の末尾に追加します。
+*whatap.ini*ファイルの内容を*php.ini*の末尾に追加します。
 
 ```bash
 $ php -i | grep 'php.ini'
@@ -31,9 +31,9 @@ whatap.trace_user_using_ip=false
 
 ### whatap-phpのサービス(Service) 環境変数設定
 
-`$WHATAP_CONFIG_HOME`環境変数に_whatap.ini_パスを選択します。
+`$WHATAP_CONFIG_HOME`環境変数に*whatap.ini*パスを選択します。
 
-PHPの追加iniパスを確認できない場合は、_whatap.ini_で作成した_/usr/whatap/php_パスを設定してください。
+PHPの追加iniパスを確認できない場合は、*whatap.ini*で作成した*/usr/whatap/php*パスを設定してください。
 
 ```bash
 $ sudo vi /etc/init.d/whatap-php

@@ -15,7 +15,7 @@ WhaTapデータベースモニタリングサービスのユーザーからよ�
 
 ### Authentication plugin 'caching_sha2_password' cannot be loadedエラー
 
-> エージェントインストール後、DBに接続して_dbx.log_を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続できません。どうすれば良いでしょうか？
+> エージェントインストール後、DBに接続して*dbx.log*を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続できません。どうすれば良いでしょうか？
 
 MySQL 8.0を使用する場合、MySql 8.0の基本認証プラグインが、`caching_sha2_password`である場合に発生する可能性があります。`caching_sha2_password`を使用するには、SSLで保護されたセキュリティ接続を使用するか、RSAセキュリティを使用した非暗号化接続を使用する必要があります。これらの問題を最も簡単に解決する方法は、パスワード生成時に、以前の`mysql_native_password`方式を使用することです。
 
