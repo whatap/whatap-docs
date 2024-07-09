@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 폴더 경로
-const folderPath = './crw-data/crwld-agent-24q2';
+const folderPath = './crw-data/crwld-agent-23';
 
 // 폴더 내 파일 목록 읽기
 fs.readdir(folderPath, (err, files) => {
@@ -61,6 +61,14 @@ function modifyFile(filePath) {
         // 링크 생성
         const versionLinkPart = version.replace(/\./g, '_');
         const versionLink = `https://docs.whatap.io/release-notes/${productName}/${productName}-${versionLinkPart}`;
+        const versionLinkDB = `${productName}/${productName}`;
+        if (versionLinkDB === 'xos/xos'){
+            versionLinkDB = 'db/xos';
+            versionLink = `https://docs.whatap.io/release-notes/${versionLinkDB}-${versionLinkPart}`;
+        } else if (versionLinkDB === 'dbx/dbx') {
+            versionLinkDB = 'db/dbx';
+            versionLink = `https://docs.whatap.io/release-notes/${versionLinkDB}-${versionLinkPart}`;
+        }
         return `<code class='changelog-service'><a href="${versionLink}">${product} v${version}</a></code>`;
     });
 
