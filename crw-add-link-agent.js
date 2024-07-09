@@ -46,6 +46,8 @@ function modifyFile(filePath) {
         // 예외 처리: .NET Agent -> dotnet
         if (productName === '.net') {
             productName = 'dotnet';
+        } else if (productName === 'kubernetes') {
+            productName = 'k8s';
         } else {
             // Node.js와 같은 제품 이름 처리
             productName = productName.replace(/\./g, '');
