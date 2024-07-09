@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
+import {ThemeClassNames} from '@docusaurus/theme-common';
 import TOCItems from '@theme/TOCItems';
+import TOCCollapsible from '@theme/TOCCollapsible';
+import {useDoc} from '@docusaurus/theme-common/internal';
 import styles from './styles.module.css';
 
 export default function GenerateTOC({ className, device, ...props }) {
   const [tocItems, setTocItems] = useState([]);
+  const {frontMatter} = useDoc();
 
   useEffect(() => {
     // 페이지가 렌더링된 후에 TOC를 생성합니다.
@@ -32,6 +36,15 @@ export default function GenerateTOC({ className, device, ...props }) {
           {...props}
         />
       </div>
+    );
+  } else if (device === 'mobile') {
+    return (
+      <TOCCollapsible
+        toc={tocItems}
+        minHeadingLevel={frontMatter.toc_min_heading_level}
+        maxHeadingLevel={frontMatter.toc_max_heading_level}
+        className={clsx(ThemeClassNames.docs.docTocMobile, styles.tocMobile)}
+      />
     );
   }
 }

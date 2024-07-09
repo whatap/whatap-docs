@@ -24,6 +24,7 @@ import Columns from '@site/src/components/Columns';
 import Column from '@site/src/components/Column';
 import Filetree from '@site/src/components/Filetree';
 import FiletreeItem from '@site/src/components/FiletreeItem';
+import Title from '@site/src/components/Title';
 
 export default {
   // 기본 mapping 재사용
@@ -50,5 +51,6 @@ export default {
   Columns,
   Column,
   Filetree,
-  FiletreeItem
+  FiletreeItem,
+  Title
 };

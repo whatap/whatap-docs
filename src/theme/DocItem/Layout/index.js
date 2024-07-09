@@ -52,7 +52,8 @@ export default function DocItemLayout({children}) {
           <article>
             <DocBreadcrumbs />
             <DocVersionBadge />
-            {docTOC.mobile}
+            {/* {docTOC.mobile} */}
+            <GenerateToc device="mobile" />
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
           </article>
@@ -61,8 +62,8 @@ export default function DocItemLayout({children}) {
       </div>
       {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
       <div className="col col--3">
-        {docTOC.desktop}
-        {/* <GenerateToc device="desktop" /> */}
+        {/* {docTOC.desktop} */}
+        {!docTOC.hidden ? <GenerateToc device="desktop" /> : null}
         <FacebookShare />
         <PrintPDF/>
         <Feedback/>
