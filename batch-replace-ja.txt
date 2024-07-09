@@ -3,7 +3,7 @@ filter "i18n/ja/docusaurus-plugin-content-docs/current/**/*.mdx"
 replace "~!@#$%^&\*()\_+=-\[]\`"
 with "~!@#$%^&*()_+=-[]`"
 replace "<https://lite.ip2location.com>"
-with 
+with "[https://lite.ip2location.com](https://lite.ip2location.com)"
 replace "_whatap.agent.java.tar.gz_"
 with "*whatap.agent.java.tar.gz*"
 replace "_whatap.agent.proxy-`X.Y.Z`.jar_"
