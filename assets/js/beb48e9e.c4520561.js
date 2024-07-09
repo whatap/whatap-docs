@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44670],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55809],{
 
 /***/ 93626:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -188,7 +188,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 5866:
+/***/ 57296:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -209,50 +209,77 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'introduction',
-	title: 'Go 모니터링',
-	description: 'Go 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
+	title: 'PHP 모니터링',
+	description: 'PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
+	displyed_sidebar: 'phpSidebar',
+	hide_table_of_contents: true,
 	tags: [
-		'Go'
+		'PHP',
+		'PHP 모니터링',
+		'애플리케이션',
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/introduction",
-  "title": "Go 모니터링",
-  "description": "Go 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
-  "source": "@site/docs/golang/introduction.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/introduction",
-  "permalink": "/whatap-docs/golang/introduction",
+  "id": "php/introduction",
+  "title": "PHP 모니터링",
+  "description": "PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+  "source": "@site/docs/php/introduction.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/introduction",
+  "permalink": "/whatap-docs/php/introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/introduction.mdx",
+  "editUrl": "undefined/docs/php/introduction.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Go",
-      "permalink": "/whatap-docs/tags/go"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
+    },
+    {
+      "inline": true,
+      "label": "PHP 모니터링",
+      "permalink": "/whatap-docs/tags/php-모니터링"
+    },
+    {
+      "inline": true,
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
+    },
+    {
+      "inline": true,
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "introduction",
-    "title": "Go 모니터링",
-    "description": "Go 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "title": "PHP 모니터링",
+    "description": "PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "displyed_sidebar": "phpSidebar",
+    "hide_table_of_contents": true,
     "tags": [
-      "Go"
+      "PHP",
+      "PHP 모니터링",
+      "애플리케이션",
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "goSidebar",
+  "sidebar": "phpSidebar",
   "next": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/golang/supported-spec"
+    "permalink": "/whatap-docs/php/supported-spec"
   }
 };
 const assets = {
 
 };
 
+/*PHP 개요 들어갈 자리*/
+/*<Videos url="https://www.whatap.io/old/video/product/ko/app_php.mp4" />*/
 
 
 
@@ -261,24 +288,14 @@ const assets = {
 const toc = [..._common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
-    li: "li",
     p: "p",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "와탭 Go 애플리케이션 모니터링은 Go 애플리케이션에 대한 모니터링 서비스를 제공합니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "웹 프레임워크를 지원합니다. 웹 트랜잭션의 URL, 응답시간, TPS 정보, 오류 메세지 정보 등을 수집합니다."
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "Go Runtime 패키지의 정보를 지속적으로 수집합니다. 메모리, goroutine, gc 관련 정보를 수집합니다."
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "MSA 환경에서 여러개의 API/RPC 서비스 호출하는 경우 연계 추적을 통해 호출 관계를 수집합니다."
-      }), "\n"]
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "와탭의 모니터링 서비스를 통해 PHP 웹 애플리케이션의 성능 지연 원인을 분석할 수 있습니다. PHP 최신 버전, Alpine Linux까지 다양한 운영체제에 적용할 수 있습니다. 그리고 트레이스 상에서 SQL, HTTP 호출, Redis 호출 정보를 확인할 수 있습니다."
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {

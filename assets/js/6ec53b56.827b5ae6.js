@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[26003],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[906],{
 
-/***/ 22383:
+/***/ 34102:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'nodejs-0_4_97',
-	title: 'Node.js Agent v0.4.97',
+	id: 'nodejs-0_4_81',
+	title: 'Node.js Agent v0.4.81',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/nodejs/nodejs-0_4_96',
+	pagination_next: 'release-notes/nodejs/nodejs-0_4_80',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/nodejs/nodejs-0_4_97",
-  "title": "Node.js Agent v0.4.97",
-  "description": "2024년 06월 03일",
-  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.97.mdx",
+  "id": "release-notes/nodejs/nodejs-0_4_81",
+  "title": "Node.js Agent v0.4.81",
+  "description": "2023년 11월 08일",
+  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
   "sourceDirName": "release-notes/nodejs",
-  "slug": "/release-notes/nodejs/nodejs-0_4_97",
-  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_97",
+  "slug": "/release-notes/nodejs/nodejs-0_4_81",
+  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.97.mdx",
+  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "nodejs-0_4_97",
-    "title": "Node.js Agent v0.4.97",
+    "id": "nodejs-0_4_81",
+    "title": "Node.js Agent v0.4.81",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/nodejs/nodejs-0_4_96",
+    "pagination_next": "release-notes/nodejs/nodejs-0_4_80",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "PHP Agent 지난 버전",
-    "permalink": "/whatap-docs/release-notes/php/php-previous"
-  },
   "next": {
-    "title": "Node.js Agent v0.4.96",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_96"
+    "title": "Node.js Agent v0.4.80",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
   }
 };
 const assets = {
@@ -77,16 +73,11 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 03일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: "2023년 11월 08일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "New"
-      }), " 쿠버네티스 환경 사용 여부를 환경변수로 적용 가능"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-javascript",
-        children: "process.env.WHATAP_MICRO_ENABLED = true;\n"
-      })
+        children: "Fixed"
+      }), " 멀티 트랜잭션 수신 과정에서의 연동 오류 수정"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55809],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15277],{
 
 /***/ 93626:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -188,7 +188,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 57296:
+/***/ 98335:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -209,77 +209,52 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'introduction',
-	title: 'PHP 모니터링',
-	description: 'PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
-	displyed_sidebar: 'phpSidebar',
-	toc_max_heading_level: 2,
+	title: 'Node.js 모니터링',
+	description: 'Node.js 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
+	hide_table_of_contents: true,
 	tags: [
-		'PHP',
-		'PHP 모니터링',
-		'애플리케이션',
-		'애플리케이션 모니터링'
+		'Node.js'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/introduction",
-  "title": "PHP 모니터링",
-  "description": "PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
-  "source": "@site/docs/php/introduction.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/introduction",
-  "permalink": "/whatap-docs/php/introduction",
+  "id": "nodejs/introduction",
+  "title": "Node.js 모니터링",
+  "description": "Node.js 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+  "source": "@site/docs/nodejs/introduction.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/introduction",
+  "permalink": "/whatap-docs/nodejs/introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/introduction.mdx",
+  "editUrl": "undefined/docs/nodejs/introduction.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
-    },
-    {
-      "inline": true,
-      "label": "PHP 모니터링",
-      "permalink": "/whatap-docs/tags/php-모니터링"
-    },
-    {
-      "inline": true,
-      "label": "애플리케이션",
-      "permalink": "/whatap-docs/tags/애플리케이션"
-    },
-    {
-      "inline": true,
-      "label": "애플리케이션 모니터링",
-      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "introduction",
-    "title": "PHP 모니터링",
-    "description": "PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
-    "displyed_sidebar": "phpSidebar",
-    "toc_max_heading_level": 2,
+    "title": "Node.js 모니터링",
+    "description": "Node.js 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "hide_table_of_contents": true,
     "tags": [
-      "PHP",
-      "PHP 모니터링",
-      "애플리케이션",
-      "애플리케이션 모니터링"
+      "Node.js"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "nodejsSidebar",
   "next": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/php/supported-spec"
+    "permalink": "/whatap-docs/nodejs/supported-spec"
   }
 };
 const assets = {
 
 };
 
-/*PHP 개요 들어갈 자리*/
-/*<Videos url="https://www.whatap.io/old/video/product/ko/app_php.mp4" />*/
 
 
 
@@ -293,9 +268,11 @@ function _createMdxContent(props) {
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "와탭의 모니터링 서비스를 통해 PHP 웹 애플리케이션의 성능 지연 원인을 분석할 수 있습니다. PHP 최신 버전, Alpine Linux까지 다양한 운영체제에 적용할 수 있습니다. 그리고 트레이스 상에서 SQL, HTTP 호출, Redis 호출 정보를 확인할 수 있습니다."
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "Node.js 사용자도 트랜잭션 별로 실행된 모듈을 알 수 있습니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "기존에는 Node.js의 성능상 장점인 비동기 방식은 모니터링에 제한적인 부분이 있었습니다. 와탭의 Node.js 애플리케이션 모니터링은 단일 스레드 플로우를 10초마다 분석해 병목 구간이나 에러 내역을 파악할 수 있습니다."
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {

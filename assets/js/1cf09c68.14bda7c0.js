@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[906],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76803],{
 
-/***/ 34102:
+/***/ 27220:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'nodejs-0_4_81',
-	title: 'Node.js Agent v0.4.81',
+	id: 'nodejs-0_4_98',
+	title: 'Node.js Agent v0.4.98',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/nodejs/nodejs-0_4_80',
+	pagination_next: 'release-notes/nodejs/nodejs-0_4_97',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/nodejs/nodejs-0_4_81",
-  "title": "Node.js Agent v0.4.81",
-  "description": "2023년 11월 08일",
-  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
+  "id": "release-notes/nodejs/nodejs-0_4_98",
+  "title": "Node.js Agent v0.4.98",
+  "description": "2024년 07월 09일",
+  "source": "@site/docs/release-notes/nodejs/nodejs-0.4.98.mdx",
   "sourceDirName": "release-notes/nodejs",
-  "slug": "/release-notes/nodejs/nodejs-0_4_81",
-  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81",
+  "slug": "/release-notes/nodejs/nodejs-0_4_98",
+  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_98",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
+  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.98.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "nodejs-0_4_81",
-    "title": "Node.js Agent v0.4.81",
+    "id": "nodejs-0_4_98",
+    "title": "Node.js Agent v0.4.98",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/nodejs/nodejs-0_4_80",
+    "pagination_next": "release-notes/nodejs/nodejs-0_4_97",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Node.js Agent v0.4.83",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_83"
+    "title": "PHP Agent 지난 버전",
+    "permalink": "/whatap-docs/release-notes/php/php-previous"
   },
   "next": {
-    "title": "Node.js Agent v0.4.80",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
+    "title": "Node.js Agent v0.4.97",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_97"
   }
 };
 const assets = {
@@ -67,6 +67,7 @@ function _createMdxContent(props) {
     a: "a",
     admonition: "admonition",
     code: "code",
+    em: "em",
     li: "li",
     p: "p",
     pre: "pre",
@@ -77,11 +78,27 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 11월 08일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Fixed"
-      }), " 멀티 트랜잭션 수신 과정에서의 연동 오류 수정"]
+      children: "2024년 07월 09일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " License, Server Host 값을 환경변수와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일에 동시 적용할 수 있도록 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["환경변수와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일에 모두 적용하면 환경변수 값 기준으로 설정됩니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ONODE NAME 설정 시 ONODE 값 생성 로직 수정"]
+        }), "\n"]
+      }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {

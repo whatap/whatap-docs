@@ -81,10 +81,6 @@ const toc = [{
   "id": "로그-원문-복원",
   "level": 3
 }, {
-  "value": "로그 백업 및 복구",
-  "id": "로그-백업-및-복구",
-  "level": 3
-}, {
   "value": "로그 데이터 삭제 주기",
   "id": "로그-데이터-삭제-주기",
   "level": 3
@@ -127,25 +123,6 @@ function _createMdxContent(props) {
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "로그 원문 복원 기능을 제공하지 않습니다. 현재 로그 수집은 보안 용도가 아닌 분석 용도로 제공합니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-          type: "note",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "설치형"
-            }), "의 경우 로그 원문 복원 툴을 별도로 제공합니다."]
-          })
-        })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-        className: "remark-sectionize-h3",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "로그-백업-및-복구",
-          children: "로그 백업 및 복구"
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "로그를 백업하고 복구할 수 있나요?"
-          }), "\n"]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "수집된 로그는 일 단위로 저장됩니다. 과거 일자의 파일을 백업해 두었다면 해당 폴더에 다시 복구할 수 있습니다."
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
         className: "remark-sectionize-h3",

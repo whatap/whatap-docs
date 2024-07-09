@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15277],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44670],{
 
 /***/ 93626:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -188,7 +188,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 98335:
+/***/ 5866:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -209,44 +209,46 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'introduction',
-	title: 'Node.js 모니터링',
-	description: 'Node.js 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
+	title: 'Go 모니터링',
+	description: 'Go 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
+	hide_table_of_contents: true,
 	tags: [
-		'Node.js'
+		'Go'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/introduction",
-  "title": "Node.js 모니터링",
-  "description": "Node.js 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
-  "source": "@site/docs/nodejs/introduction.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/introduction",
-  "permalink": "/whatap-docs/nodejs/introduction",
+  "id": "golang/introduction",
+  "title": "Go 모니터링",
+  "description": "Go 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+  "source": "@site/docs/golang/introduction.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/introduction",
+  "permalink": "/whatap-docs/golang/introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/introduction.mdx",
+  "editUrl": "undefined/docs/golang/introduction.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "introduction",
-    "title": "Node.js 모니터링",
-    "description": "Node.js 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "title": "Go 모니터링",
+    "description": "Go 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "hide_table_of_contents": true,
     "tags": [
-      "Node.js"
+      "Go"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "goSidebar",
   "next": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/nodejs/supported-spec"
+    "permalink": "/whatap-docs/golang/supported-spec"
   }
 };
 const assets = {
@@ -261,15 +263,23 @@ const assets = {
 const toc = [..._common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    li: "li",
     p: "p",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "Node.js 사용자도 트랜잭션 별로 실행된 모듈을 알 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "기존에는 Node.js의 성능상 장점인 비동기 방식은 모니터링에 제한적인 부분이 있었습니다. 와탭의 Node.js 애플리케이션 모니터링은 단일 스레드 플로우를 10초마다 분석해 병목 구간이나 에러 내역을 파악할 수 있습니다."
+      children: "와탭 Go 애플리케이션 모니터링은 Go 애플리케이션에 대한 모니터링 서비스를 제공합니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "웹 프레임워크를 지원합니다. 웹 트랜잭션의 URL, 응답시간, TPS 정보, 오류 메세지 정보 등을 수집합니다."
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "Go Runtime 패키지의 정보를 지속적으로 수집합니다. 메모리, goroutine, gc 관련 정보를 수집합니다."
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "MSA 환경에서 여러개의 API/RPC 서비스 호출하는 경우 연계 추적을 통해 호출 관계를 수집합니다."
+      }), "\n"]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
   });
 }

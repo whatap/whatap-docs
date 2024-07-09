@@ -211,6 +211,7 @@ const frontMatter = {
 	id: 'introduction',
 	title: 'Python 모니터링',
 	description: 'Python 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다.',
+	hide_table_of_contents: true,
 	tags: [
 		'Python'
 	]
@@ -239,6 +240,7 @@ const metadata = {
     "id": "introduction",
     "title": "Python 모니터링",
     "description": "Python 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "hide_table_of_contents": true,
     "tags": [
       "Python"
     ]
