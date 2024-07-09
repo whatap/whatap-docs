@@ -20,20 +20,20 @@ Home > Select Project > <Cmdname sid="side_report" className="uitext" />
 
 If you click ![down-arrow](/img/down-arrow.svg) in <Cmdname sid="report" className="uitext" /> on the screen, you can see various analysis reports classified by daily, weekly, and monthly. Select a desired report format, and then set the date and time to view and filtering options. You can check the selected report by selecting ![Search icon](/img/ico-btn-search.png).
 
-## **_Daily Server Report_**
+## Daily server report {#S001_ServerDaily_TagReport}
 
-In **_Daily Server Report_**, you can see the usage of server resources for the day. You can search by setting the start date, start time, and end time.
+In <Cmdname sid="S001_ServerDaily_TagReport" className="uitext" report />, you can see the usage of server resources for the day. You can search by setting the start date, start time, and end time.
 
-### Summary
+### Intro {#overview}
 
 <ImgLang img='server_daily_report_01.png' desc='Daily Server Report summary'/>
 
 You can see a summary of project names, number of hosts, and number of alerts. For the numbers of hosts and notifications, you can see how much has changed compared to the previous day.
 
-- **Host Count**: Total number of servers during the query period
-- **Alert Count**: Total number of alerts during the query period
+- <Cmdname sid="host_count" className="b600" report/>: Total number of servers during the query period
+- <Cmdname sid="alert_count" className="b600" report/>: Total number of alerts during the query period
 
-### Server List
+### Server list {#server_list}
 
 <ImgLang img='server_daily_report_02.png' desc='Daily Server Report - Server lists'/>
 
@@ -47,13 +47,13 @@ The numbers of alerts can be compared by retrieving data of 7 days ago, 1 day ag
 
 :::
 
-### Alert History
+### Alert history {#alert_history}
 
 <ImgLang img='server_daily_report_03.png' desc='Alert List'/>
 
 You can check the occurrence time, rating, server name, and cause of the alert in the notification history during the query period.
-For more information about each alert, see **_Alert_** > **_Event History_**.
-If there is no alert record for the project, the message, "No data exists for that period," may appear.
+For more information about each alert, see <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventHistory" className="uitext" />.
+If there is no alert record for the project, the message, "<Cmdname sid="no_data" className="uitext" report />" may appear.
 
 :::note
 
@@ -61,15 +61,15 @@ According to the notification level, <span class='loger'>Critical</span> notific
 
 :::
 
-## **_Weekly Server Report_**
+## Weekly server report {#S100_ServerWeeklyReport}
 
-In **_Weekly Server Report_**, you can see the usage of server CPU and memory for the week.
+In <Cmdname sid="S100_ServerWeeklyReport" className="uitext" report/>, you can see the usage of server CPU and memory for the week.
 You can enter the start date and see from 7 days prior to the day of inquiry.
 It searches data for 7 days from the start date.
 
-### Total resource usage list
+### Full resource usage list {#total_resource_used_list}
 
-#### CPU
+#### <Cmdname sid="_cpu" report/>
 
 <ImgLang img='server_weekly_report_cpu.png' desc='Weekly total resource usage list - CPU'/>
 
@@ -84,14 +84,14 @@ It indicates the maximum value excluding the top 5% data. This is used to exclud
 
 :::
 
-#### Memory
+#### <Cmdname sid="_mem" report/>
 
 <ImgLang img='server_weekly_report_memory.png' desc='Weekly total resource usage list - Memory'/>
 
 It views the memory usage for each server by day during the query period.
 Queried items are memory average and maximum value. Each value is represented as a percentage.
 
-#### Disk
+#### <Cmdname sid="_disk" report/>
 
 <ImgLang img='server_weekly_report_disk.png' desc='Weekly total resource usage list - Disk'/>
 
@@ -105,35 +105,35 @@ It views the mount location, total disk size, and utilization. Each value is rep
 
 :::
 
-## **_Monthly Server Report_**
+## Monthly server report {#S200_ServerMonthlyReport}
 
-In **_Monthly Server Report_**, you can see the usage and data of server resources for the month.
+In <Cmdname sid="S200_ServerMonthlyReport" className="uitext" report />, you can see the usage and data of server resources for the month.
 You can enter the start date and see from 30 days prior to the day of inquiry.
 
-### Summary
+### Intro {#overview}
 
 <ImgLang img='server_monthly_report_01.png' desc='Monthly server report - summary'/>
 
 You can see the aggregate the usage of server resources for the month.
 
-- **All Hosts**: Total number of servers during the query period
-- **All Cores**: Total number of cores during the query period
-- **All Disks**: Size of the mounted file systems for the query period
-- **All Alert**: Total number of alerts during the query period
+- <Cmdname sid="total_host" className="b600" report/>: Total number of servers during the query period
+- <Cmdname sid="total_core" className="b600" report/>: Total number of cores during the query period
+- <Cmdname sid="total_disk" className="b600" report/>: Size of the mounted file systems for the query period
+- <Cmdname sid="total_alarms" className="b600" report/>: Total number of alerts during the query period
 
-### Server Information
+### Server information {#server_info}
 
 <ImgLang img='server_monthly_report_02.png' desc='Server information'/>
 
 It displays the IP address, OS data, CPU data, and memory usage of the server run during the query period.
 
-### Alert History
+### Alert details {#alarms_list}
 
 <ImgLang img='server_monthly_report_03.png' desc='Alert History'/>
 
 You can check the total number of alerts for all servers during the query period, and you can view the alerts generated by server for each week.
 
-### Server Usage List
+### List of servers in use {#server_usage_history}
 
 <ImgLang img='server_monthly_report_04.png' desc='Server Usage List'/>
 

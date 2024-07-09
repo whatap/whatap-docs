@@ -21,7 +21,7 @@ tags:
 
 3. whatap-agentサービスを実行してください。
 
-![Go Monitoring](/img/golang_system.png)
+<ImgLang img="golang_system.png" desc="Go Monitoring" />
 
 WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ja/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。
 
@@ -83,27 +83,30 @@ $ sudo yum install whatap-agent
 
 [whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリを基準に圧縮して解凍します。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
 
-```bash title='SH'
-$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
-$ tar -xvzf whatap-agent.tar.gz -C /
+<Tabs>
+
+<TabItem value="x64" label="x64" default>
+
+```docker title='x64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
 ```
 
 </TabItem>
-<TabItem value="al-docker" label="Alpine Linux Docker">
 
-[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、 _/usr/whatap/agent_ パスに解凍します。
+<TabItem value="aarch64" label="AArch64" default>
 
-```bash title='SH'
-FROM alpine
-
-RUN apk update && apk upgrade
-
-# Install WhaTap Go monitoring agent
-RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
-RUN tar -xvzf whatap-agent.tar.gz -C /
+```docker title='AArch64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
 ```
 
 </TabItem>
+
+</Tabs>
+
+</TabItem>
+
 </Tabs>
 
 <details>

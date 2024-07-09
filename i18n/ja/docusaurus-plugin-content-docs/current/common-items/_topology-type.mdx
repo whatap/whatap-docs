@@ -2,7 +2,7 @@
 
 ## アプリケーショントポロジー
 
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_アプリケーショントポロジー_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_appTopology" className="uitext" />
 
 <ImgLang img='application_topology.png' desc='アプリケーショントポロジー' />
 
@@ -10,13 +10,13 @@
 
 :::note
 
-アプリケーションノードをダブルクリックすると、当該アプリケーションの**_インスタンストプロージー_**画面に切り替わります。選択したアプリケーション中心のトポロジーを表現します。
+アプリケーションノードをダブルクリックすると、当該アプリケーションの<Cmdname sid="side_instanceTopology" className="uitext" />画面に切り替わります。選択したアプリケーション中心のトポロジーを表現します。
 
 :::
 
 ## グループトポロジー
 
-ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_グループ統計トポロジー_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="side_groupStatTopology" className="uitext" />
 
 - データベース呼び出し履歴を含むトポロジーの場合は、次のようなデータベースノードが含まれます。
 
@@ -30,13 +30,13 @@
 
   ![グループトポロジー(他プロジェクトグループをクリック)](https://img.whatap.io/media/user_guide_application/topology/group_topology_with_other_project.png)
 
-## 統合トポロジー{#int-topology}
+## 統合トポロジー {#int-topology}
 
 ユーザーが複数のプロジェクトに対する権限を保有する場合、プロジェクト単位のトポロジーで全体の状況を確認することを困難にする制約があります。この機能は、複数のプロジェクトを一括選択し、単一のトポロジーとして表示するための要件を満たすことを目的としています。
 
-1. WhaTapモニタリングサービスのホーム画面から**_統合アプリケーショングループトポロジー_**メニューを選択してください。
+1. WhaTapモニタリングサービスのホーム画面から<Cmdname sid="side_integratedTopology" className="uitext" />メニューを選択してください。
 
-2. 左上の**_プロジェクト_**を選択してください。
+2. 左上の<Cmdname sid="project" className="uitext" />を選択してください。
 
    <ImgLang img='uni-topology-select-project.png' desc='プロジェクト選択' />
 
@@ -54,17 +54,17 @@
 
 ## インスタンストポロジー
 
-ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_インスタンストポロジー_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="side_instanceTopology" className="uitext" />
 
-**_インスタンストポロジー_**は、アプリケーショントポロジーと同じデータを表現します。**_インスタンストポロジー_**は、単一アプリケーションを対象に関連性を持つアプリケーション、外部モジュール、DBおよび外部呼び出しノードとの関連性を表現します。一方、**_アプリケーショントポロジー_**は、プロジェクトに含まれる全体アプリケーションを対象としています。
+<Cmdname sid="side_instanceTopology" className="uitext" />は、アプリケーショントポロジーと同じデータを表現します。<Cmdname sid="side_instanceTopology" className="uitext" />は、単一アプリケーションを対象に関連性を持つアプリケーション、外部モジュール、DBおよび外部呼び出しノードとの関連性を表現します。一方、<Cmdname sid="side_appTopology" className="uitext" />は、プロジェクトに含まれる全体アプリケーションを対象としています。
 
-**_アプリケーショントポロジー_**に表示される情報が多すぎる場合、アプリケーション単位で確認する場合は、**_インスタンストポロジー_**を使用してください。
+<Cmdname sid="side_appTopology" className="uitext" />に表示される情報が多すぎる場合、アプリケーション単位で確認する場合は、<Cmdname sid="side_instanceTopology" className="uitext" />を使用してください。
 
 <ImgLang img='instance_topology.png' desc='インスタンストポロジー' />
 
 ## ネットスタットトポロジー
 
-ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_Netstatトポロジー_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="side_netstatTopology" className="uitext" />
 
 プロジェクトに含まれるアプリケーションとアプリケーションのリスニング情報、アウトバウンド呼び出し情報をノードとして表現します。リスニングポートとの関係は直線で表現し、アウトバウンドの呼び出し情報との関係は曲線で表現します。
 

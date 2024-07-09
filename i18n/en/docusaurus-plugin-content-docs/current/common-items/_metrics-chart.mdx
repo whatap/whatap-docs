@@ -1,45 +1,46 @@
 <Xclude product='amazon-cloudwatch,amazon-ecs,azure,ncloud'>
 
-Home > Select Project > **_Analysis_** > **_Metrics Chart_**
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_counter" className="uitext" />
 
 </Xclude>
 
 <InDoc product='amazon-cloudwatch,amazon-ecs,azure,ncloud'>
 
-Home > Select Project > **_Metrics_** > **_Metrics Chart_**
+Home > Select Project > <Cmdname sid="side_metrics" className="uitext" /> > <Cmdname sid="side_counter" className="uitext" />
 
 </InDoc>
 
-In **_Metric Chart_**, you can view the metrics data collected from the monitoring targets in a chart as follows. Specifying the time and metrics is required.
+In <Cmdname sid="side_counter" className="uitext" />, you can view the metrics data collected from the monitoring targets in a chart as follows. Specifying the time and metrics is required.
 
 <ImgLang img='metrics-chart-sv.png' desc='Metrics Chart' />
 
 ### Options at the top
 
-In the ![number1](/img/number-01.png) area, you can specify the time range of the chart and the agent to be monitored through the options at the top of **_Metrics Chart_**.
+In the ![number1](/img/number-01.png) area, you can specify the time range of the chart and the agent to be monitored through the options at the top of <Cmdname sid="side_counter" className="uitext" />.
 
-- **_Time_**: You can specify the start and end of the X-axis as the total range in time.
+- <Cmdname sid="time" className="uitext" />: You can specify the start and end of the X-axis as the total range in time.
 
-- **_Interval_**: You can specify the X-axis data interval as the time interval.
+- <Cmdname sid="interval" className="uitext" />: You can specify the X-axis data interval as the time interval.
 
-- **_Time Merge_**: As one of the data merging methods, you can merge data within the time specified by intervals.
+- <Cmdname sid="time_merge" className="uitext" />: As one of the data merging methods, you can merge data within the time specified by intervals.
 
-  > For example, **_Average_** indicates the average value of data within 1 hour.
+  > For example, <Cmdname sid="merge_avg" className="uitext" /> indicates the average value of data within 1 hour.
 
-- ![Icon](/img/ic-pageview.svg) **_Agent_**: You can specify the agents to query. If not specified, all items are queried.
+- ![Icon](/img/ic-pageview.svg) <Cmdname sid="agent" className="uitext" />: You can specify the agents to query. If not specified, all items are queried.
 
 ### Metrics list
 
-The ![number2](/img/number-02.png) area is a list of metrics to query for options. First select a **_category_**. After querying the metrics under the selected **_category_**, select a desired metric. If you select the **_category_** and metric, Based on the data within the time range specified in the top menu of the area ![number1](/img/number-01.png), you can see the chart widgets in the ![number3](/img/number-03.png) area.
+The ![number2](/img/number-02.png) area is a list of metrics to query for options. First select a <Cmdname sid="category" className="uitext" />. After querying the metrics under the selected <Cmdname sid="category" className="uitext" />, select a desired metric. If you select the <Cmdname sid="category" className="uitext" /> and metric, Based on the data within the time range specified in the top menu of the area ![number1](/img/number-01.png), you can see the chart widgets in the ![number3](/img/number-03.png) area.
 
 :::note 
 
 **Data Merge**
 
-Data merge provides the following methods: **_object merge_** and **_time merge_**. 
+Data merge provides the following methods: <Cmdname sid="object_merge" className="uitext" /> and <Cmdname sid="time_merge" className="uitext" />.
 
-- **_Time merge_** merges data with the same field values at regular intervals in the original data. 
-- **_Object merge_** merges data with matching tags among data with different field values.
+- <Cmdname sid="time_merge" className="uitext" /> merges data with the same field values at regular intervals in the original data.
+
+- <Cmdname sid="object_merge" className="uitext" /> merges data with matching tags among data with different field values.
 
 :::
 
@@ -63,7 +64,7 @@ On the top left of ![number3](/img/number-03.png), you can see the metric name. 
 
 - By selecting the CSV: ![CSV download icon](/img/ico-csv.svg) icon, you can download the plot data on the chart as a CSV file.
 
-- By selecting the Display Detail: ![Detail icon](/img/ico-detail.svg) icon, the detailed view can be seen. When there are many monitoring targets, you can see the metrics trends for each monitoring target individually.
+- <Cmdname sid="detail" className="uitext" />: By selecting the ![Detail icon](/img/ico-detail.svg) icon, the detailed view can be seen. When there are many monitoring targets, you can see the metrics trends for each monitoring target individually.
 
 :::note
 
@@ -73,4 +74,4 @@ If you do not see any options at the top of the metrics chart widget, select the
 
 ### Deleting a widget
 
-To delete all widgets placed on the screen, select ![Delete icon](/img/ico-trash.svg) **_Delete entire widget_** on the screen.
+To delete all widgets placed on the screen, select ![Delete icon](/img/ico-trash.svg) <Cmdname sid="BTN06884" className="uitext" /> on the screen.

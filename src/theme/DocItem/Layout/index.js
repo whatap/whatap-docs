@@ -16,6 +16,7 @@ import FacebookShare from '@site/src/components/facebook';
 import PrintPDF from '@site/src/components/printpage/PrintPage';
 import Feedback from '@site/src/components/Feedback';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import GenerateToc from '@site/src/components/GenerateToc';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -51,7 +52,8 @@ export default function DocItemLayout({children}) {
           <article>
             <DocBreadcrumbs />
             <DocVersionBadge />
-            {docTOC.mobile}
+            {/* {docTOC.mobile} */}
+            <GenerateToc device="mobile" />
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
           </article>
@@ -60,7 +62,8 @@ export default function DocItemLayout({children}) {
       </div>
       {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
       <div className="col col--3">
-        {docTOC.desktop}
+        {/* {docTOC.desktop} */}
+        {!docTOC.hidden ? <GenerateToc device="desktop" /> : null}
         <FacebookShare />
         <PrintPDF/>
         <Feedback/>

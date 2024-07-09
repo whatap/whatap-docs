@@ -54,7 +54,15 @@
 
   Get、Postパラメータで、textタイプの名前と値を収集します。最大40個(Get 20個、Post 20個) を収集し、パラメータ名と値は最大256 byteまで収集されます。
 
-  パラメータの情報は、別の暗号化された方法で送信されます。アプリケーションサーバーの_/usr/whatap/php/paramkey.txt_のキーを使用して復号化できます。
+  パラメータの情報は、別途に暗号化されて送信され、当該アプリケーションサーバの_/usr/whatap/php/security.conf_にあるキー(`paramkey`)で復号化して参照できます。
+
+  :::note
+
+  - <code class="my">PHP agent v2.8.0 or later</code>: セキュリティキーは*whatap.ini*ファイルがある`WHATAP_HOME`*/security.conf*ファイル内の6桁(`paramkey`)に設定します。
+
+  - <code class="my">Below PHP agent v2.8.0</code>：セキュリティキーは、*whatap.ini*ファイルがある`WHATAP_HOME`*/paramkey.txt*ファイルに６ケタで設定します。*paramkey.txt*ファイルがない場合は、ランダムに値が自動生成されます。
+
+  :::
 
 - **whatap.profile_http_parameter_url_prefix** <span class='type'>String</span>
 

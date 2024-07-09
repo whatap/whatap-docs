@@ -115,6 +115,10 @@ import Transaction from "../common-items/_transaction.mdx";
 
   `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
 
+  ```ini title="whatap.conf"
+  httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404
+  ```
+
   :::tip
 
   HTTPステータスエラーコード無視 / エラー統計を含まない
@@ -123,7 +127,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 ## HTTPトランザクションの追跡
 
-以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザーはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
 
 - **profile_http_parameter_keys** <span class='type'>String</span>
 

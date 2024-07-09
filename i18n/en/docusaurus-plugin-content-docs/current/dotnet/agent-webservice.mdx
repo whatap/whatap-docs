@@ -1,12 +1,16 @@
 ---
 id: agent-webservice
-title: Web service tracing
-description: You can trace web services in the .NET application servers.
+title: WCF and Web Service monitoring configuration
+description: You can trace WCF or web services in the .NET application servers.
 tags:
   - .NET
 ---
 
-You can trace web services in the .NET application servers.
+You can trace [Windows Communication Foundation (WCF)](https://learn.microsoft.com/dotnet/framework/wcf/whats-wcf) or Web services for the .NET application server.
+
+## Configuration guide
+
+The following are agent configuration options for tracing WCF and Web services.
 
 - **webservice_method_enabled** <span class='type'>Boolean</span>
 
@@ -32,9 +36,9 @@ You can trace web services in the .NET application servers.
 
   :::caution
 
-  - The methods that meet the conditions are traced even if they do not use web services. However, if any methods do not use web services, when an error occurs, the error may not be detected and the transaction can remain unfinished.
+  - The methods that meet the conditions are traced even if they do not use web services. This feature was intended for WCF and Web services, but can also be used for other purposes.
 
-  - If you enter just the class to which the method belongs, all methods within that class are to be traced.
+  - If you enter just the class to which the method belongs, all public methods within that class are to be traced.
 
   :::
 
@@ -43,3 +47,109 @@ You can trace web services in the .NET application servers.
   To apply the set values, restart IIS.
 
   :::
+
+- **webservice_method_timeout** <span class='type'>Integer</span>
+
+  Default `5000` (Millisecond, ms)
+
+  If exception handling is not performed in the method to be monitored, it is impossible to know the time when the transaction will end. For such cases, the timeout of web service monitoring occurs by default after 5 seconds. You can adjust the timeout by changing this option value.
+
+## Usage examples
+
+### Modifying the agent configuration file
+
+See the example for the agent configuration file (_whatap.conf_) for the WCF and Web service tracing.
+
+```ini title="whatap.conf" showLineNumbers {10-12}
+license=...
+whatap.server.host=15.165.146.117
+whatap.server.port=6600
+app_process_name=w3wp.exe
+tag_counter_enabled=true
+perfcounter.enabled=true
+app_name=...
+OID=...
+
+webservice_method_enabled=true
+webservice_method_prefix=Whatap.Service.Controller, Whatap.DotNet.Examples.Service1
+webservice_method_timeout=10000
+```
+
+- The start and end of a function can be handled as a transaction, if the call path of the method containing the namespace is one of the following:
+
+  ```txt
+  Whatap.Service.Controller, Whatap.DotNet.Examples.Service1
+  ```
+
+- Because the `webservice_method_timeout` option has been set to 10,000 (ms), transactions that take more than 10 seconds are automatically terminated.
+
+:::tip
+
+In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />, some options can be added.
+
+<ImgLang img="dotnet-wcf-example-pic.png" desc="Trace analysis" />
+
+For more information about <Cmdname sid="side_agentSetting" className="uitext" />, see [the following](set-agent#set-agent-service).
+
+:::
+
+### Example of WCF source code to be monitored
+
+The following WCF source code example guides you to a case to be monitored.
+
+```csharp {5,10,15,20} showLineNumbers
+namespace Whatap.DotNet.Examples
+{
+    public class Service1 : IService1
+    {
+        public string GetData(int value)
+        {
+            ...
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            ...
+        }
+
+        private string getFromDB()
+        {
+            ...
+        }
+
+        private string getFromHttp()
+        {
+            ...
+        }
+    }
+
+    public class Service2 : IService1
+    {
+        ...
+    }
+
+    public class Service3 : IService1
+    {
+        public string IwantToSeeOnlyThis(int value)
+        {
+            ...
+        }
+    }
+}
+```
+
+The `GetData()` method to be monitored belongs to the `Service1` class of the `Whatap.DotNet.Examples` namespace. Therefore, the call path for the method is:
+
+```txt
+Whatap.DotNet.Examples.Service1.GetData
+```
+
+This is treated as a transaction because it starts from the value (`Whatap.DotNet.Examples.Service1`) of the `webservice_method_prefix` specified in the agent configuration file (_whatap.conf_).
+
+:::note
+
+- The `GetDataUsingDataContract()` method is to be monitored because it is a public method.
+
+- The `getFromDB()` and `getFromHttp()` methods are excluded from monitoring because they are private methods.
+
+:::

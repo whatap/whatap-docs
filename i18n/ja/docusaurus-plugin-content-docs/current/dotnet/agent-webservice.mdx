@@ -1,12 +1,16 @@
 ---
 id: agent-webservice
-title: Web Service追跡
-description: .NETアプリケーションサーバーのWeb Serviceを追跡できます。
+title: WCFおよびWeb Serviceモニタリングの設定
+description: .NETアプリケーションサーバーのWCFまたはWeb Serviceを追跡できます。
 tags:
   - .NET
 ---
 
-.NETアプリケーションサーバーのWeb Serviceを追跡できます。
+.NETアプリケーションサーバーの[WCF(Windows Communication Foundation)](https://learn.microsoft.com/dotnet/framework/wcf/whats-wcf)またはWeb Serviceを追跡できます。
+
+## 設定案内
+
+次はWCFおよびWeb Serviceを追跡するためのエージェントの設定オプションです。
 
 - **webservice_method_enabled** <span class='type'>Boolean</span>
 
@@ -32,9 +36,9 @@ tags:
 
   :::caution
 
-  - 条件を満たすメソッドは、Web Serviceを使用していない場合でも追跡されます。 ただし、Web Serviceを使用するメソッドでなければ、エラーが発生してもエラーは検出されず、トランザクションが終わっていない状態に維持される可能性があります。
+  - 条件を満たすメソッドは、Web Serviceを使用していない場合でも追跡されます。 WCFとWeb Serviceのために作られた機能ですが、他の目的で使用できます。
 
-  - メソッドが所属するクラスまで入力すると、そのクラス内のすべてのメソッドが追跡対象になります。
+  - メソッドが所属するクラスまで入力すると、そのクラス内のすべてのpublicメソッドが追跡対象になります。
 
   :::
 
@@ -43,3 +47,109 @@ tags:
   設定した値を有効にするには、IISを再起動してください。
 
   :::
+
+- **webservice_method_timeout** <span class='type'>Integer</span>
+
+  既定値`5000`(ミリ秒、ms)
+
+  モニタリング対象となるメソットにおいてExceptionハンドリングがされない場合、トランザクションの終了時点が確認できません。 このような場合に備えて、ウェブサービスのモニタリングは基本的に5秒が経過するとタイムアウト処理されます。 このオプションの値を変更して、タイムアウト時間を調整できます。
+
+## 使用例
+
+### エージェント設定ファイルの修正
+
+WCFおよびWeb Serviceの追跡用エージェント設定ファイル(*whatap.conf*)についての例を参照してください。
+
+```ini title="whatap.conf" showLineNumbers {10-12}
+license=...
+whatap.server.host=15.165.146.117
+whatap.server.port=6600
+app_process_name=w3wp.exe
+tag_counter_enabled=true
+perfcounter.enabled=true
+app_name=...
+OID=...
+
+webservice_method_enabled=true
+webservice_method_prefix=Whatap.Service.Controller, Whatap.DotNet.Examples.Service1
+webservice_method_timeout=10000
+```
+
+- ネームスペースを含むメソッドの呼び出し経路が次のいずれかであれば、関数の開始と終了をトランザクションとして処理できます。
+
+  ```txt
+  Whatap.Service.Controller, Whatap.DotNet.Examples.Service1
+  ```
+
+- `webservice_method_timeout`オプションを10,000(ms)に設定したため、10秒以上経過したトランザクションは自動的に終了処理されます。
+
+:::tip
+
+<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューで、オプションの追加もできます。
+
+<ImgLang img="dotnet-wcf-example-pic.png" desc="トレース分析" />
+
+<Cmdname sid="side_agentSetting" className="uitext" />メニューの詳細については、[次の文書](set-agent#set-agent-service)を参照してください。
+
+:::
+
+### モニタリングの対象となるWCFソースコードの例題
+
+次のWCFソースコードの例題を通じて、モニタリングの対象となる事例をご案内します。
+
+```csharp {5,10,15,20} showLineNumbers
+namespace Whatap.DotNet.Examples
+{
+    public class Service1 : IService1
+    {
+        public string GetData(int value)
+        {
+            ...
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            ...
+        }
+
+        private string getFromDB()
+        {
+            ...
+        }
+
+        private string getFromHttp()
+        {
+            ...
+        }
+    }
+
+    public class Service2 : IService1
+    {
+        ...
+    }
+
+    public class Service3 : IService1
+    {
+        public string IwantToSeeOnlyThis(int value)
+        {
+            ...
+        }
+    }
+}
+```
+
+モニタリングの対象となる`GetData()`メソッドは、`Whatap.DotNet.Examples`ネームスペースの`Service1`クラスに所属しています。 従って、メソッドの呼び出しパスは次の通りです。
+
+```txt
+Whatap.DotNet.Examples.Service1.GetData
+```
+
+これは、エージェント設定ファイル(*whatap.conf*)で指定した`webservice_method_prefix`の値(`Whatap.DotNet.Examples.Service1`)から始まるため、トランザクションとして扱います。
+
+:::note
+
+- `GetDataUsingDataContract()`メソッドもpublicメソッドであるため、モニタリングの対象となります。
+
+- `getFromDB()`, `getFromHttp()`メソッドはprivateメソッドであるため、モニタリングの対象から除外します。
+
+:::

@@ -22,17 +22,10 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
 
-## 構成図の確認
+{/* ## 구성도 확인 */}
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
-DBXエージェントは、別途サーバーにインストールするか、DBサーバーにインストールすることができます。インストールする方法を選択し、構成とファイアウォールを確認してください。
-
-<div class='db-agent'>
-
-|                          別途サーバーにインストール                          |                       DBサーバーに一緒にインストール                       |
-| :-------------------------------------------------------------: | :----------------------------------------------------------: |
-| <ImgLang img='dbx-install-agent-on-agent-server.png' desc='' /> | <ImgLang img='dbx-install-agent-on-db-server.png' desc='' /> |
-
-</div>
+<CheckType />
 
 {/* 모니터링용 계정 생성*/}
 import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
@@ -44,15 +37,15 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 - PostgreSQL 10バージョン以降
 
   ```sql title="SQL"
-  create user whatap with password 'DB Password'; 
-  grant pg_monitor to whatap;
+  create user DB_User with password 'DB Password'; 
+  grant pg_read_all_stats to DB_User;
   ```
 
 - PostgreSQL 10バージョン未満
 
   ```sql title="SQL"
-  create user whatap with password 'DB Password';
-  alter user whatap with superuser;
+  create user DB_User with password 'DB Password';
+  alter user DB_User with superuser;
   ```
 
 - Kill sessionを使用する場合
@@ -60,63 +53,60 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
   データベースモニタリングでは、進行中のセッションを終了できる<UI>Kill Session</UI>機能を提供します。この機能を使用するには、次のように権限を設定してください。
 
   ```sql title="SQL"
-  grant pg_signal_backend to whatap;
+  alter user DB_User with superuser;
+  ```
+
+- AWS RDS環境でKill session機能を使用する場合
+
+  ```sql title="SQL"
+  grant rds_superuser to DB_User;
+  ```
+
+- wal_countを収集する場合
+
+  ```sql title="SQL"
+  grant execute on function pg_ls_dir(text) to DB_User;  # EDB使用時
+  alter user DB_User with superuser;
   ```
 
 - cacheを収集する場合
 
   ```sql title="SQL"
-  grant select on pg_backend_memory_contexts to whatap;
-  grant execute on function pg_get_backend_memory_contexts to whatap;
+  grant select on pg_backend_memory_contexts to DB_User;
+  grant execute on function pg_get_backend_memory_contexts to DB_User;
   ```
 
 - テーブルサイズを収集する場合
 
   ```sql title="SQL"
-  grant usage on schema {schema_name} to whatap;
+  grant usage on schema {schema_name} to DB_User;
   ```
 
 - オブジェクト情報を照会する場合(<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbObjectInfo" className="uitext" />)
 
   ```sql title="SQL"
-  grant select on all tables in schema {schema_name} to whatap;
+  grant select on all tables in schema {schema_name} to DB_User;
   ```
 
+{/* 액세스 키 확인 */}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-## DBXエージェントダウンロード
+{/* DBX 에이전트 다운로드 */}
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
-DBXエージェントファイルをダウンロードしてください。次の2つの方法を利用してください。
+<DownloadDBXagent />
 
-- `wget`コマンドを使用してダウンロードできます。
+{/* ## DBX 에이전트 설정 */}
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
 
-  ```bash title="BASH"
-  wget -O whatap.agent.database.tar.gz https://dev.whatap.io/download/agent/whata.agent.database.tar.gz
-  ```
+<SettingsDBXagent />
 
-- コマンドでダウンロードできない場合は、WhaTapモニタリングサービス画面で**_Download_**ボタンを選択してください。
+{/* ### whatap.conf 설정 */}
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
 
-DBXエージェントファイルをダウンロードして圧縮を解凍してください。
-
-```bash title="BASH"
-tar -zxvf whatap.agent.database.tar.gz
-```
-
-## DBXエージェントの設定
-
-エージェントのインストール画面のガイドに従って、エージェントの設定を進めてください。画面に各項目ごとに必要な情報を入力すると、設定内容とコマンドを自動的に完成させることができます。
-
-:::tip
-
-DBXエージェントの構成ファイルの中で_setup.sh_ファイルを実行して、エージェントの設定を迅速かつ簡単に進めることができます。詳しい内容は<Link to="install-agent-quick-setup" target="_blank">次の文書</Link>を参考にしてください。
-
-:::
-
-### whatap.conf設定
-
-解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+<Whatapconf />
 
 ```ini title='whatap.conf'
 license={AccessKey}
@@ -127,9 +117,10 @@ db_ip={DB_Server_IP}
 db_port={DB_Server_Port} 
 ```
 
-### JDBCダウンロード
+{/* ### JDBC 다운로드 */}
+import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
-圧縮ファイルを解凍したDBXエージェント経路にデータベースサーバーのOSとバージョンに合うJDBCドライバーをダウンロードしてください。`/圧縮を解凍したフォルダ/jdbc`
+<JDBCDownload />
 
 :::info
 
@@ -159,3 +150,8 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
+
+{/* ## 다음 단계 */}
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

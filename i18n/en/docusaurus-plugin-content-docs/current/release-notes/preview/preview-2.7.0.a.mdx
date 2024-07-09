@@ -1,0 +1,129 @@
+---
+id: preview-2_7_0x
+title: Preview 2.7.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.7.0.a2
+
+June 27, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Changed</Status> In <Cmdname sid="side_correlatedProjectManagement" className="uitext" />, changed the Japanese terms.
+
+- <Status>Changed</Status> Changed to expose the organization icon in the organization list on the side menu.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, corrected the incorrectly set High sensitive/Low sensitive scores for rising/falling patterns with anomaly detection figures.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where the active status chart does not appear.
+
+- <Status>Fixed</Status> Fixed the issue where Korean characters are broken when downloading a CSV file.
+
+---
+
+### `Application`
+
+- <Status>Feature</Status> In the table of <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />, added the column to display the increased CPU time.
+
+  :::note
+
+  If you select ![Refresh icon](/img/ic-refresh2.svg) on the upper right of the screen, you can check the changed values ​​in the <Cmdname sid="TTL08126" className="uitext" /> column.
+
+  :::
+
+- <Status>Fixed</Status> Fixed the issue where a whiteout occurs when all columns are selected using the ![Column configuration icon](/img/ico-column.svg) <Cmdname sid="BTN06441" className="uitext" /> feature in the following menu paths:
+
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragentDetail" className="uitext" />
+
+- <Status>Fixed</Status> Fixed the broken locale issue in the <Cmdname sid="side_appDashboard" className="uitext" /> menu of the previous version.
+
+- <Status>Fixed</Status> In the <UI>Top 30</UI> list of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the delay issue when using the keyboard for movement.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, changed several widget names.
+
+  - **Active sessions** → **_Active Session Count_**
+
+  - **Long Active Sessions** → **_Long Active Session Count_**
+
+- <Status>Changed</Status> Changed the default query to 30 minutes before and after the session running, when the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_sessionHistory" className="uitext" /> menu appears through the <Cmdname sid="session_detail" className="uitext" /> window that appears by selecting an item in the <Cmdname sid="active_sessions" className="uitext" /> section.
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />
+
+- <Status>Fixed</Status> Fixed the issue where the default value in <Cmdname sid="instance" className="uitext" /> is changed to <Cmdname sid="BTN07329" className="uitext" /> in the <Cmdname sid="database" className="uitext" /> tab of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />.
+
+#### Oracle Pro
+
+- <Status>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, changed several widget names.
+
+  - **Bandwidth**  → **_[RAC] Interconnect Bandwidth_**
+  - **Load Balance** → **_[RAC] Load Balance_**
+  - Renamed the **physical reads** field in the **_Load Balance_** widget to the **_session logical reads_** field.
+
+- <Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, changed the method to display the chart's legend.
+
+  - In case of multidb, changed the middle delimiter from underscore (\_) to hyphen (-).
+
+  - Otherwise, changed not to display the middle delimiter.
+
+- <Status>Changed</Status> Changed to go to the <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code> menu, when the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> menu is entered.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the instance order of the ***Interconnect Bandwidth*** and ***Load Balance*** widgets to be displayed the same as the order of the instance selector.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_sessionHistory" className="uitext" />, fixed the issue where the chart data does not match the table data.
+
+</div>
+
+## Preview 2.7.0.a1
+
+June 25, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status>Fixed</Status> Fixed the issue where blocks are not displayed with the correct number in the ***Container*** view in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />.
+
+</div>
+
+## Preview 2.7.0.a0
+
+June 18, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Changed</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_heapDump" className="uitext" />, changed the guidance message regarding the dump heap to be displayed always.
+
+- <Status>Changed</Status> In the <Cmdname sid="table_view" className="uitext" /> and <Cmdname sid="tree_view" className="uitext" /> tabs on the <Cmdname sid="TTL06209" className="uitext" /> window, changed the port not to be displayed if there is no transaction host information.
+
+- <Status>Changed</Status> In the <Cmdname sid="multi_transaction" className="uitext" /> tab on the <Cmdname sid="TTL06209" className="uitext" /> window, changed not to expose transactions with no host information.
+
+---
+
+### `Kubernetes`
+
+<Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />, fixed the issue where the metric title at the top does not appear.
+
+</div>

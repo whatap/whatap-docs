@@ -9,7 +9,7 @@ tags:
 toc_max_heading_level: 2
 ---
 
-Home > Select Project > **_Alert_** > **_Event History_**
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventHistory" className="uitext" />
 
 You can check the history of alerts. You can see a list of all events that have occurred. 
 
@@ -17,47 +17,47 @@ You can check the history of alerts. You can see a list of all events that have 
 
 - ![number1](/img/number-01.png) **Options at the top**
 
-  - **_Time Selector_**
+  - <Cmdname sid="time_selector" className="uitext" />
 
     - You can select a lookup time by selecting the green button on the right. The default setting is 12 hours.
 
     - By selecting ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can move by the selected inquiry time range.
 
-    - To select the time details, select the date or time area. Set the time details and then select **_OK_**.
+    - To select a detailed time, select a date or time zone. Set the detailed time and then select <Cmdname sid="apply" className="uitext" />.
 
   - **_Input field_**  
 
     You can search by server name or event name in the input field.
 
-  - **_View only events in progress_**
+  - <Cmdname sid="exclude_resolved_alerts" className="uitext" />
 
-    You can only see **_Progress events_** in the event history list.
+    You can only see **progress events** in the event history list.
 
-  - **_Event resolution time_**
+  - <Cmdname sid="BTN06585" className="uitext" />
 
-    In the event history list, the **_event resolution time_** column can be added. 
+    In the event history list, the <Cmdname sid="TTL06583" className="uitext" /> column can be added. 
 
     :::note
 
-    In an active event, the **_event resolution time_** is not viewed.
+    In an active event, the <Cmdname sid="TTL06583" className="uitext" /> is not viewed.
 
     :::
 
   - **_CSV_**
 
-    You can save the viewed event records as a CSV file. Enter the **_Maximum CSV Lines_** and then select **_Download_**.
+    You can save the viewed event records as a CSV file. Enter the <Cmdname sid="maximum_csv_lines" className="uitext" /> and then select <Cmdname sid="download" className="uitext" />.
 
 - ![number2](/img/number-02.png) **Event History List**
 
-  - **_Severity_**
+  - <Cmdname sid="sms_alert_severity" className="uitext" />
 
     The severity is displayed in colors for <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>.
 
-  - **_Event title_**  
+  - <Cmdname sid="event_title" className="uitext" />
 
     The name of the event occurred based on the value set in the event policy.
 
-  - **_Event time_**  
+  - <Cmdname sid="event_time" className="uitext" />
 
     Event occurrence time.
 
@@ -65,28 +65,28 @@ You can check the history of alerts. You can see a list of all events that have 
 
     The event processing history can be added.
 
-  - **_Server_**  
+  - <Cmdname sid="server" className="uitext" />
 
     Server name. 
 
-  - **_Snapshot_**  
+  - <Cmdname sid="sms_alert_snapshot" className="uitext" />
 
-    Snapshot information of **_CPU_**, **_Memory Used_**, **_Disk_**, and **_Network_** for the occurred events. 
+    Snapshot information of <Cmdname sid="cpu" className="uitext" />, <Cmdname sid="memory_pused" className="uitext" />, <Cmdname sid="disk" className="uitext" />, and <Cmdname sid="network" className="uitext" /> for the occurred events. 
 
 ### Event Detail Info
 
-If you select **_event name_** in the event history list, it goes to the **_detailed_** information for 5 minutes before and after the event.
+If you select <Cmdname sid="event_title" className="uitext" /> in the event history list, it goes to the <Cmdname sid="detail" className="uitext" /> information for 5 minutes before and after the event.
 
 <ImgLang img='server-event-detail.png' desc='Server Event Detail'/>
 
 - ![number1](/img/number-01.png) **Chart Widget**
 
-  It displays the **_CPU_**, **_Memory Usage_**, **_Disk I/O_**, and **_Network_** charts before and after the alarm. The **_Severity_** of the event part appears.
+  It displays the **_CPU Usage_**, **_Memory Usage_**, **_Network_**, and **_Disk IO_** charts before and after the alarm. The <Cmdname sid="sms_alert_severity" className="uitext" /> of the event part appears.
 
-- ![number2](/img/number-02.png) **Process**
+- ![number2](/img/number-02.png) <Cmdname sid="sms_summary_process" className="uitext" />
 
   You can view the top 10 processes for the event. 
 
-- ![number3](/img/number-03.png) **Acknowledge Detail Info**
+- ![number3](/img/number-03.png) <Cmdname sid="sms_alert_acknowledge_detail" className="uitext" />
 
-  The event process records can be viewed. If you select **_Add to Acknowledge History_**, you can write and save the history.
+  The event process records can be viewed. If you select <Cmdname sid="sms_alert_acknowledge_add" className="uitext" />, you can write and save the history.

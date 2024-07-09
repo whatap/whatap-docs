@@ -35,6 +35,8 @@ To apply the value set in the following option, restart IIS.
 
 - **trace_http_client_ip_header_key** <span class='type'>String</span> <code class="my">.NET Agent v2.2.2 or later</code> <ScrollToLink anchor='trace_http_client_ip_header_key' />
 
+  Default `X-Forwarded-For`
+
   This function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header can be set with the client IP.
 
   If the load balancer like L4 is located before WEB/WAS, in some cases, the IP address of L4 becomes the remote address instead of the IP address of the client. In this situation, if the actual client IP is recorded as a specific key value in the HTTP header, it can be replaced with the corresponding key value.

@@ -2,9 +2,23 @@ Home > Select Project > <Cmdname sid="side_statistics" className="uitext" />
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select a sub menu under <Cmdname sid="side_statistics" className="uitext" />. The WhaTap agent collects statistical data for the key traces such as transaction information and SQL. A list is created every 5 minutes and it is sent to the server.
 
+## Basic screen guide
+
+Set the <Cmdname sid="time_selector" className="uitext" />, <Cmdname sid="filter" className="uitext" />, <Cmdname sid="order_by" className="uitext" />, and <Cmdname sid="applications" className="uitext" /> and then select ![Search icon](/img/ico-btn-search.png).
+
+<ImgLang img="apm-statistic-basic-operator.png" desc="Statistics" />
+
 - Each **Statistics** tab provides sorting options by **Sum**, **Max**, **Time avg**, and **Count** for viewing the list from your desired perspective. 
 
 - You can add or exclude columns to view from the list as well as the default values by using the <Cmdname sid="BTN06441" className="uitext" /> button.
+
+- When you select ![Search icon](/img/ico-btn-search.png), the ![CSV icon](/img/ic-csv-download-ms.svg) button appears above the search list along with the search results. If you select the button, you can download the searched list as a CSV file.
+
+  :::tip
+
+  If you click ![CSV icon](/img/ic-csv-download-ms.svg) without selecting ![Search icon](/img/ico-btn-search.png) after a statistics list appears, you can download the CSV file with the changed conditions.
+
+  :::
 
 - If you select the ![Detail view icon](/img/ico-detail-view.svg) <Cmdname sid="display_detail" className="uitext" /> icon in the statistics list, you can check the number of cases and average time chart, and additional charts are provided to compare the case count, error count, and response time. If you select the time to search in the chart, the <Cmdname sid="side_txSearch" className="uitext" /> menu appears.
 

@@ -2,9 +2,23 @@
 
 WhaTapモニタリングサービスのメイン画面でプロジェクトを選択し<Cmdname sid="side_statistics" className="uitext" />の下位メニューを選択します。WhaTapエージェントは、トランザクション情報やSQLなどの主要なトレース情報について統計情報を収集します。5分ごとに一覧を作成してサーバーに送信します。
 
+## 基本画面ガイド
+
+<Cmdname sid="time_selector" className="uitext" />および<Cmdname sid="filter" className="uitext" />, <Cmdname sid="order_by" className="uitext" />, <Cmdname sid="applications" className="uitext" />項目を設定した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
+
+<ImgLang img="apm-statistic-basic-operator.png" desc="統計" />
+
 - 各**統計**タブは、**合計**、**最大**、**平均時間**および**件数**による並べ替えオプションを提供し、任意の視点から上位リストを表示できます。 
 
 - <Cmdname sid="BTN06441" className="uitext" />ボタンて既定値の他に照会するカラムを追加または除外できます。
+
+- ![検索アイコン](/img/ico-btn-search.png)ボタンをタップすると、照会結果とともに照会リストの上に![CSVアイコン](/img/ic-csv-download-ms.svg)ボタンが表示されます。ボタンを選択すると、照会リストをCSV形式のファイルでダウンロードできます。
+
+  :::tip
+
+  統計照会の一覧が表示された後に照会条件を変更して、![検索アイコン](/img/ico-btn-search.png)ボタンを選択せずに![CSVアイコン](/img/ic-csv-download-ms.svg)ボタンをクリックすると、変更された条件でCSVファイルをダウンロードできます。
+
+  :::
 
 - 統計リストから![詳細アイコン](/img/ico-detail-view.svg)<Cmdname sid="display_detail" className="uitext" />アイコンを選択すると、件数と平均時間チャートが確認できるし、エージェント間の件数およびエラー件数の比較、応答時間の比較チャートを追加で提供します。そのチャートで照会する時点を選択すると<Cmdname sid="side_txSearch" className="uitext" />メニューに移動します。
 

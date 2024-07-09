@@ -74,52 +74,55 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
 
    ```bash title='Linux'
    #!/usr/bin/env bash
-   export ACCESSKEY=
-   export WHATAP_HOST=
-   export CLUSTER=
-   export REGION=
+   export ACCESSKEY=x4u5j20mdbj98-x3btmtjfhffmrc-z6ogidu7vm3shg
+   export WHATAP_HOST=127.0.0.1
+   export CLUSTER=xxxx
+   export REGION=xxxx
    export LAUNCH_TYPE=EC2
+
    cat >whatap_ecs.json <<EOL
    { "containerDefinitions": [ {
-       "name": "whatap-node-agent",
-       "image": "whatap/ecs_mon",
-       "cpu": 100,
-       "memory": 50,
-       "essential": true,
-       "mountPoints": [{
-           "containerPath": "/var/run/docker.sock",
-           "sourceVolume": "docker_sock",
-           "readOnly": true},{
-           "containerPath": "/rootfs",
-           "sourceVolume": "rootfs",
-           "readOnly": true}],
-       "environment": [{
-           "name": "ACCESSKEY",
-           "value": "$ACCESSKEY"
-       },{
-           "name": "WHATAP_HOST",
-           "value": "$WHATAP_HOST"}
-       ],
-       "linuxParameters": {
-           "capabilities": {
-               "add": [
-               "SYS_ADMIN",
-               "SYS_RESOURCE",
-               "SYS_PTRACE",
-               "NET_ADMIN",
-               "NET_BROADCAST",
-               "NET_RAW",
-               "IPC_LOCK",
-               "CHOWN"]
-           }}}],
+   "name": "whatap-node-agent",
+   "image": "whatap/ecs_mon",
+   "cpu": 100,
+   "memory": 50,
+   "essential": true,
+   "mountPoints": [{
+       "containerPath": "/var/run/docker.sock",
+       "sourceVolume": "docker_sock",
+       "readOnly": true},{
+       "containerPath": "/rootfs",
+       "sourceVolume": "rootfs",
+       "readOnly": true}],
+   "environment": [{
+       "name": "ACCESSKEY",
+       "value": "$ACCESSKEY"
+   },{
+       "name": "WHATAP_HOST",
+       "value": "$WHATAP_HOST"}
+   ],
+   "linuxParameters": {
+       "capabilities": {
+           "add": [
+           "SYS_ADMIN",
+           "SYS_RESOURCE",
+           "SYS_PTRACE",
+           "NET_ADMIN",
+           "NET_BROADCAST",
+           "NET_RAW",
+           "IPC_LOCK",
+           "CHOWN"]
+       }}}],
    "requiresCompatibilities": ["EC2"],
    "volumes": [{
-       "host": {"sourcePath": "/var/run/docker.sock"},
-       "name": "docker_sock"},{
-       "host": {"sourcePath": "/"},
-       "name": "rootfs"}],
+   "host": {"sourcePath": "/var/run/docker.sock"},
+   "name": "docker_sock"},{
+   "host": {"sourcePath": "/"},
+   "name": "rootfs"}],
    "family": "whatap-agent-task"}
+
    EOL
+
    aws ecs register-task-definition \
    --cli-input-json file://$(pwd)/whatap_ecs.json \
    --region $REGION
@@ -131,12 +134,15 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
    --region $REGION
    ```
 
-- 実行するために必要な項目は次のとおりです。
+   - 実行するために必要な項目は次のとおりです。
 
-  - `ACCESSKEY`：WhaTapプロジェクトのAccess Key
-  - `WHATAP_HOST`：WhaTap収集サーバーのIP
-  - `REGION`：AWS Region
-  - `CLUSTER`：ECS Cluster
+     - `ACCESSKEY`：WhaTapプロジェクトのAccess Key
+
+     - `WHATAP_HOST`：WhaTap収集サーバーのIP
+
+     - `REGION`：AWS Region
+
+     - `CLUSTER`：ECS Cluster
 
 ### Fargate起動タイプ
 
@@ -216,20 +222,21 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
 
    ```bash title='Linux'
    #!/usr/bin/env bash
-   export ACCESSKEY=
-   export WHATAP_HOST=
-   export PROFILE=
-   export REGION=
-   export CLUSTER=
-   export CLUSTER_CONFIG=
-   export TASK_EXECUTION_ROLE=
-   export SUBNET_1=
-   export SUBNET_2=
-   export SGGRP=
+   export ACCESSKEY=xxxx-xxxx-xxxx
+   export WHATAP_HOST=xxx.xxx.xxx
+   export PROFILE=xxxxx	
+   export REGION=xxxxx
+   export CLUSTER=xxxxx
+   export CLUSTER_CONFIG=xxxx
+   export TASK_EXECUTION_ROLE=xxxx
+   export SUBNET_1=xxxx
+   export SUBNET_2=xxxx
+   export SGGRP=xxxx
    export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
    export PROJNAME=whatap-monitoring
    export LAUNCH_TYPE=FARGATE
    export WHATAP_ROLE_ARN=$(cat role_arn.txt)
+
    cat >docker-compose.yml <<EOL
    version: '3'
    services:
@@ -240,6 +247,7 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
        - WHATAP_HOST=$WHATAP_HOST
        - FARGATE_HELPER=true
    EOL
+
    cat >ecs-params.yml <<EOL
    version: 1
    task_definition:
@@ -259,6 +267,7 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
            - "$SGGRP"
        assign_public_ip: ENABLED
    EOL
+
    ecs-cli compose --project-name $PROJNAME service up \
        --cluster-config $CLUSTER_CONFIG \
        --ecs-profile $PROFILE --region $REGION
@@ -287,11 +296,11 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
 
 - モニタリングサービスを開始できる状態
 
-  <ImgLang img='amazon-ecs-monitoring-on.png' desc='モニタリングの活性化' />
+  <ImgLang img='amazon-ecs-monitoring-on.png' desc='モニタリングのアクティブ化' />
 
 - モニタリングサービスを開始できない状態
 
-  <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの活性化不可' />
+  <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの無効化' />
 
 ## アンインストール時の注意事項
 

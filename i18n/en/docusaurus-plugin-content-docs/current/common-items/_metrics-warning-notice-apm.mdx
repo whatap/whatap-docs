@@ -1,22 +1,26 @@
-## Template{#template}
+## Template {#template}
 
 ### Metrics Event
 
-In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add Alert Policy_**. Select a desired item in **_Templates_**.
+In the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="metrics" className="uitext" /> section, select <Cmdname sid="add_notification" className="uitext" />. Select a desired item in <Cmdname sid="template" className="uitext" />.
 
-- **_WARNING_OLD_GENARATION_GC_**
+- <Cmdname sid="application_alert_template_1" className="uitext" />
 
   An alert is sent when GC occurs in the Old Generation area of the heap memory.
 
-- **_TOO_SLOW_SQL_**
+- <Cmdname sid="application_alert_template_2" className="uitext" />
 
   An alert is sent when a query has been issued too slow (more than 5 seconds).
 
-- **_TOO_MANY_ACTX_**
+- <Cmdname sid="application_alert_template_3" className="uitext" />
 
   An alert is sent when the number of active transactions in the area exceeding 8 seconds is too high.
 
-- **_APDEX_**
+- <Cmdname sid="application_alert_template_5" className="uitext" />
+
+  It sends an alert when the TPS value drops drastically.
+
+- <Cmdname sid="normal_alert_template_1" className="uitext" />
 
   An alert is sent when the **APDEX** figure is less than 0.7.
 
@@ -40,6 +44,8 @@ In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add Alert Poli
 
   An alert is sent when the sum of TPS of the agents that belong to a specific `okind` of the project changes by more than 30% compared to 7 days ago.
 
+:::tip
+
 When you have to make a comprehensive decision on the data received from multiple agents, configure the following composite metrics templates.
 
 - **_Inactive agents has been found._**
@@ -48,3 +54,5 @@ When you have to make a comprehensive decision on the data received from multipl
 When you have to determine an event by comparing the past data with the current data, configure the following composite metrics templates.
 
 - **_TPS has changed by more than 30% compared to the previous week._**
+
+:::

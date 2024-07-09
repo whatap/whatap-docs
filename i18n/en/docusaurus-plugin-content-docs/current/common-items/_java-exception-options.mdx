@@ -2,6 +2,11 @@
 
   It registers the business exception.
 
+  ```ini title="whatap.conf"
+  # example
+  biz_exceptions=com.home.test.exception.BizException
+  ```
+
   :::tip
 
   Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
@@ -32,6 +37,11 @@
 - **ignore_exceptions** <span class='type'>String</span>
 
   The errors of the registered exceptions are ignored.
+
+  ```ini title="whatap.conf"
+  # example
+  ignore_exceptions=com.home.test.exception.BizException
+  ```
 
   :::tip
 
@@ -91,6 +101,11 @@
 
   If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. For multiple values, use comma (,) as the delimiter.
 
+  ```ini title='whatap.conf'
+  # example
+  httpc_status_ignore=404,500
+  ```
+
   :::tip
 
   Ignore HTTP status error code/Exclude error statistics
@@ -102,6 +117,11 @@
   `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
   Set it as `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+
+  ```ini title='whatap.conf'
+  # example
+  httpc_status_url_ignore_set=a/b/c:404,d/e/f:500
+  ```
 
   :::tip
 
