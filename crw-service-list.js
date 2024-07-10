@@ -1,4 +1,4 @@
-// 23년 1분기는 수동으로 긁어야 할듯
+// 서비스 릴리스 노트 크롤링 및 스타일 입혀서 mdx 전환
 const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
