@@ -1728,7 +1728,7 @@ function GenerateTOC(_param) {
     const { frontMatter  } = (0,doc/* useDoc */.u)();
     (0,react.useEffect)(()=>{
         // 페이지가 렌더링된 후에 TOC를 생성합니다.
-        const headers = document.querySelectorAll('h2, h3');
+        const headers = document.querySelectorAll('h2, h3, h4');
         const collectedToc = Array.from(headers).map((header)=>({
                 value: header.innerText,
                 id: header.id,
@@ -1745,7 +1745,9 @@ function GenerateTOC(_param) {
             children: /*#__PURE__*/ (0,jsx_runtime.jsx)(TOCItems/* default */.A, GenerateToc_objectSpread({
                 toc: tocItems,
                 linkClassName: LINK_CLASS_NAME,
-                linkActiveClassName: LINK_ACTIVE_CLASS_NAME
+                linkActiveClassName: LINK_ACTIVE_CLASS_NAME,
+                minHeadingLevel: frontMatter.toc_min_heading_level,
+                maxHeadingLevel: frontMatter.toc_max_heading_level
             }, props))
         });
     } else if (device === 'mobile') {
