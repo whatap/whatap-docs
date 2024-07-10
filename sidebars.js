@@ -2022,6 +2022,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-pro/log-main'
+              },
+              items: [
+                'oracle-pro/log-db',
+                'oracle-pro/log-lt',
+                'oracle-pro/log-exp',
+                'oracle-pro/log-search',
+                'oracle-pro/log-setting',
+                'oracle-pro/log-parser',
+              ]
+            },
+            {
+              type: 'category',
               label: '경고 알림',
               collapsible: true,
               collapsed: true,
