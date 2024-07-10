@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[81744],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77290],{
 
-/***/ 84078:
+/***/ 53871:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_7_7',
-	title: 'Kubernetes Agent v1.7.7',
+	id: 'k8s-1_5_8',
+	title: 'Kubernetes Agent v1.5.8',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_7_6',
+	pagination_next: 'release-notes/k8s/k8s-1_5_7',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_7_7",
-  "title": "Kubernetes Agent v1.7.7",
-  "description": "2024년 07월 09일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.7.7.mdx",
+  "id": "release-notes/k8s/k8s-1_5_8",
+  "title": "Kubernetes Agent v1.5.8",
+  "description": "2024년 03월 26일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.5.8.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_7_7",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_7",
+  "slug": "/release-notes/k8s/k8s-1_5_8",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_8",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.7.7.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.5.8.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_7_7",
-    "title": "Kubernetes Agent v1.7.7",
+    "id": "k8s-1_5_8",
+    "title": "Kubernetes Agent v1.5.8",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_7_6",
+    "pagination_next": "release-notes/k8s/k8s-1_5_7",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server Agent AIX v1.2.7",
-    "permalink": "/whatap-docs/release-notes/server/server-aix-1_2_7"
+    "title": "Kubernetes Agent v1.5.9",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_9"
   },
   "next": {
-    "title": "Kubernetes Agent v1.7.6",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_6"
+    "title": "Kubernetes Agent v1.5.7",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_7"
   }
 };
 const assets = {
@@ -66,8 +66,6 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    code: "code",
-    em: "em",
     li: "li",
     p: "p",
     ul: "ul",
@@ -77,65 +75,27 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 07월 09일"
+      children: "2024년 03월 26일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " Java 애플리케이션과 쿠버네티스 에이전트 연동 방식 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["Java 에이전트 컨테이너 환경변수에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "WHATAP_JAVA_AGENT_PATH"
-              }), " 값을 추가해 컨테이너 ID 연동 기능 추가"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["에이전트 프로세스 ID를 이용하여 proc 정보 조회, 해당 정보로 애플리케이션 컨테이너 process name에서 와탭 자바 홈(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "$WHATAP_HOME"
-              }), ") 추출"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["위 과정에서 와탭 자바 홈(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "$WHATAP_HOME"
-              }), ")을 찾지 못하면 runtimeAPI를 사용해 에이전트 이미지에서 와탭 자바 홈 추출"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "에이전트의 버전과 형식 체크하고, 다음을 기준 충족해야 valid 버전으로 containerID 연동 기능 수행"
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["1. 파일 이름이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-                children: ["whatap.agent-", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "X.Y.Z"
-                }), ".jar"]
-              }), "이고 버전 정보가 2.2.33보다 크거나 같은 경우(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "X.Y.Z"
-              }), " >= 2.2.33)"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["2. 파일 이름이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "whatap.agent.kube.jar"
-              }), "인 경우"]
-            }), "\n"]
-          }), "\n"]
+            children: "Fixed"
+          }), " apiserver의 endpoint가 IPV6 형태인 경우 apiserver 대시보드에 데이터가 출력되지 않는 문제 수정"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " 이벤트 수집 방식 변경: 에이전트 기동 시점 이후 생성된 이벤트에 대해서만 데이터 수집(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "kube_event"
-          }), ")"]
+            children: "Fixed"
+          }), " 최초 Warning 이벤트 발생 시 수집하는 오브젝트 매니페스트의 중복 수집 방지 로직 추가"]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.7.7.tar",
-          children: "kube_mon_1.7.7.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.5.8.tar",
+          children: "kube_mon_1.5.8.tar"
         })]
       })
     })]
