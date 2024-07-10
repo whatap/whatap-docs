@@ -10,6 +10,9 @@ export default function Title ({level, hashid, children}) {
         navbar: {hideOnScroll},
     } = useThemeConfig();
 
+    if (level === 'none') {
+        return null
+    }
     return (
         <Headertag 
             className={clsx(
