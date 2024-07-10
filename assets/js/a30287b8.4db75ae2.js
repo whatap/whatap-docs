@@ -516,8 +516,8 @@ const metadata = {
     "permalink": "/whatap-docs/oracle-pro/sga-size"
   },
   "next": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/oracle-pro/set-notice"
+    "title": "로그",
+    "permalink": "/whatap-docs/oracle-pro/log-main"
   }
 };
 const assets = {

@@ -240,8 +240,8 @@ const metadata = {
   },
   "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "보고서",
-    "permalink": "/whatap-docs/oracle-pro/report-intro"
+    "title": "로그 파싱하기",
+    "permalink": "/whatap-docs/oracle-pro/log-parser"
   },
   "next": {
     "title": "이벤트 설정",
