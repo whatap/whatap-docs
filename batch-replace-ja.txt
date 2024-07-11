@@ -254,6 +254,8 @@ replace "_.ebextensions_"
 with "*.ebextensions*"
 replace "_`{application}`.jar_"
 with "*`{application}`.jar*"
+replace "_node_modules/whatap_"
+with "*node_modules/whatap*"
 
 in "i18n/ja/docusaurus-plugin-content-docs/current/common-items/_edp-plugin.mdx"
 replace "_plugin_"
