@@ -453,6 +453,12 @@ function colsToJson(data){
     "ko": "통합 대시보드"
   }
 
+  rd["dbx_agent_setting"] = {
+    "en": "DBX Agent Setting",
+    "ja": "DBXエージェントの設定",
+    "ko": "DBX 에이전트 설정",
+  }
+
   rd["daily_app_stat"].en = "Daily APP. Status";
   rd["daily_app_stat"].ja = "日別APP現況"
 
