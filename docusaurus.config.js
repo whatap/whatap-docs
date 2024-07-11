@@ -119,7 +119,8 @@ const config = {
           blogSidebarTitle: '새로운 기능',
           blogSidebarCount: 'ALL',
           include: [ '**/*.mdx' ],
-          rehypePlugins: [ rehypeExtendedTable ]
+          rehypePlugins: [ rehypeExtendedTable ],
+          // groupByYear: true, 아직 릴리스 안됨...canary 버전임...개빡침....
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
