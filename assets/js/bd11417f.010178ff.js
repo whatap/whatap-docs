@@ -78,6 +78,18 @@ const toc = [{
   "id": "kubernetes",
   "level": 3
 }, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
+}, {
+  "value": "Oracle V2 / Oracle Pro",
+  "id": "oracle-v2--oracle-pro",
+  "level": 4
+}, {
+  "value": "Oracle Pro",
+  "id": "oracle-pro",
+  "level": 4
+}, {
   "value": "Preview 2.7.0.a3",
   "id": "preview-270a3",
   "level": 2
@@ -95,7 +107,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database",
+  "id": "database-1",
   "level": 3
 }, {
   "value": "공통",
@@ -107,11 +119,11 @@ const toc = [{
   "level": 4
 }, {
   "value": "Oracle Pro",
-  "id": "oracle-pro",
+  "id": "oracle-pro-1",
   "level": 4
 }, {
   "value": "Oracle <code class=\"my\">V2</code> / Oracle Pro",
-  "id": "oracle-v2--oracle-pro",
+  "id": "oracle-v2--oracle-pro-1",
   "level": 4
 }, {
   "value": "Preview 2.7.0.a2",
@@ -127,7 +139,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-1",
+  "id": "database-2",
   "level": 3
 }, {
   "value": "공통",
@@ -135,7 +147,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "Oracle Pro",
-  "id": "oracle-pro-1",
+  "id": "oracle-pro-2",
   "level": 4
 }, {
   "value": "Preview 2.7.0.a1",
@@ -354,6 +366,42 @@ function _createMdxContent(props) {
               }), " 상품 로그 모니터링 미지원)"]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "oracle-v2--oracle-pro",
+          children: "Oracle V2 / Oracle Pro"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06224",
+            className: "uitext"
+          }), " 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Runtime Plan"
+            })
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Explain Plan"
+            })
+          }), " 탭의 테이블에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Access Predicate"
+            })
+          }), " 컬럼 추가"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "oracle-pro",
+          children: "Oracle Pro"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 데이터베이스 모니터링 소개 페이지에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Oracle Pro"
+          }), " 신규 출시를 알리는 튜토리얼 추가"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -594,7 +642,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 차트가 표시되지 않는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database",
+          id: "database-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -714,7 +762,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracle-pro",
+          id: "oracle-pro-1",
           children: "Oracle Pro"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -822,7 +870,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
-          id: "oracle-v2--oracle-pro",
+          id: "oracle-v2--oracle-pro-1",
           children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
             className: "my",
             children: "V2"
@@ -1035,7 +1083,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-1",
+          id: "database-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -1136,7 +1184,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracle-pro-1",
+          id: "oracle-pro-2",
           children: "Oracle Pro"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
