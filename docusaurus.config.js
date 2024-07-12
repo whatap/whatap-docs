@@ -120,7 +120,7 @@ const config = {
           blogSidebarCount: 'ALL',
           include: [ '**/*.mdx' ],
           rehypePlugins: [ rehypeExtendedTable ],
-          // groupByYear: true, 아직 릴리스 안됨...canary 버전임...개빡침....
+          // groupByYear: true, (canary 버전 옵션)
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
