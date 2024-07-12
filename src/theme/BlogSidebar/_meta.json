@@ -1,6 +1,13 @@
 [
   {
     "type": "category",
+    "label": "개요",
+    "items": [
+      "/blog/index"
+    ]
+  },
+  {
+    "type": "category",
     "label": "2024",
     "items": [
       "/blog/2024-1q-summary"

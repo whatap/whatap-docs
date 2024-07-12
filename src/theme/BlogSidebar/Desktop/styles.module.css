@@ -7,15 +7,23 @@
 
 .sidebarItemTitle {
   font-size: var(--ifm-h3-font-size);
+  /* font-size: 50px !important; */
   font-weight: var(--ifm-font-weight-bold);
 }
 
 .sidebarItemList {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  li > ul {
+    list-style: none !important;
+  }
+  li > div {
+    font-size: 17px;
+    font-weight: 500;
+  }
 }
 
 .sidebarItem {
-  margin-top: 0.7rem;
+  margin-top: 0.9rem;
 }
 
 .sidebarItemLink {
