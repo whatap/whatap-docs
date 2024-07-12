@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20581],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58391],{
 
 /***/ 29194:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -636,6 +636,14 @@ function _createMdxContent(props) {
             })]
           })]
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_statCaller",
+            className: "uitext"
+          }), " 메뉴에서 한 번에 다운로드할 수 있는 CSV 라인 수는 최대 10,000줄입니다."]
+        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -1231,7 +1239,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 30247:
+/***/ 63173:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1251,10 +1259,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'analysis-apm-trs',
 	title: '통계',
-	description: 'PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.',
+	description: 'Python 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.',
 	toc_max_heading_level: 2,
 	tags: [
-		'PHP',
+		'Python',
 		'트랜잭션',
 		'애플리케이션',
 		'분석하기',
@@ -1264,21 +1272,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/analysis-apm-trs",
+  "id": "python/analysis-apm-trs",
   "title": "통계",
-  "description": "PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
-  "source": "@site/docs/php/analysis-apm-trs.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/analysis-apm-trs",
-  "permalink": "/whatap-docs/php/analysis-apm-trs",
+  "description": "Python 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
+  "source": "@site/docs/python/analysis-apm-trs.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/analysis-apm-trs",
+  "permalink": "/whatap-docs/python/analysis-apm-trs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/analysis-apm-trs.mdx",
+  "editUrl": "undefined/docs/python/analysis-apm-trs.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "PHP",
-      "permalink": "/whatap-docs/tags/php"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "inline": true,
@@ -1310,10 +1318,10 @@ const metadata = {
   "frontMatter": {
     "id": "analysis-apm-trs",
     "title": "통계",
-    "description": "PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
+    "description": "Python 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
     "toc_max_heading_level": 2,
     "tags": [
-      "PHP",
+      "Python",
       "트랜잭션",
       "애플리케이션",
       "분석하기",
@@ -1321,14 +1329,14 @@ const metadata = {
       "UI"
     ]
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "pySidebar",
   "previous": {
-    "title": "에이전트 옵션 설정",
-    "permalink": "/whatap-docs/php/topology-settings"
+    "title": "부가 기능",
+    "permalink": "/whatap-docs/python/topology-add-function"
   },
   "next": {
     "title": "보고서",
-    "permalink": "/whatap-docs/php/report-intro"
+    "permalink": "/whatap-docs/python/report-intro"
   }
 };
 const assets = {
