@@ -19,7 +19,7 @@ tags:
 
 ### エージェントのインストール
 
-エージェントをインストール案内に従ってインストールすると、_whatap.agent.java.tar.gz_ファイルをダウンロードできます。 圧縮を解凍すると_whatap.agent.proxy-`X.Y.Z`.jar_ファイルをWhaTap収集サーバーと通信可能なサーバーの場所に保存してください。 インストール済みのエージェントがある場合は、その場所のファイルを利用できます。
+エージェントをインストール案内に従ってインストールすると、*whatap.agent.java.tar.gz*ファイルをダウンロードできます。 圧縮を解凍すると*whatap.agent.proxy-`X.Y.Z`.jar*ファイルをWhaTap収集サーバーと通信可能なサーバーの場所に保存してください。 インストール済みのエージェントがある場合は、その場所のファイルを利用できます。
 
 :::tip
 
@@ -37,7 +37,7 @@ whatap_infra.exe /SILENT /SERIAL={アクセスキー} /PROXYIP={プロキシサ�
 
 #### パブリックサブネット(Public Subnet)
 
-_whatap.agent.proxy-`X.Y.Z`.jar_ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために_proxy.conf_ファイルを作成してください。 _whatap.agent.proxy-`X.Y.Z`.jar_ファイルがあるパスは`$PROXY_HOME`となります。
+*whatap.agent.proxy-`X.Y.Z`.jar*ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために*proxy.conf*ファイルを作成してください。 *whatap.agent.proxy-`X.Y.Z`.jar*ファイルがあるパスは`$PROXY_HOME`となります。
 
 ```ini title='$PROXY_HOME/proxy.conf'
 whatap.server.host=52.78.209.94/52.78.224.235 ## WhaTapアプリケーションモニタリング収集サーバーアドレス
@@ -60,7 +60,7 @@ whatap.server.host={パブリックサブネット(Public Subnet)プロキシサ
 
 ### エージェント実行
 
-ソフトウェアプロキシは、`java`コマンドを使用して実行したり_proxy.sh_(_proxy.bat_)ファイルを作成して実行してください。
+ソフトウェアプロキシは、`java`コマンドを使用して実行したり*proxy.sh*(*proxy.bat*)ファイルを作成して実行してください。
 
 ```bash title='java command'
 java -jar whatap.agent.proxy-X.Y.Z.jar &
@@ -78,7 +78,7 @@ sh proxy.sh &
 
 :::note
 
-_proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod +x proxy.sh`コマンドを使用して実行権限を付与してください。
+*proxy.sh*(*proxy.bat*)ファイルを作成して実行する場合、`$ chmod +x proxy.sh`コマンドを使用して実行権限を付与してください。
 
 :::
 
@@ -99,7 +99,7 @@ whatap.server.host=192.168.203.60 ## プロキシサーバーのIP
 
 ### パブリックサブネット(Public Subnet)
 
-次を参照して_haproxy.cfg_ファイルを設定してください。
+次を参照して*haproxy.cfg*ファイルを設定してください。
 
 ```ini title='/etc/haproxy/haproxy.cfg'
 frontend proxy_in
@@ -134,7 +134,7 @@ whatap.server.host=192.168.203.60 ## プロキシサーバーのIP
 
 ### パブリックサブネット(Public Subnet)
 
-次を参照して_nginx.conf_ファイルを設定してください。
+次を参照して*nginx.conf*ファイルを設定してください。
 
 ```apacheconf title='/etc/nginx/nginx.conf'
 stream {

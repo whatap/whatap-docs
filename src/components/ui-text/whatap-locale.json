@@ -134,7 +134,7 @@
   },
   "account_create_form_phone": {
     "en": "Phone",
-    "ja": "携帯番号(必須)",
+    "ja": "Phone",
     "ko": "핸드폰 (필수)",
     "zh": "手机号码（必须）",
     "service_id": "_00035"
@@ -162,7 +162,7 @@
   },
   "account_create_accept_to_the_terms_of_use": {
     "en": "I accept to the terms of use.",
-    "ja": "利用規約に同意します(必須)",
+    "ja": "I accept to the terms of use.",
     "ko": "이용 약관에 동의합니다(필수).",
     "zh": "我接受使用条款。",
     "service_id": "_00039"
@@ -9485,10 +9485,10 @@
     "service_id": "ITM01409"
   },
   "heap_tot": {
-    "en": "Heap total",
-    "ja": "ヒープサイズ",
-    "ko": "Heap 크기",
-    "zh": "Heap Total",
+    "en": "Heap total use",
+    "ja": "ヒープの総使用量",
+    "ko": "Heap 총 사용량",
+    "zh": "Heap Total Use",
     "service_id": "ITM01410"
   },
   "heap_use": {
@@ -28211,10 +28211,10 @@
     "service_id": "ITM04104"
   },
   "heap_max": {
-    "en": "Heap max usage",
-    "ja": "ヒープ最大使用量",
-    "ko": "Heap 최대 사용량",
-    "zh": "Heap Max Usage",
+    "en": "Heap max size",
+    "ja": "ヒープの最大サイズ",
+    "ko": "Heap 최대 크기",
+    "zh": "Heap Max Size",
     "service_id": "ITM04105"
   },
   "heap_perm": {
@@ -33616,7 +33616,7 @@
   },
   "related_project": {
     "en": "Related project",
-    "ja": "連携プロジェクト",
+    "ja": "関連プロジェクト",
     "ko": "관련 프로젝트",
     "zh": "Related Project",
     "service_id": "_04882"
@@ -35233,7 +35233,7 @@
   },
   "group_management_move": {
     "en": "Move {type}",
-    "ja": "{type}へ移動",
+    "ja": "{type}の移動",
     "ko": "{type} 이동",
     "zh": "Move {type}",
     "service_id": "_05113"
@@ -35912,7 +35912,7 @@
   },
   "master_project_event_settings_help": {
     "en": "Share event settings with related projects. (If you change settings, it applies to related projects equally.)",
-    "ja": "連携プロジェクトとイベント設定を共有します。(設定を変更すると連携プロジェクトにも同様に適用されます。)",
+    "ja": "関連プロジェクトとイベント設定を共有します。(設定を変更すると関連プロジェクトにも同様に適用されます。)",
     "ko": "관련 프로젝트와 이벤트 설정을 공유합니다. (설정 변경시 관련 프로젝트에도 동일하게 적용됩니다.)",
     "zh": "Share event settings with related projects. (If you change settings, the same applies to related projects.)",
     "service_id": "_05210"
@@ -48316,14 +48316,14 @@
   },
   "TTL07015": {
     "en": "Add a project to correlate",
-    "ja": "関連プロジェクトの登録",
+    "ja": "連携プロジェクトの登録",
     "ko": "연계 프로젝트 추가",
     "zh": "Add correlated project",
     "service_id": "TTL07015"
   },
   "TTL07016": {
     "en": "Correlated project list",
-    "ja": "関連プロジェクトのリスト",
+    "ja": "連携プロジェクトのリスト",
     "ko": "연계 프로젝트 목록",
     "zh": "Correlated project list",
     "service_id": "TTL07016"
@@ -48337,7 +48337,7 @@
   },
   "DSC07018": {
     "en": "A correlated project has been added.",
-    "ja": "関連プロジェクトを追加しました。",
+    "ja": "連携プロジェクトを追加しました。",
     "ko": "연계 프로젝트가 추가되었습니다.",
     "zh": "A correlated project has been added.",
     "service_id": "DSC07018"
@@ -49044,35 +49044,35 @@
   },
   "DSC07122": {
     "en": "Select correlated project",
-    "ja": "関連プロジェクトの選択",
+    "ja": "連携プロジェクトの選択",
     "ko": "연계 프로젝트 선택",
     "zh": "Select correlated project",
     "service_id": "DSC07122"
   },
   "TTL07123": {
     "en": "Delete correlated project",
-    "ja": "関連プロジェクトの削除",
+    "ja": "連携プロジェクトの削除",
     "ko": "연계 프로젝트 삭제",
     "zh": "Delete correlated project",
     "service_id": "TTL07123"
   },
   "DSC07124": {
     "en": "Are you sure you want to delete project {projectName} from its correlated projects?",
-    "ja": "プロジェクト {projectName} を関連プロジェクトから削除しますか?",
+    "ja": "プロジェクト {projectName} を連携プロジェクトから削除しますか?",
     "ko": "{projectName} 프로젝트를 연계 프로젝트에서 삭제하시겠습니까?",
     "zh": "Are you sure you want to delete project {projectName} from its correlated projects?",
     "service_id": "DSC07124"
   },
   "DSC07125": {
     "en": "Correlated project has been added.",
-    "ja": "関連プロジェクを追加しました。",
+    "ja": "連携プロジェクを追加しました。",
     "ko": "연계 프로젝트가 추가되었습니다.",
     "zh": "A correlated project has been added.",
     "service_id": "DSC07125"
   },
   "DSC07126": {
     "en": "Correlated project has been deleted.",
-    "ja": "関連プロジェクトを削除しました。",
+    "ja": "連携プロジェクトを削除しました。",
     "ko": "연계 프로젝트가 삭제되었습니다.",
     "zh": "The correlated project has been deleted.",
     "service_id": "DSC07126"
@@ -49240,7 +49240,7 @@
   },
   "TTL07151": {
     "en": "Correlated project",
-    "ja": "関連プロジェクト",
+    "ja": "連携プロジェクト",
     "ko": "연계 프로젝트",
     "zh": "Correlated project",
     "service_id": "TTL07151"
@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerations and the node manifest to ensure that the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerances and the node manifest to ensure that the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and the node manifest to ensure that the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -54230,10 +54230,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest for each object from the past",
+    "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55498,7 +55498,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55583,7 +55583,7 @@
   "TTL08062": {
     "en": "Equipment list",
     "ja": "デバイス一覧",
-    "ko": "\b장비 목록",
+    "ko": "장비 목록",
     "zh": "Equipment list",
     "service_id": "TTL08062"
   },
@@ -55623,10 +55623,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete this item?",
+    "zh": "Are you sure you want to delete that item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55639,14 +55639,14 @@
   "TTL08070": {
     "en": "Delete ADDR",
     "ja": "ADDRの削除",
-    "ko": "\bADDR 삭제",
+    "ko": "ADDR 삭제",
     "zh": "Delete ADDR",
     "service_id": "TTL08070"
   },
   "NTC08071": {
     "en": "Agency service is not installed.",
     "ja": "Agency serviceがインストールされていません。",
-    "ko": "\b에이전시 서비스가 설치되지 않았습니다.",
+    "ko": "에이전시 서비스가 설치되지 않았습니다.",
     "zh": "Agency service is not installed.",
     "service_id": "NTC08071"
   },
@@ -55660,14 +55660,14 @@
   "NTC08073": {
     "en": "This item does not exist.",
     "ja": "存在しない項目です。",
-    "ko": "\b존재하지 않는 항목입니다.",
+    "ko": "존재하지 않는 항목입니다.",
     "zh": "This item does not exist.",
     "service_id": "NTC08073"
   },
   "NTC08074": {
     "en": "An error has occurred.",
     "ja": "エラーが発生しました。",
-    "ko": "\b오류가 발생하였습니다.",
+    "ko": "오류가 발생하였습니다.",
     "zh": "An error has occurred.",
     "service_id": "NTC08074"
   },
@@ -55700,10 +55700,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55889,10 +55889,10 @@
     "service_id": "TTL08105"
   },
   "BTN08106": {
-    "en": "Set As Primary",
+    "en": "Set as primary",
     "ja": "デフォルトで表示",
     "ko": "기본으로 표시",
-    "zh": "Set As Primary",
+    "zh": "Set as primary",
     "service_id": "BTN08106"
   },
   "NTC08107": {
@@ -55924,10 +55924,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -55939,14 +55939,14 @@
   },
   "DSC08113": {
     "en": "Indicator provided",
-    "ja": "指標の提供",
+    "ja": "提供指標",
     "ko": "지표 제공",
     "zh": "Indicator provided",
     "service_id": "DSC08113"
   },
   "DSC08114": {
     "en": "Individual target list",
-    "ja": "個々の宛先リスト",
+    "ja": "個別対象リスト",
     "ko": "개별 대상 목록",
     "zh": "Individual target list",
     "service_id": "DSC08114"
@@ -55981,7 +55981,7 @@
   },
   "CNT08119": {
     "en": "Target Search",
-    "ja": "ターゲット検索",
+    "ja": "対象検索",
     "ko": "대상 검색",
     "zh": "Target Search",
     "service_id": "CNT08119"
@@ -55995,21 +55995,21 @@
   },
   "CNT08121": {
     "en": "{menu} will end the service on <b>{date}</b>.",
-    "ja": "{menu}は<b>{date}でサービス終了</b>します。",
+    "ja": "{menu}は<b>{date}にサービス終了</b>します。",
     "ko": "{menu}는 <b>{date}자로 서비스 종료</b>합니다.",
     "zh": "{menu} will end the service on <b>{date}</b>.",
     "service_id": "CNT08121"
   },
   "CNT08122": {
     "en": "We recommend using {menu2}, which has improved the functionality and convenience of {menu}.",
-    "ja": "{menu}の機能と利便性を向上させた{menu2}の利用をお勧めします。",
+    "ja": "{menu}の機能と利便性を向上させた{menu2}の使用をお勧めします。",
     "ko": "{menu}의 기능 및 편의성을 개선한 {menu2} 이용을 권장합니다.",
     "zh": "We recommend using {menu2}, which has improved the functionality and convenience of {menu}.",
     "service_id": "CNT08122"
   },
   "CNT08123": {
     "en": "{menu} can be accessed through the path below.",
-    "ja": "{menu}は以下のルートでご利用いただけます。",
+    "ja": "{menu}は以下のルートからご利用できます。",
     "ko": "{menu}는 아래의 경로로 이용하실 수 있습니다.",
     "zh": "{menu} can be accessed through the path below.",
     "service_id": "CNT08123"
@@ -56051,7 +56051,7 @@
   },
   "CNT08129": {
     "en": "The items that you can select may change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
-    "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
+    "ja": "設定した時間と日付に沿って選択できる対象が変わります。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連した下位の対象を一度に選択または解除できます。",
     "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
     "zh": "The items that you can select may change depending on the time and date you set. Select or deselect targets with a mouse click. By pressing the All button on the right, you can select or deselect related sub-targets at once.",
     "service_id": "CNT08129"
@@ -56065,35 +56065,35 @@
   },
   "CNT08131": {
     "en": "The available metrics to change dpends on the target you select. Click on an indicator to add it to the right pane.",
-    "ja": "選択したターゲットに応じて利用可能な指標が変わります。指標をクリックして右側の領域に追加します。",
+    "ja": "選択した対象によって利用できる指標が変わります。指標をクリックして右側の領域に追加します。",
     "ko": "선택한 대상에 따라 사용할 수 있는 지표가 변경됩니다. 지표를 클릭하여 오른쪽 영역에 추가합니다.",
     "zh": "The available metrics to change dpends on the target you select. Click on an indicator to add it to the right pane.",
     "service_id": "CNT08131"
   },
   "CNT08132": {
     "en": "The default interval time is different for each indicator, and the interval time changes depending on the search time range.",
-    "ja": "インジケータごとにデフォルトに設定されたインターバル時間が異なり、ルックアップ時間の範囲によってインターバル時間が変更されます。",
+    "ja": "指標ごとにデフォルトとして設定された収集間隔が異なります。照会時間の範囲によって収集間隔が変わります。",
     "ko": "지표 마다 기본으로 설정된 인터벌 시간이 다르며, 조회 시간 범위에 따라 인터벌 시간이 변경됩니다.",
     "zh": "The default interval time is different for each indicator, and the interval time changes depending on the search time range.",
     "service_id": "CNT08132"
   },
   "CNT08133": {
     "en": "If the layer where you select the indicator is closed, you can open the layer by clicking the indicator button.",
-    "ja": "インジケーターを選択するレイヤーが閉じている場合は、インジケーターボタンをクリックしてレイヤーを開くことができます。",
+    "ja": "指標を選択するレイヤーが閉じている場合は、指標ボタンをクリックしてレイヤーを開くことができます。",
     "ko": "지표를 선택하는 레이어가 닫혀있다면 지표 버튼을 클릭하여 레이어를 열 수 있습니다.",
     "zh": "If the layer where you select the indicator is closed, you can open the layer by clicking the indicator button.",
     "service_id": "CNT08133"
   },
   "CNT08134": {
     "en": "Dashboard option field",
-    "ja": "ダッシュボードオプションエリア",
+    "ja": "ダッシュボードオプション",
     "ko": "대시보드 옵션 영역",
     "zh": "Dashboard option field",
     "service_id": "CNT08134"
   },
   "CNT08135": {
     "en": "Automatically aligns the positions of widgets.",
-    "ja": "ウィジェットの位置を自動的にソートします。",
+    "ja": "ウィジェットの位置を自動的に調整します。",
     "ko": "위젯들의 위치를 자동으로 정렬합니다.",
     "zh": "Automatically aligns the positions of widgets.",
     "service_id": "CNT08135"
@@ -56135,14 +56135,14 @@
   },
   "CNT08141": {
     "en": "Displays a legend at the bottom of the chart.",
-    "ja": "グラフの下部に凡例を公開します。",
+    "ja": "グラフの下部に凡例を表示します。",
     "ko": "차트 하단에 범례를 노출합니다.",
     "zh": "Displays a legend at the bottom of the chart.",
     "service_id": "CNT08141"
   },
   "CNT08142": {
     "en": "Displays both the target and value when the mouse hovers over the chart.",
-    "ja": "チャートマウスホバー時にターゲットと値の両方を表示します。",
+    "ja": "チャートマウスホバー時に対象とその値を両方表示します。",
     "ko": "차트 마우스 호버 시 대상과 값을 모두 표시합니다.",
     "zh": "Displays both the target and value when the mouse hovers over the chart.",
     "service_id": "CNT08142"
@@ -56156,21 +56156,21 @@
   },
   "CNT08144": {
     "en": "Level the height of the widgets.",
-    "ja": "ウィジェットの高さを等しく設定します。",
+    "ja": "ウィジェットの高さを同じく設定します。",
     "ko": "위젯들의 높이를 동일하게 설정합니다.",
     "zh": "Level the height of the widgets.",
     "service_id": "CNT08144"
   },
   "CNT08145": {
     "en": "Save added widgets and settings to presets.",
-    "ja": "追加したウィジェットと設定をプリセットに保存します。",
+    "ja": "追加したウィジェットと設定をプリセットとして保存します。",
     "ko": "추가한 위젯과 설정을 프리셋에 저장합니다.",
     "zh": "Save added widgets and settings to presets.",
     "service_id": "CNT08145"
   },
   "CNT08146": {
     "en": "The targets available for selection change based on the time and date you set. Select or deselect an audience with a click. Press the right All button to select or deselect all related child audiences at once.",
-    "ja": "設定した時間と日付によって選択できる対象が変更されます。マウスクリックでターゲットを選択または解除します。右 All ボタンを押すと、関連するサブターゲットを一度に選択または解除できます。",
+    "ja": "設定した時間と日付によって選択できる対象が変わります。マウスクリックで対象を選択または解除します。右のAll ボタンを押すと、関連した下位の対象を一度に選択または解除できます。",
     "ko": "설정한 시간과 날짜에 따라 선택할 수 있는 대상이 변경됩니다. 마우스 클릭으로 대상을 선택 또는 해제합니다. 오른쪽 All 버튼을 누르면 관련 하위 대상들을 한번에 선택 또는 해제 할 수 있습니다.",
     "zh": "The targets available for selection change based on the time and date you set. Select or deselect an audience with a click. Press the right All button to select or deselect all related child audiences at once.",
     "service_id": "CNT08146"
@@ -56212,7 +56212,7 @@
   },
   "DSC08152": {
     "en": "Search for all values ​​matching the search key.",
-    "ja": "検索キーに対応するすべての値を検索します。",
+    "ja": "検索値に該当するすべての値を検索します。",
     "ko": "검색 키에 해당하는 모든 값을 검색합니다.",
     "zh": "Search for all values ​​matching the search key.",
     "service_id": "DSC08152"
@@ -56254,7 +56254,7 @@
   },
   "DSC08158": {
     "en": "Hi.<br />We would like to express our sincere gratitude to our customers, and we would like to inform you in advance that the application service dashboard (Old) function will be terminated.",
-    "ja": "こんにちは。<br />ワタップをご利用のお客様に心から感謝申し上げます。",
+    "ja": "こんにちは。<br />WhaTap Monitoringをご利用いただき、ありがとうございます。",
     "ko": "안녕하세요.<br />와탭을 이용해 주시는 고객분들께 진심으로 감사의 말씀을 드리며, 애플리케이션 서비스 대시보드 (Old) 기능을 종료하게 되어 사전 안내해 드립니다.",
     "zh": "Hi.<br />We would like to express our sincere gratitude to our customers, and we would like to inform you in advance that the application service dashboard (Old) function will be terminated.",
     "service_id": "DSC08158"
@@ -56268,7 +56268,7 @@
   },
   "DSC08160": {
     "en": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Service Dashboard</a> menu.<br />We will do our best to provide better service.",
-    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションサービスダッシュボード</a>メニューから改善された機能を利用できます。<br />より良いサービスを提供するために最善を尽くします。",
+    "ja": "<a href=\"{url}\" target=\"_blank\">ダッシュボード>アプリケーションサービスダッシュボード</a>メニューから改善された機能をご利用できます。<br />より良いサービスが提供できるように最善を尽くします。",
     "ko": "<a href=\"{url}\" target=\"_blank\">대시보드 > 애플리케이션 서비스 대시보드</a> 메뉴에서 개선된 기능을 이용할 수 있습니다.<br />더 좋은 서비스 제공을 위해 최선을 다하겠습니다.",
     "zh": "You can use improved features in the <a href=\"{url}\" target=\"_blank\">Dashboard > Application Service Dashboard</a> menu.<br />We will do our best to provide better service.",
     "service_id": "DSC08160"
@@ -56286,6 +56286,391 @@
     "ko": "기본",
     "zh": "Primary",
     "service_id": "DSC08162"
+  },
+  "BTN08163": {
+    "en": "Excel Format",
+    "ja": "エクセル形式",
+    "ko": "엑셀 양식",
+    "zh": "Excel format",
+    "service_id": "BTN08163"
+  },
+  "TTL08164": {
+    "en": "Segment size (TOP 50)",
+    "ja": "セグメントサイズ(TOP 50)",
+    "ko": "세그먼트 사이즈 (TOP 50)",
+    "zh": "Segment size (TOP 50)",
+    "service_id": "TTL08164"
+  },
+  "TTL08165": {
+    "en": "Container name",
+    "ja": "コンテナ名",
+    "ko": "컨테이너 이름",
+    "zh": "Container name",
+    "service_id": "TTL08165"
+  },
+  "TTL08166": {
+    "en": "Tablespace name",
+    "ja": "表スペース名",
+    "ko": "테이블스페이스 이름",
+    "zh": "tablespace name",
+    "service_id": "TTL08166"
+  },
+  "TTL08167": {
+    "en": "Owner",
+    "ja": "所有者",
+    "ko": "소유주",
+    "zh": "owner",
+    "service_id": "TTL08167"
+  },
+  "TTL08168": {
+    "en": "Segment name",
+    "ja": "セグメント名",
+    "ko": "세그먼트 이름",
+    "zh": "Segment name",
+    "service_id": "TTL08168"
+  },
+  "TTL08169": {
+    "en": "segment type",
+    "ja": "セグメントタイプ",
+    "ko": "세그먼트 타입",
+    "zh": "segment type",
+    "service_id": "TTL08169"
+  },
+  "DSC08171": {
+    "en": "You must have agent settings and DB permissions. ",
+    "ja": "エージェント設定とDB権限が必要です。 ",
+    "ko": "에이전트 설정과 DB 권한이 있어야 합니다. ",
+    "zh": "You must have agent settings and DB permissions. ",
+    "service_id": "DSC08171"
+  },
+  "DSC08172": {
+    "en": "{menu_title} is collected once a day.<br/>Set the following agent options and DB permissions.",
+    "ja": "{menu_title}は1日1回収集します。<br/>次のエージェントオプションとDB権限を設定します。",
+    "ko": "{menu_title}은/는 하루 한 번 수집합니다.<br/>다음 에이전트 옵션과 DB 권한을 설정하세요.",
+    "zh": "{menu_title} is collected once a day.<br/>Set the following agent options and DB permissions.",
+    "service_id": "DSC08172"
+  },
+  "DSC08173": {
+    "en": "DB permissions",
+    "ja": "DB権限",
+    "ko": "DB 권한",
+    "zh": "DB permissions",
+    "service_id": "DSC08173"
+  },
+  "DSC08174": {
+    "en": "Agent options",
+    "ja": "エージェントオプション",
+    "ko": "에이전트 옵션",
+    "zh": "Agent options",
+    "service_id": "DSC08174"
+  },
+  "DSC08175": {
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで調整できます。<br/>（デフォルト：10MB以上、夜明け5時収集）",
+    "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "service_id": "DSC08175"
+  },
+  "TTL08177": {
+    "en": "partition name",
+    "ja": "パーティション名",
+    "ko": "파티션 이름",
+    "zh": "partition name",
+    "service_id": "TTL08177"
+  },
+  "TTL08178": {
+    "en": "Edit",
+    "ja": "編集",
+    "ko": "편집",
+    "zh": "Edit",
+    "service_id": "TTL08178"
+  },
+  "TTL08179": {
+    "en": "Delete ADDR",
+    "ja": "ADDRの削除",
+    "ko": "ADDR 삭제",
+    "zh": "Delete ADDR",
+    "service_id": "TTL08179"
+  },
+  "DSC08180": {
+    "en": "It does not fit the IP format.",
+    "ja": "IP形式に合わない。",
+    "ko": "IP 형식에 맞지 않습니다.",
+    "zh": "It does not fit the IP format.",
+    "service_id": "DSC08180"
+  },
+  "DSC08181": {
+    "en": "No IP value has been entered.",
+    "ja": "IP値が入力されていません。",
+    "ko": "IP 값이 입력되지 않았습니다.",
+    "zh": "No IP value has been entered.",
+    "service_id": "DSC08181"
+  },
+  "DSC08182": {
+    "en": "The device name has not been entered.",
+    "ja": "機器名が入力されていません。",
+    "ko": "장비 이름이 입력되지 않았습니다.",
+    "zh": "The device name has not been entered.",
+    "service_id": "DSC08182"
+  },
+  "TTL08183": {
+    "en": "Server alias",
+    "ja": "サーバー別名",
+    "ko": "서버 별명",
+    "zh": "Server alias",
+    "service_id": "TTL08183"
+  },
+  "TTL08184": {
+    "en": "Default Group",
+    "ja": "基本グループ",
+    "ko": "기본 그룹",
+    "zh": "Default Group",
+    "service_id": "TTL08184"
+  },
+  "TLT08185": {
+    "en": "When creating a group, you can use a backslash (\\) to express three levels of hierarchy from major category\\middle category\\small category.",
+    "ja": "基本グループ作成時に逆スラッシュ（\\）を使用して、大分類\\中分類\\小分類までの3段階階層表現が可能です。",
+    "ko": "기본 그룹 작성시 역슬래시(\\)를 사용하여대분류\\중분류\\소분류까지의 3단계 계층 표현이 가능합니다.",
+    "zh": "When creating a group, you can use a backslash (\\) to express three levels of hierarchy from major category\\middle category\\small category.",
+    "service_id": "TLT08185"
+  },
+  "ITM08186": {
+    "en": "Show all report items",
+    "ja": "レポート項目全体を表示",
+    "ko": "보고서 항목 전체 표시",
+    "zh": "Show all report items",
+    "service_id": "ITM08186"
+  },
+  "DSC08187": {
+    "en": "The device name exceeds the maximum number of characters. ({ADDRLength}/256) ",
+    "ja": "機器名が最大文字数を超えて入力されました。 ({ADDRLength}/256) ",
+    "ko": "장비 이름이 최대 글자 수를 초과하여 입력됐습니다. ({ADDRLength}/256) ",
+    "zh": "The device name exceeds the maximum number of characters. ({ADDRLength}/256) ",
+    "service_id": "DSC08187"
+  },
+  "TTL08188": {
+    "en": "Server uptime",
+    "ja": "サーバーのアップタイム",
+    "ko": "서버 업타임",
+    "zh": "Server Uptime",
+    "service_id": "TTL08188"
+  },
+  "DSC08189": {
+    "en": "Retrieving project information.<br/>\nIt will take about 30 seconds to 1 minute to complete the task.",
+    "ja": "プロジェクト情報を取得しています。<br/>\n作業を完了するのに30秒〜1分かかります。",
+    "ko": "프로젝트 정보를 가져오는 중입니다.<br/>\n작업을 완료하는데 30초~1분 정도 소요됩니다.",
+    "zh": "Retrieving project information.<br/>\nIt will take about 30 seconds to 1 minute to complete the task.",
+    "service_id": "DSC08189"
+  },
+  "TLT08190": {
+    "en": "Enter the name of the column you want to add.",
+    "ja": "追加する列名を入力してください。",
+    "ko": "추가할 컬럼명을 입력하세요.",
+    "zh": "Enter the name of the column you want to add.",
+    "service_id": "TLT08190"
+  },
+  "NTC08191": {
+    "en": "There is a duplicate custom column name. Please enter a different name.",
+    "ja": "重複したユーザー列名があります。別の名前を入力してください。",
+    "ko": "중복된 사용자(custom) 컬럼 이름이 있습니다. 다른 이름을 입력하세요.",
+    "zh": "There is a duplicate custom column name. Please enter a different name.",
+    "service_id": "NTC08191"
+  },
+  "NTC08192": {
+    "en": "Enter the column name.",
+    "ja": "列名を入力してください。",
+    "ko": "컬럼 이름을 입력하세요.",
+    "zh": "Enter the column name.",
+    "service_id": "NTC08192"
+  },
+  "NTC08193": {
+    "en": "This is the column name ({column}) used in the default column. Please enter a different name.",
+    "ja": "基本列で使用される列名（{column}）。別の名前を入力してください。",
+    "ko": "기본 컬럼에서 사용하는 컬럼 이름({column})입니다. 다른 이름을 입력하세요.",
+    "zh": "This is the column name ({column}) used in the default column. Please enter a different name.",
+    "service_id": "NTC08193"
+  },
+  "NTC08194": {
+    "en": "An unknown error occurred. Please try again later.",
+    "ja": "不明なエラーが発生しました。しばらくしてからもう一度進めてください。",
+    "ko": "알 수 없는 오류가 발생했습니다. 잠시 후 다시 진행하세요.",
+    "zh": "An unknown error occurred. Please try again later.",
+    "service_id": "NTC08194"
+  },
+  "NTC08195": {
+    "en": "{column} cannot be deleted or modified.",
+    "ja": "{column} は削除または変更できません。",
+    "ko": "{column}는 삭제하거나 수정할 수 없습니다.",
+    "zh": "{column} cannot be deleted or modified.",
+    "service_id": "NTC08195"
+  },
+  "NTC08196": {
+    "en": "Are you sure you want to delete that column?",
+    "ja": "その列を削除してもよろしいですか？",
+    "ko": "해당 컬럼을 삭제하시겠습니까?",
+    "zh": "Are you sure you want to delete that column?",
+    "service_id": "NTC08196"
+  },
+  "NTC08197": {
+    "en": "When deleting a column, all item values ​​for that column are deleted.",
+    "ja": "列を削除すると、その列の項目値はすべて削除されます。",
+    "ko": "컬럼 삭제시 해당 컬럼에 대한 항목 값은 모두 삭제됩니다.",
+    "zh": "When deleting a column, all item values ​​for that column are deleted.",
+    "service_id": "NTC08197"
+  },
+  "TLT08198": {
+    "en": "Please enter {column}.",
+    "ja": "{column}を入力してください。",
+    "ko": "{column}을(를) 입력하세요.",
+    "zh": "Please enter {column}.",
+    "service_id": "TLT08198"
+  },
+  "TLT08199": {
+    "en": "The Default Group column can only be populated up to three levels.",
+    "ja": "基本グループは3階層までのみ入力可能です。",
+    "ko": "기본 그룹은 3계층까지만 입력 가능합니다.",
+    "zh": "The Default Group column can only be populated up to three levels.",
+    "service_id": "TLT08199"
+  },
+  "TLT08200": {
+    "en": "Special characters cannot be used.",
+    "ja": "特殊文字は使用できません。",
+    "ko": "특수 문자를 사용할 수 없습니다.",
+    "zh": "Special characters cannot be used.",
+    "service_id": "TLT08200"
+  },
+  "LNK08201": {
+    "en": "Go to log menu",
+    "ja": "ログメニューの移動",
+    "ko": "로그 메뉴 이동",
+    "zh": "Go to log menu",
+    "service_id": "LNK08201"
+  },
+  "TLT08202": {
+    "en": "Empty strings are not allowed.",
+    "ja": "空の文字列は使用できません。",
+    "ko": "빈 문자열을 사용할 수 없습니다.",
+    "zh": "Empty strings are not allowed.",
+    "service_id": "TLT08202"
+  },
+  "TTL08203": {
+    "en": "{platform} New release",
+    "ja": "{platform}新規リリース",
+    "ko": "{platform} 신규 출시",
+    "zh": "{platform} New release",
+    "service_id": "TTL08203"
+  },
+  "DSC08204": {
+    "en": "Oracle Pro has been released. Oracle Pro collects performance information dozens of times per second without putting any load on the server, enabling precise analysis.",
+    "ja": "Oracle Proがリリースされました。 Oracle Proは、サーバーに負荷をかけずにパフォーマンス情報を1秒に数十回まで収集し、正確な分析を可能にします。",
+    "ko": "Oracle Pro가 출시되었습니다. Oracle Pro는 서버에 부하없이 성능정보를 1초에 수십번까지 수집하여 정밀한 분석이 가능합니다.",
+    "zh": "Oracle Pro has been released. Oracle Pro collects performance information dozens of times per second without putting any load on the server, enabling precise analysis.",
+    "service_id": "DSC08204"
+  },
+  "DSC08205": {
+    "en": "Please contact sales@whatap.io.",
+    "ja": "sales@whatap.io にご連絡ください。",
+    "ko": "sales@whatap.io 로 연락주시기 바랍니다.",
+    "zh": "Please contact sales@whatap.io.",
+    "service_id": "DSC08205"
+  },
+  "TTL08206": {
+    "en": "First Time of Events",
+    "ja": "イベント初発生時間",
+    "ko": "이벤트 최초 발생 시간",
+    "zh": "First Time of Events",
+    "service_id": "TTL08206"
+  },
+  "TTL08207": {
+    "en": "Number of events occurring",
+    "ja": "イベント発生件数",
+    "ko": "이벤트 발생 건수",
+    "zh": "Number of events occurring",
+    "service_id": "TTL08207"
+  },
+  "NTC08208": {
+    "en": "Loading data.",
+    "ja": "データを読み込んでいます。",
+    "ko": "데이터를 불러오고 있습니다.",
+    "zh": "Loading data.",
+    "service_id": "NTC08208"
+  },
+  "NTC08209": {
+    "en": "please wait for a moment.",
+    "ja": "しばらくお待ちください。",
+    "ko": "잠시만 기다려 주세요.",
+    "zh": "please wait for a moment.",
+    "service_id": "NTC08209"
+  },
+  "CNT08210": {
+    "en": "Upon initial installation, you can use it for 3 days without a license.",
+    "ja": "初回設置時はライセンスなしで3日間使用が可能です。",
+    "ko": "최초 설치 시 라이선스 없이 3일간 사용이 가능합니다.",
+    "zh": "Upon initial installation, you can use it for 3 days without a license.",
+    "service_id": "CNT08210"
+  },
+  "TTL08211": {
+    "en": "Agent is activated",
+    "ja": "エージェントがアクティブです",
+    "ko": "에이전트 활성화 상태입니다",
+    "zh": "Agent is activated",
+    "service_id": "TTL08211"
+  },
+  "TTL08212": {
+    "en": "Agent is inactive",
+    "ja": "エージェントが無効状態です",
+    "ko": "에이전트 비활성화 상태입니다",
+    "zh": "Agent is inactive",
+    "service_id": "TTL08212"
+  },
+  "TTL08213": {
+    "en": "Agent is not installed",
+    "ja": "エージェントが未インストール状態です",
+    "ko": "에이전트 미설치 상태입니다",
+    "zh": "Agent is not installed",
+    "service_id": "TTL08213"
+  },
+  "DSC08214": {
+    "en": "You can multi-select using the Shift key. ",
+    "ja": "Shift キーを使用して複数選択できます。 ",
+    "ko": "Shift key를 사용하여 다중 선택할 수 있습니다. ",
+    "zh": "You can multi-select using the Shift key. ",
+    "service_id": "DSC08214"
+  },
+  "TLT08215": {
+    "en": "View application details",
+    "ja": "アプリケーションの詳細を見る",
+    "ko": "애플리케이션 상세 보기",
+    "zh": "View application details",
+    "service_id": "TLT08215"
+  },
+  "TLT08216": {
+    "en": "View Deployment Details",
+    "ja": "Deployment 詳細を見る",
+    "ko": "\bDeployment 상세 보기",
+    "zh": "View Deployment Details",
+    "service_id": "TLT08216"
+  },
+  "TLT08217": {
+    "en": "View container image details",
+    "ja": "コンテナイメージの詳細を見る",
+    "ko": "컨테이너 이미지 상세 보기",
+    "zh": "View container image details",
+    "service_id": "TLT08217"
+  },
+  "CNT08218": {
+    "en": "column",
+    "ja": "カラム",
+    "ko": "열",
+    "zh": "column",
+    "service_id": "CNT08218"
+  },
+  "NTC08219": {
+    "en": "A test message was requested to be sent to a mobile device.",
+    "ja": "テストメッセージをモバイル機器に送信するよう要求しました。",
+    "ko": "테스트 메시지를 모바일 기기로 전송 요청 하였습니다.",
+    "zh": "A test message was requested to be sent to a mobile device.",
+    "service_id": "NTC08219"
   },
   "": {
     "en": "#VALUE!",
@@ -56585,6 +56970,21 @@
     "ja": "インストールファイルの実行",
     "ko": "설치 파일 실행"
   },
+  "side_integratedMetricsBoard": {
+    "en": "Integrated Metrics Dashboard",
+    "ja": "統合メトリックスダッシューボード",
+    "ko": "통합 메트릭스 보드"
+  },
+  "side_integratedDashboard": {
+    "en": "Integrated Dashboard",
+    "ja": "統合ダッシューボード",
+    "ko": "통합 대시보드"
+  },
+  "dbx_agent_setting": {
+    "en": "DBX Agent Setting",
+    "ja": "DBXエージェントの設定",
+    "ko": "DBX 에이전트 설정"
+  },
   "side_common": {
     "en": "Common",
     "ja": "Common",
@@ -56677,7 +57077,7 @@
   },
   "side_metrics": {
     "en": "Metrics",
-    "ja": "メトリックス",
+    "ja": "メトリクス",
     "ko": "메트릭스"
   },
   "side_metricsList": {
@@ -56687,7 +57087,7 @@
   },
   "side_metricsCube": {
     "en": "Metrics Cube",
-    "ja": "メトリックスキューブ",
+    "ja": "メトリクスキューブ",
     "ko": "메트릭스 큐브"
   },
   "side_appCube": {
@@ -56927,7 +57327,7 @@
   },
   "side_counter": {
     "en": "Metrics Chart",
-    "ja": "メトリックスチャート",
+    "ja": "メトリクスチャート",
     "ko": "메트릭스 차트"
   },
   "side_appCounter": {
@@ -57265,42 +57665,42 @@
   },
   "side_metricsCategory": {
     "en": "Metrics",
-    "ja": "メトリックス",
+    "ja": "メトリクス",
     "ko": "메트릭스"
   },
   "side_metricsBoard": {
     "en": "Metrics Board",
-    "ja": "メトリックスボード",
+    "ja": "メトリクスボード",
     "ko": "메트릭스 보드"
   },
   "side_metricsSearch": {
     "en": "Metrics Search",
-    "ja": "メトリックス照会",
+    "ja": "メトリクス照会",
     "ko": "메트릭스 조회"
   },
   "side_metricsChart": {
     "en": "Metrics Chart",
-    "ja": "メトリックスチャート",
+    "ja": "メトリクスチャート",
     "ko": "메트릭스 차트"
   },
   "side_metricsQuery": {
     "en": "Metrics Query",
-    "ja": "メトリックスクエリー",
+    "ja": "メトリクスクエリー",
     "ko": "메트릭스 쿼리"
   },
   "side_metricsRealtime": {
     "en": "Metrics Realtime Data",
-    "ja": "メトリックス実時間データ",
+    "ja": "メトリクス実時間データ",
     "ko": "메트릭스 실시간 데이터"
   },
   "side_metricsLog": {
     "en": "Log Metrics Search",
-    "ja": "ログメトリックス照会",
+    "ja": "ログメトリクス照会",
     "ko": "로그 메트릭스 조회"
   },
   "side_metricsML": {
     "en": "Metrics Anomaly Detection",
-    "ja": "メトリックス異常検出",
+    "ja": "メトリクス異常検出",
     "ko": "메트릭스 이상 탐지"
   },
   "side_metricsAlert": {
@@ -57310,7 +57710,7 @@
   },
   "side_metricsPredefinedBoard": {
     "en": "Predefined Metrics Board",
-    "ja": "事前定義メトリックスボード",
+    "ja": "事前定義メトリクスボード",
     "ko": "사전정의 메트릭스 보드"
   },
   "side_metricsUrlMapping": {
@@ -57663,20 +58063,10 @@
     "ja": "グループユーザー編集",
     "ko": "그룹 사용자 수정"
   },
-  "side_integratedDashboard": {
-    "en": "Integrated Dashboard",
-    "ja": "統合ダッシューボード",
-    "ko": "통합 대시보드"
-  },
   "side_integratedTopology": {
     "en": "Integrated APP. Topology",
     "ja": "統合APPトポロジー",
     "ko": "통합 APP.그룹 토폴로지"
-  },
-  "side_integratedMetricsBoard": {
-    "en": "Integrated Metrics Dashboard",
-    "ja": "統合メトリックスダッシューボード",
-    "ko": "통합 메트릭스 보드"
   },
   "side_integratedLogSearch": {
     "en": "Integrated Log Search",
@@ -58087,6 +58477,11 @@
     "en": "UDP Session",
     "ja": "UDPセッション",
     "ko": "UDP 세션"
+  },
+  "side_ipEventReceivers": {
+    "en": "IP Event Recipient Management",
+    "ja": "IPイベント受信者の管理",
+    "ko": "IP 이벤트 수신자 관리"
   },
   "side_rumPageLoadDashboard": {
     "en": "Page Load",
