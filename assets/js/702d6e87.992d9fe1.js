@@ -130,6 +130,15 @@ function _createMdxContent(props) {
             children: "file=/opt/postgresql/logs/postgresql.log\nfile1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log\nfile2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log\nfile3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log\n"
           })
         })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        product: "oracle-v2,oracle-pro",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title='xos.conf'",
+            children: "file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log\n"
+          })
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

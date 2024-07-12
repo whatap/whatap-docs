@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28758],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[46582],{
 
 /***/ 34253:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -128,6 +128,15 @@ function _createMdxContent(props) {
             className: "language-ini",
             metastring: "title='xos.conf'",
             children: "file=/opt/postgresql/logs/postgresql.log\nfile1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log\nfile2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log\nfile3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log\n"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        product: "oracle-v2,oracle-pro",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title='xos.conf'",
+            children: "file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log\n"
           })
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
@@ -507,7 +516,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 9272:
+/***/ 83387:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -531,21 +540,21 @@ const frontMatter = {
 	tags: [
 		'로그 모니터링',
 		'데이터베이스',
-		'Oracle'
+		'MongoDB'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v2/log-db",
+  "id": "mongodb/log-db",
   "title": "적용하기",
   "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
-  "source": "@site/docs/oracle-v2/log-db.mdx",
-  "sourceDirName": "oracle-v2",
-  "slug": "/oracle-v2/log-db",
-  "permalink": "/whatap-docs/oracle-v2/log-db",
+  "source": "@site/docs/mongodb/log-db.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/log-db",
+  "permalink": "/whatap-docs/mongodb/log-db",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v2/log-db.mdx",
+  "editUrl": "undefined/docs/mongodb/log-db.mdx",
   "tags": [
     {
       "inline": true,
@@ -559,8 +568,8 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "MongoDB",
+      "permalink": "/whatap-docs/tags/mongo-db"
     }
   ],
   "version": "current",
@@ -571,17 +580,17 @@ const metadata = {
     "tags": [
       "로그 모니터링",
       "데이터베이스",
-      "Oracle"
+      "MongoDB"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "로그",
-    "permalink": "/whatap-docs/oracle-v2/log-main"
+    "permalink": "/whatap-docs/mongodb/log-main"
   },
   "next": {
     "title": "라이브 테일",
-    "permalink": "/whatap-docs/oracle-v2/log-lt"
+    "permalink": "/whatap-docs/mongodb/log-lt"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63951],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[87057],{
 
 /***/ 73793:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -783,6 +783,48 @@ function _createMdxContent(props) {
           })
         }), ": 인스턴스 이름"]
       }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "oracle-v2,oracle-pro",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "physical reads"
+              })
+            }), ": 해당 SQL이 디스크에서 데이터를 읽어온 횟수"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "session logical reads"
+              })
+            }), ": 해당 SQL이 메모리 내에서 데이터를 읽은 횟수"]
+          }), "\n"]
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "oracle-pro",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "cpu time"
+              })
+            }), ": 해당 SQL이 실행되는 동안 사용된 CPU 시간"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "redo size"
+              })
+            }), ": 해당 SQL이 발생시킨 트랜잭션 로그(redo log) 크기"]
+          }), "\n"]
+        }), "\n"]
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1276,7 +1318,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11518:
+/***/ 89643:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1302,30 +1344,30 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'stat',
 	title: 'SQL 통계',
-	description: 'SQL Server의 데이터베이스별 통계 데이터를 제공합니다.',
+	description: 'CUBRID의 데이터베이스별 통계 데이터를 제공합니다.',
 	tags: [
-		'SQL Server',
+		'CUBRID',
 		'데이터베이스',
 		'통계'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/stat",
+  "id": "cubrid/stat",
   "title": "SQL 통계",
-  "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
-  "source": "@site/docs/mssql/stat.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/stat",
-  "permalink": "/whatap-docs/mssql/stat",
+  "description": "CUBRID의 데이터베이스별 통계 데이터를 제공합니다.",
+  "source": "@site/docs/cubrid/stat.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/stat",
+  "permalink": "/whatap-docs/cubrid/stat",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/stat.mdx",
+  "editUrl": "undefined/docs/cubrid/stat.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "SQL Server",
-      "permalink": "/whatap-docs/tags/sql-server"
+      "label": "CUBRID",
+      "permalink": "/whatap-docs/tags/cubrid"
     },
     {
       "inline": true,
@@ -1342,21 +1384,21 @@ const metadata = {
   "frontMatter": {
     "id": "stat",
     "title": "SQL 통계",
-    "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
+    "description": "CUBRID의 데이터베이스별 통계 데이터를 제공합니다.",
     "tags": [
-      "SQL Server",
+      "CUBRID",
       "데이터베이스",
       "통계"
     ]
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "cubridSidebar",
   "previous": {
-    "title": "데이터베이스 분석하기",
-    "permalink": "/whatap-docs/mssql/analysis-function"
+    "title": "메트릭스 이상 탐지",
+    "permalink": "/whatap-docs/cubrid/metrics-detect-anormal"
   },
   "next": {
-    "title": "보고서",
-    "permalink": "/whatap-docs/mssql/report-intro"
+    "title": "테이블 사이즈 증감",
+    "permalink": "/whatap-docs/cubrid/table-size"
   }
 };
 const assets = {

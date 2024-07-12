@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6965],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63951],{
 
 /***/ 73793:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -783,6 +783,48 @@ function _createMdxContent(props) {
           })
         }), ": 인스턴스 이름"]
       }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "oracle-v2,oracle-pro",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "physical reads"
+              })
+            }), ": 해당 SQL이 디스크에서 데이터를 읽어온 횟수"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "session logical reads"
+              })
+            }), ": 해당 SQL이 메모리 내에서 데이터를 읽은 횟수"]
+          }), "\n"]
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "oracle-pro",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "cpu time"
+              })
+            }), ": 해당 SQL이 실행되는 동안 사용된 CPU 시간"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "redo size"
+              })
+            }), ": 해당 SQL이 발생시킨 트랜잭션 로그(redo log) 크기"]
+          }), "\n"]
+        }), "\n"]
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1276,7 +1318,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 63:
+/***/ 11518:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1302,30 +1344,30 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'stat',
 	title: 'SQL 통계',
-	description: 'Oracle의 데이터베이스별 통계 데이터를 제공합니다.',
+	description: 'SQL Server의 데이터베이스별 통계 데이터를 제공합니다.',
 	tags: [
-		'Oracle',
+		'SQL Server',
 		'데이터베이스',
 		'통계'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v2/stat",
+  "id": "mssql/stat",
   "title": "SQL 통계",
-  "description": "Oracle의 데이터베이스별 통계 데이터를 제공합니다.",
-  "source": "@site/docs/oracle-v2/stat.mdx",
-  "sourceDirName": "oracle-v2",
-  "slug": "/oracle-v2/stat",
-  "permalink": "/whatap-docs/oracle-v2/stat",
+  "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
+  "source": "@site/docs/mssql/stat.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/stat",
+  "permalink": "/whatap-docs/mssql/stat",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v2/stat.mdx",
+  "editUrl": "undefined/docs/mssql/stat.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "SQL Server",
+      "permalink": "/whatap-docs/tags/sql-server"
     },
     {
       "inline": true,
@@ -1342,21 +1384,21 @@ const metadata = {
   "frontMatter": {
     "id": "stat",
     "title": "SQL 통계",
-    "description": "Oracle의 데이터베이스별 통계 데이터를 제공합니다.",
+    "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
     "tags": [
-      "Oracle",
+      "SQL Server",
       "데이터베이스",
       "통계"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
-    "title": "메트릭스 이상 탐지",
-    "permalink": "/whatap-docs/oracle-v2/metrics-detect-anormal"
+    "title": "데이터베이스 분석하기",
+    "permalink": "/whatap-docs/mssql/analysis-function"
   },
   "next": {
-    "title": "테이블스페이스 사이즈",
-    "permalink": "/whatap-docs/oracle-v2/table-space-size"
+    "title": "보고서",
+    "permalink": "/whatap-docs/mssql/report-intro"
   }
 };
 const assets = {
@@ -1366,11 +1408,6 @@ const assets = {
 /*SQL 통계*/
 /*SQL 통계 기본 사용 안내*/
 /*쿼리별 수행 추이, 자세히 보기*/
-/*## 상세 정보 확인하기 {#session-details-info}
-
-import Dbstatsqldetails from "../common-items/_db-stat-sql-details.mdx";
-
-<Dbstatsqldetails />*/
 /*필터 조건추가하기*/
 
 
@@ -1394,7 +1431,7 @@ function _createMdxContent(props) {
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "change-column",
