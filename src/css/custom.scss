@@ -481,11 +481,11 @@ details.feedback[open] summary {
   cursor: pointer;
   summary {
     background: url('img/ic-arrow-down.svg') no-repeat right 0px;
+    color: #296CF2;
+    font-weight: 500;
     &::marker {
       content: '👉 ';
     }
-    color: #296CF2;
-    font-weight: 500;
   }
   .hr-container {
     display: table;
@@ -1252,10 +1252,10 @@ main {
     }
     .faqs {
       section {
+        margin-top: 55px;
         &:first-of-type {
           margin-top: 25px;
         }
-        margin-top: 55px;
       }
       h3 {
         letter-spacing: -1px;
