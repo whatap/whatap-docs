@@ -2443,6 +2443,50 @@
     "width": 1200,
     "height": 694
   },
+  "about-instance-loaded-class1-en.png": {
+    "width": 957,
+    "height": 315
+  },
+  "about-instance-loaded-class1-ja.png": {
+    "width": 919,
+    "height": 309
+  },
+  "about-instance-loaded-class1.png": {
+    "width": 906,
+    "height": 275
+  },
+  "about-instance-thread-list-dump1.png": {
+    "width": 1622,
+    "height": 595
+  },
+  "about-instance-thread-list-dump2.png": {
+    "width": 1623,
+    "height": 607
+  },
+  "about-instance-thread-list-dump3-en.png": {
+    "width": 1660,
+    "height": 819
+  },
+  "about-instance-thread-list-dump3-ja.png": {
+    "width": 1663,
+    "height": 819
+  },
+  "about-instance-thread-list-dump3.png": {
+    "width": 1663,
+    "height": 819
+  },
+  "about-instance-thread-list-dump4-en.png": {
+    "width": 1243,
+    "height": 280
+  },
+  "about-instance-thread-list-dump4-ja.png": {
+    "width": 1245,
+    "height": 280
+  },
+  "about-instance-thread-list-dump4.png": {
+    "width": 1248,
+    "height": 284
+  },
   "apm-dashboard-best-practice.png": {
     "width": 3102,
     "height": 2062
@@ -4391,6 +4435,58 @@
     "width": 1200,
     "height": 706
   },
+  "db-analysis-sql-access-statistics-en.png": {
+    "width": 1200,
+    "height": 615
+  },
+  "db-analysis-sql-access-statistics-filter-en.png": {
+    "width": 400,
+    "height": 217
+  },
+  "db-analysis-sql-access-statistics-filter-ja.png": {
+    "width": 400,
+    "height": 214
+  },
+  "db-analysis-sql-access-statistics-filter.png": {
+    "width": 400,
+    "height": 216
+  },
+  "db-analysis-sql-access-statistics-ja.png": {
+    "width": 1200,
+    "height": 612
+  },
+  "db-analysis-sql-access-statistics-op-count.png": {
+    "width": 600,
+    "height": 311
+  },
+  "db-analysis-sql-access-statistics.png": {
+    "width": 1200,
+    "height": 610
+  },
+  "db-analysis-sql-plan-change-history-diff-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-analysis-sql-plan-change-history-diff-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-analysis-sql-plan-change-history-diff.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-analysis-sql-plan-change-history-en.png": {
+    "width": 1200,
+    "height": 694
+  },
+  "db-analysis-sql-plan-change-history-ja.png": {
+    "width": 1200,
+    "height": 694
+  },
+  "db-analysis-sql-plan-change-history.png": {
+    "width": 1200,
+    "height": 693
+  },
   "db-analysis-wait-en.png": {
     "width": 1200,
     "height": 714
@@ -4430,6 +4526,18 @@
   "db-bottom-table-filter-mysql.png": {
     "width": 600,
     "height": 243
+  },
+  "db-bottom-table-filter-oracle-pro-en.png": {
+    "width": 600,
+    "height": 246
+  },
+  "db-bottom-table-filter-oracle-pro-ja.png": {
+    "width": 600,
+    "height": 245
+  },
+  "db-bottom-table-filter-oracle-pro.png": {
+    "width": 600,
+    "height": 239
   },
   "db-bottom-table-filter-postgresql-en.png": {
     "width": 600,
@@ -5046,6 +5154,18 @@
   "db-database-sql-stat-oracle-ja.png": {
     "width": 1200,
     "height": 383
+  },
+  "db-database-sql-stat-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 386
+  },
+  "db-database-sql-stat-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 386
+  },
+  "db-database-sql-stat-oracle-pro.png": {
+    "width": 1200,
+    "height": 386
   },
   "db-database-sql-stat-oracle.png": {
     "width": 1200,
@@ -6491,6 +6611,18 @@
     "width": 1200,
     "height": 926
   },
+  "db-stat-table-space-check-trend-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "db-stat-table-space-check-trend-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 385
+  },
+  "db-stat-table-space-check-trend-oracle-pro.png": {
+    "width": 1200,
+    "height": 382
+  },
   "db-stat-table-space-cubrid-en.png": {
     "width": 1200,
     "height": 1058
@@ -6513,19 +6645,43 @@
   },
   "db-stat-table-space-oracle-pro-en.png": {
     "width": 1200,
-    "height": 722
+    "height": 481
   },
   "db-stat-table-space-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 730
+    "height": 479
   },
   "db-stat-table-space-oracle-pro.png": {
     "width": 1200,
-    "height": 724
+    "height": 494
   },
   "db-stat-table-space-oracle.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-stat-table-space-size-details-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 402
+  },
+  "db-stat-table-space-size-details-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 402
+  },
+  "db-stat-table-space-size-details-oracle-pro.png": {
+    "width": 1200,
+    "height": 401
+  },
+  "db-stat-table-space-size-top50-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 823
+  },
+  "db-stat-table-space-size-top50-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 825
+  },
+  "db-stat-table-space-size-top50-oracle-pro.png": {
+    "width": 1200,
+    "height": 827
   },
   "db-stat-table-space.png": {
     "width": 1200,
@@ -6582,6 +6738,18 @@
   "db-v2-column-setting.png": {
     "width": 645,
     "height": 629
+  },
+  "db-v2-ver-management-en.png": {
+    "width": 1200,
+    "height": 236
+  },
+  "db-v2-ver-management-ja.png": {
+    "width": 1200,
+    "height": 237
+  },
+  "db-v2-ver-management.png": {
+    "width": 1200,
+    "height": 236
   },
   "dbx-install-agent-on-agent-server-en.png": {
     "width": 1086,
@@ -7897,39 +8065,39 @@
   },
   "ipa-run-env-var-dotnet-en.png": {
     "width": 1200,
-    "height": 665
+    "height": 572
   },
   "ipa-run-env-var-dotnet-ja.png": {
     "width": 1200,
-    "height": 667
+    "height": 573
   },
   "ipa-run-env-var-dotnet.png": {
     "width": 1200,
-    "height": 666
+    "height": 571
   },
   "ipa-run-env-var-golang-en.png": {
     "width": 1200,
-    "height": 618
+    "height": 546
   },
   "ipa-run-env-var-golang-ja.png": {
     "width": 1200,
-    "height": 622
+    "height": 546
   },
   "ipa-run-env-var-golang.png": {
     "width": 1200,
-    "height": 620
+    "height": 546
   },
   "ipa-run-env-var-java-en.png": {
     "width": 1200,
-    "height": 698
+    "height": 540
   },
   "ipa-run-env-var-java-ja.png": {
     "width": 1200,
-    "height": 698
+    "height": 542
   },
   "ipa-run-env-var-java.png": {
-    "width": 1200,
-    "height": 702
+    "width": 1194,
+    "height": 531
   },
   "ipa-run-env-var-nodejs-en.png": {
     "width": 1200,
@@ -7941,31 +8109,31 @@
   },
   "ipa-run-env-var-nodejs.png": {
     "width": 1200,
-    "height": 422
+    "height": 423
   },
   "ipa-run-env-var-php-en.png": {
     "width": 1200,
-    "height": 663
+    "height": 548
   },
   "ipa-run-env-var-php-ja.png": {
     "width": 1200,
-    "height": 666
+    "height": 546
   },
   "ipa-run-env-var-php.png": {
     "width": 1200,
-    "height": 668
+    "height": 545
   },
   "ipa-run-env-var-python-en.png": {
     "width": 1200,
-    "height": 664
+    "height": 573
   },
   "ipa-run-env-var-python-ja.png": {
-    "width": 1200,
-    "height": 664
+    "width": 1193,
+    "height": 569
   },
   "ipa-run-env-var-python.png": {
-    "width": 1200,
-    "height": 662
+    "width": 1193,
+    "height": 570
   },
   "ipa-set-throttling-java-en.png": {
     "width": 1200,
@@ -7992,16 +8160,16 @@
     "height": 267
   },
   "ipa-thread-list-java-en.png": {
-    "width": 1200,
-    "height": 647
+    "width": 1622,
+    "height": 610
   },
   "ipa-thread-list-java-ja.png": {
-    "width": 1200,
-    "height": 647
+    "width": 1620,
+    "height": 582
   },
   "ipa-thread-list-java.png": {
-    "width": 1200,
-    "height": 648
+    "width": 1623,
+    "height": 579
   },
   "java-agent-log-oname.png": {
     "width": 1500,
@@ -8508,16 +8676,16 @@
     "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
-    "width": 1200,
-    "height": 694
+    "width": 1255,
+    "height": 943
   },
   "k8s-container-map-sum-all-ja.png": {
-    "width": 1200,
-    "height": 693
+    "width": 1256,
+    "height": 941
   },
   "k8s-container-map-sum-all.png": {
-    "width": 1200,
-    "height": 703
+    "width": 1134,
+    "height": 963
   },
   "k8s-container-map-thresholds.png": {
     "width": 870,
@@ -8544,16 +8712,16 @@
     "height": 1195
   },
   "k8s-container-sum-en.png": {
-    "width": 1200,
-    "height": 689
+    "width": 1173,
+    "height": 898
   },
   "k8s-container-sum-ja.png": {
-    "width": 1200,
-    "height": 692
+    "width": 1179,
+    "height": 900
   },
   "k8s-container-sum.png": {
-    "width": 1200,
-    "height": 689
+    "width": 1173,
+    "height": 894
   },
   "k8s-container-volume-en.png": {
     "width": 1201,
@@ -9374,6 +9542,18 @@
   "learning-cover.png": {
     "width": 1280,
     "height": 720
+  },
+  "library-version-java-en.png": {
+    "width": 1613,
+    "height": 938
+  },
+  "library-version-java-ja.png": {
+    "width": 1613,
+    "height": 938
+  },
+  "library-version-java.png": {
+    "width": 1620,
+    "height": 938
   },
   "log-1st-grok-en.png": {
     "width": 835,
@@ -11507,6 +11687,18 @@
     "width": 2309,
     "height": 1034
   },
+  "new-feature-02-oracle-pro-en.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-oracle-pro-ja.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-oracle-pro.png": {
+    "width": 2309,
+    "height": 1034
+  },
   "new-feature-02-postgresql-en.png": {
     "width": 2309,
     "height": 1034
@@ -11559,6 +11751,18 @@
     "width": 1200,
     "height": 438
   },
+  "new-feature-03-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 438
+  },
+  "new-feature-03-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 438
+  },
+  "new-feature-03-oracle-pro.png": {
+    "width": 1200,
+    "height": 438
+  },
   "new-feature-03-postgresql-en.png": {
     "width": 1200,
     "height": 438
@@ -11596,6 +11800,18 @@
     "height": 259
   },
   "new-feature-04-mysql.png": {
+    "width": 1200,
+    "height": 293
+  },
+  "new-feature-04-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 293
+  },
+  "new-feature-04-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 293
+  },
+  "new-feature-04-oracle-pro.png": {
     "width": 1200,
     "height": 293
   },
