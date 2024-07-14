@@ -1630,5 +1630,13 @@
   "sidebar.featuremonitorSidebar.category.Feature 프로젝트": {
     "message": "Featureプロジェクト",
     "description": "The label for category Feature 프로젝트 in sidebar featuremonitorSidebar"
+  },
+  "sidebar.dotNetSidebar.category.설치하기": {
+    "message": "インストール",
+    "description": "The label for category 설치하기 in sidebar dotNetSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.10": {
+    "message": "v1.0.10",
+    "description": "The label for the doc item v1.0.10 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_10"
   }
 }
