@@ -6679,6 +6679,42 @@
     "width": 1200,
     "height": 726
   },
+  "dotnet-trst01-en.png": {
+    "width": 1195,
+    "height": 870
+  },
+  "dotnet-trst01-ja.png": {
+    "width": 1198,
+    "height": 865
+  },
+  "dotnet-trst01.png": {
+    "width": 1200,
+    "height": 879
+  },
+  "dotnet-trst02-en.png": {
+    "width": 1197,
+    "height": 868
+  },
+  "dotnet-trst02-ja.png": {
+    "width": 1193,
+    "height": 868
+  },
+  "dotnet-trst02.png": {
+    "width": 1200,
+    "height": 882
+  },
+  "dotnet-trst03-en.png": {
+    "width": 1194,
+    "height": 867
+  },
+  "dotnet-trst03-ja.png": {
+    "width": 1193,
+    "height": 865
+  },
+  "dotnet-trst03.png": {
+    "width": 1200,
+    "height": 995
+  },
   "dotnet-wcf-example-pic-en.png": {
     "width": 800,
     "height": 406
@@ -8472,16 +8508,16 @@
     "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
-    "width": 1255,
-    "height": 943
+    "width": 1200,
+    "height": 694
   },
   "k8s-container-map-sum-all-ja.png": {
-    "width": 1256,
-    "height": 941
+    "width": 1200,
+    "height": 693
   },
   "k8s-container-map-sum-all.png": {
-    "width": 1134,
-    "height": 963
+    "width": 1200,
+    "height": 703
   },
   "k8s-container-map-thresholds.png": {
     "width": 870,
@@ -8508,16 +8544,16 @@
     "height": 1195
   },
   "k8s-container-sum-en.png": {
-    "width": 1173,
-    "height": 898
+    "width": 1200,
+    "height": 689
   },
   "k8s-container-sum-ja.png": {
-    "width": 1179,
-    "height": 900
+    "width": 1200,
+    "height": 692
   },
   "k8s-container-sum.png": {
-    "width": 1173,
-    "height": 894
+    "width": 1200,
+    "height": 689
   },
   "k8s-container-volume-en.png": {
     "width": 1201,
