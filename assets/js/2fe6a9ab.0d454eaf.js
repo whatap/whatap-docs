@@ -71,7 +71,7 @@ function _createMdxContent(props) {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "dotnet-2_1_",
+          href: "dotnet-2_1_9",
           children: ".NET Agent v2.1.9"
         })
       }), "\n"]
