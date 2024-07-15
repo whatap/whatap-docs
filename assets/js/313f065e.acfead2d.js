@@ -182,8 +182,8 @@ const toc = [{
   "id": "database-1",
   "level": 3
 }, {
-  "value": "Oracel Pro",
-  "id": "oracel-pro",
+  "value": "Oracle Pro",
+  "id": "oracle-pro",
   "level": 4
 }, {
   "value": "PostgreSQL, MySQL",
@@ -1088,8 +1088,8 @@ function _createMdxContent(props) {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracel-pro",
-          children: "Oracel Pro"
+          id: "oracle-pro",
+          children: "Oracle Pro"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "New"
