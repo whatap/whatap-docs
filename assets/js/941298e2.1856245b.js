@@ -141,6 +141,10 @@ const toc = [{
   "id": "방화벽-확인-방법",
   "level": 3
 }, {
+  "value": "SSL 인증 관련 문제",
+  "id": "ssl-인증-관련-문제",
+  "level": 2
+}, {
   "value": "제약 사항",
   "id": "제약-사항",
   "level": 2
@@ -165,11 +169,12 @@ function _createMdxContent(props) {
     p: "p",
     pre: "pre",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Cmdname, InDoc} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인해 보세요."
@@ -201,20 +206,37 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["와탭 수집 서버 정보는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "프로젝트 메뉴"
-            })
-          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "관리"
-            })
-          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "에이전트 설치"
-            })
+          children: ["와탭 수집 서버 정보는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentInstall",
+            className: "uitext"
           }), " 메뉴에서 확인할 수 있습니다."]
         })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+        product: "mssql",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "ssl-인증-관련-문제",
+          children: "SSL 인증 관련 문제"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "에이전트에서 데이터베이스에 접속할 때 SSL 보안 관련해 다음과 문제가 발생하면, jdbc로 접속할 때 SSL 인증을 사용하지 않도록 옵션을 설정해야 합니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-txt",
+            children: "com.microsoft.sqlserver.jdbc.SQLServerException: The driver could not establish a secure connection to SQL Server by using Secure Sockets Layer (SSL) encryption.\n\ncom.microsoft.sqlserver.jdbc.SQLServerException: \"enctyp1\" property is set to \"true\" and \"trustServerCertificate\" property is set to \"false\" but the driver could not establish a secure connection to SQL Server by ising Secure Sockets Layer (SSL) encryption\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["에이전트 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), ")에 SSL 인증을 사용하지 않도록 다음 옵션을 설정하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "connect_option=encrypt=true;trustServerCertificate=true\n"
+          })
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
@@ -283,6 +305,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
