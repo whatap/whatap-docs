@@ -481,11 +481,11 @@ details.feedback[open] summary {
   cursor: pointer;
   summary {
     background: url('img/ic-arrow-down.svg') no-repeat right 0px;
+    color: #296CF2;
+    font-weight: 500;
     &::marker {
       content: '👉 ';
     }
-    color: #296CF2;
-    font-weight: 500;
   }
   .hr-container {
     display: table;
@@ -1252,10 +1252,10 @@ main {
     }
     .faqs {
       section {
+        margin-top: 55px;
         &:first-of-type {
           margin-top: 25px;
         }
-        margin-top: 55px;
       }
       h3 {
         letter-spacing: -1px;
@@ -1368,6 +1368,9 @@ main {
         list-style: decimal;
         padding-left: 0;
         li {
+          padding-left: 5px;
+          padding-bottom: 5px;
+          border-left: none;
           &::before {
             content: "• ";
             border: none;
@@ -1376,9 +1379,6 @@ main {
             font-size: 130%;
             color: #a8a8a8;
           }
-          padding-left: 5px;
-          padding-bottom: 5px;;
-          border-left: none;
         }
       }
     }
@@ -2643,13 +2643,13 @@ main {
               }
             }
             td {
-              &:nth-of-type(2){
-                padding-left: 15px;
-              }
               padding-left: 0;
               border-left: 0;
               border-right: 0;
               border-top: 0;
+              &:nth-of-type(2){
+                padding-left: 15px;
+              }
               a {
                 word-break: normal;
               }
