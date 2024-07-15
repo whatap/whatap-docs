@@ -1,117 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49343],{
-
-/***/ 6585:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_db_troubleshooting_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83194);
-
-
-const frontMatter = {
-	id: 'troubleshooting',
-	title: '설치 문제 해결',
-	description: '데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.',
-	tags: [
-		'Altibase',
-		'데이터베이스',
-		'문제 해결',
-		'에이전트'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase/troubleshooting",
-  "title": "설치 문제 해결",
-  "description": "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
-  "source": "@site/docs/altibase/troubleshooting.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/troubleshooting",
-  "permalink": "/whatap-docs/altibase/troubleshooting",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase/troubleshooting.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": "Altibase",
-      "permalink": "/whatap-docs/tags/altibase"
-    },
-    {
-      "inline": true,
-      "label": "데이터베이스",
-      "permalink": "/whatap-docs/tags/데이터베이스"
-    },
-    {
-      "inline": true,
-      "label": "문제 해결",
-      "permalink": "/whatap-docs/tags/문제-해결"
-    },
-    {
-      "inline": true,
-      "label": "에이전트",
-      "permalink": "/whatap-docs/tags/에이전트"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "troubleshooting",
-    "title": "설치 문제 해결",
-    "description": "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
-    "tags": [
-      "Altibase",
-      "데이터베이스",
-      "문제 해결",
-      "에이전트"
-    ]
-  },
-  "sidebar": "altibaseSidebar",
-  "previous": {
-    "title": "설치 점검 사항",
-    "permalink": "/whatap-docs/altibase/after-install-agent"
-  },
-  "next": {
-    "title": "설정하기",
-    "permalink": "/whatap-docs/altibase/agent-settings"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_db_troubleshooting_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_troubleshooting_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[65249],{
 
 /***/ 83194:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -220,7 +108,7 @@ function _createMdxContent(props) {
           id: "ssl-인증-관련-문제",
           children: "SSL 인증 관련 문제"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "에이전트에서 데이터베이스에 접속할 때 SSL 보안 관련해 다음과 문제가 발생하면, jdbc로 접속할 때 SSL 인증을 사용하지 않도록 옵션을 설정해야 합니다."
+          children: "에이전트에서 데이터베이스에 접속할 때 SSL 보안 관련해 다음과 문제가 발생하면, JDBC로 접속할 때 SSL 인증을 사용하지 않도록 옵션을 설정해야 합니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-txt",
@@ -308,6 +196,118 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 19520:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_db_troubleshooting_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83194);
+
+
+const frontMatter = {
+	id: 'troubleshooting',
+	title: '설치 문제 해결',
+	description: '데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.',
+	tags: [
+		'SQL Server',
+		'데이터베이스',
+		'문제 해결',
+		'에이전트'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "mssql/troubleshooting",
+  "title": "설치 문제 해결",
+  "description": "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
+  "source": "@site/docs/mssql/troubleshooting.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/troubleshooting",
+  "permalink": "/whatap-docs/mssql/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/mssql/troubleshooting.mdx",
+  "tags": [
+    {
+      "inline": true,
+      "label": "SQL Server",
+      "permalink": "/whatap-docs/tags/sql-server"
+    },
+    {
+      "inline": true,
+      "label": "데이터베이스",
+      "permalink": "/whatap-docs/tags/데이터베이스"
+    },
+    {
+      "inline": true,
+      "label": "문제 해결",
+      "permalink": "/whatap-docs/tags/문제-해결"
+    },
+    {
+      "inline": true,
+      "label": "에이전트",
+      "permalink": "/whatap-docs/tags/에이전트"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "troubleshooting",
+    "title": "설치 문제 해결",
+    "description": "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
+    "tags": [
+      "SQL Server",
+      "데이터베이스",
+      "문제 해결",
+      "에이전트"
+    ]
+  },
+  "sidebar": "mssqlSidebar",
+  "previous": {
+    "title": "설치 점검 사항",
+    "permalink": "/whatap-docs/mssql/after-install-agent"
+  },
+  "next": {
+    "title": "설정하기",
+    "permalink": "/whatap-docs/mssql/agent-settings"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_db_troubleshooting_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_troubleshooting_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

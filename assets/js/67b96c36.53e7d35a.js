@@ -238,8 +238,8 @@ function _createMdxContent(props) {
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "WhaTap System information scanner",
-              src: (__webpack_require__(51600)/* ["default"] */ .A) + "",
-              width: "800",
+              src: (__webpack_require__(39665)/* ["default"] */ .A) + "",
+              width: "803",
               height: "419"
             })
           }), "\n"]
@@ -752,13 +752,13 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 51600:
+/***/ 39665:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-dotnet-analysis-tool-c279f3ca3d7a509cd36f89927c785777.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-dotnet-analystic-env-01-28d15489ec4433f53b4b089ebf740262.png");
 
 /***/ }),
 

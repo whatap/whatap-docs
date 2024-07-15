@@ -1236,66 +1236,175 @@ const _server_adf_user_script_contentTitle = (/* unused pure expression or super
 
 
 
-const _server_adf_user_script_toc = [];
+const _server_adf_user_script_toc = [{
+  "value": "BAT 스크립트 실행",
+  "id": "bat-스크립트-실행",
+  "level": 4
+}, {
+  "value": "PowerShell 스크립트 실행",
+  "id": "powershell-스크립트-실행",
+  "level": 4
+}];
 function _server_adf_user_script_createMdxContent(props) {
   const _components = {
     code: "code",
+    h4: "h4",
     li: "li",
     ol: "ol",
     p: "p",
     pre: "pre",
+    section: "section",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  }, {Cmdname} = _components;
+  }, {Cmdname, TabItem, Tabs} = _components;
   if (!Cmdname) _server_adf_user_script_missingMdxReference("Cmdname", true);
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_components.p, {
-      children: "리눅스 서버에서 실행 가능한 사용자 스크립트를 주기적으로 실행하여 결과를 업로드합니다. 다음 예시를 참조하여 사용자 스크립트를 작성하세요."
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "스크립트를 다음과 같이 작성 후 실행하세요."
-        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
-          children: (0,jsx_runtime.jsx)(_components.code, {
-            className: "language-bash",
-            metastring: "title='Linux Shell'",
-            children: "#!/bin/bash\n\nurls=(\"https://www.whatap.io\"  \"https://blog.whatap.io\"  \"https://service.whatap.io\")\n\nfor url in ${urls[*]}; do\n\necho \"M $url url $url\"\ncurl -w @- -o /dev/null -s \"$url\" <<'EOF'\nM %{url_effective} url %{url_effective}\\n\nH %{url_effective} time_namelookup %{time_namelookup}\\n\nH %{url_effective} time_connect %{time_connect}\\n\nH %{url_effective} time_appconnect %{time_appconnect}\\n\nH %{url_effective} time_pretransfer %{time_pretransfer}\\n\nH %{url_effective} time_redirect %{time_redirect}\\n\nH %{url_effective} time_starttransfer %{time_starttransfer}\\n\nH %{url_effective} time_total %{time_total}\\n\nEOF\n\ndone\n"
-          })
+  if (!TabItem) _server_adf_user_script_missingMdxReference("TabItem", true);
+  if (!Tabs) _server_adf_user_script_missingMdxReference("Tabs", true);
+  return (0,jsx_runtime.jsxs)(Tabs, {
+    groupId: "server-user-script",
+    children: [(0,jsx_runtime.jsxs)(TabItem, {
+      value: "lxs",
+      label: "Linux Shell",
+      children: [(0,jsx_runtime.jsx)(_components.p, {
+        children: "리눅스 서버에서 실행 가능한 사용자 스크립트를 주기적으로 실행하여 결과를 업로드합니다. 다음 예시를 참조하여 사용자 스크립트를 작성하세요."
+      }), (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "스크립트를 다음과 같이 작성 후 실행하세요."
+          }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title='Linux Shell'",
+              children: "#!/bin/bash\n\nurls=(\"https://www.whatap.io\"  \"https://blog.whatap.io\"  \"https://service.whatap.io\")\n\nfor url in ${urls[*]}; do\n\necho \"M $url url $url\"\ncurl -w @- -o /dev/null -s \"$url\" <<'EOF'\nM %{url_effective} url %{url_effective}\\n\nH %{url_effective} time_namelookup %{time_namelookup}\\n\nH %{url_effective} time_connect %{time_connect}\\n\nH %{url_effective} time_appconnect %{time_appconnect}\\n\nH %{url_effective} time_pretransfer %{time_pretransfer}\\n\nH %{url_effective} time_redirect %{time_redirect}\\n\nH %{url_effective} time_starttransfer %{time_starttransfer}\\n\nH %{url_effective} time_total %{time_total}\\n\nEOF\n\ndone\n"
+            })
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "다음과 같이 출력되는지 확인하세요."
+          }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title='Linux Shell'",
+              children: "$ ./curl.sh\nM https://www.whatap.io/ url https://www.whatap.io/\nH https://www.whatap.io/ time_namelookup 0.007289\nH https://www.whatap.io/ time_connect 0.010702\nH https://www.whatap.io/ time_appconnect 0.033637\nH https://www.whatap.io/ time_pretransfer 0.033831\nH https://www.whatap.io/ time_redirect 0.000000\nH https://www.whatap.io/ time_starttransfer 0.043230\nH https://www.whatap.io/ time_total 0.043312\nM https://blog.whatap.io/ url https://blog.whatap.io/\nH https://blog.whatap.io/ time_namelookup 0.000000\nH https://blog.whatap.io/ time_connect 0.000000\nH https://blog.whatap.io/ time_appconnect 0.000000\nH https://blog.whatap.io/ time_pretransfer 0.000000\nH https://blog.whatap.io/ time_redirect 0.000000\nH https://blog.whatap.io/ time_starttransfer 0.000000\nH https://blog.whatap.io/ time_total 0.005654\nM https://service.whatap.io/ url https://service.whatap.io/\nH https://service.whatap.io/ time_namelookup 0.004296\nH https://service.whatap.io/ time_connect 0.007282\nH https://service.whatap.io/ time_appconnect 0.038404\nH https://service.whatap.io/ time_pretransfer 0.038607\nH https://service.whatap.io/ time_redirect 0.000000\nH https://service.whatap.io/ time_starttransfer 0.055226\nH https://service.whatap.io/ time_total 0.055307\n"
+            })
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "스크립트 정상 수집을 확인하고 다음과 같이 와탭 서버 모니터링 에이전트에 스크립트를 등록하세요."
+          }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title='Linux Shell'",
+              children: "export USER_SCRIPT=실행할 사용자 스크립트 절대 경로\nsuco chmod +x $USER_SCRIPT\nsudo mkdir /usr/whatap/infra/ext/\nsudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/\nexport RUNAS_USER=사용자 스크립트를 실행할 계정. root 계정제외\nsudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script\nsudo service whatap-infra restart\n"
+            })
+          }), "\n"]
         }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "다음과 같이 출력되는지 확인하세요."
-        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
-          children: (0,jsx_runtime.jsx)(_components.code, {
-            className: "language-bash",
-            metastring: "title='Linux Shell'",
-            children: "$ ./curl.sh\nM https://www.whatap.io/ url https://www.whatap.io/\nH https://www.whatap.io/ time_namelookup 0.007289\nH https://www.whatap.io/ time_connect 0.010702\nH https://www.whatap.io/ time_appconnect 0.033637\nH https://www.whatap.io/ time_pretransfer 0.033831\nH https://www.whatap.io/ time_redirect 0.000000\nH https://www.whatap.io/ time_starttransfer 0.043230\nH https://www.whatap.io/ time_total 0.043312\nM https://blog.whatap.io/ url https://blog.whatap.io/\nH https://blog.whatap.io/ time_namelookup 0.000000\nH https://blog.whatap.io/ time_connect 0.000000\nH https://blog.whatap.io/ time_appconnect 0.000000\nH https://blog.whatap.io/ time_pretransfer 0.000000\nH https://blog.whatap.io/ time_redirect 0.000000\nH https://blog.whatap.io/ time_starttransfer 0.000000\nH https://blog.whatap.io/ time_total 0.005654\nM https://service.whatap.io/ url https://service.whatap.io/\nH https://service.whatap.io/ time_namelookup 0.004296\nH https://service.whatap.io/ time_connect 0.007282\nH https://service.whatap.io/ time_appconnect 0.038404\nH https://service.whatap.io/ time_pretransfer 0.038607\nH https://service.whatap.io/ time_redirect 0.000000\nH https://service.whatap.io/ time_starttransfer 0.055226\nH https://service.whatap.io/ time_total 0.055307\n"
+      }), (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["수집된 데이터는 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_analysis",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_counter",
+          className: "uitext"
+        }), "에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "category",
+          className: "uitext"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server_ext_폴더_실행스크립트"
+        }), "에서 찾을 수 있습니다."]
+      })]
+    }), (0,jsx_runtime.jsxs)(TabItem, {
+      value: "wps",
+      label: "Windows Powershell",
+      children: [(0,jsx_runtime.jsx)(_components.p, {
+        children: "윈도우 서버에서 실행 가능한 사용자 스크립트를 주기적으로 실행하여 결과를 업로드합니다. 다음 예시를 참조하여 사용자 스크립트를 작성하세요."
+      }), (0,jsx_runtime.jsxs)(Tabs, {
+        children: [(0,jsx_runtime.jsx)(TabItem, {
+          value: "wps1",
+          label: "BAT",
+          children: (0,jsx_runtime.jsxs)(_components.section, {
+            className: "remark-sectionize-h4",
+            children: [(0,jsx_runtime.jsx)(_components.h4, {
+              id: "bat-스크립트-실행",
+              children: "BAT 스크립트 실행"
+            }), (0,jsx_runtime.jsxs)(_components.ol, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "스크립트를 다음과 같이 작성 후 실행하세요."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-bash",
+                    metastring: "title='BAT'",
+                    children: "@echo off\nsetlocal enabledelayedexpansion\n\nset urls=https://www.whatap.io https://blog.whatap.io https://service.whatap.io\n\nfor %%u in (%urls%) do (\n    echo M %%u url %%u\n\n    rem Use curl to fetch the URL and get the total time taken for the request\n    for /f \"tokens=*\" %%i in ('curl -o nul -s -w \"M %%{url_effective} url %%{url_effective}\" %%u') do (\n        echo %%i\n    )\n\n    rem Measure the start time\n    set startTime=!time!\n\n    rem Perform the curl request and measure the end time\n    curl -o nul -s %%u\n\n    set endTime=!time!\n\n    rem Parse the start time\n    for /F \"tokens=1-4 delims=:.,\" %%a in (\"!startTime!\") do (\n        set /A \"startH=%%a, startM=%%b, startS=%%c, startMS=%%d\"\n    )\n\n    rem Parse the end time\n    for /F \"tokens=1-4 delims=:.,\" %%a in (\"!endTime!\") do (\n        set /A \"endH=%%a, endM=%%b, endS=%%c, endMS=%%d\"\n    )\n\n    rem Calculate the elapsed time in milliseconds\n    set /A \"elapsedMS=(endH*3600000 + endM*60000 + endS*1000 + endMS) - (startH*3600000 + startM*60000 + startS*1000 + startMS)\"\n    \n    rem Convert milliseconds to seconds and milliseconds part\n    set /A \"elapsedSec=elapsedMS/1000\"\n    set /A \"elapsedMSPart=elapsedMS %% 1000\"\n\n    echo H %%u time_total !elapsedSec!.!elapsedMSPart!\n)\n\nendlocal\n"
+                  })
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "다음과 같이 출력되는지 확인하세요."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-bash",
+                    metastring: "title='BAT'",
+                    children: ">webcheck.bat\nM https://www.whatap.io url https://www.whatap.io\nM https://www.whatap.io/ url https://www.whatap.io/\nH https://www.whatap.io time_total 0.38\nM https://blog.whatap.io url https://blog.whatap.io\nM https://blog.whatap.io/ url https://blog.whatap.io/\nH https://blog.whatap.io time_total 0.1\nM https://service.whatap.io url https://service.whatap.io\nM https://service.whatap.io/ url https://service.whatap.io/\nH https://service.whatap.io time_total 0.922\n"
+                  })
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "스크립트 정상 수집을 확인하고 다음과 같이 와탭 서버 모니터링 에이전트에 스크립트를 등록하세요."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-bat",
+                    metastring: "title='BAT'",
+                    children: "cd \"\\Program Files\\WhatapInfra\"\nwhtap_infra.exe init-script\nsc stop \"Whatap Infra\"\nsc start \"Whatap Infra\"\n"
+                  })
+                }), "\n"]
+              }), "\n"]
+            })]
           })
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: "스크립트 정상 수집을 확인하고 다음과 같이 와탭 서버 모니터링 에이전트에 스크립트를 등록하세요."
-        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
-          children: (0,jsx_runtime.jsx)(_components.code, {
-            className: "language-bash",
-            metastring: "title='Linux Shell'",
-            children: "export USER_SCRIPT=실행할 사용자 스크립트 절대 경로\nsuco chmod +x $USER_SCRIPT\nsudo mkdir /usr/whatap/infra/ext/\nsudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/\nexport RUNAS_USER=사용자 스크립트를 실행할 계정. root 계정제외\nsudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script\nsudo service whatap-infra restart\n"
+        }), (0,jsx_runtime.jsx)(TabItem, {
+          value: "wps2",
+          label: "PowerShell",
+          children: (0,jsx_runtime.jsxs)(_components.section, {
+            className: "remark-sectionize-h4",
+            children: [(0,jsx_runtime.jsx)(_components.h4, {
+              id: "powershell-스크립트-실행",
+              children: "PowerShell 스크립트 실행"
+            }), (0,jsx_runtime.jsxs)(_components.ol, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "스크립트를 다음과 같이 작성 후 실행하세요."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-bash",
+                    metastring: "title='PowerShell'",
+                    children: "$urls = @(\"https://www.whatap.io\", \"https://blog.whatap.io\", \"https://service.whatap.io\")\n\n# Hide progress bar\n$ProgressPreference = 'SilentlyContinue'\n\nforeach ($url in $urls) {\n    Write-Output \"M $url url $url\"\n\n    $startTime = Get-Date\n    try {\n        $response = Invoke-WebRequest -Uri $url -UseBasicParsing\n        $endTime = Get-Date\n        \n        $timeTotal = ($endTime - $startTime).TotalSeconds\n        \n        Write-Output \"M $($response.BaseResponse.ResponseUri) url $($response.BaseResponse.ResponseUri)\"\n        Write-Output (\"H {0} time_total {1}\" -f $url, $timeTotal)\n    } catch {\n        Write-Output \"Failed to access $url\"\n    }\n}\n"
+                  })
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "다음과 같이 출력되는지 확인하세요."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-bash",
+                    metastring: "title='PowerShell'",
+                    children: "> .\\webcheck.ps1                     \nM https://www.whatap.io url https://www.whatap.io\nM  url \nH https://www.whatap.io time_total 0.376979\nM https://blog.whatap.io url https://blog.whatap.io\nFailed to access https://blog.whatap.io\nM https://service.whatap.io url https://service.whatap.io\nFailed to access https://service.whatap.io\n"
+                  })
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "스크립트 정상 수집을 확인하고 다음과 같이 와탭 서버 모니터링 에이전트에 스크립트를 등록하세요."
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    className: "language-bash",
+                    metastring: "title='PowerShell'",
+                    children: "cd \"\\Program Files\\WhatapInfra\"\n.\\whatap_infra.exe init-script\nRestart-Service \"Whatap Infra\"\n"
+                  })
+                }), "\n"]
+              }), "\n"]
+            })]
           })
-        }), "\n"]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["수집된 데이터는 ", (0,jsx_runtime.jsx)(Cmdname, {
-        sid: "side_analysis",
-        className: "uitext"
-      }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
-        sid: "side_counter",
-        className: "uitext"
-      }), "에서 ", (0,jsx_runtime.jsx)(Cmdname, {
-        sid: "category",
-        className: "uitext"
-      }), " ", (0,jsx_runtime.jsx)(_components.code, {
-        children: "server_ext_폴더_실행스크립트"
-      }), "에서 찾을 수 있습니다."]
+        })]
+      })]
     })]
   });
 }

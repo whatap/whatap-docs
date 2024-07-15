@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[65249],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31733],{
 
 /***/ 83194:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -108,7 +108,7 @@ function _createMdxContent(props) {
           id: "ssl-인증-관련-문제",
           children: "SSL 인증 관련 문제"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "에이전트에서 데이터베이스에 접속할 때 SSL 보안 관련해 다음과 문제가 발생하면, jdbc로 접속할 때 SSL 인증을 사용하지 않도록 옵션을 설정해야 합니다."
+          children: "에이전트에서 데이터베이스에 접속할 때 SSL 보안 관련해 다음과 문제가 발생하면, JDBC로 접속할 때 SSL 인증을 사용하지 않도록 옵션을 설정해야 합니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-txt",
@@ -202,7 +202,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 19520:
+/***/ 20179:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -224,7 +224,7 @@ const frontMatter = {
 	title: '설치 문제 해결',
 	description: '데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.',
 	tags: [
-		'SQL Server',
+		'Tibero',
 		'데이터베이스',
 		'문제 해결',
 		'에이전트'
@@ -232,21 +232,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/troubleshooting",
+  "id": "tibero/troubleshooting",
   "title": "설치 문제 해결",
   "description": "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
-  "source": "@site/docs/mssql/troubleshooting.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/troubleshooting",
-  "permalink": "/whatap-docs/mssql/troubleshooting",
+  "source": "@site/docs/tibero/troubleshooting.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/troubleshooting",
+  "permalink": "/whatap-docs/tibero/troubleshooting",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/troubleshooting.mdx",
+  "editUrl": "undefined/docs/tibero/troubleshooting.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "SQL Server",
-      "permalink": "/whatap-docs/tags/sql-server"
+      "label": "Tibero",
+      "permalink": "/whatap-docs/tags/tibero"
     },
     {
       "inline": true,
@@ -270,20 +270,20 @@ const metadata = {
     "title": "설치 문제 해결",
     "description": "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
     "tags": [
-      "SQL Server",
+      "Tibero",
       "데이터베이스",
       "문제 해결",
       "에이전트"
     ]
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
     "title": "설치 점검 사항",
-    "permalink": "/whatap-docs/mssql/after-install-agent"
+    "permalink": "/whatap-docs/tibero/after-install-agent"
   },
   "next": {
     "title": "설정하기",
-    "permalink": "/whatap-docs/mssql/agent-settings"
+    "permalink": "/whatap-docs/tibero/agent-settings"
   }
 };
 const assets = {
