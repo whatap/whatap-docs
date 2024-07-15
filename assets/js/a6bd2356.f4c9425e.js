@@ -672,8 +672,8 @@ const metadata = {
   },
   "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "세션 히스토리",
-    "permalink": "/whatap-docs/oracle-pro/analysis-session-history"
+    "title": "Wait 분석",
+    "permalink": "/whatap-docs/oracle-pro/analysis-wait-events"
   },
   "next": {
     "title": "Top SQL 비교",

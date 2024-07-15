@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93740],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44623],{
 
 /***/ 98143:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -249,7 +249,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "DMA 에이전트"
+              children: "Oracle Pro 에이전트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "Query 기반으로 성능 데이터를 수집하여 서버로 전송합니다. 모니터링 대상 데이터베이스 서버에 에이전트를 직접 설치하지 않아도 별도의 에이전트 서버를 통해서 모니터링이 가능합니다."
@@ -308,7 +308,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 73313:
+/***/ 68517:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -332,28 +332,28 @@ const frontMatter = {
 	title: '설정하기',
 	description: '데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.',
 	tags: [
-		'MySQL',
+		'PostgreSQL',
 		'데이터베이스',
 		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/agent-settings",
+  "id": "postgresql/agent-settings",
   "title": "설정하기",
   "description": "데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
-  "source": "@site/docs/mysql/agent-settings.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/agent-settings",
-  "permalink": "/whatap-docs/mysql/agent-settings",
+  "source": "@site/docs/postgresql/agent-settings.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/agent-settings",
+  "permalink": "/whatap-docs/postgresql/agent-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/agent-settings.mdx",
+  "editUrl": "undefined/docs/postgresql/agent-settings.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MySQL",
-      "permalink": "/whatap-docs/tags/my-sql"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     },
     {
       "inline": true,
@@ -372,19 +372,19 @@ const metadata = {
     "title": "설정하기",
     "description": "데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
     "tags": [
-      "MySQL",
+      "PostgreSQL",
       "데이터베이스",
       "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "설치 문제 해결",
-    "permalink": "/whatap-docs/mysql/troubleshooting"
+    "permalink": "/whatap-docs/postgresql/troubleshooting"
   },
   "next": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/mysql/agent-dbx-settings"
+    "permalink": "/whatap-docs/postgresql/agent-dbx-settings"
   }
 };
 const assets = {

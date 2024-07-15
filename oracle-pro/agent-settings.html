@@ -25,8 +25,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.047b8d76.css">
-<script src="/whatap-docs/assets/js/runtime~main.b74ba88c.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.8c20b7e9.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.093585fe.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.61267e84.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -47,7 +47,7 @@
 <p>에이전트가 수집한 데이터베이스 성능 데이터를 수집 및 저장, 통계 정보 추출하고 이를 사용자에   효율적인 방법으로 제공합니다. 수집 서버는 지역(Region) 별로 설정이 가능합니다. 지역(Region)별로 수집 서버의 주소가 다르게 할당합니다. 사용자가 선택한 지역(Region)에 따라 수집 서버 주소는 다를 수 있습니다. 프로젝트를 생성할 때 지역(Region)도 함께 설정합니다.</p>
 </li>
 <li>
-<p><strong>DMA 에이전트</strong></p>
+<p><strong>Oracle Pro 에이전트</strong></p>
 <p>Query 기반으로 성능 데이터를 수집하여 서버로 전송합니다. 모니터링 대상 데이터베이스 서버에 에이전트를 직접 설치하지 않아도 별도의 에이전트 서버를 통해서 모니터링이 가능합니다.</p>
 </li>
 <li>
@@ -58,7 +58,7 @@
 <section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="기본-옵션">기본 옵션<a class="hash-link" aria-label="기본 옵션에 대한 직접 링크" title="기본 옵션에 대한 직접 링크" href="/whatap-docs/oracle-pro/agent-settings#기본-옵션">​</a></h3><ul>
 <li>
 <p><strong>license</strong> <span class="type">String</span></p>
-<p>에이전트를 설치할 때 서버로부터 부여받은 프로젝트 액세스 키를 설정합니다. 프로젝트 액세스 키는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함하고  있습니다.</p>
+<p>에이전트를 설치할 때 서버로부터 부여받은 프로젝트 액세스 키를 설정합니다. 프로젝트 액세스 키는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함 하고 있습니다.</p>
 </li>
 <li>
 <p><strong>whatap.server.host</strong> <span class="type">String</span></p>
@@ -79,13 +79,13 @@
 <ul>
 <li>
 <p><strong>rac</strong> <span class="type">String</span> <code class="my">RAC</code></p>
-<p>Oracle의 <strong>Real Application Clusters</strong>(<strong>RAC</strong>) 클러스터 그룹으로 묶인 인스턴스들의 그룹 이름을 설정하는 옵션입니다. 이 옵션을 사용하여 복잡한 RAC 클러스터 그룹 이 름을 간결하고 식별하기 쉬운 이름으로 설정할 수 있습니다. 이 옵션을 통해 설정된 RAC 클러스터 그룹 이름은 와탭 모니터링 서비스 화면에서 확인할 수 있습니다.</p>
+<p>Oracle의 <strong>Real Application Clusters</strong>(<strong>RAC</strong>) 클러스터 그룹으로 묶인 인스턴스들의 그룹 이름을 설정하는 옵션입니다. 이 옵션을 사용하여 복잡한 RAC 클러스터 그 룹 이름을 간결하고 식별하기 쉬운 이름으로 설정할 수 있습니다. 이 옵션을 통해 설정된 RAC 클러스터 그룹 이름은 와탭 모니터링 서비스 화면에서 확인할 수 있습니다.</p>
 <p>예를 들어, RAC 클러스터 그룹 이름이 &#x27;<strong>my_long_rac_cluster_group_name</strong>&#x27;과 같이 길 경우, 사용자는 다음과 같이 간결한 이름으로 설정할 수 있습니다.</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">whatap.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key attr-name" style="color:rgb(255, 203, 107)">rac</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">my_rac_cluster_group</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>와탭 모니터링 서비스에서 &#x27;<strong>my_rac_cluster_group</strong>&#x27;로 표시되며, 사용자는 해당 RAC 클러스터 그룹을 빠르게 식별하고 모니터링할 수 있습니다.</p>
 </li>
 </ul></section>
-<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="데이터베이스-데이 터-수집-옵션">데이터베이스 데이터 수집 옵션<a class="hash-link" aria-label="데이터베이스 데이터 수집 옵션에 대한 직접 링크" title="데이터베이스 데이터 수집 옵션에 대한 직접 링크" href="/whatap-docs/oracle-pro/agent-settings#데이터베이스-데이터-수집-옵션">​</a></h3><ul>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="데이터베이스-데이터-수집-옵션">데이터베이스 데이터 수집 옵션<a class="hash-link" aria-label="데이터베이스 데이터 수집 옵션에 대한 직접 링크" title="데이터베이스 데이터 수집 옵션에 대한 직접 링크" href="/whatap-docs/oracle-pro/agent-settings#데이터베이스-데이터-수집-옵션">​</a></h3><ul>
 <li>
 <p><strong>xos</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>true</code></p>
@@ -99,7 +99,7 @@
 </li>
 <li>
 <p><strong>stat</strong> <span class="type">String</span></p>
-<p>통계 관련 지표를 수집하도록 설정합니다. <code>v$sysstat</code>, <code>v$statname</code> 등의 <code>NAME</code> 컬럼을 참조해 수집하길 원하는 지표 이름을 작성하세요. <code>stat+=</code>와 같은 방식으로 작성하면 기본 지표들과 함께 추가로 수집할 수 있습니다. 공백 없이 쉼표(,)를 구분자로 이용해 여러 개를 입력할 수 있습니다.</p>
+<p>통계 관련 지표를 수집하도록 설정합니다. <code>v$sysstat</code>, <code>v$statname</code> 등의 <code>NAME</code> 컬 럼을 참조해 수집하길 원하는 지표 이름을 작성하세요. <code>stat+=</code>와 같은 방식으로 작성하면 기본 지표들과 함께 추가로 수집할 수 있습니다. 공백 없이 쉼표(,)를 구분자로 이용해 여러 개를 입력할 수 있습니다.</p>
 </li>
 <li>
 <p><strong>event</strong> <span class="type">String</span></p>
@@ -153,7 +153,7 @@
 <li>
 <p><strong>ora_hidden_param</strong> <span class="type">Boolean</span></p>
 <p>기본값 <code>false</code></p>
-<p>히든 파라미터 값 수집 여부를 설정합니다.  히든 파라미터를 수집하려면 옵션값을 <code>true</code>로 설정하세요.</p>
+<p>히든 파라미터 값 수집 여부를 설정합  니다. 히든 파라미터를 수집하려면 옵션값을 <code>true</code>로 설정하세요.</p>
 </li>
 <li>
 <p><strong>segments</strong> <span class="type">Boolean</span></p>
@@ -204,7 +204,7 @@
 <li>
 <p><strong>object_name</strong> <span class="type">String</span></p>
 <p>기본값 <code>{type}</code>-<code>{ip2}</code>-<code>{ip3}</code>-<code>{port}</code></p>
-<p>데이터베이스 서버를 식별하기 위한 에이전트 이름(ONAME) 구성 방식입니다. ONAME을 토대로 OID가 생성됩니다.</p>
+<p>데이터베이스   서버를 식별하기 위한 에이전트 이름(ONAME) 구성 방식입니다. ONAME을 토대로 OID가 생성됩니다.</p>
 <table><thead><tr><th>설정</th><th>설명</th></tr></thead><tbody><tr><td><code>{type}</code></td><td><code>whatap.app_name</code>에 설정된 값을 사용합니다</td></tr><tr><td><code>{ip0}</code></td><td>IPv4 주소 중 첫 번째 단위를 사용합니다. (예시, <strong>10</strong>.11.12.13 중 <strong>10</strong>)</td></tr><tr><td><code>{ip1}</code></td><td>IPv4 주소 중 두 번째 단위를 사용합니다. (예시, 10.<strong>11</strong>.12.13 중 <strong>11</strong>)</td></tr><tr><td><code>{ip2}</code></td><td>IPv4 주소 중 세 번째 단위를 사용합니다. (예시, 10.11.<strong>12</strong>.13 중 <strong>12</strong>)</td></tr><tr><td><code>{ip3}</code></td><td>IPv4 주소 중 네 번째 단위를 사용합니다. (예시, 10.11.12.<strong>13</strong> 중 <strong>13</strong>)</td></tr><tr><td><code>{port}</code></td><td>데이터베이스 서버 포트</td></tr><tr><td><code>{hostname}</code></td><td>호스트 명</td></tr></tbody></table>
 </li>
 <li>
@@ -247,7 +247,7 @@
 </li>
 <li>
 <p><strong>process</strong> <span class="type">String</span></p>
-<p>프로세스의 실행 상태를 모니터링할 수 있습니다. 옵션값으로 프로세스 이름을 입력하세요. 쉼표(,)를 구분자로 이용해 여러 개를 등록할 수 있습니다.</p>
+<p>프로세스의 실행 상태를 모  니터링할 수 있습니다. 옵션값으로 프로세스 이름을 입력하세요. 쉼표(,)를 구분자로 이용해 여러 개를 등록할 수 있습니다.</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">xos.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key attr-name" style="color:rgb(255, 203, 107)">process</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">{process_name}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>예를 들어, top과 lock.sh 프로세스를 감시 대상으로 설정하려면 다음과 같이 옵션을 설정하세요.</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">xos.conf</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key attr-name" style="color:rgb(255, 203, 107)">process</span><span class="token punctuation" style="color:rgb(199, 146, 234)">=</span><span class="token value attr-value">top,lock.sh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -255,7 +255,7 @@
 </li>
 <li>
 <p><strong>iplist_interval</strong> <span class="type">Second</span></p>
-<p>데이터베이스 서버의 IP 목록을 수집할 수 있습니다. 초 단위(최소 3초)로 시간 간격(interval)을 설정해야 수집할 수 있습니다.</p>
+<p>데이터베이스 서버의 IP 목록을 수집할 수 있습니다. 초 단위(최소 3초)로 시간  간격(interval)을 설정해야 수집할 수 있습니다.</p>
 </li>
 <li>
 <p><strong>file</strong> <span class="type">String</span></p>
