@@ -341,6 +341,7 @@ function _createMdxContent(props) {
           children: "다음 문서"
         }), "를 참조하세요."]
       }), (0,jsx_runtime.jsxs)(Tabs, {
+        groupId: "server-user-script",
         children: [(0,jsx_runtime.jsx)(TabItem, {
           value: "lxs",
           label: "Linux Shell",
@@ -376,8 +377,9 @@ function _createMdxContent(props) {
           children: "server_redis"
         }), "에서 확인할 수 있습니다. 다음 명령으로 체크할 Redis 서버의 접속 정보를 추가할 수 있습니다."]
       }), (0,jsx_runtime.jsxs)(Tabs, {
+        groupId: "server-user-script",
         children: [(0,jsx_runtime.jsx)(TabItem, {
-          value: "lxs2",
+          value: "lxs",
           label: "Linux Shell",
           children: (0,jsx_runtime.jsx)(_components.pre, {
             children: (0,jsx_runtime.jsx)(_components.code, {
@@ -387,7 +389,7 @@ function _createMdxContent(props) {
             })
           })
         }), (0,jsx_runtime.jsx)(TabItem, {
-          value: "wps2",
+          value: "wps",
           label: "Windows Powershell",
           children: (0,jsx_runtime.jsx)(_components.pre, {
             children: (0,jsx_runtime.jsx)(_components.code, {
@@ -411,8 +413,9 @@ function _createMdxContent(props) {
           children: "server_memcached"
         }), "에서 확인할 수 있습니다. 다음 명령으로 체크할 Memcached 서버의 접속 정보를 추가할 수 있습니다."]
       }), (0,jsx_runtime.jsxs)(Tabs, {
+        groupId: "server-user-script",
         children: [(0,jsx_runtime.jsx)(TabItem, {
-          value: "lxs3",
+          value: "lxs",
           label: "Linux Shell",
           children: (0,jsx_runtime.jsx)(_components.pre, {
             children: (0,jsx_runtime.jsx)(_components.code, {
@@ -422,7 +425,7 @@ function _createMdxContent(props) {
             })
           })
         }), (0,jsx_runtime.jsx)(TabItem, {
-          value: "wps3",
+          value: "wps",
           label: "Windows Powershell",
           children: (0,jsx_runtime.jsx)(_components.pre, {
             children: (0,jsx_runtime.jsx)(_components.code, {
@@ -536,8 +539,9 @@ function _server_adf_tcp_port_createMdxContent(props) {
         children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
           children: "대상 서버에서 다음 명령을 추가하세요."
         }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+          groupId: "server-user-script",
           children: [(0,jsx_runtime.jsx)(TabItem, {
-            value: "lxst",
+            value: "lxs",
             label: "Linux Shell",
             children: (0,jsx_runtime.jsx)(_components.pre, {
               children: (0,jsx_runtime.jsx)(_components.code, {
@@ -547,7 +551,7 @@ function _server_adf_tcp_port_createMdxContent(props) {
               })
             })
           }), (0,jsx_runtime.jsx)(TabItem, {
-            value: "wpst",
+            value: "wps",
             label: "Windows Powershell",
             children: (0,jsx_runtime.jsx)(_components.pre, {
               children: (0,jsx_runtime.jsx)(_components.code, {
@@ -614,6 +618,7 @@ function _server_adf_pnpc_createMdxContent(props) {
         className: "uitext"
       }), " 위젯에서 확인할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+      groupId: "server-user-script",
       children: [(0,jsx_runtime.jsx)(TabItem, {
         value: "lxs",
         label: "Linux Shell",
@@ -700,6 +705,8 @@ function _server_adf_collect_spec_createMdxContent(props) {
         }), ": 리눅스의 보안 패치 대기 목록입니다."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+      groupId: "server-user-script",
+      s: true,
       children: [(0,jsx_runtime.jsx)(TabItem, {
         value: "lxs",
         label: "Linux Shell",
@@ -874,6 +881,7 @@ function _server_adf_file_check_createMdxContent(props) {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "파일 시스템상에 존재하거나 존재할 가능성이 있는 파일 및 디렉터리를 감시할 수 있습니다."
     }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+      groupId: "server-user-script",
       children: [(0,jsx_runtime.jsx)(TabItem, {
         value: "lxs",
         label: "Linux Shell",
@@ -957,6 +965,7 @@ function _server_adf_nvidia_createMdxContent(props) {
         children: "server_nvidiasmi"
       }), "로 수집됩니다."]
     }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+      groupId: "server-user-script",
       children: [(0,jsx_runtime.jsx)(TabItem, {
         value: "lxs",
         label: "Linux Shell",
@@ -1104,6 +1113,7 @@ function _server_adf_agent_log_ch_createMdxContent(props) {
         children: "whatap_infrad.fork.stdout.log"
       }), ")의 경로를 변경합니다. 지정 경로가 없는 경우 와탭 에이전트가 생성을 시도합니다. 에이전트 버전 2.0.6 이상 지원됩니다."]
     }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+      groupId: "server-user-script",
       children: [(0,jsx_runtime.jsx)(TabItem, {
         value: "lxs",
         label: "Linux Shell",
@@ -1185,6 +1195,7 @@ function _server_adf_netstat_createMdxContent(props) {
         children: "server_netstat_s"
       }), " (netstat -s 명령 실행 결과)로 업로드됩니다."]
     }), "\n", (0,jsx_runtime.jsxs)(Tabs, {
+      groupId: "server-user-script",
       children: [(0,jsx_runtime.jsx)(TabItem, {
         value: "lxs",
         label: "Linux Shell",
@@ -1319,8 +1330,9 @@ function _server_adf_user_script_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.p, {
         children: "윈도우 서버에서 실행 가능한 사용자 스크립트를 주기적으로 실행하여 결과를 업로드합니다. 다음 예시를 참조하여 사용자 스크립트를 작성하세요."
       }), (0,jsx_runtime.jsxs)(Tabs, {
+        groupId: "server-user-script",
         children: [(0,jsx_runtime.jsx)(TabItem, {
-          value: "wps1",
+          value: "wps",
           label: "BAT",
           children: (0,jsx_runtime.jsxs)(_components.section, {
             className: "remark-sectionize-h4",

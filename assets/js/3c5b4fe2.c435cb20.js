@@ -47,8 +47,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/golang/golang-0_1_13"
   },
   "next": {
-    "title": "Server Agent v2.6.1",
-    "permalink": "/whatap-docs/release-notes/server/server-2_6_1"
+    "title": "Server Agent v2.6.2",
+    "permalink": "/whatap-docs/release-notes/server/server-2_6_2"
   }
 };
 const assets = {
