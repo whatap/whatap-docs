@@ -1321,11 +1321,11 @@
   },
   "apm-dashboard-preset-change-default-en.png": {
     "width": 600,
-    "height": 239
+    "height": 233
   },
   "apm-dashboard-preset-change-default-ja.png": {
     "width": 600,
-    "height": 236
+    "height": 230
   },
   "apm-dashboard-preset-change-default.png": {
     "width": 600,
@@ -6379,6 +6379,42 @@
     "width": 1200,
     "height": 726
   },
+  "dotnet-trst01-en.png": {
+    "width": 1195,
+    "height": 870
+  },
+  "dotnet-trst01-ja.png": {
+    "width": 1198,
+    "height": 865
+  },
+  "dotnet-trst01.png": {
+    "width": 1200,
+    "height": 879
+  },
+  "dotnet-trst02-en.png": {
+    "width": 1197,
+    "height": 868
+  },
+  "dotnet-trst02-ja.png": {
+    "width": 1193,
+    "height": 868
+  },
+  "dotnet-trst02.png": {
+    "width": 1200,
+    "height": 882
+  },
+  "dotnet-trst03-en.png": {
+    "width": 1194,
+    "height": 867
+  },
+  "dotnet-trst03-ja.png": {
+    "width": 1193,
+    "height": 865
+  },
+  "dotnet-trst03.png": {
+    "width": 1200,
+    "height": 995
+  },
   "dotnet-wcf-example-pic-en.png": {
     "width": 800,
     "height": 406
@@ -7691,6 +7727,10 @@
     "width": 489,
     "height": 146
   },
+  "k8s-agent-archi.png": {
+    "width": 3904,
+    "height": 4384
+  },
   "k8s-agent-install-check-en.png": {
     "width": 364,
     "height": 120
@@ -7945,15 +7985,15 @@
   },
   "k8s-app-list-en.png": {
     "width": 1200,
-    "height": 515
+    "height": 438
   },
   "k8s-app-list-ja.png": {
     "width": 1200,
-    "height": 515
+    "height": 436
   },
   "k8s-app-list.png": {
     "width": 1200,
-    "height": 515
+    "height": 438
   },
   "k8s-application-accesskey-en.png": {
     "width": 1200,
@@ -8168,16 +8208,16 @@
     "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
-    "width": 1255,
-    "height": 943
+    "width": 1200,
+    "height": 694
   },
   "k8s-container-map-sum-all-ja.png": {
-    "width": 1256,
-    "height": 941
+    "width": 1200,
+    "height": 693
   },
   "k8s-container-map-sum-all.png": {
-    "width": 1134,
-    "height": 963
+    "width": 1200,
+    "height": 703
   },
   "k8s-container-map-thresholds.png": {
     "width": 870,
@@ -8204,16 +8244,16 @@
     "height": 1195
   },
   "k8s-container-sum-en.png": {
-    "width": 1173,
-    "height": 898
+    "width": 1200,
+    "height": 689
   },
   "k8s-container-sum-ja.png": {
-    "width": 1179,
-    "height": 900
+    "width": 1200,
+    "height": 692
   },
   "k8s-container-sum.png": {
-    "width": 1173,
-    "height": 894
+    "width": 1200,
+    "height": 689
   },
   "k8s-container-volume-en.png": {
     "width": 1201,
@@ -8551,6 +8591,54 @@
     "width": 1200,
     "height": 629
   },
+  "k8s-pending-pod-status-detail-en.png": {
+    "width": 1201,
+    "height": 677
+  },
+  "k8s-pending-pod-status-detail-ja.png": {
+    "width": 1201,
+    "height": 677
+  },
+  "k8s-pending-pod-status-detail.png": {
+    "width": 1200,
+    "height": 677
+  },
+  "k8s-pending-pod-status-en.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "k8s-pending-pod-status-filter-en.png": {
+    "width": 1099,
+    "height": 278
+  },
+  "k8s-pending-pod-status-filter-ja.png": {
+    "width": 1099,
+    "height": 278
+  },
+  "k8s-pending-pod-status-filter.png": {
+    "width": 1099,
+    "height": 278
+  },
+  "k8s-pending-pod-status-gr-qos-en.png": {
+    "width": 1200,
+    "height": 379
+  },
+  "k8s-pending-pod-status-gr-qos-ja.png": {
+    "width": 1200,
+    "height": 380
+  },
+  "k8s-pending-pod-status-gr-qos.png": {
+    "width": 1200,
+    "height": 381
+  },
+  "k8s-pending-pod-status-ja.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-pending-pod-status.png": {
+    "width": 1200,
+    "height": 675
+  },
   "k8s-performance-summary-en.png": {
     "width": 1211,
     "height": 1360
@@ -8765,15 +8853,15 @@
   },
   "k8s-resource-node-detail-en.png": {
     "width": 1200,
-    "height": 695
+    "height": 755
   },
   "k8s-resource-node-detail-ja.png": {
     "width": 1200,
-    "height": 696
+    "height": 753
   },
   "k8s-resource-node-detail.png": {
     "width": 1200,
-    "height": 696
+    "height": 756
   },
   "k8s-resource-node-list-cl-en.png": {
     "width": 967,
@@ -9340,11 +9428,11 @@
     "height": 832
   },
   "log-getting-started-en.png": {
-    "width": 1201,
+    "width": 1200,
     "height": 776
   },
   "log-getting-started-ja.png": {
-    "width": 1200,
+    "width": 1201,
     "height": 778
   },
   "log-getting-started.png": {
@@ -10641,81 +10729,69 @@
   },
   "mobile-app-main-tab.png": {
     "width": 591,
-    "height": 97
+    "height": 133
   },
   "mobile-app-notice.png": {
     "width": 45,
     "height": 45
   },
-  "mobile-app-org-en.png": {
-    "width": 591,
-    "height": 1184
-  },
-  "mobile-app-org-ja.png": {
-    "width": 591,
-    "height": 1184
-  },
-  "mobile-app-org.png": {
-    "width": 591,
-    "height": 1184
-  },
   "mobile-app-project-alert-en.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-alert-ja.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-alert.png": {
     "width": 591,
-    "height": 1184
-  },
-  "mobile-app-project-all-status-en.png": {
-    "width": 591,
-    "height": 195
-  },
-  "mobile-app-project-all-status-ja.png": {
-    "width": 591,
-    "height": 195
-  },
-  "mobile-app-project-all-status.png": {
-    "width": 591,
-    "height": 195
+    "height": 1159
   },
   "mobile-app-project-card-en.png": {
     "width": 591,
-    "height": 644
+    "height": 549
   },
   "mobile-app-project-card-ja.png": {
     "width": 591,
-    "height": 644
+    "height": 552
   },
   "mobile-app-project-card.png": {
     "width": 591,
-    "height": 644
+    "height": 554
   },
   "mobile-app-project-dashboard-en.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-dashboard-ja.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-dashboard.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-setting-en.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-setting-ja.png": {
     "width": 591,
-    "height": 1184
+    "height": 1159
   },
   "mobile-app-project-setting.png": {
+    "width": 591,
+    "height": 1159
+  },
+  "mobile-app-search-result-en.png": {
+    "width": 591,
+    "height": 1184
+  },
+  "mobile-app-search-result-ja.png": {
+    "width": 591,
+    "height": 1184
+  },
+  "mobile-app-search-result.png": {
     "width": 591,
     "height": 1184
   },
@@ -12047,6 +12123,22 @@
     "width": 2384,
     "height": 702
   },
+  "release-mobile-app-add-home.png": {
+    "width": 400,
+    "height": 850
+  },
+  "release-mobile-app-favorite.png": {
+    "width": 400,
+    "height": 334
+  },
+  "release-mobile-app-logining.png": {
+    "width": 400,
+    "height": 241
+  },
+  "release-mobile-app-test-alert.png": {
+    "width": 400,
+    "height": 849
+  },
   "release-multi-tx-chartview.png": {
     "width": 826,
     "height": 122
@@ -12651,6 +12743,18 @@
     "width": 1273,
     "height": 652
   },
+  "server-install-oracle-solaris-en.png": {
+    "width": 1270,
+    "height": 998
+  },
+  "server-install-oracle-solaris-ja.png": {
+    "width": 1270,
+    "height": 1024
+  },
+  "server-install-oracle-solaris.png": {
+    "width": 1273,
+    "height": 1001
+  },
   "server-install-unx-aix-en.png": {
     "width": 1264,
     "height": 830
@@ -12861,15 +12965,15 @@
   },
   "server-select-os-en.png": {
     "width": 1200,
-    "height": 767
+    "height": 911
   },
   "server-select-os-ja.png": {
     "width": 1200,
-    "height": 788
+    "height": 935
   },
   "server-select-os.png": {
     "width": 1200,
-    "height": 724
+    "height": 869
   },
   "server-server-event-en.png": {
     "width": 1192,

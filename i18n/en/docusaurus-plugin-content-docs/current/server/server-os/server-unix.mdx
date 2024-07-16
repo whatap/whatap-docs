@@ -1,0 +1,150 @@
+---
+id: server-unix
+title: Unix
+description: It provides a method to install the WhaTap server monitoring agent in the Unix environment.
+toc_max_heading_level: 2
+tags:
+  - Server
+  - Installation
+  - Unix
+  - Aix
+  - Oracle Solaris
+  - FreeBSD
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## FreeBSD
+
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. You can also perform this through <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> of the project.
+
+<ImgLang img='server-install-lx-unx.png' desc='Server Monitoring Linux Unix'/>
+
+Select a desired OS on the <Cmdname sid="side_agentInstall" className="uitext" /> screen, check the project access key, and then proceed with the installation according to the following instructions.
+
+1. Register the WhaTap **repository**.  
+
+   In the <Cmdname sid="server_installAgent_add_whatapRepo" className="uitext" /> tab, copy the command and enter it.
+
+   ```bash title=SH
+   wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+   ```
+
+2. Install the **package** with the following command.
+
+   In the <Cmdname sid="server_installAgent_installPackages" className="uitext" /> tab, copy the command and enter it.
+
+   ```bash title=SH
+   pkg install whatap-infra.txz
+   ```
+
+3. Run the **configuration script**.
+
+   In the <Cmdname sid="server_installAgent_startMonitoring" className="uitext" /> tab, get the command or execute the command below after adding the project access key and server IP.
+
+   ```bash
+   echo "license=[Granted Project Access Key]" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host=[Granted WhaTap Server IP]" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo service whatap-infra restart
+   ```
+
+import Svtcp6600 from "../../common-items/_sv-tcp6600.mdx";
+
+<Svtcp6600 />
+
+<details>
+<summary>Server agent file configuration</summary>
+
+import Svcpf from "../../common-items/_sv-cpf.mdx";
+
+<Svcpf />
+
+import Svlfcpf from "../../common-items/_sv-lf-cpf.mdx";
+
+<Svlfcpf />
+
+</details>
+
+## Aix
+
+:::note 
+
+It is available in the AIX 6.1 or later.
+
+:::
+
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. You can also perform this through <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> of the project.
+
+<ImgLang img='server-install-unx-aix.png' desc='Server monitoring AIX'/>
+
+After selecting ***AIX*** on the operating system selection screen in <Cmdname sid="side_agentInstall" className="uitext" /> and confirming the project access key, proceed with the installation according to the following instructions.
+
+1. In the <Cmdname sid="TTL07853" className="uitext" /> tab, select *whatap-infra-latest.noarch.rpm* to download the agent installation file.
+
+2. Go to the <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" /> tab, check the following command, and then run the package.
+
+   ```bash
+   rpm -Uvh whatap-infra-latest.noarch.rpm
+   ```
+
+:::note 
+
+For server security purposes, the **installation files** are provided only in the download format.
+
+:::
+
+### Running the agent
+
+Execute the following command to start the server monitoring. When the application server runs, it begins collecting monitoring information. 
+
+```bash
+echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
+echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
+echo "createdtime=date +%s%S" |tee -a /usr/whatap/infra/conf/whatap.conf
+stopsrc -s whatap-infra
+startsrc -s whatap-infra
+```
+
+## Oracle Solaris
+
+:::note 
+
+It is available in Oracle Solaris 11.2 or later.
+
+:::
+
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. You can also perform this through <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> of the project.
+
+<ImgLang img='server-install-oracle-solaris.png' desc='Server monitoring Solaris'/>
+
+After selecting ***Oracle Solaris*** on the operating system selection screen in <Cmdname sid="side_agentInstall" className="uitext" /> and confirming the project access key, proceed with the installation according to the following instructions.
+
+1. Execute the download command or download the installation file from the <Cmdname sid="TTL07853" className="uitext" /> tab. 
+
+   - Execute the following command to download the agent installation file. 
+
+     ```bash
+     wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz
+     ```
+
+   - Select _whatap_infra.zip_ to download the agent installation file.
+
+2. Go to the <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" /> tab, check the following command, and then run the package.
+
+   ```bash
+   tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz
+   pkgadd -d .
+   ```
+
+### Running the agent
+
+Execute the following command to start the server monitoring. When the application server runs, it begins collecting monitoring information. 
+
+```bash
+echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
+echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
+echo "createdtime=`date +%s%S`" |tee -a /usr/whatap/infra/conf/whatap.conf
+/etc/init.d/whatap-infra start
+```

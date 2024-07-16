@@ -16,6 +16,7 @@ import FacebookShare from '@site/src/components/facebook';
 import PrintPDF from '@site/src/components/printpage/PrintPage';
 import Feedback from '@site/src/components/Feedback';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import GenerateToc from '@site/src/components/GenerateToc';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -41,57 +42,32 @@ export default function DocItemLayout({children}) {
   const {
     metadata: {unlisted},
   } = useDoc();
-  if (currentLocale !== 'ko') {
-    return (
-      <div className="row">
-        <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
-          {unlisted && <Unlisted />}
-          <DocVersionBanner />
-          <div className={styles.docItemContainer}>
-            <article>
-              <DocBreadcrumbs />
-              <DocVersionBadge />
-              {docTOC.mobile}
-              <DocItemContent>{children}</DocItemContent>
-              <DocItemFooter />
-            </article>
-            {/* <DocItemPaginator /> */}
-          </div>
-        </div>
-        {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
-        <div className="col col--3">
-          {docTOC.desktop}
-          <FacebookShare />
-          <PrintPDF/>
-          <Feedback/>
+
+  return (
+    <div className="row">
+      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+        {unlisted && <Unlisted />}
+        <DocVersionBanner />
+        <div className={styles.docItemContainer}>
+          <article>
+            <DocBreadcrumbs />
+            <DocVersionBadge />
+            {/* {docTOC.mobile} */}
+            <GenerateToc device="mobile" />
+            <DocItemContent>{children}</DocItemContent>
+            <DocItemFooter />
+          </article>
+          <DocItemPaginator />
         </div>
       </div>
-    );
-  } else {
-    return (
-      <div className="row">
-        <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
-          {unlisted && <Unlisted />}
-          <DocVersionBanner />
-          <div className={styles.docItemContainer}>
-            <article>
-              <DocBreadcrumbs />
-              <DocVersionBadge />
-              {docTOC.mobile}
-              <DocItemContent>{children}</DocItemContent>
-              <DocItemFooter />
-            </article>
-            <DocItemPaginator />
-          </div>
-        </div>
-        {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
-        <div className="col col--3">
-          {docTOC.desktop}
-          <FacebookShare />
-          <PrintPDF/>
-          <Feedback/>
-        </div>
+      {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
+      <div className="col col--3">
+        {/* {docTOC.desktop} */}
+        {!docTOC.hidden ? <GenerateToc device="desktop" /> : null}
+        <FacebookShare />
+        <PrintPDF/>
+        <Feedback/>
       </div>
-    );
-  }
+    </div>
+  );
 }

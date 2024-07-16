@@ -27,7 +27,7 @@ import Passnote from "./_pass-note.mdx";
 2. Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
    - *paramkey.txt*
-   - _whatap.agent-2.0_25.jar_
+   - *whatap.agent-2.0_25.jar*
    - *whatap.conf*
 
    ```bash
@@ -61,7 +61,7 @@ import Passnote from "./_pass-note.mdx";
    web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
    ```
 
-5. _Procfile_ファイルと_.ebextensions_ファイル、_`{application}`.jar_ファイルを圧縮してください。
+5. *Procfile*ファイルと*.ebextensions*ファイル、*`{application}`.jar*ファイルを圧縮してください。
 
    ```bash
    zip -r {application}.zip Procfile .ebextensions/{application}.jar

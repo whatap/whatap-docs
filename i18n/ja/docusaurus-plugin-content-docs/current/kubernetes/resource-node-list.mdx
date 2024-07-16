@@ -70,11 +70,13 @@ import K8slistcl from "../common-items/_k8s-list-cl.mdx";
 
 ## ノード詳細 {#nodedetails}
 
-**_ノード詳細_**画面は、上部の4つのチャートとノード内のコンテナ詳細情報で構成されています。
+**_ノード詳細_**画面は、上部の4つのチャートとノード内のコンテナの詳細情報で構成されています。ノードセレクタを通じて、照会を希望するノードを選択できます。
 
 <ImgLang img='k8s-resource-node-detail.png' desc='ノード詳細画面' />
 
 - トップチャート
+
+  次の4つのチャート情報を確認できます。
 
   - **_CPU Usage_**: ノードのCPU使用量を確認できます。
 
@@ -84,35 +86,39 @@ import K8slistcl from "../common-items/_k8s-list-cl.mdx";
 
   - **_Disk Usage_**: ノードのDisk使用量を確認することができます。 
 
-- コンテナ情報
+- コンテナの詳細情報 
 
-  | 項目                | 説明                                                |
-  | ----------------- | ------------------------------------------------- |
-  | 状態                | コンテナ状態                                            |
-  | コンテナ              | Container ID                                      |
-  | イメージ              | コンテナイメージ情報                                        |
-  | コマンド              | コンテナ実行コマンド                                        |
-  | アプリケーション          | コンテナにインストールされているWhaTap APMエージェントの名前               |
-  | Pod               | Pod名                                              |
-  | CpuByLimit        | CPU Limit基準CPUの全体使用率                              |
-  | MemoryWsByLimit   | コンテナメモリのLimit基準working set使用量                     |
-  | CpuThrottledCnt   | コンテナCPU Throttled数                                |
-  | CpuThrottledTime  | コンテナCPU Throttled時間                               |
-  | MemLimit          | コンテナのメモリLimitサイズ                                  |
-  | MemRequest        | コンテナのメモリRequestサイズ                                |
-  | MemWs             | コンテナのメモリworking set                               |
-  | IoReadBytes       | コンテナ全体ブロックデバイスの1秒当たり読み込んだバイトの合計                   |
-  | IoReadIops        | コンテナ全体ブロックデバイスの1秒当たり読み込んだ数の合計                     |
-  | IoWriteBytes      | コンテナ全体ブロックデバイスの1秒当たり書き込んだバイトの合計                   |
-  | IoWriteIops       | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                     |
-  | NetRxBytes        | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |
-  | NetRxDropped      | コンテナネットワーク受信dropped数                              |
-  | NetRxError        | コンテナのネットワーク受信エラー数                                 |
-  | NetRxIops         | コンテナのネットワーク受信数                                    |
-  | NetTxBytes        | コンテナのネットワーク送信データサイズ                               |
-  | NetTxDropped      | コンテナのネットワーク送信dropped数                             |
-  | NetTxError        | コンテナのネットワーク送信エラー数                                 |
-  | NetTxIops         | コンテナのネットワーク送信数                                    |
+  - ノード内のコンテナ詳細情報の上部で、`cpu_quota`、`cpu_request`、`cpu_total_milli`、`mem_limit`、`mem_request`、`mem_working_set`メトリクスの合計を確認できます。 
+
+  - コンテナの詳細情報は、次の内容を提供します。 
+
+    | 項目                | 説明                                                |
+    | ----------------- | ------------------------------------------------- |
+    | 状態                | コンテナ状態                                            |
+    | コンテナ              | Container ID                                      |
+    | イメージ              | コンテナイメージ情報                                        |
+    | コマンド              | コンテナ実行コマンド                                        |
+    | アプリケーション          | コンテナにインストールされているWhaTap APMエージェントの名前               |
+    | Pod               | Pod名                                              |
+    | CpuByLimit        | CPU Limit基準CPUの全体使用率                              |
+    | MemoryWsByLimit   | コンテナメモリのLimit基準working set使用量                     |
+    | CpuThrottledCnt   | コンテナCPU Throttled数                                |
+    | CpuThrottledTime  | コンテナCPU Throttled時間                               |
+    | MemLimit          | コンテナのメモリLimitサイズ                                  |
+    | MemRequest        | コンテナのメモリRequestサイズ                                |
+    | MemWs             | コンテナのメモリworking set                               |
+    | IoReadBytes       | コンテナ全体ブロックデバイスの1秒当たり読み込んだバイトの合計                   |
+    | IoReadIops        | コンテナ全体ブロックデバイスの1秒当たり読み込んだ数の合計                     |
+    | IoWriteBytes      | コンテナ全体ブロックデバイスの1秒当たり書き込んだバイトの合計                   |
+    | IoWriteIops       | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                     |
+    | NetRxBytes        | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |
+    | NetRxDropped      | コンテナネットワーク受信dropped数                              |
+    | NetRxError        | コンテナのネットワーク受信エラー数                                 |
+    | NetRxIops         | コンテナのネットワーク受信数                                    |
+    | NetTxBytes        | コンテナのネットワーク送信データサイズ                               |
+    | NetTxDropped      | コンテナのネットワーク送信dropped数                             |
+    | NetTxError        | コンテナのネットワーク送信エラー数                                 |
+    | NetTxIops         | コンテナのネットワーク送信数                                    |
 
 {/* ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
 

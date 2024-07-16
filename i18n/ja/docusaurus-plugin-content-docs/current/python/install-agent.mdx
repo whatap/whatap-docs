@@ -83,7 +83,7 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
 
     - [profile_sql_param_enabled](agent-dbsql#profile-sql-param)
 
-- _setup.py_: whatapディレクトリパッケージングのための定義ファイルです。
+- *setup.py*: whatapディレクトリパッケージングのための定義ファイルです。
 
 </details>
 
@@ -101,7 +101,7 @@ Dockerコンテナでサービスされるアプリケーションの場合、�
 
    :::note
 
-   _requirements.txt_を使用する場合は、当該ファイルに**whatap-python**を追加します。
+   *requirements.txt*を使用する場合は、当該ファイルに**whatap-python**を追加します。
 
    :::
 
@@ -160,7 +160,7 @@ $ cat $WHATAP_HOME/whatap.conf
 
 - WhaTapログのための_$WHATAP_HOME/logs_パスと下位ファイルの読み取りおよび書き込み権限
 
-`$$WHATAP_HOME`パスに関する権限の問題が発生した場合は、次のコマンドを実行して権限を付与します。
+`$WHATAP_HOME`パスに関する権限の問題が発生した場合は、次のコマンドを実行して権限を付与します。
 
 ```bash
 echo `sudo chmod -R 777 $WHATAP_HOME`

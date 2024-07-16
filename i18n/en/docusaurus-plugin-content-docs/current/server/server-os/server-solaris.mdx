@@ -1,0 +1,51 @@
+---
+id: server-solaris
+title: Oracle Solaris
+description: The following provides instructions for installing an agent in the Oracle Solaris environment.
+tags:
+  - Server
+  - Installation
+  - Solaris
+hide_table_of_contents: true
+draft: true
+---
+
+:::note 
+
+It is available in Oracle Solaris 11.2 or later.
+
+:::
+
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. You can also perform this through <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> of the project.
+
+<ImgLang img='server-install-oracle-solaris.png' desc='Server monitoring Solaris'/>
+
+After selecting ***Oracle Solaris*** on the operating system selection screen in <Cmdname sid="side_agentInstall" className="uitext" /> and confirming the project access key, proceed with the installation according to the following instructions.
+
+1. Execute the download command or download the installation file from the <Cmdname sid="TTL07853" className="uitext" /> tab. 
+
+   - Execute the following command to download the agent installation file. 
+
+   ```bash
+   wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz
+   ```
+
+   - Select _whatap_infra.zip_ to download the agent installation file.
+
+2. Go to the <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" /> tab, check the following command, and then run the package.
+
+   ```bash
+   tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz
+   pkgadd -d .
+   ```
+
+### Running the agent
+
+Execute the following command to start the server monitoring. When the application server runs, it begins collecting monitoring information. 
+
+```bash
+echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
+echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
+echo "createdtime=`date +%s%S`" |tee -a /usr/whatap/infra/conf/whatap.conf
+/etc/init.d/whatap-infra start
+```

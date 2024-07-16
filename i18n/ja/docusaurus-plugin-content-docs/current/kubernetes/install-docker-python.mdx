@@ -51,7 +51,7 @@ RUN pip3 install --upgrade whatap-python
 
 ## エージェントの設定及び実行
 
-アプリケーションを実行する前に、Pythonエージェントの作業ディレクトリを設定し、デフォルトの設定ファイルを作成します。設定ファイル(_entrypoint.sh_)を通じてエージェントに認証情報やログの追跡有無などを設定します。
+アプリケーションを実行する前に、Pythonエージェントの作業ディレクトリを設定し、デフォルトの設定ファイルを作成します。設定ファイル(*entrypoint.sh*)を通じてエージェントに認証情報やログの追跡有無などを設定します。
 
 <details>
 <summary>設定ファイル(entrypoint.sh)の例</summary>
@@ -131,7 +131,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ### スクリプト実行の例
 
-次のDockerfile定義の例を参照にしてください。_entrypoint.sh_スクリプトを実行する例です。
+次のDockerfile定義の例を参照にしてください。*entrypoint.sh*スクリプトを実行する例です。
 
 ```docker
 FROM python:3.10
@@ -148,7 +148,7 @@ CMD ["./entrypoint.sh"]
 
 ### 追加設定
 
-次の設定は、オプションとして必要な場合のみ使用してください。設定ファイル(_entrypoint.sh_)に次の追加設定の他にも、ログおよびトランザクション関連の設定が可能です。その他の追加設定に関しては、[次の文書](https://docs.whatap.io/python/set-agent)を参照にしてください。 
+次の設定は、オプションとして必要な場合のみ使用してください。設定ファイル(*entrypoint.sh*)に次の追加設定の他にも、ログおよびトランザクション関連の設定が可能です。その他の追加設定に関しては、[次の文書](https://docs.whatap.io/python/set-agent)を参照にしてください。 
 
 - **エージェントグループ化** 
 

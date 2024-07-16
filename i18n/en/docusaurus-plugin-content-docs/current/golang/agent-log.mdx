@@ -19,13 +19,7 @@ When the application server runs, it starts collecting the monitoring data. The 
 
 ## Setting the LogSink
 
-It is used to log data. See the following example.
-
-```ini title='whatap.conf'
-logsink_enabled=true
-logsink_zip_enabled=true
-logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
-```
+It is used to log data.
 
 ### Default settings
 
@@ -46,3 +40,27 @@ logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
 - **logsink.files** <span class='type'>String</span>
 
   You can set the full path and file name of the log file to be collected. To set multiple files, use comma (,) as the delimiter.
+
+### Example
+
+See the following example and then apply the agent settings for your environment.
+
+```ini title='whatap.conf'
+logsink_enabled=true
+logsink_zip_enabled=true
+logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
+```
+
+:::tip
+
+You can use any variable in date format in log file names. Apply it based on the use of the Python `strftime()`. 
+
+> e.g. 20240101: `%Y%m%d`
+
+```ini title="whatap.ini"
+whatap.logsink.files=/etc/httpd/logs/customlog-%Y%m%d
+```
+
+This function is supported in Go agent 0.3.2 or later. 
+
+:::

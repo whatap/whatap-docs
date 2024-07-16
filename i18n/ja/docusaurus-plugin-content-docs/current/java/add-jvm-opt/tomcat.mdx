@@ -15,7 +15,7 @@ Tomcatアプリケーションサーバー環境でJavaモニタリングエー�
 
 ### Linux
 
-_catalina.sh_ファイルの先頭に`JAVA_OPTS`環境変数を追加します。
+*catalina.sh*ファイルの先頭に`JAVA_OPTS`環境変数を追加します。
 
 ```bash title='{Tomcat_PATH}/bin/catalina.sh' showLineNumbers
 ########## WHATAP START ############
@@ -33,9 +33,9 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 ### Windows
 
-- _setup.bat_ファイルを実行した場合
+- *setup.bat*ファイルを実行した場合
 
-  _catalina.bat_ファイルの先頭に`JAVA_OPT`環境変数を追加します。
+  *catalina.bat*ファイルの先頭に`JAVA_OPT`環境変数を追加します。
 
   ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
   rem ########## WHATAP START ############

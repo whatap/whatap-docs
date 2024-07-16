@@ -1,0 +1,44 @@
+---
+id: agent-architecture
+title: Agent architecture
+description: The following introduces the Kubernetes agent architecture.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Agent
+  - Agent architecture
+---
+
+The WhaTap Kubernetes agent consists of master agent Pods and node agent Pods. The agent architecture is explained as follows.
+
+![Kubernetes agent architecture](/img/k8s-agent-archi.png)
+
+## WHATAP-NODE-AGENT POD
+
+WhaTap Node Agent Pods are distributed using the DaemonSet form. Accordingly, one Pod runs per node, and inside each Pod, there are two main containers:
+
+- **whatap-node-agent**
+
+  The whatap-node-agent container communicates with the kube-apiserver to collect metrics data about the workloads for each node. This information affects the metrics such as `kube_pod`, `container`, and `kube_pod_volume`.
+
+- **whatap-node-helper**
+
+  For the whatap-node-helper, the runtime-socket and root volume are mounted. Based on this, the node-helper collects resource usage data for the node and container(s).
+
+## WHATAP-MASTER-AGENT POD
+
+The WhaTap master agent Pods are released as deployments. By default, there is one master agent Pod in a cluster. Inside a Pod, the whatap-master-agent container is required.
+
+- **whatap-master-agent**
+
+  The whatap-master-agent container collects cluster-wide metrics data. It is responsible for delivering and synchronizing data that must be shared across all agent areas such as namespace projects, to each node agent. 
+
+- **whatap-control-plane**
+
+  The whatap-control-plane container collects metrics data for Kubernetes control plane nodes. Currently, it collects metrics data of the apiserver to identify the status of the apiserver and the number of requests. Additional functionality is required to use the control plane monitoring. For more information, see [the following](https://docs.whatap.io/kubernetes/kube-apiserver-dashboard).
+
+:::note 
+
+WhaTap Kubernetes Monitoring is scheduled to provide the multiplexing feature in the near future to run multiple master agent Pods simultaneously.
+
+:::

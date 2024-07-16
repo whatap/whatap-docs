@@ -4,7 +4,7 @@
 
 <ImgLang img='sql-parameter-query.png' desc='SQL' />
 
-<Xclude product='java'>
+<Xclude product='java,php,golang'>
 
 - <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは*`WHATAP_HOME`/paramkey.txt*ファイル内の6桁の文字列です。 別の文字列に変更できます。
 
@@ -18,11 +18,23 @@
 
 <InDoc product='java'>
 
-- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは*`WHATAP_HOME`/security.conf*(*paramkey.txt*)ファイル内の6桁の文字列です。 別の文字列に変更できます。
+- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは、*`WHATAP_HOME`/security.conf*ファイル内の6桁の文字列(`paramkey`)です。 別の文字列に変更できます。
 
   :::note
 
   <Cmdname sid="BTN06764" className="uitext" />はSQL変数の照会、HTTPクエリの照会、Threadの中止に必要です。 詳細については、[次の文書](install-agent#security)を参照してください。
+
+  :::
+
+</InDoc>
+
+<InDoc product='php,golang'>
+
+- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは、*`WHATAP_HOME`/security.conf*ファイル内の6桁の文字列(`paramkey`)です。 別の文字列に変更できます。
+
+  :::note
+
+  エージェントのバージョンによっては、パスワード設定ファイルが異なる場合があります。 *security.conf*ファイルまたは*paramkey.txt*ファイル内の文字列を変更します。
 
   :::
 
@@ -44,6 +56,20 @@ SQL変数とHTTPクエリを照会するには、次のオプションをエー�
 
 - HTTPパラメータ情報の記録に関するエージェント設定は、[次の文書](agent-transaction#profile_http_parameter)を参照にしてください。
 
+<InDoc product="php">
+
+```ini title='whatap.conf'
+# SQLパラメータ照会オプション:オプションが適用されるとSQLパラメータを暗号化して収集します。
+whatap.profile_sql_param_enabled=true 
+
+# HTTPパラメータ照会オプション: オプションが適用されると、HTTPクエリパラメータを暗号化して収集します。
+whatap.profile_http_parameter_enabled=true 
+```
+
+</InDoc>
+
+<Xclude product="php">
+
 ```ini title='whatap.conf'
 # SQLパラメータ照会オプション:オプションが適用されるとSQLパラメータを暗号化して収集します。
 profile_sql_param_enabled=true 
@@ -51,6 +77,8 @@ profile_sql_param_enabled=true
 # HTTPパラメータ照会オプション: オプションが適用されると、HTTPクエリパラメータを暗号化して収集します。
 profile_http_parameter_enabled=true 
 ```
+
+</Xclude>
 
 :::
 

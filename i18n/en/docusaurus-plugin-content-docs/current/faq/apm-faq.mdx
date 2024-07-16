@@ -53,9 +53,9 @@ In this case, forcible termination of the thread is not recommended because it m
 
 > In the transaction trace information, it is displayed as 'Lost Connection', and it is not possible to check the details of which process has been run and ended.
 
-In Application Monitoring for **PHP**, **Python**, **.NET**, and **Go** products, information on the transactions that have not been terminated within 5 minutes (default: `30000`) is not collected. The 'Lost Connection' message is left in the trace history. 
+In Application Monitoring for **PHP**, **Python**, **.NET**, and **Go** products, information on the transactions that have not been terminated within 5 minutes (default: `300000`) is not collected. The 'Lost Connection' message is left in the trace history. 
 
-To collect the trace data for transactions that are delayed more than 5 minutes, set the following option value to `30000` or higher.
+To collect the trace data for transactions that are delayed more than 5 minutes, set the following option value to `300000` or higher.
 
 ```ini title="whatap.ini"
 # PHP

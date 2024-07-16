@@ -10,9 +10,12 @@ tags:
 
 エージェントをインストールする前に、.NET Frameworkアプリケーションのサポート環境を確認してください。
 
-- **対応バージョン**：.NET Framework 4.5(4.61以降を推奨)
+- **対応バージョン**
 
-- **OS**：Windows Server2012以降
+  - .NET Framework 4.5 ~ 4.8 (4.61以降を推奨)
+  - .NET 6、7、8
+
+- **OS**: Windows Server 2008 R2以降
 
 - **アプリケーションサーバー**：IIS 8.0 以降
 
@@ -46,33 +49,11 @@ tags:
 
    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
 
-2. ![数字1](/img/number-01.png) **分析**(**Scan**)ボタンをクリックしてください。
+2. ![数字1](/img/number-01.png) **Caption**項目で、ウィンドウサーバーのバージョンが2008 R2以降であることを確認します。
 
-3. ![数字2](/img/number-02.png)領域でウィンドウサーバーのバージョンが2012以降であることを確認してください。
-
-4. ![数字3](/img/number-03.png)領域で**IIS 8.0**バージョン以降、**.NET Framework 4.5**バージョン以降であることを確認してください。
-
-   ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
-
-5. IISに設置されたサイトごとに**.NET Framework**バージョンがv4.0と表示されていることを確認してください。
-
-   ![](/img/apm-dotnet-analystic-env-03.png)
-
-   ![数字5](/img/number-05.png)の場合、_web.config_ファイルが見つかりません。ほとんどの場合、**.NET**を使用しないASP、PHPなどのサイトでは、エージェントが動作しません。
-
-:::note
-
-- **.NET Framework**は、4.8.1バージョン以降で対応しています。
-
-- **Core**または**.NET 5**以降のバージョンは対応していません。**.NET Core**バージョンは開発中です。
-
-:::
+3. ![数字2](/img/number-02.png) **IIS Version**, **.NET Framework Version**項目で**IIS 8.0**バージョン以降、**.NET Framework 4.5**バージョン以降であることを確認します。
 
 ### ユーザーのアプリケーションのバージョンを確認
-
-サーバーの環境が対応しているバージョンでも、ユーザーのアプリケーションが**.NET Framework**ではなく**.NET Core**バージョンで開発されている場合は、.NETモニタリングは対応しません。
-
-ユーザーのアプリケーションバージョンは、**IIS Manager**で以下のように確認できます。
 
 ![IIS Manager](/img/apm-dotnet-application-pool.png)
 

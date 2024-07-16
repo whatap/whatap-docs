@@ -38,7 +38,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
    $ npm install --save whatap
    ```
 
-2. _node_modules/whatap_パスから*whatap.conf*ファイルをコピーして、ソースコードのルート(root)パスに貼り付けます。
+2. *node_modules/whatap*パスの*whatap.conf*ファイルをコピーして、プロジェクトのルート(root)パス(*package.json*ファイルと同じ位置)に貼り付けます。
 
 3. [WhaTapモニタリングサービス](https://service.whatap.io) 画面に移動してください。
 
@@ -64,7 +64,7 @@ Node.jsモニタリングサービスを構成する各ファイルの役割は�
 
 - _README.md_：エージェントのインストールに関する手順書です。
 
-- _package.json_：npmモジュール環境構成ファイルです。
+- *package.json*：npmモジュール環境構成ファイルです。
 
 - _index.js_：main export宣言ファイルです。
 
@@ -82,7 +82,7 @@ Node.jsモニタリングサービスを構成する各ファイルの役割は�
 
 ## 活用方法
 
-アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加してください。例えばExpress.jsアプリケーションでは_app.js_または_server.js_ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、_main.ts_ファイルなどです。
+アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加してください。例えばExpress.jsアプリケーションでは*app.js*または*server.js*ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、*main.ts*ファイルなどです。
 
 ```javascript title='Javascript'
 var whatap = require('whatap').NodeAgent;
@@ -156,7 +156,7 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 ### デフォルトの環境変数設定
 
-PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(_app.js_)ファイルで設定する必要があります。*whatap.conf*ファイルは使用できません。
+PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(*app.js*)ファイルで設定する必要があります。*whatap.conf*ファイルは使用できません。
 
 アクセスキー(`WHATAP_LICENSE`)収集サーバーIP(`WHATAP_SERVER_HOST`)を環境変数として設定してください。
 

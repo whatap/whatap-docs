@@ -2,32 +2,43 @@
 id: billing
 title: 課金
 description: WhaTapモニタリングサービスを有料に切り替えて使用する方法を紹介します。
+toc_max_heading_level: 3
 tags:
   - 管理
   - 課金
 ---
 
+import CreditcardNotd from "../common-items/_billing-credit-card-note.mdx";
+
 WhaTap監視サービスの無料試用期間を過ぎた場合、またはサービスの無料利用基準を超えた場合は、決済情報を登録し、有料サービスに切り替える必要があります。
 
 ## 決済情報の登録 {#register-pay}
 
-お支払い方法は、カードの定期購入またはインボイス対応請求書の2種類からお選びいただけます。 決済を進める前に、次の事項を事前に確認してください。
+決済情報は、請求通貨の種類によって提供する方法が異なります。 決済情報を登録するユーザーは、<Cmdname sid="billing" className="b600" />権限を所有する必要があります。
 
-- **決済**権限アカウント
+決済を進める前に、次の事項を事前に準備します。
 
-- カード決済の場合、決済カード番号及び有効期限
+- **KRW**
 
-- インボイス、事業者登録証、請求書受取メールの発行の場合
+  - <Cmdname sid="payment_type_card_iamport" className="uitext" />: 支払うカード番号と有効期限
+  - <Cmdname sid="payment_type_banktransfer" className="uitext" />: 営業許可証、税金計算書の受信メール
+
+- **JPY**, **USD**
+
+  - <Cmdname sid="payment_type_card_stripe" className="uitext" />: 支払うカード番号と有効期限
+  - <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />: 請求書受信メール
 
 :::note
 
-**決済**権限の詳細については、[次の文書](../project/project-structure#project-auth)を参照してください。
+<Cmdname sid="billing" className="b600" />権限の詳細については、[次の文書](../project/project-structure#project-auth)を参照してください。
 
 :::
 
-### クレジットカード {#credit}
+### 決済手段の登録
 
-1. [WhaTapモニタリングサービス](https://service.whatap.io)で**決済**権限を持つアカウントでログインしてください。
+決済手段を初めて登録する場合は、次のステップを実行します。
+
+1. [WhaTapモニタリングサービス](https://service.whatap.io)で<Cmdname sid="billing" className="b600" />権限を持つアカウントでログインします。
 
 2. ホーム画面の右上のプロファイルアイコンを選択してください。
 
@@ -35,86 +46,71 @@ WhaTap監視サービスの無料試用期間を過ぎた場合、またはサ�
 
    <ImgLang img='billing-select-my-usage.png' desc='利用状況' />
 
-4. <Cmdname sid="payment_information" className="uitext" />ページへ移動すると、<Cmdname sid="register_billing_info" className="uitext" />ボタンをクリックしてください。
+4. <Cmdname sid="payment_information" className="uitext" />セクションで<Cmdname sid="register_billing_info" className="uitext" />ボタンを選択します。
 
-5. <Cmdname sid="register_billing_info" className="uitext" />ウィンドウが表示されたら、まず国を選択してください。
+5. 詳細項目を順番に設定します。 <span class="vslow">\*</span>表示は必須項目です。
 
-6. 会社名または法人名を入力してください。
+   <ImgLang img="billing-payment-information.png" desc="決済情報" />
 
-7. <Cmdname sid="phone" className="uitext" />と<Cmdname sid="TTL06768" className="uitext" />項目を確認し、必要に応じて変更してください。
+6. <Cmdname sid="payment_method" className="uitext" />項目でご希望の決済手段を登録します。
 
-8. 所属部署名を入力してください。 これは必須ではありません。
+   - [<Cmdname sid="payment_type_card_iamport" className="uitext" />](#payment_type_card_iamport)
+   - [<Cmdname sid="payment_type_banktransfer" className="uitext" />](#payment_type_banktransfer)
+   - [<Cmdname sid="payment_type_card_stripe" className="uitext" />](#payment_type_card_stripe)
+   - [<Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />](#payment_type_banktransfer_abroad)
 
-9. <Cmdname sid="next" className="uitext" />ボタンを選択してください。
+:::note
 
-#### 韓国内ユーザー {#inneruser}
+対応する決済通貨は<UI>KRW</UI>、<UI>JPY</UI>、<UI>USD</UI>です。 変更した通貨によって<Cmdname sid="payment_method" className="uitext" />が変更されます。
 
-1. 決済方法を<Cmdname sid="credit_card_iamport" className="uitext" />で選択し、<Cmdname sid="next" className="uitext" />ボタンを選択してください。
+:::
 
-2. クレジットカードのカード番号、有効期限、パスワードの最初の2桁の数字を順番に入力してください。 
+### クレジットカード(Nicepay) {#payment_type_card_iamport}
 
-3. <Cmdname sid="card_type" className="uitext" />項目で<Cmdname sid="corporation" className="uitext" />または<Cmdname sid="individual" className="uitext" />を選択してください。
+<Cmdname sid="payment_method" className="uitext" />項目で<Cmdname sid="payment_type_card_iamport" className="uitext" />を選択したら、次のステップを実行します。
+
+<ImgLang img="billing-add-payment-credit.png" desc="クレジットカード" />
+
+1. <Cmdname sid="register_billing_info" className="uitext" />画面が表示されるとクレジットカードのカード番号、有効期限、パスワードの最初の2桁の数字を順番に入力します。
+
+2. <Cmdname sid="card_type" className="uitext" />項目で<Cmdname sid="corporation" className="uitext" />または<Cmdname sid="individual" className="uitext" />を選択してください。
 
    - <Cmdname sid="corporation" className="uitext" />：法人カードで、カードに社名が入力されています。 組織識別番号と会社名を入力する必要があります。
    - <Cmdname sid="individual" className="uitext" />：個人カードで、カードにカード所有者の名前が入力されています。 会社から支給された場合でも、個人名が明記されていれば個人カードです。 生年月日を8桁で入力してください。
 
-4. カード情報の入力が完了したら、<Cmdname sid="bill_recipient_setting" className="uitext" />ボタンをクリックしてください。
-
-5. 請求書を受け取る担当者情報を順番に入力し、<Cmdname sid="complete" className="uitext" />ボタンをクリックしてください。
-
-:::note
-
-複数のメールで請求書を受信する場合は、メールアドレスにコンマ(,)を使用して複数入力できます。 例, a@whatap.io, b@whatap.io, c@whatap.io
-
-:::
-
-#### 韓国外ユーザー {#outteruser}
-
-1. 決済方法を<Cmdname sid="payment_type_card_stripe" className="uitext" />で選択し、<Cmdname sid="next" className="uitext" />ボタンを選択してください。
-
-2. クレジットカード所有者の名前とクレジットカード番号、有効期限、CVC番号を順番に入力してください。
-
 3. チェックされた約款情報を確認してください。
 
-4. カード情報の入力が完了したら、<Cmdname sid="bill_recipient_setting" className="uitext" />ボタンをクリックしてください。
+4. カード情報を全て入力したら、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 以前の画面に戻ります。
 
-5. 請求書を受け取る担当者情報を順番に入力し、<Cmdname sid="complete" className="uitext" />ボタンをクリックしてください。
+5. 請求書を受信する担当者情報を順番に入力し<Cmdname sid="save" className="uitext" />ボタンをクリックします。
 
-:::note
+<CreditcardNotd />
 
-複数のメールで請求書を受信する場合は、メールアドレスにコンマ(,)を使用して複数入力できます。 例, a@whatap.io, b@whatap.io, c@whatap.io
+### クレジットカード(Stripe) {#payment_type_card_stripe}
 
-:::
+<Cmdname sid="payment_method" className="uitext" />項目で<Cmdname sid="payment_type_card_stripe" className="uitext" />を選択したら、次のステップを実行します。
 
-### 税金計算書 {#taxinvoice}
+<ImgLang img="billing-add-payment-credit-stripe.png" desc="クレジットカード" />
 
-1. [WhaTapモニタリングサービス](https://service.whatap.io)で**決済**権限を持つアカウントでログインしてください。
+1. <Cmdname sid="register_billing_info" className="uitext" />画面が表示されるとクレジットカード所有者の名前とクレジットカード番号、有効期限、CVC番号を順番に入力します。
 
-2. ホーム画面の右上のプロファイルアイコンを選択してください。
+2. チェックされた約款情報を確認してください。
 
-3. ドロップダウンメニューが表示されたら<Cmdname sid="my_usage" className="uitext" />を選択します。
+3. カード情報を全て入力したら、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 以前の画面に戻ります。
 
-   <ImgLang img='billing-select-my-usage.png' desc='利用状況' />
+4. 請求書を受信する担当者情報を順番に入力し<Cmdname sid="save" className="uitext" />ボタンをクリックします。
 
-4. <Cmdname sid="payment_information" className="uitext" />ページへ移動すると、<Cmdname sid="register_billing_info" className="uitext" />ボタンをクリックしてください。
+<CreditcardNotd />
 
-5. <Cmdname sid="register_billing_info" className="uitext" />ウィンドウが表示されたら、まず国を選択してください。
+### 請求書発行 {#payment_type_banktransfer}
 
-6. 会社名または法人名を入力してください。
+<Cmdname sid="payment_method" className="uitext" />項目で<Cmdname sid="payment_type_banktransfer" className="uitext" />を選択したら、次のステップを実行します。
 
-7. <Cmdname sid="phone" className="uitext" />と<Cmdname sid="TTL06768" className="uitext" />項目を確認し、必要に応じて変更してください。
+<ImgLang img="billin-add-payment-tax.png" desc="請求書発行" />
 
-8. 所属部署名を入力してください。 これは必須ではありません。
+1. <Cmdname sid="register_billing_info" className="uitext" />画面が表示されたら、計算書の発行情報を入力します。
 
-9. <Cmdname sid="next" className="uitext" />ボタンを選択してください。
-
-#### 韓国内ユーザー {#inneruserinvoice}
-
-1. 決済方法を<Cmdname sid="payment_type_banktransfer" className="uitext" />で選択し、<Cmdname sid="next" className="uitext" />ボタンを選択してください。
-
-2. 請求書の発行情報を入力してください。
-
-   - 営業許可証に記載されている法人名、代表者名、事業者登録番号、電子請求書発行メールの順に入力してください。
+   - 営業許可証に記載されいるの代表者名、事業者登録番号、電子税金計算書発行メールなどを順に入力します。
 
    - 請求書の発行日は次のとおりです。
 
@@ -124,69 +120,159 @@ WhaTap監視サービスの無料試用期間を過ぎた場合、またはサ�
 
    - 必要に応じて、業種と業態を入力してください。
 
-3. 請求書の入力が終わりましたら、<Cmdname sid="bill_recipient_setting" className="uitext" />ボタンをクリックしてください。
+2. 計算書の発行情報をすべて入力したら、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 以前の画面に戻ります。
 
-4. 請求書を受け取る担当者情報を順番に入力し、<Cmdname sid="complete" className="uitext" />ボタンをクリックしてください。
+3. 請求書を受信する担当者情報を順番に入力し<Cmdname sid="save" className="uitext" />ボタンをクリックします。
 
-   <Cmdname sid="invoice_cc" className="uitext" />項目に受信するメールアドレスを追加できます。 2つ以上入力する場合は、コンマ(,)を区切り文字として使用してください。
+計算書の発行情報を完了すると、請求書の受信担当者にWhaTap Labsの営業許可証と通帳のコピーをメールで自動的に送信します。 メールの内容を確認した上で、billing@whatap.ioで営業許可証を返信してください。
 
 :::note
 
 - 組織識別番号を入力し<Cmdname sid="BTN06501" className="uitext" />ボタンをクリックして認証を進めてください。
 
-- 請求書の再発行を希望の場合は、billing@whatap.io までご連絡ください。
+- 複数のメールで請求書を受信する場合は、<Cmdname sid="invoice_cc" className="uitext" />項目にコンマ(,)で区切って複数のメールを入力します。 例：a@whatap.io,b@whatap.io,c@whatap.io
+
+- 税金請求書の再発行をご希望の場合は、billing@whatap.ioまでお問い合わせください。
 
 :::
 
-#### 韓国外ユーザー {#outteruserinvoice}
+### 請求書の発行 {#payment_type_banktransfer_abroad}
 
-1. 決済方法を<Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />で選択し、<Cmdname sid="next" className="uitext" />ボタンを選択してください。
+<Cmdname sid="payment_method" className="uitext" />項目で<Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />を選択したら、次のステップを実行します。
+
+<ImgLang img="billing-add-payment-tax-abroad.png" desc="請求書の発行" />
+
+1. <Cmdname sid="register_billing_info" className="uitext" />画面が表示されたら、請求書の送信情報を入力します。
 
 2. <Cmdname sid="TTL06687" className="uitext" />と<Cmdname sid="email" className="uitext" />項目を確認してください。 必要に応じて変更できます。
 
    <Cmdname sid="invoice_cc" className="uitext" />項目に受信するメールアドレスを追加できます。 2つ以上入力する場合は、コンマ(,)を区切り文字として使用してください。
 
-3. 請求書の発行日を選択してください。 基準は次のとおりです。
+3. <Cmdname sid="company_address" className="uitext" />項目を入力してください。
 
-   - <Cmdname sid="date.25" className="uitext" />：毎月25日に請求書を発行します。
+4. 請求書の発送情報をすべて入力したら、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 以前の画面に戻ります。
 
-   - <Cmdname sid="date.-1" className="uitext" />：毎月最終日を基準に請求書を発行します。
-
-   - <Cmdname sid="date.0" className="uitext" />：利用月を基準として、翌月1日に請求書を発行します。
-
-4. <Cmdname sid="company_address" className="uitext" />項目を入力してください。
-
-5. <Cmdname sid="BTN07117" className="uitext" />ボタンを選択してください。
-
-## 請求書受信メールアドレスの修正 {#editemail}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />
-
-<ImgLang img='invoice_mail_1.png' desc='決済アカウントの修正' />
-
-連絡先を変更し、請求先を変更する場合は、請求先アカウントを編集します。 
-
-<Cmdname sid="payment_information" className="uitext" />のうち***請求書受信情報***で、メールアドレスの右の<LinkImage img="ico-edit.svg" className='ico' /> <Cmdname sid="edit" className="uitext" />ボタンを選択してください。 <Cmdname sid="billing_info_edit" className="uitext" />ウィンドウが表示されたら、担当者情報(<Cmdname sid="invoice_name" className="uitext" />、<Cmdname sid="email" className="uitext" />、<Cmdname sid="invoice_cc" className="uitext" />)を順番に修正し、<Cmdname sid="registration" className="uitext" />ボタンをクリックしてください。
+5. すべてのプロセスが完了したら、<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 :::note
 
-複数のメールで請求書を受信する場合は、メールアドレスにコンマ(,)を使用して複数入力できます。 必ずカンマの間にスペースを入れずに入力してください 例：a@whatap.io,b@whatap.io,c@whatap.io
+- 請求書は毎月25日に発送します。
+
+- 複数のメールで請求書を受信する場合は、<Cmdname sid="invoice_cc" className="uitext" />項目にコンマ(,)で区切って複数のメールを入力します。 例：a@whatap.io,b@whatap.io,c@whatap.io
 
 :::
 
-## 税金計算書の受信メールアドレスの修正 {#editemail-tax}
+## 基本情報を修正する
 
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />
+決済情報を登録する際に設定した<Cmdname sid="TTL06080" className="uitext" />および<Cmdname sid="phone" className="uitext" />、<Cmdname sid="TTL06768" className="uitext" /> などの基本情報を修正できます。
 
-<ImgLang img='billing-edit-mail-tax.png' desc='電子税計算書勘定の編集' />
+1. ホーム画面の右上のプロファイルアイコンを選択してください。
 
-税金計算書の受信メールアドレスを変更するには、決済情報の中で**_決済手段_**情報を修正してください。 
+2. ドロップダウンメニューが表示されたら<Cmdname sid="my_usage" className="uitext" />を選択します。
 
-<Cmdname sid="payment_information" className="uitext" />のうち***決済手段***の右の<LinkImage img="ico-edit.svg" className='ico' /> <Cmdname sid="edit" className="uitext" />ボタンを選択してください。 <Cmdname sid="billing_info_edit" className="uitext" />ウィンドウが表示されたら***電子税金計算書発行メール***を修正して<Cmdname sid="registration" className="uitext" />ボタンを選択してください。
+3. <Cmdname sid="side_paymentInformation" className="uitext" />メニューの<Cmdname sid="TTL08029" className="uitext" />セクションで、![修正アイコン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />ボタンを選択します。
+
+4. 希望する項目を修正して<Cmdname sid="save" className="uitext" />ボタンを選択します。
+
+   <ImgLang img="billing-payment-basic.png" desc="基本情報" />
+
+:::note
+
+- <span class="vslow">*</span>表示は必須項目です。
+
+- 修正事項を保存しない場合は、<Cmdname sid="BTN06760" className="uitext" />ボタンを選択します。
+
+:::
+
+## 決済情報を修正する
+
+### 決済手段を変更する
+
+登録した決済手段または請求通貨を変更できます。
+
+1. ホーム画面の右上のプロファイルアイコンを選択してください。
+
+2. ドロップダウンメニューが表示されたら<Cmdname sid="my_usage" className="uitext" />を選択します。
+
+3. <Cmdname sid="side_paymentInformation" className="uitext" />メニューの<Cmdname sid="payment_information" className="uitext" />セッションで![修正アイオン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />ボタンを選択します。
+
+4. <Cmdname sid="invoice_currency" className="uitext" />または<Cmdname sid="payment_method" className="uitext" />項目を変更します。
+
+   - <Cmdname sid="invoice_currency" className="uitext" />項目を変更すると、決済手段のオプションが変更されます。
+
+   - 登録済みのクレジットカードを、他のカード情報に変更するには<Cmdname sid="BTN08031" className="uitext" />ボタンを選択します。
+
+     <ImgLang img="billing-edit-payment-info-credit.png" desc="再登録" />
+
+   - <Cmdname sid="payment_type_banktransfer" className="uitext" />または<Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />情報を変更するには、![修正アイコン](/img/ico-edit.svg)ボタンを選択します。
+
+     <ImgLang img="billing-edit-payment-info-tax.png" desc="修正" />
+
+   - 決済手段を、クレジットカードで<Cmdname sid="payment_type_banktransfer" className="uitext" />または<Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />に選択できます。
+
+5. <Cmdname sid="billing_info_edit" className="uitext" />画面が表示されたら、必要な情報を設定して<Cmdname sid="apply" className="uitext" />ボタンを選択します。 以前の画面に戻ります。
+
+6. <Cmdname sid="save" className="uitext" />ボタンを選択します。
+
+7. 決済情報の変更メッセージが表示されたら、内容を確認して<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+
+:::note
+
+- <span class="vslow">*</span>表示は必須項目です。
+
+- 決済手段を変更すると、以前に入力した情報は保存されません。
+
+- 修正事項を保存しない場合は、<Cmdname sid="BTN06760" className="uitext" />ボタンを選択します。
+
+:::
+
+### 税金計算書の受信メールアドレスの修正 {#editemail-tax}
+
+税金計算書の受信メールアドレスを変更するには、次の手順を実行します。
+
+1. ホーム画面の右上のプロファイルアイコンを選択してください。
+
+2. ドロップダウンメニューが表示されたら<Cmdname sid="my_usage" className="uitext" />を選択します。
+
+3. <Cmdname sid="side_paymentInformation" className="uitext" />メニューの<Cmdname sid="payment_information" className="uitext" />セッションで![修正アイオン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />ボタンを選択します。
+
+4. <Cmdname sid="payment_method" className="uitext" />の<Cmdname sid="payment_type_banktransfer" className="uitext" />右側にある![修正アイコン](/img/ico-edit.svg)ボタンを選択します。
+
+5. <Cmdname sid="billing_info_edit" className="uitext" />画面が表示されたら、<Cmdname sid="tax_bill_recipient_email" className="uitext" />項目を修正します。
+
+   <ImgLang img="billing-edit-mail-tax.png" desc="課金情報修正" />
+
+6. <Cmdname sid="apply" className="uitext" />ボタンを選択すると、以前の画面に戻ります。
+
+7. <Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 :::note 
 
-税金計算書の受信メールの場合、1つの受信者メールアドレスを指定できます。 
+税金計算書の受信メールの場合、1つの受信者メールアドレスを登録できます。 
+
+:::
+
+## 請求書の受信情報を修正する{#editemail}
+
+連絡先を変更し、請求先を変更する場合は、次の手順を実行します。
+
+1. ホーム画面の右上のプロファイルアイコンを選択してください。
+
+2. ドロップダウンメニューが表示されたら<Cmdname sid="my_usage" className="uitext" />を選択します。
+
+3. <Cmdname sid="side_paymentInformation" className="uitext" />メニューの<Cmdname sid="billing_reception_info" className="uitext" />セッションで![修正アイオン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />ボタンを選択します。
+
+4. 連絡先情報(<Cmdname sid="invoice_name" className="uitext" />, <Cmdname sid="email" className="uitext" />, <Cmdname sid="invoice_cc" className="uitext" />)を順番に修正します。
+
+5. 必要な情報をすべて入力した場合は、<Cmdname sid="save" className="uitext" />ボタンを選択します。
+
+:::note
+
+- <span class="vslow">*</span>表示は必須項目です。
+
+- 複数のメールで請求書を受信する場合は、<Cmdname sid="invoice_cc" className="uitext" />項目にコンマ(,)で区切って複数のメールを入力します。 例：a@whatap.io,b@whatap.io,c@whatap.io
+
+- 修正事項を保存しない場合は、<Cmdname sid="BTN06760" className="uitext" />ボタンを選択します。
 
 :::
 
@@ -217,36 +303,6 @@ WhaTap監視サービスの無料試用期間を過ぎた場合、またはサ�
 - 有料転換時点から7日以降のプロジェクトを削除できる<Cmdname sid="delete_project" className="uitext" />ボタンを提供します。
 
 :::
-
-## 決済情報の確認 {#checkpayinfo}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />
-
-<ImgLang img='credit_card_8.png' desc='決済情報' />
-
-ユーザーが登録した決済情報を確認できます。 <Cmdname sid="edit" className="uitext" />ボタンを選択して、別の決済手段に変更することができます。 決済情報登録の詳細については、[次の文書](#register-pay)を参照してください。
-
-請求書は毎月5営業日以内に発送され、実際の決済は25日に行われます。 25日までに入金を行う必要があります。
-
-## 請求通貨の変更 {#changecurrency}
-
-ユーザーが決済情報を登録する際、<Cmdname sid="TTL06080" className="uitext" />項目で選択した国によって請求金額の請求通貨が決まります。 
-
-<ImgLang img='billing-currency-change.png' desc='請求通貨変更' />
-
-1. <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />メニューに移動します。
-
-2. <Cmdname sid="payment_method" className="uitext" />項目から<Cmdname sid="edit" className="uitext" />ボタンを選択してください。
-
-3. <Cmdname sid="billing_info_edit" className="uitext" />ウィンドウが表示されると<Cmdname sid="change_payment_method" className="uitext" />、<Cmdname sid="TTL06690" className="uitext" />を順番に選択してください。
-
-4. <Cmdname sid="TTL06080" className="uitext" />項目から希望する国を選択してください。
-
-5. <Cmdname sid="next" className="uitext" />ボタンを順番に選択し、決済情報を入力してください。
-
-6. <Cmdname sid="BTN07117" className="uitext" />ボタンを選択してください。
-
-変更した請求通貨は、<Cmdname sid="projectSubscription" className="uitext" />、<Cmdname sid="paymentHistory" className="uitext" />、<Cmdname sid="billingPreview" className="uitext" />メニューからご確認いただけます。 
 
 ## 請求及び納付履歴 {#historybilling}
 
@@ -345,6 +401,6 @@ WhaTapモニタリングサービスは時間単位で課金します。 毎月�
 
 ## WhaTapモニタリングサービスの利用料金の計算方法 {#countbilling}
 
-WhaTapサービスは、後払い決済方法を導入しています。 毎月5営業日以内に前月利用金額の請求書を**決済**権限のあるアカウントのメールで受け取ることができます。 前月の利用期間は、1日から末日までの利用分です。 請求書は、アカウントに登録されている有料サービスのリストに基づいてアカウントごとに作成します。
+WhaTapサービスは、後払い決済方法を導入しています。 毎月5営業日以内に前月利用金額の請求書を<Cmdname sid="billing" className="b600" />権限のあるアカウントのメールで受信できます。 前月の利用期間は、1日から末日までの利用分です。 請求書は、アカウントに登録されている有料サービスのリストに基づいてアカウントごとに作成します。
 
 有料サービスを月の途中から加入した場合、利用した期間を日割り計算して請求します。

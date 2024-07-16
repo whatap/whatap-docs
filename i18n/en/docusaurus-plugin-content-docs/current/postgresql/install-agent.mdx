@@ -22,17 +22,10 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
 
-## Checking the configuration diagram
+{/* ## 구성도 확인 */}
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
-The DBX agent can be installed on a separate server or on the DB server. Select a method how to install the agent and check its configuration and firewall.
-
-<div class='db-agent'>
-
-|                   Install on a separate server                  |                   Install on the DB server                   |
-| :-------------------------------------------------------------: | :----------------------------------------------------------: |
-| <ImgLang img='dbx-install-agent-on-agent-server.png' desc='' /> | <ImgLang img='dbx-install-agent-on-db-server.png' desc='' /> |
-
-</div>
+<CheckType />
 
 {/* 모니터링용 계정 생성*/}
 import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
@@ -44,15 +37,15 @@ Assign additional roles depending on the features and operation environment.
 - PostgreSQL 10 or later
 
   ```sql title="SQL"
-  create user whatap with password 'DB Password'; 
-  grant pg_monitor to whatap;
+  create user DB_User with password 'DB Password'; 
+  grant pg_read_all_stats to DB_User;
   ```
 
 - Below PostgreSQL 10
 
   ```sql title="SQL"
-  create user whatap with password 'DB Password';
-  alter user whatap with superuser;
+  create user DB_User with password 'DB Password';
+  alter user DB_User with superuser;
   ```
 
 - In case of using the kill session
@@ -60,63 +53,60 @@ Assign additional roles depending on the features and operation environment.
   Database monitoring provides the <UI>Kill Session</UI> function that allows you to kill an active session. To use this function, set the role as follows:
 
   ```sql title="SQL"
-  grant pg_signal_backend to whatap;
+  alter user DB_User with superuser;
+  ```
+
+- In case of using the kill session in the AWS RDS environment
+
+  ```sql title="SQL"
+  grant rds_superuser to DB_User;
+  ```
+
+- In case of collecting wal_count
+
+  ```sql title="SQL"
+  grant execute on function pg_ls_dir(text) to DB_User;  # In case of use of EDB
+  alter user DB_User with superuser;
   ```
 
 - In case of collecting the cache
 
   ```sql title="SQL"
-  grant select on pg_backend_memory_contexts to whatap;
-  grant execute on function pg_get_backend_memory_contexts to whatap;
+  grant select on pg_backend_memory_contexts to DB_User;
+  grant execute on function pg_get_backend_memory_contexts to DB_User;
   ```
 
 - In case of collecting the table size
 
   ```sql title="SQL"
-  grant usage on schema {schema_name} to whatap;
+  grant usage on schema {schema_name} to DB_User;
   ```
 
 - In case of collecting the object information (<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbObjectInfo" className="uitext" />)
 
   ```sql title="SQL"
-  grant select on all tables in schema {schema_name} to whatap;
+  grant select on all tables in schema {schema_name} to DB_User;
   ```
 
+{/* 액세스 키 확인 */}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-## Downloading the DBX agent
+{/* DBX 에이전트 다운로드 */}
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
-Download the DBX agent file. Use the following two methods.
+<DownloadDBXagent />
 
-- You can download it by using the 'wget' command.
+{/* ## DBX 에이전트 설정 */}
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
 
-  ```bash title="BASH"
-  wget -O whatap.agent.database.tar.gz https://dev.whatap.io/download/agent/whata.agent.database.tar.gz
-  ```
+<SettingsDBXagent />
 
-- If you cannot download it with the command, select **_Download_** on the WhaTap monitoring service screen.
+{/* ### whatap.conf 설정 */}
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
 
-Download the DBX agent file and then unzip it.
-
-```bash title="BASH"
-tar -zxvf whatap.agent.database.tar.gz
-```
-
-## DBX Agent Setting
-
-Follow the instructions on the agent installation screen to configure the agent. By entering the required information for each item on the screen, the settings and commands can be automatically generated.
-
-:::tip
-
-You can quickly and easily configure the agent by running the _setup.sh_ file among the DBX agent configuration files. For more information, see <Link to="install-agent-quick-setup" target="_blank">the following</Link>.
-
-:::
-
-### whatap.conf configuration
-
-Go to the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+<Whatapconf />
 
 ```ini title='whatap.conf'
 license={AccessKey}
@@ -127,9 +117,10 @@ db_ip={DB_Server_IP}
 db_port={DB_Server_Port} 
 ```
 
-### Downloading JDBC
+{/* ### JDBC 다운로드 */}
+import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
-Download the JDBC driver that matches the operating system and version of the database server to the DBX agent path (`/unzipped folder/jdbc`) where you unzipped the file.
+<JDBCDownload />
 
 :::info
 
@@ -159,3 +150,8 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
+
+{/* ## 다음 단계 */}
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

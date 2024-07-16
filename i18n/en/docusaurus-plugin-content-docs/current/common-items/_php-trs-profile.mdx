@@ -46,7 +46,7 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   It sets whether or not to trace the `compile_file` and `compile_string` functions. The `compile_file` and `compile_string` functions (PHP internal functions) are compiled before executing the scripts. You can check the compile times for main, include, require, and autoload scripts, the script file paths, and the execution times.
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
@@ -60,7 +60,7 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   :::
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
@@ -68,7 +68,7 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   The user functions whose execution time exceeds the set value (default is `1 second`) of the `profile_method_time` can be found in the transaction details.
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
@@ -76,7 +76,7 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   Set the execution time for collected functions with the `whatap.profile_method_enabled` setting. 
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
@@ -84,15 +84,21 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   You can check the stack information of the user functions in transaction details.
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
   Default `false`
 
-  Set whether or not to trace the PHP internal function. Tracing is performed only when the function takes more than the `whatap.profile_internal_method_time` setting (Default: `1 second`). 
+  Set whether or not to trace the PHP internal function. Tracing is performed only when the function takes more than the `whatap.profile_internal_method_time` setting (Default: `1 second`).
 
-<Phprestartapply />
+  :::caution
+
+  This option allows to check all of PHP's built-in functions rather than custom functions, which may affect the performance.
+
+  :::
+
+  <Phprestartapply />
 
 - **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> {/* 두 개가 어떻게 다른지? 0309 수정완*/}
 
@@ -100,7 +106,7 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   Set the execution time of the function when tracing PHP internal functions (`whatap.profile_internal_method_enabled`). 
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
 
@@ -108,7 +114,7 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   Functional parameters are additionally collected when tracing PHP internal functions (`whatap.profile_internal_method_enabled`).
 
-<Phprestartapply />
+  <Phprestartapply />
 
 - **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
 
@@ -174,11 +180,11 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   If set at the same time, the priorities are as follows: 
 
-  1\. split
+  1. split
 
-  2\. large
+  2. large
 
-  3\. circular
+  3. circular
 
   :::
 
@@ -194,11 +200,11 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   - If set at the same time, the priorities are as follows: 
 
-    1\. split
+    1. split
 
-    2\. large
+    2. large
 
-    3\. circular
+    3. circular
 
   :::
 
@@ -212,11 +218,11 @@ import Phprestartapply from "./_php-restart-apply.mdx";
 
   If set at the same time, the priorities are as follows: 
 
-  1\. split
+  1. split
 
-  2\. large
+  2. large
 
-  3\. circular
+  3. circular
 
   :::
 

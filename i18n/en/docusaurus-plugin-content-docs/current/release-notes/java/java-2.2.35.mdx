@@ -1,0 +1,25 @@
+---
+id: java-2_2_35
+title: Java Agent v2.2.35
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_34
+displayed_sidebar: releaseSidebar
+---
+
+June 20, 2024
+
+- <Status>Feature</Status> Added the linked trace feature upon used of the WebClient in spring-boot-3.0.5 or later (spring-webflux-6.0.7 or later).
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-3.0
+  ```
+
+- <Status>Fixed</Status> Fixed the issue where calling a transaction through spring-cloud-gateway does not make access in spring-boot-2.5 or earlier.
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-2.1
+  ```
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.35" />

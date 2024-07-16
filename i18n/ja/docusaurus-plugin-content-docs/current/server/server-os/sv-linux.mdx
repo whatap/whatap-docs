@@ -1,26 +1,25 @@
 ---
 id: server-linux
-title: Linux及びUnix
-description: LinuxとUnix環境でWhaTapサーバーモニタリングエージェントをインストールする方法を説明します。
+title: Linux
+description: Linux環境でWhaTapサーバーモニタリングエージェントをインストールする方法を説明します。
 tags:
   - Server
   - インストール
   - Linux
-  - Unix
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-新規作成したサーバーモニタリングプロジェクトを選択すると、**_エージェントのインストール_**画面が表示されます。 プロジェクト**_管理_** >**_エージェントのインストール_**メニューから行うことができます。
+新規作成したサーバーモニタリングプロジェクトを選択すると、<Cmdname sid="side_agentInstall" className="uitext" />画面が表示されます。 プロジェクト<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューから行うことができます。
 
 <ImgLang img='server-install-lx-unx.png' desc='サーバーモニタリングLinux Unix'/>
 
-**_エージェントのインストール_**画面で希望するOSを選択し、プロジェクトのアクセスキーを確認したら、次の案内通りにインストールを進めてください。 
+<Cmdname sid="side_agentInstall" className="uitext" />画面で希望するOSを選択し、プロジェクトのアクセスキーを確認したら、次の案内通りにインストールを進めてください。
 
 1. WhaTap **リポジトリ**を登録します。  
 
-   **_WhaTapリポジトリの追加_**タブから該当するコマンドをコピーして入力します。
+   <Cmdname sid="server_installAgent_add_whatapRepo" className="uitext" />タブから該当するコマンドをコピーして入力します。
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
@@ -30,6 +29,19 @@ import TabItem from '@theme/TabItem';
    echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/" | sudo tee
    /etc/apt/sources.list.d/whatap.list
    sudo apt-get update
+   ```
+
+   </TabItem>
+   <TabItem value="suse" label="SUSE">
+
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/suse/release.gpg
+   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   sudo zypper refresh
    ```
 
    </TabItem>
@@ -55,40 +67,9 @@ import TabItem from '@theme/TabItem';
    </TabItem>
    </Tabs>
 
-   <Tabs>
-   <TabItem value="suse" label="SUSE">
-
-   ```bash title=SH
-   sudo rpm --import http://repo.whatap.io/suse/release.gpg
-   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-   sudo zypper refresh
-   ```
-
-   </TabItem>
-   <TabItem value="fb" label="FreeBSD">
-
-   ```bash title=SH
-   wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
-   ```
-
-   </TabItem>
-   <TabItem value="xs" label="XenServer">
-
-   ```bash title=SH
-   sudo rpm --import http://repo.whatap.io/centos/release.gpg
-   sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
-   ```
-
-   </TabItem>
-   </Tabs>
-
 2. 次のコマンドを使用して**パッケージ**をインストールしてください。
 
-   **_サーバーモニタリングパッケージのインストール_** タブで適切なコマンドをコピーして入力します。
+   <Cmdname sid="server_installAgent_installPackages" className="uitext" />タブで適切なコマンドをコピーして入力します。
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
@@ -105,15 +86,8 @@ import TabItem from '@theme/TabItem';
    ```
 
    </TabItem>
-   <TabItem value="fb" label="FreeBSD">
 
-   ```bash title=SH
-   pkg install whatap-infra.txz
-   ```
-
-   </TabItem>
-
-   <TabItem value="cax" label="CentOS / Amazon Linux / XenServer">
+   <TabItem value="cax" label="CentOS / Amazon Linux">
 
    ```bash title=SH
    sudo yum install whatap-infra
@@ -125,7 +99,7 @@ import TabItem from '@theme/TabItem';
 
 3. **設定スクリプト**を実行してください。
 
-   **_設定スクリプトを実行しサーバーモニターデモンを開始してください。_** タブに移動してコマンドを発行するか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加してください。
+   <Cmdname sid="server_installAgent_startMonitoring" className="uitext" />タブに移動してコマンドを発行するか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加してください。
 
    ```bash
    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/infra/conf/whatap.conf
@@ -155,4 +129,16 @@ import Svlfcpf from "../../common-items/_sv-lf-cpf.mdx";
     :::note
     에이전트에서 수집 서버로 **TCP 6600** 포트 접근이 가능해야 합니다.(TCP 아웃바운드)
     :::
+
+````
+<TabItem value="xs" label="XenServer">
+
+```bash title=SH
+sudo rpm --import http://repo.whatap.io/centos/release.gpg
+sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
+```
+
+</TabItem>
+````
+
 */}
