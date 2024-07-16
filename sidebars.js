@@ -2063,6 +2063,7 @@ const sidebars = {
                 'oracle-pro/set-event-format',
               ],
             },
+            'oracle-pro/labs'
           ]
         }
       ],
