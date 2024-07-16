@@ -25593,9 +25593,9 @@
     "service_id": "_03726"
   },
   "report_mail_desc": {
-    "en": "Report will be sent on 04~06 o'clock from tomorrow.",
-    "ja": "登録した翌日の04~06時にレポートが送信されます。",
-    "ko": "등록 다음날 부터 04~06시에 보고서가 발송됩니다.",
+    "en": "Report will be sent on (UTC+9) 04~06 o'clock from tomorrow.",
+    "ja": "登録した翌日の(UTC+9) 04~06時にレポートが送信されます。",
+    "ko": "등록 다음날 부터 (UTC+9) 04~06시에 보고서가 발송됩니다.",
     "zh": "Report will be sent on 04~06 o'clock from tomorrow.",
     "service_id": "_03727"
   },
@@ -54952,7 +54952,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55498,7 +55498,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55700,10 +55700,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56393,10 +56393,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IP形式に合わない。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56485,7 +56485,7 @@
   },
   "NTC08193": {
     "en": "This is the column name ({column}) used in the default column. Please enter a different name.",
-    "ja": "基本列で使用される列名（{column}）。別の名前を入力してください。",
+    "ja": "デフォルト列で使用される列名（{column}）。別の名前を入力してください。",
     "ko": "기본 컬럼에서 사용하는 컬럼 이름({column})입니다. 다른 이름을 입력하세요.",
     "zh": "This is the column name ({column}) used in the default column. Please enter a different name.",
     "service_id": "NTC08193"
@@ -56667,10 +56667,66 @@
   },
   "NTC08219": {
     "en": "A test message was requested to be sent to a mobile device.",
-    "ja": "テストメッセージをモバイル機器に送信するよう要求しました。",
+    "ja": "テストメッセージをモバイル機器に送信するよう依頼しました。",
     "ko": "테스트 메시지를 모바일 기기로 전송 요청 하였습니다.",
     "zh": "A test message was requested to be sent to a mobile device.",
     "service_id": "NTC08219"
+  },
+  "NTC08220": {
+    "en": "There is no registered URL.",
+    "ja": "登録したURLはありません。",
+    "ko": "등록한 URL이 없습니다.",
+    "zh": "There is no registered URL.",
+    "service_id": "NTC08220"
+  },
+  "NTC08221": {
+    "en": "<b>Click the ‘Add URL’</b> button to register the URL.",
+    "ja": "<b>'URL追加'</b>ボタンをクリックしてURLを登録してください。",
+    "ko": "<b>‘URL 추가하기’</b> 버튼을 클릭해서 URL을 등록하세요.",
+    "zh": "<b>Click the ‘Add URL’</b> button to register the URL.",
+    "service_id": "NTC08221"
+  },
+  "NTC08222": {
+    "en": "It takes approximately 1 minute to confirm the data for the first URL registered.",
+    "ja": "最初に登録したURLは、データの確認に約1分の時間がかかります。",
+    "ko": "처음 등록한 URL은 데이터 확인까지 약 1분의 시간이 소요됩니다.",
+    "zh": "It takes approximately 1 minute to confirm the data for the first URL registered.",
+    "service_id": "NTC08222"
+  },
+  "TTL08223": {
+    "en": "Master Agent",
+    "ja": "マスターエージェント",
+    "ko": "마스터 에이전트",
+    "zh": "Master Agent",
+    "service_id": "TTL08223"
+  },
+  "TTL08224": {
+    "en": "Node Agent",
+    "ja": "ノードエージェント",
+    "ko": "노드 에이전트",
+    "zh": "Node Agent",
+    "service_id": "TTL08224"
+  },
+  "LNK08225": {
+    "en": "Go to Kubernetes agent list",
+    "ja": "キューバネティスエージェントのリストに移動",
+    "ko": "쿠버네티스 에이전트 목록으로 이동",
+    "zh": "Go to Kubernetes agent list",
+    "service_id": "LNK08225"
+  },
+  "BTN08226": {
+    "en": "Bulk change",
+    "ja": "一括変更",
+    "ko": "일괄 변경",
+    "zh": "Bulk change",
+    "service_id": "BTN08226"
+  },
+  "DSC08227": {
+    "en": "Apply Widget",
+    "ja": "適用ウィジェット",
+    "ko": "적용 위젯",
+    "zh": "Apply Widget",
+    "service_id": "DSC08227"
   },
   "": {
     "en": "#VALUE!",
@@ -57629,6 +57685,11 @@
     "en": "Server List",
     "ja": "サーバーリスト",
     "ko": "서버 목록"
+  },
+  "side_serverInventory": {
+    "en": "Server Inventory",
+    "ja": "サーバー情報",
+    "ko": "서버 정보"
   },
   "side_serverCube": {
     "en": "Cube",
