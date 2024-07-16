@@ -15,10 +15,15 @@
   /* font-size: 0.9rem; */
   li > ul {
     list-style: none !important;
+    a {
+      padding-top: 3px;
+    }
   }
   li > div {
     font-size: 17px;
     font-weight: 500;
+    padding-top: 18px;
+    padding-bottom: 2px;
   }
 }
 
