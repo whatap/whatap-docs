@@ -1,5 +1,23 @@
 const svList = [
     {
+        "name": 'Service-2.5.x',
+        "date": '2024-06-25',
+        "url": 'https://img.whatap.io/24/07/01/011308service-25x.pdf',
+        "docs": '/release-notes/service/service-2_5_x'
+    },
+    {
+        "name": 'Service-2.4.x',
+        "date": '2024-05-08',
+        "url": 'https://content.whatap.io/24/06/03/054323service-24x.pdf',
+        "docs": '/release-notes/service/service-2_4_x'
+    },
+    {
+        "name": 'Service-2.3.x',
+        "date": '2024-03-24',
+        "url": 'https://content.whatap.io/24/05/03/040111service-23x.pdf',
+        "docs": '/release-notes/service/service-2_3_x'
+    },
+    {
         "name": 'Service-2.2.x',
         "date": '2024-03-22',
         "url": 'https://content.whatap.io/24/04/02/011012service-22x.pdf',
@@ -207,6 +225,36 @@ const svList = [
 ];
 
 const javaList = [
+    {
+        "name": 'Java-agent-v2.2.35',
+        "date": '2024-06-20',
+        "url": 'https://img.whatap.io/24/07/01/011308java-agent-v2235.pdf',
+        "docs": '/release-notes/java/java-2_2_35s',
+    },
+    {
+        "name": 'Java-agent-v2.2.34',
+        "date": '2024-06-14',
+        "url": 'https://img.whatap.io/24/07/01/011308java-agent-v2234.pdf',
+        "docs": '/release-notes/java/java-2_2_34',
+    },
+    {
+        "name": 'Java-agent-v2.2.33',
+        "date": '2024-05-28',
+        "url": 'https://content.whatap.io/24/06/03/054322java-agent-v2233.pdf',
+        "docs": '/release-notes/java/java-2_2_33',
+    },
+    {
+        "name": 'Java-agent-v2.2.32',
+        "date": '2024-04-16',
+        "url": 'https://content.whatap.io/24/05/03/040316java-agent-v2232.pdf',
+        "docs": '/release-notes/java/java-2_2_32',
+    },
+    {
+        "name": 'Java-agent-v2.2.31',
+        "date": '2024-04-03',
+        "url": 'https://content.whatap.io/24/05/03/040110java-agent-v2231.pdf',
+        "docs": '/release-notes/java/java-2_2_31',
+    },
     {
         "name": 'Java-agent-v2.2.30',
         "date": '2024-03-21',
@@ -454,6 +502,12 @@ const javaBatchList = [
 
 const phpList = [
     {
+        "name": 'php-agent-v2.8.0',
+        "date": '2024-06-19',
+        "url": 'https://img.whatap.io/24/07/01/011308php-agent-v280.pdf',
+        "docs": '/release-notes/php/php-2_8_0',
+    },
+    {
         "name": 'php-agent-v2.7.2',
         "date": '2024-03-06',
         "url": 'https://content.whatap.io/24/04/02/012058php-agent-v272.pdf',
@@ -547,6 +601,24 @@ const phpList = [
 
 const nodejsList = [
     {
+        "name": 'Node.js-agent-v0.4.97',
+        "date": '2024-06-03',
+        "url": 'https://content.whatap.io/24/06/03/054323nodejs-agent-v0497.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_97',
+    },
+    {
+        "name": 'Node.js-agent-v0.4.96',
+        "date": '2024-05-30',
+        "url": 'https://content.whatap.io/24/06/03/054323nodejs-agent-v0496.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_96',
+    },
+    {
+        "name": 'Node.js-agent-v0.4.95',
+        "date": '2024-04-29',
+        "url": 'https://content.whatap.io/24/05/03/040111nodejs-agent-v0495.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_95',
+    },
+    {
         "name": 'Node.js-agent-v0.4.94',
         "date": '2024-03-07',
         "url": 'https://content.whatap.io/24/04/02/011011nodejs-agent-v0494.pdf',
@@ -603,6 +675,30 @@ const nodejsList = [
 ]
 
 const pyList = [
+    {
+        "name": 'Python-agent-v1.6.6',
+        "date": '2024-06-07',
+        "url": 'https://img.whatap.io/24/07/01/011308python-agent-v166.pdf',
+        "docs": '/release-notes/python/python-1_6_6',
+    },
+    {
+        "name": 'Python-agent-v1.6.5',
+        "date": '2024-05-31',
+        "url": 'https://img.whatap.io/24/07/01/011308python-agent-v165.pdf',
+        "docs": '/release-notes/python/python-1_6_5',
+    },
+    {
+        "name": 'Python-agent-v1.6.4',
+        "date": '2024-05-14',
+        "url": 'https://content.whatap.io/24/06/03/054323python-agent-v164.pdf',
+        "docs": '/release-notes/python/python-1_6_4',
+    },
+    {
+        "name": 'Python-agent-v1.6.3',
+        "date": '2024-04-17',
+        "url": 'https://content.whatap.io/24/06/03/054323python-agent-v163.pdf',
+        "docs": '/release-notes/python/python-1_6_3',
+    },
     {
         "name": 'Python-agent-v1.6.2',
         "date": '2024-03-29',
@@ -793,6 +889,54 @@ const pyList = [
 
 const dotnetList = [
     {
+        "name": '.NET-agent-v2.2.8',
+        "date": '2024-06-19',
+        "url": 'https://img.whatap.io/24/07/01/011308dotnet-agent-v228.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_9',
+    },
+    {
+        "name": '.NET-agent-v2.2.7',
+        "date": '2024-06-10',
+        "url": 'https://img.whatap.io/24/07/01/011308dotnet-agent-v227.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_7',
+    },
+    {
+        "name": '.NET-agent-v2.2.6',
+        "date": '2024-05-24',
+        "url": 'https://content.whatap.io/24/06/03/054322dotnet-agent-v226.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_6',
+    },
+    {
+        "name": '.NET-agent-v2.2.5',
+        "date": '2024-05-08',
+        "url": 'https://content.whatap.io/24/06/03/054322dotnet-agent-v225.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_5',
+    },
+    {
+        "name": '.NET-agent-v2.2.4',
+        "date": '2024-04-30',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v224.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_4',
+    },
+    {
+        "name": '.NET-agent-v2.2.3',
+        "date": '2024-04-24',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v223.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_3',
+    },
+    {
+        "name": '.NET-agent-v2.2.2',
+        "date": '2024-04-18',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v222.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_2',
+    },
+    {
+        "name": '.NET-agent-v2.2.1',
+        "date": '2024-04-09',
+        "url": 'https://content.whatap.io/24/05/03/040110dotnet-agent-v221.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_1',
+    },
+    {
         "name": '.NET-agent-v2.2.0',
         "date": '2023-11-10',
         "url": 'https://content.whatap.io/24/02/01/065714dotnet-agent-v220.pdf',
@@ -922,6 +1066,12 @@ const dotnetList = [
 
 const goList = [
     {
+        "name": 'Go-agent-v0.4.0',
+        "date": '2024-06-19',
+        "url": 'https://img.whatap.io/24/07/01/011308go-agent-v040.pdf',
+        "docs": '/release-notes/golang/golang-0_4_0',
+    },
+    {
         "name": 'Go-agent-v0.3.3',
         "date": '2024-03-14',
         "url": 'https://content.whatap.io/24/04/02/011011Go-agent-v033.pdf',
@@ -1026,6 +1176,36 @@ const goList = [
 ];
 
 const serverList = [
+    {
+        "name": "Server-agent-v2.6.1",
+        "date": "2024-06-26",
+        "url": "https://img.whatap.io/24/07/01/011308server-agent-v261.pdf",
+        "docs": "/release-notes/server/server-2_6_1"
+    },
+    {
+        "name": "Server-agent-v2.6.0",
+        "date": "2024-06-18",
+        "url": "https://img.whatap.io/24/07/01/011308server-agent-v260.pdf",
+        "docs": "/release-notes/server/server-2_6_0"
+    },
+    {
+        "name": "Server-agent-v2.5.9",
+        "date": "2024-05-24",
+        "url": "https://content.whatap.io/24/06/03/054323server-agent-v259.pdf",
+        "docs": "/release-notes/server/server-2_5_9"
+    },
+    {
+        "name": "Server-agent-v2.5.8",
+        "date": "2024-05-21",
+        "url": "https://content.whatap.io/24/06/03/054323server-agent-v258.pdf",
+        "docs": "/release-notes/server/server-2_5_8"
+    },
+    {
+        "name": "Server-agent-v2.5.7",
+        "date": "2024-05-14",
+        "url": "https://content.whatap.io/24/06/03/054323server-agent-v257.pdf",
+        "docs": "/release-notes/server/server-2_5_7"
+    },
     {
         "name": "Server-agent-v2.5.5",
         "date": "2024-03-13",
@@ -1256,7 +1436,70 @@ const serverList = [
     }
 ];
 
+const serveraixList = [
+    {
+        "name": "Server-AIX-agent-v1.2.7",
+        "date": "2024-04-09",
+        "url": "https://img.whatap.io/24/07/01/011308server-aix-agent-v127.pdf",
+        "docs": "/release-notes/server/server-aix-1_2_7"
+    },
+]
+
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.7.5",
+        "date": "2024-06-18",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v175.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_5"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.4",
+        "date": "2024-06-07",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v174.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_4"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.3",
+        "date": "2024-06-04",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v173.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_3"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.2",
+        "date": "2024-06-02",
+        "url": "https://img.whatap.io/24/07/01/011308k8s-agent-v172.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_2"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.1",
+        "date": "2024-05-17",
+        "url": "https://content.whatap.io/24/06/03/054323k8s-agent-v171.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_1"
+    },
+    {
+        "name": "Kubernetes-agent-v1.7.0",
+        "date": "2024-05-13",
+        "url": "https://content.whatap.io/24/06/03/054323k8s-agent-v170.pdf",
+        "docs": "/release-notes/k8s/k8s-1_7_0"
+    },
+    {
+        "name": "Kubernetes-agent-v1.6.1",
+        "date": "2024-04-17",
+        "url": "https://content.whatap.io/24/05/03/040111k8s-agent-v161.pdf",
+        "docs": "/release-notes/k8s/k8s-1_6_1"
+    },
+    {
+        "name": "Kubernetes-agent-v1.6.0",
+        "date": "2024-04-05",
+        "url": "https://content.whatap.io/24/05/03/040111k8s-agent-v160.pdf",
+        "docs": "/release-notes/k8s/k8s-1_6_0"
+    },
+    {
+        "name": "Kubernetes-agent-v1.5.9",
+        "date": "2024-04-04",
+        "url": "https://content.whatap.io/24/05/03/040110k8s-agent-v159.pdf",
+        "docs": "/release-notes/k8s/k8s-1_5_9"
+    },
     {
         "name": "Kubernetes-agent-v1.5.8",
         "date": "2024-03-26",
@@ -1537,6 +1780,42 @@ const k8sList = [
 
 const dbxList = [
     {
+        "name": "DBX-agent-v1.7.6",
+        "date": "2024-05-20",
+        "url": "https://content.whatap.io/24/06/03/054322dbx-agent-v176.pdf",
+        "docs": "release-notes/db/dbx-1_7_6"
+    },
+    {
+        "name": "DBX-agent-v1.7.5",
+        "date": "2024-05-17",
+        "url": "https://content.whatap.io/24/06/03/054322dbx-agent-v175.pdf",
+        "docs": "release-notes/db/dbx-1_7_5"
+    },
+    {
+        "name": "DBX-agent-v1.7.4",
+        "date": "2024-05-16",
+        "url": "https://content.whatap.io/24/06/03/054322dbx-agent-v174.pdf",
+        "docs": "release-notes/db/dbx-1_7_4"
+    },
+    {
+        "name": "DBX-agent-v1.7.3",
+        "date": "2024-04-23",
+        "url": "https://content.whatap.io/24/06/03/054322dbx-agent-v173.pdf",
+        "docs": "release-notes/db/dbx-1_7_3"
+    },
+    {
+        "name": "DBX-agent-v1.7.2",
+        "date": "2024-03-29",
+        "url": "https://content.whatap.io/24/06/03/054322dbx-agent-v172.pdf",
+        "docs": "release-notes/db/dbx-1_7_2"
+    },
+    {
+        "name": "DBX-agent-v1.7.1",
+        "date": "2024-03-28",
+        "url": "https://content.whatap.io/24/06/03/054322dbx-agent-v171.pdf",
+        "docs": "release-notes/db/dbx-1_7_1"
+    },
+    {
         "name": "DBX-agent-v1.7.0",
         "date": "2024-03-25",
         "url": "https://content.whatap.io/24/04/02/011011dbx-agent-v170.pdf",
@@ -1799,7 +2078,21 @@ const xosList = [
     },
 ];
 
+const npmList = [
+    {
+        "name": "NPM-agent-v0.4.5",
+        "date": "2024-04-15",
+        "url": "https://content.whatap.io/24/05/03/040111npm-agent-v045.pdf",
+        "docs": "release-notes/npm/npm-v0_4_5"
+    },
+]
 const browserList = [
+    {
+        "name": "Browser-agent-v1.3.6",
+        "date": "2024-05-30",
+        "url": "https://content.whatap.io/24/06/03/054322browser-agent-v136.pdf",
+        "docs": "release-notes/browser/browser-v1_3_6"
+    },
     {
         "name": "Browser-agent-v1.3.5",
         "date": "2024-03-21",
@@ -1913,4 +2206,4 @@ const etcList = [
     },
 ];
 
-export {svList, javaList, javaBatchList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList, dbxList, xosList, browserList, etcList}
+export {svList, javaList, javaBatchList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList, dbxList, xosList, browserList, npmList, etcList, serveraixList}

@@ -1,0 +1,23 @@
+---
+id: java-2_2_32
+title: Java Agent v2.2.32
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_31
+displayed_sidebar: releaseSidebar
+---
+
+April 16, 2024
+
+- <Status>Feature</Status> When using the aws.mysql library, tracing the <code>executeBatchInternal</code> method has been added.
+
+  - <code>software.aws.rds.jdbc.mysql.shading.com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal</code>
+
+- <Status>Changed</Status> Modified to trace in Spring-boot-2.7.x to enable linked tracing even when you implemented the NettyRoutingFilter class.
+
+  - Class NettyRoutingFilter <code>org.springframework.cloud.gateway.filter.NettyRoutingFilter</code>
+
+- <Status>Deprecate</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_environmentVariable" className="uitext" />, stopped collecting the <code>jvm.uptime</code> data.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.32" />

@@ -1,36 +1,36 @@
 - **profile_step_normal_count** <span class='type'>Int</span>
 
-  デフォルト値 `1000`
+  既定値 `1000`
 
   トランザクショントレースの最大ステップ数を設定します。
 
 - **profile_step_heavy_count** <span class='type'>Int</span>
 
-  デフォルト値`1020`
+  既定値`1020`
 
   Heavyなステップの場合、トレースの基本ステップ数を超えても決められた値だけ記録します。
 
 - **profile_step_max_count** <span class='type'>Int</span>
 
-  デフォルト値 `1024`
+  既定値 `1024`
 
   トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後に収集されるステップはすべて破棄されます。`profile_step_heavy_count`を最大1000に設定すると、`profile_step_max_count`までアクティブスタックが収集されます。
 
 - **profile_step_heavy_time** <span class='type'>MiliSecond</span>
 
-  デフォルト値`100`
+  既定値`100`
 
   Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`の値を超えても、`profile_step_heavy_count`の設定値のみ記録します。
 
 - **active_stack_count** <span class='type'>Int</span>
 
-  デフォルト値`100`
+  既定値`100`
 
   トランザクション内で収集するアクティブスタックの最大数を設定します。
 
 - **profile_method_resource_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースからmethodステップを収集する場合は、そのステップで使用したCPUとメモリ使用量を追跡します。
 
@@ -40,31 +40,41 @@
 
 - **profile_position_depth** <span class='type'>Int</span>
 
-  デフォルト値`50`
+  既定値`50`
 
   position追跡のStackTraceを記録する場合、最大ライン数を設定します。
 
 - **trace_error_callstack_depth** <span class='type'>Int</span>
 
-  デフォルト値`50`
+  既定値`50`
 
   Error発生時に収集するStackTraceの最大ライン数を設定します。
 
 - **trace_active_callstack_depth** <span class='type'>Int</span>
 
-  デフォルト値`50`
+  既定値`50`
 
   アクティブスタックから収集するStackTraceの最大ライン数を設定します。
 
-{@include: ../common-items/_transaction-profile-active-color.mdx}
+import Transactionprofileactivecolor from "../common-items/_transaction-profile-active-color.mdx";
+
+<Transactionprofileactivecolor />
 
 - **hook_method_patterns** <span class='type'>String</span>
 
-  レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用することができます。対象が複数ある場合は、コンマ(,)で区切ります。
+  レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用できます。対象が複数ある場合は、コンマ(,)で区切ります。
 
   ```ini title='whatap.conf'
   hook_method_patterns=a.b.C1.*
   ```
+
+  :::note
+
+  - このオプションで登録したメソッドは、<Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で、Methodのステップで確認できます。
+
+  - なるべく小さい範囲に適用してください。広い範囲に適用すると、アプリケーションの性能が低下する恐れがあります。
+
+  :::
 
 - **hook_method_supers** <span class='type'>String</span>
 
@@ -84,31 +94,31 @@
 
 - **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
 
 - **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
 
 - **stacklog_socket_port** <span class='type'>TCP_PortNumber</span>
 
-  デフォルト値`0`
+  既定値`0`
 
   宛先のTCPポートを設定すると、Socket.connect()は、特定の時点でStackTraceをエージェントログとして記録します。基本設定で確認されていないDB接続、HTTPC接続などを追跡する場合に使用できます。
 
@@ -120,115 +130,8 @@
 
   :::
 
-## 例外処理{#exception}
+- **trace_concern_error_enabled** <span class='type'>Boolean</span>
 
-- **biz_exceptions** <span class='type'>String</span>
+  既定値 `true`
 
-  Business Exceptionを登録します。
-
-  :::tip
-
-  エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
-
-  :::
-
-  :::note
-
-  Javaエージェント[v2.2.20](../release-notes/java/java-2_2_20) 以降では、登録したビジネスExceptionをエラー統計で収集します。v2.2.20未満では、登録したビジネスExceptionをエラー統計から除外します。ただし、トレースの詳細では表示されます。
-
-  :::
-
-- **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
-
-  Business Exception発生時のイベント通知を抑制するBusiness ExceptionとStatusを設定します。このオプションで設定した**Business Exception:Status**の場合、イベントレベルが<span class="normal">INFO</span>に変更されます。Business ExceptionとStatusはコロン(:)で区分し、１つのBusiness Exceptionに複数のStatusが使用されている場合、アンパサンド(&)で区分します。コンマを区切り文字として使用して、複数を設定できます。
-
-  ```ini title='whatap.conf'
-  # example
-  biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
-  ```
-
-  :::tip
-
-  エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
-
-  :::
-
-- **ignore_exceptions** <span class='type'>String</span>
-
-  登録したExceptionのエラー自体を無視します。
-
-  :::tip
-
-  エラークラス無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
-
-  :::
-
-- **transaction_status_error_enable** <span class='type'>Boolean</span>
-
-  デフォルト値 `true`
-
-  正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
-
-- **status_ignore** <span class='type'>String</span>
-
-  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore=408,500
-  ```
-
-  :::tip
-
-  Statusエラー無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
-
-  :::
-
-- **status_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.STATUS_ERROR`を無視してください。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
-
-  ```ini title='whatap.conf'
-  # example
-  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-  ```
-
-  :::tip
-
-  Status エラーセット無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
-
-  :::
-
-- **httpc_status_error_enable** <span class='type'>Boolean</span>
-
-  デフォルト値 `true`
-
-  HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
-
-  :::note
-
-  HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
-
-  :::
-
-- **httpc_status_ignore** <span class='type'>String</span>
-
-  HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
-
-  :::tip
-
-  HTTPステータスエラーコード無視 / エラー統計を含まない
-
-  :::
-
-- **httpc_status_url_ignore_set** <span class='type'>String</span>
-
-  `whatap.error.HTTPC_ERROR`を無視してください。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
-
-  `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
-
-  :::tip
-
-  HTTPステータスエラーコード無視 / エラー統計を含まない
-
-  :::
+  `trace_basetime`または`profile_basetime`オプションに関係なく、エラーのある詳細なトレースの収集有無を設定します。

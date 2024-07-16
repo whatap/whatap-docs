@@ -54,17 +54,17 @@ You can flexibly grant different roles to different members for each project or 
 
 <div class='c5-3-5-avg'>
 
-| Role scheme              | Description                                                           |
-| ------------------------ | --------------------------------------------------------------------- |
-| View                     | Viewing a project                                                     |
-| Edit                     | Moving, modifying, and deleting an organization, group, or project    |
-| View Log                 | Log inquiry and access of log-related functions                       |
-| Log Edit                 | Editing the log settings                                              |
-| Project flexboard update | <Cmdname sid="flexboard" className="uitext" /> editing of the project |
-| Member Management        | Modifying member roles and adding or excluding members                |
-| Alert Reception          | Alert Reception                                                       |
-| Alert Config             | Alert Notification Setting                                            |
-| Billing                  | Charging the bill                                                     |
+| Role scheme                      | Description                                                                                                       |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| View                             | Viewing a project                                                                                                 |
+| Edit                             | Moving, modifying, and deleting an organization, group, project or maintenance plan                               |
+| View Log                         | Log inquiry and access of log-related functions                                                                   |
+| Log Edit                         | Editing the log settings                                                                                          |
+| Project flexboard update         | <Cmdname sid="flexboard" className="uitext" /> editing of the project                                             |
+| Member Management                | Modifying member roles and adding or excluding members                                                            |
+| Alert Reception                  | Alert Reception                                                                                                   |
+| Alert Config                     | Alert notification setting, maintenance plan, process grouping for the server product                             |
+| Billing                          | Charging the bill                                                                                                 |
 
 </div>
 
@@ -76,7 +76,19 @@ This role is granted to members by default when inviting them to an organization
 
 - You can modify the functions of the project. For example, you can add, modify, and delete <Cmdname sid="dashboard" className="uitext" />. 
 
-- You can move, modify, and delete settings of a group or project.
+- You can move, modify, and delete settings of a group or project. 
+
+- **_Maintenance plan_** can be registered, modified, or deleted.
+
+- Process grouping of the server product is available.
+
+:::note 
+
+- **_Maintenance plan_** settings require the **Edit** or **Alert settings** role. For more information about **_Maintenance plan_**, see [the following](../management/maintenance).
+
+- The process grouping feature of the Server product requires the **Edit** or **Alert settings** role. For more information about the grouping, see [the following](../server/server-detail-process-group).
+
+:::
 
 ### Member Management
 
@@ -92,7 +104,19 @@ This role is granted to members by default when inviting them to an organization
 
 ### Alert Config
 
-In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />, the alerts can be added, deleted, or modified. You can also manage other functions.
+- In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />, the alerts can be added, deleted, or modified. You can also manage other functions.
+
+- **_Maintenance plan_** can be registered, modified, or deleted.
+
+- Process grouping of the server product is available.
+
+:::note 
+
+- **_Maintenance plan_** settings require the **Edit** or **Alert settings** role. For more information about **_Maintenance plan_**, see [the following](../management/maintenance).
+
+- The process grouping feature of the Server product requires the **Edit** or **Alert settings** role. For more information about the grouping, see [the following](../server/server-detail-process-group).
+
+:::
 
 ### View Log
 

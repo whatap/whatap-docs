@@ -1,0 +1,23 @@
+---
+id: java-2_2_32
+title: Java Agent v2.2.32
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_31
+displayed_sidebar: releaseSidebar
+---
+
+2024年04月16日
+
+- <Status>Feature</Status> aws.mysqlライブラリを使用する場合、<code>executeBatchInternal</code>メソッドを追跡
+
+  - <code>software.aws.rds.jdbc.mysql.shading.com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal</code>
+
+- <Status>Changed</Status> Spring-boot-2.7.xで使用者がNettyRoutingFilterクラスを実装して使用する場合でも、連携追跡できるように修正
+
+  - Class NettyRoutingFilter <code>org.springframework.cloud.gateway.filter.NettyRoutingFilter</code>
+
+- <Status>Deprecate</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_environmentVariable" className="uitext" />メニューで<code>jvm.uptime</code>データ収集を中止
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.32" />

@@ -1,0 +1,23 @@
+---
+id: python-1_6_2
+title: Python Agent v1.6.2
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_6_1
+displayed_sidebar: releaseSidebar
+---
+
+March 29, 2024
+
+<Status>Feature</Status> Added the <code>exit_with_parent_process_enabled</code> option.
+
+- <b>exit_with_parent_process_enabled</b> <em>bool</em> <br/>
+
+  Default <code>false</code>
+
+  Set the value of the option through the <em>whatap.conf</em> file in the Python agent's <code>WHATAP_HOME</code> path. You can set whether or not to end the <code>whatap_python</code> process when the monitored Python process is terminated. If the option value is set to <code>true</code>, the <code>whatap_python</code> process ends together when the monitored application is terminated. It may take up to 1 minute. 
+
+:::note
+
+Agent download: [whatap-python v1.6.2](https://pypi.org/project/whatap-python/1.6.2/)
+
+:::

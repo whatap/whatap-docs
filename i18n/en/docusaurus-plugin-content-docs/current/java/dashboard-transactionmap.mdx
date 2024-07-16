@@ -1,7 +1,7 @@
 ---
 id: dashboard-transactionmap
 title: Transaction Map
-description: Transaction map is a chart that expresses the response time of each individual completed transaction in the form of distribution chart.
+description: In Java monitoring, the following explains the transaction map function, which provides visualization of response times of individual transactions in the form of distribution chart. Real-time and history data inquiry allows you to analyze transaction details that are useful for identifying and analyzing problems. Unlike hitmaps, it can display individual transactions for more detailed analysis.
 tags:
   - Java
   - Transaction Map
@@ -9,28 +9,56 @@ tags:
   - Application
 ---
 
-{@include: ../common-items/_dashboard-txmap-desc.mdx} 
+import Dashboardtxmapdesc from "../common-items/_dashboard-txmap-desc.mdx";
 
-<!-- 트레이스 분석하기-->
+<Dashboardtxmapdesc />
 
-{@include: ../common-items/_dashboard-txmap-analysis.mdx}
+{/* 트레이스 분석하기*/}
+import Dashboardtxmapanalysis from "../common-items/_dashboard-txmap-analysis.mdx";
 
-<!-- 조회 기준 변경하기-->
+<Dashboardtxmapanalysis />
 
-{@include: ../common-items/_dashboard-txmap-set-view.mdx}
+{/* 조회 기준 변경하기*/}
+import Dashboardtxmapsetview from "../common-items/_dashboard-txmap-set-view.mdx";
 
-<!-- 과거 데이터 조회하기-->
+<Dashboardtxmapsetview />
 
-{@include: ../common-items/_dashboard-txmap-view-past-time.mdx} 
+{/* 과거 데이터 조회하기*/}
+import Dashboardtxmapviewpasttime from "../common-items/_dashboard-txmap-view-past-time.mdx";
 
-<!-- 필터 적용하기-->
+<Dashboardtxmapviewpasttime />
 
-{@include: ../common-items/_dashboard-txmap-apply-filter.mdx}
+{/* 필터 적용하기*/}
+import Dashboardtxmapapplyfilter from "../common-items/_dashboard-txmap-apply-filter.mdx";
 
-<!-- 에이전트 확인하기-->
+<Dashboardtxmapapplyfilter />
 
-{@include: ../common-items/_apm-dashboard-check-agent.mdx}
+{/* 에이전트 확인하기*/}
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
 
-<!-- 상위 목록 확인하기-->
+<Apmdashboardcheckagent />
 
-{@include: ../common-items/_dashboard-txmap-top-list.mdx} 
+{/* 분류별 에이전트 모니터링*/}
+import Dashboardselectagentcategory from "../common-items/_dashboard-select-agent-category.mdx";
+
+<Dashboardselectagentcategory />
+
+{/* 에이전트 검색하기 */}
+import SearchAgent from "../common-items/_apm-dashboard-search-agent.mdx";
+
+<SearchAgent />
+
+{/* 상위 목록 확인하기*/}
+import Dashboardtxmaptoplist from "../common-items/_dashboard-txmap-top-list.mdx";
+
+<Dashboardtxmaptoplist />
+
+{/* 사용자 IP 주소 추가*/}
+import Dashboardtxmapcustomip from "../common-items/_dashboard-txmap-custom-ip.mdx";
+
+<Dashboardtxmapcustomip />
+
+{/* 커스텀 */}
+import Custom from "../common-items/_dashboard-txmap-custom.mdx";
+
+<Custom />

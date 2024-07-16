@@ -12,7 +12,9 @@ Home > Select Project > **_Dashboard_** > **_Page Load_**
 
 In the **_Page Load_** dashboard, you can monitor Core Web Vitals (CWV) related to page load and performance data such as resources and AJAX in real time. This can help you understand the factors that affect the web application experience and derive improvements.
 
-{@include: _dashboard-note.mdx}
+import Dashboardnote from "./_dashboard-note.mdx";
+
+<Dashboardnote />
 
 ## CWV-related widgets
 
@@ -28,7 +30,7 @@ Through the Google [Core Web Vitals Report](https://support.google.com/webmaster
 
 ### Average Largest contentful paint
 
-**Largest Contentful Paint (LCP)\*** reports the rendering time of the largest image or text block in the browser viewport based on the first page load. It is an important user-centric metric that allows you to measure page load times as perceived by end users. A fast LCP helps end users perceive that the page is available.
+**Largest Contentful Paint (LCP)** reports the rendering time of the largest image or text block in the browser viewport based on the first page load. It is an important user-centric metric that allows you to measure page load times as perceived by end users. A fast LCP helps end users perceive that the page is available.
 
 <ImgLang img='rum-lcp.png' desc='Avg Largest contentfull paint TopN' />
 

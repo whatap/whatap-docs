@@ -11,9 +11,11 @@ tags:
 import TR from '@site/src/components/TR';
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Role方式認証で安全かつ便利に使用できます。 
+WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリクスを定期的に収集します。収集対象のサービスに該当するCloudWatchネームスペースから5分間隔で必要なスタットを選択して収集します。モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Role方式認証で安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## チェックリスト
 
@@ -42,40 +44,47 @@ WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリッ�
 
 :::note
 
-インストール後の使用状況によっては、WhaTap料金とは別にクラウドで追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
+インストール後の使用状況によっては、WhaTap料金とは別にクラウドで追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/jp/cloudwatch/pricing/)で確認してください。
 
 :::
 
 ### 認証情報入力
 
-Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)は、直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。Role Assumeはアクセスキーの発行を必要としないため、安全で便利です。
+Role ARNを利用したインストール方法をサポートします。WhaTapのAWSアカウント(**911937781722**)は、直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。Role Assumeはアクセスキーの発行を必要としないため、安全かつ便利です。
 
 :::note
 
-Roleを使用して設定をお勧めします。 Access Keyの使用は、既存のAccess Keyのユーザーのみ可能です。
+Roleを利用する設定をお勧めします。Access Keyの使用は、既存のAccess Keyのユーザーのみ可能です。
 
 :::
 
-#### ロール(Role) 生成
+#### ロール(Role)生成
 
 <ImgLang img='cloudwatch-auth-role.png' desc='Amazon Cloudwatch - role' />
 
-1. AWS Management Consoleにログインし、IAMコンソールを開きます。
-2. コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。
-3. Select type of trusted entity(信頼されたエンティティタイプを選択)から Another AWS accountを選択してください。
-4. Account IDにWhaTapアカウントID**911937781722**を入力してください。ReadOnly Accessを選択して適用してください。
-5. Roleの名前と説明を入力します。「Create Role」ボタンをクリックしてSummary画面に切り替えてください。
-6. Maximum session duration項目の「Edit」ボタンをクリックして12時間に変更して保存してください。 
-7. **Role ARN**項目をコピーしてください。
-8. WhaTap**_管理_** > **_エージェントのインストール_** ページに戻り、**_Role_** **_ARN_**ウィンドウにコピーした**RoleARN**を貼り付け、**_確認_**ボタンをクリックしてください。
+1. AWS Management Consoleにログインしてから、IAMコンソールを開きてください。
+2. コンソールのダッシュボードでロールを選択し、「ロールを作成」を選択します。 
+3. 信頼されたエンティティタイプ(Select type of trusted entity)からAWSアカウントを選択します。 
+4. 別のAWSアカウントを選択し、アカウントIDにWhaTapのIDである**911937781722**を入力して、次へをクリックします。
+5. 絞り込みタイプから「AWS管理 - ジョブ機能」を選びます。 
+6. 表示されるリストから「ReadOnlyAccess」を選択して適用し、次へをクリックします。 
+7. ロール名と説明を入力し、「ロールを作成」ボタンをクリックします。 
+8. ロールのリストから作成したロールを選択し、概要(Summary)の編集ボタンをクリックします。 
+9. 最大セッション時間(Maximum session duration)を「12時間」に変更して保存します。 
+10. ロールの**ARN**項目をコピーします。
+11. WhaTap**_管理_** > **_エージェントのインストール_**ページに戻り、**_Role_**欄にコピーした**ARN**を貼り付け、**_確認_**ボタンをクリックします。
 
 ### ネームスペースおよび収集サイクルの選択
 
-{@include: ../common-items/_namespace-collect.mdx}
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />
 
 #### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### ネームスペース
 
@@ -184,7 +193,9 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 
 ### リージョン、メトリクス、統計を選択
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+<Regionmetricstats />
 
 <ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />
 
@@ -192,8 +203,8 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 
 <ImgLang img='amazon-cloudwatch-deact.png' desc='データ収集の無効化及びサービス初期化' />
 
-- ![指示線a](/img/char-a.svg)収集トグル![アイコン](/img/ic-toggle-off.svg)無効化した場合、データ収集が中止されます。
+- ![指示線a](/img/char-a.svg) 活性化トグル![アイコン](/img/ic-toggle-off.svg)がOFFの場合、データ収集が中止されます。
 
-- ![指示線b](/img/char-b.svg)**_役割(Role)の変更_**ボタンをクリックし、**_エージェントのインストール_**画面で![指示線c](/img/char-c.svg)**_サービスの初期化_**を選択すると、メトリクスを収集中のすべてのサービスを無効化します。
+- ![指示線b](/img/char-b.svg) **_ロール変更_**ボタンをクリックし、**_エージェント設定_**画面から![指示線c](/img/char-c.svg) **_サービス初期化_**を選択すると、すべてのメトリクス収集サービスが無効化されます。
 
-- 完全に費用発生を防止するためには、**AWS IAM**コンソールから**役割**(Role)を削除する必要があります。
+- データ収集により発生するすべての費用を防ぐためには、**AWS IAM**コンソールからWhaTapとの連携のため追加した**ロール**(Role)を削除してください。

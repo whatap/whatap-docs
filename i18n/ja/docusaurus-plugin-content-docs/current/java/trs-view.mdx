@@ -10,7 +10,9 @@ tags:
   - UI
 ---
 
-{@include: ../common-items/_trs-view.mdx}
+import Trsview from "../common-items/_trs-view.mdx";
+
+<Trsview />
 
 ## Javaエージェントの例外処理(**WARNING**) 基準{#java-agent-exception}
 
@@ -20,7 +22,7 @@ Java言語を使用するアプリケーション環境で発生するエラー�
 
 ![hitmap, Trace analysis](/img/faq/apm-faq-hitmap-error.png)
 
-<Cmdname sid="AA005" className="uitext" />ウィジェット、<Cmdname sid="TTL06209" className="uitext" />ウィンドウから確認できる<Cmdname sid="TTL06087" className="uitext" />は、大体<span class="slow">WARNING</span>レベルに該当します。
+<Cmdname sid="AA005" className="uitext" />ウィジェット、<Cmdname sid="TTL06209" className="uitext" />画面から確認できる<Cmdname sid="TTL06087" className="uitext" />は、殆ど<span class="slow">WARNING</span>レベルに該当します。
 
 ### Spring ExceptionHandler通過時のエラー処理
 
@@ -58,7 +60,7 @@ WhaTapモニタリングサービスでは、特定の条件に従ってエラ�
 
 :::note
 
-エージェント設定は、_whatap.conf_ファイルを編集するか<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで確認できます。詳しい内容は、[次の文書](../java/set-agent)を参考にしてください。
+エージェント設定は、*whatap.conf*ファイルを編集するか<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで確認できます。詳しい内容は、[次の文書](../java/set-agent)を参考にしてください。
 
 :::
 

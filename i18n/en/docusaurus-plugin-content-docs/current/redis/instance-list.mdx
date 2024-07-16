@@ -1,23 +1,31 @@
 ---
 id: instance-list
 title: Instance List
-description: You can see the list of database servers in which the agent has been installed.
+description: You can check the list of Redis database servers in which agents are installed.
 tags:
   - Redis
   - Instance
   - Dashboard
-  - Database Monitoring
+  - Database
 ---
 
-import Xclude from '@site/src/components/XcludeDoc.js';
-import ProdImg from '@site/src/components/ChangeImgName.js';
+import Dbinstancelistdesc from "../common-items/_db-instance-list-desc.mdx";
 
-{@include: ../common-items/_db-instance-list-desc.mdx}
+<Dbinstancelistdesc />
 
-<!-- ## 기본 화면 안내 -->
+{/* ## 기본 화면 안내 */}
+import Dbinstancelistbasicusage from "../common-items/_db-instance-list-basic-usage.mdx";
 
-{@include: ../common-items/_db-instance-list-basic-usage.mdx}
+<Dbinstancelistbasicusage />
 
-{@include: ../common-items/_db-comapre-instance-performance.mdx}
+import TipinstanceName from "../common-items/_db-instance-list-set-name-guide.mdx";
 
-{@include: ../common-items/_db-column-display-hide.mdx}
+<TipinstanceName />
+
+import Dbcomapreinstanceperformance from "../common-items/_db-comapre-instance-performance.mdx";
+
+<Dbcomapreinstanceperformance />
+
+import Dbcolumndisplayhide from "../common-items/_db-column-display-hide.mdx";
+
+<Dbcolumndisplayhide />

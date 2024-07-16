@@ -1,66 +1,114 @@
-ホーム画面 > プロジェクト選択 > <Cmdname sid="statistic" className="uitext" />
+ホーム画面> プロジェクト選択> <Cmdname sid="side_statistics" className="uitext" />
 
-WhaTapモニタリングサービスのメイン画面でプロジェクトを選択し<Cmdname sid="statistic" className="uitext" />の下位メニューを選択してください。WhaTapエージェントは、トランザクション情報やSQLなどの主要なトレース情報について統計情報を収集します。5分ごとに一覧を作成してサーバーに送信します。
+WhaTapモニタリングサービスのメイン画面でプロジェクトを選択し<Cmdname sid="side_statistics" className="uitext" />の下位メニューを選択します。WhaTapエージェントは、トランザクション情報やSQLなどの主要なトレース情報について統計情報を収集します。5分ごとに一覧を作成してサーバーに送信します。
 
 ## 基本画面ガイド
 
-<ImgLang img='analysis-apm-trs.png' desc='統計' />
+<Cmdname sid="time_selector" className="uitext" />および<Cmdname sid="filter" className="uitext" />, <Cmdname sid="order_by" className="uitext" />, <Cmdname sid="applications" className="uitext" />項目を設定した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
-- 各**_統計_**タブは、**_合計_**、**_最大_**および**_平均時間_**および**_件数_**による並べ替えオプションを提供し、任意の視点から上位リストを表示することができます。 
+<ImgLang img="apm-statistic-basic-operator.png" desc="統計" />
 
-- **_カラム選択_**ボタンを通じてデフォルト値の他に一覧内で照会するカラムを追加または除外できます。 
+- 各**統計**タブは、**合計**、**最大**、**平均時間**および**件数**による並べ替えオプションを提供し、任意の視点から上位リストを表示できます。 
 
-- **_統計_**一覧で![右矢印アイコン](/img/ic-caret-right.svg) **_矢印_**アイコンを選択すると、件数と平均時間チャートを確認できます。当該チャートで照会したい時点を選択すると**_トランザクション_**検索メニューに移動します。
+- <Cmdname sid="BTN06441" className="uitext" />ボタンて既定値の他に照会するカラムを追加または除外できます。
 
-- **_アプリケーション比較_**ボタンを選択すると、各アプリケーション間の**_呼び出し件数_**、**_レスポンス時間_**、**_エラー件数_**を比較してバランスを確認できます。
+- ![検索アイコン](/img/ico-btn-search.png)ボタンをタップすると、照会結果とともに照会リストの上に![CSVアイコン](/img/ic-csv-download-ms.svg)ボタンが表示されます。ボタンを選択すると、照会リストをCSV形式のファイルでダウンロードできます。
 
-## TX統計
+  :::tip
 
-トランザクション統計を収集します。5分ごとに最大5,000個のURLごとの実行統計を収集してサーバーに送信します。異なるURLの数が5分間で5,000個を超えた場合は無視されます。
+  統計照会の一覧が表示された後に照会条件を変更して、![検索アイコン](/img/ico-btn-search.png)ボタンを選択せずに![CSVアイコン](/img/ic-csv-download-ms.svg)ボタンをクリックすると、変更された条件でCSVファイルをダウンロードできます。
 
-| カラム                       | 説明                               |
-| ------------------------- | -------------------------------- |
-| トランザクション                  | トランザクションアドレス                     |
-| 件数                        | 実行件数                             |
-| エラー                       | 実行されたトランザクションのエラー発生件数            |
-| 平均時間 (ミリ秒)                | 応答時間の合計の平均                       |
-| 時間合計 (ミリ秒)                | 応答時間の合計                          |
-| 最大時間 (ミリ秒)                | 最大応答時間                           |
-| 平均CPU使用時間                 | CPU使用時間の平均                       |
-| HTTPC呼び出し件数               | HTTP Call件数                      |
-| 平均HTTP呼出し時間 (ミリ秒)         | HTTP Call時間の合計の平均                |
-| SQL件数                     | SQLの実行件数                         |
-| 平均SQL時間 (ミリ秒)             | 平均SQL実行時間                        |
-| SQLフェッチ                   | SQLパッチ件数                         |
-| 平均SQLフェッチ時間 (ミリ秒)         | SQLフェッチ時間の合計の平均                  |
+  :::
+
+- 統計リストから![詳細アイコン](/img/ico-detail-view.svg)<Cmdname sid="display_detail" className="uitext" />アイコンを選択すると、件数と平均時間チャートが確認できるし、エージェント間の件数およびエラー件数の比較、応答時間の比較チャートを追加で提供します。そのチャートで照会する時点を選択すると<Cmdname sid="side_txSearch" className="uitext" />メニューに移動します。
+
+- 統計リストで<code class="btn">T</code>ボタンを選択すると <Cmdname sid="top_stack_of_url" className="uitext" />メニューに移動します。
+
+- 統計リストで<code class="btn">U</code>ボタンを選択すると<Cmdname sid="unique_stack_url" className="uitext" />メニューに移動します。
 
 :::note
 
-**_平均メモリ割当量_**は、`trace_malloc_enabled=true`に設定すると収集されます。デフォルト値は`false`です。
+最大31日間のデータを照会できます。ただし、<Cmdname sid="side_statRemote" className="uitext" />メニューでは最大7日間のデータを照会できます。
+
+:::
+
+## TX統計
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_tx" className="uitext" />
+
+トランザクション統計を収集します。5分ごとに最大5,000個のURLごとの実行統計を収集してサーバーに送信します。異なるURLの数が5分間で5,000個を超えた場合は無視されます。
+
+| カラム                             | 説明                               |
+| ------------------------------- | -------------------------------- |
+| <Cmdname sid="TTL06918" />      | トランザクションアドレス                     |
+| <Cmdname sid="count" />         | 実行件数                             |
+| <Cmdname sid="error" />         | 実行されたトランザクションのエラー発生件数            |
+| <Cmdname sid="TTL06960" /> (ms) | 応答時間の合計の平均                       |
+| <Cmdname sid="TTL06963" /> (ms) | 応答時間の合計                          |
+| <Cmdname sid="TTL06961" /> (ms) | 最大応答時間                           |
+| <Cmdname sid="TTL06965" />      | CPU使用時間の平均                       |
+| <Cmdname sid="httpc_count" />   | HTTP Call件数                      |
+| <Cmdname sid="TTL06959" /> (ms) | HTTP Call時間の合計の平均                |
+| <Cmdname sid="TTL06097" />      | SQL実行件数                          |
+| <Cmdname sid="TTL06956" /> (ms) | 平均SQL実行時間                        |
+| <Cmdname sid="sqlFetch" />      | SQLパッチ件数                         |
+| <Cmdname sid="TTL06953" /> (ms) | SQLフェッチ時間の合計の平均                  |
+
+:::note
+
+<Xclude product="php">
+
+<Cmdname sid="TTL06975" className="uitext" />を収集するためには、エージェント設定(*whatap.conf*)に<code>trace_malloc_enabled=true</code>を追加する必要があります。該当オプションの既定値は<code>false</code>です。
+
+</Xclude>
+
+<InDoc product="php">
+
+<Cmdname sid="TTL06975" className="uitext" />を収集するためには、エージェント設定(*whatap.conf*)に<code>trace_malloc_enabled=true</code>を追加する必要があります。該当オプションの既定値は<code>false</code>です。
+
+</InDoc>
 
 :::
 
 ## トランザクションドメイン統計
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statDomain" className="uitext" />
+
 WhaTapエージェントは、ドメインごとのトランザクション統計を収集できます。1台のサーバーに複数のドメインを個別にサービスを提供するシステムでは、ドメインごとの分析が必要になる場合があります。次のオプションを設定してください。
+
+<Xclude product="php">
 
 ```ini title='whatap.conf'
 stat_domain_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini'
+whatap.stat_domain_enabled=true
+```
+
+</InDoc>
+
 収集されるデータは、ドメイン別のURLの処理状況を把握するために使用できます。
 
-| カラム            | 説明                               |
-| -------------- | -------------------------------- |
-| ドメイン           | サービスドメイン                         |
-| トランザクション       | トランザクションアドレス                     |
-| 件数             | 実行件数                             |
-| エラー            | 実行されたトランザクションのエラー発生件数            |
-| 平均時間 (ミリ秒)     | 応答時間の合計の平均                       |
+| カラム                          | 説明                               |
+| ---------------------------- | -------------------------------- |
+| <Cmdname sid="TTL06101" />   | サービスドメイン                         |
+| <Cmdname sid="TTL06918" />   | トランザクションアドレス                     |
+| <Cmdname sid="count" />      | 実行件数                             |
+| <Cmdname sid="error" />      | 実行されたトランザクションのエラー発生件数            |
+| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                       |
 
 ## TX Caller統計
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statCaller" className="uitext" />
+
 マルチサーバーがrestコールに接続されると**Caller**と**Callee**間の関連付けられた統計を収集できます。このデータを収集するには、次のオプションを設定してください。
+
+<Xclude product="php">
 
 ```ini title='whatap.conf'
 mtrace_rate=100
@@ -68,11 +116,26 @@ mtrace_spec=v1
 stat_mtrace_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini'
+whatap.mtrace_enabled=true 
+whatap.mtrace_rate=100
+whatap.mtrace_spec=v1
+whatap.stat_mtrace_enabled=true
+```
+
+</InDoc>
+
 ![msa-system](https://img.whatap.io/media/agent_java/data/msa.png)
 
 上記のアーキテクチャでは、**Caller & Callee**の統計情報は、api1、api2のみ表示することができます。ユーザーのブラウザから呼び出されるシステムでは、**Caller**統計を表示できません。
 
 ただし、**Caller**側のサーバーからデータを送信する必要があるため、すべてのサーバーに適切な設定を行う必要があります。
+
+<Xclude product="php">
 
 ```ini title='whatap.conf of [front]'
 mtrace_rate=100
@@ -85,100 +148,141 @@ mtrace_spec=v1
 stat_mtrace_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini of [front]'
+whatap.mtrace_rate=100
+whatap.mtrace_spec=v1
+whatap.stat_mtrace_enabled=true
+```
+
+```ini title='whatap.ini of [api1] & [api2]'
+whatap.mtrace_spec=v1
+whatap.stat_mtrace_enabled=true
+```
+
+</InDoc>
+
 収集される統計データは次のとおりです。**Callee**側で参照する必要があります。
 
-| カラム             | 説明                                        |
-| --------------- | ----------------------------------------- |
-| Caller Pcode    | Callerに対応するプロジェクトコード                      |
-| Caller Okind    | Callerに対応するエージェントが属するグループの単位              |
-| Caller URL      | Callerトランザクションのトランザクションアドレス               |
-| トランザクション        | Calleeトランザクションアドレス                        |
-| 件数              | 実行件数                                      |
-| エラー             | 実行されたトランザクションのエラー発生件数                     |
-| 平均時間 (ミリ秒)      | 応答時間の合計の平均                                |
+| カラム                           | 説明                                        |
+| ----------------------------- | ----------------------------------------- |
+| <Cmdname sid="callerPcode" /> | Callerに対応するプロジェクトコード                      |
+| <Cmdname sid="callerOkind" /> | Callerに対応するエージェントが属するグループの単位              |
+| <Cmdname sid="callerUrl" />   | Callerトランザクションのトランザクションアドレス               |
+| <Cmdname sid="transaction" /> | Calleeトランザクションアドレス                        |
+| <Cmdname sid="count" />       | 実行件数                                      |
+| <Cmdname sid="error" />       | 実行されたトランザクションのエラー発生件数                     |
+| <Cmdname sid="timeAvg_ms" />  | 応答時間の合計の平均                                |
 
 ## トランザクションReferer統計{#stat-referer}
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statReferer" className="uitext" />
+
 WhaTapエージェントは、Refererごとにトランザクション統計を収集できます。次のオプションを設定してください。
+
+<Xclude product="php">
 
 ```ini title='whatap.conf'
 stat_referer_enabled=true
 ```
 
+</Xclude>
+
+<InDoc product="php">
+
+```ini title='whatap.ini'
+whatap.stat_referer_enabled=true
+```
+
+</InDoc>
+
 収集されたデータは、Refer情報の統計を使用して確認できます。
 
-| カラム            | 説明                               |
-| -------------- | -------------------------------- |
-| リファラー          | Refererアドレス                      |
-| トランザクション       | トランザクションアドレス                     |
-| 件数             | 実行件数                             |
-| エラー            | 実行されたトランザクションのエラー発生件数            |
-| 平均時間 (ミリ秒)     | 応答時間の合計の平均                       |
+| カラム                          | 説明                               |
+| ---------------------------- | -------------------------------- |
+| <Cmdname sid="TTL06108" />   | Refererアドレス                      |
+| <Cmdname sid="TTL06918" />   | トランザクションアドレス                     |
+| <Cmdname sid="count" />      | 実行件数                             |
+| <Cmdname sid="error" />      | 実行されたトランザクションのエラー発生件数            |
+| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                       |
 
 ## エラー統計
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statError" className="uitext" />
+
 5分間に発生したサービスエラーに関する統計です。異なるエラーとトランザクション名をキーとして発生件数を収集します。エラー発生時点のスタックを提供します。5分あたり最大1,000個の異なるエラーを統計化します。
 
-| カラム      | 説明            |
-| -------- | ------------- |
-| クラス      | エラークラス        |
-| トランザクション | トランザクションアドレス  |
-| メッセージ    | エラーメッセージ      |
-| 件数       | エラー発生件数       |
+| カラム                        | 説明            |
+| -------------------------- | ------------- |
+| <Cmdname sid="class" />    | エラークラス        |
+| <Cmdname sid="TTL06918" /> | トランザクションアドレス  |
+| <Cmdname sid="msg" />      | エラーメッセージ      |
+| <Cmdname sid="count" />    | エラー発生件数       |
 
 ## SQL実行統計
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statSql" className="uitext" />
+
 5分間のSQL性能統計を収集します。5分間に異なるSQL文が最大5,000まで許可されます。Javaプロセスで制限を超えるSQLを検出すると、そのSQLは統計データから破棄されます。
 
-| カラム                 | 説明                                                 |
-| ------------------- | -------------------------------------------------- |
-| データベース              | データベース種類                                           |
-| SQL                 | SQLクエリ文                                            |
-| トランザクション            | SQLを呼び出したURLのいずれかを任意に収集した情報                        |
-| Crud Metrics (crud) | Create, Read, Update, Delete                       |
-| 件数                  | クエリ実行件数                                            |
-| エラー件数               | 実行されたクエリのエラー発生件数                                   |
-| 平均時間 (ミリ秒)          | クエリ実行時間の合計の平均                                      |
-| 時間合計 (ミリ秒)          | クエリ実行時間の合計                                         |
-| 標準偏差                | クエリ実行時間の標準偏差                                       |
+| カラム                             | 説明                                                 |
+| ------------------------------- | -------------------------------------------------- |
+| <Cmdname sid="db" />            | データベース種類                                           |
+| <Cmdname sid="sql" />           | SQLクエリ文                                            |
+| <Cmdname sid="TTL06918" />      | SQLを呼び出したURLのいずれかを任意に収集した情報                        |
+| CRUD                            | Create, Read, Update, Delete                       |
+| <Cmdname sid="countTotal" />    | クエリ実行件数                                            |
+| <Cmdname sid="countError" />    | 実行されたクエリのエラー発生件数                                   |
+| <Cmdname sid="TTL06960" /> (ms) | クエリ実行時間の合計の平均                                      |
+| <Cmdname sid="TTL06963" /> (ms) | クエリ実行時間の合計                                         |
+| <Cmdname sid="TTL06964" />      | クエリ実行時間の標準偏差                                       |
 
 :::info
 
-**_トランザクション_**は、5分間、SQLを呼び出したURL(最後の呼び出しURL)を分析利用のため収集します。
+<Cmdname sid="TTL06918" />は、5分間該当SQLを呼び出したURLから1つ(最後の呼び出しURL)を分析のため収集します。
 
 :::
 
 ## HTTP Call性能統計
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statHttpc" className="uitext" />
+
 HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケーション外部呼び出し統計を収集します。5分間、異なるHttp Call文章は最大5,000まで許可します。１つのアプリケーションプロセスで制限を超えた外部Http Callが発生する場合、統計データは捨てられます。
 
-| カラム                         | 説明                                                    |
-| --------------------------- | ----------------------------------------------------- |
-| <Cmdname sid="ITM07683" />  | HTTP呼び出しURLハッシュ(hash)                                 |
-| <Cmdname sid="TTL06918" />  | HTTP APIをリクエストしたURLのいずれかを任意に収集した情報                    |
-| ホスト                         | HostまたはIPアドレス                                         |
-| ポート番号                       | TCPポート                                                |
-| 合計                          | すべての実行件数                                              |
-| エラー                         | エラー発生件数                                               |
-| 平均時間 (ミリ秒)                  | 応答時間の合計の平均                                            |
-| 時間合計 (ミリ秒)                  | 応答時間の合計                                               |
-| 最小時間 (ミリ秒)                  | 最小応答時間                                                |
-| 最大時間 (ミリ秒)                  | 最大応答時間                                                |
+| カラム                          | 説明                                                                      |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| <Cmdname sid="ITM07683" />   | HTTP呼び出しURLハッシュ(hash)                                |
+| <Cmdname sid="TTL06918" />   | HTTP APIをリクエストしたURLのいずれかを任意に収集した情報                                      |
+| <Cmdname sid="host" />       | HostまたはIPアドレス                                                           |
+| <Cmdname sid="port" />       | TCPポート                                                                  |
+| <Cmdname sid="total" />      | すべての実行件数                                                                |
+| <Cmdname sid="error" />      | エラー発生件数                                                                 |
+| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                                                              |
+| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                                                                 |
+| <Cmdname sid="timeMin_ms" /> | 最小応答時間                                                                  |
+| <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                                  |
 
 ## クライアントIPリージョン別の呼び出し件数
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statRemote" className="uitext" />
+
 サーバーとクライアントの物理的距離は、データ送信時間に比例します。クライアントIPのリージョン別の呼び出し件数を統計的に収集します。5分当たりに収集できる異なるIP数は、インスタンスあたり最大70,000個です。
 
-| カラム      | 説明                 |
-| -------- | ------------------ |
-| IPアドレス   | クライアントのIPアドレス      |
-| 国/地域     | ユーザーの接続リージョン       |
-| 都市       | ユーザー接続都市           |
-| 件数       | 全体呼び出し件数           |
+| カラム                        | 説明                 |
+| -------------------------- | ------------------ |
+| <Cmdname sid="TTL06081" /> | クライアントのIPアドレス      |
+| <Cmdname sid="country" />  | ユーザーの接続リージョン       |
+| <Cmdname sid="city" />     | ユーザー接続都市           |
+| <Cmdname sid="count" />    | 全体呼び出し件数           |
 
-:::info
+:::note
 
-WhaTapは、クライアントに関する情報をデフォルトで保存します。ユーザーデータの収集に関するエージェント設定の詳細については、[次の文書](agent-number-of-user)を参考にしてください。
+- クライアントIPに関するデータは、最大7日間のデータを照会できます。
+
+- WhaTapは、クライアントに関する情報を保存します。ユーザーデータの収集に関するエージェント設定の詳細については、[次の文書](agent-number-of-user)を参考にしてください。
 
 :::
 
@@ -191,11 +295,26 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 ## ユーザエージェント別の呼び出し件数
 
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragentDetail" className="uitext" />
+
 ユーザーエージェント文字列のHashごとに呼び出し件数を収集します。5分ごとに収集できる異なるUser Agent Hashはインスタンス当たり最大500個です。
 
-| カラム           | 説明                               |
-| ------------- | -------------------------------- |
-| ユーザーエージェント    | ブラウザのユーザーエージェント情報                |
-| OS            | ブラウザが実行されるOS環境                   |
-| Webブラウザー      | ブラウザの種類                          |
-| 件数            | 収集された全体件数                        |
+| カラム                         | 説明                               |
+| --------------------------- | -------------------------------- |
+| <Cmdname sid="useragent" /> | ブラウザのユーザーエージェント情報                |
+| <Cmdname sid="os" />        | ブラウザが実行されるOS環境                   |
+| <Cmdname sid="browser" />   | ブラウザの種類                          |
+| <Cmdname sid="count" />     | 収集された全体件数                        |
+
+## クライアントブラウザの統計
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragent" className="uitext" />
+
+ユーザーエージェントの文字列を分析して、エンドユーザーが使用するブラウザーの種類、OS基準で集計した統計情報を提供します。収集した統計情報に基づいて作成されたパイチャートを通じて占有率を確認できます。
+
+| カラム                         | 説明                               |
+| --------------------------- | -------------------------------- |
+| <Cmdname sid="useragent" /> | ブラウザのユーザーエージェント情報                |
+| <Cmdname sid="os" />        | ブラウザが実行されるOS環境                   |
+| <Cmdname sid="browser" />   | ブラウザの種類                          |
+| <Cmdname sid="count" />     | 収集された全体件数                        |

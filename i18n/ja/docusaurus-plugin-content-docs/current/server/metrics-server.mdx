@@ -7,24 +7,26 @@ tags:
   - メトリクス
 ---
 
-<!-- 
+{/* 
 
-{@include: ../common-items/_metrics-index.mdx} 
+import Metricsindex from "../common-items/_metrics-index.mdx";
 
--->
+<Metricsindex />
+
+*/}
 
 サーバーモニタリングメトリクスについて次のように案内します。
 
 ## server_base
 
-* * *
+----
 
 サーバーリソースメトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags
+#### Tags {#server_base-tags}
 
 | タグ名       | 説明                   | 備考 |
 | --------- | -------------------- | -- |
@@ -34,7 +36,7 @@ tags:
 | okindName | サーバー種類名              | -  |
 | os        | OSタイプ linuxまたはwindow | -  |
 
-#### Fields
+#### Fields {#server_base-fields}
 
 | フィールド名               | 単位    | 説明                       | 備考     |
 | -------------------- | ----- | ------------------------ | ------ |
@@ -58,7 +60,7 @@ tags:
 | cpu_steal            | パーセント | CPU steal 使用率            | linux  |
 | cpu_sys              | パーセント | CPU system 使用率           | 共通     |
 | cpu_usr              | パーセント | CPU user 使用率             | 共通     |
-| epochtime            | 整数    | メトリックが収集された時間のepoch time | 共通     |
+| epochtime            | 整数    | メトリクスが収集された時間のepoch time | 共通     |
 | memory_available     | バイト   | メモリ available サイズ        | 共通     |
 | memory_buffers       | バイト   | メモリ buffers サイズ          | linux  |
 | memory_cached        | バイト   | メモリ cached サイズ           | 共通     |
@@ -80,14 +82,14 @@ tags:
 
 ## server_cpu_core
 
-* * *
+----
 
 サーバーCPUコア別メトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：-
 
-#### Tags
+#### Tags {#server_cpu_core-tags}
 
 | タグ名   | 説明                   | 備考 |
 | ----- | -------------------- | -- |
@@ -96,7 +98,7 @@ tags:
 | oname | サーバー名                | -  |
 | os    | OSタイプ linuxまたはwindow | -  |
 
-#### Fields
+#### Fields {#server_cpu_core-fields}
 
 | フィールド名               | 単位    | 説明                   | 備考     |
 | -------------------- | ----- | -------------------- | ------ |
@@ -115,14 +117,14 @@ tags:
 
 ## server_disk
 
-* * *
+----
 
 各サーバーにマウントされたファイルシステム別メトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags
+#### Tags {#server_disk-tags}
 
 | タグ名            | 説明                   | 備考 |
 | -------------- | -------------------- | -- |
@@ -134,7 +136,7 @@ tags:
 | oname          | サーバー名                | -  |
 | os             | OSタイプ linuxまたはwindow | -  |
 
-#### Fields
+#### Fields {#server_disk-fields}
 
 | フィールド名           | 単位    | 説明                                     | 備考    |
 | ---------------- | ----- | -------------------------------------- | ----- |
@@ -158,14 +160,14 @@ tags:
 
 ## server_network
 
-* * *
+----
 
 各サーバーのネットワークインターフェースのメトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags
+#### Tags {#server_network-tags}
 
 | タグ名      | 説明                   | 備考 |
 | -------- | -------------------- | -- |
@@ -176,7 +178,7 @@ tags:
 | oname    | サーバー名                | -  |
 | os       | OSタイプ linuxまたはwindow | -  |
 
-#### Fields
+#### Fields {#server_network-fields}
 
 | フィールド名         | 単位  | 説明            | 備考 |
 | -------------- | --- | ------------- | -- |
@@ -195,14 +197,14 @@ tags:
 
 ## server_netstat
 
-* * *
+----
 
 各サーバーごとのネットワークプロトコルの統計情報です。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags
+#### Tags {#server_netstat-tags}
 
 | タグ名                         | 説明                   | 備考 |
 | --------------------------- | -------------------- | -- |
@@ -221,7 +223,7 @@ tags:
 | whatap_product              | WhaTap製品タイプ          | -  |
 | whatap_version              | WhaTapエージェントバージョン    | -  |
 
-#### Fields
+#### Fields {#server_netstat-fields}
 
 | フィールド名                 | 単位 | 説明                     | 備考 |
 | ---------------------- | -- | ---------------------- | -- |
@@ -240,14 +242,14 @@ tags:
 
 ## server_process
 
-* * *
+----
 
 サーバープロセス情報です。
 
 - 収集間隔：20秒
 - 統計データ ：5分
 
-#### Tags
+#### Tags {#server_process-tags}
 
 | タグ名   | 説明                  | 備考 |
 | ----- | ------------------- | -- |
@@ -259,7 +261,7 @@ tags:
 | oname | サーバー名               | -  |
 | ユーザー  | プロセスを実行したLinuxユーザー名 | -  |
 
-#### Fields
+#### Fields {#server_process-fields}
 
 | フィールド名              | 単位    | 説明                     | 備考 |
 | ------------------- | ----- | ---------------------- | -- |

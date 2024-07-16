@@ -8,133 +8,133 @@ tags:
   - セキュリティ
 ---
 
-**マルチファクター認証**(**Multi-factor authentication, MFA**)は、2つ以上の認証手順を使用してユーザーを認証する方式です。 マルチファクター認証を使用して、アカウントとサービスに対するセキュリティを強化できます。
+**マルチファクター認証**(**Multi-factor authentication, MFA**)は、2つ以上の認証手順を使用してユーザーを認証する方式です。マルチファクター認証を使用して、アカウントとサービスに対するセキュリティを強化できます。
 
 ## マルチファクタ認証を設定する
 
-WhaTapモニタリングサービスは、マルチファクター認証方式で**_OTP_**や <Cmdname sid="email" className="uitext" />方式を提供します。 OTP方式を推奨します。
+WhaTapモニタリングサービスは、マルチファクター認証方式で**_OTP_**と <Cmdname sid="email" className="uitext" />方式を提供します。OTP方式を推奨します。
 
 :::note
 
-**_OTP_**とは？ **One Time Password**の呼称で固定されたパスワードでなく、ランダムに生成された一度のみ使用するパスワードの認証方式を意味します。
+**_OTP_**とは？**One Time Password**の呼称で固定されたパスワードではなく、ランダムに生成された一度のみ使用するパスワードの認証方式を意味します。
 
 :::
 
-次の手順に従って<Cmdname sid="MNU07360" className="uitext" />ページに移動し、マルチファクター認証を設定することができます
+次の手順に従って<Cmdname sid="MNU07360" className="uitext" />ページに移動し、マルチファクター認証を設定します。
 
-1. [WhaTapモニタリングサービス](https://service.whatap.io)にログインしてください。
+1. [WhaTapモニタリングサービス](https://service.whatap.io)にログインします。
 
-2. 画面右上のプロファイルアイコンを選択してください。ドロップダウンメニューが表示されます。
+2. 画面右上のプロフィールアイコンを選択すると、ドロップダウンメニューが表示されます。
 
-3. <Cmdname sid="MNU07360" className="uitext" />を選択してください。
+3. <Cmdname sid="MNU07360" className="uitext" />を選択します。
 
-4. ページを下にスクロールして、<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動してください。
+4. ページを下にスクロールして、<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動します。
 
    <ImgLang img='account-mfa-section.png' desc='マルチファクター認証' />
 
-<Link to="#otp"><span class="uitext">OTP</span></Link>または<Link to="#email"><Cmdname sid="email" /></Link>のいずれかの認証方法を選択してください。
+<Link to="#otp"><span class="uitext">OTP</span></Link>または<Link to="#email"><Cmdname sid="email" /></Link>のいずれかの認証方式を選択します。
 
 ## OTP認証{#otp}
 
-マルチファクター認証方式をOTPとして選択した場合は、モバイル端末にOTPアプリがインストールされている必要があります。
+マルチファクター認証方式をOTPに選択した場合は、モバイル端末にOTPアプリをインストールする必要があります。
 
 - Android：[Google OTP](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
 - iOS：[Google Authenticator](https://apps.apple.com/app/google-authenticator/id388497605)
 
 :::note
 
-WhaTapモバイルアプリを通じてOTP認証を進めることもできます。詳しい内容は[次の文書](../mobile-app#mobileotp)を参考にしてください。
+WhaTapモバイルアプリを通してもOTP認証が可能です。詳しい内容は[次の文書](../mobile-app#mobileotp)をご参考ください。
 
 :::
 
-### OTPベースのマルチファクター認証設定
+### OTPマルチファクター認証設定
 
 <ImgLang img='account-mfa-otp.png' desc='OTP 認証選択' />
 
-1. マルチファクター認証方式で<span class="uitext">OTP</span>を選択し、<Cmdname sid="create_otp_key" className="uitext" />を選択してください。
+1. マルチファクター認証方式で<span class="uitext">OTP</span>を選択し、<Cmdname sid="create_otp_key" className="uitext" />を選択します。
 
-2. <Cmdname sid="qr_code_url" className="uitext" />または<Cmdname sid="otp_key" className="uitext" />を選択し、モバイル端末のOTPアプリにキーを登録してください。
+2. <Cmdname sid="qr_code_url" className="uitext" />または<Cmdname sid="otp_key" className="uitext" />を選択し、モバイル端末のOTPアプリにキーを登録します。
 
-   - QRコードを使用する場合は、**_Scan a QR code_**を選択し、モバイル端末でQRコードをスキャンしてください。 (便宜上、QRコード方式の使用をお勧めします。)
+   - QRコードを使用する場合は、**_Scan a QR code_**を選択し、モバイル端末からQRコードをスキャンします。(簡単なQRコード方式をお勧めします。)
 
-   - OTPキーを使用する場合は、**_Enter a setup key_**を選択し、モバイル端末でユーザーアカウントとOTP キーを入力してください。
+   - OTPキーを使用する場合は、**_Enter a setup key_**を選択し、モバイル端末でユーザーアカウントとOTPキーを入力します。
 
    <ImgLang img='account-mfa-google.png' desc='Google OTPアプリ' />
 
-3. 発行されたOTPトークンを<Cmdname sid="BTN06501" className="uitext" />テキストボックスに入力してください。 
+3. 発行されたOTPトークンを<Cmdname sid="BTN06501" className="uitext" />テキストボックスに入力します。 
 
-4. <Cmdname sid="validate_otp_token" className="uitext" />ボタンを選択してください。
+4. <Cmdname sid="validate_otp_token" className="uitext" />ボタンを選択します。
 
-5. <Cmdname sid="TTL07396" className="uitext" />ウィンドウが表示されると<Cmdname sid="BTN07544" className="uitext" />ボタンを選択してダウンロードするか、コードをコピーして保存してください。
+5. <Cmdname sid="TTL07396" className="uitext" />が表示されると<Cmdname sid="BTN07544" className="uitext" />ボタンを選択してダウンロードするか、コードをコピーして保存します。
 
    :::note
 
-   復旧コードは、OTP認証手段を紛失した場合に備えて利用できるOTPキーの代替手段です。ダウンロードした回復コードファイル(_WhaTap-recovery-codes.txt_)を安全な場所に保存してください。
+   復旧コードは、OTP認証手段を紛失した場合に備えて利用できるOTPキーの代替手段です。ダウンロードした復旧コードファイル(*WhaTap-recovery-codes.txt*)を安全な場所に保存してください。
 
    :::
 
-<Cmdname sid="TTL07396" className="uitext" />ウィンドウを閉じると、OTPベースのマルチファクター設定を完了します。マルチファクター認証設定を確認するには、ログアウトした状態で再度ログインしてください。
+<Cmdname sid="TTL07396" className="uitext" />を閉じると、OTPマルチファクター設定を完了します。マルチファクター認証設定を確認するには、ログアウトした状態で再度ログインしてください。
 
 :::note
 
-OTP認証手段を紛失した際の復旧コードを利用したログイン方法は、[次の文書](#recoverycode)を参考にしてください。
+OTP認証手段を紛失した際の復旧コードを利用したログイン方法は、[次の文書](#recoverycode)をご参考ください。
 
 :::
 
-### OTPベースのマルチファクター認証を使用する
+### OTPマルチファクター認証を使用する
 
-1. [ログイン](https://service.whatap.io/account/login)ページでメールとパスワードを入力してログインしてください。
+1. [ログイン](https://service.whatap.io/account/login)ページでメールとパスワードを入力し、ログインします。
 
-2. マルチファクター認証画面が表示されたら、モバイル端末のOTPアプリでOTPキーを確認してください。
+2. マルチファクター認証画面が表示されたら、モバイル端末のOTPアプリからOTPキーを確認します。
 
-3. 発行されたOTPキーを入力し<Cmdname sid="authentication" className="uitext" />ボタンを選択してください。
+3. 発行されたOTPキーを入力し<Cmdname sid="authentication" className="uitext" />ボタンを選択します。
 
 OTPトークン検証に成功した場合、サービス画面にアクセスできます。
 
 ### 復旧コードを利用して認証する{#recoverycode}
 
-OTP認証手段を紛失した場合は、復旧コードを利用してログインすることができます。
+OTP認証手段を紛失した場合は、復旧コードを利用してログインできます。
 
-1. [ログイン](https://service.whatap.io/account/login)ページからログインしてください。
+1. [ログイン](https://service.whatap.io/account/login)ページからログインします。
 
-2. マルチファクター認証画面が表示されると<Cmdname sid="BTN07393" className="uitext" />を選択してください。
+2. マルチファクター認証画面が表示されると<Cmdname sid="BTN07393" className="uitext" />を選択します。
 
    <ImgLang img='account-mfa-recovery.png' desc='復旧コード' />
 
-3. ダウンロードした回復コードファイル(_WhaTap-recovery-codes.txt_)からコードを1つコピーして、回復コードの入力欄に貼り付けてください。
+3. ダウンロードした復旧コードファイル(*WhaTap-recovery-codes.txt*)からコードを1つコピーして、復旧コードの入力欄に貼り付けします。
 
-4. <Cmdname sid="authentication" className="uitext" />ボタンを選択してください。
+4. <Cmdname sid="authentication" className="uitext" />ボタンを選択します。
 
-<Cmdname sid="MNU07360" className="uitext" />メニューの<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動し、メールまたはOTP認証を実行してください。
+<Cmdname sid="MNU07360" className="uitext" />メニューの<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動し、メールまたはOTP認証を実行します。
 
 ## メールトークン認証{#email}
 
-### メールトークンによるのマルチファクター認証の設定
+### メールトークンマルチファクター認証の設定
 
 <ImgLang img='account-mfa-email.png' desc='メールトークン認証選択' />
 
-1. マルチファクター認証方式で<Cmdname sid="email" className="uitext" />を選択し、<Cmdname sid="send_auth_token_mail" className="uitext" />を選択してください。
+1. マルチファクター認証方式で<Cmdname sid="email" className="uitext" />を選択し、<Cmdname sid="send_auth_token_mail" className="uitext" />を選択します。
 
-2. メールでno-reply@whatap.ioから受信した認証トークン(Verification Code)を確認してください。 メールを受信できなかった場合は、迷惑メールフォルダを確認してください。
+2. メールでno-reply@whatap.ioから受信した認証トークン(Verification Code)を確認します。メールを受信できなかった場合は、迷惑メールフォルダを確認してください。
 
-3. 受信した認証トークンを<Cmdname sid="BTN06501" className="uitext" />テキストボックスに入力してください。 
+3. 受信した認証トークンを<Cmdname sid="BTN06501" className="uitext" />テキストボックスに入力します。 
 
-4. <Cmdname sid="validate_email_token" className="uitext" />ボタンを選択してください。
+4. <Cmdname sid="validate_email_token" className="uitext" />ボタンを選択します。
 
 メールベースのマルチファクター設定を完了しました。マルチファクター認証の設定を確認するには、サインアウト後に再度サインインしてください。
 
-### メールトークンベースのマルチファクター認証を使用
+### メールトークンマルチファクター認証を使用
 
-1. [ログイン](https://service.whatap.io/account/login)ページからログインしてください。
+1. [ログイン](https://service.whatap.io/account/login)ページからログインします。
 
-2. マルチファクター認証画面が表示されたら、メールで送信された認証コードを確認してください。
+2. マルチファクター認証画面が表示されたら、メールで受信された認証コードを確認してください。
 
-3. メールで受信した認証トークンを入力し<Cmdname sid="authentication" className="uitext" />ボタンを選択してください。
+3. メールで受信した認証トークンを入力し<Cmdname sid="authentication" className="uitext" />ボタンを選択します。
 
 メール認証トークンの検証に成功すると、サービス画面にアクセスできます。
 
-## MFAをクリアする
+## マルチファクター認証を解除
 
-<ImgLang img='account-mfa-disable.png' desc='MFAをクリアする' />
+<ImgLang img='account-mfa-disable.png' desc='マルチファクター認証解除' />
 
-マルチファクター認証を活性化した場合にのみ、マルチファクター認証の設定を解除できます。<Link to="https://service.whatap.io/v2/account/management"><Cmdname sid="MNU07360" /></Link> メニューの<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動した後<Cmdname sid="clear_otp_key" className="uitext" />または<Cmdname sid="clear_multi_factor" className="uitext" />ボタンを選択してください。
+マルチファクター認証を活性化した場合にのみ、マルチファクター認証を解除できます。<Link to="https://service.whatap.io/v2/account/management"><Cmdname sid="MNU07360" /></Link> メニューの<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動した後<Cmdname sid="clear_otp_key" className="uitext" />または<Cmdname sid="clear_multi_factor" className="uitext" />ボタンを選択します。

@@ -8,9 +8,11 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
-{@youtube: i8P8wrKgm40}
+<Agentsignupguide />
+
+<Youtube ko="i8P8wrKgm40" en="i8P8wrKgm40" ja="i8P8wrKgm40" />
 
 To use the Node.js monitoring service, the monitoring agent must be installed on the monitored application. For installation, use NPM (Node Package Manager).
 
@@ -20,9 +22,13 @@ To use the Node.js monitoring service, the monitoring agent must be installed on
 
 - Run the Node.js service again.
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+<Createprojectv2 />
+
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
 
 ## Download agent
 
@@ -32,7 +38,7 @@ To use the Node.js monitoring service, the monitoring agent must be installed on
    $ npm install --save whatap
    ```
 
-2. Copy the _whatap.conf_ file in the _node_modules/whatap_ path and then paste it into the root path of the source code.
+2. Copy the _whatap.conf_ file in the _node_modules/whatap_ path and then paste it into the root path of the project (same location as in the _package.json_ file).
 
 3. Go to the [WhaTap Monitoring Service](https://service.whatap.io).
 
@@ -63,6 +69,16 @@ The roles of each file that makes up the Node.js monitoring service are as follo
 - _index.js_: Main export declaration file
 
 </details>
+
+:::tip
+
+Server-side rendering (SSR) frameworks such as **Next.js** and **Nuxt.js** require the Custom Server settings for application monitoring. It requires an approach different from typical Node.js frameworks (e.g. Express.js, Nest.js). For more information, see the following:
+
+- [Agent installation in the Next.js environment](install-agent-nextjs)
+
+- [Agent installation in the Nuxt.js environment](install-agent-nuxtjs)
+
+:::
 
 ## Using
 

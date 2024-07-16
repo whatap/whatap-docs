@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に収集します。収集するサービスに該当するOracle Cloud Monitorネームスペースを5分間ごとの目的の統計を選択して収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Oracle Cloud APIの登録時に必要なssh公開キーを自動生成し、安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## モニタリング手順
 
@@ -50,10 +52,8 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
      > - Allow group `{グループ}` to read metrics in compartment `{コンパートメント}`
      > - Allow group `{グループ}` to inspect metrics in compartment `{コンパートメント}`
 
-5. Identity & Securityメニューの下のUsersを選択して、**User**を生成または選択してください。
+5. 右上のIdentityメニューでMy profileを選択してください。 
 
-   - Create Userを選択して、新規Userを生成するか、Userを選択してください。
-   - User Details画面で、3で選択したGroupにそのユーザーを追加してください。
    - 左下のAPI Keysを選択してください。
    - Add API Keyボタンを選択してください。
    - ラジオボタンのPaste Public Keyを選択し、2段階認証で受け取った**RSA Public Key**を入力してください。
@@ -67,11 +67,15 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 ### ネームスペースおよび収集サイクルの選択
 
-{@include: ../common-items/_namespace-collect.mdx}  
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />
 
 #### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### ネームスペース
 
@@ -124,7 +128,9 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 ### リージョン、メトリクス、統計を選択
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+<Regionmetricstats />
 
 <ImgLang img='oci_region.png' desc='Oracle Cloud Monitor - Region, Metric, Stats' />
 
@@ -132,9 +138,9 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 <ImgLang img='cloud-deact.png' desc='비활성화 및 서비스 초기화 sc' />
 
-- ![指示線a](/img/char-a.svg)収集トグル![アイコン](/img/ic-toggle-off.svg)無効化した場合、データ収集が中止されます。
+- ![指示線a](/img/char-a.svg) 活性化トグル![アイコン](/img/ic-toggle-off.svg)がOFFの場合、データ収集が中止されます。
 
-- ![指示線b](/img/char-b.svg)**_役割(Role)の変更_**ボタンをクリックし、**_エージェントのインストール_**画面で![指示線c](/img/char-c.svg)**_サービスの初期化_**を選択すると、メトリクスを収集中のすべてのサービスを無効化します。
+- ![指示線b](/img/char-b.svg) **_ロール変更_**ボタンをクリックし、**_エージェント設定_**画面から![指示線c](/img/char-c.svg) **_サービス初期化_**を選択すると、すべてのメトリクス収集サービスが無効化されます。
 
 - 完全なコスト発生を防ぐためには、以下を取り除く必要があります。 
 

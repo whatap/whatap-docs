@@ -1,19 +1,21 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
+const {rehypeExtendedTable} = require("rehype-extended-table");
+// const rehypeSectionHeadings = require("rehype-section-headings");
 
 /** @type {import('@docusaurus/types').Config} */
 
-// const config = {
-module.exports = Promise.resolve({
+const config = {
   title: 'WhaTap Docs',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   baseUrl: '/',
-  onBrokenLinks: 'log',
+  onBrokenLinks: 'ignore',
+  onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
   favicon: '/img/whatap-favicon.ico',
@@ -60,20 +62,7 @@ module.exports = Promise.resolve({
       '@docusaurus/plugin-client-redirects',
       {
         // fromExtensions: ['html', 'htm'],
-        redirects: [
-          {
-            to: '/java/introduction',
-            from: '/apm/java/apm-introduction'
-          },
-          {
-            to: '/java/introduction',
-            from: '/apm/java-intro'
-          },
-          {
-            to: '/server/introduction',
-            from: '/server/server-intro'
-          },
-        ],
+        redirects: [],
       }
     ],
     [
@@ -90,32 +79,21 @@ module.exports = Promise.resolve({
       },
     ],
     [
-      '@whatap-docs/docusaurus-plugin-includes',
-      {
-        embeds: [
-          {
-            key: 'youtube',
-            embedFunction: function(code) {
-              return '<div class="video-container"><iframe width="800" height="500" type="text/html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/' + code + '"></iframe></div>'
-            }      
-          },
-          {
-            key: 'video',
-            embedFunction: function(code) {
-              return '<div class="video-container"><video type="video/mp4" autoplay="true" loop="true" muted="true" width="100%" height="auto" class="p-video"><source src="'+ code + '"/></video></div>'
-            }
-          }
-        ]
-      }
-    ],
-    [
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
   markdown: {
     mermaid: true,
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    '@saucelabs/theme-github-codeblock'
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -125,16 +103,29 @@ module.exports = Promise.resolve({
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          rehypePlugins: [rehypeTableMerge],
+          rehypePlugins: [ rehypeExtendedTable ],
+          remarkPlugins: [ require("@whatap-docs/remark-sectionize") ],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
-          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
+          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx', 'release-notes/otel/*.mdx' ],
         },
-        blog: false,
+        // blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl: 
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: '새로운 기능',
+          blogSidebarCount: 'ALL',
+          include: [ '**/*.mdx' ],
+          rehypePlugins: [ rehypeExtendedTable ]
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
         sitemap: {
+          lastmod: 'date',
           changefreq: 'always',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
@@ -142,6 +133,36 @@ module.exports = Promise.resolve({
         }
       },
     ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          // Pass it a path to a local OpenAPI YAML file
+          {
+            // Redocusaurus will automatically bundle your spec into a single file during the build
+            id: 'openapi-spec',
+            spec: 'docs/apidoc/openapi.yaml',
+            // route: '/openapi-spec',
+          },
+          {
+            id: 'openapi-spec-en',
+            spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            // route: '/openapi-spec-en',
+          },
+          {
+            id: 'openapi-spec-ja',
+            spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            // route: '/openapi-spec-ja',
+          }
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      },
+    ]
   ],
   webpack: {
     jsLoader: (isServer) => ({
@@ -362,6 +383,12 @@ module.exports = Promise.resolve({
                 type: 'doc',
                 docId: 'npm/introduction',
                 label: 'Network Performance Monitoring',
+                className: 'narrow',
+              },
+              {
+                type: 'doc',
+                docId: 'features/introduction',
+                label: 'Feature Project', 
                 className: 'narrow',
               },
               {
@@ -588,8 +615,7 @@ module.exports = Promise.resolve({
             label: '관리 기능',
           },
           {
-            type: 'doc',
-            docId: 'openapi',
+            to: 'openapi-spec',
             position: 'left',
             label: 'Open API',
           },
@@ -599,17 +625,26 @@ module.exports = Promise.resolve({
             position: 'left',
             label: '라이선스',
           },
-          {
-            type: 'doc',
-            docId: 'reference',
-            position: 'left',
-            label: '참조 문서',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'reference',
+          //   position: 'left',
+          //   label: '참조 문서',
+          // },
           {
             type: 'doc',
             docId: 'release-notes',
             position: 'left',
             label: '릴리스 노트',
+          },
+          {
+            type: 'doc',
+            docId: 'faq/index',
+            position: 'left',
+            label: 'FAQ',
+          },
+          {
+            to: 'blog', label: '새로운 기능', position: 'left'
           },
           {
             type: 'localeDropdown',
@@ -630,11 +665,7 @@ module.exports = Promise.resolve({
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        theme: darkCodeTheme,
-        darkTheme: darkCodeTheme,
-        // reference: https://prismjs.com/#supported-languages
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c', 'csharp', 'log' ],
-        // 
+        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img',
@@ -646,6 +677,6 @@ module.exports = Promise.resolve({
         config: {}
       },
     }),
-});
+}
 
-// module.exports = config;
+export default config;

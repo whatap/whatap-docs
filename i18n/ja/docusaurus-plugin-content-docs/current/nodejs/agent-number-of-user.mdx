@@ -10,17 +10,19 @@ Node.jsウェブアプリケーションサーバーに接続したユーザー�
 
 - **trace_user_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   リアルタイムのユーザー集計の有無を設定します。ユーザー追跡オプションが重複設定されている場合、動作の優先順位は次のとおりです。
 
   > 1. **trace_user_using_ip**
   > 2. **user_header_ticket**
 
-{@include: ../common-items/_common-collect-user.mdx}
+import Commoncollectuser from "../common-items/_common-collect-user.mdx";
+
+<Commoncollectuser />
 
 - **user_header_ticket_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   ユーザーIDをhttpヘッダーの特定の値として区分する時に使用します。モバイルから接続するときに配信されます。

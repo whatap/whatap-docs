@@ -9,16 +9,21 @@ tags:
   - レポート
 ---
 
-<!-- 개요 -->
+{/* 개요 */}
+import Reportintrodesc from "../common-items/_report-intro-desc.mdx";
 
-{@include: ../common-items/_report-intro-desc.mdx}
+<Reportintrodesc />
 
-<!-- ## レポートの種類 -->
+{/* ## 보고서의 종류 */}
+import Reportintrotypes from "../common-items/_report-intro-types.mdx";
 
-{@include: ../common-items/_report-intro-types.mdx}
+<Reportintrotypes />
 
-<!-- ## メール送信予約 -->
+{/* ## 메일 발송 예약 */}
+import Reportintromailschedule from "../common-items/_report-intro-mail-schedule.mdx";
 
-{@include: ../common-items/_report-intro-mail-schedule.mdx} 
+<Reportintromailschedule />
 
-{@include: ../common-items/_db-report.mdx} 
+import Dbreport from "../common-items/_db-report.mdx";
+
+<Dbreport />

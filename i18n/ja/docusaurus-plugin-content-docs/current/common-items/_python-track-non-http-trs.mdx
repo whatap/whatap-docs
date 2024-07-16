@@ -1,25 +1,28 @@
+import Edpdef from "../common-items/_edp-def.mdx";
+import Edptracknonhttp from "../common-items/_edp-track-non-http.mdx";
+
 - **トランザクションend-point**  
 
-    {@include: ../common-items/_edp-def.mdx} 
+  <Edpdef />
 
 - **NON HTTP追跡**  
 
-    {@include: ../common-items/_edp-track-non-http.mdx} 
+  <Edptracknonhttp />
 
 ### 対象選択
 
-{@include: ../common-items/_edp-select.mdx} 
+import Edpselect from "../common-items/_edp-select.mdx";
+
+<Edpselect />
 
 ### トランザクションのEND POINT指定
 
-{@include: ../common-items/_edp-trs-setting.mdx} 
+import Edptrssetting from "../common-items/_edp-trs-setting.mdx";
+
+<Edptrssetting />
 
 ### トランザクション名の定義
 
-{@include: ../common-items/_edp-name-setting.mdx}
+import Edpnamesetting from "../common-items/_edp-name-setting.mdx";
 
-<!--
-### 플러그인 사용
-
-{@include: ../common-items/_edp-plugin.mdx}
--->
+<Edpnamesetting />

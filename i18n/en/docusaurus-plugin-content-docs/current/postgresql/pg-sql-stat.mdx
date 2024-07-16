@@ -9,7 +9,7 @@ tags:
   - PG SQL Statistics
 ---
 
-Home > Select Project > **_STAT/REPORT_** > **_PG SQL Statistics_**
+Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_pgStat" className="uitext" />
 
 SQL statistics (execution count, execution time, row count, etc.) provided by PostgreSQL that can be collected through the `pg_state_statements` view.
 
@@ -21,9 +21,9 @@ SQL statistics (execution count, execution time, row count, etc.) provided by Po
 
 :::
 
-### Configuration
+## Before use
 
-To use **_PG SQL Statistics_**, the following settings are required in the target monitoring DB.
+To use <Cmdname sid="side_pgStat" className="uitext" />, the following settings are required in the target monitoring DB.
 
 1. Install the PostgreSQL extension pack.
 
@@ -49,56 +49,59 @@ To use **_PG SQL Statistics_**, the following settings are required in the targe
    select * from public.pg_stat_statements
    ```
 
-### Basic screen guide
+## Basic screen guide
 
 <ImgLang img='db-pg-sql-stat.png' desc='PG SQL Statistics' />
 
-{@include: ../common-items/_db-product-sql-stat-basic-usage.mdx}
+import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-basic-usage.mdx";
 
-### Column information guide
+<Dbproductsqlstatbasicusage />
 
-| Item                  | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| `query`               | Query string                                                                                       |
-| `queryid`             | Query hash code                                                                                    |
-| `user`                | User oid                                                                                           |
-| `db`                  | Database name                                                                                      |
-| `rows`                | Total number of rows retrieved or affected                                                         |
+## Column information guide
+
+| Item                  | Description                                                                                                           |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `query`               | Query string                                                                                                          |
+| `queryid`             | Query hash code                                                                                                       |
+| `user`                | User oid                                                                                                              |
+| `db`                  | Database name                                                                                                         |
+| `rows`                | Total number of rows retrieved or affected                                                                            |
 | `total_exec_time`     | Total query execution time (milliseconds)                                                          |
-| `calls`               | Execution count                                                                                    |
-| `shared_blks_hit`     | Total shared block cache hit count                                                                 |
-| `shared_blks_read`    | Total number of shared blocks read from disk                                                       |
+| `calls`               | Execution count                                                                                                       |
+| `shared_blks_hit`     | Total shared block cache hit count                                                                                    |
+| `shared_blks_read`    | Total number of shared blocks read from disk                                                                          |
 | `blk_read_time`       | Total block read time (milliseconds) while `track_io_timing` is active. Otherwise, the value is 0. |
-| `blk_write_time`      | Total block write time while `track_io_timing` is active. Otherwise, the value is 0.               |
-| `local_blks_dirtied`  | Number of changed local blocks                                                                     |
-| `local_blks_hit`      | Local block cache hit count                                                                        |
-| `local_blks_written`  | Total number of local blocks written in disk                                                       |
-| `local_blks_read`     | Total number of local blocks read from disk                                                        |
-| `shared_blks_written` | Total number of shared blocks written in disk                                                      |
-| `shared_blks_dirtied` | Total number of changed shared blocks                                                              |
-| `temp_blks_read`      | Total number of temporary blocks read from disk                                                    |
-| `temp_blks_written`   | Total number of temporary blocks written in disk                                                   |
+| `blk_write_time`      | Total block write time while `track_io_timing` is active. Otherwise, the value is 0.                                  |
+| `local_blks_dirtied`  | Number of changed local blocks                                                                                        |
+| `local_blks_hit`      | Local block cache hit count                                                                                           |
+| `local_blks_written`  | Total number of local blocks written in disk                                                                          |
+| `local_blks_read`     | Total number of local blocks read from disk                                                                           |
+| `shared_blks_written` | Total number of shared blocks written in disk                                                                         |
+| `shared_blks_dirtied` | Total number of changed shared blocks                                                                                 |
+| `temp_blks_read`      | Total number of temporary blocks read from disk                                                                       |
+| `temp_blks_written`   | Total number of temporary blocks written in disk                                                                      |
 
-## Using the Statistics menu options
-
-### Previewing the query
+## Previewing the query
 
 ![Query preview](/img/db-sql-preview.png)
 
-You can preview the query statement by moving the mouse pointer to the **_sql_** column in the search results list.
+You can preview the query statement by moving the mouse pointer to the **_query_** column in the search results list.
 
-### See query details{#query-details}
+## See query details{#query-details}
 
 <ImgLang img='db-sql-details-postgresql.png' desc='SQL details' />
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
 
-### Filtering the searched results
+<Dbproductsqlstatquerydetails />
 
-<ImgLang img='db-sql-stat-add-filter-postgresql.png' desc='Filtering' />
+{/* 필터 조건추가하기*/}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
-{@include: ../common-items/_db-product-sql-stat-filtering-result.mdx}
+<Dbsqlfilter />
 
-### Configuring the table columns{#change-column}
+## Configuring the table columns{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx} 
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

@@ -210,7 +210,37 @@ The failure status that can be checked through the transaction, can be recognize
 
 ![Active transaction speed](/img/speedmeter.png)
 
-You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
+You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. 
+
+- Area on the left
+
+  This indicates the number of requested transactions and displays data in proportion to the number of transactions.
+
+- Area in the middle
+
+  The status of active transactions is color displayed by the speed along with the count at the upper right. The number in the chart is the total number of active transactions. The colors in the chart indicate as follows:
+
+  - Blue (<span class='normal'>Normal</span>): 0 to 3 seconds
+
+  - Orange (<span class='slow'>Slow</span>): 3 to 8 seconds
+
+  - Red (<span class='vslow'>Very Slow</span>): 8 seconds or more
+
+- Area on the right
+
+  This indicates the Application Performance Index (Apdex). This metric is measured for customer satisfaction of a web application and has a value between 0 and 1. The droplet flying speed is proportional to the total number of Apdex transactions, and the droplet colors mean as follows:
+
+  - Blue: <span class='normal'>Apdex </span>satisfied count 
+
+  - Orange: <span class='slow'>Apdex </span>tolerating count 
+
+  - Red: <span class='vslow'>Apdex </span>frustrated count = `Total number of APDEX transactions` - (`Apdex satisfied count` + `Apdex tolerating count`)
+
+  :::note
+
+  For more information about the Application Performance Index (Apdex), see [the following link](https://www.apdex.org).
+
+  :::
 
 ##### <Cmdname sid="AA002" /> {#active-trs}
 
@@ -243,6 +273,14 @@ The situation where lots of blue colors are represented is not a problem. You mu
   - For more information about transactions, see [the following](../java/track-transactions-intro).
 
   :::
+
+##### <Cmdname sid="AA018" /> {#active-trs-agent}
+
+<ImgLang img='apm-dashboard-active-tx-agent.png' desc='Agent Active Transaction' />
+
+The <Cmdname sid="AA002" className="uitext" /> widget displays on a chart the data merged based on the criteria selected in the agent selection options. On the other hand, the <Cmdname sid="AA018" className="uitext" /> widget allows you to individually check the agents included in the selected agent classification criteria.
+
+Right-click the dashboard and then select the <Cmdname sid="AA018" className="uitext" /> widget from the widget list.
 
 ##### <Cmdname sid="AA004" /> {#active-status}
 

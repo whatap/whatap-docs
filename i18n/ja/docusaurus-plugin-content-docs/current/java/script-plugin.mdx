@@ -1,13 +1,14 @@
 ---
 id: script-plugin
 title: スクリプトプラグイン
-description: Javaエージェントが提供するプラグインを活用して様々なことができます。
+description: Javaエージェントが提供するプラグインオプションを通じて、ユーザーが希望するコードをトレースデータに注入するか、メソッド実行前後に付加情報を追加する方法を提供します。メソッドの開始/終了時点で特定のコードを実行する場所を設定するオプションと、ユーザー定義型poolをモニタリングするためのクラス設定方法が含まれます。実際のプラグインの適用事例を通じて具体的な活用方法を提示し、モニタリングの柔軟性と細さを高める様々な設定例とAPIの使い方を案内します。
 tags:
   - Java
+  - エージェント
   - Script plugin
 ---
 
-Javaエージェントが提供するプラグインを使用してトレースデータに追加情報を追加したり、メソッドの実行前と実行後に目的のコードを挿入するなど多様なことができます。
+Javaエージェントが提供するプラグインオプションを通じて、ユーザーが希望するコードをトレースデータに注入するか、メソッド実行前後に付加情報を追加する方法を提供します。メソッドの開始・終了時点で特定のコードを実行する場所を設定するオプションと、ユーザー定義型poolをモニタリングするためのクラス設定方法が含まれます。実際のプラグインの適用事例を通じて具体的な活用方法を提示し、モニタリングの柔軟性と細さを高める様々な設定例とAPIの使い方を案内します。
 
 ## プラグインオプション
 
@@ -39,7 +40,7 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
   whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
   ```
 
-- **パッケージとメソッド名を「\*」に置き換える場合**
+- **パッケージとメソッド名を`*`に置き換える場合**
 
   ```java
   *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
@@ -71,22 +72,22 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### 設定したメソッド開始時間をトレースに記録する
 
-1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを_whatap.conf_ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
-2. _TraceHelperStart.x_ファイルにプラグインコードを記述してください。
+2. *TraceHelperStart.x*ファイルにプラグインコードを記述してください。
 
-```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
-// String prefixにクラス名、メソッド名を代入してください。
-String prefix = $point.class1 + "." + $point.method;
-// WhaTapトレース属性名称を`prefix` + "st"にして現在の時間を設定してください。
-$ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
-// トレース情報に現在の時間を追加してください。
-$ctx.profile(prefix + " Start", new java.util.Date().toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
+   // String prefixにクラス名、メソッド名を代入してください。
+   String prefix = $point.class1 + "." + $point.method;
+   // WhaTapトレース属性名称を`prefix` + "st"にして現在の時間を設定してください。
+   $ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
+   // トレース情報に現在の時間を追加してください。
+   $ctx.profile(prefix + " Start", new java.util.Date().toString()); 
+   ```
 
 トレース履歴にメソッドの開始時間を次のように表示します。
 
@@ -94,24 +95,24 @@ $ctx.profile(prefix + " Start", new java.util.Date().toString());
 
 ### 設定したメソッド終了時間と実行時間をトレースに記録する
 
-1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを_whatap.conf_ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
-1. _TraceHelperEnd.x_ファイルにプラグインコードを記述してください。
+2. _TraceHelperEnd.x_ファイルにプラグインコードを記述してください。
 
-```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
-String prefix = $point.class1 + "." + $point.method;
-// TraceHelperStart.xファイルで追加したトレース属性を取得してください。
-long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
-long gap = System.currentTimeMillis() - st;
-StringBuilder sb = new StringBuilder();
-sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
-// トレース情報に開始時間と現在時間とのGap(実行時間)を追加してください。
-$ctx.profile(prefix + " End", sb.toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
+   String prefix = $point.class1 + "." + $point.method;
+   // TraceHelperStart.xファイルで追加したトレース属性を取得してください。
+   long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
+   long gap = System.currentTimeMillis() - st;
+   StringBuilder sb = new StringBuilder();
+   sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
+   // トレース情報に開始時間と現在時間とのGap(実行時間)を追加してください。
+   $ctx.profile(prefix + " End", sb.toString()); 
+   ```
 
 トレース履歴にメソッド終了時間と実行時間を次のように表示します。
 
@@ -129,17 +130,17 @@ $ctx.profile(prefix + " End", sb.toString());
 
 ### パラメータ提供 - 共通プラグインファイル{#common-plugin}
 
-|  パラメータ  | メソッド／変数                                                       | 説明                                            |
-| :-----: | ------------------------------------------------------------- | --------------------------------------------- |
-|  $ctx   | \>                                                            | 属性管理                                          |
+|  パラメータ  | メソッド／変数                                                                          | 説明                                            |
+| :-----: | -------------------------------------------------------------------------------- | --------------------------------------------- |
+|  $ctx   | \>                                                                               | 属性管理                                          |
 |  ^      | void setAttribute(String key, Object value)                   | Attributeを設定します。                              |
 |  ^      | Object getAttribute(String key)                               | Attributeの値を取得します。                            |
-|  ^      | \>                                                            | トレースデータ                                       |
+|  ^      | \>                                                                               | トレースデータ                                       |
 |  ^      | void profile(String desc)                                     | トレースメッセージ記録                                   |
 |  ^      | void profile(String name, String msg)                         | トレースStep名、メッセージの記録                            |
 |  ^      | void profile(String name, String msg, int elapsed)            | トレースStep名、メッセージ、実行時間の記録                       |
 |  ^      | void profile(String name, String msg, int elapsed, int value) | トレースStep名、メッセージ、実行時間、順序の記録                    |
-|  ^      | \>                                                            | HTTP Request                                  |
+|  ^      | \>                                                                               | HTTP Request                                  |
 |  ^      | String service()                                              | サービス名をリターン                                    |
 |  ^      | void service(String name)                                     | サービス名の設定                                      |
 |  ^      | int serviceHash()                                             | サービス名のHash値リターン                               |
@@ -153,34 +154,34 @@ $ctx.profile(prefix + " End", sb.toString());
 |  ^      | String httpContentType()                                      | HTTP ContentTypeリターン                          |
 |  ^      | String userAgent()                                            | User-Agentリターン                                |
 |  ^      | int status()                                                  | HTTP statusリターン                               |
-| $point  | String class1                                                 | クラス名                                          |
-|  ^      | String method                                                 | メソッド名                                         |
-|  ^      | Object this1                                                  | Hooking対象クラス／メソッド                             |
-|  ^      | Object[] args                                                | ファクター                                         |
-|  ^      | Object return1                                                | リターン                                          |
+| $point  | String class1                                                                    | クラス名                                          |
+|  ^      | String method                                                                    | メソッド名                                         |
+|  ^      | Object this1                                                                     | Hooking対象クラス／メソッド                             |
+|  ^      | Object[] args                                                                   | ファクター                                         |
+|  ^      | Object return1                                                                   | リターン                                          |
 
 ### パラメータ未指定 - 共通プラグインファイル
 
-| パラメータ | メソッド／変数                                              | 説明                                            |
-| :---: | ---------------------------------------------------- | --------------------------------------------- |
-|  無し   | void log(Object c)                                   | LoggerによるLogging                              |
-| ^     | void println(Object c)                               | System.out.println()で出力                       |
-| ^     | Object field(Object o, String field)                 | Field値をリターン                                   |
-| ^     | Object method(Object o, String method)               | Invokeメソッド                                    |
-| ^     | Object method(Object o, String method, String param) | Invokeメソッド                                    |
-| ^     | String toString(Object o)                            | ObjectをtoSting() に戻す                          |
-| ^     | String toString(Object o, String def)                | ObjectをtoSting() 戻し、nullの場合def 戻し             |
-| ^     | int syshash(Object o)                                | hash値リターン                                     |
-| ^     | int syshash(HookArgs hook, int x)                    | x番目のargumentのhash 値戻す                         |
-| ^     | int syshash(HookArgs hook)                           | argumentのhash値 戻し                             |
-| ^     | int cint(Object o)                                   | intでリターン                                      |
-| ^     | float cfloat(Object o)                               | floatでリターン                                    |
-| ^     | String cString(Object o)                             | Stringでリターン                                   |
-| ^     | long clong(Object o)                                 | longでリターン                                     |
-| ^     | double cdouble(Object o)                             | doubleとしてリターン                                 |
-| ^     | String desc(Object o)                                | Class signatureをリターン                          |
-| ^     | String toJson(Object o)                              | jsonでリターン                                     |
-| ^     | void shell(final String cmd, final String env)       | shell実行                                       |
+| パラメータ | メソッド／変数                                                                 | 説明                                                            |
+| :---: | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
+|  無し   | void log(Object c)                                   | LoggerによるLogging                                              |
+| ^     | void println(Object c)                               | System.out.println()で出力                    |
+| ^     | Object field(Object o, String field)                 | Field値をリターン                                                   |
+| ^     | Object method(Object o, String method)               | Invokeメソッド                                                    |
+| ^     | Object method(Object o, String method, String param) | Invokeメソッド                                                    |
+| ^     | String toString(Object o)                            | ObjectをtoSting() に戻す                       |
+| ^     | String toString(Object o, String def)                | ObjectをtoSting() 戻し、nullの場合def 戻し          |
+| ^     | int syshash(Object o)                                | hash値リターン                                                     |
+| ^     | int syshash(HookArgs hook, int x)                    | x番目のargumentのhash 値戻す                                         |
+| ^     | int syshash(HookArgs hook)                           | argumentのhash値 戻し                                             |
+| ^     | int cint(Object o)                                   | intでリターン                                                      |
+| ^     | float cfloat(Object o)                               | floatでリターン                                                    |
+| ^     | String cString(Object o)                             | Stringでリターン                                                   |
+| ^     | long clong(Object o)                                 | longでリターン                                                     |
+| ^     | double cdouble(Object o)                             | doubleとしてリターン                                                 |
+| ^     | String desc(Object o)                                | Class signatureをリターン                                          |
+| ^     | String toJson(Object o)                              | jsonでリターン                                                     |
+| ^     | void shell(final String cmd, final String env)       | shell実行                                                       |
 
 ### デーモンおよびバッチ
 
@@ -202,28 +203,28 @@ $ctx.profile(prefix + " End", sb.toString());
 - サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpServiceStart.x_
 - サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
 
-| プラグインファイル                                |  パラメータ | メソッド／変数                                 | 説明                      |
-| ---------------------------------------- | :----: | --------------------------------------- | ----------------------- |
-| HttpServiceStart.x/<br/>HttpServiceEnd.x | $ctx   | \>                                      | 共通属性を参照                 |
-| ^                                        | $req   | String getCookie(String key)            | Cookie値リターン             |
-| ^                                        |  ^     | String getRequestURI()                  | RequestURIリターン          |
-| ^                                        |  ^     | String getRemoteAddr()                  | RemoteAddrリターン          |
-| ^                                        |  ^     | String getMethod()                      | HTTP Methodリターン         |
-| ^                                        |  ^     | String getQueryString()                 | HTTP QueryStringリターン    |
-| ^                                        |  ^     | String getParameter(String key)         | Parameter値リターン          |
-| ^                                        |  ^     | Object getAttribute(String key)         | Attribute値リターン          |
-| ^                                        |  ^     | String getHeader(String key)            | Header値リターン             |
-| ^                                        |  ^     | Enumeration getParameterNames()         | getParameterNamesリターン   |
-| ^                                        |  ^     | Enumeration getHeaderNames()            | getHeaderNamesリターン      |
-| ^                                        |  ^     | WrSession getSession()                  | Session Wrapperリターン     |
-| ^                                        |  ^     | Set getSessionNames()                   | getSessionNamesリターン     |
-| ^                                        |  ^     | Object getSessionAttribute(String key)  | getSessionAttributeリターン |
-| ^                                        |  ^     | boolean isOk()                          | Plugin状態リターン            |
-| ^                                        |  ^     | Throwable error()                       | Errorリターン               |
-| ^                                        | $res   | String getContentType()                 | ContentTypeリターン         |
-| ^                                        |  ^     | String getCharacterEncoding()           | CharacterEncodingリターン   |
-| ^                                        |  ^     | boolean isOk()                          | Plugin状態リターン            |
-| ^                                        |  ^     | Throwable error()                       | Errorリターン               |
+| プラグインファイル                                |  パラメータ | メソッド／変数                                                   | 説明                      |
+| ---------------------------------------- | :----: | --------------------------------------------------------- | ----------------------- |
+| HttpServiceStart.x/<br/>HttpServiceEnd.x | $ctx   | \>                                                        | 共通属性を参照                 |
+| ^                                        | $req   | String getCookie(String key)           | Cookie値リターン             |
+| ^                                        |  ^     | String getRequestURI()                 | RequestURIリターン          |
+| ^                                        |  ^     | String getRemoteAddr()                 | RemoteAddrリターン          |
+| ^                                        |  ^     | String getMethod()                     | HTTP Methodリターン         |
+| ^                                        |  ^     | String getQueryString()                | HTTP QueryStringリターン    |
+| ^                                        |  ^     | String getParameter(String key)        | Parameter値リターン          |
+| ^                                        |  ^     | Object getAttribute(String key)        | Attribute値リターン          |
+| ^                                        |  ^     | String getHeader(String key)           | Header値リターン             |
+| ^                                        |  ^     | Enumeration getParameterNames()        | getParameterNamesリターン   |
+| ^                                        |  ^     | Enumeration getHeaderNames()           | getHeaderNamesリターン      |
+| ^                                        |  ^     | WrSession getSession()                 | Session Wrapperリターン     |
+| ^                                        |  ^     | Set getSessionNames()                  | getSessionNamesリターン     |
+| ^                                        |  ^     | Object getSessionAttribute(String key) | getSessionAttributeリターン |
+| ^                                        |  ^     | boolean isOk()                         | Plugin状態リターン            |
+| ^                                        |  ^     | Throwable error()                      | Errorリターン               |
+| ^                                        | $res   | String getContentType()                | ContentTypeリターン         |
+| ^                                        |  ^     | String getCharacterEncoding()          | CharacterEncodingリターン   |
+| ^                                        |  ^     | boolean isOk()                         | Plugin状態リターン            |
+| ^                                        |  ^     | Throwable error()                      | Errorリターン               |
 
 ### HTTP Outbound
 
@@ -232,15 +233,15 @@ $ctx.profile(prefix + " End", sb.toString());
 - サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpCallStart.x_
 - サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpCallEnd.x_
 
-| プラグインファイル       |  パラメータ | メソッド／変数                       | 説明                    |
-| --------------- | :----: | ----------------------------- | --------------------- |
-| HttpCallStart.x | $ctx   | \>                            | 共通属性を参照               |
+| プラグインファイル       |  パラメータ | メソッド／変数                                          | 説明                    |
+| --------------- | :----: | ------------------------------------------------ | --------------------- |
+| HttpCallStart.x | $ctx   | \>                                               | 共通属性を参照               |
 | ^               | $req   | String url()                  | URLリターン               |
 | ^               |  ^     | String host()                 | Hostnameリターン          |
 | ^               |  ^     | int port()                    | Portリターン              |
 | ^               |  ^     | boolean isOk()                | Plugin状態リターン          |
 | ^               |  ^     | Throwable error()             | Errorリターン             |
-| HttpCallEnd.x   | $ctx   | \>                            | 共通属性を参照               |
+| HttpCallEnd.x   | $ctx   | \>                                               | 共通属性を参照               |
 | ^               | $res   | String getContentType()       | ContentTypeリターン       |
 | ^               |  ^     | String getCharacterEncoding() | CharacterEncodingリターン |
 | ^               |  ^     | boolean isOk()                | Plugin状態リターン          |
@@ -261,10 +262,10 @@ Javaエージェントオプション(`hook_trace_helper_*`)で設定したメ�
 
 ユーザー定義プールをモニタリングするためのAPIです。プール使用量の情報を使用してメソッドを設定すると、WhaTapモニタリングサービスで監視し、統計情報を確認することができます。
 
-| プラグインファイル     |   パラメータ  | メソッド／変数            | 説明                               |
-| ------------- | :------: | ------------------ | -------------------------------- |
-| CustomPool.x  |  $id     | \>                 | custom_pool_classesに設定したID値      |
-| ^             |  $pool   | \>                 | custom_pool_classesに設定したclass    |
+| プラグインファイル     |   パラメータ  | メソッド／変数                               | 説明                               |
+| ------------- | :------: | ------------------------------------- | -------------------------------- |
+| CustomPool.x  |  $id     | \>                                    | custom_pool_classesに設定したID値      |
+| ^             |  $pool   | \>                                    | custom_pool_classesに設定したclass    |
 | ^             | $result  | active(Object o)   | Active Pool Count設定              |
 | ^             |   ^      | int idle(Object o) | Idle Pool Count設定                |
 

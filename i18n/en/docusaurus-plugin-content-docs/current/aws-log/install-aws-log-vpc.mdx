@@ -20,7 +20,7 @@ This document guides you to additional settings required in the <span class='vpc
 
 1. On the AWS Lambda Function console, select **WhaTap Forwarder**.
 
-2. On the **\*Configuration** tab, select **_Execution role_** in **_Permissions_** to go to the AWS IAM console.
+2. On the **_Configuration_** tab, select **_Execution role_** in **_Permissions_** to go to the AWS IAM console.
 
    ![Lambda Execution Role](/img/whatap-forwarder-vpc-lambda.png)
 
@@ -110,28 +110,28 @@ This document guides you to additional settings required in the <span class='vpc
 
 </div>
 
-<!-- 
+{/* 
 
 #### Subnets
 
-* **NAT Gateway**의 **Public IP**로 **IGW**를 통해 인터넷에 접속하세요.
+- Access the Internet through **IGW** with **Public IP** of the **NAT Gateway**.
 
-* To connect the Internet via **IGW**, **Public IP** is required. *ENI* of Lambda cannot allocate **Public IP**.
+- To connect the Internet via **IGW**, **Public IP** is required. _ENI_ of Lambda cannot allocate **Public IP**.
 
-* The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
+- The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
 
-* **WhaTap Forwarder** for **Private Subnet** and **Public Subnet** 
+- **WhatTap Forwarder** in **Private Subnet** and **Public Subnet**
 
   ![Subnet sc](/img/whatap-forwarder-subnet.png)
 
 #### Security groups
 
-* A security group with the **outbound** open is required.
+- A security group with the **outbound** open is required.
 
--->
+*/}
 
-<!-- 
+{/* 
 
   ![보안 그룹](/img/whatap-forwarder-vpc-sg-outbound.png)
 
--->
+*/}

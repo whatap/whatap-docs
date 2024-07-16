@@ -26,7 +26,7 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
 - ![number 1](/img/number-01.png) **Summary info card** (container or pod)
 
-  You can see the group of the selected target. When selecting a target additionally, you can check the metrics for the selected target in the ![number 4](/img/number-04.png) area. It has the same view as the card selected in the container map. For more information, see [the following](container-map).
+  You can see the group of the selected target. When selecting a target additionally, you can check the metrics for the selected target in the ![number 3](/img/number-03.png) area. It has the same view as the card selected in the container map. For more information, see [the following](container-map).
 
   :::note
 
@@ -36,11 +36,15 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
   :::
 
-- ![Leader line 2](/img/number-02.png) **\*Summary Info List**
+- ![Leader line 2](/img/number-02.png) **_Summary Info List_**
 
-  You can see the group information of the selected target in a list format. When selecting a target additionally, you can see the metrics for the selected target in the ![number 4](/img/number-04.png) area. 
+  You can see the group information of the selected target in a list format. When selecting a target additionally, you can see the metrics for the selected target in the ![number 3](/img/number-03.png) area. 
 
-  - If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the ![Leader line 3](/img/number-03.png) target selected from the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear.
+  - If you check **_View Only Selected_** at the top of the ![Leader line 2](/img/number-02.png) list, only the selected containers or Pods appear as follows: 
+
+    <ImgLang img='k8s-container-detail-list-selected.png' desc='View only selected' />
+
+  - If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear as shown in ![Leader line a](/img/char-a.svg).
 
     - **_Node_**: Node details and master meta data
 
@@ -54,7 +58,19 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
   - ![More icon](/img/ico-more.svg) **_Cube detail_**: You can search the detailed or master meta data by selecting the Cube detail icon on the right of each metric guide.
 
-- ![Leader line 4](/img/number-04.png) **Trace**, **Metrics**, **Log**, **Event**, **Call Information**
+- ![Leader line 3](/img/number-03.png) **Resource relations**, **Trace**, **Metrics**, **Log**, **Event**, **Call Information**
+
+  - **_Resource relations_**
+
+    The Resource relationships tab allows you to visually see the connections between Kubernetes resources. 
+
+    :::note 
+
+    The relationship chart among **_Namespace_**, **_Deployment_**, **_ReplicaSet_**(**_DaemonSet_**), **_Pod_**, **_Container_**, and **_Application_** is provided as follows. 
+
+    ![Resource relations](/img/k8s-container-detail-rr-s.png)
+
+    :::
 
   - **_Trace_** 
 
@@ -75,3 +91,15 @@ The **Display Detail** screen of the container map consists of the following. Ba
   - **_Call Infomation_**
 
     In the **_Call information_** tab, you can see the call flow of the applications running on Kubernetes containers and the status of outbound call targets. For more information, see [the following](container-map-call-information).
+
+{/* 
+
+```
+***트레이스*** 탭에서 컨테이너에서 서비스 중인 애플리케이션 정보를 불러와 해당 애플리케이션의 트랜잭션 현황을 모니터링할 수 있습니다. ***대시보드*** 뷰와 ***트랜잭션 목록*** 뷰를 제공합니다. 자세한 내용은 [다음 문서](container-map-trace)를 참조하세요.
+
+ ***메트릭스*** 탭에서 모니터링에 유용한 지표들을 선별해 차트에 표시합니다. 선택한 컨테이너 또는 Pod의 자원이 적절하게 설정되었는지 파악할 수 있습니다. 자세한 내용은 [다음 문서](container-map-metrics)를 참조하세요.
+
+ ***로그*** 탭에서 쿠버네티스에서 발생하는 로그를 조회할 수 있습니다. 컨테이너를 종료하면 관련 로그까지 모두 사라집니다. 과거에 발생한 로그는 ***로그 검색*** 옵션을 통해 확인하세요. 자세한 내용은 [다음 문서](container-map-log)를 참조하세요.
+```
+
+*/}

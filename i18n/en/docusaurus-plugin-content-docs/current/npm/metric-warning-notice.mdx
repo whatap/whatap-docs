@@ -11,12 +11,20 @@ tags:
 import InDoc from '@site/src/components/InDoc.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 
-{@include: ../common-items/_metrics-warning-notice.mdx}  
+import Metricswarningnotice from "../common-items/_metrics-warning-notice.mdx";
 
-<!-- 복합 메트릭스 미지원 {@include: ../common-items/_composite-metrics-warning-notice.mdx}  -->
+<Metricswarningnotice />
 
-{@include: ../common-items/_metrics-event-modify-delete.mdx}
+{/* 복합 메트릭스 미지원 {@include: ../common-items/_composite-metrics-warning-notice.mdx}  */}
 
-{@include: ../common-items/_metrics-event-condition-select-target-guide.mdx}
+import Metricseventmodifydelete from "../common-items/_metrics-event-modify-delete.mdx";
 
-{@include: ../common-items/_metrics-warning-notice-npm.mdx} 
+<Metricseventmodifydelete />
+
+import Metricseventconditionselecttargetguide from "../common-items/_metrics-event-condition-select-target-guide.mdx";
+
+<Metricseventconditionselecttargetguide />
+
+import Metricswarningnoticenpm from "../common-items/_metrics-warning-notice-npm.mdx";
+
+<Metricswarningnoticenpm />

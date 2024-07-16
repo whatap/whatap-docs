@@ -1,26 +1,28 @@
-### ![](/img/number-02.png)グラフチャートセクション
+## 主要なウィジェットを調べる{#about-widget}
 
-複数のインスタンスの重要指標をグラフチャートで確認および比較することができます。 CPUおよびメモリ使用率、アクティブセッション、スロークエリ、待機中のセッション情報などをリアルタイムで確認できます。 グラフチャートの色は、![数字1](/img/number-01.png) **_インスタンス_**の色と一致します。 グラフチャートの上にカーソルを合わせると、ツールチップで数値を確認できます。
+ダッシュボードに配置できるウィジェットの種類は次のとおりです。
 
-**_XOS_**、**_RDS_**、**_All_**のタブを選択すると、チャートを分類されて表示します。 <span class='mark'>i</span>ボタンを選択すると、その指標の意味がツールチップで確認できます。
+### XOSウィジェット
 
-#### XOS
+- **_[XOS] CPU_**
 
-- **_CPU Usage (%)_**
+  エージェント別のCPU使用率をリアルタイムで確認できます。
 
-  インスタンス別のCPU使用率をリアルタイムで確認できます。
+- **_[XOS] Memory_**
 
-- **_Memory Usage (%)_**
+  エージェント別のメモリ使用率をリアルタイムで確認できます。
 
-  インスタンス別のメモリ使用率をリアルタイムで確認できます。
+- **_[XOS] Disk Usage_**
 
-- **_XOS Disk Usage_**
+  エージェント別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。 
 
-  インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。 ウィジェットの右上にある![アイコン](/img/ico-expander.svg)ボタンを選択すると、新しいウィンドウで確認できます。
+  - ![詳細アイコン](/img/ico-detail.svg) : <Cmdname sid="TTL07856" className="uitext" />ポップアップウィンドウが表示されます。 時間帯別のディスク使用量を表示したチャートを確認できます。 インスタンスごとに確認でき、<UI>Size</UI>、<UI>Free</UI>、<UI>Used</UI>ボタンを選択すると、全体のサイズ、残りのサイズ、使用中のサイズが確認できます。 
+
+  - ![拡大アイコン](/img/ic-fullscreen.svg) : ウィジェットに表示されたテーブルをより広い画面で開くことができます。
 
   :::tip
 
-  データが表示されない場合は、_xos.conf_ファイルに次の設定を追加してください。
+  データが表示されない場合は、*xos.conf*ファイルに次の設定を追加してください。
 
   ```ini title='xos.conf'
   # disk usage 0ならばoff、単位: 秒
@@ -29,21 +31,27 @@
 
   :::
 
-#### RDS
+### AWS RDS CloudWatchウィジェット
 
-- **_RDS CPUUtilization_**
+- **_[RDS] CPUUtilization_**
 
   RDSデータベースのインスタンス別CPU使用率をリアルタイムで確認できます。
 
-- **_RDS FreeableMemory_**
+- **_[RDS] FreeableMemory_**
 
   RDSデータベースのインスタンス別メモリ使用率をリアルタイムで確認できます。
 
-- **_RDS FreeStorageSpace_**
+- **_[RDS] FreeStorageSpace_**
 
   RDSデータベースの使用可能なストレージ容量をリアルタイムで確認できます。
 
-#### 共通
+:::note
+
+AWS CloudWatch指標照会のためのエージェント設定方法は、[次の文書](agent-dbx-settings#using-aws-rds)を参考にしてください。
+
+:::
+
+### Databaseウィジェット
 
 - **_Active Sessions_**
 
@@ -51,7 +59,7 @@
 
 <InDoc product='postgresql'>
 
-- **_DML Count_**
+- **_DML Tuples_**
 
   DML(Data Manipulation Language)文法(statement)が実行された回数をリアルタイムチャートで表示します。
 
@@ -59,23 +67,49 @@
 
 <InDoc product='mysql'>
 
-- **_SQL Executed_**
+- **_Questions_**
 
-  インスタンス別のSQL実行件数の合計です。 5秒単位で収集した`Questions`(全体クエリのリクエスト回数) 指標値に基づいています。
+  MySQLサーバーで実行したコマンドの数です。 Stored program内で実行されたコマンドを計算しないという点で、Queriesとは異なります。
 
 </InDoc>
 
 - **_Slow Query_**
 
-  時間帯別のスロークエリをリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**_Slow Query List_**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択してチャートを上下に移動できます。
+  時間帯別のスロークエリをリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**_Slow Query List_**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
 
-- **_Logical Read_**
+<InDoc product="postgresql">
 
-  データをbuffer cache内で読み込んだ回数をリアルタイムチャートで表示します。
+- **_Logical I/O_**
+
+  `blks_hit`指標で、ディスクブロックがすでにバッファキャッシュで検出され、読み取りを必要としない合計回数をリアルタイムのチャートとして表示します。
+
+</InDoc>
+
+<InDoc product="mysql">
+
+- **_Logical I/O_**
+
+  物理的な読み取りを含む論理的な読み取りリクエストの回数をリアルタイムのチャートで表示します。 `Inodb buffer pool hit`パーセンテージの計算を次のように行うことができ、90%以上を推奨します。 もしHit Ratioが低い場合は、`Innodb_buffer_pool_size`の増設を検討してください。
+
+  > `Buffer Hit Ratio` = (1 - (`Innodb_buffer_pool_reads`/`Innodb_buffer_pool_read_requests`)) \* 100
+
+</InDoc>
+
+- **_Long Active Session Count_**
+
+  データベースで実行される活性セッションの長期実行に関する情報を提供します。 セッションの実行時間に応じてグループ化され、時間単位で集計された情報をチャートで表示します。 長時間実行されるセッションを識別してデータベースの性能問題やリソース漏れを早期に感知したり、セッション実行時間による分類を通じてどのセッションが長期間にわたり活性状態に維持されているかを視覚的に把握できます。
+
+  3秒未満は<span class="normal">青</span>、3秒以上10秒未満は<span class="snormal">緑</span>、10秒以上15秒未満は<span class='slow'>オレンジ</span>、15秒以上は<span class='vslow'>赤</span>で表示します。
+
+- **_Long Waiting Session Count_**
+
+  データベースでロックを保持または待機するセッションの長期待機時間に関する情報を提供します。 ロック情報と活性セッション情報を組み合わせて、待機中のセッションの長期待機時間を追跡できます。 長時間ロックを保持または待機するセッションをモニタリングします。 どのセッションが長時間ロックを保持または待機しているかを視覚的に把握できます。
+
+  5秒未満は<span class="normal">青</span>、5秒以上10秒未満は<span class="snormal">緑</span>、10秒以上60秒未満は<span class='slow'>オレンジ</span>、60秒以上は<span class='vslow'>赤</span>で表示します。
 
 - **_SQL Elapse Map_**
 
-  実行中のクエリの経過時間をリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**_Query List_**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択してチャートを上下に移動できます。
+  実行中のクエリの経過時間をリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**_Query List_**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
 
   :::note
 
@@ -107,11 +141,11 @@
 
 - **_Replication Delay_**
 
-  Replication構造の場合、replication dbに反映される遅延時間をリアルタイムチャートで表示します。
+  Replication構造の場合、replication DBに反映される遅延時間をリアルタイムチャートで表示します。
 
-- **_Physical Read_**
+- **_Physical I/O_**
 
-  データを物理的なdiskで読み込んだ回数をリアルタイムチャートで表示します。
+  物理的なdiskでデータを読み込んだ回数をリアルタイムチャートで表示します。
 
 <InDoc product='postgresql'>
 
@@ -123,11 +157,11 @@
 
 <InDoc product='mysql'>
 
-- **_Full Scan_**
+- **_Select Full Join_**
 
-  インスタンス別テーブルをフルスキャン(full scan)した回数をリアルタイムチャートで表示します。
+  1つ以上のテーブルをジョイン(`JOIN`)する時、インデックスを使わずにドリブン(driven)テーブルをフルスキャン(full scan)した回数をリアルタイムチャートで表示します。
 
-- **_tmp table_**
+- **_Tmp Tables_**
 
   インスタンス別のステートメントの実行中にサーバーによって生成された内部一時テーブルの数をリアルタイムチャートに表示されます。
 

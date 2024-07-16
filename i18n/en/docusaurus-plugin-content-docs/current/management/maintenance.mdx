@@ -27,11 +27,11 @@ You can register a maintenance plan and pause notification set to receive during
 
 **Role**
 
-To add, modify, or delete a maintenance plan, the **_Edit_** role for the project is required. For more information about the member roles, see [the following](../project/project-structure#project-auth).
+To add, modify, or delete a maintenance plan, the **Edit** or **Alert settings** role for the project is required. For more information about the member roles, see [the following](../project/project-structure#project-auth).
 
 :::
 
-## Default maintenance plan {#maintemance-v1}
+## Default maintenance plan {#maintenance-v1}
 
 ### Registering a maintenance plan
 
@@ -72,6 +72,18 @@ After registering a maintenance plan, if there is any plan scheduled to be prefo
 :::note
 
 Server projects cannot use the maintenance plan <Cmdname sid="repeat" className="uitext" /> function in the previous maintenance plan menu. 
+
+:::
+
+:::note 
+
+**Disabling the alerts using the maintenance plan**<ScrollToLink anchor='scrollTo-v1-event-temp-pause' />
+
+You can temporarily **disable** **alerts** during the maintenance plan execution time. This feature is designed to prevent unnecessary alerts while performing maintenance activities and other scheduled tasks so that the administrators can focus on their tasks. Warning alerts are temporarily stopped for the duration of the maintenance plan and then re-enabled upon completion of the maintenance plan after the administrator ends his or her task.
+
+If you want to disable warning alerts at a specific time zone, you can set it through the Repeat and Time Zone options in **_Maintenance Plan Settings_**. For example, if you do not want to receive alerts every Wednesday from 1 am to 4 am, see the following example image. When you add the **_Maintenance Plan_** to run at a specified time through **_Repeat_**, **_Day_**, and **_Time_** settings, the warning alerts are disabled.
+
+<ImgLang img='maintenance-v1-pause-alert.png' desc='Disabling notifications through maintenance planning v1' />
 
 :::
 
@@ -124,6 +136,14 @@ It is disabled when you select the toggle button on the utmost right of any plan
 - On the upper right of the **_maintenance plan_** widget, if you select ![More icon](/img/ico-more.svg) > ![Shortcut icon](/img/ico-shortcut.svg), **_Management_** > **_Maintenance Plan_** appears.
 
 :::
+
+{/* ### 경고 알림 비활성화 
+
+You can **temporarily disable** **alerts** during the **_Maintenance Plan_** execution time. This is useful when you want to avoid unnecessary alerts while performing maintenance activities and other scheduled tasks on your system. Warning alerts are temporarily stopped for the duration of the maintenance plan and then re-enabled upon completion of the maintenance plan after the administrator ends his or her task. This allows the administrators to focus on maintenance activities. 
+
+If you want to disable warning alerts at a specific time zone, you can set it through the Repeat and Time Zone options in **_Maintenance Plan Settings_**. For example, if you do not want to receive alerts every Wednesday from 1 am to 4 am, see the following example image. When you add the **_Maintenance Plan_** to run at a specified time through **_Repeat_**, **_Day_**, and **_Time_** settings, the warning alerts are disabled.
+
+<ImgLang img='maintenance-v1-pause-alert.png' desc='Disabling notifications through maintenance planning v1' /> */}
 
 ## New maintenance plan {#maintenance-v2}
 
@@ -195,6 +215,18 @@ After registering a maintenance plan, if there is any plan scheduled to be prefo
 
 :::
 
+:::note 
+
+**Disable warning alerts using the maintenance plan**<ScrollToLink anchor='scrollTo-v2-event-temp-pause' />
+
+You can temporarily **disable** **alerts** during the maintenance plan execution time. This feature is designed to prevent unnecessary alerts while performing maintenance activities and other scheduled tasks so that the administrators can focus on their tasks. Warning alerts are temporarily stopped for the duration of the maintenance plan and then re-enabled upon completion of the maintenance plan after the administrator ends his or her task. 
+
+If you want to disable warning alerts at a specific time zone, you can set it through the Repeat and Time Zone options in **_Maintenance Plan Settings_**. For example, if you do not want to receive alerts every Wednesday from 1 am to 4 am, see the following example image. When you add the **_Maintenance Plan_** to run at a specified time through **_Repeat_**, **_Day_**, and **_Time_** settings, the warning alerts are disabled.
+
+<ImgLang img='maintenance-v2-pause-alert.png' desc='Disabling notifications through maintenance planning v2' />
+
+:::
+
 ### Modifying a maintenance plan
 
 1. In the **_maintenance plan_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the item to edit. 
@@ -243,3 +275,9 @@ It is disabled when you select the toggle button on the utmost right of any plan
 - On the upper right of the **_maintenance plan_** widget, if you select ![More icon](/img/ico-more.svg) > ![Shortcut icon](/img/ico-shortcut.svg), **_Management_** > **_Maintenance Plan_** appears.
 
 :::
+
+{/* <ScrollToLink anchor='scrollTo-event-temp-pause' /> 
+
+This allows you to use the **_Maintenance Plan_** to disable warning alerts temporarily or repeatedly at specific time zones. 
+
+*/}

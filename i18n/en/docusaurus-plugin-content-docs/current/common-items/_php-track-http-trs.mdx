@@ -16,15 +16,23 @@
 
 - **whatap.trace_ignore_url_set** <span class='type'>String</span>
 
-  Default `0`
-
   If a specific URL is set, the corresponding transactions are excluded from tracing. The set URLs are not displayed in the transaction list because they do not collect transaction data. Set URLs to exclude from transaction tracing. To set multiple items, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **whatap.trace_ignore_url_prefix** <span class='type'>String</span>
 
-  Default `0`
-
   It sets URL prefixes to exclude from the transaction tracing.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **whatap.profile_http_header_enabled** <span class='type'>Boolean</span>
 
@@ -44,9 +52,17 @@
 
   It is used to record HTTP parameters in the trace history. The parameters can be viewed by entering a separate security key.
 
-  It collects the text names and values among Get and Post parameters. Parameters are collected up to 40 (Get 20, Post 20) and the parameter names and values are collected up to 256 bytes.
+  The name and value of the text type are collected among Get and Post parameters. Up to 40 items (20 Gets, 20 Posts) are collected, and parameter names and values are collected up to 256 bytes.
 
-  Parameter data is transferred after being encrypted separately, and can be viewed by decrypting with the key in _/usr/whatap/php/paramkey.txt_ of the application server.
+  Parameter data is transferred after being encrypted separately, and can be viewed by decrypting with the key(`paramkey`) in _/usr/whatap/php/security.conf_ of the application server.
+
+  :::note
+
+  - <code class="my">PHP agent v2.8.0 or later</code>: The security key is set to 6 characters (`paramkey`) in the `WHATAP_HOME`*/security.conf* file where the *whatap.ini* file is located.
+
+  - <code class="my">Below PHP agent v2.8.0</code>: The security key is set to 6 characters within the `WHATAP_HOME`*/paramkey.txt* file where the *whatap.ini* file is located. If the *paramkey.txt* file does not exist, it is automatically created with a random value.
+
+  :::
 
 - **whatap.profile_http_parameter_url_prefix** <span class='type'>String</span>
 
@@ -62,8 +78,6 @@
 
 - **whatap.ignore_http_method** <span class='type'>String</span>
 
-  Default `Empty`
-
   Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 
   ```ini title="whatap.ini"
@@ -74,14 +88,8 @@
   ignore_http_method=OPTIONS,HEAD
   ```
 
-- **whatap.biz_exceptions** <span class='type'>String</span>
+  :::note
 
-  Default `Empty`
+  The HTTP methods registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
 
-  Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
-
-- **whatap.ignore_exceptions** <span class='type'>String</span>
-
-  The errors of the registered exceptions are ignored.
-
-  In case of exception, if the custom exception class is not defined, data is collected as exception by default. To exclude specific exceptions, define the custom exception class and then set the name of exception.
+  :::

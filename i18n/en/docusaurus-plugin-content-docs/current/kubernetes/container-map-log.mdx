@@ -14,11 +14,11 @@ Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection
 
 The WhaTap Kubernetes monitoring service collects and stores the logs that occur in Kubernetes. 
 
-<!-- 
+{/* 
 
-실시간으로 발생하는 로그는 컨테이너 ***Stdout/Stderr*** 탭의 최근 로그 메시지와 ***로그 검색*** 탭을 통해 조회할 수 있습니다. >
+실시간으로 발생하는 로그는 컨테이너 **_Stdout/Stderr_** 탭의 최근 로그 메시지와 **_로그 검색_** 탭을 통해 조회할 수 있습니다. >
 
--->
+*/}
 
 Kubernetes has two types of logs:
 
@@ -115,3 +115,33 @@ kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:
 The latest version of the WhaTap Kubernetes agent can be checked in [the following](https://hub.docker.com/r/whatap/kube_mon/tags).
 
 :::
+
+{/* >
+
+- Add the `logsink_enabled=true` setting in **_Management_** > **_Agent CONFIG._** on the WhaTap monitoring service page.
+- To add the settings for all nodes in the cluster project, go to **_Project Default_** > **_Nodes_**.
+- To add settings for some nodes, first select one or more nodes.
+
+**_Management_** > **_Agent CONFIG._** > Select Node Agent > **_+ Add Option_** > Select options for all agents > Select node to apply 
+
+![Agent configuration](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
+
+:::note
+
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
+
+:::
+
+### Go to Log Search
+
+![Log search moving sc](/img/k8s-log-search-to-log-search.png)
+
+Click **_Log search_** on the right of the **_Log_** tab. **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
+
+:::note
+
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
+
+:::
+
+*/}

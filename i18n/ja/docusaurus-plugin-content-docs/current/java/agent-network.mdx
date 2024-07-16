@@ -1,21 +1,25 @@
 ---
 id: agent-network
 title: エージェントの通信設定
-description: エージェントとサーバー間の接続設定
+description: Javaエージェントがアプリケーションサーバーから収集したデータをサーバーに転送するためのネットワーク設定方法を案内します。主な設定オプションとしては、収集サーバーホスト、ポート、タイムアウト値、ネットワーク転送サイズ、データ転送キューサイズなどがあり、エージェントの効率的なデータ管理と安定したサーバー通信を保証するために重要です。
 tags:
   - Java
+  - アプリケーション
+  - エージェント
 ---
 
-{@include: ../common-items/_common-network.mdx}
+import Commonnetwork from "../common-items/_common-network.mdx";
+
+<Commonnetwork />
 
 - **net_send_queue1_size** <span class='type'>Int</span>
 
-  デフォルト値`256`
+  既定値`256`
 
   トレース情報とアクティブスタックを除く、データ転送に使用するQueueのサイズを設定します。設定するサイズが10以下の場合は、10に設定します。
 
 - **net_send_queue2_size** <span class='type'>Int</span>
 
-  デフォルト値 `512`
+  既定値 `512`
 
   トレース情報とアクティブスタックデータの転送に使用するQueueのサイズを設定します。設定したサイズが10以下の場合は、10に設定します。

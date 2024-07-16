@@ -1,42 +1,64 @@
 ---
 id: dashboard
 title: Application Dashboard
-description: You can monitor resources of your web application server in real time.
+description: The following explains how to monitor key metrics for Java applications in real time and view historical data. You can find dashboard settings and usage, including information like CPU, memory usage, transaction status, and more, to help you quickly identify and analyze issues. It includes how to check the agent's connection status, monitor agents by category, edit dashboard widgets, and manage presets.
 tags:
   - Java
   - Dashboard
   - Application
-  - Application Monitoring
 ---
 
-<!-- 애플리케이션 대시보드 소개-->
+{/* 애플리케이션 대시보드 소개*/}
+import Apmdashboarddesc from "../common-items/_apm-dashboard-desc.mdx";
 
-{@include: ../common-items/_apm-dashboard-desc.mdx}
+<Apmdashboarddesc />
 
-<!-- 과거 데이터 조회하기-->
+{/* 과거 데이터 조회하기*/}
+import Apmdashboardsetpasttime from "../common-items/_apm-dashboard-set-past-time.mdx";
 
-{@include: ../common-items/_apm-dashboard-set-past-time.mdx}
+<Apmdashboardsetpasttime />
 
-<!-- 에이전트 확인하기-->
+{/* 에이전트 확인하기*/}
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
 
-{@include: ../common-items/_apm-dashboard-check-agent.mdx}
+<Apmdashboardcheckagent />
 
-<!-- 위젯 편집하기-->
+{/* 분류별 에이전트 모니터링*/}
+import Dashboardselectagentcategory from "../common-items/_dashboard-select-agent-category.mdx";
 
-{@include: ../common-items/_apm-dashborad-edit-widget.mdx}
+<Dashboardselectagentcategory />
 
-<!-- 프리셋-->
+{/* 에이전트 검색하기 */}
+import SearchAgent from "../common-items/_apm-dashboard-search-agent.mdx";
 
-{@include: ../common-items/_apm-dashboard-preset.mdx}
+<SearchAgent />
 
-<!-- 위젯 옵션 이용하기-->
+{/* 위젯 편집하기*/}
+import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.mdx";
 
-{@include: ../common-items/_apm-dashboard-widget-options.mdx}
+<Apmdashboradeditwidget />
 
-<!-- 위젯 알아보기-->
+{/* 프리셋*/}
+import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 
-{@include: ../common-items/_apm-dashboard-about-widget.mdx} 
+<Apmdashboardpreset />
 
-<!-- 실시간 알림 확인하기-->
+{/* 기본 프리셋 변경하기 */}
+import Changedefaultpreset from "../common-items/_apm-dashboard-preset-change.mdx";
 
-{@include: ../common-items/_apm-dashboard-realtime-notice.mdx}
+<Changedefaultpreset />
+
+{/* 위젯 옵션 이용하기*/}
+import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
+
+<Apmdashboardwidgetoptions />
+
+{/* 위젯 알아보기*/}
+import Apmdashboardaboutwidget from "../common-items/_apm-dashboard-about-widget.mdx";
+
+<Apmdashboardaboutwidget />
+
+{/* 실시간 알림 확인하기*/}
+import Apmdashboardrealtimenotice from "../common-items/_apm-dashboard-realtime-notice.mdx";
+
+<Apmdashboardrealtimenotice />

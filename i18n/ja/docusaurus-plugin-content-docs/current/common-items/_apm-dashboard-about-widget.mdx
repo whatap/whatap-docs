@@ -1,4 +1,4 @@
-## ウィジェットの詳細
+## ウィジェットを調べる{#about-widget}
 
 :::info
 
@@ -24,13 +24,43 @@
 
 ### トランザクション関連ウィジェット
 
-トランザクションを通じて確認できるトラブルの事象は、まず応答時間で把握できます。 また、進行中のトランザクションが終了しない場合は、これもトラブルとして認識すべきです。 WhaTap Monitoringでは、進行中のトランザクションの遂行時間に基づいて状態を表示します。 <span class='normal'>青色(Normal)</span>は応答時間が正常なトランザクション、<span class='slow'>橙色(Slow)</span>は応答時間が8秒までの遅いトランザクション、<span class='vslow'>赤色(Very slow)</span>は、応答時間が8秒を超えた非常に遅いトランザクションを意味します。 これにより、ユーザーはトラブル状況が直感的にすぐ認識できるようになります。
+トランザクションを通じて確認できるトラブルの事象は、まず応答時間で把握できます。 また、進行中のトランザクションが終了しない場合は、これもトラブルとして認識すべきです。 WhaTap Monitoringでは、進行中のトランザクションの遂行時間に基づいて状態を表示します。 <span class='normal'>青色(Normal)</span>は応答時間が正常なトランザクション、<span class='slow'>オレンジ色(Slow)</span>は応答時間が8秒までの遅いトランザクション、<span class='vslow'>赤色(Very slow)</span>は、応答時間が8秒を超えた非常に遅いトランザクションを意味します。 これにより、ユーザーはトラブル状況が直感的にすぐ認識できるようになります。
 
-#### <Cmdname sid="AA001" />
+#### <Cmdname sid="AA001" /> {#active-trs-speed}
 
-![アクティブトランザクションスピード](/img/speedmeter.png)
+<ImgLang img="speedmeter.png" desc="アクティブTXスピードチャート" />
 
-現在進行中のトランザクション(中央領域)と、終了したトランザクション(右領域)の状態を確認できます。 左から右に流れる水玉模様のアイコンは、トランザクションを意味します。 アクティブトランザクションの状態を速度(<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>)で色分けし、右上に数値として表示します。 
+現在進行中のトランザクション(中央領域)と、終了したトランザクション(右領域)の状態を確認できます。 左から右に流れる水玉模様のアイコンは、トランザクションを意味します。 
+
+- 左領域
+
+  リクエストTXの数を意味し、TXの数に比例してより多く、より速く表示します。
+
+- 中央領域
+
+  アクティブTXの状態を速度で色分けし、右上に個数を表示します。 チャートの数字は、アクティブTX全体の数です。 チャートの色の意味は次のとおりです。
+
+  - 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+
+  - オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+
+  - 赤色(<span class='vslow'>Very Slow</span>)：8秒以上
+
+- 右領域
+
+  アプリケーションの性能指標(Application Performance Index, Apdex)を意味します。 ウェブアプリケーションの顧客満足度を測定した指標であり、0と1の間の数です。 水滴が飛んでいく速度はApdexのトランザクションの合計数に比例し、水滴の色の意味は次のとおりです。
+
+  - 青色:<span class='normal'>Apdex満足</span>(Satisfied)数 
+
+  - オレンジ色:<span class='slow'>Apdex許容</span>(Tolerating)数 
+
+  - 赤色:<span class='vslow'>Apdex不満</span>(Frustrated)数= `APDEXトランザクション総数` - (`Apdex満足数` + `Apdex許容数`)
+
+  :::note
+
+  アプリケーションの性能指標(Application Performance Index、Apdex)についての詳細は[次のリンク](https://www.apdex.org)を参照してください。
+
+  :::
 
 #### <Cmdname sid="AA002" /> {#active-trs}
 
@@ -44,7 +74,7 @@
 
 - 青色(<span class='normal'>Normal</span>)： 0秒~3秒
 
-青色が多い状況は問題ありません。 これらの一部が橙色や赤色に変わっていくかを監視する必要があります。 トラブルが発生すると、進行中のトランザクション数が増加し、赤色の割合が高くなります。 一方で、レスポンスが非常に速いシステムの場合、処理されるトランザクション数(TPS)が多くても、進行中のトランザクション数は少ないことがあります。
+青色が多い状況は問題ありません。 これらの一部がオレンジ色や赤色に変わっていくかを監視する必要があります。 トラブルが発生すると、進行中のトランザクション数が増加し、赤色の割合が高くなります。 一方で、レスポンスが非常に速いシステムの場合、処理されるトランザクション数(TPS)が多くても、進行中のトランザクション数は少ないことがあります。
 
 - 左上には、進行中のトランザクションが最も多いエージェント名を表示します。
 
@@ -58,11 +88,19 @@
 
   :::note
 
-  - トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、<Cmdname sid="show_trace" className="uitext" />ボタンを選択してください。 <Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06527" className="uitext" />ウィンドウについての詳細は、<Link to="trs-profile">次の文書</Link>を参考にしてください。
+  - トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、<Cmdname sid="show_trace" className="uitext" />ボタンを選択してください。 <Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06527" className="uitext" />画面についての詳細は、<Link to="trs-profile">次の文書</Link>を参照にしてください。
 
   - トランザクションの詳細については、[次の文書](track-transactions-intro)を参照してください。
 
   :::
+
+#### <Cmdname sid="AA018" /> {#active-trs-agent}
+
+<ImgLang img='apm-dashboard-active-tx-agent.png' desc='エージェントアクティブTX' />
+
+<Cmdname sid="AA002" className="uitext" />ウィジェットは、エージェント選択オプションで選択した基準に従って、マージされたデータをチャートに表示します。 一方、<Cmdname sid="AA018" className="uitext" />ウィジェットでは選択したエージェント分類の基準に含まれたエージェントの状況を確認できます。
+
+ダッシュボードでマウスの右ボタンをクリックし、ウィジェット一覧で<Cmdname sid="AA018" className="uitext" />ウィジェットを選択してください。
 
 #### <Cmdname sid="AA004" /> {#active-status}
 
@@ -84,21 +122,21 @@
 
   :::
 
-- <Cmdname sid="active_stat_socket" className="uitext" />：外部システムとのTCP接続の試行を意味します。 <Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続がないために、障害が発生している可能性があります。
+- <Cmdname sid="active_stat_socket" className="uitext" />：外部システムとのTCP接続試行を意味します。 <Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続ができないため障害が発生している可能性があります。
 
 #### <Cmdname sid="AA005" />
 
 <ImgLang img='hitmap.png' desc='ヒットマップ' />
 
-<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 レスポンスタイムが伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />内のチャート領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />ウィンドウが表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>を参照してください。
+<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 応答時間が伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />チャートの中の領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>を参照にしてください。
 
 - 通常のトランザクションは水色→青色→紺色の順に表現されます。
 
-- エラートランザクションは黄色→橙色→赤色の順に表現されます。
+- エラートランザクションは黄色→オレンジ色→赤色の順に表現されます。
 
-- 画面の右上の数字はチャート内の<span class='normal'>トランザクション数と</span>/<span class='slow'>エラー数</span>を意味します。
+- 画面の右上の数字はチャート内の<span class='normal'>トランザクション数</span>/<span class='slow'>エラー数</span>を意味します。
 
-- <Cmdname sid="yaxis" className="uitext" />ボタンをタップすると、実行時間を示すY軸を自動調整します。
+- <Cmdname sid="yaxis" className="uitext" />ボタンを選択すると、実行時間を示すY軸を自動調整します。
 
 - <Cmdname sid="err" className="uitext" />ボタンを選択すると、エラートランザクションのみ表示します。
 
@@ -110,11 +148,21 @@
 
 - TPSや平均応答時間などの統計情報には影響しません。
 
-- エージェント設定により、ポリシーを設定できます。 詳細については、[次の文書](agent-transaction)を参考してください。
+- エージェント設定により、ポリシーを設定できます。 詳細については、[次の文書](agent-transaction)を参照にしてください。
 
 - ヒットマップウィジェットを使用してトランザクションを分析するプロセスについては、次の文書を参照してください。
 
 :::
+
+#### <Cmdname sid="AA016" />
+
+<ImgLang img='apm-dashboard-active-tx-equalizer.png' desc='アクティブTXイコライザー' />
+
+エージェント全体の一覧と進行中のトランザクションの合計数を表示します。 チャートの各グラフにマウスをオーバーすると、トランザクションのステータス速度を確認できます。 トランザクション状態の速度は、<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>に分類します。
+
+- 非活性化されたエージェントを表示または非表示にするには、![エージェント表示アイコン](/img/ic-inactive.svg)ボタンを選択します。 
+
+- ![right-arrow](/img/right-arrow.svg)ボタンを選択すると<Cmdname sid="side_multi_active_tx" className="uitext" />メニューに移動します。
 
 ### サービス関連ウィジェット
 
@@ -124,11 +172,13 @@
 
 ![Apdex](/img/apm-dashboard-apdex.png)
 
-{@include: ../common-items/_java-apdex-desc.mdx} 
+import Javaapdexdesc from "../common-items/_java-apdex-desc.mdx";
+
+<Javaapdexdesc />
 
 :::note
 
-満足Sのデフォルト値は<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで変更できます。 設定キーの値は`apdex_time`です。 エージェントバージョン2.0以降に対応しています。
+満足Sの既定値は<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで変更できます。 設定キーの値は`apdex_time`です。 エージェントバージョン2.0以降に対応しています。
 
 :::
 
@@ -162,13 +212,15 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 <ImgLang img='apm-dashboard-cpu.png' desc='システムCPU' />
 
-アプリケーションサーバーのCPU使用量です。 リアルタイムでCPU使用量の変化の推移を認することができます。
+アプリケーションサーバーのCPU使用量です。 リアルタイムでCPU使用量の変化の推移を把握できます。
 
 :::note
 
 TPS、応答時間、CPU 使用率分析の詳細については[次の文書](../best-practice-guides/about-apm-dashboard#analysis-user-service-resource)を参照してください。
 
 :::
+
+<InDoc product="java,nodejs,golang">
 
 #### <Cmdname sid="AA010" /> {#heap-memory}
 
@@ -178,13 +230,9 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 メモリ折れ線チャートは通常、波線を続けます。 アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。 GC(Garbage Collection)によってメモリをクリーンアップすると減少します。 <Cmdname sid="AA010" className="uitext" />指標は平均値を使って表記します。
 
-:::note
+</InDoc>
 
-- JavaとNode.jsは、ヒープメモリの合計量と使用量を意味します。
-
-- PHPおよびPython, .Netはプロセスのメモリの使用量を意味します。
-
-:::
+<InDoc product="java">
 
 :::tip
 
@@ -198,25 +246,49 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 :::
 
+</InDoc>
+
+<InDoc product="php,dotnet,python">
+
+#### <Cmdname sid="AA017" /> {#process-memory}
+
+<ImgLang img='apm-dashboard-process-memory.png' desc='プロセスメモリ' />
+
+サーバーごとに使用できるシステムの最大メモリと指定されたプロセスの使用メモリを合計して表示します。
+
+メモリ折れ線チャートは通常、波線を続けます。 アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。 GC(Garbage Collection)によってメモリをクリーンアップすると減少します。 <Cmdname sid="AA017" className="uitext" />指標は平均値を使用して表示します。
+
+</InDoc>
+
+<Xclude product="java">
+
+:::tip
+
+チャート分析の詳細については、次のリンクを参考にしてください。 [月間WhaTap：モニタリングで注目すべき指標](https://www.whatap.io/ko/blog/94/)
+
+:::
+
+</Xclude>
+
 ### ユーザー関連ウィジェット
 
 #### <Cmdname sid="realtime_user" />
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='同時接続ユーザー' />
 
-リアルタイムブラウザのユーザー数を表示します。 5秒ごとに、過去5分以内にトランザクションを行ったユーザーを重複なくカウントされ、表示します。 ユーザーのブラウザのIPに基づいてカウントします。
+リアルタイムブラウザのユーザー数を表示します。 5秒ごとに、直近5分以内にトランザクションを発生させたユーザーを重複なくカウントして表示します。 ユーザーブラウザのIP情報でカウントします。
 
 :::note
 
 <InDoc product='java'>
 
-- エージェント設定では、ユーザー識別のためにIPを使用または、クッキーを使用します。 詳しい内容は[次の文書](agent-additional-option)を参照してください。
+- エージェント設定でユーザーを識別するためにIPまたはクッキーを選択できます。 詳しい内容は、[次の文書](agent-additional-option)を参照にしてください。
 
 </InDoc>
 
 - 通常、接続ユーザーはネットワークに接続しているユーザーを意味します。 ただし、ウェブシステムは未接続のネットワークを使用するため異なります。 接続されているという意味ではなく、最近のリクエストを送信したユーザーが測定の対象になる可能性があります。
 
-- リアルタイム(同時接続) ユーザーとは、同じ時間帯にシステムを使用しているユーザーを意味します。 リアルタイム(同時接続) ユーザーを計算または測定する方式は多数あります。
+- リアルタイム(同時接続)ユーザーとは、同じ時間帯にシステムを使用しているユーザーを意味します。 リアルタイム(同時接続)ユーザーを計算または測定する方式は多数あります。
 
 - ユーザー数は、単に合計されるのではなく、** HyperLogLog**によって計算されます。 **HyperLogLog**は、非常に少ないメモリ内の要素の数を推定する確率的なデータ構造を意味します。
 

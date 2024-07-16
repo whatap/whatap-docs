@@ -12,29 +12,55 @@ import TR from '@site/src/components/TR';
 
 WhaTapのサーバーモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='ZLPbs0jnF9k' en='GHev0jbMrIQ' ja='GHev0jbMrIQ' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
 
-## 環境別エージェントのインストール
+## OS選択
+
+<Cmdname sid="side_agentInstall" className="uitext" />画面で、インストールするエージェントのオペレーティング システムを選択してください。
+
+<ImgLang img='server-select-os.png' desc='OSの選択'/>
+
+:::tip
+
+プロジェクトを作成すると、自動的に<Cmdname sid="agent_installation" className="uitext" />ページに移動します。<Cmdname sid="agent_installation" className="uitext" />ページが表示されない場合は、左側のメニューから<Cmdname sid="all_projects" className="uitext" />を選択し、新しく作成したプロジェクトを選択します。
+
+:::
+
+{/* 프로젝트 액세스 키 안내 중 첨언의 경우 서버는 운영체제 선택란에 따로 빼기 */}
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
+
+## OS別エージェントのインストール
 
 <details>
 <summary>サーバー エージェントファイルの構成</summary>
 
-{@include: ../common-items/_sv-cpf.mdx} 
+import Svcpf from "../common-items/_sv-cpf.mdx";
 
-{@include: ../common-items/_sv-lf-cpf.mdx}  
+<Svcpf />
 
-{@include: ../common-items/_sv-w-cpf.mdx} 
+import Svlfcpf from "../common-items/_sv-lf-cpf.mdx";
+
+<Svlfcpf />
+
+import Svwcpf from "../common-items/_sv-w-cpf.mdx";
+
+<Svwcpf />
 
 </details>
 
-**プロジェクト作成**と**プロジェクトアクセスキー**の確認は、共通プロセスです。 
+**プロジェクト作成**後**OSの選択**と**プロジェクトアクセスキー**の確認は、共通のプロセスです。 
 
-使用する環境に応じたインストール方法を次のように提供します。 エージェントをインストールして適用する前に [動作環境環境](supported-spec)を確認してください。
+使用するOSに合わせてインストール方法を次のように提供します。 エージェントをインストールして適用する前に[動作環境](supported-spec)を確認してください。
 
 <DocCardList/>

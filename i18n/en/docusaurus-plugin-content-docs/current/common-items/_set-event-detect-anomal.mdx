@@ -1,47 +1,47 @@
-Home > Select Project > **_Alert_** > **_Event Setting_** > **_Anomaly Detection_** tab
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > Select <Cmdname sid="anomaly_detection" className="uitext" /> tab
 
 Anomaly detection is a set of behaviors that look for unexpected patterns in data such as anomaly, outlier, and abnormal. Based on the metrics data, you can set alerts to be sent when the rising and falling patterns are not as usual. 
 
 <ImgLang img='set-event-abnormal.png' desc='Anomaly Detection' />
 
-By selecting **_+ Add alert policy_**, you can perform the settings for the **_anomaly detection_** event. After all settings are finished, select **_Save_**. By selecting the toggle button on the right of **_Anomaly Detection_**, you can select the activation.
+By selecting <Cmdname sid="add_alert_setting" className="uitext" />, you can perform the settings for the <Cmdname sid="anomaly_detection" className="uitext" /> event. After all settings are finished, select <Cmdname sid="save" className="uitext" />. By selecting the toggle button on the right of <Cmdname sid="anomaly_detection" className="uitext" />, you can select the activation.
 
 ## Creating the anomaly detection event
 
 <ImgLang img='set-event-anormal-create.png' desc='Anomaly Detection' />
 
-### **_Event basic information_**
+### Event basic information {#event_basic_rule_help}
 
 Enter the basic data for the anomaly detection event.
 
-- **_Level_**: Select a level among <span style={{color: '#757575'}}>Info</span>, <span class='slow'>Warning</span>, and <span class='vslow'>Fatal</span>.
+- <Cmdname sid="level" className="uitext" />: Select a level among <Cmdname sid="info" className="info" />, <Cmdname sid="warning" className="slow" />, and <Cmdname sid="critical" className="vslow" />.
 
-- **_Message_**: Enter an alert message to be displayed when an event occurs. You can apply variables to the message by entering `${tag or field key}`. The key to enter into the variable must be a value contained in the selected metric data, **_Category_**.
+- <Cmdname sid="message" className="uitext" />: Enter the alert message displayed upon occurrence. You can apply a variable to the message by entering `&#36;&#123;Tag&#125;` or `&#36;&#123;Field&#125;`. The key to enter for the variable must be a value contained in the selected metrics data, <Cmdname sid="category" className="uitext" />.
 
-### **_Metrics_**
+### Metrics {#metrics}
 
 Select an event occurrence target.
 
-- **_Category_**: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
+- <Cmdname sid="category" className="uitext" />: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
 
-- **_Field_**: Select a field to use as an event generation condition. You can select multiple items.
+- <Cmdname sid="field" className="uitext" />: Select a field to use as an event generation condition. You can select multiple items.
 
-- **_Filter_**: Select an event condition target. You can select multiple items.
+- <Cmdname sid="filter" className="uitext" />: Select an event condition target. You can select multiple items.
 
-- **_Object Merge_**: You can select an object merging method.
+- <Cmdname sid="object_merge" className="uitext" />: You can select an object merging method.
 
-### **_Anomaly Detection_**
+### Anomaly detection {#anomaly_detection}
 
-You can select the severity of **_Rising Pattern_** or **_Falling Pattern_**. This function can be enabled or disabled by selecting the toggle buttons for each item.
+You can select the severity of <Cmdname sid="rising_pattern" className="uitext" /> or <Cmdname sid="falling_pattern" className="uitext" />. This function can be enabled or disabled by selecting the toggle buttons for each item.
 
 ## Modifying the anomaly detection event
 
-1. Go to **_Alert_** > **_Event Setting_** and then select the **_Anomaly Detection_** tab.
+1. In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, select the <Cmdname sid="anomaly_detection" className="uitext" /> tab.
 
-2. In the **_anomaly detection_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the item to modify.
+2. In the <Cmdname sid="anomaly_detection" className="uitext" /> list, select ![Edit icon](/img/ico-edit.svg) on the right of the item to modify.
 
-3. The anomaly detection setting window appears. After modifying the desired items and then select **_Save_**.
+3. If the <Cmdname sid="anomaly_detection" className="uitext" /> window appears, modify the desired items and then select <Cmdname sid="save" className="uitext" />.
 
 ## Deleting the anomaly detection event
 
- In **_Alert_** > **_Event Setting_**, select the **_Anomaly Detection_** tab. Select ![Delete icon](/img/ico-trash.svg) on the right of the item to delete. When the confirmation message appears, select **_Delete_**.
+In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, select the <Cmdname sid="anomaly_detection" className="uitext" /> tab. Select ![Delete icon](/img/ico-trash.svg) on the right of the item to delete. When the confirmation message appears, select <Cmdname sid="delete" className="uitext" />.

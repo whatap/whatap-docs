@@ -1,34 +1,43 @@
 ---
 id: stat
-title: 統計データの確認
-description: データベースごとの統計データを提供します。
+title: SQL統計
+description: SQL Serverのデータベースごとの統計データを提供します。
 tags:
   - SQL Server
   - データベース
-  - データベースモニタリング
   - 統計
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+{/* SQL 통계*/}
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-{@include: ../common-items/_db-sql-static.mdx}
+<Dbstatsqldesc />
 
-{@include: ../common-items/_db-trend-by-query.mdx}  
+{/* SQL 통계 기본 사용 안내 */}
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-{@include: ../common-items/_db-detail-view-query.mdx} 
+<Dbstatsqlbasic />
 
-### 詳細情報を確認する
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+<Dbstatsqlviewquery />
 
-<!-- mysql, mariadb 지원 -->
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
 
-<!-- {@include: ../common-items/_db-database-size.mdx} -->
+<Dbstatsqlviewquerydetailssummary />
 
-<!-- oracle, tibero -->
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
 
-<!-- {@include: ../common-items/_db-tablespace-size.mdx}-->
+<Dbproductsqlstatquerydetails />
 
-<!-- oracle, tibero -->
+{/* 필터 조건추가하기*/}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
-<!-- {@include: ../common-items/_db-sga-size.mdx} -->
+<Dbsqlfilter />
+
+## テーブルカラムの設定{#change-column}
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

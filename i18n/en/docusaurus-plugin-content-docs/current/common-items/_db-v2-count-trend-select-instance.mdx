@@ -1,17 +1,25 @@
 ### Selecting a comparison target
 
-Select ![number 1](/img/number-01.png) **_Reference Date_** and **_Instance_**, and then select ![number 2](/img/number-02.png) **_Comparison Date_** and **_Instance_**. If you hover your mouse over the chart, you can compare the data through the tooltip that appears.
+Select ![number 1](/img/number-01.png) <Cmdname sid="TTL06202" className="uitext" /> and <Cmdname sid="instance" className="uitext" />, and then select ![number 2](/img/number-02.png) <Cmdname sid="TTL06203" className="uitext" /> and <Cmdname sid="instance" className="uitext" />. If you hover your mouse over the chart, you can compare the data through the tooltip that appears.
 
-<ImgLang img='db-compare-count-trend-tootip.png' dsec='Tooltip' />
+<InDoc product="postgresql,mysql"><ImgLang img='db-compare-count-trend-tootip.png' dsec='Tooltip' /></InDoc>
 
-- The solid line in the graph chart displays the data for the **_Reference Date_**, and the dotted line displays the data for the **_comparison date_**.
+<InDoc product="redis"><ImgLang img='db-compare-count-trend-tootip-redis.png' dsec='Tooltip' /></InDoc>
 
-- The items marked with **_(Comparison)_** in the tooltip are the data for the **_Comparison Date_**.
+<InDoc product="mongodb">
+
+![Tooltip](/img/db-compare-count-trend-tootip-mongodb.png)
+
+</InDoc>
+
+- The solid line in the graph chart displays the data for the <Cmdname sid="TTL06202" className="uitext" />, and the dotted line displays the data for the <Cmdname sid="TTL06203" className="uitext" />.
+
+- The items marked with <UI>(Comparison)</UI> in the tooltip are the data for the <Cmdname sid="TTL06203" className="uitext" />.
 
 :::note
 
-- In **_Database_**, you can select a database for comparison.
+- In <Cmdname sid="database" className="uitext" />, you can select a database for comparison.
 
-- The colors in **_Database_** are the same in the graph chart.
+- The colors in <Cmdname sid="database" className="uitext" /> are the same in the graph chart.
 
 :::

@@ -13,7 +13,7 @@ GoogleAppエンジン(Google Cloud App Engine)にPHPモニタリングエージ�
 
 GoogleAppエンジンPHPの**基本型は、PHP拡張型モジュールおよびサービスデーモンを実行できません**。Docker Container経由でインストールしてください。 
 
-GoogleAppエンジンの設定ファイルである_app.yaml_ファイルに`flex`環境、`custom`ランタイムを設定してください。
+GoogleAppエンジンの設定ファイルである*app.yaml*ファイルに`flex`環境、`custom`ランタイムを設定してください。
 
 ```yaml title=SH
 $ vi app.yaml
@@ -21,7 +21,7 @@ env: flex
 runtime: custom
 ```
 
-Custom Dockerで実行するには、`flex`環境と`custom`ランタイムで設定された_app.yaml_ファイルと同じ場所に_Dockerfile_を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参照してください。
+Custom Dockerで実行するには、`flex`環境と`custom`ランタイムで設定された*app.yaml*ファイルと同じ場所に*Dockerfile*を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参照してください。
 
 ```docker title=Docker
 # google-appengine php php56, php70, php71
@@ -88,10 +88,23 @@ GoogleAppエンジンで使用するネットワークのファイアウォー�
 
 ## 配布およびインスタンスの確認
 
-Google Cloud SDKを使用して設定された_app.yaml_ファイルと_Dockerfile_をデプロイしてください。
+Google Cloud SDKを使用して設定された*app.yaml*ファイルと*Dockerfile*をデプロイしてください。
 
 ```bash title=SH
 $ gcloud app deploy
 ```
 
 Googleクラウドコンソールからアプリエンジンのインスタンスを確認してください。
+
+{/* 
+
+ファイアウォールルールの追加 
+
+![gae_firewall](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall.png)
+![gae_firewall_detail](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall_detail.png)
+
+앱 엔진 생성 인스턴스 확인
+
+![gae_instance](https://img.whatap.io/media/agent_php/install/tinified/gae_instance.png)
+
+*/}

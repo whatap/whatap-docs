@@ -1,17 +1,21 @@
 ---
 id: elastic-beanstalk
 title: Elastic Beanstalk
-description: Elastic Beanstalkの環境で、WhaTapエージェントの適用を完了してください。
+description: AWS Elastic Beanstalk環境でJavaアプリケーションを実行するユーザーが、WhaTapのJavaモニタリングエージェントを効果的に適用するためのJVMオプションを設定する方法を案内します。Elastic Beanstalkに合わせたWhaTap Javaエージェントのインストールと構成過程、必須JVMオプションの追加及び設定方法を確認することができます。 さらに、ヒストグラムの照会方法が含まれています。
 tags:
   - Java
   - Elastic Beanstalk
+  - アプリケーション
+  - エージェント
 ---
 
 ## エージェントの適用
 
 **Elastic Beanstalk**を使用してデプロイする場合、WhaTapエージェントを適用します。 
 
-{@include: _pass-note.mdx}
+import Passnote from "./_pass-note.mdx";
+
+<Passnote />
 
 1. Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
@@ -22,9 +26,9 @@ tags:
 
 2. Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
-   - _paramkey.txt_
-   - _whatap.agent-2.0_25.jar_
-   - _whatap.conf_
+   - *paramkey.txt*
+   - *whatap.agent-2.0_25.jar*
+   - *whatap.conf*
 
    ```bash
    # ディレクトリ圧縮
@@ -57,7 +61,7 @@ tags:
    web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
    ```
 
-5. _Procfile_ファイルと_.ebextensions_ファイル、_`{application}`.jar_ファイルを圧縮してください。
+5. *Procfile*ファイルと*.ebextensions*ファイル、*`{application}`.jar*ファイルを圧縮してください。
 
    ```bash
    zip -r {application}.zip Procfile .ebextensions/{application}.jar
@@ -78,7 +82,9 @@ tags:
 
 :::note
 
-{@include: _java-17.mdx}
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
@@ -88,8 +94,11 @@ tags:
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
 
-## モニタリングの開始
+<Setheapmemory />
 
-{@include: ../../common-items/_start-apm.mdx} 
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
+
+<Nextstep />

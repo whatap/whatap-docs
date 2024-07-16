@@ -111,7 +111,7 @@ WhaTapモニタリングサービスのホーム画面からプロジェクト�
 
 ### オプション設定
 
-- `stats_enabled`：収集状態データの収集有無を設定します。デフォルト値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
+- `stats_enabled`：収集状態データの収集有無を設定します。既定値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
 
 - `stats_category`：収集データを保存するメトリクスカテゴリを設定します。値を`logsink_stats`に設定してください。統計データのフィールドは次のとおりです。
 
@@ -134,9 +134,11 @@ WhaTapモニタリングサービスのホーム画面からプロジェクト�
 
 - `nowrap_keywords`：行単位のログ検索時に、対応するオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
 
-### Windowsイベントログオプション設定
+### Windowsイベントログのオプション設定
 
-{@include: ../common-items/_log-server-windows-event.mdx}
+import Logserverwindowsevent from "../common-items/_log-server-windows-event.mdx";
+
+<Logserverwindowsevent />
 
 ## ログモニタリングの活性化
 
@@ -144,6 +146,10 @@ WhaTapモニタリングサービスのホーム画面からプロジェクト�
 
 **_ログモニタリングを開始する_**セクションの**_ログモニタリングを有効にする_**タブのトグルボタンで、WhaTapログモニタリングの有効または無効にできます。 
 
-{@include: ../common-items/_log-java-start.mdx}
+import Logjavastart from "../common-items/_log-java-start.mdx";
 
-{@include: ../common-items/_log-active-note.mdx} 
+<Logjavastart />
+
+import Logactivenote from "../common-items/_log-active-note.mdx";
+
+<Logactivenote />

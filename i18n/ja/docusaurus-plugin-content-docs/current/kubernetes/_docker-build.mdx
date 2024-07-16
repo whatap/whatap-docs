@@ -4,7 +4,7 @@
    mkdir -p {Docker build Dir}
    ```
 
-2. _whatap.conf_ファイルを作成します。
+2. *whatap.conf*ファイルを作成します。
 
    ```bash
    cat >{Docker build Dir}/whatap.conf <<EOL
@@ -14,7 +14,7 @@
 
    :::note
 
-   _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
+   *whatap.conf*ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
 
    :::
 
@@ -34,7 +34,7 @@
 
    :::note
 
-   _whatap.conf_ファイルは事前に作成する必要があります。
+   *whatap.conf*ファイルは事前に作成する必要があります。
 
    :::
 
@@ -49,7 +49,7 @@
 
 5. Dockerfileアプリケーションの起動コマンドに、以下を追加してください。その前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
 
-   エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+   エージェントのファイル名が*whatap.agent-1.2.3.jar*の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
    ```bash
    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true

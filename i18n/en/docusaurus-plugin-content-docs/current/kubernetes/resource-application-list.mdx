@@ -17,50 +17,40 @@ It displays the list of containerized applications. If you select a desired colu
 
 <ImgLang img='k8s-app-list.png' desc='Application List' />
 
+- Real-time data is updated every 10 seconds.
+
+- It provides the services for searching, column sorting, and detailed view, and _CSV_ file downloading.
+
+  > CSV file name, _kubernetes_application_list\_`{pcode}`\_`{timestamp}`.csv_
+
 :::note 
 
-{@include: _k8s-com-list.mdx} 
+import K8scomlist from "./_k8s-com-list.mdx";
+
+<K8scomlist />
 
 :::
 
 ## Metric information
 
-{@include: ../common-items/_k8s-list-metric.mdx} 
+import K8slistmetric from "../common-items/_k8s-list-metric.mdx";
 
-## Filtering
+<K8slistmetric />
+ 
+## Filter
 
-{@include: ../common-items/_k8s-list-filter.mdx}
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
 
+<K8slistfilter />
+  
 ## Select Column
 
-{@include: ../common-items/_k8s-list-cl.mdx}
+import K8slistcl from "../common-items/_k8s-list-cl.mdx";
 
+<K8slistcl />
+ 
 ## Display Detail
 
-When you select a desired application to view in <Cmdname sid="containerizedAppList" className="uitext" />, you can see the details about the application.
+import K8slistdetail from "../common-items/_k8s-list-detail.mdx";
 
-:::note 
-
-The [Trace](container-map-trace), [Metrics](container-map-metrics), [Log](container-map-log), and [Event](container-map-event) tabs of the detailed view window are the same as in Container map's container view details.
-
-:::
-
-### Resources
-
-After selecting a target, you can see the resource list and relationship diagram for the selected resource in the <Cmdname sid="resource" className="uitext" /> tab in the detailed view. 
-
-<ImgLang img='k8s-app-list-detail.png' desc='Application List' />
-
-#### Summary
-
-It provides a summary of the list of resources for the selected resource. If you select the detailed view icon next to the resource name, the corresponding resource list screen appears. 
-
-- <Cmdname sid="container" className="uitext" />: Goes to <Cmdname sid="container_list" className="uitext" /> with only the container filtered.
-
-- <Cmdname sid="podName" className="uitext" />: Goes to <Cmdname sid="podList" className="uitext" /> with only the Pod filtered.
-
-- <Cmdname sid="node" className="uitext" />: Goes to <Cmdname sid="node_detail" className="uitext" /> with the node name selected.
-
-#### Relational diagram of resources
-
-You can visually see the relationships and status between resources. You can visually see the relationships and status between resources. As in the list, you can check the detailed metric information by hovering your mouse over a Pod, container, or application. If you select a resource, the resource list page appears.
+<K8slistdetail />

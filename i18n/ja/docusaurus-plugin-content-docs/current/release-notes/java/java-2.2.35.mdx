@@ -1,0 +1,25 @@
+---
+id: java-2_2_35
+title: Java Agent v2.2.35
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_34
+displayed_sidebar: releaseSidebar
+---
+
+2024年06月20日
+
+- <Status>Feature</Status> spring-boot-3.0.5以降(spring-webflux-6.0.7以降) バージョンでWebClient使用時、連携追跡機能を追加
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-3.0
+  ```
+
+- <Status>Fixed</Status> spring-boot-2.5未満でspring-cloud-gatewayを通じてトランザクションを呼び出すと、接続されない問題を修正
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-2.1
+  ```
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.35" />

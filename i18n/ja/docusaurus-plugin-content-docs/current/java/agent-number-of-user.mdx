@@ -1,16 +1,18 @@
 ---
 id: agent-number-of-user
 title: ユーザー数
-description: WASに接続したリアルタイムユーザー数を集計します。
+description: Javaウェブアプリケーションサーバーに接続されたユーザー数をエージェント設定を通じて集計する方法を案内します。リアルタイムのユーザー集計の活性化有無の設定、ユーザー数を集計するためのクッキー制限設定、IPアドレスまたはHTTPヘッダーの特定値に基づいたユーザーの集計方法、クライアントIP情報追跡のためのHTTPヘッダー設定などを含みます。
 tags:
   - Java
+  - アプリケーション
+  - エージェント
 ---
 
-Javaウェブアプリケーションサーバーに接続したユーザーの数を集計します。
+Javaウェブアプリケーションサーバーに接続されたユーザー数をエージェント設定を通じて集計する方法を案内します。リアルタイムのユーザー集計の活性化有無の設定、ユーザー数を集計するためのクッキー制限設定、IPアドレスまたはHTTPヘッダーの特定値に基づいたユーザーの集計方法、クライアントIP情報追跡のためのHTTPヘッダー設定などを含みます。
 
 - **trace_user_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   リアルタイムのユーザー集計の有無を設定します。ユーザー追跡オプションが重複設定されている場合、動作の優先順位は次のとおりです。
 
@@ -24,4 +26,6 @@ Javaウェブアプリケーションサーバーに接続したユーザーの�
 
   :::
 
-{@include: ../common-items/_common-collect-user.mdx}
+import Commoncollectuser from "../common-items/_common-collect-user.mdx";
+
+<Commoncollectuser />

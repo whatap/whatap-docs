@@ -14,7 +14,7 @@ tags:
 
 :::
 
-## Linux及びUnix
+## Linux
 
 インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。
 
@@ -32,7 +32,7 @@ tags:
   sudo apt-get install whatap-infra={version}
   ```
 
-- **CentOS / Amazon Linux / SUSE / XenServer**
+- **CentOS / Amazon Linux / SUSE**
 
   ```bash title=SH
   sudo yum update whatap-infra
@@ -45,29 +45,48 @@ tags:
   sudo yum install whatap-infra-{version}
   ```
 
+## Unix
+
 - **FreeBSD**
+
+  インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。
 
   ```bash title=SH
   wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
   pkg install whatap-infra.txz
   ```
 
-## AIX
+- **AIX** 
 
-インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。 
+  インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。 
 
-```bash
-stopsrc -s whatap-infra
-cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
-rpm -e whatap-infra
-rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
-cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-startsrc -s whatap-infra
-```
+  ```bash
+  stopsrc -s whatap-infra
+  cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+  rpm -e whatap-infra
+  rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  startsrc -s whatap-infra
+  ```
+
+- **Oracle Solaris** 
+
+  インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。 
+
+  ```bash
+  cp /usr/whatap/infra/conf/whatap.conf /tmp
+  /etc/init.d/whatap-infra stop
+  pkgrm whatap-infra
+  wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz
+  tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz
+  pkgadd -d .
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  /etc/init.d/whatap-infra start
+  ```
 
 ## Windows
 
-インストールされているエージェントを最新バージョンにアップデートするには、 **_管理_** > **_エージェントのインストール_** メニューに移動してください。 **_インストール案内_** セクションの **_インストールファイルのダウンロード_** 案内の指示に従って、Windowsサーバーオペレーティングシステム用のインストールファイルをダウンロードした後 _whatap_infra.exe_ ファイルを実行してください。 エージェントのアップデートした後、サービスが再起動されます。
+インストールされているエージェントを最新バージョンにアップデートするには、<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューに移動してください。<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="server_installAgent_win_download" className="uitext" /> 案内の指示に従って、WindowsサーバーOS用のインストールファイルをダウンロードした後 *whatap_infra.exe* ファイルを実行してください。 エージェントのアップデートした後、サービスが再起動されます。
 
 :::note
 

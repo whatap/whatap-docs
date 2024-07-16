@@ -12,84 +12,146 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 The following guides you to the basic installation method for using the WhaTap database monitoring service.
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
 
-## Downloading the WhaTap database agent
+{/* ## 구성도 확인 */}
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+<CheckType />
 
-3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+{/* 모니터링용 계정 생성*/}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
-   ```ini title='whatap.conf'
-   license=Project access key
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server info
+<Dbcreatemonitoringaccount />
 
-   dbms=postgresql
-   db=postgres
-   db_ip={DB server IP address}
-   db_port={DB server port number} 
-   ```
+Assign additional roles depending on the features and operation environment.
 
-4. Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+- PostgreSQL 10 or later
 
-   Download the JDBC driver for the OS and version of your database server. 
+  ```sql title="SQL"
+  create user DB_User with password 'DB Password'; 
+  grant pg_read_all_stats to DB_User;
+  ```
 
-   **PostgreSQL 9.2 or later**: https://jdbc.postgresql.org/download
+- Below PostgreSQL 10
 
-<!-- 공통 Notes-->
+  ```sql title="SQL"
+  create user DB_User with password 'DB Password';
+  alter user DB_User with superuser;
+  ```
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+- In case of using the kill session
 
-<!-- 모니터링용 계정 생성-->
+  Database monitoring provides the <UI>Kill Session</UI> function that allows you to kill an active session. To use this function, set the role as follows:
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+  ```sql title="SQL"
+  alter user DB_User with superuser;
+  ```
 
-<!-- PostgreSQL-->
+- In case of using the kill session in the AWS RDS environment
 
-```bash showLineNumbers
-# Version 10 or later
-create user whatap with password 'DB Password'; # Enter the desired password.
-grant pg_read_all_stats to whatap;
- 
-# Earlier than Version 10
-create user whatap with password 'DB Password'; # Enter the desired password.
-alter user whatap with superuser;
- 
-# In case of using the kill session
-alter user whatap with superuser;
-grant rds_superuser to whatap; # In case of using AWS RDS
+  ```sql title="SQL"
+  grant rds_superuser to DB_User;
+  ```
 
-# In case of collecting wal_count
-grant execute on function pg_ls_dir(text) to whatap;  # In case of using EDB
-alter user whatap with superuser;
+- In case of collecting wal_count
 
-#  In case of collecting the cache
-grant select on pg_backend_memory_contexts to whatap;
-grant execute on function pg_get_backend_memory_contexts to whatap;
+  ```sql title="SQL"
+  grant execute on function pg_ls_dir(text) to DB_User;  # In case of use of EDB
+  alter user DB_User with superuser;
+  ```
 
-#  In case of collecting the table size
-grant usage on schema {schema_name} to whatap;
+- In case of collecting the cache
 
-# In case of viewing the object information
-grant select on all tables in schema {schema_name} to whatap;
+  ```sql title="SQL"
+  grant select on pg_backend_memory_contexts to DB_User;
+  grant execute on function pg_get_backend_memory_contexts to DB_User;
+  ```
+
+- In case of collecting the table size
+
+  ```sql title="SQL"
+  grant usage on schema {schema_name} to DB_User;
+  ```
+
+- In case of collecting the object information (<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbObjectInfo" className="uitext" />)
+
+  ```sql title="SQL"
+  grant select on all tables in schema {schema_name} to DB_User;
+  ```
+
+{/* 액세스 키 확인 */}
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
+
+{/* DBX 에이전트 다운로드 */}
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
+
+<DownloadDBXagent />
+
+{/* ## DBX 에이전트 설정 */}
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
+
+<SettingsDBXagent />
+
+{/* ### whatap.conf 설정 */}
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
+
+<Whatapconf />
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+dbms=postgresql
+db=postgres
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
 ```
 
-## DB user file creation {#create-db-user}
+{/* ### JDBC 다운로드 */}
+import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
-<DBuserDesc name='default'/>
+<JDBCDownload />
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+:::info
 
-<!--## 에이전트 실행-->
+**PostgreSQL 9.2 or later**: https://jdbc.postgresql.org/download
 
-{@include: ../common-items/_db-run-agent.mdx} 
+:::
 
-<!--## XOS 에이전트 설치-->
+{/* 공통 Notes*/}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+<Dbinstallagentcommonnotes />
+
+### DB user file creation {#create-db-user}
+
+<DBuserDesc />
+
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+
+<Dbcreatedbuserfilebody />
+
+{/*모니터링 시작하기*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
+
+<Dbrunagent />
+
+{/*XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent />
+
+{/* ## 다음 단계 */}
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

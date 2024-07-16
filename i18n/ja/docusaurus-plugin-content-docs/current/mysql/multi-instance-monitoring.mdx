@@ -1,59 +1,103 @@
 ---
 id: multi-instance-monitoring
-title: マルチインスタンスモニタリング
+title: マルチインスタンス
 description: 複数のデータベースインスタンスの主要メトリクスを統合および表示できる機能を提供します。
 tags:
   - MySQL
   - インスタンス
   - ダッシュボード
   - データベースモニタリング
-  - マルチインスタンスモニタリング
+  - マルチインスタンス
 ---
 
-<!-- 概要-->
+{/* 개요*/}
+import Dbv2mulitinstancemonitoringdesc from "../common-items/_db-v2-mulit-instance-monitoring-desc.mdx";
 
-{@include: ../common-items/_db-v2-mulit-instance-monitoring-desc.mdx}
-
-<!-- Notes-->
-
-{@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
-
-## 基本画面ガイド
+<Dbv2mulitinstancemonitoringdesc />
 
 <ProdImg img='db-multi-instance.png' desc='マルチインスタンス' />
 
-<!-- 인스턴스 선택-->
+{/* Notes*/}
+import Dbmultiinstancemonitoringdescnotes from "../common-items/_db-multi-instance-monitoring-desc-notes.mdx";
 
-{@include: ../common-items/_db-v2-mim-select-instance.mdx}
+<Dbmultiinstancemonitoringdescnotes />
 
-<!-- 차트영역-->
+{/* 과거 데이터 조회하기*/}
+import Apmdashboardsetpasttime from "../common-items/_apm-dashboard-set-past-time.mdx";
 
-{@include: ../common-items/_db-v2-mim-chart-area.mdx}
+<Apmdashboardsetpasttime />
 
-<!-- 액티브 세션 영역-->
+{/* 에이전트 확인하기*/}
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
 
-{@include: ../common-items/_db-v2-mim-activesession-desc.mdx}
+<Apmdashboardcheckagent />
 
-{@include: ../common-items/_db-dashboard-activesession-desc.mdx}
+{/* 위젯 편집하기*/}
+import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.mdx";
 
-{@include: ../common-items/_db-dashboard-locktree-desc.mdx}
+<Apmdashboradeditwidget />
 
-{@include: ../common-items/_db-v2-mim-activesession-note.mdx}
+{/* 위젯 옵션 이용하기*/}
+import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
 
-{@include: ../common-items/_db-folding-activesession-table.mdx}
+<Apmdashboardwidgetoptions />
 
-## テーブルデータのフィルタリング
+{/* 프리셋*/}
+import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 
-{@include: ../common-items/_db-table-data-filtering.mdx}
+<Apmdashboardpreset />
 
-## テーブルカラムの設定{#change-column}
+{/* 위젯 알아보기*/}
+import Dbv2mimchartarea from "../common-items/_db-v2-mim-chart-area.mdx";
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+<Dbv2mimchartarea />
 
-<!--쿼리 자세히 보기-->
+{/* Session Table*/}
+import Dbv2mimactivesessiondesc from "../common-items/_db-v2-mim-activesession-desc.mdx";
 
-{@include: ../common-items/_db-query-details.mdx} 
+<Dbv2mimactivesessiondesc />
 
-<!-- 컬럼 정보 안내-->
+import Dbdashboardactivesessiondesc from "../common-items/_db-dashboard-activesession-desc.mdx";
 
-{@include: ../common-items/_db_mysql-column.mdx}
+<Dbdashboardactivesessiondesc />
+
+import Dbdashboardlocktreedesc from "../common-items/_db-dashboard-locktree-desc.mdx";
+
+<Dbdashboardlocktreedesc />
+
+import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-note.mdx";
+
+<Dbv2mimactivesessionnote />
+
+{/*쿼리 자세히 보기*/}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
+
+### テーブルデータのフィルタリング
+
+import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
+
+<Dbtabledatafiltering />
+
+### テーブルカラムの設定{#change-column}
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />
+
+### カラム情報ガイド {#column-info}
+
+import Mysqlcolumn from "../common-items/_db_mysql-column.mdx";
+
+<Mysqlcolumn />
+
+{/* 조회 목록 다운로드하기*/}
+import Dbdashboardsessiontabledownload from "../common-items/_db-dashboard-session-table-download.mdx";
+
+<Dbdashboardsessiontabledownload />
+
+{/* 새창으로 보기*/}
+import Dbdashboardsessiontablenew from "../common-items/_db-dashboard-session-table-new.mdx";
+
+<Dbdashboardsessiontablenew />

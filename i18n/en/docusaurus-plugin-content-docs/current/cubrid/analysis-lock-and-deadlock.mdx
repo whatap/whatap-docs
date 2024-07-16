@@ -13,18 +13,23 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 import InDoc from '@site/src/components/InDoc.js';
 
-<!-- 개요 -->
+{/* 개요 */}
+import Analysislockdesc from "../common-items/_analysis-lock-desc.mdx";
 
-{@include: ../common-items/_analysis-lock-desc.mdx}
+<Analysislockdesc />
 
-<!-- Lock Tree -->
+{/* 락트리 */}
+import Dblocktreedesc from "../common-items/_db-locktree-desc.mdx";
 
-{@include: ../common-items/_db-locktree-desc.mdx}
+<Dblocktreedesc />
 
 ## Basic screen guide
 
-{@include: ../common-items/_db-locktree-using-basic.mdx}  
+import Dblocktreeusingbasic from "../common-items/_db-locktree-using-basic.mdx";
 
-<!-- 락트리 컬럼 정보 -->
+<Dblocktreeusingbasic />
 
-{@include: ../common-items/_db-cubrid-info-of-column.mdx} 
+{/* 락트리 컬럼 정보 */}
+import Dbcubridinfoofcolumn from "../common-items/_db-cubrid-info-of-column.mdx";
+
+<Dbcubridinfoofcolumn />

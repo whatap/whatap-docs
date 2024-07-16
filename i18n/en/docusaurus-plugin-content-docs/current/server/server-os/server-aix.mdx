@@ -8,24 +8,24 @@ tags:
   - Unix
   - AIX
 hide_table_of_contents: true
-draft: false
+draft: true
 ---
 
 :::note 
 
-It is available in the AIX 6.X or later.
+It is available in the AIX 6.1 or later.
 
 :::
 
-If you select a newly generated server monitoring project, the **_Agent installation_** screen appears. You can also perform this through **_Management_** > **_Agent installation_** of the project.
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. You can also perform this through <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> of the project.
 
 <ImgLang img='server-install-unx-aix.png' desc='Server monitoring AIX'/>
 
-1. At the top of **_Management_** > **_Agent installation_**, select **_AIX_** under the ![Number-s](/img/number-01.png) OS tab. 
+After selecting ***AIX*** on the operating system selection screen in <Cmdname sid="side_agentInstall" className="uitext" /> and confirming the project access key, proceed with the installation according to the following instructions.
 
-2. In the ![number-s](/img/number-02.png) **_Download installation file_** tab, select _whatap-infra-latest.noarch.rpm_ to download the agent installation file.
+1. In the <Cmdname sid="TTL07853" className="uitext" /> tab, select *whatap-infra-latest.noarch.rpm* to download the agent installation file.
 
-3. Go to the ![number-s](/img/number-03.png) **_Run installation file_** tab, check the following command, and then run the package.
+2. Go to the <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" /> tab, check the following command, and then run the package.
 
    ```bash
    rpm -Uvh whatap-infra-latest.noarch.rpm

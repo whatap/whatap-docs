@@ -1,0 +1,68 @@
+---
+id: apm-faq
+title: Application FAQs
+description: This is the FAQ document for the WhaTap application monitoring service.
+tags:
+  - Application
+  - FAQ
+---
+
+Check out the frequently asked questions from WhaTap application monitoring service users. 
+
+---
+
+<div className='faqs'>
+
+### After Springboot update, some widget items do not appear.
+
+> After Springboot update, the information of the <Cmdname sid="AA005" className="uitext" />, <Cmdname sid="today_user" className="uitext" />, and <Cmdname sid="today_tps" className="uitext" /> widgets does not appear in <Cmdname sid="side_appDashboard" className="uitext" />.
+
+If the data of some widgets does not appear in <Cmdname sid="side_appDashboard" className="uitext" /> after updating the Springboot, check the following.
+
+- **Agent setting**
+
+  Set the following options and then restart the application.
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-3.0
+  ```
+
+- If you are using **Java 17 or later**, add the following options related to the reflection.
+
+  ```java
+  --add-opens=java.base/java.lang=ALL-UNNAMED
+  ```
+
+:::note
+
+The metrics of the <Cmdname sid="today_user" className="uitext" />, <Cmdname sid="today_tps" className="uitext" /> widget displays a chart in the widget by using the 1-hour statistical data. Because statistical data is created over time after making the above settings, the data may not be visible immediately.
+
+:::
+
+### The Stop thread button does not work.
+
+> There is no response when I press <Cmdname sid="stop_thread" className="uitext" />. Are extra settings required?
+
+The <Cmdname sid="stop_thread" className="uitext" /> feature forcibly terminates threads running in the application. However, this feature may not work in all cases. For example, if a thread is performing IO operations, the thread cannot be stopped immediately.
+
+If you use the <Cmdname sid="stop_thread" className="uitext" /> feature, an attempt to terminate the thread is followed even if it is performing IO operations. However, the thread is not terminated until the thread completes its IO operations. The thread accepts a termination request but does not stop its operation until its operation is completed and it moves to the next work.
+
+In this case, forcible termination of the thread is not recommended because it may cause problems with business logic and cause unexpected operations. If you still need to terminate the thread, stop and restart the entire application.
+
+### 'Lost Connection' message
+
+> In the transaction trace information, it is displayed as 'Lost Connection', and it is not possible to check the details of which process has been run and ended.
+
+In Application Monitoring for **PHP**, **Python**, **.NET**, and **Go** products, information on the transactions that have not been terminated within 5 minutes (default: `300000`) is not collected. The 'Lost Connection' message is left in the trace history. 
+
+To collect the trace data for transactions that are delayed more than 5 minutes, set the following option value to `300000` or higher.
+
+```ini title="whatap.ini"
+# PHP
+whatap.trace_active_transaction_lost_time=300000
+
+#Python, .NET, Go
+trace_active_transaction_lost_time=300000
+```
+
+</div>

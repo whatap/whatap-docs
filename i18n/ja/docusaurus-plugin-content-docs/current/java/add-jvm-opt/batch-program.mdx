@@ -1,15 +1,15 @@
 ---
 id: batch-app
 title: バッチアプリケーション
-description: バッチアプリケーションの環境で、WhaTapエージェントの適用を完了してください。
+description: WhaTapのJavaエージェントをバッチアプリケーションに適用する方法を案内します。バッチアプリケーションの独特な開始をはじめ中止の繰り返し動作によるウェブアプリケーションとの違いを説明し、必要なエージェントのダウンロード、エージェントとバッチホストの構成、エージェントと一緒にバッチ作業の実行、time_limit設定などを通じた実行時間のモニタリング方法を提供します。
 tags:
   - Java
   - バッチアプリケーション
+  - アプリケーション
+  - エージェント
 ---
 
-バッチアプリケーションで、WhaTapエージェントを適用する方法です。 
-
-バッチアプリケーションは、WASとは異なり、アプリケーションが実行と中断を繰り返す特長があります。したがって、一般的なウェブアプリケーションとは異なるモニタリングを行う必要があります。
+バッチ アプリケーションでWhaTapエージェントを適用する方法です。バッチアプリケーションは、WASとは異なり、アプリケーションが実行と中断を繰り返す特長があります。したがって、一般的なウェブアプリケーションとは異なるモニタリングを行う必要があります。
 
 ![Batch Application](/img/batch-app-intro.png)
 
@@ -24,13 +24,13 @@ wget https://api.whatap.io/agent/whatap.agent.batch.tar.gz
 <details>
 <summary>バッチエージェントファイルの構成</summary>
 
-_whatap.agent.batch.tar.gz_
+*whatap.agent.batch.tar.gz*
 
 ⎿ _whatap.agent-x.y.z.jar_：Javaエージェント
 
-⎿ _whatap.agent.batch.host-x.y.z.jar_: バッチホスト(Batch Host) - 収集サーバーにデータ送信
+⎿ *whatap.agent.batch.host-x.y.z.jar*: バッチホスト(Batch Host) - 収集サーバーにデータ送信
 
-⎿ _whatap.conf_: バッチホスト(Batch Host)設定ファイル(ファイルがない場合は、新しくファイルを作成し**_設定_**>**_エージェントのインストール_**メニューに`license`、`whatap.server.host`項目を追加してください。)
+⎿ *whatap.conf*: バッチホスト(Batch Host)設定ファイル(ファイルがない場合は、新しくファイルを作成し**_設定_**>**_エージェントのインストール_**メニューに`license`、`whatap.server.host`項目を追加してください。)
 
 ⎿ _agent/whatap.agent.batch-x.y.z.jar_: バッチエージェント - アプリケーションデータを収集してバッチホストに送信
 
@@ -89,6 +89,20 @@ active_stack_start_wait_time=1000
 
 ### バッチホスト(Batch Host) 実行コマンド
 
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux">
+
+```bash title='Batch Host Agent'
+java -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar:{BATCH_HOST_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
+```
+
+```bash title='Batch Host Agent, Java 17 or later'
+java --add-opens=java.base/java.lang=ALL-UNNAMED -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar:{BATCH_HOST_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows">
+
 ```bash title='Batch Host Agent'
 java -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar;{BATCH_HOST_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
 ```
@@ -96,6 +110,9 @@ java -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar;{BATCH_HOST_HOME}/w
 ```bash title='Batch Host Agent, Java 17 or later'
 java --add-opens=java.base/java.lang=ALL-UNNAMED -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar;{BATCH_HOST_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
 ```
+
+</TabItem>
+</Tabs>
 
 ### バッチエージェント(Batch Agent) 実行コマンド
 
@@ -165,3 +182,8 @@ step_interval=5000
 - heap：`heap_tot`、`heap_use`、`heap_max`、`heap_pending_final`、`heap_perm`
 - cpu：`cputime`
 - thread count：`thread_total_started`、`thread_count`、`thread_daemon`、`thread_peak_count`
+
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
+
+<Nextstep />

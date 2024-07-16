@@ -8,13 +8,15 @@ tags:
   - Windows
 ---
 
-If you select a newly generated server monitoring project, the **_agent installation_** screen appears. It is also possible in **_Management_** > **_Agent Installation_** for the project.
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. It is also possible in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> for the project.
 
 <ImgLang img='server-install-windows.png' desc='Server monitoring windows'/>
 
+After selecting ***Windows*** on the operating system selection screen in <Cmdname sid="side_agentInstall" className="uitext" /> and confirming the project access key, proceed with the installation according to the following instructions.
+
 1. Download the **agent file**.
 
-   At the top of **_Management_** > **_Agent Installation_**, select a server OS under ![number-s](/img/number-01.png) OS tab. In the ![number-s](/img/number-02.png) **_Download Installation File_** tab, select _whatap_infra.exe_ or _whatap_infra.zip_ to download the agent installation file.  
+   In the <Cmdname sid="server_installAgent_win_download" className="uitext" /> tab, select *whatap_infra.exe* or *whatap_infra.zip* to download the agent installation file.
 
    :::note
 
@@ -27,7 +29,7 @@ If you select a newly generated server monitoring project, the **_agent installa
 
 3. Double-click the downloaded **installation file** to run it.  
 
-4. ![number-s](/img/number-03.png) Go to **_Run Installation File_** tab and then check the granted project access key and server IP.
+4. ![number-s](/img/number-03.png) Go to <Cmdname sid="server_installAgent_win_runSetup" className="uitext" /> tab and then check the granted project access key and server IP.
 
 5. According to the on-screen instructions, enter the project access key in **_License Key_** and the IP address of the WhaTap server in **_WhatTap IP_**.
 
@@ -42,8 +44,12 @@ If you select a newly generated server monitoring project, the **_agent installa
 <details>
 <summary>Server agent installation file configuration</summary>
 
-{@include: ../../common-items/_sv-cpf.mdx}
+import Svcpf from "../../common-items/_sv-cpf.mdx";
 
-{@include: ../../common-items/_sv-w-cpf.mdx}
+<Svcpf />
+
+import Svwcpf from "../../common-items/_sv-w-cpf.mdx";
+
+<Svwcpf />
 
 </details>

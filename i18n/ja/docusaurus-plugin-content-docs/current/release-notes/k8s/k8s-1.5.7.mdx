@@ -14,19 +14,19 @@ displayed_sidebar: releaseSidebar
 
   - **collect_volume_detail_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+    既定値 `true`
 
     ノードエージェントですべてのコンテナに対する`exec df`コマンドを使用して、コンテナのボリューム情報の照会を活性化します。 ノードに実行中のすべてのコンテナのストレージ使用量およびボリューム情報を収集する機能を活性化することができます。
 
   - **inject_container_id_to_apm_agent_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+    既定値 `true`
 
     WhaTap APMコンテナに`exec`を利用したcontainer IDの注入を活性化します。 WhaTap APMと識別されるコンテナのIDを自動的に抽出し、これをAPMツールに注入して性能モニタリングデータとコンテナを連結するのに使用できます。 
 
     :::note
 
-    このオプションは、Javaエージェント2.2.28バージョン以降から使用できます。
+    このオプションは、[Javaエージェント2.2.33バージョン](../java/java-2_2_33) 以降から使用できます。
 
     :::
 
@@ -42,6 +42,6 @@ displayed_sidebar: releaseSidebar
 
 :::info
 
-Agentダウンロード：[kube_mon_1.5.6.tar](https://repo.whatap.io/docker/kube_mon_1.5.7.tar)
+Agentダウンロード：[kube_mon_1.5.7.tar](https://repo.whatap.io/docker/kube_mon_1.5.7.tar)
 
 :::

@@ -12,84 +12,146 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
 
-## WhaTapデータベースエージェントのダウンロード
+{/* ## 구성도 확인 */}
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+<CheckType />
 
-3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+{/* 모니터링용 계정 생성*/}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
-   ```ini title='whatap.conf'
-   license=プロジェクトアクセスキー
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+<Dbcreatemonitoringaccount />
 
-   dbms=postgresql
-   db=postgres
-   db_ip={DBサーバーのIPアドレス}
-   db_port={DBサーバーのポート番号} 
-   ```
+機能と使用環境に応じて追加権限を付与してください。
 
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+- PostgreSQL 10バージョン以降
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
+  ```sql title="SQL"
+  create user DB_User with password 'DB Password'; 
+  grant pg_read_all_stats to DB_User;
+  ```
 
-   **PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
+- PostgreSQL 10バージョン未満
 
-<!-- 공통 Notes-->
+  ```sql title="SQL"
+  create user DB_User with password 'DB Password';
+  alter user DB_User with superuser;
+  ```
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+- Kill sessionを使用する場合
 
-<!-- 모니터링용 계정 생성-->
+  データベースモニタリングでは、進行中のセッションを終了できる<UI>Kill Session</UI>機能を提供します。この機能を使用するには、次のように権限を設定してください。
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+  ```sql title="SQL"
+  alter user DB_User with superuser;
+  ```
 
-<!-- PostgreSQL-->
+- AWS RDS環境でKill session機能を使用する場合
 
-```bash showLineNumbers
-# 10バージョン以降
-create user whatap with password 'DB Password'; # 希望するpasswordを入力してください。
-grant pg_read_all_stats to whatap;
- 
-# 10バージョン未満
-create user whatap with password 'DB Password'; # 希望するpasswordを入力してください。
-alter user whatap with superuser;
- 
-# kill session使用時
-alter user whatap with superuser;
-grant rds_superuser to whatap; # AWS RDS使用時
+  ```sql title="SQL"
+  grant rds_superuser to DB_User;
+  ```
 
-# wal_count 収集時
-grant execute on function pg_ls_dir(text) to whatap;  #EDB使用時
-alter user whatap with superuser;
+- wal_countを収集する場合
 
-# cache収集時
-grant select on pg_backend_memory_contexts to whatap;
-grant execute on function pg_get_backend_memory_contexts to whatap;
+  ```sql title="SQL"
+  grant execute on function pg_ls_dir(text) to DB_User;  # EDB使用時
+  alter user DB_User with superuser;
+  ```
 
-# テーブルサイズ収集時
-grant usage on schema {schema_name} to whatap;
+- cacheを収集する場合
 
-# オブジェクト情報照会時
-grant select on all tables in schema {schema_name} to whatap;
+  ```sql title="SQL"
+  grant select on pg_backend_memory_contexts to DB_User;
+  grant execute on function pg_get_backend_memory_contexts to DB_User;
+  ```
+
+- テーブルサイズを収集する場合
+
+  ```sql title="SQL"
+  grant usage on schema {schema_name} to DB_User;
+  ```
+
+- オブジェクト情報を照会する場合(<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbObjectInfo" className="uitext" />)
+
+  ```sql title="SQL"
+  grant select on all tables in schema {schema_name} to DB_User;
+  ```
+
+{/* 액세스 키 확인 */}
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
+
+{/* DBX 에이전트 다운로드 */}
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
+
+<DownloadDBXagent />
+
+{/* ## DBX 에이전트 설정 */}
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
+
+<SettingsDBXagent />
+
+{/* ### whatap.conf 설정 */}
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
+
+<Whatapconf />
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+dbms=postgresql
+db=postgres
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
 ```
 
-## DBユーザーファイルの作成{#create-db-user}
+{/* ### JDBC 다운로드 */}
+import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
-<DBuserDesc name='default'/>
+<JDBCDownload />
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+:::info
 
-<!--## 에이전트 실행-->
+**PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
 
-{@include: ../common-items/_db-run-agent.mdx} 
+:::
 
-<!--## XOS 에이전트 설치-->
+{/* 공통 Notes*/}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+<Dbinstallagentcommonnotes />
+
+### DBユーザーファイルの作成{#create-db-user}
+
+<DBuserDesc />
+
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+
+<Dbcreatedbuserfilebody />
+
+{/*모니터링 시작하기*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
+
+<Dbrunagent />
+
+{/*XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent />
+
+{/* ## 다음 단계 */}
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

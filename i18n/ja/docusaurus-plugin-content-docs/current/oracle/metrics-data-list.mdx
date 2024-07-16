@@ -1,7 +1,7 @@
 ---
 id: metrics-data-list
 title: Oracleメトリクス
-description: MySQL指標についてガイドします。
+description: Oracleのメトリクスについて案内します。
 tags:
   - Oracle
   - メトリクス
@@ -17,8 +17,8 @@ tags:
 
 | Metric                                   | Description                                                                   |
 | ---------------------------------------- | ----------------------------------------------------------------------------- |
-| `cpu_used_by_this_session`               | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間(10ミリ秒単位)                             |
-| `db_time`                                | データベースのユーザーレベルの呼び出しに費やされた経過時間(microseconds)                                   |
+| `cpu_used_by_this_session`               | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間(10ミリ秒単位)          |
+| `db_time`                                | データベースのユーザーレベルの呼び出しに費やされた経過時間(microseconds)                |
 | `active_sessions`                        | クエリが実行されているセッション数                                                             |
 | `cpu`                                    | CPU使用率                                                                        |
 | `cpu_cores`                              | CPUコア数                                                                        |
@@ -29,8 +29,8 @@ tags:
 | `db_file_sequential_read_time_waited`    | db file sequential readイベントを待機した合計時間                                          |
 | `db_file_sequential_read_total_timeouts` | db file sequential readイベントの合計タイムアウト回数                                        |
 | `db_file_sequential_read_total_waits`    | db file sequential readイベントの合計待機時間                                            |
-| `enqueue_waits`                          | キューの変換中またはインポート中に発生した待機の合計数(キュー・フェッチの遅延)                                      |
-| `excute_count`                           | SQL文(statement)を実行した呼び出しの合計数                                                  |
+| `enqueue_waits`                          | キューの変換中またはインポート中に発生した待機の合計数(キュー・フェッチの遅延)                   |
+| `excute_count`                           | SQL文(statement)を実行した呼び出しの合計数                               |
 | `fatal_count`                            | 致命的なエラーが発生した回数                                                                |
 | `iowait_cpu`                             | CPUがI/Oの待機に費やす時間の割合                                                           |
 | `lock_wait_sessions`                     | 現在rowlockを取得する待機中の数                                                           |
@@ -38,8 +38,8 @@ tags:
 | `long_running_sessions`                  | 長時間実行中のセッション数                                                                 |
 | `memory`                                 | メモリ使用率                                                                        |
 | `opened_cursors_current`                 | 現在開いているcursorの数                                                               |
-| `parse_count_(hard)`                     | 構文分析の呼び出し合計数(実際の構文分析)                                                         |
-| `parse_count_(total)`                    | 構文分析呼び出しの総数(hard、soft、describe)                                               |
+| `parse_count_(hard)`                     | 構文分析の呼び出し合計数(実際の構文分析)                                      |
+| `parse_count_(total)`                    | 構文分析呼び出しの総数(hard、soft、describe)                            |
 | `physical_reads`                         | ディスクで読み取られたデータブロック数                                                           |
 | `physical_writes`                        | データをディスクに書き込まれたブロック数、`physical writes direct`と`physical writes from cache`の合計 |
 | `session_logical_reads`                  | メモリから読み込まれたデータブロック数、`db block gets`と`consistent gets`の合計                      |
@@ -49,7 +49,7 @@ tags:
 | `total_sessions`                         | すべてのセッション数                                                                    |
 | `txn_sessions`                           | transactionを含むセッション数                                                          |
 | `user_commits`                           | トランザクションごとに実行されるユーザーコミット数                                                     |
-| `user_cpu`                               | user cpu使用量(%)                                                                |
+| `user_cpu`                               | user cpu使用量(%)                                             |
 | `wait_sessions`                          | イベントを待機しているセッション数                                                             |
 | `warning_count`                          | すべてのアラート数                                                                     |
 

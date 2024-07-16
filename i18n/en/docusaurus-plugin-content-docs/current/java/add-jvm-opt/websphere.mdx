@@ -1,15 +1,17 @@
 ---
 id: websphere
 title: WebSphere
-description: Complete the additional settings for JVM options in the WebSphere application server environment.
+description: The following provides the detailed guide on how to add Java Virtual Machine (JVM) options to integrate the WhaTap monitoring solution into WebSphere applications. Through this document, users can learn step by step how to apply the required JVM settings to monitor the performance and availability of WebSphere applications after installing the Java agent. It includes the configuration of essential JVM options during agent installation, optimal configuration for smooth integration with WebSphere, and histogram query.
 tags:
   - Java
   - WebSphere
+  - Application
+  - Agent
 ---
 
 ## Adding JVM options
 
-Access the Admin Console to add JVM options in the WebSphere application server environment.
+This guide explains how to add required JVM options to effectively use the Java monitoring agent in the WebSphere application server environment. To add JVM options, access the Admin console.
 
 1. Log in the Admin Console in your web browser.
 
@@ -38,25 +40,17 @@ Access the Admin Console to add JVM options in the WebSphere application server 
 
 :::note
 
-{@include: _java-17.mdx} 
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
 
-## Starting the monitoring
+<Setheapmemory />
 
-{@include: ../../common-items/_start-apm.mdx} 
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
 
-## WebSphere compatibility
-
-| WAS Ver. |        ibm-java-x86_64-60       |
-| -------- | :-----------------------------: |
-| 8.5.5.10 | <span class='emoji-ok'>✅</span> |
-
-## WebSphere DataSource
-
-| DB     | JDBC Driver file name               | JDBC Ver.  | JDK Ver.     |          Compatibility          |
-| ------ | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
-| Mysql  | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
-| Oracle | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+<Nextstep />

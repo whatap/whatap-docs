@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Oracle Cloud Monitor collects metrics periodically through API integration. It collects the target stats every 5 minutes from the Oracle Cloud Monitor namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently by automatically generating the ssh public key required for authentication. 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## Monitoring procedure
 
@@ -50,10 +52,8 @@ After installation, extra charge may be incurred in the cloud depending on the u
      > - Allow group `{Group}` to read metrics in compartment `{Compartment}`
      > - Allow group `{Group}` to inspect metrics in compartment `{Compartment}`
 
-5. Select Users at the bottom of the Identity & Security menu, and then create or select a **user**.
+5. Select My profile from the Identity menu on the upper right of the screen. 
 
-   - Select Create user and then create a new user or select a user.
-   - On the User Details screen, add the user to the group selected in Step 3.
    - Select API Keys at the lower left.
    - Select Add API Key.
    - Select Paste Public Key and then enter the **RSA public key** generated in Step 2.
@@ -67,11 +67,15 @@ After installation, extra charge may be incurred in the cloud depending on the u
 
 ### Selecting the namespace and collection cycle
 
-{@include: ../common-items/_namespace-collect.mdx}  
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />
 
 #### Whatap Data Interval
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### Namespace
 
@@ -124,7 +128,9 @@ After installation, extra charge may be incurred in the cloud depending on the u
 
 ### Selecting the region, metric, and stat
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+<Regionmetricstats />
 
 <ImgLang img='oci_region.png' desc='Oracle Cloud Monitor - Region, Metric, Stats' />
 

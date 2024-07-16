@@ -1,29 +1,32 @@
 ---
 id: agent-manage
 title: 管理
-description: whatap.confファイルを使用してデータベースエージェントを管理することができます。
+description: whatap.confファイルを使用してデータベースエージェントを管理できます。
 tags:
   - Altibase
   - データベース
   - データベースモニタリング
 ---
 
-<!-- Postgresql, Oracle 지원 프로세스 모니터링 -->
+{/* Postgresql, Oracle 지원 프로세스 모니터링 */}
+{/* {@include: ../common-items/_db-agent-xos-process-monitoring.mdx}*/}
 
-<!-- {@include: ../common-items/_db-agent-xos-process-monitoring.mdx}-->
+{/* 서버 이름을 임의로 부여해 관리하기 */}
+import Dbservernaming from "../common-items/_db-server-naming.mdx";
 
-<!-- 서버 이름을 임의로 부여해 관리하기 -->
+<Dbservernaming />
 
-{@include: ../common-items/_db-server-naming.mdx}  
+{/* AES 256 암호화 적용 */}
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbaes256encrypt />
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx}  
+{/* 에이전트 업데이트*/}
+import Dbupdateagent from "../common-items/_db-update-agent.mdx";
 
-<!-- 에이전트 업데이트-->
+<Dbupdateagent />
 
-{@include: ../common-items/_db-update-agent.mdx}
+{/* 에이전트 삭제 */}
+import Dbuninstallagent from "../common-items/_db-uninstall-agent.mdx";
 
-<!-- 에이전트 삭제 -->
-
-{@include: ../common-items/_db-uninstall-agent.mdx}  
+<Dbuninstallagent />

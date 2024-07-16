@@ -1,6 +1,6 @@
 ---
 id: db-faq
-title: DB FAQ
+title: Database FAQs
 description: This document has FAQs of the WhaTap database monitoring service.
 tags:
   - Database Monitoring
@@ -9,110 +9,111 @@ tags:
 
 Check out frequently asked questions from users about the WhaTap database monitoring service. 
 
-* * *
+---
 
-<div class ='faq'>
+<div className='faqs'>
 
 ### Authentication plugin 'caching_sha2_password' cannot be loaded error
 
-| Q. When I checked the _dbx.log_ while connecting to the DB after installing the agent, the error, `Authentication plugin 'caching_sha2_password' cannot be loaded` occurred. What should I do? |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> When I checked the _dbx.log_ while connecting to the DB after installing the agent, the error, `Authentication plugin 'caching_sha2_password' cannot be loaded` occurred. What should I do?
 
-> A. It can happen when using MySQL 8.0, and its default authentication plug-in is `caching_sha2_password`. To use the `caching_sha2_password`, use the SSL-secured connection or a non-encrypted connection with the RSA security applied. The easiest way to solve this problem is to use the `mysql_native_password` when generating passwords as follows.
->
-> ```sql
-> ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword';
-> ```
->
-> :::note
->
-> See the following.
->
-> - 2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
-> - 6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
->
-> :::
+It can happen when using MySQL 8.0, and its default authentication plug-in is `caching_sha2_password`. To use the `caching_sha2_password`, use the SSL-secured connection or a non-encrypted connection with the RSA security applied. The easiest way to solve this problem is to use the `mysql_native_password` when generating passwords as follows.
 
-<br/>
+```sql
+ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword';
+```
+
+:::note
+
+See the following.
+
+- 2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
+- 6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+
+:::
 
 ### In case monitoring is not possible after creating an additional database in the DB instance
 
-| Q. I created an additional database in the DB instance, but it was not monitored by WhaTap. What should I do? |
-| ------------------------------------------------------------------------------------------------------------- |
+> I created an additional database in the DB instance, but it was not monitored by WhaTap. What should I do?
 
-> A. The agent collects DB data upon startup and once a day after startup. If a DB has been additionally created while the agent is running, it may not be reflected. In this case, restart the agent. If that does not work, you may not have proper permissions. Grant permission as follows:
->
-> ```sql
-> grant select on 'added DB' to whatap;
-> ```
+The agent collects DB data upon startup and once a day after startup. If a DB has been additionally created while the agent is running, it may not be reflected. In this case, restart the agent. If that does not work, you may not have proper permissions. Grant permission as follows:
 
-<br/>
+```sql
+grant select on 'added DB' to whatap;
+```
 
 ### Based on the instance list of M, S, and C
 
-| Q. What is the criteria for **_M_**, **_S_**, **_C_** in the instance list? |
-| --------------------------------------------------------------------------- |
+> What is the criteria for **_M_**, **_S_**, **_C_** in the instance list?
 
-> A. They mean **_M_**aster, **_S_**lave, and **_C_**luster respectively. They appear in case of a DB built by replication. Cluster appears when MariaDB has been configured as a galera solution. 
->
-> ```sql
-> -- In case of Cluster: WSREP_ON is not ON and WSREP_CLUSTER_NAME is galera
-> select variable_name,variable_value 
-> from information_schema.global_variables 
-> where variable_name in ('wsrep_on','wsrep_cluster_name');
->
-> -- In case of Master: The data for show slave hosts exists
-> show slave hosts ;
->
-> -- In case of Slave: The data for show slave status exists
-> show slave status ;
-> ```
+They mean **_M_**aster, **_S_**lave, and **_C_**luster respectively. They appear in case of a DB built by replication. Cluster appears when MariaDB has been configured as a galera solution. 
 
-<br/>
+```sql
+-- In case of Cluster: WSREP_ON is not ON and WSREP_CLUSTER_NAME is galera
+select variable_name,variable_value 
+from information_schema.global_variables 
+where variable_name in ('wsrep_on','wsrep_cluster_name');
+
+-- In case of Master: The data for show slave hosts exists
+show slave hosts ;
+
+-- In case of Slave: The data for show slave status exists
+show slave status ;
+```
 
 ### Instance list, M is not displayed
 
-| Q. I can't see **_M_** in the instance list even though it is Master. What's the reason? |
-| ---------------------------------------------------------------------------------------- |
+> I can't see **_M_** in the instance list even though it is Master. What's the reason?
 
-> A. If you have no permission for replication, it may not appear. Please check your monitoring account privileges. 
->
-> ```sql
-> --Permission checking
-> show grants for whatap;
->
-> --Granting permissions
-> grant REPLICATION SLAVE, REPLICATION CLIENT on *.* to whatap;
-> ```
+If you have no permission for replication, it may not appear. Please check your monitoring account privileges. 
+
+```sql
+--Permission checking
+show grants for whatap;
+
+--Granting permissions
+grant REPLICATION SLAVE, REPLICATION CLIENT on *.* to whatap;
+```
 
 ### Metalock Monitoring
 
-| Q. Metalocks (locks obtained when changing the names or structures of database objects) cannot be viewed in the lock tree of MySQL. How can I monitor metalocks as well? |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+> Metalocks (locks obtained when changing the names or structures of database objects) cannot be viewed in the lock tree of MySQL. How can I monitor metalocks as well?
 
-> A. DB and WhaTap agent configurations are required.
->
-> **DB Configuration**
->
-> ```sql
-> # 1. Enable the Performance_schema
-> performance_schema = on
-> # 2. Enabling setup_consumers: As a result of the query below, ENABLED must be `YES` (default value is `YES` from 8.0)
-> SELECT *
-> FROM performance_schema.setup_instruments
-> WHERE NAME = 'wait/lock/metadata/sql/mdl'; 
->
-> -- If ENABLED is `NO`, update is required.
-> UPDATE setup_instruments 
-> SET ENABLED = 'YES',TIMED='YES' 
-> WHERE NAME = 'wait/lock/metadata/sql/mdl';
-> ```
->
-> **WhaTap DB Agent Configuration**
->
-> ```sql
-> # Add the following setting in whatap.conf
-> metalock=1
-> ```
+DB and WhaTap agent configurations are required.
+
+**DB Configuration**
+
+```sql
+# 1. Enable the Performance_schema
+performance_schema = on
+# 2. Enabling setup_consumers: As a result of the query below, ENABLED must be `YES` (default value is `YES` from 8.0)
+SELECT *
+FROM performance_schema.setup_instruments
+WHERE NAME = 'wait/lock/metadata/sql/mdl'; 
+
+-- If ENABLED is `NO`, update is required.
+UPDATE setup_instruments 
+SET ENABLED = 'YES',TIMED='YES' 
+WHERE NAME = 'wait/lock/metadata/sql/mdl';
+```
+
+**WhaTap DB Agent Configuration**
+
+```sql
+# Add the following setting in whatap.conf
+metalock=1
+```
+
+### Accessing the Log menu
+
+> The <Cmdname sid="side_log" className="uitext" /> menu is invisible in the project.
+
+Check the specified member roles. <Cmdname sid="side_log" className="uitext" /> and submenus are exposed only to the members with the <Cmdname sid="log_read" className="b600" /> role. The members with this role can enter the menu and view the logs.
+
+:::note
+
+For more information about the member role scheme, see [the following](../project/project-structure#project-auth).
+
+:::
 
 </div>

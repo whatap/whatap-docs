@@ -11,7 +11,9 @@ import TR from '@site/src/components/TR';
 
 WhaTap Amazon ECS Monitoring collects resource usage for each Docker container in real time via the META API and Cgroup directory. It retrieves and collects the status of Amazon ECS service, deployment, and container's instance through the WhaTap tasks linked with the Amazon ECS API.
 
-{@include: ../getting-started/_create-project-accesskey-item.mdx}
+import Createprojectaccesskeyitem from "../getting-started/_create-project-accesskey-item.mdx";
+
+<Createprojectaccesskeyitem />
 
 ## Preliminary inspection
 
@@ -72,52 +74,55 @@ For more information about the Amazon ECS launch types, see [the following](http
 
    ```bash title='Linux'
    #!/usr/bin/env bash
-   export ACCESSKEY=
-   export WHATAP_HOST=
-   export CLUSTER=
-   export REGION=
+   export ACCESSKEY=x4u5j20mdbj98-x3btmtjfhffmrc-z6ogidu7vm3shg
+   export WHATAP_HOST=127.0.0.1
+   export CLUSTER=xxxx
+   export REGION=xxxx
    export LAUNCH_TYPE=EC2
+
    cat >whatap_ecs.json <<EOL
    { "containerDefinitions": [ {
-       "name": "whatap-node-agent",
-       "image": "whatap/ecs_mon",
-       "cpu": 100,
-       "memory": 50,
-       "essential": true,
-       "mountPoints": [{
-           "containerPath": "/var/run/docker.sock",
-           "sourceVolume": "docker_sock",
-           "readOnly": true},{
-           "containerPath": "/rootfs",
-           "sourceVolume": "rootfs",
-           "readOnly": true}],
-       "environment": [{
-           "name": "ACCESSKEY",
-           "value": "$ACCESSKEY"
-       },{
-           "name": "WHATAP_HOST",
-           "value": "$WHATAP_HOST"}
-       ],
-       "linuxParameters": {
-           "capabilities": {
-               "add": [
-               "SYS_ADMIN",
-               "SYS_RESOURCE",
-               "SYS_PTRACE",
-               "NET_ADMIN",
-               "NET_BROADCAST",
-               "NET_RAW",
-               "IPC_LOCK",
-               "CHOWN"]
-           }}}],
+   "name": "whatap-node-agent",
+   "image": "whatap/ecs_mon",
+   "cpu": 100,
+   "memory": 50,
+   "essential": true,
+   "mountPoints": [{
+       "containerPath": "/var/run/docker.sock",
+       "sourceVolume": "docker_sock",
+       "readOnly": true},{
+       "containerPath": "/rootfs",
+       "sourceVolume": "rootfs",
+       "readOnly": true}],
+   "environment": [{
+       "name": "ACCESSKEY",
+       "value": "$ACCESSKEY"
+   },{
+       "name": "WHATAP_HOST",
+       "value": "$WHATAP_HOST"}
+   ],
+   "linuxParameters": {
+       "capabilities": {
+           "add": [
+           "SYS_ADMIN",
+           "SYS_RESOURCE",
+           "SYS_PTRACE",
+           "NET_ADMIN",
+           "NET_BROADCAST",
+           "NET_RAW",
+           "IPC_LOCK",
+           "CHOWN"]
+       }}}],
    "requiresCompatibilities": ["EC2"],
    "volumes": [{
-       "host": {"sourcePath": "/var/run/docker.sock"},
-       "name": "docker_sock"},{
-       "host": {"sourcePath": "/"},
-       "name": "rootfs"}],
+   "host": {"sourcePath": "/var/run/docker.sock"},
+   "name": "docker_sock"},{
+   "host": {"sourcePath": "/"},
+   "name": "rootfs"}],
    "family": "whatap-agent-task"}
+
    EOL
+
    aws ecs register-task-definition \
    --cli-input-json file://$(pwd)/whatap_ecs.json \
    --region $REGION
@@ -129,12 +134,15 @@ For more information about the Amazon ECS launch types, see [the following](http
    --region $REGION
    ```
 
-- The following are the items required to run the script.
+   - The following are the items required to run the script.
 
-  - `ACCESSKEY` (WhaTap project access key)
-  - `WHATAP_HOST` (WhaTap collection region IP)
-  - `REGION` (AWS Region)
-  - `CLUSTER` (ECS Cluster)
+     - `ACCESSKEY` (WhaTap project access key)
+
+     - `WHATAP_HOST` (WhaTap collection region IP)
+
+     - `REGION` (AWS Region)
+
+     - `CLUSTER` (ECS Cluster)
 
 ### Fargate Launch Type
 
@@ -214,20 +222,21 @@ For more information about the Amazon ECS launch types, see [the following](http
 
    ```bash title='Linux'
    #!/usr/bin/env bash
-   export ACCESSKEY=
-   export WHATAP_HOST=
-   export PROFILE=
-   export REGION=
-   export CLUSTER=
-   export CLUSTER_CONFIG=
-   export TASK_EXECUTION_ROLE=
-   export SUBNET_1=
-   export SUBNET_2=
-   export SGGRP=
+   export ACCESSKEY=xxxx-xxxx-xxxx
+   export WHATAP_HOST=xxx.xxx.xxx
+   export PROFILE=xxxxx	
+   export REGION=xxxxx
+   export CLUSTER=xxxxx
+   export CLUSTER_CONFIG=xxxx
+   export TASK_EXECUTION_ROLE=xxxx
+   export SUBNET_1=xxxx
+   export SUBNET_2=xxxx
+   export SGGRP=xxxx
    export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
    export PROJNAME=whatap-monitoring
    export LAUNCH_TYPE=FARGATE
    export WHATAP_ROLE_ARN=$(cat role_arn.txt)
+
    cat >docker-compose.yml <<EOL
    version: '3'
    services:
@@ -238,6 +247,7 @@ For more information about the Amazon ECS launch types, see [the following](http
        - WHATAP_HOST=$WHATAP_HOST
        - FARGATE_HELPER=true
    EOL
+
    cat >ecs-params.yml <<EOL
    version: 1
    task_definition:
@@ -257,6 +267,7 @@ For more information about the Amazon ECS launch types, see [the following](http
            - "$SGGRP"
        assign_public_ip: ENABLED
    EOL
+
    ecs-cli compose --project-name $PROJNAME service up \
        --cluster-config $CLUSTER_CONFIG \
        --ecs-profile $PROFILE --region $REGION
@@ -285,11 +296,11 @@ For more information about the Amazon ECS launch types, see [the following](http
 
 - Enabling the monitoring service
 
-  <ImgLang img='amazon-ecs-monitoring-on.png' desc='Enabling the monitoring' />
+  <ImgLang img='amazon-ecs-monitoring-on.png' desc='Activating monitoring' />
 
 - Disabling the monitoring service
 
-  <ImgLang img='amazon-ecs-monitoring-off.png' desc='Monitoring Deactivation' />
+  <ImgLang img='amazon-ecs-monitoring-off.png' desc='Monitoring cannot be activated' />
 
 ## Precautions upon removal
 

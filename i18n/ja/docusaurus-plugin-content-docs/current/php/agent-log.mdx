@@ -9,13 +9,13 @@ tags:
   - アプリケーション
 ---
 
-アプリケーションサーバーの稼働中は、モニタリング情報を収集します。収集された情報はログファイルに保存されます。 
+アプリケーションサーバーが実行されると、モニタリング情報を収集します。収集した情報は、ログファイルに保存します。 
 
 ## ログの設定
 
 - **whatap.log_keep_days** <span class='type'>Day</span>
 
-  デフォルト値`7`
+  既定値`7`
 
   ログファイルの保存期間を設定します。
 
@@ -27,15 +27,15 @@ tags:
 
 - **whatap.logsink_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   値が`true`の場合、ログデータを収集します。
 
 - **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
-  値が`true`の場合、ログデータを圧縮して送信します。デフォルト値は、GZIPです。
+  値が`true`の場合、ログデータを圧縮して送信します。既定値は、GZIPです。
 
 ### ログファイル設定
 
@@ -59,3 +59,17 @@ tags:
   whatap.logsink_zip_enabled=true
   whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
   ```
+
+:::tip
+
+ログファイル名に、日付形式の変数を使用できます。Python `strftime()`使用基準として適用します。 
+
+> 例、20240101:`%Y%m%d`
+
+```ini title="whatap.ini"
+whatap.logsink.files=/etc/httpd/logs/customlog-%Y%m%d
+```
+
+この機能は、PHPエージェント2.7.2バージョン以降に対応しています。 
+
+:::

@@ -44,7 +44,7 @@ tags:
 
 **Bloating**は実際に使用されていないtupleが増加してオブジェクトサイズが大きくなる現象です。 
 
-エージェント設定(_whatap.conf_)の`table[index]_bloat_ratio[bytes]`に設定された収集基準よりも大きな値を持つテーブルとインデックスをリストに表示します。 該当するオブジェクトがないと、データが照会されない場合があります。
+エージェント設定(*whatap.conf*)の`table[index]_bloat_ratio[bytes]`に設定された収集基準よりも大きな値を持つテーブルとインデックスをリストに表示します。 該当するオブジェクトがないと、データが照会されない場合があります。
 
 :::tip
 
@@ -52,9 +52,9 @@ tags:
 
 `Bloat_ratio`が高いテーブルはVacuumの実行を検討してください。 詳細については、次の文書を参照してください。
 
-- [https://postgresql.kr/blog/postgresql_table_bloating.html](https://postgresql.kr/blog/postgresql_table_bloating.html)
+- [PostgreSQLテーブルの膨張現象への対処方法](https://postgresql.kr/blog/postgresql_table_bloating.html)
 
-- [https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5](https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5)
+- [Dealing with significant Postgres database bloat — what are your options?](https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5)
 
 :::
 
@@ -63,14 +63,14 @@ tags:
 |     区分    | カラム名          | 説明                                      |
 | :-------: | ------------- | --------------------------------------- |
 | **Table** | `datname`     | データベース名                                 |
-|     ^     | `schemaname`  | スキーマ(schema)名                           |
+|     ^     | `schemaname`  | スキーマ(schema)名        |
 |     ^     | `tablename`   | テーブル名                                   |
 |     ^     | `est_rows`    | **Dead tuple** + **Live tuple**件数で予測した値 |
 |     ^     | `table_size`  | テーブルサイズ                                 |
 |     ^     | `bloat_size`  | **Dead tuple**で膨らませた予想テーブルサイズ           |
 |     ^     | `bloat_ratio` | 膨らませたサイズの比率です。                          |
 | **Index** | `datname`     | データベース名                                 |
-|     ^     | `schemaname`  | スキーマ(schema)名                           |
+|     ^     | `schemaname`  | スキーマ(schema)名        |
 |     ^     | `tablename`   | テーブル名                                   |
 |     ^     | `indexname`   | インデックス名                                 |
 |     ^     | `table_size`  | テーブルサイズ                                 |
@@ -93,22 +93,22 @@ tags:
 
 次は<span class="uitext">Scan</span>を照会すると表示されるカラム項目です。
 
-|     区分    | カラム名            | 説明                                     |
-| :-------: | --------------- | -------------------------------------- |
-| **Table** | `datname`       | データベース名                                |
-|     ^     | `schemaname`    | スキーマ(schema)名                          |
-|     ^     | `tablename`     | テーブル名                                  |
-|     ^     | `seq_scan`      | 該当テーブルを順次スキャン(Full scan)した数            |
-|     ^     | `seq_tup_read`  | 順次スキャンから読取りされたライブ行数                    |
-|     ^     | `idx_scan`      | 該当テーブルのインデックススキャン数                     |
-|     ^     | `idx_tup_fetch` | インデックススキャンで読み取ったライブ行数                  |
-| **Index** | `datname`       | データベース名                                |
-|     ^     | `schemaname`    | スキーマ(schema)名                          |
-|     ^     | `tablename`     | テーブル名                                  |
-|     ^     | `indexname`     | インデックス名                                |
-|     ^     | `idx_scan`      | インデックススキャン実行数                          |
-|     ^     | `idx_tup_fetch` | 該当インデックスを使用してインデックススキャンから抽出された有効テーブル行数 |
-|     ^     | `idx_tup_read`  | インデックススキャンに返されたインデックス項目の数              |
+|     区分    | カラム名            | 説明                                             |
+| :-------: | --------------- | ---------------------------------------------- |
+| **Table** | `datname`       | データベース名                                        |
+|     ^     | `schemaname`    | スキーマ(schema)名               |
+|     ^     | `tablename`     | テーブル名                                          |
+|     ^     | `seq_scan`      | 該当テーブルを順次スキャン(Full scan)した数 |
+|     ^     | `seq_tup_read`  | 順次スキャンから読取りされたライブ行数                            |
+|     ^     | `idx_scan`      | 該当テーブルのインデックススキャン数                             |
+|     ^     | `idx_tup_fetch` | インデックススキャンで読み取ったライブ行数                          |
+| **Index** | `datname`       | データベース名                                        |
+|     ^     | `schemaname`    | スキーマ(schema)名               |
+|     ^     | `tablename`     | テーブル名                                          |
+|     ^     | `indexname`     | インデックス名                                        |
+|     ^     | `idx_scan`      | インデックススキャン実行数                                  |
+|     ^     | `idx_tup_fetch` | 該当インデックスを使用してインデックススキャンから抽出された有効テーブル行数         |
+|     ^     | `idx_tup_read`  | インデックススキャンに返されたインデックス項目の数                      |
 
 ## DML
 
@@ -127,12 +127,12 @@ tags:
 | カラム名            | 説明                                      |
 | --------------- | --------------------------------------- |
 | `datname`       | データベース名                                 |
-| `schemaname`    | スキーマ(schema)名                           |
+| `schemaname`    | スキーマ(schema)名        |
 | `tablename`     | テーブル名                                   |
 | `dml_count`     | `n_tup_ins` + `n_tup_upd` + `n_tup_del` |
-| `n_tup_ins`     | 挿入(Insert)された行数                         |
-| `n_tup_upd`     | アップデート(Update)された行数                     |
-| `n_tup_del`     | 削除(Delete)された行数                         |
+| `n_tup_ins`     | 挿入(Insert)された行数      |
+| `n_tup_upd`     | アップデート(Update)された行数  |
+| `n_tup_del`     | 削除(Delete)された行数      |
 | `n_tup_hot_upd` | HOTアップデートされた行数（例：別途のインデックスアップデートが不要）    |
 
 ## Analyze Time
@@ -149,18 +149,18 @@ AnalyzeとVacuum実行の日付が古いオブジェクトの一覧です。
 
 次は<span class="uitext">Analyze Time</span>を照会すると表示されるカラム項目です。
 
-| カラム名                  | 説明                                           |
-| --------------------- | -------------------------------------------- |
-| `datname`             | データベース名                                      |
-| `schemaname`          | スキーマ(schema)名                                |
-| `tablename`           | テーブル名                                        |
-| `last_analyze`        | テーブルを手動分析した最後の時間                             |
-| `last_autoanalyze`    | autovacuumデーモンでテーブルを分析した最後の時間                |
-| `last_autovacuum`     | autovacuumデーモンでテーブルをバキューム(vacuum)した最後の時間     |
-| `analyze_count`       | 手動で分析した回数                                    |
+| カラム名                  | 説明                                                                                 |
+| --------------------- | ---------------------------------------------------------------------------------- |
+| `datname`             | データベース名                                                                            |
+| `schemaname`          | スキーマ(schema)名                                                   |
+| `tablename`           | テーブル名                                                                              |
+| `last_analyze`        | テーブルを手動分析した最後の時間                                                                   |
+| `last_autoanalyze`    | autovacuumデーモンでテーブルを分析した最後の時間                                                      |
+| `last_autovacuum`     | autovacuumデーモンでテーブルをバキューム(vacuum)した最後の時間                        |
+| `analyze_count`       | 手動で分析した回数                                                                          |
 | `last_vacuum`         | テーブルが手動でバキューム(vacuum)した最後の時間(VACUUM FULLは除く) |
-| `autoanalyze_count`   | autovacuumデーモンで分析した回数                        |
-| `autovacuum_count`    | autovacuumデーモンでバキューム(vacuum)した回数             |
+| `autoanalyze_count`   | autovacuumデーモンで分析した回数                                                              |
+| `autovacuum_count`    | autovacuumデーモンでバキューム(vacuum)した回数                                |
 | `vacuum_count`        | 手動でバキューム(vacuum)した回数(VACUUM FULLを除く)         |
 | `n_mod_since_analyze` | 最後の分析(analyze)から変更された行数(推定値)                 |
 
@@ -186,16 +186,17 @@ PostgreSQLではXID(transaction id)を循環的に使用しているため、あ
 
 次は<span class="uitext">Age</span>を照会すると表示されるカラム項目です。
 
-| カラム名                        | 説明                                        |
-| --------------------------- | ----------------------------------------- |
-| `datname`                   | データベース名                                   |
-| `schemaname`                | スキーマ(schema)名                             |
-| `tablename`                 | テーブル名                                     |
-| `xid_age`                   | vacuum作業で整理された最っとも日付の古い`xid`の間隔（年齢）       |
-| `table_size`                | テーブルサイズ                                   |
-| `autovacuum_vacuum_tuples`  | この値よりDead tupleの数が多くなると、autovacuumを実行します。 |
-| `dead_tuples`               | Dead tuple数                               |
-| `autovacuum_freeze_max_age` | デフォルト値は２億に設定                              |
+| カラム名                        | 説明                                                                                                                                                                   |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `datname`                   | データベース名                                                                                                                                                              |
+| `schemaname`                | スキーマ(schema)名                                                                                                                                     |
+| `tablename`                 | テーブル名                                                                                                                                                                |
+| `xid_age`                   | テーブルのmax age、最も古いレコードの`xid`(トランザクションID)                                                                                                           |
+| `per_to_wraparound`         | `xid`(トランザクションID) ラッピングまでの残りの余裕をパーセンテージで表示した指標<br/>計算式：`per_to_wraparound`(%) = `xid_age` / `Autovacuum_freeze_max_age` \* 100 |
+| `table_size`                | テーブルサイズ                                                                                                                                                              |
+| `autovacuum_vacuum_tuples`  | この値よりDead tupleの数が多くなると、autovacuumを実行します。                                                                                                                            |
+| `dead_tuples`               | Dead tuple数                                                                                                                                                          |
+| `autovacuum_freeze_max_age` | 既定値は２億に設定                                                                                                                                                            |
 
 ## Dead Tuple
 
@@ -211,20 +212,22 @@ Dead tupleを減らすためにはVacuum実行を検討してください。 詳
 
 次は<span class="uitext">Dead Tuple</span>を照会すると表示されるカラム項目です。
 
-| カラム名                  | 説明                                 |
-| --------------------- | ---------------------------------- |
-| `datname`             | データベース名                            |
+| カラム名                  | 説明                                                    |
+| --------------------- | ----------------------------------------------------- |
+| `datname`             | データベース名                                               |
 | `schemaname`          | スキーマ(schema)名                      |
-| `tablename`           | テーブル名                              |
+| `tablename`           | テーブル名                                                 |
 | `dead_tuple`          | DeleteやUpdate等により使用しないタプル(Tuple)の数 |
 | `dead_tuple_ratio`    | 使用しないタプル(Tuple)の割合                 |
 | `live_tuple`          | 使用するタプル(Tuple)の数                   |
 | `live_tuple_ratio`    | 使用するタプル(Tuple)の割合                  |
-| `total_relation_size` | リレーションの全体サイズ、インデックスとTOASTデータを含む    |
+| `total_relation_size` | リレーションの全体サイズ、インデックスとTOASTデータを含む                       |
 | `total_tuple`         | 全体タプル(Tuple)の数                     |
 
 ## エージェント設定{#set-agent-topObject}
 
-次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 _whatap.conf_ファイルに必要なオプションを設定してください。
+次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 *whatap.conf*ファイルに必要なオプションを設定してください。
 
-{@include: ../common-items/_db-pg-top-object-agent-setting.mdx}
+import Dbpgtopobjectagentsetting from "../common-items/_db-pg-top-object-agent-setting.mdx";
+
+<Dbpgtopobjectagentsetting />

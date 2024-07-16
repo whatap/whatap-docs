@@ -1,6 +1,6 @@
 ---
 id: instance-monitoring
-title: Instance Monitoring
+title: Monitoring a Database Instance
 description: In the instance monitoring menu, you can check the information details on key metrics of the database server in real time.
 tags:
   - Oracle
@@ -13,32 +13,44 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 import InDoc from '@site/src/components/InDoc.js';
 
-{@include: ../common-items/_db-instance-monitoring-desc.mdx}
+import Dbinstancemonitoringdesc from "../common-items/_db-instance-monitoring-desc.mdx";
+
+<Dbinstancemonitoringdesc />
 
 ## Basic screen guide
 
 <ProdImg img='db-instance-monitoring.png' desc='Instance Monitoring' />
 
-{@include: ../common-items/_db-instance-monitoring-basic-usage.mdx} 
+import Dbinstancemonitoringbasicusage from "../common-items/_db-instance-monitoring-basic-usage.mdx";
 
-<!-- 지표 선택하기 -->
+<Dbinstancemonitoringbasicusage />
 
-{@include: ../common-items/_db-select-metric-data-widget.mdx} 
+{/* 지표 선택하기 */}
+import Dbselectmetricdatawidget from "../common-items/_db-select-metric-data-widget.mdx";
 
-<!-- 레이아웃 설정하기 -->
+<Dbselectmetricdatawidget />
 
-{@include: ../common-items/_db-set-layout.mdx} 
+{/* 레이아웃 설정하기 */}
+import Dbsetlayout from "../common-items/_db-set-layout.mdx";
 
-<!-- 액티브 세션 영역 활용 -->
+<Dbsetlayout />
 
-{@include: ../common-items/_db-using-area-active-session.mdx}
+{/* 액티브 세션 영역 활용 */}
+import Dbusingareaactivesession from "../common-items/_db-using-area-active-session.mdx";
+
+<Dbusingareaactivesession />
+
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
 
 ## Changing the table columns{#change-column}
 
-{@include: ../common-items/_db-data-edit-column.mdx}
+import Dbdataeditcolumn from "../common-items/_db-data-edit-column.mdx";
 
-{@include: ../common-items/_db-query-details.mdx} 
+<Dbdataeditcolumn />
 
-<!-- 컬럼 정보 안내 -->
+{/* 컬럼 정보 안내 */}
+import Oraclecolumn from "../common-items/_db_oracle-column.mdx";
 
-{@include: ../common-items/_db_oracle-column.mdx}  
+<Oraclecolumn />

@@ -1,0 +1,92 @@
+This menu provides new or experimental features to users. Through ![Lab icon](/img/ic-laboratory.svg) <Cmdname sid="side_lab" className="uitext" /> or <Cmdname sid="sitemap" className="uitext" /> in the side menu, you can access it. The provided features may differ depending on the product.
+
+:::caution
+
+The functionality of the <Cmdname sid="side_lab" className="uitext" /> menu is currently in Beta version and may cause unexpected errors. Be careful when using the <Cmdname sid="side_lab" className="uitext" /> menu. It is not recommended to use the menu in handling important data or in the operating environment. If you have any feedback or issues, feel free to contact the support team at [support@whatap.io](mailto:support@whatap.io).
+
+:::
+
+<Xclude product="npm">
+
+- <Cmdname sid="side_tagFlex" className="uitext" />
+
+  **MXQL** is a query language to flexibly query WhaTap's performance data (metrics). It is used to comprehensively search and use the metrics collected from multiple agents in a project. For more information about **MXQL**, see [the following](../mxql/mxql-overview).
+
+</Xclude>
+
+<InDoc product="java">
+
+- <Cmdname sid="side_collectionMap" className="uitext" />
+
+  It provides information about the Collection (e.g. `java.util.Map`) used by the class specified in the JVM. To use this feature, add the following agent option:
+
+  ```ini title="whatap.conf"
+  collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource
+  ```
+
+  :::note
+
+  This feature is supported in [Java agent version 2.1.2](../release-notes/java/java-2_1_2#collectionmonitor) or later.
+
+  :::
+
+</InDoc>
+
+<InDoc product="java">
+
+- <Cmdname sid="side_remoteAccessStatus" className="uitext" />
+
+  Through the application agent settings, the logs in which success/failure records are written for outbound (remote) calls for each monitoring target are visualized.
+
+  :::note
+
+  To use this feature, add the following option in the agent configuration file (_whatap.conf_) or in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentSetting" className="uitext" />.
+
+  ```ini title="whatap.conf"
+  logsink_rt_enabled=true
+  logsink_enabled=true
+  ```
+
+  :::
+
+</InDoc>
+
+<InDoc product="kubernetes">
+
+- <Cmdname sid="side_pendingPod" className="uitext" />
+
+  It provides useful features for checking the status and error messages of Pods and reviewing the cluster resource status, network policy, scheduler log, and such.
+
+  :::note
+
+  This function is supported in Kubernetes master agent 1.7.0 or later.
+
+  :::
+
+</InDoc>
+
+<InDoc product="java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid">
+
+- <Cmdname sid="side_alertTemplate" className="uitext" />
+
+  It provides a customization function to allow to modify the alert messages that are delivered to project members via email or third-party plugins. For more information, see [the following](set-notification-message).
+
+</InDoc>
+
+<InDoc product="browser,npm">
+
+- <Cmdname sid="side_metricsSearch" className="uitext" />
+
+  You can search for specific metrics according to the categories based on fields and tags. For more information, see [the following](metrics-search).
+
+</InDoc>
+
+:::tip
+
+In the side menu, if the ![Lab icon](/img/ic-laboratory.svg) <Cmdname sid="side_lab" className="uitext" /> menu does not appear, you can access it through <Cmdname sid="sitemap" className="uitext" />.
+
+<ImgLang img="main-ui-sitemap.png" desc="Sitemap" />
+
+Under the side menu, select ![Sitemap icon](/img/ic-sitemap.svg). If the <Cmdname sid="sitemap" className="uitext" /> window appears, select a desired menu in the <Cmdname sid="side_lab" className="uitext" /> section on the lower right of the window.
+
+:::

@@ -1,0 +1,52 @@
+---
+id: kube-apiserver-metrics-search
+title: apiserver メトリクス照会
+description: kube-apiserverメトリクス照会メニューを案内します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - kube-apiserver
+  - コントロールプレーン
+  - メトリクス照会
+toc_max_heading_level: 2
+---
+
+ホーム画面 > クラスタープロジェクト選択 > <Cmdname sid="cluster" className="uitext" /> > **_apiserver メトリクス照会_**
+
+import K8skubeapiservercommon from "../common-items/_k8s-kube-apiserver-common.mdx";
+
+<K8skubeapiservercommon />
+
+kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 **_kube-apiserverメトリクス照会_**メニューを通じてkube-apiserverから収集される指標の原本データ整合性(Data Consistency)を確認することができます。 
+
+## 基本画面ガイド
+
+<ImgLang img='k8s-apiserver-metrics-search.png' desc='kube-apiserver メトリクス照会' />
+
+**_kube-apiserverメトリクス照会_**メニューは、kube-apiserver対象に収集したモニタリング原本データを<Cmdname sid="category" className="uitext" />別に照会する機能を提供します。 最近5分間に収集したデータが1分おきに反映されます。
+
+- 上段左の**_タイムセレクター_**を通じて、過去の特定の時点のデータを照会できます。 過去のデータ照会時に希望するオプションを選択した後、![虫眼鏡アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />アイコンをクリックしてください。
+
+- 照会する<Cmdname sid="max_count" className="uitext" />を設定することができます。 
+
+- メトリクスをフィルタリングして、ソースデータを必要に応じて加工できます。 
+
+- 上段右側の<Cmdname sid="download" className="uitext" />アイコンを選択し、希望するデータを_CSV_形式のファイルでダウンロードできます。
+
+### フィルター
+
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
+
+<K8slistfilter />
+
+## kube-apiserverモニタリング活性化
+
+import K8skubeapiservermonitoring from "../common-items/_k8s-kube-apiserver-monitoring.mdx";
+
+<K8skubeapiservermonitoring />
+
+## kube-apiserverメトリクス
+
+import K8skubeapiservermetric from "../common-items/_k8s-kube-apiserver-metric.mdx";
+
+<K8skubeapiservermetric />

@@ -1,0 +1,116 @@
+---
+id: install-agent-nuxtjs
+title: Nuxt.js環境インストール
+description: Nuxt.jsなどのサーバーサイドレンダリング(SSR)フレームワークでNode.jsアプリケーションモニタリングのためのCustom Server設定を案内します。
+tags:
+  - Node.js
+  - Nuxt.js
+  - エージェント
+---
+
+**Nuxt.js**などのサーバーサイドレンダリング(Server-side Rendering、SSR)フレームワークでアプリケーションをモニタリングするためにCustom Serverの設定が必要です。 一般的なNode.jsフレームワーク(例、Express.js、Nest.js)とは異なるアプローチが求められます。
+
+:::note
+
+参考資料：[Nuxt.js Custom Server Configuration](https://v2.nuxt.com/docs/configuration-glossary/configuration-dev/)
+
+:::
+
+## エージェントインストール {#installagent}
+
+次のコマンドを実行してエージェントをインストールしてください。
+
+```bash title="BASH"
+npm install whatap
+```
+
+## エージェントファイル構成 {#agentfiles}
+
+- *package.json*: サンプルアプリケーション情報と依存関係(dependency)管理文書ファイルです。
+
+- *whatap.conf*：モニタリングのためのエージェントの情報とアクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。 
+
+- *security.conf* (または*paramkey.txt*)：SQL変数、HTTPクエリの照会、Thread中止機能を利用する時に入力するセキュリティキーを保存します。
+
+- _server/index.js_ (ファイル名例)：**Nuxt.js**アプリインスタンス用のサーバー設定ファイルです。
+
+## server/index.jsコードを作成する
+
+**Nuxt.js**アプリケーションインスタンスのための**server/index.js**ファイルを作成してください。 このファイルはプロジェクトのサーバー(_server_) フォルダ内に位置する必要があります。
+
+### Whatapエージェント初期化
+
+```javascript title="server/index.js"
+var Whatap = require('whatap').NodeAgent;
+```
+
+### Nuxt.js及びその他の必要モジュールの読み込み
+
+```javascript title="server/index.js"
+const express = require('express');
+const { Nuxt, Builder } = require('nuxt');
+const app = express();
+```
+
+### Nuxtインスタンス設定と初期化
+
+```javascript title="server/index.js"
+const config = require('./nuxt.config.js');
+config.dev = process.env.NODE_ENV !== 'production';
+const nuxt = new Nuxt(config);
+
+if (config.dev) {
+    new Builder(nuxt).build();
+}
+```
+
+### Expressサーバー設定とNuxtミドルウェア追加
+
+次のコードで`port`には、サーバーのポート番号を設定してください。
+
+```javascript title="server/index.js"
+app.use(nuxt.render);
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server listening on http://localhost:${port}`);
+});
+```
+
+### 全体コードを見る{#fullcode}
+
+完成した完全なコードを参照してください。
+
+```javascript title="server/index.js"
+var Whatap = require('whatap').NodeAgent;
+
+const express = require('express');
+const { Nuxt, Builder } = require('nuxt');
+const app = express();
+
+const config = require('./nuxt.config.js');
+config.dev = process.env.NODE_ENV !== 'production';
+const nuxt = new Nuxt(config);
+
+if (config.dev) {
+    new Builder(nuxt).build();
+}
+
+app.use(nuxt.render);
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server listening on http://localhost:${port}`);
+});
+```
+
+## アプリケーションを実行する
+
+```bash title="SH"
+node server/index.js
+```
+
+{/* 다음 단계 */}
+import Apminstallnextstep from "../common-items/_apm-install-next-step.mdx";
+
+<Apminstallnextstep />

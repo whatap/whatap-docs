@@ -1,12 +1,25 @@
 ---
 id: agent-performance
 title: Agent performance
-description: This option is for the agent performance.
+description: The following guides you to the performance options for Java agents. You can check the maximum number of transactions that can be processed simultaneously and the initial size of the buffer that stores transaction data. This plays an important role in optimizing the system load and resource usage.
 tags:
   - Java
-  - Agent performance
+  - Application
+  - Agent
 ---
 
-This option is related to the Java agent performance.
+The following guides you to the performance options for Java agents. You can check the maximum number of transactions that can be processed simultaneously and the initial size of the buffer that stores transaction data. This plays an important role in optimizing the system load and resource usage.
 
-{@include: ../common-items/_java-agent-tx.mdx}
+### Below whatap.agent.2.1.0
+
+- **whatap.tx_max_count** <span class='type'>Int</span>
+
+  Default `5000`
+
+  Maximum number of transactions to store. If there are numerous concurrent transactions, increase this size.
+
+- **whatap.tx_default_capacity** <span class='type'>Int</span>
+
+  Default `101`
+
+  Initial size of the buffer in which transactions are stored.

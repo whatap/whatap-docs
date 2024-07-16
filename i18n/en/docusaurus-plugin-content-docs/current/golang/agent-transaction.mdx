@@ -7,7 +7,9 @@ tags:
   - Transactions
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 :::note
 
@@ -16,6 +18,14 @@ For more information about transactions, see [the following](track-transactions-
 :::
 
 ## Transaction tracing{#trs-trc}
+
+The following agent options allow you to trace the execution paths of each transaction within applications in detail. You can adjust various aspects, from the minimum response time to the number of execution steps for transactions.
+
+- **profile_basetime** <span class='type'>Millisecond</span>
+
+  Default `500`
+
+  Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
 
 - **profile_step_normal_count** <span class='type'>Int</span>
 
@@ -46,12 +56,6 @@ For more information about transactions, see [the following](track-transactions-
   Default `100`
 
   Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made within `profile_step_heavy_count`.
-
-- **profile_basetime** <span class='type'>Millisecond</span>
-
-  Default `500`
-
-  Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
 
 - **query_string_enabled** <span class='type'>Boolean</span>
 
@@ -125,7 +129,82 @@ For more information about transactions, see [the following](track-transactions-
 
   Compressed profiles are transmitted. The default value is `true`.
 
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+  Default `3000`
+
+  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+  Default `8000`
+
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+  Default `300000`
+
+  If a transaction does not end within the timeout period (5 minutes), no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+
+- **trace_useragent_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  If the value is `true`, the user agent data for transactions is collected. 
+
+- **trace_referer_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  If the value is `true`, the referer data for transactions is collected.
+
+## Exceptional handling {#exception}
+
+The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
+
+- **biz_exceptions** <span class='type'>String</span>
+
+  Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+
+  ```ini title="whatap.conf"
+  biz_exceptions=*errors.errorString, *echo.HTTPError, *url.Error, *exceptions.CustomErrors
+  ```
+
+  :::tip
+
+  Error class collection/Hitmap display level: Includes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
+- **ignore_exceptions** <span class='type'>String</span>
+
+  The error itself by the registered exception is ignored. The string to exclude is for the class related to the error type or error statistics in the profile.
+
+  The type of error that occurs in Go is displayed as a string.
+
+  ```go
+  thr.ErrorClassName = fmt.Sprintf("%T", err)
+  thr.ErrorMessage = err.Error()
+
+  # Output the error type
+
+  *errors.errorString
+  *echo.HTTPError
+  *url.Error
+  ```
+
+  ```ini title="whatap.conf"
+  ignore_exceptions=*errors.errorString, *echo.HTTPError, *url.Error, *exceptions.CustomErrors
+  ```
+
+  :::tip
+
+  Ignore error class/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
 ## HTTP transaction tracing{#track-http-trs}
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
 
 - **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -145,15 +224,23 @@ For more information about transactions, see [the following](track-transactions-
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 
-  Default `0`
-
   If a specific URL is set, the corresponding transactions are excluded from tracing. The set URLs are not displayed in the transaction list because they do not collect transaction data. Set URLs to exclude from transaction tracing. To set multiple items, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
-  Default `0`
-
   It sets URL prefixes to exclude from the transaction tracing.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **profile_http_header_enabled** <span class='type'>Boolean</span>
 
@@ -175,7 +262,9 @@ For more information about transactions, see [the following](track-transactions-
 
   :::note
 
-  The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
+  - <code class="my">Go agent v2.4.0 or later</code>: The security key is set to 6 characters (`paramkey`) in the `WHATAP_HOME`*/security.conf* file where the *whatap.conf* file is located.
+
+  - <code class="my"> Below Go agent v0.4.0 </code>: The security key is set to 6 characters within the `WHATAP_HOME`*/paramkey.txt* file where the *whatap.conf* file is located. If the *paramkey.txt* file does not exist, it is automatically created with a random value.
 
   :::
 
@@ -193,8 +282,6 @@ For more information about transactions, see [the following](track-transactions-
 
 - **ignore_http_method** <span class='type'>String</span>
 
-  Default `Empty`
-
   Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 
   ```ini title="whatap.conf"
@@ -205,60 +292,15 @@ For more information about transactions, see [the following](track-transactions-
   ignore_http_method=OPTIONS,HEAD
   ```
 
-- **biz_exceptions** <span class='type'>String</span>
+  :::note
 
-  Default `Empty`
+  The HTTP methods registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
 
-  Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
-
-- **ignore_exceptions** <span class='type'>String</span>
-
-  The error itself by the registered exception is ignored. The string to exclude is for the class related to the error type or error statistics in the profile.
-
-  The type of error that occurs in Go is displayed as a string.
-
-  ```go
-  thr.ErrorClassName = fmt.Sprintf("%T", err)
-  thr.ErrorMessage = err.Error()
-
-  # Output the error type
-
-  *errors.errorString
-  *echo.HTTPError
-  *url.Error
-  ```
-
-## Transaction tracing
-
-- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
-
-  Default `3000`
-
-  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
-
-- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
-
-  Default `8000`
-
-- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
-
-  Default `30000`
-
-  If a transaction does not end within the timeout period (5 minutes), no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
-
-- **trace_useragent_enabled** <span class='type'>Boolean</span>
-
-  Default `false`
-
-  If the value is `true`, the user agent data for transactions is collected. 
-
-- **trace_referer_enabled** <span class='type'>Boolean</span>
-
-  Default `false`
-
-  If the value is `true`, the referer data for transactions is collected.
+  :::
 
 ## Multiple transaction trace
+
+The following options are used to trace and monitor cross-application calls. The options can help you understand the interactions between multiple applications. Various options provided allow you to fine-tune the behaviors for tracing multiple transactions.
 
 - **mtrace_enabled** <span class='type'>Boolean</span>
 

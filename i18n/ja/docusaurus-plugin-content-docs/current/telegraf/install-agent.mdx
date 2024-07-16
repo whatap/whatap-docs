@@ -26,9 +26,13 @@ Telegrafエージェントは、ユーザーが該当サービスに直接イン
 
 :::
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## インストール手順とファイル構成
 
@@ -158,7 +162,7 @@ Telegrafエージェントは、ユーザーが該当サービスに直接イン
 
 ## Telegraf連携
 
-_Telegraf.conf_に`socket_writer output plugin`設定を行い、収集された情報をwhatap-telegrafに渡します。
+*Telegraf.conf*に`socket_writer output plugin`設定を行い、収集された情報をwhatap-telegrafに渡します。
 
 ```toml title='TOML'
 # # Generic socket writer capable of handling multiple socket types.

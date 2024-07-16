@@ -1,6 +1,6 @@
-### Table view{#anlaysis-trace-table-view}
+### Table view {#anlaysis-trace-table-view}
 
-In the **_Table view_** tab, you can see the transaction execution steps in chronological order.
+In the <Cmdname sid="TTL06126" className="uitext" /> tab, you can see the transaction execution steps in chronological order.
 
 <Xclude product='php,nodejs,golang'>
 
@@ -34,7 +34,7 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 
 <Xclude product='php,nodejs,golang,kubernetes'>
 
-- The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the **_Active stacks_** button is located. If you click **_Active stack_**, you can check the step performed during the section.
+- The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the <Cmdname sid="active_stack" className="uitext" /> button is located. If you click <Cmdname sid="active_stack" className="uitext" />, you can check the step performed during the section.
 
   :::note
 
@@ -48,7 +48,7 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 
 <InDoc product='kubernetes'>
 
-- The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the **_Active stacks_** button is located. If you click **_Active stack_**, you can check the step performed during the section.
+- The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the <Cmdname sid="active_stack" className="uitext" /> button is located. If you click <Cmdname sid="active_stack" className="uitext" />, you can check the step performed during the section.
 
   :::note
 
@@ -60,22 +60,22 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 
 </InDoc>
 
-- ![Column icon](/img/ico-column.svg) **_Select Column_**: You can add or hide the memory accumulation and CPU accumulation data as columns in the table list. The columns are as follows:
+- ![Column icon](/img/ico-column.svg) <Cmdname sid="select_column" className="uitext" />: You can add or hide the memory accumulation and CPU accumulation data as columns in the table list. The columns are as follows:
 
-  - **_No_**: Step occurrence sequence
+  - <UI>No</UI>: Step occurrence sequence
 
-  - **_Time_**: Start time of each step
+  - <Cmdname sid="TTL06416" className="uitext" />: Start time of each step
 
-  - **_Gap_**: There may be a difference between the waiting time from the step start to the next step and the elapsed time if delayed due to external issues.
+  - <Cmdname sid="gap_time" className="uitext" />: The waited time between the start time of the previous step and the current step may have a difference, while there may be a gap from the elapsed time if a delay happens due to external factors.
 
-  - **_Elapsed_**: Total elapsed time from the start to the end of each method
+  - <Cmdname sid="TTL06375" className="uitext" />: Total elapsed time from the start to the end of each method
 
-  - **_Contents_**: Execution details of the step
+  - <Cmdname sid="TTL06417" className="uitext" />: Execution details of the step
 
-- ![Download icon](/img/ico-download.svg) **_TXT_**: You can download basic transaction data and execution data for each section in a text file.
+- ![Download icon](/img/ico-download.svg) <UI>TXT</UI>: You can download basic transaction data and execution data for each section in a text file.
 
-- ![Download icon](/img/ico-download.svg) **_SQL_**: The basic transaction information and SQL execution data can be downloaded as a text file.
+- ![Download icon](/img/ico-download.svg) <UI>SQL</UI>: The basic transaction information and SQL execution data can be downloaded as a text file.
 
 - ![Zoom in icon](/img/ic-outside.svg): You can see only the table list, with hiding the transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when you have a long list of tables.
 
-- If you select the SQL step, the **_SQL_** window appears to display parameters. For more information, see [the following](#transaction-parameter).
+- If you select the SQL step, the <UI>SQL</UI> window appears to display parameters. For more information, see [the following](#transaction-parameter).

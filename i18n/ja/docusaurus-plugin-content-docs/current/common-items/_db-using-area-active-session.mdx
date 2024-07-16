@@ -1,14 +1,14 @@
-## アクティブセッションのセクションを使用
+## アクティブセッションのセクションを使用 {#using-activesessions}
 
-画面の下にある**_アクティブセッション_**セクションからリアルタイムで実行中のセッション情報を確認できます。ここでは、テーブルの右上にあるボタン機能を説明します。
+画面の下にある<Cmdname sid="active_sessions" className="uitext" />セクションからリアルタイムで実行中のセッション情報を確認できます。ここでは、テーブルの右上にあるボタン機能を説明します。
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,redis,mongodb'>
 
 - ![停止アイコン](/img/ico-pause.svg)：リアルタイムで収集するデータの変更を停止することができます。再起動するには![スタートアイコン](/img/ico-play-grey.svg)ボタンをクリックしてください。
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,redis,mongodb'>
 
 - ![フィルターアイコン](/img/ico-filter.svg)：テーブルのカラムヘッダー項目に基づいて一覧をフィルタリングできます。
 
@@ -28,15 +28,19 @@
 
   :::
 
+</InDoc>
+
+<InDoc product='postgresql,mysql,redis,mongodb'>
+
 - ![ダウンロードアイコン](/img/ico-download.svg)：テーブルの内容をCSVファイルとしてダウンロードできます。
 
-- ![ポップアップアイコン](/img/ic-popup.svg):**_アクティブセッション_**、**_ロックツリー_**、**_プロセス情報_**を新しいウィンドウを開いて確認できます。一覧が多いため、大きな画面で一覧を確認する場合に便利です。
+- ![ポップアップアイコン](/img/ic-popup.svg)：別ウィンドウで開き、より大きな画面でリストを確認できます。
 
 </InDoc>
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,redis,mongodb'>
 
-- ![フィルターアイコン](/img/ico-filter.svg)：テーブルのカラムヘッダー項目を基準に一覧をフィルタリングできます。ボタンをクリックすると、各ヘッダーカラムで**_含む_**、**_含まない_**、**_一致_**、**_一致しない_**の条件を設定できます。
+- ![フィルターアイコン](/img/ico-filter.svg)：テーブルのカラムヘッダー項目を基準に一覧をフィルタリングできます。ボタンをクリックすると、各ヘッダーカラムで<Cmdname sid="includes" className="uitext" />、<Cmdname sid="excludes" className="uitext" />、<Cmdname sid="equal" className="uitext" />、<Cmdname sid="unequal" className="uitext" />の条件を設定できます。
 
   :::note
 
@@ -50,19 +54,19 @@
 
 長期間進行中のセッションを停止することができます。
 
-1. **_アクティブセッション_**一覧の項目にマウスカーソルを移動してください。
+1. <Cmdname sid="active_sessions" className="uitext" />一覧の項目にマウスカーソルを移動してください。
 
 2. 右側に表示される![セッション中止アイコン](/img/ic-kill-session.svg) ボタンを選択してください。
 
-3. **_セッション中止_**ウィンドウが表示されたら、パスワードを入力してください。
+3. <Cmdname sid="session_kill" className="uitext" />ウィンドウが表示されたら、パスワードを入力してください。
 
-4. **_適用_**ボタンを選択します。
+4. <Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
 そのセッションを停止します。
 
 :::note
 
-- DBXエージェントのインストールパスの_paramkey.txt_ファイルからパスワードを確認できます。
+- DBXエージェントのインストールパスの*paramkey.txt*ファイルからパスワードを確認できます。
 
 - この機能は、**修正**権限のあるメンバーのみ利用できます。メンバー権限に関しての詳細な説明は[次の文書](../project/project-structure#project-auth)を参照してください。
 

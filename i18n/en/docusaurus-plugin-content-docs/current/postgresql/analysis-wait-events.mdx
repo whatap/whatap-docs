@@ -9,7 +9,7 @@ tags:
   - Wait analysis
 ---
 
-Home screen > Select Project > **_Analysis_** > **_Wait analysis_**
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
 
 You can check in which wait event the active session is waiting and which wait events occur frequently. Active sessions collected every 5 seconds can be analyzed from the wait perspective. 
 
@@ -25,16 +25,30 @@ You can check in which wait event the active session is waiting and which wait e
 
 <ImgLang img='db-analysis-wait.png' desc='Wait analysis' />
 
-Select the **_time_** and **_instance_** to view. You can see the wait data corresponding to the set time and instance. If there are active sessions that frequently wait (delay) during the query period, it can be used to analyze what types of wait events occurred.
+Select the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> to view. You can see the wait data corresponding to the set time and instance. If there are active sessions that frequently wait (delay) during the query period, it can be used to analyze what types of wait events occurred.
 
 ![Wait Event Top 5](/img/db-analysis-wait-top5.png)
 
 In **_Wait Event Top 5_**, you can see which wait events occurred most frequently. Using the above image as an example, the most frequently occurred type of wait event is **Lock**. If you select the ![number1](/img/number-01.png) detailed time in the graph chart, you can view the active sessions in the time and check the SQL statements in which the wait events occurred.
 
+:::note
+
+- When you select the **_instance_** column in the **_Active Session_** section list, the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu appears. For more information about <Cmdname sid="side_dbMonitoring" className="uitext" />, see [the following](instance-monitoring).
+
+- In the **_Active Session_** list, if you select a session, the <Cmdname sid="session_detail" className="uitext" /> window appears. For more information about the <Cmdname sid="session_detail" className="uitext" /> windows, see [the following](multi-instance-monitoring#session-details).
+
+- When you select the **_query_** column in the **_Active Session_** list, the <Cmdname sid="TTL06224" className="uitext" /> window appears. For more information about the <Cmdname sid="TTL06224" className="uitext" /> windows, see [the following](multi-instance-monitoring#query-details).
+
+:::
+
 ## Filtering the table data
 
-{@include: ../common-items/_db-table-data-filtering.mdx} 
+import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
+
+<Dbtabledatafiltering />
 
 ## Configuring the table columns{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

@@ -1,58 +1,83 @@
-The Flex board can be shared or reused by the users with other accounts.
+In <Cmdname sid="integratedFlexboard" className="uitext" />, you can share a created dashboard with other members or copy it for reuse.
 
-## Sharing the Flex board with members
+## Differences between sharing and copying
 
-You can share the created Flex board to see the same dashboard with other users. This allows the work to be shared. If you modify the dashboard you shared, the other users can see the changed dashboard. This feature is available only in Home > **_Flex Board_**.
+![Difference between sharing and copying](/img/flexboard-compare-sharing-copy.png)
 
-1. Select ![Share icon](/img/ico-flexboard-share.svg) of the dashboard you want to share from **_Dashboard list_** in **_Flex Board_**.
+- If you share a dashboard, all shared members can see the dashboard.
+
+- If you copy a dashboard to another member or yourself, you can see the separate copied dashboard.
+
+- Members who have a shared or copied dashboard with <Cmdname sid="read_only" className="uitext" /> mode cannot edit the dashboard, but can edit a dashboard shared or copied with <b>Edit Mode</b>
+
+- The shared members for the dashboard with <Cmdname sid="read_only" className="uitext" /> can share the dashboard as read-only and can copy it.
+
+- You can share any dashboard with the members invited to one or more projects that are included in the dashboard. Check that the members to be shared or copied belong to the project.
+
+  <ImgLang img='flexboard-check-projects.png' desc='Dashboard list' />
+
+:::note
+
+**Dashboard sharing and copying features are updated**
+
+In the past, the members to be shared or copied had to have the **Edit** role, but since [Service 2.3.0 release](../release-notes/service/service-2_3_x), as long as they belong to the project regardless of role, they can copy or share a dashboard. However, among the projects in the shared dashboard, the data cannot be viewed because they do not have the **Analysis view** role. For more information about member roles, see [the following](../project/project-structure#member-auth).
+
+:::
+
+## Sharing the Flex board
+
+You can see the same dashboard by sharing the created Flex board with other users. This allows users to share a project. If you have modified the shared dashboard, the other users can see the same dashboard. 
+
+:::note
+
+This feature can be used only in <Cmdname sid="integratedFlexboard" className="uitext" />. It cannot be used in the <Cmdname sid="flexboard" className="uitext" /> menu of the project.
+
+:::
+
+1. Select <LinkImage img="ico-flexboard-share.svg" className="ico" /> of the dashboard you want to share from <Cmdname sid="dashboard_list" className="uitext" /> in <Cmdname sid="integratedFlexboard" className="uitext" />.
 
    <ImgLang img="flexboard-share-01.png" desc="Flex board Shared" />
 
-2. If the **_Sharing a Dashboard_** window appears, select **_+ Account_**.
+2. If the <Cmdname sid="share_dashboard" className="uitext" /> window appears, select <LinkImage img="ico-add.svg" className="ico" /> <Cmdname sid="account" className="uitext" />.
 
    <ImgLang img="flexboard-share-02.png" desc="Flex board Shared" />
 
-3. Select a user account to share the dashboard.
+3. Select a member to share the dashboard.
 
    <ImgLang img="flexboard-share-06.png" desc="Flex board Shared" />
 
-   - Select **_+ Account_** to add any target to share. You can additionally select a user account.
+   - To add more members for sharing, select <LinkImage img="ico-add.svg" className="ico" /> <Cmdname sid="account" className="uitext" />. You can add any member.
 
-   - The user accounts that can share the dashboard are those belonging to the selected project.
+   - You can share any dashboard with the members invited to one or more projects that are included in the dashboard. Check that the members to be shared or copied belong to the project.
 
-   - If you do not have **Edit role** for all projects in the dashboard, the `Read only` tag appears.
-
-4. Select **_Sharing a Dashboard_**. If you select **_Read Only_**, the shared users cannot edit the dashboard.
+4. Select <Cmdname sid="share_dashboard" className="uitext" />.
 
    <ImgLang img="flexboard-share-03.png" desc="Flex board Shared" />
 
-The items that have shared the dashboard are marked with `Shared` tag in **_Dashboard list_**. Hover your mouse over the shared tag to see information about the members who have shared the dashboard.
+   - If you select <Cmdname sid="read_only" className="uitext" />, the shared members cannot modify the dashboard.
+
+   - To share the dashboard with the members to be shared as read-only, select <Cmdname sid="ITM07634" className="uitext" />.
+
+You can see that the <Cmdname sid="shared" className="uitext" /> tag is displayed in <Cmdname sid="dashboard_list" className="uitext" /> for the shared items. If you hover your mouse over the <Cmdname sid="shared" className="uitext" /> tag, you can see the information about the shared members. The members shared as read-only see the <Cmdname sid="read_only" className="uitext" /> tag.
 
 | In case the dashboard has been shared by the owner                | In case the owner shared the dashboard                            |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
 | <ImgLang img="flexboard-share-04.png" desc="Flex board Shared" /> | <ImgLang img="flexboard-share-05.png" desc="Flex board Shared" /> |
 
-:::note 
+:::tip
 
 **Dash board shared conditions**
 
-- The dashboard sharing is available only in Home > **_Flex Board_**.
+- The dashboard sharing is available only in Home > <Cmdname sid="integratedFlexboard" className="uitext" />.
 
-- The member who wants to share the dashboard must have **Edit role** for all projects in the dashboard. 
+- Members can share their own dashboard, and the shared dashboards can be reshared or copied.
 
-- If you share the dashboard without **Edit role** for all projects, it is shared in **_Read Only_** mode. For more information about roles, see [the following](../project/project-structure).
-
-- When re-sharing the shared dashboard to another user, the dashboard's property must not be in **_Read Only_** mode.
-
-- The dashboard sharing button is displayed only when the sharing conditions are met.
-
-  <ImgLang img="flexboard-sharable-list.png" desc="Flex board Shared" />
-
-:::
-
-:::note
+- Members who have a shared or copied dashboard with <Cmdname sid="read_only" className="uitext" /> mode cannot edit the dashboard, but can edit a dashboard shared with <b>Edit Mode</b>
 
 - When a dashboard owner deletes the shared dashboard, the dashboard is deleted from all user accounts.
-- When a user who has a shared dashboard deletes the dashboard, it is only deleted from the user's **_dashboard list_**. The original dashboard remains intact.
+
+- When a user who has a shared dashboard deletes the dashboard, it is deleted only from the member's <Cmdname sid="dashboard_list" className="uitext" />. The original dashboard remains intact.
+
+- Among the projects on the shared dashboard, you cannot view the data for the projects with no <Cmdname sid="view_and_analysis" className="b600" /> role.
 
 :::

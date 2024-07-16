@@ -8,64 +8,100 @@ tags:
   - エージェント
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import TR from '@site/src/components/TR';
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## WhaTapデータベースエージェントのダウンロード
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
-3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+<Dbinstallagentsteps />
+
+3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
    ```ini title='whatap.conf'
-   license=プロジェクトアクセスキー
-   whatap.server.host=13.124.11.223/13.209.172.35 //WhaTapサーバー情報
+   license={Access_Key}
+   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
 
    dbms=mongodb
-   db=データベース名(sid)
-   db_ip=データベースのIPアドレス
-   db_port=データベースのポート番号 
+   db={Database_name} # sid
+   db_ip={DB_server_IP_address}
+   db_port={DB_server_port}
    ```
 
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードしてください。_/圧縮を解凍したフォルダ/jdbc_
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+   データベースサーバーのOSとバージョンに合わせてJDBCドライバをダウンロードします。
 
-   **MongoDB JDBC Drivers**: https://github.com/mongodb/mongo-jdbc-driver
+   **MongoDB JDBC Drivers**：https://github.com/mongodb/mongo-jdbc-driver
+
+{/* 공통 Notes*/}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
+
+<Dbinstallagentcommonnotes />
+
+{/* 모니터링용 계정 생성*/}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
+
+{/* mongoDB */}
+
+```javascript
+db.createUser(
+  {
+    user: "whatap",
+    pwd: "DB_Password",
+    roles: [
+        { "role" : "clusterMonitor", "db" : "admin" },
+   ]
+  }
+)
+```
 
 :::note
 
-_/解凍されたフォルダ/jdbc/README.md_ファイルで各データベースのJDBCドライバのインストールパスを確認することができます。
+- `user`と`pwd`値に特殊文字を含めると、パーセントエンコード(percent encoding)を適用して変換する必要があります。例えば、パスワードが`whatap@#`だったら`whatap%40%23`に変換して入力する必要があります。詳細は、[次のリンク](https://www.mongodb.com/docs/manual/reference/connection-string/#connection-string-components-1)を参照してください。
+
+- MongoDB環境のアカウント作成の詳細については、[次のリンク](https://www.mongodb.com/docs/manual/reference/method/db.createUser/)を参照してください。
 
 :::
 
-## モニタリング用アカウントの作成{#uid}
+## データベースユーザーファイルの生成 {#create-db-user}
 
-:::note
+:::tip
 
-- **MongoDB**プラットフォームは、モニタリング用アカウントを作成するプロセスを省略します。
+userとpasswordを使用しない場合(認証なしでMongoDBに接続可能な場合) **_DBユーザーファイル生成_**する手順をスキップできます。
 
 :::
 
-## DBユーザーファイルの作成{#create-db-user}
+<DBuserDesc />
 
-{@include: ../common-items/_db-create-db-user-file.mdx} 
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
 
-<!--## 에이전트 실행-->
+<Dbcreatedbuserfilebody />
 
-{@include: ../common-items/_db-run-agent.mdx} 
+{/*## 에이전트 실행*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-<!--## XOS 에이전트 설치-->
+<Dbrunagent />
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+{/*## XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent />

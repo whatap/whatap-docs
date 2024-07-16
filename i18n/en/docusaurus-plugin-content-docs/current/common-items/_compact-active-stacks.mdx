@@ -4,7 +4,7 @@ Because the active stack regularly performs thread dumps, it can add lots of ove
 
 :::tip
 
-In **_Sitemap_** > **_Thread List/Dump_**, from the thread list, the overhead can be determined by checking the CPU time of the **_WhaTap-ActiveStackDump_** thread.
+In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />, from the thread list, the overhead can be determined by checking the <Cmdname sid="cpu_time" className="uitext" /> of the ***WhaTap-ActiveStackDump*** thread.
 
 :::
 
@@ -41,7 +41,7 @@ org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapt
 
 <InDoc product='dotnet'>
 
-```c title='.NET'
+```csharp title='.NET'
 DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)
 System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr,IntPtr,IntPtr,Int32)
 System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr,IntPtr,IntPtr,Int32)
@@ -63,14 +63,20 @@ System.Threading.Thread.Sleep(Int32)
 
 - You can adjust the active stack dump time interval. 
 
-  `active_stack_second=10`
+  ```ini title="whatap.conf"
+  active_stack_second=10
+  ```
 
 - It is limited to the maximum line of the active stack. It collects 50 lines from the top line by default.
 
-  `trace_active_callstack_depth=50`
+  ```ini title="whatap.conf"
+  trace_active_callstack_depth=50
+  ```
 
 - Each hashed line of the active stack is collected. Text is collected only once. 
 
 - The maximum number of active stacks collected at a time is limited.  
 
-  `active_stack_count=100`
+  ```ini title="whatap.conf"
+  active_stack_count=100
+  ```

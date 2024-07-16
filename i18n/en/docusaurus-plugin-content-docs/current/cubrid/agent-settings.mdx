@@ -12,14 +12,18 @@ import DocCardList from '@theme/DocCardList';
 import InDoc from '@site/src/components/InDoc.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 
-{@include: ../common-items/_db-agent-settings-desc.mdx} 
+import Dbagentsettingsdesc from "../common-items/_db-agent-settings-desc.mdx";
 
-<!-- 에이전트 구성 -->
+<Dbagentsettingsdesc />
 
-{@include: ../common-items/_db-structure-of-agent.mdx}
+{/* 에이전트 구성 */}
+import Dbstructureofagent from "../common-items/_db-structure-of-agent.mdx";
 
-<!-- 에이전트 설정 -->
+<Dbstructureofagent />
 
-{@include: ../common-items/_db-set-agent-desc.mdx}
+{/* 에이전트 설정 */}
+import Dbsetagentdesc from "../common-items/_db-set-agent-desc.mdx";
+
+<Dbsetagentdesc />
 
 <DocCardList />

@@ -1,11 +1,177 @@
 ---
 id: agent-notification
 title: エージェント通知
-description: Javaアプリケーションサーバーのイベント通知のオプションを設定します。
+description: Javaエージェントを通じてアプリケーションサーバーで発生する様々なイベントに対する通知の設定方法を提供します。トランザクションの再帰呼び出し、サービス拒否、HTTPC接続エラー、ヒップおよびディスク使用量超過、CPU使用量しきい値到達、DBコネクション重複割り当て、例外発生時にイベント通知を設定するオプションが含まれます。各イベントごとに発行間隔、発行可否、しきい値の設定など、細かい調整ができます。
 tags:
   - Java
+  - アプリケーション
+  - エージェント
 ---
 
-Javaアプリケーション サーバーのイベント通知のオプションを提供します。
+Javaエージェントを通じてアプリケーションサーバーで発生する様々なイベントに対する通知の設定方法を提供します。トランザクションの再帰呼び出し、サービス拒否、HTTPC接続エラー、ヒップおよびディスク使用量超過、CPU使用量しきい値到達、DBコネクション重複割り当て、例外発生時にイベント通知を設定するオプションが含まれます。各イベントごとに発行間隔、発行可否、しきい値の設定など、細かい調整ができます。
 
-{@include: ../common-items/_java-agent-notice.mdx}
+- **recursive_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`300000`
+
+  トランザクションの再帰呼び出しのイベント通知発行間隔を設定します。
+
+- **reject_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  サービス拒否(呼び出し負荷制限/拒否) 時、イベント通知発行の可否を設定します。
+
+- **reject_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`300000`
+
+  サービス拒否(呼び出し負荷制限/拒絶) 時、イベント通知発行の間隔を設定します。
+
+- **httpc_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  HTTPC接続エラーが発生した場合、イベント通知を発行するかどうかを設定します。
+
+- **httpc_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`300000`
+
+  HTTPC接続エラーが発生した場合、イベント通知発行の間隔を設定します。
+
+- **heap_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  ヒープ使用量のしきい値に達した場合、イベント通知を発行するかどうかを設定します。
+
+- **heap_event_percent** <span class='type'>Percentage</span>
+
+  既定値`90`
+
+  ヒープ使用量イベント通知の発行基準のしきい値を設定します。
+
+- **heap_event_duration** <span class='type'>MiliSeconds</span>
+
+  既定値`30000`
+
+  ヒープ使用量イベント通知の発行基準の持続時間を設定します。
+
+- **heap_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`300000`
+
+  ヒープ使用量イベント通知の発行間隔を設定します。
+
+- **heap_event_action** <span class='type'>String</span>
+
+  既定値`NONE`
+
+  ヒープ使用量イベントが発生した場合、実行する動的ローディングコードを設定します。
+
+  :::note
+
+  _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
+
+  :::
+
+- **disk_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  ディスク使用量がしきい値に達した場合、イベント通知を発行するかどうかを設定します。
+
+- **disk_event_percent** <span class='type'>Percentage</span>
+
+  既定値`90`
+
+  ディスク使用量イベント通知発行基準のしきい値を設定します。
+
+- **disk_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`300000`
+
+  ディスク使用量イベント通知の発行間隔を設定します。
+
+- **disk_event_action** <span class='type'>String</span>
+
+  ディスク使用量イベントが発生した場合、実行する動的ローディングコードを設定します。
+
+  :::note
+
+  _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
+
+  :::
+
+- **cpu_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  CPU使用量がしきい値に達したとき、イベント通知を発行するかどうかを設定します。
+
+- **cpu_event_percent** <span class='type'>Percentage</span>
+
+  既定値`90`
+
+  CPU使用量のイベント通知を発行するしきい値を設定します。
+
+- **cpu_event_duration** <span class='type'>MiliSeconds</span>
+
+  既定値`30000`
+
+  CPU使用量のイベント通知を発行する持続時間を設定します。
+
+- **cpu_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`300000`
+
+  CPU使用量のイベント通知を発行する間隔を設定します。
+
+- **cpu_event_action** <span class='type'>String</span>
+
+  CPU使用量のイベントが発生した場合、実行する動的ローディングコードを設定します。
+
+  :::note
+
+  _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
+
+  :::
+
+- **dbc_dup_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  DB Connectionが冗長に割り当てられる場合、イベント通知の発行可否を設定します。
+
+- **dbc_dup_event_fullstack_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  DB Connectionが重複して割り当てられる場合、Stackを確保するかどうかを設定します。
+
+- **exception_event_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  Exceptionが発生した場合、イベント通知の発行可否を設定します。
+
+- **exception_event_interval** <span class='type'>MiliSeconds</span>
+
+  既定値`60000`
+
+  Exceptionが発生した場合、イベント通知の発行間隔を設定します。
+
+- **exception_event_set** <span class='type'>String</span>
+
+  対象Exceptionを設定します。複数の場合は、コンマ(,)を区切り文字として使用します。
+
+- **exception_event_action** <span class='type'>String</span>
+
+  イベントが発生した場合、実行する動的ローディングコードを設定します。
+
+  :::note
+
+  _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
+
+  :::

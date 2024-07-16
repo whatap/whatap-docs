@@ -1,0 +1,38 @@
+ul li.fileitem {
+  font-family: 'Noto Sans Coptic';
+  font-weight: 500;
+  display: list-item;
+  padding-bottom: 15px !important;
+}
+
+ul li.fileitem:first-of-type {
+  margin-top: 15px;
+}
+
+ul li[type='file'] span.name, ul li[type='folder'] span.name {
+  display: table-cell;
+  margin-right: 15px;
+  min-width: 240px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ico {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+ul li span.desc {
+  font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP';
+  display: table-cell;
+}
+
+ul li.fileitem ul {
+  list-style-type: none;
+}
+
+ul li.fileitem ul li [type='file'] span.name {
+  min-width: 215px;
+}

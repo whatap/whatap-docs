@@ -1,45 +1,46 @@
 <Xclude product='amazon-cloudwatch,amazon-ecs,azure,ncloud'>
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_メトリクスチャート_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_counter" className="uitext" />
 
 </Xclude>
 
 <InDoc product='amazon-cloudwatch,amazon-ecs,azure,ncloud'>
 
-ホーム画面 > プロジェクト選択 > **_メトリクス_** > **_メトリクスチャート_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_metrics" className="uitext" /> > <Cmdname sid="side_counter" className="uitext" />
 
 </InDoc>
 
-**_マトリックスチャート_**メニューでは、モニタリング対象から収集されたメトリックデータを次のようにチャートが表示することができます。時間と指標を指定することは必須です。
+<Cmdname sid="side_counter" className="uitext" />メニューでは、モニタリング対象から収集されたメトリクスデータを次のようにチャートで照会できます。時間と指標の指定が必須です。
 
 <ImgLang img='metrics-chart-sv.png' desc='メトリクスチャート' />
 
 ### 上段オプション
 
-![number 1](/img/number-01.png)領域の**_メトリクスチャート_**の上段オプションからチャートの時間範囲とモニタリング対象エージェントを指定することができます。
+![number 1](/img/number-01.png)領域の<Cmdname sid="side_counter" className="uitext" />の上段オプションからチャートの時間範囲とモニタリング対象エージェントを指定できます。
 
-- **_時間_**：時間の合計範囲でX軸の開始と終了を指定できます。
+- <Cmdname sid="time" className="uitext" />：時間の範囲でX軸の開始と終了を指定できます。
 
-- **_インターバル_**：時間間隔でX軸データの間隔を指定できます。
+- <Cmdname sid="interval" className="uitext" />：時間間隔でX軸データの間隔を指定できます。
 
-- **_時間マージ_**：データマージ方法の1つを使用すると、インターバルで指定した時間内のデータをマージできます。
+- <Cmdname sid="time_merge" className="uitext" />：データマージ方式の1つを選んで、インターバルで指定した時間のデータをマージできます。
 
-  > 例）**_平均_**は1時間以内のデータ平均値を意味します。
+  > 例）<Cmdname sid="merge_avg" className="uitext" />は、1時間のデータ平均値を意味します。
 
-- ![アイコン](/img/ic-pageview.svg) **_エージェント_**：検索したエージェントを指定できます。 エージェントを指定しない場合は、クエリ全体が実行されます。
+- ![アイコン](/img/ic-pageview.svg) <Cmdname sid="agent" className="uitext" />：照会するエージェントを指定できます。指定しない場合は、すべてを対象に照会します。
 
 ### 指標一覧
 
-![number 2](/img/number-02.png)領域は、オプションを検索する指標のリストです。まず、**_カテゴリ_**を選択してください。 選択した**_カテゴリ_**下位の指標を表示した後、目的の指標を選択してください。 **_カテゴリ_**と指標を選択すると、![number 1](/img/number-01.png)領域のトップメニューで指定した時間範囲のデータに基づいて![number 3](/img/number-03.png)領域でチャートウィジェットを参照することができます。
+![number 2](/img/number-02.png)領域は、オプションを検索する指標のリストです。まず、<Cmdname sid="category" className="uitext" />を選択してください。 選択した<Cmdname sid="category" className="uitext" />位の指標を表示した後、目的の指標を選択してください。 <Cmdname sid="category" className="uitext" />と指標を選択すると、![number 1](/img/number-01.png)領域のトップメニューで指定した時間範囲のデータに基づいて![number 3](/img/number-03.png)領域でチャートウィジェットを参照することができます。
 
 :::note 
 
 **データ結合**
 
-データ結合は、**_時間マージ_**と**_オブジェクトマージ_**を提供します。 
+データのマージは、<Cmdname sid="object_merge" className="uitext" />と<Cmdname sid="time_merge" className="uitext" />方法を提供します。
 
-- **_時間マージ_**は、ソースデータからフィールド値が同じデータを一定の間隔でマージします。 
-- **_オブジェクト結合_**は、異なるフィールド値を持つデータの中からタグが一致する場合、そのデータをマージします。
+- <Cmdname sid="time_merge" className="uitext" />は、ソースデータからフィールド値が同じデータを一定の間隔でマージします。
+
+- <Cmdname sid="object_merge" className="uitext" />は、異なるフィールド値を持つデータの中からタグが一致する場合、そのデータをマージします。
 
 :::
 
@@ -63,7 +64,7 @@
 
 - CSV：![CSVダウンロードアイコン](/img/ico-csv.svg)アイコンを選択して、チャートを描画したデータをCSVファイルとしてダウンロードできます。
 
-- 詳細をみる：![詳細アイコン](/img/ico-detail.svg)アイコンを選択して詳細を表示します。モニタリング対象が多く、モニタリング対象の指標推移を個別に確認できる場合に便利です。
+- <Cmdname sid="detail" className="uitext" />：![詳細アイコン](/img/ico-detail.svg)アイコンを選択して詳細を表示します。モニタリング対象が多く、モニタリング対象の指標推移を個別に確認できる場合に便利です。
 
 :::note
 
@@ -73,4 +74,4 @@
 
 ### ウィジェットを削除する
 
-画面に配置したすべてのウィジェットを削除するには、![削除アイコン](/img/ico-trash.svg)**_すべてのウィジェットを削除_**ボタンを選択してください。
+画面に配置したすべてのウィジェットを削除するには、![削除アイコン](/img/ico-trash.svg)<Cmdname sid="BTN06884" className="uitext" />ボタンを選択します。

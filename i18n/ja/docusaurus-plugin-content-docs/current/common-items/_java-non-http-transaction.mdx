@@ -1,8 +1,6 @@
-## 非HTTPトランザクションのトレース
-
 - **trace_auto_transaction_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレース対象メソッドがトランザクション開始点(`Javax.http.httpservlet`, `hook_service_*`)内で実行されない限り、収集されません。 この場合、トレース対象メソッドをトランザクションの開始点になるように設定します。
 
@@ -14,19 +12,19 @@
 
 - **trace_auto_transaction_backstack_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
-  `trace_auto_transaction_enabled`オプションの値が`true`の場合、トランザクション開始時にStackTraceを記録します。 これを通じて、トランザクションの開始点を見つけることができます。
+  `trace_auto_transaction_enabled`オプションの値が`true`の場合、トランザクション開始時にStackTraceを記録します。これを通じて、トランザクションの開始点を見つけることができます。
 
 - **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   トランザクションではなく、バックグラウンドスレッドによるソケットがオープンしたときも記録します。
 
 - **async_stack_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   バックグラウンドスレッドに対するActive Stack機能を使用するかどうかを設定します。
 
@@ -36,7 +34,7 @@
 
 - **async_thread_parking_class** <span class='type'>String</span>
 
-  デフォルト値`sun.misc.Unsafe`
+  既定値`sun.misc.Unsafe`
 
   スタックの上位メソッドが`async_thread_parking`に登録されたクラス/メソッドの場合、スレッドがパーキング状態にあると判断してダンプを生成しません。
 
@@ -50,7 +48,11 @@
 
 - **hook_service_supers** <span class='type'>String</span>
 
-  NON-HTTPトランザクション追跡のための開始点の共通分母が特定クラスのメソッドを継承した場合、これを設定します。
+  NON-HTTPトランザクション追跡のための始点の共通分母が特定のクラスのメソッドを継承した場合、共通分母のメソッドを設定します。メソッド全体のパスを入力してください。ワイルドカード(`*`)が使用でき、コンマ(,)を区切り文字として利用して複数のメソッドを登録できます。
+
+  ```ini title="whatap.conf"
+  hook_service_supers=a.b.C.method,a.b.C.*
+  ```
 
 - **hook_service_interfaces** <span class='type'>String</span>
 
@@ -58,25 +60,25 @@
 
 - **hook_service_access_public_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   NON-HTTP Demonプロセスのプロセスのトランザクションを設定する場合は、publicメソッドに対してのみAccess権限条件をon/offで設定します。
 
 - **hook_service_access_private_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   NON-HTTP Demonプロセスのトランザクションを設定する場合は、privateメソッドに対してのみAccess権限条件をon/offで設定します。
 
 - **hook_service_access_protected_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   NON-HTTP Demonプロセスのトランザクションを設定する場合は、protectedメソッドに対してのみAccess権限条件をon/offで設定します。
 
 - **service_name_mode** <span class='type'>String</span>
 
-  デフォルト値`full`
+  既定値`full`
 
   トランザクション名には、次のオプションを使用できます。
 

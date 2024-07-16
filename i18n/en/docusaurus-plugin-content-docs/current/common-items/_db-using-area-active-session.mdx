@@ -1,14 +1,14 @@
-## Using the active session section
+## Using the active session section {#using-activesessions}
 
-Through **_Active Sessions_** at the bottom of the screen, you can see the real-time active sessions. The following provides the guide for the button on the upper right of the table.
+Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of the screen, you can see the real-time active sessions. The following provides the guide for the button on the upper right of the table.
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,redis,mongodb'>
 
 - ![Stop icon](/img/ico-pause.svg): You can stop changing the data collected in real time. To restart it again, select ![Start icon](/img/ico-play-grey.svg).
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,redis,mongodb'>
 
 - ![Filter icon](/img/ico-filter.svg): Using the column header entries in the table, the list can be filtered.
 
@@ -28,15 +28,19 @@ Through **_Active Sessions_** at the bottom of the screen, you can see the real-
 
   :::
 
+</InDoc>
+
+<InDoc product='postgresql,mysql,redis,mongodb'>
+
 - ![Download icon](/img/ico-download.svg): You can download the content of the table as a CSV file.
 
-- ![Popup icon](/img/ic-popup.svg): **_Active sessions_**, **_Lock tree_**, and **_Process Info_** can pop up in a new window. This is useful when checking a large list on a larger screen.
+- ![Popup icon](/img/ic-popup.svg): A new window appears to see the list on a wider screen.
 
 </InDoc>
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,redis,mongodb'>
 
-- ![Filter icon](/img/ico-filter.svg): You can filter the list based on the column header entries in the table. After selecting the button, you can set the conditions in each header column such as **_Includes_**, **_Excludes_**, **_Equal_**, and **_Unequal_**.
+- ![Filter icon](/img/ico-filter.svg): You can filter the list based on the column header entries in the table. After selecting the button, you can set the conditions in each header column such as <Cmdname sid="includes" className="uitext" />, <Cmdname sid="excludes" className="uitext" />, <Cmdname sid="equal" className="uitext" />, and <Cmdname sid="unequal" className="uitext" />.
 
   :::note
 
@@ -50,13 +54,13 @@ Through **_Active Sessions_** at the bottom of the screen, you can see the real-
 
 You can stop a session(s) that has been running for a long time.
 
-1. In the **_active sessions_** list, move your mouse cursor to the item.
+1. In the <Cmdname sid="active_sessions" className="uitext" /> list, move your mouse cursor to the item.
 
 2. Select the ![Session kill icon](/img/ic-kill-session.svg) that appears on the utmost right.
 
-3. If the **_Session kill_** window appears, enter the password.
+3. If the <Cmdname sid="session_kill" className="uitext" /> window appears, enter the password.
 
-4. Select **_Apply_**.
+4. Select <Cmdname sid="apply" className="uitext" />.
 
 The session is stopped.
 

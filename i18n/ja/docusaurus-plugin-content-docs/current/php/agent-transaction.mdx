@@ -1,7 +1,7 @@
 ---
 id: agent-transaction
 title: トランザクション
-description: PHPトランザクションに関連する設定を提供します。
+description: PHPアプリケーション内の各トランザクションの性能データをエージェントが追跡し分析できる設定方法を案内します。トランザクションのリクエスト処理、応答時間、リソース使用量などを追跡して、アプリケーションの性能を評価します。
 tags:
   - PHP
   - トランザクション
@@ -15,18 +15,64 @@ tags:
 
 :::
 
-## トランザクショントレーシング{#php-trs-trc}
+## トランザクショントレーシング {#php-trs-trc}
 
-{@include: ../common-items/_php-trs-profile.mdx}
+以下は、アプリケーションの各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な部分を調整可能です。
 
-## HTTPトランザクションの追跡{#php-track-http-trs}
+import Phptrsprofile from "../common-items/_php-trs-profile.mdx";
 
-{@include: ../common-items/_php-track-http-trs.mdx}
+<Phptrsprofile />
 
-## トランザクションのトレース
+import Phptracktrs from "../common-items/_php-track-trs.mdx";
 
-{@include: ../common-items/_php-track-trs.mdx}
+<Phptracktrs />
+
+## 例外処理{#exception}
+
+以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。ビジネス例外を登録し、関連する統計を収集することで、アプリケーションの安定性を確認できます。また、特定の例外を無視したりHTTPステータスコードがエラーの場合、エラーとして処理するかどうかを設定できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で、正常なトランザクションとして表示されます。
+
+- **whatap.biz_exceptions** <span class='type'>String</span>
+
+  特定のErrorまたはExceptionをBusiness Exceptionに指定します。ヒートマップではエラーとして表記されず、統計情報にのみ収集されます。収集されるError Class 名と同様に適用します。コンマ(,)を区切り文字として複数登録できます。
+
+  ```ini title="whatap.conf"
+  whatap.biz_exceptions=HttpConnectionServerError(400), GuzzleHttp\Exception\ServerException, CustomException
+  ```
+
+  :::tip
+
+  エラークラス収集 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
+
+  :::
+
+- **whatap.ignore_exceptions** <span class='type'>String</span>
+
+  登録したExceptionのエラー自体を無視します。
+
+  Exceptionの場合、Custom Exception Classが定義されていない場合、基本的にExceptionとして収集されます。特定のExceptionを区別するために、Custom Exception Classを定義し、その名前を指定することで除外できます。
+
+  ```ini title="whatap.conf"
+  whatap.ignore_exceptions=HttpConnectionServerError(400), GuzzleHttp\Exception\ServerException, CustomException
+  ```
+
+  :::tip
+
+  エラークラス無視 / ヒットマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+  :::
+
+## HTTPトランザクションの追跡 {#php-track-http-trs}
+
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザーはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+
+import Phptrackhttptrs from "../common-items/_php-track-http-trs.mdx";
+
+<Phptrackhttptrs />
 
 ## マルチトランザクショントレース
 
-{@include: ../common-items/_php-multi-trace.mdx}
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡に対する詳細な動作を調整できます。
+
+import Phpmultitrace from "../common-items/_php-multi-trace.mdx";
+
+<Phpmultitrace />

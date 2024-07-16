@@ -66,7 +66,7 @@ Restart-Service "Whatap Infra"
 
 ### オプション設定
 
-- `stats_enabled`：収集状態データの収集有無を設定します。デフォルト値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
+- `stats_enabled`：収集状態データの収集有無を設定します。既定値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
 
 - `stats_category`：収集データを保存するメトリクスカテゴリを設定します。値を`logsink_stats`に設定してください。統計データのフィールドは次のとおりです。
 
@@ -89,14 +89,14 @@ Restart-Service "Whatap Infra"
 
 - `nowrap_keywords`：行単位のログ検索時に、対応するオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
 
-<!-- 
+{/* 
 
 0214 로그 모니터링 요청-추가 업데이트
 
 stats_enabled = false ## 로그 발생량 통계 별도 데이터로 전송 여부
 stats_category = "serverlog_stats" ## 로그 발생량 통계 카테고리
 
-* `stats_enabled`: 별도의 로그 수집 통계 데이터 발생 여부를 설정합니다. 기본값은 `false`입니다. 값을 `true`로 설정하면 `stats_category`에서 설정한 카테고리로 통계 데이터가 발생합니다.
-* `stats_category`: 별도의 로그 수집 통계 데이터를 저장할 메트릭스 카테고리를 설정합니다. 통계 데이터 필드는 다음과 같습니다.
+- `stats_enabled`: 別のログ収集統計データの発生有無を設定します。既定値は`false`です。値を`true`に設定すると`stats_category`で設定したカテゴリで統計データが発生します。
+- `stats_category`: 別のログ収集統計データを保存するメトリクスカテゴリを設定します。統計データフィールドは次のとおりです。
 
--->
+*/}

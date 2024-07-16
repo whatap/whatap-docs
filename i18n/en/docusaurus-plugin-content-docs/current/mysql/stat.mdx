@@ -1,26 +1,49 @@
 ---
 id: stat
-title: SQL statistics
-description: It provides the statistical data for each DB.
+title: SQL Statistics
+description: It provides the statistical data for each MySQL DB.
 tags:
   - MySQL
   - Database
-  - Database Monitoring
   - Statistics
 ---
 
-<!-- SQL 통계-->
+{/* SQL 통계*/}
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-{@include: ../common-items/_db-stat-sql-desc.mdx} 
+<Dbstatsqldesc />
 
-<!-- SQL 통계 기본 사용 안내-->
+{/* SQL 통계 기본 사용 안내 */}
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-{@include: ../common-items/_db-stat-sql-basic.mdx} 
+<Dbstatsqlbasic />
 
-<!-- 쿼리별 수행 추이, 자세히 보기-->
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx} 
+<Dbstatsqlviewquery />
 
-## Checking the information details
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
+
+## Checking the information details {#session-details-info}
+
+import Dbstatsqldetails from "../common-items/_db-stat-sql-details.mdx";
+
+<Dbstatsqldetails />
+
+{/* 필터 조건추가하기*/}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter />
+
+## Configuring the table columns{#change-column}
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

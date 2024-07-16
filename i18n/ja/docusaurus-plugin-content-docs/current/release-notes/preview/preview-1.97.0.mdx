@@ -13,7 +13,7 @@ import UI from '@site/src/components/UItext';
 
 :::note
 
-[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
 
 :::
 
@@ -79,11 +79,12 @@ import UI from '@site/src/components/UItext';
 
 2023年3月22日
 
-<!--
+{/*
+
 ### `AWS`
 
 <p><Status>New</Status> <b>AWS Log</b> 신규 상품을 추가했습니다. 많은 이용 부탁드립니다! 자세한 내용은 <a href='../../aws-log/introduction' target='_blank'>다음 문서</a>를 참조하세요.</p>
--->
+*/}
 
 ### `共通`
 
@@ -91,7 +92,7 @@ import UI from '@site/src/components/UItext';
 
 - <Status>Change</Status> <UI>ログ</UI> > <UI>ログトレンド</UI> メニューで照会時間を変更した場合に、選択したフィルターの結果がない場合、以前に選択したフィルターを解除できるように改善しました。
 
-- <Status>Deprecate</Status> <UI>統合ダッシュボード</UI>、<UI>統合メトリックボード</UI> メニューは、2023年5月1日以降、左側のメニューから削除、サイトマップの移動に関する案内を表示
+- <Status>Deprecate</Status> <UI>統合ダッシュボード</UI>、<UI>統合メトリクスボード</UI> メニューは、2023年5月1日以降、左側のメニューから削除、サイトマップに移動に関する案内を表示
 
 ## Preview-1.97.8
 
@@ -107,25 +108,27 @@ import UI from '@site/src/components/UItext';
 
 ### `共通`
 
-<!--
-#### 계정 정보 관리
+{/*
+
+#### アカウント情報管理
 
 <p><Status>Feature</Status> <UI>계정 정보</UI> &gt; <UI>회원 탈퇴</UI> 유의 사항 최신화 및 회원 탈퇴 관련 확인 절차 추가</p>
--->
+*/}
 
 #### MXQL Data参照
 
 <p><Status>Fixed</Status> <UI>CSVダウンロード</UI>機能が正常に作動しない問題を修正したため、ダウンロードボタンを削除した後に再デプロイされます。</p>
 
-<!-- 
+{/* 
+
 ### `RUM`
 
-#### Flex 보드
+#### Flexボード
 
 - <Status>Fixed</Status> 대시보드의 URL 그룹 필터가 정상 적용되지 않는 문제 수정 및 필터 위치 이동
 - <Status>Fixed</Status> 환경별 대시보드의 브라우저별, OS별, 디바이스별 바(bar) 차트 위젯 MXQL 버그 수정
 - <Status>Fixed</Status> 일부 위젯 중 필드 기준으로 차트 컬러가 설정되지 않는 위젯 수정
--->
+  */}
 
 #### 分析
 
@@ -242,7 +245,7 @@ import UI from '@site/src/components/UItext';
 - <Status>Change</Status> <UI>ログ</UI> メニューからの機能をすばやく理解するためにメニュー名を変更
 
   - <UI>ライブTail</UI> → <UI>ライブテール</UI>
-  - <UI>探索機</UI> → <UI>ログトレンド</UI>
+  - <UI>検索機</UI> → <UI>ログトレンド</UI>
   - <UI>検索機</UI> → <UI>ログ検索</UI>
 
 - <Status>Change</Status> <UI>ログ検索</UI> メニューからクエリ内容を <UI>Timestamp</UI> を基準にソートする機能(<UI>新しい順</UI>/<UI>古い順</UI>) に変更
@@ -321,6 +324,6 @@ import UI from '@site/src/components/UItext';
 
 ### `RUM`
 
-<p><Status>Feature</Status> <UI>分析</UI> > <UI>エラー追跡</UI> メニュー追加</p>
+<p><Status>Feature</Status> <UI>分析</UI> > <UI>エラートレース</UI> メニュー追加</p>
 
 > ウェブアプリケーションのブラウザーレベルで発生するエラーを収して確認することができます。

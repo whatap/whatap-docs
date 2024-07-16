@@ -1,4 +1,4 @@
-## Learning about widgets
+## Learning about the widgets {#about-widget}
 
 :::info
 
@@ -26,11 +26,41 @@ It displays the execution status and number of applications registered in the pr
 
 The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. <span class='normal'>Blue (Normal)</span> means transactions within the specified response time, <span class='slow'>Orange (Slow)</span> means slow transactions with the response time of around 8 seconds, and <span class='vslow'>Red (Very slow)</span> means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
 
-#### <Cmdname sid="AA001" />
+#### <Cmdname sid="AA001" /> {#active-trs-speed}
 
-![Active transaction speed](/img/speedmeter.png)
+<ImgLang img="speedmeter.png" desc="Active Transaction Speed Chart" />
 
-You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
+You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. 
+
+- Area on the left
+
+  This indicates the number of requested transactions and displays data in proportion to the number of transactions.
+
+- Area in the middle
+
+  The status of active transactions is color displayed by the speed along with the count at the upper right. The number in the chart is the total number of active transactions. The colors in the chart indicate as follows:
+
+  - Blue (<span class='normal'>Normal</span>): 0 to 3 seconds
+
+  - Orange (<span class='slow'>Slow</span>): 3 to 8 seconds
+
+  - Red (<span class='vslow'>Very Slow</span>): 8 seconds or more
+
+- Area on the right
+
+  This indicates the Application Performance Index (Apdex). This metric is measured for customer satisfaction of a web application and has a value between 0 and 1. The droplet flying speed is proportional to the total number of Apdex transactions, and the droplet colors mean as follows:
+
+  - Blue: <span class='normal'>Apdex </span>satisfied count 
+
+  - Orange: <span class='slow'>Apdex </span>tolerating count 
+
+  - Red: <span class='vslow'>Apdex </span>frustrated count = `Total number of APDEX transactions` - (`Apdex satisfied count` + `Apdex tolerating count`)
+
+  :::note
+
+  For more information about the Application Performance Index (Apdex), see [the following link](https://www.apdex.org).
+
+  :::
 
 #### <Cmdname sid="AA002" /> {#active-trs}
 
@@ -63,6 +93,14 @@ The situation where lots of blue colors are represented is not a problem. You mu
   - For more information about transactions, see [the following](track-transactions-intro).
 
   :::
+
+#### <Cmdname sid="AA018" /> {#active-trs-agent}
+
+<ImgLang img='apm-dashboard-active-tx-agent.png' desc='Agent Active Transaction' />
+
+The <Cmdname sid="AA002" className="uitext" /> widget displays on a chart the data merged based on the criteria selected in the agent selection options. On the other hand, the <Cmdname sid="AA018" className="uitext" /> widget allows you to individually check the agents included in the selected agent classification criteria.
+
+Right-click the dashboard and then select the <Cmdname sid="AA018" className="uitext" /> widget from the widget list.
 
 #### <Cmdname sid="AA004" /> {#active-status}
 
@@ -116,6 +154,16 @@ The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution
 
 :::
 
+#### <Cmdname sid="AA016" />
+
+<ImgLang img='apm-dashboard-active-tx-equalizer.png' desc='Active Transaction Equalizer' />
+
+It displays a list of all agents and the total number of active transactions. Hover your mouse over each graph on the chart to display the transaction speed. The transaction speeds are classified into <span class='normal'>Normal</span>, <span class='slow'>Slow</span>, and <span class='vslow'>Very Slow</span>.
+
+- To display or hide inactive agents, select ![Agent display icon](/img/ic-inactive.svg). 
+
+- If you select ![right-arrow](/img/right-arrow.svg), the <Cmdname sid="side_multi_active_tx" className="uitext" /> menu appears.
+
 ### Service-related widget
 
 The service-related widget can be used as the metric for application performance tuning.
@@ -124,7 +172,9 @@ The service-related widget can be used as the metric for application performance
 
 ![Apdex](/img/apm-dashboard-apdex.png)
 
-{@include: ../common-items/_java-apdex-desc.mdx} 
+import Javaapdexdesc from "../common-items/_java-apdex-desc.mdx";
+
+<Javaapdexdesc />
 
 :::note
 
@@ -170,6 +220,8 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
+<InDoc product="java,nodejs,golang">
+
 #### <Cmdname sid="AA010" /> {#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='Heap memory' />
@@ -178,13 +230,9 @@ You can see which servers are at risk by displaying the maximum available memory
 
 The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). <Cmdname sid="AA010" className="uitext" /> metric is displayed with average values.
 
-:::note
+</InDoc>
 
-- Java and Node.js display the total heap memory and usage.
-
-- PHP, Python, and .Net display the process memory usage.
-
-:::
+<InDoc product="java">
 
 :::tip
 
@@ -197,6 +245,30 @@ For more information about the heap memory chart analysis, see the following lin
 - [Analysis of JAVA heap memory chart: Analysis of Ch.2 memory leak and heap dump](https://youtu.be/t2q5z4HHNfs)
 
 :::
+
+</InDoc>
+
+<InDoc product="php,dotnet,python">
+
+#### <Cmdname sid="AA017" /> {#process-memory}
+
+<ImgLang img='apm-dashboard-process-memory.png' desc='Process Memory' />
+
+It displays the sum of the maximum system memory available for each server and the memory used by a specified process.
+
+The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). <Cmdname sid="AA017" className="uitext" /> metric is displayed with average values.
+
+</InDoc>
+
+<Xclude product="java">
+
+:::tip
+
+For more information about chart analysis, see the following link. [Monthly WhaTap: Metrics to pay attention to monitoring](https://www.whatap.io/ko/blog/94/)
+
+:::
+
+</Xclude>
 
 ### User-related widget
 

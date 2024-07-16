@@ -1,23 +1,43 @@
 ---
 id: stat
 title: SQL統計
-description: データベースごとの統計データを提供します。
+description: Oracleのデータベースごとの統計データを提供します。
 tags:
   - Oracle
   - データベース
   - 統計
 ---
 
-{@include: ../common-items/_db-stat-sql-desc.mdx}
+{/* SQL 통계*/}
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-<!-- SQL 통계 기본 사용 안내-->
+<Dbstatsqldesc />
 
-{@include: ../common-items/_db-stat-sql-basic.mdx} 
+{/* SQL 통계 기본 사용 안내 */}
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-<!-- 쿼리별 수행 추이, 자세히 보기-->
+<Dbstatsqlbasic />
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
 
-## 詳細情報を確認する
+<Dbstatsqlviewquery />
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
+
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
+
+{/* 필터 조건추가하기*/}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter />
+
+## テーブルカラムの設定{#change-column}
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

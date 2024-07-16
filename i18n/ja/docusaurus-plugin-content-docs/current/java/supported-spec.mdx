@@ -1,18 +1,19 @@
 ---
 id: supported-spec
 title: サポート環境
-description: WhaTapモニタリングサービスが動作するJVMアプリケーションサーバーの基本仕様について説明します。
+description: WhaTap Javaエージェントの対応環境に関する詳細情報を提供します。Java 6以降で20以下のすべてのOSにおいて、JVMで駆動されるアプリケーションに対する対応情報、Java 1.5以下のバージョンに対する制限的な対応、対応OS、アプリケーションサーバー、フレームワーク/ライブラリ、およびデータベースの一覧が含まれます。
 tags:
   - Java
-  - Linux
-  - MySQL
+  - アプリケーション
+  - サポート環境
+  - サポート情報
 ---
 
 ## Javaエージェント動作環境
 
 エージェントをインストールする前に、JVMアプリケーションサーバーが、次の仕様を満たしていることを確認してください。
 
-Web Application Server(WAS)だけでなく、デーモンやバッチ アプリケーションなど、JVMで動作するすべてのアプリケーションに適用できます。Java 1.6未満は、support@whatap.ioに問い合わせまたは[次の文書](add-jvm-opt/java-under-ver)を参照してください。
+Web Application Server(WAS)だけでなく、デーモンやバッチ アプリケーションなど、JVMで動作するすべてのアプリケーションに適用できます。Java 1.6未満は、support@whatap.ioに問い合わせまたは[次の文書](add-jvm-opt/java-under-ver)を参照にしてください。
 
 - **対応バージョン**
 
@@ -37,7 +38,7 @@ Web Application Server(WAS)だけでなく、デーモンやバッチ アプリ�
 
   :::note
 
-  JDK 6をインストールできるすべてのオペレーティングシステムに対応します。
+  JDK 6をインストールできるすべてのOSに対応します。
 
   :::
 
@@ -109,16 +110,173 @@ Web Application Server(WAS)だけでなく、デーモンやバッチ アプリ�
 
   - Jedis Redis driver
 
+## アプリケーションサーバー別の互換性とデータソース
+
+### Tomcat
+
+#### 互換性
+
+| WAS Ver. | Java SE 6 (jdk1.6.0) | Java SE 7 (jdk1.7.0_80) | Java SE 8 (jdk1.8.0_91) |
+| -------- | :-------------------------------------: | :----------------------------------------: | :----------------------------------------: |
+| Tomcat 6 |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Tomcat 7 |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Tomcat 8 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Tomcat 9 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-no'>❌</span>      |       <span class='emoji-ok'>✅</span>      |
+
+| WAS Ver. | OpenJDK 6 (1.6.0_45) | OpenJDK 7 (1.7.0_80) | OpenJDK 8 (1.8.0_91) |
+| -------- | :-------------------------------------: | :-------------------------------------: | :-------------------------------------: |
+| Tomcat 6 |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+| Tomcat 7 |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+| Tomcat 8 |     <span class='emoji-no'>❌</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+| Tomcat 9 |     <span class='emoji-no'>❌</span>     |     <span class='emoji-no'>❌</span>     |     <span class='emoji-ok'>✅</span>     |
+
+| WAS Ver. |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
+| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+
+#### DataSource
+
+| DB            | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
+| ------------- | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL         | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| MariaDB       | mariadb-java-client-1.4.6.jar       | 1.4.6      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| PostgreSQL    | postgresql-9.4.1209.jre7.jar        | 9.4.1209   | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Amazon Aurora | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle        | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| DB2           | db2jcc.jar, db2jcc_license_cu.jar   | 1.4.2      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+
+### JBoss
+
+#### 互換性
+
+| WAS Ver.                                        | Java SE 6 (jdk1.6.0)       | Java SE 7 (jdk1.7.0_80)      | Java SE 8 (jdk1.8.0_91)      |
+| ----------------------------------------------- | :-------------------------------------------: | :---------------------------------------------: | :---------------------------------------------: |
+| JBoss EAP 7.0 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-no'>❌</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 6.1.1 (standalone) |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-no'>❌</span>         |
+| JBoss EAP 6.2 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 6.3 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 6.4 (standalone)   |        <span class='emoji-no'>❌</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss EAP 7.0 (domain)       |        <span class='emoji-no'>❌</span>        |         <span class='emoji-no'>❌</span>         |         <span class='emoji-ok'>✅</span>         |
+| JBoss AS 5.1.0 (default)     |        <span class='emoji-ok'>✅</span>        |         <span class='emoji-ok'>✅</span>         |         <span class='emoji-ok'>✅</span>         |
+
+| WAS Ver.                                        | OpenJDK 6 (1.6.0_45)       | OpenJDK 7 (1.7.0_80)       | OpenJDK 8 (1.8.0_91)       |
+| ----------------------------------------------- | :-------------------------------------------: | :-------------------------------------------: | :-------------------------------------------: |
+| JBoss EAP 7.0 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 6.1.1 (standalone) |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-no'>❌</span>        |
+| JBoss EAP 6.2 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 6.3 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 6.4 (standalone)   |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss EAP 7.0 (domain)       |        <span class='emoji-no'>❌</span>        |        <span class='emoji-no'>❌</span>        |        <span class='emoji-ok'>✅</span>        |
+| JBoss AS 5.1.0 (default)     |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |        <span class='emoji-ok'>✅</span>        |
+
+| WAS Ver.                                        |    ibm-java-x86_64-60           |    ibm-java-x86_64-71           |    ibm-java-x86_64-80           |
+| ----------------------------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JBoss EAP 7.0 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 6.1.1 (standalone) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBoss EAP 6.2 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 6.3 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 6.4 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP 7.0 (domain)       |                -                |                -                |                -                |
+| JBoss AS 5.1.0 (default)     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+
+#### DataSource
+
+| DB            | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |         互換性                     |
+| ------------- | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL         | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| MariaDB       | mariadb-java-client-1.4.6.jar       | 1.4.6      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| PostgreSQL    | postgresql-9.4.1209.jre7.jar        | 9.4.1209   | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Amazon Aurora | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle        | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| DB2           | db2jcc.jar, db2jcc_license_cu.jar   | 1.4.2      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+
+### JEUS
+
+#### 互換性
+
+| WAS Ver. | Java SE 6 (jdk1.6.0) | Java SE 7 (jdk1.7.0_80) | Java SE 8 (jdk1.8.0_91) |
+| -------- | :-------------------------------------: | :----------------------------------------: | :----------------------------------------: |
+| JEUS 7   |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| JEUS 6   |     <span class='emoji-ok'>✅</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+
+| WAS Ver. | OpenJDK 6 (1.6.0_45) | OpenJDK 7 (1.7.0_80) | OpenJDK 8 (1.8.0_91) |
+| -------- | :-------------------------------------: | :-------------------------------------: | :-------------------------------------: |
+| JEUS 7   |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+| JEUS 6   |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |     <span class='emoji-ok'>✅</span>     |
+
+| WAS Ver. |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
+| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JEUS 7   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JEUS 6   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+
+#### DataSource
+
+| DB            | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
+| ------------- | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL         | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| MariaDB       | mariadb-java-client-1.4.6.jar       | 1.4.6      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| PostgreSQL    | postgresql-9.4.1209.jre7.jar        | 9.4.1209   | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Amazon Aurora | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle        | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| DB2           | db2jcc.jar, db2jcc_license_cu.jar   | 1.4.2      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+
+### WebSphere
+
+#### 互換性
+
+| WAS Ver. |        ibm-java-x86_64-60       |
+| -------- | :-----------------------------: |
+| 8.5.5.10 | <span class='emoji-ok'>✅</span> |
+
+#### DataSource
+
+| DB     | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
+| ------ | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| Mysql  | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+
+### JETTY
+
+#### 互換性
+
+| WAS Ver.     | Java SE 6 (jdk1.6.0) | Java SE 7 (jdk1.7.0_80) | Java SE 8 (jdk1.8.0_91) |
+| ------------ | :-------------------------------------: | :----------------------------------------: | :----------------------------------------: |
+| Jetty 8.1.21 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Jetty 9.2.18 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-ok'>✅</span>      |       <span class='emoji-ok'>✅</span>      |
+| Jetty 9.3.12 |     <span class='emoji-no'>❌</span>     |       <span class='emoji-no'>❌</span>      |       <span class='emoji-ok'>✅</span>      |
+
+| WAS Ver.     |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
+| ------------ | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Jetty 8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty 9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty 9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+
+#### DataSource
+
+| DB     | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
+| ------ | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL  | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+
 ## 共通サポート環境
 
 ### 対応ブラウザー
 
-{@include: ../getting-started/_supported-browser.mdx}
+import Supportedbrowser from "../getting-started/_supported-browser.mdx";
+
+<Supportedbrowser />
 
 ### ファイアウォール
 
-{@include: ../getting-started/_proxy.mdx} 
+import Proxy from "../getting-started/_proxy.mdx";
+
+<Proxy />
 
 ### モバイルアプリ
 
-{@include: ../getting-started/_mobile-app.mdx}  
+import Mobileapp from "../getting-started/_mobile-app.mdx";
+
+<Mobileapp />

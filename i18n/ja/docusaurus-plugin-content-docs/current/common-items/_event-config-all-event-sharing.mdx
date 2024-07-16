@@ -1,0 +1,121 @@
+## すべてのイベント設定を共有する
+
+基本イベントを含む他のすべてのイベント設定をJSON形式のファイルにダウンロードし、同じタイプの製品間で設定を共有できます。 これにより、繰り返しイベントの設定作業を簡素化できます。
+
+### 抽出
+
+画面の上の<Cmdname sid="BTN07762" className="uitext" />ボタンを選択してください。 すべてのイベント設定を含むJSONファイルがダウンロードされます。 JSONファイル名は、*integrated-event-`YYYY`-`MM`-`DD`.json*の形式です。
+
+JSONデータの構造は次のとおりです。
+
+```json title="integrated-event"
+{
+  "productType": "{productType}",
+  "platform": "{platform}",
+  "events": {
+    "HITMAP": {
+      ...
+    },
+    "LOG_REALTIME": [
+      {...}
+    ],
+    "METRICS": [
+      {...}
+    ],
+    "COMPOSITE_LOG": [
+      {...}
+    ],
+    "BASIC": [
+      {...}
+    ],
+    "COMPOSITE_METRICS": [
+      {...}
+    ],
+    "ANOMALY": [
+      {...}
+    ]
+  }
+}
+```
+
+`events`属性の下位属性は、次のイベント設定に該当します。
+
+<InDoc product="java,php,python,nodejs,golang,dotnet,kubernetes"><ImgLang img='event-config-v2-all-events-apm-k8s.png' desc='Events' /></InDoc>
+
+<InDoc product="postgresql,oracle,mysql,mssql,tibero,cubrid,altibase,redis,mongodb"><ImgLang img='event-config-v2-all-events-apm-k8s.png' desc='Events' /></InDoc>
+
+<InDoc product="server"><ImgLang img='event-config-v2-all-events-server.png' desc='Events' /></InDoc>
+
+<InDoc product="browser"><ImgLang img='event-config-v2-all-events-browser.png' desc='Events' /></InDoc>
+
+<InDoc product="npm"><ImgLang img='event-config-v2-all-events-npm.png' desc='Events' /></InDoc>
+
+- `BASIC`: <Cmdname sid="default" className="uitext" />
+
+<InDoc product="server">
+
+- `SERVER_LOG_FILE`: <Cmdname sid="sm_log_event_tab" className="uitext" />
+
+</InDoc>
+
+- `METRICS`: <Cmdname sid="metrics" className="uitext" />
+
+<Xclude product="npm">
+
+- `COMPOSITE_METRICS`: <Cmdname sid="composite_metrics" className="uitext" />
+
+</Xclude>
+
+<InDoc product="java,php,python,nodejs,golang,dotnet,kubernetes">
+
+- `HITMAP`: <Cmdname sid="hitmap_pattern" className="uitext" />
+
+</InDoc>
+
+<Xclude product="browser,npm">
+
+- `ANOMALY`: <Cmdname sid="anomaly_detection" className="uitext" />
+
+- `LOG_REALTIME`: <Cmdname sid="realtime_log_event" className="uitext" />
+
+- `COMPOSITE_LOG`: <Cmdname sid="composite_log_event" className="uitext" />
+
+</Xclude>
+
+:::note
+
+JSONデータの構造と`events`属性の下位属性は製品(`platform`)または製品タイプ(`productType`)によって異なる場合があります。
+
+:::
+
+:::caution
+
+JSONデータの属性のうち`productType`または`platform`属性の値を任意に修正すると、他のプロジェクトでイベントが動作しない場合があります。
+
+:::
+
+### 読込み
+
+1. 画面の上の<Cmdname sid="BTN07761" className="uitext" />ボタンを選択してください。
+
+2. JSON編集ウィンドウが開くと、画面の下の<Cmdname sid="load" className="uitext" />ボタンを選択してください。
+
+   <ImgLang img='event-config-v2-json-batch-edit.png' desc='JSON一括修正' />
+
+3. <Cmdname sid="BTN07762" className="uitext" />機能でダウンロードしたJSONファイルを選択してください。
+
+4. <Cmdname sid="overwrite" className="uitext" />ボタンを選択します。
+
+5. 確認メッセージが表示されたら<Cmdname sid="overwrite" className="uitext" />ボタンを選択してください。
+
+:::note
+
+- 上書きすると、以前のイベント設定は回復できません。
+
+- `productType`または`platform`属性の値を任意に修正すると、他のプロジェクトでイベントが動作しない場合があります。
+
+- JSON編集ウィンドウには、JSON検証(Validation) 機能が組み込まれています。 形式や値が正しくない場合は、編集ウィンドウの下にエラーメッセージが表示され、<Cmdname sid="overwrite" className="uitext" />ボタンは非活性化されます。
+
+  <ImgLang img='event-config-v2-all-events-json-validate.png' />
+
+:::

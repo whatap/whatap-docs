@@ -1,104 +1,158 @@
 ---
 id: agent-transaction
 title: トランザクション
-description: エージェントのトランザクションパフォーマンスを追跡および設定するためのオプションを提供します。
+description: Javaアプリケーション内の各トランザクションの性能データをエージェントが追跡し分析できる設定方法を案内します。トランザクションのリクエスト処理、応答時間、リソース使用量などを追跡して、アプリケーションの性能を評価します。
 tags:
   - Java
+  - アプリケーション
   - Transaction
   - トランザクション
+  - エージェント
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 ## トランザクショントレーシング
 
-{@include: ../common-items/_transaction-profiling-common.mdx} 
+以下は、アプリケーションの各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な部分を調整可能です。
 
-{@include: ../common-items/_java-transaction-profiling.mdx}
+import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
-{@include: ../common-items/_java-http-transaction.mdx}
+<Transactionprofilingcommon />
 
-{@include: ../common-items/_java-non-http-transaction.mdx}
+import Javatransactionprofiling from "../common-items/_java-transaction-profiling.mdx";
 
-{@include: ../common-items/_java-trace-transaction.mdx} 
+<Javatransactionprofiling />
+
+## 例外処理{#exception}
+
+以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。ビジネス例外を登録し、関連する統計を収集することで、アプリケーションの安定性を確認できます。また、特定の例外を無視したりHTTPステータスコードがエラーの場合、エラーとして処理するかどうかを設定できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で、正常なトランザクションとして表示されます。
+
+:::note
+
+Javaエージェントの、例外処理基準についての詳細は、[次の文書](trs-view#java-agent-exception)を参照してください。
+
+:::
+
+import JavaException from "../common-items/_java-exception-options.mdx";
+
+<JavaException />
+
+## HTTPトランザクションの追跡
+
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザーはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
+
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
+
+<Transactiontracecommon />
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp />
+
+import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
+
+<Javahttptransaction />
+
+## 非HTTPトランザクションのトレース
+
+以下は、HTTP以外のトランザクションを追跡してモニタリングするためのオプションです。このオプションにより、ユーザーはバックグラウンド作業や他のプロトコルに対するトランザクションを細かく追跡できます。
+
+import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
+
+<Javanonhttptransaction />
+
+## マルチトランザクショントレース
+
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡に対する詳細な動作を調整できます。
+
+import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
+
+<Javatracetransaction />
 
 ## トレースデータサンプリング
 
-<code class="my">Java Agent v2.2.4 or later</code>
+以下は、トレースデータのサンプリングを調整し、データの送信有無を設定するオプションです。このオプションにより、ユーザーはアプリケーションの性能とデータ転送量を管理できます。
+
+エージェント対応の範囲：<code class="my">Java Agent v2.2.4以降</code>
 
 - **trace_sampling_enabled** <span class='api'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースデータサンプリングの収集有無を設定できます。
 
 - **trace_sampling_tps** <span class='type'>Int</span>
 
-  デフォルト値`10000`
+  既定値`10000`
 
   トレースデータサンプリングの数を設定できます。設定したサンプリング数を超えるデータは送信せず、5秒ごとに初期化します。
 
 - **trace_send_enabled** <span class='api'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   トレースデータの送信有無を設定できます。
 
 - **debug_trace_samling** <span class='api'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トレースデータサンプリングのデバッグオプションをオンまたはオフにできます。
 
 ## トレースURL名を修正する
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>string</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-特定URLおよび特定メソッド(method)を呼び出す時にトレースURLの名前を修正できます。例えば`io.home.test.TestController.test1`に登録したURLを呼び出すと`test100000()`メソッドが呼び出される場合、サービス画面から`/api/100000+test1+test100000`で確認できます。
+  特定URLおよび特定メソッド(method)を呼び出す時にトレースURLの名前を修正できます。例えば`io.home.test.TestController.test1`に登録したURLを呼び出すと`test100000()`メソッドが呼び出される場合、サービス画面から`/api/100000+test1+test100000`で確認できます。
 
-`hook_tx_name_mode`オプションを通じて**class**、**method**、**string**、**return**の中で1つを選択できます。
+  `hook_tx_name_mode`オプションを通じて**class**、**method**、**string**、**return**の中で1つを選択できます。
 
-```ini title="whatap.conf"
-# 呼び出しメソッドのフルパス、ワイルドカード(*)使用可能
-hook_tx_name_patterns=ab.cd.ef.GH.ij
+  ```ini title="whatap.conf"
+  # 呼び出しメソッドのフルパス、ワイルドカード(*)使用可能
+  hook_tx_name_patterns=ab.cd.ef.GH.ij
 
-# class, method, string, returnから1つを選択
-hook_tx_name_mode=method
-```
+  # class, method, string, returnから1つを選択
+  hook_tx_name_mode=method
+  ```
 
 ## 特定のexceptionを無視する
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **ignore_exception_tx_pattern** <span class='type'>String</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-特定のサービスで特定のexceptionを無視できるように設定できます。複数登録するときは、コンマ(,)を区切り文字として利用してください。
+  特定のサービスで特定のexceptionを無視できるように設定できます。複数登録するときは、コンマ(,)を区切り文字として利用してください。
 
-```ini title="whatap.conf"
-ignore_exception_tx_pattern=exception:service_url
-# e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
-```
+  ```ini title="whatap.conf"
+  ignore_exception_tx_pattern=exception:service_url
+  # e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+  ```
 
 ## HttpURLConnectionを追跡する
 
+次は、`HttpURLConnection`クラスを使ってHTTP呼び出しを追跡するためのオプションです。
+
 - **HttpURLConnection** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   `HttpURLConnection`クラスのメソッドを追跡するためのオプションです。
 
 - **hook_HttpURLConnection_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   `HttpURLConnection`クラスのメソッドの最初の呼び出し時にも追跡できるように設定できます。
 
 - **HttpURLConnection_weblogic** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   Weblogicで`HttpURLConnection`でhttp呼び出しをする場合、`weblogic.net.http.HttpURLConnection`クラスのメソッドを追跡するためのオプションです。
 
 - **hook_HttpURLConnection_weblogic_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   `weblogic.net.http.HttpURLConnection`クラスのメソッドの最初の呼び出し時にも追跡できるように設定できます。

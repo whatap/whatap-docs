@@ -1,13 +1,14 @@
 ---
 id: script-plugin
 title: Script plug-in
-description: Using the plug-in provided by the Java agent, various activities are enabled.
+description: The plugin option provided by the Java agent provides a way for you to inject desired code into the trace data or add additional information before and after execution of the method. It includes the options for setting where to run specific code at method entry/exit time and how to configure a class to monitor custom pools. More specific usages are provided through actual plug-in application cases, and it guides you to various configuration examples and API usage that can increase the flexibility and precision for monitoring.
 tags:
   - Java
+  - Agent
   - Script plugin
 ---
 
-You can do various activities such as adding additional information to the transaction trace by using the plug-in provided by the Java agent or entering code before/after executing the method.
+The plugin option provided by the Java agent provides a way for you to inject desired code into the trace data or add additional information before and after execution of the method. It includes the options for setting where to run specific code at method entry/exit time and how to configure a class to monitor custom pools. More specific usages are provided through actual plug-in application cases, and it guides you to various configuration examples and API usage that can increase the flexibility and precision for monitoring.
 
 ## Plug-in options
 
@@ -27,7 +28,7 @@ The Java agent plug-in is executed by inserting in the method start and end. The
 
 - `custom_pool_classes`
 
-  To monitor the user-defined pool, set the class with the pool usage. Write the plug-in code in _`$WHATAP_HOME`/plugin/CustomPool.x_.
+  To monitor the custom pool, set the class with the pool usage. Write the plug-in code in _`$WHATAP_HOME`/plugin/CustomPool.x_.
 
 ## Plug-in setting example
 
@@ -39,7 +40,7 @@ In case of setting multiple classes, use the comma (,) as the delimiter. Part or
   whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
   ```
 
-- **In case of replacing the package and method name with "\*"**
+- **In case of replacing the package and method name with `*`**
 
   ```java
   *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
@@ -73,20 +74,20 @@ In most cases, the explicit type casting is required because objects are returne
 
 1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
 2. Write the plug-in code in _TraceHelperStart.x_.
 
-```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
-// Substitute the class name and method name in the string prefix.
-String prefix = $point.class1 + "." + $point.method;
-// Set the WhaTap trace property name to `prefix` + "st" as the current time.
-$ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
-// Add the current time in the trace information.
-$ctx.profile(prefix + " Start", new java.util.Date().toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
+   // Substitute the class name and method name in the string prefix.
+   String prefix = $point.class1 + "." + $point.method;
+   // Set the WhaTap trace property name to `prefix` + "st" as the current time.
+   $ctx.setAttribute(prefix + "st", new Long(System.currentTimeMillis()));
+   // Add the current time in the trace information.
+   $ctx.profile(prefix + " Start", new java.util.Date().toString()); 
+   ```
 
 Display the method start time in the transaction trace as follows.
 
@@ -96,22 +97,22 @@ Display the method start time in the transaction trace as follows.
 
 1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
 
-```ini title='$WHATAP_HOME/whatap.conf'
-hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
-```
+   ```ini title='$WHATAP_HOME/whatap.conf'
+   hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
+   ```
 
-1. Write the plug-in code in _TraceHelperEnd.x_.
+2. Write the plug-in code in _TraceHelperEnd.x_.
 
-```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
-String prefix = $point.class1 + "." + $point.method;
-// Import the trace attributes added in the TraceHelperStart.x file.
-long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
-long gap = System.currentTimeMillis() - st;
-StringBuilder sb = new StringBuilder();
-sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
-// Add the gap (execution time) between the start time and the current time to the trace information.
-$ctx.profile(prefix + " End", sb.toString()); 
-```
+   ```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
+   String prefix = $point.class1 + "." + $point.method;
+   // Import the trace attributes added in the TraceHelperStart.x file.
+   long st = ((Long) $ctx.getAttribute(prefix + "st")).longValue(); 
+   long gap = System.currentTimeMillis() - st;
+   StringBuilder sb = new StringBuilder();
+   sb.append(new java.util.Date().toString() + " (Gap:" + gap + " milliseconds)");
+   // Add the gap (execution time) between the start time and the current time to the trace information.
+   $ctx.profile(prefix + " End", sb.toString()); 
+   ```
 
 It displays the method start time and execution time in the transaction trace as follows.
 
@@ -129,58 +130,58 @@ It is prohibited to store personally identifiable information by using plug-in A
 
 ### Provision of parameters - common plug-in files{#common-plugin}
 
-| Parameter | Method/variable                                                   | Description                                                                        |
-| :-------: | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-|   $ctx    | \>                                                                | Property management                                                                |
-|   ^       | void setAttribute(String key, Object value)                       | It sets an attribute.                                                              |
-|   ^       | Object getAttribute(String key)                                   | It fetches the attribute value.                                                    |
-|   ^       | \>                                                                | Trace Data                                                                         |
-|   ^       | void profile(String desc)                                         | Recording the trace message                                                        |
-|   ^       | void profile(String name, String msg)                             | Recording the trace step name and message                                          |
-|   ^       | void profile(String name, String msg, int elapsed)                | It records the transaction trace step name, message, and execution time.           |
-|   ^       | void profile(String name, String msg, int elapsed, int value)     | Recording the transaction trace step name, message, execution time, and sequence.  |
-|   ^       | \>                                                                | HTTP Request                                                                       |
-|   ^       | String service()                                                  | It returns the service name.                                                       |
-|   ^       | void service(String name)                                         | It sets the service name.                                                          |
-|   ^       | int serviceHash()                                                 | It returns the hash value of the service name.                                     |
-|   ^       | String remoteIp()                                                 | It returns the service request IP.                                                 |
-|   ^       | void remoteIp(String ip)                                          | It sets the service request IP.                                                    |
-|   ^       | boolean isError()                                                 | It returns the value whether it is the error or not.                               |
-|   ^       | void login(String id)                                             | It sets the log-in ID.                                                             |
-|   ^       | String login()                                                    | It returns the log-in ID.                                                          |
-|   ^       | String httpMethod()                                               | It returns the HTTP method.                                                        |
-|   ^       | String httpQuery()                                                | It returns the HTTP query.                                                         |
-|   ^       | String httpContentType()                                          | It returns the HTTP content type.                                                  |
-|   ^       | String userAgent()                                                | It returns the user agent.                                                         |
-|   ^       | int status()                                                      | It returns the HTTP status.                                                        |
-|  $point   | String class1                                                     | Class name                                                                         |
-|   ^       | String method                                                     | Method name                                                                        |
-|   ^       | Object this1                                                      | Hooking class/method                                                               |
-|   ^       | Object[] args                                                    | Arguments                                                                          |
-|   ^       | Object return1                                                    | Return                                                                             |
+| Parameter | Method/variable                                                                  | Description                                                                        |
+| :-------: | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+|   $ctx    | \>                                                                               | Property management                                                                |
+|   ^       | void setAttribute(String key, Object value)                   | It sets an attribute.                                                              |
+|   ^       | Object getAttribute(String key)                               | It fetches the attribute value.                                                    |
+|   ^       | \>                                                                               | Trace Data                                                                         |
+|   ^       | void profile(String desc)                                     | Recording the trace message                                                        |
+|   ^       | void profile(String name, String msg)                         | Recording the trace step name and message                                          |
+|   ^       | void profile(String name, String msg, int elapsed)            | It records the transaction trace step name, message, and execution time.           |
+|   ^       | void profile(String name, String msg, int elapsed, int value) | Recording the transaction trace step name, message, execution time, and sequence.  |
+|   ^       | \>                                                                               | HTTP Request                                                                       |
+|   ^       | String service()                                              | It returns the service name.                                                       |
+|   ^       | void service(String name)                                     | It sets the service name.                                                          |
+|   ^       | int serviceHash()                                             | It returns the hash value of the service name.                                     |
+|   ^       | String remoteIp()                                             | It returns the service request IP.                                                 |
+|   ^       | void remoteIp(String ip)                                      | It sets the service request IP.                                                    |
+|   ^       | boolean isError()                                             | It returns the value whether it is the error or not.                               |
+|   ^       | void login(String id)                                         | It sets the log-in ID.                                                             |
+|   ^       | String login()                                                | It returns the log-in ID.                                                          |
+|   ^       | String httpMethod()                                           | It returns the HTTP method.                                                        |
+|   ^       | String httpQuery()                                            | It returns the HTTP query.                                                         |
+|   ^       | String httpContentType()                                      | It returns the HTTP content type.                                                  |
+|   ^       | String userAgent()                                            | It returns the user agent.                                                         |
+|   ^       | int status()                                                  | It returns the HTTP status.                                                        |
+|  $point   | String class1                                                                    | Class name                                                                         |
+|   ^       | String method                                                                    | Method name                                                                        |
+|   ^       | Object this1                                                                     | Hooking class/method                                                               |
+|   ^       | Object[] args                                                                   | Arguments                                                                          |
+|   ^       | Object return1                                                                   | Return                                                                             |
 
 ### Parameters not provided - common plug-in file
 
-| Parameter | Method/variable                                          | Description                                                      |
-| :-------: | -------------------------------------------------------- | ---------------------------------------------------------------- |
-|   None    | void log(Object c)                                       | Logging through the logger                                       |
-|   ^       | void println(Object c)                                   | Printing through System.out.printin()                            |
-|   ^       | Object field(Object o, String field)                     | It returns the field value.                                      |
-|   ^       | Object method(Object o, String method)                   | Invoke method                                                    |
-|   ^       | Object method(Object o, String method, String param)     | Invoke method                                                    |
-|   ^       | String toString(Object o)                                | It returns toSting() as object.                                  |
-|   ^       | String toString(Object o, String def)                    | It returns toSting() as object and returns def in case of null.  |
-|   ^       | int syshash(Object o)                                    | It returns the hash value.                                       |
-|   ^       | int syshash(HookArgs hook, int x)                        | It returns the hash value of the xth argument.                   |
-|   ^       | int syshash(HookArgs hook)                               | It returns the hash value of the argument.                       |
-|   ^       | int cint(Object o)                                       | It returns an integer value.                                     |
-|   ^       | float cfloat(Object o)                                   | It returns a floating value.                                     |
-|   ^       | String cString(Object o)                                 | It returns a string.                                             |
-|   ^       | long clong(Object o)                                     | It returns a value of long type.                                 |
-|   ^       | double cdouble(Object o)                                 | It returns a double value.                                       |
-|   ^       | String desc(Object o)                                    | It returns the class signature.                                  |
-|   ^       | String toJson(Object o)                                  | It returns as json.                                              |
-|   ^       | void shell(final String cmd, final String env)           | It executes a shell command.                                     |
+| Parameter | Method/variable                                                         | Description                                                                        |
+| :-------: | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+|    No     | void log(Object c)                                   | Logging through the logger                                                         |
+|   ^       | void println(Object c)                               | Printing through System.out.printin()                           |
+|   ^       | Object field(Object o, String field)                 | It returns the field value.                                                        |
+|   ^       | Object method(Object o, String method)               | Invoke method                                                                      |
+|   ^       | Object method(Object o, String method, String param) | Invoke method                                                                      |
+|   ^       | String toString(Object o)                            | It returns toSting() as object.                                 |
+|   ^       | String toString(Object o, String def)                | It returns toSting() as object and returns def in case of null. |
+|   ^       | int syshash(Object o)                                | It returns the hash value.                                                         |
+|   ^       | int syshash(HookArgs hook, int x)                    | It returns the hash value of the xth argument.                                     |
+|   ^       | int syshash(HookArgs hook)                           | It returns the hash value of the argument.                                         |
+|   ^       | int cint(Object o)                                   | It returns an integer value.                                                       |
+|   ^       | float cfloat(Object o)                               | It returns a floating value.                                                       |
+|   ^       | String cString(Object o)                             | It returns a string.                                                               |
+|   ^       | long clong(Object o)                                 | It returns a value of long type.                                                   |
+|   ^       | double cdouble(Object o)                             | It returns a double value.                                                         |
+|   ^       | String desc(Object o)                                | It returns the class signature.                                                    |
+|   ^       | String toJson(Object o)                              | It returns as json.                                                                |
+|   ^       | void shell(final String cmd, final String env)       | It executes a shell command.                                                       |
 
 ### Daemon and batch
 
@@ -202,28 +203,28 @@ This API is applied to the common web applications that use the `javax.servlet.h
 - Application of the service start area: _`$WHATAP_HOME`/plugin/HttpServiceStart.x_
 - Application of the service end area: _`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
 
-| Plug-in file                             | Parameter | Method/variable                            | Description                            |
-| ---------------------------------------- | :-------: | ------------------------------------------ | -------------------------------------- |
-| HttpServiceStart.x/<br/>HttpServiceEnd.x |   $ctx    | \>                                         | See the common attributes.             |
-| ^                                        |   $req    | String getCookie(String key)               | It returns the cookie value.           |
-| ^                                        |   ^       | String getRequestURI()                     | It returns RequestURI.                 |
-| ^                                        |   ^       | String getRemoteAddr()                     | It returns RemoteAddr.                 |
-| ^                                        |   ^       | String getMethod()                         | It returns the HTTP method.            |
-| ^                                        |   ^       | String getQueryString()                    | It returns HTTP QueryString.           |
-| ^                                        |   ^       | String getParameter(String key)            | It returns the parameter value.        |
-| ^                                        |   ^       | Object getAttribute(String key)            | It returns the attribute value.        |
-| ^                                        |   ^       | String getHeader(String key)               | It returns the header value.           |
-| ^                                        |   ^       | Enumeration getParameterNames()            | It returns getParameterNames.          |
-| ^                                        |   ^       | Enumeration getHeaderNames()               | It returns getHeaderNames.             |
-| ^                                        |   ^       | WrSession getSession()                     | It returns the session wrapper.        |
-| ^                                        |   ^       | Set getSessionNames()                      | It returns getSessionNames.            |
-| ^                                        |   ^       | Object getSessionAttribute(String key)     | It returns getSessionAttribute.        |
-| ^                                        |   ^       | boolean isOk()                             | It returns the plug-in status.         |
-| ^                                        |   ^       | Throwable error()                          | It returns an error.                   |
-| ^                                        |   $res    | String getContentType()                    | It returns the content type.           |
-| ^                                        |   ^       | String getCharacterEncoding()              | It returns the character encoding.     |
-| ^                                        |   ^       | boolean isOk()                             | It returns the plug-in status.         |
-| ^                                        |   ^       | Throwable error()                          | It returns an error.                   |
+| Plug-in file                             | Parameter | Method/variable                                           | Description                            |
+| ---------------------------------------- | :-------: | --------------------------------------------------------- | -------------------------------------- |
+| HttpServiceStart.x/<br/>HttpServiceEnd.x |   $ctx    | \>                                                        | See the common attributes.             |
+| ^                                        |   $req    | String getCookie(String key)           | It returns the cookie value.           |
+| ^                                        |   ^       | String getRequestURI()                 | It returns RequestURI.                 |
+| ^                                        |   ^       | String getRemoteAddr()                 | It returns RemoteAddr.                 |
+| ^                                        |   ^       | String getMethod()                     | It returns the HTTP method.            |
+| ^                                        |   ^       | String getQueryString()                | It returns HTTP QueryString.           |
+| ^                                        |   ^       | String getParameter(String key)        | It returns the parameter value.        |
+| ^                                        |   ^       | Object getAttribute(String key)        | It returns the attribute value.        |
+| ^                                        |   ^       | String getHeader(String key)           | It returns the header value.           |
+| ^                                        |   ^       | Enumeration getParameterNames()        | It returns getParameterNames.          |
+| ^                                        |   ^       | Enumeration getHeaderNames()           | It returns getHeaderNames.             |
+| ^                                        |   ^       | WrSession getSession()                 | It returns the session wrapper.        |
+| ^                                        |   ^       | Set getSessionNames()                  | It returns getSessionNames.            |
+| ^                                        |   ^       | Object getSessionAttribute(String key) | It returns getSessionAttribute.        |
+| ^                                        |   ^       | boolean isOk()                         | It returns the plug-in status.         |
+| ^                                        |   ^       | Throwable error()                      | It returns an error.                   |
+| ^                                        |   $res    | String getContentType()                | It returns the content type.           |
+| ^                                        |   ^       | String getCharacterEncoding()          | It returns the character encoding.     |
+| ^                                        |   ^       | boolean isOk()                         | It returns the plug-in status.         |
+| ^                                        |   ^       | Throwable error()                      | It returns an error.                   |
 
 ### HTTP Outbound
 
@@ -232,19 +233,19 @@ This API can be applied for HTTP outbound call by using the library such as `Htt
 - Application of the service start area: _`$WHATAP_HOME`/plugin/HttpCallStart.x_
 - Application of the service end area: _`$WHATAP_HOME`/plugin/HttpCallEnd.x_
 
-| Plug-in file    | Parameter | Method/variable                   | Description                          |
-| --------------- | :-------: | --------------------------------- | ------------------------------------ |
-| HttpCallStart.x |   $ctx    | \>                                | See the common attributes.           |
-| ^               |   $req    | String url()                      | It returns a URL.                    |
-| ^               |   ^       | String host()                     | It returns the host name.            |
-| ^               |   ^       | int port()                        | It returns the port.                 |
-| ^               |   ^       | boolean isOk()                    | It returns the plug-in status.       |
-| ^               |   ^       | Throwable error()                 | It returns an error.                 |
-| HttpCallEnd.x   |   $ctx    | \>                                | See the common attributes.           |
-| ^               |   $res    | String getContentType()           | It returns the content type.         |
-| ^               |   ^       | String getCharacterEncoding()     | It returns the character encoding.   |
-| ^               |   ^       | boolean isOk()                    | It returns the plug-in status.       |
-| ^               |   ^       | Throwable error()                 | It returns an error.                 |
+| Plug-in file    | Parameter | Method/variable                                  | Description                          |
+| --------------- | :-------: | ------------------------------------------------ | ------------------------------------ |
+| HttpCallStart.x |   $ctx    | \>                                               | See the common attributes.           |
+| ^               |   $req    | String url()                  | It returns a URL.                    |
+| ^               |   ^       | String host()                 | It returns the host name.            |
+| ^               |   ^       | int port()                    | It returns the port.                 |
+| ^               |   ^       | boolean isOk()                | It returns the plug-in status.       |
+| ^               |   ^       | Throwable error()             | It returns an error.                 |
+| HttpCallEnd.x   |   $ctx    | \>                                               | See the common attributes.           |
+| ^               |   $res    | String getContentType()       | It returns the content type.         |
+| ^               |   ^       | String getCharacterEncoding() | It returns the character encoding.   |
+| ^               |   ^       | boolean isOk()                | It returns the plug-in status.       |
+| ^               |   ^       | Throwable error()             | It returns an error.                 |
 
 ### Specific method
 
@@ -257,16 +258,16 @@ This API is applied to the method that has been set through the Java agent optio
 | TraceHelperEnd.x   |   $ctx    | \>              | See the common attributes. |
 | ^                  |  $point   | \>              | See the common attributes. |
 
-### User-defined pool
+### Custom pool
 
-This API is used to monitor the user-defined pool. If the method with the pool usage is set, you can observe it and check statistical information through the WhaTap monitoring service.
+This API is used to monitor the custom pool. If the method with the pool usage is set, you can observe it and check statistical information through the WhaTap monitoring service.
 
-| Plug-in file  | Parameter | Method/variable        | Description                                |
-| ------------- | :-------: | ---------------------- | ------------------------------------------ |
-| CustomPool.x  |   $id     | \>                     | ID set in custom_pool_classes              |
-| ^             |  $pool    | \>                     | Class set in custom_pool_classes           |
-| ^             |  $result  | active(Object o)       | It sets the active pool count.             |
-| ^             |   ^       | int idle(Object o)     | It sets the idle pool count.               |
+| Plug-in file  | Parameter | Method/variable                       | Description                                |
+| ------------- | :-------: | ------------------------------------- | ------------------------------------------ |
+| CustomPool.x  |   $id     | \>                                    | ID set in custom_pool_classes              |
+| ^             |  $pool    | \>                                    | Class set in custom_pool_classes           |
+| ^             |  $result  | active(Object o)   | It sets the active pool count.             |
+| ^             |   ^       | int idle(Object o) | It sets the idle pool count.               |
 
 ## Plug-in application example
 

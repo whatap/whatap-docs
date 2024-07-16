@@ -8,30 +8,27 @@ tags:
   - DBXエージェント
 ---
 
-import InDoc from '@site/src/components/InDoc.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import CurProd from '@site/src/components/GetProductName.js';
-import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
-
-DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成します。設定できるオプションについては、以下を参照してください。
+DBXエージェントに必要な設定は、*whatap.conf*ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
 
-{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
 
 ## CUBRID専用オプション{#cubrid}
 
 - **db_port** <span class='type'>Int</span>
 
-  デフォルト値`0`
+  既定値`0`
 
-  アプリケーション接続情報に使用するブローカーのポート情報です。ブローカー設定ファイル(_cubrid_broker.conf_)に`BROKER_PORT`項目に定義された値を入力してください。(CUBRIDのデフォルト値 `BROKER_PORT: 33000`)
+  アプリケーション接続情報に使用するブローカーのポート情報です。ブローカー設定ファイル(*cubrid_broker.conf*)に`BROKER_PORT`項目に定義された値を入力してください。(CUBRIDの既定値 `BROKER_PORT: 33000`)
 
 - **cms_port** <span class='type'>Int</span>
 
-  デフォルト値 `8001`
+  既定値 `8001`
 
-  **CUBRID Manager**が使用するポートです。**CUBRID Manager**設定ファイル(_cm.conf_)のcm_port\`項目に定義された値を入力してください。モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
+  **CUBRID Manager**が使用するポートです。**CUBRID Manager**設定ファイル(*cm.conf*)のcm_port\`項目に定義された値を入力してください。モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
 
 - **cms_token_file** <span class='type'>String</span>
 
@@ -47,7 +44,7 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成�
 
 - **broker** <span class='type'>String</span>
 
-  デフォルト値 `broker1`、`query_editor`
+  既定値 `broker1`、`query_editor`
 
   CUBRIDをインストールすると、デフォルトで`broker1`、`query_editor`でブローカーが実行されます。ユーザーが任意にブローカーの名前を変更または、追加で移動を行った場合は、変更を入力してください。
 
@@ -59,14 +56,21 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成�
 
 ## データ収集
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbagentsettingdatacollection />
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx}  
+{/* AES 256 암호화 적용 */}
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt />
 
 ## エージェント名の識別{#naming}
 
-{@include: ../common-items/_db-setting-agent-name-details.mdx}
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
 
-{@include: ../common-items/_db-agent-dbx-naming.mdx} 
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming />

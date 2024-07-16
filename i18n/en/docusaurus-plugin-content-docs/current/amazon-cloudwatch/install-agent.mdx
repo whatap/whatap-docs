@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Amazon CloudWatch monitoring collects metrics periodically through API integration. It collects the target stats every 5 minutes from the CloudWatch namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently with role-based authentication. 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## Preliminary inspection
 
@@ -61,21 +63,28 @@ Configuration using the role is recommended. The access key is available only to
 <ImgLang img='cloudwatch-auth-role.png' desc='Amazon Cloudwatch - role' />
 
 1. Log in to the AWS management console and open the IAM console.
-2. In the console navigation pane, select roles and then select Create Role.
-3. In Select type of trusted entity, select Another AWS account.
-4. Enter the WhaTap account ID, **911937781722** in Account ID. Select and apply ReadOnlyAccess.
-5. Enter the role name and description and then click Create Role to switch to the Summary screen.
-6. In Maximum session duration, click Edit to change to 12 hours and then save it. 
-7. Copy the **Role ARN** item.
-8. Return to the WhaTap **_Management_** > **_Agent Installation_** page. Paste the copied **Role ARN** into the **_Role_** **_ARN_** window, and then click **_OK_**.
+2. In the console navigation pane, select roles and then select Create Role. 
+3. In Select type of trusted entity, select an AWS account. 
+4. Select a different AWS account, enter the WhaTap ID, **911937781722** in Account ID, and then click Next.
+5. Select an AWS management position in the filtering-based type. 
+6. Select the ReadOnlyAccess checkbox from the list for application, and then click Next. 
+7. Enter a name and description for the role and then click Create Role. 
+8. Select a role created from the role list and then click Edit in Summary. 
+9. Change the Maximum session duration to 12 hours and then save it. 
+10. Copy the **Role ARN** item.
+11. Return to the WhaTap **_Management_** > **_Agent Installation_** page. Paste the copied **Role ARN** into the **_Role_** **_ARN_** window, and then click **_OK_**.
 
 ### Selecting the namespace and collection cycle
 
-{@include: ../common-items/_namespace-collect.mdx}
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />
 
 #### Whatap Data Interval
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### Namespace
 
@@ -184,7 +193,9 @@ Configuration using the role is recommended. The access key is available only to
 
 ### Selecting the region, metric, and stat
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+<Regionmetricstats />
 
 <ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />
 

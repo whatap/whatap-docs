@@ -1,0 +1,35 @@
+### Checking the session information details {#session-details}
+
+If you select a session in the <Cmdname sid="active_sessions" className="uitext" /> tab, the <Cmdname sid="session_detail" className="uitext" /> window appears. You can see the information details about the selected session.
+
+<ImgLang img='db-session-details-info.png' desc='Session detail' />
+
+- The session information is viewed in real time by default. If you select ![Pause icon](/img/ico-pause.svg) in the time selector, you can stop a real-time view and see the data based on the paused time. To refresh data while pausing a real-time view, select ![Refresh icon](/img/ico-refresh.svg).
+
+- **_Kill Session_**: You can stop the selected session. If the <Cmdname sid="session_kill" className="uitext" /> window appears, enter the password (**_Parameter Key_**) and then select <Cmdname sid="apply" className="uitext" />.
+
+  :::note
+
+  This feature is only available in real-time viewing mode.
+
+  :::
+
+<InDoc product="postgresql">
+
+- <Cmdname sid="TTL06721" className="uitext" />: You can go to the <Cmdname sid="side_sessionHistory" className="uitext" /> menu to see the records of the selected session.
+
+  :::note
+
+  For more information about <Cmdname sid="side_sessionHistory" className="uitext" />, see <Link to="analysis-session-history">the following</Link>.
+
+  :::
+
+</InDoc>
+
+- **_Session Info_**: You can see the information details of the selected session.
+
+- **_Wait Info_**: If the backend process is waiting, you can see the wait event name (`wait_event`) and wait event type (`wait_event_type`).
+
+- **_SQL Text_** / **_Plan_**: You can see the SQL query statements and plans of the selected session. For more information, see [the following](#query-details).
+
+- **_Process Info_**: You can see the process information details of the selected session.

@@ -7,14 +7,46 @@ tags:
   - Configuration
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 You can upload any collected data from the WhaTap project. Focus can be used even if the default agent has not been installed for the project.
 
 ## Checking the project access key and collection server IP
 
-{@include: ../common-items/_check-pak-ip.mdx}
+import Checkpakip from "../common-items/_check-pak-ip.mdx";
+
+<Checkpakip />
+
+## Adding specific tags for filtering {#addtagfilter}
+
+You can set specific strings as tags for filtering. Through the settings, you can filter the data collected from the WhaTap monitoring service screen by the name and value for the tag.
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title="SH" showLineNumbers {5,6}
+# -tag.[User tag key name][Blank][User tag value]
+
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -tag.CustomTagName CustomTagValue \
+    -tag.MyServer1 server_01 \
+    ...
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```powershell title="Powersehll" showLineNumbers {5,6}
+# -tag.[User tag key name][Blank][User tag value]
+
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -tag.CustomTagName CustomTagValue `
+    -tag.MyServer1 server_01 `
+    ...
+```
+
+</TabItem>
+</Tabs>
 
 ## Sending alerts
 
@@ -23,7 +55,7 @@ Custom alerts can be sent immediately. After sending an alert, the Focus is ende
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
 
-```bash title=SH
+```bash title="SH"
 #Select a severity of the alert.
 level={info|warn|fatal}
 #Alert title
@@ -38,7 +70,7 @@ message=Desired alert body
 </TabItem>
 <TabItem value="wd" label="Windows Powershell">
 
-```bash title='SH'
+```powershell title="Powersehll"
 #Select a severity of the alert.
 $level="{info|warn|fatal}"
 #Alert title
@@ -55,12 +87,12 @@ $message=Desired alert body
 
 ## Collecting the SQL query result
 
-It collects the execution results of user-defined SQL queries in time series indefinitely.
+It collects the execution results of custom SQL queries in time series indefinitely.
 
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
 
-```bash title=SH
+```bash title="SH"
 #Metric category
 category=my_category
 #Database driver
@@ -79,7 +111,7 @@ sqlquery="select some, columns from sometable"
 </TabItem>
 <TabItem value="wd" label="Windows Powershell">
 
-```bash title='SH'
+```powershell title="Powersehll"
 #Metric category
 $CATEGORY="my_category"
 #Database driver
@@ -106,7 +138,7 @@ If a keyword is included when a log occurs in the specified text log file, the l
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
 
-```bash title=SH
+```bash title="SH"
 #Metric category
 category=my_category
 #Log file
@@ -126,7 +158,7 @@ LOG_KEYWORDS=keyword1,keyword2
 </TabItem>
 <TabItem value="wd" label="Windows Powershell">
 
-```bash title='SH'
+```powershell title="Powersehll"
 #Metric category
 $CATEGORY="my_category"
 #Log file
@@ -154,7 +186,7 @@ When a log occurs in the specified text log file, it is uploaded in real time to
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
 
-```bash title=SH
+```bash title="SH"
 #Category
 category=my_category
 #Can include the log file wildcard (*) and date pattern (http://strftime.org)
@@ -168,7 +200,7 @@ LOG_FILE=log file path
 </TabItem>
 <TabItem value="wd" label="Windows Powershell">
 
-```bash title='SH'
+```powershell title="Powersehll"
 #Category
 $CATEGORY="my_category"
 #Can include the log file wildcard (*) and date pattern (http://strftime.org)
@@ -231,4 +263,6 @@ Reprocessing in the json format | \
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST
 ```
 
-{@include: ../common-items/_top-collect-cpu-memory.mdx}
+import Topcollectcpumemory from "../common-items/_top-collect-cpu-memory.mdx";
+
+<Topcollectcpumemory />

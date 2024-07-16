@@ -7,13 +7,49 @@ tags:
   - Transactions
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
 
-The agent traces the transaction performance and provides the following configurable options.
+<Transaction />
 
-### Transaction Tracing
+## Transaction Tracing
 
-{@include: ../common-items/_dotnet-transaction-profile.mdx} 
+The following agent options allow you to trace the execution paths of each transaction for applications in detail.
+
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+  Default `3000`
+
+  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+  Default `8000`
+
+  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a very slow section. If the transaction response time exceeds the set time, the number of very slow active transactions is included.
+
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+  Default `300000`
+
+  Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+
+- **prepend_app_pool_name** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  If the option value is set to `true`, the full name of the application appears before the URL of the transaction.
+
+- **trace_db_command_methods** <span class='type'>String</span>
+
+  Enter the name of the method to monitor in the `System.Data.Common.DbCommand` class. To set multiple values, use comma (,) as the delimiter. To monitor all methods, apply as follows:
+
+  ```ini title="whatap.conf"
+  trace_db_command_methods=ExecuteReader, ExecuteReaderAsync, ExecuteNonQuery, ExecuteNonQueryAsync, ExecuteScalar, ExecuteScalarAsync
+  ```
+
+## Exceptional handling {#exception}
+
+The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
@@ -30,6 +66,12 @@ The agent traces the transaction performance and provides the following configur
   status_ignore=408,500
   ```
 
+  :::tip
+
+  Ignore status error/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
+
 - **status_ignore_set** <span class='type'>String</span>
 
   `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
@@ -38,6 +80,12 @@ The agent traces the transaction performance and provides the following configur
   # example
   status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
   ```
+
+  :::tip
+
+  Ignore status error set/Hitmap display level: Excludes the <span class="normal">INFO</span> (blue)/error statistics.
+
+  :::
 
 - **httpc_status_error_enable** <span class='type'>Boolean</span>
 
@@ -55,34 +103,78 @@ The agent traces the transaction performance and provides the following configur
 
   If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
 
+  :::tip
+
+  Ignore HTTP status error code/Exclude error statistics
+
+  :::
+
 - **httpc_status_ignore_set** <span class='type'>String</span>
 
   `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-  :::note
-
   Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
 
+  ```ini title="whatap.conf"
+  httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404
+  ```
+
+  :::tip
+
+  Ignore HTTP status error code/Exclude error statistics
+
   :::
+
+## HTTP transaction tracing
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
 
 - **profile_http_parameter_keys** <span class='type'>String</span>
 
   Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
 
-- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-  Default `3000`
+  Default `false`
 
-  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+  To record HTTP headers in the trace details, set it to `true`.
 
-- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
-  Default `8000`
+  Default `false`
 
-  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a very slow section. If the transaction response time exceeds the set time, the number of very slow active transactions is included.
+  To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
 
-- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+  :::note
 
-  Default `30000`
+  Set the security key to 6 digits in _'%PROGRAMFILES%'\\WhaTap .NET\\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
 
-  Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+  :::
+
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
+
+  It is used to define the prefix of URL to record HTTP parameters in the trace details.
+
+- **profile_http_body_url_prefix** <span class='type'>String</span>
+
+  It is used to define the prefix of the target URL to record the HTTP body information in the trace history.
+
+- **trace_ignore_url_set** <span class='type'>String</span>
+
+  It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
+- **trace_ignore_url_prefix** <span class='type'>String</span>
+
+  Set the URL prefix for excluding transactions during collection. Any URLs whose prefix matches the set value do not collect the transaction performance. For multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::

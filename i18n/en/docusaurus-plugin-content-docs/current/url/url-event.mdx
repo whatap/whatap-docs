@@ -9,38 +9,44 @@ tags:
   - Alert
 ---
 
-Home > Select Project > **_Alert_** > **_Event Setting_**
+Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" />
 
 URL Monitoring can be provided with alerts in the form of emails through event settings. The project monitoring screen also provides notifications for real-time events. You can set individual events for the registered URLs as follows. 
 
-1. In the event list screen, select ![Edit icon](/img/ico-edit.svg) **_Edit_** for the URL to edit.
+1. In the event list screen, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" /> for the URL to edit.
 
    <ImgLang img='url-event.png' desc='Event lists' />
 
-2. Check the **_Edit Event Policy_** window for the URL. 
+2. Check the <Cmdname sid="edit_alert_setting" className="uitext" /> window for the URL. 
 
    <ImgLang img='url-event-mod.png' desc='URL event setting window' />
 
-   Event rules such as **_status_** and **_elapsed time_** are set by combining the monitoring metrics and conditional expressions. 
+   Event rules such as <Cmdname sid="status" className="uitext" /> and <Cmdname sid="elapsed" className="uitext" /> are set by combining the monitoring metrics and conditional expressions.
 
    - **Status events**
 
-     The status event occurs depending on the selected **_Status_** code option.
+     The status event occurs depending on the selected <Cmdname sid="status" className="uitext" /> code option.
 
      <ImgLang img='alert_status.png' desc='Status events' />
 
    - **Elapsed time event**
 
-     The elapsed time event occurs when the **_Elapsed Time_** collected in real time meets the entered threshold and condition.
+     The elapsed time event occurs when the <Cmdname sid="elapsed" className="uitext" /> collected in real time meets the entered threshold and condition.
 
      <ImgLang img='alert_elapsed.png' desc='Elapsed time event' />
 
-:::note 
+:::info
 
 **What is Alert Message?**
 
-It is the title to be displayed when an event occurs by the rule. Notification messages can be set for each event rule. When no setting is applied, the displayed notification message is **_Status Code_**, **_Elapsed Time_**, and **_URL: Detail_** by default.
+It is the title to be displayed when an event occurs by the rule. Notification messages can be set for each event rule. When no setting is applied, the displayed notification message is **Status Code**, **Elapsed Time**, and **URL: Detail** by default.
 
 For alerts, see [the following](../support-env#support-notice) to find which event types are supported by monitoring platform.
+
+:::
+
+:::note
+
+It takes about 1 minute for the modified URL to be reflected in the list.
 
 :::

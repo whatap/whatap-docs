@@ -1,22 +1,22 @@
 ---
 id: tracking-error
-title: エラー追跡
+title: エラートレース
 description: ブラウザーモニタリングは、ブラウザーのフロントエンド(Front-End) エラーを収集します。
 tags:
   - Browserモニタリング
   - 分析
-  - エラー追跡
+  - エラートレース
 ---
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_エラー追跡_**
+ホーム画面 > プロジェクト選択 > **_分析_** > **_エラートレース_**
 
 ブラウザーモニタリングは、ブラウザーのフロントエンド(Front-End) エラーを収集します。 エラーメッセージおよびエラースタック情報、ブラウザー、OS、デバイス、ページのURL情報が含まれています。
 
-## エラー探索
+## エラー検索
 
 時間の経過とともに発生したブラウザーエラーを確認できます。
 
-<ImgLang img='rum-tracking-error.png' desc='エラー追跡' />
+<ImgLang img='rum-tracking-error.png' desc='エラートレース' />
 
 1. ![数字1](/img/number-01.png)希望する時間を設定してください。 最大1日前まで設定できます。
 
@@ -56,7 +56,7 @@ tags:
 
 - **_message_**：エラーメッセージです。
 
-- **\*stack**：エラースタック情報です。 エラースタックには、基本的に難読化されたファイル名とライン、カラム情報が含まれます。
+- **_stack_**：エラースタック情報です。 エラースタックには、基本的に難読化されたファイル名とライン、カラム情報が含まれます。
 
 ## ソースマップのアップロードとエラーコードの提供{#check-errorcode}
 
@@ -76,7 +76,7 @@ tags:
 
 <ImgLang img='browser-error-stack-upload-code.png' desc='' />
 
-## エラー情報をフィルタリングして探索する
+## エラー情報をフィルタリングして検索する
 
 ブラウザエラーに含まれた情報を基準にフィルタリングし、エラー情報を見つけることができます。
 
@@ -94,16 +94,22 @@ tags:
 
 ブラウザーエラー一覧テーブルのカラム ヘッダー項目を表示または非表示にすることができます。
 
-{@include: ../common-items/_display-or-hide-table-column.mdx}
+import Displayorhidetablecolumn from "../common-items/_display-or-hide-table-column.mdx";
+
+<Displayorhidetablecolumn />
 
 ### テーブルカラムの順序付け
 
 ブラウザーエラー一覧のテーブルでカラム ヘッダーの順序を変更できます。
 
-{@include: ../common-items/_change-order-table-column.mdx}
+import Changeordertablecolumn from "../common-items/_change-order-table-column.mdx";
+
+<Changeordertablecolumn />
 
 ## テーブルコンテンツの表示設定
 
 ブラウザーエラー一覧に表示するコンテンツの内容を設定できます。 多くの情報が表示されて見づらい場合や必要な内容を追加したい場合に利用できます。
 
-{@include: ../common-items/_set-display-table-contents.mdx}
+import Setdisplaytablecontents from "../common-items/_set-display-table-contents.mdx";
+
+<Setdisplaytablecontents />

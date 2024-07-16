@@ -1,0 +1,129 @@
+---
+id: preview-2_7_0x
+title: Preview 2.7.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.7.0.a2
+
+2024年06月27日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Change</Status> <Cmdname sid="side_correlatedProjectManagement" className="uitext" />メニューの日本語表記の修正
+
+- <Status>Changed</Status> サイドメニューの組織一覧に、組織アイコンが表示されるように変更
+
+- <Status>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで異常値検知の上昇/下落パターンの誤って設定された敏感/鈍感のscore修正
+
+- <Status>Fixed</Status> <Cmdname sid="node_detail" className="uitext" />メニューからアクティブステータスのチャートが非表示になる問題を修正
+
+- <Status>Fixed</Status> CSVファイルをダウンロードすると、ハングルが文字化けする問題を修正
+
+---
+
+### `Application`
+
+- <Status>Feature</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />メニューのテーブルで、CPU時間の増加量を表示するカラムを追加
+
+  :::note
+
+  画面右上に![更新アイコン](/img/ic-refresh2.svg)ボタンを選択すると、<Cmdname sid="TTL08126" className="uitext" />カラムで変化した数値を確認できます。
+
+  :::
+
+- <Status>Fixed</Status>次のメニューパスで、![カラム設定アイコン](/img/ico-column.svg) <Cmdname sid="BTN06441" className="uitext" />機能で全体カラムを選択すると、ホワイトアウト現象が発生する問題を修正
+
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragentDetail" className="uitext" />
+
+- <Status>Fixed</Status>旧バージョンの<Cmdname sid="side_appDashboard" className="uitext" />メニューで、案内メッセージのロケールが文字化けする問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />メニューの<UI>Top 30</UI>一覧でキーボード移動時に発生するディレー問題を修正
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで一部のウィジェット名を変更
+
+  - **Active sessions** → **_Active Session Count_**
+
+  - **Long Active Sessions** → **_Long Active Session Count_**
+
+- <Status>Changed</Status>次のメニューのパスで、<Cmdname sid="active_sessions" className="uitext" />セクションの項目を選択して現れる<Cmdname sid="session_detail" className="uitext" />画面を通じて<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_sessionHistory" className="uitext" />メニューに移動すると、そのセッションが行われる時間の前後30分を基本照会するように変更
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />
+
+- <Status>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューの<Cmdname sid="database" className="uitext" />タブで<Cmdname sid="instance" className="uitext" />項目の既定値が<Cmdname sid="BTN07329" className="uitext" />に設定される不具合修正
+
+#### Oracle Pro
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで一部のウィジェット名を変更
+
+  - **Bandwidth**  → **_[RAC] Interconnect Bandwidth_**
+  - **Load Balance** → **_[RAC] Load Balance_**
+  - **_Load Balance_**ウィジェットの**physical reads**フィールド名を**_session logical reads_**フィールドに変更
+
+- <Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューでチャートの凡例を表示する方法を変更
+
+  - Multidbであれば、中間区切り文字をアンダーバー(\_)からハイフン(-)に変更
+
+  - Multidbでなければ中間区切り文字を表示しないように変更
+
+- <Status>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューに進入する時、<Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>メニューに移動するように変更
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで***Interconnect Bandwidth***ウィジェットと***Load Balance***ウィジェットのインスタンス順序を、インスタンスセレクタの順序と同一に見えるように修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_sessionHistory" className="uitext" />メニューで、チャートデータとテーブルデータが一致しない問題を修正
+
+</div>
+
+## Preview 2.7.0.a1
+
+2024年06月25日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの***Container***ビューでブロックが正常個数で表示されない問題を修正
+
+</div>
+
+## Preview 2.7.0.a0
+
+2024年06月18日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status>Changed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_heapDump" className="uitext" />メニューでヒープダンプ確保に関する案内メッセージが常に表示されるように変更
+
+- <Status>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="table_view" className="uitext" />および<Cmdname sid="tree_view" className="uitext" />タブにトランザクションのホスト情報がない場合は、ポートを表示しないように変更
+
+- <Status>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="multi_transaction" className="uitext" />タブでホスト情報のないトランザクションを表示しないように変更
+
+---
+
+### `Kubernetes`
+
+<Status>Fixed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューで上段のメトリクスタイトルが未表記される現象を修正
+
+</div>

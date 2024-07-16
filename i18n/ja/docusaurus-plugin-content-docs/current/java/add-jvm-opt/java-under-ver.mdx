@@ -1,9 +1,11 @@
 ---
 id: java-under-ver
 title: Java 1.6バージョン未満
-description: Java1.6未満の環境でJVMオプションの追加設定を完了してください。
+description: Java 1.6バージョン未満でJavaエージェントを適用する方法を案内します。Java 1.5と1.4バージョンそれぞれについてエージェントのインストールと設定手順、そして-javaagentオプションに関する制約事項を確認できます。
 tags:
   - Java
+  - アプリケーション
+  - エージェント
 ---
 
 Java1.6バージョン未満でもWhaTapエージェントを適用できますが、一部の機能に制約があります。
@@ -22,19 +24,19 @@ Java1.5バージョンは、`-javaagent`オプションを提供します。 た
 
 ## Java1.4
 
-Java1.4バージョンは、`-javaagent`オプションがありません。別の方法でWhaTapエージェントをインストールする必要があります。_whatap.agent.jar_ファイルは、Java1.4バージョンを使用する必要があります。
+Java1.4バージョンは、`-javaagent`オプションがありません。別の方法でWhaTapエージェントをインストールする必要があります。*whatap.agent.jar*ファイルは、Java1.4バージョンを使用する必要があります。
 
 > whatap.java14.tracer-`X.Y.Z`.jar
 
 ### boot.jar作成
 
-_setup.sh_ファイルを利用して、_boot.jar_ファイルを作成してください。[JAVA_HOME]を入力しない場合、現在のパスは、JDKの場所を自動的に認識します。
+*setup.sh*ファイルを利用して、*boot.jar*ファイルを作成してください。[JAVA_HOME]を入力しない場合、現在のパスは、JDKの場所を自動的に認識します。
 
 ```bash
 $ setup.sh [JAVA_HOME]
 ```
 
-_setup.sh_実行結果：_whatap.java14.boot-`X.Y.Z`.jar_
+*setup.sh*実行結果：*whatap.java14.boot-`X.Y.Z`.jar*
 
 ### bootclasspathにインストール
 
@@ -61,3 +63,8 @@ jdk1.4バージョンでは、次の機能は動作しません。
 - オープンソケット
 
 - ダンプエージェント
+
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
+
+<Nextstep />

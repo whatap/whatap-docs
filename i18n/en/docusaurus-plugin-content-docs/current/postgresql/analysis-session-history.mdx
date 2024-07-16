@@ -9,25 +9,25 @@ tags:
   - Session History
 ---
 
-Home screen > Select Project > **_Analysis_** > **_Session History_**
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_sessionHistory" className="uitext" />
 
-In **_Session History_**, you can see what has been performed in a specific session during the query period. It provides information that allows you to check how much resource has been used for SQL for a long-running session and analyze the causes.
+In <Cmdname sid="side_sessionHistory" className="uitext" />, you can see what has been performed in a specific session during the query period. It provides information that allows you to check how much resource has been used for SQL for a long-running session and analyze the causes.
 
 ## Basic usage guide
 
-You must enter the session number (**_Process ID_**) to monitor as a required value, but it is more efficient to enter through the **_Instance monitoring_** menu.
+You must enter the session number (<Cmdname sid="TTL06802" className="uitext" />) to monitor as a required value, but it is more efficient to enter through the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
 
-1. Go to **_Dashboard_** > **_Instance monitoring_**.
+1. Go to <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />.
 
 2. Select a session that is running and not ended for a long time.
 
    <ImgLang img='db-session-history-01.png' desc='Instance monitoring' />
 
-3. If the **_Session detail_** window appears, select **_Session History_**.
+3. If the <Cmdname sid="session_detail" className="uitext" /> window appears, select <Cmdname sid="TTL06721" className="uitext" />.
 
    <ImgLang img='db-session-history-02.png' desc='Session History' />
 
-The **_Session History_** menu appears that has searched the process ID (PID) of the selected session.
+The <Cmdname sid="side_sessionHistory" className="uitext" /> menu appears that has searched the process ID (PID) of the selected session.
 
 <ImgLang img='db-session-history-03.png' desc='Session History' />
 
@@ -41,8 +41,15 @@ Active session data collected every 5 seconds from the selected session is used 
 
 - **_Disk I/O_**: You can see the change trend in disk usage through the chart.
 
-- If you select the **_query_** column on the utmost right of the list, the **_SQL details_** window appears where you can see the SQL statement. It contains full texts and plan information for the selected query.
+If you select the **_query_** column on the utmost right of the list, the <Cmdname sid="TTL06224" className="uitext" /> window appears where you can see the SQL statement. It contains full texts and plan information for the selected query.
+
+{/*쿼리 자세히 보기*/}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
 
 ## Configuring the table columns{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

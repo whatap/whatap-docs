@@ -15,9 +15,13 @@ WhaTapブラウザーモニタリングサービスを使用するには、[会�
 
 <Youtube ko='gZ5A40G2u2A' en='z0-WMAEQo30' ja='z0-WMAEQo30' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## WhaTapブラウザーエージェントのインストール
 
@@ -42,23 +46,29 @@ WhaTapブラウザーエージェントは、インラインスクリプトの�
   - ウェブアプリケーションのロード時にすべてのデータを収集することをお勧めします。 
   - ウェブアプリケーションのロードに影響を与える可能性があります。
 
-## WhaTapブラウザーエージェントのオプション設定
+## WhaTapブラウザーエージェントのオプション設定 {#setting-agent}
 
 WhaTapブラウザーエージェントに適用するオプションを設定します。 オプションは、インストールスクリプトのConfigオブジェクトで設定できます。 プロジェクトアクセスキー、ユーザーセッション全体の割合、収集から除外リソースドメインなどを設定できます。
 
-```json title='config example' showLineNumbers
+```javascript title='config example' showLineNumbers
 config: {
-  projectAccessKey: {プロジェクトアクセスキー},
+  projectAccessKey: {projec_access_key},
   pcode: {pcode},
   sampleRate: 100,
   ignoreOrigins: [ 'https://ignore-site.com/' , '/^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i' ],
+  collectUserClick: false
 }
 ```
 
 - **projectAccessKey**：プロジェクトアクセスキーです。
+
 - **pcode**：プロジェクトコードです。
+
 - **sampleRate**：収集するユーザーセッションの割合を設定できます。
+
 - **ignoreOrigins**：統計収集から除外する特定のリソースドメインを文字列の配列の形で追加できます。 正規表現を適用することもできます。
+
+- **collectUserClick**：クリックイベントを収集できます。 既定値は`false`です。
 
 :::note
 
@@ -66,6 +76,20 @@ config: {
 
 :::
 
-## ブラウザーモニタリングを開始する
+## 次の段階
 
-すべての設定を完了しました。 [WhaTapモニタリングサービス](https://service.whatap.io)ページに移動し、ブラウザーモニタリングを開始してください。 以前に作成したプロジェクトを選択し**_ダッシュボード_** > **_ブラウザーモニタリングダッシュボード_**メニューに移動してください。 モニタリング状況を確認することができます。
+- **ユーザー定義イベントを収集する**
+
+  ブラウザーモニタリングを通じてウェブサービスの問題点を把握し、ユーザー体験を改善するために、ウェブページで発生するイベントのうち、開発者と運営者が希望するイベントを追加で収集できるインターフェースを提供します。 ユーザー定義イベントを収集する方法の詳細については、[次の文書](collect-custom-events)を参照してください。
+
+- **実際のユーザーIDを設定する**
+
+  ブラウザーモニタリングでは、実際のユーザーIDやEメールなどでユーザーIDを設定し、データを収集できます。 実際のログインIDに基づいてユーザーセッションの性能とイベントの情報やブラウザーのエラー情報を確認して問題を把握できます。 詳細については、[次の文書](set-real-user-id)を参考にしてください。
+
+- **セッションリプレイを設定する**
+
+  <Cmdname sid="TTL08103" className="uitext" />は、ユーザーがウェブサイトで行うすべてのイベントを記録し、再生できる機能です。 この機能により、クリック、スクロール、入力、ページ切り替えなどのユーザー行動を再現できます。 これにより、ユーザーが実際にウェブサイトとどのように相互作用するかを、正確に把握できます。 詳細については、[次の文書](session-replay)を参照にしてください。
+
+- **モニタリングの開始**
+
+  [WhaTapモニタリングサービス](https://service.whatap.io)ページに移動し、ブラウザーモニタリングを開始します。 先に作成したプロジェクトを選択し<Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_rumDashboard" className="uitext" />メニューに移動してください。 モニタリング状況を確認できます。 <Cmdname sid="side_rumDashboard" className="uitext" />メニューの詳細については、[次の文書](dashboard)を参照にしてください。

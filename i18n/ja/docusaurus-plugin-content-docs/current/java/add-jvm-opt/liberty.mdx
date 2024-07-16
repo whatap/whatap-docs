@@ -1,17 +1,19 @@
 ---
 id: liberty
 title: Liberty
-description: Libertyアプリケーションのサーバ環境でJVMオプションの追加設定を完了してください。
+description: WhaTapモニタリングソリューションをLibertyアプリケーションに統合するためのJVM(Java Virtual Machine) オプションの追加方法についての詳細な案内を提供します。ユーザーは本文書を通じて、Javaエージェントのインストール後、Libertyアプリケーションの性能および可用性モニタリングのために必要なJVM設定を適用する方法を段階別に確認することができます。エージェントのインストール過程の中で必須JVMオプションの構成とLibertyとの円滑な統合のための最適な設定方法、ヒストグラムの照会方法が含まれています。
 tags:
   - Java
   - Liberty
+  - アプリケーション
+  - エージェント
 ---
 
 ## JVMオプションの追加
 
-Libertyを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認してください。 
+Libertyアプリケーションサーバー環境でJavaモニタリングエージェントを効果的に使用するために必要なJVMオプションを追加する方法を案内します。
 
-_jvm.options_ファイルにエージェントオプションを追加してください。ファイルがない場合は、新規に作成してください。
+*jvm.options*ファイルにエージェントオプションを追加してください。ファイルがない場合は、新規に作成してください。
 
 ```bash title=/wasliberty/usr/servers/defaultServer/jvm.options {2} showLineNumbers
 -javaagent:/app/whatap/whatap.agent-2.1.1.jar
@@ -20,12 +22,17 @@ _jvm.options_ファイルにエージェントオプションを追加してく�
 
 :::note
 
-{@include: _java-17.mdx} 
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
 
-## モニタリングの開始
+<Setheapmemory />
 
-{@include: ../../common-items/_start-apm.mdx} 
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
+
+<Nextstep />

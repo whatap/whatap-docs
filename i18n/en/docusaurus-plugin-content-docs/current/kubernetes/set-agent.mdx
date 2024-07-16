@@ -1,7 +1,8 @@
 ---
 id: set-agent
-title: Configuration
+title: Setting the Kubernetes agent options
 description: Configure necessary settings in whatap.conf for monitoring the applications in the container. Let's learn about available options.
+toc_max_heading_level: 3
 tags:
   - Kubernetes
   - Kubernetes Monitoring
@@ -12,6 +13,18 @@ tags:
   - whatap.conf
 ---
 
+- When releasing the WhaTap Kubernetes agent, it can be set through the container `env` field. 
+
+- It can be configured by modifying the _whatap.conf_ file in the container. 
+
+- The options in the _whatap.conf_ file have higher priority than those set in the container `env` field. 
+
+- If no value is set in _whatap.conf_ or container `env`, the default value is used.
+
+:::note 
+
+**Setting the application agent options in the container**
+
 Configure necessary settings in _whatap.conf_ for monitoring applications such as Java, Python, and Node.js in the container. For more information about available options in _whatap.conf_, see the following links:
 
 - [Configuring Java - whatap.conf](../java/set-agent)
@@ -19,3 +32,333 @@ Configure necessary settings in _whatap.conf_ for monitoring applications such a
 - [Configuring Node.js - whatap.conf](../nodejs/set-agent)
 
 - [Configuring Python - whatap.conf](../python/set-agent)
+
+:::
+
+## Configuring the options for each container
+
+### whatap-node-helper
+
+---
+
+- **collect_volume_detail_enabled** <span class='type'>bool</span>
+
+  Default `true`
+
+  In the node agent, use the `exec df` command for all containers to enable searching the container volume information. It enables the function to collect storage usage and volume data for all containers running on the node.
+
+- **inject_container_id_to_apm_agent_enabled** <span class='type'>bool</span>
+
+  Default `true`
+
+  It enables container ID injection using `exec` in the WhaTap APM container. It automatically extracts the ID of the container identified by the WhaTap APM. You can inject this into the APM tool to associate the performance monitoring data with containers.
+
+- **debug** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable the debugging mode. Set the log level to `DEBUG` when the debugging mode is enabled, otherwise to `INFO`.
+
+- **kube_config_path** <span class='type'>string</span>
+
+  Default `~/.kube/config`
+
+  Specify the Kubernetes configuration file path. If not set, use _~/.kube/config_.
+
+- **log_sys_out** <span class='type'>bool</span>
+
+  Default `true`
+
+  Set the log system output. When the option value is set to `true`, logging is left simultaneously in the standard output (stdOut) and a file. Any changes are immediately reflected in the logging system.
+
+### whatap-node-agent
+
+---
+
+- **shutdown** <span class='type'>bool</span>
+
+  Default `false`
+
+  Forcibly disconnect the collection server. This means stopping communication.
+
+- **license** <span class='type'>string</span>
+
+  Agents are identified using the license issued to the project. 
+
+- **whatap.server.host** <span class='type'>string</span>
+
+  Default `13.124.11.223` or `13.209.172.35`
+
+  Set the IP of the collection server. In case of `delimiter`, use `/:`.
+
+- **whatap.server.port** <span class='type'>number</span>
+
+  Default `6600`
+
+  Set the data receiving port of the collection server. 
+
+- **ONODE_NAME** <span class='type'>string</span>
+
+  Default `NODE_NAME` or `NODE_IP` environment variable value
+
+  Set a name to identify the agent node. 
+
+- **tcp_connection_timeout** <span class='type'>number</span>
+
+  Default `3000`
+
+  Set the timeout time when connecting whatap-master-agent to the collection server socket. 
+
+- **tcp_so_timeout** <span class='type'>number</span>
+
+  Default `60000`
+
+  Set the data sending/receiving timeout time after socket connection. 
+
+- **debug** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable the debugging mode. 
+
+- **gpuEnabled** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable the GPU monitoring. 
+
+- **count_interval** <span class='type'>number</span>
+
+  Default `5000`
+
+  Set the cycle to transmit metrics (`kube pod`, `container`) to the collection server. The unit of the default value is ms.
+
+  :::note 
+
+  This option may affect the on-screen data refresh cycle. For more information, see [Screen components affected by each metric](#k8s-affected-comp-by-metrics).
+
+  :::
+
+- **collect_interval** <span class='type'>number</span>
+
+  Default `5000`
+
+  Set the cycle for the agent to request apiserver to collect metrics (`kube_pod`, `container`).
+
+  :::note 
+
+  This option may affect the on-screen data refresh cycle. For more information, see [Screen components affected by each metric](#k8s-affected-comp-by-metrics).
+
+  :::
+
+- **collect_apiserver_metric_by_leader** <span class='type'>bool</span>
+
+  Default `false`
+
+  If the option is enabled, the node agent delegates metrics collection to the master agent. It requires to enable the `collect_apiserver_metric_by_leader` option of whatap-master-agent first. Through metric collection delegation, the apiserver load generated by the existing whatap-node-agent can be reduced.
+
+### whatap-control-plane-helper
+
+---
+
+- **port** <span class='type'>string</span>
+
+  Default `9496`
+
+  Set the web server port of whatap-control-plane-helper. 
+
+- **cycle** <span class='type'>number</span>
+
+  Default `5`
+
+  Set the cycle at which the control-plane-helper scrapes metrics. The unit of the default value is s. 
+
+- **collect_control_plane_monitoring_enabled** <span class='type'>bool</span>
+
+  Default `false`
+
+  It determines whether or not to enable the control-plane-monitoring function. 
+
+- **kube_config_path** <span class='type'>string</span>
+
+  Default `~.kube/config`
+
+  Specify the Kubernetes configuration file path. If not set, use _~/.kube/config_.
+
+- **kube_master_url** <span class='type'>string</span>
+
+  Default `~/.kube/config`
+
+  Set the URL of the control-plane to request for scraping. If not set, use _~/.kube/config_.
+
+- **debug** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable the debugging (logging) for whatap-control-plane-helper. 
+
+### whatap-master-agent
+
+---
+
+- **shutdown** <span class='type'>bool</span>
+
+  Default `false`
+
+  Forcibly disconnect the collection server. This means stopping communication.
+
+- **license** <span class='type'>string</span>
+
+  Agents are identified using the license issued to the project. 
+
+- **whatap.server.host** <span class='type'>string</span>
+
+  Default `13.124.11.223` or `13.209.172.35`
+
+  Set the IP of the collection server. In case of `delimiter`, use `/:`.
+
+- **whatap.server.port** <span class='type'>number</span>
+
+  Default `6600`
+
+  Set the data receiving port of the collection server. 
+
+- **tcp_connection_timeout** <span class='type'>number</span>
+
+  Default `3000`
+
+  Set the timeout time when connecting whatap-master-agent to the collection server socket. 
+
+- **tcp_so_timeout** <span class='type'>number</span>
+
+  Default `60000`
+
+  Set the timeout time when connecting whatap-master-agent to the collection server socket. 
+
+- **debug** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable the `DEBUG` level logging in whatap-master-agent. 
+
+- **collect_apiserver_metric_by_leader** <span class='type'>bool</span>
+
+  Default `false`
+
+  Sets whether or not to enable whatap-master-agent to act as the leader of the scraper. When enabled, whatap-master-agent alone requests metrics to apiserver.
+
+- **collect_control_plane_monitoring_enabled** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable the control-plane monitoring.
+
+- **master_to_control_plane_connection_timeout** <span class='type'>number</span>
+
+  Default `5000`
+
+  Set the time until a connection timeout occurs when whatap-master-agent communicates with whatap-control-plane-helper. The unit of the default value is ms. 
+
+- **master_to_control_plane_read_timeout** <span class='type'>number</span>
+
+  Default `20000`
+
+  Set the time until a read timeout occurs when whatap-master-agent communicates with whatap-control-plane-helper. The unit of the default value is ms.
+
+- **control_plane_debug** <span class='type'>bool</span>
+
+  Default `false`
+
+  Set whether or not to enable all debug logging in whatap-master-agent for control-plane monitoring. 
+
+- **store_k8s_object_manifest_enabled** <span class='type'>bool</span>
+
+  Default `true`
+
+  Set whether or not to enable the Object Manifest collection. When enabled, manifest information for cluster objects is collected once a day.
+
+- **store_k8s_object_manifest_timezone** <span class='type'>string</span>
+
+  Default `UTC`
+
+  Set the time zone for collection of object manifests. If there is no separate setting, collection starts at midnight based on UTC by default. 
+
+  > For example, to run it at midnight in Korean time, set the time zone to `GMT+9` or `Asia/Seoul`.
+
+- **store_k8s_object_manifest_max_fetch_limit** <span class='type'>number</span>
+
+  Default `50`
+
+  Set the view number of objects to collect at a time. If there is no separate setting, 50 items are requested upon request based on the default value of `50`.
+
+  > For example, when setting the option `30` in a cluster with a total number of Pods of 90, pods are requested 3 times for 30 pods each.
+
+## Screen components affected by each metric{#k8s-affected-comp-by-metrics}
+
+### `kube_pod`
+
+- **_Dashboard_** > **_Container Map_**
+
+  The Pod view reference data in the following example image is affected by the `kube_pod` metrics collection cycle and collection server transmission cycle. 
+
+  <ImgLang img='k8s-set-agent-kube-pod-container-map.png' desc='Container Map Pod view'/>
+
+- **_Workload_** > **_Pod List_**
+
+  The following example data is affected by the `kube_pod` metrics collection cycle and collection server transmission cycle.
+
+  ![Pod list](/img/k8s-set-agent-kube-pod-pod-list.png)
+
+- **_Dashboard_** > **_Performance Summary_**
+
+  It is affected by <Cmdname sid="TTL07433" className="uitext" /> chart update cycle using the `kube_pod` metrics. 
+
+### `container`
+
+- **_Dashboard_** > **_Container Map_** 
+
+  In the following example, the screen data refresh cycle based on the container view is affected by the `container` metrics. 
+
+  <ImgLang img='k8s-set-agent-container-container-map.png' desc='Container Map Container view'/>
+
+- **_Container_** > **_Container Images_** 
+
+  The data in the following example is affected by the `container` metrics.
+
+  ![Container image](/img/k8s-set-agent-container-image.png)
+
+- **_Dashboard_** > **_Performance Summary_** 
+
+  It is affected by the update cycle of the following charts using the `kube_pod` metrics. 
+
+  - **_Number of containers running on nodes with agents_**
+
+  - **_Number of nodes with agents_**
+
+  - **_Total Container CPU Request_**
+
+  - **_Total Container CPU Usage_**
+
+  - **_Node CPU_**
+
+  - **_Node Memory_**
+
+  - **_Container CPU Usage by Request_**
+
+  - **_Container CPU Usage by Node_**
+
+  - **_Container Memory Working Set by Request_**
+
+  - **_Container Memory Failure Count_**
+
+  - **_Container CPU Throttling Time_**
+
+  - **_Container Network Receive Byte_**
+
+  - **_Container Network Transmit Byte_**
+
+- **_Cluster_** > **_Node Detail_** 
+
+  In the following **_Node details_** screen as an example, the update cycle of the **_container_** list is affected by the `container` metrics.
+
+  ![Node Detail](/img/k8s-set-agent-node-detail.png)

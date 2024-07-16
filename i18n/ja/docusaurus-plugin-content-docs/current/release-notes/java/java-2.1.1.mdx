@@ -21,7 +21,7 @@ import UI from '@site/src/components/UItext';
 トランザクションやhttp呼び出しの状態を通常の呼び出しとして認識できるように機能を追加しました。
 
 ```ini title='whatap.conf'
-# デフォルト値 (default)
+# 既定値 (default)
 transaction_status_mode=normal
 httpc_status_mode=normal
 
@@ -39,7 +39,7 @@ httpc_status_mode=info
 Javaエージェントのメタタグのオプション名を修正しました。
 
 ```ini title='whatap.conf'
-# デフォルト値 (default)
+# 既定値 (default)
 agent_meta_tags_enabled=true
 ```
 
@@ -100,7 +100,7 @@ oshiライブラリを使用して、netstat機能を追加しました。
 トランザクションエラー通知に関する設定を追加し、設定名を修正しました。
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 # エラー通知機能の活性化有無
 exception_alert_enabled=false
 
@@ -173,7 +173,7 @@ Timestampログの記録時にエラーが発生する問題を修正しまし�
 Alibaba Druid connection poolを追跡できるように機能を追加しました。
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 druid_pool_enabled=false
 ```
 
@@ -182,7 +182,7 @@ druid_pool_enabled=false
 Http Callエラー発生時に通知を送る機能を追加
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 httpc_event_detail_enable=false
 ```
 
@@ -199,7 +199,7 @@ Http呼び出し時にエラーが発生すると通知を受けられるよう�
 通知が発生すると`exception_alert_silent_time`オプションで指定された期間、エラー通知を無効にすることができます。
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 exception_alert_enabled=false
 exception_alert_buffer_size=5
 exception_alert_stack_size=50
@@ -230,12 +230,12 @@ target IPまたはサービスの接続状態をログモニタリングのliveT
 
 - 正常なレスポンスの場合のレベルはOK、エラーの場合のレベルはエラーです。
 
-- 通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログは記録されます。デフォルト値は30秒です。
+- 通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログが記録されます。既定値は30秒です。
 
-- エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログは記録されます。デフォルト値は5秒です。
+- エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログが記録されます。既定値は5秒です。
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 logsink_rt_enabled=false
 
 logsink_rt_error_interval=5000
@@ -257,7 +257,7 @@ Http呼び出し時、エラー時間のmaxを0に設定してもエラーが表
 アクティブスタックのスレッド名を表示できるように設定を追加しました。
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 active_stack_thread_name_enabled=false
 ```
 
@@ -272,7 +272,7 @@ yardバージョンが低い場合、trueに設定するとプロトコルエラ
 非同期スレッドのidと名前を表示できるように設定を追加しました。
 
 ```ini title='whatap.conf'
-# デフォルト値
+# 既定値
 debug_async_thread_enabled=false
 ```
 
@@ -304,22 +304,13 @@ Httpクライアントにタイムアウトを適用し、タイムアウト発�
 
 #### jmx pool設定の追加
 
-jmx pool objectのデフォルト値を修正しました。jmx poolのデータソース名の使用有無を決定できるオプションを追加しました。
+jmx pool objectの既定値を修正しました。jmx poolのデータソース名の使用有無を決定できるオプションを追加しました。
 
 データソース名を登録する場合はjndi方式を実行し、名前を登録しない場合は基本url方式で動作します。
 
 ```ini title='whatap.conf'
 jmx_pool_dsname_enabled=false
 jmx_pool_object="*:type=DataSource,class=*,name=*"
-```
-
-#### heapdumpファイルパスオプションの追加
-
-heapdumpファイルパスを指定するlog_rootオプションを追加しました。
-
-```ini title='whatap.conf'
-# デフォルト値
-log_root=${WHATAP_HOME}/dump
 ```
 
 #### バッチエージェントのactive開始部分の修正
@@ -359,7 +350,7 @@ logsink、log4jプラグインを使用する場合、自動的にhookingオプ�
 logsinkで収集するデータを追加しました。設定によってtransation id、login id、http hostデータ収集の有無を決定できます。
 
 ```ini title='whatap.conf'
-# デフォルト値 (default)
+# 既定値 (default)
 _logtag_enabled = false         # tag 
 logtag_txid_enabled=false       # transation id
 logtag_login_enabled=false      # login id
@@ -389,7 +380,7 @@ collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
 threadの動作時間が設定値を超えた場合に、threadの停止可否を設定できるように項目を追加しました。デフォルト設定値は`false`です。
 
 ```ini title='whatap.conf'
-auto_thread_kill_enabled=false  # デフォルト値
+auto_thread_kill_enabled=false  # 既定値
 ```
 
 #### http headerから'Cookie'項目を除外

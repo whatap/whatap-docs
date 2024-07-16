@@ -2,12 +2,30 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {
-  findFirstCategoryLink,
+  findFirstSidebarItemLink,
   useDocById,
 } from '@docusaurus/theme-common/internal';
+import {usePluralForm} from '@docusaurus/theme-common';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {translate} from '@docusaurus/Translate';
+import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+function useCategoryItemsPlural() {
+  const {selectMessage} = usePluralForm();
+  return (count) =>
+    selectMessage(
+      count,
+      translate(
+        {
+          message: '{count} items',
+          id: 'theme.docs.DocCard.categoryDescription.plurals',
+          description:
+            'The default description for a category card in the generated index about how many items this category includes',
+        },
+        {count},
+      ),
+    );
+}
 function CardContainer({href, children}) {
   return (
     <Link
@@ -20,10 +38,13 @@ function CardContainer({href, children}) {
 function CardLayout({href, title, description}) {
   return (
     <CardContainer href={href}>
-      <h2 className={clsx('text--truncate', styles.cardTitle)} title={title}>
+      <Heading
+        as="h2"
+        className={clsx('text--truncate', styles.cardTitle)}
+        title={title}>
         {/* {icon}  */}
         {title}
-      </h2>
+      </Heading>
       {description && (
         <p
           className={clsx('text--truncate', styles.cardDescription)}
@@ -35,7 +56,8 @@ function CardLayout({href, title, description}) {
   );
 }
 function CardCategory({item}) {
-  const href = findFirstCategoryLink(item);
+  const href = findFirstSidebarItemLink(item);
+  const categoryItemsPlural = useCategoryItemsPlural();
   // Unexpected: categories that don't have a link have been filtered upfront
   if (!href) {
     return null;
@@ -45,23 +67,12 @@ function CardCategory({item}) {
       href={href}
       // icon="🗃️"
       title={item.label}
-      description={
-        item.description ??
-        translate(
-          {
-            message: '{count} items',
-            id: 'theme.docs.DocCard.categoryDescription',
-            description:
-              'The default description for a category card in the generated index about how many items this category includes',
-          },
-          {count: item.items.length},
-        )
-      }
+      description={item.description ?? categoryItemsPlural(item.items.length)}
     />
   );
 }
 function CardLink({item}) {
-  const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
+  // const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
   const doc = useDocById(item.docId ?? undefined);
   return (
     <CardLayout

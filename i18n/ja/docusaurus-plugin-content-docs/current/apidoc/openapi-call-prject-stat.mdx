@@ -21,7 +21,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 66.0
 ```
 
-## プロジェクト内の平均応答時間
+## プロジェクトの平均応答時間
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/raw/tag/app_counter/resp_time?<code>stitme</code>=[stime]&<code>etime</code>=[etime]&<code>timeMerge</code>=[timeMerge]
 
@@ -45,7 +45,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 11.05
 ```
 
-## プロジェクト内のデータソースあたりのDB Connection数
+## プロジェクトのデータソース毎のDB Connection数
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/tag/db_pool_detail/dbconn?<code>stitme</code>=[stime]&<code>etime</code>=[etime]&<code>timeMerge</code>=[timeMerge]
 
@@ -94,8 +94,8 @@ curl --location 'https://api.whatap.io/open/api/v2/yard/flush' \
 }'
 ```
 
-| Response Field |            Field Type            | 説明                      |
-| -------------- | :------------------------------: | ----------------------- |
-| `elapsed`      | <span class='type'>number</span> | 開始時間(`stime`) 基準からの経過時間 |
-| `count`        | <span class='type'>number</span> | HTTPコール件数               |
-| `url`          | <span class='type'>string</span> | クライアントがリクエストしたトランザクション名 |
+| Response Field |            Field Type            | 説明                                       |
+| -------------- | :------------------------------: | ---------------------------------------- |
+| `elapsed`      | <span class='type'>number</span> | 開始時間(`stime`) からの経過時間 |
+| `count`        | <span class='type'>number</span> | HTTPコール件数                                |
+| `url`          | <span class='type'>string</span> | クライアントがリクエストしたトランザクション名                  |

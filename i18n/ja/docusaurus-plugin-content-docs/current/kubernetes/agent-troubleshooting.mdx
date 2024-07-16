@@ -32,7 +32,7 @@ helm repo remove whatap
 | Error: INSTALLATION FAILED: Unable to continue with install: Namespace "whatap-monitoring" in namespace "" exists and cannot be imported into the current release |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-クラスターに`whatap-monitoring`ネームスペースが存在する場合、ユーザーが_yaml_ファイルベースですでにWhaTap Kubernetesエージェントをインストールしているためです。 この場合、次のコマンドにより、既存の`whatap-monitoring`ネームスペースと関連リソースを削除してください。
+クラスターに`whatap-monitoring`ネームスペースが存在する場合、ユーザーが*yaml*ファイルベースですでにWhaTap Kubernetesエージェントをインストールしているためです。 この場合、次のコマンドにより、既存の`whatap-monitoring`ネームスペースと関連リソースを削除してください。
 
 ```shell
 kubectl delete namespace whatap-monitoring

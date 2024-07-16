@@ -1,12 +1,12 @@
-ホーム画面 > プロジェクト選択 > **_分析_** > **_ロックツリー_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbLockTree" className="uitext" />
 
-<InDoc product='cubrid,postgreslq,postgresql-v1,oracle'>
+<InDoc product='cubrid,postgresql,oracle'>
 
 1日で発生したLockの推移を分析することができます。Lockの原因となったセッション(Lock Holder)とLockを待機するセッション(Lock Waitier)をツリー構造で確認することができます。この機能を使用すると、特定の時点で発生したLock情報HolderとWaiterの関係を確認することで、クエリ(Query)を分析することができます。
 
 </InDoc>
 
-<Xclude product='cubrid,postgreslq,postgresql-v1,oracle'>
+<Xclude product='cubrid,postgresql,oracle'>
 
 一日のロック発生有無と発生時間を時系列チャート/ロックツリーとして提供します。ロックが最初に発生した地点からholderとwaiterの構造をツリー形式で表現して提供します。ロックツリーは時間の流れで確認できます。
 

@@ -1,0 +1,204 @@
+---
+id: user-session-log-search
+title: Searching the user session log
+description: description
+tags:
+  - Browser Monitoring
+  - Analysis
+  - Searching the user session log
+---
+
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_userSessionEventSearch" className="uitext" />
+
+End users can search using various conditions and identify the user session log by collecting the performance data, error data, and click data when interacting with the website. User session logs help analyze end user paths, identify reasons for user attrition, and analyze the performance and user experience.
+
+<ImgLang img='browser-search-user-session-log.png' desc='User Session Log Search' />
+
+Set the search time to view in the <Cmdname sid="time" className="uitext" /> option, and then select ![Search icon](/img/ico-btn-search.png). You can set multiple search conditions consisting of keys and values in <Cmdname sid="filter" className="uitext" /> and then extract only the log data that matches the conditions. Log data is loaded by lines and displayed in a list. When you go to the bottom of the list, the following data is automatically retrieved for display.
+
+:::tip
+
+Basic operations in <Cmdname sid="side_userSessionEventSearch" className="uitext" /> is the same as those of the <Cmdname sid="side_logSearch" className="uitext" /> menu. For more information about the search methods and other options by setting filters, see the following.
+
+- For more information about the log search using the filter settings, see <Link to="../log/log-search#log-search-filter" target="_blank">the following</Link>.
+
+- For more information about tag options, see <Link to="../log/log-search#log-tag-options" target="_blank">the following</Link>.
+
+- For more information about the content highlighting, see <Link to="../log/log-search#content-highlight" target="_blank">the following</Link>.
+
+- For more information about the <Cmdname sid="table_settings" className="uitext" /> function, see <Link to="../log/log-search#set-table" target="_blank">the following</Link>.
+
+:::
+
+:::note
+
+This function can be used by the members with the **log search** role. For more information about the member role scheme, see [the following](../project/project-structure#project-auth).
+
+:::
+
+## Guide to major search tags {#guide-search-tag}
+
+### \#Category {#category}
+
+The user session logs collected by the browser monitoring can be categorized as follows: Each **#Category** has a list of tags for searching by filters.
+
+![Category](/img/browser-search-user-session-category.png)
+
+- **_#BrowserError_**: Collects and provides source errors, network errors, and such that occur from the website.
+
+- **_#PerformanceEvent_**: Collects and provides events that are related with page loading, AJAX, and router change.
+
+- **_#UserEvent_**: Collects and provides user click events and custom events.
+
+### User session log {#usersessionlog}
+
+User session logs include the end-user environment and the data collected by **#Category**. If you select ![More icon](/img/ic-caret-right.svg) on the utmost left, you can see the whole data that makes up the log.
+
+![Log message](/img/browser-search-user-session-log-content.png)
+
+The content of the first line consists of the end user's environment and **#Category**-based collection data as keys and values. Keys and values are used for search in <Cmdname sid="filter" className="uitext" />. The second line is the message of the user's session log.
+
+![Key](/img/browser-search-user-session-tag.png)
+
+The following are descriptions for major keys in the user session log.
+
+- `PageUrl`: URL of the page where the event occurred.
+
+- `userID`: ID of the user who generated the event. A unique ID that is issued by the browser agent when a user accesses a website for the first time. It has no expiration time. IDs are stored in browser cookies.
+
+- `sessionID`: ID of the session that generated the event. A unique ID issued when a user starts navigation of the website. The maximum duration of a session is 4 hours, and the ID expires after 15 minutes of inactivity. IDs are stored in browser cookies.
+
+- `type`: Type of the generated event.
+
+  - **pageLoad**: Event that occurs upon loading the website.
+
+  - **routeChange**: Event that occurs upon change in the route of the SPA website.
+
+  - **ajax**: AJAX request-related event
+
+  - **click**: Event that occurs when an actual user clicks on the website.
+
+  - **rapid_click**: Event that occurs when an actual user quickly clicks on a single coordinate multiple times.
+
+  - **custom**: Custom event.
+
+  - **browser_error**: Source errors, network errors, and the like in the website.
+
+:::note
+
+- For the agent configuration option (`collectUserClick: true`) to collect user click events, see [the following](apply-agent#setting-agent).
+
+- For more information about collection of custom events, see [the following](collect-custom-events).
+
+:::
+
+## Analyzing the user session {#analysisusersession}
+
+In the viewed user session log list, select <Cmdname sid="analysis" className="uitext" /> in the <Cmdname sid="TTL07736" className="uitext" /> column. The <Cmdname sid="TTL07736" className="uitext" /> window appears where you can see the details of the user session log for the selected item.
+
+<ImgLang img='browser-search-user-session-log-analysis.png' desc='User session analysis' />
+
+Based on the user session, you can see the events and errors that occur while interacting with the website in chronological order. You can use the user session analysis as the following and enjoy better user experience.
+
+- **On-page behavior analysis**: You can understand how the user navigates the website. It can analyze user activities on how you navigate, which pages you stay on, and which elements you click on. This helps you gain insight into how users use the website and understand the user behavior patterns by analyzing user paths.
+
+- **Error tracing**: You can trace all types of technical issues (Java script errors, network errors, etc.) that occur during user sessions. You can monitor and analyze user behaviors such as clicks and page movements to find causes of failures.
+
+- **Finding the cause of customer attrition**: You can reduce the churn rate by tracing user attrition from a specific page or failures to complete specific tasks, analyze the causes, and improve the area.
+
+### User session information
+
+<ImgLang img='browser-search-user-session-infomation.png' desc='User session information' />
+
+You can view information such as end user's browser and OS, user agent, user ID, session ID, and client IP.
+
+### User session flow
+
+Based on the user session, you can check the performance data, events, and errors that occur when actual users interact with the website.
+
+<ImgLang img='browser-search-user-session-flow.png' desc='User session flow' />
+
+### Checking the event information details
+
+The types of events displayed in the <Cmdname sid="title" className="uitext" /> column of the <Cmdname sid="TTL07746" className="uitext" /> list are divided into the following. Select a user session event to see the information details about the event.
+
+#### <Cmdname sid="page_load" />(pageLoad)
+
+<ImgLang img='browser-analysis-user-session-log-details-pageload.png' desc='Page load event' />
+
+Event that occurs when the website is loaded. You can check the detailed time and loaded resources for each event section. If you select the <Cmdname sid="TTL07736" className="uitext" /> tab, the related information is displayed consequently.
+
+:::note
+
+For more information about the page load analysis, see [the following](analyze-pageload).
+
+:::
+
+#### <Cmdname sid="TTL07752" />(routeChange)
+
+<ImgLang img='browser-analysis-user-session-log-details-router.png' desc='Routher change' />
+
+This event occurs when the route is changed on the SPA website. You can see the time taken to change the router.
+
+#### <Cmdname sid="TTL07755" />(ajax)
+
+<ImgLang img='browser-analysis-user-session-log-details-ajax.png' desc='AJAX load event' />
+
+AJAX request-related event. You can check the detailed time information, AJAX request URLs, call pages, error messages, and such for each AJAX event section. If you select the <Cmdname sid="TTL07736" className="uitext" /> tab, the related information is displayed consequently.
+
+:::note
+
+For more information about the AJAX event analysis, see [the following](analyze-ajax-hitmap).
+
+:::
+
+#### <Cmdname sid="TTL07753" />(click) / <Cmdname sid="TTL07754" />(rapid_click)
+
+<ImgLang img='browser-analysis-user-session-log-details-click.png' desc='Click event' />
+
+You can see the selector that is the ID of the element clicked by the user, and the text information of the element. This helps you find which elements users clicked on which pages.
+
+:::note
+
+To collect click events, it is required to set the option (`collectUserClick: true`) in the browser agent. For more information, see [the following](apply-agent#setting-agent).
+
+:::
+
+#### <Cmdname sid="custom" />(custom)
+
+<ImgLang img='browser-analysis-user-session-log-details-custom.png' desc='Custom event' />
+
+You can check the information collected by custom events. It displays the information included in the title (`name`) and contents that are representative values of custom events.
+
+:::note
+
+For more information about collection of custom events, see [the following](collect-custom-events).
+
+:::
+
+#### <Cmdname sid="TTL07751" />(browser_error)
+
+<ImgLang img='browser-analysis-user-session-log-details-error.png' desc='Browser error' />
+
+You can see source errors, network errors, and the like that occur from the website.
+
+:::note
+
+For more information about error tracing, see [the following](tracking-error).
+
+:::
+
+### Event-based filtering
+
+<ImgLang img='browser-analysis-user-session-log-filter.png' desc='filter' />
+
+1. On the upper right of the <Cmdname sid="TTL07746" className="uitext" /> list, select <LinkImage img="ico-filter.svg" desc="필터 아이콘" />.
+
+2. In the <Cmdname sid="filter" className="uitext" /> list, select an event type.
+
+3. Select <Cmdname sid="apply" className="uitext" />.
+
+{/* 세션 리플레이 */}
+import Sessionreplay from "../common-items/_browser-analysis-session-replay.mdx";
+
+<Sessionreplay />

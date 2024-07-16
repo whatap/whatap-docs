@@ -27,14 +27,14 @@ displayed_sidebar: releaseSidebar
 
   <Link to='../../java/agent-transaction-error-stack' target='_blank' className='ext-link'>トランザクションエラースタック</Link>
 
-- <Status>Changed</Status> <code>java.sql.SQLException</code>発生時のエラーコード表示のデフォルト値を<code>true</code>に修正
+- <Status>Changed</Status> <code>java.sql.SQLException</code>発生時のエラーコード表示の既定値を<code>true</code>に修正
 
   ```ini title='whatap.conf'
   # default
   trace_sql_errorcode_enabled=true
   ```
 
-- <Status>Changed</Status>ユーザー定義exceptionを優先するように<code>trace_exception_overwrite_enabled</code>デフォルト値を<code>true</code>に修正
+- <Status>Changed</Status>ユーザー定義exceptionを優先するように<code>trace_exception_overwrite_enabled</code>既定値を<code>true</code>に修正
 
   ```ini title='whatap.conf'
   # default

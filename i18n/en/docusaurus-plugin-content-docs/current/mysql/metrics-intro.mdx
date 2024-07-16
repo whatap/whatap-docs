@@ -13,20 +13,23 @@ import Variable from '@site/src/components/Variable.js';
 import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
 import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
 
-<!-- 개요 -->
+{/* 개요 */}
+import Metricsintrodesc from "../common-items/_metrics-intro.desc.mdx";
 
-{@include: ../common-items/_metrics-intro.desc.mdx}
+<Metricsintrodesc />
 
 <IntroExam category='db_mysql_counter'/>
 
 <ProdImg img='metrics-example-00.png' desc=''/>
 
-<!-- View Metrics Chart-->
+{/* 메트릭스 차트 조회하기*/}
+import Metricsintrolookupchart from "../common-items/_metrics-intro-look-up-chart.mdx";
 
-{@include: ../common-items/_metrics-intro-look-up-chart.mdx}  
+<Metricsintrolookupchart />
 
 <LookupchartDesc metric='Active sessions' category='db_mysql_counter' />
 
-<!-- View Metrics Raw Data-->
+{/* 메트릭스 Raw Data 조회화기*/}
+import Metricsintrolookuprawdata from "../common-items/_metrics-intro-look-up-raw-data.mdx";
 
-{@include: ../common-items/_metrics-intro-look-up-raw-data.mdx}
+<Metricsintrolookuprawdata />

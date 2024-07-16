@@ -1,4 +1,4 @@
-`nvidia-smi`コマンドがマウントされている場合、GPU性能を5秒間隔で収集し、WhaTapにアップロードされます。収集された情報はメトリクス**_カテゴリ_**`server_nvidiasmi`に収集されます。
+`nvidia-smi`コマンドがマウントされている場合、GPU性能を5秒間隔で収集し、WhaTapにアップロードされます。収集された情報はメトリクス<Cmdname sid="category" className="uitext" />`server_nvidiasmi`に収集されます。
 
 <Tabs>
 <TabItem value="lxs" label="Linux Shell">
@@ -19,8 +19,8 @@ Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "nvidiasmi.e
 
 - **category server_nvidiasmi**
 
-  | メトリクス                | 備考                                      |
-  | -------------------- | --------------------------------------- |
+  | メトリクス                | 備考                                                         |
+  | -------------------- | ---------------------------------------------------------- |
   | DecoderUtil          | gauge、Decoder utilization (in %)        |
   | EncoderUtil          | gauge、Encoder utilization (in %)        |
   | FreeFbMemoryUsageGpu | gauge、Framebuffer memory free (in MiB). |

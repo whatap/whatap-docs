@@ -10,10 +10,13 @@ import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile';
 import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
 import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
+import Unlisted from '@theme/Unlisted';
 import styles from './styles.module.css';
 import FacebookShare from '@site/src/components/facebook';
 import PrintPDF from '@site/src/components/printpage/PrintPage';
 import Feedback from '@site/src/components/Feedback';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import GenerateToc from '@site/src/components/GenerateToc';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -34,17 +37,23 @@ function useDocTOC() {
   };
 }
 export default function DocItemLayout({children}) {
+  const { i18n: {currentLocale} } = useDocusaurusContext();
   const docTOC = useDocTOC();
+  const {
+    metadata: {unlisted},
+  } = useDoc();
+
   return (
     <div className="row">
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+        {unlisted && <Unlisted />}
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article>
             <DocBreadcrumbs />
-            <FacebookShare />
             <DocVersionBadge />
-            {docTOC.mobile}
+            {/* {docTOC.mobile} */}
+            <GenerateToc device="mobile" />
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
           </article>
@@ -53,7 +62,8 @@ export default function DocItemLayout({children}) {
       </div>
       {/* {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>} */}
       <div className="col col--3">
-        {docTOC.desktop}
+        {/* {docTOC.desktop} */}
+        {!docTOC.hidden ? <GenerateToc device="desktop" /> : null}
         <FacebookShare />
         <PrintPDF/>
         <Feedback/>

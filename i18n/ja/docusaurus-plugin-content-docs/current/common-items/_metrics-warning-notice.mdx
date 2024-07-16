@@ -33,7 +33,7 @@
 
 :::note
 
-メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参照ください。
+メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参照にしてください。
 
 :::
 
@@ -43,13 +43,13 @@
 
 <Xclude product="npm">
 
-<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />ウィンドウが表示されます。
+<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />画面が表示されます。
 
 </Xclude>
 
 <InDoc product="npm">
 
-<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />ウィンドウが表示されます。
+<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />画面が表示されます。
 
 </InDoc>
 
@@ -59,7 +59,7 @@
 
 :::note
 
-メトリクスにイベントテンプレートの詳細については[次の文書](#k8s-metrics-event-template)を参照してください。
+メトリクスにイベントテンプレートの詳細については[次の文書](#template)を参照してください。
 
 :::
 
@@ -67,13 +67,13 @@
 
 ### 基本情報を入力{#basic-info}
 
-- <Cmdname sid="event_name" className="uitext" />：追加するイベント名を入力してください。
+- <Cmdname sid="event_name" className="uitext" />：追加するイベント名を入力します。
 
-- <Cmdname sid="enable_events" className="uitext" />：イベントのアクティブ化の有無を選択します。
+- <Cmdname sid="enable_events" className="uitext" />：イベントの活性化の有無を選択します。
 
-- <Cmdname sid="template" className="uitext" />：作成したテンプレートを選択して、すばやく簡単にイベントを設定できます。テンプレートを使用しない場合は、<Cmdname sid="metrics_option_disabled" className="uitext" />を選択します。
+- <Cmdname sid="template" className="uitext" />：作成されたテンプレートを選択して、簡単にイベントを設定できます。テンプレートを使用しない場合は、<Cmdname sid="metrics_option_disabled" className="uitext" />を選択します。
 
-  <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
+  <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,browser,npm'>
 
   :::note
 
@@ -83,13 +83,13 @@
 
   </InDoc>
 
-- <Cmdname sid="category" className="uitext" />：メトリクス データを区切る単位です。メトリクスイベント設定時の必須のオプションの値です。
+- <Cmdname sid="category" className="uitext" />：メトリクス データを区切る単位です。メトリクスイベント設定時に必須の設定値です。
 
   <ImgLang img='set-event-select-category.png' desc='メトリクスイベント - カテゴリ' />
 
-  - <Cmdname sid="category" className="uitext" />選択オプションは、<LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" />と<LinkImage img="number-02.png" className="ico" />データ収集間隔、<LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
+  - <Cmdname sid="category" className="uitext" />選択オプションは、<LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" />と<LinkImage img="number-02.png" className="ico" />データ収集間隔、<LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />情報を表示します。イベントを設定する際には該当カテゴリのキーを使用します。
 
-  - <Cmdname sid="category" className="uitext" />は、3時間以内にプロジェクトによって収集されたメトリクスデータを検索し、一覧に表示します。<Cmdname sid="category" className="uitext" />選択オプションに収集間隔が表示されない場合は、<Cmdname sid="enter_category_self" className="uitext" />オプションを選択して、カテゴリキーを入力します。
+  - <Cmdname sid="category" className="uitext" />は、直近3時間以内にプロジェクトで収集されたメトリクスデータを照会し、一覧に表示します。<Cmdname sid="category" className="uitext" />選択オプションに収集間隔が表示されない場合は、<Cmdname sid="enter_category_self" className="uitext" />オプションを選択して、カテゴリキーを入力します。
 
 - <Cmdname sid="level" className="uitext" />
 
@@ -99,7 +99,7 @@
 
 - <Cmdname sid="message" className="uitext" />
 
-  - イベント発生時に出力する通知メッセージを入力します。<code>${Tag}</code>または<code>${Field}</code>を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
+  - イベント発生時に出力する通知メッセージを入力します。<code>&#36;&#123;Tag&#125;</code>または<code>&#36;&#123;Field&#125;</code>を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリクス データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認できます。
 
     <ImgLang img='event-config-message-example.png' desc='Message example' />
 
@@ -123,7 +123,7 @@
 
 - <Cmdname sid="alert_object_filtering" className="uitext" />
 
-  <ImgLang img='set-event-filtering.png' desc='イベント対象フィルタリング' />
+  <ImgLang img='set-event-filtering.png' desc='アラート通知対象のフィルタリング' />
 
   ![指示線7](/img/number-07.png)タグ、![指示線8](/img/number-08.png)演算子の選択、![指示線9](/img/number-09.png)フィルタリング値を入力して、ターゲットをフィルタリングします。入力がない場合は、全体エージェントにアラート通知を送信します。
 
@@ -147,7 +147,7 @@
 
 <ImgLang img='set-event-receive.png' desc='イベント受信設定' />
 
-- <Cmdname sid="number_of_event" className="uitext" />：選択した時間内に<Cmdname sid="metrics_event_rules" className="uitext" />で設定したイベントが入力回数と同じ回数が発生した場合、アラート通知が送信されます。
+- <Cmdname sid="number_of_event" className="uitext" />：選択した時間の間に<Cmdname sid="metrics_event_rules" className="uitext" />で設定したイベントが入力した回数分発生すると、アラート通知が送信されます。
 
   :::note
 

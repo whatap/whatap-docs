@@ -9,7 +9,7 @@ tags:
   - Wait分析
 ---
 
-ホーム画面>プロジェクト選択>**_分析_**>**_Wait分析_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
 
 遂行中のセッションが何の待機イベントで待機しているのか、頻繁に発生する待機イベントはどのようなのかを確認することができます。 5秒ごとに収集したアクティブセッションを待機(Wait)の観点から分析することができます。 
 
@@ -17,7 +17,7 @@ tags:
 
 - この機能は、DBXエージェント1.6.10バージョン以降に対応しています。
 
-- 収集した待機情報は、`pg_stat_activity`ビューの`wait_event`と`wait_event_type`です。 該当指標の説明は、[次の文書](https://www.postgresql.org/docs/current/monitoring-stats.html#WAIT-EVENT-TABLE)を参考してください。
+- 収集した待機情報は、`pg_stat_activity`ビューの`wait_event`と`wait_event_type`です。 該当指標の説明は、[次の文書](https://www.postgresql.org/docs/current/monitoring-stats.html#WAIT-EVENT-TABLE)を参照にしてください。
 
 :::
 
@@ -25,16 +25,30 @@ tags:
 
 <ImgLang img='db-analysis-wait.png' desc='Wait分析' />
 
-照会したい**_時間_**と**_インスタンス_**を選択してください。 設定した時間とインスタンスに該当する待機情報を確認することができます。 照会期間中に待機(遅延)が頻繁に発生したアクティブセッションがあったら、どのようなタイプの待機イベントが発生したのかを分析するのに活用できます。
+照会したい<Cmdname sid="time" className="uitext" />と<Cmdname sid="instance" className="uitext" />を選択してください。 設定した時間とインスタンスに該当する待機情報を確認することができます。 照会期間中に待機(遅延)が頻繁に発生したアクティブセッションがあったら、どのようなタイプの待機イベントが発生したのかを分析するのに活用できます。
 
 ![Wait Event Top 5](/img/db-analysis-wait-top5.png)
 
 **_WaitEvent Top5_**で最も多く発生した待機イベントを確認することができます。 上記のイメージを例に、最も多く発生した待機イベントのタイプは**Lock**です。 グラフチャートから![数字1](/img/number-01.png)詳細時間を選択すると、その時間のアクティブセッションを照会することができ、待機イベントが発生したSQL文を確認することができます。
 
+:::note
+
+- **_Active Session_**セクションの一覧で**_instance_**カラム項目を選択すると、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動します。 <Cmdname sid="side_dbMonitoring" className="uitext" />メニューの詳細は[次の文書](instance-monitoring)を参照してください。
+
+- **_Active Session_**セクションの一覧でセッション項目を選択すると、<Cmdname sid="session_detail" className="uitext" />画面が表示されます。 <Cmdname sid="session_detail" className="uitext" />画面についての詳細は、[次の文書](multi-instance-monitoring#session-details)を参照してください。
+
+- **_Active Session_**セクションの一覧で**_query_**カラム項目を選択すると、<Cmdname sid="TTL06224" className="uitext" /> 画面が表示されます。 <Cmdname sid="TTL06224" className="uitext" />ウィンドウの詳細については[次の文書](multi-instance-monitoring#query-details)を参照してください。
+
+:::
+
 ## テーブルデータのフィルタリング
 
-{@include: ../common-items/_db-table-data-filtering.mdx} 
+import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
+
+<Dbtabledatafiltering />
 
 ## テーブルカラムの設定{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />

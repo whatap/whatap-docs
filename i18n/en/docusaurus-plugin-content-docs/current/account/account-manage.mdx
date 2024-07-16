@@ -6,11 +6,13 @@ description: To use the WhaTap monitoring service, proceed with membership regis
 
 ## Membership registration
 
-{@include: _create-account.mdx} 
+import Createaccount from "./_create-account.mdx";
+
+<Createaccount />
 
 ## Setting the password
 
-Password must be at least 9 characters long with a combination of upper case letters (A-Z), lowercase letters (a-z), numbers (0-9), and special characters.
+Password must contain at least 9 digits long with a combination of upper case letters (A-Z) or lowercase letters(a-z), numbers(0-9), and special characters.
 
 ## Changing the password
 
@@ -42,13 +44,30 @@ If you cannot access the email account, contact WhaTap Labs Online Support (mail
 
 You can set the alert reception media such as email, SMS, and mobile device. 
 
-<!-- SMS 알림 수신 추가하기 -->
+import Setreceiveeventsms from "../common-items/_set-receive-event-sms.mdx"
 
-{@include: ../common-items/_set-receive-event-sms.mdx} 
+<Setreceiveeventsms />
 
-<!-- WhatsApp 알림 수신-->
+{/* WhatsApp 알림 수신*/}
+import Setreceiveeventwhatsapp from "../common-items/_set-receive-event-whatsapp.mdx";
 
-{@include: ../common-items/_set-receive-event-whatsapp.mdx} 
+<Setreceiveeventwhatsapp />
+
+### Adding the alert reception on the mobile device
+
+When you install the WhaTap mobile app on your mobile device, the alert settings for your mobile device are automatically added.
+
+<ImgLang img="account-set-mobile-notification.png" desc="Mobile device" />
+
+- <Cmdname sid="test" className="uitext" />: You can check whether alerts are sent to your mobile device successfully. Connection may fail due to reasons such as app restoration and reinstallation on the mobile device. The failed mobile devices are automatically excluded from the targets.
+
+- ![Delete icon](/img/ico-trash-red.svg): You can delete the alerts for the registered mobile device.
+
+:::note
+
+For more information about the WhaTap mobile app, see [the following](../mobile-app).
+
+:::
 
 ### Setting the reception level and alerting time
 
@@ -74,7 +93,7 @@ The API token is a parameter required to extract monitoring data being collected
 
 :::note
 
-For more information about the open API, see [the following](openapi).
+For more information about the open API, see [the following](../openapi-spec).
 
 :::
 

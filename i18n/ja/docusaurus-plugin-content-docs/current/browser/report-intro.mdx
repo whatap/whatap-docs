@@ -10,7 +10,9 @@ tags:
   - UI
 ---
 
-{@include: ../common-items/_report-intro-desc.mdx}
+import Reportintrodesc from "../common-items/_report-intro-desc.mdx";
+
+<Reportintrodesc />
 
 ## 日次ブラウザーレポート
 
@@ -40,11 +42,11 @@ tags:
 
 ### ブラウザー別ページロードTOP10
 
-その日に最も多く使用されたブラウザーの上位10を確認できます。 ページの読み込み回数と平均レスポンス時間を表示します。
+その日に最も多く使用されたブラウザーの上位10を確認できます。 ページロード回数と平均レスポンス時間を表示します。
 
-### 地域別ページ読み込みTOP10
+### 地域別ページロードTOP10
 
-その日に最も多くアクセスした上位10の地域を確認できます。 ページの読み込み回数と平均レスポンス時間を表示します。
+その日に最も多くアクセスした上位10の地域を確認できます。 ページロード回数と平均レスポンス時間を表示します。
 
 :::note
 
@@ -90,7 +92,7 @@ tags:
 
 ## レポートのダウンロードまたは印刷
 
-- **_ダウンロード_**：レポートをhtml形式のファイルでダウンロードできます。 ファイル名は、_日間ブラウザーレポート\_`yyyymmdd`.html_形式で保存されます。
+- **_ダウンロード_**：レポートをhtml形式のファイルでダウンロードできます。 ファイル名は、*日間ブラウザーレポート\_`yyyymmdd`.html*形式で保存されます。
 
 - **_印刷_**：レポートをPDFファイルに保存または印刷できます。 PDFファイルで保存するには、プリンター対象を**PDFで保存**を選択してください。
 
@@ -100,6 +102,7 @@ tags:
 
   :::
 
-<!-- ## 메일 발송 예약-->
+{/* ## 메일 발송 예약*/}
+import Reportintromailschedule from "../common-items/_report-intro-mail-schedule.mdx";
 
-{@include: ../common-items/_report-intro-mail-schedule.mdx} 
+<Reportintromailschedule />

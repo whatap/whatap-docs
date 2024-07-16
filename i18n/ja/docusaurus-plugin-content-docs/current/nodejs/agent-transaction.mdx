@@ -7,73 +7,87 @@ tags:
   - トランザクション
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 エージェントでトランザクションのパフォーマンスを追跡および設定するため、次のオプションを提供します。
 
 ## トランザクショントレーシング
 
-{@include: ../common-items/_transaction-profiling-common.mdx}
+以下は、アプリケーションの各トランザクションの実行パスを詳細に追跡できるエージェントのオプションです。最小応答時間からトランザクションの実行ステップ数まで、様々な部分を調整可能です。
+
+import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
+
+<Transactionprofilingcommon />
 
 - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   プロファイルにエラー関連情報を表示するステップを追加できます。
 
-{@include: ../common-items/_transaction-profile-active-color.mdx}
+import Transactionprofileactivecolor from "../common-items/_transaction-profile-active-color.mdx";
+
+<Transactionprofileactivecolor />
 
 - **hook_method_patterns** <span class='type'>String</span>
 
-  レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用することができます。対象が複数ある場合は、コンマ(,)で区切ります。
+  レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用できます。対象が複数ある場合は、コンマ(,)で区切ります。
 
   ```ini title='Example'
   hook_method_patterns=a.b.C1.*
   ```
 
+  :::note
+
+  - このオプションで登録したメソッドは、<Cmdname sid="side_hitmap" className="uitext" />、<Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面のMethodステップで確認できます。
+
+  - なるべく小さい範囲に適用してください。広い範囲に適用すると、アプリケーションの性能が低下する恐れがあります。
+
+  :::
+
 - **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
 
 - **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
 
 - **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
 
-- **hook_method_ignore_prefixes** <span class='type'>String</span>
-
-  デフォルト値`get,set `
-
-  メソッドトレースを設定する場合、トレースから除外するクラスをprefixに設定します。
-
-- **hook_method_ignore_classes** <span class='type'>String</span>
-
-  メソッドトレースを設定する場合は、トレースから除外するクラスをprefixに設定します。
-
 - **trace_service_port_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   トランザクション名にポート番号を追加します。
 
-- **httpc_status_ignore** <span class='type'>String</span>
+- **profile_zip_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`Empty`
+  既定値`false`
+
+  プロファイル情報を圧縮転送します。
+
+## 例外処理{#exception}
+
+以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。特定の例外を無視したり、HTTPステータスコードがエラーの場合にエラーとして処理可否を設定できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で正常なトランザクションとして表示されます。
+
+- **httpc_status_ignore** <span class='type'>String</span>
 
   HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
 
@@ -81,35 +95,63 @@ tags:
   httpc_status_ignore=404,500
   ```
 
-- **httpc_status_ignore_set** <span class='type'>String</span>
+  :::tip
 
-  デフォルト値`Empty`
+  HTTPステータスエラーコード無視 / エラー統計を含まない
+
+  :::
+
+- **httpc_status_ignore_set** <span class='type'>String</span>
 
   `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-  :::note
-
   `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+
+  ```ini title="whatap.conf"
+  httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404
+  ```
+
+  :::tip
+
+  HTTPステータスエラーコード無視 / エラー統計を含まない
 
   :::
 
 ## HTTPトランザクションの追跡
 
-{@include: ../common-items/_transaction-trace-common.mdx} 
+以下は、HTTPリクエストと応答に関連する様々な情報を追跡および記録するエージェントのオプションです。これにより、ユーザーはアプリケーションのHTTPトランザクションを細かくモニタリングし分析できます。トランザクション名にパラメータ値を追加または特定のURLやHTTPメソッドを除外できます。またHTTPヘッダー情報やパラメータ情報を含め、トランザクションをより詳細に記録できます。
 
-{@include: ../common-items/_transaction-profile-http.mdx} 
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
+
+<Transactiontracecommon />
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp />
 
 - **trace_ignore_url_set** <span class='type'>String</span>
 
   トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
 - **trace_ignore_url_prefix** <span class='type'>String</span> <ScrollToLink anchor="trace_ignore_url_prefix" />
 
   トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
 - **ignore_http_method** <span class='type'>String</span>
 
-  デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+  既定値 `PATCH,OPTIONS,HEAD,TRACE`
 
   設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
 
@@ -121,9 +163,15 @@ tags:
   ignore_http_method=OPTIONS,HEAD
   ```
 
+  :::note
+
+  このオプションを通じて登録したHTTPメソッドは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
 - **profile_http_header_ignore_keys** <span class='type'>String</span>
 
-  デフォルト値 `Cookie,cookie,accept,user-agent,referer`
+  既定値 `Cookie,cookie,accept,user-agent,referer`
 
   HTTPヘッダー名を指定して収集情報から除外できます。指定したHTTPヘッダー名の値は収集から除外され、'#'と表示されます。
 
@@ -132,8 +180,6 @@ tags:
   設定されたキーに該当するパラメータ情報のみを記録します。複数を登録するときは、コンマ(,)を区切り文字として利用してください。設定しない場合、すべてのパラメータ情報が記録されます。
 
 - **status_ignore** <span class='type'>String</span>
-
-  デフォルト値`Empty`
 
   無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
@@ -144,8 +190,6 @@ tags:
 
 - **status_ignore_set** <span class='type'>String</span>
 
-  デフォルト値`Empty`
-
   HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
 
   ```ini title='whatap.conf'
@@ -155,11 +199,13 @@ tags:
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
 ## 非HTTPトランザクションのトレース
+
+以下は、HTTP以外のトランザクションを追跡してモニタリングするためのオプションです。このオプションにより、ユーザーはバックグラウンド作業や他のプロトコルに対するトランザクションを細かく追跡できます。
 
 - **hook_service_patterns** <span class='type'>String</span>
 
@@ -167,63 +213,67 @@ tags:
 
 - **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   ソケット (TCP) がトランザクションではなくバックグラウンドスレッドによってオープンされた場合に接続がオープンされ、トランザクションが開始された場合にのみ、オープントレースします。
 
 ## マルチトランザクショントレース
 
+以下は、アプリケーション間の呼び出しを追跡しモニタリングするためのオプションです。このオプションにより、ユーザーは複数のアプリケーション間の相互作用を理解できます。提供する様々なオプションにより、マルチトランザクションの追跡に対する詳細な動作を調整できます。
+
 - **mtrace_rate** <span class='type'>Int</span>
 
-  デフォルト値`0`
+  既定値`0`
 
-  最初のトランザクションが発生したときに発行されるマルチトランザクション追跡機能(Multi Transaction ID、以下MTID)の発行レートを設定するオプションです。`0`から`100`まで設定できます。MTIDを追跡することで、登録したすべてのアプリケーション間の呼び出しを確認できます。同じプロジェクトに属するアプリケーションは、CallerとCallee機能を使用してトランザクションのトレースを直接確認することができます。
+  最初のトランザクションが発生したときに発行されるマルチトランザクション追跡機能(Multi Transaction ID、以下MTID)の発行レートを設定するオプションです。`0`から`100`まで設定できます。MTIDを追跡することで、登録したすべてのアプリケーション間の呼び出しを確認できます。同じプロジェクトに属するアプリケーションは、CallerとCallee機能を使用してトランザクションのトレースを直接確認できます。
 
 - **mtrace_spec** <span class='type'>String</span>
 
-  デフォルト値`v1`
+  既定値 `v1`
 
   現在のインスタンスのアプリケーションのバージョンを設定します。任意の文字列を入力できます。このデータは、呼び出し統計のために使用します。
 
 - **mtrace_caller_key** <span class='type'>String</span>
 
-  デフォルト値`x-wtap-mst`
+  既定値 `x-wtap-mst`
 
   MTID追跡に使用するCaller Key Nameを設定します。
 
 - **mtrace_callee_key** <span class='type'>String</span>
 
-  デフォルト値`x-wtap-tx`
+  既定値 `x-wtap-tx`
 
   MTID追跡に使用するCallee Key Nameを定義します。
 
 - **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   MTID追跡時に受信したCallee IDのトレースを表します。
 
 - **mtrace_alltx_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   log4jなどのロギングシステムに接続するために、すべてのトランザクションのMTIDを追跡できます。
 
 - **mtrace_basetime** <span class='type'>Miliseconds</span>
 
-  デフォルト値`100`
+  既定値`100`
 
   `mtrace_alltx_enabled`オプションの値が`true`の場合、多くのログが残る可能性があります。この場合、トレースログの量を減らす必要があります。
 
 - **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   CallerとCalleeの相関統計を収集します。Callerに適用するとCallerの詳細情報が送信され、Calleeを適用するとurl単位のCaller-Calleeの呼び出し統計情報が収集サーバーに送信されます。
 
 ## トレースデータサンプリング
 
-<code class="my">Node.js Agent v0.4.94 or later</code>
+以下は、トレースデータのサンプリングを調整し、データの送信有無を設定するオプションです。このオプションにより、ユーザーはアプリケーションの性能とデータ転送量を管理できます。
+
+エージェントの対応範囲：<code class="my">Node.js Agent v0.4.94 or later</code>
 
 :::note
 
@@ -233,12 +283,12 @@ tags:
 
 - **trace_sampling_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `false`
+  既定値 `true`
 
   トレースデータサンプリングの収集有無を設定できます。
 
 - **trace_sampling_tps** <span class='type'>Number</span>
 
-  デフォルト値 `1000`
+  既定値 `1000`
 
-  トレースデータサンプリングの数を設定できます。設定したサンプリング数を超えるデータは送信せず、1秒ごとに初期化します。
+  トレースデータのサンプリング数を設定できます。設定したサンプリング数を超えるデータは送信せず、1秒ごとに初期化します。

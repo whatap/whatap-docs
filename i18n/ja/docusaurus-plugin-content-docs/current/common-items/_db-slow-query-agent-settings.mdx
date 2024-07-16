@@ -1,8 +1,8 @@
 ## 使用設定の手順
 
-**_スロークエリ_**メニューを使用するには、次のようにパラメータと権限を設定する必要があります。
+<Cmdname sid="side_slowQueryLog" className="uitext" />メニューを使用するには、次のようにパラメータと権限を設定する必要があります。
 
-<InDoc product='mysql,mysql-v1'>
+<InDoc product='mysql'>
 
 ### DBXエージェントファイルの設定
 
@@ -14,7 +14,7 @@ slow_query_log=ON
 
 ```ini title='my.cnf'
 slow_query_log = 1
-long_query_time = 3 # 例）3秒以上のSQLレコード
+long_query_time = 3 # 例、3秒以上のSQLレコード
 log_output=FILE # または TABLE
 ```
 
@@ -36,7 +36,7 @@ log_output=FILE # または TABLE
 
 </InDoc>
 
-<InDoc product='postgresql,postgresql-v1'>
+<InDoc product='postgresql'>
 
 ### DBXエージェントファイルの設定
 
@@ -47,7 +47,7 @@ slow_query_log=ON
 ### DBパラメータの設定
 
 ```ini title='postgresql.conf'
-log_min_duration_statement=500#例: 500ms以上かかるSQL履歴
+log_min_duration_statement=500    # 例: 500ms以上かかるSQL履歴
 ```
 
 </InDoc>
@@ -57,10 +57,10 @@ log_min_duration_statement=500#例: 500ms以上かかるSQL履歴
 Slow queryの収集周期を調整するには、以下のように設定してください。
 
 ```ini title='xos.conf'
-slow_query_interval=30#デフォルト値30秒
+slow_query_interval=30   # 既定値30秒
 ```
 
-<InDoc product='postgresql,postgresql-v1'>
+<InDoc product='postgresql'>
 
 :::note
 
@@ -72,7 +72,7 @@ slow_query_interval=30#デフォルト値30秒
 
 </InDoc>
 
-<InDoc product='mysql,mysql-v1'>
+<InDoc product='mysql'>
 
 :::note
 

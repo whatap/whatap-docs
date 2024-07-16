@@ -14,17 +14,25 @@ import TR from '@site/src/components/TR';
 
 The following guides you to the basic installation method for using the WhaTap database monitoring service.
 
-{@include: ../common-items/_agent-signup-guide.mdx} 
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## Downloading the WhaTap database agent
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
+
+<Dbinstallagentsteps />
 
 3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
@@ -50,7 +58,9 @@ In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installat
 
 :::
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
 
 ```bash showLineNumbers
 create user whatap identified by 'DB_PASSWORD'; ## Enter the desired password.
@@ -63,12 +73,16 @@ grant alter system to whatap;
 
 ## DB user file creation {#create-db-user}
 
-{@include: ../common-items/_db-create-db-user-file.mdx} 
+import Dbcreatedbuserfile from "../common-items/_db-create-db-user-file.mdx";
 
-<!--## 에이전트 실행-->
+<Dbcreatedbuserfile />
 
-{@include: ../common-items/_db-run-agent.mdx} 
+{/*## 에이전트 실행*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-<!--## XOS 에이전트 설치-->
+<Dbrunagent />
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+{/*## XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent />

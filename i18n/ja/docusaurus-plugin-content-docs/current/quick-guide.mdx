@@ -9,31 +9,37 @@ WhaTapモニタリングサービスの概要ページです。 WhaTapモニタ�
 
 :::note
 
-WhaTapモニタリングサービスエージェントのインストールと利用に関する詳細については、左記の製品別の技術文書を参照してください。
+WhaTapモニタリングサービスエージェントのインストールと利用に関する詳細については、左記の製品別の技術文書を参照にしてください。
 
 :::
 
 ## クイックスタートのステップバイステップガイド
 
-* * *
+----
 
 ### ![](/img/number-01.png)WhaTap会員登録{#account}
 
-{@include: account/_create-account.mdx}   
+import Createaccount from "./account/_create-account.mdx";
 
-* * *
+<Createaccount />
+
+----
 
 ### ![](/img/number-02.png)プロジェクト作成{#cproject}
 
-{@include: getting-started/_create-project-intro-v2.mdx}
+import Createprojectintrov2 from "./getting-started/_create-project-intro-v2.mdx";
 
-* * *
+<Createprojectintrov2 />
+
+----
 
 ### ![](/img/number-03.png)プロジェクトアクセスキー確認{#accesskey}
 
-{@include: getting-started/_accesskey-intro.mdx} 
+import Accesskeyintro from "./getting-started/_accesskey-intro.mdx";
 
-* * *
+<Accesskeyintro />
+
+----
 
 ### ![](/img/number-04.png)エージェントインストール{#install}
 
@@ -58,7 +64,7 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 これから、WhaTapモニタリングサービスが開始されます。 
 
-ダウンロードおよび設定プロセスの詳細については、製品別のインストール手順のドキュメントを参照してください。 左側から製品別メニューを選択するか、次のショートカットを確認してください。
+ダウンロードおよび設定プロセスの詳細については、製品別のインストール手順のドキュメントを参照にしてください。 左側から製品別メニューを選択するか、次のショートカットを確認してください。
 
 <details>
 <summary>製品別の動作環境およびインストール手順のドキュメントへのショートカット</summary>
@@ -131,7 +137,7 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 :::
 
-* * *
+----
 
 ### ![](/img/number-05.png)ダッシュボード参照{#dashboard}
 
@@ -139,19 +145,19 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 - アプリケーションは、<Cmdname sid="app_dashboard" className="uitext" />と<Cmdname sid="transaction_map" className="uitext" />、<Cmdname sid="active_transaction" className="uitext" />、<Cmdname sid="application_topology" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
-  {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
+  <Videos url="https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4" />
 
 - サーバーは、<Cmdname sid="sms_resource_board" className="uitext" />と<Cmdname sid="sms_compound_eye" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
-  {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
+  <Videos url="https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4" />
 
 - データベースは、<Cmdname sid="instance_list" className="uitext" />と<Cmdname sid="instance_monitoring" className="uitext" />、<Cmdname sid="multi_instance_monitoring" className="uitext" />、<Cmdname sid="slow_query" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
-  {@video: https://img.whatap.io/23/11/06/031831DB_prd.mp4}
+  <Videos url="https://img.whatap.io/23/11/06/031831DB_prd.mp4" />
 
 - Kubernetesは、<Cmdname sid="containerMap" className="uitext" />の各ウィジェットを使用して、ノード、コンテナ、アプリケーション、ログ、イベント情報を動的に確認できます。
 
-  {@video: https://img.whatap.io/23/11/06/022318en_kubernetes_.mp4}
+  <Videos url="https://img.whatap.io/23/11/06/022318en_kubernetes_.mp4" />
 
 :::note
 
@@ -159,7 +165,7 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 :::
 
-* * *
+----
 
 ### ![](/img/number-06.png)外部データ収集{#collect}
 
@@ -168,11 +174,11 @@ TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張�
 - WhaTapプラグインをインストールすると、Telegrafで収集したデータをWhaTap収集サーバーに送信することができます。
 - WhaTap Focusをインストールして、ユーザーが独自のチェックスクリプトまたはデータベースクエリを実行して、収集された値をWhaTapプロジェクトにアップロードできます。
 
-* * *
+----
 
 ### ![](/img/ic-number-07.svg)通知設定{#notification}
 
-WhaTapモニタリングサービスは、収集されたすべての指標を使用して、しきい値ベースの通知設定が可能です。 <Cmdname sid="event_statistic" className="uitext" />メニューでは、イベントや受信設定及び過去の記録を確認することができます。 個人別に通知の受信設定が可能だけでなく、メール、SMS、メッセンジャーなどのさまざまな通知チャンネルを提供します。 
+WhaTapモニタリングサービスは、収集されたすべての指標を使用して、しきい値ベースの通知設定が可能です。 <Cmdname sid="event_statistic" className="uitext" />メニューでは、イベントや受信設定及び過去の履歴を確認できます。 個人別に通知の受信設定が可能だけでなく、メール、SMS、メッセンジャーなどのさまざまな通知チャンネルを提供します。 
 
 アラート設定の詳細については、次の記事を参照してください。 
 
@@ -206,19 +212,19 @@ WhaTapモニタリングサービスは、収集されたすべての指標を�
 
 </details>
 
-* * *
+----
 
 ### ![](/img/ic-number-08.svg)レポート参照{#report}
 
-レポートは、サービス利用状況とトラブルの発生記録を報告する文書であり、モニタリングデータ分析はサービス改善の方向性を決める指標になります。 WhaTapは、<Cmdname sid="report" className="uitext" />メニューからレポートを作成し、業務の自動化をサポートします。 個々のプロジェクト単位のレポートと複数のプロジェクト単位の統合レポートを提供します。
+レポートは、サービス利用状況とトラブルの発生履歴を報告する文書であり、モニタリングデータ分析はサービス改善の方向性を決める指標になります。 WhaTapは、<Cmdname sid="report" className="uitext" />メニューからレポートを作成し、業務の自動化をサポートします。 個々のプロジェクト単位のレポートと複数のプロジェクト単位の統合レポートを提供します。
 
 :::note
 
-レポートの詳細については、[次の文書](java/report-intro)を参照してください。 製品別のレポートの手順については、製品別の技術文書を参照してください。
+レポートの詳細については、[次の文書](java/report-intro)を参照してください。 製品別レポートの案内については、製品別の技術文書をご参考ください。
 
 :::
 
-* * *
+----
 
 ### ![](/img/ic-number-09.svg)メンバー管理{#member}
 
@@ -230,4 +236,4 @@ WhaTapモニタリングサービスは、収集されたすべての指標を�
 
 :::
 
-* * *
+----

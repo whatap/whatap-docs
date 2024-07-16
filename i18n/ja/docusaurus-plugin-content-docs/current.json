@@ -1087,10 +1087,6 @@
     "message": "分析",
     "description": "The label for category 분석 in sidebar kubeSidebar"
   },
-  "sidebar.kubeSidebar.category.알림 설정하기": {
-    "message": "アラートの設定",
-    "description": "The label for category 알림 설정하기 in sidebar kubeSidebar"
-  },
   "sidebar.kubeSidebar.doc.지원 환경": {
     "message": "サポート環境",
     "description": "The label for the doc item 지원 환경 in sidebar kubeSidebar, linking to the doc kubernetes/supported-spec"
@@ -1249,7 +1245,7 @@
   },
   "sidebar.indexSidebar.link.Open API": {
     "message": "Open API",
-    "description": "The label for link Open API in sidebar indexSidebar, linking to openapi"
+    "description": "The label for link Open API in sidebar indexSidebar, linking to openapi-spec"
   },
   "sidebar.openapiSidebar.category.Open API": {
     "message": "Open API",
@@ -1491,49 +1487,25 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar javaSidebar, linking to /java/trs-profile"
-  },
   "sidebar.phpSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar phpSidebar"
-  },
-  "sidebar.phpSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar phpSidebar, linking to /php/trs-profile"
   },
   "sidebar.nodejsSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar nodejsSidebar"
   },
-  "sidebar.nodejsSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar nodejsSidebar, linking to /nodejs/trs-profile"
-  },
   "sidebar.pySidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar pySidebar"
-  },
-  "sidebar.pySidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar pySidebar, linking to /python/trs-profile"
   },
   "sidebar.dotNetSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar dotNetSidebar, linking to /dotnet/trs-profile"
-  },
   "sidebar.goSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar goSidebar"
-  },
-  "sidebar.goSidebar.link.히트맵": {
-    "message": "ヒットマップ",
-    "description": "The label for link 히트맵 in sidebar goSidebar, linking to /golang/trs-profile"
   },
   "sidebar.npmsidebar.category.Network 성능 모니터링": {
     "message": "ネットワーク性能モニタリング",
@@ -1548,7 +1520,7 @@
     "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
   },
   "sidebar.postgreSidebar.category.에이전트 설치": {
-    "message": "エージェントインストール",
+    "message": "エージェントのインストール",
     "description": "The label for category 에이전트 설치 in sidebar postgreSidebar"
   },
   "sidebar.mysqlSidebar.category.경고 알림": {
@@ -1564,7 +1536,7 @@
     "description": "The label for category 경고 알림 in sidebar redisSidebar"
   },
   "sidebar.mongodbSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.분석": {
@@ -1606,5 +1578,65 @@
   "sidebar.kubeSidebar.doc.설정하기": {
     "message": "設定",
     "description": "The label for the doc item 설정하기 in sidebar kubeSidebar, linking to the doc kubernetes/set-agent"
+  },
+  "sidebar.releaseSidebar.category.Server AIX": {
+    "message": "Server AIX",
+    "description": "The label for category Server AIX in sidebar releaseSidebar"
+  },
+  "sidebar.releaseSidebar.category.NPM": {
+    "message": "NPM",
+    "description": "The label for category NPM in sidebar releaseSidebar"
+  },
+  "sidebar.kubeSidebar.category.경고 알림": {
+    "message": "アラート通知",
+    "description": "The label for category 경고 알림 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.인스턴스 성능 모니터링": {
+    "message": "インスタンス性能モニタリング",
+    "description": "The label for category 인스턴스 성능 모니터링 in sidebar kubeSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.9": {
+    "message": "v1.0.9",
+    "description": "The label for the doc item v1.0.9 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_9"
+  },
+  "sidebar.kubeSidebar.link.Java": {
+    "message": "Java",
+    "description": "The label for link Java in sidebar kubeSidebar, linking to ../java/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.Node.js": {
+    "message": "Node.js",
+    "description": "The label for link Node.js in sidebar kubeSidebar, linking to ../nodejs/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.Python": {
+    "message": "Python",
+    "description": "The label for link Python in sidebar kubeSidebar, linking to ../python/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.PHP": {
+    "message": "PHP",
+    "description": "The label for link PHP in sidebar kubeSidebar, linking to ../php/instance-performance-analysis"
+  },
+  "sidebar.kubeSidebar.link.Go": {
+    "message": "Go",
+    "description": "The label for link Go in sidebar kubeSidebar, linking to ../golang/instance-performance-analysis"
+  },
+  "sidebar.mysqlSidebar.category.에이전트 설치": {
+    "message": "エージェントのインストール",
+    "description": "The label for category 에이전트 설치 in sidebar mysqlSidebar"
+  },
+  "sidebar.indexSidebar.link.Feature Project": {
+    "message": "Feature Project",
+    "description": "The label for link Feature Project in sidebar indexSidebar, linking to features/introduction"
+  },
+  "sidebar.featuremonitorSidebar.category.Feature 프로젝트": {
+    "message": "Featureプロジェクト",
+    "description": "The label for category Feature 프로젝트 in sidebar featuremonitorSidebar"
+  },
+  "sidebar.dotNetSidebar.category.설치하기": {
+    "message": "インストール",
+    "description": "The label for category 설치하기 in sidebar dotNetSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.10": {
+    "message": "v1.0.10",
+    "description": "The label for the doc item v1.0.10 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_10"
   }
 }

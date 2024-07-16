@@ -14,73 +14,73 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
 **マルチトランザクションの活性化**
 
-マルチトランザクションを追跡するには**_管理_**>**_エージェント設定_**メニューから`mtrace_enabled`オプションを`true`に設定してください。エージェント設定の詳細については[次の文書](set-agent#set-agent-service)を参照してください。
+マルチトランザクションを追跡するには<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentSetting" className="uitext" />メニューから`mtrace_enabled`オプションを`true`に設定してください。エージェント設定の詳細については[次の文書](set-agent#set-agent-service)を参照してください。
 
 :::
 
-## マルチTX追跡{#trace-multi-tx}
+## マルチTX追跡 {#trace-multi-tx}
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_ヒットマップ_**メニューからチャート領域をドラッグします。ドラッグしたチャート領域のトランザクション情報は、次のように下部の**_TXトレース_**一覧に表示されます。一覧でマルチトランザクションを含むトランザクションは、![アイコン](/img/ic-s-mult-transation.svg)アイコンが表示されます。
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_hitmap" className="uitext" />メニューからチャート領域をドラッグします。ドラッグしたチャート領域のトランザクション情報は、次のように下部の<Cmdname sid="trace_list" className="uitext" />一覧に表示されます。一覧でマルチトランザクションを含むトランザクションは、![アイコン](/img/ic-s-mult-transation.svg)アイコンが表示されます。
 
 <ImgLang img='tx-trace-table.png' desc='mtrace_M' />
 
-該当のトレースを選択すると、**_トランザクション情報_**ウィンドウが表示されます。マルチトランザクションが追跡される場合は、**_レコード概要_**タブで**_マルチトランザクションID_**の値を確認できます。トランザクションで外部呼び出しを行うと、同じ**_マルチトランザクションID_**が生成されます。サービスごとにプロジェクトが分かれている場合でも、最初に発行した**_マルチトランザクションID_**を使用して、アプリケーション間のすべてのトランザクションを確認することができます。**_トランザクション情報_**ウィンドウを使用したTXトレースの詳細な分析に関する詳細は[次の文書](trs-profile#details)を参照してください。
+該当するトレースを選択すると、<Cmdname sid="TTL06527" className="uitext" />画面が表示されます。マルチトランザクションが追跡される場合、<Cmdname sid="TTL06125" className="uitext" />タブで<Cmdname sid="TTL06107" className="uitext" />値を確認できます。トランザクションから外部呼び出しを行う場合も、同様の<Cmdname sid="TTL06107" className="uitext" />が生成されます。サービス別にプロジェクトが分離されていても、最初に発行した<Cmdname sid="TTL06107" className="uitext" />を通じて、アプリケーション間のすべてのトランザクションを確認できます。<Cmdname sid="TTL06527" className="uitext" />画面でのトランザクショントレースの詳細ば分析の詳細については、[次の文書](trs-profile#details)を参照してください。
 
 <ImgLang img='tx-trace-dt-up.png' desc='レコード概要' />
 
-**_マルチトランザクションID_**を選択すると、**マルチトランザクション\***タブが表示されます。システム内またはシステム間で発生するさまざまな呼び出し関係を一目で確認でき、どのような問題が発生したかを識別して改善できるようにトランザクションとトレース情報を提供します。
+<Cmdname sid="TTL06107" className="uitext" />を選択すると、<Cmdname sid="TTL06377" className="uitext" />タブが表示されます。システム内またはシステム間で発生するさまざまな呼び出し関係を一目で確認でき、どのような問題が発生したかを識別して改善できるようにトランザクションとトレース情報を提供します。
 
-### チャート{#trace-multi-tx-chart}
+### チャート {#trace-multi-tx-chart}
 
 <ImgLang img='multi-tx-cht.png' desc='チャート' />
 
-**_マルチトランザクション追跡_**メニューの基本画面は**_チャート_**です。**_チャート_**は、各トランザクションの呼び出し関係を迅速かつ明確にユーザーに提供します。同じ**_マルチトランザクションID_**を持つトランザクションサービスを個別に実行時間を確認できます。トランザクションノードの背景色で表示され、費やされた所要時間(![数字1](/img/number-01.png)**_タイムバー_**)を使用して、トランザクション間の呼び出し関係を確認できます。**_チャート_**では、マウスを使用して目的の位置に移動したり、スクロールして拡大/縮小することができます。
+<Cmdname sid="TTL06377" className="uitext" />タブの基本画面は<Cmdname sid="BTN07120" className="uitext" />です。<Cmdname sid="BTN07120" className="uitext" />は、各トランザクションの呼び出し関係を迅速かつ明確にユーザに提供します。同じ<Cmdname sid="TTL06107" className="uitext" />を持つトランザクションサービスの個別の実行時間を確認できます。トランザクションノードの背景色で表現されている所要時間(![数字1](/img/number-01.png) <Cmdname sid="time_bar" className="uitext" />)を通じて、トランザクション間の呼び出し関係を確認できます。<Cmdname sid="BTN07120" className="uitext" />では、マウスを利用して希望の位置に移動したり、スクロールを通じて拡大と縮小することができます。
 
-- ![フィルターアイコン](/img/ico-filter.svg)**_プロジェクト選択_**:チャートに表示されるプロジェクトを選択または解除できます。
+- ![フィルターアイコン](/img/ico-filter.svg)<Cmdname sid="TLT06410" className="uitext" />：チャートに表示されるプロジェクトを選択または解除できます。
 
-- ![設定アイコン](/img/ico-setting.svg)**_チャートビュー設定_**:チャートに表示する要素を表示または非表示にすることができます。
+- ![設定アイコン](/img/ico-setting.svg)<Cmdname sid="TLT06411" className="uitext" />：チャートに表示するアイテムを表示または非表示します。
 
-  - **_タイムバー_**:各ノードで費やされた所要時間(**_タイムバー_**)を表示または非表示にすることができます。
+  - <Cmdname sid="time_bar" className="uitext" />：各ノードに所要時間(<Cmdname sid="time_bar" className="uitext" />)を表示または非表示します。
 
-  - **_アプリケーション名_**:各ノードにエージェント名(oname)を表示または非表示にすることができます。
+  - <Cmdname sid="application_name" className="uitext" />：各ノードにエージェント名(oname)を表示または非表示します。
 
-  - **_プロジェクト_**: 各ノードのプロジェクト名を表示または非表示にすることができます。
+  - <Cmdname sid="project" className="uitext" />：各ノードにプロジェクト名を表示または非表示します。
 
-  - **_データベース_**/**_外部呼び出し_**/**_内部呼び出し_**: トランザクションで発生した他のデータベースコネクションリクエストやHTTP Callの情報もチャートのノードで確認できます。
+  - <Cmdname sid="database" className="uitext" />／<Cmdname sid="apply_external_remote" className="uitext" />／<Cmdname sid="apply_internal_remote" className="uitext" />：トランザクションで発生した他のデータベースコネクションの要求やHTTP Callの情報もチャートのノードで確認できます。
 
-トランザクションノードを選択すると、次のように**_トランザクション情報_**ウィンドウが追加で表示されます。トランザクショントレースにより、そのトランザクションの詳細を確認できます。**_トランザクション情報_**ウィンドウを使用したトランザクショントレースの詳細な分析に関する詳細は、[次の文書](trs-profile#transaction-info)を参照してください。
+トランザクションノードを選択すると、次のように<Cmdname sid="TTL06527" className="uitext" />ウィンドウが追加で表示されます。トランザクショントレースにより、そのトランザクションの詳細を確認できます。<Cmdname sid="TTL06527" className="uitext" />ウィンドウを使用したトランザクショントレースの詳細な分析に関する詳細は、[次の文書](trs-profile#transaction-info)を参照してください。
 
 <ImgLang img='multi-tx-additional-info.png' desc='マルチトランザクションの詳細を見る' />
 
-### 表{#trace-multi-tx-table}
+### 表 {#trace-multi-tx-table}
 
-**_テーブル_**ボタンをクリックすると、テーブル形式でマルチトランザクション内に含まれる各トランザクションごとの情報を確認できます。
+<Cmdname sid="BTN07121" className="uitext" />ボタンをクリックすると、テーブル形式でマルチトランザクション内に含まれる各トランザクションごとの情報を確認できます。
 
 <ImgLang img='multi-tx-table-mode.png' desc='マルチトランザクションテーブルモード' />
 
-- ![フィルターアイコン](/img/ico-filter.svg)**_プロジェクト選択_**:チャートに表示されるプロジェクトを選択または解除できます。
+- ![フィルターアイコン](/img/ico-filter.svg)<Cmdname sid="TLT06410" className="uitext" />：チャートに表示されるプロジェクトを選択または解除できます。
 
-- ![カラムアイコン](/img/ic-column.svg)**_カラム設定_**: テーブル内のカラムを編集できます。 
+- ![カラムアイコン](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" />：テーブルのカラムを編集できます。 
 
-各トランザクション項目を選択すると、**_チャート_**ノード選択と同様に、選択したトランザクションの**_トランザクション情報_**ウィンドウが表示されます。トランザクショントレースにより、そのトランザクションの詳細を確認できます。**_トランザクション情報_** ウィンドウを使用したトランザクショントレースの詳細分析に関する詳しい内容は、[次の文書](trs-profile#transaction-info)を参照してください。
+各トランザクション項目を選択すると、<Cmdname sid="BTN07120" className="uitext" />タブでノードを選択するのと同様に、選択したトランザクションに対する<Cmdname sid="TTL06527" className="uitext" />画面が表示されます。トランザクショントレースにより、そのトランザクションの詳細を確認できます。<Cmdname sid="TTL06527" className="uitext" />画面を活用したトランザクショントレースの詳細な分析に関する詳細は、[次の文書](trs-profile#transaction-info)を参照してください。
 
-### ツリー{#trace-multi-tx-tree}
+### ツリー {#trace-multi-tx-tree}
 
-**_ツリー_**ボタンをクリックすると、各トランザクションとそれに属しているトレースの詳細を確認できます。トランザクションの所要時間内の各サブトランザクションまたはトレースの開始および所要時間を視覚化し、トランザクション呼び出し関係をツリー形式で提供します。 
+<Cmdname sid="BTN06296" className="uitext" />ボタンをクリックすると、各トランザクションとそれに属しているトレースの詳細を確認できます。トランザクションの所要時間内の各サブトランザクションまたはトレースの開始および所要時間を可視化し、トランザクション呼び出し関係をツリー形式で提供します。
 
 <ImgLang img='multi-tx-tree-mode.png' desc='マルチトランザクションツリーモード' />
 
-- ![フィルターアイコン](/img/ico-filter.svg)**_プロジェクト選択_**:チャートに表示されるプロジェクトを選択または解除できます。
+- ![フィルターアイコン](/img/ico-filter.svg)<Cmdname sid="TLT06410" className="uitext" />：チャートに表示されるプロジェクトを選択または解除できます。
 
-- ![インラインアイコン](/img/ic-single-line.svg)**_インライン_**: 各区間別の実行情報に表示されたテキストを一行で表示し、ツリー形式を間隔を置いて整理できます。
+- ![一行表示アイコン](/img/ic-single-line.svg) <Cmdname sid="BTN06368" className="uitext" />：各区間ごとの実行情報に表示されたテキストを一行で表示し、ツリー形式を簡潔にまとめられます。
 
-- ![複数行表示アイコン](/img/ic-multi-line.svg)**_複数行で表示_**: 各区間別の実行情報に表示されたテキストを改行してすべて表示します。
+- ![複数行表示アイコン](/img/ic-multi-line.svg) <Cmdname sid="BTN06369" className="uitext" />：各区間ごとの実行情報に表示されたテキストを改行してすべて表示します。
 
-- **_最長経路_**: 最長の経路で移動できます。
+- <Cmdname sid="BTN06327" className="uitext" />：最長の経路で移動できます。
 
-- ![チャートアイコン](/img/ic-bar-chart.svg)**_タイムバーの表示_**:経過時間を棒チャートで表示します。
+- ![チャートアイコン](/img/ic-bar-chart.svg) <Cmdname sid="BTN06743" className="uitext" />：経過時間を棒チャートで表示します。
 
-- ![時間アイコン](/img/ic-custom-time.svg)**_時間表示_**:各区間別のタイムスタンプ、ギャップ、経過時間をテキスト形式で表示します。
+- ![時間アイコン](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />：各区間別のタイムスタンプ、ギャップ、経過時間をテキスト形式で表示します。
 
   - 8秒以上：<span class='etrs'>超過した</span>状態で<span class='etrs'>赤色</span>で表現します。
 
@@ -94,10 +94,12 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
   :::
 
-- ![非表示アイコン](/img/ic-eye-invisible.svg)**_Hide Time_**:時間情報を非表示にします。
+- ![非表示アイコン](/img/ic-eye-invisible.svg) <Cmdname sid="BTN06745" className="uitext" />：時間情報を非表示にします。
 
 :::note
 
-トレースの![統計アイコン](/img/ic-static.svg)ボタンまたは![ポップアップアイコン](/img/ic-popup.svg)ボタンを選択すると**_HTTP呼び出し統計_**、**_アクティブスタック_**などの要約ウィンドウを確認できます。
+- 当該トレースの![統計アイコン](/img/ic-static.svg)ボタンまたは![ポップアップアイコン](/img/ic-popup.svg)ボタンを選択すると、<Cmdname sid="remote_http_call_statistics" className="uitext" />および<Cmdname sid="activestack" className="uitext" />、<UI>SQL</UI>などの詳細情報を確認できます。
+
+- SQLステップの![コピーアイコン](/img/ico-copy.svg)ボタンを選択すると、そのステップのSQL文をコピーできます。
 
 :::

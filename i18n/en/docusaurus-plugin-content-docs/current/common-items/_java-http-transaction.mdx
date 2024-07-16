@@ -1,7 +1,3 @@
-## HTTP transaction tracing
-
-{@include: ../common-items/_transaction-profile-http.mdx}
-
 - **trace_transaction_name_key** <span class='type'>String</span>
 
   If you set the HTTP request parameter value in the option, the parameter value is extracted and added to the end of the transaction name. 
@@ -12,8 +8,6 @@
   # example
   trace_transaction_name_key=paramKey
   ```
-
-{@include: ../common-items/_transaction-trace-common.mdx}
 
 - **recursive_max** <span class='type'>Int</span>
 
@@ -41,9 +35,21 @@
 
   It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
   It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
 
 - **ignore_http_method** <span class='type'>String</span>
 
@@ -58,3 +64,17 @@
   # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
   ignore_http_method=OPTIONS,HEAD
   ```
+
+  :::note
+
+  The HTTP methods registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
+- **trace_tx_name_with_method_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Statistical data can be collected using URL+method where the URL has been changed. You can check with URL+method in <Cmdname sid="side_statistics" className="uitext" /> or <Cmdname sid="side_txSearch" className="uitext" />.
+
+  > e.g. /api/user+GET, /api/user+POST

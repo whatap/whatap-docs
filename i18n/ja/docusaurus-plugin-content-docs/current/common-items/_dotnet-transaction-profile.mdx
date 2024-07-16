@@ -1,58 +1,6 @@
-- **profile_http_header_enabled** <span class='type'>Boolean</span>
-
-  デフォルト値`false`
-
-  トレース履歴にHTTPヘッダー情報を記録するには、`true`に設定します。
-
-- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
-
-  デフォルト値`false`
-
-  トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
-
-  :::note
-
-  セキュリティキーは、WASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイル内に6桁に設定します。 _paramkey.txt_ ファイルが存在しない場合、ランダムな値で自動的に生成されます。
-
-  :::
-
-- **profile_http_parameter_url_prefix** <span class='type'>String</span>
-
-  トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
-
-- **profile_http_host_enabled** <span class='type'>Boolean</span>
-
-  デフォルト値`false`
-
-  トランザクションのホスト情報を出力します。値が`false`の場合、トランザクションのURLにURIのみが表示され、`true`の場合/xxx.aaa.com/URLの形式で出力します。
-
-- **profile_http_body_enabled** <span class='type'>Boolean</span>
-
-  デフォルト値`false`
-
-  HTTP requestのbodyをトレース履歴に記録します。
-
-- **profile_http_body_url_prefix** <span class='type'>String</span>
-
-  トレース履歴にhttp body情報を記録する対象URLのprefixを定義するときに使用します。
-
-- **biz_exceptions** <span class='type'>String</span>
-
-  デフォルト値`Empty`
-
-  特定のErrorrまたはExceptionをBusiness Exceptionに設定します。 ヒットマップでは、エラーと表示されず、統計情報として収集します。 収集したError Class名と同じ名前を適用します。コンマ(,)を区切り文字として使用して、複数登録できます。
-
-- **ignore_exceptions** <span class='type'>String</span>
-
-  デフォルト値`NONE`
-
-  登録したExceptionのエラー自体を無視します。
-
-  Exceptionの場合、Custom Exception Classを定義しない場合は、既定の`Exception`として収集します。 特定のExceptionを区別するには、Custom Exception Classを定義し、その名前を設定することで、例外を除外します。
-
 - **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   トランザクションURLを解析および正規化する機能を有効にします。
 
@@ -64,7 +12,7 @@
 
 - **trace_normalize_urls** <span class='type'>String</span>
 
-  デフォルト値`NONE`
+  既定値`NONE`
 
   正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
 

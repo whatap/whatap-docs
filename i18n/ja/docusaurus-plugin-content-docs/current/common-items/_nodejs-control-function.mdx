@@ -1,24 +1,24 @@
 - **whatap.enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   機能のすべてを有効にします。ただし、`false`である場合、サーバーと最小限に通信を維持するために情報は送信されます。
 
 - **transaction_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
-  トランザクション追跡機能をアクティブにします。`whatap.enabled`オプションの値が`false`の場合は無視してください。
+  トランザクション追跡機能を有効にします。`whatap.enabled`オプションの値が`false`の場合は無効になります。
 
 - **counter_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   パフォーマンス カウンター(トランザクション、リソースなど) 追跡を有効にします。`whatap.enabled`オプションの値が`false`の場合は無視してください。
 
 - **stat_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値 `true`
+  既定値 `true`
 
   統計情報の追跡機能を活性化します。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。`whatap.enabled`オプションの値が`false`なら無視します。
 
@@ -28,7 +28,7 @@
 
 - **encrypt_level** <span class='type'>encrypt_level [1, 2, 3]</span>
 
-  デフォルト値`2`
+  既定値`2`
 
   WhaTapエージェントは、サーバーにデータを送信する際、データ属性に基づいて選択的に暗号化します。高いセキュリティを維持しながらも、パフォーマンス上の利点を持っています。データ タイプに関係なく、一括した暗号化ポリシーを適用するには、次のオプションを参照してください。
 
@@ -38,12 +38,12 @@
 
 - **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
 
-  デフォルト値`300000`
+  既定値`300000`
 
   リアルタイムにブラウザのユーザー数を測定する場合、同じユーザーとして認識される呼び出し間隔の最大値を設定します。
 
 - **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
 
-  デフォルト値`300000`
+  既定値`300000`
 
-  エージェントとサーバー間を同期する時間間隔を設定します。同期しない場合は、`0`に設定します。
+  エージェントとサーバー間で同期化する時間の間隔を設定します。同期しない場合は、`0`に設定します。

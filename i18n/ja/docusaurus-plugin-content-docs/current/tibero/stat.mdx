@@ -11,23 +11,23 @@ tags:
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-{@include: ../common-items/_db-sql-static.mdx}
+import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
 
-{@include: ../common-items/_db-trend-by-query.mdx}  
+<Dbsqlstatic />
 
-{@include: ../common-items/_db-detail-view-query.mdx} 
+import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
 
-### 詳細情報を確認する
+<Dbtrendbyquery />
 
-{@include: ../common-items/_db-stat-sql-details.mdx}
+import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
 
-<!-- mysql, mariadb 지원 -->
+<Dbdetailviewquery />
 
-<!-- {@include: ../common-items/_db-database-size.mdx} -->
+{/* mysql, mariadb 지원 */}
+{/* {@include: ../common-items/_db-database-size.mdx} */}
 
-<!-- oracle, tibero -->
-
-<!-- {@include: ../common-items/_db-tablespace-size.mdx}-->
+{/* oracle, tibero */}
+{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
 
 ## テーブルスペースサイズ
 
@@ -50,11 +50,13 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 - **_テーブルスペースの詳細_**
 
-  照会されたデータを表形式で提供します。設定した検索時間に基づいて開始時間と終了時間を比較し、データ使用量のサイズの変化を確認することができます。 
+  照会されたデータを表形式で提供します。設定した検索時間に基づいて開始時間と終了時間を比較し、データ使用量のサイズの変化を確認できます。 
 
   - テーブルスペースの詳細を確認するには、各項目の左側の![右方向アイコン](/img/right-arrow.svg)ボタンを選択します。
   - テーブルヘッダーで各項目を選択すると、選択した項目でテーブルを並べ替えることができます。
 
 ## SGAサイズ
 
-{@include: ../common-items/_db-sga-size.mdx}
+import Dbsgasize from "../common-items/_db-sga-size.mdx";
+
+<Dbsgasize />

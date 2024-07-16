@@ -1,0 +1,122 @@
+---
+id: collect-custom-events
+title: ユーザー定義イベントの収集
+description: ブラウザーモニタリングを通じてウェブサービスの問題点を把握し、ユーザー体験を改善するために、ウェブページで発生するイベントのうち、開発者と運営者が希望するイベントを追加で収集できるインターフェースを提供します。
+tags:
+  - Browserモニタリング
+  - エージェント
+  - ユーザー定義イベントの収集
+---
+
+ブラウザーのモニタリングによって収集される基本情報だけでは、ウェブサービスの問題点を把握し、ユーザー体験を改善することが難しい場合があります。 このような問題を解決するために、ウェブページで発生するイベントのうち、開発者と運営者が希望するイベントを追加で収集できるインターフェースを提供します。
+
+ブラウザーエージェントが提供するインターフェースで、次のイベントタイプを追加で収集できます。
+
+- デバッグ目的での特定関数の呼び出し情報
+- 売上に関するロジックの実行情報
+- 売上に直接影響を与えるボタンのクリック情報
+
+ユーザー定義イベントは、次のように活用できます。
+
+- **ユーザー体験の理解と改善**
+
+  特定のユーザーの行動や経路を追跡し、ユーザーがウェブページと相互作用する方法をより詳しく把握し、ユーザー体験を改善できます。 例えば、ウェブページで特定ボタンのクリックやページ間の切り替え速度を測定することで、ユーザー体験の問題を発見し解決できます。
+
+- **性能問題の識別と解決**
+
+  カスタム イベントを利用すると、特定の機能やコンポーネントの性能の問題を把握できます。 特定のタスクを実行する際にかかる時間を追跡し、関連の性能データを収集してボトルネックが発生する区間を把握できます。 このような性能の問題を解決することで、ウェブサービスの全般的な性能を改善できます。
+
+- **ビジネスインサイトの提供**
+
+  ウェブアプリケーションやウェブサイトでユーザーとの相互作用を理解することは、ビジネスの意思決定に重要な情報を提供します。 ユーザーが最も多く使用する機能が何か、ユーザーがウェブサービスでどんな経路を選ぶのかなどの情報を分析し、特定の機能開発やマーケティングの戦略に活用できます。
+
+- **カスタマイズされた通知と警告の生成**
+
+  特定のイベント条件の通知設定により、システムの異常状態や予期しないユーザーの行動をすばやく検出して対応できます。
+
+## 収集データの形式
+
+- `name`：イベントを代表する名前です。 乱数、製品番号などグループ化できない固有IDは含まない方がいいです。
+
+- `duration`：ページロードまたはページ切り替え後にイベントが発生した時点までの時間です。
+
+- `custom_duration`：ユーザーが定義したイベントの実行時間です。 開始時刻と終了時刻を直接指定して、特定のイベントが実行された時間を設定できます。
+
+- `contents`：ユーザーが定義したイベント処理結果に関する内容です。
+
+## コードの適用と収集方法
+
+ブラウザーエージェントが提供するインターフェースのうち`addCustomEvent`メソッドを使用して、ユーザー定義イベントをWhaTapに転送できます。
+
+### インタフェース
+
+ブラウザーエージェントが提供するインターフェースは、`window`の`WhatapBrowserAgent`オブジェクトに含まれています。 `WhatapBrowserAgent`で提供する`addCustomEvent`のインターフェースを参考にしてください。
+
+```tsx title='Typescript'
+addCustomEvent: (
+    eventName: string,
+    option: {
+      contents: string | undefined;
+      customDuration: number | undefined;
+    } | undefined,
+) => void;
+```
+
+### 適用例
+
+ブラウザーエージェントが提供するインターフェースを例示コードのように適用できます。
+
+```tsx title='Typescript'
+function PurchaseProduct(payload) {
+  const startTimestamp = new Date();
+
+  ...
+
+  const endTimestamp = new Date();
+
+  const duration = endTimestamp - startTimestamp;
+
+  window.WhatapBrowserAgent?.addCustomEvent('purchase product', {
+    contents: JSON.stringify(payload),
+    customDuration: duration,
+  });
+}
+```
+
+`PurchaseProduct`関数が動作すると、ユーザー定義イベントが指定した`name`値に転送されます。
+
+## 収集データの照会
+
+### ユーザーセッションログ検索メニューの利用
+
+1. ブラウザーモニタリングプロジェクトを選択し、<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_userSessionEventSearch" className="uitext" />メニューに移動します。
+
+2. <Cmdname sid="filter" className="uitext" />オプションで<code>type</code>タグを選択して'custom'を入力します。
+
+   <ImgLang img='collect-custom-events-example01.png' desc='フィルタ検索' />
+
+3. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+4. 照会された結果から`name`タグを追加で選択し、特定の値でフィルタリングできます。
+
+   <ImgLang img='collect-custom-events-example02.png' desc='フィルタ検索' />
+
+5. イベント発生までのユーザー行動を確認するには、照会された結果一覧の<Cmdname sid="TTL07736" className="uitext" />カラムで<Cmdname sid="analysis" className="uitext" />ボタンを選択します。
+
+   <ImgLang img='collect-custom-events-example03.png' desc='ユーザーセッション分析' />
+
+:::note
+
+ユーザーセッションの分析についての詳細は、次の文書を参照してください。
+
+:::
+
+### Flexボードからウィジェットで確認する
+
+ユーザー定義イベントのデータは、<Cmdname sid="side_flexboard" className="uitext" />メニューからウィジェットを作成して確認できます。
+
+<ImgLang img='browser-flexboard-custom-event-widget.png' desc='カスタムイベントウィジェット' />
+
+- **_カスタムイベントの件数_**：収集したユーザー定義イベントの推移を確認できます。
+
+- **_カスタムイベントのテーブル_**：収集したユーザー定義イベントの一覧を確認できます。

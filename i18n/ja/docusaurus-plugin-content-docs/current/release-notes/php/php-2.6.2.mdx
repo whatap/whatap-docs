@@ -28,13 +28,13 @@ pagination_next: release-notes/php/php-2_6_1
 
   - **whatap.large_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+    既定値`false`
 
     約1万件以下のプロファイル（ステップ）情報を収集できます。 より多くの量を収集する場合、`split_profile_enabled`オプションとして使用することをお勧めします。
 
   - **whatap.split_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+    既定値`false`
 
     一定量のプロファイルを仮想トランザクションに分離して、より多くのプロファイル情報を収集します。 複数のトランザクション一覧に分割表記します。
 
@@ -48,15 +48,13 @@ pagination_next: release-notes/php/php-2_6_1
 
 - <Status>Feature</Status>プロファイル データ圧縮転送オプションの追加
 
-  - **whatap.profile_zip_enabled** <span class='type'>Boolean</span> デフォルト値`true`
+  - **whatap.profile_zip_enabled** <span class='type'>Boolean</span> 既定値`true`
 
   :::note 
 
   - 上記のオプションに関連するエージェント設定の詳細は、[次の文書](../../php/agent-transaction#php-trs-trc)を参照してください。
 
   :::
-
-<!---->
 
 - <Status>Changed</Status>特定のHTTP Method収集を除く機能を、すべてのトランザクション対象に変更
 

@@ -14,19 +14,27 @@ import TR from '@site/src/components/TR';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## エージェントダウンロード
 
-{@include: ../common-items/_db-install-agent-steps.mdx}  
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
-3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+<Dbinstallagentsteps />
+
+3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -48,13 +56,14 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
    :::
 
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードしてください。_/圧縮を解凍したフォルダ/jdbc_
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
+   データベースサーバーのOSとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
 
-<!-- 공통 Notes-->
+{/* 공통 Notes*/}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+<Dbinstallagentcommonnotes />
 
 ## モニタリングのアカウントを作成
 
@@ -62,9 +71,9 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-データベース接続用に暗号化されたUIDを生成します。ユーザーファイルは、ユーザーDB(`dba`)とCUBRID Manager(`admin`)の両方に対して実行する必要があります。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行してください。 
+データベース接続用に暗号化されたUIDを生成します。ユーザーファイルは、ユーザーDB(`dba`)とCUBRID Manager(`admin`)の両方に対して実行する必要があります。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行します。 
 
-- _uid.sh_シェルスクリプトファイル(または_uid.bat_配置ファイル)は、WhaTapデータベースエージェントをインストールしたパスで見ることができます。
+- *uid.sh*シェルスクリプトファイル(または*uid.bat*配置ファイル)は、WhaTapデータベースエージェントをインストールしたパスにあります。
 
 - `dba`と`DB_PASSWORD`は、会員登録で使用したユーザー名とパスワードです。
 
@@ -80,9 +89,9 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
 :::note
 
-- 最初に設定すると、暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
-- DBユーザーファイルを生成するには、プロジェクトアクセスキーを_whatap.conf_ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
-- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力する必要があります。
+- 最初1回の設定で暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
+- DBユーザーファイルを生成するには、プロジェクトアクセスキーを*whatap.conf*ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
+- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力してください。
 - `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character(\\)を入力してください。
 
   ```bash title='Example'
@@ -94,10 +103,12 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
 :::
 
-<!--## 에이전트 실행-->
+{/*## 에이전트 실행*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-{@include: ../common-items/_db-run-agent.mdx} 
+<Dbrunagent />
 
-<!--## XOS 에이전트 설치-->
+{/*## XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+<Dbinstallxosagent />

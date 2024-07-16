@@ -1,0 +1,62 @@
+---
+id: java-2_2_31
+title: Java Agent v2.2.31
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_30
+displayed_sidebar: releaseSidebar
+---
+
+2024年04月03日
+
+- <Status>Feature</Status> spring-boot-2.7.xでkafka-batchを追跡
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-2.7
+  ```
+
+- <Status>Feature</Status> JDBCドライバーでSqlExceptionが発生した場合、追跡有無の設定オプションを追加
+
+  オプション値を`false`に設定すると、ユーザー定義の例外処理により`biz_exceptions`処理できます。
+
+  ```ini title="whatap.conf"
+  # default: true
+  trace_sql_exception_enabled=true
+  ```
+
+- <Status>Feature</Status> URL + HTTP method設定オプションを追加
+
+  - 例、/api/user+GET、/api/user+POST
+  - <Cmdname sid="side_statistics" className="uitext" />または<Cmdname sid="side_txSearch" className="uitext" />メニューでURL methodで確認可能
+  - 統計データでURL変更したURL methodで収集
+
+  ```ini title="whatap.conf"
+  # default: false
+  trace_tx_name_with_method_enabled=false
+  ```
+
+- <Status>Feature</Status> oshi-core-6.1.6にアップデート
+
+- <Status>Feature</Status>Javaエージェントでnetstat指標を収集、Maximum Transmission Unit(MTU) 指標を追加
+
+  ```ini title="whatap.conf"
+  # default: false
+  oshi_enabled=false
+
+  # default: false
+  oshi_netstat_enabled=false
+  ```
+
+- <Status>Changed</Status> <code>trace_basetime</code>または<code>profile_basetime</code>オプションと関係なくエラーのある詳細トレースを基本収集するよう修正
+
+  ```ini title="whatap.conf"
+  # default: false -> true
+  trace_concern_error_enabled=true
+  ```
+
+- <Status>Changed</Status> oshiの配布ディレクトリをlib4からlib5にアップデート
+
+- <Status>Fixed</Status> oshi、sigarライブラリ適用時のエージェントログの誤字を修正
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.31" />

@@ -1,30 +1,82 @@
 ---
 id: agent-transaction
 title: Transactions
-description: The agent traces the transaction performance and provides the following configurable options.
+description: The following explains how to set an agent to trace and analyze performance data for each transaction within Java applications. It evaluates the application performance by tracing transaction requests, response time, and resource usage.
 tags:
   - Java
+  - Application
   - Transaction
   - Transactions
+  - Agent
 ---
 
-{@include: ../common-items/_transaction.mdx}
+import Transaction from "../common-items/_transaction.mdx";
+
+<Transaction />
 
 ## Transaction Tracing
 
-{@include: ../common-items/_transaction-profiling-common.mdx} 
+The following agent options allow you to trace the execution paths of each transaction within applications in detail. You can adjust various aspects, from the minimum response time to the number of execution steps for transactions.
 
-{@include: ../common-items/_java-transaction-profiling.mdx}
+import Transactionprofilingcommon from "../common-items/_transaction-profiling-common.mdx";
 
-{@include: ../common-items/_java-http-transaction.mdx}
+<Transactionprofilingcommon />
 
-{@include: ../common-items/_java-non-http-transaction.mdx}
+import Javatransactionprofiling from "../common-items/_java-transaction-profiling.mdx";
 
-{@include: ../common-items/_java-trace-transaction.mdx} 
+<Javatransactionprofiling />
+
+## Exceptional handling {#exception}
+
+The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
+
+:::note
+
+For more information about the Java agent's exception handling criteria, see [the following](trs-view#java-agent-exception).
+
+:::
+
+import JavaException from "../common-items/_java-exception-options.mdx";
+
+<JavaException />
+
+## HTTP transaction tracing
+
+The following agent options trace and record various data related to HTTP requests and responses. This allows you to closely monitor and analyze the HTTP transactions for applications. You can add parameter values ​​to the transaction names or exclude specific URLs or HTTP methods. You can also record transactions in detail, including HTTP headers and parameters.
+
+import Transactiontracecommon from "../common-items/_transaction-trace-common.mdx";
+
+<Transactiontracecommon />
+
+import Transactionprofilehttp from "../common-items/_transaction-profile-http.mdx";
+
+<Transactionprofilehttp />
+
+import Javahttptransaction from "../common-items/_java-http-transaction.mdx";
+
+<Javahttptransaction />
+
+## Non-HTTP transaction tracing
+
+The following options are used to trace and monitor non-HTTP transactions: These options allow you to closely trace background tasks or transactions for other protocols.
+
+import Javanonhttptransaction from "../common-items/_java-non-http-transaction.mdx";
+
+<Javanonhttptransaction />
+
+## Multiple transaction trace
+
+The following options are used to trace and monitor cross-application calls. The options can help you understand the interactions between multiple applications. Various options provided allow you to fine-tune the behaviors for tracing multiple transactions.
+
+import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
+
+<Javatracetransaction />
 
 ## Trace data sampling
 
-<code class="my">Java Agent v2.2.4 or later</code>
+The following options are used to control sampling of trace data and set whether to transmit data. The options allow you to manage the performance and data transfer volume for applications.
+
+Agent support scope: <code class="my">Java Agent v2.2.4 or later</code>
 
 - **trace_sampling_enabled** <span class='api'>Boolean</span>
 
@@ -52,32 +104,34 @@ tags:
 
 ## Modifying the trace URL name
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>string</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-You can modify the name of the trace URL when calling a specific URL or method. For example, if the `test100000()` method is called while calling a URL registered in `io.home.test.TestController.test1`, you can see it as `/api/100000+test1+test100000` on the service screen.
+  You can modify the name of the trace URL when calling a specific URL or method. For example, if the `test100000()` method is called while calling a URL registered in `io.home.test.TestController.test1`, you can see it as `/api/100000+test1+test100000` on the service screen.
 
-The `hook_tx_name_mode` option allows you to select one of **class**, **method**, **string**, and **return**.
+  The `hook_tx_name_mode` option allows you to select one of **class**, **method**, **string**, and **return**.
 
-```ini title="whatap.conf"
-# The full path of the call method and wildcard (*) can be used.
-hook_tx_name_patterns=ab.cd.ef.GH.ij
+  ```ini title="whatap.conf"
+  # The full path of the call method and wildcard (*) can be used.
+  hook_tx_name_patterns=ab.cd.ef.GH.ij
 
-# Select one of class, method, string, and return.
-hook_tx_name_mode=method
-```
+  # Select one of class, method, string, and return.
+  hook_tx_name_mode=method
+  ```
 
 ## Ignoring a specific exception
 
-<code class="my">Java Agent v2.2.4 or later</code>
+- **ignore_exception_tx_pattern** <span class='type'>String</span> <code class="my">Java Agent v2.2.4 or later</code>
 
-You can configure a service to ignore specific exceptions. When registering multiple items, use a comma (,) as the delimiter.
+  You can configure a service to ignore specific exceptions. When registering multiple items, use a comma (,) as the delimiter.
 
-```ini title="whatap.conf"
-ignore_exception_tx_pattern=exception:service_url
-# e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
-```
+  ```ini title="whatap.conf"
+  ignore_exception_tx_pattern=exception:service_url
+  # e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+  ```
 
 ## Tracing HttpURLConnection
+
+The following options are used to trace HTTP calls by using the `HttpURLConnection` class.
 
 - **HttpURLConnection** <span class='type'>Boolean</span>
 

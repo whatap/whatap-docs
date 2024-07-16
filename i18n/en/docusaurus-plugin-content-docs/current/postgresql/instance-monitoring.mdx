@@ -1,84 +1,119 @@
 ---
 id: instance-monitoring
-title: Instance Monitoring
-description: In the instance monitoring menu, you can check the information details on key metrics of the database server in real time.
+title: Monitoring a Database Instance
+description: In the instance monitoring menu, you can check the information details on key metrics of the PostgreSQL database server in real time.
 tags:
   - PostgreSQL
   - Instance
   - Dashboard
-  - Database Monitoring
+  - Database
 ---
 
-{@include: ../common-items/_db-instance-monitoring-desc.mdx}
+import Dbinstancemonitoringdesc from "../common-items/_db-instance-monitoring-desc.mdx";
+
+<Dbinstancemonitoringdesc />
 
 ## Basic screen guide
 
 <ProdImg img='db-instance-monitoring.png' desc='Instance Monitoring' />
 
-<!--조회시간 및 대상 선택하기-->
+{/*조회시간 및 대상 선택하기*/}
+import Dbv2instancemonitoringselect from "../common-items/_db-v2-instance-monitoring-select.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-select.mdx}
+<Dbv2instancemonitoringselect />
 
-<!--그래프 차트 위젯 영역-->
+{/*그래프 차트 위젯 영역*/}
+import Dbv2instancemonitoringwidget from "../common-items/_db-v2-instance-monitoring-widget.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-widget.mdx} 
+<Dbv2instancemonitoringwidget />
 
-<!--액티브 세션 락트리 프로세스정보-->
+{/*액티브 세션 락트리 프로세스정보*/}
+import Dbv2instancemonitoringactivesessiondesc from "../common-items/_db-v2-instance-monitoring-activesession-desc.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-activesession-desc.mdx}
+<Dbv2instancemonitoringactivesessiondesc />
 
-{@include: ../common-items/_db-dashboard-activesession-desc.mdx} 
+import Dbdashboardactivesessiondesc from "../common-items/_db-dashboard-activesession-desc.mdx";
 
-{@include: ../common-items/_db-dashboard-locktree-desc.mdx}
+<Dbdashboardactivesessiondesc />
 
-{@include: ../common-items/_db-dashborad-process-info-desc.mdx}
+import Dbdashboardlocktreedesc from "../common-items/_db-dashboard-locktree-desc.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-activesession-note.mdx}
+<Dbdashboardlocktreedesc />
 
-<!--지표 선택하기-->
+import Dbdashboradprocessinfodesc from "../common-items/_db-dashborad-process-info-desc.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-select-metrics.mdx}
+<Dbdashboradprocessinfodesc />
 
-<!--###지표 추가하기-->
+import Dbv2instancemonitoringactivesessionnote from "../common-items/_db-v2-instance-monitoring-activesession-note.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-add-metrics.mdx} 
+<Dbv2instancemonitoringactivesessionnote />
 
-<!--###지표 변경하기-->
+{/*지표 선택하기*/}
+import Dbv2instancemonitoringselectmetrics from "../common-items/_db-v2-instance-monitoring-select-metrics.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-change-merics.mdx}
+<Dbv2instancemonitoringselectmetrics />
 
-<!--###지표 삭제하기-->
+{/*###지표 추가하기*/}
+import Dbv2instancemonitoringaddmetrics from "../common-items/_db-v2-instance-monitoring-add-metrics.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-delete-metrics.mdx}
+<Dbv2instancemonitoringaddmetrics />
 
-<!--## 프리셋-->
+{/*###지표 변경하기*/}
+import Dbv2instancemonitoringchangemerics from "../common-items/_db-v2-instance-monitoring-change-merics.mdx";
 
-{@include: ../common-items/_db-v2-instance-monitoring-preset.mdx}
+<Dbv2instancemonitoringchangemerics />
 
-<!--## 액티브 세션 영역 활용-->
+{/*###지표 삭제하기*/}
+import Dbv2instancemonitoringdeletemetrics from "../common-items/_db-v2-instance-monitoring-delete-metrics.mdx";
 
-{@include: ../common-items/_db-using-area-active-session.mdx}
+<Dbv2instancemonitoringdeletemetrics />
 
-{@include: ../common-items/_db-instance2sqlstatic.mdx} 
+{/*## 프리셋*/}
+import Dbv2instancemonitoringpreset from "../common-items/_db-v2-instance-monitoring-preset.mdx";
+
+<Dbv2instancemonitoringpreset />
+
+{/*## 액티브 세션 영역 활용*/}
+import Dbusingareaactivesession from "../common-items/_db-using-area-active-session.mdx";
+
+<Dbusingareaactivesession />
+
+import Dbinstance2sqlstatic from "../common-items/_db-instance2sqlstatic.mdx";
+
+<Dbinstance2sqlstatic />
+
+{/*## 세션 상세 정보 확인하기*/}
+import Dbv2sessiondetailsinfo from "../common-items/_db-v2-session-details-info.mdx";
+
+<Dbv2sessiondetailsinfo />
+
+{/*쿼리 자세히 보기*/}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
+
+{/*세션 중지하기*/}
+import Dbv2instancemonitoringkiilsession from "../common-items/_db-v2-instance-monitoring-kiil-session.mdx";
+
+<Dbv2instancemonitoringkiilsession />
+
+import Dbfoldingactivesessiontable from "../common-items/_db-folding-activesession-table.mdx";
+
+<Dbfoldingactivesessiontable />
 
 ### Configuring the table columns{#change-column}
 
-{@include: ../common-items/_db-v2-data-edit-column.mdx}
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn />
 
 ### Filtering the table data
 
-{@include: ../common-items/_db-table-data-filtering.mdx} 
+import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
 
-<!--세션 중지하기-->
+<Dbtabledatafiltering />
 
-{@include: ../common-items/_db-v2-instance-monitoring-kiil-session.mdx} 
+{/*컬럼 정보 안내*/}
+import Postgresqlcolumn from "../common-items/_db_postgresql-column.mdx";
 
-{@include: ../common-items/_db-folding-activesession-table.mdx}
-
-<!--쿼리 자세히 보기-->
-
-{@include: ../common-items/_db-query-details.mdx} 
-
-<!--컬럼 정보 안내-->
-
-{@include: ../common-items/_db_postgresql-column.mdx} 
+<Postgresqlcolumn />

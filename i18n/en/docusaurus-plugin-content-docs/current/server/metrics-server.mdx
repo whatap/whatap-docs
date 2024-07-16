@@ -7,96 +7,98 @@ tags:
   - Metrics
 ---
 
-<!-- 
+{/* 
 
-{@include: ../common-items/_metrics-index.mdx} 
+import Metricsindex from "../common-items/_metrics-index.mdx";
 
--->
+<Metricsindex />
+
+*/}
 
 It guides you to the server monitoring metrics.
 
 ## server_base
 
-* * *
+----
 
 It is the metric for server resources.
 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_base-tags}
 
-| Tag name  | Description                | Remarks |
-| --------- | -------------------------- | ------- |
-| cpu_cores | Number of server cores     | -       |
-| host_ip   | Server IP                  | -       |
-| oname     | Server name                | -       |
-| okindName | Server type name           | -       |
+| Tag name  | Description                                   | Remarks |
+| --------- | --------------------------------------------- | ------- |
+| cpu_cores | Number of server cores                        | -       |
+| host_ip   | Server IP                                     | -       |
+| oname     | Server name                                   | -       |
+| okindName | Server type name                              | -       |
 | os        | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_base-fields}
 
-| Field name           | Unit            | Description                                  | Remarks |
-| -------------------- | --------------- | -------------------------------------------- | ------- |
-| cpu                  | Percentage      | All CPU utilization                          | Common  |
-| cpu_c1               | Percent         | CPU c1 state utilization                     | Windows |
-| cpu_c2               | Percent         | CPU c2 state utilization                     | Windows |
-| cpu_c3               | Percent         | CPU c3 state utilization                     | Windows |
-| cpu_ctxt             | Prime number    | Context switching utilization                | Linux   |
-| cpu_dpc              | Percent         | CPU DPC time percentage                      | Windows |
-| cpu_idle             | Percent         | CPU idle rate                                | Common  |
-| cpu_interrupt        | Percent         | cpu interrupt                                | Linux   |
-| cpu_iowait           | Percent         | CPU iowait rate                              | Linux   |
-| cpu_irq              | Percent         | CPU IRQ utilization                          | Linux   |
-| cpu_load1            | Prime number    | Load average for 1 minute                    | Linux   |
-| cpu_load5            | Prime number    | Load average for 5 minutes                   | Linux   |
-| cpu_load15           | Prime number    | Load average for 15 minutes                  | Linux   |
-| cpu_new_procs_forked | Positive number | OS process fork call                         | Linux   |
-| cpu_procs_blocked    | Positive number | Process blocked state count                  | Linux   |
-| cpu_procs_running    | Positive number | Process running state count                  | Linux   |
-| cpu_softirq          | Percent         | CPU softirq utilization                      | Linux   |
-| cpu_steal            | Percent         | CPU steal utilization                        | Linux   |
-| cpu_sys              | Percent         | CPU system utilization                       | Common  |
-| cpu_usr              | Percent         | CPU user utilization                         | Common  |
-| epochtime            | Positive number | Epoch time in which the metric was collected | Common  |
-| memory_available     | Byte            | Available memory size                        | Common  |
-| memory_buffers       | Byte            | Memory buffer size                           | Linux   |
-| memory_cached        | Byte            | Memory cache size                            | Common  |
-| memory_free          | Byte            | Free memory size                             | Common  |
-| memory_pageFaults    | Positive number | Memory page fault count                      | Common  |
-| memory_pavailble     | Percent         | Available memory utilization                 | Common  |
-| memory_pused         | Percent         | Memory utilization                           | Common  |
-| memory_shared        | Byte            | Shared memory size                           | Linux   |
-| memory_slab          | Byte            | Slab memory size                             | Linux   |
-| memory_sreclaimable  | Byte            | Slab reclaimable memory size                 | Linux   |
-| memory_sunreclaim    | Byte            | Slab claimable memory size                   | Linux   |
-| memory_swappused     | Percent         | Swap utilization                             | Common  |
-| memory_swaptotal     | Byte            | Total swap size                              | Common  |
-| memory_swapused      | Byte            | Swap usage                                   | Common  |
-| memory_total         | Byte            | Total memory size                            | Common  |
-| memory_used          | Byte            | Memory usage                                 | Common  |
-| processorQueueLength | Positive number | Process queue length                         | Windows |
-| uptime               | Positive number | Server uptime after a boot (TimeStamp)       | Common  |
+| Field name           | Unit            | Description                                               | Remarks |
+| -------------------- | --------------- | --------------------------------------------------------- | ------- |
+| cpu                  | Percentage      | All CPU utilization                                       | Common  |
+| cpu_c1               | Percent         | CPU c1 state utilization                                  | Windows |
+| cpu_c2               | Percent         | CPU c2 state utilization                                  | Windows |
+| cpu_c3               | Percent         | CPU c3 state utilization                                  | Windows |
+| cpu_ctxt             | Prime number    | Context switching utilization                             | Linux   |
+| cpu_dpc              | Percent         | CPU DPC time percentage                                   | Windows |
+| cpu_idle             | Percent         | CPU idle rate                                             | Common  |
+| cpu_interrupt        | Percent         | cpu interrupt                                             | Linux   |
+| cpu_iowait           | Percent         | CPU iowait rate                                           | Linux   |
+| cpu_irq              | Percent         | CPU IRQ utilization                                       | Linux   |
+| cpu_load1            | Prime number    | Load average for 1 minute                                 | Linux   |
+| cpu_load5            | Prime number    | Load average for 5 minutes                                | Linux   |
+| cpu_load15           | Prime number    | Load average for 15 minutes                               | Linux   |
+| cpu_new_procs_forked | Positive number | OS process fork call                                      | Linux   |
+| cpu_procs_blocked    | Positive number | Process blocked state count                               | Linux   |
+| cpu_procs_running    | Positive number | Process running state count                               | Linux   |
+| cpu_softirq          | Percent         | CPU softirq utilization                                   | Linux   |
+| cpu_steal            | Percent         | CPU steal utilization                                     | Linux   |
+| cpu_sys              | Percent         | CPU system utilization                                    | Common  |
+| cpu_usr              | Percent         | CPU user utilization                                      | Common  |
+| epochtime            | Positive number | Epoch time in which the metric was collected              | Common  |
+| memory_available     | Byte            | Available memory size                                     | Common  |
+| memory_buffers       | Byte            | Memory buffer size                                        | Linux   |
+| memory_cached        | Byte            | Memory cache size                                         | Common  |
+| memory_free          | Byte            | Free memory size                                          | Common  |
+| memory_pageFaults    | Positive number | Memory page fault count                                   | Common  |
+| memory_pavailble     | Percent         | Available memory utilization                              | Common  |
+| memory_pused         | Percent         | Memory utilization                                        | Common  |
+| memory_shared        | Byte            | Shared memory size                                        | Linux   |
+| memory_slab          | Byte            | Slab memory size                                          | Linux   |
+| memory_sreclaimable  | Byte            | Slab reclaimable memory size                              | Linux   |
+| memory_sunreclaim    | Byte            | Slab claimable memory size                                | Linux   |
+| memory_swappused     | Percent         | Swap utilization                                          | Common  |
+| memory_swaptotal     | Byte            | Total swap size                                           | Common  |
+| memory_swapused      | Byte            | Swap usage                                                | Common  |
+| memory_total         | Byte            | Total memory size                                         | Common  |
+| memory_used          | Byte            | Memory usage                                              | Common  |
+| processorQueueLength | Positive number | Process queue length                                      | Windows |
+| uptime               | Positive number | Server uptime after a boot (TimeStamp) | Common  |
 
 ## server_cpu_core
 
-* * *
+----
 
 Metrics for each server CPU core
 
 - Collection interval: 5 seconds
 - Statistical data: -
 
-#### Tags
+#### Tags {#server_cpu_core-tags}
 
-| Tag name | Description                | Remarks |
-| -------- | -------------------------- | ------- |
-| cpu      | Server core number         | -       |
-| ip       | Server IP                  | -       |
-| oname    | Server name                | -       |
+| Tag name | Description                                   | Remarks |
+| -------- | --------------------------------------------- | ------- |
+| cpu      | Server core number                            | -       |
+| ip       | Server IP                                     | -       |
+| oname    | Server name                                   | -       |
 | os       | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_cpu_core-fields}
 
 | Field name           | Unit            | Description                      | Remarks |
 | -------------------- | --------------- | -------------------------------- | ------- |
@@ -115,26 +117,26 @@ Metrics for each server CPU core
 
 ## server_disk
 
-* * *
+----
 
 It has metrics for each file system mounted on each server.
 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_disk-tags}
 
-| Tag name       | Description                    | Remarks |
-| -------------- | ------------------------------ | ------- |
-| deviceId       | Device ID                      | -       |
-| deviceIdHash   | Device ID hash value           | -       |
-| fileSystem     | File system type               | -       |
-| mountPoint     | File system's mount point      | -       |
-| mountPointHash | File system's mount point hash | -       |
-| oname          | Server name                    | -       |
-| os             | OS type (Linux or Windows)     | -       |
+| Tag name       | Description                                   | Remarks |
+| -------------- | --------------------------------------------- | ------- |
+| deviceId       | Device ID                                     | -       |
+| deviceIdHash   | Device ID hash value                          | -       |
+| fileSystem     | File system type                              | -       |
+| mountPoint     | File system's mount point                     | -       |
+| mountPointHash | File system's mount point hash                | -       |
+| oname          | Server name                                   | -       |
+| os             | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_disk-fields}
 
 | Field name       | Unit            | Description                                                             | Remarks |
 | ---------------- | --------------- | ----------------------------------------------------------------------- | ------- |
@@ -158,25 +160,25 @@ It has metrics for each file system mounted on each server.
 
 ## server_network
 
-* * *
+----
 
 Network interface metrics for each server
 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_network-tags}
 
-| Tag name | Description                    | Remarks |
-| -------- | ------------------------------ | ------- |
-| desc     | Network interface name         | -       |
-| descHash | Network interface's hash value | -       |
-| hwAddr   | MAC address                    | -       |
-| ip       | Interface IP address           | -       |
-| oname    | Server name                    | -       |
-| os       | OS type (Linux or Windows)     | -       |
+| Tag name | Description                                   | Remarks |
+| -------- | --------------------------------------------- | ------- |
+| desc     | Network interface name                        | -       |
+| descHash | Network interface's hash value                | -       |
+| hwAddr   | MAC address                                   | -       |
+| ip       | Interface IP address                          | -       |
+| oname    | Server name                                   | -       |
+| os       | OS type (Linux or Windows) | -       |
 
-#### Fields
+#### Fields {#server_network-fields}
 
 | Field name     | Unit            | Description      | Remarks |
 | -------------- | --------------- | ---------------- | ------- |
@@ -195,33 +197,33 @@ Network interface metrics for each server
 
 ## server_netstat
 
-* * *
+----
 
 It provides the network protocol statistics for each server.
 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+#### Tags {#server_netstat-tags}
 
-| Tag name                        | Description                     | Remarks |
-| ------------------------------- | ------------------------------- | ------- |
-| oname                           | Server name                     | -       |
-| os_arch                         | OS architecture name            | -       |
-| os_cpucore                      | Number of server CPU cores      | -       |
-| os_cpusocket                    | Number of server CPU sockets    | -       |
-| os_cpuvendor                    | Server CPU's vendor name        | -       |
-| os_ip                           | Server IP                       | -       |
-| os_memory                       | Server memory size              | -       |
+| Tag name                                           | Description                     | Remarks |
+| -------------------------------------------------- | ------------------------------- | ------- |
+| oname                                              | Server name                     | -       |
+| os_arch                                            | OS architecture name            | -       |
+| os_cpucore                                         | Number of server CPU cores      | -       |
+| os_cpusocket                                       | Number of server CPU sockets    | -       |
+| os_cpuvendor                                       | Server CPU's vendor name        | -       |
+| os_ip                                              | Server IP                       | -       |
+| os_memory                                          | Server memory size              | -       |
 | OS name type (Linux or Windows) | -                               |         |
-| os_public_ip                    | Public server IP                | -       |
-| os_release                      | Server OS release name          | -       |
-| whatap_build                    | WhaTap agent's build hash value | -       |
-| whatap_home                     | Path of the WhaTap agent Home   | -       |
-| whatap_product                  | WhaTap product type             | -       |
-| whatap_version                  | WhaTap agent version            | -       |
+| os_public_ip                                       | Public server IP                | -       |
+| os_release                                         | Server OS release name          | -       |
+| whatap_build                                       | WhaTap agent's build hash value | -       |
+| whatap_home                                        | Path of the WhaTap agent Home   | -       |
+| whatap_product                                     | WhaTap product type             | -       |
+| whatap_version                                     | WhaTap agent version            | -       |
 
-#### Fields
+#### Fields {#server_netstat-fields}
 
 | Field name             | Unit            | Description                        | Remarks |
 | ---------------------- | --------------- | ---------------------------------- | ------- |
@@ -240,14 +242,14 @@ It provides the network protocol statistics for each server.
 
 ## server_process
 
-* * *
+----
 
 It has the server process information.
 
 - Collection interval: 20 seconds
 - Statistical data: 5 minutes
 
-#### Tags
+#### Tags {#server_process-tags}
 
 | Tag name | Description                     | Remarks |
 | -------- | ------------------------------- | ------- |
@@ -259,7 +261,7 @@ It has the server process information.
 | oname    | Server name                     | -       |
 | user     | Linux user name for the process | -       |
 
-#### Fields
+#### Fields {#server_process-fields}
 
 | Field name          | Unit            | Description                          | Remarks |
 | ------------------- | --------------- | ------------------------------------ | ------- |

@@ -31,13 +31,13 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - **hooklog_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   Logライブラリをhookingしてログモニタリングを有効にします。  
 
   :::caution
 
-  アプリケーションを実行する前に、_whatap.conf_オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
+  アプリケーションを実行する前に、*whatap.conf*オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
 
   :::
 
@@ -49,7 +49,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - **hooklog_custom_methods**
 
-  ユーザーのカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用します。
+  カスタムログを登録します。特定のログフレームワークの内容を収集します。サイトで個別に作成したログモジュールのログを追跡する際に利用してください。
 
   ```java title='Java'
   package io.home.test;
@@ -65,19 +65,19 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - **logsink_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   Logモニタリング機能をOn/Offします。
 
   :::caution
 
-  アプリケーションが起動する前に_whatap.conf_に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
+  アプリケーションが起動する前に*whatap.conf*に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
 
   :::
 
 - **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
 
@@ -87,6 +87,10 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 **_ログモニタリングを開始する_**セクションの**_ログモニタリングを有効にする_**タブのトグルボタンで、WhaTapログモニタリングの有効または無効にできます。
 
-{@include: ../common-items/_log-java-start.mdx}
+import Logjavastart from "../common-items/_log-java-start.mdx";
 
-{@include: ../common-items/_log-active-note.mdx}
+<Logjavastart />
+
+import Logactivenote from "../common-items/_log-active-note.mdx";
+
+<Logactivenote />

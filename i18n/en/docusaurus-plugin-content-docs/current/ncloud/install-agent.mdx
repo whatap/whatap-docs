@@ -13,7 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Naver Cloud Monitoring collects metrics periodically through API integration. Select and collect the desired stats in the Naver Cloud Monitoring namespaces that correspond to the services to collect every 5 minutes. When you start monitoring, you can search for user resources in all regions and then start monitoring with a click. 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
+
+<Createprojectcloud />
 
 ## Monitoring procedure
 
@@ -35,11 +37,15 @@ Enter values for AccessKey and Secret.
 
 ### Selecting the namespace and collection cycle
 
-{@include: ../common-items/_namespace-collect.mdx} 
+import Namespacecollect from "../common-items/_namespace-collect.mdx";
+
+<Namespacecollect />
 
 #### Whatap Data Interval
 
-{@include: ../common-items/_collecting-period.mdx}
+import Collectingperiod from "../common-items/_collecting-period.mdx";
+
+<Collectingperiod />
 
 #### Namespace
 
@@ -56,7 +62,9 @@ Enter values for AccessKey and Secret.
 
 ### Selecting the region, metric, and stat
 
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
+
+<Regionmetricstats />
 
 <ImgLang img='ncloud_region_dialog.png' desc='Ncloud Monitoring - ResourceGroup, Metric, Stats' />
 

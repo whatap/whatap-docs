@@ -1,0 +1,1324 @@
+ServerStatDetails:
+  type: object
+  description: サーバー統計レスポンスデータ構造
+  properties:
+    servers:
+      type: array
+      items:
+        type: object
+        properties:
+          oid:
+            type: integer
+            description: エージェント固有識別子(ID)
+          timeData:
+            type: array
+            items:
+              type: object
+              properties:
+                usedPercent:
+                  type: number
+                  format: float
+                  description: ストレージ容量の使用率
+                trafficIn:
+                  type: number
+                  format: float
+                  description: Inbound traffic
+                trafficOut:
+                  type: number
+                  format: float
+                  description: Outbound traffic
+                cpu:
+                  type: number
+                  format: float
+                  description: CPU使用率(%)
+                memory_swappused:
+                  type: number
+                  format: float
+                  description: スワップメモリ使用量(%)
+                time:
+                  type: integer
+                  format: int64
+                  description: データポイントの時間(UNIX epoch time、millisecond)
+                memory_pused:
+                  type: number
+                  format: float
+                  description: 物理メモリ使用率(%)
+                ioPercent:
+                  type: number
+                  format: float
+                  description: 入出力作業のCPU使用率(%)
+ServerList:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    pname:
+      type: string
+      description: プロジェクト名
+    timezone:
+      type: integer
+      description: タイムゾーン
+    regionName:
+      type: string
+      description: データサーバーリージョン
+    values:
+      type: array
+      items:
+        type: object
+        properties:
+          os.status:
+            type: string
+            description: OSの状態
+          oname:
+            type: string
+            description: サーバー名
+          os.name:
+            type: string
+            description: オペレーティングシステム名
+          oid:
+            type: integer
+            description: エージェント固有識別子(ID)
+          isActive:
+            type: boolean
+            description: エージェントの活性化状態
+    language:
+      type: string
+      description: 警告通知の言語
+ServerProc:
+  type: object
+  properties:
+    pname:
+      type: string
+      description: プロジェクト名
+    values:
+      type: object
+      additionalProperties:
+        type: array
+        items:
+          type: object
+          properties:
+            memoryBytes:
+              type: integer
+              format: int64
+              description: プロセスが使用するメモリ量(byte)
+            bps:
+              type: number
+              format: float
+              description: Bytes Per Second
+            cmd1:
+              type: string
+              description: プロセス名
+            cpu:
+              type: number
+              format: float
+              description: プロセスCPU使用量(%)
+    language:
+      type: string
+      description: 警告通知の言語
+ServerDiskIOPS:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    pname:
+      type: string
+      description: プロジェクト名
+    timezone:
+      type: integer
+      description: タイムゾーン
+    regionName:
+      type: string
+      description: データサーバーリージョン
+    values:
+      type: object
+      additionalProperties:
+        type: object
+        description: ホスト名
+        properties:
+          bps:
+            type: number
+            format: float
+            description: Bytes Per Second
+          iops:
+            type: number
+            format: float
+            description: Disk Input/Output Operations Per Second
+    language:
+      type: string
+      description: 警告通知の言語
+ServerAgentCount:
+  type: object
+  properties:
+    pname:
+      type: string
+      description: プロジェクト名
+    values:
+      type: string
+      description: カウント
+ServerCpuUsage:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    pname:
+      type: string
+      description: プロジェクト名
+    timezone:
+      type: integer
+      description: タイムゾーン
+    regionName:
+      type: string
+      description: データサーバーリージョン
+    values:
+      type: object
+      additionalProperties:
+        type: number
+        format: float
+      description: サーバー別CPU使用率(%)
+    language:
+      type: string
+      description: 警告通知の言語
+ServerNetworkTraffic:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    pname:
+      type: string
+      description: プロジェクト名
+    timezone:
+      type: integer
+      description: タイムゾーン
+    regionName:
+      type: string
+      description: データサーバーリージョン
+    values:
+      type: object
+      additionalProperties:
+        type: number
+        format: float
+        description: 各ホストのネットワークトラフィック合計(byte)
+    language:
+      type: string
+      description: 警告通知の言語
+APM:
+  type: object
+  properties:
+    platform:
+      type: string
+      description: アプリケーション製品プラットフォーム
+    createTime:
+      type: string
+      description: プロジェクト作成日
+    gatewayName:
+      type: string
+      description: データサーバーリージョン
+    projectCode:
+      type: number
+      description: プロジェクトコード
+    status:
+      type: string
+      enum:
+        - pending
+        - trial
+        - 有償転換
+        - close_pending
+        - limited
+        - closed
+        - trial_limited
+      description: プロジェクトステータス
+    lastUpdatedTime:
+      type: string
+      description: プロジェクト編集日
+    name:
+      type: string
+      description: プロジェクト名
+    productType:
+      type: string
+      description: アプリケーション製品タイプ
+Server:
+  type: object
+  properties:
+    pname:
+      type: string
+      description: プロジェクト名
+    timezone:
+      type: integer
+      description: サーバーの位置が設定された標準時間帯
+    regionName:
+      type: string
+      description: データサーバーリージョン
+    values:
+      type: object
+      properties:
+        servers:
+          type: array
+          items:
+            type: object
+            properties:
+              public_ip:
+                type: string
+                format: ipv4
+                description: 外部から接続できるIPアドレス
+              os_cpuvendor:
+                type: string
+                description: サーバーに搭載されたCPUメーカーと名前
+              agent_created:
+                type: string
+                format: date-time
+                description: エージェント作成日
+              ip:
+                type: string
+                format: ipv4
+                description: 内部からアクセスできるIPアドレス
+              os_arch:
+                type: string
+                description: OSアーキテクチャ
+              actTime:
+                type: integer
+                format: int64
+                description: エージェント活性化時間(ms)
+              cpu_cores:
+                type: string
+                description: CPUコア数
+              oid:
+                type: integer
+                description: エージェント固有識別子(ID)
+              isActive:
+                type: boolean
+                description: 活性化状態の有無
+              okind:
+                type: string
+                description: 種類別エージェントグループ名
+              version:
+                type: string
+                description: エージェントバージョン
+              tags:
+                type: array
+              inactTime:
+                type: integer
+                description: エージェントの非活性化時間
+              oname:
+                type: string
+                description: エージェント名
+              os_name:
+                type: string
+                description: オペレーティングシステム名
+              startTime:
+                type: string
+                format: date-time
+                description: エージェント開始時間
+              os_memory:
+                type: string
+                description: OSのメモリ容量
+              os_status:
+                type: string
+                description: OSの状態
+getApmAllinfo:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    act_agent:
+      type: string
+      description: アクティブ状態のエージェント数
+    inact_agent:
+      type: string
+      description: 非アクティブ状態のエージェント数
+    host:
+      type: string
+      description: ホスト(HOST) 数
+    cpucore:
+      type: string
+      description: ホストのCPUコア数の合計
+    txcount:
+      type: string
+      description: トランザクション数
+    tps:
+      type: string
+      description: TPS
+    user:
+      type: string
+      description: アクティブユーザー（5分）
+    actx:
+      type: string
+      description: アクティブトランザクション
+    rtime:
+      type: string
+      description: 平均リスポンスタイム(ms)
+    cpu:
+      type: string
+      description: CPU使用率の平均(%)
+    threadpool_active:
+      type: string
+      description: スレッドプールのアクティブスレッド数
+    threadpool_queue:
+      type: string
+      description: スレッドプールのキューイングスレッド数
+    dbconn_total:
+      type: string
+      description: 全体DB Connection数
+    dbconn_act:
+      type: string
+      description: アクティブ(Active) 状態のDB Connection数
+    dbconn_idle:
+      type: string
+      description: 遊休(Idle) 状態のDB Connection数
+    act_method:
+      type: string
+      description: 活性メソッド(Method) 数
+    act_sql:
+      type: string
+      description: 活性SQL数
+    act_httpc:
+      type: string
+      description: 活性HTTP Call数
+    act_dbc:
+      type: string
+      description: 活性データベースコネクション数
+    act_socket:
+      type: string
+      description: 活性ソケット(Socket) 接続数
+    apdex:
+      type: string
+      description: Apdex(Application Performance Index、アプリケーションのユーザー満足度)
+ExceptionRecord:
+  type: object
+  properties:
+    reocrds:
+      type: array
+      items:
+        type: object
+        properties:
+          oids:
+            type: string
+            description: エージェント固有識別子(ID)
+          time:
+            type: integer
+            format: int64
+            description: 例外発生時間(UNIX epoch time、millisecond)
+          classHash:
+            type: integer
+            description: 例外クラスのハッシュコード
+          count:
+            type: integer
+            description: 当該時間に発生した例外の数
+          service:
+            type: string
+            description: 例外が発生したサービス経路
+          class:
+            type: string
+            description: 例外クラス名
+          serviceHash:
+            type: integer
+            description: サービス経路のハッシュコード
+          snapSeq:
+            type: string
+            description: スナップショットシーケンス番号
+          msg:
+            type: string
+            description: 例外メッセージ
+    total:
+      type: integer
+      description: 全体例外レコード数
+HttpcRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          Sum:
+            type: integer
+            description: 合計処理時間(ms)
+          Port:
+            type: integer
+            description: 接続ポート番号
+          Url:
+            type: string
+            description: リクエストURL
+          Host:
+            type: string
+            description: ホストアドレス
+          Max:
+            type: integer
+            description: 最大リスポンスタイム(ms)
+          Stdev:
+            type: string
+            description: 標準偏差
+          Actived:
+            type: integer
+            description: 現在活性状態の接続数
+          Avg:
+            type: integer
+            description: 平均リスポンスタイム(ms)
+          HostHash:
+            type: integer
+            description: ホストハッシュコード
+          Min:
+            type: integer
+            description: 最小リスポンスタイム(ms)
+          Error:
+            type: integer
+            description: エラー数
+          Total:
+            type: integer
+            description: 合計リクエスト数
+          UrlHash:
+            type: integer
+            description: URLハッシュコード
+    total:
+      type: integer
+      description: 合計HTTP接続レコード数
+HttpcFilterRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          Service:
+            type: string
+            description: サービス経路
+          Host:
+            type: string
+            description: ホストアドレス
+          HostHash:
+            type: integer
+            description: ホストハッシュコード
+          Avg:
+            type: integer
+            description: 平均リスポンスタイム(ms)
+          Error:
+            type: integer
+            description: エラー数
+          Sum:
+            type: integer
+            description: 合計処理時間(ms)
+          Port:
+            type: integer
+            description: 接続ポート番号
+          Service_hash:
+            type: integer
+            description: サービスハッシュコード
+          Url:
+            type: string
+            description: リクエストURL
+          Max:
+            type: integer
+            description: 最大リスポンスタイム(ms)
+          Stdev:
+            type: string
+            description: 標準偏差
+          UrlHash:
+            type: integer
+            description: URLハッシュコード
+          Total:
+            type: integer
+            description: 合計リクエスト数
+          Min:
+            type: integer
+            description: 最小リスポンスタイム(ms)
+    total:
+      type: integer
+      description: フィルタリングされた合計HTTP接続レコード数
+SqlQueryRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          time_max:
+            type: integer
+            description: 最大処理時間(ms)
+          dbcHash:
+            type: integer
+            description: データベース接続ハッシュコード
+          db:
+            type: string
+            description: 接続されたデータベース情報
+          time_min:
+            type: integer
+            description: 最小処理時間(ms)
+          fetch_count:
+            type: integer
+            description: パッチされた総行数
+          hash:
+            type: integer
+            description: SQLハッシュコード
+          fetch_time:
+            type: integer
+            description: パッチ時間(ミリ秒)
+          sql_crud:
+            type: integer
+            description: SQL CRUD作業タイプ(0 - none, 1 - create, 2 - read, 3 - update, 4 - delete)
+          count_total:
+            type: integer
+            description: 合計実行回数
+          count_error:
+            type: integer
+            description: エラー発生回数
+          sql:
+            type: string
+            description: 実行されたSQLクエリ
+          time_sum:
+            type: integer
+            description: 合計処理時間(ms)
+          time_avg:
+            type: integer
+            description: 平均処理時間(ms)
+          time_std:
+            type: string
+            description: 処理時間の標準偏差
+          count_actived:
+            type: integer
+            description: 現在活性状態の接続数
+    total:
+      type: integer
+      description: SQLクエリレコードの合計数
+RemoteClientIpRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          count:
+            type: integer
+            description: 該当IPで発生したイベント数
+          city:
+            type: string
+            description: クライアントの都市
+          country:
+            type: string
+            description: クライアントの国コードと国名
+          ip:
+            type: string
+            description: クライアントのIPアドレス
+    total:
+      type: integer
+      description: リモートクライアントのIPレコードの合計数
+TransactionsRecord:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        type: object
+        properties:
+          apdex_tolerated:
+            type: integer
+            description: 許可されたレスポンスタイムのApdex評価数
+          apdex_satisfied:
+            type: integer
+            description: 満足できるレスポンスタイムのApdex評価数
+          apdex:
+            type: number
+            format: double
+            description: Apdex点数
+          time_max:
+            type: integer
+            description: 最大処理時間(ms)
+          sql_fetch_time:
+            type: integer
+            description: SQLパッチ時間(ms)
+          sql_time:
+            type: integer
+            description: 合計SQL処理時間(ms)
+          count:
+            type: integer
+            description: 合計トランザクション数
+          error:
+            type: integer
+            description: エラー発生数
+          sql_count:
+            type: integer
+            description: 実行されたSQLコマンド数
+          hash:
+            type: integer
+            description: トランザクションハッシュコード
+          sql_fetch:
+            type: integer
+            description: SQLパッチされたデータの合計数
+          httpc_avg:
+            type: integer
+            description: HTTP接続平均リスポンスタイム(ms)
+          cpu_avg:
+            type: integer
+            description: 平均CPU使用量
+          time_sum:
+            type: integer
+            description: 合計処理時間(ms)
+          time_avg:
+            type: integer
+            description: 平均処理時間(ms)
+          httpc_count:
+            type: integer
+            description: HTTPリクエスト数
+          service:
+            type: string
+            description: サービス経路
+          mem_avg:
+            type: integer
+            description: 平均メモリ使用量
+    total:
+      type: integer
+      description: トランザクションレコードの合計数
+HeapUsageRecord:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    timeMerge:
+      type: string
+      description: データ集計方式(avgまたはmax)
+    unit:
+      type: string
+      description: Heap使用量単位(例、byte)
+    data:
+      type: array
+      items:
+        type: object
+        properties:
+          oid:
+            type: integer
+            description: エージェント固有識別子(ID)
+          oname:
+            type: string
+            description: エージェント名
+          heap_use:
+            type: string
+            format: float
+            description: Heapメモリ使用量
+AgentEachdata:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    type:
+      type: string
+      enum:
+        - thread_count
+        - thread_daemon
+        - thread_peak_count
+        - threadpool_active
+        - threadpool_queue
+        - apdex
+        - tx_caller
+      description: 照会できる指標
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    interval:
+      type: integer
+      description: データポイント間隔(秒)
+    timeMerge:
+      type: string
+      description: データ集計方式(sum)
+    objects:
+      type: array
+      items:
+        type: object
+        properties:
+          oname:
+            type: string
+            description: エージェント名
+          oid:
+            type: integer
+            description: エージェント固有識別子(ID)
+          series:
+            type: array
+            items:
+              type: array
+              items:
+                - 
+                  type: integer
+                  format: int64
+                  description: 時系列timestamp
+                - 
+                  type: number
+                  format: float
+                  description: 照会データ
+AgentEachAvgdata:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    type:
+      type: string
+      enum:
+        - thread_count
+        - thread_daemon
+        - thread_peak_count
+        - threadpool_active
+        - threadpool_queue
+        - apdex
+      description: 照会できる指標
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    interval:
+      type: integer
+      description: データポイント間隔(秒)
+    timeMerge:
+      type: string
+      description: データ集計方式(sum)
+    objectMerge:
+      type: string
+      description: データマージ方式(avg)
+    series:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: 時系列timestamp
+          - 
+            type: number
+            format: float
+            description: エージェント平均データ
+VisitorStatic5mRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: 5分単位(5✕60✕1000、ms)
+          - 
+            type: integer
+            description: 1時間あたりの訪問者数
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    total:
+      type: integer
+      description: 合計訪問者数
+VisitorStaticHRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: 1時間単位(60✕60✕1000、ms)
+          - 
+            type: integer
+            description: 1時間あたりの訪問者数
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    total:
+      type: integer
+      description: data 配列の総数
+VisitorStaticDayRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        type: array
+        items:
+          - 
+            type: integer
+            format: int64
+            description: 1日単位(24✕60✕60✕1000、ms)
+          - 
+            type: integer
+            description: 1日あたりの訪問者数
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    total:
+      type: integer
+      description: 合計訪問者数
+VisitorStaticMonthRecord:
+  type: object
+  properties:
+    data:
+      type: array
+      description: 各月ごとのユーザー統計データ
+      items:
+        type: object
+        properties:
+          stime:
+            type: integer
+            format: int64
+            description: 当該月の開始時間、月1日時刻(24✕60✕60✕1000)
+          etime:
+            type: integer
+            format: int64
+            description: 当該月の終了時間、月1日時刻(24✕60✕60✕1000)
+          sdate:
+            type: string
+            description: 当該月の開始日(文字列の形式)
+          edate:
+            type: string
+            description: 当該月の終了日(文字列の形式)
+          mau:
+            type: integer
+            description: 該当月の月間アクティブユーザー数(MAU)
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    sdate:
+      type: string
+      description: 照会開始時間の文字列表現
+    edate:
+      type: string
+      description: 照会終了時間の文字列表現
+    total:
+      type: integer
+      description: 合計訪問者数
+UnmatchedKey:
+  type: object
+  properties:
+    key:
+      type: string
+      description: パラメータのキー
+    value:
+      type: object
+      properties:
+        baseTime:
+          type: string
+          description: 基準時間での値
+        comparisonTime:
+          type: string
+          description: 比較時間での値
+MatchedParameter:
+  type: object
+  properties:
+    key:
+      type: string
+      description: パラメータのキー
+    value:
+      type: string
+      description: パラメータ値
+TopSqlStatisticsRecords:
+  type: object
+  properties:
+    records:
+      type: array
+      items:
+        $ref: '#/SqlRecord'
+    topN:
+      type: integer
+      description: リクエストされたTopN値
+    total:
+      type: integer
+      description: 全体記録されたSQL一覧数
+    retrievedStartTime:
+      type: integer
+      format: int64
+      description: 照会期間の開始時間
+    retrievedEndTime:
+      type: integer
+      format: int64
+      description: 照会期間の終了時間
+SqlRecord:
+  type: object
+  properties:
+    sql_execute_cnt:
+      type: integer
+      description: SQL実行回数
+    sql_elapse:
+      type: integer
+      description: SQL実行に要した総時間(ms)
+    sqlHash:
+      type: integer
+      description: SQL文のハッシュ値
+    sql_elapse_max:
+      type: integer
+      description: SQL実行に要した最大時間(ms)
+    onames:
+      type: string
+      description: SQLこの実行されたデータベースサーバー名
+    user:
+      type: string
+      description: SQLを実行したユーザー名
+    sql:
+      type: string
+      description: 実行されたSQL文
+ApmDBconnCount:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    time:
+      type: integer
+      format: int64
+      description: 検索時間
+    dbc_total:
+      type: array
+      items:
+        $ref: '#/ConnectionDetail'
+ConnectionDetail:
+  type: object
+  properties:
+    oid:
+      type: integer
+      description: エージェント固有識別子(ID)
+    oname:
+      type: string
+      description: エージェント名
+    databaseUrl:
+      type: string
+      description: データベースURL
+    active:
+      type: integer
+      description: アクティベーションのDB接続数
+    idle:
+      type: integer
+      description: 非アクティブ化された DB接続数
+    total:
+      type: integer
+      description: DB connectionの総数（「active」+「idle」）
+MXQLRequest:
+  type: object
+  required:
+    - stime
+    - etime
+    - mql
+    - limit
+    - pageKey
+  properties:
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    mql:
+      type: string
+      description: 作成したMXQLクエリ
+    limit:
+      type: integer
+      description: 最大データ参照数
+    pageKey:
+      type: string
+      description: 文字列 `mxql`の固定値
+    inject:
+      type: object
+      additionalProperties: true
+      description: |
+        [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }"}`
+    param:
+      type: object
+      additionalProperties: true
+      description: |
+        [次の文書](../mxql/mxql-guide#bind-parameter) 参照<br/> 例）`{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }`
+MXQLtextResponse:
+  type: object
+  properties:
+    time:
+      type: integer
+      format: int64
+      description: データ記録時間
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    pname:
+      type: string
+      description: プロジェクト名
+    okind:
+      type: integer
+      description: 種類別エージェントグループ固有識別子(ID)
+    onode:
+      type: integer
+      description: サーバー別のエージェントグループの固有識別子(ID)
+    oname:
+      type: string
+      description: エージェント名
+    okindName:
+      type: string
+      description: 種類別エージェントグループ名
+    onodeName:
+      type: string
+      description: サーバー別エージェントグループ名
+    host_ip:
+      type: string
+      description: ホストIPアドレス
+    container:
+      type: string
+      description: コンテナ識別子
+    pid:
+      type: integer
+      description: プロセスID
+    type:
+      type: string
+      description: プラットフォームの種類
+    containerKey:
+      type: integer
+      description: コンテナキー
+    tx_count:
+      type: integer
+      description: トランザクション数
+    tx_error:
+      type: integer
+      description: エラーが発生したトランザクション数
+    tx_time:
+      type: number
+      format: double
+      description: トランザクション処理時間
+    apdex_satisfied:
+      type: integer
+      description: Apdex - 満足S
+    apdex_tolerated:
+      type: integer
+      description: Apdex - 許容T
+    apdex_total:
+      type: integer
+      description: Apdex
+    tx_dbc_time:
+      type: number
+      format: double
+      description: データベースコネクションにかかった時間
+    tx_sql_time:
+      type: number
+      format: double
+      description: SQL処理時間
+    tx_httpc_time:
+      type: number
+      format: double
+      description: HTTPクライアント処理時間
+    sql_count:
+      type: integer
+      description: SQLクエリ数
+    sql_error:
+      type: integer
+      description: エラーが発生したSQLクエリ数
+    sql_time:
+      type: number
+      format: double
+      description: SQL処理時間
+    sql_fetch_count:
+      type: integer
+      description: SQLパッチ回数
+    sql_fetch_time:
+      type: number
+      format: double
+      description: SQLフェッチ時間
+    httpc_count:
+      type: integer
+      description: HTTPクライアントリクエスト数
+    httpc_error:
+      type: integer
+      description: エラーが発生したHTTPクライアントリクエスト数
+    httpc_time:
+      type: number
+      format: double
+      description: HTTPクライアント処理時間
+    active_tx_count:
+      type: integer
+      description: アクティブトランザクション数
+    active_tx_0:
+      type: integer
+      description: 3秒未満のアクティブトランザクション
+    active_tx_3:
+      type: integer
+      description: 3秒以上のアクティブトランザクション
+    active_tx_8:
+      type: integer
+      description: 8秒以上のアクティブトランザクション
+    tps:
+      type: number
+      format: double
+      description: 一秒あたりのトランザクション処理数
+    resp_time:
+      type: integer
+      description: レスポンス時間
+    arrival_rate:
+      type: number
+      format: double
+      description: 毎秒到着率
+    pack_dropped:
+      type: integer
+      description: ドロップされたパケット数
+    metering:
+      type: integer
+      description: メータリング
+    _clock_delta_:
+      type: integer
+      description: 時計の差異
+    oid:
+      type: integer
+      description: エージェント固有識別子(ID)
+MXQLPathRequest:
+  type: object
+  required:
+    - stime
+    - etime
+    - mql
+    - limit
+    - pageKey
+  properties:
+    stime:
+      type: integer
+      format: int64
+      description: 照会開始時間(UNIX epoch time、millisecond)
+    etime:
+      type: integer
+      format: int64
+      description: 照会終了時間(UNIX epoch time、millisecond)
+    mql:
+      type: string
+      description: 作成したMXQLクエリ
+    limit:
+      type: integer
+      description: 最大データ参照数
+    pageKey:
+      type: string
+      description: 文字列 `mxql`の固定値
+    inject:
+      type: object
+      additionalProperties: true
+      description: |
+        [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }"}`
+    param:
+      type: object
+      description: クエリに使用されるパラメータ
+MXQLPathResponse:
+  type: object
+  properties:
+    pcode:
+      type: integer
+      description: プロジェクトコード
+    pname:
+      type: string
+      description: プロジェクト名
+    oid:
+      type: integer
+      description: エージェント固有識別子(ID)
+    oname:
+      type: string
+      description: エージェント名
+    otype:
+      type: string
+      description: エージェントタイプ
+    okind:
+      type: integer
+      description: 種類別エージェントグループ固有識別子(ID)
+    okindName:
+      type: string
+      description: 種類別エージェントグループ名
+    onode:
+      type: integer
+      description: サーバー別のエージェントグループの固有識別子(ID)
+    onodeName:
+      type: string
+      description: サーバー別エージェントグループ名
+    type:
+      type: string
+      description: 製品の種類
+    subtype:
+      type: string
+      description: プラットフォームの種類
+    version:
+      type: string
+      description: バージョン情報
+    os_name:
+      type: string
+      description: オペレーティングシステム名
+    ip:
+      type: string
+      description: IPアドレス
+    container_id:
+      type: integer
+      description: コンテナID
+    metering:
+      type: integer
+      description: メータリング
+    status:
+      type: string
+      description: 状態情報
+    normal:
+      type: integer
+      description: 正常に処理されたトランザクション数
+    slow:
+      type: integer
+      description: 遅いトランザクション数
+    verySlow:
+      type: integer
+      description: 非常に遅いトランザクション数
+    total:
+      type: integer
+      description: 合計トランザクション数
+    _pk_:
+      type: string
+      description: inject

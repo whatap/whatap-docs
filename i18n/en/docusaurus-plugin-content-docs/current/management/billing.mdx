@@ -2,32 +2,43 @@
 id: billing
 title: Billing
 description: It explains how to use the WhaTap monitoring service by converting to subscription.
+toc_max_heading_level: 3
 tags:
   - Management
   - Billing
 ---
 
+import CreditcardNotd from "../common-items/_billing-credit-card-note.mdx";
+
 To continue using the WhaTap monitoring service after the free trial period has passed or exceeded the limit of free trial terms, register your payment information and convert to a paid service.
 
 ## Payment information {#register-pay}
 
-For payment, you can select one of two options: regular payment by card or issuance of tax invoice. Prepare the following before proceeding with payment.
+Payment information is provided differently depending on the billing currency. The user must have the <Cmdname sid="billing" className="b600" /> role to register the payment information.
 
-- **Billing** role account
+Prepare the following before proceeding with payment.
 
-- In case of card payment, the card number and expiration date
+- **KRW**
 
-- In case of tax invoice, the certificate for business registration and invoice email
+  - <Cmdname sid="payment_type_card_iamport" className="uitext" />: Payment card number and its expiration date
+  - <Cmdname sid="payment_type_banktransfer" className="uitext" />: Email address for receipt of business registration certificate and tax invoice
+
+- **JPY**, **USD**
+
+  - <Cmdname sid="payment_type_card_stripe" className="uitext" />: Payment card number and its expiration date
+  - <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />: Recipient Email
 
 :::note
 
-For more information about the billing role, see [the following](../project/project-structure#project-auth).
+For more information about the <Cmdname sid="billing" className="b600" /> role, see [the following](../project/project-structure#project-auth).
 
 :::
 
-### Credit card {#credit}
+### Registering the payment information
 
-1. In [WhaTap Monitoring Service](https://service.whatap.io), log in the service with the account with the billing role.
+If this is your first registration for the payment method, keep the following steps:
+
+1. In [WhaTap monitoring service](https://service.whatap.io), log in with the account to transfer the <Cmdname sid="billing" className="b600" /> role to.
 
 2. Select the profile icon on the upper right of Home screen.
 
@@ -35,86 +46,71 @@ For more information about the billing role, see [the following](../project/proj
 
    <ImgLang img='billing-select-my-usage.png' desc='Usage' />
 
-4. In <Cmdname sid="payment_information" className="uitext" />, select <Cmdname sid="register_billing_info" className="uitext" />.
+4. In the <Cmdname sid="payment_information" className="uitext" /> section, select <Cmdname sid="register_billing_info" className="uitext" />.
 
-5. If the <Cmdname sid="register_billing_info" className="uitext" /> window appears, first select a country.
+5. Configure the detailed settings in order. <span class="vslow">\*</span> is required.
 
-6. Enter the company or corporation name.
+   <ImgLang img="billing-payment-information.png" desc="Payment information" />
 
-7. Check the values for <Cmdname sid="phone" className="uitext" /> and <Cmdname sid="TTL06768" className="uitext" />, and then change them if necessary.
+6. Register a desired payment method in <Cmdname sid="payment_method" className="uitext" />.
 
-8. Enter the department name. It is optional.
+   - [<Cmdname sid="payment_type_card_iamport" className="uitext" />](#payment_type_card_iamport)
+   - [<Cmdname sid="payment_type_banktransfer" className="uitext" />](#payment_type_banktransfer)
+   - [<Cmdname sid="payment_type_card_stripe" className="uitext" />](#payment_type_card_stripe)
+   - [<Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />](#payment_type_banktransfer_abroad)
 
-9. Select <Cmdname sid="next" className="uitext" />.
+:::note
 
-#### Domestic user {#inneruser}
+Supported payment currencies are <UI>KRW</UI>, <UI>JPY</UI>, and <UI>USD</UI>. <Cmdname sid="payment_method" className="uitext" /> is changed depending on the changed currency.
 
-1. Select <Cmdname sid="credit_card_iamport" className="uitext" /> as the payment method and then select <Cmdname sid="next" className="uitext" />.
+:::
 
-2. Enter the values for card number, valid thru, and first 2 digits of password. 
+### Credit card (Nicepay) {#payment_type_card_iamport}
 
-3. In <Cmdname sid="card_type" className="uitext" />, select <Cmdname sid="corporation" className="uitext" /> or <Cmdname sid="individual" className="uitext" />.
+If you selected <Cmdname sid="payment_type_card_iamport" className="uitext" /> in <Cmdname sid="payment_method" className="uitext" />, keep the following steps:
+
+<ImgLang img="billing-add-payment-credit.png" desc="Credit card" />
+
+1. When the <Cmdname sid="register_billing_info" className="uitext" /> window appears, enter the values for card number, valid thru, and first 2 digits of password.
+
+2. In <Cmdname sid="card_type" className="uitext" />, select <Cmdname sid="corporation" className="uitext" /> or <Cmdname sid="individual" className="uitext" />.
 
    - <Cmdname sid="corporation" className="uitext" />: In case of a corporate card, the company name is printed on the card. Enter the business registration number and busines name.
    - <Cmdname sid="individual" className="uitext" />: In case of a personal card, the owner name is printed on the card. Even if you received it from your company but a personal name is printed on it, it is a personal card. Enter 8 digits for your birthday.
 
-4. If entry of card information is completed, select <Cmdname sid="bill_recipient_setting" className="uitext" />.
-
-5. Enter your personal data to receive the bill, and then select <Cmdname sid="complete" className="uitext" />.
-
-:::note
-
-To receive invoices in multiple email addresses, enter multiple email addresses by using comma (,) as the delimiter. e.g. a@whatap.io, b@whatap.io, c@whatap.io
-
-:::
-
-#### Overseas user {#outteruser}
-
-1. Select <Cmdname sid="payment_type_card_stripe" className="uitext" /> as the payment method and then select <Cmdname sid="next" className="uitext" />.
-
-2. Enter values for credit card's owner name and number, expiration date, and CVC number.
-
 3. See the checked terms and conditions.
 
-4. If entry of card information is completed, select <Cmdname sid="bill_recipient_setting" className="uitext" />.
+4. Once you have entered all your card information, select <Cmdname sid="apply" className="uitext" />. Return to the previous screen.
 
-5. Enter your personal data to receive the bill, and then select <Cmdname sid="complete" className="uitext" />.
+5. Enter the contact information to receive the invoice, and then select <Cmdname sid="save" className="uitext" />.
 
-:::note
+<CreditcardNotd />
 
-To receive invoices in multiple email addresses, enter multiple email addresses by using comma (,) as the delimiter. e.g. a@whatap.io, b@whatap.io, c@whatap.io
+### Credit card (Stripe) {#payment_type_card_stripe}
 
-:::
+If you selected <Cmdname sid="payment_type_card_stripe" className="uitext" /> in <Cmdname sid="payment_method" className="uitext" />, keep the following steps:
 
-### Tax invoice {#taxinvoice}
+<ImgLang img="billing-add-payment-credit-stripe.png" desc="Credit card" />
 
-1. In [WhaTap Monitoring Service](https://service.whatap.io), log in the service with the account with the billing role.
+1. When the <Cmdname sid="register_billing_info" className="uitext" /> window appears, Enter values for credit card's owner name and number, expiration date, and CVC number.
 
-2. Select the profile icon on the upper right of Home screen.
+2. See the checked terms and conditions.
 
-3. If the dropdown menu appears, select <Cmdname sid="my_usage" className="uitext" />.
+3. Once you have entered all your card information, select <Cmdname sid="apply" className="uitext" />. Return to the previous screen.
 
-   <ImgLang img='billing-select-my-usage.png' desc='Usage' />
+4. Enter the contact information to receive the invoice, and then select <Cmdname sid="save" className="uitext" />.
 
-4. In <Cmdname sid="payment_information" className="uitext" />, select <Cmdname sid="register_billing_info" className="uitext" />.
+<CreditcardNotd />
 
-5. If the <Cmdname sid="register_billing_info" className="uitext" /> window appears, first select a country.
+### Bank transfer {#payment_type_banktransfer}
 
-6. Enter the company or corporation name.
+If you selected <Cmdname sid="payment_type_banktransfer" className="uitext" /> in <Cmdname sid="payment_method" className="uitext" />, keep the following steps:
 
-7. Check the values for <Cmdname sid="phone" className="uitext" /> and <Cmdname sid="TTL06768" className="uitext" />, and then change them if necessary.
+<ImgLang img="billin-add-payment-tax.png" desc="Bank transfer" />
 
-8. Enter the department name. It is optional.
+1. When the <Cmdname sid="register_billing_info" className="uitext" /> window appears, enter the billing information.
 
-9. Select <Cmdname sid="next" className="uitext" />.
-
-#### Domestic user {#inneruserinvoice}
-
-1. Select <Cmdname sid="payment_type_banktransfer" className="uitext" /> as the payment method and then select <Cmdname sid="next" className="uitext" />.
-
-2. Enter the invoice information.
-
-   - Enter the corporate name, representative name, business registration number, and e-tax invoice email on the business registration certificate.
+   - Enter the representative name, business registration number, and e-tax invoice email on the business registration certificate.
 
    - The tax invoice issuance date is as follows:
 
@@ -124,53 +120,159 @@ To receive invoices in multiple email addresses, enter multiple email addresses 
 
    - If necessary, enter the item and type of the business.
 
-3. Enter the invoice information and then select <Cmdname sid="bill_recipient_setting" className="uitext" />.
+2. Once you have entered all your billing information, select <Cmdname sid="apply" className="uitext" />. Return to the previous screen.
 
-4. Enter your personal data to receive the bill, and then select <Cmdname sid="complete" className="uitext" />.
+3. Enter the contact information to receive the invoice, and then select <Cmdname sid="save" className="uitext" />.
 
-   You can add email addresses to send to in the <Cmdname sid="invoice_cc" className="uitext" /> field. When entering multiple items, use comma (,) as the delimiter.
+Once you have completed entry of the invoice issuance information, the copies for WhaTap Labs' business registration certificate and bankbook are automatically sent via the email to the person in charge. Please check the content of the email and then send your business registration certificate to billing@whatap.io.
 
 :::note
 
 - Enter your business registration number and then select <Cmdname sid="BTN06501" className="uitext" /> to proceed with authentication.
 
+- To receive invoices by multiple email addresses, enter multiple email addresses by using comma (,) as the delimiter in <Cmdname sid="invoice_cc" className="uitext" />. e.g. a@whatap.io,b@whatap.io,c@whatap.io
+
 - To reversely issue a tax invoice, contact us at billing@whatap.io.
 
 :::
 
-#### Overseas user {#outteruserinvoice}
+### Sending invoice {#payment_type_banktransfer_abroad}
 
-1. Select <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" /> as the payment method and then select <Cmdname sid="next" className="uitext" />.
+If you selected <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" /> in <Cmdname sid="payment_method" className="uitext" />, keep the following steps:
+
+<ImgLang img="billing-add-payment-tax-abroad.png" desc="Sending invoice" />
+
+1. When the <Cmdname sid="register_billing_info" className="uitext" /> window appears, enter the invoice delivery information.
 
 2. Check for <Cmdname sid="TTL06687" className="uitext" /> and <Cmdname sid="email" className="uitext" />. If necessary, you can modify the values.
 
    You can add email addresses to send to in the <Cmdname sid="invoice_cc" className="uitext" /> field. When entering multiple items, use comma (,) as the delimiter.
 
-3. Select the value for Date of Issue. The criteria are as follows.
+3. Enter the value in <Cmdname sid="company_address" className="uitext" />.
 
-   - <Cmdname sid="date.25" className="uitext" />: Invoice is issued on the 25th of the month.
+4. Once you have entered all your invoice delivery information, select <Cmdname sid="apply" className="uitext" />. Return to the previous screen.
 
-   - <Cmdname sid="date.-1" className="uitext" />: Invoice is issued on the last day of the month.
-
-   - <Cmdname sid="date.0" className="uitext" />: Invoice is issued at the beginning of the following month based on the used month.
-
-4. Enter the value in <Cmdname sid="company_address" className="uitext" />.
-
-5. Select <Cmdname sid="BTN07117" className="uitext" />.
-
-## Modifying the billing email address {#editemail}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />
-
-<ImgLang img='invoice_mail_1.png' desc='Edit Account' />
-
-To change the recipient because the contact person has been changed, modify the billing account. 
-
-In <Cmdname sid="payment_information" className="uitext" />, select <LinkImage img="ico-edit.svg" className='ico' /> <Cmdname sid="edit" className="uitext" /> on the right of the email address. If the <Cmdname sid="billing_info_edit" className="uitext" /> window appears, change the contact information (<Cmdname sid="invoice_name" className="uitext" />, <Cmdname sid="email" className="uitext" />, <Cmdname sid="invoice_cc" className="uitext" />) and then select <Cmdname sid="registration" className="uitext" />.
+5. After all settings are finished, select <Cmdname sid="save" className="uitext" />.
 
 :::note
 
-To receive invoices in multiple email addresses, enter multiple email addresses by using comma (,) as the delimiter. You must enter without spaces between commas. e.g. a@whatap.io,b@whatap.io,c@whatap.io
+- Invoices are sent on the 25th of every month.
+
+- To receive invoices by multiple email addresses, enter multiple email addresses by using comma (,) as the delimiter in <Cmdname sid="invoice_cc" className="uitext" />. e.g. a@whatap.io,b@whatap.io,c@whatap.io
+
+:::
+
+## Modifying the basic information
+
+You can modify the basic information such as <Cmdname sid="TTL06080" className="uitext" />, <Cmdname sid="phone" className="uitext" />, and <Cmdname sid="TTL06768" className="uitext" /> that have been set upon registration of the payment information.
+
+1. Select the profile icon on the upper right of Home screen.
+
+2. If the dropdown menu appears, select <Cmdname sid="my_usage" className="uitext" />.
+
+3. In the <Cmdname sid="TTL08029" className="uitext" /> section of the <Cmdname sid="side_paymentInformation" className="uitext" /> menu, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />.
+
+4. Modify the desired items and then select <Cmdname sid="save" className="uitext" />.
+
+   <ImgLang img="billing-payment-basic.png" desc="Basic information" />
+
+:::note
+
+- <span class="vslow">*</span> is required.
+
+- If you do not want to save the modifications, select <Cmdname sid="BTN06760" className="uitext" />.
+
+:::
+
+## Modifying the payment information
+
+### Modifying the payment method
+
+You can change your registered payment method or billing currency.
+
+1. Select the profile icon on the upper right of Home screen.
+
+2. If the dropdown menu appears, select <Cmdname sid="my_usage" className="uitext" />.
+
+3. In the <Cmdname sid="payment_information" className="uitext" /> section of the <Cmdname sid="side_paymentInformation" className="uitext" /> menu, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />.
+
+4. Modify <Cmdname sid="invoice_currency" className="uitext" /> or <Cmdname sid="payment_method" className="uitext" />.
+
+   - If you have modified <Cmdname sid="invoice_currency" className="uitext" />, the payment method options are changed.
+
+   - To change a registered credit card to another one, select <Cmdname sid="BTN08031" className="uitext" />.
+
+     <ImgLang img="billing-edit-payment-info-credit.png" desc="Re-register" />
+
+   - To modify <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" /> or <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />, select ![Edit icon](/img/ico-edit.svg).
+
+     <ImgLang img="billing-edit-payment-info-tax.png" desc="Edit" />
+
+   - You can select a payment method from the credit card as <Cmdname sid="payment_type_banktransfer" className="uitext" /> or <Cmdname sid="payment_type_banktransfer_abroad" className="uitext" />.
+
+5. When the <Cmdname sid="billing_info_edit" className="uitext" /> window appears, set the required information and then select <Cmdname sid="apply" className="uitext" />. Return to the previous screen.
+
+6. Select <Cmdname sid="save" className="uitext" />.
+
+7. When the payment information change message appears, check the following and then select <Cmdname sid="apply" className="uitext" />.
+
+:::note
+
+- <span class="vslow">*</span> is required.
+
+- If you changed your payment method, your previous entries are not saved.
+
+- If you do not want to save the modifications, select <Cmdname sid="BTN06760" className="uitext" />.
+
+:::
+
+### Modifying the email address of tax invoice {#editemail-tax}
+
+To change your email address for receiving the tax invoice, keep the following steps:
+
+1. Select the profile icon on the upper right of Home screen.
+
+2. If the dropdown menu appears, select <Cmdname sid="my_usage" className="uitext" />.
+
+3. In the <Cmdname sid="payment_information" className="uitext" /> section of the <Cmdname sid="side_paymentInformation" className="uitext" /> menu, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />.
+
+4. On the right of <Cmdname sid="payment_type_banktransfer" className="uitext" /> in <Cmdname sid="payment_method" className="uitext" />, select ![Edit icon](/img/ico-edit.svg) .
+
+5. When the <Cmdname sid="billing_info_edit" className="uitext" /> window appears, modify <Cmdname sid="tax_bill_recipient_email" className="uitext" />.
+
+   <ImgLang img="billing-edit-mail-tax.png" desc="Edit the billing information" />
+
+6. If you select <Cmdname sid="apply" className="uitext" />, the previous screen appears.
+
+7. Select <Cmdname sid="save" className="uitext" />.
+
+:::note 
+
+For tax invoice emails, only one recipient email address can be specified. 
+
+:::
+
+## Modifying the billing information {#editemail}
+
+To change the bill recipient because the person in charge has been changed, keep the following steps:
+
+1. Select the profile icon on the upper right of Home screen.
+
+2. If the dropdown menu appears, select <Cmdname sid="my_usage" className="uitext" />.
+
+3. In the <Cmdname sid="billing_reception_info" className="uitext" /> section of the <Cmdname sid="side_paymentInformation" className="uitext" /> menu, select ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />.
+
+4. Change the staff information (<Cmdname sid="invoice_name" className="uitext" />, <Cmdname sid="email" className="uitext" />, <Cmdname sid="invoice_cc" className="uitext" />) in order.
+
+5. Once you have entered all required information, select <Cmdname sid="save" className="uitext" />.
+
+:::note
+
+- <span class="vslow">*</span> is required.
+
+- To receive invoices by multiple email addresses, enter multiple email addresses by using comma (,) as the delimiter in <Cmdname sid="invoice_cc" className="uitext" />. e.g. a@whatap.io,b@whatap.io,c@whatap.io
+
+- If you do not want to save the modifications, select <Cmdname sid="BTN06760" className="uitext" />.
 
 :::
 
@@ -201,36 +303,6 @@ After registering the payment information, go to <Cmdname sid="projectSubscripti
 - In case of the project whose subscription date is 7 days or more, the <Cmdname sid="delete_project" className="uitext" /> button is provided for you to delete the project.
 
 :::
-
-## Checking the payment information {#checkpayinfo}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />
-
-<ImgLang img='credit_card_8.png' desc='Payment Information' />
-
-You can check the payment information registered by users. Select <Cmdname sid="edit" className="uitext" /> to change the payment method to another. For more information about the registration of the payment information, see [the following](#register-pay).
-
-Payment invoices are sent within 5 business days of each month, and actual payment is made on the 25th of the month. Payment must be made by the 25th of the month.
-
-## Changing the billing currency {#changecurrency}
-
-The currency of the bill is determined by the country selected in the <Cmdname sid="TTL06080" className="uitext" /> field when registering the billing information. 
-
-<ImgLang img='billing-currency-change.png' desc='Change billing currency' />
-
-1. Go to <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />.
-
-2. In <Cmdname sid="payment_method" className="uitext" />, select <Cmdname sid="edit" className="uitext" />.
-
-3. If the <Cmdname sid="billing_info_edit" className="uitext" /> window appears, select <Cmdname sid="change_payment_method" className="uitext" /> and <Cmdname sid="TTL06690" className="uitext" /> in order.
-
-4. In <Cmdname sid="TTL06080" className="uitext" />, select a desired country.
-
-5. Select <Cmdname sid="next" className="uitext" /> and enter the billing information.
-
-6. Select <Cmdname sid="BTN07117" className="uitext" />.
-
-The changed billing currency can be seen in <Cmdname sid="projectSubscription" className="uitext" />, <Cmdname sid="paymentHistory" className="uitext" />, and <Cmdname sid="billingPreview" className="uitext" />. 
 
 ## Billing and payment history {#historybilling}
 
@@ -329,6 +401,6 @@ Enter the granted code in the <Cmdname sid="promotion_code" className="uitext" /
 
 ## How to calculate the usage fee of WhaTap products {#countbilling}
 
-WhaTap products are using the deferred payment billing. You can receive an invoice for the previous month's usage within 5 business days of each month via email through the account with the **billing** role. The usage of the previous month is the amount used from the 1st day to the last day of the month. Invoices are created for each account based on the list of paid products registered to the account.
+WhaTap products are using the deferred payment billing. You can receive an invoice for the previous month's usage within 5 business days of each month via email through the account with the <Cmdname sid="billing" className="b600" /> role. The usage of the previous month is the amount used from the 1st day to the last day of the month. Invoices are created for each account based on the list of paid products registered to the account.
 
 If the subscription period for paid products is in the middle of the month, the period of use is calculated and billed on a pro-rata basis.

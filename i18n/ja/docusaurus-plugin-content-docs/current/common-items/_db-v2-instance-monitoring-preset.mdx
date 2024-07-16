@@ -1,5 +1,7 @@
 ## プリセット{#preset}
 
+<InDoc product="postgresql,mysql">
+
 ユーザーが設定したウィジェットの設定とアクティブセッションテーブルの配置状態をプリセットで保存して読み込むことができます。 次のプリセットがデフォルトで提供されており、**_Default_**のプリセットは変更できません。
 
 <ImgLang img='db-preset-list.png' desc='プリセット' />
@@ -9,6 +11,16 @@
 - **_Default(xos)_**: 主要なDB指標とXOS指標(CPUおよびメモリ使用率、メモリSWAPの使用率、Disk I/Oなど)で構成されています。
 
 - **_Default(rds)_**: 主要なDB指標とRDS CloudWatch指標(CPU使用率、メモリ可用性、ストレージ可用性、Networkなど)で構成されています。
+
+</InDoc>
+
+<InDoc product="redis,mongodb">
+
+ユーザーが設定したウィジェットの設定とアクティブセッションテーブルの配置状態をプリセットで保存して読み込むことができます。 **_Default_**プリセットは、変更できません。
+
+<ImgLang img='db-dashboard-preset.png' desc='プリセット' />
+
+</InDoc>
 
 ### プリセット保存
 

@@ -75,7 +75,7 @@ whatap-setting-config \
 # The following comments are additionally configured for agent grouping and activation of log collection. Use them if necessary.
 
 # Agent grouping
-#echo "okind=$okind" >> whatap.conf
+# echo "whatap.okind=$whatap.okind" >> whatap.conf
 
 # Activation of log collection
 #echo "logsink_enabled=true" >> whatap.conf
@@ -153,7 +153,7 @@ The following settings are optional and must be used if necessary. In addition t
 - **Agent grouping** 
 
   ```bash
-  echo "okind=$okind" >> whatap.conf
+  echo "whatap.okind=$whatap.okind" >> whatap.conf
   ```
 
 - **Enabling the log collection** 
@@ -169,23 +169,23 @@ The following settings are optional and must be used if necessary. In addition t
 After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
 
 ```yaml
-	  env:
-		- name: license
-			value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-		- name: whatap_server_host
-			value: XXX.XXX.XXX.XXX
-		- name: app_name
-			value: {YOUR_APP_NAME}
-		- name: app_process_name
-		  value: {YOUR_PROCESS_NAME}
-		- name: okind
-			value: {YOUR_GROUP_NAME}
-		- name: NODE_IP
-		  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-		- name: NODE_NAME
-		  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-		- name: POD_NAME
-		  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    env:
+    - name: license
+      value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+    - name: whatap_server_host
+      value: XXX.XXX.XXX.XXX
+    - name: app_name
+      value: {YOUR_APP_NAME}
+    - name: app_process_name
+      value: {YOUR_PROCESS_NAME}
+    - name: whatap.okind
+      value: {YOUR_GROUP_NAME}
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
 
 See the following example: 
@@ -205,23 +205,23 @@ spec:
       labels:
         app: python-fastapi-pod
   containers:
-	- name: agent-python-fastapi
+  - name: agent-python-fastapi
     image: whatap/agent-python-fastapi
-	  env:
-		- name: license
-			value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-		- name: whatap_server_host
-			value: XXX.XXX.XXX.XXX
-		- name: app_name
-			value: "myapp-python-fastapi"
-		- name: app_process_name
-		  value: "uvicorn"
-		- name: NODE_IP
-		  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-		- name: NODE_NAME
-		  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-		- name: POD_NAME
-		  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    env:
+    - name: license
+      value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+    - name: whatap_server_host
+      value: XXX.XXX.XXX.XXX
+    - name: app_name
+      value: "myapp-python-fastapi"
+    - name: app_process_name
+      value: "uvicorn"
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
 
 :::note
@@ -236,7 +236,7 @@ spec:
 
 - `app_process_name`: Set the target processes such as CPU and Heap Memory. For example, there are uwsgi and gunicorn.
 
-- `okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
+- `whatap.okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
 
 - `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
 

@@ -6,6 +6,32 @@ pagination_next: release-notes/service/service-2_1_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.2.10
+
+2024年03月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューでデータ照会中に照会期間を変更する場合、イベントリストが表示されて消える問題を修正
+
+</div>
+
+## Service 2.2.9
+
+2024年03月20日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Feature</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06126" className="uitext" />で<b>DB Connection</b>、<b>SQL</b>ステップをクリックすると活性化されるモーダルに<UI>SERIAL</UI>フィールドを追加</p>
+
+![SERIAL filed](/img/release/release-apm-trace-add-serial-field.png)
+
+</div>
+
 ## Service 2.2.8
 
 2024年03月11日
@@ -72,7 +98,7 @@ Goアプリケーションのモニタリングの詳細については、[次�
 
 <p><Status>Fixed</Status>サイドメニューの縮小モードの使用時、断続的にクリックが不可能な現象を修正</p>
 
-* * *
+---
 
 ### `Kubernetes`
 
@@ -144,7 +170,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
   :::
 
-- <Status>New</Status>メトリクスのフィールド(Field) 中心のユーザーエクスペリエンスを強化した<Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> 機能を追加
+- <Status>New</Status>メトリクスのフィールド(Field) 中心のユーザー体験を強化した<Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> 機能を追加
 
   :::note
 
@@ -164,7 +190,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
   :::
 
-- <Status>New</Status> kube-apiserverの状態と性能メトリクスの収集、レスポンスタイム、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューを追加
+- <Status>New</Status> kube-apiserverの状態と性能メトリクスの収集、応答時間、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューを追加
 
   :::note
 
@@ -172,7 +198,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
   :::
 
-* * *
+---
 
 ### `共通`
 
@@ -246,7 +272,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 <p><Status>Changed</Status> <Cmdname sid="BTN06853" className="uitext" />ウィンドウのWhaTapロゴにダークテーマを適用、プラットフォームに<b>WhaTap Network</b>を追加</p>
 
-* * *
+---
 
 ### `Application`
 
@@ -287,7 +313,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
   - <Cmdname sid="application" className="b500" /> → <Cmdname sid="ITM06005" className="uitext" />
 
-* * *
+---
 
 ### `Server`
 
@@ -305,7 +331,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Fixed</Status> <Cmdname sid="tag_count_chart" className="uitext" />メニューでNetwork Traffic関連チャートに表示されるbyte単位をbit単位で表示されるように修正
 
-* * *
+---
 
 ### `Database`
 
@@ -329,7 +355,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Feature</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_list" className="uitext" />メニューでデータベースサーバーのIPアドレスを表記する<Cmdname sid="db_ip" className="uitext" />カラムを追加
 
-- <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでDBユーザーファイルを作成するためのコマンドを入力する時に、オペレーティングシステムによる考慮事項を追加
+- <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでDBユーザーファイルを作成するためのコマンドを入力する時に、OSによる考慮事項を追加
 
 - <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />タブで<Cmdname sid="database_inactive_alert" className="b500" />の文章を<Cmdname sid="inactive_agent_alert" className="uitext" />に修正
 
@@ -369,7 +395,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 <p><Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでRedisバージョンによって異なる<em>uid.sh</em>実行コマンドの説明を追加</p>
 
-* * *
+---
 
 ### `Kubernetes`
 
@@ -390,7 +416,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Fixed</Status> <Cmdname sid="Container" className="uitext" /> &gt; <Cmdname sid="container_volume" className="uitext" />メニューでUsedPercentが100%の時のアイコンを修正
 
-* * *
+---
 
 ### `Log`
 
@@ -398,24 +424,24 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 - <Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでログモニタリングを非活性化する時に表示される案内メッセージのスタイルを修正
 
-* * *
+---
 
 ### `AWS Log`
 
 <p><Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでユーザーが選択した言語に合ったガイドにアクセスするように修正</p>
 
-* * *
+---
 
 ### `Browser`
 
-- <Status>Feature</Status>ページ読み込みヒートマップデータにネットワークステータスに関する指標を追加：<Cmdname sid="TTL07611" className="uitext" />、<Cmdname sid="TTL07612" className="uitext" />、<Cmdname sid="TTL07610" className="uitext" />
+- <Status>Feature</Status>ページロードヒットマップデータにネットワークステータスに関する指標を追加：<Cmdname sid="TTL07611" className="uitext" />、<Cmdname sid="TTL07612" className="uitext" />、<Cmdname sid="TTL07610" className="uitext" />
 
   - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />メニューの<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェット
   - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />
 
 - <Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />メニューの<Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" />ウィンドウでリソースデータに指標を追加：<Cmdname sid="status_code" className="uitext" />、<span class="uitext">Delivery Type</span>
 
-- <Status>Feature</Status> AJAXヒートマップデータにネットワークステータスに関する指標を追加：<Cmdname sid="TTL07611" className="uitext" />、<Cmdname sid="TTL07612" className="uitext" />、<Cmdname sid="TTL07610" className="uitext" />、<span class="uitext">Delivery Type</span>
+- <Status>Feature</Status> AJAXヒットマップデータにネットワークステータスに関する指標を追加：<Cmdname sid="TTL07611" className="uitext" />、<Cmdname sid="TTL07612" className="uitext" />、<Cmdname sid="TTL07610" className="uitext" />、<span class="uitext">Delivery Type</span>
 
   - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
 
@@ -433,7 +459,7 @@ Service 2.2.0リリーズに含まれる新機能を紹介します。
 
 :::
 
-* * *
+---
 
 ### `ネットワーク`
 

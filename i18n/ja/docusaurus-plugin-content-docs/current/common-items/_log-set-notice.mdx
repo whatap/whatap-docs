@@ -1,6 +1,6 @@
-ホーム画面 > プロジェクト選択 > **_アラート警告通知_** > **_イベント設定_** >**ログ**タブ
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="log" className="uitext" /> タブ
 
-収集したログデータを条件に合わせてフィルタリングすることで、警告通知を設定できます。 **_+イベントの追加_**ボタンをクリックして、ログイベントの警告通知を設定します。 すべての設定を完了して **_保存_** ボタンを選択してください。
+収集したログデータを条件に合わせてフィルタリングすることで、警告通知を設定できます。 **_+_** <Cmdname sid="add_notification" className="uitext" />ボタンをクリックして、ログイベントの警告通知を設定します。 すべての設定を完了した後<Cmdname sid="save" className="uitext" />ボタンを選択します
 
 <Xclude product='postgresql,mysql'>
 
@@ -16,99 +16,99 @@
 
 追加できるログイベントは次のとおりです。
 
-- **_リアルタイムログイベント_**:リアルタイムで収集したログから検索値が登場すると、アラート通知を送信します。
+- <Cmdname sid="realtime_log_event" className="uitext" />：リアルタイムで収集したログから設定値が検知されると、アラート通知が送信されます。
 
-- **_複合ログイベント_**：最近収集されたログが特定の条件を満たすログが一定数を超えた場合に警告通知を送信します。
+- <Cmdname sid="composite_log_event" className="uitext" />：最近収集したログのうち、一定の条件を満たすログが一定数以上収集された場合に警告通知を送信します。
 
 :::note
 
-- イベントを追加または設定するには、**通知設定**の権限が必要です。 メンバー権限の詳細については、[次の文書](../project/project-structure#project-auth)を参考にしてください。
+- イベントを追加または設定するには、<Cmdname sid="sms_alert_settings" className="b600" />の権限が必要です。 メンバー権限の詳細については、[次の文書](../project/project-structure#project-auth)を参考にしてください。
 
 - アラート通知に関連してモニタリングプラットフォームごとに対応されているイベントの種類を確認するには、[次の文書](../support-env#support-notice)を参照してください。
 
 :::
 
-## イベント追加共通オプション{#log-event-add-common}
+## イベント追加共通オプション {#log-event-add-common}
 
 以下は、イベント追加時に共通して設定できるオプションです。
 
-- **_イベント名_** ：追加するイベント名を入力します。
+- <Cmdname sid="event_title" className="uitext" />：追加するイベント名を入力します。
 
-- **_イベントのアクティブ化_**：トグルボタンをクリックして警告通知を有効にするかどうかを選択します。
+- <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、アラート通知を有効にするかどうかを選択できます。
 
-- **_レベル_** : <span class='vslow'>危険</span>, <span class='slow'>警告</span>, <span style={{color: '#757575'}}>情報</span>次のいずれかのレベルを選択します。
+- <Cmdname sid="level" className="uitext" />：<Cmdname sid="fatal" className="vslow" />、<Cmdname sid="warning" className="slow" />、<Cmdname sid="info" className="info" />次のいずれかのレベルを選択します。
 
-- **_メッセージ_**：イベント発生時に出力する通知メッセージを入力します。 `${タグまたはフィールドキー}` を入力してメッセージに変数を適用できます。 変数に入力するキーは、選択したメトリック データ**_カテゴリ_**に含まれる値である必要があります。
+- <Cmdname sid="message" className="uitext" />：イベント発生時に出力する通知メッセージを入力します。 `&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`を入力してメッセージに変数を適用できます。 変数に入力するキーは、選択したメトリクスデータ<Cmdname sid="category" className="uitext" />にある値を入力します。
 
-- **_カテゴリー_**：ログ識別名（ログフォルダ名）をリストから選択または直接入力することができます。
+- <Cmdname sid="category" className="uitext" />：ログ区分の名称(ログフォルダ名)のリストから選択するか手動で入力します。
 
-- **_イベント発生の一時停止_**：過剰な警告通知が発生しないようにするオプションです。 最初の警告通知以降、選択した時間帯に警告通知を送信しません。 また、**_イベント記録_**メニューに記録されません。
+- <Cmdname sid="skiptime" className="uitext" />：頻繁な警告通知の発生を防ぐオプションです。 最初の警告通知以降、選択した時間帯に警告通知を送信しません。 また、<Cmdname sid="side_eventHistory" className="uitext" />メニューに残りません。
 
-- **_イベント受信タグ_**: イベント受信タグを選択すると、該当タグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。 イベント受信タグを選択しない場合は、プロジェクトの全体メンバーに警告通知を送信します。  
+- <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、該当タグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。 イベント受信タグを選択しない場合は、プロジェクトの全体メンバーに警告通知を送信します。
 
-  タグを追加しない場合は、全体メンバーに警告通知を送信します。 **_+ タグ追加_**をクリックし、**_タグ一覧_**で警告通知の受信対象を選択してください。 **_+ 新しいタグ作成_**を選択してタグを追加することもできます。
+  タグを追加しない場合は、全体メンバーに警告通知を送信します。 **_+_** <Cmdname sid="add_tag" className="uitext" />をクリックし、<Cmdname sid="event_tag_list" className="uitext" />で警告通知の受信対象を選択してください。 **_+_** <Cmdname sid="create_new_eventtag" className="uitext" />を選択してタグを追加できます。
 
   :::note
 
-  **_アラート通知_** > **_イベント受信設定_**メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。 **_イベント受信設定_**メニューの詳細については、[次の文書](set-receive-event)を参照してください。
+  <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。 <Cmdname sid="side_eventNoti" className="uitext" />メニューの詳細については、[次の文書](set-receive-event)を参照してください。
 
   :::
 
-## リアルタイムログイベントの追加{#rt-log-event}
+## リアルタイムログイベントの追加 {#rt-log-event}
 
 <ImgLang img='log-alert-rt.png' desc='リアルタイムログイベントの追加' />
 
-- **_検索キー_**：ログデータ内で特定の値にアクセスするための識別子を意味します。 一覧から選択または直接入力できます。
+- <Cmdname sid="ITM06429" className="uitext" />：ログデータの中で特定値にアクセスするための識別子を意味します。 一覧から選択または直接入力できます。
 
-  > 例、HTTPレスポンスステータスコードを示す値にアクセスしようとする場合、**_検索キー_** `status`
+  > 例、HTTP応答ステータスのコードを示す値にアクセスする場合、<Cmdname sid="ITM06429" className="uitext" /> `status`
 
-- **_検索値_**：**_検索キー_**に該当する実際のデータを意味します。 ログから入力したキーワードを含む場合は、警告通知を送信します。 一覧から選択または直接入力できます。
+- <Cmdname sid="ITM06430" className="uitext" />：<Cmdname sid="ITM06429" className="uitext" />に該当する実際のデータを意味します。 ログから入力したキーワードを含む場合は、警告通知を送信します。 一覧から選択または直接入力できます。
 
-  > 例、**_検索キー_** `status` **_検索値_** `200`設定した場合、HTTPレスポンスステータスコードである200を含むログデータ収集時に警告通知が発生
+  > 例、<Cmdname sid="ITM06429" className="uitext" /> `status` <Cmdname sid="ITM06430" className="uitext" /> `200`を設定した場合、HTTP応答ステータスコード200を含んだログデータが収集されると警告通知を発生
 
-- **_イベント対象フィルタリング_**:**_選択入力_**オプションを通じて**_検索キー_**と**_オペレーター_**、**_検索値_**を選択して対象をフィルタリングしたり**_直接入力_**オプションを選択できます。 入力がない場合は、リアルタイムで収集するデータ全体に対する通知の発生有無を判断します。
+- <Cmdname sid="alert_object_filtering" className="uitext" />：<Cmdname sid="metrics_rule_select" className="uitext" />プションを通じて<Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="operator" className="uitext" />、<Cmdname sid="ITM06430" className="uitext" />を選択して対象をフィルタリングしたり<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択できます。 入力がない場合は、リアルタイムで収集するデータ全体に対する通知の発生有無を判断します。
 
   > 例）`AppLog`カテゴリのログから`level`が`ERROR`であるログを検索します。 一致するログの中に**_oid_**が**12345678**である場合、警告通知が送信されます。
 
-## 複合ログイベントの追加{#cp-log-event}
+## 複合ログイベントの追加 {#cp-log-event}
 
 <ImgLang img='log-alert-cp.png' desc='複合ログイベントの追加' />
 
-- **_テンプレート_**:複合ログテンプレートを提供します。 
+- <Cmdname sid="template" className="uitext" />：複合ログテンプレートを提供します。
 
-- **_ログ検索条件_**
+- <Cmdname sid="data_time_range" className="uitext" />：選択した時間の間に収集されたログを表示します。 データの表示時間を5分に選択すると、直近5分間に収集されたデータを表示してイベントが発生する条件を確認できます。
 
-  - **_検索キー_**では、イベント発生条件の対象を選択できます。 選択した**_検索キー_**に該当する検索値を選択できます。
+- <Cmdname sid="ITM06654" className="uitext" />
 
-  - **_検索キー_**が同じ項目を追加する場合は「OR」条件で、別の項目を追加する場合は「AND」条件で機能します。
+  - <Cmdname sid="ITM06429" className="uitext" />では、イベント発生条件の対象を選択できます。 選択した<Cmdname sid="ITM06429" className="uitext" />に該当する検索値を選択できます。
 
-  - **_除外_**チェックボックスを選択して、選択した検索値をイベント発行条件から除外することができます。
+  - <Cmdname sid="ITM06429" className="uitext" />に同じ項目を追加する場合は「OR」条件で、別の項目を追加する場合は「AND」条件で機能します。
 
-  - **_+追加_**を選択して複数のイベントの発行条件を追加または除外設定することができます。  
+  - <Cmdname sid="exclude" className="uitext" />チェックボックスを選択して、選択した検索値をアラート通知条件から除外できます。
 
-- **_データ照会範囲_**：選択した時間の間に収集されたログを表示します。 データの表示時間を5分に選択すると、直近5分間に収集されたデータを表示してイベントが発生する条件を確認できます。 
+  - **_+_** <Cmdname sid="add" className="uitext" />を選択して複数のイベントの発行条件を追加または除外に設定できます。  
 
-- **_イベント発行条件_**：イベントが入力した回数や選択したオペレーターの条件など、イベントが発生した場合、警告通知を送信します。
+- <Cmdname sid="alert_rule" className="uitext" />：入力した回数と選択したオペレーターの条件を果たしたイベントが発生した場合、アラート通知を送信します。
 
-  > 例）`AppLog`カテゴリのログのうち、`条件入力`に該当するログをフィルタリングします。 条件入力で**_除外_**をチェックした場合、その条件で見つけたログを除外します。 ただし、`level`が`ERROR`であるログは除外されます。 直近の10分間に収集されたログのいずれかのイベントが `5`より小さい場合は、警告通知を送信します。
+  > 例）`AppLog`カテゴリのログのうち、`条件入力`に該当するログをフィルタリングします。 条件入力で<Cmdname sid="exclude" className="uitext" />をチェックした場合、その条件で見つけたログを除外します。 ただし、`level`が`ERROR`であるログは除外されます。 直近の10分間に収集されたログのいずれかのイベントが `5`より小さい場合は、警告通知を送信します。
 
 ## ログイベント設定の修正
 
-1. **_警告通知_** > **_イベント設定_**メニューに移動してください。
+1. <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューに移動します。
 
-2. **_ログ_**タブを選択します。
+2. <Cmdname sid="log" className="uitext" />タブを選択します。
 
 3. ログイベント一覧の中から変更するイベント項目の右側![編集アイコン](/img/ico-edit.svg)ボタンを選択します。
 
-4. **_イベント設定_**ウィンドウが表示されたら、オプションを変更して、**_保存_**ボタンを選択します。
+4. <Cmdname sid="event_setting" className="uitext" />ウィンドウが表示されたら、オプションを変更して、<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
-選択したログイベントを削除するには、イベント設定ウィンドウの右上の**削除**ボタンをクリックします。
+選択したログイベントを削除するには、イベント設定ウィンドウの右上の<Cmdname sid="delete" className="uitext" />ボタンをクリックします。
 
-## ログイベントの非アクティブ化
+## ログイベントの非活性化
 
-1. **_警告通知_** > **_イベント設定_**メニューに移動してください。
+1. <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューに移動します。
 
-2. **_ログ_**タブを選択します。
+2. <Cmdname sid="log" className="uitext" />タブを選択します。
 
 3. ログイベント一覧からアラート通知をオフにするイベント項目の右側にあるトグルボタンを選択します。
 
@@ -118,28 +118,28 @@
 
 ログイベントの設定内容をjsonファイルとして保存し、読み込んで再利用することができます。
 
-1. **_警告通知_** > **_イベント設定_**メニューに移動してください。
+1. <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューに移動します。
 
-2. **_ログ_**タブを選択します。
+2. <Cmdname sid="log" className="uitext" />タブを選択します。
 
-3. ログイベント一覧上の**_JSON_**![書き出しアイコン](/img/ico-export.svg)ボタンをクリックしてください。 **_JSON書き出し_**ウィンドウが表示されます。
+3. ログイベント一覧上の**_JSON_**![書き出しアイコン](/img/ico-export.svg)ボタンをクリックしてください。 <Cmdname sid="export_json" className="uitext" />画面が表示されます。
 
 4. エクスポートするアイテムを修正または編集します。
 
-5. 右上の![書き出しアイコン](/img/ico-export.svg)**_エクスポート_**ボタンを選択します。 ブラウザでjsonファイルをダウンロードします。
+5. 右上の![書き出しアイコン](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />ボタンを選択します。 ブラウザでjsonファイルをダウンロードします。
 
 6. ログイベント一覧の上の![読み込みアイコン](/img/ico-import.svg)ボタンをクリックしてください。
 
 7. ファイル選択ウィンドウが表示する前にダウンロードしたjsonファイルを選択します。
 
-8. **_JSONのインポート_**ウィンドウが表示されると内容を修正して、**_+ 一覧に追加_**ボタンを選択します。
+8. <Cmdname sid="import_json" className="uitext" />ウィンドウが表示されたら、内容を修正して、***+*** <Cmdname sid="add_to_list" className="uitext" />ボタンを選択します。
 
 :::note 
 
 **イベントIDが存在します。 IDを削除した後、もう一度やり直してください。**
 
-- メッセージが表示されると、**_JSONのインポート_**ウィンドウで `id`項目を削除し、**_+一覧に追加_**ボタンをクリックします。
+- メッセージが表示されると、<Cmdname sid="import_json" className="uitext" />ウィンドウで `id`項目を削除し、**_+_** <Cmdname sid="add_to_list" className="uitext" />ボタンをクリックします。
 
-- 既存のイベント項目を上書きをするには、`id` 項目を削除し、**_上書き_**ボタンをクリックします。
+- 既存のイベント項目を上書きする場合は、`id` 項目を削除し、<Cmdname sid="overwrite" className="uitext" />ボタンをクリックします。
 
 :::

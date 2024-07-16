@@ -7,19 +7,21 @@ tags:
   - Kubernetesモニタリング
 ---
 
-## チャート指標のカストマイズ
+## チャート基準のカストマイズ
 
-WhaTap Kubernetesモニタリングサービスの**_コンテナマップ_**メニューで提供する基本チャート属性は、コンテナまたはPodの状態（State）です。メトリクス名では**_ConState_**（Container State）です。ただし、基本状態以外の基準でマップを構成する必要があります。例えば、基本State状態ではなくCPU使用率（millicore）、メモリ使用率（%）、ネットワーク使用率（byte）に基づいて各対象の状態を判断できます。
+WhaTap Kubernetesモニタリングサービスの**_コンテナマップ_**メニューで提供する基本チャート属性は、コンテナまたはPodの状態(State)です。メトリクス名では**_ConState_**(Container State)です。ただし、基本状態以外の基準でマップを構成する必要があります。例えば、基本State状態ではなくCPU使用率(millicore)、メモリ使用率(%)、ネットワーク使用率(byte)に基づいて各対象の状態を判断できます。
 
-WhaTapは、コンテナのチャート指標変更機能を提供します。変更可能なチャートの指標値は、WhaTap Kubernetesが収集するメトリックス（指標）と同じです。
+WhaTapは、コンテナのチャート基準変更機能を提供します。変更可能なチャートの基準指標は、WhaTap Kubernetesが収集するメトリクス(指標)と同じです。
 
-<ImgLang img='whatap_kubernetes_container_map_state_customization.png' desc='カスタマイズ可能なチャート指標一覧' />
+<ImgLang img='whatap_kubernetes_container_map_state_customization.png' desc='カスタマイズ可能なチャート基準一覧' />
 
-{@include: ../common-items/_container-note-reset.mdx} 
+import Containernotereset from "../common-items/_container-note-reset.mdx";
 
-## 指標のしきい値設定およびステータス色
+<Containernotereset />
 
-対象に割り当てられた指標のしきい値を設定することで、各対象の状態を色で分類できます。指標の単位が数値（pct、bps、millicore）の場合、しきい値を設定できます。
+## 基準指標のしきい値設定およびステータス色
+
+対象に割り当てられた基準指標のしきい値を設定することで、各対象の状態を色で分類できます。指標の単位が数値(pct、bps、millicore)の場合、しきい値を設定できます。
 
 <span class='normal'>Normal</span>、<span class='slow'>Warning</span>、<span class='vslow'>Critical</span> などステータス別の色や意味は以下の通りです。
 
@@ -27,9 +29,9 @@ WhaTapは、コンテナのチャート指標変更機能を提供します。�
 
 | 状態                                  | 説明                                                                |
 | ----------------------------------- | ----------------------------------------------------------------- |
-| <span class='normal'>Normal</span>  | 定常間隔の表示 (~Warning未満の区間を3つの部分に分けて表示)                               |
-| <span class='slow'>Warning</span>   | Warningしきい値内にあることを表示 (Warning超過~Critical以上)                       |
-| <span class='vslow'>Critical</span> | Criticalしきい値内にあることを表示(Critical超過~)                                |
+| <span class='normal'>Normal</span>  | 定常間隔の表示(~Warning未満)                            |
+| <span class='slow'>Warning</span>   | Warningしきい値内にあることを表示(Warning以上~Critical以下)     |
+| <span class='vslow'>Critical</span> | Criticalしきい値内にあることを表示(Critical超過~)             |
 | Dead                                | コンテナ終了の進行状態                                                       |
 | Wait                                | コンテナ開始の進行状態                                                       |
 | Pause                               | コンテナの一時停止状態                                                       |
@@ -53,19 +55,19 @@ WhaTapは、コンテナのチャート指標変更機能を提供します。�
 | ----------------------------------- | :-: | ---------------------------------------------------------------------------------------------------------------------------- |
 | <span class='vslow'>Critical</span> |  50 | WhaTapマイクロエージェントでCriticalイベントの発生<br/>WhaTapノードエージェントでCriticalイベントの発生<br/>コンテナ状態がOOMKILLEDに切り替え                               |
 | <span class='slow'>Warning</span>   |  30 | KubernetesでWarningイベントが発生<br/>WhaTapマイクロエージェントでWarningイベントが発生<br/>WhaTapノードエージェントでWarningイベントが発生<br/>コンテナ状態がRESTARTINGに切り替わり |
-| Dead                                |  23 | コンテナ状態がDEADに切り替わり                                                                                                            |
-| Pause                               |  22 | コンテナ状態がPAUSEに切り替わり                                                                                                           |
-| Waiting                             |  21 | コンテナ状態がWAITINGに切り替わり                                                                                                         |
-| <span class='normal'>Normal</span>  |  10 | コンテナ状態がNormalに切り替わり                                                                                                          |
+| Dead                                |  23 | コンテナ状態がDEADに転換                                                                                                               |
+| Pause                               |  22 | コンテナ状態がPAUSEに転換                                                                                                              |
+| Waiting                             |  21 | コンテナ状態がWAITINGに転換                                                                                                            |
+| <span class='normal'>Normal</span>  |  10 | コンテナ状態がNormalに転換                                                                                                             |
 
-WhaTapイベント中は、「イベントの状態が解決時の追加通知」が設定されています。内部的にイベントを次のように区別します。
+WhaTapのイベントには、「発生したイベントの状態が解決すると追加で通知する」ように設定したイベントがあり、次のように2種類で区別します。
 
-- 状態解決を追跡しないイベント：`stateless`イベント
+- 解決を追跡しないイベント：`stateless`イベント
 
-- サーバーステータスの解決時に追加の通知を設定するイベント：`stateful`イベント
+- 解決時に追加の通知を設定したイベント：`stateful`イベント
 
-コンテナで発生した`stateless`、`stateful`イベントは、`EventConState`状態を判別する上で次のように使用します。 
+コンテナで発生した`stateless`、`stateful`イベントは、`EventConState`の状態を次のように判断します。 
 
-- `stateless`イベント：コンテナで発生した直近の1分間の`stateless`イベントを`EventConState`状態に反映します。
+- `stateless`イベント：コンテナで発生した直近の1分間の`stateless`イベントを`EventConState`状態に反映
 
-- `stateful`イベント：発生から終了までの`stateful`イベントを`EventConState`状態に反映します。
+- `stateful`イベント：発生から終了までの`stateful`イベントを`EventConState`状態に反映

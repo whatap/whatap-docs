@@ -1,7 +1,7 @@
 ---
 id: metric-warning-notice
-title: メトリックアラート通知
-description: 特定の複雑なイベントを設定するには、メトリックイベント設定を使用します。
+title: メトリクスアラートの通知
+description: 特定の複雑なイベントを設定するには、メトリクスイベント設定を使用します。
 tags:
   - Python
   - アラート通知
@@ -9,12 +9,22 @@ tags:
   - アプリケーションモニタリング
 ---
 
-{@include: ../common-items/_metrics-warning-notice.mdx} 
+import Metricswarningnotice from "../common-items/_metrics-warning-notice.mdx";
 
-{@include: ../common-items/_composite-metrics-warning-notice.mdx} 
+<Metricswarningnotice />
 
-{@include: ../common-items/_metrics-event-modify-delete.mdx}
+import Compositemetricswarningnotice from "../common-items/_composite-metrics-warning-notice.mdx";
 
-{@include: ../common-items/_metrics-event-condition-select-target-guide.mdx}
+<Compositemetricswarningnotice />
 
-{@include: ../common-items/_metrics-warning-notice-apm.mdx} 
+import Metricseventmodifydelete from "../common-items/_metrics-event-modify-delete.mdx";
+
+<Metricseventmodifydelete />
+
+import Metricseventconditionselecttargetguide from "../common-items/_metrics-event-condition-select-target-guide.mdx";
+
+<Metricseventconditionselecttargetguide />
+
+import Metricswarningnoticeapm from "../common-items/_metrics-warning-notice-apm.mdx";
+
+<Metricswarningnoticeapm />

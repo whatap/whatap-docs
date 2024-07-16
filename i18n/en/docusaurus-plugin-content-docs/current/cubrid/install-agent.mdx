@@ -14,17 +14,25 @@ import TR from '@site/src/components/TR';
 
 The following guides you to the basic installation method for using the WhaTap database monitoring service.
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## Download agent
 
-{@include: ../common-items/_db-install-agent-steps.mdx}  
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
+
+<Dbinstallagentsteps />
 
 3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
@@ -52,9 +60,10 @@ The following guides you to the basic installation method for using the WhaTap d
 
    Download the JDBC driver for the OS and version of your database server. https://www.cubrid.com/downloads
 
-<!-- 공통 Notes-->
+{/* 공통 Notes*/}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+<Dbinstallagentcommonnotes />
 
 ## Creating the monitoring account
 
@@ -94,10 +103,12 @@ Generate an encrypted UID for database connection. All user files must be run fo
 
 :::
 
-<!--## 에이전트 실행-->
+{/*## 에이전트 실행*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-{@include: ../common-items/_db-run-agent.mdx} 
+<Dbrunagent />
 
-<!--## XOS 에이전트 설치-->
+{/*## XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+<Dbinstallxosagent />

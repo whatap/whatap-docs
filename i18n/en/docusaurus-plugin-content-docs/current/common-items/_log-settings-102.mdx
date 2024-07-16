@@ -118,13 +118,13 @@ Select **_Activate log monitoring_** to set whether or not to enable the log mon
 
 ### Log Monitoring Data Setting{#log-data-setting}
 
-In the ![number 2](/img/number-02.png) area, you can see the **_Log Usage_**. Furthermore, you can change the settings for **_Data Retention_** and **_Log lookup password_**.
+In the ![number 2](/img/number-02.png) area, you can see the **_Log Usage_**. Furthermore, you can change the settings for **_Data retention_** and **_Log lookup password_**.
 
-#### Data retention period{#data-retention}
+#### Data retention {#data-retention}
 
 This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select **_Reset_**, the default data retention period is reset.
 
-#### Data Retention Per Category{#data-retention-per-category}
+#### Data retention per category {#data-retention-per-category}
 
 You can specify the log data retention periods for each category. **Log Count** means the log lines stacked for the period. For example, **_Today Log Count_** is the number of log lines accumulated during the day, and **_Expected Log Count_** is the number of log lines of the today's log count multiplied by the days of data retention. 
 
@@ -481,13 +481,13 @@ The data above the chart represents statistics for the lookup period. You can se
 
 Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
 
-| Set value                 | Required       | Description                                    |
-| ------------------------- | -------------- | ---------------------------------------------- |
-| Category                  | Mandatory      | Category to be set as fast index               |
-| Search Key                | Mandatory      | Search key for fast index setting              |
-| Case insensitive          | Option         | Whether to be case sensitive                   |
-| Rule                      | Mandatory      | `*` must be included at least one.             |
-| Enabled                   | Mandatory      | Active or inactive (default value is `true`)   |
+| Set value                 | Required       | Description                                                     |
+| ------------------------- | -------------- | --------------------------------------------------------------- |
+| Category                  | Mandatory      | Category to be set as fast index                                |
+| Search Key                | Mandatory      | Search key for fast index setting                               |
+| Case insensitive          | Option         | Whether to be case sensitive                                    |
+| Rule                      | Mandatory      | `*` must be included at least one.                              |
+| Enabled                   | Mandatory      | Active or inactive (default value is `true`) |
 
 ## Importing/exporting log settings {#export-import-settings}
 
@@ -521,31 +521,31 @@ After importing the JSON configuration file, you cannot save the imported settin
 
 Select the **_Log long-term archive statistics_** tab at the top of **_Log Setting_**. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
 
-<!-- 
+{/* 
 
 >
 
-![로그 장기 보관 통계](https://img.whatap.io/22/11/28/090932log_022_long_period_stat_config.png)
+![Log long-term archive statistics](https://img.whatap.io/22/11/28/090932log_022_long_period_stat_config.png)
 
-1. In the ***Log long-term archive statistics*** tab, select ***+ Add***. The ***Log long-term archive statistics*** window appears.
+1. In the **_Log long-term archive statistics_** tab, select **_+ Add_**. The **_Log long-term archive statistics_** window appears.
 
-1. Select a ***category*** to apply the rule.
+2. Select a **_category_** to apply the rule.
 
-1. Select ***Data Period***.
+3. Select **_Data Period_**.
 
-1. Set the ***statistic key*** to be saved with when a log that satisfies the rule occurs. You cannot set the same key twice.
+4. Set the **_statistic key_** to be saved with when a log that satisfies the rule occurs. You cannot set the same key twice.
 
-1. In ***Rule Name***, enter the rule name.
+5. In **_Rule Name_**, enter the rule name.
 
-1. Add ***tags***.
+6. Add **_tags_**.
 
-1. If ***Exclude*** is checked, statistical data is generated with the values that do not meet the entered conditions.
+7. If **_Exclude_** is checked, statistical data is generated with the values that do not meet the entered conditions.
 
-1. If ***Case Sensitive*** is checked, specify whether the value of the entered rule is case sensitive or not.
+8. If **_Case Sensitive_** is checked, specify whether the value of the entered rule is case sensitive or not.
 
-1. The generated rule can be deleted using the ***-*** icon or added using the ***+ Add*** button.
+9. The generated rule can be deleted using the **_-_** icon or added using the **_+ Add_** button.
 
--->
+*/}
 
 ### Adding the log long-term archive statistics{#log-long-term-archive-add}
 
@@ -562,7 +562,7 @@ If you select **_+ Add_** under the **_Log long-term archive statistics_** tab, 
 | Log detection condition      | Condition for generating log statistical data. Statistical data is generated based on how many logs that meet this condition are collected.         |
 | Exclude                      | If checked, statistical data is generated with values that do not correspond to the entered conditions.                                             |
 | Case Sensitive               | Specify case sensitivity for the values of the entered log detection conditions.                                                                    |
-| Enabled                      | Active or inactive (default value is `true`)                                                                                                        |
+| Enabled                      | Active or inactive (default value is `true`)                                                                                     |
 
 #### Example
 

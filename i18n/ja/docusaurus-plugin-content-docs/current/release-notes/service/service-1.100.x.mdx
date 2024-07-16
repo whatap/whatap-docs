@@ -35,9 +35,9 @@ displayed_sidebar: releaseSidebar
 
 - <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで割引額がない場合、利用金額が表示されないバグを修正
 
-- <Status>Fixed</Status>プロファイルアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(戻るボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されているため、前のページに移動しない問題を修正
+- <Status>Fixed</Status>プロフィールアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(戻るボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されているため、前のページに移動しない不具合を修正
 
-* * *
+---
 
 ### `Log`
 
@@ -111,7 +111,7 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI>メニューからタブ移動時、選択した組織のパラメータが維持されない現象の修正</p>
 
-* * *
+---
 
 ### `Container`
 
@@ -187,7 +187,7 @@ displayed_sidebar: releaseSidebar
 
 ### `共通`
 
-<p><Status>Change</Status> <UI>統合ダッシュボード</UI>, <UI>統合メトリックボード</UI>をサイドメニューから削除し、<UI>サイトマップ</UI>からのみアクセスできるように変更</p>
+<p><Status>Change</Status> <UI>統合ダッシュボード</UI>, <UI>統合メトリクスボード</UI>をサイドメニューから削除し、<UI>サイトマップ</UI>からのみアクセスできるように変更</p>
 
 ### `Log`
 
@@ -229,7 +229,7 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>Fixed</Status>ログプロファイル参照時、断続的にログが検索されないバグを修正</p>
 
-* * *
+---
 
 ### `Application`
 
@@ -259,13 +259,13 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>Fixed</Status> <UI>使用履歴</UI> > <UI>請求書プレビュー</UI>メニューから<b>Brwoser</b>, <b>Log</b>、<b>Cloud</b>、<b>Amazon ECS</b>製品の場合、ホストカラムデータを表示しないように修正</p>
 
-* * *
+---
 
 ### `Application`
 
 <p><Status>Fixed</Status> <b>Java</b>プロジェクトの<UI>管理</UI> > <UI>エージェントのインストール</UI> メニューからエージェントダウンロードコマンドの誤字を修正</p>
 
-* * *
+---
 
 ### `Database`
 
@@ -283,13 +283,13 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューからガイドメッセージのリンクをクリックすると空のページに移動する問題を修正</p>
 
-* * *
+---
 
 ### `Container`
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューから<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
-* * *
+---
 
 ### `ECS`
 
@@ -307,7 +307,7 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで初めてログデータの確認時にデータが出力されない問題を修正</p>
 
-* * *
+---
 
 ### `Browser`
 
@@ -325,7 +325,7 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>New</Status>Browserモニタリングサービスを開始します。 この度はご利用いただき誠にありがとうございました。 Browserモニタリングの詳細については、<a href='../../browser'>次の文書</a>を参照してください。</p>
 
-* * *
+---
 
 ### `共通`
 
@@ -397,7 +397,7 @@ displayed_sidebar: releaseSidebar
 
 <p><Status>Fixed</Status> MXQLデータ検索後、CSVがダウンロードされない問題を修正</p>
 
-* * *
+---
 
 ### `Application`
 
@@ -419,7 +419,7 @@ displayed_sidebar: releaseSidebar
 
 - <Status>Change</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューから<UI>MTID / CUSTID</UI>検索値の有効性チェックロジックを追加
 
-* * *
+---
 
 ### `Server`
 
@@ -427,13 +427,13 @@ displayed_sidebar: releaseSidebar
 
 - <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンパウンドアイ</UI>メニューの<UI>更新間隔(秒)</UI>に24桁を超える数字を入力すると、Topology Viewが描画されないバグを修正
 
-* * *
+---
 
 ### `Container`
 
 - <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI> > <img src='/img/ico-setting.svg' alt='設定アイコン'/>ボタン > <UI>1分以内に生成されたコンテナを表示する</UI>オプションの追加：生成から1分以内のコンテナの場合、明るい色で表示
 
-* * *
+---
 
 ### `CloudWatch`、`NCP`、`OCI`、`Azure`
 
@@ -445,7 +445,7 @@ displayed_sidebar: releaseSidebar
 
   - `CloudWatch`インストール手順ページがスクロールで隠れることなく、直接表示されるように説明部分の高さを修正
 
-* * *
+---
 
 ### `OCI`、`Cloud Monitoring`
 
@@ -453,7 +453,7 @@ displayed_sidebar: releaseSidebar
 
 - <Status>Fixed</Status> <UI>管理</UI> > <UI>クラウドモニタリング</UI> > <UI>Oracle Cloud Monitor</UI>タブで<b>RSA Public Key</b>生成時、認証情報が登録されていない状態でも登録済みとして区分されるバグを修正
 
-* * *
+---
 
 ### `ECS`
 

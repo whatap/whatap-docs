@@ -14,21 +14,21 @@ Docker環境でDockerFileを作成し、Node.jsエージェントをインスト
 
 Node.jsエージェントのサンプル ファイルは、次のように構成されています。
 
-- _html_：サンプルアプリケーションフォルダ
+- *html*：サンプルアプリケーションフォルダ
 
-- _Dockerfile_: Dockerイメージビルド用の設定ファイル
+- *Dockerfile*: Dockerイメージビルド用の設定ファイル
 
-- _http.js_: サンプルアプリケーションファイル
+- *http.js*: サンプルアプリケーションファイル
 
-- _package.json_: サンプルアプリケーション情報と依存関係(dependency)管理文書
+- *package.json*: サンプルアプリケーション情報と依存関係(dependency)管理文書
 
-- _whatap.conf_: モニタリングのオプション設定ファイル
+- *whatap.conf*: モニタリングのオプション設定ファイル
 
-- _paramkey.txt_: パラメータ暗号化キー
+- *security.conf* (又は*paramkey.txt*): パラメータの暗号化キー
 
 ## エージェントインストール
 
-_package.json_ファイルにNode.jsエージェントを追加するか、npmインストールコマンドを実行してください。
+*package.json*ファイルにNode.jsエージェントを追加するか、npmインストールコマンドを実行してください。
 
 ```json title='package.json'
 "dependencies": {

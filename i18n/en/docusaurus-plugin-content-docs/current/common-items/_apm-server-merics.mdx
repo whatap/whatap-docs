@@ -1,123 +1,454 @@
-### app_active_stat
+## app_active_stat {#d090dfbd19c09cd154a959c5a4bf4343}
 
-* * *
-
-It is the metric for the active transaction section.
+This category collects the metrics related to the active transaction step.
 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+### Tags {#667f1f457e1051e615455d0ecf95b947}
 
-| Tag name     | Description                  | Remarks       |
-| ------------ | ---------------------------- | ------------- |
-| container    | Container name               | Unique value  |
-| containerKey | Container's key value        | Unique value  |
-| host_ip      | Host IP                      | Unique value  |
-| okindName    | Name of the application type | -             |
-| oname        | Agent name                   | Unique value  |
-| onodeName    | Name of the application node | -             |
-| pid          | Application PID              | -             |
-| type         | Application type             | Language name |
+<div className="c3-30-60-10">
 
-#### Fields
+| Tag name       | Description                                                         | Remarks       |
+| -------------- | ------------------------------------------------------------------- | ------------- |
+| `container`    | Container name                                                      | Unique value  |
+| `containerKey` | Container's key value                                               | Unique value  |
+| `host_ip`      | Host IP Address                                                     | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
+| `oname`        | Agent name                                                          | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
+| `pid`          | Unique ID for the process                                           | -             |
+| `type`         | Platform type (application development language) | Language name |
 
-| Field name | Unit  | Description                                                 | Remarks |
-| ---------- | ----- | ----------------------------------------------------------- | ------- |
-| dbc        | Count | Number of transactions in progress for database connection  | -       |
-| httpc      | Count | Number of transactions in progress for HTTP call            | -       |
-| method     | Count | Number of transactions during execution of the method logic | -       |
-| socket     | Count | Number of transactions in progress for socket connection    | -       |
-| sql        | Count | Number of transactions in progress for SQL query            | -       |
+</div>
 
-### app_counter
+### Fields {#9a189c13b76ce8b9d1784cf1c790f766}
 
-* * *
+<div className="c4-20-10-50-10">
 
-It is the transaction metric.
+| Field name |  Unit | Description                                                 | Remarks |
+| ---------- | :---: | ----------------------------------------------------------- | ------- |
+| `dbc`      | Count | Number of transactions in progress for database connection  | -       |
+| `httpc`    | Count | Number of transactions in progress for HTTP call            | -       |
+| `method`   | Count | Number of transactions during execution of the method logic | -       |
+| `socket`   | Count | Number of transactions in progress for socket connection    | -       |
+| `sql`      | Count | Number of transactions in progress for SQL query            | -       |
 
-- Collection interval: 5 seconds
-- Statistical data: 5 minutes, 1 hour
+</div>
 
-#### Tags
+## app_actx_meter {#actxmeter}
 
-| Tag name     | Description                  | Remarks       |
-| ------------ | ---------------------------- | ------------- |
-| alias        | Application's alias          | Unique value  |
-| container    | Container name               | Unique value  |
-| containerKey | Container's key value        | Unique value  |
-| host_ip      | Host IP                      | Unique value  |
-| okindName    | Name of the application type | -             |
-| oname        | Agent name                   | Unique value  |
-| onodeName    | Name of the application node | -             |
-| pid          | Application PID              | -             |
-| type         | Application type             | Language name |
-
-#### Fields
-
-| Field name      | Unit        | Description                                                           | Remarks                        |
-| --------------- | ----------- | --------------------------------------------------------------------- | ------------------------------ |
-| active_tx_0     | Count       | Number of transactions in the section within 3 seconds                | -                              |
-| active_tx_3     | Count       | Number of transactions in the section between 3 seconds and 8 seconds | -                              |
-| active_tx_8     | Count       | Number of transactions in the section over 8 seconds                  | -                              |
-| active_tx_count | Count       | Number of all transactions in progress                                | -                              |
-| apdex_satisfied | Count       | Number of APDEX satisfactions                                         | -                              |
-| apdex_tolerated | Count       | Number of APDEX toleration cases                                      | -                              |
-| apdex_total     | Count       | Total number of APDEX transactions                                    | -                              |
-| arrival_rate    | Percent     | Transaction request rate                                              | -                              |
-| httpc_count     | Count       | Number of HTTP outbound calls                                         | -                              |
-| httpc_error     | Count       | Number of HTTP outbound call errors                                   | -                              |
-| httpc_time      | millisecond | Mean time of HTTP outbound calls                                      | -                              |
-| metering        | Core        | Number of cores on the host where the applications are running        | Limit CPU in case of container |
-| resp_time       | millisecond | Average response time                                                 | -                              |
-| sql_count       | Count       | Number of completed SQL cases                                         | -                              |
-| sql_error       | Count       | Number of SQL errors                                                  | -                              |
-| sql_fetch_count | Count       | Number of SQL fetches                                                 | -                              |
-| sql_fetch_time  | millisecond | Execution time of the SQL fetch                                       | -                              |
-| sql_time        | millisecond | Mean time for SQL execution                                           | -                              |
-| tps             | Count       | Number of transactions per second                                     | -                              |
-| tx_count        | Count       | Number of transactions processed                                      | -                              |
-| tx_dbc_time     | millisecond | Mean time for DB connection                                           | -                              |
-| tx_error        | Count       | Number of transaction errors                                          | -                              |
-| tx_httpc_time   | millisecond | Mean time of HTTP calls                                               | -                              |
-| tx_sql_time     | millisecond | Average of the sum of SQL execution times per transaction             | -                              |
-| tx_time         | millisecond | Transaction execution time                                            | -                              |
-
-### app_host_resource
-
-* * *
-
-It is the metric for application server resources.
+This category collects various transaction activities such as HTTP requests, SQL queries, and data transfers for active transactions.
 
 - Collection interval: 5 seconds
 - Statistical data: 5 minutes, 1 hour
 
-#### Tags
+### Tags {#actxmeter-tags}
 
-| Tag name     | Description                  | Remarks       |
-| ------------ | ---------------------------- | ------------- |
-| alias        | Application's alias          | Unique value  |
-| container    | Container name               | Unique value  |
-| containerKey | Container's key value        | Unique value  |
-| host_ip      | Host IP                      | Unique value  |
-| okindName    | Name of the application type | -             |
-| oname        | Agent name                   | Unique value  |
-| onodeName    | Name of the application node | -             |
-| pid          | Application PID              | -             |
-| type         | Application type             | Language name |
+<div className="c3-30-60-10">
 
-#### Fields
+| Tag name       | Description                              | Remarks |
+| -------------- | ---------------------------------------- | ------- |
+| `alias`        | Agent Alias                              | -       |
+| `container`    | Container name                           | -       |
+| `containerKey` | Container's key value                    | -       |
+| `host_ip`      | Host IP Address                          | -       |
+| `okindName`    | Group name categorized as `whatap.okind` |         |
+| `oname`        | Agent name                               | -       |
+| `onodeName`    | Group name categorized as `whatap.onode` |         |
 
-| Field name | Unit            | Description                              | Remarks                                                            |
-| ---------- | --------------- | ---------------------------------------- | ------------------------------------------------------------------ |
-| cpu        | Percent         | Host's CPU utilization                   | -                                                                  |
-| cpu_cores  | Positive number | Number of CPU cores of the host          | -                                                                  |
-| cpu_irq    | Percent         | CPU IRQ utilization of the host          | -                                                                  |
-| cpu_proc   | Percent         | CPU utilization of the Java process      | -                                                                  |
-| cpu_steal  | Percent         | CPU steal utilization of the host        | -                                                                  |
-| cpu_sys    | Percent         | CPU SYS utilization of the host          | -                                                                  |
-| cpu_usr    | Percent         | CPU user utilization of the host         | -                                                                  |
-| cpu_wait   | Percent         | CPU wait utilization of the host         | -                                                                  |
-| disk       | Percent         | Disk utilization of the root file system | Disk utilization of the file system path specified by JAVA setting |
-| mem        | Percent         | Memory utilization of the host           | -                                                                  |
-| swap       | Percent         | SWAP utilization of the host             | -                                                                  |
+</div>
+
+### Fields {#actxmeter-field}
+
+<div className="c4-20-10-50-10">
+
+| Field name         |  Unit | Description                                                   | Remarks |
+| ------------------ | :---: | ------------------------------------------------------------- | ------- |
+| `active_httpc`     | Count | Active HTTP client request count                              | -       |
+| `active_sql`       | Count | Active SQL query count                                        | -       |
+| `data`             |  byte | Data transfer volume                                          | -       |
+| `txcaller_group`   |  Int  | A constant to identify the group of the transaction caller    | -       |
+| `txcaller_oid`     |  Int  | A constant to identify the agent ID of the transaction caller | -       |
+| `txcaller_unknown` |  Int  | A constant to identify the unknown transaction caller         | -       |
+
+</div>
+
+## app_counter {#af284e6c5c43a9d3fd095d65dcde0944}
+
+This category collects the data related to various performance metrics and statistics for applications.
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes, 1 hour
+
+### Tags {#01815fbb5f3d1977c56e3cb4d0fcd7b8}
+
+<div className="c3-30-60-10">
+
+| Tag name       | Description                                                         | Remarks       |
+| -------------- | ------------------------------------------------------------------- | ------------- |
+| `alias`        | Application's alias                                                 | Unique value  |
+| `container`    | Container name                                                      | Unique value  |
+| `containerKey` | Container's key value                                               | Unique value  |
+| `host_ip`      | Host IP Address                                                     | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
+| `oname`        | Agent name                                                          | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
+| `pid`          | Unique ID for the process                                           | -             |
+| `type`         | Platform type (application development language) | Language name |
+
+</div>
+
+### Fields {#8b519866d9c828cba5ac22f6936c682a}
+
+<div className="c4-20-10-50-10">
+
+| Field name        | Unit        | Description                                                                                                                                                 | Remarks                        |
+| ----------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `active_tx_0`     | Count       | Number of transactions in the section within 3 seconds                                                                                                      | -                              |
+| `active_tx_3`     | Count       | Number of transactions in the section between 3 seconds and 8 seconds                                                                                       | -                              |
+| `active_tx_8`     | Count       | Number of transactions in the section over 8 seconds                                                                                                        | -                              |
+| `active_tx_count` | Count       | Number of all transactions in progress                                                                                                                      | -                              |
+| `apdex_satisfied` | Count       | Number of APDEX satisfactions                                                                                                                               | -                              |
+| `apdex_tolerated` | Count       | Number of APDEX toleration cases                                                                                                                            | -                              |
+| `apdex_total`     | Count       | Total number of APDEX transactions                                                                                                                          | -                              |
+| `arrival_rate`    | Percent     | Transaction request rate                                                                                                                                    | -                              |
+| `httpc_count`     | Count       | Number of HTTP outbound calls                                                                                                                               | -                              |
+| `httpc_error`     | Count       | Number of HTTP outbound call errors                                                                                                                         | -                              |
+| `httpc_time`      | millisecond | Mean time of HTTP outbound calls                                                                                                                            | -                              |
+| `metering`        | Core        | Number of cores on the host where the applications are running                                                                                              | Limit CPU in case of container |
+| `resp_time`       | millisecond | Average response time                                                                                                                                       | -                              |
+| `sql_count`       | Count       | Number of completed SQL cases                                                                                                                               | -                              |
+| `sql_error`       | Count       | Number of SQL errors                                                                                                                                        | -                              |
+| `sql_fetch_count` | Count       | Number of SQL fetches                                                                                                                                       | -                              |
+| `sql_fetch_time`  | millisecond | Execution time of the SQL fetch                                                                                                                             | -                              |
+| `sql_time`        | millisecond | Mean time for SQL execution                                                                                                                                 | -                              |
+| `tps`             | Count       | Number of transactions per second                                                                                                                           | -                              |
+| `tx_count`        | Count       | Number of transactions processed                                                                                                                            | -                              |
+| `tx_dbc_time`     | millisecond | Mean time for DB connection                                                                                                                                 | -                              |
+| `tx_error`        | Count       | Number of transaction errors                                                                                                                                | -                              |
+| `tx_httpc_time`   | millisecond | Mean time of HTTP calls                                                                                                                                     | -                              |
+| `tx_sql_time`     | millisecond | Average of the sum of SQL execution times per transaction                                                                                                   | -                              |
+| `tx_time`         | millisecond | Transaction execution time                                                                                                                                  | -                              |
+| `tx_time_sqr_sum` | Count       | Used to obtain statistical metrics such as sum of squares of transaction execution times and variance or standard deviation of transaction execution times. |                                |
+
+</div>
+
+## app_counter_okind {#appcounterokind}
+
+This is a category in which the metric of the `app_counter` counter is calculated based on the group classified by `whatap.okind`.
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes, 1 hour
+
+### Tags {#appcounterokind-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name    | Description                              | Remarks |
+| ----------- | ---------------------------------------- | ------- |
+| `okindName` | Group name categorized as `whatap.okind` | -       |
+
+</div>
+
+### Fields {#appcounterokind-fileds}
+
+<div className="c4-20-10-50-10">
+
+| Field name        | Unit        | Description                                                           | Remarks |
+| ----------------- | ----------- | --------------------------------------------------------------------- | ------- |
+| `active_tx_0`     | Count       | Number of transactions in the section within 3 seconds                | -       |
+| `active_tx_3`     | Count       | Number of transactions in the section between 3 seconds and 8 seconds | -       |
+| `active_tx_8`     | Count       | Number of transactions in the section over 8 seconds                  | -       |
+| `active_tx_count` | Count       | Number of all transactions in progress                                | -       |
+| `apdex`           | number      | APDEX (Application Customer Satisfaction)          | -       |
+| `apdex100`        | Percent     | Percentage in the`apdex` field                                        | -       |
+| `apdex_satisfied` | Count       | Number of APDEX satisfactions                                         | -       |
+| `apdex_tolerated` | Count       | Number of APDEX toleration cases                                      | -       |
+| `apdex_total`     | Count       | Total number of APDEX transactions                                    | -       |
+| `arrival_rate`    | Percent     | Transaction request rate                                              | -       |
+| `num_of_agent`    | Count       | Number of active agents in the group                                  | -       |
+| `realtime_user`   | Count       | Number of concurrent users                                            | -       |
+| `sql_count`       | Count       | Number of completed SQL cases                                         | -       |
+| `sql_error`       | Count       | Number of SQL errors                                                  | -       |
+| `sql_fetch_count` | Count       | Number of SQL fetches                                                 | -       |
+| `sql_fetch_time`  | millisecond | Execution time of the SQL fetch                                       | -       |
+| `sql_time`        | millisecond | Mean time for SQL execution                                           | -       |
+| `tps`             | Count       | Number of transactions per second                                     | -       |
+| `tx_count`        | Count       | Number of transactions processed                                      | -       |
+| `tx_dbc_time`     | millisecond | Mean time for DB connection                                           | -       |
+| `tx_error`        | Count       | Number of transaction errors                                          | -       |
+| `tx_httpc_time`   | millisecond | Mean time of HTTP calls                                               | -       |
+| `tx_sql_time`     | millisecond | Average of the sum of SQL execution times per transaction             | -       |
+| `tx_time`         | millisecond | Transaction execution time                                            | -       |
+
+</div>
+
+## app_counter_project {#appcounterproject}
+
+This is a category in which the `app_counter` counter metric is calculated on a project basis.
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes, 1 hour
+
+### Fields {#appcounterproject-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name        | Unit        | Description                                                           | Remarks |
+| ----------------- | ----------- | --------------------------------------------------------------------- | ------- |
+| `active_tx_0`     | Count       | Number of transactions in the section within 3 seconds                | -       |
+| `active_tx_3`     | Count       | Number of transactions in the section between 3 seconds and 8 seconds | -       |
+| `active_tx_8`     | Count       | Number of transactions in the section over 8 seconds                  | -       |
+| `active_tx_count` | Count       | Number of all transactions in progress                                | -       |
+| `apdex`           | number      | APDEX (Application Customer Satisfaction)          | -       |
+| `apdex100`        | Percent     | Percentage in the`apdex` field                                        | -       |
+| `apdex_satisfied` | Count       | Number of APDEX satisfactions                                         | -       |
+| `apdex_tolerated` | Count       | Number of APDEX toleration cases                                      | -       |
+| `apdex_total`     | Count       | Total number of APDEX transactions                                    | -       |
+| `arrival_rate`    | Percent     | Transaction request rate                                              | -       |
+| `num_of_agent`    | Count       | Number of active agents in the project                                | -       |
+| `realtime_user`   | Count       | Number of concurrent users                                            | -       |
+| `sql_count`       | Count       | Number of completed SQL cases                                         | -       |
+| `sql_error`       | Count       | Number of SQL errors                                                  | -       |
+| `sql_fetch_count` | Count       | Number of SQL fetches                                                 | -       |
+| `sql_fetch_time`  | millisecond | Execution time of the SQL fetch                                       | -       |
+| `sql_time`        | millisecond | Mean time for SQL execution                                           | -       |
+| `tps`             | Count       | Number of transactions per second                                     | -       |
+| `tx_count`        | Count       | Number of transactions processed                                      | -       |
+| `tx_dbc_time`     | millisecond | Mean time for DB connection                                           | -       |
+| `tx_error`        | Count       | Number of transaction errors                                          | -       |
+| `tx_httpc_time`   | millisecond | Mean time of HTTP calls                                               | -       |
+| `tx_sql_time`     | millisecond | Average of the sum of SQL execution times per transaction             | -       |
+| `tx_time`         | millisecond | Transaction execution time                                            | -       |
+
+</div>
+
+## app_host_resource {#d25e6aeee71f3006fdb5e989b90bcbb9}
+
+This is a category of data collected from the resources of the application server.
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes, 1 hour
+
+### Tags {#a5cebb5b8e9916d57d02dee96ce82729}
+
+<div className="c3-30-60-10">
+
+| Tag name       | Description                                                         | Remarks       |
+| -------------- | ------------------------------------------------------------------- | ------------- |
+| `alias`        | Application's alias                                                 | Unique value  |
+| `container`    | Container name                                                      | Unique value  |
+| `containerKey` | Container's key value                                               | Unique value  |
+| `host_ip`      | Host IP Address                                                     | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
+| `oname`        | Agent name                                                          | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
+| `pid`          | Unique ID of a specific process                                     | -             |
+| `type`         | Platform type (application development language) | Language name |
+
+</div>
+
+### Fields {#5253d43d6cca9bb1f05b3072c47b9485}
+
+<div className="c4-20-10-50-10">
+
+| Field name  | Unit            | Description                              | Remarks                                                            |
+| ----------- | --------------- | ---------------------------------------- | ------------------------------------------------------------------ |
+| `cpu`       | Percent         | Host's CPU utilization                   | -                                                                  |
+| `cpu_cores` | Positive number | Number of CPU cores of the host          | -                                                                  |
+| `cpu_irq`   | Percent         | CPU IRQ utilization of the host          | -                                                                  |
+| `cpu_proc`  | Percent         | CPU utilization of the Java process      | -                                                                  |
+| `cpu_steal` | Percent         | CPU steal utilization of the host        | -                                                                  |
+| `cpu_sys`   | Percent         | CPU SYS utilization of the host          | -                                                                  |
+| `cpu_usr`   | Percent         | CPU user utilization of the host         | -                                                                  |
+| `cpu_wait`  | Percent         | CPU wait utilization of the host         | -                                                                  |
+| `disk`      | Percent         | Disk utilization of the root file system | Disk utilization of the file system path specified by JAVA setting |
+| `mem`       | Percent         | Memory utilization of the host           | -                                                                  |
+| `swap`      | Percent         | SWAP utilization of the host             | -                                                                  |
+
+</div>
+
+## app_remote_active_stat {#appremoteactivestat}
+
+This category measures the number of transactions based on the response time range by monitoring the applications' DB connections and HTTP calls. The collection interval is 5 seconds.
+
+### Tags {#appremoteactivestat-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name    | Description                              | Remarks      |
+| ----------- | ---------------------------------------- | ------------ |
+| `alias`     | Application's alias                      | Unique value |
+| `container` | Container name                           | Unique value |
+| `host_ip`   | Host IP Address                          | Unique value |
+| `okindName` | Group name categorized as `whatap.okind` | -            |
+| `oname`     | Agent name                               | Unique value |
+| `onodeName` | Group name categorized as `whatap.onode` | -            |
+
+</div>
+
+### Fields {#appremoteactivestat-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name | Unit   | Description                                                                          | Remarks |
+| ---------- | ------ | ------------------------------------------------------------------------------------ | ------- |
+| `act0`     | count  | Number of active transactions with the response time of 3 seconds or less            | -       |
+| `act3`     | count  | Number of active transactions with the response time between 3 seconds and 8 seconds | -       |
+| `act8`     | count  | Number of active transactions with the response time of 8 seconds or more            | -       |
+| `actx`     | count  | Sum of `act0`, `act3`, and `act8`                                                    | -       |
+| `count`    | count  | Total number of active transactions collected during the monitoring period           | -       |
+| `error`    | count  | Number of erroneous transactions                                                     | -       |
+| `id`       | Int32  | Unique ID to identify active transactions                                            | -       |
+| `timeSum`  | number | Total response time for active transactions                                          | -       |
+| `type`     | string | `db` (DB Connection) or `httpc` (HTTP Call)    | -       |
+
+</div>
+
+## app_user {#appuser}
+
+This is a category that collects the data related to application users.
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes
+
+### Tags {#appuser-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name    | Description                              | Remarks      |
+| ----------- | ---------------------------------------- | ------------ |
+| `host_ip`   | Host IP Address                          | Unique value |
+| `oname`     | Agent name                               | Unique value |
+| `okindName` | Group name categorized as `whatap.okind` | -            |
+| `onodeName` | Group name categorized as `whatap.onode` | -            |
+
+</div>
+
+### Fields {#appuser-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name      | Unit  | Description                                                                                | Remarks |
+| --------------- | ----- | ------------------------------------------------------------------------------------------ | ------- |
+| `logbits`       | byte  | User log bit information (unit of data created by user activity events) | -       |
+| `realtime_user` | count | Number of concurrent users                                                                 | -       |
+
+</div>
+
+## db_pool_detail {#dbpooldetail}
+
+This category collects the detailed status of the database connection pool.
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes, 1 hour
+
+### Tags {#dbpooldetail-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name | Description                              | Remarks |
+| -------- | ---------------------------------------- | ------- |
+| `$okind` | Group name categorized as `whatap.okind` | -       |
+| `$onode` | Group name categorized as `whatap.onode` | -       |
+| `oname`  | Agent name                               | -       |
+| `pool`   | Type of database pool                    | -       |
+| `class`  | Database pooling class                   | -       |
+
+</div>
+
+### Fields {#dbpooldetail-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name | Unit  | Description                           | Remarks |
+| ---------- | ----- | ------------------------------------- | ------- |
+| `act`      | count | Number of active database connections | -       |
+| `idle`     | count | Number of idle database connections   | -       |
+
+</div>
+
+## event_5sec {#event5sec}
+
+This category collects the events that occur every 5 seconds. The collection interval is 5 seconds.
+
+### Tags {#event5sec-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name     | Description                           | Remarks |
+| ------------ | ------------------------------------- | ------- |
+| \`type       | Event type                            | -       |
+| `_no_cache_` | Presence of event information caching | -       |
+
+</div>
+
+### Fields {#event5sec-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name | Unit                               | Description                                                             | Remarks |
+| ---------- | ---------------------------------- | ----------------------------------------------------------------------- | ------- |
+| `curtime`  | Millisecond(ms) | Event occurrence time (UNIX epoch time, millisecond) | -       |
+
+</div>
+
+## event_cube_done {#eventcubedone}
+
+This category collects the events that occur when cube operation is completed. The collection interval is 5 seconds.
+
+### Tags {#eventcubedone-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name     | Description                           | Remarks |
+| ------------ | ------------------------------------- | ------- |
+| \`type       | Event type                            | -       |
+| `_no_cache_` | Presence of event information caching | -       |
+
+</div>
+
+### Fields {#eventcubedone-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name | Unit                               | Description                                                                      | Remarks |
+| ---------- | ---------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| `cubetime` | Millisecond(ms) | Cube operation completion time (UNIX epoch time, millisecond) | -       |
+| `date`     | date                               | Converts `cubetime` to the yyyymmdd format.                                      | -       |
+| `date9`    | date                               | Converts the `date` value to the GMT+9 time zone.                                | -       |
+| `hhmmss`   | time                               | Converts `cubetime` to the hhmmss format.                                        | -       |
+| `hhmmss9`  | time                               | Converts the `hhmmss` value to the GMT+9 time zone.                              | -       |
+
+</div>
+
+## visitor {#visitor}
+
+This is a category that collects the statistical data related to application users.
+
+- Collection interval: 1 hour
+- Statistical data: 1 hour
+
+### Tags {#visitor-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name    | Description                              | Remarks      |
+| ----------- | ---------------------------------------- | ------------ |
+| `host_ip`   | Host IP Address                          | Unique value |
+| `oname`     | Agent name                               | Unique value |
+| `okindName` | Group name categorized as `whatap.okind` | -            |
+
+</div>
+
+### Fields {#visitor-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name   | Unit  | Description                                                                                | Remarks |
+| ------------ | ----- | ------------------------------------------------------------------------------------------ | ------- |
+| `logbits`    | byte  | User log bit information (unit of data created by user activity events) | -       |
+| `visit_user` | count | Number of visitors during the search period                                                | -       |
+
+</div>

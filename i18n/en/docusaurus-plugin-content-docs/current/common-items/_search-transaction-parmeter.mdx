@@ -1,12 +1,12 @@
 ### Viewing SQL parameters {#transaction-parameter}
 
-Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-popup.svg) in the **_Tree view_** tab. The **_SQL_** window appears to display parameters.
+Select the SQL step in the <Cmdname sid="TTL06126" className="uitext" /> tab or select ![Popup Icon](/img/ic-popup.svg) in the <Cmdname sid="TTL06127" className="uitext" /> tab. The <UI>SQL</UI> window appears to display parameters.
 
 <ImgLang img='sql-parameter-query.png' desc='SQL' />
 
-<Xclude product='java'>
+<Xclude product='java,php,golang'>
 
-- **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/paramkey.txt_ file. You can change it to another string.
+- <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string in the *`WHATAP_HOME`/paramkey.txt* file. You can change it to another string.
 
   :::note
 
@@ -18,21 +18,33 @@ Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-
 
 <InDoc product='java'>
 
-- **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/security.conf_(_paramkey.txt_) file. You can change it to another string.
+- <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string(`paramkey`) in the *`WHATAP_HOME`/security.conf* file. You can change it to another string.
 
   :::note
 
-  **_Password_** is required to view the SQL variables and HTTP queries, and stop the threads. For more information, see [the following](install-agent#security).
+  <Cmdname sid="BTN06764" className="uitext" /> is required to view the SQL variables and HTTP queries, and stop the threads. For more information, see [the following](install-agent#security).
 
   :::
 
 </InDoc>
 
-- **_SQL formatting_**: You can indent and format your SQL statements for better readability.
+<InDoc product='php,golang'>
+
+- <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string(`paramkey`) in the *`WHATAP_HOME`/security.conf* file. You can change it to another string.
+
+  :::note
+
+  Depending on the agent version, the password configuration file may be different. Change the string in the _security.conf_ file or _paramkey.txt_ file.
+
+  :::
+
+</InDoc>
+
+- <Cmdname sid="format" className="uitext" />: You can indent and format your SQL statements for better readability.
 
 - ![Copy icon](/img/ico-copy.svg): A SQL statement can be copied to the clipboard.
 
-- **_Statistics_**: The **_SQL_** tab appears in **_STAT/REPORT_** > **_Statistics_**.
+- <Cmdname sid="statistics" className="uitext" />: Go to <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />.
 
 <Xclude product='kubernetes'>
 
@@ -44,6 +56,20 @@ To search SQL variables and HTTP queries, add the following options to the agent
 
 - For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
+<InDoc product="php">
+
+```ini title='whatap.conf'
+# SQL parameter lookup option: If the option is applied, SQL parameters are collected after being encrypted.
+whatap.profile_sql_param_enabled=true 
+
+// HTTP parameter lookup option: If the option is applied, HTTP query parameters are collected after being encrypted.
+whatap.profile_http_parameter_enabled=true 
+```
+
+</InDoc>
+
+<Xclude product="php">
+
 ```ini title='whatap.conf'
 # SQL parameter lookup option: If the option is applied, SQL parameters are collected after being encrypted.
 profile_sql_param_enabled=true 
@@ -51,6 +77,8 @@ profile_sql_param_enabled=true
 // HTTP parameter lookup option: If the option is applied, HTTP query parameters are collected after being encrypted.
 profile_http_parameter_enabled=true 
 ```
+
+</Xclude>
 
 :::
 

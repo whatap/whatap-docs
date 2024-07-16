@@ -8,34 +8,37 @@ tags:
   - DBXエージェント
 ---
 
-import CurProd from '@site/src/components/GetProductName.js';
 import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 
-DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成します。設定できるオプションについては、以下を参照してください。
+DBXエージェントに必要な設定は、*whatap.conf*ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
 
-{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
 
 ## データ収集
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
+
+<Dbagentsettingdatacollection />
 
 - **trx_rseg_history_len** <span class='type'>Boolean</span> <code class="my">MySQL 5.7 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   `trx_rseg_history_len`指標の収集有無を設定します。`true`に設定すると`db_mysql_counter`カテゴリで確認できます。
 
 - **active_transactions** <span class='type'>Boolean</span> <code class="my">MySQL 5.5 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   `active_transactions`指標の収集有無を設定します。`true`に設定すると`db_mysql_counter`カテゴリで確認できます。
 
 - **collect_variables_metric** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.15 or later</code>
 
-  デフォルト値`false`
+  既定値`false`
 
   DBパラメータをリアルタイムで収集できます。`variables_metric`オプションに設定したパラメータを収集します。
 
@@ -48,18 +51,67 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成�
   variables_metric=uptime,version
   ```
 
-## AWS RDS CloudWatch適用{#using-aws-rds}
+## アクティブセッション除外の設定
+
+DBXエージェントは、MySQLのアクティブセッションの一覧を収集しますが、特定のセッションを除外するオプションを提供します。除くセッションは`total_runtime`を計算する際に含めず、<Cmdname sid="side_dbSqlStat" className="uitext" />メニューでも該当するSQLは表示されません。
+
+- **skip_command** <span class='type'>String</span>
+
+  アクティブセッション収集時、オプション値に設定した`command`に該当するセッションは収集しません。例えば、次のように設定すると`Daemon`と`Sleep`ステータスのセッションは収集から除外できます。
+
+  ```ini title="whatap.conf"
+  skip_command=Daemon,Sleep
+  ```
+
+  :::note
+
+  オプション値で設定できる`command`についての詳細は、[次のリンク](https://dev.mysql.com/doc/refman/8.4/en/thread-commands.html)を参照してください。
+
+  :::
+
+- **skip_sys_session** <span class='type'>Int</span>
+
+  既定値`1`
+
+  - `0`: sysセッション(root, system user)をアクティブセッションの収集と`total_runtime`に含みます。
+
+  - `1`: sysセッションをアクティブセッションの収集には含めますが、`total_runtime`からは除外します。 
+
+  - `2`: sysセッションをアクティブセッションの収集と`total_runtime`から除外します。
+
+- **skip_user** <span class='type'>String</span>
+
+  オプション値に設定したユーザーのアカウントを、アクティブセッションと'total_runtime'から除外します。例えば、次のように設定すると、`root`、`system user`、`event_scheduler`アカウントの収集を除外できます。
+
+  ```ini title="whatap.conf"
+  skip_user=root,system user,event_scheduler
+  ```
+
+- **skip_whatap_session** <span class='type'>Int</span>
+
+  既定値`0`
+
+  オプション値を`1`に設定すると、WhaTapの収集クエリをアクティブセッションの収集と`total_runtime`から除外します。
+
+## AWS RDS CloudWatch適用 {#using-aws-rds}
 
 <AWSRDSdesc name='db_mysql_counter' />
 
-{@include: ../common-items/_db-agent-aws.mdx}
+import Dbagentaws from "../common-items/_db-agent-aws.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbagentaws />
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx}  
+{/* AES 256 암호화 적용 */}
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt />
 
 ## エージェント名の識別{#naming}
 
-{@include: ../common-items/_db-setting-agent-name-details.mdx}
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
 
-{@include: ../common-items/_db-agent-dbx-naming.mdx} 
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming />

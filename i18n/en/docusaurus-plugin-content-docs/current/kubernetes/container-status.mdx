@@ -15,7 +15,9 @@ WhaTap provides the function to change the container's chart metrics. Changeable
 
 <ImgLang img='whatap_kubernetes_container_map_state_customization.png' desc='Customizable chart metrics list' />
 
-{@include: ../common-items/_container-note-reset.mdx} 
+import Containernotereset from "../common-items/_container-note-reset.mdx";
+
+<Containernotereset />
 
 ## Metrics threshold settings and state colors
 
@@ -25,14 +27,14 @@ The colors and meanings for states such as <span class='normal'>Normal</span>, <
 
 ![Target status color](/img/container-map-status-color.png)
 
-| Status                              | Description                                                                           |
-| ----------------------------------- | ------------------------------------------------------------------------------------- |
+| Status                              | Description                                                                                              |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | <span class='normal'>Normal</span>  | Displays the normal section (three divisions under Warning).                          |
 | <span class='slow'>Warning</span>   | Indicates it is within the Warning threshold (more than Warning to Critical or more). |
 | <span class='vslow'>Critical</span> | Indicates it is within the Critical threshold (more than Critical).                   |
-| Dead                                | Container exit state                                                                  |
-| Wait                                | Container startup state                                                               |
-| Pause                               | Container's suspended state                                                           |
+| Dead                                | Container exit state                                                                                     |
+| Wait                                | Container startup state                                                                                  |
+| Pause                               | Container's suspended state                                                                              |
 
 ## Event-based container state
 

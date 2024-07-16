@@ -1,0 +1,104 @@
+---
+id: pending-pod-status
+title: Pending Pod Status
+description: The following describes the WhaTap's Pending Pod status menu.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Workload
+  - Pending Pod
+---
+
+Home > Select Project > **_Workload_** > **_Pending Pod Status_**
+
+:::note 
+
+**Requirements**
+
+WhaTap Master Agent 1.7.0 or later is required. 
+
+:::
+
+You can comprehensively analyze the cause of delays for each Pod by checking the status of Pods in pending status. The more Pending Pods there are within the cluster, the less efficient and stable the system can be. Maintain the stability of the cluster by monitoring Pods in Pending status to detect and resolve issues early as possible. 
+
+{/* Pending 상태의 Pod가 많을 수록 클러스터의 효율성과 안정성이 저하될 수 있습니다. Unresolved pending Pods can reduce the cluster resource efficiency and affect the application availability. You can see which Pods in the cluster are not scheduled and the cause of it.  **_Grouping_** allows you to understand which object causes the pending status. 이벤트 메시지==스케줄링 실패 원인? */}
+
+## Pending Pod list
+
+You can view the list of Pods in Pending status as follows. For each pending Pod, you can briefly check the QoS class, Pod name, timestamp, event message, namespace, and deployment information of the Pod. When you select a Pod, you can view the pending Pod details. For more information, see [the following](#pending-pod-detail). 
+
+<ImgLang img='k8s-pending-pod-status.png' desc='Pending Pod List' />
+
+#### Grouping and QoS Class inquiry
+
+It provides **grouping** for each object. You can easily check the status of all pending Pods related to a specific namespace, node, or replica set, making it easy to identify and analyze problems. You can also check the **number of Pods in Pending status by QoS Class**. When you select a QoS class, you can search for Pods belonging to the QoS class in the list.
+
+<ImgLang img='k8s-pending-pod-status-gr-qos.png' desc='Pending Pod grouping and viewing QoS Class' />
+
+:::note 
+
+For more information about **QoS Class** (Quality of Service Class), see [the following](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/) . 
+
+:::
+
+{/* :::note 
+
+**QoS Class Priority**
+
+Quality of Service Class (QoS Class) is one of the properties used to determine Pod scheduling and can be dynamically adjusted according to the Pod's resource request and usage. This is an important property for efficient management of cluster resources and fair distribution between Pods. For example, if a Pod assigned a high-priority QoS class is in pending status, quick problem analysis and cause identification are required. The priority of the <code class='pay'>Burstable</code> Pod is higher than <code class='bef'>BestEffort</code> Pods and lower than <code class='grnt'>Guaranteed</code> Pods. 
+
+- <code class='bef'>BestEffort</code>: This Pod has no resource request or limit.
+
+- <code class='pay'>Burstable</code>: Pods with limited resource requests.
+
+- <code class='grnt'>Guaranteed</code>: Pods with accurate resource requests.
+
+::: */}
+
+#### Filtering
+
+You can search by additional conditions through filtering. In addition to the filter selection window at the top, you can use the filtering through the tags at the bottom of each pending Pod in the list. When you select a tag, matching conditions for the object are added, and the tags that meet the conditions are displayed in blue. 
+
+<ImgLang img='k8s-pending-pod-status-filter.png' desc='Pending Pod filter' />
+
+## Pending Pod detail {#pending-pod-detail}
+
+When you select a Pod from the pending Pod list, you can check detailed information about the Pod through the **_Suggestions_**, **_Event_**, and **_Log_** tabs as follows: 
+
+<ImgLang img='k8s-pending-pod-status-detail.png' desc='Pending Pod details' />
+
+#### Suggestions
+
+The following provides various information on why the Pod is in Pending status and for troubleshooting it. 
+
+{/* 이벤트 메시지를 기반으로 현재 Pod가 Pending 상태에 놓인 원인과 문제 해결을 위한 다양한 정보를 다음과 같이 제공합니다.  */}
+
+- **QoS Class analysis**
+
+  You can check scheduling recommendations by analyzing the QoS class. 
+
+- **Detailed data collection time**
+
+  You can see when those details were collected. 
+
+- **Pending Pod event messages and troubleshooting suggestions**
+
+  It checks event messages, identifies problems, and suggests solutions based on them. 
+
+- **Information about issues**
+
+  It provides information about the problems occurred. For example, if there is a problem with the volume mounting process, it guides you to the volume settings. If there is a problem with node resources, it guides you to information to check the resource. 
+
+#### Event
+
+It provides information about events from the container running in the selected Pod. It is the same as the **_Event_** tab in **_Container Map_**. For more information, see [the following](https://docs.whatap.io/kubernetes/container-map-event).
+
+#### Log
+
+It provides information about the logs of the container running in the selected Pod. It is the same as the **_Log_** tab in **_Container Map_**. For more information, see [the following](https://docs.whatap.io/kubernetes/container-map-log). 
+
+:::note 
+
+Container logs can be viewed only after running the container. If a Pod remains in pending status before running the container, it is impossible to check the container log for the Pod. 
+
+:::

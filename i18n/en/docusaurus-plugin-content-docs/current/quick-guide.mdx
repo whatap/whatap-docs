@@ -15,25 +15,31 @@ For more information about installation and utilization of WhaTap Monitoring age
 
 ## Step-by-step guide for quick start
 
-* * *
+----
 
 ### ![](/img/number-01.png) WhaTap sign up{#account}
 
-{@include: account/_create-account.mdx}   
+import Createaccount from "./account/_create-account.mdx";
 
-* * *
+<Createaccount />
+
+----
 
 ### ![](/img/number-02.png) Project creation{#cproject}
 
-{@include: getting-started/_create-project-intro-v2.mdx}
+import Createprojectintrov2 from "./getting-started/_create-project-intro-v2.mdx";
 
-* * *
+<Createprojectintrov2 />
+
+----
 
 ### ![](/img/number-03.png) Checking the project access key{#accesskey}
 
-{@include: getting-started/_accesskey-intro.mdx} 
+import Accesskeyintro from "./getting-started/_accesskey-intro.mdx";
 
-* * *
+<Accesskeyintro />
+
+----
 
 ### ![](/img/number-04.png) Agent installation{#install}
 
@@ -131,7 +137,7 @@ If you encounter any problem during installation, see the product-specific **ins
 
 :::
 
-* * *
+----
 
 ### ![](/img/number-05.png) Viewing the dashboard{#dashboard}
 
@@ -139,27 +145,27 @@ When data is transferred to the WhaTap server after agent installation, you can 
 
 - The displayed performance metrics of applications are collected from the widgets of <Cmdname sid="app_dashboard" className="uitext" />, <Cmdname sid="transaction_map" className="uitext" />, <Cmdname sid="active_transaction" className="uitext" />, <Cmdname sid="application_topology" className="uitext" />, and <Cmdname sid="flexboard" className="uitext" />.
 
-  {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
+  <Videos url="https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4" />
 
 - The server performance metrics collected from each widget of <Cmdname sid="sms_resource_board" className="uitext" />, <Cmdname sid="sms_compound_eye" className="uitext" />, and <Cmdname sid="flexboard" className="uitext" /> can be viewed.
 
-  {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
+  <Videos url="https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4" />
 
 - The database performance metrics collected from each widget of <Cmdname sid="instance_list" className="uitext" />, <Cmdname sid="instance_monitoring" className="uitext" />, <Cmdname sid="multi_instance_monitoring" className="uitext" />, <Cmdname sid="slow_query" className="uitext" />, and <Cmdname sid="flexboard" className="uitext" /> can be viewed.
 
-  {@video: https://img.whatap.io/23/11/06/031831DB_prd.mp4}
+  <Videos url="https://img.whatap.io/23/11/06/031831DB_prd.mp4" />
 
 - For Kubernetes, the nodes, containers, applications, logs, and events are dynamically displayed through the widgets of <Cmdname sid="containerMap" className="uitext" />.
 
-  {@video: https://img.whatap.io/23/11/06/022318en_kubernetes_.mp4}
+  <Videos url="https://img.whatap.io/23/11/06/022318en_kubernetes_.mp4" />
 
 :::note
 
-For more information about the creation and configuration of Flex Dashboard, the user-defined integrated dashboard, see [the following](java/flex-board).
+For more information about the creation and configuration of Flex Dashboard, the custom integrated dashboard, see [the following](java/flex-board).
 
 :::
 
-* * *
+----
 
 ### ![](/img/number-06.png) External data collection{#collect}
 
@@ -168,7 +174,7 @@ You can expand the WhaTap service collection data by using Telegraf and Focus. F
 - You can install a WhaTap plugin to forward the data collected by Telegraf to the WhaTap collection server.
 - By installing the WhaTap Focus, you can upload the values collected by running your own check scripts or database queries to your WhaTap project.
 
-* * *
+----
 
 ### ![](/img/ic-number-07.svg) Alert Settings{#notification}
 
@@ -206,7 +212,7 @@ For more information about alert settings, see the following for each product.
 
 </details>
 
-* * *
+----
 
 ### ![](/img/ic-number-08.svg) Viewing reports{#report}
 
@@ -218,7 +224,7 @@ For more information about reporting, see [the following](java/report-intro). Fo
 
 :::
 
-* * *
+----
 
 ### ![](/img/ic-number-09.svg) Member Management{#member}
 
@@ -230,4 +236,4 @@ For more information about the member role scheme, see [the following](project/p
 
 :::
 
-* * *
+----

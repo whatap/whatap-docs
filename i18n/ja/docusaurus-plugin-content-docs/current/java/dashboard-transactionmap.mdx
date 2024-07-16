@@ -1,7 +1,7 @@
 ---
 id: dashboard-transactionmap
 title: TXマップ
-description: TXマップとは、終了した個々のトランザクションの応答時間を分布図形式で表現したチャートです。
+description: Javaモニタリングで個別トランザクション(TX)の応答時間を分布図の形で可視化して提供するTXマップ機能を案内します。リアルタイム及び過去データの照会機能を通じてTXの詳細を分析でき、これによって問題点を識別して分析するのに役立ちます。特に、ヒットマップとは異なり、個々のTXを表示することで、より詳細に分析できます。
 tags:
   - Java
   - TXマップ
@@ -9,28 +9,56 @@ tags:
   - アプリケーション
 ---
 
-{@include: ../common-items/_dashboard-txmap-desc.mdx} 
+import Dashboardtxmapdesc from "../common-items/_dashboard-txmap-desc.mdx";
 
-<!-- 트레이스 분석하기-->
+<Dashboardtxmapdesc />
 
-{@include: ../common-items/_dashboard-txmap-analysis.mdx}
+{/* 트레이스 분석하기*/}
+import Dashboardtxmapanalysis from "../common-items/_dashboard-txmap-analysis.mdx";
 
-<!-- 조회 기준 변경하기-->
+<Dashboardtxmapanalysis />
 
-{@include: ../common-items/_dashboard-txmap-set-view.mdx}
+{/* 조회 기준 변경하기*/}
+import Dashboardtxmapsetview from "../common-items/_dashboard-txmap-set-view.mdx";
 
-<!-- 과거 데이터 조회하기-->
+<Dashboardtxmapsetview />
 
-{@include: ../common-items/_dashboard-txmap-view-past-time.mdx} 
+{/* 과거 데이터 조회하기*/}
+import Dashboardtxmapviewpasttime from "../common-items/_dashboard-txmap-view-past-time.mdx";
 
-<!-- 필터 적용하기-->
+<Dashboardtxmapviewpasttime />
 
-{@include: ../common-items/_dashboard-txmap-apply-filter.mdx}
+{/* 필터 적용하기*/}
+import Dashboardtxmapapplyfilter from "../common-items/_dashboard-txmap-apply-filter.mdx";
 
-<!-- 에이전트 확인하기-->
+<Dashboardtxmapapplyfilter />
 
-{@include: ../common-items/_apm-dashboard-check-agent.mdx}
+{/* 에이전트 확인하기*/}
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
 
-<!-- 상위 목록 확인하기-->
+<Apmdashboardcheckagent />
 
-{@include: ../common-items/_dashboard-txmap-top-list.mdx} 
+{/* 분류별 에이전트 모니터링*/}
+import Dashboardselectagentcategory from "../common-items/_dashboard-select-agent-category.mdx";
+
+<Dashboardselectagentcategory />
+
+{/* 에이전트 검색하기 */}
+import SearchAgent from "../common-items/_apm-dashboard-search-agent.mdx";
+
+<SearchAgent />
+
+{/* 상위 목록 확인하기*/}
+import Dashboardtxmaptoplist from "../common-items/_dashboard-txmap-top-list.mdx";
+
+<Dashboardtxmaptoplist />
+
+{/* 사용자 IP 주소 추가*/}
+import Dashboardtxmapcustomip from "../common-items/_dashboard-txmap-custom-ip.mdx";
+
+<Dashboardtxmapcustomip />
+
+{/* 커스텀 */}
+import Custom from "../common-items/_dashboard-txmap-custom.mdx";
+
+<Custom />

@@ -8,4 +8,22 @@ tags:
 
 The functions of the Node.js application server are controlled.
 
-{@include: ../common-items/_nodejs-control-function.mdx}  
+import Nodejscontrolfunction from "../common-items/_nodejs-control-function.mdx";
+
+<Nodejscontrolfunction />
+
+- **ignore_nextjs_build_file_enabled** <span class='type'>Boolean</span> <code class="my">Node.js Agent v0.4.96 or later</code>
+
+  Default `true`
+
+  Set whether to monitor the _Next.js_ build file. If this option is set to `true`, the _Next.js_ build file is not monitored.
+
+- **ignore_nextjs_build_file_path** <span class='type'>String</span> <code class="my">Node.js Agent v0.4.96 or later</code>
+
+  Default `/next/`
+
+  You can specify the startup path of the _Next.js_ build file to exclude from monitoring. If the `ignore_nextjs_build_file_enabled` value is set to `true`, the setting is applied. You can set multiple paths by using comma (,) as the delimiter.
+
+  ```ini title="whatap.conf"
+  ignore_nextjs_build_file_path=/next/abc/,/next/def/
+  ```

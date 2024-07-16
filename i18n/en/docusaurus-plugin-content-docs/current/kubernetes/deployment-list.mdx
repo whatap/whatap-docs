@@ -1,0 +1,35 @@
+---
+id: deployment-list
+title: Deployment list
+description: You can see the deployment list.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Workload
+  - Deployment list
+toc_max_heading_level: 2
+---
+
+Home > Select Project > **_Workload_** > **_Deployment List_**
+
+The deployment list appears. It helps maintain the system stability and performance by monitoring the overall operation status of applications that consist of multiple Pods. When you select a desired column in the **_Deployment list_**, you can sort and view the list based on the column.
+
+<ImgLang img='k8s-deployment-list.png' desc='Deployment list' />
+
+- Real-time data is updated every 10 seconds.
+
+- It provides the services for searching, column sorting, and detailed view, and _CSV_ file downloading.
+
+  > CSV file name, _kubernetes_deployment_list\_`{pcode}`\_`{timestamp}`.csv_
+
+## Select Column
+
+import K8slistcl from "../common-items/_k8s-list-cl.mdx";
+
+<K8slistcl />
+ 
+## Display Detail
+
+import K8slistdetail from "../common-items/_k8s-list-detail.mdx";
+
+<K8slistdetail />

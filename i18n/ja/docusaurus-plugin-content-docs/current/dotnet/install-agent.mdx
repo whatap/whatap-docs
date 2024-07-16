@@ -11,9 +11,13 @@ import TR from '@site/src/components/TR';
 
 WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ja/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+<Createprojectv2 />
+
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
 
 ## エージェントダウンロード
 
@@ -48,13 +52,13 @@ WhaTapモニタリングサービスを使用するには、[会員登録](https
 
 モニタリング情報を収集するためのトレーサーと収集した情報をサーバーに送信するためのエージェントで構成されています。
 
-- _WhaTap.ClrProfiler.dll_：.NET CLR Profilerは、.NETトレーシングAPIに関連付けられています。
+- *WhaTap.ClrProfiler.dll*：.NET CLR Profilerは、.NETトレーシングAPIに関連付けられています。
 
-- _WhaTap.Trace.dll_：プロファイラーから渡されたデータを処理し、エージェントに送信します。
+- *WhaTap.Trace.dll*：プロファイラーから渡されたデータを処理し、エージェントに送信します。
 
-- _whatap_dotnet.exe_：エージェントおよび、トレーサーから渡された情報を収集サーバーに送信するプログラムです。
+- *whatap_dotnet.exe*：エージェントおよび、トレーサーから渡された情報を収集サーバーに送信するプログラムです。
 
-- _whatap.conf_：エージェントの環境設定ファイルです。
+- *whatap.conf*：エージェントの環境設定ファイルです。
 
 </details>
 

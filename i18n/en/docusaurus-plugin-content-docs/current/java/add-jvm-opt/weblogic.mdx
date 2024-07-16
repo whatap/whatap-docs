@@ -1,15 +1,17 @@
 ---
 id: weblogic
 title: WebLogic
-description: Complete the additional settings for JVM options in the WebLogic application server environment.
+description: The following provides the detailed guide on how to add Java Virtual Machine (JVM) options to integrate the WhaTap monitoring solution into WebLogic application. Through this document, users can learn step by step how to apply the required JVM settings to monitor the performance and availability of WebLogic applications after installing the Java agent. It includes the configuration of essential JVM options during agent installation, optimal configuration for smooth integration with WebLogic, and histogram query.
 tags:
   - Java
   - WebLogic
+  - Application
+  - Agent
 ---
 
 ## Adding JVM options
 
-Check the method how to add JVM options in the application server environment using WebLogic. 
+This guide explains how to add required JVM options to effectively use the Java monitoring agent in the WebLogic application server environment.
 
 Check the OS and then complete the configuration.
 
@@ -47,12 +49,17 @@ rem ########## WHATAP END ############
 
 :::note
 
-{@include: _java-17.mdx} 
+import Java17 from "./_java-17.mdx";
+
+<Java17 />
 
 :::
 
-{@include: _set-heap-memory.mdx} 
+import Setheapmemory from "./_set-heap-memory.mdx";
 
-## Starting the monitoring
+<Setheapmemory />
 
-{@include: ../../common-items/_start-apm.mdx} 
+{/* 다음 단계 */}
+import Nextstep from "../../common-items/_apm-next-step.mdx";
+
+<Nextstep />

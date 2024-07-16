@@ -1,4 +1,4 @@
-<InDoc product ='mysql,mysql-v1'>
+<InDoc product ='mysql'>
 
 - **deadlock_interval** <span class='type'>Int</span>
 
@@ -8,7 +8,7 @@
 
 </InDoc>
 
-<Xclude product ='redis'>
+<Xclude product ='redis,mongodb'>
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
@@ -50,13 +50,13 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis'>
+<Xclude product='cubrid,redis,mongodb'>
 
 - **replication_name** <span class='type'>String</span>
 
   If you set the replication name, it is considered that there is a Master/Slave relationship between DBs with the same `replication_name`.
 
-  As an option to define the replication set, if you set the `replication_name` option that has the same value for both master and slave nodes, the **_Instance Monitoring_** displays a tree structure. It also provides a widget to monitor the replication status in **_Flex Board_** based on the option value.
+  As an option to define the replication set, if you set the `replication_name` option that has the same value for both master and slave nodes, the <Cmdname sid="side_dbMonitoring" className="uitext" /> displays a tree structure. It also provides a widget to monitor the replication status in <Cmdname sid="side_flexboard" className="uitext" /> based on the option value.
 
 </Xclude>
 
@@ -74,7 +74,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis'>
+<Xclude product='cubrid,redis,mongodb'>
 
 - **skip_whatap_session** <span class='type'>Int</span>
 
@@ -84,7 +84,7 @@
 
 </Xclude>
 
-<InDoc product='mysql,mysql-v1'>
+<InDoc product='mysql'>
 
 - **skip_sys_session** <span class='type'>Int</span>
 
@@ -120,5 +120,39 @@
   - `library cache get hit ratio`
   - `latch hit ratio`
   - `shared pool free mem ratio`
+
+- **interval_sec** <span class='type'>Boolean</span> <code class="my">DBX agent v1.7.3 or later</code>
+
+  Default `true`
+
+  This option is used to convert the data collected from the agent every 5 seconds in seconds (`delta` value for 1 second) and report it.
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+- **collections** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  Set whether or not to save the collection size information. If you do not want to save it, change it to `false`.
+
+  :::note
+
+  For more information about the <Cmdname sid="side_dbSize" className="uitext" /> menu associated with this option, see [the following](database-size).
+
+  :::
+
+- **collections_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect data for storing the collection information. The default value is `5` and collection starts at 5 am.
+
+  :::note
+
+  For more information about the <Cmdname sid="side_dbSize" className="uitext" /> menu associated with this option, see [the following](database-size).
+
+  :::
 
 </InDoc>

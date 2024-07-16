@@ -10,7 +10,7 @@ tags:
   - 設定
 ---
 
-PHPエージェントは、必要な設定を_whatap.ini_ファイルに作成して変更することができます。ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)もエージェント設定機能を提供しています。
+PHPエージェントは、必要な設定を*whatap.ini*ファイルに作成して変更することができます。ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)もエージェント設定機能を提供しています。
 
 :::note
 
@@ -20,49 +20,56 @@ PHPエージェントは、必要な設定を_whatap.ini_ファイルに作成�
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-<!--서비스 화면에서 에이전트 설정하기 start-->
+{/*서비스 화면에서 에이전트 설정하기 start*/}
 
 ## サービス画面でエージェントを設定する{#set-agent-service}
 
-ホーム画面 > プロジェクト選択 > **_管理_** > **_エージェント設定_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentSetting" className="uitext" />
 
 import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
 
 <Desc name='whatap.ini'/>
 
-<!--Notes-->
+{/*Notes*/}
+import Setagentinservicedescnotes from "../common-items/_set-agent-in-service-desc-notes.mdx";
 
-{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+<Setagentinservicedescnotes />
 
-<!--옵션추가하기-->
+{/*옵션추가하기*/}
+import Setagentinserviceaddoptions from "../common-items/_set-agent-in-service-add-options.mdx";
 
-{@include: ../common-items/_set-agent-in-service-add-options.mdx}
+<Setagentinserviceaddoptions />
 
-<!--옵션 수정 또는 삭제 -->
+{/*옵션 수정 또는 삭제 */}
+import Setagentinservicemodifyoptions from "../common-items/_set-agent-in-service-modify-options.mdx";
 
-{@include: ../common-items/_set-agent-in-service-modify-options.mdx} 
+<Setagentinservicemodifyoptions />
 
-<!-- 여러에이전트 동시 적용 -->
+{/* 여러에이전트 동시 적용 */}
+import Setagentinservicemuliagent from "../common-items/_set-agent-in-service-muli-agent.mdx";
 
-{@include: ../common-items/_set-agent-in-service-muli-agent.mdx} 
+<Setagentinservicemuliagent />
 
-<!-- 에이전트 기본값 적용 -->
+{/* 에이전트 기본값 적용 */}
+import Setagentinserviceapplydafaultdesc from "../common-items/_set-agent-in-service-apply-dafault-desc.mdx";
 
-{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx} 
+<Setagentinserviceapplydafaultdesc />
 
 import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
 
 <DefaultItems name='whatap.ini'/>
 
-<!--Notes-->
+{/*Notes*/}
+import Setagentinservicedefaultnotes from "../common-items/_set-agent-in-service-default-notes.mdx";
 
-{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+<Setagentinservicedefaultnotes />
 
-<!--설정 공유하기-->
+{/*설정 공유하기*/}
+import Setagentsharing from "../common-items/_set-agent-sharing.mdx";
 
-{@include: ../common-items/_set-agent-sharing.mdx}  
+<Setagentsharing />
 
-<!--서비스 화면에서 에이전트 설정하기 end-->
+{/*서비스 화면에서 에이전트 설정하기 end*/}
 
 ## エージェント設定オプションの案内
 

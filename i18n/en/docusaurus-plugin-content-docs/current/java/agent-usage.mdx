@@ -1,9 +1,39 @@
 ---
 id: agent-usage
 title: Collection of CPU/memory/disk usage
-description: It collects the usage of CPU, memory, and disk.
+description: The following explains how the Java agent collects CPU, memory, and disk usage. Java's JMX library is basically used. If necessary, you can see how to collect performance metrics through Linux's proc directory or oshi and sigar libraries.
 tags:
   - Java
+  - Application
+  - Agent
 ---
 
-{@include: ../common-items/_java-usage.mdx}  
+The following explains how the Java agent collects CPU, memory, and disk usage. Java's JMX library is basically used. If necessary, you can see how to collect performance metrics through Linux's proc directory or oshi and sigar libraries.
+
+- **linux_proc_stat_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  For CPU, memory, and disk usages, set whether or not to collect from the Linux's _proc_ directory.
+
+- **oshi_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.1.0 or later</code>
+
+  Default `false`
+
+  When measuring the CPU, memory, and disk usages, set whether or not to use the OSHI libraries.
+
+- **oshi_netstat_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.31 or later</code>
+
+  Default `false`
+
+  Set whether or not to collect netstat metrics. The Maximum Transmission Unit (MTU) metric is added.
+
+- **sigar_enabled** <span class='type'>Boolean</span>
+
+  When measuring the CPU, memory, and disk usages, set whether or not to use the sigar libraries.
+
+  :::note
+
+  In earlier than whatap.agent.2.1.0, the default value is `true`. In whatap.agent.2.1.0 or later, the default value is `false`.
+
+  :::

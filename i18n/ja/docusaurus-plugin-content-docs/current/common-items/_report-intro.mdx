@@ -1,6 +1,12 @@
 ホーム画面 > プロジェクト選択 > <Cmdname sid="report" className="uitext" />
 
-レポートは、個々のプロジェクトのサービスの使用状況と障害の発生記録を報告する文書です。サービスモニタリング担当者は、レポートを通じて関連部署の担当者とステータスを共有します。
+<InDoc product="altibase,mssql,nodejs,tibero">
+
+画面の上に<Cmdname sid="report" className="uitext" />で![down-arrow](/img/down-arrow.svg)ボタンをクリックすると、日刊、週刊、月刊に分類された各種分析レポートを確認できます。希望するレポート様式を選択し、照会したい日付と時間、フィルターオプションを設定してください。![검색 아이콘](/img/ico-btn-search.png)ボタンを選択すると、選択したレポートを確認できます。
+
+</InDoc>
+
+レポートは、個々のプロジェクトのサービスの使用状況と障害の発生履歴を報告する文書です。サービスモニタリング担当者は、レポートを通じて関連部署の担当者とステータスを共有します。
 
 モニタリングデータ分析は、サービスの改善方向を定める指標となるため、極めて重要です。ただし、複数のダッシュボードからデータを収集して文書化するには煩雑な場合があります。  
 
@@ -34,11 +40,27 @@ WhaTapの<Cmdname sid="report" className="uitext" />メニューは、**レポ�
 
 レポートフォームの追加をリクエストする場合は、例に示すように、目的のHTMLおよびCSSフォームを添付することをお勧めします。詳細については、次のサンプルファイルを参照してください。 
 
-- <a target="_blank" href={ require("/exp/custom-report-template.html.zip").default } download>サンプルファイル</a>：ダウンロード後<span class='api'>ZIP</span>形式を解凍して<span class='api'>HTML</span>形式のサンプルファイルを確認してください。ファイル内のコメントにカスタマイズ用のCSS領域とHTML領域のガイダンスが記述されています。
+- <a target="_blank" href={ require("/exp/custom-report-template-ja.html.zip").default } download>サンプルファイル</a>：ダウンロード後<span class='api'>ZIP</span>形式を解凍して<span class='api'>HTML</span>形式のサンプルファイルを確認してください。ファイル内のコメントにカスタマイズ用のCSS領域とHTML領域のガイダンスが記述されています。
 
-<iframe src="/exp/custom-report-template.html" height="1050px" width="100%" scrolling="no"></iframe>
+<iframe src="../exp/custom-report-template-ja.html" height="1050px" width="100%" scrolling="no"></iframe>
 
 </details>
+
+:::caution
+
+**制約事項**
+
+- WhaTapモニタリングで現在提供しているレポートテンプレートの各項目を追加または修正、削除が必要な場合に提供できます。
+
+- 現在提供しているレポートテンプレートにないデータや分析結果を追加するには、開発者によるレビューが必要です。
+
+- データの追加および加工は、WhaTapモニタリングで収集および保存されたデータ(メトリクス)に限定します。他のツールや外部データは追加できません。
+
+- 特定の顧客企業のニーズを満たす汎用的でないレポートフォームは提供できません。
+
+- 詳細については、support@whatap.ioまたは営業担当者にお問い合わせください。
+
+:::
 
 ## メール送信予約
 

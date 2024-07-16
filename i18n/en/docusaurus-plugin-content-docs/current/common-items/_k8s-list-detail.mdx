@@ -1,0 +1,59 @@
+If the ![Magnifying glass icon](/img/ic-search.svg) **_Display Detail_** icon is selected in <InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">Application</InDoc><InDoc pages="deployment-list">Deployment</InDoc>, you can see the information details on the <InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">Application</InDoc><InDoc pages="deployment-list">Deployment</InDoc>.
+
+<Xclude pages="resource-application-list">
+
+:::note 
+
+The [Trace](container-map-trace), [Metrics](container-map-metrics), [Log](container-map-log), and [Event](container-map-event) tabs of the detailed view window are the same as in Container map's Display Detail.
+
+:::
+
+</Xclude>
+
+<InDoc pages="resource-application-list">
+
+:::note 
+
+The [Trace](container-map-trace), [Metrics](container-map-metrics), [Log](container-map-log), [Event](container-map-event), and [Call info](container-map-call-information) tabs of the detailed view window are the same as in Container map's Display Detail.
+
+:::
+
+</InDoc>
+
+### Resources
+
+After selecting a target, you can see the resource list and relationship diagram for the selected resource in the <Cmdname sid="resource" className="uitext" /> tab in the detailed view. 
+
+<InDoc pages="resource-pod-list">
+
+<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
+
+</InDoc>
+
+<InDoc pages="resource-application-list">
+
+<ImgLang img='k8s-app-list-detail.png' desc='Pod List details' />
+
+</InDoc>
+
+<InDoc pages="deployment-list">
+
+<ImgLang img='k8s-deployment-list-detail.png' desc='deployment list details' />
+
+</InDoc>
+
+#### Summary
+
+It provides a summary of the list of resources for the selected resource. If you select the detailed view icon next to the resource name, the corresponding resource list screen appears. 
+
+- <Cmdname sid="container" className="uitext" />: Goes to <Cmdname sid="container_list" className="uitext" /> with only the container filtered.
+
+- <Cmdname sid="podName" className="uitext" />: Goes to <Cmdname sid="podList" className="uitext" /> with only the Pod filtered.
+
+- <Cmdname sid="node" className="uitext" />: Goes to <Cmdname sid="node_detail" className="uitext" /> with the node name selected.
+
+- **_ReplicaSet_**: It provides a summary for active Pods and containers based on **_ReplicaSet_**.
+
+#### Relational diagram of resources
+
+You can visually see the relationships and status between resources. As in the list, you can check the detailed metric information by hovering your mouse over a Pod, container, or application. If you select a resource, the resource list page appears.

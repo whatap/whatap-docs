@@ -4,7 +4,7 @@
 
 :::tip
 
-**_サイトマップ_** > **_スレッド一覧／ダンプ_**メニューのスレッドリストで**_WhaTap-ActiveStackDump_**スレッドの**_CPU Time_**を確認することでオーバーヘッドを判断できます。
+<Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />メニューのスレッドリストで**WhaTap-ActiveStackDump**スレッドの<Cmdname sid="cpu_time" className="uitext" />を確認し、オーバーヘッドを判断できます。
 
 :::
 
@@ -41,7 +41,7 @@ org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapt
 
 <InDoc product='dotnet'>
 
-```c title='.NET'
+```csharp title='.NET'
 DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)
 System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr,IntPtr,IntPtr,Int32)
 System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr,IntPtr,IntPtr,Int32)
@@ -63,14 +63,20 @@ System.Threading.Thread.Sleep(Int32)
 
 - アクティブスタックダンプの時間間隔を調整できます。 
 
-  `active_stack_second=10`
+  ```ini title="whatap.conf"
+  active_stack_second=10
+  ```
 
 - アクティブスタックの最大行に制限されます。トップラインから基本の50行を収集します。
 
-  `trace_active_callstack_depth=50`
+  ```ini title="whatap.conf"
+  trace_active_callstack_depth=50
+  ```
 
 - アクティブスタックの各行をハッシュ処理して収集します。テキストは１度だけ収集します。 
 
 - 一度に収集される最大のアクティブスタックの数も制限されます。  
 
-  `active_stack_count=100`
+  ```ini title="whatap.conf"
+  active_stack_count=100
+  ```

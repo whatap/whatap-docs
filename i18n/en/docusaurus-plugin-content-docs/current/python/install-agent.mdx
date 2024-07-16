@@ -4,18 +4,26 @@ title: Agent Installation
 description: The following explains how to install an agent on the application server in the Python environment.
 tags:
   - Python
+  - Application
+  - Agent
   - Installation
 ---
 
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
-{@youtube: MWDFeegF6mQ}
+<Agentsignupguide />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+<Youtube ko="MWDFeegF6mQ" en="MWDFeegF6mQ" ja="MWDFeegF6mQ" />
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
+
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskeyv2 />
 
 ## Enabling the virtual environment
 
@@ -23,208 +31,277 @@ While the applications are using [virtualenv](https://docs.python.org/ko/3.7/lib
 
 ## Download agent
 
-Get the **access key** and then go to the **Download agent** section. Copy the following command to install the agent.
+Get the **access key** and then go to the <Cmdname sid="urlcheck-agent-setup-1-subject" className="uitext" /> section. Copy the following command to install the agent.
 
 ```bash
 pip install whatap-python
 ```
 
-:::note
+:::tip
 
 If installation is impossible with the pip command, download the installation file in [pypi WhaTap page](https://pypi.org/project/whatap-python/#files). Unzip the downloaded file and then proceed with installation.
 
+```bash
+tar xzvf whatap-python-1.x.x.tar.gz \
+cd whatap-python-1.X.Y.Z \
+python setup.py install
+```
+
 :::
+
+:::note
+
+For more information about the agent file structure, see the Python agent configuration file.
+
+:::
+
+<details>
+
+<summary>Python agent configuration file</summary>
+
+The Python agent file consists of a tracer that extracts data for application monitoring and passes to the WhaTap collection server, and the elements that help the tracer send the data.
+
+- _whatap_
+
+  - _agent_: A directory consisting of monitoring agent files that collect various performance metrics of the application server and transmit them to the server.
+
+  - _bootstrap_: A directory having the files that collect various data from the Python agents. It runs when the Python agent starts.
+
+  - _conf_ / _control_: A directory that consists of the files for configuring and controlling the Python agent.
+
+  - _net_ / _pack_: A directory that consists of the files related to UDP communication. It is responsible for transmitting the collected data to the server.
+
+  - _trace_: A directory that consists of the files that collect various transaction data for each application.
+
+  - _whatap.conf_: This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
+
+  - _paramkey.txt_: It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
+
+    To store the security keys in a file and view the actual data in the browser, enter the security key saved in the file. You can modify your security key by manually changing the content of the file. For more information about related options, see the following:
+
+    - [profile_http_parameter_enabled](agent-transaction#profile_http_parameter)
+
+    - [profile_sql_param_enabled](agent-dbsql#profile-sql-param)
+
+- _setup.py_: Definition file for packaging the whatap directories.
+
+</details>
 
 ### Docker
 
-1. In case of the application that is serviced to the docker container, add the following content to _DockerFile_.
+In case of the application that is serviced to the docker container, add the following content to _DockerFile_.
 
-   - Installing the **Python agent**.
+1. Installing the **Python agent**.
 
-     ```docker title='Dockerfile' {3}
-     ENV WHATAP_HOME /whatap
-     RUN mkdir -p /whatap
-     RUN pip install whatap-python
-     // In case requirements.txt is used, add whatap-python to the file.
-     ```
+   ```docker title='Dockerfile' {3}
+   ENV WHATAP_HOME /whatap
+   RUN mkdir -p /whatap
+   RUN pip install whatap-python
+   ```
 
-   - Register the settings for **access key** and **collection server IP**.
+   :::note
 
-     ```docker title='Dockerfile'
-     RUN touch /whatap/whatap.conf
-     RUN echo "license=[ Granted access key ]" > /whatap/whatap.conf
-     RUN echo "whatap.server.host=[ Collection server IP ]" >> /whatap/whatap.conf
-     RUN echo "app_name=[ Agent name ]" >> /whatap/whatap.conf
-     RUN echo "app_process_name=[ Application process name example)uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
-     ```
+   If you use _requirements.txt_, add **whatap-python** to that file.
 
-2. Before the previous command, `python manage.py runserver`, add `whatap-start-agent`.
+   :::
+
+2. Register the settings for **access key** and **collection server IP**.
+
+   ```docker title='Dockerfile'
+   RUN touch /whatap/whatap.conf
+   RUN echo "license=[ ACCESS_KEY ]" > /whatap/whatap.conf
+   RUN echo "whatap.server.host=[ COLLECTION_SERVER_IP ]" >> /whatap/whatap.conf
+   RUN echo "app_name=[ AGENT_NAME ]" >> /whatap/whatap.conf
+   RUN echo "app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]" >> /whatap/whatap.conf
+   ```
+
+3. Before the previous command, `python manage.py runserver`, add `whatap-start-agent`.
 
    ```docker title='Dockerfile'
    #ENTRYPOINT python manage.py runserver
    ENTRYPOINT whatap-start-agent python manage.py runserver
    ```
 
+## Agent CONFIG.
+
+### WHATAP_HOME default path configuration
+
+Specify the `$WHATAP_HOME` path for log and configuration files. It is recommended to create a new whatap directory.
+
+```bash
+$ export WHATAP_HOME=[PATH]
+```
+
+### Configuring the access key and collection server IP
+
+Execute the following command to generate _whatap.conf_ in the path specified in $WHATAP_HOME.
+
+```bash
+whatap-setting-config \
+--host [ COLLECTION_SERVER_IP ] \
+--license [ ACCESS_KEY ] \
+--app_name [ USER_DEFINED_AGENT_NAME ] \
+--app_process_name [ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]
+```
+
+### Show Configuration
+
+Check whether the configuration file has been created as follows.
+
+```bash
+$ cat $WHATAP_HOME/whatap.conf
+```
+
 :::note
 
-For more information about the agent file structure, see the Python agent file structure.
+**In case the role issue occurs**
+
+- Read and write permissions of _$WHATAP_HOME/whatap.conf_ for configuration
+
+- Read and write permissions of _$WHATAP_HOME/logs_ and the subordinate files for logging
+
+If you have role issues for the `$WHATAP_HOME` path, execute the following command to assign roles.
+
+```bash
+echo `sudo chmod -R 777 $WHATAP_HOME`
+```
 
 :::
 
-<details>
-<summary>Python agent structure file</summary>
-The Python agent file consists of a tracer that extracts the data needed to monitor applications and passes it to the WhaTap collection server, and the elements that help the tracer send the data.
-
-- _whatap.conf_
-
-  This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
-
-- _paramkey.txt_
-
-  It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
-
-  The security key is stored in a file. To check the actual collected data through a browser, enter the security key in the file to retrieve the data. 
-
-  You can modify the security key by directly modifying the file. The related options are as follows: 
-
-  - **profile_http_parameter_enabled** <span class='type'>Boolean</span>
-
-    Default `false`
-
-  - **profile_sql_param_enabled** <span class='type'>Boolean</span>
-
-    Default `false`
-
-</details>
-
-## Agent CONFIG.
-
-1. **WHATAP_HOME default path configuration**
-
-   Specify the `$WHATAP_HOME` path for log and configuration files. It is recommended to create a new whatap directory.
-
-   ```bash
-   $ export WHATAP_HOME=[PATH]
-   ```
-
-2. **Configuring the access key and collection server IP**
-
-   Execute the following command to generate _whatap.conf_ in the path specified in $WHATAP_HOME.
-
-   ```bash
-   whatap-setting-config \
-   --host [Collection server IP] \
-   --license [Access key] \
-   --app_name [Entry of user-defined agent name] \
-   --app_process_name [Process name, ex. uwsgi, gunicorn]
-   ```
-
-3. **Checking the configuration**
-
-   Check whether the configuration file has been created as follows.
-
-   ```bash
-   $ cat $WHATAP_HOME/whatap.conf
-   ```
-
-## Reflection for each application server
-
-With the `WHATAP_AGENT` startup command, restart the application server. After restarting, the WhaTap agent collects the application's monitoring data.
+## Applying by the application server environment
 
 ### Command
 
-```bash title=SH
+In the **Command** environment, add the `whatap-start-agent` command before the application startup command as follows:
+
+```bash title="BASH"
+# $ whatap-start-agent [Application start command]
 $ whatap-start-agent python manage.py runserver
 ```
 
 ### uWSGI
 
-#### Example 1
+In the **uWSGI** environment, add the `whatap-start-agent` command before the `uwsgi` command as follows:
 
-```bash title=SH
+```bash title="BASH"
 $ whatap-start-agent uwsgi --ini myapp.ini
 ```
 
-#### Example 2
+When running applications by registering uWSGI with the service, see the following example code.
 
-```bash title=VI
+```bash title="/etc/init.d/uwsgi"
 description "uWSGI application server handling myapp"
-
 start on runlevel [2345]
 stop on runlevel [!2345]
-
 exec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
-# or
-exec env WHATAP_HOME=[PATH] [절대 경로]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
+# or if you are using a virtual environment
+exec env WHATAP_HOME=[PATH] [ABSOLUTE_PATH]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
 ```
 
-#### Example 3
+```ini title="/etc/init/uwsgi.conf"
+...
+NAME="uwsgi"
+PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/local/bin/uwsgi
+PID=$RUN/$NAME.pid
+INI_PATH=/etc/$NAME/$NAME.ini
+
+########## WHATAP_AGENT_CONF ##########
+WHATAP_HOME=[PATH]
+WHATAP_AGENT=[ABSOLUTE_PATH]/whatap-start-agent
+...
+do_start(){
+  env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]
+}
+```
+
+:::note
+
+- If the user has been changed, you have to add the `WHATAP_HOME` environment variable.
+
+- If the virtual environment has been used, add the agent startup command in the absolute path.
+
+- Modify the service execution file (_/etc/init/uwsgi.conf_) and then start the application with the agent startup command.
+
+- Depending on the user environment, the path of the service executable file may differ.
+
+:::
+
+### Gunicorn
+
+In the **Gunicorn** environment, add the `whatap-start-agent` command before the `Gunicorn` command as follows:
 
 ```bash title=SH
 $ whatap-start-agent gunicorn myapp.wsgi
 ```
 
-### Gunicorn
+When running applications by registering Gunicorn with the service, see the following example code.
 
-#### Example 1
-
-```bash title=SH
-NAME="uwsgi"
-PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/usr/local/bin/uwsgi
-
-########## WHATAP_AGENT_CONF ##########
-WHATAP_HOME=[PATH]
-WHATAP_AGENT=[Absolute Path]/whatap-start-agent
-...
-do_start(){
-    env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]
-}
-```
-
-#### Example 2
-
-```bash title=SH
-description "Gunicorn application server handling myapp"
-
+```bash title="/etc/init.d/gunicorn"
+description "gunicorn application server handling myapp"
 start on runlevel [2345]
 stop on runlevel [!2345]
-
 exec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
-또는
-exec env WHATAP_HOME=[PATH] [Absolute Path]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
+# or if you are using a virtual environment
+exec env WHATAP_HOME=[PATH] [ABSOLUTE_PATH]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
 ```
 
-#### Example 3
-
-```bash title=SH
+```ini title="/etc/init/gunicorn.conf"
+...
 NAME="gunicorn"
 PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON=/usr/local/bin/gunicorn
+PID=$RUN/$NAME.pid
+INI_PATH=/etc/$NAME/$NAME.ini
 
 ########## WHATAP_AGENT_CONF ##########
 WHATAP_HOME=[PATH]
-WHATAP_AGENT=[Absolute Path]/whatap-start-agent
+WHATAP_AGENT=[ABSOLUTE_PATH]/whatap-start-agent
+
 ...
 do_start(){
-    env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]
+  env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]
 }
 ```
 
+:::note
+
+- If the user has been changed, you have to add the `WHATAP_HOME` environment variable.
+
+- If the virtual environment has been used, add the agent startup command in the absolute path.
+
+- Modify the service execution file (_/etc/init/gunicorn.conf_) and then start the application with the agent startup command.
+
+- Depending on the user environment, the path of the service executable file may differ.
+
+:::
+
 ### Supervisor
 
-```bash title=SH
+```ini title="supervisor.conf"
 [program:app-uwsgi]
 environment = WHATAP_HOME=[PATH]
-command = [Absolute Path]/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini
+command = [ABSOLUTE_PATH]/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini
 
 [program:nginx-app]
 command = /usr/sbin/nginx
 ```
 
-### Implementing your own WSGI application
+:::note
 
-```python title=PYTHON
+- If the user has been changed, you have to add the `WHATAP_HOME` environment variable.
+
+- If the virtual environment has been used, add the agent startup command in the absolute path.
+
+- Modify the service execution file (_/etc/supervisor/conf.d/supervisor.conf_) and then start the application with the agent startup command.
+
+- Depending on the user environment, the path of the service executable file may differ.
+
+:::
+
+### Implementing a WSGI application yourself
+
+```python title="PYTHON"
 import whatap
 
 @whatap.register_app
@@ -236,21 +313,43 @@ def simple_app(environ, start_response):
     return ['Hello world!\n']
 ```
 
-## Applying the agent and checking the service status
+### Applying with the code
 
-- **Application of the WhaTap Agent**
+You can apply the agent by adding the code that calls the API at the top line of the code as follows:
 
-  Apply the WhaTap agent by adding the following code that directly calls the top API.
+```python title="PYTHON"
+import whatap
+whatap.agent
+```
 
-  ```bash
-  import whatap
-  whatap.agent
-  ```
+When you run the application server, the agent starts collecting the monitoring data.
 
-- **Checking the service running**
+## Checking the service running
 
-  Execute the following command to check if the WhaTap Python service is running normally.
+Execute the following command to check whether the WhaTap Python service is running properly.
 
-  ```bash
-  ps -ef | grep whatap_python
-  ```
+```bash
+ps -ef | grep whatap_python
+```
+
+## Next steps
+
+<div className="nextstep">
+
+- **Checking the installation**
+
+  If you have applied all for project creation and agent installation, check the checklist in [the following] (install-check).
+
+- **Installation troubleshooting**
+
+  It provides various problems while installing the agent and the detailed instructions for resolving them. For more information, see [the following](agent-troubleshooting).
+
+- **Agent setting**
+
+  It provides various features for monitoring by applying options in the agent configuration (_whatap.conf_) file. It covers everything from basic configuration to settings for server connection and data transfer, the method how to manage the configuration files for multiple application servers, transaction tracing, and more. For more information, see [the following](set-agent).
+
+- **Starting the monitoring**
+
+  After all settings are made, restart the application server. The agents start collecting the data. First, check whether the monitoring data is collected in <Cmdname sid="side_appDashboard" className="uitext" />. For more information about <Cmdname sid="side_appDashboard" className="uitext" />, see [the following](dashboard).
+
+</div>

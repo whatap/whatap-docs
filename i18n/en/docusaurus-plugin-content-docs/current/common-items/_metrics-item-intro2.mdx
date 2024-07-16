@@ -1,4 +1,4 @@
-<!-- azure ncloud oci(oracle-cloud:개별 문서 존재)  -->
+{/* azure ncloud oci(oracle-cloud:개별 문서 존재)  */}
 
 **_Select a project in the initial screen of the WhaTap monitoring service, and then select _**Metrics**_ under Project Menu_**.
 
@@ -8,13 +8,18 @@ Metrics have the time-series data that represents the performance for the monito
 - **_Metrics Chart_**
 - **_Metric Anomaly Detection_**
 
-{@include: _metrics-stat.mdx}
+import Metricsstat from "./_metrics-stat.mdx";
+
+<Metricsstat />
 
 ## Metrics Cube
 
-{@include: ../common-items/_metrics-item-cube.mdx} 
+import Metricsitemcube from "../common-items/_metrics-item-cube.mdx";
+
+<Metricsitemcube />
 
 ## Metrics Chart
 
-{@include: ../common-items/_metrics-item-chart.mdx} 
- 
+import Metricsitemchart from "../common-items/_metrics-item-chart.mdx";
+
+<Metricsitemchart />

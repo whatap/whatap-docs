@@ -9,9 +9,13 @@ tags:
   - Application
 ---
 
-{@include: ../common-items/_apm-name-description.mdx}
+import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
-{@include: ../common-items/_agent-name-warning.mdx}
+<Apmnamedescription />
+
+import Agentnamewarning from "../common-items/_agent-name-warning.mdx";
+
+<Agentnamewarning />
 
 :::note
 
@@ -27,14 +31,14 @@ The default patterns used to identify the application server are as follows:
 
 The default pattern can be modified in _whatap.ini_.
 
-| Configuration | Description                                                         |
-| ------------- | ------------------------------------------------------------------- |
-| type          | Use the value set in whatap.app_name.                               |
+| Configuration | Description                                                                                               |
+| ------------- | --------------------------------------------------------------------------------------------------------- |
+| type          | Use the value set in whatap.app_name.                                                                     |
 | Ip#           | When IPs are divided by period (.), the #th digit (from 0) is used. |
-| process       | Use the value set in whatap.app_name.                               |
-| hostname      | The server host name is used.                                       |
-| dockerid      | Docker container ID                                                 |
-| ips           | Full IP (IPv4, IPv6)                                                |
+| process       | Use the value set in whatap.app_name.                                                                     |
+| hostname      | The server host name is used.                                                                             |
+| dockerid      | Docker container ID                                                                                       |
+| ips           | Full IP (IPv4, IPv6)                                                                   |
 
 - **whatap.object_name** <span class='type'>String</span>
 
@@ -42,16 +46,18 @@ The default pattern can be modified in _whatap.ini_.
 
   It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.  
 
-{@include: ../common-items/_php-restart-whatap-service.mdx}
+import Phprestartwhatapservice from "../common-items/_php-restart-whatap-service.mdx";
+
+<Phprestartwhatapservice />
 
 - **whatap.app_name** <span class='type'>String</span>
 
   It is a component of the agent name (ONAME) to identify applications. The value corresponds to `{type}` of `object_name`.  
 
-{@include: ../common-items/_php-restart-whatap-service.mdx}
+<Phprestartwhatapservice />
 
 - **whatap.app_process_name** <span class='type'>String</span>
 
   It is a component used in the agent naming (ONAME) scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.  
 
-{@include: ../common-items/_php-restart-whatap-service.mdx}
+<Phprestartwhatapservice />

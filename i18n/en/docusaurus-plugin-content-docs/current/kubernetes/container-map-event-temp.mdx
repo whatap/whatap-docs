@@ -52,7 +52,7 @@ It provides records for all events that occur during the resource lifecycle. The
 
     - Select a desired event level to search among <span class='vslow'>Critical</span>, <span class='k8s-normal'>Info</span>, and <span class='slow'>Warning</span>.
 
-    - The bars on the left for each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>.
+    - The bars on the left for each event indicate the event levels. The gray indicates <span class='k8s-normal'>Info</span>, the orange <span class='slow'>Warning</span>, and the red <span class='vslow'>Critical</span>.
 
 ## Kubernetes event
 
@@ -91,14 +91,14 @@ WhaTap Kubernetes collects and stores all Kubernetes events that occurred in the
 
 The bars on the left of each event indicate the event types. Gray indicates <span class='k8s-normal'>Normal</span> and orange <span class='slow'>Warning</span>. Available Kubernetes events according to the selected target are as follows:
 
-| Selected target      | Provided event                                                                  | Provision-related event                                                                              |
-| -------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| All                  | >                                                                               | All project events                                                                                   |
-| Namespace            | >                                                                               | All events under the namespace                                                                       |
-| Node                 | >                                                                               | Node events or all pod (container) events in the node                                                |
-| Deployment           | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
-| ReplicaSet           | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
-| Pod (container)      | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
+| Selected target                    | Provided event                                                                  | Provision-related event                                                                              |
+| ---------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| All                                | >                                                                               | All project events                                                                                   |
+| Namespace                          | >                                                                               | All events under the namespace                                                                       |
+| Node                               | >                                                                               | Node events or all pod (container) events in the node                             |
+| Deployment                         | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
+| ReplicaSet                         | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
+| Pod (container) | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
 
 Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `name`, `reason` and `type`.
 
@@ -108,7 +108,7 @@ Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `n
 
 ![WhaTap event](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_whatap.png)
 
-The bars on the left of each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>. Available WhaTap events according to the selected target are as follows:
+The bars on the left of each event indicate the event levels. The gray indicates <span class='k8s-normal'>Info</span>, the orange <span class='slow'>Warning</span>, and the red <span class='vslow'>Critical</span>. Available WhaTap events according to the selected target are as follows:
 
 | Selected target  | Provided event                                              |
 | ---------------- | ----------------------------------------------------------- |

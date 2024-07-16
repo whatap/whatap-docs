@@ -1,33 +1,53 @@
 ---
 id: agent-dbx-settings
 title: DBXエージェントの設定
-description: whatap.confファイルで設定できるオプションについて説明します。
+description: Redisデータベースでwhatap.confファイルに設定できるオプションについて説明します。
 tags:
   - Redis
-  - データベースモニタリング
+  - データベース
   - DBXエージェント
 ---
 
-import InDoc from '@site/src/components/InDoc.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import CurProd from '@site/src/components/GetProductName.js';
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 
-DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成します。設定できるオプションについては、以下を参照してください。
+DBXエージェントに必要な設定は、*whatap.conf*ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
 
-{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
+
+{/* 클러스터 구성 */}
+import ClusterSet from "../common-items/_db-agent-setting-cluster.mdx";
+
+<ClusterSet />
 
 ## データ収集
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
 
-<!-- AES 256 암호화 적용 -->
+<Dbagentsettingdatacollection />
 
-{@include: ../common-items/_db-aes-256-encrypt.mdx} 
+## AWS RDS CloudWatch適用 {#using-aws-rds}
+
+<AWSRDSdesc name='db_redis_counter' />
+
+import Dbagentaws from "../common-items/_db-agent-aws.mdx";
+
+<Dbagentaws />
+
+{/* AES 256 암호화 적용 */}
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt />
 
 ## エージェント名の識別{#naming}
 
-{@include: ../common-items/_db-setting-agent-name-details.mdx}
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
 
-{@include: ../common-items/_db-agent-dbx-naming.mdx} 
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming />

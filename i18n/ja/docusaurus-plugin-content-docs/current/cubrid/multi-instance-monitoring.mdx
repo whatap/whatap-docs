@@ -1,49 +1,56 @@
 ---
 id: multi-instance-monitoring
-title: マルチインスタンスモニタリング
+title: マルチインスタンス
 description: 複数のデータベースインスタンスの主要メトリクスを統合および表示できる機能を提供します。
 tags:
   - CUBRID
   - インスタンス
   - ダッシュボード
   - データベースモニタリング
-  - マルチインスタンスモニタリング
+  - マルチインスタンス
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import InDoc from '@site/src/components/InDoc.js';
+{/* 개요 */}
+import Dbmulitinstancemonitoringdesc from "../common-items/_db-mulit-instance-monitoring-desc.mdx";
 
-<!-- 개요 -->
+<Dbmulitinstancemonitoringdesc />
 
-{@include: ../common-items/_db-mulit-instance-monitoring-desc.mdx}
+{/* Notes */}
+import Dbmultiinstancemonitoringdescnotes from "../common-items/_db-multi-instance-monitoring-desc-notes.mdx";
 
-<!-- Notes -->
+<Dbmultiinstancemonitoringdescnotes />
 
-{@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
+{/* 기본 화면 안내 */}
+import Dbmultiinstancemonitoringbasic from "../common-items/_db-multi-instance-monitoring-basic.mdx";
 
-<!-- 기본 화면 안내 -->
+<Dbmultiinstancemonitoringbasic />
 
-{@include: ../common-items/_db-multi-instance-monitoring-basic.mdx} 
+{/* 지표 선택하기 */}
+import Dbselectmetricdatawidget from "../common-items/_db-select-metric-data-widget.mdx";
 
-<!-- 지표 선택하기 -->
+<Dbselectmetricdatawidget />
 
-{@include: ../common-items/_db-select-metric-data-widget.mdx} 
+{/* 레이아웃 설정하기 */}
+import Dbsetlayout from "../common-items/_db-set-layout.mdx";
 
-<!-- 레이아웃 설정하기 -->
+<Dbsetlayout />
 
-{@include: ../common-items/_db-set-layout.mdx}   
+{/* 액티브 세션 영역 활용하기 */}
+import Dbusingareaactivesession from "../common-items/_db-using-area-active-session.mdx";
 
-<!-- 액티브 세션 영역 활용하기 -->
+<Dbusingareaactivesession />
 
-{@include: ../common-items/_db-using-area-active-session.mdx}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails />
 
 ## テーブルカラムの変更{#change-column}
 
-{@include: ../common-items/_db-data-edit-column.mdx}
+import Dbdataeditcolumn from "../common-items/_db-data-edit-column.mdx";
 
-{@include: ../common-items/_db-query-details.mdx} 
+<Dbdataeditcolumn />
 
-<!-- 컬럼 정보 안내 -->
+{/* 컬럼 정보 안내 */}
+import Dbcubridinfoofcolumn from "../common-items/_db-cubrid-info-of-column.mdx";
 
-{@include: ../common-items/_db-cubrid-info-of-column.mdx} 
+<Dbcubridinfoofcolumn />

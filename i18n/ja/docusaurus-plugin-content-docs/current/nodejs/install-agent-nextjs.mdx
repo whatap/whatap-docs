@@ -1,0 +1,150 @@
+---
+id: install-agent-nextjs
+title: Next.js環境インストール
+description: Next.jsなどのサーバーサイドレンダリング(SSR)フレームワークでNode.jsアプリケーションモニタリングのためのCustom Server設定を案内します。
+tags:
+  - Node.js
+  - Next.js
+  - エージェント
+---
+
+**Next.js**などのサーバーサイドレンダリング(Server-side Rendering、SSR)フレームワークでアプリケーションをモニタリングするためにCustom Serverの設定が必要です。 一般的なNode.jsフレームワーク(例、Express.js、Nest.js)とは異なるアプローチが求められます。
+
+:::note
+
+参考資料：[Next.js Custom Server Configuration](https://nextjs.org/docs/pages/building-your-application/configuring/custom-server)
+
+:::
+
+## エージェントインストール {#installagent}
+
+次のコマンドを実行してエージェントをインストールしてください。
+
+```bash title="BASH"
+npm install whatap
+```
+
+## エージェントファイル構成 {#agentfiles}
+
+- *package.json*: サンプルアプリケーション情報と依存関係(dependency)管理文書ファイルです。
+
+- *whatap.conf*：モニタリングのためのエージェントの情報とアクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。 
+
+- *security.conf* (または*paramkey.txt*)：SQL変数、HTTPクエリの照会、Thread中止機能を利用する時に入力するセキュリティキーを保存します。
+
+- *server.js* (ファイル名例)：**Next.js**アプリインスタンス用のサーバー設定ファイルです。
+
+## server.jsコードを作成する
+
+**Next.js**アプリケーションインスタンスのための*server.js*ファイルを作成してください。 このファイルは、プロジェクトのルート(Root) 経路に位置する必要があります。
+
+### Whatapエージェント初期化
+
+```javascript title="server.js"
+var WhatapAgent = require('whatap').NodeAgent;
+```
+
+### Next.js及びその他の必要モジュールの読み込み
+
+```javascript title="server.js"
+const {createServer} = require('http')
+const {parse} = require('url')
+const next = require('next')
+```
+
+### アプリケーション設定
+
+```javascript title="server.js"
+const dev = process.env.NODE_ENV !== 'production'
+const hostname = 'localhost'
+const port = 3000
+```
+
+### Next.jsアプリケーションのインスタンス作成
+
+次のコードで`dev`は開発モードの起動有無を示し、`hostname`と`port`には、サーバーのホスト名とポート番号を設定してください。
+
+```javascript title="server.js"
+const app = next({dev, hostname, port})
+const handle = app.getRequestHandler()
+
+app.prepare().then(() => {
+    createServer(async (req, res) => {
+        try {
+            const parsedUrl = parse(req.url, true)
+            const {pathname, query} = parsedUrl
+
+            /**
+            * Render the page.
+            */
+            await handle(req, res, parsedUrl);
+        } catch (err) {
+            console.error('Error occurred handling', req.url, err)
+            res.statusCode = 500
+            res.end('internal server error')
+        }
+    })
+    .once('error', (err) => {
+        console.error(err)
+        process.exit(1)
+    })
+    .listen(port, () => {
+        console.log(`> Ready on http://${hostname}:${port}`)
+    })
+})
+```
+
+### 全体コードを見る{#fullcode}
+
+完成した完全なコードを参照してください。
+
+```javascript title="server.js"
+var WhatapAgent = require('whatap').NodeAgent;
+
+const {createServer} = require('http')
+const {parse} = require('url')
+const next = require('next')
+
+const dev = process.env.NODE_ENV !== 'production'
+const hostname = 'localhost'
+const port = 3000
+
+const app = next({dev, hostname, port})
+const handle = app.getRequestHandler()
+
+app.prepare().then(() => {
+    createServer(async (req, res) => {
+        try {
+            const parsedUrl = parse(req.url, true)
+            const {pathname, query} = parsedUrl
+
+            /**
+            * Render the page.
+            */
+            await handle(req, res, parsedUrl);
+        } catch (err) {
+            console.error('Error occurred handling', req.url, err)
+            res.statusCode = 500
+            res.end('internal server error')
+        }
+    })
+    .once('error', (err) => {
+        console.error(err)
+        process.exit(1)
+    })
+    .listen(port, () => {
+        console.log(`> Ready on http://${hostname}:${port}`)
+    })
+})
+```
+
+## アプリケーションを実行する
+
+```bash title="SH"
+node server.js
+```
+
+{/* 다음 단계 */}
+import Apminstallnextstep from "../common-items/_apm-install-next-step.mdx";
+
+<Apminstallnextstep />

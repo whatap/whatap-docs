@@ -9,9 +9,11 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../getting-started/_how-to-start-intro.mdx}
+import Howtostartintro from "../getting-started/_how-to-start-intro.mdx";
 
-インストール過程は、次の動画ガイドを参照してください。 
+<Howtostartintro />
+
+インストールの手順は、次の動画ガイドを参照にしてください。 
 
 <Youtube ko='q4mJdUIPRlM' en='-xfcaH3pQWw' ja='-xfcaH3pQWw' />
 
@@ -42,22 +44,26 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 #### S3
 
 - VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定することで正常な収集が可能です。
-- CloudFront：Log設定時の接頭辞は、**_cloudfront_**がデフォルト値です。パラメータ設定時に変更可能です。
+- CloudFront：Log設定でプレフィックスは、**_cloudfront_**が既定値です。パラメータ設定時に変更可能です。
 - ELB
 
 </details>
 
-<!--  プロジェクト作成 -->
+{/*  프로젝트 생성 */}
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 :::note 
 
 **プロジェクトアクセスキー**
 
-すでに**プロジェクトアクセスキー**を発行している場合、ボタンの代わりに発行されたキーが表示されます。
+すでに**プロジェクトアクセスキー**が発行された場合、ボタンの代わりに発行されたキーが表示されます。
 
 :::
 
@@ -75,41 +81,41 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 - **ConnectionTimeOut** <span class='type'>Second</span>
 
-  デフォルト値`10`
+  既定値`10`
 
   WhaTap ForwarderがWhaTap収集サーバーに接続するときのタイムアウト時間(秒)を指定します。
 
 - **MemorySize** <span class='type'>Int</span>
 
-  デフォルト値 `1024`
+  既定値 `1024`
 
   WhaTap Forwarderのメモリ割り当てサイズ(MB)を指定します。
 
 - **Timeout** <span class='type'>Second</span>
 
-  デフォルト値`150`
+  既定値`150`
 
   WhaTap Forwarderの休止期間(秒)を指定します。ログの送信リクエストがない場合に、Lambda Functionが削除されるまでの時間を指定します。 
 
 - **UseReservedConcurrency** <span class='type'>Boolean</span>
 
-  デフォルト値`false`
+  既定値`false`
 
   ログを安定して送信するために、WhaTap Forwarderに割り当てる最大Functionの数の指定可否を設定します。
 
 - **ReservedConcurrency** <span class='type'>Second</span>
 
-  デフォルト値`10`
+  既定値`10`
 
   `UseReservedConcurrency`の値が`true`である場合、WhaTap Forwarderに割り当てるFunctionの数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunctionの数は1,000です。ユーザーが使用できるFunctionの総数はアカウントあたりの総割り当てFunction数(1,000)で`ReservedConcurrency`の設定の値を引いたものに制限されます。
 
-  <!-- ユーザは、AWSアカウントあたりの割り当て可能なFunction数から`ReservedConcurrency`設定値を引いた分だけFunctionを使用することができます。-->
+  {/* 사용자는 AWS 계정 당 할당 가능한 총 Function 개수에서 `ReservedConcurrency` 설정 값을 뺀 만큼 Function을 사용할 수 있습니다. */}
 
 - **cloudfrontPrefix** <span class='type'>String</span>
 
-  デフォルト値`cloudfront `
+  既定値`cloudfront `
 
-  CloudFrontからS3へLogを送信する際に設定する接頭辞の値を意味します。
+  CloudFrontからS3へLogを送信する際に設定するプレフィックスを意味します。
 
 ### CloudFormation Stackインストール
 
@@ -281,13 +287,13 @@ IAMポリシーは、次の権限を割り当てます。
 
 ### IAMロールの作成{#create-iam-role}
 
-<!-- どのAWSアカウントIDで生成されたリソースに対して権限を許可するかを指定し、直前に生成したIAMポリシーをマッピングします。 -->
+{/* 어떤 AWS 계정 ID로 생성된 자원에 대해 권한을 허용할지를 지정하고 직전에 생성한 IAM 정책을 매핑합니다. */}
 
 作成したリソースのアクセス権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストールガイド_**セクションの**_AWS IAMロールの作成_**タブを参照してください。 
 
 1. AWS Management Consoleにログインしてから、IAMコンソールを開きてください。
 
-2. コンソールのナナビゲーションウィンドウで**_Roles_**を選択し、[number 1](/img/number-01.png)**Create role**ボタンを選択してください。
+2. コンソールの検索ボックスから**_Roles_**を選択し、[number 1](/img/number-01.png)**Create role**ボタンを選択します。
 
    ![IAM Role 1](/img/aws-log-iam-role-create.png)
 
@@ -368,7 +374,7 @@ WhaTap**_エージェント設定_**>**_インストール手順_**セクショ�
 
 <ImgLang img='aws-log-start.png' desc='AWS Logモニタリングの開始'/>
 
-インストールを完了した後、**_管理_** > **_ログ設定_**メニューに移動してください。 **_ログモニタリングの開始_**セクションで**_ログモニタリングサービスのアクティブ化_**トグルボタンをクリックし、AWS Logモニタリングを開始してください。 
+インストールを完了した後、**_管理_** > **_ログ設定_**メニューに移動します。**_ログモニタリングの開始_**セクションで**_ログモニタリングサービスの活性化_**を選択し、AWS Logモニタリングを開始します。 
 
 - ![アイコン](/img/ic-toggle-on.svg)トグルボタンをオンにすると、ログモニタリンがアクティブになります。
 - ![アイコン](/img/ic-toggle-off.svg)トグル ボタンをオフにするとログモニタリンが無効になります。ログは保存されなくなります。

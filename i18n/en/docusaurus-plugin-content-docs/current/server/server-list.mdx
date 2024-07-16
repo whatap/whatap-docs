@@ -9,47 +9,48 @@ tags:
   - Server
 ---
 
-Home > Select Project > **_Server List_** > **_Server List_**
+Home > Select Project > <Cmdname sid="side_serverList" className="uitext" /> > <Cmdname sid="side_serverList" className="uitext" />
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_Server List_** > **_Server List_** under Project Menu. The **_Server list_** displays the overall status of the collection server and provides the comparison functions between server management functions and between servers.
+Select a project in the initial screen of the WhaTap monitoring service, and then select <Cmdname sid="side_serverList" className="uitext" /> > <Cmdname sid="side_serverList" className="uitext" /> under Project Menu. The <Cmdname sid="side_serverList" className="uitext" /> displays the overall status of the collection server and provides the comparison functions between server management functions and between servers.
 
 <ImgLang img='server-list.png' desc='Server List'/>
 
-## ![](/img/number-01.png) Server Status
+## ![](/img/number-01.png) Data refreshing and server status
 
-It displays the current status of the collection server by status. The status is updated every 1 minute.
-
-- ![Disable icon](/img/ico-disable-agent.svg)**Disabled**: The agent cannot collect data from the server.
-
-- ![Danger icon](/img/ic-warning-critical.svg)**Danger** : Any fatal events occur in the collection server.
-
-- ![Warning icon](/img/ic-warning-filled.svg)**Warning** : Any warning events occur in the collection server.
-
-- ![Normal icon](/img/ic-check-circle-filled.svg)**Normal** : The agent is running normally in the collection server.
-
-- ![Icon](/img/ic-s-pause.svg)**Pause** : The agent temporarily paused collecting data.
-
-## ![](/img/number-02.png) Data update
+### Data update
 
 The data on the server list page is automatically updated every 60 seconds.
 
 - ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : You can stop automatic update of the data. 
 - ![Playback icon](/img/ic-play-grn.svg)**_Playback_** : You can restart the auto update you have stopped.
-- ![Refresh icon](/img/ic-refresh2.svg)**_Refresh_** : You can update the data based on the current time.
+
+### Server Status
+
+It displays the current status of the collection server by status. The status is updated every 1 minute.
+
+- ![Disable icon](/img/ico-disable-agent.svg) <Cmdname sid="status_inactive" className="b600" />: The agent cannot collect data from the server.
+
+- ![Danger icon](/img/ic-warning-critical.svg) <Cmdname sid="status_fatal" className="b600" />: Any fatal events occur in the collection server.
+
+- ![Warning icon](/img/ic-warning-filled.svg) <Cmdname sid="status_warning" className="b600" />: Any warning events occur in the collection server.
+
+- ![Normal icon](/img/ic-check-circle-filled.svg) <Cmdname sid="status_ok" className="b600" />: The agent is running normally in the collection server.
+
+- ![Icon](/img/ic-s-pause.svg) <Cmdname sid="status_paused" className="b600" />: The agent temporarily paused collecting data.
+
+## ![](/img/number-02.png) Searching
+
+Using the ![number-s](/img/number-02.png) **_search bar_** at the upper right corner, you can filter the list of servers that include input values from the server name (ONAME), server ID (OID), and tags.
 
 ## ![](/img/number-03.png) Server Status
 
-It displays the status of all servers to which agents are assigned. If an agent is selected in the list, the **_Server Detail_** page appears. For more information about **_Server Detail_**, see [the following](server-detail).
+It displays the status of all servers to which agents are assigned. If an agent is selected in the list, the <Cmdname sid="side_serverDetail" className="uitext" /> page appears. For more information about <Cmdname sid="side_serverDetail" className="uitext" />, see [the following](server-detail).
 
-### Search
+### Column Settings
 
-![number-s](/img/number-03.png) By using the **_search bar_** at the upper right of the area, you can filter the servers containing input values among server name (ONAME), server ID (OID), and tags.
+- ![Columns Icon](/img/ic-column.svg) <Cmdname sid="column_settings" className="uitext" />
 
-### Columns
-
-- ![Columns Icon](/img/ic-column.svg) **_Select Column_**
-
-  ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Select Column_**, you can select columns to displays in the table as follows.
+  ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg) <Cmdname sid="column_settings" className="uitext" />, you can select columns to displays in the table as follows.
 
   <ImgLang img='server-list-cl.png' desc='Server list column'/>
 
@@ -73,9 +74,13 @@ It displays the status of all servers to which agents are assigned. If an agent 
 
   :::
 
+### Refresh
+
+If you click ![Refresh icon](/img/ic-refresh2.svg) <Cmdname sid="refresh" className="uitext" />, the data is updated based on the current time.
+
 ### Filtering
 
-![number-s](/img/number-03.png) If you click ![Filter icon](/img/ico-filter.svg)**_Filter_** in the menu at the top, you can filter servers by using the tags. 
+![number-s](/img/number-03.png) If you click ![Filter icon](/img/ico-filter.svg) <Cmdname sid="filter" className="uitext" /> in the menu at the top, you can filter servers by using the tags. 
 
 Tags are automatically assigned when installing the agent. You can add input values. It identifies collection servers or filter the server status through tags.
 
@@ -87,17 +92,17 @@ Tags are automatically assigned when installing the agent. You can add input val
 
 ### Monitoring Management
 
-This function manages servers through agent commands. Click ![Server Management icon](/img/ico-setting.svg)**_Management_** and then select a server to apply the management features from the list. On the right, **_Pause_**, **_Restart_**, and **_Terminate_** buttons are activated.
+This function manages servers through agent commands. Click ![Server Management icon](/img/ico-setting.svg) <Cmdname sid="sms_management" className="uitext" /> and then select a server to apply the management features from the list. On the right, <Cmdname sid="paused_agent" className="uitext" />, <Cmdname sid="resume_agent" className="uitext" />, and <Cmdname sid="closed_agent" className="uitext" /> buttons are activated.
 
-- ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : Data collection for the agent is paused. It is displayed as the paused state in the server list.
+- ![Pause icon](/img/ic-s-pause.svg) <Cmdname sid="paused_agent" className="uitext" />: Data collection for the agent is paused. It is displayed as the paused state in the server list.
 
-- ![Restart icon](/img/ic-caret-right.svg)**_Restart_** : The agent is restarted.
+- ![Restart icon](/img/ic-caret-right.svg) <Cmdname sid="resume_agent" className="uitext" />: The agent is restarted.
 
-- ![Terminate icon](/img/ic-delete-critical.svg)**_Terminate_** : The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.
+- ![Terminate icon](/img/ic-delete-critical.svg) <Cmdname sid="closed_agent" className="uitext" />: The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.
 
 ### Agent Transfer
 
-By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can transfer the agent to another project.
+By selecting ![Transfer icon](/img/ic-swap.svg) <Cmdname sid="BTN07897" className="uitext" />, you can transfer the agent to another project.
 
 <ImgLang img='server-list-agent-transfer.png' desc='Server list agent transfer'/>
 
@@ -107,7 +112,7 @@ By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can tra
 
 3. By clicking ![right-arrow](/img/right-arrow.svg) **_Right arrow_**, you can transfer to the target project.
 
-4. If you click **_Save_**, the transfer is completed.
+4. If you click <Cmdname sid="save" className="uitext" />, the transfer is completed.
 
 :::note
 
@@ -118,15 +123,15 @@ By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can tra
 
 ### Comparison between servers
 
-The comparison chart between servers is provided as follows. 
+If you click ![Chart comparison icon](/img/ic-multiline-chart2.svg) <Cmdname sid="TTL06636" className="uitext" />, the cross-server comparison chart is provided as follows. 
 
 <ImgLang img='server-list-compare.png' desc='Comparison between servers'/>
 
-1. Select ![Chart comparison icon](/img/ic-multiline-chart2.svg) **_Compare_**.
+1. Select ![Chart comparison icon](/img/ic-multiline-chart2.svg) <Cmdname sid="TTL06636" className="uitext" />.
 
-2. Like ![number-s](/img/number-06.png), check whether the **_Compare_** column has been added on the left of the server list.
+2. Like ![number-s](/img/number-06.png), check whether the <Cmdname sid="TTL06636" className="uitext" /> column has been added on the left of the server list.
 
-3. In the **_Compare_** column, select a server for comparison..
+3. In the <Cmdname sid="TTL06636" className="uitext" /> column, select a server for comparison..
 
 4. To enable the comparison function, you can see the chart to compare in the ![number-s](/img/ic-number-07.svg) area.
 
@@ -134,8 +139,8 @@ The comparison chart between servers is provided as follows.
 
 - The comparison servers can be selected up to 5.
 
-- Unique colors are assigned to each server. The unique colors are used to distinguish servers in ![number-s](/img/ic-number-07.svg) **_Comparison Chart_**.
+- Unique colors are assigned to each server. The unique colors are used to distinguish servers in ![number-s](/img/ic-number-07.svg) <Cmdname sid="compare" className="uitext" />.
 
-- If you select **_Check period_**, the past data can be retrieved.
+- If you select <Cmdname sid="check_period" className="uitext" />, the past data can be retrieved.
 
 :::

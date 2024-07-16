@@ -25,6 +25,24 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 To collect logs in Kubernetes containers, select **_Apply log settings_** in the **_Check agent configuration_** tab. 
 
+{/* 
+
+>
+
+1. On the lower part of **_Check agent settings_**, select ![number1](/img/number-01.png) ![Agent CONFIG. menu icon](/img/ic-agent.svg) **_Agent CONFIG._**. 
+
+2. Go to **_Node Agent CONFIG._**, and then select **_Direct Input_** in the ![number2](/img/number-02.png) **_Write Options_** window.
+
+3. Enter the **_key_**, `logsink_enabled` and the **_value_**, `true` of the following agent configuration command in the ![number 3](/img/number-03.png) field.
+
+   ```bash
+   logsink_enabled=true 
+   ```
+
+4. Select ![number4](/img/number-04.png) **_Apply_**. You can collect logs to the Kubernetes container.
+
+*/}
+
 ### Enabling application log collection in the container{#k8s-log-app}
 
 It is available from Java 2.1.1 and Python 1.2.2. To collect logs of the applications running on Kubernetes containers, see the following. 
@@ -59,9 +77,13 @@ Home > Select Project > **_Log_** > **_Log Setting_**
 
 You can enable or disable the WhaTap log monitoring with the toggle button in the **_Activate log monitoring_** tab of the **_Starting the log monitoring_** section. 
 
-{@include: ../common-items/_log-java-start.mdx}
+import Logjavastart from "../common-items/_log-java-start.mdx";
 
-{@include: ../common-items/_log-active-note.mdx} 
+<Logjavastart />
+
+import Logactivenote from "../common-items/_log-active-note.mdx";
+
+<Logactivenote />
 
 ## Kubernetes log monitoring category guide
 

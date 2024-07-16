@@ -15,19 +15,27 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}   
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
 
-{@include: ../getting-started/_create-project-v2.mdx}
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
-{@include: ../getting-started/_accesskey.mdx} 
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
 
 ## WhaTapデータベースエージェントのダウンロード
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
-3. 解凍したフォルダの中から_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+<Dbinstallagentsteps />
+
+3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -41,19 +49,21 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
+   データベースサーバーのOSとバージョン用のJDBCドライバをダウンロードします。 
 
    **Oracle 10g R2バージョン以降**：https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
 
-<!-- 공통 Notes -->
+{/* 공통 Notes */}
+import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
-{@include: ../common-items/_db-install-agent-common-notes.mdx}
+<Dbinstallagentcommonnotes />
 
-<!-- 모니터링용 계정 생성 -->
+{/* 모니터링용 계정 생성 */}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
-{@include: ../common-items/_db-create-monitoring-account.mdx} 
+<Dbcreatemonitoringaccount />
 
-<!-- Oracle -->
+{/* Oracle */}
 
 ```bash showLineNumbers
 # 一般的な場合
@@ -73,14 +83,18 @@ grant alter system to whatap
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-<DBuserDesc name='default'/>
+<DBuserDesc />
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
 
-<!--## 에이전트 실행-->
+<Dbcreatedbuserfilebody />
 
-{@include: ../common-items/_db-run-agent.mdx} 
+{/*## 에이전트 실행*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
-<!--## XOS 에이전트 설치-->
+<Dbrunagent />
 
-{@include: ../common-items/_db-install-xos-agent.mdx}
+{/*## XOS 에이전트 설치*/}
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+
+<Dbinstallxosagent />

@@ -1,0 +1,119 @@
+---
+id: pod-init-perform-v2
+title: Pod起動分析
+description: Pod開始分析メニューを通じて、Podに割り当てられたリソースのサイズを最適化し、安定的にクラスターを運用することができます。
+tags:
+  - Kubernetes
+  - 分析
+  - Pod
+  - Pod起動分析
+toc_max_heading_level: 2
+---
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_podInitPerf" className="uitext" /> 
+
+:::note
+
+WhaTapノードエージェントバージョン**1.4.2以降**に対応します。 当該バージョン未満の場合、[既存メニュー](pod-init-perform)(旧**Pod初期化性能**) 画面を提供します。 
+
+:::
+
+円滑なクラスター運用のために、Podが安定的に動作するまでの性能を分析し、Podに割り当てられたリソースのサイズを最適化する必要があります。 <Cmdname sid="side_podInitPerf" className="uitext" />メニューは、Podが起動してから約5分間の変化を追跡します。 **Pending**状態から**Running**状態に、そして安定的な**Stable Running**状態につながる3段階のリソース使用量を分析することにより、リソース割当量を最適化できます。 
+
+これにより、運用者は、リソース効率の向上とコストの削減、スケーラビリティの向上、スケールの容易性などの利点を得ることができます。 
+
+## 基本画面ガイド
+
+<ImgLang img='k8s-pod-startup-analysis.png' desc='Pod起動分析' />
+
+### 上段オプション領域
+
+上段の![指示線1](/img/number-01.png)領域で以下のオプションを活用できます。 
+
+- ![更新アイコン](/img/ico-refresh.svg) **_更新_**アイコンを選択して![指示線2](/img/number-02.png)領域のPod領域を再度読み込むことができます。 
+
+- **_30日以内に生成されたPodのみ表示_** ![アイコン](/img/ic-toggle-off.svg)トグルを活性化して![指示線2](/img/number-02.png)領域のPod一覧で30日以内のPodだけを照会することができます。
+
+  :::note 
+
+  **_Pod開始分析_**メニューは、Pod生成日から直近30日以内の範囲内で5分間のPod開始データを分析します。 つまり、生成後30日が過ぎたPodの場合、開始性能を分析することはできません。 
+
+  :::
+
+- Pod検索入力ウィンドウに文字を入力して希望するPodを検索することができます。
+
+### Pod一覧領域
+
+![指示線2](/img/number-02.png)領域でPod一覧を確認することができます。 Pod一覧が開いたテーブルのヘッダーカラムには、次の情報が含まれています。
+
+- **_QoS Class_**：PodのQuality of Serviceを意味します。 QoSクラスは、リソース不足時のPodの優先順位を決定します。 優先順位の高いPodが優先順位の低いPodより先に終了します。
+
+  - Guaranteed: ノードで使用可能なリソースが保証され、他のPodよりも優先的に割り当てます。 最後に終了します。
+
+    - PodのすべてのコンテナがCPUおよびメモリのrequestを持っている場合です。
+
+    - PodのすべてのコンテナがCPUおよびメモリに limitを持っており、それらの値がrequestと同じである場合です。
+
+  - Burstable: Podはノードのリソースが不足している場合は、一部のリソースを割り当てます。
+
+    - Guaranteedクラスの条件を満たしていない場合です。
+
+    - PodのコンテナのいずれかがCPUおよびメモリに request または limitが設定されている場合です。
+
+  - BestEffort: リソース requestやlimitがないため、他のPodより優先度が低くなります。 最初に終了します。
+
+    - Podのすべてのコンテナには、CPUおよびメモリの requestと limitはありません。
+
+- **_Restart Count_**：Pod内コンテナの総再起動回数です。
+
+- **_CPU/Memory Limits_**: Pod内コンテナに設定されたCPU/Memory Limitsの総合(`resources.limits`)です。
+
+- **_CPU/Memory Requests_**: Pod内コンテナに設定されたCPU/Memory Requestsの総合(`resources.requests`)です。
+
+- **_Start Time_**: Pod生成時刻(`metadata.startTime`)です。
+
+:::note
+
+- QoS Classの詳細については、[次のリンク](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/)を参考にしてください。
+
+- Pod及びコンテナリソースの管理の詳細については、[次のリンク](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)を参考にしてください。
+
+:::
+
+## 詳細表示の案内
+
+![指示線2](/img/number-02.png)領域のPod一覧で分析を希望する項目の一番左の![詳細を見るアイコン](/img/ico-detail-view.svg) **_詳細を見る_**ボタンを選択してください。 選択したPodのコンテナ別の開始性能を区間別に分析した内容を次のように確認することができます。
+
+<ImgLang img='k8s-pod-startup-analysis-details.png' desc='Pod起動分析' />
+
+- **_Pending_**: Podを生成した後**_Running_**状態に進入する区間です。
+
+- **_Running_**: Podが**_Pending_**状態を経て安定化するまでの区間です。
+
+- **_Stable Running_**: Podが**_Running_**状態を経て安定化した区間です。
+
+:::note
+
+**安定化した状態(Stable Running)**
+
+WhaTapでは、Pod生成直後の約5分間、コンテナのCPU Limit比使用量の平均を計算します。 この平均値よりCPU使用量が少なくなる時点を安定化の開始状態と定義します。
+
+:::
+
+### 詳細分析する
+
+- 5分間に1つのコンテナが何度も再起動した場合は、最初に開始したコンテナの情報のみを表記します。 コンテナごとの再起動回数を確認してください。 再起動の回数が多い場合は、そのコンテナが正常に実行されていることを確認してください。
+
+  <ImgLang img='k8s-pod-startup-analysis-details-restart-count.png' desc='コンテナの再起動回数' />
+
+- **_Pending_**区間が長いなら、Podが**_Running_**状態に進入するまで長い時間がかかったという意味です。 Podの**_Pending_**状態を誘発する要因があるか点検してみてください。 
+
+  :::note
+
+  Podの**pending**ステータスの詳細については、[次のリンク](https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/)を参考にしてください。
+
+  :::
+
+- **_Running_**区間が長いなら、Pod内のコンテナが初めて実行される時、リソース使用量が多い区間があるという意味です。 コンテナの実行過程に問題がないか確認してください。
+
+- 全体的な初期リソース使用量が多い場合は、コンテナリソースのリクエストと制限を増やすことを検討してください。

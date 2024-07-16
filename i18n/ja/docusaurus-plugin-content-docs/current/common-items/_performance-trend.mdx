@@ -1,6 +1,6 @@
-ホーム画面>プロジェクト選択>**_分析_**>**_性能推移_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_perfTrend" className="uitext" />
 
-WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、**_プロジェクトメニュー_**下位の**_分析_**>**_性能推移_**メニューを選択してください。 照会を希望する特定の時間範囲内で行われた性能に対する様々な指標を**_性能推移_**メニューで確認することができます。 
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択した後、<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_perfTrend" className="uitext" />メニューを選択します。 照会を希望する特定の時間範囲内で、行われた性能に対する複数の指標を確認できます。 
 
 <ImgLang img='performance-trend.png' desc='性能推移' />
 
@@ -22,11 +22,11 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - 指定した照会時間範囲をチャート上段で確認できます。
 
-- チャート領域で**_同時接続ユーザー_**、**_応答時間_**、**_CPU_**、**_ヒープメモリ_**、**_アクティブトランザクション_**、**_トランザクションTop 10_**、**_HTTP呼び出しTop 10_**、**_SQL Top 10_**などの情報を確認できます。
+- チャート領域で<Cmdname sid="rt_user" className="uitext" />、<Cmdname sid="tps" className="uitext" />、<Cmdname sid="resp_time" className="uitext" />、<Cmdname sid="cpu" className="uitext" />、<Cmdname sid="heap_memory" className="uitext" />、<Cmdname sid="active_transaction" className="uitext" />、<Cmdname sid="transaction" className="uitext" /> <UI>Top 10</UI>、<Cmdname sid="httpc" className="uitext" /> <UI>Top 10</UI>、<Cmdname sid="sql" className="uitext" /> <UI>Top 10</UI>などの情報を確認できます。
 
-- ![スナップショットアイコン](/img/ic-camera.svg) **_スナップショット_**アイコンを選択して、ウィジェットのオプションを除いたチャートをスナップショットできます。
+- ![スナップショットアイコン](/img/ic-camera.svg) <Cmdname sid="sms_alert_snapshot" className="uitext" />アイコンを選択して、ウィジェットのオプションを除いたチャートをスナップショットできます。
 
-#### 同時接続ユーザー
+#### <Cmdname sid="rt_user" />
 
 リアルタイムブラウザのユーザー数を表示します。 ユーザーはブラウザIPに基づいてカウントします。 
 
@@ -34,46 +34,46 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 - 1時間統計を使用する場合、1時間リクエストを呼び出したユニークなユーザーの数を表示します。
 
-#### TPS
+#### <Cmdname sid="tps" />
 
-**_TPS_**(Tansaction Per Second)は、毎秒処理されたトランザクション数を意味します。 
+<Cmdname sid="tps" className="uitext" />（Tansaction Per Second）は、毎秒処理されたトランザクション数を意味します。
 
-#### 応答時間
+#### <Cmdname sid="resp_time" />
 
 リクエストに対する応答時間の平均を意味します。 平均が高い場合、特定の時点で遅いトランザクションが多く行われたか、またはトラブルが発生する可能性が高いです。
 
-#### CPU
+#### <Cmdname sid="cpu" />
 
 アプリケーションサーバーのCPU使用量を意味します。 使用量変化の推移が確認できます。
 
 <InDoc product='java,nodejs'>
 
-#### ヒープメモリ
+#### <Cmdname sid="heap_memory" />
 
-モニタリング対象プロセスの**_ヒープメモリ_**使用量を意味します。 時間によるメモリ使用量の変化を確認できます。
+モニタリング対象プロセスの**ヒープメモリ**使用量を意味します。 時間によるメモリ使用量の変化を確認できます。
 
 </InDoc>
 
 <InDoc product='python,dotnet,php,golang'>
 
-#### メモリ
+#### <Cmdname sid="memory" />
 
-モニタリング対象プロセスの**_メモリ_**使用量を意味します。
+モニタリング対象プロセスの**メモリ**使用量を意味します。
 
 </InDoc>
 
-#### アクティブトランザクション
+#### <Cmdname sid="active_transaction" />
 
 アクティブトランザクションとは、進行中のトランザクションを意味します。 アクティブトランザクションの詳細については、[次の文書](dashboard#active-trs)を参照してください。
 
-#### TXトップ10
+#### <Cmdname sid="transaction" /> Top 10
 
 トランザクション呼び出し統計を使用して、トランザクション呼び出しが多い上位10の一覧を提供します。
 
-#### HTTPコールトップ10
+#### <Cmdname sid="httpc" /> Top 10
 
 HTTPC統計を使用して、HTTP Call URLの件数が多い上位10の一覧を提供します。
 
-#### SQL Top 10
+#### <Cmdname sid="sql" /> Top 10
 
 SQL統計を使用して、SQL呼び出しの件数が多い上位10の一覧を提供します。 

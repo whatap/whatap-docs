@@ -39,9 +39,37 @@ whatap.server.host={proxyServer}
 EOL
 ```
 
-:::note
+{/* :::note
 
 The _whatap.conf_ file can be managed using the ConfigMap function in the user Kubernetes environment.
+
+::: */}
+
+#### Setting the Kubernetes internal application agent options
+
+The settings required for the Kubernetes internal application agent can be configured in the _whatap.conf_ file or through the container `env` field when releasing the agent. 
+
+- The options in the _whatap.conf_ file have higher priority than those set in the container `env` field. 
+
+- If no value is set in _whatap.conf_ or container `env`, the default value is used.
+
+- In case of the `license` and `whatap.server.host` options, use the **container environment variable** settings. 
+
+If any settings in the configuration file are changed or important settings are lost, the configuration may not work properly. Therefore, it is recommended to configure **container environment variables** in the Kubernetes environment. For more information about other agent control options, see [the following](https://docs.whatap.io/java/agent-control-function).
+
+{/* :::note 
+
+If any settings in the configuration file are changed or important settings are lost, the configuration may not work properly. Therefore, it is recommended to configure **container environment variables** in the Kubernetes environment. 
+
+::: */}
+
+:::note 
+
+**Option unavailable in the Kubernetes environment**
+
+- `whatap.name`: Unique name by which the collection server identifies agents. The name is generated based on the object on which the agent is running. Random assignment of users may cause problems with agent identification. 
+
+- `whatap.onode`: The Kubernetes cluster node name is set by default. It is used to receive information about the node to which the agent belongs. When specified by the user, it may be difficult to accurately identify the node. 
 
 :::
 
@@ -173,6 +201,32 @@ The following guides you to include **the specified version of the agent** in th
    whatap.server.host={proxyServer}
    ```
 
+   :::info
+
+   **Configuring the options for the Kubernetes internal application agent** 
+
+   The settings required for the Kubernetes internal application agent can be configured in the _whatap.conf_ file or through the container `env` field when releasing the agent. 
+
+   - The options in the _whatap.conf_ file have higher priority than those set in the container `env` field. 
+
+   - If no value is set in _whatap.conf_ or container `env`, the default value is used.
+
+   - In case of the `license` and `whatap.server.host` options, use the **container environment variable** settings. 
+
+   If any settings in the configuration file are changed or important settings are lost, the configuration may not work properly. Therefore, it is recommended to configure **container environment variables** in the Kubernetes environment. For more information about other agent control options, see [the following](https://docs.whatap.io/java/agent-control-function).
+
+   :::
+
+   :::note 
+
+   **Option unavailable in the Kubernetes environment**
+
+   - `whatap.name`: Unique name by which the collection server identifies agents. The name is generated based on the object on which the agent is running. Random assignment of users may cause problems with agent identification. 
+
+   - `whatap.onode`: The Kubernetes cluster node name is set by default. It is used to receive information about the node to which the agent belongs. When specified by the user, it may be difficult to accurately identify the node. 
+
+   :::
+
 4. Add the following to the startup command of Dockerfile. Check the agent file under the _whatap_ directory, and then enter the version in **X.Y.Z**.
 
    ```bash
@@ -270,13 +324,13 @@ env:
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
 - name: OKIND
-	value: {YOUR_OKIND_NAME}
+  value: {YOUR_OKIND_NAME}
 - name: license
-	value: {licenseKey}
-- name: whatap_server_host
-	value: {proxyServer}
-- name: whatap_micro_enabled
-	value: "true"
+  value: {licenseKey}
+- name: whatap.server.host
+  value: {proxyServer}
+- name: whatap.micro.enabled
+  value: "true"
 ```
 
 See the following example:
@@ -314,9 +368,9 @@ spec:
           value: #DeploymentName
         - name: license
           value: #licenseKey
-        - name: whatap_server_host
+        - name: whatap.server.host
           value: #proxyServer
-        - name: whatap_micro_enabled
+        - name: whatap.micro.enabled
           value: "true"
 ```
 
@@ -334,10 +388,12 @@ spec:
 
 - `license`: Key for agent authentication.
 
-- `whatap_server_host`: Host IP of the WhaTap collection server
+- `whatap.server.host`: Host IP of the WhaTap collection server
 
-- `whatap_micro_enabled`: Enables integration with containers.
+- `whatap.micro.enabled`: Enables integration with containers.
 
 :::
 
-{@include: _check-install-agent.mdx} 
+import Checkinstallagent from "./_check-install-agent.mdx";
+
+<Checkinstallagent />

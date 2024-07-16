@@ -1,5 +1,3 @@
-## Column information guide{#column-info}
-
 <Tabs groupId="db-columns">
 
 <TabItem value="activesession" label="Active session">
@@ -11,9 +9,9 @@
 | `user`            | SQL execution account                                                                   |
 | `host`            | Hostname that this thread is connected to.                                              |
 | `db`              | Default database name. If nothing, it is NULL.                                          |
-| `command`         | Running command type (Query/Sleep/Daemon, etc.)                                         |
-| `time`            | Execution time of the current command (sec)                                             |
-| `state`           | Current thread status (executing, updating, sending data, etc.)                         |
+| `command`         | Running command type (Query/Sleep/Daemon, etc.)                      |
+| `time`            | Execution time of the current command (sec)                          |
+| `state`           | Current thread status (executing, updating, sending data, etc.)      |
 | `query`           | Running statement. It displays the literal value SQL separated from `Processlist.info`. |
 | `query_param`     | Literal value separated from `query`                                                    |
 | `type`            | Thread type. FOREGROUND/BACKGROUND, etc.                                                |
@@ -39,20 +37,20 @@
 
 The following items are the metrics collected if the XOS agent has been installed.
 
-| Item       | Description                                                                               |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| `cputime`  | CPU usage time                                                                            |
-| `cpuusage` | CPU Utilization                                                                           |
-| `elapse`   | Elapsed time of CPU usage                                                                 |
+| Item       | Description                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
+| `cputime`  | CPU usage time                                                                                               |
+| `cpuusage` | CPU Utilization                                                                                              |
+| `elapse`   | Elapsed time of CPU usage                                                                                    |
 | `vsize`    | Virtual memory size (Kb)                                                                  |
 | `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
-| `state`    | Process status                                                                            |
+| `state`    | Process status                                                                                               |
 | `ioread`   | Actual time spent reading the block (milliseconds)                                        |
 | `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
-| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
-| `uid`      | user id                                                                                   |
-| `cmd`      | Executing command                                                                         |
-| `longcmd`  | Full path of cmd                                                                          |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process                          |
+| `uid`      | user id                                                                                                      |
+| `cmd`      | Executing command                                                                                            |
+| `longcmd`  | Full path of cmd                                                                                             |
 
 </TabItem>
 

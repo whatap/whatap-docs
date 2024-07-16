@@ -1,0 +1,39 @@
+You can search the logs containing keywords that have not been parsed, or for which no index has been created. In this case, all logs in the specified range are fully scanned. Therefore, the search speed may be slower compared to the indexed key. For standardized log data, it is recommended to search using the index key through **_Log parser setting_**.
+
+<ImgLang img='log-filter-search.png' desc='Applying non-parsing keyword filters'/>
+
+<InDoc pages="log-lt,aws-log-lt">
+
+1. Select **_Category_**. <InDoc pages="log-search,aws-log-search">It is required to set the category.</InDoc>
+
+2. In the **_Filter_** field, enter a desired keyword for a search after leaving spaces on the `content` basis. 
+
+   > e.g. `content *select*`
+
+3. Click <LinkImage img="ic-search.svg" className="ico" /> <UI>Search</UI> to view the logs.
+
+</InDoc>
+
+<InDoc pages="log-search,aws-log-search">
+
+1. Select **_Category_**. <InDoc pages="log-search,aws-log-search">It is required to set the category.</InDoc>
+
+2. In the **_Filter_** field, enter a desired keyword for a search after leaving spaces on the `content` basis. 
+
+   > e.g. `content *select*`
+
+3. Click <LinkImage img="ic-search.svg" className="ico" /> <UI>Search</UI> to view the logs. Several logs are viewed first. You can view a maximum of 10,000 logs per each search.
+
+4. You can make additional inquiries by scrolling down and selecting **_Get more logs_** at the bottom. 
+
+<ImgLang img='log-content-search-more.png' desc='View more'/>
+
+</InDoc>
+
+:::note 
+
+- <InDoc pages="log-search,aws-log-search">Among all logs, 10,000 logs are viewed for a server search range. The default range for a server search is 200,000, but the ratio may differ depending on the total log volume.</InDoc> <InDoc pages="log-lt,aws-log-lt">In case of <Cmdname sid="logTail" className="uitext" />, all logs can be viewed. Thus, the category is not required to be specified.</InDoc>
+
+- For more information about the parser configuration, see [the following](log-parser).
+
+:::
