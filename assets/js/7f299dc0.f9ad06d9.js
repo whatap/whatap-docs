@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[91587],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[82841],{
 
 /***/ 98143:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -249,7 +249,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Oracle Pro 에이전트"
+              children: "DMX 에이전트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "Query 기반으로 성능 데이터를 수집하여 서버로 전송합니다. 모니터링 대상 데이터베이스 서버에 에이전트를 직접 설치하지 않아도 별도의 에이전트 서버를 통해서 모니터링이 가능합니다."
@@ -308,7 +308,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 49445:
+/***/ 17986:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -333,22 +333,21 @@ const frontMatter = {
 	description: '데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.',
 	tags: [
 		'Oracle',
-		'데이터베이스',
-		'데이터베이스 모니터링'
+		'데이터베이스'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle/agent-settings",
+  "id": "oracle-v2/agent-settings",
   "title": "설정하기",
   "description": "데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
-  "source": "@site/docs/oracle/agent-settings.mdx",
-  "sourceDirName": "oracle",
-  "slug": "/oracle/agent-settings",
-  "permalink": "/whatap-docs/oracle/agent-settings",
+  "source": "@site/docs/oracle-v2/agent-settings.mdx",
+  "sourceDirName": "oracle-v2",
+  "slug": "/oracle-v2/agent-settings",
+  "permalink": "/whatap-docs/oracle-v2/agent-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle/agent-settings.mdx",
+  "editUrl": "undefined/docs/oracle-v2/agent-settings.mdx",
   "tags": [
     {
       "inline": true,
@@ -359,11 +358,6 @@ const metadata = {
       "inline": true,
       "label": "데이터베이스",
       "permalink": "/whatap-docs/tags/데이터베이스"
-    },
-    {
-      "inline": true,
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -373,18 +367,17 @@ const metadata = {
     "description": "데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
     "tags": [
       "Oracle",
-      "데이터베이스",
-      "데이터베이스 모니터링"
+      "데이터베이스"
     ]
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "설치 문제 해결",
-    "permalink": "/whatap-docs/oracle/troubleshooting"
+    "permalink": "/whatap-docs/oracle-v2/troubleshooting"
   },
   "next": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/oracle/agent-dbx-settings"
+    "permalink": "/whatap-docs/oracle-v2/agent-dbx-settings"
   }
 };
 const assets = {

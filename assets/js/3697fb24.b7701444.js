@@ -902,6 +902,10 @@ const metadata = {
   "previous": {
     "title": "이벤트 기록",
     "permalink": "/whatap-docs/oracle-pro/set-event-history"
+  },
+  "next": {
+    "title": "실험실",
+    "permalink": "/whatap-docs/oracle-pro/labs"
   }
 };
 const assets = {

@@ -1232,8 +1232,8 @@ const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2_
   "id": "구성도-확인",
   "level": 2
 }, ..._common_items_db_create_monitoring_account_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._getting_started_accesskey_v2_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
-  "value": "Pro 에이전트 다운로드",
-  "id": "pro-에이전트-다운로드",
+  "value": "에이전트 다운로드",
+  "id": "에이전트-다운로드",
   "level": 2
 }, {
   "value": "에이전트 설정",
@@ -1327,8 +1327,8 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
         className: "remark-sectionize-h2",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-          id: "pro-에이전트-다운로드",
-          children: "Pro 에이전트 다운로드"
+          id: "에이전트-다운로드",
+          children: "에이전트 다운로드"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["에이전트 설치 화면에서 사용자의 환경과 일치하는 오라클 버전을 선택한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "download",

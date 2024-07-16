@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93740],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11058],{
 
 /***/ 98143:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -249,7 +249,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Oracle Pro 에이전트"
+              children: "DMX 에이전트"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "Query 기반으로 성능 데이터를 수집하여 서버로 전송합니다. 모니터링 대상 데이터베이스 서버에 에이전트를 직접 설치하지 않아도 별도의 에이전트 서버를 통해서 모니터링이 가능합니다."
@@ -308,7 +308,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 73313:
+/***/ 85861:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -330,30 +330,30 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'agent-settings',
 	title: '설정하기',
-	description: '데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.',
+	description: 'MongoDB 데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.',
 	tags: [
-		'MySQL',
+		'MongoDB',
 		'데이터베이스',
-		'데이터베이스 모니터링'
+		'에이전트 설정'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/agent-settings",
+  "id": "mongodb/agent-settings",
   "title": "설정하기",
-  "description": "데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
-  "source": "@site/docs/mysql/agent-settings.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/agent-settings",
-  "permalink": "/whatap-docs/mysql/agent-settings",
+  "description": "MongoDB 데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
+  "source": "@site/docs/mongodb/agent-settings.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/agent-settings",
+  "permalink": "/whatap-docs/mongodb/agent-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/agent-settings.mdx",
+  "editUrl": "undefined/docs/mongodb/agent-settings.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MySQL",
-      "permalink": "/whatap-docs/tags/my-sql"
+      "label": "MongoDB",
+      "permalink": "/whatap-docs/tags/mongo-db"
     },
     {
       "inline": true,
@@ -362,29 +362,29 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+      "label": "에이전트 설정",
+      "permalink": "/whatap-docs/tags/에이전트-설정"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "agent-settings",
     "title": "설정하기",
-    "description": "데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
+    "description": "MongoDB 데이터베이스 에이전트 서버에 있는 whatap.conf 파일을 통해 설정할 수 있는 옵션에 대해 알아봅니다.",
     "tags": [
-      "MySQL",
+      "MongoDB",
       "데이터베이스",
-      "데이터베이스 모니터링"
+      "에이전트 설정"
     ]
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "설치 문제 해결",
-    "permalink": "/whatap-docs/mysql/troubleshooting"
+    "permalink": "/whatap-docs/mongodb/troubleshooting"
   },
   "next": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/mysql/agent-dbx-settings"
+    "permalink": "/whatap-docs/mongodb/agent-dbx-settings"
   }
 };
 const assets = {
