@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55498,7 +55498,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -56393,10 +56393,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IP形式に合わない。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56485,7 +56485,7 @@
   },
   "NTC08193": {
     "en": "This is the column name ({column}) used in the default column. Please enter a different name.",
-    "ja": "基本列で使用される列名（{column}）。別の名前を入力してください。",
+    "ja": "デフォルト列で使用される列名（{column}）。別の名前を入力してください。",
     "ko": "기본 컬럼에서 사용하는 컬럼 이름({column})입니다. 다른 이름을 입력하세요.",
     "zh": "This is the column name ({column}) used in the default column. Please enter a different name.",
     "service_id": "NTC08193"
@@ -56582,10 +56582,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events",
+    "zh": "Number of events occurring",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -56667,7 +56667,7 @@
   },
   "NTC08219": {
     "en": "A test message was requested to be sent to a mobile device.",
-    "ja": "テストメッセージをモバイル機器に送信するよう要求しました。",
+    "ja": "テストメッセージをモバイル機器に送信するよう依頼しました。",
     "ko": "테스트 메시지를 모바일 기기로 전송 요청 하였습니다.",
     "zh": "A test message was requested to be sent to a mobile device.",
     "service_id": "NTC08219"
@@ -56790,6 +56790,13 @@
     "ko": "와탭 쿠버네티스 에이전트 버전 <strong>{version}</strong> 이상에서 제공하는 기능입니다. 기능을 사용하려면 에이전트를 업데이트 해주세요. <br/> (현재 마스터 에이전트 버전: {masterVersion}, 현재 최소 노드 에이전트 버전: {nodeVersion})",
     "zh": "This feature is provided by WhaTap Kubernetes agent version <strong>{version}</strong> or higher. Please update your agent to use the feature. <br/> (Current master agent version: {masterVersion}, Current minimum node agent version: {nodeVersion})",
     "service_id": "NTC08236"
+  },
+  "DSC08237": {
+    "en": "If the mount point does not exist or disks added after starting the WhaTap Kubernetes agent are not displayed in the list.",
+    "ja": "マウントポイントが存在しないか、WhaTab Kubernetesエージェントの起動後に追加されたディスクはリストに表示されません。",
+    "ko": "마운트 포인트가 존재하지 않거나, 와탭 쿠버네티스 에이전트 기동 후 추가된 디스크는 목록에 표시되지 않습니다.",
+    "zh": "If the mount point does not exist or disks added after starting the WhaTap Kubernetes agent are not displayed in the list.",
+    "service_id": "DSC08237"
   },
   "": {
     "en": "#VALUE!",
