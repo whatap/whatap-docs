@@ -14,7 +14,7 @@
 .sidebarItemList {
   /* font-size: 0.9rem; */
   li > ul {
-    list-style: none !important;
+    list-style: none;
     a {
       padding-top: 3px;
     }
@@ -42,6 +42,8 @@
 
 .sidebarItemLinkActive {
   color: var(--ifm-color-primary) !important;
+  /* font-weight: bold;
+  background-color: var(--ifm-background-alt);  */
 }
 
 @media (max-width: 996px) {

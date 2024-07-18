@@ -1,13 +1,12 @@
-// 이걸로 작업*
+// 이걸로 작업*(0718)
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    'https://docs.whatap.io/release-notes/service/service-2_3_x',
-    // 'https://docs.whatap.io/release-notes/service/service-2_4_x',
-    // 'https://docs.whatap.io/release-notes/service/service-2_5_x',
+    'https://docs.whatap.io/release-notes/service/service-2_4_x',
+    'https://docs.whatap.io/release-notes/service/service-2_5_x',
 ];
 
 async function extractFeaturesAndUpdateMDXDocument() {
