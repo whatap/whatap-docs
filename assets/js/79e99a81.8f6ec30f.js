@@ -526,10 +526,6 @@ const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2_
   "id": "에이전트-구성-파일",
   "level": 3
 }, {
-  "value": "Docker",
-  "id": "docker",
-  "level": 3
-}, {
   "value": "에이전트 설정",
   "id": "에이전트-설정",
   "level": 2
@@ -683,67 +679,6 @@ function _createMdxContent(props) {
             type: "file",
             children: "whatap 디렉터리 패키징을 위한 정의 파일입니다."
           })]
-        })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-        className: "remark-sectionize-h3",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "docker",
-          children: "Docker"
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["Docker 컨테이너로 서비스되는 애플리케이션의 경우 다음 내용을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "DockerFile"
-          }), "에 추가하세요."]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Python 에이전트"
-              }), "를 설치하세요."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-docker",
-                metastring: "title='Dockerfile' {3}",
-                children: "ENV WHATAP_HOME /whatap\nRUN mkdir -p /whatap\nRUN pip install whatap-python\n"
-              })
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-              type: "note",
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: "requirements.txt"
-                }), "를 사용한다면 해당 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "whatap-python"
-                }), "을 추가하세요."]
-              })
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "액세스 키"
-              }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "수집 서버 IP"
-              }), " 설정을 등록하세요."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-docker",
-                metastring: "title='Dockerfile'",
-                children: "RUN touch /whatap/whatap.conf\nRUN echo \"license=[ ACCESS_KEY ]\" > /whatap/whatap.conf\nRUN echo \"whatap.server.host=[ COLLECTION_SERVER_IP ]\" >> /whatap/whatap.conf\nRUN echo \"app_name=[ AGENT_NAME ]\" >> /whatap/whatap.conf\nRUN echo \"app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\" >> /whatap/whatap.conf\n"
-              })
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["기존 실행 커맨드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "python manage.py runserver"
-              }), "앞에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "whatap-start-agent"
-              }), "를 추가하세요."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                className: "language-docker",
-                metastring: "title='Dockerfile'",
-                children: "CMD [\"whatap-start-agent\", \"python\", \"manage.py\", \"runserver\", \"0.0.0.0:8000\"]\n"
-              })
-            }), "\n"]
-          }), "\n"]
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
         className: "remark-sectionize-h2",
@@ -1026,6 +961,65 @@ function _createMdxContent(props) {
                 metastring: "title=\"PYTHON\"",
                 children: "import whatap\n\n@whatap.register_app\ndef simple_app(environ, start_response):\n    \"\"\"Simplest possible application object\"\"\"\n    status = '200 OK'\n    response_headers = [('Content-type', 'text/plain')]\n    start_response(status, response_headers)\n    return ['Hello world!\\n']\n"
               })
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
+            value: "docker",
+            label: "Docker",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["Docker 컨테이너로 서비스되는 애플리케이션의 경우 다음 내용을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "DockerFile"
+              }), "에 추가하세요."]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Python 에이전트"
+                  }), "를 설치하세요."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    className: "language-docker",
+                    metastring: "title='Dockerfile' {3}",
+                    children: "ENV WHATAP_HOME /whatap\nRUN mkdir -p /whatap\nRUN pip install whatap-python\n"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+                  type: "note",
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                      children: "requirements.txt"
+                    }), "를 사용한다면 해당 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "whatap-python"
+                    }), "을 추가하세요."]
+                  })
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "액세스 키"
+                  }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "수집 서버 IP"
+                  }), " 설정을 등록하세요."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    className: "language-docker",
+                    metastring: "title='Dockerfile'",
+                    children: "RUN touch /whatap/whatap.conf\nRUN echo \"license=[ ACCESS_KEY ]\" > /whatap/whatap.conf\nRUN echo \"whatap.server.host=[ COLLECTION_SERVER_IP ]\" >> /whatap/whatap.conf\nRUN echo \"app_name=[ AGENT_NAME ]\" >> /whatap/whatap.conf\nRUN echo \"app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\" >> /whatap/whatap.conf\n"
+                  })
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["기존 실행 커맨드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "python manage.py runserver"
+                  }), "앞에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "whatap-start-agent"
+                  }), "를 추가하세요."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    className: "language-docker",
+                    metastring: "title='Dockerfile'",
+                    children: "CMD [\"whatap-start-agent\", \"python\", \"manage.py\", \"runserver\", \"0.0.0.0:8000\"]\n"
+                  })
+                }), "\n"]
+              }), "\n"]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
             value: "code",
