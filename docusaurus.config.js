@@ -295,11 +295,6 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'oracle-v2/monitoring-intro',
-                label: 'Oracle V2',
-              },
-              {
-                type: 'doc',
                 docId: 'oracle-pro/monitoring-intro',
                 label: 'Oracle Pro',
               },
@@ -471,14 +466,14 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'oracle/monitoring-intro',
+            docId: 'oracle-v1/monitoring-intro',
             position: "left",
-            label: 'Oracle 모니터링',
+            label: 'Oracle V1 모니터링',
             className: 'hidden',
           },
           {
             type: 'doc',
-            docId: 'oracle-v2/monitoring-intro',
+            docId: 'oracle/monitoring-intro',
             position: "left",
             label: 'Oracle V2 모니터링',
             className: 'hidden',
