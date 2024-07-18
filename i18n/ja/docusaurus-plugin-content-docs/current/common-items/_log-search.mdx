@@ -6,17 +6,17 @@ import Logagentoption from "../common-items/_log-agent-option.mdx";
 
 <Xclude product='aws-log'>
 
-ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ検索_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSearch" className="uitext" />
 
 </Xclude>
 
 <InDoc product='aws-log'>
 
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_ログ検索_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_logSearch" className="uitext" />
 
 </InDoc>
 
-**_ログ検索_**メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータを抽出します。 
+<Cmdname sid="side_logSearch" className="uitext" />メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータを抽出します。
 
 動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。<Loguimainterm />
 
@@ -38,11 +38,11 @@ import Logagentoption from "../common-items/_log-agent-option.mdx";
 
 - ![number-s](/img/number-03.png)ログテーブルの左上に検索されたログの総数を確認することができます。 
 
-- ログデータを時系列順と逆順で表示できます。![number-s](/img/number-03.png)ログテーブルの右上で、**_Timestamp_** **_過去順_**と**_現在順_**で目的の検索方法を選択してください。
+- ログデータを時系列順と逆の順順で表示できます。![number-s](/img/number-03.png)ログテーブルの右上で、<Cmdname sid="past_order" className="uitext" />と<Cmdname sid="recent_order" className="uitext" />で目的の検索方法を選択してください。
 
-- 時間範囲を指定した後**_適用_**ボタンをタップして照会時間を設定し、![検索アイコン](/img/ic-search-on-press.svg) **_検索_**ボタンをタップしてデータを照会します。
+- 時間範囲を指定した後<Cmdname sid="apply" className="uitext" />ボタンをタップして照会時間を設定し、![検索アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />ボタンをタップしてデータを照会します。
 
-- ![number-s](/img/number-03.png)ログテーブル上段の右の <LinkImage img='ic-fullscreen.svg' desc='全画面表示アイコン'/>**_全画面_**アイコンを選択すると、**_ログ_**と**_タイムスタンプ_**を全画面で確認することができます。
+- ![number-s](/img/number-03.png)ログテーブル上段の右の <LinkImage img='ic-fullscreen.svg' desc='全画面表示アイコン'/> <Cmdname sid="TLT06869" className="uitext" />アイコンを選択すると、<Cmdname sid="log" className="uitext" />と<Cmdname sid="TTL06444" className="uitext" />を全画面で確認することができます。
 
 - <Logagentoption />
 
@@ -90,21 +90,21 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 ## ログのタグオプション {#log-tag-options}
 
-ログのタグを選択すると、次のようにドロップダウンメニューが表示されます。**_検索_**、**_除外検索_**、**_隣接ログ_**オプションを確認できます。 
+ログのタグを選択すると、次のようにドロップダウンメニューが表示されます。<Cmdname sid="search" className="uitext" />、<Cmdname sid="exclusion_search" className="uitext" />、<Cmdname sid="TTL06582" className="uitext" />オプションを確認できます。 
 
 <ImgLang img='log-search-tag.png' desc='ログタグドロップダウンメニュー'/>
 
 - **検索**
 
-  **_検索_**オプションを選択すると**_フィルター_**に該当タグが含まれる('==') 条件として入力されます。
+  <Cmdname sid="search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当タグが含まれる('==') 条件として入力されます。
 
 - **除外検索**
 
-  **_除外_**オプションを選択すると**_フィルター_**に該当タグが除外('==') 条件として入力されます。
+  <Cmdname sid="exclusion_search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当タグが除外('==') 条件として入力されます。
 
 - **隣接ログ**
 
-  **_隣接ログ_**オプションを選択すると**_隣接ログ_**詳細ウィンドウが表示されます。選択したログのサーバーを対象に選択したログと隣接するタイムゾーンのログを表示します。**_時間選択_**ボタンをクリックして、隣接するタイムゾーンのログを表示できます。 基本のログは青色で表示されます。
+  <Cmdname sid="TTL06582" className="uitext" />オプションを選択すると<Cmdname sid="TTL06582" className="uitext" />詳細ウィンドウが表示されます。選択したログのサーバーを対象に選択したログと隣接するタイムゾーンのログを表示します。<Cmdname sid="time_selector" className="uitext" />ボタンをクリックして、隣接するタイムゾーンのログを表示できます。 基本のログは青色で表示されます。
 
   <ImgLang img='log-search-adjacent-log.png' desc='ログタグ隣接ログ'/>
 

@@ -1,0 +1,254 @@
+---
+id: quick-start
+title: 迅速なインストールと問題解決
+description: WhaTap.NETモニタリングサービス機能を迅速に使用できるように案内を提供します。
+toc_max_heading_level: 2
+tags:
+  - アプリケーション
+  - .NET
+  - エージェントのインストール
+  - トラブルシューティング
+  - クイックスタート
+---
+
+## エージェントのインストール時
+
+エージェントのインストールの場合、プロジェクト作成からモニタリング活性化の段階まで[次の文書](install-agent)を参照してください。 エージェントのインストール後、**IIS**が**再起動**されます。
+
+### Windowsサーバー2008または.NET 4.6.1未満のバージョンを使用する場合
+
+WhaTap.NETエージェントは、Windowsサーバー2012以降および.NET Framework 4.6.1以降のご使用をお勧めします。 その未満のバージョンを使用する場合は、次のリンクのインストールプログラムを使用します。 
+
+- [インストールプログラム](https://repo.whatap.io/windows/whatap_dotnet_450.exe)
+
+## エージェントのインストール後
+
+:::note 
+
+**エラーとログの転送**
+
+- エラーの発生時、エラー画面をキャプチャした画像またはそのテキストを転送します。 
+
+- エージェントのログファイルを転送します。 次のパスでログファイルを確認できます。 そのエラーがない場合、フォルダが存在しない可能性があります。 
+
+  - *C:\\Program Files\\WhaTap .NET\\logs*
+
+  - *C:\\ProgramData\\WhaTap*
+
+:::
+
+### データが収集されない場合
+
+<ImgLang img='dotnet-trst01.png' desc='データの未収集' />
+
+例のように、<Cmdname sid="TTL07975" className="uitext" />ですべての情報が正常に収集されない場合は、次を確認します。 
+
+- アクセスキーと収集サーバー情報が、正確に入力されていることを確認します。 
+
+- そのサーバーのファイアウォール設定を確認します。 アウトバウンド**6600**ポートが開かれている必要があります。
+
+### ヒートマップデータが収集されない場合
+
+<ImgLang img='dotnet-trst02.png' desc='ヒットマップデータの未収集' />
+
+例のように、ヒートマップ情報が正常に収集されない場合、対象のアプリケーションが対応環境に該当することを確認します。 対応環境は、[次の文書](https://docs.whatap.io/dotnet/supported-spec)を参照してください。 
+
+### 対応環境の確認が困難だったり、対応対象である場合
+
+- 対象アプリケーションの*web.config*ファイルを渡します。 
+
+- 対象アプリケーションのプロジェクトファイル(*\*.csproj*)を転送します。
+
+- 次のリンクから、.NETエージェントの対応環境に該当可否を、AIの活用により確認できます。
+
+  - [.NETエージェント対応の環境分析](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/analysis.html)
+
+### その他
+
+上記の方法でエラーが解決しない場合は、詳細なデバッグ情報を転送します。 デバッグデータの収集プロセスは次の通りです。 
+
+1. デバッグ用のエージェントを、次のリンクからダウンロードしてインストールします。
+
+   - [デバッグ用エージェント](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/whatap_dotnet_debug.exe)
+
+2. 次のリンクからモニタリングプログラム(*UdpMonitor.exe*)をダウンロードして実行します。 
+
+   - [モニタリングプログラム](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/UdpMonitor.exe)
+
+3. トランザクションを発生させます。 
+
+4. トランザクションを十分に発生させた場合、*UdpMonitor.exe*を終了します。
+
+5. *UdpMonitor.exe*と同じフォルダに*UdpMonitor.txt*が生成されます。 
+
+6. *UdpMonitor.txt*ファイルを担当者に転送します。 
+
+7. デバッグ完了時、デバッグ用のエージェントを削除します。
+
+## WCFおよび公式未対応ライブラリのモニタリング
+
+WCF(Windows Communication Foundation)のようにWhaTap.NETエージェントが公式に対応していないライブラリをモニタリングするには、次のガイドを確認します。 
+
+:::note 
+
+広い範囲に設定すると、過度なトラフィックが発生する可能性があります。 
+
+:::
+
+### 設定オプション
+
+- **webservice_method_enabled** <span class='type'>Boolean</span> 
+
+  既定値`false`
+
+  値を`true`に設定すると、ウェブサービスを追跡できます。 
+
+  :::note 
+
+  そのオプションを変更した後は、IISを再起動しないと変更事項が適用されません。 
+
+  :::
+
+- **webservice_method_prefix** <span class='type'>String</span>
+
+  値に追跡するメソッドが定義されているネームスペースとクラス名を入力します。 
+
+  - メソッドが所属するクラス名まで入力すると、そのクラス内のすべてのPublicメソッドが追跡対象となります。 
+
+  - 条件に満たすメソッドは、ウェブサービスを使用していない場合でも追跡対象になります。 このオプションの場合、WCFとウェブサービスモニタリングのために設計されましたが、様々な目的で使用できます。 
+
+  :::note 
+
+  そのオプションを変更した後は、IISを再起動しないと変更事項が適用されません。 
+
+  :::
+
+- **webservice_method_timeout** <span class='type'>Milliseconds</span>
+
+  既定値`5000`
+
+  モニタリング対象となるメソッドが特定の時間内に完了しない場合、自動的にタイムアウトを設定します。 既定値は5秒(`5000`ms)です。
+
+  {/*モニタリング対象となるメソッドで例外が処理されない場合、トランザクションの終了時点が確認できません。 このような状況に備えて、ウェブサービスのモニタリングは基本的に5秒後にタイムアウト処理されます。  */}
+
+### 使用例
+
+#### whatap.conf修正
+
+```ini title='whatap.conf' {11,12}
+license= ## アクセスキー
+whatap.server.host=15.165.146.117
+whatap.server.port=6600
+app_process_name=w3wp.exe
+tag_counter_enabled=true
+perfcounter.enabled=true
+app_name= ## アプリケーション名
+OID= ## エージェントID
+
+webservice_method_enabled=true
+webservice_method_prefix=Whatap.Service.Controller, Whatap.DotNet.Examples.Service1
+webservice_method_timeout=10000
+```
+
+- `webservice_method_prefix`オプションで追跡するネームスペースを含むメソッドの呼び出しパスを指定したため、次のいずれかの場合、関数の開始と終了がトランザクションとして処理されます。
+
+  - `Whatap.Service.Controller`
+
+  - `Whatap.DotNet.Examples.Service1`
+
+- `webservice_method_timeout`を`10000`ミリ秒で指定したため、10秒が経過したトランザクションは自動的に終了処理されます。 
+
+:::note 
+
+次のように<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで設定を変更できます。 
+
+<ImgLang img='dotnet-trst03.png' desc='エージェント設定' />
+
+:::
+
+#### WCFソースコード
+
+次は、モニタリング対象となるWCFソースコードの例題です。 
+
+```c {3-13}
+namespace Whatap.DotNet.Examples
+{
+    public class Service1 : IService1
+    {
+        public string GetData(int value)
+        {
+            ...
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            ...
+        }
+
+        private string getFromDB()
+        {
+            ...
+        }
+
+        private string getFromHttp()
+        {
+            ...
+        }
+    }
+
+    public class Service2 : IService1
+    {
+        ...
+    }
+
+    public class Service3 : IService1
+    {
+        public string IwantToSeeOnlyThis(int value)
+        {
+            ...
+        }
+    }
+}
+```
+
+- **GetData** 
+
+  `GetData()`メソッドは、`Whatap.DotNet.Examples.Service1`クラスに属しています。 また、Publicメソッドであるため、モニタリング対象となります。 このメソッドは、設定ファイルの`webservice_method_prefix`オプションに明示された値に含まれるため、トランザクションとして処理されます。 メソッドの呼び出しパスは次の通りです。 
+
+  > `Whatap.DotNet.Examples.Service1.GetData`
+
+- **GetDataUsingDataContract**
+
+  `GetDataUsingDataContract()`メソッドはPublicメソッドであるため、モニタリングの対象となります。 メソッドの呼び出しパスは次の通りです。 
+
+  > `Whatap.DotNet.Examples.Service1.GetDataUsingDataContract`
+
+:::note 
+
+- `getFromDB()`, `getFromHttp()`メソッドはPrivateメソッドであるため、モニタリングの対象ではありません。 
+
+- `webservice_method_prefix`オプションに`Whatap.DotNet.Examples.Service3`を追加する場合、Publicメソッドである`IwantToSeeOnlyThis()`メソッドがモニタリングの対象になる場合があります。
+
+:::
+
+### ネームスペースとクラス名を見つけるのが難しい場合
+
+WCFサーバーのメソッドが定義されたネームスペースが見つからない場合、次の方法でネームスペースとクラス名を確認できます。 
+
+1. 次のリンクから*GetNamesapces.exe*ファイルをダウンロードします。 
+
+   - [GetNamesapces.exe](https://repo.whatap.io/windows/GetNamesapces.exe)
+
+2. 次のようにウェブアプリケーションのフォルダパスをパラメータに転送し、*GetNamesapces.exe*ファイルを実行します。 
+
+   ```
+   C:...\> GetNamesapces.exe C:\inetpub
+   ```
+
+3. 実行が完了したら、当該フォルダとその下位フォルダにあるすべての*dll*ファイルをスキャンして、ネームスペースとクラス名を一覧に出力します。 
+
+:::note 
+
+結果の適用が難しい場合、*GetNamesapces.exe*実行後、同じフォルダに作成された*GetNamesapces.txt*ファイルを担当者に転送します。 
+
+:::

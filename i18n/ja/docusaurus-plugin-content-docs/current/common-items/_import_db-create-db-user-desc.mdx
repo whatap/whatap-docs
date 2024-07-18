@@ -1,5 +1,17 @@
 データベース接続用に暗号化されたUIDを作成します。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行してください。 
 
+<Xclude product='redis,oracle-pro'>
+
+<em>uid.sh</em>シェルスクリプトファイル(または<em>uid.bat</em>バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userなしでパスワードのみある場合は、<code>DB_USER</code>を<code>{props.name}</code>として設定します。
+
+</Xclude>
+
+<InDoc product="oracle-pro">
+
+<em>uid.sh</em>シェルスクリプトファイルは、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userなしでパスワードのみある場合は、<code>DB_USER</code>を<code>{props.name}</code>として設定します。
+
+</InDoc>
+
 <InDoc product='redis'>
 
 - **Redis 6バージョン以下**: <em>uid.sh</em>シェルスクリプトファイル(または<em>uid.bat</em>バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userなしでパスワードのみある場合は、<code>DB_USER</code>を<code>""</code>に設定します。例）`./uid.sh "" whatap\!pwd`

@@ -47,20 +47,19 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 5. **_Finish_** ボタンをクリックして、インストールを終了してください。
 
-<details>
-<summary>.NETエージェントインストール後の構成ファイル</summary>
+エージェントは、モニタリング情報を収集するためのトレーサー、収集した情報をサーバーに転送するためのファイルで構成されています。エージェントファイルの詳細については、次を参照してください。
 
-モニタリング情報を収集するためのトレーサーと収集した情報をサーバーに送信するためのエージェントで構成されています。
+<Filetree name="whatap">
 
-- *WhaTap.ClrProfiler.dll*：.NET CLR Profilerは、.NETトレーシングAPIに関連付けられています。
+<FiletreeItem name="WhaTap.ClrProfiler.dll" type="file">.NET CLR Profilerは、.NETトレーシングAPIに関連付けられています。</FiletreeItem>
 
-- *WhaTap.Trace.dll*：プロファイラーから渡されたデータを処理し、エージェントに送信します。
+<FiletreeItem name="WhaTap.Trace.dll" type="file">プロファイラーから渡されたデータを処理し、エージェントに送信します。</FiletreeItem>
 
-- *whatap_dotnet.exe*：エージェントおよび、トレーサーから渡された情報を収集サーバーに送信するプログラムです。
+<FiletreeItem name="whatap_dotnet.exe" type="file">エージェントおよび、トレーサーから渡された情報を収集サーバーに送信するプログラムです。</FiletreeItem>
 
-- *whatap.conf*：エージェントの環境設定ファイルです。
+<FiletreeItem name="whatap.conf" type="file">エージェントの環境設定ファイルです。</FiletreeItem>
 
-</details>
+</Filetree>
 
 ## モニタリングの開始
 

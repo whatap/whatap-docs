@@ -1,26 +1,26 @@
 <InDoc product='aws-log'>
 
-ホーム画面 > プロジェクト選択 > **_管理_** > **_ログ設定_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql'>
+<InDoc product='log,postgresql,mysql,oracle-v2,oracle-pro'>
 
-ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ設定_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
-**_ログ設定_**メニューで、ログモニタリング関連の設定を行うことができます。 上部のタブからエージェント設定の確認、ログモニタリングをアクティブにするかどうかの決定、ログデータの保存期間および検索パスワード設定、ログパーサー登録、クイックインデックス設定などのメニューが使用できます。
+<Cmdname sid="side_logSetting" className="uitext" />メニューで、ログモニタリング関連の設定を行うことができます。 上部のタブからエージェント設定の確認、ログモニタリングをアクティブにするかどうかの決定、ログデータの保存期間および検索パスワード設定、ログパーサー登録、クイックインデックス設定などのメニューが使用できます。
 
 :::note
 
-- **_ログモニタリング有効化_**機能を使用するには、**プロジェクト修正**権限が必要です。 
+- <Cmdname sid="use_log_monitoring" className="uitext" />機能を使用するには、<Cmdname sid="edit_project" className="b600" />権限が必要です。
 
-- **ログ編集**権限では、**_ログモニタリング有効化_**機能と**_ログ設定_**メニューを修正できます。
+- <Cmdname sid="log_update" className="b600" />権限では、<Cmdname sid="use_log_monitoring" className="uitext" />機能と<Cmdname sid="side_logSetting" className="uitext" />メニューを修正できます。
 
 :::
 
-## ログモニタリングを開始する{#log-getting-started}
+## ログモニタリングを開始する {#log-getting-started}
 
 <InDoc product='aws-log'>
 
@@ -34,29 +34,29 @@
 
 </InDoc>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 <ImgLang img='log-getting-started-db.png' desc='ログモニタリングの開始'/>
 
 </InDoc>
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,oracle-v2,oracle-pro'>
 
-上部にある**_ログモニタリングを開始する_**タブを選択してください。 ![WhaTap Docsアイコン](/img/ic-guide.svg) **_ガイドを表示_**アイコンと**_料金プランを表示_**ボタンを選択すると、関連したガイド画面に移動します。 
+上段で<Cmdname sid="getting_started_log_monitoring" className="uitext" />タブを選択してください。 ![WhaTap Docsアイコン](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" />アイコンと<Cmdname sid="log_monitoring_plan" className="uitext" />ボタンを選択すると、関連したガイド画面に移動します。 
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
-上部にある**_ログモニタリングを開始する_**タブを選択してください。 ![WhaTap Docsアイコン](/img/ic-guide.svg)**_ガイドを表示_**アイコンを選択すると、関連するガイド画面に移動します。 
+上段で<Cmdname sid="getting_started_log_monitoring" className="uitext" />タブを選択してください。 ![WhaTap Docsアイコン](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" />アイコンを選択すると、関連するガイド画面に移動します。 
 
 </InDoc>
 
-### エージェント設定とログモニタリングの有効化{#log-set-up}
+### エージェント設定とログモニタリングの有効化 {#log-set-up}
 
 <InDoc product='aws-log'>
 
-![number 1](/img/number-01.png)領域の**_ログモニタリング有効化_**トグルボタンを使用してログモニタリングの有効化・無効化を設定してください。
+![number 1](/img/number-01.png)領域の<Cmdname sid="use_log_monitoring" className="uitext" />トグルボタンを使用してログモニタリングの有効化・無効化を設定してください。
 
 <ImgLang img='log-start-aws.png' desc='ログモニタリングの開始'/>
 
@@ -65,13 +65,13 @@
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql'>
+<InDoc product='log,postgresql,mysql,oracle-v2,oracle-pro'>
 
-![number 1](/img/number-01.png)領域でエージェント設定を確認し**_ログモニタリングの有効化_**トグルボタンでログモニタリングの有効化・無効化を設定してください。
+![number 1](/img/number-01.png)領域でエージェント設定を確認し<Cmdname sid="use_log_monitoring" className="uitext" />トグルボタンでログモニタリングの有効化・無効化を設定してください。
 
-#### エージェント設定確認{#log-check-agent-settings}
+#### エージェント設定確認 {#log-check-agent-settings}
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 ログモニタリングを開始するために、エージェントのバージョンと設定情報を確認してください。 **_エージェント設定確認_**メニューを選択して、説明通りにプロセスを進めてください。
 
@@ -89,23 +89,23 @@
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 ログモニタリングを開始するために、エージェントのバージョンと設定情報を確認してください。 エージェント設定に関する詳細は[次の文書](log-db)を参照してください。
 
 </InDoc>
 
-#### ログモニタリングの有効化{#log-activate}
+#### ログモニタリングの有効化 {#log-activate}
 
-**_ログモニタリング有効化_**メニューを選択して、ログモニタリングの有効化または無効化を設定してください。
+<Cmdname sid="use_log_monitoring" className="uitext" />メニューを選択して、ログモニタリングの有効化または無効化を設定してください。
 
-<Xclude product="postgresql,mysql">
+<Xclude product="postgresql,mysql,oracle-v2,oracle-pro">
 
 <ImgLang img='log-start.png' desc='ログモニタリングを開始する'/>
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 <ImgLang img='log-start-db.png' desc='ログモニタリングの開始'/>
 
@@ -116,17 +116,17 @@
 
 </InDoc>
 
-### ログモニタリングデータ設定{#log-data-setting}
+### ログモニタリングデータ設定 {#log-data-setting}
 
-![number 2](/img/number-02.png)領域で**_ログ使用量_**が確認できます。 また**_データ保存期間_**および**_ログ参照パスワード_**設定を変更できます。
+![number 2](/img/number-02.png)領域で<Cmdname sid="log_usage" className="uitext" />が確認できます。 また<Cmdname sid="data_retention" className="uitext" />および<Cmdname sid="log_lookup_password" className="uitext" />設定を変更できます。
 
 #### データ保存期間 {#data-retention}
 
-共通に適用する基本(default) データ保持期間です。 未指定の場合、既定値は1日です。 カテゴリごとのデータ保存期間を個別で設定しない場合は、このデータ保存期間がデフォルトとして適用されます。 カテゴリごとのデータ保存期間を設定し、**_初期化_**ボタンを選択すると、基本データの保存期間が初期化されます。
+共通に適用する基本(default) データ保持期間です。 未指定の場合、既定値は1日です。 カテゴリごとのデータ保存期間を個別で設定しない場合は、このデータ保存期間がデフォルトとして適用されます。 カテゴリごとのデータ保存期間を設定し、<Cmdname sid="initialized" className="uitext" />ボタンを選択すると、基本データの保存期間が初期化されます。
 
-#### カテゴリ別のデータ保存期間{#data-retention-per-category}
+#### カテゴリ別のデータ保存期間 {#data-retention-per-category}
 
-カテゴリごとのログデータの保存期間を指定できます。 **ログ数**は、その期間中に蓄積されたログ行数を意味します。 例えば、**_本日のログ数_**は、その日に蓄積されたログライン個数、**_予想ログ数_**は、データ保持日に本日のログ数を掛けたログライン個数を意味します。 
+カテゴリごとのログデータの保存期間を指定できます。 **ログ数**は、その期間中に蓄積されたログ行数を意味します。 例えば、<Cmdname sid="daily_log_count" className="uitext" />は、その日に蓄積されたログライン個数、<Cmdname sid="expected_log_count" className="uitext" />は、データ保持日に本日のログ数を掛けたログライン個数を意味します。 
 
 ログデータの保存期間を次のように指定できます。 期間指定により、古いデータを削除してスペースを確保できます。
 
@@ -144,21 +144,21 @@
 
   > 例えば、1日平均200万ログ行が蓄積され、データ保存期間を3日に指定した場合、平均600万ログ行が収集サーバに保持され、課金の対象となります。
 
-#### ログ参照パスワード{#log-lookup-pw}
+#### ログ参照パスワード {#log-lookup-pw}
 
-セキュリティを強化するため、**_ログ参照パスワード_**を設定してください。 ログ検索パスワードの指定はオプションです。 ログ検索パスワードを使用中の場合は、ログ画面に入るときは必ずパスワードを入力してください。 
+セキュリティを強化するため、<Cmdname sid="log_lookup_password" className="uitext" />を設定してください。 ログ検索パスワードの指定はオプションです。 ログ検索パスワードを使用中の場合は、ログ画面に入るときは必ずパスワードを入力してください。 
 
 :::note
 
 **パスワードの紛失**
 
-**ログ編集**権限がある場合は、**_ログ設定_**メニューで新しいパスワードに変更できます。
+**ログ編集**権限がある場合は、<Cmdname sid="side_logSetting" className="uitext" />メニューで新しいパスワードに変更できます。
 
 :::
 
-## ログ1次パーサー設定{#log-setting-parser-1st}
+## ログ1次パーサー設定 {#log-setting-parser-1st}
 
-**_ログ設定_**メニューの上部にある**_ログ1次パーサー設定_**タブを選択してログパーサーを登録または修正ができます。 ログ1次パーサーは、**_GROK_**と**_JSON_**パーサーを提供します。 収集されたログを使用して、パターンの条件と一致するキー情報、つまり検索キーと検索値を抽出します。 構文解析されたログキーは、ログのタイプを分類するための用途および特定のログを検索するためのインデックス作成に使用します。 タイプ別ログ発生数を集計したり、特定のログをすばやく特定するために登録に必要なパーサーです。
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上部にある<Cmdname sid="log_parser_setting_primary" className="uitext" />タブを選択してログパーサーを登録または修正ができます。 ログ1次パーサーは、***GROK***と***JSON***パーサーを提供します。 収集されたログを使用して、パターンの条件と一致するキー情報、つまり検索キーと検索値を抽出します。 構文解析されたログキーは、ログのタイプを分類するための用途および特定のログを検索するためのインデックス作成に使用します。 タイプ別ログ発生数を集計したり、特定のログをすばやく特定するために登録に必要なパーサーです。
 
 - **_GROK_**：基本的には、正規表現ベースの構文解析に対応します。 予約キーワードベースの構文解析を提供します。
 
@@ -188,7 +188,7 @@
 
 :::
 
-### 設定項目{#log-parser-comp}
+### 設定項目 {#log-parser-comp}
 
 | 設定値    | 説明                                                                                                 | その他      |
 | ------ | -------------------------------------------------------------------------------------------------- | -------- |
@@ -196,57 +196,57 @@
 | ログ検出条件 | フィルターとして適用する検索キー、検索値を入力します。 ログ検出条件を満たすログデータにパターンを適用します。 ログ検出条件を入力しない場合、すべてのログを対象にパターンを適用します。       | optional |
 | パターン   | ログを構文解析(parsing)するパターンです。 作成したパターンに合わせて構文解析を行い、インデックスを作成します。 GROK、正規表現構文に対応します。 | required |
 
-### パーサー一覧{#log-parser-list-1st}
+### パーサー一覧 {#log-parser-list-1st}
 
 <ImgLang img='log-1st-parser-list.png' desc='ログパーサー一覧'/>
 
-**_ログ設定_**メニューの上部の**_ログ1次パーサー設定_**タブを選択すると、登録したパーサーが表示され、追加および編集が可能な**_パーサー一覧_**画面を確認できます。 
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上部の<Cmdname sid="log_parser_setting_primary" className="uitext" />タブを選択すると、登録したパーサーが表示され、追加および編集が可能な**パーサー一覧**画面を確認できます。
 
-- 右上の**_+追加する_**ボタンを選択すると**_パーサー追加_**ウィンドウが表示されます。
+- 上段右側の **_+_** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウが表示されます。
 
-- パーサー一覧**_適用順序_**カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサーの設定手順を変更できます。
+- パーサー一覧<Cmdname sid="ITM06352" className="uitext" />カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサーの設定手順を変更できます。
 
-- パーサー一覧![アイコン](/img/ic-toggle-on.svg) **_有効_**トグルでパーサーを有効の有無を指定できます。
+- パーサー一覧![アイコン](/img/ic-toggle-on.svg) <Cmdname sid="enable" className="uitext" />トグルでパーサーを有効の有無を指定できます。
 
-- パーサー一覧![修正アイコン](/img/ico-edit.svg) **_修整_**及び![削除アイコン](/img/ico-trash-red.svg) **_削除_**アイコンで登録したパーサーを修正または削除できます。
+- パーサー一覧![修正アイコン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />及び![削除アイコン](/img/ico-trash-red.svg) <Cmdname sid="delete" className="uitext" />アイコンで登録したパーサーを修正または削除できます。
 
 ### パーサー登録手順{#log-add-parser-1st}
 
-**_ログ設定_**メニューの上部にある**_ログ1次パーサー設定_**タブを選択してログパーサーを登録または修正ができます。 次に、パーサー登録時の共通手順について説明します。
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上部にある<Cmdname sid="log_parser_setting_primary" className="uitext" />タブを選択してログパーサーを登録または修正ができます。 次に、パーサー登録時の共通手順について説明します。
 
 <ImgLang img='log-1st-parser-add.png' desc='ログパーサー sc 追加'/>
 
-1. **_+追加する_**ボタンを選択すると**_パーサー追加_**ウィンドウが表示されます。
+1. **_+_** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウが表示されます。
 
-2. **_パーサー_**選択ウィンドウからパーサーを選択してください。 各パーサーおよびパターン登録の詳細については、次の文書を参照してください。
+2. <Cmdname sid="parser" className="uitext" />選択ウィンドウからパーサーを選択してください。 各パーサーおよびパターン登録の詳細については、次の文書を参照してください。
 
    - **_GROK_** [パーサーおよびパターン登録](#log-pattern-grok)
 
    - **_JSON_** [パーサーおよびパターン登録](#log-pattern-json)
 
-3. **_カテゴリー_**選択ウィンドウからカテゴリを選択するか、直接入力してください。 
+3. <Cmdname sid="category" className="uitext" />選択ウィンドウからカテゴリを選択するか、直接入力してください。
 
-4. **_ログ検出条件_**として使用する**_検索キー_**と**_検索値_**を選択するか、直接入力してください。
+4. <Cmdname sid="ITM06439" className="uitext" />として使用する<Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力してください。
 
-  フィルター条件に合ったログデータのみパターンを適用します。 **_ログ検出条件_**を指定しない場合は、すべてのログにパターンを適用します。
+   フィルター条件に合ったログデータのみパターンを適用します。 <Cmdname sid="ITM06439" className="uitext" />を指定しない場合は、すべてのログにパターンを適用します。
 
-1. **_パターン_**を入力してください。 
+5. <Cmdname sid="pattern" className="uitext" />を入力してください。
 
-2. 登録したいパターンが正常な場合は、**_シミュレーション_**ボタンをクリックしてシミュレーション及びパターンのパフォーマンスを測定してください。
+6. 登録したいパターンが正常な場合は、<Cmdname sid="simulation" className="uitext" />ボタンをクリックしてシミュレーション及びパターンのパフォーマンスを測定してください。
 
-  シミュレーションと性能測定の詳細については、[次の文書](#parser-simulation)を参照してください。
+   シミュレーションと性能測定の詳細については、[次の文書](#parser-simulation)を参照してください。
 
-1. シミュレーション結果が正常である場合は、**_追加_**ボタンを選択してパーサーを登録してください。
+7. シミュレーション結果が正常である場合は、<Cmdname sid="add" className="uitext" />ボタンを選択してパーサーを登録してください。
 
 :::note
 
-ログパーサ登録時、同じ**_カテゴリ_**のパーサを重複登録することはできません。
+ログパーサ登録時、同じ<Cmdname sid="category" className="uitext" />のパーサを重複登録することはできません。
 
 :::
 
-### GROKパーサーパターン登録{#log-pattern-grok}
+### GROKパーサーパターン登録 {#log-pattern-grok}
 
-<ImgLang img='log-1st-grok.png' desc='GROKパターンパーサー'/>
+<ImgLang img='log-1st-grok.png' desc='Grokパターンパーサー登録'/>
 
 基本文法は、`%{SYNTAX:SEMANTIC}`です。 GROKパーサの詳細は、[次の文書](log-parser#grok-parser-detail)を参照してください。
 
@@ -264,7 +264,7 @@
 
   :::
 
-### JSONフォーマットのパーサーパターン登録{#log-pattern-json}
+### JSONフォーマットのパーサーパターン登録 {#log-pattern-json}
 
 <ImgLang img='log-1st-json.png' desc='JSONフォーマットパーサーパターン登録'/>
 
@@ -329,49 +329,49 @@
     io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
     ```
 
-### パーサーシミュレーション{#parser-simulation}
+### パーサーシミュレーション {#parser-simulation}
 
-1. パーサー追加画面でパターンを入力した後**_シミュレーション_**ボタンを選択してください。 **_パーサーシミュレーション_**ウィンドウが表示されます。 
+1. パーサー追加画面でパターンを入力した後<Cmdname sid="simulation" className="uitext" />ボタンを選択してください。 <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />ウィンドウが表示されます。 
 
-2. **_パーサーシミュレーション_**ウィンドウで**_ログ_**を入力してください。 
+2. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />ウィンドウで<Cmdname sid="log" className="uitext" />を入力してください。
 
-3. 入力した**_ログ_**と**_パターン_**を確認してください。
+3. 入力した<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を確認してください。
 
 <ImgLang img='log-parser-simulation.png' desc='パーサーシミュレーション'/>
 
-1. **_シミュレーション_**ボタンを選択して登録するパターンで、パーシングが成功するか確認してください。 
+1. <Cmdname sid="simulation" className="uitext" />ボタンを選択して登録するパターンで、パーシングが成功するか確認してください。
 
    - **シミュレーションの成功画面**
 
-     <ImgLang img='log-simulation-success.png' desc='シミュレーションの成功'/>
+     <ImgLang img='log-simulation-success.png' desc='シミュレーション成功'/>
 
    - **シミュレーションの失敗画面**
 
      <ImgLang img='log-simulation-fail.png' desc='シミュレーション失敗'/>
 
-2. **_パターン適用_**ボタンをクリックすると、選択したパーサーに入力したパターンが適用されます。 
+2. <Cmdname sid="apply_pattern" className="uitext" />ボタンをクリックすると、選択したパーサーに入力したパターンが適用されます。
 
-### パフォーマンス測定{#log-performance}
+### パフォーマンス測定 {#log-performance}
 
-シミュレーションの成功後**_パフォーマンス測定_**ボタンを選択して、パーサーのパフォーマンスを測定できます。 シミュレーションを実行する文字列にパーサーの構文解析が繰り返される所要時間を測定した後、次のように測定結果を確認してください。
+シミュレーションの成功後<Cmdname sid="performance_measurement" className="uitext" />ボタンを選択して、パーサーのパフォーマンスを測定できます。 シミュレーションを実行する文字列にパーサーの構文解析が繰り返される所要時間を測定した後、次のように測定結果を確認してください。
 
 <ImgLang img='log-performance.png' desc='パフォーマンス測定'/>
 
-### 構文解析の成功{#log-parsed}
+### 構文解析の成功 {#log-parsed}
 
-構文解析ロジックを登録して**キー**(key)を生成すると、ログ検索時にキーで構文解析された値が追加されます。 次の**_ライブテール_**メニュー例のように、構文解析されたキーと値が追加されます。 
+構文解析ロジックを登録して**キー**(key)を生成すると、ログ検索時にキーで構文解析された値が追加されます。 次の<Cmdname sid="side_logTail" className="uitext" />メニュー例のように、構文解析されたキーと値が追加されます。 
 
-<ImgLang img='log-parsed.png' desc='パーシング成功'/>
+<ImgLang img='log-parsed.png' desc='構文解析成功'/>
 
-パーシングされたキーは**_ライブテール_**、**_ログ検索_**、**_ログトレンド_**で確認できます。
+パーシングされたキーは<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />で確認できます。
 
-## ログ2次パーサー設定{#log-setting-parser-2nd}
+## ログ2次パーサー設定 {#log-setting-parser-2nd}
 
-**_ログ設定_**メニューの上部にある**_ログ2次パーサー設定_**タブを選択して、ログパーサーを登録または修正できます。 **_4xx、5xxステータスコードパーサー_**と**_ステータスコード成功率パーサー_**を提供します。 ログ2次パーサーは、GROKまたはJSONのような1次パーサーが構文解析された場合に使用できるパーサーです。 1次パーサーで抽出した値を処理して統計データを生成します。 ウェブまたはAPIレスポンスログのHttp Status Codeに基づいて2次統計を抽出します。
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上部にある<Cmdname sid="log_parser_setting_secondary" className="uitext" />タブを選択してログパーサーを登録または修正ができます。 <Cmdname sid="status_4xx5xx_parser" className="uitext" />と<Cmdname sid="status_success_rate" className="uitext" />を提供します。 ログ2次パーサーは、GROKまたはJSONのような1次パーサーが構文解析された場合に使用できるパーサーです。 1次パーサーで抽出した値を処理して統計データを生成します。 ウェブまたはAPIレスポンスログのHttp Status Codeに基づいて2次統計を抽出します。
 
-- **_4xx、5xxステータスコードパーサー_**：異常レスポンスに関する件数情報を集計します。
+- <Cmdname sid="status_4xx5xx_parser" className="uitext" />：異常レスポンスに関する件数情報を集計します。
 
-- **_ステータスコード成功率パーサー_**：全体の件数に対する異常レスポンスの割合を抽出します。
+- <Cmdname sid="status_success_rate" className="uitext" />：全体の件数に対する異常レスポンスの割合を抽出します。
 
 :::note
 
@@ -379,49 +379,49 @@
 
 :::
 
-### パーサー一覧{#log-parser-list-2nd}
+### パーサー一覧 {#log-parser-list-2nd}
 
-<ImgLang img='log-2nd-parser-list.png' desc='ログ2次パーサー一覧'/>
+<ImgLang img='log-2nd-parser-list.png' desc='対数2次パーサー一覧'/>
 
-**_ログ設定_**メニューの上部にある**_ログ2次パーサー設定_**タブを選択すると、登録したパーサーが表示され、追加および編集が可能な**_パーサー一覧_**画面を確認できます。 
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上部の<Cmdname sid="log_parser_setting_secondary" className="uitext" />タブを選択すると、登録したパーサーが表示され、追加および編集が可能な**パーサー一覧**画面を確認できます。
 
-- 右上の**_+追加する_**ボタンを選択すると**_パーサー追加_**ウィンドウが表示されます。
+- 上段右側の **_+_** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウが表示されます。
 
-- パーサー一覧**_適用順序_**カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサーの設定手順を変更できます。
+- パーサー一覧<Cmdname sid="ITM06352" className="uitext" />カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサーの設定手順を変更できます。
 
-- パーサー一覧![アイコン](/img/ic-toggle-on.svg) **_有効_**トグルでパーサーを有効の有無を指定できます。
+- パーサー一覧![アイコン](/img/ic-toggle-on.svg) <Cmdname sid="enable" className="uitext" />トグルでパーサーを有効の有無を指定できます。
 
-- パーサー一覧![修正アイコン](/img/ico-edit.svg) **_修整_**及び![削除アイコン](/img/ico-trash-red.svg) **_削除_**アイコンで登録したパーサーを修正または削除できます。
+- パーサー一覧![修正アイコン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />及び![削除アイコン](/img/ico-trash-red.svg) <Cmdname sid="delete" className="uitext" />アイコンで登録したパーサーを修正または削除できます。
 
-### パーサー登録手順{#log-add-parser-2nd}
+### パーサー登録手順 {#log-add-parser-2nd}
 
-**_ログ設定_**メニューの上部にある**_ログ2次パーサー設定_**タブを選択して、ログパーサーを登録または修正できます。 次に、パーサー登録時の共通手順について説明します。
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上部にある<Cmdname sid="log_parser_setting_secondary" className="uitext" />タブを選択してログパーサーを登録または修正ができます。 次に、パーサー登録時の共通手順について説明します。
 
 <ImgLang img='log-2nd-parser-add.png' desc='ログ2次パーサ登録手順'/>
 
-1. **_+追加する_**ボタンを選択すると**_パーサー追加_**ウィンドウが表示されます。
+1. **_+_** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウが表示されます。
 
-2. **_パーサー_**選択ウィンドウからパーサーを選択してください。 各パーサー設定項目および除外するステータスコード登録の詳細については、次の文書を参照してください。
+2. <Cmdname sid="parser" className="uitext" />選択ウィンドウからパーサーを選択してください。 各パーサー設定項目および除外するステータスコード登録の詳細については、次の文書を参照してください。
 
-   - **_4xx、5xxステータスコードパーサー_** [設定項目および除外するステータスコード登録](#4xx-5xx-status-parser)
+   - <Cmdname sid="status_4xx5xx_parser" className="uitext" /> [設定項目および除外するステータスコード登録](#4xx-5xx-status-parser)
 
-   - **_ステータスコード成功率パーサー_** [設定項目および除外するステータスコード登録](#log-pattern-status)
+   - <Cmdname sid="status_success_rate" className="uitext" /> [設定項目および除外するステータスコード登録](#log-pattern-status)
 
-3. **_カテゴリー_**選択ウィンドウからカテゴリを選択するか、直接入力してください。 
+3. <Cmdname sid="category" className="uitext" />選択ウィンドウからカテゴリを選択するか、直接入力してください。
 
-4. **_ログ検出条件_**を選択するか、直接入力してください。
+4. <Cmdname sid="ITM06439" className="uitext" />を選択するか、直接入力してください。
 
-5. **_除外するステータスコード_**を入力してください。 
+5. <Cmdname sid="ITM06255" className="uitext" />を入力してください。
 
-6. **_追加_**ボタンを選択してパーサーを登録してください。
+6. <Cmdname sid="add" className="uitext" />ボタンを選択してパーサーを登録してください。
 
-### 4xx、5xxステータスコードをパーサーから除外するステータスコードを登録{#4xx-5xx-status-parser}
+### 4xx、5xxステータスコードをパーサーから除外するステータスコードを登録 {#4xx-5xx-status-parser}
 
-<ImgLang img='log-2nd-4xx5xx.png' desc='4XX 5XXステータスコードパーサー'/>
+<ImgLang img='log-2nd-4xx5xx.png' desc='4xx、5xx状態コードパーサ'/>
 
-**_4xx、5xxステータスコードパーサー_**は、statusが既に構文解析されている場合に使用できるパーサーです。 構文解析されたstatusを利用して追加で4xx、5xステータスコードを構文解析します。 構文解析したデータで4xx、5xx件数データを作成できます。 除外するステータスコードとして、4xx、5xxステータスコードを入力または選択できます。 入力されたステータスコードは、ログから4xx、5xxステータスコードを構文解析するときに除外されます。 
+<Cmdname sid="status_4xx5xx_parser" className="uitext" />は、statusが既に構文解析されている場合に使用できるパーサーです。 構文解析されたstatusを利用して追加で4xx、5xステータスコードを構文解析します。 構文解析したデータで4xx、5xx件数データを作成できます。 除外するステータスコードとして、4xx、5xxステータスコードを入力または選択できます。 入力されたステータスコードは、ログから4xx、5xxステータスコードを構文解析するときに除外されます。
 
-#### 設定項目{#log-parser-comp-4xx5xx}
+#### 設定項目 {#log-parser-comp-4xx5xx}
 
 | 設定値          | 説明                                                                                                    | その他      |
 | ------------ | ----------------------------------------------------------------------------------------------------- | -------- |
@@ -431,19 +431,19 @@
 
 #### statusパーサーの登録例
 
-<ImgLang img='log-2nd-4xx5xx-status.png' desc='GROKパーサー - status構文解析パターン登録'/>
+<ImgLang img='log-2nd-4xx5xx-status.png' desc='Grokパーサー - status構文解析パターン登録'/>
 
 受信ログが`{"msg":"message","status":404}`で、例のようにGROKパーサーでstatusを構文解析する場合、`status: 404`のように構文解析されます。 statusが正しく構文解析されていることを確認したら、4XX、5XXステータスコードパーサーから除外するステータスコードを登録してください。     
 
 #### データ参照
 
-パーサーをすべて登録すると、**_Flexボード_**に移動して**_ログ4XX、5XX_**ウィジェットを作成してください。
+パーサーをすべて登録すると、<Cmdname sid="side_integratedFlexboard" className="uitext" />に移動して<Cmdname sid="log" className="uitext" /> <Cmdname sid="log_4xx5xx_count" className="uitext" />ウィジェットを作成してください。
 
-<ImgLang img='log-flexboard-widget.png' desc='Log Flex board widget-4xx5xx'/>
+<ImgLang img='log-flexboard-widget.png' desc='Log Flex board widget - 4xx5xx'/>
 
 ウィジェットを作成すると、次のようにデータを確認できます。
 
-<ImgLang img='log-flexboard-widget-chart-4xx5xx.png'desc='Log Flex board widget chart - 4xx5xx'/>
+<ImgLang img='log-flexboard-widget-chart-4xx5xx.png' desc='Log Flex board widget chart - 4xx5xx'/>
 
 - **_avg_**：参照期間データの平均値です。
 
@@ -451,13 +451,13 @@
 
 - **_recently_**：参照期間のデータの最後の値です。
 
-### ステータスコードの成功率をパーサーから除外するステータスコード登録{#log-pattern-status}
+### ステータスコードの成功率をパーサーから除外するステータスコード登録 {#log-pattern-status}
 
 <ImgLang img='log-2nd-status.png' desc='ステータスコード成功率パーサー'/>
 
-**_ステータスコード成功率パーサー_**は、statusが既に構文解析されている場合に使用できるパーサーです。 status構文解析に関する内容は、[次の文書](#4xx-5xx-status-parser)を参照してください。 構文解析されたstatusを利用して追加で2xx、3xxステータスコードを構文解析します。 構文解析したデータを使用して、HTTPリクエスト成功率データを生成できます。 除外するステータスコードは、2xx、3xxステータスコードを入力または選択できます。 入力されたステータスコードは、ログから2xx、3xxステータスコードを構文解析するときに除外されます。 
+<Cmdname sid="status_success_rate" className="uitext" />は、statusが既に構文解析されている場合に使用できるパーサーです。 status構文解析に関する内容は、[次の文書](#4xx-5xx-status-parser)を参照してください。 構文解析されたstatusを利用して追加で2xx、3xxステータスコードを構文解析します。 構文解析したデータを使用して、HTTPリクエスト成功率データを生成できます。 除外するステータスコードは、2xx、3xxステータスコードを入力または選択できます。 入力されたステータスコードは、ログから2xx、3xxステータスコードを構文解析するときに除外されます。
 
-#### 設定項目{#log-parser-comp-status}
+#### 設定項目 {#log-parser-comp-status}
 
 | 設定値          | 説明                                                                                                | その他      |
 | ------------ | ------------------------------------------------------------------------------------------------- | -------- |
@@ -467,19 +467,19 @@
 
 #### データ参照
 
-パーサーをすべて登録したら、**_Flexボード_**に移動し、ログリクエスト成功率のウィジェットを作成してください。  
+パーサーをすべて登録したら、<Cmdname sid="side_integratedFlexboard" className="uitext" />に移動し、ログリクエスト成功率のウィジェットを作成してください。  
 
 <ImgLang img='log-flexboard-widget-scs.png' desc='ログリクエスト成功率のウィジェットテンプレート'/>
 
 ウィジェットを作成すると、次のようにデータを確認できます。
 
-<ImgLang img='log-flexboard-widget-chart-scs.png'desc='Log Flex board widget chart request success rate widget chart - 4xx5xx'/>
+<ImgLang img='log-flexboard-widget-chart-scs.png' desc='Log Flex board widget chart request success rate widget chart - 4xx5xx'/>
 
 チャート上のデータは、参照期間に関する統計を示します。 統計方法としては最近値、最大値、平均値などを選択できます。 最近は、値がデフォルトとして選択されています。
 
-## 高速インデックス設定{#log-setting-index}
+## 高速インデックス設定 {#log-setting-index}
 
-**_ログ設定_**メニューの上部にある**_クイックインデックス設定_**タブを選択してください。 大量のログを収集すると、ログ検索性能が著しく低下する可能性があります。 頻繁に使用する検索条件は、**インデックス**(index)で生成すると、ログ検索の性能が向上し、クイック ナビゲーションが可能になります。 設定項目は次のとおりです。
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上段で<Cmdname sid="fast_index_setting" className="uitext" />タブを選択してください。 大量のログを収集すると、ログ検索性能が著しく低下する可能性があります。 頻繁に使用する検索条件は、**インデックス**(index)で生成すると、ログ検索の性能が向上し、クイック ナビゲーションが可能になります。 設定項目は次のとおりです。
 
 | 設定値                 | 必須の有無      | 説明                                          |
 | ------------------- | ---------- | ------------------------------------------- |
@@ -509,7 +509,7 @@
 
 8. <Cmdname sid="import_json" className="uitext" />ウィンドウが表示されたら、設定内容を確認しし、<Cmdname sid="add_to_list" className="uitext" />または <Cmdname sid="overwrite" className="uitext" />ボタンを選択してください。
 
-9. 画面の右上にある<Cmdname sid="save" className="uitext" />ボタンを選択してください。
+9. 画面右上の<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 :::caution
 
@@ -517,9 +517,9 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 :::
 
-## ログ長期保存の統計設定{#log-long-term-archive}
+## ログ長期保存の統計設定 {#log-long-term-archive}
 
-**_ログ設定_**メニューの上部にある**_ログ長期保存の統計_**タブを選択してください。 ログデータは、非常に大容量のため、長期間保存することは困難です。 したがって、ログ統計データの設定機能を使用して**特定の条件を満たすログデータが5分ごとに何件収集されたかに関する情報を保存**することができます。 長期間に実際のログデータが削除されても、条件を満たすログがどれだけ収集されているかの推移を確認することができます。
+<Cmdname sid="side_logSetting" className="uitext" />メニューの上段で<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />タブを選択してください。 ログデータは、非常に大容量のため、長期間保存することは困難です。 したがって、ログ統計データの設定機能を使用して**特定の条件を満たすログデータが5分ごとに何件収集されたかに関する情報を保存**することができます。 長期間に実際のログデータが削除されても、条件を満たすログがどれだけ収集されているかの推移を確認することができます。
 
 {/* 
 
@@ -547,13 +547,13 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 */}
 
-### ログ長期保存統計の追加{#log-long-term-archive-add}
+### ログ長期保存統計の追加 {#log-long-term-archive-add}
 
 <ImgLang img='log-long-term-archive.png' desc='ログ長期保存の統計'/>
 
-**_ログ長期保存統計_**タブで**_+追加する_**ボタンを選択すると**_ログ長期保存統計の追加_**ウィンドウが表示されます。 **_+追加する_**ボタンでルールを追加したり、作成したルールを**_-_**アイコンで削除できます。
+<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />タブで ***+*** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウが表示されます。 ***+*** <Cmdname sid="adding" className="uitext" />ボタンでルールを追加したり、作成したルールを***-***アイコンで削除できます。
 
-#### 設定項目{#log-long-term-archive-comp}
+#### 設定項目 {#log-long-term-archive-comp}
 
 | フィールド                              | 説明                                                                                                                              |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -568,18 +568,18 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 次のように設定を追加した場合、収集されたログのうち、statusが`200`, `300`のログを対象に**_TotalCount_**のキー値で統計データを作成します。 
 
-<ImgLang img='log-long-term-totalcount.png' desc='ログ長期保存統計の例'/>
+<ImgLang img='log-long-term-totalcount.png' desc='ログ長期保存の統計例'/>
 
-### データ参照{#log-widget-statistics}
+### データ参照 {#log-widget-statistics}
 
-1. **_Flexボード_**の**_ウィジェットテンプレート_**で**_ログ長期保存統計_**を検索し、ウィジェットを作成してください。
+1. <Cmdname sid="side_integratedFlexboard" className="uitext" />の<Cmdname sid="widget_template" className="uitext" />で<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />を検索し、ウィジェットを作成してください。
 
-   <ImgLang img='log-flexboard-widget-long-term.png' desc='長期保存統計ウィジェットテンプレート'/>
+   <ImgLang img='log-flexboard-widget-long-term.png' desc='ログ長期保存統計ウィジェットテンプレート'/>
 
-2. データを表示する**_カテゴリー_**と**_キー_**を指定して**_適用_**ボタンを選択します。
+2. データを照会する<Cmdname sid="category" className="uitext" />と<Cmdname sid="ITM06438" className="uitext" />を指定して<Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
-   <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='長期保存統計ウィジェット - カテゴリおよびキーの選択'/>
+   <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='ログ長期保存統計ウィジェット - カテゴリおよびキーの選択'/>
 
-3. 追加した設定で**_ログ長期保存統計_**データを次のように確認できます。
+3. 追加した設定で<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />データを次のように確認できます。
 
-   <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='長期保存統計ウィジェット'/>
+   <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='ログ期保存統計ウィジェット'/>

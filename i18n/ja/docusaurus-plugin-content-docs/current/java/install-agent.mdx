@@ -30,33 +30,23 @@ import Downloadjavaagent from "../common-items/_download-java-agent.mdx";
 
 エージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、WhaTap収集サーバーに送信するトレーサーとトレーサーがデータを送信するのに役立つ要素で構成されています。
 
-- *whatap.conf*
+<Filetree name="whatap">
 
-  モニタリングエージェントの構成情報、アクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。詳細については、[次の文書](set-agent)を参照してください。
+<FiletreeItem name="whatap.conf" type="file">モニタリングエージェントの構成情報、アクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。詳細については、[次の文書](set-agent)を参照してください。</FiletreeItem>
 
-- _ping.sh(bat)_
+<FiletreeItem name="ping.sh(bat)" type="file">現在設定しているアクセスキーで、WhaTapデータ収集サーバーと通信を行い、設定やネットワークに問題がないか確認するためのスクリプト(バッチ)ファイルです。</FiletreeItem>
 
-  現在設定しているアクセスキーで、WhaTapデータ収集サーバーと通信を行い、設定やネットワークに問題がないか確認するためのスクリプト(バッチ)ファイルです。
+<FiletreeItem name="proxy.sh(bat)" type="file">*whatap.agent.proxy-`X.Y.Z`.jar*ファイルを開始するためのスクリプト(バッチ) ファイルです。</FiletreeItem>
 
-- _proxy.sh(bat)_
+<FiletreeItem name="resmon.sh(bat)" type="file">CPU、Memory、Disk情報が正しく収集しているかを確認するためのスクリプト(バッチ) ファイルです。</FiletreeItem>
 
-  *whatap.agent.proxy-`X.Y.Z`.jar*ファイルを開始するためのスクリプト(バッチ) ファイルです。
+<FiletreeItem name="whatap-logsink-lz4-X.Y.Z.jar" type="file">CPU、Memory、Disk情報が正しく収集しているかを確認するためのスクリプト(バッチ) ファイルです。</FiletreeItem>
 
-- _resmon.sh(bat)_
+<FiletreeItem name="whatap.agent-X.Y.Z.jar" type="file">アプリケーションサーバーの各種モニタリング情報を収集および収集サーバーに送信するモニタリングエージェントのファイルです。</FiletreeItem>
 
-  CPU、Memory、Disk情報が正しく収集しているかを確認するためのスクリプト(バッチ) ファイルです。
+<FiletreeItem name="whatap.agent.proxy-X.Y.Z.jar" type="file">アプリケーションサーバーが稼働しているサーバーからWhaTap収集サーバーに直接接続ができない場合、その間のProxyサーバー(経由サーバー)で経由する役割を果たすアプリケーションです。</FiletreeItem>
 
-- *whatap-logsink-lz4-`X.Y.Z`.jar*
-
-  アプリケーションサーバのログ情報を収集するためのplugin形式のファイルです。
-
-- *whatap.agent-`X.Y.Z`.jar*
-
-  アプリケーションサーバーの各種モニタリング情報を収集および収集サーバーに送信するモニタリングエージェントのファイルです。
-
-- *whatap.agent.proxy-`X.Y.Z`.jar*
-
-  アプリケーションサーバーが稼働しているサーバーからWhaTap収集サーバーに直接接続ができない場合、その間のProxyサーバー(経由サーバー)で経由する役割を果たすアプリケーションです。
+</Filetree>
 
 import Conf from "../common-items/_whatap_conf.mdx";
 

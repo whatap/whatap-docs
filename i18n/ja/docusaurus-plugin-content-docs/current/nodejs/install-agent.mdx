@@ -53,22 +53,23 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 ホスト(`whatap.server.host`) のアドレスは、WhaTap proxyをインストールしたサーバーのアドレスです。スラッシュ(「/」)を区切り文字として使用し、WhaTap proxy が実行中のサーバーにアドレスを入力することができます。
 
-<details>
-<summary>Node.jsエージェント構成ファイル</summary>
+エージェントの構成ファイルについては、以下を参照してください。
 
-Node.jsモニタリングサービスを構成する各ファイルの役割は、次のとおりです。
+<Filetree name="whatap">
 
-- *whatap.conf*：エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。
+<FiletreeItem name="whatap.conf" type="file">エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。</FiletreeItem>
 
-- _lib_：エージェント、トレーサープログラムです。
+<FiletreeItem name="README.md" type="file">エージェントのインストールに関する案内文書です。</FiletreeItem>
 
-- _README.md_：エージェントのインストールに関する手順書です。
+<FiletreeItem name="package.json" type="file">npmモジュール環境構成ファイルです。</FiletreeItem>
 
-- *package.json*：npmモジュール環境構成ファイルです。
+<FiletreeItem name="index.js" type="file">main export宣言ファイルです。</FiletreeItem>
 
-- _index.js_：main export宣言ファイルです。
+<FiletreeItem name="paramkey.txt" type="file">SQL変数、HTTPクエリの照会、Thread中止機能を利用する時に入力するセキュリティキーを保存します。</FiletreeItem>
 
-</details>
+<FiletreeItem name="lib" type="folder">エージェント、トレーサープログラムです。</FiletreeItem>
+
+</Filetree>
 
 :::tip
 

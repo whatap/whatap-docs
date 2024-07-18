@@ -8,6 +8,8 @@
 
   エージェントが収集したデータを送信するWhaTap収集サーバーのIPアドレスを設定します。収集サーバーの冗長化で2つ以上のIPを所有する場合は、コンマ(,)を区切り文字として使用します。設定したIPアドレスには、収集サーバーproxyデーモンがリスニング状態でサービスされる必要があります。
 
+<Xclude product="oracle-pro">
+
 - **whatap.server.port** <span class='type'>String</span>
 
   既定値`6600`
@@ -24,6 +26,22 @@
 
   :::
 
+</Xclude>
+
+<InDoc product="oracle-pro">
+
+- **ipckey** <span class='type'>String</span>
+
+  `ipcs -m`コマンドを使用して取得できます。モニタリングするOracleのKey値(16進数)です。
+
+  :::note
+
+  `ipcs`コマンドは、プロセス間の通信(IPC)に関する情報を提供します。`-m`オプションは、共有メモリリソースを照会します。
+
+  :::
+
+</InDoc>
+
 <InDoc product='cubrid'>
 
 - **db** <span class='type'>String</span>
@@ -32,11 +50,15 @@
 
 </InDoc>
 
+<Xclude product="oracle-pro">
+
 - **db_ip** <span class='type'>String</span>
 
   モニタリングするデータベースサーバーのIPアドレスを設定します。
 
-<Xclude product='cubrid'>
+</Xclude>
+
+<Xclude product='cubrid,oracle-pro'>
 
 - **db_port** <span class='type'>String</span>
 
