@@ -599,472 +599,485 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Filetree, FiletreeItem, Youtube} = _components;
+  }, {Cmdname, Filetree, FiletreeItem, Steps, Youtube} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Filetree) _missingMdxReference("Filetree", true);
   if (!FiletreeItem) _missingMdxReference("FiletreeItem", true);
+  if (!Steps) _missingMdxReference("Steps", true);
   if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
       ko: "MWDFeegF6mQ",
       en: "MWDFeegF6mQ",
       ja: "MWDFeegF6mQ"
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_accesskey_v2_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "virtual-environment-활성화",
-        children: "Virtual Environment 활성화"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["애플리케이션이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://docs.python.org/ko/3.7/library/venv.html",
-          children: "virtualenv"
-        }), "를 사용 중이라면 가상 환경을 활성화하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "bin/activate"
-        }), " 파일을 실행하세요."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "에이전트-다운로드",
-        children: "에이전트 다운로드"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "액세스 키"
-        }), "를 발급받은 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "urlcheck-agent-setup-1-subject",
-          className: "uitext"
-        }), " 섹션으로 이동하세요. 다음 코드를 실행해 에이전트를 설치하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "pip install whatap-python\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "tip",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["pip 명령으로 설치할 수 없다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://pypi.org/project/whatap-python/#files",
-            children: "pypi 와탭 페이지"
-          }), "에서 설치 파일을 다운로드하세요. 다운로드한 파일을 압축 해제한 다음 설치를 진행하세요."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Steps, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_v2_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_accesskey_v2_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h2",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "virtual-environment-활성화",
+          children: "Virtual Environment 활성화"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["애플리케이션이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "https://docs.python.org/ko/3.7/library/venv.html",
+            children: "virtualenv"
+          }), "를 사용 중이라면 가상 환경을 활성화하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "bin/activate"
+          }), " 파일을 실행하세요."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h2",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "에이전트-다운로드",
+          children: "에이전트 다운로드"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "액세스 키"
+          }), "를 발급받은 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "urlcheck-agent-setup-1-subject",
+            className: "uitext"
+          }), " 섹션으로 이동하세요. 다음 코드를 실행해 에이전트를 설치하세요."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-bash",
-            children: "tar xzvf whatap-python-1.x.x.tar.gz \\\ncd whatap-python-1.X.Y.Z \\\npython setup.py install\n"
+            children: "pip install whatap-python\n"
           })
-        })]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "에이전트-구성-파일",
-        children: "에이전트 구성 파일"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "Python 에이전트 파일은 애플리케이션 모니터링에 필요한 정보를 추출해 와탭 수집 서버로 전달하는 트레이서와 트레이서가 데이터를 보낼 수 있도록 돕는 요소로 구성되어 있습니다. 에이전트 파일 구성은 다음을 참조하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Filetree, {
-        name: "whatap",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
-          name: "agent",
-          type: "folder",
-          children: "애플리케이션 서버의 다양한 성능 지표를 수집해 서버에 전송하는 모니터링 에이전트 파일로 구성된 디렉터리입니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
-          name: "bootstrap",
-          type: "folder",
-          children: "Python 에이전트의 각종 데이터를 수집하는 역할의 파일로 구성된 디렉터리입니다. Python 에이전트가 시작할 때 실행됩니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
-          name: "conf / control",
-          type: "folder",
-          children: "Python 에이전트의 설정과 제어를 담당하는 파일로 구성된 디렉터리입니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
-          name: "net / pack",
-          type: "folder",
-          children: "UDP 통신과 관련한 파일로 구성된 디렉터리입니다. 수집한 데이터를 서버로 전송하는 역할을 수행합니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
-          name: "trace",
-          type: "folder",
-          children: "애플리케이션별로 각종 트랜잭션 정보를 수집하는 파일로 구성된 디렉터리입니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(FiletreeItem, {
-          name: "paramkey.txt",
-          type: "file",
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "추적한 트랜잭션의 트레이스 정보로 수집한 HTTP와 SQL 데이터의 파라미터 정보를 확인할 때 사용합니다. 보안 키를 파일에 저장하고 실제 수집된 데이터를 브라우저에서 확인하고자 할 때 파일에 저장해 둔 보안 키를 입력해야 조회할 수 있습니다. 파일의 내용을 직접 변경하여 보안 키를 수정할 수 있습니다. 관련 옵션에 대한 자세한 내용은 다음 문서를 참조하세요."
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "agent-transaction#profile_http_parameter",
-              children: "profile_http_parameter_enabled"
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "agent-dbsql#profile-sql-param",
-              children: "profile_sql_param_enabled"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+          type: "tip",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["pip 명령으로 설치할 수 없다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://pypi.org/project/whatap-python/#files",
+              children: "pypi 와탭 페이지"
+            }), "에서 설치 파일을 다운로드하세요. 다운로드한 파일을 압축 해제한 다음 설치를 진행하세요."]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "tar xzvf whatap_python-1.x.x.tar.gz \\\ncd whatap_python-1.X.Y.Z \\\npython setup.py install\n"
             })
           })]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
-          name: "setup.py",
-          type: "file",
-          children: "whatap 디렉터리 패키징을 위한 정의 파일입니다."
         })]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "docker",
-        children: "Docker"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Docker 컨테이너로 서비스되는 애플리케이션의 경우 다음 내용을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "DockerFile"
-        }), "에 추가하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Python 에이전트"
-            }), "를 설치하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-docker",
-              metastring: "title='Dockerfile' {3}",
-              children: "ENV WHATAP_HOME /whatap\nRUN mkdir -p /whatap\nRUN pip install whatap-python\n"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-            type: "note",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "requirements.txt"
-              }), "를 사용한다면 해당 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "whatap-python"
-              }), "을 추가하세요."]
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "액세스 키"
-            }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "수집 서버 IP"
-            }), " 설정을 등록하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-docker",
-              metastring: "title='Dockerfile'",
-              children: "RUN touch /whatap/whatap.conf\nRUN echo \"license=[ ACCESS_KEY ]\" > /whatap/whatap.conf\nRUN echo \"whatap.server.host=[ COLLECTION_SERVER_IP ]\" >> /whatap/whatap.conf\nRUN echo \"app_name=[ AGENT_NAME ]\" >> /whatap/whatap.conf\nRUN echo \"app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\" >> /whatap/whatap.conf\n"
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["기존 실행 커맨드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "python manage.py runserver"
-            }), "앞에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "whatap-start-agent"
-            }), "를 추가하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-docker",
-              metastring: "title='Dockerfile'",
-              children: "#ENTRYPOINT python manage.py runserver\nENTRYPOINT whatap-start-agent python manage.py runserver\n"
-            })
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "에이전트-설정",
-        children: "에이전트 설정"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "whatap_home-기본-경로-설정",
-        children: "WHATAP_HOME 기본 경로 설정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["로그와 설정 파일 경로를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "$WHATAP_HOME"
-        }), " 경로를 지정하세요. whatap 디렉터리를 새로 생성하는 것을 권장합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "$ export WHATAP_HOME=[PATH]\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "액세스-키-및-수집-서버-ip-설정",
-        children: "액세스 키 및 수집 서버 IP 설정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["다음 명령어를 실행하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "$WHATAP_HOME"
-        }), "에 지정한 경로에 바로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "whatap.conf"
-        }), " 파일이 생성 및 설정됩니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "whatap-setting-config \\\n--host [ COLLECTION_SERVER_IP ] \\\n--license [ ACCESS_KEY ] \\\n--app_name [ USER_DEFINED_AGENT_NAME ] \\\n--app_process_name [ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "설정-확인",
-        children: "설정 확인"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "다음과 같이 설정 파일이 잘 생성되었는지 확인하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "$ cat $WHATAP_HOME/whatap.conf\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "권한 문제가 발생하는 경우"
-          })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "에이전트-구성-파일",
+          children: "에이전트 구성 파일"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "Python 에이전트 파일은 애플리케이션 모니터링에 필요한 정보를 추출해 와탭 수집 서버로 전달하는 트레이서와 트레이서가 데이터를 보낼 수 있도록 돕는 요소로 구성되어 있습니다. 에이전트 파일 구성은 다음을 참조하세요."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Filetree, {
+          name: "whatap",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
+            name: "agent",
+            type: "folder",
+            children: "애플리케이션 서버의 다양한 성능 지표를 수집해 서버에 전송하는 모니터링 에이전트 파일로 구성된 디렉터리입니다."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
+            name: "bootstrap",
+            type: "folder",
+            children: "Python 에이전트의 각종 데이터를 수집하는 역할의 파일로 구성된 디렉터리입니다. Python 에이전트가 시작할 때 실행됩니다."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
+            name: "conf / control",
+            type: "folder",
+            children: "Python 에이전트의 설정과 제어를 담당하는 파일로 구성된 디렉터리입니다."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
+            name: "net / pack",
+            type: "folder",
+            children: "UDP 통신과 관련한 파일로 구성된 디렉터리입니다. 수집한 데이터를 서버로 전송하는 역할을 수행합니다."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
+            name: "trace",
+            type: "folder",
+            children: "애플리케이션별로 각종 트랜잭션 정보를 수집하는 파일로 구성된 디렉터리입니다."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(FiletreeItem, {
+            name: "paramkey.txt",
+            type: "file",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "추적한 트랜잭션의 트레이스 정보로 수집한 HTTP와 SQL 데이터의 파라미터 정보를 확인할 때 사용합니다. 보안 키를 파일에 저장하고 실제 수집된 데이터를 브라우저에서 확인하고자 할 때 파일에 저장해 둔 보안 키를 입력해야 조회할 수 있습니다. 파일의 내용을 직접 변경하여 보안 키를 수정할 수 있습니다. 관련 옵션에 대한 자세한 내용은 다음 문서를 참조하세요."
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-transaction#profile_http_parameter",
+                children: "profile_http_parameter_enabled"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-dbsql#profile-sql-param",
+                children: "profile_sql_param_enabled"
+              })
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(FiletreeItem, {
+            name: "setup.py",
+            type: "file",
+            children: "whatap 디렉터리 패키징을 위한 정의 파일입니다."
+          })]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "docker",
+          children: "Docker"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["Docker 컨테이너로 서비스되는 애플리케이션의 경우 다음 내용을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "DockerFile"
+          }), "에 추가하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["와탭 설정을 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "$WHATAP_HOME/whatap.conf"
-              }), " 파일의 읽기 및 쓰기 권한"]
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Python 에이전트"
+              }), "를 설치하세요."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-docker",
+                metastring: "title='Dockerfile' {3}",
+                children: "ENV WHATAP_HOME /whatap\nRUN mkdir -p /whatap\nRUN pip install whatap-python\n"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+              type: "note",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "requirements.txt"
+                }), "를 사용한다면 해당 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "whatap-python"
+                }), "을 추가하세요."]
+              })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["와탭 로그를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "$WHATAP_HOME/logs"
-              }), " 경로와 하위 파일의 읽기 및 쓰기 권한"]
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "액세스 키"
+              }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "수집 서버 IP"
+              }), " 설정을 등록하세요."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-docker",
+                metastring: "title='Dockerfile'",
+                children: "RUN touch /whatap/whatap.conf\nRUN echo \"license=[ ACCESS_KEY ]\" > /whatap/whatap.conf\nRUN echo \"whatap.server.host=[ COLLECTION_SERVER_IP ]\" >> /whatap/whatap.conf\nRUN echo \"app_name=[ AGENT_NAME ]\" >> /whatap/whatap.conf\nRUN echo \"app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\" >> /whatap/whatap.conf\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기존 실행 커맨드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "python manage.py runserver"
+              }), "앞에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "whatap-start-agent"
+              }), "를 추가하세요."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-docker",
+                metastring: "title='Dockerfile'",
+                children: "CMD [\"whatap-start-agent\", \"python\", \"manage.py\", \"runserver\", \"0.0.0.0:8000\"]\n"
+              })
             }), "\n"]
           }), "\n"]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+        className: "remark-sectionize-h2",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "에이전트-설정",
+          children: "에이전트 설정"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "whatap_home-기본-경로-설정",
+          children: "WHATAP_HOME 기본 경로 설정"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["로그와 설정 파일 경로를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "$WHATAP_HOME"
+          }), " 경로를 지정하세요. whatap 디렉터리를 새로 생성하는 것을 권장합니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            children: "$ export WHATAP_HOME=[PATH]\n"
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "액세스-키-및-수집-서버-ip-설정",
+          children: "액세스 키 및 수집 서버 IP 설정"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["액세스 키 및 수집 서버 IP 설정을 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-setting-config"
+          }), " 명령어를 실행하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            children: "$ whatap-setting-config \\\n--host [ COLLECTION_SERVER_IP ] \\\n--license [ ACCESS_KEY ] \\\n--app_name [ USER_DEFINED_AGENT_NAME ] \\\n--app_process_name [ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\n"
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "설정-확인",
+          children: "설정 확인"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "$WHATAP_HOME"
-          }), " 경로에 대한 권한 문제가 발생하다면 다음 명령어를 실행해 권한을 부여하세요."]
+          }), "에 지정한 경로로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일이 생성되고 설정됩니다. 다음 명령어를 실행해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일이 생성됐는지 확인하세요."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-bash",
-            children: "echo `sudo chmod -R 777 $WHATAP_HOME`\n"
+            children: "$ cat $WHATAP_HOME/whatap.conf\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "license=[ACCESS_KEY]\nwhatap.server.host=[COLLECTION_SERVER_IP]\n\n# application name\napp_name=[ USER_DEFINED_AGENT_NAME ]\n\n# middleware process name ex)uwsgi, gunicorn ..\napp_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+          type: "note",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "권한 문제가 발생하는 경우"
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["와탭 설정을 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "$WHATAP_HOME/whatap.conf"
+                }), " 파일의 읽기 및 쓰기 권한"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["와탭 로그를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "$WHATAP_HOME/logs"
+                }), " 경로와 하위 파일의 읽기 및 쓰기 권한"]
+              }), "\n"]
+            }), "\n"]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "$WHATAP_HOME"
+            }), " 경로에 대한 권한 문제가 발생하다면 다음 명령어를 실행해 권한을 부여하세요."]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "echo `sudo chmod -R 777 $WHATAP_HOME`\n"
+            })
+          })]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+        className: "remark-sectionize-h2",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "애플리케이션-서버-환경별-적용하기",
+          children: "애플리케이션 서버 환경별 적용하기"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "command",
+          children: "Command"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Command"
+          }), " 환경에서는 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-start-agent"
+          }), " 명령어를 애플리케이션 시작 명령어(Application start command) 앞에 추가하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            metastring: "title=\"BASH\"",
+            children: "# $ whatap-start-agent [Application start command]\n$ whatap-start-agent python manage.py runserver\n"
           })
         })]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "애플리케이션-서버-환경별-적용하기",
-        children: "애플리케이션 서버 환경별 적용하기"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "command",
-        children: "Command"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Command"
-        }), " 환경에서는 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-start-agent"
-        }), " 명령어를 애플리케이션 시작 명령어(Application start command) 앞에 추가하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "title=\"BASH\"",
-          children: "# $ whatap-start-agent [Application start command]\n$ whatap-start-agent python manage.py runserver\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "uwsgi",
-        children: "uWSGI"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "uwsgi",
           children: "uWSGI"
-        }), " 환경에서는 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-start-agent"
-        }), " 명령어를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "uwsgi"
-        }), " 명령어 앞에 추가하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "title=\"BASH\"",
-          children: "$ whatap-start-agent uwsgi --ini myapp.ini\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "서비스에 uWSGI를 등록해 애플리케이션을 실행하는 경우 다음 예제 코드를 참고하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "title=\"/etc/init.d/uwsgi\"",
-          children: "description \"uWSGI application server handling myapp\"\nstart on runlevel [2345]\nstop on runlevel [!2345]\nexec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n# or if you are using a virtual environment\nexec env WHATAP_HOME=[PATH] [ABSOLUTE_PATH]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title=\"/etc/init/uwsgi.conf\"",
-          children: "...\nNAME=\"uwsgi\"\nPATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin\nDAEMON=/usr/local/bin/uwsgi\nPID=$RUN/$NAME.pid\nINI_PATH=/etc/$NAME/$NAME.ini\n\n########## WHATAP_AGENT_CONF ##########\nWHATAP_HOME=[PATH]\nWHATAP_AGENT=[ABSOLUTE_PATH]/whatap-start-agent\n...\ndo_start(){\n  env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]\n}\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["사용자(User)를 변경한다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "WHATAP_HOME"
-              }), " 환경 변수를 추가하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "uWSGI"
+          }), " 환경에서는 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-start-agent"
+          }), " 명령어를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "uwsgi"
+          }), " 명령어 앞에 추가하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            metastring: "title=\"BASH\"",
+            children: "$ whatap-start-agent uwsgi --ini myapp.ini\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "서비스에 uWSGI를 등록해 애플리케이션을 실행하는 경우 다음 예제 코드를 참고하세요."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            metastring: "title=\"/etc/init.d/uwsgi\"",
+            children: "description \"uWSGI application server handling myapp\"\nstart on runlevel [2345]\nstop on runlevel [!2345]\nexec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n# or if you are using a virtual environment\nexec env WHATAP_HOME=[PATH] [ABSOLUTE_PATH]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"/etc/init/uwsgi.conf\"",
+            children: "...\nNAME=\"uwsgi\"\nPATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin\nDAEMON=/usr/local/bin/uwsgi\nPID=$RUN/$NAME.pid\nINI_PATH=/etc/$NAME/$NAME.ini\n\n########## WHATAP_AGENT_CONF ##########\nWHATAP_HOME=[PATH]\nWHATAP_AGENT=[ABSOLUTE_PATH]/whatap-start-agent\n...\ndo_start(){\n  env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]\n}\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["사용자(User)를 변경한다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "WHATAP_HOME"
+                }), " 환경 변수를 추가하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "가상 환경을 사용한다면 에이전트 시작 명령어를 절대 경로로 추가하세요."
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["서비스 실행 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "/etc/init/uwsgi.conf"
+                }), ")을 수정하여 에이전트 시작 명령어와 함께 애플리케이션을 시작하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "사용자 환경에 따라 서비스 실행 파일의 경로는 다를 수 있습니다."
+              }), "\n"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "가상 환경을 사용한다면 에이전트 시작 명령어를 절대 경로로 추가하세요."
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["서비스 실행 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "/etc/init/uwsgi.conf"
-              }), ")을 수정하여 에이전트 시작 명령어와 함께 애플리케이션을 시작하세요."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "사용자 환경에 따라 서비스 실행 파일의 경로는 다를 수 있습니다."
-            }), "\n"]
-          }), "\n"]
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "gunicorn",
-        children: "Gunicorn"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "gunicorn",
           children: "Gunicorn"
-        }), " 환경에서는 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-start-agent"
-        }), " 명령어를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "Gunicorn"
-        }), " 명령어 앞에 추가하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "title=SH ",
-          children: "$ whatap-start-agent gunicorn myapp.wsgi\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "서비스에 Gunicorn를 등록해 애플리케이션을 실행하는 경우 다음 예제 코드를 참고하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          metastring: "title=\"/etc/init.d/gunicorn\"",
-          children: "description \"gunicorn application server handling myapp\"\nstart on runlevel [2345]\nstop on runlevel [!2345]\nexec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n# or if you are using a virtual environment\nexec env WHATAP_HOME=[PATH] [ABSOLUTE_PATH]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title=\"/etc/init/gunicorn.conf\"",
-          children: "...\nNAME=\"gunicorn\"\nPATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin\nDAEMON=/usr/local/bin/gunicorn\nPID=$RUN/$NAME.pid\nINI_PATH=/etc/$NAME/$NAME.ini\n\n########## WHATAP_AGENT_CONF ##########\nWHATAP_HOME=[PATH]\nWHATAP_AGENT=[ABSOLUTE_PATH]/whatap-start-agent\n\n...\ndo_start(){\n  env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]\n}\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["사용자(User)를 변경한다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "WHATAP_HOME"
-              }), " 환경 변수를 추가하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Gunicorn"
+          }), " 환경에서는 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-start-agent"
+          }), " 명령어를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Gunicorn"
+          }), " 명령어 앞에 추가하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            metastring: "title=SH ",
+            children: "$ whatap-start-agent gunicorn myapp.wsgi\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "서비스에 Gunicorn를 등록해 애플리케이션을 실행하는 경우 다음 예제 코드를 참고하세요."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            metastring: "title=\"/etc/init.d/gunicorn\"",
+            children: "description \"gunicorn application server handling myapp\"\nstart on runlevel [2345]\nstop on runlevel [!2345]\nexec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n# or if you are using a virtual environment\nexec env WHATAP_HOME=[PATH] [ABSOLUTE_PATH]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"/etc/init/gunicorn.conf\"",
+            children: "...\nNAME=\"gunicorn\"\nPATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin\nDAEMON=/usr/local/bin/gunicorn\nPID=$RUN/$NAME.pid\nINI_PATH=/etc/$NAME/$NAME.ini\n\n########## WHATAP_AGENT_CONF ##########\nWHATAP_HOME=[PATH]\nWHATAP_AGENT=[ABSOLUTE_PATH]/whatap-start-agent\n\n...\ndo_start(){\n  env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]\n}\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["사용자(User)를 변경한다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "WHATAP_HOME"
+                }), " 환경 변수를 추가하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "가상 환경을 사용한다면 에이전트 시작 명령어를 절대 경로로 추가하세요."
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["서비스 실행 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "/etc/init/gunicorn.conf"
+                }), ")을 수정하여 에이전트 시작 명령어와 함께 애플리케이션을 시작하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "사용자 환경에 따라 서비스 실행 파일의 경로는 다를 수 있습니다."
+              }), "\n"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "가상 환경을 사용한다면 에이전트 시작 명령어를 절대 경로로 추가하세요."
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "supervisor",
+          children: "Supervisor"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"supervisor.conf\"",
+            children: "[program:app-uwsgi]\nenvironment = WHATAP_HOME=[PATH]\ncommand = [ABSOLUTE_PATH]/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini\n\n[program:nginx-app]\ncommand = /usr/sbin/nginx\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["사용자(User)를 변경한다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "WHATAP_HOME"
+                }), " 환경 변수를 추가하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "가상 환경을 사용한다면 에이전트 시작 명령어를 절대 경로로 추가하세요."
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["서비스 실행 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: "/etc/supervisor/conf.d/supervisor.conf"
+                }), ")을 수정하여 에이전트 시작 명령어와 함께 애플리케이션을 시작하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "사용자 환경에 따라 서비스 실행 파일의 경로는 다를 수 있습니다."
+              }), "\n"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["서비스 실행 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "/etc/init/gunicorn.conf"
-              }), ")을 수정하여 에이전트 시작 명령어와 함께 애플리케이션을 시작하세요."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "사용자 환경에 따라 서비스 실행 파일의 경로는 다를 수 있습니다."
-            }), "\n"]
-          }), "\n"]
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "supervisor",
-        children: "Supervisor"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title=\"supervisor.conf\"",
-          children: "[program:app-uwsgi]\nenvironment = WHATAP_HOME=[PATH]\ncommand = [ABSOLUTE_PATH]/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini\n\n[program:nginx-app]\ncommand = /usr/sbin/nginx\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["사용자(User)를 변경한다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "WHATAP_HOME"
-              }), " 환경 변수를 추가하세요."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "가상 환경을 사용한다면 에이전트 시작 명령어를 절대 경로로 추가하세요."
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["서비스 실행 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "/etc/supervisor/conf.d/supervisor.conf"
-              }), ")을 수정하여 에이전트 시작 명령어와 함께 애플리케이션을 시작하세요."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "사용자 환경에 따라 서비스 실행 파일의 경로는 다를 수 있습니다."
-            }), "\n"]
-          }), "\n"]
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "wsgi-애플리케이션-직접-구현하기",
-        children: "WSGI 애플리케이션 직접 구현하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-python",
-          metastring: "title=\"PYTHON\"",
-          children: "import whatap\n\n@whatap.register_app\ndef simple_app(environ, start_response):\n    \"\"\"Simplest possible application object\"\"\"\n    status = '200 OK'\n    response_headers = [('Content-type', 'text/plain')]\n    start_response(status, response_headers)\n    return ['Hello world!\\n']\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "코드code로-적용하기",
-        children: "코드(Code)로 적용하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "코드 가장 윗줄에 API를 직접 호출하는 코드를 다음과 같이 추가해 에이전트를 적용할 수 있습니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-python",
-          metastring: "title=\"PYTHON\"",
-          children: "import whatap\nwhatap.agent\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "애플리케이션 서버를 실행하면 에이전트가 모니터링 데이터를 수집하기 시작합니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "서비스-실행-확인",
-        children: "서비스 실행 확인"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "다음 명령어를 실행해 와탭 Python 서비스가 정상 실행되는지 확인하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-bash",
-          children: "ps -ef | grep whatap_python\n"
-        })
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "wsgi-애플리케이션-직접-구현하기",
+          children: "WSGI 애플리케이션 직접 구현하기"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-python",
+            metastring: "title=\"PYTHON\"",
+            children: "import whatap\n\n@whatap.register_app\ndef simple_app(environ, start_response):\n    \"\"\"Simplest possible application object\"\"\"\n    status = '200 OK'\n    response_headers = [('Content-type', 'text/plain')]\n    start_response(status, response_headers)\n    return ['Hello world!\\n']\n"
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h3",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "코드code로-적용하기",
+          children: "코드(Code)로 적용하기"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "코드 가장 윗줄에 API를 직접 호출하는 코드를 다음과 같이 추가해 에이전트를 적용할 수 있습니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-python",
+            metastring: "title=\"PYTHON\"",
+            children: "import whatap\nwhatap.agent()\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "애플리케이션 서버를 실행하면 에이전트가 모니터링 데이터를 수집하기 시작합니다."
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h2",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "서비스-실행-확인",
+          children: "서비스 실행 확인"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "다음 명령어를 실행해 와탭 Python 서비스가 정상 실행되는지 확인하세요."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            children: "ps -ef | grep whatap_python\n"
+          })
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
