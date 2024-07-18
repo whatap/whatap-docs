@@ -3252,9 +3252,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_7_0x',
+          id: 'release-notes/preview/preview-2_8_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_7_0x',
         'release-notes/preview/preview-2_6_0x',
         'release-notes/preview/preview-2_5_0x',
         'release-notes/preview/preview-2_4_0x',
