@@ -1,11 +1,13 @@
+// 이걸로 작업*
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    'https://docs.whatap.io/release-notes/service/service-1_112_x',
-    'https://docs.whatap.io/release-notes/service/service-1_114_x',
+    'https://docs.whatap.io/release-notes/service/service-2_3_x',
+    // 'https://docs.whatap.io/release-notes/service/service-2_4_x',
+    // 'https://docs.whatap.io/release-notes/service/service-2_5_x',
 ];
 
 async function extractFeaturesAndUpdateMDXDocument() {
