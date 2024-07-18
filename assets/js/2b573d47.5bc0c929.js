@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[610],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[1325],{
 
-/***/ 78156:
+/***/ 18302:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,28 +18,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'index',
-	title: 'Preview Release Notes'
+	id: 'preview-2_8_0x',
+	title: 'Preview 2.8.0.a',
+	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/preview/index",
-  "title": "Preview Release Notes",
+  "id": "release-notes/preview/preview-2_8_0x",
+  "title": "Preview 2.8.0.a",
   "description": "preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
-  "source": "@site/docs/release-notes/preview/index.mdx",
+  "source": "@site/docs/release-notes/preview/preview-2.8.0.a.mdx",
   "sourceDirName": "release-notes/preview",
-  "slug": "/release-notes/preview/",
-  "permalink": "/whatap-docs/release-notes/preview/",
+  "slug": "/release-notes/preview/preview-2_8_0x",
+  "permalink": "/whatap-docs/release-notes/preview/preview-2_8_0x",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/preview/index.mdx",
+  "editUrl": "undefined/docs/release-notes/preview/preview-2.8.0.a.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "index",
-    "title": "Preview Release Notes"
+    "id": "preview-2_8_0x",
+    "title": "Preview 2.8.0.a",
+    "toc_max_heading_level": 2
   },
   "sidebar": "previewSidebar",
+  "previous": {
+    "title": "Preview Release Notes",
+    "permalink": "/whatap-docs/release-notes/preview/"
+  },
   "next": {
     "title": "Preview 2.7.0.a",
     "permalink": "/whatap-docs/release-notes/preview/preview-2_7_0x"
@@ -51,17 +57,36 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "Preview 2.8.0.a0",
+  "id": "preview-280a0",
+  "level": 2
+}, {
+  "value": "<code>공통</code>",
+  "id": "공통",
+  "level": 3
+}, {
+  "value": "<code>Cloud</code>",
+  "id": "cloud",
+  "level": 3
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
+    h2: "h2",
+    h3: "h3",
+    hr: "hr",
     p: "p",
+    section: "section",
+    strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {DocCardList, Head} = _components;
-  if (!DocCardList) _missingMdxReference("DocCardList", true);
+  }, {Cmdname, Head, Status} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Head) _missingMdxReference("Head", true);
+  if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Head, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
@@ -76,7 +101,53 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DocCardList, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "preview-280a0",
+        children: "Preview 2.8.0.a0"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 07월 25일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "공통",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "공통"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_metricsML",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "filter",
+            className: "uitext"
+          }), " 옵션을 적용할 때, 한 카테고리에서 여러 항목을 선택할 수 없도록 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "cloud",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Cloud"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Amazon ECS"
+          }), " 플랫폼의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentInstall",
+            className: "uitext"
+          }), " 메뉴에서 스크립트의 들여쓰기로 인해 설치가 안되는 문제 수정"]
+        })]
+      })]
+    })]
   });
 }
 function MDXContent(props = {}) {
