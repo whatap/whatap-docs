@@ -968,17 +968,17 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Group/Project"
+                children: "Group / Project"
               })
-            }), ": 프로젝트가 속한 그룹별로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 그룹과 프로젝트를 확인할 수 있습니다."]
+            }), ": 프로젝트가 속한 그룹 이름이나 프로젝트 이름을 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 그룹과 프로젝트를 확인할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Agent"
+                children: "Agent / IP"
               })
-            }), ": 프로젝트에 포함된 에이전트 이름을 기준으로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 프로젝트와 에이전트를 확인할 수 있습니다."]
+            }), ": 프로젝트에 포함된 에이전트 이름 또는 IP 주소를 기준으로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 프로젝트와 에이전트를 확인할 수 있습니다."]
           }), "\n"]
         }), "\n"]
       })]

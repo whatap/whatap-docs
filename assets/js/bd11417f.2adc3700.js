@@ -299,7 +299,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                 children: "Feature"
-              }), " 사이드바 메뉴의 통합 검색에서 에이전트를 IP 주소로 검색할 수 있는 기능 추가"]
+              }), " 사이드 메뉴의 통합 검색에서 에이전트를 IP 주소로 검색할 수 있는 기능 추가"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
