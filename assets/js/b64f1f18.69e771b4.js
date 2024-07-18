@@ -205,7 +205,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.conf\"",
-            children: "# default: false\ntrace_sql_param_enabled=true\n\n# default: false\ntrace_redis_Lettuce_key_enabled=true\n"
+            children: "# default: false\ntrace_sql_param_enabled=true\n\n# default: false\ntrace_redis_lettuce_key_enabled=true\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
