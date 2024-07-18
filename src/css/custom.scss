@@ -887,6 +887,17 @@ div.history_overview{
   .changelog-date-dup {
     display: none;
   }
+  .changelog-item-dup {
+    display: none;
+  }
+  .changelog-service-dup + .changelog-overview2 {
+    position: relative;
+    top: -6px !important;
+  }
+  .changelog-service-dup + .changelog-overview2 + ul {
+    position: relative;
+    top: -6px !important;
+}
   .changelog-service {
     position: relative;
     top: -1px;

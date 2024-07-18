@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    // 'https://docs.whatap.io/release-notes/service/service-2_4_x',
+    'https://docs.whatap.io/release-notes/service/service-2_4_x',
     'https://docs.whatap.io/release-notes/service/service-2_6_x',
 ];
 
