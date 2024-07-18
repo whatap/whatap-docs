@@ -1589,7 +1589,159 @@ const sidebars = {
   dboracleSidebar: [
     {
       type: 'category',
-      label: 'Oracle 모니터링',
+      label: 'Oracle V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'oracle-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'oracle-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-v1/install-agent',
+            'oracle-v1/after-install-agent',
+            'oracle-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-v1/agent-settings'
+          },
+          items: [
+            'oracle-v1/agent-dbx-settings',
+            'oracle-v1/agent-xos-settings',
+          ],
+        },
+        'oracle-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v1/dashboard-intro'
+              },
+              items: [
+                'oracle-v1/instance-list',
+                'oracle-v1/instance-monitoring',
+                'oracle-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v1/flex-board',
+              },
+              items: [
+                'oracle-v1/flexboard-template',
+                'oracle-v1/flexboard-create',
+                'oracle-v1/flexboard-manage',
+                'oracle-v1/flexboard-metric-widget',
+                'oracle-v1/flexboard-widget-manage',
+                'oracle-v1/flexboard-mode',
+                'oracle-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle-v1/analysis-count-trend',
+                'oracle-v1/analysis-lock-and-deadlock',
+                'oracle-v1/analysis-pq-tree',
+                'oracle-v1/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v1/metrics-intro'
+              },
+              items: [
+                'oracle-v1/metrics-data-list',
+                'oracle-v1/metrics-chart',
+                'oracle-v1/metrics-search',
+                'oracle-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle-v1/stat',
+                'oracle-v1/table-space-size',
+                'oracle-v1/sga-size',
+                'oracle-v1/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-v1/set-notice',
+              },
+              items: [
+                'oracle-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'oracle-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'oracle-v1/metric-warning-notice',
+                'oracle-v1/set-notification-message',
+                'oracle-v1/set-event-detect-anomal',
+                'oracle-v1/set-receive-event',
+                'oracle-v1/set-event-history',
+                'oracle-v1/set-event-format',
+              ],
+            },
+            'oracle-v1/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  dboracleV2Sidebar: [
+    {
+      type: 'category',
+      label: 'Oracle V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1676,6 +1828,10 @@ const sidebars = {
               items: [
                 'oracle/analysis-count-trend',
                 'oracle/analysis-lock-and-deadlock',
+                'oracle/analysis-session-history',
+                'oracle/analysis-wait-events',
+                'oracle/analysis-sql',
+                'oracle/analysis-compare-top-sql',
                 'oracle/analysis-pq-tree',
                 'oracle/analysis-databaseparameter',
               ]
@@ -1710,7 +1866,25 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/log-main'
+              },
+              items: [
+                'oracle/log-db',
+                'oracle/log-lt',
+                'oracle/log-exp',
+                'oracle/log-search',
+                'oracle/log-setting',
+                'oracle/log-parser',
+              ]
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -1733,180 +1907,6 @@ const sidebars = {
               ],
             },
             'oracle/labs'
-          ]
-        }
-      ],
-    }
-  ],
-  dboracleV2Sidebar: [
-    {
-      type: 'category',
-      label: 'Oracle V2 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'oracle-v2/monitoring-intro'
-      },
-      items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'oracle-v2/monitoring-support',
-        },
-        {
-          type: 'category',
-          label: '설치하기',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            'oracle-v2/install-agent',
-            'oracle-v2/after-install-agent',
-            'oracle-v2/troubleshooting',
-          ],
-        },
-        {
-          type: 'category',
-          label: '설정하기',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-v2/agent-settings'
-          },
-          items: [
-            'oracle-v2/agent-dbx-settings',
-            'oracle-v2/agent-xos-settings',
-          ],
-        },
-        'oracle-v2/agent-manage',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v2/dashboard-intro'
-              },
-              items: [
-                'oracle-v2/instance-list',
-                'oracle-v2/instance-monitoring',
-                'oracle-v2/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v2/flex-board',
-              },
-              items: [
-                'oracle-v2/flexboard-template',
-                'oracle-v2/flexboard-create',
-                'oracle-v2/flexboard-manage',
-                'oracle-v2/flexboard-metric-widget',
-                'oracle-v2/flexboard-widget-manage',
-                'oracle-v2/flexboard-mode',
-                'oracle-v2/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle-v2/analysis-count-trend',
-                'oracle-v2/analysis-lock-and-deadlock',
-                'oracle-v2/analysis-session-history',
-                'oracle-v2/analysis-wait-events',
-                'oracle-v2/analysis-sql',
-                'oracle-v2/analysis-compare-top-sql',
-                'oracle-v2/analysis-pq-tree',
-                'oracle-v2/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v2/metrics-intro'
-              },
-              items: [
-                'oracle-v2/metrics-data-list',
-                'oracle-v2/metrics-chart',
-                'oracle-v2/metrics-search',
-                'oracle-v2/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle-v2/stat',
-                'oracle-v2/table-space-size',
-                'oracle-v2/sga-size',
-                'oracle-v2/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v2/log-main'
-              },
-              items: [
-                'oracle-v2/log-db',
-                'oracle-v2/log-lt',
-                'oracle-v2/log-exp',
-                'oracle-v2/log-search',
-                'oracle-v2/log-setting',
-                'oracle-v2/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v2/set-notice',
-              },
-              items: [
-                'oracle-v2/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'oracle-v2/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'oracle-v2/metric-warning-notice',
-                'oracle-v2/set-notification-message',
-                'oracle-v2/set-event-detect-anomal',
-                'oracle-v2/set-receive-event',
-                'oracle-v2/set-event-history',
-                'oracle-v2/set-event-format',
-              ],
-            },
-            'oracle-v2/labs'
           ]
         }
       ],
@@ -4003,11 +4003,6 @@ const sidebars = {
           type: 'link',
           label: 'Oracle',
           href: 'oracle/monitoring-intro',
-        },
-        {
-          type: 'link',
-          label: 'Oracle V2',
-          href: 'oracle-v2/monitoring-intro',
         },
         {
           type: 'link',

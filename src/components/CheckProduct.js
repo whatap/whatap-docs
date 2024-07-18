@@ -41,9 +41,9 @@ export default function CheckProduct() {
     } else if (cProdt === 'oracle-pro') {
         product = '-oracle-pro';
     } else if (cProdt === 'oracle') {
-        product = '-oracle';
-    } else if (cProdt === 'oracle-v2') {
         product = '-oracle-pro';
+    } else if (cProdt === 'oracle-v1') {
+        product = '-oracle';
     } else if (cProdt === 'mysql') {
         product = '-mysql';
     } else if (cProdt === 'mssql') {
