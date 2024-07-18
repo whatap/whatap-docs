@@ -1,117 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60013],{
-
-/***/ 95259:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_set_event_detect_anomal_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68849);
-
-
-const frontMatter = {
-	id: 'set-event-detect-anomal',
-	title: '이상치 탐지 경고 알림',
-	description: '예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.',
-	tags: [
-		'Altibase',
-		'경고 알림',
-		'이상치 탐지',
-		'데이터베이스 모니터링'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase/set-event-detect-anomal",
-  "title": "이상치 탐지 경고 알림",
-  "description": "예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.",
-  "source": "@site/docs/altibase/set-event-detect-anomal.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/set-event-detect-anomal",
-  "permalink": "/whatap-docs/altibase/set-event-detect-anomal",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase/set-event-detect-anomal.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": "Altibase",
-      "permalink": "/whatap-docs/tags/altibase"
-    },
-    {
-      "inline": true,
-      "label": "경고 알림",
-      "permalink": "/whatap-docs/tags/경고-알림"
-    },
-    {
-      "inline": true,
-      "label": "이상치 탐지",
-      "permalink": "/whatap-docs/tags/이상치-탐지"
-    },
-    {
-      "inline": true,
-      "label": "데이터베이스 모니터링",
-      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "set-event-detect-anomal",
-    "title": "이상치 탐지 경고 알림",
-    "description": "예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.",
-    "tags": [
-      "Altibase",
-      "경고 알림",
-      "이상치 탐지",
-      "데이터베이스 모니터링"
-    ]
-  },
-  "sidebar": "altibaseSidebar",
-  "previous": {
-    "title": "알림 메시지 사용자 정의",
-    "permalink": "/whatap-docs/altibase/set-notification-message"
-  },
-  "next": {
-    "title": "경고 알림 수신 설정",
-    "permalink": "/whatap-docs/altibase/set-receive-event"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_set_event_detect_anomal_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_event_detect_anomal_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60500],{
 
 /***/ 68849:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -190,25 +78,25 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "set-event-abnormal.png",
       desc: "이상치 탐지"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "add_alert_setting",
-        className: "uitext"
-      }), " 버튼을 선택해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "anomaly_detection",
-        className: "uitext"
-      }), " 이벤트 설정을 진행할 수 있습니다. 모든 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "save",
-        className: "uitext"
-      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "anomaly_detection",
-        className: "uitext"
-      }), " 창의 제목 오른쪽에 토글 버튼을 선택해 활성화 여부를 선택할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "이상치-탐지-이벤트-생성",
         children: "이상치 탐지 이벤트 생성"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "add_alert_setting",
+          className: "uitext"
+        }), " 버튼을 선택해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "anomaly_detection",
+          className: "uitext"
+        }), " 이벤트 설정을 진행할 수 있습니다. 모든 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "save",
+          className: "uitext"
+        }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "anomaly_detection",
+          className: "uitext"
+        }), " 창의 제목 오른쪽에 토글 버튼을 선택해 활성화 여부를 선택할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "set-event-anormal-create.png",
         desc: "이상치 탐지"
@@ -281,13 +169,6 @@ function _createMdxContent(props) {
               sid: "filter",
               className: "uitext"
             }), ": 이벤트 조건 대상을 선택합니다. 다중 선택할 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "object_merge",
-              className: "uitext"
-            }), ": 오브젝트 병합 방법을 선택할 수 있습니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -390,6 +271,118 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 46921:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_set_event_detect_anomal_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68849);
+
+
+const frontMatter = {
+	id: 'set-event-detect-anomal',
+	title: '이상치 탐지 경고 알림',
+	description: '예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.',
+	tags: [
+		'CUBRID',
+		'경고 알림',
+		'이상치 탐지',
+		'데이터베이스 모니터링'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "cubrid/set-event-detect-anomal",
+  "title": "이상치 탐지 경고 알림",
+  "description": "예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.",
+  "source": "@site/docs/cubrid/set-event-detect-anomal.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/set-event-detect-anomal",
+  "permalink": "/whatap-docs/cubrid/set-event-detect-anomal",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/cubrid/set-event-detect-anomal.mdx",
+  "tags": [
+    {
+      "inline": true,
+      "label": "CUBRID",
+      "permalink": "/whatap-docs/tags/cubrid"
+    },
+    {
+      "inline": true,
+      "label": "경고 알림",
+      "permalink": "/whatap-docs/tags/경고-알림"
+    },
+    {
+      "inline": true,
+      "label": "이상치 탐지",
+      "permalink": "/whatap-docs/tags/이상치-탐지"
+    },
+    {
+      "inline": true,
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-event-detect-anomal",
+    "title": "이상치 탐지 경고 알림",
+    "description": "예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.",
+    "tags": [
+      "CUBRID",
+      "경고 알림",
+      "이상치 탐지",
+      "데이터베이스 모니터링"
+    ]
+  },
+  "sidebar": "cubridSidebar",
+  "previous": {
+    "title": "알림 메시지 사용자 정의",
+    "permalink": "/whatap-docs/cubrid/set-notification-message"
+  },
+  "next": {
+    "title": "경고 알림 수신 설정",
+    "permalink": "/whatap-docs/cubrid/set-receive-event"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_set_event_detect_anomal_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_event_detect_anomal_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

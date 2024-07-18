@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28389],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[50484],{
 
 /***/ 68849:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -78,25 +78,25 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "set-event-abnormal.png",
       desc: "이상치 탐지"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "add_alert_setting",
-        className: "uitext"
-      }), " 버튼을 선택해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "anomaly_detection",
-        className: "uitext"
-      }), " 이벤트 설정을 진행할 수 있습니다. 모든 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "save",
-        className: "uitext"
-      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "anomaly_detection",
-        className: "uitext"
-      }), " 창의 제목 오른쪽에 토글 버튼을 선택해 활성화 여부를 선택할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "이상치-탐지-이벤트-생성",
         children: "이상치 탐지 이벤트 생성"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "add_alert_setting",
+          className: "uitext"
+        }), " 버튼을 선택해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "anomaly_detection",
+          className: "uitext"
+        }), " 이벤트 설정을 진행할 수 있습니다. 모든 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "save",
+          className: "uitext"
+        }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "anomaly_detection",
+          className: "uitext"
+        }), " 창의 제목 오른쪽에 토글 버튼을 선택해 활성화 여부를 선택할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "set-event-anormal-create.png",
         desc: "이상치 탐지"
@@ -169,13 +169,6 @@ function _createMdxContent(props) {
               sid: "filter",
               className: "uitext"
             }), ": 이벤트 조건 대상을 선택합니다. 다중 선택할 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "object_merge",
-              className: "uitext"
-            }), ": 오브젝트 병합 방법을 선택할 수 있습니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -284,7 +277,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 85048:
+/***/ 7808:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -306,29 +299,29 @@ const frontMatter = {
 	title: '이상치 탐지 경고 알림',
 	description: '예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.',
 	tags: [
-		'.NET',
+		'PostgreSQL',
 		'경고 알림',
 		'이상치 탐지',
-		'애플리케이션 모니터링'
+		'데이터베이스 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/set-event-detect-anomal",
+  "id": "postgresql/set-event-detect-anomal",
   "title": "이상치 탐지 경고 알림",
   "description": "예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.",
-  "source": "@site/docs/dotnet/set-event-detect-anomal.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/set-event-detect-anomal",
-  "permalink": "/whatap-docs/dotnet/set-event-detect-anomal",
+  "source": "@site/docs/postgresql/set-event-detect-anomal.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/set-event-detect-anomal",
+  "permalink": "/whatap-docs/postgresql/set-event-detect-anomal",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/set-event-detect-anomal.mdx",
+  "editUrl": "undefined/docs/postgresql/set-event-detect-anomal.mdx",
   "tags": [
     {
       "inline": true,
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     },
     {
       "inline": true,
@@ -342,8 +335,8 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "애플리케이션 모니터링",
-      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
+      "label": "데이터베이스 모니터링",
+      "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
     }
   ],
   "version": "current",
@@ -352,20 +345,20 @@ const metadata = {
     "title": "이상치 탐지 경고 알림",
     "description": "예상치 못한 패턴을 찾는 일련의 활동을 탐지해 경고 알림을 보내도록 설정할 수 있습니다.",
     "tags": [
-      ".NET",
+      "PostgreSQL",
       "경고 알림",
       "이상치 탐지",
-      "애플리케이션 모니터링"
+      "데이터베이스 모니터링"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
-    "title": "AI 기반의 히트맵 패턴 경고 알림",
-    "permalink": "/whatap-docs/dotnet/hitmap-notice"
+    "title": "알림 메시지 사용자 정의",
+    "permalink": "/whatap-docs/postgresql/set-notification-message"
   },
   "next": {
-    "title": "경고 알림 수신 설정",
-    "permalink": "/whatap-docs/dotnet/set-receive-event"
+    "title": "로그 알림 설정하기",
+    "permalink": "/whatap-docs/postgresql/set-event-log"
   }
 };
 const assets = {
