@@ -16,7 +16,7 @@ export default function getProductName() {
     }
     
     let myProd;
-    if (cProd == 'oracle-v2') {
+    if (cProd == 'oracle-v1') {
         myProd = 'oracle';
     } else {
         myProd = cProd.toLowerCase();
