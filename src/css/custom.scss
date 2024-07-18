@@ -1732,6 +1732,11 @@ main {
         color: #636363;
         text-decoration: underline;
     }
+    code.changelog-service a:hover {
+      // 오버뷰
+      color: #636363 !important;
+      text-decoration: underline;
+    }
     code.changelog-service a:visited {
         color: #fbf9f9;
     }
