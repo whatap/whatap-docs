@@ -17,12 +17,12 @@ import Passnote from "./_pass-note.mdx";
 
 <Passnote />
 
-1. Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
+1. Spring Boot の結果をjarでデプロイする場合、*.ebextensions*の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
    - _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
    - _.ebextensions/`{config_name}`.config_：ebの設定ファイル
-   - _Procfile_：JVM command lineオプションを設定するためのファイル
-   - _`{application}`.jar_：実行するapplicaion.jarのファイル
+   - *Procfile*：JVM command lineオプションを設定するためのファイル
+   - *`{application}`.jar*：実行するapplicaion.jarのファイル
 
 2. Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
@@ -51,7 +51,7 @@ import Passnote from "./_pass-note.mdx";
        http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
    ```
 
-4. WhaTapエージェントオプションを追加したJVM commandを入力して_Procfile_を作成してください。
+4. WhaTapエージェントオプションを追加したJVM commandを入力して*Procfile*を作成してください。
 
    ```yaml title='Procfile'
    web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar

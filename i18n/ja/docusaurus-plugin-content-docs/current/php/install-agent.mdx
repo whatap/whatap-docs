@@ -50,60 +50,43 @@ PHPエージェントのインストール方法は、**Linuxパッケージの�
 
 :::
 
-<details>
-<summary>PHPエージェントファイルの構成</summary>
+エージェントファイルは、アプリケーションのモニタリングに必要な情報を抽出してWhaTap収集サーバーに転送するトレーサー、収集された情報をサーバーに転送するためのエージェント、トレーサーとエージェントをサーバーに動的に適用するためのインストールスクリプトファイルで構成されています。エージェントファイルの詳細な説明については、次を参照してください。
 
-PHPエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出してWhaTap収集サーバーに送信するトレーサー、収集された情報をサーバーに送信するエージェント、トレーサーとエージェントをサーバーに動的に適用するインストールスクリプトファイルで構成されています。
+<Filetree name="whatap">
 
-- _whatap\_`X.Y.Z`.so_
+<FiletreeItem name="whatap_X.Y.Z.so" type="file">
 
   トレーサーとして登録されたPHP拡張モジュールとして追加され、情報を収集し、収集された情報をエージェントに送信するライブラリです。拡張モジュールはPHPバージョン(PHP API Version)とZend Thread Safe対応の可否によって判別されます。例は次のとおりです。 
 
-  - _whatap_zts_20041225.so_  
+  _whatap_zts_20041225.so_：PHP5.2バージョン、 Zend Thread safe enable
 
-    PHP 5.2バージョン、Zend Thread safe enable
+  _whatap_20041225.so_：PHP5.2バージョン、 Non Thread Safe 
 
-  - _whatap_20041225.so_
+</FiletreeItem>
 
-    PHP 5.2バージョン、Non Thread Safe 
+<FiletreeItem name="whatap-php(whatap_php)" type="file">エージェントは、トレーサーからUDPに送信された情報を収集サーバーに送信するプログラムです。</FiletreeItem>
+  
+  <FiletreeItem name="whatap_php" type="file">サービスの実行ファイルです。</FiletreeItem>
 
-- _whatap-php(whatap_php)_
+<FiletreeItem name="whatap.ini" type="file">アプリケーションサーバーのデータを収集するPHP拡張モジュールの設定情報、収集サーバーのアドレスとサーバーのポート番号を入力するファイルです。</FiletreeItem>
 
-  エージェントは、トレーサーからUDPに送信された情報を収集サーバーに送信するプログラムです。
+<FiletreeItem name="template.ini" type="file">*whatap.ini* 作成時、コピーして使用するテンプレートファイルです。</FiletreeItem>
 
-- _/etc/init.d/whatap-php_
+<FiletreeItem name="whatap-install-yyyymmdd.log" type="file">インストールプロセスのログファイルです。基本の保存パスは*/usr/whata/php/logs*です。日付順にファイルが作成されます。基本的に7日間のログが保存されます。</FiletreeItem>
 
-  サービススクリプトです。
+<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">エージェントのログファイルです。基本の保存パスは、*/usr/whata/php/logs*です。日付順にファイルが作成されます。基本的に7 日間のログが保存されます。</FiletreeItem>
 
-- _whatap_php_
+<FiletreeItem name="install.sh" type="file">インストールスクリプトです。PHP拡張モジュール(*whatap.so *)をApacheまたはPHP-FPMにインストールし、whatap-phpサービスのインストールを進めます。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参照してください。</FiletreeItem>
 
-  サービスの実行ファイルです。
+<FiletreeItem name="WhaTap.php (sample.php)" type="file">PHPソースコードで使用するAPIリファレンスクラス(*/usr/whatap/php/lib/WhaTap.php*)およびサンプルソースファイル(*sample.php*)です。</FiletreeItem>
 
-- *whatap.ini*
+<FiletreeItem name="/etc/init.d" type="folder">
+  
+    <FiletreeItem name="whatap-php" type="file">サービスのスクリプトファイルです。</FiletreeItem>
+  
+  </FiletreeItem>
 
-  アプリケーションサーバからデータを収集するPHP拡張モジュールの設定情報、収集サーバのアドレスとサーバのプロジェクトアクセスキーが入力されたファイルです。
-
-- _template.ini_ 
-
-  *whatap.ini* 作成時、コピーして使用するテンプレートファイルです。
-
-- _whatap-install-`yyyymmdd`.log_
-
-  インストールプロセスのログファイルです。基本の保存パスは_/usr/whata/php/logs_です。日付順にファイルが作成されます。基本的に7日間のログが保存されます。
-
-- *whatap-boot-`yyyymmdd`.log*
-
-  エージェントのログファイルです。基本の保存パスは、_/usr/whata/php/logs_です。日付順にファイルが作成されます。基本的に7 日間のログが保存されます。
-
-- *install.sh*
-
-  インストールスクリプトです。PHP拡張モジュール(_whatap.so _)をApacheまたはPHP-FPMにインストールし、whatap-phpサービスのインストールを進めます。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参照してください。
-
-- _WhaTap.php (sample.php)_
-
-  PHPソースコードで使用するAPIリファレンスクラス(_/usr/whatap/php/lib/WhaTap.php_)およびサンプルソースファイル(*sample.php*)です。
-
-</details>
+</Filetree>
 
 使用するアプリケーションサーバー環境に応じてインストール方法を次のように提供します。 エージェントをインストールして適用する前に [動作環境](supported-spec)を確認してください。
 

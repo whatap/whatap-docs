@@ -1,12 +1,12 @@
-ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、**_ログパーサの設定_**を通じてインデックスキー値を活用して検索することをお勧めします。
+ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、<Cmdname sid="log_parser_setting" className="uitext" />を通じてインデックスキー値を活用して検索することをお勧めします。
 
 <ImgLang img='log-filter-search.png' desc='構文解析されていないキーワードのフィルター適用'/>
 
 <InDoc pages="log-lt,aws-log-lt">
 
-1. **_カテゴリ_**を選択してください。 <InDoc pages="log-search,aws-log-search">カテゴリ指定が必須です。</InDoc>
+1. <Cmdname sid="category" className="uitext" />を選択します。 <InDoc pages="log-search,aws-log-search">カテゴリ指定が必須です。</InDoc>
 
-2. **_フィルター_**入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。 
+2. <Cmdname sid="filter" className="uitext" />入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。
 
    > 例）`content *select*`
 
@@ -16,17 +16,17 @@
 
 <InDoc pages="log-search,aws-log-search">
 
-1. **_カテゴリ_**を選択してください。 <InDoc pages="log-search,aws-log-search">カテゴリ指定が必須です。</InDoc>
+1. <Cmdname sid="category" className="uitext" />を選択します。 <InDoc pages="log-search,aws-log-search">カテゴリ指定が必須です。</InDoc>
 
-2. **_フィルター_**入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。 
+2. <Cmdname sid="filter" className="uitext" />入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。
 
    > 例）`content *select*`
 
 3. <LinkImage img="ic-search.svg" className="ico" /><UI>検索</UI>ボタンをクリックしてログを照会してください。 ログ全体の一部を先に照会します。 1回あたりの検索結果は最大1万件です。
 
-4. スクロールを下げて下段の**_追加照会_**ボタンを選択すると、追加で照会することができます。 
+4. スクロールを下げて下段の<Cmdname sid="BTN07030" className="uitext" />ボタンを選択すると、追加で照会することができます。 
 
-<ImgLang img='log-content-search-more.png' desc='追加照会'/>
+   <ImgLang img='log-content-search-more.png' desc='追加照会'/>
 
 </InDoc>
 

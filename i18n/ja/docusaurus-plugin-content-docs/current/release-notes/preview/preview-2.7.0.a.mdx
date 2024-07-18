@@ -14,6 +14,208 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.7.0.a5
+
+2024年07月12日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの要約または詳細を見るで、**Node.js**アプリケーションエージェントがインストールされているブロックは、<Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="BTN07827" className="uitext" />タブで**Applicationログ**を表示しないように修正(**Node.js**製品ログのモニタリング未対応)
+
+</div>
+
+## Preview 2.7.0.a4
+
+2024年07月11日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューの<Cmdname sid="column_select" className="uitext" />ポップオーバーで<Cmdname sid="initialize_default" className="uitext" />ボタン動作のバグを修正
+
+- <Status>Deprecated</Status> <Cmdname sid="side_integratedDashboard" className="uitext" /> / <Cmdname sid="side_integratedMetricsBoard" className="uitext" />
+
+---
+
+### `Application`
+
+- <Status>Changed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statCaller" className="uitext" />メニューのCSVダウンロード機能でダウンロードできる最大件数を変更(10万件 → 1万件)
+
+- <Status>Changed</Status> <Cmdname sid="side_statistics" className="uitext" />下位メニューで検索入力欄の幅増加
+
+---
+
+### `Server`
+
+<Status>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverList" className="uitext" />メニューでテーブルの<UI>Private IP</UI>カラムデータの表示方式を変更
+
+- IP別に改行して表示していた方式を、一行で表示するように修正
+
+- カラムの幅に応じて三点リーダー(…) 処理を追加
+
+- 127.0.0.1を一番最後に表示しPrivate IPを先に露出するように変更
+
+---
+
+### `Kubernetes`
+
+- <Status>Feature</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューにPod一覧を追加
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの<Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="BTN07827" className="uitext" />タブ(要約または詳細を見る)で<Cmdname sid="side_logTail" className="uitext" />メニューに移動できるリンクを追加
+
+- <Status>Changed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューのコンテナ一覧でコンテナ詳細ボタンのUIを改善
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで<Cmdname sid="BTN07592" className="uitext" />オプションの基本時間を30秒から1分に変更
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューで小数点値を基準に昇順または降順にソートされない問題を修正
+
+#### Oracle <code className="my">V2</code> / Oracle Pro
+
+<Status>Feature</Status> <Cmdname sid="TTL06224" className="uitext" />画面で***Runtime Plan***、***Explain Plan***タブのテーブルに***Access Predicate***カラムを追加
+
+#### Oracle <code className="my">V2</code>
+
+- <Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューの<Cmdname sid="TTL07772" className="uitext" />オプションに、次のカラムでソートできるフィールドを追加
+
+  - **_physical reads_**
+  - **_session logical reads_**
+
+- <Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューの基本カラム順序を変更
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューで***plan_hash_value***カラムの値をコンマ(,)に区分するよう修正
+
+#### Oracle Pro
+
+- <Status>Feature</Status>データベースのモニタリング紹介ページに**Oracle Pro**新規リリースをお知らせするチュートリアルを追加
+
+- <Status>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューの<Cmdname sid="TTL07772" className="uitext" />オプションに、次のカラムでソートできるフィールドを追加
+
+  - **_cpu time_**
+  - **_physical reads_**
+  - **_session logical reads_**
+  - **_redo size_**
+
+</div>
+
+## Preview 2.7.0.a3
+
+2024年07月04日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status>サイドメニューで<Cmdname sid="all_projects" className="uitext" />を選択してプロジェクト一覧を開くと、プロジェクトの検索入力欄に自動フォーカスされる機能を追加
+
+- <Status>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />メニューでテーマ変更時、名前/所属タグの色が反映されない問題を修正
+
+---
+
+### `Appication`
+
+- <Status>Feature</Status>次のメニューパスで照会内容をCSVファイルにダウンロードする機能を追加
+
+  - <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_libraryVersion" className="uitext" />
+  - <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_bootEnvironmentVariable" className="uitext" />
+
+- <Status>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューパスで選択したエージェントのエージェント設定(*whatap.conf*)ファイルダウンロード機能を追加
+
+- <Status>Changed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_heapDump" className="uitext" />メニューで日本語案内メッセージを変更
+
+- <Status>Changed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" />の下位メニューでエージェントを選択した状態に、別の下位メニューに移動すると、エージェントの選択事項を保持するように変更
+
+- <Status>Changed</Status> ![サイトマップのアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_topology" className="uitext" /> &gt; <Cmdname sid="side_netstatTopology" className="uitext" />メニューの例の画像を英文に変更
+
+- <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでメトリクスイベントのテンプレートを次のように変更しました。
+
+  - <Status>Deprecated</Status>重複する**WARNING_OLD_GENARATION_GC**テンプレートを削除
+
+  - <Status>Deprecated</Status>不要な**WARNING_TPS_DELTA**イベントを削除
+
+  - <Status>Changed</Status> ***TOO_MANY_ACTX***イベント条件を変更
+
+    - **従来**：`endsWith(okindName, 'ote-virtual-0') && startsWith(onodeName, 'node-0') && type == 'java'`
+
+    - **変更**：`active_tx_count > 100`
+
+- <Status>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" />メニューで次のウィジェット表記を修正
+
+  - ヒープサイズ(<code>heap_tot</code>) → <UI>ヒープの総使用量</UI>(<code>heap_tot</code>)
+
+  - ヒープ最大使用量(<code>heap_max</code>) → <UI>ヒープの最大サイズ</UI>(<code>heap_max</code>)
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューの<Cmdname sid="sms_alert_info_mem" className="uitext" /> <Cmdname sid="detail" className="uitext" />で、3時間以上照会すると<Cmdname sid="memory_swapused" className="uitext" />チャートが表示されない問題を修正
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status>Feature</Status>特定の日付を基準に設定された時間帯のSQLの推移を比較し、騰落を確認できる<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTopSqlComparison" className="uitext" />メニューを追加
+
+  :::note
+
+  この機能は、次の製品でのみご利用いただけます。 
+
+  - [PostgreSQL](https://whatap.github.io/whatap-docs/postgresql/analysis-compare-top-sql)
+  - [MySQL](https://whatap.github.io/whatap-docs/mysql/analysis-compare-top-sql)
+  - [Oracle V2](https://whatap.github.io/whatap-docs/oracle-v2/analysis-compare-top-sql)
+  - [Oracle Pro](https://whatap.github.io/whatap-docs/oracle-pro/analysis-compare-top-sql)
+
+  :::
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューのXOS2メトリクス置き換えの案内メッセージがこれ以上表示されないように変更
+
+- <Status>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューでウィジェット名を変更(**Active Sessions Count** → ***Active Session***)
+
+#### Oracle <code className="my">V2</code>
+
+- <Status>New</Status> Oracle V2サービスオープン、新機能についての詳細は、[次の文書](https://whatap.github.io/whatap-docs/oracle-v2/monitoring-intro#new-feature)を参照してください。
+
+- <Status>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューでエージェントのアップデートとバージョン変更の案内ポップアップを追加
+
+- <Status>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで、バージョンを選択できる機能を追加
+
+#### Oracle Pro
+
+- <Status>Changed</Status>製品名変更: Oracle DMA → **Oracle Pro**
+
+- <Status>Feature</Status> <Cmdname sid="TTL06224" className="uitext" />画面で`bind`変数を修正して照会できる***Explain Plan***タブを追加
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューの特定のクエリに対するテーブルデータとシリーズ データの値が一致しない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューのシリーズデータが正しく表示されない問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューのタブ名称を変更
+
+  - **USERNAME** → **_SCHEMANAME_**
+
+  - **_MODULE_**、**_OSUSER_**追加
+
+- <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューで<Cmdname sid="active_sessions" className="uitext" />テーブルのクエリを選択した後、<Cmdname sid="side_dbSqlStat" className="uitext" />メニューに移動すると`sql_id`にフィルターを基本設定するように修正
+
+#### Oracle <code className="my">V2</code> / Oracle Pro
+
+- <Status>Feature</Status> <Cmdname sid="TTL06224" className="uitext" />画面で選択したクエリに関する統計要約情報を提供する***Runtime Plan***タブを追加
+
+- <Status>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューの<Cmdname sid="table_space_detail" className="uitext" />セクション一覧で項目を選択すると、セグメントサイズ(TOP 50)を表示する機能を追加
+
+</div>
+
 ## Preview 2.7.0.a2
 
 2024年06月27日
@@ -52,6 +254,11 @@ toc_max_heading_level: 2
 - <Status>Fixed</Status>旧バージョンの<Cmdname sid="side_appDashboard" className="uitext" />メニューで、案内メッセージのロケールが文字化けする問題を修正
 
 - <Status>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />メニューの<UI>Top 30</UI>一覧でキーボード移動時に発生するディレー問題を修正
+
+- <Status>Fixed</Status>次のメニューパスでデータが表示されない問題を修正
+
+  - <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06377" className="uitext" /> &gt; <Cmdname sid="BTN07121" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" /> &gt; <Cmdname sid="BTN07121" className="uitext" />
 
 ---
 

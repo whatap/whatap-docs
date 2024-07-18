@@ -8,6 +8,10 @@ description: OpenTelemetryエージェントのインストール方法を案内
 <meta name="robots" content="noindex, nofollow"/>
 </head>
 
+import BetaNoti from "./_otl-beta-notice.mdx"
+
+<BetaNoti />
+
 OpenTelemetryエージェントのインストール方法を案内します。 
 
 ## エージェントダウンロード
@@ -92,8 +96,8 @@ RUN tar -xvzf whatap-otel.tar.gz -C /
 エージェント設定(*whatap.conf*) ファイルに アクセスキーと 収集サーバーのIPアドレスを設定してください。
 
 ```bash
-echo "accesskey={アクセスキー}" >> /usr/whatap/otel/whatap.conf
-echo "whatap.server.host={収集サーバーのIPアドレス}" >> /usr/whatap/otel/whatap.conf
+echo "accesskey={액세스 키}" >> /usr/whatap/otel/whatap.conf 
+echo "whatap.server.host={수집 서버 IP 주소}" >> /usr/whatap/otel/whatap.conf 
 ```
 
 ### 環境変数で設定する
@@ -101,9 +105,9 @@ echo "whatap.server.host={収集サーバーのIPアドレス}" >> /usr/whatap/o
 環境変数(Environment)でアクセスキーと 収集サーバーのIP アドレスを設定できます。
 
 ```ini
-WHATAP_ACCESSKEY={アクセスキー}
-WHATAP_SERVER_HOST={収集サーバーのIPアドレス}
-WHATAP_OTEL_GRPC_SERVER_PORT={Grpc server listening port}
+WHATAP_ACCESSKEY={액세스 키} 
+WHATAP_SERVER_HOST={수집 서버 IP 주소} 
+WHATAP_OTEL_GRPC_SERVER_PORT={Grpc 서버 리스닝 포트} 
 ```
 
 :::note
@@ -127,7 +131,7 @@ processors:
 
 exporters:
   logging:
-  # otlp exporterにwhatap-otelをターゲットに設定します。 
+  # otlp exporter에 whatap-otel을 대상으로 설정합니다.
   otlp:
     endpoint: 127.0.0.1:6600
     tls:

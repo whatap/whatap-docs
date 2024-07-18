@@ -6,23 +6,23 @@
 
 </InDoc>
 
+<InDoc pages="analysis-compare-top-sql">
+
+詳細なSQL情報を確認するには、SQL順位テーブルの<span class="uitext">query</span>カラム項目を選択します。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
+
+</InDoc>
+
 <InDoc pages="slow-query">
 
 現在実行中のセッションのSQLクエリ情報を確認するには**_Slow Query List_**セクションの<span class="uitext">SQL</span>カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
 
 </InDoc>
 
-<InDoc product="postgresql,mysql">
+<InDoc product="oracle-pro"><ImgLang img="db-sql-details-oracle-pro.png" desc="SQL詳細" /></InDoc>
 
-<ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" />
+<InDoc product="postgresql,mysql"><ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" /></InDoc>
 
-</InDoc>
-
-<Xclude product="postgresql,mysql">
-
-<ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
-
-</Xclude>
+<Xclude product="postgresql,mysql,oracle-pro"><ImgLang img="db-sql-details-common.png" desc="SQL詳細" /></Xclude>
 
 - <Cmdname sid="BTN06225" className="uitext" />: 該当SQLクエリ文に関する統計情報が確認できる<Cmdname sid="statistics_sql" className="uitext" />メニューへ移動できます。
 
@@ -61,6 +61,20 @@
   :::
 
   </InDoc>
+
+<InDoc product='oracle-pro'>
+
+- **_Bind Capture_**: データベースで実行されたSQLクエリに使用されたバインド変数の値を確認できます。
+
+  :::note
+
+  リアルタイムで実行されたbind値ではなく、データベースにキャプチャされた値(`v$sql_bind_capture`)です。 件数が多いと、100個まで表示します。
+
+  :::
+
+- **_Plan History_**: データベースで実行されたSQLクエリの実行計画に対する履歴を確認できます。
+
+</InDoc>
 
 <InDoc product='postgresql,mysql'>
 

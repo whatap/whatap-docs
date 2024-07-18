@@ -2,6 +2,8 @@
 
 エージェントをインストールしたパスからシェルスクリプト(またはバッチファイル)を実行してください。
 
+<Xclude product='oracle-pro'>
+
 <Tabs groupId='os'>
 
 <TabItem value="linux" label="Linux" default>
@@ -43,3 +45,19 @@ install_WindowsService.bat delete WhatapDBXAgent
 </Tabs>
 
 データベースモニタリングのエージェントのインストールが完了しました。[次の文書](after-install-agent)でインストール後、チェックリストを確認してください。
+
+</Xclude>
+
+<InDoc product="oracle-pro">
+
+```bash
+./start.sh
+```
+
+デーモンのように使用する場合、次のコマンドを実行してください。ただし、**nohup**を設置した環境のみで動作します。
+
+```bash
+./startd.sh
+```
+
+</InDoc>

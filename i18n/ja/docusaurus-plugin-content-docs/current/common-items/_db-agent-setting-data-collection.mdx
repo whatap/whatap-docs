@@ -8,7 +8,29 @@
 
 </InDoc>
 
-<Xclude product ='redis,mongodb'>
+<InDoc product="postgresql,mysql">
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSize" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます
+
+</InDoc>
+
+<Xclude product ='redis,mongodb,oracle'>
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
@@ -16,15 +38,9 @@
 
   設定した時間より長く実行されているセッションをlong runセッションとして処理します。(単位：秒)
 
-- **tables_hour** <span class='type'>Int</span>
-
-  既定値`5`
-
-  テーブル情報を保存するために情報を収集する時間を設定します。デフォルトは`5`で、午前5時に収集を開始します。
-
 </Xclude>
 
-<InDoc product='oracle,tibero'>
+<InDoc product='tibero'>
 
 - **tables_min_size** <span class='type'>Int</span>
 
@@ -126,6 +142,42 @@
   既定値 `true`
 
   エージェントで5秒単位で収集したデータを、秒単位(`delta`1秒値)に換算して報告するオプションです。
+
+- **segments** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  セグメントサイズの情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />メニューで当該データベースまたはテーブルスペースを選択すると、サイズ情報が確認できます。
+
+- **segments_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  セグメントサイズの情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  既定値`10`
+
+  セグメントサイズの情報を収集する最小単位として既定値は10MBです。セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。
+
+- **segments_exclude_sys** <span class='type'>Int</span>
+
+  既定値`1`
+
+  sysに該当するアカウントを除いて、サイズ情報を収集します。
+
+- **segments_sys** <span class='type'>String</span>
+
+  既定値 'SYS', 'OUTLN', 'SYSTEM', 'AUDSYS', 'DBSNMP', 'GSMADMIN_INTERNAL', 'XDB', 'WMSYS', 'OJVMSYS', 'CTXSYS', 'ORDSYS', 'ORDDATA', 'MDSYS', 'LBACSYS', 'DVSYS', 'DBSFWUSER', 'APPQOSSYS', 'OLAPSYS'
+
+  sysに該当するアカウントの一覧です。上記のアカウントに追加したい場合は`segments_sys+='xxx'`で追加できます。
+
+- **segments_max_count** <span class='type'>Int</span>
+
+  既定値`50`
+
+  テーブルスペースごとにサイズの大きいセグメント50個だけを収集して保存します。
 
 </InDoc>
 
