@@ -320,6 +320,44 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 </InDoc>
 
+<InDoc product="oracle-pro">
+
+<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: [`db_oracle_dma_counter`](metrics-data-list)
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_CPU_**
+
+  Category: [`db_oracle_dma_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Lock Wait Sessions_**
+
+  Category: [`db_oracle_dma_counter`](metrics-data-list)
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`db_oracle_dma_counter`](metrics-data-list)
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-settings).
+
+  :::
+
+</InDoc>
+
 <InDoc product="cubrid">
 
 <ImgLang img='event-config-v2-db02.png' desc='Event list' />

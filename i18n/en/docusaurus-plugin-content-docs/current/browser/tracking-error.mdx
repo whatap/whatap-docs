@@ -8,7 +8,7 @@ tags:
   - Error tracing
 ---
 
-Home > Select Project > **_Analysis_** > **_Error Tracking_**
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_browserErrorTracking" className="uitext" />
 
 Browser Monitoring collects the browser front-end errors. It includes the error messages and error stack information, browser, OS, device, and page URL.
 
@@ -58,11 +58,11 @@ The browser error has the following information:
 
 - **_stack_**: Error stack information. The error stack basically contains obfuscated file names, lines, and columns.
 
-## Source map uploading and error code provision{#check-errorcode}
+## Source map uploading and error code provision {#check-errorcode}
 
 If the released frontend code is obfuscated or compressed, it is difficult to provide the collected browser error's stack information at an actual code level. You can access the file or code line that caused the browser error through the source-map built at the time of releasing the frontend code.
 
-1. In the **_error stack_** column, select **_Analysis_**.
+1. In the <Cmdname sid="exception_stack" className="uitext" /> column, select <Cmdname sid="analysis" className="uitext" />.
 
    <ImgLang img='browser-error-stack-btn-analysis.png' desc='Error Log' />
 
@@ -90,26 +90,17 @@ It displays a list of browser errors corresponding to the selected item.
 
 ## Table Column Settings
 
-### Displaying or hiding the table columns
-
-You can display or hide column header items in the browser error list table.
-
+{/* #### 테이블 컬럼 표시하거나 숨기기 */}
 import Displayorhidetablecolumn from "../common-items/_display-or-hide-table-column.mdx";
 
-<Displayorhidetablecolumn />
+<Displayorhidetablecolumn level={3} />
 
-### Reordering the table columns
-
-You can change the order of column headers in the browser error list table.
-
+{/* ### 테이블 컬럼 순서 바꾸기 */}
 import Changeordertablecolumn from "../common-items/_change-order-table-column.mdx";
 
-<Changeordertablecolumn />
+<Changeordertablecolumn level={3} />
 
-## Setting to display the table content
-
-You can set the content displayed in the browser error list. It can be used when too much information appears so it is difficult to see, or it is required to add necessary information.
-
+{/* #### 테이블 콘텐츠 표시 설정 */}
 import Setdisplaytablecontents from "../common-items/_set-display-table-contents.mdx";
 
-<Setdisplaytablecontents />
+<Setdisplaytablecontents level={2} />

@@ -6,17 +6,17 @@ import Logagentoption from "../common-items/_log-agent-option.mdx";
 
 <Xclude product='aws-log'>
 
-Home > Select Project > **_Log_** > **_Log Search_**
+Home > Select Project > <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSearch" className="uitext" />
 
 </Xclude>
 
 <InDoc product='aws-log'>
 
-Home > Select Project > **_Dashboard_** > **_Log Search_**
+Home > Select Project > <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_logSearch" className="uitext" />
 
 </InDoc>
 
-In **_Log Search_**, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted. 
+In <Cmdname sid="side_logSearch" className="uitext" />, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted.
 
 The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. <Loguimainterm />
 
@@ -38,11 +38,11 @@ The searched log data is imported to the dynamic page line by line. If the scrol
 
 - ![number-s](/img/number-03.png) You can see the total number of logs viewed from the upper left of the log table. 
 
-- Log data can be queried in chronological order. On the upper right of the ![number-s](/img/number-03.png) log table, select a desired search method among **_Timestamp_**, **_Oldest_**, and **_Newest_**
+- Log data can be queried in chronological order. On the upper right of the ![number-s](/img/number-03.png) log table, select a desired search method among <Cmdname sid="past_order" className="uitext" /> and <Cmdname sid="recent_order" className="uitext" />.
 
-- After specifying the time range, select **_Apply_** to finish the search time setting, and then select ![Search icon](/img/ic-search-on-press.svg) **_Search_** to search for data.
+- After specifying the time range, select <Cmdname sid="apply" className="uitext" /> to finish the search time setting, and then select ![Search icon](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" /> to search for data.
 
-- On the upper right of the ![number-s](/img/number-03.png) log table, select the <LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/> **_full screen_** icon, you can see the **_log_** and **_timestamp_** in the full screen.
+- On the upper right of the ![number-s](/img/number-03.png) log table, select the <LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/> <Cmdname sid="TLT06869" className="uitext" /> icon, you can see the <Cmdname sid="log" className="uitext" /> and <Cmdname sid="TTL06444" className="uitext" /> in the full screen.
 
 - <Logagentoption />
 
@@ -90,21 +90,21 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 ## Log tagging options {#log-tag-options}
 
-When you select a log tag, the following drop-down menu appears. You can find the **_Search_**, **_Exclusion search_**, and **_Adjacent log_** options. 
+When you select a log tag, the following drop-down menu appears. You can find the <Cmdname sid="search" className="uitext" />, <Cmdname sid="exclusion_search" className="uitext" />, and <Cmdname sid="TTL06582" className="uitext" /> options. 
 
 <ImgLang img='log-search-tag.png' desc='Log tag dropdown menu'/>
 
 - **Search**
 
-  If you select the **_Search_** option, the tags that correspond to **_Filter_** are entered with the inclusion (`==`) condition.
+  If you select the <Cmdname sid="search" className="uitext" /> option, the tags that correspond to <Cmdname sid="filter" className="uitext" /> are entered with the inclusion (`==`) condition.
 
 - **Exclusion search**
 
-  If you select the **_Exclusion search_** option, the tags that correspond to **_Filter_** are entered with the exclusion (`!=`) condition.
+  If you select the <Cmdname sid="exclusion_search" className="uitext" /> option, the tags that correspond to <Cmdname sid="filter" className="uitext" /> are entered with the exclusion (`!=`) condition.
 
 - **Adjacent Log**
 
-  If you select the **_Adjacent Log_** option, the **_Adjacent Log_** detail window appears. Search for the logs of the target server and the logs in time zones adjacent to the selected log. You can click **_Time selector_** to see the logs in adjacent time zones. Reference logs appear with a blue background.
+  If you select the <Cmdname sid="TTL06582" className="uitext" /> option, the <Cmdname sid="TTL06582" className="uitext" /> detail window appears. Search for the logs of the target server and the logs in time zones adjacent to the selected log. You can click <Cmdname sid="time_selector" className="uitext" /> to see the logs in adjacent time zones. Reference logs appear with a blue background.
 
   <ImgLang img='log-search-adjacent-log.png' desc='Log tag - adjacent logs'/>
 

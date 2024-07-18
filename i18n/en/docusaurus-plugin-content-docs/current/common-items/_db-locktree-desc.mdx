@@ -1,12 +1,22 @@
 Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbLockTree" className="uitext" />
 
-<InDoc product='cubrid,postgresql,oracle'>
+<InDoc product='cubrid,postgresql,oracle,oracle-pro'>
 
-You can analyze the trend of locks during the day. The session that caused a lock (Lock Holder) and the session waiting for a lock (Lock Waiter) can be checked through a tree structure. Through these functions, you can analyze queries by checking the relationship between holders and waiters for locks that occurred at specific points.
+This tool analyzes the trend of locks that occurred during the day. This function allows you to visually check the tree structure of the session that generated the lock (lock holder) and the session waiting for the lock (lock waiter). You can analyze the relationship between the holder and waiter of the lock that occurred at a specific time point.
+
+Key features are as follows:
+
+- **Lock trend analysis**: The trends of locks that occurred during the set search period are traced over time and displayed in a graph. This allows you to visually check how the locks are created and resolved.
+
+- **Check lock holder and waiter**: You can see the holder and waiter for each lock in a tree structure. Through this, when a specific lock occurs, you can check the relationship between the session that generated the lock and the waiting session.
+
+- **Inter-session relationship analysis**: By analyzing the relationship between the session that generated the lock and the waiting session, you can identify the cause of the lock that occurred during the query execution and transaction handling.
+
+This allows the database administrator to quickly identify and resolve lock-related issues and optimize the database performance.
 
 </InDoc>
 
-<Xclude product='cubrid,postgresql,oracle'>
+<Xclude product='cubrid,postgresql,oracle,oracle-pro'>
 
 It provides the time series chart and lock tree for the locks occurred during the day. From the point where a lock first occurred, the structure of holders and waiters is displayed in a tree form. You can check the rock tree over time.
 

@@ -8,7 +8,29 @@
 
 </InDoc>
 
-<Xclude product ='redis,mongodb'>
+<InDoc product="postgresql,mysql">
+
+- **tables** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the table size information. In <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSize" className="uitext" />, you can see the table size by selecting the database.
+
+</InDoc>
+
+<Xclude product ='redis,mongodb,oracle'>
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect data for storing the table size information. The default value is `5` and collection starts at 5 am.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect data for storing the table size information. The default value is `5` and collection starts at 5 am.
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
@@ -16,15 +38,9 @@
 
   The session running longer than the set time is treated as the long run session (unit: second).
 
-- **tables_hour** <span class='type'>Int</span>
-
-  Default `5`
-
-  Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
-
 </Xclude>
 
-<InDoc product='oracle,tibero'>
+<InDoc product='tibero'>
 
 - **tables_min_size** <span class='type'>Int</span>
 
@@ -126,6 +142,42 @@
   Default `true`
 
   This option is used to convert the data collected from the agent every 5 seconds in seconds (`delta` value for 1 second) and report it.
+
+- **segments** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
+
+- **segments_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect the segment size information. The default value is `5` and collection starts at 5 am.
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  The minimum unit for collecting segment size information, the default value is 10 MB. When collecting segment sizes, the segment sizes less than the set value are not collected.
+
+- **segments_exclude_sys** <span class='type'>Int</span>
+
+  Default `1`
+
+  The sizes are collected except for accounts corresponding to sys.
+
+- **segments_sys** <span class='type'>String</span>
+
+  Default 'SYS', 'OUTLN', 'SYSTEM', 'AUDSYS', 'DBSNMP', 'GSMADMIN_INTERNAL', 'XDB', 'WMSYS', 'OJVMSYS', 'CTXSYS', 'ORDSYS', 'ORDDATA', 'MDSYS', 'LBACSYS', 'DVSYS', 'DBSFWUSER', 'APPQOSSYS', 'OLAPSYS'
+
+  It is the list of accounts corresponding to sys. To add to the above accounts, you can add with `segments_sys+='xxx'`.
+
+- **segments_max_count** <span class='type'>Int</span>
+
+  Default `50`
+
+  Only 50 large segments are collected and stored for each tablespace.
 
 </InDoc>
 

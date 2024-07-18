@@ -47,20 +47,19 @@ Once you have received a **access key**, the **_Download_** button is enabled in
 
 5. Click **_Finish_** to finish the installation.
 
-<details>
-<summary>Configuration file after installation of the .NET agent</summary>
+The agent consists of the tracers to collect monitoring information and the files to transmit the collected information to the server. For more information about the agent files, see the following.
 
-It consists of a tracer to collect monitoring data and agents to transfer the collected data to the server.
+<Filetree name="whatap">
 
-- _WhaTap.ClrProfiler.dll_: .NET CLR profiler. It is connected to the .NET tracing API.
+<FiletreeItem name="WhaTap.ClrProfiler.dll" type="file">.NET CLR profiler. It is connected to the .NET tracing API.</FiletreeItem>
 
-- _WhaTap.Trace.dll_: It processes the data passed by the profiler and sends it to the agent.
+<FiletreeItem name="WhaTap.Trace.dll" type="file">It processes the data passed by the profiler and sends it to the agent.</FiletreeItem>
 
-- _whatap_dotnet.exe_: This program transfers the data passed from the agent or tracer to the collection server.
+<FiletreeItem name="whatap_dotnet.exe" type="file">This program transfers the data passed from the agent or tracer to the collection server.</FiletreeItem>
 
-- _whatap.conf_: Configuration file for the agent environment
+<FiletreeItem name="whatap.conf" type="file">Configuration file for the agent environment</FiletreeItem>
 
-</details>
+</Filetree>
 
 ## Starting the monitoring
 
