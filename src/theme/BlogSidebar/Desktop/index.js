@@ -32,6 +32,7 @@ export default function BlogSidebarDesktop({sidebar}) {
                 {category.items.map((item, itemIndex) => (
                   <li key={itemIndex}>
                     <Link
+                      isNavLink
                       to={item}
                       className={styles.sidebarItemLink}
                       activeClassName={styles.sidebarItemLinkActive}>
