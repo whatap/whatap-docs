@@ -617,7 +617,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                 href: "https://repo.whatap.io/windows/GetNamesapces.exe",
-                children: "https://repo.whatap.io/windows/GetNamesapces.exe"
+                children: "GetNamesapces.exe"
               })
             }), "\n"]
           }), "\n"]
