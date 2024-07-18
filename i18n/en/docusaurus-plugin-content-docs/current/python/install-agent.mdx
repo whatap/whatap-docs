@@ -49,43 +49,35 @@ python setup.py install
 
 :::
 
-:::note
+### Agent structure file
 
-For more information about the agent file structure, see the Python agent configuration file.
+The Python agent file consists of a tracer that extracts data for application monitoring and passes to the WhaTap collection server, and the elements that help the tracer send the data. For the agent file configuration, see the following.
 
-:::
+<Filetree name="whatap">
 
-<details>
+<FiletreeItem name="agent" type="folder">A directory consisting of monitoring agent files that collect various performance metrics of the application server and transmit them to the server.</FiletreeItem>
 
-<summary>Python agent configuration file</summary>
+<FiletreeItem name="bootstrap" type="folder">A directory having the files that collect various data from the Python agents. It runs when the Python agent starts.</FiletreeItem>
 
-The Python agent file consists of a tracer that extracts data for application monitoring and passes to the WhaTap collection server, and the elements that help the tracer send the data.
+<FiletreeItem name="conf / control" type="folder">A directory that consists of the files for configuring and controlling the Python agent.</FiletreeItem>
 
-- _whatap_
+<FiletreeItem name="net / pack" type="folder">A directory that consists of the files related to UDP communication. It is responsible for transmitting the collected data to the server.</FiletreeItem>
 
-  - _agent_: A directory consisting of monitoring agent files that collect various performance metrics of the application server and transmit them to the server.
+<FiletreeItem name="trace" type="folder">A directory that consists of the files that collect various transaction data for each application.</FiletreeItem>
 
-  - _bootstrap_: A directory having the files that collect various data from the Python agents. It runs when the Python agent starts.
+<FiletreeItem name="paramkey.txt" type="file">
+  
+  It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. To store the security keys in a file and view the actual data in the browser, enter the security key saved in the file. You can modify your security key by manually changing the content of the file. For more information about related options, see the following:
 
-  - _conf_ / _control_: A directory that consists of the files for configuring and controlling the Python agent.
+  [profile_http_parameter_enabled](agent-transaction#profile_http_parameter)
 
-  - _net_ / _pack_: A directory that consists of the files related to UDP communication. It is responsible for transmitting the collected data to the server.
+  [profile_sql_param_enabled](agent-dbsql#profile-sql-param)
 
-  - _trace_: A directory that consists of the files that collect various transaction data for each application.
+</FiletreeItem>
 
-  - _whatap.conf_: This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
+<FiletreeItem name="setup.py" type="file">Definition file for packaging the whatap directories.</FiletreeItem>
 
-  - _paramkey.txt_: It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
-
-    To store the security keys in a file and view the actual data in the browser, enter the security key saved in the file. You can modify your security key by manually changing the content of the file. For more information about related options, see the following:
-
-    - [profile_http_parameter_enabled](agent-transaction#profile_http_parameter)
-
-    - [profile_sql_param_enabled](agent-dbsql#profile-sql-param)
-
-- _setup.py_: Definition file for packaging the whatap directories.
-
-</details>
+</Filetree>
 
 ### Docker
 

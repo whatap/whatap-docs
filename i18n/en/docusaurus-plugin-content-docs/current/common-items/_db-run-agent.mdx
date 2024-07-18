@@ -2,6 +2,8 @@
 
 Execute a shell script (or batch file) from the path where you have installed the agent.
 
+<Xclude product='oracle-pro'>
+
 <Tabs groupId='os'>
 
 <TabItem value="linux" label="Linux" default>
@@ -43,3 +45,19 @@ In **Control Panel** > **Windows Tools** > **Services** (services.msc), you can 
 </Tabs>
 
 You completed installing the agent for database monitoring. In [the following](after-install-agent), check the post-installation checklist.
+
+</Xclude>
+
+<InDoc product="oracle-pro">
+
+```bash
+./start.sh
+```
+
+To use it like a daemon, execute the following command. However, it works only in the environment where **nohup** has been installed.
+
+```bash
+./startd.sh
+```
+
+</InDoc>

@@ -26,13 +26,19 @@ npm install whatap
 
 ## Agent file structure {#agentfiles}
 
-- _package.json_: Document file for sample applications and dependency management.
+For the agent file configuration, see the following.
 
-- _whatap.conf_: This configuration file stores monitoring agent settings, access key, and WhaTap data collection server IP. 
+<Filetree name="whatap">
 
-- _security.conf_ (or _paramkey.txt_): It stores the security key that is entered for viewing SQL variables and HTTP queries, or using the Thread stop function.
+<FiletreeItem name="package.json" type="file">Document file for sample applications and dependency management.</FiletreeItem>
 
-- _server/index.js_ (example of file name): Server configuration file for **Nuxt.js** app instances.
+<FiletreeItem name="whatap.conf" type="file">This configuration file stores monitoring agent settings, access key, and WhaTap data collection server IP.</FiletreeItem>
+
+<FiletreeItem name="security.conf (or paramkey.txt)" type="file">It stores the security key that is entered for viewing SQL variables and HTTP queries, or using the Thread stop function.</FiletreeItem>
+
+<FiletreeItem name="server.js / index.js" type="file">Example file names. Server configuration file for **Nuxt.js** app instances.</FiletreeItem>
+
+</Filetree>
 
 ## Creating the server/index.js code
 

@@ -1,0 +1,36 @@
+## java_memory {#javamemory}
+
+It is a category of data that collects metrics about the memory usage of the JVM while the application is running. 
+
+- Collection interval: 5 seconds
+- Statistical data: 5 minutes, 1 hour
+
+### Tags {#javamemory-tags}
+
+<div className="c3-30-60-10">
+
+| Tag name    | Description                              | Remarks      |
+| ----------- | ---------------------------------------- | ------------ |
+| `host_ip`   | Host IP Address                          | Unique value |
+| `okindName` | Group name categorized as `whatap.okind` | -            |
+| `oname`     | Agent name                               | Unique value |
+| `onodeName` | Group name categorized as `whatap.onode` | -            |
+| `pid`       | Unique ID of a specific process          | -            |
+
+</div>
+
+### Fields {#javamemory-fields}
+
+<div className="c4-20-10-50-10">
+
+| Field name                       | Unit  | Description                                                               | Remarks |
+| -------------------------------- | ----- | ------------------------------------------------------------------------- | ------- |
+| `nonheap_committed`              | byte  | Non-heap memory size guaranteed for use by the JVM                        | -       |
+| `nonheap_init`                   | byte  | Initial non-heap memory size that the JVM requests from the OS at startup | -       |
+| `nonheap_max`                    | byte  | Maximum non-heap memory size that can be used for memory management       | -       |
+| `nonheap_used`                   | byte  | Non-heap memory size in use                                               | -       |
+| `objectPendingFinalizationCount` | count | Number of objects waiting to finalize during GC                           | -       |
+
+</div>
+
+{/* 수집 간격, 통계 데이터 시간 및 objectPendingFinalizationCount 정확한 정의, 다른 필드 검수 필요 */}

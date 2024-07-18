@@ -109,24 +109,27 @@ tar -xvzf whatap-agent.tar.gz -C /
 
 </Tabs>
 
-<details>
-<summary>Agent configuration file</summary>
+The agent consists of the tracers to collect monitoring information, the agents to transmit the collected information to the server, and the installation script files to dynamically apply the tracers and agents to the server. For more information about the agent files, see the following.
 
-It consists of a tracer to collect the monitoring data, an agent to transmit the collected data to the server, and an installation script file to dynamically apply the tracer and agent to the server.
+<Filetree name="whatap">
 
-- _whatap-agent_: This program transmits the data passed from the agent and tracer to UDP, to the collection server.
+<FiletreeItem name="whatap-agent" type="file">This program transmits the data passed from the agent and tracer to UDP, to the collection server.</FiletreeItem>
 
-- _/etc/init.d/whatap-agent_: Service script file.
+<FiletreeItem name="whatap_agent" type="file">Service execution file.</FiletreeItem>
+  
+  <FiletreeItem name="whatap.conf" type="file"> Enter the configuration data, collection server IP, and access key in this file.</FiletreeItem>
 
-- _whatap_agent_: Service execution file.
+<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">Agent log file. (path: */usr/whata/agent/log*)</FiletreeItem>
 
-- _whatap.conf_: Enter the configuration data, collection server IP, and access key in this file.
+<FiletreeItem name="/etc/init.d" type="folder">
+  
+    <FiletreeItem name="whatap-agent" type="file"> Service script file.</FiletreeItem>
+  
+  </FiletreeItem>
 
-- _whatap-boot-`yyyymmdd`.log_: Agent log file. (path: _/usr/whata/agent/log_)
+</Filetree>
 
-</details>
-
-## Agent setting{#set-agent}
+## Agent setting {#set-agent}
 
 ### Default settings
 

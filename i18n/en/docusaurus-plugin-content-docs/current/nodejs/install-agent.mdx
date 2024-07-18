@@ -53,22 +53,23 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 The host (`whatap.server.host`) address is the server address in which the WhaTap proxy has been installed. You can use a forward slash (/) as the delimiter to enter all addresses of the servers where the proxy server is running among the WhaTap servers.
 
-<details>
-<summary>Node.js agent configuration file</summary>
+For the agent configuration file, see the following.
 
-The roles of each file that makes up the Node.js monitoring service are as follows:
+<Filetree name="whatap">
 
-- _whatap.conf_: Sample of the agent configuration file. Copy the file and enter the access key.
+<FiletreeItem name="whatap.conf" type="file">Sample of the agent configuration file. Copy the file and enter the access key.</FiletreeItem>
 
-- _lib_: Agent and tracer program
+<FiletreeItem name="README.md" type="file">Guide to the agent installation</FiletreeItem>
 
-- _README.md_: Guide to the agent installation
+<FiletreeItem name="package.json" type="file">Configuration file for the NPM module environment</FiletreeItem>
 
-- _package.json_: Configuration file for the NPM module environment
+<FiletreeItem name="index.js" type="file">Main export declaration file</FiletreeItem>
 
-- _index.js_: Main export declaration file
+<FiletreeItem name="paramkey.txt" type="file">It stores the security key that is entered for viewing SQL variables and HTTP queries, or using the Thread stop function.</FiletreeItem>
 
-</details>
+<FiletreeItem name="lib" type="folder">Agent and tracer program</FiletreeItem>
+
+</Filetree>
 
 :::tip
 

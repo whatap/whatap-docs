@@ -8,6 +8,8 @@
 
   Specify the IP address of the collection server to transfer the data collected by the agent. If there are multiple IP addresses for collection server redundancy, use comma (,) as the delimiter. The collection server proxy daemon must be serviced in the listening state for the set IP address.
 
+<Xclude product="oracle-pro">
+
 - **whatap.server.port** <span class='type'>String</span>
 
   Default `6600`
@@ -24,6 +26,22 @@
 
   :::
 
+</Xclude>
+
+<InDoc product="oracle-pro">
+
+- **ipckey** <span class='type'>String</span>
+
+  It can be obtained through the `ipcs -m` command. This is the key value (hexadecimal) of the Oracle to be monitored.
+
+  :::note
+
+  The `ipcs` command provides information about inter-process communication (IPC). The `-m` option queries shared memory resources.
+
+  :::
+
+</InDoc>
+
 <InDoc product='cubrid'>
 
 - **db** <span class='type'>String</span>
@@ -32,11 +50,15 @@
 
 </InDoc>
 
+<Xclude product="oracle-pro">
+
 - **db_ip** <span class='type'>String</span>
 
   Set the IP address of the database server to be monitored.
 
-<Xclude product='cubrid'>
+</Xclude>
+
+<Xclude product='cubrid,oracle-pro'>
 
 - **db_port** <span class='type'>String</span>
 

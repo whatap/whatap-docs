@@ -50,60 +50,43 @@ For more information about the agent file structure, see the PHP agent file stru
 
 :::
 
-<details>
-<summary>PHP agent file configuration</summary>
+The agent file consists of the tracers that extracts information for application monitoring and delivers it to the WhaTap collection server, the agents to transmit the collected information to the server, and the installation script files to dynamically apply the tracers and agents to the server. For more information about the agent files, see the following.
 
-The PHP agent file consists of the tracer that extracts data for application monitoring and transfers the data to the WhaTap collection server, the agent that transfers the collected data to the server, and the installation script file that dynamically applies both tracer and agent.
+<Filetree name="whatap">
 
-- _whatap\_`X.Y.Z`.so_
+<FiletreeItem name="whatap_X.Y.Z.so" type="file">
 
   This library is added as a PHP extension module that has been registered as a tracer to collect data and send the collected data to the agent. The extension modules are classified for each PHP API version and Zend Thread Safe support. Examples are as follows: 
 
-  - _whatap_zts_20041225.so_  
+  _whatap_zts_20041225.so_: PHP 5.2 버전, Zend Thread safe enable
 
-    PHP 5.2, Zend Thread safe enable
+  _whatap_20041225.so_: PHP 5.2, Non Thread Safe 
 
-  - _whatap_20041225.so_
+</FiletreeItem>
 
-    PHP 5.2, Non Thread Safe 
+<FiletreeItem name="whatap-php(whatap_php)" type="file">This program transfers the data delivered from the agent or tracer to UDP, to the collection server.</FiletreeItem>
+  
+  <FiletreeItem name="whatap_php" type="file">Service execution file.</FiletreeItem>
 
-- _whatap-php(whatap_php)_
+<FiletreeItem name="whatap.ini" type="file">In this file, the settings of the PHP extension module that collects data of the application server, the collection server address, and the port number of the server are entered.</FiletreeItem>
 
-  This program transfers the data delivered from the agent or tracer to UDP, to the collection server.
+<FiletreeItem name="template.ini" type="file">The template file is copied when creating *whatap.ini*.</FiletreeItem>
 
-- _/etc/init.d/whatap-php_
+<FiletreeItem name="whatap-install-yyyymmdd.log" type="file">Log file generated during installation. The default storage path is */usr/whata/php/logs*. The files are created by date. Only the logs for 7 days are kept by default.</FiletreeItem>
 
-  Service script file.
+<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">Agent log file. The default storage path is */usr/whata/php/logs*. The files are created by date. Only the logs for 7 days are kept by default.</FiletreeItem>
 
-- _whatap_php_
+<FiletreeItem name="install.sh" type="file">Installation script. Proceed with the whatap-php service installation by installing the PHP extension module (*whatap.so*) to Apache or PHP-FPM. For more information, see [the following](agent-troubleshooting#extension-modul-manual-setting).</FiletreeItem>
 
-  Service execution file.
+<FiletreeItem name="WhaTap.php (sample.php)" type="file">API reference class (*/usr/whatap/php/lib/WhaTap.php*) to be used in the PHP source code, and the example source file (*sample.php*)</FiletreeItem>
 
-- _whatap.ini_
+<FiletreeItem name="/etc/init.d" type="folder">
+  
+    <FiletreeItem name="whatap-php" type="file">Service script file.</FiletreeItem>
+  
+  </FiletreeItem>
 
-  In this file, the settings of the PHP extension module that collects data of the application server, the collection server address, and the project access key of the server are entered.
-
-- _template.ini_ 
-
-  The template file is copied when creating _whatap.ini_.
-
-- _whatap-install-`yyyymmdd`.log_
-
-  Log file generated during installation. The default storage path is _/usr/whata/php/logs_. The files are created by date. Only the logs for 7 days are kept by default.
-
-- _whatap-boot-`yyyymmdd`.log_
-
-  Agent log file. The default storage path is _/usr/whata/php/logs_. The files are created by date. Only the logs for 7 days are kept by default.
-
-- _install.sh_
-
-  Installation script. Proceed with the whatap-php service installation by installing the PHP extension module (_whatap.so_) to Apache or PHP-FPM. For more information, see [the following](agent-troubleshooting#extension-modul-manual-setting).
-
-- _WhaTap.php (sample.php)_
-
-  API reference class (_/usr/whatap/php/lib/WhaTap.php_) to be used in the PHP source code, and the example source file (_sample.php_)
-
-</details>
+</Filetree>
 
 The method how to set depending on the application server environment is provided as follows. Before installing and applying the agent, check [Support environment](supported-spec) first.
 
