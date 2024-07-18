@@ -4006,6 +4006,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: 'Oracle V2',
+          href: 'oracle-v2/monitoring-intro',
+        },
+        {
+          type: 'link',
           label: 'Oracle Pro',
           href: 'oracle-pro/monitoring-intro',
         },
