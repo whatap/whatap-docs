@@ -262,7 +262,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-bash",
-          children: "echo \"accesskey={액세스 키}\" >> /usr/whatap/otel/whatap.conf \necho \"whatap.server.host={수집 서버 IP 주소}\" >> /usr/whatap/otel/whatap.conf \n"
+          children: "echo \"accesskey={ACCESS_KEY}\" >> /usr/whatap/otel/whatap.conf \necho \"whatap.server.host={COLLECTOR_SERVER_IP_ADDRESS}\" >> /usr/whatap/otel/whatap.conf \n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -275,7 +275,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-ini",
-          children: "WHATAP_ACCESSKEY={액세스 키} \nWHATAP_SERVER_HOST={수집 서버 IP 주소} \nWHATAP_OTEL_GRPC_SERVER_PORT={Grpc 서버 리스닝 포트} \n"
+          children: "WHATAP_ACCESSKEY={ACCESS_KEY}\nWHATAP_SERVER_HOST={COLLECTOR_SERVER_IP_ADDRESS}\nWHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
