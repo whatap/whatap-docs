@@ -193,7 +193,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.conf\"",
-            children: "# requires agent restart\nweaving=Lettuce-6.2\n"
+            children: "# requires agent restart\nweaving=lettuce-6.2\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
