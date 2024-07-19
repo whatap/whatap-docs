@@ -889,7 +889,7 @@ function _server_adf_file_check_createMdxContent(props) {
           children: (0,jsx_runtime.jsx)(_components.code, {
             className: "language-bash",
             metastring: "title=SH",
-            children: "echo \"filecheck.enabled=true\" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf\necho \"감시를 원하는 파일 혹은 디렉터리 전체 경로\" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf\n"
+            children: "echo \"filecheck.enabled=true\" |sudo tee -a /usr/whatap/infra/conf/whatap.conf\necho \"감시를 원하는 파일 혹은 디렉터리 전체 경로\" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf\n"
           })
         })
       }), (0,jsx_runtime.jsx)(TabItem, {
