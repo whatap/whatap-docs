@@ -601,9 +601,11 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     li: "li",
     p: "p",
+    strong: "strong",
     table: "table",
     tbody: "tbody",
     td: "td",
@@ -613,7 +615,9 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {InDoc, Xclude} = _components;
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭 모니터링 서비스는 웹브라우저와 모바일 앱에서 이용할 수 있습니다."
@@ -732,6 +736,36 @@ function _createMdxContent(props) {
           children: "사용자 인터페이스(User Interface, UI)는 HTML5 표준 기술로 구현하여 Internet Explorer는 지원하지 않습니다."
         }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "support-env",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭의 웹 인터페이스는 모바일 브라우저에 대한 지원을 제공하지 않으며, 지원 계획이 없습니다. 모바일 기기에서 와탭에 접속하려면 안드로이드 앱 또는 iOS 앱을 설치하세요. 와탭 모바일 앱은 모바일 기기에서 최적의 성능을 발휘하도록 설계되었습니다. 와탭 모바일 앱에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "../mobile-app",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "support-env",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭의 웹 인터페이스는 모바일 브라우저에 대한 지원을 제공하지 않으며, 지원 계획이 없습니다. 모바일 기기에서 와탭에 접속하려면 안드로이드 앱 또는 iOS 앱을 설치하세요. 와탭 모바일 앱은 모바일 기기에서 최적의 성능을 발휘하도록 설계되었습니다. 와탭 모바일 앱에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "mobile-app",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
     })]
   });
 }
@@ -746,6 +780,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

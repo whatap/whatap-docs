@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[54114],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[19559],{
 
 /***/ 70597:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -262,9 +262,11 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     li: "li",
     p: "p",
+    strong: "strong",
     table: "table",
     tbody: "tbody",
     td: "td",
@@ -274,7 +276,9 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {InDoc, Xclude} = _components;
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭 모니터링 서비스는 웹브라우저와 모바일 앱에서 이용할 수 있습니다."
@@ -393,6 +397,36 @@ function _createMdxContent(props) {
           children: "사용자 인터페이스(User Interface, UI)는 HTML5 표준 기술로 구현하여 Internet Explorer는 지원하지 않습니다."
         }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "support-env",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭의 웹 인터페이스는 모바일 브라우저에 대한 지원을 제공하지 않으며, 지원 계획이 없습니다. 모바일 기기에서 와탭에 접속하려면 안드로이드 앱 또는 iOS 앱을 설치하세요. 와탭 모바일 앱은 모바일 기기에서 최적의 성능을 발휘하도록 설계되었습니다. 와탭 모바일 앱에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "../mobile-app",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "support-env",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭의 웹 인터페이스는 모바일 브라우저에 대한 지원을 제공하지 않으며, 지원 계획이 없습니다. 모바일 기기에서 와탭에 접속하려면 안드로이드 앱 또는 iOS 앱을 설치하세요. 와탭 모바일 앱은 모바일 기기에서 최적의 성능을 발휘하도록 설계되었습니다. 와탭 모바일 앱에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "mobile-app",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
     })]
   });
 }
@@ -408,12 +442,15 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 
 /***/ }),
 
-/***/ 50010:
+/***/ 96877:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -434,36 +471,30 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'supported-spec',
-	title: '쿠버네티스 모니터링 지원 환경',
-	description: '쿠버네티스 모니터링을 시작하기 전에 지원 환경에 대해 알아보세요.',
+	title: '지원 환경',
+	description: '와탭 모니터링 서비스가 동작하는 기본 사양을 알아보세요.',
 	tags: [
-		'쿠버네티스',
-		'쿠버네티스 모니터링',
+		'Server',
 		'지원 환경'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/supported-spec",
-  "title": "쿠버네티스 모니터링 지원 환경",
-  "description": "쿠버네티스 모니터링을 시작하기 전에 지원 환경에 대해 알아보세요.",
-  "source": "@site/docs/kubernetes/supported-spec.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/supported-spec",
-  "permalink": "/whatap-docs/kubernetes/supported-spec",
+  "id": "server/supported-spec",
+  "title": "지원 환경",
+  "description": "와탭 모니터링 서비스가 동작하는 기본 사양을 알아보세요.",
+  "source": "@site/docs/server/supported-spec.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/supported-spec",
+  "permalink": "/whatap-docs/server/supported-spec",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/supported-spec.mdx",
+  "editUrl": "undefined/docs/server/supported-spec.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "쿠버네티스",
-      "permalink": "/whatap-docs/tags/쿠버네티스"
-    },
-    {
-      "inline": true,
-      "label": "쿠버네티스 모니터링",
-      "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
+      "label": "Server",
+      "permalink": "/whatap-docs/tags/server"
     },
     {
       "inline": true,
@@ -474,36 +505,36 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "supported-spec",
-    "title": "쿠버네티스 모니터링 지원 환경",
-    "description": "쿠버네티스 모니터링을 시작하기 전에 지원 환경에 대해 알아보세요.",
+    "title": "지원 환경",
+    "description": "와탭 모니터링 서비스가 동작하는 기본 사양을 알아보세요.",
     "tags": [
-      "쿠버네티스",
-      "쿠버네티스 모니터링",
+      "Server",
       "지원 환경"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "serverSidebar",
   "previous": {
-    "title": "에이전트 아키텍쳐",
-    "permalink": "/whatap-docs/kubernetes/agent-architecture"
+    "title": "Server 모니터링",
+    "permalink": "/whatap-docs/server/introduction"
   },
   "next": {
-    "title": "에이전트 설치",
-    "permalink": "/whatap-docs/kubernetes/install"
+    "title": "설치하기",
+    "permalink": "/whatap-docs/server/install-agent"
   }
 };
 const assets = {
 
 };
 
+/** XenServer 6.0 이상*/
 
 
 
 
 
 const toc = [{
-  "value": "지원 플랫폼",
-  "id": "지원-플랫폼",
+  "value": "운영체제별 지원 환경",
+  "id": "운영체제별-지원-환경",
   "level": 2
 }, {
   "value": "브라우저 지원",
@@ -520,77 +551,96 @@ const toc = [{
 }, ..._getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     h2: "h2",
     li: "li",
     p: "p",
     section: "section",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "쿠버네티스 모니터링을 시작하기 전에 다음 지원 사항을 확인해보세요. 와탭 쿠버네티스는 표준 쿠버네티스 1.16~1.28 버전 및 해당 버전에 대응하는 다음 쿠버네티스 환경에서 설치할 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "지원-플랫폼",
-        children: "지원 플랫폼"
+        id: "운영체제별-지원-환경",
+        children: "운영체제별 지원 환경"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["와탭 서버 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요. X86 기반에서 동작하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Linux"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "FreeBSD"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "AIX"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Windows"
+        }), " 에 적용할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Amazon EKS (Elastic Kubernetes Service)"
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Linux"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "CentOS 5 이상"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Red Hat Server 5.0 이상(RHEL 또는 RHEL 기반 배포 버전 지원)"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Rocky Linux 8.6 이상"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "SUSE 10.1 이상"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Amazon Linux 모든 버전"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Ubuntu 12.04 이상"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Debian 6.0 이상"
+            }), "\n"]
+          }), "\n", "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Unix"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "FreeBSD 10 이상"
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "AIX 6.1 이상"
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "Oracle Solaris 11.2 이상"
+              }), "\n"]
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "AKS (Azure Kubernetes Service)"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "GKE (Google Kubernetes Engine)"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "OKE (Oracle Container Infrastructure Container Engine for Kubernetes)"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Naver Ncloud Kubernetes Service"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "NKS (NHN Kubernetes Service)"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Red Hat OpenShift (3.xx / 4.xx)"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Cocktail"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Accordion"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "PaaS-TA"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "KaKao i Cloud"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Rancher"
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Windows"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Windows 2008 R2 이상"
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+              children: "Windows 7 SP1 버전 이상"
+            }), "\n"]
           }), "\n"]
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "info",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "NVIDIA GPU 지원"
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["지원 리스트에 포함되지 않는 환경이라면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "mailto:support@whatap.io",
+            children: "support@whatap.io"
+          }), "로 문의해 주세요."]
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {

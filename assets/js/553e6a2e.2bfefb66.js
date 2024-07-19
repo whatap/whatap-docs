@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17595],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[981],{
 
 /***/ 18473:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -463,9 +463,11 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     li: "li",
     p: "p",
+    strong: "strong",
     table: "table",
     tbody: "tbody",
     td: "td",
@@ -475,7 +477,9 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {InDoc, Xclude} = _components;
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭 모니터링 서비스는 웹브라우저와 모바일 앱에서 이용할 수 있습니다."
@@ -594,6 +598,36 @@ function _createMdxContent(props) {
           children: "사용자 인터페이스(User Interface, UI)는 HTML5 표준 기술로 구현하여 Internet Explorer는 지원하지 않습니다."
         }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "support-env",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭의 웹 인터페이스는 모바일 브라우저에 대한 지원을 제공하지 않으며, 지원 계획이 없습니다. 모바일 기기에서 와탭에 접속하려면 안드로이드 앱 또는 iOS 앱을 설치하세요. 와탭 모바일 앱은 모바일 기기에서 최적의 성능을 발휘하도록 설계되었습니다. 와탭 모바일 앱에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "../mobile-app",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "support-env",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "caution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "제약 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭의 웹 인터페이스는 모바일 브라우저에 대한 지원을 제공하지 않으며, 지원 계획이 없습니다. 모바일 기기에서 와탭에 접속하려면 안드로이드 앱 또는 iOS 앱을 설치하세요. 와탭 모바일 앱은 모바일 기기에서 최적의 성능을 발휘하도록 설계되었습니다. 와탭 모바일 앱에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "mobile-app",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      })
     })]
   });
 }
@@ -609,12 +643,15 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 
 /***/ }),
 
-/***/ 80294:
+/***/ 70548:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -640,29 +677,24 @@ const frontMatter = {
 	title: '지원 환경',
 	description: '데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.',
 	tags: [
-		'MySQL',
 		'데이터베이스',
-		'데이터베이스 모니터링'
+		'데이터베이스 모니터링',
+		'Oracle'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/monitoring-support",
+  "id": "oracle-v1/monitoring-support",
   "title": "지원 환경",
   "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
-  "source": "@site/docs/mysql/monitoring-support.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/monitoring-support",
-  "permalink": "/whatap-docs/mysql/monitoring-support",
+  "source": "@site/docs/oracle-v1/monitoring-support.mdx",
+  "sourceDirName": "oracle-v1",
+  "slug": "/oracle-v1/monitoring-support",
+  "permalink": "/whatap-docs/oracle-v1/monitoring-support",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/monitoring-support.mdx",
+  "editUrl": "undefined/docs/oracle-v1/monitoring-support.mdx",
   "tags": [
-    {
-      "inline": true,
-      "label": "MySQL",
-      "permalink": "/whatap-docs/tags/my-sql"
-    },
     {
       "inline": true,
       "label": "데이터베이스",
@@ -672,6 +704,11 @@ const metadata = {
       "inline": true,
       "label": "데이터베이스 모니터링",
       "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+    },
+    {
+      "inline": true,
+      "label": "Oracle",
+      "permalink": "/whatap-docs/tags/oracle"
     }
   ],
   "version": "current",
@@ -680,19 +717,19 @@ const metadata = {
     "title": "지원 환경",
     "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
     "tags": [
-      "MySQL",
       "데이터베이스",
-      "데이터베이스 모니터링"
+      "데이터베이스 모니터링",
+      "Oracle"
     ]
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
-    "title": "MySQL 모니터링",
-    "permalink": "/whatap-docs/mysql/monitoring-intro"
+    "title": "Oracle 모니터링",
+    "permalink": "/whatap-docs/oracle-v1/monitoring-intro"
   },
   "next": {
     "title": "에이전트 설치",
-    "permalink": "/whatap-docs/mysql/install-agent"
+    "permalink": "/whatap-docs/oracle-v1/install-agent"
   }
 };
 const assets = {
@@ -709,7 +746,7 @@ const assets = {
 const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "데이터베이스 지원 버전",
   "id": "데이터베이스-지원-버전",
-  "level": 2
+  "level": 3
 }, {
   "value": "에이전트 구성",
   "id": "에이전트-구성",
@@ -730,6 +767,7 @@ const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_M
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
+    h3: "h3",
     p: "p",
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
@@ -737,14 +775,14 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      name: "MySQL"
+      name: "Oracle"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "데이터베이스-지원-버전",
         children: "데이터베이스 지원 버전"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "MySQL 5.5 버전 이상 / MariaDB 5.5 버전 이상을 지원합니다."
+        children: "Oracle 10gR2 버전 이상을 지원합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
