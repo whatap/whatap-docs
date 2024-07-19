@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+//테스트
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {translate} from '@docusaurus/Translate';
 import {useVisibleBlogSidebarItems} from '@docusaurus/theme-common/internal';
 import styles from './styles.module.css';
-
 
 export default function BlogSidebarDesktop({sidebar}) {
   const sidebarData = require('../_meta.json');
@@ -38,15 +38,15 @@ export default function BlogSidebarDesktop({sidebar}) {
               </div>
               <ul>
                 {category.items.map((item, itemIndex) => (
-                  <li key={itemIndex}>
-                    <Link
-                      isNavLink
-                      to={item}
-                      className={styles.sidebarItemLink}
-                      activeClassName={styles.sidebarItemLinkActive}>
-                      {getItemTitle(item)}
-                    </Link>
-                  </li>
+                  <li key={itemIndex} className={item.className ? styles[item.className] : ''}>
+                  <Link
+                    isNavLink
+                    to={item.link}
+                    className={styles.sidebarItemLink}
+                    activeClassName={styles.sidebarItemLinkActive}>
+                    {getItemTitle(item.link)}
+                  </Link>
+                </li>
                 ))}
               </ul>
             </li>

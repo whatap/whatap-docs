@@ -52,6 +52,51 @@
   background-color: var(--ifm-background-alt);  */
 }
 
+/* .sidebarItemList > ul > li > div + ul > li.news > a {
+  display: inline-block;
+  color: red !important;
+}
+
+.sidebarItemList > ul > li > div + ul > li.news > a::after {
+  display: inline;
+  content: 'New';
+  border-radius: 4px;
+  padding: 0 3px;
+  border: 1px solid none;
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  font-family: "Oleo Script";
+  margin-left: 10px;
+  font-weight: 400;
+} */
+
+li.news > a {
+  display: inline-block;
+}
+
+li.news > a::after {
+  display: inline;
+  content: 'New';
+  border-radius: 4px;
+  padding: 0 3px;
+  border: 1px solid none;
+  background-color: rgb(225, 229, 255);
+  color: rgb(82, 114, 255);
+  font-family: "Oleo Script";
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+/* .test-class > a {
+  color: red !important;
+}
+
+.test-class > a::after {
+  content: 'New';
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+} */
+
 @media (max-width: 996px) {
   .sidebar {
     display: none;
