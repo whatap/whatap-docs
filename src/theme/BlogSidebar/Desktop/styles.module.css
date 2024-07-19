@@ -70,11 +70,7 @@
   font-weight: 400;
 } */
 
-li.news > a {
-  display: inline-block;
-}
-
-li.news > a::after {
+/* li.news > a::after {
   display: inline;
   content: 'New';
   border-radius: 4px;
@@ -84,18 +80,35 @@ li.news > a::after {
   color: rgb(82, 114, 255);
   font-family: "Oleo Script";
   margin-left: 10px;
-  font-weight: 400;
-}
-
-/* .test-class > a {
-  color: red !important;
-}
-
-.test-class > a::after {
-  content: 'New';
-  background-color: rgb(232, 225, 255);
-  color: rgb(139, 82, 255);
+  font-weight: 500;
 } */
+
+
+li.news > a {
+  display: inline-block;
+  position: relative;
+}
+
+li.news > a::after {
+  content: 'N';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(225, 229, 255);
+  color: rgb(82, 114, 255);
+  font-family: "Oleo Script";
+  font-size: 9.5px;
+  font-weight: 500;
+  margin-left: 5px;
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: calc(100% + 1.5px);
+  transform: none;
+}
 
 @media (max-width: 996px) {
   .sidebar {
