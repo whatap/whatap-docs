@@ -14,7 +14,7 @@
 .sidebarItemList {
   /* font-size: 0.9rem; */
   li > ul {
-    list-style: none !important;
+    list-style: none;
     a {
       padding-top: 3px;
     }
@@ -24,6 +24,12 @@
     font-weight: 500;
     padding-top: 18px;
     padding-bottom: 2px;
+  }
+  li > div > a {
+    color: var(--ifm-font-color-base);
+  }
+  li > div > a:hover {
+    text-decoration: none;
   }
 }
 
@@ -42,6 +48,51 @@
 
 .sidebarItemLinkActive {
   color: var(--ifm-color-primary) !important;
+  /* font-weight: bold; */
+}
+
+/* .sidebarItemList > ul > li > div + ul > li.news > a {
+  display: inline-block;
+  color: red !important;
+}
+
+.sidebarItemList > ul > li > div + ul > li.news > a::after {
+  display: inline;
+  content: 'New';
+  border-radius: 4px;
+  padding: 0 3px;
+  border: 1px solid none;
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  font-family: "Oleo Script";
+  margin-left: 10px;
+  font-weight: 400;
+} */
+
+li.news > a {
+  display: inline-block;
+  position: relative;
+}
+
+li.news > a::after {
+  content: 'N';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(225, 229, 255);
+  color: rgb(82, 114, 255);
+  font-family: "Oleo Script";
+  font-size: 9.5px;
+  font-weight: 500;
+  margin-left: 5px;
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: calc(100% + 1.5px);
+  transform: none;
 }
 
 @media (max-width: 996px) {

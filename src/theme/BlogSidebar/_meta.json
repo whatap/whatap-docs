@@ -1,25 +1,29 @@
 [
   {
     "type": "category",
-    "label": "개요",
+    "label": "새로운 기능",
+    "link": "/blog/",
     "items": [
-      "/blog/index"
+      { "link": "/blog/index" },
+      { "link": "/blog/overview", "className": "news"  }
     ]
   },
   {
     "type": "category",
     "label": "2024",
+    "link": "/blog/tags/2024",
     "items": [
-      "/blog/2024-2q-summary",
-      "/blog/2024-1q-summary"
+      { "link": "/blog/2024-2q-summary", "className": "news" },
+      { "link": "/blog/2024-1q-summary" }
     ]
   },
   {
     "type": "category",
     "label": "2023",
+    "link": "/blog/tags/2023",
     "items": [
-      "/blog/2023-4q-summary",
-      "/blog/2023-3q-summary"
+      { "link": "/blog/2023-4q-summary" },
+      { "link": "/blog/2023-3q-summary" }
     ]
   }
 ]
