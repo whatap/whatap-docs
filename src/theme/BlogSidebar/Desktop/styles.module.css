@@ -48,8 +48,7 @@
 
 .sidebarItemLinkActive {
   color: var(--ifm-color-primary) !important;
-  /* font-weight: bold;
-  background-color: var(--ifm-background-alt);  */
+  /* font-weight: bold; */
 }
 
 /* .sidebarItemList > ul > li > div + ul > li.news > a {
@@ -69,20 +68,6 @@
   margin-left: 10px;
   font-weight: 400;
 } */
-
-/* li.news > a::after {
-  display: inline;
-  content: 'New';
-  border-radius: 4px;
-  padding: 0 3px;
-  border: 1px solid none;
-  background-color: rgb(225, 229, 255);
-  color: rgb(82, 114, 255);
-  font-family: "Oleo Script";
-  margin-left: 10px;
-  font-weight: 500;
-} */
-
 
 li.news > a {
   display: inline-block;
