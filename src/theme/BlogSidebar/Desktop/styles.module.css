@@ -25,6 +25,12 @@
     padding-top: 18px;
     padding-bottom: 2px;
   }
+  li > div > a {
+    color: var(--ifm-font-color-base);
+  }
+  li > div > a:hover {
+    text-decoration: none;
+  }
 }
 
 .sidebarItem {

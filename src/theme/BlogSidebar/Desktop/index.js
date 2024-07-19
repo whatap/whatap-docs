@@ -27,7 +27,15 @@ export default function BlogSidebarDesktop({sidebar}) {
         <ul className={clsx(styles.sidebarItemList, 'clean-list')}>
           {sidebarData.map((category, index) => (
             <li key={index}>
-              <div>{category.label}</div>
+              <div>
+                {category.link ? (
+                  <Link isNavLink to={category.link}>
+                    {category.label}
+                  </Link>
+                ) : (
+                  <span>{category.label}</span>
+                )}
+              </div>
               <ul>
                 {category.items.map((item, itemIndex) => (
                   <li key={itemIndex}>
