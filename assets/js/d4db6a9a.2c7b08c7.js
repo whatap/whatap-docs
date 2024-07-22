@@ -68,8 +68,14 @@ function _createMdxContent(props) {
         img: "k8s-resource-container-list-cl.png",
         desc: "컬럼 선택"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "service-list",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-service-list-cl.png",
+        desc: "컬럼 선택"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "deployment-list,resource-container-list",
+      pages: "deployment-list,resource-container-list,service-list",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
         desc: "컬럼 선택"
@@ -444,8 +450,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/resource-application-list"
   },
   "next": {
-    "title": "노드 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-node-list"
+    "title": "Service 목록",
+    "permalink": "/whatap-docs/kubernetes/service-list"
   }
 };
 const assets = {

@@ -68,8 +68,14 @@ function _createMdxContent(props) {
         img: "k8s-resource-container-list-cl.png",
         desc: "컬럼 선택"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "service-list",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-service-list-cl.png",
+        desc: "컬럼 선택"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "deployment-list,resource-container-list",
+      pages: "deployment-list,resource-container-list,service-list",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
         desc: "컬럼 선택"
@@ -708,8 +714,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "Deployment 목록",
-    "permalink": "/whatap-docs/kubernetes/deployment-list"
+    "title": "Service 목록",
+    "permalink": "/whatap-docs/kubernetes/service-list"
   },
   "next": {
     "title": "오브젝트 매니페스트",
