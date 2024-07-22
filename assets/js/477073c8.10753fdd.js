@@ -76,8 +76,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "노드 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-node-list"
+    "title": "노드 디스크 목록",
+    "permalink": "/whatap-docs/kubernetes/node-disk-list"
   },
   "next": {
     "title": "kube-apiserver 대시보드",
