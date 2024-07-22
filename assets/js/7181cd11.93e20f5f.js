@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[34138],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[14805],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1230,7 +1230,7 @@ function _createMdxContent(props) {
           desc: "이벤트 대상 선택"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis",
+        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis,oracle-v1,oracle-pro",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["특정 에이전트에서만 발생하는 이벤트를 알림으로 보내도록 설정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TLT07556",
@@ -3890,7 +3890,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 26020:
+/***/ 43472:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3918,31 +3918,42 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+	description: '컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
 	tags: [
-		'Java',
+		'쿠버네티스',
+		'Kubernetes',
+		'컨테이너',
 		'경고 알림',
-		'이벤트 설정',
-		'애플리케이션'
+		'이벤트 설정'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/warning-notice-v2",
+  "id": "kubernetes/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/java/warning-notice-v2.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/warning-notice-v2",
-  "permalink": "/whatap-docs/java/warning-notice-v2",
+  "description": "컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/kubernetes/warning-notice-v2.mdx",
+  "sourceDirName": "kubernetes",
+  "slug": "/kubernetes/warning-notice-v2",
+  "permalink": "/whatap-docs/kubernetes/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/kubernetes/warning-notice-v2.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "쿠버네티스",
+      "permalink": "/whatap-docs/tags/쿠버네티스"
+    },
+    {
+      "inline": true,
+      "label": "Kubernetes",
+      "permalink": "/whatap-docs/tags/kubernetes"
+    },
+    {
+      "inline": true,
+      "label": "컨테이너",
+      "permalink": "/whatap-docs/tags/컨테이너"
     },
     {
       "inline": true,
@@ -3953,33 +3964,29 @@ const metadata = {
       "inline": true,
       "label": "이벤트 설정",
       "permalink": "/whatap-docs/tags/이벤트-설정"
-    },
-    {
-      "inline": true,
-      "label": "애플리케이션",
-      "permalink": "/whatap-docs/tags/애플리케이션"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+    "description": "컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
     "tags": [
-      "Java",
+      "쿠버네티스",
+      "Kubernetes",
+      "컨테이너",
       "경고 알림",
-      "이벤트 설정",
-      "애플리케이션"
+      "이벤트 설정"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "kubeSidebar",
   "previous": {
-    "title": "애플리케이션 경고 알림",
-    "permalink": "/whatap-docs/java/warning-notice"
+    "title": "컨테이너 경고 알림",
+    "permalink": "/whatap-docs/kubernetes/container-warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/java/metric-warning-notice"
+    "permalink": "/whatap-docs/kubernetes/metric-warning-notice"
   }
 };
 const assets = {

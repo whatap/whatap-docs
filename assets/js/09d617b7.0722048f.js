@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90979],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53753],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1230,7 +1230,7 @@ function _createMdxContent(props) {
           desc: "이벤트 대상 선택"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis",
+        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis,oracle-v1,oracle-pro",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["특정 에이전트에서만 발생하는 이벤트를 알림으로 보내도록 설정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TLT07556",
@@ -3890,7 +3890,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 47570:
+/***/ 1884:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3918,9 +3918,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: 'MongoDB 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	tags: [
-		'MongoDB',
+		'SQL Server',
 		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
@@ -3928,21 +3928,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/warning-notice-v2",
+  "id": "mssql/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "MongoDB 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/mongodb/warning-notice-v2.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/warning-notice-v2",
-  "permalink": "/whatap-docs/mongodb/warning-notice-v2",
+  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/mssql/warning-notice-v2.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/warning-notice-v2",
+  "permalink": "/whatap-docs/mssql/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/mssql/warning-notice-v2.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MongoDB",
-      "permalink": "/whatap-docs/tags/mongo-db"
+      "label": "SQL Server",
+      "permalink": "/whatap-docs/tags/sql-server"
     },
     {
       "inline": true,
@@ -3964,22 +3964,22 @@ const metadata = {
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "MongoDB 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "tags": [
-      "MongoDB",
+      "SQL Server",
       "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ]
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
     "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/mongodb/warning-notice"
+    "permalink": "/whatap-docs/mssql/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/mongodb/metric-warning-notice"
+    "permalink": "/whatap-docs/mssql/metric-warning-notice"
   }
 };
 const assets = {

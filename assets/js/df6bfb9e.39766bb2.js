@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[68693],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90047],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1230,7 +1230,7 @@ function _createMdxContent(props) {
           desc: "이벤트 대상 선택"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis",
+        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis,oracle-v1,oracle-pro",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["특정 에이전트에서만 발생하는 이벤트를 알림으로 보내도록 설정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TLT07556",
@@ -3890,7 +3890,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 51013:
+/***/ 82172:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3920,7 +3920,7 @@ const frontMatter = {
 	title: '이벤트 설정',
 	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
 	tags: [
-		'Node.js',
+		'PHP',
 		'경고 알림',
 		'이벤트 설정',
 		'애플리케이션'
@@ -3928,21 +3928,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/warning-notice-v2",
+  "id": "php/warning-notice-v2",
   "title": "이벤트 설정",
   "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/nodejs/warning-notice-v2.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/warning-notice-v2",
-  "permalink": "/whatap-docs/nodejs/warning-notice-v2",
+  "source": "@site/docs/php/warning-notice-v2.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/warning-notice-v2",
+  "permalink": "/whatap-docs/php/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/php/warning-notice-v2.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "inline": true,
@@ -3966,20 +3966,20 @@ const metadata = {
     "title": "이벤트 설정",
     "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
     "tags": [
-      "Node.js",
+      "PHP",
       "경고 알림",
       "이벤트 설정",
       "애플리케이션"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "애플리케이션 경고 알림",
-    "permalink": "/whatap-docs/nodejs/warning-notice"
+    "permalink": "/whatap-docs/php/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/nodejs/metric-warning-notice"
+    "permalink": "/whatap-docs/php/metric-warning-notice"
   }
 };
 const assets = {

@@ -1230,7 +1230,7 @@ function _createMdxContent(props) {
           desc: "이벤트 대상 선택"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis",
+        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis,oracle-v1,oracle-pro",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["특정 에이전트에서만 발생하는 이벤트를 알림으로 보내도록 설정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TLT07556",
