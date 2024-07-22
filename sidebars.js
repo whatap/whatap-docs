@@ -5871,6 +5871,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/resource-node-list',
+                'kubernetes/node-disk-list',
                 'kubernetes/object-manifest',
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
