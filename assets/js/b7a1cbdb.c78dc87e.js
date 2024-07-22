@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90979],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48801],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -22,15 +22,15 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "모든 이벤트 설정 공유하기",
-  "id": "모든-이벤트-설정-공유하기",
+  "id": "share-event-setting",
   "level": 2
 }, {
   "value": "내보내기",
-  "id": "내보내기",
+  "id": "export-event-setting",
   "level": 3
 }, {
   "value": "불러오기",
-  "id": "불러오기",
+  "id": "import-event-setting",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -57,7 +57,7 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "모든-이벤트-설정-공유하기",
+        id: "share-event-setting",
         children: "모든 이벤트 설정 공유하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "기본 이벤트를 포함한 다른 모든 이벤트 설정을 JSON 형식의 파일로 다운로드하여, 같은 유형의 상품 간에 설정을 공유할 수 있습니다. 이를 통해 반복되는 이벤트 설정 작업을 간소화할 수 있습니다."
@@ -65,7 +65,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "내보내기",
+        id: "export-event-setting",
         children: "내보내기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["화면 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -232,7 +232,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "불러오기",
+        id: "import-event-setting",
         children: "불러오기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -345,7 +345,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "이벤트 추가하기",
-  "id": "이벤트-추가하기",
+  "id": "add-event",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -365,7 +365,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "이벤트-추가하기",
+      id: "add-event",
       children: "이벤트 추가하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "기본 제공되는 이벤트 템플릿을 편집해 사용자가 원하는 알림을 추가할 수 있습니다."
@@ -587,7 +587,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "이벤트 삭제하기",
-  "id": "이벤트-삭제하기",
+  "id": "remove-event",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -606,7 +606,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "이벤트-삭제하기",
+      id: "remove-event",
       children: "이벤트 삭제하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "기본 제공된 이벤트 또는 새로 추가한 이벤트를 삭제할 수 있습니다."
@@ -684,7 +684,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "JSON 형식으로 수정하기",
-  "id": "json-형식으로-수정하기",
+  "id": "modify-json",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -712,7 +712,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "json-형식으로-수정하기",
+      id: "modify-json",
       children: "JSON 형식으로 수정하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "이벤트 설정을 JSON 형식으로 수정할 수 있습니다."
@@ -1010,7 +1010,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "",
+        id: "TTL07362",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL07362"
         })
@@ -1214,7 +1214,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-1",
+        id: "TTL07363",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL07363"
         })
@@ -1333,7 +1333,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-2",
+        id: "TTL07364",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL07364"
         })
@@ -1511,7 +1511,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "이벤트 검색하기",
-  "id": "이벤트-검색하기",
+  "id": "search-event",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -1526,7 +1526,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "이벤트-검색하기",
+      id: "search-event",
       children: "이벤트 검색하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 문자열을 입력한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -3749,15 +3749,15 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "기본 이벤트 공유하기",
-  "id": "기본-이벤트-공유하기",
+  "id": "share-basic-event",
   "level": 2
 }, {
   "value": "내보내기",
-  "id": "내보내기",
+  "id": "export-json",
   "level": 3
 }, {
   "value": "가져오기",
-  "id": "가져오기",
+  "id": "import-json",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -3780,7 +3780,7 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "기본-이벤트-공유하기",
+        id: "share-basic-event",
         children: "기본 이벤트 공유하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "기본 이벤트 설정을 JSON 파일로 저장해 다른 사용자와 설정을 공유하거나 다른 사용자의 설정을 가져올 수 있습니다."
@@ -3788,7 +3788,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "내보내기",
+        id: "export-json",
         children: "내보내기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -3833,7 +3833,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "가져오기",
+        id: "import-json",
         children: "가져오기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -3890,7 +3890,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 47570:
+/***/ 69386:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3918,36 +3918,31 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: 'MongoDB 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
 	tags: [
-		'MongoDB',
-		'데이터베이스',
+		'Go',
 		'경고 알림',
-		'이벤트 설정'
+		'이벤트 설정',
+		'애플리케이션'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/warning-notice-v2",
+  "id": "golang/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "MongoDB 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/mongodb/warning-notice-v2.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/warning-notice-v2",
-  "permalink": "/whatap-docs/mongodb/warning-notice-v2",
+  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/golang/warning-notice-v2.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/warning-notice-v2",
+  "permalink": "/whatap-docs/golang/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/golang/warning-notice-v2.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MongoDB",
-      "permalink": "/whatap-docs/tags/mongo-db"
-    },
-    {
-      "inline": true,
-      "label": "데이터베이스",
-      "permalink": "/whatap-docs/tags/데이터베이스"
+      "label": "Go",
+      "permalink": "/whatap-docs/tags/go"
     },
     {
       "inline": true,
@@ -3958,28 +3953,33 @@ const metadata = {
       "inline": true,
       "label": "이벤트 설정",
       "permalink": "/whatap-docs/tags/이벤트-설정"
+    },
+    {
+      "inline": true,
+      "label": "애플리케이션",
+      "permalink": "/whatap-docs/tags/애플리케이션"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "MongoDB 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
     "tags": [
-      "MongoDB",
-      "데이터베이스",
+      "Go",
       "경고 알림",
-      "이벤트 설정"
+      "이벤트 설정",
+      "애플리케이션"
     ]
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "goSidebar",
   "previous": {
-    "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/mongodb/warning-notice"
+    "title": "애플리케이션 경고 알림",
+    "permalink": "/whatap-docs/golang/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/mongodb/metric-warning-notice"
+    "permalink": "/whatap-docs/golang/metric-warning-notice"
   }
 };
 const assets = {

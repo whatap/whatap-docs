@@ -1,5 +1,136 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43400],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[69512],{
+
+/***/ 19860:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1784);
+/* harmony import */ var _common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77142);
+/* harmony import */ var _common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67406);
+/* harmony import */ var _common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(94815);
+/* harmony import */ var _common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21245);
+/* harmony import */ var _common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(58571);
+/* harmony import */ var _common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(53467);
+/* harmony import */ var _common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(44256);
+/* harmony import */ var _common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(98836);
+
+
+const frontMatter = {
+	id: 'warning-notice-v2',
+	title: '이벤트 설정',
+	description: 'Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	tags: [
+		'Browser',
+		'경고 알림',
+		'이벤트 설정'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "browser/warning-notice-v2",
+  "title": "이벤트 설정",
+  "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/browser/warning-notice-v2.mdx",
+  "sourceDirName": "browser",
+  "slug": "/browser/warning-notice-v2",
+  "permalink": "/whatap-docs/browser/warning-notice-v2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/browser/warning-notice-v2.mdx",
+  "tags": [
+    {
+      "inline": true,
+      "label": "Browser",
+      "permalink": "/whatap-docs/tags/browser"
+    },
+    {
+      "inline": true,
+      "label": "경고 알림",
+      "permalink": "/whatap-docs/tags/경고-알림"
+    },
+    {
+      "inline": true,
+      "label": "이벤트 설정",
+      "permalink": "/whatap-docs/tags/이벤트-설정"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "warning-notice-v2",
+    "title": "이벤트 설정",
+    "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "tags": [
+      "Browser",
+      "경고 알림",
+      "이벤트 설정"
+    ]
+  },
+  "sidebar": "rumsSidebar",
+  "previous": {
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/browser/metric-warning-notice"
+  },
+  "next": {
+    "title": "경고 알림 수신 설정",
+    "permalink": "/whatap-docs/browser/set-receive-event"
+  }
+};
+const assets = {
+
+};
+
+/*기본 이벤트 템플릿*/
+/*이벤트 수정하기*/
+/*이벤트 추가하기*/
+/*이벤트 삭제하기*/
+/*JSON 형식으로 수정하기*/
+/*JSON 파일로 공유하기*/
+/*모든 이벤트 공유하기*/
+/*이벤트 검색하기*/
+
+
+
+
+
+
+
+
+
+
+
+const toc = [..._common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_10__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -22,15 +153,15 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "모든 이벤트 설정 공유하기",
-  "id": "모든-이벤트-설정-공유하기",
+  "id": "share-event-setting",
   "level": 2
 }, {
   "value": "내보내기",
-  "id": "내보내기",
+  "id": "export-event-setting",
   "level": 3
 }, {
   "value": "불러오기",
-  "id": "불러오기",
+  "id": "import-event-setting",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -57,7 +188,7 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "모든-이벤트-설정-공유하기",
+        id: "share-event-setting",
         children: "모든 이벤트 설정 공유하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "기본 이벤트를 포함한 다른 모든 이벤트 설정을 JSON 형식의 파일로 다운로드하여, 같은 유형의 상품 간에 설정을 공유할 수 있습니다. 이를 통해 반복되는 이벤트 설정 작업을 간소화할 수 있습니다."
@@ -65,7 +196,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "내보내기",
+        id: "export-event-setting",
         children: "내보내기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["화면 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -232,7 +363,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "불러오기",
+        id: "import-event-setting",
         children: "불러오기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -345,7 +476,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "이벤트 추가하기",
-  "id": "이벤트-추가하기",
+  "id": "add-event",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -365,7 +496,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "이벤트-추가하기",
+      id: "add-event",
       children: "이벤트 추가하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "기본 제공되는 이벤트 템플릿을 편집해 사용자가 원하는 알림을 추가할 수 있습니다."
@@ -587,7 +718,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "이벤트 삭제하기",
-  "id": "이벤트-삭제하기",
+  "id": "remove-event",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -606,7 +737,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "이벤트-삭제하기",
+      id: "remove-event",
       children: "이벤트 삭제하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "기본 제공된 이벤트 또는 새로 추가한 이벤트를 삭제할 수 있습니다."
@@ -684,7 +815,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "JSON 형식으로 수정하기",
-  "id": "json-형식으로-수정하기",
+  "id": "modify-json",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -712,7 +843,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "json-형식으로-수정하기",
+      id: "modify-json",
       children: "JSON 형식으로 수정하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "이벤트 설정을 JSON 형식으로 수정할 수 있습니다."
@@ -1010,7 +1141,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "",
+        id: "TTL07362",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL07362"
         })
@@ -1214,7 +1345,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-1",
+        id: "TTL07363",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL07363"
         })
@@ -1333,7 +1464,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-2",
+        id: "TTL07364",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL07364"
         })
@@ -1511,7 +1642,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "이벤트 검색하기",
-  "id": "이벤트-검색하기",
+  "id": "search-event",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -1526,7 +1657,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "이벤트-검색하기",
+      id: "search-event",
       children: "이벤트 검색하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 문자열을 입력한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -3749,15 +3880,15 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 const toc = [{
   "value": "기본 이벤트 공유하기",
-  "id": "기본-이벤트-공유하기",
+  "id": "share-basic-event",
   "level": 2
 }, {
   "value": "내보내기",
-  "id": "내보내기",
+  "id": "export-json",
   "level": 3
 }, {
   "value": "가져오기",
-  "id": "가져오기",
+  "id": "import-json",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -3780,7 +3911,7 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "기본-이벤트-공유하기",
+        id: "share-basic-event",
         children: "기본 이벤트 공유하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "기본 이벤트 설정을 JSON 파일로 저장해 다른 사용자와 설정을 공유하거나 다른 사용자의 설정을 가져올 수 있습니다."
@@ -3788,7 +3919,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "내보내기",
+        id: "export-json",
         children: "내보내기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -3833,7 +3964,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "가져오기",
+        id: "import-json",
         children: "가져오기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -3884,144 +4015,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 88426:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1784);
-/* harmony import */ var _common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77142);
-/* harmony import */ var _common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67406);
-/* harmony import */ var _common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(94815);
-/* harmony import */ var _common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21245);
-/* harmony import */ var _common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(58571);
-/* harmony import */ var _common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(53467);
-/* harmony import */ var _common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(44256);
-/* harmony import */ var _common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(98836);
-
-
-const frontMatter = {
-	id: 'warning-notice-v2',
-	title: '이벤트 설정',
-	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
-	tags: [
-		'.NET',
-		'경고 알림',
-		'이벤트 설정',
-		'애플리케이션'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "dotnet/warning-notice-v2",
-  "title": "이벤트 설정",
-  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/dotnet/warning-notice-v2.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/warning-notice-v2",
-  "permalink": "/whatap-docs/dotnet/warning-notice-v2",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/warning-notice-v2.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
-    },
-    {
-      "inline": true,
-      "label": "경고 알림",
-      "permalink": "/whatap-docs/tags/경고-알림"
-    },
-    {
-      "inline": true,
-      "label": "이벤트 설정",
-      "permalink": "/whatap-docs/tags/이벤트-설정"
-    },
-    {
-      "inline": true,
-      "label": "애플리케이션",
-      "permalink": "/whatap-docs/tags/애플리케이션"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "warning-notice-v2",
-    "title": "이벤트 설정",
-    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-    "tags": [
-      ".NET",
-      "경고 알림",
-      "이벤트 설정",
-      "애플리케이션"
-    ]
-  },
-  "sidebar": "dotNetSidebar",
-  "previous": {
-    "title": "애플리케이션 경고 알림",
-    "permalink": "/whatap-docs/dotnet/warning-notice"
-  },
-  "next": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/dotnet/metric-warning-notice"
-  }
-};
-const assets = {
-
-};
-
-/*기본 이벤트 템플릿*/
-/*이벤트 수정하기*/
-/*이벤트 추가하기*/
-/*이벤트 삭제하기*/
-/*JSON 형식으로 수정하기*/
-/*JSON 파일로 공유하기*/
-/*모든 이벤트 공유하기*/
-/*이벤트 검색하기*/
-
-
-
-
-
-
-
-
-
-
-
-const toc = [..._common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_10__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 
