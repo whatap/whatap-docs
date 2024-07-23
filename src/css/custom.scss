@@ -1327,6 +1327,18 @@ main {
       padding-left: 10px; 
       border: 0.5px;
     }
+    ul li {
+      div.releaselist {
+        display: inline;
+        margin-right: 5px;
+        p {
+          display: inline;
+        }
+      }
+      code.changelog-service {
+        display: inline;
+      }
+    }
     details.changelog ul {
       padding-left: 18px;
       list-style: none;
@@ -1340,10 +1352,6 @@ main {
         padding-bottom: 15px;
         padding-left: 20px;
         margin-left: 0px;
-        div.releaselist {
-          display: inline-block;
-          margin-right: 5px;
-        }
         &::before {
           content: "\200b";
           width: 15px;

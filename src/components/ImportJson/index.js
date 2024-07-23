@@ -5,33 +5,31 @@ const cleanString = (str) => {
   return str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
 };
 
-const ImportJson = ({ filePath, product, type }) => {
+const ImportJson = ({ filePath, product, type, sort }) => {
   const [filteredLists, setFilteredLists] = useState([]);
+  const [error, setError] = useState('');
 
   useEffect(() => {
+    if (product && sort) {
+      setError('Cannot use both "product" and "sort" at the same time.');
+      return;
+    }
+
     const fetchData = async () => {
       try {
         const data = filePath;
 
-        // console.log('Original Data:', data); // 디버그: 원본 데이터 확인
-
         // type 필터를 배열로 변환
-        const types = type.split(',').map(t => t.trim());
-
-        // console.log('Product Filter:', product); // 디버그: product 필터 확인
-        // console.log('Type Filters:', types); // 디버그: type 필터 확인
+        const types = type ? type.split(',').map(t => t.trim()) : null;
 
         // product와 type을 기반으로 데이터 필터링
         const filtered = data.reduce((acc, item) => {
           const filteredLists = item.Lists.filter(list => {
             const cleanedProduct = cleanString(list.product);
             const cleanedType = cleanString(list.type);
-            const isProductMatch = cleanedProduct === product;
-            const isTypeMatch = types.includes(cleanedType);
 
-            // console.log('List Product:', cleanedProduct, 'Expected Product:', product);
-            // console.log('Product Match:', isProductMatch);
-            // console.log('List Type:', cleanedType, 'Type Match:', isTypeMatch);
+            const isProductMatch = product ? cleanedProduct === product : true;
+            const isTypeMatch = types ? types.includes(cleanedType) : true;
 
             return isProductMatch && isTypeMatch;
           });
@@ -45,7 +43,6 @@ const ImportJson = ({ filePath, product, type }) => {
           return acc;
         }, []);
 
-        // console.log('Filtered Data:', filtered); // 디버그: 필터링된 데이터 확인
         setFilteredLists(filtered);
       } catch (error) {
         console.error('Error fetching the JSON data', error);
@@ -53,29 +50,73 @@ const ImportJson = ({ filePath, product, type }) => {
     };
 
     fetchData();
-  }, [filePath, product, type]);
+  }, [filePath, product, type, sort]);
+
+  if (error) {
+    return <p>{error}</p>;
+  }
+
+  let sortedData = filteredLists;
+
+  if (sort === 'product') {
+    sortedData = filteredLists.reduce((acc, note) => {
+      note.Lists.forEach(list => {
+        const cleanedProduct = cleanString(list.product);
+        if (!acc[cleanedProduct]) {
+          acc[cleanedProduct] = [];
+        }
+        acc[cleanedProduct].push({ ...list, date: note.date, url: note.url, ver: note.ver });
+      });
+      return acc;
+    }, {});
+
+    sortedData = Object.keys(sortedData).map(productKey => ({
+      product: productKey,
+      lists: sortedData[productKey],
+    }));
+  }
 
   return (
     <div>
       {filteredLists.length === 0 ? (
         <p>No data available for the given filters.</p>
       ) : (
-        filteredLists.map(note => (
-          <div key={note.ver}>
-            <h2>{product}</h2>
-            <ul>
-            {note.Lists.map(list => (
-                <li key={list.ver}>
-                  <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                  <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.ver}</a></code>
-                  {list.details && (
-                    <div dangerouslySetInnerHTML={{ __html: list.details }} />
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))
+        sort === 'product' ? (
+          sortedData.map(productItem => (
+            <div key={productItem.product}>
+              <h2>{productItem.product}</h2>
+              <ul>
+                {productItem.lists.map(list => (
+                  <li key={list.ver}>
+                    <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                    <code className='changelog-service'><a href={`${list.url}#${list.hash}`} target='_blank'>{list.ver}</a></code>
+                    {list.details && (
+                      <div dangerouslySetInnerHTML={{ __html: list.details }} />
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        ) : (
+          filteredLists.map(note => (
+            <div key={note.ver}>
+              <h2>{note.ver}</h2>
+              <div>{note.date}</div>
+              <ul>
+                {note.Lists.map(list => (
+                  <li key={list.ver}>
+                    <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.ver}</a></code>
+                    {list.details && (
+                      <div dangerouslySetInnerHTML={{ __html: list.details }} />
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        )
       )}
     </div>
   );
