@@ -18,7 +18,7 @@ tags: [새로운 기능, 2024, New]
 |**공통**|
 |---| 
 
-> 결제 수단 등록 UI/UX가 개편되었습니다.
+> 편의성 향상을 위해 공통 메뉴 개선이 이루어졌습니다. 
 
 |**Application**|
 |---|
@@ -61,9 +61,11 @@ tags: [새로운 기능, 2024, New]
 
 ## `공통`
 
-와탭 2024년 2분기 `공통` 부분에서 결제 수단 등록 화면 개편을 소개합니다.
+와탭 2024년 2분기 `공통` 부분에서 편의성 향상을 위해 ***Flex 보드***를 비롯한 공통 메뉴 개선 작업이 이루어졌습니다. 사이드 메뉴의 ***프로젝트 목록***에서 쉽게 그룹을 이동할 수 있으며, ***Flex 보드***의 경우 그룹 내 옵션을 공유할 수 있는 ***그룹 내 전체 위젯 적용*** 기능, 그룹 위젯 내 ***프로젝트 선택*** 기능이 추가되었습니다. 
 
-* 결제 수단 등록 UI/UX 개편
+![공통 분기 예시](/img/changelog/changelog-24q2-common.png)
+
+다음 개요 안내를 통해 2024년 2분기 공통 부분의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
@@ -74,6 +76,8 @@ import Common_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Com
 
 </details>
 
+<br/>
+
 ## `Application`
 
 와탭 2024년 2분기 `Application` 부분의 주목할 만한 신규 기능으로 지난 1분기에 이어 ***트랜잭션 맵***의 고도화와 ***애플리케이션 대시보드*** 기본 프리셋 변경 기능을 소개합니다.
@@ -82,7 +86,7 @@ import Common_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Com
 
 <p align="center"> 
 
-![Custom 분기 예시](/img/release/release-apm-dashboard-tx-map-custom.png)
+![트랜잭션 맵 커스텀 필터 분기 예시](/img/changelog/changelog-24q2-app-trs-map.gif)
 
 </p>
 
@@ -95,6 +99,8 @@ import Common_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Com
 {/* `.NET` 상품의 지원 범위가 윈도우 운영체제에서 실행되는 `.NET` 프레임워크만이 아니라 `.NET` 코어까지 확대되어 보다 다양한 운영체제 기반 모니터링을 제공합니다. 이로써 클라우드 및 컨테이너 기반 애플리케이션을 포함한 다양한 환경에서의 모니터링을 가능하게 하여 개발 및 운영 효율성을 향상하고자 하였습니다.  */}
 
 {/* * 닷넷 프레임워크에서 닷넷 코어(2분기 모니터링 지원 범위 확대) */}
+
+다음 개요 안내를 통해 2024년 2분기 `Application` 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
@@ -162,11 +168,21 @@ import Go_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-golan
 
 ## `Server`
 
-와탭 2024년 2분기 `Server` 부분의 주목할 만한 신규 기능으로 설치 화면 개선 및 **Unix** `Oracle Solaris` 설치 패키지에 대해 소개합니다.
+와탭 2024년 2분기 `Server` 부분의 주목할 만한 신규 기능으로 설치 화면 개선 및 **Unix** `Solaris` 설치 패키지에 대해 소개합니다. 
 
-* 에이전트 설치 화면 편의성 개선 > OS 선택
+서버 모니터링 상품 설치 과정이 보다 직관적인 방식으로 개선되었습니다. 기존의 운영 체제별 탭 분리 방식 대신 사용자가 운영 체제를 먼저 선택 후 해당 OS에 맞는 개별 설치 페이지로 이동합니다. 
 
-* Oracle Solaris 설치 패키지 제공
+![서버 모니터링 설치 페이지 sc](/img/changelog/changelog-24q2-server.png)
+
+이번 2분기에 새롭게 **Unix** `Solaris` **에이전트 설치 패키지**를 제공합니다. 선 마이크로시스템즈가 개발한 Solaris는 고성능 Unix 운영 체제로, SPARC 시스템에서의 확장성과 ZFS 파일 시스템, DTrace와 같은 기능으로 널리 알려져 있습니다. 와탭은 Oracle Solaris 버전 11.2 이상을 지원합니다. `Solaris` 설치 패키지를 통해 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다. 와탭 서버 모니터링을 통해 `Solaris` 운영 체제를 보다 효과적으로 관리하고 모니터링할 수 있습니다.
+
+{/* 서버 모니터링 상품 설치 시 사용자가 운영 체제를 먼저 선택하여 보다 직관적인 방식으로 설치 과정이 진행되도록 ***에이전트 설치*** 화면이 개선되었습니다. 기존의 OS별 탭 분리 방식 대신 운영 체제 선택 후 해당 OS에 적합한 개별 설치 페이지로 이동합니다.  */}
+
+{/* * 에이전트 설치 화면 편의성 개선 > OS 선택
+
+* Oracle Solaris 설치 패키지 제공 */}
+
+다음 개요 안내를 통해 2024년 2분기 `Server` 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
@@ -252,6 +268,8 @@ import Server_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-s
 
 * 컨테이너 맵 리소스 관계도 */}
 
+다음 개요 안내를 통해 2024년 2분기 `Kubernetes` 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
 
@@ -284,7 +302,9 @@ import Kubernetes_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24
 
 와탭 데이베이스 상품군이 <code class="my">V2</code>로 전환되고 있습니다. 1분기 **Redis**와 **MongoDB**에 뒤이어 2분기는 **Oracle** <code class="my">V2</code> 서비스가 시작되었습니다. Oracle <code class="my">V2</code>는 데이터 전송팩의 구조가 변경되었으며 UI 역시 전반적으로 개선되었습니다. 
 
-3분기 정식 출시를 앞두고 **Oracle Pro** 베타 서비스가 시작되었습니다. **Oracle Pro**는 데이터베이스 서버의 메모리에 직접 접근해 성능 지표를 모니터링하는 기술을 적용하였습니다. 최신 데이터를 반영하여 정확한 성능 정보를 최대 1초에 20번까지 모니터링할 수 있으며, 디스크 I/O를 거치지 않고 메모리에 직접 접근하여 시스템 미치는 부하를 최소화합니다. 이를 통해 특정 쿼리의 실행 시간, 버커 캐시 상태 등 정밀하게 수집한 성능 정보를 바탕으로 문제를 빠르고 정확하게 분석할 수 있습니다.
+![오라클 신규 분기 예시](/img/changelog/changelog-24q2-db.png) 
+
+3분기 정식 출시를 앞두고 **Oracle Pro** **베타** 서비스가 시작되었습니다. **Oracle Pro**는 데이터베이스 서버의 메모리에 직접 접근해 성능 지표를 모니터링하는 기술을 적용하였습니다. 최신 데이터를 반영하여 정확한 성능 정보를 최대 1초에 20번까지 모니터링할 수 있으며, 디스크 I/O를 거치지 않고 메모리에 직접 접근하여 시스템 미치는 부하를 최소화합니다. 이를 통해 특정 쿼리의 실행 시간, 버커 캐시 상태 등 정밀하게 수집한 성능 정보를 바탕으로 문제를 빠르고 정확하게 분석할 수 있습니다.
 
 {/* * Oracle Pro
 
@@ -293,6 +313,8 @@ import Kubernetes_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24
 * 멀티 인스턴스 모니터링 메뉴 사용자 편의성 개선  */}
 
 {/* oracle pro의 경우 7월 정식 서비스 배포 예정 */}
+
+다음 개요 안내를 통해 2024년 2분기 `Database` 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
@@ -334,14 +356,16 @@ import DBX_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-dbx.
 
 이벤트 목록만으로는 장애를 재현하기 어려울 수 있습니다. 실제 장애가 발생했을 때 유저 화면을 녹화해 보다 정확한 장애 재현이 가능합니다.  */}
 
-<details className='changelog'>
+<code class="Feature">Feature</code> <span class="uitext">페이지 로드 히트맵</span>, <span class="uitext">AJAX 히트맵</span>, <span class="uitext">사용자 세션 로그 검색</span> 메뉴에 <span class="uitext">세션 리플레이</span> 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><code class='changelog-service'>Service 2.6.0​</code></a></code>
+
+{/* <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
 
 import Browser_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Browser.mdx";
 
 <Browser_24q2 />
 
-</details>
+</details> */}
 
 <details className='changelog2'>
 <summary><b>에이전트 안내</b></summary>
@@ -406,6 +430,8 @@ import Cloud_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Clou
 * 인터페이스 개선을 통해 상세창 팝아웃으로 제공
 
 * 상태 코드 문서 안내(첨언) */}
+
+다음 개요 안내를 통해 2024년 2분기 `URL` 상품의 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
