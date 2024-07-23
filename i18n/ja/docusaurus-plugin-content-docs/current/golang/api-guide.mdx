@@ -329,9 +329,9 @@ func main(){
 }
 ```
 
-### http transport RoundTripper
+### http transport RoundTrip
 
-RoundTripperを設定できます。
+RoundTripを設定できます。
 
 ```go title='Go'
 import (
@@ -347,7 +347,7 @@ func main() {
     
     callUrl := "http://aaa.com/xxx"  
     client := http.DefaultClient        
-    // Use WhaTap RoundTripper. whatapのTraceCtxがあるcontextを送ります。   
+    // Use WhaTap RoundTrip. whatapのTraceCtxがあるcontextを送ります。   
     client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)        
     resp, err := client.Get(callUrl)  
     if err != nil {      
