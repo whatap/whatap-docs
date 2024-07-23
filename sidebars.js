@@ -3427,17 +3427,18 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_8_0',
+                id: 'release-notes/php/php-2_8_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_8_0',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_8_1',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
                 'release-notes/php/php-2_7_1',
                 'release-notes/php/php-2_7_0',
@@ -3446,7 +3447,6 @@ const sidebars = {
                 'release-notes/php/php-2_6_1',
                 'release-notes/php/php-2_6_0',
                 'release-notes/php/php-2_5_4',
-                'release-notes/php/php-2_5_3',
                 'release-notes/php/php-previous',
               ],
             },
@@ -3455,7 +3455,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_98',
@@ -3464,7 +3464,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_98',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_97',
                 'release-notes/nodejs/nodejs-0_4_96',
@@ -3512,7 +3512,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_2_9',
@@ -3521,7 +3521,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_2_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
