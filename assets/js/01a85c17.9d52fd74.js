@@ -463,7 +463,8 @@ function BlogSidebarDesktop({ sidebar  }) {
     const sidebarData = __webpack_require__(94458);
     const sideitems = (0,blogUtils/* useVisibleBlogSidebarItems */.G)(sidebar.items);
     const getItemTitle = (permalink)=>{
-        const item = sideitems.find((sideitem)=>sideitem.permalink === permalink);
+        console.log(sideitems);
+        const item = sideitems.find((sideitem)=>sideitem.permalink.replace('/whatap-docs', '') === permalink);
         return item ? item.title : permalink;
     };
     return /*#__PURE__*/ (0,jsx_runtime.jsx)("aside", {

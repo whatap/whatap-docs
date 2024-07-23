@@ -2106,7 +2106,7 @@
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 볼륨</span> 메뉴에서 MountType 속성을 조회하는 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v157-2024년-03월-07일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/k8s/k8s-1_5_7">Kubernetes Agent v1.5.7</a></code> <code class="changelog-date">2024년 03월 07일</code><a class="hash-link" aria-label="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 �링크" title="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크" href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#kubernetes-agent-v157-2024%EB%85%84-03%EC%9B%94-07%EC%9D%BC">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v157-2024년-03월-07일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/k8s/k8s-1_5_7">Kubernetes Agent v1.5.7</a></code> <code class="changelog-date">2024년 03월 07일</code><a class="hash-link" aria-label="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크" title="kubernetes-agent-v157-2024년-03월-07일에 대한 직접 링크" href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#kubernetes-agent-v157-2024%EB%85%84-03%EC%9B%94-07%EC%9D%BC">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> whatap-node-helper는 노드 디스크 및 컨테이너의 이미지, 성능 데이터를 수집합니다. 해당 컨테이너의 로깅 및 설정 기능을 추가해 디버깅과 문제가 발생할 경우 해당 기능에 대한 옵션 처리가 가능합니다.</li>
 </ul></div></div></details>
@@ -2351,7 +2351,7 @@
 <p><code class="Feature">Feature</code> 사용자 세션 로그를 검색할 수 있는 <span class="uitext">사용자 세션 로그 검색</span> 메뉴 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v134-2024년-02월-19�일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_4">Browser Agent v1.3.4</a></code> <code class="changelog-date">2024년 02월 19일</code><a class="hash-link" aria-label="browser-agent-v134-2024년-02월-19일에 대한 직접 링크" title="browser-agent-v134-2024년-02월-19일에 대한 직접 링크" href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#browser-agent-v134-2024%EB%85%84-02%EC%9B%94-19%EC%9D%BC">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v134-2024년-02월-19일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/browser/browser-1_3_4">Browser Agent v1.3.4</a></code> <code class="changelog-date">2024년 02월 19일</code><a class="hash-link" aria-label="browser-agent-v134-2024년-02월-19일에 대한 직접 링크" title="browser-agent-v134-2024년-02월-19일에 대한 직접 링크" href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#browser-agent-v134-2024%EB%85%84-02%EC%9B%94-19%EC%9D%BC">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> 페이지 로드, AJAX 이벤트 발생 시 <b>Network Information API</b>의 다음 지표를 추가 수집</p>

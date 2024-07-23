@@ -1,5 +1,150 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84813],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37643],{
+
+/***/ 73006:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ BlogListPage)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(96540);
+// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.mjs
+var clsx = __webpack_require__(34164);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
+var useDocusaurusContext = __webpack_require__(90062);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js + 1 modules
+var metadataUtils = __webpack_require__(86560);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
+var ThemeClassNames = __webpack_require__(23891);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/BlogLayout/index.js
+var BlogLayout = __webpack_require__(93788);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/BlogListPaginator/index.js
+var BlogListPaginator = __webpack_require__(87861);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/SearchMetadata/index.js
+var SearchMetadata = __webpack_require__(63067);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/BlogPostItems/index.js
+var BlogPostItems = __webpack_require__(80544);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
+var Head = __webpack_require__(3248);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/structuredDataUtils.js + 1 modules
+var structuredDataUtils = __webpack_require__(38950);
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/BlogListPage/StructuredData/index.js
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 
+
+
+function BlogListPageStructuredData(props) {
+    const structuredData = (0,structuredDataUtils/* useBlogListPageStructuredData */.k)(props);
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Head/* default */.A, {
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("script", {
+            type: "application/ld+json",
+            children: JSON.stringify(structuredData)
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/BlogListPage/index.js
+function _defineProperty(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === 'function') {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 
+
+
+
+
+
+
+
+
+function BlogListPageMetadata(props) {
+    const { metadata  } = props;
+    const { siteConfig: { title: siteTitle  } ,  } = (0,useDocusaurusContext/* default */.A)();
+    const { blogDescription , blogTitle , permalink  } = metadata;
+    const isBlogOnlyMode = permalink === '/';
+    const title = isBlogOnlyMode ? siteTitle : blogTitle;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be, {
+                title: title,
+                description: blogDescription
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(SearchMetadata/* default */.A, {
+                tag: "blog_posts_list"
+            })
+        ]
+    });
+}
+function BlogListPageContent(props) {
+    const { metadata , items , sidebar  } = props;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(BlogLayout/* default */.A, {
+        sidebar: sidebar,
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BlogPostItems/* default */.A, {
+                items: items
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BlogListPaginator/* default */.A, {
+                metadata: metadata
+            })
+        ]
+    });
+}
+function BlogListPage(props) {
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(metadataUtils/* HtmlClassNameProvider */.e3, {
+        className: (0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.wrapper.blogPages, ThemeClassNames/* ThemeClassNames */.G.page.blogListPage),
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BlogListPageMetadata, _objectSpread({}, props)),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BlogListPageStructuredData, _objectSpread({}, props)),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BlogListPageContent, _objectSpread({}, props))
+        ]
+    });
+};
+
+
+/***/ }),
 
 /***/ 87861:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -88,213 +233,42 @@ function BlogPostItems({ items , component: BlogPostItemComponent = _theme_BlogP
 
 /***/ }),
 
-/***/ 80289:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ BlogTagsPostsPage)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(34164);
-/* harmony import */ var _docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15418);
-/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(83477);
-/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(86560);
-/* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(23891);
-/* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28618);
-/* harmony import */ var _theme_BlogLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(93788);
-/* harmony import */ var _theme_BlogListPaginator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(87861);
-/* harmony import */ var _theme_SearchMetadata__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(63067);
-/* harmony import */ var _theme_BlogPostItems__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(80544);
-/* harmony import */ var _theme_Unlisted__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(13988);
-/* harmony import */ var _theme_Heading__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(61917);
-function _defineProperty(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _objectSpread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === 'function') {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _defineProperty(target, key, source[key]);
-        });
-    }
-    return target;
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ 
-
-
-
-
-
-
-
-
-
-
-// Very simple pluralization: probably good enough for now
-function useBlogPostsPlural() {
-    const { selectMessage  } = (0,_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_10__/* .usePluralForm */ .W)();
-    return (count)=>selectMessage(count, (0,_docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__/* .translate */ .T)({
-            id: 'theme.blog.post.plurals',
-            description: 'Pluralized label for "{count} posts". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-            message: 'One post|{count} posts'
-        }, {
-            count
-        }));
-}
-function useBlogTagsPostsPageTitle(tag) {
-    const blogPostsPlural = useBlogPostsPlural();
-    return (0,_docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__/* .translate */ .T)({
-        id: 'theme.blog.tagTitle',
-        description: 'The title of the page for a blog tag',
-        message: '{nPosts} tagged with "{tagName}"'
-    }, {
-        nPosts: blogPostsPlural(tag.count),
-        tagName: tag.label
-    });
-}
-function BlogTagsPostsPageMetadata({ tag  }) {
-    const title = useBlogTagsPostsPageTitle(tag);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_11__/* .PageMetadata */ .be, {
-                title: title,
-                description: tag.description
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_SearchMetadata__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, {
-                tag: "blog_tags_posts"
-            })
-        ]
-    });
-}
-function BlogTagsPostsPageContent({ tag , items , sidebar , listMetadata  }) {
-    const title = useBlogTagsPostsPageTitle(tag);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_BlogLayout__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
-        sidebar: sidebar,
-        children: [
-            tag.unlisted && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_Unlisted__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, {}),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("header", {
-                className: "margin-bottom--xl",
-                children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_Heading__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, {
-                        as: "h1",
-                        children: title
-                    }),
-                    tag.description && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-                        children: tag.description
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
-                        href: tag.allTagsPath,
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_docusaurus_Translate__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-                            id: "theme.tags.tagsPageLink",
-                            description: "The label of the link targeting the tag list page",
-                            children: "View All Tags"
-                        })
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_BlogPostItems__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, {
-                items: items
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_BlogListPaginator__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, {
-                metadata: listMetadata
-            })
-        ]
-    });
-}
-function BlogTagsPostsPage(props) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_11__/* .HtmlClassNameProvider */ .e3, {
-        className: (0,clsx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_13__/* .ThemeClassNames */ .G.wrapper.blogPages, _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_13__/* .ThemeClassNames */ .G.page.blogTagPostListPage),
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlogTagsPostsPageMetadata, _objectSpread({}, props)),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlogTagsPostsPageContent, _objectSpread({}, props))
-        ]
-    });
-};
-
-
-/***/ }),
-
-/***/ 13988:
+/***/ 38950:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Unlisted)
+  k: () => (/* binding */ useBlogListPageStructuredData),
+  J: () => (/* binding */ useBlogPostStructuredData)
 });
 
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.mjs
-var clsx = __webpack_require__(34164);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(15418);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
-var Head = __webpack_require__(3248);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/unlistedUtils.js
-
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(92469);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
+var useDocusaurusContext = __webpack_require__(90062);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useRouteContext.js
+var useRouteContext = __webpack_require__(88887);
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/plugin-content-blog/lib/client/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */ 
-
-
-function UnlistedBannerTitle() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Translate/* default */.A, {
-        id: "theme.unlistedContent.title",
-        description: "The unlisted content banner title",
-        children: "Unlisted page"
-    });
+function useBlogMetadata() {
+    var ref;
+    const routeContext = (0,useRouteContext/* default */.A)();
+    const blogMetadata = routeContext === null || routeContext === void 0 ? void 0 : (ref = routeContext.data) === null || ref === void 0 ? void 0 : ref.blogMetadata;
+    if (!blogMetadata) {
+        throw new Error("useBlogMetadata() can't be called on the current route because the blog metadata could not be found in route context");
+    }
+    return blogMetadata;
 }
-function UnlistedBannerMessage() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Translate/* default */.A, {
-        id: "theme.unlistedContent.message",
-        description: "The unlisted content banner message",
-        children: "This page is unlisted. Search engines will not index it, and only users having a direct link can access it."
-    });
-}
-function UnlistedMetadata() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Head/* default */.A, {
-        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("meta", {
-            name: "robots",
-            content: "noindex, nofollow"
-        })
-    });
-} //# sourceMappingURL=unlistedUtils.js.map
 
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(23891);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js + 15 modules
-var Admonition = __webpack_require__(39608);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Unlisted/index.js
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/blogPost.js
+var blogPost = __webpack_require__(10431);
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/structuredDataUtils.js
 function _defineProperty(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -311,19 +285,42 @@ function _defineProperty(obj, key, value) {
 function _objectSpread(target) {
     for(var i = 1; i < arguments.length; i++){
         var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
+        var ownKeys1 = Object.keys(source);
         if (typeof Object.getOwnPropertySymbols === 'function') {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+            ownKeys1 = ownKeys1.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
                 return Object.getOwnPropertyDescriptor(source, sym).enumerable;
             }));
         }
-        ownKeys.forEach(function(key) {
+        ownKeys1.forEach(function(key) {
             _defineProperty(target, key, source[key]);
         });
     }
     return target;
 }
-
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpreadProps(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -333,22 +330,124 @@ function _objectSpread(target) {
 
 
 
-function UnlistedBanner({ className  }) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Admonition/* default */.A, {
-        type: "caution",
-        title: /*#__PURE__*/ (0,jsx_runtime.jsx)(UnlistedBannerTitle, {}),
-        className: (0,clsx/* default */.A)(className, ThemeClassNames/* ThemeClassNames */.G.common.unlistedBanner),
-        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(UnlistedBannerMessage, {})
+const convertDate = (dateMs)=>new Date(dateMs).toISOString();
+function getBlogPost(blogPostContent, siteConfig, withBaseUrl) {
+    const { assets , frontMatter , metadata  } = blogPostContent;
+    const { date , title , description , lastUpdatedAt  } = metadata;
+    var _image;
+    const image = (_image = assets.image) !== null && _image !== void 0 ? _image : frontMatter.image;
+    var _keywords;
+    const keywords = (_keywords = frontMatter.keywords) !== null && _keywords !== void 0 ? _keywords : [];
+    const blogUrl = `${siteConfig.url}${metadata.permalink}`;
+    const dateModified = lastUpdatedAt ? convertDate(lastUpdatedAt) : undefined;
+    return _objectSpread({
+        '@type': 'BlogPosting',
+        '@id': blogUrl,
+        mainEntityOfPage: blogUrl,
+        url: blogUrl,
+        headline: title,
+        name: title,
+        description,
+        datePublished: date
+    }, dateModified ? {
+        dateModified
+    } : {}, getAuthor(metadata.authors), getImage(image, withBaseUrl, title), keywords ? {
+        keywords
+    } : {});
+}
+function getAuthor(authors) {
+    const authorsStructuredData = authors.map(createPersonStructuredData);
+    return {
+        author: authorsStructuredData.length === 1 ? authorsStructuredData[0] : authorsStructuredData
+    };
+}
+function getImage(image, withBaseUrl, title) {
+    return image ? {
+        image: createImageStructuredData({
+            imageUrl: withBaseUrl(image, {
+                absolute: true
+            }),
+            caption: `title image for the blog post: ${title}`
+        })
+    } : {};
+}
+function useBlogListPageStructuredData(props) {
+    const { siteConfig  } = (0,useDocusaurusContext/* default */.A)();
+    const { withBaseUrl  } = (0,useBaseUrl/* useBaseUrlUtils */.hH)();
+    const { metadata: { blogDescription , blogTitle , permalink  } ,  } = props;
+    const url = `${siteConfig.url}${permalink}`;
+    // details on structured data support: https://schema.org/Blog
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Blog',
+        '@id': url,
+        mainEntityOfPage: url,
+        headline: blogTitle,
+        description: blogDescription,
+        blogPost: props.items.map((blogItem)=>getBlogPost(blogItem.content, siteConfig, withBaseUrl))
+    };
+}
+function useBlogPostStructuredData() {
+    const blogMetadata = useBlogMetadata();
+    const { assets , metadata  } = (0,blogPost/* useBlogPost */.e)();
+    const { siteConfig  } = (0,useDocusaurusContext/* default */.A)();
+    const { withBaseUrl  } = (0,useBaseUrl/* useBaseUrlUtils */.hH)();
+    const { date , title , description , frontMatter , lastUpdatedAt  } = metadata;
+    var _image;
+    const image = (_image = assets.image) !== null && _image !== void 0 ? _image : frontMatter.image;
+    var _keywords;
+    const keywords = (_keywords = frontMatter.keywords) !== null && _keywords !== void 0 ? _keywords : [];
+    const dateModified = lastUpdatedAt ? convertDate(lastUpdatedAt) : undefined;
+    const url = `${siteConfig.url}${metadata.permalink}`;
+    // details on structured data support: https://schema.org/BlogPosting
+    // BlogPosting is one of the structured data types that Google explicitly
+    // supports: https://developers.google.com/search/docs/appearance/structured-data/article#structured-data-type-definitions
+    return _objectSpreadProps(_objectSpread({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        '@id': url,
+        mainEntityOfPage: url,
+        url,
+        headline: title,
+        name: title,
+        description,
+        datePublished: date
+    }, dateModified ? {
+        dateModified
+    } : {}, getAuthor(metadata.authors), getImage(image, withBaseUrl, title), keywords ? {
+        keywords
+    } : {}), {
+        isPartOf: {
+            '@type': 'Blog',
+            '@id': `${siteConfig.url}${blogMetadata.blogBasePath}`,
+            name: blogMetadata.blogTitle
+        }
     });
 }
-function Unlisted(props) {
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsx)(UnlistedMetadata, {}),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)(UnlistedBanner, _objectSpread({}, props))
-        ]
-    });
-};
+/** @returns A {@link https://schema.org/Person} constructed from the {@link Author} */ function createPersonStructuredData(author) {
+    return _objectSpread({
+        '@type': 'Person'
+    }, author.name ? {
+        name: author.name
+    } : {}, author.title ? {
+        description: author.title
+    } : {}, author.url ? {
+        url: author.url
+    } : {}, author.email ? {
+        email: author.email
+    } : {}, author.imageURL ? {
+        image: author.imageURL
+    } : {});
+}
+/** @returns A {@link https://schema.org/ImageObject} */ function createImageStructuredData({ imageUrl , caption ,  }) {
+    return {
+        '@type': 'ImageObject',
+        '@id': imageUrl,
+        url: imageUrl,
+        contentUrl: imageUrl,
+        caption
+    };
+} //# sourceMappingURL=structuredDataUtils.js.map
 
 
 /***/ }),
@@ -1500,7 +1599,8 @@ function BlogSidebarDesktop({ sidebar  }) {
     const sidebarData = __webpack_require__(94458);
     const sideitems = (0,blogUtils/* useVisibleBlogSidebarItems */.G)(sidebar.items);
     const getItemTitle = (permalink)=>{
-        const item = sideitems.find((sideitem)=>sideitem.permalink === permalink);
+        console.log(sideitems);
+        const item = sideitems.find((sideitem)=>sideitem.permalink.replace('/whatap-docs', '') === permalink);
         return item ? item.title : permalink;
     };
     return /*#__PURE__*/ (0,jsx_runtime.jsx)("aside", {
