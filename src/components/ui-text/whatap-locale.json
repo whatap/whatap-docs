@@ -53985,10 +53985,10 @@
     "service_id": "LNK07833"
   },
   "DSC07834": {
-    "en": "Check your configured affinity, nodeSelector, and tolerations and the node manifest to ensure that the correct values ​​are set.",
+    "en": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "ja": "affinity、nodeSelector、tolerations、およびノー​​ドマニフェストの設定値が正しいかを確認してください。",
     "ko": "설정된 affinity, nodeSelector, tolerations와 노드 매니페스트를 확인해 올바른 값이 설정되었는지 확인해보세요.",
-    "zh": "Check your configured affinity, nodeSelector, and tolerations and the node manifest to ensure that the correct values ​​are set.",
+    "zh": "Check your configured affinity, nodeSelector, and tolerations and node manifest to ensure the correct values ​​are set.",
     "service_id": "DSC07834"
   },
   "LNK07835": {
@@ -55203,10 +55203,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest for each object from the past",
+    "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55700,10 +55700,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56393,10 +56393,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IP形式に合わない。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56442,10 +56442,10 @@
     "service_id": "ITM08186"
   },
   "DSC08187": {
-    "en": "The device name exceeds the maximum number of characters. ({ADDRLength}/256) ",
-    "ja": "機器名が最大文字数を超えて入力されました。 ({ADDRLength}/256) ",
-    "ko": "장비 이름이 최대 글자 수를 초과하여 입력됐습니다. ({ADDRLength}/256) ",
-    "zh": "The device name exceeds the maximum number of characters. ({ADDRLength}/256) ",
+    "en": "The device name exceeds the maximum number of characters (256 characters maximum).",
+    "ja": "機器名が最大文字数を超えて入力されました。 (最大256文字) ",
+    "ko": "장비 이름이 최대 글자 수를 초과하여 입력됐습니다. (최대 256 자) ",
+    "zh": "The device name exceeds the maximum number of characters (256 characters maximum).",
     "service_id": "DSC08187"
   },
   "TTL08188": {
@@ -56485,7 +56485,7 @@
   },
   "NTC08193": {
     "en": "This is the column name ({column}) used in the default column. Please enter a different name.",
-    "ja": "デフォルト列で使用される列名（{column}）。別の名前を入力してください。",
+    "ja": "基本列で使用される列名（{column}）。別の名前を入力してください。",
     "ko": "기본 컬럼에서 사용하는 컬럼 이름({column})입니다. 다른 이름을 입력하세요.",
     "zh": "This is the column name ({column}) used in the default column. Please enter a different name.",
     "service_id": "NTC08193"
@@ -56538,265 +56538,6 @@
     "ko": "특수 문자를 사용할 수 없습니다.",
     "zh": "Special characters cannot be used.",
     "service_id": "TLT08200"
-  },
-  "LNK08201": {
-    "en": "Go to log menu",
-    "ja": "ログメニューの移動",
-    "ko": "로그 메뉴 이동",
-    "zh": "Go to log menu",
-    "service_id": "LNK08201"
-  },
-  "TLT08202": {
-    "en": "Empty strings are not allowed.",
-    "ja": "空の文字列は使用できません。",
-    "ko": "빈 문자열을 사용할 수 없습니다.",
-    "zh": "Empty strings are not allowed.",
-    "service_id": "TLT08202"
-  },
-  "TTL08203": {
-    "en": "{platform} New release",
-    "ja": "{platform}新規リリース",
-    "ko": "{platform} 신규 출시",
-    "zh": "{platform} New release",
-    "service_id": "TTL08203"
-  },
-  "DSC08204": {
-    "en": "Oracle Pro has been released. Oracle Pro collects performance information dozens of times per second without putting any load on the server, enabling precise analysis.",
-    "ja": "Oracle Proがリリースされました。 Oracle Proは、サーバーに負荷をかけずにパフォーマンス情報を1秒に数十回まで収集し、正確な分析を可能にします。",
-    "ko": "Oracle Pro가 출시되었습니다. Oracle Pro는 서버에 부하없이 성능정보를 1초에 수십번까지 수집하여 정밀한 분석이 가능합니다.",
-    "zh": "Oracle Pro has been released. Oracle Pro collects performance information dozens of times per second without putting any load on the server, enabling precise analysis.",
-    "service_id": "DSC08204"
-  },
-  "DSC08205": {
-    "en": "Please contact sales@whatap.io.",
-    "ja": "sales@whatap.io にご連絡ください。",
-    "ko": "sales@whatap.io 로 연락주시기 바랍니다.",
-    "zh": "Please contact sales@whatap.io.",
-    "service_id": "DSC08205"
-  },
-  "TTL08206": {
-    "en": "First Time of Events",
-    "ja": "イベント初発生時間",
-    "ko": "이벤트 최초 발생 시간",
-    "zh": "First Time of Events",
-    "service_id": "TTL08206"
-  },
-  "TTL08207": {
-    "en": "Number of events occurring",
-    "ja": "イベント発生件数",
-    "ko": "이벤트 발생 건수",
-    "zh": "Number of events occurring",
-    "service_id": "TTL08207"
-  },
-  "NTC08208": {
-    "en": "Loading data.",
-    "ja": "データを読み込んでいます。",
-    "ko": "데이터를 불러오고 있습니다.",
-    "zh": "Loading data.",
-    "service_id": "NTC08208"
-  },
-  "NTC08209": {
-    "en": "please wait for a moment.",
-    "ja": "しばらくお待ちください。",
-    "ko": "잠시만 기다려 주세요.",
-    "zh": "please wait for a moment.",
-    "service_id": "NTC08209"
-  },
-  "CNT08210": {
-    "en": "Upon initial installation, you can use it for 3 days without a license.",
-    "ja": "初回設置時はライセンスなしで3日間使用が可能です。",
-    "ko": "최초 설치 시 라이선스 없이 3일간 사용이 가능합니다.",
-    "zh": "Upon initial installation, you can use it for 3 days without a license.",
-    "service_id": "CNT08210"
-  },
-  "TTL08211": {
-    "en": "Agent is activated",
-    "ja": "エージェントがアクティブです",
-    "ko": "에이전트 활성화 상태입니다",
-    "zh": "Agent is activated",
-    "service_id": "TTL08211"
-  },
-  "TTL08212": {
-    "en": "Agent is inactive",
-    "ja": "エージェントが無効状態です",
-    "ko": "에이전트 비활성화 상태입니다",
-    "zh": "Agent is inactive",
-    "service_id": "TTL08212"
-  },
-  "TTL08213": {
-    "en": "Agent is not installed",
-    "ja": "エージェントが未インストール状態です",
-    "ko": "에이전트 미설치 상태입니다",
-    "zh": "Agent is not installed",
-    "service_id": "TTL08213"
-  },
-  "DSC08214": {
-    "en": "You can multi-select using the Shift key. ",
-    "ja": "Shift キーを使用して複数選択できます。 ",
-    "ko": "Shift key를 사용하여 다중 선택할 수 있습니다. ",
-    "zh": "You can multi-select using the Shift key. ",
-    "service_id": "DSC08214"
-  },
-  "TLT08215": {
-    "en": "View application details",
-    "ja": "アプリケーションの詳細を見る",
-    "ko": "애플리케이션 상세 보기",
-    "zh": "View application details",
-    "service_id": "TLT08215"
-  },
-  "TLT08216": {
-    "en": "View Deployment Details",
-    "ja": "Deployment 詳細を見る",
-    "ko": "\bDeployment 상세 보기",
-    "zh": "View Deployment Details",
-    "service_id": "TLT08216"
-  },
-  "TLT08217": {
-    "en": "View container image details",
-    "ja": "コンテナイメージの詳細を見る",
-    "ko": "컨테이너 이미지 상세 보기",
-    "zh": "View container image details",
-    "service_id": "TLT08217"
-  },
-  "CNT08218": {
-    "en": "column",
-    "ja": "カラム",
-    "ko": "열",
-    "zh": "column",
-    "service_id": "CNT08218"
-  },
-  "NTC08219": {
-    "en": "A test message was requested to be sent to a mobile device.",
-    "ja": "テストメッセージをモバイル機器に送信するよう依頼しました。",
-    "ko": "테스트 메시지를 모바일 기기로 전송 요청 하였습니다.",
-    "zh": "A test message was requested to be sent to a mobile device.",
-    "service_id": "NTC08219"
-  },
-  "NTC08220": {
-    "en": "There is no registered URL.",
-    "ja": "登録したURLはありません。",
-    "ko": "등록한 URL이 없습니다.",
-    "zh": "There is no registered URL.",
-    "service_id": "NTC08220"
-  },
-  "NTC08221": {
-    "en": "<b>Click the ‘Add URL’</b> button to register the URL.",
-    "ja": "<b>'URL追加'</b>ボタンをクリックしてURLを登録してください。",
-    "ko": "<b>‘URL 추가하기’</b> 버튼을 클릭해서 URL을 등록하세요.",
-    "zh": "<b>Click the ‘Add URL’</b> button to register the URL.",
-    "service_id": "NTC08221"
-  },
-  "NTC08222": {
-    "en": "It takes approximately 1 minute to confirm the data for the first URL registered.",
-    "ja": "最初に登録したURLは、データの確認に約1分の時間がかかります。",
-    "ko": "처음 등록한 URL은 데이터 확인까지 약 1분의 시간이 소요됩니다.",
-    "zh": "It takes approximately 1 minute to confirm the data for the first URL registered.",
-    "service_id": "NTC08222"
-  },
-  "TTL08223": {
-    "en": "Master Agent",
-    "ja": "マスターエージェント",
-    "ko": "마스터 에이전트",
-    "zh": "Master Agent",
-    "service_id": "TTL08223"
-  },
-  "TTL08224": {
-    "en": "Node Agent",
-    "ja": "ノードエージェント",
-    "ko": "노드 에이전트",
-    "zh": "Node Agent",
-    "service_id": "TTL08224"
-  },
-  "LNK08225": {
-    "en": "Kubernetes Agent List",
-    "ja": "クーバーネティスエージェント一覧",
-    "ko": "쿠버네티스 에이전트 목록",
-    "zh": "Kubernetes Agent List",
-    "service_id": "LNK08225"
-  },
-  "BTN08226": {
-    "en": "Bulk change",
-    "ja": "一括変更",
-    "ko": "일괄 변경",
-    "zh": "Bulk change",
-    "service_id": "BTN08226"
-  },
-  "DSC08227": {
-    "en": "Apply Widget",
-    "ja": "適用ウィジェット",
-    "ko": "적용 위젯",
-    "zh": "Apply Widget",
-    "service_id": "DSC08227"
-  },
-  "DSC08228": {
-    "en": "There are no Pods matching the Service selector.",
-    "ja": "Service selectorに一致するPodはありません。",
-    "ko": "Service selector에 매칭되는 Pod가 없습니다.",
-    "zh": "There are no Pods matching the Service selector.",
-    "service_id": "DSC08228"
-  },
-  "DSC08229": {
-    "en": "Because the ExternalName type of Service maps to a DNS name without using a selector, there are no separately mapped Pods within the cluster.",
-    "ja": "ExternalName型のServiceはselectorを使用せずにDNS名にマッピングするため、クラスタ内に別々にマッピングされるPodはありません。",
-    "ko": "ExternalName 유형의 Service는 selector를 사용하지 않고 DNS 이름으로 매핑하기 때문에 클러스터 내에 별도로 매핑되는 Pod가 없습니다.",
-    "zh": "Because the ExternalName type of Service maps to a DNS name without using a selector, there are no separately mapped Pods within the cluster.",
-    "service_id": "DSC08229"
-  },
-  "TTL08230": {
-    "en": "Container Summary Analysis",
-    "ja": "コンテナサマリー分析",
-    "ko": "컨테이너 요약 분석",
-    "zh": "Container Summary Analysis",
-    "service_id": "TTL08230"
-  },
-  "TTL08231": {
-    "en": "An error occurred.",
-    "ja": "エラーが発生しました。",
-    "ko": "에러가 발생했습니다.",
-    "zh": "An error occurred.",
-    "service_id": "TTL08231"
-  },
-  "NTC08232": {
-    "en": "You do not have permission to register or edit URLs.",
-    "ja": "URLを登録または編集する権限がありません。",
-    "ko": "URL을 등록하거나 편집할 수 있는 권한이 없습니다.",
-    "zh": "You do not have permission to register or edit URLs.",
-    "service_id": "NTC08232"
-  },
-  "NTC08233": {
-    "en": "Ask another user with <b>Member Management</b> permission to set <b>Edit</b> permission.",
-    "ja": "<b>メンバーの管理</b>権限を持つ他のユーザーに<b>変更</b>権限の設定を依頼してください。",
-    "ko": "<b>멤버 관리</b> 권한이 있는 다른 사용자에게 <b>수정</b> 권한 설정을 요청하세요.",
-    "zh": "Ask another user with <b>Member Management</b> permission to set <b>Edit</b> permission.",
-    "service_id": "NTC08233"
-  },
-  "NTC08234": {
-    "en": "For more information about setting member permissions, see the Docs.",
-    "ja": "メンバー権限の設定の詳細については、Docsを参照してください。",
-    "ko": "멤버 권한 설정에 대한 자세한 내용은 Docs를 참조하세요.",
-    "zh": "For more information about setting member permissions, see the Docs.",
-    "service_id": "NTC08234"
-  },
-  "BTN08235": {
-    "en": "Contact us",
-    "ja": "お問い合わせ",
-    "ko": "문의하기",
-    "zh": "Contact us",
-    "service_id": "BTN08235"
-  },
-  "NTC08236": {
-    "en": "This feature is provided by WhaTap Kubernetes agent version <strong>{version}</strong> or higher. Please update your agent to use the feature. <br/> (Current master agent version: {masterVersion}, Current minimum node agent version: {nodeVersion})",
-    "ja": "ワタップ クーバーネティス エージェント バージョン <strong>{version}</strong> 以降で提供される機能です。機能を使用するには、エージェントを更新してください。 <br/>（現在のマスターエージェントバージョン：{masterVersion}、現在の最小ノードエージェントバージョン：{nodeVersion}）",
-    "ko": "와탭 쿠버네티스 에이전트 버전 <strong>{version}</strong> 이상에서 제공하는 기능입니다. 기능을 사용하려면 에이전트를 업데이트 해주세요. <br/> (현재 마스터 에이전트 버전: {masterVersion}, 현재 최소 노드 에이전트 버전: {nodeVersion})",
-    "zh": "This feature is provided by WhaTap Kubernetes agent version <strong>{version}</strong> or higher. Please update your agent to use the feature. <br/> (Current master agent version: {masterVersion}, Current minimum node agent version: {nodeVersion})",
-    "service_id": "NTC08236"
-  },
-  "DSC08237": {
-    "en": "If the mount point does not exist or disks added after starting the WhaTap Kubernetes agent are not displayed in the list.",
-    "ja": "マウントポイントが存在しないか、WhaTab Kubernetesエージェントの起動後に追加されたディスクはリストに表示されません。",
-    "ko": "마운트 포인트가 존재하지 않거나, 와탭 쿠버네티스 에이전트 기동 후 추가된 디스크는 목록에 표시되지 않습니다.",
-    "zh": "If the mount point does not exist or disks added after starting the WhaTap Kubernetes agent are not displayed in the list.",
-    "service_id": "DSC08237"
   },
   "": {
     "en": "#VALUE!",
