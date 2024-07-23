@@ -152,20 +152,20 @@ const toc = [{
   "id": "mtrace",
   "level": 2
 }, {
-  "value": "에이전트 설정",
-  "id": "에이전트-설정",
+  "value": "에이전트 설정하기",
+  "id": "에이전트-설정하기",
   "level": 3
 }, {
-  "value": "Request Header 전달",
-  "id": "request-header-전달",
+  "value": "Request Header 전달하기",
+  "id": "request-header-전달하기",
   "level": 3
 }, {
-  "value": "HTTP 연결 시 Header 정보 추가",
-  "id": "http-연결-시-header-정보-추가",
+  "value": "HTTP 연결 시 Header 정보 추가하기",
+  "id": "http-연결-시-header-정보-추가하기",
   "level": 3
 }, {
-  "value": "자동 Header 추가",
-  "id": "자동-header-추가",
+  "value": "자동으로 Header 추가하기",
+  "id": "자동으로-header-추가하기",
   "level": 3
 }, {
   "value": "함수 추적",
@@ -623,8 +623,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "에이전트-설정",
-        children: "에이전트 설정"
+        id: "에이전트-설정하기",
+        children: "에이전트 설정하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["멀티 트랜잭션 추적을 위해 에이전트 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: "whatap.conf"
@@ -639,8 +639,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "request-header-전달",
-        children: "Request Header 전달"
+        id: "request-header-전달하기",
+        children: "Request Header 전달하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "분산 추적 정보(헤더 정보)를 확인하려면 Request Header를 전달해야 합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
@@ -690,8 +690,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "http-연결-시-header-정보-추가",
-        children: "HTTP 연결 시 Header 정보 추가"
+        id: "http-연결-시-header-정보-추가하기",
+        children: "HTTP 연결 시 Header 정보 추가하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "외부로 HTTP 연결할 때 Request Header에 추적을 위한 Header 정보를 추가하세요."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
@@ -720,10 +720,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "자동-header-추가",
-        children: "자동 Header 추가"
+        id: "자동으로-header-추가하기",
+        children: "자동으로 Header 추가하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Whatap transport(RountTrip)에는 내부적으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        children: ["Whatap transport(RoundTrip)에는 내부적으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "GetMTrace"
         }), "를 사용하는 코드가 이미 존재합니다. 옵션만 활성화하면 자동으로 Header 정보를 추가할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
