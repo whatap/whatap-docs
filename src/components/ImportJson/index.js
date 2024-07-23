@@ -101,7 +101,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
                     {dateGroup.products[productKey].map(list => (
                       <li key={list.ver}>
                         <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                        <code className='changelog-service'><a href={`${list.url}#${list.hash}`} target='_blank'>{list.product} | {list.ver}</a></code>
+                        <a href={`${list.url}#${list.hash}`} className='goto' target='_blank'>{list.ver}</a>
                         {list.details && (
                           <div dangerouslySetInnerHTML={{ __html: list.details }} />
                         )}
