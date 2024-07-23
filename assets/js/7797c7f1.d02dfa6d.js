@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49742],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[95424],{
 
 /***/ 83961:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -228,9 +228,10 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, UI} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
@@ -247,9 +248,18 @@ function _createMdxContent(props) {
         sid: "search",
         className: "uitext"
       }), " 버튼을 선택하면 문자열을 입력할 수 있는 상자가 나타납니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "apm-dashboard-search-agent.png",
-      desc: "에이전트 검색"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "dashboard",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "apm-dashboard-search-agent.png",
+        desc: "에이전트 검색"
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "dashboard-transactionmap",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "apm-txmap-search-agent.png",
+        desc: "에이전트 검색"
+      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["입력한 문자열과 일치하는 에이전트만 에이전트 목록에 표시됩니다. 검색한 에이전트를 기준으로 대시보드의 데이터를 필터링하려면 문자 입력 상자 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "select",
@@ -1018,7 +1028,7 @@ function _createMdxContent(props) {
           sid: "transaction_map",
           className: "uitext"
         }), " 메뉴의 개편과 관련한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "https://www.whatap.io/ko/blog/210/index.html",
+          to: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=215",
           children: "다음 링크"
         }), "를 참조하세요."]
       })]
@@ -1477,7 +1487,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 35740:
+/***/ 86481:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1509,7 +1519,7 @@ const frontMatter = {
 	title: '트랜잭션 맵',
 	description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
 	tags: [
-		'Node.js',
+		'.NET',
 		'트랜잭션 맵',
 		'대시보드',
 		'애플리케이션'
@@ -1517,21 +1527,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/dashboard-transactionmap",
+  "id": "dotnet/dashboard-transactionmap",
   "title": "트랜잭션 맵",
   "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
-  "source": "@site/docs/nodejs/dashboard-transactionmap.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/dashboard-transactionmap",
-  "permalink": "/whatap-docs/nodejs/dashboard-transactionmap",
+  "source": "@site/docs/dotnet/dashboard-transactionmap.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/dashboard-transactionmap",
+  "permalink": "/whatap-docs/dotnet/dashboard-transactionmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/dashboard-transactionmap.mdx",
+  "editUrl": "undefined/docs/dotnet/dashboard-transactionmap.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Node.js",
-      "permalink": "/whatap-docs/tags/node-js"
+      "label": ".NET",
+      "permalink": "/whatap-docs/tags/net"
     },
     {
       "inline": true,
@@ -1555,20 +1565,20 @@ const metadata = {
     "title": "트랜잭션 맵",
     "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
     "tags": [
-      "Node.js",
+      ".NET",
       "트랜잭션 맵",
       "대시보드",
       "애플리케이션"
     ]
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "애플리케이션 대시보드",
-    "permalink": "/whatap-docs/nodejs/dashboard"
+    "permalink": "/whatap-docs/dotnet/dashboard"
   },
   "next": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/nodejs/dashboard-active-transaction"
+    "permalink": "/whatap-docs/dotnet/dashboard-active-transaction"
   }
 };
 const assets = {

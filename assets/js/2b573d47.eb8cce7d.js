@@ -73,6 +73,10 @@ const toc = [{
   "value": "<code>Cloud</code>",
   "id": "cloud",
   "level": 3
+}, {
+  "value": "<code>Browser</code>",
+  "id": "browser",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -170,6 +174,21 @@ function _createMdxContent(props) {
             sid: "side_agentInstall",
             className: "uitext"
           }), " 메뉴에서 스크립트의 들여쓰기로 인해 설치가 안되는 문제 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "browser",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Browser"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL07736",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL07746",
+            className: "uitext"
+          }), "에서 경과 시간 정렬 기능 오작동 문제 수정"]
         })]
       })]
     })]

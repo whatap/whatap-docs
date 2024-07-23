@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3524],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15241],{
 
 /***/ 76105:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1639,9 +1639,10 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, UI} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
@@ -1658,9 +1659,18 @@ function _createMdxContent(props) {
         sid: "search",
         className: "uitext"
       }), " 버튼을 선택하면 문자열을 입력할 수 있는 상자가 나타납니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "apm-dashboard-search-agent.png",
-      desc: "에이전트 검색"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "dashboard",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "apm-dashboard-search-agent.png",
+        desc: "에이전트 검색"
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "dashboard-transactionmap",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "apm-txmap-search-agent.png",
+        desc: "에이전트 검색"
+      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["입력한 문자열과 일치하는 에이전트만 에이전트 목록에 표시됩니다. 검색한 에이전트를 기준으로 대시보드의 데이터를 필터링하려면 문자 입력 상자 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "select",
@@ -2407,7 +2417,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 58602:
+/***/ 20647:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2437,30 +2447,31 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard',
 	title: '애플리케이션 대시보드',
-	description: '자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.',
+	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	tags: [
-		'Java',
+		'Node.js',
 		'대시보드',
-		'애플리케이션'
+		'애플리케이션',
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard",
+  "id": "nodejs/dashboard",
   "title": "애플리케이션 대시보드",
-  "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
-  "source": "@site/docs/java/dashboard.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard",
-  "permalink": "/whatap-docs/java/dashboard",
+  "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
+  "source": "@site/docs/nodejs/dashboard.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/dashboard",
+  "permalink": "/whatap-docs/nodejs/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard.mdx",
+  "editUrl": "undefined/docs/nodejs/dashboard.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Java",
-      "permalink": "/whatap-docs/tags/java"
+      "label": "Node.js",
+      "permalink": "/whatap-docs/tags/node-js"
     },
     {
       "inline": true,
@@ -2471,27 +2482,33 @@ const metadata = {
       "inline": true,
       "label": "애플리케이션",
       "permalink": "/whatap-docs/tags/애플리케이션"
+    },
+    {
+      "inline": true,
+      "label": "애플리케이션 모니터링",
+      "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard",
     "title": "애플리케이션 대시보드",
-    "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
+    "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "tags": [
-      "Java",
+      "Node.js",
       "대시보드",
-      "애플리케이션"
+      "애플리케이션",
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/java/dashboard-intro"
+    "permalink": "/whatap-docs/nodejs/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/java/dashboard-transactionmap"
+    "permalink": "/whatap-docs/nodejs/dashboard-transactionmap"
   }
 };
 const assets = {

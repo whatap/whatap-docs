@@ -228,9 +228,10 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, UI} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
@@ -247,9 +248,18 @@ function _createMdxContent(props) {
         sid: "search",
         className: "uitext"
       }), " 버튼을 선택하면 문자열을 입력할 수 있는 상자가 나타납니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "apm-dashboard-search-agent.png",
-      desc: "에이전트 검색"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "dashboard",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "apm-dashboard-search-agent.png",
+        desc: "에이전트 검색"
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "dashboard-transactionmap",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "apm-txmap-search-agent.png",
+        desc: "에이전트 검색"
+      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["입력한 문자열과 일치하는 에이전트만 에이전트 목록에 표시됩니다. 검색한 에이전트를 기준으로 대시보드의 데이터를 필터링하려면 문자 입력 상자 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "select",
@@ -1018,7 +1028,7 @@ function _createMdxContent(props) {
           sid: "transaction_map",
           className: "uitext"
         }), " 메뉴의 개편과 관련한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "https://www.whatap.io/ko/blog/210/index.html",
+          to: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=215",
           children: "다음 링크"
         }), "를 참조하세요."]
       })]
