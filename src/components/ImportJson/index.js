@@ -58,22 +58,31 @@ const ImportJson = ({ filePath, product, type, sort }) => {
 
   let sortedData = filteredLists;
 
-  if (sort === 'product') {
+  if (sort === 'date') {
     sortedData = filteredLists.reduce((acc, note) => {
+      const dateKey = new Date(note.date).toISOString().split('T')[0]; // 날짜를 YYYY-MM-DD 형식으로 변환
+      if (!acc[dateKey]) {
+        acc[dateKey] = [];
+      }
       note.Lists.forEach(list => {
-        const cleanedProduct = cleanString(list.product);
-        if (!acc[cleanedProduct]) {
-          acc[cleanedProduct] = [];
-        }
-        acc[cleanedProduct].push({ ...list, date: note.date, url: note.url, ver: note.ver });
+        acc[dateKey].push({ ...list, date: note.date, url: note.url, ver: note.ver });
       });
       return acc;
     }, {});
 
-    sortedData = Object.keys(sortedData).map(productKey => ({
-      product: productKey,
-      lists: sortedData[productKey],
-    }));
+    sortedData = Object.keys(sortedData)
+      .sort((a, b) => new Date(b) - new Date(a)) // 날짜를 내림차순으로 정렬
+      .map(dateKey => ({
+        date: dateKey,
+        products: sortedData[dateKey].reduce((acc, list) => {
+          const cleanedProduct = cleanString(list.product);
+          if (!acc[cleanedProduct]) {
+            acc[cleanedProduct] = [];
+          }
+          acc[cleanedProduct].push(list);
+          return acc;
+        }, {}),
+      }));
   }
 
   return (
@@ -81,21 +90,26 @@ const ImportJson = ({ filePath, product, type, sort }) => {
       {filteredLists.length === 0 ? (
         <p>No data available for the given filters.</p>
       ) : (
-        sort === 'product' ? (
-          sortedData.map(productItem => (
-            <div key={productItem.product}>
-              <h2>{productItem.product}</h2>
-              <ul>
-                {productItem.lists.map(list => (
-                  <li key={list.ver}>
-                    <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                    <code className='changelog-service'><a href={`${list.url}#${list.hash}`} target='_blank'>{list.ver}</a></code>
-                    {list.details && (
-                      <div dangerouslySetInnerHTML={{ __html: list.details }} />
-                    )}
-                  </li>
-                ))}
-              </ul>
+        sort === 'date' ? (
+          sortedData.map(dateGroup => (
+            <div key={dateGroup.date}>
+              <h2>{dateGroup.date}</h2>
+              {Object.keys(dateGroup.products).map(productKey => (
+                <div key={productKey}>
+                  <h3>{productKey}</h3>
+                  <ul>
+                    {dateGroup.products[productKey].map(list => (
+                      <li key={list.ver}>
+                        <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                        <code className='changelog-service'><a href={`${list.url}#${list.hash}`} target='_blank'>{list.product} | {list.ver}</a></code>
+                        {list.details && (
+                          <div dangerouslySetInnerHTML={{ __html: list.details }} />
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           ))
         ) : (
@@ -107,7 +121,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
                 {note.Lists.map(list => (
                   <li key={list.ver}>
                     <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.ver}</a></code>
+                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.product} | {list.ver}</a></code>
                     {list.details && (
                       <div dangerouslySetInnerHTML={{ __html: list.details }} />
                     )}
