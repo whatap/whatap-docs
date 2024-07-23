@@ -57,7 +57,6 @@ const ImportJson = ({ filePath, product, type }) => {
 
   return (
     <div>
-      <h1>Release Notes</h1>
       {filteredLists.length === 0 ? (
         <p>No data available for the given filters.</p>
       ) : (
@@ -67,7 +66,8 @@ const ImportJson = ({ filePath, product, type }) => {
             <ul>
             {note.Lists.map(list => (
                 <li key={list.ver}>
-                  <div dangerouslySetInnerHTML={{ __html: list.desc }} />
+                  <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                  <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.ver}</a></code>
                   {list.details && (
                     <div dangerouslySetInnerHTML={{ __html: list.details }} />
                   )}
