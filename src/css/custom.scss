@@ -873,6 +873,124 @@ footer.row > div.text--right > a {
     // }
   }
 }
+// 블로그 서비스 히스토리 overview
+#overview_test {
+  .changelog-service{
+    position: relative;
+    top: -6px;
+  }
+}
+div.history_overview{
+  // 검은 마커가 맨 처음에 떠서 그거 없애기
+  li:first-of-type::marker {
+    content: none;
+  }
+  .changelog-date-dup {
+    display: none;
+  }
+  .changelog-item-dup {
+    display: none;
+  }
+  .changelog-service-dup + .changelog-overview2 {
+    position: relative;
+    top: -6px !important;
+  }
+  .changelog-service-dup + .changelog-overview2 + ul {
+    position: relative;
+    top: -6px !important;
+}
+  .changelog-service {
+    position: relative;
+    top: -1px;
+    font-size: 85%;
+  }
+  .changelog-overview {
+    position: relative;
+    top: -6px;
+  }
+  code.changelog-overview2 {
+    // background-color: rgb(232, 232, 232);
+    background-color: transparent;
+    color: var(--ifm-color-info-dark);
+    font-weight: 500;
+    border: 0.5px;
+    padding: 1px 4px 1px 4px;
+  }
+  ul {
+    // padding-left: 18px;
+    padding-left: 75px;
+    list-style: none;
+    padding-top: 0;
+    li {
+      display: block;
+      position: relative;
+      border-left: 1px solid #a8a8a8;
+      line-height: 1.5;
+      padding-top: 0px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      margin-left: 15px !important;
+
+      & > .changelog-date {
+        position: absolute;
+        left: -112px; 
+        font-size: 75%;
+        top: 8px;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        content: "\200b";
+        width: 15px;
+        height: 15px;
+        border: 1px solid #a8a8a8;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: -8px;
+      }
+
+      &::marker {
+        color: #a8a8a8;
+      }
+
+      &:first-of-type {
+        &::marker {
+          border-left: 1px solid #333;
+        }
+      }
+
+      &:last-of-type {
+        border-left: none;
+      }
+    }
+
+    ul {
+      border-left: none;
+      list-style: decimal;
+      padding-left: 0;
+      margin-top: -6px;
+      margin-bottom: 12px;
+      width: 110%;
+      li {
+        &::before {
+          content: "• ";
+          border: none;
+          background-color: transparent;
+          top: 0px;
+          font-size: 130%;
+          color: #a8a8a8;
+        }
+        font-size: 92%;
+        margin-bottom: -1px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        border-left: none;
+      }
+    }
+  }
+}
 
 // document
 main {
@@ -1615,6 +1733,12 @@ main {
       color: #fff;
       border: none;
     } 
+    code.default-tag {
+      background-color: #D8E1FC;
+      color: #3B71EA;
+      border: none;
+      padding: 0px 1px 0px 1px;
+    }
     code.changelog-service {
       background-color: rgb(177, 177, 177);
       color: #fff;
@@ -1630,7 +1754,11 @@ main {
         color: #636363;
         text-decoration: underline;
     }
-    
+    code.changelog-service a:hover {
+      // 오버뷰
+      color: #636363 !important;
+      text-decoration: underline;
+    }
     code.changelog-service a:visited {
         color: #fbf9f9;
     }
@@ -1641,6 +1769,14 @@ main {
       // font-size: .6em;
       // font-size: 70%;
     }
+    code.changelog-overview {
+      background-color: rgb(208, 208, 208);
+      color: #fff;
+      // font-family: "Oleo Script";
+      border: 0.5px;
+      padding: 1px 4px 1px 4px;
+    }
+    // 블로그 코드 끝
     code.history {
       background-color: rgb(177, 177, 177);
     }
@@ -1713,6 +1849,12 @@ main {
       width: 750px !important;
       margin: auto;
       display: block;
+    }
+    // changelog 분기 예시 이미지 수정
+    img[alt*= '분기 예시']{
+      border-radius: 2%;
+      border: 1px solid rgb(198, 198, 198) !important;
+      box-shadow: 0 4px 8px rgba(119, 119, 119, 0.2);
     }
     .table-desc {
       font-size: .9em;
@@ -2699,6 +2841,12 @@ main {
       background-color: transparent;
       border: none;
       color: #c0c0c0;
+    }
+    // 다크 모드 changelog 분기 예시 이미지
+    img[alt*= '분기 예시']{
+      border-radius: 2%;
+      border: 1px solid rgb(19, 19, 19) !important;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   }
   .feedback {
