@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20000],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43551],{
 
-/***/ 24833:
+/***/ 31716:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'java-batch-2_2_19',
-	title: 'Java Batch Agent v2.2.19',
-	toc_max_heading_level: 2,
-	displayed_sidebar: 'releaseSidebar'
+	id: 'php-previous',
+	title: 'PHP Agent 지난 버전',
+	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/java-batch/java-batch-2_2_19",
-  "title": "Java Batch Agent v2.2.19",
-  "description": "2023년 10월 10일",
-  "source": "@site/docs/release-notes/java-batch/java-batch-2.2.19.mdx",
-  "sourceDirName": "release-notes/java-batch",
-  "slug": "/release-notes/java-batch/java-batch-2_2_19",
-  "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_19",
+  "id": "release-notes/php/php-previous",
+  "title": "PHP Agent 지난 버전",
+  "description": "* PHP Agent v2.5.3",
+  "source": "@site/docs/release-notes/php/php-previous.mdx",
+  "sourceDirName": "release-notes/php",
+  "slug": "/release-notes/php/php-previous",
+  "permalink": "/whatap-docs/release-notes/php/php-previous",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.19.mdx",
+  "editUrl": "undefined/docs/release-notes/php/php-previous.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "java-batch-2_2_19",
-    "title": "Java Batch Agent v2.2.19",
-    "toc_max_heading_level": 2,
-    "displayed_sidebar": "releaseSidebar"
+    "id": "php-previous",
+    "title": "PHP Agent 지난 버전",
+    "toc_max_heading_level": 2
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Batch Agent v2.2.20",
-    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
+    "title": "PHP Agent v2.5.4",
+    "permalink": "/whatap-docs/release-notes/php/php-2_5_4"
   },
   "next": {
-    "title": "PHP Agent v2.8.0",
-    "permalink": "/whatap-docs/release-notes/php/php-2_8_0"
+    "title": "Node.js Agent v0.4.98",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_98"
   }
 };
 const assets = {
@@ -62,49 +60,64 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     li: "li",
     p: "p",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
-  if (!Status) _missingMdxReference("Status", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 10월 10일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " Java 17, spring-boot-3.x 배치 애플리케이션 추적"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " ASM-9.2에서 ASM-9.5로 업데이트"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " Java 17, spring-boot-3.x 배치 추적 시 발생하는 에이전트 에러 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " Java 17 배치 추적 시 ASM api 버전 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 엑티브 트랜잭션 호출 시 발생하는 버그 수정"]
-        }), "\n"]
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_5_3",
+          children: "PHP Agent v2.5.3"
+        })
       }), "\n"]
-    })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_5_2",
+          children: "PHP Agent v2.5.2"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_5_1",
+          children: "PHP Agent v2.5.1"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_5_0",
+          children: "PHP Agent v2.5.0"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_4_1",
+          children: "PHP Agent v2.4.1"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_4_0",
+          children: "PHP Agent v2.4.0"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "php-2_3_3",
+          children: "PHP Agent v2.3.3"
+        })
+      }), "\n"]
+    }), "\n"]
   });
 }
 function MDXContent(props = {}) {
@@ -118,9 +131,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

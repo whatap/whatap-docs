@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16249],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12687],{
 
-/***/ 55239:
+/***/ 45204:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -20,33 +20,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'php-2_5_3',
-	title: 'PHP Agent v2.5.3',
+	id: 'php-2_5_4',
+	title: 'PHP Agent v2.5.4',
 	toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-2_5_3",
-  "title": "PHP Agent v2.5.3",
-  "description": "배포일: 2022-08-31",
-  "source": "@site/docs/release-notes/php/php-2.5.3.mdx",
+  "id": "release-notes/php/php-2_5_4",
+  "title": "PHP Agent v2.5.4",
+  "description": "배포일: 2022-11-16",
+  "source": "@site/docs/release-notes/php/php-2.5.4.mdx",
   "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-2_5_3",
-  "permalink": "/whatap-docs/release-notes/php/php-2_5_3",
+  "slug": "/release-notes/php/php-2_5_4",
+  "permalink": "/whatap-docs/release-notes/php/php-2_5_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-2.5.3.mdx",
+  "editUrl": "undefined/docs/release-notes/php/php-2.5.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-2_5_3",
-    "title": "PHP Agent v2.5.3",
+    "id": "php-2_5_4",
+    "title": "PHP Agent v2.5.4",
     "toc_max_heading_level": 2
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "PHP Agent v2.5.4",
-    "permalink": "/whatap-docs/release-notes/php/php-2_5_4"
+    "title": "PHP Agent v2.6.0",
+    "permalink": "/whatap-docs/release-notes/php/php-2_6_0"
   },
   "next": {
     "title": "PHP Agent 지난 버전",
@@ -68,32 +68,27 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    code: "code",
     h2: "h2",
-    li: "li",
     p: "p",
     section: "section",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "배포일: 2022-08-31"
+      children: "배포일: 2022-11-16"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "change-업데이트",
         children: "Change (업데이트)"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "캐시 데이터 초기화를 1일 간격에서 1시간 간격으로 변경합니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클라우드 환경의 정보를 간략하게 수집합니다."
-          }), "\n"]
-        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "fsockopen"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "socket_connect"
+        }), " 함수 수정: 기존 연결 정보만 수집했지만 실행 시간을 추가 수집하도록 수정"]
       })]
     })]
   });

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4532],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49565],{
 
-/***/ 63373:
+/***/ 57144:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,31 +18,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'php-2_8_0',
-	title: 'PHP Agent v2.8.0',
+	id: 'php-2_8_1',
+	title: 'PHP Agent v2.8.1',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/php/php-2_7_2',
+	pagination_next: 'release-notes/php/php-2_8_0',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-2_8_0",
-  "title": "PHP Agent v2.8.0",
-  "description": "2024년 06월 19일",
-  "source": "@site/docs/release-notes/php/php-2.8.0.mdx",
+  "id": "release-notes/php/php-2_8_1",
+  "title": "PHP Agent v2.8.1",
+  "description": "2024년 07월 24일",
+  "source": "@site/docs/release-notes/php/php-2.8.1.mdx",
   "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-2_8_0",
-  "permalink": "/whatap-docs/release-notes/php/php-2_8_0",
+  "slug": "/release-notes/php/php-2_8_1",
+  "permalink": "/whatap-docs/release-notes/php/php-2_8_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-2.8.0.mdx",
+  "editUrl": "undefined/docs/release-notes/php/php-2.8.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-2_8_0",
-    "title": "PHP Agent v2.8.0",
+    "id": "php-2_8_1",
+    "title": "PHP Agent v2.8.1",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/php/php-2_7_2",
+    "pagination_next": "release-notes/php/php-2_8_0",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
@@ -51,8 +51,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_19"
   },
   "next": {
-    "title": "PHP Agent v2.7.2",
-    "permalink": "/whatap-docs/release-notes/php/php-2_7_2"
+    "title": "PHP Agent v2.8.0",
+    "permalink": "/whatap-docs/release-notes/php/php-2_8_0"
   }
 };
 const assets = {
@@ -66,8 +66,8 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    blockquote: "blockquote",
     code: "code",
-    em: "em",
     li: "li",
     p: "p",
     strong: "strong",
@@ -84,68 +84,40 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 19일"
+      children: "2024년 07월 24일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "New"
-          }), " linux aarch64 지원"]
+          }), " IP 주소별 트랜잭션 통계를 수집하는 에이전트 설정 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "whatap.stat_ipurl_enabled"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            }), ", 기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            })]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "paramkey.txt"
-          }), " 대신 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "security.conf"
-          }), " 파일 사용"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "security.conf"
-          }), " 파일의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "paramkey"
-          }), " 키의 값을 사용합니다. 기본값은 무작위값이 아닌 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "WHATAP"
-          }), "으로 지정도록 변경합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "WHATAP"
-          }), " 지정되면 키 입력없이 복호화할 수 있습니다."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " SQL 문장의 정규화 옵션 설정 변경"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["SQL 문장에서 파라미터를 분리하여 정규화하는 기능을 항상 활성화하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "whatap.trace_sql_normalize_enabled"
-              }), " 옵션을 항상 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), "로 설정하세요."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "이미 정규화 옵션을 비활성화(정규화 중지 설정)한 상태라면, 정규화해서 파라미터를 별도 표기하는 설정을 활성화하세요."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "whatap.profile_sql_param_enabled"
-                }), " 옵션을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "true"
-                }), "로 설정하세요."]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-                children: "정규화된 파라미터를 별도 암호화하여 수집합니다."
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: "security.conf"
-                }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "paramkey"
-                }), "로 복호화하여 데이터를 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n"]
+            children: "Feature"
+          }), " 통계 압축 전송을 설정하는 에이전트 설정 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "whatap.stat_zip_enabled"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            }), ", 기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            })]
           }), "\n"]
         }), "\n"]
       }), "\n"]
@@ -198,7 +170,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/6/x86_64/whatap-php-2.8-0.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/6/x86_64/whatap-php-2.8-1.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -213,7 +185,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/7/aarch64/whatap-php-2.8-0.aarch64.rpm",
+                href: "https://repo.whatap.io/centos/7/aarch64/whatap-php-2.8-1.aarch64.rpm",
                 children: "다운로드"
               })
             })]
@@ -237,7 +209,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.0_amd64.deb",
+                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.1_amd64.deb",
                 children: "다운로드"
               })
             })]
@@ -252,7 +224,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.0_arm64.deb",
+                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.1_arm64.deb",
                 children: "다운로드"
               })
             })]
@@ -276,7 +248,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/alpine/x86_64/whatap-php-2.8.0.tar.gz",
+                href: "https://repo.whatap.io/alpine/x86_64/whatap-php-2.8.1.tar.gz",
                 children: "다운로드"
               })
             })]
@@ -291,7 +263,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/alpine/aarch64/whatap-php-2.8.0.tar.gz",
+                href: "https://repo.whatap.io/alpine/aarch64/whatap-php-2.8.1.tar.gz",
                 children: "다운로드"
               })
             })]
@@ -313,7 +285,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/freebsd/10/whatap-php-2.8.0.txz",
+                href: "https://repo.whatap.io/freebsd/10/whatap-php-2.8.1.txz",
                 children: "다운로드"
               })
             })]

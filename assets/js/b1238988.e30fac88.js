@@ -1,6 +1,114 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[864],{
 
+/***/ 21786:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    li: "li",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "whatap.okind"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "type",
+          children: "String"
+        })]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "여러 개의 에이전트를 '종류별' 그룹으로 묶어 모니터링 단위를 설정할 수 있습니다. 이 옵션을 통해 여러 에이전트를 그룹 단위로 모니터링하고 관리할 수 있으며, 성능 지표를 분석하거나 알림을 설정할 수도 있습니다."
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
+          }), " 메뉴 등에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "ITM06006",
+            className: "uitext"
+          }), "로 분류된 그룹 옵션으로 확인할 수 있습니다."]
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "whatap.onode"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "type",
+          children: "String"
+        })]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "여러 개의 에이전트를 '노드별' 그룹으로 묶어 모니터링 단위를 설정할 수 있습니다. 이 옵션을 통해 여러 에이전트를 그룹 단위로 모니터링하고 관리할 수 있으며, 성능 지표를 분석하거나 알림을 설정할 수도 있습니다."
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
+          }), " 메뉴 등에서 노드별로 분류된 그룹 옵션으로 확인할 수 있습니다."]
+        })
+      }), "\n"]
+    }), "\n"]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 43799:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -128,10 +236,6 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./docs/common-items/_apm-name-description.mdx
-var _apm_name_description = __webpack_require__(61928);
-// EXTERNAL MODULE: ./docs/common-items/_agent-name-warning.mdx
-var _agent_name_warning = __webpack_require__(43799);
 ;// CONCATENATED MODULE: ./docs/common-items/_php-restart-whatap-service.mdx
 
 
@@ -174,6 +278,12 @@ function MDXContent(props = {}) {
 }
 
 
+// EXTERNAL MODULE: ./docs/common-items/_agent-name-okind-onode-desc.mdx
+var _agent_name_okind_onode_desc = __webpack_require__(21786);
+// EXTERNAL MODULE: ./docs/common-items/_apm-name-description.mdx
+var _apm_name_description = __webpack_require__(61928);
+// EXTERNAL MODULE: ./docs/common-items/_agent-name-warning.mdx
+var _agent_name_warning = __webpack_require__(43799);
 ;// CONCATENATED MODULE: ./docs/php/agent-name.mdx
 
 
@@ -253,7 +363,8 @@ const assets = {
 
 
 
-const agent_name_toc = [..._apm_name_description/* toc */.RM, ..._agent_name_warning/* toc */.RM, ...toc, ...toc, ...toc];
+
+const agent_name_toc = [..._apm_name_description/* toc */.RM, ..._agent_name_warning/* toc */.RM, ...toc, ...toc, ...toc, ..._agent_name_okind_onode_desc/* toc */.RM];
 function agent_name_createMdxContent(props) {
   const _components = {
     admonition: "admonition",
@@ -356,10 +467,8 @@ function agent_name_createMdxContent(props) {
           })]
         }), "\n", (0,jsx_runtime.jsx)(_components.p, {
           children: "애플리케이션을 식별하기 위한 에이전트 이름(ONAME) 구성 방식입니다. ONAME을 토대로 OID가 생성됩니다."
-        }), "\n"]
-      }), "\n"]
-    }), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        }), "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
             children: "whatap.app_name"
@@ -373,10 +482,8 @@ function agent_name_createMdxContent(props) {
           }), "의 ", (0,jsx_runtime.jsx)(_components.code, {
             children: "{type}"
           }), "에 해당하는 값입니다."]
-        }), "\n"]
-      }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        }), "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
             children: "whatap.app_process_name"
@@ -390,9 +497,9 @@ function agent_name_createMdxContent(props) {
           }), "의 ", (0,jsx_runtime.jsx)(_components.code, {
             children: "{process}"
           }), "에 해당하는 값입니다."]
-        }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n"]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
+    }), "\n", (0,jsx_runtime.jsx)(_agent_name_okind_onode_desc/* default */.Ay, {})]
   });
 }
 function agent_name_MDXContent(props = {}) {

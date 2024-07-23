@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12687],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20000],{
 
-/***/ 45204:
+/***/ 24833:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,43 +14,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67068);
-/* harmony import */ var _site_src_components_UItext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5379);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
 
 
 const frontMatter = {
-	id: 'php-2_5_4',
-	title: 'PHP Agent v2.5.4',
-	toc_max_heading_level: 2
+	id: 'java-batch-2_2_19',
+	title: 'Java Batch Agent v2.2.19',
+	toc_max_heading_level: 2,
+	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-2_5_4",
-  "title": "PHP Agent v2.5.4",
-  "description": "배포일: 2022-11-16",
-  "source": "@site/docs/release-notes/php/php-2.5.4.mdx",
-  "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-2_5_4",
-  "permalink": "/whatap-docs/release-notes/php/php-2_5_4",
+  "id": "release-notes/java-batch/java-batch-2_2_19",
+  "title": "Java Batch Agent v2.2.19",
+  "description": "2023년 10월 10일",
+  "source": "@site/docs/release-notes/java-batch/java-batch-2.2.19.mdx",
+  "sourceDirName": "release-notes/java-batch",
+  "slug": "/release-notes/java-batch/java-batch-2_2_19",
+  "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_19",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-2.5.4.mdx",
+  "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.19.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-2_5_4",
-    "title": "PHP Agent v2.5.4",
-    "toc_max_heading_level": 2
+    "id": "java-batch-2_2_19",
+    "title": "Java Batch Agent v2.2.19",
+    "toc_max_heading_level": 2,
+    "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "PHP Agent v2.6.0",
-    "permalink": "/whatap-docs/release-notes/php/php-2_6_0"
+    "title": "Java Batch Agent v2.2.20",
+    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
   },
   "next": {
-    "title": "PHP Agent v2.5.3",
-    "permalink": "/whatap-docs/release-notes/php/php-2_5_3"
+    "title": "PHP Agent v2.8.1",
+    "permalink": "/whatap-docs/release-notes/php/php-2_8_1"
   }
 };
 const assets = {
@@ -59,43 +59,57 @@ const assets = {
 
 
 
-
-
-const toc = [{
-  "value": "Change (업데이트)",
-  "id": "change-업데이트",
-  "level": 2
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    code: "code",
-    h2: "h2",
+    li: "li",
     p: "p",
-    section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Status} = _components;
+  if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "배포일: 2022-11-16"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "change-업데이트",
-        children: "Change (업데이트)"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "fsockopen"
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "socket_connect"
-        }), " 함수 수정: 기존 연결 정보만 수집했지만 실행 시간을 추가 수집하도록 수정"]
-      })]
+      children: "2023년 10월 10일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " Java 17, spring-boot-3.x 배치 애플리케이션 추적"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ASM-9.2에서 ASM-9.5로 업데이트"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " Java 17, spring-boot-3.x 배치 추적 시 발생하는 에이전트 에러 수정"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " Java 17 배치 추적 시 ASM api 버전 수정"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Fixed"
+          }), " 엑티브 트랜잭션 호출 시 발생하는 버그 수정"]
+        }), "\n"]
+      }), "\n"]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -105,54 +119,10 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
-
-
-/***/ }),
-
-/***/ 67068:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ Status)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-
-
-function Status({ children , priority  }) {
-    if (priority) {
-        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            className: children,
-            type: priority,
-            children: children
-        });
-    }
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        className: children,
-        children: children
-    });
-};
-
-
-/***/ }),
-
-/***/ 5379:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ UItext)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-
-
-function UItext({ children  }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-        className: "uitext",
-        children: children
-    });
-};
 
 
 /***/ }),
