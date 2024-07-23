@@ -51,7 +51,7 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/service/service-2_6_x"
   },
   "next": {
-    "title": "Service 2.4.0",
+    "title": "Service 2.4.X",
     "permalink": "/whatap-docs/release-notes/service/service-2_4_x"
   }
 };

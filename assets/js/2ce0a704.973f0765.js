@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'service-2_4_x',
-	title: 'Service 2.4.0',
+	title: 'Service 2.4.X',
 	toc_max_heading_level: 2,
 	pagination_next: 'release-notes/service/service-2_3_x',
 	displayed_sidebar: 'releaseSidebar'
@@ -27,7 +27,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_4_x",
-  "title": "Service 2.4.0",
+  "title": "Service 2.4.X",
   "description": "Service 2.4.3",
   "source": "@site/docs/release-notes/service/service-2.4.x.mdx",
   "sourceDirName": "release-notes/service",
@@ -40,7 +40,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "service-2_4_x",
-    "title": "Service 2.4.0",
+    "title": "Service 2.4.X",
     "toc_max_heading_level": 2,
     "pagination_next": "release-notes/service/service-2_3_x",
     "displayed_sidebar": "releaseSidebar"
