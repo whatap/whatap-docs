@@ -3252,9 +3252,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_7_0x',
+          id: 'release-notes/preview/preview-2_8_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_7_0x',
         'release-notes/preview/preview-2_6_0x',
         'release-notes/preview/preview-2_5_0x',
         'release-notes/preview/preview-2_4_0x',
@@ -3269,14 +3270,6 @@ const sidebars = {
         'release-notes/preview/preview-1_105_x',
         'release-notes/preview/preview-1_103_x',
         'release-notes/preview/preview-1_101_x',
-        'release-notes/preview/preview-1_99_x',
-        'release-notes/preview/preview-1_97_x',
-        'release-notes/preview/preview-1_95_2',
-        'release-notes/preview/preview-1_95_1',
-        'release-notes/preview/preview-1_95_0',
-        'release-notes/preview/preview-1_93_2',
-        'release-notes/preview/preview-1_93_1',
-        'release-notes/preview/preview-1_93_0',
       ],
     }
   ],
