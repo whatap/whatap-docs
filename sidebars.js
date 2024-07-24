@@ -5860,6 +5860,7 @@ const sidebars = {
                 'kubernetes/pending-pod-status',
                 'kubernetes/resource-application-list',
                 'kubernetes/deployment-list',
+                'kubernetes/service-list',
               ],
             },
             {
