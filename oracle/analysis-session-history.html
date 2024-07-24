@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.b057e56a.css">
-<script src="/whatap-docs/assets/js/runtime~main.425da334.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.0f24d77f.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.03d43c28.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -49,14 +49,14 @@
 <li>
 <p>장시간 수행 중이면서 종료되지 않은 세션을 선택하세요.</p>
 <!-- -->
-<!-- -->
+<p><img loading="lazy" src="/whatap-docs/img/db-session-history-oracle-pro-01.png" alt="인스턴스 모니터링" width="1200" height="853"></p>
 </li>
 <li>
 <p><span class="uitext">세션 상세 정보</span> 창이 나타나면 <span class="uitext">세션 히스토리</span> 버튼을 선택하세요.</p>
 <!-- -->
-<!-- -->
+<p><img loading="lazy" src="/whatap-docs/img/db-session-history-oracle-pro-02.png" alt="세션 히스토리" width="1200" height="1005"></p>
 </li>
-</ol><p>선택한 세션의 프로세스 ID(PID)를 조회한 <span class="uitext">세션 히스토리</span> 메뉴로 이동합니다.</p><p>선택한 세션으로부터 5초마다 수집한 액티브 세션 정보를 활용해 차트와 리스트를 구성하고 분석에 활용할 수 있는 정보를 제공합니다.</p><ul>
+</ol><p>선택한 세션의 프로세스 ID(PID)를 조회한 <span class="uitext">세션 히스토리</span> 메뉴로 이동합니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-session-history-oracle-pro-03.png" alt="세션 히스토리" width="1200" height="519"></p><p>선택한 세션으로부터 5초마다 수집한 액티브 세션 정보를 활용해 차트와 리스트를 구성하고 분석에 활용할 수 있는 정보를 제공합니다.</p><ul>
 <li>
 <p><em><strong>Wait</strong></em>: 대기 중인 이벤트의 비율을 차트를 통해 확인할 수 있습니다.</p>
 </li>
@@ -72,8 +72,22 @@
 </ul><p>목록 가장 오른쪽의 <em><strong>query</strong></em> 컬럼 항목을 선택하면 SQL 문을 확인할 수 있는 <span class="uitext">SQL 상세</span> 창이 나타납니다. 선택한 쿼리(Query)에 대한 Full Text 및 Plan 정보를 포함하고 있습니다.</p></section>
 <!-- -->
 <!-- -->
-<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="query-details">쿼리 자세히 보기<a class="hash-link" aria-label="쿼리 자세히 보기에 대한 직접 링크" title="쿼리 자세히 보기에 대한 직접 링크" href="/whatap-docs/oracle/analysis-session-history#query-details">​</a></h3><p><img loading="lazy" src="/whatap-docs/img/db-sql-details-common.png" alt="SQL 상세" width="1200" height="473"></p><ul>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="query-details">쿼리 자세히 보기<a class="hash-link" aria-label="쿼리 자세히 보기에 대한 직접 링크" title="쿼리 자세히 보기에 대한 직접 링크" href="/whatap-docs/oracle/analysis-session-history#query-details">​</a></h3><p><img loading="lazy" src="/whatap-docs/img/db-sql-details-oracle-pro.png" alt="SQL 상세" width="1200" height="728"></p><ul>
 <li><span class="uitext">SQL 통계 보기</span>: 해당 SQL 쿼리문과 관련한 통계 정보를 확인할 수 있는 <span class="uitext">SQL 통계</span> 메뉴로 이동할 수 있습니다.</li>
+</ul><ul>
+<li>
+<p><em><strong>Runtime Plan</strong></em>: 선택된 SQL 쿼리의 실행 계획과 런타임 정보를 제공합니다. 실행 횟수, 평균 실 행 시간, 평균 물리적 읽기 등 세부 정보를 제공합니다.</p>
+</li>
+<li>
+<p><em><strong>Explain Plan</strong></em>: 옵티마이저가 예측한 실행 계획을 보여줍니다. 비용, 작업, 객체 이름, 카디널리티 등의 정보를 제공합니다.</p>
+</li>
+<li>
+<p><em><strong>Plan History</strong></em>: 데이터베이스에서 실행된 SQL 쿼리의 실행 계획에 대한 이력을 확인할 수 있습니다.</p>
+</li>
+<li>
+<p><em><strong>Bind Capture</strong></em>: 데이터베이스에서 실행된 SQL 쿼리에 사용된 바인드 변수의 값을 확인할 수 있습니다. 이를 통해 쿼리 실행의 실제 내용을 확인할 수 있습니다.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>실시간 실행된 bind 값이 아닌 데이터베이스에 캡처된 값(<code>v$sql_bind_capture</code>)입니다. 건수가 많으면 100개까지 표시합니다.</p></div></div>
+</li>
 </ul></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="change-column">테이블 컬럼 설정하기<a class="hash-link" aria-label="테이블 컬럼 설정하기에 대한 직접 링크" title="테이블 컬럼 설정하기에 대한 직접 링크" href="/whatap-docs/oracle/analysis-session-history#change-column">​</a></h2><p>테이블 헤더 컬럼을 감추거나 원하는 항목을 추가할 수 있습니다. 컬럼 순서를 변경할 수도 있습니다. <img decoding="async" loading="lazy" alt="컬럼 아이콘" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtY29sdW1uPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ1Mi4wMDAwMDAsIC0zMDMxLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgICA8ZyBpZD0iYXBwbGljYXRpb24taWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwMDAwMCwgMjM0Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jb2x1bW4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMi4wMDAwMDAsIDY4NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgNC4wMDAwMDApIiBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwwIEwwLDE2IEwyMCwxNiBMMjAsMCBMMCwwIFogTTEyLDIgTDEyLDE0IEw4LDE0IEw4LDIgTDEyLDIgWiBNMiwyIEw2LDIgTDYsMTQgTDIsMTQgTDIsMiBaIE0xOCwxNCBMMTQsMTQgTDE0LDIgTDE4LDIgTDE4LDE0IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" width="24" height="24" class="img_ev3q"> 버튼을 선택하세요.</p>
 <p><img loading="lazy" src="/whatap-docs/img/db-v2-column-setting.png" alt="컬럼 설정" width="645" height="629"></p>
