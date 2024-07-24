@@ -16,10 +16,8 @@ export default function getProductName() {
     }
     
     let myProd;
-    if (cProd == 'mysql-v1') {
-        myProd = 'mysql';
-    } else if (cProd == 'postgresql-v1') {
-        myProd = 'postgresql';
+    if (cProd == 'oracle-v1') {
+        myProd = 'oracle';
     } else {
         myProd = cProd.toLowerCase();
     }
