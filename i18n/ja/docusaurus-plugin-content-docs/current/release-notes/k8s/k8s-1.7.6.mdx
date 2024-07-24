@@ -1,0 +1,33 @@
+---
+id: k8s-1_7_6
+title: Kubernetes Agent v1.7.6
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_7_5
+displayed_sidebar: releaseSidebar
+---
+
+2024年07月01日
+
+- <Status>Feature</Status>タグカウントを追加
+
+  - **kube_service_pod_mapping**項目を追加
+  - **kube_pod**カテゴリに`podUid`タグを追加
+  - **kube_service**カテゴリに`externalIp`タグ, PORT(`portName`, `nodePort`, `servicePort`, `targetPort`) フィールドを追加
+  - **kube_event**カテゴリに`watch_event_type`、`resource_version`データを追加
+  - **kube_event**重複通知現象を削除
+
+- <Status>Feature</Status> **whatap-node-helper**コンテナ環境変数(`env`)に`WHATAP_JAVA_AGENT_PATH`を追加
+
+  :::note
+
+  - 当該環境変数にWhaTap Javaエージェントのjarファイルパスを設定すると、コンテナidと連動できます。 
+
+  - この機能は、[Javaエージェント2.2.33](../java/java-2_2_33)バージョン以降に対応しています。
+
+  :::
+
+:::info
+
+Agent download: [kube_mon_1.7.6.tar](https://repo.whatap.io/docker/kube_mon_1.7.6.tar)
+
+:::

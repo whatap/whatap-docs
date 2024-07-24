@@ -1,26 +1,26 @@
 <InDoc product='aws-log'>
 
-Home > Select Project > **_Management_** > **_Log Setting_**
+Home > Select Project > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql'>
+<InDoc product='log,postgresql,mysql,oracle-v2,oracle-pro'>
 
-Home > Select Project > **_Log_** > **_Log Setting_**
+Home > Select Project > <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
-You can configure the log monitoring related settings in **_Log Setting_**. Using the tab at the top, you can use menus for checking the agent settings, determining whether to enable log monitoring, setting the log data retention period and lookup password, registering the log parser, and setting the quick indexes.
+You can configure the log monitoring related settings in <Cmdname sid="side_logSetting" className="uitext" />. Using the tab at the top, you can use menus for checking the agent settings, determining whether to enable log monitoring, setting the log data retention period and lookup password, registering the log parser, and setting the quick indexes.
 
 :::note
 
-- To use the **_Activate log monitoring_** function, the **Edit Project** role is required. 
+- To use the <Cmdname sid="use_log_monitoring" className="uitext" /> function, the <Cmdname sid="edit_project" className="b600" /> role is required.
 
-- The **Log Edit** role allows you to modify the **_Log Setting_** menu other than **_Activate log monitoring_**.
+- The <Cmdname sid="log_update" className="b600" /> role allows you to modify the <Cmdname sid="side_logSetting" className="uitext" /> menu other than <Cmdname sid="use_log_monitoring" className="uitext" />.
 
 :::
 
-## Starting the log monitoring{#log-getting-started}
+## Starting the log monitoring {#log-getting-started}
 
 <InDoc product='aws-log'>
 
@@ -34,29 +34,29 @@ You can configure the log monitoring related settings in **_Log Setting_**. Usin
 
 </InDoc>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 <ImgLang img='log-getting-started-db.png' desc='Start Log Monitoring'/>
 
 </InDoc>
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,oracle-v2,oracle-pro'>
 
-At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) **_View guide_** icon and the **_View plans_** button, the corresponding guide screen appears. 
+At the top, select the <Cmdname sid="getting_started_log_monitoring" className="uitext" /> tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" /> icon and the <Cmdname sid="log_monitoring_plan" className="uitext" /> button, the corresponding guide screen appears. 
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
-At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) **_View guide_** icon, the corresponding guide screen appears. 
+At the top, select the <Cmdname sid="getting_started_log_monitoring" className="uitext" /> tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" /> icon, the corresponding guide screen appears. 
 
 </InDoc>
 
-### Set up the agent and enable log monitoring{#log-set-up}
+### Set up the agent and enable log monitoring {#log-set-up}
 
 <InDoc product='aws-log'>
 
-In the ![number 1](/img/number-01.png) area, click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
+In the ![number 1](/img/number-01.png) area, click the <Cmdname sid="use_log_monitoring" className="uitext" /> toggle button to set whether or not to enable the log monitoring.
 
 <ImgLang img='log-start-aws.png' desc='Starting the log monitoring'/>
 
@@ -65,13 +65,13 @@ In the ![number 1](/img/number-01.png) area, click the **_Activate log monitorin
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql'>
+<InDoc product='log,postgresql,mysql,oracle-v2,oracle-pro'>
 
-In the ![number 1](/img/number-01.png) area, check the agent settings, and then click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
+In the ![number 1](/img/number-01.png) area, check the agent settings, and then click the <Cmdname sid="use_log_monitoring" className="uitext" /> toggle button to set whether or not to enable the log monitoring.
 
-#### Check Agent Configuration{#log-check-agent-settings}
+#### Check agent configuration {#log-check-agent-settings}
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 Check the agent version and settings to start the log monitoring. Select **_Check Agent Configuration_** to follow the onscreen instructions.
 
@@ -89,23 +89,23 @@ Check the agent version and settings to start the log monitoring. Select **_Chec
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 Check the agent version and settings to start the log monitoring. For more information about the agent settings, see [the following](log-db).
 
 </InDoc>
 
-#### Activate log monitoring{#log-activate}
+#### Activate log monitoring {#log-activate}
 
-Select **_Activate log monitoring_** to set whether or not to enable the log monitoring.
+Select <Cmdname sid="use_log_monitoring" className="uitext" /> to set whether or not to enable the log monitoring.
 
-<Xclude product="postgresql,mysql">
+<Xclude product="postgresql,mysql,oracle-v2,oracle-pro">
 
 <ImgLang img='log-start.png' desc='Starting the log monitoring'/>
 
 </Xclude>
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
 
 <ImgLang img='log-start-db.png' desc='Start Log Monitoring'/>
 
@@ -116,17 +116,17 @@ Select **_Activate log monitoring_** to set whether or not to enable the log mon
 
 </InDoc>
 
-### Log Monitoring Data Setting{#log-data-setting}
+### Log monitoring data setting {#log-data-setting}
 
-In the ![number 2](/img/number-02.png) area, you can see the **_Log Usage_**. Furthermore, you can change the settings for **_Data retention_** and **_Log lookup password_**.
+In the ![number 2](/img/number-02.png) area, you can see the <Cmdname sid="log_usage" className="uitext" />. Furthermore, you can change the settings for <Cmdname sid="data_retention" className="uitext" /> and <Cmdname sid="log_lookup_password" className="uitext" />.
 
 #### Data retention {#data-retention}
 
-This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select **_Reset_**, the default data retention period is reset.
+This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select <Cmdname sid="initialized" className="uitext" />, the default data retention period is reset.
 
 #### Data retention per category {#data-retention-per-category}
 
-You can specify the log data retention periods for each category. **Log Count** means the log lines stacked for the period. For example, **_Today Log Count_** is the number of log lines accumulated during the day, and **_Expected Log Count_** is the number of log lines of the today's log count multiplied by the days of data retention. 
+You can specify the log data retention periods for each category. **Log Count** means the log lines stacked for the period. For example, <Cmdname sid="daily_log_count" className="uitext" /> is the number of log lines accumulated during the day, and <Cmdname sid="expected_log_count" className="uitext" /> is the number of log lines of the today's log count multiplied by the days of data retention. 
 
 You can specify the log data retention period as follows. You can free the space by deleting old data according to the specified period.
 
@@ -144,21 +144,21 @@ You can specify the log data retention period as follows. You can free the space
 
   > For example, if an average of 2 million log lines per day accumulates and the data retention period is set to 3 days, an average of 6 million log lines is kept on the collection server and subject to billing.
 
-#### Log lookup password{#log-lookup-pw}
+#### Log lookup password {#log-lookup-pw}
 
-To enhance security, set the **_log lookup password_**. The log lookup password is optional. If you are using a log lookup password, enter the password to go to the log screen. 
+To enhance security, set the <Cmdname sid="log_lookup_password" className="uitext" />. The log lookup password is optional. If you are using a log lookup password, enter the password to go to the log screen. 
 
 :::note
 
 **In case you forgot the password**
 
-If you have the **Edit Log** role, you can modify it with a new password in **_Log Setting_**.
+If you have the **Edit Log** role, you can modify it with a new password in <Cmdname sid="side_logSetting" className="uitext" />.
 
 :::
 
-## Log primary parser setting{#log-setting-parser-1st}
+## Log primary parser setting {#log-setting-parser-1st}
 
-At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The log primary parser provides the parsers for **_GROK_** and **_JSON_**. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
+At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab to register and modify the log parser. The log primary parser provides the parsers for ***GROK*** and ***JSON***. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
 
 - **_GROK_**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
 
@@ -188,7 +188,7 @@ For more information about the log parser, see [the following](log-parser).
 
 :::
 
-### Setting item{#log-parser-comp}
+### Setting item {#log-parser-comp}
 
 | Set value               | Description                                                                                                                                                                                                                                  | ETC      |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -196,55 +196,55 @@ For more information about the log parser, see [the following](log-parser).
 | Log detection condition | Enter the search key and search value to be applied as the filter. The pattern is applied only to the log data that meets the log detection conditions. If you do not enter any log detection condition, the pattern is applied to all logs. | optional |
 | Pattern                 | It is the pattern to parse the log for. Parsing is performed according to the created pattern, and indexes are created. It supports GROK, regular expression syntax.                                                                         | required |
 
-### Parser List{#log-parser-list-1st}
+### Parser list {#log-parser-list-1st}
 
 <ImgLang img='log-1st-parser-list.png' desc='Log parser lists'/>
 
-If you select the **_Log primary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
+If you select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />, you can see the **Parser List** screen where you can search for registered parsers and add or edit them.
 
-- If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
+- If you select **_+_** <Cmdname sid="adding" className="uitext" /> on the upper right, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
 
-- You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
+- You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the <Cmdname sid="ITM06352" className="uitext" /> column of the parser list.
 
-- Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
+- Through the parser list's ![Icon](/img/ic-toggle-on.svg) <Cmdname sid="enable" className="uitext" /> toggle button, you can set whether or not to enable the parser.
 
-- Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
+- Through the parser list's ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" /> and ![Delete icon](/img/ico-trash-red.svg) <Cmdname sid="delete" className="uitext" /> icons, you can modify or delete the registered parser.
 
 ### Parser registration order{#log-add-parser-1st}
 
-At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
+At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab to register and modify the log parser. The following shows the common parser registration procedure.
 
 <ImgLang img='log-1st-parser-add.png' desc='Add Log parser'/>
 
-1. Select **_+ Add_**. The **_Add Parser_** window appears.
+1. If you select **_+_** <Cmdname sid="adding" className="uitext" />, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
 
-2. In the **_Parser_** selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
+2. In the <Cmdname sid="parser" className="uitext" /> selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
 
    - **_GROK_** [Parser and Pattern Registration](#log-pattern-grok)
 
    - **_JSON_** [Parser and Pattern Registration](#log-pattern-json)
 
-3. In the **_Category_** selection window, select a category or enter it. 
+3. In the <Cmdname sid="category" className="uitext" /> selection window, select a category or enter it.
 
-4. Select a **_search key_** and **_search value_** for the **_log detection condition_** or directly enter them.
+4. Select a <Cmdname sid="ITM06429" className="uitext" /> and <Cmdname sid="ITM06430" className="uitext" /> for the <Cmdname sid="ITM06439" className="uitext" /> or directly enter them.
 
-  The pattern is applied only to the log data that meets the filter conditions. \*\*\*If you do not enter any log detection condition, the pattern is applied to all logs.
+   The pattern is applied only to the log data that meets the filter conditions. If <Cmdname sid="ITM06439" className="uitext" /> is not specified, the pattern is applied to all logs.
 
-1. Enter the **_pattern_**. 
+5. Enter the <Cmdname sid="pattern" className="uitext" />.
 
-2. To check whether the pattern is normal, click **_Simulation_** and then measure the performance of simulation and pattern.
+6. To check whether the pattern is normal, click <Cmdname sid="simulation" className="uitext" /> and then measure the performance of simulation and pattern.
 
-  For more information about the simulation and performance measurement, see [the following](#parser-simulation).
+   For more information about the simulation and performance measurement, see [the following](#parser-simulation).
 
-1. If the simulation result is normal, select **_Add_** and then register the parser.
+7. If the simulation result is normal, select <Cmdname sid="add" className="uitext" /> and then register the parser.
 
 :::note
 
-When registering the log parser, parsers cannot be registered repeatedly in the same **_category_**.
+When registering the log parser, parsers cannot be registered repeatedly in the same <Cmdname sid="category" className="uitext" />.
 
 :::
 
-### GROK Parser Pattern Registration{#log-pattern-grok}
+### GROK parser pattern registration {#log-pattern-grok}
 
 <ImgLang img='log-1st-grok.png' desc='Registering the Grok pattern parser'/>
 
@@ -264,7 +264,7 @@ The default syntax is `%{SYNTAX:SEMANTIC}`. For more information about the GROK 
 
   :::
 
-### Registering the JSON Format Parser Pattern{#log-pattern-json}
+### Registering the JSON format parser pattern {#log-pattern-json}
 
 <ImgLang img='log-1st-json.png' desc='Registering the JSON Format Parser Pattern'/>
 
@@ -329,17 +329,17 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
     io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
     ```
 
-### Parser Simulation{#parser-simulation}
+### Parser Simulation {#parser-simulation}
 
-1. Enter a pattern in the parser addition screen, and then select **_Simulation_**. The **_Parser Simulation_** window appears. 
+1. Enter a pattern in the parser addition screen, and then select <Cmdname sid="simulation" className="uitext" />. The <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" /> window appears. 
 
-2. Enter the **_log_** in the **_Parser Simulation_** window. 
+2. Enter the <Cmdname sid="log" className="uitext" /> in the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" /> window.
 
-3. Check the entered **_log_** and **_pattern_**.
+3. Check the entered <Cmdname sid="log" className="uitext" /> and <Cmdname sid="pattern" className="uitext" />.
 
-<ImgLang img='log-parser-simulation.png' desc='Parser Simulation'/>
+<ImgLang img='log-parser-simulation.png' desc='Parser simulation'/>
 
-1. Select **_Simulation_** and then check whether parsing is successful with the pattern to register. 
+1. Select <Cmdname sid="simulation" className="uitext" /> and then check whether parsing is successful with the pattern to register.
 
    - **Simulation Success Screen**
 
@@ -349,29 +349,29 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
      <ImgLang img='log-simulation-fail.png' desc='Simulation Failure'/>
 
-2. When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. 
+2. When you click <Cmdname sid="apply_pattern" className="uitext" />, the pattern that has been entered for the selected parser is applied.
 
-### Performance measurement{#log-performance}
+### Performance measurement {#log-performance}
 
-After successful simulation, click **_Performance measurement_** to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
+After successful simulation, click <Cmdname sid="performance_measurement" className="uitext" /> to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
 
 <ImgLang img='log-performance.png' desc='Performance measurement'/>
 
-### Parsing success{#log-parsed}
+### Parsing success {#log-parsed}
 
-If a key is generated by registering a parsing logic, the value parsed with the key is added upon log inquiry. As in the following **_Live Tail_** menu's example, the parsed key and value are added. 
+If a key is generated by registering a parsing logic, the value parsed with the key is added upon log inquiry. As in the following <Cmdname sid="side_logTail" className="uitext" /> menu's example, the parsed key and value are added. 
 
-<ImgLang img='log-parsed.png' desc='Successful parsing'/>
+<ImgLang img='log-parsed.png' desc='Parsing Success'/>
 
-The parsed key can be checked in **_Live Tail_**, **_Log Search_**, and **_Log Trend_**.
+The parsed key can be checked in <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" />, and <Cmdname sid="side_logExplorer" className="uitext" />.
 
-## Log secondary parser setting{#log-setting-parser-2nd}
+## Log secondary parser setting {#log-setting-parser-2nd}
 
-At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The **_4xx, 5xx Status Code Parser_** and **_Status Code Success Rate Parser_** are provided. The log secondary parser can be used if a primary parser such as GROK or JSON has been parsed. By processing the values extracted by the primary parser, the statistics data is generated. Secondary statistics are extracted based on HTTP status codes for the web or API response logs.
+At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_secondary" className="uitext" /> tab to register and modify the log parser. The <Cmdname sid="status_4xx5xx_parser" className="uitext" /> and <Cmdname sid="status_success_rate" className="uitext" /> are provided. The log secondary parser can be used if a primary parser such as GROK or JSON has been parsed. By processing the values extracted by the primary parser, the statistics data is generated. Secondary statistics are extracted based on HTTP status codes for the web or API response logs.
 
-- **_4xx, 5xx Status Code Parser_**: The counts are aggregated for abnormal responses.
+- <Cmdname sid="status_4xx5xx_parser" className="uitext" />: The counts are aggregated for abnormal responses.
 
-- **_Status Code Success Rate Parser_**: The percentage of abnormal responses to the total number of cases is extracted.
+- <Cmdname sid="status_success_rate" className="uitext" />: The percentage of abnormal responses to the total number of cases is extracted.
 
 :::note
 
@@ -379,49 +379,49 @@ The log secondary parser provides the special purpose secondary parsing function
 
 :::
 
-### Parser List{#log-parser-list-2nd}
+### Parser list {#log-parser-list-2nd}
 
 <ImgLang img='log-2nd-parser-list.png' desc='Log Secondary Parser List'/>
 
-If you select the **_Log secondary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
+If you select the <Cmdname sid="log_parser_setting_secondary" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />, you can see the **Parser List** screen where you can search for registered parsers and add or edit them.
 
-- If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
+- If you select **_+_** <Cmdname sid="adding" className="uitext" /> on the upper right, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
 
-- You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
+- You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the <Cmdname sid="ITM06352" className="uitext" /> column of the parser list.
 
-- Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
+- Through the parser list's ![Icon](/img/ic-toggle-on.svg) <Cmdname sid="enable" className="uitext" /> toggle button, you can set whether or not to enable the parser.
 
-- Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
+- Through the parser list's ![Edit icon](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" /> and ![Delete icon](/img/ico-trash-red.svg) <Cmdname sid="delete" className="uitext" /> icons, you can modify or delete the registered parser.
 
-### Parser registration order{#log-add-parser-2nd}
+### Parser registration order {#log-add-parser-2nd}
 
-At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
+At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_secondary" className="uitext" /> tab to register and modify the log parser. The following shows the common parser registration procedure.
 
 <ImgLang img='log-2nd-parser-add.png' desc='Log secondary parser registration order'/>
 
-1. Select **_+ Add_**. The **_Add Parser_** window appears.
+1. If you select **_+_** <Cmdname sid="adding" className="uitext" />, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
 
-2. In the **_Parser_** selection window, select a parser. For more information about the registration of each parser settings and status codes to exclude, see the following.
+2. In the <Cmdname sid="parser" className="uitext" /> selection window, select a parser. For more information about the registration of each parser settings and status codes to exclude, see the following.
 
-   - **_4xx, 5xx Status Code Parser_** [Registration of settings and status codes to exclude](#4xx-5xx-status-parser)
+   - <Cmdname sid="status_4xx5xx_parser" className="uitext" /> [Registration of settings and status codes to exclude](#4xx-5xx-status-parser)
 
-   - **_Status Code Success Rate Parser_** [Registration of settings and status codes to exclude](#log-pattern-status)
+   - <Cmdname sid="status_success_rate" className="uitext" /> [Registration of settings and status codes to exclude](#log-pattern-status)
 
-3. In the **_Category_** selection window, select a category or enter it. 
+3. In the <Cmdname sid="category" className="uitext" /> selection window, select a category or enter it.
 
-4. Select **_Log detection condition_** or enter it.
+4. Select <Cmdname sid="ITM06439" className="uitext" /> or enter it.
 
-5. Enter the **_status codes to exclude_**. 
+5. Enter the <Cmdname sid="ITM06255" className="uitext" />.
 
-6. Select **_Add_** to register a parser.
+6. Select <Cmdname sid="add" className="uitext" /> to register a parser.
 
-### Registration of status codes to exclude for the 4xx, 5xx status code parser{#4xx-5xx-status-parser}
+### Registration of status codes to exclude for the 4xx, 5xx status code parser {#4xx-5xx-status-parser}
 
-<ImgLang img='log-2nd-4xx5xx.png' desc='4xx, 5xx status code parser'/>
+<ImgLang img='log-2nd-4xx5xx.png' desc='4XX 5XX status code parser'/>
 
-The **_4xx, 5xx Status Code Parser_** can be used when the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. For the status codes to exclude, you can enter or select the 4xx, 5xx status codes. The entered status code is excluded upon parsing the 4xx, 5xx status codes from the logs. 
+The <Cmdname sid="status_4xx5xx_parser" className="uitext" /> can be used when the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. For the status codes to exclude, you can enter or select the 4xx, 5xx status codes. The entered status code is excluded upon parsing the 4xx, 5xx status codes from the logs.
 
-#### Setting item{#log-parser-comp-4xx5xx}
+#### Setting item {#log-parser-comp-4xx5xx}
 
 | Set value               | Description                                                                                                                                                                                                                                                | ETC      |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -437,7 +437,7 @@ If the incoming log is `{"msg":"message","status":404}` and its status is parsed
 
 #### Data Search
 
-If all parsers have been registered, go to **_Flex Board_** and then create the **_log 4XX, 5XX count_** widget.
+If all parsers have been registered, go to <Cmdname sid="side_integratedFlexboard" className="uitext" /> and then create the <Cmdname sid="log" className="uitext" /> <Cmdname sid="log_4xx5xx_count" className="uitext" /> widget.
 
 <ImgLang img='log-flexboard-widget.png' desc='Log flex board widget - 4xx5xx'/>
 
@@ -451,13 +451,13 @@ If the widget is created, you can see the following data.
 
 - **_recently_**: Final value of the data during the query period
 
-### Registration of status codes to exclude by the status code success rate parser{#log-pattern-status}
+### Registration of status codes to exclude by the status code success rate parser {#log-pattern-status}
 
 <ImgLang img='log-2nd-status.png' desc='Status Code Success Rate Parser'/>
 
-The **_status code success rate parser_** can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. For the status codes to exclude, you can enter or select the 2xx, 3xx status codes. The entered status code is excluded upon parsing the 2xx, 3xx status codes from the logs. 
+The <Cmdname sid="status_success_rate" className="uitext" /> can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. For the status codes to exclude, you can enter or select the 2xx, 3xx status codes. The entered status code is excluded upon parsing the 2xx, 3xx status codes from the logs.
 
-#### Setting item{#log-parser-comp-status}
+#### Setting item {#log-parser-comp-status}
 
 | Set value               | Description                                                                                                                                                                                                                                                      | ETC      |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -467,7 +467,7 @@ The **_status code success rate parser_** can be used when the status has alread
 
 #### Data Search
 
-If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
+If all parsers have been registered, go to <Cmdname sid="side_integratedFlexboard" className="uitext" /> and then create the log request success rate widget.  
 
 <ImgLang img='log-flexboard-widget-scs.png' desc='Flex Board - Log Request Success Rate Widget Template'/>
 
@@ -477,9 +477,9 @@ If the widget is created, you can see the following data.
 
 The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
 
-## Fast Index Setting{#log-setting-index}
+## Fast Index Setting {#log-setting-index}
 
-Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
+Select the <Cmdname sid="fast_index_setting" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
 
 | Set value                 | Required       | Description                                                     |
 | ------------------------- | -------------- | --------------------------------------------------------------- |
@@ -493,7 +493,7 @@ Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collect
 
 You can save common parser settings and <Cmdname sid="fast_index_setting" /> content in JSON file format, and apply them by importing a JSON file from other projects. You can reduce the hassle of creating the settings repeatedly for each project.
 
-1. Add the parser settings and <Cmdname sid="fast_index_setting" /> to a project.
+1. Add parser settings and <Cmdname sid="fast_index_setting" /> to one project.
 
 2. Select **_JSON_** ![Export icon](/img/ico-export.svg) on the upper right of each configuration tab.
 
@@ -517,9 +517,9 @@ After importing the JSON configuration file, you cannot save the imported settin
 
 :::
 
-## Log long-term archive statistics{#log-long-term-archive}
+## Log long-term archive statistics {#log-long-term-archive}
 
-Select the **_Log long-term archive statistics_** tab at the top of **_Log Setting_**. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
+Select the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
 
 {/* 
 
@@ -547,17 +547,17 @@ Select the **_Log long-term archive statistics_** tab at the top of **_Log Setti
 
 */}
 
-### Adding the log long-term archive statistics{#log-long-term-archive-add}
+### Adding the log long-term archive statistics {#log-long-term-archive-add}
 
 <ImgLang img='log-long-term-archive.png' desc='Log long-term archive statistics'/>
 
-If you select **_+ Add_** under the **_Log long-term archive statistics_** tab, the **_Log long-term archive statistics_** window appears. You can add rules by using **_+ Add_** or delete the created rules by using the **_-_** icon.
+If you select ***+*** <Cmdname sid="adding" className="uitext" /> under the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> tab, the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears. You can add rules by using ***+*** <Cmdname sid="adding" className="uitext" /> or delete the created rules by using the ***-*** icon.
 
-#### Setting item{#log-long-term-archive-comp}
+#### Setting item {#log-long-term-archive-comp}
 
 | Field                        | Description                                                                                                                                         |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Category                     | Category to apply the rule to                                                                                                                       |
+| Category                     | Category to apply the rule to.                                                                                                                      |
 | Statistic Key                | The same key cannot be set twice to save when a log that meets the rule is generated.                                                               |
 | Log detection condition      | Condition for generating log statistical data. Statistical data is generated based on how many logs that meet this condition are collected.         |
 | Exclude                      | If checked, statistical data is generated with values that do not correspond to the entered conditions.                                             |
@@ -570,16 +570,16 @@ If a setting is added as follows, statistical data is generated with a key value
 
 <ImgLang img='log-long-term-totalcount.png' desc='Log long-term archive statistics example'/>
 
-### Data Search{#log-widget-statistics}
+### Data Search {#log-widget-statistics}
 
-1. Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
+1. Create a widget by searching <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> in <Cmdname sid="widget_template" className="uitext" /> of <Cmdname sid="side_integratedFlexboard" className="uitext" />.
 
    <ImgLang img='log-flexboard-widget-long-term.png' desc='Log long-term archive statistics widget template'/>
 
-2. Enter the **_category_** and **_key_** to view and then select **_Apply_**.
+2. Enter the <Cmdname sid="category" className="uitext" /> and <Cmdname sid="ITM06438" className="uitext" /> to view and then select <Cmdname sid="apply" className="uitext" />.
 
    <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='Log long-term archive statistics widget category and key selection'/>
 
-3. With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.
+3. With the added settings, you can check the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> data as follows.
 
    <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='Log long-term archive statistics chart widget'/>

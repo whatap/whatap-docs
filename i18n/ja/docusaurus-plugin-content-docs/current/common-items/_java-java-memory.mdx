@@ -1,0 +1,36 @@
+## java_memory {#javamemory}
+
+アプリケーションの実行中にJVMのメモリ使用状態に対するメトリクスを収集したデータのカテゴリです。 
+
+- 収集間隔：5秒
+- 統計データ：5分、1時間
+
+### Tags {#javamemory-tags}
+
+<div className="c3-30-60-10">
+
+| タグ名         | 説明                                  | 備考    |
+| ----------- | ----------------------------------- | ----- |
+| `host_ip`   | ホストのIPアドレス                          | ユニーク値 |
+| `okindName` | `whatap.okind`に分類されたグループ名           | -     |
+| `oname`     | エージェント名                             | ユニーク値 |
+| `onodeName` | `whatap.onode`に分類されたグループ名           | -     |
+| `pid`       | 特定プロセスの固有識別子(ID) | -     |
+
+</div>
+
+### Fields {#javamemory-fields}
+
+<div className="c4-20-10-50-10">
+
+| フィールド名                           | 単位    | 説明                              | 備考 |
+| -------------------------------- | ----- | ------------------------------- | -- |
+| `nonheap_committed`              | バイト   | JVMで使用するために保証された非ヒープメモリサイズ      | -  |
+| `nonheap_init`                   | バイト   | JVMの起動時、OSからリクエストする初期非ヒープメモリサイズ | -  |
+| `nonheap_max`                    | バイト   | メモリ管理に使用できる最大非ヒープメモリサイズ         | -  |
+| `nonheap_used`                   | バイト   | 現在使用中の非ヒープメモリの量                 | -  |
+| `objectPendingFinalizationCount` | count | GC中にfinalizeの実行を待機しているオブジェクトの数  | -  |
+
+</div>
+
+{/* 수집 간격, 통계 데이터 시간 및 objectPendingFinalizationCount 정확한 정의, 다른 필드 검수 필요 */}

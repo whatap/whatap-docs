@@ -1,8 +1,8 @@
-WhaTap provides the database log monitoring service. You can collect logs from server-installed databases and AWS RDS that is a cloud service. Through this, you can check the scattered logs in the database at a glance in **_Live Tail_** and **_Log Trend_** for log monitoring.
+WhaTap provides the database log monitoring service. You can collect logs from server-installed databases and AWS RDS that is a cloud service. Through this, you can check the scattered logs in the database at a glance in <Cmdname sid="side_logTail" className="uitext" /> and <Cmdname sid="side_logExplorer" className="uitext" /> for log monitoring.
 
 :::tip
 
-After log monitoring has been applied, installed DB is displayed as `#DB`, AWS RDS as `#RDS_LOG`, and `#RDS_EVENT` in **_Category_** of each menu and the log list.
+After log monitoring has been applied, installed DB is displayed as `#DB`, AWS RDS as `#RDS_LOG`, and `#RDS_EVENT` in <Cmdname sid="category" className="uitext" /> of each menu and the log list.
 
 <ImgLang img='db-log-category.png' desc='Category' className='width-200' />
 
@@ -45,7 +45,7 @@ Before application, install the XOS agent and then proceed with agent configurat
 
 ![AWS RDS Log](/img/aws-rds-log-diagram.png)
 
-AWS provides various information for RDS monitoring. To check information, directly access the AWS console. However, WhaTap's **AWS RDS Log** provides logs and events from RDS in **_Log_** under Database Monitoring.
+AWS provides various information for RDS monitoring. To check information, directly access the AWS console. However, WhaTap's **AWS RDS Log** provides logs and events from RDS in <Cmdname sid="side_log" className="uitext" /> under Database Monitoring.
 
 WhaTap's **AWS RDS Log** can be installed through **AWS CloudFormation**. For more information about **AWS CloudFormation**, see [the following link](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
@@ -108,13 +108,13 @@ To install WhaTap's **AWS RDS Log** via **AWS CloudFormation**, first check the 
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-   - **Host**: Address of the WhaTap collection server. It can be viewed in **_Management_** > **_Agent installation_** under the WhaTap project. e.g. 13.124.11.223 / 13.209.172.35
+   - **Host**: Address of the WhaTap collection server. It can be viewed in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> under the WhaTap project. e.g. 13.124.11.223 / 13.209.172.35
 
    - **MemorySize**: WhaTapRDSLog's memory size. Enter a value between 128 MB and 10,240 MB.
 
-   - **Pcode**: Project code of a WhaTap project. Check the **_project code_** in **_Management_** > **_Project management_**.
+   - **Pcode**: Project code of a WhaTap project. Check the <Cmdname sid="pcode" className="uitext" /> in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />.
 
-   - **ProjectAccessKey**: Access key of a WhaTap project. Check the **_project access key_** in **_Management_** > **_Project management_**.
+   - **ProjectAccessKey**: Access key of a WhaTap project. Check the <Cmdname sid="project_access_key" className="uitext" /> in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />.
 
    - **TimeOut**: Maximum time in which the installed WhatTapRDSLog is maintained while running.
 
@@ -194,6 +194,6 @@ Check the resources installed through **AWS CloudFormation**.
 
 ## Starting the log monitoring
 
-After configuring all settings, go to **_Log_** > **_Log Settings_** to activate the log monitoring.
+After configuring all settings, go to <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" /> to activate the log monitoring.
 
 <ImgLang img='log-start-db.png' desc='Start Log Monitoring'/>

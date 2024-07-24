@@ -1,0 +1,254 @@
+---
+id: quick-start
+title: Quick installation and troubleshooting
+description: The following provides a guide so you can quickly use the WhaTap .NET monitoring service features.
+toc_max_heading_level: 2
+tags:
+  - Application
+  - .NET
+  - Agent Installation
+  - Troubleshooting
+  - Quick Guide
+---
+
+## During installation of agent
+
+For agent installation, see [the following](install-agent) from project creation to monitoring activation. After installation of the agent, **IIS** **restarts**.
+
+### In case of use of Windows Server 2008 or .NET version lower than 4.6.1
+
+For the WhaTap .NET agent, it is recommended to use Windows Server 2012 or .NET Framework 4.6.1 or later. If you are using a lower version, use the installer from the following link. 
+
+- [Installation program](https://repo.whatap.io/windows/whatap_dotnet_450.exe)
+
+## After installation of agent
+
+:::note 
+
+**Delivery of errors and logs**
+
+- When an error occurs, send us captured images of the error or the corresponding text. 
+
+- Send us the agent's log file. The log file can be found in the following path. If there is no corresponding error, the folder may not exist. 
+
+  - *C:\\Program Files\\WhaTap .NET\\logs*
+
+  - *C:\\ProgramData\\WhaTap*
+
+:::
+
+### In case of no collection of data
+
+<ImgLang img='dotnet-trst01.png' desc='no monitoring data collection' />
+
+If all data is not collected properly in <Cmdname sid="TTL07975" className="uitext" /> as shown in the example, check the following. 
+
+- Make sure the access key and collection server information are entered correctly. 
+
+- Check the firewall configuration of the server. The outbound **6600** port must be open.
+
+### In case of no collection of hitmap data
+
+<ImgLang img='dotnet-trst02.png' desc='no hitmap data collection' />
+
+If the hitmaps are not collected properly as shown in the example, check whether the target application is in the supported environment. For the supported environment, see [the following](https://docs.whatap.io/dotnet/supported-spec). 
+
+### In case it is in the supported environment or difficult to check the environment
+
+- Send us the *web.config* file of the target application. 
+
+- Send us the project file (*\*.csproj*) of the target application.
+
+- You can use AI to check if the environment supports the .NET agent through the following link.
+
+  - [.NET agent support environment analysis](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/analysis.html)
+
+### ETC
+
+If the error is not resolved using the methods above, send us the detailed debugging information. The debugging data collection procedure is as follows: 
+
+1. Download and install the agent for debugging from the following link.
+
+   - [Agent for debugging](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/whatap_dotnet_debug.exe)
+
+2. Download and run the monitoring program (*UdpMonitor.exe*) from the following link. 
+
+   - [Monitoring program](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/UdpMonitor.exe)
+
+3. Generate the transaction. 
+
+4. If you generated sufficient transactions, end *UdpMonitor.exe*.
+
+5. *UdpMonitor.txt* is created in the same folder as *UdpMonitor.exe*. 
+
+6. Send the *UdpMonitor.txt* file to the person in charge. 
+
+7. If debugging is completed, remove the agent for debugging.
+
+## Monitoring the WCF and officially unsupported libraries
+
+To monitor the libraries that are not officially supported by the WhaTap .NET agent, such as Windows Communication Foundation (WCF), see the following instructions. 
+
+:::note 
+
+Extensive settings may cause excessive traffic. 
+
+:::
+
+### Configuration options
+
+- **webservice_method_enabled** <span class='type'>Boolean</span> 
+
+  Default `false`
+
+  If the value is set to `true`, the web services can be traced. 
+
+  :::note 
+
+  After changing the option, you must restart IIS for the changes to take effect. 
+
+  :::
+
+- **webservice_method_prefix** <span class='type'>String</span>
+
+  Enter the namespace and class name where the method to trace has been defined in the value. 
+
+  - When you enter the name of the class to which the method belongs, all public methods within the class become the targets to trace. 
+
+  - The methods that meet the conditions are not using the web service, they become the targets to trace. This option is designed for the WCF and web service monitoring but can be used for various purposes. 
+
+  :::note 
+
+  After changing the option, you must restart IIS for the changes to take effect. 
+
+  :::
+
+- **webservice_method_timeout** <span class='type'>Milliseconds</span>
+
+  Default `5000`
+
+  If the monitored method is not completed within a specific time, a timeout is automatically set. The default value is 5 seconds (`5000`ms).
+
+  {/* If exception handling is not performed in the method to be monitored, it is impossible to know the time when the transaction will end. For such cases, the timeout of web service monitoring occurs by default after 5 seconds.  */}
+
+### Usage examples
+
+#### whatap.conf modification
+
+```ini title='whatap.conf' {11,12}
+license= ## access key
+whatap.server.host=15.165.146.117
+whatap.server.port=6600
+app_process_name=w3wp.exe
+tag_counter_enabled=true
+perfcounter.enabled=true
+app_name= ## application name
+OID= ## agent ID
+
+webservice_method_enabled=true
+webservice_method_prefix=Whatap.Service.Controller, Whatap.DotNet.Examples.Service1
+webservice_method_timeout=10000
+```
+
+- Because you specified the call path of the namespace-included method to be traced with the `webservice_method_prefix` option, the start and end of the function is treated as transactions if one of the following occurs:
+
+  - `Whatap.Service.Controller`
+
+  - `Whatap.DotNet.Examples.Service1`
+
+- Because `webservice_method_timeout` has been set to 10000 ms, transactions that take more than 10 seconds are automatically terminated. 
+
+:::note 
+
+The settings can be changed through the <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" /> menu as follows: 
+
+<ImgLang img='dotnet-trst03.png' desc='Agent CONFIG.' />
+
+:::
+
+#### WCF source code
+
+The following is an example of WCF source code to be monitored. 
+
+```c {3-13}
+namespace Whatap.DotNet.Examples
+{
+    public class Service1 : IService1
+    {
+        public string GetData(int value)
+        {
+            ...
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            ...
+        }
+
+        private string getFromDB()
+        {
+            ...
+        }
+
+        private string getFromHttp()
+        {
+            ...
+        }
+    }
+
+    public class Service2 : IService1
+    {
+        ...
+    }
+
+    public class Service3 : IService1
+    {
+        public string IwantToSeeOnlyThis(int value)
+        {
+            ...
+        }
+    }
+}
+```
+
+- **GetData** 
+
+  The `GetData()` method belongs to the `Whatap.DotNet.Examples.Service1` class. Because it is a public method, it becomes the target to be monitored. This method is processed as a transaction because it is included in the value specified in the `webservice_method_prefix` option of the configuration file. The call path for the method is as follows: 
+
+  > `Whatap.DotNet.Examples.Service1.GetData`
+
+- **GetDataUsingDataContract**
+
+  The `GetDataUsingDataContract()` method is to be monitored because it is a public method. The call path for the method is as follows: 
+
+  > `Whatap.DotNet.Examples.Service1.GetDataUsingDataContract`
+
+:::note 
+
+- The `getFromDB()` and `getFromHttp()` methods are excluded from monitoring because they are private methods. 
+
+- If you add `Whatap.DotNet.Examples.Service3` to the `webservice_method_prefix` option, the public method `IwantToSeeOnlyThis()` may become a monitoring target.
+
+:::
+
+### In case it is difficult to find the namespace and class name
+
+If you have difficulty finding the namespace in which your WCF server's methods have been defined, you can use the following method to find the namespace and class name. 
+
+1. Download the *GetNamesapces.exe* file from the following link. 
+
+   - [GetNamesapces.exe](https://repo.whatap.io/windows/GetNamesapces.exe)
+
+2. Run the *GetNamesapces.exe* file by sending the web application's folder path as a parameter as follows. 
+
+   ```
+   C:...\> GetNamesapces.exe C:\inetpub
+   ```
+
+3. After execution is completed, all *dll* files in the folder and its subfolders are scanned and the list of namespaces and class names is output. 
+
+:::note 
+
+If it is difficult to apply the results, run *GetNamesapces.exe* and send the *GetNamesapces.txt* file created in the same folder to the person in charge. 
+
+:::

@@ -49,43 +49,35 @@ python setup.py install
 
 :::
 
-:::note
+### エージェント構成ファイル
 
-エージェントファイル構成の詳細については、Pythonエージェント構成ファイルを参照してください。
+Pythonエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、WhaTap収集サーバーに転送するトレーサーとトレーサーがデータを送信できるように支援する要素で構成されています。エージェントファイルの構成については、以下を参照してください。
 
-:::
+<Filetree name="whatap">
 
-<details>
+<FiletreeItem name="agent" type="folder">アプリケーションサーバーの様々な性能指標を収集して、サーバーに送信するモニタリングエージェントファイルで構成されたディレクトリです。</FiletreeItem>
 
-<summary>Pythonエージェント構成ファイル</summary>
+<FiletreeItem name="bootstrap" type="folder">Pythonエージェントの様々なデータを収集する役割のファイルで構成されたディレクトリです。Pythonエージェントの起動時に実行されます。</FiletreeItem>
 
-Pythonエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、タブ収集サーバーに伝達するトレーサーと、トレーサーがデータを送信できるよう支援する要素で構成されています。
+<FiletreeItem name="conf / control" type="folder">Pythonエージェントの設定と制御を担当するファイルで構成されたディレクトリです。</FiletreeItem>
 
-- _whatap_
+<FiletreeItem name="net / pack" type="folder">UDP通信に関連するファイルで構成されたディレクトリです。収集したデータをサーバーに送信する役割を果たします。</FiletreeItem>
 
-  - _agent_: アプリケーションサーバーの様々な性能指標を収集して、サーバーに送信するモニタリングエージェントファイルで構成されたディレクトリです。
+<FiletreeItem name="trace" type="folder">アプリケーションごとに各種のトランザクション情報を収集するファイルで構成されたディレクトリです。</FiletreeItem>
 
-  - _bootstrap_: Pythonエージェントの様々なデータを収集する役割のファイルで構成されたディレクトリです。Pythonエージェントの起動時に実行されます。
+<FiletreeItem name="paramkey.txt" type="file">
+  
+  追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。セキュリティキーをファイルに保存し、実際に収集されたデータをブラウザで確認したい時、ファイルに保存しておいたセキュリティキーを入力することで照会できます。ファイルの内容を直接変更して、セキュリティ キーを修正できます。関連オプションの詳細については、次の文書を参照してください。
 
-  - _conf_ / _control_: Pythonエージェントの設定と制御を担当するファイルで構成されたディレクトリです。
+  [profile_http_parameter_enabled](agent-transaction#profile_http_parameter)
 
-  - _net_ / _pack_: UDP通信に関連するファイルで構成されたディレクトリです。収集したデータをサーバーに送信する役割を果たします。
+  [profile_sql_param_enabled](agent-dbsql#profile-sql-param)
 
-  - _trace_: アプリケーションごとに各種のトランザクション情報を収集するファイルで構成されたディレクトリです。
+</FiletreeItem>
 
-  - *whatap.conf*：エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて*whatap.conf*ファイルで設定できます。
+<FiletreeItem name="setup.py" type="file">whatapディレクトリパッケージングのための定義ファイルです。</FiletreeItem>
 
-  - *paramkey.txt*：追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するときに使用します。 
-
-    セキュリティキーをファイルに保存し、実際に収集されたデータをブラウザで確認したい時、ファイルに保存しておいたセキュリティキーを入力することで照会できます。ファイルの内容を直接変更して、セキュリティ キーを修正できます。関連オプションの詳細については、次の文書を参照してください。
-
-    - [profile_http_parameter_enabled](agent-transaction#profile_http_parameter)
-
-    - [profile_sql_param_enabled](agent-dbsql#profile-sql-param)
-
-- *setup.py*: whatapディレクトリパッケージングのための定義ファイルです。
-
-</details>
+</Filetree>
 
 ### Docker
 

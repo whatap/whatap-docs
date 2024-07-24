@@ -320,6 +320,44 @@
 
 </InDoc>
 
+<InDoc product="oracle-pro">
+
+<ImgLang img='event-config-v2-db02.png' desc='イベントリスト' />
+
+提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
+
+- **_Active Sessions_**
+
+  カテゴリ：[`db_oracle_dma_counter`](metrics-data-list)
+
+  クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_CPU_**
+
+  カテゴリ：[`db_oracle_dma_counter`](metrics-data-list)
+
+  CPU使用率(`cpu`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Lock Wait Sessions_**
+
+  カテゴリ：[`db_oracle_dma_counter`](metrics-data-list)
+
+  現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Memory_**
+
+  カテゴリ：[`db_oracle_dma_counter`](metrics-data-list)
+
+  メモリ使用率(`mem(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+  :::note
+
+  このテンプレートは、XOSエージェントを設定して実行した場合にのみ使用できます。 XOSエージェント設定の詳細については、[次の文書](agent-settings)を参照してください。
+
+  :::
+
+</InDoc>
+
 <InDoc product="cubrid">
 
 <ImgLang img='event-config-v2-db02.png' desc='イベントリスト' />

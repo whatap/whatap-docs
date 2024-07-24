@@ -2,7 +2,17 @@
 
 <Cmdname sid="active_sessions" className="uitext" />タブでセッション項目を選択すると<Cmdname sid="session_detail" className="uitext" />ウィンドウが表示されます。 選択したセッションについての詳細を確認できます。
 
+<InDoc product="postgresql">
+
 <ImgLang img='db-session-details-info.png' desc='セッション詳細' />
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+<ImgLang img='db-session-details-info-oracle-pro.png' desc='セッション詳細' />
+
+</InDoc>
 
 - セッションに関する情報は、既定値でリアルタイムで照会されています。 タイムセレクターの![静止アイコン](/img/ico-pause.svg)ボタンを選択すると、リアルタイム照会を中止し、中止した時間ベースのデータを確認することができます。 リアルタイム照会を中止した状態でデータを更新するには、![更新アイコン](/img/ico-refresh.svg)ボタンを選択してください。
 
@@ -14,7 +24,7 @@
 
   :::
 
-<InDoc product="postgresql">
+<InDoc product="postgresql,oracle-pro">
 
 - <Cmdname sid="TTL06721" className="uitext" />：選択したセッション履歴が確認できる<Cmdname sid="side_sessionHistory" className="uitext" />メニューに移動できます。
 
@@ -26,10 +36,22 @@
 
 </InDoc>
 
-- **_Session Info_**：選択したセッションについての詳細を確認できます。
+<InDoc product="oracle-pro">
 
-- **_Wait Info_**：当該バックエンドプロセスが現在待機中の場合、待機イベント名(`wait_event`)とイベントタイプ(`wait_event_type`)情報を確認することができます。
+- **_Session Stat_**: 選択したセッションの様々な性能メトリクスと統計情報を提供します。 セッションで実行された作業のタイプと回数、リソース使用量などが含まれます。
+
+- **_Delta_** / **_Sigma_**: 選択したセッションの変化率と統計的分析情報を提供します。 セッションのアクティビティに対する変化量を確認できます。
+
+</InDoc>
+
+- **_Session Info_**: 選択したセッションの基本情報とステータスを含む詳細を確認できます。
+
+- **_Wait Info_**: 選択したセッションの待機イベントと待ち時間の情報を提供します。 特定の作業を実行するために、データベースシステムで待機する時に発生する待機イベントに関する情報も確認できます。
 
 - **_SQL Text_** / **_Plan_**：選択したセッションのSQLクエリ文とPlan情報を確認することができます。 詳細については[次の文書](#query-details)を参照してください。
 
+<InDoc product="postgresql">
+
 - **_Process Info_**: 選択したセッションのプロセス情報を確認できます。
+
+</InDoc>

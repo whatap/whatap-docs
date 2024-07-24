@@ -1,0 +1,31 @@
+---
+id: k8s-1_7_7
+title: Kubernetes Agent v1.7.7
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_7_6
+displayed_sidebar: releaseSidebar
+---
+
+July 11, 2024
+
+- <Status>Feature</Status> Added the integration method for Java applications and Kubernetes agents.
+
+  - Added the container ID syncing feature by adding `WHATAP_JAVA_AGENT_PATH` value to the Java agent container environment variables.
+
+  - It can view the proc information using the agent process ID, and extract WhaTap Java Home (`$WHATAP_HOME`) from the application container's process name by using the proc information.
+
+  - If WhaTap Java Home (`$WHATAP_HOME`) is not found in the above procedure, extract WhaTap Java Home from the agent image by using the runtimeAPI.
+
+  - It can check the version and format of the agent and perform the containerID syncing feature with a valid version only when the following criteria are met.
+
+    1. If the file name is *whatap.agent-`X.Y.Z`.jar* and the version is greater than or equal to 2.2.33 (`X.Y.Z` >= 2.2.33)
+
+    2. If the file name is *whatap.agent.kube.jar*
+
+- <Status>Changed</Status> Changed the event collection method: collects data only for the events generated after agent startup (`kube_event`).
+
+:::info
+
+Agent download: [kube_mon_1.7.7.tar](https://repo.whatap.io/docker/kube_mon_1.7.7.tar)
+
+:::

@@ -2,7 +2,17 @@
 
 If you select a session in the <Cmdname sid="active_sessions" className="uitext" /> tab, the <Cmdname sid="session_detail" className="uitext" /> window appears. You can see the information details about the selected session.
 
+<InDoc product="postgresql">
+
 <ImgLang img='db-session-details-info.png' desc='Session detail' />
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+<ImgLang img='db-session-details-info-oracle-pro.png' desc='Session detail' />
+
+</InDoc>
 
 - The session information is viewed in real time by default. If you select ![Pause icon](/img/ico-pause.svg) in the time selector, you can stop a real-time view and see the data based on the paused time. To refresh data while pausing a real-time view, select ![Refresh icon](/img/ico-refresh.svg).
 
@@ -14,7 +24,7 @@ If you select a session in the <Cmdname sid="active_sessions" className="uitext"
 
   :::
 
-<InDoc product="postgresql">
+<InDoc product="postgresql,oracle-pro">
 
 - <Cmdname sid="TTL06721" className="uitext" />: You can go to the <Cmdname sid="side_sessionHistory" className="uitext" /> menu to see the records of the selected session.
 
@@ -26,10 +36,22 @@ If you select a session in the <Cmdname sid="active_sessions" className="uitext"
 
 </InDoc>
 
-- **_Session Info_**: You can see the information details of the selected session.
+<InDoc product="oracle-pro">
 
-- **_Wait Info_**: If the backend process is waiting, you can see the wait event name (`wait_event`) and wait event type (`wait_event_type`).
+- **_Session Stat_**: It provides various performance metrics and statistical information for the selected session. It includes the type and number of tasks performed in the session, resource usage, and more.
+
+- **_Delta_** / **_Sigma_**: The change rate and statistical analysis information for the selected session appear. You can check the amount of change in session activities.
+
+</InDoc>
+
+- **_Session Info_**: You can see the basic information of the selected session and the information details including the status.
+
+- **_Wait Info_**: The waiting event and waiting time of the selected session are provided. You can also see information about the waiting events that occur when the database system is waiting to execute a specific task.
 
 - **_SQL Text_** / **_Plan_**: You can see the SQL query statements and plans of the selected session. For more information, see [the following](#query-details).
 
+<InDoc product="postgresql">
+
 - **_Process Info_**: You can see the process information details of the selected session.
+
+</InDoc>

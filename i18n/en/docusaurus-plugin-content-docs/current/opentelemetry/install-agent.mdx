@@ -2,11 +2,15 @@
 id: install-agent
 title: Agent Installation
 description: It guides you how to install the OpenTelemetry agent.
-tags:
-  - OpenTelemetry
-  - Extensions
-  - Install
 ---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import BetaNoti from "./_otl-beta-notice.mdx"
+
+<BetaNoti />
 
 It guides you how to install the OpenTelemetry agent. 
 
@@ -92,8 +96,8 @@ To configure the agent, the WhaTap project's access key and collection server IP
 Set the access key and collection server IP address in the agent configuration (_whatap.conf_) file.
 
 ```bash
-echo "accesskey={액세스 키}" >> /usr/whatap/otel/whatap.conf 
-echo "whatap.server.host={수집 서버 IP 주소}" >> /usr/whatap/otel/whatap.conf 
+echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
+echo "whatap.server.host={COLLECTOR_SERVER_IP_ADDRESS}" >> /usr/whatap/otel/whatap.conf 
 ```
 
 ### Configuring with environment variables
@@ -101,9 +105,9 @@ echo "whatap.server.host={수집 서버 IP 주소}" >> /usr/whatap/otel/whatap.c
 You can set the access key and collection server IP address as environment variables.
 
 ```ini
-WHATAP_ACCESSKEY={액세스 키} 
-WHATAP_SERVER_HOST={수집 서버 IP 주소} 
-WHATAP_OTEL_GRPC_SERVER_PORT={Grpc 서버 리스닝 포트} 
+WHATAP_ACCESSKEY={ACCESS_KEY}
+WHATAP_SERVER_HOST={COLLECTOR_SERVER_IP_ADDRESS}
+WHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}
 ```
 
 :::note

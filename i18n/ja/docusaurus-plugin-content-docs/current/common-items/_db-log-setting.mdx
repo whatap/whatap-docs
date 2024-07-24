@@ -1,8 +1,8 @@
-WhaTapは、データベースのログモニタリングを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である**_ライブテール_**、**_ログトレンド_**メニューからデータベースの散在したログをひと目で確認することができます。
+WhaTapは、データベースのログモニタリングを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />メニューからデータベースの散在したログをひと目で確認することができます。
 
 :::tip
 
-ログモニタリングを適用した後、各メニューの**_カテゴリ_**項目とログ一覧からインストール型DBは、 `#DB`、AWS RDSは`#RDS_LOG`、`#RDS_EVENT`と表示されます。
+ログモニタリングを適用した後、各メニューの<Cmdname sid="category" className="uitext" />項目とログ一覧からインストール型DBは、 `#DB`、AWS RDSは`#RDS_LOG`、`#RDS_EVENT`と表示されます。
 
 <ImgLang img='db-log-category.png' desc='카테고리' className='width-200' />
 
@@ -45,7 +45,7 @@ file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
 
 ![AWS RDS Log](/img/aws-rds-log-diagram.png)
 
-AWSではRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの**_ログ_**メニューからRDSのログとイベントを集約して表示します。
+AWSではRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの<Cmdname sid="side_log" className="uitext" />メニューからRDSのログとイベントを集約して表示します。
 
 WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストールできます。 **AWS CloudFormation**についての詳細は[次のリンク](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html)を参照してください。
 
@@ -108,13 +108,13 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの**_管理_**>**_エージェントインストール_**メニューで確認できます。 例）13.124.11.223/13.209.172.35
+   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューで確認できます。 例）13.124.11.223/13.209.172.35
 
    - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB ~ 10,240MB間の値を入力してください。
 
-   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。**管理**>**プロジェクト管理\***メニューで**_プロジェクトコード_**項目を確認してください。
+   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="pcode" className="uitext" />項目を確認してください。
 
-   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。**_管理_**>**_プロジェクト管理_**メニューで**_プロジェクトコード_**項目を確認してください。
+   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="project_access_key" className="uitext" />項目を確認してください。
 
    - **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
 
@@ -194,6 +194,6 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ## ログモニタリングを開始する
 
-すべての設定を完了した後、**_ログ_**>**_ログ設定_**メニューにアクセスし、ログモニタリングを活性化してください。
+すべての設定を完了した後、<Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />メニューにアクセスし、ログモニタリングを活性化してください。
 
 <ImgLang img='log-start-db.png' desc='ログモニタリングの開始'/>

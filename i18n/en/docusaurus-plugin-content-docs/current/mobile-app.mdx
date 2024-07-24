@@ -60,7 +60,7 @@ If you have no account, follow the instructions in [the following](account/accou
 
 ## Guidance to the initial screen {#4900cf48bac5e30814f09512c18875fa}
 
-If you have logged in or launched the app for the first time, you can see the list of projects you belong to.
+Once you have completed logging in or running the app, you can check the <UI>Home</UI> screen. The list of projects that have set <Appname sid="favorites" className="uitext" />, <Appname sid="announcement" className="uitext" />, [Whatap's blog](https://www.whatap.io /bbs/board.php?bo_table=blog) posts can be checked.
 
 <ImgLang img='mobile/mobile-app-home.png' desc='Initial screen' className="mobile" />
 
@@ -68,55 +68,21 @@ If you have logged in or launched the app for the first time, you can see the li
 
 The mobile app consists of the following main menus: You can access the main functions of each menu by tapping at the bottom of the screen.
 
-<ImgLang img='mobile/mobile-app-main-tab.png' desc='Main menus' className="mobile" />
+![Menus](/img/mobile/mobile-app-main-tab.png)
 
-- <Appname sid="projects" className="uitext" />: You can see the list of projects that user belongs to or are controlled. You can see detailed information of each project and its major metrics. You can also filter the desired projects through search.
+- <UI>Project</UI>: You can see the list of projects that user belongs to or are controlled. You can see detailed information of each project and its major metrics. You can also filter the desired projects through search.
 
-- <Appname sid="alerts" className="uitext" />: You can see notifications for the events set in individual projects starting with the most recent data.
+- <UI>Event</UI>: You can see notifications for the events set in individual projects starting with the most recent data.
 
-- <Appname sid="account" className="uitext" />: You can see user accounts, change the language and notification reception, and set the OTP authentication feature.
+- <UI>Account</UI>: You can see user accounts, change the language and notification reception, and set the OTP authentication feature.
 
 ### Checking the notices {#f315b6390986f7ec1bb01489e982630e}
 
-To see the notices of the WhaTap monitoring service, tap ![Notification icon](/img/mobile/mobile-app-notice.png) in the upper right of the screen.
-
-:::note
-
-To return to the previous screen, tap ![Close icon](/img/ico-close.svg) in the upper right of the screen.
-
-:::
-
-### Checking by product type {#8e74337624c2b665a7463e968b626f4b}
-
-You can see the projects by product type. 
-
-1. On the upper right of the screen, tap ![Category icon](/img/mobile/mobile-app-category.png).
-
-2. If the product list appears, select a desired one.
-
-   <ImgLang img='mobile/mobile-app-category-list.png' desc='List of categories' className='mobile-l' />
-
-Only the projects corresponding to the selected product appear in the list.
-
-### Checking the project status {#e97177b5162ac343349846ac03e6212f}
-
-You can see the list of all projects categorized by product. On the upper right of the initial screen, tap ![Icon](/img/mobile/mobile-app-status-icon.png). You can see the list of projects for each product. If you tap <Appname sid="learn_more" className="uitext" />, the product introduction page appears.
-
-<ImgLang img='mobile/mobile-app-project-all-status.png' desc='Project status' className='mobile' />
-
-### Searching for the project {#b8f85764d904d2401f20ccf54ad7cc31}
-
-If it is difficult to find a project because there are a lot of projects, you can find a desired project through a search. Enter the project name or project code in the <Appname sid="search" className="uitext" /> field, and then tap **Complete** on the keyboard.
-
-### Checking by organization {#392a97edc522f048880f26ab55a29633}
-
-To check the project list set by organization, tap <Appname sid="none_org" className="uitext" /> in <Appname sid="org" className="uitext" />, and then tap a desired organization. Only the projects corresponding to the selected organization appear in the list.
-
-<ImgLang img='mobile/mobile-app-org.png' desc='Select organization' className='mobile' />
+To check the notices from the WhaTap monitoring service, tap <UI>Home</UI> at the bottom of the screen. You can see key information related to the service updates.
 
 ## Projects {#fb2eece6f8746f39ede1f98c58d2730c}
 
-At the bottom of the screen, tap <Appname sid="projects" className="uitext" />. It provides the following key features.
+At the bottom of the screen, tap <UI>Project</UI>. It provides the following key features.
 
 - You can see the list of projects that user belongs to or are controlled.
 
@@ -132,13 +98,31 @@ The product types that can be found in the project list are **Application**, **S
 
 :::
 
+### Checking by product type {#8e74337624c2b665a7463e968b626f4b}
+
+You can see the projects by product type. Select a desired product type under the <Appname sid="search" className="uitext" /> field on the <UI>Project</UI> screen. Only the projects corresponding to the selected product type appear in the list.
+
+<ImgLang img='mobile/mobile-app-category-list.png' desc='Category list' className='mobile' />
+
+### Searching for the project {#b8f85764d904d2401f20ccf54ad7cc31}
+
+If it is difficult to find a project because there are a lot of projects, you can find a desired project through a search. Enter the project name or project code in the <Appname sid="search" className="uitext" /> field, and then tap **Complete** on the keyboard.
+
+<ImgLang img="mobile/mobile-app-search-result.png" desc="Search" className="mobile" />
+
+To reset your searches, tap <Appname sid="reset_the_filter" className="uitext" />.
+
 ### Checking the project list {#982e80dcfa91d38e4dfd7d2507a8b6be}
 
 A project appears in the card view format as shown below, and it consists of the project's key metrics, basic information, and such.
 
 <ImgLang img='mobile/mobile-app-project-card.png' desc='Project card' className="mobile" />
 
-- The project name appears at the top of the project. Tap <Appname sid="detail" className="uitext" /> to see more metrics.
+- The project name appears at the top of the project. Tap the project card to see more metrics.
+
+- Under the project name, the information such as product type, product name, region, project code, and subscription type appear.
+
+- If the ![Favorite icon](/img/ico-favorite.svg) button is selected on the right of the project name, it is displayed in the <Appname sid="favorites" className="uitext" /> list on the <UI>Home</UI> screen.
 
 - The representative metrics appear in the middle section of the project. The displayed metrics may differ depending on the product type.
 
@@ -154,125 +138,129 @@ A project appears in the card view format as shown below, and it consists of the
 
   - **Browser**: <Cmdname sid="page_load" /> <Cmdname sid="timeline" />
 
-- At the bottom of the project, information such as product type, product name, region, project code, and subscription type appear.
-
 ### Exploring the dashboard {#d1b4ddc71ea6512bd94aa87d10e3a78c}
 
-If you tap <Appname sid="detail" className="uitext" /> for each project in the project list, the <Appname sid="dashboard" className="uitext" /> screen appears. 
+You can go to <UI>Dashboard</UI> by tapping an individual project in the project list. 
 
 <ImgLang img='mobile/mobile-app-project-dashboard.png' desc='dashboard' className='mobile' />
 
-- You can see the project codes in the upper right corner of the screen.
+Based on the time displayed in <Appname sid="standard_time" className="uitext" />, the metrics can be viewed for 10 minutes, 30 minutes, and 1 hour. In <Appname sid="latest" className="uitext" />, tap any of <span class="uitext">10 Min</span>, <span class="uitext">30 Min</span>, and <span class="uitext">1 Hour</span>.
 
-- Details of the project and the agent and server information can be seen in the section located at the top. 
+Key metrics for each product are arranged. You can check them in the following list.
 
-- Based on the time displayed in <Appname sid="standard_time" className="uitext" />, the metrics can be viewed for 10 minutes, 30 minutes, and 1 hour. In <Appname sid="latest" className="uitext" />, tap any of <span class="uitext">10 Min</span>, <span class="uitext">30 Min</span>, and <span class="uitext">1 Hour</span>.
+<details>
 
-- In addition, key metrics for each product are arranged. You can check them in the following list.
+<summary><b>Appication</b></summary>
 
-  <details>
+- <Appname sid="server_information" className="uitext" />: Basic information about the application server appears.
 
-  <summary><b>Appication</b></summary>
+- <Appname sid="active_transaction" className="uitext" />: This chart allows you to check active transactions by agent. The colors in the chart indicate the response times of active transactions. <span class='normal'>Blue (Normal)</span> indicates within 3 seconds, <span class='slow'>Orange (Slow)</span> 3 to 8 seconds, <span class='vslow'>Red (Very slow)</span> more than 8 seconds.
 
-  - <Appname sid="active_status" className="uitext" />: This chart allows you to see the progress of active transactions and the number of active transactions for each status.
+- <Appname sid="active_status" className="uitext" />: This chart allows you to see the progress of active transactions and the number of active transactions for each status.
 
-  - <Appname sid="active_transaction" className="uitext" />: This chart allows you to check active transactions by agent. The colors in the chart indicate the response times of active transactions. <span class='normal'>Blue (Normal)</span> indicates within 3 seconds, <span class='slow'>Orange (Slow)</span> 3 to 8 seconds, <span class='vslow'>Red (Very slow)</span> more than 8 seconds.
+- <span class="uitext">Hitmap</span>: This chart displays the distribution of response times for completed transactions. If you tap <span class="uitext">TX trace</span>, the <Appname sid="transaction_list" className="uitext" /> screen appears to see the transaction list. You can basically check the list of transactions where errors occurred. To check the list of all transactions, tap <span class="uitext">All</span>.
 
-  - <span class="uitext">Hitmap</span>: This chart displays the distribution of response times for completed transactions. If you tap <span class="uitext">TX trace</span>, the <Appname sid="transaction_list" className="uitext" /> screen appears to see the transaction list. To see the erroneous transactions, tap <span class="uitext">All</span>.
+- <UI>Realtime User</UI>: A chart that displays the number of real-time users aggregated based on the IP of the user's browser.
 
-  - <span class="uitext">Apdex</span>: <Link to="https://www.apdex.org/">Application Performance Index (Apdex)</Link> is the indicator of the application performance. You can measure the customer satisfaction about your web applications. It can be used as an indicator of user satisfaction and the value is between 0 and 1.
+- <span class="uitext">Apdex</span>: <Link to="https://www.apdex.org/">Application Performance Index (Apdex)</Link> is the indicator of the application performance. You can measure the customer satisfaction about your web applications. It can be used as an indicator of user satisfaction and the value is between 0 and 1.
 
-  - <span class="uitext">TPS</span>: Number of transactions processed per second
+- <span class="uitext">TPS</span>: Number of transactions processed per second
 
-  - <Appname sid="average_res_time" className="uitext" />: Average time needed for the application server to return the request results.
+- <Appname sid="average_res_time" className="uitext" />: Average time needed for the application server to return the request results.
 
-  - <Appname sid="system_cpu" className="uitext" />: It is the CPU usage of the application server.
+- <Appname sid="system_cpu" className="uitext" />: It is the CPU usage of the application server.
 
-  </details>
+</details>
 
-  <details>
+<details>
 
-  <summary><b>Server</b></summary>
+<summary><b>Server</b></summary>
 
-  - <span class="uitext">CPU Resource Map</span>: This distribution chart displays the CPU usage of all servers.
+- <Appname sid="os_info" className="uitext" />: The operating system status of the server connected to the project can be checked.
 
-  - <span class="uitext">CPU Top 5</span>: List of top 5 processes based on the maximum usage of CPU.
+- <Appname sid="server_status" className="uitext" />: Server resource-related information can be checked.
 
-  - <span class="uitext">Memory Top 5</span>: List of top 5 processes based on the maximum usage of memory.
+- <span class="uitext">CPU Resource Map</span>: This distribution chart displays the CPU usage of all servers.
 
-  - <span class="uitext">Disk Top 5</span>: List of top 5 processes based on the highest disk I/O usage.
+- <span class="uitext">CPU Top 5</span>: List of top 5 processes based on the maximum usage of CPU.
 
-  </details>
+- <span class="uitext">Memory Top 5</span>: List of top 5 processes based on the maximum usage of memory.
 
-  <details>
+- <span class="uitext">Disk Top 5</span>: List of top 5 processes based on the highest disk I/O usage.
 
-  <summary><b>Database</b></summary>
+</details>
 
-  - <Appname sid="thread_running_top10" className="uitext" />: Number of top 10 sessions performing queries by instance.
+<details>
 
-  - <Appname sid="thread_connected_top10" className="uitext" />: Number of top 10 connected sessions by instance.
+<summary><b>Database</b></summary>
 
-  - <span class="uitext">Active Sessions</span>: Time series chart that displays the number of active sessions performing queries during search.
+- <Appname sid="db_instance_list" className="uitext" />: The list and number of instances (agents) connected to the project can be checked.
 
-  - <Appname sid="thread_connected_chart" className="uitext" />: Time series chart that displays the number of connected sessions by agent during search.
+- <Appname sid="thread_running_top10" className="uitext" />: Number of top 10 sessions performing queries by instance.
 
-  :::info
+- <Appname sid="thread_connected_top10" className="uitext" />: Number of top 10 connected sessions by instance.
 
-  For **Database** products, you can see the metrics for each instance by tapping <Appname sid="list" className="uitext" /> at the bottom of the screen.
+- <span class="uitext">Active Sessions</span>: Time series chart that displays the number of active sessions performing queries during search.
 
-  :::
+- <Appname sid="thread_connected_chart" className="uitext" />: Time series chart that displays the number of connected sessions by agent during search.
 
-  </details>
+:::info
 
-  <details>
+For **Database** products, you can see the detailed information and metrics for each instance by tapping <UI>List</UI> at the bottom of the screen.
 
-  <summary><b>Kubernetes</b></summary>
+:::
 
-  - <Cmdname sid="TTL06263" className="uitext" />: Displays the number of containers in progress by status.
+</details>
 
-  - <Cmdname sid="TTL06265" className="uitext" />: Displays the number of Pods in progress by status.
+<details>
 
-  - <Appname sid="pod_count_chart" className="uitext" />: Time series chart that displays the number of active Pods by status during search.
+<summary><b>Kubernetes</b></summary>
 
-  - <span class="uitext">Node CPU</span>: Time series chart that displays the CPU utilizations for each node during search.
+- <Appname sid="number_containers" className="uitext" />: The numbers of containers for each status appear.
 
-  - <span class="uitext">Node Memory</span>: Time series chart that displays the memory utilizations for each node during search.
+- <Appname sid="number_pods" className="uitext" />: The numbers of Pods for each status appear.
 
-  :::note
+- <Appname sid="pod_count_chart" className="uitext" />: Time series chart that displays the number of active Pods by status during search.
 
-  For **Kubernetes** products, you can see the containers by tapping <Appname sid="list" className="uitext" /> at the bottom of the screen. You can see the details for each container.
+- <span class="uitext">Node CPU</span>: Time series chart that displays the CPU utilizations for each node during search.
 
-  :::
+- <span class="uitext">Node Memory</span>: Time series chart that displays the memory utilizations for each node during search.
 
-  </details>
+:::note
 
-  <details>
+For **Kubernetes** products, you can see the containers by tapping <UI>List</UI> at the bottom of the screen. You can see the details for each container.
 
-  <summary><b>URL</b></summary>
+:::
 
-  You can see the list of URLs registered by the user and the HTTP status codes for each URL.
+</details>
 
-  </details>
+<details>
 
-  <details>
+<summary><b>URL</b></summary>
 
-  <summary><b>Browser</b></summary>
+You can see the list of URLs registered by the user and the HTTP status codes for each URL.
 
-  - <Appname sid="page_load_timeline" className="uitext" />: This chart displays average times for each page load and each load step.
+</details>
 
-  - <span class="uitext">Pageload Hitmap</span>: This chart displays the distribution of response times for page load during search.
+<details>
 
-  - <span class="uitext">AJAX Hitmap</span>: This chart displays the distribution of AJAX response times during search.
+<summary><b>Browser</b></summary>
 
-  - <Cmdname sid="TTL06188" className="uitext" />: Displays the number of errors that occurred during search and the top N errors occurred by page.
+- <Appname sid="page_load_timeline" className="uitext" />: This chart displays average times for each page load and each load step.
 
-  - <Cmdname sid="TTL06189" className="uitext" />: Displays the top N counts for the numbers of errors that occurred during search and the sums for each error message.
+- <span class="uitext">Pageload Hitmap</span>: This chart displays the distribution of response times for page load during search.
 
-  </details>
+- <span class="uitext">AJAX Hitmap</span>: This chart displays the distribution of AJAX response times during search.
+
+- <Appname sid="number_errors_page" className="uitext" />: Displays the number of errors that occurred during search and the top N errors occurred by page.
+
+- <Appname sid="number_errors_message" className="uitext" />: Displays the top N counts for the numbers of errors that occurred during search and the sums for each error message.
+
+</details>
 
 ### Checking alerts by project {#00eb10b0be6fe8104785a99aaf653277}
 
-You can see the notifications delivered to the events set in individual projects. At the bottom of the screen, tap <Appname sid="alert" className="uitext" />.
+You can see the notifications delivered to the events set in individual projects. At the bottom of the screen, tap <UI>Event</UI>.
 
 <ImgLang img='mobile/mobile-app-project-alert.png' desc='Notification' className='mobile' />
 
@@ -284,7 +272,7 @@ You can see the details of individual projects, alert settings, and user informa
 
 - <Appname sid="project_info" className="uitext" />: You can see the detailed information of a project.
 
-- <Appname sid="alert_settins" className="uitext" />: You can set the alerts for the current project.
+- <Appname sid="alert_settings" className="uitext" />: You can set the alerts for the current project.
 
   - <Appname sid="receive_settings" className="uitext" />: You can set whether or not to receive alerts set in the current project.
 
@@ -296,7 +284,7 @@ You can see the details of individual projects, alert settings, and user informa
 
 ## Integrated alerts {#6df98f20941be17b6e955a6c0e1153d3}
 
-To see the alerts for all projects, tap <Appname sid="alerts" className="uitext" /> in the initial screen of the mobile app.
+To see the alerts for all projects, tap <UI>Event</UI> in the initial screen of the mobile app.
 
 <ImgLang img='mobile/mobile-app-alerts.png' desc='Notification' className='mobile' />
 
@@ -312,11 +300,11 @@ You can view the alert history for up to 7 days. We will expand the scope of vie
 
 ## Setting an account {#3518ccd39bba16e461d64bf75f209f92}
 
-In the initial screen of the mobile app, tap <Appname sid="account" className="uitext" />.
+Tap <UI>Account</UI> at the bottom of the mobile app's initial screen.
 
 <ImgLang img='mobile/mobile-app-account.png' desc='Account' className='mobile' />
 
-The <Appname sid="account" className="uitext" /> menu provides the following functions:
+The features provided from <UI>Account</UI> are as follows:
 
 - Checking the user account information and configuring the language and organization settings
 
@@ -330,11 +318,13 @@ To change the default language of the mobile app, tap the favorite language in <
 
 ### Setting the default organization {#5519c33fac468559f5137171d8ee9677}
 
-You can default the list of projects displayed in <Appname sid="projects" className="uitext" /> as the list of projects corresponding to your organization. Select a favorite organization in <Appname sid="org" className="uitext" />.
+You can default the list of projects displayed in <Appname sid="projects" className="uitext" /> as the list of projects corresponding to your organization. Select a favorite organization in <Appname sid="org" className="uitext" />. The number of projects in <Appname sid="project" className="uitext" /> changes depending on the selected organization.
 
 ### Setting the alert reception {#3b0ae19db04b5962b295cd2511398344}
 
 You can receive alerts or release the reception setting through the mobile app. In the <Appname sid="setup_alarm" className="uitext" /> section, tap <Appname sid="porject" className="uitext" /> to apply the desired settings.
+
+To test the reception of alerts, tap <Appname sid="request_test_alarm_title" className="uitext" />.
 
 ### OTP authentication{#mobileotp}
 
@@ -350,7 +340,7 @@ OTP authentication can be set through the WhaTap mobile app and the OTP authenti
 
 5. If <Cmdname sid="create_otp_key" className="uitext" /> is selected, the QR code appears.
 
-6. In the WhaTap mobile app, go to the <Appname sid="account" className="uitext" /> menu.
+6. Tap <UI>Account</UI> at the bottom of the WhaTap mobile app's screen.
 
 7. In the <span class="uitext">OTP</span> section, tap <span class="uitext">QR</span>.
 

@@ -8,7 +8,7 @@ tags:
   - エラートレース
 ---
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_エラートレース_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_browserErrorTracking" className="uitext" />
 
 ブラウザーモニタリングは、ブラウザーのフロントエンド(Front-End) エラーを収集します。 エラーメッセージおよびエラースタック情報、ブラウザー、OS、デバイス、ページのURL情報が含まれています。
 
@@ -58,11 +58,11 @@ tags:
 
 - **_stack_**：エラースタック情報です。 エラースタックには、基本的に難読化されたファイル名とライン、カラム情報が含まれます。
 
-## ソースマップのアップロードとエラーコードの提供{#check-errorcode}
+## ソースマップのアップロードとエラーコードの提供 {#check-errorcode}
 
 配布されたフロントエンドコードが難読化または圧縮された場合、収集されたブラウザーエラーのスタック情報を実際のコードレベルで提供することは困難です。 フロントエンドコードを配布する時点でビルドされたsource-mapを使用すると、ブラウザーエラーが発生したファイル、コードラインにアクセスできます。
 
-1. **_エラースタック_**カラムの**_分析_**ボタンを選択してください。
+1. <Cmdname sid="exception_stack" className="uitext" />カラムの<Cmdname sid="analysis" className="uitext" />ボタンを選択してください。
 
    <ImgLang img='browser-error-stack-btn-analysis.png' desc='エラーログ' />
 
@@ -90,26 +90,17 @@ tags:
 
 ## テーブルのカラム設定
 
-### テーブルカラムの表示または非表示
-
-ブラウザーエラー一覧テーブルのカラム ヘッダー項目を表示または非表示にすることができます。
-
+{/* #### 테이블 컬럼 표시하거나 숨기기 */}
 import Displayorhidetablecolumn from "../common-items/_display-or-hide-table-column.mdx";
 
-<Displayorhidetablecolumn />
+<Displayorhidetablecolumn level={3} />
 
-### テーブルカラムの順序付け
-
-ブラウザーエラー一覧のテーブルでカラム ヘッダーの順序を変更できます。
-
+{/* ### 테이블 컬럼 순서 바꾸기 */}
 import Changeordertablecolumn from "../common-items/_change-order-table-column.mdx";
 
-<Changeordertablecolumn />
+<Changeordertablecolumn level={3} />
 
-## テーブルコンテンツの表示設定
-
-ブラウザーエラー一覧に表示するコンテンツの内容を設定できます。 多くの情報が表示されて見づらい場合や必要な内容を追加したい場合に利用できます。
-
+{/* #### 테이블 콘텐츠 표시 설정 */}
 import Setdisplaytablecontents from "../common-items/_set-display-table-contents.mdx";
 
-<Setdisplaytablecontents />
+<Setdisplaytablecontents level={2} />

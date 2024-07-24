@@ -25,6 +25,7 @@ import Column from '@site/src/components/Column';
 import Filetree from '@site/src/components/Filetree';
 import FiletreeItem from '@site/src/components/FiletreeItem';
 import Title from '@site/src/components/Title';
+import ReturnLink from '@site/src/components/CurrentDocurl.js';
 
 export default {
   // 기본 mapping 재사용
@@ -52,5 +53,6 @@ export default {
   Column,
   Filetree,
   FiletreeItem,
-  Title
+  Title,
+  ReturnLink
 };
