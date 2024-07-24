@@ -42,15 +42,6 @@ const metadata = {
     "id": "preview-1_93_2",
     "title": "Preview 1.93.2",
     "toc_max_heading_level": 3
-  },
-  "sidebar": "previewSidebar",
-  "previous": {
-    "title": "Preview 1.95.0",
-    "permalink": "/whatap-docs/release-notes/preview/preview-1_95_0"
-  },
-  "next": {
-    "title": "Preview 1.93.1",
-    "permalink": "/whatap-docs/release-notes/preview/preview-1_93_1"
   }
 };
 const assets = {

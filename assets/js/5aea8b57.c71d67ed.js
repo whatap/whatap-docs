@@ -330,6 +330,10 @@ function _createMdxContent(props) {
                       children: "다음 문서"
                     }), "를 참조하세요."]
                   }), "\n"]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                    children: "이 기능은 쿠버네티스 마스터 에이전트 1.7.8 버전 이상에서 지원합니다."
+                  }), "\n"]
                 }), "\n"]
               })
             }), "\n"]

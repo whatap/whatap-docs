@@ -45,10 +45,6 @@ const metadata = {
   "previous": {
     "title": "Preview 1.103.X",
     "permalink": "/whatap-docs/release-notes/preview/preview-1_103_x"
-  },
-  "next": {
-    "title": "Preview 1.99.X",
-    "permalink": "/whatap-docs/release-notes/preview/preview-1_99_x"
   }
 };
 const assets = {
