@@ -1043,6 +1043,13 @@ main {
     h2 + div.release-items {
       margin-top: 45px;
     }
+    div.release-items:last-of-type {
+      div.releasegroup:last-of-type {
+        div.productrelease:last-of-type {
+          border: none;
+        }
+      }
+    }
     div.releasegroup {
       div.date {
         position: absolute;
