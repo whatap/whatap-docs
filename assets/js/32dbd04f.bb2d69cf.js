@@ -378,8 +378,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "노드 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-node-list"
+    "title": "노드 상세",
+    "permalink": "/whatap-docs/kubernetes/node-details"
   },
   "next": {
     "title": "오브젝트 매니페스트",

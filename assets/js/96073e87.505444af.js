@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5018],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[13526],{
 
 /***/ 34253:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -71,11 +71,12 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, Link} = _components;
+  }, {Cmdname, ImgLang, InDoc, Link, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
   if (!Link) _missingMdxReference("Link", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭은 데이터베이스의 로그 모니터링 서비스를 제공합니다. 서버 설치형 데이터베이스와 클라우드 서비스인 AWS RDS의 로그를 수집할 수 있습니다. 이를 통해 와탭의 로그 모니터링 기능인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -139,14 +140,24 @@ function _createMdxContent(props) {
             children: "file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log\n"
           })
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["적용하기 전에 XOS 에이전트를 설치하고 에이전트 설정을 진행해야 합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "agent-xos-settings",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        })
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+          product: "mysql,postgresql,oracle-v2",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["적용하기 전에 XOS 에이전트를 설치하고 에이전트 설정을 진행해야 합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "agent-xos-settings",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+          product: "oracle-pro",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Oracle Pro"
+            }), " 상품은 XOS 에이전트가 내장되어 있어 별도 설치 과정이 필요없습니다."]
+          })
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
@@ -489,9 +500,18 @@ function _createMdxContent(props) {
           sid: "side_logSetting",
           className: "uitext"
         }), " 메뉴로 진입해 로그 모니티링을 활성화하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "log-start-db.png",
-        desc: "로그 모니터링 시작하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+        product: "oracle-pro",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "log-start-db.png",
+          desc: "로그 모니터링 시작하기"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        product: "oracle-pro",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "log-start-db-oracle-pro.png",
+          desc: "로그 모니터링 시작하기"
+        })
       })]
     })]
   });
@@ -516,7 +536,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 89841:
+/***/ 12379:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -540,21 +560,21 @@ const frontMatter = {
 	tags: [
 		'로그 모니터링',
 		'데이터베이스',
-		'Redis'
+		'PostgreSQL'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/log-db",
+  "id": "postgresql/log-db",
   "title": "적용하기",
   "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
-  "source": "@site/docs/redis/log-db.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/log-db",
-  "permalink": "/whatap-docs/redis/log-db",
+  "source": "@site/docs/postgresql/log-db.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/log-db",
+  "permalink": "/whatap-docs/postgresql/log-db",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/log-db.mdx",
+  "editUrl": "undefined/docs/postgresql/log-db.mdx",
   "tags": [
     {
       "inline": true,
@@ -568,8 +588,8 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "Redis",
-      "permalink": "/whatap-docs/tags/redis"
+      "label": "PostgreSQL",
+      "permalink": "/whatap-docs/tags/postgre-sql"
     }
   ],
   "version": "current",
@@ -580,17 +600,17 @@ const metadata = {
     "tags": [
       "로그 모니터링",
       "데이터베이스",
-      "Redis"
+      "PostgreSQL"
     ]
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "로그",
-    "permalink": "/whatap-docs/redis/log-main"
+    "permalink": "/whatap-docs/postgresql/log-main"
   },
   "next": {
     "title": "라이브 테일",
-    "permalink": "/whatap-docs/redis/log-lt"
+    "permalink": "/whatap-docs/postgresql/log-lt"
   }
 };
 const assets = {

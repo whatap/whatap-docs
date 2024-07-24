@@ -409,7 +409,7 @@ function _createMdxContent(props) {
                   children: "노드 상세"
                 })
               }), "와 관련한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://docs.whatap.io/kubernetes/resource-node-list#nodedetails",
+                href: "https://docs.whatap.io/kubernetes/node-details",
                 children: "다음 문서"
               }), "를 참조하세요."]
             })]

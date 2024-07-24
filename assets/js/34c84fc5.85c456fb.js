@@ -724,14 +724,65 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/service-list"
   },
   "next": {
-    "title": "노드 디스크 목록",
-    "permalink": "/whatap-docs/kubernetes/node-disk-list"
+    "title": "노드 상세",
+    "permalink": "/whatap-docs/kubernetes/node-details"
   }
 };
 const assets = {
 
 };
 
+/*## 노드 상세 {#nodedetails}
+
+***노드 상세*** 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다. 노드 셀렉터를 통해 조회를 원하는 노드를 선택할 수 있습니다.
+
+<ImgLang img='k8s-resource-node-detail.png' desc='노드 상세 화면' />
+
+* 상단 차트
+
+다음과 같은 4개의 차트 정보를 확인할 수 있습니다.
+
+* ***CPU Usage***: 노드의 CPU 사용량을 확인할 수 있습니다.
+
+* ***Memory Usage***: 노드의 메모리 사용량을 확인할 수 있습니다.
+
+* ***Network***: 노드의 네트워크 인터페이스의 입출력 트래픽과 오류 패킷을 확인할 수 있습니다.
+
+* ***Disk Usage***: 노드의 Disk 사용량을 확인할 수 있습니다.
+
+* 컨테이너 상세 정보
+
+* 노드 내 컨테이너 상세 정보 상단에서 `cpu_quota`, `cpu_request`, `cpu_total_milli`, `mem_limit`, `mem_request`, `mem_working_set` 지표의 합계를 확인할 수 있습니다.
+
+* 컨테이너 상세 정보는 다음 내용을 제공합니다.
+
+| 항목             | 설명                                              |
+| ---------------- | ------------------------------------------------- |
+| 상태             | 컨테이너 상태                                     |
+| 컨테이너         | Container ID                                      |
+| 이미지           | 컨테이너 이미지 정보                              |
+| 커맨드           | 컨테이너 실행 명령                                |
+| 애플리케이션     | 컨테이너에 설치된 와탭 APM 에이전트의 이름        |
+| Pod              | Pod 이름                                          |
+| CpuByLimit       | CPU Limit 기준 CPU 전체 사용률                    |
+| MemoryWsByLimit  | 컨테이너 메모리 Limit 기준 working set 사용량     |
+| CpuThrottledCnt  | 컨테이너 CPU Throttled 건수                       |
+| CpuThrottledTime | 컨테이너 CPU Throttled 시간                       |
+| MemLimit         | 컨테이너 메모리 Limit 크기                        |
+| MemRequest       | 컨테이너 메모리 Request 크기                      |
+| MemWs            | 컨테이너 메모리 working set                       |
+| IoReadBytes      | 컨테이너 전체 블럭 디바이스의 초당 읽은 바이트 합 |
+| IoReadIops       | 컨테이너 전체 블럭 디바이스의 초당 읽은 건수 합   |
+| IoWriteBytes     | 컨테이너 전체 블럭 디바이스의 초당 쓴 바이트 합   |
+| IoWriteIops      | 컨테이너 전체 블럭 디바이스의 초당 쓴 건수 합     |
+| NetRxBytes       | 컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합 |
+| NetRxDropped     | 컨테이너 네트워크 수신 dropped 건수               |
+| NetRxError       | 컨테이너 네트워크 수신 에러 건수                  |
+| NetRxIops        | 컨테이너 네트워크 수신 건수                       |
+| NetTxBytes        | 컨테이너 네트워크 송신 데이터 크기                |
+| NetTxDropped     | 컨테이너 네트워크 송신 dropped 건수               |
+| NetTxError       | 컨테이너 네트워크 송신 에러 건수                  |
+| NetTxIops        | 컨테이너 네트워크 송신 건수                       |*/
 /*ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
 
 다음 기능을 추가로 제공합니다.
@@ -767,17 +818,12 @@ const toc = [{
   "value": "컬럼 선택",
   "id": "컬럼-선택",
   "level": 2
-}, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
-  "value": "노드 상세",
-  "id": "nodedetails",
-  "level": 2
-}];
+}, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
     blockquote: "blockquote",
-    code: "code",
     em: "em",
     h2: "h2",
     img: "img",
@@ -786,12 +832,6 @@ function _createMdxContent(props) {
     p: "p",
     section: "section",
     strong: "strong",
-    table: "table",
-    tbody: "tbody",
-    td: "td",
-    th: "th",
-    thead: "thead",
-    tr: "tr",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -913,7 +953,7 @@ function _createMdxContent(props) {
                   children: "노드 상세"
                 })
               }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "#nodedetails",
+                href: "node-details",
                 children: "다음 문서"
               }), "를 참조하세요."]
             })]
@@ -944,251 +984,6 @@ function _createMdxContent(props) {
         id: "컬럼-선택",
         children: "컬럼 선택"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "nodedetails",
-        children: "노드 상세"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "노드 상세"
-          })
-        }), " 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다. 노드 셀렉터를 통해 조회를 원하는 노드를 선택할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-resource-node-detail.png",
-        desc: "노드 상세 화면"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "상단 차트"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "다음과 같은 4개의 차트 정보를 확인할 수 있습니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "CPU Usage"
-                  })
-                }), ": 노드의 CPU 사용량을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "Memory Usage"
-                  })
-                }), ": 노드의 메모리 사용량을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "Network"
-                  })
-                }), ": 노드의 네트워크 인터페이스의 입출력 트래픽과 오류 패킷을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "Disk Usage"
-                  })
-                }), ": 노드의 Disk 사용량을 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "컨테이너 상세 정보"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: ["노드 내 컨테이너 상세 정보 상단에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "cpu_quota"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "cpu_request"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "cpu_total_milli"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "mem_limit"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "mem_request"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "mem_working_set"
-                }), " 지표의 합계를 확인할 수 있습니다."]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                children: "컨테이너 상세 정보는 다음 내용을 제공합니다."
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                      children: "항목"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-                      children: "설명"
-                    })]
-                  })
-                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "상태"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 상태"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "Container ID"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "이미지"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 이미지 정보"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "커맨드"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 실행 명령"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "애플리케이션"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너에 설치된 와탭 APM 에이전트의 이름"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "Pod"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "Pod 이름"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "CpuByLimit"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "CPU Limit 기준 CPU 전체 사용률"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "MemoryWsByLimit"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 메모리 Limit 기준 working set 사용량"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "CpuThrottledCnt"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 CPU Throttled 건수"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "CpuThrottledTime"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 CPU Throttled 시간"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "MemLimit"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 메모리 Limit 크기"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "MemRequest"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 메모리 Request 크기"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "MemWs"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 메모리 working set"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "IoReadBytes"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 전체 블럭 디바이스의 초당 읽은 바이트 합"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "IoReadIops"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 전체 블럭 디바이스의 초당 읽은 건수 합"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "IoWriteBytes"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 전체 블럭 디바이스의 초당 쓴 바이트 합"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "IoWriteIops"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 전체 블럭 디바이스의 초당 쓴 건수 합"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetRxBytes"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetRxDropped"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 수신 dropped 건수"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetRxError"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 수신 에러 건수"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetRxIops"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 수신 건수"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetTxBytes"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 송신 데이터 크기"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetTxDropped"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 송신 dropped 건수"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetTxError"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 송신 에러 건수"
-                    })]
-                  }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "NetTxIops"
-                    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                      children: "컨테이너 네트워크 송신 건수"
-                    })]
-                  })]
-                })]
-              }), "\n"]
-            }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      })]
     })]
   });
 }
