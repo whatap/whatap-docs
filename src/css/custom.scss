@@ -1052,11 +1052,13 @@ main {
         position: absolute;
         padding-top: 0;
         left: -140px;
+        line-height: 1.0;
       }
       p.product {
         font-weight: 500;
         font-size: 1.2rem;
         padding-top: 0;
+        line-height: .9;
       }
       div.productrelease {
         margin-left: 110px;
@@ -1067,13 +1069,13 @@ main {
           position: relative;
           &::before {
             content: " ";
-            width: 28px;
-            height: 28px;
+            width: 15px;
+            height: 15px;
             background-color: var(--ifm-alert-background);
             position: absolute ;
             display: inline-block;
-            left: -46px;
-            top: -1px;
+            left: -39px;
+            top: -0px;
             border-radius: 50%;
             border: 2px solid var(--ifm-font-color-base);
           }
