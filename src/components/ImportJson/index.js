@@ -93,10 +93,10 @@ const ImportJson = ({ filePath, product, type, sort }) => {
         sort === 'date' ? (
           sortedData.map(dateGroup => (
             <div key={dateGroup.date} className='releasegroup'>
-              <p className='date'>{dateGroup.date}</p>
               {Object.keys(dateGroup.products).map(productKey => (
                 <div key={productKey} className="productrelease">
                   <div className='subgroup'>
+                  <p className='date'>{dateGroup.date}</p>
                   <p className='product'>{productKey}</p>
                   {dateGroup.products[productKey].map(list => (
                     <div key={list.ver} className='rlist'>
