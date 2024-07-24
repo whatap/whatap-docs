@@ -263,13 +263,13 @@ const service_2_0_x_namespaceObject = /*#__PURE__*/JSON.parse('[{"url":"https://
 
 const frontMatter = {
 	id: 'index',
-	title: 'Service',
+	title: 'Service Release Notes',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/index",
-  "title": "Service",
+  "title": "Service Release Notes",
   "description": "Service History",
   "source": "@site/docs/release-notes/service/index.mdx",
   "sourceDirName": "release-notes/service",
@@ -282,7 +282,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "index",
-    "title": "Service",
+    "title": "Service Release Notes",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
