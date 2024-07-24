@@ -1040,7 +1040,7 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
-    header + div.release-items {
+    h2 + div.release-items {
       margin-top: 45px;
     }
     div.releasegroup {
