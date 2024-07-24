@@ -37752,11 +37752,11 @@
     "service_id": "_05473"
   },
   "create_namespace_info_message": {
-    "en": "When a namespace project is added, the cluster project is separated into a additional WhaTap project. Therefore, even if the namespace project is added and deleted, it cannot be checked in the cluster project.",
-    "ja": "ネームスペースプロジェクトを追加すると、クラスタプロジェクトから別途のWhaTapプロジェクトとして分離されます。そのため、ネームスペースプロジェクトを追加してから削除しても、クラスタプロジェクトからは確認できません。",
-    "ko": "네임스페이스 프로젝트를 추가하면, 클러스터 프로젝트에서 별도의 와탭 프로젝트로 분리됩니다. 따라서 네임스페이스 프로젝트 추가 후 삭제 하더라도 클러스터 프로젝트에서는 확인할 수 없습니다.",
-    "zh": "When a namespace project is added, the cluster project is separated into a separate WhaTab project. Therefore, even if the namespace project is added and deleted, it cannot be checked in the cluster project.",
-    "service_id": "_05474"
+    "en": "When a namespace project is added, the cluster project is separated into a additional WhaTap project. ",
+    "ja": "ネームスペースプロジェクトを追加すると、クラスタプロジェクトから別途のWhaTapプロジェクトとして分離されます。",
+    "ko": "네임스페이스 프로젝트를 추가하면, 클러스터 프로젝트에서 별도의 와탭 프로젝트로 분리됩니다.",
+    "zh": "When a namespace project is added, the cluster project is separated into a separate WhaTab project.",
+    "service_id": "NTC05474"
   },
   "enter_tag_to_add": {
     "en": "After entering the tag you want to add and press enter, then the tag will be added.",
@@ -55623,10 +55623,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete this item?",
+    "zh": "Are you sure you want to delete that item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -56393,10 +56393,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56561,10 +56561,10 @@
     "service_id": "TTL08203"
   },
   "DSC08204": {
-    "en": "Oracle Pro has been released. Oracle Pro enables precise analysis by collecting performance information dozens of times per second without load on the server.",
+    "en": "Oracle Pro has been released. Oracle Pro collects performance information dozens of times per second without putting any load on the server, enabling precise analysis.",
     "ja": "Oracle Proがリリースされました。 Oracle Proは、サーバーに負荷をかけずにパフォーマンス情報を1秒に数十回まで収集し、より的確な分析を可能にします。",
     "ko": "Oracle Pro가 출시되었습니다. Oracle Pro는 서버에 부하없이 성능정보를 1초에 수십번까지 수집하여 정밀한 분석이 가능합니다.",
-    "zh": "Oracle Pro has been released. Oracle Pro enables precise analysis by collecting performance information dozens of times per second without load on the server.",
+    "zh": "Oracle Pro has been released. Oracle Pro collects performance information dozens of times per second without putting any load on the server, enabling precise analysis.",
     "service_id": "DSC08204"
   },
   "DSC08205": {
@@ -56687,10 +56687,10 @@
     "service_id": "NTC08221"
   },
   "NTC08222": {
-    "en": "It takes approximately 1 minute to confirm the data for the first URL registered.",
+    "en": "For the first URL registered, it takes approximately 1 minute to confirm the data.",
     "ja": "最初に登録したURLは、データの確認に1分程の時間がかかります。",
     "ko": "처음 등록한 URL은 데이터 확인까지 약 1분의 시간이 소요됩니다.",
-    "zh": "It takes approximately 1 minute to confirm the data for the first URL registered.",
+    "zh": "For the first URL registered, it takes approximately 1 minute to confirm the data.",
     "service_id": "NTC08222"
   },
   "TTL08223": {
@@ -56937,6 +56937,13 @@
     "ko": "{month}달",
     "zh": "{month} month",
     "service_id": "CNT08257"
+  },
+  "DSC08258": {
+    "en": "In the case of {platform}, xos is built-in, so xos installation process is not required.",
+    "ja": "{platform}の場合はxosが内蔵されており、xosのインストール過程は不要です。",
+    "ko": "{platform}의 경우에는 xos가 내장되어 있어, xos 설치과정이 필요없습니다.",
+    "zh": "In the case of {platform}, xos is built-in, so xos installation process is not required.",
+    "service_id": "DSC08258"
   },
   "": {
     "en": "#VALUE!",
