@@ -86,28 +86,28 @@ const ImportJson = ({ filePath, product, type, sort }) => {
   }
 
   return (
-    <div>
+    <div className='release-items'>
       {filteredLists.length === 0 ? (
         <p>No data available for the given filters.</p>
       ) : (
         sort === 'date' ? (
           sortedData.map(dateGroup => (
-            <div key={dateGroup.date}>
-              <h2>{dateGroup.date}</h2>
+            <div key={dateGroup.date} className='releasegroup'>
+              <p className='date'>{dateGroup.date}</p>
               {Object.keys(dateGroup.products).map(productKey => (
-                <div key={productKey}>
-                  <h3>{productKey}</h3>
-                  <ul>
-                    {dateGroup.products[productKey].map(list => (
-                      <li key={list.ver}>
-                        <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                        <a href={`${list.url}#${list.hash}`} className='goto' target='_blank'>{list.ver}</a>
-                        {list.details && (
-                          <div dangerouslySetInnerHTML={{ __html: list.details }} />
-                        )}
-                      </li>
-                    ))}
-                  </ul>
+                <div key={productKey} className="productrelease">
+                  <div className='subgroup'>
+                  <p className='product'>{productKey}</p>
+                  {dateGroup.products[productKey].map(list => (
+                    <div key={list.ver} className='rlist'>
+                      <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                      <a href={`${list.url}#${list.hash}`} className='goto' target='_blank'>{list.ver}</a>
+                      {list.details && (
+                        <div dangerouslySetInnerHTML={{ __html: list.details }} />
+                      )}
+                    </div>
+                  ))}
+                  </div>
                 </div>
               ))}
             </div>
