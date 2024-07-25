@@ -5701,9 +5701,17 @@ const sidebars = {
         'kubernetes/before-starting',
         'kubernetes/agent-architecture',
         {
-          type: 'doc',
+          type: 'category',
           label: '지원 환경',
-          id: 'kubernetes/supported-spec'
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/supported-spec',
+          },
+          items: [
+            'kubernetes/nvidia-gpu',
+          ] 
         },
         {
           type: 'category',
