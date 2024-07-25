@@ -1326,7 +1326,7 @@ const sidebars = {
               items: [
                 'golang/trs-view',
                 'golang/trs-profile',
-                'golang/active-transactions',
+                // 'golang/active-transactions',
                 'golang/trs-multi-trace',
                 'golang/collect-stacks',
               ]
@@ -3252,9 +3252,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_7_0x',
+          id: 'release-notes/preview/preview-2_8_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_7_0x',
         'release-notes/preview/preview-2_6_0x',
         'release-notes/preview/preview-2_5_0x',
         'release-notes/preview/preview-2_4_0x',
@@ -3269,14 +3270,6 @@ const sidebars = {
         'release-notes/preview/preview-1_105_x',
         'release-notes/preview/preview-1_103_x',
         'release-notes/preview/preview-1_101_x',
-        'release-notes/preview/preview-1_99_x',
-        'release-notes/preview/preview-1_97_x',
-        'release-notes/preview/preview-1_95_2',
-        'release-notes/preview/preview-1_95_1',
-        'release-notes/preview/preview-1_95_0',
-        'release-notes/preview/preview-1_93_2',
-        'release-notes/preview/preview-1_93_1',
-        'release-notes/preview/preview-1_93_0',
       ],
     }
   ],
@@ -3867,6 +3860,19 @@ const sidebars = {
               label: '데이터베이스',
               id: 'best-practice-guides/set-db-metric-warning-notice'
             }
+          ]
+        },
+        {
+          type: 'category',
+          label: '더 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              label: '인스턴스 성능 관리 활용',
+              id: 'best-practice-guides/about-instance-performance-analysis'
+            },
           ]
         }
       ]
@@ -5695,9 +5701,17 @@ const sidebars = {
         'kubernetes/before-starting',
         'kubernetes/agent-architecture',
         {
-          type: 'doc',
+          type: 'category',
           label: '지원 환경',
-          id: 'kubernetes/supported-spec'
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/supported-spec',
+          },
+          items: [
+            'kubernetes/nvidia-gpu',
+          ] 
         },
         {
           type: 'category',
@@ -5847,6 +5861,7 @@ const sidebars = {
                 'kubernetes/pending-pod-status',
                 'kubernetes/resource-application-list',
                 'kubernetes/deployment-list',
+                'kubernetes/service-list',
               ],
             },
             {
@@ -5856,6 +5871,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/resource-node-list',
+                'kubernetes/node-details',
+                'kubernetes/node-disk-list',
                 'kubernetes/object-manifest',
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
