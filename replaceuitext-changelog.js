@@ -3,7 +3,7 @@ const path = require('path');
 const readline = require('readline');
 const jsonFile = require('./src/components/ui-text/whatap-locale.json');
 
-const mdxFilepath = path.resolve(__dirname, './crw-data/crwld-service/_import-service-Application.mdx');
+const mdxFilepath = path.resolve(__dirname, './crw-data/crwld-service/_import-service-Server.mdx');
 // const mdxFilepath = path.resolve(__dirname, './blog/2024-2q-summary.mdx');
 let mdxContent = fs.readFileSync(mdxFilepath, 'utf-8');
 
