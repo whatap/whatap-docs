@@ -41,6 +41,8 @@
     "@saucelabs/theme-github-codeblock": "^0.2.3",
     "@swc/core": "1.2.197",
     "@whatap-docs/remark-sectionize": "^0.0.2",
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.0.0",
     "docusaurus-plugin-enlarge-image": "^0.1.1",
     "docusaurus-plugin-pagemove": "github:usagrada/docusaurus-plugin-pagemove",
