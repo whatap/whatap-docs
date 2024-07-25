@@ -1,12 +1,12 @@
-// fin2 릴리스 노트 버전 상품명 옆에 가져오기
+// 0725
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 const urls = [
-    'https://docs.whatap.io/release-notes/service/service-1_112_x',
-    // 'https://docs.whatap.io/release-notes/service/service-1_114_x',
+    // 'https://docs.whatap.io/release-notes/service/service-2_6_x',
+    'https://docs.whatap.io/release-notes/service/service-2_7_x',
 ];
 
 async function extractFeaturesAndUpdateMDXDocument() {
@@ -21,28 +21,57 @@ async function extractFeaturesAndUpdateMDXDocument() {
             $('section.remark-sectionize-h2').each((index, element) => {
                 const version = $(element).find('h2').text().trim();
                 const date = $(element).find('h2 + p').text().trim();
+                console.log(version + date);
 
                 $(element).find('h3').each((index, h3Element) => {
                     const featureName = $(h3Element).text().trim().replace(/\u200B/g, '');
+                    console.log(featureName);
 
-                    const nextUl = $(h3Element).next('ul').first();
-                    const nextP = $(h3Element).next('p').first();
-                    const featureInUl = nextUl.find('code.Feature, code.New');
-                    const featureInP = nextP.find('code.Feature, code.New');
+                    const h4Elements = $(h3Element).nextUntil('h3', 'h4');
+                    if (h4Elements.length > 0) {
+                        h4Elements.each((index, h4Element) => {
+                            const featureName2 = $(h4Element).text().trim().replace(/\u200B/g, '');
 
-                    const featureDetails = [];
+                            const nextUl = $(h4Element).next('ul').first();
+                            const nextP = $(h4Element).next('p').first();
+                            const featureInUl = nextUl.find('code.Feature, code.New');
+                            const featureInP = nextP.find('code.Feature, code.New');
 
-                    featureInUl.each((idx, code) => {
-                        featureDetails.push($(code).parent().html().trim());
-                    });
-                    featureInP.each((idx, code) => {
-                        featureDetails.push($(code).parent().html().trim());
-                    });
+                            const featureDetails = [];
 
-                    if (featureDetails.length > 0) {
-                        features.push({ version: version, date: date, feature: featureName, details: featureDetails });
-                    }
+                            featureInUl.each((idx, code) => {
+                                featureDetails.push($(code).parent().html().trim());
+                            });
+                            featureInP.each((idx, code) => {
+                                featureDetails.push($(code).parent().html().trim());
+                            });
+
+                            if (featureDetails.length > 0) {
+                                features.push({ version: version, date: date, feature: featureName, feature2: featureName2, details: featureDetails });
+                            }
+                        });
+                    } else {
+                      const nextUl = $(h3Element).next('ul').first();
+                      const nextP = $(h3Element).next('p').first();
+                      const featureInUl = nextUl.find('code.Feature, code.New');
+                      const featureInP = nextP.find('code.Feature, code.New');
+
+                      const featureDetails = [];
+
+                      featureInUl.each((idx, code) => {
+                          featureDetails.push($(code).parent().html().trim());
+                      });
+                      featureInP.each((idx, code) => {
+                          featureDetails.push($(code).parent().html().trim());
+                      });
+
+                      if (featureDetails.length > 0) {
+                          features.push({ version: version, date: date, feature: featureName, details: featureDetails });
+                      }
+                      }
                 });
+
+                
             });
 
             features.sort((a, b) => parseDate(b.date) - parseDate(a.date));
@@ -56,7 +85,7 @@ async function extractFeaturesAndUpdateMDXDocument() {
 }
 
 function updateOrCreateMDXDocument(newFeatures) {
-    const mdxFilePath = './crw-data/overview/_changelog_overview_fin2.mdx';
+    const mdxFilePath = './crw-data/overview/_changelog_overview_fin7.mdx';
     let existingFeatures = [];
 
     if (fs.existsSync(mdxFilePath)) {
@@ -99,16 +128,22 @@ function createOrUpdateMDXDocument(filename, features) {
             } else {
                 // 수정: 버전이 유효한지 확인
                 if (feature.version) {
-                    documentContent += `- <code class='changelog-overview'>${feature.feature}</code>\n`;
-                    documentContent += `<code class='changelog-date'>${feature.date}</code>` ;
+                    documentContent += `- <code class='changelog-overview'>${feature.feature}</code>`;
+                    documentContent += `\n<code class='changelog-date'>${feature.date}</code>`;
                     const versionLink = createVersionLink(feature.version);
                     documentContent += ` <code class='changelog-service'><a href="${versionLink}">${feature.version}</a></code>\n`;
-                    feature.details.forEach(detail => {
-                        // const versionLink = createVersionLink(feature.version);
-                        documentContent += `  - ${detail}\n`;
-                    });
+                    if (feature.feature2) {
+                        documentContent += `<br/><code class='changelog-overview2'>${feature.feature2}</code>\n`;
+                        feature.details.forEach(detail => {
+                            documentContent += `  - ${detail}\n`;
+                          });
+                    } else {
+                      feature.details.forEach(detail => {
+                          documentContent += `  - ${detail}\n`;
+                      });
+                    }
                     documentContent += `\n`;
-                }
+                } 
             }
         });
 
@@ -149,7 +184,7 @@ function createBackup(filename) {
         fs.mkdirSync(backupFolder);
     }
 
-    const backupFileName = path.join(backupFolder, `_changelog_overview_backup2_${Date.now()}.mdx`);
+    const backupFileName = path.join(backupFolder, `_changelog_overview_backup3_${Date.now()}.mdx`);
     fs.copyFileSync(filename, backupFileName);
     console.log(`Backup created: ${backupFileName}`);
 }
