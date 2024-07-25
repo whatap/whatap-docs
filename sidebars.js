@@ -1326,7 +1326,7 @@ const sidebars = {
               items: [
                 'golang/trs-view',
                 'golang/trs-profile',
-                'golang/active-transactions',
+                // 'golang/active-transactions',
                 'golang/trs-multi-trace',
                 'golang/collect-stacks',
               ]
