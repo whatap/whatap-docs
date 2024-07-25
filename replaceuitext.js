@@ -3,7 +3,7 @@ const path = require('path');
 const readline = require('readline');
 const jsonFile = require('./src/components/ui-text/whatap-locale.json');
 
-const mdxFilepath = path.resolve(__dirname, './blog/2024-1q-summary.mdx');
+const mdxFilepath = path.resolve(__dirname, './docs/best-practice-guides/about-instance-performance-analysis.mdx');
 let mdxContent = fs.readFileSync(mdxFilepath, 'utf-8');
 
 function getServiceIdByKeyword(keyword) {
