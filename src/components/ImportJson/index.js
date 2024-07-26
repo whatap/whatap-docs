@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { translate } from "@docusaurus/Translate";
 
 // 보이지 않는 문자 제거 함수
 const cleanString = (str) => {
@@ -90,7 +91,15 @@ const ImportJson = ({ filePath, product, type, sort }) => {
   return (
     <div className='release-items'>
       {filteredLists.length === 0 ? (
-        <p>No data available for the given filters.</p>
+        <p>
+          {
+            translate({
+              id: "custom.importJson.waitingMessage",
+              message: "데이터를 불러오고 있습니다. 잠시만 기다려 주세요.",
+              description: "Loading data. Please wait a moment.",
+            })
+          }
+        </p>
       ) : (
         sort === 'date' ? (
           sortedData.map(dateGroup => (
