@@ -66,6 +66,14 @@ const toc = [{
   "id": "kubernetes",
   "level": 3
 }, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
+}, {
+  "value": "Oracle <code class=\"my\">V2</code>, Oracle Pro",
+  "id": "oracle-v2-oracle-pro",
+  "level": 4
+}, {
   "value": "Preview 2.8.0.a0",
   "id": "preview-280a0",
   "level": 2
@@ -97,6 +105,7 @@ function _createMdxContent(props) {
     code: "code",
     h2: "h2",
     h3: "h3",
+    h4: "h4",
     hr: "hr",
     img: "img",
     li: "li",
@@ -138,19 +147,39 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Kubernetes"
           })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              priority: "0",
-              children: "Fixed"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_workload",
-              className: "uitext"
-            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_containerizedAppList",
-              className: "uitext"
-            }), " 메뉴에서 매핑된 컨테이너 정보가 없는 경우 경고 메시지가 표시되지 않는 버그 수정"]
-          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_workload",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_containerizedAppList",
+            className: "uitext"
+          }), " 메뉴에서 매핑된 컨테이너 정보가 없는 경우 경고 메시지가 표시되지 않는 버그 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+          id: "oracle-v2-oracle-pro",
+          children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            className: "my",
+            children: "V2"
+          }), ", Oracle Pro"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dbSqlStat",
+            className: "uitext"
+          }), " 메뉴에서 상세 차트의 elapse time 값이 비정상적으로 높은 문제 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
