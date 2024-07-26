@@ -3292,7 +3292,7 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_7_x',
+            id: 'release-notes/service/index',
           },
           items: [
             {

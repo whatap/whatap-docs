@@ -1070,7 +1070,7 @@ main {
       div.productrelease {
         margin-left: 110px;
         padding-left: 30px;
-        border-left: 1px solid #d3d3d3;
+        border-left: 1px solid var(--ifm-font-color-base);
         div.subgroup {
           padding-bottom: 30px;
           position: relative;
@@ -1110,14 +1110,21 @@ main {
             margin-left: 20px;
           }
           a.goto {
-            display: inline;
+            display: block;
             text-decoration: none;
-            &::before {
-              content: " ► ";
-              margin-left: 5px;
-            }
+            // padding-top: 12px;
+            padding-bottom: 8px;
+            font-weight: 300;
             &:hover {
               text-decoration: underline;
+            }
+            img.ico-link {
+              border: none;
+              cursor: pointer;
+              position: relative;
+              display: inline-block;
+              margin-left: 5px;
+              top: 3px;
             }
           }
         }
