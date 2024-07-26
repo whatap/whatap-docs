@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { translate } from "@docusaurus/Translate";
 
@@ -10,6 +10,9 @@ const cleanString = (str) => {
 const ImportJson = ({ filePath, product, type, sort }) => {
   const [filteredLists, setFilteredLists] = useState([]);
   const [error, setError] = useState('');
+  const [loaded, setLoaded] = useState(false);
+  const observerRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     if (product && sort) {
@@ -51,8 +54,33 @@ const ImportJson = ({ filePath, product, type, sort }) => {
       }
     };
 
-    fetchData();
-  }, [filePath, product, type, sort]);
+    if (loaded) {
+      fetchData();
+    } else {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setLoaded(true);
+          }
+        },
+        {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        }
+      );
+      if (containerRef.current) {
+        observer.observe(containerRef.current);
+      }
+      observerRef.current = observer;
+
+      return () => {
+        if (observerRef.current) {
+          observerRef.current.disconnect();
+        }
+      };
+    }
+  }, [filePath, product, type, sort, loaded]);
 
   if (error) {
     return <p>{error}</p>;
@@ -61,7 +89,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
   let sortedData = filteredLists;
   const linkIcon = useBaseUrl('/img/ic-link.svg');
 
-  if (sort === 'date') {
+  if (sort === 'date' && loaded) {
     sortedData = filteredLists.reduce((acc, note) => {
       const dateKey = new Date(note.date).toISOString().split('T')[0]; // 날짜를 YYYY-MM-DD 형식으로 변환
       if (!acc[dateKey]) {
@@ -89,7 +117,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
   }
 
   return (
-    <div className='release-items'>
+    <div className='release-items' ref={containerRef}>
       {filteredLists.length === 0 ? (
         <p>
           {
@@ -101,7 +129,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
           }
         </p>
       ) : (
-        sort === 'date' ? (
+        sort === 'date' && loaded ? (
           sortedData.map(dateGroup => (
             <div key={dateGroup.date} className='releasegroup'>
               {Object.keys(dateGroup.products).map(productKey => (
@@ -131,7 +159,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
             </div>
           ))
         ) : (
-          filteredLists.map(note => (
+          loaded && filteredLists.map(note => (
             <div key={note.ver}>
               <h2>{note.ver}</h2>
               <div>{note.date}</div>
