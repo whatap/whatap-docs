@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { translate } from "@docusaurus/Translate";
 
 // 보이지 않는 문자 제거 함수
 const cleanString = (str) => {
@@ -57,6 +59,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
   }
 
   let sortedData = filteredLists;
+  const linkIcon = useBaseUrl('/img/ic-link.svg');
 
   if (sort === 'date') {
     sortedData = filteredLists.reduce((acc, note) => {
@@ -88,7 +91,15 @@ const ImportJson = ({ filePath, product, type, sort }) => {
   return (
     <div className='release-items'>
       {filteredLists.length === 0 ? (
-        <p>No data available for the given filters.</p>
+        <p>
+          {
+            translate({
+              id: "custom.importJson.waitingMessage",
+              message: "데이터를 불러오고 있습니다. 잠시만 기다려 주세요.",
+              description: "Loading data. Please wait a moment.",
+            })
+          }
+        </p>
       ) : (
         sort === 'date' ? (
           sortedData.map(dateGroup => (
@@ -96,17 +107,24 @@ const ImportJson = ({ filePath, product, type, sort }) => {
               {Object.keys(dateGroup.products).map(productKey => (
                 <div key={productKey} className="productrelease">
                   <div className='subgroup'>
-                  <p className='date'>{dateGroup.date}</p>
-                  <p className='product'>{productKey}</p>
-                  {dateGroup.products[productKey].map(list => (
-                    <div key={list.ver} className='rlist'>
-                      <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                      <a href={`${list.url}#${list.hash}`} className='goto' target='_blank'>{list.ver}</a>
-                      {list.details && (
-                        <div dangerouslySetInnerHTML={{ __html: list.details }} />
-                      )}
-                    </div>
-                  ))}
+                    <p className='date'>{dateGroup.date}</p>
+                    <p className='product'>{productKey}</p>
+                    {dateGroup.products[productKey].map((list, index, array) => (
+                      <div key={`${list.ver}-${index}`} className='rlist'>
+                        <div>
+                          {(index === 0 || list.ver !== array[index - 1].ver) && (
+                            <a href={`${list.url}#${list.hash}`} className='goto' target='_blank'>
+                              {list.ver}
+                              <img src={linkIcon} width="18px" height="18px" className='ico-link' />
+                            </a>
+                          )}
+                        </div>
+                        <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                        {list.details && (
+                          <div dangerouslySetInnerHTML={{ __html: list.details }} />
+                        )}
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -118,13 +136,13 @@ const ImportJson = ({ filePath, product, type, sort }) => {
               <h2>{note.ver}</h2>
               <div>{note.date}</div>
               <ul>
-                {note.Lists.map(list => (
-                  <li key={list.ver}>
+                {note.Lists.map((list, index) => (
+                  <li key={`${list.ver}-${index}`}>
                     <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
-                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.product} | {list.ver}</a></code>
                     {list.details && (
                       <div dangerouslySetInnerHTML={{ __html: list.details }} />
                     )}
+                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.product} | {list.ver}</a></code>
                   </li>
                 ))}
               </ul>
