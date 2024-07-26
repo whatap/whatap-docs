@@ -112,7 +112,6 @@ function _createMdxContent(props) {
     a: "a",
     admonition: "admonition",
     blockquote: "blockquote",
-    del: "del",
     em: "em",
     h2: "h2",
     h4: "h4",
@@ -362,9 +361,7 @@ function _createMdxContent(props) {
             children: ["예, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "hitmap",
               className: "uitext"
-            }), "의 34분", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.del, {
-              children: "36분 범위 데이터 드래그 시 26분"
-            }), "36분간의 데이터를 표시합니다."]
+            }), "의 34분~36분 범위 데이터 드래그 시 26분~36분간의 데이터를 표시합니다."]
           }), "\n"]
         })]
       })]

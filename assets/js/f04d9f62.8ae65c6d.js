@@ -73,7 +73,7 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/install-docker-go"
   },
   "next": {
-    "title": "설치 문제 해결",
+    "title": "에이전트 문제 해결",
     "permalink": "/whatap-docs/kubernetes/agent-troubleshooting"
   }
 };
