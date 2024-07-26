@@ -643,10 +643,10 @@ const _import_24q2_service_Application_contentTitle = (/* unused pure expression
 
 
 
-/*- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">성능 추이</span> 메뉴에서 다운로드한 CSV 파일의 헤더 컬럼에 단위 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><code class='changelog-service'>Service 2.4.0​</code></a></code>*/
-/*- <code class="Changed">Changed</code> <span class="uitext">Flex 보드</span> 메뉴에서 <span class="uitext">액티브 스테이터스</span> 위젯의 차트 색상 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><code class='changelog-service'>Service 2.5.0​</code></a></code>*/
-/*- <code class="Changed">Changed</code> <span class="uitext">트레이스 분석</span>에서 호출하는 <span class="uitext">HTTP 호출 통계</span> 팝업의 차트 교체 및 상세 버튼 제거 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><code class='changelog-service'>Service 2.5.0​</code></a></code>*/
-/*- <code class="Changed">Changed</code> <span class="uitext">인스턴스 성능 관리</span> &gt; <span class="uitext">로딩된 클래스</span> 메뉴에서 클래스 조회 창의 제목 수정(<span class="b500">클래스 시그니쳐</span> → <span class="uitext">클래스 상세</span>) <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><code class='changelog-service'>Service 2.6.0​</code></a></code>*/
+/*- <code class="Changed">Changed</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" /> 메뉴에서 다운로드한 CSV 파일의 헤더 컬럼에 단위 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><code class='changelog-service'>Service 2.4.0​</code></a></code>*/
+/*- <code class="Changed">Changed</code> <Cmdname sid="side_flexboard" className="uitext" /> 메뉴에서 <Cmdname sid="active_status" className="uitext" /> 위젯의 차트 색상 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><code class='changelog-service'>Service 2.5.0​</code></a></code>*/
+/*- <code class="Changed">Changed</code> <Cmdname sid="TTL06209" className="uitext" />에서 호출하는 <Cmdname sid="remote_http_call_statistics" className="uitext" /> 팝업의 차트 교체 및 상세 버튼 제거 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><code class='changelog-service'>Service 2.5.0​</code></a></code>*/
+/*- <code class="Changed">Changed</code> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_loadedClasses" className="uitext" /> 메뉴에서 클래스 조회 창의 제목 수정(<span class="b500">클래스 시그니쳐</span> → <Cmdname sid="TTL08085" className="uitext" />) <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><code class='changelog-service'>Service 2.6.0​</code></a></code>*/
 
 
 const _import_24q2_service_Application_toc = [];
@@ -657,7 +657,8 @@ function _import_24q2_service_Application_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_24q2_service_Application_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -665,18 +666,18 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 목록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agent_list",
+            className: "uitext"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "b500",
             children: "비활성 에이전트 삭제 시간"
-          }), "을 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "비활성 에이전트 유지 기간"
+          }), "을 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07821",
+            className: "uitext"
           }), "으로 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -693,15 +694,15 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "액티브 트랜잭션 이퀄라이저"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "AA016",
+            className: "uitext"
           }), " 위젯에 비활성 에이전트 표시 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -718,15 +719,15 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설정"
-          }), " 메뉴에서 비활성화된 에이전트는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "적용"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_agentSetting",
+            className: "uitext"
+          }), " 메뉴에서 비활성화된 에이전트는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "apply",
+            className: "uitext"
           }), " 버튼을 비활성화하도록 수정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -744,9 +745,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Changed",
           children: "Changed"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "통계"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_statistics",
+          className: "uitext"
         }), " 메뉴에서 선택할 수 있는 최대 시간 범위 변경 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -764,18 +765,18 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "금일 TPS"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "금일 사용자"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "today_tps",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "today_user",
+            className: "uitext"
           }), " 위젯은 하루 내에서 데이터를 재조회할 때 새로운 데이터를 요청하지 않고, 이미 조회한 데이터를 재가공해서 사용하도록 수정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -792,12 +793,12 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "성능 추이"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_perfTrend",
+            className: "uitext"
           }), " 메뉴에서 연속 검색 방지 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -814,9 +815,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트레이스 분석"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06209",
+            className: "uitext"
           }), " 창의 URL 복사 버튼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -833,9 +834,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " 구버전의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
+          }), " 구버전의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
           }), " 메뉴 제거 예정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -852,15 +853,15 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트랜잭션 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_transaction_map",
+            className: "uitext"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "TOP 30"
-          }), " 필터 내 항목을 직접 검색해 추가하는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "커스텀"
+          }), " 필터 내 항목을 직접 검색해 추가하는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "custom",
+            className: "uitext"
           }), " 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -877,9 +878,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
           }), " 메뉴에서 에이전트 검색 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -896,9 +897,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
           }), " 메뉴에서 기본 프리셋 변경 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -915,9 +916,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
           }), " 하위 메뉴에서 필터를 적용한 후 ", (0,jsx_runtime.jsx)("img", {
             decoding: "async",
             loading: "lazy",
@@ -942,9 +943,9 @@ function _import_24q2_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
           }), " 하위 메뉴의 기능 개선 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -971,6 +972,9 @@ function _import_24q2_service_Application_MDXContent(props = {}) {
       ...props
     })
   }) : _import_24q2_service_Application_createMdxContent(props);
+}
+function _import_24q2_service_Application_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -1643,22 +1647,23 @@ function _import_24q2_service_Server_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_24q2_service_Server_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "경고 알림"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "이벤트 기록"
-        }), " 메뉴에서 이벤트 상세 정보 화면으로 이동하면, ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "알림 전후"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_event",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_eventHistory",
+          className: "uitext"
+        }), " 메뉴에서 이벤트 상세 정보 화면으로 이동하면, ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "before_after_event",
+          className: "uitext"
         }), " 항목의 시간 설정에 따라 프로세스 차트의 시간 범위가 변경되도록 개선 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1675,18 +1680,18 @@ function _import_24q2_service_Server_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "경고 알림"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "이벤트 설정"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_event",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_eventSetting",
+          className: "uitext"
         }), " ", (0,jsx_runtime.jsx)("code", {
           class: "newfunc",
           children: "New"
-        }), " 메뉴에 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 파일 / 윈도우 이벤트"
+        }), " 메뉴에 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "sm_log_event_tab",
+          className: "uitext"
         }), " 설정 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1703,9 +1708,9 @@ function _import_24q2_service_Server_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Changed",
           children: "Changed"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "에이전트 설치"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_agentInstall",
+          className: "uitext"
         }), " 단계로 진입하기 전에 OS 선택 단계 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1722,9 +1727,9 @@ function _import_24q2_service_Server_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Changed",
           children: "Changed"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "서버 목록"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_serverList",
+          className: "uitext"
         }), " 메뉴에서 사용성 개선을 위해 화면 위에 서버 상태 표시 및 조작 버튼 레이아웃 변경 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1747,9 +1752,9 @@ function _import_24q2_service_Server_createMdxContent(props) {
         }), " > ", (0,jsx_runtime.jsx)("span", {
           class: "uitext",
           children: "서버 상세"
-        }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "서버 정보"
+        }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "server_info",
+          className: "uitext"
         }), " 섹션에서 Agent Name과 Host Name을 구분된 항목으로 표시하고, 사용자가 수정할 수 있는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1769,12 +1774,12 @@ function _import_24q2_service_Server_createMdxContent(props) {
         }), " ", (0,jsx_runtime.jsx)("span", {
           class: "uitext",
           children: "서버 목록"
-        }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "에이전트 명"
-        }), "과 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "호스트 명"
+        }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "oname",
+          className: "uitext"
+        }), "과 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "TTL07876",
+          className: "uitext"
         }), "을 구분된 컬럼으로 표시하도록 수정 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1791,12 +1796,12 @@ function _import_24q2_service_Server_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "관리"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "에이전트 설치"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_management",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "agentInstall",
+          className: "uitext"
         }), " 메뉴에 ", (0,jsx_runtime.jsx)("strong", {
           children: "Oracle Solaris OS"
         }), " 설치 안내 페이지 추가 ", (0,jsx_runtime.jsx)("code", {
@@ -1824,6 +1829,9 @@ function _import_24q2_service_Server_MDXContent(props = {}) {
       ...props
     })
   }) : _import_24q2_service_Server_createMdxContent(props);
+}
+function _import_24q2_service_Server_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -2650,7 +2658,7 @@ const _import_24q2_service_Database_contentTitle = (/* unused pure expression or
 
 /*#### Database V2​
 
-- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">액티브 세션</span> 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><code class='changelog-service'>Service 2.4.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> 메뉴에서 <Cmdname sid="active_sessions" className="uitext" /> 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><code class='changelog-service'>Service 2.4.0​</code></a></code>*/
 
 
 const _import_24q2_service_Database_toc = [{
@@ -2682,7 +2690,8 @@ function _import_24q2_service_Database_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_24q2_service_Database_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2693,15 +2702,15 @@ function _import_24q2_service_Database_createMdxContent(props) {
           }), " ", (0,jsx_runtime.jsx)("code", {
             class: "my",
             children: "V2"
-          }), " 상품 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "인스턴스 모니터링"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "액티브 세션"
+          }), " 상품 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbMonitoring",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "active_sessions",
+            className: "uitext"
           }), " 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2718,15 +2727,15 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 목록"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "DB IP"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agent_list",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "db_ip",
+            className: "uitext"
           }), " 컬럼에 IP 목록이 보여지도록 툴팁 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2743,15 +2752,15 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "SQL 통계"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "인스턴스"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSqlStat",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "instance",
+            className: "uitext"
           }), " 옵션에서 하나의 인스턴스만 선택할 수 있도록 수정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2768,12 +2777,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "데이터베이스 파라미터"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbParameter",
+            className: "uitext"
           }), " 메뉴에서 테이블의 헤더에 수집 시간을 표시하도록 수정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2790,18 +2799,18 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "데이터베이스 파라미터"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "기준 날짜"
-          }), "와 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "비교 날짜"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbParameter",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "reference_date",
+            className: "uitext"
+          }), "와 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "comparison_date",
+            className: "uitext"
           }), "를 모두 오늘 날짜로 설정하면 실시간 데이터와 저장된 마지막 데이터를 조회해 비교하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2823,12 +2832,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Top 오브젝트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbObjectInfo",
+            className: "uitext"
           }), " 메뉴에서 데이터가 없을 경우 표시되는 안내 문구 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2845,12 +2854,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Top 오브젝트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbObjectInfo",
+            className: "uitext"
           }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Age"
@@ -2873,12 +2882,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Wait 분석"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbWaitAnalysis",
+            className: "uitext"
           }), " 메뉴의 테이블 위젯에서 마우스를 오버하면 항목의 전체 이름을 확인할 수 있는 툴팁 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2900,12 +2909,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "멀티 인스턴스 모니터링"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_multiInstance",
+            className: "uitext"
           }), " 메뉴에서 위젯 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2922,12 +2931,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "멀티 인스턴스 모니터링"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_multiInstance",
+            className: "uitext"
           }), " 메뉴에서 디스크 사용 추이를 확인할 수 있는 상세 팝아웃 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2972,12 +2981,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSqlStat",
+            className: "uitext"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "sqlHash"
@@ -2997,12 +3006,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSqlStat",
+            className: "uitext"
           }), " 메뉴의 기본 컬럼에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "elapse wait"
@@ -3038,12 +3047,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agentInstall",
+            className: "uitext"
           }), " 메뉴의 설치 안내 스타일 및 구성 개선 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3063,12 +3072,12 @@ function _import_24q2_service_Database_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "Changed",
         children: "Changed"
-      }), " ", (0,jsx_runtime.jsx)("span", {
-        class: "uitext",
-        children: "통계/보고서"
-      }), " > ", (0,jsx_runtime.jsx)("span", {
-        class: "uitext",
-        children: "SQL 통계"
+      }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_reportStat",
+        className: "uitext"
+      }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_dbSqlStat",
+        className: "uitext"
       }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
         class: "uitext",
         children: "DB"
@@ -3096,6 +3105,9 @@ function _import_24q2_service_Database_MDXContent(props = {}) {
       ...props
     })
   }) : _import_24q2_service_Database_createMdxContent(props);
+}
+function _import_24q2_service_Database_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -3516,7 +3528,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2024"
     }
   ],
-  "readingTime": 28.695,
+  "readingTime": 28.235,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -3557,13 +3569,13 @@ const assets = {
 /*이를 통해 클라우드 및 컨테이너 기반 애플리케이션을 포함한 다양한 플랫폼과 환경에서의 모니터링이 가능해졌습니다. <- 아직 안됨. 로드맵엔 있음*/
 /*`.NET` 상품의 지원 범위가 윈도우 운영체제에서 실행되는 `.NET` 프레임워크만이 아니라 `.NET` 코어까지 확대되어 보다 다양한 운영체제 기반 모니터링을 제공합니다. 이로써 클라우드 및 컨테이너 기반 애플리케이션을 포함한 다양한 환경에서의 모니터링을 가능하게 하여 개발 및 운영 효율성을 향상하고자 하였습니다.*/
 /** 닷넷 프레임워크에서 닷넷 코어(2분기 모니터링 지원 범위 확대)*/
-/*서버 모니터링 상품 설치 시 사용자가 운영 체제를 먼저 선택하여 보다 직관적인 방식으로 설치 과정이 진행되도록 ***에이전트 설치*** 화면이 개선되었습니다. 기존의 OS별 탭 분리 방식 대신 운영 체제 선택 후 해당 OS에 적합한 개별 설치 페이지로 이동합니다.*/
+/*서버 모니터링 상품 설치 시 사용자가 운영 체제를 먼저 선택하여 보다 직관적인 방식으로 설치 과정이 진행되도록 <Cmdname sid="agentInstall" className="uitext" /> 화면이 개선되었습니다. 기존의 OS별 탭 분리 방식 대신 운영 체제 선택 후 해당 OS에 적합한 개별 설치 페이지로 이동합니다.*/
 /** 에이전트 설치 화면 편의성 개선 > OS 선택
 
 * Oracle Solaris 설치 패키지 제공*/
 /*쿠버네티스 플랫폼의 다양성과 런타임 및 기능의 확장에 따라 에이전트 설치 과정의 상세도 역시 높아졌습니다. 이를 해결하기 위해 지난 1분기 *Helm* 차트 설치 지원에 이어 이번 2분기에 사용자 환경과 다양한 와탭 옵션별로 설치 *YAML* 파일 자동 생성 기능을 도입하였습니다. UI에서 원하는 옵션을 선택하여 손쉽게 설치 파일을 생성하는 방식으로 에이전트 설치 과정이 간편해지고 사용성이 크게 개선되었습니다.*/
-/****실험실***에서 제공하던 ***Pending Pod 현황*** 메뉴가 V2로 개편되며 ***워크로드*** 하위 메뉴로 재구성되었습니다. 기존의 1회성 Pending 정보 제공에서 다음과 같이 기능이 크게 개선되었습니다. ***Pending Pod 현황*** V2는 Pending 상태의 Pod에 대한 실시간 가시성과 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 내의 Pending 상태 Pod를 체계적으로 모니터링하고 분석할 수 있습니다.*/
-/*와탭 쿠버네티스 모니터링은 2024년 상반기에 걸쳐 ***컨테이너 맵*** 개선 작업을 진행해 왔습니다. 이번 2분기에는 그 중에서도 ***컨테이너 맵*** 상세 내 ***리소스 관계*** 기능이 추가되었습니다. ***리소스 관계*** 탭을 통해 리소스 간 계층 구조와 연결 관계를 시각적으로 보다 쉽게 파악할 수 있습니다. 이를 통해 클러스터 리소스 구조와 상호 작용을 명확하게 이해하고 리소스 상태와 위치를 확인해 문제 발생 시 빠르게 대응할 수 있습니다.*/
+/*<Cmdname sid="side_lab" className="uitext" />에서 제공하던 <Cmdname sid="side_pendingPod" className="uitext" /> 메뉴가 V2로 개편되며 <Cmdname sid="side_workload" className="uitext" /> 하위 메뉴로 재구성되었습니다. 기존의 1회성 Pending 정보 제공에서 다음과 같이 기능이 크게 개선되었습니다. <Cmdname sid="side_pendingPod" className="uitext" /> V2는 Pending 상태의 Pod에 대한 실시간 가시성과 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 내의 Pending 상태 Pod를 체계적으로 모니터링하고 분석할 수 있습니다.*/
+/*와탭 쿠버네티스 모니터링은 2024년 상반기에 걸쳐 <Cmdname sid="side_containerMap" className="uitext" /> 개선 작업을 진행해 왔습니다. 이번 2분기에는 그 중에서도 <Cmdname sid="side_containerMap" className="uitext" /> 상세 내 <Cmdname sid="TTL07237" className="uitext" /> 기능이 추가되었습니다. <Cmdname sid="TTL07237" className="uitext" /> 탭을 통해 리소스 간 계층 구조와 연결 관계를 시각적으로 보다 쉽게 파악할 수 있습니다. 이를 통해 클러스터 리소스 구조와 상호 작용을 명확하게 이해하고 리소스 상태와 위치를 확인해 문제 발생 시 빠르게 대응할 수 있습니다.*/
 /*쿠버네티스 리소스간 연결 관계를 시각적으로 확인할 수 있습니다.
 
 쿠버네티스 클러스터 내 리소스 간의 계층 구조와 연관 관계를 시각적으로 표현하여 사용자에게 제공합니다. 이를 통해 사용자는 한 눈에 Pod와 컨테이너가 어느 Node에서 실행 중인지, 어떤 Deployment에 의해 배포되었는지, 그리고 어느 Namespace에 속하는지 등의 정보를 쉽게 파악할 수 있습니다.
@@ -3578,7 +3590,7 @@ const assets = {
 이 기능을 통해 클러스터 운영 및 관리 과정에서의 효율성과 신속한 문제 해결이 가능해집니다.*/
 /*실시간으로 Pending 상태의 Pod 현황을 조회할 수 있으며,
 
-***Pending Pod 현황*** V2를 통해 클러스터 내 Pending 상태의 Pod 현황을 종합적으로 모니터링하고 분석할 수 있습니다.
+<Cmdname sid="side_pendingPod" className="uitext" /> V2를 통해 클러스터 내 Pending 상태의 Pod 현황을 종합적으로 모니터링하고 분석할 수 있습니다.
 
 클러스터 내 Pending 상태의 Pod를 종합적으로 모니터링하고 분석할 수 있게 합니다.
 
@@ -3750,7 +3762,8 @@ function _2024_2q_summary_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  }, {Details, ImgLang} = _components;
+  }, {Cmdname, Details, ImgLang} = _components;
+  if (!Cmdname) _2024_2q_summary_missingMdxReference("Cmdname", true);
   if (!Details) _2024_2q_summary_missingMdxReference("Details", true);
   if (!ImgLang) _2024_2q_summary_missingMdxReference("ImgLang", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
@@ -3792,16 +3805,14 @@ function _2024_2q_summary_createMdxContent(props) {
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "트랜잭션 맵"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_transaction_map",
+              className: "uitext"
             }), "이 지난 1분기에 이어 고도화되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "애플리케이션 대시보드"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "application_dashboard",
+              className: "uitext"
             }), "에 기본 프리셋 변경 기능이 추가되었습니다."]
           }), "\n"]
         }), "\n"]
@@ -3838,22 +3849,19 @@ function _2024_2q_summary_createMdxContent(props) {
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "에이전트 설치"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "agentInstall",
+              className: "uitext"
             }), " 화면이 보다 손쉬운 옵션 선택 방식으로 개편되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "Pending Pod 현황"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_pendingPod",
+              className: "uitext"
             }), " 메뉴가 새롭게 개편되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "컨테이너 맵"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_containerMap",
+              className: "uitext"
             }), " 메뉴에서 ", (0,jsx_runtime.jsx)(_components.em, {
               children: (0,jsx_runtime.jsx)(_components.strong, {
                 children: "리소스 관계도"
@@ -3898,10 +3906,9 @@ function _2024_2q_summary_createMdxContent(props) {
         })
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "세션 리플레이"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL08103",
+            className: "uitext"
           }), " 기능을 새롭게 제공합니다."]
         }), "\n"]
       })]
@@ -3915,26 +3922,22 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 2분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "공통"
-      }), " 부분에서 편의성 향상을 위해 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Flex 보드"
-        })
-      }), "를 비롯한 공통 메뉴 개선 작업이 이루어졌습니다. 사이드 메뉴의 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "프로젝트 목록"
-        })
-      }), "에서 쉽게 그룹을 이동할 수 있으며, ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Flex 보드"
-        })
+      }), " 부분에서 편의성 향상을 위해 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_flexboard",
+        className: "uitext"
+      }), "를 비롯한 공통 메뉴 개선 작업이 이루어졌습니다. 사이드 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_projectList",
+        className: "uitext"
+      }), "에서 쉽게 그룹을 이동할 수 있으며, ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_flexboard",
+        className: "uitext"
       }), "의 경우 그룹 내 옵션을 공유할 수 있는 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "그룹 내 전체 위젯 적용"
         })
-      }), " 기능, 그룹 위젯 내 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "프로젝트 선택"
-        })
+      }), " 기능, 그룹 위젯 내 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TLT06410",
+        className: "uitext"
       }), " 기능이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
@@ -3960,28 +3963,24 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 2분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Application"
-      }), " 부분의 주목할 만한 신규 기능으로 지난 1분기에 이어 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "트랜잭션 맵"
-        })
-      }), "의 고도화와 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "애플리케이션 대시보드"
-        })
+      }), " 부분의 주목할 만한 신규 기능으로 지난 1분기에 이어 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_transaction_map",
+        className: "uitext"
+      }), "의 고도화와 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "application_dashboard",
+        className: "uitext"
       }), " 기본 프리셋 변경 기능을 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "트랜잭션 맵"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_transaction_map",
+        className: "uitext"
       }), " 고도화 작업의 일환으로 응답 시간 분포도 차트에서 선택한 항목만을 조회할 수 있는 커스텀 필터 기능을 새롭게 제공합니다. 기존 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "TOP 30"
         })
-      }), " 섹션 옆의 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "커스텀"
-        })
+      }), " 섹션 옆의 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "custom",
+        className: "uitext"
       }), " 탭에서 조회를 원하는 특정 트랜잭션, 도메인, IP 항목에서 원하는 값을 직접 입력하거나 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "TOP 30"
@@ -3998,14 +3997,12 @@ function _2024_2q_summary_createMdxContent(props) {
         })
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "애플리케이션 대시보드"
-        })
-      }), " 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "기본으로 표시"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "application_dashboard",
+        className: "uitext"
+      }), " 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "BTN08106",
+        className: "uitext"
       }), " 옵션을 활용해 보세요. 기본으로 지정한 대시보드는 프리셋 목록에서 ", (0,jsx_runtime.jsx)("code", {
         class: "default-tag",
         children: "기본"
@@ -4071,10 +4068,9 @@ function _2024_2q_summary_createMdxContent(props) {
           children: (0,jsx_runtime.jsx)(_components.strong, {
             children: "사이트 맵"
           })
-        }), "에서 진입하는 구버전 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "애플리케이션 대시보드"
-          })
+        }), "에서 진입하는 구버전 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "application_dashboard",
+          className: "uitext"
         }), " ", (0,jsx_runtime.jsx)("code", {
           class: "oldfunc",
           children: "Old"
@@ -4082,14 +4078,12 @@ function _2024_2q_summary_createMdxContent(props) {
           children: "7월 24일"
         }), "자로 서비스 제공이 ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "종료"
-        }), "될 예정입니다. ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "대시보드"
-          })
-        }), " 메뉴에서 개선된 기능과 함께 새로운 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "애플리케이션 대시보드"
-          })
+        }), "될 예정입니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_dashboard",
+          className: "uitext"
+        }), " 메뉴에서 개선된 기능과 함께 새로운 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "application_dashboard",
+          className: "uitext"
         }), "를 이용해 주세요."]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
@@ -4107,10 +4101,9 @@ function _2024_2q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "트랜잭션 맵"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_transaction_map",
+              className: "uitext"
             }), " 메뉴의 ", (0,jsx_runtime.jsx)(_components.strong, {
               children: "커스텀 필터"
             }), " 기능에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
@@ -4120,10 +4113,9 @@ function _2024_2q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "애플리케이션 대시보드"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "application_dashboard",
+              className: "uitext"
             }), " 기본 프리셋 변경에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://docs.whatap.io/java/dashboard#changepreset",
               children: "다음 문서"
@@ -4191,30 +4183,25 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 2분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Kubernetes"
-      }), " 부분의 주목할 만한 신규 기능 및 변경 사항으로 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "에이전트 설치"
-        })
-      }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Pending Pod 현황"
-        })
-      }), " 개편, ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "컨테이너 맵"
-        })
-      }), " 내 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "리소스 관계"
-        })
+      }), " 부분의 주목할 만한 신규 기능 및 변경 사항으로 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "agentInstall",
+        className: "uitext"
+      }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_pendingPod",
+        className: "uitext"
+      }), " 개편, ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_containerMap",
+        className: "uitext"
+      }), " 내 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL07237",
+        className: "uitext"
       }), " 기능을 소개합니다."]
     }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["쿠버네티스 제품에 발생하는 지속적인 변화와 다양한 컨테이너 런타임의 등장에 따라 에이전트 설치 과정 또한 복잡해지고 있습니다. 이에 와탭은 지난 1분기의 ", (0,jsx_runtime.jsx)(_components.em, {
         children: "Helm"
-      }), " 차트 설치 지원에 이어 2분기에는 새로운 쿠버네티스 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "에이전트 설치"
-        })
+      }), " 차트 설치 지원에 이어 2분기에는 새로운 쿠버네티스 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "agentInstall",
+        className: "uitext"
       }), " 기능을 제공합니다. 기존에는 설치 ", (0,jsx_runtime.jsx)(_components.em, {
         children: "YAML"
       }), " 파일 다운로드 후 추가적으로 항목을 수정해야 하는 경우가 있었습니다. 하지만 이제는 UI 상에서 사용자 쿠버네티스 환경의 주요 구성요소나 특징, 그리고 사용하고자 하는 기능 선택 시 그에 적합한 설치 파일이 제공됩니다. 따라서 훨씬 더 빠르고 쉽게 에이전트를 설치할 수 있습니다."]
@@ -4222,46 +4209,38 @@ function _2024_2q_summary_createMdxContent(props) {
       img: "k8s-install-master-node-download.png",
       desc: "설치 파일 다운로드 분기 예시"
     }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "실험실"
-        })
-      }), " 메뉴에서 제공되던 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Pending Pod 현황"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_lab",
+        className: "uitext"
+      }), " 메뉴에서 제공되던 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_pendingPod",
+        className: "uitext"
       }), " 기능이 ", (0,jsx_runtime.jsx)("code", {
         class: "my",
         children: "V2"
-      }), "로 개편되면서 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "워크로드"
-        })
-      }), " 하위 메뉴로 정식 배포되었습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Pending Pod 현황"
-        })
+      }), "로 개편되면서 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_workload",
+        className: "uitext"
+      }), " 하위 메뉴로 정식 배포되었습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_pendingPod",
+        className: "uitext"
       }), " 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "k8s-pending-pod-status-detail.png",
       desc: "Pending Pod 상세 분기 예시"
     }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "컨테이너 맵"
-        })
-      }), " 개선 작업을 진행하였습니다. 특히 2분기에는 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "컨테이너 맵"
-        })
-      }), "에 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "리소스 관계"
-        })
-      }), " 기능이 추가되었습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "리소스 관계"
-        })
+      children: ["와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_containerMap",
+        className: "uitext"
+      }), " 개선 작업을 진행하였습니다. 특히 2분기에는 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_containerMap",
+        className: "uitext"
+      }), "에 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL07237",
+        className: "uitext"
+      }), " 기능이 추가되었습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL07237",
+        className: "uitext"
       }), " 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)("p", {
       align: "center",
@@ -4294,10 +4273,9 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
       type: "note",
       children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "Pending Pod 현황"
-          })
+        children: [(0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_pendingPod",
+          className: "uitext"
         }), " ", (0,jsx_runtime.jsx)("code", {
           class: "my",
           children: "V2"
@@ -4385,14 +4363,12 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 2분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Browser"
-      }), " 부분의 주목할 만한 신규 기능으로 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "세션 리플레이"
-        })
-      }), "를 소개합니다. 이벤트 목록만으로는 장애를 정확히 재현하기 어려울 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "세션 리플레이"
-        })
+      }), " 부분의 주목할 만한 신규 기능으로 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL08103",
+        className: "uitext"
+      }), "를 소개합니다. 이벤트 목록만으로는 장애를 정확히 재현하기 어려울 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL08103",
+        className: "uitext"
       }), " 기능은 사용자가 웹 사이트에서 수행하는 모든 이벤트를 자동으로 기록하고 재생할 수 있는 기능입니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "사용자의 클릭, 스크롤, 입력, 페이지 전환 등과 같은 모든 이벤트를 정확하게 재현하여 웹 사이트와 사용자 사이의 상호작용을 분석할 수 있습니다. 이를 통해 실제 사용자 경험을 재현하여 잠재적인 문제를 빠르게 식별하고 해결할 수 있으며, 사용자의 웹 사이트 사용 방식에 대한 통찰을 제공하여 최적화를 도울 수 있습니다."
@@ -4407,18 +4383,18 @@ function _2024_2q_summary_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "Feature",
         children: "Feature"
-      }), " ", (0,jsx_runtime.jsx)("span", {
-        class: "uitext",
-        children: "페이지 로드 히트맵"
-      }), ", ", (0,jsx_runtime.jsx)("span", {
-        class: "uitext",
-        children: "AJAX 히트맵"
-      }), ", ", (0,jsx_runtime.jsx)("span", {
-        class: "uitext",
-        children: "사용자 세션 로그 검색"
-      }), " 메뉴에 ", (0,jsx_runtime.jsx)("span", {
-        class: "uitext",
-        children: "세션 리플레이"
+      }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_rumPageLoadHitmap",
+        className: "uitext"
+      }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_ajaxAnalytics",
+        className: "uitext"
+      }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_userSessionEventSearch",
+        className: "uitext"
+      }), " 메뉴에 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL08103",
+        className: "uitext"
       }), " 기능 추가 ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
@@ -4439,10 +4415,9 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
       type: "note",
       children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "세션 리플레이"
-          })
+        children: [(0,jsx_runtime.jsx)(Cmdname, {
+          sid: "TTL08103",
+          className: "uitext"
         }), " 기능에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
           href: "https://docs.whatap.io/browser/session-replay",
           children: "다음 문서"
@@ -4504,18 +4479,15 @@ function _2024_2q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 2분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "URL"
-      }), " 부분의 변경 사항을 소개합니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "URL 목록"
-        })
-      }), " 메뉴 및 해당 메뉴 내 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "URL 편집"
-        })
-      }), " 창의 UI가 사용자 편의성 향상을 위해 전반적으로 개편되었습니다. 또한 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "URL 삭제"
-        })
+      }), " 부분의 변경 사항을 소개합니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_urlList",
+        className: "uitext"
+      }), " 메뉴 및 해당 메뉴 내 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "edit_url",
+        className: "uitext"
+      }), " 창의 UI가 사용자 편의성 향상을 위해 전반적으로 개편되었습니다. 또한 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL07886",
+        className: "uitext"
       }), " 역시 편집창이 아니라 목록 조회 시 삭제할 수 있도록 변경되었습니다. ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "URL 상세"

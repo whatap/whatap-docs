@@ -81,6 +81,11 @@ const assets = {
 
 };
 
+/****트레이스*** 기능의 하위 메뉴는 ***대시보드***, ***트랜잭션 목록***으로 구성되어 있습니다.*/
+/*
+***트랜잭션 목록*** 화면은 지정된 시간대의 트랜잭션 목록 정보를 제공합니다. 만약 트랜잭션 분포도를 확인하여 특정 구간의 트랜잭션들만 확인하려면 위 트레이스 ***대시보드***의 히트맵 차트에서 대상을 선택(드래그)하세요.
+
+<ImgLang img='k8s-tx-list.png' desc='트랜잭션 목록' />*/
 
 
 const toc = [{
@@ -92,8 +97,8 @@ const toc = [{
   "id": "대시보드",
   "level": 2
 }, {
-  "value": "트랜잭션 목록",
-  "id": "트랜잭션-목록",
+  "value": "트레이스 분석",
+  "id": "트레이스-분석",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -103,6 +108,7 @@ function _createMdxContent(props) {
     em: "em",
     h2: "h2",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     section: "section",
     strong: "strong",
@@ -148,22 +154,8 @@ function _createMdxContent(props) {
           }), "를 참조하세요."]
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "whatap_kubernetes_container_map_trace_example.png",
+        img: "k8s-container-map-trace.png",
         desc: "트레이스"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "트레이스"
-          })
-        }), " 기능의 하위 메뉴는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "대시보드"
-          })
-        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "트랜잭션 목록"
-          })
-        }), "으로 구성되어 있습니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -356,21 +348,26 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "트랜잭션-목록",
-        children: "트랜잭션 목록"
+        id: "트레이스-분석",
+        children: "트레이스 분석"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: ["대시보드 내 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "트랜잭션 목록"
+            children: "Hitmap"
           })
-        }), " 화면은 지정된 시간대의 트랜잭션 목록 정보를 제공합니다. 만약 트랜잭션 분포도를 확인하여 특정 구간의 트랜잭션들만 확인하려면 위 트레이스 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        }), "에서 조회를 원하는 구간 드래그 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "대시보드"
+            children: "트레이스 분석"
           })
-        }), "의 히트맵 차트에서 대상을 선택(드래그)하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-tx-list.png",
-        desc: "트랜잭션 목록"
+        }), "을 확인할 수 있습니다. 트랜잭션 목록에서 원하는 트랜잭션 선택 후 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["트레이스 분석에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "../java/dashboard-hitmap-trace",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
       })]
     })]
   });

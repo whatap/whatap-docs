@@ -110,29 +110,9 @@ const toc = [{
   "id": "와탭-쿠버네티스-에이전트의-gpu-메트릭스-수집-방법",
   "level": 2
 }, {
-  "value": "사이드카 패턴",
-  "id": "사이드카-패턴",
-  "level": 4
-}, {
-  "value": "DCGM Exporter",
-  "id": "dcgm-exporter",
-  "level": 4
-}, {
-  "value": "메트릭 수집 및 전송",
-  "id": "메트릭-수집-및-전송",
-  "level": 4
-}, {
   "value": "수집 범위",
   "id": "수집-범위",
   "level": 2
-}, {
-  "value": "컨테이너",
-  "id": "컨테이너",
-  "level": 4
-}, {
-  "value": "노드",
-  "id": "노드",
-  "level": 4
 }, {
   "value": "수집 메트릭스",
   "id": "수집-메트릭스",
@@ -152,7 +132,6 @@ function _createMdxContent(props) {
     code: "code",
     h2: "h2",
     h3: "h3",
-    h4: "h4",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
@@ -170,43 +149,47 @@ function _createMdxContent(props) {
         children: "와탭 쿠버네티스 에이전트의 GPU 메트릭스 수집 방법"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "와탭 쿠버네티스 노드 에이전트는 데이터 센터 GPU 관리자(DCGM) Exporter를 사용하여 NVIDIA GPU의 성능 메트릭을 수집하고 모니터링합니다. 해당 과정은 사이드카(Sidecar) 패턴을 활용하여 구성됩니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "사이드카-패턴",
-        children: "사이드카 패턴"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "DCGM Exporter는 주 애플리케이션 컨테이너와 함께 동일한 Pod 내에서 실행되는 보조 컨테이너로 설정됩니다. 이 사이드카 패턴은 DCGM Exporter가 GPU 상태 정보를 효율적으로 수집할 수 있도록 돕습니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "dcgm-exporter",
-        children: "DCGM Exporter"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "dcgm-exporter"
-        }), " 컨테이너는 NVIDIA의 데이터 센터 GPU 관리자(DCGM)를 통해 GPU의 상태와 성능 관련 지표를 수집합니다."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "메트릭-수집-및-전송",
-        children: "메트릭 수집 및 전송"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-node-agent"
-        }), " 컨테이너는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "dcgm-exporter"
-        }), "의 HTTP 엔드포인트를 통해 GPU 메트릭을 요청하고 이를 수집합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "dcgm-exporter"
-          }), "의 HTTP 엔드포인트는 보통 포트 9400을 사용합니다."]
-        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "사이드카 패턴"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "DCGM Exporter는 주 애플리케이션 컨테이너와 함께 동일한 Pod 내에서 실행되는 보조 컨테이너로 설정됩니다. 이 사이드카 패턴은 DCGM Exporter가 GPU 상태 정보를 효율적으로 수집할 수 있도록 돕습니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "DCGM Exporter"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "dcgm-exporter"
+            }), " 컨테이너는 NVIDIA의 데이터 센터 GPU 관리자(DCGM)를 통해 GPU의 상태와 성능 관련 지표를 수집합니다."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "메트릭 수집 및 전송"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "whatap-node-agent"
+            }), " 컨테이너는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "dcgm-exporter"
+            }), "의 HTTP 엔드포인트를 통해 GPU 메트릭을 요청하고 이를 수집합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "note",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "dcgm-exporter"
+              }), "의 HTTP 엔드포인트는 보통 포트 9400을 사용합니다."]
+            })]
+          }), "\n"]
+        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -215,22 +198,26 @@ function _createMdxContent(props) {
         children: "수집 범위"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "와탭 쿠버네티스 에이전트는 노드에 배포된 각 컨테이너의 GPU 사용량을 효율적으로 모니터링하고 관리하는데 중점을 두고 있습니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "컨테이너",
-        children: "컨테이너"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 노드 에이전트는 각 컨테이너의 GPU 메트릭을 수집하여 각 컨테이너가 GPU 자원을 얼마나 사용하는지를 명확히 파악할 수 있도록 합니다. 이 데이터는 리소스 할당을 최적화하는 데 유용합니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "노드",
-        children: "노드"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "노드 전체의 GPU 사용량을 모니터링하여 노드 전반의 GPU 리소스 활용도를 평가할 수 있습니다. 이 정보는 클러스터의 전반적인 성능 분석에 유용하지만, 개별 프로세스 수준의 세부 정보는 제공되지 않습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "컨테이너"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "와탭 노드 에이전트는 각 컨테이너의 GPU 메트릭을 수집하여 각 컨테이너가 GPU 자원을 얼마나 사용하는지를 명확히 파악할 수 있도록 합니다. 이 데이터는 리소스 할당을 최적화하는 데 유용합니다."
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "노드"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "노드 전체의 GPU 사용량을 모니터링하여 노드 전반의 GPU 리소스 활용도를 평가할 수 있습니다. 이 정보는 클러스터의 전반적인 성능 분석에 유용하지만, 개별 프로세스 수준의 세부 정보는 제공되지 않습니다."
+          }), "\n"]
+        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",

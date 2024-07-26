@@ -37,47 +37,47 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 - <code class="Changed">Changed</code> 프로젝트 생성 개수가 제한될 때 표시되는 안내 메시지를 모달 방식으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
 /*#### User Interface​
 
-- <code class="Changed">Changed</code> <span class="uitext">와탭 모니터링 정보</span> 창에서 와탭 로고에 다크 테마 적용, 플랫폼에 <b>WhaTap Network</b> 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="BTN06853" className="uitext" /> 창에서 와탭 로고에 다크 테마 적용, 플랫폼에 <b>WhaTap Network</b> 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
 - <code class="Changed">Changed</code> 프로젝트 생성 과정에서 상품 선택 시 모든 상품을 의미하는 <b>All Platform</b> 문구를 <b>All Category</b>로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
 - <code class="Changed">Changed</code> 에러가 발생한 경우 화면에서 채팅 도구(말풍선)를 통해 문의할 수 있도록 안내 문구 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> 채팅 문의 화면에서 <span class="b500">1:1 온라인 교육</span> 텍스트를 <span class="uitext">와탭 사용자 교육 신청</span>으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
+- <code class="Changed">Changed</code> 채팅 문의 화면에서 <span class="b500">1:1 온라인 교육</span> 텍스트를 <Cmdname sid="DSC07202" className="uitext" />으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
 /*#### 관리​
 
 - <code class="Changed">Changed</code> <span class="uitext">통합 멤버 관리</span> 메뉴에서 <b>결제</b> 권한 및 <b>멤버 관리</b> 권한을 소유한 유일한 멤버를 삭제할 경우 경고 메시지를 표시하도록 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">그룹 추가</span> 페이지의 제목 변경, <span class="b500">프로젝트 목록</span> → <span class="uitext">그룹 추가</span> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="add_group" className="uitext" /> 페이지의 제목 변경, <span class="b500">프로젝트 목록</span> → <Cmdname sid="add_group" className="uitext" /> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
 #### 계정 관리​
 
-- <code class="Changed">Changed</code> <span class="uitext">멀티팩터 인증</span> 섹션에서 OTP 키를 발급하지 않은 상태이면 <span class="uitext">이메일로 OTP 키 보내기</span> 버튼 비활성화 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
+- <code class="Changed">Changed</code> <Cmdname sid="two_factor_auth" className="uitext" /> 섹션에서 OTP 키를 발급하지 않은 상태이면 <Cmdname sid="send_otp_key_mail" className="uitext" /> 버튼 비활성화 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
 /*#### 통합 보고서​
 
 - <code class="Changed">Changed</code> 신규 보고서 생성 또는 보고서 중복 생성 시 출력되는 메시지 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
 /*#### 이용 내역​
 
-- <code class="Changed">Changed</code> <span class="uitext">사용량</span> 메뉴에서 UTC 기준 날짜로 사용량 표시 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="usage" className="uitext" /> 메뉴에서 UTC 기준 날짜로 사용량 표시 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
 - <code class="Changed">Changed</code> 결제 정보를 등록하지 않더라도 프로모션 배너를 노출하고, 결제 정보를 등록하지 않은 상태에서 프로모션 코드를 입력할 수 없도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">청구서 미리보기</span> 메뉴에서 사용량 수치를 클릭하면 사용량 상세 정보를 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_billingPreview" className="uitext" /> 메뉴에서 사용량 수치를 클릭하면 사용량 상세 정보를 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">결제 정보</span> 메뉴에서 카드 결제 수단 등록 시 약관 동의 문구 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_paymentInformation" className="uitext" /> 메뉴에서 카드 결제 수단 등록 시 약관 동의 문구 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">프로젝트 유료 전환</span> 메뉴에서 <span class="b500">결제 권한 없는 프로젝트 표시</span> 문구를 <span class="uitext">모든 유료 프로젝트 표시</span>로 변경, 툴팁 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
+- <code class="Changed">Changed</code> <Cmdname sid="project_subscription" className="uitext" /> 메뉴에서 <span class="b500">결제 권한 없는 프로젝트 표시</span> 문구를 <Cmdname sid="DSC07606" className="uitext" />로 변경, 툴팁 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
 /*#### 기타​
 
 - <code class="Changed">Changed</code> 프로젝트 생성 과정에서 상품 선택 시 모든 상품을 의미하는 <b>All Platform</b> 문구를 <b>All Category</b>로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">이용 내역</span> &gt; <span class="uitext">청구서 미리보기</span> 메뉴에서 사용량 수치를 클릭하면 사용량 상세 정보를 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_billingPreview" className="uitext" /> 메뉴에서 사용량 수치를 클릭하면 사용량 상세 정보를 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">메트릭스 차트</span> 메뉴에서 전체 에이전트 선택 해제 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> 메뉴에서 전체 에이전트 선택 해제 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">메트릭스 조회</span> 메뉴에서 테이블 목록을 스크롤하면 헤더는 고정된 상태로 유지되도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" /> 메뉴에서 테이블 목록을 스크롤하면 헤더는 고정된 상태로 유지되도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <b>수정</b> 또는 <b>알림 설정</b> 권한을 가진 멤버가 <span class="uitext">정비 계획</span> 메뉴를 이용할 수 있도록 권한 조정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
+- <code class="Changed">Changed</code> <b>수정</b> 또는 <b>알림 설정</b> 권한을 가진 멤버가 <Cmdname sid="side_maintenancePlan" className="uitext" /> 메뉴를 이용할 수 있도록 권한 조정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
 /*- <code class="Changed">Changed</code> 프로젝트 생성에서 그룹 추가 시 프로젝트 생성 화면으로 이동하도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
 
 
@@ -127,12 +127,12 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이용 내역"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "청구서 미리보기"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_myUsage",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_billingPreview",
+            className: "uitext"
           }), " 메뉴에서 사용량 수치를 클릭하면 사용량 상세 정보를 표시하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -149,12 +149,12 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "메트릭스 차트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_metricsChart",
+            className: "uitext"
           }), " 메뉴에서 전체 에이전트 선택 해제 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -203,12 +203,12 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "메트릭스 조회"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_metricsSearch",
+            className: "uitext"
           }), " 메뉴에서 테이블 목록을 스크롤하면 헤더는 고정된 상태로 유지되도록 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -229,9 +229,9 @@ function _createMdxContent(props) {
             children: "수정"
           }), " 또는 ", (0,jsx_runtime.jsx)("b", {
             children: "알림 설정"
-          }), " 권한을 가진 멤버가 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "정비 계획"
+          }), " 권한을 가진 멤버가 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_maintenancePlan",
+            className: "uitext"
           }), " 메뉴를 이용할 수 있도록 권한 조정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -253,9 +253,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Flex 보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_flexboard",
+            className: "uitext"
           }), " 메뉴에서 TopN 위젯의 순위 갱신 시 그래프 차트가 이어지지 않도록 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -272,12 +272,12 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " 모든 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "히트맵"
-          }), " 위젯의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Y축 자동"
+          }), " 모든 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "hitmap",
+            className: "uitext"
+          }), " 위젯의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "yaxis",
+            className: "uitext"
           }), " 옵션을 기본 적용하도록 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -294,9 +294,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Flex 보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_flexboard",
+            className: "uitext"
           }), " 메뉴에서 보조 차트의 소수 자릿수 길이 조정 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -313,12 +313,12 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Flex 보드"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Apdex"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_flexboard",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "apdex",
+            className: "uitext"
           }), " 위젯에 차트 범례 설정 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -375,9 +375,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 대시보드의 Apdex * 100 위젯에 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "복수 프로젝트 병합"
+          }), " 대시보드의 Apdex * 100 위젯에 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "ITM07648",
+            className: "uitext"
           }), " 메트릭스 항목 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -434,15 +434,15 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "경고 알림"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 설정"
-          }), " 메뉴에서 메트릭스 이벤트 추가 시 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "수신 테스트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
+          }), " 메뉴에서 메트릭스 이벤트 추가 시 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "alert_test",
+            className: "uitext"
           }), " 기능 실행을 위한 필수 입력 조건 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -459,12 +459,12 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "경고 알림"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 기록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventHistory",
+            className: "uitext"
           }), " 메뉴에서 다음 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -503,15 +503,15 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "경고 알림"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 설정"
-          }), " 메뉴에서 메트릭스 이벤트를 추가 또는 편집 시 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "카테고리"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
+          }), " 메뉴에서 메트릭스 이벤트를 추가 또는 편집 시 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "category",
+            className: "uitext"
           }), " 항목의 상품 로고에 적용된 다크 테마 시인성 개선 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -528,9 +528,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "New",
             children: "New"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 설정"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
           }), " ", (0,jsx_runtime.jsx)("code", {
             class: "newfunc",
             children: "New"
@@ -550,9 +550,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " 프로젝트 생성 시 경고 알림 메시지의 기본 언어를 설정할 수 있는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "알림 수신 언어"
+          }), " 프로젝트 생성 시 경고 알림 메시지의 기본 언어를 설정할 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "sms_noti_alert_language",
+            className: "uitext"
           }), " 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -569,9 +569,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 수신 설정"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventNoti",
+            className: "uitext"
           }), " 메뉴에서 3rd 파티 플러그인으로 Opsgenie 플랫폼 등록 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -604,21 +604,21 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "경고 알림"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 설정"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
           }), " ", (0,jsx_runtime.jsx)("code", {
             class: "newfunc",
             children: "New"
-          }), " 메뉴에서 기존 이벤트 설정 메뉴의 이벤트 탭을 표시하고, ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "JSON 일괄 수정"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "JSON 일괄 다운로드"
+          }), " 메뉴에서 기존 이벤트 설정 메뉴의 이벤트 탭을 표시하고, ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "BTN07761",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "BTN07762",
+            className: "uitext"
           }), " 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -660,13 +660,13 @@ const _import_service_Application_contentTitle = (/* unused pure expression or s
 
 
 /*- <code class="Changed">Changed</code> Node 에이전트 설치 지원 버전 변경 7.10.0 → <b>16.4.0</b> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
-/*- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 <span class="uitext">히트맵</span> 위젯의 <span class="uitext">Y축 자동</span> 옵션을 기본 적용, Y축 변동값 저장하도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+/*- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> 메뉴에서 <Cmdname sid="hitmap" className="uitext" /> 위젯의 <Cmdname sid="yaxis" className="uitext" /> 옵션을 기본 적용, Y축 변동값 저장하도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> Java 프로젝트의 <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 JVM 옵션과 관련한 코드 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> Java 프로젝트의 <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" /> 메뉴에서 JVM 옵션과 관련한 코드 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">멀티 트랜잭션</span> &gt; <span class="uitext">차트</span> 모드에서 라벨 표시 기준을 수행 시간 기준으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="TTL06209" className="uitext" /> 창의 <Cmdname sid="multi_transaction" className="uitext" /> &gt; <Cmdname sid="chart" className="uitext" /> 모드에서 라벨 표시 기준을 수행 시간 기준으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">애플리케이션 대시보드</span> 메뉴의 <span class="uitext">히트맵</span> 위젯에 <span class="uitext">히트맵 트랜잭션</span> 메뉴로 이동하는 버튼 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
+- <code class="Changed">Changed</code> <Cmdname sid="application_dashboard" className="uitext" /> 메뉴의 <Cmdname sid="hitmap" className="uitext" /> 위젯에 <Cmdname sid="hitmap_transaction" className="uitext" /> 메뉴로 이동하는 버튼 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
 
 
 const _import_service_Application_toc = [];
@@ -688,12 +688,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트랜잭션 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_transaction_map",
+            className: "uitext"
           }), " 메뉴 개편 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -725,9 +725,9 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
           }), " 메뉴의 각 위젯에 툴팁 및 관련 정보, 다국어 지원 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -764,12 +764,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트레이스 분석"
-          }), " 창의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "멀티 트랜잭션"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06209",
+            className: "uitext"
+          }), " 창의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "multi_transaction",
+            className: "uitext"
           }), " 탭에서 프로젝트 선택 상태를 저장하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -786,12 +786,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트레이스 분석"
-          }), " 창의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "멀티 트랜잭션"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06209",
+            className: "uitext"
+          }), " 창의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "multi_transaction",
+            className: "uitext"
           }), " 탭에서 차트 및 트리 설정에 대한 저장 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -808,12 +808,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트레이스 분석"
-          }), " 창의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "테이블 뷰"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06209",
+            className: "uitext"
+          }), " 창의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "table_view",
+            className: "uitext"
           }), "에서 ", (0,jsx_runtime.jsx)("b", {
             children: "DB Connection"
           }), ", ", (0,jsx_runtime.jsx)("b", {
@@ -837,12 +837,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
           }), " 메뉴에서 차트 영역의 디자인 요소 수정(위젯 제목 크기 및 위젯 간격, 차트 구간 설명 텍스트의 크기 수정) ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -859,18 +859,18 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "애플리케이션 대시보드"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "금일 TPS"
-          }), " 및 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "금일 사용자"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "application_dashboard",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "today_tps",
+            className: "uitext"
+          }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "today_user",
+            className: "uitext"
           }), " 위젯에 ", (0,jsx_runtime.jsx)("code", {
             children: "All APPS."
           }), " 태그 추가 ", (0,jsx_runtime.jsx)("code", {
@@ -889,9 +889,9 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트레이스 분석"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06209",
+            className: "uitext"
           }), " 창에서 SQL 상세 내용 확인 시 CRUD 표시 형식 개선 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -908,12 +908,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트랜잭션 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_transaction_map",
+            className: "uitext"
           }), " 메뉴에 새로운 UI 적용 및 기능 개편 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -950,9 +950,9 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
           }), " 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 디자인 시스템 적용 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -969,9 +969,9 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "인스턴스 성능 관리"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_agentsConfiguration",
+            className: "uitext"
           }), " 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 디자인 시스템 적용 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -988,18 +988,18 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트랜잭션"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "정렬 순서"
-          }), " 항목으로 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "SQL 패치 건수"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "transaction",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "order_by",
+            className: "uitext"
+          }), " 항목으로 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "sql_fetch_count",
+            className: "uitext"
           }), " 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -1016,12 +1016,12 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트랜잭션 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_transaction_map",
+            className: "uitext"
           }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Top 30"
@@ -1041,9 +1041,9 @@ function _import_service_Application_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 에이전트별 액티브 트랜잭션을 표시하는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 액티브 트랜잭션"
+          }), " 에이전트별 액티브 트랜잭션을 표시하는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "AA018",
+            className: "uitext"
           }), " 위젯 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -1671,19 +1671,20 @@ function _import_service_Server_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_service_Server_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Changed",
           children: "Changed"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 설정"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_log",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_logSetting",
+          className: "uitext"
         }), " 메뉴에서 에이전트 설정 및 실행 스크립트의 ", (0,jsx_runtime.jsx)("code", {
           children: "encoding"
         }), " 항목을 설정된 언어에 따라 다르게 표시하도록 수정 ", (0,jsx_runtime.jsx)("code", {
@@ -1723,12 +1724,12 @@ function _import_service_Server_createMdxContent(props) {
         }), " ", (0,jsx_runtime.jsx)("span", {
           class: "uitext",
           children: "서버 목록"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "서버 상세"
-        }), " 메뉴의 화면 오른쪽 위에 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "그룹화"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_serverDetail",
+          className: "uitext"
+        }), " 메뉴의 화면 오른쪽 위에 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "groupby",
+          className: "uitext"
         }), " 버튼을 ", (0,jsx_runtime.jsx)("b", {
           children: "알림 설정"
         }), " 권한을 소유한 멤버도 이용할 수 있도록 수정 ", (0,jsx_runtime.jsx)("code", {
@@ -1747,12 +1748,12 @@ function _import_service_Server_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "이벤트 설정"
-        }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 파일 / 윈도우 이벤트"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_eventSetting",
+          className: "uitext"
+        }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "sm_log_event_tab",
+          className: "uitext"
         }), " 탭에서 수신자 태그 설정 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -1778,6 +1779,9 @@ function _import_service_Server_MDXContent(props = {}) {
       ...props
     })
   }) : _import_service_Server_createMdxContent(props);
+}
+function _import_service_Server_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -1876,26 +1880,26 @@ const _import_service_Kubernetes_contentTitle = (/* unused pure expression or su
 
 /*- <code class="Changed">Changed</code> 오브젝트 매니페스트 지원 마스터 에이전트 버전 <b>1.5.2</b>로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.3​</code></a></code>대시보드​
 
-- <code class="Changed">Changed</code> <span class="uitext">컨테이너 맵</span> 메뉴의 요약 보기 화면에서 현재 로그(Stdout) 조회 시 컨테이너 id를 컨테이너 이름으로 표시하도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_containerMap" className="uitext" /> 메뉴의 요약 보기 화면에서 현재 로그(Stdout) 조회 시 컨테이너 id를 컨테이너 이름으로 표시하도록 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 안내 문구 개선 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.2​</code></a></code>*/
+- <code class="Changed">Changed</code> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" /> 메뉴의 안내 문구 개선 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.2​</code></a></code>*/
 /*#### 리소스​
 
-- <code class="Changed">Changed</code> <span class="uitext">클러스터 요약</span> 메뉴에 <span class="uitext">Total Capacity CPU</span>(노드 총 CPU), <span class="uitext">Total Capacity Memory</span>(노드 총 Memory) 위젯 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_clusterOverview" className="uitext" /> 메뉴에 <span class="uitext">Total Capacity CPU</span>(노드 총 CPU), <span class="uitext">Total Capacity Memory</span>(노드 총 Memory) 위젯 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">퍼포먼스 요약</span> 메뉴에 <span class="uitext">에이전트 설치 노드에서 실행 중인 컨테이너 수</span>와 <span class="uitext">에이전트 설치 노드에서 실행 중인 Pod 수</span>, <span class="uitext">에이전트 설치 노드 수</span> 위젯 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_perfSummary" className="uitext" /> 메뉴에 <Cmdname sid="TTL07432" className="uitext" />와 <Cmdname sid="TTL07433" className="uitext" />, <Cmdname sid="TTL07434" className="uitext" /> 위젯 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">노드 목록</span> 메뉴에서 컬럼 분류 및 위치 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_nodeList" className="uitext" /> 메뉴에서 컬럼 분류 및 위치 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">컨테이너 이미지</span> 메뉴에 지표 추가 - <b>Total Container CPU</b>, <b>Total Container Memory</b> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_containerImages" className="uitext" /> 메뉴에 지표 추가 - <b>Total Container CPU</b>, <b>Total Container Memory</b> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">노드 목록</span> 메뉴에 지표 추가 - <b>beta.kubernetes.io/instance-type</b> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_nodeList" className="uitext" /> 메뉴에 지표 추가 - <b>beta.kubernetes.io/instance-type</b> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">클러스터 요약</span> 메뉴에 <b>Service</b>, <b>Ingress</b>, <b>Job</b>, <b>CronJob</b> 오브젝트 목록 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_clusterOverview" className="uitext" /> 메뉴에 <b>Service</b>, <b>Ingress</b>, <b>Job</b>, <b>CronJob</b> 오브젝트 목록 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">컨테이너 목록</span> 메뉴에서 <span class="uitext">Node</span> 컬럼 항목을 선택하면 해당 노드 목록이 필터링된 <span class="uitext">노드 목록</span> 메뉴로 이동하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_containerList" className="uitext" /> 메뉴에서 <span class="uitext">Node</span> 컬럼 항목을 선택하면 해당 노드 목록이 필터링된 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴로 이동하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">리소스</span> 메뉴 하위로 다음의 메뉴 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="resource" className="uitext" /> 메뉴 하위로 다음의 메뉴 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
 - <Cmdname sid="podList" className="uitext" />: Pod 목록 및 상세 정보 제공
 - <Cmdname sid="containerizedAppList" className="uitext" />: 컨테이너화된 애플리케이션 목록 및 상세 정보 제공
@@ -1907,49 +1911,49 @@ const _import_service_Kubernetes_contentTitle = (/* unused pure expression or su
 - <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />
 - <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="podList" className="uitext" />
 
-- <code class="Changed">Changed</code> <span class="uitext">리소스</span> &gt; <span class="uitext">마스터 메타 정보</span> 메뉴 이름을 <span class="uitext">오브젝트 매니페스트</span>로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="kube_master" className="uitext" /> 메뉴 이름을 <Cmdname sid="side_objectManifest" className="uitext" />로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">리소스</span> &gt; <span class="uitext">오브젝트 매니페스트</span> 메뉴에서 과거 오브젝트 매니페스트를 조회/비교할 수 있도록 개선(Kubernetes 에이전트 v1.5.0 이상 지원) <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="side_objectManifest" className="uitext" /> 메뉴에서 과거 오브젝트 매니페스트를 조회/비교할 수 있도록 개선(Kubernetes 에이전트 v1.5.0 이상 지원) <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>*/
 /*
 
 #### 애플리케이션​
 
-- <code class="Changed">Changed</code> <span class="uitext">멀티 서비스 히트맵</span>, <span class="uitext">커스텀 히트맵</span> 메뉴의 일본어 메뉴 이름 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="multi_hitmap" className="uitext" />, <Cmdname sid="side_customHitmap" className="uitext" /> 메뉴의 일본어 메뉴 이름 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 이미지</span> 메뉴의 컬럼 항목 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="side_containerImages" className="uitext" /> 메뉴의 컬럼 항목 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 블록의 크기가 작은 경우 UI 표시 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
+- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> 메뉴에서 블록의 크기가 작은 경우 UI 표시 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
 /*#### 기타
 
-- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">Pod 초기화 성능</span> 메뉴 개편 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="pod_init_perform" className="uitext" /> 메뉴 개편 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> 연계 등록된 프로젝트가 있을 경우 <span class="uitext">트레이스 분석</span> &gt; <span class="uitext">테이블 뷰</span>에서 SQL 대상 서버 정보 및 HTTPURLConnection 정보에 대해 <span class="uitext">연계 분석</span> 뷰 제공 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Feature">Feature</code> 연계 등록된 프로젝트가 있을 경우 <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="table_view" className="uitext" />에서 SQL 대상 서버 정보 및 HTTPURLConnection 정보에 대해 <Cmdname sid="TTL07046" className="uitext" /> 뷰 제공 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
 - <code class="Feature">Feature</code> <span class="uitext">관리</span> 메뉴 하위로 <span class="uitext">연계 프로젝트 관리</span> 메뉴 추가: 연계 프로젝트 등록, 조회, 삭제 기능 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
 - <code class="Changed">Changed</code> 오브젝트 매니페스트 지원 마스터 에이전트 버전 <b>1.5.2</b>로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.3​</code></a></code>대시보드​
 
-- <code class="Changed">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">Pod 시작 분석</span> 메뉴의 배너에 사용자 가이드 링크 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.1​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_podInitPerf" className="uitext" /> 메뉴의 배너에 사용자 가이드 링크 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.1​</code></a></code>
 
-- <code class="Feature">Feature</code> Pod 카테고리에 <span class="uitext">1분 내 생성된 컨테이너 표시하기</span> 옵션 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> Pod 카테고리에 <Cmdname sid="ITM06172" className="uitext" /> 옵션 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 이미지</span> 메뉴의 화면 위에 이미지의 총 개수 표시 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerImages" className="uitext" /> 메뉴의 화면 위에 이미지의 총 개수 표시 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> 쿠버네티스 클러스터 프로젝트의 <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 목록</span> 메뉴에서 노드 정보 컬럼 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> 쿠버네티스 클러스터 프로젝트의 <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" /> 메뉴에서 노드 정보 컬럼 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">통합 컨테이너 맵</span> 메뉴에서 <span class="uitext">그룹화</span> 옵션 항목으로 <span class="uitext">WhatapProject</span> 추가: 와탭 프로젝트별 그룹화 기능 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_integratedContainerMap" className="uitext" /> 메뉴에서 <Cmdname sid="groupby" className="uitext" /> 옵션 항목으로 <span class="uitext">WhatapProject</span> 추가: 와탭 프로젝트별 그룹화 기능 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">컨테이너 맵</span> 메뉴의 <span class="uitext">상세 보기</span>에서 대상(컨테이너/파드) 목록 중에 선택한 것만 볼 수 있는 <span class="uitext">선택된 것만 보기</span> 옵션 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_containerMap" className="uitext" /> 메뉴의 <Cmdname sid="display_detail" className="uitext" />에서 대상(컨테이너/파드) 목록 중에 선택한 것만 볼 수 있는 <Cmdname sid="checked_only" className="uitext" /> 옵션 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴의 애플리케이션 상세 정보에서 <span class="uitext">호출 정보</span> 탭 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_workload" className="uitext" /> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴의 애플리케이션 상세 정보에서 <Cmdname sid="TTL06891" className="uitext" /> 탭 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 선택한 카테고리의 Pod Phase 정보 및 Phase 안내 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> 메뉴에서 선택한 카테고리의 Pod Phase 정보 및 Phase 안내 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 목록 메뉴로 이동하는 링크 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 목록 메뉴로 이동하는 링크 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Pod 초기화 성능</span> 메뉴 개편 및 메뉴 이름을 <span class="uitext">Pod 시작 분석</span>으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="pod_init_perform" className="uitext" /> 메뉴 개편 및 메뉴 이름을 <Cmdname sid="side_podInitPerf" className="uitext" />으로 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Helm을 이용한 에이전트 설치 안내 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.2​</code></a></code>*/
+- <code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <Cmdname sid="agentInstall" className="uitext" /> 메뉴에서 Helm을 이용한 에이전트 설치 안내 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.2​</code></a></code>*/
 
 
 const _import_service_Kubernetes_toc = [{
@@ -1975,12 +1979,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Pod 초기화 성능"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "pod_init_perform",
+            className: "uitext"
           }), " 메뉴 개편 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -1997,15 +2001,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 연계 등록된 프로젝트가 있을 경우 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "트레이스 분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "테이블 뷰"
-          }), "에서 SQL 대상 서버 정보 및 HTTPURLConnection 정보에 대해 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "연계 분석"
+          }), " 연계 등록된 프로젝트가 있을 경우 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06209",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "table_view",
+            className: "uitext"
+          }), "에서 SQL 대상 서버 정보 및 HTTPURLConnection 정보에 대해 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07046",
+            className: "uitext"
           }), " 뷰 제공 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2022,12 +2026,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " 메뉴 하위로 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "연계 프로젝트 관리"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " 메뉴 하위로 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_correlatedProjectManagement",
+            className: "uitext"
           }), " 메뉴 추가: 연계 프로젝트 등록, 조회, 삭제 기능 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2044,9 +2048,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "클러스터 요약"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_clusterOverview",
+            className: "uitext"
           }), " 메뉴에 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Total Capacity CPU"
@@ -2069,18 +2073,18 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "퍼포먼스 요약"
-          }), " 메뉴에 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치 노드에서 실행 중인 컨테이너 수"
-          }), "와 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치 노드에서 실행 중인 Pod 수"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치 노드 수"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_perfSummary",
+            className: "uitext"
+          }), " 메뉴에 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07432",
+            className: "uitext"
+          }), "와 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07433",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07434",
+            className: "uitext"
           }), " 위젯 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2097,9 +2101,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 이미지"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerImages",
+            className: "uitext"
           }), " 메뉴에 지표 추가 - ", (0,jsx_runtime.jsx)("b", {
             children: "Total Container CPU"
           }), ", ", (0,jsx_runtime.jsx)("b", {
@@ -2120,9 +2124,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "노드 목록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeList",
+            className: "uitext"
           }), " 메뉴에 지표 추가 - ", (0,jsx_runtime.jsx)("b", {
             children: "beta.kubernetes.io/instance-type"
           }), " ", (0,jsx_runtime.jsx)("code", {
@@ -2141,9 +2145,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "클러스터 요약"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_clusterOverview",
+            className: "uitext"
           }), " 메뉴에 ", (0,jsx_runtime.jsx)("b", {
             children: "Service"
           }), ", ", (0,jsx_runtime.jsx)("b", {
@@ -2168,15 +2172,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 목록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerList",
+            className: "uitext"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Node"
-          }), " 컬럼 항목을 선택하면 해당 노드 목록이 필터링된 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "노드 목록"
+          }), " 컬럼 항목을 선택하면 해당 노드 목록이 필터링된 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeList",
+            className: "uitext"
           }), " 메뉴로 이동하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2193,9 +2197,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "리소스"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_resource",
+            className: "uitext"
           }), " 메뉴 하위로 다음의 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2271,15 +2275,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "리소스"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "마스터 메타 정보"
-          }), " 메뉴 이름을 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "오브젝트 매니페스트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_resource",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "kube_master",
+            className: "uitext"
+          }), " 메뉴 이름을 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_objectManifest",
+            className: "uitext"
           }), "로 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2296,12 +2300,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "리소스"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "오브젝트 매니페스트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_resource",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_objectManifest",
+            className: "uitext"
           }), " 메뉴에서 과거 오브젝트 매니페스트를 조회/비교할 수 있도록 개선(Kubernetes 에이전트 v1.5.0 이상 지원) ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2338,9 +2342,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "New",
             children: "New"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "kube-apiserver 대시보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_kubeApiserverDashboard",
+            className: "uitext"
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2357,9 +2361,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "New",
             children: "New"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "쿠버네티스 에이전트 목록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_kubernetesAgentList",
+            className: "uitext"
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2376,15 +2380,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "클러스터"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "오브젝트 매니페스트"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "비교하기"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_cluster",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_objectManifest",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "compare",
+            className: "uitext"
           }), " 기능의 UI 수정 및 목차 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2401,18 +2405,18 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 목록"
-          }), " 메뉴에서 비교하기 기능 이용 시 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Default"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "CPU"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "container",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerList",
+            className: "uitext"
+          }), " 메뉴에서 비교하기 기능 이용 시 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "kube_default",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "cpu",
+            className: "uitext"
           }), " 탭에 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Container CPU Usage"
@@ -2432,12 +2436,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerMap",
+            className: "uitext"
           }), " 메뉴에서 레플리케이션 컨트롤러(ReplicationController) 그룹화 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2454,9 +2458,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "New",
             children: "New"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "kube-apiserver 메트릭스 조회"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_kubeApiserverMetricsSearch",
+            className: "uitext"
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2473,9 +2477,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "New",
             children: "New"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Deployment 목록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_deploymentList",
+            className: "uitext"
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2492,9 +2496,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " Pod 카테고리에 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "1분 내 생성된 컨테이너 표시하기"
+          }), " Pod 카테고리에 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "ITM06172",
+            className: "uitext"
           }), " 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2511,12 +2515,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "워크로드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 이미지"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_workload",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerImages",
+            className: "uitext"
           }), " 메뉴의 화면 위에 이미지의 총 개수 표시 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2533,12 +2537,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 쿠버네티스 클러스터 프로젝트의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "클러스터"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "노드 목록"
+          }), " 쿠버네티스 클러스터 프로젝트의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_cluster",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeList",
+            className: "uitext"
           }), " 메뉴에서 노드 정보 컬럼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2555,12 +2559,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통합 컨테이너 맵"
-          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "그룹화"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_integratedContainerMap",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "groupby",
+            className: "uitext"
           }), " 옵션 항목으로 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "WhatapProject"
@@ -2580,15 +2584,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 맵"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "상세 보기"
-          }), "에서 대상(컨테이너/파드) 목록 중에 선택한 것만 볼 수 있는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "선택된 것만 보기"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerMap",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "display_detail",
+            className: "uitext"
+          }), "에서 대상(컨테이너/파드) 목록 중에 선택한 것만 볼 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "checked_only",
+            className: "uitext"
           }), " 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2605,15 +2609,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "워크로드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 애플리케이션 목록"
-          }), " 메뉴의 애플리케이션 상세 정보에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "호출 정보"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_workload",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerizedAppList",
+            className: "uitext"
+          }), " 메뉴의 애플리케이션 상세 정보에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06891",
+            className: "uitext"
           }), " 탭 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2630,12 +2634,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerMap",
+            className: "uitext"
           }), " 메뉴에서 선택한 카테고리의 Pod Phase 정보 및 Phase 안내 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2652,12 +2656,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "컨테이너 맵"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerMap",
+            className: "uitext"
           }), " 메뉴에서 목록 메뉴로 이동하는 링크 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2674,15 +2678,15 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Pod 초기화 성능"
-          }), " 메뉴 개편 및 메뉴 이름을 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Pod 시작 분석"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "pod_init_perform",
+            className: "uitext"
+          }), " 메뉴 개편 및 메뉴 이름을 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_podInitPerf",
+            className: "uitext"
           }), "으로 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2699,12 +2703,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agentInstall",
+            className: "uitext"
           }), " 메뉴에서 Helm을 이용한 에이전트 설치 안내 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2726,9 +2730,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "쿠버네티스 이벤트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_kubeEventList",
+            className: "uitext"
           }), ": 프로젝트 단위로 쿠버네티스 이벤트에 대한 조회와 검색 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2745,9 +2749,9 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "WhaTap 이벤트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_whatapEventList",
+            className: "uitext"
           }), ": ", (0,jsx_runtime.jsx)("code", {
             children: "#WhatapEvent"
           }), " 카테고리의 로그 데이터 조회 기능 추가 ", (0,jsx_runtime.jsx)("code", {
@@ -2766,12 +2770,12 @@ function _import_service_Kubernetes_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "경고 알림"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 설정"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
           }), " 메뉴에서 복합 메트릭스 이벤트 템플릿 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -2902,50 +2906,50 @@ const _import_service_Database_contentTitle = (/* unused pure expression or supe
 
 
 /*#### 공통​*/
-/*- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴의 대시보드에서 마우스 우클릭으로 표시되는 위젯 선택 목록의 스타일 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
-/*- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 및 <span class="uitext">Flex 보드</span> 메뉴에서 <span class="uitext">SQL Elapse Map</span> 위젯을 통해 <span class="uitext">Query List</span> 창을 열었을 때, 테이블의 컬럼 순서 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
+/*- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴의 대시보드에서 마우스 우클릭으로 표시되는 위젯 선택 목록의 스타일 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
+/*- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> 및 <Cmdname sid="flexboard" className="uitext" /> 메뉴에서 <span class="uitext">SQL Elapse Map</span> 위젯을 통해 <span class="uitext">Query List</span> 창을 열었을 때, 테이블의 컬럼 순서 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>*/
 /*#### Database
 
-- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 및 <span class="uitext">Flex 보드</span> 메뉴에서 <span class="uitext">SQL Elapse Map</span> 위젯을 통해 <span class="uitext">Query List</span> 창을 열었을 때, 테이블의 컬럼 순서 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> 및 <Cmdname sid="flexboard" className="uitext" /> 메뉴에서 <span class="uitext">SQL Elapse Map</span> 위젯을 통해 <span class="uitext">Query List</span> 창을 열었을 때, 테이블의 컬럼 순서 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">락 트리</span> 메뉴에서 다음 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" /> 메뉴에서 다음 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.0​</code></a></code>
 
 - <code class="Changed">Changed</code> 프로젝트 V1 지원 종료 관련 안내 팝업창의 날짜 변경 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><code class='changelog-service'>Service 2.1.1​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 기본 프리셋(<span class="uitext">Default(rds)</span>, <span class="uitext">Default(xos)</span>) 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> 메뉴에서 기본 프리셋(<span class="uitext">Default(rds)</span>, <span class="uitext">Default(xos)</span>) 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> / <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 <span class="uitext">Lock Wait Sessions</span> 위젯의 차트를 클릭하면 화면 아래 테이블의 <span class="uitext">락 트리</span> 탭이 활성화되도록 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴에서 <span class="uitext">Lock Wait Sessions</span> 위젯의 차트를 클릭하면 화면 아래 테이블의 <Cmdname sid="side_dbLockTree" className="uitext" /> 탭이 활성화되도록 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Feature">Feature</code> 다음 메뉴 경로에서 <span class="uitext">락 트리</span> 테이블의 컬럼을 클릭하면 세션 상세 창을 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Feature">Feature</code> 다음 메뉴 경로에서 <Cmdname sid="side_dbLockTree" className="uitext" /> 테이블의 컬럼을 클릭하면 세션 상세 창을 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
 - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
 - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />
 - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />*/
 /*#### Database <code class="my">V2</code>
 
-- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 기본 프리셋(<span class="uitext">Default(rds)</span>, <span class="uitext">Default(xos)</span>) 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> 메뉴에서 기본 프리셋(<span class="uitext">Default(rds)</span>, <span class="uitext">Default(xos)</span>) 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Changed">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> / <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 <span class="uitext">Lock Wait Sessions</span> 위젯의 차트를 클릭하면 화면 아래 테이블의 <span class="uitext">락 트리</span> 탭이 활성화되도록 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
+- <code class="Changed">Changed</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴에서 <span class="uitext">Lock Wait Sessions</span> 위젯의 차트를 클릭하면 화면 아래 테이블의 <Cmdname sid="side_dbLockTree" className="uitext" /> 탭이 활성화되도록 수정 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>
 
-- <code class="Feature">Feature</code> 다음 메뉴 경로에서 <span class="uitext">락 트리</span> 테이블의 컬럼을 클릭하면 세션 상세 창을 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
+- <code class="Feature">Feature</code> 다음 메뉴 경로에서 <Cmdname sid="side_dbLockTree" className="uitext" /> 테이블의 컬럼을 클릭하면 세션 상세 창을 표시하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
 /*#### PostgreSQL <code class="my">V2</code>
 
-- <code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">데이터베이스 파라미터</span> 메뉴에서 <span class="uitext">Value</span> 컬럼 표기 시 일부 값에 단위 표기 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbParameter" className="uitext" /> 메뉴에서 <span class="uitext">Value</span> 컬럼 표기 시 일부 값에 단위 표기 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><code class='changelog-service'>Service 2.2.0​</code></a></code>*/
 /*#### PostgreSQL, MySQL​
 
 - <code class="Feature">Feature</code> 대시보드의 <span class="uitext">SQL Elapse Map</span> 및 <span class="uitext">Slow Query</span> 위젯에서 변경한 Y축 값을 저장하는 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
 - <code class="Feature">Feature</code> <span class="uitext">Default(xos)</span>, <span class="uitext">Default(rds)</span> 프리셋 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴의 기능 개편 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴의 기능 개편 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
 /*#### PostgreSQL​
 
-- <code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">PG SQL 통계</span> 메뉴에서 다중 필터 선택 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
+- <code class="Feature">Feature</code> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_pgStat" className="uitext" /> 메뉴에서 다중 필터 선택 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>
 
-- <code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 디자인 개선 및 설치 안내 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <Cmdname sid="agentInstall" className="uitext" /> 메뉴의 디자인 개선 및 설치 안내 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
 /*#### MySQL​
 
-- <code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">MYSQL SQL 통계</span> 메뉴에서 다중 필터 선택 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_mysqlStat" className="uitext" /> 메뉴에서 다중 필터 선택 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class='changelog-service'>Service 2.3.0​</code></a></code>*/
 
 
 const _import_service_Database_toc = [{
@@ -2987,12 +2991,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "락 트리"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbLockTree",
+            className: "uitext"
           }), " 메뉴에서 다음 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3034,12 +3038,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "인스턴스 모니터링"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbMonitoring",
+            className: "uitext"
           }), " 메뉴에서 기본 프리셋(", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Default(rds)"
@@ -3062,21 +3066,21 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "인스턴스 모니터링"
-          }), " / ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "멀티 인스턴스 모니터링"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbMonitoring",
+            className: "uitext"
+          }), " / ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_multiInstance",
+            className: "uitext"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Lock Wait Sessions"
-          }), " 위젯의 차트를 클릭하면 화면 아래 테이블의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "락 트리"
+          }), " 위젯의 차트를 클릭하면 화면 아래 테이블의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbLockTree",
+            className: "uitext"
           }), " 탭이 활성화되도록 수정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3093,9 +3097,9 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 다음 메뉴 경로에서 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "락 트리"
+          }), " 다음 메뉴 경로에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbLockTree",
+            className: "uitext"
           }), " 테이블의 컬럼을 클릭하면 세션 상세 창을 표시하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3138,18 +3142,18 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "경고 알림"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 설정"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "데이터베이스"
-          }), " 탭에서 에이전트 이벤트 원복 알림(", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "이벤트 상태가 해결되면 추가 알림"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_eventSetting",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_sectionDatabase",
+            className: "uitext"
+          }), " 탭에서 에이전트 이벤트 원복 알림(", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "resolved_event_notification",
+            className: "uitext"
           }), ") 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3184,9 +3188,9 @@ function _import_service_Database_createMdxContent(props) {
             children: "Feature"
           }), " ", (0,jsx_runtime.jsx)("span", {
             class: "uitext"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 업데이트"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_agentUpdate",
+            className: "uitext"
           }), " 메뉴 새로운 UI 적용 및 기능 개편 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3203,12 +3207,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSqlStat",
+            className: "uitext"
           }), " 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3225,12 +3229,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agentInstall",
+            className: "uitext"
           }), " 메뉴에서 DB 유저 파일 생성을 위한 명령어 입력 시 운영체제에 따른 고려 사항 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3247,15 +3251,15 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 목록"
-          }), " 메뉴에서 데이터베이스 서버의 IP 주소를 표기하는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "DB IP"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agent_list",
+            className: "uitext"
+          }), " 메뉴에서 데이터베이스 서버의 IP 주소를 표기하는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "db_ip",
+            className: "uitext"
           }), " 컬럼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3290,12 +3294,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSqlStat",
+            className: "uitext"
           }), " 메뉴에서 다중 필터 선택 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3312,9 +3316,9 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "세션 상세 정보"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "session_detail",
+            className: "uitext"
           }), " 창에 실시간/정지 조회 및 새로고침 버튼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3331,12 +3335,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Flex 보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "flexboard",
+            className: "uitext"
           }), " 메뉴에서 액티브 세션 테이블 필터 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3358,12 +3362,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "인스턴스 목록"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_instanceList",
+            className: "uitext"
           }), " 메뉴에서 에이전트 업데이트 안내 문구 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3443,12 +3447,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "멀티 인스턴스 모니터링"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_multiInstance",
+            className: "uitext"
           }), " 메뉴의 기능 개편 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3490,12 +3494,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "PG SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_pgStat",
+            className: "uitext"
           }), " 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3512,12 +3516,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Wait 분석"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbWaitAnalysis",
+            className: "uitext"
           }), " 메뉴에서 기능 소개 모달 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3534,12 +3538,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Wait 분석"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbWaitAnalysis",
+            className: "uitext"
           }), " 메뉴에서 에이전트 설정 방법 안내 모달 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3556,12 +3560,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "데이터베이스 파라미터"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbParameter",
+            className: "uitext"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Value"
@@ -3581,12 +3585,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "PG SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_pgStat",
+            className: "uitext"
           }), " 메뉴에서 다중 필터 선택 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3603,12 +3607,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agentInstall",
+            className: "uitext"
           }), " 메뉴의 디자인 개선 및 설치 안내 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3630,15 +3634,15 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "데이터베이스 사이즈"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "테이블 사이즈 (TOP 50)"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSize",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL06572",
+            className: "uitext"
           }), " 테이블에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "TABLENAME"
@@ -3678,12 +3682,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "MYSQL SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_mysqlStat",
+            className: "uitext"
           }), " 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3700,12 +3704,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "MYSQL SQL 통계"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_mysqlStat",
+            className: "uitext"
           }), " 메뉴에서 다중 필터 선택 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -3727,12 +3731,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "관리"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "에이전트 설치"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "agentInstall",
+            className: "uitext"
           }), " 메뉴에서 Redis 버전에 따라 다른 ", (0,jsx_runtime.jsx)("em", {
             children: "uid.sh"
           }), " 실행 명령어에 대한 설명 추가 ", (0,jsx_runtime.jsx)("code", {
@@ -3777,12 +3781,12 @@ function _import_service_Database_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "통계/보고서"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "데이터베이스 사이즈"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_reportStat",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dbSize",
+            className: "uitext"
           }), " 메뉴의 UI 변경 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -4141,7 +4145,8 @@ function _import_service_Browser_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_service_Browser_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -4149,9 +4154,9 @@ function _import_service_Browser_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Changed",
             children: "Changed"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "대시보드"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
           }), " > ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "브라우저 모니터링 대시보드"
@@ -4187,49 +4192,15 @@ function _import_service_Browser_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " AJAX 히트맵 데이터에 네트워크 상태 관련 지표 추가: ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "유효 연결 유형"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "RTT"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "유효 대역폭"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "Delivery Type"
-          }), " ", (0,jsx_runtime.jsx)("code", {
-            class: "changelog-service",
-            children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-              children: (0,jsx_runtime.jsx)("code", {
-                class: "changelog-service",
-                children: "Service 2.2.0​"
-              })
-            })
-          })]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)("code", {
-            class: "Feature",
-            children: "Feature"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "분석"
-          }), " > ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "페이지 로드 히트맵"
-          }), " 메뉴의 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "페이지 로드"
-          }), " ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "상세"
-          }), " 창에서 리소스 데이터에 지표 추가: ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "상태 코드"
+          }), " AJAX 히트맵 데이터에 네트워크 상태 관련 지표 추가: ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07611",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07612",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07610",
+            className: "uitext"
           }), ", ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
             children: "Delivery Type"
@@ -4249,15 +4220,49 @@ function _import_service_Browser_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 페이지 로드 히트맵 데이터에 네트워크 상태 관련 지표 추가: ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "유효 연결 유형"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_rumPageLoadHitmap",
+            className: "uitext"
+          }), " 메뉴의 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_rumPageLoadDashboard",
+            className: "uitext"
+          }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "detail",
+            className: "uitext"
+          }), " 창에서 리소스 데이터에 지표 추가: ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "status_code",
+            className: "uitext"
           }), ", ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
-            children: "RTT"
-          }), ", ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "유효 대역폭"
+            children: "Delivery Type"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-service",
+            children: (0,jsx_runtime.jsx)("a", {
+              href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
+              children: (0,jsx_runtime.jsx)("code", {
+                class: "changelog-service",
+                children: "Service 2.2.0​"
+              })
+            })
+          })]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            children: "Feature"
+          }), " 페이지 로드 히트맵 데이터에 네트워크 상태 관련 지표 추가: ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07611",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07612",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07610",
+            className: "uitext"
           }), " ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -4294,9 +4299,9 @@ function _import_service_Browser_createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             children: "Feature"
-          }), " 사용자 세션 로그를 검색할 수 있는 ", (0,jsx_runtime.jsx)("span", {
-            class: "uitext",
-            children: "사용자 세션 로그 검색"
+          }), " 사용자 세션 로그를 검색할 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_userSessionEventSearch",
+            className: "uitext"
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
@@ -4323,6 +4328,9 @@ function _import_service_Browser_MDXContent(props = {}) {
       ...props
     })
   }) : _import_service_Browser_createMdxContent(props);
+}
+function _import_service_Browser_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -4455,7 +4463,8 @@ function _import_service_Network_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_service_Network_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -4482,15 +4491,15 @@ function _import_service_Network_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Changed",
           children: "Changed"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "대시보드"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "네트워크 토폴로지"
-        }), " 및 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "네트워크 추이 (TCP)"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_dashboard",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_npmDashboard",
+          className: "uitext"
+        }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_npmProgressTCP",
+          className: "uitext"
         }), " 메뉴에서 실시간 조회 최근 5분만 가능하도록 변경 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -4533,6 +4542,9 @@ function _import_service_Network_MDXContent(props = {}) {
     })
   }) : _import_service_Network_createMdxContent(props);
 }
+function _import_service_Network_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 ;// CONCATENATED MODULE: ./crw-data/crwld-service/_import-service-Log.mdx
@@ -4553,7 +4565,8 @@ function _import_service_Log_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _import_service_Log_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -4576,12 +4589,12 @@ function _import_service_Log_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "경고 알림"
-        }), " > ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "이벤트 설정"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_event",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_eventSetting",
+          className: "uitext"
         }), " 메뉴에서 실시간 로그 이벤트를 추가 또는 수정하면서 API 요청을 실패할 경우, 실패 원인을 메시지로 노출하도록 개선 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -4598,12 +4611,12 @@ function _import_service_Log_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 검색기"
-        }), ", ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "라이브 테일"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "log_search",
+          className: "uitext"
+        }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_logTail",
+          className: "uitext"
         }), " 메뉴에서 로그 검색 필터 기능 개편 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -4620,12 +4633,12 @@ function _import_service_Log_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Feature",
           children: "Feature"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 트렌드"
-        }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "필터"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_logExplorer",
+          className: "uitext"
+        }), " 메뉴에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "filter",
+          className: "uitext"
         }), " 목록에 없는 값을 직접 입력해 선택 가능 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -4642,18 +4655,18 @@ function _import_service_Log_createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)("code", {
           class: "Changed",
           children: "Changed"
-        }), " ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그"
-        }), " 메뉴에서 테이블의 설정값을 해당 프로젝트의 ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "라이브 테일"
-        }), ", ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 검색기"
-        }), ", ", (0,jsx_runtime.jsx)("span", {
-          class: "uitext",
-          children: "로그 트렌드"
+        }), " ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_log",
+          className: "uitext"
+        }), " 메뉴에서 테이블의 설정값을 해당 프로젝트의 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_logTail",
+          className: "uitext"
+        }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "log_search",
+          className: "uitext"
+        }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_logExplorer",
+          className: "uitext"
         }), " 메뉴에서 모두 공유되도록 수정 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
@@ -4679,6 +4692,9 @@ function _import_service_Log_MDXContent(props = {}) {
       ...props
     })
   }) : _import_service_Log_createMdxContent(props);
+}
+function _import_service_Log_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -4716,7 +4732,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2024"
     }
   ],
-  "readingTime": 27.045,
+  "readingTime": 26.44,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -4755,7 +4771,7 @@ const assets = {
 /*truncate*/
 /*먼저 1분기 상품별 신규 기능 및 신규 상품 요약은 다음과 같습니다. 사이드 메뉴 개편 및 대시보드 고도화 작업이 이루어졌습니다.*/
 /*요약은 다시 써야 함*/
-/*그외에도 ***Top 30*** 섹션에 IP 필터 기능을 추가했고, ***멀티 트랜잭션*** 탭에서 프로잭트 선택 상태를 저장하는 등 트랜잭션 분석 시 편의성을 전반적으로 향상시켰습니다.*/
+/*그외에도 ***Top 30*** 섹션에 IP 필터 기능을 추가했고, <Cmdname sid="multi_transaction" className="uitext" /> 탭에서 프로잭트 선택 상태를 저장하는 등 트랜잭션 분석 시 편의성을 전반적으로 향상시켰습니다.*/
 /*안정적으로 각 기능을 사용할 수 있도록 / 기존 문제 개선 및 다양한 안정화 작업을 진행했습니다.*/
 /*<code class="New">New</code> `Go` 모니터링 상품 **정식 서비스** 시작 <code class='changelog-service'>Service 2.2.4​</code>*/
 /*
@@ -4866,7 +4882,8 @@ function _2024_1q_summary_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  }, {Details, ImgLang, LinkImage} = _components;
+  }, {Cmdname, Details, ImgLang, LinkImage} = _components;
+  if (!Cmdname) _2024_1q_summary_missingMdxReference("Cmdname", true);
   if (!Details) _2024_1q_summary_missingMdxReference("Details", true);
   if (!ImgLang) _2024_1q_summary_missingMdxReference("ImgLang", true);
   if (!LinkImage) _2024_1q_summary_missingMdxReference("LinkImage", true);
@@ -4899,10 +4916,9 @@ function _2024_1q_summary_createMdxContent(props) {
               children: "사이드 메뉴"
             }), "가 개편되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: ["메트릭스 필드 중심의 사용자 경험을 강화한 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "이벤트 설정"
-              })
+            children: ["메트릭스 필드 중심의 사용자 경험을 강화한 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_eventSetting",
+              className: "uitext"
             }), " ", (0,jsx_runtime.jsx)("code", {
               class: "newfunc",
               children: "New"
@@ -4926,20 +4942,17 @@ function _2024_1q_summary_createMdxContent(props) {
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "통계"
-              })
-            }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "인스턴스 성능 관리"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_statistics",
+              className: "uitext"
+            }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_agentsConfiguration",
+              className: "uitext"
             }), " 메뉴 구조를 개선했습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "트랜잭션 맵"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_transaction_map",
+              className: "uitext"
             }), "이 고도화되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: [(0,jsx_runtime.jsx)(_components.code, {
@@ -4980,34 +4993,28 @@ function _2024_1q_summary_createMdxContent(props) {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: [(0,jsx_runtime.jsx)(_components.strong, {
               children: "컨트롤 플레인 모니터링"
-            }), "을 새롭게 제공합니다. 컨트롤 플레인 컴포넌트 중 kube-apiserver 모니터링을 위해 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "kube-apiserver 대시보드"
-              })
-            }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "kube-apiserver 메트릭스 조회"
-              })
+            }), "을 새롭게 제공합니다. 컨트롤 플레인 컴포넌트 중 kube-apiserver 모니터링을 위해 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_kubeApiserverDashboard",
+              className: "uitext"
+            }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_kubeApiserverMetricsSearch",
+              className: "uitext"
             }), " 기능이 추가되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: ["기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "Pod 시작 분석"
-              })
-            }), "과 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "오브젝트 매니페스트"
-              })
+            children: ["기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_podInitPerf",
+              className: "uitext"
+            }), "과 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_objectManifest",
+              className: "uitext"
             }), " 기능을 제공합니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: ["Deployment 기준으로 관련 정보를 조회할 수 있는 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "Deployment 목록"
-              })
-            }), ", 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "쿠버네티스 에이전트 목록"
-              })
+            children: ["Deployment 기준으로 관련 정보를 조회할 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_deploymentList",
+              className: "uitext"
+            }), ", 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_kubernetesAgentList",
+              className: "uitext"
             }), " 기능이 추가되었습니다."]
           }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["마스터 및 노드 에이전트 설치 시 ", (0,jsx_runtime.jsx)(_components.em, {
@@ -5054,10 +5061,9 @@ function _2024_1q_summary_createMdxContent(props) {
         })
       }), (0,jsx_runtime.jsxs)(_components.blockquote, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.em, {
-            children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "사용자 세션 분석"
-            })
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "TTL07736",
+            className: "uitext"
           }), " 기능을 새롭게 제공합니다."]
         }), "\n"]
       }), (0,jsx_runtime.jsx)(_components.table, {
@@ -5114,10 +5120,9 @@ function _2024_1q_summary_createMdxContent(props) {
       img: "sso-check-sso-info.png",
       desc: "sso-info cl"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["새로운 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "이벤트 설정"
-        })
+      children: ["새로운 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_eventSetting",
+        className: "uitext"
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "newfunc",
         children: "New"
@@ -5157,10 +5162,9 @@ function _2024_1q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["새로운 ", (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "이벤트 설정"
-              })
+            children: ["새로운 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_eventSetting",
+              className: "uitext"
             }), " ", (0,jsx_runtime.jsx)("code", {
               class: "newfunc",
               children: "New"
@@ -5181,18 +5185,15 @@ function _2024_1q_summary_createMdxContent(props) {
         children: "Application"
       }), " 상품군의 주목할 만한 신규 기능 및 변경 사항으로 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Go"
-      }), " 상품의 정식 출시, ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "트랜잭션 맵"
-        })
-      }), "의 고도화, 그리고 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "통계"
-        })
-      }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "인스턴스 성능 관리"
-        })
+      }), " 상품의 정식 출시, ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_transaction_map",
+        className: "uitext"
+      }), "의 고도화, 그리고 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_statistics",
+        className: "uitext"
+      }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_agentsConfiguration",
+        className: "uitext"
       }), " 메뉴 구조의 개선을 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.code, {
@@ -5203,20 +5204,17 @@ function _2024_1q_summary_createMdxContent(props) {
         children: "Go"
       }), " 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "트랜잭션 맵"
-        })
-      }), "은 성능 테스트 또는 장애 상황 발생 시 단기간 트랜잭션별 현황을 상세히 확인할 수 있는 메뉴입니다. 다음과 같이 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "트랜잭션 맵"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_transaction_map",
+        className: "uitext"
+      }), "은 성능 테스트 또는 장애 상황 발생 시 단기간 트랜잭션별 현황을 상세히 확인할 수 있는 메뉴입니다. 다음과 같이 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_transaction_map",
+        className: "uitext"
       }), " 고도화 작업이 이루어졌습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "트레이스 분석"
-        })
+      children: ["기존 TX 트레이스 섹션을 제거한 대신 차트 드래그 시 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL06209",
+        className: "uitext"
       }), " 팝업 창을 통해 상세 정보를 확인할 수 있도록 구조를 개선했습니다. 또한 트레이스 분석 건수를 기존 100건에서 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "1000"
       }), "건으로 확장해 이전보다 10배 많은 트레이스를 분석할 수 있게 되었습니다."]
@@ -5229,14 +5227,12 @@ function _2024_1q_summary_createMdxContent(props) {
       desc: "sc",
       className: "changelog-img"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "통계"
-        })
-      }), "와 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "인스턴스 성능 관리"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_statistics",
+        className: "uitext"
+      }), "와 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_agentsConfiguration",
+        className: "uitext"
       }), " 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 동선과 안정성 향상을 위한 개선 작업이 이루어졌습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
@@ -5358,46 +5354,38 @@ function _2024_1q_summary_createMdxContent(props) {
         children: "Kubernetes"
       }), " 상품의 주목할 만한 신규 기능 및 변경 사항으로 새로운 기능인 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "컨트롤 플레인 모니터링"
-      }), ", ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "쿠버네티스 에이전트 목록"
-        })
-      }), ", ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Deployment 목록"
-        })
-      }), ", 그리고 개편된 기능인 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Pod 시작 분석"
-        })
-      }), "과 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "오브젝트 매니페스트"
-        })
+      }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubernetesAgentList",
+        className: "uitext"
+      }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_deploymentList",
+        className: "uitext"
+      }), ", 그리고 개편된 기능인 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_podInitPerf",
+        className: "uitext"
+      }), "과 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_objectManifest",
+        className: "uitext"
       }), ", 아울러 새로 추가된 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Helm"
       }), " 차트 설치 지원 등에 대해서 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 쿠버네티스 모니터링은 이번 1분기에 새롭게 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "컨트롤 플레인 모니터링"
-      }), "을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "kube-apiserver 대시보드"
-        })
-      }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "kube-apiserver 메트릭스 조회"
-        })
+      }), "을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubeApiserverDashboard",
+        className: "uitext"
+      }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubeApiserverMetricsSearch",
+        className: "uitext"
       }), " 기능이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "kube-apiserver 대시보드"
-        })
-      }), "는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "kube-apiserver 메트릭스 조회"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubeApiserverDashboard",
+        className: "uitext"
+      }), "는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubeApiserverMetricsSearch",
+        className: "uitext"
       }), "를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
@@ -5407,44 +5395,36 @@ function _2024_1q_summary_createMdxContent(props) {
         height: "774"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["또한 Deployment 기준으로 관련 정보를 조회할 수 있는 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Deployment 목록"
-        })
-      }), ", 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "쿠버네티스 에이전트 목록"
-        })
+      children: ["또한 Deployment 기준으로 관련 정보를 조회할 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_deploymentList",
+        className: "uitext"
+      }), ", 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubernetesAgentList",
+        className: "uitext"
       }), " 기능이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Deployment 목록"
-        })
+      children: ["개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_deploymentList",
+        className: "uitext"
       }), "에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["또한 새롭게 추가된 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "쿠버네티스 에이전트 목록"
-        })
+      children: ["또한 새롭게 추가된 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_kubernetesAgentList",
+        className: "uitext"
       }), "에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["그리고 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Pod 시작 분석"
-        })
-      }), "과 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "오브젝트 매니페스트"
-        })
-      }), " 기능을 제공합니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Pod 시작 분석"
-        })
-      }), "은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "오브젝트 매니페스트"
-        })
+      children: ["그리고 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_podInitPerf",
+        className: "uitext"
+      }), "과 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_objectManifest",
+        className: "uitext"
+      }), " 기능을 제공합니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_podInitPerf",
+        className: "uitext"
+      }), "은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_objectManifest",
+        className: "uitext"
       }), "는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
@@ -5480,10 +5460,9 @@ function _2024_1q_summary_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "kube-apiserver 대시보드"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_kubeApiserverDashboard",
+              className: "uitext"
             }), "에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://docs.whatap.io/kubernetes/kube-apiserver-dashboard",
               children: "다음 문서"
@@ -5491,10 +5470,9 @@ function _2024_1q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "kube-apiserver 메트릭스 조회"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_kubeApiserverMetricsSearch",
+              className: "uitext"
             }), "에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://docs.whatap.io/kubernetes/kube-apiserver-metrics-search",
               children: "다음 문서"
@@ -5502,10 +5480,9 @@ function _2024_1q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "Deployment 목록"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_deploymentList",
+              className: "uitext"
             }), "에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://docs.whatap.io/kubernetes/deployment-list",
               children: "다음 문서"
@@ -5513,10 +5490,9 @@ function _2024_1q_summary_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: [(0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "쿠버네티스 에이전트 목록"
-              })
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "side_kubernetesAgentList",
+              className: "uitext"
             }), "에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://docs.whatap.io/kubernetes/agent-list",
               children: "다음 문서"
@@ -5578,18 +5554,15 @@ function _2024_1q_summary_createMdxContent(props) {
         height: "484"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "대시보드"
-        })
-      }), " 메뉴의 UI 및 기능을 개선하였으며, 해당 메뉴에서 데이터베이스의 성능 지표 정보를 바로 확인할 수 있습니다. 또한 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "멀티 인스턴스 모니터링"
-        })
-      }), " 메뉴에서 클러스터별 에이전트를 선택할 수 있습니다. 그리고 데이터베이스 로그를 검색하고 추이를 확인하고 로그 관련 알림을 받을 수 있는 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "로그"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_dashboard",
+        className: "uitext"
+      }), " 메뉴의 UI 및 기능을 개선하였으며, 해당 메뉴에서 데이터베이스의 성능 지표 정보를 바로 확인할 수 있습니다. 또한 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_multiInstance",
+        className: "uitext"
+      }), " 메뉴에서 클러스터별 에이전트를 선택할 수 있습니다. 그리고 데이터베이스 로그를 검색하고 추이를 확인하고 로그 관련 알림을 받을 수 있는 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_log",
+        className: "uitext"
       }), " 메뉴를 제공합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)("code", {
@@ -5624,42 +5597,36 @@ function _2024_1q_summary_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["와탭 2024년 1분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Browser"
-      }), " 상품의 주목할 만한 신규 기능 및 변경 사항으로 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "사용자 세션 분석"
-        })
+      }), " 상품의 주목할 만한 신규 기능 및 변경 사항으로 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL07736",
+        className: "uitext"
       }), " 기능 및 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "사용자 정의 이벤트 수집 기능"
         })
       }), "을 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["이번 1분기에 새롭게 제공하는 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "사용자 세션 분석"
-        })
+      children: ["이번 1분기에 새롭게 제공하는 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "TTL07736",
+        className: "uitext"
       }), " 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "사용자 세션 로그 검색"
-        })
-      }), ", ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "AJAX 히트맵"
-        })
-      }), "과 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "페이지 로드 히트맵"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_userSessionEventSearch",
+        className: "uitext"
+      }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_ajaxAnalytics",
+        className: "uitext"
+      }), "과 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_rumPageLoadHitmap",
+        className: "uitext"
       }), "을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "AJAX 히트맵"
         })
-      }), "과 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "페이지 로드 히트맵"
-        })
+      }), "과 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_rumPageLoadHitmap",
+        className: "uitext"
       }), "에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "browser-search-user-session-log-analysis.png",
@@ -5672,14 +5639,12 @@ function _2024_1q_summary_createMdxContent(props) {
         })
       }), " 기능은 브라우저 모니터링이 제공하는 기본 정보 외 사용자가 원하는 이벤트를 추가적으로 수집할 수 있는 인터페이스를 제공합니다. 브라우저 에이전트에서 제공하는 인터페이스 중 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "addCustomEvent"
-      }), " 메소드를 이용해 사용자 정의형 이벤트를 수집 후 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "사용자 세션 로그 검색"
-        })
-      }), " 메뉴 또는 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Flex 보드"
-        })
+      }), " 메소드를 이용해 사용자 정의형 이벤트를 수집 후 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_userSessionEventSearch",
+        className: "uitext"
+      }), " 메뉴 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_flexboard",
+        className: "uitext"
       }), "를 통해 수집한 데이터를 조회할 수 있습니다."]
     }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["다음 개요 안내를 통해 2024년 1분기 ", (0,jsx_runtime.jsx)(_components.code, {
@@ -5746,10 +5711,9 @@ function _2024_1q_summary_createMdxContent(props) {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "session count"
         })
-      }), "를 조회할 수 있습니다. 또한 태그 옵션으로 가시성을 확보하였으며, ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Flex 보드"
-        })
+      }), "를 조회할 수 있습니다. 또한 태그 옵션으로 가시성을 확보하였으며, ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_flexboard",
+        className: "uitext"
       }), "를 통해 다양한 사용자 커스텀 차트를 제공합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["다음 개요 안내를 통해 2024년 1분기 ", (0,jsx_runtime.jsx)(_components.code, {
@@ -5795,14 +5759,12 @@ function _2024_1q_summary_createMdxContent(props) {
         children: "로그 검색 필터 기능"
       }), "을 소개합니다."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "로그 검색"
-        })
-      }), " 및 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "라이브 테일"
-        })
+      children: [(0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_logSearch",
+        className: "uitext"
+      }), " 및 ", (0,jsx_runtime.jsx)(Cmdname, {
+        sid: "side_logTail",
+        className: "uitext"
       }), " 메뉴 내 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "로그 검색 필터 기능"
       }), "이 개편되었습니다. 검색 값 입력 시 안내 가이드 UI를 통해 지원하는 검색 문법을 확인할 수 있고, 키보드 입력으로 태그를 생성 및 수정하고 연산자를 클릭해 수정할 수 있는 기능이 추가되었습니다."]
