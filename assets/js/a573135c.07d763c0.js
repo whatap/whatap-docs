@@ -654,7 +654,7 @@ function UItext({ children  }) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-transaction-list-before-c1522e733bfa2ed5270b457d39d4270a.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-transaction-list-before-56ddd2ff9b6d38e4205ed1f34bdebead.png");
 
 /***/ }),
 
