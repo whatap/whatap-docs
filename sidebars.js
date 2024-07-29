@@ -3375,7 +3375,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_36',
+                id: 'release-notes/java/index',
               },
               items: [
                 {
