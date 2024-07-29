@@ -3318,6 +3318,10 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           // className: 'new',
+          link: {
+            type: 'doc',
+            id: 'release-notes/mobile/index'
+          },
           items: [
             {
               type: 'doc',

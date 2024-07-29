@@ -7,7 +7,7 @@ const cleanString = (str) => {
   return str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
 };
 
-const ImportJson = ({ filePath, product, type, sort }) => {
+const ImportJson = ({ filePath, product, type, sort, category }) => {
   const [filteredLists, setFilteredLists] = useState([]);
   const [error, setError] = useState('');
   const [loaded, setLoaded] = useState(false);
@@ -80,7 +80,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
         }
       };
     }
-  }, [filePath, product, type, sort, loaded]);
+  }, [filePath, product, type, sort, category, loaded]);
 
   if (error) {
     return <p>{error}</p>;
@@ -136,7 +136,7 @@ const ImportJson = ({ filePath, product, type, sort }) => {
                 <div key={productKey} className="productrelease">
                   <div className='subgroup'>
                     <p className='date'>{dateGroup.date}</p>
-                    <p className='product'>{productKey}</p>
+                    {category !== 'agent' ? (<p className='product'>{productKey}</p>) : null}
                     {dateGroup.products[productKey].map((list, index, array) => (
                       <div key={`${list.ver}-${index}`} className='rlist'>
                         <div>

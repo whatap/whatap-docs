@@ -1066,6 +1066,7 @@ main {
         font-size: 1.2rem;
         padding-top: 0;
         line-height: .9;
+        margin-bottom: 8px;
       }
       div.productrelease {
         margin-left: 110px;
@@ -1089,8 +1090,11 @@ main {
         }
         div.rlist {
           display: block;
-          padding-top: 8px;
+          // padding-top: 8px;
           padding-bottom: 8px;
+          + div.rlist {
+            padding-top: 8px;
+          }
           div.releaselist {
             display: inline;
             > li {
@@ -1111,10 +1115,12 @@ main {
           }
           a.goto {
             display: block;
+            position: relative;
             text-decoration: none;
             // padding-top: 12px;
             padding-bottom: 8px;
             font-weight: 300;
+            top: -2px;
             &:hover {
               text-decoration: underline;
             }
