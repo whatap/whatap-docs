@@ -3403,7 +3403,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java-batch/java-batch-2_2_24',
+                id: 'release-notes/java-batch/index',
               },
               items: [
                 {
@@ -3426,7 +3426,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_8_1',
+                id: 'release-notes/php/index',
               },
               items: [
                 {

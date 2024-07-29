@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/java-batch/java-batch-2_2_23",
+    "ver": "v2.2.23",
+    "date": "2024-02-06",
+    "Lists": [
+      {
+        "ver": "v2.2.23",
+        "hash": "v2223",
+        "product": "Java Batch Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードでアクティブ トランザクションを呼び出すときに発生するバグを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/java-batch/java-batch-2_2_24",
+    "ver": "v2.2.24",
+    "date": "2024-02-27",
+    "Lists": [
+      {
+        "ver": "v2.2.24",
+        "hash": "v2224",
+        "product": "Java Batch Agent",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> hook_service_patternsオプションを削除</p>"
+      }
+    ]
+  }
+]
