@@ -23,6 +23,9 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 * kubernetes/set-agent.mdx
 * kubernetes/pod-init-perform-v2.mdx
 * kubernetes/container-map-event.mdx
+* kubernetes/container-map-detail-mode.mdx
+* kubernetes/container-map-trace.mdx
+* kubernetes/resource-node-list.mdx
 * \_log-exp.mdx
 
 ```
