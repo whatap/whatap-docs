@@ -1746,5 +1746,9 @@
   "sidebar.indexSidebar.link.Oracle Pro": {
     "message": "Oracle Pro",
     "description": "The label for link Oracle Pro in sidebar indexSidebar, linking to oracle-pro/monitoring-intro"
+  },
+  "sidebar.kubeSidebar.category.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for category 지원 환경 in sidebar kubeSidebar"
   }
 }
