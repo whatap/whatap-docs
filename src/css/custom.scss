@@ -973,6 +973,11 @@ div.history_overview{
       margin-top: -6px;
       margin-bottom: 12px;
       width: 110%;
+      font-size: 92%;
+      margin-bottom: -1px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+      border-left: none;
       li {
         &::before {
           content: "• ";
@@ -982,11 +987,6 @@ div.history_overview{
           font-size: 130%;
           color: #a8a8a8;
         }
-        font-size: 92%;
-        margin-bottom: -1px;
-        padding-left: 5px;
-        padding-bottom: 5px;
-        border-left: none;
       }
     }
   }
