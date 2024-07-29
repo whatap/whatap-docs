@@ -1113,6 +1113,9 @@ main {
           ul {
             margin-left: 20px;
           }
+          code {
+            word-break: break-all;
+          }
           a.goto {
             display: inline-block;
             position: relative;
