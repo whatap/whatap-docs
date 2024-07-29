@@ -141,7 +141,7 @@ const ImportJson = ({ filePath, product, type, sort, category }) => {
                       <div key={`${list.ver}-${index}`} className='rlist'>
                         <div>
                           {(index === 0 || list.ver !== array[index - 1].ver) && (
-                            <a href={`${list.url}#${list.hash}`} className='goto' target='_blank'>
+                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className='goto' target='_blank'>
                               {list.ver}
                               <img src={linkIcon} width="18px" height="18px" className='ico-link' />
                             </a>
