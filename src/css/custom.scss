@@ -897,7 +897,7 @@ div.history_overview{
   .changelog-service-dup + .changelog-overview2 + ul {
     position: relative;
     top: -6px !important;
-}
+  }
   .changelog-service {
     position: relative;
     top: -1px;
@@ -965,7 +965,6 @@ div.history_overview{
         border-left: none;
       }
     }
-
     ul {
       border-left: none;
       list-style: decimal;
@@ -982,6 +981,7 @@ div.history_overview{
           font-size: 130%;
           color: #a8a8a8;
         }
+        // 서비스 흐름도 overview 라인 깨짐 수정
         font-size: 92%;
         margin-bottom: -1px;
         padding-left: 5px;
