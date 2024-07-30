@@ -3,21 +3,21 @@ import styles from './styles.module.css';
 import OpenFolderIcon from './openFolderIcon';
 import CloseFolderIcon from './closeFolderIcon';
 
-export default function Filetree({ children, name, type }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Filetree({ children, name, type, open = false }) {
+  // open 속성으로 초기 상태 설정 추가(0730)
+  const [isOpen, setIsOpen] = useState(open);
 
   useEffect(() => {
     const mediaQueryList = window.matchMedia('print');
 
     const handlePrintChange = (event) => {
       if (event.matches) {
-        setIsOpen(true);
+        setIsOpen(true); 
       }
     };
 
     mediaQueryList.addListener(handlePrintChange);
 
-    // Clean up listener on component unmount
     return () => {
       mediaQueryList.removeListener(handlePrintChange);
     };
@@ -26,19 +26,20 @@ export default function Filetree({ children, name, type }) {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div className={styles.filetree}>
-        <button className={styles.top} onClick={handleToggle}>
-          <span className={styles.type}>
-            {isOpen ? <OpenFolderIcon /> : <CloseFolderIcon />}
-          </span>
-          {name}
-        </button>
-        {isOpen && (
-          <ul className={styles.fileitem} type={type}>
-            {children}
-          </ul>
-        )}
+      <button className={styles.top} onClick={handleToggle}>
+        <span className={styles.type}>
+          {isOpen ? <OpenFolderIcon /> : <CloseFolderIcon />}
+        </span>
+        {name}
+      </button>
+      {isOpen && (
+        <ul className={styles.fileitem} type={type}>
+          {children}
+        </ul>
+      )}
     </div>
   );
 }
