@@ -99,6 +99,8 @@ const assets = {
 
 };
 
+/*다음 단계를 통해 와탭 쿠버네티스 모니터링을 재설치하세요.*/
+/*사용자 쿠버네티스 환경에 따라 내부 Cgroups의 영향으로 컨테이너 ID를 확보하지 못하는 경우가 발생할 수 있습니다. 와탭은 이러한 상황에 대응하기 위해 쿠버네티스 모니터링의 컨테이너와 애플리케이션간 매핑 매커니즘을 변경하였습니다. 해당 변경 사항의 경우 쿠버네티스 에이전트 1.7.7 및 자바 에이전트 2.2.33 버전부터 적용되었습니다.*/
 
 
 const toc = [{
@@ -126,12 +128,32 @@ const toc = [{
   "id": "구형-yaml-파일을-통해-와탭-쿠버네티스-모니터링-설치한-경우",
   "level": 3
 }, {
-  "value": "원인",
-  "id": "원인",
+  "value": "해결 방법",
+  "id": "해결-방법",
   "level": 4
 }, {
-  "value": "해결",
-  "id": "해결",
+  "value": "애플리케이션 연동 문제 해결",
+  "id": "troubleshooting-k8s-application",
+  "level": 2
+}, {
+  "value": "컨테이너 맵에 Java 모니터링 데이터가 표시되지 않는 경우",
+  "id": "컨테이너-맵에-java-모니터링-데이터가-표시되지-않는-경우",
+  "level": 3
+}, {
+  "value": "해결 방법",
+  "id": "해결-방법-1",
+  "level": 4
+}, {
+  "value": "에이전트 업데이트",
+  "id": "에이전트-업데이트",
+  "level": 5
+}, {
+  "value": "추가 환경변수 설정",
+  "id": "추가-환경변수-설정",
+  "level": 5
+}, {
+  "value": "컨테이너와 APM 간 정상 매핑 확인 방법",
+  "id": "컨테이너와-apm-간-정상-매핑-확인-방법",
   "level": 4
 }];
 function _createMdxContent(props) {
@@ -142,6 +164,7 @@ function _createMdxContent(props) {
     h2: "h2",
     h3: "h3",
     h4: "h4",
+    h5: "h5",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     ol: "ol",
@@ -266,39 +289,30 @@ function _createMdxContent(props) {
             children: "2022년 8월 24일 이전"
           }), "에 다운로드한 설치 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: "YAML"
-          }), "을 통해 와탭 쿠버네티스 모니터링을 설치한 경우 노드 에이전트(whatap-node-agent) 기동 시 오류 발생 및 기동에 실패하는 경우가 있습니다."]
+          }), "을 통해 와탭 쿠버네티스 모니터링을 설치한 경우 노드 에이전트(whatap-node-agent) 기동 시 오류가 발생하며 기동에 실패하는 경우가 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["원인은 다음과 같습니다. 2022년 8월 24일 이전에 다운로드한 설치 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "YAML"
+          }), " 파일 내 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "UseCGroupMemoryLimitForHeap"
+          }), " JVM 옵션을 사용한 노드 에이전트 실행 스크립트가 포함되어 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭 노드 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "1.2.0 이상"
+          }), "(2022년 11월 21일 배포) 버전부터 에이전트 내부에서 사용하는 JDK가 업그레이드 되었으며 업그레이드된 JDK 버전은 더 이상 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "UseCGroupMemoryLimitForHeap"
+          }), " 옵션을 제공하지 않습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "2022년 8월 24일 이전"
+          }), "에 다운로드한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "YAML"
+          }), " 파일로 와탭 쿠버네티스 모니터링을 설치한 상태로 노드 에이전트 1.2.0 이상 버전을 기동하는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Unrecognized VM option 'UseCGroupMemoryLimitForHeap’"
+          }), " 메세지가 발생하며 기동에 실패하게 됩니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "원인",
-          children: "원인"
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["2022년 8월 24일 이전에 다운로드한 설치 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "YAML"
-              }), " 파일 내 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "UseCGroupMemoryLimitForHeap"
-              }), " JVM 옵션을 사용한 노드 에이전트 실행 스크립트가 포함되어 있습니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["와탭 노드 에이전트 1.2.0(2022년 11월 21일 배포)이상 버전부터 에이전트 내부에서 사용하는 JDK가 업그레이드 되었으며 업그레이드된 JDK 버전은 더 이상 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "UseCGroupMemoryLimitForHeap"
-              }), " 옵션을 제공하지 않습니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["2022년 8월 24일 이전에 다운로드한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "YAML"
-              }), " 파일로 와탭 쿠버네티스 모니터링을 설치한 상태로 노드 에이전트 1.2.0 이상 버전을 기동하는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Unrecognized VM option 'UseCGroupMemoryLimitForHeap’"
-              }), " 메세지가 발생하며 기동에 실패하게 됩니다."]
-            }), "\n"]
-          }), "\n"]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "해결",
-          children: "해결"
+          id: "해결-방법",
+          children: "해결 방법"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "다음 단계를 통해 와탭 쿠버네티스 모니터링을 재설치하세요."
+          children: "이 문제를 해결하기 위해 다음과 같이 쿠버네티스 모니터링을 재설치하세요."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -355,6 +369,116 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "troubleshooting-k8s-application",
+        children: "애플리케이션 연동 문제 해결"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "컨테이너-맵에-java-모니터링-데이터가-표시되지-않는-경우",
+        children: "컨테이너 맵에 Java 모니터링 데이터가 표시되지 않는 경우"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["사용자 쿠버네티스 환경에서 Cgroups의 설정 및 관리 방식에 따라 특정 상황에서 컨테이너 ID를 확보하지 못하는 문제가 발생할 수 있습니다. 와탭은 이러한 상황에 대응하기 위해 쿠버네티스 모니터링의 컨테이너와 애플리케이션 간 매핑 메커니즘을 변경하였습니다. 해당 변경 사항의 경우 와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "쿠버네티스 에이전트 1.7.7"
+        }), " 버전과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Java 에이전트 2.2.33"
+        }), " 버전부터 적용되어 Cgroups 영향으로 컨테이너 ID가 누락되는 문제를 해결합니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "해결-방법-1",
+        children: "해결 방법"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h5",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+        id: "에이전트-업데이트",
+        children: "에이전트 업데이트"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["쿠버네티스 환경에서 발생하는 컨테이너 ID 식별 문제를 해결하기 위해서는 와탭 쿠버네티스 에이전트와 APM이 서로 주고받는 데이터를 정확히 식별할 수 있도록 지원하는 최신 버전을 사용해야 합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "쿠버네티스 에이전트"
+        }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "1.7.7 버전 이상"
+        }), "을 설치하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Java 에이전트"
+        }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "2.2.33 버전 이상"
+        }), "을 설치하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "현재는 Java 에이전트만 지원하고 있으며 다른 언어의 APM은 추후 지원할 예정입니다."
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h5",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+        id: "추가-환경변수-설정",
+        children: "추가 환경변수 설정"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["에이전트 버전 업데이트 이후에도 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "컨테이너 맵"
+          })
+        }), "에 Java 애플리케이션 정보가 표시되지 않는 경우 사용자 환경변수를 추가하여 문제를 해결할 수 있습니다. 이 설정은 Java APM이 설치된 컨테이너 매니페스트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "YAML"
+        }), ")의 환경변수에 해당 컨테이너 내 Java 에이전트의 절대 경로를 나타내는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "WHATAP_JAVA_AGENT_PATH"
+        }), " 옵션을 추가합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "다음은 Java APM이 설치된 컨테이너 환경변수에 해당 옵션을 추가한 예시입니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-YAML",
+          children: "env:\n- name: NODE_IP\n  valueFrom: {fieldRef: {fieldPath: status.hostIP}}\n- name: NODE_NAME\n  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}\n- name: POD_NAME\n  valueFrom: {fieldRef: {fieldPath: metadata.name}}\n- name: OKIND\n  value: {YOUR_OKIND_NAME}\n- name: license\n  value: <Project Access Key>\n- name: whatap.server.host\n  value: <수집서버 IP 주소>\n- name: whatap.micro.enabled\n  value: \"true\"\n- name: WHATAP_JAVA_AGENT_PATH\n  value: \"/whatap/whatap.agent-2.2.35.jar\"\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "컨테이너와-apm-간-정상-매핑-확인-방법",
+        children: "컨테이너와 APM 간 정상 매핑 확인 방법"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "컨테이너와 애플리케이션이 정상 매핑되었는지 확인하는 방법은 다음과 같습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "대시보드"
+              })
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "컨테이너 맵"
+              })
+            }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "컨테이너 맵"
+              })
+            }), " 블록 내부에 흰색 마이크로 컨테이너가 존재할 경우 정상적으로 매핑된 상태입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분석"
+              })
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "메트릭스 조회"
+              })
+            }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "app_counter"
+            }), " 카테고리의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "container"
+            }), " 필드에 애플리케이션이 실행 중인 컨테이너 ID가 기록된 경우 정상적으로 매핑된 상태입니다."]
+          }), "\n"]
+        }), "\n"]
       })]
     })]
   });
