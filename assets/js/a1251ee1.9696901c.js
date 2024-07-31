@@ -989,7 +989,8 @@ function _java_exception_options_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _java_exception_options_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -1249,6 +1250,27 @@ function _java_exception_options_createMdxContent(props) {
           children: "biz_exceptions"
         }), " 처리할 수 있습니다."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "trace_exception_handler_overwrite_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["spring-boot ExceptionHandler를 통과하는 예외(exception)가 발생하면 이전에 발생한 예외를 대체할 수 있습니다. ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "TTL06209",
+          className: "uitext"
+        }), " 창의 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "TTL06125",
+          className: "uitext"
+        }), " 탭에서 예외(exception)를 spring-boot의 ExceptionHandler에 등록한 예외로 표시할 수 있습니다."]
+      }), "\n"]
     }), "\n"]
   });
 }
@@ -1263,6 +1285,9 @@ function _java_exception_options_MDXContent(props = {}) {
       ...props
     })
   }) : _java_exception_options_createMdxContent(props);
+}
+function _java_exception_options_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

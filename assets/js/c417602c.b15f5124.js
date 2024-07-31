@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79344],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[72625],{
 
 /***/ 60280:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -74,7 +74,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 53100:
+/***/ 17446:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -92,41 +92,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'java-2_2_27',
-	title: 'Java Agent v2.2.27',
+	id: 'java-2_2_36',
+	title: 'Java Agent v2.2.36',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/java/java-2_2_26',
+	pagination_next: 'release-notes/java/java-2_2_35',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/java/java-2_2_27",
-  "title": "Java Agent v2.2.27",
-  "description": "2024년 02월 06일",
-  "source": "@site/docs/release-notes/java/java-2.2.27.mdx",
+  "id": "release-notes/java/java-2_2_36",
+  "title": "Java Agent v2.2.36",
+  "description": "2024년 07월 18일",
+  "source": "@site/docs/release-notes/java/java-2.2.36.mdx",
   "sourceDirName": "release-notes/java",
-  "slug": "/release-notes/java/java-2_2_27",
-  "permalink": "/whatap-docs/release-notes/java/java-2_2_27",
+  "slug": "/release-notes/java/java-2_2_36",
+  "permalink": "/whatap-docs/release-notes/java/java-2_2_36",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/java/java-2.2.27.mdx",
+  "editUrl": "undefined/docs/release-notes/java/java-2.2.36.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "java-2_2_27",
-    "title": "Java Agent v2.2.27",
+    "id": "java-2_2_36",
+    "title": "Java Agent v2.2.36",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/java/java-2_2_26",
+    "pagination_next": "release-notes/java/java-2_2_35",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Agent v2.2.28",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_28"
+    "title": "Java Agent v2.2.37",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_37"
   },
   "next": {
-    "title": "Java Agent v2.2.26",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_26"
+    "title": "Java Agent v2.2.35",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_35"
   }
 };
 const assets = {
@@ -139,6 +139,7 @@ const assets = {
 const toc = [..._import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    blockquote: "blockquote",
     code: "code",
     li: "li",
     p: "p",
@@ -150,73 +151,41 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 02월 06일"
+      children: "2024년 07월 18일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Feature"
-          }), " mule-3.9.5 추적 범위 확대"]
+          }), " 위빙 플러그인 컴파일 버전과 사용자 코드 타겟 버전이 차이가 나면 원본 클래스를 반환하는 설정 추가"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.conf\"",
-            children: "# requires agent restart\nweaving=mule-3.9.5\n"
+            children: "# ignore agent compiled jdk version and application target jdk version\n# default: true \n# requires restart\n# false: return original class and abort tracing class\nweaving_ignore_compile_version_enabled=true\n"
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " camel-cxf-3.15 추적"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title=\"whatap.conf\"",
-            children: "# requires agent restart\nweaving=camel-cxf-3.15\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            children: "OracleCallableStatement"
-          }), " 추적 추가"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Deprecated"
-          }), " Lettuce 드라이버 사용 시 Redis의 key 수집 중단"]
+            children: "Fixed"
+          }), " System 로그를 남기는 경우 다른 트랜잭션에 해당 로그가 포함되는 문제 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["예, System.out, System.err, hibernate System 로그 (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement"
+            }), ")"]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             children: "Fixed"
-          }), " spring-boot에서 netty 사용 시 request의 URL에서 querystring 분리"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " spring-boot에서 netty 사용 시 request의 HTTP 파라미터를 수집하지 못하는 문제 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Fixed"
-          }), " 히트맵의 트랜잭션 건수, 에러 건수 오류 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Deprecate"
-          }), " Lettuce 드라이버 사용 시 Redis의 value 수집 중단"]
+          }), " logback, log4j 사용 시 Exception stack을 포함한 로그가 발생했을 때 사용자의 로그 콘텐츠를 수집하지 못하는 문제 수정"]
         }), "\n"]
       }), "\n"]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "2.2.27"
+      ver: "2.2.36"
     })]
   });
 }
