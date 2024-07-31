@@ -4,7 +4,7 @@ import OpenFolderIcon from './openFolderIcon';
 import CloseFolderIcon from './closeFolderIcon';
 
 export default function Filetree({ children, name, type, open = false }) {
-  // open 속성으로 초기 상태 설정 추가(0730)
+  // open 속성으로 초기 상태 설정 추가(0730) 기본 닫힘 - 열어두려면 속성 추가 open={true}
   const [isOpen, setIsOpen] = useState(open);
 
   useEffect(() => {
