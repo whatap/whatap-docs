@@ -22,29 +22,6 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/php/php-2_8_1",
-    "ver": "v2.8.1",
-    "date": "2024-07-24",
-    "Lists": [
-      {
-        "ver": "v2.8.1",
-        "hash": "v281",
-        "product": "PHP Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\">New</code> IP 주소별 트랜잭션 통계를 수집하는 에이전트 설정 옵션 추가</p>",
-        "details": "<blockquote>\n<p><strong>whatap.stat_ipurl_enabled</strong> <span class=\"type\">Boolean</span>, 기본값 <code>false</code></p>\n</blockquote>"
-      },
-      {
-        "ver": "v2.8.1",
-        "hash": "v281",
-        "product": "PHP Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> 통계 압축 전송을 설정하는 에이전트 설정 옵션 추가</p>",
-        "details": "<blockquote>\n<p><strong>whatap.stat_zip_enabled</strong> <span class=\"type\">Boolean</span>, 기본값 <code>true</code></p>\n</blockquote>"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/php/php-2_8_0",
     "ver": "v2.8.0",
     "date": "2024-06-19",

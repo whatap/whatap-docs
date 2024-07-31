@@ -15,29 +15,6 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_7_8",
-    "ver": "v1.7.8",
-    "date": "2024-07-24",
-    "Lists": [
-      {
-        "ver": "v1.7.8",
-        "hash": "v178",
-        "product": "Kubernetes Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードディスクリスト</span> 메뉴 추가</p>",
-        "details": "<p>와탭 쿠버네티스 모니터링의 <span class=\"uitext\">ノードディスクリスト</span>에서 각 노드에 마운트된 개별 디스크의 현재 사용량, 여유 공간, 성능 지표를 실시간으로 모니터링하여 디스크의 상태를 쉽게 확인할 수 있습니다. 이를 통해 클러스터의 디스크 자원을 효율적으로 관리하고, 잠재적인 문제를 사전에 파악하여 대응할 수 있습니다.</p>"
-      },
-      {
-        "ver": "v1.7.8",
-        "hash": "v178",
-        "product": "Kubernetes Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Service リスト</span> 메뉴 추가</p>",
-        "details": "<p>Kubernetes 클러스터 내에서 실행 중인 모든 서비스들의 상태와 정보를 종합적으로 제공합니다. 와탭 쿠버네티스 모니터링의 <span class=\"uitext\">Service リスト</span> 메뉴를 통해 클러스터 내 네트워크 구성을 쉽게 파악하고 각 서비스의 구성과 현재 상태를 효율적으로 모니터링할 수 있습니다.</p>"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_7_1",
     "ver": "v1.7.1",
     "date": "2024-05-17",

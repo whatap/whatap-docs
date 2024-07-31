@@ -42,20 +42,6 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_3",
-    "ver": "v2.6.3",
-    "date": "2024-07-24",
-    "Lists": [
-      {
-        "ver": "v2.6.3",
-        "hash": "v263",
-        "product": "Server Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> 서버 인벤토리 수집 옵션 추가</p>"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_1",
     "ver": "v2.6.1",
     "date": "2024-06-26",
@@ -66,20 +52,6 @@
         "product": "Server Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Red Hat系列のLinuxで、<code>rpm -a</code>が周期的に実行されるエラーを修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_4",
-    "ver": "v2.6.4",
-    "date": "2024-07-29",
-    "Lists": [
-      {
-        "ver": "v2.6.4",
-        "hash": "v264",
-        "product": "Server Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> 로그 파일 키워드 감시 정책 추가 시 대상 파일의 과거 로그를 잘못 읽는 문제 수정</p>"
       }
     ]
   },
@@ -143,20 +115,6 @@
         "product": "Server Agent",
         "type": "Change",
         "desc": "<p><code class=\"Change\">Change</code> ntpq終了処理の改善</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_2",
-    "ver": "v2.6.2",
-    "date": "2024-07-16",
-    "Lists": [
-      {
-        "ver": "v2.6.2",
-        "hash": "v262",
-        "product": "Server Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> Windows 에이전트에서 bat, powershell 스크립트 실행 기능 추가</p>"
       }
     ]
   },
