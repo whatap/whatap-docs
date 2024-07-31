@@ -1,4 +1,4 @@
-// 0725
+// 0725 - 0730 추가 수정
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -131,7 +131,7 @@ function createOrUpdateMDXDocument(filename, features) {
                     documentContent += `- <code class='changelog-overview'>${feature.feature}</code>`;
                     documentContent += `\n<code class='changelog-date'>${feature.date}</code>`;
                     const versionLink = createVersionLink(feature.version);
-                    documentContent += ` <code class='changelog-service'><a href="${versionLink}">${feature.version}</a></code>\n`;
+                    documentContent += ` <code class='changelog-service'><a href="${versionLink}"><img src="/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> ${feature.version}</a></code>\n`;
                     if (feature.feature2) {
                         documentContent += `<br/><code class='changelog-overview2'>${feature.feature2}</code>\n`;
                         feature.details.forEach(detail => {
