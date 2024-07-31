@@ -212,6 +212,28 @@ function _createMdxContent(props) {
                 className: "uitext"
               }), " 메뉴에서 읽기 전용으로 공유 받은 대시보드의 그룹 위젯에 포함된 위젯들이 데이터를 호출하지 못하는 문제 수정"]
             }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "0",
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_event",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_eventSetting",
+                className: "uitext"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                className: "newfunc",
+                children: "V2"
+              }), " 메뉴의 이벤트 추가 또는 수정 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                className: "slow",
+                children: "Warning"
+              }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                className: "vslow",
+                children: "Critical"
+              }), " 지표 중 하나만 활성화된 경우, 동일한 설정값을 입력하면 저장되지 않는 문제 수정"]
+            }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "application",
