@@ -53,9 +53,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -88,9 +93,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -125,9 +135,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -156,9 +171,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -204,9 +224,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -373,9 +398,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -404,9 +434,14 @@ function _createMdxContent(props) {
         children: "2024년 07월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
-          children: "Service 2.7.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.7.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -439,9 +474,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -466,9 +506,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -496,9 +541,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -545,9 +595,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -572,9 +627,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -601,9 +661,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -631,9 +696,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -664,9 +734,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -700,9 +775,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -736,9 +816,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
-          children: "Service 2.6.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.6.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -769,9 +854,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 26일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/features/kafka-introduction",
-          children: "참조​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Reference​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -795,9 +885,14 @@ function _createMdxContent(props) {
         children: "2024년 06월 03일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.8​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.8​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -819,9 +914,14 @@ function _createMdxContent(props) {
         children: "2024년 05월 30일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.7​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.7​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -846,9 +946,14 @@ function _createMdxContent(props) {
         children: "2024년 05월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -899,9 +1004,14 @@ function _createMdxContent(props) {
         children: "2024년 05월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -929,9 +1039,14 @@ function _createMdxContent(props) {
         children: "2024년 05월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -973,9 +1088,14 @@ function _createMdxContent(props) {
         children: "2024년 05월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1011,9 +1131,14 @@ function _createMdxContent(props) {
         children: "2024년 05월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
-          children: "Service 2.5.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.5.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1041,9 +1166,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1067,9 +1197,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1097,9 +1232,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1130,9 +1270,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1177,9 +1322,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1238,9 +1388,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1271,9 +1426,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1307,9 +1467,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
-          children: "Service 2.4.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.4.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1348,9 +1513,14 @@ function _createMdxContent(props) {
         children: "2024년 04월 09일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.14​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.14​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1389,9 +1559,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 29일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.5​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.5​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1416,9 +1591,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.2​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.2​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1443,9 +1623,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1470,9 +1655,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1505,9 +1695,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1532,9 +1727,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1559,9 +1759,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1605,9 +1810,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1632,9 +1842,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1756,9 +1971,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1805,9 +2025,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1857,9 +2082,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1898,9 +2128,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1928,9 +2163,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -1958,9 +2198,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 27일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
-          children: "Service 2.3.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.3.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1979,9 +2224,14 @@ function _createMdxContent(props) {
         children: "2024년 03월 20일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.9​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.9​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2013,9 +2263,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 29일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.4​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.4​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2034,9 +2289,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2074,9 +2334,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2109,9 +2374,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2146,9 +2416,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2179,9 +2454,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2206,9 +2486,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2227,9 +2512,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2282,9 +2572,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2309,9 +2604,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2342,9 +2642,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2387,9 +2692,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2414,9 +2724,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2484,9 +2799,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
-          children: "Service 2.2.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.2.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2505,9 +2825,14 @@ function _createMdxContent(props) {
         children: "2024년 02월 01일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
-          children: "Service 2.1.7​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.1.7​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2532,9 +2857,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
-          children: "Service 2.1.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.1.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2559,9 +2889,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
-          children: "Service 2.1.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.1.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2589,9 +2924,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
-          children: "Service 2.1.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.1.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2616,9 +2956,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 24일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
-          children: "Service 2.1.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.1.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2643,9 +2988,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 19일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.6​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.6​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2670,9 +3020,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2697,9 +3052,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2724,9 +3084,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -2759,9 +3124,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2799,9 +3169,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2826,9 +3201,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2887,9 +3267,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -2917,9 +3302,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3001,9 +3391,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3038,9 +3433,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3082,9 +3482,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3125,9 +3530,14 @@ function _createMdxContent(props) {
         children: "2024년 01월 10일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: "Service 2.0.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 2.0.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3146,9 +3556,14 @@ function _createMdxContent(props) {
         children: "2023년 12월 18일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.10​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.10​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3173,9 +3588,14 @@ function _createMdxContent(props) {
         children: "2023년 12월 01일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.4​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.4​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3206,9 +3626,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 28일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.3​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.3​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3236,9 +3661,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3265,9 +3695,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3295,9 +3730,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3325,9 +3765,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3352,9 +3797,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3382,9 +3832,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3437,9 +3892,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3489,9 +3949,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3516,9 +3981,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3557,9 +4027,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3584,9 +4059,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3625,9 +4105,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 22일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
-          children: "Service 1.114.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.114.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3655,9 +4140,14 @@ function _createMdxContent(props) {
         children: "2023년 11월 01일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.3​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.3​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3679,9 +4169,14 @@ function _createMdxContent(props) {
         children: "2023년 10월 25일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3711,9 +4206,14 @@ function _createMdxContent(props) {
         children: "2023년 10월 25일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.0​"]
         })
       }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview2",
@@ -3744,9 +4244,14 @@ function _createMdxContent(props) {
         children: "2023년 10월 25일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3771,9 +4276,14 @@ function _createMdxContent(props) {
         children: "2023년 10월 25일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3798,9 +4308,14 @@ function _createMdxContent(props) {
         children: "2023년 10월 25일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3831,9 +4346,14 @@ function _createMdxContent(props) {
         children: "2023년 10월 25일"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: (0,jsx_runtime.jsx)("a", {
+        children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
-          children: "Service 1.112.0​"
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "/whatap-docs/img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), "  Service 1.112.0​"]
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -3889,7 +4409,9 @@ const overview_frontMatter = {
 	tags: [
 		'새로운 기능',
 		'서비스 개요'
-	]
+	],
+	image: '/img/changelog/new_feature_overview_txt.png',
+	contentImage: '/img/changelog/new_feature_overview_txt_gl.png'
 };
 const overview_contentTitle = undefined;
 const metadata = {
@@ -3897,7 +4419,7 @@ const metadata = {
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/overview.mdx",
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
-  "description": "와탭이 제공하는 서비스 개요를 한 눈에 살펴보세요.",
+  "description": "New Feature Overview",
   "date": "2024-07-23T15:30:00.000Z",
   "tags": [
     {
@@ -3911,7 +4433,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/서비스-개요"
     }
   ],
-  "readingTime": 0.34,
+  "readingTime": 0.38,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -3931,7 +4453,9 @@ const metadata = {
     "tags": [
       "새로운 기능",
       "서비스 개요"
-    ]
+    ],
+    "image": "/img/changelog/new_feature_overview_txt.png",
+    "contentImage": "/img/changelog/new_feature_overview_txt_gl.png"
   },
   "unlisted": false,
   "nextItem": {
@@ -3953,13 +4477,21 @@ const assets = {
 const overview_toc = [...toc];
 function overview_createMdxContent(props) {
   const _components = {
+    img: "img",
     p: "p",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.p, {
-      children: "와탭이 제공하는 서비스 개요를 한 눈에 살펴보세요."
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        alt: "New Feature Overview",
+        src: (__webpack_require__(37884)/* ["default"] */ .A) + "",
+        width: "934",
+        height: "161"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요."
     }), "\n", "\n", "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("div", {
       class: "history_overview",
       id: "overview_test",
@@ -4162,6 +4694,16 @@ function CustomListItem({ children , overview , date , service  }) {
  // }
  // export default CustomListItem;
 
+
+/***/ }),
+
+/***/ 37884:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png");
 
 /***/ }),
 

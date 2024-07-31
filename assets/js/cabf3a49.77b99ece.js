@@ -28,7 +28,9 @@ const frontMatter = {
 	tags: [
 		'새로운 기능',
 		'서비스 개요'
-	]
+	],
+	image: '/img/changelog/new_feature_overview_txt.png',
+	contentImage: '/img/changelog/new_feature_overview_txt_gl.png'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -36,7 +38,7 @@ const metadata = {
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/overview.mdx",
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
-  "description": "와탭이 제공하는 서비스 개요를 한 눈에 살펴보세요.",
+  "description": "New Feature Overview",
   "date": "2024-07-23T15:30:00.000Z",
   "tags": [
     {
@@ -50,7 +52,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/서비스-개요"
     }
   ],
-  "readingTime": 0.34,
+  "readingTime": 0.38,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -70,7 +72,9 @@ const metadata = {
     "tags": [
       "새로운 기능",
       "서비스 개요"
-    ]
+    ],
+    "image": "/img/changelog/new_feature_overview_txt.png",
+    "contentImage": "/img/changelog/new_feature_overview_txt_gl.png"
   },
   "unlisted": false,
   "nextItem": {
@@ -90,13 +94,21 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    img: "img",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "와탭이 제공하는 서비스 개요를 한 눈에 살펴보세요."
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        alt: "New Feature Overview",
+        src: (__webpack_require__(37884)/* ["default"] */ .A) + "",
+        width: "934",
+        height: "161"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요."
     }), "\n"]
   });
 }
@@ -291,6 +303,16 @@ function CustomListItem({ children , overview , date , service  }) {
  // }
  // export default CustomListItem;
 
+
+/***/ }),
+
+/***/ 37884:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png");
 
 /***/ }),
 
