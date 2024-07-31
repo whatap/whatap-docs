@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/xos-1_1_8a",
+    "ver": "v1.1.8a",
+    "date": "2024-01-25",
+    "Lists": [
+      {
+        "ver": "v1.1.8a",
+        "hash": "v118a",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> PostgreSQLでlogファイル名を設定する時、<code>%H%M%S</code>の時分秒まで使えるように修正</p>"
+      },
+      {
+        "ver": "v1.1.8a",
+        "hash": "v118a",
+        "product": "xos",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> CPU使用率が負の値で表示されるバグを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/xos-1_1_8b",
+    "ver": "v1.1.8b",
+    "date": "2024-03-15",
+    "Lists": [
+      {
+        "ver": "v1.1.8b",
+        "hash": "v118b",
+        "product": "xos",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>プロセス値が負の数で出力される場合のログを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/xos-1_1_8f",
+    "ver": "v1.1.8f",
+    "date": "2024-06-27",
+    "Lists": [
+      {
+        "ver": "v1.1.8f",
+        "hash": "v118f",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> XOSエラーメッセージ番号を、内容まで表示するように修正</p>"
+      }
+    ]
+  }
+]

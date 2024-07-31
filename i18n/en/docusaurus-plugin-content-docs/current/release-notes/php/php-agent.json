@@ -1,0 +1,156 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/php/php-2_7_1",
+    "ver": "v2.7.1",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "v2.7.1",
+        "hash": "v271",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the bug where only the hash (number) value appears, not the name, after setting the <code>whatap.onode</code> option.</p>"
+      },
+      {
+        "ver": "v2.7.1",
+        "hash": "v271",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fix the bug where the whatap-php.service file is not recognized in Ubuntu 14.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/php/php-2_7_0",
+    "ver": "v2.7.0",
+    "date": "2024-01-10",
+    "Lists": [
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> PHP 8.3 has been supported.</p>"
+      },
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Trace context (W3C) is supported in the multi-transaction tracing.</p>",
+        "details": "<p><strong>OpenTelmetry</strong> that supports the trace context, and the multi-transaction tracing correlation are supported.</p>"
+      },
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified the resource collection for SQL, Method, and HTTP call.</p>",
+        "details": "<p>The differences between resources (CPU, memory) at the start of the transaction and the start of each step are collected.</p>"
+      },
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified to newly create the configuration file (<em>whatap.conf</em>) if nothing.</p>"
+      },
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the error where the cumulative number of outbound calls are collected wrong as the cumulative time in the active transation list.</p>"
+      },
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the whatap-php service (<code>whatap-php.service</code>) execution error in the Linux environment.</p>"
+      },
+      {
+        "ver": "v2.7.0",
+        "hash": "v270",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the segmentation errors from PHP 8.1.0 to 8.1.2 (collection for user functions is stopped).</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/php/php-2_8_0",
+    "ver": "v2.8.0",
+    "date": "2024-06-19",
+    "Lists": [
+      {
+        "ver": "v2.8.0",
+        "hash": "v280",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> Supported linux aarch64.</p>"
+      },
+      {
+        "ver": "v2.8.0",
+        "hash": "v280",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Used the <em>security.conf</em> file instead of <em>paramkey.txt</em></p>",
+        "details": "<p>It uses the value of the <code>paramkey</code> key in the previous <em>security.conf</em> file. The default value has been changed to <code>WHATAP</code> instead of a random value. If \"WHATAP\" is specified, decryption is enabled without entering a key.</p>"
+      },
+      {
+        "ver": "v2.8.0",
+        "hash": "v280",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the normalization option setting for SQL statements.</p>",
+        "details": "<ul>\n<li>\n<p>Always enable normalization by separating parameters in SQL statements. Always set the <code>whatap.trace_sql_normalize_enabled</code> option to <code>true</code>.</p>\n</li>\n<li>\n<p>If you have already disabled the normalization option (disable normalization), activate the setting to normalize and display parameters separately.</p>\n<ul>\n<li>Set the <code>whatap.profile_sql_param_enabled</code> option to <code>true</code>.</li>\n<li>Normalized parameters are separately encrypted and collected.</li>\n<li>You can check the data by decrypting it with <code>paramkey</code> in <em>security.conf</em>.</li>\n</ul>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/php/php-2_8_1",
+    "ver": "v2.8.1",
+    "date": "2024-07-24",
+    "Lists": [
+      {
+        "ver": "v2.8.1",
+        "hash": "v281",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> IP 주소별 트랜잭션 통계를 수집하는 에이전트 설정 옵션 추가</p>",
+        "details": "<blockquote>\n<p><strong>whatap.stat_ipurl_enabled</strong> <span class=\"type\">Boolean</span>, 기본값 <code>false</code></p>\n</blockquote>"
+      },
+      {
+        "ver": "v2.8.1",
+        "hash": "v281",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> 통계 압축 전송을 설정하는 에이전트 설정 옵션 추가</p>",
+        "details": "<blockquote>\n<p><strong>whatap.stat_zip_enabled</strong> <span class=\"type\">Boolean</span>, 기본값 <code>true</code></p>\n</blockquote>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/php/php-2_7_2",
+    "ver": "v2.7.2",
+    "date": "2024-03-06",
+    "Lists": [
+      {
+        "ver": "v2.7.2",
+        "hash": "v272",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified to use variables in date format for naming the log monitoring files.</p>",
+        "details": "<blockquote>\n<p>Modified based on the use of Python <code>strftime()</code>. e.g. 20240101: %Y%m%d</p>\n</blockquote>"
+      },
+      {
+        "ver": "v2.7.2",
+        "hash": "v272",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified the guide message of the installation script (<em>/usr/whatap/php/install.sh</em>).</p>"
+      }
+    ]
+  }
+]

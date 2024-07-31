@@ -1,0 +1,474 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.3",
+    "date": "2024-05-08",
+    "Lists": [
+      {
+        "ver": "Service 2.4.3",
+        "hash": "service-243",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Flexボード</span>または<span class=\"uitext\">統合Flexボード</span>メニューでリッチテキストのウィジェットを修正する際、ダッシュボードレイアウトの復元現象を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.2",
+    "date": "2024-04-26",
+    "Lists": [
+      {
+        "ver": "Service 2.4.2",
+        "hash": "service-242",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">マルチサービスヒットマップ</span>メニューで<span class=\"uitext\">開始時間</span>の選択ウィンドウにダークテーマが適用されていない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.1",
+    "date": "2024-04-25",
+    "Lists": [
+      {
+        "ver": "Service 2.4.1",
+        "hash": "service-241",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">トランザクション</span>メニューで<span class=\"uitext\">並替え順</span>を<span class=\"uitext\">エラー</span>に設定するとエラー順にソートしない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.4.1",
+        "hash": "service-241",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューのヒットマップウィジェットでエージェントフィルタリングによって発生したチャートに空き領域をドラッグするとデータが照会される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.4.1",
+        "hash": "service-241",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで<span class=\"uitext\">Long Waiting Session Count</span>ウィジェットのデータが現在時間を基準に表示されるように修正</li>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.0",
+    "date": "2024-04-24",
+    "Lists": [
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <b>統合サービス2</b>ダッシュボードテンプレートを追加</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボードリスト</span>でダッシュボードに選択された製品アイコンを表示するように修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>ダッシュボード テンプレートプレビューにスクロールを表示するように修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクト内のダッシュボードリストではプロジェクト名を表記しないように修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>データベースステータスウィジェットでインスタンスをクリックすると、そのプロジェクトダッシュボードに移動するように動作を変更</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>グループウィジェットに下位ウィジェットを追加する場合、ウィジェットテンプレート一覧が閉じられないように変更</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">イベント設定</span> <code class=\"newfunc\">New</code>メニューで<span class=\"uitext\">JSON一括修正</span>機能利用時のメトリクス(<code>METRICS</code>) イベント属性の<code>relatedPcode</code>検証ロジックを削除</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> SMS及びWhatsApp通知が使用できないプロジェクトは<span class=\"uitext\">通知設定</span>メニューの<span class=\"uitext\">ユーザー別アラート受信設定</span>セクションで<span class=\"uitext\">SMSメッセージ</span>及び<span class=\"uitext\">WhatsApp通知</span>カラム項目を表示しないように修正</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">通知設定</span>メニューの<span class=\"uitext\">ユーザー別アラート受信設定</span>セクションで<span class=\"b500\">メンバー管理</span>権限のあるメンバーにユーザー情報をマスキング処理しないように変更</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">イベント設定</span> メニューでリアルタイムログイベントまたは複合ログイベントをJSON形式で読み込む場合、id属性を除いて追加または上書きするように修正</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">イベント設定</span>メニューでメトリクスのイベントをJSONエディターで編集する場合<code>select</code>属性を必須値として検証するロジックを削除</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">イベント設定</span>メニューの複合メトリクスイベントの設定で、最初のシミュレーションを実行した後、日付を変更して再実行するとデータが正常に表記されない問題を修正</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アカウント管理</span>メニューの<span class=\"uitext\">ユーザー電話番号</span>セクションで一般の携帯電話に国・地域コードの選択機能を追加</p>",
+        "category": "アカウント管理"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクト作成ページでリージョン選択の動線を変更(地域→CSP選択順に動線を変更)</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>次のメニューのリストテーブルで活性化トグルと修正ボタンカラムの順序を一番左に変更</p>",
+        "category": "その他",
+        "details": "<ul>\n<li><span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">メンテナンス計画</span></li>\n<li><span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">メトリックス</span> &gt; <span class=\"uitext\">通知メッセージ設定</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> AWS Marketplaceアカウントユーザーの場合、サブスクリプションのキャンセル機能を削除した後、案内メッセージを追加</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "共通",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> サイドメニューのチュートリアルボタンを削除</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span> メニューの<span class=\"uitext\">アクティブTXイコライザー</span>ウィジェットに非活性エージェントを表示するオプションを追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントリスト</span>メニューで<span class=\"b500\">非活性エージェントの削除時刻</span>を<span class=\"uitext\">非活性剤状態のエージェントの維持期間</span>に変更</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">性能推移</span>メニューでダウンロードしたCSVファイルのヘッダーカラムに単位を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>ウィンドウの<span class=\"uitext\">テーブルビュー</span>タブで<span class=\"uitext\">TXT</span>又は<span class=\"uitext\">SQL</span>ボタンを選択してダウンロードしたファイルに記入された時間がUTC9が適用されない問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">SQL</span>メニューで<span class=\"uitext\">詳細分析</span>カラムのボタンを選択する時、SQL文に特定の特殊文字が含まれるとホワイトアウト現象が発生する問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">インスタンス性能管理</span>メニューのエージェント選択リストでエージェント名が長い場合、3点リーダー(...)が適用される現象を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<strong>JVMオプション追加項目</strong>でWebLogicインストールガイド内容を修正：<code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code></li>",
+        "category": "Java"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> <code class=\"newfunc\">New</code>メニューに<span class=\"uitext\">ログファイル / Windowsウイベント</span>設定を追加</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span>メニューからイベント詳細画面に移動すると、<span class=\"uitext\">アラート前後</span>項目の時間設定に応じてプロセスチャートの時間範囲が変更されるように改善</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューのサーバーイベント追加/修正ウィンドウでポート通知の案内ツールチップの文句を修正</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">エージェント設定</span> &gt; <span class=\"uitext\">サーバー環境変数</span>メニューをサイドメニューとサイトマップから削除(<span class=\"uitext\">実行環境変数</span>メニューに統合)</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューでWindowsの対応バージョンが間違って表記された事項を修正：Windows 2008 SP2以降 → <b>Windows Server 2008 R2以降</b></p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>メニューでチャートの下にラベル項目が多い場合、画面の大きさによってレイアウトが揺れる問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Deployment リスト</span>メニューの<span class=\"uitext\">詳細</span>画面の<span class=\"uitext\">リソース</span>タブにReplicasetリストを追加</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューで<span class=\"uitext\">リソース関係</span>タブを追加</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Object Manifest</span>メニューで<span class=\"uitext\">Kubernetesイベント</span>連動機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>リスト型の画面で移動ボタンのUIを変更</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでKubernetesエージェントのインストール案内メッセージと用語を修正</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>次のメニューパスでアイコンとボタンのスタイルを規定に合わせて修正</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">統合コンテナマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Object Manifest</span></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューのブロック上にマウスオーバー時に現れるUIを修正</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューで指標オプションを使用する際、単位表記を含むように修正</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">アクティブセッション</span>テーブルのデータを1分おきに照会できるボタンを追加</p>",
+        "category": "Database V2"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Topオブジェクト</span>メニューの<span class=\"uitext\">Age</span>タブに<span class=\"uitext\">per_to_wraparound</span>カラムを追加</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Topオブジェクト</span>メニューでデータがない場合に表示される案内メッセージの変更</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでディスク使用の推移が確認できる詳細なポップアウトを追加</p>",
+        "category": "PostgreSQL / MySQL"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでウィジェットを追加</p>",
+        "category": "PostgreSQL / MySQL",
+        "details": "<ul>\n<li>\n<span class=\"uitext\">Long Active Session Count</span>\n</li>\n<li>\n<span class=\"uitext\">Long Waiting Session Count</span>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> cpu(xos) 指標を<code>cpu_sys(xos)</code>、<code>cpu_user(xos)</code>、<code>cpu_iowait(xos)</code>に細分化して表示するように変更</p>",
+        "category": "PostgreSQL / MySQL / MongoDB"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<span class=\"uitext\">インストールの案内</span>セクションで言語別に異なる事項を同じ基準に修正</p>",
+        "category": "Amazon ECS"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>多言語が適用されていない指標名を言語環境に合わせて表示するように修正</p>",
+        "category": "Amazon ECS"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでRole ARN入力フィールドへのラベルをボタン形式からテキスト形式に変更</p>",
+        "category": "Amazon CloudWatch"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>言語設定を日本語に設定した状態で、<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<span class=\"uitext\">料金</span>タブで<span class=\"uitext\">プライスポリシー</span>リンクを選択すると、韓国語ページではなく日本語ページに移動するように修正</p>",
+        "category": "Amazon CloudWatch"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>多言語が適用されていない指標名を言語環境に合わせて表示するように修正</p>",
+        "category": "Amazon CloudWatch"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "ネットワーク",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ネットワークトポロジ</span>メニューでノードの枠線の色が意図に反して適用される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統合Flexボード</span>メニューでURLリストウィジェットのUIを改編</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> URL詳細ウィンドウをポップアウトで表示するように変更</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューの<span class=\"uitext\">ログ</span>タブでリアルタイムログイベントの<span class=\"uitext\">検索値</span>フィールドに空白を含めるように修正</p>"
+      }
+    ]
+  }
+]

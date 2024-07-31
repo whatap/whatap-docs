@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-aix-1_2_7",
+    "ver": "v1.2.7",
+    "date": "2024-04-09",
+    "Lists": [
+      {
+        "ver": "v1.2.7",
+        "hash": "v127",
+        "product": "Server Agent AIX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>AIXサーバーCPU Logical Core分析エラーの修正: プロセスCPUに関連して過度に測定される不具合を修正</p>"
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_4",
+    "ver": "v1.3.4",
+    "date": "2024-02-19",
+    "Lists": [
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ページロード、AJAXイベント発生時<b>Network Information API</b>の次の指標を追加収集</p>",
+        "details": "<ul>\n<li>downlink</li>\n<li>effectiveType</li>\n<li>rtt</li>\n</ul>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>リソースイベント発生時に次の指標を追加収集</p>",
+        "details": "<ul>\n<li>deliveryType</li>\n<li>responseStatus</li>\n</ul>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>Content Security Policy(CSP) エラー収集機能追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_5",
+    "ver": "v1.3.5",
+    "date": "2024-03-21",
+    "Lists": [
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ユーザー定義イベント収集インターフェースを追加</p>"
+      },
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>クリックイベント収集オプションを追加</p>"
+      },
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Angularフレームワーク<b>zone.js</b>関連対応</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_6",
+    "ver": "v1.3.6",
+    "date": "2024-05-30",
+    "Lists": [
+      {
+        "ver": "v1.3.6",
+        "hash": "v136",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ブラウザエージェントのバンドルサイズの改善</p>"
+      }
+    ]
+  }
+]

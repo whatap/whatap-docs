@@ -1,0 +1,155 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/golang/golang-0_3_1",
+    "ver": "v0.3.1",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "v0.3.1",
+        "hash": "v031",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>whatap.onode</code>オプション設定後、名前ではなくハッシュ(数字)値のみ表記されるエラーを修正</p>"
+      },
+      {
+        "ver": "v0.3.1",
+        "hash": "v031",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Ubuntu 14バージョンでwhatap-agent.serviceファイルが認識されないエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/golang/golang-0_3_3",
+    "ver": "v0.3.3",
+    "date": "2024-03-14",
+    "Lists": [
+      {
+        "ver": "v0.3.3",
+        "hash": "v033",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>go.mod</code>のreplace構文を削除(github.com/whatap/golibモジュールのreplace構文を削除)</p>"
+      },
+      {
+        "ver": "v0.3.3",
+        "hash": "v033",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>例題ソースのビルドエラーを修正(github.com/whatap/go-api-example)</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/golang/golang-0_3_0",
+    "ver": "v0.3.0",
+    "date": "2024-01-10",
+    "Lists": [
+      {
+        "ver": "v0.3.0",
+        "hash": "v030",
+        "product": "Go Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>マルチトランザクショントレースでTrace context(W3C) に対応</p>",
+        "details": "<p>Trace contextに対応する<strong>OpenTelmetry</strong>とマルチトランザクショントレースの連携に対応します。</p>"
+      },
+      {
+        "ver": "v0.3.0",
+        "hash": "v030",
+        "product": "Go Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> SQL、Method、HTTP callのリソース指標の収集を修正</p>",
+        "details": "<p>トランザクション開始時点のリソース(cpu、memory)と、各スタッフ開始時点のリソースの違いを収集します。</p>"
+      },
+      {
+        "ver": "v0.3.0",
+        "hash": "v030",
+        "product": "Go Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>設定ファイル(<em>whatap.conf</em>)がない場合、新たに生成するよう修正</p>"
+      },
+      {
+        "ver": "v0.3.0",
+        "hash": "v030",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>アクティブトランザクション一覧から外部呼び出し累積件数が累積時間として誤って収集されるエラーを修正</p>"
+      },
+      {
+        "ver": "v0.3.0",
+        "hash": "v030",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Linux環境でwhatap-agentサービス(<code>whatap-agent.service</code>)実行エラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/golang/golang-0_3_2",
+    "ver": "v0.3.2",
+    "date": "2024-03-06",
+    "Lists": [
+      {
+        "ver": "v0.3.2",
+        "hash": "v032",
+        "product": "Go Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>ログモニタリングファイル名に日付形式の変数を使用するように修正</p>",
+        "details": "<blockquote>\n<p>Python <code>strftime()</code>使用を基準に修正します。 例、20240101: %Y%m%d</p>\n</blockquote>"
+      },
+      {
+        "ver": "v0.3.2",
+        "hash": "v032",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> gRPCヘッダー収集エラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/golang/golang-0_4_0",
+    "ver": "v0.4.0",
+    "date": "2024-06-19",
+    "Lists": [
+      {
+        "ver": "v0.4.0",
+        "hash": "v040",
+        "product": "Go Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> linux aarch64対応</p>"
+      },
+      {
+        "ver": "v0.4.0",
+        "hash": "v040",
+        "product": "Go Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>既存<em>paramkey.txt</em>代わりに<em>security.conf</em>ファイルを使用</p>",
+        "details": "<p>既存<em>security.conf</em>ファイルの<code>paramkey</code>キー値を使用します。 デフォルト値は、ランダム値ではなく<code>WHATAP</code>に指定するように変更します。 <code>WHATAP</code>指定されると、キーの入力なしで復号化できます。</p>"
+      },
+      {
+        "ver": "v0.4.0",
+        "hash": "v040",
+        "product": "Go Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> SQL文章の正規化オプション設定の変更</p>",
+        "details": "<ul>\n<li>\n<p>SQL文章でパラメータを分離して、正規化する機能を常に有効にします。 <code>trace_sql_normalize_enabled</code>オプションを常に<code>true</code>に設定します。</p>\n</li>\n<li>\n<p>既に正規化オプションを無効に(正規化の中止設定)した状態であれば、正規化してパラメータを別表記する設定を有効にします。</p>\n<ul>\n<li><code>profile_sql_param_enabled</code>オプションを<code>true</code>に設定します。</li>\n<li>正規化されたパラメータを、別に暗号化して収集します。</li>\n<li><em>security.conf</em>の<code>paramkey</code>に復号化してデータを確認できます。</li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.4.0",
+        "hash": "v040",
+        "product": "Go Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>モニタリングの中止機能を変更</p>",
+        "details": "<ul>\n<li>\n<p><code>trace.Init()</code>関数の呼び出しがない場合(コメントと削除)、モニタリング機能を開始しません。</p>\n</li>\n<li>\n<p><code>enabled</code>オプション設定(<code>true</code>): 情報収集機能を中止します。 エージェントの内部バックグラウンドモジュールは保持されます。</p>\n</li>\n<li>\n<p><code>shutdown</code>オプション設定(<code>true</code>): すべてのエージェント機能を中止します。 再起動するには、<code>shutdown</code>オプションを<code>true</code>に変更して、アプリケーションを再起動する必要があります。</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.4.0",
+        "hash": "v040",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>エージェントがインストールされたサーバーのIPを、127.0.0.1に収集する問題を修正、WhaTapサーバーとTCPが接続されたLocal address IP情報として収集</p>"
+      }
+    ]
+  }
+]

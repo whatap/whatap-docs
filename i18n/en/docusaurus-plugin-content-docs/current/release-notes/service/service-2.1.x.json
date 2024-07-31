@@ -1,0 +1,460 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.14",
+    "date": "2024-02-26",
+    "Lists": [
+      {
+        "ver": "Service 2.1.14",
+        "hash": "service-2114",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p>In the <span class=\"uitext\">Reservation of Report Email</span> function of the <code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Report</span> menu, fixed the bug where the <span class=\"uitext\">Weekdays</span> item cannot be checked or unchecked.</p>"
+      },
+      {
+        "ver": "Service 2.1.14",
+        "hash": "service-2114",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p>In the <span class=\"uitext\">Open socket count</span> tab of the <code class=\"Fixed\">Fixed</code> <span class=\"uitext\">APP</span> &gt; <span class=\"uitext\">Instance Performance Management</span> menu, fixed the bug where no response is followed after clicking <span class=\"uitext\">Show trace</span>.</p>"
+      },
+      {
+        "ver": "Service 2.1.14",
+        "hash": "service-2114",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Restored the encoder selection function for SQL details in the <span class=\"uitext\">Trace analysis</span> window.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.13",
+    "date": "2024-02-23",
+    "Lists": [
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Modified to remove the filtered content of the selected project when changing the selected project of the filter in <span class=\"uitext\">Flex board</span> (each filter is applied on a project basis).</p>"
+      },
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span>, modified the CSV file downloaded from the widget to include the data in between the start time and end time.</p>"
+      },
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event configuration</span>, modified the event message example in the metrics event configuration screen.</p>"
+      },
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Server list</span> &gt; <span class=\"uitext\">Server list</span>, fixed the issue where the tooltip message does not disappear when the <img loading=\"lazy\" src=\"/en/img/ico-setting.svg\" class=\"ico\" width=\"auto\" height=\"auto\"> <span class=\"uitext\">Monitoring management</span> mode is enabled, resulting in hiding several elements.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.12",
+    "date": "2024-02-20",
+    "Lists": [
+      {
+        "ver": "Service 2.1.12",
+        "hash": "service-2112",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Statistics</span>, changed the names of table columns in the <span class=\"uitext\">HTTP call</span> tab.</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"b500\">Transaction</span> → <span class=\"uitext\">HTTP call URL</span></p>\n</li>\n<li>\n<p><span class=\"b500\">Service</span> → <span class=\"uitext\">Transaction</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.11",
+    "date": "2024-02-19",
+    "Lists": [
+      {
+        "ver": "Service 2.1.11",
+        "hash": "service-2111",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event configuration</span> &gt; <span class=\"uitext\">Log</span>, fixed the composite log event saving failure issue.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.10",
+    "date": "2024-02-16",
+    "Lists": [
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Common",
+        "type": "Deprecated",
+        "desc": "<li><code class=\"Deprecated\">Deprecated</code> Deleted marketing options in <span class=\"uitext\">Manage account INFO.</span> when the set language is English or Japanese</li>"
+      },
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, modified some commands to <b>run the agent</b> during installation of PHP or Go application agent.</p>"
+      },
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In Home screen &gt; <span class=\"uitext\">Flex board</span>, fixed the whiteout issue that occurs after selecting a container performance template.</p>"
+      },
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, fixed the whiteout issue that occurs after selecting a node block and then <span class=\"uitext\">View Detailed</span>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.9",
+    "date": "2024-02-14",
+    "Lists": [
+      {
+        "ver": "Service 2.1.9",
+        "hash": "service-219",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top Object</span>, modified to display the values for <span class=\"uitext\">table_size</span>, <span class=\"uitext\">index_size</span>, and <span class=\"uitext\">bloat_size</span> columns.</p>",
+        "category": "PostgreSQL V2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.8",
+    "date": "2024-02-01",
+    "Lists": [
+      {
+        "ver": "Service 2.1.8",
+        "hash": "service-218",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where loading does not end when the <span class=\"uitext\">Statistic</span> or <span class=\"uitext\">Event history</span> menu appears for the first time while the column selection status remains in <code>localStorage</code>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.7",
+    "date": "2024-02-01",
+    "Lists": [
+      {
+        "ver": "Service 2.1.7",
+        "hash": "service-217",
+        "product": "Network",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> The <b>Network Performance Monitoring</b> service is released. The <b>Network Performance Monitoring (NPM)</b> collects and visualize the network communication data for processes to identify any congestions and failures between networks and uses them to improve the network performance.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.6",
+    "date": "2024-01-31",
+    "Lists": [
+      {
+        "ver": "Service 2.1.6",
+        "hash": "service-216",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> In the <span class=\"uitext\">Trace analysis</span> window, fixed the issue where the agent filtering (<code>okind</code>, <code>onode</code>) is not applied.</li>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.5",
+    "date": "2024-01-29",
+    "Lists": [
+      {
+        "ver": "Service 2.1.5",
+        "hash": "service-215",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Cluster Summary</span>, fixed the unit error on the <span class=\"uitext\">Total Capacity Memory</span> widget.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.4",
+    "date": "2024-01-29",
+    "Lists": [
+      {
+        "ver": "Service 2.1.4",
+        "hash": "service-214",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Metrics Chart</span>, fixed the issue where all <code>oid</code>s are viewed when all <code>onode</code> and all <code>okind</code> are selected.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.3",
+    "date": "2024-01-26",
+    "Lists": [
+      {
+        "ver": "Service 2.1.3",
+        "hash": "service-213",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> For the namespace project, fixed the issue where the data does not appear in <span class=\"uitext\">Resource</span> &gt; <span class=\"uitext\">Object Manifest Topology</span>.</p>"
+      },
+      {
+        "ver": "Service 2.1.3",
+        "hash": "service-213",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> To support object manifests, the master agent version has been changed to <b>1.5.2</b>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.2",
+    "date": "2024-01-25",
+    "Lists": [
+      {
+        "ver": "Service 2.1.2",
+        "hash": "service-212",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, improved the guidance message.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.1",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "Service 2.1.1",
+        "hash": "service-211",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the date on the pop-up guide regarding the end of project V1 support.</p>",
+        "category": "DB V2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.0",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event history</span>, added the following features:</p>",
+        "details": "<ul>\n<li>\n<p>In the <span class=\"uitext\">Event time</span> column, added the function to display <span class=\"uitext\">In progress</span> and <span class=\"uitext\">Occured during maintenance</span> tags.</p>\n</li>\n<li>\n<p>Added the option to display the <span class=\"uitext\">Event resolution time</span> column.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Project list</span>, modified the popup UI that appears upon deletion of the project (fixed the project name truncation issue).</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Fixed the issue where clicking the tooltip that appears by hovering the mouse over the project list in the sidebar, displays the project.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified the text displayed when inviting a dormant account to the project or group</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">My usage</span> &gt; <span class=\"uitext\">Project Subscription Status</span>, if the project name is long at the <span class=\"uitext\">Subscribe</span> window, modified to abbreviate and display the project name as a tooltip displayed when hovering the mouse over.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Flex board</span>, added the chart legend settings in the <span class=\"uitext\">Apdex</span> widget.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Flex board</span>, when saving as a JSON file through the dashboard export function, modified the display of special characters in the file name from deletion to underscore (_).</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span>, added the function to deselect all agents.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Applied an additional dark theme to the elements that are unavailable in some menus.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Real-time alert list</span>, fixed the issue where the notification list does not appear when a group is specified.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event configuration</span>, modified the following features:</p>",
+        "details": "<ul>\n<li>\n<p>In the modification window of the <span class=\"uitext\">Metrics</span> event tab, modified to move to guides for each language setting when the <span class=\"uitext\">Guide</span> <span class=\"uitext\">Shortcut</span> button is clicked.</p>\n</li>\n<li>\n<p>In the JSON export and import step under the <span class=\"uitext\">Metrics</span> event tab, fixed the issue where the export or import window does not close when the <span class=\"uitext\">Save</span> and <span class=\"uitext\">Add to list</span> buttons are clicked.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the list does not appear intermittently in <span class=\"uitext\">Notice</span> in the Safari browser.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In the <span class=\"uitext\">Multi transaction</span> tab of the <span class=\"uitext\">Trace analysis</span> window, added the function to save the chart and tree settings.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In the <span class=\"uitext\">Multi transaction</span> tab of the <span class=\"uitext\">Trace analysis</span> window, added the function to save the project selection status.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> When <img loading=\"lazy\" src=\"/en/img/ic-outside.svg\" class=\"ico\" width=\"auto\" height=\"auto\"> is selected in the <span class=\"uitext\">Tree view</span> tab of the <span class=\"uitext\">Trace analysis</span> window, fixed the issue where other option settings are turned off.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the spacing error between button groups in <span class=\"uitext\">Integrated APP. Topology</span> and <span class=\"uitext\">Application topology</span>.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Cube</span> and <span class=\"uitext\">Perf. trend</span>, modified the UI designs.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In the <b>Monthly server report (Detail)</b> template selection screen of <span class=\"uitext\">Report</span>, changed the agent selection option's name from <span class=\"b500\">Application</span> to <span class=\"uitext\">Filter</span>.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the user account registration issue when <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event history</span> &gt; events are selected &gt; and the processing detail is added in the event detail menu, fixed the issue where the specified user account is not registered.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance list</span>, fixed the error where event records on the <span class=\"uitext\">Event</span> window are not viewed when the <span class=\"uitext\">Status</span> column is selected that is not in a normal state.</li>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock tree</span>, added the following features:</p>",
+        "category": "DB V2",
+        "details": "<ul>\n<li>Added the query time unit and maximum value tag on the upper right of the <span class=\"uitext\">Lock Wait Sessions</span> widget.</li>\n<li>Added the function to display the unable-to-view message when searching for the data within 3 hours while the query period is within 1 month.</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock tree</span>, fixed the whiteout occurrence issue due to a logic load caused by a large amount of locks.</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Resource</span> &gt; <span class=\"uitext\">Object Manifest</span>, improved to search and compare the object manifests (supports Kubernetes agent v1.5.0 or later).</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the name of the <span class=\"uitext\">Resource</span> &gt; <span class=\"uitext\">Master meta information</span> menu to <span class=\"uitext\">Object Manifest</span>.</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Added missing multilingual translations in the following menus:</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">APP</span> &gt; <span class=\"uitext\">Multi service hitmap</span></li>\n<li><span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Report</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<li><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Log Trend</span>, you can select values that are not in the <span class=\"uitext\">Filter</span> list by directly entering them.</li>"
+      }
+    ]
+  }
+]
