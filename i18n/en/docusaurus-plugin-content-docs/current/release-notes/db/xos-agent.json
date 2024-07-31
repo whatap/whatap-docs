@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/xos-1_1_8f",
+    "ver": "v1.1.8f",
+    "date": "2024-06-27",
+    "Lists": [
+      {
+        "ver": "v1.1.8f",
+        "hash": "v118f",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified to display XOS error message number and content.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/xos-1_1_8a",
+    "ver": "v1.1.8a",
+    "date": "2024-01-25",
+    "Lists": [
+      {
+        "ver": "v1.1.8a",
+        "hash": "v118a",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> When setting the log file name in PostgreSQL, modified to use the hour, minute, and second of <code>%H%M%S</code>.</p>"
+      },
+      {
+        "ver": "v1.1.8a",
+        "hash": "v118a",
+        "product": "xos",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the bug where the CPU utilization appears as a negative number.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/xos-1_1_8b",
+    "ver": "v1.1.8b",
+    "date": "2024-03-15",
+    "Lists": [
+      {
+        "ver": "v1.1.8b",
+        "hash": "v118b",
+        "product": "xos",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Added the feature to modify the log when the process value is output as negative number.</p>"
+      }
+    ]
+  }
+]

@@ -1,13 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import clsx from 'clsx';
 import { translate } from "@docusaurus/Translate";
+import styles from './styles.module.css';
 
 // 보이지 않는 문자 제거 함수
 const cleanString = (str) => {
   return str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
 };
 
-const ImportJson = ({ filePath, product, type, sort, category }) => {
+const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
   const [filteredLists, setFilteredLists] = useState([]);
   const [error, setError] = useState('');
   const [loaded, setLoaded] = useState(false);
@@ -15,11 +17,6 @@ const ImportJson = ({ filePath, product, type, sort, category }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    if (product && sort) {
-      setError('Cannot use both "product" and "sort" at the same time.');
-      return;
-    }
-
     const fetchData = async () => {
       try {
         const data = filePath;
@@ -80,7 +77,7 @@ const ImportJson = ({ filePath, product, type, sort, category }) => {
         }
       };
     }
-  }, [filePath, product, type, sort, category, loaded]);
+  }, [filePath, product, type, sort, category, platform, loaded]);
 
   if (error) {
     return <p>{error}</p>;
@@ -117,7 +114,7 @@ const ImportJson = ({ filePath, product, type, sort, category }) => {
   }
 
   return (
-    <div className='release-items' ref={containerRef}>
+    <div className={styles.release_items} ref={containerRef}>
       {filteredLists.length === 0 ? (
         <p>
           {
@@ -131,25 +128,34 @@ const ImportJson = ({ filePath, product, type, sort, category }) => {
       ) : (
         sort === 'date' && loaded ? (
           sortedData.map(dateGroup => (
-            <div key={dateGroup.date} className='releasegroup'>
+            <div key={dateGroup.date} className={styles.releasegroup}>
               {Object.keys(dateGroup.products).map(productKey => (
-                <div key={productKey} className="productrelease">
-                  <div className='subgroup'>
-                    <p className='date'>{dateGroup.date}</p>
-                    {category !== 'agent' ? (<p className='product'>{productKey}</p>) : null}
+                <div key={productKey} className={styles.productrelease}>
+                  <div className={styles.subgroup}>
+                    <p className={styles.date}>{dateGroup.date}</p>
+                    {category !== 'agent' ? (<p className={styles.product}>{productKey}</p>) : null}
                     {dateGroup.products[productKey].map((list, index, array) => (
-                      <div key={`${list.ver}-${index}`} className='rlist'>
+                      <div key={`${list.ver}-${index}`} className={styles.rlist}>
                         <div>
                           {(index === 0 || list.ver !== array[index - 1].ver) && (
-                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className='goto' target='_blank'>
+                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className={styles.goto} target='_blank'>
                               {list.ver}
-                              <img src={linkIcon} width="18px" height="18px" className='ico-link' />
+                              <img src={linkIcon} width="18px" height="18px" className={clsx(styles.icoLink, 'ico-link')} />
                             </a>
                           )}
                         </div>
-                        <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                        {
+                          (platform === 'db' && list.category) ? (
+                            <div className={styles.platform}>
+                              {(index === 0 || list.category !== array[index - 1].category) && (
+                                `▸ ${list.category}`
+                              )}
+                            </div>
+                          ) : null
+                        }
+                        <div className={styles.releaselist} dangerouslySetInnerHTML={{ __html: list.desc }} />
                         {list.details && (
-                          <div dangerouslySetInnerHTML={{ __html: list.details }} />
+                          <div className={styles.details} dangerouslySetInnerHTML={{ __html: list.details }} />
                         )}
                       </div>
                     ))}
@@ -166,7 +172,7 @@ const ImportJson = ({ filePath, product, type, sort, category }) => {
               <ul>
                 {note.Lists.map((list, index) => (
                   <li key={`${list.ver}-${index}`}>
-                    <div className="releaselist" dangerouslySetInnerHTML={{ __html: list.desc }} />
+                    <div className={styles.releaselist} dangerouslySetInnerHTML={{ __html: list.desc }} />
                     {list.details && (
                       <div dangerouslySetInnerHTML={{ __html: list.details }} />
                     )}

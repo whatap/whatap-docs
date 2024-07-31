@@ -1,0 +1,247 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_8",
+    "ver": "v2.5.8",
+    "date": "2024-05-21",
+    "Lists": [
+      {
+        "ver": "v2.5.8",
+        "hash": "v258",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>エージェントの動作異常分析のコマンド<code>testall</code>を追加</p>"
+      },
+      {
+        "ver": "v2.5.8",
+        "hash": "v258",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> vxfs 8.0バージョン以降で、ディスクIO収集の異常を改善</p>"
+      },
+      {
+        "ver": "v2.5.8",
+        "hash": "v258",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>v2.5.8</code>のメトリクスのタグエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_9",
+    "ver": "v2.5.9",
+    "date": "2024-05-24",
+    "Lists": [
+      {
+        "ver": "v2.5.9",
+        "hash": "v259",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<li><code class=\"Feature\">Feature</code> zfs v2.2対応の追加</li>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_3",
+    "ver": "v2.6.3",
+    "date": "2024-07-24",
+    "Lists": [
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> 서버 인벤토리 수집 옵션 추가</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_1",
+    "ver": "v2.6.1",
+    "date": "2024-06-26",
+    "Lists": [
+      {
+        "ver": "v2.6.1",
+        "hash": "v261",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Red Hat系列のLinuxで、<code>rpm -a</code>が周期的に実行されるエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_4",
+    "ver": "v2.6.4",
+    "date": "2024-07-29",
+    "Lists": [
+      {
+        "ver": "v2.6.4",
+        "hash": "v264",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> 로그 파일 키워드 감시 정책 추가 시 대상 파일의 과거 로그를 잘못 읽는 문제 수정</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_7",
+    "ver": "v2.5.7",
+    "date": "2024-05-14",
+    "Lists": [
+      {
+        "ver": "v2.5.7",
+        "hash": "v257",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <code>zpool iostat</code>収集機能の追加</p>"
+      },
+      {
+        "ver": "v2.5.7",
+        "hash": "v257",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>任意の指定されたプロセスのpid別の詳細収集機能を追加</p>"
+      },
+      {
+        "ver": "v2.5.7",
+        "hash": "v257",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> NFS hang発生時のデータ収集の中断問題を改善</p>"
+      },
+      {
+        "ver": "v2.5.7",
+        "hash": "v257",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> ntpqエラー発生時のログ出力を改善</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_0",
+    "ver": "v2.6.0",
+    "date": "2024-06-18",
+    "Lists": [
+      {
+        "ver": "v2.6.0",
+        "hash": "v260",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> vxfs v8対応の追加</p>"
+      },
+      {
+        "ver": "v2.6.0",
+        "hash": "v260",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>収集負荷の増加(サーバー過負荷)時、プロセスモニタリングの収集周期20秒から60秒に臨時変更の機能を追加</p>"
+      },
+      {
+        "ver": "v2.6.0",
+        "hash": "v260",
+        "product": "Server Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\">Change</code> ntpq終了処理の改善</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_6_2",
+    "ver": "v2.6.2",
+    "date": "2024-07-16",
+    "Lists": [
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Windows 에이전트에서 bat, powershell 스크립트 실행 기능 추가</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_2",
+    "ver": "v2.5.2",
+    "date": "2024-02-13",
+    "Lists": [
+      {
+        "ver": "v2.5.2",
+        "hash": "v252",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code>Windows OSのイベントログのうち、必要な条件を満たす件をWhaTapログに収集可能</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_1",
+    "ver": "v2.5.1",
+    "date": "2024-01-26",
+    "Lists": [
+      {
+        "ver": "v2.5.1",
+        "hash": "v251",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ネットワークのカード名に<code>+</code>がある場合、性能収集障害が発生するエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_0",
+    "ver": "v2.5.0",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "v2.5.0",
+        "hash": "v250",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Naverクラウド環境にサーバーモニタリングエージェントをインストールする場合、タグに<code>uptime</code>が収集されて<code>uptime</code>イベントを適用できないエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_5",
+    "ver": "v2.5.5",
+    "date": "2024-03-13",
+    "Lists": [
+      {
+        "ver": "v2.5.5",
+        "hash": "v255",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Windows環境においてWhaTapサーバーエージェントのプロセス間通信モードにSOCKETモードを追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_4",
+    "ver": "v2.5.4",
+    "date": "2024-03-11",
+    "Lists": [
+      {
+        "ver": "v2.5.4",
+        "hash": "v254",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> サーバー時間の同期化コマンドである <code>ntpq -p</code>結果を通じて時系列でモニタリングする機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_5_3",
+    "ver": "v2.5.3",
+    "date": "2024-03-07",
+    "Lists": [
+      {
+        "ver": "v2.5.3",
+        "hash": "v253",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Windows OSにおけるServerエージェントのCPU使用の最適化、WMIメソッド呼び出しの最小化</p>"
+      }
+    ]
+  }
+]
