@@ -872,13 +872,22 @@ footer.row > div.text--right > a {
     // }
   }
 }
+// 블로그 리스트와 콘텐츠 이미지 다르게 표시
+img[alt*='New Feature Overview'] {
+  border: none !important;
+}
+#__blog-post-container {
+  img[alt*='New Feature Overview'] {
+    content: url('/img/changelog/new_feature_overview_txt_gl.png') !important;
+  }
+}
 // 블로그 서비스 히스토리 overview
 #overview_test {
   .changelog-service{
     position: relative;
     // top: -6px;
-    top: -6.5px;
-    left: -5px;
+    top: -7px;
+    left: -6px;
     background-color: transparent !important;
     a {
       font-weight: 300 !important;
@@ -907,6 +916,7 @@ footer.row > div.text--right > a {
     color: #353535;
     top: -7.5px;
     left: -4px;
+    font-size: 100%;
   }
   code.changelog-overview2 {
     // background-color: rgb(238, 238, 238);
