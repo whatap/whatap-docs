@@ -3597,7 +3597,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server-aix/index'
+                id: 'release-notes/server-aix/server-aix-1_2_7'
               },
               items: [
                 {
