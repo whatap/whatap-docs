@@ -184,6 +184,9 @@ function _createMdxContent(props) {
                 priority: "1",
                 children: "Feature"
               }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_integratedFlexboard",
+                className: "uitext"
+              }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_flexboard",
                 className: "uitext"
               }), " 메뉴에서 메트릭스 타입 필터 내 조건 간 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
