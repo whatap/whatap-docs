@@ -38,13 +38,13 @@ echo $PATH_NAME
 
 # pdfcpu annot remove -pages 1 ./pdf/whatap-db-postgresql-monitoring.pdf
 
-npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-oracle --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-db-oracle-monitoring-v2.pdf --dest ./pdf --include-index
+npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-oracle --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-db-oracle-v2-monitoring.pdf --dest ./pdf --include-index
 
 pdfcpu annot remove -pages 1 ./pdf/whatap-db-oracle-v2-monitoring.pdf
 
-npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-oracle-pro --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-db-oracle-pro-monitoring.pdf --dest ./pdf --include-index
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-oracle-pro --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-db-oracle-pro-monitoring.pdf --dest ./pdf --include-index
 
-pdfcpu annot remove -pages 1 ./pdf/whatap-db-oracle-pro-monitoring.pdf
+# pdfcpu annot remove -pages 1 ./pdf/whatap-db-oracle-pro-monitoring.pdf
 
 # npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-mysql --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-db-mysql-monitoring.pdf --dest ./pdf --include-index
 
