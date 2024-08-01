@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.01b5518f.css">
-<script src="/whatap-docs/assets/js/runtime~main.0fa7d5fc.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.6c7e4c8c.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.e3b903c0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -71,14 +71,32 @@
 <p><span class="uitext">이벤트 데이터 조회</span> 섹션의 <span class="uitext">필터</span> 옵션으로 문자열 타입 값을 갖는 태그 또는 필드를 설정 후 텍스트 모드로 전환하면 MXQL 데이터가 조회되지 않는 문제를 수정했습니다.</p>
 </blockquote>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#application">​</a></h3><p><code class="Changed" type="1">Changed</code> 사용자 설정 언어가 영어일 때, <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 <span class="uitext">Apdex</span> 위젯 안내 모달의 가독성 향상을 위해 크기 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#server">​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 이벤트를 추가하거나 수정할 때 <span class="uitext">이벤트 발행 조건</span> 내 폰트를 기본 폰트로 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#kubernetes">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#application">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">트레이스 분석</span> 팝업창의 필터링 선택 상자를 그룹 형식의 버튼으로 변경</p>
+<p><img decoding="async" loading="lazy" alt="changes" src="/whatap-docs/assets/images/release-trace-analysis-filter-changes-eaf30e06d7686d8a4ff7f2d0caf589af.png" width="1000" height="285" class="img_ev3q"></p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> 사용자 설정 언어가 영어일 때, <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 <span class="uitext">Apdex</span> 위젯 안내 모달의 가독성 향상을 위해 크기 수정</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#server">​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 이벤트를 추가하거나 수정할 때 <span class="uitext">이벤트 발행 조건</span> 내 폰트를 기본 폰트로 수정</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a class="hash-link" aria-label="kubernetes에 대한 직접   링크" title="kubernetes에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#kubernetes">​</a></h3><ul>
 <li>
 <p><code class="Changed" type="1">Changed</code> <span class="uitext">ApplicationName</span>, <span class="uitext">ApplicationId</span> 컬럼을 <span class="uitext">애플리케이션 정보</span> 컬럼 하위로 이동</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴에서 매핑된 컨테이너 정보가 없는 경우 경고 메시지가 표시되지 않는 버그 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#database">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2-oracle-pro">Oracle <code class="my">V2</code>, Oracle Pro<a class="hash-link" aria-label="oracle-v2-oracle-pro에 대한 직접 링크" title="oracle-v2-oracle-pro에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#oracle-v2-oracle-pro">​</a></h4><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 상세 차트의 elapse time 값이 비정상적으로 높은 문제 수정</p></div></section>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#database">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL<a class="hash-link" aria-label="PostgreSQL에 대한 직접 링크" title="PostgreSQL에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#postgresql">​</a></h4><p><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에 현재 진행 중인 vacuum 프로세스 수를 확인할 수 있는 <span class="uitext">Vacuum Sessions</span> 위젯 추가</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2-oracle-pro">Oracle <code class="my">V2</code>, Oracle Pro<a class="hash-link" aria-label="oracle-v2-oracle-pro에 대한 직접 링크" title="oracle-v2-oracle-pro에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#oracle-v2-oracle-pro">​</a></h4><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">SQL 상세</span> 팝업창의 <span class="uitext">Runtime Plan</span>, <span class="uitext">Explain Plan</span> 테이블에 <span class="uitext">FILTER_PREDICATES</span> 컬럼 추가</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 <span class="uitext">SQL 상세</span> 팝업창으로 진입했을 때 <span class="uitext">OBJECT_NAME</span> 컬럼의 링크가 활성화되지 않는 문제 수정</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 상세 차트의 elapse time 값이 비정상적으로 높은 문제 수정</p>
+</li>
+</ul></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a0">Preview 2.8.0.a0<a class="hash-link" aria-label="Preview 2.8.0.a0에 대한 직접 링크" title="Preview 2.8.0.a0에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#preview-280a0">​</a></h2><p>2024년 07월 25일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1"><code>공통</code><a class="hash-link" aria-label="공통-1에 대한 직접 링크" title="공통-1에 대한 직접 링크" href="/whatap-docs/release-notes/preview/preview-2_8_0x#공통-1">​</a></h3><ul>
 <li>
 <p><code class="Changed" type="1">Changed</code> 세로 이퀄라이저 바 차트에서 개별 그래프의 라벨 표시 제거</p>
