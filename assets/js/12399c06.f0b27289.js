@@ -57,7 +57,7 @@ function Cover() {
                         },
                         children: [
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
-                                children: "Oracle Monitoring"
+                                children: "Oracle Pro Monitoring"
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
                                 className: _styles_module_css__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A.date,

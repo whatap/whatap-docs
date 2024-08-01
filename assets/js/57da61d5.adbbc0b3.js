@@ -276,7 +276,7 @@ function _createMdxContent(props) {
                   href: "https://content.whatap.io/24/07/01/003046whatap-db-postgresql-monitoring.pdf",
                   children: "PostgreSQL"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "hhttps://content.whatap.io/24/07/01/003046whatap-db-oracle-monitoring.pdf",
+                  href: "https://content.whatap.io/24/07/01/003046whatap-db-oracle-monitoring.pdf",
                   children: "Oracle"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "https://content.whatap.io/24/07/01/003045whatap-db-mysql-monitoring.pdf",
@@ -339,7 +339,7 @@ function _createMdxContent(props) {
                 children: "OCI"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/07/01/003047whatap-oracle-cloud.pdfs",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-oracle-cloud.pdf",
                   children: "Oracle Cloud Monitor"
                 })
               })]
@@ -393,7 +393,7 @@ function _createMdxContent(props) {
                   href: "https://content.whatap.io/24/07/01/003047whatap-open-api.pdf",
                   children: "Open API"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/07/01/003047whatap-reference.pdfs",
+                  href: "https://content.whatap.io/24/07/01/003047whatap-reference.pdf",
                   children: "참조 문서"
                 })]
               })]
