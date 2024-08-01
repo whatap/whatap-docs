@@ -13996,9 +13996,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(79089)
     ],
     "30654c05": [
-        ()=>__webpack_require__.e(/* import() | 30654c05 */ 38847).then(__webpack_require__.bind(__webpack_require__, 24492)),
+        ()=>__webpack_require__.e(/* import() | 30654c05 */ 38847).then(__webpack_require__.bind(__webpack_require__, 9533)),
         "@site/docs/release-notes/dotnet/dotnet-2.3.0.mdx",
-        /*require.resolve*/(24492)
+        /*require.resolve*/(9533)
     ],
     "30947a9c": [
         ()=>__webpack_require__.e(/* import() | 30947a9c */ 69529).then(__webpack_require__.bind(__webpack_require__, 85259)),
