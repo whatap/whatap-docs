@@ -1326,7 +1326,7 @@ const sidebars = {
               items: [
                 'golang/trs-view',
                 'golang/trs-profile',
-                'golang/active-transactions',
+                // 'golang/active-transactions',
                 'golang/trs-multi-trace',
                 'golang/collect-stacks',
               ]
@@ -3371,14 +3371,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_36',
+                id: 'release-notes/java/java-2_2_37',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_36',
+                  id: 'release-notes/java/java-2_2_37',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_36',
                 'release-notes/java/java-2_2_35',
                 'release-notes/java/java-2_2_34',
                 'release-notes/java/java-2_2_33',
@@ -3387,7 +3388,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_30',
                 'release-notes/java/java-2_2_29',
                 'release-notes/java/java-2_2_28',
-                'release-notes/java/java-2_2_27',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3504,17 +3504,18 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_2_9',
+                id: 'release-notes/dotnet/dotnet-2_3_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_2_9',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_3_0',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
                 'release-notes/dotnet/dotnet-2_2_6',
@@ -3523,7 +3524,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-2_2_1',
-                'release-notes/dotnet/dotnet-2_2_0',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3563,14 +3563,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_6_2',
+                id: 'release-notes/server/server-2_6_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_2',
+                  id: 'release-notes/server/server-2_6_4',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_3',
+                'release-notes/server/server-2_6_2',
                 'release-notes/server/server-2_6_1',
                 'release-notes/server/server-2_6_0',
                 'release-notes/server/server-2_5_9',
@@ -3580,8 +3582,6 @@ const sidebars = {
                 'release-notes/server/server-2_5_4',
                 'release-notes/server/server-2_5_3',
                 'release-notes/server/server-2_5_2',
-                'release-notes/server/server-2_5_1',
-                'release-notes/server/server-2_5_0',
                 'release-notes/server/server-previous',
               ],
             },
@@ -5701,9 +5701,17 @@ const sidebars = {
         'kubernetes/before-starting',
         'kubernetes/agent-architecture',
         {
-          type: 'doc',
+          type: 'category',
           label: '지원 환경',
-          id: 'kubernetes/supported-spec'
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/supported-spec',
+          },
+          items: [
+            'kubernetes/nvidia-gpu',
+          ] 
         },
         {
           type: 'category',

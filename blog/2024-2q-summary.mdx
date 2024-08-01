@@ -4,7 +4,7 @@ title: 2분기 안내
 authors: ysj
 date: 2024-07-09T09:30
 toc_max_heading_level: 2
-tags: [새로운 기능, 2024, New]
+tags: [새로운 기능, 2024]
 ---
 
 와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.
@@ -23,8 +23,8 @@ tags: [새로운 기능, 2024, New]
 |**Application**|
 |---|
 
-> * ***트랜잭션 맵***이 지난 1분기에 이어 고도화되었습니다. 
-> * ***애플리케이션 대시보드***에 기본 프리셋 변경 기능이 추가되었습니다.
+> * <Cmdname sid="side_transaction_map" className="uitext" />이 지난 1분기에 이어 고도화되었습니다. 
+> * <Cmdname sid="application_dashboard" className="uitext" />에 기본 프리셋 변경 기능이 추가되었습니다.
 
 |**Server**|
 |---|
@@ -35,9 +35,9 @@ tags: [새로운 기능, 2024, New]
 |**Kubernetes**|
 |---|
 
-> * ***에이전트 설치*** 화면이 보다 손쉬운 옵션 선택 방식으로 개편되었습니다.
-> * ***Pending Pod 현황*** 메뉴가 새롭게 개편되었습니다. 
-> * ***컨테이너 맵*** 메뉴에서 ***리소스 관계도***를 제공합니다. 
+> * <Cmdname sid="agentInstall" className="uitext" /> 화면이 보다 손쉬운 옵션 선택 방식으로 개편되었습니다.
+> * <Cmdname sid="side_pendingPod" className="uitext" /> 메뉴가 새롭게 개편되었습니다. 
+> * <Cmdname sid="side_containerMap" className="uitext" /> 메뉴에서 ***리소스 관계도***를 제공합니다. 
 
 |**Database**|
 |---|
@@ -48,7 +48,7 @@ tags: [새로운 기능, 2024, New]
 |**Browser**|
 |---|
 
-> ***세션 리플레이*** 기능을 새롭게 제공합니다. 
+> <Cmdname sid="TTL08103" className="uitext" /> 기능을 새롭게 제공합니다. 
 
 </div>
 
@@ -61,7 +61,7 @@ tags: [새로운 기능, 2024, New]
 
 ## `공통`
 
-와탭 2024년 2분기 `공통` 부분에서 편의성 향상을 위해 ***Flex 보드***를 비롯한 공통 메뉴 개선 작업이 이루어졌습니다. 사이드 메뉴의 ***프로젝트 목록***에서 쉽게 그룹을 이동할 수 있으며, ***Flex 보드***의 경우 그룹 내 옵션을 공유할 수 있는 ***그룹 내 전체 위젯 적용*** 기능, 그룹 위젯 내 ***프로젝트 선택*** 기능이 추가되었습니다. 
+와탭 2024년 2분기 `공통` 부분에서 편의성 향상을 위해 <Cmdname sid="side_flexboard" className="uitext" />를 비롯한 공통 메뉴 개선 작업이 이루어졌습니다. 사이드 메뉴의 <Cmdname sid="side_projectList" className="uitext" />에서 쉽게 그룹을 이동할 수 있으며, <Cmdname sid="side_flexboard" className="uitext" />의 경우 그룹 내 옵션을 공유할 수 있는 ***그룹 내 전체 위젯 적용*** 기능, 그룹 위젯 내 <Cmdname sid="TLT06410" className="uitext" /> 기능이 추가되었습니다. 
 
 ![공통 분기 예시](/img/changelog/changelog-24q2-common.png)
 
@@ -80,9 +80,9 @@ import Common_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Com
 
 ## `Application`
 
-와탭 2024년 2분기 `Application` 부분의 주목할 만한 신규 기능으로 지난 1분기에 이어 ***트랜잭션 맵***의 고도화와 ***애플리케이션 대시보드*** 기본 프리셋 변경 기능을 소개합니다.
+와탭 2024년 2분기 `Application` 부분의 주목할 만한 신규 기능으로 지난 1분기에 이어 <Cmdname sid="side_transaction_map" className="uitext" />의 고도화와 <Cmdname sid="application_dashboard" className="uitext" /> 기본 프리셋 변경 기능을 소개합니다.
 
-***트랜잭션 맵*** 고도화 작업의 일환으로 응답 시간 분포도 차트에서 선택한 항목만을 조회할 수 있는 커스텀 필터 기능을 새롭게 제공합니다. 기존 ***TOP 30*** 섹션 옆의 ***커스텀*** 탭에서 조회를 원하는 특정 트랜잭션, 도메인, IP 항목에서 원하는 값을 직접 입력하거나 ***TOP 30*** 목록에서 제공하는 항목을 선택하세요. 선택한 항목들의 응답 시간 분포도가 차트에 실시간으로 필터링됩니다. 
+<Cmdname sid="side_transaction_map" className="uitext" /> 고도화 작업의 일환으로 응답 시간 분포도 차트에서 선택한 항목만을 조회할 수 있는 커스텀 필터 기능을 새롭게 제공합니다. 기존 ***TOP 30*** 섹션 옆의 <Cmdname sid="custom" className="uitext" /> 탭에서 조회를 원하는 특정 트랜잭션, 도메인, IP 항목에서 원하는 값을 직접 입력하거나 ***TOP 30*** 목록에서 제공하는 항목을 선택하세요. 선택한 항목들의 응답 시간 분포도가 차트에 실시간으로 필터링됩니다. 
 
 <p align="center"> 
 
@@ -90,7 +90,7 @@ import Common_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Com
 
 </p>
 
-***애플리케이션 대시보드*** 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 ***기본으로 표시*** 옵션을 활용해 보세요. 기본으로 지정한 대시보드는 프리셋 목록에서 <code class='default-tag'>기본</code> 태그가 표시됩니다. 
+<Cmdname sid="application_dashboard" className="uitext" /> 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 <Cmdname sid="BTN08106" className="uitext" /> 옵션을 활용해 보세요. 기본으로 지정한 대시보드는 프리셋 목록에서 <code class='default-tag'>기본</code> 태그가 표시됩니다. 
 
 ![애플리케이션 대시보드 기본 프리셋 분기 예시](/img/changelog/changelog-24q2-app-preset.png)
 
@@ -150,7 +150,7 @@ import Go_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-golan
 
 **구버전 애플리케이션 대시보드 서비스 종료**
 
-***사이트 맵***에서 진입하는 구버전 ***애플리케이션 대시보드*** <code class='oldfunc'>Old</code> 메뉴가 3분기 **7월 24일**자로 서비스 제공이 **종료**될 예정입니다. ***대시보드*** 메뉴에서 개선된 기능과 함께 새로운 ***애플리케이션 대시보드***를 이용해 주세요. 
+***사이트 맵***에서 진입하는 구버전 <Cmdname sid="application_dashboard" className="uitext" /> <code class='oldfunc'>Old</code> 메뉴가 3분기 **7월 24일**자로 서비스 제공이 **종료**될 예정입니다. <Cmdname sid="side_dashboard" className="uitext" /> 메뉴에서 개선된 기능과 함께 새로운 <Cmdname sid="application_dashboard" className="uitext" />를 이용해 주세요. 
 
 :::
 
@@ -158,9 +158,9 @@ import Go_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-golan
 
 * 애플리케이션 `.NET` 상품의 지원 범위가 기존 `.NET` Framework뿐만 아니라 `.NET` Core까지 확대되었습니다. 
 
-* ***트랜잭션 맵*** 메뉴의 **커스텀 필터** 기능에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/java/dashboard-transactionmap#custom)를 참조하세요. 
+* <Cmdname sid="side_transaction_map" className="uitext" /> 메뉴의 **커스텀 필터** 기능에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/java/dashboard-transactionmap#custom)를 참조하세요. 
 
-* ***애플리케이션 대시보드*** 기본 프리셋 변경에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/java/dashboard#changepreset)를 참조하세요. 
+* <Cmdname sid="application_dashboard" className="uitext" /> 기본 프리셋 변경에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/java/dashboard#changepreset)를 참조하세요. 
 
 :::
 
@@ -176,7 +176,7 @@ import Go_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-golan
 
 이번 2분기에 새롭게 **Unix** `Solaris` **에이전트 설치 패키지**를 제공합니다. 선 마이크로시스템즈가 개발한 Solaris는 고성능 Unix 운영 체제로, SPARC 시스템에서의 확장성과 ZFS 파일 시스템, DTrace와 같은 기능으로 널리 알려져 있습니다. 와탭은 Oracle Solaris 버전 11.2 이상을 지원합니다. `Solaris` 설치 패키지를 통해 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다. 와탭 서버 모니터링을 통해 `Solaris` 운영 체제를 보다 효과적으로 관리하고 모니터링할 수 있습니다.
 
-{/* 서버 모니터링 상품 설치 시 사용자가 운영 체제를 먼저 선택하여 보다 직관적인 방식으로 설치 과정이 진행되도록 ***에이전트 설치*** 화면이 개선되었습니다. 기존의 OS별 탭 분리 방식 대신 운영 체제 선택 후 해당 OS에 적합한 개별 설치 페이지로 이동합니다.  */}
+{/* 서버 모니터링 상품 설치 시 사용자가 운영 체제를 먼저 선택하여 보다 직관적인 방식으로 설치 과정이 진행되도록 <Cmdname sid="agentInstall" className="uitext" /> 화면이 개선되었습니다. 기존의 OS별 탭 분리 방식 대신 운영 체제 선택 후 해당 OS에 적합한 개별 설치 페이지로 이동합니다.  */}
 
 {/* * 에이전트 설치 화면 편의성 개선 > OS 선택
 
@@ -206,23 +206,23 @@ import Server_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-s
 
 ## `Kubernetes`
 
-와탭 2024년 2분기 `Kubernetes` 부분의 주목할 만한 신규 기능 및 변경 사항으로 ***에이전트 설치*** 및 ***Pending Pod 현황*** 개편, ***컨테이너 맵*** 내 ***리소스 관계*** 기능을 소개합니다.
+와탭 2024년 2분기 `Kubernetes` 부분의 주목할 만한 신규 기능 및 변경 사항으로 <Cmdname sid="agentInstall" className="uitext" /> 및 <Cmdname sid="side_pendingPod" className="uitext" /> 개편, <Cmdname sid="side_containerMap" className="uitext" /> 내 <Cmdname sid="TTL07237" className="uitext" /> 기능을 소개합니다.
 
 {/* 쿠버네티스 플랫폼의 다양성과 런타임 및 기능의 확장에 따라 에이전트 설치 과정의 상세도 역시 높아졌습니다. 이를 해결하기 위해 지난 1분기 *Helm* 차트 설치 지원에 이어 이번 2분기에 사용자 환경과 다양한 와탭 옵션별로 설치 *YAML* 파일 자동 생성 기능을 도입하였습니다. UI에서 원하는 옵션을 선택하여 손쉽게 설치 파일을 생성하는 방식으로 에이전트 설치 과정이 간편해지고 사용성이 크게 개선되었습니다.  */}
 
-쿠버네티스 제품에 발생하는 지속적인 변화와 다양한 컨테이너 런타임의 등장에 따라 에이전트 설치 과정 또한 복잡해지고 있습니다. 이에 와탭은 지난 1분기의 *Helm* 차트 설치 지원에 이어 2분기에는 새로운 쿠버네티스 ***에이전트 설치*** 기능을 제공합니다. 기존에는 설치 *YAML* 파일 다운로드 후 추가적으로 항목을 수정해야 하는 경우가 있었습니다. 하지만 이제는 UI 상에서 사용자 쿠버네티스 환경의 주요 구성요소나 특징, 그리고 사용하고자 하는 기능 선택 시 그에 적합한 설치 파일이 제공됩니다. 따라서 훨씬 더 빠르고 쉽게 에이전트를 설치할 수 있습니다.
+쿠버네티스 제품에 발생하는 지속적인 변화와 다양한 컨테이너 런타임의 등장에 따라 에이전트 설치 과정 또한 복잡해지고 있습니다. 이에 와탭은 지난 1분기의 *Helm* 차트 설치 지원에 이어 2분기에는 새로운 쿠버네티스 <Cmdname sid="agentInstall" className="uitext" /> 기능을 제공합니다. 기존에는 설치 *YAML* 파일 다운로드 후 추가적으로 항목을 수정해야 하는 경우가 있었습니다. 하지만 이제는 UI 상에서 사용자 쿠버네티스 환경의 주요 구성요소나 특징, 그리고 사용하고자 하는 기능 선택 시 그에 적합한 설치 파일이 제공됩니다. 따라서 훨씬 더 빠르고 쉽게 에이전트를 설치할 수 있습니다.
 
 <ImgLang img='k8s-install-master-node-download.png' desc='설치 파일 다운로드 분기 예시' />
 
-{/* ***실험실***에서 제공하던 ***Pending Pod 현황*** 메뉴가 V2로 개편되며 ***워크로드*** 하위 메뉴로 재구성되었습니다. 기존의 1회성 Pending 정보 제공에서 다음과 같이 기능이 크게 개선되었습니다. ***Pending Pod 현황*** V2는 Pending 상태의 Pod에 대한 실시간 가시성과 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 내의 Pending 상태 Pod를 체계적으로 모니터링하고 분석할 수 있습니다.  */}
+{/* <Cmdname sid="side_lab" className="uitext" />에서 제공하던 <Cmdname sid="side_pendingPod" className="uitext" /> 메뉴가 V2로 개편되며 <Cmdname sid="side_workload" className="uitext" /> 하위 메뉴로 재구성되었습니다. 기존의 1회성 Pending 정보 제공에서 다음과 같이 기능이 크게 개선되었습니다. <Cmdname sid="side_pendingPod" className="uitext" /> V2는 Pending 상태의 Pod에 대한 실시간 가시성과 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 내의 Pending 상태 Pod를 체계적으로 모니터링하고 분석할 수 있습니다.  */}
 
-***실험실*** 메뉴에서 제공되던 ***Pending Pod 현황*** 기능이 <code class="my">V2</code>로 개편되면서 ***워크로드*** 하위 메뉴로 정식 배포되었습니다. ***Pending Pod 현황*** 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다.
+<Cmdname sid="side_lab" className="uitext" /> 메뉴에서 제공되던 <Cmdname sid="side_pendingPod" className="uitext" /> 기능이 <code class="my">V2</code>로 개편되면서 <Cmdname sid="side_workload" className="uitext" /> 하위 메뉴로 정식 배포되었습니다. <Cmdname sid="side_pendingPod" className="uitext" /> 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다.
 
 <ImgLang img='k8s-pending-pod-status-detail.png' desc='Pending Pod 상세 분기 예시' />
 
-{/* 와탭 쿠버네티스 모니터링은 2024년 상반기에 걸쳐 ***컨테이너 맵*** 개선 작업을 진행해 왔습니다. 이번 2분기에는 그 중에서도 ***컨테이너 맵*** 상세 내 ***리소스 관계*** 기능이 추가되었습니다. ***리소스 관계*** 탭을 통해 리소스 간 계층 구조와 연결 관계를 시각적으로 보다 쉽게 파악할 수 있습니다. 이를 통해 클러스터 리소스 구조와 상호 작용을 명확하게 이해하고 리소스 상태와 위치를 확인해 문제 발생 시 빠르게 대응할 수 있습니다.  */}
+{/* 와탭 쿠버네티스 모니터링은 2024년 상반기에 걸쳐 <Cmdname sid="side_containerMap" className="uitext" /> 개선 작업을 진행해 왔습니다. 이번 2분기에는 그 중에서도 <Cmdname sid="side_containerMap" className="uitext" /> 상세 내 <Cmdname sid="TTL07237" className="uitext" /> 기능이 추가되었습니다. <Cmdname sid="TTL07237" className="uitext" /> 탭을 통해 리소스 간 계층 구조와 연결 관계를 시각적으로 보다 쉽게 파악할 수 있습니다. 이를 통해 클러스터 리소스 구조와 상호 작용을 명확하게 이해하고 리소스 상태와 위치를 확인해 문제 발생 시 빠르게 대응할 수 있습니다.  */}
 
-와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 ***컨테이너 맵*** 개선 작업을 진행하였습니다. 특히 2분기에는 ***컨테이너 맵***에 ***리소스 관계*** 기능이 추가되었습니다. ***리소스 관계*** 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다.
+와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 <Cmdname sid="side_containerMap" className="uitext" /> 개선 작업을 진행하였습니다. 특히 2분기에는 <Cmdname sid="side_containerMap" className="uitext" />에 <Cmdname sid="TTL07237" className="uitext" /> 기능이 추가되었습니다. <Cmdname sid="TTL07237" className="uitext" /> 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다.
 
 <p align="center"> 
 
@@ -245,7 +245,7 @@ import Server_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-s
 
 {/* 실시간으로 Pending 상태의 Pod 현황을 조회할 수 있으며, 
 
-***Pending Pod 현황*** V2를 통해 클러스터 내 Pending 상태의 Pod 현황을 종합적으로 모니터링하고 분석할 수 있습니다. 
+<Cmdname sid="side_pendingPod" className="uitext" /> V2를 통해 클러스터 내 Pending 상태의 Pod 현황을 종합적으로 모니터링하고 분석할 수 있습니다. 
 
 클러스터 내 Pending 상태의 Pod를 종합적으로 모니터링하고 분석할 수 있게 합니다.
 
@@ -290,7 +290,7 @@ import Kubernetes_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24
 
 :::note 
 
-***Pending Pod 현황*** <code class="my">V2</code>에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/kubernetes/pending-pod-status)를 참조하세요.
+<Cmdname sid="side_pendingPod" className="uitext" /> <code class="my">V2</code>에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/kubernetes/pending-pod-status)를 참조하세요.
 
 :::
 
@@ -340,7 +340,7 @@ import DBX_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-dbx.
 
 ## `Browser`
 
-와탭 2024년 2분기 `Browser` 부분의 주목할 만한 신규 기능으로 ***세션 리플레이***를 소개합니다. 이벤트 목록만으로는 장애를 정확히 재현하기 어려울 수 있습니다. ***세션 리플레이*** 기능은 사용자가 웹 사이트에서 수행하는 모든 이벤트를 자동으로 기록하고 재생할 수 있는 기능입니다. 
+와탭 2024년 2분기 `Browser` 부분의 주목할 만한 신규 기능으로 <Cmdname sid="TTL08103" className="uitext" />를 소개합니다. 이벤트 목록만으로는 장애를 정확히 재현하기 어려울 수 있습니다. <Cmdname sid="TTL08103" className="uitext" /> 기능은 사용자가 웹 사이트에서 수행하는 모든 이벤트를 자동으로 기록하고 재생할 수 있는 기능입니다. 
 
 사용자의 클릭, 스크롤, 입력, 페이지 전환 등과 같은 모든 이벤트를 정확하게 재현하여 웹 사이트와 사용자 사이의 상호작용을 분석할 수 있습니다. 이를 통해 실제 사용자 경험을 재현하여 잠재적인 문제를 빠르게 식별하고 해결할 수 있으며, 사용자의 웹 사이트 사용 방식에 대한 통찰을 제공하여 최적화를 도울 수 있습니다. 
 
@@ -356,7 +356,7 @@ import DBX_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-dbx.
 
 이벤트 목록만으로는 장애를 재현하기 어려울 수 있습니다. 실제 장애가 발생했을 때 유저 화면을 녹화해 보다 정확한 장애 재현이 가능합니다.  */}
 
-<code class="Feature">Feature</code> <span class="uitext">페이지 로드 히트맵</span>, <span class="uitext">AJAX 히트맵</span>, <span class="uitext">사용자 세션 로그 검색</span> 메뉴에 <span class="uitext">세션 리플레이</span> 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><code class='changelog-service'>Service 2.6.0​</code></a></code>
+<code class="Feature">Feature</code> <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />, <Cmdname sid="side_ajaxAnalytics" className="uitext" />, <Cmdname sid="side_userSessionEventSearch" className="uitext" /> 메뉴에 <Cmdname sid="TTL08103" className="uitext" /> 기능 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><code class='changelog-service'>Service 2.6.0​</code></a></code>
 
 {/* <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
@@ -378,7 +378,7 @@ import Browser_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-
 
 :::note 
 
-***세션 리플레이*** 기능에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/browser/session-replay)를 참조하세요.
+<Cmdname sid="TTL08103" className="uitext" /> 기능에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/browser/session-replay)를 참조하세요.
 
 :::
 
@@ -419,7 +419,7 @@ import Cloud_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-Clou
 
 ## `URL`
 
-와탭 2024년 2분기 `URL` 부분의 변경 사항을 소개합니다. ***URL 목록*** 메뉴 및 해당 메뉴 내 ***URL 편집*** 창의 UI가 사용자 편의성 향상을 위해 전반적으로 개편되었습니다. 또한 ***URL 삭제*** 역시 편집창이 아니라 목록 조회 시 삭제할 수 있도록 변경되었습니다. ***URL 상세*** 창의 경우 개별 비교 시 용이하도록 팝아웃 방식으로 제공합니다.
+와탭 2024년 2분기 `URL` 부분의 변경 사항을 소개합니다. <Cmdname sid="side_urlList" className="uitext" /> 메뉴 및 해당 메뉴 내 <Cmdname sid="edit_url" className="uitext" /> 창의 UI가 사용자 편의성 향상을 위해 전반적으로 개편되었습니다. 또한 <Cmdname sid="TTL07886" className="uitext" /> 역시 편집창이 아니라 목록 조회 시 삭제할 수 있도록 변경되었습니다. ***URL 상세*** 창의 경우 개별 비교 시 용이하도록 팝아웃 방식으로 제공합니다.
 
 ![URL sc](/img/changelog/changelog-24q2-url.png)
 

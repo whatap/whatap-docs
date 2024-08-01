@@ -774,9 +774,6 @@ article div[class*='fbsharebutton'] {
       width: calc(100% - 220px) !important;
     }
   }
-  div[role*='search'] {
-
-  }
   h1 {
     font-size: var(--ifm-h1-font-size);
     span {
@@ -872,11 +869,62 @@ footer.row > div.text--right > a {
     // }
   }
 }
+// 블로그 리스트와 콘텐츠 이미지 다르게 표시
+img[alt*='New Feature Overview'] {
+  border: none !important;
+}
+#__blog-post-container {
+  img[alt*='New Feature Overview'] {
+    content: url('/img/changelog/new_feature_overview_txt_gl.png') !important;
+  }
+}
 // 블로그 서비스 히스토리 overview
 #overview_test {
   .changelog-service{
     position: relative;
-    top: -6px;
+    // top: -6px;
+    top: -7px;
+    left: -6px;
+    background-color: transparent !important;
+    a {
+      font-weight: 300 !important;
+      color: grey;
+      // color: var(--ifm-link-color);
+      // &:hover {
+      //   text-decoration: underline;
+      //   color:rgb(19, 19, 19);
+      // }
+      img.ico-link {
+        border: none;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+        top: 3px;
+      }
+    }
+  }
+  code.changelog-overview {
+    font-weight: 600;
+    // background-color: #f5f5f5;
+    background-color: #fff;
+    color: #353535;
+    top: -7.5px;
+    left: -4px;
+    font-size: 100%;
+  }
+  code.changelog-overview2 {
+    // background-color: rgb(238, 238, 238);
+    // color: #929191;
+    color: #505050;
+    background-color: #f5f5f5;
+    // color: var(--ifm-color-info-dark);
+    font-weight: 500;
+    border: 0.5px;
+    padding: 1px 4px 1px 4px;
+    // left: 4px !important;
   }
 }
 div.history_overview{
@@ -897,7 +945,7 @@ div.history_overview{
   .changelog-service-dup + .changelog-overview2 + ul {
     position: relative;
     top: -6px !important;
-}
+  }
   .changelog-service {
     position: relative;
     top: -1px;
@@ -908,9 +956,10 @@ div.history_overview{
     top: -6px;
   }
   code.changelog-overview2 {
-    // background-color: rgb(232, 232, 232);
-    background-color: transparent;
-    color: var(--ifm-color-info-dark);
+    background-color: rgb(238, 238, 238);
+    color: #929191;
+    // background-color: transparent;
+    // color: var(--ifm-color-info-dark);
     font-weight: 500;
     border: 0.5px;
     padding: 1px 4px 1px 4px;
@@ -964,7 +1013,6 @@ div.history_overview{
         border-left: none;
       }
     }
-
     ul {
       border-left: none;
       list-style: decimal;
@@ -973,6 +1021,12 @@ div.history_overview{
       margin-bottom: 12px;
       width: 110%;
       li {
+        // 서비스 흐름도 overview 라인 깨짐 수정
+        font-size: 92%;
+        margin-bottom: -1px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        border-left: none;
         &::before {
           content: "• ";
           border: none;
@@ -981,11 +1035,6 @@ div.history_overview{
           font-size: 130%;
           color: #a8a8a8;
         }
-        font-size: 92%;
-        margin-bottom: -1px;
-        padding-left: 5px;
-        padding-bottom: 5px;
-        border-left: none;
       }
     }
   }
@@ -1273,6 +1322,7 @@ main {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
+          line-clamp: 2;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           word-break: break-all;
@@ -2326,6 +2376,7 @@ main {
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
+            line-clamp: 2;
             -webkit-line-clamp: 2; /* 라인수 */
             -webkit-box-orient: vertical;
             word-wrap:break-word;
@@ -2341,6 +2392,7 @@ main {
             font-size: .9rem;
             line-height: 1.1;
             padding: 0;
+            line-clamp: 3;
             -webkit-line-clamp: 3; /* 라인수 */
             -webkit-box-orient: vertical;
           }
@@ -2833,6 +2885,11 @@ main {
       border: none;
       color: #c0c0c0;
     }
+    // 다크 모드 changelog-overview
+    #overview_test code.changelog-overview2 {
+      background-color: transparent;
+      color: #f5f5f5;
+    }
     // 다크 모드 changelog 분기 예시 이미지
     img[alt*= '분기 예시']{
       border-radius: 2%;
@@ -3078,15 +3135,6 @@ main {
 
   div.cover-page > a.pagination-nav__link--next {
     display: none;
-  }
-
-  .markdown header h1 { string-set: doctitle content() }
-  ul.theme-doc-sidebar-menu > li.theme-doc-sidebar-item-category-level-1 > div.menu__list-item-collapsible > a { string-set: prtitle content() }
-
-  @page {
-    prince-shrink-to-fit: none;
-    @top-right { content: string(doctitle);font-size: .75rem; }
-    @bottom-center { content: counter(page);font-size: .75rem; }
   }
 
   /* Elements should be removed in PDF */
