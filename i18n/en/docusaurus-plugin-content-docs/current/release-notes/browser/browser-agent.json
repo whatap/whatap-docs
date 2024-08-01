@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/browser/browser-v1_3_5",
+    "ver": "v1.3.5",
+    "date": "2024-03-21",
+    "Lists": [
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the custom event collection interface.</p>"
+      },
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the click event collection option.</p>"
+      },
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Responded for the angular framework <b>zone.js</b>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/browser/browser-v1_3_6",
+    "ver": "v1.3.6",
+    "date": "2024-05-30",
+    "Lists": [
+      {
+        "ver": "v1.3.6",
+        "hash": "v136",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Improved the browser agent's bundle size.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/browser/browser-v1_3_4",
+    "ver": "v1.3.4",
+    "date": "2024-02-19",
+    "Lists": [
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the function to collect the following metrics in <b>Network Information API</b> upon occurrence of page load or AJAX events.</p>",
+        "details": "<ul>\n<li>downlink</li>\n<li>effectiveType</li>\n<li>rtt</li>\n</ul>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the function to collect the following metrics upon occurrence of resource events.</p>",
+        "details": "<ul>\n<li>deliveryType</li>\n<li>responseStatus</li>\n</ul>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the function to collect Content Security Policy (CSP) errors.</p>"
+      }
+    ]
+  }
+]

@@ -473,5 +473,9 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
+  },
+  "custom.importJson.waitingMessage": {
+    "message": "데이터를 불러오고 있습니다. 잠시만 기다려 주세요.",
+    "description": "Loading data. Please wait a moment."
   }
 }

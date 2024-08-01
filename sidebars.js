@@ -3292,7 +3292,7 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_7_x',
+            id: 'release-notes/service/index',
           },
           items: [
             {
@@ -3318,6 +3318,10 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           // className: 'new',
+          link: {
+            type: 'doc',
+            id: 'release-notes/mobile/index'
+          },
           items: [
             {
               type: 'doc',
@@ -3371,7 +3375,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_37',
+                id: 'release-notes/java/index',
               },
               items: [
                 {
@@ -3399,7 +3403,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java-batch/java-batch-2_2_24',
+                id: 'release-notes/java-batch/index',
               },
               items: [
                 {
@@ -3422,7 +3426,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_8_1',
+                id: 'release-notes/php/index',
               },
               items: [
                 {
@@ -3450,7 +3454,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_98',
+                id: 'release-notes/nodejs/index',
               },
               items: [
                 {
@@ -3478,7 +3482,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_6_6',
+                id: 'release-notes/python/index',
               },
               items: [
                 {
@@ -3507,7 +3511,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_3_0',
+                id: 'release-notes/dotnet/index',
               },
               items: [
                 {
@@ -3535,7 +3539,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/golang/golang-0_4_0',
+                id: 'release-notes/golang/index',
               },
               items: [
                 {
@@ -3563,7 +3567,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_6_4',
+                id: 'release-notes/server/index',
               },
               items: [
                 {
@@ -3593,12 +3597,12 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-aix-1_2_7'
+                id: 'release-notes/server-aix/server-aix-1_2_7'
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-aix-1_2_7',
+                  id: 'release-notes/server-aix/server-aix-1_2_7',
                   // className: 'new'
                 }
               ],
@@ -3611,7 +3615,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_7_8',
+                id: 'release-notes/k8s/index',
               },
               items: [
                 {
@@ -3640,7 +3644,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_9_0',
+                id: 'release-notes/db/dbx-agent',
               },
               items: [
                 {
@@ -3668,7 +3672,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/xos-1_1_8f',
+                id: 'release-notes/db/xos-agent',
               },
               items: [
                 {
@@ -3701,7 +3705,7 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/browser/browser-v1_3_6',
+                id: 'release-notes/browser/index',
               },
               items: [
                 {

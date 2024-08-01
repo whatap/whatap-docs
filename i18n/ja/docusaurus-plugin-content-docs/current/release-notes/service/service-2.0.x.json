@@ -1,0 +1,829 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.8",
+    "date": "2024-01-19",
+    "Lists": [
+      {
+        "ver": "Service 2.0.8",
+        "hash": "service-208",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューの<span class=\"uitext\">メトリックス</span>タブでイベント項目が多い場合、使用できないほどページロードが遅くなる現象を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.6",
+    "date": "2024-01-19",
+    "Lists": [
+      {
+        "ver": "Service 2.0.6",
+        "hash": "service-206",
+        "product": "AWS Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">WhaTap Forwarderインストール</span>タブの2番目の<span class=\"uitext\">AWS Region</span>一覧にVirginia(us-east-1) 項目を追加</p>"
+      },
+      {
+        "ver": "Service 2.0.6",
+        "hash": "service-206",
+        "product": "AWS Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">WhaTap Forwarderインストール</span>タブの2番目の<span class=\"uitext\">AWS Region</span>一覧にVirginia(us-east-1) 項目を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.4",
+    "date": "2024-01-15",
+    "Lists": [
+      {
+        "ver": "Service 2.0.4",
+        "hash": "service-204",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">利用内訳</span>メニューで課金の固定価格のポリシーを変更</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.3",
+    "date": "2024-01-12",
+    "Lists": [
+      {
+        "ver": "Service 2.0.3",
+        "hash": "service-203",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブTX</span>ウィジェットで種類別フィルターが適用されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.3",
+        "hash": "service-203",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">種類別エージェント</span>または<span class=\"uitext\">サーバー別エージェント</span>オプションを選択してエージェントを選択しなかったが、エージェント全体が照会される問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.2",
+    "date": "2024-01-11",
+    "Lists": [
+      {
+        "ver": "Service 2.0.2",
+        "hash": "service-202",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">統計</span>メニューの<span class=\"uitext\">SQL</span>タブで他のタブのフィルターが適用されるバグを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.1",
+    "date": "2024-01-11",
+    "Lists": [
+      {
+        "ver": "Service 2.0.1",
+        "hash": "service-201",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Wait分析</span>メニューで<span class=\"uitext\">Wait Event</span>チャートの指標エラーを修正</p>",
+        "category": "PostgreSQL V2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_0_x",
+    "ver": "Service 2.0.0",
+    "date": "2024-01-10",
+    "Lists": [
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">Flexボード</span>メニューで補助チャートの小数点以下桁数の調整機能を追加</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>すべての<span class=\"uitext\">ヒットマップ</span>ウィジェットの<span class=\"uitext\">Y軸自動</span>オプションを基本適用するように変更</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">Flexボード</span>メニューでTopNウィジェットの順位更新時、グラフチャートがつながらないように変更</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統合ダッシュボード</span>メニューでウィジェットのツールチップが消えない現象を修正</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>組織レベルでFlexボードに生成したウィジェットのポップアップ画面モード(<img loading=\"lazy\" src=\"/ja/img/ico-export.svg\" class=\"ico\" width=\"auto\" height=\"auto\">)が動作しない問題を修正</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Flexボード</span>メニューで<span class=\"uitext\">ヒットマップ</span>ウィジェットを通じて<span class=\"uitext\">トレース分析</span>画面を確認する場合、複数のプロジェクトが選択された中でデータ収集ができないプロジェクトがあれば、プロジェクトリスト全体を読み込めない問題を修正</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Flexボード</span>メニューで<span class=\"uitext\">アラートリスト</span>ウィジェットのダッシュボードフィルターが正常に適用されるように修正</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Flexボード</span> 메뉴에서 <span class=\"uitext\">グループウィジェット</span>中にウィジェットを追加する場合、ウィジェット全体の一覧が表示されず、一部だけが表示される問題を修正</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューからメトリクスイベントを追加すると<span class=\"uitext\">受信テスト</span>機能実行のための必須入力条件を変更</p>",
+        "category": "アラート通知",
+        "details": "<ul>\n<li>従来：<span class=\"uitext\">カテゴリ</span></li>\n<li>変更：<span class=\"uitext\">イベント名</span>, <span class=\"uitext\">カテゴリ</span>, <span class=\"uitext\">レベル</span>, <span class=\"uitext\">メッセージ</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">レポート</span>メニューでユーザーが設定した終了時間が開始時間より先に設定された場合、終了時間を翌日基準に照会するよう修正</p>",
+        "category": "統計/レポート"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>新規レポートの作成またはレポートの重複作成時に出力されるメッセージを修正</p>",
+        "category": "統合レポート"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>既に作成されたレポートを重複生成する場合、左リストでフォーカスが移動しないバグを修正</p>",
+        "category": "統合レポート"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">請求書プレビュー</span>メニューから使用量数値をクリックすると、使用量の詳細情報を表示する機能を追加</p>",
+        "category": "利用内訳"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>決済情報を登録しなくてもプロモーションバナーを表示し、決済情報を登録していない状態ではプロモーションコードを入力できないように変更</p>",
+        "category": "利用内訳"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">使用量</span>メニューからUTC基準日付で使用量を表示</p>",
+        "category": "利用内訳"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">使用量</span>メニューで多言語が適用されない用語を修正</p>",
+        "category": "利用内訳"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">プロジェクト課金状況</span>メニュー進入時、ロード画像が1つだけ表示されるように修正</p>",
+        "category": "利用内訳"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">決済情報</span>メニューで支払情報を入力または修正する場合<span class=\"uitext\">電話番号</span>項目を変更すると<span class=\"uitext\">国/地域</span>項目も一緒に変更されるよう修正</p>",
+        "category": "利用内訳"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>チャットのお問い合わせ画面で<span class=\"b500\">1on1オンライントレーニング</span>テキストを<span class=\"uitext\">WhaTap ユーザートレーニングの申し込み</span>に変更</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>エラーが発生した場合、画面でチャットツール(吹き出し)を通じて問い合わせできるように案内文を修正</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクト作成過程で製品を選択する時、すべての製品を意味する<b>All Platform</b>文句を<b>All Category</b>に変更</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>サービス画面で、ダークテーマが適用されていない要素に拡張適用</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アプリケーションダッシュボード</span>メニューの各ウィジェットにツールチップや関連情報、多言語対応を追加</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューの変更</p>",
+        "details": "<ul>\n<li>画面下段の<span class=\"uitext\">TXトレース</span>セクションを除去</li>\n<li><span class=\"uitext\">TXマップ</span>セクションのチャートをドラッグすると表示される<span class=\"uitext\">トレース分析</span>ポップアップ画面を通じて詳細情報を確認</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アプリケーションダッシュボード</span>メニューの<span class=\"uitext\">ヒットマップ</span>ウィジェットに<span class=\"uitext\">ヒットマップTX</span>メニューへ移動するボタンを追加</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">トレース分析</span>画面の<span class=\"uitext\">マルチTX</span> &gt; <span class=\"uitext\">チャート</span>モードで、ラベル表示基準を実行時間基準に変更</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>Javaプロジェクトの<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューから、JVMオプションに関連するコードを修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーションダッシュボード</span>メニューで<span class=\"uitext\">ヒットマップ</span> ウィジェットの<span class=\"uitext\">Y軸自動</span>オプションを、Y軸変動値を保存するようにデフォルトを変更</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Nodeエージェントのインストールの対応バージョンを変更7.10.0 → <b>16.4.0</b></p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>画面の<span class=\"uitext\">統計</span>メニューの<span class=\"uitext\">SQL</span>タブに移動するとSQLハッシュ項目が自動入力されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>旧バージョンの<span class=\"uitext\">アプリケーションダッシュボード</span>メニューでウィジェット情報ツールチップのコンテンツが出力されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>で照会結果をTXTファイルとしてダウンロードする場合、時間差が生じる問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブスタック</span>照会時、フィルタリング結果データがない場合、空データに更新されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブスタック</span>照会時、結果が出力される前に「<span class=\"b500\">データなし</span>」メッセージが先に表示される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブスタック</span>照会時、フィルタリング結果データがない場合、空データに更新されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブスタック</span>照会時、結果が出力される前に「<span class=\"b500\">データなし</span>」メッセージが先に表示される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">統計</span>メニューの<span class=\"uitext\">HTTPコール</span>タブで<span class=\"uitext\">TX</span>タブに移動する場合<span class=\"uitext\">T</span>/<span class=\"uitext\">U</span>ボタンが動作しない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">アラート設定</span>メニューでメトリクスイベントの追加、修正時のイベント発生条件と対象設定関連の注意文を追加</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ設定</span>メニューから、エージェント設定と実行スクリプトの<code>encoding</code>項目を設定された言語によって異なる表示にするように修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ設定</span>メニューから、エージェント設定と実行スクリプトの内容を正常に動作させるように修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>メニューの詳細表示画面で名前が長くて省略(...) 処理された場合、マウスオーバー時にツールチップが表示されるように修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">#VALUE!</span> &gt; <span class=\"uitext\">エージェントアップデート</span>メニューの新しいUI適用及び機能の変更</p>",
+        "category": "共通",
+        "details": "<ul>\n<li>エージェントのダウンロード及びアップデートの進行状況を把握することができます。</li>\n<li>アップデートが完了すると、ボタンが自動的に無効になります。</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>及び<span class=\"uitext\">Flexボード</span> メニューで<span class=\"uitext\">SQL Elapse Map</span>ウィジェットを通じて<span class=\"uitext\">Query List</span>画面を開いた時、テーブルのカラム順序を変更</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでインスタンス一覧に実行中のエージェントのみを表示するように修正</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>一部のウィジェット名の韓国語表記を修正(<b>使用率</b>)</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブセッション</span>テーブルを新しいウィンドウとして見たときにデータが照会されない問題を修正</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブセッション</span>, <span class=\"uitext\">ロックツリー</span>, <span class=\"uitext\">プロセス情報</span> タブを選択すると画面が点滅する現象を改善</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> SQLクエリを選択すると表示される<span class=\"uitext\">SQL詳細</span> ウィンドウでクエリに注釈が含まれる場合、同じクエリが繰り返し表現される問題を修正</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>一部のウィジェット名の韓国語表記を修正(<b>使用率</b>)</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブセッション</span>テーブルを新しいウィンドウとして見たときにデータが照会されない問題を修正</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アクティブセッション</span>, <span class=\"uitext\">ロックツリー</span>, <span class=\"uitext\">プロセス情報</span> タブを選択すると画面が点滅する現象を改善</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> SQLクエリを選択すると表示される<span class=\"uitext\">SQL詳細</span> ウィンドウでクエリに注釈が含まれる場合、同じクエリが繰り返し表現される問題を修正</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>プロジェクトで<code class=\"my\">V2</code>に対応していないエージェントバージョンがインストールされている場合、エージェント更新の案内文をヘッダーに表示する機能を追加</p>",
+        "category": "PostgreSQL / MySQL"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューでエージェントアップデートの案内文を変更</p>",
+        "category": "PostgreSQL / MySQL"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Wait分析</span>メニューから、エージェント設定方法の案内モーダルを追加</p>",
+        "category": "PosgreSQL V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Wait分析</span>メニューから、機能紹介モーダルを追加</p>",
+        "category": "PosgreSQL V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">PG SQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</p>",
+        "category": "PosgreSQL V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>次のメニュー経路で<b>column</b>、<b>index</b>構成を確認できる機能を追加</p>",
+        "category": "PosgreSQL V2",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンス</span>、<span class=\"uitext\">マルチインスタンス</span> &gt; <span class=\"uitext\">アクティブセッション</span>セクションでquery項目を選択&gt; <span class=\"uitext\">SQL詳細</span>画面から、JSONモードでPlan照会&gt; table、またはindexをクリック</p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Topオブジェクト</span>メニューから<span class=\"uitext\">tablename</span>または<span class=\"uitext\">indexname</span>カラム項目をクリック</p>\n</li>\n<li>\n<p><span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">データベースサイズ</span>メニューから<span class=\"uitext\">tablename</span>カラム項目をクリック</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">MYSQLのSQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</p>",
+        "category": "MySQL V2"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">コンテナマップ</span> メニューの要約表示画面から、現在のログ(Stdout) 照会時にコンテナidをコンテナ名として表示するように変更</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">コンテナマップ</span>メニューから、要約表示画面のタイトルバグを修正</p>",
+        "category": "ダッシュボード"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>次のメニューで画面上段のステータスアイコンを選択すると、選択したステータスのリソースだけがフィルタリングされる機能を追加</p>",
+        "category": "リソース",
+        "details": "<ul>\n<li><span class=\"uitext\">リソース</span> &gt; <span class=\"uitext\">ノードリスト</span></li>\n<li><span class=\"uitext\">リソース</span> &gt; <span class=\"uitext\">コンテナリスト</span></li>\n<li><span class=\"uitext\">リソース</span> &gt; <span class=\"uitext\">Podリスト</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">リソース</span>メニューの下位に、次のメニューを追加</p>",
+        "category": "リソース",
+        "details": "<ul>\n<li><span class=\"uitext\">Podリスト</span>: Pod一覧と詳細情報を提供</li>\n<li><span class=\"uitext\">コンテナアプリケーションリスト</span>: コンテナ化されたアプリケーションの一覧と詳細情報を提供</li>\n<li><span class=\"uitext\">コンテナイメージ</span>: 使用中の画像一覧を提供</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">コンテナリスト</span>メニューで<span class=\"uitext\">Node</span>カラム項目を選択すると、該当ノード一覧がフィルタリングされた<span class=\"uitext\">ノードリスト</span>メニューに移動する機能を追加</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">クラスターサマリー</span>メニューに<b>Service</b>、<b>Ingress</b>、<b>Job</b>、<b>CronJob</b>オブジェクト一覧を追加</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ノードリスト</span> メニューに指標を追加 - <b>beta.kubernetes.io/instance-type</b></p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">コンテナイメージ</span>メニューに指標を追加 - <b>Total Container CPU</b>、<b>Total Container Memory</b></p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ノードリスト</span>メニューから、カラム分類と位置を変更</p>",
+        "category": "リソース",
+        "details": "<ul>\n<li><strong><em>CapacityCpu</em></strong>カラムを<span class=\"uitext\">ノード情報</span>で<span class=\"uitext\">CPU</span>下位へ移動</li>\n<li><strong><em>CapacityMemory</em></strong>カラムを<span class=\"uitext\">ノード情報</span>で<span class=\"uitext\">メモリー</span>下位へ移動</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">性能要約</span>メニューに<span class=\"uitext\">エージェントが実行されているコンテナの数</span>と<span class=\"uitext\">エージェントが実行されているPodの数</span>、<span class=\"uitext\">エージェントがインストールされているノードの数</span>ウィジェットを追加</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">クラスターサマリー</span>メニューに<span class=\"uitext\">Total Capacity CPU</span>(ノード総CPU)、<span class=\"uitext\">Total Capacity Memory</span>(ノード総Memory) ウィジェットを追加</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ノード詳細情報</span>メニューから断続的にサーバーが選択されない問題を修正</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ノードリスト</span>メニューで<span class=\"uitext\">一致</span>条件でフィルター設定時、1つの値だけを選択できるように修正</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">性能要約</span>メニューから、ユーザーのデバイスによってウィジェット内のコンテンツが正しく表示されない問題を修正</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">性能要約</span>メニューでリアルタイムモードを一時停止(<img loading=\"lazy\" src=\"/ja/img/ico-pause.svg\" class=\"ico\" width=\"auto\" height=\"auto\">)後に再起動(<img loading=\"lazy\" src=\"/ja/img/ico-play-time.svg\" class=\"ico\" width=\"auto\" height=\"auto\">)ボタンを選択すると、時間セレクターの表記が5分から30分に変わるバグを修正</p>",
+        "category": "リソース"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">マルチサービスヒットマップ</span>, <span class=\"uitext\">カスタムヒットマップ</span>メニューの日本語メニュー名を修正</p>",
+        "category": "アプリケーション",
+        "details": "<ul>\n<li>マルチサービスヒトマップ → <strong>マルチサービスヒットマップ</strong></li>\n<li>カスタムヒトマップ → <strong>カスタムヒットマップ</strong></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">WhaTapイベント</span>: <code>#WhatapEvent</code>カテゴリのログデータの照会機能を追加</p>",
+        "category": "ログ"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">クーバーネティスイベント</span>：プロジェクト単位でKubernetesイベントに対する照会と検索機能</p>",
+        "category": "ログ"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">管理</span>メニュー下位に <span class=\"uitext\">相関プロジェクト管理</span>メニューを追加：連携プロジェクトの登録、照会、削除機能</p>",
+        "category": "etc"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>登録された連携プロジェクトがあった場合は<span class=\"uitext\">トレース分析</span> &gt; <span class=\"uitext\">テーブルビュー</span>でSQL対象サーバー情報とHTTPURL Connection情報について<span class=\"uitext\">連携分析</span>ビューを提供</p>",
+        "category": "etc"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Pod初期化性能</span> メニュー変更</p>",
+        "category": "etc",
+        "details": "<ul>\n<li>ノードエージェント1.4.2 バージョン以降に対応</li>\n<li>クラスターから、クラスターとネームスペースプロジェクトへの対応範囲の拡大</li>\n<li>照会性能の改善</li>\n<li>CSVダウンロード機能の提供</li>\n<li>ステータスアイコンを選択した場合、該当ステータスのPodフィルタリング機能を提供</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">アラート設定</span>メニューから、メトリクスイベント追加画面の<span class=\"uitext\">ガイドへ</span>ボタンに設定されたリンクを修正</p>",
+        "category": "etc"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Kubernetes",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">メトリックスチャート</span>メニューから、メトリクスチャート'コンテナ'カテゴリを削除</p>",
+        "category": "etc"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ログ検索</span>, <span class=\"uitext\">ログTail</span>メニューから、ログ検索フィルター機能を改善</p>",
+        "details": "<ul>\n<li>検索値入力時に利用できる検索文法を案内するガイド機能を追加</li>\n<li>追加されたタグの修正時にキーボード入力で修正できる機能を追加</li>\n<li>タグをキーボード入力で作成や修正できるようにし、演算子をクリックして修正できる機能を追加</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">アラート設定</span>メニューでリアルタイムログイベントを追加または修正しながらAPIリクエストに失敗した場合、失敗の原因をメッセージとして表示するよう改善</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>エージェントオプションが設定された場合、ログレベルを表示する色表示機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Browser",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>次のメニューから、ユーザーIDを基準に検索できるようにフィルター項目を追加</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Page Load Hitmap</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">AJAX Hitmap</span></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Browser",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ブラウザ監視ダッシュボード</span>メニューで照会時間基準、ページロード数が最も多い国/地域を地図ウィジェットにデフォルト表示するよう修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Browser",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクトのサイドバー日本語メニュー名を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Browser",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ブラウザ監視ダッシュボード</span>メニューで時間セレクターを一時停止した後、再びリアルタイムモードを実行すると、リアルタイム30分で照会される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Browser",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">ブラウザ監視ダッシュボード</span>メニューから時間セレクターの時間選択オプションのうち、次の項目を削除</p>",
+        "details": "<ul>\n<li>\n<span class=\"uitext\">リアルタイム</span>\n<span class=\"uitext\">30分間</span>\n</li>\n<li>\n<span class=\"uitext\">リアルタイム</span>\n<span class=\"uitext\">1</span>\n<span class=\"uitext\">時間</span>\n</li>\n<li>\n<span class=\"uitext\">最近</span>\n<span class=\"uitext\">1</span>\n<span class=\"uitext\">週</span>\n</li>\n<li>\n<span class=\"uitext\">最近</span>\n<span class=\"uitext\">2</span>\n<span class=\"uitext\">週</span>\n</li>\n<li>\n<span class=\"uitext\">最近</span>\n<span class=\"uitext\">3</span>\n<span class=\"uitext\">週</span>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.0.0",
+        "hash": "service-200",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューから<span class=\"uitext\">料金</span>タブの<span class=\"uitext\">プライスポリシー</span>ボタンのリンクを設定された言語に合わせて移動するように修正</p>",
+        "details": "<ul>\n<li>Amazon CloudWatch、Azure Monitor、Oracle Cloud Monitorサービス向け</li>\n</ul>"
+      }
+    ]
+  }
+]
