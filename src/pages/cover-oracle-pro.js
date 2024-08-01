@@ -25,7 +25,7 @@ export default function Cover() {
           // border: '1px solid #000',
         }}>
         <h1>
-          Oracle Monitoring
+          Oracle Pro Monitoring
         </h1>
         <p className={styles.date}>
             release date. 2024.08.05
