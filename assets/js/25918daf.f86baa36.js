@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[752],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93031],{
 
 /***/ 10707:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -953,7 +953,10 @@ function _createMdxContent(props) {
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "multi_transaction",
             className: "uitext"
-          }), ", 에러 항목을 구분하여 목록을 확인할 수 있습니다."]
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "error",
+            className: "uitext"
+          }), " 항목을 구분하여 목록을 확인할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1078,10 +1081,9 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, Link} = _components;
+  }, {Cmdname, ImgLang} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!Link) _missingMdxReference("Link", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -1097,18 +1099,6 @@ function _createMdxContent(props) {
         sid: "TTL06209",
         className: "uitext"
       }), " 창이 나타납니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "info",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["지난 2023년 7월 25일, 릴리스된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06209",
-          className: "uitext"
-        }), " 기능의 변경 사항을 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "../reference/changes-analysis-trace",
-          target: "_blank",
-          children: "다음 문서"
-        }), "를 참조하세요."]
-      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "tip",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3628,7 +3618,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 57952:
+/***/ 83678:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3669,31 +3659,32 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-hitmap-trace',
 	title: '히트맵 - 트레이스 분석',
-	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
+	description: '자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.',
 	tags: [
-		'.NET',
+		'Java',
 		'애플리케이션',
 		'히트맵',
-		'트레이스'
+		'트랜잭션',
+		'스텝'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/dashboard-hitmap-trace",
+  "id": "java/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
-  "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
-  "source": "@site/docs/dotnet/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/dotnet/dashboard-hitmap-trace",
+  "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
+  "source": "@site/docs/java/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/java/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/java/dashboard-hitmap-trace.mdx",
   "tags": [
     {
       "inline": true,
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Java",
+      "permalink": "/whatap-docs/tags/java"
     },
     {
       "inline": true,
@@ -3707,30 +3698,36 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "트레이스",
-      "permalink": "/whatap-docs/tags/트레이스"
+      "label": "트랜잭션",
+      "permalink": "/whatap-docs/tags/트랜잭션"
+    },
+    {
+      "inline": true,
+      "label": "스텝",
+      "permalink": "/whatap-docs/tags/스텝"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "dashboard-hitmap-trace",
     "title": "히트맵 - 트레이스 분석",
-    "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
+    "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
     "tags": [
-      ".NET",
+      "Java",
       "애플리케이션",
       "히트맵",
-      "트레이스"
+      "트랜잭션",
+      "스텝"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
-    "title": "IIS 성능 카운트",
-    "permalink": "/whatap-docs/dotnet/dashboard-iis-perf-count"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/java/dashboard-active-transaction"
   },
   "next": {
     "title": "Flex 보드",
-    "permalink": "/whatap-docs/dotnet/flex-board"
+    "permalink": "/whatap-docs/java/flex-board"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[66388],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35491],{
 
 /***/ 10707:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -953,7 +953,10 @@ function _createMdxContent(props) {
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "multi_transaction",
             className: "uitext"
-          }), ", 에러 항목을 구분하여 목록을 확인할 수 있습니다."]
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "error",
+            className: "uitext"
+          }), " 항목을 구분하여 목록을 확인할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1078,10 +1081,9 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, Link} = _components;
+  }, {Cmdname, ImgLang} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!Link) _missingMdxReference("Link", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -1097,18 +1099,6 @@ function _createMdxContent(props) {
         sid: "TTL06209",
         className: "uitext"
       }), " 창이 나타납니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "info",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["지난 2023년 7월 25일, 릴리스된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06209",
-          className: "uitext"
-        }), " 기능의 변경 사항을 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "../reference/changes-analysis-trace",
-          target: "_blank",
-          children: "다음 문서"
-        }), "를 참조하세요."]
-      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "tip",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3628,7 +3618,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 450:
+/***/ 88408:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3671,7 +3661,7 @@ const frontMatter = {
 	title: '히트맵 - 트레이스 분석',
 	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
 	tags: [
-		'쿠버네티스',
+		'Python',
 		'애플리케이션',
 		'히트맵',
 		'트레이스'
@@ -3679,21 +3669,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/dashboard-hitmap-trace",
+  "id": "python/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
   "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
-  "source": "@site/docs/kubernetes/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/kubernetes/dashboard-hitmap-trace",
+  "source": "@site/docs/python/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/python/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/python/dashboard-hitmap-trace.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "쿠버네티스",
-      "permalink": "/whatap-docs/tags/쿠버네티스"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     },
     {
       "inline": true,
@@ -3717,20 +3707,20 @@ const metadata = {
     "title": "히트맵 - 트레이스 분석",
     "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
     "tags": [
-      "쿠버네티스",
+      "Python",
       "애플리케이션",
       "히트맵",
       "트레이스"
     ]
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "pySidebar",
   "previous": {
-    "title": "애플리케이션 서비스 대시보드",
-    "permalink": "/whatap-docs/kubernetes/dashboard"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/python/dashboard-active-transaction"
   },
   "next": {
-    "title": "일자별 애플리케이션 현황",
-    "permalink": "/whatap-docs/kubernetes/application-daily-stat"
+    "title": "Flex 보드",
+    "permalink": "/whatap-docs/python/flex-board"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35491],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28609],{
 
 /***/ 10707:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -392,139 +392,6 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "설정한 내용이 테이블에 적용됩니다."
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 15299:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "액티브 스택",
-  "id": "anlaysis-trace-active-stack",
-  "level": 3
-}];
-function _createMdxContent(props) {
-  const _components = {
-    a: "a",
-    admonition: "admonition",
-    h3: "h3",
-    img: "img",
-    li: "li",
-    p: "p",
-    section: "section",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!Xclude) _missingMdxReference("Xclude", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h3",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "anlaysis-trace-active-stack",
-      children: "액티브 스택"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
-      product: "kubernetes",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "analysis-tx-active-stack.png",
-        desc: "액티브 스택"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["액티브 스택을 수집한 구간과 시간, 관련한 클래스, 메소드 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06133",
-          className: "uitext"
-        }), " 탭을 선택하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["트랜잭션 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-                alt: "액티브 스택 아이콘",
-                src: (__webpack_require__(11234)/* ["default"] */ .A) + "",
-                width: "20",
-                height: "20"
-              }), " 아이콘이 표시된 항목에서 확인할 수 있습니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["액티브 스택에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "analysis-apm#active-stack",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            }), "\n"]
-          }), "\n"]
-        })
-      })]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-      product: "kubernetes",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "analysis-tx-active-stack.png",
-        desc: "액티브 스택"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["액티브 스택을 수집한 구간과 시간, 관련한 클래스, 메소드 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06133",
-          className: "uitext"
-        }), " 탭을 선택하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["트랜잭션 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-                alt: "액티브 스택 아이콘",
-                src: (__webpack_require__(11234)/* ["default"] */ .A) + "",
-                width: "20",
-                height: "20"
-              }), " 아이콘이 표시된 항목에서 확인할 수 있습니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["액티브 스택에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "../java/analysis-apm#active-stack",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            }), "\n"]
-          }), "\n"]
-        })
-      })]
     })]
   });
 }
@@ -953,7 +820,10 @@ function _createMdxContent(props) {
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "multi_transaction",
             className: "uitext"
-          }), ", 에러 항목을 구분하여 목록을 확인할 수 있습니다."]
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "error",
+            className: "uitext"
+          }), " 항목을 구분하여 목록을 확인할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1078,10 +948,9 @@ function _createMdxContent(props) {
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, Link} = _components;
+  }, {Cmdname, ImgLang} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!Link) _missingMdxReference("Link", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -1097,18 +966,6 @@ function _createMdxContent(props) {
         sid: "TTL06209",
         className: "uitext"
       }), " 창이 나타납니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "info",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["지난 2023년 7월 25일, 릴리스된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06209",
-          className: "uitext"
-        }), " 기능의 변경 사항을 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "../reference/changes-analysis-trace",
-          target: "_blank",
-          children: "다음 문서"
-        }), "를 참조하세요."]
-      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "tip",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3628,7 +3485,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 88408:
+/***/ 88118:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3641,7 +3498,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58717);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_basic_usage_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97092);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_analysis_tx_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(60499);
@@ -3649,21 +3506,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(45434);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(90661);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(18313);
-/* harmony import */ var _common_items_dashboard_hitmap_active_stack_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(15299);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(69958);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(9081);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(10404);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(90605);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(99550);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(26805);
-/* harmony import */ var _common_items_display_or_hide_table_column_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(29152);
-/* harmony import */ var _common_items_change_order_table_column_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(2878);
-/* harmony import */ var _common_items_set_display_table_contents_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(91592);
-/* harmony import */ var _common_items_additional_function_title_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(67964);
-/* harmony import */ var _common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(13522);
-/* harmony import */ var _common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(46429);
-/* harmony import */ var _common_items_add_func_set_table_column_mdx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(49646);
-/* harmony import */ var _common_items_add_func_download_date_mdx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(10707);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(69958);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9081);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(10404);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(90605);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(99550);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(26805);
+/* harmony import */ var _common_items_display_or_hide_table_column_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(29152);
+/* harmony import */ var _common_items_change_order_table_column_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(2878);
+/* harmony import */ var _common_items_set_display_table_contents_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(91592);
+/* harmony import */ var _common_items_additional_function_title_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(67964);
+/* harmony import */ var _common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(13522);
+/* harmony import */ var _common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(46429);
+/* harmony import */ var _common_items_add_func_set_table_column_mdx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(49646);
+/* harmony import */ var _common_items_add_func_download_date_mdx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(10707);
 
 
 const frontMatter = {
@@ -3671,7 +3527,7 @@ const frontMatter = {
 	title: '히트맵 - 트레이스 분석',
 	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
 	tags: [
-		'Python',
+		'PHP',
 		'애플리케이션',
 		'히트맵',
 		'트레이스'
@@ -3679,21 +3535,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/dashboard-hitmap-trace",
+  "id": "php/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
   "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
-  "source": "@site/docs/python/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/python/dashboard-hitmap-trace",
+  "source": "@site/docs/php/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/php/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/php/dashboard-hitmap-trace.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "Python",
-      "permalink": "/whatap-docs/tags/python"
+      "label": "PHP",
+      "permalink": "/whatap-docs/tags/php"
     },
     {
       "inline": true,
@@ -3717,20 +3573,20 @@ const metadata = {
     "title": "히트맵 - 트레이스 분석",
     "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
     "tags": [
-      "Python",
+      "PHP",
       "애플리케이션",
       "히트맵",
       "트레이스"
     ]
   },
-  "sidebar": "pySidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/python/dashboard-active-transaction"
+    "permalink": "/whatap-docs/php/dashboard-active-transaction"
   },
   "next": {
     "title": "Flex 보드",
-    "permalink": "/whatap-docs/python/flex-board"
+    "permalink": "/whatap-docs/php/flex-board"
   }
 };
 const assets = {
@@ -3743,7 +3599,6 @@ const assets = {
 /*### 테이블 뷰*/
 /*### 레코드 요약*/
 /*### 트리뷰*/
-/*### 액티브 스택*/
 /*### 멀티 트랜잭션*/
 /*### 메소드 요약*/
 /*### SQL 요약*/
@@ -3781,28 +3636,27 @@ const assets = {
 
 
 
-
-const toc = [..._common_items_dashboard_hitmap_trace_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_basic_usage_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_analysis_tx_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_dashboard_hitmap_active_stack_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_display_or_hide_table_column_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_change_order_table_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_set_display_table_contents_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_additional_function_title_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM, ..._common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_20__/* .toc */ .RM, ..._common_items_add_func_set_table_column_mdx__WEBPACK_IMPORTED_MODULE_21__/* .toc */ .RM, ..._common_items_add_func_download_date_mdx__WEBPACK_IMPORTED_MODULE_22__/* .toc */ .RM];
+const toc = [..._common_items_dashboard_hitmap_trace_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_basic_usage_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_analysis_tx_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_display_or_hide_table_column_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_change_order_table_column_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_set_display_table_contents_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_additional_function_title_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM, ..._common_items_add_func_set_table_column_mdx__WEBPACK_IMPORTED_MODULE_20__/* .toc */ .RM, ..._common_items_add_func_download_date_mdx__WEBPACK_IMPORTED_MODULE_21__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_basic_usage_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
       level: 2
     }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_analysis_tx_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {
       level: 2
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_active_stack_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_display_or_hide_table_column_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_display_or_hide_table_column_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {
       level: 4
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_change_order_table_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_change_order_table_column_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {
       level: 4
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_display_table_contents_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_display_table_contents_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {
       level: 4
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_additional_function_title_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_additional_function_title_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {
       level: 2
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_add_func_set_table_column_mdx__WEBPACK_IMPORTED_MODULE_21__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_add_func_download_date_mdx__WEBPACK_IMPORTED_MODULE_22__/* ["default"] */ .Ay, {})]
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_add_func_set_table_column_mdx__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_add_func_download_date_mdx__WEBPACK_IMPORTED_MODULE_21__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_23__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_22__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
