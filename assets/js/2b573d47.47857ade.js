@@ -62,8 +62,16 @@ const toc = [{
   "id": "preview-280a2",
   "level": 2
 }, {
+  "value": "<code>Server</code>",
+  "id": "server",
+  "level": 3
+}, {
   "value": "<code>Browser</code>",
   "id": "browser",
+  "level": 3
+}, {
+  "value": "<code>Network</code>",
+  "id": "network",
   "level": 3
 }, {
   "value": "Preview 2.8.0.a1",
@@ -79,7 +87,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Server</code>",
-  "id": "server",
+  "id": "server-1",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -181,6 +189,33 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "server",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Server"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_serverSetting",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_bootEnvironmentVariable",
+            className: "uitext"
+          }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_serverEnvironmentVariable",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "확장 아이콘",
+            src: (__webpack_require__(34327)/* ["default"] */ .A) + "",
+            width: "20",
+            height: "20"
+          }), " 에이전트 목록 확장 버튼을 선택하면 화면 상단의 메뉴명이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentLogViewer",
+            className: "b500"
+          }), "로 변경되는 문제 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "browser",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Browser"
@@ -234,6 +269,29 @@ function _createMdxContent(props) {
               }), " 섹션의 UI 개선"]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "network",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Network"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Changed"
+          }), " 사용자 언어가 영어일 때, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentInstall",
+            className: "uitext"
+          }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL07943",
+            className: "uitext"
+          }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "Version"
+          }), "을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Kernel Version"
+          }), "으로 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -431,7 +489,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "server",
+          id: "server-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Server"
           })
@@ -868,6 +926,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K");
+
+/***/ }),
+
+/***/ 34327:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjAxMDI0IDE3Ljk5NDVWMTUuOTk0OUw1LjQ3NzM2IDE1Ljk5NDlMMTAuMDcwOSAxMS40MDE0TDguNjU2NjggOS45ODcxNUwzLjk5OTYxIDE0LjY0NDJMMy45OTk5NCAxMS45OTQ3TDEuOTk5OTQgMTEuOTk0OEwxLjk5OTQ1IDE3Ljk5NDVMOC4wMTAyNCAxNy45OTQ1Wk0xMS45ODk2IDEuOTg3NTNWMy45ODcxMkwxNC42NTY3IDMuOTg3MTJMOS45OTk3OSA4LjY0NDAzTDExLjQxNCAxMC4wNTgyTDE2LjAwMDIgNS40NzJMMTUuOTk5OSA3Ljk4NzI5TDE3Ljk5OTkgNy45ODcyNEwxOC4wMDA0IDEuOTg3NDlMMTEuOTg5NiAxLjk4NzUzWiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K");
 
 /***/ }),
 
