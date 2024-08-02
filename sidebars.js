@@ -3877,6 +3877,7 @@ const sidebars = {
               label: '인스턴스 성능 관리 활용',
               id: 'best-practice-guides/about-instance-performance-analysis'
             },
+            'best-practice-guides/about-tcp-port',
           ]
         }
       ]
