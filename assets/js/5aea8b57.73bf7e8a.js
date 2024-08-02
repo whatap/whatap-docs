@@ -70,6 +70,10 @@ const toc = [{
   "id": "database",
   "level": 3
 }, {
+  "value": "<code>Server</code>",
+  "id": "server",
+  "level": 3
+}, {
   "value": "Service 2.7.5",
   "id": "service-275",
   "level": 2
@@ -143,7 +147,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Server</code>",
-  "id": "server",
+  "id": "server-1",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -222,6 +226,22 @@ function _createMdxContent(props) {
             sid: "TTL06224",
             className: "uitext"
           }), " 조회 시 화이트 아웃 현상 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "server",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Server"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_lab",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_alertTemplate",
+            className: "uitext"
+          }), " 메뉴에서 조직 내 알림 설정 권한이 있는 프로젝트에 알림 설정 복사 불가 오류 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1077,7 +1097,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "server",
+          id: "server-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Server"
           })
