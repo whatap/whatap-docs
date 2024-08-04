@@ -33,17 +33,17 @@ Goライブラリー別のエージェント設定を案内します。
 
 - **grpc_profile_ignore_method** <span class='type'>String</span>
 
-  設定した値に対するmethodを収集致しません。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
+  設定した値に対するMethodを収集しません。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
 
 - **grpc_profile_stream_method** <span class='type'>String</span>
 
-  設定したstream methodを別途のトランザクションで構成します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 長時間続くstream接続に対して、それぞれのmethod呼び出しを単独トランザクションとして処理します。 ヒットマップ、トランザクション検索からfull methodで検索できます。
+  設定したStream methodを別途のトランザクションで構成します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 長時間続くstream接続に対して、それぞれのmethod呼び出しを単独トランザクションとして処理します。 ヒットマップ、トランザクション検索からfull methodで検索できます。
 
 - **grpc_profile_stream_identify** <span class='type'>Boolean</span>
 
   既定値`false`
 
-  Stream full methodをトランザクション名で収集し、同一のfull methodに対してclient、 serverを区分できる接頭語を追加します。
+  Stream full methodをトランザクション名で収集し、同じFull methodに対してClientとServerを区分するための接頭辞を追加します。
 
   ```ini title='whatap.conf'
   grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]

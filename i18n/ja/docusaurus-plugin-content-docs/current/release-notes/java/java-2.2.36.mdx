@@ -1,0 +1,29 @@
+---
+id: java-2_2_36
+title: Java Agent v2.2.36
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_35
+displayed_sidebar: releaseSidebar
+---
+
+2024年07月18日
+
+- <Status>Feature</Status>ウィービングプラグインコンパイルバージョンとユーザーコードターゲットバージョンが異なる場合、原本クラスを返す設定を追加
+
+  ```ini title="whatap.conf"
+  # ignore agent compiled jdk version and application target jdk version
+  # default: true 
+  # requires restart
+  # false: return original class and abort tracing class
+  weaving_ignore_compile_version_enabled=true
+  ```
+
+- <Status>Fixed</Status> Systemログを残す場合、他のトランザクションにそのログが含まれる問題を修正
+
+  > 例）System.out, System.err, hibernate Systemログ (`org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement`)
+
+- <Status>Fixed</Status> logback、log4jの使用時にException stackを含むログが発生した場合、ユーザーのログコンテンツを収集できない問題を修正
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.36" />

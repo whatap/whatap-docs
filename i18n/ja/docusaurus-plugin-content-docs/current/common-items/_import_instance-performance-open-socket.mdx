@@ -1,0 +1,21 @@
+## ソケットオプーン数 {#side_openSocket}
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_openSocket" className="uitext" />
+
+<ImgLang img='ipa-open-socket-java.png' desc='ソケットオプーン数' />
+
+JavaアプリケーションがTCP機能を実行するためにオープンしたソケット(Socket)情報が確認できます。これにより、アプリケーションインスタンスがデータベースなど、どの外部システムに依存するか、ネットワーク依存性(Network Dependency)を照会できます。 また、誰とアウトバウンドコールを行っているかを追跡できます。 これらの情報は、TCP通信の効率性、安定性、及び性能最適化のために重要です。 
+
+- <Cmdname sid="count" className="uitext" />: 外部システムへの接続試行回数を意味します。
+
+- <Cmdname sid="stack" className="uitext" />: <Cmdname sid="get_stack" className="uitext" />を選択して、次の接続時に確保したスタックを照会・削除できます。
+
+<Cmdname sid="count" className="uitext" />基準にソートした後、<Cmdname sid="host" className="uitext" />及び<Cmdname sid="port" className="uitext" />を確認して、どのようなサービスまたはシステムとの接続が多いかを確認できます。 以後、<Cmdname sid="stack" className="uitext" />を確保して詳細を照会してみてください。
+
+:::note 
+
+**データベースとコネクションプール**
+
+例えば、3306<Cmdname sid="port" className="uitext" />の<Cmdname sid="count" className="uitext" />が増加時に、コネクションプールを使用しなかったり、あるいはコネクションプールを頻繁に切って作り直すなど、MySQLのコネクション管理が正しく行われていない状況である可能性があります。 該当3306<Cmdname sid="port" className="uitext" />がどのようなコード経路で使用されているかを把握するため<Cmdname sid="stack" className="uitext" />を確保して追跡できます。
+
+:::

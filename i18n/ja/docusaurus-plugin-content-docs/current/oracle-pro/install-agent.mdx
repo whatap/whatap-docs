@@ -1,0 +1,148 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - Oracle Pro
+  - データベース
+  - エージェント
+---
+
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Steps>
+
+<Createprojectv2 />
+
+## 構成図の確認
+
+Oracle Proモニタリングのためにデータベースサーバーにエージェントをインストールする構成です。
+
+<ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='' />
+
+ファイアウォールの設定は必須であり、すべてのデータは暗号化されて送信されます。 WhaTap収集サーバーとの通信には6600ポートを使用します。
+
+{/* 모니터링용 계정 생성 */}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
+
+- 一般的な場合
+
+  ```sql title="SQL"
+  create user whatap identified by DB_Password;
+  grant create session to whatap;
+  grant select any dictionary to whatap;
+  ```
+
+- 12c以降で、マルチテナントの場合: 接頭語`c##`を追加
+
+  ```SQL title="SQL"
+  create user c##whatap identified by DB_Password;
+  grant reate session to c##whatap;
+  grant select any dictionary to c##whatap;
+  alter user c##whatap set container_data = ALL container = CURRENT;
+  ```
+
+- Kill sessionを使用する場合
+
+  ```SQL title="SQL"
+  grant alter system to whatap;
+  ```
+
+import Accesskey from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskey />
+
+## エージェントダウンロード
+
+エージェントのインストール画面で、ユーザーの環境と一致するOracleバージョンを選択し<Cmdname sid="download" className="uitext" />ボタンを選択してください。
+
+## エージェント設定
+
+エージェントはOracleアカウントでのインストールを推奨し、Oracle接続環境変数が事前に設定されている必要があります。 以下の手順でエージェント設定を進めてください。
+
+:::note
+
+**Oracleアカウント以外のユーザーアカウントからインストールする場合**
+
+- Oracleこの生成した共有メモリ(shared memory)の読み込み権限(`read`)が必要です。
+
+- `ipcs -m`コマンドを実行した結果で`perms`値が600であれば、Oracleアカウントのみインストールできます。
+
+- `ipcs -m`コマンドを実行した結果で`perms`値が640であれば、同じグループに属する別のアカウントもインストールできます。
+
+:::
+
+### whatap.conf設定 {#setting-whatapconf}
+
+圧縮を解除したフォルダに移動し、*whatap.conf*ファイルを確認します。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、`ipckey`を入力します。  
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+ipckey={ipckey}
+```
+
+:::tip
+
+- `ipckey`オプション値は、`ipcs -m`コマンドを使用して取得できます。 モニタリングするOracleのKey値(16進数)です。
+
+- 1つのサーバーに複数のデータベースをインストールした場合は、[次の文書](check-ipckey)を参照して`ipckey`を入力してください。
+
+:::
+
+### 初期設定ファイル作成{#createinitialsettingfile}
+
+初期設定ファイルを作成するには、データベースに**SYS**アカウント(または同ランクのアカウント)にアクセスして情報を受け取り、処理します。 アカウントとパスワードは保存されません。
+
+```sh title="BASH"
+./dmxinit.sh {sys_user} {sys_password}
+```
+
+コマンドを実行した後、次の5つのファイルが作成されます。
+
+> *dmx.init*、*class.init*、*dbname.init*、*stat.init*、*event.init*
+
+:::note
+
+- `sys_user`と`sys_password`なしで接続できるのであれば(`sqlplus '/as sysdba'`接続のように)、`sys_user`と`sys_password`を引数として追加する必要はありません。
+
+  ```sh title="BASH"
+  ./dmxinit.sh
+  ```
+
+- `sys_user`と`sys_password`文字列に特殊文字が含まれている場合は、各特殊文字の前にエスケープ文字(Escape Character、`\`)を追加してください。
+
+  ```sh title="BASH"
+  ./dmxinit.sh whatap whatap\!\@pwd
+  ```
+
+:::
+
+### データベースユーザーファイルの生成 {#create-db-user}
+
+<DBuserDesc name='default'/>
+
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+
+<Dbcreatedbuserfilebody />
+
+{/*## 모니터링 시작하기*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
+
+<Dbrunagent />
+
+</Steps>
+
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

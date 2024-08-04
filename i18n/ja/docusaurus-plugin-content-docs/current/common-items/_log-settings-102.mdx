@@ -4,7 +4,7 @@
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql,oracle-v2,oracle-pro'>
+<InDoc product='log,postgresql,mysql,oracle,oracle-pro'>
 
 ホーム画面 > プロジェクト選択 > <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
 
@@ -34,19 +34,19 @@
 
 </InDoc>
 
-<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
+<InDoc product='postgresql,mysql,oracle,oracle-pro'>
 
 <ImgLang img='log-getting-started-db.png' desc='ログモニタリングの開始'/>
 
 </InDoc>
 
-<Xclude product='postgresql,mysql,oracle-v2,oracle-pro'>
+<Xclude product='postgresql,mysql,oracle,oracle-pro'>
 
 上段で<Cmdname sid="getting_started_log_monitoring" className="uitext" />タブを選択してください。 ![WhaTap Docsアイコン](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" />アイコンと<Cmdname sid="log_monitoring_plan" className="uitext" />ボタンを選択すると、関連したガイド画面に移動します。 
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
+<InDoc product='postgresql,mysql,oracle,oracle-pro'>
 
 上段で<Cmdname sid="getting_started_log_monitoring" className="uitext" />タブを選択してください。 ![WhaTap Docsアイコン](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" />アイコンを選択すると、関連するガイド画面に移動します。 
 
@@ -65,13 +65,13 @@
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql,oracle-v2,oracle-pro'>
+<InDoc product='log,postgresql,mysql,oracle,oracle-pro'>
 
 ![number 1](/img/number-01.png)領域でエージェント設定を確認し<Cmdname sid="use_log_monitoring" className="uitext" />トグルボタンでログモニタリングの有効化・無効化を設定してください。
 
 #### エージェント設定確認 {#log-check-agent-settings}
 
-<Xclude product='postgresql,mysql,oracle-v2,oracle-pro'>
+<Xclude product='postgresql,mysql,oracle,oracle-pro'>
 
 ログモニタリングを開始するために、エージェントのバージョンと設定情報を確認してください。 **_エージェント設定確認_**メニューを選択して、説明通りにプロセスを進めてください。
 
@@ -89,7 +89,7 @@
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
+<InDoc product='postgresql,mysql,oracle,oracle-pro'>
 
 ログモニタリングを開始するために、エージェントのバージョンと設定情報を確認してください。 エージェント設定に関する詳細は[次の文書](log-db)を参照してください。
 
@@ -99,13 +99,13 @@
 
 <Cmdname sid="use_log_monitoring" className="uitext" />メニューを選択して、ログモニタリングの有効化または無効化を設定してください。
 
-<Xclude product="postgresql,mysql,oracle-v2,oracle-pro">
+<Xclude product="postgresql,mysql,oracle,oracle-pro">
 
 <ImgLang img='log-start.png' desc='ログモニタリングを開始する'/>
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,oracle-v2,oracle-pro'>
+<InDoc product='postgresql,mysql,oracle,oracle-pro'>
 
 <ImgLang img='log-start-db.png' desc='ログモニタリングの開始'/>
 
@@ -190,11 +190,11 @@
 
 ### 設定項目 {#log-parser-comp}
 
-| 設定値    | 説明                                                                                                 | その他      |
-| ------ | -------------------------------------------------------------------------------------------------- | -------- |
-| カテゴリ   | パターンを適用するカテゴリです。                                                                                   | required |
-| ログ検出条件 | フィルターとして適用する検索キー、検索値を入力します。 ログ検出条件を満たすログデータにパターンを適用します。 ログ検出条件を入力しない場合、すべてのログを対象にパターンを適用します。       | optional |
-| パターン   | ログを構文解析(parsing)するパターンです。 作成したパターンに合わせて構文解析を行い、インデックスを作成します。 GROK、正規表現構文に対応します。 | required |
+| 設定値    | 説明                                                                                               | その他      |
+| ------ | ------------------------------------------------------------------------------------------------ | -------- |
+| カテゴリ   | パターンを適用するカテゴリです。                                                                                 | required |
+| ログ検出条件 | フィルターとして適用する検索キー、検索値を入力します。 ログ検出条件を満たすログデータにパターンを適用します。 ログ検出条件を入力しない場合、すべてのログを対象にパターンを適用します。     | optional |
+| パターン   | ログを構文解析(parsing)するパターンです。 作成したパターンに合わせて構文解析を行い、インデックスを作成します。 GROKと正規表現に対応します。 | required |
 
 ### パーサー一覧 {#log-parser-list-1st}
 

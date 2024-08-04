@@ -1,0 +1,42 @@
+## ヒープヒストグラム {#side_heapHistogram}
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_heapHistogram" className="uitext" />
+
+<ImgLang img='ipa-heap-histogram-java.png' desc='ヒープヒストグラム' />
+
+JVM(Java仮想マシン)のメモリにロードされているヒープ占有オブジェクトの状況(ヒープメモリ上のオブジェクト別サイズ)を照会することができます。 つまり、オブジェクトそのもののサイズを照会します。 <Cmdname sid="count" className="uitext" />カラムを通じて主要オブジェクトの数を確認することが容易です。 
+
+:::note 
+
+GC前まで維持されるオブジェクトの数を照会するため、実際に使用されていなくても、該当一覧には表示されます。 正確な照会のために***システムGC***実行後にその一覧を確認することをお勧めします。 ***システムGC***については、[次の文書](#side_systemGarbageCollection)を参照してください。
+
+:::
+
+:::note
+
+Java 6~8バージョンでは、JVMオプションなしで標準対応しますが、一部のJavaバージョンによっては次のようにJVMオプションを適用する必要があります。
+
+- Java 9 ~ Java 15バージョン
+
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  ```
+
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+  ```
+
+- Java 16バージョン以降
+
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+  ```
+
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+  ```
+
+- Java 5以前の旧バージョン、IBM Javaには対応していません。
+
+:::

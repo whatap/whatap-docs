@@ -10,6 +10,16 @@ tags:
 displayed_sidebar: learningSidebar
 ---
 
+:::note 
+
+次のJava公式文書へのリンクを参照してください。 
+
+- [Java SE 22](https://docs.oracle.com/en/java/javase/22/)
+
+- [Java Memory Usage](https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryUsage.html)
+
+:::
+
 アプリケーションプロジェクトのヒープメモリ関連のメトリクスとメトリクス通知設定について案内します。
 
 ## ヒープメモリメトリクス{#heap-memory-intro}
@@ -28,6 +38,8 @@ displayed_sidebar: learningSidebar
 
 #### Heap Memory
 
+`app_proc_counter`カテゴリーの選択後、確認できます。
+
 - **Heapコミット**`heap_committed`
 
   JVMが使用できるようにコミットされたヒープメモリを意味します。
@@ -36,15 +48,21 @@ displayed_sidebar: learningSidebar
 
   JVMがメモリ管理のためにOSにリクエストした最初のヒープメモリを意味します。
 
-- **Heap最大使用量**`heap_max`
+- **Heap最大サイズ**`heap_max`
 
-  JVMがメモリ管理に使用できる最大ヒープメモリを意味します。 
+  JVMがメモリ管理に使用できる最大ヒープメモリを意味します。
 
 - **Heap使用量**`heap_used`
 
-  JVMで使用されたヒープメモリを意味します。 
+  JVMで使用中のヒープメモリを意味します。
+
+- **Heap総使用量**`heap_use`
+
+  JVMが割り当てられたヒープメモリの総量を意味します。
 
 #### Non-heap Memory
+
+`java_memory`カテゴリーの選択後、確認できます。
 
 - **Heapコミット**`nonheap_committed`
 
@@ -54,9 +72,15 @@ displayed_sidebar: learningSidebar
 
   JVMがメモリ管理のためにOSにリクエストした最初の非ヒープメモリを意味します。
 
-- **Non-heap最大使用量**`nonheap_max`
+- **Non-heap総使用量**`nonheap_max`
 
-  JVMがメモリ管理に使用できる最大非ヒープメモリを意味します。 
+  JVMでメモリ管理に使用できる最大の非ヒープメモリ使用量を意味します。 
+
+  :::note 
+
+  Metaspace及びJITコードキャッシュ最大メモリサイズが定義されていない場合は`-1`を返します。 
+
+  :::
 
 - **Non-heap使用量**`nonheap_used`
 
@@ -68,17 +92,17 @@ displayed_sidebar: learningSidebar
 
 **_メトリクスチャート_**メニューで確認できるヒープメモリー関連指標を案内します。
 
-- **Heapサイズ**`heap_tot`
+- **Heap最大サイズ**`heap_max`
 
-  JVMの総メモリを意味します。 
+  JVMがメモリ管理に使用できる最大ヒープメモリを意味します。 
+
+- **Heap総使用量**`heap_use`
+
+  JVMが割り当てられたヒープメモリの総量を意味します。
 
 - **Heap使用量**`heap_use`
 
   JVMで使用中のヒープメモリを意味します。 
-
-- **Heap最大使用量**`heap_max`
-
-  JVMが割り当てられる最大メモリを意味します。
 
 - **Heap Perm領域使用量**`heap_perm`
 
@@ -90,7 +114,7 @@ displayed_sidebar: learningSidebar
 
 :::note
 
-アプリケーション指標については[次の文書](../java/metrics-app)を参照してください。 
+アプリケーション指標については[次の文書](../java/metrics-app)を参照してください。
 
 :::
 

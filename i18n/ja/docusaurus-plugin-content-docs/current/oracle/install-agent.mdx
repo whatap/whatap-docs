@@ -4,14 +4,14 @@ title: エージェントのインストール
 description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 tags:
   - Oracle
-  - データベースモニタリング
+  - データベース
   - エージェント
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import TR from '@site/src/components/TR';
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import V2Note from "../common-items/_import_v2-note.mdx";
+
+<V2Note product="Oracle" />
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
@@ -20,6 +20,8 @@ import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 <Agentsignupguide />
 
 <Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
+
+<Steps>
 
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
@@ -38,13 +40,12 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
 
    ```ini title='whatap.conf'
-   license=プロジェクトアクセスキー
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
-
+   license={AccessKey}
+   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
    dbms=oracle
-   db={DB名(sid)}
-   db_ip={DBサーバーのIPアドレス}
-   db_port={DBサーバーのポート番号}
+   db={DB_Name(sid)}
+   db_ip={DB_Server_IP}
+   db_port={DB_Server_Port}
    ```
 
 4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
@@ -63,23 +64,28 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 
 <Dbcreatemonitoringaccount />
 
-{/* Oracle */}
+- 一般的な場合
 
-```bash showLineNumbers
-# 一般的な場合
-create user whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
-grant create session to whatap;
-grant select any dictionary to whatap;
- 
-# 12c以降でマルチテナントの場合 (接頭語はc##)
-create user c##whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
-grant create session to c##whatap;
-grant select any dictionary to c##whatap;
-alter user c##whatap set container_data = ALL container = CURRENT;
- 
-# kill session機能の使用時
-grant alter system to whatap
-```
+  ```sql
+  create user whatap identified by DB_PASSWORD;
+  grant create session to whatap;
+  grant select any dictionary to whatap;
+  ```
+
+- 12c以降で、マルチテナントの場合(接頭語c##)
+
+  ```sql
+  create user c##whatap identified by DB_PASSWORD;
+  grant create session to c##whatap;
+  grant select any dictionary to c##whatap;
+  alter user c##whatap set container_data = ALL container = CURRENT;
+  ```
+
+- kill session機能を使用する場合
+
+  ```sql
+  grant alter system to whatap
+  ```
 
 <details>
 
@@ -137,7 +143,7 @@ grant alter system to whatap
 
 </details>
 
-## DBユーザーファイルの作成{#create-db-user}
+## データベースユーザーファイルの生成 {#create-db-user}
 
 <DBuserDesc />
 
@@ -154,3 +160,9 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
+
+</Steps>
+
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

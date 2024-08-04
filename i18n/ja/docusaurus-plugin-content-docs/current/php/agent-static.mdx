@@ -66,6 +66,14 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
   | 2 | ドメインおよびパス(http://www.aa.com/aa.php) |
   | 3 | パス (_/aa.php_)                      |
 
-- **whatap.okind** <span class='type'>String</span>
+- **whatap.stat_ipurl_enabled** <span class='type'>Boolean</span>
 
-  グループトポロジーにランダムに付与します。複数のエージェントを纏めて指定し、そのグループ名でトポロジーを確認できます。
+  既定値`false`
+
+  IPアドレスごとのトランザクション統計を収集できます。
+
+- **whatap.stat_zip_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  収集した統計データを圧縮転送するように設定できます。
