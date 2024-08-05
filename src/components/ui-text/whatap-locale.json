@@ -55217,10 +55217,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest for each object from the past",
+    "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55512,7 +55512,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55547,8 +55547,8 @@
   },
   "CNT08055": {
     "en": "Apply chart zoom in batch",
-    "ja": "チャート時間の一括適用",
-    "ko": "차트 시간 일괄 적용",
+    "ja": "チャートズームイン一括適用",
+    "ko": "차트 줌인 일괄 적용",
     "zh": "Apply chart zoom in batch",
     "service_id": "CNT08055"
   },
@@ -55714,10 +55714,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56163,8 +56163,8 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
-    "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
+    "ja": "チャートをドラッグすると、すべてのウィジェットのチャートがズームインされます。",
+    "ko": "차트 드래그 시 모든 위젯들의 차트가 줌인됩니다.",
     "zh": "All widget charts will zoom in when you drag a chart.",
     "service_id": "CNT08143"
   },
@@ -56246,10 +56246,10 @@
     "service_id": "NTC08154"
   },
   "BTN08155": {
-    "en": "Time batch reset",
-    "ja": "時間一括初期化",
-    "ko": "시간 일괄 초기화",
-    "zh": "Time batch reset",
+    "en": "Reset Zoom",
+    "ja": "ズーム初期化",
+    "ko": "줌 초기화",
+    "zh": "Reset Zoom",
     "service_id": "BTN08155"
   },
   "NTC08156": {
@@ -56596,10 +56596,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events",
+    "zh": "Number of events occurring",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -57045,7 +57045,7 @@
   },
   "CNT08271": {
     "en": "When creating a project, set the number of Replica yards created.",
-    "ja": "プロジェクト作成時の Replica yard の作成数を設定します。",
+    "ja": "プロジェクト作成時にReplica yardの作成数を設定します。",
     "ko": "프로젝트 생성시 Replica yard의 생성 개수를 설정합니다.",
     "zh": "When creating a project, set the number of Replica yards created.",
     "service_id": "CNT08271"
@@ -57126,76 +57126,6 @@
     "ko": "{type}({count}) 이동",
     "zh": "Move {type} ({count})",
     "service_id": "BTN08282"
-  },
-  "ITM08283": {
-    "en": "redirect time",
-    "ja": "リダイレクト時間",
-    "ko": "리다이렉트 시간",
-    "zh": "redirect time",
-    "service_id": "ITM08283"
-  },
-  "ITM08284": {
-    "en": "DNS time",
-    "ja": "DNS時間",
-    "ko": "DNS 시간",
-    "zh": "DNS time",
-    "service_id": "ITM08284"
-  },
-  "ITM08285": {
-    "en": "FirstByte Time",
-    "ja": "FirstByte時間",
-    "ko": "FirstByte 시간",
-    "zh": "FirstByte Time",
-    "service_id": "ITM08285"
-  },
-  "ITM08286": {
-    "en": "DomContentLoaded time",
-    "ja": "DomContentLoaded時間",
-    "ko": "DomContentLoaded 시간",
-    "zh": "DomContentLoaded time",
-    "service_id": "ITM08286"
-  },
-  "NTC08287": {
-    "en": "You can only enter {n} items.",
-    "ja": "{n}個までのみ入力可能です。",
-    "ko": "{n}개까지만 입력 가능합니다.",
-    "zh": "You can only enter {n} items.",
-    "service_id": "NTC08287"
-  },
-  "TTL08288": {
-    "en": "{n}quantile",
-    "ja": "{n}雰囲気",
-    "ko": "{n}분위",
-    "zh": "{n}quantile",
-    "service_id": "TTL08288"
-  },
-  "BTN08289": {
-    "en": "full screen",
-    "ja": "フルスクリーン",
-    "ko": "전체 화면",
-    "zh": "full screen",
-    "service_id": "BTN08289"
-  },
-  "NTC08290": {
-    "en": "After entering the keyword, press Enter to add it.",
-    "ja": "キーワードを入力してEnterを押して追加します。",
-    "ko": "키워드 입력 후 엔터를 눌러 추가하세요.",
-    "zh": "After entering the keyword, press Enter to add it.",
-    "service_id": "NTC08290"
-  },
-  "ITM08291": {
-    "en": "percentile",
-    "ja": "パーセンタイル",
-    "ko": "백분위",
-    "zh": "percentile",
-    "service_id": "ITM08291"
-  },
-  "TTL08292": {
-    "en": "Performance Metrics ({unit})",
-    "ja": "パフォーマンス指標（{unit}）",
-    "ko": "성능 지표 ({unit})",
-    "zh": "Performance Metrics ({unit})",
-    "service_id": "TTL08292"
   },
   "": {
     "en": "#VALUE!",
