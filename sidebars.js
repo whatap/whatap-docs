@@ -183,11 +183,6 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'java/metrics-chart-v2',
-                  className: 'newfunc'
-                },
                 'java/metrics-chart',
                 'java/metrics-search',
                 'java/metrics-detect-anormal',

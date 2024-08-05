@@ -393,16 +393,16 @@ function colsToJson(data){
     "ko": "성능 추이"
   }
 
-  rd["appDashboard"] = {
-    "en": "Application Dashboard",
-    "ja": "アプリケーション",
-    "ko": "애플리케이션 대시보드"
-  }
-  
   rd["podInitPerf"] = {
     "en": "Pod Startup Analysis",
     "ja": "Pod起動分析",
     "ko": "Pod 시작 분석"
+  }
+  
+  rd["appDashboard"] = {
+    "en": "Application Dashboard",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션 대시보드"
   }
 
   rd["server_installAgent_add_whatapRepo"] = {

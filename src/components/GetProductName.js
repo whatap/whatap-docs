@@ -10,9 +10,9 @@ export default function getProductName() {
     let location = useLocation();
     let cProd;
     if (currentLocale == 'ko') {
-        cProd = location.pathname.split("/")[2];
+        cProd = location.pathname.split("/")[1];
     } else {
-        cProd = location.pathname.split("/")[3];
+        cProd = location.pathname.split("/")[2];
     }
     
     let myProd;

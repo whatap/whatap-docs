@@ -11,8 +11,7 @@ export default function BlogSidebarDesktop({sidebar}) {
   const sideitems = useVisibleBlogSidebarItems(sidebar.items);
 
   const getItemTitle = (permalink) => {
-    console.log(sideitems);
-    const item = sideitems.find((sideitem) => sideitem.permalink.replace('/whatap-docs', '') === permalink);
+    const item = sideitems.find((sideitem) => sideitem.permalink === permalink);
     return item ? item.title : permalink;
   };
 

@@ -13,7 +13,7 @@ const config = {
   title: 'WhaTap Docs',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
-  baseUrl: '/whatap-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -43,7 +43,7 @@ const config = {
       },
     }
   },
-  trailingSlash: false,
+  // trailingSlash: false,
   // clientModules: [
   //   require.resolve('./static/js/rum.js')
   // ],
@@ -194,18 +194,26 @@ const config = {
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
       },
-      announcementBar: {
-        id: 'moniday-banner',
-        content: '<div id="moniday-banner">This document pertains to <a href="https://preview.whatap.io" target="_blank">preview.whatap.io</a> and includes content not yet released as a service version.<br/>For documentation on officially released features, please visit: <a href="https://docs.whatap.io" target="_blank">https://docs.whatap.io</a>.</div>',
-        backgroundColor: 'none',
-        textColor: '#ffffff',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'moniday-banner',
+      //   content: '<div id="moniday-banner">🎙️ 10월 19일, IT 현대화에 적합한 모니터링 플랫폼이 궁금하다면? <span id="bar"></span> <a class="btn-white-file" href="https://www.whatap.io/ko/moniDay" target="_blank">WhaTap Moni Day 신청하기</a></div>',
+      //   backgroundColor: 'none',
+      //   textColor: '#ffffff',
+      //   isCloseable: true,
+      // },
       metadata: [
         {
           name: 'keywords',
           content: 'WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere',
         },
+        {
+          name: 'naver-site-verification',
+          content: '0c21fc5664a467108fb762ade47a3f81ee9b88ed',
+        },
+        {
+          name: 'google-site-verification',
+          content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
+        }
       ],
       docs: {
         sidebar: {
