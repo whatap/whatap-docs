@@ -13,9 +13,7 @@ import TabItem from '@theme/TabItem';
 
 :::note 
 
-- EKS Fargateは、対応予定です。 
-
-- WhaTap Kubernetesエージェントの最新バージョンは、[hub.docker.com](https://hub.docker.com/r/whatap/kube_mon/tags)で確認できます。
+EKS Fargateは、対応予定です。 
 
 :::
 
@@ -33,9 +31,8 @@ import TabItem from '@theme/TabItem';
   kubectl set image -n whatap-monitoring daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent_version}
   ```
 
-- **Helmチャート基準インストール時のエージェントアプリケーションのアップデート**
+:::note
 
-  ```bash
-  # releaseアップグレード
-  helm upgrade whatap-kube-agent whatap/kube -f values.yaml
-  ```
+WhaTap Kubernetesエージェントの最新バージョンは、[hub.docker.com](https://hub.docker.com/r/whatap/kube_mon/tags)で確認できます。
+
+:::

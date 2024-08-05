@@ -8720,16 +8720,16 @@
     "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
-    "width": 1200,
-    "height": 694
+    "width": 1255,
+    "height": 943
   },
   "k8s-container-map-sum-all-ja.png": {
-    "width": 1200,
-    "height": 693
+    "width": 1256,
+    "height": 941
   },
   "k8s-container-map-sum-all.png": {
-    "width": 1200,
-    "height": 703
+    "width": 1134,
+    "height": 963
   },
   "k8s-container-map-thresholds.png": {
     "width": 870,
@@ -8756,16 +8756,16 @@
     "height": 1195
   },
   "k8s-container-sum-en.png": {
-    "width": 1200,
-    "height": 689
+    "width": 1173,
+    "height": 898
   },
   "k8s-container-sum-ja.png": {
-    "width": 1200,
-    "height": 692
+    "width": 1179,
+    "height": 900
   },
   "k8s-container-sum.png": {
-    "width": 1200,
-    "height": 689
+    "width": 1173,
+    "height": 894
   },
   "k8s-container-volume-en.png": {
     "width": 1201,
@@ -14197,7 +14197,7 @@
   },
   "sso-check-sso-info.png": {
     "width": 800,
-    "height": 397
+    "height": 377
   },
   "sso-delete-sso-key-en.png": {
     "width": 600,
@@ -14230,6 +14230,10 @@
   "sso-register-metadata-ja.png": {
     "width": 800,
     "height": 556
+  },
+  "sso-register-metadata.png": {
+    "width": 800,
+    "height": 513
   },
   "sso-service-key-en.png": {
     "width": 699,
