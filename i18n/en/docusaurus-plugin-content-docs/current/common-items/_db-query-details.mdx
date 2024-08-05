@@ -2,29 +2,37 @@
 
 <InDoc pages="instance-monitoring,multi-instance-monitoring">
 
-To check the SQL query information of the current running session, select the <span class="uitext">query</span> column in the <Cmdname sid="active_sessions" className="uitext" /> section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+To check the SQL query information of the executing session, select the **_query_** column in the <Cmdname sid="active_sessions" className="uitext" /> section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
 
 <InDoc pages="analysis-compare-top-sql">
 
-To see the detailed SQL information, select the <span class="uitext">query</span> column in the SQL ranking table. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+To see the detailed SQL information, select the **_query_** column in the SQL ranking table. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
 
 <InDoc pages="slow-query">
 
-To check the SQL query information of the current running session, select the <span class="uitext">SQL</span> column in the **_Slow Query List_** section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+To check the SQL query information of the current running session, select the **_SQL_** column in the **_Slow Query List_** section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
 
-<InDoc product="oracle-pro"><ImgLang img="db-sql-details-oracle-pro.png" desc="SQL details" /></InDoc>
+<InDoc pages="analysis-sql">
+
+If you select the **_query_** column from the SQL list at the bottom of the screen, the <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+
+</InDoc>
+
+<InDoc product="oracle-pro,oracle"><ImgLang img="db-sql-details-oracle-pro.png" desc="SQL details" /></InDoc>
 
 <InDoc product="postgresql,mysql"><ImgLang img="db-sql-details-postgresql.png" desc="SQL details" /></InDoc>
 
-<Xclude product="postgresql,mysql,oracle-pro"><ImgLang img="db-sql-details-common.png" desc="SQL details" /></Xclude>
+<Xclude product="postgresql,mysql,oracle-pro,oracle"><ImgLang img="db-sql-details-common.png" desc="SQL details" /></Xclude>
 
 - <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
+
+<InDoc product='postgresql,mysql'>
 
 - **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
 
@@ -34,15 +42,13 @@ To check the SQL query information of the current running session, select the <s
 
 - **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
-  <InDoc product='postgresql,mysql'>
-
   - **_Text_**: You can check plan information in text format.
 
   - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
 
-  </InDoc>
+</InDoc>
 
-  <InDoc product='postgresql'>
+<InDoc product='postgresql'>
 
   :::note
 
@@ -50,9 +56,9 @@ To check the SQL query information of the current running session, select the <s
 
   :::
 
-  </InDoc>
+</InDoc>
 
-  <InDoc product='mysql'>
+<InDoc product='mysql'>
 
   :::note
 
@@ -60,19 +66,23 @@ To check the SQL query information of the current running session, select the <s
 
   :::
 
-  </InDoc>
+</InDoc>
 
-<InDoc product='oracle-pro'>
+<InDoc product='oracle-pro,oracle'>
 
-- **_Bind Capture_**: You can see the values ​​of the bind variables used in SQL queries executed in the database.
+- **_Runtime Plan_**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
+
+- **_Explain Plan_**: It displays the execution plan predicted by the optimizer. It provides information such as cost, job, object name, and cardinality.
+
+- **_Plan History_**: You can check the history of the execution plans of the SQL queries executed in the database.
+
+- **_Bind Capture_**: You can see the values ​​of the bind variables used in SQL queries executed in the database. This allows you to see actual content of query executions.
 
   :::note
 
   This is a value captured in the database (`v$sql_bind_capture`), not a bind value executed in real time. If the number of cases is too large, it displays up to 100.
 
   :::
-
-- **_Plan History_**: You can check the history of the execution plans of the SQL queries executed in the database.
 
 </InDoc>
 

@@ -1,17 +1,96 @@
 Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />
 
-You can view the maximum capacity and usage for each tablespace over time. It is provided in the form of a graph chart, and you can check the trend data from 1 day to 3 weeks ago.
+This menu allows you to monitor and manage the usage status of the database tablespace. This menu provides a visual overview of the total size and usage of the tablespace, and allows you to check the detailed usage history.
 
-<ProdImg img='db-stat-table-space.png' desc='' />
+- You can visually check the changes in tablespace size and usage over time.
 
-1. Set the time to search in <Cmdname sid="time" className="uitext" />.
+- It provides the details on the total size, used amount, and used percentage for each tablespace.
 
-2. Select an instance name to view the trend data of the instance.
+- You can check the sizes of the top 50 segments.
+
+By monitoring the usage of tablespaces in real time, you can check the used amount and manage its appropriate capacity. Trace the tablespaces and segments with high usage and then take measures for capacity management and performance optimization. You can also detect and respond to excessive tablespace usage in advance.
+
+## Before use
+
+To collect tablespace sizes, you need to set the database roles and agent options. Segment sizes are collected once a day, and the settings must be completed as follows.
+
+### DB roles configuration
+
+To collect segment sizes, assign the monitoring users appropriate database roles. Use the following SQL command to set the roles.
+
+```sql title="SQL"
+grant select any dictionary to monitoring_user;
+-- or --
+grant select on dba_segments to monitoring_user;
+```
+
+### Agent CONFIG.
+
+You can set the criteria for collecting segment sizes through the agent options. The default setting is to collect segments greater than 10 MB every day at 5:00 am.
+
+```ini title="whatap.conf"
+segments_min_size=10
+segments_hour=5
+```
+
+## Basic screen guide
+
+<ProdImg img='db-stat-table-space.png' desc='Tablespace size' />
+
+1. In <Cmdname sid="time" className="uitext" />, set the period to be analyzed.
+
+2. In <Cmdname sid="instance" className="uitext" />, select an instance of the database to be analyzed.
 
 3. Select ![Search icon](/img/ico-btn-search.png).
 
 :::note
 
-You can select a lookup time (up to 3 weeks). Select the clock display area to query a random date and time. If you click the date and time text area, the selectable options for the date and time appear.
+- The search period can be set up to 62 days. If you search for more than 3 days, the graph displays the daily average.
+
+- You can select a lookup time (up to 3 weeks). Select the clock display area to query a random date and time. If you click the date and time text area, the selectable options for the date and time appear.
 
 :::
+
+## Checking the changes in tablespace size {#table_space}
+
+In the <Cmdname sid="table_space" className="uitext" /> section, you can visually see the overall size and usage of the tablespaces over time.
+
+<ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" />
+
+Each color represents an individual tablespace. To see data for a specific period on the chart, hover your mouse over the chart and move it. A pop-up appears with detailed information for the period.
+
+## Tablespace size details {#table_space_detail}
+
+The <Cmdname sid="table_space_detail" className="uitext" /> section provides information details for each tablespace.
+
+<ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" />
+
+You can check the changes in usage for each tablespace by comparing the time of the first query with the current time. To check the details of a tablespace, select the ![Arrow icon](/img/ic-caret-right.svg) button next to the tablespace name.
+
+- <Cmdname sid="table_space_total" className="uitext" />: It is the total size of tablespace.
+
+- <Cmdname sid="table_space_used" className="uitext" />: It is the size currently in use.
+
+- <Cmdname sid="table_space_usage" className="uitext" />: It is the usage ratio compared to the total size.
+
+- <Cmdname sid="table_space_changed_amount" className="uitext" />: It is the change in usage at the current time compared to the first viewed time.
+
+## Checking the segment size {#TTL08164}
+
+The <Cmdname sid="TTL08164" className="uitext" /> section provides the detailed usage history by listing top 50 segment sizes.
+
+<ImgLang img="db-stat-table-space-size-top50-oracle-pro.png" desc="Tablespace size" />
+
+- <Cmdname sid="TTL08165" className="uitext" />: It is the name of the container to which the segment belongs.
+
+- <Cmdname sid="TTL08166" className="uitext" />: It is the name of the tablespace to which the segment belongs.
+
+- <Cmdname sid="TTL08167" className="uitext" />: It is the user or schema that the segment owns.
+
+- <Cmdname sid="TTL08168" className="uitext" />: It is the segment name.
+
+- <Cmdname sid="TTL08169" className="uitext" />: It is the segment type (e.g. TABLE, INDEX).
+
+- <Cmdname sid="TTL08177" className="uitext" />: It is the partition name of the segment, if applicable.
+
+- <Cmdname sid="table_space_size" className="uitext" />: It is the segment size.
