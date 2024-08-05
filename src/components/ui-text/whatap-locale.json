@@ -10758,6 +10758,20 @@
     "zh": "URL",
     "service_id": "TTL01596"
   },
+  "product_type_npm": {
+    "en": "Network",
+    "ja": "Network",
+    "ko": "Network",
+    "zh": "Network",
+    "": "Network"
+  },
+  "product_type_rum": {
+    "en": "Browser",
+    "ja": "Browser",
+    "ko": "Browser",
+    "zh": "Browser",
+    "": "Browser"
+  },
   "product_type_name": {
     "en": "Product",
     "ja": "プロダクト",
@@ -54020,10 +54034,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54952,7 +54966,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55924,10 +55938,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56365,10 +56379,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56393,10 +56407,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56610,31 +56624,31 @@
     "service_id": "CNT08210"
   },
   "TTL08211": {
-    "en": "Agent is activated",
+    "en": "Agent active",
     "ja": "エージェントがアクティブです。",
     "ko": "에이전트 활성화 상태입니다",
-    "zh": "Agent is activated",
+    "zh": "Agent active",
     "service_id": "TTL08211"
   },
   "TTL08212": {
-    "en": "Agent is inactive",
+    "en": "Agent inactive",
     "ja": "エージェントが非アクティブです。",
     "ko": "에이전트 비활성화 상태입니다",
-    "zh": "Agent is inactive",
+    "zh": "Agent inactive",
     "service_id": "TTL08212"
   },
   "TTL08213": {
-    "en": "Agent is not installed",
+    "en": "Agent not installed",
     "ja": "エージェントがインストールされていません。",
     "ko": "에이전트 미설치 상태입니다",
-    "zh": "Agent is not installed",
+    "zh": "Agent not installed",
     "service_id": "TTL08213"
   },
   "DSC08214": {
-    "en": "You can multi-select using the Shift key. ",
-    "ja": "Shift キーを使用して複数選択できます。 ",
-    "ko": "Shift key를 사용하여 다중 선택할 수 있습니다. ",
-    "zh": "You can multi-select using the Shift key. ",
+    "en": "You can use the Shift key when making multiple selections.",
+    "ja": "複数選択時に Shift キーを使用できます。",
+    "ko": "다중 선택시 Shift key를 사용할 수 있습니다.",
+    "zh": "You can use the Shift key when making multiple selections.",
     "service_id": "DSC08214"
   },
   "TLT08215": {
@@ -56645,10 +56659,10 @@
     "service_id": "TLT08215"
   },
   "TLT08216": {
-    "en": "View Deployment Details",
+    "en": "View deployment details",
     "ja": "Deployment 詳細を確認します。",
     "ko": "\bDeployment 상세 보기",
-    "zh": "View Deployment Details",
+    "zh": "View deployment details",
     "service_id": "TLT08216"
   },
   "TLT08217": {
@@ -56680,52 +56694,52 @@
     "service_id": "NTC08220"
   },
   "NTC08221": {
-    "en": "<b>Click the ‘Add URL’</b> button to register the URL.",
+    "en": "Click the <b>‘Add URL’</b> button to register the URL.",
     "ja": "<b>'URL追加'</b>ボタンをクリックしてURLを登録してください。",
     "ko": "<b>‘URL 추가하기’</b> 버튼을 클릭해서 URL을 등록하세요.",
-    "zh": "<b>Click the ‘Add URL’</b> button to register the URL.",
+    "zh": "Click the <b>‘Add URL’</b> button to register the URL.",
     "service_id": "NTC08221"
   },
   "NTC08222": {
-    "en": "For the first URL registered, it takes approximately 1 minute to confirm the data.",
+    "en": "It takes approximately 1 minute to confirm the data for the first registered URL.",
     "ja": "最初に登録したURLは、データの確認に1分程の時間がかかります。",
     "ko": "처음 등록한 URL은 데이터 확인까지 약 1분의 시간이 소요됩니다.",
-    "zh": "For the first URL registered, it takes approximately 1 minute to confirm the data.",
+    "zh": "It takes approximately 1 minute to confirm the data for the first registered URL.",
     "service_id": "NTC08222"
   },
   "TTL08223": {
-    "en": "Master Agent",
+    "en": "Master agent",
     "ja": "マスターエージェント",
     "ko": "마스터 에이전트",
-    "zh": "Master Agent",
+    "zh": "Master agent",
     "service_id": "TTL08223"
   },
   "TTL08224": {
-    "en": "Node Agent",
+    "en": "Node agent",
     "ja": "ノードエージェント",
     "ko": "노드 에이전트",
-    "zh": "Node Agent",
+    "zh": "Node agent",
     "service_id": "TTL08224"
   },
   "LNK08225": {
-    "en": "Kubernetes Agent List",
+    "en": "Kubernetes agent list",
     "ja": "Kubernetesエージェント一覧",
     "ko": "쿠버네티스 에이전트 목록",
     "zh": "Kubernetes Agent List",
     "service_id": "LNK08225"
   },
   "BTN08226": {
-    "en": "Bulk change",
+    "en": "Batch Change",
     "ja": "一括変更",
     "ko": "일괄 변경",
-    "zh": "Bulk change",
+    "zh": "Batch Change",
     "service_id": "BTN08226"
   },
   "DSC08227": {
-    "en": "Apply Widget",
+    "en": "Apply widget",
     "ja": "適用ウィジェット",
     "ko": "적용 위젯",
-    "zh": "Apply Widget",
+    "zh": "Apply widget",
     "service_id": "DSC08227"
   },
   "DSC08228": {
@@ -56736,24 +56750,24 @@
     "service_id": "DSC08228"
   },
   "DSC08229": {
-    "en": "Because the ExternalName type of Service maps to a DNS name without using a selector, there are no separately mapped Pods within the cluster.",
+    "en": "Because service type of ExternalName maps to DNS names without using selectors, there are no separately mapped Pods within the cluster.",
     "ja": "ExternalName型のServiceはselectorを使用せずにDNS名にマッピングするため、クラスタ内に別々にマッピングされるPodはありません。",
     "ko": "ExternalName 유형의 Service는 selector를 사용하지 않고 DNS 이름으로 매핑하기 때문에 클러스터 내에 별도로 매핑되는 Pod가 없습니다.",
-    "zh": "Because the ExternalName type of Service maps to a DNS name without using a selector, there are no separately mapped Pods within the cluster.",
+    "zh": "Because service type of ExternalName maps to DNS names without using selectors, there are no separately mapped Pods within the cluster.",
     "service_id": "DSC08229"
   },
   "TTL08230": {
-    "en": "Container Summary Analysis",
+    "en": "Container summary analysis",
     "ja": "コンテナ要約分析",
     "ko": "컨테이너 요약 분석",
-    "zh": "Container Summary Analysis",
+    "zh": "Container summary analysis",
     "service_id": "TTL08230"
   },
   "TTL08231": {
-    "en": "An error occurred.",
+    "en": "An error has occurred.",
     "ja": "エラーが発生しました。",
     "ko": "에러가 발생했습니다.",
-    "zh": "An error occurred.",
+    "zh": "An error has occurred.",
     "service_id": "TTL08231"
   },
   "NTC08232": {
@@ -56764,24 +56778,24 @@
     "service_id": "NTC08232"
   },
   "NTC08233": {
-    "en": "Ask another user with <b>Member Management</b> permission to set <b>Edit</b> permission.",
+    "en": "Request another user with <b>Member Management</b> permission to set <b>Edit</b> permission.",
     "ja": "<b>メンバーの管理</b>権限を持つ他のユーザーに<b>変更</b>権限の設定を要請してください。",
     "ko": "<b>멤버 관리</b> 권한이 있는 다른 사용자에게 <b>수정</b> 권한 설정을 요청하세요.",
-    "zh": "Ask another user with <b>Member Management</b> permission to set <b>Edit</b> permission.",
+    "zh": "Request another user with <b>Member Management</b> permission to set <b>Edit</b> permission.",
     "service_id": "NTC08233"
   },
   "NTC08234": {
-    "en": "For more information about setting member permissions, see the Docs.",
+    "en": "For more information about setting member permissions, see refer to the Docs.",
     "ja": "メンバー権限の設定の詳細については、WhaTap Docsを参照してください。",
     "ko": "멤버 권한 설정에 대한 자세한 내용은 Docs를 참조하세요.",
-    "zh": "For more information about setting member permissions, see the Docs.",
+    "zh": "For more information about setting member permissions, see refer to the Docs.",
     "service_id": "NTC08234"
   },
   "BTN08235": {
-    "en": "Contact us",
+    "en": "Contact",
     "ja": "お問い合わせ",
     "ko": "문의하기",
-    "zh": "Contact us",
+    "zh": "Contact",
     "service_id": "BTN08235"
   },
   "NTC08236": {
@@ -56792,10 +56806,10 @@
     "service_id": "NTC08236"
   },
   "DSC08237": {
-    "en": "If the mount point does not exist or disks added after starting the WhaTap Kubernetes agent are not displayed in the list.",
+    "en": "If the mount point does not exist or disks that are added only after starting the WhaTap Kubernetes agent are not displayed in the list.",
     "ja": "マウントポイントが存在しないか、WhaTab Kubernetesエージェントの起動後に追加されたディスクはリストに表示されません。",
     "ko": "마운트 포인트가 존재하지 않거나, 와탭 쿠버네티스 에이전트 기동 후 추가된 디스크는 목록에 표시되지 않습니다.",
-    "zh": "If the mount point does not exist or disks added after starting the WhaTap Kubernetes agent are not displayed in the list.",
+    "zh": "If the mount point does not exist or disks that are added only after starting the WhaTap Kubernetes agent are not displayed in the list.",
     "service_id": "DSC08237"
   },
   "DSC08238": {
@@ -56856,7 +56870,7 @@
   },
   "DSC08246": {
     "en": "This feature is provided by WhaTap Kubernetes agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the feature. (Current version: {currVersion})",
-    "ja": "WhaTap Kubernetes agent version <strong>{minVersion}</strong> 以降で提供される機能です。機能を使用するには、エージェントを更新してください。（現在のバージョン：{currVersion}）",
+    "ja": "WhaTap Kubernetes Monitoringエージェントのバージョン<strong>{minVersion}</strong> 以降で提供される機能です。機能を使用するには、エージェントを更新してください。（現在のバージョン：{currVersion}）",
     "ko": "와탭 쿠버네티스 에이전트 버전 <strong>{minVersion}</strong> 이상에서 제공하는 기능입니다. 기능을 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "This feature is provided by WhaTap Kubernetes agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the feature. (Current version: {currVersion})",
     "service_id": "DSC08246"
@@ -56869,10 +56883,10 @@
     "service_id": "DSC08247"
   },
   "DSC08248": {
-    "en": "It can be used starting from agent version {version}.<br/>Please update to the latest version before using.",
-    "ja": "エージェントバージョン{version}から入手可能です。<br/>最新バージョンにアップデートしてご利用ください。",
+    "en": "It can be used starting from agent version {version}.<br/>Please update to the latest version to use.",
+    "ja": "エージェントバージョン{version}から利用できます。<br/>最新バージョンにアップデートしてください。",
     "ko": "에이전트 버전 {version}부터 사용 가능합니다.<br/>최신 버전으로 업데이트 후 이용해주세요.",
-    "zh": "It can be used starting from agent version {version}.<br/>Please update to the latest version before using.",
+    "zh": "It can be used starting from agent version {version}.<br/>Please update to the latest version to use.",
     "service_id": "DSC08248"
   },
   "DSC08249": {
@@ -56891,37 +56905,37 @@
   },
   "TLT08251": {
     "en": "Please request <b>{role}</b> permission to use this feature.",
-    "ja": "この機能を利用するには、<b> {role} </b>権限をリクエストしてください。",
+    "ja": "この機能を利用するには、<b> {role} </b>権限を要請してください。",
     "ko": "이 기능을 이용하려면 <b>{role}</b> 권한을 요청하세요.",
     "zh": "Please request <b>{role}</b> permission to use this feature.",
     "service_id": "TLT08251"
   },
   "NTC08252": {
-    "en": "The current maximum viewing period for the page is {time}.",
-    "ja": "現在のページ最大検索期間は{time}です。",
+    "en": "The maximum viewing period for the current page is {time}.",
+    "ja": "現在のページに対する最大照会期間は{time}です。",
     "ko": "현재 페이지 최대 조회 기간은 {time} 입니다.",
-    "zh": "The current maximum viewing period for the page is {time}.",
+    "zh": "The maximum viewing period for the current page is {time}.",
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
     "en": "Currently, some Pod details are not being displayed. Please check whether the node where the pod is running is normal and the WhaTap node agent is running normally.",
-    "ja": "現在、一部のPod詳細情報が表示されていません。 Podが実行中のノードの状態が正常であるか、またWhaTap node agentが正常に実行されているか確認してください。",
+    "ja": "現在、一部のPod詳細情報が表示されていません。 Podが実行中のノードの状態が正常であるか、またはWhaTap nodeエージェントが正常に実行されているかを確認してください。",
     "ko": "현재 일부 Pod 상세 정보가 표시되지 않고 있습니다. Pod가 실행 중인 노드 상태가 정상인지, 또 와탭 노드 에이전트가 정상적으로 실행되고 있는지 확인해 주세요.",
     "zh": "Currently, some Pod details are not being displayed. Please check whether the node where the pod is running is normal and the WhaTap node agent is running normally.",
     "service_id": "DSC08254"
   },
   "LNK08255": {
-    "en": "Pending Pod Status",
-    "ja": "Pending Podの現状",
+    "en": "Pending Pod status",
+    "ja": "Pending Podの状況",
     "ko": "Pending Pod 현황",
-    "zh": "Pending Pod Status",
+    "zh": "Pending Pod status",
     "service_id": "LNK08255"
   },
   "CNT08256": {
@@ -56940,12 +56954,11 @@
   },
   "DSC08258": {
     "en": "In the case of {platform}, xos is built-in, so xos installation process is not required.",
-    "ja": "{platform}の場合はxosが内蔵されており、xosのインストール過程は不要です。",
+    "ja": "{platform}の場合はxosが含まれているため、xosのインストールが不要です。",
     "ko": "{platform}의 경우에는 xos가 내장되어 있어, xos 설치과정이 필요없습니다.",
     "zh": "In the case of {platform}, xos is built-in, so xos installation process is not required.",
     "service_id": "DSC08258"
   },
-<<<<<<< HEAD
   "TTL08259": {
     "en": "chart type",
     "ja": "チャートタイプ",
@@ -57184,8 +57197,6 @@
     "zh": "Performance Metrics ({unit})",
     "service_id": "TTL08292"
   },
-=======
->>>>>>> parent of 6c2db3f4c7f (update images)
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
@@ -58174,7 +58185,7 @@
   },
   "side_metricsRebuild": {
     "en": "Rebuilding Metrics",
-    "ja": "Rebuilding Metrics",
+    "ja": "メトリクスリービルド",
     "ko": "메트릭스 리빌드"
   },
   "side_tagFlex": {
@@ -58677,6 +58688,11 @@
     "ja": "サーバー",
     "ko": "서버"
   },
+  "side_marketplaces": {
+    "en": "Marketplace",
+    "ja": "マーケットプレイス",
+    "ko": "마켓플레이스"
+  },
   "side_projects": {
     "en": "Project",
     "ja": "プロジェクト",
@@ -58764,8 +58780,8 @@
   },
   "side_dataRetention": {
     "en": "Data Retention",
-    "ja": "データ維持期間",
-    "ko": "데이터 유지기간"
+    "ja": "データ保存期間",
+    "ko": "데이터 보존기간"
   },
   "side_updateServer": {
     "en": "Server Update",
@@ -58794,7 +58810,7 @@
   },
   "side_projectSubscriptionHistory": {
     "en": "Subscription History",
-    "ja": "Project Subscription History",
+    "ja": "有料変換履歴",
     "ko": "유료 전환 내역"
   },
   "side_invoices": {
