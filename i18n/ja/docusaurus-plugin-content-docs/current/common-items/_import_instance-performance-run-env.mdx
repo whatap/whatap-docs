@@ -1,0 +1,23 @@
+## インスタンス性能管理 {#side_agentsConfiguration}
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_bootEnvironmentVariable" className="uitext" />
+
+<ProdImg img="ipa-run-env-var.png" desc="実行環境変数" />
+
+エージェントの実行に関連する環境変数を照会できます。 環境変数のうち、重要な情報またはアプリケーションの状態情報をWhaTapサーバーに保存し、エージェントがダウンしても照会が可能です。 エージェントバージョンやインストールパス、名前、IPアドレスなどを確認できます。 <Cmdname sid="sms_summary_download_csv" className="uitext" />ボタンをクリックすると、環境変数情報をダウンロードできます。 主な確認事項は次のとおりです。 
+
+- `(アプリケーション).version`: アプリケーションのバージョンを確認できます。 
+
+- `file.encoding`: `utf-8`といったファイルエンコーディング形式を確認できます。
+
+- `os.name`: OSを確認できます。
+
+- `user.language`: ユーザー言語を確認できます。
+
+<InDoc product="java">
+
+- `-Xms`, `-Xms`: ヒープメモリ設定に関連する環境変数を確認できます。 
+
+- `(アプリケーション).start`: アプリケーションの開始時間を確認できます。 
+
+</InDoc>

@@ -2,29 +2,37 @@
 
 <InDoc pages="instance-monitoring,multi-instance-monitoring">
 
-現在実行中のセッションのSQLクエリ情報を確認するには<Cmdname sid="active_sessions" className="uitext" />セクションの<span class="uitext">query</span>カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
+現在実行中のセッションのSQLクエリ情報を確認するには<Cmdname sid="active_sessions" className="uitext" />セクションの**_query_**カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
 
 </InDoc>
 
 <InDoc pages="analysis-compare-top-sql">
 
-詳細なSQL情報を確認するには、SQL順位テーブルの<span class="uitext">query</span>カラム項目を選択します。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
+詳細なSQL情報を確認するには、SQL順位テーブルの**_query_**カラム項目を選択します。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
 
 </InDoc>
 
 <InDoc pages="slow-query">
 
-現在実行中のセッションのSQLクエリ情報を確認するには**_Slow Query List_**セクションの<span class="uitext">SQL</span>カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
+現在実行中のセッションのSQLクエリ情報を確認するには**_Slow Query List_**セクションの**_SQL_**カラム項目を選択してください。 <Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
 
 </InDoc>
 
-<InDoc product="oracle-pro"><ImgLang img="db-sql-details-oracle-pro.png" desc="SQL詳細" /></InDoc>
+<InDoc pages="analysis-sql">
+
+画面の下のSQL一覧で**_query_**カラム項目を選択すると<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 SQLクエリ文とPlan情報を確認することができます。
+
+</InDoc>
+
+<InDoc product="oracle-pro,oracle"><ImgLang img="db-sql-details-oracle-pro.png" desc="SQL統計" /></InDoc>
 
 <InDoc product="postgresql,mysql"><ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" /></InDoc>
 
-<Xclude product="postgresql,mysql,oracle-pro"><ImgLang img="db-sql-details-common.png" desc="SQL詳細" /></Xclude>
+<Xclude product="postgresql,mysql,oracle-pro,oracle"><ImgLang img="db-sql-details-common.png" desc="SQL統計" /></Xclude>
 
 - <Cmdname sid="BTN06225" className="uitext" />: 該当SQLクエリ文に関する統計情報が確認できる<Cmdname sid="statistics_sql" className="uitext" />メニューへ移動できます。
+
+<InDoc product='postgresql,mysql'>
 
 - **_Default Bind_**: クエリ文で変数として設定された部分を既定値としてバインディングできます。
 
@@ -34,15 +42,13 @@
 
 - **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-  <InDoc product='postgresql,mysql'>
-
   - **_Text_**: テキスト形式でプラン情報を確認できます。
 
   - **_JSON_**: JSON形式でプラン情報を照会すると、ボトルネックが発生した箇所がすばやく確認できます。
 
-  </InDoc>
+</InDoc>
 
-  <InDoc product='postgresql'>
+<InDoc product='postgresql'>
 
   :::note
 
@@ -50,9 +56,9 @@
 
   :::
 
-  </InDoc>
+</InDoc>
 
-  <InDoc product='mysql'>
+<InDoc product='mysql'>
 
   :::note
 
@@ -60,19 +66,23 @@
 
   :::
 
-  </InDoc>
+</InDoc>
 
-<InDoc product='oracle-pro'>
+<InDoc product='oracle-pro,oracle'>
 
-- **_Bind Capture_**: データベースで実行されたSQLクエリに使用されたバインド変数の値を確認できます。
+- **_Runtime Plan_**: 選択されたSQLクエリの実行計画とランタイム情報を提供します。 実行回数、平均実行時間、平均物理的読み取りなどの詳細を提供します。
+
+- **_Explain Plan_**: オプティマイザーが予測した実行計画を示します。 費用、作業、オブジェクト名、カーディナリティなどの情報を提供します。
+
+- **_Plan History_**: データベースで実行されたSQLクエリの実行計画に対する履歴を確認できます。
+
+- **_Bind Capture_**: データベースで実行されたSQLクエリに使用されたバインド変数の値を確認できます。 これにより、クエリ実行の実際の内容を確認できます。
 
   :::note
 
   リアルタイムで実行されたbind値ではなく、データベースにキャプチャされた値(`v$sql_bind_capture`)です。 件数が多いと、100個まで表示します。
 
   :::
-
-- **_Plan History_**: データベースで実行されたSQLクエリの実行計画に対する履歴を確認できます。
 
 </InDoc>
 

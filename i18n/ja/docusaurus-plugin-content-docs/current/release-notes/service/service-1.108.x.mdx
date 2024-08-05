@@ -65,9 +65,9 @@ pagination_next: release-notes/service/service-1_106_x
 
 ### `Database`
 
-#### MySQL, PostgreSQL
+#### MySQL、PostgreSQL
 
-<p><Status>Changed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>モニタリング用アカウントの生成</UI>セクションでAWS RDS セッション中止<code>grant</code>コマンドの追加</p>
+<p><Status>Changed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューの<UI>アカウント生成</UI>セクションのAWS RDSでkill session使用時に<code>grant</code>コマンドの追加</p>
 
 </div>
 
@@ -89,7 +89,7 @@ pagination_next: release-notes/service/service-1_106_x
 
 - <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューの<UI>イベント追加</UI>ウィンドウから<UI>アラート通知条件</UI>のメトリクステキストが幅に合わせて改行されるように修正
 
-- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからWindowsインストールファイルオプションのうち<UI>Silent Install</UI>ボタンを除去
+- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューからWindowsインストールファイルオプションのうち<UI>Silent Install</UI>ボタンを除去
 
 - <Status>Fixed</Status><UI>ログ</UI>><UI>ログ設定</UI>メニューからウィンドウコマンドコードのディレクトリパスの修正
 
@@ -103,7 +103,7 @@ pagination_next: release-notes/service/service-1_106_x
 
 ### `Database`
 
-<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューでプラン照会ができない現象を修正</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューでプラン照会ができない不具合を修正</p>
 
 </div>
 
@@ -133,7 +133,7 @@ pagination_next: release-notes/service/service-1_106_x
 
 ### `共通`
 
-- <Status>Feature</Status><UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択した場合、デフォルトのインターバル値を表示する機能の追加
+- <Status>Feature</Status><UI>間隔</UI>選択オプションから<UI>デフォルト</UI>項目を選択した場合、デフォルトの間隔を表示する機能の追加
 
   <div class='release-compare'>
 
@@ -143,15 +143,15 @@ pagination_next: release-notes/service/service-1_106_x
 
   </div>
 
-- <Status>Changed</Status><UI>時間</UI>照会区間が変更されるとき<UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択するようにロジックを修正
+- <Status>Changed</Status><UI>時間</UI>照会区間が変更されるとき<UI>間隔</UI>選択オプションから<UI>デフォルト</UI>項目を選択するようにロジックを修正
 
-  照会区間を変更する際、**_インターバル_**オプションが**_デフォルト_**項目が選択される場合は、次のとおりです。
+  照会区間を変更する際、**_間隔_**オプションが**_デフォルト_**項目が選択される場合は、次のとおりです。
 
-  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**の場合
+  - **_間隔_**オプションで以前の選択項目が**_デフォルト_**の場合
 
-  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、変更された**_インターバル_** オプション一覧にない場合
+  - **_間隔_**オプションで以前の選択項目が**_デフォルト_**ではなく、変更された**_間隔_** オプション一覧にない場合
 
-  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、選択した**_インターバル_** オプション値が照会期間の半分以下の場合
+  - **_間隔_**オプションで以前の選択項目が**_デフォルト_**ではなく、選択した**_間隔_** オプション値が照会期間の半分以下の場合
 
 - <Status>Fixed</Status>一部の状況で<UI>カラム設定</UI>ポップアップの<UI>確認</UI>ボタンを押したときに、不明なエラーメッセージを表示し、作動しないエラーの修正
 
@@ -431,7 +431,7 @@ pagination_next: release-notes/service/service-1_106_x
 
 #### Flexボード
 
-- <Status>Fixed</Status><UI>Flexボード</UI>メニューから言語設定が韓国語でない場合は、Flexボード作成時にブログコンテンツを非表示にする
+- <Status>Fixed</Status> <UI>Flexボード</UI>メニューから言語設定が韓国語でない場合は、Flexボード作成時にブログコンテンツを非表示にする
 
 - <Status>Fixed</Status><UI>Flexボード</UI>メニューのSeriesウィジェットオブジェクトの結合で最大、最小値が作動しない現象を修正
 
@@ -445,25 +445,25 @@ pagination_next: release-notes/service/service-1_106_x
 
 ### `Database`
 
-#### インスタンスV1
+#### インスタンスモニタリング V1
 
-<p><Status>Fixed</Status>ウィジェット<UI>カウントの選択</UI>モーダルのチャートサイズが異常に現れる現象を修正</p>
+<p><Status>Fixed</Status> ウィジェット<UI>カウントの選択</UI>モーダルのチャートサイズが異常に現れる現象を修正</p>
 
 #### V2共通
 
-- <Status>Change</Status>テーブルカラム選択モーダルUI変更
+- <Status>Change</Status> テーブルカラム選択モーダルUI変更
 
-- <Status>Change</Status>プロジェクトメンバーの中で<b>修正</b>権限のあるメンバーだけ<UI>セッション中止</UI>ボタンが露出するように変更
+- <Status>Change</Status> プロジェクトメンバーの中で<b>修正</b>権限のあるメンバーだけ<UI>セッション中止</UI>ボタンが露出するように変更
 
-- <Status>Feature</Status>ラインチャートにデータ最大値を表示を適用
+- <Status>Feature</Status> ラインチャートにデータ最大値を表示を適用
 
 - <UI>ダッシュボード</UI>><UI>マルチインスタンスモニタリング</UI>メニューから次の機能を追加および修正します。
 
-  - <Status>Feature</Status>ウィジェット別のメトリクス情報を示すインフォアイコンの追加
+  - <Status>Feature</Status> ウィジェット別のメトリクス情報を示すインフォアイコンの追加
 
   - <Status>Feature</Status>製品環境別(RDS、XOS)タブ分離
 
-  - <Status>Change</Status><UI>XOS Disk Usage</UI>ウィジェット内のテーブルのカラムのうち<code>Mount Source</code>→<code>Mount Point</code>に変更(最新エージェントのアップデートが必要)
+  - <Status>Change</Status> <UI>XOS Disk Usage</UI>ウィジェット内のテーブルのカラムのうち<code>Mount Source</code>→<code>Mount Point</code>に変更(最新エージェントのアップデートが必要)
 
 - <Status>Feature</Status><UI>ダッシュボード</UI>><UI>データベースサイズ</UI>メニューからCSVダウンロードを追加
 
@@ -473,7 +473,7 @@ pagination_next: release-notes/service/service-1_106_x
 
 #### MySQL
 
-<p><Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>WhaTapデータベースエージェントのダウンロード</UI>セクションで<em>whatap.conf</em>ファイルの作成例を追加</p>
+<p><Status>Change</Status> <UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>WhaTapデータベースエージェントのダウンロード</UI>セクションで<em>whatap.conf</em>ファイルの作成例を追加</p>
 
 #### SQL Server
 
@@ -493,19 +493,19 @@ pagination_next: release-notes/service/service-1_106_x
 
 - <Status>Feature</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>><UI>複合ログイベント</UI>機能改善およびログイベントテンプレートの追加
 
-- <Status>Feature</Status><UI>アラート通知</UI>><UI>ログ</UI>メニューから<UI>複合ログイベント</UI>でテンプレートイベントを追加する場合、カテゴリが選択されていない状態ではフィルター項目を無効にするように処理
+- <Status>Feature</Status> <UI>アラート通知</UI>><UI>ログ</UI>メニューから<UI>複合ログイベント</UI>でテンプレートイベントを追加する場合、カテゴリが選択されていない状態ではフィルター項目を無効にするように処理
 
-- <Status>Change</Status><UI>ログ</UI>下位メニューのハイライト機能から選択可能なカラー変更およびログ本文フォントの変更
+- <Status>Change</Status> <UI>ログ</UI>下位メニューのハイライト機能から選択可能なカラー変更およびログ本文フォントの変更
 
 - <Status>Fixed</Status><UI>ログ検索機</UI>、<UI>ライブテール</UI>メニューからフィルター演算子の値を<code>=</code>から<code>!=</code>に修正
 
 - <Status>Fixed</Status><UI>ログ検索機</UI>、<UI>ライブテール</UI>メニューから数字キーワード<code>.n</code>を入力した後に現れる検索値が<code>+>=123</code>から<code>>=123</code>のように<code>比較演算子</code><code>検索値</code>で出るように修正
 
-- <Status>Feature</Status>隣接ログで基準となるログにスクロール位置移動およびハイライト機能を追加
+- <Status>Feature</Status> 隣接ログで基準となるログにスクロール位置移動およびハイライト機能を追加
 
-- <Status>Change</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>メニューから<UI>リアルタイムログイベント</UI> 追加生成時<UI>検索キー</UI>から<UI>すべて</UI>(all)項目を除去
+- <Status>Change</Status> <UI>アラート通知</UI> > <UI>イベント設定</UI> > <UI>ログ</UI>メニューから<UI>リアルタイムログイベント</UI> 追加生成時<UI>検索キー</UI>から<UI>すべて</UI>(all)項目を除去
 
-- <Status>Fixed</Status><UI>対数検索機</UI>メニューから<code>pcode</code>タグをクリックするとドロップダウンメニューが露出しないように修正
+- <Status>Fixed</Status><UI>ログ検索機</UI>メニューから<code>pcode</code>タグをクリックするとドロップダウンメニューが露出しないように修正
 
 - <Status>Feature</Status><UI>ログ設定</UI>メニューからカテゴリおよびログ検出条件の選択UIの改善
 
@@ -517,10 +517,10 @@ pagination_next: release-notes/service/service-1_106_x
 
 <p><UI>ページロードヒットマップ</UI>メニューから次の内容を修正します。</p>
 
-- <Status>Feature</Status><UI>ページロード詳細</UI>にWebブラウザエラーデータとステップカラムを追加
+- <Status>Feature</Status> <UI>ページロード詳細</UI>にWebブラウザエラーデータとステップカラムを追加
 
-- <Status>Feature</Status><UI>ページ一覧</UI>にWebブラウザエラーデータを含んでいるページロードイベントの場合、赤色フォントカラーで表示
+- <Status>Feature</Status> <UI>ページ一覧</UI>にWebブラウザエラーデータを含んでいるページロードイベントの場合、赤色フォントカラーで表示
 
-- <Status>Feature</Status>照会時間を最大15日に制限し、過去30日以前のデータは照会できないように設定
+- <Status>Feature</Status> 照会時間を最大15日に制限し、過去30日以前のデータは照会できないように設定
 
 </div>

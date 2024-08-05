@@ -14,7 +14,7 @@
 
 </InDoc>
 
-<InDoc product="oracle-pro">
+<InDoc product="oracle-pro,oracle">
 
 頻繁に性能分析のためによく分析するカテゴリ(DB, USERNAME, MACHINE, PROGRAM) 別にTop SQLを検索することができます。主な参照基準は次のとおりです。
 
@@ -35,6 +35,22 @@
 </Xclude>
 
 - **_instance_**: インスタンス名
+
+<InDoc product="oracle,oracle-pro">
+
+- **_physical reads_**: 該当SQLがディスクからデータを読み込んだ回数
+
+- **_session logical reads_**: 該当SQLがメモリ内でデータを読み込んだ回数
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+- **_cpu time_**: 該当SQLの実行中に使用されたCPU時間
+
+- **_redo size_**: 該当SQLが発生させたトランザクションログ(redo log) のサイズ
+
+</InDoc>
 
 :::info
 

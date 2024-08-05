@@ -1,0 +1,63 @@
+---
+id: service-list
+title: Service リスト
+description: 「Service リスト」メニューを説明します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - ワークロード
+  - Service リスト
+toc_max_heading_level: 2
+---
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_kubeServiceList" className="uitext" />
+
+:::note 
+
+WhaTapマスターエージェントの1.7.8バージョン以降が必要です。 
+
+:::
+
+<Cmdname sid="side_kubeServiceList" className="uitext" />を照会します。 WhaTap Kubernetesモニタリングの<Cmdname sid="side_kubeServiceList" className="uitext" />これにより、クラスター内のネットワーク構成を容易に把握し、各サービスの構成と現状を効率的にモニタリングできます。
+
+Kubernetesで**Service**は、クラスター内部と外部からPodに接続するためのオブジェクトです。 <Cmdname sid="side_kubeServiceList" className="uitext" />メニューで各サービスの詳細構成を一目で確認でき、接続されたPodの状態をリアルタイムでモニタリングできます。 これにより、サービスとPod間の異常な接続状態を迅速に把握して解決できます。 
+
+{/* <Cmdname sid="side_kubeServiceList" className="uitext" />을 통해 클러스터의 네트워크 구성과 Service 상태를 보다 명확하고 종합적으로 관리해 보세요. */}
+
+## 基本画面ガイド
+
+現在クラスターに存在する<Cmdname sid="side_kubeServiceList" className="uitext" />情報を次のように確認できます。 照会時間を基準に、最近1分間収集されたService情報に基づいて一覧を表示します。 ネームスペース、ラベルセレクターなど様々な基準でリソースを区分・管理でき、サービスの多様な属性を明確に確認できます。 
+
+<ImgLang img='k8s-service-list.png' desc='Service リスト' />
+
+:::note
+
+**Pod Phase** 
+
+***podPhase***カラムは、当該サービスに接続されたPodの状態別個数を表示します。 Podの状態は色で表記します。 Pod状態については、上段の***Pod Phase***案内を参照してください。 
+
+:::
+
+:::note 
+
+リスト型メニューの**フィルター**、**カラム選択**案内は同じです。
+
+:::
+
+## フィルター
+
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
+
+<K8slistfilter />
+  
+## カラム選択
+
+import K8slistcl from "../common-items/_k8s-list-cl.mdx";
+
+<K8slistcl />
+
+## 詳細を確認
+
+リストから照会を希望するServiceの![虫眼鏡アイコン](/img/ic-search.svg) <Cmdname sid="display_detail" className="uitext" />アイコンを選択すると、該当Serviceに接続されたPodリストを確認できます。 
+
+<ImgLang img='k8s-service-list-detail.png' desc='Service リスト詳細' />

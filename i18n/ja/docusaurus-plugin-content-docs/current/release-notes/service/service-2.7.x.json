@@ -1,43 +1,6 @@
 [
   {
     "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
-    "ver": "Service 2.7.4",
-    "date": "2024-07-29",
-    "Lists": [
-      {
-        "ver": "Service 2.7.4",
-        "hash": "service-274",
-        "product": "공통",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統合Flexボード</span> 메뉴에서 읽기 전용으로 공유 받은 대시보드의 그룹 위젯에 포함된 위젯들이 데이터를 호출하지 못하는 문제 수정</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
-    "ver": "Service 2.7.3",
-    "date": "2024-07-26",
-    "Lists": [
-      {
-        "ver": "Service 2.7.3",
-        "hash": "service-273",
-        "product": "Database",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code class=\"my\">V1</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> 메뉴에서 지표 선택 창이 나타나지 않는 문제 수정</p>",
-        "category": "공통"
-      },
-      {
-        "ver": "Service 2.7.3",
-        "hash": "service-273",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span> 메뉴에서 권한 관련 안내 문구 추가</p>",
-        "category": "MySQL"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
     "ver": "Service 2.7.2",
     "date": "2024-07-25",
     "Lists": [
@@ -46,7 +9,7 @@
         "hash": "service-272",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ヒットマップ</span> 메뉴의 <span class=\"uitext\">アプリケーション</span> 옵션에서 2개 이상의 에이전트를 선택할 수 없는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ヒットマップ</span>メニューの<span class=\"uitext\">アプリケーション</span>オプションで2つ以上のエージェントを選択できない問題を修正</p>"
       }
     ]
   },
@@ -60,14 +23,14 @@
         "hash": "service-271",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">コンテナアプリケーションリスト</span> 메뉴에서 매핑된 컨테이너 정보가 없는 경우 경고 메시지가 표시되지 않는 버그 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">コンテナアプリケーションリスト</span>メニューでマッピングされたコンテナ情報がない場合、警告メッセージが表示されないバグを修正</p>"
       },
       {
         "ver": "Service 2.7.1",
         "hash": "service-271",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span> 메뉴의 <span class=\"uitext\">リソース関係</span> 탭에서 적절하지 않은 서비스가 표시되는 버그 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの<span class=\"uitext\">リソース関係</span>タブで不適切なサービスが表示されるバグを修正</p>"
       }
     ]
   },
@@ -79,104 +42,106 @@
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "신규 기능 출시",
+        "product": "新機能リリーズ",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle V2</strong> 서비스 시작!!</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle V2</strong>サービスを開始！</p>",
         "category": "Database",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> 메뉴의 UI 및 기능 대폭 개선했습니다.</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> 메뉴에서 데이터베이스의 성능 지표 정보를 확인할 수 있습니다.</p>\n</li>\n<li>\n<p>데이터베이스 로그를 검색하고 추이를 확인할 수 있는 <span class=\"uitext\">ログ</span> 메뉴를 추가했고, 로그 관련 알림을 설정할 수 있습니다.</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span>メニューのUIと機能を大幅に改善しました。</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span>メニューでデータベースの性能の指標情報を確認できます。</p>\n</li>\n<li>\n<p>データベースログを検索し、推移を確認できる<span class=\"uitext\">ログ</span>メニューを追加し、ログ関連の通知を設定できます。</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "신규 기능 출시",
+        "product": "新機能リリーズ",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle Pro</strong> 서비스 시작!!</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle Pro</strong>サービスを開始！</p>",
         "category": "Database",
-        "details": "<p>Direct Memory Access(DMA) 기술을 활용한 접근 방식으로 서버의 메모리에 직접 접근하여 필요한 데이터를 추출합니다. 이 방법은 데이터베이스 서버에 부하를 최소화하거나 발생시키지 않습니다. 메모리에 직접 접근함으로써 데이터를 거의 실시간으로 수집할 수 있으며, 시스템의 성능을 더욱 세밀하게 모니터링하고 문제 발생 시 즉시 대응할 수 있습니다.</p>"
+        "details": "<p>Direct Memory Access(DMA) 技術を活用したアプローチにより、サーバーのメモリに直接アクセスし、必要なデータを抽出します。 この方法は、データベースサーバーへの負荷を最小限に抑えるか、発生させることはありません。 メモリに直接アクセスすることでデータをほぼリアルタイムで収集でき、システムの性能をより細かくモニタリングし、問題発生時に直ちに対応できます。</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "신규 기능 출시",
+        "product": "新機能リリーズ",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> Kubernetes 클러스터 내에서 실행 중인 모든 서비스들의 상태와 정보를 종합적으로 제공하는 <span class=\"uitext\">Service リスト</span> 메뉴 추가</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Kubernetesクラスター内で実行中のすべてのサービスの状態と情報を総合的に提供する<span class=\"uitext\">Service リスト</span>メニューを追加</p>",
         "category": "Kubernetes"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "신규 기능 출시",
+        "product": "新機能リリーズ",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> 노드 관점에서 디스크 모니터링을 위한 <span class=\"uitext\">ノードディスクリスト</span> 메뉴 추가</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>ノードの観点でディスクモニタリングのための<span class=\"uitext\">ノードディスクリスト</span> メニューを追加</p>",
         "category": "Kubernetes"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 사이드 메뉴에서 <span class=\"uitext\">全プロジェクト</span>를 선택해 프로젝트 목록을 펼치면, 프로젝트 검색 입력란에 자동 포커스되는 기능 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>サイドメニューで<span class=\"uitext\">全プロジェクト</span>を選択してプロジェクト一覧を開くと、プロジェクトの検索入力欄に自動フォーカスされる機能を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 사이드 메뉴의 통합 검색에서 에이전트를 IP 주소로 검색할 수 있는 기능 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> サイドメニューの統合検索でエージェントをIPアドレスで検索できる機能を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">レポート</span> 메뉴의 <span class=\"uitext\">レポートのメール送信予約</span> 창에서 시간 문구를 타임존이 포함된 문구로 안내하도록 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">レポート</span> メニューの <span class=\"uitext\">レポートのメール送信予約</span>画面でタイムフレーズをタイムゾーンが含まれたフレーズに案内するように変更</p>",
+        "details": "<blockquote>\n<p>例）04<del>06 → (UTC+9) 04</del>06</p>\n</blockquote>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 사이드 메뉴의 조직 목록에 조직 아이콘 노출하도록 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> サイドメニューの組織一覧に、組織アイコンが表示されるように変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アカウント管理</span> 또는 <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">通知設定</span> 메뉴에서 모바일 기기 알림 테스트 시 표시되는 성공 메시지 문구 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アカウント管理</span> または <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">通知設定</span> メニューでモバイルデバイスの通知テスト時に表示される成功メッセージを変更</p>",
+        "details": "<blockquote>\n<p><span class=\"b500\">モバイルデバイスと無事につながりました。</span> → <span class=\"uitext\">テストメッセージをモバイル端末へ送信するようリクエストしました。</span></p>\n</blockquote>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span> 메뉴의 <span class=\"uitext\">カラム選択</span> 팝오버에서 <span class=\"uitext\">初期化(既定値)</span> 버튼 동작 버그 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span>メニューの<span class=\"uitext\">カラム選択</span>ポップオーバーで<span class=\"uitext\">初期化(既定値)</span>ボタン動作のバグを修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">通知設定</span> 메뉴에서 사용자 본인 계정이 아닌 다른 사용자의 모바일 기기 테스트 및 삭제 버튼을 선택할 수 없도록 비활성화</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">通知設定</span> メニューでユーザー自身のアカウントではなく、他のユーザーのモバイルデバイステスト及び削除ボタンを選択できないように非活性化</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">プロジェクトメンバー</span> 메뉴에서 테마 변경 시 이름/소속 태그 색상이 반영되지 않는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">プロジェクトメンバー</span>メニューでテーマ変更時、名前/所属タグの色が反映されない問題を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> 메뉴의 <span class=\"uitext\">異常検知</span> 탭에서 이벤트를 추가 또는 수정할 때 오브젝트 병합 선택 UI 제거</p>"
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューの<span class=\"uitext\">異常検知</span>タブでイベントを追加または修正する時、オブジェクトのマージ選択UIを削除</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
-        "product": "공통",
+        "product": "共通",
         "type": "Deprecated",
         "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">統合ダッシューボード</span> / <span class=\"uitext\">統合メトリックスダッシューボード</span></p>"
       },
@@ -185,7 +150,7 @@
         "hash": "service-270",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 다음 메뉴 경로에서 조회 내용을 CSV 파일 다운로드 기능 추가</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のメニューパスで照会内容をCSVファイルにダウンロードする機能を追加</p>",
         "details": "<ul>\n<li><span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">ライブラリバージョン</span></li>\n<li><span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">実行環境変数</span></li>\n</ul>"
       },
       {
@@ -193,185 +158,185 @@
         "hash": "service-270",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span> 메뉴에서 경로에서 선택한 에이전트의 에이전트 설정(<em>whatap.conf</em>) 파일 다운로드 기능 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューパスで選択したエージェントのエージェント設定(<em>whatap.conf</em>)ファイルダウンロード機能を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">スレッドリスト/ダンプ</span> 메뉴의 테이블에서 CPU 시간 증가량을 표시하는 컬럼 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">スレッドリスト/ダンプ</span>メニューのテーブルで、CPU時間の増加量を表示するカラムを追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">トレース分析</span> 창의 <span class=\"uitext\">テーブルビュー</span> 및 <span class=\"uitext\">ツリービュー</span> 탭에서 트랜잭션 호스트 정보 없을 경우 포트 표시하지 않도록 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">トレース分析</span>画面の<span class=\"uitext\">テーブルビュー</span>および<span class=\"uitext\">ツリービュー</span>タブにトランザクションのホスト情報がない場合は、ポートを表示しないように変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">トレース分析</span> 창의 <span class=\"uitext\">マルチTX</span> 탭에서 호스트 정보가 없으면 트랜잭션을 노출하지 않도록 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">トレース分析</span>画面の<span class=\"uitext\">マルチTX</span>タブにホスト情報がない場合は、トランザクションを表示しないように変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">インスタンス性能管理</span>의 하위 메뉴에서 에이전트를 선택한 상태로 다른 하위 메뉴로 이동하면 에이전트 선택 사항을 유지하도록 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">インスタンス性能管理</span>の下位メニューでエージェントを選択した状態に、別の下位メニューに移動すると、エージェントの選択事項を保持するように変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">ヒープダンプ</span> 메뉴에서 힙 덤프 확보 관련 안내 메시지가 항상 표시되도록 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">ヒープダンプ</span>メニューでヒープダンプ確保に関する案内メッセージが常に表示されるように変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">Caller</span> 메뉴의 CSV 다운로드 기능으로 다운로드할 수 있는 최대 건수 변경(10만 건 → 1만 건)</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">Caller</span>メニューのCSVダウンロード機能でダウンロードできる最大件数を変更(10万件 → 1万件)</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">統計</span> 하위 메뉴에서 검색 입력란의 너비 증가</p>"
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">統計</span>下位メニューで検索入力欄の幅増加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <img decoding=\"async\" loading=\"lazy\" alt=\"사이트맵 아이콘\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">サイトマップ</span> &gt; <span class=\"uitext\">トポロジー</span> &gt; <span class=\"uitext\">Netstatトポロジー</span> 메뉴의 예시 이미지를 영문으로 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <img decoding=\"async\" loading=\"lazy\" alt=\"サイトマップのアイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">サイトマップ</span> &gt; <span class=\"uitext\">トポロジー</span> &gt; <span class=\"uitext\">Netstatトポロジー</span>メニューの例の画像を英文に変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> 메뉴의 <em><strong>TOO_MANY_ACTX</strong></em> 이벤트 템플릿 조건 변경</p>",
-        "details": "<ul>\n<li>\n<p><strong>기존</strong>: <code>endsWith(okindName, 'ote-virtual-0') &amp;&amp; startsWith(onodeName, 'node-0') &amp;&amp; type == 'java'</code></p>\n</li>\n<li>\n<p><strong>변경</strong>: <code>active_tx_count &gt; 100</code></p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューの<em><strong>TOO_MANY_ACTX</strong></em>イベントテンプレート条件を変更</p>",
+        "details": "<ul>\n<li>\n<p><strong>従来</strong>：<code>endsWith(okindName, 'ote-virtual-0') &amp;&amp; startsWith(onodeName, 'node-0') &amp;&amp; type == 'java'</code></p>\n</li>\n<li>\n<p><strong>変更</strong>：<code>active_tx_count &gt; 100</code></p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span> 메뉴의 <span class=\"uitext\">Top 30</span> 목록에서 키보드 이동 시 발생하는 딜레이 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューの<span class=\"uitext\">Top 30</span>一覧でキーボード移動時に発生するディレー問題を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span> 메뉴에서 과거 시점으로 필터를 적용한 후 실시간 조회로 변경하면 이전 조회 시점의 필터가 적용되는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span> メニューで過去の時点にフィルターを適用してからリアルタイム照会に変更すると、以前の照会時点のフィルターが適用される問題を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アクティブTX</span> 메뉴에서 테이블의 스크롤이 동작하지 않는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アクティブTX</span>メニューでテーブルのスクロールが動作しない問題を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Node.js</strong> 상품의 <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span> 메뉴에서 에이전트 다운로드 관련 문구 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Node.js</strong>製品の<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでエージェントのダウンロードに関するメッセージを修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span> 메뉴에서 다음 위젯 표기 수정</p>",
-        "details": "<ul>\n<li>\n<p>Heap 크기(<code>heap_tot</code>) → <span class=\"uitext\">Heap 총 사용량</span>(<code>heap_tot</code>)</p>\n</li>\n<li>\n<p>Heap 최대 사용량(<code>heap_max</code>) → <span class=\"uitext\">Heap 최대 크기</span>(<code>heap_max</code>)</p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span>メニューで次のウィジェット表記を修正</p>",
+        "details": "<ul>\n<li>\n<p>ヒープサイズ(<code>heap_tot</code>) → <span class=\"uitext\">ヒープの総使用量</span>(<code>heap_tot</code>)</p>\n</li>\n<li>\n<p>ヒープ最大使用量(<code>heap_max</code>) → <span class=\"uitext\">ヒープの最大サイズ</span>(<code>heap_max</code>)</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> 메뉴에서 중복되는 <strong>WARNING_OLD_GENARATION_GC</strong> 이벤트 템플릿 삭제</p>"
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューで重複する<strong>WARNING_OLD_GENARATION_GC</strong>イベントテンプレートを削除</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> 메뉴에서 불필요한 <strong>WARNING_TPS_DELTA</strong> 이벤트 템플릿 삭제</p>"
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューで不要な<strong>WARNING_TPS_DELTA</strong>イベントテンプレートを削除</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> 구버전의 <span class=\"uitext\">アプリケーションダッシュボード</span> 제거</p>"
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code>旧バージョンの<span class=\"uitext\">アプリケーションダッシュボード</span>を除去</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Application",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span> 메뉴의 안내 메시지 창 제거</p>"
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの案内メッセージ画面を削除</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Server",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバーリスト</span> 메뉴에서 테이블의 <span class=\"uitext\">Private IP</span> 컬럼 데이터 표시 방식 변경</p>",
-        "details": "<ul>\n<li>\n<p>IP 별 개행되어 표시하던 방식을 한 줄로 표시하도록 수정</p>\n</li>\n<li>\n<p>컬럼 너비에 따라 말 줄임표(…) 처리 추가</p>\n</li>\n<li>\n<p>127.0.0.1을 가장 나중에 표시하고 Private IP를 먼저 노출하도록 변경</p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバーリスト</span>メニューでテーブルの<span class=\"uitext\">Private IP</span>カラムデータの表示方式を変更</p>",
+        "details": "<ul>\n<li>\n<p>IP別に改行して表示していた方式を、一行で表示するように修正</p>\n</li>\n<li>\n<p>カラムの幅に応じて三点リーダー(…) 処理を追加</p>\n</li>\n<li>\n<p>127.0.0.1を一番最後に表示しPrivate IPを先に露出するように変更</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span> 메뉴의 <span class=\"uitext\">メモリ使用率</span> <span class=\"uitext\">詳細</span>에서 3시간 이상 조회하면 <span class=\"uitext\">スワップメモリ使用量</span> 차트가 표시되지 않는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>メニューの<span class=\"uitext\">メモリ使用率</span> <span class=\"uitext\">詳細</span>で、3時間以上照会すると<span class=\"uitext\">スワップメモリ使用量</span>チャートが表示されない問題を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span> 메뉴에서 검색 버튼을 선택할 때, 실제 검색 로직을 수행하는 경우에만 테이블 내부에 로딩 UI를 표시하도록 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span> メニューで検索ボタンを選択する時、実際の検索ロジックを実行する場合にのみテーブル内部にローディングUIを表示するように修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span> 메뉴의 요약 보기에서 <span class=\"uitext\">対象情報</span> 탭에 <span class=\"uitext\">コンテナ要約分析</span> 기능 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの要約で<span class=\"uitext\">対象情報</span>タブに<span class=\"uitext\">コンテナ要約分析</span>機能を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span> 메뉴의 요약 보기에서 <span class=\"uitext\">対象情報</span> 및 <span class=\"uitext\">リソース関係</span> 탭에 <strong>Service</strong> 정보 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの要約で<span class=\"uitext\">対象情報</span>及び<span class=\"uitext\">リソース関係</span>タブに<strong>Service</strong>情報を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span> 메뉴의 <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span> 탭(요약 또는 상세 보기)에서 <span class=\"uitext\">ログTail</span> 메뉴로 이동할 수 있는 링크 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの<span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span>タブ(要約または詳細を見る)で<span class=\"uitext\">ログTail</span>メニューに移動できるリンクを追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">コンテナー</span> &gt; <span class=\"uitext\">コンテナリスト</span> 메뉴에서 다음 컬럼의 각 항목에 관련 목록 메뉴로 이동할 수 있는 버튼 추가</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">コンテナー</span> &gt; <span class=\"uitext\">コンテナリスト</span>メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加</p>",
         "details": "<ul>\n<li><span class=\"uitext\">Deployment</span> → <span class=\"uitext\">Deployment リスト</span></li>\n<li><span class=\"uitext\">Pod</span> → <span class=\"uitext\">Podリスト</span></li>\n<li><span class=\"uitext\">Image</span>, <span class=\"uitext\">ImageId</span> → <span class=\"uitext\">コンテナイメージ</span></li>\n<li><span class=\"uitext\">ApplicationName</span> → <span class=\"uitext\">コンテナアプリケーションリスト</span></li>\n</ul>"
       },
       {
@@ -379,7 +344,7 @@
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">コンテナアプリケーションリスト</span> 메뉴에서 다음 컬럼의 각 항목에 관련 목록 메뉴로 이동할 수 있는 버튼 추가</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">コンテナアプリケーションリスト</span>メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加</p>",
         "details": "<ul>\n<li><span class=\"uitext\">CotainerId</span> → <span class=\"uitext\">コンテナリスト</span></li>\n<li><span class=\"uitext\">ContainerName</span> → <span class=\"uitext\">コンテナリスト</span></li>\n<li><span class=\"uitext\">Pod</span> → <span class=\"uitext\">Podリスト</span></li>\n<li><span class=\"uitext\">Node</span> → <span class=\"uitext\">ノードリスト</span></li>\n</ul>"
       },
       {
@@ -387,87 +352,87 @@
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">コンテナアプリケーションリスト</span> 메뉴의 <span class=\"uitext\">リソース</span> 그룹에 <span class=\"uitext\">Image</span> 컬럼 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">コンテナアプリケーションリスト</span>メニューの<span class=\"uitext\">リソース</span>グループに<span class=\"uitext\">Image</span>カラムを追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Kubernetesイベント</span> 메뉴의 이벤트 목록 테이블에 <span class=\"uitext\">イベントの初回発生時刻</span>과 <span class=\"uitext\">イベント発生件数</span> 컬럼 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Kubernetesイベント</span>メニューのイベントリストテーブルに<span class=\"uitext\">イベントの初回発生時刻</span>と<span class=\"uitext\">イベント発生件数</span>カラムを追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span> 메뉴에 파드 목록 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span>メニューにPod一覧を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トレース分析</span> 창의 <span class=\"uitext\">レコード要約</span> 탭에서 <strong>Container Id</strong>, <strong>Pod Name</strong> 정보를 제공하고, 해당 정보를 클릭하면 각각 컨테이너 목록, 파드 목록 페이지로 이동하는 기능 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トレース分析</span>画面の<span class=\"uitext\">レコード要約</span>タブで<strong>Container Id</strong>、<strong>Pod Name</strong>情報を提供し、その情報をクリックすると、それぞれコンテナリスト、パドリストページに移動する機能を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 쿠버네티스 에이전트가 비활성화되면 사용자가 바로 인지할 수 있도록 화면 상단에 에이전트 상태 표시 추가</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>Kubernetesエージェントが非活性化されると、ユーザーがすぐに認知できるように画面上部にエージェント状態表示を追加</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span> 메뉴의 컨테이너 목록에서 컨테이너 상세 버튼의 UI 개선</p>"
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span>メニューのコンテナ一覧でコンテナ詳細ボタンのUIを改善</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span> 메뉴의 요약 또는 상세 보기에서, <strong>Node.js</strong> 애플리케이션 에이전트가 설치된 블록은 <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span> 탭에서 <strong>Application 로그</strong>를 표시하지 않도록 수정(<strong>Node.js</strong> 상품 로그 모니터링 미지원)</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの要約または詳細を見るで、<strong>Node.js</strong>アプリケーションエージェントがインストールされているブロックは、<span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span>タブで<strong>Applicationログ</strong>を表示しないように修正(<strong>Node.js</strong>製品ログのモニタリング未対応)</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span> 메뉴에 처음 진입하여 Pod 뷰 또는 컨테이너 뷰로 전환할 때 일시적으로 데이터가 잘못 출력되는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューに最初に進入してPodビューまたはコンテナビューに切り替える時、一時的にデータが誤って出力される問題を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span> 메뉴에서 상단 지표 타이틀 미표기 현상 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span>メニューで上段のメトリクスタイトルが未表記される現象を修正</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 특정 날짜를 기준으로 설정된 시간대의 SQL의 추이를 비교하고 등락을 확인할 수 있는 <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Top SQL比較</span> 메뉴 추가</p>",
-        "category": "공통"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>特定の日付を基準に設定された時間帯のSQLの推移を比較し、騰落を確認できる<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Top SQL比較</span>メニューを追加</p>",
+        "category": "共通"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 플랜 조회를 위해 쿼리를 선택하면 표시되는 <span class=\"uitext\">SQL詳細</span> 창에서 Full Scan 부분을 빨간색으로 표시하도록 변경</p>",
-        "category": "공통"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>プラン照会のためにクエリを選択すると表示される<span class=\"uitext\">SQL詳細</span>画面でFull Scan部分を赤色で表示するように変更</p>",
+        "category": "共通"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 다음 메뉴 경로의 화면 상단 옵션바에 데이터베이스 이름을 표시하도록 수정</p>",
-        "category": "공통",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>次のメニュー経路の画面上部のオプションバーにデータベース名を表示するように修正</p>",
+        "category": "共通",
         "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></li>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">スロークエリ</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">デッドロック</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">カウント推移比較</span></li>\n<li><span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">データベース</span></li>\n</ul>"
       },
       {
@@ -475,24 +440,24 @@
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> 메뉴에서 플랜 조회 시 표시되는 오브젝트 상세 창에 에러 처리 추가</p>",
-        "category": "공통"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューでプラン照会時に表示されるオブジェクト詳細画面にエラー処理を追加</p>",
+        "category": "共通"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span> 메뉴의 XOS2 지표 대체 안내 메시지가 더 이상 나타나지 않도록 변경</p>",
-        "category": "공통"
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューのXOS2メトリクス置き換えの案内メッセージがこれ以上表示されないように変更</p>",
+        "category": "共通"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span> 메뉴에서 일부 위젯의 이름 변경</p>",
-        "category": "공통",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで一部のウィジェット名を変更</p>",
+        "category": "共通",
         "details": "<p><strong>Long Active Sessions</strong> → <em><strong>Long Active Session Count</strong></em></p>"
       },
       {
@@ -500,8 +465,8 @@
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 다음 메뉴 경로에서 <span class=\"uitext\">アクティブセッション</span> 섹션의 항목을 선택하면 나타나는 <span class=\"uitext\">セッション詳細</span> 창을 통해 <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">セッション履歴</span> 메뉴로 이동하면 해당 세션이 수행되는 시간의 전후 30분을 기본 조회하도록 변경</p>",
-        "category": "공통",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>次のメニューのパスで、<span class=\"uitext\">アクティブセッション</span>セクションの項目を選択して現れる<span class=\"uitext\">セッション詳細</span>画面を通じて<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">セッション履歴</span>メニューに移動すると、そのセッションが行われる時間の前後30分を基本照会するように変更</p>",
+        "category": "共通",
         "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></li>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span></li>\n</ul>"
       },
       {
@@ -509,23 +474,23 @@
         "hash": "service-270",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> 메뉴에서 <span class=\"uitext\">エージェント非活性化の警告</span> 옵션의 기본 시간을 30초에서 1분으로 변경</p>",
-        "category": "공통"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューで<span class=\"uitext\">エージェント非活性化の警告</span>オプションの基本時間を30秒から1分に変更</p>",
+        "category": "共通"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span> 메뉴에서 소수점 값 기준으로 오름차순 또는 내림차순 정렬되지 않는 문제 수정</p>",
-        "category": "공통"
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューで小数点値を基準に昇順または降順にソートされない問題を修正</p>",
+        "category": "共通"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span> 메뉴에 DB가 기동한 지 얼마나 시간이 지났는지 확인할 수 있는 <em><strong>Uptime</strong></em> 위젯 추가</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューにDBが起動してからどれくらい時間が経ったのかを確認できる<em><strong>Uptime</strong></em>ウィジェットを追加</p>",
         "category": "PostgreSQL / MySQL"
       },
       {
@@ -533,14 +498,14 @@
         "hash": "service-270",
         "product": "URL",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> URL 목록 안내 문구 디자인 변경</p>"
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> URLリストの案内メッセージのデザインを変更</p>"
       },
       {
         "ver": "Service 2.7.0",
         "hash": "service-270",
         "product": "Log",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログトレンド</span> 메뉴에서 조회 시간을 변경했을 때 조회 데이터가 없으면 이전 데이터가 남아 있는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログトレンド</span>メニューで照会時間を変更した時に照会データがなければ、以前のデータが残っている問題を修正</p>"
       }
     ]
   }

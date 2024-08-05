@@ -17,9 +17,29 @@ Escape character is '^]'.
 
 :::note
 
-WhaTapの収集サーバー情報は、**_プロジェクトメニュー_** > **_管理_** > **_エージェントのインストール_**メニューから確認できます。
+WhaTapの収集サーバー情報は、<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューから確認できます。
 
 :::
+
+<InDoc product="mssql">
+
+## SSL認証関連の問題
+
+エージェントからデータベースに接続する際にSSLセキュリティに関して次のような問題が発生した場合、JDBCに接続する際にSSL 認証を使用しないようにオプションを設定する必要があります。
+
+```txt
+com.microsoft.sqlserver.jdbc.SQLServerException: The driver could not establish a secure connection to SQL Server by using Secure Sockets Layer (SSL) encryption.
+
+com.microsoft.sqlserver.jdbc.SQLServerException: "enctyp1" property is set to "true" and "trustServerCertificate" property is set to "false" but the driver could not establish a secure connection to SQL Server by ising Secure Sockets Layer (SSL) encryption
+```
+
+エージェント設定ファイル(*whatap.conf*)にSSL認証を使用しないように、次のオプションを設定してください。
+
+```ini title="whatap.conf"
+connect_option=encrypt=true;trustServerCertificate=true
+```
+
+</InDoc>
 
 ## 制約事項
 

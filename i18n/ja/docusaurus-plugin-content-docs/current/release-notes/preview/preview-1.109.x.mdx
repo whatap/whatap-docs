@@ -169,9 +169,9 @@ toc_max_heading_level: 2
 
 ### `Database`
 
-#### MySQL, PostgreSQL
+#### MySQL、PostgreSQL
 
-<p><Status>Changed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>モニタリング用アカウントの生成</UI>セクションでAWS RDS セッション中止<code>grant</code>コマンドの追加</p>
+<p><Status>Changed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューの<UI>アカウント生成</UI>セクションのAWS RDSでkill session使用時に<code>grant</code>コマンドの追加</p>
 
 </div>
 
@@ -189,11 +189,11 @@ toc_max_heading_level: 2
 
 ### `Server`
 
-- <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>リソースボード</UI>/<UI>CPUリソースマップ</UI>メニューのレイアウトがSafariブラウザで正しく表示されない問題の修正
+- <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>リソースボード</UI>/<UI>CPU Resource Map</UI>のレイアウトがSafariブラウザで正しく表示されない問題の修正
 
 - <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューの<UI>イベント追加</UI>ウィンドウから<UI>アラート通知条件</UI>のメトリクステキストが幅に合わせて改行されるように修正
 
-- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからWindowsインストールファイルオプションのうち<UI>Silent Install</UI>ボタンを除去
+- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューからWindowsインストールファイルオプションのうち<UI>Silent Install</UI>ボタンを除去
 
 - <Status>Fixed</Status><UI>ログ</UI>><UI>ログ設定</UI>メニューからウィンドウコマンドコードのディレクトリパスの修正
 
@@ -229,7 +229,7 @@ toc_max_heading_level: 2
 
 ### `Database`
 
-<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューでプラン照会ができない現象を修正</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューでプラン照会ができない不具合を修正</p>
 
 ---
 
@@ -265,7 +265,7 @@ toc_max_heading_level: 2
 
 ### `共通`
 
-- <Status>Feature</Status><UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択した場合、デフォルトのインターバル値を表示する機能の追加
+- <Status>Feature</Status><UI>間隔</UI>選択オプションから<UI>デフォルト</UI>項目を選択した場合、デフォルトの間隔を表示する機能の追加
 
   <div class='.release-compare'>
 
@@ -275,15 +275,15 @@ toc_max_heading_level: 2
 
   </div>
 
-- <Status>Changed</Status><UI>時間</UI>照会区間が変更されるとき<UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択するようにロジックを修正
+- <Status>Changed</Status><UI>時間</UI>照会区間が変更されるとき<UI>間隔</UI>選択オプションから<UI>デフォルト</UI>項目を選択するようにロジックを修正
 
-  照会区間を変更する際、**_インターバル_**オプションが**_デフォルト_**項目が選択される場合は、次のとおりです。
+  照会区間を変更する際、**_間隔_**オプションが**_デフォルト_**項目が選択される場合は、次のとおりです。
 
-  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**の場合
+  - **_間隔_**オプションで以前の選択項目が**_デフォルト_**の場合
 
-  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、変更された**_インターバル_** オプション一覧にない場合
+  - **_間隔_**オプションで以前の選択項目が**_デフォルト_**ではなく、変更された**_間隔_** オプション一覧にない場合
 
-  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、選択した**_インターバル_** オプション値が照会期間の半分以下の場合
+  - **_間隔_**オプションで以前の選択項目が**_デフォルト_**ではなく、選択した**_間隔_** オプション値が照会期間の半分以下の場合
 
 - <Status>Fixed</Status>一部の状況で<UI>カラム設定</UI>ポップアップの<UI>確認</UI>ボタンを押したときに、不明なエラーメッセージを表示し、作動しないエラーの修正
 

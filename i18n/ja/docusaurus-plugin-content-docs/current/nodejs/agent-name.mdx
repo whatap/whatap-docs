@@ -7,6 +7,8 @@ tags:
   - エージェント名
 ---
 
+import OkindNodename from "../common-items/_agent-name-okind-onode-desc.mdx";
+
 ## エージェント名識別{#agentname}
 
 import Apmnamedescription from "../common-items/_apm-name-description.mdx";
@@ -86,14 +88,6 @@ var whatap=require('whatap').NodeAgent;
 
 Node.jsエージェント名の設定の詳細については、 [次の文書](#agentname)を参照してください。
 
-- **whatap.okind** <span class='type'>String</span>
-
-  エージェントが所属するグループ単位を設定します。複数のエージェントをまとめて設定し、そのグループ名でトポロジを確認できます。
-
-- **whatap.onode** <span class='type'>String</span>
-
-  エージェントが属するNode単位を設定します。
-
 - **auto_oname_enabled** <span class='type'>Boolean</span>
 
   既定値`false`
@@ -111,3 +105,5 @@ Node.jsエージェント名の設定の詳細については、 [次の文書](
   既定値`0`
 
   サーバーから新しいエージェント名を取得するために修正します。エージェント名が設定されると、Node.jsが再起動するまで保持されます。リセットする場合は、`auto_oname_reset`値を修正してください。現在の設定値と異なる値に変更すると有効になります。
+
+<OkindNodename />

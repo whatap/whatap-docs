@@ -1,8 +1,8 @@
 ログパーサを使用すると、不規則な形のログをクエリが可能な構造化された形に変更できます。 WhaTapログモニタリングは、次の2つのタイプのパーサを提供します。
 
-- **GROKパーサ**: 任意の形で収集されるログを正規表現式とGROK文法を活用してパーシングします。
+- **GROKパーサ**：任意の形で収集されるログを正規表現とGROKを活用してパーシングします。
 
-- **JSONパーサ**: JSON形式で収集されるログをパーシングします。
+- **JSONパーサ**：JSON形式で収集されるログをパーシングします。
 
 :::note
 
@@ -16,7 +16,7 @@
 
 ## GROKパーサ{#grok-parser-detail}
 
-ログが不規則な形で収集される場合、GROKパーサを使用してログをパーシングできます。 GROK文法は、named regular expressionsを提供し、正規表現式をより簡単かつ便利に使用できます。 
+ログが不規則な形で収集される場合、GROKパーサを使用してログをパーシングできます。 GROKパターンは、named regular expressionsを提供し、正規表現をより簡単かつ便利に使用できます。 
 
 GROKパーサーパターンの登録については、次の動画ガイドを参考にしてください。
 
@@ -26,17 +26,17 @@ GROKパーサーパターンの登録については、次の動画ガイドを�
 
 GROKは2種類の文法を提供します。
 
-1. `%{SYNTAX:SEMANTIC}`: GROKライブラリーが提供する文法です。 **named regular expressions**を活用してタグを抽出することができます。 活用例は [次へ](#syntax-semantic-usage)を参照してください。
+1. `%{SYNTAX:SEMANTIC}`：GROKライブラリーが提供するパターンです。 **named regular expressions**を活用してタグを抽出できます。 活用例は [次へ](#syntax-semantic-usage)を参照してください。
 
-   - **SYNTAX**: GROKが提供するnamed regular expressionsを指定します。
+   - **SYNTAX**：GROKが提供するnamed regular expressionsを指定します。
 
-   - **SEMANTIC**:  マッチングされる値に付ける名前を指定します。
+   - **SEMANTIC**：マッチングされる値に付ける名前を指定します。
 
    :::note
 
    **named regular expressions**
 
-   GROKが提供する文法です。 複雑な正規表現式に名前を付けて使用できるよう、GROKが提供する機能です。
+   GROKが提供するパターンです。 複雑な正規表現に名前を付けて使用できるよう、GROKが提供する機能です。
 
    | name     | regular expression                                     |
    | -------- | ------------------------------------------------------ |
@@ -49,17 +49,17 @@ GROKは2種類の文法を提供します。
 
    :::
 
-2. `(?<SEMANTIC>REGX)`: 正規表現式の**named capturing group**文法です。 正規表現式を活用して、ユーザーの意図に合わせてタグを抽出できます。 活用例は[次へ](#semantic-regx)を参照してください。
+2. `(?<SEMANTIC>REGX)`：正規表現の**named capturing group**文法です。 正規表現を活用して、ユーザーの意図に合わせてタグを抽出できます。 活用例は[次へ](#semantic-regx)を参照してください。
 
-   - **SEMANTIC**: マッチングされる値に付ける名前を指定します。
+   - **SEMANTIC**：マッチングされる値に付ける名前を指定します。
 
-   - **REGX**: マッチングに使用する正規表現式を入力します。
+   - **REGX**：マッチングに使用する正規表現を入力します。
 
    :::note
 
    **named capturing group**
 
-   正規表現式で提供する文法です。 
+   正規表現の文法です。 
 
    - capturing group: 複数のトークンを1つにまとめて1つのマッチング単位で使用する機能を意味します。
 
@@ -67,14 +67,14 @@ GROKは2種類の文法を提供します。
 
    - 文字列マッチングの例を見てみましょう。 dev@whatap.io
 
-     > - 例1`(\w+)@(\w+\.\w+)`
-     > - 例2 Eメールすべてのマッチング及びusernameとdomain追加マッチングすると`(?<username>\w+)@(?<domain>\w+\.\w+)`
+     > - 例1：`(\w+)@(\w+\.\w+)`
+     > - 例2：Eメールすべてのマッチング及びusernameとdomain追加マッチングすると`(?<username>\w+)@(?<domain>\w+\.\w+)`
 
    :::
 
-#### `%{SYNTAX:SEMANTIC}`活用例{#syntax-semantic-usage}
+#### `%{SYNTAX:SEMANTIC}`活用の例{#syntax-semantic-usage}
 
-次は`%{SYNTAX:SEMANTIC}`文法を活用する例です。
+次は`%{SYNTAX:SEMANTIC}`を活用する例です。
 
 ```text title='Sample log'
 [2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms
@@ -86,7 +86,7 @@ GROKは2種類の文法を提供します。
 [date][logLevel][caller] projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuildElapsed
 ```
 
-semanticな単語すべて、正規表現式に置き換えることができます。 GROKパーサを使用すると、事前に定義されたnamed regular expressionsを活用できます。 ここで使われた`TIMESTAMP_ISO8601`,`LOGLEVEL`,`DATA`は、GROKが提供するnamed regular expressionsです。 これらの値は、それぞれ次の正規表現式に置き換えられてマッチングされます。 
+semanticな単語すべて、正規表現に書き換えできます。 GROKパーサーを使用すると、事前に定義されたnamed regular expressionsを活用できます。 ここで使われた`TIMESTAMP_ISO8601`、`LOGLEVEL`、`DATA`は、GROKが提供するnamed regular expressionsです。 これらの値は、それぞれ次の正規表現に置き換えられてマッチングされます。 
 
 - name: `TIMESTAMP_ISO8601` 
 
@@ -104,7 +104,7 @@ semanticな単語すべて、正規表現式に置き換えることができま
 \[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]
 ```
 
-上記の文法でパーシングすると、次のようにタグを抽出できます。 こうしてGROKの`%{SYNTAX:SEMANTIC}`文法は複雑で長い正規表現式を簡単かつ簡潔に適用できるように役立つ役割を果たします。
+上記の内容でパーシングすると、次のようにタグを抽出できます。 このようにGROKの`%{SYNTAX:SEMANTIC}`パターンは、複雑で長い正規表現を簡単に適用できる機能を提供します。
 
 ```text title='Tag extraction'
 - date : 2023-08-08 02:02:30,101
@@ -112,9 +112,9 @@ semanticな単語すべて、正規表現式に置き換えることができま
 - level : LEVEL
 ```
 
-#### `(?<SEMANTIC>REGX)`活用例{#semantic-regx}
+#### `(?<SEMANTIC>REGX)`活用の例{#semantic-regx}
 
-named regular expressionsでマッチングされない部分は`(?<SEMANTIC>REGX)`パターンを使ってパーシングできます。 上記の[サンプルログ](#syntax-semantic-usage)から`%{SYNTAX:SEMANTIC}`文法だけでパーシングされない領域は次の通りです。
+named regular expressionsでマッチングされない部分は`(?<SEMANTIC>REGX)`パターンを使ってパーシングできます。 上記の[サンプルログ](#syntax-semantic-usage)から`%{SYNTAX:SEMANTIC}`パターンだけでパーシングされない領域は次の通りです。
 
 ```text title='Unparsed area'
 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms
@@ -126,9 +126,9 @@ named regular expressionsでマッチングされない部分は`(?<SEMANTIC>REG
 projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuildElapsed
 ```
 
-このように不規則な形の文字列は、次のような`(?<SEMANTIC>REGX)`文法を使ってパーシングできます。 
+このように不規則な形の文字列は、次のような`(?<SEMANTIC>REGX)`パターンを使ってパーシングできます。 
 
-##### サンプルログパーシングキーワード別にマッチングされる正規表現式
+##### サンプルログパーシングキーワード別にマッチングされる正規表現
 
 | パーシングキーワード            | `(?<SEMANTIC>REGX)`                                     |
 | --------------------- | ------------------------------------------------------- |
@@ -140,7 +140,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 | 56 ms                 | `(?<dexBuildElapsed>\d{2})ms`                           |
 
 <details>
-<summary><b>基本正規表現式文法</b></summary>
+<summary><b>正規表現の基本文法</b></summary>
 
 | 文法               | 意味                                                                 | 別名             |
 | ---------------- | ------------------------------------------------------------------ | -------------- |
@@ -169,13 +169,13 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 </details>
 
-このようにパーシングされたキーワードをスペース(`\s`)と、特殊文字escape(`\{`, `\,`, `\}`)で接続すると、次のようにパターンを適用できます。
+このようにパーシングされたキーワードをスペース(`\s`)と、特殊文字escape(`\{`、`\,`、`\}`)で接続すると、次のようにパターンを適用できます。
 
 ```text title='GROK parsing pattern'
 (?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms
 ```
 
-上記の文法でパーシングすると、次のようにタグを抽出できます。
+上記の内容でパーシングすると、次のようにタグを抽出できます。
 
 ```text title='Tag extraction'
 - projectCode : 8
@@ -206,7 +206,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    - <Cmdname sid="ITM06439" className="uitext" />
 
-     - 条件を満たすログのみパーサが適用されます。
+     - 条件を満たすログのみパーサーが適用されます。
 
      - <Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力してください。
 
@@ -228,19 +228,19 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 :::note
 
-**GROKパーサ注意事項**
+**GROKパーサーの注意事項**
 
-- GROKパーサは`%{SYNTAX:SEMANTIC}`、`%{SYNTAX:SEMANTIC}`二つのパターンをサポートします。
+- GROKパーサーは`%{SYNTAX:SEMANTIC}`、`%{SYNTAX:SEMANTIC}`二つのパターンをサポートします。
 
 - `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`を必ず入力してください。
 
 - `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`は一つのパーサーの中でuniqueしなければなりません。
 
-- `(?<SEMANTIC>REGX)`パターンを使用する時、`SEMANTIC`は文字(a-z, A-Z)と数字(0-9)そして、指定された特殊文字(`.`, `_`, `-`)のみが使えます。
+- `(?<SEMANTIC>REGX)`パターンを使用する時、`SEMANTIC`は文字(a-z、A-Z)と数字(0-9)そして、指定された特殊文字(`.`、`_`、`-`)のみが使えます。
 
-- `SEMANTIC`は文字(a-z, A-Z)で始めなければなりません。
+- `SEMANTIC`は文字(a-z、A-Z)で始めなければなりません。
 
-- `SEMANTIC`は文字(a-z, A-Z)または数字(0-9)で終わる必要があります。
+- `SEMANTIC`は文字(a-z、A-Z)または数字(0-9)で終わる必要があります。
 
 :::
 
@@ -260,7 +260,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    <ImgLang img='log-grok-parser-simulation.png' desc='GROKパーサーシミュレーション'/>
 
-## JSONパーサ{#json-parser-detail}
+## JSONパーサー{#json-parser-detail}
 
 ログがJSONフォーマットで収集される場合、JSONパーサを使用して簡単かつ便利にパーシングできます。
 
@@ -274,7 +274,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_JSON_**パーサを選択してください。
 
-   <ImgLang img='log-1st-json.png' desc='JSONットのパーサーパターンの登録'/>
+   <ImgLang img='log-1st-json.png' desc='JSONパーサーパターンの登録'/>
 
 3. <Cmdname sid="category" className="uitext" />および<Cmdname sid="ITM06439" className="uitext" />、<Cmdname sid="pattern" className="uitext" />を入力してください。 <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウのコンポーネントは次の通りです。
 
@@ -284,7 +284,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    - <Cmdname sid="ITM06439" className="uitext" />
 
-     - 条件を満たすログのみパーサが適用されます。
+     - 条件を満たすログのみパーサーが適用されます。
 
      - <Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力してください。
 
@@ -292,19 +292,19 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    - <Cmdname sid="pattern" className="uitext" />
 
-     - **_プレフィックス_**
+     - **_Prefix_**
 
        ログからJSONフォーマットが開始する位置を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
 
-     - **_ポストフィックス_**
+     - **_Postfix_**
 
        ログでJSONフォーマットが終了する位置を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
 
-     - **_無視する_**
+     - **_Ignore_**
 
        JSONフォーマット中にタグを生成しないキーを指定します。
 
-     - JSONパターン例
+     - JSONパターンの例
 
        ```javascript title='Example'
        2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
@@ -318,7 +318,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 - ログパーサー一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更したり<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
 
-- パーサを登録する前に<Cmdname sid="simulation" className="uitext" />を通じて登録しようとするパターンが正常であるか確認できます。 GROKパーサ登録シミュレーションプロセスと同じです。 [次の文書](#grok-simulation)を参考にしてください。
+- パーサを登録する前に<Cmdname sid="simulation" className="uitext" />を通じて登録しようとするパターンが正常であるか確認できます。 GROKパーサー登録シミュレーションプロセスと同じです。 [次の文書](#grok-simulation)を参考にしてください。
 
 :::
 
@@ -343,7 +343,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
 ```
 
-もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は**_プレフィックス_**と**_ポストフィックス_**を指定してください。 WhaTapログモニタリングは**_プレフィックス_**と**_ポストフィックス_**間の領域をJSONフォーマットで認識してからパーシングします。
+もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は**_Prefix_**と**_Postfix_**を指定してください。 WhaTapログモニタリングは**_Prefix_**と**_Postfix_**間の領域をJSONフォーマットで認識してからパーシングします。
 
 ```javascript title='Tag extraction'
 - host : 10.21.3.24

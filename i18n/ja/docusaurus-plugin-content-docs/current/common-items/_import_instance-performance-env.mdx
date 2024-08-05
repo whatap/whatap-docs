@@ -1,0 +1,19 @@
+## 環境変数 {#side_environmentVariable}
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_environmentVariable" className="uitext" />
+
+<ProdImg img="ipa-env-var.png" desc="環境変数" />
+
+アプリケーションの実行に関連する環境変数情報を照会できます。 <Cmdname sid="boot_env" className="uitext" />メニューは、照会時点の環境変数情報を収集して提供します。 `System.getProperty()`を使用して、パラメータとして渡されたキーの値を照会します。 主な確認事項は次のとおりです。 
+
+- `(アプリケーション).version`: アプリケーションのバージョンを確認できます。 
+
+- `file.encoding`: `utf-8`といったファイルエンコーディング形式を確認できます。
+
+<InDoc product="java">
+
+- アプリケーションステータス情報: 例えば`catalina.home`環境変数が照会される場合、tomcat環境であることが把握できます。
+
+</InDoc>
+
+- OS環境変数: 例えば`(env) LANG`環境変数のように接尾辞`(env)`形式で提供されます。

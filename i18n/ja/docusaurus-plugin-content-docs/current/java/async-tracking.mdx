@@ -19,7 +19,7 @@ Javaエージェント設定を通じてCompletableFutureメソッドを収集�
 
 ユーザーのJavaアプリケーションプロジェクトにエージェントとしてhookingするCompletableFutureメソッドを追加してください。
 
-- メソッド名:'trace'で統一
+- メソッド名：'trace'で統一
 
 - ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
 
@@ -48,7 +48,7 @@ public class W {
 
 ### エージェント設定の追加
 
-エージェント設定のために*whatap.conf*ファイルに次のオプションを追加してください。
+エージェント設定のため、*whatap.conf*ファイルに次のオプションを追加します。
 
 ```ini title='whatap.conf'
 hook_completablefuture_patterns=io.home.test.util.W.*
