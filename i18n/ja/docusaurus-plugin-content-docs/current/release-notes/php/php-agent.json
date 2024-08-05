@@ -1,6 +1,29 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/php/php-2_7_2",
+    "url": "http://localhost:4000/release-notes/php/php-2_8_1",
+    "ver": "v2.8.1",
+    "date": "2024-07-24",
+    "Lists": [
+      {
+        "ver": "v2.8.1",
+        "hash": "v281",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> IPアドレス別トランザクション統計を収集するエージェント設定オプションを追加</p>",
+        "details": "<blockquote>\n<p><strong>whatap.stat_ipurl_enabled</strong> <span class=\"type\">Boolean</span>、既定値<code>false</code></p>\n</blockquote>"
+      },
+      {
+        "ver": "v2.8.1",
+        "hash": "v281",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> 統計圧縮転送を設定するエージェント設定オプションを追加</p>",
+        "details": "<blockquote>\n<p><strong>whatap.stat_zip_enabled</strong> <span class=\"type\">Boolean</span>、既定値<code>true</code></p>\n</blockquote>"
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:4000/release-notes/php/php-2_7_2",
     "ver": "v2.7.2",
     "date": "2024-03-06",
     "Lists": [
@@ -22,7 +45,28 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/php/php-2_8_0",
+    "url": "http://localhost:4000/release-notes/php/php-2_7_1",
+    "ver": "v2.7.1",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "v2.7.1",
+        "hash": "v271",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>whatap.onode</code>オプション設定後、名前ではなくハッシュ(数字)値のみ表記されるエラーを修正</p>"
+      },
+      {
+        "ver": "v2.7.1",
+        "hash": "v271",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Ubuntu 14バージョンでwhatap-php.serviceファイルが認識されないエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:4000/release-notes/php/php-2_8_0",
     "ver": "v2.8.0",
     "date": "2024-06-19",
     "Lists": [
@@ -52,28 +96,7 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/php/php-2_7_1",
-    "ver": "v2.7.1",
-    "date": "2024-01-24",
-    "Lists": [
-      {
-        "ver": "v2.7.1",
-        "hash": "v271",
-        "product": "PHP Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>whatap.onode</code>オプション設定後、名前ではなくハッシュ(数字)値のみ表記されるエラーを修正</p>"
-      },
-      {
-        "ver": "v2.7.1",
-        "hash": "v271",
-        "product": "PHP Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Ubuntu 14バージョンでwhatap-php.serviceファイルが認識されないエラーを修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/php/php-2_7_0",
+    "url": "http://localhost:4000/release-notes/php/php-2_7_0",
     "ver": "v2.7.0",
     "date": "2024-01-10",
     "Lists": [
