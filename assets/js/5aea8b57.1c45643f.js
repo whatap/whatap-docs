@@ -227,7 +227,7 @@ function _createMdxContent(props) {
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TTL06224",
             className: "uitext"
-          }), " 창에서 라이브러리 포맷팅 오류 발생 시 포맷팅 불가능하도록 수정"]
+          }), " 창에서 라이브러리 포맷팅 오류 발생 시 포맷팅할 수 없도록 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
