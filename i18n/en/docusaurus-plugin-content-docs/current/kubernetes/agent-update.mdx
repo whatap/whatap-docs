@@ -13,9 +13,7 @@ import TabItem from '@theme/TabItem';
 
 :::note 
 
-- EKS Fargate is to be supported later. 
-
-- The latest version of the WhaTap Kubernetes agent can be checked in [hub.docker.com](https://hub.docker.com/r/whatap/kube_mon/tags).
+EKS Fargate is to be supported later. 
 
 :::
 
@@ -33,9 +31,8 @@ If an agent update is required, execute the following command:
   kubectl set image -n whatap-monitoring daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent_version}
   ```
 
-- **Agent application updates upon installation based on the Helm chart**
+:::note
 
-  ```bash
-  # Upgrade release
-  helm upgrade whatap-kube-agent whatap/kube -f values.yaml
-  ```
+The latest version of the WhaTap Kubernetes agent can be checked in [hub.docker.com](https://hub.docker.com/r/whatap/kube_mon/tags).
+
+:::
