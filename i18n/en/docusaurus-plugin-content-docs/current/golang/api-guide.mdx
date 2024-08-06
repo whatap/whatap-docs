@@ -314,45 +314,46 @@ func main(){
     trace.Init(nil)
     //It must be executed before closing the app.
     defer trace.Shutdown()
-  
+
     ctx, _ := trace.Start(context.Background(), "Trace Http Call")
     defer trace.End(ctx, nil)
-  
+
     httpcCtx, _ := httpc.Start(ctx, callUrl)
     resp, err := http.Get(callUrl)
     if err == nil {
-      httpc.End(httpcCtx, resp.StatusCode, "", nil)
+        httpc.End(httpcCtx, resp.StatusCode, "", nil)
     } else {
-      httpc.End(httpcCtx, 0, "", err)
+        httpc.End(httpcCtx, 0, "", err)
     }
 }
 ```
 
 ### http transport RoundTrip
 
-You can set up the RoundTrip.
+You can set the RoundTrip.
 
 ```go title="Go"
 import (
     "github.com/whatap/go-api/instrumentation/net/http/whataphttp"
 )
+
 func main() {
-    config := make(map[string]string)  
-    trace.Init(config)  
-    defer trace.Shutdown()    
-    
-    ctx, _ := trace.Start(context.Background(), "Http call")  
-    defer trace.End(ctx, nil)  
-    
-    callUrl := "http://aaa.com/xxx"  
-    client := http.DefaultClient        
-    // Use WhaTap RoundTrip. It passes the contexts that have TraceCtx.   
-    client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)        
-    resp, err := client.Get(callUrl)  
-    if err != nil {      
+    config := make(map[string]string)
+    trace.Init(config)
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Http call")
+    defer trace.End(ctx, nil)
+
+    callUrl := "http://aaa.com/xxx"
+    client := http.DefaultClient
+    // Use WhaTap RoundTrip. Passes the context with whatap's TraceCtx.
+    client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)
+    resp, err := client.Get(callUrl)
+    if err != nil {
         ...
     }
-    defer resp.Body.Close()  
+    defer resp.Body.Close()
     ...
 }
 ```
@@ -371,21 +372,21 @@ func End(httpcCtx *HttpcCtx, status int, reason string, err error) error
 func Trace(ctx context.Context, host string, port int, url string, elapsed int, status int, reason string, err error) error
 ```
 
-## Multi-Transacrtion Trace {#mtrace}
+## Tracing multi-transactions (distributed tracing) {#mtrace}
 
-**Multi-transaction** refers to transactions associated with other agents or projects. Tracking calls between application services registered in the WhaTap project is called **multi-transaction** tracing.
+**Multi-transaction** means the transaction involving a different agent or project. **Multiple Transaction Trace** is to trace calls between the application services registered in the WhaTap project.
 
 :::note
 
-WhaTap tracks multi-transactions using three HTTP header keys (`x-wtap-po`, `x-wtap-mst`, `x-wtap-sp1`). If cross-link tracking of HTTP transactions passing through a gateway which is not working, please check the HTTP header conditions.
+The Go agent traces multiple transactions with three HTTP header keys (`x-wtap-po`, `x-wtap-mst`, `x-wtap-sp1`). If HTTP transactions passing through the gateway are not being correlated for tracing, check the HTTP header conditions.
 
-Supports TraceContext for open-source tracing (traceparent header tracing).
+It supports TraceContext for open source tracing. (traceparent header tracing)
 
 :::
 
 ### Configuring the agent
 
-Set the followin options on agent coniguration file(*whatap.conf*) for multi-transaction tracing.
+To enable multi-transaction tracing, set the following options in the agent configuration file (_whatap.conf_).
 
 ```ini title="whatap.conf"
 # Activation option, Default: false
@@ -395,7 +396,16 @@ mtrace_enabled=true
 mtrace_rate=100
 ```
 
-The `trace.StartWithRequest` function internally includes calls to the `UpdateMtrace` function. If you are not using the `trace.StartWithRequest` function, analyze the received header information by directly calling it.
+### Passing the Request Header
+
+To check the distributed tracing information (header), pass the Request Header.
+
+```go title="Go"
+// import "github.com/whatap/go-api/trace"
+func UpdateMtrace(traceCtx *trace.TraceCtx, header http.Header) 
+```
+
+The `trace.StartWithRequest` function internally calls the `UpdateMtrace` function. If you do not use the `trace.StartWithRequest` function, you have to directly call it and then analyze the passed header information.
 
 ```go title="Go"
 // func GetTraceContext(ctx context.Context) (context.Context, *TraceCtx)
@@ -410,7 +420,7 @@ if traceCtx != nil {
 
 :::note
 
-Connect to `trace.Start` fucntion:
+See the code inside the `trace.Start` function:
 
 ```go title="Go" showLineNumbers {6}
 func Start(ctx context.Context, name string) (context.Context, error) {
@@ -423,7 +433,7 @@ func Start(ctx context.Context, name string) (context.Context, error) {
     ...
 ```
 
-Conenct to `trace.StartWithRequest` function:
+See the code inside the `trace.StartWithRequest` function:
 
 ```go title="Go" showLineNumbers {6}
 func StartWithRequest(r *http.Request) (context.Context, error) {
@@ -438,9 +448,9 @@ func StartWithRequest(r *http.Request) (context.Context, error) {
 
 :::
 
-### Adding the header information when connection HTTP
+### Adding the header information when accessing the HTTP
 
-When establishing an external HTTP connection, add header information for tracing to the Request headers.
+When making an outbound HTTP connection, add the header information in the Request Header for tracing.
 
 ```go title="Go" showLineNumbers
 import (
@@ -450,7 +460,7 @@ import (
 func GetMTrace(ctx context.Context) http.Header
 ```
 
-The following function retrieves the headers required for distributed tracing. The returned headers should be added to external Request requests. The context must include the `trace.TraceContext` information of the "whatap" item. This information is added internally when using the `trace.Start`, `StartWithRequest`, and `StartWithContext` functions.
+The next is the function to retrieve the headers required for distributed tracing. You have to add the returned headers to the external request. The context must contain `trace.TraceContext` for the 'whatap' entry. The information is added internally as whatap context information when using the `trace.Start`, `StartWithRequest`, and `StartWithContext` functions.
 
 ```go title="Example code" showLineNumbers {1}
 headers := trace.GetMTrace(wCtx)
@@ -461,9 +471,9 @@ for key, _ := range headers {
 }
 ```
 
-### Adding header automatically
+### Adding the header automatically
 
-In the WhaTap transport (RoundTrip), there is already code that utilizes `GetMTrace` internally. Enabling the option will automatically add the header information.
+The WhaTap transport (RoundTrip) already has the code that uses `GetMTrace` internally. You can automatically add header information by simply enabling its option.
 
 ```go title="Example code" showLineNumbers
 import (
@@ -483,7 +493,7 @@ if resp, err := client.Get(callUrl); err == nil {
 }
 ```
 
-The following is sample codes with multiple transprot. The context must include the `trace.TraceContext` information of the "whatap" item.
+The following lists some usage examples of Transport: The context must contain `trace.TraceContext` for the 'whatap' entry. 
 
 ```go title="Exmple code" showLineNumbers
 import (
@@ -498,7 +508,6 @@ client.Transport = NewAccessLogRoundTrip(whataphttp.NewRoundTrip(ctx, http.Defau
 
 ...
 ```
-
 
 ## Function tracing
 
