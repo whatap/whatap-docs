@@ -92,7 +92,50 @@ const config = {
   },
   themes: [
     '@docusaurus/theme-mermaid',
-    '@saucelabs/theme-github-codeblock'
+    '@saucelabs/theme-github-codeblock',
+    [
+      require.resolve("@getcanary/docusaurus-theme-search-pagefind"),
+      { 
+        // https://getcanary.dev/docs/customization/styling#css-variables
+        styles: { 
+          "--canary-color-primary-c": 0.1, 
+          "--canary-color-primary-h": 270, 
+        }, 
+        // https://pagefind.app/docs/ranking
+        pagefind: { 
+          ranking: { 
+            pageLength: 0.9, 
+            termFrequency: 1.0, 
+            termSimilarity: 1.0, 
+            termSaturation: 1.5, 
+          } 
+        },
+        indexOnly: false, 
+        includeRoutes: ["**/*"], 
+        excludeRoutes: [
+          '/tags/*', 
+          '/openapi-old*',
+          '/apidoc/*',
+          '/license/*',
+          '/common-items/*',
+          '/on-prem/*',
+          '/java/install-agent-with-buildpack',
+          '/kubernetes/_docker-build',
+          '/dl-release-notes',
+          '/reference',
+          '/npm/set-agent',
+          '/log/log-intro',
+          '/opentelemetry/*',
+          '/use_guide/*',
+          '/kr/*',
+          '/search',
+          '/blog/archive',
+          '/blog/tags',
+          '/blog/overview',
+          '/release-notes/preview/*'
+        ], 
+      },
+    ],
   ],
   presets: [
     [

@@ -6,6 +6,7 @@
 /node_modules
 /wip-js
 sheets.googleapis.com-whatap-locale.json
+/pagefind
 
 # Generated files
 .docusaurus
