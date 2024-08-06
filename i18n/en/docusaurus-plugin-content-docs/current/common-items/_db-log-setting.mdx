@@ -33,27 +33,9 @@ file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
 
 </InDoc>
 
-<InDoc product="oracle,oracle-pro">
-
-```ini title='xos.conf'
-file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log
-```
-
-</InDoc>
-
 :::note
 
-<InDoc product='mysql,postgresql,oracle'>
-
 Before application, install the XOS agent and then proceed with agent configuration. For more information, see [the following](agent-xos-settings).
-
-</InDoc>
-
-<InDoc product="oracle-pro">
-
-**Oracle Pro** products come with the built-in XOS agent, eliminating the need for a separate installation process.
-
-</InDoc>
 
 :::
 
@@ -214,6 +196,4 @@ Check the resources installed through **AWS CloudFormation**.
 
 After configuring all settings, go to <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" /> to activate the log monitoring.
 
-<Xclude product="oracle-pro"><ImgLang img='log-start-db.png' desc='Start Log Monitoring'/></Xclude>
-
-<InDoc product="oracle-pro"><ImgLang img='log-start-db-oracle-pro.png' desc='Start Log Monitoring'/></InDoc>
+<ImgLang img='log-start-db.png' desc='Start Log Monitoring'/>

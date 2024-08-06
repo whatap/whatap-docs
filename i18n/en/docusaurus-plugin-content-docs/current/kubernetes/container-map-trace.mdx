@@ -24,9 +24,9 @@ To trace applications running on Kubernetes, the WhaTap monitoring agent must ha
 
 :::
 
-<ImgLang img='k8s-container-map-trace.png' desc='Trace' />
+<ImgLang img='whatap_kubernetes_container_map_trace_example.png' desc='Trace' />
 
-{/* **_트레이스_** 기능의 하위 메뉴는 **_대시보드_**, **_트랜잭션 목록_**으로 구성되어 있습니다. */}
+The **_Trace_** function has the following sub menus: **_Dashboard_** and **Transaction List**.
 
 ## Dashboard
 
@@ -78,12 +78,8 @@ Dashboard provides key data for the following applications:
 
 - **_GC Old Generation Count_**: Number of GCs in the Old area (Node.js and Python excluded)
 
-## Trace Analysis
+## Transaction List
 
-You can check **_Trace analysis_** by dragging the desired section to view in **_Hitmap_** of the dashboard. After selecting a desired transaction from the transaction list, you can check the step information under each transaction at a glance. 
+**_Transaction list_** screen provides the transaction list for a specified time period. To check the transaction distribution chart and check only the transactions in a specific section, select (drag) a target from the hitmap chart of the above trace **_Dashboard_**.
 
-:::note 
-
-For more information about the trace analysis, see [the following](../java/dashboard-hitmap-trace). 
-
-:::
+<ImgLang img='k8s-tx-list.png' desc='Transaction List' />

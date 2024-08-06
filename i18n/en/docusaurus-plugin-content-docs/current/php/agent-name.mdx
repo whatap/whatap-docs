@@ -9,9 +9,6 @@ tags:
   - Application
 ---
 
-import Phprestartwhatapservice from "../common-items/_php-restart-whatap-service.mdx";
-import OkindNodename from "../common-items/_agent-name-okind-onode-desc.mdx";
-
 import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
 <Apmnamedescription />
@@ -49,18 +46,18 @@ The default pattern can be modified in _whatap.ini_.
 
   It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.  
 
-  <Phprestartwhatapservice />
+import Phprestartwhatapservice from "../common-items/_php-restart-whatap-service.mdx";
+
+<Phprestartwhatapservice />
 
 - **whatap.app_name** <span class='type'>String</span>
 
   It is a component of the agent name (ONAME) to identify applications. The value corresponds to `{type}` of `object_name`.  
 
-  <Phprestartwhatapservice />
+<Phprestartwhatapservice />
 
 - **whatap.app_process_name** <span class='type'>String</span>
 
   It is a component used in the agent naming (ONAME) scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.  
 
-  <Phprestartwhatapservice />
-
-<OkindNodename />
+<Phprestartwhatapservice />

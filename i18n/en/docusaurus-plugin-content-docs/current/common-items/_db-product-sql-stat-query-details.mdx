@@ -1,7 +1,5 @@
 - <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
 
-<InDoc product='postgresql,mysql'>
-
 - **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
 
 - **_Reset Bind_**: You can release the bound default value and check the variable.
@@ -10,13 +8,11 @@
 
 - **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
+  <InDoc product='postgresql,mysql'>
+
   - **_Text_**: You can check plan information in text format.
 
   - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
-
-</InDoc>
-
-<InDoc product='postgresql'>
 
   :::note
 
@@ -24,46 +20,4 @@
 
   :::
 
-</InDoc>
-
-<InDoc product='mysql'>
-
-  :::note
-
-  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.15 or later.
-
-  :::
-
-</InDoc>
-
-<InDoc product='oracle-pro,oracle'>
-
-- **_Runtime Plan_**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
-
-- **_Explain Plan_**: It displays the execution plan predicted by the optimizer. It provides information such as cost, job, object name, and cardinality.
-
-- **_Plan History_**: You can check the history of the execution plans of the SQL queries executed in the database.
-
-- **_Bind Capture_**: You can see the values ​​of the bind variables used in SQL queries executed in the database. This allows you to see actual content of query executions.
-
-  :::note
-
-  This is a value captured in the database (`v$sql_bind_capture`), not a bind value executed in real time. If the number of cases is too large, it displays up to 100.
-
-  :::
-
-</InDoc>
-
-<InDoc product='postgresql,mysql'>
-
-:::tip
-
-If you select a table or index while viewing the plan information in **_JSON_** format, the **_Object detail_** window appears where you can see the configurations for **columns** and **index** items in the table.
-
-<ImgLang img='db-sql-objectdetail-pg.png' desc='Object detail' />
-
-This function is supported in DBX agent 1.6.15 or later. For more information about the database roles and related settings, see [the following](install-agent#uid).
-
-:::
-
-</InDoc>
+  </InDoc>

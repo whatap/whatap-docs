@@ -1,10 +1,10 @@
 You can monitor the files and directories that exist or can exist on the file system.
 
-<Tabs groupId='server-user-script'>
+<Tabs>
 <TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
-echo "filecheck.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+echo "filecheck.enabled=true" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
 echo "Full path of the file or directory to monitor" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
 ```
 

@@ -17,29 +17,9 @@ Escape character is '^]'.
 
 :::note
 
-The WhaTap collection server data can be found in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />.
+The WhaTap collection server data can be found in **_Project Menu_** > **_Management_** > **_Agent Installation_**.
 
 :::
-
-<InDoc product="mssql">
-
-## SSL authentication-related issues
-
-If you encounter the following SSL security issues when connecting to the database from agents, set the option not to use SSL authentication when connecting JDBC.
-
-```txt
-com.microsoft.sqlserver.jdbc.SQLServerException: The driver could not establish a secure connection to SQL Server by using Secure Sockets Layer (SSL) encryption.
-
-com.microsoft.sqlserver.jdbc.SQLServerException: "enctyp1" property is set to "true" and "trustServerCertificate" property is set to "false" but the driver could not establish a secure connection to SQL Server by ising Secure Sockets Layer (SSL) encryption
-```
-
-Set the following option in the agent configuration file (_whatap.conf_) to disable SSL authentication:
-
-```ini title="whatap.conf"
-connect_option=encrypt=true;trustServerCertificate=true
-```
-
-</InDoc>
 
 ## Constraints
 

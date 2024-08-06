@@ -17,8 +17,6 @@ import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
 <Youtube ko="MWDFeegF6mQ" en="MWDFeegF6mQ" ja="MWDFeegF6mQ" />
 
-<Steps>
-
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
@@ -44,8 +42,8 @@ pip install whatap-python
 If installation is impossible with the pip command, download the installation file in [pypi WhaTap page](https://pypi.org/project/whatap-python/#files). Unzip the downloaded file and then proceed with installation.
 
 ```bash
-tar xzvf whatap_python-1.x.x.tar.gz \
-cd whatap_python-1.X.Y.Z \
+tar xzvf whatap-python-1.x.x.tar.gz \
+cd whatap-python-1.X.Y.Z \
 python setup.py install
 ```
 
@@ -81,6 +79,41 @@ The Python agent file consists of a tracer that extracts data for application mo
 
 </Filetree>
 
+### Docker
+
+In case of the application that is serviced to the docker container, add the following content to _DockerFile_.
+
+1. Installing the **Python agent**.
+
+   ```docker title='Dockerfile' {3}
+   ENV WHATAP_HOME /whatap
+   RUN mkdir -p /whatap
+   RUN pip install whatap-python
+   ```
+
+   :::note
+
+   If you use _requirements.txt_, add **whatap-python** to that file.
+
+   :::
+
+2. Register the settings for **access key** and **collection server IP**.
+
+   ```docker title='Dockerfile'
+   RUN touch /whatap/whatap.conf
+   RUN echo "license=[ ACCESS_KEY ]" > /whatap/whatap.conf
+   RUN echo "whatap.server.host=[ COLLECTION_SERVER_IP ]" >> /whatap/whatap.conf
+   RUN echo "app_name=[ AGENT_NAME ]" >> /whatap/whatap.conf
+   RUN echo "app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]" >> /whatap/whatap.conf
+   ```
+
+3. Before the previous command, `python manage.py runserver`, add `whatap-start-agent`.
+
+   ```docker title='Dockerfile'
+   #ENTRYPOINT python manage.py runserver
+   ENTRYPOINT whatap-start-agent python manage.py runserver
+   ```
+
 ## Agent CONFIG.
 
 ### WHATAP_HOME default path configuration
@@ -93,10 +126,10 @@ $ export WHATAP_HOME=[PATH]
 
 ### Configuring the access key and collection server IP
 
-Execute the `whatap-setting-config` command to set the access key and collection server IP.
+Execute the following command to generate _whatap.conf_ in the path specified in $WHATAP_HOME.
 
 ```bash
-$ whatap-setting-config \
+whatap-setting-config \
 --host [ COLLECTION_SERVER_IP ] \
 --license [ ACCESS_KEY ] \
 --app_name [ USER_DEFINED_AGENT_NAME ] \
@@ -105,21 +138,10 @@ $ whatap-setting-config \
 
 ### Show Configuration
 
-The _whatap.conf_ file is created and set in the path specified in `$WHATAP_HOME`. Execute the following command to check whether the _whatap.conf_ file has been created.
+Check whether the configuration file has been created as follows.
 
 ```bash
 $ cat $WHATAP_HOME/whatap.conf
-```
-
-```ini title="whatap.conf"
-license=[ACCESS_KEY]
-whatap.server.host=[COLLECTION_SERVER_IP]
-
-# application name
-app_name=[ USER_DEFINED_AGENT_NAME ]
-
-# middleware process name ex)uwsgi, gunicorn ..
-app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]
 ```
 
 :::note
@@ -140,11 +162,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ## Applying by the application server environment
 
-The application method may differ depending on the application server environment. Use the application method that suits your environment.
-
-<Tabs>
-
-<TabItem value="command" label="Command">
+### Command
 
 In the **Command** environment, add the `whatap-start-agent` command before the application startup command as follows:
 
@@ -153,9 +171,7 @@ In the **Command** environment, add the `whatap-start-agent` command before the 
 $ whatap-start-agent python manage.py runserver
 ```
 
-</TabItem>
-
-<TabItem value="uwsgi" label="uWSGI">
+### uWSGI
 
 In the **uWSGI** environment, add the `whatap-start-agent` command before the `uwsgi` command as follows:
 
@@ -203,9 +219,7 @@ do_start(){
 
 :::
 
-</TabItem>
-
-<TabItem value="gunicorn" label="Gunicorn">
+### Gunicorn
 
 In the **Gunicorn** environment, add the `whatap-start-agent` command before the `Gunicorn` command as follows:
 
@@ -254,11 +268,7 @@ do_start(){
 
 :::
 
-</TabItem>
-
-<TabItem value="supervisor" label="Supervisor">
-
-In the **Supervisor** environment, add the following settings in the _supervisor.conf_ file to apply:
+### Supervisor
 
 ```ini title="supervisor.conf"
 [program:app-uwsgi]
@@ -281,11 +291,7 @@ command = /usr/sbin/nginx
 
 :::
 
-</TabItem>
-
-<TabItem value="wsgi" label="WSGI">
-
-Implementing your own WSGI application is provided. See the following:
+### Implementing a WSGI application yourself
 
 ```python title="PYTHON"
 import whatap
@@ -299,56 +305,14 @@ def simple_app(environ, start_response):
     return ['Hello world!\n']
 ```
 
-</TabItem>
-
-<TabItem value="docker" label="Docker">
-
-In case of the application that is serviced to the docker container, add the following content to _DockerFile_.
-
-1. Installing the **Python agent**.
-
-   ```docker title='Dockerfile' {3}
-   ENV WHATAP_HOME /whatap
-   RUN mkdir -p /whatap
-   RUN pip install whatap-python
-   ```
-
-   :::note
-
-   If you use _requirements.txt_, add **whatap-python** to that file.
-
-   :::
-
-2. Register the settings for **access key** and **collection server IP**.
-
-   ```docker title='Dockerfile'
-   RUN touch /whatap/whatap.conf
-   RUN echo "license=[ ACCESS_KEY ]" > /whatap/whatap.conf
-   RUN echo "whatap.server.host=[ COLLECTION_SERVER_IP ]" >> /whatap/whatap.conf
-   RUN echo "app_name=[ AGENT_NAME ]" >> /whatap/whatap.conf
-   RUN echo "app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]" >> /whatap/whatap.conf
-   ```
-
-3. Before the previous command, `python manage.py runserver`, add `whatap-start-agent`.
-
-   ```docker title='Dockerfile'
-   CMD ["whatap-start-agent", "python", "manage.py", "runserver", "0.0.0.0:8000"]
-   ```
-
-</TabItem>
-
-<TabItem value="code" label="Code">
+### Applying with the code
 
 You can apply the agent by adding the code that calls the API at the top line of the code as follows:
 
 ```python title="PYTHON"
 import whatap
-whatap.agent()
+whatap.agent
 ```
-
-</TabItem>
-
-</Tabs>
 
 When you run the application server, the agent starts collecting the monitoring data.
 
@@ -359,8 +323,6 @@ Execute the following command to check whether the WhaTap Python service is runn
 ```bash
 ps -ef | grep whatap_python
 ```
-
-</Steps>
 
 ## Next steps
 
