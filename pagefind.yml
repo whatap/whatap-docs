@@ -1,0 +1,33 @@
+site: build
+output_path: build/pagefind
+force_language: ko
+keep_index_url: true
+include_glob:
+  - "**/*.{html,md}"
+exclude_glob:
+  - "en/**/*"
+  - "ja/**/*"
+  - "assets/**/*"
+  - "dl-release-notes/**/*"
+  - "exp/**/*"
+  - "img/**/*"
+  - "apidoc/**/*"
+  - "java/install-agent-with-buildpack/**/*"
+  - "kubernetes/_docker-build/**/*"
+  - "reference/**/*"
+  - "npm/set-agent/**/*"
+  - "log/log-intro/**/*"
+  - "opentelemetry/**/*"
+  - "search/**/*"
+  - "license/**/*"
+  - "openapi-old/**/*"
+  - "release-notes/preview/**/*"
+  - "tags/**/*"
+  - "use_guide/**/*"
+  - "whatap_guide/**/*"
+  - "kr/**/*"
+  - "cover-*/**/*"
+  - "blog/archive/**/*"
+  - "blog/overview/**/*"
+  - "blog/tags/**/*"
+root_selector: .theme-doc-markdown.markdown
