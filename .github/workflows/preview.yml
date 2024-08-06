@@ -15,17 +15,19 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: npm
+
       - name: update docs
         run: git submodule update --init
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
-        run: USE_SIMPLE_CSS_MINIFIER=true yarn build --locale ko --no-minify
+        run: yarn build --locale ko --no-minify
+        
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus

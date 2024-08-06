@@ -1,0 +1,42 @@
+## Heap Histogram {#side_heapHistogram}
+
+Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_heapHistogram" className="uitext" />
+
+<ImgLang img='ipa-heap-histogram-java.png' desc='Heap Histogram' />
+
+You can view the status of heap occupied objects (sizes for each object in heap memory) in the memory of the JVM (Java Virtual Machine). It retrieves the pure size of the object. Through the <Cmdname sid="count" className="uitext" /> column, it is easy to check the number of main objects. 
+
+:::note 
+
+Because it retrieves the number of objects that are kept until GC, they appear in the list even if they are not actually used. For an accurate query, it is recommended running ***System GC*** and then checking the list. For more information about ***System GC***, see [the following](#side_systemGarbageCollection).
+
+:::
+
+:::note
+
+Java versions 6 to 8 support basic functions without the JVM options. However, for some Java versions, the JVM options must be applied as follows:
+
+- Java 9 to Java 15
+
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  ```
+
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+  ```
+
+- Java 16 or later
+
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+  ```
+
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+  ```
+
+- It does not support Java 5 or earlier and IBM Java.
+
+:::

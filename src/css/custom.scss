@@ -62,7 +62,6 @@
   --ifm-color-emphasis-300: #d3d3d3;
   --ifm-active-menu-color: #efefef;
   --ifm-dropdown-link-color: #222222;
-  --docusaurus-announcement-bar-height: 60px;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -1759,14 +1758,6 @@ main {
       color: #fff;
       border: none;
     }
-    // 구형 old 추가
-    code.old {
-      font-family: "Oleo Script";
-      border: none;
-      // margin-top: -2px !important;
-      padding: 1px 2px 1px 2px;
-      // font-style: italic;
-    }
     code.my {
       background-color: #296cf2;
       color: #fff;
@@ -1894,6 +1885,11 @@ main {
     > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])), &:has(> img:only-of-type:not([alt*='アイコン'])) {
       margin: 20px 0;
       padding: 0;
+    }
+    img.active {
+      border: 1px solid #296CF2 !important;
+      border-radius: 5px;
+      background-color: transparent;
     }
     img[alt*='새로운 기능 콘텐츠 예시'], img[alt*='모바일 앱 sc cl'] {
       width: 750px !important;
@@ -2919,9 +2915,6 @@ main {
       padding: 0 0 0 8px !important;
     }
   }
-  :root {
-    --docusaurus-announcement-bar-height: 60px !important;
-  }
   .container.margin-vert--lg main.col--7 {
     max-width: 50%;
   }
@@ -3030,9 +3023,6 @@ main {
 }
 
 @media (max-width: 799px) and (max-width: 560px) {
-  :root {
-    --docusaurus-announcement-bar-height: 90px;
-  }
   main {
     .markdown {
       .flex-container-s {
