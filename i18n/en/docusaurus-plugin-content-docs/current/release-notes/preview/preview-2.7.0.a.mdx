@@ -14,6 +14,171 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.7.0.a6
+
+July 18, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status>Feature</Status> Added the feature to search for agents by IP address through the integrated search in the side menu.
+
+- <Status>Changed</Status> Changed the time text in the <Cmdname sid="side_report" className="uitext" /> window of the <Cmdname sid="set_up_emailing" className="uitext" /> menu to the text that includes the time zone.
+
+  > e.g. 04~06 → (UTC+9) 04~06
+
+- <Status>Changed</Status> In <Cmdname sid="MNU07360" className="uitext" /> or <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, changed the success message displayed when testing mobile device notifications.
+
+  > <Cmdname sid="mobile_device_connect_success" className="b500" /> → <Cmdname sid="NTC08219" className="uitext" />
+
+- <Status>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, disabled the feature to select the Test and Delete buttons for mobile devices of the users other than your account.
+
+- <Status>Deprecated</Status> In the <Cmdname sid="anomaly_detection" className="uitext" /> tab of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, removed the object merge selection UI when adding or modifying events.
+
+---
+
+### `Application`
+
+#### Common
+
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the issue where when applying a filter to a past time point and then changing to a real-time query, the filter for the previous query is applied.
+
+- <Status>Deprecated</Status> Removed <Cmdname sid="app_dashboard" className="uitext" /> of the old version.
+
+#### Node.js
+
+<Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the text related to the agent downloading.
+
+---
+
+### `Server`
+
+<Status>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />, when the Search button is selected, modified to display the loading UI inside the table only when actual search logic is performed.
+
+---
+
+### `Kubernetes`
+
+- <Status>New</Status> Added the <Cmdname sid="side_kubeServiceList" className="uitext" /> menu that provides comprehensive status and information on all services running in the Kubernetes cluster.
+
+  :::note
+
+  This feature can be seen in the <Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_kubeServiceList" className="uitext" /> path. You can understand the network configuration within the cluster by detailing the service configuration and current status.
+
+  :::
+
+- <Status>New</Status> Added the <Cmdname sid="side_nodeDiskList" className="uitext" /> menu for disk monitoring from the node perspective.
+
+  :::note
+
+  - This feature can be seen in the <Cmdname sid="side_cluster" className="uitext" /> > <Cmdname sid="side_nodeDiskList" className="uitext" /> path.
+
+  - This function is supported in Kubernetes master agent 1.7.8 or later.
+
+  :::
+
+- <Status>Feature</Status> In the summary view of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, added the <Cmdname sid="TTL08230" className="uitext" /> feature under the <Cmdname sid="TTL06782" className="uitext" /> tab.
+
+  :::note
+
+  This feature is available in Korean only.
+
+  :::
+
+- <Status>Feature</Status> In the summary view of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, added the service information under the <Cmdname sid="TTL06782" className="uitext" /> and <Cmdname sid="TTL07237" className="uitext" /> tabs.
+
+- <Status>Feature</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />, added the button to go to the list menu for the following columns.
+
+  - <UI>Deployment</UI> → <Cmdname sid="side_deploymentList" className="uitext" />
+  - <UI>Pod</UI> → <Cmdname sid="side_podList" className="uitext" />
+  - <UI>Image</UI>, <UI>ImageId</UI> → <Cmdname sid="side_containerImages" className="uitext" />
+  - <UI>ApplicationName</UI> → <Cmdname sid="side_containerizedAppList" className="uitext" />
+
+  As you navigate through each menu, you can see filtered query results based on the data for the selected item.
+
+- <Status>Feature</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />, added the button to go to the list menu for the following columns.
+
+  - <UI>CotainerId</UI> → <Cmdname sid="side_containerList" className="uitext" />
+  - <UI>ContainerName</UI> → <Cmdname sid="side_containerList" className="uitext" />
+  - <UI>Pod</UI> → <Cmdname sid="side_podList" className="uitext" />
+  - <UI>Node</UI> → <Cmdname sid="side_nodeList" className="uitext" />
+
+  As you navigate through each menu, you can see filtered query results based on the data for the selected item.
+
+- <Status>Feature</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />, added the <UI>Image</UI> column into the <Cmdname sid="TTL06987" className="uitext" /> group.
+
+- <Status>Feature</Status> In the event list table of <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />, added the <Cmdname sid="TTL08206" className="uitext" /> and <Cmdname sid="TTL08207" className="uitext" /> columns.
+
+- <Status>Feature</Status> In the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, added the feature to display information for **Container Id** and **Pod Name** and go to each container and Pod list pages when clicked for each.
+
+- <Status>Feature</Status> Added the agent status display feature at the top of the screen so that users can immediately recognize when the Kubernetes agent is disabled.
+
+- <Status>Fixed</Status> When the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> menu appears for the first time and go to the Pod or container view, fixed the problem where wrong data is output.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status>Changed</Status> Changed the Full Scan section to be displayed in red in the <Cmdname sid="TTL06224" className="uitext" /> window that appears when you select a query to view the plan.
+
+- <Status>Changed</Status> Modified to display the database name in the option bar at the top of the screen in the following menu path.
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_slowQueryLog" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_deadLock" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrendComparison" className="uitext" />
+  - <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />
+
+- <Status>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, added the error handling in the object detail window that appears when viewing the plan.
+
+#### PostgreSQL / MySQL
+
+<Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the ***Uptime*** widget to check how long it has been since the DB startup.
+
+#### Oracle <code className="my">V2</code> / Oracle Pro
+
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the ***Main Waits*** widget where **Global Lock** can be checked.
+
+  :::note
+
+  It queries the total number of waits for a specific event through metrics for the collected database categories and extracts the most recent data for each agent (instance). This allows you to see the database wait events at a specific time.
+
+  :::
+
+- <Status>Changed</Status> In the <UI>Interconnect Bandwidth</UI> widget of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the design to display the values for `interconnect_nic` and `interconnect_speed` metrics.
+
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, fixed the following issues that occur in the <Cmdname sid="TTL08164" className="uitext" /> section that appears when selecting an item in the <Cmdname sid="table_space_detail" className="uitext" /> section.
+
+  - Modified not to change the data when the dbf file is clicked at the bottom of the screen.
+
+  - Fixed the problem where the data does not appear when the <Cmdname sid="instance" className="uitext" /> option is changed.
+
+  - Modified to change the background color when you place the mouse pointer to an item in the <Cmdname sid="table_space_detail" className="uitext" /> section.
+
+---
+
+### `Feature`
+
+<Status>Fixed</Status> Fixed the whiteout issue when entering the **KAKFA** project.
+
+---
+
+### `URL`
+
+<Status>Changed</Status> Changed the design of the URL list guidance text.
+
+---
+
+### `Log`
+
+<Status>Fixed</Status> In <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />, fixed the issue where the previous data remains when there is no query data when the query time is changed.
+
+</div>
+
 ## Preview 2.7.0.a5
 
 July 12, 2024

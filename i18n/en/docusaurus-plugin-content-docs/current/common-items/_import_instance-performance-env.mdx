@@ -1,0 +1,19 @@
+## System ENV. Variable {#side_environmentVariable}
+
+Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_environmentVariable" className="uitext" />
+
+<ProdImg img="ipa-env-var.png" desc="Boot environment" />
+
+You can view environment variables for application execution. The <Cmdname sid="boot_env" className="uitext" /> menu collects and provides environment variables at the time of query. It uses `System.getProperty()` to retrieve the value of the key passed as a parameter. The following are key points to check: 
+
+- `(Application).version`: You can check the application version. 
+
+- `file.encoding`: You can check the file encoding format such as `utf-8`.
+
+<InDoc product="java">
+
+- Application state: For example, if the `catalina.home` environment variable is retrieved, you can see that it is the tomcat environment.
+
+</InDoc>
+
+- OS environment variables: For example, they are provided in the suffix `(env)` format, such as `(env) LANG` environment variable.

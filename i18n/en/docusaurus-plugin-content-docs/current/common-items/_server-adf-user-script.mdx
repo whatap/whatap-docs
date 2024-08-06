@@ -1,3 +1,7 @@
+<Tabs groupId='server-user-script'>
+
+<TabItem value="lxs" label="Linux Shell">
+
 It periodically runs the executable user script on the Linux server and uploads the results. Write your own script noting the following example
 
 1. Write the script as follows and then run it.
@@ -67,3 +71,147 @@ It periodically runs the executable user script on the Linux server and uploads 
    ```
 
 The collected data can be viewed in <Cmdname sid="category" className="uitext" /> 'server_ext_folder_runscript' under <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_counter" className="uitext" />.
+
+</TabItem>
+
+<TabItem value="wps" label="Windows Powershell">
+
+It periodically runs the executable user script on the Windows server and uploads the results. Write your own script noting the following example
+
+<Tabs groupId='server-user-script'>
+
+<TabItem value="wps" label="BAT">
+
+#### Running the BAT script
+
+1. Write the script as follows and then run it.
+
+   ```bash title='BAT'
+   @echo off
+   setlocal enabledelayedexpansion
+
+   set urls=https://www.whatap.io https://blog.whatap.io https://service.whatap.io
+
+   for %%u in (%urls%) do (
+       echo M %%u url %%u
+
+       rem Use curl to fetch the URL and get the total time taken for the request
+       for /f "tokens=*" %%i in ('curl -o nul -s -w "M %%{url_effective} url %%{url_effective}" %%u') do (
+           echo %%i
+       )
+
+       rem Measure the start time
+       set startTime=!time!
+
+       rem Perform the curl request and measure the end time
+       curl -o nul -s %%u
+
+       set endTime=!time!
+
+       rem Parse the start time
+       for /F "tokens=1-4 delims=:.," %%a in ("!startTime!") do (
+           set /A "startH=%%a, startM=%%b, startS=%%c, startMS=%%d"
+       )
+
+       rem Parse the end time
+       for /F "tokens=1-4 delims=:.," %%a in ("!endTime!") do (
+           set /A "endH=%%a, endM=%%b, endS=%%c, endMS=%%d"
+       )
+
+       rem Calculate the elapsed time in milliseconds
+       set /A "elapsedMS=(endH*3600000 + endM*60000 + endS*1000 + endMS) - (startH*3600000 + startM*60000 + startS*1000 + startMS)"
+       
+       rem Convert milliseconds to seconds and milliseconds part
+       set /A "elapsedSec=elapsedMS/1000"
+       set /A "elapsedMSPart=elapsedMS %% 1000"
+
+       echo H %%u time_total !elapsedSec!.!elapsedMSPart!
+   )
+
+   endlocal
+   ```
+
+2. Check whether the out is as follows:
+
+   ```bash title='BAT'
+   >webcheck.bat
+   M https://www.whatap.io url https://www.whatap.io
+   M https://www.whatap.io/ url https://www.whatap.io/
+   H https://www.whatap.io time_total 0.38
+   M https://blog.whatap.io url https://blog.whatap.io
+   M https://blog.whatap.io/ url https://blog.whatap.io/
+   H https://blog.whatap.io time_total 0.1
+   M https://service.whatap.io url https://service.whatap.io
+   M https://service.whatap.io/ url https://service.whatap.io/
+   H https://service.whatap.io time_total 0.922
+   ```
+
+3. Check whether the collection is normal and register the script to the WhaTap server monitoring agent as follows:
+
+   ```bat title='BAT'
+   cd "\Program Files\WhatapInfra"
+   whtap_infra.exe init-script
+   sc stop "Whatap Infra"
+   sc start "Whatap Infra"
+   ```
+
+</TabItem>
+
+<TabItem value="wps2" label="PowerShell">
+
+#### Running the PowerShell script
+
+1. Write the script as follows and then run it.
+
+   ```bash title='PowerShell'
+   $urls = @("https://www.whatap.io", "https://blog.whatap.io", "https://service.whatap.io")
+
+   # Hide progress bar
+   $ProgressPreference = 'SilentlyContinue'
+
+   foreach ($url in $urls) {
+       Write-Output "M $url url $url"
+
+       $startTime = Get-Date
+       try {
+           $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+           $endTime = Get-Date
+           
+           $timeTotal = ($endTime - $startTime).TotalSeconds
+           
+           Write-Output "M $($response.BaseResponse.ResponseUri) url $($response.BaseResponse.ResponseUri)"
+           Write-Output ("H {0} time_total {1}" -f $url, $timeTotal)
+       } catch {
+           Write-Output "Failed to access $url"
+       }
+   }
+   ```
+
+2. Check whether the out is as follows:
+
+   ```bash title='PowerShell'
+   > .\webcheck.ps1                     
+   M https://www.whatap.io url https://www.whatap.io
+   M  url 
+   H https://www.whatap.io time_total 0.376979
+   M https://blog.whatap.io url https://blog.whatap.io
+   Failed to access https://blog.whatap.io
+   M https://service.whatap.io url https://service.whatap.io
+   Failed to access https://service.whatap.io
+   ```
+
+3. Check whether the collection is normal and register the script to the WhaTap server monitoring agent as follows:
+
+   ```bash title='PowerShell'
+   cd "\Program Files\WhatapInfra"
+   .\whatap_infra.exe init-script
+   Restart-Service "Whatap Infra"
+   ```
+
+</TabItem>
+
+</Tabs>
+
+</TabItem>
+
+</Tabs>

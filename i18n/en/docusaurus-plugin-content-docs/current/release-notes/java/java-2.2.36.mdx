@@ -1,0 +1,29 @@
+---
+id: java-2_2_36
+title: Java Agent v2.2.36
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_35
+displayed_sidebar: releaseSidebar
+---
+
+July 18, 2024
+
+- <Status>Feature</Status> Added the setting to return the original class if the weaving plugin compile version is different from the user code target version.
+
+  ```ini title="whatap.conf"
+  # ignore agent compiled jdk version and application target jdk version
+  # default: true 
+  # requires restart
+  # false: return original class and abort tracing class
+  weaving_ignore_compile_version_enabled=true
+  ```
+
+- <Status>Fixed</Status> Fixed the issue where logs are included in other transactions when leaving system logs.
+
+  > e.g. System.out, System.err, hibernate System log (`org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement`)
+
+- <Status>Fixed</Status> Fixed the issue where the user's log content cannot be collected when the logs including the exception stack are generated when using the logback and log4j.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.36" />

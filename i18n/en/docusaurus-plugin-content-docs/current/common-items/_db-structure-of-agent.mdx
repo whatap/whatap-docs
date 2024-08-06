@@ -2,23 +2,11 @@
 
 The following displays the WhaTap agent's structure map. 
 
-<Xclude product='cubrid,oracle-pro'>
+<Xclude product='cubrid,oracle-pro'><ImgLang img='agent-xos-architecture.png' desc='Agent structure map' /></Xclude>
 
-<ImgLang img='agent-xos-architecture.png' desc='Agent architecture' />
+<InDoc product='cubrid'><ImgLang img='agent-xos-xcub-architecture.png' desc='Agent structure map' /></InDoc>
 
-</Xclude>
-
-<InDoc product='cubrid'>
-
-<ImgLang img='agent-xos-xcub-architecture.png' desc='Agent architecture' />
-
-</InDoc>
-
-<InDoc product="oracle-pro">
-
-<ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='Agent structure map' />
-
-</InDoc>
+<InDoc product="oracle-pro"><ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='Agent structure map' /></InDoc>
 
 <Xclude product="oracle-pro">
 
@@ -66,7 +54,7 @@ The following displays the WhaTap agent's structure map.
 
   It collects and stores the database performance data collected by agents, extracts statistical data, and efficiently provides them to users. The collection server can be set by region. Different collection server addresses are allocated to each region. The collection server address may differ depending on the selected region. When creating a project, the region is also set.
 
-- **DMA agent**
+- **DMX agent**
 
   Query-based performance data is collected and transmitted to the server. Monitoring is possible through a separate agent server without installing agents directly on the database server to be monitored.
 

@@ -1,0 +1,17 @@
+## Method Performance {#side_methodStat}
+
+Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_methodStat" className="uitext" />
+
+It provides the performance statistics about the method executed in the Java application. 
+
+- <Cmdname sid="refresh" className="uitext" />: It recalls the data.
+
+- <Cmdname sid="reset" className="uitext" />: It initializes the statistical data for the registered methods.
+
+:::note 
+
+To use the <Cmdname sid="side_methodStat" className="uitext" /> menu, add the following custom options in <Cmdname sid="agent_configuration" className="uitext" />. In the reboot or <Cmdname sid="side_loadedClasses" className="uitext" /> menu, perform <Cmdname sid="redefine" className="uitext" />.
+
+> `hook_method_stat_patterns=io.home.test.baseapp.app.post.mapper.PostMapperImpl.*`
+
+:::

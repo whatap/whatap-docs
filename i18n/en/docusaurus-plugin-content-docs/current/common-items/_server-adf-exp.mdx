@@ -8,7 +8,7 @@ The MySQL/MariaDB monitoring agent is available.
 
 The WhaTap infrastructure agent accesses the given web address and then collects the access status and response time. The collected web URL performance can be checked in <Cmdname sid="category" className="uitext" /> `server_webcheck`. Add web addresses to check with the following command. For more information about URL monitoring, see [the following](../url/url-intro).
 
-<Tabs>
+<Tabs groupId='server-user-script'>
 <TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
@@ -57,8 +57,8 @@ If the field name contains multiple periods (_._), enter it as follows:
 
 The WhaTap infrastructure agent accesses the given Redis address and collects multiple performance metrics including the number of connections. The collected performance data can be checked in <Cmdname sid="category" className="uitext" /> `server_redis`. You can add the connection data to the Redis server to be checked with the following command.
 
-<Tabs>
-<TabItem value="lxs2" label="Linux Shell">
+<Tabs groupId='server-user-script'>
+<TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
 sudo echo "addr=Redis address:port" | sudo tee /usr/whatap/infra/conf/redis.conf
@@ -67,7 +67,7 @@ sudo service whatap-infra restart
 ```
 
 </TabItem>
-<TabItem value="wps2" label="Windows Powershell">
+<TabItem value="wps" label="Windows Powershell">
 
 ```bash title=SH
 Add-Content -Path "C:\Program Files\WhatapInfra\redis.conf" -Value "addr=Redis address:port"
@@ -82,8 +82,8 @@ Restart-Service "Whatap Infra"
 
 The WhaTap infrastructure agent accesses the given Memcached address and collects multiple performance metrics including the number of connections. The collected performance data can be checked in <Cmdname sid="category" className="uitext" /> `server_memcached`. You can add the connection data to the Memcached server to be checked with the following command.
 
-<Tabs>
-<TabItem value="lxs3" label="Linux Shell">
+<Tabs groupId='server-user-script'>
+<TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
 sudo echo "addr=Memcached address:port" | sudo tee /usr/whatap/infra/conf/memcached.conf
@@ -92,7 +92,7 @@ sudo service whatap-infra restart
 ```
 
 </TabItem>
-<TabItem value="wps3" label="Windows Powershell">
+<TabItem value="wps" label="Windows Powershell">
 
 ```bash title=SH
 Add-Content -Path "C:\Program Files\WhatapInfra\memcached.conf" -Value "addr=Memcached address"

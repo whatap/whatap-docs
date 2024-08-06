@@ -1,0 +1,60 @@
+---
+id: monitoring-intro
+title: Oracle Pro Monitoring
+description: The WhaTap database monitoring service (DBX) provides the performance monitoring service by collecting data based on queries.
+displayed_sidebar: dboracledmaSidebar
+tags:
+  - Oracle Pro
+  - Database
+  - Database
+  - Monitoring
+  - DBX
+---
+
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+import Dbintroductiondesc from "../common-items/_db-introduction-desc.mdx";
+
+<Dbintroductiondesc />
+
+## Oracle Pro Monitoring features
+
+WhaTab's Oracle Pro monitoring products presents an innovation that goes beyond the traditional query-based data collection. Traditional query-based approaches place significant load on the database server, which can cause system performance degradation. This approach uses the Direct Memory Access (DMA) technique to directly access the server's memory and extract the required data, thereby placing little load on the database server. This is a huge advantage, especially in high-performance database environments.
+
+Additionally, query-based collection methods have long data update cycles and can collect data only at specific query execution times. In comparison, the Oracle Pro monitoring can collect data almost in real time through memory access, and can collect sessions and SQL performance data at an interval of at least 0.01 seconds. This allows database administrators to monitor the system performance more precisely and respond immediately when any problem occurs.
+
+Another important feature of the Oracle Pro monitoring product is that data collection is not interrupted even in a system failure or hang. Data collection in these scenarios can be difficult using traditional query-based approaches. By using Oracle Pro, database administrators can ensure data continuity under any circumstances, thereby maximizing the stability and availability of the system.
+
+Ultimately, WhaTab's Oracle Pro monitoring product is an essential technology for improving the efficiency and accuracy of database monitoring, while minimizing system load and ensuring business continuity. This provides a foundation for companies to make faster, more accurate, and more reliable decisions.
+
+import Dbspecification from "../common-items/_db-specification.mdx";
+
+<Dbspecification />
+
+## Supported functions
+
+The following are available features. To compare with other products and supported features, see [the following](../support-env#compare-db).
+
+| Category   | Function type                                 |                                   Oracle                                  |
+| ---------- | --------------------------------------------- | :-----------------------------------------------------------------------: |
+| Monitoring | Instance List                                 |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Instance Monitoring                           |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Multi DataBase (tenant)    | <span class='emoji-ok'>✅</span><br/>12c or later, in case of multi tenant |
+| ^          | Slow Query                                    |                      <span class='emoji-no'>❌</span>                      |
+| Analysis   | Trends                                        |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Trends Compare                                |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Lock Tree                                     |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Parallel Query Tree                           |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Dead Lock                                     |                      <span class='emoji-no'>❌</span>                      |
+| ^          | DB Parameters                                 |                      <span class='emoji-ok'>✅</span>                      |
+| Statistics | SQL Stat                                      |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Table Size                                    |                             Scheduled support                             |
+| ^          | Database (TableSpace) Size |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | SGA Size                                      |                      <span class='emoji-ok'>✅</span>                      |
+| Report     | Daily/Weekly/Monthly Report                   |                      <span class='emoji-ok'>✅</span>                      |
+| Event      | Event List                                    |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Event Stat                                    |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Event Setting                                 |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Notification                                  |                      <span class='emoji-ok'>✅</span>                      |
+| Management | Agent Setup                                   |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Agent List                                    |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Project Management                            |                      <span class='emoji-ok'>✅</span>                      |

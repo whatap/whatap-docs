@@ -8,15 +8,19 @@ tags:
   - Parallel query tree
 ---
 
-Home > Select Project > **_Analysis_** > **_Parallel Query Tree_**
+import V2Note from "../common-items/_import_v2-note.mdx";
 
-**_Parallel Query Tree_** provides the function to analyze the trend of parallel queries per day. The slave processes that perform actual tasks and the coordinator processes that assign tasks to them are distinguished, and overall executions are displayed in an easy-to-understand manner. It can help determine what purpose it was used for by providing information about parallel queries performed at a specific time point.
+<V2Note product="Oracle" />
+
+Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbPqTree" className="uitext" />
+
+<Cmdname sid="side_dbPqTree" className="uitext" /> provides the function to analyze the trend of parallel queries per day. The slave processes that perform actual tasks and the coordinator processes that assign tasks to them are distinguished, and overall executions are displayed in an easy-to-understand manner. It can help determine what purpose it was used for by providing information about parallel queries performed at a specific time point.
 
 ## Basic screen guide
 
-<ImgLang img="db-pq-tree.png" desc="Parallel Query Tree" />
+<ImgLang img="db-pq-tree-oracle-pro.png" desc="Parallel query tree" />
 
-In ![number1](/img/number-01.png) **_Instance_**, select the instance to search parallel queries from, and then ![number2](/img/number-02.png) set the **_date_**, **_start time_**, and **_end time_**.
+Set the time to view in the <Cmdname sid="time" className="uitext" /> item, and then select the instance to view parallel query information in the <Cmdname sid="instance" className="uitext" /> item.
 
 You can check the trend of parallel queries that meet the set conditions through a graph chart, and the structure of coordinators and slaves is represented in the form of tree.
 
