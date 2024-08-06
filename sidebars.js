@@ -5194,6 +5194,11 @@ const sidebars = {
           id: 'features/kafka-introduction',
           // className: 'beta'
         },
+        {
+          type: 'doc',
+          id: 'features/aerospike-introduction',
+          // className: 'beta'
+        },
         // 'kafka/install-agent',
         // {
         //   type: 'category',
