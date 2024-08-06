@@ -1,0 +1,27 @@
+## システムGC {#side_systemGarbageCollection}
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_systemGarbageCollection" className="uitext" />
+
+<ImgLang img='ipa-system-gc-java.png' desc='システムGC' />
+
+`System.gc()`を呼び出してJVM(Java仮想マシン)のヒープ領域で 動的に割り当てたメモリのうち、不要になったメモリオブジェクト(garbage)を集めて削除することができます。 <Cmdname sid="BTN07740" className="uitext" />ボタンを選択するとGCプロセスが実行され、実行前後のメモリ容量を確認できます。
+
+:::note 
+
+`-XX:+DisableExplicitGC`のように明示的なGCリクエストを非活性化するオプションが設定されている場合、<Cmdname sid="side_systemGarbageCollection" className="uitext" />が動作しません。 
+
+:::
+
+:::note 
+
+**システムGCとメモリリーク**
+
+Heapメモリ使用量が持続的に上昇した場合、メモリリークの可能性を確認し、正確に診断するため***システムGC***が必要です。 
+
+- **メモリリクエスト有無**: アプリケーションが継続的にメモリをリクエストしている状態であることを確認します。 メモリリクエストの増加が予想値以上であるか、またはメモリ解除が正確に行われているかを調べます。
+
+- **メモリ使用量の確認**: 実際にメモリが過剰に使用されているかを確認します。 GC実行により不要なオブジェクトを解除し、メモリ使用量の変化を調べます。 
+
+- **GC周期**: メモリが十分に空いている状況でも、GCが実行されていない状態であるかを確認します。 GC周期または設定を調べます。 
+
+:::

@@ -10,7 +10,7 @@ WhaTapは、データベースのログモニタリングを提供します。 �
 
 ## サーバーインストール型DBに適用する
 
-サーバーインストール型データベースのログをモニタリングするには、WhaTapの*xos.conf*ファイルに次のオプションを適用してください。
+サーバーに設置されたデータベースのログをモニタリングするには、WhaTapの*xos.conf*ファイルに次のオプションを適用します。
 
 <InDoc product='mysql'>
 
@@ -33,9 +33,27 @@ file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
 
 </InDoc>
 
+<InDoc product="oracle,oracle-pro">
+
+```ini title='xos.conf'
+file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log
+```
+
+</InDoc>
+
 :::note
 
+<InDoc product='mysql,postgresql,oracle'>
+
 適用する前に、XOSエージェントをインストールしてエージェント設定を行う必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+**Oracle Pro**商品はXOSエージェントが組み込まれているため、別途のインストール過程が必要ありません。
+
+</InDoc>
 
 :::
 
@@ -108,7 +126,7 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューで確認できます。 例）13.124.11.223/13.209.172.35
+   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューで確認できます。 例) 13.124.11.223/13.209.172.35
 
    - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB ~ 10,240MB間の値を入力してください。
 
@@ -130,15 +148,15 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
    - **AwsRdsNames**: イベントを受信したいRDS Cluster、Instanceの名前一覧
 
-     - 例）database-1、seoul-pro-db-01、seoul-pro-db-01-writer …
+     - 例) database-1、seoul-pro-db-01、seoul-pro-db-01-writer …
 
      - EventRuleを生成しないためには、`none`を入力してください。
 
    - **RdsLogGroupName**(**1~9**): ログを受信したいRDS CloudWatchLogGroup Name
 
-     - 例）/aws/rds/seoul-pro-db-01
+     - 例) /aws/rds/seoul-pro-db-01
 
-     - サブスクリプションフィルターを生成しない場合は、 `none `を入力してください。
+     - サブスクリプションフィルターを生成しない場合は、 `none `を入力します。
 
      :::note
 
@@ -152,13 +170,13 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ### 生成リソースを確認する
 
-**AWS CloudFormation**からインストールされているリソースを確認してください。
+**AWS CloudFormation**からインストールされているリソースを確認します。
 
 ![AWS RDS Log](/img/aws-rds-log-resource.png)
 
 - **S3** 
 
-  - Bucket:WhaTap**AWS RDS Log**の実行ファイルを保存するAWS S3 Bucket (CopyZips)
+  - Bucket：WhaTap**AWS RDS Log**の実行ファイルを保存するAWS S3 Bucket (CopyZips)
 
 - **Lambda**
 
@@ -166,7 +184,7 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
     - CopyZipsFunction:WhaTap AWS S3 Bucketからユーザーの環境に実行ファイルを移すAWS Lambda Function
 
-    - WhaTapRDSLog: AWS RDSのモニタリングのためのAWS Lambda Function
+    - WhaTapRDSLog：AWS RDSのモニタリングのためのAWS Lambda Function
 
   - Permission
 
@@ -196,4 +214,6 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 すべての設定を完了した後、<Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />メニューにアクセスし、ログモニタリングを活性化してください。
 
-<ImgLang img='log-start-db.png' desc='ログモニタリングの開始'/>
+<Xclude product="oracle-pro"><ImgLang img='log-start-db.png' desc='ログモニタリングを開始する'/></Xclude>
+
+<InDoc product="oracle-pro"><ImgLang img='log-start-db-oracle-pro.png' desc='ログモニタリングを開始する'/></InDoc>

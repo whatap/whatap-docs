@@ -20,7 +20,7 @@ displayed_sidebar: releaseSidebar
 
   :::
 
-- <Status>Feature</Status>undertow追跡
+- <Status>Feature</Status> undertow追跡
 
   spring-boot-3.0バージョンに対応してundertow-2.3.0追跡
 
@@ -32,24 +32,24 @@ displayed_sidebar: releaseSidebar
   weaving=undertow-2.3.0
   ```
 
-- <Status>Feature</Status>SQL Exception、HTTP Call Exception発生時のユーザー定義Exceptionで処理できるオプションの追加
+- <Status>Feature</Status> SQL Exception、HTTP Call Exception発生時にユーザー定義のExceptionで処理できるオプションを追加
 
   ```ini title='whatap.conf'
   # 既定値
   trace_exception_overrite_enabled=false
   ```
 
-- <Status>Feature</Status><code>java.sql.SQLException</code>発生時にエラーコードを含めて表示できるオプションの追加
+- <Status>Feature</Status> <code>java.sql.SQLException</code>発生時にエラーコードを含めて表示できるオプションの追加
 
   ```ini title='whatap.conf'
   # 既定値
   trace_sql_errorcode_enabled=false
   ```
 
-- <Status>Change</Status>SQL ExceptionまたはHTTP Call Exception発生時のトランザクション レベルをinfoに調節できるように<code>biz_exception</code>オプション範囲の拡張
+- <Status>Change</Status> SQL ExceptionまたはHTTP Call Exception発生時にトランザクション レベルをinfoに調整できるように<code>biz_exception</code>オプションの範囲拡張
 
   ```ini title='whatap.conf'
   biz_exception=java.sql.SQLException,org.h2.jdbc.JdbcSQLDataException
   ```
 
-- <Status>Change</Status><code>NEW_OVERFLOW</code>通知内容にデータ情報を追加
+- <Status>Change</Status> <code>NEW_OVERFLOW</code>通知内容にデータ情報を追加

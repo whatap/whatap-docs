@@ -242,5 +242,21 @@
   "item.label.Feature Project": {
     "message": "Feature Project",
     "description": "Navbar item with label Feature Project"
+  },
+  "item.label.Oracle V1 모니터링": {
+    "message": "Oracle V1 Monitoring",
+    "description": "Navbar item with label Oracle V1 모니터링"
+  },
+  "item.label.Oracle V2 모니터링": {
+    "message": "Oracle V2 Monitoring",
+    "description": "Navbar item with label Oracle V2 모니터링"
+  },
+  "item.label.Oracle Pro 모니터링": {
+    "message": "Oracle Pro Monitoring",
+    "description": "Navbar item with label Oracle Pro 모니터링"
+  },
+  "item.label.Oracle Pro": {
+    "message": "Oracle Pro",
+    "description": "Navbar item with label Oracle Pro"
   }
 }

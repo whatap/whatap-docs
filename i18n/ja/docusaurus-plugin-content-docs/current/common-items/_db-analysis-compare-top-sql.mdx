@@ -1,0 +1,69 @@
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbTopSqlComparison" className="uitext" />
+
+特定の日付を基準に設定された時間帯のSQLの推移を比較できます。 ユーザは複数の基準を選択してSQLの性能を比較し<UI>Summary Chart</UI>を通じて時系列グラフで確認できます。 また、画面下のテーブルリストでは、基準日付と比較日付の**Top SQL**順位と騰落を比較できます。
+
+<ImgLang img="db-analysis-compare-top-sql.png" desc="Top SQL比較" />
+
+- **SQL性能把握**: ユーザーは<Cmdname sid="side_dbTopSqlComparison" className="uitext" />メニューを通じてSQLの性能を簡単に把握できます。 SQLの実行回数、最大経過時間、総経過時間、待機時間などを比較することで、システムの性能問題を迅速に感知できます。
+
+- **時間別の推移確認**: <UI>Summary Chart</UI>を通じて時間によるSQLの性能変化を視覚的に確認できます。 これにより、ユーザーはシステムの負荷が発生した時間帯や性能低下が発生した区間を素早く把握して対応できます。
+
+- **Top SQL比較**: 画面下のテーブルリストでは、基準日付と比較日付のTop SQL順位を比較できます。 これにより、ユーザーはSQLの性能変化を確認し、比較して性能改善に必要な措置を取ることができます。
+
+## Top SQL比較
+
+画面の上でTop SQL比較のための条件を設定した後、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+- <Cmdname sid="reference_time" className="uitext" />: 比較のための基準時間を設定してください。 最大24時間まで設定できます。 緑のボタンをクリックすると、照会時間を選択できるオプションが表示されます。 ユーザーが希望する時間を直接設定するには、日付と時間エリアを選択してください。
+
+  :::note
+
+  照会できる時間範囲はｍ、最大24時間です。
+
+  :::
+
+- <Cmdname sid="ITM08026" className="uitext" />: <Cmdname sid="reference_time" className="uitext" />で設定した時間と比較する日付または時間を選択してください。 希望する条件を選択した後、<Cmdname sid="BTN06053" className="uitext" />ボタンを選択してください。
+
+  |          <Cmdname sid="move_date" className="uitext" />          |           <Cmdname sid="ITM08027" className="uitext" />          |
+  | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
+  | <ImgLang img="db-analysis-comapre-top-sql-date.png" desc="日時" /> | <ImgLang img="db-analysis-comapre-top-sql-time.png" desc="時間" /> |
+
+- <Cmdname sid="instance" className="uitext" />: SQL比較のためにインスタンス対象を選択してください。
+
+- <Cmdname sid="TTL06346" className="uitext" />: 比較基準を選択してください。 選択した項目に基づいてチャートを作成し、順位をソートします。
+
+  - <UI>excute count</UI>: 実行回数に基づいて照会結果をソートします。
+
+  - <UI>elapsed max</UI>: 最大経過時間に基づいて照会結果をソートします。
+
+  - <UI>elapsed time</UI>: 合計経過時間に基づいて照会結果をソートします。
+
+  - <UI>elapsed wait</UI>: 待ち時間に基づいて照会結果をソートします。
+
+- <Cmdname sid="TTL07773" className="uitext" />: 画面の下にあるSQL順位テーブルのリストに表示される個数を設定してください。
+
+## Summary Chart
+
+<UI>Summary Chart</UI>では、基準日付と比較日付のSQL推移を比較できる時系列グラフを提供します。 これにより、ユーザーは時間によるSQLの性能変化を容易に把握できます。
+
+<ImgLang img="db-analysis-comapre-top-sql-summary-chart.png" desc="Summary Chart" />
+
+- <span class="normal">◼︎</span> 青色のグラフ: 基準日付を意味し、右側の数値は平均値を意味します。
+
+- <span class="mstop">◼︎</span> グレーのグラフ: 比較の日付を意味し、右側の数値は平均値を意味します。
+
+## SQL順位の比較
+
+画面下のSQL順位テーブルでは、上位SQL一覧が表示されます。 表示される個数は、画面上の<Cmdname sid="TTL07773" className="uitext" />で設定できます。
+
+![Top SQL](/img/db-analysis-comapre-top-sql-table.png)
+
+左側に配置されたテーブルは、基準日付に該当するSQL順位が、右側には比較日付に該当するSQL順位が表示されます。 基準日付テーブルの<UI>ranck changed</UI>カラムでは、比較日付に比べて変化した騰落を確認できます。
+
+例えば、ユーザーが<UI>elapsed time</UI>(経過時間)を基準に比較したとき、比較日付に比べて基準日付に同じSQL文の経過時間がさらに増えた場合は、当該SQL文の性能を検討する必要があります。 クエリ最適化またはインデックスを使用して性能を最適化してください。
+
+### クエリプレビュー
+
+<ImgLang img="db-analysis-comapre-top-sql-table-preview-query.png" desc="クエリプレビュー" />
+
+SQL順位テーブルで<UI>query</UI>カラム項目にマウスオーバーすると、該当SQL文のクエリを確認できます。

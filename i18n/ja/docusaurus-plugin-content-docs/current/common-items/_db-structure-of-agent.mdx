@@ -2,23 +2,11 @@
 
 以下は、WhaTapエージェントの構成図です。 
 
-<Xclude product='cubrid,oracle-pro'>
+<Xclude product='cubrid,oracle-pro'><ImgLang img='agent-xos-architecture.png' desc='エージェント構成図' /></Xclude>
 
-<ImgLang img='agent-xos-architecture.png' desc='エージェント構成図' />
+<InDoc product='cubrid'><ImgLang img='agent-xos-xcub-architecture.png' desc='エージェント構成図' /></InDoc>
 
-</Xclude>
-
-<InDoc product='cubrid'>
-
-<ImgLang img='agent-xos-xcub-architecture.png' desc='エージェント構成図' />
-
-</InDoc>
-
-<InDoc product="oracle-pro">
-
-<ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='エージェント構成図' />
-
-</InDoc>
+<InDoc product="oracle-pro"><ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='エージェント構成図' /></InDoc>
 
 <Xclude product="oracle-pro">
 
@@ -66,7 +54,7 @@
 
   エージェントが収集したデータベースのパフォーマンスデータを収集および保存、統計情報を抽出し、これをユーザーに効率的な方法で提供します。収集サーバーはリージョン（Region）別に設定できます。リージョンごとに収集サーバーのアドレスが異なるように割り当てます。ユーザーが選択したリージョンによって収集サーバーのアドレスは異なる場合があります。プロジェクトを作成する際、リージョンも設定します。
 
-- **DMAエージェント**
+- **DMXエージェント**
 
   Queryベースで性能データを収集し、サーバーに送信します。モニタリング対象データベースサーバーにエージェントを直接インストールしなくても、別のエージェントサーバーを使用してモニタリングすることができます。
 

@@ -1,0 +1,11 @@
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
+
+遂行中のセッションが何の待機イベントで待機しているのか、頻繁に発生する待機イベントはどのようなのかを確認することができます。 5秒ごとに収集したアクティブセッションを待機(Wait)の観点から分析することができます。 
+
+:::note
+
+- この機能は、DBXエージェント1.9.0バージョン以降に対応しています。
+
+- 収集した待機情報は、`pg_stat_activity`ビューの`wait_event`と`wait_event_type`です。 該当指標の説明は、[次の文書](https://www.postgresql.org/docs/current/monitoring-stats.html#WAIT-EVENT-TABLE)を参照にしてください。
+
+:::

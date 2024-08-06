@@ -1,0 +1,58 @@
+データベースメトリクスは、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+
+メトリクス情報に関する詳しい内容は、[次のリンク](https://docs.oracle.com/)を参照してください。
+
+<div class='metric'>
+
+| Metric                                   | Description                                                                   |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| `cpu_used_by_this_session`               | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間(10ミリ秒単位)          |
+| `db_time`                                | データベースのユーザーレベルの呼び出しに費やされた経過時間(microseconds)                |
+| `active_sessions`                        | クエリが実行されているセッション数                                                             |
+| `cpu`                                    | CPU使用率                                                                        |
+| `cpu_cores`                              | CPUコア数                                                                        |
+| `db_block_changes`                       | SGAのブロックで変更されたブロック数                                                           |
+| `db_file_scattered_read_time_waited`     | db file scattered readイベントを待機した合計時間                                           |
+| `db_file_scattered_read_total_timeouts`  | db file scattered readイベントの合計タイムアウト回数                                         |
+| `db_file_scattered_read_total_waits`     | db file scattered readイベントの合計待機数                                              |
+| `db_file_sequential_read_time_waited`    | db file sequential readイベントを待機した合計時間                                          |
+| `db_file_sequential_read_total_timeouts` | db file sequential readイベントの合計タイムアウト回数                                        |
+| `db_file_sequential_read_total_waits`    | db file sequential readイベントの合計待機時間                                            |
+| `enqueue_waits`                          | キューの変換中またはインポート中に発生した待機の合計数(キュー・フェッチの遅延)                   |
+| `excute_count`                           | SQL文(statement)を実行した呼び出しの合計数                               |
+| `fatal_count`                            | 致命的なエラーが発生した回数                                                                |
+| `iowait_cpu`                             | CPUがI/Oの待機に費やす時間の割合                                                           |
+| `lock_wait_sessions`                     | 現在rowlockを取得する待機中の数                                                           |
+| `logons_current`                         | 現在の総ログオン数                                                                     |
+| `long_running_sessions`                  | 長時間実行中のセッション数                                                                 |
+| `memory`                                 | メモリ使用率                                                                        |
+| `opened_cursors_current`                 | 現在開いているcursorの数                                                               |
+| `parse_count_(hard)`                     | 構文分析の呼び出し合計数(実際の構文分析)                                      |
+| `parse_count_(total)`                    | 構文分析呼び出しの総数(hard、soft、describe)                            |
+| `physical_reads`                         | ディスクで読み取られたデータブロック数                                                           |
+| `physical_writes`                        | データをディスクに書き込まれたブロック数、`physical writes direct`と`physical writes from cache`の合計 |
+| `session_logical_reads`                  | メモリから読み込まれたデータブロック数、`db block gets`と`consistent gets`の合計                      |
+| `sorts_(memory)`                         | メモリで実行されたsort作業の数                                                             |
+| `sys_cpu`                                | sessionによって使用されたcpu timeの合計                                                   |
+| `total_elapse_time`                      | データベースインスタンスが最後に再起動されてから、すべてのリクエストの累積合計経過時間です。                                |
+| `total_sessions`                         | すべてのセッション数                                                                    |
+| `txn_sessions`                           | transactionを含むセッション数                                                          |
+| `user_commits`                           | トランザクションごとに実行されるユーザーコミット数                                                     |
+| `user_cpu`                               | user cpu使用量(%)                                             |
+| `wait_sessions`                          | イベントを待機しているセッション数                                                             |
+| `warning_count`                          | すべてのアラート数                                                                     |
+
+以下はエージェント設定で`ora_ratio`オプションを介して収集する指標の説明です。 エージェントオプション設定の詳細については、[次の文書](agent-dbx-settings#collect-data)を参照してください。
+
+| Metrics                       | Description                                                                                                                      |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `buffer cache hit ratio`      | ディスクからデータを読み込まずにメモリから直接データを探せる回数。<br/>この数値が高ければデータベースの性能が良いことを意味し、数値が低ければディスクI/Oが増加して性能低下を招くことがあります。                             |
+| `soft parse ratio`            | SQL文が再利用される頻度。<br/> Soft Parseは、すでにキャッシュにあるSQL文を再利用する場合です。 この数値が高ければ、SQL文の再利用がうまくいっていることを意味します。                                  |
+| `hard parse ratio`            | SQL文が最初から新しく構文解析される頻度。<br/>ハードパスは、SQL文を初めて実行するか、キャッシュに存在しない場合に発生します。 この数値が高ければ、データベースのCPU使用率が増加し、性能が低下する可能性があります。                |
+| `library cache hit ratio`     | Library CacheからSQL及びPL/SQL文を正常に検索する割合。<br/>この数値が高ければ、SQL文とPL/SQLコードがキャッシュで効果的に再利用されていることを意味します。                                  |
+| `library cache pin hit ratio` | Library Cache Pinリクエストが成功した割合。<br/> Library Cache Pinは、実行中のSQL文が他のセッションで変更されないように保護する役割をします。 この数値が高ければ、これらの保護が効果的に行われていることを示します。 |
+| `library cache get hit ratio` | Library Cacheの個体を正常に取得する割合。<br/>この数値が高ければ、SQL文とPL/SQLコードがライブラリキャッシュで効果的に再利用されていることを意味します。                                        |
+| `latch hit ratio`             | Latchリクエストが成功した割合。<br/> Latchは、データベースの共有メモリアクセスを制御するためのロックメカニズムです。 この数値が高ければ、Latchの待ち時間が少なく、システムの同時性と性能が優れていることを意味します。           |
+| `shared pool free mem ratio`  | 共有プールの空きメモリ比率<br/>共有プールはSQL文、PL/SQLコード、及びデータディクショナリーキャッシュを保存するメモリ領域です。 適切な空きメモリ比率を維持することで、共有プールの効率的な運用と性能最適化を保証できます。             |
+
+</div>

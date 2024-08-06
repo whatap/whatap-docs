@@ -1,0 +1,474 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.3",
+    "date": "2024-05-08",
+    "Lists": [
+      {
+        "ver": "Service 2.4.3",
+        "hash": "service-243",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Flex Board</span> 또는 <span class=\"uitext\">Integrated Flex Board</span>, fixed the dashboard layout restoration issue while modifying the rich text widget.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.2",
+    "date": "2024-04-26",
+    "Lists": [
+      {
+        "ver": "Service 2.4.2",
+        "hash": "service-242",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> From the <span class=\"uitext\">Start time</span> selection window in <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Multiple Service Hitmap</span>, fixed the issue where the dark theme is not applied.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.1",
+    "date": "2024-04-25",
+    "Lists": [
+      {
+        "ver": "Service 2.4.1",
+        "hash": "service-241",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Transaction</span>, fixed the issue where the data is not sorted by error when the <span class=\"uitext\">Order By</span> is set to <span class=\"uitext\">Error</span>.</p>"
+      },
+      {
+        "ver": "Service 2.4.1",
+        "hash": "service-241",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> From the hitmap widget in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>, fixed the issue where the data is viewed when dragging an empty area on the chart after an agent filtering.</p>"
+      },
+      {
+        "ver": "Service 2.4.1",
+        "hash": "service-241",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, modified the <span class=\"uitext\">Long Waiting Session Count</span> widget so that its data appears based on the current time.</li>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_4_x",
+    "ver": "Service 2.4.0",
+    "date": "2024-04-24",
+    "Lists": [
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the <b>Integrated service 2</b> dashboard template.</p>",
+        "category": "Flex Board / Integrated Flex Board"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Dashboard list</span>, modified to display the selected product icons on the dashboard.</p>",
+        "category": "Flex Board / Integrated Flex Board"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified the dashboard template preview to display scrolling.</p>",
+        "category": "Flex Board / Integrated Flex Board"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified not to display the project names in the dashboard list within a project.</p>",
+        "category": "Flex Board / Integrated Flex Board"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the action so that clicking an instance in the Database status widget brings the corresponding project dashboard.</p>",
+        "category": "Flex Board / Integrated Flex Board"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified the widget template list so that it is not closed when adding a child widget to a group widget.</p>",
+        "category": "Flex Board / Integrated Flex Board"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\">New</code>, while using the <span class=\"uitext\">JSON Batch Edit</span> function, removed the <code>relatedPcode</code> verification logic from the metrics (<code>METRICS</code>) event properties.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified to hide <span class=\"uitext\">SMS alert</span> and <span class=\"uitext\">WhatsApp alert</span> columns in the <span class=\"uitext\">Event notification settings per-user</span> section under <span class=\"uitext\">Notifications</span> for the projects in which SMS and WhatsApp notifications are unavailable.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> From the <span class=\"uitext\">Event notification settings per-user</span> section in <span class=\"uitext\">Notifications</span>, modified not to mask user information to the users with the <span class=\"b500\">Member management</span> role.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Event Configuration</span>, modified to enable addition or overwriting except for the id property when loading real-time log events or composite log events in JSON format.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Event Configuration</span>, removed the logic that verifies the <code>select</code> property as a required value when editing metrics events with a JSON editor.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Event Configuration</span>, fixed the issue where data does not appear properly when running the first simulation and then changing the date and running it again in the complex metrics event settings.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In the <span class=\"uitext\">User phone</span> section under <span class=\"uitext\">Manage Accounts</span>, added the country code selection feature to general mobile phones.</p>",
+        "category": "Manage Accounts"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the region selection path on the project creation page (in the selection order of region → CSP).</p>",
+        "category": "ETC"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In the following menus, modified the orders for activation toggle and Edit button columns to the leftmost in the list.</p>",
+        "category": "ETC",
+        "details": "<ul>\n<li><span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Maintenance Plan</span></li>\n<li><span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> &gt; <span class=\"uitext\">Metrics</span> &gt; <span class=\"uitext\">Notification Message Settings</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> For AWS Marketplace account users, added the guidance message after removing the subscription cancelation function.</p>",
+        "category": "ETC"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Common",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> Deleted the tutorial button from the side menu.</p>",
+        "category": "ETC"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> From the <span class=\"uitext\">Active Transaction Equalizer</span> widget in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>, added the option to display inactive agents.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent List</span>, changed <span class=\"b500\">Inactive agent deletion time</span> to <span class=\"uitext\">Inactive agent retention period</span>.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Performance Trend</span>, added units to header columns for the downloaded CSV file.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In the <span class=\"uitext\">Table view</span> tab of the <span class=\"uitext\">Trace analysis</span> window, fixed the issue where UTC+9 is not applied to the time written in the file downloaded by selecting <span class=\"uitext\">TXT</span> or <span class=\"uitext\">SQL</span>.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">SQL</span>, fixed the issue where a whiteout occurs when specific special characters are included in an SQL statement after selecting the button of the <span class=\"uitext\">Detailed analysis</span> column.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where ellipses (...) are applied when the agent name is too long in the agent selection list in <span class=\"uitext\">Instance Performance Management</span>.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> Modified the WebLogic installation guide from <strong>Add JVM option</strong> in <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code>.</li>",
+        "category": "Java"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\">New</code>, added the <span class=\"uitext\">Log File / Window Event</span> setting.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event History</span>, modified to change the time range of the process chart according to the time setting of <span class=\"uitext\">before and after the alert</span> when the event's detailed information screen appears.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> From the server event addition and modification window in <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, modified the text in the port notification tooltip.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Deleted the <span class=\"uitext\">Server CONF.</span> &gt; <span class=\"uitext\">Server ENV. Variable.</span> menu from the side menu and sitemap (integrated in <span class=\"uitext\">Runtime ENV. Variable</span>).</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, modified the issue where a wrong Windows version appears: Windows 2008 SP2 or later → <b>Windows Server 2008 R2 or later</b></p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Detail</span>, fixed the issue where the layout shakes depending on the screen size when there are many labels below the chart.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> On the <span class=\"uitext\">View Detailed</span> screen in <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Deployment List</span>, added the ReplicaSet list in the <span class=\"uitext\">Resource</span> tab.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, added the <span class=\"uitext\">Resource relations</span> tab.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Object Manifest</span>, added the <span class=\"uitext\">Kubernetes Event</span> linking feature.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the UI for the movement button on the list screen.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, modified the installation guide text and terms for the Kubernetes agent.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified the icon and button styles in the following menu paths to comply with regulations.</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Integrated Container Map</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Object Manifest</span></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, modified the UI that appears when hovering the mouse over the block.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, modified to include unit notation when using metrics options.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, added the button to view the data in the <span class=\"uitext\">Active sessions</span> table at an interval of 1 minute.</p>",
+        "category": "Database V2"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Under the <span class=\"uitext\">Age</span> tab in <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top Object</span>, added the <span class=\"uitext\">per_to_wraparound</span> column.</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top Object</span>, changed the guide text that appears when there is no data.</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, added the detailed pop-up that displays the disk usage trend.</p>",
+        "category": "PostgreSQL / MySQL"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, added the following widgets.</p>",
+        "category": "PostgreSQL / MySQL",
+        "details": "<ul>\n<li>\n<span class=\"uitext\">Long Active Session Count</span>\n</li>\n<li>\n<span class=\"uitext\">Long Waiting Session Count</span>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the CPU (xos) metric to be broken down into <code>cpu_sys(xos)</code>, <code>cpu_user(xos)</code>, and <code>cpu_iowait(xos)</code>.</p>",
+        "category": "PostgreSQL / MySQL / MongoDB"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In the <span class=\"uitext\">Install guide</span> section of the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span> menu, modified the differences for each language to meet the same standards.</p>",
+        "category": "Amazon ECS"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Modified the metric names that are not multilingual to display according to the language environment.</p>",
+        "category": "Amazon ECS"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, changed the label for the Role ARN field from the button format to the text format.</p>",
+        "category": "Amazon CloudWatch"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> With the language set to Japanese, in the <span class=\"uitext\">Pricing</span> tab of the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, modified to go to the Japanese page instead of the Korean page if you select the <span class=\"uitext\">Price policy</span> link.</p>",
+        "category": "Amazon CloudWatch"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Modified the metric names that are not multilingual to display according to the language environment.</p>",
+        "category": "Amazon CloudWatch"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Network",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Network Topology</span>, fixed the issue where the border colors of nodes are applied differently than intended.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Integrated Flex Board</span>, reorganized the UI for the URL list widget.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified to display the URL detail window as a pop-up.</p>"
+      },
+      {
+        "ver": "Service 2.4.0",
+        "hash": "service-240",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, modified to include spaces in the <span class=\"uitext\">Search value</span> field for real-time log events under the <span class=\"uitext\">Log</span> tab.</p>"
+      }
+    ]
+  }
+]
