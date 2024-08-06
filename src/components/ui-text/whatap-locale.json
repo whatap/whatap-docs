@@ -54966,7 +54966,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55512,7 +55512,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55938,10 +55938,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56379,10 +56379,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56407,10 +56407,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -57225,6 +57225,23 @@
     "zh": "Kubernetes Application Container",
     "service_id": "ITM08296"
   },
+<<<<<<< HEAD
+=======
+  "ITM08297": {
+    "en": "no change",
+    "ja": "変更しない",
+    "ko": "변경 안함",
+    "zh": "no change",
+    "service_id": "ITM08297"
+  },
+  "TTL08298": {
+    "en": "Detailed inquiry",
+    "ja": "詳細検索",
+    "ko": "상세 조회",
+    "zh": "Detailed inquiry",
+    "service_id": "TTL08298"
+  },
+>>>>>>> origin
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
