@@ -54034,10 +54034,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -57185,7 +57185,7 @@
   },
   "ITM08291": {
     "en": "percentile",
-    "ja": "パーセンタイル",
+    "ja": "百分位",
     "ko": "백분위",
     "zh": "percentile",
     "service_id": "ITM08291"
@@ -57225,8 +57225,6 @@
     "zh": "Kubernetes Application Container",
     "service_id": "ITM08296"
   },
-<<<<<<< HEAD
-=======
   "ITM08297": {
     "en": "no change",
     "ja": "変更しない",
@@ -57241,7 +57239,6 @@
     "zh": "Detailed inquiry",
     "service_id": "TTL08298"
   },
->>>>>>> origin
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
