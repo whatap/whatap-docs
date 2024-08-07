@@ -5944,6 +5944,11 @@ const sidebars = {
               items: [
                 'kubernetes/metrics-kubernetes',
                 'kubernetes/metrics-search',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/metrics-chart',
                 'kubernetes/metrics-detect-anormal',
               ]
